@@ -1,0 +1,14 @@
+[package]
+name = "reliquary"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+base64 = "0.22.0"
+etherparse = "0.14.2"
+kcp = "0.5.3"
+protobuf = "3.4.0"
+rand_mt = "4.2.2"
+tracing = "0.1.40"
