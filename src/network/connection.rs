@@ -1,16 +1,9 @@
 use etherparse::{SlicedPacket, TransportSlice, UdpHeader};
 use tracing::{debug, info, Level, span, trace, warn};
 
-use crate::sniffer::PacketDirection;
+use crate::network::{PacketDirection, ConnectionPacket};
 
-pub enum ConnectionPacket {
-    HandshakeRequested,
-    Disconnected,
-    HandshakeEstablished,
-    SegmentData(PacketDirection, Vec<u8>),
-}
-
-pub(crate) fn parse_connection_packet(port_filter: &[u16], bytes: Vec<u8>) -> Option<ConnectionPacket> {
+pub fn parse_connection_packet(port_filter: &[u16], bytes: Vec<u8>) -> Option<ConnectionPacket> {
     let (udp, payload) = parse_udp(bytes)?;
     let direction = validate_ports(&port_filter, udp)?;
 
@@ -35,7 +28,7 @@ pub(crate) fn parse_connection_packet(port_filter: &[u16], bytes: Vec<u8>) -> Op
     }
 }
 
-pub(crate) fn parse_udp(data: Vec<u8>) -> Option<(UdpHeader, Vec<u8>)> {
+pub fn parse_udp(data: Vec<u8>) -> Option<(UdpHeader, Vec<u8>)> {
     let span = span!(Level::INFO, "processing");
     let _enter = span.enter();
 

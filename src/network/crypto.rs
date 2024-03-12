@@ -2,7 +2,7 @@ use base64::prelude::*;
 use rand_mt::Mt64;
 use tracing::{info, instrument, trace};
 
-use crate::sniffer::bytes_as_hex;
+use crate::network::bytes_as_hex;
 
 #[instrument(skip_all)]
 pub fn decrypt_command(key: &mut Option<Vec<u8>>, encrypted: &mut [u8]) {

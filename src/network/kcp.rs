@@ -3,7 +3,7 @@ use std::time::Instant;
 use kcp::{get_conv, Kcp, KCP_OVERHEAD};
 use tracing::{error, info, instrument, Level, span, trace, warn};
 
-use crate::sniffer::bytes_as_hex;
+use crate::network::bytes_as_hex;
 
 pub(crate) struct KcpSniffer {
     conv_id: u32,

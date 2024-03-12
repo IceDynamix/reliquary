@@ -1,3 +1,47 @@
+//! Parse network packets transmitted between the game and the server
+//!
+//! Packets are built up in following layers depending on the purpose of the packet:
+//!
+//! - Packets for connection management ([`GamePacket::Connection`])
+//!     - **Ethernet/IP/UDP**, handled using [`etherparse`]
+//!     - **[`ConnectionPacket`]**, containing events for connection establishment/disconnection
+//! - Packets for game commands ([`GamePacket::Commands`])
+//!     - **Ethernet/IP/UDP**, handled using [`etherparse`]
+//!     - **KCP**, handled using [`kcp`]
+//!         - The KCP header contains an extra field that needs to be removed
+//!           to be compatible with the regular KCP protocol
+//!     - **[`GameCommand`]**, encrypted using XOR
+//!     - **Protobuf**, payload, needs to be parsed into using the types generated in [`gen::proto`]
+//!
+//! [`GameCommand`]s are encrypted using an XOR-key.
+//! One of the first packets sent is a request for a new key from a seed.
+//! That key is used for the rest of the packets.
+//! This means the recording for packets needs to start before the game starts (train hyperdrive).
+//!
+//! ## Example
+//! ```
+//! use reliquary::network::{GamePacket, GameSniffer, ConnectionPacket};
+//!
+//! let packets: Vec<Vec<u8>> = vec![/**/];
+//!
+//! let mut sniffer = GameSniffer::new();
+//! for packet in packets {
+//!     match sniffer.receive_packet(packet) {
+//!         Some(GamePacket::Connection(ConnectionPacket::Disconnected)) => {
+//!             println!("Disconnected!");
+//!             break;
+//!         }
+//!         Some(GamePacket::Commands(commands)) => {
+//!             for command in commands {
+//!                 println!("{}", command.get_command_name());
+//!             }
+//!         }
+//!         _ => {}
+//!     }
+//! }
+//! ```
+//!
+
 use std::fmt::Write;
 
 fn bytes_as_hex(bytes: &[u8]) -> String {
@@ -10,33 +54,48 @@ fn bytes_as_hex(bytes: &[u8]) -> String {
 
 use tracing::{debug, info, info_span, instrument, warn};
 
-use crate::sniffer::gen::command_id::command_id_to_str;
-use crate::sniffer::gen::proto::PlayerGetTokenScRsp::PlayerGetTokenScRsp;
-use crate::sniffer::connection::{ConnectionPacket, parse_connection_packet};
-use crate::sniffer::crypto::{decrypt_command, new_key_from_seed};
-use crate::sniffer::kcp::KcpSniffer;
+use crate::network::gen::command_id::command_id_to_str;
+use crate::network::gen::proto::PlayerGetTokenScRsp::PlayerGetTokenScRsp;
+use crate::network::connection::parse_connection_packet;
+use crate::network::crypto::{decrypt_command, new_key_from_seed};
+use crate::network::kcp::KcpSniffer;
 
-pub mod connection;
 pub mod gen;
 
+mod connection;
 mod kcp;
 mod crypto;
 
 const HSR_PORTS: [u16; 2] = [23301, 23302];
 
+/// Top-level packet sent by the game
 pub enum GamePacket {
     Connection(ConnectionPacket),
     Commands(Vec<GameCommand>),
 }
 
-// layout
-// indices       type   name
-//   0..4        u32    header magic const
-//   0..6        u16    packet type id
-//   6..8        u16    header length (unsure)
-//   8..12       u32    data length
-//  12..12+len   var    protobuf data
-// len..len+4    u32    tail magic const
+/// Packet for connection management
+pub enum ConnectionPacket {
+    HandshakeRequested,
+    Disconnected,
+    HandshakeEstablished,
+    SegmentData(PacketDirection, Vec<u8>),
+}
+
+/// Game command header.
+///
+/// Contains the type of the command in `command_id`
+/// and the data encoded in protobuf in `proto_data`
+///
+/// ## Bit Layout
+/// | Bit indices     |  Type |  Name |
+/// | - | - | - |
+/// |   0..4      |  `u32`  |  Header (magic constant) |
+/// |   0..6      |  `u16`  |  command_id |
+/// |   6..8      |  `u16`  |  header_len (unsure) |
+/// |   8..12     |  `u32`  |  data_len |
+/// |  12..12+data_len |  variable  |  proto_data |
+/// | data_len..data_len+4  |  `u32`  |  Tail (magic constant) |
 #[derive(Debug, Clone)]
 pub struct GameCommand {
     command_id: u16,
