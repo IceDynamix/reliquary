@@ -42,6 +42,7 @@
 //! ```
 //!
 
+use std::collections::HashMap;
 use std::fmt::Write;
 
 use tracing::{debug, info, info_span, instrument, warn};
@@ -49,7 +50,7 @@ use tracing::{debug, info, info_span, instrument, warn};
 use gen::command_id;
 
 use crate::network::connection::parse_connection_packet;
-use crate::network::crypto::{decrypt_command, new_key_from_seed};
+use crate::network::crypto::{decrypt_command, lookup_initial_key, new_key_from_seed};
 use crate::network::gen::command_id::command_id_to_str;
 use crate::network::gen::proto::PlayerGetTokenScRsp::PlayerGetTokenScRsp;
 use crate::network::kcp::KcpSniffer;
@@ -154,11 +155,17 @@ pub struct GameSniffer {
     sent_kcp: Option<KcpSniffer>,
     recv_kcp: Option<KcpSniffer>,
     key: Option<Vec<u8>>,
+    initial_keys: HashMap<u32, Vec<u8>>,
 }
 
 impl GameSniffer {
     pub fn new() -> Self {
         Self::default()
+    }
+
+    pub fn set_initial_keys(mut self, initial_keys: HashMap<u32, Vec<u8>>) -> Self {
+        self.initial_keys = initial_keys;
+        self
     }
 
     #[instrument(skip_all, fields(len = bytes.len()))]
@@ -209,9 +216,17 @@ impl GameSniffer {
     }
 
     fn receive_command(&mut self, mut data: Vec<u8>) -> Option<GameCommand> {
-        decrypt_command(&mut self.key, &mut data);
-        let command = GameCommand::try_new(data)?;
+        let key = match &self.key {
+            Some(k) => { k }
+            None => {
+                self.key = Some(lookup_initial_key(&self.initial_keys, &data));
+                self.key.as_ref().unwrap()
+            }
+        };
 
+        decrypt_command(key, &mut data);
+
+        let command = GameCommand::try_new(data)?;
         match command.get_command_name() {
             Some(command_name) => {
                 let span = info_span!("command", command_name);
