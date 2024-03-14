@@ -44,7 +44,7 @@ impl KcpSniffer {
             return Vec::new();
         }
 
-        // hsr uses special format which adds 4 bytes at index 4
+        // game uses special format which adds 4 bytes at index 4,
         // reprocess to discard bytes 4..8 of every segment
         let segments = reformat_kcp_segments(segments);
 

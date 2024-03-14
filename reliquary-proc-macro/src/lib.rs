@@ -1,4 +1,5 @@
-use proc_macro::{TokenStream};
+use proc_macro::TokenStream;
+
 use quote::{format_ident, quote, ToTokens};
 use syn::{Data, DeriveInput, Field, Fields, Meta, parse_macro_input};
 use syn::spanned::Spanned;
@@ -8,7 +9,7 @@ pub fn derive(input: TokenStream) -> TokenStream {
     let input = parse_macro_input!(input as DeriveInput);
 
     let struct_name = &input.ident;
-    let list_name = format_ident!("{}Map", struct_name.clone());
+    let map_name = format_ident!("{}Map", struct_name.clone());
 
     let Data::Struct(ref struc) = input.data else {
         return syn::Error::new(input.span(), "Can only implement resource on struct")
@@ -56,15 +57,23 @@ pub fn derive(input: TokenStream) -> TokenStream {
 
     let doc = format!("Map type containing all [`{}`] in (nested) map format. Can be deserialized into.", struct_name);
 
+    let json_name = format!("{}.json", struct_name);
+
     let expanded = quote! {
         #[derive(serde::Deserialize)]
         #[serde(transparent)]
         #[doc = #doc]
-        pub struct #list_name(#list_type);
+        pub struct #map_name(#list_type);
 
-        impl #list_name {
+        impl #map_name {
             pub fn get(&self, #(#get_method_args),*) -> Option<&#struct_name> {
-                self.0#(.get(&#key_names))?*
+                self.0#(.get(#key_names))?*
+            }
+        }
+
+        impl crate::resource::ResourceMap for #map_name {
+            fn get_json_name() -> &'static str {
+                #json_name
             }
         }
     };

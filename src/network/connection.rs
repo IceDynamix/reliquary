@@ -1,7 +1,7 @@
 use etherparse::{SlicedPacket, TransportSlice, UdpHeader};
 use tracing::{debug, info, Level, span, trace, warn};
 
-use crate::network::{PacketDirection, ConnectionPacket};
+use crate::network::{ConnectionPacket, PacketDirection};
 
 pub fn parse_connection_packet(port_filter: &[u16], bytes: Vec<u8>) -> Option<ConnectionPacket> {
     let (udp, payload) = parse_udp(bytes)?;

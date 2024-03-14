@@ -33,7 +33,7 @@
 //!         }
 //!         Some(GamePacket::Commands(commands)) => {
 //!             for command in commands {
-//!                 println!("{}", command.get_command_name());
+//!                 println!("{:?}", command.get_command_name());
 //!             }
 //!         }
 //!         _ => {}
@@ -44,6 +44,16 @@
 
 use std::fmt::Write;
 
+use tracing::{debug, info, info_span, instrument, warn};
+
+use gen::command_id;
+
+use crate::network::connection::parse_connection_packet;
+use crate::network::crypto::{decrypt_command, new_key_from_seed};
+use crate::network::gen::command_id::command_id_to_str;
+use crate::network::gen::proto::PlayerGetTokenScRsp::PlayerGetTokenScRsp;
+use crate::network::kcp::KcpSniffer;
+
 fn bytes_as_hex(bytes: &[u8]) -> String {
     bytes.iter()
         .fold(String::new(), |mut output, b| {
@@ -52,21 +62,13 @@ fn bytes_as_hex(bytes: &[u8]) -> String {
         })
 }
 
-use tracing::{debug, info, info_span, instrument, warn};
-
-use crate::network::gen::command_id::command_id_to_str;
-use crate::network::gen::proto::PlayerGetTokenScRsp::PlayerGetTokenScRsp;
-use crate::network::connection::parse_connection_packet;
-use crate::network::crypto::{decrypt_command, new_key_from_seed};
-use crate::network::kcp::KcpSniffer;
-
 pub mod gen;
 
 mod connection;
 mod kcp;
 mod crypto;
 
-const HSR_PORTS: [u16; 2] = [23301, 23302];
+const PORTS: [u16; 2] = [23301, 23302];
 
 /// Top-level packet sent by the game
 pub enum GamePacket {
@@ -98,12 +100,12 @@ pub enum ConnectionPacket {
 /// | data_len..data_len+4  |  `u32`  |  Tail (magic constant) |
 #[derive(Debug, Clone)]
 pub struct GameCommand {
-    command_id: u16,
+    pub command_id: u16,
     #[allow(unused)]
-    header_len: u16,
+    pub header_len: u16,
     #[allow(unused)]
-    data_len: u32,
-    proto_data: Vec<u8>,
+    pub data_len: u32,
+    pub proto_data: Vec<u8>,
 }
 
 impl GameCommand {
@@ -161,7 +163,7 @@ impl GameSniffer {
 
     #[instrument(skip_all, fields(len = bytes.len()))]
     pub fn receive_packet(&mut self, bytes: Vec<u8>) -> Option<GamePacket> {
-        let packet = parse_connection_packet(&HSR_PORTS, bytes)?;
+        let packet = parse_connection_packet(&PORTS, bytes)?;
         match packet {
             ConnectionPacket::HandshakeRequested
             | ConnectionPacket::HandshakeEstablished
@@ -217,7 +219,7 @@ impl GameSniffer {
 
                 info!("received");
 
-                if command_name == "PlayerGetTokenScRsp" {
+                if command.command_id == command_id::PlayerGetTokenScRsp {
                     let token_command = command.parse_proto::<PlayerGetTokenScRsp>().unwrap();
                     let seed = token_command.secret_key_seed;
                     info!(?seed, "setting new session key");
