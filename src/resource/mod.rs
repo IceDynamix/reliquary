@@ -6,6 +6,7 @@
 
 use std::ops::Deref;
 use serde::Deserialize;
+use tracing::warn;
 use crate::resource::text_map::TextMap;
 
 pub mod excel;
@@ -58,7 +59,11 @@ impl Deref for TextMapEntry {
 
 impl TextMapEntry {
     pub fn lookup<'a>(&self, text_map: &'a TextMap) -> Option<&'a str> {
-        text_map.0.get(&self.Hash).map(|s| s.as_str())
+        let entry = text_map.0.get(&self.Hash).map(|s| s.as_str());
+        if entry.is_none() {
+            warn!(hash=self.Hash, "could not find text map entry")
+        }
+        entry
     }
 }
 

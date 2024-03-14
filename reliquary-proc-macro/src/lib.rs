@@ -56,7 +56,7 @@ pub fn derive(input: TokenStream) -> TokenStream {
         .map(|&f| f.ident.to_token_stream());
 
     let doc = format!("Map type containing all [`{}`] in (nested) map format. Can be deserialized into.", struct_name);
-
+    let warning = format!("could not find {} config", struct_name);
     let json_name = format!("{}.json", struct_name);
 
     let expanded = quote! {
@@ -67,7 +67,11 @@ pub fn derive(input: TokenStream) -> TokenStream {
 
         impl #map_name {
             pub fn get(&self, #(#get_method_args),*) -> Option<&#struct_name> {
-                self.0#(.get(#key_names))?*
+                let entry = self.0#(.get(#key_names))?*;
+                if entry.is_none() {
+                    tracing::warn!(#warning);
+                }
+                entry
             }
         }
 
