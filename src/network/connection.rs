@@ -1,8 +1,9 @@
 use etherparse::{SlicedPacket, TransportSlice, UdpHeader};
-use tracing::{debug, info, Level, span, trace, warn};
+use tracing::{debug, info, instrument, trace, warn};
 
 use crate::network::{ConnectionPacket, PacketDirection};
 
+#[instrument(skip_all)]
 pub fn parse_connection_packet(port_filter: &[u16], bytes: Vec<u8>) -> Option<ConnectionPacket> {
     let (udp, payload) = parse_udp(bytes)?;
     let direction = validate_ports(&port_filter, udp)?;
@@ -28,14 +29,12 @@ pub fn parse_connection_packet(port_filter: &[u16], bytes: Vec<u8>) -> Option<Co
     }
 }
 
+#[instrument(skip_all, fields(len = data.len()))]
 pub fn parse_udp(data: Vec<u8>) -> Option<(UdpHeader, Vec<u8>)> {
-    let span = span!(Level::INFO, "processing");
-    let _enter = span.enter();
-
     let packet = match SlicedPacket::from_ethernet(&data) {
         Ok(p) => p,
         Err(e) => {
-            debug!("processing failed: {e}");
+            debug!("failed: {e}");
             return None;
         }
     };
@@ -51,7 +50,7 @@ pub fn parse_udp(data: Vec<u8>) -> Option<(UdpHeader, Vec<u8>)> {
         return None;
     };
 
-    trace!("process complete");
+    trace!("complete");
 
     Some((udp.to_header(), udp.payload().to_vec()))
 }

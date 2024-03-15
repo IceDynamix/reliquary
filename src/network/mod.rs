@@ -172,8 +172,14 @@ impl GameSniffer {
     pub fn receive_packet(&mut self, bytes: Vec<u8>) -> Option<GamePacket> {
         let packet = parse_connection_packet(&PORTS, bytes)?;
         match packet {
-            ConnectionPacket::HandshakeRequested
-            | ConnectionPacket::HandshakeEstablished
+            ConnectionPacket::HandshakeRequested => {
+                info!("handshake requested, resetting state");
+                self.recv_kcp = None;
+                self.sent_kcp = None;
+                self.key = None;
+                Some(GamePacket::Connection(packet))
+            }
+            ConnectionPacket::HandshakeEstablished
             | ConnectionPacket::Disconnected => {
                 Some(GamePacket::Connection(packet))
             }
@@ -215,6 +221,7 @@ impl GameSniffer {
         None
     }
 
+    #[instrument(skip_all, fields(len = data.len()))]
     fn receive_command(&mut self, mut data: Vec<u8>) -> Option<GameCommand> {
         let key = match &self.key {
             Some(k) => { k }
