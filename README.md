@@ -4,7 +4,7 @@ a library to parse network packets from a certain turn based anime game!
 
 | module     | purpose                                      |
 |------------|----------------------------------------------|
-| `sniffer`  | parse bytes into network packets             |
+| `network`  | parse bytes into network packets             |
 | `resource` | look up network packet resource ids from SRD |
 
 ## use in your projects
@@ -21,3 +21,7 @@ for documentation, use `cargo doc`
 ## codegen
 
 types are outdated? check out [reliquary-codegen](https://github.com/IceDynamix/reliquary-codegen)
+
+## related
+
+- [reliquary-archiver](https://github.com/IceDynamix/reliquary-archiver)
