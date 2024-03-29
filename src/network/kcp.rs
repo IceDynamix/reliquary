@@ -1,25 +1,29 @@
-use std::time::Instant;
-
 use kcp::{get_conv, Kcp, KCP_OVERHEAD};
-use tracing::{error, info, instrument, Level, span, trace, warn};
+use std::time::{SystemTime, UNIX_EPOCH};
+use tracing::{error, info, instrument, span, trace, warn, Level};
 
 use crate::network::bytes_as_hex;
 
 pub(crate) struct KcpSniffer {
     conv_id: u32,
-    start: Instant,
     kcp: Kcp<Vec<u8>>,
+}
+
+#[inline]
+fn clock() -> u32 {
+    SystemTime::now()
+        .duration_since(UNIX_EPOCH)
+        .expect("time went backwards")
+        .as_millis() as u32
 }
 
 impl KcpSniffer {
     #[instrument(skip(segment))]
     pub fn try_new(segment: &[u8]) -> Option<Self> {
-        validate_kcp_segment(segment)
-            .map(|conv_id| Self::new(conv_id))
-            .or_else(|| {
-                error!("could not create new kcp instance");
-                None
-            })
+        validate_kcp_segment(segment).map(Self::new).or_else(|| {
+            error!("could not create new kcp instance");
+            None
+        })
     }
 
     #[instrument]
@@ -28,19 +32,23 @@ impl KcpSniffer {
 
         KcpSniffer {
             conv_id,
-            start: Instant::now(),
             kcp: new_kcp(conv_id),
         }
     }
 
     #[instrument(skip_all, fields(conv_id = self.conv_id, len = segments.len()))]
     pub fn receive_segments(&mut self, segments: &[u8]) -> Vec<Vec<u8>> {
-        let Some(conv_id) = validate_kcp_segment(segments) else { return Vec::new(); };
+        let Some(conv_id) = validate_kcp_segment(segments) else {
+            return Vec::new();
+        };
 
         trace!("message data: {}", bytes_as_hex(segments));
 
         if conv_id != self.conv_id {
-            warn!(expected=self.conv_id, "packet did not belong to conversation");
+            warn!(
+                expected = self.conv_id,
+                "packet did not belong to conversation"
+            );
             return Vec::new();
         }
 
@@ -50,7 +58,7 @@ impl KcpSniffer {
 
         match self.kcp.input(&segments) {
             Ok(size) => trace!(size, "input successful"),
-            Err(e) => warn!("could not input to kcp: {e}")
+            Err(e) => warn!("could not input to kcp: {e}"),
         }
 
         let mut recv = Vec::new();
@@ -70,7 +78,7 @@ impl KcpSniffer {
             }
         }
 
-        if let Err(e) = self.kcp.update(self.start.elapsed().as_millis() as u32) {
+        if let Err(e) = self.kcp.update(clock()) {
             warn!(%e, "could not update kcp state");
         }
 
@@ -78,19 +86,23 @@ impl KcpSniffer {
     }
 }
 
+#[inline]
 fn new_kcp(conv_id: u32) -> Kcp<Vec<u8>> {
     let mut kcp = Kcp::new(conv_id, Vec::new());
     kcp.set_wndsize(1024, 1024);
     kcp
 }
 
-
 fn validate_kcp_segment(payload: &[u8]) -> Option<u32> {
     if payload.len() <= KCP_OVERHEAD {
-        warn!(len=payload.len(), data=bytes_as_hex(&payload), "kcp header was too short");
+        warn!(
+            len = payload.len(),
+            data = bytes_as_hex(payload),
+            "kcp header was too short"
+        );
         return None;
     }
-    Some(get_conv(&payload))
+    Some(get_conv(payload))
 }
 
 // reformat to skip bytes 4..8
