@@ -78,6 +78,7 @@ pub struct AvatarConfig {
     pub AIPath: String,
     pub SkilltreePrefabPath: String,
     pub DamageTypeResistance: Vec<()>,
+    #[serde(default)]
     pub Release: bool,
     pub SideAvatarHeadIconPath: String,
     pub WaitingAvatarHeadIconPath: String,
@@ -97,6 +98,7 @@ pub struct AvatarConfig {
 pub struct EquipmentConfig {
     #[resource_key]
     pub EquipmentID: u32,
+    #[serde(default)]
     pub Release: bool,
     pub EquipmentName: TextMapEntry,
     pub EquipmentDesc: TextMapEntry,
@@ -138,6 +140,7 @@ pub struct RelicSetConfig {
     pub SetIconFigurePath: String,
     pub SetName: TextMapEntry,
     pub DisplayItemID: u32,
+    #[serde(default)]
     pub Release: bool,
 }
 
