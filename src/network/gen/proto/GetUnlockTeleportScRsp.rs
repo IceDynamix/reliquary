@@ -80,13 +80,13 @@ impl ::protobuf::Message for GetUnlockTeleportScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.unlocked_teleport_list)?;
                 },
-                24 => {
+                56 => {
                     self.unlocked_teleport_list.push(is.read_uint32()?);
                 },
-                48 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -102,10 +102,10 @@ impl ::protobuf::Message for GetUnlockTeleportScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         for value in &self.unlocked_teleport_list {
-            my_size += ::protobuf::rt::uint32_size(3, *value);
+            my_size += ::protobuf::rt::uint32_size(7, *value);
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -114,10 +114,10 @@ impl ::protobuf::Message for GetUnlockTeleportScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.unlocked_teleport_list {
-            os.write_uint32(3, *v)?;
+            os.write_uint32(7, *v)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -170,8 +170,8 @@ impl ::protobuf::reflect::ProtobufValue for GetUnlockTeleportScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cGetUnlockTeleportScRsp.proto\"h\n\x16GetUnlockTeleportScRsp\x124\n\
-    \x16unlocked_teleport_list\x18\x03\x20\x03(\rR\x14unlockedTeleportList\
-    \x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunar\
+    \x16unlocked_teleport_list\x18\x07\x20\x03(\rR\x14unlockedTeleportList\
+    \x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunar\
     core.protob\x06proto3\
 ";
 

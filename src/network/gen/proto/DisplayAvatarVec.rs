@@ -83,7 +83,7 @@ impl ::protobuf::Message for DisplayAvatarVec {
                 122 => {
                     self.display_avatar_list.push(is.read_message()?);
                 },
-                24 => {
+                16 => {
                     self.is_display = is.read_bool()?;
                 },
                 tag => {
@@ -115,7 +115,7 @@ impl ::protobuf::Message for DisplayAvatarVec {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         if self.is_display != false {
-            os.write_bool(3, self.is_display)?;
+            os.write_bool(2, self.is_display)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,7 +169,7 @@ impl ::protobuf::reflect::ProtobufValue for DisplayAvatarVec {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16DisplayAvatarVec.proto\x1a\x13DisplayAvatar.proto\"q\n\x10DisplayA\
     vatarVec\x12>\n\x13display_avatar_list\x18\x0f\x20\x03(\x0b2\x0e.Display\
-    AvatarR\x11displayAvatarList\x12\x1d\n\nis_display\x18\x03\x20\x01(\x08R\
+    AvatarR\x11displayAvatarList\x12\x1d\n\nis_display\x18\x02\x20\x01(\x08R\
     \tisDisplayB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

@@ -28,9 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 // @@protoc_insertion_point(message:ChallengeStoryInfo)
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChallengeStoryInfo {
-    // message fields
-    // @@protoc_insertion_point(field:ChallengeStoryInfo.cur_story_buffs)
-    pub cur_story_buffs: ::protobuf::MessageField<super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo>,
+    // message oneof groups
+    pub story_buffs: ::std::option::Option<challenge_story_info::Story_buffs>,
     // special fields
     // @@protoc_insertion_point(special_field:ChallengeStoryInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -47,14 +46,66 @@ impl ChallengeStoryInfo {
         ::std::default::Default::default()
     }
 
+    // .ChallengeStoryBuffInfo cur_story_buffs = 1;
+
+    pub fn cur_story_buffs(&self) -> &super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo {
+        match self.story_buffs {
+            ::std::option::Option::Some(challenge_story_info::Story_buffs::CurStoryBuffs(ref v)) => v,
+            _ => <super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_cur_story_buffs(&mut self) {
+        self.story_buffs = ::std::option::Option::None;
+    }
+
+    pub fn has_cur_story_buffs(&self) -> bool {
+        match self.story_buffs {
+            ::std::option::Option::Some(challenge_story_info::Story_buffs::CurStoryBuffs(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_cur_story_buffs(&mut self, v: super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo) {
+        self.story_buffs = ::std::option::Option::Some(challenge_story_info::Story_buffs::CurStoryBuffs(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_cur_story_buffs(&mut self) -> &mut super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo {
+        if let ::std::option::Option::Some(challenge_story_info::Story_buffs::CurStoryBuffs(_)) = self.story_buffs {
+        } else {
+            self.story_buffs = ::std::option::Option::Some(challenge_story_info::Story_buffs::CurStoryBuffs(super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo::new()));
+        }
+        match self.story_buffs {
+            ::std::option::Option::Some(challenge_story_info::Story_buffs::CurStoryBuffs(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_cur_story_buffs(&mut self) -> super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo {
+        if self.has_cur_story_buffs() {
+            match self.story_buffs.take() {
+                ::std::option::Option::Some(challenge_story_info::Story_buffs::CurStoryBuffs(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
-        let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo>(
+        let mut oneofs = ::std::vec::Vec::with_capacity(1);
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo>(
             "cur_story_buffs",
-            |m: &ChallengeStoryInfo| { &m.cur_story_buffs },
-            |m: &mut ChallengeStoryInfo| { &mut m.cur_story_buffs },
+            ChallengeStoryInfo::has_cur_story_buffs,
+            ChallengeStoryInfo::cur_story_buffs,
+            ChallengeStoryInfo::mut_cur_story_buffs,
+            ChallengeStoryInfo::set_cur_story_buffs,
         ));
+        oneofs.push(challenge_story_info::Story_buffs::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChallengeStoryInfo>(
             "ChallengeStoryInfo",
             fields,
@@ -74,7 +125,7 @@ impl ::protobuf::Message for ChallengeStoryInfo {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.cur_story_buffs)?;
+                    self.story_buffs = ::std::option::Option::Some(challenge_story_info::Story_buffs::CurStoryBuffs(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,9 +139,13 @@ impl ::protobuf::Message for ChallengeStoryInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.cur_story_buffs.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if let ::std::option::Option::Some(ref v) = self.story_buffs {
+            match v {
+                &challenge_story_info::Story_buffs::CurStoryBuffs(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+            };
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -98,8 +153,12 @@ impl ::protobuf::Message for ChallengeStoryInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.cur_story_buffs.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if let ::std::option::Option::Some(ref v) = self.story_buffs {
+            match v {
+                &challenge_story_info::Story_buffs::CurStoryBuffs(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                },
+            };
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -118,13 +177,13 @@ impl ::protobuf::Message for ChallengeStoryInfo {
     }
 
     fn clear(&mut self) {
-        self.cur_story_buffs.clear();
+        self.story_buffs = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengeStoryInfo {
         static instance: ChallengeStoryInfo = ChallengeStoryInfo {
-            cur_story_buffs: ::protobuf::MessageField::none(),
+            story_buffs: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,11 +207,39 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeStoryInfo {
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
+/// Nested message and enums of message `ChallengeStoryInfo`
+pub mod challenge_story_info {
+
+    #[derive(Clone,PartialEq,Debug)]
+    #[non_exhaustive]
+    // @@protoc_insertion_point(oneof:ChallengeStoryInfo.story_buffs)
+    pub enum Story_buffs {
+        // @@protoc_insertion_point(oneof_field:ChallengeStoryInfo.cur_story_buffs)
+        CurStoryBuffs(super::super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo),
+    }
+
+    impl ::protobuf::Oneof for Story_buffs {
+    }
+
+    impl ::protobuf::OneofFull for Story_buffs {
+        fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
+            static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
+            descriptor.get(|| <super::ChallengeStoryInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("story_buffs").unwrap()).clone()
+        }
+    }
+
+    impl Story_buffs {
+        pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<Story_buffs>("story_buffs")
+        }
+    }
+}
+
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18ChallengeStoryInfo.proto\x1a\x1cChallengeStoryBuffInfo.proto\"U\n\
-    \x12ChallengeStoryInfo\x12?\n\x0fcur_story_buffs\x18\x01\x20\x01(\x0b2\
-    \x17.ChallengeStoryBuffInfoR\rcurStoryBuffsB\x15\n\x13emu.lunarcore.prot\
-    ob\x06proto3\
+    \n\x18ChallengeStoryInfo.proto\x1a\x1cChallengeStoryBuffInfo.proto\"f\n\
+    \x12ChallengeStoryInfo\x12A\n\x0fcur_story_buffs\x18\x01\x20\x01(\x0b2\
+    \x17.ChallengeStoryBuffInfoH\0R\rcurStoryBuffsB\r\n\x0bstory_buffsB\x15\
+    \n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

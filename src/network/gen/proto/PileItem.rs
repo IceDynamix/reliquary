@@ -80,7 +80,7 @@ impl ::protobuf::Message for PileItem {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                96 => {
                     self.item_num = is.read_uint32()?;
                 },
                 32 => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for PileItem {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.item_num != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.item_num);
+            my_size += ::protobuf::rt::uint32_size(12, self.item_num);
         }
         if self.item_id != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.item_id);
@@ -111,7 +111,7 @@ impl ::protobuf::Message for PileItem {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.item_num != 0 {
-            os.write_uint32(14, self.item_num)?;
+            os.write_uint32(12, self.item_num)?;
         }
         if self.item_id != 0 {
             os.write_uint32(4, self.item_id)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for PileItem {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0ePileItem.proto\">\n\x08PileItem\x12\x19\n\x08item_num\x18\x0e\x20\
+    \n\x0ePileItem.proto\">\n\x08PileItem\x12\x19\n\x08item_num\x18\x0c\x20\
     \x01(\rR\x07itemNum\x12\x17\n\x07item_id\x18\x04\x20\x01(\rR\x06itemIdB\
     \x15\n\x13emu.lunarcore.protob\x06proto3\
 ";

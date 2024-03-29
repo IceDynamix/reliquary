@@ -80,10 +80,10 @@ impl ::protobuf::Message for SetGameplayBirthdayScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                88 => {
+                8 => {
                     self.birthday = is.read_uint32()?;
                 },
                 tag => {
@@ -99,10 +99,10 @@ impl ::protobuf::Message for SetGameplayBirthdayScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         if self.birthday != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.birthday);
+            my_size += ::protobuf::rt::uint32_size(1, self.birthday);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for SetGameplayBirthdayScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
         if self.birthday != 0 {
-            os.write_uint32(11, self.birthday)?;
+            os.write_uint32(1, self.birthday)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for SetGameplayBirthdayScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eSetGameplayBirthdayScRsp.proto\"P\n\x18SetGameplayBirthdayScRsp\
-    \x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12\x1a\n\x08birthd\
-    ay\x18\x0b\x20\x01(\rR\x08birthdayB\x15\n\x13emu.lunarcore.protob\x06pro\
+    \x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\x1a\n\x08birthd\
+    ay\x18\x01\x20\x01(\rR\x08birthdayB\x15\n\x13emu.lunarcore.protob\x06pro\
     to3\
 ";
 

@@ -80,10 +80,10 @@ impl ::protobuf::Message for PropRogueInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                80 => {
                     self.room_id = is.read_uint32()?;
                 },
-                88 => {
+                104 => {
                     self.site_id = is.read_uint32()?;
                 },
                 tag => {
@@ -99,10 +99,10 @@ impl ::protobuf::Message for PropRogueInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.room_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.room_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.room_id);
         }
         if self.site_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.site_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.site_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for PropRogueInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.room_id != 0 {
-            os.write_uint32(12, self.room_id)?;
+            os.write_uint32(10, self.room_id)?;
         }
         if self.site_id != 0 {
-            os.write_uint32(11, self.site_id)?;
+            os.write_uint32(13, self.site_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for PropRogueInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13PropRogueInfo.proto\"A\n\rPropRogueInfo\x12\x17\n\x07room_id\x18\
-    \x0c\x20\x01(\rR\x06roomId\x12\x17\n\x07site_id\x18\x0b\x20\x01(\rR\x06s\
-    iteIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x13PropRogueInfo.proto\"A\n\rPropRogueInfo\x12\x17\n\x07room_id\x18\n\
+    \x20\x01(\rR\x06roomId\x12\x17\n\x07site_id\x18\r\x20\x01(\rR\x06siteIdB\
+    \x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

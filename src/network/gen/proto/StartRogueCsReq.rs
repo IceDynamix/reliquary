@@ -35,8 +35,6 @@ pub struct StartRogueCsReq {
     pub area_id: u32,
     // @@protoc_insertion_point(field:StartRogueCsReq.buff_aeon_id)
     pub buff_aeon_id: u32,
-    // @@protoc_insertion_point(field:StartRogueCsReq.ECJEFHHACMI)
-    pub ECJEFHHACMI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:StartRogueCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,7 +52,7 @@ impl StartRogueCsReq {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(4);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "base_avatar_id_list",
@@ -70,11 +68,6 @@ impl StartRogueCsReq {
             "buff_aeon_id",
             |m: &StartRogueCsReq| { &m.buff_aeon_id },
             |m: &mut StartRogueCsReq| { &mut m.buff_aeon_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ECJEFHHACMI",
-            |m: &StartRogueCsReq| { &m.ECJEFHHACMI },
-            |m: &mut StartRogueCsReq| { &mut m.ECJEFHHACMI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartRogueCsReq>(
             "StartRogueCsReq",
@@ -94,20 +87,17 @@ impl ::protobuf::Message for StartRogueCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                114 => {
                     is.read_repeated_packed_uint32_into(&mut self.base_avatar_id_list)?;
                 },
-                88 => {
+                112 => {
                     self.base_avatar_id_list.push(is.read_uint32()?);
                 },
-                8 => {
+                56 => {
                     self.area_id = is.read_uint32()?;
                 },
-                24 => {
+                16 => {
                     self.buff_aeon_id = is.read_uint32()?;
-                },
-                96 => {
-                    self.ECJEFHHACMI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -122,16 +112,13 @@ impl ::protobuf::Message for StartRogueCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         for value in &self.base_avatar_id_list {
-            my_size += ::protobuf::rt::uint32_size(11, *value);
+            my_size += ::protobuf::rt::uint32_size(14, *value);
         };
         if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.area_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.area_id);
         }
         if self.buff_aeon_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.buff_aeon_id);
-        }
-        if self.ECJEFHHACMI != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.ECJEFHHACMI);
+            my_size += ::protobuf::rt::uint32_size(2, self.buff_aeon_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -140,16 +127,13 @@ impl ::protobuf::Message for StartRogueCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.base_avatar_id_list {
-            os.write_uint32(11, *v)?;
+            os.write_uint32(14, *v)?;
         };
         if self.area_id != 0 {
-            os.write_uint32(1, self.area_id)?;
+            os.write_uint32(7, self.area_id)?;
         }
         if self.buff_aeon_id != 0 {
-            os.write_uint32(3, self.buff_aeon_id)?;
-        }
-        if self.ECJEFHHACMI != 0 {
-            os.write_uint32(12, self.ECJEFHHACMI)?;
+            os.write_uint32(2, self.buff_aeon_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -171,7 +155,6 @@ impl ::protobuf::Message for StartRogueCsReq {
         self.base_avatar_id_list.clear();
         self.area_id = 0;
         self.buff_aeon_id = 0;
-        self.ECJEFHHACMI = 0;
         self.special_fields.clear();
     }
 
@@ -180,7 +163,6 @@ impl ::protobuf::Message for StartRogueCsReq {
             base_avatar_id_list: ::std::vec::Vec::new(),
             area_id: 0,
             buff_aeon_id: 0,
-            ECJEFHHACMI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -205,11 +187,10 @@ impl ::protobuf::reflect::ProtobufValue for StartRogueCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15StartRogueCsReq.proto\"\x9d\x01\n\x0fStartRogueCsReq\x12-\n\x13bas\
-    e_avatar_id_list\x18\x0b\x20\x03(\rR\x10baseAvatarIdList\x12\x17\n\x07ar\
-    ea_id\x18\x01\x20\x01(\rR\x06areaId\x12\x20\n\x0cbuff_aeon_id\x18\x03\
-    \x20\x01(\rR\nbuffAeonId\x12\x20\n\x0bECJEFHHACMI\x18\x0c\x20\x01(\rR\
-    \x0bECJEFHHACMIB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x15StartRogueCsReq.proto\"{\n\x0fStartRogueCsReq\x12-\n\x13base_avata\
+    r_id_list\x18\x0e\x20\x03(\rR\x10baseAvatarIdList\x12\x17\n\x07area_id\
+    \x18\x07\x20\x01(\rR\x06areaId\x12\x20\n\x0cbuff_aeon_id\x18\x02\x20\x01\
+    (\rR\nbuffAeonIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,14 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueAvatarInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueAvatarInfo.AJJJNLPCEED)
-    pub AJJJNLPCEED: ::protobuf::MessageField<CLPDAOOAHOE>,
-    // @@protoc_insertion_point(field:RogueAvatarInfo.DDDICOEFHPM)
-    pub DDDICOEFHPM: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:RogueAvatarInfo.base_avatar_id_list)
     pub base_avatar_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:RogueAvatarInfo.POGOCOKADMA)
-    pub POGOCOKADMA: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueAvatarInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,27 +48,12 @@ impl RogueAvatarInfo {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(4);
+        let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, CLPDAOOAHOE>(
-            "AJJJNLPCEED",
-            |m: &RogueAvatarInfo| { &m.AJJJNLPCEED },
-            |m: &mut RogueAvatarInfo| { &mut m.AJJJNLPCEED },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DDDICOEFHPM",
-            |m: &RogueAvatarInfo| { &m.DDDICOEFHPM },
-            |m: &mut RogueAvatarInfo| { &mut m.DDDICOEFHPM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "base_avatar_id_list",
             |m: &RogueAvatarInfo| { &m.base_avatar_id_list },
             |m: &mut RogueAvatarInfo| { &mut m.base_avatar_id_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "POGOCOKADMA",
-            |m: &RogueAvatarInfo| { &m.POGOCOKADMA },
-            |m: &mut RogueAvatarInfo| { &mut m.POGOCOKADMA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueAvatarInfo>(
             "RogueAvatarInfo",
@@ -94,26 +73,11 @@ impl ::protobuf::Message for RogueAvatarInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AJJJNLPCEED)?;
-                },
-                58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.DDDICOEFHPM)?;
-                },
-                56 => {
-                    self.DDDICOEFHPM.push(is.read_uint32()?);
-                },
-                90 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.base_avatar_id_list)?;
                 },
-                88 => {
+                64 => {
                     self.base_avatar_id_list.push(is.read_uint32()?);
-                },
-                114 => {
-                    is.read_repeated_packed_uint32_into(&mut self.POGOCOKADMA)?;
-                },
-                112 => {
-                    self.POGOCOKADMA.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,18 +91,8 @@ impl ::protobuf::Message for RogueAvatarInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.AJJJNLPCEED.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        for value in &self.DDDICOEFHPM {
-            my_size += ::protobuf::rt::uint32_size(7, *value);
-        };
         for value in &self.base_avatar_id_list {
-            my_size += ::protobuf::rt::uint32_size(11, *value);
-        };
-        for value in &self.POGOCOKADMA {
-            my_size += ::protobuf::rt::uint32_size(14, *value);
+            my_size += ::protobuf::rt::uint32_size(8, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -146,17 +100,8 @@ impl ::protobuf::Message for RogueAvatarInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.AJJJNLPCEED.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
-        for v in &self.DDDICOEFHPM {
-            os.write_uint32(7, *v)?;
-        };
         for v in &self.base_avatar_id_list {
-            os.write_uint32(11, *v)?;
-        };
-        for v in &self.POGOCOKADMA {
-            os.write_uint32(14, *v)?;
+            os.write_uint32(8, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -175,19 +120,13 @@ impl ::protobuf::Message for RogueAvatarInfo {
     }
 
     fn clear(&mut self) {
-        self.AJJJNLPCEED.clear();
-        self.DDDICOEFHPM.clear();
         self.base_avatar_id_list.clear();
-        self.POGOCOKADMA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueAvatarInfo {
         static instance: RogueAvatarInfo = RogueAvatarInfo {
-            AJJJNLPCEED: ::protobuf::MessageField::none(),
-            DDDICOEFHPM: ::std::vec::Vec::new(),
             base_avatar_id_list: ::std::vec::Vec::new(),
-            POGOCOKADMA: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -211,197 +150,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueAvatarInfo {
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
-// @@protoc_insertion_point(message:CLPDAOOAHOE)
-#[derive(PartialEq,Clone,Default,Debug)]
-pub struct CLPDAOOAHOE {
-    // message fields
-    // @@protoc_insertion_point(field:CLPDAOOAHOE.KKNMDMPJLBG)
-    pub KKNMDMPJLBG: u32,
-    // @@protoc_insertion_point(field:CLPDAOOAHOE.PFIDJJKFGJH)
-    pub PFIDJJKFGJH: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:CLPDAOOAHOE.MGEFFLOEPBK)
-    pub MGEFFLOEPBK: ::protobuf::MessageField<super::ItemCostList::ItemCostList>,
-    // @@protoc_insertion_point(field:CLPDAOOAHOE.DJGJDMBOFEH)
-    pub DJGJDMBOFEH: u32,
-    // special fields
-    // @@protoc_insertion_point(special_field:CLPDAOOAHOE.special_fields)
-    pub special_fields: ::protobuf::SpecialFields,
-}
-
-impl<'a> ::std::default::Default for &'a CLPDAOOAHOE {
-    fn default() -> &'a CLPDAOOAHOE {
-        <CLPDAOOAHOE as ::protobuf::Message>::default_instance()
-    }
-}
-
-impl CLPDAOOAHOE {
-    pub fn new() -> CLPDAOOAHOE {
-        ::std::default::Default::default()
-    }
-
-    fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(4);
-        let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KKNMDMPJLBG",
-            |m: &CLPDAOOAHOE| { &m.KKNMDMPJLBG },
-            |m: &mut CLPDAOOAHOE| { &mut m.KKNMDMPJLBG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PFIDJJKFGJH",
-            |m: &CLPDAOOAHOE| { &m.PFIDJJKFGJH },
-            |m: &mut CLPDAOOAHOE| { &mut m.PFIDJJKFGJH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostList::ItemCostList>(
-            "MGEFFLOEPBK",
-            |m: &CLPDAOOAHOE| { &m.MGEFFLOEPBK },
-            |m: &mut CLPDAOOAHOE| { &mut m.MGEFFLOEPBK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DJGJDMBOFEH",
-            |m: &CLPDAOOAHOE| { &m.DJGJDMBOFEH },
-            |m: &mut CLPDAOOAHOE| { &mut m.DJGJDMBOFEH },
-        ));
-        ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CLPDAOOAHOE>(
-            "CLPDAOOAHOE",
-            fields,
-            oneofs,
-        )
-    }
-}
-
-impl ::protobuf::Message for CLPDAOOAHOE {
-    const NAME: &'static str = "CLPDAOOAHOE";
-
-    fn is_initialized(&self) -> bool {
-        true
-    }
-
-    fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
-        while let Some(tag) = is.read_raw_tag_or_eof()? {
-            match tag {
-                120 => {
-                    self.KKNMDMPJLBG = is.read_uint32()?;
-                },
-                98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.PFIDJJKFGJH)?;
-                },
-                96 => {
-                    self.PFIDJJKFGJH.push(is.read_uint32()?);
-                },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MGEFFLOEPBK)?;
-                },
-                88 => {
-                    self.DJGJDMBOFEH = is.read_uint32()?;
-                },
-                tag => {
-                    ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
-                },
-            };
-        }
-        ::std::result::Result::Ok(())
-    }
-
-    // Compute sizes of nested messages
-    #[allow(unused_variables)]
-    fn compute_size(&self) -> u64 {
-        let mut my_size = 0;
-        if self.KKNMDMPJLBG != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.KKNMDMPJLBG);
-        }
-        for value in &self.PFIDJJKFGJH {
-            my_size += ::protobuf::rt::uint32_size(12, *value);
-        };
-        if let Some(v) = self.MGEFFLOEPBK.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.DJGJDMBOFEH != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.DJGJDMBOFEH);
-        }
-        my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
-        self.special_fields.cached_size().set(my_size as u32);
-        my_size
-    }
-
-    fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KKNMDMPJLBG != 0 {
-            os.write_uint32(15, self.KKNMDMPJLBG)?;
-        }
-        for v in &self.PFIDJJKFGJH {
-            os.write_uint32(12, *v)?;
-        };
-        if let Some(v) = self.MGEFFLOEPBK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
-        if self.DJGJDMBOFEH != 0 {
-            os.write_uint32(11, self.DJGJDMBOFEH)?;
-        }
-        os.write_unknown_fields(self.special_fields.unknown_fields())?;
-        ::std::result::Result::Ok(())
-    }
-
-    fn special_fields(&self) -> &::protobuf::SpecialFields {
-        &self.special_fields
-    }
-
-    fn mut_special_fields(&mut self) -> &mut ::protobuf::SpecialFields {
-        &mut self.special_fields
-    }
-
-    fn new() -> CLPDAOOAHOE {
-        CLPDAOOAHOE::new()
-    }
-
-    fn clear(&mut self) {
-        self.KKNMDMPJLBG = 0;
-        self.PFIDJJKFGJH.clear();
-        self.MGEFFLOEPBK.clear();
-        self.DJGJDMBOFEH = 0;
-        self.special_fields.clear();
-    }
-
-    fn default_instance() -> &'static CLPDAOOAHOE {
-        static instance: CLPDAOOAHOE = CLPDAOOAHOE {
-            KKNMDMPJLBG: 0,
-            PFIDJJKFGJH: ::std::vec::Vec::new(),
-            MGEFFLOEPBK: ::protobuf::MessageField::none(),
-            DJGJDMBOFEH: 0,
-            special_fields: ::protobuf::SpecialFields::new(),
-        };
-        &instance
-    }
-}
-
-impl ::protobuf::MessageFull for CLPDAOOAHOE {
-    fn descriptor() -> ::protobuf::reflect::MessageDescriptor {
-        static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::MessageDescriptor> = ::protobuf::rt::Lazy::new();
-        descriptor.get(|| file_descriptor().message_by_package_relative_name("CLPDAOOAHOE").unwrap()).clone()
-    }
-}
-
-impl ::std::fmt::Display for CLPDAOOAHOE {
-    fn fmt(&self, f: &mut ::std::fmt::Formatter<'_>) -> ::std::fmt::Result {
-        ::protobuf::text_format::fmt(self, f)
-    }
-}
-
-impl ::protobuf::reflect::ProtobufValue for CLPDAOOAHOE {
-    type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
-}
-
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15RogueAvatarInfo.proto\x1a\x12ItemCostList.proto\"\xb4\x01\n\x0fRog\
-    ueAvatarInfo\x12.\n\x0bAJJJNLPCEED\x18\x02\x20\x01(\x0b2\x0c.CLPDAOOAHOE\
-    R\x0bAJJJNLPCEED\x12\x20\n\x0bDDDICOEFHPM\x18\x07\x20\x03(\rR\x0bDDDICOE\
-    FHPM\x12-\n\x13base_avatar_id_list\x18\x0b\x20\x03(\rR\x10baseAvatarIdLi\
-    st\x12\x20\n\x0bPOGOCOKADMA\x18\x0e\x20\x03(\rR\x0bPOGOCOKADMA\"\xa4\x01\
-    \n\x0bCLPDAOOAHOE\x12\x20\n\x0bKKNMDMPJLBG\x18\x0f\x20\x01(\rR\x0bKKNMDM\
-    PJLBG\x12\x20\n\x0bPFIDJJKFGJH\x18\x0c\x20\x03(\rR\x0bPFIDJJKFGJH\x12/\n\
-    \x0bMGEFFLOEPBK\x18\x07\x20\x01(\x0b2\r.ItemCostListR\x0bMGEFFLOEPBK\x12\
-    \x20\n\x0bDJGJDMBOFEH\x18\x0b\x20\x01(\rR\x0bDJGJDMBOFEHB\x15\n\x13emu.l\
-    unarcore.protob\x06proto3\
+    \n\x15RogueAvatarInfo.proto\"@\n\x0fRogueAvatarInfo\x12-\n\x13base_avata\
+    r_id_list\x18\x08\x20\x03(\rR\x10baseAvatarIdListB\x15\n\x13emu.lunarcor\
+    e.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -418,11 +170,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ItemCostList::file_descriptor().clone());
-            let mut messages = ::std::vec::Vec::with_capacity(2);
+            let mut deps = ::std::vec::Vec::with_capacity(0);
+            let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueAvatarInfo::generated_message_descriptor_data());
-            messages.push(CLPDAOOAHOE::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);
             ::protobuf::reflect::GeneratedFileDescriptor::new_generated(
                 file_descriptor_proto(),

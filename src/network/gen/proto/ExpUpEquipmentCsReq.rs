@@ -80,10 +80,10 @@ impl ::protobuf::Message for ExpUpEquipmentCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                24 => {
                     self.equipment_unique_id = is.read_uint32()?;
                 },
-                10 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_cost_list)?;
                 },
                 tag => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for ExpUpEquipmentCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.equipment_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.equipment_unique_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.equipment_unique_id);
         }
         if let Some(v) = self.item_cost_list.as_ref() {
             let len = v.compute_size();
@@ -112,10 +112,10 @@ impl ::protobuf::Message for ExpUpEquipmentCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.equipment_unique_id != 0 {
-            os.write_uint32(2, self.equipment_unique_id)?;
+            os.write_uint32(3, self.equipment_unique_id)?;
         }
         if let Some(v) = self.item_cost_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for ExpUpEquipmentCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19ExpUpEquipmentCsReq.proto\x1a\x12ItemCostList.proto\"z\n\x13ExpUpE\
-    quipmentCsReq\x12.\n\x13equipment_unique_id\x18\x02\x20\x01(\rR\x11equip\
-    mentUniqueId\x123\n\x0eitem_cost_list\x18\x01\x20\x01(\x0b2\r.ItemCostLi\
+    quipmentCsReq\x12.\n\x13equipment_unique_id\x18\x03\x20\x01(\rR\x11equip\
+    mentUniqueId\x123\n\x0eitem_cost_list\x18\x05\x20\x01(\x0b2\r.ItemCostLi\
     stR\x0citemCostListB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

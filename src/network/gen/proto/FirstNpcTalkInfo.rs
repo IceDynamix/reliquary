@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FirstNpcTalkInfo {
     // message fields
-    // @@protoc_insertion_point(field:FirstNpcTalkInfo.KGCJMBBFBIA)
-    pub KGCJMBBFBIA: bool,
+    // @@protoc_insertion_point(field:FirstNpcTalkInfo.unk_bool)
+    pub unk_bool: bool,
     // @@protoc_insertion_point(field:FirstNpcTalkInfo.npc_id)
     pub npc_id: u32,
     // special fields
@@ -53,9 +53,9 @@ impl FirstNpcTalkInfo {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KGCJMBBFBIA",
-            |m: &FirstNpcTalkInfo| { &m.KGCJMBBFBIA },
-            |m: &mut FirstNpcTalkInfo| { &mut m.KGCJMBBFBIA },
+            "unk_bool",
+            |m: &FirstNpcTalkInfo| { &m.unk_bool },
+            |m: &mut FirstNpcTalkInfo| { &mut m.unk_bool },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "npc_id",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for FirstNpcTalkInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.KGCJMBBFBIA = is.read_bool()?;
+                96 => {
+                    self.unk_bool = is.read_bool()?;
                 },
-                24 => {
+                120 => {
                     self.npc_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,11 +98,11 @@ impl ::protobuf::Message for FirstNpcTalkInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KGCJMBBFBIA != false {
+        if self.unk_bool != false {
             my_size += 1 + 1;
         }
         if self.npc_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.npc_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.npc_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for FirstNpcTalkInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KGCJMBBFBIA != false {
-            os.write_bool(7, self.KGCJMBBFBIA)?;
+        if self.unk_bool != false {
+            os.write_bool(12, self.unk_bool)?;
         }
         if self.npc_id != 0 {
-            os.write_uint32(3, self.npc_id)?;
+            os.write_uint32(15, self.npc_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for FirstNpcTalkInfo {
     }
 
     fn clear(&mut self) {
-        self.KGCJMBBFBIA = false;
+        self.unk_bool = false;
         self.npc_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FirstNpcTalkInfo {
         static instance: FirstNpcTalkInfo = FirstNpcTalkInfo {
-            KGCJMBBFBIA: false,
+            unk_bool: false,
             npc_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for FirstNpcTalkInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16FirstNpcTalkInfo.proto\"K\n\x10FirstNpcTalkInfo\x12\x20\n\x0bKGCJM\
-    BBFBIA\x18\x07\x20\x01(\x08R\x0bKGCJMBBFBIA\x12\x15\n\x06npc_id\x18\x03\
-    \x20\x01(\rR\x05npcIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x16FirstNpcTalkInfo.proto\"D\n\x10FirstNpcTalkInfo\x12\x19\n\x08unk_b\
+    ool\x18\x0c\x20\x01(\x08R\x07unkBool\x12\x15\n\x06npc_id\x18\x0f\x20\x01\
+    (\rR\x05npcIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

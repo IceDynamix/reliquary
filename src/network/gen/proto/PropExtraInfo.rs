@@ -73,7 +73,7 @@ impl ::protobuf::Message for PropExtraInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_info)?;
                 },
                 tag => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for PropExtraInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.rogue_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +150,7 @@ impl ::protobuf::reflect::ProtobufValue for PropExtraInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13PropExtraInfo.proto\x1a\x13PropRogueInfo.proto\">\n\rPropExtraInfo\
-    \x12-\n\nrogue_info\x18\x02\x20\x01(\x0b2\x0e.PropRogueInfoR\trogueInfoB\
+    \x12-\n\nrogue_info\x18\x0c\x20\x01(\x0b2\x0e.PropRogueInfoR\trogueInfoB\
     \x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

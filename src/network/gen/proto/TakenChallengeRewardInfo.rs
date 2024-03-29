@@ -80,10 +80,10 @@ impl ::protobuf::Message for TakenChallengeRewardInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                72 => {
+                56 => {
                     self.star_count = is.read_uint32()?;
                 },
                 tag => {
@@ -103,7 +103,7 @@ impl ::protobuf::Message for TakenChallengeRewardInfo {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.star_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.star_count);
+            my_size += ::protobuf::rt::uint32_size(7, self.star_count);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -112,10 +112,10 @@ impl ::protobuf::Message for TakenChallengeRewardInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if self.star_count != 0 {
-            os.write_uint32(9, self.star_count)?;
+            os.write_uint32(7, self.star_count)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for TakenChallengeRewardInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eTakenChallengeRewardInfo.proto\x1a\x0eItemList.proto\"\\\n\x18Take\
-    nChallengeRewardInfo\x12!\n\x06reward\x18\x0e\x20\x01(\x0b2\t.ItemListR\
-    \x06reward\x12\x1d\n\nstar_count\x18\t\x20\x01(\rR\tstarCountB\x15\n\x13\
-    emu.lunarcore.protob\x06proto3\
+    nChallengeRewardInfo\x12!\n\x06reward\x18\x0b\x20\x01(\x0b2\t.ItemListR\
+    \x06reward\x12\x1d\n\nstar_count\x18\x07\x20\x01(\rR\tstarCountB\x15\n\
+    \x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

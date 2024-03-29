@@ -29,26 +29,26 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PVEBattleResultScRsp {
     // message fields
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.battle_avatar_list)
-    pub battle_avatar_list: ::std::vec::Vec<super::BattleAvatar::BattleAvatar>,
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.event_id)
-    pub event_id: u32,
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.check_identical)
-    pub check_identical: bool,
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.mismatch_turn_count)
-    pub mismatch_turn_count: u32,
     // @@protoc_insertion_point(field:PVEBattleResultScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.battle_id)
-    pub battle_id: u32,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.mismatch_turn_count)
+    pub mismatch_turn_count: u32,
     // @@protoc_insertion_point(field:PVEBattleResultScRsp.bin_version)
     pub bin_version: ::std::string::String,
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.res_version)
-    pub res_version: ::std::string::String,
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.end_status)
-    pub end_status: ::protobuf::EnumOrUnknown<super::BattleEndStatus::BattleEndStatus>,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.event_id)
+    pub event_id: u32,
     // @@protoc_insertion_point(field:PVEBattleResultScRsp.stage_id)
     pub stage_id: u32,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.battle_avatar_list)
+    pub battle_avatar_list: ::std::vec::Vec<super::BattleAvatar::BattleAvatar>,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.end_status)
+    pub end_status: ::protobuf::EnumOrUnknown<super::BattleEndStatus::BattleEndStatus>,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.battle_id)
+    pub battle_id: u32,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.res_version)
+    pub res_version: ::std::string::String,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.check_identical)
+    pub check_identical: bool,
     // @@protoc_insertion_point(field:PVEBattleResultScRsp.drop_data)
     pub drop_data: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:PVEBattleResultScRsp.unk1)
@@ -76,20 +76,10 @@ impl PVEBattleResultScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(14);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "battle_avatar_list",
-            |m: &PVEBattleResultScRsp| { &m.battle_avatar_list },
-            |m: &mut PVEBattleResultScRsp| { &mut m.battle_avatar_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "event_id",
-            |m: &PVEBattleResultScRsp| { &m.event_id },
-            |m: &mut PVEBattleResultScRsp| { &mut m.event_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "check_identical",
-            |m: &PVEBattleResultScRsp| { &m.check_identical },
-            |m: &mut PVEBattleResultScRsp| { &mut m.check_identical },
+            "retcode",
+            |m: &PVEBattleResultScRsp| { &m.retcode },
+            |m: &mut PVEBattleResultScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "mismatch_turn_count",
@@ -97,24 +87,24 @@ impl PVEBattleResultScRsp {
             |m: &mut PVEBattleResultScRsp| { &mut m.mismatch_turn_count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &PVEBattleResultScRsp| { &m.retcode },
-            |m: &mut PVEBattleResultScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "battle_id",
-            |m: &PVEBattleResultScRsp| { &m.battle_id },
-            |m: &mut PVEBattleResultScRsp| { &mut m.battle_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "bin_version",
             |m: &PVEBattleResultScRsp| { &m.bin_version },
             |m: &mut PVEBattleResultScRsp| { &mut m.bin_version },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "res_version",
-            |m: &PVEBattleResultScRsp| { &m.res_version },
-            |m: &mut PVEBattleResultScRsp| { &mut m.res_version },
+            "event_id",
+            |m: &PVEBattleResultScRsp| { &m.event_id },
+            |m: &mut PVEBattleResultScRsp| { &mut m.event_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "stage_id",
+            |m: &PVEBattleResultScRsp| { &m.stage_id },
+            |m: &mut PVEBattleResultScRsp| { &mut m.stage_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "battle_avatar_list",
+            |m: &PVEBattleResultScRsp| { &m.battle_avatar_list },
+            |m: &mut PVEBattleResultScRsp| { &mut m.battle_avatar_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "end_status",
@@ -122,9 +112,19 @@ impl PVEBattleResultScRsp {
             |m: &mut PVEBattleResultScRsp| { &mut m.end_status },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "stage_id",
-            |m: &PVEBattleResultScRsp| { &m.stage_id },
-            |m: &mut PVEBattleResultScRsp| { &mut m.stage_id },
+            "battle_id",
+            |m: &PVEBattleResultScRsp| { &m.battle_id },
+            |m: &mut PVEBattleResultScRsp| { &mut m.battle_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "res_version",
+            |m: &PVEBattleResultScRsp| { &m.res_version },
+            |m: &mut PVEBattleResultScRsp| { &mut m.res_version },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "check_identical",
+            |m: &PVEBattleResultScRsp| { &m.check_identical },
+            |m: &mut PVEBattleResultScRsp| { &mut m.check_identical },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "drop_data",
@@ -164,46 +164,46 @@ impl ::protobuf::Message for PVEBattleResultScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    self.battle_avatar_list.push(is.read_message()?);
-                },
-                32 => {
-                    self.event_id = is.read_uint32()?;
-                },
-                96 => {
-                    self.check_identical = is.read_bool()?;
-                },
-                120 => {
-                    self.mismatch_turn_count = is.read_uint32()?;
-                },
-                40 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
-                48 => {
-                    self.battle_id = is.read_uint32()?;
-                },
-                114 => {
-                    self.bin_version = is.read_string()?;
-                },
-                26 => {
-                    self.res_version = is.read_string()?;
-                },
-                56 => {
-                    self.end_status = is.read_enum_or_unknown()?;
-                },
-                8 => {
-                    self.stage_id = is.read_uint32()?;
+                104 => {
+                    self.mismatch_turn_count = is.read_uint32()?;
                 },
                 18 => {
+                    self.bin_version = is.read_string()?;
+                },
+                48 => {
+                    self.event_id = is.read_uint32()?;
+                },
+                40 => {
+                    self.stage_id = is.read_uint32()?;
+                },
+                122 => {
+                    self.battle_avatar_list.push(is.read_message()?);
+                },
+                64 => {
+                    self.end_status = is.read_enum_or_unknown()?;
+                },
+                88 => {
+                    self.battle_id = is.read_uint32()?;
+                },
+                34 => {
+                    self.res_version = is.read_string()?;
+                },
+                112 => {
+                    self.check_identical = is.read_bool()?;
+                },
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.drop_data)?;
                 },
-                74 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.unk1)?;
                 },
-                106 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.unk2)?;
                 },
-                4194 => {
+                13074 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.unk3)?;
                 },
                 tag => {
@@ -218,36 +218,36 @@ impl ::protobuf::Message for PVEBattleResultScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+        }
+        if self.mismatch_turn_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.mismatch_turn_count);
+        }
+        if !self.bin_version.is_empty() {
+            my_size += ::protobuf::rt::string_size(2, &self.bin_version);
+        }
+        if self.event_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.event_id);
+        }
+        if self.stage_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.stage_id);
+        }
         for value in &self.battle_avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.event_id);
+        if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
+            my_size += ::protobuf::rt::int32_size(8, self.end_status.value());
+        }
+        if self.battle_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.battle_id);
+        }
+        if !self.res_version.is_empty() {
+            my_size += ::protobuf::rt::string_size(4, &self.res_version);
         }
         if self.check_identical != false {
             my_size += 1 + 1;
-        }
-        if self.mismatch_turn_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.mismatch_turn_count);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
-        }
-        if self.battle_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.battle_id);
-        }
-        if !self.bin_version.is_empty() {
-            my_size += ::protobuf::rt::string_size(14, &self.bin_version);
-        }
-        if !self.res_version.is_empty() {
-            my_size += ::protobuf::rt::string_size(3, &self.res_version);
-        }
-        if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
-            my_size += ::protobuf::rt::int32_size(7, self.end_status.value());
-        }
-        if self.stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.stage_id);
         }
         if let Some(v) = self.drop_data.as_ref() {
             let len = v.compute_size();
@@ -271,47 +271,47 @@ impl ::protobuf::Message for PVEBattleResultScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.battle_avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
-        if self.event_id != 0 {
-            os.write_uint32(4, self.event_id)?;
-        }
-        if self.check_identical != false {
-            os.write_bool(12, self.check_identical)?;
+        if self.retcode != 0 {
+            os.write_uint32(10, self.retcode)?;
         }
         if self.mismatch_turn_count != 0 {
-            os.write_uint32(15, self.mismatch_turn_count)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
-        }
-        if self.battle_id != 0 {
-            os.write_uint32(6, self.battle_id)?;
+            os.write_uint32(13, self.mismatch_turn_count)?;
         }
         if !self.bin_version.is_empty() {
-            os.write_string(14, &self.bin_version)?;
+            os.write_string(2, &self.bin_version)?;
         }
-        if !self.res_version.is_empty() {
-            os.write_string(3, &self.res_version)?;
-        }
-        if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.end_status))?;
+        if self.event_id != 0 {
+            os.write_uint32(6, self.event_id)?;
         }
         if self.stage_id != 0 {
-            os.write_uint32(1, self.stage_id)?;
+            os.write_uint32(5, self.stage_id)?;
+        }
+        for v in &self.battle_avatar_list {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
+        if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.end_status))?;
+        }
+        if self.battle_id != 0 {
+            os.write_uint32(11, self.battle_id)?;
+        }
+        if !self.res_version.is_empty() {
+            os.write_string(4, &self.res_version)?;
+        }
+        if self.check_identical != false {
+            os.write_bool(14, self.check_identical)?;
         }
         if let Some(v) = self.drop_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if let Some(v) = self.unk1.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if let Some(v) = self.unk2.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if let Some(v) = self.unk3.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(524, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1634, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -330,16 +330,16 @@ impl ::protobuf::Message for PVEBattleResultScRsp {
     }
 
     fn clear(&mut self) {
-        self.battle_avatar_list.clear();
-        self.event_id = 0;
-        self.check_identical = false;
-        self.mismatch_turn_count = 0;
         self.retcode = 0;
-        self.battle_id = 0;
+        self.mismatch_turn_count = 0;
         self.bin_version.clear();
-        self.res_version.clear();
-        self.end_status = ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE);
+        self.event_id = 0;
         self.stage_id = 0;
+        self.battle_avatar_list.clear();
+        self.end_status = ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE);
+        self.battle_id = 0;
+        self.res_version.clear();
+        self.check_identical = false;
         self.drop_data.clear();
         self.unk1.clear();
         self.unk2.clear();
@@ -349,16 +349,16 @@ impl ::protobuf::Message for PVEBattleResultScRsp {
 
     fn default_instance() -> &'static PVEBattleResultScRsp {
         static instance: PVEBattleResultScRsp = PVEBattleResultScRsp {
-            battle_avatar_list: ::std::vec::Vec::new(),
-            event_id: 0,
-            check_identical: false,
-            mismatch_turn_count: 0,
             retcode: 0,
-            battle_id: 0,
+            mismatch_turn_count: 0,
             bin_version: ::std::string::String::new(),
-            res_version: ::std::string::String::new(),
-            end_status: ::protobuf::EnumOrUnknown::from_i32(0),
+            event_id: 0,
             stage_id: 0,
+            battle_avatar_list: ::std::vec::Vec::new(),
+            end_status: ::protobuf::EnumOrUnknown::from_i32(0),
+            battle_id: 0,
+            res_version: ::std::string::String::new(),
+            check_identical: false,
             drop_data: ::protobuf::MessageField::none(),
             unk1: ::protobuf::MessageField::none(),
             unk2: ::protobuf::MessageField::none(),
@@ -389,19 +389,19 @@ impl ::protobuf::reflect::ProtobufValue for PVEBattleResultScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aPVEBattleResultScRsp.proto\x1a\x15BattleEndStatus.proto\x1a\x12Bat\
     tleAvatar.proto\x1a\x0eItemList.proto\"\x92\x04\n\x14PVEBattleResultScRs\
-    p\x12;\n\x12battle_avatar_list\x18\x08\x20\x03(\x0b2\r.BattleAvatarR\x10\
-    battleAvatarList\x12\x19\n\x08event_id\x18\x04\x20\x01(\rR\x07eventId\
-    \x12'\n\x0fcheck_identical\x18\x0c\x20\x01(\x08R\x0echeckIdentical\x12.\
-    \n\x13mismatch_turn_count\x18\x0f\x20\x01(\rR\x11mismatchTurnCount\x12\
-    \x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12\x1b\n\tbattle_id\
-    \x18\x06\x20\x01(\rR\x08battleId\x12\x1f\n\x0bbin_version\x18\x0e\x20\
-    \x01(\tR\nbinVersion\x12\x1f\n\x0bres_version\x18\x03\x20\x01(\tR\nresVe\
-    rsion\x12/\n\nend_status\x18\x07\x20\x01(\x0e2\x10.BattleEndStatusR\tend\
-    Status\x12\x19\n\x08stage_id\x18\x01\x20\x01(\rR\x07stageId\x12&\n\tdrop\
-    _data\x18\x02\x20\x01(\x0b2\t.ItemListR\x08dropData\x12\x1d\n\x04unk1\
-    \x18\t\x20\x01(\x0b2\t.ItemListR\x04unk1\x12\x1d\n\x04unk2\x18\r\x20\x01\
-    (\x0b2\t.ItemListR\x04unk2\x12\x1e\n\x04unk3\x18\x8c\x04\x20\x01(\x0b2\t\
-    .ItemListR\x04unk3B\x15\n\x13emu.lunarcore.protob\x06proto3\
+    p\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcode\x12.\n\x13mismatch_t\
+    urn_count\x18\r\x20\x01(\rR\x11mismatchTurnCount\x12\x1f\n\x0bbin_versio\
+    n\x18\x02\x20\x01(\tR\nbinVersion\x12\x19\n\x08event_id\x18\x06\x20\x01(\
+    \rR\x07eventId\x12\x19\n\x08stage_id\x18\x05\x20\x01(\rR\x07stageId\x12;\
+    \n\x12battle_avatar_list\x18\x0f\x20\x03(\x0b2\r.BattleAvatarR\x10battle\
+    AvatarList\x12/\n\nend_status\x18\x08\x20\x01(\x0e2\x10.BattleEndStatusR\
+    \tendStatus\x12\x1b\n\tbattle_id\x18\x0b\x20\x01(\rR\x08battleId\x12\x1f\
+    \n\x0bres_version\x18\x04\x20\x01(\tR\nresVersion\x12'\n\x0fcheck_identi\
+    cal\x18\x0e\x20\x01(\x08R\x0echeckIdentical\x12&\n\tdrop_data\x18\x01\
+    \x20\x01(\x0b2\t.ItemListR\x08dropData\x12\x1d\n\x04unk1\x18\x07\x20\x01\
+    (\x0b2\t.ItemListR\x04unk1\x12\x1d\n\x04unk2\x18\x0c\x20\x01(\x0b2\t.Ite\
+    mListR\x04unk2\x12\x1e\n\x04unk3\x18\xe2\x0c\x20\x01(\x0b2\t.ItemListR\
+    \x04unk3B\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -31,10 +31,6 @@ pub struct BattleSkillInfo {
     // message fields
     // @@protoc_insertion_point(field:BattleSkillInfo.skill_id)
     pub skill_id: u32,
-    // @@protoc_insertion_point(field:BattleSkillInfo.ECLKNMPFOOF)
-    pub ECLKNMPFOOF: f64,
-    // @@protoc_insertion_point(field:BattleSkillInfo.HEOGMIOCDIC)
-    pub HEOGMIOCDIC: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:BattleSkillInfo.damage)
     pub damage: f64,
     // special fields
@@ -54,22 +50,12 @@ impl BattleSkillInfo {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(4);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "skill_id",
             |m: &BattleSkillInfo| { &m.skill_id },
             |m: &mut BattleSkillInfo| { &mut m.skill_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ECLKNMPFOOF",
-            |m: &BattleSkillInfo| { &m.ECLKNMPFOOF },
-            |m: &mut BattleSkillInfo| { &mut m.ECLKNMPFOOF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HEOGMIOCDIC",
-            |m: &BattleSkillInfo| { &m.HEOGMIOCDIC },
-            |m: &mut BattleSkillInfo| { &mut m.HEOGMIOCDIC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "damage",
@@ -97,15 +83,6 @@ impl ::protobuf::Message for BattleSkillInfo {
                 8 => {
                     self.skill_id = is.read_uint32()?;
                 },
-                17 => {
-                    self.ECLKNMPFOOF = is.read_double()?;
-                },
-                26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.HEOGMIOCDIC)?;
-                },
-                24 => {
-                    self.HEOGMIOCDIC.push(is.read_uint32()?);
-                },
                 33 => {
                     self.damage = is.read_double()?;
                 },
@@ -124,12 +101,6 @@ impl ::protobuf::Message for BattleSkillInfo {
         if self.skill_id != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.skill_id);
         }
-        if self.ECLKNMPFOOF != 0. {
-            my_size += 1 + 8;
-        }
-        for value in &self.HEOGMIOCDIC {
-            my_size += ::protobuf::rt::uint32_size(3, *value);
-        };
         if self.damage != 0. {
             my_size += 1 + 8;
         }
@@ -142,12 +113,6 @@ impl ::protobuf::Message for BattleSkillInfo {
         if self.skill_id != 0 {
             os.write_uint32(1, self.skill_id)?;
         }
-        if self.ECLKNMPFOOF != 0. {
-            os.write_double(2, self.ECLKNMPFOOF)?;
-        }
-        for v in &self.HEOGMIOCDIC {
-            os.write_uint32(3, *v)?;
-        };
         if self.damage != 0. {
             os.write_double(4, self.damage)?;
         }
@@ -169,8 +134,6 @@ impl ::protobuf::Message for BattleSkillInfo {
 
     fn clear(&mut self) {
         self.skill_id = 0;
-        self.ECLKNMPFOOF = 0.;
-        self.HEOGMIOCDIC.clear();
         self.damage = 0.;
         self.special_fields.clear();
     }
@@ -178,8 +141,6 @@ impl ::protobuf::Message for BattleSkillInfo {
     fn default_instance() -> &'static BattleSkillInfo {
         static instance: BattleSkillInfo = BattleSkillInfo {
             skill_id: 0,
-            ECLKNMPFOOF: 0.,
-            HEOGMIOCDIC: ::std::vec::Vec::new(),
             damage: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -205,11 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for BattleSkillInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15BattleSkillInfo.proto\"\x88\x01\n\x0fBattleSkillInfo\x12\x19\n\x08\
-    skill_id\x18\x01\x20\x01(\rR\x07skillId\x12\x20\n\x0bECLKNMPFOOF\x18\x02\
-    \x20\x01(\x01R\x0bECLKNMPFOOF\x12\x20\n\x0bHEOGMIOCDIC\x18\x03\x20\x03(\
-    \rR\x0bHEOGMIOCDIC\x12\x16\n\x06damage\x18\x04\x20\x01(\x01R\x06damageB\
-    \x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x15BattleSkillInfo.proto\"D\n\x0fBattleSkillInfo\x12\x19\n\x08skill_i\
+    d\x18\x01\x20\x01(\rR\x07skillId\x12\x16\n\x06damage\x18\x04\x20\x01(\
+    \x01R\x06damageB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

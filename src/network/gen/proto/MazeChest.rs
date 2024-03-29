@@ -87,13 +87,13 @@ impl ::protobuf::Message for MazeChest {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                8 => {
                     self.map_info_chest_type = is.read_enum_or_unknown()?;
                 },
-                32 => {
+                56 => {
                     self.total_amount_list = is.read_uint32()?;
                 },
-                8 => {
+                16 => {
                     self.unlocked_amount_list = is.read_uint32()?;
                 },
                 tag => {
@@ -109,13 +109,13 @@ impl ::protobuf::Message for MazeChest {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.map_info_chest_type != ::protobuf::EnumOrUnknown::new(super::MapInfoChestType::MapInfoChestType::MAP_INFO_CHEST_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(14, self.map_info_chest_type.value());
+            my_size += ::protobuf::rt::int32_size(1, self.map_info_chest_type.value());
         }
         if self.total_amount_list != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.total_amount_list);
+            my_size += ::protobuf::rt::uint32_size(7, self.total_amount_list);
         }
         if self.unlocked_amount_list != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.unlocked_amount_list);
+            my_size += ::protobuf::rt::uint32_size(2, self.unlocked_amount_list);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for MazeChest {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.map_info_chest_type != ::protobuf::EnumOrUnknown::new(super::MapInfoChestType::MapInfoChestType::MAP_INFO_CHEST_TYPE_NONE) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.map_info_chest_type))?;
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.map_info_chest_type))?;
         }
         if self.total_amount_list != 0 {
-            os.write_uint32(4, self.total_amount_list)?;
+            os.write_uint32(7, self.total_amount_list)?;
         }
         if self.unlocked_amount_list != 0 {
-            os.write_uint32(1, self.unlocked_amount_list)?;
+            os.write_uint32(2, self.unlocked_amount_list)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for MazeChest {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0fMazeChest.proto\x1a\x16MapInfoChestType.proto\"\xab\x01\n\tMazeChe\
-    st\x12@\n\x13map_info_chest_type\x18\x0e\x20\x01(\x0e2\x11.MapInfoChestT\
-    ypeR\x10mapInfoChestType\x12*\n\x11total_amount_list\x18\x04\x20\x01(\rR\
-    \x0ftotalAmountList\x120\n\x14unlocked_amount_list\x18\x01\x20\x01(\rR\
+    st\x12@\n\x13map_info_chest_type\x18\x01\x20\x01(\x0e2\x11.MapInfoChestT\
+    ypeR\x10mapInfoChestType\x12*\n\x11total_amount_list\x18\x07\x20\x01(\rR\
+    \x0ftotalAmountList\x120\n\x14unlocked_amount_list\x18\x02\x20\x01(\rR\
     \x12unlockedAmountListB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

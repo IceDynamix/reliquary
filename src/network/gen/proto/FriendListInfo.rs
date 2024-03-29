@@ -73,7 +73,7 @@ impl ::protobuf::Message for FriendListInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.simple_info)?;
                 },
                 tag => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for FriendListInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.simple_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,8 +150,8 @@ impl ::protobuf::reflect::ProtobufValue for FriendListInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14FriendListInfo.proto\x1a\x10SimpleInfo.proto\">\n\x0eFriendListInf\
-    o\x12,\n\x0bsimple_info\x18\n\x20\x01(\x0b2\x0b.SimpleInfoR\nsimpleInfoB\
-    \x15\n\x13emu.lunarcore.protob\x06proto3\
+    o\x12,\n\x0bsimple_info\x18\x02\x20\x01(\x0b2\x0b.SimpleInfoR\nsimpleInf\
+    oB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

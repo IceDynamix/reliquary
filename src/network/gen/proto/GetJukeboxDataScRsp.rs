@@ -90,10 +90,10 @@ impl ::protobuf::Message for GetJukeboxDataScRsp {
                 32 => {
                     self.retcode = is.read_uint32()?;
                 },
-                80 => {
+                72 => {
                     self.playing_id = is.read_uint32()?;
                 },
-                26 => {
+                82 => {
                     self.music_list.push(is.read_message()?);
                 },
                 tag => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for GetJukeboxDataScRsp {
             my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         if self.playing_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.playing_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.playing_id);
         }
         for value in &self.music_list {
             let len = value.compute_size();
@@ -128,10 +128,10 @@ impl ::protobuf::Message for GetJukeboxDataScRsp {
             os.write_uint32(4, self.retcode)?;
         }
         if self.playing_id != 0 {
-            os.write_uint32(10, self.playing_id)?;
+            os.write_uint32(9, self.playing_id)?;
         }
         for v in &self.music_list {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -187,9 +187,9 @@ impl ::protobuf::reflect::ProtobufValue for GetJukeboxDataScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19GetJukeboxDataScRsp.proto\x1a\x13UnlockedMusic.proto\"}\n\x13GetJu\
     keboxDataScRsp\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12\
-    \x1d\n\nplaying_id\x18\n\x20\x01(\rR\tplayingId\x12-\n\nmusic_list\x18\
-    \x03\x20\x03(\x0b2\x0e.UnlockedMusicR\tmusicListB\x15\n\x13emu.lunarcore\
-    .protob\x06proto3\
+    \x1d\n\nplaying_id\x18\t\x20\x01(\rR\tplayingId\x12-\n\nmusic_list\x18\n\
+    \x20\x03(\x0b2\x0e.UnlockedMusicR\tmusicListB\x15\n\x13emu.lunarcore.pro\
+    tob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

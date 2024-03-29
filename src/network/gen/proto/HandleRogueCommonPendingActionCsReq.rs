@@ -94,16 +94,16 @@ impl ::protobuf::Message for HandleRogueCommonPendingActionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                9114 => {
+                14418 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.buff_select_result)?;
                 },
-                5514 => {
+                11314 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.roll_buff)?;
                 },
-                1554 => {
+                9402 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.miracle_select_result)?;
                 },
-                1090 => {
+                9938 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.bonus_select_result)?;
                 },
                 tag => {
@@ -141,16 +141,16 @@ impl ::protobuf::Message for HandleRogueCommonPendingActionCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.buff_select_result.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1139, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1802, v, os)?;
         }
         if let Some(v) = self.roll_buff.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(689, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1414, v, os)?;
         }
         if let Some(v) = self.miracle_select_result.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(194, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1175, v, os)?;
         }
         if let Some(v) = self.bonus_select_result.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(136, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1242, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -209,13 +209,13 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n)HandleRogueCommonPendingActionCsReq.proto\x1a!RogueCommonBuffSelectRe\
     sult.proto\x1a\x17RogueBuffRollInfo.proto\x1a\x1eRogueMiracleSelectResul\
     t.proto\x1a\x1cRogueBonusSelectResult.proto\"\xbe\x02\n#HandleRogueCommo\
-    nPendingActionCsReq\x12K\n\x12buff_select_result\x18\xf3\x08\x20\x01(\
+    nPendingActionCsReq\x12K\n\x12buff_select_result\x18\x8a\x0e\x20\x01(\
     \x0b2\x1c.RogueCommonBuffSelectResultR\x10buffSelectResult\x120\n\troll_\
-    buff\x18\xb1\x05\x20\x01(\x0b2\x12.RogueBuffRollInfoR\x08rollBuff\x12N\n\
-    \x15miracle_select_result\x18\xc2\x01\x20\x01(\x0b2\x19.RogueMiracleSele\
-    ctResultR\x13miracleSelectResult\x12H\n\x13bonus_select_result\x18\x88\
-    \x01\x20\x01(\x0b2\x17.RogueBonusSelectResultR\x11bonusSelectResultB\x15\
-    \n\x13emu.lunarcore.protob\x06proto3\
+    buff\x18\x86\x0b\x20\x01(\x0b2\x12.RogueBuffRollInfoR\x08rollBuff\x12N\n\
+    \x15miracle_select_result\x18\x97\t\x20\x01(\x0b2\x19.RogueMiracleSelect\
+    ResultR\x13miracleSelectResult\x12H\n\x13bonus_select_result\x18\xda\t\
+    \x20\x01(\x0b2\x17.RogueBonusSelectResultR\x11bonusSelectResultB\x15\n\
+    \x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

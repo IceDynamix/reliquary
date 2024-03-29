@@ -80,10 +80,10 @@ impl ::protobuf::Message for RogueHandbookMiracle {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                24 => {
                     self.miracle_id = is.read_uint32()?;
                 },
-                32 => {
+                112 => {
                     self.is_unlocked = is.read_bool()?;
                 },
                 tag => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for RogueHandbookMiracle {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.miracle_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.miracle_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.miracle_id);
         }
         if self.is_unlocked != false {
             my_size += 1 + 1;
@@ -111,10 +111,10 @@ impl ::protobuf::Message for RogueHandbookMiracle {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.miracle_id != 0 {
-            os.write_uint32(10, self.miracle_id)?;
+            os.write_uint32(3, self.miracle_id)?;
         }
         if self.is_unlocked != false {
-            os.write_bool(4, self.is_unlocked)?;
+            os.write_bool(14, self.is_unlocked)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueHandbookMiracle {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aRogueHandbookMiracle.proto\"V\n\x14RogueHandbookMiracle\x12\x1d\n\
-    \nmiracle_id\x18\n\x20\x01(\rR\tmiracleId\x12\x1f\n\x0bis_unlocked\x18\
-    \x04\x20\x01(\x08R\nisUnlockedB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \nmiracle_id\x18\x03\x20\x01(\rR\tmiracleId\x12\x1f\n\x0bis_unlocked\x18\
+    \x0e\x20\x01(\x08R\nisUnlockedB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

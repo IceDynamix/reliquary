@@ -33,6 +33,8 @@ pub struct SceneGroupRefreshInfo {
     pub group_id: u32,
     // @@protoc_insertion_point(field:SceneGroupRefreshInfo.state)
     pub state: u32,
+    // @@protoc_insertion_point(field:SceneGroupRefreshInfo.refresh_type)
+    pub refresh_type: ::protobuf::EnumOrUnknown<super::SceneGroupRefreshType::SceneGroupRefreshType>,
     // @@protoc_insertion_point(field:SceneGroupRefreshInfo.refresh_entity)
     pub refresh_entity: ::std::vec::Vec<super::SceneEntityRefreshInfo::SceneEntityRefreshInfo>,
     // special fields
@@ -52,7 +54,7 @@ impl SceneGroupRefreshInfo {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_id",
@@ -63,6 +65,11 @@ impl SceneGroupRefreshInfo {
             "state",
             |m: &SceneGroupRefreshInfo| { &m.state },
             |m: &mut SceneGroupRefreshInfo| { &mut m.state },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "refresh_type",
+            |m: &SceneGroupRefreshInfo| { &m.refresh_type },
+            |m: &mut SceneGroupRefreshInfo| { &mut m.refresh_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "refresh_entity",
@@ -87,13 +94,16 @@ impl ::protobuf::Message for SceneGroupRefreshInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                72 => {
                     self.group_id = is.read_uint32()?;
                 },
-                24 => {
+                96 => {
                     self.state = is.read_uint32()?;
                 },
-                114 => {
+                88 => {
+                    self.refresh_type = is.read_enum_or_unknown()?;
+                },
+                82 => {
                     self.refresh_entity.push(is.read_message()?);
                 },
                 tag => {
@@ -109,10 +119,13 @@ impl ::protobuf::Message for SceneGroupRefreshInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.group_id);
         }
         if self.state != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.state);
+            my_size += ::protobuf::rt::uint32_size(12, self.state);
+        }
+        if self.refresh_type != ::protobuf::EnumOrUnknown::new(super::SceneGroupRefreshType::SceneGroupRefreshType::SCENE_GROUP_REFRESH_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(11, self.refresh_type.value());
         }
         for value in &self.refresh_entity {
             let len = value.compute_size();
@@ -125,13 +138,16 @@ impl ::protobuf::Message for SceneGroupRefreshInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.group_id != 0 {
-            os.write_uint32(12, self.group_id)?;
+            os.write_uint32(9, self.group_id)?;
         }
         if self.state != 0 {
-            os.write_uint32(3, self.state)?;
+            os.write_uint32(12, self.state)?;
+        }
+        if self.refresh_type != ::protobuf::EnumOrUnknown::new(super::SceneGroupRefreshType::SceneGroupRefreshType::SCENE_GROUP_REFRESH_TYPE_NONE) {
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.refresh_type))?;
         }
         for v in &self.refresh_entity {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -152,6 +168,7 @@ impl ::protobuf::Message for SceneGroupRefreshInfo {
     fn clear(&mut self) {
         self.group_id = 0;
         self.state = 0;
+        self.refresh_type = ::protobuf::EnumOrUnknown::new(super::SceneGroupRefreshType::SceneGroupRefreshType::SCENE_GROUP_REFRESH_TYPE_NONE);
         self.refresh_entity.clear();
         self.special_fields.clear();
     }
@@ -160,6 +177,7 @@ impl ::protobuf::Message for SceneGroupRefreshInfo {
         static instance: SceneGroupRefreshInfo = SceneGroupRefreshInfo {
             group_id: 0,
             state: 0,
+            refresh_type: ::protobuf::EnumOrUnknown::from_i32(0),
             refresh_entity: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,11 +203,13 @@ impl ::protobuf::reflect::ProtobufValue for SceneGroupRefreshInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bSceneGroupRefreshInfo.proto\x1a\x1cSceneEntityRefreshInfo.proto\"\
-    \x88\x01\n\x15SceneGroupRefreshInfo\x12\x19\n\x08group_id\x18\x0c\x20\
-    \x01(\rR\x07groupId\x12\x14\n\x05state\x18\x03\x20\x01(\rR\x05state\x12>\
-    \n\x0erefresh_entity\x18\x0e\x20\x03(\x0b2\x17.SceneEntityRefreshInfoR\r\
-    refreshEntityB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x1bSceneGroupRefreshInfo.proto\x1a\x1cSceneEntityRefreshInfo.proto\
+    \x1a\x1bSceneGroupRefreshType.proto\"\xc3\x01\n\x15SceneGroupRefreshInfo\
+    \x12\x19\n\x08group_id\x18\t\x20\x01(\rR\x07groupId\x12\x14\n\x05state\
+    \x18\x0c\x20\x01(\rR\x05state\x129\n\x0crefresh_type\x18\x0b\x20\x01(\
+    \x0e2\x16.SceneGroupRefreshTypeR\x0brefreshType\x12>\n\x0erefresh_entity\
+    \x18\n\x20\x03(\x0b2\x17.SceneEntityRefreshInfoR\rrefreshEntityB\x15\n\
+    \x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,8 +226,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(1);
+            let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::SceneEntityRefreshInfo::file_descriptor().clone());
+            deps.push(super::SceneGroupRefreshType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SceneGroupRefreshInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

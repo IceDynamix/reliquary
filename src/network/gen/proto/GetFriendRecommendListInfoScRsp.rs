@@ -80,10 +80,10 @@ impl ::protobuf::Message for GetFriendRecommendListInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                98 => {
                     self.friend_recommend_list.push(is.read_message()?);
                 },
-                64 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -103,7 +103,7 @@ impl ::protobuf::Message for GetFriendRecommendListInfoScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -112,10 +112,10 @@ impl ::protobuf::Message for GetFriendRecommendListInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.friend_recommend_list {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,9 +169,9 @@ impl ::protobuf::reflect::ProtobufValue for GetFriendRecommendListInfoScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%GetFriendRecommendListInfoScRsp.proto\x1a\x19FriendRecommendInfo.prot\
     o\"\x85\x01\n\x1fGetFriendRecommendListInfoScRsp\x12H\n\x15friend_recomm\
-    end_list\x18\n\x20\x03(\x0b2\x14.FriendRecommendInfoR\x13friendRecommend\
-    List\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcodeB\x15\n\x13emu.l\
-    unarcore.protob\x06proto3\
+    end_list\x18\x0c\x20\x03(\x0b2\x14.FriendRecommendInfoR\x13friendRecomme\
+    ndList\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcodeB\x15\n\x13emu\
+    .lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

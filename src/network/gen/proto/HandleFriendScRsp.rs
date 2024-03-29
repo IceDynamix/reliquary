@@ -97,13 +97,13 @@ impl ::protobuf::Message for HandleFriendScRsp {
                 40 => {
                     self.handle_result = is.read_bool()?;
                 },
-                120 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
-                48 => {
+                32 => {
                     self.uid = is.read_uint32()?;
                 },
-                26 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.handle_friend_info)?;
                 },
                 tag => {
@@ -122,10 +122,10 @@ impl ::protobuf::Message for HandleFriendScRsp {
             my_size += 1 + 1;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.uid);
+            my_size += ::protobuf::rt::uint32_size(4, self.uid);
         }
         if let Some(v) = self.handle_friend_info.as_ref() {
             let len = v.compute_size();
@@ -141,13 +141,13 @@ impl ::protobuf::Message for HandleFriendScRsp {
             os.write_bool(5, self.handle_result)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
         }
         if self.uid != 0 {
-            os.write_uint32(6, self.uid)?;
+            os.write_uint32(4, self.uid)?;
         }
         if let Some(v) = self.handle_friend_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -205,8 +205,8 @@ impl ::protobuf::reflect::ProtobufValue for HandleFriendScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17HandleFriendScRsp.proto\x1a\x14FriendListInfo.proto\"\xa3\x01\n\
     \x11HandleFriendScRsp\x12#\n\rhandle_result\x18\x05\x20\x01(\x08R\x0chan\
-    dleResult\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcode\x12\x10\n\
-    \x03uid\x18\x06\x20\x01(\rR\x03uid\x12=\n\x12handle_friend_info\x18\x03\
+    dleResult\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\x12\x10\n\
+    \x03uid\x18\x04\x20\x01(\rR\x03uid\x12=\n\x12handle_friend_info\x18\x0e\
     \x20\x01(\x0b2\x0f.FriendListInfoR\x10handleFriendInfoB\x15\n\x13emu.lun\
     arcore.protob\x06proto3\
 ";

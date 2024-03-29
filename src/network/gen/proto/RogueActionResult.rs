@@ -31,8 +31,8 @@ pub struct RogueActionResult {
     // message fields
     // @@protoc_insertion_point(field:RogueActionResult.source)
     pub source: ::protobuf::EnumOrUnknown<super::RogueBuffSource::RogueBuffSource>,
-    // @@protoc_insertion_point(field:RogueActionResult.action_data)
-    pub action_data: ::protobuf::MessageField<super::RogueActionResultData::RogueActionResultData>,
+    // @@protoc_insertion_point(field:RogueActionResult.rogue_action)
+    pub rogue_action: ::protobuf::MessageField<super::RogueActionResultData::RogueActionResultData>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueActionResult.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,9 +58,9 @@ impl RogueActionResult {
             |m: &mut RogueActionResult| { &mut m.source },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueActionResultData::RogueActionResultData>(
-            "action_data",
-            |m: &RogueActionResult| { &m.action_data },
-            |m: &mut RogueActionResult| { &mut m.action_data },
+            "rogue_action",
+            |m: &RogueActionResult| { &m.rogue_action },
+            |m: &mut RogueActionResult| { &mut m.rogue_action },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueActionResult>(
             "RogueActionResult",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for RogueActionResult {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                88 => {
                     self.source = is.read_enum_or_unknown()?;
                 },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.action_data)?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_action)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -99,9 +99,9 @@ impl ::protobuf::Message for RogueActionResult {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.source != ::protobuf::EnumOrUnknown::new(super::RogueBuffSource::RogueBuffSource::ROGUE_BUFF_SOURCE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(3, self.source.value());
+            my_size += ::protobuf::rt::int32_size(11, self.source.value());
         }
-        if let Some(v) = self.action_data.as_ref() {
+        if let Some(v) = self.rogue_action.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -112,10 +112,10 @@ impl ::protobuf::Message for RogueActionResult {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.source != ::protobuf::EnumOrUnknown::new(super::RogueBuffSource::RogueBuffSource::ROGUE_BUFF_SOURCE_TYPE_NONE) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.source))?;
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.source))?;
         }
-        if let Some(v) = self.action_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if let Some(v) = self.rogue_action.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -135,14 +135,14 @@ impl ::protobuf::Message for RogueActionResult {
 
     fn clear(&mut self) {
         self.source = ::protobuf::EnumOrUnknown::new(super::RogueBuffSource::RogueBuffSource::ROGUE_BUFF_SOURCE_TYPE_NONE);
-        self.action_data.clear();
+        self.rogue_action.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueActionResult {
         static instance: RogueActionResult = RogueActionResult {
             source: ::protobuf::EnumOrUnknown::from_i32(0),
-            action_data: ::protobuf::MessageField::none(),
+            rogue_action: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,10 +168,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueActionResult {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17RogueActionResult.proto\x1a\x15RogueBuffSource.proto\x1a\x1bRogueA\
-    ctionResultData.proto\"v\n\x11RogueActionResult\x12(\n\x06source\x18\x03\
-    \x20\x01(\x0e2\x10.RogueBuffSourceR\x06source\x127\n\x0baction_data\x18\
-    \x0b\x20\x01(\x0b2\x16.RogueActionResultDataR\nactionDataB\x15\n\x13emu.\
-    lunarcore.protob\x06proto3\
+    ctionResultData.proto\"x\n\x11RogueActionResult\x12(\n\x06source\x18\x0b\
+    \x20\x01(\x0e2\x10.RogueBuffSourceR\x06source\x129\n\x0crogue_action\x18\
+    \x0f\x20\x01(\x0b2\x16.RogueActionResultDataR\x0brogueActionB\x15\n\x13e\
+    mu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

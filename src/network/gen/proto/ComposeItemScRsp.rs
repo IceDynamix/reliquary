@@ -94,16 +94,16 @@ impl ::protobuf::Message for ComposeItemScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                32 => {
                     self.count = is.read_uint32()?;
                 },
-                16 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                74 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.return_item_list)?;
                 },
-                56 => {
+                88 => {
                     self.compose_id = is.read_uint32()?;
                 },
                 tag => {
@@ -119,17 +119,17 @@ impl ::protobuf::Message for ComposeItemScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.count != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.count);
+            my_size += ::protobuf::rt::uint32_size(4, self.count);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         if let Some(v) = self.return_item_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.compose_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.compose_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.compose_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,16 +138,16 @@ impl ::protobuf::Message for ComposeItemScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.count != 0 {
-            os.write_uint32(14, self.count)?;
+            os.write_uint32(4, self.count)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
         if let Some(v) = self.return_item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         if self.compose_id != 0 {
-            os.write_uint32(7, self.compose_id)?;
+            os.write_uint32(11, self.compose_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -204,10 +204,10 @@ impl ::protobuf::reflect::ProtobufValue for ComposeItemScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16ComposeItemScRsp.proto\x1a\x0eItemList.proto\"\x96\x01\n\x10Compos\
-    eItemScRsp\x12\x14\n\x05count\x18\x0e\x20\x01(\rR\x05count\x12\x18\n\x07\
-    retcode\x18\x02\x20\x01(\rR\x07retcode\x123\n\x10return_item_list\x18\t\
+    eItemScRsp\x12\x14\n\x05count\x18\x04\x20\x01(\rR\x05count\x12\x18\n\x07\
+    retcode\x18\x07\x20\x01(\rR\x07retcode\x123\n\x10return_item_list\x18\r\
     \x20\x01(\x0b2\t.ItemListR\x0ereturnItemList\x12\x1d\n\ncompose_id\x18\
-    \x07\x20\x01(\rR\tcomposeIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \x0b\x20\x01(\rR\tcomposeIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

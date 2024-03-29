@@ -29,14 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMiracleSelectInfo {
     // message fields
+    // @@protoc_insertion_point(field:RogueMiracleSelectInfo.JDDLGDNOIEC)
+    pub JDDLGDNOIEC: u32,
     // @@protoc_insertion_point(field:RogueMiracleSelectInfo.miracle_info_remote)
     pub miracle_info_remote: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:RogueMiracleSelectInfo.OJOMBNGGHFI)
-    pub OJOMBNGGHFI: u32,
     // @@protoc_insertion_point(field:RogueMiracleSelectInfo.miracle_info)
     pub miracle_info: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:RogueMiracleSelectInfo.MMHMDBDONIA)
-    pub MMHMDBDONIA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMiracleSelectInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,27 +52,22 @@ impl RogueMiracleSelectInfo {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(4);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JDDLGDNOIEC",
+            |m: &RogueMiracleSelectInfo| { &m.JDDLGDNOIEC },
+            |m: &mut RogueMiracleSelectInfo| { &mut m.JDDLGDNOIEC },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "miracle_info_remote",
             |m: &RogueMiracleSelectInfo| { &m.miracle_info_remote },
             |m: &mut RogueMiracleSelectInfo| { &mut m.miracle_info_remote },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OJOMBNGGHFI",
-            |m: &RogueMiracleSelectInfo| { &m.OJOMBNGGHFI },
-            |m: &mut RogueMiracleSelectInfo| { &mut m.OJOMBNGGHFI },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "miracle_info",
             |m: &RogueMiracleSelectInfo| { &m.miracle_info },
             |m: &mut RogueMiracleSelectInfo| { &mut m.miracle_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MMHMDBDONIA",
-            |m: &RogueMiracleSelectInfo| { &m.MMHMDBDONIA },
-            |m: &mut RogueMiracleSelectInfo| { &mut m.MMHMDBDONIA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMiracleSelectInfo>(
             "RogueMiracleSelectInfo",
@@ -94,23 +87,20 @@ impl ::protobuf::Message for RogueMiracleSelectInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                48 => {
+                    self.JDDLGDNOIEC = is.read_uint32()?;
+                },
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.miracle_info_remote)?;
                 },
-                104 => {
+                80 => {
                     self.miracle_info_remote.push(is.read_uint32()?);
                 },
-                64 => {
-                    self.OJOMBNGGHFI = is.read_uint32()?;
-                },
-                42 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.miracle_info)?;
                 },
-                40 => {
-                    self.miracle_info.push(is.read_uint32()?);
-                },
                 16 => {
-                    self.MMHMDBDONIA = is.read_uint32()?;
+                    self.miracle_info.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -124,36 +114,30 @@ impl ::protobuf::Message for RogueMiracleSelectInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.JDDLGDNOIEC != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.JDDLGDNOIEC);
+        }
         for value in &self.miracle_info_remote {
-            my_size += ::protobuf::rt::uint32_size(13, *value);
+            my_size += ::protobuf::rt::uint32_size(10, *value);
         };
-        if self.OJOMBNGGHFI != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.OJOMBNGGHFI);
-        }
         for value in &self.miracle_info {
-            my_size += ::protobuf::rt::uint32_size(5, *value);
+            my_size += ::protobuf::rt::uint32_size(2, *value);
         };
-        if self.MMHMDBDONIA != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.MMHMDBDONIA);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.JDDLGDNOIEC != 0 {
+            os.write_uint32(6, self.JDDLGDNOIEC)?;
+        }
         for v in &self.miracle_info_remote {
-            os.write_uint32(13, *v)?;
+            os.write_uint32(10, *v)?;
         };
-        if self.OJOMBNGGHFI != 0 {
-            os.write_uint32(8, self.OJOMBNGGHFI)?;
-        }
         for v in &self.miracle_info {
-            os.write_uint32(5, *v)?;
+            os.write_uint32(2, *v)?;
         };
-        if self.MMHMDBDONIA != 0 {
-            os.write_uint32(2, self.MMHMDBDONIA)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -171,19 +155,17 @@ impl ::protobuf::Message for RogueMiracleSelectInfo {
     }
 
     fn clear(&mut self) {
+        self.JDDLGDNOIEC = 0;
         self.miracle_info_remote.clear();
-        self.OJOMBNGGHFI = 0;
         self.miracle_info.clear();
-        self.MMHMDBDONIA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMiracleSelectInfo {
         static instance: RogueMiracleSelectInfo = RogueMiracleSelectInfo {
+            JDDLGDNOIEC: 0,
             miracle_info_remote: ::std::vec::Vec::new(),
-            OJOMBNGGHFI: 0,
             miracle_info: ::std::vec::Vec::new(),
-            MMHMDBDONIA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -208,12 +190,11 @@ impl ::protobuf::reflect::ProtobufValue for RogueMiracleSelectInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cRogueMiracleSelectInfo.proto\"\xaf\x01\n\x16RogueMiracleSelectInfo\
-    \x12.\n\x13miracle_info_remote\x18\r\x20\x03(\rR\x11miracleInfoRemote\
-    \x12\x20\n\x0bOJOMBNGGHFI\x18\x08\x20\x01(\rR\x0bOJOMBNGGHFI\x12!\n\x0cm\
-    iracle_info\x18\x05\x20\x03(\rR\x0bmiracleInfo\x12\x20\n\x0bMMHMDBDONIA\
-    \x18\x02\x20\x01(\rR\x0bMMHMDBDONIAB\x15\n\x13emu.lunarcore.protob\x06pr\
-    oto3\
+    \n\x1cRogueMiracleSelectInfo.proto\"\x8d\x01\n\x16RogueMiracleSelectInfo\
+    \x12\x20\n\x0bJDDLGDNOIEC\x18\x06\x20\x01(\rR\x0bJDDLGDNOIEC\x12.\n\x13m\
+    iracle_info_remote\x18\n\x20\x03(\rR\x11miracleInfoRemote\x12!\n\x0cmira\
+    cle_info\x18\x02\x20\x03(\rR\x0bmiracleInfoB\x15\n\x13emu.lunarcore.prot\
+    ob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

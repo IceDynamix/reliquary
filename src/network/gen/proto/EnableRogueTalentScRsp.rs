@@ -80,10 +80,10 @@ impl ::protobuf::Message for EnableRogueTalentScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
-                50 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.talent_info)?;
                 },
                 tag => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for EnableRogueTalentScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         if let Some(v) = self.talent_info.as_ref() {
             let len = v.compute_size();
@@ -112,10 +112,10 @@ impl ::protobuf::Message for EnableRogueTalentScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
         if let Some(v) = self.talent_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for EnableRogueTalentScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cEnableRogueTalentScRsp.proto\x1a\x15RogueTalentInfo.proto\"e\n\x16\
-    EnableRogueTalentScRsp\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retco\
-    de\x121\n\x0btalent_info\x18\x06\x20\x01(\x0b2\x10.RogueTalentInfoR\ntal\
+    EnableRogueTalentScRsp\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retco\
+    de\x121\n\x0btalent_info\x18\x0b\x20\x01(\x0b2\x10.RogueTalentInfoR\ntal\
     entInfoB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

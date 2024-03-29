@@ -73,7 +73,7 @@ impl ::protobuf::Message for FriendApplyInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.simple_info)?;
                 },
                 tag => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for FriendApplyInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.simple_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +150,7 @@ impl ::protobuf::reflect::ProtobufValue for FriendApplyInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15FriendApplyInfo.proto\x1a\x10SimpleInfo.proto\"?\n\x0fFriendApplyI\
-    nfo\x12,\n\x0bsimple_info\x18\x0e\x20\x01(\x0b2\x0b.SimpleInfoR\nsimpleI\
+    nfo\x12,\n\x0bsimple_info\x18\x08\x20\x01(\x0b2\x0b.SimpleInfoR\nsimpleI\
     nfoB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

@@ -94,16 +94,16 @@ impl ::protobuf::Message for SceneActorInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                96 => {
                     self.avatar_type = is.read_enum_or_unknown()?;
                 },
-                112 => {
+                48 => {
                     self.base_avatar_id = is.read_uint32()?;
                 },
-                56 => {
+                16 => {
                     self.uid = is.read_uint32()?;
                 },
-                96 => {
+                112 => {
                     self.map_layer = is.read_uint32()?;
                 },
                 tag => {
@@ -119,16 +119,16 @@ impl ::protobuf::Message for SceneActorInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(13, self.avatar_type.value());
+            my_size += ::protobuf::rt::int32_size(12, self.avatar_type.value());
         }
         if self.base_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.base_avatar_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.base_avatar_id);
         }
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.uid);
+            my_size += ::protobuf::rt::uint32_size(2, self.uid);
         }
         if self.map_layer != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.map_layer);
+            my_size += ::protobuf::rt::uint32_size(14, self.map_layer);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,16 +137,16 @@ impl ::protobuf::Message for SceneActorInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
         }
         if self.base_avatar_id != 0 {
-            os.write_uint32(14, self.base_avatar_id)?;
+            os.write_uint32(6, self.base_avatar_id)?;
         }
         if self.uid != 0 {
-            os.write_uint32(7, self.uid)?;
+            os.write_uint32(2, self.uid)?;
         }
         if self.map_layer != 0 {
-            os.write_uint32(12, self.map_layer)?;
+            os.write_uint32(14, self.map_layer)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for SceneActorInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14SceneActorInfo.proto\x1a\x10AvatarType.proto\"\x93\x01\n\x0eSceneA\
-    ctorInfo\x12,\n\x0bavatar_type\x18\r\x20\x01(\x0e2\x0b.AvatarTypeR\navat\
-    arType\x12$\n\x0ebase_avatar_id\x18\x0e\x20\x01(\rR\x0cbaseAvatarId\x12\
-    \x10\n\x03uid\x18\x07\x20\x01(\rR\x03uid\x12\x1b\n\tmap_layer\x18\x0c\
-    \x20\x01(\rR\x08mapLayerB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    ctorInfo\x12,\n\x0bavatar_type\x18\x0c\x20\x01(\x0e2\x0b.AvatarTypeR\nav\
+    atarType\x12$\n\x0ebase_avatar_id\x18\x06\x20\x01(\rR\x0cbaseAvatarId\
+    \x12\x10\n\x03uid\x18\x02\x20\x01(\rR\x03uid\x12\x1b\n\tmap_layer\x18\
+    \x0e\x20\x01(\rR\x08mapLayerB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

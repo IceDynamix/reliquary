@@ -108,22 +108,22 @@ impl ::protobuf::Message for QuitLineupCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                64 => {
                     self.extra_lineup_type = is.read_enum_or_unknown()?;
                 },
-                104 => {
+                96 => {
                     self.index = is.read_uint32()?;
                 },
-                64 => {
+                40 => {
                     self.avatar_type = is.read_enum_or_unknown()?;
                 },
-                40 => {
+                56 => {
                     self.is_virtual = is.read_bool()?;
                 },
-                56 => {
+                104 => {
                     self.plane_id = is.read_uint32()?;
                 },
-                16 => {
+                120 => {
                     self.base_avatar_id = is.read_uint32()?;
                 },
                 tag => {
@@ -139,22 +139,22 @@ impl ::protobuf::Message for QuitLineupCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            my_size += ::protobuf::rt::int32_size(14, self.extra_lineup_type.value());
+            my_size += ::protobuf::rt::int32_size(8, self.extra_lineup_type.value());
         }
         if self.index != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.index);
+            my_size += ::protobuf::rt::uint32_size(12, self.index);
         }
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(8, self.avatar_type.value());
+            my_size += ::protobuf::rt::int32_size(5, self.avatar_type.value());
         }
         if self.is_virtual != false {
             my_size += 1 + 1;
         }
         if self.plane_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.plane_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.plane_id);
         }
         if self.base_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.base_avatar_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.base_avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -163,22 +163,22 @@ impl ::protobuf::Message for QuitLineupCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.extra_lineup_type))?;
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.extra_lineup_type))?;
         }
         if self.index != 0 {
-            os.write_uint32(13, self.index)?;
+            os.write_uint32(12, self.index)?;
         }
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
         }
         if self.is_virtual != false {
-            os.write_bool(5, self.is_virtual)?;
+            os.write_bool(7, self.is_virtual)?;
         }
         if self.plane_id != 0 {
-            os.write_uint32(7, self.plane_id)?;
+            os.write_uint32(13, self.plane_id)?;
         }
         if self.base_avatar_id != 0 {
-            os.write_uint32(2, self.base_avatar_id)?;
+            os.write_uint32(15, self.base_avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -240,12 +240,12 @@ impl ::protobuf::reflect::ProtobufValue for QuitLineupCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15QuitLineupCsReq.proto\x1a\x15ExtraLineupType.proto\x1a\x10AvatarTy\
     pe.proto\"\xf3\x01\n\x0fQuitLineupCsReq\x12<\n\x11extra_lineup_type\x18\
-    \x0e\x20\x01(\x0e2\x10.ExtraLineupTypeR\x0fextraLineupType\x12\x14\n\x05\
-    index\x18\r\x20\x01(\rR\x05index\x12,\n\x0bavatar_type\x18\x08\x20\x01(\
-    \x0e2\x0b.AvatarTypeR\navatarType\x12\x1d\n\nis_virtual\x18\x05\x20\x01(\
-    \x08R\tisVirtual\x12\x19\n\x08plane_id\x18\x07\x20\x01(\rR\x07planeId\
-    \x12$\n\x0ebase_avatar_id\x18\x02\x20\x01(\rR\x0cbaseAvatarIdB\x15\n\x13\
-    emu.lunarcore.protob\x06proto3\
+    \x08\x20\x01(\x0e2\x10.ExtraLineupTypeR\x0fextraLineupType\x12\x14\n\x05\
+    index\x18\x0c\x20\x01(\rR\x05index\x12,\n\x0bavatar_type\x18\x05\x20\x01\
+    (\x0e2\x0b.AvatarTypeR\navatarType\x12\x1d\n\nis_virtual\x18\x07\x20\x01\
+    (\x08R\tisVirtual\x12\x19\n\x08plane_id\x18\r\x20\x01(\rR\x07planeId\x12\
+    $\n\x0ebase_avatar_id\x18\x0f\x20\x01(\rR\x0cbaseAvatarIdB\x15\n\x13emu.\
+    lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

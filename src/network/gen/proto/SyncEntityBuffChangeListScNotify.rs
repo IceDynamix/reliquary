@@ -73,7 +73,7 @@ impl ::protobuf::Message for SyncEntityBuffChangeListScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                74 => {
                     self.entity_buff_info_list.push(is.read_message()?);
                 },
                 tag => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for SyncEntityBuffChangeListScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.entity_buff_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,7 +151,7 @@ impl ::protobuf::reflect::ProtobufValue for SyncEntityBuffChangeListScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&SyncEntityBuffChangeListScNotify.proto\x1a\x1aEntityBuffChangeInfo.pr\
     oto\"l\n\x20SyncEntityBuffChangeListScNotify\x12H\n\x15entity_buff_info_\
-    list\x18\r\x20\x03(\x0b2\x15.EntityBuffChangeInfoR\x12entityBuffInfoList\
+    list\x18\t\x20\x03(\x0b2\x15.EntityBuffChangeInfoR\x12entityBuffInfoList\
     B\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

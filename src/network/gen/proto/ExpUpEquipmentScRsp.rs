@@ -80,7 +80,7 @@ impl ::protobuf::Message for ExpUpEquipmentScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                34 => {
                     self.return_item_list.push(is.read_message()?);
                 },
                 64 => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for ExpUpEquipmentScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.return_item_list {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
         if self.retcode != 0 {
             os.write_uint32(8, self.retcode)?;
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for ExpUpEquipmentScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19ExpUpEquipmentScRsp.proto\x1a\x0ePileItem.proto\"d\n\x13ExpUpEquip\
-    mentScRsp\x123\n\x10return_item_list\x18\x0c\x20\x03(\x0b2\t.PileItemR\
+    mentScRsp\x123\n\x10return_item_list\x18\x04\x20\x03(\x0b2\t.PileItemR\
     \x0ereturnItemList\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcodeB\
     \x15\n\x13emu.lunarcore.protob\x06proto3\
 ";

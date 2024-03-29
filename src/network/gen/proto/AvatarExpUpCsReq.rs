@@ -80,10 +80,10 @@ impl ::protobuf::Message for AvatarExpUpCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_cost_list)?;
                 },
-                72 => {
+                104 => {
                     self.base_avatar_id = is.read_uint32()?;
                 },
                 tag => {
@@ -103,7 +103,7 @@ impl ::protobuf::Message for AvatarExpUpCsReq {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.base_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.base_avatar_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.base_avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -112,10 +112,10 @@ impl ::protobuf::Message for AvatarExpUpCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.item_cost_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.base_avatar_id != 0 {
-            os.write_uint32(9, self.base_avatar_id)?;
+            os.write_uint32(13, self.base_avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for AvatarExpUpCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16AvatarExpUpCsReq.proto\x1a\x12ItemCostList.proto\"m\n\x10AvatarExp\
-    UpCsReq\x123\n\x0eitem_cost_list\x18\x03\x20\x01(\x0b2\r.ItemCostListR\
-    \x0citemCostList\x12$\n\x0ebase_avatar_id\x18\t\x20\x01(\rR\x0cbaseAvata\
+    UpCsReq\x123\n\x0eitem_cost_list\x18\x01\x20\x01(\x0b2\r.ItemCostListR\
+    \x0citemCostList\x12$\n\x0ebase_avatar_id\x18\r\x20\x01(\rR\x0cbaseAvata\
     rIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

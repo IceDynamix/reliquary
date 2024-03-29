@@ -73,10 +73,10 @@ impl ::protobuf::Message for UnlockBackGroundMusicCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                114 => {
                     is.read_repeated_packed_uint32_into(&mut self.unlock_ids)?;
                 },
-                40 => {
+                112 => {
                     self.unlock_ids.push(is.read_uint32()?);
                 },
                 tag => {
@@ -92,7 +92,7 @@ impl ::protobuf::Message for UnlockBackGroundMusicCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         for value in &self.unlock_ids {
-            my_size += ::protobuf::rt::uint32_size(5, *value);
+            my_size += ::protobuf::rt::uint32_size(14, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -101,7 +101,7 @@ impl ::protobuf::Message for UnlockBackGroundMusicCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.unlock_ids {
-            os.write_uint32(5, *v)?;
+            os.write_uint32(14, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -152,7 +152,7 @@ impl ::protobuf::reflect::ProtobufValue for UnlockBackGroundMusicCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20UnlockBackGroundMusicCsReq.proto\";\n\x1aUnlockBackGroundMusicCsRe\
-    q\x12\x1d\n\nunlock_ids\x18\x05\x20\x03(\rR\tunlockIdsB\x15\n\x13emu.lun\
+    q\x12\x1d\n\nunlock_ids\x18\x0e\x20\x03(\rR\tunlockIdsB\x15\n\x13emu.lun\
     arcore.protob\x06proto3\
 ";
 

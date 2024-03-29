@@ -29,30 +29,28 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BattlePassInfoNotify {
     // message fields
-    // @@protoc_insertion_point(field:BattlePassInfoNotify.bp_tier_type)
-    pub bp_tier_type: ::protobuf::EnumOrUnknown<battle_pass_info_notify::BpTierType>,
-    // @@protoc_insertion_point(field:BattlePassInfoNotify.taken_free_reward)
-    pub taken_free_reward: u64,
-    // @@protoc_insertion_point(field:BattlePassInfoNotify.taken_premium_reward1)
-    pub taken_premium_reward1: u64,
     // @@protoc_insertion_point(field:BattlePassInfoNotify.taken_premium_reward2)
     pub taken_premium_reward2: u64,
+    // @@protoc_insertion_point(field:BattlePassInfoNotify.taken_premium_reward1)
+    pub taken_premium_reward1: u64,
+    // @@protoc_insertion_point(field:BattlePassInfoNotify.level)
+    pub level: u32,
+    // @@protoc_insertion_point(field:BattlePassInfoNotify.taken_free_reward)
+    pub taken_free_reward: u64,
     // @@protoc_insertion_point(field:BattlePassInfoNotify.taken_premium_extended_reward)
     pub taken_premium_extended_reward: u64,
-    // @@protoc_insertion_point(field:BattlePassInfoNotify.unkfield)
-    pub unkfield: u64,
     // @@protoc_insertion_point(field:BattlePassInfoNotify.taken_premium_optional_reward)
     pub taken_premium_optional_reward: u64,
+    // @@protoc_insertion_point(field:BattlePassInfoNotify.cur_bp_id)
+    pub cur_bp_id: u32,
     // @@protoc_insertion_point(field:BattlePassInfoNotify.taken_free_extended_reward)
     pub taken_free_extended_reward: u64,
     // @@protoc_insertion_point(field:BattlePassInfoNotify.cur_week_add_exp_sum)
     pub cur_week_add_exp_sum: u32,
-    // @@protoc_insertion_point(field:BattlePassInfoNotify.cur_bp_id)
-    pub cur_bp_id: u32,
+    // @@protoc_insertion_point(field:BattlePassInfoNotify.bp_tier_type)
+    pub bp_tier_type: ::protobuf::EnumOrUnknown<battle_pass_info_notify::BpTierType>,
     // @@protoc_insertion_point(field:BattlePassInfoNotify.exp)
     pub exp: u32,
-    // @@protoc_insertion_point(field:BattlePassInfoNotify.level)
-    pub level: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BattlePassInfoNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -70,17 +68,12 @@ impl BattlePassInfoNotify {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(12);
+        let mut fields = ::std::vec::Vec::with_capacity(11);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "bp_tier_type",
-            |m: &BattlePassInfoNotify| { &m.bp_tier_type },
-            |m: &mut BattlePassInfoNotify| { &mut m.bp_tier_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "taken_free_reward",
-            |m: &BattlePassInfoNotify| { &m.taken_free_reward },
-            |m: &mut BattlePassInfoNotify| { &mut m.taken_free_reward },
+            "taken_premium_reward2",
+            |m: &BattlePassInfoNotify| { &m.taken_premium_reward2 },
+            |m: &mut BattlePassInfoNotify| { &mut m.taken_premium_reward2 },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "taken_premium_reward1",
@@ -88,9 +81,14 @@ impl BattlePassInfoNotify {
             |m: &mut BattlePassInfoNotify| { &mut m.taken_premium_reward1 },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "taken_premium_reward2",
-            |m: &BattlePassInfoNotify| { &m.taken_premium_reward2 },
-            |m: &mut BattlePassInfoNotify| { &mut m.taken_premium_reward2 },
+            "level",
+            |m: &BattlePassInfoNotify| { &m.level },
+            |m: &mut BattlePassInfoNotify| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "taken_free_reward",
+            |m: &BattlePassInfoNotify| { &m.taken_free_reward },
+            |m: &mut BattlePassInfoNotify| { &mut m.taken_free_reward },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "taken_premium_extended_reward",
@@ -98,14 +96,14 @@ impl BattlePassInfoNotify {
             |m: &mut BattlePassInfoNotify| { &mut m.taken_premium_extended_reward },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unkfield",
-            |m: &BattlePassInfoNotify| { &m.unkfield },
-            |m: &mut BattlePassInfoNotify| { &mut m.unkfield },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "taken_premium_optional_reward",
             |m: &BattlePassInfoNotify| { &m.taken_premium_optional_reward },
             |m: &mut BattlePassInfoNotify| { &mut m.taken_premium_optional_reward },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "cur_bp_id",
+            |m: &BattlePassInfoNotify| { &m.cur_bp_id },
+            |m: &mut BattlePassInfoNotify| { &mut m.cur_bp_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "taken_free_extended_reward",
@@ -118,19 +116,14 @@ impl BattlePassInfoNotify {
             |m: &mut BattlePassInfoNotify| { &mut m.cur_week_add_exp_sum },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cur_bp_id",
-            |m: &BattlePassInfoNotify| { &m.cur_bp_id },
-            |m: &mut BattlePassInfoNotify| { &mut m.cur_bp_id },
+            "bp_tier_type",
+            |m: &BattlePassInfoNotify| { &m.bp_tier_type },
+            |m: &mut BattlePassInfoNotify| { &mut m.bp_tier_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "exp",
             |m: &BattlePassInfoNotify| { &m.exp },
             |m: &mut BattlePassInfoNotify| { &mut m.exp },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &BattlePassInfoNotify| { &m.level },
-            |m: &mut BattlePassInfoNotify| { &mut m.level },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BattlePassInfoNotify>(
             "BattlePassInfoNotify",
@@ -150,41 +143,38 @@ impl ::protobuf::Message for BattlePassInfoNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.bp_tier_type = is.read_enum_or_unknown()?;
-                },
-                72 => {
-                    self.taken_free_reward = is.read_uint64()?;
-                },
-                32 => {
-                    self.taken_premium_reward1 = is.read_uint64()?;
-                },
-                8 => {
+                56 => {
                     self.taken_premium_reward2 = is.read_uint64()?;
                 },
-                56 => {
+                72 => {
+                    self.taken_premium_reward1 = is.read_uint64()?;
+                },
+                120 => {
+                    self.level = is.read_uint32()?;
+                },
+                8 => {
+                    self.taken_free_reward = is.read_uint64()?;
+                },
+                88 => {
                     self.taken_premium_extended_reward = is.read_uint64()?;
                 },
-                16 => {
-                    self.unkfield = is.read_uint64()?;
-                },
-                64 => {
+                104 => {
                     self.taken_premium_optional_reward = is.read_uint64()?;
-                },
-                96 => {
-                    self.taken_free_extended_reward = is.read_uint64()?;
-                },
-                24 => {
-                    self.cur_week_add_exp_sum = is.read_uint32()?;
                 },
                 40 => {
                     self.cur_bp_id = is.read_uint32()?;
                 },
-                48 => {
-                    self.exp = is.read_uint32()?;
+                96 => {
+                    self.taken_free_extended_reward = is.read_uint64()?;
                 },
-                80 => {
-                    self.level = is.read_uint32()?;
+                64 => {
+                    self.cur_week_add_exp_sum = is.read_uint32()?;
+                },
+                24 => {
+                    self.bp_tier_type = is.read_enum_or_unknown()?;
+                },
+                112 => {
+                    self.exp = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -198,41 +188,38 @@ impl ::protobuf::Message for BattlePassInfoNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.bp_tier_type != ::protobuf::EnumOrUnknown::new(battle_pass_info_notify::BpTierType::BP_TIER_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(15, self.bp_tier_type.value());
-        }
-        if self.taken_free_reward != 0 {
-            my_size += ::protobuf::rt::uint64_size(9, self.taken_free_reward);
+        if self.taken_premium_reward2 != 0 {
+            my_size += ::protobuf::rt::uint64_size(7, self.taken_premium_reward2);
         }
         if self.taken_premium_reward1 != 0 {
-            my_size += ::protobuf::rt::uint64_size(4, self.taken_premium_reward1);
+            my_size += ::protobuf::rt::uint64_size(9, self.taken_premium_reward1);
         }
-        if self.taken_premium_reward2 != 0 {
-            my_size += ::protobuf::rt::uint64_size(1, self.taken_premium_reward2);
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.level);
+        }
+        if self.taken_free_reward != 0 {
+            my_size += ::protobuf::rt::uint64_size(1, self.taken_free_reward);
         }
         if self.taken_premium_extended_reward != 0 {
-            my_size += ::protobuf::rt::uint64_size(7, self.taken_premium_extended_reward);
-        }
-        if self.unkfield != 0 {
-            my_size += ::protobuf::rt::uint64_size(2, self.unkfield);
+            my_size += ::protobuf::rt::uint64_size(11, self.taken_premium_extended_reward);
         }
         if self.taken_premium_optional_reward != 0 {
-            my_size += ::protobuf::rt::uint64_size(8, self.taken_premium_optional_reward);
+            my_size += ::protobuf::rt::uint64_size(13, self.taken_premium_optional_reward);
+        }
+        if self.cur_bp_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.cur_bp_id);
         }
         if self.taken_free_extended_reward != 0 {
             my_size += ::protobuf::rt::uint64_size(12, self.taken_free_extended_reward);
         }
         if self.cur_week_add_exp_sum != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.cur_week_add_exp_sum);
+            my_size += ::protobuf::rt::uint32_size(8, self.cur_week_add_exp_sum);
         }
-        if self.cur_bp_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.cur_bp_id);
+        if self.bp_tier_type != ::protobuf::EnumOrUnknown::new(battle_pass_info_notify::BpTierType::BP_TIER_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(3, self.bp_tier_type.value());
         }
         if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.exp);
-        }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.level);
+            my_size += ::protobuf::rt::uint32_size(14, self.exp);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -240,41 +227,38 @@ impl ::protobuf::Message for BattlePassInfoNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.bp_tier_type != ::protobuf::EnumOrUnknown::new(battle_pass_info_notify::BpTierType::BP_TIER_TYPE_NONE) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.bp_tier_type))?;
-        }
-        if self.taken_free_reward != 0 {
-            os.write_uint64(9, self.taken_free_reward)?;
+        if self.taken_premium_reward2 != 0 {
+            os.write_uint64(7, self.taken_premium_reward2)?;
         }
         if self.taken_premium_reward1 != 0 {
-            os.write_uint64(4, self.taken_premium_reward1)?;
+            os.write_uint64(9, self.taken_premium_reward1)?;
         }
-        if self.taken_premium_reward2 != 0 {
-            os.write_uint64(1, self.taken_premium_reward2)?;
+        if self.level != 0 {
+            os.write_uint32(15, self.level)?;
+        }
+        if self.taken_free_reward != 0 {
+            os.write_uint64(1, self.taken_free_reward)?;
         }
         if self.taken_premium_extended_reward != 0 {
-            os.write_uint64(7, self.taken_premium_extended_reward)?;
-        }
-        if self.unkfield != 0 {
-            os.write_uint64(2, self.unkfield)?;
+            os.write_uint64(11, self.taken_premium_extended_reward)?;
         }
         if self.taken_premium_optional_reward != 0 {
-            os.write_uint64(8, self.taken_premium_optional_reward)?;
+            os.write_uint64(13, self.taken_premium_optional_reward)?;
+        }
+        if self.cur_bp_id != 0 {
+            os.write_uint32(5, self.cur_bp_id)?;
         }
         if self.taken_free_extended_reward != 0 {
             os.write_uint64(12, self.taken_free_extended_reward)?;
         }
         if self.cur_week_add_exp_sum != 0 {
-            os.write_uint32(3, self.cur_week_add_exp_sum)?;
+            os.write_uint32(8, self.cur_week_add_exp_sum)?;
         }
-        if self.cur_bp_id != 0 {
-            os.write_uint32(5, self.cur_bp_id)?;
+        if self.bp_tier_type != ::protobuf::EnumOrUnknown::new(battle_pass_info_notify::BpTierType::BP_TIER_TYPE_NONE) {
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.bp_tier_type))?;
         }
         if self.exp != 0 {
-            os.write_uint32(6, self.exp)?;
-        }
-        if self.level != 0 {
-            os.write_uint32(10, self.level)?;
+            os.write_uint32(14, self.exp)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -293,35 +277,33 @@ impl ::protobuf::Message for BattlePassInfoNotify {
     }
 
     fn clear(&mut self) {
-        self.bp_tier_type = ::protobuf::EnumOrUnknown::new(battle_pass_info_notify::BpTierType::BP_TIER_TYPE_NONE);
-        self.taken_free_reward = 0;
-        self.taken_premium_reward1 = 0;
         self.taken_premium_reward2 = 0;
+        self.taken_premium_reward1 = 0;
+        self.level = 0;
+        self.taken_free_reward = 0;
         self.taken_premium_extended_reward = 0;
-        self.unkfield = 0;
         self.taken_premium_optional_reward = 0;
+        self.cur_bp_id = 0;
         self.taken_free_extended_reward = 0;
         self.cur_week_add_exp_sum = 0;
-        self.cur_bp_id = 0;
+        self.bp_tier_type = ::protobuf::EnumOrUnknown::new(battle_pass_info_notify::BpTierType::BP_TIER_TYPE_NONE);
         self.exp = 0;
-        self.level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BattlePassInfoNotify {
         static instance: BattlePassInfoNotify = BattlePassInfoNotify {
-            bp_tier_type: ::protobuf::EnumOrUnknown::from_i32(0),
-            taken_free_reward: 0,
-            taken_premium_reward1: 0,
             taken_premium_reward2: 0,
+            taken_premium_reward1: 0,
+            level: 0,
+            taken_free_reward: 0,
             taken_premium_extended_reward: 0,
-            unkfield: 0,
             taken_premium_optional_reward: 0,
+            cur_bp_id: 0,
             taken_free_extended_reward: 0,
             cur_week_add_exp_sum: 0,
-            cur_bp_id: 0,
+            bp_tier_type: ::protobuf::EnumOrUnknown::from_i32(0),
             exp: 0,
-            level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -421,23 +403,22 @@ pub mod battle_pass_info_notify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aBattlePassInfoNotify.proto\"\xb5\x05\n\x14BattlePassInfoNotify\x12\
-    B\n\x0cbp_tier_type\x18\x0f\x20\x01(\x0e2\x20.BattlePassInfoNotify.BpTie\
-    rTypeR\nbpTierType\x12*\n\x11taken_free_reward\x18\t\x20\x01(\x04R\x0fta\
-    kenFreeReward\x122\n\x15taken_premium_reward1\x18\x04\x20\x01(\x04R\x13t\
-    akenPremiumReward1\x122\n\x15taken_premium_reward2\x18\x01\x20\x01(\x04R\
-    \x13takenPremiumReward2\x12A\n\x1dtaken_premium_extended_reward\x18\x07\
-    \x20\x01(\x04R\x1atakenPremiumExtendedReward\x12\x1a\n\x08unkfield\x18\
-    \x02\x20\x01(\x04R\x08unkfield\x12A\n\x1dtaken_premium_optional_reward\
-    \x18\x08\x20\x01(\x04R\x1atakenPremiumOptionalReward\x12;\n\x1ataken_fre\
-    e_extended_reward\x18\x0c\x20\x01(\x04R\x17takenFreeExtendedReward\x12.\
-    \n\x14cur_week_add_exp_sum\x18\x03\x20\x01(\rR\x10curWeekAddExpSum\x12\
-    \x1a\n\tcur_bp_id\x18\x05\x20\x01(\rR\x07curBpId\x12\x10\n\x03exp\x18\
-    \x06\x20\x01(\rR\x03exp\x12\x14\n\x05level\x18\n\x20\x01(\rR\x05level\"r\
-    \n\nBpTierType\x12\x15\n\x11BP_TIER_TYPE_NONE\x10\0\x12\x15\n\x11BP_TIER\
-    _TYPE_FREE\x10\x01\x12\x1a\n\x16BP_TIER_TYPE_PREMIUM_1\x10\x02\x12\x1a\n\
-    \x16BP_TIER_TYPE_PREMIUM_2\x10\x03B\x15\n\x13emu.lunarcore.protob\x06pro\
-    to3\
+    \n\x1aBattlePassInfoNotify.proto\"\x99\x05\n\x14BattlePassInfoNotify\x12\
+    2\n\x15taken_premium_reward2\x18\x07\x20\x01(\x04R\x13takenPremiumReward\
+    2\x122\n\x15taken_premium_reward1\x18\t\x20\x01(\x04R\x13takenPremiumRew\
+    ard1\x12\x14\n\x05level\x18\x0f\x20\x01(\rR\x05level\x12*\n\x11taken_fre\
+    e_reward\x18\x01\x20\x01(\x04R\x0ftakenFreeReward\x12A\n\x1dtaken_premiu\
+    m_extended_reward\x18\x0b\x20\x01(\x04R\x1atakenPremiumExtendedReward\
+    \x12A\n\x1dtaken_premium_optional_reward\x18\r\x20\x01(\x04R\x1atakenPre\
+    miumOptionalReward\x12\x1a\n\tcur_bp_id\x18\x05\x20\x01(\rR\x07curBpId\
+    \x12;\n\x1ataken_free_extended_reward\x18\x0c\x20\x01(\x04R\x17takenFree\
+    ExtendedReward\x12.\n\x14cur_week_add_exp_sum\x18\x08\x20\x01(\rR\x10cur\
+    WeekAddExpSum\x12B\n\x0cbp_tier_type\x18\x03\x20\x01(\x0e2\x20.BattlePas\
+    sInfoNotify.BpTierTypeR\nbpTierType\x12\x10\n\x03exp\x18\x0e\x20\x01(\rR\
+    \x03exp\"r\n\nBpTierType\x12\x15\n\x11BP_TIER_TYPE_NONE\x10\0\x12\x15\n\
+    \x11BP_TIER_TYPE_FREE\x10\x01\x12\x1a\n\x16BP_TIER_TYPE_PREMIUM_1\x10\
+    \x02\x12\x1a\n\x16BP_TIER_TYPE_PREMIUM_2\x10\x03B\x15\n\x13emu.lunarcore\
+    .protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

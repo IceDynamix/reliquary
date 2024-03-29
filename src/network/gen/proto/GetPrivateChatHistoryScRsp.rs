@@ -94,16 +94,16 @@ impl ::protobuf::Message for GetPrivateChatHistoryScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                40 => {
                     self.sender_uid = is.read_uint32()?;
                 },
-                64 => {
+                72 => {
                     self.to_uid = is.read_uint32()?;
                 },
-                80 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
-                42 => {
+                18 => {
                     self.chat_list.push(is.read_message()?);
                 },
                 tag => {
@@ -119,13 +119,13 @@ impl ::protobuf::Message for GetPrivateChatHistoryScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.sender_uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.sender_uid);
+            my_size += ::protobuf::rt::uint32_size(5, self.sender_uid);
         }
         if self.to_uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.to_uid);
+            my_size += ::protobuf::rt::uint32_size(9, self.to_uid);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         for value in &self.chat_list {
             let len = value.compute_size();
@@ -138,16 +138,16 @@ impl ::protobuf::Message for GetPrivateChatHistoryScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.sender_uid != 0 {
-            os.write_uint32(13, self.sender_uid)?;
+            os.write_uint32(5, self.sender_uid)?;
         }
         if self.to_uid != 0 {
-            os.write_uint32(8, self.to_uid)?;
+            os.write_uint32(9, self.to_uid)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         for v in &self.chat_list {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -204,10 +204,10 @@ impl ::protobuf::reflect::ProtobufValue for GetPrivateChatHistoryScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20GetPrivateChatHistoryScRsp.proto\x1a\nChat.proto\"\x90\x01\n\x1aGe\
-    tPrivateChatHistoryScRsp\x12\x1d\n\nsender_uid\x18\r\x20\x01(\rR\tsender\
-    Uid\x12\x15\n\x06to_uid\x18\x08\x20\x01(\rR\x05toUid\x12\x18\n\x07retcod\
-    e\x18\n\x20\x01(\rR\x07retcode\x12\"\n\tchat_list\x18\x05\x20\x03(\x0b2\
-    \x05.ChatR\x08chatListB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    tPrivateChatHistoryScRsp\x12\x1d\n\nsender_uid\x18\x05\x20\x01(\rR\tsend\
+    erUid\x12\x15\n\x06to_uid\x18\t\x20\x01(\rR\x05toUid\x12\x18\n\x07retcod\
+    e\x18\x08\x20\x01(\rR\x07retcode\x12\"\n\tchat_list\x18\x02\x20\x03(\x0b\
+    2\x05.ChatR\x08chatListB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

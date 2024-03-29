@@ -108,22 +108,22 @@ impl ::protobuf::Message for ChallengeSettleNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                112 => {
                     self.stars = is.read_uint32()?;
                 },
                 98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                112 => {
+                40 => {
                     self.challenge_id = is.read_uint32()?;
                 },
-                120 => {
+                88 => {
                     self.is_win = is.read_bool()?;
                 },
                 80 => {
                     self.score_two = is.read_uint32()?;
                 },
-                72 => {
+                16 => {
                     self.challenge_score = is.read_uint32()?;
                 },
                 tag => {
@@ -139,14 +139,14 @@ impl ::protobuf::Message for ChallengeSettleNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.stars != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.stars);
+            my_size += ::protobuf::rt::uint32_size(14, self.stars);
         }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.challenge_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.challenge_id);
         }
         if self.is_win != false {
             my_size += 1 + 1;
@@ -155,7 +155,7 @@ impl ::protobuf::Message for ChallengeSettleNotify {
             my_size += ::protobuf::rt::uint32_size(10, self.score_two);
         }
         if self.challenge_score != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.challenge_score);
+            my_size += ::protobuf::rt::uint32_size(2, self.challenge_score);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -164,22 +164,22 @@ impl ::protobuf::Message for ChallengeSettleNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.stars != 0 {
-            os.write_uint32(13, self.stars)?;
+            os.write_uint32(14, self.stars)?;
         }
         if let Some(v) = self.reward.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if self.challenge_id != 0 {
-            os.write_uint32(14, self.challenge_id)?;
+            os.write_uint32(5, self.challenge_id)?;
         }
         if self.is_win != false {
-            os.write_bool(15, self.is_win)?;
+            os.write_bool(11, self.is_win)?;
         }
         if self.score_two != 0 {
             os.write_uint32(10, self.score_two)?;
         }
         if self.challenge_score != 0 {
-            os.write_uint32(9, self.challenge_score)?;
+            os.write_uint32(2, self.challenge_score)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -240,12 +240,12 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeSettleNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bChallengeSettleNotify.proto\x1a\x0eItemList.proto\"\xd0\x01\n\x15C\
-    hallengeSettleNotify\x12\x14\n\x05stars\x18\r\x20\x01(\rR\x05stars\x12!\
-    \n\x06reward\x18\x0c\x20\x01(\x0b2\t.ItemListR\x06reward\x12!\n\x0cchall\
-    enge_id\x18\x0e\x20\x01(\rR\x0bchallengeId\x12\x15\n\x06is_win\x18\x0f\
+    hallengeSettleNotify\x12\x14\n\x05stars\x18\x0e\x20\x01(\rR\x05stars\x12\
+    !\n\x06reward\x18\x0c\x20\x01(\x0b2\t.ItemListR\x06reward\x12!\n\x0cchal\
+    lenge_id\x18\x05\x20\x01(\rR\x0bchallengeId\x12\x15\n\x06is_win\x18\x0b\
     \x20\x01(\x08R\x05isWin\x12\x1b\n\tscore_two\x18\n\x20\x01(\rR\x08scoreT\
-    wo\x12'\n\x0fchallenge_score\x18\t\x20\x01(\rR\x0echallengeScoreB\x15\n\
-    \x13emu.lunarcore.protob\x06proto3\
+    wo\x12'\n\x0fchallenge_score\x18\x02\x20\x01(\rR\x0echallengeScoreB\x15\
+    \n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

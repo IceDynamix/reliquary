@@ -101,19 +101,19 @@ impl ::protobuf::Message for RogueActionResultData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.add_item_list)?;
                 },
-                90 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.remove_item_list)?;
                 },
-                2554 => {
+                12666 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.add_buff_list)?;
                 },
-                3514 => {
+                6546 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.remove_buff_list)?;
                 },
-                1346 => {
+                9554 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.add_miracle_list)?;
                 },
                 tag => {
@@ -155,19 +155,19 @@ impl ::protobuf::Message for RogueActionResultData {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.add_item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         if let Some(v) = self.remove_item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if let Some(v) = self.add_buff_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(319, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1583, v, os)?;
         }
         if let Some(v) = self.remove_buff_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(439, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(818, v, os)?;
         }
         if let Some(v) = self.add_miracle_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(168, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1194, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -227,14 +227,13 @@ impl ::protobuf::reflect::ProtobufValue for RogueActionResultData {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bRogueActionResultData.proto\x1a\x13RogueBuffData.proto\x1a\x16Rogu\
     eMiracleData.proto\x1a\x1aRogueVirtualItemData.proto\"\xc1\x02\n\x15Rogu\
-    eActionResultData\x129\n\radd_item_list\x18\x0c\x20\x01(\x0b2\x15.RogueV\
-    irtualItemDataR\x0baddItemList\x12?\n\x10remove_item_list\x18\x0b\x20\
-    \x01(\x0b2\x15.RogueVirtualItemDataR\x0eremoveItemList\x123\n\radd_buff_\
-    list\x18\xbf\x02\x20\x01(\x0b2\x0e.RogueBuffDataR\x0baddBuffList\x129\n\
-    \x10remove_buff_list\x18\xb7\x03\x20\x01(\x0b2\x0e.RogueBuffDataR\x0erem\
-    oveBuffList\x12<\n\x10add_miracle_list\x18\xa8\x01\x20\x01(\x0b2\x11.Rog\
-    ueMiracleDataR\x0eaddMiracleListB\x15\n\x13emu.lunarcore.protob\x06proto\
-    3\
+    eActionResultData\x129\n\radd_item_list\x18\r\x20\x01(\x0b2\x15.RogueVir\
+    tualItemDataR\x0baddItemList\x12?\n\x10remove_item_list\x18\x0c\x20\x01(\
+    \x0b2\x15.RogueVirtualItemDataR\x0eremoveItemList\x123\n\radd_buff_list\
+    \x18\xaf\x0c\x20\x01(\x0b2\x0e.RogueBuffDataR\x0baddBuffList\x129\n\x10r\
+    emove_buff_list\x18\xb2\x06\x20\x01(\x0b2\x0e.RogueBuffDataR\x0eremoveBu\
+    ffList\x12<\n\x10add_miracle_list\x18\xaa\t\x20\x01(\x0b2\x11.RogueMirac\
+    leDataR\x0eaddMiracleListB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -80,10 +80,10 @@ impl ::protobuf::Message for RogueInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                2738 => {
+                5986 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_info_data)?;
                 },
-                11730 => {
+                7218 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_current_info)?;
                 },
                 tag => {
@@ -113,10 +113,10 @@ impl ::protobuf::Message for RogueInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.rogue_info_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(342, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(748, v, os)?;
         }
         if let Some(v) = self.rogue_current_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1466, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(902, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,9 +169,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0fRogueInfo.proto\x1a\x13RogueInfoData.proto\x1a\x16RogueCurrentInfo\
-    .proto\"\x86\x01\n\tRogueInfo\x127\n\x0frogue_info_data\x18\xd6\x02\x20\
+    .proto\"\x86\x01\n\tRogueInfo\x127\n\x0frogue_info_data\x18\xec\x05\x20\
     \x01(\x0b2\x0e.RogueInfoDataR\rrogueInfoData\x12@\n\x12rogue_current_inf\
-    o\x18\xba\x0b\x20\x01(\x0b2\x11.RogueCurrentInfoR\x10rogueCurrentInfoB\
+    o\x18\x86\x07\x20\x01(\x0b2\x11.RogueCurrentInfoR\x10rogueCurrentInfoB\
     \x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

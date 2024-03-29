@@ -83,7 +83,7 @@ impl ::protobuf::Message for ExpUpRelicScRsp {
                 8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                114 => {
+                90 => {
                     self.return_item_list.push(is.read_message()?);
                 },
                 tag => {
@@ -115,7 +115,7 @@ impl ::protobuf::Message for ExpUpRelicScRsp {
             os.write_uint32(1, self.retcode)?;
         }
         for v in &self.return_item_list {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,7 +169,7 @@ impl ::protobuf::reflect::ProtobufValue for ExpUpRelicScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15ExpUpRelicScRsp.proto\x1a\x0ePileItem.proto\"`\n\x0fExpUpRelicScRs\
     p\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x123\n\x10return_i\
-    tem_list\x18\x0e\x20\x03(\x0b2\t.PileItemR\x0ereturnItemListB\x15\n\x13e\
+    tem_list\x18\x0b\x20\x03(\x0b2\t.PileItemR\x0ereturnItemListB\x15\n\x13e\
     mu.lunarcore.protob\x06proto3\
 ";
 

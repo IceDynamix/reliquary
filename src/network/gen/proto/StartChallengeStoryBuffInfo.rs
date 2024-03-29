@@ -83,7 +83,7 @@ impl ::protobuf::Message for StartChallengeStoryBuffInfo {
                 64 => {
                     self.story_buff_one = is.read_uint32()?;
                 },
-                72 => {
+                56 => {
                     self.story_buff_two = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for StartChallengeStoryBuffInfo {
             my_size += ::protobuf::rt::uint32_size(8, self.story_buff_one);
         }
         if self.story_buff_two != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.story_buff_two);
+            my_size += ::protobuf::rt::uint32_size(7, self.story_buff_two);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -114,7 +114,7 @@ impl ::protobuf::Message for StartChallengeStoryBuffInfo {
             os.write_uint32(8, self.story_buff_one)?;
         }
         if self.story_buff_two != 0 {
-            os.write_uint32(9, self.story_buff_two)?;
+            os.write_uint32(7, self.story_buff_two)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for StartChallengeStoryBuffInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!StartChallengeStoryBuffInfo.proto\"i\n\x1bStartChallengeStoryBuffInfo\
     \x12$\n\x0estory_buff_one\x18\x08\x20\x01(\rR\x0cstoryBuffOne\x12$\n\x0e\
-    story_buff_two\x18\t\x20\x01(\rR\x0cstoryBuffTwoB\x15\n\x13emu.lunarcore\
-    .protob\x06proto3\
+    story_buff_two\x18\x07\x20\x01(\rR\x0cstoryBuffTwoB\x15\n\x13emu.lunarco\
+    re.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

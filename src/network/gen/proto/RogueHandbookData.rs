@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueHandbookData {
     // message fields
-    // @@protoc_insertion_point(field:RogueHandbookData.miracle_list)
-    pub miracle_list: ::std::vec::Vec<super::RogueHandbookMiracle::RogueHandbookMiracle>,
     // @@protoc_insertion_point(field:RogueHandbookData.rogue_event)
     pub rogue_event: ::std::vec::Vec<super::RogueHandbookEvent::RogueHandbookEvent>,
-    // @@protoc_insertion_point(field:RogueHandbookData.rogue_aeon_list)
-    pub rogue_aeon_list: ::std::vec::Vec<super::RogueHandbookAeon::RogueHandbookAeon>,
     // @@protoc_insertion_point(field:RogueHandbookData.buff_list)
     pub buff_list: ::std::vec::Vec<super::RogueHandbookBuff::RogueHandbookBuff>,
+    // @@protoc_insertion_point(field:RogueHandbookData.rogue_aeon_list)
+    pub rogue_aeon_list: ::std::vec::Vec<super::RogueHandbookAeon::RogueHandbookAeon>,
+    // @@protoc_insertion_point(field:RogueHandbookData.miracle_list)
+    pub miracle_list: ::std::vec::Vec<super::RogueHandbookMiracle::RogueHandbookMiracle>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueHandbookData.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,14 +57,14 @@ impl RogueHandbookData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "miracle_list",
-            |m: &RogueHandbookData| { &m.miracle_list },
-            |m: &mut RogueHandbookData| { &mut m.miracle_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "rogue_event",
             |m: &RogueHandbookData| { &m.rogue_event },
             |m: &mut RogueHandbookData| { &mut m.rogue_event },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "buff_list",
+            |m: &RogueHandbookData| { &m.buff_list },
+            |m: &mut RogueHandbookData| { &mut m.buff_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "rogue_aeon_list",
@@ -72,9 +72,9 @@ impl RogueHandbookData {
             |m: &mut RogueHandbookData| { &mut m.rogue_aeon_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "buff_list",
-            |m: &RogueHandbookData| { &m.buff_list },
-            |m: &mut RogueHandbookData| { &mut m.buff_list },
+            "miracle_list",
+            |m: &RogueHandbookData| { &m.miracle_list },
+            |m: &mut RogueHandbookData| { &mut m.miracle_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueHandbookData>(
             "RogueHandbookData",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for RogueHandbookData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    self.miracle_list.push(is.read_message()?);
-                },
                 98 => {
                     self.rogue_event.push(is.read_message()?);
                 },
-                74 => {
+                82 => {
+                    self.buff_list.push(is.read_message()?);
+                },
+                122 => {
                     self.rogue_aeon_list.push(is.read_message()?);
                 },
-                26 => {
-                    self.buff_list.push(is.read_message()?);
+                42 => {
+                    self.miracle_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,11 +118,11 @@ impl ::protobuf::Message for RogueHandbookData {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.miracle_list {
+        for value in &self.rogue_event {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.rogue_event {
+        for value in &self.buff_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -130,7 +130,7 @@ impl ::protobuf::Message for RogueHandbookData {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.buff_list {
+        for value in &self.miracle_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -140,17 +140,17 @@ impl ::protobuf::Message for RogueHandbookData {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.miracle_list {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        };
         for v in &self.rogue_event {
             ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
-        for v in &self.rogue_aeon_list {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
         for v in &self.buff_list {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        };
+        for v in &self.rogue_aeon_list {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
+        for v in &self.miracle_list {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,19 +169,19 @@ impl ::protobuf::Message for RogueHandbookData {
     }
 
     fn clear(&mut self) {
-        self.miracle_list.clear();
         self.rogue_event.clear();
-        self.rogue_aeon_list.clear();
         self.buff_list.clear();
+        self.rogue_aeon_list.clear();
+        self.miracle_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueHandbookData {
         static instance: RogueHandbookData = RogueHandbookData {
-            miracle_list: ::std::vec::Vec::new(),
             rogue_event: ::std::vec::Vec::new(),
-            rogue_aeon_list: ::std::vec::Vec::new(),
             buff_list: ::std::vec::Vec::new(),
+            rogue_aeon_list: ::std::vec::Vec::new(),
+            miracle_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -208,12 +208,12 @@ impl ::protobuf::reflect::ProtobufValue for RogueHandbookData {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17RogueHandbookData.proto\x1a\x18RogueHandbookEvent.proto\x1a\x1aRog\
     ueHandbookMiracle.proto\x1a\x17RogueHandbookBuff.proto\x1a\x17RogueHandb\
-    ookAeon.proto\"\xf0\x01\n\x11RogueHandbookData\x128\n\x0cmiracle_list\
-    \x18\x04\x20\x03(\x0b2\x15.RogueHandbookMiracleR\x0bmiracleList\x124\n\
-    \x0brogue_event\x18\x0c\x20\x03(\x0b2\x13.RogueHandbookEventR\nrogueEven\
-    t\x12:\n\x0frogue_aeon_list\x18\t\x20\x03(\x0b2\x12.RogueHandbookAeonR\r\
-    rogueAeonList\x12/\n\tbuff_list\x18\x03\x20\x03(\x0b2\x12.RogueHandbookB\
-    uffR\x08buffListB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    ookAeon.proto\"\xf0\x01\n\x11RogueHandbookData\x124\n\x0brogue_event\x18\
+    \x0c\x20\x03(\x0b2\x13.RogueHandbookEventR\nrogueEvent\x12/\n\tbuff_list\
+    \x18\n\x20\x03(\x0b2\x12.RogueHandbookBuffR\x08buffList\x12:\n\x0frogue_\
+    aeon_list\x18\x0f\x20\x03(\x0b2\x12.RogueHandbookAeonR\rrogueAeonList\
+    \x128\n\x0cmiracle_list\x18\x05\x20\x03(\x0b2\x15.RogueHandbookMiracleR\
+    \x0bmiracleListB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneEntityTeleportScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SceneEntityTeleportScRsp.client_pos_version)
-    pub client_pos_version: u32,
     // @@protoc_insertion_point(field:SceneEntityTeleportScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:SceneEntityTeleportScRsp.client_pos_version)
+    pub client_pos_version: u32,
     // @@protoc_insertion_point(field:SceneEntityTeleportScRsp.entity_motion)
     pub entity_motion: ::protobuf::MessageField<super::EntityMotion::EntityMotion>,
     // special fields
@@ -55,14 +55,14 @@ impl SceneEntityTeleportScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "client_pos_version",
-            |m: &SceneEntityTeleportScRsp| { &m.client_pos_version },
-            |m: &mut SceneEntityTeleportScRsp| { &mut m.client_pos_version },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &SceneEntityTeleportScRsp| { &m.retcode },
             |m: &mut SceneEntityTeleportScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "client_pos_version",
+            |m: &SceneEntityTeleportScRsp| { &m.client_pos_version },
+            |m: &mut SceneEntityTeleportScRsp| { &mut m.client_pos_version },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EntityMotion::EntityMotion>(
             "entity_motion",
@@ -88,12 +88,12 @@ impl ::protobuf::Message for SceneEntityTeleportScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 48 => {
-                    self.client_pos_version = is.read_uint32()?;
-                },
-                120 => {
                     self.retcode = is.read_uint32()?;
                 },
-                106 => {
+                112 => {
+                    self.client_pos_version = is.read_uint32()?;
+                },
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.entity_motion)?;
                 },
                 tag => {
@@ -108,11 +108,11 @@ impl ::protobuf::Message for SceneEntityTeleportScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.client_pos_version != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.client_pos_version);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+        }
+        if self.client_pos_version != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.client_pos_version);
         }
         if let Some(v) = self.entity_motion.as_ref() {
             let len = v.compute_size();
@@ -124,14 +124,14 @@ impl ::protobuf::Message for SceneEntityTeleportScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.client_pos_version != 0 {
-            os.write_uint32(6, self.client_pos_version)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
+        }
+        if self.client_pos_version != 0 {
+            os.write_uint32(14, self.client_pos_version)?;
         }
         if let Some(v) = self.entity_motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for SceneEntityTeleportScRsp {
     }
 
     fn clear(&mut self) {
-        self.client_pos_version = 0;
         self.retcode = 0;
+        self.client_pos_version = 0;
         self.entity_motion.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneEntityTeleportScRsp {
         static instance: SceneEntityTeleportScRsp = SceneEntityTeleportScRsp {
-            client_pos_version: 0,
             retcode: 0,
+            client_pos_version: 0,
             entity_motion: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for SceneEntityTeleportScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eSceneEntityTeleportScRsp.proto\x1a\x12EntityMotion.proto\"\x96\x01\
-    \n\x18SceneEntityTeleportScRsp\x12,\n\x12client_pos_version\x18\x06\x20\
-    \x01(\rR\x10clientPosVersion\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\
-    \x07retcode\x122\n\rentity_motion\x18\r\x20\x01(\x0b2\r.EntityMotionR\
-    \x0centityMotionB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x18SceneEntityTeleportScRsp\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\
+    \x07retcode\x12,\n\x12client_pos_version\x18\x0e\x20\x01(\rR\x10clientPo\
+    sVersion\x122\n\rentity_motion\x18\t\x20\x01(\x0b2\r.EntityMotionR\x0cen\
+    tityMotionB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

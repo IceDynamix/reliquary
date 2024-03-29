@@ -87,13 +87,13 @@ impl ::protobuf::Message for GetChallengeScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                82 => {
                     self.challenge_list.push(is.read_message()?);
                 },
-                40 => {
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
-                10 => {
+                18 => {
                     self.challenge_reward_list.push(is.read_message()?);
                 },
                 tag => {
@@ -113,7 +113,7 @@ impl ::protobuf::Message for GetChallengeScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         for value in &self.challenge_reward_list {
             let len = value.compute_size();
@@ -126,13 +126,13 @@ impl ::protobuf::Message for GetChallengeScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.challenge_list {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
         for v in &self.challenge_reward_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -188,8 +188,8 @@ impl ::protobuf::reflect::ProtobufValue for GetChallengeScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17GetChallengeScRsp.proto\x1a\x0fChallenge.proto\x1a\x15ChallengeRew\
     ard.proto\"\xa6\x01\n\x11GetChallengeScRsp\x121\n\x0echallenge_list\x18\
-    \r\x20\x03(\x0b2\n.ChallengeR\rchallengeList\x12\x18\n\x07retcode\x18\
-    \x05\x20\x01(\rR\x07retcode\x12D\n\x15challenge_reward_list\x18\x01\x20\
+    \n\x20\x03(\x0b2\n.ChallengeR\rchallengeList\x12\x18\n\x07retcode\x18\
+    \x0e\x20\x01(\rR\x07retcode\x12D\n\x15challenge_reward_list\x18\x02\x20\
     \x03(\x0b2\x10.ChallengeRewardR\x13challengeRewardListB\x15\n\x13emu.lun\
     arcore.protob\x06proto3\
 ";

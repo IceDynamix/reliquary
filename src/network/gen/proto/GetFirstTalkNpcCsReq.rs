@@ -73,10 +73,10 @@ impl ::protobuf::Message for GetFirstTalkNpcCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                122 => {
                     is.read_repeated_packed_uint32_into(&mut self.npc_id)?;
                 },
-                96 => {
+                120 => {
                     self.npc_id.push(is.read_uint32()?);
                 },
                 tag => {
@@ -92,7 +92,7 @@ impl ::protobuf::Message for GetFirstTalkNpcCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         for value in &self.npc_id {
-            my_size += ::protobuf::rt::uint32_size(12, *value);
+            my_size += ::protobuf::rt::uint32_size(15, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -101,7 +101,7 @@ impl ::protobuf::Message for GetFirstTalkNpcCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.npc_id {
-            os.write_uint32(12, *v)?;
+            os.write_uint32(15, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -152,7 +152,7 @@ impl ::protobuf::reflect::ProtobufValue for GetFirstTalkNpcCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aGetFirstTalkNpcCsReq.proto\"-\n\x14GetFirstTalkNpcCsReq\x12\x15\n\
-    \x06npc_id\x18\x0c\x20\x03(\rR\x05npcIdB\x15\n\x13emu.lunarcore.protob\
+    \x06npc_id\x18\x0f\x20\x03(\rR\x05npcIdB\x15\n\x13emu.lunarcore.protob\
     \x06proto3\
 ";
 

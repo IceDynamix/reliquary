@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMiracleInfoData {
     // message fields
-    // @@protoc_insertion_point(field:RogueMiracleInfoData.EGCFBOPLHKJ)
-    pub EGCFBOPLHKJ: u32,
     // @@protoc_insertion_point(field:RogueMiracleInfoData.rogue_miracle_list)
     pub rogue_miracle_list: ::std::vec::Vec<super::RogueMiracleDataInfo::RogueMiracleDataInfo>,
-    // @@protoc_insertion_point(field:RogueMiracleInfoData.JPDGMALBBAB)
-    pub JPDGMALBBAB: u32,
+    // @@protoc_insertion_point(field:RogueMiracleInfoData.EIPDPOKBFBP)
+    pub EIPDPOKBFBP: u32,
+    // @@protoc_insertion_point(field:RogueMiracleInfoData.FIEIECEEFJN)
+    pub FIEIECEEFJN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMiracleInfoData.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl RogueMiracleInfoData {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EGCFBOPLHKJ",
-            |m: &RogueMiracleInfoData| { &m.EGCFBOPLHKJ },
-            |m: &mut RogueMiracleInfoData| { &mut m.EGCFBOPLHKJ },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "rogue_miracle_list",
             |m: &RogueMiracleInfoData| { &m.rogue_miracle_list },
             |m: &mut RogueMiracleInfoData| { &mut m.rogue_miracle_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JPDGMALBBAB",
-            |m: &RogueMiracleInfoData| { &m.JPDGMALBBAB },
-            |m: &mut RogueMiracleInfoData| { &mut m.JPDGMALBBAB },
+            "EIPDPOKBFBP",
+            |m: &RogueMiracleInfoData| { &m.EIPDPOKBFBP },
+            |m: &mut RogueMiracleInfoData| { &mut m.EIPDPOKBFBP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FIEIECEEFJN",
+            |m: &RogueMiracleInfoData| { &m.FIEIECEEFJN },
+            |m: &mut RogueMiracleInfoData| { &mut m.FIEIECEEFJN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMiracleInfoData>(
             "RogueMiracleInfoData",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for RogueMiracleInfoData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.EGCFBOPLHKJ = is.read_uint32()?;
-                },
-                10 => {
+                114 => {
                     self.rogue_miracle_list.push(is.read_message()?);
                 },
-                56 => {
-                    self.JPDGMALBBAB = is.read_uint32()?;
+                24 => {
+                    self.EIPDPOKBFBP = is.read_uint32()?;
+                },
+                80 => {
+                    self.FIEIECEEFJN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +108,15 @@ impl ::protobuf::Message for RogueMiracleInfoData {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EGCFBOPLHKJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.EGCFBOPLHKJ);
-        }
         for value in &self.rogue_miracle_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.JPDGMALBBAB != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.JPDGMALBBAB);
+        if self.EIPDPOKBFBP != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.EIPDPOKBFBP);
+        }
+        if self.FIEIECEEFJN != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.FIEIECEEFJN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for RogueMiracleInfoData {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EGCFBOPLHKJ != 0 {
-            os.write_uint32(4, self.EGCFBOPLHKJ)?;
-        }
         for v in &self.rogue_miracle_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
-        if self.JPDGMALBBAB != 0 {
-            os.write_uint32(7, self.JPDGMALBBAB)?;
+        if self.EIPDPOKBFBP != 0 {
+            os.write_uint32(3, self.EIPDPOKBFBP)?;
+        }
+        if self.FIEIECEEFJN != 0 {
+            os.write_uint32(10, self.FIEIECEEFJN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for RogueMiracleInfoData {
     }
 
     fn clear(&mut self) {
-        self.EGCFBOPLHKJ = 0;
         self.rogue_miracle_list.clear();
-        self.JPDGMALBBAB = 0;
+        self.EIPDPOKBFBP = 0;
+        self.FIEIECEEFJN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMiracleInfoData {
         static instance: RogueMiracleInfoData = RogueMiracleInfoData {
-            EGCFBOPLHKJ: 0,
             rogue_miracle_list: ::std::vec::Vec::new(),
-            JPDGMALBBAB: 0,
+            EIPDPOKBFBP: 0,
+            FIEIECEEFJN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,11 +186,11 @@ impl ::protobuf::reflect::ProtobufValue for RogueMiracleInfoData {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aRogueMiracleInfoData.proto\x1a\x1aRogueMiracleDataInfo.proto\"\x9f\
-    \x01\n\x14RogueMiracleInfoData\x12\x20\n\x0bEGCFBOPLHKJ\x18\x04\x20\x01(\
-    \rR\x0bEGCFBOPLHKJ\x12C\n\x12rogue_miracle_list\x18\x01\x20\x03(\x0b2\
-    \x15.RogueMiracleDataInfoR\x10rogueMiracleList\x12\x20\n\x0bJPDGMALBBAB\
-    \x18\x07\x20\x01(\rR\x0bJPDGMALBBABB\x15\n\x13emu.lunarcore.protob\x06pr\
-    oto3\
+    \x01\n\x14RogueMiracleInfoData\x12C\n\x12rogue_miracle_list\x18\x0e\x20\
+    \x03(\x0b2\x15.RogueMiracleDataInfoR\x10rogueMiracleList\x12\x20\n\x0bEI\
+    PDPOKBFBP\x18\x03\x20\x01(\rR\x0bEIPDPOKBFBP\x12\x20\n\x0bFIEIECEEFJN\
+    \x18\n\x20\x01(\rR\x0bFIEIECEEFJNB\x15\n\x13emu.lunarcore.protob\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

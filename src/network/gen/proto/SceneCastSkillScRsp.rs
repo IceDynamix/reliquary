@@ -87,13 +87,13 @@ impl ::protobuf::Message for SceneCastSkillScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                120 => {
                     self.attacked_group_id = is.read_uint32()?;
                 },
-                96 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
-                42 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_info)?;
                 },
                 tag => {
@@ -109,10 +109,10 @@ impl ::protobuf::Message for SceneCastSkillScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.attacked_group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.attacked_group_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.attacked_group_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         if let Some(v) = self.battle_info.as_ref() {
             let len = v.compute_size();
@@ -125,13 +125,13 @@ impl ::protobuf::Message for SceneCastSkillScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.attacked_group_id != 0 {
-            os.write_uint32(6, self.attacked_group_id)?;
+            os.write_uint32(15, self.attacked_group_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
         if let Some(v) = self.battle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,9 +186,9 @@ impl ::protobuf::reflect::ProtobufValue for SceneCastSkillScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19SceneCastSkillScRsp.proto\x1a\x15SceneBattleInfo.proto\"\x8e\x01\n\
-    \x13SceneCastSkillScRsp\x12*\n\x11attacked_group_id\x18\x06\x20\x01(\rR\
-    \x0fattackedGroupId\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\
-    \x121\n\x0bbattle_info\x18\x05\x20\x01(\x0b2\x10.SceneBattleInfoR\nbattl\
+    \x13SceneCastSkillScRsp\x12*\n\x11attacked_group_id\x18\x0f\x20\x01(\rR\
+    \x0fattackedGroupId\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\
+    \x121\n\x0bbattle_info\x18\x08\x20\x01(\x0b2\x10.SceneBattleInfoR\nbattl\
     eInfoB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

@@ -101,16 +101,16 @@ impl ::protobuf::Message for Chat {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                66 => {
                     self.text = is.read_string()?;
                 },
-                16 => {
+                80 => {
                     self.msg_type = is.read_enum_or_unknown()?;
                 },
-                48 => {
+                88 => {
                     self.emote = is.read_uint32()?;
                 },
-                72 => {
+                120 => {
                     self.sent_time = is.read_uint64()?;
                 },
                 32 => {
@@ -129,16 +129,16 @@ impl ::protobuf::Message for Chat {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.text.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.text);
+            my_size += ::protobuf::rt::string_size(8, &self.text);
         }
         if self.msg_type != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(2, self.msg_type.value());
+            my_size += ::protobuf::rt::int32_size(10, self.msg_type.value());
         }
         if self.emote != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.emote);
+            my_size += ::protobuf::rt::uint32_size(11, self.emote);
         }
         if self.sent_time != 0 {
-            my_size += ::protobuf::rt::uint64_size(9, self.sent_time);
+            my_size += ::protobuf::rt::uint64_size(15, self.sent_time);
         }
         if self.sender_uid != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.sender_uid);
@@ -150,16 +150,16 @@ impl ::protobuf::Message for Chat {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.text.is_empty() {
-            os.write_string(5, &self.text)?;
+            os.write_string(8, &self.text)?;
         }
         if self.msg_type != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.msg_type))?;
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.msg_type))?;
         }
         if self.emote != 0 {
-            os.write_uint32(6, self.emote)?;
+            os.write_uint32(11, self.emote)?;
         }
         if self.sent_time != 0 {
-            os.write_uint64(9, self.sent_time)?;
+            os.write_uint64(15, self.sent_time)?;
         }
         if self.sender_uid != 0 {
             os.write_uint32(4, self.sender_uid)?;
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for Chat {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\nChat.proto\x1a\rMsgType.proto\"\x91\x01\n\x04Chat\x12\x12\n\x04text\
-    \x18\x05\x20\x01(\tR\x04text\x12#\n\x08msg_type\x18\x02\x20\x01(\x0e2\
-    \x08.MsgTypeR\x07msgType\x12\x14\n\x05emote\x18\x06\x20\x01(\rR\x05emote\
-    \x12\x1b\n\tsent_time\x18\t\x20\x01(\x04R\x08sentTime\x12\x1d\n\nsender_\
-    uid\x18\x04\x20\x01(\rR\tsenderUidB\x15\n\x13emu.lunarcore.protob\x06pro\
-    to3\
+    \x18\x08\x20\x01(\tR\x04text\x12#\n\x08msg_type\x18\n\x20\x01(\x0e2\x08.\
+    MsgTypeR\x07msgType\x12\x14\n\x05emote\x18\x0b\x20\x01(\rR\x05emote\x12\
+    \x1b\n\tsent_time\x18\x0f\x20\x01(\x04R\x08sentTime\x12\x1d\n\nsender_ui\
+    d\x18\x04\x20\x01(\rR\tsenderUidB\x15\n\x13emu.lunarcore.protob\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

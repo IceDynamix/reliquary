@@ -129,31 +129,31 @@ impl ::protobuf::Message for SceneEntityInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                104 => {
                     self.entity_id = is.read_uint32()?;
                 },
-                88 => {
+                40 => {
                     self.group_id = is.read_uint32()?;
                 },
-                66 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
                 },
-                32 => {
+                24 => {
                     self.inst_id = is.read_uint32()?;
                 },
-                106 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.actor)?;
                 },
-                74 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.npc_monster)?;
                 },
-                114 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.npc)?;
                 },
-                42 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.prop)?;
                 },
-                98 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.summon_unit)?;
                 },
                 tag => {
@@ -169,17 +169,17 @@ impl ::protobuf::Message for SceneEntityInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.entity_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.entity_id);
         }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.group_id);
         }
         if let Some(v) = self.motion.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.inst_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.inst_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.inst_id);
         }
         if let Some(v) = self.actor.as_ref() {
             let len = v.compute_size();
@@ -208,31 +208,31 @@ impl ::protobuf::Message for SceneEntityInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.entity_id != 0 {
-            os.write_uint32(6, self.entity_id)?;
+            os.write_uint32(13, self.entity_id)?;
         }
         if self.group_id != 0 {
-            os.write_uint32(11, self.group_id)?;
+            os.write_uint32(5, self.group_id)?;
         }
         if let Some(v) = self.motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.inst_id != 0 {
-            os.write_uint32(4, self.inst_id)?;
+            os.write_uint32(3, self.inst_id)?;
         }
         if let Some(v) = self.actor.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if let Some(v) = self.npc_monster.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if let Some(v) = self.npc.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         if let Some(v) = self.prop.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         if let Some(v) = self.summon_unit.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -301,15 +301,15 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15SceneEntityInfo.proto\x1a\x10MotionInfo.proto\x1a\x19SceneSummonUn\
     itInfo.proto\x1a\x14SceneActorInfo.proto\x1a\x19SceneNpcMonsterInfo.prot\
     o\x1a\x12SceneNpcInfo.proto\x1a\x13ScenePropInfo.proto\"\xe1\x02\n\x0fSc\
-    eneEntityInfo\x12\x1b\n\tentity_id\x18\x06\x20\x01(\rR\x08entityId\x12\
-    \x19\n\x08group_id\x18\x0b\x20\x01(\rR\x07groupId\x12#\n\x06motion\x18\
-    \x08\x20\x01(\x0b2\x0b.MotionInfoR\x06motion\x12\x17\n\x07inst_id\x18\
-    \x04\x20\x01(\rR\x06instId\x12%\n\x05actor\x18\r\x20\x01(\x0b2\x0f.Scene\
-    ActorInfoR\x05actor\x125\n\x0bnpc_monster\x18\t\x20\x01(\x0b2\x14.SceneN\
-    pcMonsterInfoR\nnpcMonster\x12\x1f\n\x03npc\x18\x0e\x20\x01(\x0b2\r.Scen\
-    eNpcInfoR\x03npc\x12\"\n\x04prop\x18\x05\x20\x01(\x0b2\x0e.ScenePropInfo\
-    R\x04prop\x125\n\x0bsummon_unit\x18\x0c\x20\x01(\x0b2\x14.SceneSummonUni\
-    tInfoR\nsummonUnitB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    eneEntityInfo\x12\x1b\n\tentity_id\x18\r\x20\x01(\rR\x08entityId\x12\x19\
+    \n\x08group_id\x18\x05\x20\x01(\rR\x07groupId\x12#\n\x06motion\x18\x04\
+    \x20\x01(\x0b2\x0b.MotionInfoR\x06motion\x12\x17\n\x07inst_id\x18\x03\
+    \x20\x01(\rR\x06instId\x12%\n\x05actor\x18\x0b\x20\x01(\x0b2\x0f.SceneAc\
+    torInfoR\x05actor\x125\n\x0bnpc_monster\x18\x0c\x20\x01(\x0b2\x14.SceneN\
+    pcMonsterInfoR\nnpcMonster\x12\x1f\n\x03npc\x18\x08\x20\x01(\x0b2\r.Scen\
+    eNpcInfoR\x03npc\x12\"\n\x04prop\x18\n\x20\x01(\x0b2\x0e.ScenePropInfoR\
+    \x04prop\x125\n\x0bsummon_unit\x18\t\x20\x01(\x0b2\x14.SceneSummonUnitIn\
+    foR\nsummonUnitB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

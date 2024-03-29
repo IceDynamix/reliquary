@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueHandbookAeon {
     // message fields
-    // @@protoc_insertion_point(field:RogueHandbookAeon.aeon_id)
-    pub aeon_id: u32,
-    // @@protoc_insertion_point(field:RogueHandbookAeon.max_level)
-    pub max_level: u32,
     // @@protoc_insertion_point(field:RogueHandbookAeon.exp)
     pub exp: u32,
     // @@protoc_insertion_point(field:RogueHandbookAeon.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:RogueHandbookAeon.aeon_id)
+    pub aeon_id: u32,
     // @@protoc_insertion_point(field:RogueHandbookAeon.archive_unlock_list)
     pub archive_unlock_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueHandbookAeon.max_level)
+    pub max_level: u32,
     // @@protoc_insertion_point(field:RogueHandbookAeon.taken_reward_list)
     pub taken_reward_list: ::std::vec::Vec<u32>,
     // special fields
@@ -61,16 +61,6 @@ impl RogueHandbookAeon {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "aeon_id",
-            |m: &RogueHandbookAeon| { &m.aeon_id },
-            |m: &mut RogueHandbookAeon| { &mut m.aeon_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "max_level",
-            |m: &RogueHandbookAeon| { &m.max_level },
-            |m: &mut RogueHandbookAeon| { &mut m.max_level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "exp",
             |m: &RogueHandbookAeon| { &m.exp },
             |m: &mut RogueHandbookAeon| { &mut m.exp },
@@ -80,10 +70,20 @@ impl RogueHandbookAeon {
             |m: &RogueHandbookAeon| { &m.level },
             |m: &mut RogueHandbookAeon| { &mut m.level },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "aeon_id",
+            |m: &RogueHandbookAeon| { &m.aeon_id },
+            |m: &mut RogueHandbookAeon| { &mut m.aeon_id },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "archive_unlock_list",
             |m: &RogueHandbookAeon| { &m.archive_unlock_list },
             |m: &mut RogueHandbookAeon| { &mut m.archive_unlock_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "max_level",
+            |m: &RogueHandbookAeon| { &m.max_level },
+            |m: &mut RogueHandbookAeon| { &mut m.max_level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "taken_reward_list",
@@ -108,28 +108,28 @@ impl ::protobuf::Message for RogueHandbookAeon {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.aeon_id = is.read_uint32()?;
-                },
-                40 => {
-                    self.max_level = is.read_uint32()?;
-                },
-                120 => {
+                48 => {
                     self.exp = is.read_uint32()?;
                 },
-                32 => {
+                80 => {
                     self.level = is.read_uint32()?;
                 },
-                106 => {
+                40 => {
+                    self.aeon_id = is.read_uint32()?;
+                },
+                122 => {
                     is.read_repeated_packed_uint32_into(&mut self.archive_unlock_list)?;
                 },
-                104 => {
+                120 => {
                     self.archive_unlock_list.push(is.read_uint32()?);
                 },
-                82 => {
+                112 => {
+                    self.max_level = is.read_uint32()?;
+                },
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.taken_reward_list)?;
                 },
-                80 => {
+                56 => {
                     self.taken_reward_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -144,23 +144,23 @@ impl ::protobuf::Message for RogueHandbookAeon {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.aeon_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.aeon_id);
-        }
-        if self.max_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.max_level);
-        }
         if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.exp);
+            my_size += ::protobuf::rt::uint32_size(6, self.exp);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.level);
+            my_size += ::protobuf::rt::uint32_size(10, self.level);
+        }
+        if self.aeon_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.aeon_id);
         }
         for value in &self.archive_unlock_list {
-            my_size += ::protobuf::rt::uint32_size(13, *value);
+            my_size += ::protobuf::rt::uint32_size(15, *value);
         };
+        if self.max_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.max_level);
+        }
         for value in &self.taken_reward_list {
-            my_size += ::protobuf::rt::uint32_size(10, *value);
+            my_size += ::protobuf::rt::uint32_size(7, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -168,23 +168,23 @@ impl ::protobuf::Message for RogueHandbookAeon {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.aeon_id != 0 {
-            os.write_uint32(2, self.aeon_id)?;
-        }
-        if self.max_level != 0 {
-            os.write_uint32(5, self.max_level)?;
-        }
         if self.exp != 0 {
-            os.write_uint32(15, self.exp)?;
+            os.write_uint32(6, self.exp)?;
         }
         if self.level != 0 {
-            os.write_uint32(4, self.level)?;
+            os.write_uint32(10, self.level)?;
+        }
+        if self.aeon_id != 0 {
+            os.write_uint32(5, self.aeon_id)?;
         }
         for v in &self.archive_unlock_list {
-            os.write_uint32(13, *v)?;
+            os.write_uint32(15, *v)?;
         };
+        if self.max_level != 0 {
+            os.write_uint32(14, self.max_level)?;
+        }
         for v in &self.taken_reward_list {
-            os.write_uint32(10, *v)?;
+            os.write_uint32(7, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -203,22 +203,22 @@ impl ::protobuf::Message for RogueHandbookAeon {
     }
 
     fn clear(&mut self) {
-        self.aeon_id = 0;
-        self.max_level = 0;
         self.exp = 0;
         self.level = 0;
+        self.aeon_id = 0;
         self.archive_unlock_list.clear();
+        self.max_level = 0;
         self.taken_reward_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueHandbookAeon {
         static instance: RogueHandbookAeon = RogueHandbookAeon {
-            aeon_id: 0,
-            max_level: 0,
             exp: 0,
             level: 0,
+            aeon_id: 0,
             archive_unlock_list: ::std::vec::Vec::new(),
+            max_level: 0,
             taken_reward_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -244,13 +244,13 @@ impl ::protobuf::reflect::ProtobufValue for RogueHandbookAeon {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17RogueHandbookAeon.proto\"\xcd\x01\n\x11RogueHandbookAeon\x12\x17\n\
-    \x07aeon_id\x18\x02\x20\x01(\rR\x06aeonId\x12\x1b\n\tmax_level\x18\x05\
-    \x20\x01(\rR\x08maxLevel\x12\x10\n\x03exp\x18\x0f\x20\x01(\rR\x03exp\x12\
-    \x14\n\x05level\x18\x04\x20\x01(\rR\x05level\x12.\n\x13archive_unlock_li\
-    st\x18\r\x20\x03(\rR\x11archiveUnlockList\x12*\n\x11taken_reward_list\
-    \x18\n\x20\x03(\rR\x0ftakenRewardListB\x15\n\x13emu.lunarcore.protob\x06\
-    proto3\
+    \n\x17RogueHandbookAeon.proto\"\xcd\x01\n\x11RogueHandbookAeon\x12\x10\n\
+    \x03exp\x18\x06\x20\x01(\rR\x03exp\x12\x14\n\x05level\x18\n\x20\x01(\rR\
+    \x05level\x12\x17\n\x07aeon_id\x18\x05\x20\x01(\rR\x06aeonId\x12.\n\x13a\
+    rchive_unlock_list\x18\x0f\x20\x03(\rR\x11archiveUnlockList\x12\x1b\n\tm\
+    ax_level\x18\x0e\x20\x01(\rR\x08maxLevel\x12*\n\x11taken_reward_list\x18\
+    \x07\x20\x03(\rR\x0ftakenRewardListB\x15\n\x13emu.lunarcore.protob\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

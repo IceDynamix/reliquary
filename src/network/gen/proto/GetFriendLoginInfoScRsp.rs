@@ -31,8 +31,6 @@ pub struct GetFriendLoginInfoScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetFriendLoginInfoScRsp.friend_uid_list)
     pub friend_uid_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetFriendLoginInfoScRsp.DKOGBHPIFKJ)
-    pub DKOGBHPIFKJ: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetFriendLoginInfoScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,17 +50,12 @@ impl GetFriendLoginInfoScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "friend_uid_list",
             |m: &GetFriendLoginInfoScRsp| { &m.friend_uid_list },
             |m: &mut GetFriendLoginInfoScRsp| { &mut m.friend_uid_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DKOGBHPIFKJ",
-            |m: &GetFriendLoginInfoScRsp| { &m.DKOGBHPIFKJ },
-            |m: &mut GetFriendLoginInfoScRsp| { &mut m.DKOGBHPIFKJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -87,19 +80,13 @@ impl ::protobuf::Message for GetFriendLoginInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.friend_uid_list)?;
                 },
-                88 => {
+                16 => {
                     self.friend_uid_list.push(is.read_uint32()?);
                 },
-                98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.DKOGBHPIFKJ)?;
-                },
-                96 => {
-                    self.DKOGBHPIFKJ.push(is.read_uint32()?);
-                },
-                32 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -115,13 +102,10 @@ impl ::protobuf::Message for GetFriendLoginInfoScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         for value in &self.friend_uid_list {
-            my_size += ::protobuf::rt::uint32_size(11, *value);
-        };
-        for value in &self.DKOGBHPIFKJ {
-            my_size += ::protobuf::rt::uint32_size(12, *value);
+            my_size += ::protobuf::rt::uint32_size(2, *value);
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -130,13 +114,10 @@ impl ::protobuf::Message for GetFriendLoginInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.friend_uid_list {
-            os.write_uint32(11, *v)?;
-        };
-        for v in &self.DKOGBHPIFKJ {
-            os.write_uint32(12, *v)?;
+            os.write_uint32(2, *v)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -156,7 +137,6 @@ impl ::protobuf::Message for GetFriendLoginInfoScRsp {
 
     fn clear(&mut self) {
         self.friend_uid_list.clear();
-        self.DKOGBHPIFKJ.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
@@ -164,7 +144,6 @@ impl ::protobuf::Message for GetFriendLoginInfoScRsp {
     fn default_instance() -> &'static GetFriendLoginInfoScRsp {
         static instance: GetFriendLoginInfoScRsp = GetFriendLoginInfoScRsp {
             friend_uid_list: ::std::vec::Vec::new(),
-            DKOGBHPIFKJ: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -190,10 +169,10 @@ impl ::protobuf::reflect::ProtobufValue for GetFriendLoginInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dGetFriendLoginInfoScRsp.proto\"}\n\x17GetFriendLoginInfoScRsp\x12&\
-    \n\x0ffriend_uid_list\x18\x0b\x20\x03(\rR\rfriendUidList\x12\x20\n\x0bDK\
-    OGBHPIFKJ\x18\x0c\x20\x03(\rR\x0bDKOGBHPIFKJ\x12\x18\n\x07retcode\x18\
-    \x04\x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x1dGetFriendLoginInfoScRsp.proto\"[\n\x17GetFriendLoginInfoScRsp\x12&\
+    \n\x0ffriend_uid_list\x18\x02\x20\x03(\rR\rfriendUidList\x12\x18\n\x07re\
+    tcode\x18\t\x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore.protob\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

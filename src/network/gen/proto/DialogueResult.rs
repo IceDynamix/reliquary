@@ -31,8 +31,8 @@ pub struct DialogueResult {
     // message fields
     // @@protoc_insertion_point(field:DialogueResult.HFHKBMGBJAN)
     pub HFHKBMGBJAN: u32,
-    // @@protoc_insertion_point(field:DialogueResult.BLGIMDCNDHJ)
-    pub BLGIMDCNDHJ: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:DialogueResult.event_ids)
+    pub event_ids: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:DialogueResult.item_result)
     pub item_result: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
@@ -60,9 +60,9 @@ impl DialogueResult {
             |m: &mut DialogueResult| { &mut m.HFHKBMGBJAN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BLGIMDCNDHJ",
-            |m: &DialogueResult| { &m.BLGIMDCNDHJ },
-            |m: &mut DialogueResult| { &mut m.BLGIMDCNDHJ },
+            "event_ids",
+            |m: &DialogueResult| { &m.event_ids },
+            |m: &mut DialogueResult| { &mut m.event_ids },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "item_result",
@@ -87,16 +87,16 @@ impl ::protobuf::Message for DialogueResult {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                16 => {
                     self.HFHKBMGBJAN = is.read_uint32()?;
                 },
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.event_ids)?;
+                },
+                120 => {
+                    self.event_ids.push(is.read_uint32()?);
+                },
                 42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.BLGIMDCNDHJ)?;
-                },
-                40 => {
-                    self.BLGIMDCNDHJ.push(is.read_uint32()?);
-                },
-                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_result)?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for DialogueResult {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HFHKBMGBJAN != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.HFHKBMGBJAN);
+            my_size += ::protobuf::rt::uint32_size(2, self.HFHKBMGBJAN);
         }
-        for value in &self.BLGIMDCNDHJ {
-            my_size += ::protobuf::rt::uint32_size(5, *value);
+        for value in &self.event_ids {
+            my_size += ::protobuf::rt::uint32_size(15, *value);
         };
         if let Some(v) = self.item_result.as_ref() {
             let len = v.compute_size();
@@ -128,13 +128,13 @@ impl ::protobuf::Message for DialogueResult {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HFHKBMGBJAN != 0 {
-            os.write_uint32(15, self.HFHKBMGBJAN)?;
+            os.write_uint32(2, self.HFHKBMGBJAN)?;
         }
-        for v in &self.BLGIMDCNDHJ {
-            os.write_uint32(5, *v)?;
+        for v in &self.event_ids {
+            os.write_uint32(15, *v)?;
         };
         if let Some(v) = self.item_result.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -154,7 +154,7 @@ impl ::protobuf::Message for DialogueResult {
 
     fn clear(&mut self) {
         self.HFHKBMGBJAN = 0;
-        self.BLGIMDCNDHJ.clear();
+        self.event_ids.clear();
         self.item_result.clear();
         self.special_fields.clear();
     }
@@ -162,7 +162,7 @@ impl ::protobuf::Message for DialogueResult {
     fn default_instance() -> &'static DialogueResult {
         static instance: DialogueResult = DialogueResult {
             HFHKBMGBJAN: 0,
-            BLGIMDCNDHJ: ::std::vec::Vec::new(),
+            event_ids: ::std::vec::Vec::new(),
             item_result: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -188,11 +188,11 @@ impl ::protobuf::reflect::ProtobufValue for DialogueResult {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14DialogueResult.proto\x1a\x0eItemList.proto\"\x80\x01\n\x0eDialogue\
-    Result\x12\x20\n\x0bHFHKBMGBJAN\x18\x0f\x20\x01(\rR\x0bHFHKBMGBJAN\x12\
-    \x20\n\x0bBLGIMDCNDHJ\x18\x05\x20\x03(\rR\x0bBLGIMDCNDHJ\x12*\n\x0bitem_\
-    result\x18\x06\x20\x01(\x0b2\t.ItemListR\nitemResultB\x15\n\x13emu.lunar\
-    core.protob\x06proto3\
+    \n\x14DialogueResult.proto\x1a\x0eItemList.proto\"{\n\x0eDialogueResult\
+    \x12\x20\n\x0bHFHKBMGBJAN\x18\x02\x20\x01(\rR\x0bHFHKBMGBJAN\x12\x1b\n\t\
+    event_ids\x18\x0f\x20\x03(\rR\x08eventIds\x12*\n\x0bitem_result\x18\x05\
+    \x20\x01(\x0b2\t.ItemListR\nitemResultB\x15\n\x13emu.lunarcore.protob\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

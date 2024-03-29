@@ -29,10 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueVirtualItemInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueVirtualItemInfo.money)
-    pub money: u32,
-    // @@protoc_insertion_point(field:RogueVirtualItemInfo.X)
-    pub X: u32,
+    // @@protoc_insertion_point(field:RogueVirtualItemInfo.JLGAKDGCBOH)
+    pub JLGAKDGCBOH: u32,
+    // @@protoc_insertion_point(field:RogueVirtualItemInfo.rogue_coin)
+    pub rogue_coin: u32,
+    // @@protoc_insertion_point(field:RogueVirtualItemInfo.LGFMKJAOICA)
+    pub LGFMKJAOICA: u32,
+    // @@protoc_insertion_point(field:RogueVirtualItemInfo.FGHILCKHDDO)
+    pub FGHILCKHDDO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueVirtualItemInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,17 +54,27 @@ impl RogueVirtualItemInfo {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "money",
-            |m: &RogueVirtualItemInfo| { &m.money },
-            |m: &mut RogueVirtualItemInfo| { &mut m.money },
+            "JLGAKDGCBOH",
+            |m: &RogueVirtualItemInfo| { &m.JLGAKDGCBOH },
+            |m: &mut RogueVirtualItemInfo| { &mut m.JLGAKDGCBOH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "X",
-            |m: &RogueVirtualItemInfo| { &m.X },
-            |m: &mut RogueVirtualItemInfo| { &mut m.X },
+            "rogue_coin",
+            |m: &RogueVirtualItemInfo| { &m.rogue_coin },
+            |m: &mut RogueVirtualItemInfo| { &mut m.rogue_coin },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LGFMKJAOICA",
+            |m: &RogueVirtualItemInfo| { &m.LGFMKJAOICA },
+            |m: &mut RogueVirtualItemInfo| { &mut m.LGFMKJAOICA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FGHILCKHDDO",
+            |m: &RogueVirtualItemInfo| { &m.FGHILCKHDDO },
+            |m: &mut RogueVirtualItemInfo| { &mut m.FGHILCKHDDO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueVirtualItemInfo>(
             "RogueVirtualItemInfo",
@@ -81,10 +95,16 @@ impl ::protobuf::Message for RogueVirtualItemInfo {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.money = is.read_uint32()?;
+                    self.JLGAKDGCBOH = is.read_uint32()?;
+                },
+                120 => {
+                    self.rogue_coin = is.read_uint32()?;
+                },
+                64 => {
+                    self.LGFMKJAOICA = is.read_uint32()?;
                 },
                 32 => {
-                    self.X = is.read_uint32()?;
+                    self.FGHILCKHDDO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +118,17 @@ impl ::protobuf::Message for RogueVirtualItemInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.money != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.money);
+        if self.JLGAKDGCBOH != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.JLGAKDGCBOH);
         }
-        if self.X != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.X);
+        if self.rogue_coin != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.rogue_coin);
+        }
+        if self.LGFMKJAOICA != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.LGFMKJAOICA);
+        }
+        if self.FGHILCKHDDO != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.FGHILCKHDDO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +136,17 @@ impl ::protobuf::Message for RogueVirtualItemInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.money != 0 {
-            os.write_uint32(1, self.money)?;
+        if self.JLGAKDGCBOH != 0 {
+            os.write_uint32(1, self.JLGAKDGCBOH)?;
         }
-        if self.X != 0 {
-            os.write_uint32(4, self.X)?;
+        if self.rogue_coin != 0 {
+            os.write_uint32(15, self.rogue_coin)?;
+        }
+        if self.LGFMKJAOICA != 0 {
+            os.write_uint32(8, self.LGFMKJAOICA)?;
+        }
+        if self.FGHILCKHDDO != 0 {
+            os.write_uint32(4, self.FGHILCKHDDO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +165,19 @@ impl ::protobuf::Message for RogueVirtualItemInfo {
     }
 
     fn clear(&mut self) {
-        self.money = 0;
-        self.X = 0;
+        self.JLGAKDGCBOH = 0;
+        self.rogue_coin = 0;
+        self.LGFMKJAOICA = 0;
+        self.FGHILCKHDDO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueVirtualItemInfo {
         static instance: RogueVirtualItemInfo = RogueVirtualItemInfo {
-            money: 0,
-            X: 0,
+            JLGAKDGCBOH: 0,
+            rogue_coin: 0,
+            LGFMKJAOICA: 0,
+            FGHILCKHDDO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for RogueVirtualItemInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aRogueVirtualItemInfo.proto\":\n\x14RogueVirtualItemInfo\x12\x14\n\
-    \x05money\x18\x01\x20\x01(\rR\x05money\x12\x0c\n\x01X\x18\x04\x20\x01(\r\
-    R\x01XB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x1aRogueVirtualItemInfo.proto\"\x9b\x01\n\x14RogueVirtualItemInfo\x12\
+    \x20\n\x0bJLGAKDGCBOH\x18\x01\x20\x01(\rR\x0bJLGAKDGCBOH\x12\x1d\n\nrogu\
+    e_coin\x18\x0f\x20\x01(\rR\trogueCoin\x12\x20\n\x0bLGFMKJAOICA\x18\x08\
+    \x20\x01(\rR\x0bLGFMKJAOICA\x12\x20\n\x0bFGHILCKHDDO\x18\x04\x20\x01(\rR\
+    \x0bFGHILCKHDDOB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

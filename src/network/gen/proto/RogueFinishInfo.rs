@@ -29,34 +29,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueFinishInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueFinishInfo.pass_room_count)
-    pub pass_room_count: u32,
-    // @@protoc_insertion_point(field:RogueFinishInfo.BFCBHPCPAOI)
-    pub BFCBHPCPAOI: bool,
     // @@protoc_insertion_point(field:RogueFinishInfo.cur_score_reward_info)
     pub cur_score_reward_info: ::protobuf::MessageField<super::RogueScoreRewardInfo::RogueScoreRewardInfo>,
     // @@protoc_insertion_point(field:RogueFinishInfo.area_id)
     pub area_id: u32,
     // @@protoc_insertion_point(field:RogueFinishInfo.record_info)
     pub record_info: ::protobuf::MessageField<super::RogueRecordInfo::RogueRecordInfo>,
-    // @@protoc_insertion_point(field:RogueFinishInfo.taken_score)
-    pub taken_score: u32,
-    // @@protoc_insertion_point(field:RogueFinishInfo.LBLELCPPLCI)
-    pub LBLELCPPLCI: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:RogueFinishInfo.ANBFGOKNEIA)
-    pub ANBFGOKNEIA: u32,
     // @@protoc_insertion_point(field:RogueFinishInfo.score_reward_info)
     pub score_reward_info: ::protobuf::MessageField<super::RogueScoreRewardInfo::RogueScoreRewardInfo>,
     // @@protoc_insertion_point(field:RogueFinishInfo.is_win)
     pub is_win: bool,
-    // @@protoc_insertion_point(field:RogueFinishInfo.IPNGMMIOJJB)
-    pub IPNGMMIOJJB: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:RogueFinishInfo.reach_room_count)
     pub reach_room_count: u32,
-    // @@protoc_insertion_point(field:RogueFinishInfo.BCKPHBOPCCN)
-    pub BCKPHBOPCCN: u32,
-    // @@protoc_insertion_point(field:RogueFinishInfo.ICOCLPBLFNN)
-    pub ICOCLPBLFNN: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:RogueFinishInfo.pass_room_count)
+    pub pass_room_count: u32,
+    // @@protoc_insertion_point(field:RogueFinishInfo.taken_score)
+    pub taken_score: u32,
     // @@protoc_insertion_point(field:RogueFinishInfo.total_score)
     pub total_score: u32,
     // special fields
@@ -76,18 +64,8 @@ impl RogueFinishInfo {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(15);
+        let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "pass_room_count",
-            |m: &RogueFinishInfo| { &m.pass_room_count },
-            |m: &mut RogueFinishInfo| { &mut m.pass_room_count },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BFCBHPCPAOI",
-            |m: &RogueFinishInfo| { &m.BFCBHPCPAOI },
-            |m: &mut RogueFinishInfo| { &mut m.BFCBHPCPAOI },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueScoreRewardInfo::RogueScoreRewardInfo>(
             "cur_score_reward_info",
             |m: &RogueFinishInfo| { &m.cur_score_reward_info },
@@ -103,21 +81,6 @@ impl RogueFinishInfo {
             |m: &RogueFinishInfo| { &m.record_info },
             |m: &mut RogueFinishInfo| { &mut m.record_info },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "taken_score",
-            |m: &RogueFinishInfo| { &m.taken_score },
-            |m: &mut RogueFinishInfo| { &mut m.taken_score },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "LBLELCPPLCI",
-            |m: &RogueFinishInfo| { &m.LBLELCPPLCI },
-            |m: &mut RogueFinishInfo| { &mut m.LBLELCPPLCI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ANBFGOKNEIA",
-            |m: &RogueFinishInfo| { &m.ANBFGOKNEIA },
-            |m: &mut RogueFinishInfo| { &mut m.ANBFGOKNEIA },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueScoreRewardInfo::RogueScoreRewardInfo>(
             "score_reward_info",
             |m: &RogueFinishInfo| { &m.score_reward_info },
@@ -128,25 +91,20 @@ impl RogueFinishInfo {
             |m: &RogueFinishInfo| { &m.is_win },
             |m: &mut RogueFinishInfo| { &mut m.is_win },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "IPNGMMIOJJB",
-            |m: &RogueFinishInfo| { &m.IPNGMMIOJJB },
-            |m: &mut RogueFinishInfo| { &mut m.IPNGMMIOJJB },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "reach_room_count",
             |m: &RogueFinishInfo| { &m.reach_room_count },
             |m: &mut RogueFinishInfo| { &mut m.reach_room_count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BCKPHBOPCCN",
-            |m: &RogueFinishInfo| { &m.BCKPHBOPCCN },
-            |m: &mut RogueFinishInfo| { &mut m.BCKPHBOPCCN },
+            "pass_room_count",
+            |m: &RogueFinishInfo| { &m.pass_room_count },
+            |m: &mut RogueFinishInfo| { &mut m.pass_room_count },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "ICOCLPBLFNN",
-            |m: &RogueFinishInfo| { &m.ICOCLPBLFNN },
-            |m: &mut RogueFinishInfo| { &mut m.ICOCLPBLFNN },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "taken_score",
+            |m: &RogueFinishInfo| { &m.taken_score },
+            |m: &mut RogueFinishInfo| { &mut m.taken_score },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "total_score",
@@ -171,47 +129,29 @@ impl ::protobuf::Message for RogueFinishInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.pass_room_count = is.read_uint32()?;
-                },
-                16 => {
-                    self.BFCBHPCPAOI = is.read_bool()?;
-                },
-                82 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cur_score_reward_info)?;
                 },
                 2080 => {
                     self.area_id = is.read_uint32()?;
                 },
-                122 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.record_info)?;
                 },
-                48 => {
-                    self.taken_score = is.read_uint32()?;
-                },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LBLELCPPLCI)?;
-                },
-                32 => {
-                    self.ANBFGOKNEIA = is.read_uint32()?;
-                },
-                42 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.score_reward_info)?;
                 },
-                72 => {
+                64 => {
                     self.is_win = is.read_bool()?;
                 },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IPNGMMIOJJB)?;
-                },
-                2168 => {
+                5456 => {
                     self.reach_room_count = is.read_uint32()?;
                 },
-                64 => {
-                    self.BCKPHBOPCCN = is.read_uint32()?;
+                32 => {
+                    self.pass_room_count = is.read_uint32()?;
                 },
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ICOCLPBLFNN)?;
+                80 => {
+                    self.taken_score = is.read_uint32()?;
                 },
                 8 => {
                     self.total_score = is.read_uint32()?;
@@ -228,12 +168,6 @@ impl ::protobuf::Message for RogueFinishInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.pass_room_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.pass_room_count);
-        }
-        if self.BFCBHPCPAOI != false {
-            my_size += 1 + 1;
-        }
         if let Some(v) = self.cur_score_reward_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -245,16 +179,6 @@ impl ::protobuf::Message for RogueFinishInfo {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.taken_score != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.taken_score);
-        }
-        if let Some(v) = self.LBLELCPPLCI.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.ANBFGOKNEIA != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.ANBFGOKNEIA);
-        }
         if let Some(v) = self.score_reward_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -262,19 +186,14 @@ impl ::protobuf::Message for RogueFinishInfo {
         if self.is_win != false {
             my_size += 1 + 1;
         }
-        if let Some(v) = self.IPNGMMIOJJB.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if self.reach_room_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(271, self.reach_room_count);
+            my_size += ::protobuf::rt::uint32_size(682, self.reach_room_count);
         }
-        if self.BCKPHBOPCCN != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.BCKPHBOPCCN);
+        if self.pass_room_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.pass_room_count);
         }
-        if let Some(v) = self.ICOCLPBLFNN.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.taken_score != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.taken_score);
         }
         if self.total_score != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.total_score);
@@ -285,47 +204,29 @@ impl ::protobuf::Message for RogueFinishInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.pass_room_count != 0 {
-            os.write_uint32(12, self.pass_room_count)?;
-        }
-        if self.BFCBHPCPAOI != false {
-            os.write_bool(2, self.BFCBHPCPAOI)?;
-        }
         if let Some(v) = self.cur_score_reward_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if self.area_id != 0 {
             os.write_uint32(260, self.area_id)?;
         }
         if let Some(v) = self.record_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        }
-        if self.taken_score != 0 {
-            os.write_uint32(6, self.taken_score)?;
-        }
-        if let Some(v) = self.LBLELCPPLCI.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
-        if self.ANBFGOKNEIA != 0 {
-            os.write_uint32(4, self.ANBFGOKNEIA)?;
-        }
         if let Some(v) = self.score_reward_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if self.is_win != false {
-            os.write_bool(9, self.is_win)?;
-        }
-        if let Some(v) = self.IPNGMMIOJJB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            os.write_bool(8, self.is_win)?;
         }
         if self.reach_room_count != 0 {
-            os.write_uint32(271, self.reach_room_count)?;
+            os.write_uint32(682, self.reach_room_count)?;
         }
-        if self.BCKPHBOPCCN != 0 {
-            os.write_uint32(8, self.BCKPHBOPCCN)?;
+        if self.pass_room_count != 0 {
+            os.write_uint32(4, self.pass_room_count)?;
         }
-        if let Some(v) = self.ICOCLPBLFNN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if self.taken_score != 0 {
+            os.write_uint32(10, self.taken_score)?;
         }
         if self.total_score != 0 {
             os.write_uint32(1, self.total_score)?;
@@ -347,40 +248,28 @@ impl ::protobuf::Message for RogueFinishInfo {
     }
 
     fn clear(&mut self) {
-        self.pass_room_count = 0;
-        self.BFCBHPCPAOI = false;
         self.cur_score_reward_info.clear();
         self.area_id = 0;
         self.record_info.clear();
-        self.taken_score = 0;
-        self.LBLELCPPLCI.clear();
-        self.ANBFGOKNEIA = 0;
         self.score_reward_info.clear();
         self.is_win = false;
-        self.IPNGMMIOJJB.clear();
         self.reach_room_count = 0;
-        self.BCKPHBOPCCN = 0;
-        self.ICOCLPBLFNN.clear();
+        self.pass_room_count = 0;
+        self.taken_score = 0;
         self.total_score = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueFinishInfo {
         static instance: RogueFinishInfo = RogueFinishInfo {
-            pass_room_count: 0,
-            BFCBHPCPAOI: false,
             cur_score_reward_info: ::protobuf::MessageField::none(),
             area_id: 0,
             record_info: ::protobuf::MessageField::none(),
-            taken_score: 0,
-            LBLELCPPLCI: ::protobuf::MessageField::none(),
-            ANBFGOKNEIA: 0,
             score_reward_info: ::protobuf::MessageField::none(),
             is_win: false,
-            IPNGMMIOJJB: ::protobuf::MessageField::none(),
             reach_room_count: 0,
-            BCKPHBOPCCN: 0,
-            ICOCLPBLFNN: ::protobuf::MessageField::none(),
+            pass_room_count: 0,
+            taken_score: 0,
             total_score: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -407,22 +296,17 @@ impl ::protobuf::reflect::ProtobufValue for RogueFinishInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15RogueFinishInfo.proto\x1a\x1aRogueScoreRewardInfo.proto\x1a\x15Rog\
-    ueRecordInfo.proto\x1a\x0eItemList.proto\"\x84\x05\n\x0fRogueFinishInfo\
-    \x12&\n\x0fpass_room_count\x18\x0c\x20\x01(\rR\rpassRoomCount\x12\x20\n\
-    \x0bBFCBHPCPAOI\x18\x02\x20\x01(\x08R\x0bBFCBHPCPAOI\x12H\n\x15cur_score\
-    _reward_info\x18\n\x20\x01(\x0b2\x15.RogueScoreRewardInfoR\x12curScoreRe\
-    wardInfo\x12\x18\n\x07area_id\x18\x84\x02\x20\x01(\rR\x06areaId\x121\n\
-    \x0brecord_info\x18\x0f\x20\x01(\x0b2\x10.RogueRecordInfoR\nrecordInfo\
-    \x12\x1f\n\x0btaken_score\x18\x06\x20\x01(\rR\ntakenScore\x12+\n\x0bLBLE\
-    LCPPLCI\x18\r\x20\x01(\x0b2\t.ItemListR\x0bLBLELCPPLCI\x12\x20\n\x0bANBF\
-    GOKNEIA\x18\x04\x20\x01(\rR\x0bANBFGOKNEIA\x12A\n\x11score_reward_info\
-    \x18\x05\x20\x01(\x0b2\x15.RogueScoreRewardInfoR\x0fscoreRewardInfo\x12\
-    \x15\n\x06is_win\x18\t\x20\x01(\x08R\x05isWin\x12+\n\x0bIPNGMMIOJJB\x18\
-    \x0e\x20\x01(\x0b2\t.ItemListR\x0bIPNGMMIOJJB\x12)\n\x10reach_room_count\
-    \x18\x8f\x02\x20\x01(\rR\x0ereachRoomCount\x12\x20\n\x0bBCKPHBOPCCN\x18\
-    \x08\x20\x01(\rR\x0bBCKPHBOPCCN\x12+\n\x0bICOCLPBLFNN\x18\x03\x20\x01(\
-    \x0b2\t.ItemListR\x0bICOCLPBLFNN\x12\x1f\n\x0btotal_score\x18\x01\x20\
-    \x01(\rR\ntotalScoreB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    ueRecordInfo.proto\"\x97\x03\n\x0fRogueFinishInfo\x12H\n\x15cur_score_re\
+    ward_info\x18\x0b\x20\x01(\x0b2\x15.RogueScoreRewardInfoR\x12curScoreRew\
+    ardInfo\x12\x18\n\x07area_id\x18\x84\x02\x20\x01(\rR\x06areaId\x121\n\
+    \x0brecord_info\x18\r\x20\x01(\x0b2\x10.RogueRecordInfoR\nrecordInfo\x12\
+    A\n\x11score_reward_info\x18\x0c\x20\x01(\x0b2\x15.RogueScoreRewardInfoR\
+    \x0fscoreRewardInfo\x12\x15\n\x06is_win\x18\x08\x20\x01(\x08R\x05isWin\
+    \x12)\n\x10reach_room_count\x18\xaa\x05\x20\x01(\rR\x0ereachRoomCount\
+    \x12&\n\x0fpass_room_count\x18\x04\x20\x01(\rR\rpassRoomCount\x12\x1f\n\
+    \x0btaken_score\x18\n\x20\x01(\rR\ntakenScore\x12\x1f\n\x0btotal_score\
+    \x18\x01\x20\x01(\rR\ntotalScoreB\x15\n\x13emu.lunarcore.protob\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -439,10 +323,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(3);
+            let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::RogueScoreRewardInfo::file_descriptor().clone());
             deps.push(super::RogueRecordInfo::file_descriptor().clone());
-            deps.push(super::ItemList::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueFinishInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

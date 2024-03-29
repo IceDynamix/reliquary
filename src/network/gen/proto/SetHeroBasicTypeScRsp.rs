@@ -80,10 +80,10 @@ impl ::protobuf::Message for SetHeroBasicTypeScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                48 => {
                     self.basic_type = is.read_enum_or_unknown()?;
                 },
-                16 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -99,10 +99,10 @@ impl ::protobuf::Message for SetHeroBasicTypeScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.basic_type != ::protobuf::EnumOrUnknown::new(super::HeroBasicType::HeroBasicType::None) {
-            my_size += ::protobuf::rt::int32_size(10, self.basic_type.value());
+            my_size += ::protobuf::rt::int32_size(6, self.basic_type.value());
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for SetHeroBasicTypeScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.basic_type != ::protobuf::EnumOrUnknown::new(super::HeroBasicType::HeroBasicType::None) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.basic_type))?;
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.basic_type))?;
         }
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for SetHeroBasicTypeScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bSetHeroBasicTypeScRsp.proto\x1a\x13HeroBasicType.proto\"`\n\x15Set\
-    HeroBasicTypeScRsp\x12-\n\nbasic_type\x18\n\x20\x01(\x0e2\x0e.HeroBasicT\
-    ypeR\tbasicType\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcodeB\x15\
-    \n\x13emu.lunarcore.protob\x06proto3\
+    HeroBasicTypeScRsp\x12-\n\nbasic_type\x18\x06\x20\x01(\x0e2\x0e.HeroBasi\
+    cTypeR\tbasicType\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcodeB\
+    \x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

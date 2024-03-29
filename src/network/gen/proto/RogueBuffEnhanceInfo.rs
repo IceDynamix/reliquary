@@ -31,8 +31,8 @@ pub struct RogueBuffEnhanceInfo {
     // message fields
     // @@protoc_insertion_point(field:RogueBuffEnhanceInfo.item_cost_list)
     pub item_cost_list: ::protobuf::MessageField<super::ItemCostList::ItemCostList>,
-    // @@protoc_insertion_point(field:RogueBuffEnhanceInfo.HNHFMFCDCOC)
-    pub HNHFMFCDCOC: f32,
+    // @@protoc_insertion_point(field:RogueBuffEnhanceInfo.unk_float)
+    pub unk_float: f32,
     // @@protoc_insertion_point(field:RogueBuffEnhanceInfo.buff_id)
     pub buff_id: u32,
     // special fields
@@ -60,9 +60,9 @@ impl RogueBuffEnhanceInfo {
             |m: &mut RogueBuffEnhanceInfo| { &mut m.item_cost_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HNHFMFCDCOC",
-            |m: &RogueBuffEnhanceInfo| { &m.HNHFMFCDCOC },
-            |m: &mut RogueBuffEnhanceInfo| { &mut m.HNHFMFCDCOC },
+            "unk_float",
+            |m: &RogueBuffEnhanceInfo| { &m.unk_float },
+            |m: &mut RogueBuffEnhanceInfo| { &mut m.unk_float },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "buff_id",
@@ -87,13 +87,13 @@ impl ::protobuf::Message for RogueBuffEnhanceInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_cost_list)?;
                 },
-                61 => {
-                    self.HNHFMFCDCOC = is.read_float()?;
+                117 => {
+                    self.unk_float = is.read_float()?;
                 },
-                88 => {
+                72 => {
                     self.buff_id = is.read_uint32()?;
                 },
                 tag => {
@@ -112,11 +112,11 @@ impl ::protobuf::Message for RogueBuffEnhanceInfo {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.HNHFMFCDCOC != 0. {
+        if self.unk_float != 0. {
             my_size += 1 + 4;
         }
         if self.buff_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.buff_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.buff_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,13 +125,13 @@ impl ::protobuf::Message for RogueBuffEnhanceInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.item_cost_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
-        if self.HNHFMFCDCOC != 0. {
-            os.write_float(7, self.HNHFMFCDCOC)?;
+        if self.unk_float != 0. {
+            os.write_float(14, self.unk_float)?;
         }
         if self.buff_id != 0 {
-            os.write_uint32(11, self.buff_id)?;
+            os.write_uint32(9, self.buff_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,7 +151,7 @@ impl ::protobuf::Message for RogueBuffEnhanceInfo {
 
     fn clear(&mut self) {
         self.item_cost_list.clear();
-        self.HNHFMFCDCOC = 0.;
+        self.unk_float = 0.;
         self.buff_id = 0;
         self.special_fields.clear();
     }
@@ -159,7 +159,7 @@ impl ::protobuf::Message for RogueBuffEnhanceInfo {
     fn default_instance() -> &'static RogueBuffEnhanceInfo {
         static instance: RogueBuffEnhanceInfo = RogueBuffEnhanceInfo {
             item_cost_list: ::protobuf::MessageField::none(),
-            HNHFMFCDCOC: 0.,
+            unk_float: 0.,
             buff_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for RogueBuffEnhanceInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aRogueBuffEnhanceInfo.proto\x1a\x12ItemCostList.proto\"\x86\x01\n\
-    \x14RogueBuffEnhanceInfo\x123\n\x0eitem_cost_list\x18\x04\x20\x01(\x0b2\
-    \r.ItemCostListR\x0citemCostList\x12\x20\n\x0bHNHFMFCDCOC\x18\x07\x20\
-    \x01(\x02R\x0bHNHFMFCDCOC\x12\x17\n\x07buff_id\x18\x0b\x20\x01(\rR\x06bu\
-    ffIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x1aRogueBuffEnhanceInfo.proto\x1a\x12ItemCostList.proto\"\x81\x01\n\
+    \x14RogueBuffEnhanceInfo\x123\n\x0eitem_cost_list\x18\x08\x20\x01(\x0b2\
+    \r.ItemCostListR\x0citemCostList\x12\x1b\n\tunk_float\x18\x0e\x20\x01(\
+    \x02R\x08unkFloat\x12\x17\n\x07buff_id\x18\t\x20\x01(\rR\x06buffIdB\x15\
+    \n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

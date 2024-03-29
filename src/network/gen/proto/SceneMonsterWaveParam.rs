@@ -87,10 +87,10 @@ impl ::protobuf::Message for SceneMonsterWaveParam {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                32 => {
                     self.hard_level_group = is.read_uint32()?;
                 },
-                64 => {
+                48 => {
                     self.level = is.read_uint32()?;
                 },
                 80 => {
@@ -109,10 +109,10 @@ impl ::protobuf::Message for SceneMonsterWaveParam {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.hard_level_group != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.hard_level_group);
+            my_size += ::protobuf::rt::uint32_size(4, self.hard_level_group);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.level);
+            my_size += ::protobuf::rt::uint32_size(6, self.level);
         }
         if self.elite_group != 0 {
             my_size += ::protobuf::rt::uint32_size(10, self.elite_group);
@@ -124,10 +124,10 @@ impl ::protobuf::Message for SceneMonsterWaveParam {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.hard_level_group != 0 {
-            os.write_uint32(3, self.hard_level_group)?;
+            os.write_uint32(4, self.hard_level_group)?;
         }
         if self.level != 0 {
-            os.write_uint32(8, self.level)?;
+            os.write_uint32(6, self.level)?;
         }
         if self.elite_group != 0 {
             os.write_uint32(10, self.elite_group)?;
@@ -185,8 +185,8 @@ impl ::protobuf::reflect::ProtobufValue for SceneMonsterWaveParam {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bSceneMonsterWaveParam.proto\"x\n\x15SceneMonsterWaveParam\x12(\n\
-    \x10hard_level_group\x18\x03\x20\x01(\rR\x0ehardLevelGroup\x12\x14\n\x05\
-    level\x18\x08\x20\x01(\rR\x05level\x12\x1f\n\x0belite_group\x18\n\x20\
+    \x10hard_level_group\x18\x04\x20\x01(\rR\x0ehardLevelGroup\x12\x14\n\x05\
+    level\x18\x06\x20\x01(\rR\x05level\x12\x1f\n\x0belite_group\x18\n\x20\
     \x01(\rR\neliteGroupB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

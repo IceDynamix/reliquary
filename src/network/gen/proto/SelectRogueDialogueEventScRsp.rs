@@ -32,7 +32,7 @@ pub struct SelectRogueDialogueEventScRsp {
     // @@protoc_insertion_point(field:SelectRogueDialogueEventScRsp.dialogue_event_id)
     pub dialogue_event_id: u32,
     // @@protoc_insertion_point(field:SelectRogueDialogueEventScRsp.dialogue_result)
-    pub dialogue_result: ::std::vec::Vec<super::DialogueResult::DialogueResult>,
+    pub dialogue_result: ::protobuf::MessageField<super::DialogueResult::DialogueResult>,
     // @@protoc_insertion_point(field:SelectRogueDialogueEventScRsp.event_data)
     pub event_data: ::protobuf::MessageField<super::RogueDialogueEvent::RogueDialogueEvent>,
     // @@protoc_insertion_point(field:SelectRogueDialogueEventScRsp.retcode)
@@ -61,7 +61,7 @@ impl SelectRogueDialogueEventScRsp {
             |m: &SelectRogueDialogueEventScRsp| { &m.dialogue_event_id },
             |m: &mut SelectRogueDialogueEventScRsp| { &mut m.dialogue_event_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DialogueResult::DialogueResult>(
             "dialogue_result",
             |m: &SelectRogueDialogueEventScRsp| { &m.dialogue_result },
             |m: &mut SelectRogueDialogueEventScRsp| { &mut m.dialogue_result },
@@ -94,16 +94,16 @@ impl ::protobuf::Message for SelectRogueDialogueEventScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                32 => {
                     self.dialogue_event_id = is.read_uint32()?;
                 },
-                50 => {
-                    self.dialogue_result.push(is.read_message()?);
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.dialogue_result)?;
                 },
-                114 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.event_data)?;
                 },
-                120 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -119,18 +119,18 @@ impl ::protobuf::Message for SelectRogueDialogueEventScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.dialogue_event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.dialogue_event_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.dialogue_event_id);
         }
-        for value in &self.dialogue_result {
-            let len = value.compute_size();
+        if let Some(v) = self.dialogue_result.as_ref() {
+            let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
+        }
         if let Some(v) = self.event_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -139,16 +139,16 @@ impl ::protobuf::Message for SelectRogueDialogueEventScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.dialogue_event_id != 0 {
-            os.write_uint32(9, self.dialogue_event_id)?;
+            os.write_uint32(4, self.dialogue_event_id)?;
         }
-        for v in &self.dialogue_result {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        };
+        if let Some(v) = self.dialogue_result.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        }
         if let Some(v) = self.event_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -177,7 +177,7 @@ impl ::protobuf::Message for SelectRogueDialogueEventScRsp {
     fn default_instance() -> &'static SelectRogueDialogueEventScRsp {
         static instance: SelectRogueDialogueEventScRsp = SelectRogueDialogueEventScRsp {
             dialogue_event_id: 0,
-            dialogue_result: ::std::vec::Vec::new(),
+            dialogue_result: ::protobuf::MessageField::none(),
             event_data: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -206,10 +206,10 @@ impl ::protobuf::reflect::ProtobufValue for SelectRogueDialogueEventScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#SelectRogueDialogueEventScRsp.proto\x1a\x18RogueDialogueEvent.proto\
     \x1a\x14DialogueResult.proto\"\xd3\x01\n\x1dSelectRogueDialogueEventScRs\
-    p\x12*\n\x11dialogue_event_id\x18\t\x20\x01(\rR\x0fdialogueEventId\x128\
-    \n\x0fdialogue_result\x18\x06\x20\x03(\x0b2\x0f.DialogueResultR\x0edialo\
-    gueResult\x122\n\nevent_data\x18\x0e\x20\x01(\x0b2\x13.RogueDialogueEven\
-    tR\teventData\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcodeB\x15\n\
+    p\x12*\n\x11dialogue_event_id\x18\x04\x20\x01(\rR\x0fdialogueEventId\x12\
+    8\n\x0fdialogue_result\x18\x08\x20\x01(\x0b2\x0f.DialogueResultR\x0edial\
+    ogueResult\x122\n\nevent_data\x18\n\x20\x01(\x0b2\x13.RogueDialogueEvent\
+    R\teventData\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcodeB\x15\n\
     \x13emu.lunarcore.protob\x06proto3\
 ";
 

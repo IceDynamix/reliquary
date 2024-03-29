@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueCommonBuff {
     // message fields
-    // @@protoc_insertion_point(field:RogueCommonBuff.level)
-    pub level: u32,
+    // @@protoc_insertion_point(field:RogueCommonBuff.buff_level)
+    pub buff_level: u32,
     // @@protoc_insertion_point(field:RogueCommonBuff.buff_id)
     pub buff_id: u32,
     // special fields
@@ -53,9 +53,9 @@ impl RogueCommonBuff {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &RogueCommonBuff| { &m.level },
-            |m: &mut RogueCommonBuff| { &mut m.level },
+            "buff_level",
+            |m: &RogueCommonBuff| { &m.buff_level },
+            |m: &mut RogueCommonBuff| { &mut m.buff_level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "buff_id",
@@ -80,8 +80,8 @@ impl ::protobuf::Message for RogueCommonBuff {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.level = is.read_uint32()?;
+                16 => {
+                    self.buff_level = is.read_uint32()?;
                 },
                 40 => {
                     self.buff_id = is.read_uint32()?;
@@ -98,8 +98,8 @@ impl ::protobuf::Message for RogueCommonBuff {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.level);
+        if self.buff_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.buff_level);
         }
         if self.buff_id != 0 {
             my_size += ::protobuf::rt::uint32_size(5, self.buff_id);
@@ -110,8 +110,8 @@ impl ::protobuf::Message for RogueCommonBuff {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.level != 0 {
-            os.write_uint32(9, self.level)?;
+        if self.buff_level != 0 {
+            os.write_uint32(2, self.buff_level)?;
         }
         if self.buff_id != 0 {
             os.write_uint32(5, self.buff_id)?;
@@ -133,14 +133,14 @@ impl ::protobuf::Message for RogueCommonBuff {
     }
 
     fn clear(&mut self) {
-        self.level = 0;
+        self.buff_level = 0;
         self.buff_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueCommonBuff {
         static instance: RogueCommonBuff = RogueCommonBuff {
-            level: 0,
+            buff_level: 0,
             buff_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueCommonBuff {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15RogueCommonBuff.proto\"@\n\x0fRogueCommonBuff\x12\x14\n\x05level\
-    \x18\t\x20\x01(\rR\x05level\x12\x17\n\x07buff_id\x18\x05\x20\x01(\rR\x06\
-    buffIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x15RogueCommonBuff.proto\"I\n\x0fRogueCommonBuff\x12\x1d\n\nbuff_leve\
+    l\x18\x02\x20\x01(\rR\tbuffLevel\x12\x17\n\x07buff_id\x18\x05\x20\x01(\r\
+    R\x06buffIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

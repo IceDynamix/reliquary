@@ -31,8 +31,8 @@ pub struct LockEquipmentCsReq {
     // message fields
     // @@protoc_insertion_point(field:LockEquipmentCsReq.is_protected)
     pub is_protected: bool,
-    // @@protoc_insertion_point(field:LockEquipmentCsReq.equipment_unique_id)
-    pub equipment_unique_id: u32,
+    // @@protoc_insertion_point(field:LockEquipmentCsReq.equipment_id_list)
+    pub equipment_id_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:LockEquipmentCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,10 +57,10 @@ impl LockEquipmentCsReq {
             |m: &LockEquipmentCsReq| { &m.is_protected },
             |m: &mut LockEquipmentCsReq| { &mut m.is_protected },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "equipment_unique_id",
-            |m: &LockEquipmentCsReq| { &m.equipment_unique_id },
-            |m: &mut LockEquipmentCsReq| { &mut m.equipment_unique_id },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "equipment_id_list",
+            |m: &LockEquipmentCsReq| { &m.equipment_id_list },
+            |m: &mut LockEquipmentCsReq| { &mut m.equipment_id_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LockEquipmentCsReq>(
             "LockEquipmentCsReq",
@@ -80,11 +80,14 @@ impl ::protobuf::Message for LockEquipmentCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                8 => {
                     self.is_protected = is.read_bool()?;
                 },
-                32 => {
-                    self.equipment_unique_id = is.read_uint32()?;
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.equipment_id_list)?;
+                },
+                64 => {
+                    self.equipment_id_list.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,9 +104,9 @@ impl ::protobuf::Message for LockEquipmentCsReq {
         if self.is_protected != false {
             my_size += 1 + 1;
         }
-        if self.equipment_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.equipment_unique_id);
-        }
+        for value in &self.equipment_id_list {
+            my_size += ::protobuf::rt::uint32_size(8, *value);
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -111,11 +114,11 @@ impl ::protobuf::Message for LockEquipmentCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.is_protected != false {
-            os.write_bool(11, self.is_protected)?;
+            os.write_bool(1, self.is_protected)?;
         }
-        if self.equipment_unique_id != 0 {
-            os.write_uint32(4, self.equipment_unique_id)?;
-        }
+        for v in &self.equipment_id_list {
+            os.write_uint32(8, *v)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -134,14 +137,14 @@ impl ::protobuf::Message for LockEquipmentCsReq {
 
     fn clear(&mut self) {
         self.is_protected = false;
-        self.equipment_unique_id = 0;
+        self.equipment_id_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LockEquipmentCsReq {
         static instance: LockEquipmentCsReq = LockEquipmentCsReq {
             is_protected: false,
-            equipment_unique_id: 0,
+            equipment_id_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +169,10 @@ impl ::protobuf::reflect::ProtobufValue for LockEquipmentCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18LockEquipmentCsReq.proto\"g\n\x12LockEquipmentCsReq\x12!\n\x0cis_p\
-    rotected\x18\x0b\x20\x01(\x08R\x0bisProtected\x12.\n\x13equipment_unique\
-    _id\x18\x04\x20\x01(\rR\x11equipmentUniqueIdB\x15\n\x13emu.lunarcore.pro\
-    tob\x06proto3\
+    \n\x18LockEquipmentCsReq.proto\"c\n\x12LockEquipmentCsReq\x12!\n\x0cis_p\
+    rotected\x18\x01\x20\x01(\x08R\x0bisProtected\x12*\n\x11equipment_id_lis\
+    t\x18\x08\x20\x03(\rR\x0fequipmentIdListB\x15\n\x13emu.lunarcore.protob\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

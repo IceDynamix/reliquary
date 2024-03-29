@@ -80,10 +80,10 @@ impl ::protobuf::Message for Material {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                16 => {
                     self.tid = is.read_uint32()?;
                 },
-                32 => {
+                48 => {
                     self.num = is.read_uint32()?;
                 },
                 tag => {
@@ -99,10 +99,10 @@ impl ::protobuf::Message for Material {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.tid != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.tid);
+            my_size += ::protobuf::rt::uint32_size(2, self.tid);
         }
         if self.num != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.num);
+            my_size += ::protobuf::rt::uint32_size(6, self.num);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for Material {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.tid != 0 {
-            os.write_uint32(10, self.tid)?;
+            os.write_uint32(2, self.tid)?;
         }
         if self.num != 0 {
-            os.write_uint32(4, self.num)?;
+            os.write_uint32(6, self.num)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for Material {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0eMaterial.proto\".\n\x08Material\x12\x10\n\x03tid\x18\n\x20\x01(\rR\
-    \x03tid\x12\x10\n\x03num\x18\x04\x20\x01(\rR\x03numB\x15\n\x13emu.lunarc\
-    ore.protob\x06proto3\
+    \n\x0eMaterial.proto\".\n\x08Material\x12\x10\n\x03tid\x18\x02\x20\x01(\
+    \rR\x03tid\x12\x10\n\x03num\x18\x06\x20\x01(\rR\x03numB\x15\n\x13emu.lun\
+    arcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

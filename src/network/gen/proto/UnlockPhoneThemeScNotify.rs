@@ -73,7 +73,7 @@ impl ::protobuf::Message for UnlockPhoneThemeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                16 => {
                     self.theme_id = is.read_uint32()?;
                 },
                 tag => {
@@ -89,7 +89,7 @@ impl ::protobuf::Message for UnlockPhoneThemeScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.theme_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.theme_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.theme_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -98,7 +98,7 @@ impl ::protobuf::Message for UnlockPhoneThemeScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.theme_id != 0 {
-            os.write_uint32(4, self.theme_id)?;
+            os.write_uint32(2, self.theme_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for UnlockPhoneThemeScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eUnlockPhoneThemeScNotify.proto\"5\n\x18UnlockPhoneThemeScNotify\
-    \x12\x19\n\x08theme_id\x18\x04\x20\x01(\rR\x07themeIdB\x15\n\x13emu.luna\
+    \x12\x19\n\x08theme_id\x18\x02\x20\x01(\rR\x07themeIdB\x15\n\x13emu.luna\
     rcore.protob\x06proto3\
 ";
 

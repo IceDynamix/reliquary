@@ -83,7 +83,7 @@ impl ::protobuf::Message for RogueAeon {
                 96 => {
                     self.is_unlock_enhance_buff = is.read_bool()?;
                 },
-                80 => {
+                120 => {
                     self.aeon_id = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for RogueAeon {
             my_size += 1 + 1;
         }
         if self.aeon_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.aeon_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.aeon_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -114,7 +114,7 @@ impl ::protobuf::Message for RogueAeon {
             os.write_bool(12, self.is_unlock_enhance_buff)?;
         }
         if self.aeon_id != 0 {
-            os.write_uint32(10, self.aeon_id)?;
+            os.write_uint32(15, self.aeon_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueAeon {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0fRogueAeon.proto\"Y\n\tRogueAeon\x123\n\x16is_unlock_enhance_buff\
-    \x18\x0c\x20\x01(\x08R\x13isUnlockEnhanceBuff\x12\x17\n\x07aeon_id\x18\n\
-    \x20\x01(\rR\x06aeonIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \x18\x0c\x20\x01(\x08R\x13isUnlockEnhanceBuff\x12\x17\n\x07aeon_id\x18\
+    \x0f\x20\x01(\rR\x06aeonIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
