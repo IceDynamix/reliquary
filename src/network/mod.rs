@@ -43,9 +43,12 @@
 //!
 
 use std::collections::HashMap;
+use std::fmt;
 use std::fmt::Write;
 
-use tracing::{debug, info, info_span, instrument, warn};
+use base64::prelude::BASE64_STANDARD;
+use base64::Engine;
+use tracing::{debug, info, info_span, instrument, trace, warn};
 
 use gen::command_id;
 
@@ -56,18 +59,17 @@ use crate::network::gen::proto::PlayerGetTokenScRsp::PlayerGetTokenScRsp;
 use crate::network::kcp::KcpSniffer;
 
 fn bytes_as_hex(bytes: &[u8]) -> String {
-    bytes.iter()
-        .fold(String::new(), |mut output, b| {
-            let _ = write!(output, "{b:02x}");
-            output
-        })
+    bytes.iter().fold(String::new(), |mut output, b| {
+        let _ = write!(output, "{b:02x}");
+        output
+    })
 }
 
 pub mod gen;
 
 mod connection;
-mod kcp;
 mod crypto;
+mod kcp;
 
 const PORTS: [u16; 2] = [23301, 23302];
 
@@ -99,7 +101,7 @@ pub enum ConnectionPacket {
 /// |   8..12     |  `u32`  |  data_len |
 /// |  12..12+data_len |  variable  |  proto_data |
 /// | data_len..data_len+4  |  `u32`  |  Tail (magic constant) |
-#[derive(Debug, Clone)]
+#[derive(Clone)]
 pub struct GameCommand {
     pub command_id: u16,
     #[allow(unused)]
@@ -117,7 +119,7 @@ impl GameCommand {
     pub fn try_new(bytes: Vec<u8>) -> Option<Self> {
         let header_overhead = Self::HEADER_LEN + Self::TAIL_LEN;
         if bytes.len() < header_overhead {
-            warn!(len=bytes.len(), "game command header incomplete");
+            warn!(len = bytes.len(), "game command header incomplete");
             return None;
         }
 
@@ -141,6 +143,17 @@ impl GameCommand {
 
     pub fn parse_proto<T: protobuf::Message>(&self) -> protobuf::Result<T> {
         T::parse_from_bytes(&self.proto_data)
+    }
+}
+
+impl fmt::Debug for GameCommand {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        f.debug_struct("GameCommand")
+            .field("command_id", &self.command_id)
+            .field("command_name", &self.get_command_name())
+            .field("header_len", &self.header_len)
+            .field("data_len", &self.data_len)
+            .finish()
     }
 }
 
@@ -179,29 +192,30 @@ impl GameSniffer {
                 self.key = None;
                 Some(GamePacket::Connection(packet))
             }
-            ConnectionPacket::HandshakeEstablished
-            | ConnectionPacket::Disconnected => {
+            ConnectionPacket::HandshakeEstablished | ConnectionPacket::Disconnected => {
                 Some(GamePacket::Connection(packet))
             }
 
             ConnectionPacket::SegmentData(direction, kcp_seg) => {
                 let commands = self.receive_kcp_segment(direction, &kcp_seg);
                 match commands {
-                    Some(commands) => {
-                        Some(GamePacket::Commands(commands))
-                    }
-                    None => {
-                        Some(GamePacket::Connection(ConnectionPacket::SegmentData(direction, kcp_seg)))
-                    }
+                    Some(commands) => Some(GamePacket::Commands(commands)),
+                    None => Some(GamePacket::Connection(ConnectionPacket::SegmentData(
+                        direction, kcp_seg,
+                    ))),
                 }
             }
         }
     }
 
-    fn receive_kcp_segment(&mut self, direction: PacketDirection, kcp_seg: &[u8]) -> Option<Vec<GameCommand>> {
+    fn receive_kcp_segment(
+        &mut self,
+        direction: PacketDirection,
+        kcp_seg: &[u8],
+    ) -> Option<Vec<GameCommand>> {
         let kcp = match direction {
             PacketDirection::Sent => &mut self.sent_kcp,
-            PacketDirection::Received => &mut self.recv_kcp
+            PacketDirection::Received => &mut self.recv_kcp,
         };
 
         if let None = kcp {
@@ -210,7 +224,8 @@ impl GameSniffer {
         }
 
         if let Some(kcp) = kcp {
-            let commands = kcp.receive_segments(kcp_seg)
+            let commands = kcp
+                .receive_segments(kcp_seg)
                 .into_iter()
                 .filter_map(|data| self.receive_command(data))
                 .collect();
@@ -224,7 +239,7 @@ impl GameSniffer {
     #[instrument(skip_all, fields(len = data.len()))]
     fn receive_command(&mut self, mut data: Vec<u8>) -> Option<GameCommand> {
         let key = match &self.key {
-            Some(k) => { k }
+            Some(k) => k,
             None => {
                 self.key = Some(lookup_initial_key(&self.initial_keys, &data));
                 self.key.as_ref().unwrap()
@@ -234,26 +249,25 @@ impl GameSniffer {
         decrypt_command(key, &mut data);
 
         let command = GameCommand::try_new(data)?;
-        match command.get_command_name() {
-            Some(command_name) => {
-                let span = info_span!("command", command_name);
-                let _enter = span.enter();
 
-                info!("received");
+        let span = info_span!("command", ?command);
+        let _enter = span.enter();
 
-                if command.command_id == command_id::PlayerGetTokenScRsp {
-                    let token_command = command.parse_proto::<PlayerGetTokenScRsp>().unwrap();
-                    let seed = token_command.secret_key_seed;
-                    info!(?seed, "setting new session key");
-                    self.key = Some(new_key_from_seed(seed));
-                }
+        info!("received");
+        trace!(data = BASE64_STANDARD.encode(&command.proto_data), "data");
 
-                Some(command)
-            }
-            None => {
-                debug!(command.command_id, "undefined");
-                None
-            }
+        if command.get_command_name().is_none() {
+            debug!("unknown command");
+            return None;
         }
+
+        if command.command_id == command_id::PlayerGetTokenScRsp {
+            let token_command = command.parse_proto::<PlayerGetTokenScRsp>().unwrap();
+            let seed = token_command.secret_key_seed;
+            info!(?seed, "setting new session key");
+            self.key = Some(new_key_from_seed(seed));
+        }
+
+        Some(command)
     }
 }
