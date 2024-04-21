@@ -128,7 +128,9 @@ impl GameCommand {
         let header_len = u16::from_be_bytes(bytes[6..8].try_into().unwrap());
         let data_len = u32::from_be_bytes(bytes[8..12].try_into().unwrap());
 
-        let data = bytes[12..12 + data_len as usize].to_vec();
+        // header has uid and other information, but we can ignore it and read data
+        let data_start = Self::HEADER_LEN + usize::try_from(header_len).unwrap();
+        let data = bytes[data_start..data_start + data_len as usize].to_vec();
         Some(GameCommand {
             command_id,
             header_len,
