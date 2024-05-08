@@ -80,10 +80,10 @@ impl ::protobuf::Message for ChessRogueAvatarInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.revive_cost)?;
                 },
-                26 => {
+                42 => {
                     self.chess_rogue_avatar.push(is.read_message()?);
                 },
                 tag => {
@@ -113,10 +113,10 @@ impl ::protobuf::Message for ChessRogueAvatarInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.revive_cost.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         for v in &self.chess_rogue_avatar {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -170,8 +170,8 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueAvatarInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aChessRogueAvatarInfo.proto\x1a\x16ChessRogueAvatar.proto\x1a\x1bRo\
     gueAvatarReviveCost.proto\"\x90\x01\n\x14ChessRogueAvatarInfo\x127\n\x0b\
-    revive_cost\x18\x0f\x20\x01(\x0b2\x16.RogueAvatarReviveCostR\nreviveCost\
-    \x12?\n\x12chess_rogue_avatar\x18\x03\x20\x03(\x0b2\x11.ChessRogueAvatar\
+    revive_cost\x18\x03\x20\x01(\x0b2\x16.RogueAvatarReviveCostR\nreviveCost\
+    \x12?\n\x12chess_rogue_avatar\x18\x05\x20\x03(\x0b2\x11.ChessRogueAvatar\
     R\x10chessRogueAvatarB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

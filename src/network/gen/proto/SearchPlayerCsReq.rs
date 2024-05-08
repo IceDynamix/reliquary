@@ -73,10 +73,10 @@ impl ::protobuf::Message for SearchPlayerCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.search_uid_list)?;
                 },
-                104 => {
+                8 => {
                     self.search_uid_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -92,7 +92,7 @@ impl ::protobuf::Message for SearchPlayerCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         for value in &self.search_uid_list {
-            my_size += ::protobuf::rt::uint32_size(13, *value);
+            my_size += ::protobuf::rt::uint32_size(1, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -101,7 +101,7 @@ impl ::protobuf::Message for SearchPlayerCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.search_uid_list {
-            os.write_uint32(13, *v)?;
+            os.write_uint32(1, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -152,8 +152,8 @@ impl ::protobuf::reflect::ProtobufValue for SearchPlayerCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17SearchPlayerCsReq.proto\";\n\x11SearchPlayerCsReq\x12&\n\x0fsearch\
-    _uid_list\x18\r\x20\x03(\rR\rsearchUidListB\x15\n\x13emu.lunarcore.proto\
-    b\x06proto3\
+    _uid_list\x18\x01\x20\x03(\rR\rsearchUidListB\x15\n\x13emu.lunarcore.pro\
+    tob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

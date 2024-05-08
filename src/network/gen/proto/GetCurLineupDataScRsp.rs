@@ -83,7 +83,7 @@ impl ::protobuf::Message for GetCurLineupDataScRsp {
                 16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                10 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
                 tag => {
@@ -115,7 +115,7 @@ impl ::protobuf::Message for GetCurLineupDataScRsp {
             os.write_uint32(2, self.retcode)?;
         }
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,7 +169,7 @@ impl ::protobuf::reflect::ProtobufValue for GetCurLineupDataScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bGetCurLineupDataScRsp.proto\x1a\x10LineupInfo.proto\"V\n\x15GetCur\
     LineupDataScRsp\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12#\
-    \n\x06lineup\x18\x01\x20\x01(\x0b2\x0b.LineupInfoR\x06lineupB\x15\n\x13e\
+    \n\x06lineup\x18\x07\x20\x01(\x0b2\x0b.LineupInfoR\x06lineupB\x15\n\x13e\
     mu.lunarcore.protob\x06proto3\
 ";
 

@@ -35,8 +35,8 @@ pub struct RogueDialogueEvent {
     pub game_mode_type: u32,
     // @@protoc_insertion_point(field:RogueDialogueEvent.MBNBIEJIBFJ)
     pub MBNBIEJIBFJ: u32,
-    // @@protoc_insertion_point(field:RogueDialogueEvent.KKCPLMGIADL)
-    pub KKCPLMGIADL: u32,
+    // @@protoc_insertion_point(field:RogueDialogueEvent.dialogue_group_id)
+    pub dialogue_group_id: u32,
     // @@protoc_insertion_point(field:RogueDialogueEvent.select_event_id)
     pub select_event_id: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:RogueDialogueEvent.rogue_dialogue_event_param)
@@ -76,9 +76,9 @@ impl RogueDialogueEvent {
             |m: &mut RogueDialogueEvent| { &mut m.MBNBIEJIBFJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KKCPLMGIADL",
-            |m: &RogueDialogueEvent| { &m.KKCPLMGIADL },
-            |m: &mut RogueDialogueEvent| { &mut m.KKCPLMGIADL },
+            "dialogue_group_id",
+            |m: &RogueDialogueEvent| { &m.dialogue_group_id },
+            |m: &mut RogueDialogueEvent| { &mut m.dialogue_group_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "select_event_id",
@@ -108,25 +108,25 @@ impl ::protobuf::Message for RogueDialogueEvent {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                8 => {
                     self.npc_id = is.read_uint32()?;
                 },
-                16 => {
+                48 => {
                     self.game_mode_type = is.read_uint32()?;
                 },
                 104 => {
                     self.MBNBIEJIBFJ = is.read_uint32()?;
                 },
-                8 => {
-                    self.KKCPLMGIADL = is.read_uint32()?;
+                40 => {
+                    self.dialogue_group_id = is.read_uint32()?;
                 },
-                122 => {
+                90 => {
                     is.read_repeated_packed_uint32_into(&mut self.select_event_id)?;
                 },
-                120 => {
+                88 => {
                     self.select_event_id.push(is.read_uint32()?);
                 },
-                98 => {
+                74 => {
                     self.rogue_dialogue_event_param.push(is.read_message()?);
                 },
                 tag => {
@@ -142,19 +142,19 @@ impl ::protobuf::Message for RogueDialogueEvent {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.npc_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.npc_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.npc_id);
         }
         if self.game_mode_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.game_mode_type);
+            my_size += ::protobuf::rt::uint32_size(6, self.game_mode_type);
         }
         if self.MBNBIEJIBFJ != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.MBNBIEJIBFJ);
         }
-        if self.KKCPLMGIADL != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.KKCPLMGIADL);
+        if self.dialogue_group_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.dialogue_group_id);
         }
         for value in &self.select_event_id {
-            my_size += ::protobuf::rt::uint32_size(15, *value);
+            my_size += ::protobuf::rt::uint32_size(11, *value);
         };
         for value in &self.rogue_dialogue_event_param {
             let len = value.compute_size();
@@ -167,22 +167,22 @@ impl ::protobuf::Message for RogueDialogueEvent {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.npc_id != 0 {
-            os.write_uint32(10, self.npc_id)?;
+            os.write_uint32(1, self.npc_id)?;
         }
         if self.game_mode_type != 0 {
-            os.write_uint32(2, self.game_mode_type)?;
+            os.write_uint32(6, self.game_mode_type)?;
         }
         if self.MBNBIEJIBFJ != 0 {
             os.write_uint32(13, self.MBNBIEJIBFJ)?;
         }
-        if self.KKCPLMGIADL != 0 {
-            os.write_uint32(1, self.KKCPLMGIADL)?;
+        if self.dialogue_group_id != 0 {
+            os.write_uint32(5, self.dialogue_group_id)?;
         }
         for v in &self.select_event_id {
-            os.write_uint32(15, *v)?;
+            os.write_uint32(11, *v)?;
         };
         for v in &self.rogue_dialogue_event_param {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -204,7 +204,7 @@ impl ::protobuf::Message for RogueDialogueEvent {
         self.npc_id = 0;
         self.game_mode_type = 0;
         self.MBNBIEJIBFJ = 0;
-        self.KKCPLMGIADL = 0;
+        self.dialogue_group_id = 0;
         self.select_event_id.clear();
         self.rogue_dialogue_event_param.clear();
         self.special_fields.clear();
@@ -215,7 +215,7 @@ impl ::protobuf::Message for RogueDialogueEvent {
             npc_id: 0,
             game_mode_type: 0,
             MBNBIEJIBFJ: 0,
-            KKCPLMGIADL: 0,
+            dialogue_group_id: 0,
             select_event_id: ::std::vec::Vec::new(),
             rogue_dialogue_event_param: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -243,13 +243,13 @@ impl ::protobuf::reflect::ProtobufValue for RogueDialogueEvent {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18RogueDialogueEvent.proto\x1a\x1dRogueDialogueEventParam.proto\"\
-    \x94\x02\n\x12RogueDialogueEvent\x12\x15\n\x06npc_id\x18\n\x20\x01(\rR\
-    \x05npcId\x12$\n\x0egame_mode_type\x18\x02\x20\x01(\rR\x0cgameModeType\
-    \x12\x20\n\x0bMBNBIEJIBFJ\x18\r\x20\x01(\rR\x0bMBNBIEJIBFJ\x12\x20\n\x0b\
-    KKCPLMGIADL\x18\x01\x20\x01(\rR\x0bKKCPLMGIADL\x12&\n\x0fselect_event_id\
-    \x18\x0f\x20\x03(\rR\rselectEventId\x12U\n\x1arogue_dialogue_event_param\
-    \x18\x0c\x20\x03(\x0b2\x18.RogueDialogueEventParamR\x17rogueDialogueEven\
-    tParamB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \x9e\x02\n\x12RogueDialogueEvent\x12\x15\n\x06npc_id\x18\x01\x20\x01(\rR\
+    \x05npcId\x12$\n\x0egame_mode_type\x18\x06\x20\x01(\rR\x0cgameModeType\
+    \x12\x20\n\x0bMBNBIEJIBFJ\x18\r\x20\x01(\rR\x0bMBNBIEJIBFJ\x12*\n\x11dia\
+    logue_group_id\x18\x05\x20\x01(\rR\x0fdialogueGroupId\x12&\n\x0fselect_e\
+    vent_id\x18\x0b\x20\x03(\rR\rselectEventId\x12U\n\x1arogue_dialogue_even\
+    t_param\x18\t\x20\x03(\x0b2\x18.RogueDialogueEventParamR\x17rogueDialogu\
+    eEventParamB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

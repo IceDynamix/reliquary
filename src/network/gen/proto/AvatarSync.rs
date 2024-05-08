@@ -73,7 +73,7 @@ impl ::protobuf::Message for AvatarSync {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                42 => {
                     self.avatar_list.push(is.read_message()?);
                 },
                 tag => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for AvatarSync {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,8 +150,8 @@ impl ::protobuf::reflect::ProtobufValue for AvatarSync {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x10AvatarSync.proto\x1a\x0cAvatar.proto\"6\n\nAvatarSync\x12(\n\x0bav\
-    atar_list\x18\r\x20\x03(\x0b2\x07.AvatarR\navatarListB\x15\n\x13emu.luna\
-    rcore.protob\x06proto3\
+    atar_list\x18\x05\x20\x03(\x0b2\x07.AvatarR\navatarListB\x15\n\x13emu.lu\
+    narcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

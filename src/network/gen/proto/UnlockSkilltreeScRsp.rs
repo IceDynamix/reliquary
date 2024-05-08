@@ -94,13 +94,13 @@ impl ::protobuf::Message for UnlockSkilltreeScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                8 => {
                     self.base_avatar_id = is.read_uint32()?;
                 },
-                80 => {
+                96 => {
                     self.point_id = is.read_uint32()?;
                 },
-                24 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
                 },
                 72 => {
@@ -119,13 +119,13 @@ impl ::protobuf::Message for UnlockSkilltreeScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.base_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.base_avatar_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.base_avatar_id);
         }
         if self.point_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.point_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.point_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         if self.level != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.level);
@@ -137,13 +137,13 @@ impl ::protobuf::Message for UnlockSkilltreeScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.base_avatar_id != 0 {
-            os.write_uint32(8, self.base_avatar_id)?;
+            os.write_uint32(1, self.base_avatar_id)?;
         }
         if self.point_id != 0 {
-            os.write_uint32(10, self.point_id)?;
+            os.write_uint32(12, self.point_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
         if self.level != 0 {
             os.write_uint32(9, self.level)?;
@@ -203,8 +203,8 @@ impl ::protobuf::reflect::ProtobufValue for UnlockSkilltreeScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aUnlockSkilltreeScRsp.proto\"\x87\x01\n\x14UnlockSkilltreeScRsp\x12\
-    $\n\x0ebase_avatar_id\x18\x08\x20\x01(\rR\x0cbaseAvatarId\x12\x19\n\x08p\
-    oint_id\x18\n\x20\x01(\rR\x07pointId\x12\x18\n\x07retcode\x18\x03\x20\
+    $\n\x0ebase_avatar_id\x18\x01\x20\x01(\rR\x0cbaseAvatarId\x12\x19\n\x08p\
+    oint_id\x18\x0c\x20\x01(\rR\x07pointId\x12\x18\n\x07retcode\x18\x0b\x20\
     \x01(\rR\x07retcode\x12\x14\n\x05level\x18\t\x20\x01(\rR\x05levelB\x15\n\
     \x13emu.lunarcore.protob\x06proto3\
 ";

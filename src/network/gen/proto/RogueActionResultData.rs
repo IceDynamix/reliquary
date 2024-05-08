@@ -28,17 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 // @@protoc_insertion_point(message:RogueActionResultData)
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueActionResultData {
-    // message fields
-    // @@protoc_insertion_point(field:RogueActionResultData.add_item_list)
-    pub add_item_list: ::protobuf::MessageField<super::RogueVirtualItemData::RogueVirtualItemData>,
-    // @@protoc_insertion_point(field:RogueActionResultData.remove_item_list)
-    pub remove_item_list: ::protobuf::MessageField<super::RogueVirtualItemData::RogueVirtualItemData>,
-    // @@protoc_insertion_point(field:RogueActionResultData.add_buff_list)
-    pub add_buff_list: ::protobuf::MessageField<super::RogueBuffData::RogueBuffData>,
-    // @@protoc_insertion_point(field:RogueActionResultData.remove_buff_list)
-    pub remove_buff_list: ::protobuf::MessageField<super::RogueBuffData::RogueBuffData>,
-    // @@protoc_insertion_point(field:RogueActionResultData.add_miracle_list)
-    pub add_miracle_list: ::protobuf::MessageField<super::RogueMiracleData::RogueMiracleData>,
+    // message oneof groups
+    pub result_action: ::std::option::Option<rogue_action_result_data::Result_action>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueActionResultData.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,34 +46,290 @@ impl RogueActionResultData {
         ::std::default::Default::default()
     }
 
+    // .RogueVirtualItemData add_item_list = 11;
+
+    pub fn add_item_list(&self) -> &super::RogueVirtualItemData::RogueVirtualItemData {
+        match self.result_action {
+            ::std::option::Option::Some(rogue_action_result_data::Result_action::AddItemList(ref v)) => v,
+            _ => <super::RogueVirtualItemData::RogueVirtualItemData as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_add_item_list(&mut self) {
+        self.result_action = ::std::option::Option::None;
+    }
+
+    pub fn has_add_item_list(&self) -> bool {
+        match self.result_action {
+            ::std::option::Option::Some(rogue_action_result_data::Result_action::AddItemList(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_add_item_list(&mut self, v: super::RogueVirtualItemData::RogueVirtualItemData) {
+        self.result_action = ::std::option::Option::Some(rogue_action_result_data::Result_action::AddItemList(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_add_item_list(&mut self) -> &mut super::RogueVirtualItemData::RogueVirtualItemData {
+        if let ::std::option::Option::Some(rogue_action_result_data::Result_action::AddItemList(_)) = self.result_action {
+        } else {
+            self.result_action = ::std::option::Option::Some(rogue_action_result_data::Result_action::AddItemList(super::RogueVirtualItemData::RogueVirtualItemData::new()));
+        }
+        match self.result_action {
+            ::std::option::Option::Some(rogue_action_result_data::Result_action::AddItemList(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_add_item_list(&mut self) -> super::RogueVirtualItemData::RogueVirtualItemData {
+        if self.has_add_item_list() {
+            match self.result_action.take() {
+                ::std::option::Option::Some(rogue_action_result_data::Result_action::AddItemList(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::RogueVirtualItemData::RogueVirtualItemData::new()
+        }
+    }
+
+    // .RogueVirtualItemData remove_item_list = 14;
+
+    pub fn remove_item_list(&self) -> &super::RogueVirtualItemData::RogueVirtualItemData {
+        match self.result_action {
+            ::std::option::Option::Some(rogue_action_result_data::Result_action::RemoveItemList(ref v)) => v,
+            _ => <super::RogueVirtualItemData::RogueVirtualItemData as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_remove_item_list(&mut self) {
+        self.result_action = ::std::option::Option::None;
+    }
+
+    pub fn has_remove_item_list(&self) -> bool {
+        match self.result_action {
+            ::std::option::Option::Some(rogue_action_result_data::Result_action::RemoveItemList(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_remove_item_list(&mut self, v: super::RogueVirtualItemData::RogueVirtualItemData) {
+        self.result_action = ::std::option::Option::Some(rogue_action_result_data::Result_action::RemoveItemList(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_remove_item_list(&mut self) -> &mut super::RogueVirtualItemData::RogueVirtualItemData {
+        if let ::std::option::Option::Some(rogue_action_result_data::Result_action::RemoveItemList(_)) = self.result_action {
+        } else {
+            self.result_action = ::std::option::Option::Some(rogue_action_result_data::Result_action::RemoveItemList(super::RogueVirtualItemData::RogueVirtualItemData::new()));
+        }
+        match self.result_action {
+            ::std::option::Option::Some(rogue_action_result_data::Result_action::RemoveItemList(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_remove_item_list(&mut self) -> super::RogueVirtualItemData::RogueVirtualItemData {
+        if self.has_remove_item_list() {
+            match self.result_action.take() {
+                ::std::option::Option::Some(rogue_action_result_data::Result_action::RemoveItemList(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::RogueVirtualItemData::RogueVirtualItemData::new()
+        }
+    }
+
+    // .RogueBuffData add_buff_list = 1586;
+
+    pub fn add_buff_list(&self) -> &super::RogueBuffData::RogueBuffData {
+        match self.result_action {
+            ::std::option::Option::Some(rogue_action_result_data::Result_action::AddBuffList(ref v)) => v,
+            _ => <super::RogueBuffData::RogueBuffData as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_add_buff_list(&mut self) {
+        self.result_action = ::std::option::Option::None;
+    }
+
+    pub fn has_add_buff_list(&self) -> bool {
+        match self.result_action {
+            ::std::option::Option::Some(rogue_action_result_data::Result_action::AddBuffList(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_add_buff_list(&mut self, v: super::RogueBuffData::RogueBuffData) {
+        self.result_action = ::std::option::Option::Some(rogue_action_result_data::Result_action::AddBuffList(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_add_buff_list(&mut self) -> &mut super::RogueBuffData::RogueBuffData {
+        if let ::std::option::Option::Some(rogue_action_result_data::Result_action::AddBuffList(_)) = self.result_action {
+        } else {
+            self.result_action = ::std::option::Option::Some(rogue_action_result_data::Result_action::AddBuffList(super::RogueBuffData::RogueBuffData::new()));
+        }
+        match self.result_action {
+            ::std::option::Option::Some(rogue_action_result_data::Result_action::AddBuffList(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_add_buff_list(&mut self) -> super::RogueBuffData::RogueBuffData {
+        if self.has_add_buff_list() {
+            match self.result_action.take() {
+                ::std::option::Option::Some(rogue_action_result_data::Result_action::AddBuffList(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::RogueBuffData::RogueBuffData::new()
+        }
+    }
+
+    // .RogueBuffData remove_buff_list = 1574;
+
+    pub fn remove_buff_list(&self) -> &super::RogueBuffData::RogueBuffData {
+        match self.result_action {
+            ::std::option::Option::Some(rogue_action_result_data::Result_action::RemoveBuffList(ref v)) => v,
+            _ => <super::RogueBuffData::RogueBuffData as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_remove_buff_list(&mut self) {
+        self.result_action = ::std::option::Option::None;
+    }
+
+    pub fn has_remove_buff_list(&self) -> bool {
+        match self.result_action {
+            ::std::option::Option::Some(rogue_action_result_data::Result_action::RemoveBuffList(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_remove_buff_list(&mut self, v: super::RogueBuffData::RogueBuffData) {
+        self.result_action = ::std::option::Option::Some(rogue_action_result_data::Result_action::RemoveBuffList(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_remove_buff_list(&mut self) -> &mut super::RogueBuffData::RogueBuffData {
+        if let ::std::option::Option::Some(rogue_action_result_data::Result_action::RemoveBuffList(_)) = self.result_action {
+        } else {
+            self.result_action = ::std::option::Option::Some(rogue_action_result_data::Result_action::RemoveBuffList(super::RogueBuffData::RogueBuffData::new()));
+        }
+        match self.result_action {
+            ::std::option::Option::Some(rogue_action_result_data::Result_action::RemoveBuffList(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_remove_buff_list(&mut self) -> super::RogueBuffData::RogueBuffData {
+        if self.has_remove_buff_list() {
+            match self.result_action.take() {
+                ::std::option::Option::Some(rogue_action_result_data::Result_action::RemoveBuffList(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::RogueBuffData::RogueBuffData::new()
+        }
+    }
+
+    // .RogueMiracleData add_miracle_list = 516;
+
+    pub fn add_miracle_list(&self) -> &super::RogueMiracleData::RogueMiracleData {
+        match self.result_action {
+            ::std::option::Option::Some(rogue_action_result_data::Result_action::AddMiracleList(ref v)) => v,
+            _ => <super::RogueMiracleData::RogueMiracleData as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_add_miracle_list(&mut self) {
+        self.result_action = ::std::option::Option::None;
+    }
+
+    pub fn has_add_miracle_list(&self) -> bool {
+        match self.result_action {
+            ::std::option::Option::Some(rogue_action_result_data::Result_action::AddMiracleList(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_add_miracle_list(&mut self, v: super::RogueMiracleData::RogueMiracleData) {
+        self.result_action = ::std::option::Option::Some(rogue_action_result_data::Result_action::AddMiracleList(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_add_miracle_list(&mut self) -> &mut super::RogueMiracleData::RogueMiracleData {
+        if let ::std::option::Option::Some(rogue_action_result_data::Result_action::AddMiracleList(_)) = self.result_action {
+        } else {
+            self.result_action = ::std::option::Option::Some(rogue_action_result_data::Result_action::AddMiracleList(super::RogueMiracleData::RogueMiracleData::new()));
+        }
+        match self.result_action {
+            ::std::option::Option::Some(rogue_action_result_data::Result_action::AddMiracleList(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_add_miracle_list(&mut self) -> super::RogueMiracleData::RogueMiracleData {
+        if self.has_add_miracle_list() {
+            match self.result_action.take() {
+                ::std::option::Option::Some(rogue_action_result_data::Result_action::AddMiracleList(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::RogueMiracleData::RogueMiracleData::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
-        let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueVirtualItemData::RogueVirtualItemData>(
+        let mut oneofs = ::std::vec::Vec::with_capacity(1);
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueVirtualItemData::RogueVirtualItemData>(
             "add_item_list",
-            |m: &RogueActionResultData| { &m.add_item_list },
-            |m: &mut RogueActionResultData| { &mut m.add_item_list },
+            RogueActionResultData::has_add_item_list,
+            RogueActionResultData::add_item_list,
+            RogueActionResultData::mut_add_item_list,
+            RogueActionResultData::set_add_item_list,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueVirtualItemData::RogueVirtualItemData>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueVirtualItemData::RogueVirtualItemData>(
             "remove_item_list",
-            |m: &RogueActionResultData| { &m.remove_item_list },
-            |m: &mut RogueActionResultData| { &mut m.remove_item_list },
+            RogueActionResultData::has_remove_item_list,
+            RogueActionResultData::remove_item_list,
+            RogueActionResultData::mut_remove_item_list,
+            RogueActionResultData::set_remove_item_list,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueBuffData::RogueBuffData>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueBuffData::RogueBuffData>(
             "add_buff_list",
-            |m: &RogueActionResultData| { &m.add_buff_list },
-            |m: &mut RogueActionResultData| { &mut m.add_buff_list },
+            RogueActionResultData::has_add_buff_list,
+            RogueActionResultData::add_buff_list,
+            RogueActionResultData::mut_add_buff_list,
+            RogueActionResultData::set_add_buff_list,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueBuffData::RogueBuffData>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueBuffData::RogueBuffData>(
             "remove_buff_list",
-            |m: &RogueActionResultData| { &m.remove_buff_list },
-            |m: &mut RogueActionResultData| { &mut m.remove_buff_list },
+            RogueActionResultData::has_remove_buff_list,
+            RogueActionResultData::remove_buff_list,
+            RogueActionResultData::mut_remove_buff_list,
+            RogueActionResultData::set_remove_buff_list,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueMiracleData::RogueMiracleData>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueMiracleData::RogueMiracleData>(
             "add_miracle_list",
-            |m: &RogueActionResultData| { &m.add_miracle_list },
-            |m: &mut RogueActionResultData| { &mut m.add_miracle_list },
+            RogueActionResultData::has_add_miracle_list,
+            RogueActionResultData::add_miracle_list,
+            RogueActionResultData::mut_add_miracle_list,
+            RogueActionResultData::set_add_miracle_list,
         ));
+        oneofs.push(rogue_action_result_data::Result_action::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueActionResultData>(
             "RogueActionResultData",
             fields,
@@ -101,20 +348,20 @@ impl ::protobuf::Message for RogueActionResultData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.add_item_list)?;
+                90 => {
+                    self.result_action = ::std::option::Option::Some(rogue_action_result_data::Result_action::AddItemList(is.read_message()?));
                 },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.remove_item_list)?;
+                114 => {
+                    self.result_action = ::std::option::Option::Some(rogue_action_result_data::Result_action::RemoveItemList(is.read_message()?));
                 },
-                12666 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.add_buff_list)?;
+                12690 => {
+                    self.result_action = ::std::option::Option::Some(rogue_action_result_data::Result_action::AddBuffList(is.read_message()?));
                 },
-                6546 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.remove_buff_list)?;
+                12594 => {
+                    self.result_action = ::std::option::Option::Some(rogue_action_result_data::Result_action::RemoveBuffList(is.read_message()?));
                 },
-                9554 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.add_miracle_list)?;
+                4130 => {
+                    self.result_action = ::std::option::Option::Some(rogue_action_result_data::Result_action::AddMiracleList(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,25 +375,29 @@ impl ::protobuf::Message for RogueActionResultData {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.add_item_list.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.remove_item_list.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.add_buff_list.as_ref() {
-            let len = v.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.remove_buff_list.as_ref() {
-            let len = v.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.add_miracle_list.as_ref() {
-            let len = v.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if let ::std::option::Option::Some(ref v) = self.result_action {
+            match v {
+                &rogue_action_result_data::Result_action::AddItemList(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &rogue_action_result_data::Result_action::RemoveItemList(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &rogue_action_result_data::Result_action::AddBuffList(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &rogue_action_result_data::Result_action::RemoveBuffList(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &rogue_action_result_data::Result_action::AddMiracleList(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+            };
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -154,20 +405,24 @@ impl ::protobuf::Message for RogueActionResultData {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.add_item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
-        if let Some(v) = self.remove_item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        }
-        if let Some(v) = self.add_buff_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1583, v, os)?;
-        }
-        if let Some(v) = self.remove_buff_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(818, v, os)?;
-        }
-        if let Some(v) = self.add_miracle_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1194, v, os)?;
+        if let ::std::option::Option::Some(ref v) = self.result_action {
+            match v {
+                &rogue_action_result_data::Result_action::AddItemList(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                },
+                &rogue_action_result_data::Result_action::RemoveItemList(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                },
+                &rogue_action_result_data::Result_action::AddBuffList(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1586, v, os)?;
+                },
+                &rogue_action_result_data::Result_action::RemoveBuffList(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1574, v, os)?;
+                },
+                &rogue_action_result_data::Result_action::AddMiracleList(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(516, v, os)?;
+                },
+            };
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,21 +441,17 @@ impl ::protobuf::Message for RogueActionResultData {
     }
 
     fn clear(&mut self) {
-        self.add_item_list.clear();
-        self.remove_item_list.clear();
-        self.add_buff_list.clear();
-        self.remove_buff_list.clear();
-        self.add_miracle_list.clear();
+        self.result_action = ::std::option::Option::None;
+        self.result_action = ::std::option::Option::None;
+        self.result_action = ::std::option::Option::None;
+        self.result_action = ::std::option::Option::None;
+        self.result_action = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueActionResultData {
         static instance: RogueActionResultData = RogueActionResultData {
-            add_item_list: ::protobuf::MessageField::none(),
-            remove_item_list: ::protobuf::MessageField::none(),
-            add_buff_list: ::protobuf::MessageField::none(),
-            remove_buff_list: ::protobuf::MessageField::none(),
-            add_miracle_list: ::protobuf::MessageField::none(),
+            result_action: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -224,16 +475,53 @@ impl ::protobuf::reflect::ProtobufValue for RogueActionResultData {
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
+/// Nested message and enums of message `RogueActionResultData`
+pub mod rogue_action_result_data {
+
+    #[derive(Clone,PartialEq,Debug)]
+    #[non_exhaustive]
+    // @@protoc_insertion_point(oneof:RogueActionResultData.result_action)
+    pub enum Result_action {
+        // @@protoc_insertion_point(oneof_field:RogueActionResultData.add_item_list)
+        AddItemList(super::super::RogueVirtualItemData::RogueVirtualItemData),
+        // @@protoc_insertion_point(oneof_field:RogueActionResultData.remove_item_list)
+        RemoveItemList(super::super::RogueVirtualItemData::RogueVirtualItemData),
+        // @@protoc_insertion_point(oneof_field:RogueActionResultData.add_buff_list)
+        AddBuffList(super::super::RogueBuffData::RogueBuffData),
+        // @@protoc_insertion_point(oneof_field:RogueActionResultData.remove_buff_list)
+        RemoveBuffList(super::super::RogueBuffData::RogueBuffData),
+        // @@protoc_insertion_point(oneof_field:RogueActionResultData.add_miracle_list)
+        AddMiracleList(super::super::RogueMiracleData::RogueMiracleData),
+    }
+
+    impl ::protobuf::Oneof for Result_action {
+    }
+
+    impl ::protobuf::OneofFull for Result_action {
+        fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
+            static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
+            descriptor.get(|| <super::RogueActionResultData as ::protobuf::MessageFull>::descriptor().oneof_by_name("result_action").unwrap()).clone()
+        }
+    }
+
+    impl Result_action {
+        pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<Result_action>("result_action")
+        }
+    }
+}
+
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bRogueActionResultData.proto\x1a\x13RogueBuffData.proto\x1a\x16Rogu\
-    eMiracleData.proto\x1a\x1aRogueVirtualItemData.proto\"\xc1\x02\n\x15Rogu\
-    eActionResultData\x129\n\radd_item_list\x18\r\x20\x01(\x0b2\x15.RogueVir\
-    tualItemDataR\x0baddItemList\x12?\n\x10remove_item_list\x18\x0c\x20\x01(\
-    \x0b2\x15.RogueVirtualItemDataR\x0eremoveItemList\x123\n\radd_buff_list\
-    \x18\xaf\x0c\x20\x01(\x0b2\x0e.RogueBuffDataR\x0baddBuffList\x129\n\x10r\
-    emove_buff_list\x18\xb2\x06\x20\x01(\x0b2\x0e.RogueBuffDataR\x0eremoveBu\
-    ffList\x12<\n\x10add_miracle_list\x18\xaa\t\x20\x01(\x0b2\x11.RogueMirac\
-    leDataR\x0eaddMiracleListB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    eMiracleData.proto\x1a\x1aRogueVirtualItemData.proto\"\xdc\x02\n\x15Rogu\
+    eActionResultData\x12;\n\radd_item_list\x18\x0b\x20\x01(\x0b2\x15.RogueV\
+    irtualItemDataH\0R\x0baddItemList\x12A\n\x10remove_item_list\x18\x0e\x20\
+    \x01(\x0b2\x15.RogueVirtualItemDataH\0R\x0eremoveItemList\x125\n\radd_bu\
+    ff_list\x18\xb2\x0c\x20\x01(\x0b2\x0e.RogueBuffDataH\0R\x0baddBuffList\
+    \x12;\n\x10remove_buff_list\x18\xa6\x0c\x20\x01(\x0b2\x0e.RogueBuffDataH\
+    \0R\x0eremoveBuffList\x12>\n\x10add_miracle_list\x18\x84\x04\x20\x01(\
+    \x0b2\x11.RogueMiracleDataH\0R\x0eaddMiracleListB\x0f\n\rresult_actionB\
+    \x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

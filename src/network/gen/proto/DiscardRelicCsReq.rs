@@ -83,7 +83,7 @@ impl ::protobuf::Message for DiscardRelicCsReq {
                 112 => {
                     self.relic_unique_id = is.read_uint32()?;
                 },
-                24 => {
+                32 => {
                     self.is_discard = is.read_bool()?;
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for DiscardRelicCsReq {
             os.write_uint32(14, self.relic_unique_id)?;
         }
         if self.is_discard != false {
-            os.write_bool(3, self.is_discard)?;
+            os.write_bool(4, self.is_discard)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for DiscardRelicCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17DiscardRelicCsReq.proto\"Z\n\x11DiscardRelicCsReq\x12&\n\x0frelic_\
     unique_id\x18\x0e\x20\x01(\rR\rrelicUniqueId\x12\x1d\n\nis_discard\x18\
-    \x03\x20\x01(\x08R\tisDiscardB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \x04\x20\x01(\x08R\tisDiscardB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

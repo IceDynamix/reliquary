@@ -111,19 +111,19 @@ impl ::protobuf::Message for ChessRogueStartScRsp {
                 16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                82 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.current_info)?;
                 },
-                10 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
-                58 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cell_info)?;
                 },
-                34 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
                 },
-                90 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.chess_rogue_info)?;
                 },
                 tag => {
@@ -171,19 +171,19 @@ impl ::protobuf::Message for ChessRogueStartScRsp {
             os.write_uint32(2, self.retcode)?;
         }
         if let Some(v) = self.current_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
-        if let Some(v) = self.lineup.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
+        if let Some(v) = self.lineup.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        }
         if let Some(v) = self.cell_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         if let Some(v) = self.scene.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if let Some(v) = self.chess_rogue_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -247,11 +247,11 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x10LineupInfo.proto\x1a\x18ChessRogueCellInfo.proto\x1a\x0fSceneInfo.pr\
     oto\x1a\x14ChessRogueInfo.proto\"\x9f\x02\n\x14ChessRogueStartScRsp\x12\
     \x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x129\n\x0ccurrent_info\
-    \x18\n\x20\x01(\x0b2\x16.ChessRogueCurrentInfoR\x0bcurrentInfo\x12#\n\
-    \x06lineup\x18\x01\x20\x01(\x0b2\x0b.LineupInfoR\x06lineup\x120\n\tcell_\
-    info\x18\x07\x20\x01(\x0b2\x13.ChessRogueCellInfoR\x08cellInfo\x12\x20\n\
-    \x05scene\x18\x04\x20\x01(\x0b2\n.SceneInfoR\x05scene\x129\n\x10chess_ro\
-    gue_info\x18\x0b\x20\x01(\x0b2\x0f.ChessRogueInfoR\x0echessRogueInfoB\
+    \x18\x01\x20\x01(\x0b2\x16.ChessRogueCurrentInfoR\x0bcurrentInfo\x12#\n\
+    \x06lineup\x18\x08\x20\x01(\x0b2\x0b.LineupInfoR\x06lineup\x120\n\tcell_\
+    info\x18\r\x20\x01(\x0b2\x13.ChessRogueCellInfoR\x08cellInfo\x12\x20\n\
+    \x05scene\x18\x0f\x20\x01(\x0b2\n.SceneInfoR\x05scene\x129\n\x10chess_ro\
+    gue_info\x18\x0e\x20\x01(\x0b2\x0f.ChessRogueInfoR\x0echessRogueInfoB\
     \x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

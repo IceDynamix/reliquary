@@ -80,7 +80,7 @@ impl ::protobuf::Message for EnterSceneCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                104 => {
                     self.teleport_id = is.read_uint32()?;
                 },
                 16 => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for EnterSceneCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.teleport_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.teleport_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.teleport_id);
         }
         if self.entry_id != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.entry_id);
@@ -111,7 +111,7 @@ impl ::protobuf::Message for EnterSceneCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.teleport_id != 0 {
-            os.write_uint32(8, self.teleport_id)?;
+            os.write_uint32(13, self.teleport_id)?;
         }
         if self.entry_id != 0 {
             os.write_uint32(2, self.entry_id)?;
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for EnterSceneCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15EnterSceneCsReq.proto\"M\n\x0fEnterSceneCsReq\x12\x1f\n\x0btelepor\
-    t_id\x18\x08\x20\x01(\rR\nteleportId\x12\x19\n\x08entry_id\x18\x02\x20\
-    \x01(\rR\x07entryIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    t_id\x18\r\x20\x01(\rR\nteleportId\x12\x19\n\x08entry_id\x18\x02\x20\x01\
+    (\rR\x07entryIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -87,13 +87,13 @@ impl ::protobuf::Message for UnlockedMusic {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                80 => {
                     self.group_id = is.read_uint32()?;
                 },
-                104 => {
+                24 => {
                     self.unkbool = is.read_bool()?;
                 },
-                80 => {
+                32 => {
                     self.id = is.read_uint32()?;
                 },
                 tag => {
@@ -109,13 +109,13 @@ impl ::protobuf::Message for UnlockedMusic {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.group_id);
         }
         if self.unkbool != false {
             my_size += 1 + 1;
         }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.id);
+            my_size += ::protobuf::rt::uint32_size(4, self.id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for UnlockedMusic {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.group_id != 0 {
-            os.write_uint32(6, self.group_id)?;
+            os.write_uint32(10, self.group_id)?;
         }
         if self.unkbool != false {
-            os.write_bool(13, self.unkbool)?;
+            os.write_bool(3, self.unkbool)?;
         }
         if self.id != 0 {
-            os.write_uint32(10, self.id)?;
+            os.write_uint32(4, self.id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for UnlockedMusic {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13UnlockedMusic.proto\"T\n\rUnlockedMusic\x12\x19\n\x08group_id\x18\
-    \x06\x20\x01(\rR\x07groupId\x12\x18\n\x07unkbool\x18\r\x20\x01(\x08R\x07\
-    unkbool\x12\x0e\n\x02id\x18\n\x20\x01(\rR\x02idB\x15\n\x13emu.lunarcore.\
-    protob\x06proto3\
+    \n\x20\x01(\rR\x07groupId\x12\x18\n\x07unkbool\x18\x03\x20\x01(\x08R\x07\
+    unkbool\x12\x0e\n\x02id\x18\x04\x20\x01(\rR\x02idB\x15\n\x13emu.lunarcor\
+    e.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

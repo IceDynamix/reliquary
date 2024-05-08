@@ -143,37 +143,37 @@ impl ::protobuf::Message for SimpleInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                114 => {
                     self.signature = is.read_string()?;
                 },
-                120 => {
+                72 => {
                     self.is_banned = is.read_bool()?;
                 },
-                66 => {
+                58 => {
                     self.assist_simple_info.push(is.read_message()?);
                 },
-                112 => {
+                104 => {
                     self.platform_type = is.read_enum_or_unknown()?;
                 },
-                104 => {
+                16 => {
                     self.last_active_time = is.read_int64()?;
                 },
-                72 => {
+                24 => {
                     self.online_status = is.read_enum_or_unknown()?;
                 },
                 40 => {
                     self.head_icon = is.read_uint32()?;
                 },
-                58 => {
+                50 => {
                     self.nickname = is.read_string()?;
                 },
-                88 => {
+                32 => {
                     self.chat_bubble_id = is.read_uint32()?;
                 },
-                32 => {
+                120 => {
                     self.uid = is.read_uint32()?;
                 },
-                8 => {
+                80 => {
                     self.level = is.read_uint32()?;
                 },
                 tag => {
@@ -189,7 +189,7 @@ impl ::protobuf::Message for SimpleInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.signature.is_empty() {
-            my_size += ::protobuf::rt::string_size(6, &self.signature);
+            my_size += ::protobuf::rt::string_size(14, &self.signature);
         }
         if self.is_banned != false {
             my_size += 1 + 1;
@@ -199,28 +199,28 @@ impl ::protobuf::Message for SimpleInfo {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.platform_type != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
-            my_size += ::protobuf::rt::int32_size(14, self.platform_type.value());
+            my_size += ::protobuf::rt::int32_size(13, self.platform_type.value());
         }
         if self.last_active_time != 0 {
-            my_size += ::protobuf::rt::int64_size(13, self.last_active_time);
+            my_size += ::protobuf::rt::int64_size(2, self.last_active_time);
         }
         if self.online_status != ::protobuf::EnumOrUnknown::new(super::FriendOnlineStatus::FriendOnlineStatus::FRIEND_ONLINE_STATUS_OFFLINE) {
-            my_size += ::protobuf::rt::int32_size(9, self.online_status.value());
+            my_size += ::protobuf::rt::int32_size(3, self.online_status.value());
         }
         if self.head_icon != 0 {
             my_size += ::protobuf::rt::uint32_size(5, self.head_icon);
         }
         if !self.nickname.is_empty() {
-            my_size += ::protobuf::rt::string_size(7, &self.nickname);
+            my_size += ::protobuf::rt::string_size(6, &self.nickname);
         }
         if self.chat_bubble_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.chat_bubble_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.chat_bubble_id);
         }
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.uid);
+            my_size += ::protobuf::rt::uint32_size(15, self.uid);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.level);
+            my_size += ::protobuf::rt::uint32_size(10, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -229,37 +229,37 @@ impl ::protobuf::Message for SimpleInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.signature.is_empty() {
-            os.write_string(6, &self.signature)?;
+            os.write_string(14, &self.signature)?;
         }
         if self.is_banned != false {
-            os.write_bool(15, self.is_banned)?;
+            os.write_bool(9, self.is_banned)?;
         }
         for v in &self.assist_simple_info {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         if self.platform_type != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.platform_type))?;
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.platform_type))?;
         }
         if self.last_active_time != 0 {
-            os.write_int64(13, self.last_active_time)?;
+            os.write_int64(2, self.last_active_time)?;
         }
         if self.online_status != ::protobuf::EnumOrUnknown::new(super::FriendOnlineStatus::FriendOnlineStatus::FRIEND_ONLINE_STATUS_OFFLINE) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.online_status))?;
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.online_status))?;
         }
         if self.head_icon != 0 {
             os.write_uint32(5, self.head_icon)?;
         }
         if !self.nickname.is_empty() {
-            os.write_string(7, &self.nickname)?;
+            os.write_string(6, &self.nickname)?;
         }
         if self.chat_bubble_id != 0 {
-            os.write_uint32(11, self.chat_bubble_id)?;
+            os.write_uint32(4, self.chat_bubble_id)?;
         }
         if self.uid != 0 {
-            os.write_uint32(4, self.uid)?;
+            os.write_uint32(15, self.uid)?;
         }
         if self.level != 0 {
-            os.write_uint32(1, self.level)?;
+            os.write_uint32(10, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -331,17 +331,17 @@ impl ::protobuf::reflect::ProtobufValue for SimpleInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x10SimpleInfo.proto\x1a\x18FriendOnlineStatus.proto\x1a\x16AssistSimp\
     leInfo.proto\x1a\x12PlatformType.proto\"\xa7\x03\n\nSimpleInfo\x12\x1c\n\
-    \tsignature\x18\x06\x20\x01(\tR\tsignature\x12\x1b\n\tis_banned\x18\x0f\
-    \x20\x01(\x08R\x08isBanned\x12?\n\x12assist_simple_info\x18\x08\x20\x03(\
+    \tsignature\x18\x0e\x20\x01(\tR\tsignature\x12\x1b\n\tis_banned\x18\t\
+    \x20\x01(\x08R\x08isBanned\x12?\n\x12assist_simple_info\x18\x07\x20\x03(\
     \x0b2\x11.AssistSimpleInfoR\x10assistSimpleInfo\x122\n\rplatform_type\
-    \x18\x0e\x20\x01(\x0e2\r.PlatformTypeR\x0cplatformType\x12(\n\x10last_ac\
-    tive_time\x18\r\x20\x01(\x03R\x0elastActiveTime\x128\n\ronline_status\
-    \x18\t\x20\x01(\x0e2\x13.FriendOnlineStatusR\x0conlineStatus\x12\x1b\n\t\
-    head_icon\x18\x05\x20\x01(\rR\x08headIcon\x12\x1a\n\x08nickname\x18\x07\
-    \x20\x01(\tR\x08nickname\x12$\n\x0echat_bubble_id\x18\x0b\x20\x01(\rR\
-    \x0cchatBubbleId\x12\x10\n\x03uid\x18\x04\x20\x01(\rR\x03uid\x12\x14\n\
-    \x05level\x18\x01\x20\x01(\rR\x05levelB\x15\n\x13emu.lunarcore.protob\
-    \x06proto3\
+    \x18\r\x20\x01(\x0e2\r.PlatformTypeR\x0cplatformType\x12(\n\x10last_acti\
+    ve_time\x18\x02\x20\x01(\x03R\x0elastActiveTime\x128\n\ronline_status\
+    \x18\x03\x20\x01(\x0e2\x13.FriendOnlineStatusR\x0conlineStatus\x12\x1b\n\
+    \thead_icon\x18\x05\x20\x01(\rR\x08headIcon\x12\x1a\n\x08nickname\x18\
+    \x06\x20\x01(\tR\x08nickname\x12$\n\x0echat_bubble_id\x18\x04\x20\x01(\r\
+    R\x0cchatBubbleId\x12\x10\n\x03uid\x18\x0f\x20\x01(\rR\x03uid\x12\x14\n\
+    \x05level\x18\n\x20\x01(\rR\x05levelB\x15\n\x13emu.lunarcore.protob\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

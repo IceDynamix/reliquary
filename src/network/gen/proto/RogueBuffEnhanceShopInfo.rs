@@ -73,7 +73,7 @@ impl ::protobuf::Message for RogueBuffEnhanceShopInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                82 => {
                     self.buff_info.push(is.read_message()?);
                 },
                 tag => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for RogueBuffEnhanceShopInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.buff_info {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +150,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueBuffEnhanceShopInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eRogueBuffEnhanceShopInfo.proto\x1a\x1aRogueBuffEnhanceInfo.proto\"\
-    N\n\x18RogueBuffEnhanceShopInfo\x122\n\tbuff_info\x18\x0b\x20\x03(\x0b2\
+    N\n\x18RogueBuffEnhanceShopInfo\x122\n\tbuff_info\x18\n\x20\x03(\x0b2\
     \x15.RogueBuffEnhanceInfoR\x08buffInfoB\x15\n\x13emu.lunarcore.protob\
     \x06proto3\
 ";

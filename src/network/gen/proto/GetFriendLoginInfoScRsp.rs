@@ -80,10 +80,10 @@ impl ::protobuf::Message for GetFriendLoginInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                90 => {
                     is.read_repeated_packed_uint32_into(&mut self.friend_uid_list)?;
                 },
-                16 => {
+                88 => {
                     self.friend_uid_list.push(is.read_uint32()?);
                 },
                 72 => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for GetFriendLoginInfoScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         for value in &self.friend_uid_list {
-            my_size += ::protobuf::rt::uint32_size(2, *value);
+            my_size += ::protobuf::rt::uint32_size(11, *value);
         };
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.retcode);
@@ -114,7 +114,7 @@ impl ::protobuf::Message for GetFriendLoginInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.friend_uid_list {
-            os.write_uint32(2, *v)?;
+            os.write_uint32(11, *v)?;
         };
         if self.retcode != 0 {
             os.write_uint32(9, self.retcode)?;
@@ -170,7 +170,7 @@ impl ::protobuf::reflect::ProtobufValue for GetFriendLoginInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dGetFriendLoginInfoScRsp.proto\"[\n\x17GetFriendLoginInfoScRsp\x12&\
-    \n\x0ffriend_uid_list\x18\x02\x20\x03(\rR\rfriendUidList\x12\x18\n\x07re\
+    \n\x0ffriend_uid_list\x18\x0b\x20\x03(\rR\rfriendUidList\x12\x18\n\x07re\
     tcode\x18\t\x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore.protob\x06pro\
     to3\
 ";

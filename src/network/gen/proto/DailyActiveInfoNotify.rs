@@ -90,13 +90,13 @@ impl ::protobuf::Message for DailyActiveInfoNotify {
                 112 => {
                     self.daily_active_point = is.read_uint32()?;
                 },
-                122 => {
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.daily_active_quest_id_list)?;
                 },
-                120 => {
+                8 => {
                     self.daily_active_quest_id_list.push(is.read_uint32()?);
                 },
-                34 => {
+                26 => {
                     self.daily_active_level_list.push(is.read_message()?);
                 },
                 tag => {
@@ -115,7 +115,7 @@ impl ::protobuf::Message for DailyActiveInfoNotify {
             my_size += ::protobuf::rt::uint32_size(14, self.daily_active_point);
         }
         for value in &self.daily_active_quest_id_list {
-            my_size += ::protobuf::rt::uint32_size(15, *value);
+            my_size += ::protobuf::rt::uint32_size(1, *value);
         };
         for value in &self.daily_active_level_list {
             let len = value.compute_size();
@@ -131,10 +131,10 @@ impl ::protobuf::Message for DailyActiveInfoNotify {
             os.write_uint32(14, self.daily_active_point)?;
         }
         for v in &self.daily_active_quest_id_list {
-            os.write_uint32(15, *v)?;
+            os.write_uint32(1, *v)?;
         };
         for v in &self.daily_active_level_list {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -191,8 +191,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bDailyActiveInfoNotify.proto\x1a\x17DailyActivityInfo.proto\"\xcc\
     \x01\n\x15DailyActiveInfoNotify\x12,\n\x12daily_active_point\x18\x0e\x20\
     \x01(\rR\x10dailyActivePoint\x12:\n\x1adaily_active_quest_id_list\x18\
-    \x0f\x20\x03(\rR\x16dailyActiveQuestIdList\x12I\n\x17daily_active_level_\
-    list\x18\x04\x20\x03(\x0b2\x12.DailyActivityInfoR\x14dailyActiveLevelLis\
+    \x01\x20\x03(\rR\x16dailyActiveQuestIdList\x12I\n\x17daily_active_level_\
+    list\x18\x03\x20\x03(\x0b2\x12.DailyActivityInfoR\x14dailyActiveLevelLis\
     tB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

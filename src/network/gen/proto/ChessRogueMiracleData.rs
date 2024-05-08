@@ -73,7 +73,7 @@ impl ::protobuf::Message for ChessRogueMiracleData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                90 => {
                     self.miracle_list.push(is.read_message()?);
                 },
                 tag => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for ChessRogueMiracleData {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.miracle_list {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +150,7 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueMiracleData {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bChessRogueMiracleData.proto\x1a\x12RogueMiracle.proto\"I\n\x15Ches\
-    sRogueMiracleData\x120\n\x0cmiracle_list\x18\x0f\x20\x03(\x0b2\r.RogueMi\
+    sRogueMiracleData\x120\n\x0cmiracle_list\x18\x0b\x20\x03(\x0b2\r.RogueMi\
     racleR\x0bmiracleListB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

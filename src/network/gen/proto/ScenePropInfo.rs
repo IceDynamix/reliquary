@@ -101,19 +101,19 @@ impl ::protobuf::Message for ScenePropInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                56 => {
                     self.life_time_ms = is.read_uint32()?;
                 },
-                106 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.extra_info)?;
                 },
-                80 => {
+                32 => {
                     self.prop_id = is.read_uint32()?;
                 },
-                24 => {
+                80 => {
                     self.prop_state = is.read_uint32()?;
                 },
-                40 => {
+                88 => {
                     self.create_time_ms = is.read_uint64()?;
                 },
                 tag => {
@@ -129,20 +129,20 @@ impl ::protobuf::Message for ScenePropInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.life_time_ms != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.life_time_ms);
+            my_size += ::protobuf::rt::uint32_size(7, self.life_time_ms);
         }
         if let Some(v) = self.extra_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.prop_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.prop_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.prop_id);
         }
         if self.prop_state != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.prop_state);
+            my_size += ::protobuf::rt::uint32_size(10, self.prop_state);
         }
         if self.create_time_ms != 0 {
-            my_size += ::protobuf::rt::uint64_size(5, self.create_time_ms);
+            my_size += ::protobuf::rt::uint64_size(11, self.create_time_ms);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -151,19 +151,19 @@ impl ::protobuf::Message for ScenePropInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.life_time_ms != 0 {
-            os.write_uint32(2, self.life_time_ms)?;
+            os.write_uint32(7, self.life_time_ms)?;
         }
         if let Some(v) = self.extra_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if self.prop_id != 0 {
-            os.write_uint32(10, self.prop_id)?;
+            os.write_uint32(4, self.prop_id)?;
         }
         if self.prop_state != 0 {
-            os.write_uint32(3, self.prop_state)?;
+            os.write_uint32(10, self.prop_state)?;
         }
         if self.create_time_ms != 0 {
-            os.write_uint64(5, self.create_time_ms)?;
+            os.write_uint64(11, self.create_time_ms)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -222,10 +222,10 @@ impl ::protobuf::reflect::ProtobufValue for ScenePropInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13ScenePropInfo.proto\x1a\x13PropExtraInfo.proto\"\xbe\x01\n\rSceneP\
-    ropInfo\x12\x20\n\x0clife_time_ms\x18\x02\x20\x01(\rR\nlifeTimeMs\x12-\n\
-    \nextra_info\x18\r\x20\x01(\x0b2\x0e.PropExtraInfoR\textraInfo\x12\x17\n\
-    \x07prop_id\x18\n\x20\x01(\rR\x06propId\x12\x1d\n\nprop_state\x18\x03\
-    \x20\x01(\rR\tpropState\x12$\n\x0ecreate_time_ms\x18\x05\x20\x01(\x04R\
+    ropInfo\x12\x20\n\x0clife_time_ms\x18\x07\x20\x01(\rR\nlifeTimeMs\x12-\n\
+    \nextra_info\x18\x03\x20\x01(\x0b2\x0e.PropExtraInfoR\textraInfo\x12\x17\
+    \n\x07prop_id\x18\x04\x20\x01(\rR\x06propId\x12\x1d\n\nprop_state\x18\n\
+    \x20\x01(\rR\tpropState\x12$\n\x0ecreate_time_ms\x18\x0b\x20\x01(\x04R\
     \x0ccreateTimeMsB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

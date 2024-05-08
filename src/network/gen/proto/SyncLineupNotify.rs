@@ -86,7 +86,7 @@ impl ::protobuf::Message for SyncLineupNotify {
                 74 => {
                     ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.reason_list)?
                 },
-                50 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
                 tag => {
@@ -118,7 +118,7 @@ impl ::protobuf::Message for SyncLineupNotify {
             os.write_enum(9, ::protobuf::EnumOrUnknown::value(v))?;
         };
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -172,7 +172,7 @@ impl ::protobuf::reflect::ProtobufValue for SyncLineupNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16SyncLineupNotify.proto\x1a\x10SyncReason.proto\x1a\x10LineupInfo.p\
     roto\"e\n\x10SyncLineupNotify\x12,\n\x0breason_list\x18\t\x20\x03(\x0e2\
-    \x0b.SyncReasonR\nreasonList\x12#\n\x06lineup\x18\x06\x20\x01(\x0b2\x0b.\
+    \x0b.SyncReasonR\nreasonList\x12#\n\x06lineup\x18\x04\x20\x01(\x0b2\x0b.\
     LineupInfoR\x06lineupB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

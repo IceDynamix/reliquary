@@ -80,7 +80,7 @@ impl ::protobuf::Message for GetActivityScheduleConfigScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                66 => {
                     self.activity_schedule_list.push(is.read_message()?);
                 },
                 32 => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for GetActivityScheduleConfigScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.activity_schedule_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         if self.retcode != 0 {
             os.write_uint32(4, self.retcode)?;
@@ -169,7 +169,7 @@ impl ::protobuf::reflect::ProtobufValue for GetActivityScheduleConfigScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$GetActivityScheduleConfigScRsp.proto\x1a\x1aActivityScheduleInfo.prot\
     o\"\x87\x01\n\x1eGetActivityScheduleConfigScRsp\x12K\n\x16activity_sched\
-    ule_list\x18\x07\x20\x03(\x0b2\x15.ActivityScheduleInfoR\x14activitySche\
+    ule_list\x18\x08\x20\x03(\x0b2\x15.ActivityScheduleInfoR\x14activitySche\
     duleList\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcodeB\x15\n\x13e\
     mu.lunarcore.protob\x06proto3\
 ";

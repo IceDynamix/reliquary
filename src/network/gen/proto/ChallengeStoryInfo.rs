@@ -46,7 +46,7 @@ impl ChallengeStoryInfo {
         ::std::default::Default::default()
     }
 
-    // .ChallengeStoryBuffInfo cur_story_buffs = 1;
+    // .ChallengeStoryBuffInfo cur_story_buffs = 5;
 
     pub fn cur_story_buffs(&self) -> &super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo {
         match self.story_buffs {
@@ -124,7 +124,7 @@ impl ::protobuf::Message for ChallengeStoryInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                42 => {
                     self.story_buffs = ::std::option::Option::Some(challenge_story_info::Story_buffs::CurStoryBuffs(is.read_message()?));
                 },
                 tag => {
@@ -156,7 +156,7 @@ impl ::protobuf::Message for ChallengeStoryInfo {
         if let ::std::option::Option::Some(ref v) = self.story_buffs {
             match v {
                 &challenge_story_info::Story_buffs::CurStoryBuffs(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
             };
         }
@@ -237,7 +237,7 @@ pub mod challenge_story_info {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18ChallengeStoryInfo.proto\x1a\x1cChallengeStoryBuffInfo.proto\"f\n\
-    \x12ChallengeStoryInfo\x12A\n\x0fcur_story_buffs\x18\x01\x20\x01(\x0b2\
+    \x12ChallengeStoryInfo\x12A\n\x0fcur_story_buffs\x18\x05\x20\x01(\x0b2\
     \x17.ChallengeStoryBuffInfoH\0R\rcurStoryBuffsB\r\n\x0bstory_buffsB\x15\
     \n\x13emu.lunarcore.protob\x06proto3\
 ";

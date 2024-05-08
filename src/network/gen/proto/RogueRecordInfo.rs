@@ -87,16 +87,16 @@ impl ::protobuf::Message for RogueRecordInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                114 => {
                     self.buff_list.push(is.read_message()?);
                 },
-                42 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.rogue_miracle_list)?;
                 },
-                40 => {
+                64 => {
                     self.rogue_miracle_list.push(is.read_uint32()?);
                 },
-                34 => {
+                42 => {
                     self.avatar_list.push(is.read_message()?);
                 },
                 tag => {
@@ -116,7 +116,7 @@ impl ::protobuf::Message for RogueRecordInfo {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         for value in &self.rogue_miracle_list {
-            my_size += ::protobuf::rt::uint32_size(5, *value);
+            my_size += ::protobuf::rt::uint32_size(8, *value);
         };
         for value in &self.avatar_list {
             let len = value.compute_size();
@@ -129,13 +129,13 @@ impl ::protobuf::Message for RogueRecordInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.buff_list {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         for v in &self.rogue_miracle_list {
-            os.write_uint32(5, *v)?;
+            os.write_uint32(8, *v)?;
         };
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -190,11 +190,11 @@ impl ::protobuf::reflect::ProtobufValue for RogueRecordInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15RogueRecordInfo.proto\x1a\x0fRogueBuff.proto\x1a\x17RogueRecordAva\
-    tar.proto\"\x9d\x01\n\x0fRogueRecordInfo\x12'\n\tbuff_list\x18\r\x20\x03\
-    (\x0b2\n.RogueBuffR\x08buffList\x12,\n\x12rogue_miracle_list\x18\x05\x20\
-    \x03(\rR\x10rogueMiracleList\x123\n\x0bavatar_list\x18\x04\x20\x03(\x0b2\
-    \x12.RogueRecordAvatarR\navatarListB\x15\n\x13emu.lunarcore.protob\x06pr\
-    oto3\
+    tar.proto\"\x9d\x01\n\x0fRogueRecordInfo\x12'\n\tbuff_list\x18\x0e\x20\
+    \x03(\x0b2\n.RogueBuffR\x08buffList\x12,\n\x12rogue_miracle_list\x18\x08\
+    \x20\x03(\rR\x10rogueMiracleList\x123\n\x0bavatar_list\x18\x05\x20\x03(\
+    \x0b2\x12.RogueRecordAvatarR\navatarListB\x15\n\x13emu.lunarcore.protob\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

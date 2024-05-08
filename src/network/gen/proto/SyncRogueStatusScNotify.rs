@@ -73,7 +73,7 @@ impl ::protobuf::Message for SyncRogueStatusScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                120 => {
                     self.rogue_status = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -89,7 +89,7 @@ impl ::protobuf::Message for SyncRogueStatusScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.rogue_status != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::ROGUE_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(11, self.rogue_status.value());
+            my_size += ::protobuf::rt::int32_size(15, self.rogue_status.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SyncRogueStatusScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.rogue_status != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::ROGUE_STATUS_NONE) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.rogue_status))?;
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.rogue_status))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueStatusScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dSyncRogueStatusScNotify.proto\x1a\x11RogueStatus.proto\"J\n\x17Syn\
-    cRogueStatusScNotify\x12/\n\x0crogue_status\x18\x0b\x20\x01(\x0e2\x0c.Ro\
+    cRogueStatusScNotify\x12/\n\x0crogue_status\x18\x0f\x20\x01(\x0e2\x0c.Ro\
     gueStatusR\x0brogueStatusB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

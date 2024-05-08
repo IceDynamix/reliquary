@@ -33,10 +33,10 @@ pub struct BuyGoodsCsReq {
     pub shop_id: u32,
     // @@protoc_insertion_point(field:BuyGoodsCsReq.item_id)
     pub item_id: u32,
-    // @@protoc_insertion_point(field:BuyGoodsCsReq.goods_num)
-    pub goods_num: u32,
     // @@protoc_insertion_point(field:BuyGoodsCsReq.goods_id)
     pub goods_id: u32,
+    // @@protoc_insertion_point(field:BuyGoodsCsReq.goods_num)
+    pub goods_num: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BuyGoodsCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -67,14 +67,14 @@ impl BuyGoodsCsReq {
             |m: &mut BuyGoodsCsReq| { &mut m.item_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "goods_num",
-            |m: &BuyGoodsCsReq| { &m.goods_num },
-            |m: &mut BuyGoodsCsReq| { &mut m.goods_num },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "goods_id",
             |m: &BuyGoodsCsReq| { &m.goods_id },
             |m: &mut BuyGoodsCsReq| { &mut m.goods_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "goods_num",
+            |m: &BuyGoodsCsReq| { &m.goods_num },
+            |m: &mut BuyGoodsCsReq| { &mut m.goods_num },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BuyGoodsCsReq>(
             "BuyGoodsCsReq",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for BuyGoodsCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                88 => {
                     self.shop_id = is.read_uint32()?;
                 },
-                112 => {
+                72 => {
                     self.item_id = is.read_uint32()?;
                 },
-                32 => {
-                    self.goods_num = is.read_uint32()?;
-                },
-                120 => {
+                64 => {
                     self.goods_id = is.read_uint32()?;
+                },
+                24 => {
+                    self.goods_num = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -119,16 +119,16 @@ impl ::protobuf::Message for BuyGoodsCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.shop_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.shop_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.shop_id);
         }
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.item_id);
-        }
-        if self.goods_num != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.goods_num);
+            my_size += ::protobuf::rt::uint32_size(9, self.item_id);
         }
         if self.goods_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.goods_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.goods_id);
+        }
+        if self.goods_num != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.goods_num);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,16 +137,16 @@ impl ::protobuf::Message for BuyGoodsCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.shop_id != 0 {
-            os.write_uint32(5, self.shop_id)?;
+            os.write_uint32(11, self.shop_id)?;
         }
         if self.item_id != 0 {
-            os.write_uint32(14, self.item_id)?;
-        }
-        if self.goods_num != 0 {
-            os.write_uint32(4, self.goods_num)?;
+            os.write_uint32(9, self.item_id)?;
         }
         if self.goods_id != 0 {
-            os.write_uint32(15, self.goods_id)?;
+            os.write_uint32(8, self.goods_id)?;
+        }
+        if self.goods_num != 0 {
+            os.write_uint32(3, self.goods_num)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::Message for BuyGoodsCsReq {
     fn clear(&mut self) {
         self.shop_id = 0;
         self.item_id = 0;
-        self.goods_num = 0;
         self.goods_id = 0;
+        self.goods_num = 0;
         self.special_fields.clear();
     }
 
@@ -176,8 +176,8 @@ impl ::protobuf::Message for BuyGoodsCsReq {
         static instance: BuyGoodsCsReq = BuyGoodsCsReq {
             shop_id: 0,
             item_id: 0,
-            goods_num: 0,
             goods_id: 0,
+            goods_num: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for BuyGoodsCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13BuyGoodsCsReq.proto\"y\n\rBuyGoodsCsReq\x12\x17\n\x07shop_id\x18\
-    \x05\x20\x01(\rR\x06shopId\x12\x17\n\x07item_id\x18\x0e\x20\x01(\rR\x06i\
-    temId\x12\x1b\n\tgoods_num\x18\x04\x20\x01(\rR\x08goodsNum\x12\x19\n\x08\
-    goods_id\x18\x0f\x20\x01(\rR\x07goodsIdB\x15\n\x13emu.lunarcore.protob\
-    \x06proto3\
+    \x0b\x20\x01(\rR\x06shopId\x12\x17\n\x07item_id\x18\t\x20\x01(\rR\x06ite\
+    mId\x12\x19\n\x08goods_id\x18\x08\x20\x01(\rR\x07goodsId\x12\x1b\n\tgood\
+    s_num\x18\x03\x20\x01(\rR\x08goodsNumB\x15\n\x13emu.lunarcore.protob\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -80,7 +80,7 @@ impl ::protobuf::Message for GetRogueHandbookDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.handbook_info)?;
                 },
                 88 => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for GetRogueHandbookDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.handbook_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if self.retcode != 0 {
             os.write_uint32(11, self.retcode)?;
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for GetRogueHandbookDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fGetRogueHandbookDataScRsp.proto\x1a\x17RogueHandbookData.proto\"n\
-    \n\x19GetRogueHandbookDataScRsp\x127\n\rhandbook_info\x18\n\x20\x01(\x0b\
-    2\x12.RogueHandbookDataR\x0chandbookInfo\x12\x18\n\x07retcode\x18\x0b\
-    \x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x19GetRogueHandbookDataScRsp\x127\n\rhandbook_info\x18\x0c\x20\x01(\
+    \x0b2\x12.RogueHandbookDataR\x0chandbookInfo\x12\x18\n\x07retcode\x18\
+    \x0b\x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

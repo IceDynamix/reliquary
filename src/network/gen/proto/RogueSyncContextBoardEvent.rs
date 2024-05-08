@@ -80,7 +80,7 @@ impl ::protobuf::Message for RogueSyncContextBoardEvent {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                120 => {
                     self.board_event_id = is.read_uint32()?;
                 },
                 32 => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for RogueSyncContextBoardEvent {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.board_event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.board_event_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.board_event_id);
         }
         if self.modifier_effect_type != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.modifier_effect_type);
@@ -111,7 +111,7 @@ impl ::protobuf::Message for RogueSyncContextBoardEvent {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.board_event_id != 0 {
-            os.write_uint32(13, self.board_event_id)?;
+            os.write_uint32(15, self.board_event_id)?;
         }
         if self.modifier_effect_type != 0 {
             os.write_uint32(4, self.modifier_effect_type)?;
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueSyncContextBoardEvent {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20RogueSyncContextBoardEvent.proto\"t\n\x1aRogueSyncContextBoardEven\
-    t\x12$\n\x0eboard_event_id\x18\r\x20\x01(\rR\x0cboardEventId\x120\n\x14m\
-    odifier_effect_type\x18\x04\x20\x01(\rR\x12modifierEffectTypeB\x15\n\x13\
-    emu.lunarcore.protob\x06proto3\
+    t\x12$\n\x0eboard_event_id\x18\x0f\x20\x01(\rR\x0cboardEventId\x120\n\
+    \x14modifier_effect_type\x18\x04\x20\x01(\rR\x12modifierEffectTypeB\x15\
+    \n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

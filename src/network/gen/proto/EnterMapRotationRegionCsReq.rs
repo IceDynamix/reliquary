@@ -73,7 +73,7 @@ impl ::protobuf::Message for EnterMapRotationRegionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
                 },
                 tag => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for EnterMapRotationRegionCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +150,7 @@ impl ::protobuf::reflect::ProtobufValue for EnterMapRotationRegionCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!EnterMapRotationRegionCsReq.proto\x1a\x10MotionInfo.proto\"B\n\x1bEnt\
-    erMapRotationRegionCsReq\x12#\n\x06motion\x18\x04\x20\x01(\x0b2\x0b.Moti\
+    erMapRotationRegionCsReq\x12#\n\x06motion\x18\x07\x20\x01(\x0b2\x0b.Moti\
     onInfoR\x06motionB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

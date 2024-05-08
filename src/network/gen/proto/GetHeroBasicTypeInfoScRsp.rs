@@ -94,16 +94,16 @@ impl ::protobuf::Message for GetHeroBasicTypeInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                64 => {
                     self.cur_basic_type = is.read_enum_or_unknown()?;
                 },
-                18 => {
+                74 => {
                     self.basic_type_info_list.push(is.read_message()?);
                 },
-                104 => {
+                56 => {
                     self.gender = is.read_enum_or_unknown()?;
                 },
-                48 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -119,17 +119,17 @@ impl ::protobuf::Message for GetHeroBasicTypeInfoScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.cur_basic_type != ::protobuf::EnumOrUnknown::new(super::HeroBasicType::HeroBasicType::None) {
-            my_size += ::protobuf::rt::int32_size(5, self.cur_basic_type.value());
+            my_size += ::protobuf::rt::int32_size(8, self.cur_basic_type.value());
         }
         for value in &self.basic_type_info_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.gender != ::protobuf::EnumOrUnknown::new(super::Gender::Gender::GenderNone) {
-            my_size += ::protobuf::rt::int32_size(13, self.gender.value());
+            my_size += ::protobuf::rt::int32_size(7, self.gender.value());
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,16 +138,16 @@ impl ::protobuf::Message for GetHeroBasicTypeInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.cur_basic_type != ::protobuf::EnumOrUnknown::new(super::HeroBasicType::HeroBasicType::None) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.cur_basic_type))?;
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.cur_basic_type))?;
         }
         for v in &self.basic_type_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         if self.gender != ::protobuf::EnumOrUnknown::new(super::Gender::Gender::GenderNone) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.gender))?;
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.gender))?;
         }
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -205,10 +205,10 @@ impl ::protobuf::reflect::ProtobufValue for GetHeroBasicTypeInfoScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fGetHeroBasicTypeInfoScRsp.proto\x1a\x13HeroBasicType.proto\x1a\x0c\
     Gender.proto\x1a\x17HeroBasicTypeInfo.proto\"\xd1\x01\n\x19GetHeroBasicT\
-    ypeInfoScRsp\x124\n\x0ecur_basic_type\x18\x05\x20\x01(\x0e2\x0e.HeroBasi\
-    cTypeR\x0ccurBasicType\x12C\n\x14basic_type_info_list\x18\x02\x20\x03(\
-    \x0b2\x12.HeroBasicTypeInfoR\x11basicTypeInfoList\x12\x1f\n\x06gender\
-    \x18\r\x20\x01(\x0e2\x07.GenderR\x06gender\x12\x18\n\x07retcode\x18\x06\
+    ypeInfoScRsp\x124\n\x0ecur_basic_type\x18\x08\x20\x01(\x0e2\x0e.HeroBasi\
+    cTypeR\x0ccurBasicType\x12C\n\x14basic_type_info_list\x18\t\x20\x03(\x0b\
+    2\x12.HeroBasicTypeInfoR\x11basicTypeInfoList\x12\x1f\n\x06gender\x18\
+    \x07\x20\x01(\x0e2\x07.GenderR\x06gender\x12\x18\n\x07retcode\x18\x01\
     \x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

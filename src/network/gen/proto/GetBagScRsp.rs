@@ -94,16 +94,16 @@ impl ::protobuf::Message for GetBagScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                66 => {
                     self.relic_list.push(is.read_message()?);
                 },
-                50 => {
+                58 => {
                     self.material_list.push(is.read_message()?);
                 },
-                18 => {
+                122 => {
                     self.equipment_list.push(is.read_message()?);
                 },
-                24 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -131,7 +131,7 @@ impl ::protobuf::Message for GetBagScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -140,16 +140,16 @@ impl ::protobuf::Message for GetBagScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.relic_list {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         for v in &self.material_list {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         for v in &self.equipment_list {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -206,10 +206,10 @@ impl ::protobuf::reflect::ProtobufValue for GetBagScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GetBagScRsp.proto\x1a\x0bRelic.proto\x1a\x0fEquipment.proto\x1a\
-    \x0eMaterial.proto\"\xb1\x01\n\x0bGetBagScRsp\x12%\n\nrelic_list\x18\x0b\
-    \x20\x03(\x0b2\x06.RelicR\trelicList\x12.\n\rmaterial_list\x18\x06\x20\
-    \x03(\x0b2\t.MaterialR\x0cmaterialList\x121\n\x0eequipment_list\x18\x02\
-    \x20\x03(\x0b2\n.EquipmentR\requipmentList\x12\x18\n\x07retcode\x18\x03\
+    \x0eMaterial.proto\"\xb1\x01\n\x0bGetBagScRsp\x12%\n\nrelic_list\x18\x08\
+    \x20\x03(\x0b2\x06.RelicR\trelicList\x12.\n\rmaterial_list\x18\x07\x20\
+    \x03(\x0b2\t.MaterialR\x0cmaterialList\x121\n\x0eequipment_list\x18\x0f\
+    \x20\x03(\x0b2\n.EquipmentR\requipmentList\x12\x18\n\x07retcode\x18\x04\
     \x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

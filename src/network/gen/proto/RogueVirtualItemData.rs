@@ -80,10 +80,10 @@ impl ::protobuf::Message for RogueVirtualItemData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                104 => {
                     self.num = is.read_uint32()?;
                 },
-                48 => {
+                112 => {
                     self.MDBPDPDDHBC = is.read_uint32()?;
                 },
                 tag => {
@@ -99,10 +99,10 @@ impl ::protobuf::Message for RogueVirtualItemData {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.num != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.num);
+            my_size += ::protobuf::rt::uint32_size(13, self.num);
         }
         if self.MDBPDPDDHBC != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.MDBPDPDDHBC);
+            my_size += ::protobuf::rt::uint32_size(14, self.MDBPDPDDHBC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for RogueVirtualItemData {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.num != 0 {
-            os.write_uint32(5, self.num)?;
+            os.write_uint32(13, self.num)?;
         }
         if self.MDBPDPDDHBC != 0 {
-            os.write_uint32(6, self.MDBPDPDDHBC)?;
+            os.write_uint32(14, self.MDBPDPDDHBC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueVirtualItemData {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aRogueVirtualItemData.proto\"J\n\x14RogueVirtualItemData\x12\x10\n\
-    \x03num\x18\x05\x20\x01(\rR\x03num\x12\x20\n\x0bMDBPDPDDHBC\x18\x06\x20\
+    \x03num\x18\r\x20\x01(\rR\x03num\x12\x20\n\x0bMDBPDPDDHBC\x18\x0e\x20\
     \x01(\rR\x0bMDBPDPDDHBCB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

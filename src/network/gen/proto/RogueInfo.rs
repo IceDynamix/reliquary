@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueInfo.rogue_info_data)
-    pub rogue_info_data: ::protobuf::MessageField<super::RogueInfoData::RogueInfoData>,
     // @@protoc_insertion_point(field:RogueInfo.rogue_current_info)
     pub rogue_current_info: ::protobuf::MessageField<super::RogueCurrentInfo::RogueCurrentInfo>,
+    // @@protoc_insertion_point(field:RogueInfo.rogue_info_data)
+    pub rogue_info_data: ::protobuf::MessageField<super::RogueInfoData::RogueInfoData>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl RogueInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueInfoData::RogueInfoData>(
-            "rogue_info_data",
-            |m: &RogueInfo| { &m.rogue_info_data },
-            |m: &mut RogueInfo| { &mut m.rogue_info_data },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueCurrentInfo::RogueCurrentInfo>(
             "rogue_current_info",
             |m: &RogueInfo| { &m.rogue_current_info },
             |m: &mut RogueInfo| { &mut m.rogue_current_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueInfoData::RogueInfoData>(
+            "rogue_info_data",
+            |m: &RogueInfo| { &m.rogue_info_data },
+            |m: &mut RogueInfo| { &mut m.rogue_info_data },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueInfo>(
             "RogueInfo",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for RogueInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                5986 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_info_data)?;
-                },
-                7218 => {
+                9890 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_current_info)?;
+                },
+                6450 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_info_data)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for RogueInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.rogue_info_data.as_ref() {
+        if let Some(v) = self.rogue_current_info.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.rogue_current_info.as_ref() {
+        if let Some(v) = self.rogue_info_data.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -112,11 +112,11 @@ impl ::protobuf::Message for RogueInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.rogue_info_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(748, v, os)?;
-        }
         if let Some(v) = self.rogue_current_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(902, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1236, v, os)?;
+        }
+        if let Some(v) = self.rogue_info_data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(806, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -135,15 +135,15 @@ impl ::protobuf::Message for RogueInfo {
     }
 
     fn clear(&mut self) {
-        self.rogue_info_data.clear();
         self.rogue_current_info.clear();
+        self.rogue_info_data.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueInfo {
         static instance: RogueInfo = RogueInfo {
-            rogue_info_data: ::protobuf::MessageField::none(),
             rogue_current_info: ::protobuf::MessageField::none(),
+            rogue_info_data: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -169,10 +169,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0fRogueInfo.proto\x1a\x13RogueInfoData.proto\x1a\x16RogueCurrentInfo\
-    .proto\"\x86\x01\n\tRogueInfo\x127\n\x0frogue_info_data\x18\xec\x05\x20\
-    \x01(\x0b2\x0e.RogueInfoDataR\rrogueInfoData\x12@\n\x12rogue_current_inf\
-    o\x18\x86\x07\x20\x01(\x0b2\x11.RogueCurrentInfoR\x10rogueCurrentInfoB\
-    \x15\n\x13emu.lunarcore.protob\x06proto3\
+    .proto\"\x86\x01\n\tRogueInfo\x12@\n\x12rogue_current_info\x18\xd4\t\x20\
+    \x01(\x0b2\x11.RogueCurrentInfoR\x10rogueCurrentInfo\x127\n\x0frogue_inf\
+    o_data\x18\xa6\x06\x20\x01(\x0b2\x0e.RogueInfoDataR\rrogueInfoDataB\x15\
+    \n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -90,13 +90,13 @@ impl ::protobuf::Message for DialogueResult {
                 16 => {
                     self.HFHKBMGBJAN = is.read_uint32()?;
                 },
-                122 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.event_ids)?;
                 },
-                120 => {
+                80 => {
                     self.event_ids.push(is.read_uint32()?);
                 },
-                42 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_result)?;
                 },
                 tag => {
@@ -115,7 +115,7 @@ impl ::protobuf::Message for DialogueResult {
             my_size += ::protobuf::rt::uint32_size(2, self.HFHKBMGBJAN);
         }
         for value in &self.event_ids {
-            my_size += ::protobuf::rt::uint32_size(15, *value);
+            my_size += ::protobuf::rt::uint32_size(10, *value);
         };
         if let Some(v) = self.item_result.as_ref() {
             let len = v.compute_size();
@@ -131,10 +131,10 @@ impl ::protobuf::Message for DialogueResult {
             os.write_uint32(2, self.HFHKBMGBJAN)?;
         }
         for v in &self.event_ids {
-            os.write_uint32(15, *v)?;
+            os.write_uint32(10, *v)?;
         };
         if let Some(v) = self.item_result.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -190,9 +190,9 @@ impl ::protobuf::reflect::ProtobufValue for DialogueResult {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14DialogueResult.proto\x1a\x0eItemList.proto\"{\n\x0eDialogueResult\
     \x12\x20\n\x0bHFHKBMGBJAN\x18\x02\x20\x01(\rR\x0bHFHKBMGBJAN\x12\x1b\n\t\
-    event_ids\x18\x0f\x20\x03(\rR\x08eventIds\x12*\n\x0bitem_result\x18\x05\
-    \x20\x01(\x0b2\t.ItemListR\nitemResultB\x15\n\x13emu.lunarcore.protob\
-    \x06proto3\
+    event_ids\x18\n\x20\x03(\rR\x08eventIds\x12*\n\x0bitem_result\x18\r\x20\
+    \x01(\x0b2\t.ItemListR\nitemResultB\x15\n\x13emu.lunarcore.protob\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

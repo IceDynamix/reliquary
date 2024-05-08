@@ -108,22 +108,22 @@ impl ::protobuf::Message for GetMailScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                48 => {
                     self.total_num = is.read_uint32()?;
                 },
-                16 => {
+                24 => {
                     self.start = is.read_uint32()?;
                 },
-                72 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                10 => {
+                106 => {
                     self.mail_list.push(is.read_message()?);
                 },
-                32 => {
+                80 => {
                     self.is_end = is.read_bool()?;
                 },
-                58 => {
+                18 => {
                     self.notice_mail_list.push(is.read_message()?);
                 },
                 tag => {
@@ -139,13 +139,13 @@ impl ::protobuf::Message for GetMailScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.total_num != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.total_num);
+            my_size += ::protobuf::rt::uint32_size(6, self.total_num);
         }
         if self.start != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.start);
+            my_size += ::protobuf::rt::uint32_size(3, self.start);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         for value in &self.mail_list {
             let len = value.compute_size();
@@ -165,22 +165,22 @@ impl ::protobuf::Message for GetMailScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.total_num != 0 {
-            os.write_uint32(5, self.total_num)?;
+            os.write_uint32(6, self.total_num)?;
         }
         if self.start != 0 {
-            os.write_uint32(2, self.start)?;
+            os.write_uint32(3, self.start)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         for v in &self.mail_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         if self.is_end != false {
-            os.write_bool(4, self.is_end)?;
+            os.write_bool(10, self.is_end)?;
         }
         for v in &self.notice_mail_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -241,11 +241,11 @@ impl ::protobuf::reflect::ProtobufValue for GetMailScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12GetMailScRsp.proto\x1a\x10ClientMail.proto\"\xd3\x01\n\x0cGetMailS\
-    cRsp\x12\x1b\n\ttotal_num\x18\x05\x20\x01(\rR\x08totalNum\x12\x14\n\x05s\
-    tart\x18\x02\x20\x01(\rR\x05start\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\
-    \x07retcode\x12(\n\tmail_list\x18\x01\x20\x03(\x0b2\x0b.ClientMailR\x08m\
-    ailList\x12\x15\n\x06is_end\x18\x04\x20\x01(\x08R\x05isEnd\x125\n\x10not\
-    ice_mail_list\x18\x07\x20\x03(\x0b2\x0b.ClientMailR\x0enoticeMailListB\
+    cRsp\x12\x1b\n\ttotal_num\x18\x06\x20\x01(\rR\x08totalNum\x12\x14\n\x05s\
+    tart\x18\x03\x20\x01(\rR\x05start\x12\x18\n\x07retcode\x18\x01\x20\x01(\
+    \rR\x07retcode\x12(\n\tmail_list\x18\r\x20\x03(\x0b2\x0b.ClientMailR\x08\
+    mailList\x12\x15\n\x06is_end\x18\n\x20\x01(\x08R\x05isEnd\x125\n\x10noti\
+    ce_mail_list\x18\x02\x20\x03(\x0b2\x0b.ClientMailR\x0enoticeMailListB\
     \x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

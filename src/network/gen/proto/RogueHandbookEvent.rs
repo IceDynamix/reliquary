@@ -87,16 +87,16 @@ impl ::protobuf::Message for RogueHandbookEvent {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                88 => {
                     self.event_id = is.read_uint32()?;
                 },
-                16 => {
+                112 => {
                     self.is_unlocked = is.read_bool()?;
                 },
-                50 => {
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.MDALHHJKHNJ)?;
                 },
-                48 => {
+                104 => {
                     self.MDALHHJKHNJ.push(is.read_uint32()?);
                 },
                 tag => {
@@ -112,13 +112,13 @@ impl ::protobuf::Message for RogueHandbookEvent {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.event_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.event_id);
         }
         if self.is_unlocked != false {
             my_size += 1 + 1;
         }
         for value in &self.MDALHHJKHNJ {
-            my_size += ::protobuf::rt::uint32_size(6, *value);
+            my_size += ::protobuf::rt::uint32_size(13, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -127,13 +127,13 @@ impl ::protobuf::Message for RogueHandbookEvent {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.event_id != 0 {
-            os.write_uint32(7, self.event_id)?;
+            os.write_uint32(11, self.event_id)?;
         }
         if self.is_unlocked != false {
-            os.write_bool(2, self.is_unlocked)?;
+            os.write_bool(14, self.is_unlocked)?;
         }
         for v in &self.MDALHHJKHNJ {
-            os.write_uint32(6, *v)?;
+            os.write_uint32(13, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -188,8 +188,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueHandbookEvent {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18RogueHandbookEvent.proto\"r\n\x12RogueHandbookEvent\x12\x19\n\x08e\
-    vent_id\x18\x07\x20\x01(\rR\x07eventId\x12\x1f\n\x0bis_unlocked\x18\x02\
-    \x20\x01(\x08R\nisUnlocked\x12\x20\n\x0bMDALHHJKHNJ\x18\x06\x20\x03(\rR\
+    vent_id\x18\x0b\x20\x01(\rR\x07eventId\x12\x1f\n\x0bis_unlocked\x18\x0e\
+    \x20\x01(\x08R\nisUnlocked\x12\x20\n\x0bMDALHHJKHNJ\x18\r\x20\x03(\rR\
     \x0bMDALHHJKHNJB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

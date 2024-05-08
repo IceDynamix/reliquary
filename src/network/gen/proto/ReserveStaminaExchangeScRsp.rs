@@ -80,10 +80,10 @@ impl ::protobuf::Message for ReserveStaminaExchangeScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                96 => {
                     self.num = is.read_uint32()?;
                 },
-                96 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -99,10 +99,10 @@ impl ::protobuf::Message for ReserveStaminaExchangeScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.num != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.num);
+            my_size += ::protobuf::rt::uint32_size(12, self.num);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for ReserveStaminaExchangeScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.num != 0 {
-            os.write_uint32(8, self.num)?;
+            os.write_uint32(12, self.num)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for ReserveStaminaExchangeScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!ReserveStaminaExchangeScRsp.proto\"I\n\x1bReserveStaminaExchangeScRsp\
-    \x12\x10\n\x03num\x18\x08\x20\x01(\rR\x03num\x12\x18\n\x07retcode\x18\
-    \x0c\x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \x12\x10\n\x03num\x18\x0c\x20\x01(\rR\x03num\x12\x18\n\x07retcode\x18\
+    \x0b\x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

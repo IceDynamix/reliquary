@@ -115,25 +115,25 @@ impl ::protobuf::Message for Shop {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                120 => {
                     self.city_level = is.read_uint32()?;
                 },
-                32 => {
+                40 => {
                     self.begin_time = is.read_int64()?;
                 },
-                16 => {
+                72 => {
                     self.end_time = is.read_int64()?;
                 },
                 58 => {
                     self.goods_list.push(is.read_message()?);
                 },
-                72 => {
+                88 => {
                     self.city_exp = is.read_uint32()?;
                 },
-                88 => {
+                112 => {
                     self.city_taken_level_reward = is.read_uint64()?;
                 },
-                104 => {
+                48 => {
                     self.shop_id = is.read_uint32()?;
                 },
                 tag => {
@@ -149,26 +149,26 @@ impl ::protobuf::Message for Shop {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.city_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.city_level);
+            my_size += ::protobuf::rt::uint32_size(15, self.city_level);
         }
         if self.begin_time != 0 {
-            my_size += ::protobuf::rt::int64_size(4, self.begin_time);
+            my_size += ::protobuf::rt::int64_size(5, self.begin_time);
         }
         if self.end_time != 0 {
-            my_size += ::protobuf::rt::int64_size(2, self.end_time);
+            my_size += ::protobuf::rt::int64_size(9, self.end_time);
         }
         for value in &self.goods_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.city_exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.city_exp);
+            my_size += ::protobuf::rt::uint32_size(11, self.city_exp);
         }
         if self.city_taken_level_reward != 0 {
-            my_size += ::protobuf::rt::uint64_size(11, self.city_taken_level_reward);
+            my_size += ::protobuf::rt::uint64_size(14, self.city_taken_level_reward);
         }
         if self.shop_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.shop_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.shop_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -177,25 +177,25 @@ impl ::protobuf::Message for Shop {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.city_level != 0 {
-            os.write_uint32(12, self.city_level)?;
+            os.write_uint32(15, self.city_level)?;
         }
         if self.begin_time != 0 {
-            os.write_int64(4, self.begin_time)?;
+            os.write_int64(5, self.begin_time)?;
         }
         if self.end_time != 0 {
-            os.write_int64(2, self.end_time)?;
+            os.write_int64(9, self.end_time)?;
         }
         for v in &self.goods_list {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         if self.city_exp != 0 {
-            os.write_uint32(9, self.city_exp)?;
+            os.write_uint32(11, self.city_exp)?;
         }
         if self.city_taken_level_reward != 0 {
-            os.write_uint64(11, self.city_taken_level_reward)?;
+            os.write_uint64(14, self.city_taken_level_reward)?;
         }
         if self.shop_id != 0 {
-            os.write_uint32(13, self.shop_id)?;
+            os.write_uint32(6, self.shop_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -258,12 +258,13 @@ impl ::protobuf::reflect::ProtobufValue for Shop {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\nShop.proto\x1a\x0bGoods.proto\"\xf1\x01\n\x04Shop\x12\x1d\n\ncity_le\
-    vel\x18\x0c\x20\x01(\rR\tcityLevel\x12\x1d\n\nbegin_time\x18\x04\x20\x01\
-    (\x03R\tbeginTime\x12\x19\n\x08end_time\x18\x02\x20\x01(\x03R\x07endTime\
+    vel\x18\x0f\x20\x01(\rR\tcityLevel\x12\x1d\n\nbegin_time\x18\x05\x20\x01\
+    (\x03R\tbeginTime\x12\x19\n\x08end_time\x18\t\x20\x01(\x03R\x07endTime\
     \x12%\n\ngoods_list\x18\x07\x20\x03(\x0b2\x06.GoodsR\tgoodsList\x12\x19\
-    \n\x08city_exp\x18\t\x20\x01(\rR\x07cityExp\x125\n\x17city_taken_level_r\
-    eward\x18\x0b\x20\x01(\x04R\x14cityTakenLevelReward\x12\x17\n\x07shop_id\
-    \x18\r\x20\x01(\rR\x06shopIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x08city_exp\x18\x0b\x20\x01(\rR\x07cityExp\x125\n\x17city_taken_level\
+    _reward\x18\x0e\x20\x01(\x04R\x14cityTakenLevelReward\x12\x17\n\x07shop_\
+    id\x18\x06\x20\x01(\rR\x06shopIdB\x15\n\x13emu.lunarcore.protob\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

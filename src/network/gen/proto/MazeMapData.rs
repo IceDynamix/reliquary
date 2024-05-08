@@ -122,34 +122,34 @@ impl ::protobuf::Message for MazeMapData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                50 => {
                     self.unlocked_chest_list.push(is.read_message()?);
                 },
-                10 => {
+                18 => {
                     self.maze_group_list.push(is.read_message()?);
                 },
-                88 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
-                82 => {
+                122 => {
                     self.maze_prop_list.push(is.read_message()?);
                 },
-                74 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.lighten_section_list)?;
                 },
-                72 => {
+                80 => {
                     self.lighten_section_list.push(is.read_uint32()?);
                 },
-                18 => {
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.unlocked_teleport_list)?;
                 },
-                16 => {
+                104 => {
                     self.unlocked_teleport_list.push(is.read_uint32()?);
                 },
                 112 => {
                     self.cur_map_entry_id = is.read_uint32()?;
                 },
-                120 => {
+                96 => {
                     self.entry_id = is.read_uint32()?;
                 },
                 tag => {
@@ -173,23 +173,23 @@ impl ::protobuf::Message for MazeMapData {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         for value in &self.maze_prop_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         for value in &self.lighten_section_list {
-            my_size += ::protobuf::rt::uint32_size(9, *value);
+            my_size += ::protobuf::rt::uint32_size(10, *value);
         };
         for value in &self.unlocked_teleport_list {
-            my_size += ::protobuf::rt::uint32_size(2, *value);
+            my_size += ::protobuf::rt::uint32_size(13, *value);
         };
         if self.cur_map_entry_id != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.cur_map_entry_id);
         }
         if self.entry_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.entry_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.entry_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -198,28 +198,28 @@ impl ::protobuf::Message for MazeMapData {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.unlocked_chest_list {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
         for v in &self.maze_group_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
         for v in &self.maze_prop_list {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         for v in &self.lighten_section_list {
-            os.write_uint32(9, *v)?;
+            os.write_uint32(10, *v)?;
         };
         for v in &self.unlocked_teleport_list {
-            os.write_uint32(2, *v)?;
+            os.write_uint32(13, *v)?;
         };
         if self.cur_map_entry_id != 0 {
             os.write_uint32(14, self.cur_map_entry_id)?;
         }
         if self.entry_id != 0 {
-            os.write_uint32(15, self.entry_id)?;
+            os.write_uint32(12, self.entry_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -285,14 +285,14 @@ impl ::protobuf::reflect::ProtobufValue for MazeMapData {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MazeMapData.proto\x1a\x0fMazeGroup.proto\x1a\x0fMazeChest.proto\
     \x1a\x0eMazeProp.proto\"\xf4\x02\n\x0bMazeMapData\x12:\n\x13unlocked_che\
-    st_list\x18\r\x20\x03(\x0b2\n.MazeChestR\x11unlockedChestList\x122\n\x0f\
-    maze_group_list\x18\x01\x20\x03(\x0b2\n.MazeGroupR\rmazeGroupList\x12\
-    \x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12/\n\x0emaze_prop_lis\
-    t\x18\n\x20\x03(\x0b2\t.MazePropR\x0cmazePropList\x120\n\x14lighten_sect\
-    ion_list\x18\t\x20\x03(\rR\x12lightenSectionList\x124\n\x16unlocked_tele\
-    port_list\x18\x02\x20\x03(\rR\x14unlockedTeleportList\x12'\n\x10cur_map_\
-    entry_id\x18\x0e\x20\x01(\rR\rcurMapEntryId\x12\x19\n\x08entry_id\x18\
-    \x0f\x20\x01(\rR\x07entryIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    st_list\x18\x06\x20\x03(\x0b2\n.MazeChestR\x11unlockedChestList\x122\n\
+    \x0fmaze_group_list\x18\x02\x20\x03(\x0b2\n.MazeGroupR\rmazeGroupList\
+    \x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12/\n\x0emaze_prop\
+    _list\x18\x0f\x20\x03(\x0b2\t.MazePropR\x0cmazePropList\x120\n\x14lighte\
+    n_section_list\x18\n\x20\x03(\rR\x12lightenSectionList\x124\n\x16unlocke\
+    d_teleport_list\x18\r\x20\x03(\rR\x14unlockedTeleportList\x12'\n\x10cur_\
+    map_entry_id\x18\x0e\x20\x01(\rR\rcurMapEntryId\x12\x19\n\x08entry_id\
+    \x18\x0c\x20\x01(\rR\x07entryIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

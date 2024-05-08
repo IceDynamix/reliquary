@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnhanceRogueBuffScRsp {
     // message fields
-    // @@protoc_insertion_point(field:EnhanceRogueBuffScRsp.is_success)
-    pub is_success: bool,
     // @@protoc_insertion_point(field:EnhanceRogueBuffScRsp.rogue_buff)
     pub rogue_buff: ::protobuf::MessageField<super::RogueBuff::RogueBuff>,
+    // @@protoc_insertion_point(field:EnhanceRogueBuffScRsp.is_success)
+    pub is_success: bool,
     // @@protoc_insertion_point(field:EnhanceRogueBuffScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -54,15 +54,15 @@ impl EnhanceRogueBuffScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_success",
-            |m: &EnhanceRogueBuffScRsp| { &m.is_success },
-            |m: &mut EnhanceRogueBuffScRsp| { &mut m.is_success },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueBuff::RogueBuff>(
             "rogue_buff",
             |m: &EnhanceRogueBuffScRsp| { &m.rogue_buff },
             |m: &mut EnhanceRogueBuffScRsp| { &mut m.rogue_buff },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_success",
+            |m: &EnhanceRogueBuffScRsp| { &m.is_success },
+            |m: &mut EnhanceRogueBuffScRsp| { &mut m.is_success },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -87,13 +87,13 @@ impl ::protobuf::Message for EnhanceRogueBuffScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.is_success = is.read_bool()?;
-                },
-                50 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_buff)?;
                 },
-                120 => {
+                104 => {
+                    self.is_success = is.read_bool()?;
+                },
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -108,15 +108,15 @@ impl ::protobuf::Message for EnhanceRogueBuffScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_success != false {
-            my_size += 1 + 1;
-        }
         if let Some(v) = self.rogue_buff.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.is_success != false {
+            my_size += 1 + 1;
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for EnhanceRogueBuffScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_success != false {
-            os.write_bool(12, self.is_success)?;
-        }
         if let Some(v) = self.rogue_buff.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        }
+        if self.is_success != false {
+            os.write_bool(13, self.is_success)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for EnhanceRogueBuffScRsp {
     }
 
     fn clear(&mut self) {
-        self.is_success = false;
         self.rogue_buff.clear();
+        self.is_success = false;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnhanceRogueBuffScRsp {
         static instance: EnhanceRogueBuffScRsp = EnhanceRogueBuffScRsp {
-            is_success: false,
             rogue_buff: ::protobuf::MessageField::none(),
+            is_success: false,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for EnhanceRogueBuffScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bEnhanceRogueBuffScRsp.proto\x1a\x0fRogueBuff.proto\"{\n\x15Enhance\
-    RogueBuffScRsp\x12\x1d\n\nis_success\x18\x0c\x20\x01(\x08R\tisSuccess\
-    \x12)\n\nrogue_buff\x18\x06\x20\x01(\x0b2\n.RogueBuffR\trogueBuff\x12\
-    \x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore\
-    .protob\x06proto3\
+    RogueBuffScRsp\x12)\n\nrogue_buff\x18\x0f\x20\x01(\x0b2\n.RogueBuffR\tro\
+    gueBuff\x12\x1d\n\nis_success\x18\r\x20\x01(\x08R\tisSuccess\x12\x18\n\
+    \x07retcode\x18\x02\x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore.proto\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

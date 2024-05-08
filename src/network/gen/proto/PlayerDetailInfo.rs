@@ -43,6 +43,10 @@ pub struct PlayerDetailInfo {
     pub uid: u32,
     // @@protoc_insertion_point(field:PlayerDetailInfo.nickname)
     pub nickname: ::std::string::String,
+    // @@protoc_insertion_point(field:PlayerDetailInfo.int1)
+    pub int1: i32,
+    // @@protoc_insertion_point(field:PlayerDetailInfo.b1)
+    pub b1: bool,
     // @@protoc_insertion_point(field:PlayerDetailInfo.display_avatar_info)
     pub display_avatar_info: ::std::string::String,
     // @@protoc_insertion_point(field:PlayerDetailInfo.record_info)
@@ -64,7 +68,7 @@ impl PlayerDetailInfo {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(9);
+        let mut fields = ::std::vec::Vec::with_capacity(11);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "world_level",
@@ -102,6 +106,16 @@ impl PlayerDetailInfo {
             |m: &mut PlayerDetailInfo| { &mut m.nickname },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "int1",
+            |m: &PlayerDetailInfo| { &m.int1 },
+            |m: &mut PlayerDetailInfo| { &mut m.int1 },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "b1",
+            |m: &PlayerDetailInfo| { &m.b1 },
+            |m: &mut PlayerDetailInfo| { &mut m.b1 },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "display_avatar_info",
             |m: &PlayerDetailInfo| { &m.display_avatar_info },
             |m: &mut PlayerDetailInfo| { &mut m.display_avatar_info },
@@ -129,31 +143,37 @@ impl ::protobuf::Message for PlayerDetailInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                72 => {
                     self.world_level = is.read_uint32()?;
                 },
-                18 => {
+                26 => {
                     self.signature = is.read_string()?;
                 },
-                32 => {
+                120 => {
                     self.platform_type = is.read_enum_or_unknown()?;
                 },
-                72 => {
+                80 => {
                     self.level = is.read_uint32()?;
                 },
-                56 => {
+                48 => {
                     self.head_icon = is.read_uint32()?;
                 },
-                104 => {
+                40 => {
                     self.uid = is.read_uint32()?;
                 },
-                50 => {
+                34 => {
                     self.nickname = is.read_string()?;
                 },
-                114 => {
+                8 => {
+                    self.int1 = is.read_int32()?;
+                },
+                112 => {
+                    self.b1 = is.read_bool()?;
+                },
+                106 => {
                     self.display_avatar_info = is.read_string()?;
                 },
-                122 => {
+                3402 => {
                     self.record_info = is.read_string()?;
                 },
                 tag => {
@@ -169,31 +189,37 @@ impl ::protobuf::Message for PlayerDetailInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.world_level);
+            my_size += ::protobuf::rt::uint32_size(9, self.world_level);
         }
         if !self.signature.is_empty() {
-            my_size += ::protobuf::rt::string_size(2, &self.signature);
+            my_size += ::protobuf::rt::string_size(3, &self.signature);
         }
         if self.platform_type != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
-            my_size += ::protobuf::rt::int32_size(4, self.platform_type.value());
+            my_size += ::protobuf::rt::int32_size(15, self.platform_type.value());
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.level);
+            my_size += ::protobuf::rt::uint32_size(10, self.level);
         }
         if self.head_icon != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.head_icon);
+            my_size += ::protobuf::rt::uint32_size(6, self.head_icon);
         }
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.uid);
+            my_size += ::protobuf::rt::uint32_size(5, self.uid);
         }
         if !self.nickname.is_empty() {
-            my_size += ::protobuf::rt::string_size(6, &self.nickname);
+            my_size += ::protobuf::rt::string_size(4, &self.nickname);
+        }
+        if self.int1 != 0 {
+            my_size += ::protobuf::rt::int32_size(1, self.int1);
+        }
+        if self.b1 != false {
+            my_size += 1 + 1;
         }
         if !self.display_avatar_info.is_empty() {
-            my_size += ::protobuf::rt::string_size(14, &self.display_avatar_info);
+            my_size += ::protobuf::rt::string_size(13, &self.display_avatar_info);
         }
         if !self.record_info.is_empty() {
-            my_size += ::protobuf::rt::string_size(15, &self.record_info);
+            my_size += ::protobuf::rt::string_size(425, &self.record_info);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -202,31 +228,37 @@ impl ::protobuf::Message for PlayerDetailInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.world_level != 0 {
-            os.write_uint32(10, self.world_level)?;
+            os.write_uint32(9, self.world_level)?;
         }
         if !self.signature.is_empty() {
-            os.write_string(2, &self.signature)?;
+            os.write_string(3, &self.signature)?;
         }
         if self.platform_type != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.platform_type))?;
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.platform_type))?;
         }
         if self.level != 0 {
-            os.write_uint32(9, self.level)?;
+            os.write_uint32(10, self.level)?;
         }
         if self.head_icon != 0 {
-            os.write_uint32(7, self.head_icon)?;
+            os.write_uint32(6, self.head_icon)?;
         }
         if self.uid != 0 {
-            os.write_uint32(13, self.uid)?;
+            os.write_uint32(5, self.uid)?;
         }
         if !self.nickname.is_empty() {
-            os.write_string(6, &self.nickname)?;
+            os.write_string(4, &self.nickname)?;
+        }
+        if self.int1 != 0 {
+            os.write_int32(1, self.int1)?;
+        }
+        if self.b1 != false {
+            os.write_bool(14, self.b1)?;
         }
         if !self.display_avatar_info.is_empty() {
-            os.write_string(14, &self.display_avatar_info)?;
+            os.write_string(13, &self.display_avatar_info)?;
         }
         if !self.record_info.is_empty() {
-            os.write_string(15, &self.record_info)?;
+            os.write_string(425, &self.record_info)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -252,6 +284,8 @@ impl ::protobuf::Message for PlayerDetailInfo {
         self.head_icon = 0;
         self.uid = 0;
         self.nickname.clear();
+        self.int1 = 0;
+        self.b1 = false;
         self.display_avatar_info.clear();
         self.record_info.clear();
         self.special_fields.clear();
@@ -266,6 +300,8 @@ impl ::protobuf::Message for PlayerDetailInfo {
             head_icon: 0,
             uid: 0,
             nickname: ::std::string::String::new(),
+            int1: 0,
+            b1: false,
             display_avatar_info: ::std::string::String::new(),
             record_info: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -292,15 +328,17 @@ impl ::protobuf::reflect::ProtobufValue for PlayerDetailInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16PlayerDetailInfo.proto\x1a\x12PlatformType.proto\"\xb7\x02\n\x10Pl\
-    ayerDetailInfo\x12\x1f\n\x0bworld_level\x18\n\x20\x01(\rR\nworldLevel\
-    \x12\x1c\n\tsignature\x18\x02\x20\x01(\tR\tsignature\x122\n\rplatform_ty\
-    pe\x18\x04\x20\x01(\x0e2\r.PlatformTypeR\x0cplatformType\x12\x14\n\x05le\
-    vel\x18\t\x20\x01(\rR\x05level\x12\x1b\n\thead_icon\x18\x07\x20\x01(\rR\
-    \x08headIcon\x12\x10\n\x03uid\x18\r\x20\x01(\rR\x03uid\x12\x1a\n\x08nick\
-    name\x18\x06\x20\x01(\tR\x08nickname\x12.\n\x13display_avatar_info\x18\
-    \x0e\x20\x01(\tR\x11displayAvatarInfo\x12\x1f\n\x0brecord_info\x18\x0f\
-    \x20\x01(\tR\nrecordInfoB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x16PlayerDetailInfo.proto\x1a\x12PlatformType.proto\"\xdc\x02\n\x10Pl\
+    ayerDetailInfo\x12\x1f\n\x0bworld_level\x18\t\x20\x01(\rR\nworldLevel\
+    \x12\x1c\n\tsignature\x18\x03\x20\x01(\tR\tsignature\x122\n\rplatform_ty\
+    pe\x18\x0f\x20\x01(\x0e2\r.PlatformTypeR\x0cplatformType\x12\x14\n\x05le\
+    vel\x18\n\x20\x01(\rR\x05level\x12\x1b\n\thead_icon\x18\x06\x20\x01(\rR\
+    \x08headIcon\x12\x10\n\x03uid\x18\x05\x20\x01(\rR\x03uid\x12\x1a\n\x08ni\
+    ckname\x18\x04\x20\x01(\tR\x08nickname\x12\x12\n\x04int1\x18\x01\x20\x01\
+    (\x05R\x04int1\x12\x0e\n\x02b1\x18\x0e\x20\x01(\x08R\x02b1\x12.\n\x13dis\
+    play_avatar_info\x18\r\x20\x01(\tR\x11displayAvatarInfo\x12\x20\n\x0brec\
+    ord_info\x18\xa9\x03\x20\x01(\tR\nrecordInfoB\x15\n\x13emu.lunarcore.pro\
+    tob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

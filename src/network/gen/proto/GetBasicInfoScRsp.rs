@@ -122,28 +122,28 @@ impl ::protobuf::Message for GetBasicInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                24 => {
                     self.cur_day = is.read_uint32()?;
                 },
-                56 => {
+                80 => {
                     self.last_set_nickname_time = is.read_int64()?;
                 },
-                112 => {
+                64 => {
                     self.exchange_times = is.read_uint32()?;
                 },
-                24 => {
+                88 => {
                     self.week_cocoon_finished_count = is.read_uint32()?;
                 },
-                122 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_setting_info)?;
                 },
-                40 => {
+                16 => {
                     self.gameplay_birthday = is.read_uint32()?;
                 },
-                48 => {
+                120 => {
                     self.next_recover_time = is.read_int64()?;
                 },
-                88 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -159,29 +159,29 @@ impl ::protobuf::Message for GetBasicInfoScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.cur_day != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.cur_day);
+            my_size += ::protobuf::rt::uint32_size(3, self.cur_day);
         }
         if self.last_set_nickname_time != 0 {
-            my_size += ::protobuf::rt::int64_size(7, self.last_set_nickname_time);
+            my_size += ::protobuf::rt::int64_size(10, self.last_set_nickname_time);
         }
         if self.exchange_times != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.exchange_times);
+            my_size += ::protobuf::rt::uint32_size(8, self.exchange_times);
         }
         if self.week_cocoon_finished_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.week_cocoon_finished_count);
+            my_size += ::protobuf::rt::uint32_size(11, self.week_cocoon_finished_count);
         }
         if let Some(v) = self.player_setting_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.gameplay_birthday != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.gameplay_birthday);
+            my_size += ::protobuf::rt::uint32_size(2, self.gameplay_birthday);
         }
         if self.next_recover_time != 0 {
-            my_size += ::protobuf::rt::int64_size(6, self.next_recover_time);
+            my_size += ::protobuf::rt::int64_size(15, self.next_recover_time);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -190,28 +190,28 @@ impl ::protobuf::Message for GetBasicInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.cur_day != 0 {
-            os.write_uint32(4, self.cur_day)?;
+            os.write_uint32(3, self.cur_day)?;
         }
         if self.last_set_nickname_time != 0 {
-            os.write_int64(7, self.last_set_nickname_time)?;
+            os.write_int64(10, self.last_set_nickname_time)?;
         }
         if self.exchange_times != 0 {
-            os.write_uint32(14, self.exchange_times)?;
+            os.write_uint32(8, self.exchange_times)?;
         }
         if self.week_cocoon_finished_count != 0 {
-            os.write_uint32(3, self.week_cocoon_finished_count)?;
+            os.write_uint32(11, self.week_cocoon_finished_count)?;
         }
         if let Some(v) = self.player_setting_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if self.gameplay_birthday != 0 {
-            os.write_uint32(5, self.gameplay_birthday)?;
+            os.write_uint32(2, self.gameplay_birthday)?;
         }
         if self.next_recover_time != 0 {
-            os.write_int64(6, self.next_recover_time)?;
+            os.write_int64(15, self.next_recover_time)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -276,14 +276,14 @@ impl ::protobuf::reflect::ProtobufValue for GetBasicInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17GetBasicInfoScRsp.proto\x1a\x17PlayerSettingInfo.proto\"\xfc\x02\n\
-    \x11GetBasicInfoScRsp\x12\x17\n\x07cur_day\x18\x04\x20\x01(\rR\x06curDay\
-    \x123\n\x16last_set_nickname_time\x18\x07\x20\x01(\x03R\x13lastSetNickna\
-    meTime\x12%\n\x0eexchange_times\x18\x0e\x20\x01(\rR\rexchangeTimes\x12;\
-    \n\x1aweek_cocoon_finished_count\x18\x03\x20\x01(\rR\x17weekCocoonFinish\
-    edCount\x12B\n\x13player_setting_info\x18\x0f\x20\x01(\x0b2\x12.PlayerSe\
-    ttingInfoR\x11playerSettingInfo\x12+\n\x11gameplay_birthday\x18\x05\x20\
-    \x01(\rR\x10gameplayBirthday\x12*\n\x11next_recover_time\x18\x06\x20\x01\
-    (\x03R\x0fnextRecoverTime\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07re\
+    \x11GetBasicInfoScRsp\x12\x17\n\x07cur_day\x18\x03\x20\x01(\rR\x06curDay\
+    \x123\n\x16last_set_nickname_time\x18\n\x20\x01(\x03R\x13lastSetNickname\
+    Time\x12%\n\x0eexchange_times\x18\x08\x20\x01(\rR\rexchangeTimes\x12;\n\
+    \x1aweek_cocoon_finished_count\x18\x0b\x20\x01(\rR\x17weekCocoonFinished\
+    Count\x12B\n\x13player_setting_info\x18\x0c\x20\x01(\x0b2\x12.PlayerSett\
+    ingInfoR\x11playerSettingInfo\x12+\n\x11gameplay_birthday\x18\x02\x20\
+    \x01(\rR\x10gameplayBirthday\x12*\n\x11next_recover_time\x18\x0f\x20\x01\
+    (\x03R\x0fnextRecoverTime\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07re\
     tcodeB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

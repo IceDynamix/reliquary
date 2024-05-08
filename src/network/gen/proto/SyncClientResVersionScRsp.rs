@@ -80,10 +80,10 @@ impl ::protobuf::Message for SyncClientResVersionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                48 => {
                     self.client_res_version = is.read_uint32()?;
                 },
-                96 => {
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -99,10 +99,10 @@ impl ::protobuf::Message for SyncClientResVersionScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.client_res_version != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.client_res_version);
+            my_size += ::protobuf::rt::uint32_size(6, self.client_res_version);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for SyncClientResVersionScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.client_res_version != 0 {
-            os.write_uint32(11, self.client_res_version)?;
+            os.write_uint32(6, self.client_res_version)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for SyncClientResVersionScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fSyncClientResVersionScRsp.proto\"c\n\x19SyncClientResVersionScRsp\
-    \x12,\n\x12client_res_version\x18\x0b\x20\x01(\rR\x10clientResVersion\
-    \x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunar\
+    \x12,\n\x12client_res_version\x18\x06\x20\x01(\rR\x10clientResVersion\
+    \x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunar\
     core.protob\x06proto3\
 ";
 

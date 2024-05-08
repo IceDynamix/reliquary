@@ -101,19 +101,19 @@ impl ::protobuf::Message for SceneMonsterWave {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                72 => {
                     self.wave_id = is.read_uint32()?;
                 },
-                50 => {
+                42 => {
                     self.drop_list.push(is.read_message()?);
                 },
-                72 => {
+                112 => {
                     self.stage_id = is.read_uint32()?;
                 },
-                66 => {
+                18 => {
                     self.monster_list.push(is.read_message()?);
                 },
-                42 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.wave_param)?;
                 },
                 tag => {
@@ -129,14 +129,14 @@ impl ::protobuf::Message for SceneMonsterWave {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.wave_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.wave_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.wave_id);
         }
         for value in &self.drop_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.stage_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.stage_id);
         }
         for value in &self.monster_list {
             let len = value.compute_size();
@@ -153,19 +153,19 @@ impl ::protobuf::Message for SceneMonsterWave {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.wave_id != 0 {
-            os.write_uint32(11, self.wave_id)?;
+            os.write_uint32(9, self.wave_id)?;
         }
         for v in &self.drop_list {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         if self.stage_id != 0 {
-            os.write_uint32(9, self.stage_id)?;
+            os.write_uint32(14, self.stage_id)?;
         }
         for v in &self.monster_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         if let Some(v) = self.wave_param.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -225,12 +225,12 @@ impl ::protobuf::reflect::ProtobufValue for SceneMonsterWave {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16SceneMonsterWave.proto\x1a\x12SceneMonster.proto\x1a\x1bSceneMonst\
     erWaveParam.proto\x1a\x0eItemList.proto\"\xd7\x01\n\x10SceneMonsterWave\
-    \x12\x17\n\x07wave_id\x18\x0b\x20\x01(\rR\x06waveId\x12&\n\tdrop_list\
-    \x18\x06\x20\x03(\x0b2\t.ItemListR\x08dropList\x12\x19\n\x08stage_id\x18\
-    \t\x20\x01(\rR\x07stageId\x120\n\x0cmonster_list\x18\x08\x20\x03(\x0b2\r\
-    .SceneMonsterR\x0bmonsterList\x125\n\nwave_param\x18\x05\x20\x01(\x0b2\
-    \x16.SceneMonsterWaveParamR\twaveParamB\x15\n\x13emu.lunarcore.protob\
-    \x06proto3\
+    \x12\x17\n\x07wave_id\x18\t\x20\x01(\rR\x06waveId\x12&\n\tdrop_list\x18\
+    \x05\x20\x03(\x0b2\t.ItemListR\x08dropList\x12\x19\n\x08stage_id\x18\x0e\
+    \x20\x01(\rR\x07stageId\x120\n\x0cmonster_list\x18\x02\x20\x03(\x0b2\r.S\
+    ceneMonsterR\x0bmonsterList\x125\n\nwave_param\x18\x08\x20\x01(\x0b2\x16\
+    .SceneMonsterWaveParamR\twaveParamB\x15\n\x13emu.lunarcore.protob\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -93,7 +93,7 @@ impl ::protobuf::Message for StartRogueCsReq {
                 112 => {
                     self.base_avatar_id_list.push(is.read_uint32()?);
                 },
-                56 => {
+                24 => {
                     self.area_id = is.read_uint32()?;
                 },
                 16 => {
@@ -115,7 +115,7 @@ impl ::protobuf::Message for StartRogueCsReq {
             my_size += ::protobuf::rt::uint32_size(14, *value);
         };
         if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.area_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.area_id);
         }
         if self.buff_aeon_id != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.buff_aeon_id);
@@ -130,7 +130,7 @@ impl ::protobuf::Message for StartRogueCsReq {
             os.write_uint32(14, *v)?;
         };
         if self.area_id != 0 {
-            os.write_uint32(7, self.area_id)?;
+            os.write_uint32(3, self.area_id)?;
         }
         if self.buff_aeon_id != 0 {
             os.write_uint32(2, self.buff_aeon_id)?;
@@ -189,7 +189,7 @@ impl ::protobuf::reflect::ProtobufValue for StartRogueCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15StartRogueCsReq.proto\"{\n\x0fStartRogueCsReq\x12-\n\x13base_avata\
     r_id_list\x18\x0e\x20\x03(\rR\x10baseAvatarIdList\x12\x17\n\x07area_id\
-    \x18\x07\x20\x01(\rR\x06areaId\x12\x20\n\x0cbuff_aeon_id\x18\x02\x20\x01\
+    \x18\x03\x20\x01(\rR\x06areaId\x12\x20\n\x0cbuff_aeon_id\x18\x02\x20\x01\
     (\rR\nbuffAeonIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

@@ -28,9 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 // @@protoc_insertion_point(message:PropExtraInfo)
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PropExtraInfo {
-    // message fields
-    // @@protoc_insertion_point(field:PropExtraInfo.rogue_info)
-    pub rogue_info: ::protobuf::MessageField<super::PropRogueInfo::PropRogueInfo>,
+    // message oneof groups
+    pub info: ::std::option::Option<prop_extra_info::Info>,
     // special fields
     // @@protoc_insertion_point(special_field:PropExtraInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -47,14 +46,66 @@ impl PropExtraInfo {
         ::std::default::Default::default()
     }
 
+    // .PropRogueInfo rogue_info = 11;
+
+    pub fn rogue_info(&self) -> &super::PropRogueInfo::PropRogueInfo {
+        match self.info {
+            ::std::option::Option::Some(prop_extra_info::Info::RogueInfo(ref v)) => v,
+            _ => <super::PropRogueInfo::PropRogueInfo as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_rogue_info(&mut self) {
+        self.info = ::std::option::Option::None;
+    }
+
+    pub fn has_rogue_info(&self) -> bool {
+        match self.info {
+            ::std::option::Option::Some(prop_extra_info::Info::RogueInfo(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_rogue_info(&mut self, v: super::PropRogueInfo::PropRogueInfo) {
+        self.info = ::std::option::Option::Some(prop_extra_info::Info::RogueInfo(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_rogue_info(&mut self) -> &mut super::PropRogueInfo::PropRogueInfo {
+        if let ::std::option::Option::Some(prop_extra_info::Info::RogueInfo(_)) = self.info {
+        } else {
+            self.info = ::std::option::Option::Some(prop_extra_info::Info::RogueInfo(super::PropRogueInfo::PropRogueInfo::new()));
+        }
+        match self.info {
+            ::std::option::Option::Some(prop_extra_info::Info::RogueInfo(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_rogue_info(&mut self) -> super::PropRogueInfo::PropRogueInfo {
+        if self.has_rogue_info() {
+            match self.info.take() {
+                ::std::option::Option::Some(prop_extra_info::Info::RogueInfo(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::PropRogueInfo::PropRogueInfo::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
-        let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PropRogueInfo::PropRogueInfo>(
+        let mut oneofs = ::std::vec::Vec::with_capacity(1);
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PropRogueInfo::PropRogueInfo>(
             "rogue_info",
-            |m: &PropExtraInfo| { &m.rogue_info },
-            |m: &mut PropExtraInfo| { &mut m.rogue_info },
+            PropExtraInfo::has_rogue_info,
+            PropExtraInfo::rogue_info,
+            PropExtraInfo::mut_rogue_info,
+            PropExtraInfo::set_rogue_info,
         ));
+        oneofs.push(prop_extra_info::Info::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PropExtraInfo>(
             "PropExtraInfo",
             fields,
@@ -73,8 +124,8 @@ impl ::protobuf::Message for PropExtraInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_info)?;
+                90 => {
+                    self.info = ::std::option::Option::Some(prop_extra_info::Info::RogueInfo(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,9 +139,13 @@ impl ::protobuf::Message for PropExtraInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.rogue_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if let ::std::option::Option::Some(ref v) = self.info {
+            match v {
+                &prop_extra_info::Info::RogueInfo(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+            };
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -98,8 +153,12 @@ impl ::protobuf::Message for PropExtraInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.rogue_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if let ::std::option::Option::Some(ref v) = self.info {
+            match v {
+                &prop_extra_info::Info::RogueInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                },
+            };
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -118,13 +177,13 @@ impl ::protobuf::Message for PropExtraInfo {
     }
 
     fn clear(&mut self) {
-        self.rogue_info.clear();
+        self.info = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PropExtraInfo {
         static instance: PropExtraInfo = PropExtraInfo {
-            rogue_info: ::protobuf::MessageField::none(),
+            info: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,10 +207,38 @@ impl ::protobuf::reflect::ProtobufValue for PropExtraInfo {
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
+/// Nested message and enums of message `PropExtraInfo`
+pub mod prop_extra_info {
+
+    #[derive(Clone,PartialEq,Debug)]
+    #[non_exhaustive]
+    // @@protoc_insertion_point(oneof:PropExtraInfo.info)
+    pub enum Info {
+        // @@protoc_insertion_point(oneof_field:PropExtraInfo.rogue_info)
+        RogueInfo(super::super::PropRogueInfo::PropRogueInfo),
+    }
+
+    impl ::protobuf::Oneof for Info {
+    }
+
+    impl ::protobuf::OneofFull for Info {
+        fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
+            static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
+            descriptor.get(|| <super::PropExtraInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("info").unwrap()).clone()
+        }
+    }
+
+    impl Info {
+        pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<Info>("info")
+        }
+    }
+}
+
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13PropExtraInfo.proto\x1a\x13PropRogueInfo.proto\">\n\rPropExtraInfo\
-    \x12-\n\nrogue_info\x18\x0c\x20\x01(\x0b2\x0e.PropRogueInfoR\trogueInfoB\
-    \x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x13PropExtraInfo.proto\x1a\x13PropRogueInfo.proto\"H\n\rPropExtraInfo\
+    \x12/\n\nrogue_info\x18\x0b\x20\x01(\x0b2\x0e.PropRogueInfoH\0R\trogueIn\
+    foB\x06\n\x04infoB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

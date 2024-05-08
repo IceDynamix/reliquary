@@ -80,10 +80,10 @@ impl ::protobuf::Message for SceneEntityRefreshInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.add_entity)?;
                 },
-                104 => {
+                64 => {
                     self.del_entity = is.read_uint32()?;
                 },
                 tag => {
@@ -103,7 +103,7 @@ impl ::protobuf::Message for SceneEntityRefreshInfo {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.del_entity != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.del_entity);
+            my_size += ::protobuf::rt::uint32_size(8, self.del_entity);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -112,10 +112,10 @@ impl ::protobuf::Message for SceneEntityRefreshInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.add_entity.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if self.del_entity != 0 {
-            os.write_uint32(13, self.del_entity)?;
+            os.write_uint32(8, self.del_entity)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for SceneEntityRefreshInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cSceneEntityRefreshInfo.proto\x1a\x15SceneEntityInfo.proto\"h\n\x16\
-    SceneEntityRefreshInfo\x12/\n\nadd_entity\x18\x08\x20\x01(\x0b2\x10.Scen\
-    eEntityInfoR\taddEntity\x12\x1d\n\ndel_entity\x18\r\x20\x01(\rR\tdelEnti\
-    tyB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    SceneEntityRefreshInfo\x12/\n\nadd_entity\x18\x03\x20\x01(\x0b2\x10.Scen\
+    eEntityInfoR\taddEntity\x12\x1d\n\ndel_entity\x18\x08\x20\x01(\rR\tdelEn\
+    tityB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

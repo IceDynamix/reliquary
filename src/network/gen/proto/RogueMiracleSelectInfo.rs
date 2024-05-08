@@ -87,19 +87,19 @@ impl ::protobuf::Message for RogueMiracleSelectInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                80 => {
                     self.JDDLGDNOIEC = is.read_uint32()?;
                 },
-                82 => {
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.miracle_info_remote)?;
                 },
-                80 => {
+                96 => {
                     self.miracle_info_remote.push(is.read_uint32()?);
                 },
-                18 => {
+                122 => {
                     is.read_repeated_packed_uint32_into(&mut self.miracle_info)?;
                 },
-                16 => {
+                120 => {
                     self.miracle_info.push(is.read_uint32()?);
                 },
                 tag => {
@@ -115,13 +115,13 @@ impl ::protobuf::Message for RogueMiracleSelectInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.JDDLGDNOIEC != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.JDDLGDNOIEC);
+            my_size += ::protobuf::rt::uint32_size(10, self.JDDLGDNOIEC);
         }
         for value in &self.miracle_info_remote {
-            my_size += ::protobuf::rt::uint32_size(10, *value);
+            my_size += ::protobuf::rt::uint32_size(12, *value);
         };
         for value in &self.miracle_info {
-            my_size += ::protobuf::rt::uint32_size(2, *value);
+            my_size += ::protobuf::rt::uint32_size(15, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -130,13 +130,13 @@ impl ::protobuf::Message for RogueMiracleSelectInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.JDDLGDNOIEC != 0 {
-            os.write_uint32(6, self.JDDLGDNOIEC)?;
+            os.write_uint32(10, self.JDDLGDNOIEC)?;
         }
         for v in &self.miracle_info_remote {
-            os.write_uint32(10, *v)?;
+            os.write_uint32(12, *v)?;
         };
         for v in &self.miracle_info {
-            os.write_uint32(2, *v)?;
+            os.write_uint32(15, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -191,9 +191,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueMiracleSelectInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cRogueMiracleSelectInfo.proto\"\x8d\x01\n\x16RogueMiracleSelectInfo\
-    \x12\x20\n\x0bJDDLGDNOIEC\x18\x06\x20\x01(\rR\x0bJDDLGDNOIEC\x12.\n\x13m\
-    iracle_info_remote\x18\n\x20\x03(\rR\x11miracleInfoRemote\x12!\n\x0cmira\
-    cle_info\x18\x02\x20\x03(\rR\x0bmiracleInfoB\x15\n\x13emu.lunarcore.prot\
+    \x12\x20\n\x0bJDDLGDNOIEC\x18\n\x20\x01(\rR\x0bJDDLGDNOIEC\x12.\n\x13mir\
+    acle_info_remote\x18\x0c\x20\x03(\rR\x11miracleInfoRemote\x12!\n\x0cmira\
+    cle_info\x18\x0f\x20\x03(\rR\x0bmiracleInfoB\x15\n\x13emu.lunarcore.prot\
     ob\x06proto3\
 ";
 

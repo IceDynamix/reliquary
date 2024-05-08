@@ -129,31 +129,31 @@ impl ::protobuf::Message for ChessRogueCurrentInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.story_info)?;
                 },
-                82 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_avatar_info)?;
                 },
-                96 => {
+                48 => {
                     self.rogue_version_id = is.read_uint32()?;
                 },
-                106 => {
+                34 => {
                     self.virtual_item_info.push(is.read_message()?);
                 },
-                10 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.buff_info)?;
                 },
-                34 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.pending_action)?;
                 },
-                114 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.nous_value)?;
                 },
-                26 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.miracle_info)?;
                 },
-                90 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.dice_info)?;
                 },
                 tag => {
@@ -177,7 +177,7 @@ impl ::protobuf::Message for ChessRogueCurrentInfo {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.rogue_version_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.rogue_version_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.rogue_version_id);
         }
         for value in &self.virtual_item_info {
             let len = value.compute_size();
@@ -210,31 +210,31 @@ impl ::protobuf::Message for ChessRogueCurrentInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.story_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
-        if let Some(v) = self.rogue_avatar_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
+        if let Some(v) = self.rogue_avatar_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
         if self.rogue_version_id != 0 {
-            os.write_uint32(12, self.rogue_version_id)?;
+            os.write_uint32(6, self.rogue_version_id)?;
         }
         for v in &self.virtual_item_info {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
         if let Some(v) = self.buff_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if let Some(v) = self.pending_action.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if let Some(v) = self.nous_value.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if let Some(v) = self.miracle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if let Some(v) = self.dice_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -305,16 +305,16 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     o\x1a\x1eRogueCommonPendingAction.proto\x1a\x18ChessRogueBuffInfo.proto\
     \x1a\x1bChessRogueMiracleInfo.proto\x1a\x18ChessRogueNousDice.proto\x1a\
     \x19ChessRogueNousValue.proto\"\x9b\x04\n\x15ChessRogueCurrentInfo\x127\
-    \n\nstory_info\x18\x05\x20\x01(\x0b2\x18.ChessRogueNousStoryInfoR\tstory\
-    Info\x12A\n\x11rogue_avatar_info\x18\n\x20\x01(\x0b2\x15.ChessRogueAvata\
-    rInfoR\x0frogueAvatarInfo\x12(\n\x10rogue_version_id\x18\x0c\x20\x01(\rR\
-    \x0erogueVersionId\x12F\n\x11virtual_item_info\x18\r\x20\x03(\x0b2\x1a.C\
-    hessRogueVirtualItemInfoR\x0fvirtualItemInfo\x120\n\tbuff_info\x18\x01\
+    \n\nstory_info\x18\n\x20\x01(\x0b2\x18.ChessRogueNousStoryInfoR\tstoryIn\
+    fo\x12A\n\x11rogue_avatar_info\x18\t\x20\x01(\x0b2\x15.ChessRogueAvatarI\
+    nfoR\x0frogueAvatarInfo\x12(\n\x10rogue_version_id\x18\x06\x20\x01(\rR\
+    \x0erogueVersionId\x12F\n\x11virtual_item_info\x18\x04\x20\x03(\x0b2\x1a\
+    .ChessRogueVirtualItemInfoR\x0fvirtualItemInfo\x120\n\tbuff_info\x18\x0c\
     \x20\x01(\x0b2\x13.ChessRogueBuffInfoR\x08buffInfo\x12@\n\x0epending_act\
-    ion\x18\x04\x20\x01(\x0b2\x19.RogueCommonPendingActionR\rpendingAction\
-    \x123\n\nnous_value\x18\x0e\x20\x01(\x0b2\x14.ChessRogueNousValueR\tnous\
-    Value\x129\n\x0cmiracle_info\x18\x03\x20\x01(\x0b2\x16.ChessRogueMiracle\
-    InfoR\x0bmiracleInfo\x120\n\tdice_info\x18\x0b\x20\x01(\x0b2\x13.ChessRo\
+    ion\x18\x0b\x20\x01(\x0b2\x19.RogueCommonPendingActionR\rpendingAction\
+    \x123\n\nnous_value\x18\x01\x20\x01(\x0b2\x14.ChessRogueNousValueR\tnous\
+    Value\x129\n\x0cmiracle_info\x18\x0e\x20\x01(\x0b2\x16.ChessRogueMiracle\
+    InfoR\x0bmiracleInfo\x120\n\tdice_info\x18\x0f\x20\x01(\x0b2\x13.ChessRo\
     gueNousDiceR\x08diceInfoB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

@@ -83,7 +83,7 @@ impl ::protobuf::Message for MazeGroup {
                 64 => {
                     self.group_id = is.read_uint32()?;
                 },
-                24 => {
+                112 => {
                     self.modify_time = is.read_int64()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for MazeGroup {
             my_size += ::protobuf::rt::uint32_size(8, self.group_id);
         }
         if self.modify_time != 0 {
-            my_size += ::protobuf::rt::int64_size(3, self.modify_time);
+            my_size += ::protobuf::rt::int64_size(14, self.modify_time);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -114,7 +114,7 @@ impl ::protobuf::Message for MazeGroup {
             os.write_uint32(8, self.group_id)?;
         }
         if self.modify_time != 0 {
-            os.write_int64(3, self.modify_time)?;
+            os.write_int64(14, self.modify_time)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for MazeGroup {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0fMazeGroup.proto\"G\n\tMazeGroup\x12\x19\n\x08group_id\x18\x08\x20\
-    \x01(\rR\x07groupId\x12\x1f\n\x0bmodify_time\x18\x03\x20\x01(\x03R\nmodi\
+    \x01(\rR\x07groupId\x12\x1f\n\x0bmodify_time\x18\x0e\x20\x01(\x03R\nmodi\
     fyTimeB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

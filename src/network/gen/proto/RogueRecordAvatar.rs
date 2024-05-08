@@ -31,6 +31,8 @@ pub struct RogueRecordAvatar {
     // message fields
     // @@protoc_insertion_point(field:RogueRecordAvatar.avatar_type)
     pub avatar_type: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
+    // @@protoc_insertion_point(field:RogueRecordAvatar.level)
+    pub level: u32,
     // @@protoc_insertion_point(field:RogueRecordAvatar.slot)
     pub slot: u32,
     // @@protoc_insertion_point(field:RogueRecordAvatar.id)
@@ -52,12 +54,17 @@ impl RogueRecordAvatar {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_type",
             |m: &RogueRecordAvatar| { &m.avatar_type },
             |m: &mut RogueRecordAvatar| { &mut m.avatar_type },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &RogueRecordAvatar| { &m.level },
+            |m: &mut RogueRecordAvatar| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "slot",
@@ -87,13 +94,16 @@ impl ::protobuf::Message for RogueRecordAvatar {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                16 => {
                     self.avatar_type = is.read_enum_or_unknown()?;
                 },
-                56 => {
+                8 => {
+                    self.level = is.read_uint32()?;
+                },
+                24 => {
                     self.slot = is.read_uint32()?;
                 },
-                112 => {
+                40 => {
                     self.id = is.read_uint32()?;
                 },
                 tag => {
@@ -109,13 +119,16 @@ impl ::protobuf::Message for RogueRecordAvatar {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(13, self.avatar_type.value());
+            my_size += ::protobuf::rt::int32_size(2, self.avatar_type.value());
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.level);
         }
         if self.slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.slot);
+            my_size += ::protobuf::rt::uint32_size(3, self.slot);
         }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.id);
+            my_size += ::protobuf::rt::uint32_size(5, self.id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +137,16 @@ impl ::protobuf::Message for RogueRecordAvatar {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
+        }
+        if self.level != 0 {
+            os.write_uint32(1, self.level)?;
         }
         if self.slot != 0 {
-            os.write_uint32(7, self.slot)?;
+            os.write_uint32(3, self.slot)?;
         }
         if self.id != 0 {
-            os.write_uint32(14, self.id)?;
+            os.write_uint32(5, self.id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,6 +166,7 @@ impl ::protobuf::Message for RogueRecordAvatar {
 
     fn clear(&mut self) {
         self.avatar_type = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE);
+        self.level = 0;
         self.slot = 0;
         self.id = 0;
         self.special_fields.clear();
@@ -158,6 +175,7 @@ impl ::protobuf::Message for RogueRecordAvatar {
     fn default_instance() -> &'static RogueRecordAvatar {
         static instance: RogueRecordAvatar = RogueRecordAvatar {
             avatar_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            level: 0,
             slot: 0,
             id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -184,10 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for RogueRecordAvatar {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17RogueRecordAvatar.proto\x1a\x10AvatarType.proto\"e\n\x11RogueRecor\
-    dAvatar\x12,\n\x0bavatar_type\x18\r\x20\x01(\x0e2\x0b.AvatarTypeR\navata\
-    rType\x12\x12\n\x04slot\x18\x07\x20\x01(\rR\x04slot\x12\x0e\n\x02id\x18\
-    \x0e\x20\x01(\rR\x02idB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x17RogueRecordAvatar.proto\x1a\x10AvatarType.proto\"{\n\x11RogueRecor\
+    dAvatar\x12,\n\x0bavatar_type\x18\x02\x20\x01(\x0e2\x0b.AvatarTypeR\nava\
+    tarType\x12\x14\n\x05level\x18\x01\x20\x01(\rR\x05level\x12\x12\n\x04slo\
+    t\x18\x03\x20\x01(\rR\x04slot\x12\x0e\n\x02id\x18\x05\x20\x01(\rR\x02idB\
+    \x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

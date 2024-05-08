@@ -33,6 +33,8 @@ pub struct HandleRogueCommonPendingActionScRsp {
     pub retcode: u32,
     // @@protoc_insertion_point(field:HandleRogueCommonPendingActionScRsp.times)
     pub times: u32,
+    // @@protoc_insertion_point(field:HandleRogueCommonPendingActionScRsp.times2)
+    pub times2: u32,
     // @@protoc_insertion_point(field:HandleRogueCommonPendingActionScRsp.rogue_buff_select)
     pub rogue_buff_select: ::protobuf::MessageField<super::RogueBuffSelect::RogueBuffSelect>,
     // @@protoc_insertion_point(field:HandleRogueCommonPendingActionScRsp.rogue_reroll_buff)
@@ -58,7 +60,7 @@ impl HandleRogueCommonPendingActionScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(6);
+        let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -69,6 +71,11 @@ impl HandleRogueCommonPendingActionScRsp {
             "times",
             |m: &HandleRogueCommonPendingActionScRsp| { &m.times },
             |m: &mut HandleRogueCommonPendingActionScRsp| { &mut m.times },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "times2",
+            |m: &HandleRogueCommonPendingActionScRsp| { &m.times2 },
+            |m: &mut HandleRogueCommonPendingActionScRsp| { &mut m.times2 },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueBuffSelect::RogueBuffSelect>(
             "rogue_buff_select",
@@ -111,19 +118,22 @@ impl ::protobuf::Message for HandleRogueCommonPendingActionScRsp {
                 72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                40 => {
+                56 => {
                     self.times = is.read_uint32()?;
                 },
-                6426 => {
+                112 => {
+                    self.times2 = is.read_uint32()?;
+                },
+                8698 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_buff_select)?;
                 },
-                6362 => {
+                1010 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_reroll_buff)?;
                 },
-                6642 => {
+                16234 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.miracle_select)?;
                 },
-                12354 => {
+                3138 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.bonus_select)?;
                 },
                 tag => {
@@ -142,7 +152,10 @@ impl ::protobuf::Message for HandleRogueCommonPendingActionScRsp {
             my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         if self.times != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.times);
+            my_size += ::protobuf::rt::uint32_size(7, self.times);
+        }
+        if self.times2 != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.times2);
         }
         if let Some(v) = self.rogue_buff_select.as_ref() {
             let len = v.compute_size();
@@ -170,19 +183,22 @@ impl ::protobuf::Message for HandleRogueCommonPendingActionScRsp {
             os.write_uint32(9, self.retcode)?;
         }
         if self.times != 0 {
-            os.write_uint32(5, self.times)?;
+            os.write_uint32(7, self.times)?;
+        }
+        if self.times2 != 0 {
+            os.write_uint32(14, self.times2)?;
         }
         if let Some(v) = self.rogue_buff_select.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(803, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1087, v, os)?;
         }
         if let Some(v) = self.rogue_reroll_buff.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(795, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(126, v, os)?;
         }
         if let Some(v) = self.miracle_select.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(830, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2029, v, os)?;
         }
         if let Some(v) = self.bonus_select.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1544, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(392, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -203,6 +219,7 @@ impl ::protobuf::Message for HandleRogueCommonPendingActionScRsp {
     fn clear(&mut self) {
         self.retcode = 0;
         self.times = 0;
+        self.times2 = 0;
         self.rogue_buff_select.clear();
         self.rogue_reroll_buff.clear();
         self.miracle_select.clear();
@@ -214,6 +231,7 @@ impl ::protobuf::Message for HandleRogueCommonPendingActionScRsp {
         static instance: HandleRogueCommonPendingActionScRsp = HandleRogueCommonPendingActionScRsp {
             retcode: 0,
             times: 0,
+            times2: 0,
             rogue_buff_select: ::protobuf::MessageField::none(),
             rogue_reroll_buff: ::protobuf::MessageField::none(),
             miracle_select: ::protobuf::MessageField::none(),
@@ -244,15 +262,15 @@ impl ::protobuf::reflect::ProtobufValue for HandleRogueCommonPendingActionScRsp 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)HandleRogueCommonPendingActionScRsp.proto\x1a\x15RogueBuffSelect.prot\
     o\x1a\x15RogueRerollBuff.proto\x1a\x18RogueMiracleSelect.proto\x1a\x16Ro\
-    gueBonusSelect.proto\"\xc7\x02\n#HandleRogueCommonPendingActionScRsp\x12\
+    gueBonusSelect.proto\"\xde\x02\n#HandleRogueCommonPendingActionScRsp\x12\
     \x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x12\x14\n\x05times\x18\
-    \x05\x20\x01(\rR\x05times\x12=\n\x11rogue_buff_select\x18\xa3\x06\x20\
-    \x01(\x0b2\x10.RogueBuffSelectR\x0frogueBuffSelect\x12=\n\x11rogue_rerol\
-    l_buff\x18\x9b\x06\x20\x01(\x0b2\x10.RogueRerollBuffR\x0frogueRerollBuff\
-    \x12;\n\x0emiracle_select\x18\xbe\x06\x20\x01(\x0b2\x13.RogueMiracleSele\
-    ctR\rmiracleSelect\x125\n\x0cbonus_select\x18\x88\x0c\x20\x01(\x0b2\x11.\
-    RogueBonusSelectR\x0bbonusSelectB\x15\n\x13emu.lunarcore.protob\x06proto\
-    3\
+    \x07\x20\x01(\rR\x05times\x12\x16\n\x06times2\x18\x0e\x20\x01(\rR\x06tim\
+    es2\x12=\n\x11rogue_buff_select\x18\xbf\x08\x20\x01(\x0b2\x10.RogueBuffS\
+    electR\x0frogueBuffSelect\x12<\n\x11rogue_reroll_buff\x18~\x20\x01(\x0b2\
+    \x10.RogueRerollBuffR\x0frogueRerollBuff\x12;\n\x0emiracle_select\x18\
+    \xed\x0f\x20\x01(\x0b2\x13.RogueMiracleSelectR\rmiracleSelect\x125\n\x0c\
+    bonus_select\x18\x88\x03\x20\x01(\x0b2\x11.RogueBonusSelectR\x0bbonusSel\
+    ectB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

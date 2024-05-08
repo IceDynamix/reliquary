@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMapInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueMapInfo.map_id)
-    pub map_id: u32,
-    // @@protoc_insertion_point(field:RogueMapInfo.area_id)
-    pub area_id: u32,
-    // @@protoc_insertion_point(field:RogueMapInfo.cur_site_id)
-    pub cur_site_id: u32,
     // @@protoc_insertion_point(field:RogueMapInfo.cur_room_id)
     pub cur_room_id: u32,
+    // @@protoc_insertion_point(field:RogueMapInfo.area_id)
+    pub area_id: u32,
+    // @@protoc_insertion_point(field:RogueMapInfo.map_id)
+    pub map_id: u32,
+    // @@protoc_insertion_point(field:RogueMapInfo.cur_site_id)
+    pub cur_site_id: u32,
     // @@protoc_insertion_point(field:RogueMapInfo.room_list)
     pub room_list: ::std::vec::Vec<super::RogueRoom::RogueRoom>,
     // special fields
@@ -59,9 +59,9 @@ impl RogueMapInfo {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "map_id",
-            |m: &RogueMapInfo| { &m.map_id },
-            |m: &mut RogueMapInfo| { &mut m.map_id },
+            "cur_room_id",
+            |m: &RogueMapInfo| { &m.cur_room_id },
+            |m: &mut RogueMapInfo| { &mut m.cur_room_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "area_id",
@@ -69,14 +69,14 @@ impl RogueMapInfo {
             |m: &mut RogueMapInfo| { &mut m.area_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "map_id",
+            |m: &RogueMapInfo| { &m.map_id },
+            |m: &mut RogueMapInfo| { &mut m.map_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cur_site_id",
             |m: &RogueMapInfo| { &m.cur_site_id },
             |m: &mut RogueMapInfo| { &mut m.cur_site_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cur_room_id",
-            |m: &RogueMapInfo| { &m.cur_room_id },
-            |m: &mut RogueMapInfo| { &mut m.cur_room_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "room_list",
@@ -101,19 +101,19 @@ impl ::protobuf::Message for RogueMapInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.map_id = is.read_uint32()?;
+                32 => {
+                    self.cur_room_id = is.read_uint32()?;
                 },
                 104 => {
                     self.area_id = is.read_uint32()?;
                 },
-                64 => {
+                16 => {
+                    self.map_id = is.read_uint32()?;
+                },
+                88 => {
                     self.cur_site_id = is.read_uint32()?;
                 },
-                24 => {
-                    self.cur_room_id = is.read_uint32()?;
-                },
-                98 => {
+                26 => {
                     self.room_list.push(is.read_message()?);
                 },
                 tag => {
@@ -128,17 +128,17 @@ impl ::protobuf::Message for RogueMapInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.map_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.map_id);
+        if self.cur_room_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.cur_room_id);
         }
         if self.area_id != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.area_id);
         }
-        if self.cur_site_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.cur_site_id);
+        if self.map_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.map_id);
         }
-        if self.cur_room_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.cur_room_id);
+        if self.cur_site_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.cur_site_id);
         }
         for value in &self.room_list {
             let len = value.compute_size();
@@ -150,20 +150,20 @@ impl ::protobuf::Message for RogueMapInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.map_id != 0 {
-            os.write_uint32(10, self.map_id)?;
+        if self.cur_room_id != 0 {
+            os.write_uint32(4, self.cur_room_id)?;
         }
         if self.area_id != 0 {
             os.write_uint32(13, self.area_id)?;
         }
-        if self.cur_site_id != 0 {
-            os.write_uint32(8, self.cur_site_id)?;
+        if self.map_id != 0 {
+            os.write_uint32(2, self.map_id)?;
         }
-        if self.cur_room_id != 0 {
-            os.write_uint32(3, self.cur_room_id)?;
+        if self.cur_site_id != 0 {
+            os.write_uint32(11, self.cur_site_id)?;
         }
         for v in &self.room_list {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,20 +182,20 @@ impl ::protobuf::Message for RogueMapInfo {
     }
 
     fn clear(&mut self) {
-        self.map_id = 0;
-        self.area_id = 0;
-        self.cur_site_id = 0;
         self.cur_room_id = 0;
+        self.area_id = 0;
+        self.map_id = 0;
+        self.cur_site_id = 0;
         self.room_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMapInfo {
         static instance: RogueMapInfo = RogueMapInfo {
-            map_id: 0,
-            area_id: 0,
-            cur_site_id: 0,
             cur_room_id: 0,
+            area_id: 0,
+            map_id: 0,
+            cur_site_id: 0,
             room_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -222,11 +222,11 @@ impl ::protobuf::reflect::ProtobufValue for RogueMapInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12RogueMapInfo.proto\x1a\x0fRogueRoom.proto\"\xa7\x01\n\x0cRogueMapI\
-    nfo\x12\x15\n\x06map_id\x18\n\x20\x01(\rR\x05mapId\x12\x17\n\x07area_id\
-    \x18\r\x20\x01(\rR\x06areaId\x12\x1e\n\x0bcur_site_id\x18\x08\x20\x01(\r\
-    R\tcurSiteId\x12\x1e\n\x0bcur_room_id\x18\x03\x20\x01(\rR\tcurRoomId\x12\
-    '\n\troom_list\x18\x0c\x20\x03(\x0b2\n.RogueRoomR\x08roomListB\x15\n\x13\
-    emu.lunarcore.protob\x06proto3\
+    nfo\x12\x1e\n\x0bcur_room_id\x18\x04\x20\x01(\rR\tcurRoomId\x12\x17\n\
+    \x07area_id\x18\r\x20\x01(\rR\x06areaId\x12\x15\n\x06map_id\x18\x02\x20\
+    \x01(\rR\x05mapId\x12\x1e\n\x0bcur_site_id\x18\x0b\x20\x01(\rR\tcurSiteI\
+    d\x12'\n\troom_list\x18\x03\x20\x03(\x0b2\n.RogueRoomR\x08roomListB\x15\
+    \n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

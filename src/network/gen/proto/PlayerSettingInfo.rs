@@ -29,12 +29,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayerSettingInfo {
     // message fields
-    // @@protoc_insertion_point(field:PlayerSettingInfo.NODHLKCFLPA)
-    pub NODHLKCFLPA: bool,
-    // @@protoc_insertion_point(field:PlayerSettingInfo.HMAMGFJANGO)
-    pub HMAMGFJANGO: bool,
-    // @@protoc_insertion_point(field:PlayerSettingInfo.PMBBEIEHBML)
-    pub PMBBEIEHBML: bool,
+    // @@protoc_insertion_point(field:PlayerSettingInfo.b1)
+    pub b1: bool,
+    // @@protoc_insertion_point(field:PlayerSettingInfo.b2)
+    pub b2: bool,
+    // @@protoc_insertion_point(field:PlayerSettingInfo.b3)
+    pub b3: bool,
+    // @@protoc_insertion_point(field:PlayerSettingInfo.b4)
+    pub b4: bool,
+    // @@protoc_insertion_point(field:PlayerSettingInfo.b5)
+    pub b5: bool,
+    // @@protoc_insertion_point(field:PlayerSettingInfo.b6)
+    pub b6: bool,
+    // @@protoc_insertion_point(field:PlayerSettingInfo.display_record_type)
+    pub display_record_type: ::protobuf::EnumOrUnknown<super::DisplayRecordType::DisplayRecordType>,
     // special fields
     // @@protoc_insertion_point(special_field:PlayerSettingInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,22 +60,42 @@ impl PlayerSettingInfo {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NODHLKCFLPA",
-            |m: &PlayerSettingInfo| { &m.NODHLKCFLPA },
-            |m: &mut PlayerSettingInfo| { &mut m.NODHLKCFLPA },
+            "b1",
+            |m: &PlayerSettingInfo| { &m.b1 },
+            |m: &mut PlayerSettingInfo| { &mut m.b1 },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HMAMGFJANGO",
-            |m: &PlayerSettingInfo| { &m.HMAMGFJANGO },
-            |m: &mut PlayerSettingInfo| { &mut m.HMAMGFJANGO },
+            "b2",
+            |m: &PlayerSettingInfo| { &m.b2 },
+            |m: &mut PlayerSettingInfo| { &mut m.b2 },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PMBBEIEHBML",
-            |m: &PlayerSettingInfo| { &m.PMBBEIEHBML },
-            |m: &mut PlayerSettingInfo| { &mut m.PMBBEIEHBML },
+            "b3",
+            |m: &PlayerSettingInfo| { &m.b3 },
+            |m: &mut PlayerSettingInfo| { &mut m.b3 },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "b4",
+            |m: &PlayerSettingInfo| { &m.b4 },
+            |m: &mut PlayerSettingInfo| { &mut m.b4 },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "b5",
+            |m: &PlayerSettingInfo| { &m.b5 },
+            |m: &mut PlayerSettingInfo| { &mut m.b5 },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "b6",
+            |m: &PlayerSettingInfo| { &m.b6 },
+            |m: &mut PlayerSettingInfo| { &mut m.b6 },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "display_record_type",
+            |m: &PlayerSettingInfo| { &m.display_record_type },
+            |m: &mut PlayerSettingInfo| { &mut m.display_record_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayerSettingInfo>(
             "PlayerSettingInfo",
@@ -87,14 +115,26 @@ impl ::protobuf::Message for PlayerSettingInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                16 => {
+                    self.b1 = is.read_bool()?;
+                },
                 64 => {
-                    self.NODHLKCFLPA = is.read_bool()?;
+                    self.b2 = is.read_bool()?;
                 },
-                112 => {
-                    self.HMAMGFJANGO = is.read_bool()?;
+                32 => {
+                    self.b3 = is.read_bool()?;
                 },
-                56 => {
-                    self.PMBBEIEHBML = is.read_bool()?;
+                24 => {
+                    self.b4 = is.read_bool()?;
+                },
+                104 => {
+                    self.b5 = is.read_bool()?;
+                },
+                40 => {
+                    self.b6 = is.read_bool()?;
+                },
+                96 => {
+                    self.display_record_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +148,26 @@ impl ::protobuf::Message for PlayerSettingInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NODHLKCFLPA != false {
+        if self.b1 != false {
             my_size += 1 + 1;
         }
-        if self.HMAMGFJANGO != false {
+        if self.b2 != false {
             my_size += 1 + 1;
         }
-        if self.PMBBEIEHBML != false {
+        if self.b3 != false {
             my_size += 1 + 1;
+        }
+        if self.b4 != false {
+            my_size += 1 + 1;
+        }
+        if self.b5 != false {
+            my_size += 1 + 1;
+        }
+        if self.b6 != false {
+            my_size += 1 + 1;
+        }
+        if self.display_record_type != ::protobuf::EnumOrUnknown::new(super::DisplayRecordType::DisplayRecordType::BATTLE_RECORD_NONE) {
+            my_size += ::protobuf::rt::int32_size(12, self.display_record_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +175,26 @@ impl ::protobuf::Message for PlayerSettingInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NODHLKCFLPA != false {
-            os.write_bool(8, self.NODHLKCFLPA)?;
+        if self.b1 != false {
+            os.write_bool(2, self.b1)?;
         }
-        if self.HMAMGFJANGO != false {
-            os.write_bool(14, self.HMAMGFJANGO)?;
+        if self.b2 != false {
+            os.write_bool(8, self.b2)?;
         }
-        if self.PMBBEIEHBML != false {
-            os.write_bool(7, self.PMBBEIEHBML)?;
+        if self.b3 != false {
+            os.write_bool(4, self.b3)?;
+        }
+        if self.b4 != false {
+            os.write_bool(3, self.b4)?;
+        }
+        if self.b5 != false {
+            os.write_bool(13, self.b5)?;
+        }
+        if self.b6 != false {
+            os.write_bool(5, self.b6)?;
+        }
+        if self.display_record_type != ::protobuf::EnumOrUnknown::new(super::DisplayRecordType::DisplayRecordType::BATTLE_RECORD_NONE) {
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.display_record_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +213,25 @@ impl ::protobuf::Message for PlayerSettingInfo {
     }
 
     fn clear(&mut self) {
-        self.NODHLKCFLPA = false;
-        self.HMAMGFJANGO = false;
-        self.PMBBEIEHBML = false;
+        self.b1 = false;
+        self.b2 = false;
+        self.b3 = false;
+        self.b4 = false;
+        self.b5 = false;
+        self.b6 = false;
+        self.display_record_type = ::protobuf::EnumOrUnknown::new(super::DisplayRecordType::DisplayRecordType::BATTLE_RECORD_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayerSettingInfo {
         static instance: PlayerSettingInfo = PlayerSettingInfo {
-            NODHLKCFLPA: false,
-            HMAMGFJANGO: false,
-            PMBBEIEHBML: false,
+            b1: false,
+            b2: false,
+            b3: false,
+            b4: false,
+            b5: false,
+            b6: false,
+            display_record_type: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +256,13 @@ impl ::protobuf::reflect::ProtobufValue for PlayerSettingInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17PlayerSettingInfo.proto\"y\n\x11PlayerSettingInfo\x12\x20\n\x0bNOD\
-    HLKCFLPA\x18\x08\x20\x01(\x08R\x0bNODHLKCFLPA\x12\x20\n\x0bHMAMGFJANGO\
-    \x18\x0e\x20\x01(\x08R\x0bHMAMGFJANGO\x12\x20\n\x0bPMBBEIEHBML\x18\x07\
-    \x20\x01(\x08R\x0bPMBBEIEHBMLB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x17PlayerSettingInfo.proto\x1a\x17DisplayRecordType.proto\"\xb7\x01\n\
+    \x11PlayerSettingInfo\x12\x0e\n\x02b1\x18\x02\x20\x01(\x08R\x02b1\x12\
+    \x0e\n\x02b2\x18\x08\x20\x01(\x08R\x02b2\x12\x0e\n\x02b3\x18\x04\x20\x01\
+    (\x08R\x02b3\x12\x0e\n\x02b4\x18\x03\x20\x01(\x08R\x02b4\x12\x0e\n\x02b5\
+    \x18\r\x20\x01(\x08R\x02b5\x12\x0e\n\x02b6\x18\x05\x20\x01(\x08R\x02b6\
+    \x12B\n\x13display_record_type\x18\x0c\x20\x01(\x0e2\x12.DisplayRecordTy\
+    peR\x11displayRecordTypeB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -204,7 +279,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(0);
+            let mut deps = ::std::vec::Vec::with_capacity(1);
+            deps.push(super::DisplayRecordType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PlayerSettingInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

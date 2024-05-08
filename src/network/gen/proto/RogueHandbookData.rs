@@ -97,13 +97,13 @@ impl ::protobuf::Message for RogueHandbookData {
                 98 => {
                     self.rogue_event.push(is.read_message()?);
                 },
-                82 => {
+                122 => {
                     self.buff_list.push(is.read_message()?);
                 },
-                122 => {
+                74 => {
                     self.rogue_aeon_list.push(is.read_message()?);
                 },
-                42 => {
+                26 => {
                     self.miracle_list.push(is.read_message()?);
                 },
                 tag => {
@@ -144,13 +144,13 @@ impl ::protobuf::Message for RogueHandbookData {
             ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         for v in &self.buff_list {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        };
-        for v in &self.rogue_aeon_list {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
+        for v in &self.rogue_aeon_list {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
         for v in &self.miracle_list {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -210,9 +210,9 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     ueHandbookMiracle.proto\x1a\x17RogueHandbookBuff.proto\x1a\x17RogueHandb\
     ookAeon.proto\"\xf0\x01\n\x11RogueHandbookData\x124\n\x0brogue_event\x18\
     \x0c\x20\x03(\x0b2\x13.RogueHandbookEventR\nrogueEvent\x12/\n\tbuff_list\
-    \x18\n\x20\x03(\x0b2\x12.RogueHandbookBuffR\x08buffList\x12:\n\x0frogue_\
-    aeon_list\x18\x0f\x20\x03(\x0b2\x12.RogueHandbookAeonR\rrogueAeonList\
-    \x128\n\x0cmiracle_list\x18\x05\x20\x03(\x0b2\x15.RogueHandbookMiracleR\
+    \x18\x0f\x20\x03(\x0b2\x12.RogueHandbookBuffR\x08buffList\x12:\n\x0frogu\
+    e_aeon_list\x18\t\x20\x03(\x0b2\x12.RogueHandbookAeonR\rrogueAeonList\
+    \x128\n\x0cmiracle_list\x18\x03\x20\x03(\x0b2\x15.RogueHandbookMiracleR\
     \x0bmiracleListB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

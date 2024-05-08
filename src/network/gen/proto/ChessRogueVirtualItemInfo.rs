@@ -87,13 +87,13 @@ impl ::protobuf::Message for ChessRogueVirtualItemInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.buff_info)?;
                 },
-                106 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.miracle_info)?;
                 },
-                50 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_info)?;
                 },
                 tag => {
@@ -127,13 +127,13 @@ impl ::protobuf::Message for ChessRogueVirtualItemInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.buff_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if let Some(v) = self.miracle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         if let Some(v) = self.item_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -189,11 +189,11 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueVirtualItemInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fChessRogueVirtualItemInfo.proto\x1a\x18ChessRogueBuffInfo.proto\
     \x1a\x1bChessRogueMiracleInfo.proto\x1a\x18ChessRogueItemInfo.proto\"\
-    \xba\x01\n\x19ChessRogueVirtualItemInfo\x120\n\tbuff_info\x18\t\x20\x01(\
-    \x0b2\x13.ChessRogueBuffInfoR\x08buffInfo\x129\n\x0cmiracle_info\x18\r\
-    \x20\x01(\x0b2\x16.ChessRogueMiracleInfoR\x0bmiracleInfo\x120\n\titem_in\
-    fo\x18\x06\x20\x01(\x0b2\x13.ChessRogueItemInfoR\x08itemInfoB\x15\n\x13e\
-    mu.lunarcore.protob\x06proto3\
+    \xba\x01\n\x19ChessRogueVirtualItemInfo\x120\n\tbuff_info\x18\x06\x20\
+    \x01(\x0b2\x13.ChessRogueBuffInfoR\x08buffInfo\x129\n\x0cmiracle_info\
+    \x18\n\x20\x01(\x0b2\x16.ChessRogueMiracleInfoR\x0bmiracleInfo\x120\n\ti\
+    tem_info\x18\x0b\x20\x01(\x0b2\x13.ChessRogueItemInfoR\x08itemInfoB\x15\
+    \n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -94,16 +94,16 @@ impl ::protobuf::Message for DailyActivityInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                16 => {
                     self.level = is.read_uint32()?;
                 },
-                32 => {
+                40 => {
                     self.world_level = is.read_uint32()?;
                 },
-                40 => {
+                8 => {
                     self.daily_active_point = is.read_uint32()?;
                 },
-                16 => {
+                32 => {
                     self.is_has_taken = is.read_bool()?;
                 },
                 tag => {
@@ -119,13 +119,13 @@ impl ::protobuf::Message for DailyActivityInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.level);
+            my_size += ::protobuf::rt::uint32_size(2, self.level);
         }
         if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.world_level);
+            my_size += ::protobuf::rt::uint32_size(5, self.world_level);
         }
         if self.daily_active_point != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.daily_active_point);
+            my_size += ::protobuf::rt::uint32_size(1, self.daily_active_point);
         }
         if self.is_has_taken != false {
             my_size += 1 + 1;
@@ -137,16 +137,16 @@ impl ::protobuf::Message for DailyActivityInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.level != 0 {
-            os.write_uint32(10, self.level)?;
+            os.write_uint32(2, self.level)?;
         }
         if self.world_level != 0 {
-            os.write_uint32(4, self.world_level)?;
+            os.write_uint32(5, self.world_level)?;
         }
         if self.daily_active_point != 0 {
-            os.write_uint32(5, self.daily_active_point)?;
+            os.write_uint32(1, self.daily_active_point)?;
         }
         if self.is_has_taken != false {
-            os.write_bool(2, self.is_has_taken)?;
+            os.write_bool(4, self.is_has_taken)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -203,9 +203,9 @@ impl ::protobuf::reflect::ProtobufValue for DailyActivityInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17DailyActivityInfo.proto\"\x9a\x01\n\x11DailyActivityInfo\x12\x14\n\
-    \x05level\x18\n\x20\x01(\rR\x05level\x12\x1f\n\x0bworld_level\x18\x04\
-    \x20\x01(\rR\nworldLevel\x12,\n\x12daily_active_point\x18\x05\x20\x01(\r\
-    R\x10dailyActivePoint\x12\x20\n\x0cis_has_taken\x18\x02\x20\x01(\x08R\ni\
+    \x05level\x18\x02\x20\x01(\rR\x05level\x12\x1f\n\x0bworld_level\x18\x05\
+    \x20\x01(\rR\nworldLevel\x12,\n\x12daily_active_point\x18\x01\x20\x01(\r\
+    R\x10dailyActivePoint\x12\x20\n\x0cis_has_taken\x18\x04\x20\x01(\x08R\ni\
     sHasTakenB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

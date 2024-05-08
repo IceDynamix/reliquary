@@ -73,7 +73,7 @@ impl ::protobuf::Message for RogueBonusSelectResult {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                112 => {
                     self.bonus_id = is.read_uint32()?;
                 },
                 tag => {
@@ -89,7 +89,7 @@ impl ::protobuf::Message for RogueBonusSelectResult {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.bonus_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.bonus_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.bonus_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -98,7 +98,7 @@ impl ::protobuf::Message for RogueBonusSelectResult {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.bonus_id != 0 {
-            os.write_uint32(12, self.bonus_id)?;
+            os.write_uint32(14, self.bonus_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueBonusSelectResult {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cRogueBonusSelectResult.proto\"3\n\x16RogueBonusSelectResult\x12\
-    \x19\n\x08bonus_id\x18\x0c\x20\x01(\rR\x07bonusIdB\x15\n\x13emu.lunarcor\
+    \x19\n\x08bonus_id\x18\x0e\x20\x01(\rR\x07bonusIdB\x15\n\x13emu.lunarcor\
     e.protob\x06proto3\
 ";
 

@@ -80,7 +80,7 @@ impl ::protobuf::Message for GetRogueInitialScoreScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_score_info)?;
                 },
                 88 => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for GetRogueInitialScoreScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.rogue_score_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.retcode != 0 {
             os.write_uint32(11, self.retcode)?;
@@ -168,10 +168,10 @@ impl ::protobuf::reflect::ProtobufValue for GetRogueInitialScoreScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fGetRogueInitialScoreScRsp.proto\x1a\x1aRogueScoreRewardInfo.proto\
-    \"v\n\x19GetRogueInitialScoreScRsp\x12?\n\x10rogue_score_info\x18\x04\
-    \x20\x01(\x0b2\x15.RogueScoreRewardInfoR\x0erogueScoreInfo\x12\x18\n\x07\
-    retcode\x18\x0b\x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore.protob\
-    \x06proto3\
+    \"v\n\x19GetRogueInitialScoreScRsp\x12?\n\x10rogue_score_info\x18\t\x20\
+    \x01(\x0b2\x15.RogueScoreRewardInfoR\x0erogueScoreInfo\x12\x18\n\x07retc\
+    ode\x18\x0b\x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore.protob\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -83,7 +83,7 @@ impl ::protobuf::Message for RogueCommonPendingAction {
                 72 => {
                     self.unique_id = is.read_uint32()?;
                 },
-                34 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_action)?;
                 },
                 tag => {
@@ -115,7 +115,7 @@ impl ::protobuf::Message for RogueCommonPendingAction {
             os.write_uint32(9, self.unique_id)?;
         }
         if let Some(v) = self.rogue_action.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,7 +169,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueCommonPendingAction {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eRogueCommonPendingAction.proto\x1a\x11RogueAction.proto\"h\n\x18Ro\
     gueCommonPendingAction\x12\x1b\n\tunique_id\x18\t\x20\x01(\rR\x08uniqueI\
-    d\x12/\n\x0crogue_action\x18\x04\x20\x01(\x0b2\x0c.RogueActionR\x0brogue\
+    d\x12/\n\x0crogue_action\x18\x06\x20\x01(\x0b2\x0c.RogueActionR\x0brogue\
     ActionB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

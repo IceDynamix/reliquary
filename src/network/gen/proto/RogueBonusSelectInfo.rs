@@ -73,10 +73,10 @@ impl ::protobuf::Message for RogueBonusSelectInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                114 => {
                     is.read_repeated_packed_uint32_into(&mut self.bonus_info)?;
                 },
-                88 => {
+                112 => {
                     self.bonus_info.push(is.read_uint32()?);
                 },
                 tag => {
@@ -92,7 +92,7 @@ impl ::protobuf::Message for RogueBonusSelectInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         for value in &self.bonus_info {
-            my_size += ::protobuf::rt::uint32_size(11, *value);
+            my_size += ::protobuf::rt::uint32_size(14, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -101,7 +101,7 @@ impl ::protobuf::Message for RogueBonusSelectInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.bonus_info {
-            os.write_uint32(11, *v)?;
+            os.write_uint32(14, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -152,7 +152,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueBonusSelectInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aRogueBonusSelectInfo.proto\"5\n\x14RogueBonusSelectInfo\x12\x1d\n\
-    \nbonus_info\x18\x0b\x20\x03(\rR\tbonusInfoB\x15\n\x13emu.lunarcore.prot\
+    \nbonus_info\x18\x0e\x20\x03(\rR\tbonusInfoB\x15\n\x13emu.lunarcore.prot\
     ob\x06proto3\
 ";
 

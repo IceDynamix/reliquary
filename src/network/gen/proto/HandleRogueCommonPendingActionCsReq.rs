@@ -28,15 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 // @@protoc_insertion_point(message:HandleRogueCommonPendingActionCsReq)
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HandleRogueCommonPendingActionCsReq {
-    // message fields
-    // @@protoc_insertion_point(field:HandleRogueCommonPendingActionCsReq.buff_select_result)
-    pub buff_select_result: ::protobuf::MessageField<super::RogueCommonBuffSelectResult::RogueCommonBuffSelectResult>,
-    // @@protoc_insertion_point(field:HandleRogueCommonPendingActionCsReq.roll_buff)
-    pub roll_buff: ::protobuf::MessageField<super::RogueBuffRollInfo::RogueBuffRollInfo>,
-    // @@protoc_insertion_point(field:HandleRogueCommonPendingActionCsReq.miracle_select_result)
-    pub miracle_select_result: ::protobuf::MessageField<super::RogueMiracleSelectResult::RogueMiracleSelectResult>,
-    // @@protoc_insertion_point(field:HandleRogueCommonPendingActionCsReq.bonus_select_result)
-    pub bonus_select_result: ::protobuf::MessageField<super::RogueBonusSelectResult::RogueBonusSelectResult>,
+    // message oneof groups
+    pub pending_action: ::std::option::Option<handle_rogue_common_pending_action_cs_req::Pending_action>,
     // special fields
     // @@protoc_insertion_point(special_field:HandleRogueCommonPendingActionCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,29 +46,234 @@ impl HandleRogueCommonPendingActionCsReq {
         ::std::default::Default::default()
     }
 
+    // .RogueCommonBuffSelectResult buff_select_result = 1586;
+
+    pub fn buff_select_result(&self) -> &super::RogueCommonBuffSelectResult::RogueCommonBuffSelectResult {
+        match self.pending_action {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::BuffSelectResult(ref v)) => v,
+            _ => <super::RogueCommonBuffSelectResult::RogueCommonBuffSelectResult as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_buff_select_result(&mut self) {
+        self.pending_action = ::std::option::Option::None;
+    }
+
+    pub fn has_buff_select_result(&self) -> bool {
+        match self.pending_action {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::BuffSelectResult(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_buff_select_result(&mut self, v: super::RogueCommonBuffSelectResult::RogueCommonBuffSelectResult) {
+        self.pending_action = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::BuffSelectResult(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_buff_select_result(&mut self) -> &mut super::RogueCommonBuffSelectResult::RogueCommonBuffSelectResult {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::BuffSelectResult(_)) = self.pending_action {
+        } else {
+            self.pending_action = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::BuffSelectResult(super::RogueCommonBuffSelectResult::RogueCommonBuffSelectResult::new()));
+        }
+        match self.pending_action {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::BuffSelectResult(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_buff_select_result(&mut self) -> super::RogueCommonBuffSelectResult::RogueCommonBuffSelectResult {
+        if self.has_buff_select_result() {
+            match self.pending_action.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::BuffSelectResult(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::RogueCommonBuffSelectResult::RogueCommonBuffSelectResult::new()
+        }
+    }
+
+    // .RogueBuffRollInfo roll_buff = 308;
+
+    pub fn roll_buff(&self) -> &super::RogueBuffRollInfo::RogueBuffRollInfo {
+        match self.pending_action {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::RollBuff(ref v)) => v,
+            _ => <super::RogueBuffRollInfo::RogueBuffRollInfo as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_roll_buff(&mut self) {
+        self.pending_action = ::std::option::Option::None;
+    }
+
+    pub fn has_roll_buff(&self) -> bool {
+        match self.pending_action {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::RollBuff(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_roll_buff(&mut self, v: super::RogueBuffRollInfo::RogueBuffRollInfo) {
+        self.pending_action = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::RollBuff(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_roll_buff(&mut self) -> &mut super::RogueBuffRollInfo::RogueBuffRollInfo {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::RollBuff(_)) = self.pending_action {
+        } else {
+            self.pending_action = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::RollBuff(super::RogueBuffRollInfo::RogueBuffRollInfo::new()));
+        }
+        match self.pending_action {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::RollBuff(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_roll_buff(&mut self) -> super::RogueBuffRollInfo::RogueBuffRollInfo {
+        if self.has_roll_buff() {
+            match self.pending_action.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::RollBuff(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::RogueBuffRollInfo::RogueBuffRollInfo::new()
+        }
+    }
+
+    // .RogueMiracleSelectResult miracle_select_result = 1209;
+
+    pub fn miracle_select_result(&self) -> &super::RogueMiracleSelectResult::RogueMiracleSelectResult {
+        match self.pending_action {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::MiracleSelectResult(ref v)) => v,
+            _ => <super::RogueMiracleSelectResult::RogueMiracleSelectResult as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_miracle_select_result(&mut self) {
+        self.pending_action = ::std::option::Option::None;
+    }
+
+    pub fn has_miracle_select_result(&self) -> bool {
+        match self.pending_action {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::MiracleSelectResult(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_miracle_select_result(&mut self, v: super::RogueMiracleSelectResult::RogueMiracleSelectResult) {
+        self.pending_action = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::MiracleSelectResult(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_miracle_select_result(&mut self) -> &mut super::RogueMiracleSelectResult::RogueMiracleSelectResult {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::MiracleSelectResult(_)) = self.pending_action {
+        } else {
+            self.pending_action = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::MiracleSelectResult(super::RogueMiracleSelectResult::RogueMiracleSelectResult::new()));
+        }
+        match self.pending_action {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::MiracleSelectResult(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_miracle_select_result(&mut self) -> super::RogueMiracleSelectResult::RogueMiracleSelectResult {
+        if self.has_miracle_select_result() {
+            match self.pending_action.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::MiracleSelectResult(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::RogueMiracleSelectResult::RogueMiracleSelectResult::new()
+        }
+    }
+
+    // .RogueBonusSelectResult bonus_select_result = 1156;
+
+    pub fn bonus_select_result(&self) -> &super::RogueBonusSelectResult::RogueBonusSelectResult {
+        match self.pending_action {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::BonusSelectResult(ref v)) => v,
+            _ => <super::RogueBonusSelectResult::RogueBonusSelectResult as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_bonus_select_result(&mut self) {
+        self.pending_action = ::std::option::Option::None;
+    }
+
+    pub fn has_bonus_select_result(&self) -> bool {
+        match self.pending_action {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::BonusSelectResult(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_bonus_select_result(&mut self, v: super::RogueBonusSelectResult::RogueBonusSelectResult) {
+        self.pending_action = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::BonusSelectResult(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_bonus_select_result(&mut self) -> &mut super::RogueBonusSelectResult::RogueBonusSelectResult {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::BonusSelectResult(_)) = self.pending_action {
+        } else {
+            self.pending_action = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::BonusSelectResult(super::RogueBonusSelectResult::RogueBonusSelectResult::new()));
+        }
+        match self.pending_action {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::BonusSelectResult(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_bonus_select_result(&mut self) -> super::RogueBonusSelectResult::RogueBonusSelectResult {
+        if self.has_bonus_select_result() {
+            match self.pending_action.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::BonusSelectResult(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::RogueBonusSelectResult::RogueBonusSelectResult::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
-        let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueCommonBuffSelectResult::RogueCommonBuffSelectResult>(
+        let mut oneofs = ::std::vec::Vec::with_capacity(1);
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueCommonBuffSelectResult::RogueCommonBuffSelectResult>(
             "buff_select_result",
-            |m: &HandleRogueCommonPendingActionCsReq| { &m.buff_select_result },
-            |m: &mut HandleRogueCommonPendingActionCsReq| { &mut m.buff_select_result },
+            HandleRogueCommonPendingActionCsReq::has_buff_select_result,
+            HandleRogueCommonPendingActionCsReq::buff_select_result,
+            HandleRogueCommonPendingActionCsReq::mut_buff_select_result,
+            HandleRogueCommonPendingActionCsReq::set_buff_select_result,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueBuffRollInfo::RogueBuffRollInfo>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueBuffRollInfo::RogueBuffRollInfo>(
             "roll_buff",
-            |m: &HandleRogueCommonPendingActionCsReq| { &m.roll_buff },
-            |m: &mut HandleRogueCommonPendingActionCsReq| { &mut m.roll_buff },
+            HandleRogueCommonPendingActionCsReq::has_roll_buff,
+            HandleRogueCommonPendingActionCsReq::roll_buff,
+            HandleRogueCommonPendingActionCsReq::mut_roll_buff,
+            HandleRogueCommonPendingActionCsReq::set_roll_buff,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueMiracleSelectResult::RogueMiracleSelectResult>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueMiracleSelectResult::RogueMiracleSelectResult>(
             "miracle_select_result",
-            |m: &HandleRogueCommonPendingActionCsReq| { &m.miracle_select_result },
-            |m: &mut HandleRogueCommonPendingActionCsReq| { &mut m.miracle_select_result },
+            HandleRogueCommonPendingActionCsReq::has_miracle_select_result,
+            HandleRogueCommonPendingActionCsReq::miracle_select_result,
+            HandleRogueCommonPendingActionCsReq::mut_miracle_select_result,
+            HandleRogueCommonPendingActionCsReq::set_miracle_select_result,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueBonusSelectResult::RogueBonusSelectResult>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueBonusSelectResult::RogueBonusSelectResult>(
             "bonus_select_result",
-            |m: &HandleRogueCommonPendingActionCsReq| { &m.bonus_select_result },
-            |m: &mut HandleRogueCommonPendingActionCsReq| { &mut m.bonus_select_result },
+            HandleRogueCommonPendingActionCsReq::has_bonus_select_result,
+            HandleRogueCommonPendingActionCsReq::bonus_select_result,
+            HandleRogueCommonPendingActionCsReq::mut_bonus_select_result,
+            HandleRogueCommonPendingActionCsReq::set_bonus_select_result,
         ));
+        oneofs.push(handle_rogue_common_pending_action_cs_req::Pending_action::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HandleRogueCommonPendingActionCsReq>(
             "HandleRogueCommonPendingActionCsReq",
             fields,
@@ -94,17 +292,17 @@ impl ::protobuf::Message for HandleRogueCommonPendingActionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                14418 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.buff_select_result)?;
+                12690 => {
+                    self.pending_action = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::BuffSelectResult(is.read_message()?));
                 },
-                11314 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.roll_buff)?;
+                2466 => {
+                    self.pending_action = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::RollBuff(is.read_message()?));
                 },
-                9402 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.miracle_select_result)?;
+                9674 => {
+                    self.pending_action = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::MiracleSelectResult(is.read_message()?));
                 },
-                9938 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.bonus_select_result)?;
+                9250 => {
+                    self.pending_action = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::BonusSelectResult(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,21 +316,25 @@ impl ::protobuf::Message for HandleRogueCommonPendingActionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.buff_select_result.as_ref() {
-            let len = v.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.roll_buff.as_ref() {
-            let len = v.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.miracle_select_result.as_ref() {
-            let len = v.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.bonus_select_result.as_ref() {
-            let len = v.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if let ::std::option::Option::Some(ref v) = self.pending_action {
+            match v {
+                &handle_rogue_common_pending_action_cs_req::Pending_action::BuffSelectResult(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &handle_rogue_common_pending_action_cs_req::Pending_action::RollBuff(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &handle_rogue_common_pending_action_cs_req::Pending_action::MiracleSelectResult(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &handle_rogue_common_pending_action_cs_req::Pending_action::BonusSelectResult(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+            };
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -140,17 +342,21 @@ impl ::protobuf::Message for HandleRogueCommonPendingActionCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.buff_select_result.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1802, v, os)?;
-        }
-        if let Some(v) = self.roll_buff.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1414, v, os)?;
-        }
-        if let Some(v) = self.miracle_select_result.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1175, v, os)?;
-        }
-        if let Some(v) = self.bonus_select_result.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1242, v, os)?;
+        if let ::std::option::Option::Some(ref v) = self.pending_action {
+            match v {
+                &handle_rogue_common_pending_action_cs_req::Pending_action::BuffSelectResult(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1586, v, os)?;
+                },
+                &handle_rogue_common_pending_action_cs_req::Pending_action::RollBuff(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(308, v, os)?;
+                },
+                &handle_rogue_common_pending_action_cs_req::Pending_action::MiracleSelectResult(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1209, v, os)?;
+                },
+                &handle_rogue_common_pending_action_cs_req::Pending_action::BonusSelectResult(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1156, v, os)?;
+                },
+            };
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,19 +375,16 @@ impl ::protobuf::Message for HandleRogueCommonPendingActionCsReq {
     }
 
     fn clear(&mut self) {
-        self.buff_select_result.clear();
-        self.roll_buff.clear();
-        self.miracle_select_result.clear();
-        self.bonus_select_result.clear();
+        self.pending_action = ::std::option::Option::None;
+        self.pending_action = ::std::option::Option::None;
+        self.pending_action = ::std::option::Option::None;
+        self.pending_action = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HandleRogueCommonPendingActionCsReq {
         static instance: HandleRogueCommonPendingActionCsReq = HandleRogueCommonPendingActionCsReq {
-            buff_select_result: ::protobuf::MessageField::none(),
-            roll_buff: ::protobuf::MessageField::none(),
-            miracle_select_result: ::protobuf::MessageField::none(),
-            bonus_select_result: ::protobuf::MessageField::none(),
+            pending_action: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -205,17 +408,51 @@ impl ::protobuf::reflect::ProtobufValue for HandleRogueCommonPendingActionCsReq 
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
+/// Nested message and enums of message `HandleRogueCommonPendingActionCsReq`
+pub mod handle_rogue_common_pending_action_cs_req {
+
+    #[derive(Clone,PartialEq,Debug)]
+    #[non_exhaustive]
+    // @@protoc_insertion_point(oneof:HandleRogueCommonPendingActionCsReq.pending_action)
+    pub enum Pending_action {
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.buff_select_result)
+        BuffSelectResult(super::super::RogueCommonBuffSelectResult::RogueCommonBuffSelectResult),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.roll_buff)
+        RollBuff(super::super::RogueBuffRollInfo::RogueBuffRollInfo),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.miracle_select_result)
+        MiracleSelectResult(super::super::RogueMiracleSelectResult::RogueMiracleSelectResult),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.bonus_select_result)
+        BonusSelectResult(super::super::RogueBonusSelectResult::RogueBonusSelectResult),
+    }
+
+    impl ::protobuf::Oneof for Pending_action {
+    }
+
+    impl ::protobuf::OneofFull for Pending_action {
+        fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
+            static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
+            descriptor.get(|| <super::HandleRogueCommonPendingActionCsReq as ::protobuf::MessageFull>::descriptor().oneof_by_name("pending_action").unwrap()).clone()
+        }
+    }
+
+    impl Pending_action {
+        pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<Pending_action>("pending_action")
+        }
+    }
+}
+
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)HandleRogueCommonPendingActionCsReq.proto\x1a!RogueCommonBuffSelectRe\
     sult.proto\x1a\x17RogueBuffRollInfo.proto\x1a\x1eRogueMiracleSelectResul\
-    t.proto\x1a\x1cRogueBonusSelectResult.proto\"\xbe\x02\n#HandleRogueCommo\
-    nPendingActionCsReq\x12K\n\x12buff_select_result\x18\x8a\x0e\x20\x01(\
-    \x0b2\x1c.RogueCommonBuffSelectResultR\x10buffSelectResult\x120\n\troll_\
-    buff\x18\x86\x0b\x20\x01(\x0b2\x12.RogueBuffRollInfoR\x08rollBuff\x12N\n\
-    \x15miracle_select_result\x18\x97\t\x20\x01(\x0b2\x19.RogueMiracleSelect\
-    ResultR\x13miracleSelectResult\x12H\n\x13bonus_select_result\x18\xda\t\
-    \x20\x01(\x0b2\x17.RogueBonusSelectResultR\x11bonusSelectResultB\x15\n\
-    \x13emu.lunarcore.protob\x06proto3\
+    t.proto\x1a\x1cRogueBonusSelectResult.proto\"\xd8\x02\n#HandleRogueCommo\
+    nPendingActionCsReq\x12M\n\x12buff_select_result\x18\xb2\x0c\x20\x01(\
+    \x0b2\x1c.RogueCommonBuffSelectResultH\0R\x10buffSelectResult\x122\n\tro\
+    ll_buff\x18\xb4\x02\x20\x01(\x0b2\x12.RogueBuffRollInfoH\0R\x08rollBuff\
+    \x12P\n\x15miracle_select_result\x18\xb9\t\x20\x01(\x0b2\x19.RogueMiracl\
+    eSelectResultH\0R\x13miracleSelectResult\x12J\n\x13bonus_select_result\
+    \x18\x84\t\x20\x01(\x0b2\x17.RogueBonusSelectResultH\0R\x11bonusSelectRe\
+    sultB\x10\n\x0epending_actionB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -80,10 +80,10 @@ impl ::protobuf::Message for SetFriendMarkCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                48 => {
                     self.is_set_mark = is.read_bool()?;
                 },
-                120 => {
+                88 => {
                     self.uid = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for SetFriendMarkCsReq {
             my_size += 1 + 1;
         }
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.uid);
+            my_size += ::protobuf::rt::uint32_size(11, self.uid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for SetFriendMarkCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.is_set_mark != false {
-            os.write_bool(7, self.is_set_mark)?;
+            os.write_bool(6, self.is_set_mark)?;
         }
         if self.uid != 0 {
-            os.write_uint32(15, self.uid)?;
+            os.write_uint32(11, self.uid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for SetFriendMarkCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18SetFriendMarkCsReq.proto\"F\n\x12SetFriendMarkCsReq\x12\x1e\n\x0bi\
-    s_set_mark\x18\x07\x20\x01(\x08R\tisSetMark\x12\x10\n\x03uid\x18\x0f\x20\
+    s_set_mark\x18\x06\x20\x01(\x08R\tisSetMark\x12\x10\n\x03uid\x18\x0b\x20\
     \x01(\rR\x03uidB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
