@@ -1,5 +1,6 @@
+use std::time::SystemTime;
+
 use kcp::{get_conv, Kcp, KCP_OVERHEAD};
-use std::time::{SystemTime, UNIX_EPOCH};
 use tracing::{error, info, instrument, span, trace, warn, Level};
 
 use crate::network::bytes_as_hex;
@@ -7,14 +8,7 @@ use crate::network::bytes_as_hex;
 pub(crate) struct KcpSniffer {
     conv_id: u32,
     kcp: Kcp<Vec<u8>>,
-}
-
-#[inline]
-fn clock() -> u32 {
-    SystemTime::now()
-        .duration_since(UNIX_EPOCH)
-        .expect("time went backwards")
-        .as_millis() as u32
+    time_start: SystemTime,
 }
 
 impl KcpSniffer {
@@ -33,6 +27,7 @@ impl KcpSniffer {
         KcpSniffer {
             conv_id,
             kcp: new_kcp(conv_id),
+            time_start: SystemTime::now(),
         }
     }
 
@@ -78,11 +73,19 @@ impl KcpSniffer {
             }
         }
 
-        if let Err(e) = self.kcp.update(clock()) {
+        if let Err(e) = self.kcp.update(self.clock()) {
             warn!(%e, "could not update kcp state");
         }
 
         recv
+    }
+
+    #[inline]
+    fn clock(&self) -> u32 {
+        SystemTime::now()
+            .duration_since(self.time_start)
+            .expect("time went backwards")
+            .as_millis() as u32
     }
 }
 
