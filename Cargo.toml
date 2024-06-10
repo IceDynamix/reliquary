@@ -19,3 +19,4 @@ serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 tracing = "0.1"
 reliquary-proc-macro = { path = "reliquary-proc-macro" }
+anyhow = "1.0.86"

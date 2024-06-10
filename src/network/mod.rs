@@ -58,6 +58,8 @@ use crate::network::gen::command_id::command_id_to_str;
 use crate::network::gen::proto::PlayerGetTokenScRsp::PlayerGetTokenScRsp;
 use crate::network::kcp::KcpSniffer;
 
+use anyhow::{bail, Context, Result};
+
 fn bytes_as_hex(bytes: &[u8]) -> String {
     bytes.iter().fold(String::new(), |mut output, b| {
         let _ = write!(output, "{b:02x}");
@@ -116,20 +118,25 @@ impl GameCommand {
     const TAIL_LEN: usize = 4;
 
     #[instrument(skip(bytes), fields(len = bytes.len()))]
-    pub fn try_new(bytes: Vec<u8>) -> Option<Self> {
+    pub fn try_new(bytes: Vec<u8>) -> Result<Self> {
         let header_overhead = Self::HEADER_LEN + Self::TAIL_LEN;
         if bytes.len() < header_overhead {
             warn!(len = bytes.len(), "game command header incomplete");
-            return None;
+            bail!("game command header incomplete");
         }
 
         // skip header magic const
-        let command_id = u16::from_be_bytes(bytes[4..6].try_into().unwrap());
-        let header_len = u16::from_be_bytes(bytes[6..8].try_into().unwrap());
-        let data_len = u32::from_be_bytes(bytes[8..12].try_into().unwrap());
+        // This is safe because we already check the minimum
+        //    length of data to also read this
+        let command_id = u16::from_be_bytes(bytes[4..6].try_into()?);
+        let header_len = u16::from_be_bytes(bytes[6..8].try_into()?);
+        let data_len = u32::from_be_bytes(bytes[8..12].try_into()?);
 
-        let data = bytes[12..12 + data_len as usize + header_len as usize].to_vec();
-        Some(GameCommand {
+        let data = bytes
+            .get(12..12 + data_len as usize + header_len as usize)
+            .context("failed to get data")?
+            .to_vec();
+        Ok(GameCommand {
             command_id,
             header_len,
             data_len,
@@ -182,7 +189,7 @@ impl GameSniffer {
     }
 
     #[instrument(skip_all, fields(len = bytes.len()))]
-    pub fn receive_packet(&mut self, bytes: Vec<u8>) -> Option<GamePacket> {
+    pub fn receive_packet(&mut self, bytes: Vec<u8>) -> Result<GamePacket> {
         let packet = parse_connection_packet(&PORTS, bytes)?;
         match packet {
             ConnectionPacket::HandshakeRequested => {
@@ -190,17 +197,17 @@ impl GameSniffer {
                 self.recv_kcp = None;
                 self.sent_kcp = None;
                 self.key = None;
-                Some(GamePacket::Connection(packet))
+                Ok(GamePacket::Connection(packet))
             }
             ConnectionPacket::HandshakeEstablished | ConnectionPacket::Disconnected => {
-                Some(GamePacket::Connection(packet))
+                Ok(GamePacket::Connection(packet))
             }
 
             ConnectionPacket::SegmentData(direction, kcp_seg) => {
                 let commands = self.receive_kcp_segment(direction, &kcp_seg);
                 match commands {
-                    Some(commands) => Some(GamePacket::Commands(commands)),
-                    None => Some(GamePacket::Connection(ConnectionPacket::SegmentData(
+                    Ok(commands) => Ok(GamePacket::Commands(commands)),
+                    Err(_) => Ok(GamePacket::Connection(ConnectionPacket::SegmentData(
                         direction, kcp_seg,
                     ))),
                 }
@@ -212,7 +219,7 @@ impl GameSniffer {
         &mut self,
         direction: PacketDirection,
         kcp_seg: &[u8],
-    ) -> Option<Vec<GameCommand>> {
+    ) -> anyhow::Result<Vec<GameCommand>> {
         let kcp = match direction {
             PacketDirection::Sent => &mut self.sent_kcp,
             PacketDirection::Received => &mut self.recv_kcp,
@@ -224,25 +231,24 @@ impl GameSniffer {
         }
 
         if let Some(kcp) = kcp {
-            let commands = kcp
-                .receive_segments(kcp_seg)
-                .into_iter()
-                .filter_map(|data| self.receive_command(data))
-                .collect();
+            let mut commands = vec![];
+            for command in kcp.receive_segments(kcp_seg)? {
+                commands.push(self.receive_command(command)?);
+            }
 
-            return Some(commands);
+            return Ok(commands);
         }
 
-        None
+        anyhow::bail!("fail ti read kcp segment")
     }
 
     #[instrument(skip_all, fields(len = data.len()))]
-    fn receive_command(&mut self, mut data: Vec<u8>) -> Option<GameCommand> {
+    fn receive_command(&mut self, mut data: Vec<u8>) -> Result<GameCommand> {
         let key = match &self.key {
             Some(k) => k,
             None => {
-                self.key = Some(lookup_initial_key(&self.initial_keys, &data));
-                self.key.as_ref().unwrap()
+                self.key = Some(lookup_initial_key(&self.initial_keys, &data)?);
+                self.key.as_ref().context("this should not happens")?
             }
         };
 
@@ -258,16 +264,16 @@ impl GameSniffer {
 
         if command.get_command_name().is_none() {
             debug!("unknown command");
-            return None;
+            bail!("unknown command");
         }
 
         if command.command_id == command_id::PlayerGetTokenScRsp {
-            let token_command = command.parse_proto::<PlayerGetTokenScRsp>().unwrap();
+            let token_command = command.parse_proto::<PlayerGetTokenScRsp>()?;
             let seed = token_command.secret_key_seed;
             info!(?seed, "setting new session key");
             self.key = Some(new_key_from_seed(seed));
         }
 
-        Some(command)
+        Ok(command)
     }
 }
