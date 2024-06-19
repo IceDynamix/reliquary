@@ -80,10 +80,10 @@ impl ::protobuf::Message for ChallengeReward {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                64 => {
                     self.taken_challenge_reward = is.read_uint64()?;
                 },
-                32 => {
+                104 => {
                     self.group_id = is.read_uint32()?;
                 },
                 tag => {
@@ -99,10 +99,10 @@ impl ::protobuf::Message for ChallengeReward {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.taken_challenge_reward != 0 {
-            my_size += ::protobuf::rt::uint64_size(11, self.taken_challenge_reward);
+            my_size += ::protobuf::rt::uint64_size(8, self.taken_challenge_reward);
         }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.group_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for ChallengeReward {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.taken_challenge_reward != 0 {
-            os.write_uint64(11, self.taken_challenge_reward)?;
+            os.write_uint64(8, self.taken_challenge_reward)?;
         }
         if self.group_id != 0 {
-            os.write_uint32(4, self.group_id)?;
+            os.write_uint32(13, self.group_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeReward {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15ChallengeReward.proto\"b\n\x0fChallengeReward\x124\n\x16taken_chal\
-    lenge_reward\x18\x0b\x20\x01(\x04R\x14takenChallengeReward\x12\x19\n\x08\
-    group_id\x18\x04\x20\x01(\rR\x07groupIdB\x15\n\x13emu.lunarcore.protob\
-    \x06proto3\
+    lenge_reward\x18\x08\x20\x01(\x04R\x14takenChallengeReward\x12\x19\n\x08\
+    group_id\x18\r\x20\x01(\rR\x07groupIdB\x15\n\x13emu.lunarcore.protob\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

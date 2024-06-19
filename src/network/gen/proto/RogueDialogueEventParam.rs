@@ -104,16 +104,16 @@ impl ::protobuf::Message for RogueDialogueEventParam {
                 112 => {
                     self.arg_id = is.read_uint32()?;
                 },
-                37 => {
+                101 => {
                     self.ratio = is.read_float()?;
                 },
-                40 => {
+                16 => {
                     self.int_value = is.read_sint32()?;
                 },
-                88 => {
+                24 => {
                     self.is_valid = is.read_bool()?;
                 },
-                64 => {
+                32 => {
                     self.dialogue_event_id = is.read_uint32()?;
                 },
                 tag => {
@@ -135,13 +135,13 @@ impl ::protobuf::Message for RogueDialogueEventParam {
             my_size += 1 + 4;
         }
         if self.int_value != 0 {
-            my_size += ::protobuf::rt::sint32_size(5, self.int_value);
+            my_size += ::protobuf::rt::sint32_size(2, self.int_value);
         }
         if self.is_valid != false {
             my_size += 1 + 1;
         }
         if self.dialogue_event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.dialogue_event_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.dialogue_event_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -153,16 +153,16 @@ impl ::protobuf::Message for RogueDialogueEventParam {
             os.write_uint32(14, self.arg_id)?;
         }
         if self.ratio != 0. {
-            os.write_float(4, self.ratio)?;
+            os.write_float(12, self.ratio)?;
         }
         if self.int_value != 0 {
-            os.write_sint32(5, self.int_value)?;
+            os.write_sint32(2, self.int_value)?;
         }
         if self.is_valid != false {
-            os.write_bool(11, self.is_valid)?;
+            os.write_bool(3, self.is_valid)?;
         }
         if self.dialogue_event_id != 0 {
-            os.write_uint32(8, self.dialogue_event_id)?;
+            os.write_uint32(4, self.dialogue_event_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -222,9 +222,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueDialogueEventParam {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dRogueDialogueEventParam.proto\"\xaa\x01\n\x17RogueDialogueEventPar\
     am\x12\x15\n\x06arg_id\x18\x0e\x20\x01(\rR\x05argId\x12\x14\n\x05ratio\
-    \x18\x04\x20\x01(\x02R\x05ratio\x12\x1b\n\tint_value\x18\x05\x20\x01(\
-    \x11R\x08intValue\x12\x19\n\x08is_valid\x18\x0b\x20\x01(\x08R\x07isValid\
-    \x12*\n\x11dialogue_event_id\x18\x08\x20\x01(\rR\x0fdialogueEventIdB\x15\
+    \x18\x0c\x20\x01(\x02R\x05ratio\x12\x1b\n\tint_value\x18\x02\x20\x01(\
+    \x11R\x08intValue\x12\x19\n\x08is_valid\x18\x03\x20\x01(\x08R\x07isValid\
+    \x12*\n\x11dialogue_event_id\x18\x04\x20\x01(\rR\x0fdialogueEventIdB\x15\
     \n\x13emu.lunarcore.protob\x06proto3\
 ";
 

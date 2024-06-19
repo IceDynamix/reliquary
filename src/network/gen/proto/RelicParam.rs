@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RelicParam {
     // message fields
-    // @@protoc_insertion_point(field:RelicParam.slot)
-    pub slot: u32,
     // @@protoc_insertion_point(field:RelicParam.relic_unique_id)
     pub relic_unique_id: u32,
+    // @@protoc_insertion_point(field:RelicParam.slot)
+    pub slot: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RelicParam.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl RelicParam {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "slot",
-            |m: &RelicParam| { &m.slot },
-            |m: &mut RelicParam| { &mut m.slot },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "relic_unique_id",
             |m: &RelicParam| { &m.relic_unique_id },
             |m: &mut RelicParam| { &mut m.relic_unique_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "slot",
+            |m: &RelicParam| { &m.slot },
+            |m: &mut RelicParam| { &mut m.slot },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RelicParam>(
             "RelicParam",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for RelicParam {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                112 => {
+                    self.relic_unique_id = is.read_uint32()?;
+                },
                 104 => {
                     self.slot = is.read_uint32()?;
-                },
-                40 => {
-                    self.relic_unique_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for RelicParam {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.relic_unique_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.relic_unique_id);
+        }
         if self.slot != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.slot);
-        }
-        if self.relic_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.relic_unique_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for RelicParam {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.relic_unique_id != 0 {
+            os.write_uint32(14, self.relic_unique_id)?;
+        }
         if self.slot != 0 {
             os.write_uint32(13, self.slot)?;
-        }
-        if self.relic_unique_id != 0 {
-            os.write_uint32(5, self.relic_unique_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for RelicParam {
     }
 
     fn clear(&mut self) {
-        self.slot = 0;
         self.relic_unique_id = 0;
+        self.slot = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RelicParam {
         static instance: RelicParam = RelicParam {
-            slot: 0,
             relic_unique_id: 0,
+            slot: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for RelicParam {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x10RelicParam.proto\"H\n\nRelicParam\x12\x12\n\x04slot\x18\r\x20\x01(\
-    \rR\x04slot\x12&\n\x0frelic_unique_id\x18\x05\x20\x01(\rR\rrelicUniqueId\
-    B\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x10RelicParam.proto\"H\n\nRelicParam\x12&\n\x0frelic_unique_id\x18\
+    \x0e\x20\x01(\rR\rrelicUniqueId\x12\x12\n\x04slot\x18\r\x20\x01(\rR\x04s\
+    lotB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

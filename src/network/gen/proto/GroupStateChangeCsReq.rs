@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GroupStateChangeCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GroupStateChangeCsReq.group_state_info)
-    pub group_state_info: ::protobuf::MessageField<super::GroupStateInfo::GroupStateInfo>,
+    // @@protoc_insertion_point(field:GroupStateChangeCsReq.group_info)
+    pub group_info: ::protobuf::MessageField<super::GroupStateInfo::GroupStateInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:GroupStateChangeCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl GroupStateChangeCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GroupStateInfo::GroupStateInfo>(
-            "group_state_info",
-            |m: &GroupStateChangeCsReq| { &m.group_state_info },
-            |m: &mut GroupStateChangeCsReq| { &mut m.group_state_info },
+            "group_info",
+            |m: &GroupStateChangeCsReq| { &m.group_info },
+            |m: &mut GroupStateChangeCsReq| { &mut m.group_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GroupStateChangeCsReq>(
             "GroupStateChangeCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for GroupStateChangeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.group_state_info)?;
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.group_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for GroupStateChangeCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.group_state_info.as_ref() {
+        if let Some(v) = self.group_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -98,8 +98,8 @@ impl ::protobuf::Message for GroupStateChangeCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.group_state_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if let Some(v) = self.group_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -118,13 +118,13 @@ impl ::protobuf::Message for GroupStateChangeCsReq {
     }
 
     fn clear(&mut self) {
-        self.group_state_info.clear();
+        self.group_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GroupStateChangeCsReq {
         static instance: GroupStateChangeCsReq = GroupStateChangeCsReq {
-            group_state_info: ::protobuf::MessageField::none(),
+            group_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,10 +149,9 @@ impl ::protobuf::reflect::ProtobufValue for GroupStateChangeCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bGroupStateChangeCsReq.proto\x1a\x14GroupStateInfo.proto\"R\n\x15Gr\
-    oupStateChangeCsReq\x129\n\x10group_state_info\x18\x08\x20\x01(\x0b2\x0f\
-    .GroupStateInfoR\x0egroupStateInfoB\x15\n\x13emu.lunarcore.protob\x06pro\
-    to3\
+    \n\x1bGroupStateChangeCsReq.proto\x1a\x14GroupStateInfo.proto\"G\n\x15Gr\
+    oupStateChangeCsReq\x12.\n\ngroup_info\x18\r\x20\x01(\x0b2\x0f.GroupStat\
+    eInfoR\tgroupInfoB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

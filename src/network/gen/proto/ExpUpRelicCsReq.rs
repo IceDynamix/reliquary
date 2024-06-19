@@ -80,10 +80,10 @@ impl ::protobuf::Message for ExpUpRelicCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                88 => {
                     self.relic_unique_id = is.read_uint32()?;
                 },
-                82 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_cost_list)?;
                 },
                 tag => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for ExpUpRelicCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.relic_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.relic_unique_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.relic_unique_id);
         }
         if let Some(v) = self.item_cost_list.as_ref() {
             let len = v.compute_size();
@@ -112,10 +112,10 @@ impl ::protobuf::Message for ExpUpRelicCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.relic_unique_id != 0 {
-            os.write_uint32(5, self.relic_unique_id)?;
+            os.write_uint32(11, self.relic_unique_id)?;
         }
         if let Some(v) = self.item_cost_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for ExpUpRelicCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15ExpUpRelicCsReq.proto\x1a\x12ItemCostList.proto\"n\n\x0fExpUpRelic\
-    CsReq\x12&\n\x0frelic_unique_id\x18\x05\x20\x01(\rR\rrelicUniqueId\x123\
-    \n\x0eitem_cost_list\x18\n\x20\x01(\x0b2\r.ItemCostListR\x0citemCostList\
-    B\x15\n\x13emu.lunarcore.protob\x06proto3\
+    CsReq\x12&\n\x0frelic_unique_id\x18\x0b\x20\x01(\rR\rrelicUniqueId\x123\
+    \n\x0eitem_cost_list\x18\x01\x20\x01(\x0b2\r.ItemCostListR\x0citemCostLi\
+    stB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

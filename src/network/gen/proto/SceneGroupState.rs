@@ -87,13 +87,13 @@ impl ::protobuf::Message for SceneGroupState {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                24 => {
                     self.is_default = is.read_bool()?;
                 },
                 64 => {
                     self.state = is.read_uint32()?;
                 },
-                88 => {
+                48 => {
                     self.group_id = is.read_uint32()?;
                 },
                 tag => {
@@ -115,7 +115,7 @@ impl ::protobuf::Message for SceneGroupState {
             my_size += ::protobuf::rt::uint32_size(8, self.state);
         }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.group_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for SceneGroupState {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.is_default != false {
-            os.write_bool(10, self.is_default)?;
+            os.write_bool(3, self.is_default)?;
         }
         if self.state != 0 {
             os.write_uint32(8, self.state)?;
         }
         if self.group_id != 0 {
-            os.write_uint32(11, self.group_id)?;
+            os.write_uint32(6, self.group_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,8 +185,8 @@ impl ::protobuf::reflect::ProtobufValue for SceneGroupState {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15SceneGroupState.proto\"a\n\x0fSceneGroupState\x12\x1d\n\nis_defaul\
-    t\x18\n\x20\x01(\x08R\tisDefault\x12\x14\n\x05state\x18\x08\x20\x01(\rR\
-    \x05state\x12\x19\n\x08group_id\x18\x0b\x20\x01(\rR\x07groupIdB\x15\n\
+    t\x18\x03\x20\x01(\x08R\tisDefault\x12\x14\n\x05state\x18\x08\x20\x01(\r\
+    R\x05state\x12\x19\n\x08group_id\x18\x06\x20\x01(\rR\x07groupIdB\x15\n\
     \x13emu.lunarcore.protob\x06proto3\
 ";
 

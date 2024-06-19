@@ -31,10 +31,10 @@ pub struct StartRogueScRsp {
     // message fields
     // @@protoc_insertion_point(field:StartRogueScRsp.lineup)
     pub lineup: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
-    // @@protoc_insertion_point(field:StartRogueScRsp.rogue_info)
-    pub rogue_info: ::protobuf::MessageField<super::RogueInfo::RogueInfo>,
     // @@protoc_insertion_point(field:StartRogueScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:StartRogueScRsp.rogue_info)
+    pub rogue_info: ::protobuf::MessageField<super::RogueInfo::RogueInfo>,
     // @@protoc_insertion_point(field:StartRogueScRsp.scene)
     pub scene: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
     // special fields
@@ -61,15 +61,15 @@ impl StartRogueScRsp {
             |m: &StartRogueScRsp| { &m.lineup },
             |m: &mut StartRogueScRsp| { &mut m.lineup },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueInfo::RogueInfo>(
-            "rogue_info",
-            |m: &StartRogueScRsp| { &m.rogue_info },
-            |m: &mut StartRogueScRsp| { &mut m.rogue_info },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &StartRogueScRsp| { &m.retcode },
             |m: &mut StartRogueScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueInfo::RogueInfo>(
+            "rogue_info",
+            |m: &StartRogueScRsp| { &m.rogue_info },
+            |m: &mut StartRogueScRsp| { &mut m.rogue_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneInfo::SceneInfo>(
             "scene",
@@ -94,16 +94,16 @@ impl ::protobuf::Message for StartRogueScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
+                },
+                64 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_info)?;
                 },
-                24 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                42 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
                 },
                 tag => {
@@ -122,12 +122,12 @@ impl ::protobuf::Message for StartRogueScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        }
         if let Some(v) = self.rogue_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         if let Some(v) = self.scene.as_ref() {
             let len = v.compute_size();
@@ -140,16 +140,16 @@ impl ::protobuf::Message for StartRogueScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(8, self.retcode)?;
         }
         if let Some(v) = self.rogue_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
-        }
         if let Some(v) = self.scene.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,8 +169,8 @@ impl ::protobuf::Message for StartRogueScRsp {
 
     fn clear(&mut self) {
         self.lineup.clear();
-        self.rogue_info.clear();
         self.retcode = 0;
+        self.rogue_info.clear();
         self.scene.clear();
         self.special_fields.clear();
     }
@@ -178,8 +178,8 @@ impl ::protobuf::Message for StartRogueScRsp {
     fn default_instance() -> &'static StartRogueScRsp {
         static instance: StartRogueScRsp = StartRogueScRsp {
             lineup: ::protobuf::MessageField::none(),
-            rogue_info: ::protobuf::MessageField::none(),
             retcode: 0,
+            rogue_info: ::protobuf::MessageField::none(),
             scene: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -207,10 +207,10 @@ impl ::protobuf::reflect::ProtobufValue for StartRogueScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15StartRogueScRsp.proto\x1a\x0fRogueInfo.proto\x1a\x10LineupInfo.pro\
     to\x1a\x0fSceneInfo.proto\"\x9d\x01\n\x0fStartRogueScRsp\x12#\n\x06lineu\
-    p\x18\n\x20\x01(\x0b2\x0b.LineupInfoR\x06lineup\x12)\n\nrogue_info\x18\
-    \x0e\x20\x01(\x0b2\n.RogueInfoR\trogueInfo\x12\x18\n\x07retcode\x18\x03\
-    \x20\x01(\rR\x07retcode\x12\x20\n\x05scene\x18\x05\x20\x01(\x0b2\n.Scene\
-    InfoR\x05sceneB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    p\x18\x0f\x20\x01(\x0b2\x0b.LineupInfoR\x06lineup\x12\x18\n\x07retcode\
+    \x18\x08\x20\x01(\rR\x07retcode\x12)\n\nrogue_info\x18\x0e\x20\x01(\x0b2\
+    \n.RogueInfoR\trogueInfo\x12\x20\n\x05scene\x18\x02\x20\x01(\x0b2\n.Scen\
+    eInfoR\x05sceneB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

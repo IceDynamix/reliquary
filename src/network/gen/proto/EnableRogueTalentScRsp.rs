@@ -83,7 +83,7 @@ impl ::protobuf::Message for EnableRogueTalentScRsp {
                 32 => {
                     self.retcode = is.read_uint32()?;
                 },
-                10 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.talent_info)?;
                 },
                 tag => {
@@ -115,7 +115,7 @@ impl ::protobuf::Message for EnableRogueTalentScRsp {
             os.write_uint32(4, self.retcode)?;
         }
         if let Some(v) = self.talent_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,8 +169,8 @@ impl ::protobuf::reflect::ProtobufValue for EnableRogueTalentScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cEnableRogueTalentScRsp.proto\x1a\x15RogueTalentInfo.proto\"e\n\x16\
     EnableRogueTalentScRsp\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retco\
-    de\x121\n\x0btalent_info\x18\x01\x20\x01(\x0b2\x10.RogueTalentInfoR\ntal\
-    entInfoB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    de\x121\n\x0btalent_info\x18\r\x20\x01(\x0b2\x10.RogueTalentInfoR\ntalen\
+    tInfoB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

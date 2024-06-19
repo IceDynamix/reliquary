@@ -101,19 +101,19 @@ impl ::protobuf::Message for ComposeSelectedRelicCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                120 => {
                     self.compose_id = is.read_uint32()?;
                 },
-                106 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.compose_item_list)?;
                 },
-                88 => {
+                32 => {
                     self.main_affix_id = is.read_uint32()?;
                 },
-                32 => {
+                88 => {
                     self.compose_relic_id = is.read_uint32()?;
                 },
-                80 => {
+                64 => {
                     self.count = is.read_uint32()?;
                 },
                 tag => {
@@ -129,20 +129,20 @@ impl ::protobuf::Message for ComposeSelectedRelicCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.compose_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.compose_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.compose_id);
         }
         if let Some(v) = self.compose_item_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.main_affix_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.main_affix_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.main_affix_id);
         }
         if self.compose_relic_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.compose_relic_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.compose_relic_id);
         }
         if self.count != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.count);
+            my_size += ::protobuf::rt::uint32_size(8, self.count);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -151,19 +151,19 @@ impl ::protobuf::Message for ComposeSelectedRelicCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.compose_id != 0 {
-            os.write_uint32(3, self.compose_id)?;
+            os.write_uint32(15, self.compose_id)?;
         }
         if let Some(v) = self.compose_item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.main_affix_id != 0 {
-            os.write_uint32(11, self.main_affix_id)?;
+            os.write_uint32(4, self.main_affix_id)?;
         }
         if self.compose_relic_id != 0 {
-            os.write_uint32(4, self.compose_relic_id)?;
+            os.write_uint32(11, self.compose_relic_id)?;
         }
         if self.count != 0 {
-            os.write_uint32(10, self.count)?;
+            os.write_uint32(8, self.count)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -222,12 +222,12 @@ impl ::protobuf::reflect::ProtobufValue for ComposeSelectedRelicCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fComposeSelectedRelicCsReq.proto\x1a\x12ItemCostList.proto\"\xd9\
-    \x01\n\x19ComposeSelectedRelicCsReq\x12\x1d\n\ncompose_id\x18\x03\x20\
-    \x01(\rR\tcomposeId\x129\n\x11compose_item_list\x18\r\x20\x01(\x0b2\r.It\
-    emCostListR\x0fcomposeItemList\x12\"\n\rmain_affix_id\x18\x0b\x20\x01(\r\
-    R\x0bmainAffixId\x12(\n\x10compose_relic_id\x18\x04\x20\x01(\rR\x0ecompo\
-    seRelicId\x12\x14\n\x05count\x18\n\x20\x01(\rR\x05countB\x15\n\x13emu.lu\
-    narcore.protob\x06proto3\
+    \x01\n\x19ComposeSelectedRelicCsReq\x12\x1d\n\ncompose_id\x18\x0f\x20\
+    \x01(\rR\tcomposeId\x129\n\x11compose_item_list\x18\x01\x20\x01(\x0b2\r.\
+    ItemCostListR\x0fcomposeItemList\x12\"\n\rmain_affix_id\x18\x04\x20\x01(\
+    \rR\x0bmainAffixId\x12(\n\x10compose_relic_id\x18\x0b\x20\x01(\rR\x0ecom\
+    poseRelicId\x12\x14\n\x05count\x18\x08\x20\x01(\rR\x05countB\x15\n\x13em\
+    u.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

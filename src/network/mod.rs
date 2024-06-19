@@ -128,6 +128,10 @@ impl GameCommand {
         let header_len = u16::from_be_bytes(bytes[6..8].try_into().unwrap());
         let data_len = u32::from_be_bytes(bytes[8..12].try_into().unwrap());
 
+        if bytes.len() < 12 + data_len as usize + header_len as usize {
+            return None;
+        }
+
         let data = bytes[12..12 + data_len as usize + header_len as usize].to_vec();
         Some(GameCommand {
             command_id,

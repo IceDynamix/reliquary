@@ -83,7 +83,7 @@ impl ::protobuf::Message for ApplyFriendCsReq {
                 56 => {
                     self.uid = is.read_uint32()?;
                 },
-                40 => {
+                112 => {
                     self.source = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for ApplyFriendCsReq {
             my_size += ::protobuf::rt::uint32_size(7, self.uid);
         }
         if self.source != ::protobuf::EnumOrUnknown::new(super::FriendApplySource::FriendApplySource::FRIEND_APPLY_SOURCE_NONE) {
-            my_size += ::protobuf::rt::int32_size(5, self.source.value());
+            my_size += ::protobuf::rt::int32_size(14, self.source.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -114,7 +114,7 @@ impl ::protobuf::Message for ApplyFriendCsReq {
             os.write_uint32(7, self.uid)?;
         }
         if self.source != ::protobuf::EnumOrUnknown::new(super::FriendApplySource::FriendApplySource::FRIEND_APPLY_SOURCE_NONE) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.source))?;
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.source))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for ApplyFriendCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16ApplyFriendCsReq.proto\x1a\x17FriendApplySource.proto\"P\n\x10Appl\
     yFriendCsReq\x12\x10\n\x03uid\x18\x07\x20\x01(\rR\x03uid\x12*\n\x06sourc\
-    e\x18\x05\x20\x01(\x0e2\x12.FriendApplySourceR\x06sourceB\x15\n\x13emu.l\
+    e\x18\x0e\x20\x01(\x0e2\x12.FriendApplySourceR\x06sourceB\x15\n\x13emu.l\
     unarcore.protob\x06proto3\
 ";
 

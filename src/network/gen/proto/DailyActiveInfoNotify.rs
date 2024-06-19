@@ -87,16 +87,16 @@ impl ::protobuf::Message for DailyActiveInfoNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                32 => {
                     self.daily_active_point = is.read_uint32()?;
                 },
-                10 => {
+                122 => {
                     is.read_repeated_packed_uint32_into(&mut self.daily_active_quest_id_list)?;
                 },
-                8 => {
+                120 => {
                     self.daily_active_quest_id_list.push(is.read_uint32()?);
                 },
-                26 => {
+                66 => {
                     self.daily_active_level_list.push(is.read_message()?);
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for DailyActiveInfoNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.daily_active_point != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.daily_active_point);
+            my_size += ::protobuf::rt::uint32_size(4, self.daily_active_point);
         }
         for value in &self.daily_active_quest_id_list {
-            my_size += ::protobuf::rt::uint32_size(1, *value);
+            my_size += ::protobuf::rt::uint32_size(15, *value);
         };
         for value in &self.daily_active_level_list {
             let len = value.compute_size();
@@ -128,13 +128,13 @@ impl ::protobuf::Message for DailyActiveInfoNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.daily_active_point != 0 {
-            os.write_uint32(14, self.daily_active_point)?;
+            os.write_uint32(4, self.daily_active_point)?;
         }
         for v in &self.daily_active_quest_id_list {
-            os.write_uint32(1, *v)?;
+            os.write_uint32(15, *v)?;
         };
         for v in &self.daily_active_level_list {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -189,10 +189,10 @@ impl ::protobuf::reflect::ProtobufValue for DailyActiveInfoNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bDailyActiveInfoNotify.proto\x1a\x17DailyActivityInfo.proto\"\xcc\
-    \x01\n\x15DailyActiveInfoNotify\x12,\n\x12daily_active_point\x18\x0e\x20\
+    \x01\n\x15DailyActiveInfoNotify\x12,\n\x12daily_active_point\x18\x04\x20\
     \x01(\rR\x10dailyActivePoint\x12:\n\x1adaily_active_quest_id_list\x18\
-    \x01\x20\x03(\rR\x16dailyActiveQuestIdList\x12I\n\x17daily_active_level_\
-    list\x18\x03\x20\x03(\x0b2\x12.DailyActivityInfoR\x14dailyActiveLevelLis\
+    \x0f\x20\x03(\rR\x16dailyActiveQuestIdList\x12I\n\x17daily_active_level_\
+    list\x18\x08\x20\x03(\x0b2\x12.DailyActivityInfoR\x14dailyActiveLevelLis\
     tB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

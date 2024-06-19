@@ -73,7 +73,7 @@ impl ::protobuf::Message for SyncApplyFriendScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.friend_apply_info)?;
                 },
                 tag => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for SyncApplyFriendScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.friend_apply_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +150,7 @@ impl ::protobuf::reflect::ProtobufValue for SyncApplyFriendScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dSyncApplyFriendScNotify.proto\x1a\x15FriendApplyInfo.proto\"W\n\
-    \x17SyncApplyFriendScNotify\x12<\n\x11friend_apply_info\x18\x0c\x20\x01(\
+    \x17SyncApplyFriendScNotify\x12<\n\x11friend_apply_info\x18\x04\x20\x01(\
     \x0b2\x10.FriendApplyInfoR\x0ffriendApplyInfoB\x15\n\x13emu.lunarcore.pr\
     otob\x06proto3\
 ";

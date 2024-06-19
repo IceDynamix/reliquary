@@ -101,25 +101,25 @@ impl ::protobuf::Message for GetPhoneDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                8 => {
                     self.cur_phone_theme = is.read_uint32()?;
                 },
-                50 => {
+                114 => {
                     is.read_repeated_packed_uint32_into(&mut self.owned_chat_bubbles)?;
                 },
-                48 => {
+                112 => {
                     self.owned_chat_bubbles.push(is.read_uint32()?);
                 },
-                80 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
-                58 => {
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.owned_phone_themes)?;
                 },
-                56 => {
+                40 => {
                     self.owned_phone_themes.push(is.read_uint32()?);
                 },
-                120 => {
+                56 => {
                     self.cur_chat_bubble = is.read_uint32()?;
                 },
                 tag => {
@@ -135,19 +135,19 @@ impl ::protobuf::Message for GetPhoneDataScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.cur_phone_theme != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.cur_phone_theme);
+            my_size += ::protobuf::rt::uint32_size(1, self.cur_phone_theme);
         }
         for value in &self.owned_chat_bubbles {
-            my_size += ::protobuf::rt::uint32_size(6, *value);
+            my_size += ::protobuf::rt::uint32_size(14, *value);
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         for value in &self.owned_phone_themes {
-            my_size += ::protobuf::rt::uint32_size(7, *value);
+            my_size += ::protobuf::rt::uint32_size(5, *value);
         };
         if self.cur_chat_bubble != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.cur_chat_bubble);
+            my_size += ::protobuf::rt::uint32_size(7, self.cur_chat_bubble);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -156,19 +156,19 @@ impl ::protobuf::Message for GetPhoneDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.cur_phone_theme != 0 {
-            os.write_uint32(4, self.cur_phone_theme)?;
+            os.write_uint32(1, self.cur_phone_theme)?;
         }
         for v in &self.owned_chat_bubbles {
-            os.write_uint32(6, *v)?;
+            os.write_uint32(14, *v)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
         }
         for v in &self.owned_phone_themes {
-            os.write_uint32(7, *v)?;
+            os.write_uint32(5, *v)?;
         };
         if self.cur_chat_bubble != 0 {
-            os.write_uint32(15, self.cur_chat_bubble)?;
+            os.write_uint32(7, self.cur_chat_bubble)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -227,10 +227,10 @@ impl ::protobuf::reflect::ProtobufValue for GetPhoneDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17GetPhoneDataScRsp.proto\"\xd9\x01\n\x11GetPhoneDataScRsp\x12&\n\
-    \x0fcur_phone_theme\x18\x04\x20\x01(\rR\rcurPhoneTheme\x12,\n\x12owned_c\
-    hat_bubbles\x18\x06\x20\x03(\rR\x10ownedChatBubbles\x12\x18\n\x07retcode\
-    \x18\n\x20\x01(\rR\x07retcode\x12,\n\x12owned_phone_themes\x18\x07\x20\
-    \x03(\rR\x10ownedPhoneThemes\x12&\n\x0fcur_chat_bubble\x18\x0f\x20\x01(\
+    \x0fcur_phone_theme\x18\x01\x20\x01(\rR\rcurPhoneTheme\x12,\n\x12owned_c\
+    hat_bubbles\x18\x0e\x20\x03(\rR\x10ownedChatBubbles\x12\x18\n\x07retcode\
+    \x18\x0c\x20\x01(\rR\x07retcode\x12,\n\x12owned_phone_themes\x18\x05\x20\
+    \x03(\rR\x10ownedPhoneThemes\x12&\n\x0fcur_chat_bubble\x18\x07\x20\x01(\
     \rR\rcurChatBubbleB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

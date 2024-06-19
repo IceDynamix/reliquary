@@ -87,16 +87,16 @@ impl ::protobuf::Message for TakeMailAttachmentScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                90 => {
                     is.read_repeated_packed_uint32_into(&mut self.succ_mail_id_list)?;
                 },
-                80 => {
+                88 => {
                     self.succ_mail_id_list.push(is.read_uint32()?);
                 },
-                98 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.attachment)?;
                 },
-                8 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -112,14 +112,14 @@ impl ::protobuf::Message for TakeMailAttachmentScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         for value in &self.succ_mail_id_list {
-            my_size += ::protobuf::rt::uint32_size(10, *value);
+            my_size += ::protobuf::rt::uint32_size(11, *value);
         };
         if let Some(v) = self.attachment.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -128,13 +128,13 @@ impl ::protobuf::Message for TakeMailAttachmentScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.succ_mail_id_list {
-            os.write_uint32(10, *v)?;
+            os.write_uint32(11, *v)?;
         };
         if let Some(v) = self.attachment.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -189,10 +189,10 @@ impl ::protobuf::reflect::ProtobufValue for TakeMailAttachmentScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dTakeMailAttachmentScRsp.proto\x1a\x0eItemList.proto\"\x89\x01\n\
-    \x17TakeMailAttachmentScRsp\x12)\n\x11succ_mail_id_list\x18\n\x20\x03(\r\
-    R\x0esuccMailIdList\x12)\n\nattachment\x18\x0c\x20\x01(\x0b2\t.ItemListR\
-    \nattachment\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcodeB\x15\n\
-    \x13emu.lunarcore.protob\x06proto3\
+    \x17TakeMailAttachmentScRsp\x12)\n\x11succ_mail_id_list\x18\x0b\x20\x03(\
+    \rR\x0esuccMailIdList\x12)\n\nattachment\x18\x04\x20\x01(\x0b2\t.ItemLis\
+    tR\nattachment\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcodeB\x15\
+    \n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

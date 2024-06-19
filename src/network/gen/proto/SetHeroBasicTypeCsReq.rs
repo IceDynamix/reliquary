@@ -73,7 +73,7 @@ impl ::protobuf::Message for SetHeroBasicTypeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                24 => {
                     self.basic_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -89,7 +89,7 @@ impl ::protobuf::Message for SetHeroBasicTypeCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.basic_type != ::protobuf::EnumOrUnknown::new(super::HeroBasicType::HeroBasicType::None) {
-            my_size += ::protobuf::rt::int32_size(11, self.basic_type.value());
+            my_size += ::protobuf::rt::int32_size(3, self.basic_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SetHeroBasicTypeCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.basic_type != ::protobuf::EnumOrUnknown::new(super::HeroBasicType::HeroBasicType::None) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.basic_type))?;
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.basic_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for SetHeroBasicTypeCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bSetHeroBasicTypeCsReq.proto\x1a\x13HeroBasicType.proto\"F\n\x15Set\
-    HeroBasicTypeCsReq\x12-\n\nbasic_type\x18\x0b\x20\x01(\x0e2\x0e.HeroBasi\
+    HeroBasicTypeCsReq\x12-\n\nbasic_type\x18\x03\x20\x01(\x0e2\x0e.HeroBasi\
     cTypeR\tbasicTypeB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

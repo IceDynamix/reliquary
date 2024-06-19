@@ -94,16 +94,16 @@ impl ::protobuf::Message for RotateMapCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                40 => {
                     self.unk_int = is.read_uint32()?;
                 },
-                40 => {
+                32 => {
                     self.group_id = is.read_uint32()?;
                 },
-                98 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
                 },
-                50 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_map)?;
                 },
                 tag => {
@@ -119,10 +119,10 @@ impl ::protobuf::Message for RotateMapCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.unk_int != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.unk_int);
+            my_size += ::protobuf::rt::uint32_size(5, self.unk_int);
         }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.group_id);
         }
         if let Some(v) = self.motion.as_ref() {
             let len = v.compute_size();
@@ -139,16 +139,16 @@ impl ::protobuf::Message for RotateMapCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.unk_int != 0 {
-            os.write_uint32(7, self.unk_int)?;
+            os.write_uint32(5, self.unk_int)?;
         }
         if self.group_id != 0 {
-            os.write_uint32(5, self.group_id)?;
+            os.write_uint32(4, self.group_id)?;
         }
         if let Some(v) = self.motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if let Some(v) = self.rogue_map.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -209,14 +209,14 @@ pub mod rotate_map_cs_req {
     #[derive(PartialEq,Clone,Default,Debug)]
     pub struct Vector4 {
         // message fields
-        // @@protoc_insertion_point(field:RotateMapCsReq.Vector4.w)
-        pub w: f32,
+        // @@protoc_insertion_point(field:RotateMapCsReq.Vector4.z)
+        pub z: f32,
         // @@protoc_insertion_point(field:RotateMapCsReq.Vector4.y)
         pub y: f32,
         // @@protoc_insertion_point(field:RotateMapCsReq.Vector4.x)
         pub x: f32,
-        // @@protoc_insertion_point(field:RotateMapCsReq.Vector4.z)
-        pub z: f32,
+        // @@protoc_insertion_point(field:RotateMapCsReq.Vector4.w)
+        pub w: f32,
         // special fields
         // @@protoc_insertion_point(special_field:RotateMapCsReq.Vector4.special_fields)
         pub special_fields: ::protobuf::SpecialFields,
@@ -237,9 +237,9 @@ pub mod rotate_map_cs_req {
             let mut fields = ::std::vec::Vec::with_capacity(4);
             let mut oneofs = ::std::vec::Vec::with_capacity(0);
             fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-                "w",
-                |m: &Vector4| { &m.w },
-                |m: &mut Vector4| { &mut m.w },
+                "z",
+                |m: &Vector4| { &m.z },
+                |m: &mut Vector4| { &mut m.z },
             ));
             fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
                 "y",
@@ -252,9 +252,9 @@ pub mod rotate_map_cs_req {
                 |m: &mut Vector4| { &mut m.x },
             ));
             fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-                "z",
-                |m: &Vector4| { &m.z },
-                |m: &mut Vector4| { &mut m.z },
+                "w",
+                |m: &Vector4| { &m.w },
+                |m: &mut Vector4| { &mut m.w },
             ));
             ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<Vector4>(
                 "RotateMapCsReq.Vector4",
@@ -274,17 +274,17 @@ pub mod rotate_map_cs_req {
         fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
             while let Some(tag) = is.read_raw_tag_or_eof()? {
                 match tag {
-                    101 => {
-                        self.w = is.read_float()?;
+                    109 => {
+                        self.z = is.read_float()?;
                     },
-                    93 => {
+                    77 => {
                         self.y = is.read_float()?;
                     },
-                    69 => {
+                    61 => {
                         self.x = is.read_float()?;
                     },
-                    85 => {
-                        self.z = is.read_float()?;
+                    125 => {
+                        self.w = is.read_float()?;
                     },
                     tag => {
                         ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -298,7 +298,7 @@ pub mod rotate_map_cs_req {
         #[allow(unused_variables)]
         fn compute_size(&self) -> u64 {
             let mut my_size = 0;
-            if self.w != 0. {
+            if self.z != 0. {
                 my_size += 1 + 4;
             }
             if self.y != 0. {
@@ -307,7 +307,7 @@ pub mod rotate_map_cs_req {
             if self.x != 0. {
                 my_size += 1 + 4;
             }
-            if self.z != 0. {
+            if self.w != 0. {
                 my_size += 1 + 4;
             }
             my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -316,17 +316,17 @@ pub mod rotate_map_cs_req {
         }
 
         fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-            if self.w != 0. {
-                os.write_float(12, self.w)?;
+            if self.z != 0. {
+                os.write_float(13, self.z)?;
             }
             if self.y != 0. {
-                os.write_float(11, self.y)?;
+                os.write_float(9, self.y)?;
             }
             if self.x != 0. {
-                os.write_float(8, self.x)?;
+                os.write_float(7, self.x)?;
             }
-            if self.z != 0. {
-                os.write_float(10, self.z)?;
+            if self.w != 0. {
+                os.write_float(15, self.w)?;
             }
             os.write_unknown_fields(self.special_fields.unknown_fields())?;
             ::std::result::Result::Ok(())
@@ -345,19 +345,19 @@ pub mod rotate_map_cs_req {
         }
 
         fn clear(&mut self) {
-            self.w = 0.;
+            self.z = 0.;
             self.y = 0.;
             self.x = 0.;
-            self.z = 0.;
+            self.w = 0.;
             self.special_fields.clear();
         }
 
         fn default_instance() -> &'static Vector4 {
             static instance: Vector4 = Vector4 {
-                w: 0.,
+                z: 0.,
                 y: 0.,
                 x: 0.,
-                z: 0.,
+                w: 0.,
                 special_fields: ::protobuf::SpecialFields::new(),
             };
             &instance
@@ -436,7 +436,7 @@ pub mod rotate_map_cs_req {
         fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
             while let Some(tag) = is.read_raw_tag_or_eof()? {
                 match tag {
-                    18 => {
+                    122 => {
                         ::protobuf::rt::read_singular_message_into_field(is, &mut self.vector3)?;
                     },
                     82 => {
@@ -469,7 +469,7 @@ pub mod rotate_map_cs_req {
 
         fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
             if let Some(v) = self.vector3.as_ref() {
-                ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+                ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
             }
             if let Some(v) = self.vector4.as_ref() {
                 ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
@@ -526,16 +526,16 @@ pub mod rotate_map_cs_req {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14RotateMapCsReq.proto\x1a\x10MotionInfo.proto\x1a\x0cVector.proto\"\
-    \xc7\x02\n\x0eRotateMapCsReq\x12\x17\n\x07unk_int\x18\x07\x20\x01(\rR\
-    \x06unkInt\x12\x19\n\x08group_id\x18\x05\x20\x01(\rR\x07groupId\x12#\n\
-    \x06motion\x18\x0c\x20\x01(\x0b2\x0b.MotionInfoR\x06motion\x126\n\trogue\
-    _map\x18\x06\x20\x01(\x0b2\x19.RotateMapCsReq.NewMapRotR\x08rogueMap\x1a\
-    A\n\x07Vector4\x12\x0c\n\x01w\x18\x0c\x20\x01(\x02R\x01w\x12\x0c\n\x01y\
-    \x18\x0b\x20\x01(\x02R\x01y\x12\x0c\n\x01x\x18\x08\x20\x01(\x02R\x01x\
-    \x12\x0c\n\x01z\x18\n\x20\x01(\x02R\x01z\x1aa\n\tNewMapRot\x12!\n\x07vec\
-    tor3\x18\x02\x20\x01(\x0b2\x07.VectorR\x07vector3\x121\n\x07vector4\x18\
-    \n\x20\x01(\x0b2\x17.RotateMapCsReq.Vector4R\x07vector4B\x15\n\x13emu.lu\
-    narcore.protob\x06proto3\
+    \xc7\x02\n\x0eRotateMapCsReq\x12\x17\n\x07unk_int\x18\x05\x20\x01(\rR\
+    \x06unkInt\x12\x19\n\x08group_id\x18\x04\x20\x01(\rR\x07groupId\x12#\n\
+    \x06motion\x18\x0f\x20\x01(\x0b2\x0b.MotionInfoR\x06motion\x126\n\trogue\
+    _map\x18\x0c\x20\x01(\x0b2\x19.RotateMapCsReq.NewMapRotR\x08rogueMap\x1a\
+    A\n\x07Vector4\x12\x0c\n\x01z\x18\r\x20\x01(\x02R\x01z\x12\x0c\n\x01y\
+    \x18\t\x20\x01(\x02R\x01y\x12\x0c\n\x01x\x18\x07\x20\x01(\x02R\x01x\x12\
+    \x0c\n\x01w\x18\x0f\x20\x01(\x02R\x01w\x1aa\n\tNewMapRot\x12!\n\x07vecto\
+    r3\x18\x0f\x20\x01(\x0b2\x07.VectorR\x07vector3\x121\n\x07vector4\x18\n\
+    \x20\x01(\x0b2\x17.RotateMapCsReq.Vector4R\x07vector4B\x15\n\x13emu.luna\
+    rcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

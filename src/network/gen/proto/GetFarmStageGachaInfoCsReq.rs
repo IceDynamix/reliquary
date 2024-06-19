@@ -73,10 +73,10 @@ impl ::protobuf::Message for GetFarmStageGachaInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.farm_stage_gacha_id_list)?;
                 },
-                48 => {
+                96 => {
                     self.farm_stage_gacha_id_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -92,7 +92,7 @@ impl ::protobuf::Message for GetFarmStageGachaInfoCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         for value in &self.farm_stage_gacha_id_list {
-            my_size += ::protobuf::rt::uint32_size(6, *value);
+            my_size += ::protobuf::rt::uint32_size(12, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -101,7 +101,7 @@ impl ::protobuf::Message for GetFarmStageGachaInfoCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.farm_stage_gacha_id_list {
-            os.write_uint32(6, *v)?;
+            os.write_uint32(12, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -152,7 +152,7 @@ impl ::protobuf::reflect::ProtobufValue for GetFarmStageGachaInfoCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20GetFarmStageGachaInfoCsReq.proto\"T\n\x1aGetFarmStageGachaInfoCsRe\
-    q\x126\n\x18farm_stage_gacha_id_list\x18\x06\x20\x03(\rR\x14farmStageGac\
+    q\x126\n\x18farm_stage_gacha_id_list\x18\x0c\x20\x03(\rR\x14farmStageGac\
     haIdListB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

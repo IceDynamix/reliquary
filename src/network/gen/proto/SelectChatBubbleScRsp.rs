@@ -80,10 +80,10 @@ impl ::protobuf::Message for SelectChatBubbleScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
-                80 => {
+                24 => {
                     self.cur_chat_bubble = is.read_uint32()?;
                 },
                 tag => {
@@ -99,10 +99,10 @@ impl ::protobuf::Message for SelectChatBubbleScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         if self.cur_chat_bubble != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.cur_chat_bubble);
+            my_size += ::protobuf::rt::uint32_size(3, self.cur_chat_bubble);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for SelectChatBubbleScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
         if self.cur_chat_bubble != 0 {
-            os.write_uint32(10, self.cur_chat_bubble)?;
+            os.write_uint32(3, self.cur_chat_bubble)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for SelectChatBubbleScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bSelectChatBubbleScRsp.proto\"Y\n\x15SelectChatBubbleScRsp\x12\x18\
-    \n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12&\n\x0fcur_chat_bubble\
-    \x18\n\x20\x01(\rR\rcurChatBubbleB\x15\n\x13emu.lunarcore.protob\x06prot\
-    o3\
+    \n\x07retcode\x18\x0f\x20\x01(\rR\x07retcode\x12&\n\x0fcur_chat_bubble\
+    \x18\x03\x20\x01(\rR\rcurChatBubbleB\x15\n\x13emu.lunarcore.protob\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

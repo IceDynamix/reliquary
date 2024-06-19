@@ -29,22 +29,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayerSyncScNotify {
     // message fields
-    // @@protoc_insertion_point(field:PlayerSyncScNotify.board_data_sync)
-    pub board_data_sync: ::protobuf::MessageField<super::BoardDataSync::BoardDataSync>,
-    // @@protoc_insertion_point(field:PlayerSyncScNotify.avatar_sync)
-    pub avatar_sync: ::protobuf::MessageField<super::AvatarSync::AvatarSync>,
-    // @@protoc_insertion_point(field:PlayerSyncScNotify.mission_sync)
-    pub mission_sync: ::protobuf::MessageField<super::MissionSync::MissionSync>,
     // @@protoc_insertion_point(field:PlayerSyncScNotify.equipment_list)
     pub equipment_list: ::std::vec::Vec<super::Equipment::Equipment>,
-    // @@protoc_insertion_point(field:PlayerSyncScNotify.relic_list)
-    pub relic_list: ::std::vec::Vec<super::Relic::Relic>,
-    // @@protoc_insertion_point(field:PlayerSyncScNotify.basic_info)
-    pub basic_info: ::protobuf::MessageField<super::PlayerBasicInfo::PlayerBasicInfo>,
-    // @@protoc_insertion_point(field:PlayerSyncScNotify.material_list)
-    pub material_list: ::std::vec::Vec<super::Material::Material>,
     // @@protoc_insertion_point(field:PlayerSyncScNotify.total_achievement_exp)
     pub total_achievement_exp: u32,
+    // @@protoc_insertion_point(field:PlayerSyncScNotify.mission_sync)
+    pub mission_sync: ::protobuf::MessageField<super::MissionSync::MissionSync>,
+    // @@protoc_insertion_point(field:PlayerSyncScNotify.avatar_sync)
+    pub avatar_sync: ::protobuf::MessageField<super::AvatarSync::AvatarSync>,
+    // @@protoc_insertion_point(field:PlayerSyncScNotify.board_data_sync)
+    pub board_data_sync: ::protobuf::MessageField<super::BoardDataSync::BoardDataSync>,
+    // @@protoc_insertion_point(field:PlayerSyncScNotify.relic_list)
+    pub relic_list: ::std::vec::Vec<super::Relic::Relic>,
+    // @@protoc_insertion_point(field:PlayerSyncScNotify.material_list)
+    pub material_list: ::std::vec::Vec<super::Material::Material>,
+    // @@protoc_insertion_point(field:PlayerSyncScNotify.basic_info)
+    pub basic_info: ::protobuf::MessageField<super::PlayerBasicInfo::PlayerBasicInfo>,
     // @@protoc_insertion_point(field:PlayerSyncScNotify.basic_type_info_list)
     pub basic_type_info_list: ::std::vec::Vec<super::HeroBasicTypeInfo::HeroBasicTypeInfo>,
     // @@protoc_insertion_point(field:PlayerSyncScNotify.del_relic_list)
@@ -70,45 +70,45 @@ impl PlayerSyncScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(11);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BoardDataSync::BoardDataSync>(
-            "board_data_sync",
-            |m: &PlayerSyncScNotify| { &m.board_data_sync },
-            |m: &mut PlayerSyncScNotify| { &mut m.board_data_sync },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "equipment_list",
+            |m: &PlayerSyncScNotify| { &m.equipment_list },
+            |m: &mut PlayerSyncScNotify| { &mut m.equipment_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AvatarSync::AvatarSync>(
-            "avatar_sync",
-            |m: &PlayerSyncScNotify| { &m.avatar_sync },
-            |m: &mut PlayerSyncScNotify| { &mut m.avatar_sync },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "total_achievement_exp",
+            |m: &PlayerSyncScNotify| { &m.total_achievement_exp },
+            |m: &mut PlayerSyncScNotify| { &mut m.total_achievement_exp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MissionSync::MissionSync>(
             "mission_sync",
             |m: &PlayerSyncScNotify| { &m.mission_sync },
             |m: &mut PlayerSyncScNotify| { &mut m.mission_sync },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "equipment_list",
-            |m: &PlayerSyncScNotify| { &m.equipment_list },
-            |m: &mut PlayerSyncScNotify| { &mut m.equipment_list },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AvatarSync::AvatarSync>(
+            "avatar_sync",
+            |m: &PlayerSyncScNotify| { &m.avatar_sync },
+            |m: &mut PlayerSyncScNotify| { &mut m.avatar_sync },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BoardDataSync::BoardDataSync>(
+            "board_data_sync",
+            |m: &PlayerSyncScNotify| { &m.board_data_sync },
+            |m: &mut PlayerSyncScNotify| { &mut m.board_data_sync },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "relic_list",
             |m: &PlayerSyncScNotify| { &m.relic_list },
             |m: &mut PlayerSyncScNotify| { &mut m.relic_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerBasicInfo::PlayerBasicInfo>(
-            "basic_info",
-            |m: &PlayerSyncScNotify| { &m.basic_info },
-            |m: &mut PlayerSyncScNotify| { &mut m.basic_info },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "material_list",
             |m: &PlayerSyncScNotify| { &m.material_list },
             |m: &mut PlayerSyncScNotify| { &mut m.material_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "total_achievement_exp",
-            |m: &PlayerSyncScNotify| { &m.total_achievement_exp },
-            |m: &mut PlayerSyncScNotify| { &mut m.total_achievement_exp },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerBasicInfo::PlayerBasicInfo>(
+            "basic_info",
+            |m: &PlayerSyncScNotify| { &m.basic_info },
+            |m: &mut PlayerSyncScNotify| { &mut m.basic_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "basic_type_info_list",
@@ -143,43 +143,43 @@ impl ::protobuf::Message for PlayerSyncScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8402 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.board_data_sync)?;
-                },
                 26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.avatar_sync)?;
-                },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.mission_sync)?;
-                },
-                34 => {
                     self.equipment_list.push(is.read_message()?);
                 },
-                114 => {
-                    self.relic_list.push(is.read_message()?);
-                },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.basic_info)?;
-                },
-                58 => {
-                    self.material_list.push(is.read_message()?);
-                },
-                12568 => {
+                13800 => {
                     self.total_achievement_exp = is.read_uint32()?;
                 },
-                90 => {
-                    self.basic_type_info_list.push(is.read_message()?);
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.mission_sync)?;
+                },
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.avatar_sync)?;
+                },
+                13322 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.board_data_sync)?;
+                },
+                50 => {
+                    self.relic_list.push(is.read_message()?);
+                },
+                114 => {
+                    self.material_list.push(is.read_message()?);
+                },
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.basic_info)?;
                 },
                 18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.del_relic_list)?;
-                },
-                16 => {
-                    self.del_relic_list.push(is.read_uint32()?);
+                    self.basic_type_info_list.push(is.read_message()?);
                 },
                 106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.del_equipment_list)?;
+                    is.read_repeated_packed_uint32_into(&mut self.del_relic_list)?;
                 },
                 104 => {
+                    self.del_relic_list.push(is.read_uint32()?);
+                },
+                10 => {
+                    is.read_repeated_packed_uint32_into(&mut self.del_equipment_list)?;
+                },
+                8 => {
                     self.del_equipment_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -194,23 +194,30 @@ impl ::protobuf::Message for PlayerSyncScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.board_data_sync.as_ref() {
-            let len = v.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.avatar_sync.as_ref() {
-            let len = v.compute_size();
+        for value in &self.equipment_list {
+            let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.total_achievement_exp != 0 {
+            my_size += ::protobuf::rt::uint32_size(1725, self.total_achievement_exp);
         }
         if let Some(v) = self.mission_sync.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        for value in &self.equipment_list {
+        if let Some(v) = self.avatar_sync.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.board_data_sync.as_ref() {
+            let len = v.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        for value in &self.relic_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.relic_list {
+        for value in &self.material_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -218,22 +225,15 @@ impl ::protobuf::Message for PlayerSyncScNotify {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        for value in &self.material_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.total_achievement_exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(1571, self.total_achievement_exp);
-        }
         for value in &self.basic_type_info_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         for value in &self.del_relic_list {
-            my_size += ::protobuf::rt::uint32_size(2, *value);
+            my_size += ::protobuf::rt::uint32_size(13, *value);
         };
         for value in &self.del_equipment_list {
-            my_size += ::protobuf::rt::uint32_size(13, *value);
+            my_size += ::protobuf::rt::uint32_size(1, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -241,38 +241,38 @@ impl ::protobuf::Message for PlayerSyncScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.board_data_sync.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1050, v, os)?;
-        }
-        if let Some(v) = self.avatar_sync.as_ref() {
+        for v in &self.equipment_list {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        };
+        if self.total_achievement_exp != 0 {
+            os.write_uint32(1725, self.total_achievement_exp)?;
         }
         if let Some(v) = self.mission_sync.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
-        for v in &self.equipment_list {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        };
+        if let Some(v) = self.avatar_sync.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
+        if let Some(v) = self.board_data_sync.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1665, v, os)?;
+        }
         for v in &self.relic_list {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        };
+        for v in &self.material_list {
             ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         if let Some(v) = self.basic_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
-        for v in &self.material_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        };
-        if self.total_achievement_exp != 0 {
-            os.write_uint32(1571, self.total_achievement_exp)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         for v in &self.basic_type_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         for v in &self.del_relic_list {
-            os.write_uint32(2, *v)?;
+            os.write_uint32(13, *v)?;
         };
         for v in &self.del_equipment_list {
-            os.write_uint32(13, *v)?;
+            os.write_uint32(1, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -291,14 +291,14 @@ impl ::protobuf::Message for PlayerSyncScNotify {
     }
 
     fn clear(&mut self) {
-        self.board_data_sync.clear();
-        self.avatar_sync.clear();
-        self.mission_sync.clear();
         self.equipment_list.clear();
-        self.relic_list.clear();
-        self.basic_info.clear();
-        self.material_list.clear();
         self.total_achievement_exp = 0;
+        self.mission_sync.clear();
+        self.avatar_sync.clear();
+        self.board_data_sync.clear();
+        self.relic_list.clear();
+        self.material_list.clear();
+        self.basic_info.clear();
         self.basic_type_info_list.clear();
         self.del_relic_list.clear();
         self.del_equipment_list.clear();
@@ -307,14 +307,14 @@ impl ::protobuf::Message for PlayerSyncScNotify {
 
     fn default_instance() -> &'static PlayerSyncScNotify {
         static instance: PlayerSyncScNotify = PlayerSyncScNotify {
-            board_data_sync: ::protobuf::MessageField::none(),
-            avatar_sync: ::protobuf::MessageField::none(),
-            mission_sync: ::protobuf::MessageField::none(),
             equipment_list: ::std::vec::Vec::new(),
-            relic_list: ::std::vec::Vec::new(),
-            basic_info: ::protobuf::MessageField::none(),
-            material_list: ::std::vec::Vec::new(),
             total_achievement_exp: 0,
+            mission_sync: ::protobuf::MessageField::none(),
+            avatar_sync: ::protobuf::MessageField::none(),
+            board_data_sync: ::protobuf::MessageField::none(),
+            relic_list: ::std::vec::Vec::new(),
+            material_list: ::std::vec::Vec::new(),
+            basic_info: ::protobuf::MessageField::none(),
             basic_type_info_list: ::std::vec::Vec::new(),
             del_relic_list: ::std::vec::Vec::new(),
             del_equipment_list: ::std::vec::Vec::new(),
@@ -345,19 +345,19 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18PlayerSyncScNotify.proto\x1a\x0bRelic.proto\x1a\x0fEquipment.proto\
     \x1a\x15PlayerBasicInfo.proto\x1a\x13BoardDataSync.proto\x1a\x0eMaterial\
     .proto\x1a\x10AvatarSync.proto\x1a\x11MissionSync.proto\x1a\x17HeroBasic\
-    TypeInfo.proto\"\xb5\x04\n\x12PlayerSyncScNotify\x127\n\x0fboard_data_sy\
-    nc\x18\x9a\x08\x20\x01(\x0b2\x0e.BoardDataSyncR\rboardDataSync\x12,\n\
-    \x0bavatar_sync\x18\x03\x20\x01(\x0b2\x0b.AvatarSyncR\navatarSync\x12/\n\
-    \x0cmission_sync\x18\x08\x20\x01(\x0b2\x0c.MissionSyncR\x0bmissionSync\
-    \x121\n\x0eequipment_list\x18\x04\x20\x03(\x0b2\n.EquipmentR\requipmentL\
-    ist\x12%\n\nrelic_list\x18\x0e\x20\x03(\x0b2\x06.RelicR\trelicList\x12/\
-    \n\nbasic_info\x18\x06\x20\x01(\x0b2\x10.PlayerBasicInfoR\tbasicInfo\x12\
-    .\n\rmaterial_list\x18\x07\x20\x03(\x0b2\t.MaterialR\x0cmaterialList\x12\
-    3\n\x15total_achievement_exp\x18\xa3\x0c\x20\x01(\rR\x13totalAchievement\
-    Exp\x12C\n\x14basic_type_info_list\x18\x0b\x20\x03(\x0b2\x12.HeroBasicTy\
-    peInfoR\x11basicTypeInfoList\x12$\n\x0edel_relic_list\x18\x02\x20\x03(\r\
-    R\x0cdelRelicList\x12,\n\x12del_equipment_list\x18\r\x20\x03(\rR\x10delE\
-    quipmentListB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    TypeInfo.proto\"\xb5\x04\n\x12PlayerSyncScNotify\x121\n\x0eequipment_lis\
+    t\x18\x03\x20\x03(\x0b2\n.EquipmentR\requipmentList\x123\n\x15total_achi\
+    evement_exp\x18\xbd\r\x20\x01(\rR\x13totalAchievementExp\x12/\n\x0cmissi\
+    on_sync\x18\t\x20\x01(\x0b2\x0c.MissionSyncR\x0bmissionSync\x12,\n\x0bav\
+    atar_sync\x18\x05\x20\x01(\x0b2\x0b.AvatarSyncR\navatarSync\x127\n\x0fbo\
+    ard_data_sync\x18\x81\r\x20\x01(\x0b2\x0e.BoardDataSyncR\rboardDataSync\
+    \x12%\n\nrelic_list\x18\x06\x20\x03(\x0b2\x06.RelicR\trelicList\x12.\n\r\
+    material_list\x18\x0e\x20\x03(\x0b2\t.MaterialR\x0cmaterialList\x12/\n\n\
+    basic_info\x18\x04\x20\x01(\x0b2\x10.PlayerBasicInfoR\tbasicInfo\x12C\n\
+    \x14basic_type_info_list\x18\x02\x20\x03(\x0b2\x12.HeroBasicTypeInfoR\
+    \x11basicTypeInfoList\x12$\n\x0edel_relic_list\x18\r\x20\x03(\rR\x0cdelR\
+    elicList\x12,\n\x12del_equipment_list\x18\x01\x20\x03(\rR\x10delEquipmen\
+    tListB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

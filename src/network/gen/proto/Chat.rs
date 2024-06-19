@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct Chat {
     // message fields
-    // @@protoc_insertion_point(field:Chat.text)
-    pub text: ::std::string::String,
-    // @@protoc_insertion_point(field:Chat.msg_type)
-    pub msg_type: ::protobuf::EnumOrUnknown<super::MsgType::MsgType>,
     // @@protoc_insertion_point(field:Chat.emote)
     pub emote: u32,
-    // @@protoc_insertion_point(field:Chat.sent_time)
-    pub sent_time: u64,
+    // @@protoc_insertion_point(field:Chat.msg_type)
+    pub msg_type: ::protobuf::EnumOrUnknown<super::MsgType::MsgType>,
     // @@protoc_insertion_point(field:Chat.sender_uid)
     pub sender_uid: u32,
+    // @@protoc_insertion_point(field:Chat.sent_time)
+    pub sent_time: u64,
+    // @@protoc_insertion_point(field:Chat.text)
+    pub text: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:Chat.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,9 +59,9 @@ impl Chat {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "text",
-            |m: &Chat| { &m.text },
-            |m: &mut Chat| { &mut m.text },
+            "emote",
+            |m: &Chat| { &m.emote },
+            |m: &mut Chat| { &mut m.emote },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "msg_type",
@@ -69,9 +69,9 @@ impl Chat {
             |m: &mut Chat| { &mut m.msg_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "emote",
-            |m: &Chat| { &m.emote },
-            |m: &mut Chat| { &mut m.emote },
+            "sender_uid",
+            |m: &Chat| { &m.sender_uid },
+            |m: &mut Chat| { &mut m.sender_uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "sent_time",
@@ -79,9 +79,9 @@ impl Chat {
             |m: &mut Chat| { &mut m.sent_time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "sender_uid",
-            |m: &Chat| { &m.sender_uid },
-            |m: &mut Chat| { &mut m.sender_uid },
+            "text",
+            |m: &Chat| { &m.text },
+            |m: &mut Chat| { &mut m.text },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<Chat>(
             "Chat",
@@ -101,20 +101,20 @@ impl ::protobuf::Message for Chat {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    self.text = is.read_string()?;
-                },
-                56 => {
-                    self.msg_type = is.read_enum_or_unknown()?;
-                },
-                88 => {
+                8 => {
                     self.emote = is.read_uint32()?;
                 },
-                8 => {
+                80 => {
+                    self.msg_type = is.read_enum_or_unknown()?;
+                },
+                56 => {
+                    self.sender_uid = is.read_uint32()?;
+                },
+                16 => {
                     self.sent_time = is.read_uint64()?;
                 },
-                72 => {
-                    self.sender_uid = is.read_uint32()?;
+                42 => {
+                    self.text = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,20 +128,20 @@ impl ::protobuf::Message for Chat {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.text.is_empty() {
-            my_size += ::protobuf::rt::string_size(15, &self.text);
+        if self.emote != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.emote);
         }
         if self.msg_type != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(7, self.msg_type.value());
-        }
-        if self.emote != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.emote);
-        }
-        if self.sent_time != 0 {
-            my_size += ::protobuf::rt::uint64_size(1, self.sent_time);
+            my_size += ::protobuf::rt::int32_size(10, self.msg_type.value());
         }
         if self.sender_uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.sender_uid);
+            my_size += ::protobuf::rt::uint32_size(7, self.sender_uid);
+        }
+        if self.sent_time != 0 {
+            my_size += ::protobuf::rt::uint64_size(2, self.sent_time);
+        }
+        if !self.text.is_empty() {
+            my_size += ::protobuf::rt::string_size(5, &self.text);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for Chat {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.text.is_empty() {
-            os.write_string(15, &self.text)?;
+        if self.emote != 0 {
+            os.write_uint32(1, self.emote)?;
         }
         if self.msg_type != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.msg_type))?;
-        }
-        if self.emote != 0 {
-            os.write_uint32(11, self.emote)?;
-        }
-        if self.sent_time != 0 {
-            os.write_uint64(1, self.sent_time)?;
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.msg_type))?;
         }
         if self.sender_uid != 0 {
-            os.write_uint32(9, self.sender_uid)?;
+            os.write_uint32(7, self.sender_uid)?;
+        }
+        if self.sent_time != 0 {
+            os.write_uint64(2, self.sent_time)?;
+        }
+        if !self.text.is_empty() {
+            os.write_string(5, &self.text)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for Chat {
     }
 
     fn clear(&mut self) {
-        self.text.clear();
-        self.msg_type = ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE);
         self.emote = 0;
-        self.sent_time = 0;
+        self.msg_type = ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE);
         self.sender_uid = 0;
+        self.sent_time = 0;
+        self.text.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static Chat {
         static instance: Chat = Chat {
-            text: ::std::string::String::new(),
-            msg_type: ::protobuf::EnumOrUnknown::from_i32(0),
             emote: 0,
-            sent_time: 0,
+            msg_type: ::protobuf::EnumOrUnknown::from_i32(0),
             sender_uid: 0,
+            sent_time: 0,
+            text: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,12 +220,11 @@ impl ::protobuf::reflect::ProtobufValue for Chat {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\nChat.proto\x1a\rMsgType.proto\"\x91\x01\n\x04Chat\x12\x12\n\x04text\
-    \x18\x0f\x20\x01(\tR\x04text\x12#\n\x08msg_type\x18\x07\x20\x01(\x0e2\
-    \x08.MsgTypeR\x07msgType\x12\x14\n\x05emote\x18\x0b\x20\x01(\rR\x05emote\
-    \x12\x1b\n\tsent_time\x18\x01\x20\x01(\x04R\x08sentTime\x12\x1d\n\nsende\
-    r_uid\x18\t\x20\x01(\rR\tsenderUidB\x15\n\x13emu.lunarcore.protob\x06pro\
-    to3\
+    \n\nChat.proto\x1a\rMsgType.proto\"\x91\x01\n\x04Chat\x12\x14\n\x05emote\
+    \x18\x01\x20\x01(\rR\x05emote\x12#\n\x08msg_type\x18\n\x20\x01(\x0e2\x08\
+    .MsgTypeR\x07msgType\x12\x1d\n\nsender_uid\x18\x07\x20\x01(\rR\tsenderUi\
+    d\x12\x1b\n\tsent_time\x18\x02\x20\x01(\x04R\x08sentTime\x12\x12\n\x04te\
+    xt\x18\x05\x20\x01(\tR\x04textB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -80,10 +80,10 @@ impl ::protobuf::Message for RogueSyncContextBoardEvent {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                32 => {
                     self.board_event_id = is.read_uint32()?;
                 },
-                32 => {
+                48 => {
                     self.modifier_effect_type = is.read_uint32()?;
                 },
                 tag => {
@@ -99,10 +99,10 @@ impl ::protobuf::Message for RogueSyncContextBoardEvent {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.board_event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.board_event_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.board_event_id);
         }
         if self.modifier_effect_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.modifier_effect_type);
+            my_size += ::protobuf::rt::uint32_size(6, self.modifier_effect_type);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for RogueSyncContextBoardEvent {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.board_event_id != 0 {
-            os.write_uint32(15, self.board_event_id)?;
+            os.write_uint32(4, self.board_event_id)?;
         }
         if self.modifier_effect_type != 0 {
-            os.write_uint32(4, self.modifier_effect_type)?;
+            os.write_uint32(6, self.modifier_effect_type)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueSyncContextBoardEvent {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20RogueSyncContextBoardEvent.proto\"t\n\x1aRogueSyncContextBoardEven\
-    t\x12$\n\x0eboard_event_id\x18\x0f\x20\x01(\rR\x0cboardEventId\x120\n\
-    \x14modifier_effect_type\x18\x04\x20\x01(\rR\x12modifierEffectTypeB\x15\
+    t\x12$\n\x0eboard_event_id\x18\x04\x20\x01(\rR\x0cboardEventId\x120\n\
+    \x14modifier_effect_type\x18\x06\x20\x01(\rR\x12modifierEffectTypeB\x15\
     \n\x13emu.lunarcore.protob\x06proto3\
 ";
 

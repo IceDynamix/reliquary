@@ -80,10 +80,10 @@ impl ::protobuf::Message for LockRelicCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                72 => {
                     self.relic_unique_id = is.read_uint32()?;
                 },
-                72 => {
+                56 => {
                     self.is_protected = is.read_bool()?;
                 },
                 tag => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for LockRelicCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.relic_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.relic_unique_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.relic_unique_id);
         }
         if self.is_protected != false {
             my_size += 1 + 1;
@@ -111,10 +111,10 @@ impl ::protobuf::Message for LockRelicCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.relic_unique_id != 0 {
-            os.write_uint32(10, self.relic_unique_id)?;
+            os.write_uint32(9, self.relic_unique_id)?;
         }
         if self.is_protected != false {
-            os.write_bool(9, self.is_protected)?;
+            os.write_bool(7, self.is_protected)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for LockRelicCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14LockRelicCsReq.proto\"[\n\x0eLockRelicCsReq\x12&\n\x0frelic_unique\
-    _id\x18\n\x20\x01(\rR\rrelicUniqueId\x12!\n\x0cis_protected\x18\t\x20\
+    _id\x18\t\x20\x01(\rR\rrelicUniqueId\x12!\n\x0cis_protected\x18\x07\x20\
     \x01(\x08R\x0bisProtectedB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

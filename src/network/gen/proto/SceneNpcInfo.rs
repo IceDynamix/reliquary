@@ -83,7 +83,7 @@ impl ::protobuf::Message for SceneNpcInfo {
                 34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.extra_info)?;
                 },
-                104 => {
+                80 => {
                     self.npc_id = is.read_uint32()?;
                 },
                 tag => {
@@ -103,7 +103,7 @@ impl ::protobuf::Message for SceneNpcInfo {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.npc_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.npc_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.npc_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -115,7 +115,7 @@ impl ::protobuf::Message for SceneNpcInfo {
             ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.npc_id != 0 {
-            os.write_uint32(13, self.npc_id)?;
+            os.write_uint32(10, self.npc_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,7 +169,7 @@ impl ::protobuf::reflect::ProtobufValue for SceneNpcInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12SceneNpcInfo.proto\x1a\x12NpcExtraInfo.proto\"S\n\x0cSceneNpcInfo\
     \x12,\n\nextra_info\x18\x04\x20\x01(\x0b2\r.NpcExtraInfoR\textraInfo\x12\
-    \x15\n\x06npc_id\x18\r\x20\x01(\rR\x05npcIdB\x15\n\x13emu.lunarcore.prot\
+    \x15\n\x06npc_id\x18\n\x20\x01(\rR\x05npcIdB\x15\n\x13emu.lunarcore.prot\
     ob\x06proto3\
 ";
 

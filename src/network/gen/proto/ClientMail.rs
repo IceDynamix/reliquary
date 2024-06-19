@@ -136,34 +136,34 @@ impl ::protobuf::Message for ClientMail {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                8 => {
                     self.is_read = is.read_bool()?;
                 },
-                56 => {
+                64 => {
                     self.expire_time = is.read_int64()?;
                 },
-                120 => {
+                40 => {
                     self.template_id = is.read_uint32()?;
                 },
-                18 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.attachment)?;
                 },
-                114 => {
+                18 => {
                     self.title = is.read_string()?;
                 },
-                42 => {
+                50 => {
                     self.sender = is.read_string()?;
                 },
-                10 => {
+                74 => {
                     self.para_list.push(is.read_string()?);
                 },
-                32 => {
+                56 => {
                     self.id = is.read_uint32()?;
                 },
                 90 => {
                     self.content = is.read_string()?;
                 },
-                72 => {
+                112 => {
                     self.time = is.read_int64()?;
                 },
                 tag => {
@@ -182,32 +182,32 @@ impl ::protobuf::Message for ClientMail {
             my_size += 1 + 1;
         }
         if self.expire_time != 0 {
-            my_size += ::protobuf::rt::int64_size(7, self.expire_time);
+            my_size += ::protobuf::rt::int64_size(8, self.expire_time);
         }
         if self.template_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.template_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.template_id);
         }
         if let Some(v) = self.attachment.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if !self.title.is_empty() {
-            my_size += ::protobuf::rt::string_size(14, &self.title);
+            my_size += ::protobuf::rt::string_size(2, &self.title);
         }
         if !self.sender.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.sender);
+            my_size += ::protobuf::rt::string_size(6, &self.sender);
         }
         for value in &self.para_list {
-            my_size += ::protobuf::rt::string_size(1, &value);
+            my_size += ::protobuf::rt::string_size(9, &value);
         };
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.id);
+            my_size += ::protobuf::rt::uint32_size(7, self.id);
         }
         if !self.content.is_empty() {
             my_size += ::protobuf::rt::string_size(11, &self.content);
         }
         if self.time != 0 {
-            my_size += ::protobuf::rt::int64_size(9, self.time);
+            my_size += ::protobuf::rt::int64_size(14, self.time);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -216,34 +216,34 @@ impl ::protobuf::Message for ClientMail {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.is_read != false {
-            os.write_bool(6, self.is_read)?;
+            os.write_bool(1, self.is_read)?;
         }
         if self.expire_time != 0 {
-            os.write_int64(7, self.expire_time)?;
+            os.write_int64(8, self.expire_time)?;
         }
         if self.template_id != 0 {
-            os.write_uint32(15, self.template_id)?;
+            os.write_uint32(5, self.template_id)?;
         }
         if let Some(v) = self.attachment.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if !self.title.is_empty() {
-            os.write_string(14, &self.title)?;
+            os.write_string(2, &self.title)?;
         }
         if !self.sender.is_empty() {
-            os.write_string(5, &self.sender)?;
+            os.write_string(6, &self.sender)?;
         }
         for v in &self.para_list {
-            os.write_string(1, &v)?;
+            os.write_string(9, &v)?;
         };
         if self.id != 0 {
-            os.write_uint32(4, self.id)?;
+            os.write_uint32(7, self.id)?;
         }
         if !self.content.is_empty() {
             os.write_string(11, &self.content)?;
         }
         if self.time != 0 {
-            os.write_int64(9, self.time)?;
+            os.write_int64(14, self.time)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -312,14 +312,14 @@ impl ::protobuf::reflect::ProtobufValue for ClientMail {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x10ClientMail.proto\x1a\x0eItemList.proto\"\x9b\x02\n\nClientMail\x12\
-    \x17\n\x07is_read\x18\x06\x20\x01(\x08R\x06isRead\x12\x1f\n\x0bexpire_ti\
-    me\x18\x07\x20\x01(\x03R\nexpireTime\x12\x1f\n\x0btemplate_id\x18\x0f\
-    \x20\x01(\rR\ntemplateId\x12)\n\nattachment\x18\x02\x20\x01(\x0b2\t.Item\
-    ListR\nattachment\x12\x14\n\x05title\x18\x0e\x20\x01(\tR\x05title\x12\
-    \x16\n\x06sender\x18\x05\x20\x01(\tR\x06sender\x12\x1b\n\tpara_list\x18\
-    \x01\x20\x03(\tR\x08paraList\x12\x0e\n\x02id\x18\x04\x20\x01(\rR\x02id\
-    \x12\x18\n\x07content\x18\x0b\x20\x01(\tR\x07content\x12\x12\n\x04time\
-    \x18\t\x20\x01(\x03R\x04timeB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \x17\n\x07is_read\x18\x01\x20\x01(\x08R\x06isRead\x12\x1f\n\x0bexpire_ti\
+    me\x18\x08\x20\x01(\x03R\nexpireTime\x12\x1f\n\x0btemplate_id\x18\x05\
+    \x20\x01(\rR\ntemplateId\x12)\n\nattachment\x18\x0c\x20\x01(\x0b2\t.Item\
+    ListR\nattachment\x12\x14\n\x05title\x18\x02\x20\x01(\tR\x05title\x12\
+    \x16\n\x06sender\x18\x06\x20\x01(\tR\x06sender\x12\x1b\n\tpara_list\x18\
+    \t\x20\x03(\tR\x08paraList\x12\x0e\n\x02id\x18\x07\x20\x01(\rR\x02id\x12\
+    \x18\n\x07content\x18\x0b\x20\x01(\tR\x07content\x12\x12\n\x04time\x18\
+    \x0e\x20\x01(\x03R\x04timeB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

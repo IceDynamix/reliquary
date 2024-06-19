@@ -80,10 +80,10 @@ impl ::protobuf::Message for HandleFriendCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                32 => {
                     self.uid = is.read_uint32()?;
                 },
-                24 => {
+                96 => {
                     self.handle_result = is.read_bool()?;
                 },
                 tag => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for HandleFriendCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.uid);
+            my_size += ::protobuf::rt::uint32_size(4, self.uid);
         }
         if self.handle_result != false {
             my_size += 1 + 1;
@@ -111,10 +111,10 @@ impl ::protobuf::Message for HandleFriendCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.uid != 0 {
-            os.write_uint32(13, self.uid)?;
+            os.write_uint32(4, self.uid)?;
         }
         if self.handle_result != false {
-            os.write_bool(3, self.handle_result)?;
+            os.write_bool(12, self.handle_result)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for HandleFriendCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17HandleFriendCsReq.proto\"J\n\x11HandleFriendCsReq\x12\x10\n\x03uid\
-    \x18\r\x20\x01(\rR\x03uid\x12#\n\rhandle_result\x18\x03\x20\x01(\x08R\
+    \x18\x04\x20\x01(\rR\x03uid\x12#\n\rhandle_result\x18\x0c\x20\x01(\x08R\
     \x0chandleResultB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

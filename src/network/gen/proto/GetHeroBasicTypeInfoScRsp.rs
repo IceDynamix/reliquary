@@ -31,6 +31,8 @@ pub struct GetHeroBasicTypeInfoScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetHeroBasicTypeInfoScRsp.cur_basic_type)
     pub cur_basic_type: ::protobuf::EnumOrUnknown<super::HeroBasicType::HeroBasicType>,
+    // @@protoc_insertion_point(field:GetHeroBasicTypeInfoScRsp.unlocked_basic_types)
+    pub unlocked_basic_types: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetHeroBasicTypeInfoScRsp.basic_type_info_list)
     pub basic_type_info_list: ::std::vec::Vec<super::HeroBasicTypeInfo::HeroBasicTypeInfo>,
     // @@protoc_insertion_point(field:GetHeroBasicTypeInfoScRsp.gender)
@@ -54,12 +56,17 @@ impl GetHeroBasicTypeInfoScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(4);
+        let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cur_basic_type",
             |m: &GetHeroBasicTypeInfoScRsp| { &m.cur_basic_type },
             |m: &mut GetHeroBasicTypeInfoScRsp| { &mut m.cur_basic_type },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "unlocked_basic_types",
+            |m: &GetHeroBasicTypeInfoScRsp| { &m.unlocked_basic_types },
+            |m: &mut GetHeroBasicTypeInfoScRsp| { &mut m.unlocked_basic_types },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "basic_type_info_list",
@@ -94,16 +101,22 @@ impl ::protobuf::Message for GetHeroBasicTypeInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                24 => {
                     self.cur_basic_type = is.read_enum_or_unknown()?;
                 },
-                74 => {
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.unlocked_basic_types)?;
+                },
+                64 => {
+                    self.unlocked_basic_types.push(is.read_uint32()?);
+                },
+                122 => {
                     self.basic_type_info_list.push(is.read_message()?);
                 },
-                56 => {
+                88 => {
                     self.gender = is.read_enum_or_unknown()?;
                 },
-                8 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -119,17 +132,20 @@ impl ::protobuf::Message for GetHeroBasicTypeInfoScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.cur_basic_type != ::protobuf::EnumOrUnknown::new(super::HeroBasicType::HeroBasicType::None) {
-            my_size += ::protobuf::rt::int32_size(8, self.cur_basic_type.value());
+            my_size += ::protobuf::rt::int32_size(3, self.cur_basic_type.value());
         }
+        for value in &self.unlocked_basic_types {
+            my_size += ::protobuf::rt::uint32_size(8, *value);
+        };
         for value in &self.basic_type_info_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.gender != ::protobuf::EnumOrUnknown::new(super::Gender::Gender::GenderNone) {
-            my_size += ::protobuf::rt::int32_size(7, self.gender.value());
+            my_size += ::protobuf::rt::int32_size(11, self.gender.value());
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,16 +154,19 @@ impl ::protobuf::Message for GetHeroBasicTypeInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.cur_basic_type != ::protobuf::EnumOrUnknown::new(super::HeroBasicType::HeroBasicType::None) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.cur_basic_type))?;
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.cur_basic_type))?;
         }
+        for v in &self.unlocked_basic_types {
+            os.write_uint32(8, *v)?;
+        };
         for v in &self.basic_type_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         if self.gender != ::protobuf::EnumOrUnknown::new(super::Gender::Gender::GenderNone) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.gender))?;
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.gender))?;
         }
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,6 +186,7 @@ impl ::protobuf::Message for GetHeroBasicTypeInfoScRsp {
 
     fn clear(&mut self) {
         self.cur_basic_type = ::protobuf::EnumOrUnknown::new(super::HeroBasicType::HeroBasicType::None);
+        self.unlocked_basic_types.clear();
         self.basic_type_info_list.clear();
         self.gender = ::protobuf::EnumOrUnknown::new(super::Gender::Gender::GenderNone);
         self.retcode = 0;
@@ -176,6 +196,7 @@ impl ::protobuf::Message for GetHeroBasicTypeInfoScRsp {
     fn default_instance() -> &'static GetHeroBasicTypeInfoScRsp {
         static instance: GetHeroBasicTypeInfoScRsp = GetHeroBasicTypeInfoScRsp {
             cur_basic_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            unlocked_basic_types: ::std::vec::Vec::new(),
             basic_type_info_list: ::std::vec::Vec::new(),
             gender: ::protobuf::EnumOrUnknown::from_i32(0),
             retcode: 0,
@@ -204,12 +225,13 @@ impl ::protobuf::reflect::ProtobufValue for GetHeroBasicTypeInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fGetHeroBasicTypeInfoScRsp.proto\x1a\x13HeroBasicType.proto\x1a\x0c\
-    Gender.proto\x1a\x17HeroBasicTypeInfo.proto\"\xd1\x01\n\x19GetHeroBasicT\
-    ypeInfoScRsp\x124\n\x0ecur_basic_type\x18\x08\x20\x01(\x0e2\x0e.HeroBasi\
-    cTypeR\x0ccurBasicType\x12C\n\x14basic_type_info_list\x18\t\x20\x03(\x0b\
-    2\x12.HeroBasicTypeInfoR\x11basicTypeInfoList\x12\x1f\n\x06gender\x18\
-    \x07\x20\x01(\x0e2\x07.GenderR\x06gender\x12\x18\n\x07retcode\x18\x01\
-    \x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    Gender.proto\x1a\x17HeroBasicTypeInfo.proto\"\x83\x02\n\x19GetHeroBasicT\
+    ypeInfoScRsp\x124\n\x0ecur_basic_type\x18\x03\x20\x01(\x0e2\x0e.HeroBasi\
+    cTypeR\x0ccurBasicType\x120\n\x14unlocked_basic_types\x18\x08\x20\x03(\r\
+    R\x12unlockedBasicTypes\x12C\n\x14basic_type_info_list\x18\x0f\x20\x03(\
+    \x0b2\x12.HeroBasicTypeInfoR\x11basicTypeInfoList\x12\x1f\n\x06gender\
+    \x18\x0b\x20\x01(\x0e2\x07.GenderR\x06gender\x12\x18\n\x07retcode\x18\
+    \x02\x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

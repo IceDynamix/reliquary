@@ -87,13 +87,13 @@ impl ::protobuf::Message for UnlockSkilltreeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                88 => {
                     self.level = is.read_uint32()?;
                 },
-                56 => {
+                48 => {
                     self.point_id = is.read_uint32()?;
                 },
-                42 => {
+                122 => {
                     self.item_list.push(is.read_message()?);
                 },
                 tag => {
@@ -109,10 +109,10 @@ impl ::protobuf::Message for UnlockSkilltreeCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.level);
+            my_size += ::protobuf::rt::uint32_size(11, self.level);
         }
         if self.point_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.point_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.point_id);
         }
         for value in &self.item_list {
             let len = value.compute_size();
@@ -125,13 +125,13 @@ impl ::protobuf::Message for UnlockSkilltreeCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.level != 0 {
-            os.write_uint32(8, self.level)?;
+            os.write_uint32(11, self.level)?;
         }
         if self.point_id != 0 {
-            os.write_uint32(7, self.point_id)?;
+            os.write_uint32(6, self.point_id)?;
         }
         for v in &self.item_list {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,8 +186,8 @@ impl ::protobuf::reflect::ProtobufValue for UnlockSkilltreeCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aUnlockSkilltreeCsReq.proto\x1a\x0eItemCost.proto\"o\n\x14UnlockSki\
-    lltreeCsReq\x12\x14\n\x05level\x18\x08\x20\x01(\rR\x05level\x12\x19\n\
-    \x08point_id\x18\x07\x20\x01(\rR\x07pointId\x12&\n\titem_list\x18\x05\
+    lltreeCsReq\x12\x14\n\x05level\x18\x0b\x20\x01(\rR\x05level\x12\x19\n\
+    \x08point_id\x18\x06\x20\x01(\rR\x07pointId\x12&\n\titem_list\x18\x0f\
     \x20\x03(\x0b2\t.ItemCostR\x08itemListB\x15\n\x13emu.lunarcore.protob\
     \x06proto3\
 ";

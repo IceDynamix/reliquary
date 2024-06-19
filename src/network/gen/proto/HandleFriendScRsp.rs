@@ -94,16 +94,16 @@ impl ::protobuf::Message for HandleFriendScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                16 => {
                     self.handle_result = is.read_bool()?;
                 },
-                112 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
-                32 => {
+                40 => {
                     self.uid = is.read_uint32()?;
                 },
-                74 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.handle_friend_info)?;
                 },
                 tag => {
@@ -122,10 +122,10 @@ impl ::protobuf::Message for HandleFriendScRsp {
             my_size += 1 + 1;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.uid);
+            my_size += ::protobuf::rt::uint32_size(5, self.uid);
         }
         if let Some(v) = self.handle_friend_info.as_ref() {
             let len = v.compute_size();
@@ -138,16 +138,16 @@ impl ::protobuf::Message for HandleFriendScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.handle_result != false {
-            os.write_bool(15, self.handle_result)?;
+            os.write_bool(2, self.handle_result)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
         if self.uid != 0 {
-            os.write_uint32(4, self.uid)?;
+            os.write_uint32(5, self.uid)?;
         }
         if let Some(v) = self.handle_friend_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -204,9 +204,9 @@ impl ::protobuf::reflect::ProtobufValue for HandleFriendScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17HandleFriendScRsp.proto\x1a\x14FriendListInfo.proto\"\xa3\x01\n\
-    \x11HandleFriendScRsp\x12#\n\rhandle_result\x18\x0f\x20\x01(\x08R\x0chan\
-    dleResult\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcode\x12\x10\n\
-    \x03uid\x18\x04\x20\x01(\rR\x03uid\x12=\n\x12handle_friend_info\x18\t\
+    \x11HandleFriendScRsp\x12#\n\rhandle_result\x18\x02\x20\x01(\x08R\x0chan\
+    dleResult\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcode\x12\x10\n\
+    \x03uid\x18\x05\x20\x01(\rR\x03uid\x12=\n\x12handle_friend_info\x18\n\
     \x20\x01(\x0b2\x0f.FriendListInfoR\x10handleFriendInfoB\x15\n\x13emu.lun\
     arcore.protob\x06proto3\
 ";

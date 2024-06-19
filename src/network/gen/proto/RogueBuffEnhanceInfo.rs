@@ -87,13 +87,13 @@ impl ::protobuf::Message for RogueBuffEnhanceInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_cost_list)?;
                 },
-                85 => {
+                37 => {
                     self.unk_float = is.read_float()?;
                 },
-                56 => {
+                112 => {
                     self.buff_id = is.read_uint32()?;
                 },
                 tag => {
@@ -116,7 +116,7 @@ impl ::protobuf::Message for RogueBuffEnhanceInfo {
             my_size += 1 + 4;
         }
         if self.buff_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.buff_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.buff_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,13 +125,13 @@ impl ::protobuf::Message for RogueBuffEnhanceInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.item_cost_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.unk_float != 0. {
-            os.write_float(10, self.unk_float)?;
+            os.write_float(4, self.unk_float)?;
         }
         if self.buff_id != 0 {
-            os.write_uint32(7, self.buff_id)?;
+            os.write_uint32(14, self.buff_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueBuffEnhanceInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aRogueBuffEnhanceInfo.proto\x1a\x12ItemCostList.proto\"\x81\x01\n\
-    \x14RogueBuffEnhanceInfo\x123\n\x0eitem_cost_list\x18\x03\x20\x01(\x0b2\
-    \r.ItemCostListR\x0citemCostList\x12\x1b\n\tunk_float\x18\n\x20\x01(\x02\
-    R\x08unkFloat\x12\x17\n\x07buff_id\x18\x07\x20\x01(\rR\x06buffIdB\x15\n\
-    \x13emu.lunarcore.protob\x06proto3\
+    \x14RogueBuffEnhanceInfo\x123\n\x0eitem_cost_list\x18\x01\x20\x01(\x0b2\
+    \r.ItemCostListR\x0citemCostList\x12\x1b\n\tunk_float\x18\x04\x20\x01(\
+    \x02R\x08unkFloat\x12\x17\n\x07buff_id\x18\x0e\x20\x01(\rR\x06buffIdB\
+    \x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
