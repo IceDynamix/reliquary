@@ -80,7 +80,7 @@ impl ::protobuf::Message for SetHeadIconScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                112 => {
                     self.current_head_icon_id = is.read_uint32()?;
                 },
                 72 => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for SetHeadIconScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.current_head_icon_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.current_head_icon_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.current_head_icon_id);
         }
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.retcode);
@@ -111,7 +111,7 @@ impl ::protobuf::Message for SetHeadIconScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.current_head_icon_id != 0 {
-            os.write_uint32(15, self.current_head_icon_id)?;
+            os.write_uint32(14, self.current_head_icon_id)?;
         }
         if self.retcode != 0 {
             os.write_uint32(9, self.retcode)?;
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for SetHeadIconScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16SetHeadIconScRsp.proto\"]\n\x10SetHeadIconScRsp\x12/\n\x14current_\
-    head_icon_id\x18\x0f\x20\x01(\rR\x11currentHeadIconId\x12\x18\n\x07retco\
+    head_icon_id\x18\x0e\x20\x01(\rR\x11currentHeadIconId\x12\x18\n\x07retco\
     de\x18\t\x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

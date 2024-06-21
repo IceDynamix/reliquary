@@ -46,7 +46,7 @@ impl StartChallengeStoryInfo {
         ::std::default::Default::default()
     }
 
-    // .StartChallengeStoryBuffInfo story_buff_info = 14;
+    // .StartChallengeStoryBuffInfo story_buff_info = 15;
 
     pub fn story_buff_info(&self) -> &super::StartChallengeStoryBuffInfo::StartChallengeStoryBuffInfo {
         match self.buff_info {
@@ -95,8 +95,57 @@ impl StartChallengeStoryInfo {
         }
     }
 
+    // .StartNewChallengeStoryBuffInfo new_story_buff_info = 14;
+
+    pub fn new_story_buff_info(&self) -> &super::StartNewChallengeStoryBuffInfo::StartNewChallengeStoryBuffInfo {
+        match self.buff_info {
+            ::std::option::Option::Some(start_challenge_story_info::Buff_info::NewStoryBuffInfo(ref v)) => v,
+            _ => <super::StartNewChallengeStoryBuffInfo::StartNewChallengeStoryBuffInfo as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_new_story_buff_info(&mut self) {
+        self.buff_info = ::std::option::Option::None;
+    }
+
+    pub fn has_new_story_buff_info(&self) -> bool {
+        match self.buff_info {
+            ::std::option::Option::Some(start_challenge_story_info::Buff_info::NewStoryBuffInfo(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_new_story_buff_info(&mut self, v: super::StartNewChallengeStoryBuffInfo::StartNewChallengeStoryBuffInfo) {
+        self.buff_info = ::std::option::Option::Some(start_challenge_story_info::Buff_info::NewStoryBuffInfo(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_new_story_buff_info(&mut self) -> &mut super::StartNewChallengeStoryBuffInfo::StartNewChallengeStoryBuffInfo {
+        if let ::std::option::Option::Some(start_challenge_story_info::Buff_info::NewStoryBuffInfo(_)) = self.buff_info {
+        } else {
+            self.buff_info = ::std::option::Option::Some(start_challenge_story_info::Buff_info::NewStoryBuffInfo(super::StartNewChallengeStoryBuffInfo::StartNewChallengeStoryBuffInfo::new()));
+        }
+        match self.buff_info {
+            ::std::option::Option::Some(start_challenge_story_info::Buff_info::NewStoryBuffInfo(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_new_story_buff_info(&mut self) -> super::StartNewChallengeStoryBuffInfo::StartNewChallengeStoryBuffInfo {
+        if self.has_new_story_buff_info() {
+            match self.buff_info.take() {
+                ::std::option::Option::Some(start_challenge_story_info::Buff_info::NewStoryBuffInfo(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::StartNewChallengeStoryBuffInfo::StartNewChallengeStoryBuffInfo::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::StartChallengeStoryBuffInfo::StartChallengeStoryBuffInfo>(
             "story_buff_info",
@@ -104,6 +153,13 @@ impl StartChallengeStoryInfo {
             StartChallengeStoryInfo::story_buff_info,
             StartChallengeStoryInfo::mut_story_buff_info,
             StartChallengeStoryInfo::set_story_buff_info,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::StartNewChallengeStoryBuffInfo::StartNewChallengeStoryBuffInfo>(
+            "new_story_buff_info",
+            StartChallengeStoryInfo::has_new_story_buff_info,
+            StartChallengeStoryInfo::new_story_buff_info,
+            StartChallengeStoryInfo::mut_new_story_buff_info,
+            StartChallengeStoryInfo::set_new_story_buff_info,
         ));
         oneofs.push(start_challenge_story_info::Buff_info::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartChallengeStoryInfo>(
@@ -124,8 +180,11 @@ impl ::protobuf::Message for StartChallengeStoryInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                122 => {
                     self.buff_info = ::std::option::Option::Some(start_challenge_story_info::Buff_info::StoryBuffInfo(is.read_message()?));
+                },
+                114 => {
+                    self.buff_info = ::std::option::Option::Some(start_challenge_story_info::Buff_info::NewStoryBuffInfo(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -145,6 +204,10 @@ impl ::protobuf::Message for StartChallengeStoryInfo {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
+                &start_challenge_story_info::Buff_info::NewStoryBuffInfo(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
             };
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -156,6 +219,9 @@ impl ::protobuf::Message for StartChallengeStoryInfo {
         if let ::std::option::Option::Some(ref v) = self.buff_info {
             match v {
                 &start_challenge_story_info::Buff_info::StoryBuffInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+                },
+                &start_challenge_story_info::Buff_info::NewStoryBuffInfo(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
             };
@@ -177,6 +243,7 @@ impl ::protobuf::Message for StartChallengeStoryInfo {
     }
 
     fn clear(&mut self) {
+        self.buff_info = ::std::option::Option::None;
         self.buff_info = ::std::option::Option::None;
         self.special_fields.clear();
     }
@@ -216,6 +283,8 @@ pub mod start_challenge_story_info {
     pub enum Buff_info {
         // @@protoc_insertion_point(oneof_field:StartChallengeStoryInfo.story_buff_info)
         StoryBuffInfo(super::super::StartChallengeStoryBuffInfo::StartChallengeStoryBuffInfo),
+        // @@protoc_insertion_point(oneof_field:StartChallengeStoryInfo.new_story_buff_info)
+        NewStoryBuffInfo(super::super::StartNewChallengeStoryBuffInfo::StartNewChallengeStoryBuffInfo),
     }
 
     impl ::protobuf::Oneof for Buff_info {
@@ -237,9 +306,11 @@ pub mod start_challenge_story_info {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dStartChallengeStoryInfo.proto\x1a!StartChallengeStoryBuffInfo.prot\
-    o\"n\n\x17StartChallengeStoryInfo\x12F\n\x0fstory_buff_info\x18\x0e\x20\
-    \x01(\x0b2\x1c.StartChallengeStoryBuffInfoH\0R\rstoryBuffInfoB\x0b\n\tbu\
-    ff_infoB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    o\x1a$StartNewChallengeStoryBuffInfo.proto\"\xc0\x01\n\x17StartChallenge\
+    StoryInfo\x12F\n\x0fstory_buff_info\x18\x0f\x20\x01(\x0b2\x1c.StartChall\
+    engeStoryBuffInfoH\0R\rstoryBuffInfo\x12P\n\x13new_story_buff_info\x18\
+    \x0e\x20\x01(\x0b2\x1f.StartNewChallengeStoryBuffInfoH\0R\x10newStoryBuf\
+    fInfoB\x0b\n\tbuff_infoB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -256,8 +327,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(1);
+            let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::StartChallengeStoryBuffInfo::file_descriptor().clone());
+            deps.push(super::StartNewChallengeStoryBuffInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(StartChallengeStoryInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

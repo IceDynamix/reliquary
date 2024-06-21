@@ -80,10 +80,10 @@ impl ::protobuf::Message for DiscardRelicCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                24 => {
                     self.relic_unique_id = is.read_uint32()?;
                 },
-                32 => {
+                40 => {
                     self.is_discard = is.read_bool()?;
                 },
                 tag => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for DiscardRelicCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.relic_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.relic_unique_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.relic_unique_id);
         }
         if self.is_discard != false {
             my_size += 1 + 1;
@@ -111,10 +111,10 @@ impl ::protobuf::Message for DiscardRelicCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.relic_unique_id != 0 {
-            os.write_uint32(14, self.relic_unique_id)?;
+            os.write_uint32(3, self.relic_unique_id)?;
         }
         if self.is_discard != false {
-            os.write_bool(4, self.is_discard)?;
+            os.write_bool(5, self.is_discard)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for DiscardRelicCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17DiscardRelicCsReq.proto\"Z\n\x11DiscardRelicCsReq\x12&\n\x0frelic_\
-    unique_id\x18\x0e\x20\x01(\rR\rrelicUniqueId\x12\x1d\n\nis_discard\x18\
-    \x04\x20\x01(\x08R\tisDiscardB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    unique_id\x18\x03\x20\x01(\rR\rrelicUniqueId\x12\x1d\n\nis_discard\x18\
+    \x05\x20\x01(\x08R\tisDiscardB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

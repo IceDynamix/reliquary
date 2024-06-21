@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BoardDataSync {
     // message fields
-    // @@protoc_insertion_point(field:BoardDataSync.unlocked_head_icon_list)
-    pub unlocked_head_icon_list: ::std::vec::Vec<super::HeadIcon::HeadIcon>,
     // @@protoc_insertion_point(field:BoardDataSync.signature)
     pub signature: ::std::string::String,
+    // @@protoc_insertion_point(field:BoardDataSync.unlocked_head_icon_list)
+    pub unlocked_head_icon_list: ::std::vec::Vec<super::HeadIcon::HeadIcon>,
     // special fields
     // @@protoc_insertion_point(special_field:BoardDataSync.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl BoardDataSync {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "unlocked_head_icon_list",
-            |m: &BoardDataSync| { &m.unlocked_head_icon_list },
-            |m: &mut BoardDataSync| { &mut m.unlocked_head_icon_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "signature",
             |m: &BoardDataSync| { &m.signature },
             |m: &mut BoardDataSync| { &mut m.signature },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "unlocked_head_icon_list",
+            |m: &BoardDataSync| { &m.unlocked_head_icon_list },
+            |m: &mut BoardDataSync| { &mut m.unlocked_head_icon_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BoardDataSync>(
             "BoardDataSync",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for BoardDataSync {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.unlocked_head_icon_list.push(is.read_message()?);
+                98 => {
+                    self.signature = is.read_string()?;
                 },
                 106 => {
-                    self.signature = is.read_string()?;
+                    self.unlocked_head_icon_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,25 +98,25 @@ impl ::protobuf::Message for BoardDataSync {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if !self.signature.is_empty() {
+            my_size += ::protobuf::rt::string_size(12, &self.signature);
+        }
         for value in &self.unlocked_head_icon_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if !self.signature.is_empty() {
-            my_size += ::protobuf::rt::string_size(13, &self.signature);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.unlocked_head_icon_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        };
         if !self.signature.is_empty() {
-            os.write_string(13, &self.signature)?;
+            os.write_string(12, &self.signature)?;
         }
+        for v in &self.unlocked_head_icon_list {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -134,15 +134,15 @@ impl ::protobuf::Message for BoardDataSync {
     }
 
     fn clear(&mut self) {
-        self.unlocked_head_icon_list.clear();
         self.signature.clear();
+        self.unlocked_head_icon_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BoardDataSync {
         static instance: BoardDataSync = BoardDataSync {
-            unlocked_head_icon_list: ::std::vec::Vec::new(),
             signature: ::std::string::String::new(),
+            unlocked_head_icon_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for BoardDataSync {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13BoardDataSync.proto\x1a\x0eHeadIcon.proto\"o\n\rBoardDataSync\x12@\
-    \n\x17unlocked_head_icon_list\x18\x07\x20\x03(\x0b2\t.HeadIconR\x14unloc\
-    kedHeadIconList\x12\x1c\n\tsignature\x18\r\x20\x01(\tR\tsignatureB\x15\n\
-    \x13emu.lunarcore.protob\x06proto3\
+    \n\x13BoardDataSync.proto\x1a\x0eHeadIcon.proto\"o\n\rBoardDataSync\x12\
+    \x1c\n\tsignature\x18\x0c\x20\x01(\tR\tsignature\x12@\n\x17unlocked_head\
+    _icon_list\x18\r\x20\x03(\x0b2\t.HeadIconR\x14unlockedHeadIconListB\x15\
+    \n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

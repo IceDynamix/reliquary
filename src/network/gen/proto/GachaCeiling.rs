@@ -87,13 +87,13 @@ impl ::protobuf::Message for GachaCeiling {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                72 => {
                     self.is_claimed = is.read_bool()?;
                 },
-                74 => {
+                42 => {
                     self.avatar_list.push(is.read_message()?);
                 },
-                32 => {
+                112 => {
                     self.ceiling_num = is.read_uint32()?;
                 },
                 tag => {
@@ -116,7 +116,7 @@ impl ::protobuf::Message for GachaCeiling {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.ceiling_num != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.ceiling_num);
+            my_size += ::protobuf::rt::uint32_size(14, self.ceiling_num);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,13 +125,13 @@ impl ::protobuf::Message for GachaCeiling {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.is_claimed != false {
-            os.write_bool(5, self.is_claimed)?;
+            os.write_bool(9, self.is_claimed)?;
         }
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         if self.ceiling_num != 0 {
-            os.write_uint32(4, self.ceiling_num)?;
+            os.write_uint32(14, self.ceiling_num)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,9 +186,9 @@ impl ::protobuf::reflect::ProtobufValue for GachaCeiling {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12GachaCeiling.proto\x1a\x18GachaCeilingAvatar.proto\"\x84\x01\n\x0c\
-    GachaCeiling\x12\x1d\n\nis_claimed\x18\x05\x20\x01(\x08R\tisClaimed\x124\
-    \n\x0bavatar_list\x18\t\x20\x03(\x0b2\x13.GachaCeilingAvatarR\navatarLis\
-    t\x12\x1f\n\x0bceiling_num\x18\x04\x20\x01(\rR\nceilingNumB\x15\n\x13emu\
+    GachaCeiling\x12\x1d\n\nis_claimed\x18\t\x20\x01(\x08R\tisClaimed\x124\n\
+    \x0bavatar_list\x18\x05\x20\x03(\x0b2\x13.GachaCeilingAvatarR\navatarLis\
+    t\x12\x1f\n\x0bceiling_num\x18\x0e\x20\x01(\rR\nceilingNumB\x15\n\x13emu\
     .lunarcore.protob\x06proto3\
 ";
 

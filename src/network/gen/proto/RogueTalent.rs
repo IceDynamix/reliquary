@@ -87,13 +87,13 @@ impl ::protobuf::Message for RogueTalent {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                40 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
-                106 => {
+                26 => {
                     self.unlock_progress_list.push(is.read_message()?);
                 },
-                96 => {
+                64 => {
                     self.talent_id = is.read_uint32()?;
                 },
                 tag => {
@@ -109,14 +109,14 @@ impl ::protobuf::Message for RogueTalent {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.status != ::protobuf::EnumOrUnknown::new(super::RogueTalentStatus::RogueTalentStatus::ROGUE_TALENT_STATUS_LOCK) {
-            my_size += ::protobuf::rt::int32_size(15, self.status.value());
+            my_size += ::protobuf::rt::int32_size(5, self.status.value());
         }
         for value in &self.unlock_progress_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.talent_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.talent_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.talent_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,13 +125,13 @@ impl ::protobuf::Message for RogueTalent {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.status != ::protobuf::EnumOrUnknown::new(super::RogueTalentStatus::RogueTalentStatus::ROGUE_TALENT_STATUS_LOCK) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.status))?;
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         for v in &self.unlock_progress_list {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         if self.talent_id != 0 {
-            os.write_uint32(12, self.talent_id)?;
+            os.write_uint32(8, self.talent_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueTalent {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11RogueTalent.proto\x1a\x17RogueTalentStatus.proto\x1a\x19RogueUnloc\
-    kProgress.proto\"\x9e\x01\n\x0bRogueTalent\x12*\n\x06status\x18\x0f\x20\
+    kProgress.proto\"\x9e\x01\n\x0bRogueTalent\x12*\n\x06status\x18\x05\x20\
     \x01(\x0e2\x12.RogueTalentStatusR\x06status\x12F\n\x14unlock_progress_li\
-    st\x18\r\x20\x03(\x0b2\x14.RogueUnlockProgressR\x12unlockProgressList\
-    \x12\x1b\n\ttalent_id\x18\x0c\x20\x01(\rR\x08talentIdB\x15\n\x13emu.luna\
+    st\x18\x03\x20\x03(\x0b2\x14.RogueUnlockProgressR\x12unlockProgressList\
+    \x12\x1b\n\ttalent_id\x18\x08\x20\x01(\rR\x08talentIdB\x15\n\x13emu.luna\
     rcore.protob\x06proto3\
 ";
 

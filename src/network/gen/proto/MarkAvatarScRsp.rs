@@ -87,13 +87,13 @@ impl ::protobuf::Message for MarkAvatarScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                16 => {
                     self.is_marked = is.read_bool()?;
                 },
                 64 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                56 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -115,7 +115,7 @@ impl ::protobuf::Message for MarkAvatarScRsp {
             my_size += ::protobuf::rt::uint32_size(8, self.avatar_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for MarkAvatarScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.is_marked != false {
-            os.write_bool(14, self.is_marked)?;
+            os.write_bool(2, self.is_marked)?;
         }
         if self.avatar_id != 0 {
             os.write_uint32(8, self.avatar_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,8 +185,8 @@ impl ::protobuf::reflect::ProtobufValue for MarkAvatarScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15MarkAvatarScRsp.proto\"e\n\x0fMarkAvatarScRsp\x12\x1b\n\tis_marked\
-    \x18\x0e\x20\x01(\x08R\x08isMarked\x12\x1b\n\tavatar_id\x18\x08\x20\x01(\
-    \rR\x08avatarId\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcodeB\x15\
+    \x18\x02\x20\x01(\x08R\x08isMarked\x12\x1b\n\tavatar_id\x18\x08\x20\x01(\
+    \rR\x08avatarId\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcodeB\x15\
     \n\x13emu.lunarcore.protob\x06proto3\
 ";
 

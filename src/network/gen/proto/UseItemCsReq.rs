@@ -101,19 +101,19 @@ impl ::protobuf::Message for UseItemCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                32 => {
                     self.optional_reward_id = is.read_uint32()?;
                 },
-                32 => {
+                56 => {
                     self.use_item_id = is.read_uint32()?;
                 },
-                104 => {
+                80 => {
                     self.base_avatar_id = is.read_uint32()?;
                 },
-                112 => {
+                104 => {
                     self.use_item_count = is.read_uint32()?;
                 },
-                72 => {
+                64 => {
                     self.use_avatar_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -129,19 +129,19 @@ impl ::protobuf::Message for UseItemCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.optional_reward_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.optional_reward_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.optional_reward_id);
         }
         if self.use_item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.use_item_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.use_item_id);
         }
         if self.base_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.base_avatar_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.base_avatar_id);
         }
         if self.use_item_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.use_item_count);
+            my_size += ::protobuf::rt::uint32_size(13, self.use_item_count);
         }
         if self.use_avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(9, self.use_avatar_type.value());
+            my_size += ::protobuf::rt::int32_size(8, self.use_avatar_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,19 +150,19 @@ impl ::protobuf::Message for UseItemCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.optional_reward_id != 0 {
-            os.write_uint32(5, self.optional_reward_id)?;
+            os.write_uint32(4, self.optional_reward_id)?;
         }
         if self.use_item_id != 0 {
-            os.write_uint32(4, self.use_item_id)?;
+            os.write_uint32(7, self.use_item_id)?;
         }
         if self.base_avatar_id != 0 {
-            os.write_uint32(13, self.base_avatar_id)?;
+            os.write_uint32(10, self.base_avatar_id)?;
         }
         if self.use_item_count != 0 {
-            os.write_uint32(14, self.use_item_count)?;
+            os.write_uint32(13, self.use_item_count)?;
         }
         if self.use_avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.use_avatar_type))?;
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.use_avatar_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -221,10 +221,10 @@ impl ::protobuf::reflect::ProtobufValue for UseItemCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12UseItemCsReq.proto\x1a\x10AvatarType.proto\"\xdd\x01\n\x0cUseItemC\
-    sReq\x12,\n\x12optional_reward_id\x18\x05\x20\x01(\rR\x10optionalRewardI\
-    d\x12\x1e\n\x0buse_item_id\x18\x04\x20\x01(\rR\tuseItemId\x12$\n\x0ebase\
-    _avatar_id\x18\r\x20\x01(\rR\x0cbaseAvatarId\x12$\n\x0euse_item_count\
-    \x18\x0e\x20\x01(\rR\x0cuseItemCount\x123\n\x0fuse_avatar_type\x18\t\x20\
+    sReq\x12,\n\x12optional_reward_id\x18\x04\x20\x01(\rR\x10optionalRewardI\
+    d\x12\x1e\n\x0buse_item_id\x18\x07\x20\x01(\rR\tuseItemId\x12$\n\x0ebase\
+    _avatar_id\x18\n\x20\x01(\rR\x0cbaseAvatarId\x12$\n\x0euse_item_count\
+    \x18\r\x20\x01(\rR\x0cuseItemCount\x123\n\x0fuse_avatar_type\x18\x08\x20\
     \x01(\x0e2\x0b.AvatarTypeR\ruseAvatarTypeB\x15\n\x13emu.lunarcore.protob\
     \x06proto3\
 ";

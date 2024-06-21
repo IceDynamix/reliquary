@@ -108,25 +108,25 @@ impl ::protobuf::Message for GetPlayerBoardDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                10 => {
                     self.signature = is.read_string()?;
                 },
-                18 => {
+                90 => {
                     self.unlocked_head_icon_list.push(is.read_message()?);
                 },
-                26 => {
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.display_support_avatar_vec)?;
                 },
-                24 => {
+                104 => {
                     self.display_support_avatar_vec.push(is.read_uint32()?);
                 },
-                88 => {
+                40 => {
                     self.current_head_icon_id = is.read_uint32()?;
                 },
                 122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.display_avatar_vec)?;
                 },
-                64 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -142,24 +142,24 @@ impl ::protobuf::Message for GetPlayerBoardDataScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.signature.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.signature);
+            my_size += ::protobuf::rt::string_size(1, &self.signature);
         }
         for value in &self.unlocked_head_icon_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         for value in &self.display_support_avatar_vec {
-            my_size += ::protobuf::rt::uint32_size(3, *value);
+            my_size += ::protobuf::rt::uint32_size(13, *value);
         };
         if self.current_head_icon_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.current_head_icon_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.current_head_icon_id);
         }
         if let Some(v) = self.display_avatar_vec.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -168,22 +168,22 @@ impl ::protobuf::Message for GetPlayerBoardDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.signature.is_empty() {
-            os.write_string(5, &self.signature)?;
+            os.write_string(1, &self.signature)?;
         }
         for v in &self.unlocked_head_icon_list {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         for v in &self.display_support_avatar_vec {
-            os.write_uint32(3, *v)?;
+            os.write_uint32(13, *v)?;
         };
         if self.current_head_icon_id != 0 {
-            os.write_uint32(11, self.current_head_icon_id)?;
+            os.write_uint32(5, self.current_head_icon_id)?;
         }
         if let Some(v) = self.display_avatar_vec.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -245,13 +245,13 @@ impl ::protobuf::reflect::ProtobufValue for GetPlayerBoardDataScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dGetPlayerBoardDataScRsp.proto\x1a\x0eHeadIcon.proto\x1a\x16Display\
     AvatarVec.proto\"\xc2\x02\n\x17GetPlayerBoardDataScRsp\x12\x1c\n\tsignat\
-    ure\x18\x05\x20\x01(\tR\tsignature\x12@\n\x17unlocked_head_icon_list\x18\
-    \x02\x20\x03(\x0b2\t.HeadIconR\x14unlockedHeadIconList\x12;\n\x1adisplay\
-    _support_avatar_vec\x18\x03\x20\x03(\rR\x17displaySupportAvatarVec\x12/\
-    \n\x14current_head_icon_id\x18\x0b\x20\x01(\rR\x11currentHeadIconId\x12?\
-    \n\x12display_avatar_vec\x18\x0f\x20\x01(\x0b2\x11.DisplayAvatarVecR\x10\
-    displayAvatarVec\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcodeB\
-    \x15\n\x13emu.lunarcore.protob\x06proto3\
+    ure\x18\x01\x20\x01(\tR\tsignature\x12@\n\x17unlocked_head_icon_list\x18\
+    \x0b\x20\x03(\x0b2\t.HeadIconR\x14unlockedHeadIconList\x12;\n\x1adisplay\
+    _support_avatar_vec\x18\r\x20\x03(\rR\x17displaySupportAvatarVec\x12/\n\
+    \x14current_head_icon_id\x18\x05\x20\x01(\rR\x11currentHeadIconId\x12?\n\
+    \x12display_avatar_vec\x18\x0f\x20\x01(\x0b2\x11.DisplayAvatarVecR\x10di\
+    splayAvatarVec\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcodeB\x15\
+    \n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -97,7 +97,7 @@ impl ::protobuf::Message for RogueHandbookData {
                 98 => {
                     self.rogue_event.push(is.read_message()?);
                 },
-                122 => {
+                82 => {
                     self.buff_list.push(is.read_message()?);
                 },
                 74 => {
@@ -144,7 +144,7 @@ impl ::protobuf::Message for RogueHandbookData {
             ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         for v in &self.buff_list {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         for v in &self.rogue_aeon_list {
             ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
@@ -210,10 +210,10 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     ueHandbookMiracle.proto\x1a\x17RogueHandbookBuff.proto\x1a\x17RogueHandb\
     ookAeon.proto\"\xf0\x01\n\x11RogueHandbookData\x124\n\x0brogue_event\x18\
     \x0c\x20\x03(\x0b2\x13.RogueHandbookEventR\nrogueEvent\x12/\n\tbuff_list\
-    \x18\x0f\x20\x03(\x0b2\x12.RogueHandbookBuffR\x08buffList\x12:\n\x0frogu\
-    e_aeon_list\x18\t\x20\x03(\x0b2\x12.RogueHandbookAeonR\rrogueAeonList\
-    \x128\n\x0cmiracle_list\x18\x03\x20\x03(\x0b2\x15.RogueHandbookMiracleR\
-    \x0bmiracleListB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \x18\n\x20\x03(\x0b2\x12.RogueHandbookBuffR\x08buffList\x12:\n\x0frogue_\
+    aeon_list\x18\t\x20\x03(\x0b2\x12.RogueHandbookAeonR\rrogueAeonList\x128\
+    \n\x0cmiracle_list\x18\x03\x20\x03(\x0b2\x15.RogueHandbookMiracleR\x0bmi\
+    racleListB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

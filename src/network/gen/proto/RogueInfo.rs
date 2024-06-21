@@ -80,10 +80,10 @@ impl ::protobuf::Message for RogueInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                9890 => {
+                2906 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_current_info)?;
                 },
-                6450 => {
+                3762 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_info_data)?;
                 },
                 tag => {
@@ -113,10 +113,10 @@ impl ::protobuf::Message for RogueInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.rogue_current_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1236, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(363, v, os)?;
         }
         if let Some(v) = self.rogue_info_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(806, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(470, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,10 +169,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0fRogueInfo.proto\x1a\x13RogueInfoData.proto\x1a\x16RogueCurrentInfo\
-    .proto\"\x86\x01\n\tRogueInfo\x12@\n\x12rogue_current_info\x18\xd4\t\x20\
-    \x01(\x0b2\x11.RogueCurrentInfoR\x10rogueCurrentInfo\x127\n\x0frogue_inf\
-    o_data\x18\xa6\x06\x20\x01(\x0b2\x0e.RogueInfoDataR\rrogueInfoDataB\x15\
-    \n\x13emu.lunarcore.protob\x06proto3\
+    .proto\"\x86\x01\n\tRogueInfo\x12@\n\x12rogue_current_info\x18\xeb\x02\
+    \x20\x01(\x0b2\x11.RogueCurrentInfoR\x10rogueCurrentInfo\x127\n\x0frogue\
+    _info_data\x18\xd6\x03\x20\x01(\x0b2\x0e.RogueInfoDataR\rrogueInfoDataB\
+    \x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

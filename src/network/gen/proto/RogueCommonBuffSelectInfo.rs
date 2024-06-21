@@ -150,46 +150,46 @@ impl ::protobuf::Message for RogueCommonBuffSelectInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.roll_buffs_cost)?;
                 },
-                80 => {
+                120 => {
                     self.select_buff_source_hint = is.read_uint32()?;
                 },
                 56 => {
                     self.source_cur_count = is.read_uint32()?;
                 },
-                16 => {
+                48 => {
                     self.roll_buff_max_times = is.read_uint32()?;
                 },
-                40 => {
+                96 => {
                     self.source_total_count = is.read_uint32()?;
                 },
-                48 => {
+                112 => {
                     self.can_roll = is.read_bool()?;
                 },
-                34 => {
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.first_buff_type_list)?;
                 },
-                32 => {
+                104 => {
                     self.first_buff_type_list.push(is.read_uint32()?);
                 },
-                88 => {
+                24 => {
                     self.roll_buff_times = is.read_uint32()?;
                 },
-                24 => {
+                8 => {
                     self.roll_buff_free_count = is.read_uint32()?;
                 },
-                98 => {
+                42 => {
                     self.maze_buff_list.push(is.read_message()?);
                 },
-                104 => {
+                16 => {
                     self.source_type = is.read_enum_or_unknown()?;
                 },
-                66 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.handbook_unlock_buff_id_list)?;
                 },
-                64 => {
+                80 => {
                     self.handbook_unlock_buff_id_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -209,38 +209,38 @@ impl ::protobuf::Message for RogueCommonBuffSelectInfo {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.select_buff_source_hint != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.select_buff_source_hint);
+            my_size += ::protobuf::rt::uint32_size(15, self.select_buff_source_hint);
         }
         if self.source_cur_count != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.source_cur_count);
         }
         if self.roll_buff_max_times != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.roll_buff_max_times);
+            my_size += ::protobuf::rt::uint32_size(6, self.roll_buff_max_times);
         }
         if self.source_total_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.source_total_count);
+            my_size += ::protobuf::rt::uint32_size(12, self.source_total_count);
         }
         if self.can_roll != false {
             my_size += 1 + 1;
         }
         for value in &self.first_buff_type_list {
-            my_size += ::protobuf::rt::uint32_size(4, *value);
+            my_size += ::protobuf::rt::uint32_size(13, *value);
         };
         if self.roll_buff_times != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.roll_buff_times);
+            my_size += ::protobuf::rt::uint32_size(3, self.roll_buff_times);
         }
         if self.roll_buff_free_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.roll_buff_free_count);
+            my_size += ::protobuf::rt::uint32_size(1, self.roll_buff_free_count);
         }
         for value in &self.maze_buff_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.source_type != ::protobuf::EnumOrUnknown::new(super::RogueCommonBuffSelectSource::RogueCommonBuffSelectSource::ROGUE_COMMON_BUFF_SELECT_SOURCE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(13, self.source_type.value());
+            my_size += ::protobuf::rt::int32_size(2, self.source_type.value());
         }
         for value in &self.handbook_unlock_buff_id_list {
-            my_size += ::protobuf::rt::uint32_size(8, *value);
+            my_size += ::protobuf::rt::uint32_size(10, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -249,40 +249,40 @@ impl ::protobuf::Message for RogueCommonBuffSelectInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.roll_buffs_cost.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.select_buff_source_hint != 0 {
-            os.write_uint32(10, self.select_buff_source_hint)?;
+            os.write_uint32(15, self.select_buff_source_hint)?;
         }
         if self.source_cur_count != 0 {
             os.write_uint32(7, self.source_cur_count)?;
         }
         if self.roll_buff_max_times != 0 {
-            os.write_uint32(2, self.roll_buff_max_times)?;
+            os.write_uint32(6, self.roll_buff_max_times)?;
         }
         if self.source_total_count != 0 {
-            os.write_uint32(5, self.source_total_count)?;
+            os.write_uint32(12, self.source_total_count)?;
         }
         if self.can_roll != false {
-            os.write_bool(6, self.can_roll)?;
+            os.write_bool(14, self.can_roll)?;
         }
         for v in &self.first_buff_type_list {
-            os.write_uint32(4, *v)?;
+            os.write_uint32(13, *v)?;
         };
         if self.roll_buff_times != 0 {
-            os.write_uint32(11, self.roll_buff_times)?;
+            os.write_uint32(3, self.roll_buff_times)?;
         }
         if self.roll_buff_free_count != 0 {
-            os.write_uint32(3, self.roll_buff_free_count)?;
+            os.write_uint32(1, self.roll_buff_free_count)?;
         }
         for v in &self.maze_buff_list {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         if self.source_type != ::protobuf::EnumOrUnknown::new(super::RogueCommonBuffSelectSource::RogueCommonBuffSelectSource::ROGUE_COMMON_BUFF_SELECT_SOURCE_TYPE_NONE) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.source_type))?;
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.source_type))?;
         }
         for v in &self.handbook_unlock_buff_id_list {
-            os.write_uint32(8, *v)?;
+            os.write_uint32(10, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -356,19 +356,19 @@ impl ::protobuf::reflect::ProtobufValue for RogueCommonBuffSelectInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fRogueCommonBuffSelectInfo.proto\x1a\x12ItemCostList.proto\x1a!Rogu\
     eCommonBuffSelectSource.proto\x1a\x15RogueCommonBuff.proto\"\xec\x04\n\
-    \x19RogueCommonBuffSelectInfo\x125\n\x0froll_buffs_cost\x18\x0e\x20\x01(\
+    \x19RogueCommonBuffSelectInfo\x125\n\x0froll_buffs_cost\x18\x04\x20\x01(\
     \x0b2\r.ItemCostListR\rrollBuffsCost\x125\n\x17select_buff_source_hint\
-    \x18\n\x20\x01(\rR\x14selectBuffSourceHint\x12(\n\x10source_cur_count\
+    \x18\x0f\x20\x01(\rR\x14selectBuffSourceHint\x12(\n\x10source_cur_count\
     \x18\x07\x20\x01(\rR\x0esourceCurCount\x12-\n\x13roll_buff_max_times\x18\
-    \x02\x20\x01(\rR\x10rollBuffMaxTimes\x12,\n\x12source_total_count\x18\
-    \x05\x20\x01(\rR\x10sourceTotalCount\x12\x19\n\x08can_roll\x18\x06\x20\
-    \x01(\x08R\x07canRoll\x12/\n\x14first_buff_type_list\x18\x04\x20\x03(\rR\
-    \x11firstBuffTypeList\x12&\n\x0froll_buff_times\x18\x0b\x20\x01(\rR\rrol\
-    lBuffTimes\x12/\n\x14roll_buff_free_count\x18\x03\x20\x01(\rR\x11rollBuf\
-    fFreeCount\x126\n\x0emaze_buff_list\x18\x0c\x20\x03(\x0b2\x10.RogueCommo\
-    nBuffR\x0cmazeBuffList\x12=\n\x0bsource_type\x18\r\x20\x01(\x0e2\x1c.Rog\
-    ueCommonBuffSelectSourceR\nsourceType\x12>\n\x1chandbook_unlock_buff_id_\
-    list\x18\x08\x20\x03(\rR\x18handbookUnlockBuffIdListB\x15\n\x13emu.lunar\
+    \x06\x20\x01(\rR\x10rollBuffMaxTimes\x12,\n\x12source_total_count\x18\
+    \x0c\x20\x01(\rR\x10sourceTotalCount\x12\x19\n\x08can_roll\x18\x0e\x20\
+    \x01(\x08R\x07canRoll\x12/\n\x14first_buff_type_list\x18\r\x20\x03(\rR\
+    \x11firstBuffTypeList\x12&\n\x0froll_buff_times\x18\x03\x20\x01(\rR\rrol\
+    lBuffTimes\x12/\n\x14roll_buff_free_count\x18\x01\x20\x01(\rR\x11rollBuf\
+    fFreeCount\x126\n\x0emaze_buff_list\x18\x05\x20\x03(\x0b2\x10.RogueCommo\
+    nBuffR\x0cmazeBuffList\x12=\n\x0bsource_type\x18\x02\x20\x01(\x0e2\x1c.R\
+    ogueCommonBuffSelectSourceR\nsourceType\x12>\n\x1chandbook_unlock_buff_i\
+    d_list\x18\n\x20\x03(\rR\x18handbookUnlockBuffIdListB\x15\n\x13emu.lunar\
     core.protob\x06proto3\
 ";
 

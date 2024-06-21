@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SendMsgCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SendMsgCsReq.to_uid_list)
-    pub to_uid_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:SendMsgCsReq.emote)
     pub emote: u32,
-    // @@protoc_insertion_point(field:SendMsgCsReq.msg_type)
-    pub msg_type: ::protobuf::EnumOrUnknown<super::MsgType::MsgType>,
+    // @@protoc_insertion_point(field:SendMsgCsReq.to_uid_list)
+    pub to_uid_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:SendMsgCsReq.text)
     pub text: ::std::string::String,
+    // @@protoc_insertion_point(field:SendMsgCsReq.msg_type)
+    pub msg_type: ::protobuf::EnumOrUnknown<super::MsgType::MsgType>,
     // @@protoc_insertion_point(field:SendMsgCsReq.chat_type)
     pub chat_type: ::protobuf::EnumOrUnknown<super::ChatType::ChatType>,
     // special fields
@@ -58,25 +58,25 @@ impl SendMsgCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "emote",
+            |m: &SendMsgCsReq| { &m.emote },
+            |m: &mut SendMsgCsReq| { &mut m.emote },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "to_uid_list",
             |m: &SendMsgCsReq| { &m.to_uid_list },
             |m: &mut SendMsgCsReq| { &mut m.to_uid_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "emote",
-            |m: &SendMsgCsReq| { &m.emote },
-            |m: &mut SendMsgCsReq| { &mut m.emote },
+            "text",
+            |m: &SendMsgCsReq| { &m.text },
+            |m: &mut SendMsgCsReq| { &mut m.text },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "msg_type",
             |m: &SendMsgCsReq| { &m.msg_type },
             |m: &mut SendMsgCsReq| { &mut m.msg_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "text",
-            |m: &SendMsgCsReq| { &m.text },
-            |m: &mut SendMsgCsReq| { &mut m.text },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "chat_type",
@@ -101,22 +101,22 @@ impl ::protobuf::Message for SendMsgCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.to_uid_list)?;
-                },
-                32 => {
-                    self.to_uid_list.push(is.read_uint32()?);
-                },
-                56 => {
+                88 => {
                     self.emote = is.read_uint32()?;
                 },
-                72 => {
-                    self.msg_type = is.read_enum_or_unknown()?;
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.to_uid_list)?;
+                },
+                120 => {
+                    self.to_uid_list.push(is.read_uint32()?);
                 },
                 18 => {
                     self.text = is.read_string()?;
                 },
-                64 => {
+                56 => {
+                    self.msg_type = is.read_enum_or_unknown()?;
+                },
+                96 => {
                     self.chat_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -131,20 +131,20 @@ impl ::protobuf::Message for SendMsgCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.to_uid_list {
-            my_size += ::protobuf::rt::uint32_size(4, *value);
-        };
         if self.emote != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.emote);
+            my_size += ::protobuf::rt::uint32_size(11, self.emote);
         }
-        if self.msg_type != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(9, self.msg_type.value());
-        }
+        for value in &self.to_uid_list {
+            my_size += ::protobuf::rt::uint32_size(15, *value);
+        };
         if !self.text.is_empty() {
             my_size += ::protobuf::rt::string_size(2, &self.text);
         }
+        if self.msg_type != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(7, self.msg_type.value());
+        }
         if self.chat_type != ::protobuf::EnumOrUnknown::new(super::ChatType::ChatType::CHAT_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(8, self.chat_type.value());
+            my_size += ::protobuf::rt::int32_size(12, self.chat_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -152,20 +152,20 @@ impl ::protobuf::Message for SendMsgCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.to_uid_list {
-            os.write_uint32(4, *v)?;
-        };
         if self.emote != 0 {
-            os.write_uint32(7, self.emote)?;
+            os.write_uint32(11, self.emote)?;
         }
-        if self.msg_type != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.msg_type))?;
-        }
+        for v in &self.to_uid_list {
+            os.write_uint32(15, *v)?;
+        };
         if !self.text.is_empty() {
             os.write_string(2, &self.text)?;
         }
+        if self.msg_type != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE) {
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.msg_type))?;
+        }
         if self.chat_type != ::protobuf::EnumOrUnknown::new(super::ChatType::ChatType::CHAT_TYPE_NONE) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.chat_type))?;
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.chat_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,20 +184,20 @@ impl ::protobuf::Message for SendMsgCsReq {
     }
 
     fn clear(&mut self) {
-        self.to_uid_list.clear();
         self.emote = 0;
-        self.msg_type = ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE);
+        self.to_uid_list.clear();
         self.text.clear();
+        self.msg_type = ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE);
         self.chat_type = ::protobuf::EnumOrUnknown::new(super::ChatType::ChatType::CHAT_TYPE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SendMsgCsReq {
         static instance: SendMsgCsReq = SendMsgCsReq {
-            to_uid_list: ::std::vec::Vec::new(),
             emote: 0,
-            msg_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            to_uid_list: ::std::vec::Vec::new(),
             text: ::std::string::String::new(),
+            msg_type: ::protobuf::EnumOrUnknown::from_i32(0),
             chat_type: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -224,11 +224,11 @@ impl ::protobuf::reflect::ProtobufValue for SendMsgCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12SendMsgCsReq.proto\x1a\x0eChatType.proto\x1a\rMsgType.proto\"\xa5\
-    \x01\n\x0cSendMsgCsReq\x12\x1e\n\x0bto_uid_list\x18\x04\x20\x03(\rR\ttoU\
-    idList\x12\x14\n\x05emote\x18\x07\x20\x01(\rR\x05emote\x12#\n\x08msg_typ\
-    e\x18\t\x20\x01(\x0e2\x08.MsgTypeR\x07msgType\x12\x12\n\x04text\x18\x02\
-    \x20\x01(\tR\x04text\x12&\n\tchat_type\x18\x08\x20\x01(\x0e2\t.ChatTypeR\
-    \x08chatTypeB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \x01\n\x0cSendMsgCsReq\x12\x14\n\x05emote\x18\x0b\x20\x01(\rR\x05emote\
+    \x12\x1e\n\x0bto_uid_list\x18\x0f\x20\x03(\rR\ttoUidList\x12\x12\n\x04te\
+    xt\x18\x02\x20\x01(\tR\x04text\x12#\n\x08msg_type\x18\x07\x20\x01(\x0e2\
+    \x08.MsgTypeR\x07msgType\x12&\n\tchat_type\x18\x0c\x20\x01(\x0e2\t.ChatT\
+    ypeR\x08chatTypeB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

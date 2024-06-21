@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ExchangeGachaCeilingScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ExchangeGachaCeilingScRsp.avatar_id)
-    pub avatar_id: u32,
-    // @@protoc_insertion_point(field:ExchangeGachaCeilingScRsp.gacha_ceiling)
-    pub gacha_ceiling: ::protobuf::MessageField<super::GachaCeiling::GachaCeiling>,
-    // @@protoc_insertion_point(field:ExchangeGachaCeilingScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:ExchangeGachaCeilingScRsp.transfer_item_list)
     pub transfer_item_list: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:ExchangeGachaCeilingScRsp.avatar_id)
+    pub avatar_id: u32,
+    // @@protoc_insertion_point(field:ExchangeGachaCeilingScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:ExchangeGachaCeilingScRsp.gacha_ceiling)
+    pub gacha_ceiling: ::protobuf::MessageField<super::GachaCeiling::GachaCeiling>,
     // @@protoc_insertion_point(field:ExchangeGachaCeilingScRsp.gacha_type)
     pub gacha_type: u32,
     // special fields
@@ -58,25 +58,25 @@ impl ExchangeGachaCeilingScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "transfer_item_list",
+            |m: &ExchangeGachaCeilingScRsp| { &m.transfer_item_list },
+            |m: &mut ExchangeGachaCeilingScRsp| { &mut m.transfer_item_list },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
             |m: &ExchangeGachaCeilingScRsp| { &m.avatar_id },
             |m: &mut ExchangeGachaCeilingScRsp| { &mut m.avatar_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GachaCeiling::GachaCeiling>(
-            "gacha_ceiling",
-            |m: &ExchangeGachaCeilingScRsp| { &m.gacha_ceiling },
-            |m: &mut ExchangeGachaCeilingScRsp| { &mut m.gacha_ceiling },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &ExchangeGachaCeilingScRsp| { &m.retcode },
             |m: &mut ExchangeGachaCeilingScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "transfer_item_list",
-            |m: &ExchangeGachaCeilingScRsp| { &m.transfer_item_list },
-            |m: &mut ExchangeGachaCeilingScRsp| { &mut m.transfer_item_list },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GachaCeiling::GachaCeiling>(
+            "gacha_ceiling",
+            |m: &ExchangeGachaCeilingScRsp| { &m.gacha_ceiling },
+            |m: &mut ExchangeGachaCeilingScRsp| { &mut m.gacha_ceiling },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "gacha_type",
@@ -101,17 +101,17 @@ impl ::protobuf::Message for ExchangeGachaCeilingScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.transfer_item_list)?;
+                },
+                72 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.gacha_ceiling)?;
-                },
-                104 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.transfer_item_list)?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.gacha_ceiling)?;
                 },
                 120 => {
                     self.gacha_type = is.read_uint32()?;
@@ -128,17 +128,17 @@ impl ::protobuf::Message for ExchangeGachaCeilingScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.avatar_id);
-        }
-        if let Some(v) = self.gacha_ceiling.as_ref() {
+        if let Some(v) = self.transfer_item_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+        if self.avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.avatar_id);
         }
-        if let Some(v) = self.transfer_item_list.as_ref() {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        }
+        if let Some(v) = self.gacha_ceiling.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -151,17 +151,17 @@ impl ::protobuf::Message for ExchangeGachaCeilingScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.avatar_id != 0 {
-            os.write_uint32(11, self.avatar_id)?;
+        if let Some(v) = self.transfer_item_list.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
-        if let Some(v) = self.gacha_ceiling.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if self.avatar_id != 0 {
+            os.write_uint32(9, self.avatar_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
-        if let Some(v) = self.transfer_item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if let Some(v) = self.gacha_ceiling.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if self.gacha_type != 0 {
             os.write_uint32(15, self.gacha_type)?;
@@ -183,20 +183,20 @@ impl ::protobuf::Message for ExchangeGachaCeilingScRsp {
     }
 
     fn clear(&mut self) {
-        self.avatar_id = 0;
-        self.gacha_ceiling.clear();
-        self.retcode = 0;
         self.transfer_item_list.clear();
+        self.avatar_id = 0;
+        self.retcode = 0;
+        self.gacha_ceiling.clear();
         self.gacha_type = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ExchangeGachaCeilingScRsp {
         static instance: ExchangeGachaCeilingScRsp = ExchangeGachaCeilingScRsp {
-            avatar_id: 0,
-            gacha_ceiling: ::protobuf::MessageField::none(),
-            retcode: 0,
             transfer_item_list: ::protobuf::MessageField::none(),
+            avatar_id: 0,
+            retcode: 0,
+            gacha_ceiling: ::protobuf::MessageField::none(),
             gacha_type: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -223,12 +223,12 @@ impl ::protobuf::reflect::ProtobufValue for ExchangeGachaCeilingScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fExchangeGachaCeilingScRsp.proto\x1a\x0eItemList.proto\x1a\x12Gacha\
-    Ceiling.proto\"\xde\x01\n\x19ExchangeGachaCeilingScRsp\x12\x1b\n\tavatar\
-    _id\x18\x0b\x20\x01(\rR\x08avatarId\x122\n\rgacha_ceiling\x18\x0c\x20\
-    \x01(\x0b2\r.GachaCeilingR\x0cgachaCeiling\x12\x18\n\x07retcode\x18\r\
-    \x20\x01(\rR\x07retcode\x127\n\x12transfer_item_list\x18\x08\x20\x01(\
-    \x0b2\t.ItemListR\x10transferItemList\x12\x1d\n\ngacha_type\x18\x0f\x20\
-    \x01(\rR\tgachaTypeB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    Ceiling.proto\"\xde\x01\n\x19ExchangeGachaCeilingScRsp\x127\n\x12transfe\
+    r_item_list\x18\x06\x20\x01(\x0b2\t.ItemListR\x10transferItemList\x12\
+    \x1b\n\tavatar_id\x18\t\x20\x01(\rR\x08avatarId\x12\x18\n\x07retcode\x18\
+    \x01\x20\x01(\rR\x07retcode\x122\n\rgacha_ceiling\x18\x0e\x20\x01(\x0b2\
+    \r.GachaCeilingR\x0cgachaCeiling\x12\x1d\n\ngacha_type\x18\x0f\x20\x01(\
+    \rR\tgachaTypeB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

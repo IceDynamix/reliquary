@@ -94,19 +94,19 @@ impl ::protobuf::Message for GetRollShopInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                32 => {
                     self.roll_shop_id = is.read_uint32()?;
                 },
-                120 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
-                66 => {
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.DLPBJMPECFC)?;
                 },
-                64 => {
+                40 => {
                     self.DLPBJMPECFC.push(is.read_uint32()?);
                 },
-                104 => {
+                72 => {
                     self.BBJIJINJAFK = is.read_uint32()?;
                 },
                 tag => {
@@ -122,16 +122,16 @@ impl ::protobuf::Message for GetRollShopInfoScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.roll_shop_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.roll_shop_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.roll_shop_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         for value in &self.DLPBJMPECFC {
-            my_size += ::protobuf::rt::uint32_size(8, *value);
+            my_size += ::protobuf::rt::uint32_size(5, *value);
         };
         if self.BBJIJINJAFK != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.BBJIJINJAFK);
+            my_size += ::protobuf::rt::uint32_size(9, self.BBJIJINJAFK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -140,16 +140,16 @@ impl ::protobuf::Message for GetRollShopInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.roll_shop_id != 0 {
-            os.write_uint32(9, self.roll_shop_id)?;
+            os.write_uint32(4, self.roll_shop_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
         for v in &self.DLPBJMPECFC {
-            os.write_uint32(8, *v)?;
+            os.write_uint32(5, *v)?;
         };
         if self.BBJIJINJAFK != 0 {
-            os.write_uint32(13, self.BBJIJINJAFK)?;
+            os.write_uint32(9, self.BBJIJINJAFK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -206,9 +206,9 @@ impl ::protobuf::reflect::ProtobufValue for GetRollShopInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aGetRollShopInfoScRsp.proto\"\x96\x01\n\x14GetRollShopInfoScRsp\x12\
-    \x20\n\x0croll_shop_id\x18\t\x20\x01(\rR\nrollShopId\x12\x18\n\x07retcod\
-    e\x18\x0f\x20\x01(\rR\x07retcode\x12\x20\n\x0bDLPBJMPECFC\x18\x08\x20\
-    \x03(\rR\x0bDLPBJMPECFC\x12\x20\n\x0bBBJIJINJAFK\x18\r\x20\x01(\rR\x0bBB\
+    \x20\n\x0croll_shop_id\x18\x04\x20\x01(\rR\nrollShopId\x12\x18\n\x07retc\
+    ode\x18\r\x20\x01(\rR\x07retcode\x12\x20\n\x0bDLPBJMPECFC\x18\x05\x20\
+    \x03(\rR\x0bDLPBJMPECFC\x12\x20\n\x0bBBJIJINJAFK\x18\t\x20\x01(\rR\x0bBB\
     JIJINJAFKB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

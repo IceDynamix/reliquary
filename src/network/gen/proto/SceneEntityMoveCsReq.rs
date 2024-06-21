@@ -83,7 +83,7 @@ impl ::protobuf::Message for SceneEntityMoveCsReq {
                 72 => {
                     self.entry_id = is.read_uint32()?;
                 },
-                90 => {
+                34 => {
                     self.entity_motion_list.push(is.read_message()?);
                 },
                 tag => {
@@ -115,7 +115,7 @@ impl ::protobuf::Message for SceneEntityMoveCsReq {
             os.write_uint32(9, self.entry_id)?;
         }
         for v in &self.entity_motion_list {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,7 +169,7 @@ impl ::protobuf::reflect::ProtobufValue for SceneEntityMoveCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aSceneEntityMoveCsReq.proto\x1a\x12EntityMotion.proto\"n\n\x14Scene\
     EntityMoveCsReq\x12\x19\n\x08entry_id\x18\t\x20\x01(\rR\x07entryId\x12;\
-    \n\x12entity_motion_list\x18\x0b\x20\x03(\x0b2\r.EntityMotionR\x10entity\
+    \n\x12entity_motion_list\x18\x04\x20\x03(\x0b2\r.EntityMotionR\x10entity\
     MotionListB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

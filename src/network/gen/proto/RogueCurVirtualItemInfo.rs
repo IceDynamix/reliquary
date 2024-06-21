@@ -31,8 +31,8 @@ pub struct RogueCurVirtualItemInfo {
     // message fields
     // @@protoc_insertion_point(field:RogueCurVirtualItemInfo.cur_rogue_coin)
     pub cur_rogue_coin: u32,
-    // @@protoc_insertion_point(field:RogueCurVirtualItemInfo.cur_rogue_ability_point)
-    pub cur_rogue_ability_point: u32,
+    // @@protoc_insertion_point(field:RogueCurVirtualItemInfo.cur_talent_coin)
+    pub cur_talent_coin: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueCurVirtualItemInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,9 +58,9 @@ impl RogueCurVirtualItemInfo {
             |m: &mut RogueCurVirtualItemInfo| { &mut m.cur_rogue_coin },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cur_rogue_ability_point",
-            |m: &RogueCurVirtualItemInfo| { &m.cur_rogue_ability_point },
-            |m: &mut RogueCurVirtualItemInfo| { &mut m.cur_rogue_ability_point },
+            "cur_talent_coin",
+            |m: &RogueCurVirtualItemInfo| { &m.cur_talent_coin },
+            |m: &mut RogueCurVirtualItemInfo| { &mut m.cur_talent_coin },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueCurVirtualItemInfo>(
             "RogueCurVirtualItemInfo",
@@ -83,8 +83,8 @@ impl ::protobuf::Message for RogueCurVirtualItemInfo {
                 96 => {
                     self.cur_rogue_coin = is.read_uint32()?;
                 },
-                8 => {
-                    self.cur_rogue_ability_point = is.read_uint32()?;
+                32 => {
+                    self.cur_talent_coin = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,8 +101,8 @@ impl ::protobuf::Message for RogueCurVirtualItemInfo {
         if self.cur_rogue_coin != 0 {
             my_size += ::protobuf::rt::uint32_size(12, self.cur_rogue_coin);
         }
-        if self.cur_rogue_ability_point != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.cur_rogue_ability_point);
+        if self.cur_talent_coin != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.cur_talent_coin);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,8 +113,8 @@ impl ::protobuf::Message for RogueCurVirtualItemInfo {
         if self.cur_rogue_coin != 0 {
             os.write_uint32(12, self.cur_rogue_coin)?;
         }
-        if self.cur_rogue_ability_point != 0 {
-            os.write_uint32(1, self.cur_rogue_ability_point)?;
+        if self.cur_talent_coin != 0 {
+            os.write_uint32(4, self.cur_talent_coin)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for RogueCurVirtualItemInfo {
 
     fn clear(&mut self) {
         self.cur_rogue_coin = 0;
-        self.cur_rogue_ability_point = 0;
+        self.cur_talent_coin = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueCurVirtualItemInfo {
         static instance: RogueCurVirtualItemInfo = RogueCurVirtualItemInfo {
             cur_rogue_coin: 0,
-            cur_rogue_ability_point: 0,
+            cur_talent_coin: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueCurVirtualItemInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dRogueCurVirtualItemInfo.proto\"v\n\x17RogueCurVirtualItemInfo\x12$\
-    \n\x0ecur_rogue_coin\x18\x0c\x20\x01(\rR\x0ccurRogueCoin\x125\n\x17cur_r\
-    ogue_ability_point\x18\x01\x20\x01(\rR\x14curRogueAbilityPointB\x15\n\
-    \x13emu.lunarcore.protob\x06proto3\
+    \n\x1dRogueCurVirtualItemInfo.proto\"g\n\x17RogueCurVirtualItemInfo\x12$\
+    \n\x0ecur_rogue_coin\x18\x0c\x20\x01(\rR\x0ccurRogueCoin\x12&\n\x0fcur_t\
+    alent_coin\x18\x04\x20\x01(\rR\rcurTalentCoinB\x15\n\x13emu.lunarcore.pr\
+    otob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

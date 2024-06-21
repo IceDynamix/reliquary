@@ -136,34 +136,34 @@ impl ::protobuf::Message for Relic {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                56 => {
                     self.base_avatar_id = is.read_uint32()?;
                 },
-                64 => {
+                72 => {
                     self.level = is.read_uint32()?;
                 },
-                32 => {
+                88 => {
                     self.is_protected = is.read_bool()?;
                 },
-                72 => {
+                16 => {
                     self.exp = is.read_uint32()?;
                 },
-                8 => {
+                40 => {
                     self.is_discarded = is.read_bool()?;
                 },
-                104 => {
+                48 => {
                     self.tid = is.read_uint32()?;
                 },
-                120 => {
+                8 => {
                     self.main_affix_id = is.read_uint32()?;
                 },
-                112 => {
+                120 => {
                     self.equip_avatar_id = is.read_uint32()?;
                 },
-                16 => {
+                24 => {
                     self.unique_id = is.read_uint32()?;
                 },
-                98 => {
+                114 => {
                     self.sub_affix_list.push(is.read_message()?);
                 },
                 tag => {
@@ -179,31 +179,31 @@ impl ::protobuf::Message for Relic {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.base_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.base_avatar_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.base_avatar_id);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.level);
+            my_size += ::protobuf::rt::uint32_size(9, self.level);
         }
         if self.is_protected != false {
             my_size += 1 + 1;
         }
         if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.exp);
+            my_size += ::protobuf::rt::uint32_size(2, self.exp);
         }
         if self.is_discarded != false {
             my_size += 1 + 1;
         }
         if self.tid != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.tid);
+            my_size += ::protobuf::rt::uint32_size(6, self.tid);
         }
         if self.main_affix_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.main_affix_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.main_affix_id);
         }
         if self.equip_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.equip_avatar_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.equip_avatar_id);
         }
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.unique_id);
         }
         for value in &self.sub_affix_list {
             let len = value.compute_size();
@@ -216,34 +216,34 @@ impl ::protobuf::Message for Relic {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.base_avatar_id != 0 {
-            os.write_uint32(10, self.base_avatar_id)?;
+            os.write_uint32(7, self.base_avatar_id)?;
         }
         if self.level != 0 {
-            os.write_uint32(8, self.level)?;
+            os.write_uint32(9, self.level)?;
         }
         if self.is_protected != false {
-            os.write_bool(4, self.is_protected)?;
+            os.write_bool(11, self.is_protected)?;
         }
         if self.exp != 0 {
-            os.write_uint32(9, self.exp)?;
+            os.write_uint32(2, self.exp)?;
         }
         if self.is_discarded != false {
-            os.write_bool(1, self.is_discarded)?;
+            os.write_bool(5, self.is_discarded)?;
         }
         if self.tid != 0 {
-            os.write_uint32(13, self.tid)?;
+            os.write_uint32(6, self.tid)?;
         }
         if self.main_affix_id != 0 {
-            os.write_uint32(15, self.main_affix_id)?;
+            os.write_uint32(1, self.main_affix_id)?;
         }
         if self.equip_avatar_id != 0 {
-            os.write_uint32(14, self.equip_avatar_id)?;
+            os.write_uint32(15, self.equip_avatar_id)?;
         }
         if self.unique_id != 0 {
-            os.write_uint32(2, self.unique_id)?;
+            os.write_uint32(3, self.unique_id)?;
         }
         for v in &self.sub_affix_list {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -312,14 +312,14 @@ impl ::protobuf::reflect::ProtobufValue for Relic {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0bRelic.proto\x1a\x10RelicAffix.proto\"\xc9\x02\n\x05Relic\x12$\n\
-    \x0ebase_avatar_id\x18\n\x20\x01(\rR\x0cbaseAvatarId\x12\x14\n\x05level\
-    \x18\x08\x20\x01(\rR\x05level\x12!\n\x0cis_protected\x18\x04\x20\x01(\
-    \x08R\x0bisProtected\x12\x10\n\x03exp\x18\t\x20\x01(\rR\x03exp\x12!\n\
-    \x0cis_discarded\x18\x01\x20\x01(\x08R\x0bisDiscarded\x12\x10\n\x03tid\
-    \x18\r\x20\x01(\rR\x03tid\x12\"\n\rmain_affix_id\x18\x0f\x20\x01(\rR\x0b\
-    mainAffixId\x12&\n\x0fequip_avatar_id\x18\x0e\x20\x01(\rR\requipAvatarId\
-    \x12\x1b\n\tunique_id\x18\x02\x20\x01(\rR\x08uniqueId\x121\n\x0esub_affi\
-    x_list\x18\x0c\x20\x03(\x0b2\x0b.RelicAffixR\x0csubAffixListB\x15\n\x13e\
+    \x0ebase_avatar_id\x18\x07\x20\x01(\rR\x0cbaseAvatarId\x12\x14\n\x05leve\
+    l\x18\t\x20\x01(\rR\x05level\x12!\n\x0cis_protected\x18\x0b\x20\x01(\x08\
+    R\x0bisProtected\x12\x10\n\x03exp\x18\x02\x20\x01(\rR\x03exp\x12!\n\x0ci\
+    s_discarded\x18\x05\x20\x01(\x08R\x0bisDiscarded\x12\x10\n\x03tid\x18\
+    \x06\x20\x01(\rR\x03tid\x12\"\n\rmain_affix_id\x18\x01\x20\x01(\rR\x0bma\
+    inAffixId\x12&\n\x0fequip_avatar_id\x18\x0f\x20\x01(\rR\requipAvatarId\
+    \x12\x1b\n\tunique_id\x18\x03\x20\x01(\rR\x08uniqueId\x121\n\x0esub_affi\
+    x_list\x18\x0e\x20\x03(\x0b2\x0b.RelicAffixR\x0csubAffixListB\x15\n\x13e\
     mu.lunarcore.protob\x06proto3\
 ";
 

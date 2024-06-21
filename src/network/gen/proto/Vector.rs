@@ -87,13 +87,13 @@ impl ::protobuf::Message for Vector {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                80 => {
                     self.y = is.read_sint32()?;
                 },
-                16 => {
+                96 => {
                     self.x = is.read_sint32()?;
                 },
-                32 => {
+                64 => {
                     self.z = is.read_sint32()?;
                 },
                 tag => {
@@ -109,13 +109,13 @@ impl ::protobuf::Message for Vector {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.y != 0 {
-            my_size += ::protobuf::rt::sint32_size(3, self.y);
+            my_size += ::protobuf::rt::sint32_size(10, self.y);
         }
         if self.x != 0 {
-            my_size += ::protobuf::rt::sint32_size(2, self.x);
+            my_size += ::protobuf::rt::sint32_size(12, self.x);
         }
         if self.z != 0 {
-            my_size += ::protobuf::rt::sint32_size(4, self.z);
+            my_size += ::protobuf::rt::sint32_size(8, self.z);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for Vector {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.y != 0 {
-            os.write_sint32(3, self.y)?;
+            os.write_sint32(10, self.y)?;
         }
         if self.x != 0 {
-            os.write_sint32(2, self.x)?;
+            os.write_sint32(12, self.x)?;
         }
         if self.z != 0 {
-            os.write_sint32(4, self.z)?;
+            os.write_sint32(8, self.z)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for Vector {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0cVector.proto\"2\n\x06Vector\x12\x0c\n\x01y\x18\x03\x20\x01(\x11R\
-    \x01y\x12\x0c\n\x01x\x18\x02\x20\x01(\x11R\x01x\x12\x0c\n\x01z\x18\x04\
-    \x20\x01(\x11R\x01zB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x0cVector.proto\"2\n\x06Vector\x12\x0c\n\x01y\x18\n\x20\x01(\x11R\x01\
+    y\x12\x0c\n\x01x\x18\x0c\x20\x01(\x11R\x01x\x12\x0c\n\x01z\x18\x08\x20\
+    \x01(\x11R\x01zB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

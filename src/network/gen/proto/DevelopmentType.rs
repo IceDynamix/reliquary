@@ -48,6 +48,12 @@ pub enum DevelopmentType {
     DEVELOPMENT_ACTIVITY_START = 8,
     // @@protoc_insertion_point(enum_value:DevelopmentType.DEVELOPMENT_ACTIVITY_END)
     DEVELOPMENT_ACTIVITY_END = 9,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DEVELOPMENT_BOSS_CHALLENGE)
+    DEVELOPMENT_BOSS_CHALLENGE = 10,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DEVELOPMENT_ROGUE_TOURN)
+    DEVELOPMENT_ROGUE_TOURN = 11,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DEVELOPMENT_ROGUE_TOURN_WEEK)
+    DEVELOPMENT_ROGUE_TOURN_WEEK = 12,
 }
 
 impl ::protobuf::Enum for DevelopmentType {
@@ -69,6 +75,9 @@ impl ::protobuf::Enum for DevelopmentType {
             7 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_UNLOCK_EQUIPMENT),
             8 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ACTIVITY_START),
             9 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ACTIVITY_END),
+            10 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_BOSS_CHALLENGE),
+            11 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ROGUE_TOURN),
+            12 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ROGUE_TOURN_WEEK),
             _ => ::std::option::Option::None
         }
     }
@@ -85,6 +94,9 @@ impl ::protobuf::Enum for DevelopmentType {
             "DEVELOPMENT_UNLOCK_EQUIPMENT" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_UNLOCK_EQUIPMENT),
             "DEVELOPMENT_ACTIVITY_START" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ACTIVITY_START),
             "DEVELOPMENT_ACTIVITY_END" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ACTIVITY_END),
+            "DEVELOPMENT_BOSS_CHALLENGE" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_BOSS_CHALLENGE),
+            "DEVELOPMENT_ROGUE_TOURN" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ROGUE_TOURN),
+            "DEVELOPMENT_ROGUE_TOURN_WEEK" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ROGUE_TOURN_WEEK),
             _ => ::std::option::Option::None
         }
     }
@@ -100,6 +112,9 @@ impl ::protobuf::Enum for DevelopmentType {
         DevelopmentType::DEVELOPMENT_UNLOCK_EQUIPMENT,
         DevelopmentType::DEVELOPMENT_ACTIVITY_START,
         DevelopmentType::DEVELOPMENT_ACTIVITY_END,
+        DevelopmentType::DEVELOPMENT_BOSS_CHALLENGE,
+        DevelopmentType::DEVELOPMENT_ROGUE_TOURN,
+        DevelopmentType::DEVELOPMENT_ROGUE_TOURN_WEEK,
     ];
 }
 
@@ -128,14 +143,16 @@ impl DevelopmentType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15DevelopmentType.proto*\xc6\x02\n\x0fDevelopmentType\x12\x14\n\x10D\
+    \n\x15DevelopmentType.proto*\xa5\x03\n\x0fDevelopmentType\x12\x14\n\x10D\
     EVELOPMENT_NONE\x10\0\x12\x1c\n\x18DEVELOPMENT_ROGUE_COSMOS\x10\x01\x12\
     \x1b\n\x17DEVELOPMENT_ROGUE_CHESS\x10\x02\x12\x20\n\x1cDEVELOPMENT_ROGUE\
     _CHESS_NOUS\x10\x03\x12\x20\n\x1cDEVELOPMENT_MEMORY_CHALLENGE\x10\x04\
     \x12\x1f\n\x1bDEVELOPMENT_STORY_CHALLENGE\x10\x05\x12\x1d\n\x19DEVELOPME\
     NT_UNLOCK_AVATAR\x10\x06\x12\x20\n\x1cDEVELOPMENT_UNLOCK_EQUIPMENT\x10\
     \x07\x12\x1e\n\x1aDEVELOPMENT_ACTIVITY_START\x10\x08\x12\x1c\n\x18DEVELO\
-    PMENT_ACTIVITY_END\x10\tB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    PMENT_ACTIVITY_END\x10\t\x12\x1e\n\x1aDEVELOPMENT_BOSS_CHALLENGE\x10\n\
+    \x12\x1b\n\x17DEVELOPMENT_ROGUE_TOURN\x10\x0b\x12\x20\n\x1cDEVELOPMENT_R\
+    OGUE_TOURN_WEEK\x10\x0cB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -87,10 +87,10 @@ impl ::protobuf::Message for PlayerGetTokenCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                106 => {
                     self.account_uid = is.read_string()?;
                 },
-                120 => {
+                8 => {
                     self.platform_type = is.read_uint32()?;
                 },
                 74 => {
@@ -109,10 +109,10 @@ impl ::protobuf::Message for PlayerGetTokenCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.account_uid.is_empty() {
-            my_size += ::protobuf::rt::string_size(6, &self.account_uid);
+            my_size += ::protobuf::rt::string_size(13, &self.account_uid);
         }
         if self.platform_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.platform_type);
+            my_size += ::protobuf::rt::uint32_size(1, self.platform_type);
         }
         if !self.token.is_empty() {
             my_size += ::protobuf::rt::string_size(9, &self.token);
@@ -124,10 +124,10 @@ impl ::protobuf::Message for PlayerGetTokenCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.account_uid.is_empty() {
-            os.write_string(6, &self.account_uid)?;
+            os.write_string(13, &self.account_uid)?;
         }
         if self.platform_type != 0 {
-            os.write_uint32(15, self.platform_type)?;
+            os.write_uint32(1, self.platform_type)?;
         }
         if !self.token.is_empty() {
             os.write_string(9, &self.token)?;
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for PlayerGetTokenCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19PlayerGetTokenCsReq.proto\"q\n\x13PlayerGetTokenCsReq\x12\x1f\n\
-    \x0baccount_uid\x18\x06\x20\x01(\tR\naccountUid\x12#\n\rplatform_type\
-    \x18\x0f\x20\x01(\rR\x0cplatformType\x12\x14\n\x05token\x18\t\x20\x01(\t\
-    R\x05tokenB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \x0baccount_uid\x18\r\x20\x01(\tR\naccountUid\x12#\n\rplatform_type\x18\
+    \x01\x20\x01(\rR\x0cplatformType\x12\x14\n\x05token\x18\t\x20\x01(\tR\
+    \x05tokenB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
