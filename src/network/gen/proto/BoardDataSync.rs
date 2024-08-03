@@ -80,10 +80,10 @@ impl ::protobuf::Message for BoardDataSync {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                50 => {
                     self.signature = is.read_string()?;
                 },
-                106 => {
+                122 => {
                     self.unlocked_head_icon_list.push(is.read_message()?);
                 },
                 tag => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for BoardDataSync {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.signature.is_empty() {
-            my_size += ::protobuf::rt::string_size(12, &self.signature);
+            my_size += ::protobuf::rt::string_size(6, &self.signature);
         }
         for value in &self.unlocked_head_icon_list {
             let len = value.compute_size();
@@ -112,10 +112,10 @@ impl ::protobuf::Message for BoardDataSync {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.signature.is_empty() {
-            os.write_string(12, &self.signature)?;
+            os.write_string(6, &self.signature)?;
         }
         for v in &self.unlocked_head_icon_list {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for BoardDataSync {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13BoardDataSync.proto\x1a\x0eHeadIcon.proto\"o\n\rBoardDataSync\x12\
-    \x1c\n\tsignature\x18\x0c\x20\x01(\tR\tsignature\x12@\n\x17unlocked_head\
-    _icon_list\x18\r\x20\x03(\x0b2\t.HeadIconR\x14unlockedHeadIconListB\x15\
-    \n\x13emu.lunarcore.protob\x06proto3\
+    \x1c\n\tsignature\x18\x06\x20\x01(\tR\tsignature\x12@\n\x17unlocked_head\
+    _icon_list\x18\x0f\x20\x03(\x0b2\t.HeadIconR\x14unlockedHeadIconListB\
+    \x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

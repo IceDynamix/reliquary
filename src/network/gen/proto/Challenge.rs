@@ -101,19 +101,19 @@ impl ::protobuf::Message for Challenge {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                112 => {
                     self.stars = is.read_uint32()?;
                 },
-                58 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.ext_info)?;
                 },
-                80 => {
+                72 => {
                     self.taken_reward = is.read_uint32()?;
                 },
-                104 => {
+                40 => {
                     self.challenge_id = is.read_uint32()?;
                 },
-                32 => {
+                8 => {
                     self.score = is.read_uint32()?;
                 },
                 tag => {
@@ -129,20 +129,20 @@ impl ::protobuf::Message for Challenge {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.stars != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.stars);
+            my_size += ::protobuf::rt::uint32_size(14, self.stars);
         }
         if let Some(v) = self.ext_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.taken_reward != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.taken_reward);
+            my_size += ::protobuf::rt::uint32_size(9, self.taken_reward);
         }
         if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.challenge_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.challenge_id);
         }
         if self.score != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.score);
+            my_size += ::protobuf::rt::uint32_size(1, self.score);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -151,19 +151,19 @@ impl ::protobuf::Message for Challenge {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.stars != 0 {
-            os.write_uint32(3, self.stars)?;
+            os.write_uint32(14, self.stars)?;
         }
         if let Some(v) = self.ext_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if self.taken_reward != 0 {
-            os.write_uint32(10, self.taken_reward)?;
+            os.write_uint32(9, self.taken_reward)?;
         }
         if self.challenge_id != 0 {
-            os.write_uint32(13, self.challenge_id)?;
+            os.write_uint32(5, self.challenge_id)?;
         }
         if self.score != 0 {
-            os.write_uint32(4, self.score)?;
+            os.write_uint32(1, self.score)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -222,11 +222,11 @@ impl ::protobuf::reflect::ProtobufValue for Challenge {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0fChallenge.proto\x1a\x16ChallengeExtInfo.proto\"\xab\x01\n\tChallen\
-    ge\x12\x14\n\x05stars\x18\x03\x20\x01(\rR\x05stars\x12,\n\x08ext_info\
-    \x18\x07\x20\x01(\x0b2\x11.ChallengeExtInfoR\x07extInfo\x12!\n\x0ctaken_\
-    reward\x18\n\x20\x01(\rR\x0btakenReward\x12!\n\x0cchallenge_id\x18\r\x20\
-    \x01(\rR\x0bchallengeId\x12\x14\n\x05score\x18\x04\x20\x01(\rR\x05scoreB\
-    \x15\n\x13emu.lunarcore.protob\x06proto3\
+    ge\x12\x14\n\x05stars\x18\x0e\x20\x01(\rR\x05stars\x12,\n\x08ext_info\
+    \x18\x03\x20\x01(\x0b2\x11.ChallengeExtInfoR\x07extInfo\x12!\n\x0ctaken_\
+    reward\x18\t\x20\x01(\rR\x0btakenReward\x12!\n\x0cchallenge_id\x18\x05\
+    \x20\x01(\rR\x0bchallengeId\x12\x14\n\x05score\x18\x01\x20\x01(\rR\x05sc\
+    oreB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

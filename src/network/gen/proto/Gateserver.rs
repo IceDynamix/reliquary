@@ -192,58 +192,58 @@ impl ::protobuf::Message for Gateserver {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                18 => {
                     self.lua_url = is.read_string()?;
                 },
-                42 => {
+                114 => {
                     self.ex_resource_url = is.read_string()?;
                 },
-                58 => {
+                122 => {
                     self.asset_bundle_url = is.read_string()?;
                 },
-                13442 => {
+                15162 => {
                     self.ifix_url = is.read_string()?;
                 },
                 82 => {
                     self.region_name = is.read_string()?;
                 },
-                18 => {
+                10 => {
                     self.ip = is.read_string()?;
                 },
-                88 => {
+                96 => {
                     self.port = is.read_uint32()?;
                 },
-                16130 => {
+                3066 => {
                     self.msg = is.read_string()?;
                 },
-                4562 => {
+                9674 => {
                     self.ifix_version = is.read_string()?;
                 },
-                5658 => {
+                14386 => {
                     self.mdk_res_version = is.read_string()?;
                 },
-                6962 => {
+                12778 => {
                     self.client_secret_key = is.read_string()?;
                 },
-                72 => {
+                48 => {
                     self.unk1 = is.read_bool()?;
                 },
-                96 => {
+                104 => {
                     self.unk2 = is.read_bool()?;
                 },
-                8160 => {
+                656 => {
                     self.unk3 = is.read_bool()?;
                 },
-                10824 => {
+                5896 => {
                     self.unk4 = is.read_bool()?;
                 },
-                11464 => {
+                8296 => {
                     self.unk5 = is.read_bool()?;
                 },
-                13912 => {
+                11208 => {
                     self.unk6 = is.read_bool()?;
                 },
-                14608 => {
+                14808 => {
                     self.unk7 = is.read_bool()?;
                 },
                 tag => {
@@ -259,37 +259,37 @@ impl ::protobuf::Message for Gateserver {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.lua_url.is_empty() {
-            my_size += ::protobuf::rt::string_size(3, &self.lua_url);
+            my_size += ::protobuf::rt::string_size(2, &self.lua_url);
         }
         if !self.ex_resource_url.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.ex_resource_url);
+            my_size += ::protobuf::rt::string_size(14, &self.ex_resource_url);
         }
         if !self.asset_bundle_url.is_empty() {
-            my_size += ::protobuf::rt::string_size(7, &self.asset_bundle_url);
+            my_size += ::protobuf::rt::string_size(15, &self.asset_bundle_url);
         }
         if !self.ifix_url.is_empty() {
-            my_size += ::protobuf::rt::string_size(1680, &self.ifix_url);
+            my_size += ::protobuf::rt::string_size(1895, &self.ifix_url);
         }
         if !self.region_name.is_empty() {
             my_size += ::protobuf::rt::string_size(10, &self.region_name);
         }
         if !self.ip.is_empty() {
-            my_size += ::protobuf::rt::string_size(2, &self.ip);
+            my_size += ::protobuf::rt::string_size(1, &self.ip);
         }
         if self.port != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.port);
+            my_size += ::protobuf::rt::uint32_size(12, self.port);
         }
         if !self.msg.is_empty() {
-            my_size += ::protobuf::rt::string_size(2016, &self.msg);
+            my_size += ::protobuf::rt::string_size(383, &self.msg);
         }
         if !self.ifix_version.is_empty() {
-            my_size += ::protobuf::rt::string_size(570, &self.ifix_version);
+            my_size += ::protobuf::rt::string_size(1209, &self.ifix_version);
         }
         if !self.mdk_res_version.is_empty() {
-            my_size += ::protobuf::rt::string_size(707, &self.mdk_res_version);
+            my_size += ::protobuf::rt::string_size(1798, &self.mdk_res_version);
         }
         if !self.client_secret_key.is_empty() {
-            my_size += ::protobuf::rt::string_size(870, &self.client_secret_key);
+            my_size += ::protobuf::rt::string_size(1597, &self.client_secret_key);
         }
         if self.unk1 != false {
             my_size += 1 + 1;
@@ -319,58 +319,58 @@ impl ::protobuf::Message for Gateserver {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.lua_url.is_empty() {
-            os.write_string(3, &self.lua_url)?;
+            os.write_string(2, &self.lua_url)?;
         }
         if !self.ex_resource_url.is_empty() {
-            os.write_string(5, &self.ex_resource_url)?;
+            os.write_string(14, &self.ex_resource_url)?;
         }
         if !self.asset_bundle_url.is_empty() {
-            os.write_string(7, &self.asset_bundle_url)?;
+            os.write_string(15, &self.asset_bundle_url)?;
         }
         if !self.ifix_url.is_empty() {
-            os.write_string(1680, &self.ifix_url)?;
+            os.write_string(1895, &self.ifix_url)?;
         }
         if !self.region_name.is_empty() {
             os.write_string(10, &self.region_name)?;
         }
         if !self.ip.is_empty() {
-            os.write_string(2, &self.ip)?;
+            os.write_string(1, &self.ip)?;
         }
         if self.port != 0 {
-            os.write_uint32(11, self.port)?;
+            os.write_uint32(12, self.port)?;
         }
         if !self.msg.is_empty() {
-            os.write_string(2016, &self.msg)?;
+            os.write_string(383, &self.msg)?;
         }
         if !self.ifix_version.is_empty() {
-            os.write_string(570, &self.ifix_version)?;
+            os.write_string(1209, &self.ifix_version)?;
         }
         if !self.mdk_res_version.is_empty() {
-            os.write_string(707, &self.mdk_res_version)?;
+            os.write_string(1798, &self.mdk_res_version)?;
         }
         if !self.client_secret_key.is_empty() {
-            os.write_string(870, &self.client_secret_key)?;
+            os.write_string(1597, &self.client_secret_key)?;
         }
         if self.unk1 != false {
-            os.write_bool(9, self.unk1)?;
+            os.write_bool(6, self.unk1)?;
         }
         if self.unk2 != false {
-            os.write_bool(12, self.unk2)?;
+            os.write_bool(13, self.unk2)?;
         }
         if self.unk3 != false {
-            os.write_bool(1020, self.unk3)?;
+            os.write_bool(82, self.unk3)?;
         }
         if self.unk4 != false {
-            os.write_bool(1353, self.unk4)?;
+            os.write_bool(737, self.unk4)?;
         }
         if self.unk5 != false {
-            os.write_bool(1433, self.unk5)?;
+            os.write_bool(1037, self.unk5)?;
         }
         if self.unk6 != false {
-            os.write_bool(1739, self.unk6)?;
+            os.write_bool(1401, self.unk6)?;
         }
         if self.unk7 != false {
-            os.write_bool(1826, self.unk7)?;
+            os.write_bool(1851, self.unk7)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -454,21 +454,21 @@ impl ::protobuf::reflect::ProtobufValue for Gateserver {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x10Gateserver.proto\"\xf6\x03\n\nGateserver\x12\x17\n\x07lua_url\x18\
-    \x03\x20\x01(\tR\x06luaUrl\x12&\n\x0fex_resource_url\x18\x05\x20\x01(\tR\
-    \rexResourceUrl\x12(\n\x10asset_bundle_url\x18\x07\x20\x01(\tR\x0eassetB\
-    undleUrl\x12\x1a\n\x08ifix_url\x18\x90\r\x20\x01(\tR\x07ifixUrl\x12\x1f\
-    \n\x0bregion_name\x18\n\x20\x01(\tR\nregionName\x12\x0e\n\x02ip\x18\x02\
-    \x20\x01(\tR\x02ip\x12\x12\n\x04port\x18\x0b\x20\x01(\rR\x04port\x12\x11\
-    \n\x03msg\x18\xe0\x0f\x20\x01(\tR\x03msg\x12\"\n\x0cifix_version\x18\xba\
-    \x04\x20\x01(\tR\x0bifixVersion\x12'\n\x0fmdk_res_version\x18\xc3\x05\
-    \x20\x01(\tR\rmdkResVersion\x12+\n\x11client_secret_key\x18\xe6\x06\x20\
-    \x01(\tR\x0fclientSecretKey\x12\x12\n\x04unk1\x18\t\x20\x01(\x08R\x04unk\
-    1\x12\x12\n\x04unk2\x18\x0c\x20\x01(\x08R\x04unk2\x12\x13\n\x04unk3\x18\
-    \xfc\x07\x20\x01(\x08R\x04unk3\x12\x13\n\x04unk4\x18\xc9\n\x20\x01(\x08R\
-    \x04unk4\x12\x13\n\x04unk5\x18\x99\x0b\x20\x01(\x08R\x04unk5\x12\x13\n\
-    \x04unk6\x18\xcb\r\x20\x01(\x08R\x04unk6\x12\x13\n\x04unk7\x18\xa2\x0e\
-    \x20\x01(\x08R\x04unk7B\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x10Gateserver.proto\"\xf5\x03\n\nGateserver\x12\x17\n\x07lua_url\x18\
+    \x02\x20\x01(\tR\x06luaUrl\x12&\n\x0fex_resource_url\x18\x0e\x20\x01(\tR\
+    \rexResourceUrl\x12(\n\x10asset_bundle_url\x18\x0f\x20\x01(\tR\x0eassetB\
+    undleUrl\x12\x1a\n\x08ifix_url\x18\xe7\x0e\x20\x01(\tR\x07ifixUrl\x12\
+    \x1f\n\x0bregion_name\x18\n\x20\x01(\tR\nregionName\x12\x0e\n\x02ip\x18\
+    \x01\x20\x01(\tR\x02ip\x12\x12\n\x04port\x18\x0c\x20\x01(\rR\x04port\x12\
+    \x11\n\x03msg\x18\xff\x02\x20\x01(\tR\x03msg\x12\"\n\x0cifix_version\x18\
+    \xb9\t\x20\x01(\tR\x0bifixVersion\x12'\n\x0fmdk_res_version\x18\x86\x0e\
+    \x20\x01(\tR\rmdkResVersion\x12+\n\x11client_secret_key\x18\xbd\x0c\x20\
+    \x01(\tR\x0fclientSecretKey\x12\x12\n\x04unk1\x18\x06\x20\x01(\x08R\x04u\
+    nk1\x12\x12\n\x04unk2\x18\r\x20\x01(\x08R\x04unk2\x12\x12\n\x04unk3\x18R\
+    \x20\x01(\x08R\x04unk3\x12\x13\n\x04unk4\x18\xe1\x05\x20\x01(\x08R\x04un\
+    k4\x12\x13\n\x04unk5\x18\x8d\x08\x20\x01(\x08R\x04unk5\x12\x13\n\x04unk6\
+    \x18\xf9\n\x20\x01(\x08R\x04unk6\x12\x13\n\x04unk7\x18\xbb\x0e\x20\x01(\
+    \x08R\x04unk7B\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

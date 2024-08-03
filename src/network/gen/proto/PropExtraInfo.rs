@@ -46,7 +46,7 @@ impl PropExtraInfo {
         ::std::default::Default::default()
     }
 
-    // .PropRogueInfo rogue_info = 14;
+    // .PropRogueInfo rogue_info = 11;
 
     pub fn rogue_info(&self) -> &super::PropRogueInfo::PropRogueInfo {
         match self.info {
@@ -124,7 +124,7 @@ impl ::protobuf::Message for PropExtraInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                90 => {
                     self.info = ::std::option::Option::Some(prop_extra_info::Info::RogueInfo(is.read_message()?));
                 },
                 tag => {
@@ -156,7 +156,7 @@ impl ::protobuf::Message for PropExtraInfo {
         if let ::std::option::Option::Some(ref v) = self.info {
             match v {
                 &prop_extra_info::Info::RogueInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
             };
         }
@@ -237,7 +237,7 @@ pub mod prop_extra_info {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13PropExtraInfo.proto\x1a\x13PropRogueInfo.proto\"H\n\rPropExtraInfo\
-    \x12/\n\nrogue_info\x18\x0e\x20\x01(\x0b2\x0e.PropRogueInfoH\0R\trogueIn\
+    \x12/\n\nrogue_info\x18\x0b\x20\x01(\x0b2\x0e.PropRogueInfoH\0R\trogueIn\
     foB\x06\n\x04infoB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

@@ -73,10 +73,10 @@ impl ::protobuf::Message for GetUnlockTeleportCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.entry_id_list)?;
                 },
-                32 => {
+                40 => {
                     self.entry_id_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -92,7 +92,7 @@ impl ::protobuf::Message for GetUnlockTeleportCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         for value in &self.entry_id_list {
-            my_size += ::protobuf::rt::uint32_size(4, *value);
+            my_size += ::protobuf::rt::uint32_size(5, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -101,7 +101,7 @@ impl ::protobuf::Message for GetUnlockTeleportCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.entry_id_list {
-            os.write_uint32(4, *v)?;
+            os.write_uint32(5, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -152,7 +152,7 @@ impl ::protobuf::reflect::ProtobufValue for GetUnlockTeleportCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cGetUnlockTeleportCsReq.proto\"<\n\x16GetUnlockTeleportCsReq\x12\"\
-    \n\rentry_id_list\x18\x04\x20\x03(\rR\x0bentryIdListB\x15\n\x13emu.lunar\
+    \n\rentry_id_list\x18\x05\x20\x03(\rR\x0bentryIdListB\x15\n\x13emu.lunar\
     core.protob\x06proto3\
 ";
 

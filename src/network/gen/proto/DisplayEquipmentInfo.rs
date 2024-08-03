@@ -101,19 +101,19 @@ impl ::protobuf::Message for DisplayEquipmentInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                24 => {
                     self.exp = is.read_uint32()?;
                 },
-                72 => {
+                8 => {
                     self.rank = is.read_uint32()?;
                 },
                 88 => {
                     self.tid = is.read_uint32()?;
                 },
-                32 => {
+                40 => {
                     self.promotion = is.read_uint32()?;
                 },
-                64 => {
+                56 => {
                     self.level = is.read_uint32()?;
                 },
                 tag => {
@@ -129,19 +129,19 @@ impl ::protobuf::Message for DisplayEquipmentInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.exp);
+            my_size += ::protobuf::rt::uint32_size(3, self.exp);
         }
         if self.rank != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.rank);
+            my_size += ::protobuf::rt::uint32_size(1, self.rank);
         }
         if self.tid != 0 {
             my_size += ::protobuf::rt::uint32_size(11, self.tid);
         }
         if self.promotion != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.promotion);
+            my_size += ::protobuf::rt::uint32_size(5, self.promotion);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.level);
+            my_size += ::protobuf::rt::uint32_size(7, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,19 +150,19 @@ impl ::protobuf::Message for DisplayEquipmentInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.exp != 0 {
-            os.write_uint32(10, self.exp)?;
+            os.write_uint32(3, self.exp)?;
         }
         if self.rank != 0 {
-            os.write_uint32(9, self.rank)?;
+            os.write_uint32(1, self.rank)?;
         }
         if self.tid != 0 {
             os.write_uint32(11, self.tid)?;
         }
         if self.promotion != 0 {
-            os.write_uint32(4, self.promotion)?;
+            os.write_uint32(5, self.promotion)?;
         }
         if self.level != 0 {
-            os.write_uint32(8, self.level)?;
+            os.write_uint32(7, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -221,10 +221,10 @@ impl ::protobuf::reflect::ProtobufValue for DisplayEquipmentInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aDisplayEquipmentInfo.proto\"\x82\x01\n\x14DisplayEquipmentInfo\x12\
-    \x10\n\x03exp\x18\n\x20\x01(\rR\x03exp\x12\x12\n\x04rank\x18\t\x20\x01(\
-    \rR\x04rank\x12\x10\n\x03tid\x18\x0b\x20\x01(\rR\x03tid\x12\x1c\n\tpromo\
-    tion\x18\x04\x20\x01(\rR\tpromotion\x12\x14\n\x05level\x18\x08\x20\x01(\
-    \rR\x05levelB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \x10\n\x03exp\x18\x03\x20\x01(\rR\x03exp\x12\x12\n\x04rank\x18\x01\x20\
+    \x01(\rR\x04rank\x12\x10\n\x03tid\x18\x0b\x20\x01(\rR\x03tid\x12\x1c\n\t\
+    promotion\x18\x05\x20\x01(\rR\tpromotion\x12\x14\n\x05level\x18\x07\x20\
+    \x01(\rR\x05levelB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

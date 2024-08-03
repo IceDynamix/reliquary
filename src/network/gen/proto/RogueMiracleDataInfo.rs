@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMiracleDataInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueMiracleDataInfo.ODFNOGMKDOA)
-    pub ODFNOGMKDOA: u32,
-    // @@protoc_insertion_point(field:RogueMiracleDataInfo.DFKPIBCLGOP)
-    pub DFKPIBCLGOP: ::std::collections::HashMap<u32, u32>,
-    // @@protoc_insertion_point(field:RogueMiracleDataInfo.IKPLEKFLPFF)
-    pub IKPLEKFLPFF: u32,
-    // @@protoc_insertion_point(field:RogueMiracleDataInfo.JFIPNOAJNJM)
-    pub JFIPNOAJNJM: u32,
+    // @@protoc_insertion_point(field:RogueMiracleDataInfo.KABNOGFDKFI)
+    pub KABNOGFDKFI: u32,
+    // @@protoc_insertion_point(field:RogueMiracleDataInfo.NDPAMBJKKFD)
+    pub NDPAMBJKKFD: u32,
     // @@protoc_insertion_point(field:RogueMiracleDataInfo.miracle_id)
     pub miracle_id: u32,
+    // @@protoc_insertion_point(field:RogueMiracleDataInfo.NFNNOMAMNAA)
+    pub NFNNOMAMNAA: u32,
+    // @@protoc_insertion_point(field:RogueMiracleDataInfo.JBFJGEIGGBA)
+    pub JBFJGEIGGBA: ::std::collections::HashMap<u32, u32>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMiracleDataInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,29 +59,29 @@ impl RogueMiracleDataInfo {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ODFNOGMKDOA",
-            |m: &RogueMiracleDataInfo| { &m.ODFNOGMKDOA },
-            |m: &mut RogueMiracleDataInfo| { &mut m.ODFNOGMKDOA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor::<_, _, _>(
-            "DFKPIBCLGOP",
-            |m: &RogueMiracleDataInfo| { &m.DFKPIBCLGOP },
-            |m: &mut RogueMiracleDataInfo| { &mut m.DFKPIBCLGOP },
+            "KABNOGFDKFI",
+            |m: &RogueMiracleDataInfo| { &m.KABNOGFDKFI },
+            |m: &mut RogueMiracleDataInfo| { &mut m.KABNOGFDKFI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IKPLEKFLPFF",
-            |m: &RogueMiracleDataInfo| { &m.IKPLEKFLPFF },
-            |m: &mut RogueMiracleDataInfo| { &mut m.IKPLEKFLPFF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JFIPNOAJNJM",
-            |m: &RogueMiracleDataInfo| { &m.JFIPNOAJNJM },
-            |m: &mut RogueMiracleDataInfo| { &mut m.JFIPNOAJNJM },
+            "NDPAMBJKKFD",
+            |m: &RogueMiracleDataInfo| { &m.NDPAMBJKKFD },
+            |m: &mut RogueMiracleDataInfo| { &mut m.NDPAMBJKKFD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "miracle_id",
             |m: &RogueMiracleDataInfo| { &m.miracle_id },
             |m: &mut RogueMiracleDataInfo| { &mut m.miracle_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NFNNOMAMNAA",
+            |m: &RogueMiracleDataInfo| { &m.NFNNOMAMNAA },
+            |m: &mut RogueMiracleDataInfo| { &mut m.NFNNOMAMNAA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor::<_, _, _>(
+            "JBFJGEIGGBA",
+            |m: &RogueMiracleDataInfo| { &m.JBFJGEIGGBA },
+            |m: &mut RogueMiracleDataInfo| { &mut m.JBFJGEIGGBA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMiracleDataInfo>(
             "RogueMiracleDataInfo",
@@ -101,10 +101,19 @@ impl ::protobuf::Message for RogueMiracleDataInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.ODFNOGMKDOA = is.read_uint32()?;
+                16 => {
+                    self.KABNOGFDKFI = is.read_uint32()?;
                 },
-                114 => {
+                72 => {
+                    self.NDPAMBJKKFD = is.read_uint32()?;
+                },
+                80 => {
+                    self.miracle_id = is.read_uint32()?;
+                },
+                96 => {
+                    self.NFNNOMAMNAA = is.read_uint32()?;
+                },
+                50 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -117,16 +126,7 @@ impl ::protobuf::Message for RogueMiracleDataInfo {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.DFKPIBCLGOP.insert(key, value);
-                },
-                48 => {
-                    self.IKPLEKFLPFF = is.read_uint32()?;
-                },
-                8 => {
-                    self.JFIPNOAJNJM = is.read_uint32()?;
-                },
-                96 => {
-                    self.miracle_id = is.read_uint32()?;
+                    self.JBFJGEIGGBA.insert(key, value);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,51 +140,51 @@ impl ::protobuf::Message for RogueMiracleDataInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ODFNOGMKDOA != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.ODFNOGMKDOA);
+        if self.KABNOGFDKFI != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.KABNOGFDKFI);
         }
-        for (k, v) in &self.DFKPIBCLGOP {
+        if self.NDPAMBJKKFD != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.NDPAMBJKKFD);
+        }
+        if self.miracle_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.miracle_id);
+        }
+        if self.NFNNOMAMNAA != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.NFNNOMAMNAA);
+        }
+        for (k, v) in &self.JBFJGEIGGBA {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if self.IKPLEKFLPFF != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.IKPLEKFLPFF);
-        }
-        if self.JFIPNOAJNJM != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.JFIPNOAJNJM);
-        }
-        if self.miracle_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.miracle_id);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ODFNOGMKDOA != 0 {
-            os.write_uint32(9, self.ODFNOGMKDOA)?;
+        if self.KABNOGFDKFI != 0 {
+            os.write_uint32(2, self.KABNOGFDKFI)?;
         }
-        for (k, v) in &self.DFKPIBCLGOP {
+        if self.NDPAMBJKKFD != 0 {
+            os.write_uint32(9, self.NDPAMBJKKFD)?;
+        }
+        if self.miracle_id != 0 {
+            os.write_uint32(10, self.miracle_id)?;
+        }
+        if self.NFNNOMAMNAA != 0 {
+            os.write_uint32(12, self.NFNNOMAMNAA)?;
+        }
+        for (k, v) in &self.JBFJGEIGGBA {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(114)?; // Tag.
+            os.write_raw_varint32(50)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
-        if self.IKPLEKFLPFF != 0 {
-            os.write_uint32(6, self.IKPLEKFLPFF)?;
-        }
-        if self.JFIPNOAJNJM != 0 {
-            os.write_uint32(1, self.JFIPNOAJNJM)?;
-        }
-        if self.miracle_id != 0 {
-            os.write_uint32(12, self.miracle_id)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -202,11 +202,11 @@ impl ::protobuf::Message for RogueMiracleDataInfo {
     }
 
     fn clear(&mut self) {
-        self.ODFNOGMKDOA = 0;
-        self.DFKPIBCLGOP.clear();
-        self.IKPLEKFLPFF = 0;
-        self.JFIPNOAJNJM = 0;
+        self.KABNOGFDKFI = 0;
+        self.NDPAMBJKKFD = 0;
         self.miracle_id = 0;
+        self.NFNNOMAMNAA = 0;
+        self.JBFJGEIGGBA.clear();
         self.special_fields.clear();
     }
 
@@ -235,11 +235,11 @@ impl ::protobuf::reflect::ProtobufValue for RogueMiracleDataInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aRogueMiracleDataInfo.proto\"\xa5\x02\n\x14RogueMiracleDataInfo\x12\
-    \x20\n\x0bODFNOGMKDOA\x18\t\x20\x01(\rR\x0bODFNOGMKDOA\x12H\n\x0bDFKPIBC\
-    LGOP\x18\x0e\x20\x03(\x0b2&.RogueMiracleDataInfo.DFKPIBCLGOPEntryR\x0bDF\
-    KPIBCLGOP\x12\x20\n\x0bIKPLEKFLPFF\x18\x06\x20\x01(\rR\x0bIKPLEKFLPFF\
-    \x12\x20\n\x0bJFIPNOAJNJM\x18\x01\x20\x01(\rR\x0bJFIPNOAJNJM\x12\x1d\n\n\
-    miracle_id\x18\x0c\x20\x01(\rR\tmiracleId\x1a>\n\x10DFKPIBCLGOPEntry\x12\
+    \x20\n\x0bKABNOGFDKFI\x18\x02\x20\x01(\rR\x0bKABNOGFDKFI\x12\x20\n\x0bND\
+    PAMBJKKFD\x18\t\x20\x01(\rR\x0bNDPAMBJKKFD\x12\x1d\n\nmiracle_id\x18\n\
+    \x20\x01(\rR\tmiracleId\x12\x20\n\x0bNFNNOMAMNAA\x18\x0c\x20\x01(\rR\x0b\
+    NFNNOMAMNAA\x12H\n\x0bJBFJGEIGGBA\x18\x06\x20\x03(\x0b2&.RogueMiracleDat\
+    aInfo.JBFJGEIGGBAEntryR\x0bJBFJGEIGGBA\x1a>\n\x10JBFJGEIGGBAEntry\x12\
     \x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\
     \x01(\rR\x05value:\x028\x01B\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";

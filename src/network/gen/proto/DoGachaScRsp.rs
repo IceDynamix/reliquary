@@ -104,16 +104,16 @@ impl ::protobuf::Message for DoGachaScRsp {
                 80 => {
                     self.gacha_id = is.read_uint32()?;
                 },
-                32 => {
+                24 => {
                     self.ceiling_num = is.read_uint32()?;
                 },
-                64 => {
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
-                96 => {
+                64 => {
                     self.gacha_num = is.read_uint32()?;
                 },
-                10 => {
+                18 => {
                     self.gacha_item_list.push(is.read_message()?);
                 },
                 tag => {
@@ -132,13 +132,13 @@ impl ::protobuf::Message for DoGachaScRsp {
             my_size += ::protobuf::rt::uint32_size(10, self.gacha_id);
         }
         if self.ceiling_num != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.ceiling_num);
+            my_size += ::protobuf::rt::uint32_size(3, self.ceiling_num);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         if self.gacha_num != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.gacha_num);
+            my_size += ::protobuf::rt::uint32_size(8, self.gacha_num);
         }
         for value in &self.gacha_item_list {
             let len = value.compute_size();
@@ -154,16 +154,16 @@ impl ::protobuf::Message for DoGachaScRsp {
             os.write_uint32(10, self.gacha_id)?;
         }
         if self.ceiling_num != 0 {
-            os.write_uint32(4, self.ceiling_num)?;
+            os.write_uint32(3, self.ceiling_num)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
         if self.gacha_num != 0 {
-            os.write_uint32(12, self.gacha_num)?;
+            os.write_uint32(8, self.gacha_num)?;
         }
         for v in &self.gacha_item_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -223,9 +223,9 @@ impl ::protobuf::reflect::ProtobufValue for DoGachaScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12DoGachaScRsp.proto\x1a\x0fGachaItem.proto\"\xb5\x01\n\x0cDoGachaSc\
     Rsp\x12\x19\n\x08gacha_id\x18\n\x20\x01(\rR\x07gachaId\x12\x1f\n\x0bceil\
-    ing_num\x18\x04\x20\x01(\rR\nceilingNum\x12\x18\n\x07retcode\x18\x08\x20\
-    \x01(\rR\x07retcode\x12\x1b\n\tgacha_num\x18\x0c\x20\x01(\rR\x08gachaNum\
-    \x122\n\x0fgacha_item_list\x18\x01\x20\x03(\x0b2\n.GachaItemR\rgachaItem\
+    ing_num\x18\x03\x20\x01(\rR\nceilingNum\x12\x18\n\x07retcode\x18\x0e\x20\
+    \x01(\rR\x07retcode\x12\x1b\n\tgacha_num\x18\x08\x20\x01(\rR\x08gachaNum\
+    \x122\n\x0fgacha_item_list\x18\x02\x20\x03(\x0b2\n.GachaItemR\rgachaItem\
     ListB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

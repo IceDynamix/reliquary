@@ -87,13 +87,13 @@ impl ::protobuf::Message for RefreshTriggerByClientScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                90 => {
                     self.trigger_name = is.read_string()?;
                 },
-                34 => {
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.trigger_target_id_list)?;
                 },
-                32 => {
+                96 => {
                     self.trigger_target_id_list.push(is.read_uint32()?);
                 },
                 104 => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for RefreshTriggerByClientScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.trigger_name.is_empty() {
-            my_size += ::protobuf::rt::string_size(9, &self.trigger_name);
+            my_size += ::protobuf::rt::string_size(11, &self.trigger_name);
         }
         for value in &self.trigger_target_id_list {
-            my_size += ::protobuf::rt::uint32_size(4, *value);
+            my_size += ::protobuf::rt::uint32_size(12, *value);
         };
         if self.trigger_entity_id != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.trigger_entity_id);
@@ -127,10 +127,10 @@ impl ::protobuf::Message for RefreshTriggerByClientScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.trigger_name.is_empty() {
-            os.write_string(9, &self.trigger_name)?;
+            os.write_string(11, &self.trigger_name)?;
         }
         for v in &self.trigger_target_id_list {
-            os.write_uint32(4, *v)?;
+            os.write_uint32(12, *v)?;
         };
         if self.trigger_entity_id != 0 {
             os.write_uint32(13, self.trigger_entity_id)?;
@@ -188,8 +188,8 @@ impl ::protobuf::reflect::ProtobufValue for RefreshTriggerByClientScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$RefreshTriggerByClientScNotify.proto\"\xa4\x01\n\x1eRefreshTriggerByC\
-    lientScNotify\x12!\n\x0ctrigger_name\x18\t\x20\x01(\tR\x0btriggerName\
-    \x123\n\x16trigger_target_id_list\x18\x04\x20\x03(\rR\x13triggerTargetId\
+    lientScNotify\x12!\n\x0ctrigger_name\x18\x0b\x20\x01(\tR\x0btriggerName\
+    \x123\n\x16trigger_target_id_list\x18\x0c\x20\x03(\rR\x13triggerTargetId\
     List\x12*\n\x11trigger_entity_id\x18\r\x20\x01(\rR\x0ftriggerEntityIdB\
     \x15\n\x13emu.lunarcore.protob\x06proto3\
 ";

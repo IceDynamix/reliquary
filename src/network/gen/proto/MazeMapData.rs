@@ -29,20 +29,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MazeMapData {
     // message fields
-    // @@protoc_insertion_point(field:MazeMapData.unlocked_chest_list)
-    pub unlocked_chest_list: ::std::vec::Vec<super::MazeChest::MazeChest>,
     // @@protoc_insertion_point(field:MazeMapData.maze_group_list)
     pub maze_group_list: ::std::vec::Vec<super::MazeGroup::MazeGroup>,
     // @@protoc_insertion_point(field:MazeMapData.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:MazeMapData.maze_prop_list)
-    pub maze_prop_list: ::std::vec::Vec<super::MazeProp::MazeProp>,
+    // @@protoc_insertion_point(field:MazeMapData.unlocked_chest_list)
+    pub unlocked_chest_list: ::std::vec::Vec<super::MazeChest::MazeChest>,
     // @@protoc_insertion_point(field:MazeMapData.lighten_section_list)
     pub lighten_section_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MazeMapData.maze_prop_list)
+    pub maze_prop_list: ::std::vec::Vec<super::MazeProp::MazeProp>,
     // @@protoc_insertion_point(field:MazeMapData.unlocked_teleport_list)
     pub unlocked_teleport_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:MazeMapData.cur_map_entry_id)
-    pub cur_map_entry_id: u32,
+    // @@protoc_insertion_point(field:MazeMapData.content_id)
+    pub content_id: u32,
     // @@protoc_insertion_point(field:MazeMapData.entry_id)
     pub entry_id: u32,
     // special fields
@@ -65,11 +65,6 @@ impl MazeMapData {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "unlocked_chest_list",
-            |m: &MazeMapData| { &m.unlocked_chest_list },
-            |m: &mut MazeMapData| { &mut m.unlocked_chest_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "maze_group_list",
             |m: &MazeMapData| { &m.maze_group_list },
             |m: &mut MazeMapData| { &mut m.maze_group_list },
@@ -80,9 +75,9 @@ impl MazeMapData {
             |m: &mut MazeMapData| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "maze_prop_list",
-            |m: &MazeMapData| { &m.maze_prop_list },
-            |m: &mut MazeMapData| { &mut m.maze_prop_list },
+            "unlocked_chest_list",
+            |m: &MazeMapData| { &m.unlocked_chest_list },
+            |m: &mut MazeMapData| { &mut m.unlocked_chest_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "lighten_section_list",
@@ -90,14 +85,19 @@ impl MazeMapData {
             |m: &mut MazeMapData| { &mut m.lighten_section_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "maze_prop_list",
+            |m: &MazeMapData| { &m.maze_prop_list },
+            |m: &mut MazeMapData| { &mut m.maze_prop_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "unlocked_teleport_list",
             |m: &MazeMapData| { &m.unlocked_teleport_list },
             |m: &mut MazeMapData| { &mut m.unlocked_teleport_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cur_map_entry_id",
-            |m: &MazeMapData| { &m.cur_map_entry_id },
-            |m: &mut MazeMapData| { &mut m.cur_map_entry_id },
+            "content_id",
+            |m: &MazeMapData| { &m.content_id },
+            |m: &mut MazeMapData| { &mut m.content_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "entry_id",
@@ -122,34 +122,34 @@ impl ::protobuf::Message for MazeMapData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    self.unlocked_chest_list.push(is.read_message()?);
-                },
-                114 => {
+                90 => {
                     self.maze_group_list.push(is.read_message()?);
                 },
-                8 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
                 26 => {
-                    self.maze_prop_list.push(is.read_message()?);
+                    self.unlocked_chest_list.push(is.read_message()?);
                 },
-                98 => {
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.lighten_section_list)?;
                 },
-                96 => {
+                40 => {
                     self.lighten_section_list.push(is.read_uint32()?);
                 },
-                82 => {
+                50 => {
+                    self.maze_prop_list.push(is.read_message()?);
+                },
+                114 => {
                     is.read_repeated_packed_uint32_into(&mut self.unlocked_teleport_list)?;
                 },
-                80 => {
+                112 => {
                     self.unlocked_teleport_list.push(is.read_uint32()?);
                 },
-                16 => {
-                    self.cur_map_entry_id = is.read_uint32()?;
+                8 => {
+                    self.content_id = is.read_uint32()?;
                 },
-                40 => {
+                32 => {
                     self.entry_id = is.read_uint32()?;
                 },
                 tag => {
@@ -164,32 +164,32 @@ impl ::protobuf::Message for MazeMapData {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.unlocked_chest_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         for value in &self.maze_group_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
-        for value in &self.maze_prop_list {
+        for value in &self.unlocked_chest_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         for value in &self.lighten_section_list {
-            my_size += ::protobuf::rt::uint32_size(12, *value);
+            my_size += ::protobuf::rt::uint32_size(5, *value);
+        };
+        for value in &self.maze_prop_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         for value in &self.unlocked_teleport_list {
-            my_size += ::protobuf::rt::uint32_size(10, *value);
+            my_size += ::protobuf::rt::uint32_size(14, *value);
         };
-        if self.cur_map_entry_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.cur_map_entry_id);
+        if self.content_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.content_id);
         }
         if self.entry_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.entry_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.entry_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -197,29 +197,29 @@ impl ::protobuf::Message for MazeMapData {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.unlocked_chest_list {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
         for v in &self.maze_group_list {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
-        for v in &self.maze_prop_list {
+        for v in &self.unlocked_chest_list {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         for v in &self.lighten_section_list {
-            os.write_uint32(12, *v)?;
+            os.write_uint32(5, *v)?;
+        };
+        for v in &self.maze_prop_list {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
         for v in &self.unlocked_teleport_list {
-            os.write_uint32(10, *v)?;
+            os.write_uint32(14, *v)?;
         };
-        if self.cur_map_entry_id != 0 {
-            os.write_uint32(2, self.cur_map_entry_id)?;
+        if self.content_id != 0 {
+            os.write_uint32(1, self.content_id)?;
         }
         if self.entry_id != 0 {
-            os.write_uint32(5, self.entry_id)?;
+            os.write_uint32(4, self.entry_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -238,26 +238,26 @@ impl ::protobuf::Message for MazeMapData {
     }
 
     fn clear(&mut self) {
-        self.unlocked_chest_list.clear();
         self.maze_group_list.clear();
         self.retcode = 0;
-        self.maze_prop_list.clear();
+        self.unlocked_chest_list.clear();
         self.lighten_section_list.clear();
+        self.maze_prop_list.clear();
         self.unlocked_teleport_list.clear();
-        self.cur_map_entry_id = 0;
+        self.content_id = 0;
         self.entry_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MazeMapData {
         static instance: MazeMapData = MazeMapData {
-            unlocked_chest_list: ::std::vec::Vec::new(),
             maze_group_list: ::std::vec::Vec::new(),
             retcode: 0,
-            maze_prop_list: ::std::vec::Vec::new(),
+            unlocked_chest_list: ::std::vec::Vec::new(),
             lighten_section_list: ::std::vec::Vec::new(),
+            maze_prop_list: ::std::vec::Vec::new(),
             unlocked_teleport_list: ::std::vec::Vec::new(),
-            cur_map_entry_id: 0,
+            content_id: 0,
             entry_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -284,15 +284,15 @@ impl ::protobuf::reflect::ProtobufValue for MazeMapData {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MazeMapData.proto\x1a\x0fMazeGroup.proto\x1a\x0fMazeChest.proto\
-    \x1a\x0eMazeProp.proto\"\xf4\x02\n\x0bMazeMapData\x12:\n\x13unlocked_che\
-    st_list\x18\t\x20\x03(\x0b2\n.MazeChestR\x11unlockedChestList\x122\n\x0f\
-    maze_group_list\x18\x0e\x20\x03(\x0b2\n.MazeGroupR\rmazeGroupList\x12\
-    \x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12/\n\x0emaze_prop_lis\
-    t\x18\x03\x20\x03(\x0b2\t.MazePropR\x0cmazePropList\x120\n\x14lighten_se\
-    ction_list\x18\x0c\x20\x03(\rR\x12lightenSectionList\x124\n\x16unlocked_\
-    teleport_list\x18\n\x20\x03(\rR\x14unlockedTeleportList\x12'\n\x10cur_ma\
-    p_entry_id\x18\x02\x20\x01(\rR\rcurMapEntryId\x12\x19\n\x08entry_id\x18\
-    \x05\x20\x01(\rR\x07entryIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \x1a\x0eMazeProp.proto\"\xea\x02\n\x0bMazeMapData\x122\n\x0fmaze_group_l\
+    ist\x18\x0b\x20\x03(\x0b2\n.MazeGroupR\rmazeGroupList\x12\x18\n\x07retco\
+    de\x18\x07\x20\x01(\rR\x07retcode\x12:\n\x13unlocked_chest_list\x18\x03\
+    \x20\x03(\x0b2\n.MazeChestR\x11unlockedChestList\x120\n\x14lighten_secti\
+    on_list\x18\x05\x20\x03(\rR\x12lightenSectionList\x12/\n\x0emaze_prop_li\
+    st\x18\x06\x20\x03(\x0b2\t.MazePropR\x0cmazePropList\x124\n\x16unlocked_\
+    teleport_list\x18\x0e\x20\x03(\rR\x14unlockedTeleportList\x12\x1d\n\ncon\
+    tent_id\x18\x01\x20\x01(\rR\tcontentId\x12\x19\n\x08entry_id\x18\x04\x20\
+    \x01(\rR\x07entryIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

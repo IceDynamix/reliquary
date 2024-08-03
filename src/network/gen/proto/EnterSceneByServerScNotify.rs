@@ -87,13 +87,13 @@ impl ::protobuf::Message for EnterSceneByServerScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
-                40 => {
+                8 => {
                     self.reason = is.read_enum_or_unknown()?;
                 },
-                66 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
                 },
                 tag => {
@@ -113,7 +113,7 @@ impl ::protobuf::Message for EnterSceneByServerScNotify {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.reason != ::protobuf::EnumOrUnknown::new(super::EnterSceneReason::EnterSceneReason::ENTER_SCENE_REASON_NONE) {
-            my_size += ::protobuf::rt::int32_size(5, self.reason.value());
+            my_size += ::protobuf::rt::int32_size(1, self.reason.value());
         }
         if let Some(v) = self.scene.as_ref() {
             let len = v.compute_size();
@@ -126,13 +126,13 @@ impl ::protobuf::Message for EnterSceneByServerScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if self.reason != ::protobuf::EnumOrUnknown::new(super::EnterSceneReason::EnterSceneReason::ENTER_SCENE_REASON_NONE) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.reason))?;
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.reason))?;
         }
         if let Some(v) = self.scene.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -188,10 +188,10 @@ impl ::protobuf::reflect::ProtobufValue for EnterSceneByServerScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20EnterSceneByServerScNotify.proto\x1a\x10LineupInfo.proto\x1a\x16En\
     terSceneReason.proto\x1a\x0fSceneInfo.proto\"\x8e\x01\n\x1aEnterSceneByS\
-    erverScNotify\x12#\n\x06lineup\x18\x03\x20\x01(\x0b2\x0b.LineupInfoR\x06\
-    lineup\x12)\n\x06reason\x18\x05\x20\x01(\x0e2\x11.EnterSceneReasonR\x06r\
-    eason\x12\x20\n\x05scene\x18\x08\x20\x01(\x0b2\n.SceneInfoR\x05sceneB\
-    \x15\n\x13emu.lunarcore.protob\x06proto3\
+    erverScNotify\x12#\n\x06lineup\x18\x07\x20\x01(\x0b2\x0b.LineupInfoR\x06\
+    lineup\x12)\n\x06reason\x18\x01\x20\x01(\x0e2\x11.EnterSceneReasonR\x06r\
+    eason\x12\x20\n\x05scene\x18\n\x20\x01(\x0b2\n.SceneInfoR\x05sceneB\x15\
+    \n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

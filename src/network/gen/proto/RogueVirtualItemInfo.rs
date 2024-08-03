@@ -73,7 +73,7 @@ impl ::protobuf::Message for RogueVirtualItemInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                24 => {
                     self.rogue_coin = is.read_uint32()?;
                 },
                 tag => {
@@ -89,7 +89,7 @@ impl ::protobuf::Message for RogueVirtualItemInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.rogue_coin != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.rogue_coin);
+            my_size += ::protobuf::rt::uint32_size(3, self.rogue_coin);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -98,7 +98,7 @@ impl ::protobuf::Message for RogueVirtualItemInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.rogue_coin != 0 {
-            os.write_uint32(8, self.rogue_coin)?;
+            os.write_uint32(3, self.rogue_coin)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueVirtualItemInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aRogueVirtualItemInfo.proto\"5\n\x14RogueVirtualItemInfo\x12\x1d\n\
-    \nrogue_coin\x18\x08\x20\x01(\rR\trogueCoinB\x15\n\x13emu.lunarcore.prot\
+    \nrogue_coin\x18\x03\x20\x01(\rR\trogueCoinB\x15\n\x13emu.lunarcore.prot\
     ob\x06proto3\
 ";
 

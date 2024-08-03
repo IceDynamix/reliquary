@@ -87,13 +87,13 @@ impl ::protobuf::Message for Mission {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                64 => {
                     self.progress = is.read_uint32()?;
                 },
-                40 => {
+                16 => {
                     self.id = is.read_uint32()?;
                 },
-                48 => {
+                8 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -109,13 +109,13 @@ impl ::protobuf::Message for Mission {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.progress);
+            my_size += ::protobuf::rt::uint32_size(8, self.progress);
         }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.id);
+            my_size += ::protobuf::rt::uint32_size(2, self.id);
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::MissionStatus::MissionStatus::MISSION_NONE) {
-            my_size += ::protobuf::rt::int32_size(6, self.status.value());
+            my_size += ::protobuf::rt::int32_size(1, self.status.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for Mission {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.progress != 0 {
-            os.write_uint32(11, self.progress)?;
+            os.write_uint32(8, self.progress)?;
         }
         if self.id != 0 {
-            os.write_uint32(5, self.id)?;
+            os.write_uint32(2, self.id)?;
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::MissionStatus::MissionStatus::MISSION_NONE) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.status))?;
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,8 +185,8 @@ impl ::protobuf::reflect::ProtobufValue for Mission {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\rMission.proto\x1a\x13MissionStatus.proto\"]\n\x07Mission\x12\x1a\n\
-    \x08progress\x18\x0b\x20\x01(\rR\x08progress\x12\x0e\n\x02id\x18\x05\x20\
-    \x01(\rR\x02id\x12&\n\x06status\x18\x06\x20\x01(\x0e2\x0e.MissionStatusR\
+    \x08progress\x18\x08\x20\x01(\rR\x08progress\x12\x0e\n\x02id\x18\x02\x20\
+    \x01(\rR\x02id\x12&\n\x06status\x18\x01\x20\x01(\x0e2\x0e.MissionStatusR\
     \x06statusB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

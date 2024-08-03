@@ -114,16 +114,16 @@ impl ::protobuf::Message for LineupAvatar {
                 104 => {
                     self.slot = is.read_uint32()?;
                 },
-                64 => {
+                72 => {
                     self.satiety = is.read_uint32()?;
                 },
-                40 => {
+                16 => {
                     self.hp = is.read_uint32()?;
                 },
-                120 => {
+                88 => {
                     self.id = is.read_uint32()?;
                 },
-                90 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.sp_bar)?;
                 },
                 tag => {
@@ -145,13 +145,13 @@ impl ::protobuf::Message for LineupAvatar {
             my_size += ::protobuf::rt::uint32_size(13, self.slot);
         }
         if self.satiety != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.satiety);
+            my_size += ::protobuf::rt::uint32_size(9, self.satiety);
         }
         if self.hp != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.hp);
+            my_size += ::protobuf::rt::uint32_size(2, self.hp);
         }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.id);
+            my_size += ::protobuf::rt::uint32_size(11, self.id);
         }
         if let Some(v) = self.sp_bar.as_ref() {
             let len = v.compute_size();
@@ -170,16 +170,16 @@ impl ::protobuf::Message for LineupAvatar {
             os.write_uint32(13, self.slot)?;
         }
         if self.satiety != 0 {
-            os.write_uint32(8, self.satiety)?;
+            os.write_uint32(9, self.satiety)?;
         }
         if self.hp != 0 {
-            os.write_uint32(5, self.hp)?;
+            os.write_uint32(2, self.hp)?;
         }
         if self.id != 0 {
-            os.write_uint32(15, self.id)?;
+            os.write_uint32(11, self.id)?;
         }
         if let Some(v) = self.sp_bar.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -242,9 +242,9 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12LineupAvatar.proto\x1a\x10AvatarType.proto\x1a\x0fSpBarInfo.proto\
     \"\xad\x01\n\x0cLineupAvatar\x12,\n\x0bavatar_type\x18\x0c\x20\x01(\x0e2\
     \x0b.AvatarTypeR\navatarType\x12\x12\n\x04slot\x18\r\x20\x01(\rR\x04slot\
-    \x12\x18\n\x07satiety\x18\x08\x20\x01(\rR\x07satiety\x12\x0e\n\x02hp\x18\
-    \x05\x20\x01(\rR\x02hp\x12\x0e\n\x02id\x18\x0f\x20\x01(\rR\x02id\x12!\n\
-    \x06sp_bar\x18\x0b\x20\x01(\x0b2\n.SpBarInfoR\x05spBarB\x15\n\x13emu.lun\
+    \x12\x18\n\x07satiety\x18\t\x20\x01(\rR\x07satiety\x12\x0e\n\x02hp\x18\
+    \x02\x20\x01(\rR\x02hp\x12\x0e\n\x02id\x18\x0b\x20\x01(\rR\x02id\x12!\n\
+    \x06sp_bar\x18\x07\x20\x01(\x0b2\n.SpBarInfoR\x05spBarB\x15\n\x13emu.lun\
     arcore.protob\x06proto3\
 ";
 

@@ -33,10 +33,10 @@ pub struct NpcRogueInfo {
     pub rogue_npc_id: u32,
     // @@protoc_insertion_point(field:NpcRogueInfo.finish_dialogue)
     pub finish_dialogue: bool,
-    // @@protoc_insertion_point(field:NpcRogueInfo.AAHKFINCBIL)
-    pub AAHKFINCBIL: bool,
-    // @@protoc_insertion_point(field:NpcRogueInfo.LCKILOCIFJH)
-    pub LCKILOCIFJH: bool,
+    // @@protoc_insertion_point(field:NpcRogueInfo.JFCBEHNMGNO)
+    pub JFCBEHNMGNO: bool,
+    // @@protoc_insertion_point(field:NpcRogueInfo.CLFMCIDHJLM)
+    pub CLFMCIDHJLM: bool,
     // @@protoc_insertion_point(field:NpcRogueInfo.dialogue_group_id)
     pub dialogue_group_id: u32,
     // special fields
@@ -69,14 +69,14 @@ impl NpcRogueInfo {
             |m: &mut NpcRogueInfo| { &mut m.finish_dialogue },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AAHKFINCBIL",
-            |m: &NpcRogueInfo| { &m.AAHKFINCBIL },
-            |m: &mut NpcRogueInfo| { &mut m.AAHKFINCBIL },
+            "JFCBEHNMGNO",
+            |m: &NpcRogueInfo| { &m.JFCBEHNMGNO },
+            |m: &mut NpcRogueInfo| { &mut m.JFCBEHNMGNO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LCKILOCIFJH",
-            |m: &NpcRogueInfo| { &m.LCKILOCIFJH },
-            |m: &mut NpcRogueInfo| { &mut m.LCKILOCIFJH },
+            "CLFMCIDHJLM",
+            |m: &NpcRogueInfo| { &m.CLFMCIDHJLM },
+            |m: &mut NpcRogueInfo| { &mut m.CLFMCIDHJLM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "dialogue_group_id",
@@ -101,19 +101,19 @@ impl ::protobuf::Message for NpcRogueInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                88 => {
                     self.rogue_npc_id = is.read_uint32()?;
                 },
-                80 => {
+                72 => {
                     self.finish_dialogue = is.read_bool()?;
                 },
-                56 => {
-                    self.AAHKFINCBIL = is.read_bool()?;
+                8 => {
+                    self.JFCBEHNMGNO = is.read_bool()?;
                 },
                 120 => {
-                    self.LCKILOCIFJH = is.read_bool()?;
+                    self.CLFMCIDHJLM = is.read_bool()?;
                 },
-                16 => {
+                96 => {
                     self.dialogue_group_id = is.read_uint32()?;
                 },
                 tag => {
@@ -129,19 +129,19 @@ impl ::protobuf::Message for NpcRogueInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.rogue_npc_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.rogue_npc_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.rogue_npc_id);
         }
         if self.finish_dialogue != false {
             my_size += 1 + 1;
         }
-        if self.AAHKFINCBIL != false {
+        if self.JFCBEHNMGNO != false {
             my_size += 1 + 1;
         }
-        if self.LCKILOCIFJH != false {
+        if self.CLFMCIDHJLM != false {
             my_size += 1 + 1;
         }
         if self.dialogue_group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.dialogue_group_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.dialogue_group_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,19 +150,19 @@ impl ::protobuf::Message for NpcRogueInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.rogue_npc_id != 0 {
-            os.write_uint32(8, self.rogue_npc_id)?;
+            os.write_uint32(11, self.rogue_npc_id)?;
         }
         if self.finish_dialogue != false {
-            os.write_bool(10, self.finish_dialogue)?;
+            os.write_bool(9, self.finish_dialogue)?;
         }
-        if self.AAHKFINCBIL != false {
-            os.write_bool(7, self.AAHKFINCBIL)?;
+        if self.JFCBEHNMGNO != false {
+            os.write_bool(1, self.JFCBEHNMGNO)?;
         }
-        if self.LCKILOCIFJH != false {
-            os.write_bool(15, self.LCKILOCIFJH)?;
+        if self.CLFMCIDHJLM != false {
+            os.write_bool(15, self.CLFMCIDHJLM)?;
         }
         if self.dialogue_group_id != 0 {
-            os.write_uint32(2, self.dialogue_group_id)?;
+            os.write_uint32(12, self.dialogue_group_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,8 +183,8 @@ impl ::protobuf::Message for NpcRogueInfo {
     fn clear(&mut self) {
         self.rogue_npc_id = 0;
         self.finish_dialogue = false;
-        self.AAHKFINCBIL = false;
-        self.LCKILOCIFJH = false;
+        self.JFCBEHNMGNO = false;
+        self.CLFMCIDHJLM = false;
         self.dialogue_group_id = 0;
         self.special_fields.clear();
     }
@@ -193,8 +193,8 @@ impl ::protobuf::Message for NpcRogueInfo {
         static instance: NpcRogueInfo = NpcRogueInfo {
             rogue_npc_id: 0,
             finish_dialogue: false,
-            AAHKFINCBIL: false,
-            LCKILOCIFJH: false,
+            JFCBEHNMGNO: false,
+            CLFMCIDHJLM: false,
             dialogue_group_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -221,10 +221,10 @@ impl ::protobuf::reflect::ProtobufValue for NpcRogueInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12NpcRogueInfo.proto\"\xc9\x01\n\x0cNpcRogueInfo\x12\x20\n\x0crogue_\
-    npc_id\x18\x08\x20\x01(\rR\nrogueNpcId\x12'\n\x0ffinish_dialogue\x18\n\
-    \x20\x01(\x08R\x0efinishDialogue\x12\x20\n\x0bAAHKFINCBIL\x18\x07\x20\
-    \x01(\x08R\x0bAAHKFINCBIL\x12\x20\n\x0bLCKILOCIFJH\x18\x0f\x20\x01(\x08R\
-    \x0bLCKILOCIFJH\x12*\n\x11dialogue_group_id\x18\x02\x20\x01(\rR\x0fdialo\
+    npc_id\x18\x0b\x20\x01(\rR\nrogueNpcId\x12'\n\x0ffinish_dialogue\x18\t\
+    \x20\x01(\x08R\x0efinishDialogue\x12\x20\n\x0bJFCBEHNMGNO\x18\x01\x20\
+    \x01(\x08R\x0bJFCBEHNMGNO\x12\x20\n\x0bCLFMCIDHJLM\x18\x0f\x20\x01(\x08R\
+    \x0bCLFMCIDHJLM\x12*\n\x11dialogue_group_id\x18\x0c\x20\x01(\rR\x0fdialo\
     gueGroupIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

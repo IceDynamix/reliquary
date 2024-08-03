@@ -87,13 +87,13 @@ impl ::protobuf::Message for SceneCastSkillCostMpCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                120 => {
                     self.skill_index = is.read_uint32()?;
                 },
-                96 => {
+                80 => {
                     self.attacked_group_id = is.read_uint32()?;
                 },
-                32 => {
+                16 => {
                     self.caster_id = is.read_uint32()?;
                 },
                 tag => {
@@ -109,13 +109,13 @@ impl ::protobuf::Message for SceneCastSkillCostMpCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.skill_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.skill_index);
+            my_size += ::protobuf::rt::uint32_size(15, self.skill_index);
         }
         if self.attacked_group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.attacked_group_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.attacked_group_id);
         }
         if self.caster_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.caster_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.caster_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for SceneCastSkillCostMpCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.skill_index != 0 {
-            os.write_uint32(1, self.skill_index)?;
+            os.write_uint32(15, self.skill_index)?;
         }
         if self.attacked_group_id != 0 {
-            os.write_uint32(12, self.attacked_group_id)?;
+            os.write_uint32(10, self.attacked_group_id)?;
         }
         if self.caster_id != 0 {
-            os.write_uint32(4, self.caster_id)?;
+            os.write_uint32(2, self.caster_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for SceneCastSkillCostMpCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fSceneCastSkillCostMpCsReq.proto\"\x85\x01\n\x19SceneCastSkillCostM\
-    pCsReq\x12\x1f\n\x0bskill_index\x18\x01\x20\x01(\rR\nskillIndex\x12*\n\
-    \x11attacked_group_id\x18\x0c\x20\x01(\rR\x0fattackedGroupId\x12\x1b\n\t\
-    caster_id\x18\x04\x20\x01(\rR\x08casterIdB\x15\n\x13emu.lunarcore.protob\
+    pCsReq\x12\x1f\n\x0bskill_index\x18\x0f\x20\x01(\rR\nskillIndex\x12*\n\
+    \x11attacked_group_id\x18\n\x20\x01(\rR\x0fattackedGroupId\x12\x1b\n\tca\
+    ster_id\x18\x02\x20\x01(\rR\x08casterIdB\x15\n\x13emu.lunarcore.protob\
     \x06proto3\
 ";
 

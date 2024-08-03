@@ -94,16 +94,16 @@ impl ::protobuf::Message for EnterRogueMapRoomScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
-                24 => {
+                80 => {
                     self.cur_site_id = is.read_uint32()?;
                 },
-                58 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
                 },
-                80 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -123,14 +123,14 @@ impl ::protobuf::Message for EnterRogueMapRoomScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.cur_site_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.cur_site_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.cur_site_id);
         }
         if let Some(v) = self.scene.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -139,16 +139,16 @@ impl ::protobuf::Message for EnterRogueMapRoomScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if self.cur_site_id != 0 {
-            os.write_uint32(3, self.cur_site_id)?;
+            os.write_uint32(10, self.cur_site_id)?;
         }
         if let Some(v) = self.scene.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -205,11 +205,11 @@ impl ::protobuf::reflect::ProtobufValue for EnterRogueMapRoomScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cEnterRogueMapRoomScRsp.proto\x1a\x10LineupInfo.proto\x1a\x0fSceneI\
-    nfo.proto\"\x99\x01\n\x16EnterRogueMapRoomScRsp\x12#\n\x06lineup\x18\x05\
-    \x20\x01(\x0b2\x0b.LineupInfoR\x06lineup\x12\x1e\n\x0bcur_site_id\x18\
-    \x03\x20\x01(\rR\tcurSiteId\x12\x20\n\x05scene\x18\x07\x20\x01(\x0b2\n.S\
-    ceneInfoR\x05scene\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcodeB\
-    \x15\n\x13emu.lunarcore.protob\x06proto3\
+    nfo.proto\"\x99\x01\n\x16EnterRogueMapRoomScRsp\x12#\n\x06lineup\x18\x0f\
+    \x20\x01(\x0b2\x0b.LineupInfoR\x06lineup\x12\x1e\n\x0bcur_site_id\x18\n\
+    \x20\x01(\rR\tcurSiteId\x12\x20\n\x05scene\x18\r\x20\x01(\x0b2\n.SceneIn\
+    foR\x05scene\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcodeB\x15\n\
+    \x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -31,12 +31,12 @@ pub struct ChallengeBossInfo {
     // message fields
     // @@protoc_insertion_point(field:ChallengeBossInfo.first_node)
     pub first_node: ::protobuf::MessageField<super::ChallengeBossSingleNodeInfo::ChallengeBossSingleNodeInfo>,
-    // @@protoc_insertion_point(field:ChallengeBossInfo.lineup1)
-    pub lineup1: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ChallengeBossInfo.second_node)
     pub second_node: ::protobuf::MessageField<super::ChallengeBossSingleNodeInfo::ChallengeBossSingleNodeInfo>,
-    // @@protoc_insertion_point(field:ChallengeBossInfo.PPNAGBNIOAO)
-    pub PPNAGBNIOAO: bool,
+    // @@protoc_insertion_point(field:ChallengeBossInfo.lineup1)
+    pub lineup1: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ChallengeBossInfo.ACGHCDLBCGD)
+    pub ACGHCDLBCGD: bool,
     // @@protoc_insertion_point(field:ChallengeBossInfo.lineup2)
     pub lineup2: ::std::vec::Vec<u32>,
     // special fields
@@ -63,20 +63,20 @@ impl ChallengeBossInfo {
             |m: &ChallengeBossInfo| { &m.first_node },
             |m: &mut ChallengeBossInfo| { &mut m.first_node },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "lineup1",
-            |m: &ChallengeBossInfo| { &m.lineup1 },
-            |m: &mut ChallengeBossInfo| { &mut m.lineup1 },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengeBossSingleNodeInfo::ChallengeBossSingleNodeInfo>(
             "second_node",
             |m: &ChallengeBossInfo| { &m.second_node },
             |m: &mut ChallengeBossInfo| { &mut m.second_node },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "lineup1",
+            |m: &ChallengeBossInfo| { &m.lineup1 },
+            |m: &mut ChallengeBossInfo| { &mut m.lineup1 },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PPNAGBNIOAO",
-            |m: &ChallengeBossInfo| { &m.PPNAGBNIOAO },
-            |m: &mut ChallengeBossInfo| { &mut m.PPNAGBNIOAO },
+            "ACGHCDLBCGD",
+            |m: &ChallengeBossInfo| { &m.ACGHCDLBCGD },
+            |m: &mut ChallengeBossInfo| { &mut m.ACGHCDLBCGD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "lineup2",
@@ -101,20 +101,20 @@ impl ::protobuf::Message for ChallengeBossInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.first_node)?;
                 },
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.lineup1)?;
-                },
-                104 => {
-                    self.lineup1.push(is.read_uint32()?);
-                },
-                98 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.second_node)?;
                 },
-                80 => {
-                    self.PPNAGBNIOAO = is.read_bool()?;
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.lineup1)?;
+                },
+                88 => {
+                    self.lineup1.push(is.read_uint32()?);
+                },
+                112 => {
+                    self.ACGHCDLBCGD = is.read_bool()?;
                 },
                 18 => {
                     is.read_repeated_packed_uint32_into(&mut self.lineup2)?;
@@ -138,14 +138,14 @@ impl ::protobuf::Message for ChallengeBossInfo {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        for value in &self.lineup1 {
-            my_size += ::protobuf::rt::uint32_size(13, *value);
-        };
         if let Some(v) = self.second_node.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.PPNAGBNIOAO != false {
+        for value in &self.lineup1 {
+            my_size += ::protobuf::rt::uint32_size(11, *value);
+        };
+        if self.ACGHCDLBCGD != false {
             my_size += 1 + 1;
         }
         for value in &self.lineup2 {
@@ -158,16 +158,16 @@ impl ::protobuf::Message for ChallengeBossInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.first_node.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
+        if let Some(v) = self.second_node.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         for v in &self.lineup1 {
-            os.write_uint32(13, *v)?;
+            os.write_uint32(11, *v)?;
         };
-        if let Some(v) = self.second_node.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        }
-        if self.PPNAGBNIOAO != false {
-            os.write_bool(10, self.PPNAGBNIOAO)?;
+        if self.ACGHCDLBCGD != false {
+            os.write_bool(14, self.ACGHCDLBCGD)?;
         }
         for v in &self.lineup2 {
             os.write_uint32(2, *v)?;
@@ -190,9 +190,9 @@ impl ::protobuf::Message for ChallengeBossInfo {
 
     fn clear(&mut self) {
         self.first_node.clear();
-        self.lineup1.clear();
         self.second_node.clear();
-        self.PPNAGBNIOAO = false;
+        self.lineup1.clear();
+        self.ACGHCDLBCGD = false;
         self.lineup2.clear();
         self.special_fields.clear();
     }
@@ -200,9 +200,9 @@ impl ::protobuf::Message for ChallengeBossInfo {
     fn default_instance() -> &'static ChallengeBossInfo {
         static instance: ChallengeBossInfo = ChallengeBossInfo {
             first_node: ::protobuf::MessageField::none(),
-            lineup1: ::std::vec::Vec::new(),
             second_node: ::protobuf::MessageField::none(),
-            PPNAGBNIOAO: false,
+            lineup1: ::std::vec::Vec::new(),
+            ACGHCDLBCGD: false,
             lineup2: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -229,12 +229,12 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeBossInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17ChallengeBossInfo.proto\x1a!ChallengeBossSingleNodeInfo.proto\"\
-    \xe5\x01\n\x11ChallengeBossInfo\x12;\n\nfirst_node\x18\x0f\x20\x01(\x0b2\
-    \x1c.ChallengeBossSingleNodeInfoR\tfirstNode\x12\x18\n\x07lineup1\x18\r\
-    \x20\x03(\rR\x07lineup1\x12=\n\x0bsecond_node\x18\x0c\x20\x01(\x0b2\x1c.\
-    ChallengeBossSingleNodeInfoR\nsecondNode\x12\x20\n\x0bPPNAGBNIOAO\x18\n\
-    \x20\x01(\x08R\x0bPPNAGBNIOAO\x12\x18\n\x07lineup2\x18\x02\x20\x03(\rR\
-    \x07lineup2B\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \xe5\x01\n\x11ChallengeBossInfo\x12;\n\nfirst_node\x18\x01\x20\x01(\x0b2\
+    \x1c.ChallengeBossSingleNodeInfoR\tfirstNode\x12=\n\x0bsecond_node\x18\
+    \x05\x20\x01(\x0b2\x1c.ChallengeBossSingleNodeInfoR\nsecondNode\x12\x18\
+    \n\x07lineup1\x18\x0b\x20\x03(\rR\x07lineup1\x12\x20\n\x0bACGHCDLBCGD\
+    \x18\x0e\x20\x01(\x08R\x0bACGHCDLBCGD\x12\x18\n\x07lineup2\x18\x02\x20\
+    \x03(\rR\x07lineup2B\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

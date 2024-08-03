@@ -87,13 +87,13 @@ impl ::protobuf::Message for EnhanceRogueBuffScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_buff)?;
                 },
-                104 => {
+                24 => {
                     self.is_success = is.read_bool()?;
                 },
-                16 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -116,7 +116,7 @@ impl ::protobuf::Message for EnhanceRogueBuffScRsp {
             my_size += 1 + 1;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,13 +125,13 @@ impl ::protobuf::Message for EnhanceRogueBuffScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.rogue_buff.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if self.is_success != false {
-            os.write_bool(13, self.is_success)?;
+            os.write_bool(3, self.is_success)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,9 +186,9 @@ impl ::protobuf::reflect::ProtobufValue for EnhanceRogueBuffScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bEnhanceRogueBuffScRsp.proto\x1a\x0fRogueBuff.proto\"{\n\x15Enhance\
-    RogueBuffScRsp\x12)\n\nrogue_buff\x18\x0f\x20\x01(\x0b2\n.RogueBuffR\tro\
-    gueBuff\x12\x1d\n\nis_success\x18\r\x20\x01(\x08R\tisSuccess\x12\x18\n\
-    \x07retcode\x18\x02\x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore.proto\
+    RogueBuffScRsp\x12)\n\nrogue_buff\x18\x0b\x20\x01(\x0b2\n.RogueBuffR\tro\
+    gueBuff\x12\x1d\n\nis_success\x18\x03\x20\x01(\x08R\tisSuccess\x12\x18\n\
+    \x07retcode\x18\x08\x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore.proto\
     b\x06proto3\
 ";
 

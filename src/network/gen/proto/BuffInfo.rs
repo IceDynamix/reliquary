@@ -115,10 +115,10 @@ impl ::protobuf::Message for BuffInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                64 => {
                     self.count = is.read_uint32()?;
                 },
-                64 => {
+                120 => {
                     self.add_time_ms = is.read_uint64()?;
                 },
                 34 => {
@@ -136,16 +136,16 @@ impl ::protobuf::Message for BuffInfo {
                     is.pop_limit(old_limit);
                     self.dynamic_values.insert(key, value);
                 },
-                77 => {
+                93 => {
                     self.life_time = is.read_float()?;
                 },
-                112 => {
+                56 => {
                     self.level = is.read_uint32()?;
                 },
-                88 => {
+                40 => {
                     self.base_avatar_id = is.read_uint32()?;
                 },
-                40 => {
+                24 => {
                     self.buff_id = is.read_uint32()?;
                 },
                 tag => {
@@ -161,10 +161,10 @@ impl ::protobuf::Message for BuffInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.count != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.count);
+            my_size += ::protobuf::rt::uint32_size(8, self.count);
         }
         if self.add_time_ms != 0 {
-            my_size += ::protobuf::rt::uint64_size(8, self.add_time_ms);
+            my_size += ::protobuf::rt::uint64_size(15, self.add_time_ms);
         }
         for (k, v) in &self.dynamic_values {
             let mut entry_size = 0;
@@ -176,13 +176,13 @@ impl ::protobuf::Message for BuffInfo {
             my_size += 1 + 4;
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.level);
+            my_size += ::protobuf::rt::uint32_size(7, self.level);
         }
         if self.base_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.base_avatar_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.base_avatar_id);
         }
         if self.buff_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.buff_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.buff_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -191,10 +191,10 @@ impl ::protobuf::Message for BuffInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.count != 0 {
-            os.write_uint32(1, self.count)?;
+            os.write_uint32(8, self.count)?;
         }
         if self.add_time_ms != 0 {
-            os.write_uint64(8, self.add_time_ms)?;
+            os.write_uint64(15, self.add_time_ms)?;
         }
         for (k, v) in &self.dynamic_values {
             let mut entry_size = 0;
@@ -206,16 +206,16 @@ impl ::protobuf::Message for BuffInfo {
             os.write_float(2, *v)?;
         };
         if self.life_time != 0. {
-            os.write_float(9, self.life_time)?;
+            os.write_float(11, self.life_time)?;
         }
         if self.level != 0 {
-            os.write_uint32(14, self.level)?;
+            os.write_uint32(7, self.level)?;
         }
         if self.base_avatar_id != 0 {
-            os.write_uint32(11, self.base_avatar_id)?;
+            os.write_uint32(5, self.base_avatar_id)?;
         }
         if self.buff_id != 0 {
-            os.write_uint32(5, self.buff_id)?;
+            os.write_uint32(3, self.buff_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -268,13 +268,13 @@ impl ::protobuf::reflect::ProtobufValue for BuffInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0eBuffInfo.proto\"\xb9\x02\n\x08BuffInfo\x12\x14\n\x05count\x18\x01\
-    \x20\x01(\rR\x05count\x12\x1e\n\x0badd_time_ms\x18\x08\x20\x01(\x04R\tad\
+    \n\x0eBuffInfo.proto\"\xb9\x02\n\x08BuffInfo\x12\x14\n\x05count\x18\x08\
+    \x20\x01(\rR\x05count\x12\x1e\n\x0badd_time_ms\x18\x0f\x20\x01(\x04R\tad\
     dTimeMs\x12C\n\x0edynamic_values\x18\x04\x20\x03(\x0b2\x1c.BuffInfo.Dyna\
-    micValuesEntryR\rdynamicValues\x12\x1b\n\tlife_time\x18\t\x20\x01(\x02R\
-    \x08lifeTime\x12\x14\n\x05level\x18\x0e\x20\x01(\rR\x05level\x12$\n\x0eb\
-    ase_avatar_id\x18\x0b\x20\x01(\rR\x0cbaseAvatarId\x12\x17\n\x07buff_id\
-    \x18\x05\x20\x01(\rR\x06buffId\x1a@\n\x12DynamicValuesEntry\x12\x10\n\
+    micValuesEntryR\rdynamicValues\x12\x1b\n\tlife_time\x18\x0b\x20\x01(\x02\
+    R\x08lifeTime\x12\x14\n\x05level\x18\x07\x20\x01(\rR\x05level\x12$\n\x0e\
+    base_avatar_id\x18\x05\x20\x01(\rR\x0cbaseAvatarId\x12\x17\n\x07buff_id\
+    \x18\x03\x20\x01(\rR\x06buffId\x1a@\n\x12DynamicValuesEntry\x12\x10\n\
     \x03key\x18\x01\x20\x01(\tR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\
     \x02R\x05value:\x028\x01B\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";

@@ -29,18 +29,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayerDisplaySettings {
     // message fields
-    // @@protoc_insertion_point(field:PlayerDisplaySettings.AMGBJCGCHLE)
-    pub AMGBJCGCHLE: bool,
-    // @@protoc_insertion_point(field:PlayerDisplaySettings.GLJHHOCLNFC)
-    pub GLJHHOCLNFC: ::protobuf::EnumOrUnknown<super::DisplayRecordType::DisplayRecordType>,
-    // @@protoc_insertion_point(field:PlayerDisplaySettings.AOKKOOOODCN)
-    pub AOKKOOOODCN: bool,
-    // @@protoc_insertion_point(field:PlayerDisplaySettings.LJEELNKPIFJ)
-    pub LJEELNKPIFJ: bool,
-    // @@protoc_insertion_point(field:PlayerDisplaySettings.IDFLCNJJLDO)
-    pub IDFLCNJJLDO: bool,
-    // @@protoc_insertion_point(field:PlayerDisplaySettings.FEEELLEAEPC)
-    pub FEEELLEAEPC: bool,
+    // @@protoc_insertion_point(field:PlayerDisplaySettings.KEACGBKOFKF)
+    pub KEACGBKOFKF: bool,
+    // @@protoc_insertion_point(field:PlayerDisplaySettings.DAFHJJEDMOF)
+    pub DAFHJJEDMOF: bool,
+    // @@protoc_insertion_point(field:PlayerDisplaySettings.KDAKDMCGFND)
+    pub KDAKDMCGFND: bool,
+    // @@protoc_insertion_point(field:PlayerDisplaySettings.BPELFJGIJID)
+    pub BPELFJGIJID: bool,
+    // @@protoc_insertion_point(field:PlayerDisplaySettings.DKLJGCEHPJL)
+    pub DKLJGCEHPJL: bool,
+    // @@protoc_insertion_point(field:PlayerDisplaySettings.EPMCKMCDIGB)
+    pub EPMCKMCDIGB: ::protobuf::EnumOrUnknown<super::DisplayRecordType::DisplayRecordType>,
     // special fields
     // @@protoc_insertion_point(special_field:PlayerDisplaySettings.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,34 +61,34 @@ impl PlayerDisplaySettings {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AMGBJCGCHLE",
-            |m: &PlayerDisplaySettings| { &m.AMGBJCGCHLE },
-            |m: &mut PlayerDisplaySettings| { &mut m.AMGBJCGCHLE },
+            "KEACGBKOFKF",
+            |m: &PlayerDisplaySettings| { &m.KEACGBKOFKF },
+            |m: &mut PlayerDisplaySettings| { &mut m.KEACGBKOFKF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GLJHHOCLNFC",
-            |m: &PlayerDisplaySettings| { &m.GLJHHOCLNFC },
-            |m: &mut PlayerDisplaySettings| { &mut m.GLJHHOCLNFC },
+            "DAFHJJEDMOF",
+            |m: &PlayerDisplaySettings| { &m.DAFHJJEDMOF },
+            |m: &mut PlayerDisplaySettings| { &mut m.DAFHJJEDMOF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AOKKOOOODCN",
-            |m: &PlayerDisplaySettings| { &m.AOKKOOOODCN },
-            |m: &mut PlayerDisplaySettings| { &mut m.AOKKOOOODCN },
+            "KDAKDMCGFND",
+            |m: &PlayerDisplaySettings| { &m.KDAKDMCGFND },
+            |m: &mut PlayerDisplaySettings| { &mut m.KDAKDMCGFND },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LJEELNKPIFJ",
-            |m: &PlayerDisplaySettings| { &m.LJEELNKPIFJ },
-            |m: &mut PlayerDisplaySettings| { &mut m.LJEELNKPIFJ },
+            "BPELFJGIJID",
+            |m: &PlayerDisplaySettings| { &m.BPELFJGIJID },
+            |m: &mut PlayerDisplaySettings| { &mut m.BPELFJGIJID },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IDFLCNJJLDO",
-            |m: &PlayerDisplaySettings| { &m.IDFLCNJJLDO },
-            |m: &mut PlayerDisplaySettings| { &mut m.IDFLCNJJLDO },
+            "DKLJGCEHPJL",
+            |m: &PlayerDisplaySettings| { &m.DKLJGCEHPJL },
+            |m: &mut PlayerDisplaySettings| { &mut m.DKLJGCEHPJL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FEEELLEAEPC",
-            |m: &PlayerDisplaySettings| { &m.FEEELLEAEPC },
-            |m: &mut PlayerDisplaySettings| { &mut m.FEEELLEAEPC },
+            "EPMCKMCDIGB",
+            |m: &PlayerDisplaySettings| { &m.EPMCKMCDIGB },
+            |m: &mut PlayerDisplaySettings| { &mut m.EPMCKMCDIGB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayerDisplaySettings>(
             "PlayerDisplaySettings",
@@ -108,23 +108,23 @@ impl ::protobuf::Message for PlayerDisplaySettings {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.AMGBJCGCHLE = is.read_bool()?;
-                },
-                80 => {
-                    self.GLJHHOCLNFC = is.read_enum_or_unknown()?;
-                },
                 104 => {
-                    self.AOKKOOOODCN = is.read_bool()?;
-                },
-                8 => {
-                    self.LJEELNKPIFJ = is.read_bool()?;
+                    self.KEACGBKOFKF = is.read_bool()?;
                 },
                 64 => {
-                    self.IDFLCNJJLDO = is.read_bool()?;
+                    self.DAFHJJEDMOF = is.read_bool()?;
                 },
-                96 => {
-                    self.FEEELLEAEPC = is.read_bool()?;
+                88 => {
+                    self.KDAKDMCGFND = is.read_bool()?;
+                },
+                56 => {
+                    self.BPELFJGIJID = is.read_bool()?;
+                },
+                40 => {
+                    self.DKLJGCEHPJL = is.read_bool()?;
+                },
+                120 => {
+                    self.EPMCKMCDIGB = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -138,23 +138,23 @@ impl ::protobuf::Message for PlayerDisplaySettings {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AMGBJCGCHLE != false {
+        if self.KEACGBKOFKF != false {
             my_size += 1 + 1;
         }
-        if self.GLJHHOCLNFC != ::protobuf::EnumOrUnknown::new(super::DisplayRecordType::DisplayRecordType::BATTLE_RECORD_NONE) {
-            my_size += ::protobuf::rt::int32_size(10, self.GLJHHOCLNFC.value());
-        }
-        if self.AOKKOOOODCN != false {
+        if self.DAFHJJEDMOF != false {
             my_size += 1 + 1;
         }
-        if self.LJEELNKPIFJ != false {
+        if self.KDAKDMCGFND != false {
             my_size += 1 + 1;
         }
-        if self.IDFLCNJJLDO != false {
+        if self.BPELFJGIJID != false {
             my_size += 1 + 1;
         }
-        if self.FEEELLEAEPC != false {
+        if self.DKLJGCEHPJL != false {
             my_size += 1 + 1;
+        }
+        if self.EPMCKMCDIGB != ::protobuf::EnumOrUnknown::new(super::DisplayRecordType::DisplayRecordType::BATTLE_RECORD_NONE) {
+            my_size += ::protobuf::rt::int32_size(15, self.EPMCKMCDIGB.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,23 +162,23 @@ impl ::protobuf::Message for PlayerDisplaySettings {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AMGBJCGCHLE != false {
-            os.write_bool(3, self.AMGBJCGCHLE)?;
+        if self.KEACGBKOFKF != false {
+            os.write_bool(13, self.KEACGBKOFKF)?;
         }
-        if self.GLJHHOCLNFC != ::protobuf::EnumOrUnknown::new(super::DisplayRecordType::DisplayRecordType::BATTLE_RECORD_NONE) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.GLJHHOCLNFC))?;
+        if self.DAFHJJEDMOF != false {
+            os.write_bool(8, self.DAFHJJEDMOF)?;
         }
-        if self.AOKKOOOODCN != false {
-            os.write_bool(13, self.AOKKOOOODCN)?;
+        if self.KDAKDMCGFND != false {
+            os.write_bool(11, self.KDAKDMCGFND)?;
         }
-        if self.LJEELNKPIFJ != false {
-            os.write_bool(1, self.LJEELNKPIFJ)?;
+        if self.BPELFJGIJID != false {
+            os.write_bool(7, self.BPELFJGIJID)?;
         }
-        if self.IDFLCNJJLDO != false {
-            os.write_bool(8, self.IDFLCNJJLDO)?;
+        if self.DKLJGCEHPJL != false {
+            os.write_bool(5, self.DKLJGCEHPJL)?;
         }
-        if self.FEEELLEAEPC != false {
-            os.write_bool(12, self.FEEELLEAEPC)?;
+        if self.EPMCKMCDIGB != ::protobuf::EnumOrUnknown::new(super::DisplayRecordType::DisplayRecordType::BATTLE_RECORD_NONE) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.EPMCKMCDIGB))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,23 +197,23 @@ impl ::protobuf::Message for PlayerDisplaySettings {
     }
 
     fn clear(&mut self) {
-        self.AMGBJCGCHLE = false;
-        self.GLJHHOCLNFC = ::protobuf::EnumOrUnknown::new(super::DisplayRecordType::DisplayRecordType::BATTLE_RECORD_NONE);
-        self.AOKKOOOODCN = false;
-        self.LJEELNKPIFJ = false;
-        self.IDFLCNJJLDO = false;
-        self.FEEELLEAEPC = false;
+        self.KEACGBKOFKF = false;
+        self.DAFHJJEDMOF = false;
+        self.KDAKDMCGFND = false;
+        self.BPELFJGIJID = false;
+        self.DKLJGCEHPJL = false;
+        self.EPMCKMCDIGB = ::protobuf::EnumOrUnknown::new(super::DisplayRecordType::DisplayRecordType::BATTLE_RECORD_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayerDisplaySettings {
         static instance: PlayerDisplaySettings = PlayerDisplaySettings {
-            AMGBJCGCHLE: false,
-            GLJHHOCLNFC: ::protobuf::EnumOrUnknown::from_i32(0),
-            AOKKOOOODCN: false,
-            LJEELNKPIFJ: false,
-            IDFLCNJJLDO: false,
-            FEEELLEAEPC: false,
+            KEACGBKOFKF: false,
+            DAFHJJEDMOF: false,
+            KDAKDMCGFND: false,
+            BPELFJGIJID: false,
+            DKLJGCEHPJL: false,
+            EPMCKMCDIGB: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,12 +239,12 @@ impl ::protobuf::reflect::ProtobufValue for PlayerDisplaySettings {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bPlayerDisplaySettings.proto\x1a\x17DisplayRecordType.proto\"\xf7\
-    \x01\n\x15PlayerDisplaySettings\x12\x20\n\x0bAMGBJCGCHLE\x18\x03\x20\x01\
-    (\x08R\x0bAMGBJCGCHLE\x124\n\x0bGLJHHOCLNFC\x18\n\x20\x01(\x0e2\x12.Disp\
-    layRecordTypeR\x0bGLJHHOCLNFC\x12\x20\n\x0bAOKKOOOODCN\x18\r\x20\x01(\
-    \x08R\x0bAOKKOOOODCN\x12\x20\n\x0bLJEELNKPIFJ\x18\x01\x20\x01(\x08R\x0bL\
-    JEELNKPIFJ\x12\x20\n\x0bIDFLCNJJLDO\x18\x08\x20\x01(\x08R\x0bIDFLCNJJLDO\
-    \x12\x20\n\x0bFEEELLEAEPC\x18\x0c\x20\x01(\x08R\x0bFEEELLEAEPCB\x15\n\
+    \x01\n\x15PlayerDisplaySettings\x12\x20\n\x0bKEACGBKOFKF\x18\r\x20\x01(\
+    \x08R\x0bKEACGBKOFKF\x12\x20\n\x0bDAFHJJEDMOF\x18\x08\x20\x01(\x08R\x0bD\
+    AFHJJEDMOF\x12\x20\n\x0bKDAKDMCGFND\x18\x0b\x20\x01(\x08R\x0bKDAKDMCGFND\
+    \x12\x20\n\x0bBPELFJGIJID\x18\x07\x20\x01(\x08R\x0bBPELFJGIJID\x12\x20\n\
+    \x0bDKLJGCEHPJL\x18\x05\x20\x01(\x08R\x0bDKLJGCEHPJL\x124\n\x0bEPMCKMCDI\
+    GB\x18\x0f\x20\x01(\x0e2\x12.DisplayRecordTypeR\x0bEPMCKMCDIGBB\x15\n\
     \x13emu.lunarcore.protob\x06proto3\
 ";
 

@@ -19,44 +19,52 @@
 #![allow(unused_results)]
 #![allow(unused_mut)]
 
-//! Generated file from `GetDailyActiveInfoCsReq.proto`
+//! Generated file from `RelicAvatarRecommendCsReq.proto`
 
 /// Generated files are compatible only with the same version
 /// of protobuf runtime.
 const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 
-// @@protoc_insertion_point(message:GetDailyActiveInfoCsReq)
+// @@protoc_insertion_point(message:RelicAvatarRecommendCsReq)
 #[derive(PartialEq,Clone,Default,Debug)]
-pub struct GetDailyActiveInfoCsReq {
+pub struct RelicAvatarRecommendCsReq {
+    // message fields
+    // @@protoc_insertion_point(field:RelicAvatarRecommendCsReq.set_id)
+    pub set_id: u32,
     // special fields
-    // @@protoc_insertion_point(special_field:GetDailyActiveInfoCsReq.special_fields)
+    // @@protoc_insertion_point(special_field:RelicAvatarRecommendCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
 }
 
-impl<'a> ::std::default::Default for &'a GetDailyActiveInfoCsReq {
-    fn default() -> &'a GetDailyActiveInfoCsReq {
-        <GetDailyActiveInfoCsReq as ::protobuf::Message>::default_instance()
+impl<'a> ::std::default::Default for &'a RelicAvatarRecommendCsReq {
+    fn default() -> &'a RelicAvatarRecommendCsReq {
+        <RelicAvatarRecommendCsReq as ::protobuf::Message>::default_instance()
     }
 }
 
-impl GetDailyActiveInfoCsReq {
-    pub fn new() -> GetDailyActiveInfoCsReq {
+impl RelicAvatarRecommendCsReq {
+    pub fn new() -> RelicAvatarRecommendCsReq {
         ::std::default::Default::default()
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(0);
+        let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetDailyActiveInfoCsReq>(
-            "GetDailyActiveInfoCsReq",
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "set_id",
+            |m: &RelicAvatarRecommendCsReq| { &m.set_id },
+            |m: &mut RelicAvatarRecommendCsReq| { &mut m.set_id },
+        ));
+        ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RelicAvatarRecommendCsReq>(
+            "RelicAvatarRecommendCsReq",
             fields,
             oneofs,
         )
     }
 }
 
-impl ::protobuf::Message for GetDailyActiveInfoCsReq {
-    const NAME: &'static str = "GetDailyActiveInfoCsReq";
+impl ::protobuf::Message for RelicAvatarRecommendCsReq {
+    const NAME: &'static str = "RelicAvatarRecommendCsReq";
 
     fn is_initialized(&self) -> bool {
         true
@@ -65,6 +73,9 @@ impl ::protobuf::Message for GetDailyActiveInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                104 => {
+                    self.set_id = is.read_uint32()?;
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -77,12 +88,18 @@ impl ::protobuf::Message for GetDailyActiveInfoCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.set_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.set_id);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.set_id != 0 {
+            os.write_uint32(13, self.set_id)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -95,42 +112,45 @@ impl ::protobuf::Message for GetDailyActiveInfoCsReq {
         &mut self.special_fields
     }
 
-    fn new() -> GetDailyActiveInfoCsReq {
-        GetDailyActiveInfoCsReq::new()
+    fn new() -> RelicAvatarRecommendCsReq {
+        RelicAvatarRecommendCsReq::new()
     }
 
     fn clear(&mut self) {
+        self.set_id = 0;
         self.special_fields.clear();
     }
 
-    fn default_instance() -> &'static GetDailyActiveInfoCsReq {
-        static instance: GetDailyActiveInfoCsReq = GetDailyActiveInfoCsReq {
+    fn default_instance() -> &'static RelicAvatarRecommendCsReq {
+        static instance: RelicAvatarRecommendCsReq = RelicAvatarRecommendCsReq {
+            set_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
     }
 }
 
-impl ::protobuf::MessageFull for GetDailyActiveInfoCsReq {
+impl ::protobuf::MessageFull for RelicAvatarRecommendCsReq {
     fn descriptor() -> ::protobuf::reflect::MessageDescriptor {
         static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::MessageDescriptor> = ::protobuf::rt::Lazy::new();
-        descriptor.get(|| file_descriptor().message_by_package_relative_name("GetDailyActiveInfoCsReq").unwrap()).clone()
+        descriptor.get(|| file_descriptor().message_by_package_relative_name("RelicAvatarRecommendCsReq").unwrap()).clone()
     }
 }
 
-impl ::std::fmt::Display for GetDailyActiveInfoCsReq {
+impl ::std::fmt::Display for RelicAvatarRecommendCsReq {
     fn fmt(&self, f: &mut ::std::fmt::Formatter<'_>) -> ::std::fmt::Result {
         ::protobuf::text_format::fmt(self, f)
     }
 }
 
-impl ::protobuf::reflect::ProtobufValue for GetDailyActiveInfoCsReq {
+impl ::protobuf::reflect::ProtobufValue for RelicAvatarRecommendCsReq {
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dGetDailyActiveInfoCsReq.proto\"\x19\n\x17GetDailyActiveInfoCsReqB\
-    \x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x1fRelicAvatarRecommendCsReq.proto\"2\n\x19RelicAvatarRecommendCsReq\
+    \x12\x15\n\x06set_id\x18\r\x20\x01(\rR\x05setIdB\x15\n\x13emu.lunarcore.\
+    protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -149,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(0);
             let mut messages = ::std::vec::Vec::with_capacity(1);
-            messages.push(GetDailyActiveInfoCsReq::generated_message_descriptor_data());
+            messages.push(RelicAvatarRecommendCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);
             ::protobuf::reflect::GeneratedFileDescriptor::new_generated(
                 file_descriptor_proto(),

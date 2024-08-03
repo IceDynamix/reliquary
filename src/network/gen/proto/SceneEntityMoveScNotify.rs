@@ -94,13 +94,13 @@ impl ::protobuf::Message for SceneEntityMoveScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                104 => {
                     self.entry_id = is.read_uint32()?;
                 },
-                24 => {
+                88 => {
                     self.entity_id = is.read_uint32()?;
                 },
-                40 => {
+                80 => {
                     self.client_pos_version = is.read_uint32()?;
                 },
                 34 => {
@@ -119,13 +119,13 @@ impl ::protobuf::Message for SceneEntityMoveScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.entry_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.entry_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.entry_id);
         }
         if self.entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.entity_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.entity_id);
         }
         if self.client_pos_version != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.client_pos_version);
+            my_size += ::protobuf::rt::uint32_size(10, self.client_pos_version);
         }
         if let Some(v) = self.motion.as_ref() {
             let len = v.compute_size();
@@ -138,13 +138,13 @@ impl ::protobuf::Message for SceneEntityMoveScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.entry_id != 0 {
-            os.write_uint32(14, self.entry_id)?;
+            os.write_uint32(13, self.entry_id)?;
         }
         if self.entity_id != 0 {
-            os.write_uint32(3, self.entity_id)?;
+            os.write_uint32(11, self.entity_id)?;
         }
         if self.client_pos_version != 0 {
-            os.write_uint32(5, self.client_pos_version)?;
+            os.write_uint32(10, self.client_pos_version)?;
         }
         if let Some(v) = self.motion.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for SceneEntityMoveScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dSceneEntityMoveScNotify.proto\x1a\x10MotionInfo.proto\"\xa4\x01\n\
-    \x17SceneEntityMoveScNotify\x12\x19\n\x08entry_id\x18\x0e\x20\x01(\rR\
-    \x07entryId\x12\x1b\n\tentity_id\x18\x03\x20\x01(\rR\x08entityId\x12,\n\
-    \x12client_pos_version\x18\x05\x20\x01(\rR\x10clientPosVersion\x12#\n\
-    \x06motion\x18\x04\x20\x01(\x0b2\x0b.MotionInfoR\x06motionB\x15\n\x13emu\
-    .lunarcore.protob\x06proto3\
+    \x17SceneEntityMoveScNotify\x12\x19\n\x08entry_id\x18\r\x20\x01(\rR\x07e\
+    ntryId\x12\x1b\n\tentity_id\x18\x0b\x20\x01(\rR\x08entityId\x12,\n\x12cl\
+    ient_pos_version\x18\n\x20\x01(\rR\x10clientPosVersion\x12#\n\x06motion\
+    \x18\x04\x20\x01(\x0b2\x0b.MotionInfoR\x06motionB\x15\n\x13emu.lunarcore\
+    .protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

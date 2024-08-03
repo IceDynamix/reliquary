@@ -101,19 +101,19 @@ impl ::protobuf::Message for Chat {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                88 => {
                     self.emote = is.read_uint32()?;
                 },
-                80 => {
+                120 => {
                     self.msg_type = is.read_enum_or_unknown()?;
                 },
-                56 => {
+                40 => {
                     self.sender_uid = is.read_uint32()?;
                 },
-                16 => {
+                104 => {
                     self.sent_time = is.read_uint64()?;
                 },
-                42 => {
+                82 => {
                     self.text = is.read_string()?;
                 },
                 tag => {
@@ -129,19 +129,19 @@ impl ::protobuf::Message for Chat {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.emote != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.emote);
+            my_size += ::protobuf::rt::uint32_size(11, self.emote);
         }
         if self.msg_type != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(10, self.msg_type.value());
+            my_size += ::protobuf::rt::int32_size(15, self.msg_type.value());
         }
         if self.sender_uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.sender_uid);
+            my_size += ::protobuf::rt::uint32_size(5, self.sender_uid);
         }
         if self.sent_time != 0 {
-            my_size += ::protobuf::rt::uint64_size(2, self.sent_time);
+            my_size += ::protobuf::rt::uint64_size(13, self.sent_time);
         }
         if !self.text.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.text);
+            my_size += ::protobuf::rt::string_size(10, &self.text);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,19 +150,19 @@ impl ::protobuf::Message for Chat {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.emote != 0 {
-            os.write_uint32(1, self.emote)?;
+            os.write_uint32(11, self.emote)?;
         }
         if self.msg_type != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.msg_type))?;
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.msg_type))?;
         }
         if self.sender_uid != 0 {
-            os.write_uint32(7, self.sender_uid)?;
+            os.write_uint32(5, self.sender_uid)?;
         }
         if self.sent_time != 0 {
-            os.write_uint64(2, self.sent_time)?;
+            os.write_uint64(13, self.sent_time)?;
         }
         if !self.text.is_empty() {
-            os.write_string(5, &self.text)?;
+            os.write_string(10, &self.text)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -221,10 +221,10 @@ impl ::protobuf::reflect::ProtobufValue for Chat {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\nChat.proto\x1a\rMsgType.proto\"\x91\x01\n\x04Chat\x12\x14\n\x05emote\
-    \x18\x01\x20\x01(\rR\x05emote\x12#\n\x08msg_type\x18\n\x20\x01(\x0e2\x08\
-    .MsgTypeR\x07msgType\x12\x1d\n\nsender_uid\x18\x07\x20\x01(\rR\tsenderUi\
-    d\x12\x1b\n\tsent_time\x18\x02\x20\x01(\x04R\x08sentTime\x12\x12\n\x04te\
-    xt\x18\x05\x20\x01(\tR\x04textB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \x18\x0b\x20\x01(\rR\x05emote\x12#\n\x08msg_type\x18\x0f\x20\x01(\x0e2\
+    \x08.MsgTypeR\x07msgType\x12\x1d\n\nsender_uid\x18\x05\x20\x01(\rR\tsend\
+    erUid\x12\x1b\n\tsent_time\x18\r\x20\x01(\x04R\x08sentTime\x12\x12\n\x04\
+    text\x18\n\x20\x01(\tR\x04textB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

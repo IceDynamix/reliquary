@@ -104,16 +104,16 @@ impl ::protobuf::Message for PlayerGetTokenScRsp {
                 120 => {
                     self.secret_key_seed = is.read_uint64()?;
                 },
-                18 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.black_info)?;
                 },
-                24 => {
+                8 => {
                     self.uid = is.read_uint32()?;
                 },
-                66 => {
+                18 => {
                     self.msg = is.read_string()?;
                 },
-                96 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -136,13 +136,13 @@ impl ::protobuf::Message for PlayerGetTokenScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.uid);
+            my_size += ::protobuf::rt::uint32_size(1, self.uid);
         }
         if !self.msg.is_empty() {
-            my_size += ::protobuf::rt::string_size(8, &self.msg);
+            my_size += ::protobuf::rt::string_size(2, &self.msg);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -154,16 +154,16 @@ impl ::protobuf::Message for PlayerGetTokenScRsp {
             os.write_uint64(15, self.secret_key_seed)?;
         }
         if let Some(v) = self.black_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         if self.uid != 0 {
-            os.write_uint32(3, self.uid)?;
+            os.write_uint32(1, self.uid)?;
         }
         if !self.msg.is_empty() {
-            os.write_string(8, &self.msg)?;
+            os.write_string(2, &self.msg)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -223,9 +223,9 @@ impl ::protobuf::reflect::ProtobufValue for PlayerGetTokenScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19PlayerGetTokenScRsp.proto\x1a\x0fBlackInfo.proto\"\xa6\x01\n\x13Pl\
     ayerGetTokenScRsp\x12&\n\x0fsecret_key_seed\x18\x0f\x20\x01(\x04R\rsecre\
-    tKeySeed\x12)\n\nblack_info\x18\x02\x20\x01(\x0b2\n.BlackInfoR\tblackInf\
-    o\x12\x10\n\x03uid\x18\x03\x20\x01(\rR\x03uid\x12\x10\n\x03msg\x18\x08\
-    \x20\x01(\tR\x03msg\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcodeB\
+    tKeySeed\x12)\n\nblack_info\x18\x05\x20\x01(\x0b2\n.BlackInfoR\tblackInf\
+    o\x12\x10\n\x03uid\x18\x01\x20\x01(\rR\x03uid\x12\x10\n\x03msg\x18\x02\
+    \x20\x01(\tR\x03msg\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcodeB\
     \x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

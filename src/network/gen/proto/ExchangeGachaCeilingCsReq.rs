@@ -80,10 +80,10 @@ impl ::protobuf::Message for ExchangeGachaCeilingCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                112 => {
                     self.gacha_type = is.read_uint32()?;
                 },
-                72 => {
+                88 => {
                     self.avatar_id = is.read_uint32()?;
                 },
                 tag => {
@@ -99,10 +99,10 @@ impl ::protobuf::Message for ExchangeGachaCeilingCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.gacha_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.gacha_type);
+            my_size += ::protobuf::rt::uint32_size(14, self.gacha_type);
         }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for ExchangeGachaCeilingCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.gacha_type != 0 {
-            os.write_uint32(15, self.gacha_type)?;
+            os.write_uint32(14, self.gacha_type)?;
         }
         if self.avatar_id != 0 {
-            os.write_uint32(9, self.avatar_id)?;
+            os.write_uint32(11, self.avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for ExchangeGachaCeilingCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fExchangeGachaCeilingCsReq.proto\"W\n\x19ExchangeGachaCeilingCsReq\
-    \x12\x1d\n\ngacha_type\x18\x0f\x20\x01(\rR\tgachaType\x12\x1b\n\tavatar_\
-    id\x18\t\x20\x01(\rR\x08avatarIdB\x15\n\x13emu.lunarcore.protob\x06proto\
-    3\
+    \x12\x1d\n\ngacha_type\x18\x0e\x20\x01(\rR\tgachaType\x12\x1b\n\tavatar_\
+    id\x18\x0b\x20\x01(\rR\x08avatarIdB\x15\n\x13emu.lunarcore.protob\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

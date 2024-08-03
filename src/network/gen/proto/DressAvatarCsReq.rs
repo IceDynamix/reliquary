@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DressAvatarCsReq {
     // message fields
-    // @@protoc_insertion_point(field:DressAvatarCsReq.equip_avatar_id)
-    pub equip_avatar_id: u32,
+    // @@protoc_insertion_point(field:DressAvatarCsReq.avatar_id)
+    pub avatar_id: u32,
     // @@protoc_insertion_point(field:DressAvatarCsReq.equipment_unique_id)
     pub equipment_unique_id: u32,
     // special fields
@@ -53,9 +53,9 @@ impl DressAvatarCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "equip_avatar_id",
-            |m: &DressAvatarCsReq| { &m.equip_avatar_id },
-            |m: &mut DressAvatarCsReq| { &mut m.equip_avatar_id },
+            "avatar_id",
+            |m: &DressAvatarCsReq| { &m.avatar_id },
+            |m: &mut DressAvatarCsReq| { &mut m.avatar_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "equipment_unique_id",
@@ -81,9 +81,9 @@ impl ::protobuf::Message for DressAvatarCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 16 => {
-                    self.equip_avatar_id = is.read_uint32()?;
+                    self.avatar_id = is.read_uint32()?;
                 },
-                112 => {
+                32 => {
                     self.equipment_unique_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,11 +98,11 @@ impl ::protobuf::Message for DressAvatarCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.equip_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.equip_avatar_id);
+        if self.avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.avatar_id);
         }
         if self.equipment_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.equipment_unique_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.equipment_unique_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for DressAvatarCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.equip_avatar_id != 0 {
-            os.write_uint32(2, self.equip_avatar_id)?;
+        if self.avatar_id != 0 {
+            os.write_uint32(2, self.avatar_id)?;
         }
         if self.equipment_unique_id != 0 {
-            os.write_uint32(14, self.equipment_unique_id)?;
+            os.write_uint32(4, self.equipment_unique_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for DressAvatarCsReq {
     }
 
     fn clear(&mut self) {
-        self.equip_avatar_id = 0;
+        self.avatar_id = 0;
         self.equipment_unique_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DressAvatarCsReq {
         static instance: DressAvatarCsReq = DressAvatarCsReq {
-            equip_avatar_id: 0,
+            avatar_id: 0,
             equipment_unique_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for DressAvatarCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16DressAvatarCsReq.proto\"j\n\x10DressAvatarCsReq\x12&\n\x0fequip_av\
-    atar_id\x18\x02\x20\x01(\rR\requipAvatarId\x12.\n\x13equipment_unique_id\
-    \x18\x0e\x20\x01(\rR\x11equipmentUniqueIdB\x15\n\x13emu.lunarcore.protob\
-    \x06proto3\
+    \n\x16DressAvatarCsReq.proto\"_\n\x10DressAvatarCsReq\x12\x1b\n\tavatar_\
+    id\x18\x02\x20\x01(\rR\x08avatarId\x12.\n\x13equipment_unique_id\x18\x04\
+    \x20\x01(\rR\x11equipmentUniqueIdB\x15\n\x13emu.lunarcore.protob\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

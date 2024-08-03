@@ -29,8 +29,6 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChallengeBossBuffInfo {
     // message fields
-    // @@protoc_insertion_point(field:ChallengeBossBuffInfo.IHNFPAOKKBA)
-    pub IHNFPAOKKBA: u32,
     // @@protoc_insertion_point(field:ChallengeBossBuffInfo.buff_list)
     pub buff_list: ::std::vec::Vec<u32>,
     // special fields
@@ -50,13 +48,8 @@ impl ChallengeBossBuffInfo {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IHNFPAOKKBA",
-            |m: &ChallengeBossBuffInfo| { &m.IHNFPAOKKBA },
-            |m: &mut ChallengeBossBuffInfo| { &mut m.IHNFPAOKKBA },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "buff_list",
             |m: &ChallengeBossBuffInfo| { &m.buff_list },
@@ -80,13 +73,10 @@ impl ::protobuf::Message for ChallengeBossBuffInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.IHNFPAOKKBA = is.read_uint32()?;
-                },
-                50 => {
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.buff_list)?;
                 },
-                48 => {
+                72 => {
                     self.buff_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -101,11 +91,8 @@ impl ::protobuf::Message for ChallengeBossBuffInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IHNFPAOKKBA != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.IHNFPAOKKBA);
-        }
         for value in &self.buff_list {
-            my_size += ::protobuf::rt::uint32_size(6, *value);
+            my_size += ::protobuf::rt::uint32_size(9, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,11 +100,8 @@ impl ::protobuf::Message for ChallengeBossBuffInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IHNFPAOKKBA != 0 {
-            os.write_uint32(10, self.IHNFPAOKKBA)?;
-        }
         for v in &self.buff_list {
-            os.write_uint32(6, *v)?;
+            os.write_uint32(9, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -136,14 +120,12 @@ impl ::protobuf::Message for ChallengeBossBuffInfo {
     }
 
     fn clear(&mut self) {
-        self.IHNFPAOKKBA = 0;
         self.buff_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengeBossBuffInfo {
         static instance: ChallengeBossBuffInfo = ChallengeBossBuffInfo {
-            IHNFPAOKKBA: 0,
             buff_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -169,10 +151,9 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeBossBuffInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bChallengeBossBuffInfo.proto\"V\n\x15ChallengeBossBuffInfo\x12\x20\
-    \n\x0bIHNFPAOKKBA\x18\n\x20\x01(\rR\x0bIHNFPAOKKBA\x12\x1b\n\tbuff_list\
-    \x18\x06\x20\x03(\rR\x08buffListB\x15\n\x13emu.lunarcore.protob\x06proto\
-    3\
+    \n\x1bChallengeBossBuffInfo.proto\"4\n\x15ChallengeBossBuffInfo\x12\x1b\
+    \n\tbuff_list\x18\t\x20\x03(\rR\x08buffListB\x15\n\x13emu.lunarcore.prot\
+    ob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -31,8 +31,8 @@ pub struct RogueVirtualItemData {
     // message fields
     // @@protoc_insertion_point(field:RogueVirtualItemData.num)
     pub num: u32,
-    // @@protoc_insertion_point(field:RogueVirtualItemData.MDBPDPDDHBC)
-    pub MDBPDPDDHBC: u32,
+    // @@protoc_insertion_point(field:RogueVirtualItemData.display_type)
+    pub display_type: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueVirtualItemData.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,9 +58,9 @@ impl RogueVirtualItemData {
             |m: &mut RogueVirtualItemData| { &mut m.num },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MDBPDPDDHBC",
-            |m: &RogueVirtualItemData| { &m.MDBPDPDDHBC },
-            |m: &mut RogueVirtualItemData| { &mut m.MDBPDPDDHBC },
+            "display_type",
+            |m: &RogueVirtualItemData| { &m.display_type },
+            |m: &mut RogueVirtualItemData| { &mut m.display_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueVirtualItemData>(
             "RogueVirtualItemData",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for RogueVirtualItemData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                112 => {
                     self.num = is.read_uint32()?;
                 },
-                112 => {
-                    self.MDBPDPDDHBC = is.read_uint32()?;
+                16 => {
+                    self.display_type = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -99,10 +99,10 @@ impl ::protobuf::Message for RogueVirtualItemData {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.num != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.num);
+            my_size += ::protobuf::rt::uint32_size(14, self.num);
         }
-        if self.MDBPDPDDHBC != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.MDBPDPDDHBC);
+        if self.display_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.display_type);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for RogueVirtualItemData {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.num != 0 {
-            os.write_uint32(13, self.num)?;
+            os.write_uint32(14, self.num)?;
         }
-        if self.MDBPDPDDHBC != 0 {
-            os.write_uint32(14, self.MDBPDPDDHBC)?;
+        if self.display_type != 0 {
+            os.write_uint32(2, self.display_type)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for RogueVirtualItemData {
 
     fn clear(&mut self) {
         self.num = 0;
-        self.MDBPDPDDHBC = 0;
+        self.display_type = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueVirtualItemData {
         static instance: RogueVirtualItemData = RogueVirtualItemData {
             num: 0,
-            MDBPDPDDHBC: 0,
+            display_type: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueVirtualItemData {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aRogueVirtualItemData.proto\"J\n\x14RogueVirtualItemData\x12\x10\n\
-    \x03num\x18\r\x20\x01(\rR\x03num\x12\x20\n\x0bMDBPDPDDHBC\x18\x0e\x20\
-    \x01(\rR\x0bMDBPDPDDHBCB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x1aRogueVirtualItemData.proto\"K\n\x14RogueVirtualItemData\x12\x10\n\
+    \x03num\x18\x0e\x20\x01(\rR\x03num\x12!\n\x0cdisplay_type\x18\x02\x20\
+    \x01(\rR\x0bdisplayTypeB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
