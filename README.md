@@ -22,6 +22,15 @@ for documentation, use `cargo doc`
 
 types are outdated? check out [reliquary-codegen](https://github.com/IceDynamix/reliquary-codegen)
 
+## versioning
+
+different package versions were made for different game versions. all game version updates will warrant breaking changes in the generated protobuf types, hence the major version bumps. 
+
+| package version | game version |
+|-----------------|--------------|
+| `2.0.0`         | `2.3`        |
+| `3.0.0`         | `2.4`        |
+
 ## related
 
 - [reliquary-archiver](https://github.com/IceDynamix/reliquary-archiver)
