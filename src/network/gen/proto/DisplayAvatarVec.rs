@@ -80,10 +80,10 @@ impl ::protobuf::Message for DisplayAvatarVec {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                66 => {
                     self.display_avatar_list.push(is.read_message()?);
                 },
-                96 => {
+                104 => {
                     self.is_display = is.read_bool()?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for DisplayAvatarVec {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.display_avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         if self.is_display != false {
-            os.write_bool(12, self.is_display)?;
+            os.write_bool(13, self.is_display)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for DisplayAvatarVec {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16DisplayAvatarVec.proto\x1a\x13DisplayAvatar.proto\"q\n\x10DisplayA\
-    vatarVec\x12>\n\x13display_avatar_list\x18\x0b\x20\x03(\x0b2\x0e.Display\
-    AvatarR\x11displayAvatarList\x12\x1d\n\nis_display\x18\x0c\x20\x01(\x08R\
-    \tisDisplayB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    vatarVec\x12>\n\x13display_avatar_list\x18\x08\x20\x03(\x0b2\x0e.Display\
+    AvatarR\x11displayAvatarList\x12\x1d\n\nis_display\x18\r\x20\x01(\x08R\t\
+    isDisplayB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -94,13 +94,13 @@ impl ::protobuf::Message for StartRogueScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
-                64 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
                 },
-                114 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_info)?;
                 },
                 18 => {
@@ -123,7 +123,7 @@ impl ::protobuf::Message for StartRogueScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         if let Some(v) = self.rogue_info.as_ref() {
             let len = v.compute_size();
@@ -140,13 +140,13 @@ impl ::protobuf::Message for StartRogueScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
         }
         if let Some(v) = self.rogue_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if let Some(v) = self.scene.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
@@ -207,8 +207,8 @@ impl ::protobuf::reflect::ProtobufValue for StartRogueScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15StartRogueScRsp.proto\x1a\x0fRogueInfo.proto\x1a\x10LineupInfo.pro\
     to\x1a\x0fSceneInfo.proto\"\x9d\x01\n\x0fStartRogueScRsp\x12#\n\x06lineu\
-    p\x18\x0f\x20\x01(\x0b2\x0b.LineupInfoR\x06lineup\x12\x18\n\x07retcode\
-    \x18\x08\x20\x01(\rR\x07retcode\x12)\n\nrogue_info\x18\x0e\x20\x01(\x0b2\
+    p\x18\x07\x20\x01(\x0b2\x0b.LineupInfoR\x06lineup\x12\x18\n\x07retcode\
+    \x18\x06\x20\x01(\rR\x07retcode\x12)\n\nrogue_info\x18\x0c\x20\x01(\x0b2\
     \n.RogueInfoR\trogueInfo\x12\x20\n\x05scene\x18\x02\x20\x01(\x0b2\n.Scen\
     eInfoR\x05sceneB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";

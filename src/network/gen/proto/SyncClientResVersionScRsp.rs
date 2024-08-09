@@ -80,7 +80,7 @@ impl ::protobuf::Message for SyncClientResVersionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                80 => {
                     self.client_res_version = is.read_uint32()?;
                 },
                 40 => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for SyncClientResVersionScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.client_res_version != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.client_res_version);
+            my_size += ::protobuf::rt::uint32_size(10, self.client_res_version);
         }
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(5, self.retcode);
@@ -111,7 +111,7 @@ impl ::protobuf::Message for SyncClientResVersionScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.client_res_version != 0 {
-            os.write_uint32(2, self.client_res_version)?;
+            os.write_uint32(10, self.client_res_version)?;
         }
         if self.retcode != 0 {
             os.write_uint32(5, self.retcode)?;
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncClientResVersionScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fSyncClientResVersionScRsp.proto\"c\n\x19SyncClientResVersionScRsp\
-    \x12,\n\x12client_res_version\x18\x02\x20\x01(\rR\x10clientResVersion\
-    \x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunar\
-    core.protob\x06proto3\
+    \x12,\n\x12client_res_version\x18\n\x20\x01(\rR\x10clientResVersion\x12\
+    \x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore\
+    .protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

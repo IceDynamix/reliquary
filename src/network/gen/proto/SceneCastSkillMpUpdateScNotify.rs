@@ -80,10 +80,10 @@ impl ::protobuf::Message for SceneCastSkillMpUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                40 => {
                     self.attacked_group_id = is.read_uint32()?;
                 },
-                64 => {
+                32 => {
                     self.mp = is.read_uint32()?;
                 },
                 tag => {
@@ -99,10 +99,10 @@ impl ::protobuf::Message for SceneCastSkillMpUpdateScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.attacked_group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.attacked_group_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.attacked_group_id);
         }
         if self.mp != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.mp);
+            my_size += ::protobuf::rt::uint32_size(4, self.mp);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for SceneCastSkillMpUpdateScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.attacked_group_id != 0 {
-            os.write_uint32(10, self.attacked_group_id)?;
+            os.write_uint32(5, self.attacked_group_id)?;
         }
         if self.mp != 0 {
-            os.write_uint32(8, self.mp)?;
+            os.write_uint32(4, self.mp)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for SceneCastSkillMpUpdateScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$SceneCastSkillMpUpdateScNotify.proto\"\\\n\x1eSceneCastSkillMpUpdateS\
-    cNotify\x12*\n\x11attacked_group_id\x18\n\x20\x01(\rR\x0fattackedGroupId\
-    \x12\x0e\n\x02mp\x18\x08\x20\x01(\rR\x02mpB\x15\n\x13emu.lunarcore.proto\
-    b\x06proto3\
+    cNotify\x12*\n\x11attacked_group_id\x18\x05\x20\x01(\rR\x0fattackedGroup\
+    Id\x12\x0e\n\x02mp\x18\x04\x20\x01(\rR\x02mpB\x15\n\x13emu.lunarcore.pro\
+    tob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

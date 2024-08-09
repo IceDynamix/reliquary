@@ -94,16 +94,16 @@ impl ::protobuf::Message for GachaItem {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.token_item)?;
                 },
-                80 => {
+                72 => {
                     self.is_new = is.read_bool()?;
                 },
-                106 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.gacha_item)?;
                 },
-                122 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.transfer_item_list)?;
                 },
                 tag => {
@@ -140,16 +140,16 @@ impl ::protobuf::Message for GachaItem {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.token_item.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if self.is_new != false {
-            os.write_bool(10, self.is_new)?;
+            os.write_bool(9, self.is_new)?;
         }
         if let Some(v) = self.gacha_item.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if let Some(v) = self.transfer_item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -206,11 +206,11 @@ impl ::protobuf::reflect::ProtobufValue for GachaItem {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0fGachaItem.proto\x1a\nItem.proto\x1a\x0eItemList.proto\"\xab\x01\n\
-    \tGachaItem\x12(\n\ntoken_item\x18\x08\x20\x01(\x0b2\t.ItemListR\ttokenI\
-    tem\x12\x15\n\x06is_new\x18\n\x20\x01(\x08R\x05isNew\x12$\n\ngacha_item\
-    \x18\r\x20\x01(\x0b2\x05.ItemR\tgachaItem\x127\n\x12transfer_item_list\
-    \x18\x0f\x20\x01(\x0b2\t.ItemListR\x10transferItemListB\x15\n\x13emu.lun\
-    arcore.protob\x06proto3\
+    \tGachaItem\x12(\n\ntoken_item\x18\x0c\x20\x01(\x0b2\t.ItemListR\ttokenI\
+    tem\x12\x15\n\x06is_new\x18\t\x20\x01(\x08R\x05isNew\x12$\n\ngacha_item\
+    \x18\x03\x20\x01(\x0b2\x05.ItemR\tgachaItem\x127\n\x12transfer_item_list\
+    \x18\r\x20\x01(\x0b2\t.ItemListR\x10transferItemListB\x15\n\x13emu.lunar\
+    core.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

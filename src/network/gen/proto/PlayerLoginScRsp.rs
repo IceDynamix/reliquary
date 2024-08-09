@@ -108,22 +108,22 @@ impl ::protobuf::Message for PlayerLoginScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                104 => {
                     self.stamina = is.read_uint32()?;
                 },
-                120 => {
+                16 => {
                     self.login_random = is.read_uint64()?;
                 },
-                96 => {
+                24 => {
                     self.cur_timezone = is.read_sint32()?;
                 },
-                16 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
-                74 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.basic_info)?;
                 },
-                56 => {
+                112 => {
                     self.server_timestamp_ms = is.read_uint64()?;
                 },
                 tag => {
@@ -139,23 +139,23 @@ impl ::protobuf::Message for PlayerLoginScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.stamina != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.stamina);
+            my_size += ::protobuf::rt::uint32_size(13, self.stamina);
         }
         if self.login_random != 0 {
-            my_size += ::protobuf::rt::uint64_size(15, self.login_random);
+            my_size += ::protobuf::rt::uint64_size(2, self.login_random);
         }
         if self.cur_timezone != 0 {
-            my_size += ::protobuf::rt::sint32_size(12, self.cur_timezone);
+            my_size += ::protobuf::rt::sint32_size(3, self.cur_timezone);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         if let Some(v) = self.basic_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.server_timestamp_ms != 0 {
-            my_size += ::protobuf::rt::uint64_size(7, self.server_timestamp_ms);
+            my_size += ::protobuf::rt::uint64_size(14, self.server_timestamp_ms);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -164,22 +164,22 @@ impl ::protobuf::Message for PlayerLoginScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.stamina != 0 {
-            os.write_uint32(1, self.stamina)?;
+            os.write_uint32(13, self.stamina)?;
         }
         if self.login_random != 0 {
-            os.write_uint64(15, self.login_random)?;
+            os.write_uint64(2, self.login_random)?;
         }
         if self.cur_timezone != 0 {
-            os.write_sint32(12, self.cur_timezone)?;
+            os.write_sint32(3, self.cur_timezone)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         if let Some(v) = self.basic_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if self.server_timestamp_ms != 0 {
-            os.write_uint64(7, self.server_timestamp_ms)?;
+            os.write_uint64(14, self.server_timestamp_ms)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -240,11 +240,11 @@ impl ::protobuf::reflect::ProtobufValue for PlayerLoginScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16PlayerLoginScRsp.proto\x1a\x15PlayerBasicInfo.proto\"\xed\x01\n\
-    \x10PlayerLoginScRsp\x12\x18\n\x07stamina\x18\x01\x20\x01(\rR\x07stamina\
-    \x12!\n\x0clogin_random\x18\x0f\x20\x01(\x04R\x0bloginRandom\x12!\n\x0cc\
-    ur_timezone\x18\x0c\x20\x01(\x11R\x0bcurTimezone\x12\x18\n\x07retcode\
-    \x18\x02\x20\x01(\rR\x07retcode\x12/\n\nbasic_info\x18\t\x20\x01(\x0b2\
-    \x10.PlayerBasicInfoR\tbasicInfo\x12.\n\x13server_timestamp_ms\x18\x07\
+    \x10PlayerLoginScRsp\x12\x18\n\x07stamina\x18\r\x20\x01(\rR\x07stamina\
+    \x12!\n\x0clogin_random\x18\x02\x20\x01(\x04R\x0bloginRandom\x12!\n\x0cc\
+    ur_timezone\x18\x03\x20\x01(\x11R\x0bcurTimezone\x12\x18\n\x07retcode\
+    \x18\x08\x20\x01(\rR\x07retcode\x12/\n\nbasic_info\x18\x0b\x20\x01(\x0b2\
+    \x10.PlayerBasicInfoR\tbasicInfo\x12.\n\x13server_timestamp_ms\x18\x0e\
     \x20\x01(\x04R\x11serverTimestampMsB\x15\n\x13emu.lunarcore.protob\x06pr\
     oto3\
 ";

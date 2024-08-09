@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueRoom {
     // message fields
-    // @@protoc_insertion_point(field:RogueRoom.room_status)
-    pub room_status: ::protobuf::EnumOrUnknown<super::RogueRoomStatus::RogueRoomStatus>,
     // @@protoc_insertion_point(field:RogueRoom.site_id)
     pub site_id: u32,
+    // @@protoc_insertion_point(field:RogueRoom.room_status)
+    pub room_status: ::protobuf::EnumOrUnknown<super::RogueRoomStatus::RogueRoomStatus>,
     // @@protoc_insertion_point(field:RogueRoom.room_id)
     pub room_id: u32,
     // special fields
@@ -55,14 +55,14 @@ impl RogueRoom {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "room_status",
-            |m: &RogueRoom| { &m.room_status },
-            |m: &mut RogueRoom| { &mut m.room_status },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "site_id",
             |m: &RogueRoom| { &m.site_id },
             |m: &mut RogueRoom| { &mut m.site_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "room_status",
+            |m: &RogueRoom| { &m.room_status },
+            |m: &mut RogueRoom| { &mut m.room_status },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "room_id",
@@ -87,13 +87,13 @@ impl ::protobuf::Message for RogueRoom {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                8 => {
+                    self.site_id = is.read_uint32()?;
+                },
                 80 => {
                     self.room_status = is.read_enum_or_unknown()?;
                 },
-                40 => {
-                    self.site_id = is.read_uint32()?;
-                },
-                120 => {
+                96 => {
                     self.room_id = is.read_uint32()?;
                 },
                 tag => {
@@ -108,14 +108,14 @@ impl ::protobuf::Message for RogueRoom {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.site_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.site_id);
+        }
         if self.room_status != ::protobuf::EnumOrUnknown::new(super::RogueRoomStatus::RogueRoomStatus::ROGUE_ROOM_STATUS_NONE) {
             my_size += ::protobuf::rt::int32_size(10, self.room_status.value());
         }
-        if self.site_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.site_id);
-        }
         if self.room_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.room_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.room_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for RogueRoom {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.site_id != 0 {
+            os.write_uint32(1, self.site_id)?;
+        }
         if self.room_status != ::protobuf::EnumOrUnknown::new(super::RogueRoomStatus::RogueRoomStatus::ROGUE_ROOM_STATUS_NONE) {
             os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.room_status))?;
         }
-        if self.site_id != 0 {
-            os.write_uint32(5, self.site_id)?;
-        }
         if self.room_id != 0 {
-            os.write_uint32(15, self.room_id)?;
+            os.write_uint32(12, self.room_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for RogueRoom {
     }
 
     fn clear(&mut self) {
-        self.room_status = ::protobuf::EnumOrUnknown::new(super::RogueRoomStatus::RogueRoomStatus::ROGUE_ROOM_STATUS_NONE);
         self.site_id = 0;
+        self.room_status = ::protobuf::EnumOrUnknown::new(super::RogueRoomStatus::RogueRoomStatus::ROGUE_ROOM_STATUS_NONE);
         self.room_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueRoom {
         static instance: RogueRoom = RogueRoom {
-            room_status: ::protobuf::EnumOrUnknown::from_i32(0),
             site_id: 0,
+            room_status: ::protobuf::EnumOrUnknown::from_i32(0),
             room_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,10 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for RogueRoom {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0fRogueRoom.proto\x1a\x15RogueRoomStatus.proto\"p\n\tRogueRoom\x121\
-    \n\x0broom_status\x18\n\x20\x01(\x0e2\x10.RogueRoomStatusR\nroomStatus\
-    \x12\x17\n\x07site_id\x18\x05\x20\x01(\rR\x06siteId\x12\x17\n\x07room_id\
-    \x18\x0f\x20\x01(\rR\x06roomIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x0fRogueRoom.proto\x1a\x15RogueRoomStatus.proto\"p\n\tRogueRoom\x12\
+    \x17\n\x07site_id\x18\x01\x20\x01(\rR\x06siteId\x121\n\x0broom_status\
+    \x18\n\x20\x01(\x0e2\x10.RogueRoomStatusR\nroomStatus\x12\x17\n\x07room_\
+    id\x18\x0c\x20\x01(\rR\x06roomIdB\x15\n\x13emu.lunarcore.protob\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

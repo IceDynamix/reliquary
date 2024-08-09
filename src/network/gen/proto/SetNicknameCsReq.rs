@@ -73,7 +73,7 @@ impl ::protobuf::Message for SetNicknameCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                122 => {
                     self.nickname = is.read_string()?;
                 },
                 tag => {
@@ -89,7 +89,7 @@ impl ::protobuf::Message for SetNicknameCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.nickname.is_empty() {
-            my_size += ::protobuf::rt::string_size(12, &self.nickname);
+            my_size += ::protobuf::rt::string_size(15, &self.nickname);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SetNicknameCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.nickname.is_empty() {
-            os.write_string(12, &self.nickname)?;
+            os.write_string(15, &self.nickname)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for SetNicknameCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16SetNicknameCsReq.proto\".\n\x10SetNicknameCsReq\x12\x1a\n\x08nickn\
-    ame\x18\x0c\x20\x01(\tR\x08nicknameB\x15\n\x13emu.lunarcore.protob\x06pr\
+    ame\x18\x0f\x20\x01(\tR\x08nicknameB\x15\n\x13emu.lunarcore.protob\x06pr\
     oto3\
 ";
 

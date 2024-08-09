@@ -129,31 +129,31 @@ impl ::protobuf::Message for PVEBattleResultCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                24 => {
                     self.battle_id = is.read_uint32()?;
                 },
-                40 => {
+                56 => {
                     self.client_res_version = is.read_uint32()?;
                 },
-                64 => {
+                48 => {
                     self.stage_id = is.read_uint32()?;
                 },
-                120 => {
+                72 => {
                     self.end_status = is.read_enum_or_unknown()?;
                 },
                 104 => {
                     self.cost_time = is.read_uint32()?;
                 },
-                10 => {
+                90 => {
                     self.turn_snapshot_hash = is.read_bytes()?;
                 },
-                98 => {
+                66 => {
                     self.op_list.push(is.read_message()?);
                 },
-                114 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.stt)?;
                 },
-                80 => {
+                96 => {
                     self.is_ai_consider_ultra_skill = is.read_bool()?;
                 },
                 tag => {
@@ -169,22 +169,22 @@ impl ::protobuf::Message for PVEBattleResultCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.battle_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.battle_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.battle_id);
         }
         if self.client_res_version != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.client_res_version);
+            my_size += ::protobuf::rt::uint32_size(7, self.client_res_version);
         }
         if self.stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.stage_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.stage_id);
         }
         if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
-            my_size += ::protobuf::rt::int32_size(15, self.end_status.value());
+            my_size += ::protobuf::rt::int32_size(9, self.end_status.value());
         }
         if self.cost_time != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.cost_time);
         }
         if !self.turn_snapshot_hash.is_empty() {
-            my_size += ::protobuf::rt::bytes_size(1, &self.turn_snapshot_hash);
+            my_size += ::protobuf::rt::bytes_size(11, &self.turn_snapshot_hash);
         }
         for value in &self.op_list {
             let len = value.compute_size();
@@ -204,31 +204,31 @@ impl ::protobuf::Message for PVEBattleResultCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.battle_id != 0 {
-            os.write_uint32(11, self.battle_id)?;
+            os.write_uint32(3, self.battle_id)?;
         }
         if self.client_res_version != 0 {
-            os.write_uint32(5, self.client_res_version)?;
+            os.write_uint32(7, self.client_res_version)?;
         }
         if self.stage_id != 0 {
-            os.write_uint32(8, self.stage_id)?;
+            os.write_uint32(6, self.stage_id)?;
         }
         if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.end_status))?;
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.end_status))?;
         }
         if self.cost_time != 0 {
             os.write_uint32(13, self.cost_time)?;
         }
         if !self.turn_snapshot_hash.is_empty() {
-            os.write_bytes(1, &self.turn_snapshot_hash)?;
+            os.write_bytes(11, &self.turn_snapshot_hash)?;
         }
         for v in &self.op_list {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         if let Some(v) = self.stt.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         if self.is_ai_consider_ultra_skill != false {
-            os.write_bool(10, self.is_ai_consider_ultra_skill)?;
+            os.write_bool(12, self.is_ai_consider_ultra_skill)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -296,15 +296,15 @@ impl ::protobuf::reflect::ProtobufValue for PVEBattleResultCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aPVEBattleResultCsReq.proto\x1a\x15BattleEndStatus.proto\x1a\x0eBat\
     tleOp.proto\x1a\x16BattleStatistics.proto\"\xfd\x02\n\x14PVEBattleResult\
-    CsReq\x12\x1b\n\tbattle_id\x18\x0b\x20\x01(\rR\x08battleId\x12,\n\x12cli\
-    ent_res_version\x18\x05\x20\x01(\rR\x10clientResVersion\x12\x19\n\x08sta\
-    ge_id\x18\x08\x20\x01(\rR\x07stageId\x12/\n\nend_status\x18\x0f\x20\x01(\
+    CsReq\x12\x1b\n\tbattle_id\x18\x03\x20\x01(\rR\x08battleId\x12,\n\x12cli\
+    ent_res_version\x18\x07\x20\x01(\rR\x10clientResVersion\x12\x19\n\x08sta\
+    ge_id\x18\x06\x20\x01(\rR\x07stageId\x12/\n\nend_status\x18\t\x20\x01(\
     \x0e2\x10.BattleEndStatusR\tendStatus\x12\x1b\n\tcost_time\x18\r\x20\x01\
-    (\rR\x08costTime\x12,\n\x12turn_snapshot_hash\x18\x01\x20\x01(\x0cR\x10t\
-    urnSnapshotHash\x12\"\n\x07op_list\x18\x0c\x20\x03(\x0b2\t.BattleOpR\x06\
-    opList\x12#\n\x03stt\x18\x0e\x20\x01(\x0b2\x11.BattleStatisticsR\x03stt\
-    \x12:\n\x1ais_ai_consider_ultra_skill\x18\n\x20\x01(\x08R\x16isAiConside\
-    rUltraSkillB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    (\rR\x08costTime\x12,\n\x12turn_snapshot_hash\x18\x0b\x20\x01(\x0cR\x10t\
+    urnSnapshotHash\x12\"\n\x07op_list\x18\x08\x20\x03(\x0b2\t.BattleOpR\x06\
+    opList\x12#\n\x03stt\x18\x05\x20\x01(\x0b2\x11.BattleStatisticsR\x03stt\
+    \x12:\n\x1ais_ai_consider_ultra_skill\x18\x0c\x20\x01(\x08R\x16isAiConsi\
+    derUltraSkillB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

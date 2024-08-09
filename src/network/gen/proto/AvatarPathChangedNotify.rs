@@ -19,52 +19,59 @@
 #![allow(unused_results)]
 #![allow(unused_mut)]
 
-//! Generated file from `LMDFPHAHJGL.proto`
+//! Generated file from `AvatarPathChangedNotify.proto`
 
 /// Generated files are compatible only with the same version
 /// of protobuf runtime.
 const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 
-// @@protoc_insertion_point(message:LMDFPHAHJGL)
+// @@protoc_insertion_point(message:AvatarPathChangedNotify)
 #[derive(PartialEq,Clone,Default,Debug)]
-pub struct LMDFPHAHJGL {
+pub struct AvatarPathChangedNotify {
     // message fields
-    // @@protoc_insertion_point(field:LMDFPHAHJGL.PFOIMEJPCIP)
-    pub PFOIMEJPCIP: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:AvatarPathChangedNotify.changed_avatar_type)
+    pub changed_avatar_type: ::protobuf::EnumOrUnknown<super::MultiPathAvatarType::MultiPathAvatarType>,
+    // @@protoc_insertion_point(field:AvatarPathChangedNotify.base_avatar_id)
+    pub base_avatar_id: u32,
     // special fields
-    // @@protoc_insertion_point(special_field:LMDFPHAHJGL.special_fields)
+    // @@protoc_insertion_point(special_field:AvatarPathChangedNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
 }
 
-impl<'a> ::std::default::Default for &'a LMDFPHAHJGL {
-    fn default() -> &'a LMDFPHAHJGL {
-        <LMDFPHAHJGL as ::protobuf::Message>::default_instance()
+impl<'a> ::std::default::Default for &'a AvatarPathChangedNotify {
+    fn default() -> &'a AvatarPathChangedNotify {
+        <AvatarPathChangedNotify as ::protobuf::Message>::default_instance()
     }
 }
 
-impl LMDFPHAHJGL {
-    pub fn new() -> LMDFPHAHJGL {
+impl AvatarPathChangedNotify {
+    pub fn new() -> AvatarPathChangedNotify {
         ::std::default::Default::default()
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PFOIMEJPCIP",
-            |m: &LMDFPHAHJGL| { &m.PFOIMEJPCIP },
-            |m: &mut LMDFPHAHJGL| { &mut m.PFOIMEJPCIP },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "changed_avatar_type",
+            |m: &AvatarPathChangedNotify| { &m.changed_avatar_type },
+            |m: &mut AvatarPathChangedNotify| { &mut m.changed_avatar_type },
         ));
-        ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LMDFPHAHJGL>(
-            "LMDFPHAHJGL",
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "base_avatar_id",
+            |m: &AvatarPathChangedNotify| { &m.base_avatar_id },
+            |m: &mut AvatarPathChangedNotify| { &mut m.base_avatar_id },
+        ));
+        ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AvatarPathChangedNotify>(
+            "AvatarPathChangedNotify",
             fields,
             oneofs,
         )
     }
 }
 
-impl ::protobuf::Message for LMDFPHAHJGL {
-    const NAME: &'static str = "LMDFPHAHJGL";
+impl ::protobuf::Message for AvatarPathChangedNotify {
+    const NAME: &'static str = "AvatarPathChangedNotify";
 
     fn is_initialized(&self) -> bool {
         true
@@ -73,11 +80,11 @@ impl ::protobuf::Message for LMDFPHAHJGL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.PFOIMEJPCIP)?;
+                72 => {
+                    self.changed_avatar_type = is.read_enum_or_unknown()?;
                 },
-                96 => {
-                    self.PFOIMEJPCIP.push(is.read_uint32()?);
+                24 => {
+                    self.base_avatar_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -91,18 +98,24 @@ impl ::protobuf::Message for LMDFPHAHJGL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.PFOIMEJPCIP {
-            my_size += ::protobuf::rt::uint32_size(12, *value);
-        };
+        if self.changed_avatar_type != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
+            my_size += ::protobuf::rt::int32_size(9, self.changed_avatar_type.value());
+        }
+        if self.base_avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.base_avatar_id);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.PFOIMEJPCIP {
-            os.write_uint32(12, *v)?;
-        };
+        if self.changed_avatar_type != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.changed_avatar_type))?;
+        }
+        if self.base_avatar_id != 0 {
+            os.write_uint32(3, self.base_avatar_id)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,44 +128,49 @@ impl ::protobuf::Message for LMDFPHAHJGL {
         &mut self.special_fields
     }
 
-    fn new() -> LMDFPHAHJGL {
-        LMDFPHAHJGL::new()
+    fn new() -> AvatarPathChangedNotify {
+        AvatarPathChangedNotify::new()
     }
 
     fn clear(&mut self) {
-        self.PFOIMEJPCIP.clear();
+        self.changed_avatar_type = ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone);
+        self.base_avatar_id = 0;
         self.special_fields.clear();
     }
 
-    fn default_instance() -> &'static LMDFPHAHJGL {
-        static instance: LMDFPHAHJGL = LMDFPHAHJGL {
-            PFOIMEJPCIP: ::std::vec::Vec::new(),
+    fn default_instance() -> &'static AvatarPathChangedNotify {
+        static instance: AvatarPathChangedNotify = AvatarPathChangedNotify {
+            changed_avatar_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            base_avatar_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
     }
 }
 
-impl ::protobuf::MessageFull for LMDFPHAHJGL {
+impl ::protobuf::MessageFull for AvatarPathChangedNotify {
     fn descriptor() -> ::protobuf::reflect::MessageDescriptor {
         static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::MessageDescriptor> = ::protobuf::rt::Lazy::new();
-        descriptor.get(|| file_descriptor().message_by_package_relative_name("LMDFPHAHJGL").unwrap()).clone()
+        descriptor.get(|| file_descriptor().message_by_package_relative_name("AvatarPathChangedNotify").unwrap()).clone()
     }
 }
 
-impl ::std::fmt::Display for LMDFPHAHJGL {
+impl ::std::fmt::Display for AvatarPathChangedNotify {
     fn fmt(&self, f: &mut ::std::fmt::Formatter<'_>) -> ::std::fmt::Result {
         ::protobuf::text_format::fmt(self, f)
     }
 }
 
-impl ::protobuf::reflect::ProtobufValue for LMDFPHAHJGL {
+impl ::protobuf::reflect::ProtobufValue for AvatarPathChangedNotify {
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LMDFPHAHJGL.proto\"/\n\x0bLMDFPHAHJGL\x12\x20\n\x0bPFOIMEJPCIP\x18\
-    \x0c\x20\x03(\rR\x0bPFOIMEJPCIPB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x1dAvatarPathChangedNotify.proto\x1a\x19MultiPathAvatarType.proto\"\
+    \x85\x01\n\x17AvatarPathChangedNotify\x12D\n\x13changed_avatar_type\x18\
+    \t\x20\x01(\x0e2\x14.MultiPathAvatarTypeR\x11changedAvatarType\x12$\n\
+    \x0ebase_avatar_id\x18\x03\x20\x01(\rR\x0cbaseAvatarIdB\x15\n\x13emu.lun\
+    arcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -169,9 +187,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(0);
+            let mut deps = ::std::vec::Vec::with_capacity(1);
+            deps.push(super::MultiPathAvatarType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
-            messages.push(LMDFPHAHJGL::generated_message_descriptor_data());
+            messages.push(AvatarPathChangedNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);
             ::protobuf::reflect::GeneratedFileDescriptor::new_generated(
                 file_descriptor_proto(),

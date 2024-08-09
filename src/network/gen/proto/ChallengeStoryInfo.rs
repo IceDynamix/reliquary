@@ -80,10 +80,10 @@ impl ::protobuf::Message for ChallengeStoryInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cur_story_buffs)?;
                 },
-                18 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cur_boss_buffs)?;
                 },
                 tag => {
@@ -113,10 +113,10 @@ impl ::protobuf::Message for ChallengeStoryInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.cur_story_buffs.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if let Some(v) = self.cur_boss_buffs.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -170,8 +170,8 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeStoryInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18ChallengeStoryInfo.proto\x1a\x1cChallengeStoryBuffInfo.proto\x1a\
     \x1bChallengeBossBuffInfo.proto\"\x93\x01\n\x12ChallengeStoryInfo\x12?\n\
-    \x0fcur_story_buffs\x18\n\x20\x01(\x0b2\x17.ChallengeStoryBuffInfoR\rcur\
-    StoryBuffs\x12<\n\x0ecur_boss_buffs\x18\x02\x20\x01(\x0b2\x16.ChallengeB\
+    \x0fcur_story_buffs\x18\x01\x20\x01(\x0b2\x17.ChallengeStoryBuffInfoR\rc\
+    urStoryBuffs\x12<\n\x0ecur_boss_buffs\x18\t\x20\x01(\x0b2\x16.ChallengeB\
     ossBuffInfoR\x0ccurBossBuffsB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

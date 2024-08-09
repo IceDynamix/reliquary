@@ -19,73 +19,73 @@
 #![allow(unused_results)]
 #![allow(unused_mut)]
 
-//! Generated file from `RogueVirtualItem.proto`
+//! Generated file from `RelicAvatarRecommendScRsp.proto`
 
 /// Generated files are compatible only with the same version
 /// of protobuf runtime.
 const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 
-// @@protoc_insertion_point(message:RogueVirtualItem)
+// @@protoc_insertion_point(message:RelicAvatarRecommendScRsp)
 #[derive(PartialEq,Clone,Default,Debug)]
-pub struct RogueVirtualItem {
+pub struct RelicAvatarRecommendScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueVirtualItem.ACJKANLIGBM)
-    pub ACJKANLIGBM: u32,
-    // @@protoc_insertion_point(field:RogueVirtualItem.money)
-    pub money: u32,
-    // @@protoc_insertion_point(field:RogueVirtualItem.DDOPHIJMILL)
-    pub DDOPHIJMILL: u32,
-    // @@protoc_insertion_point(field:RogueVirtualItem.MFOPPKIBGNJ)
-    pub MFOPPKIBGNJ: u32,
+    // @@protoc_insertion_point(field:RelicAvatarRecommendScRsp.avatar_id_list)
+    pub avatar_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RelicAvatarRecommendScRsp.is_fetch_avatar_list)
+    pub is_fetch_avatar_list: bool,
+    // @@protoc_insertion_point(field:RelicAvatarRecommendScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:RelicAvatarRecommendScRsp.set_id)
+    pub set_id: u32,
     // special fields
-    // @@protoc_insertion_point(special_field:RogueVirtualItem.special_fields)
+    // @@protoc_insertion_point(special_field:RelicAvatarRecommendScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
 }
 
-impl<'a> ::std::default::Default for &'a RogueVirtualItem {
-    fn default() -> &'a RogueVirtualItem {
-        <RogueVirtualItem as ::protobuf::Message>::default_instance()
+impl<'a> ::std::default::Default for &'a RelicAvatarRecommendScRsp {
+    fn default() -> &'a RelicAvatarRecommendScRsp {
+        <RelicAvatarRecommendScRsp as ::protobuf::Message>::default_instance()
     }
 }
 
-impl RogueVirtualItem {
-    pub fn new() -> RogueVirtualItem {
+impl RelicAvatarRecommendScRsp {
+    pub fn new() -> RelicAvatarRecommendScRsp {
         ::std::default::Default::default()
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ACJKANLIGBM",
-            |m: &RogueVirtualItem| { &m.ACJKANLIGBM },
-            |m: &mut RogueVirtualItem| { &mut m.ACJKANLIGBM },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "avatar_id_list",
+            |m: &RelicAvatarRecommendScRsp| { &m.avatar_id_list },
+            |m: &mut RelicAvatarRecommendScRsp| { &mut m.avatar_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "money",
-            |m: &RogueVirtualItem| { &m.money },
-            |m: &mut RogueVirtualItem| { &mut m.money },
+            "is_fetch_avatar_list",
+            |m: &RelicAvatarRecommendScRsp| { &m.is_fetch_avatar_list },
+            |m: &mut RelicAvatarRecommendScRsp| { &mut m.is_fetch_avatar_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DDOPHIJMILL",
-            |m: &RogueVirtualItem| { &m.DDOPHIJMILL },
-            |m: &mut RogueVirtualItem| { &mut m.DDOPHIJMILL },
+            "retcode",
+            |m: &RelicAvatarRecommendScRsp| { &m.retcode },
+            |m: &mut RelicAvatarRecommendScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MFOPPKIBGNJ",
-            |m: &RogueVirtualItem| { &m.MFOPPKIBGNJ },
-            |m: &mut RogueVirtualItem| { &mut m.MFOPPKIBGNJ },
+            "set_id",
+            |m: &RelicAvatarRecommendScRsp| { &m.set_id },
+            |m: &mut RelicAvatarRecommendScRsp| { &mut m.set_id },
         ));
-        ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueVirtualItem>(
-            "RogueVirtualItem",
+        ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RelicAvatarRecommendScRsp>(
+            "RelicAvatarRecommendScRsp",
             fields,
             oneofs,
         )
     }
 }
 
-impl ::protobuf::Message for RogueVirtualItem {
-    const NAME: &'static str = "RogueVirtualItem";
+impl ::protobuf::Message for RelicAvatarRecommendScRsp {
+    const NAME: &'static str = "RelicAvatarRecommendScRsp";
 
     fn is_initialized(&self) -> bool {
         true
@@ -94,17 +94,20 @@ impl ::protobuf::Message for RogueVirtualItem {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.avatar_id_list)?;
+                },
                 80 => {
-                    self.ACJKANLIGBM = is.read_uint32()?;
+                    self.avatar_id_list.push(is.read_uint32()?);
                 },
-                120 => {
-                    self.money = is.read_uint32()?;
+                8 => {
+                    self.is_fetch_avatar_list = is.read_bool()?;
                 },
-                72 => {
-                    self.DDOPHIJMILL = is.read_uint32()?;
+                96 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 64 => {
-                    self.MFOPPKIBGNJ = is.read_uint32()?;
+                    self.set_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,17 +121,17 @@ impl ::protobuf::Message for RogueVirtualItem {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ACJKANLIGBM != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.ACJKANLIGBM);
+        for value in &self.avatar_id_list {
+            my_size += ::protobuf::rt::uint32_size(10, *value);
+        };
+        if self.is_fetch_avatar_list != false {
+            my_size += 1 + 1;
         }
-        if self.money != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.money);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
-        if self.DDOPHIJMILL != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.DDOPHIJMILL);
-        }
-        if self.MFOPPKIBGNJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.MFOPPKIBGNJ);
+        if self.set_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.set_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +139,17 @@ impl ::protobuf::Message for RogueVirtualItem {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ACJKANLIGBM != 0 {
-            os.write_uint32(10, self.ACJKANLIGBM)?;
+        for v in &self.avatar_id_list {
+            os.write_uint32(10, *v)?;
+        };
+        if self.is_fetch_avatar_list != false {
+            os.write_bool(1, self.is_fetch_avatar_list)?;
         }
-        if self.money != 0 {
-            os.write_uint32(15, self.money)?;
+        if self.retcode != 0 {
+            os.write_uint32(12, self.retcode)?;
         }
-        if self.DDOPHIJMILL != 0 {
-            os.write_uint32(9, self.DDOPHIJMILL)?;
-        }
-        if self.MFOPPKIBGNJ != 0 {
-            os.write_uint32(8, self.MFOPPKIBGNJ)?;
+        if self.set_id != 0 {
+            os.write_uint32(8, self.set_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -160,53 +163,53 @@ impl ::protobuf::Message for RogueVirtualItem {
         &mut self.special_fields
     }
 
-    fn new() -> RogueVirtualItem {
-        RogueVirtualItem::new()
+    fn new() -> RelicAvatarRecommendScRsp {
+        RelicAvatarRecommendScRsp::new()
     }
 
     fn clear(&mut self) {
-        self.ACJKANLIGBM = 0;
-        self.money = 0;
-        self.DDOPHIJMILL = 0;
-        self.MFOPPKIBGNJ = 0;
+        self.avatar_id_list.clear();
+        self.is_fetch_avatar_list = false;
+        self.retcode = 0;
+        self.set_id = 0;
         self.special_fields.clear();
     }
 
-    fn default_instance() -> &'static RogueVirtualItem {
-        static instance: RogueVirtualItem = RogueVirtualItem {
-            ACJKANLIGBM: 0,
-            money: 0,
-            DDOPHIJMILL: 0,
-            MFOPPKIBGNJ: 0,
+    fn default_instance() -> &'static RelicAvatarRecommendScRsp {
+        static instance: RelicAvatarRecommendScRsp = RelicAvatarRecommendScRsp {
+            avatar_id_list: ::std::vec::Vec::new(),
+            is_fetch_avatar_list: false,
+            retcode: 0,
+            set_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
     }
 }
 
-impl ::protobuf::MessageFull for RogueVirtualItem {
+impl ::protobuf::MessageFull for RelicAvatarRecommendScRsp {
     fn descriptor() -> ::protobuf::reflect::MessageDescriptor {
         static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::MessageDescriptor> = ::protobuf::rt::Lazy::new();
-        descriptor.get(|| file_descriptor().message_by_package_relative_name("RogueVirtualItem").unwrap()).clone()
+        descriptor.get(|| file_descriptor().message_by_package_relative_name("RelicAvatarRecommendScRsp").unwrap()).clone()
     }
 }
 
-impl ::std::fmt::Display for RogueVirtualItem {
+impl ::std::fmt::Display for RelicAvatarRecommendScRsp {
     fn fmt(&self, f: &mut ::std::fmt::Formatter<'_>) -> ::std::fmt::Result {
         ::protobuf::text_format::fmt(self, f)
     }
 }
 
-impl ::protobuf::reflect::ProtobufValue for RogueVirtualItem {
+impl ::protobuf::reflect::ProtobufValue for RelicAvatarRecommendScRsp {
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16RogueVirtualItem.proto\"\x8e\x01\n\x10RogueVirtualItem\x12\x20\n\
-    \x0bACJKANLIGBM\x18\n\x20\x01(\rR\x0bACJKANLIGBM\x12\x14\n\x05money\x18\
-    \x0f\x20\x01(\rR\x05money\x12\x20\n\x0bDDOPHIJMILL\x18\t\x20\x01(\rR\x0b\
-    DDOPHIJMILL\x12\x20\n\x0bMFOPPKIBGNJ\x18\x08\x20\x01(\rR\x0bMFOPPKIBGNJB\
-    \x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x1fRelicAvatarRecommendScRsp.proto\"\xa3\x01\n\x19RelicAvatarRecommen\
+    dScRsp\x12$\n\x0eavatar_id_list\x18\n\x20\x03(\rR\x0cavatarIdList\x12/\n\
+    \x14is_fetch_avatar_list\x18\x01\x20\x01(\x08R\x11isFetchAvatarList\x12\
+    \x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\x12\x15\n\x06set_id\x18\
+    \x08\x20\x01(\rR\x05setIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -225,7 +228,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(0);
             let mut messages = ::std::vec::Vec::with_capacity(1);
-            messages.push(RogueVirtualItem::generated_message_descriptor_data());
+            messages.push(RelicAvatarRecommendScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);
             ::protobuf::reflect::GeneratedFileDescriptor::new_generated(
                 file_descriptor_proto(),

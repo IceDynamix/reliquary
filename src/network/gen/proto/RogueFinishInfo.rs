@@ -129,13 +129,13 @@ impl ::protobuf::Message for RogueFinishInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cur_score_reward_info)?;
                 },
-                58 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.score_reward_info)?;
                 },
-                42 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.record_info)?;
                 },
                 9048 => {
@@ -147,13 +147,13 @@ impl ::protobuf::Message for RogueFinishInfo {
                 32 => {
                     self.is_win = is.read_bool()?;
                 },
-                15288 => {
+                14544 => {
                     self.reach_room_count = is.read_uint32()?;
                 },
-                24 => {
+                8 => {
                     self.pass_room_count = is.read_uint32()?;
                 },
-                80 => {
+                120 => {
                     self.taken_score = is.read_uint32()?;
                 },
                 tag => {
@@ -190,13 +190,13 @@ impl ::protobuf::Message for RogueFinishInfo {
             my_size += 1 + 1;
         }
         if self.reach_room_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(1911, self.reach_room_count);
+            my_size += ::protobuf::rt::uint32_size(1818, self.reach_room_count);
         }
         if self.pass_room_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.pass_room_count);
+            my_size += ::protobuf::rt::uint32_size(1, self.pass_room_count);
         }
         if self.taken_score != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.taken_score);
+            my_size += ::protobuf::rt::uint32_size(15, self.taken_score);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -205,13 +205,13 @@ impl ::protobuf::Message for RogueFinishInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.cur_score_reward_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if let Some(v) = self.score_reward_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         if let Some(v) = self.record_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if self.area_id != 0 {
             os.write_uint32(1131, self.area_id)?;
@@ -223,13 +223,13 @@ impl ::protobuf::Message for RogueFinishInfo {
             os.write_bool(4, self.is_win)?;
         }
         if self.reach_room_count != 0 {
-            os.write_uint32(1911, self.reach_room_count)?;
+            os.write_uint32(1818, self.reach_room_count)?;
         }
         if self.pass_room_count != 0 {
-            os.write_uint32(3, self.pass_room_count)?;
+            os.write_uint32(1, self.pass_room_count)?;
         }
         if self.taken_score != 0 {
-            os.write_uint32(10, self.taken_score)?;
+            os.write_uint32(15, self.taken_score)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -297,15 +297,15 @@ impl ::protobuf::reflect::ProtobufValue for RogueFinishInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15RogueFinishInfo.proto\x1a\x1aRogueScoreRewardInfo.proto\x1a\x15Rog\
     ueRecordInfo.proto\"\x97\x03\n\x0fRogueFinishInfo\x12H\n\x15cur_score_re\
-    ward_info\x18\x0e\x20\x01(\x0b2\x15.RogueScoreRewardInfoR\x12curScoreRew\
-    ardInfo\x12A\n\x11score_reward_info\x18\x07\x20\x01(\x0b2\x15.RogueScore\
-    RewardInfoR\x0fscoreRewardInfo\x121\n\x0brecord_info\x18\x05\x20\x01(\
+    ward_info\x18\x02\x20\x01(\x0b2\x15.RogueScoreRewardInfoR\x12curScoreRew\
+    ardInfo\x12A\n\x11score_reward_info\x18\x05\x20\x01(\x0b2\x15.RogueScore\
+    RewardInfoR\x0fscoreRewardInfo\x121\n\x0brecord_info\x18\x0e\x20\x01(\
     \x0b2\x10.RogueRecordInfoR\nrecordInfo\x12\x18\n\x07area_id\x18\xeb\x08\
     \x20\x01(\rR\x06areaId\x12\x1f\n\x0btotal_score\x18\t\x20\x01(\rR\ntotal\
     Score\x12\x15\n\x06is_win\x18\x04\x20\x01(\x08R\x05isWin\x12)\n\x10reach\
-    _room_count\x18\xf7\x0e\x20\x01(\rR\x0ereachRoomCount\x12&\n\x0fpass_roo\
-    m_count\x18\x03\x20\x01(\rR\rpassRoomCount\x12\x1f\n\x0btaken_score\x18\
-    \n\x20\x01(\rR\ntakenScoreB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    _room_count\x18\x9a\x0e\x20\x01(\rR\x0ereachRoomCount\x12&\n\x0fpass_roo\
+    m_count\x18\x01\x20\x01(\rR\rpassRoomCount\x12\x1f\n\x0btaken_score\x18\
+    \x0f\x20\x01(\rR\ntakenScoreB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

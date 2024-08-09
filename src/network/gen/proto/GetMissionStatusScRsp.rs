@@ -108,31 +108,31 @@ impl ::protobuf::Message for GetMissionStatusScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
                 },
-                58 => {
+                50 => {
                     is.read_repeated_packed_uint32_into(&mut self.finished_main_mission_id_list)?;
                 },
-                56 => {
+                48 => {
                     self.finished_main_mission_id_list.push(is.read_uint32()?);
                 },
-                82 => {
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.unfinished_main_mission_id_list)?;
                 },
-                80 => {
+                96 => {
                     self.unfinished_main_mission_id_list.push(is.read_uint32()?);
                 },
-                122 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.disabled_main_mission_id_list)?;
                 },
-                120 => {
+                64 => {
                     self.disabled_main_mission_id_list.push(is.read_uint32()?);
                 },
-                34 => {
+                114 => {
                     self.sub_mission_status_list.push(is.read_message()?);
                 },
-                98 => {
+                34 => {
                     self.mission_event_status_list.push(is.read_message()?);
                 },
                 tag => {
@@ -148,16 +148,16 @@ impl ::protobuf::Message for GetMissionStatusScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         for value in &self.finished_main_mission_id_list {
-            my_size += ::protobuf::rt::uint32_size(7, *value);
+            my_size += ::protobuf::rt::uint32_size(6, *value);
         };
         for value in &self.unfinished_main_mission_id_list {
-            my_size += ::protobuf::rt::uint32_size(10, *value);
+            my_size += ::protobuf::rt::uint32_size(12, *value);
         };
         for value in &self.disabled_main_mission_id_list {
-            my_size += ::protobuf::rt::uint32_size(15, *value);
+            my_size += ::protobuf::rt::uint32_size(8, *value);
         };
         for value in &self.sub_mission_status_list {
             let len = value.compute_size();
@@ -174,22 +174,22 @@ impl ::protobuf::Message for GetMissionStatusScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
         for v in &self.finished_main_mission_id_list {
-            os.write_uint32(7, *v)?;
+            os.write_uint32(6, *v)?;
         };
         for v in &self.unfinished_main_mission_id_list {
-            os.write_uint32(10, *v)?;
+            os.write_uint32(12, *v)?;
         };
         for v in &self.disabled_main_mission_id_list {
-            os.write_uint32(15, *v)?;
+            os.write_uint32(8, *v)?;
         };
         for v in &self.sub_mission_status_list {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         for v in &self.mission_event_status_list {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -250,14 +250,14 @@ impl ::protobuf::reflect::ProtobufValue for GetMissionStatusScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bGetMissionStatusScRsp.proto\x1a\rMission.proto\"\x81\x03\n\x15GetM\
-    issionStatusScRsp\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x12@\
-    \n\x1dfinished_main_mission_id_list\x18\x07\x20\x03(\rR\x19finishedMainM\
-    issionIdList\x12D\n\x1funfinished_main_mission_id_list\x18\n\x20\x03(\rR\
-    \x1bunfinishedMainMissionIdList\x12@\n\x1ddisabled_main_mission_id_list\
-    \x18\x0f\x20\x03(\rR\x19disabledMainMissionIdList\x12?\n\x17sub_mission_\
-    status_list\x18\x04\x20\x03(\x0b2\x08.MissionR\x14subMissionStatusList\
-    \x12C\n\x19mission_event_status_list\x18\x0c\x20\x03(\x0b2\x08.MissionR\
-    \x16missionEventStatusListB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    issionStatusScRsp\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\
+    \x12@\n\x1dfinished_main_mission_id_list\x18\x06\x20\x03(\rR\x19finished\
+    MainMissionIdList\x12D\n\x1funfinished_main_mission_id_list\x18\x0c\x20\
+    \x03(\rR\x1bunfinishedMainMissionIdList\x12@\n\x1ddisabled_main_mission_\
+    id_list\x18\x08\x20\x03(\rR\x19disabledMainMissionIdList\x12?\n\x17sub_m\
+    ission_status_list\x18\x0e\x20\x03(\x0b2\x08.MissionR\x14subMissionStatu\
+    sList\x12C\n\x19mission_event_status_list\x18\x04\x20\x03(\x0b2\x08.Miss\
+    ionR\x16missionEventStatusListB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

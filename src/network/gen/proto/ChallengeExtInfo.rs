@@ -73,7 +73,7 @@ impl ::protobuf::Message for ChallengeExtInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.boss_info)?;
                 },
                 tag => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for ChallengeExtInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.boss_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +150,7 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeExtInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16ChallengeExtInfo.proto\x1a\x17ChallengeBossInfo.proto\"C\n\x10Chal\
-    lengeExtInfo\x12/\n\tboss_info\x18\x07\x20\x01(\x0b2\x12.ChallengeBossIn\
+    lengeExtInfo\x12/\n\tboss_info\x18\x0b\x20\x01(\x0b2\x12.ChallengeBossIn\
     foR\x08bossInfoB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

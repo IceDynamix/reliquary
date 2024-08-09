@@ -11,7 +11,7 @@ license = "MIT"
 
 [dependencies]
 base64 = "0.22"
-etherparse = "0.14"
+etherparse = "0.15"
 kcp = "0.5"
 protobuf = "~3.4.0"
 rand_mt = "4.2"

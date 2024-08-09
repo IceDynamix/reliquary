@@ -118,22 +118,22 @@ impl ::protobuf::Message for Item {
                 48 => {
                     self.item_id = is.read_uint32()?;
                 },
-                24 => {
+                40 => {
                     self.level = is.read_uint32()?;
                 },
-                56 => {
+                32 => {
                     self.num = is.read_uint32()?;
                 },
-                8 => {
+                64 => {
                     self.main_affix_id = is.read_uint32()?;
                 },
-                72 => {
+                88 => {
                     self.rank = is.read_uint32()?;
                 },
-                96 => {
+                8 => {
                     self.promotion = is.read_uint32()?;
                 },
-                112 => {
+                80 => {
                     self.unique_id = is.read_uint32()?;
                 },
                 tag => {
@@ -152,22 +152,22 @@ impl ::protobuf::Message for Item {
             my_size += ::protobuf::rt::uint32_size(6, self.item_id);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.level);
+            my_size += ::protobuf::rt::uint32_size(5, self.level);
         }
         if self.num != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.num);
+            my_size += ::protobuf::rt::uint32_size(4, self.num);
         }
         if self.main_affix_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.main_affix_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.main_affix_id);
         }
         if self.rank != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.rank);
+            my_size += ::protobuf::rt::uint32_size(11, self.rank);
         }
         if self.promotion != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.promotion);
+            my_size += ::protobuf::rt::uint32_size(1, self.promotion);
         }
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.unique_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -179,22 +179,22 @@ impl ::protobuf::Message for Item {
             os.write_uint32(6, self.item_id)?;
         }
         if self.level != 0 {
-            os.write_uint32(3, self.level)?;
+            os.write_uint32(5, self.level)?;
         }
         if self.num != 0 {
-            os.write_uint32(7, self.num)?;
+            os.write_uint32(4, self.num)?;
         }
         if self.main_affix_id != 0 {
-            os.write_uint32(1, self.main_affix_id)?;
+            os.write_uint32(8, self.main_affix_id)?;
         }
         if self.rank != 0 {
-            os.write_uint32(9, self.rank)?;
+            os.write_uint32(11, self.rank)?;
         }
         if self.promotion != 0 {
-            os.write_uint32(12, self.promotion)?;
+            os.write_uint32(1, self.promotion)?;
         }
         if self.unique_id != 0 {
-            os.write_uint32(14, self.unique_id)?;
+            os.write_uint32(10, self.unique_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -257,12 +257,11 @@ impl ::protobuf::reflect::ProtobufValue for Item {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\nItem.proto\"\xba\x01\n\x04Item\x12\x17\n\x07item_id\x18\x06\x20\x01(\
-    \rR\x06itemId\x12\x14\n\x05level\x18\x03\x20\x01(\rR\x05level\x12\x10\n\
-    \x03num\x18\x07\x20\x01(\rR\x03num\x12\"\n\rmain_affix_id\x18\x01\x20\
-    \x01(\rR\x0bmainAffixId\x12\x12\n\x04rank\x18\t\x20\x01(\rR\x04rank\x12\
-    \x1c\n\tpromotion\x18\x0c\x20\x01(\rR\tpromotion\x12\x1b\n\tunique_id\
-    \x18\x0e\x20\x01(\rR\x08uniqueIdB\x15\n\x13emu.lunarcore.protob\x06proto\
-    3\
+    \rR\x06itemId\x12\x14\n\x05level\x18\x05\x20\x01(\rR\x05level\x12\x10\n\
+    \x03num\x18\x04\x20\x01(\rR\x03num\x12\"\n\rmain_affix_id\x18\x08\x20\
+    \x01(\rR\x0bmainAffixId\x12\x12\n\x04rank\x18\x0b\x20\x01(\rR\x04rank\
+    \x12\x1c\n\tpromotion\x18\x01\x20\x01(\rR\tpromotion\x12\x1b\n\tunique_i\
+    d\x18\n\x20\x01(\rR\x08uniqueIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

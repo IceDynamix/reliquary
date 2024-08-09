@@ -108,22 +108,22 @@ impl ::protobuf::Message for DisplayRelicInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                104 => {
                     self.exp = is.read_uint32()?;
                 },
-                96 => {
+                120 => {
                     self.main_affix_id = is.read_uint32()?;
                 },
-                74 => {
+                82 => {
                     self.sub_affix_list.push(is.read_message()?);
                 },
                 64 => {
                     self.tid = is.read_uint32()?;
                 },
-                88 => {
+                40 => {
                     self.slot = is.read_uint32()?;
                 },
-                56 => {
+                96 => {
                     self.level = is.read_uint32()?;
                 },
                 tag => {
@@ -139,10 +139,10 @@ impl ::protobuf::Message for DisplayRelicInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.exp);
+            my_size += ::protobuf::rt::uint32_size(13, self.exp);
         }
         if self.main_affix_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.main_affix_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.main_affix_id);
         }
         for value in &self.sub_affix_list {
             let len = value.compute_size();
@@ -152,10 +152,10 @@ impl ::protobuf::Message for DisplayRelicInfo {
             my_size += ::protobuf::rt::uint32_size(8, self.tid);
         }
         if self.slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.slot);
+            my_size += ::protobuf::rt::uint32_size(5, self.slot);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.level);
+            my_size += ::protobuf::rt::uint32_size(12, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -164,22 +164,22 @@ impl ::protobuf::Message for DisplayRelicInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.exp != 0 {
-            os.write_uint32(4, self.exp)?;
+            os.write_uint32(13, self.exp)?;
         }
         if self.main_affix_id != 0 {
-            os.write_uint32(12, self.main_affix_id)?;
+            os.write_uint32(15, self.main_affix_id)?;
         }
         for v in &self.sub_affix_list {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         if self.tid != 0 {
             os.write_uint32(8, self.tid)?;
         }
         if self.slot != 0 {
-            os.write_uint32(11, self.slot)?;
+            os.write_uint32(5, self.slot)?;
         }
         if self.level != 0 {
-            os.write_uint32(7, self.level)?;
+            os.write_uint32(12, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -240,12 +240,12 @@ impl ::protobuf::reflect::ProtobufValue for DisplayRelicInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16DisplayRelicInfo.proto\x1a\x10RelicAffix.proto\"\xb7\x01\n\x10Disp\
-    layRelicInfo\x12\x10\n\x03exp\x18\x04\x20\x01(\rR\x03exp\x12\"\n\rmain_a\
-    ffix_id\x18\x0c\x20\x01(\rR\x0bmainAffixId\x121\n\x0esub_affix_list\x18\
-    \t\x20\x03(\x0b2\x0b.RelicAffixR\x0csubAffixList\x12\x10\n\x03tid\x18\
-    \x08\x20\x01(\rR\x03tid\x12\x12\n\x04slot\x18\x0b\x20\x01(\rR\x04slot\
-    \x12\x14\n\x05level\x18\x07\x20\x01(\rR\x05levelB\x15\n\x13emu.lunarcore\
-    .protob\x06proto3\
+    layRelicInfo\x12\x10\n\x03exp\x18\r\x20\x01(\rR\x03exp\x12\"\n\rmain_aff\
+    ix_id\x18\x0f\x20\x01(\rR\x0bmainAffixId\x121\n\x0esub_affix_list\x18\n\
+    \x20\x03(\x0b2\x0b.RelicAffixR\x0csubAffixList\x12\x10\n\x03tid\x18\x08\
+    \x20\x01(\rR\x03tid\x12\x12\n\x04slot\x18\x05\x20\x01(\rR\x04slot\x12\
+    \x14\n\x05level\x18\x0c\x20\x01(\rR\x05levelB\x15\n\x13emu.lunarcore.pro\
+    tob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

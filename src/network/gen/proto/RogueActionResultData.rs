@@ -46,7 +46,7 @@ impl RogueActionResultData {
         ::std::default::Default::default()
     }
 
-    // .RogueVirtualItemData add_item_list = 11;
+    // .RogueVirtualItemData add_item_list = 6;
 
     pub fn add_item_list(&self) -> &super::RogueVirtualItemData::RogueVirtualItemData {
         match self.result_action {
@@ -95,7 +95,7 @@ impl RogueActionResultData {
         }
     }
 
-    // .RogueVirtualItemData remove_item_list = 14;
+    // .RogueVirtualItemData remove_item_list = 2;
 
     pub fn remove_item_list(&self) -> &super::RogueVirtualItemData::RogueVirtualItemData {
         match self.result_action {
@@ -144,7 +144,7 @@ impl RogueActionResultData {
         }
     }
 
-    // .RogueBuffData add_buff_list = 1586;
+    // .RogueBuffData add_buff_list = 1884;
 
     pub fn add_buff_list(&self) -> &super::RogueBuffData::RogueBuffData {
         match self.result_action {
@@ -193,7 +193,7 @@ impl RogueActionResultData {
         }
     }
 
-    // .RogueBuffData remove_buff_list = 1574;
+    // .RogueBuffData remove_buff_list = 1544;
 
     pub fn remove_buff_list(&self) -> &super::RogueBuffData::RogueBuffData {
         match self.result_action {
@@ -242,7 +242,7 @@ impl RogueActionResultData {
         }
     }
 
-    // .RogueMiracleData add_miracle_list = 516;
+    // .RogueMiracleData add_miracle_list = 217;
 
     pub fn add_miracle_list(&self) -> &super::RogueMiracleData::RogueMiracleData {
         match self.result_action {
@@ -348,19 +348,19 @@ impl ::protobuf::Message for RogueActionResultData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                50 => {
                     self.result_action = ::std::option::Option::Some(rogue_action_result_data::Result_action::AddItemList(is.read_message()?));
                 },
-                114 => {
+                18 => {
                     self.result_action = ::std::option::Option::Some(rogue_action_result_data::Result_action::RemoveItemList(is.read_message()?));
                 },
-                12690 => {
+                15074 => {
                     self.result_action = ::std::option::Option::Some(rogue_action_result_data::Result_action::AddBuffList(is.read_message()?));
                 },
-                12594 => {
+                12354 => {
                     self.result_action = ::std::option::Option::Some(rogue_action_result_data::Result_action::RemoveBuffList(is.read_message()?));
                 },
-                4130 => {
+                1738 => {
                     self.result_action = ::std::option::Option::Some(rogue_action_result_data::Result_action::AddMiracleList(is.read_message()?));
                 },
                 tag => {
@@ -408,19 +408,19 @@ impl ::protobuf::Message for RogueActionResultData {
         if let ::std::option::Option::Some(ref v) = self.result_action {
             match v {
                 &rogue_action_result_data::Result_action::AddItemList(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
                 &rogue_action_result_data::Result_action::RemoveItemList(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
                 &rogue_action_result_data::Result_action::AddBuffList(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1586, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1884, v, os)?;
                 },
                 &rogue_action_result_data::Result_action::RemoveBuffList(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1574, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1544, v, os)?;
                 },
                 &rogue_action_result_data::Result_action::AddMiracleList(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(516, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(217, v, os)?;
                 },
             };
         }
@@ -514,12 +514,12 @@ pub mod rogue_action_result_data {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bRogueActionResultData.proto\x1a\x13RogueBuffData.proto\x1a\x16Rogu\
     eMiracleData.proto\x1a\x1aRogueVirtualItemData.proto\"\xdc\x02\n\x15Rogu\
-    eActionResultData\x12;\n\radd_item_list\x18\x0b\x20\x01(\x0b2\x15.RogueV\
-    irtualItemDataH\0R\x0baddItemList\x12A\n\x10remove_item_list\x18\x0e\x20\
+    eActionResultData\x12;\n\radd_item_list\x18\x06\x20\x01(\x0b2\x15.RogueV\
+    irtualItemDataH\0R\x0baddItemList\x12A\n\x10remove_item_list\x18\x02\x20\
     \x01(\x0b2\x15.RogueVirtualItemDataH\0R\x0eremoveItemList\x125\n\radd_bu\
-    ff_list\x18\xb2\x0c\x20\x01(\x0b2\x0e.RogueBuffDataH\0R\x0baddBuffList\
-    \x12;\n\x10remove_buff_list\x18\xa6\x0c\x20\x01(\x0b2\x0e.RogueBuffDataH\
-    \0R\x0eremoveBuffList\x12>\n\x10add_miracle_list\x18\x84\x04\x20\x01(\
+    ff_list\x18\xdc\x0e\x20\x01(\x0b2\x0e.RogueBuffDataH\0R\x0baddBuffList\
+    \x12;\n\x10remove_buff_list\x18\x88\x0c\x20\x01(\x0b2\x0e.RogueBuffDataH\
+    \0R\x0eremoveBuffList\x12>\n\x10add_miracle_list\x18\xd9\x01\x20\x01(\
     \x0b2\x11.RogueMiracleDataH\0R\x0eaddMiracleListB\x0f\n\rresult_actionB\
     \x15\n\x13emu.lunarcore.protob\x06proto3\
 ";

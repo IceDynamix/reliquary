@@ -94,16 +94,16 @@ impl ::protobuf::Message for StaminaInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                16 => {
                     self.stamina = is.read_uint32()?;
                 },
                 88 => {
                     self.next_recover_time = is.read_int64()?;
                 },
-                120 => {
+                112 => {
                     self.next_reserve_time = is.read_int64()?;
                 },
-                16 => {
+                96 => {
                     self.reserve_stamina = is.read_uint32()?;
                 },
                 tag => {
@@ -119,16 +119,16 @@ impl ::protobuf::Message for StaminaInfoScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.stamina != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.stamina);
+            my_size += ::protobuf::rt::uint32_size(2, self.stamina);
         }
         if self.next_recover_time != 0 {
             my_size += ::protobuf::rt::int64_size(11, self.next_recover_time);
         }
         if self.next_reserve_time != 0 {
-            my_size += ::protobuf::rt::int64_size(15, self.next_reserve_time);
+            my_size += ::protobuf::rt::int64_size(14, self.next_reserve_time);
         }
         if self.reserve_stamina != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.reserve_stamina);
+            my_size += ::protobuf::rt::uint32_size(12, self.reserve_stamina);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,16 +137,16 @@ impl ::protobuf::Message for StaminaInfoScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.stamina != 0 {
-            os.write_uint32(1, self.stamina)?;
+            os.write_uint32(2, self.stamina)?;
         }
         if self.next_recover_time != 0 {
             os.write_int64(11, self.next_recover_time)?;
         }
         if self.next_reserve_time != 0 {
-            os.write_int64(15, self.next_reserve_time)?;
+            os.write_int64(14, self.next_reserve_time)?;
         }
         if self.reserve_stamina != 0 {
-            os.write_uint32(2, self.reserve_stamina)?;
+            os.write_uint32(12, self.reserve_stamina)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for StaminaInfoScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19StaminaInfoScNotify.proto\"\xb0\x01\n\x13StaminaInfoScNotify\x12\
-    \x18\n\x07stamina\x18\x01\x20\x01(\rR\x07stamina\x12*\n\x11next_recover_\
+    \x18\n\x07stamina\x18\x02\x20\x01(\rR\x07stamina\x12*\n\x11next_recover_\
     time\x18\x0b\x20\x01(\x03R\x0fnextRecoverTime\x12*\n\x11next_reserve_tim\
-    e\x18\x0f\x20\x01(\x03R\x0fnextReserveTime\x12'\n\x0freserve_stamina\x18\
-    \x02\x20\x01(\rR\x0ereserveStaminaB\x15\n\x13emu.lunarcore.protob\x06pro\
+    e\x18\x0e\x20\x01(\x03R\x0fnextReserveTime\x12'\n\x0freserve_stamina\x18\
+    \x0c\x20\x01(\rR\x0ereserveStaminaB\x15\n\x13emu.lunarcore.protob\x06pro\
     to3\
 ";
 

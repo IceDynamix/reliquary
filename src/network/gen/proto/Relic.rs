@@ -29,8 +29,6 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct Relic {
     // message fields
-    // @@protoc_insertion_point(field:Relic.base_avatar_id)
-    pub base_avatar_id: u32,
     // @@protoc_insertion_point(field:Relic.level)
     pub level: u32,
     // @@protoc_insertion_point(field:Relic.is_protected)
@@ -66,13 +64,8 @@ impl Relic {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(10);
+        let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "base_avatar_id",
-            |m: &Relic| { &m.base_avatar_id },
-            |m: &mut Relic| { &mut m.base_avatar_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &Relic| { &m.level },
@@ -136,34 +129,31 @@ impl ::protobuf::Message for Relic {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.base_avatar_id = is.read_uint32()?;
-                },
-                72 => {
+                120 => {
                     self.level = is.read_uint32()?;
                 },
-                88 => {
+                64 => {
                     self.is_protected = is.read_bool()?;
                 },
-                16 => {
+                56 => {
                     self.exp = is.read_uint32()?;
                 },
-                40 => {
+                88 => {
                     self.is_discarded = is.read_bool()?;
                 },
-                48 => {
+                104 => {
                     self.tid = is.read_uint32()?;
                 },
-                8 => {
+                40 => {
                     self.main_affix_id = is.read_uint32()?;
                 },
-                120 => {
+                80 => {
                     self.equip_avatar_id = is.read_uint32()?;
                 },
-                24 => {
+                72 => {
                     self.unique_id = is.read_uint32()?;
                 },
-                114 => {
+                98 => {
                     self.sub_affix_list.push(is.read_message()?);
                 },
                 tag => {
@@ -178,32 +168,29 @@ impl ::protobuf::Message for Relic {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.base_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.base_avatar_id);
-        }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.level);
+            my_size += ::protobuf::rt::uint32_size(15, self.level);
         }
         if self.is_protected != false {
             my_size += 1 + 1;
         }
         if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.exp);
+            my_size += ::protobuf::rt::uint32_size(7, self.exp);
         }
         if self.is_discarded != false {
             my_size += 1 + 1;
         }
         if self.tid != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.tid);
+            my_size += ::protobuf::rt::uint32_size(13, self.tid);
         }
         if self.main_affix_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.main_affix_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.main_affix_id);
         }
         if self.equip_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.equip_avatar_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.equip_avatar_id);
         }
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.unique_id);
         }
         for value in &self.sub_affix_list {
             let len = value.compute_size();
@@ -215,35 +202,32 @@ impl ::protobuf::Message for Relic {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.base_avatar_id != 0 {
-            os.write_uint32(7, self.base_avatar_id)?;
-        }
         if self.level != 0 {
-            os.write_uint32(9, self.level)?;
+            os.write_uint32(15, self.level)?;
         }
         if self.is_protected != false {
-            os.write_bool(11, self.is_protected)?;
+            os.write_bool(8, self.is_protected)?;
         }
         if self.exp != 0 {
-            os.write_uint32(2, self.exp)?;
+            os.write_uint32(7, self.exp)?;
         }
         if self.is_discarded != false {
-            os.write_bool(5, self.is_discarded)?;
+            os.write_bool(11, self.is_discarded)?;
         }
         if self.tid != 0 {
-            os.write_uint32(6, self.tid)?;
+            os.write_uint32(13, self.tid)?;
         }
         if self.main_affix_id != 0 {
-            os.write_uint32(1, self.main_affix_id)?;
+            os.write_uint32(5, self.main_affix_id)?;
         }
         if self.equip_avatar_id != 0 {
-            os.write_uint32(15, self.equip_avatar_id)?;
+            os.write_uint32(10, self.equip_avatar_id)?;
         }
         if self.unique_id != 0 {
-            os.write_uint32(3, self.unique_id)?;
+            os.write_uint32(9, self.unique_id)?;
         }
         for v in &self.sub_affix_list {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -262,7 +246,6 @@ impl ::protobuf::Message for Relic {
     }
 
     fn clear(&mut self) {
-        self.base_avatar_id = 0;
         self.level = 0;
         self.is_protected = false;
         self.exp = 0;
@@ -277,7 +260,6 @@ impl ::protobuf::Message for Relic {
 
     fn default_instance() -> &'static Relic {
         static instance: Relic = Relic {
-            base_avatar_id: 0,
             level: 0,
             is_protected: false,
             exp: 0,
@@ -311,16 +293,15 @@ impl ::protobuf::reflect::ProtobufValue for Relic {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0bRelic.proto\x1a\x10RelicAffix.proto\"\xc9\x02\n\x05Relic\x12$\n\
-    \x0ebase_avatar_id\x18\x07\x20\x01(\rR\x0cbaseAvatarId\x12\x14\n\x05leve\
-    l\x18\t\x20\x01(\rR\x05level\x12!\n\x0cis_protected\x18\x0b\x20\x01(\x08\
-    R\x0bisProtected\x12\x10\n\x03exp\x18\x02\x20\x01(\rR\x03exp\x12!\n\x0ci\
-    s_discarded\x18\x05\x20\x01(\x08R\x0bisDiscarded\x12\x10\n\x03tid\x18\
-    \x06\x20\x01(\rR\x03tid\x12\"\n\rmain_affix_id\x18\x01\x20\x01(\rR\x0bma\
-    inAffixId\x12&\n\x0fequip_avatar_id\x18\x0f\x20\x01(\rR\requipAvatarId\
-    \x12\x1b\n\tunique_id\x18\x03\x20\x01(\rR\x08uniqueId\x121\n\x0esub_affi\
-    x_list\x18\x0e\x20\x03(\x0b2\x0b.RelicAffixR\x0csubAffixListB\x15\n\x13e\
-    mu.lunarcore.protob\x06proto3\
+    \n\x0bRelic.proto\x1a\x10RelicAffix.proto\"\xa3\x02\n\x05Relic\x12\x14\n\
+    \x05level\x18\x0f\x20\x01(\rR\x05level\x12!\n\x0cis_protected\x18\x08\
+    \x20\x01(\x08R\x0bisProtected\x12\x10\n\x03exp\x18\x07\x20\x01(\rR\x03ex\
+    p\x12!\n\x0cis_discarded\x18\x0b\x20\x01(\x08R\x0bisDiscarded\x12\x10\n\
+    \x03tid\x18\r\x20\x01(\rR\x03tid\x12\"\n\rmain_affix_id\x18\x05\x20\x01(\
+    \rR\x0bmainAffixId\x12&\n\x0fequip_avatar_id\x18\n\x20\x01(\rR\requipAva\
+    tarId\x12\x1b\n\tunique_id\x18\t\x20\x01(\rR\x08uniqueId\x121\n\x0esub_a\
+    ffix_list\x18\x0c\x20\x03(\x0b2\x0b.RelicAffixR\x0csubAffixListB\x15\n\
+    \x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

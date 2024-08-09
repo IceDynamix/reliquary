@@ -29,14 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MissionSync {
     // message fields
-    // @@protoc_insertion_point(field:MissionSync.COLOAGDIBCC)
-    pub COLOAGDIBCC: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:MissionSync.main_mission_id)
     pub main_mission_id: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:MissionSync.mission_list)
     pub mission_list: ::std::vec::Vec<super::Mission::Mission>,
-    // @@protoc_insertion_point(field:MissionSync.LMHJAPFMKDI)
-    pub LMHJAPFMKDI: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:MissionSync.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,13 +50,8 @@ impl MissionSync {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(4);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "COLOAGDIBCC",
-            |m: &MissionSync| { &m.COLOAGDIBCC },
-            |m: &mut MissionSync| { &mut m.COLOAGDIBCC },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "main_mission_id",
             |m: &MissionSync| { &m.main_mission_id },
@@ -70,11 +61,6 @@ impl MissionSync {
             "mission_list",
             |m: &MissionSync| { &m.mission_list },
             |m: &mut MissionSync| { &mut m.mission_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LMHJAPFMKDI",
-            |m: &MissionSync| { &m.LMHJAPFMKDI },
-            |m: &mut MissionSync| { &mut m.LMHJAPFMKDI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MissionSync>(
             "MissionSync",
@@ -94,26 +80,14 @@ impl ::protobuf::Message for MissionSync {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.COLOAGDIBCC)?;
-                },
-                56 => {
-                    self.COLOAGDIBCC.push(is.read_uint32()?);
-                },
-                34 => {
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.main_mission_id)?;
                 },
-                32 => {
+                8 => {
                     self.main_mission_id.push(is.read_uint32()?);
                 },
-                90 => {
+                26 => {
                     self.mission_list.push(is.read_message()?);
-                },
-                82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.LMHJAPFMKDI)?;
-                },
-                80 => {
-                    self.LMHJAPFMKDI.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,18 +101,12 @@ impl ::protobuf::Message for MissionSync {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.COLOAGDIBCC {
-            my_size += ::protobuf::rt::uint32_size(7, *value);
-        };
         for value in &self.main_mission_id {
-            my_size += ::protobuf::rt::uint32_size(4, *value);
+            my_size += ::protobuf::rt::uint32_size(1, *value);
         };
         for value in &self.mission_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.LMHJAPFMKDI {
-            my_size += ::protobuf::rt::uint32_size(10, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -146,17 +114,11 @@ impl ::protobuf::Message for MissionSync {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.COLOAGDIBCC {
-            os.write_uint32(7, *v)?;
-        };
         for v in &self.main_mission_id {
-            os.write_uint32(4, *v)?;
+            os.write_uint32(1, *v)?;
         };
         for v in &self.mission_list {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        };
-        for v in &self.LMHJAPFMKDI {
-            os.write_uint32(10, *v)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -175,19 +137,15 @@ impl ::protobuf::Message for MissionSync {
     }
 
     fn clear(&mut self) {
-        self.COLOAGDIBCC.clear();
         self.main_mission_id.clear();
         self.mission_list.clear();
-        self.LMHJAPFMKDI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MissionSync {
         static instance: MissionSync = MissionSync {
-            COLOAGDIBCC: ::std::vec::Vec::new(),
             main_mission_id: ::std::vec::Vec::new(),
             mission_list: ::std::vec::Vec::new(),
-            LMHJAPFMKDI: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -212,12 +170,10 @@ impl ::protobuf::reflect::ProtobufValue for MissionSync {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MissionSync.proto\x1a\rMission.proto\"\xa6\x01\n\x0bMissionSync\
-    \x12\x20\n\x0bCOLOAGDIBCC\x18\x07\x20\x03(\rR\x0bCOLOAGDIBCC\x12&\n\x0fm\
-    ain_mission_id\x18\x04\x20\x03(\rR\rmainMissionId\x12+\n\x0cmission_list\
-    \x18\x0b\x20\x03(\x0b2\x08.MissionR\x0bmissionList\x12\x20\n\x0bLMHJAPFM\
-    KDI\x18\n\x20\x03(\rR\x0bLMHJAPFMKDIB\x15\n\x13emu.lunarcore.protob\x06p\
-    roto3\
+    \n\x11MissionSync.proto\x1a\rMission.proto\"b\n\x0bMissionSync\x12&\n\
+    \x0fmain_mission_id\x18\x01\x20\x03(\rR\rmainMissionId\x12+\n\x0cmission\
+    _list\x18\x03\x20\x03(\x0b2\x08.MissionR\x0bmissionListB\x15\n\x13emu.lu\
+    narcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

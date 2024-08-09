@@ -80,10 +80,10 @@ impl ::protobuf::Message for StartNewChallengeStoryBuffInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                104 => {
                     self.second_half = is.read_uint32()?;
                 },
-                8 => {
+                96 => {
                     self.first_half = is.read_uint32()?;
                 },
                 tag => {
@@ -99,10 +99,10 @@ impl ::protobuf::Message for StartNewChallengeStoryBuffInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.second_half != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.second_half);
+            my_size += ::protobuf::rt::uint32_size(13, self.second_half);
         }
         if self.first_half != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.first_half);
+            my_size += ::protobuf::rt::uint32_size(12, self.first_half);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for StartNewChallengeStoryBuffInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.second_half != 0 {
-            os.write_uint32(2, self.second_half)?;
+            os.write_uint32(13, self.second_half)?;
         }
         if self.first_half != 0 {
-            os.write_uint32(1, self.first_half)?;
+            os.write_uint32(12, self.first_half)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for StartNewChallengeStoryBuffInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$StartNewChallengeStoryBuffInfo.proto\"`\n\x1eStartNewChallengeStoryBu\
-    ffInfo\x12\x1f\n\x0bsecond_half\x18\x02\x20\x01(\rR\nsecondHalf\x12\x1d\
-    \n\nfirst_half\x18\x01\x20\x01(\rR\tfirstHalfB\x15\n\x13emu.lunarcore.pr\
-    otob\x06proto3\
+    ffInfo\x12\x1f\n\x0bsecond_half\x18\r\x20\x01(\rR\nsecondHalf\x12\x1d\n\
+    \nfirst_half\x18\x0c\x20\x01(\rR\tfirstHalfB\x15\n\x13emu.lunarcore.prot\
+    ob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

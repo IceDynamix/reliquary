@@ -94,16 +94,16 @@ impl ::protobuf::Message for FriendListInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                64 => {
                     self.is_marked = is.read_bool()?;
                 },
-                18 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.simple_info)?;
                 },
                 106 => {
                     self.remark_name = is.read_string()?;
                 },
-                72 => {
+                112 => {
                     self.playing_state = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -129,7 +129,7 @@ impl ::protobuf::Message for FriendListInfo {
             my_size += ::protobuf::rt::string_size(13, &self.remark_name);
         }
         if self.playing_state != ::protobuf::EnumOrUnknown::new(super::PlayingState::PlayingState::PLAYING_STATE_NONE) {
-            my_size += ::protobuf::rt::int32_size(9, self.playing_state.value());
+            my_size += ::protobuf::rt::int32_size(14, self.playing_state.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,16 +138,16 @@ impl ::protobuf::Message for FriendListInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.is_marked != false {
-            os.write_bool(7, self.is_marked)?;
+            os.write_bool(8, self.is_marked)?;
         }
         if let Some(v) = self.simple_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if !self.remark_name.is_empty() {
             os.write_string(13, &self.remark_name)?;
         }
         if self.playing_state != ::protobuf::EnumOrUnknown::new(super::PlayingState::PlayingState::PLAYING_STATE_NONE) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.playing_state))?;
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.playing_state))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for FriendListInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14FriendListInfo.proto\x1a\x10SimpleInfo.proto\x1a\x12PlayingState.p\
-    roto\"\xb0\x01\n\x0eFriendListInfo\x12\x1b\n\tis_marked\x18\x07\x20\x01(\
-    \x08R\x08isMarked\x12,\n\x0bsimple_info\x18\x02\x20\x01(\x0b2\x0b.Simple\
+    roto\"\xb0\x01\n\x0eFriendListInfo\x12\x1b\n\tis_marked\x18\x08\x20\x01(\
+    \x08R\x08isMarked\x12,\n\x0bsimple_info\x18\x01\x20\x01(\x0b2\x0b.Simple\
     InfoR\nsimpleInfo\x12\x1f\n\x0bremark_name\x18\r\x20\x01(\tR\nremarkName\
-    \x122\n\rplaying_state\x18\t\x20\x01(\x0e2\r.PlayingStateR\x0cplayingSta\
-    teB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \x122\n\rplaying_state\x18\x0e\x20\x01(\x0e2\r.PlayingStateR\x0cplayingS\
+    tateB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -80,10 +80,10 @@ impl ::protobuf::Message for SellItemCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                48 => {
                     self.to_material = is.read_bool()?;
                 },
-                122 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_cost_list)?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for SellItemCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.to_material != false {
-            os.write_bool(5, self.to_material)?;
+            os.write_bool(6, self.to_material)?;
         }
         if let Some(v) = self.item_cost_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for SellItemCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13SellItemCsReq.proto\x1a\x12ItemCostList.proto\"e\n\rSellItemCsReq\
-    \x12\x1f\n\x0bto_material\x18\x05\x20\x01(\x08R\ntoMaterial\x123\n\x0eit\
-    em_cost_list\x18\x0f\x20\x01(\x0b2\r.ItemCostListR\x0citemCostListB\x15\
+    \x12\x1f\n\x0bto_material\x18\x06\x20\x01(\x08R\ntoMaterial\x123\n\x0eit\
+    em_cost_list\x18\x07\x20\x01(\x0b2\r.ItemCostListR\x0citemCostListB\x15\
     \n\x13emu.lunarcore.protob\x06proto3\
 ";
 

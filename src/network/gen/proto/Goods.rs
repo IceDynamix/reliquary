@@ -101,19 +101,19 @@ impl ::protobuf::Message for Goods {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                112 => {
                     self.end_time = is.read_int64()?;
                 },
-                104 => {
+                48 => {
                     self.buy_times = is.read_uint32()?;
                 },
-                112 => {
+                88 => {
                     self.begin_time = is.read_int64()?;
                 },
-                80 => {
+                64 => {
                     self.goods_id = is.read_uint32()?;
                 },
-                88 => {
+                72 => {
                     self.item_id = is.read_uint32()?;
                 },
                 tag => {
@@ -129,19 +129,19 @@ impl ::protobuf::Message for Goods {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.end_time != 0 {
-            my_size += ::protobuf::rt::int64_size(15, self.end_time);
+            my_size += ::protobuf::rt::int64_size(14, self.end_time);
         }
         if self.buy_times != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.buy_times);
+            my_size += ::protobuf::rt::uint32_size(6, self.buy_times);
         }
         if self.begin_time != 0 {
-            my_size += ::protobuf::rt::int64_size(14, self.begin_time);
+            my_size += ::protobuf::rt::int64_size(11, self.begin_time);
         }
         if self.goods_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.goods_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.goods_id);
         }
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.item_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,19 +150,19 @@ impl ::protobuf::Message for Goods {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.end_time != 0 {
-            os.write_int64(15, self.end_time)?;
+            os.write_int64(14, self.end_time)?;
         }
         if self.buy_times != 0 {
-            os.write_uint32(13, self.buy_times)?;
+            os.write_uint32(6, self.buy_times)?;
         }
         if self.begin_time != 0 {
-            os.write_int64(14, self.begin_time)?;
+            os.write_int64(11, self.begin_time)?;
         }
         if self.goods_id != 0 {
-            os.write_uint32(10, self.goods_id)?;
+            os.write_uint32(8, self.goods_id)?;
         }
         if self.item_id != 0 {
-            os.write_uint32(11, self.item_id)?;
+            os.write_uint32(9, self.item_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -220,11 +220,11 @@ impl ::protobuf::reflect::ProtobufValue for Goods {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0bGoods.proto\"\x92\x01\n\x05Goods\x12\x19\n\x08end_time\x18\x0f\x20\
-    \x01(\x03R\x07endTime\x12\x1b\n\tbuy_times\x18\r\x20\x01(\rR\x08buyTimes\
-    \x12\x1d\n\nbegin_time\x18\x0e\x20\x01(\x03R\tbeginTime\x12\x19\n\x08goo\
-    ds_id\x18\n\x20\x01(\rR\x07goodsId\x12\x17\n\x07item_id\x18\x0b\x20\x01(\
-    \rR\x06itemIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x0bGoods.proto\"\x92\x01\n\x05Goods\x12\x19\n\x08end_time\x18\x0e\x20\
+    \x01(\x03R\x07endTime\x12\x1b\n\tbuy_times\x18\x06\x20\x01(\rR\x08buyTim\
+    es\x12\x1d\n\nbegin_time\x18\x0b\x20\x01(\x03R\tbeginTime\x12\x19\n\x08g\
+    oods_id\x18\x08\x20\x01(\rR\x07goodsId\x12\x17\n\x07item_id\x18\t\x20\
+    \x01(\rR\x06itemIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

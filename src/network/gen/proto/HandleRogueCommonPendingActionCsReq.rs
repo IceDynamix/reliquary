@@ -46,7 +46,7 @@ impl HandleRogueCommonPendingActionCsReq {
         ::std::default::Default::default()
     }
 
-    // .RogueCommonBuffSelectResult buff_select_result = 1586;
+    // .RogueCommonBuffSelectResult buff_select_result = 309;
 
     pub fn buff_select_result(&self) -> &super::RogueCommonBuffSelectResult::RogueCommonBuffSelectResult {
         match self.pending_action {
@@ -95,7 +95,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .RogueBuffRollInfo roll_buff = 308;
+    // .RogueBuffRollInfo roll_buff = 1008;
 
     pub fn roll_buff(&self) -> &super::RogueBuffRollInfo::RogueBuffRollInfo {
         match self.pending_action {
@@ -292,10 +292,10 @@ impl ::protobuf::Message for HandleRogueCommonPendingActionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                12690 => {
+                2474 => {
                     self.pending_action = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::BuffSelectResult(is.read_message()?));
                 },
-                2466 => {
+                8066 => {
                     self.pending_action = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Pending_action::RollBuff(is.read_message()?));
                 },
                 9674 => {
@@ -345,10 +345,10 @@ impl ::protobuf::Message for HandleRogueCommonPendingActionCsReq {
         if let ::std::option::Option::Some(ref v) = self.pending_action {
             match v {
                 &handle_rogue_common_pending_action_cs_req::Pending_action::BuffSelectResult(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1586, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(309, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::Pending_action::RollBuff(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(308, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1008, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::Pending_action::MiracleSelectResult(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(1209, v, os)?;
@@ -446,9 +446,9 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n)HandleRogueCommonPendingActionCsReq.proto\x1a!RogueCommonBuffSelectRe\
     sult.proto\x1a\x17RogueBuffRollInfo.proto\x1a\x1eRogueMiracleSelectResul\
     t.proto\x1a\x1cRogueBonusSelectResult.proto\"\xd8\x02\n#HandleRogueCommo\
-    nPendingActionCsReq\x12M\n\x12buff_select_result\x18\xb2\x0c\x20\x01(\
+    nPendingActionCsReq\x12M\n\x12buff_select_result\x18\xb5\x02\x20\x01(\
     \x0b2\x1c.RogueCommonBuffSelectResultH\0R\x10buffSelectResult\x122\n\tro\
-    ll_buff\x18\xb4\x02\x20\x01(\x0b2\x12.RogueBuffRollInfoH\0R\x08rollBuff\
+    ll_buff\x18\xf0\x07\x20\x01(\x0b2\x12.RogueBuffRollInfoH\0R\x08rollBuff\
     \x12P\n\x15miracle_select_result\x18\xb9\t\x20\x01(\x0b2\x19.RogueMiracl\
     eSelectResultH\0R\x13miracleSelectResult\x12J\n\x13bonus_select_result\
     \x18\x84\t\x20\x01(\x0b2\x17.RogueBonusSelectResultH\0R\x11bonusSelectRe\
