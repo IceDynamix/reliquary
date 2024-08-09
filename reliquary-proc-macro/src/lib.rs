@@ -36,15 +36,13 @@ pub fn derive(input: TokenStream) -> TokenStream {
         })
         .collect();
 
-    let list_type = {
-        let mut list_type = quote! { #struct_name };
-        for &f in key_fields.iter().rev() {
-            let ty = &f.ty;
-            list_type = quote! { std::collections::HashMap<#ty, #list_type> };
-        }
-        list_type
-    };
-
+    let key_names = key_fields.iter()
+        .map(|&f| f.ident.to_token_stream());
+    
+    let doc = format!("Map type containing all [`{}`] in (nested) map format. Can be deserialized into.", struct_name);
+    let warning = format!("could not find {} config", struct_name);
+    let json_name = format!("{}.json", struct_name);
+    
     let get_method_args = key_fields.iter()
         .map(|&f| {
             let name = f.ident.as_ref().unwrap();
@@ -52,22 +50,19 @@ pub fn derive(input: TokenStream) -> TokenStream {
             quote! { #name: &#ty }
         });
 
-    let key_names = key_fields.iter()
-        .map(|&f| f.ident.to_token_stream());
 
-    let doc = format!("Map type containing all [`{}`] in (nested) map format. Can be deserialized into.", struct_name);
-    let warning = format!("could not find {} config", struct_name);
-    let json_name = format!("{}.json", struct_name);
+    let matching = key_names
+        .map(|field| quote! { config.#field == *#field });
 
     let expanded = quote! {
         #[derive(serde::Deserialize)]
         #[serde(transparent)]
         #[doc = #doc]
-        pub struct #map_name(#list_type);
+        pub struct #map_name(Vec<#struct_name>);
 
         impl #map_name {
             pub fn get(&self, #(#get_method_args),*) -> Option<&#struct_name> {
-                let entry = self.0#(.get(#key_names))?*;
+                let entry = self.0.iter().find(|config| #(#matching)&&*);
                 if entry.is_none() {
                     tracing::warn!(#warning);
                 }
