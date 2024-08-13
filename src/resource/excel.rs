@@ -254,3 +254,19 @@ pub struct AvatarSkillTreeConfig {
     pub PointTriggerKey: TextMapEntry,
     pub ParamList: Vec<Float>,
 }
+
+#[derive(Deserialize, Debug)]
+pub struct UnlockCondition {
+    pub Type: String,
+    pub Param: String,
+}
+
+#[derive(Resource, Deserialize, Debug)]
+pub struct MultiplePathAvatarConfig {
+    #[resource_key]
+    pub AvatarID: u32,
+    pub UnlockConditions: Vec<UnlockCondition>,
+    pub BaseAvatarID: u32,
+    pub Desc: TextMapEntry,
+    pub ChangeConfigPath: String,
+}
