@@ -80,7 +80,7 @@ impl ::protobuf::Message for RogueHandbookMiracle {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                88 => {
                     self.miracle_id = is.read_uint32()?;
                 },
                 96 => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for RogueHandbookMiracle {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.miracle_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.miracle_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.miracle_id);
         }
         if self.is_unlocked != false {
             my_size += 1 + 1;
@@ -111,7 +111,7 @@ impl ::protobuf::Message for RogueHandbookMiracle {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.miracle_id != 0 {
-            os.write_uint32(2, self.miracle_id)?;
+            os.write_uint32(11, self.miracle_id)?;
         }
         if self.is_unlocked != false {
             os.write_bool(12, self.is_unlocked)?;
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueHandbookMiracle {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aRogueHandbookMiracle.proto\"V\n\x14RogueHandbookMiracle\x12\x1d\n\
-    \nmiracle_id\x18\x02\x20\x01(\rR\tmiracleId\x12\x1f\n\x0bis_unlocked\x18\
+    \nmiracle_id\x18\x0b\x20\x01(\rR\tmiracleId\x12\x1f\n\x0bis_unlocked\x18\
     \x0c\x20\x01(\x08R\nisUnlockedB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

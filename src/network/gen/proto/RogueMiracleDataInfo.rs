@@ -101,19 +101,19 @@ impl ::protobuf::Message for RogueMiracleDataInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                48 => {
                     self.KABNOGFDKFI = is.read_uint32()?;
                 },
                 72 => {
                     self.NDPAMBJKKFD = is.read_uint32()?;
                 },
-                80 => {
+                104 => {
                     self.miracle_id = is.read_uint32()?;
                 },
-                96 => {
+                32 => {
                     self.NFNNOMAMNAA = is.read_uint32()?;
                 },
-                50 => {
+                98 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -141,16 +141,16 @@ impl ::protobuf::Message for RogueMiracleDataInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.KABNOGFDKFI != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.KABNOGFDKFI);
+            my_size += ::protobuf::rt::uint32_size(6, self.KABNOGFDKFI);
         }
         if self.NDPAMBJKKFD != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.NDPAMBJKKFD);
         }
         if self.miracle_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.miracle_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.miracle_id);
         }
         if self.NFNNOMAMNAA != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.NFNNOMAMNAA);
+            my_size += ::protobuf::rt::uint32_size(4, self.NFNNOMAMNAA);
         }
         for (k, v) in &self.JBFJGEIGGBA {
             let mut entry_size = 0;
@@ -165,22 +165,22 @@ impl ::protobuf::Message for RogueMiracleDataInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KABNOGFDKFI != 0 {
-            os.write_uint32(2, self.KABNOGFDKFI)?;
+            os.write_uint32(6, self.KABNOGFDKFI)?;
         }
         if self.NDPAMBJKKFD != 0 {
             os.write_uint32(9, self.NDPAMBJKKFD)?;
         }
         if self.miracle_id != 0 {
-            os.write_uint32(10, self.miracle_id)?;
+            os.write_uint32(13, self.miracle_id)?;
         }
         if self.NFNNOMAMNAA != 0 {
-            os.write_uint32(12, self.NFNNOMAMNAA)?;
+            os.write_uint32(4, self.NFNNOMAMNAA)?;
         }
         for (k, v) in &self.JBFJGEIGGBA {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(50)?; // Tag.
+            os.write_raw_varint32(98)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
@@ -235,10 +235,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueMiracleDataInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aRogueMiracleDataInfo.proto\"\xa5\x02\n\x14RogueMiracleDataInfo\x12\
-    \x20\n\x0bKABNOGFDKFI\x18\x02\x20\x01(\rR\x0bKABNOGFDKFI\x12\x20\n\x0bND\
-    PAMBJKKFD\x18\t\x20\x01(\rR\x0bNDPAMBJKKFD\x12\x1d\n\nmiracle_id\x18\n\
-    \x20\x01(\rR\tmiracleId\x12\x20\n\x0bNFNNOMAMNAA\x18\x0c\x20\x01(\rR\x0b\
-    NFNNOMAMNAA\x12H\n\x0bJBFJGEIGGBA\x18\x06\x20\x03(\x0b2&.RogueMiracleDat\
+    \x20\n\x0bKABNOGFDKFI\x18\x06\x20\x01(\rR\x0bKABNOGFDKFI\x12\x20\n\x0bND\
+    PAMBJKKFD\x18\t\x20\x01(\rR\x0bNDPAMBJKKFD\x12\x1d\n\nmiracle_id\x18\r\
+    \x20\x01(\rR\tmiracleId\x12\x20\n\x0bNFNNOMAMNAA\x18\x04\x20\x01(\rR\x0b\
+    NFNNOMAMNAA\x12H\n\x0bJBFJGEIGGBA\x18\x0c\x20\x03(\x0b2&.RogueMiracleDat\
     aInfo.JBFJGEIGGBAEntryR\x0bJBFJGEIGGBA\x1a>\n\x10JBFJGEIGGBAEntry\x12\
     \x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\
     \x01(\rR\x05value:\x028\x01B\x15\n\x13emu.lunarcore.protob\x06proto3\

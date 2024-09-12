@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LockRelicCsReq {
     // message fields
-    // @@protoc_insertion_point(field:LockRelicCsReq.relic_unique_id)
-    pub relic_unique_id: u32,
+    // @@protoc_insertion_point(field:LockRelicCsReq.relic_id_list)
+    pub relic_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:LockRelicCsReq.is_protected)
     pub is_protected: bool,
     // special fields
@@ -52,10 +52,10 @@ impl LockRelicCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "relic_unique_id",
-            |m: &LockRelicCsReq| { &m.relic_unique_id },
-            |m: &mut LockRelicCsReq| { &mut m.relic_unique_id },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "relic_id_list",
+            |m: &LockRelicCsReq| { &m.relic_id_list },
+            |m: &mut LockRelicCsReq| { &mut m.relic_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_protected",
@@ -80,10 +80,13 @@ impl ::protobuf::Message for LockRelicCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.relic_unique_id = is.read_uint32()?;
+                34 => {
+                    is.read_repeated_packed_uint32_into(&mut self.relic_id_list)?;
                 },
                 32 => {
+                    self.relic_id_list.push(is.read_uint32()?);
+                },
+                40 => {
                     self.is_protected = is.read_bool()?;
                 },
                 tag => {
@@ -98,9 +101,9 @@ impl ::protobuf::Message for LockRelicCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.relic_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.relic_unique_id);
-        }
+        for value in &self.relic_id_list {
+            my_size += ::protobuf::rt::uint32_size(4, *value);
+        };
         if self.is_protected != false {
             my_size += 1 + 1;
         }
@@ -110,11 +113,11 @@ impl ::protobuf::Message for LockRelicCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.relic_unique_id != 0 {
-            os.write_uint32(6, self.relic_unique_id)?;
-        }
+        for v in &self.relic_id_list {
+            os.write_uint32(4, *v)?;
+        };
         if self.is_protected != false {
-            os.write_bool(4, self.is_protected)?;
+            os.write_bool(5, self.is_protected)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +136,14 @@ impl ::protobuf::Message for LockRelicCsReq {
     }
 
     fn clear(&mut self) {
-        self.relic_unique_id = 0;
+        self.relic_id_list.clear();
         self.is_protected = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LockRelicCsReq {
         static instance: LockRelicCsReq = LockRelicCsReq {
-            relic_unique_id: 0,
+            relic_id_list: ::std::vec::Vec::new(),
             is_protected: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,9 +169,9 @@ impl ::protobuf::reflect::ProtobufValue for LockRelicCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14LockRelicCsReq.proto\"[\n\x0eLockRelicCsReq\x12&\n\x0frelic_unique\
-    _id\x18\x06\x20\x01(\rR\rrelicUniqueId\x12!\n\x0cis_protected\x18\x04\
-    \x20\x01(\x08R\x0bisProtectedB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x14LockRelicCsReq.proto\"W\n\x0eLockRelicCsReq\x12\"\n\rrelic_id_list\
+    \x18\x04\x20\x03(\rR\x0brelicIdList\x12!\n\x0cis_protected\x18\x05\x20\
+    \x01(\x08R\x0bisProtectedB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

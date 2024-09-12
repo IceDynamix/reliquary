@@ -115,28 +115,28 @@ impl ::protobuf::Message for RogueScoreRewardInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                64 => {
                     self.pool_id = is.read_uint32()?;
                 },
-                120 => {
+                112 => {
                     self.pool_refreshed = is.read_bool()?;
                 },
-                106 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.has_taken_reward)?;
                 },
-                104 => {
+                56 => {
                     self.has_taken_reward.push(is.read_uint32()?);
                 },
-                96 => {
+                48 => {
                     self.score = is.read_uint32()?;
                 },
-                56 => {
+                80 => {
                     self.has_taken_initial_score = is.read_bool()?;
                 },
-                8 => {
+                120 => {
                     self.begin_time = is.read_int64()?;
                 },
-                80 => {
+                32 => {
                     self.end_time = is.read_int64()?;
                 },
                 tag => {
@@ -152,25 +152,25 @@ impl ::protobuf::Message for RogueScoreRewardInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.pool_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.pool_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.pool_id);
         }
         if self.pool_refreshed != false {
             my_size += 1 + 1;
         }
         for value in &self.has_taken_reward {
-            my_size += ::protobuf::rt::uint32_size(13, *value);
+            my_size += ::protobuf::rt::uint32_size(7, *value);
         };
         if self.score != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.score);
+            my_size += ::protobuf::rt::uint32_size(6, self.score);
         }
         if self.has_taken_initial_score != false {
             my_size += 1 + 1;
         }
         if self.begin_time != 0 {
-            my_size += ::protobuf::rt::int64_size(1, self.begin_time);
+            my_size += ::protobuf::rt::int64_size(15, self.begin_time);
         }
         if self.end_time != 0 {
-            my_size += ::protobuf::rt::int64_size(10, self.end_time);
+            my_size += ::protobuf::rt::int64_size(4, self.end_time);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -179,25 +179,25 @@ impl ::protobuf::Message for RogueScoreRewardInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.pool_id != 0 {
-            os.write_uint32(4, self.pool_id)?;
+            os.write_uint32(8, self.pool_id)?;
         }
         if self.pool_refreshed != false {
-            os.write_bool(15, self.pool_refreshed)?;
+            os.write_bool(14, self.pool_refreshed)?;
         }
         for v in &self.has_taken_reward {
-            os.write_uint32(13, *v)?;
+            os.write_uint32(7, *v)?;
         };
         if self.score != 0 {
-            os.write_uint32(12, self.score)?;
+            os.write_uint32(6, self.score)?;
         }
         if self.has_taken_initial_score != false {
-            os.write_bool(7, self.has_taken_initial_score)?;
+            os.write_bool(10, self.has_taken_initial_score)?;
         }
         if self.begin_time != 0 {
-            os.write_int64(1, self.begin_time)?;
+            os.write_int64(15, self.begin_time)?;
         }
         if self.end_time != 0 {
-            os.write_int64(10, self.end_time)?;
+            os.write_int64(4, self.end_time)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -260,13 +260,13 @@ impl ::protobuf::reflect::ProtobufValue for RogueScoreRewardInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aRogueScoreRewardInfo.proto\"\x87\x02\n\x14RogueScoreRewardInfo\x12\
-    \x17\n\x07pool_id\x18\x04\x20\x01(\rR\x06poolId\x12%\n\x0epool_refreshed\
-    \x18\x0f\x20\x01(\x08R\rpoolRefreshed\x12(\n\x10has_taken_reward\x18\r\
-    \x20\x03(\rR\x0ehasTakenReward\x12\x14\n\x05score\x18\x0c\x20\x01(\rR\
-    \x05score\x125\n\x17has_taken_initial_score\x18\x07\x20\x01(\x08R\x14has\
-    TakenInitialScore\x12\x1d\n\nbegin_time\x18\x01\x20\x01(\x03R\tbeginTime\
-    \x12\x19\n\x08end_time\x18\n\x20\x01(\x03R\x07endTimeB\x15\n\x13emu.luna\
-    rcore.protob\x06proto3\
+    \x17\n\x07pool_id\x18\x08\x20\x01(\rR\x06poolId\x12%\n\x0epool_refreshed\
+    \x18\x0e\x20\x01(\x08R\rpoolRefreshed\x12(\n\x10has_taken_reward\x18\x07\
+    \x20\x03(\rR\x0ehasTakenReward\x12\x14\n\x05score\x18\x06\x20\x01(\rR\
+    \x05score\x125\n\x17has_taken_initial_score\x18\n\x20\x01(\x08R\x14hasTa\
+    kenInitialScore\x12\x1d\n\nbegin_time\x18\x0f\x20\x01(\x03R\tbeginTime\
+    \x12\x19\n\x08end_time\x18\x04\x20\x01(\x03R\x07endTimeB\x15\n\x13emu.lu\
+    narcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

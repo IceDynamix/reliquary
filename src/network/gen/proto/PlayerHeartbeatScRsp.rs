@@ -87,13 +87,13 @@ impl ::protobuf::Message for PlayerHeartbeatScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                96 => {
                     self.server_time_ms = is.read_uint64()?;
                 },
                 88 => {
                     self.client_time_ms = is.read_uint64()?;
                 },
-                8 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -109,13 +109,13 @@ impl ::protobuf::Message for PlayerHeartbeatScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.server_time_ms != 0 {
-            my_size += ::protobuf::rt::uint64_size(15, self.server_time_ms);
+            my_size += ::protobuf::rt::uint64_size(12, self.server_time_ms);
         }
         if self.client_time_ms != 0 {
             my_size += ::protobuf::rt::uint64_size(11, self.client_time_ms);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for PlayerHeartbeatScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.server_time_ms != 0 {
-            os.write_uint64(15, self.server_time_ms)?;
+            os.write_uint64(12, self.server_time_ms)?;
         }
         if self.client_time_ms != 0 {
             os.write_uint64(11, self.client_time_ms)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,8 +185,8 @@ impl ::protobuf::reflect::ProtobufValue for PlayerHeartbeatScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aPlayerHeartbeatScRsp.proto\"|\n\x14PlayerHeartbeatScRsp\x12$\n\x0e\
-    server_time_ms\x18\x0f\x20\x01(\x04R\x0cserverTimeMs\x12$\n\x0eclient_ti\
-    me_ms\x18\x0b\x20\x01(\x04R\x0cclientTimeMs\x12\x18\n\x07retcode\x18\x01\
+    server_time_ms\x18\x0c\x20\x01(\x04R\x0cserverTimeMs\x12$\n\x0eclient_ti\
+    me_ms\x18\x0b\x20\x01(\x04R\x0cclientTimeMs\x12\x18\n\x07retcode\x18\r\
     \x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

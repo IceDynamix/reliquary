@@ -94,16 +94,16 @@ impl ::protobuf::Message for LeaveRogueScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
                 },
                 74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_info)?;
                 },
-                50 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
-                112 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -131,7 +131,7 @@ impl ::protobuf::Message for LeaveRogueScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -140,16 +140,16 @@ impl ::protobuf::Message for LeaveRogueScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.scene.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if let Some(v) = self.rogue_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -207,9 +207,9 @@ impl ::protobuf::reflect::ProtobufValue for LeaveRogueScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15LeaveRogueScRsp.proto\x1a\x0fRogueInfo.proto\x1a\x10LineupInfo.pro\
     to\x1a\x0fSceneInfo.proto\"\x9d\x01\n\x0fLeaveRogueScRsp\x12\x20\n\x05sc\
-    ene\x18\x0c\x20\x01(\x0b2\n.SceneInfoR\x05scene\x12)\n\nrogue_info\x18\t\
-    \x20\x01(\x0b2\n.RogueInfoR\trogueInfo\x12#\n\x06lineup\x18\x06\x20\x01(\
-    \x0b2\x0b.LineupInfoR\x06lineup\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\
+    ene\x18\x02\x20\x01(\x0b2\n.SceneInfoR\x05scene\x12)\n\nrogue_info\x18\t\
+    \x20\x01(\x0b2\n.RogueInfoR\trogueInfo\x12#\n\x06lineup\x18\x0e\x20\x01(\
+    \x0b2\x0b.LineupInfoR\x06lineup\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\
     \x07retcodeB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

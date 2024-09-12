@@ -87,13 +87,13 @@ impl ::protobuf::Message for FinishTalkMissionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                58 => {
                     self.talk_str = is.read_string()?;
                 },
-                74 => {
+                82 => {
                     self.custom_value_list.push(is.read_message()?);
                 },
-                120 => {
+                112 => {
                     self.sub_mission_id = is.read_uint32()?;
                 },
                 tag => {
@@ -109,14 +109,14 @@ impl ::protobuf::Message for FinishTalkMissionCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.talk_str.is_empty() {
-            my_size += ::protobuf::rt::string_size(1, &self.talk_str);
+            my_size += ::protobuf::rt::string_size(7, &self.talk_str);
         }
         for value in &self.custom_value_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.sub_mission_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.sub_mission_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.sub_mission_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,13 +125,13 @@ impl ::protobuf::Message for FinishTalkMissionCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.talk_str.is_empty() {
-            os.write_string(1, &self.talk_str)?;
+            os.write_string(7, &self.talk_str)?;
         }
         for v in &self.custom_value_list {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         if self.sub_mission_id != 0 {
-            os.write_uint32(15, self.sub_mission_id)?;
+            os.write_uint32(14, self.sub_mission_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for FinishTalkMissionCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cFinishTalkMissionCsReq.proto\x1a\x1cMissionCustomValueData.proto\"\
-    \x9e\x01\n\x16FinishTalkMissionCsReq\x12\x19\n\x08talk_str\x18\x01\x20\
-    \x01(\tR\x07talkStr\x12C\n\x11custom_value_list\x18\t\x20\x03(\x0b2\x17.\
+    \x9e\x01\n\x16FinishTalkMissionCsReq\x12\x19\n\x08talk_str\x18\x07\x20\
+    \x01(\tR\x07talkStr\x12C\n\x11custom_value_list\x18\n\x20\x03(\x0b2\x17.\
     MissionCustomValueDataR\x0fcustomValueList\x12$\n\x0esub_mission_id\x18\
-    \x0f\x20\x01(\rR\x0csubMissionIdB\x15\n\x13emu.lunarcore.protob\x06proto\
+    \x0e\x20\x01(\rR\x0csubMissionIdB\x15\n\x13emu.lunarcore.protob\x06proto\
     3\
 ";
 

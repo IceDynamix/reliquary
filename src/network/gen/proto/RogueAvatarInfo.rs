@@ -73,10 +73,10 @@ impl ::protobuf::Message for RogueAvatarInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.base_avatar_id_list)?;
                 },
-                72 => {
+                16 => {
                     self.base_avatar_id_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -92,7 +92,7 @@ impl ::protobuf::Message for RogueAvatarInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         for value in &self.base_avatar_id_list {
-            my_size += ::protobuf::rt::uint32_size(9, *value);
+            my_size += ::protobuf::rt::uint32_size(2, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -101,7 +101,7 @@ impl ::protobuf::Message for RogueAvatarInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.base_avatar_id_list {
-            os.write_uint32(9, *v)?;
+            os.write_uint32(2, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -152,8 +152,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueAvatarInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15RogueAvatarInfo.proto\"@\n\x0fRogueAvatarInfo\x12-\n\x13base_avata\
-    r_id_list\x18\t\x20\x03(\rR\x10baseAvatarIdListB\x15\n\x13emu.lunarcore.\
-    protob\x06proto3\
+    r_id_list\x18\x02\x20\x03(\rR\x10baseAvatarIdListB\x15\n\x13emu.lunarcor\
+    e.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

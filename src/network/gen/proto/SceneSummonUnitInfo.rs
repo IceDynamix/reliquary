@@ -111,19 +111,19 @@ impl ::protobuf::Message for SceneSummonUnitInfo {
                 50 => {
                     self.trigger_name_list.push(is.read_string()?);
                 },
-                120 => {
+                40 => {
                     self.life_time_ms = is.read_sint32()?;
                 },
-                32 => {
+                56 => {
                     self.caster_entity_id = is.read_uint32()?;
                 },
-                80 => {
+                32 => {
                     self.attach_entity_id = is.read_uint32()?;
                 },
-                112 => {
+                72 => {
                     self.summon_unit_id = is.read_uint32()?;
                 },
-                96 => {
+                88 => {
                     self.create_time_ms = is.read_uint64()?;
                 },
                 tag => {
@@ -142,19 +142,19 @@ impl ::protobuf::Message for SceneSummonUnitInfo {
             my_size += ::protobuf::rt::string_size(6, &value);
         };
         if self.life_time_ms != 0 {
-            my_size += ::protobuf::rt::sint32_size(15, self.life_time_ms);
+            my_size += ::protobuf::rt::sint32_size(5, self.life_time_ms);
         }
         if self.caster_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.caster_entity_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.caster_entity_id);
         }
         if self.attach_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.attach_entity_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.attach_entity_id);
         }
         if self.summon_unit_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.summon_unit_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.summon_unit_id);
         }
         if self.create_time_ms != 0 {
-            my_size += ::protobuf::rt::uint64_size(12, self.create_time_ms);
+            my_size += ::protobuf::rt::uint64_size(11, self.create_time_ms);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -166,19 +166,19 @@ impl ::protobuf::Message for SceneSummonUnitInfo {
             os.write_string(6, &v)?;
         };
         if self.life_time_ms != 0 {
-            os.write_sint32(15, self.life_time_ms)?;
+            os.write_sint32(5, self.life_time_ms)?;
         }
         if self.caster_entity_id != 0 {
-            os.write_uint32(4, self.caster_entity_id)?;
+            os.write_uint32(7, self.caster_entity_id)?;
         }
         if self.attach_entity_id != 0 {
-            os.write_uint32(10, self.attach_entity_id)?;
+            os.write_uint32(4, self.attach_entity_id)?;
         }
         if self.summon_unit_id != 0 {
-            os.write_uint32(14, self.summon_unit_id)?;
+            os.write_uint32(9, self.summon_unit_id)?;
         }
         if self.create_time_ms != 0 {
-            os.write_uint64(12, self.create_time_ms)?;
+            os.write_uint64(11, self.create_time_ms)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -240,10 +240,10 @@ impl ::protobuf::reflect::ProtobufValue for SceneSummonUnitInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19SceneSummonUnitInfo.proto\"\x83\x02\n\x13SceneSummonUnitInfo\x12*\
     \n\x11trigger_name_list\x18\x06\x20\x03(\tR\x0ftriggerNameList\x12\x20\n\
-    \x0clife_time_ms\x18\x0f\x20\x01(\x11R\nlifeTimeMs\x12(\n\x10caster_enti\
-    ty_id\x18\x04\x20\x01(\rR\x0ecasterEntityId\x12(\n\x10attach_entity_id\
-    \x18\n\x20\x01(\rR\x0eattachEntityId\x12$\n\x0esummon_unit_id\x18\x0e\
-    \x20\x01(\rR\x0csummonUnitId\x12$\n\x0ecreate_time_ms\x18\x0c\x20\x01(\
+    \x0clife_time_ms\x18\x05\x20\x01(\x11R\nlifeTimeMs\x12(\n\x10caster_enti\
+    ty_id\x18\x07\x20\x01(\rR\x0ecasterEntityId\x12(\n\x10attach_entity_id\
+    \x18\x04\x20\x01(\rR\x0eattachEntityId\x12$\n\x0esummon_unit_id\x18\t\
+    \x20\x01(\rR\x0csummonUnitId\x12$\n\x0ecreate_time_ms\x18\x0b\x20\x01(\
     \x04R\x0ccreateTimeMsB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

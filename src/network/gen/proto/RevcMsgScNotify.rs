@@ -29,18 +29,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RevcMsgScNotify {
     // message fields
-    // @@protoc_insertion_point(field:RevcMsgScNotify.msg_type)
-    pub msg_type: ::protobuf::EnumOrUnknown<super::MsgType::MsgType>,
     // @@protoc_insertion_point(field:RevcMsgScNotify.from_uid)
     pub from_uid: u32,
-    // @@protoc_insertion_point(field:RevcMsgScNotify.chat_type)
-    pub chat_type: ::protobuf::EnumOrUnknown<super::ChatType::ChatType>,
-    // @@protoc_insertion_point(field:RevcMsgScNotify.emote)
-    pub emote: u32,
     // @@protoc_insertion_point(field:RevcMsgScNotify.text)
     pub text: ::std::string::String,
+    // @@protoc_insertion_point(field:RevcMsgScNotify.emote)
+    pub emote: u32,
+    // @@protoc_insertion_point(field:RevcMsgScNotify.msg_type)
+    pub msg_type: ::protobuf::EnumOrUnknown<super::MsgType::MsgType>,
     // @@protoc_insertion_point(field:RevcMsgScNotify.to_uid)
     pub to_uid: u32,
+    // @@protoc_insertion_point(field:RevcMsgScNotify.chat_type)
+    pub chat_type: ::protobuf::EnumOrUnknown<super::ChatType::ChatType>,
     // special fields
     // @@protoc_insertion_point(special_field:RevcMsgScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,24 +61,9 @@ impl RevcMsgScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "msg_type",
-            |m: &RevcMsgScNotify| { &m.msg_type },
-            |m: &mut RevcMsgScNotify| { &mut m.msg_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "from_uid",
             |m: &RevcMsgScNotify| { &m.from_uid },
             |m: &mut RevcMsgScNotify| { &mut m.from_uid },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "chat_type",
-            |m: &RevcMsgScNotify| { &m.chat_type },
-            |m: &mut RevcMsgScNotify| { &mut m.chat_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "emote",
-            |m: &RevcMsgScNotify| { &m.emote },
-            |m: &mut RevcMsgScNotify| { &mut m.emote },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "text",
@@ -86,9 +71,24 @@ impl RevcMsgScNotify {
             |m: &mut RevcMsgScNotify| { &mut m.text },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "emote",
+            |m: &RevcMsgScNotify| { &m.emote },
+            |m: &mut RevcMsgScNotify| { &mut m.emote },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "msg_type",
+            |m: &RevcMsgScNotify| { &m.msg_type },
+            |m: &mut RevcMsgScNotify| { &mut m.msg_type },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "to_uid",
             |m: &RevcMsgScNotify| { &m.to_uid },
             |m: &mut RevcMsgScNotify| { &mut m.to_uid },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "chat_type",
+            |m: &RevcMsgScNotify| { &m.chat_type },
+            |m: &mut RevcMsgScNotify| { &mut m.chat_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RevcMsgScNotify>(
             "RevcMsgScNotify",
@@ -108,23 +108,23 @@ impl ::protobuf::Message for RevcMsgScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.msg_type = is.read_enum_or_unknown()?;
-                },
-                32 => {
+                72 => {
                     self.from_uid = is.read_uint32()?;
                 },
-                48 => {
-                    self.chat_type = is.read_enum_or_unknown()?;
-                },
-                64 => {
-                    self.emote = is.read_uint32()?;
-                },
-                82 => {
+                58 => {
                     self.text = is.read_string()?;
                 },
-                56 => {
+                88 => {
+                    self.emote = is.read_uint32()?;
+                },
+                8 => {
+                    self.msg_type = is.read_enum_or_unknown()?;
+                },
+                96 => {
                     self.to_uid = is.read_uint32()?;
+                },
+                80 => {
+                    self.chat_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -138,23 +138,23 @@ impl ::protobuf::Message for RevcMsgScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.msg_type != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(11, self.msg_type.value());
-        }
         if self.from_uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.from_uid);
-        }
-        if self.chat_type != ::protobuf::EnumOrUnknown::new(super::ChatType::ChatType::CHAT_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(6, self.chat_type.value());
-        }
-        if self.emote != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.emote);
+            my_size += ::protobuf::rt::uint32_size(9, self.from_uid);
         }
         if !self.text.is_empty() {
-            my_size += ::protobuf::rt::string_size(10, &self.text);
+            my_size += ::protobuf::rt::string_size(7, &self.text);
+        }
+        if self.emote != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.emote);
+        }
+        if self.msg_type != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(1, self.msg_type.value());
         }
         if self.to_uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.to_uid);
+            my_size += ::protobuf::rt::uint32_size(12, self.to_uid);
+        }
+        if self.chat_type != ::protobuf::EnumOrUnknown::new(super::ChatType::ChatType::CHAT_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(10, self.chat_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,23 +162,23 @@ impl ::protobuf::Message for RevcMsgScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.msg_type != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.msg_type))?;
-        }
         if self.from_uid != 0 {
-            os.write_uint32(4, self.from_uid)?;
-        }
-        if self.chat_type != ::protobuf::EnumOrUnknown::new(super::ChatType::ChatType::CHAT_TYPE_NONE) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.chat_type))?;
-        }
-        if self.emote != 0 {
-            os.write_uint32(8, self.emote)?;
+            os.write_uint32(9, self.from_uid)?;
         }
         if !self.text.is_empty() {
-            os.write_string(10, &self.text)?;
+            os.write_string(7, &self.text)?;
+        }
+        if self.emote != 0 {
+            os.write_uint32(11, self.emote)?;
+        }
+        if self.msg_type != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE) {
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.msg_type))?;
         }
         if self.to_uid != 0 {
-            os.write_uint32(7, self.to_uid)?;
+            os.write_uint32(12, self.to_uid)?;
+        }
+        if self.chat_type != ::protobuf::EnumOrUnknown::new(super::ChatType::ChatType::CHAT_TYPE_NONE) {
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.chat_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,23 +197,23 @@ impl ::protobuf::Message for RevcMsgScNotify {
     }
 
     fn clear(&mut self) {
-        self.msg_type = ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE);
         self.from_uid = 0;
-        self.chat_type = ::protobuf::EnumOrUnknown::new(super::ChatType::ChatType::CHAT_TYPE_NONE);
-        self.emote = 0;
         self.text.clear();
+        self.emote = 0;
+        self.msg_type = ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE);
         self.to_uid = 0;
+        self.chat_type = ::protobuf::EnumOrUnknown::new(super::ChatType::ChatType::CHAT_TYPE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RevcMsgScNotify {
         static instance: RevcMsgScNotify = RevcMsgScNotify {
-            msg_type: ::protobuf::EnumOrUnknown::from_i32(0),
             from_uid: 0,
-            chat_type: ::protobuf::EnumOrUnknown::from_i32(0),
-            emote: 0,
             text: ::std::string::String::new(),
+            emote: 0,
+            msg_type: ::protobuf::EnumOrUnknown::from_i32(0),
             to_uid: 0,
+            chat_type: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,11 +239,11 @@ impl ::protobuf::reflect::ProtobufValue for RevcMsgScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15RevcMsgScNotify.proto\x1a\x0eChatType.proto\x1a\rMsgType.proto\"\
-    \xba\x01\n\x0fRevcMsgScNotify\x12#\n\x08msg_type\x18\x0b\x20\x01(\x0e2\
-    \x08.MsgTypeR\x07msgType\x12\x19\n\x08from_uid\x18\x04\x20\x01(\rR\x07fr\
-    omUid\x12&\n\tchat_type\x18\x06\x20\x01(\x0e2\t.ChatTypeR\x08chatType\
-    \x12\x14\n\x05emote\x18\x08\x20\x01(\rR\x05emote\x12\x12\n\x04text\x18\n\
-    \x20\x01(\tR\x04text\x12\x15\n\x06to_uid\x18\x07\x20\x01(\rR\x05toUidB\
+    \xba\x01\n\x0fRevcMsgScNotify\x12\x19\n\x08from_uid\x18\t\x20\x01(\rR\
+    \x07fromUid\x12\x12\n\x04text\x18\x07\x20\x01(\tR\x04text\x12\x14\n\x05e\
+    mote\x18\x0b\x20\x01(\rR\x05emote\x12#\n\x08msg_type\x18\x01\x20\x01(\
+    \x0e2\x08.MsgTypeR\x07msgType\x12\x15\n\x06to_uid\x18\x0c\x20\x01(\rR\
+    \x05toUid\x12&\n\tchat_type\x18\n\x20\x01(\x0e2\t.ChatTypeR\x08chatTypeB\
     \x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

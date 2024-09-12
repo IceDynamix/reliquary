@@ -80,10 +80,10 @@ impl ::protobuf::Message for RelicArchive {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                24 => {
                     self.relic_id = is.read_uint32()?;
                 },
-                40 => {
+                64 => {
                     self.slot = is.read_uint32()?;
                 },
                 tag => {
@@ -99,10 +99,10 @@ impl ::protobuf::Message for RelicArchive {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.relic_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.relic_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.relic_id);
         }
         if self.slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.slot);
+            my_size += ::protobuf::rt::uint32_size(8, self.slot);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for RelicArchive {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.relic_id != 0 {
-            os.write_uint32(13, self.relic_id)?;
+            os.write_uint32(3, self.relic_id)?;
         }
         if self.slot != 0 {
-            os.write_uint32(5, self.slot)?;
+            os.write_uint32(8, self.slot)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for RelicArchive {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12RelicArchive.proto\"=\n\x0cRelicArchive\x12\x19\n\x08relic_id\x18\
-    \r\x20\x01(\rR\x07relicId\x12\x12\n\x04slot\x18\x05\x20\x01(\rR\x04slotB\
-    \x15\n\x13emu.lunarcore.protob\x06proto3\
+    \x03\x20\x01(\rR\x07relicId\x12\x12\n\x04slot\x18\x08\x20\x01(\rR\x04slo\
+    tB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

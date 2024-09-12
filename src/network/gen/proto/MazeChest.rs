@@ -90,10 +90,10 @@ impl ::protobuf::Message for MazeChest {
                 32 => {
                     self.map_info_chest_type = is.read_enum_or_unknown()?;
                 },
-                24 => {
+                72 => {
                     self.total_amount_list = is.read_uint32()?;
                 },
-                56 => {
+                96 => {
                     self.unlocked_amount_list = is.read_uint32()?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for MazeChest {
             my_size += ::protobuf::rt::int32_size(4, self.map_info_chest_type.value());
         }
         if self.total_amount_list != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.total_amount_list);
+            my_size += ::protobuf::rt::uint32_size(9, self.total_amount_list);
         }
         if self.unlocked_amount_list != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.unlocked_amount_list);
+            my_size += ::protobuf::rt::uint32_size(12, self.unlocked_amount_list);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -127,10 +127,10 @@ impl ::protobuf::Message for MazeChest {
             os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.map_info_chest_type))?;
         }
         if self.total_amount_list != 0 {
-            os.write_uint32(3, self.total_amount_list)?;
+            os.write_uint32(9, self.total_amount_list)?;
         }
         if self.unlocked_amount_list != 0 {
-            os.write_uint32(7, self.unlocked_amount_list)?;
+            os.write_uint32(12, self.unlocked_amount_list)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,8 +186,8 @@ impl ::protobuf::reflect::ProtobufValue for MazeChest {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0fMazeChest.proto\x1a\x16MapInfoChestType.proto\"\xab\x01\n\tMazeChe\
     st\x12@\n\x13map_info_chest_type\x18\x04\x20\x01(\x0e2\x11.MapInfoChestT\
-    ypeR\x10mapInfoChestType\x12*\n\x11total_amount_list\x18\x03\x20\x01(\rR\
-    \x0ftotalAmountList\x120\n\x14unlocked_amount_list\x18\x07\x20\x01(\rR\
+    ypeR\x10mapInfoChestType\x12*\n\x11total_amount_list\x18\t\x20\x01(\rR\
+    \x0ftotalAmountList\x120\n\x14unlocked_amount_list\x18\x0c\x20\x01(\rR\
     \x12unlockedAmountListB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

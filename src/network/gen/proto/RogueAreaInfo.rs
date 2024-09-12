@@ -73,7 +73,7 @@ impl ::protobuf::Message for RogueAreaInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                18 => {
                     self.rogue_area.push(is.read_message()?);
                 },
                 tag => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for RogueAreaInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.rogue_area {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +150,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueAreaInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13RogueAreaInfo.proto\x1a\x0fRogueArea.proto\":\n\rRogueAreaInfo\x12\
-    )\n\nrogue_area\x18\x0b\x20\x03(\x0b2\n.RogueAreaR\trogueAreaB\x15\n\x13\
+    )\n\nrogue_area\x18\x02\x20\x03(\x0b2\n.RogueAreaR\trogueAreaB\x15\n\x13\
     emu.lunarcore.protob\x06proto3\
 ";
 

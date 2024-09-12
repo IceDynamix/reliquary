@@ -90,10 +90,10 @@ impl ::protobuf::Message for RogueSeasonInfo {
                 48 => {
                     self.begin_time = is.read_int64()?;
                 },
-                24 => {
+                40 => {
                     self.season_id = is.read_uint32()?;
                 },
-                80 => {
+                56 => {
                     self.end_time = is.read_int64()?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for RogueSeasonInfo {
             my_size += ::protobuf::rt::int64_size(6, self.begin_time);
         }
         if self.season_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.season_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.season_id);
         }
         if self.end_time != 0 {
-            my_size += ::protobuf::rt::int64_size(10, self.end_time);
+            my_size += ::protobuf::rt::int64_size(7, self.end_time);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -127,10 +127,10 @@ impl ::protobuf::Message for RogueSeasonInfo {
             os.write_int64(6, self.begin_time)?;
         }
         if self.season_id != 0 {
-            os.write_uint32(3, self.season_id)?;
+            os.write_uint32(5, self.season_id)?;
         }
         if self.end_time != 0 {
-            os.write_int64(10, self.end_time)?;
+            os.write_int64(7, self.end_time)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,8 +185,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueSeasonInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15RogueSeasonInfo.proto\"h\n\x0fRogueSeasonInfo\x12\x1d\n\nbegin_tim\
-    e\x18\x06\x20\x01(\x03R\tbeginTime\x12\x1b\n\tseason_id\x18\x03\x20\x01(\
-    \rR\x08seasonId\x12\x19\n\x08end_time\x18\n\x20\x01(\x03R\x07endTimeB\
+    e\x18\x06\x20\x01(\x03R\tbeginTime\x12\x1b\n\tseason_id\x18\x05\x20\x01(\
+    \rR\x08seasonId\x12\x19\n\x08end_time\x18\x07\x20\x01(\x03R\x07endTimeB\
     \x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

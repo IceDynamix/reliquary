@@ -108,22 +108,22 @@ impl ::protobuf::Message for ScenePropInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.extra_info)?;
                 },
-                72 => {
+                96 => {
                     self.prop_state = is.read_uint32()?;
                 },
-                48 => {
+                80 => {
                     self.prop_id = is.read_uint32()?;
                 },
-                16 => {
+                72 => {
                     self.create_time_ms = is.read_uint64()?;
                 },
-                122 => {
+                114 => {
                     self.trigger_name_list.push(is.read_string()?);
                 },
-                32 => {
+                88 => {
                     self.life_time_ms = is.read_uint32()?;
                 },
                 tag => {
@@ -143,19 +143,19 @@ impl ::protobuf::Message for ScenePropInfo {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.prop_state != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.prop_state);
+            my_size += ::protobuf::rt::uint32_size(12, self.prop_state);
         }
         if self.prop_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.prop_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.prop_id);
         }
         if self.create_time_ms != 0 {
-            my_size += ::protobuf::rt::uint64_size(2, self.create_time_ms);
+            my_size += ::protobuf::rt::uint64_size(9, self.create_time_ms);
         }
         for value in &self.trigger_name_list {
-            my_size += ::protobuf::rt::string_size(15, &value);
+            my_size += ::protobuf::rt::string_size(14, &value);
         };
         if self.life_time_ms != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.life_time_ms);
+            my_size += ::protobuf::rt::uint32_size(11, self.life_time_ms);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -164,22 +164,22 @@ impl ::protobuf::Message for ScenePropInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.extra_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         if self.prop_state != 0 {
-            os.write_uint32(9, self.prop_state)?;
+            os.write_uint32(12, self.prop_state)?;
         }
         if self.prop_id != 0 {
-            os.write_uint32(6, self.prop_id)?;
+            os.write_uint32(10, self.prop_id)?;
         }
         if self.create_time_ms != 0 {
-            os.write_uint64(2, self.create_time_ms)?;
+            os.write_uint64(9, self.create_time_ms)?;
         }
         for v in &self.trigger_name_list {
-            os.write_string(15, &v)?;
+            os.write_string(14, &v)?;
         };
         if self.life_time_ms != 0 {
-            os.write_uint32(4, self.life_time_ms)?;
+            os.write_uint32(11, self.life_time_ms)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -240,11 +240,11 @@ impl ::protobuf::reflect::ProtobufValue for ScenePropInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13ScenePropInfo.proto\x1a\x13PropExtraInfo.proto\"\xea\x01\n\rSceneP\
-    ropInfo\x12-\n\nextra_info\x18\x07\x20\x01(\x0b2\x0e.PropExtraInfoR\text\
-    raInfo\x12\x1d\n\nprop_state\x18\t\x20\x01(\rR\tpropState\x12\x17\n\x07p\
-    rop_id\x18\x06\x20\x01(\rR\x06propId\x12$\n\x0ecreate_time_ms\x18\x02\
-    \x20\x01(\x04R\x0ccreateTimeMs\x12*\n\x11trigger_name_list\x18\x0f\x20\
-    \x03(\tR\x0ftriggerNameList\x12\x20\n\x0clife_time_ms\x18\x04\x20\x01(\r\
+    ropInfo\x12-\n\nextra_info\x18\x05\x20\x01(\x0b2\x0e.PropExtraInfoR\text\
+    raInfo\x12\x1d\n\nprop_state\x18\x0c\x20\x01(\rR\tpropState\x12\x17\n\
+    \x07prop_id\x18\n\x20\x01(\rR\x06propId\x12$\n\x0ecreate_time_ms\x18\t\
+    \x20\x01(\x04R\x0ccreateTimeMs\x12*\n\x11trigger_name_list\x18\x0e\x20\
+    \x03(\tR\x0ftriggerNameList\x12\x20\n\x0clife_time_ms\x18\x0b\x20\x01(\r\
     R\nlifeTimeMsB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

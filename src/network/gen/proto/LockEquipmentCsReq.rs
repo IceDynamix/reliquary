@@ -80,13 +80,13 @@ impl ::protobuf::Message for LockEquipmentCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                120 => {
                     self.is_protected = is.read_bool()?;
                 },
-                90 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.equipment_id_list)?;
                 },
-                88 => {
+                80 => {
                     self.equipment_id_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -105,7 +105,7 @@ impl ::protobuf::Message for LockEquipmentCsReq {
             my_size += 1 + 1;
         }
         for value in &self.equipment_id_list {
-            my_size += ::protobuf::rt::uint32_size(11, *value);
+            my_size += ::protobuf::rt::uint32_size(10, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -114,10 +114,10 @@ impl ::protobuf::Message for LockEquipmentCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.is_protected != false {
-            os.write_bool(9, self.is_protected)?;
+            os.write_bool(15, self.is_protected)?;
         }
         for v in &self.equipment_id_list {
-            os.write_uint32(11, *v)?;
+            os.write_uint32(10, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -170,8 +170,8 @@ impl ::protobuf::reflect::ProtobufValue for LockEquipmentCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18LockEquipmentCsReq.proto\"c\n\x12LockEquipmentCsReq\x12!\n\x0cis_p\
-    rotected\x18\t\x20\x01(\x08R\x0bisProtected\x12*\n\x11equipment_id_list\
-    \x18\x0b\x20\x03(\rR\x0fequipmentIdListB\x15\n\x13emu.lunarcore.protob\
+    rotected\x18\x0f\x20\x01(\x08R\x0bisProtected\x12*\n\x11equipment_id_lis\
+    t\x18\n\x20\x03(\rR\x0fequipmentIdListB\x15\n\x13emu.lunarcore.protob\
     \x06proto3\
 ";
 

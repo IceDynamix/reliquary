@@ -73,7 +73,7 @@ impl ::protobuf::Message for SyncRogueFinishScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.finish_info)?;
                 },
                 tag => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for SyncRogueFinishScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.finish_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +150,7 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueFinishScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dSyncRogueFinishScNotify.proto\x1a\x15RogueFinishInfo.proto\"L\n\
-    \x17SyncRogueFinishScNotify\x121\n\x0bfinish_info\x18\x07\x20\x01(\x0b2\
+    \x17SyncRogueFinishScNotify\x121\n\x0bfinish_info\x18\x02\x20\x01(\x0b2\
     \x10.RogueFinishInfoR\nfinishInfoB\x15\n\x13emu.lunarcore.protob\x06prot\
     o3\
 ";

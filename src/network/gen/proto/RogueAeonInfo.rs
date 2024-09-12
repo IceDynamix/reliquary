@@ -94,19 +94,19 @@ impl ::protobuf::Message for RogueAeonInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                56 => {
                     self.is_unlocked = is.read_bool()?;
                 },
-                80 => {
+                120 => {
                     self.unlock_aeon_num = is.read_uint32()?;
                 },
-                58 => {
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.aeon_id_list)?;
                 },
-                56 => {
+                104 => {
                     self.aeon_id_list.push(is.read_uint32()?);
                 },
-                72 => {
+                32 => {
                     self.unlock_aeon_enhance_num = is.read_uint32()?;
                 },
                 tag => {
@@ -125,13 +125,13 @@ impl ::protobuf::Message for RogueAeonInfo {
             my_size += 1 + 1;
         }
         if self.unlock_aeon_num != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.unlock_aeon_num);
+            my_size += ::protobuf::rt::uint32_size(15, self.unlock_aeon_num);
         }
         for value in &self.aeon_id_list {
-            my_size += ::protobuf::rt::uint32_size(7, *value);
+            my_size += ::protobuf::rt::uint32_size(13, *value);
         };
         if self.unlock_aeon_enhance_num != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.unlock_aeon_enhance_num);
+            my_size += ::protobuf::rt::uint32_size(4, self.unlock_aeon_enhance_num);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -140,16 +140,16 @@ impl ::protobuf::Message for RogueAeonInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.is_unlocked != false {
-            os.write_bool(5, self.is_unlocked)?;
+            os.write_bool(7, self.is_unlocked)?;
         }
         if self.unlock_aeon_num != 0 {
-            os.write_uint32(10, self.unlock_aeon_num)?;
+            os.write_uint32(15, self.unlock_aeon_num)?;
         }
         for v in &self.aeon_id_list {
-            os.write_uint32(7, *v)?;
+            os.write_uint32(13, *v)?;
         };
         if self.unlock_aeon_enhance_num != 0 {
-            os.write_uint32(9, self.unlock_aeon_enhance_num)?;
+            os.write_uint32(4, self.unlock_aeon_enhance_num)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -206,10 +206,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueAeonInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13RogueAeonInfo.proto\"\xb1\x01\n\rRogueAeonInfo\x12\x1f\n\x0bis_unl\
-    ocked\x18\x05\x20\x01(\x08R\nisUnlocked\x12&\n\x0funlock_aeon_num\x18\n\
-    \x20\x01(\rR\runlockAeonNum\x12\x20\n\x0caeon_id_list\x18\x07\x20\x03(\r\
-    R\naeonIdList\x125\n\x17unlock_aeon_enhance_num\x18\t\x20\x01(\rR\x14unl\
-    ockAeonEnhanceNumB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    ocked\x18\x07\x20\x01(\x08R\nisUnlocked\x12&\n\x0funlock_aeon_num\x18\
+    \x0f\x20\x01(\rR\runlockAeonNum\x12\x20\n\x0caeon_id_list\x18\r\x20\x03(\
+    \rR\naeonIdList\x125\n\x17unlock_aeon_enhance_num\x18\x04\x20\x01(\rR\
+    \x14unlockAeonEnhanceNumB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

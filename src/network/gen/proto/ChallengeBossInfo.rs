@@ -104,22 +104,22 @@ impl ::protobuf::Message for ChallengeBossInfo {
                 10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.first_node)?;
                 },
-                42 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.second_node)?;
                 },
-                90 => {
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.lineup1)?;
                 },
-                88 => {
+                24 => {
                     self.lineup1.push(is.read_uint32()?);
                 },
-                112 => {
+                104 => {
                     self.ACGHCDLBCGD = is.read_bool()?;
                 },
-                18 => {
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.lineup2)?;
                 },
-                16 => {
+                96 => {
                     self.lineup2.push(is.read_uint32()?);
                 },
                 tag => {
@@ -143,13 +143,13 @@ impl ::protobuf::Message for ChallengeBossInfo {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         for value in &self.lineup1 {
-            my_size += ::protobuf::rt::uint32_size(11, *value);
+            my_size += ::protobuf::rt::uint32_size(3, *value);
         };
         if self.ACGHCDLBCGD != false {
             my_size += 1 + 1;
         }
         for value in &self.lineup2 {
-            my_size += ::protobuf::rt::uint32_size(2, *value);
+            my_size += ::protobuf::rt::uint32_size(12, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -161,16 +161,16 @@ impl ::protobuf::Message for ChallengeBossInfo {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if let Some(v) = self.second_node.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         for v in &self.lineup1 {
-            os.write_uint32(11, *v)?;
+            os.write_uint32(3, *v)?;
         };
         if self.ACGHCDLBCGD != false {
-            os.write_bool(14, self.ACGHCDLBCGD)?;
+            os.write_bool(13, self.ACGHCDLBCGD)?;
         }
         for v in &self.lineup2 {
-            os.write_uint32(2, *v)?;
+            os.write_uint32(12, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -231,10 +231,10 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17ChallengeBossInfo.proto\x1a!ChallengeBossSingleNodeInfo.proto\"\
     \xe5\x01\n\x11ChallengeBossInfo\x12;\n\nfirst_node\x18\x01\x20\x01(\x0b2\
     \x1c.ChallengeBossSingleNodeInfoR\tfirstNode\x12=\n\x0bsecond_node\x18\
-    \x05\x20\x01(\x0b2\x1c.ChallengeBossSingleNodeInfoR\nsecondNode\x12\x18\
-    \n\x07lineup1\x18\x0b\x20\x03(\rR\x07lineup1\x12\x20\n\x0bACGHCDLBCGD\
-    \x18\x0e\x20\x01(\x08R\x0bACGHCDLBCGD\x12\x18\n\x07lineup2\x18\x02\x20\
-    \x03(\rR\x07lineup2B\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \x0f\x20\x01(\x0b2\x1c.ChallengeBossSingleNodeInfoR\nsecondNode\x12\x18\
+    \n\x07lineup1\x18\x03\x20\x03(\rR\x07lineup1\x12\x20\n\x0bACGHCDLBCGD\
+    \x18\r\x20\x01(\x08R\x0bACGHCDLBCGD\x12\x18\n\x07lineup2\x18\x0c\x20\x03\
+    (\rR\x07lineup2B\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

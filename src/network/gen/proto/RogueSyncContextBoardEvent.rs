@@ -83,7 +83,7 @@ impl ::protobuf::Message for RogueSyncContextBoardEvent {
                 56 => {
                     self.board_event_id = is.read_uint32()?;
                 },
-                24 => {
+                72 => {
                     self.modifier_effect_type = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for RogueSyncContextBoardEvent {
             my_size += ::protobuf::rt::uint32_size(7, self.board_event_id);
         }
         if self.modifier_effect_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.modifier_effect_type);
+            my_size += ::protobuf::rt::uint32_size(9, self.modifier_effect_type);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -114,7 +114,7 @@ impl ::protobuf::Message for RogueSyncContextBoardEvent {
             os.write_uint32(7, self.board_event_id)?;
         }
         if self.modifier_effect_type != 0 {
-            os.write_uint32(3, self.modifier_effect_type)?;
+            os.write_uint32(9, self.modifier_effect_type)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueSyncContextBoardEvent {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20RogueSyncContextBoardEvent.proto\"t\n\x1aRogueSyncContextBoardEven\
     t\x12$\n\x0eboard_event_id\x18\x07\x20\x01(\rR\x0cboardEventId\x120\n\
-    \x14modifier_effect_type\x18\x03\x20\x01(\rR\x12modifierEffectTypeB\x15\
-    \n\x13emu.lunarcore.protob\x06proto3\
+    \x14modifier_effect_type\x18\t\x20\x01(\rR\x12modifierEffectTypeB\x15\n\
+    \x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

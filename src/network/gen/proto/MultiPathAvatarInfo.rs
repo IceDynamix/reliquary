@@ -29,20 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MultiPathAvatarInfo {
     // message fields
+    // @@protoc_insertion_point(field:MultiPathAvatarInfo.multi_path_skill_tree)
+    pub multi_path_skill_tree: ::std::vec::Vec<super::AvatarSkillTree::AvatarSkillTree>,
+    // @@protoc_insertion_point(field:MultiPathAvatarInfo.rank)
+    pub rank: u32,
     // @@protoc_insertion_point(field:MultiPathAvatarInfo.path_equipment_id)
     pub path_equipment_id: u32,
     // @@protoc_insertion_point(field:MultiPathAvatarInfo.avatar_id)
     pub avatar_id: ::protobuf::EnumOrUnknown<super::MultiPathAvatarType::MultiPathAvatarType>,
-    // @@protoc_insertion_point(field:MultiPathAvatarInfo.multi_path_skill_tree)
-    pub multi_path_skill_tree: ::std::vec::Vec<super::AvatarSkillTree::AvatarSkillTree>,
     // @@protoc_insertion_point(field:MultiPathAvatarInfo.equip_relic_list)
     pub equip_relic_list: ::std::vec::Vec<super::EquipRelic::EquipRelic>,
-    // @@protoc_insertion_point(field:MultiPathAvatarInfo.special_skilltree_list)
-    pub special_skilltree_list: ::std::vec::Vec<super::AvatarSkillTree::AvatarSkillTree>,
-    // @@protoc_insertion_point(field:MultiPathAvatarInfo.rank)
-    pub rank: u32,
-    // @@protoc_insertion_point(field:MultiPathAvatarInfo.unlocked_special_point_id_list)
-    pub unlocked_special_point_id_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:MultiPathAvatarInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,8 +56,18 @@ impl MultiPathAvatarInfo {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(7);
+        let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "multi_path_skill_tree",
+            |m: &MultiPathAvatarInfo| { &m.multi_path_skill_tree },
+            |m: &mut MultiPathAvatarInfo| { &mut m.multi_path_skill_tree },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "rank",
+            |m: &MultiPathAvatarInfo| { &m.rank },
+            |m: &mut MultiPathAvatarInfo| { &mut m.rank },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "path_equipment_id",
             |m: &MultiPathAvatarInfo| { &m.path_equipment_id },
@@ -73,29 +79,9 @@ impl MultiPathAvatarInfo {
             |m: &mut MultiPathAvatarInfo| { &mut m.avatar_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "multi_path_skill_tree",
-            |m: &MultiPathAvatarInfo| { &m.multi_path_skill_tree },
-            |m: &mut MultiPathAvatarInfo| { &mut m.multi_path_skill_tree },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "equip_relic_list",
             |m: &MultiPathAvatarInfo| { &m.equip_relic_list },
             |m: &mut MultiPathAvatarInfo| { &mut m.equip_relic_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "special_skilltree_list",
-            |m: &MultiPathAvatarInfo| { &m.special_skilltree_list },
-            |m: &mut MultiPathAvatarInfo| { &mut m.special_skilltree_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "rank",
-            |m: &MultiPathAvatarInfo| { &m.rank },
-            |m: &mut MultiPathAvatarInfo| { &mut m.rank },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "unlocked_special_point_id_list",
-            |m: &MultiPathAvatarInfo| { &m.unlocked_special_point_id_list },
-            |m: &mut MultiPathAvatarInfo| { &mut m.unlocked_special_point_id_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MultiPathAvatarInfo>(
             "MultiPathAvatarInfo",
@@ -115,29 +101,20 @@ impl ::protobuf::Message for MultiPathAvatarInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.path_equipment_id = is.read_uint32()?;
-                },
-                88 => {
-                    self.avatar_id = is.read_enum_or_unknown()?;
-                },
-                42 => {
+                34 => {
                     self.multi_path_skill_tree.push(is.read_message()?);
                 },
-                106 => {
-                    self.equip_relic_list.push(is.read_message()?);
-                },
-                114 => {
-                    self.special_skilltree_list.push(is.read_message()?);
-                },
-                96 => {
+                56 => {
                     self.rank = is.read_uint32()?;
                 },
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.unlocked_special_point_id_list)?;
+                80 => {
+                    self.path_equipment_id = is.read_uint32()?;
                 },
-                120 => {
-                    self.unlocked_special_point_id_list.push(is.read_uint32()?);
+                16 => {
+                    self.avatar_id = is.read_enum_or_unknown()?;
+                },
+                26 => {
+                    self.equip_relic_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -151,29 +128,22 @@ impl ::protobuf::Message for MultiPathAvatarInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.path_equipment_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.path_equipment_id);
-        }
-        if self.avatar_id != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
-            my_size += ::protobuf::rt::int32_size(11, self.avatar_id.value());
-        }
         for value in &self.multi_path_skill_tree {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.rank != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.rank);
+        }
+        if self.path_equipment_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.path_equipment_id);
+        }
+        if self.avatar_id != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
+            my_size += ::protobuf::rt::int32_size(2, self.avatar_id.value());
+        }
         for value in &self.equip_relic_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.special_skilltree_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.rank != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.rank);
-        }
-        for value in &self.unlocked_special_point_id_list {
-            my_size += ::protobuf::rt::uint32_size(15, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -181,26 +151,20 @@ impl ::protobuf::Message for MultiPathAvatarInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.path_equipment_id != 0 {
-            os.write_uint32(9, self.path_equipment_id)?;
-        }
-        if self.avatar_id != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.avatar_id))?;
-        }
         for v in &self.multi_path_skill_tree {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
-        for v in &self.equip_relic_list {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        };
-        for v in &self.special_skilltree_list {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
         if self.rank != 0 {
-            os.write_uint32(12, self.rank)?;
+            os.write_uint32(7, self.rank)?;
         }
-        for v in &self.unlocked_special_point_id_list {
-            os.write_uint32(15, *v)?;
+        if self.path_equipment_id != 0 {
+            os.write_uint32(10, self.path_equipment_id)?;
+        }
+        if self.avatar_id != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.avatar_id))?;
+        }
+        for v in &self.equip_relic_list {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -219,25 +183,21 @@ impl ::protobuf::Message for MultiPathAvatarInfo {
     }
 
     fn clear(&mut self) {
+        self.multi_path_skill_tree.clear();
+        self.rank = 0;
         self.path_equipment_id = 0;
         self.avatar_id = ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone);
-        self.multi_path_skill_tree.clear();
         self.equip_relic_list.clear();
-        self.special_skilltree_list.clear();
-        self.rank = 0;
-        self.unlocked_special_point_id_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MultiPathAvatarInfo {
         static instance: MultiPathAvatarInfo = MultiPathAvatarInfo {
+            multi_path_skill_tree: ::std::vec::Vec::new(),
+            rank: 0,
             path_equipment_id: 0,
             avatar_id: ::protobuf::EnumOrUnknown::from_i32(0),
-            multi_path_skill_tree: ::std::vec::Vec::new(),
             equip_relic_list: ::std::vec::Vec::new(),
-            special_skilltree_list: ::std::vec::Vec::new(),
-            rank: 0,
-            unlocked_special_point_id_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -263,16 +223,13 @@ impl ::protobuf::reflect::ProtobufValue for MultiPathAvatarInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19MultiPathAvatarInfo.proto\x1a\x19MultiPathAvatarType.proto\x1a\x15\
-    AvatarSkillTree.proto\x1a\x10EquipRelic.proto\"\x90\x03\n\x13MultiPathAv\
-    atarInfo\x12*\n\x11path_equipment_id\x18\t\x20\x01(\rR\x0fpathEquipmentI\
-    d\x121\n\tavatar_id\x18\x0b\x20\x01(\x0e2\x14.MultiPathAvatarTypeR\x08av\
-    atarId\x12C\n\x15multi_path_skill_tree\x18\x05\x20\x03(\x0b2\x10.AvatarS\
-    killTreeR\x12multiPathSkillTree\x125\n\x10equip_relic_list\x18\r\x20\x03\
-    (\x0b2\x0b.EquipRelicR\x0eequipRelicList\x12F\n\x16special_skilltree_lis\
-    t\x18\x0e\x20\x03(\x0b2\x10.AvatarSkillTreeR\x14specialSkilltreeList\x12\
-    \x12\n\x04rank\x18\x0c\x20\x01(\rR\x04rank\x12B\n\x1eunlocked_special_po\
-    int_id_list\x18\x0f\x20\x03(\rR\x1aunlockedSpecialPointIdListB\x15\n\x13\
-    emu.lunarcore.protob\x06proto3\
+    AvatarSkillTree.proto\x1a\x10EquipRelic.proto\"\x84\x02\n\x13MultiPathAv\
+    atarInfo\x12C\n\x15multi_path_skill_tree\x18\x04\x20\x03(\x0b2\x10.Avata\
+    rSkillTreeR\x12multiPathSkillTree\x12\x12\n\x04rank\x18\x07\x20\x01(\rR\
+    \x04rank\x12*\n\x11path_equipment_id\x18\n\x20\x01(\rR\x0fpathEquipmentI\
+    d\x121\n\tavatar_id\x18\x02\x20\x01(\x0e2\x14.MultiPathAvatarTypeR\x08av\
+    atarId\x125\n\x10equip_relic_list\x18\x03\x20\x03(\x0b2\x0b.EquipRelicR\
+    \x0eequipRelicListB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

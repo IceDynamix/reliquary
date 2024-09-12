@@ -129,31 +129,31 @@ impl ::protobuf::Message for LineupInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                80 => {
                     self.plane_id = is.read_uint32()?;
                 },
-                42 => {
+                18 => {
                     self.avatar_list.push(is.read_message()?);
                 },
-                10 => {
+                114 => {
                     self.name = is.read_string()?;
                 },
-                56 => {
+                24 => {
                     self.index = is.read_uint32()?;
                 },
-                88 => {
+                104 => {
                     self.leader_slot = is.read_uint32()?;
                 },
-                48 => {
+                56 => {
                     self.extra_lineup_type = is.read_enum_or_unknown()?;
                 },
-                80 => {
+                120 => {
                     self.is_virtual = is.read_bool()?;
                 },
-                112 => {
+                64 => {
                     self.max_mp = is.read_uint32()?;
                 },
-                32 => {
+                48 => {
                     self.mp = is.read_uint32()?;
                 },
                 tag => {
@@ -169,32 +169,32 @@ impl ::protobuf::Message for LineupInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.plane_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.plane_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.plane_id);
         }
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if !self.name.is_empty() {
-            my_size += ::protobuf::rt::string_size(1, &self.name);
+            my_size += ::protobuf::rt::string_size(14, &self.name);
         }
         if self.index != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.index);
+            my_size += ::protobuf::rt::uint32_size(3, self.index);
         }
         if self.leader_slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.leader_slot);
+            my_size += ::protobuf::rt::uint32_size(13, self.leader_slot);
         }
         if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            my_size += ::protobuf::rt::int32_size(6, self.extra_lineup_type.value());
+            my_size += ::protobuf::rt::int32_size(7, self.extra_lineup_type.value());
         }
         if self.is_virtual != false {
             my_size += 1 + 1;
         }
         if self.max_mp != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.max_mp);
+            my_size += ::protobuf::rt::uint32_size(8, self.max_mp);
         }
         if self.mp != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.mp);
+            my_size += ::protobuf::rt::uint32_size(6, self.mp);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -203,31 +203,31 @@ impl ::protobuf::Message for LineupInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.plane_id != 0 {
-            os.write_uint32(3, self.plane_id)?;
+            os.write_uint32(10, self.plane_id)?;
         }
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         if !self.name.is_empty() {
-            os.write_string(1, &self.name)?;
+            os.write_string(14, &self.name)?;
         }
         if self.index != 0 {
-            os.write_uint32(7, self.index)?;
+            os.write_uint32(3, self.index)?;
         }
         if self.leader_slot != 0 {
-            os.write_uint32(11, self.leader_slot)?;
+            os.write_uint32(13, self.leader_slot)?;
         }
         if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.extra_lineup_type))?;
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.extra_lineup_type))?;
         }
         if self.is_virtual != false {
-            os.write_bool(10, self.is_virtual)?;
+            os.write_bool(15, self.is_virtual)?;
         }
         if self.max_mp != 0 {
-            os.write_uint32(14, self.max_mp)?;
+            os.write_uint32(8, self.max_mp)?;
         }
         if self.mp != 0 {
-            os.write_uint32(4, self.mp)?;
+            os.write_uint32(6, self.mp)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -294,15 +294,15 @@ impl ::protobuf::reflect::ProtobufValue for LineupInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x10LineupInfo.proto\x1a\x15ExtraLineupType.proto\x1a\x12LineupAvatar.\
-    proto\"\xa6\x02\n\nLineupInfo\x12\x19\n\x08plane_id\x18\x03\x20\x01(\rR\
-    \x07planeId\x12.\n\x0bavatar_list\x18\x05\x20\x03(\x0b2\r.LineupAvatarR\
-    \navatarList\x12\x12\n\x04name\x18\x01\x20\x01(\tR\x04name\x12\x14\n\x05\
-    index\x18\x07\x20\x01(\rR\x05index\x12\x1f\n\x0bleader_slot\x18\x0b\x20\
-    \x01(\rR\nleaderSlot\x12<\n\x11extra_lineup_type\x18\x06\x20\x01(\x0e2\
-    \x10.ExtraLineupTypeR\x0fextraLineupType\x12\x1d\n\nis_virtual\x18\n\x20\
-    \x01(\x08R\tisVirtual\x12\x15\n\x06max_mp\x18\x0e\x20\x01(\rR\x05maxMp\
-    \x12\x0e\n\x02mp\x18\x04\x20\x01(\rR\x02mpB\x15\n\x13emu.lunarcore.proto\
-    b\x06proto3\
+    proto\"\xa6\x02\n\nLineupInfo\x12\x19\n\x08plane_id\x18\n\x20\x01(\rR\
+    \x07planeId\x12.\n\x0bavatar_list\x18\x02\x20\x03(\x0b2\r.LineupAvatarR\
+    \navatarList\x12\x12\n\x04name\x18\x0e\x20\x01(\tR\x04name\x12\x14\n\x05\
+    index\x18\x03\x20\x01(\rR\x05index\x12\x1f\n\x0bleader_slot\x18\r\x20\
+    \x01(\rR\nleaderSlot\x12<\n\x11extra_lineup_type\x18\x07\x20\x01(\x0e2\
+    \x10.ExtraLineupTypeR\x0fextraLineupType\x12\x1d\n\nis_virtual\x18\x0f\
+    \x20\x01(\x08R\tisVirtual\x12\x15\n\x06max_mp\x18\x08\x20\x01(\rR\x05max\
+    Mp\x12\x0e\n\x02mp\x18\x06\x20\x01(\rR\x02mpB\x15\n\x13emu.lunarcore.pro\
+    tob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

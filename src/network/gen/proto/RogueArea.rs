@@ -108,22 +108,22 @@ impl ::protobuf::Message for RogueArea {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                104 => {
                     self.has_taken_rewards = is.read_bool()?;
                 },
                 80 => {
                     self.cur_reach_room_num = is.read_uint32()?;
                 },
-                120 => {
+                72 => {
                     self.rogue_area_status = is.read_uint32()?;
                 },
-                72 => {
+                24 => {
                     self.area_id = is.read_uint32()?;
                 },
-                40 => {
+                16 => {
                     self.rogue_status = is.read_uint32()?;
                 },
-                104 => {
+                40 => {
                     self.map_id = is.read_uint32()?;
                 },
                 tag => {
@@ -145,16 +145,16 @@ impl ::protobuf::Message for RogueArea {
             my_size += ::protobuf::rt::uint32_size(10, self.cur_reach_room_num);
         }
         if self.rogue_area_status != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.rogue_area_status);
+            my_size += ::protobuf::rt::uint32_size(9, self.rogue_area_status);
         }
         if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.area_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.area_id);
         }
         if self.rogue_status != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.rogue_status);
+            my_size += ::protobuf::rt::uint32_size(2, self.rogue_status);
         }
         if self.map_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.map_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.map_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -163,22 +163,22 @@ impl ::protobuf::Message for RogueArea {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.has_taken_rewards != false {
-            os.write_bool(4, self.has_taken_rewards)?;
+            os.write_bool(13, self.has_taken_rewards)?;
         }
         if self.cur_reach_room_num != 0 {
             os.write_uint32(10, self.cur_reach_room_num)?;
         }
         if self.rogue_area_status != 0 {
-            os.write_uint32(15, self.rogue_area_status)?;
+            os.write_uint32(9, self.rogue_area_status)?;
         }
         if self.area_id != 0 {
-            os.write_uint32(9, self.area_id)?;
+            os.write_uint32(3, self.area_id)?;
         }
         if self.rogue_status != 0 {
-            os.write_uint32(5, self.rogue_status)?;
+            os.write_uint32(2, self.rogue_status)?;
         }
         if self.map_id != 0 {
-            os.write_uint32(13, self.map_id)?;
+            os.write_uint32(5, self.map_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -239,12 +239,12 @@ impl ::protobuf::reflect::ProtobufValue for RogueArea {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0fRogueArea.proto\"\xe3\x01\n\tRogueArea\x12*\n\x11has_taken_rewards\
-    \x18\x04\x20\x01(\x08R\x0fhasTakenRewards\x12+\n\x12cur_reach_room_num\
-    \x18\n\x20\x01(\rR\x0fcurReachRoomNum\x12*\n\x11rogue_area_status\x18\
-    \x0f\x20\x01(\rR\x0frogueAreaStatus\x12\x17\n\x07area_id\x18\t\x20\x01(\
-    \rR\x06areaId\x12!\n\x0crogue_status\x18\x05\x20\x01(\rR\x0brogueStatus\
-    \x12\x15\n\x06map_id\x18\r\x20\x01(\rR\x05mapIdB\x15\n\x13emu.lunarcore.\
-    protob\x06proto3\
+    \x18\r\x20\x01(\x08R\x0fhasTakenRewards\x12+\n\x12cur_reach_room_num\x18\
+    \n\x20\x01(\rR\x0fcurReachRoomNum\x12*\n\x11rogue_area_status\x18\t\x20\
+    \x01(\rR\x0frogueAreaStatus\x12\x17\n\x07area_id\x18\x03\x20\x01(\rR\x06\
+    areaId\x12!\n\x0crogue_status\x18\x02\x20\x01(\rR\x0brogueStatus\x12\x15\
+    \n\x06map_id\x18\x05\x20\x01(\rR\x05mapIdB\x15\n\x13emu.lunarcore.protob\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

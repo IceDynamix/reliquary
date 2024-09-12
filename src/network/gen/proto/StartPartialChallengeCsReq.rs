@@ -90,10 +90,10 @@ impl ::protobuf::Message for StartPartialChallengeCsReq {
                 80 => {
                     self.challenge_id = is.read_uint32()?;
                 },
-                72 => {
+                96 => {
                     self.buff_id = is.read_uint32()?;
                 },
-                40 => {
+                32 => {
                     self.is_first_half = is.read_bool()?;
                 },
                 tag => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for StartPartialChallengeCsReq {
             my_size += ::protobuf::rt::uint32_size(10, self.challenge_id);
         }
         if self.buff_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.buff_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.buff_id);
         }
         if self.is_first_half != false {
             my_size += 1 + 1;
@@ -127,10 +127,10 @@ impl ::protobuf::Message for StartPartialChallengeCsReq {
             os.write_uint32(10, self.challenge_id)?;
         }
         if self.buff_id != 0 {
-            os.write_uint32(9, self.buff_id)?;
+            os.write_uint32(12, self.buff_id)?;
         }
         if self.is_first_half != false {
-            os.write_bool(5, self.is_first_half)?;
+            os.write_bool(4, self.is_first_half)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,7 +186,7 @@ impl ::protobuf::reflect::ProtobufValue for StartPartialChallengeCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20StartPartialChallengeCsReq.proto\"|\n\x1aStartPartialChallengeCsRe\
     q\x12!\n\x0cchallenge_id\x18\n\x20\x01(\rR\x0bchallengeId\x12\x17\n\x07b\
-    uff_id\x18\t\x20\x01(\rR\x06buffId\x12\"\n\ris_first_half\x18\x05\x20\
+    uff_id\x18\x0c\x20\x01(\rR\x06buffId\x12\"\n\ris_first_half\x18\x04\x20\
     \x01(\x08R\x0bisFirstHalfB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

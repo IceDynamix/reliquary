@@ -94,7 +94,7 @@ impl ::protobuf::Message for RogueMiracle {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                26 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -112,10 +112,10 @@ impl ::protobuf::Message for RogueMiracle {
                 96 => {
                     self.miracle_id = is.read_uint32()?;
                 },
-                8 => {
+                48 => {
                     self.NKBEHFHLPEF = is.read_uint32()?;
                 },
-                32 => {
+                72 => {
                     self.MMFONFFPNJM = is.read_uint32()?;
                 },
                 tag => {
@@ -140,10 +140,10 @@ impl ::protobuf::Message for RogueMiracle {
             my_size += ::protobuf::rt::uint32_size(12, self.miracle_id);
         }
         if self.NKBEHFHLPEF != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.NKBEHFHLPEF);
+            my_size += ::protobuf::rt::uint32_size(6, self.NKBEHFHLPEF);
         }
         if self.MMFONFFPNJM != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.MMFONFFPNJM);
+            my_size += ::protobuf::rt::uint32_size(9, self.MMFONFFPNJM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -155,7 +155,7 @@ impl ::protobuf::Message for RogueMiracle {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(82)?; // Tag.
+            os.write_raw_varint32(26)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
@@ -164,10 +164,10 @@ impl ::protobuf::Message for RogueMiracle {
             os.write_uint32(12, self.miracle_id)?;
         }
         if self.NKBEHFHLPEF != 0 {
-            os.write_uint32(1, self.NKBEHFHLPEF)?;
+            os.write_uint32(6, self.NKBEHFHLPEF)?;
         }
         if self.MMFONFFPNJM != 0 {
-            os.write_uint32(4, self.MMFONFFPNJM)?;
+            os.write_uint32(9, self.MMFONFFPNJM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -218,12 +218,12 @@ impl ::protobuf::reflect::ProtobufValue for RogueMiracle {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12RogueMiracle.proto\"\xf3\x01\n\x0cRogueMiracle\x12@\n\x0bKONAGCDHK\
-    KH\x18\n\x20\x03(\x0b2\x1e.RogueMiracle.KONAGCDHKKHEntryR\x0bKONAGCDHKKH\
-    \x12\x1d\n\nmiracle_id\x18\x0c\x20\x01(\rR\tmiracleId\x12\x20\n\x0bNKBEH\
-    FHLPEF\x18\x01\x20\x01(\rR\x0bNKBEHFHLPEF\x12\x20\n\x0bMMFONFFPNJM\x18\
-    \x04\x20\x01(\rR\x0bMMFONFFPNJM\x1a>\n\x10KONAGCDHKKHEntry\x12\x10\n\x03\
-    key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\
-    \x05value:\x028\x01B\x15\n\x13emu.lunarcore.protob\x06proto3\
+    KH\x18\x03\x20\x03(\x0b2\x1e.RogueMiracle.KONAGCDHKKHEntryR\x0bKONAGCDHK\
+    KH\x12\x1d\n\nmiracle_id\x18\x0c\x20\x01(\rR\tmiracleId\x12\x20\n\x0bNKB\
+    EHFHLPEF\x18\x06\x20\x01(\rR\x0bNKBEHFHLPEF\x12\x20\n\x0bMMFONFFPNJM\x18\
+    \t\x20\x01(\rR\x0bMMFONFFPNJM\x1a>\n\x10KONAGCDHKKHEntry\x12\x10\n\x03ke\
+    y\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05v\
+    alue:\x028\x01B\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

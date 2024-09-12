@@ -80,7 +80,7 @@ impl ::protobuf::Message for MissionCustomValueData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                80 => {
                     self.custom_value = is.read_uint32()?;
                 },
                 120 => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for MissionCustomValueData {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.custom_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.custom_value);
+            my_size += ::protobuf::rt::uint32_size(10, self.custom_value);
         }
         if self.index != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.index);
@@ -111,7 +111,7 @@ impl ::protobuf::Message for MissionCustomValueData {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.custom_value != 0 {
-            os.write_uint32(9, self.custom_value)?;
+            os.write_uint32(10, self.custom_value)?;
         }
         if self.index != 0 {
             os.write_uint32(15, self.index)?;
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for MissionCustomValueData {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cMissionCustomValueData.proto\"Q\n\x16MissionCustomValueData\x12!\n\
-    \x0ccustom_value\x18\t\x20\x01(\rR\x0bcustomValue\x12\x14\n\x05index\x18\
+    \x0ccustom_value\x18\n\x20\x01(\rR\x0bcustomValue\x12\x14\n\x05index\x18\
     \x0f\x20\x01(\rR\x05indexB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
