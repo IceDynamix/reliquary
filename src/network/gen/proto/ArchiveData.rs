@@ -87,16 +87,16 @@ impl ::protobuf::Message for ArchiveData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.archive_equipment_id_list)?;
                 },
-                16 => {
+                96 => {
                     self.archive_equipment_id_list.push(is.read_uint32()?);
                 },
-                90 => {
+                42 => {
                     self.archive_monster_id_list.push(is.read_message()?);
                 },
-                98 => {
+                18 => {
                     self.relic_list.push(is.read_message()?);
                 },
                 tag => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for ArchiveData {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         for value in &self.archive_equipment_id_list {
-            my_size += ::protobuf::rt::uint32_size(2, *value);
+            my_size += ::protobuf::rt::uint32_size(12, *value);
         };
         for value in &self.archive_monster_id_list {
             let len = value.compute_size();
@@ -129,13 +129,13 @@ impl ::protobuf::Message for ArchiveData {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.archive_equipment_id_list {
-            os.write_uint32(2, *v)?;
+            os.write_uint32(12, *v)?;
         };
         for v in &self.archive_monster_id_list {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         for v in &self.relic_list {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -191,9 +191,9 @@ impl ::protobuf::reflect::ProtobufValue for ArchiveData {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ArchiveData.proto\x1a\x12RelicArchive.proto\x1a\x14MonsterArchive.\
     proto\"\xbe\x01\n\x0bArchiveData\x129\n\x19archive_equipment_id_list\x18\
-    \x02\x20\x03(\rR\x16archiveEquipmentIdList\x12F\n\x17archive_monster_id_\
-    list\x18\x0b\x20\x03(\x0b2\x0f.MonsterArchiveR\x14archiveMonsterIdList\
-    \x12,\n\nrelic_list\x18\x0c\x20\x03(\x0b2\r.RelicArchiveR\trelicListB\
+    \x0c\x20\x03(\rR\x16archiveEquipmentIdList\x12F\n\x17archive_monster_id_\
+    list\x18\x05\x20\x03(\x0b2\x0f.MonsterArchiveR\x14archiveMonsterIdList\
+    \x12,\n\nrelic_list\x18\x02\x20\x03(\x0b2\r.RelicArchiveR\trelicListB\
     \x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

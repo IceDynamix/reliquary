@@ -87,13 +87,13 @@ impl ::protobuf::Message for RogueUnlockProgress {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                40 => {
                     self.finish = is.read_bool()?;
                 },
-                8 => {
+                104 => {
                     self.progress = is.read_uint32()?;
                 },
-                24 => {
+                32 => {
                     self.unlock_id = is.read_uint32()?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for RogueUnlockProgress {
             my_size += 1 + 1;
         }
         if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.progress);
+            my_size += ::protobuf::rt::uint32_size(13, self.progress);
         }
         if self.unlock_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.unlock_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.unlock_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for RogueUnlockProgress {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.finish != false {
-            os.write_bool(9, self.finish)?;
+            os.write_bool(5, self.finish)?;
         }
         if self.progress != 0 {
-            os.write_uint32(1, self.progress)?;
+            os.write_uint32(13, self.progress)?;
         }
         if self.unlock_id != 0 {
-            os.write_uint32(3, self.unlock_id)?;
+            os.write_uint32(4, self.unlock_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,8 +185,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueUnlockProgress {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19RogueUnlockProgress.proto\"f\n\x13RogueUnlockProgress\x12\x16\n\
-    \x06finish\x18\t\x20\x01(\x08R\x06finish\x12\x1a\n\x08progress\x18\x01\
-    \x20\x01(\rR\x08progress\x12\x1b\n\tunlock_id\x18\x03\x20\x01(\rR\x08unl\
+    \x06finish\x18\x05\x20\x01(\x08R\x06finish\x12\x1a\n\x08progress\x18\r\
+    \x20\x01(\rR\x08progress\x12\x1b\n\tunlock_id\x18\x04\x20\x01(\rR\x08unl\
     ockIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

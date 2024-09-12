@@ -87,10 +87,10 @@ impl ::protobuf::Message for SyncRogueCommonActionResultScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                96 => {
                     self.rogue_version_id = is.read_uint32()?;
                 },
-                42 => {
+                114 => {
                     self.action_result_list.push(is.read_message()?);
                 },
                 64 => {
@@ -109,7 +109,7 @@ impl ::protobuf::Message for SyncRogueCommonActionResultScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.rogue_version_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.rogue_version_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.rogue_version_id);
         }
         for value in &self.action_result_list {
             let len = value.compute_size();
@@ -125,10 +125,10 @@ impl ::protobuf::Message for SyncRogueCommonActionResultScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.rogue_version_id != 0 {
-            os.write_uint32(7, self.rogue_version_id)?;
+            os.write_uint32(12, self.rogue_version_id)?;
         }
         for v in &self.action_result_list {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         if self.display_type != ::protobuf::EnumOrUnknown::new(super::RogueCommonActionResultDisplayType::RogueCommonActionResultDisplayType::ROGUE_COMMON_ACTION_RESULT_DISPLAY_TYPE_NONE) {
             os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.display_type))?;
@@ -187,8 +187,8 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueCommonActionResultScNotify 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)SyncRogueCommonActionResultScNotify.proto\x1a\x17RogueActionResult.pr\
     oto\x1a(RogueCommonActionResultDisplayType.proto\"\xd9\x01\n#SyncRogueCo\
-    mmonActionResultScNotify\x12(\n\x10rogue_version_id\x18\x07\x20\x01(\rR\
-    \x0erogueVersionId\x12@\n\x12action_result_list\x18\x05\x20\x03(\x0b2\
+    mmonActionResultScNotify\x12(\n\x10rogue_version_id\x18\x0c\x20\x01(\rR\
+    \x0erogueVersionId\x12@\n\x12action_result_list\x18\x0e\x20\x03(\x0b2\
     \x12.RogueActionResultR\x10actionResultList\x12F\n\x0cdisplay_type\x18\
     \x08\x20\x01(\x0e2#.RogueCommonActionResultDisplayTypeR\x0bdisplayTypeB\
     \x15\n\x13emu.lunarcore.protob\x06proto3\

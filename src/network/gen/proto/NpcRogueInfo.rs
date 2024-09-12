@@ -29,16 +29,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NpcRogueInfo {
     // message fields
-    // @@protoc_insertion_point(field:NpcRogueInfo.rogue_npc_id)
-    pub rogue_npc_id: u32,
     // @@protoc_insertion_point(field:NpcRogueInfo.finish_dialogue)
     pub finish_dialogue: bool,
-    // @@protoc_insertion_point(field:NpcRogueInfo.JFCBEHNMGNO)
-    pub JFCBEHNMGNO: bool,
-    // @@protoc_insertion_point(field:NpcRogueInfo.CLFMCIDHJLM)
-    pub CLFMCIDHJLM: bool,
-    // @@protoc_insertion_point(field:NpcRogueInfo.dialogue_group_id)
-    pub dialogue_group_id: u32,
+    // @@protoc_insertion_point(field:NpcRogueInfo.LPFLCICNIOA)
+    pub LPFLCICNIOA: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:NpcRogueInfo.KIAKKDIECME)
+    pub KIAKKDIECME: u32,
+    // @@protoc_insertion_point(field:NpcRogueInfo.event_unique_id)
+    pub event_unique_id: u32,
+    // @@protoc_insertion_point(field:NpcRogueInfo.IDOFFGNNGEM)
+    pub IDOFFGNNGEM: bool,
+    // @@protoc_insertion_point(field:NpcRogueInfo.PHDDANOOOJI)
+    pub PHDDANOOOJI: bool,
+    // @@protoc_insertion_point(field:NpcRogueInfo.dialogue_id)
+    pub dialogue_id: u32,
+    // @@protoc_insertion_point(field:NpcRogueInfo.event_id)
+    pub event_id: u32,
+    // @@protoc_insertion_point(field:NpcRogueInfo.dialogue_event_param_list)
+    pub dialogue_event_param_list: ::std::vec::Vec<super::NpcDialogueEventParam::NpcDialogueEventParam>,
     // special fields
     // @@protoc_insertion_point(special_field:NpcRogueInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,32 +64,52 @@ impl NpcRogueInfo {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(5);
+        let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "rogue_npc_id",
-            |m: &NpcRogueInfo| { &m.rogue_npc_id },
-            |m: &mut NpcRogueInfo| { &mut m.rogue_npc_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "finish_dialogue",
             |m: &NpcRogueInfo| { &m.finish_dialogue },
             |m: &mut NpcRogueInfo| { &mut m.finish_dialogue },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JFCBEHNMGNO",
-            |m: &NpcRogueInfo| { &m.JFCBEHNMGNO },
-            |m: &mut NpcRogueInfo| { &mut m.JFCBEHNMGNO },
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor::<_, _, _>(
+            "LPFLCICNIOA",
+            |m: &NpcRogueInfo| { &m.LPFLCICNIOA },
+            |m: &mut NpcRogueInfo| { &mut m.LPFLCICNIOA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CLFMCIDHJLM",
-            |m: &NpcRogueInfo| { &m.CLFMCIDHJLM },
-            |m: &mut NpcRogueInfo| { &mut m.CLFMCIDHJLM },
+            "KIAKKDIECME",
+            |m: &NpcRogueInfo| { &m.KIAKKDIECME },
+            |m: &mut NpcRogueInfo| { &mut m.KIAKKDIECME },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "dialogue_group_id",
-            |m: &NpcRogueInfo| { &m.dialogue_group_id },
-            |m: &mut NpcRogueInfo| { &mut m.dialogue_group_id },
+            "event_unique_id",
+            |m: &NpcRogueInfo| { &m.event_unique_id },
+            |m: &mut NpcRogueInfo| { &mut m.event_unique_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IDOFFGNNGEM",
+            |m: &NpcRogueInfo| { &m.IDOFFGNNGEM },
+            |m: &mut NpcRogueInfo| { &mut m.IDOFFGNNGEM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PHDDANOOOJI",
+            |m: &NpcRogueInfo| { &m.PHDDANOOOJI },
+            |m: &mut NpcRogueInfo| { &mut m.PHDDANOOOJI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "dialogue_id",
+            |m: &NpcRogueInfo| { &m.dialogue_id },
+            |m: &mut NpcRogueInfo| { &mut m.dialogue_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "event_id",
+            |m: &NpcRogueInfo| { &m.event_id },
+            |m: &mut NpcRogueInfo| { &mut m.event_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "dialogue_event_param_list",
+            |m: &NpcRogueInfo| { &m.dialogue_event_param_list },
+            |m: &mut NpcRogueInfo| { &mut m.dialogue_event_param_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NpcRogueInfo>(
             "NpcRogueInfo",
@@ -101,20 +129,44 @@ impl ::protobuf::Message for NpcRogueInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.rogue_npc_id = is.read_uint32()?;
-                },
-                72 => {
+                96 => {
                     self.finish_dialogue = is.read_bool()?;
                 },
-                8 => {
-                    self.JFCBEHNMGNO = is.read_bool()?;
+                114 => {
+                    let len = is.read_raw_varint32()?;
+                    let old_limit = is.push_limit(len as u64)?;
+                    let mut key = ::std::default::Default::default();
+                    let mut value = ::std::default::Default::default();
+                    while let Some(tag) = is.read_raw_tag_or_eof()? {
+                        match tag {
+                            8 => key = is.read_uint32()?,
+                            16 => value = is.read_uint32()?,
+                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
+                        };
+                    }
+                    is.pop_limit(old_limit);
+                    self.LPFLCICNIOA.insert(key, value);
                 },
-                120 => {
-                    self.CLFMCIDHJLM = is.read_bool()?;
+                40 => {
+                    self.KIAKKDIECME = is.read_uint32()?;
                 },
-                96 => {
-                    self.dialogue_group_id = is.read_uint32()?;
+                80 => {
+                    self.event_unique_id = is.read_uint32()?;
+                },
+                88 => {
+                    self.IDOFFGNNGEM = is.read_bool()?;
+                },
+                16 => {
+                    self.PHDDANOOOJI = is.read_bool()?;
+                },
+                24 => {
+                    self.dialogue_id = is.read_uint32()?;
+                },
+                72 => {
+                    self.event_id = is.read_uint32()?;
+                },
+                122 => {
+                    self.dialogue_event_param_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,42 +180,76 @@ impl ::protobuf::Message for NpcRogueInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.rogue_npc_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.rogue_npc_id);
-        }
         if self.finish_dialogue != false {
             my_size += 1 + 1;
         }
-        if self.JFCBEHNMGNO != false {
+        for (k, v) in &self.LPFLCICNIOA {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            entry_size += ::protobuf::rt::uint32_size(2, *v);
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
+        };
+        if self.KIAKKDIECME != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.KIAKKDIECME);
+        }
+        if self.event_unique_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.event_unique_id);
+        }
+        if self.IDOFFGNNGEM != false {
             my_size += 1 + 1;
         }
-        if self.CLFMCIDHJLM != false {
+        if self.PHDDANOOOJI != false {
             my_size += 1 + 1;
         }
-        if self.dialogue_group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.dialogue_group_id);
+        if self.dialogue_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.dialogue_id);
         }
+        if self.event_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.event_id);
+        }
+        for value in &self.dialogue_event_param_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.rogue_npc_id != 0 {
-            os.write_uint32(11, self.rogue_npc_id)?;
-        }
         if self.finish_dialogue != false {
-            os.write_bool(9, self.finish_dialogue)?;
+            os.write_bool(12, self.finish_dialogue)?;
         }
-        if self.JFCBEHNMGNO != false {
-            os.write_bool(1, self.JFCBEHNMGNO)?;
+        for (k, v) in &self.LPFLCICNIOA {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            entry_size += ::protobuf::rt::uint32_size(2, *v);
+            os.write_raw_varint32(114)?; // Tag.
+            os.write_raw_varint32(entry_size as u32)?;
+            os.write_uint32(1, *k)?;
+            os.write_uint32(2, *v)?;
+        };
+        if self.KIAKKDIECME != 0 {
+            os.write_uint32(5, self.KIAKKDIECME)?;
         }
-        if self.CLFMCIDHJLM != false {
-            os.write_bool(15, self.CLFMCIDHJLM)?;
+        if self.event_unique_id != 0 {
+            os.write_uint32(10, self.event_unique_id)?;
         }
-        if self.dialogue_group_id != 0 {
-            os.write_uint32(12, self.dialogue_group_id)?;
+        if self.IDOFFGNNGEM != false {
+            os.write_bool(11, self.IDOFFGNNGEM)?;
         }
+        if self.PHDDANOOOJI != false {
+            os.write_bool(2, self.PHDDANOOOJI)?;
+        }
+        if self.dialogue_id != 0 {
+            os.write_uint32(3, self.dialogue_id)?;
+        }
+        if self.event_id != 0 {
+            os.write_uint32(9, self.event_id)?;
+        }
+        for v in &self.dialogue_event_param_list {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -181,24 +267,21 @@ impl ::protobuf::Message for NpcRogueInfo {
     }
 
     fn clear(&mut self) {
-        self.rogue_npc_id = 0;
         self.finish_dialogue = false;
-        self.JFCBEHNMGNO = false;
-        self.CLFMCIDHJLM = false;
-        self.dialogue_group_id = 0;
+        self.LPFLCICNIOA.clear();
+        self.KIAKKDIECME = 0;
+        self.event_unique_id = 0;
+        self.IDOFFGNNGEM = false;
+        self.PHDDANOOOJI = false;
+        self.dialogue_id = 0;
+        self.event_id = 0;
+        self.dialogue_event_param_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NpcRogueInfo {
-        static instance: NpcRogueInfo = NpcRogueInfo {
-            rogue_npc_id: 0,
-            finish_dialogue: false,
-            JFCBEHNMGNO: false,
-            CLFMCIDHJLM: false,
-            dialogue_group_id: 0,
-            special_fields: ::protobuf::SpecialFields::new(),
-        };
-        &instance
+        static instance: ::protobuf::rt::Lazy<NpcRogueInfo> = ::protobuf::rt::Lazy::new();
+        instance.get(NpcRogueInfo::new)
     }
 }
 
@@ -220,12 +303,19 @@ impl ::protobuf::reflect::ProtobufValue for NpcRogueInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12NpcRogueInfo.proto\"\xc9\x01\n\x0cNpcRogueInfo\x12\x20\n\x0crogue_\
-    npc_id\x18\x0b\x20\x01(\rR\nrogueNpcId\x12'\n\x0ffinish_dialogue\x18\t\
-    \x20\x01(\x08R\x0efinishDialogue\x12\x20\n\x0bJFCBEHNMGNO\x18\x01\x20\
-    \x01(\x08R\x0bJFCBEHNMGNO\x12\x20\n\x0bCLFMCIDHJLM\x18\x0f\x20\x01(\x08R\
-    \x0bCLFMCIDHJLM\x12*\n\x11dialogue_group_id\x18\x0c\x20\x01(\rR\x0fdialo\
-    gueGroupIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x12NpcRogueInfo.proto\x1a\x1bNpcDialogueEventParam.proto\"\xd6\x03\n\
+    \x0cNpcRogueInfo\x12'\n\x0ffinish_dialogue\x18\x0c\x20\x01(\x08R\x0efini\
+    shDialogue\x12@\n\x0bLPFLCICNIOA\x18\x0e\x20\x03(\x0b2\x1e.NpcRogueInfo.\
+    LPFLCICNIOAEntryR\x0bLPFLCICNIOA\x12\x20\n\x0bKIAKKDIECME\x18\x05\x20\
+    \x01(\rR\x0bKIAKKDIECME\x12&\n\x0fevent_unique_id\x18\n\x20\x01(\rR\reve\
+    ntUniqueId\x12\x20\n\x0bIDOFFGNNGEM\x18\x0b\x20\x01(\x08R\x0bIDOFFGNNGEM\
+    \x12\x20\n\x0bPHDDANOOOJI\x18\x02\x20\x01(\x08R\x0bPHDDANOOOJI\x12\x1f\n\
+    \x0bdialogue_id\x18\x03\x20\x01(\rR\ndialogueId\x12\x19\n\x08event_id\
+    \x18\t\x20\x01(\rR\x07eventId\x12Q\n\x19dialogue_event_param_list\x18\
+    \x0f\x20\x03(\x0b2\x16.NpcDialogueEventParamR\x16dialogueEventParamList\
+    \x1a>\n\x10LPFLCICNIOAEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\
+    \x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01B\x15\n\x13emu\
+    .lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -242,7 +332,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(0);
+            let mut deps = ::std::vec::Vec::with_capacity(1);
+            deps.push(super::NpcDialogueEventParam::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(NpcRogueInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

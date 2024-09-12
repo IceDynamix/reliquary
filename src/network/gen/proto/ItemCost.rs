@@ -87,13 +87,13 @@ impl ::protobuf::Message for ItemCost {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.pile_item)?;
                 },
-                64 => {
+                88 => {
                     self.equipment_unique_id = is.read_uint32()?;
                 },
-                112 => {
+                104 => {
                     self.relic_unique_id = is.read_uint32()?;
                 },
                 tag => {
@@ -113,10 +113,10 @@ impl ::protobuf::Message for ItemCost {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.equipment_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.equipment_unique_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.equipment_unique_id);
         }
         if self.relic_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.relic_unique_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.relic_unique_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,13 +125,13 @@ impl ::protobuf::Message for ItemCost {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.pile_item.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if self.equipment_unique_id != 0 {
-            os.write_uint32(8, self.equipment_unique_id)?;
+            os.write_uint32(11, self.equipment_unique_id)?;
         }
         if self.relic_unique_id != 0 {
-            os.write_uint32(14, self.relic_unique_id)?;
+            os.write_uint32(13, self.relic_unique_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for ItemCost {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0eItemCost.proto\x1a\x0ePileItem.proto\"\x8a\x01\n\x08ItemCost\x12&\
-    \n\tpile_item\x18\x04\x20\x01(\x0b2\t.PileItemR\x08pileItem\x12.\n\x13eq\
-    uipment_unique_id\x18\x08\x20\x01(\rR\x11equipmentUniqueId\x12&\n\x0frel\
-    ic_unique_id\x18\x0e\x20\x01(\rR\rrelicUniqueIdB\x15\n\x13emu.lunarcore.\
-    protob\x06proto3\
+    \n\tpile_item\x18\x0c\x20\x01(\x0b2\t.PileItemR\x08pileItem\x12.\n\x13eq\
+    uipment_unique_id\x18\x0b\x20\x01(\rR\x11equipmentUniqueId\x12&\n\x0frel\
+    ic_unique_id\x18\r\x20\x01(\rR\rrelicUniqueIdB\x15\n\x13emu.lunarcore.pr\
+    otob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

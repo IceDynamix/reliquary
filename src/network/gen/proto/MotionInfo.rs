@@ -80,10 +80,10 @@ impl ::protobuf::Message for MotionInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.pos)?;
                 },
-                90 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rot)?;
                 },
                 tag => {
@@ -113,10 +113,10 @@ impl ::protobuf::Message for MotionInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.pos.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if let Some(v) = self.rot.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,9 +169,9 @@ impl ::protobuf::reflect::ProtobufValue for MotionInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x10MotionInfo.proto\x1a\x0cVector.proto\"B\n\nMotionInfo\x12\x19\n\
-    \x03pos\x18\x05\x20\x01(\x0b2\x07.VectorR\x03pos\x12\x19\n\x03rot\x18\
-    \x0b\x20\x01(\x0b2\x07.VectorR\x03rotB\x15\n\x13emu.lunarcore.protob\x06\
-    proto3\
+    \x03pos\x18\x0e\x20\x01(\x0b2\x07.VectorR\x03pos\x12\x19\n\x03rot\x18\r\
+    \x20\x01(\x0b2\x07.VectorR\x03rotB\x15\n\x13emu.lunarcore.protob\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -73,7 +73,7 @@ impl ::protobuf::Message for RogueRerollBuff {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.buff_select_info)?;
                 },
                 tag => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for RogueRerollBuff {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.buff_select_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,9 +150,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueRerollBuff {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15RogueRerollBuff.proto\x1a\x1fRogueCommonBuffSelectInfo.proto\"W\n\
-    \x0fRogueRerollBuff\x12D\n\x10buff_select_info\x18\x07\x20\x01(\x0b2\x1a\
-    .RogueCommonBuffSelectInfoR\x0ebuffSelectInfoB\x15\n\x13emu.lunarcore.pr\
-    otob\x06proto3\
+    \x0fRogueRerollBuff\x12D\n\x10buff_select_info\x18\t\x20\x01(\x0b2\x1a.R\
+    ogueCommonBuffSelectInfoR\x0ebuffSelectInfoB\x15\n\x13emu.lunarcore.prot\
+    ob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

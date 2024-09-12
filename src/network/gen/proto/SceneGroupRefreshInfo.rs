@@ -94,16 +94,16 @@ impl ::protobuf::Message for SceneGroupRefreshInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                72 => {
                     self.state = is.read_uint32()?;
                 },
-                16 => {
+                96 => {
                     self.group_id = is.read_uint32()?;
                 },
-                42 => {
+                58 => {
                     self.refresh_entity.push(is.read_message()?);
                 },
-                56 => {
+                112 => {
                     self.group_refresh_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -119,17 +119,17 @@ impl ::protobuf::Message for SceneGroupRefreshInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.state != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.state);
+            my_size += ::protobuf::rt::uint32_size(9, self.state);
         }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.group_id);
         }
         for value in &self.refresh_entity {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.group_refresh_type != ::protobuf::EnumOrUnknown::new(super::SceneGroupRefreshType::SceneGroupRefreshType::SCENE_GROUP_REFRESH_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(7, self.group_refresh_type.value());
+            my_size += ::protobuf::rt::int32_size(14, self.group_refresh_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,16 +138,16 @@ impl ::protobuf::Message for SceneGroupRefreshInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.state != 0 {
-            os.write_uint32(1, self.state)?;
+            os.write_uint32(9, self.state)?;
         }
         if self.group_id != 0 {
-            os.write_uint32(2, self.group_id)?;
+            os.write_uint32(12, self.group_id)?;
         }
         for v in &self.refresh_entity {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         if self.group_refresh_type != ::protobuf::EnumOrUnknown::new(super::SceneGroupRefreshType::SceneGroupRefreshType::SCENE_GROUP_REFRESH_TYPE_NONE) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.group_refresh_type))?;
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.group_refresh_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -205,11 +205,11 @@ impl ::protobuf::reflect::ProtobufValue for SceneGroupRefreshInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bSceneGroupRefreshInfo.proto\x1a\x1bSceneGroupRefreshType.proto\x1a\
     \x1cSceneEntityRefreshInfo.proto\"\xce\x01\n\x15SceneGroupRefreshInfo\
-    \x12\x14\n\x05state\x18\x01\x20\x01(\rR\x05state\x12\x19\n\x08group_id\
-    \x18\x02\x20\x01(\rR\x07groupId\x12>\n\x0erefresh_entity\x18\x05\x20\x03\
-    (\x0b2\x17.SceneEntityRefreshInfoR\rrefreshEntity\x12D\n\x12group_refres\
-    h_type\x18\x07\x20\x01(\x0e2\x16.SceneGroupRefreshTypeR\x10groupRefreshT\
-    ypeB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \x12\x14\n\x05state\x18\t\x20\x01(\rR\x05state\x12\x19\n\x08group_id\x18\
+    \x0c\x20\x01(\rR\x07groupId\x12>\n\x0erefresh_entity\x18\x07\x20\x03(\
+    \x0b2\x17.SceneEntityRefreshInfoR\rrefreshEntity\x12D\n\x12group_refresh\
+    _type\x18\x0e\x20\x01(\x0e2\x16.SceneGroupRefreshTypeR\x10groupRefreshTy\
+    peB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -80,10 +80,10 @@ impl ::protobuf::Message for RogueCommonPendingAction {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_action)?;
                 },
-                40 => {
+                120 => {
                     self.unique_id = is.read_uint32()?;
                 },
                 tag => {
@@ -103,7 +103,7 @@ impl ::protobuf::Message for RogueCommonPendingAction {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.unique_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -112,10 +112,10 @@ impl ::protobuf::Message for RogueCommonPendingAction {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.rogue_action.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.unique_id != 0 {
-            os.write_uint32(5, self.unique_id)?;
+            os.write_uint32(15, self.unique_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueCommonPendingAction {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eRogueCommonPendingAction.proto\x1a\x11RogueAction.proto\"h\n\x18Ro\
-    gueCommonPendingAction\x12/\n\x0crogue_action\x18\x0c\x20\x01(\x0b2\x0c.\
-    RogueActionR\x0brogueAction\x12\x1b\n\tunique_id\x18\x05\x20\x01(\rR\x08\
-    uniqueIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    gueCommonPendingAction\x12/\n\x0crogue_action\x18\t\x20\x01(\x0b2\x0c.Ro\
+    gueActionR\x0brogueAction\x12\x1b\n\tunique_id\x18\x0f\x20\x01(\rR\x08un\
+    iqueIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

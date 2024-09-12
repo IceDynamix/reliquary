@@ -104,16 +104,16 @@ impl ::protobuf::Message for StartCocoonStageScRsp {
                 120 => {
                     self.prop_entity_id = is.read_uint32()?;
                 },
-                50 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_info)?;
                 },
-                112 => {
+                88 => {
                     self.cocoon_id = is.read_uint32()?;
                 },
-                80 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
                 },
-                8 => {
+                96 => {
                     self.wave = is.read_uint32()?;
                 },
                 tag => {
@@ -136,13 +136,13 @@ impl ::protobuf::Message for StartCocoonStageScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.cocoon_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.cocoon_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.cocoon_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         if self.wave != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.wave);
+            my_size += ::protobuf::rt::uint32_size(12, self.wave);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -154,16 +154,16 @@ impl ::protobuf::Message for StartCocoonStageScRsp {
             os.write_uint32(15, self.prop_entity_id)?;
         }
         if let Some(v) = self.battle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.cocoon_id != 0 {
-            os.write_uint32(14, self.cocoon_id)?;
+            os.write_uint32(11, self.cocoon_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
         }
         if self.wave != 0 {
-            os.write_uint32(1, self.wave)?;
+            os.write_uint32(12, self.wave)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -223,10 +223,10 @@ impl ::protobuf::reflect::ProtobufValue for StartCocoonStageScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bStartCocoonStageScRsp.proto\x1a\x15SceneBattleInfo.proto\"\xbb\x01\
     \n\x15StartCocoonStageScRsp\x12$\n\x0eprop_entity_id\x18\x0f\x20\x01(\rR\
-    \x0cpropEntityId\x121\n\x0bbattle_info\x18\x06\x20\x01(\x0b2\x10.SceneBa\
-    ttleInfoR\nbattleInfo\x12\x1b\n\tcocoon_id\x18\x0e\x20\x01(\rR\x08cocoon\
-    Id\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcode\x12\x12\n\x04wave\
-    \x18\x01\x20\x01(\rR\x04waveB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \x0cpropEntityId\x121\n\x0bbattle_info\x18\t\x20\x01(\x0b2\x10.SceneBatt\
+    leInfoR\nbattleInfo\x12\x1b\n\tcocoon_id\x18\x0b\x20\x01(\rR\x08cocoonId\
+    \x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\x12\x12\n\x04wave\
+    \x18\x0c\x20\x01(\rR\x04waveB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

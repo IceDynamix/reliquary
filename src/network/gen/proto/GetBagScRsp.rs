@@ -37,6 +37,8 @@ pub struct GetBagScRsp {
     pub relic_list: ::std::vec::Vec<super::Relic::Relic>,
     // @@protoc_insertion_point(field:GetBagScRsp.material_list)
     pub material_list: ::std::vec::Vec<super::Material::Material>,
+    // @@protoc_insertion_point(field:GetBagScRsp.pet_list)
+    pub pet_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GetBagScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,7 +56,7 @@ impl GetBagScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(4);
+        let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -76,6 +78,11 @@ impl GetBagScRsp {
             |m: &GetBagScRsp| { &m.material_list },
             |m: &mut GetBagScRsp| { &mut m.material_list },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "pet_list",
+            |m: &GetBagScRsp| { &m.pet_list },
+            |m: &mut GetBagScRsp| { &mut m.pet_list },
+        ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetBagScRsp>(
             "GetBagScRsp",
             fields,
@@ -94,17 +101,23 @@ impl ::protobuf::Message for GetBagScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                114 => {
+                50 => {
                     self.equipment_list.push(is.read_message()?);
                 },
-                74 => {
+                82 => {
                     self.relic_list.push(is.read_message()?);
                 },
-                82 => {
+                10 => {
                     self.material_list.push(is.read_message()?);
+                },
+                18 => {
+                    is.read_repeated_packed_uint32_into(&mut self.pet_list)?;
+                },
+                16 => {
+                    self.pet_list.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -119,7 +132,7 @@ impl ::protobuf::Message for GetBagScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         for value in &self.equipment_list {
             let len = value.compute_size();
@@ -133,6 +146,9 @@ impl ::protobuf::Message for GetBagScRsp {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        for value in &self.pet_list {
+            my_size += ::protobuf::rt::uint32_size(2, *value);
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -140,16 +156,19 @@ impl ::protobuf::Message for GetBagScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
         for v in &self.equipment_list {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
         for v in &self.relic_list {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         for v in &self.material_list {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        };
+        for v in &self.pet_list {
+            os.write_uint32(2, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -172,6 +191,7 @@ impl ::protobuf::Message for GetBagScRsp {
         self.equipment_list.clear();
         self.relic_list.clear();
         self.material_list.clear();
+        self.pet_list.clear();
         self.special_fields.clear();
     }
 
@@ -181,6 +201,7 @@ impl ::protobuf::Message for GetBagScRsp {
             equipment_list: ::std::vec::Vec::new(),
             relic_list: ::std::vec::Vec::new(),
             material_list: ::std::vec::Vec::new(),
+            pet_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -206,11 +227,12 @@ impl ::protobuf::reflect::ProtobufValue for GetBagScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GetBagScRsp.proto\x1a\x0bRelic.proto\x1a\x0fEquipment.proto\x1a\
-    \x0eMaterial.proto\"\xb1\x01\n\x0bGetBagScRsp\x12\x18\n\x07retcode\x18\
-    \x07\x20\x01(\rR\x07retcode\x121\n\x0eequipment_list\x18\x0e\x20\x03(\
-    \x0b2\n.EquipmentR\requipmentList\x12%\n\nrelic_list\x18\t\x20\x03(\x0b2\
-    \x06.RelicR\trelicList\x12.\n\rmaterial_list\x18\n\x20\x03(\x0b2\t.Mater\
-    ialR\x0cmaterialListB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \x0eMaterial.proto\"\xcc\x01\n\x0bGetBagScRsp\x12\x18\n\x07retcode\x18\t\
+    \x20\x01(\rR\x07retcode\x121\n\x0eequipment_list\x18\x06\x20\x03(\x0b2\n\
+    .EquipmentR\requipmentList\x12%\n\nrelic_list\x18\n\x20\x03(\x0b2\x06.Re\
+    licR\trelicList\x12.\n\rmaterial_list\x18\x01\x20\x03(\x0b2\t.MaterialR\
+    \x0cmaterialList\x12\x19\n\x08pet_list\x18\x02\x20\x03(\rR\x07petListB\
+    \x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

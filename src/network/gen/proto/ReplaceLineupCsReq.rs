@@ -111,19 +111,19 @@ impl ::protobuf::Message for ReplaceLineupCsReq {
                 16 => {
                     self.index = is.read_uint32()?;
                 },
-                80 => {
+                96 => {
                     self.extra_lineup_type = is.read_enum_or_unknown()?;
                 },
-                24 => {
+                56 => {
                     self.plane_id = is.read_uint32()?;
                 },
-                56 => {
+                24 => {
                     self.leader_slot = is.read_uint32()?;
                 },
-                32 => {
+                80 => {
                     self.is_virtual = is.read_bool()?;
                 },
-                114 => {
+                74 => {
                     self.slots.push(is.read_message()?);
                 },
                 tag => {
@@ -142,13 +142,13 @@ impl ::protobuf::Message for ReplaceLineupCsReq {
             my_size += ::protobuf::rt::uint32_size(2, self.index);
         }
         if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            my_size += ::protobuf::rt::int32_size(10, self.extra_lineup_type.value());
+            my_size += ::protobuf::rt::int32_size(12, self.extra_lineup_type.value());
         }
         if self.plane_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.plane_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.plane_id);
         }
         if self.leader_slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.leader_slot);
+            my_size += ::protobuf::rt::uint32_size(3, self.leader_slot);
         }
         if self.is_virtual != false {
             my_size += 1 + 1;
@@ -167,19 +167,19 @@ impl ::protobuf::Message for ReplaceLineupCsReq {
             os.write_uint32(2, self.index)?;
         }
         if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.extra_lineup_type))?;
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.extra_lineup_type))?;
         }
         if self.plane_id != 0 {
-            os.write_uint32(3, self.plane_id)?;
+            os.write_uint32(7, self.plane_id)?;
         }
         if self.leader_slot != 0 {
-            os.write_uint32(7, self.leader_slot)?;
+            os.write_uint32(3, self.leader_slot)?;
         }
         if self.is_virtual != false {
-            os.write_bool(4, self.is_virtual)?;
+            os.write_bool(10, self.is_virtual)?;
         }
         for v in &self.slots {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -241,12 +241,12 @@ impl ::protobuf::reflect::ProtobufValue for ReplaceLineupCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18ReplaceLineupCsReq.proto\x1a\x15ExtraLineupType.proto\x1a\x14Lineu\
     pSlotData.proto\"\xea\x01\n\x12ReplaceLineupCsReq\x12\x14\n\x05index\x18\
-    \x02\x20\x01(\rR\x05index\x12<\n\x11extra_lineup_type\x18\n\x20\x01(\x0e\
-    2\x10.ExtraLineupTypeR\x0fextraLineupType\x12\x19\n\x08plane_id\x18\x03\
-    \x20\x01(\rR\x07planeId\x12\x1f\n\x0bleader_slot\x18\x07\x20\x01(\rR\nle\
-    aderSlot\x12\x1d\n\nis_virtual\x18\x04\x20\x01(\x08R\tisVirtual\x12%\n\
-    \x05slots\x18\x0e\x20\x03(\x0b2\x0f.LineupSlotDataR\x05slotsB\x15\n\x13e\
-    mu.lunarcore.protob\x06proto3\
+    \x02\x20\x01(\rR\x05index\x12<\n\x11extra_lineup_type\x18\x0c\x20\x01(\
+    \x0e2\x10.ExtraLineupTypeR\x0fextraLineupType\x12\x19\n\x08plane_id\x18\
+    \x07\x20\x01(\rR\x07planeId\x12\x1f\n\x0bleader_slot\x18\x03\x20\x01(\rR\
+    \nleaderSlot\x12\x1d\n\nis_virtual\x18\n\x20\x01(\x08R\tisVirtual\x12%\n\
+    \x05slots\x18\t\x20\x03(\x0b2\x0f.LineupSlotDataR\x05slotsB\x15\n\x13emu\
+    .lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

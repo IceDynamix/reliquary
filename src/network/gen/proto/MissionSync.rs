@@ -86,7 +86,7 @@ impl ::protobuf::Message for MissionSync {
                 8 => {
                     self.main_mission_id.push(is.read_uint32()?);
                 },
-                26 => {
+                98 => {
                     self.mission_list.push(is.read_message()?);
                 },
                 tag => {
@@ -118,7 +118,7 @@ impl ::protobuf::Message for MissionSync {
             os.write_uint32(1, *v)?;
         };
         for v in &self.mission_list {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -172,7 +172,7 @@ impl ::protobuf::reflect::ProtobufValue for MissionSync {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MissionSync.proto\x1a\rMission.proto\"b\n\x0bMissionSync\x12&\n\
     \x0fmain_mission_id\x18\x01\x20\x03(\rR\rmainMissionId\x12+\n\x0cmission\
-    _list\x18\x03\x20\x03(\x0b2\x08.MissionR\x0bmissionListB\x15\n\x13emu.lu\
+    _list\x18\x0c\x20\x03(\x0b2\x08.MissionR\x0bmissionListB\x15\n\x13emu.lu\
     narcore.protob\x06proto3\
 ";
 

@@ -87,13 +87,13 @@ impl ::protobuf::Message for GetAvatarDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
-                112 => {
+                32 => {
                     self.is_get_all = is.read_bool()?;
                 },
-                122 => {
+                106 => {
                     self.avatar_list.push(is.read_message()?);
                 },
                 tag => {
@@ -109,7 +109,7 @@ impl ::protobuf::Message for GetAvatarDataScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         if self.is_get_all != false {
             my_size += 1 + 1;
@@ -125,13 +125,13 @@ impl ::protobuf::Message for GetAvatarDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
         if self.is_get_all != false {
-            os.write_bool(14, self.is_get_all)?;
+            os.write_bool(4, self.is_get_all)?;
         }
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,8 +186,8 @@ impl ::protobuf::reflect::ProtobufValue for GetAvatarDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18GetAvatarDataScRsp.proto\x1a\x0cAvatar.proto\"v\n\x12GetAvatarData\
-    ScRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12\x1c\n\nis_\
-    get_all\x18\x0e\x20\x01(\x08R\x08isGetAll\x12(\n\x0bavatar_list\x18\x0f\
+    ScRsp\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcode\x12\x1c\n\nis_\
+    get_all\x18\x04\x20\x01(\x08R\x08isGetAll\x12(\n\x0bavatar_list\x18\r\
     \x20\x03(\x0b2\x07.AvatarR\navatarListB\x15\n\x13emu.lunarcore.protob\
     \x06proto3\
 ";

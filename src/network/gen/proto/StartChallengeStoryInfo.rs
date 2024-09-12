@@ -80,10 +80,10 @@ impl ::protobuf::Message for StartChallengeStoryInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.story_buff_info)?;
                 },
-                106 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.new_story_buff_info)?;
                 },
                 tag => {
@@ -113,10 +113,10 @@ impl ::protobuf::Message for StartChallengeStoryInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.story_buff_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if let Some(v) = self.new_story_buff_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -170,8 +170,8 @@ impl ::protobuf::reflect::ProtobufValue for StartChallengeStoryInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dStartChallengeStoryInfo.proto\x1a!StartChallengeStoryBuffInfo.prot\
     o\x1a$StartNewChallengeStoryBuffInfo.proto\"\xaf\x01\n\x17StartChallenge\
-    StoryInfo\x12D\n\x0fstory_buff_info\x18\x06\x20\x01(\x0b2\x1c.StartChall\
-    engeStoryBuffInfoR\rstoryBuffInfo\x12N\n\x13new_story_buff_info\x18\r\
+    StoryInfo\x12D\n\x0fstory_buff_info\x18\x07\x20\x01(\x0b2\x1c.StartChall\
+    engeStoryBuffInfoR\rstoryBuffInfo\x12N\n\x13new_story_buff_info\x18\x08\
     \x20\x01(\x0b2\x1f.StartNewChallengeStoryBuffInfoR\x10newStoryBuffInfoB\
     \x15\n\x13emu.lunarcore.protob\x06proto3\
 ";

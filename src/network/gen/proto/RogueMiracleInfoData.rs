@@ -90,10 +90,10 @@ impl ::protobuf::Message for RogueMiracleInfoData {
                 64 => {
                     self.BDDANOBJMEL = is.read_uint32()?;
                 },
-                32 => {
+                16 => {
                     self.BAILOBNCIGP = is.read_uint32()?;
                 },
-                50 => {
+                98 => {
                     self.rogue_miracle_list.push(is.read_message()?);
                 },
                 tag => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for RogueMiracleInfoData {
             my_size += ::protobuf::rt::uint32_size(8, self.BDDANOBJMEL);
         }
         if self.BAILOBNCIGP != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.BAILOBNCIGP);
+            my_size += ::protobuf::rt::uint32_size(2, self.BAILOBNCIGP);
         }
         for value in &self.rogue_miracle_list {
             let len = value.compute_size();
@@ -128,10 +128,10 @@ impl ::protobuf::Message for RogueMiracleInfoData {
             os.write_uint32(8, self.BDDANOBJMEL)?;
         }
         if self.BAILOBNCIGP != 0 {
-            os.write_uint32(4, self.BAILOBNCIGP)?;
+            os.write_uint32(2, self.BAILOBNCIGP)?;
         }
         for v in &self.rogue_miracle_list {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -187,8 +187,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueMiracleInfoData {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aRogueMiracleInfoData.proto\x1a\x1aRogueMiracleDataInfo.proto\"\x9f\
     \x01\n\x14RogueMiracleInfoData\x12\x20\n\x0bBDDANOBJMEL\x18\x08\x20\x01(\
-    \rR\x0bBDDANOBJMEL\x12\x20\n\x0bBAILOBNCIGP\x18\x04\x20\x01(\rR\x0bBAILO\
-    BNCIGP\x12C\n\x12rogue_miracle_list\x18\x06\x20\x03(\x0b2\x15.RogueMirac\
+    \rR\x0bBDDANOBJMEL\x12\x20\n\x0bBAILOBNCIGP\x18\x02\x20\x01(\rR\x0bBAILO\
+    BNCIGP\x12C\n\x12rogue_miracle_list\x18\x0c\x20\x03(\x0b2\x15.RogueMirac\
     leDataInfoR\x10rogueMiracleListB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

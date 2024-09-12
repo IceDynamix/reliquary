@@ -46,7 +46,7 @@ impl RogueAction {
         ::std::default::Default::default()
     }
 
-    // .RogueCommonBuffSelectInfo buff_select_info = 820;
+    // .RogueCommonBuffSelectInfo buff_select_info = 1903;
 
     pub fn buff_select_info(&self) -> &super::RogueCommonBuffSelectInfo::RogueCommonBuffSelectInfo {
         match self.action {
@@ -95,7 +95,7 @@ impl RogueAction {
         }
     }
 
-    // .RogueMiracleSelectInfo miracle_select_info = 527;
+    // .RogueMiracleSelectInfo miracle_select_info = 338;
 
     pub fn miracle_select_info(&self) -> &super::RogueMiracleSelectInfo::RogueMiracleSelectInfo {
         match self.action {
@@ -144,7 +144,7 @@ impl RogueAction {
         }
     }
 
-    // .RogueBonusSelectInfo bonus_select_info = 240;
+    // .RogueBonusSelectInfo bonus_select_info = 1035;
 
     pub fn bonus_select_info(&self) -> &super::RogueBonusSelectInfo::RogueBonusSelectInfo {
         match self.action {
@@ -236,13 +236,13 @@ impl ::protobuf::Message for RogueAction {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                6562 => {
+                15226 => {
                     self.action = ::std::option::Option::Some(rogue_action::Action::BuffSelectInfo(is.read_message()?));
                 },
-                4218 => {
+                2706 => {
                     self.action = ::std::option::Option::Some(rogue_action::Action::MiracleSelectInfo(is.read_message()?));
                 },
-                1922 => {
+                8282 => {
                     self.action = ::std::option::Option::Some(rogue_action::Action::BonusSelectInfo(is.read_message()?));
                 },
                 tag => {
@@ -282,13 +282,13 @@ impl ::protobuf::Message for RogueAction {
         if let ::std::option::Option::Some(ref v) = self.action {
             match v {
                 &rogue_action::Action::BuffSelectInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(820, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1903, v, os)?;
                 },
                 &rogue_action::Action::MiracleSelectInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(527, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(338, v, os)?;
                 },
                 &rogue_action::Action::BonusSelectInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(240, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1035, v, os)?;
                 },
             };
         }
@@ -376,10 +376,10 @@ pub mod rogue_action {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11RogueAction.proto\x1a\x1fRogueCommonBuffSelectInfo.proto\x1a\x1cRo\
     gueMiracleSelectInfo.proto\x1a\x1aRogueBonusSelectInfo.proto\"\xf2\x01\n\
-    \x0bRogueAction\x12G\n\x10buff_select_info\x18\xb4\x06\x20\x01(\x0b2\x1a\
+    \x0bRogueAction\x12G\n\x10buff_select_info\x18\xef\x0e\x20\x01(\x0b2\x1a\
     .RogueCommonBuffSelectInfoH\0R\x0ebuffSelectInfo\x12J\n\x13miracle_selec\
-    t_info\x18\x8f\x04\x20\x01(\x0b2\x17.RogueMiracleSelectInfoH\0R\x11mirac\
-    leSelectInfo\x12D\n\x11bonus_select_info\x18\xf0\x01\x20\x01(\x0b2\x15.R\
+    t_info\x18\xd2\x02\x20\x01(\x0b2\x17.RogueMiracleSelectInfoH\0R\x11mirac\
+    leSelectInfo\x12D\n\x11bonus_select_info\x18\x8b\x08\x20\x01(\x0b2\x15.R\
     ogueBonusSelectInfoH\0R\x0fbonusSelectInfoB\x08\n\x06actionB\x15\n\x13em\
     u.lunarcore.protob\x06proto3\
 ";

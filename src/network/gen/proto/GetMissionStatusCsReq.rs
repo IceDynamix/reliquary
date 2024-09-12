@@ -87,10 +87,10 @@ impl ::protobuf::Message for GetMissionStatusCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.sub_mission_id_list)?;
                 },
-                64 => {
+                80 => {
                     self.sub_mission_id_list.push(is.read_uint32()?);
                 },
                 90 => {
@@ -99,10 +99,10 @@ impl ::protobuf::Message for GetMissionStatusCsReq {
                 88 => {
                     self.mission_event_id_list.push(is.read_uint32()?);
                 },
-                50 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.main_mission_id_list)?;
                 },
-                48 => {
+                64 => {
                     self.main_mission_id_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -118,13 +118,13 @@ impl ::protobuf::Message for GetMissionStatusCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         for value in &self.sub_mission_id_list {
-            my_size += ::protobuf::rt::uint32_size(8, *value);
+            my_size += ::protobuf::rt::uint32_size(10, *value);
         };
         for value in &self.mission_event_id_list {
             my_size += ::protobuf::rt::uint32_size(11, *value);
         };
         for value in &self.main_mission_id_list {
-            my_size += ::protobuf::rt::uint32_size(6, *value);
+            my_size += ::protobuf::rt::uint32_size(8, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -133,13 +133,13 @@ impl ::protobuf::Message for GetMissionStatusCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.sub_mission_id_list {
-            os.write_uint32(8, *v)?;
+            os.write_uint32(10, *v)?;
         };
         for v in &self.mission_event_id_list {
             os.write_uint32(11, *v)?;
         };
         for v in &self.main_mission_id_list {
-            os.write_uint32(6, *v)?;
+            os.write_uint32(8, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -194,10 +194,10 @@ impl ::protobuf::reflect::ProtobufValue for GetMissionStatusCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bGetMissionStatusCsReq.proto\"\xaa\x01\n\x15GetMissionStatusCsReq\
-    \x12-\n\x13sub_mission_id_list\x18\x08\x20\x03(\rR\x10subMissionIdList\
-    \x121\n\x15mission_event_id_list\x18\x0b\x20\x03(\rR\x12missionEventIdLi\
-    st\x12/\n\x14main_mission_id_list\x18\x06\x20\x03(\rR\x11mainMissionIdLi\
-    stB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \x12-\n\x13sub_mission_id_list\x18\n\x20\x03(\rR\x10subMissionIdList\x12\
+    1\n\x15mission_event_id_list\x18\x0b\x20\x03(\rR\x12missionEventIdList\
+    \x12/\n\x14main_mission_id_list\x18\x08\x20\x03(\rR\x11mainMissionIdList\
+    B\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

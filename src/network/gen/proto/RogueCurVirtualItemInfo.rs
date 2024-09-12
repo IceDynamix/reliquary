@@ -80,10 +80,10 @@ impl ::protobuf::Message for RogueCurVirtualItemInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                48 => {
                     self.cur_rogue_coin = is.read_uint32()?;
                 },
-                96 => {
+                80 => {
                     self.cur_talent_coin = is.read_uint32()?;
                 },
                 tag => {
@@ -99,10 +99,10 @@ impl ::protobuf::Message for RogueCurVirtualItemInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.cur_rogue_coin != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.cur_rogue_coin);
+            my_size += ::protobuf::rt::uint32_size(6, self.cur_rogue_coin);
         }
         if self.cur_talent_coin != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.cur_talent_coin);
+            my_size += ::protobuf::rt::uint32_size(10, self.cur_talent_coin);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for RogueCurVirtualItemInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.cur_rogue_coin != 0 {
-            os.write_uint32(15, self.cur_rogue_coin)?;
+            os.write_uint32(6, self.cur_rogue_coin)?;
         }
         if self.cur_talent_coin != 0 {
-            os.write_uint32(12, self.cur_talent_coin)?;
+            os.write_uint32(10, self.cur_talent_coin)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueCurVirtualItemInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dRogueCurVirtualItemInfo.proto\"g\n\x17RogueCurVirtualItemInfo\x12$\
-    \n\x0ecur_rogue_coin\x18\x0f\x20\x01(\rR\x0ccurRogueCoin\x12&\n\x0fcur_t\
-    alent_coin\x18\x0c\x20\x01(\rR\rcurTalentCoinB\x15\n\x13emu.lunarcore.pr\
-    otob\x06proto3\
+    \n\x0ecur_rogue_coin\x18\x06\x20\x01(\rR\x0ccurRogueCoin\x12&\n\x0fcur_t\
+    alent_coin\x18\n\x20\x01(\rR\rcurTalentCoinB\x15\n\x13emu.lunarcore.prot\
+    ob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

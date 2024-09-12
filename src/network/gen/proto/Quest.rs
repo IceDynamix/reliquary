@@ -94,16 +94,16 @@ impl ::protobuf::Message for Quest {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                104 => {
                     self.finish_time = is.read_int64()?;
                 },
-                120 => {
+                80 => {
                     self.id = is.read_uint32()?;
                 },
                 48 => {
                     self.progress = is.read_uint32()?;
                 },
-                64 => {
+                120 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -119,16 +119,16 @@ impl ::protobuf::Message for Quest {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.finish_time != 0 {
-            my_size += ::protobuf::rt::int64_size(4, self.finish_time);
+            my_size += ::protobuf::rt::int64_size(13, self.finish_time);
         }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.id);
+            my_size += ::protobuf::rt::uint32_size(10, self.id);
         }
         if self.progress != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.progress);
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::QuestStatus::QuestStatus::QUEST_NONE) {
-            my_size += ::protobuf::rt::int32_size(8, self.status.value());
+            my_size += ::protobuf::rt::int32_size(15, self.status.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,16 +137,16 @@ impl ::protobuf::Message for Quest {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.finish_time != 0 {
-            os.write_int64(4, self.finish_time)?;
+            os.write_int64(13, self.finish_time)?;
         }
         if self.id != 0 {
-            os.write_uint32(15, self.id)?;
+            os.write_uint32(10, self.id)?;
         }
         if self.progress != 0 {
             os.write_uint32(6, self.progress)?;
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::QuestStatus::QuestStatus::QUEST_NONE) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.status))?;
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for Quest {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0bQuest.proto\x1a\x11QuestStatus.proto\"z\n\x05Quest\x12\x1f\n\x0bfi\
-    nish_time\x18\x04\x20\x01(\x03R\nfinishTime\x12\x0e\n\x02id\x18\x0f\x20\
-    \x01(\rR\x02id\x12\x1a\n\x08progress\x18\x06\x20\x01(\rR\x08progress\x12\
-    $\n\x06status\x18\x08\x20\x01(\x0e2\x0c.QuestStatusR\x06statusB\x15\n\
-    \x13emu.lunarcore.protob\x06proto3\
+    nish_time\x18\r\x20\x01(\x03R\nfinishTime\x12\x0e\n\x02id\x18\n\x20\x01(\
+    \rR\x02id\x12\x1a\n\x08progress\x18\x06\x20\x01(\rR\x08progress\x12$\n\
+    \x06status\x18\x0f\x20\x01(\x0e2\x0c.QuestStatusR\x06statusB\x15\n\x13em\
+    u.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

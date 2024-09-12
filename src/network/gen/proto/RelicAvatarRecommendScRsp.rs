@@ -94,19 +94,19 @@ impl ::protobuf::Message for RelicAvatarRecommendScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                114 => {
                     is.read_repeated_packed_uint32_into(&mut self.avatar_id_list)?;
                 },
-                80 => {
+                112 => {
                     self.avatar_id_list.push(is.read_uint32()?);
                 },
-                8 => {
+                56 => {
                     self.is_fetch_avatar_list = is.read_bool()?;
                 },
-                96 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
-                64 => {
+                40 => {
                     self.set_id = is.read_uint32()?;
                 },
                 tag => {
@@ -122,16 +122,16 @@ impl ::protobuf::Message for RelicAvatarRecommendScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         for value in &self.avatar_id_list {
-            my_size += ::protobuf::rt::uint32_size(10, *value);
+            my_size += ::protobuf::rt::uint32_size(14, *value);
         };
         if self.is_fetch_avatar_list != false {
             my_size += 1 + 1;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         if self.set_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.set_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.set_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -140,16 +140,16 @@ impl ::protobuf::Message for RelicAvatarRecommendScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.avatar_id_list {
-            os.write_uint32(10, *v)?;
+            os.write_uint32(14, *v)?;
         };
         if self.is_fetch_avatar_list != false {
-            os.write_bool(1, self.is_fetch_avatar_list)?;
+            os.write_bool(7, self.is_fetch_avatar_list)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         if self.set_id != 0 {
-            os.write_uint32(8, self.set_id)?;
+            os.write_uint32(5, self.set_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -206,10 +206,10 @@ impl ::protobuf::reflect::ProtobufValue for RelicAvatarRecommendScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fRelicAvatarRecommendScRsp.proto\"\xa3\x01\n\x19RelicAvatarRecommen\
-    dScRsp\x12$\n\x0eavatar_id_list\x18\n\x20\x03(\rR\x0cavatarIdList\x12/\n\
-    \x14is_fetch_avatar_list\x18\x01\x20\x01(\x08R\x11isFetchAvatarList\x12\
-    \x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\x12\x15\n\x06set_id\x18\
-    \x08\x20\x01(\rR\x05setIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    dScRsp\x12$\n\x0eavatar_id_list\x18\x0e\x20\x03(\rR\x0cavatarIdList\x12/\
+    \n\x14is_fetch_avatar_list\x18\x07\x20\x01(\x08R\x11isFetchAvatarList\
+    \x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12\x15\n\x06set_id\
+    \x18\x05\x20\x01(\rR\x05setIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

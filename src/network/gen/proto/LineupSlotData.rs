@@ -87,13 +87,13 @@ impl ::protobuf::Message for LineupSlotData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                88 => {
                     self.avatar_type = is.read_enum_or_unknown()?;
                 },
-                40 => {
+                80 => {
                     self.id = is.read_uint32()?;
                 },
-                112 => {
+                104 => {
                     self.slot = is.read_uint32()?;
                 },
                 tag => {
@@ -109,13 +109,13 @@ impl ::protobuf::Message for LineupSlotData {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(8, self.avatar_type.value());
+            my_size += ::protobuf::rt::int32_size(11, self.avatar_type.value());
         }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.id);
+            my_size += ::protobuf::rt::uint32_size(10, self.id);
         }
         if self.slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.slot);
+            my_size += ::protobuf::rt::uint32_size(13, self.slot);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for LineupSlotData {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
         }
         if self.id != 0 {
-            os.write_uint32(5, self.id)?;
+            os.write_uint32(10, self.id)?;
         }
         if self.slot != 0 {
-            os.write_uint32(14, self.slot)?;
+            os.write_uint32(13, self.slot)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for LineupSlotData {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14LineupSlotData.proto\x1a\x10AvatarType.proto\"b\n\x0eLineupSlotDat\
-    a\x12,\n\x0bavatar_type\x18\x08\x20\x01(\x0e2\x0b.AvatarTypeR\navatarTyp\
-    e\x12\x0e\n\x02id\x18\x05\x20\x01(\rR\x02id\x12\x12\n\x04slot\x18\x0e\
-    \x20\x01(\rR\x04slotB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    a\x12,\n\x0bavatar_type\x18\x0b\x20\x01(\x0e2\x0b.AvatarTypeR\navatarTyp\
+    e\x12\x0e\n\x02id\x18\n\x20\x01(\rR\x02id\x12\x12\n\x04slot\x18\r\x20\
+    \x01(\rR\x04slotB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

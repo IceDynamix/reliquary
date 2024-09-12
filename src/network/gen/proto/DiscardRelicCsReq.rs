@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DiscardRelicCsReq {
     // message fields
-    // @@protoc_insertion_point(field:DiscardRelicCsReq.relic_unique_id)
-    pub relic_unique_id: u32,
+    // @@protoc_insertion_point(field:DiscardRelicCsReq.relic_id_list)
+    pub relic_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:DiscardRelicCsReq.is_discard)
     pub is_discard: bool,
     // special fields
@@ -52,10 +52,10 @@ impl DiscardRelicCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "relic_unique_id",
-            |m: &DiscardRelicCsReq| { &m.relic_unique_id },
-            |m: &mut DiscardRelicCsReq| { &mut m.relic_unique_id },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "relic_id_list",
+            |m: &DiscardRelicCsReq| { &m.relic_id_list },
+            |m: &mut DiscardRelicCsReq| { &mut m.relic_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_discard",
@@ -80,10 +80,13 @@ impl ::protobuf::Message for DiscardRelicCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.relic_unique_id = is.read_uint32()?;
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.relic_id_list)?;
                 },
-                40 => {
+                24 => {
+                    self.relic_id_list.push(is.read_uint32()?);
+                },
+                48 => {
                     self.is_discard = is.read_bool()?;
                 },
                 tag => {
@@ -98,9 +101,9 @@ impl ::protobuf::Message for DiscardRelicCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.relic_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.relic_unique_id);
-        }
+        for value in &self.relic_id_list {
+            my_size += ::protobuf::rt::uint32_size(3, *value);
+        };
         if self.is_discard != false {
             my_size += 1 + 1;
         }
@@ -110,11 +113,11 @@ impl ::protobuf::Message for DiscardRelicCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.relic_unique_id != 0 {
-            os.write_uint32(3, self.relic_unique_id)?;
-        }
+        for v in &self.relic_id_list {
+            os.write_uint32(3, *v)?;
+        };
         if self.is_discard != false {
-            os.write_bool(5, self.is_discard)?;
+            os.write_bool(6, self.is_discard)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +136,14 @@ impl ::protobuf::Message for DiscardRelicCsReq {
     }
 
     fn clear(&mut self) {
-        self.relic_unique_id = 0;
+        self.relic_id_list.clear();
         self.is_discard = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DiscardRelicCsReq {
         static instance: DiscardRelicCsReq = DiscardRelicCsReq {
-            relic_unique_id: 0,
+            relic_id_list: ::std::vec::Vec::new(),
             is_discard: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,9 +169,9 @@ impl ::protobuf::reflect::ProtobufValue for DiscardRelicCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17DiscardRelicCsReq.proto\"Z\n\x11DiscardRelicCsReq\x12&\n\x0frelic_\
-    unique_id\x18\x03\x20\x01(\rR\rrelicUniqueId\x12\x1d\n\nis_discard\x18\
-    \x05\x20\x01(\x08R\tisDiscardB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x17DiscardRelicCsReq.proto\"V\n\x11DiscardRelicCsReq\x12\"\n\rrelic_i\
+    d_list\x18\x03\x20\x03(\rR\x0brelicIdList\x12\x1d\n\nis_discard\x18\x06\
+    \x20\x01(\x08R\tisDiscardB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

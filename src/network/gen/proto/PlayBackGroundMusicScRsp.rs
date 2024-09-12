@@ -90,7 +90,7 @@ impl ::protobuf::Message for PlayBackGroundMusicScRsp {
                 56 => {
                     self.play_music_id = is.read_uint32()?;
                 },
-                88 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
                 80 => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for PlayBackGroundMusicScRsp {
             my_size += ::protobuf::rt::uint32_size(7, self.play_music_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         if self.playing_id != 0 {
             my_size += ::protobuf::rt::uint32_size(10, self.playing_id);
@@ -127,7 +127,7 @@ impl ::protobuf::Message for PlayBackGroundMusicScRsp {
             os.write_uint32(7, self.play_music_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         if self.playing_id != 0 {
             os.write_uint32(10, self.playing_id)?;
@@ -186,7 +186,7 @@ impl ::protobuf::reflect::ProtobufValue for PlayBackGroundMusicScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1ePlayBackGroundMusicScRsp.proto\"w\n\x18PlayBackGroundMusicScRsp\
     \x12\"\n\rplay_music_id\x18\x07\x20\x01(\rR\x0bplayMusicId\x12\x18\n\x07\
-    retcode\x18\x0b\x20\x01(\rR\x07retcode\x12\x1d\n\nplaying_id\x18\n\x20\
+    retcode\x18\x01\x20\x01(\rR\x07retcode\x12\x1d\n\nplaying_id\x18\n\x20\
     \x01(\rR\tplayingIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 

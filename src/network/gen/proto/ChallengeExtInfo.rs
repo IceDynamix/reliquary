@@ -28,9 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 // @@protoc_insertion_point(message:ChallengeExtInfo)
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChallengeExtInfo {
-    // message fields
-    // @@protoc_insertion_point(field:ChallengeExtInfo.boss_info)
-    pub boss_info: ::protobuf::MessageField<super::ChallengeBossInfo::ChallengeBossInfo>,
+    // message oneof groups
+    pub challenge_ext: ::std::option::Option<challenge_ext_info::Challenge_ext>,
     // special fields
     // @@protoc_insertion_point(special_field:ChallengeExtInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -47,14 +46,66 @@ impl ChallengeExtInfo {
         ::std::default::Default::default()
     }
 
+    // .ChallengeBossInfo boss_info = 4;
+
+    pub fn boss_info(&self) -> &super::ChallengeBossInfo::ChallengeBossInfo {
+        match self.challenge_ext {
+            ::std::option::Option::Some(challenge_ext_info::Challenge_ext::BossInfo(ref v)) => v,
+            _ => <super::ChallengeBossInfo::ChallengeBossInfo as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_boss_info(&mut self) {
+        self.challenge_ext = ::std::option::Option::None;
+    }
+
+    pub fn has_boss_info(&self) -> bool {
+        match self.challenge_ext {
+            ::std::option::Option::Some(challenge_ext_info::Challenge_ext::BossInfo(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_boss_info(&mut self, v: super::ChallengeBossInfo::ChallengeBossInfo) {
+        self.challenge_ext = ::std::option::Option::Some(challenge_ext_info::Challenge_ext::BossInfo(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_boss_info(&mut self) -> &mut super::ChallengeBossInfo::ChallengeBossInfo {
+        if let ::std::option::Option::Some(challenge_ext_info::Challenge_ext::BossInfo(_)) = self.challenge_ext {
+        } else {
+            self.challenge_ext = ::std::option::Option::Some(challenge_ext_info::Challenge_ext::BossInfo(super::ChallengeBossInfo::ChallengeBossInfo::new()));
+        }
+        match self.challenge_ext {
+            ::std::option::Option::Some(challenge_ext_info::Challenge_ext::BossInfo(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_boss_info(&mut self) -> super::ChallengeBossInfo::ChallengeBossInfo {
+        if self.has_boss_info() {
+            match self.challenge_ext.take() {
+                ::std::option::Option::Some(challenge_ext_info::Challenge_ext::BossInfo(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::ChallengeBossInfo::ChallengeBossInfo::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
-        let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengeBossInfo::ChallengeBossInfo>(
+        let mut oneofs = ::std::vec::Vec::with_capacity(1);
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ChallengeBossInfo::ChallengeBossInfo>(
             "boss_info",
-            |m: &ChallengeExtInfo| { &m.boss_info },
-            |m: &mut ChallengeExtInfo| { &mut m.boss_info },
+            ChallengeExtInfo::has_boss_info,
+            ChallengeExtInfo::boss_info,
+            ChallengeExtInfo::mut_boss_info,
+            ChallengeExtInfo::set_boss_info,
         ));
+        oneofs.push(challenge_ext_info::Challenge_ext::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChallengeExtInfo>(
             "ChallengeExtInfo",
             fields,
@@ -73,8 +124,8 @@ impl ::protobuf::Message for ChallengeExtInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.boss_info)?;
+                34 => {
+                    self.challenge_ext = ::std::option::Option::Some(challenge_ext_info::Challenge_ext::BossInfo(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,9 +139,13 @@ impl ::protobuf::Message for ChallengeExtInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.boss_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if let ::std::option::Option::Some(ref v) = self.challenge_ext {
+            match v {
+                &challenge_ext_info::Challenge_ext::BossInfo(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+            };
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -98,8 +153,12 @@ impl ::protobuf::Message for ChallengeExtInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.boss_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if let ::std::option::Option::Some(ref v) = self.challenge_ext {
+            match v {
+                &challenge_ext_info::Challenge_ext::BossInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+                },
+            };
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -118,13 +177,13 @@ impl ::protobuf::Message for ChallengeExtInfo {
     }
 
     fn clear(&mut self) {
-        self.boss_info.clear();
+        self.challenge_ext = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengeExtInfo {
         static instance: ChallengeExtInfo = ChallengeExtInfo {
-            boss_info: ::protobuf::MessageField::none(),
+            challenge_ext: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,10 +207,39 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeExtInfo {
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
+/// Nested message and enums of message `ChallengeExtInfo`
+pub mod challenge_ext_info {
+
+    #[derive(Clone,PartialEq,Debug)]
+    #[non_exhaustive]
+    // @@protoc_insertion_point(oneof:ChallengeExtInfo.challenge_ext)
+    pub enum Challenge_ext {
+        // @@protoc_insertion_point(oneof_field:ChallengeExtInfo.boss_info)
+        BossInfo(super::super::ChallengeBossInfo::ChallengeBossInfo),
+    }
+
+    impl ::protobuf::Oneof for Challenge_ext {
+    }
+
+    impl ::protobuf::OneofFull for Challenge_ext {
+        fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
+            static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
+            descriptor.get(|| <super::ChallengeExtInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("challenge_ext").unwrap()).clone()
+        }
+    }
+
+    impl Challenge_ext {
+        pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<Challenge_ext>("challenge_ext")
+        }
+    }
+}
+
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16ChallengeExtInfo.proto\x1a\x17ChallengeBossInfo.proto\"C\n\x10Chal\
-    lengeExtInfo\x12/\n\tboss_info\x18\x0b\x20\x01(\x0b2\x12.ChallengeBossIn\
-    foR\x08bossInfoB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x16ChallengeExtInfo.proto\x1a\x17ChallengeBossInfo.proto\"V\n\x10Chal\
+    lengeExtInfo\x121\n\tboss_info\x18\x04\x20\x01(\x0b2\x12.ChallengeBossIn\
+    foH\0R\x08bossInfoB\x0f\n\rchallenge_extB\x15\n\x13emu.lunarcore.protob\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

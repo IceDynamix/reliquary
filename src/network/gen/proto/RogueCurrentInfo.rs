@@ -122,28 +122,28 @@ impl ::protobuf::Message for RogueCurrentInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                56 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
-                10 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_virtual_item)?;
                 },
-                58 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.room_map)?;
                 },
-                106 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.pending_action)?;
                 },
-                18 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_miracle_info)?;
                 },
-                82 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_avatar_info)?;
                 },
-                90 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_buff_info)?;
                 },
-                74 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_aeon_info)?;
                 },
                 tag => {
@@ -159,7 +159,7 @@ impl ::protobuf::Message for RogueCurrentInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.status != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::ROGUE_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(12, self.status.value());
+            my_size += ::protobuf::rt::int32_size(7, self.status.value());
         }
         if let Some(v) = self.rogue_virtual_item.as_ref() {
             let len = v.compute_size();
@@ -196,28 +196,28 @@ impl ::protobuf::Message for RogueCurrentInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.status != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::ROGUE_STATUS_NONE) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.status))?;
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         if let Some(v) = self.rogue_virtual_item.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if let Some(v) = self.room_map.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
-        if let Some(v) = self.pending_action.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
-        if let Some(v) = self.rogue_miracle_info.as_ref() {
+        if let Some(v) = self.pending_action.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
+        if let Some(v) = self.rogue_miracle_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
         if let Some(v) = self.rogue_avatar_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         if let Some(v) = self.rogue_buff_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if let Some(v) = self.rogue_aeon_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -285,16 +285,16 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     fo.proto\x1a\x16RogueMiracleInfo.proto\x1a\x13RogueBuffInfo.proto\x1a\
     \x1eRogueCommonPendingAction.proto\x1a\x1aRogueVirtualItemInfo.proto\x1a\
     \x11RogueStatus.proto\x1a\x12RogueMapInfo.proto\"\xd4\x03\n\x10RogueCurr\
-    entInfo\x12$\n\x06status\x18\x0c\x20\x01(\x0e2\x0c.RogueStatusR\x06statu\
-    s\x12C\n\x12rogue_virtual_item\x18\x01\x20\x01(\x0b2\x15.RogueVirtualIte\
-    mInfoR\x10rogueVirtualItem\x12(\n\x08room_map\x18\x07\x20\x01(\x0b2\r.Ro\
-    gueMapInfoR\x07roomMap\x12@\n\x0epending_action\x18\r\x20\x01(\x0b2\x19.\
+    entInfo\x12$\n\x06status\x18\x07\x20\x01(\x0e2\x0c.RogueStatusR\x06statu\
+    s\x12C\n\x12rogue_virtual_item\x18\x06\x20\x01(\x0b2\x15.RogueVirtualIte\
+    mInfoR\x10rogueVirtualItem\x12(\n\x08room_map\x18\r\x20\x01(\x0b2\r.Rogu\
+    eMapInfoR\x07roomMap\x12@\n\x0epending_action\x18\x02\x20\x01(\x0b2\x19.\
     RogueCommonPendingActionR\rpendingAction\x12?\n\x12rogue_miracle_info\
-    \x18\x02\x20\x01(\x0b2\x11.RogueMiracleInfoR\x10rogueMiracleInfo\x12<\n\
-    \x11rogue_avatar_info\x18\n\x20\x01(\x0b2\x10.RogueAvatarInfoR\x0frogueA\
-    vatarInfo\x126\n\x0frogue_buff_info\x18\x0b\x20\x01(\x0b2\x0e.RogueBuffI\
-    nfoR\rrogueBuffInfo\x122\n\x0frogue_aeon_info\x18\t\x20\x01(\x0b2\n.Rogu\
-    eAeonR\rrogueAeonInfoB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \x18\t\x20\x01(\x0b2\x11.RogueMiracleInfoR\x10rogueMiracleInfo\x12<\n\
+    \x11rogue_avatar_info\x18\x08\x20\x01(\x0b2\x10.RogueAvatarInfoR\x0frogu\
+    eAvatarInfo\x126\n\x0frogue_buff_info\x18\x0f\x20\x01(\x0b2\x0e.RogueBuf\
+    fInfoR\rrogueBuffInfo\x122\n\x0frogue_aeon_info\x18\n\x20\x01(\x0b2\n.Ro\
+    gueAeonR\rrogueAeonInfoB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

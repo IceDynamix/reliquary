@@ -136,31 +136,31 @@ impl ::protobuf::Message for ChallengeBossPhaseSettleNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                104 => {
                     self.challenge_id = is.read_uint32()?;
                 },
-                24 => {
+                96 => {
                     self.COKFJJOLMDI = is.read_uint32()?;
                 },
-                112 => {
+                16 => {
                     self.score_two = is.read_uint32()?;
                 },
-                16 => {
+                56 => {
                     self.unkbool1 = is.read_bool()?;
                 },
-                8 => {
+                88 => {
                     self.is_win = is.read_bool()?;
                 },
-                58 => {
+                10 => {
                     self.BIPEPADLEIA.push(is.read_message()?);
                 },
-                72 => {
+                32 => {
                     self.stars = is.read_uint32()?;
                 },
-                48 => {
+                24 => {
                     self.challenge_score = is.read_uint32()?;
                 },
-                64 => {
+                112 => {
                     self.phase = is.read_uint32()?;
                 },
                 120 => {
@@ -179,13 +179,13 @@ impl ::protobuf::Message for ChallengeBossPhaseSettleNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.challenge_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.challenge_id);
         }
         if self.COKFJJOLMDI != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.COKFJJOLMDI);
+            my_size += ::protobuf::rt::uint32_size(12, self.COKFJJOLMDI);
         }
         if self.score_two != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.score_two);
+            my_size += ::protobuf::rt::uint32_size(2, self.score_two);
         }
         if self.unkbool1 != false {
             my_size += 1 + 1;
@@ -198,13 +198,13 @@ impl ::protobuf::Message for ChallengeBossPhaseSettleNotify {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.stars != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.stars);
+            my_size += ::protobuf::rt::uint32_size(4, self.stars);
         }
         if self.challenge_score != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.challenge_score);
+            my_size += ::protobuf::rt::uint32_size(3, self.challenge_score);
         }
         if self.phase != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.phase);
+            my_size += ::protobuf::rt::uint32_size(14, self.phase);
         }
         if self.unkbool2 != false {
             my_size += 1 + 1;
@@ -216,31 +216,31 @@ impl ::protobuf::Message for ChallengeBossPhaseSettleNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.challenge_id != 0 {
-            os.write_uint32(10, self.challenge_id)?;
+            os.write_uint32(13, self.challenge_id)?;
         }
         if self.COKFJJOLMDI != 0 {
-            os.write_uint32(3, self.COKFJJOLMDI)?;
+            os.write_uint32(12, self.COKFJJOLMDI)?;
         }
         if self.score_two != 0 {
-            os.write_uint32(14, self.score_two)?;
+            os.write_uint32(2, self.score_two)?;
         }
         if self.unkbool1 != false {
-            os.write_bool(2, self.unkbool1)?;
+            os.write_bool(7, self.unkbool1)?;
         }
         if self.is_win != false {
-            os.write_bool(1, self.is_win)?;
+            os.write_bool(11, self.is_win)?;
         }
         for v in &self.BIPEPADLEIA {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         if self.stars != 0 {
-            os.write_uint32(9, self.stars)?;
+            os.write_uint32(4, self.stars)?;
         }
         if self.challenge_score != 0 {
-            os.write_uint32(6, self.challenge_score)?;
+            os.write_uint32(3, self.challenge_score)?;
         }
         if self.phase != 0 {
-            os.write_uint32(8, self.phase)?;
+            os.write_uint32(14, self.phase)?;
         }
         if self.unkbool2 != false {
             os.write_bool(15, self.unkbool2)?;
@@ -312,16 +312,16 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeBossPhaseSettleNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$ChallengeBossPhaseSettleNotify.proto\x1a\x12BattleTarget.proto\"\xd7\
-    \x02\n\x1eChallengeBossPhaseSettleNotify\x12!\n\x0cchallenge_id\x18\n\
-    \x20\x01(\rR\x0bchallengeId\x12\x20\n\x0bCOKFJJOLMDI\x18\x03\x20\x01(\rR\
-    \x0bCOKFJJOLMDI\x12\x1b\n\tscore_two\x18\x0e\x20\x01(\rR\x08scoreTwo\x12\
-    \x1a\n\x08unkbool1\x18\x02\x20\x01(\x08R\x08unkbool1\x12\x15\n\x06is_win\
-    \x18\x01\x20\x01(\x08R\x05isWin\x12/\n\x0bBIPEPADLEIA\x18\x07\x20\x03(\
-    \x0b2\r.BattleTargetR\x0bBIPEPADLEIA\x12\x14\n\x05stars\x18\t\x20\x01(\r\
-    R\x05stars\x12'\n\x0fchallenge_score\x18\x06\x20\x01(\rR\x0echallengeSco\
-    re\x12\x14\n\x05phase\x18\x08\x20\x01(\rR\x05phase\x12\x1a\n\x08unkbool2\
-    \x18\x0f\x20\x01(\x08R\x08unkbool2B\x15\n\x13emu.lunarcore.protob\x06pro\
-    to3\
+    \x02\n\x1eChallengeBossPhaseSettleNotify\x12!\n\x0cchallenge_id\x18\r\
+    \x20\x01(\rR\x0bchallengeId\x12\x20\n\x0bCOKFJJOLMDI\x18\x0c\x20\x01(\rR\
+    \x0bCOKFJJOLMDI\x12\x1b\n\tscore_two\x18\x02\x20\x01(\rR\x08scoreTwo\x12\
+    \x1a\n\x08unkbool1\x18\x07\x20\x01(\x08R\x08unkbool1\x12\x15\n\x06is_win\
+    \x18\x0b\x20\x01(\x08R\x05isWin\x12/\n\x0bBIPEPADLEIA\x18\x01\x20\x03(\
+    \x0b2\r.BattleTargetR\x0bBIPEPADLEIA\x12\x14\n\x05stars\x18\x04\x20\x01(\
+    \rR\x05stars\x12'\n\x0fchallenge_score\x18\x03\x20\x01(\rR\x0echallengeS\
+    core\x12\x14\n\x05phase\x18\x0e\x20\x01(\rR\x05phase\x12\x1a\n\x08unkboo\
+    l2\x18\x0f\x20\x01(\x08R\x08unkbool2B\x15\n\x13emu.lunarcore.protob\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -136,10 +136,10 @@ impl ::protobuf::Message for SceneBattleInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                114 => {
                     self.monster_wave_list.push(is.read_message()?);
                 },
-                1194 => {
+                7138 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -154,28 +154,28 @@ impl ::protobuf::Message for SceneBattleInfo {
                     is.pop_limit(old_limit);
                     self.battle_target_info.insert(key, value);
                 },
-                112 => {
+                96 => {
                     self.battle_id = is.read_uint32()?;
                 },
-                48 => {
+                16 => {
                     self.world_level = is.read_uint32()?;
                 },
-                26 => {
+                42 => {
                     self.buff_list.push(is.read_message()?);
                 },
-                16 => {
+                32 => {
                     self.rounds_limit = is.read_uint32()?;
                 },
-                96 => {
+                48 => {
                     self.logic_random_seed = is.read_uint32()?;
                 },
-                122 => {
+                58 => {
                     self.battle_avatar_list.push(is.read_message()?);
                 },
-                15722 => {
+                2570 => {
                     self.event_battle_info_list.push(is.read_message()?);
                 },
-                32 => {
+                8 => {
                     self.stage_id = is.read_uint32()?;
                 },
                 tag => {
@@ -202,20 +202,20 @@ impl ::protobuf::Message for SceneBattleInfo {
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
         if self.battle_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.battle_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.battle_id);
         }
         if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.world_level);
+            my_size += ::protobuf::rt::uint32_size(2, self.world_level);
         }
         for value in &self.buff_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.rounds_limit != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.rounds_limit);
+            my_size += ::protobuf::rt::uint32_size(4, self.rounds_limit);
         }
         if self.logic_random_seed != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.logic_random_seed);
+            my_size += ::protobuf::rt::uint32_size(6, self.logic_random_seed);
         }
         for value in &self.battle_avatar_list {
             let len = value.compute_size();
@@ -226,7 +226,7 @@ impl ::protobuf::Message for SceneBattleInfo {
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.stage_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.stage_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -235,41 +235,41 @@ impl ::protobuf::Message for SceneBattleInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.monster_wave_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         for (k, v) in &self.battle_target_info {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             let len = v.cached_size() as u64;
             entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-            os.write_raw_varint32(1194)?; // Tag.
+            os.write_raw_varint32(7138)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         if self.battle_id != 0 {
-            os.write_uint32(14, self.battle_id)?;
+            os.write_uint32(12, self.battle_id)?;
         }
         if self.world_level != 0 {
-            os.write_uint32(6, self.world_level)?;
+            os.write_uint32(2, self.world_level)?;
         }
         for v in &self.buff_list {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         if self.rounds_limit != 0 {
-            os.write_uint32(2, self.rounds_limit)?;
+            os.write_uint32(4, self.rounds_limit)?;
         }
         if self.logic_random_seed != 0 {
-            os.write_uint32(12, self.logic_random_seed)?;
+            os.write_uint32(6, self.logic_random_seed)?;
         }
         for v in &self.battle_avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         for v in &self.event_battle_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1965, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(321, v, os)?;
         };
         if self.stage_id != 0 {
-            os.write_uint32(4, self.stage_id)?;
+            os.write_uint32(1, self.stage_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -328,17 +328,17 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15SceneBattleInfo.proto\x1a\x16SceneMonsterWave.proto\x1a\x12BattleA\
     vatar.proto\x1a\x10BattleBuff.proto\x1a\x1bBattleEventBattleInfo.proto\
     \x1a\x16BattleTargetList.proto\"\xdc\x04\n\x0fSceneBattleInfo\x12=\n\x11\
-    monster_wave_list\x18\x01\x20\x03(\x0b2\x11.SceneMonsterWaveR\x0fmonster\
-    WaveList\x12U\n\x12battle_target_info\x18\x95\x01\x20\x03(\x0b2&.SceneBa\
+    monster_wave_list\x18\x0e\x20\x03(\x0b2\x11.SceneMonsterWaveR\x0fmonster\
+    WaveList\x12U\n\x12battle_target_info\x18\xfc\x06\x20\x03(\x0b2&.SceneBa\
     ttleInfo.BattleTargetInfoEntryR\x10battleTargetInfo\x12\x1b\n\tbattle_id\
-    \x18\x0e\x20\x01(\rR\x08battleId\x12\x1f\n\x0bworld_level\x18\x06\x20\
-    \x01(\rR\nworldLevel\x12(\n\tbuff_list\x18\x03\x20\x03(\x0b2\x0b.BattleB\
-    uffR\x08buffList\x12!\n\x0crounds_limit\x18\x02\x20\x01(\rR\x0broundsLim\
-    it\x12*\n\x11logic_random_seed\x18\x0c\x20\x01(\rR\x0flogicRandomSeed\
-    \x12;\n\x12battle_avatar_list\x18\x0f\x20\x03(\x0b2\r.BattleAvatarR\x10b\
-    attleAvatarList\x12L\n\x16event_battle_info_list\x18\xad\x0f\x20\x03(\
+    \x18\x0c\x20\x01(\rR\x08battleId\x12\x1f\n\x0bworld_level\x18\x02\x20\
+    \x01(\rR\nworldLevel\x12(\n\tbuff_list\x18\x05\x20\x03(\x0b2\x0b.BattleB\
+    uffR\x08buffList\x12!\n\x0crounds_limit\x18\x04\x20\x01(\rR\x0broundsLim\
+    it\x12*\n\x11logic_random_seed\x18\x06\x20\x01(\rR\x0flogicRandomSeed\
+    \x12;\n\x12battle_avatar_list\x18\x07\x20\x03(\x0b2\r.BattleAvatarR\x10b\
+    attleAvatarList\x12L\n\x16event_battle_info_list\x18\xc1\x02\x20\x03(\
     \x0b2\x16.BattleEventBattleInfoR\x13eventBattleInfoList\x12\x19\n\x08sta\
-    ge_id\x18\x04\x20\x01(\rR\x07stageId\x1aV\n\x15BattleTargetInfoEntry\x12\
+    ge_id\x18\x01\x20\x01(\rR\x07stageId\x1aV\n\x15BattleTargetInfoEntry\x12\
     \x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12'\n\x05value\x18\x02\x20\x01\
     (\x0b2\x11.BattleTargetListR\x05value:\x028\x01B\x15\n\x13emu.lunarcore.\
     protob\x06proto3\

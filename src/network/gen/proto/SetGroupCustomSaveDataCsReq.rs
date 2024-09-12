@@ -87,13 +87,13 @@ impl ::protobuf::Message for SetGroupCustomSaveDataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                10 => {
                     self.group_save_data = is.read_string()?;
                 },
-                80 => {
+                48 => {
                     self.entry_id = is.read_uint32()?;
                 },
-                112 => {
+                88 => {
                     self.group_id = is.read_uint32()?;
                 },
                 tag => {
@@ -109,13 +109,13 @@ impl ::protobuf::Message for SetGroupCustomSaveDataCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.group_save_data.is_empty() {
-            my_size += ::protobuf::rt::string_size(6, &self.group_save_data);
+            my_size += ::protobuf::rt::string_size(1, &self.group_save_data);
         }
         if self.entry_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.entry_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.entry_id);
         }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.group_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for SetGroupCustomSaveDataCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.group_save_data.is_empty() {
-            os.write_string(6, &self.group_save_data)?;
+            os.write_string(1, &self.group_save_data)?;
         }
         if self.entry_id != 0 {
-            os.write_uint32(10, self.entry_id)?;
+            os.write_uint32(6, self.entry_id)?;
         }
         if self.group_id != 0 {
-            os.write_uint32(14, self.group_id)?;
+            os.write_uint32(11, self.group_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for SetGroupCustomSaveDataCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!SetGroupCustomSaveDataCsReq.proto\"{\n\x1bSetGroupCustomSaveDataCsReq\
-    \x12&\n\x0fgroup_save_data\x18\x06\x20\x01(\tR\rgroupSaveData\x12\x19\n\
-    \x08entry_id\x18\n\x20\x01(\rR\x07entryId\x12\x19\n\x08group_id\x18\x0e\
-    \x20\x01(\rR\x07groupIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \x12&\n\x0fgroup_save_data\x18\x01\x20\x01(\tR\rgroupSaveData\x12\x19\n\
+    \x08entry_id\x18\x06\x20\x01(\rR\x07entryId\x12\x19\n\x08group_id\x18\
+    \x0b\x20\x01(\rR\x07groupIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
