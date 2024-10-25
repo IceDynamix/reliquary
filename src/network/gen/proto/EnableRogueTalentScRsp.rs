@@ -31,8 +31,8 @@ pub struct EnableRogueTalentScRsp {
     // message fields
     // @@protoc_insertion_point(field:EnableRogueTalentScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:EnableRogueTalentScRsp.talent_info)
-    pub talent_info: ::protobuf::MessageField<super::RogueTalentInfo::RogueTalentInfo>,
+    // @@protoc_insertion_point(field:EnableRogueTalentScRsp.EHANCFILLJJ)
+    pub EHANCFILLJJ: ::protobuf::MessageField<super::PCLMOEMGMOK::PCLMOEMGMOK>,
     // special fields
     // @@protoc_insertion_point(special_field:EnableRogueTalentScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,10 +57,10 @@ impl EnableRogueTalentScRsp {
             |m: &EnableRogueTalentScRsp| { &m.retcode },
             |m: &mut EnableRogueTalentScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTalentInfo::RogueTalentInfo>(
-            "talent_info",
-            |m: &EnableRogueTalentScRsp| { &m.talent_info },
-            |m: &mut EnableRogueTalentScRsp| { &mut m.talent_info },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PCLMOEMGMOK::PCLMOEMGMOK>(
+            "EHANCFILLJJ",
+            |m: &EnableRogueTalentScRsp| { &m.EHANCFILLJJ },
+            |m: &mut EnableRogueTalentScRsp| { &mut m.EHANCFILLJJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnableRogueTalentScRsp>(
             "EnableRogueTalentScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for EnableRogueTalentScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
                 },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.talent_info)?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EHANCFILLJJ)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -99,9 +99,9 @@ impl ::protobuf::Message for EnableRogueTalentScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
-        if let Some(v) = self.talent_info.as_ref() {
+        if let Some(v) = self.EHANCFILLJJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -112,10 +112,10 @@ impl ::protobuf::Message for EnableRogueTalentScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
-        if let Some(v) = self.talent_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        if let Some(v) = self.EHANCFILLJJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -135,14 +135,14 @@ impl ::protobuf::Message for EnableRogueTalentScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.talent_info.clear();
+        self.EHANCFILLJJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnableRogueTalentScRsp {
         static instance: EnableRogueTalentScRsp = EnableRogueTalentScRsp {
             retcode: 0,
-            talent_info: ::protobuf::MessageField::none(),
+            EHANCFILLJJ: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for EnableRogueTalentScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cEnableRogueTalentScRsp.proto\x1a\x15RogueTalentInfo.proto\"e\n\x16\
-    EnableRogueTalentScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retco\
-    de\x121\n\x0btalent_info\x18\x06\x20\x01(\x0b2\x10.RogueTalentInfoR\ntal\
-    entInfoB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x1cEnableRogueTalentScRsp.proto\x1a\x11PCLMOEMGMOK.proto\"b\n\x16Enab\
+    leRogueTalentScRsp\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\
+    \x12.\n\x0bEHANCFILLJJ\x18\x0f\x20\x01(\x0b2\x0c.PCLMOEMGMOKR\x0bEHANCFI\
+    LLJJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::RogueTalentInfo::file_descriptor().clone());
+            deps.push(super::PCLMOEMGMOK::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EnableRogueTalentScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

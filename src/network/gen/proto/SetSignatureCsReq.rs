@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetSignatureCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetSignatureCsReq.signature)
-    pub signature: ::std::string::String,
+    // @@protoc_insertion_point(field:SetSignatureCsReq.MNDMHKPHCDA)
+    pub MNDMHKPHCDA: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:SetSignatureCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl SetSignatureCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "signature",
-            |m: &SetSignatureCsReq| { &m.signature },
-            |m: &mut SetSignatureCsReq| { &mut m.signature },
+            "MNDMHKPHCDA",
+            |m: &SetSignatureCsReq| { &m.MNDMHKPHCDA },
+            |m: &mut SetSignatureCsReq| { &mut m.MNDMHKPHCDA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetSignatureCsReq>(
             "SetSignatureCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for SetSignatureCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    self.signature = is.read_string()?;
+                42 => {
+                    self.MNDMHKPHCDA = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for SetSignatureCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.signature.is_empty() {
-            my_size += ::protobuf::rt::string_size(13, &self.signature);
+        if !self.MNDMHKPHCDA.is_empty() {
+            my_size += ::protobuf::rt::string_size(5, &self.MNDMHKPHCDA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for SetSignatureCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.signature.is_empty() {
-            os.write_string(13, &self.signature)?;
+        if !self.MNDMHKPHCDA.is_empty() {
+            os.write_string(5, &self.MNDMHKPHCDA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for SetSignatureCsReq {
     }
 
     fn clear(&mut self) {
-        self.signature.clear();
+        self.MNDMHKPHCDA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetSignatureCsReq {
         static instance: SetSignatureCsReq = SetSignatureCsReq {
-            signature: ::std::string::String::new(),
+            MNDMHKPHCDA: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for SetSignatureCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17SetSignatureCsReq.proto\"1\n\x11SetSignatureCsReq\x12\x1c\n\tsigna\
-    ture\x18\r\x20\x01(\tR\tsignatureB\x15\n\x13emu.lunarcore.protob\x06prot\
-    o3\
+    \n\x17SetSignatureCsReq.proto\"5\n\x11SetSignatureCsReq\x12\x20\n\x0bMND\
+    MHKPHCDA\x18\x05\x20\x01(\tR\x0bMNDMHKPHCDAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

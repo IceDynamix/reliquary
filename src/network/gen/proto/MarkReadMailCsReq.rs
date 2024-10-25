@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for MarkReadMailCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17MarkReadMailCsReq.proto\"#\n\x11MarkReadMailCsReq\x12\x0e\n\x02id\
-    \x18\x03\x20\x01(\rR\x02idB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \x18\x03\x20\x01(\rR\x02idb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

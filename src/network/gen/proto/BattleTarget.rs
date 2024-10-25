@@ -186,8 +186,7 @@ impl ::protobuf::reflect::ProtobufValue for BattleTarget {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12BattleTarget.proto\"a\n\x0cBattleTarget\x12\x0e\n\x02id\x18\x01\
     \x20\x01(\rR\x02id\x12\x1a\n\x08progress\x18\x02\x20\x01(\rR\x08progress\
-    \x12%\n\x0etotal_progress\x18\x03\x20\x01(\rR\rtotalProgressB\x15\n\x13e\
-    mu.lunarcore.protob\x06proto3\
+    \x12%\n\x0etotal_progress\x18\x03\x20\x01(\rR\rtotalProgressb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

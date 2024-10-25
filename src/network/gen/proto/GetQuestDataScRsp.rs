@@ -87,10 +87,10 @@ impl ::protobuf::Message for GetQuestDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
-                120 => {
+                56 => {
                     self.total_achievement_exp = is.read_uint32()?;
                 },
                 106 => {
@@ -109,10 +109,10 @@ impl ::protobuf::Message for GetQuestDataScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         if self.total_achievement_exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.total_achievement_exp);
+            my_size += ::protobuf::rt::uint32_size(7, self.total_achievement_exp);
         }
         for value in &self.quest_list {
             let len = value.compute_size();
@@ -125,10 +125,10 @@ impl ::protobuf::Message for GetQuestDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
         if self.total_achievement_exp != 0 {
-            os.write_uint32(15, self.total_achievement_exp)?;
+            os.write_uint32(7, self.total_achievement_exp)?;
         }
         for v in &self.quest_list {
             ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
@@ -186,10 +186,9 @@ impl ::protobuf::reflect::ProtobufValue for GetQuestDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17GetQuestDataScRsp.proto\x1a\x0bQuest.proto\"\x88\x01\n\x11GetQuest\
-    DataScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x122\n\x15\
-    total_achievement_exp\x18\x0f\x20\x01(\rR\x13totalAchievementExp\x12%\n\
-    \nquest_list\x18\r\x20\x03(\x0b2\x06.QuestR\tquestListB\x15\n\x13emu.lun\
-    arcore.protob\x06proto3\
+    DataScRsp\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcode\x122\n\x15\
+    total_achievement_exp\x18\x07\x20\x01(\rR\x13totalAchievementExp\x12%\n\
+    \nquest_list\x18\r\x20\x03(\x0b2\x06.QuestR\tquestListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

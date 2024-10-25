@@ -32,7 +32,7 @@ pub struct SyncLineupNotify {
     // @@protoc_insertion_point(field:SyncLineupNotify.reason_list)
     pub reason_list: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::SyncLineupReason::SyncLineupReason>>,
     // @@protoc_insertion_point(field:SyncLineupNotify.lineup)
-    pub lineup: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
+    pub lineup: ::protobuf::MessageField<super::FJPJJEIJLLP::FJPJJEIJLLP>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncLineupNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,7 +57,7 @@ impl SyncLineupNotify {
             |m: &SyncLineupNotify| { &m.reason_list },
             |m: &mut SyncLineupNotify| { &mut m.reason_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FJPJJEIJLLP::FJPJJEIJLLP>(
             "lineup",
             |m: &SyncLineupNotify| { &m.lineup },
             |m: &mut SyncLineupNotify| { &mut m.lineup },
@@ -80,10 +80,10 @@ impl ::protobuf::Message for SyncLineupNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                8 => {
                     self.reason_list.push(is.read_enum_or_unknown()?);
                 },
-                26 => {
+                10 => {
                     ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.reason_list)?
                 },
                 114 => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for SyncLineupNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         for value in &self.reason_list {
-            my_size += ::protobuf::rt::int32_size(3, value.value());
+            my_size += ::protobuf::rt::int32_size(1, value.value());
         };
         if let Some(v) = self.lineup.as_ref() {
             let len = v.compute_size();
@@ -115,7 +115,7 @@ impl ::protobuf::Message for SyncLineupNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.reason_list {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(v))?;
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(v))?;
         };
         if let Some(v) = self.lineup.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
@@ -170,11 +170,10 @@ impl ::protobuf::reflect::ProtobufValue for SyncLineupNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16SyncLineupNotify.proto\x1a\x16SyncLineupReason.proto\x1a\x10Lineup\
-    Info.proto\"k\n\x10SyncLineupNotify\x122\n\x0breason_list\x18\x03\x20\
-    \x03(\x0e2\x11.SyncLineupReasonR\nreasonList\x12#\n\x06lineup\x18\x0e\
-    \x20\x01(\x0b2\x0b.LineupInfoR\x06lineupB\x15\n\x13emu.lunarcore.protob\
-    \x06proto3\
+    \n\x16SyncLineupNotify.proto\x1a\x11FJPJJEIJLLP.proto\x1a\x16SyncLineupR\
+    eason.proto\"l\n\x10SyncLineupNotify\x122\n\x0breason_list\x18\x01\x20\
+    \x03(\x0e2\x11.SyncLineupReasonR\nreasonList\x12$\n\x06lineup\x18\x0e\
+    \x20\x01(\x0b2\x0c.FJPJJEIJLLPR\x06lineupb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -192,8 +191,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
+            deps.push(super::FJPJJEIJLLP::file_descriptor().clone());
             deps.push(super::SyncLineupReason::file_descriptor().clone());
-            deps.push(super::LineupInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SyncLineupNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,8 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetFriendMarkCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetFriendMarkCsReq.is_set_mark)
-    pub is_set_mark: bool,
+    // @@protoc_insertion_point(field:SetFriendMarkCsReq.LBIOKLPIACM)
+    pub LBIOKLPIACM: bool,
+    // @@protoc_insertion_point(field:SetFriendMarkCsReq.DGDDHBLKMLI)
+    pub DGDDHBLKMLI: u32,
     // @@protoc_insertion_point(field:SetFriendMarkCsReq.uid)
     pub uid: u32,
     // special fields
@@ -50,12 +52,17 @@ impl SetFriendMarkCsReq {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_set_mark",
-            |m: &SetFriendMarkCsReq| { &m.is_set_mark },
-            |m: &mut SetFriendMarkCsReq| { &mut m.is_set_mark },
+            "LBIOKLPIACM",
+            |m: &SetFriendMarkCsReq| { &m.LBIOKLPIACM },
+            |m: &mut SetFriendMarkCsReq| { &mut m.LBIOKLPIACM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DGDDHBLKMLI",
+            |m: &SetFriendMarkCsReq| { &m.DGDDHBLKMLI },
+            |m: &mut SetFriendMarkCsReq| { &mut m.DGDDHBLKMLI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "uid",
@@ -80,10 +87,13 @@ impl ::protobuf::Message for SetFriendMarkCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.is_set_mark = is.read_bool()?;
+                96 => {
+                    self.LBIOKLPIACM = is.read_bool()?;
                 },
-                120 => {
+                40 => {
+                    self.DGDDHBLKMLI = is.read_uint32()?;
+                },
+                72 => {
                     self.uid = is.read_uint32()?;
                 },
                 tag => {
@@ -98,11 +108,14 @@ impl ::protobuf::Message for SetFriendMarkCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_set_mark != false {
+        if self.LBIOKLPIACM != false {
             my_size += 1 + 1;
         }
+        if self.DGDDHBLKMLI != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.DGDDHBLKMLI);
+        }
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.uid);
+            my_size += ::protobuf::rt::uint32_size(9, self.uid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +123,14 @@ impl ::protobuf::Message for SetFriendMarkCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_set_mark != false {
-            os.write_bool(11, self.is_set_mark)?;
+        if self.LBIOKLPIACM != false {
+            os.write_bool(12, self.LBIOKLPIACM)?;
+        }
+        if self.DGDDHBLKMLI != 0 {
+            os.write_uint32(5, self.DGDDHBLKMLI)?;
         }
         if self.uid != 0 {
-            os.write_uint32(15, self.uid)?;
+            os.write_uint32(9, self.uid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +149,16 @@ impl ::protobuf::Message for SetFriendMarkCsReq {
     }
 
     fn clear(&mut self) {
-        self.is_set_mark = false;
+        self.LBIOKLPIACM = false;
+        self.DGDDHBLKMLI = 0;
         self.uid = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetFriendMarkCsReq {
         static instance: SetFriendMarkCsReq = SetFriendMarkCsReq {
-            is_set_mark: false,
+            LBIOKLPIACM: false,
+            DGDDHBLKMLI: 0,
             uid: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,9 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for SetFriendMarkCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18SetFriendMarkCsReq.proto\"F\n\x12SetFriendMarkCsReq\x12\x1e\n\x0bi\
-    s_set_mark\x18\x0b\x20\x01(\x08R\tisSetMark\x12\x10\n\x03uid\x18\x0f\x20\
-    \x01(\rR\x03uidB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x18SetFriendMarkCsReq.proto\"j\n\x12SetFriendMarkCsReq\x12\x20\n\x0bL\
+    BIOKLPIACM\x18\x0c\x20\x01(\x08R\x0bLBIOKLPIACM\x12\x20\n\x0bDGDDHBLKMLI\
+    \x18\x05\x20\x01(\rR\x0bDGDDHBLKMLI\x12\x10\n\x03uid\x18\t\x20\x01(\rR\
+    \x03uidb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

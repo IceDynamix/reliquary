@@ -31,10 +31,10 @@ pub struct SyncHandleFriendScNotify {
     // message fields
     // @@protoc_insertion_point(field:SyncHandleFriendScNotify.uid)
     pub uid: u32,
-    // @@protoc_insertion_point(field:SyncHandleFriendScNotify.handle_friend_info)
-    pub handle_friend_info: ::protobuf::MessageField<super::FriendListInfo::FriendListInfo>,
-    // @@protoc_insertion_point(field:SyncHandleFriendScNotify.handle_result)
-    pub handle_result: bool,
+    // @@protoc_insertion_point(field:SyncHandleFriendScNotify.FKBFKDOBOCP)
+    pub FKBFKDOBOCP: bool,
+    // @@protoc_insertion_point(field:SyncHandleFriendScNotify.DJEMLLCPCED)
+    pub DJEMLLCPCED: ::protobuf::MessageField<super::BBFKIFKAEFL::BBFKIFKAEFL>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncHandleFriendScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,15 +59,15 @@ impl SyncHandleFriendScNotify {
             |m: &SyncHandleFriendScNotify| { &m.uid },
             |m: &mut SyncHandleFriendScNotify| { &mut m.uid },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FriendListInfo::FriendListInfo>(
-            "handle_friend_info",
-            |m: &SyncHandleFriendScNotify| { &m.handle_friend_info },
-            |m: &mut SyncHandleFriendScNotify| { &mut m.handle_friend_info },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "handle_result",
-            |m: &SyncHandleFriendScNotify| { &m.handle_result },
-            |m: &mut SyncHandleFriendScNotify| { &mut m.handle_result },
+            "FKBFKDOBOCP",
+            |m: &SyncHandleFriendScNotify| { &m.FKBFKDOBOCP },
+            |m: &mut SyncHandleFriendScNotify| { &mut m.FKBFKDOBOCP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BBFKIFKAEFL::BBFKIFKAEFL>(
+            "DJEMLLCPCED",
+            |m: &SyncHandleFriendScNotify| { &m.DJEMLLCPCED },
+            |m: &mut SyncHandleFriendScNotify| { &mut m.DJEMLLCPCED },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncHandleFriendScNotify>(
             "SyncHandleFriendScNotify",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for SyncHandleFriendScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                96 => {
                     self.uid = is.read_uint32()?;
                 },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.handle_friend_info)?;
+                80 => {
+                    self.FKBFKDOBOCP = is.read_bool()?;
                 },
-                16 => {
-                    self.handle_result = is.read_bool()?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DJEMLLCPCED)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -109,14 +109,14 @@ impl ::protobuf::Message for SyncHandleFriendScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.uid);
+            my_size += ::protobuf::rt::uint32_size(12, self.uid);
         }
-        if let Some(v) = self.handle_friend_info.as_ref() {
+        if self.FKBFKDOBOCP != false {
+            my_size += 1 + 1;
+        }
+        if let Some(v) = self.DJEMLLCPCED.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.handle_result != false {
-            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,13 +125,13 @@ impl ::protobuf::Message for SyncHandleFriendScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.uid != 0 {
-            os.write_uint32(5, self.uid)?;
+            os.write_uint32(12, self.uid)?;
         }
-        if let Some(v) = self.handle_friend_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if self.FKBFKDOBOCP != false {
+            os.write_bool(10, self.FKBFKDOBOCP)?;
         }
-        if self.handle_result != false {
-            os.write_bool(2, self.handle_result)?;
+        if let Some(v) = self.DJEMLLCPCED.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,16 +151,16 @@ impl ::protobuf::Message for SyncHandleFriendScNotify {
 
     fn clear(&mut self) {
         self.uid = 0;
-        self.handle_friend_info.clear();
-        self.handle_result = false;
+        self.FKBFKDOBOCP = false;
+        self.DJEMLLCPCED.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncHandleFriendScNotify {
         static instance: SyncHandleFriendScNotify = SyncHandleFriendScNotify {
             uid: 0,
-            handle_friend_info: ::protobuf::MessageField::none(),
-            handle_result: false,
+            FKBFKDOBOCP: false,
+            DJEMLLCPCED: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for SyncHandleFriendScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eSyncHandleFriendScNotify.proto\x1a\x14FriendListInfo.proto\"\x90\
-    \x01\n\x18SyncHandleFriendScNotify\x12\x10\n\x03uid\x18\x05\x20\x01(\rR\
-    \x03uid\x12=\n\x12handle_friend_info\x18\x08\x20\x01(\x0b2\x0f.FriendLis\
-    tInfoR\x10handleFriendInfo\x12#\n\rhandle_result\x18\x02\x20\x01(\x08R\
-    \x0chandleResultB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x1eSyncHandleFriendScNotify.proto\x1a\x11BBFKIFKAEFL.proto\"~\n\x18Sy\
+    ncHandleFriendScNotify\x12\x10\n\x03uid\x18\x0c\x20\x01(\rR\x03uid\x12\
+    \x20\n\x0bFKBFKDOBOCP\x18\n\x20\x01(\x08R\x0bFKBFKDOBOCP\x12.\n\x0bDJEML\
+    LCPCED\x18\x0e\x20\x01(\x0b2\x0c.BBFKIFKAEFLR\x0bDJEMLLCPCEDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,7 +206,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::FriendListInfo::file_descriptor().clone());
+            deps.push(super::BBFKIFKAEFL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SyncHandleFriendScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishTalkMissionCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FinishTalkMissionCsReq.talk_str)
-    pub talk_str: ::std::string::String,
-    // @@protoc_insertion_point(field:FinishTalkMissionCsReq.custom_value_list)
-    pub custom_value_list: ::std::vec::Vec<super::MissionCustomValueData::MissionCustomValueData>,
-    // @@protoc_insertion_point(field:FinishTalkMissionCsReq.sub_mission_id)
-    pub sub_mission_id: u32,
+    // @@protoc_insertion_point(field:FinishTalkMissionCsReq.OILHDJJEHOA)
+    pub OILHDJJEHOA: ::std::string::String,
+    // @@protoc_insertion_point(field:FinishTalkMissionCsReq.OIGPKLBIBAC)
+    pub OIGPKLBIBAC: ::std::vec::Vec<super::AMMOKDCDKOO::AMMOKDCDKOO>,
+    // @@protoc_insertion_point(field:FinishTalkMissionCsReq.NJHPKMHFJAD)
+    pub NJHPKMHFJAD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FinishTalkMissionCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl FinishTalkMissionCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "talk_str",
-            |m: &FinishTalkMissionCsReq| { &m.talk_str },
-            |m: &mut FinishTalkMissionCsReq| { &mut m.talk_str },
+            "OILHDJJEHOA",
+            |m: &FinishTalkMissionCsReq| { &m.OILHDJJEHOA },
+            |m: &mut FinishTalkMissionCsReq| { &mut m.OILHDJJEHOA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "custom_value_list",
-            |m: &FinishTalkMissionCsReq| { &m.custom_value_list },
-            |m: &mut FinishTalkMissionCsReq| { &mut m.custom_value_list },
+            "OIGPKLBIBAC",
+            |m: &FinishTalkMissionCsReq| { &m.OIGPKLBIBAC },
+            |m: &mut FinishTalkMissionCsReq| { &mut m.OIGPKLBIBAC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "sub_mission_id",
-            |m: &FinishTalkMissionCsReq| { &m.sub_mission_id },
-            |m: &mut FinishTalkMissionCsReq| { &mut m.sub_mission_id },
+            "NJHPKMHFJAD",
+            |m: &FinishTalkMissionCsReq| { &m.NJHPKMHFJAD },
+            |m: &mut FinishTalkMissionCsReq| { &mut m.NJHPKMHFJAD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishTalkMissionCsReq>(
             "FinishTalkMissionCsReq",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for FinishTalkMissionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.talk_str = is.read_string()?;
+                66 => {
+                    self.OILHDJJEHOA = is.read_string()?;
                 },
-                82 => {
-                    self.custom_value_list.push(is.read_message()?);
+                18 => {
+                    self.OIGPKLBIBAC.push(is.read_message()?);
                 },
-                112 => {
-                    self.sub_mission_id = is.read_uint32()?;
+                104 => {
+                    self.NJHPKMHFJAD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +108,15 @@ impl ::protobuf::Message for FinishTalkMissionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.talk_str.is_empty() {
-            my_size += ::protobuf::rt::string_size(7, &self.talk_str);
+        if !self.OILHDJJEHOA.is_empty() {
+            my_size += ::protobuf::rt::string_size(8, &self.OILHDJJEHOA);
         }
-        for value in &self.custom_value_list {
+        for value in &self.OIGPKLBIBAC {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.sub_mission_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.sub_mission_id);
+        if self.NJHPKMHFJAD != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.NJHPKMHFJAD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for FinishTalkMissionCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.talk_str.is_empty() {
-            os.write_string(7, &self.talk_str)?;
+        if !self.OILHDJJEHOA.is_empty() {
+            os.write_string(8, &self.OILHDJJEHOA)?;
         }
-        for v in &self.custom_value_list {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        for v in &self.OIGPKLBIBAC {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
-        if self.sub_mission_id != 0 {
-            os.write_uint32(14, self.sub_mission_id)?;
+        if self.NJHPKMHFJAD != 0 {
+            os.write_uint32(13, self.NJHPKMHFJAD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for FinishTalkMissionCsReq {
     }
 
     fn clear(&mut self) {
-        self.talk_str.clear();
-        self.custom_value_list.clear();
-        self.sub_mission_id = 0;
+        self.OILHDJJEHOA.clear();
+        self.OIGPKLBIBAC.clear();
+        self.NJHPKMHFJAD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishTalkMissionCsReq {
         static instance: FinishTalkMissionCsReq = FinishTalkMissionCsReq {
-            talk_str: ::std::string::String::new(),
-            custom_value_list: ::std::vec::Vec::new(),
-            sub_mission_id: 0,
+            OILHDJJEHOA: ::std::string::String::new(),
+            OIGPKLBIBAC: ::std::vec::Vec::new(),
+            NJHPKMHFJAD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,12 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for FinishTalkMissionCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cFinishTalkMissionCsReq.proto\x1a\x1cMissionCustomValueData.proto\"\
-    \x9e\x01\n\x16FinishTalkMissionCsReq\x12\x19\n\x08talk_str\x18\x07\x20\
-    \x01(\tR\x07talkStr\x12C\n\x11custom_value_list\x18\n\x20\x03(\x0b2\x17.\
-    MissionCustomValueDataR\x0fcustomValueList\x12$\n\x0esub_mission_id\x18\
-    \x0e\x20\x01(\rR\x0csubMissionIdB\x15\n\x13emu.lunarcore.protob\x06proto\
-    3\
+    \n\x1cFinishTalkMissionCsReq.proto\x1a\x11AMMOKDCDKOO.proto\"\x8c\x01\n\
+    \x16FinishTalkMissionCsReq\x12\x20\n\x0bOILHDJJEHOA\x18\x08\x20\x01(\tR\
+    \x0bOILHDJJEHOA\x12.\n\x0bOIGPKLBIBAC\x18\x02\x20\x03(\x0b2\x0c.AMMOKDCD\
+    KOOR\x0bOIGPKLBIBAC\x12\x20\n\x0bNJHPKMHFJAD\x18\r\x20\x01(\rR\x0bNJHPKM\
+    HFJADb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -208,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::MissionCustomValueData::file_descriptor().clone());
+            deps.push(super::AMMOKDCDKOO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FinishTalkMissionCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

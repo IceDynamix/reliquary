@@ -33,6 +33,8 @@ pub struct Material {
     pub tid: u32,
     // @@protoc_insertion_point(field:Material.num)
     pub num: u32,
+    // @@protoc_insertion_point(field:Material.ADMFJDHKKEP)
+    pub ADMFJDHKKEP: u64,
     // special fields
     // @@protoc_insertion_point(special_field:Material.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,7 +52,7 @@ impl Material {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "tid",
@@ -61,6 +63,11 @@ impl Material {
             "num",
             |m: &Material| { &m.num },
             |m: &mut Material| { &mut m.num },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ADMFJDHKKEP",
+            |m: &Material| { &m.ADMFJDHKKEP },
+            |m: &mut Material| { &mut m.ADMFJDHKKEP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<Material>(
             "Material",
@@ -80,11 +87,14 @@ impl ::protobuf::Message for Material {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                120 => {
                     self.tid = is.read_uint32()?;
                 },
                 80 => {
                     self.num = is.read_uint32()?;
+                },
+                48 => {
+                    self.ADMFJDHKKEP = is.read_uint64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -99,10 +109,13 @@ impl ::protobuf::Message for Material {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.tid != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.tid);
+            my_size += ::protobuf::rt::uint32_size(15, self.tid);
         }
         if self.num != 0 {
             my_size += ::protobuf::rt::uint32_size(10, self.num);
+        }
+        if self.ADMFJDHKKEP != 0 {
+            my_size += ::protobuf::rt::uint64_size(6, self.ADMFJDHKKEP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +124,13 @@ impl ::protobuf::Message for Material {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.tid != 0 {
-            os.write_uint32(6, self.tid)?;
+            os.write_uint32(15, self.tid)?;
         }
         if self.num != 0 {
             os.write_uint32(10, self.num)?;
+        }
+        if self.ADMFJDHKKEP != 0 {
+            os.write_uint64(6, self.ADMFJDHKKEP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -135,6 +151,7 @@ impl ::protobuf::Message for Material {
     fn clear(&mut self) {
         self.tid = 0;
         self.num = 0;
+        self.ADMFJDHKKEP = 0;
         self.special_fields.clear();
     }
 
@@ -142,6 +159,7 @@ impl ::protobuf::Message for Material {
         static instance: Material = Material {
             tid: 0,
             num: 0,
+            ADMFJDHKKEP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for Material {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0eMaterial.proto\".\n\x08Material\x12\x10\n\x03tid\x18\x06\x20\x01(\
-    \rR\x03tid\x12\x10\n\x03num\x18\n\x20\x01(\rR\x03numB\x15\n\x13emu.lunar\
-    core.protob\x06proto3\
+    \n\x0eMaterial.proto\"P\n\x08Material\x12\x10\n\x03tid\x18\x0f\x20\x01(\
+    \rR\x03tid\x12\x10\n\x03num\x18\n\x20\x01(\rR\x03num\x12\x20\n\x0bADMFJD\
+    HKKEP\x18\x06\x20\x01(\x04R\x0bADMFJDHKKEPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

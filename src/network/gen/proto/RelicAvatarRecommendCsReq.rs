@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RelicAvatarRecommendCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RelicAvatarRecommendCsReq.set_id)
-    pub set_id: u32,
+    // @@protoc_insertion_point(field:RelicAvatarRecommendCsReq.EOLGPJIGODN)
+    pub EOLGPJIGODN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RelicAvatarRecommendCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl RelicAvatarRecommendCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "set_id",
-            |m: &RelicAvatarRecommendCsReq| { &m.set_id },
-            |m: &mut RelicAvatarRecommendCsReq| { &mut m.set_id },
+            "EOLGPJIGODN",
+            |m: &RelicAvatarRecommendCsReq| { &m.EOLGPJIGODN },
+            |m: &mut RelicAvatarRecommendCsReq| { &mut m.EOLGPJIGODN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RelicAvatarRecommendCsReq>(
             "RelicAvatarRecommendCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for RelicAvatarRecommendCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.set_id = is.read_uint32()?;
+                24 => {
+                    self.EOLGPJIGODN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for RelicAvatarRecommendCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.set_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.set_id);
+        if self.EOLGPJIGODN != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.EOLGPJIGODN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for RelicAvatarRecommendCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.set_id != 0 {
-            os.write_uint32(8, self.set_id)?;
+        if self.EOLGPJIGODN != 0 {
+            os.write_uint32(3, self.EOLGPJIGODN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for RelicAvatarRecommendCsReq {
     }
 
     fn clear(&mut self) {
-        self.set_id = 0;
+        self.EOLGPJIGODN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RelicAvatarRecommendCsReq {
         static instance: RelicAvatarRecommendCsReq = RelicAvatarRecommendCsReq {
-            set_id: 0,
+            EOLGPJIGODN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for RelicAvatarRecommendCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fRelicAvatarRecommendCsReq.proto\"2\n\x19RelicAvatarRecommendCsReq\
-    \x12\x15\n\x06set_id\x18\x08\x20\x01(\rR\x05setIdB\x15\n\x13emu.lunarcor\
-    e.protob\x06proto3\
+    \n\x1fRelicAvatarRecommendCsReq.proto\"=\n\x19RelicAvatarRecommendCsReq\
+    \x12\x20\n\x0bEOLGPJIGODN\x18\x03\x20\x01(\rR\x0bEOLGPJIGODNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

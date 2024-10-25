@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncChessRogueNousValueScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncChessRogueNousValueScNotify.value)
-    pub value: ::protobuf::MessageField<super::ChessRogueNousValue::ChessRogueNousValue>,
+    // @@protoc_insertion_point(field:SyncChessRogueNousValueScNotify.JIFCGLKLNEF)
+    pub JIFCGLKLNEF: ::protobuf::MessageField<super::JPCOFGJAJEN::JPCOFGJAJEN>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncChessRogueNousValueScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,10 +50,10 @@ impl SyncChessRogueNousValueScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueNousValue::ChessRogueNousValue>(
-            "value",
-            |m: &SyncChessRogueNousValueScNotify| { &m.value },
-            |m: &mut SyncChessRogueNousValueScNotify| { &mut m.value },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JPCOFGJAJEN::JPCOFGJAJEN>(
+            "JIFCGLKLNEF",
+            |m: &SyncChessRogueNousValueScNotify| { &m.JIFCGLKLNEF },
+            |m: &mut SyncChessRogueNousValueScNotify| { &mut m.JIFCGLKLNEF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncChessRogueNousValueScNotify>(
             "SyncChessRogueNousValueScNotify",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for SyncChessRogueNousValueScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.value)?;
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JIFCGLKLNEF)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for SyncChessRogueNousValueScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.value.as_ref() {
+        if let Some(v) = self.JIFCGLKLNEF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -98,8 +98,8 @@ impl ::protobuf::Message for SyncChessRogueNousValueScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.value.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if let Some(v) = self.JIFCGLKLNEF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -118,13 +118,13 @@ impl ::protobuf::Message for SyncChessRogueNousValueScNotify {
     }
 
     fn clear(&mut self) {
-        self.value.clear();
+        self.JIFCGLKLNEF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncChessRogueNousValueScNotify {
         static instance: SyncChessRogueNousValueScNotify = SyncChessRogueNousValueScNotify {
-            value: ::protobuf::MessageField::none(),
+            JIFCGLKLNEF: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,10 +149,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncChessRogueNousValueScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n%SyncChessRogueNousValueScNotify.proto\x1a\x19ChessRogueNousValue.prot\
-    o\"M\n\x1fSyncChessRogueNousValueScNotify\x12*\n\x05value\x18\x08\x20\
-    \x01(\x0b2\x14.ChessRogueNousValueR\x05valueB\x15\n\x13emu.lunarcore.pro\
-    tob\x06proto3\
+    \n%SyncChessRogueNousValueScNotify.proto\x1a\x11JPCOFGJAJEN.proto\"Q\n\
+    \x1fSyncChessRogueNousValueScNotify\x12.\n\x0bJIFCGLKLNEF\x18\x03\x20\
+    \x01(\x0b2\x0c.JPCOFGJAJENR\x0bJIFCGLKLNEFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -170,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ChessRogueNousValue::file_descriptor().clone());
+            deps.push(super::JPCOFGJAJEN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SyncChessRogueNousValueScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

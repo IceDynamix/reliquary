@@ -73,10 +73,10 @@ impl ::protobuf::Message for NewMailScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.mail_id_list)?;
                 },
-                80 => {
+                104 => {
                     self.mail_id_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -92,7 +92,7 @@ impl ::protobuf::Message for NewMailScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         for value in &self.mail_id_list {
-            my_size += ::protobuf::rt::uint32_size(10, *value);
+            my_size += ::protobuf::rt::uint32_size(13, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -101,7 +101,7 @@ impl ::protobuf::Message for NewMailScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.mail_id_list {
-            os.write_uint32(10, *v)?;
+            os.write_uint32(13, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -152,8 +152,7 @@ impl ::protobuf::reflect::ProtobufValue for NewMailScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15NewMailScNotify.proto\"3\n\x0fNewMailScNotify\x12\x20\n\x0cmail_id\
-    _list\x18\n\x20\x03(\rR\nmailIdListB\x15\n\x13emu.lunarcore.protob\x06pr\
-    oto3\
+    _list\x18\r\x20\x03(\rR\nmailIdListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

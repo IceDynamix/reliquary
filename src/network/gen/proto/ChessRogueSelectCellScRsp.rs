@@ -29,8 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueSelectCellScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueSelectCellScRsp.cell_id)
-    pub cell_id: u32,
+    // @@protoc_insertion_point(field:ChessRogueSelectCellScRsp.KGJJGBGFJAM)
+    pub KGJJGBGFJAM: ::protobuf::MessageField<super::PDMHACNANPF::PDMHACNANPF>,
+    // @@protoc_insertion_point(field:ChessRogueSelectCellScRsp.DOLHMBKDJGL)
+    pub DOLHMBKDJGL: u32,
+    // @@protoc_insertion_point(field:ChessRogueSelectCellScRsp.KMIPNOOKBMB)
+    pub KMIPNOOKBMB: u32,
     // @@protoc_insertion_point(field:ChessRogueSelectCellScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -50,12 +54,22 @@ impl ChessRogueSelectCellScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PDMHACNANPF::PDMHACNANPF>(
+            "KGJJGBGFJAM",
+            |m: &ChessRogueSelectCellScRsp| { &m.KGJJGBGFJAM },
+            |m: &mut ChessRogueSelectCellScRsp| { &mut m.KGJJGBGFJAM },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cell_id",
-            |m: &ChessRogueSelectCellScRsp| { &m.cell_id },
-            |m: &mut ChessRogueSelectCellScRsp| { &mut m.cell_id },
+            "DOLHMBKDJGL",
+            |m: &ChessRogueSelectCellScRsp| { &m.DOLHMBKDJGL },
+            |m: &mut ChessRogueSelectCellScRsp| { &mut m.DOLHMBKDJGL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KMIPNOOKBMB",
+            |m: &ChessRogueSelectCellScRsp| { &m.KMIPNOOKBMB },
+            |m: &mut ChessRogueSelectCellScRsp| { &mut m.KMIPNOOKBMB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -80,10 +94,16 @@ impl ::protobuf::Message for ChessRogueSelectCellScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.cell_id = is.read_uint32()?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KGJJGBGFJAM)?;
                 },
-                40 => {
+                112 => {
+                    self.DOLHMBKDJGL = is.read_uint32()?;
+                },
+                104 => {
+                    self.KMIPNOOKBMB = is.read_uint32()?;
+                },
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -98,11 +118,18 @@ impl ::protobuf::Message for ChessRogueSelectCellScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.cell_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.cell_id);
+        if let Some(v) = self.KGJJGBGFJAM.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.DOLHMBKDJGL != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.DOLHMBKDJGL);
+        }
+        if self.KMIPNOOKBMB != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.KMIPNOOKBMB);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +137,17 @@ impl ::protobuf::Message for ChessRogueSelectCellScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.cell_id != 0 {
-            os.write_uint32(7, self.cell_id)?;
+        if let Some(v) = self.KGJJGBGFJAM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
+        if self.DOLHMBKDJGL != 0 {
+            os.write_uint32(14, self.DOLHMBKDJGL)?;
+        }
+        if self.KMIPNOOKBMB != 0 {
+            os.write_uint32(13, self.KMIPNOOKBMB)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +166,18 @@ impl ::protobuf::Message for ChessRogueSelectCellScRsp {
     }
 
     fn clear(&mut self) {
-        self.cell_id = 0;
+        self.KGJJGBGFJAM.clear();
+        self.DOLHMBKDJGL = 0;
+        self.KMIPNOOKBMB = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueSelectCellScRsp {
         static instance: ChessRogueSelectCellScRsp = ChessRogueSelectCellScRsp {
-            cell_id: 0,
+            KGJJGBGFJAM: ::protobuf::MessageField::none(),
+            DOLHMBKDJGL: 0,
+            KMIPNOOKBMB: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,9 +203,12 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueSelectCellScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fChessRogueSelectCellScRsp.proto\"N\n\x19ChessRogueSelectCellScRsp\
-    \x12\x17\n\x07cell_id\x18\x07\x20\x01(\rR\x06cellId\x12\x18\n\x07retcode\
-    \x18\x05\x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x1fChessRogueSelectCellScRsp.proto\x1a\x11PDMHACNANPF.proto\"\xa9\x01\
+    \n\x19ChessRogueSelectCellScRsp\x12.\n\x0bKGJJGBGFJAM\x18\x07\x20\x01(\
+    \x0b2\x0c.PDMHACNANPFR\x0bKGJJGBGFJAM\x12\x20\n\x0bDOLHMBKDJGL\x18\x0e\
+    \x20\x01(\rR\x0bDOLHMBKDJGL\x12\x20\n\x0bKMIPNOOKBMB\x18\r\x20\x01(\rR\
+    \x0bKMIPNOOKBMB\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcodeb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -185,7 +225,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(0);
+            let mut deps = ::std::vec::Vec::with_capacity(1);
+            deps.push(super::PDMHACNANPF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChessRogueSelectCellScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

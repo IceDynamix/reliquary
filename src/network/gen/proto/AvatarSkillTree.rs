@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for AvatarSkillTree {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15AvatarSkillTree.proto\"B\n\x0fAvatarSkillTree\x12\x19\n\x08point_i\
     d\x18\x01\x20\x01(\rR\x07pointId\x12\x14\n\x05level\x18\x02\x20\x01(\rR\
-    \x05levelB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterSceneByServerScNotify {
     // message fields
-    // @@protoc_insertion_point(field:EnterSceneByServerScNotify.lineup)
-    pub lineup: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
-    // @@protoc_insertion_point(field:EnterSceneByServerScNotify.reason)
-    pub reason: ::protobuf::EnumOrUnknown<super::EnterSceneReason::EnterSceneReason>,
-    // @@protoc_insertion_point(field:EnterSceneByServerScNotify.scene)
-    pub scene: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
+    // @@protoc_insertion_point(field:EnterSceneByServerScNotify.EMDECAJPAPM)
+    pub EMDECAJPAPM: ::protobuf::MessageField<super::FHGPCKGFGAO::FHGPCKGFGAO>,
+    // @@protoc_insertion_point(field:EnterSceneByServerScNotify.COCFMLGGMKE)
+    pub COCFMLGGMKE: ::protobuf::MessageField<super::FJPJJEIJLLP::FJPJJEIJLLP>,
+    // @@protoc_insertion_point(field:EnterSceneByServerScNotify.DGDDHBLKMLI)
+    pub DGDDHBLKMLI: ::protobuf::EnumOrUnknown<super::EENBNADCEML::EENBNADCEML>,
     // special fields
     // @@protoc_insertion_point(special_field:EnterSceneByServerScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl EnterSceneByServerScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
-            "lineup",
-            |m: &EnterSceneByServerScNotify| { &m.lineup },
-            |m: &mut EnterSceneByServerScNotify| { &mut m.lineup },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FHGPCKGFGAO::FHGPCKGFGAO>(
+            "EMDECAJPAPM",
+            |m: &EnterSceneByServerScNotify| { &m.EMDECAJPAPM },
+            |m: &mut EnterSceneByServerScNotify| { &mut m.EMDECAJPAPM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FJPJJEIJLLP::FJPJJEIJLLP>(
+            "COCFMLGGMKE",
+            |m: &EnterSceneByServerScNotify| { &m.COCFMLGGMKE },
+            |m: &mut EnterSceneByServerScNotify| { &mut m.COCFMLGGMKE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "reason",
-            |m: &EnterSceneByServerScNotify| { &m.reason },
-            |m: &mut EnterSceneByServerScNotify| { &mut m.reason },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneInfo::SceneInfo>(
-            "scene",
-            |m: &EnterSceneByServerScNotify| { &m.scene },
-            |m: &mut EnterSceneByServerScNotify| { &mut m.scene },
+            "DGDDHBLKMLI",
+            |m: &EnterSceneByServerScNotify| { &m.DGDDHBLKMLI },
+            |m: &mut EnterSceneByServerScNotify| { &mut m.DGDDHBLKMLI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterSceneByServerScNotify>(
             "EnterSceneByServerScNotify",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for EnterSceneByServerScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EMDECAJPAPM)?;
                 },
-                88 => {
-                    self.reason = is.read_enum_or_unknown()?;
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.COCFMLGGMKE)?;
                 },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
+                96 => {
+                    self.DGDDHBLKMLI = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,16 +108,16 @@ impl ::protobuf::Message for EnterSceneByServerScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.lineup.as_ref() {
+        if let Some(v) = self.EMDECAJPAPM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::EnterSceneReason::EnterSceneReason::ENTER_SCENE_REASON_NONE) {
-            my_size += ::protobuf::rt::int32_size(11, self.reason.value());
-        }
-        if let Some(v) = self.scene.as_ref() {
+        if let Some(v) = self.COCFMLGGMKE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.DGDDHBLKMLI != ::protobuf::EnumOrUnknown::new(super::EENBNADCEML::EENBNADCEML::ENTER_SCENE_REASON_NONE) {
+            my_size += ::protobuf::rt::int32_size(12, self.DGDDHBLKMLI.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,14 +125,14 @@ impl ::protobuf::Message for EnterSceneByServerScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if let Some(v) = self.EMDECAJPAPM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::EnterSceneReason::EnterSceneReason::ENTER_SCENE_REASON_NONE) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.reason))?;
+        if let Some(v) = self.COCFMLGGMKE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
-        if let Some(v) = self.scene.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if self.DGDDHBLKMLI != ::protobuf::EnumOrUnknown::new(super::EENBNADCEML::EENBNADCEML::ENTER_SCENE_REASON_NONE) {
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.DGDDHBLKMLI))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,17 +151,17 @@ impl ::protobuf::Message for EnterSceneByServerScNotify {
     }
 
     fn clear(&mut self) {
-        self.lineup.clear();
-        self.reason = ::protobuf::EnumOrUnknown::new(super::EnterSceneReason::EnterSceneReason::ENTER_SCENE_REASON_NONE);
-        self.scene.clear();
+        self.EMDECAJPAPM.clear();
+        self.COCFMLGGMKE.clear();
+        self.DGDDHBLKMLI = ::protobuf::EnumOrUnknown::new(super::EENBNADCEML::EENBNADCEML::ENTER_SCENE_REASON_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterSceneByServerScNotify {
         static instance: EnterSceneByServerScNotify = EnterSceneByServerScNotify {
-            lineup: ::protobuf::MessageField::none(),
-            reason: ::protobuf::EnumOrUnknown::from_i32(0),
-            scene: ::protobuf::MessageField::none(),
+            EMDECAJPAPM: ::protobuf::MessageField::none(),
+            COCFMLGGMKE: ::protobuf::MessageField::none(),
+            DGDDHBLKMLI: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,12 +186,12 @@ impl ::protobuf::reflect::ProtobufValue for EnterSceneByServerScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20EnterSceneByServerScNotify.proto\x1a\x10LineupInfo.proto\x1a\x16En\
-    terSceneReason.proto\x1a\x0fSceneInfo.proto\"\x8e\x01\n\x1aEnterSceneByS\
-    erverScNotify\x12#\n\x06lineup\x18\x0e\x20\x01(\x0b2\x0b.LineupInfoR\x06\
-    lineup\x12)\n\x06reason\x18\x0b\x20\x01(\x0e2\x11.EnterSceneReasonR\x06r\
-    eason\x12\x20\n\x05scene\x18\x07\x20\x01(\x0b2\n.SceneInfoR\x05sceneB\
-    \x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x20EnterSceneByServerScNotify.proto\x1a\x11EENBNADCEML.proto\x1a\x11F\
+    HGPCKGFGAO.proto\x1a\x11FJPJJEIJLLP.proto\"\xac\x01\n\x1aEnterSceneBySer\
+    verScNotify\x12.\n\x0bEMDECAJPAPM\x18\r\x20\x01(\x0b2\x0c.FHGPCKGFGAOR\
+    \x0bEMDECAJPAPM\x12.\n\x0bCOCFMLGGMKE\x18\t\x20\x01(\x0b2\x0c.FJPJJEIJLL\
+    PR\x0bCOCFMLGGMKE\x12.\n\x0bDGDDHBLKMLI\x18\x0c\x20\x01(\x0e2\x0c.EENBNA\
+    DCEMLR\x0bDGDDHBLKMLIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -209,9 +209,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::LineupInfo::file_descriptor().clone());
-            deps.push(super::EnterSceneReason::file_descriptor().clone());
-            deps.push(super::SceneInfo::file_descriptor().clone());
+            deps.push(super::EENBNADCEML::file_descriptor().clone());
+            deps.push(super::FHGPCKGFGAO::file_descriptor().clone());
+            deps.push(super::FJPJJEIJLLP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EnterSceneByServerScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

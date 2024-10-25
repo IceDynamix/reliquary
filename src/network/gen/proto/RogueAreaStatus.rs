@@ -101,7 +101,7 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15RogueAreaStatus.proto*\x8a\x01\n\x0fRogueAreaStatus\x12\x1a\n\x16R\
     OGUE_AREA_STATUS_LOCK\x10\0\x12\x1c\n\x18ROGUE_AREA_STATUS_UNLOCK\x10\
     \x01\x12\x20\n\x1cROGUE_AREA_STATUS_FIRST_PASS\x10\x02\x12\x1b\n\x17ROGU\
-    E_AREA_STATUS_CLOSE\x10\x03B\x15\n\x13emu.lunarcore.protob\x06proto3\
+    E_AREA_STATUS_CLOSE\x10\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

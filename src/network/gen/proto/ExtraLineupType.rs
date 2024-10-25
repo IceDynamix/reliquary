@@ -54,6 +54,14 @@ pub enum ExtraLineupType {
     LINEUP_CHESS_ROGUE = 12,
     // @@protoc_insertion_point(enum_value:ExtraLineupType.LINEUP_HELIOBUS)
     LINEUP_HELIOBUS = 13,
+    // @@protoc_insertion_point(enum_value:ExtraLineupType.LINEUP_TOURN_ROGUE)
+    LINEUP_TOURN_ROGUE = 14,
+    // @@protoc_insertion_point(enum_value:ExtraLineupType.LINEUP_RELIC_ROGUE)
+    LINEUP_RELIC_ROGUE = 15,
+    // @@protoc_insertion_point(enum_value:ExtraLineupType.LINEUP_ARCADE_ROGUE)
+    LINEUP_ARCADE_ROGUE = 16,
+    // @@protoc_insertion_point(enum_value:ExtraLineupType.LINEUP_MAGIC_ROGUE)
+    LINEUP_MAGIC_ROGUE = 17,
 }
 
 impl ::protobuf::Enum for ExtraLineupType {
@@ -78,6 +86,10 @@ impl ::protobuf::Enum for ExtraLineupType {
             11 => ::std::option::Option::Some(ExtraLineupType::LINEUP_TREASURE_DUNGEON),
             12 => ::std::option::Option::Some(ExtraLineupType::LINEUP_CHESS_ROGUE),
             13 => ::std::option::Option::Some(ExtraLineupType::LINEUP_HELIOBUS),
+            14 => ::std::option::Option::Some(ExtraLineupType::LINEUP_TOURN_ROGUE),
+            15 => ::std::option::Option::Some(ExtraLineupType::LINEUP_RELIC_ROGUE),
+            16 => ::std::option::Option::Some(ExtraLineupType::LINEUP_ARCADE_ROGUE),
+            17 => ::std::option::Option::Some(ExtraLineupType::LINEUP_MAGIC_ROGUE),
             _ => ::std::option::Option::None
         }
     }
@@ -97,6 +109,10 @@ impl ::protobuf::Enum for ExtraLineupType {
             "LINEUP_TREASURE_DUNGEON" => ::std::option::Option::Some(ExtraLineupType::LINEUP_TREASURE_DUNGEON),
             "LINEUP_CHESS_ROGUE" => ::std::option::Option::Some(ExtraLineupType::LINEUP_CHESS_ROGUE),
             "LINEUP_HELIOBUS" => ::std::option::Option::Some(ExtraLineupType::LINEUP_HELIOBUS),
+            "LINEUP_TOURN_ROGUE" => ::std::option::Option::Some(ExtraLineupType::LINEUP_TOURN_ROGUE),
+            "LINEUP_RELIC_ROGUE" => ::std::option::Option::Some(ExtraLineupType::LINEUP_RELIC_ROGUE),
+            "LINEUP_ARCADE_ROGUE" => ::std::option::Option::Some(ExtraLineupType::LINEUP_ARCADE_ROGUE),
+            "LINEUP_MAGIC_ROGUE" => ::std::option::Option::Some(ExtraLineupType::LINEUP_MAGIC_ROGUE),
             _ => ::std::option::Option::None
         }
     }
@@ -115,6 +131,10 @@ impl ::protobuf::Enum for ExtraLineupType {
         ExtraLineupType::LINEUP_TREASURE_DUNGEON,
         ExtraLineupType::LINEUP_CHESS_ROGUE,
         ExtraLineupType::LINEUP_HELIOBUS,
+        ExtraLineupType::LINEUP_TOURN_ROGUE,
+        ExtraLineupType::LINEUP_RELIC_ROGUE,
+        ExtraLineupType::LINEUP_ARCADE_ROGUE,
+        ExtraLineupType::LINEUP_MAGIC_ROGUE,
     ];
 }
 
@@ -139,6 +159,10 @@ impl ::protobuf::EnumFull for ExtraLineupType {
             ExtraLineupType::LINEUP_TREASURE_DUNGEON => 10,
             ExtraLineupType::LINEUP_CHESS_ROGUE => 11,
             ExtraLineupType::LINEUP_HELIOBUS => 12,
+            ExtraLineupType::LINEUP_TOURN_ROGUE => 13,
+            ExtraLineupType::LINEUP_RELIC_ROGUE => 14,
+            ExtraLineupType::LINEUP_ARCADE_ROGUE => 15,
+            ExtraLineupType::LINEUP_MAGIC_ROGUE => 16,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -157,15 +181,17 @@ impl ExtraLineupType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15ExtraLineupType.proto*\xbd\x02\n\x0fExtraLineupType\x12\x0f\n\x0bL\
+    \n\x15ExtraLineupType.proto*\x9e\x03\n\x0fExtraLineupType\x12\x0f\n\x0bL\
     INEUP_NONE\x10\0\x12\x14\n\x10LINEUP_CHALLENGE\x10\x01\x12\x10\n\x0cLINE\
     UP_ROGUE\x10\x02\x12\x16\n\x12LINEUP_CHALLENGE_2\x10\x03\x12\x16\n\x12LI\
     NEUP_CHALLENGE_3\x10\x04\x12\x1a\n\x16LINEUP_ROGUE_CHALLENGE\x10\x05\x12\
     \x16\n\x12LINEUP_STAGE_TRIAL\x10\x06\x12\x16\n\x12LINEUP_ROGUE_TRIAL\x10\
     \x07\x12\x13\n\x0fLINEUP_ACTIVITY\x10\x08\x12\x16\n\x12LINEUP_BOXING_CLU\
     B\x10\t\x12\x1b\n\x17LINEUP_TREASURE_DUNGEON\x10\x0b\x12\x16\n\x12LINEUP\
-    _CHESS_ROGUE\x10\x0c\x12\x13\n\x0fLINEUP_HELIOBUS\x10\rB\x15\n\x13emu.lu\
-    narcore.protob\x06proto3\
+    _CHESS_ROGUE\x10\x0c\x12\x13\n\x0fLINEUP_HELIOBUS\x10\r\x12\x16\n\x12LIN\
+    EUP_TOURN_ROGUE\x10\x0e\x12\x16\n\x12LINEUP_RELIC_ROGUE\x10\x0f\x12\x17\
+    \n\x13LINEUP_ARCADE_ROGUE\x10\x10\x12\x16\n\x12LINEUP_MAGIC_ROGUE\x10\
+    \x11b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

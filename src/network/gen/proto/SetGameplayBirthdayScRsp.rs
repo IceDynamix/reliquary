@@ -31,8 +31,8 @@ pub struct SetGameplayBirthdayScRsp {
     // message fields
     // @@protoc_insertion_point(field:SetGameplayBirthdayScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:SetGameplayBirthdayScRsp.birthday)
-    pub birthday: u32,
+    // @@protoc_insertion_point(field:SetGameplayBirthdayScRsp.EAMJNHBBGDP)
+    pub EAMJNHBBGDP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SetGameplayBirthdayScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,9 +58,9 @@ impl SetGameplayBirthdayScRsp {
             |m: &mut SetGameplayBirthdayScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "birthday",
-            |m: &SetGameplayBirthdayScRsp| { &m.birthday },
-            |m: &mut SetGameplayBirthdayScRsp| { &mut m.birthday },
+            "EAMJNHBBGDP",
+            |m: &SetGameplayBirthdayScRsp| { &m.EAMJNHBBGDP },
+            |m: &mut SetGameplayBirthdayScRsp| { &mut m.EAMJNHBBGDP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetGameplayBirthdayScRsp>(
             "SetGameplayBirthdayScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for SetGameplayBirthdayScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
-                88 => {
-                    self.birthday = is.read_uint32()?;
+                40 => {
+                    self.EAMJNHBBGDP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -99,10 +99,10 @@ impl ::protobuf::Message for SetGameplayBirthdayScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
-        if self.birthday != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.birthday);
+        if self.EAMJNHBBGDP != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.EAMJNHBBGDP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for SetGameplayBirthdayScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
-        if self.birthday != 0 {
-            os.write_uint32(11, self.birthday)?;
+        if self.EAMJNHBBGDP != 0 {
+            os.write_uint32(5, self.EAMJNHBBGDP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for SetGameplayBirthdayScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.birthday = 0;
+        self.EAMJNHBBGDP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetGameplayBirthdayScRsp {
         static instance: SetGameplayBirthdayScRsp = SetGameplayBirthdayScRsp {
             retcode: 0,
-            birthday: 0,
+            EAMJNHBBGDP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for SetGameplayBirthdayScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eSetGameplayBirthdayScRsp.proto\"P\n\x18SetGameplayBirthdayScRsp\
-    \x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x12\x1a\n\x08birthday\
-    \x18\x0b\x20\x01(\rR\x08birthdayB\x15\n\x13emu.lunarcore.protob\x06proto\
-    3\
+    \n\x1eSetGameplayBirthdayScRsp.proto\"V\n\x18SetGameplayBirthdayScRsp\
+    \x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcode\x12\x20\n\x0bEAMJNHBB\
+    GDP\x18\x05\x20\x01(\rR\x0bEAMJNHBBGDPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

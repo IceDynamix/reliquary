@@ -105,8 +105,8 @@ impl QuestStatus {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11QuestStatus.proto*c\n\x0bQuestStatus\x12\x0e\n\nQUEST_NONE\x10\0\
     \x12\x0f\n\x0bQUEST_DOING\x10\x01\x12\x10\n\x0cQUEST_FINISH\x10\x02\x12\
-    \x0f\n\x0bQUEST_CLOSE\x10\x03\x12\x10\n\x0cQUEST_DELETE\x10\x04B\x15\n\
-    \x13emu.lunarcore.protob\x06proto3\
+    \x0f\n\x0bQUEST_CLOSE\x10\x03\x12\x10\n\x0cQUEST_DELETE\x10\x04b\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

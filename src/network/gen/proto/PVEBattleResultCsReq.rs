@@ -29,24 +29,36 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PVEBattleResultCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PVEBattleResultCsReq.battle_id)
-    pub battle_id: u32,
-    // @@protoc_insertion_point(field:PVEBattleResultCsReq.client_res_version)
-    pub client_res_version: u32,
-    // @@protoc_insertion_point(field:PVEBattleResultCsReq.stage_id)
-    pub stage_id: u32,
-    // @@protoc_insertion_point(field:PVEBattleResultCsReq.end_status)
-    pub end_status: ::protobuf::EnumOrUnknown<super::BattleEndStatus::BattleEndStatus>,
-    // @@protoc_insertion_point(field:PVEBattleResultCsReq.cost_time)
-    pub cost_time: u32,
-    // @@protoc_insertion_point(field:PVEBattleResultCsReq.turn_snapshot_hash)
-    pub turn_snapshot_hash: ::std::vec::Vec<u8>,
-    // @@protoc_insertion_point(field:PVEBattleResultCsReq.op_list)
-    pub op_list: ::std::vec::Vec<super::BattleOp::BattleOp>,
-    // @@protoc_insertion_point(field:PVEBattleResultCsReq.stt)
-    pub stt: ::protobuf::MessageField<super::BattleStatistics::BattleStatistics>,
-    // @@protoc_insertion_point(field:PVEBattleResultCsReq.is_ai_consider_ultra_skill)
-    pub is_ai_consider_ultra_skill: bool,
+    // @@protoc_insertion_point(field:PVEBattleResultCsReq.LAOIGBICBAO)
+    pub LAOIGBICBAO: ::std::collections::HashMap<::std::string::String, u32>,
+    // @@protoc_insertion_point(field:PVEBattleResultCsReq.DBBKNBLOCAH)
+    pub DBBKNBLOCAH: u32,
+    // @@protoc_insertion_point(field:PVEBattleResultCsReq.MHFKKEAJPJI)
+    pub MHFKKEAJPJI: ::protobuf::EnumOrUnknown<super::MHNHDNOPKML::MHNHDNOPKML>,
+    // @@protoc_insertion_point(field:PVEBattleResultCsReq.KNFEGGDGFGC)
+    pub KNFEGGDGFGC: bool,
+    // @@protoc_insertion_point(field:PVEBattleResultCsReq.KBGEDOLPOIL)
+    pub KBGEDOLPOIL: u32,
+    // @@protoc_insertion_point(field:PVEBattleResultCsReq.IDIEPEFFGIC)
+    pub IDIEPEFFGIC: u32,
+    // @@protoc_insertion_point(field:PVEBattleResultCsReq.BNPJHJNLFDH)
+    pub BNPJHJNLFDH: bool,
+    // @@protoc_insertion_point(field:PVEBattleResultCsReq.IJEPENGMPLG)
+    pub IJEPENGMPLG: u32,
+    // @@protoc_insertion_point(field:PVEBattleResultCsReq.DDFLFFFIPIC)
+    pub DDFLFFFIPIC: ::protobuf::MessageField<super::GENDFBIMJBG::GENDFBIMJBG>,
+    // @@protoc_insertion_point(field:PVEBattleResultCsReq.LFDDAGOMEGB)
+    pub LFDDAGOMEGB: ::std::string::String,
+    // @@protoc_insertion_point(field:PVEBattleResultCsReq.FLJNOLCHBBC)
+    pub FLJNOLCHBBC: u32,
+    // @@protoc_insertion_point(field:PVEBattleResultCsReq.PFLLJAIGCLI)
+    pub PFLLJAIGCLI: ::std::vec::Vec<super::KGFGBNFOADO::KGFGBNFOADO>,
+    // @@protoc_insertion_point(field:PVEBattleResultCsReq.EJELPBGNINF)
+    pub EJELPBGNINF: u32,
+    // @@protoc_insertion_point(field:PVEBattleResultCsReq.PDAAJCKOAFF)
+    pub PDAAJCKOAFF: ::std::vec::Vec<u8>,
+    // @@protoc_insertion_point(field:PVEBattleResultCsReq.NKFMMKOBDBC)
+    pub NKFMMKOBDBC: bool,
     // special fields
     // @@protoc_insertion_point(special_field:PVEBattleResultCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,52 +76,82 @@ impl PVEBattleResultCsReq {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(9);
+        let mut fields = ::std::vec::Vec::with_capacity(15);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "battle_id",
-            |m: &PVEBattleResultCsReq| { &m.battle_id },
-            |m: &mut PVEBattleResultCsReq| { &mut m.battle_id },
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor::<_, _, _>(
+            "LAOIGBICBAO",
+            |m: &PVEBattleResultCsReq| { &m.LAOIGBICBAO },
+            |m: &mut PVEBattleResultCsReq| { &mut m.LAOIGBICBAO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "client_res_version",
-            |m: &PVEBattleResultCsReq| { &m.client_res_version },
-            |m: &mut PVEBattleResultCsReq| { &mut m.client_res_version },
+            "DBBKNBLOCAH",
+            |m: &PVEBattleResultCsReq| { &m.DBBKNBLOCAH },
+            |m: &mut PVEBattleResultCsReq| { &mut m.DBBKNBLOCAH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "stage_id",
-            |m: &PVEBattleResultCsReq| { &m.stage_id },
-            |m: &mut PVEBattleResultCsReq| { &mut m.stage_id },
+            "MHFKKEAJPJI",
+            |m: &PVEBattleResultCsReq| { &m.MHFKKEAJPJI },
+            |m: &mut PVEBattleResultCsReq| { &mut m.MHFKKEAJPJI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "end_status",
-            |m: &PVEBattleResultCsReq| { &m.end_status },
-            |m: &mut PVEBattleResultCsReq| { &mut m.end_status },
+            "KNFEGGDGFGC",
+            |m: &PVEBattleResultCsReq| { &m.KNFEGGDGFGC },
+            |m: &mut PVEBattleResultCsReq| { &mut m.KNFEGGDGFGC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cost_time",
-            |m: &PVEBattleResultCsReq| { &m.cost_time },
-            |m: &mut PVEBattleResultCsReq| { &mut m.cost_time },
+            "KBGEDOLPOIL",
+            |m: &PVEBattleResultCsReq| { &m.KBGEDOLPOIL },
+            |m: &mut PVEBattleResultCsReq| { &mut m.KBGEDOLPOIL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "turn_snapshot_hash",
-            |m: &PVEBattleResultCsReq| { &m.turn_snapshot_hash },
-            |m: &mut PVEBattleResultCsReq| { &mut m.turn_snapshot_hash },
+            "IDIEPEFFGIC",
+            |m: &PVEBattleResultCsReq| { &m.IDIEPEFFGIC },
+            |m: &mut PVEBattleResultCsReq| { &mut m.IDIEPEFFGIC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BNPJHJNLFDH",
+            |m: &PVEBattleResultCsReq| { &m.BNPJHJNLFDH },
+            |m: &mut PVEBattleResultCsReq| { &mut m.BNPJHJNLFDH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IJEPENGMPLG",
+            |m: &PVEBattleResultCsReq| { &m.IJEPENGMPLG },
+            |m: &mut PVEBattleResultCsReq| { &mut m.IJEPENGMPLG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GENDFBIMJBG::GENDFBIMJBG>(
+            "DDFLFFFIPIC",
+            |m: &PVEBattleResultCsReq| { &m.DDFLFFFIPIC },
+            |m: &mut PVEBattleResultCsReq| { &mut m.DDFLFFFIPIC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LFDDAGOMEGB",
+            |m: &PVEBattleResultCsReq| { &m.LFDDAGOMEGB },
+            |m: &mut PVEBattleResultCsReq| { &mut m.LFDDAGOMEGB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FLJNOLCHBBC",
+            |m: &PVEBattleResultCsReq| { &m.FLJNOLCHBBC },
+            |m: &mut PVEBattleResultCsReq| { &mut m.FLJNOLCHBBC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "op_list",
-            |m: &PVEBattleResultCsReq| { &m.op_list },
-            |m: &mut PVEBattleResultCsReq| { &mut m.op_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BattleStatistics::BattleStatistics>(
-            "stt",
-            |m: &PVEBattleResultCsReq| { &m.stt },
-            |m: &mut PVEBattleResultCsReq| { &mut m.stt },
+            "PFLLJAIGCLI",
+            |m: &PVEBattleResultCsReq| { &m.PFLLJAIGCLI },
+            |m: &mut PVEBattleResultCsReq| { &mut m.PFLLJAIGCLI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_ai_consider_ultra_skill",
-            |m: &PVEBattleResultCsReq| { &m.is_ai_consider_ultra_skill },
-            |m: &mut PVEBattleResultCsReq| { &mut m.is_ai_consider_ultra_skill },
+            "EJELPBGNINF",
+            |m: &PVEBattleResultCsReq| { &m.EJELPBGNINF },
+            |m: &mut PVEBattleResultCsReq| { &mut m.EJELPBGNINF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PDAAJCKOAFF",
+            |m: &PVEBattleResultCsReq| { &m.PDAAJCKOAFF },
+            |m: &mut PVEBattleResultCsReq| { &mut m.PDAAJCKOAFF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NKFMMKOBDBC",
+            |m: &PVEBattleResultCsReq| { &m.NKFMMKOBDBC },
+            |m: &mut PVEBattleResultCsReq| { &mut m.NKFMMKOBDBC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PVEBattleResultCsReq>(
             "PVEBattleResultCsReq",
@@ -129,32 +171,62 @@ impl ::protobuf::Message for PVEBattleResultCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.battle_id = is.read_uint32()?;
-                },
-                80 => {
-                    self.client_res_version = is.read_uint32()?;
-                },
-                40 => {
-                    self.stage_id = is.read_uint32()?;
-                },
-                8 => {
-                    self.end_status = is.read_enum_or_unknown()?;
-                },
-                104 => {
-                    self.cost_time = is.read_uint32()?;
-                },
-                66 => {
-                    self.turn_snapshot_hash = is.read_bytes()?;
-                },
-                50 => {
-                    self.op_list.push(is.read_message()?);
-                },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stt)?;
+                34 => {
+                    let len = is.read_raw_varint32()?;
+                    let old_limit = is.push_limit(len as u64)?;
+                    let mut key = ::std::default::Default::default();
+                    let mut value = ::std::default::Default::default();
+                    while let Some(tag) = is.read_raw_tag_or_eof()? {
+                        match tag {
+                            10 => key = is.read_string()?,
+                            16 => value = is.read_uint32()?,
+                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
+                        };
+                    }
+                    is.pop_limit(old_limit);
+                    self.LAOIGBICBAO.insert(key, value);
                 },
                 16 => {
-                    self.is_ai_consider_ultra_skill = is.read_bool()?;
+                    self.DBBKNBLOCAH = is.read_uint32()?;
+                },
+                72 => {
+                    self.MHFKKEAJPJI = is.read_enum_or_unknown()?;
+                },
+                120 => {
+                    self.KNFEGGDGFGC = is.read_bool()?;
+                },
+                104 => {
+                    self.KBGEDOLPOIL = is.read_uint32()?;
+                },
+                56 => {
+                    self.IDIEPEFFGIC = is.read_uint32()?;
+                },
+                88 => {
+                    self.BNPJHJNLFDH = is.read_bool()?;
+                },
+                8 => {
+                    self.IJEPENGMPLG = is.read_uint32()?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DDFLFFFIPIC)?;
+                },
+                42 => {
+                    self.LFDDAGOMEGB = is.read_string()?;
+                },
+                80 => {
+                    self.FLJNOLCHBBC = is.read_uint32()?;
+                },
+                26 => {
+                    self.PFLLJAIGCLI.push(is.read_message()?);
+                },
+                48 => {
+                    self.EJELPBGNINF = is.read_uint32()?;
+                },
+                98 => {
+                    self.PDAAJCKOAFF = is.read_bytes()?;
+                },
+                64 => {
+                    self.NKFMMKOBDBC = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -168,33 +240,54 @@ impl ::protobuf::Message for PVEBattleResultCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.battle_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.battle_id);
-        }
-        if self.client_res_version != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.client_res_version);
-        }
-        if self.stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.stage_id);
-        }
-        if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
-            my_size += ::protobuf::rt::int32_size(1, self.end_status.value());
-        }
-        if self.cost_time != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.cost_time);
-        }
-        if !self.turn_snapshot_hash.is_empty() {
-            my_size += ::protobuf::rt::bytes_size(8, &self.turn_snapshot_hash);
-        }
-        for value in &self.op_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        for (k, v) in &self.LAOIGBICBAO {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::string_size(1, &k);
+            entry_size += ::protobuf::rt::uint32_size(2, *v);
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if let Some(v) = self.stt.as_ref() {
+        if self.DBBKNBLOCAH != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.DBBKNBLOCAH);
+        }
+        if self.MHFKKEAJPJI != ::protobuf::EnumOrUnknown::new(super::MHNHDNOPKML::MHNHDNOPKML::BATTLE_END_NONE) {
+            my_size += ::protobuf::rt::int32_size(9, self.MHFKKEAJPJI.value());
+        }
+        if self.KNFEGGDGFGC != false {
+            my_size += 1 + 1;
+        }
+        if self.KBGEDOLPOIL != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.KBGEDOLPOIL);
+        }
+        if self.IDIEPEFFGIC != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.IDIEPEFFGIC);
+        }
+        if self.BNPJHJNLFDH != false {
+            my_size += 1 + 1;
+        }
+        if self.IJEPENGMPLG != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.IJEPENGMPLG);
+        }
+        if let Some(v) = self.DDFLFFFIPIC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.is_ai_consider_ultra_skill != false {
+        if !self.LFDDAGOMEGB.is_empty() {
+            my_size += ::protobuf::rt::string_size(5, &self.LFDDAGOMEGB);
+        }
+        if self.FLJNOLCHBBC != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.FLJNOLCHBBC);
+        }
+        for value in &self.PFLLJAIGCLI {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.EJELPBGNINF != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.EJELPBGNINF);
+        }
+        if !self.PDAAJCKOAFF.is_empty() {
+            my_size += ::protobuf::rt::bytes_size(12, &self.PDAAJCKOAFF);
+        }
+        if self.NKFMMKOBDBC != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -203,32 +296,56 @@ impl ::protobuf::Message for PVEBattleResultCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.battle_id != 0 {
-            os.write_uint32(9, self.battle_id)?;
-        }
-        if self.client_res_version != 0 {
-            os.write_uint32(10, self.client_res_version)?;
-        }
-        if self.stage_id != 0 {
-            os.write_uint32(5, self.stage_id)?;
-        }
-        if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.end_status))?;
-        }
-        if self.cost_time != 0 {
-            os.write_uint32(13, self.cost_time)?;
-        }
-        if !self.turn_snapshot_hash.is_empty() {
-            os.write_bytes(8, &self.turn_snapshot_hash)?;
-        }
-        for v in &self.op_list {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        for (k, v) in &self.LAOIGBICBAO {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::string_size(1, &k);
+            entry_size += ::protobuf::rt::uint32_size(2, *v);
+            os.write_raw_varint32(34)?; // Tag.
+            os.write_raw_varint32(entry_size as u32)?;
+            os.write_string(1, &k)?;
+            os.write_uint32(2, *v)?;
         };
-        if let Some(v) = self.stt.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if self.DBBKNBLOCAH != 0 {
+            os.write_uint32(2, self.DBBKNBLOCAH)?;
         }
-        if self.is_ai_consider_ultra_skill != false {
-            os.write_bool(2, self.is_ai_consider_ultra_skill)?;
+        if self.MHFKKEAJPJI != ::protobuf::EnumOrUnknown::new(super::MHNHDNOPKML::MHNHDNOPKML::BATTLE_END_NONE) {
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.MHFKKEAJPJI))?;
+        }
+        if self.KNFEGGDGFGC != false {
+            os.write_bool(15, self.KNFEGGDGFGC)?;
+        }
+        if self.KBGEDOLPOIL != 0 {
+            os.write_uint32(13, self.KBGEDOLPOIL)?;
+        }
+        if self.IDIEPEFFGIC != 0 {
+            os.write_uint32(7, self.IDIEPEFFGIC)?;
+        }
+        if self.BNPJHJNLFDH != false {
+            os.write_bool(11, self.BNPJHJNLFDH)?;
+        }
+        if self.IJEPENGMPLG != 0 {
+            os.write_uint32(1, self.IJEPENGMPLG)?;
+        }
+        if let Some(v) = self.DDFLFFFIPIC.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        }
+        if !self.LFDDAGOMEGB.is_empty() {
+            os.write_string(5, &self.LFDDAGOMEGB)?;
+        }
+        if self.FLJNOLCHBBC != 0 {
+            os.write_uint32(10, self.FLJNOLCHBBC)?;
+        }
+        for v in &self.PFLLJAIGCLI {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        };
+        if self.EJELPBGNINF != 0 {
+            os.write_uint32(6, self.EJELPBGNINF)?;
+        }
+        if !self.PDAAJCKOAFF.is_empty() {
+            os.write_bytes(12, &self.PDAAJCKOAFF)?;
+        }
+        if self.NKFMMKOBDBC != false {
+            os.write_bool(8, self.NKFMMKOBDBC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -247,32 +364,27 @@ impl ::protobuf::Message for PVEBattleResultCsReq {
     }
 
     fn clear(&mut self) {
-        self.battle_id = 0;
-        self.client_res_version = 0;
-        self.stage_id = 0;
-        self.end_status = ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE);
-        self.cost_time = 0;
-        self.turn_snapshot_hash.clear();
-        self.op_list.clear();
-        self.stt.clear();
-        self.is_ai_consider_ultra_skill = false;
+        self.LAOIGBICBAO.clear();
+        self.DBBKNBLOCAH = 0;
+        self.MHFKKEAJPJI = ::protobuf::EnumOrUnknown::new(super::MHNHDNOPKML::MHNHDNOPKML::BATTLE_END_NONE);
+        self.KNFEGGDGFGC = false;
+        self.KBGEDOLPOIL = 0;
+        self.IDIEPEFFGIC = 0;
+        self.BNPJHJNLFDH = false;
+        self.IJEPENGMPLG = 0;
+        self.DDFLFFFIPIC.clear();
+        self.LFDDAGOMEGB.clear();
+        self.FLJNOLCHBBC = 0;
+        self.PFLLJAIGCLI.clear();
+        self.EJELPBGNINF = 0;
+        self.PDAAJCKOAFF.clear();
+        self.NKFMMKOBDBC = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PVEBattleResultCsReq {
-        static instance: PVEBattleResultCsReq = PVEBattleResultCsReq {
-            battle_id: 0,
-            client_res_version: 0,
-            stage_id: 0,
-            end_status: ::protobuf::EnumOrUnknown::from_i32(0),
-            cost_time: 0,
-            turn_snapshot_hash: ::std::vec::Vec::new(),
-            op_list: ::std::vec::Vec::new(),
-            stt: ::protobuf::MessageField::none(),
-            is_ai_consider_ultra_skill: false,
-            special_fields: ::protobuf::SpecialFields::new(),
-        };
-        &instance
+        static instance: ::protobuf::rt::Lazy<PVEBattleResultCsReq> = ::protobuf::rt::Lazy::new();
+        instance.get(PVEBattleResultCsReq::new)
     }
 }
 
@@ -294,17 +406,24 @@ impl ::protobuf::reflect::ProtobufValue for PVEBattleResultCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aPVEBattleResultCsReq.proto\x1a\x15BattleEndStatus.proto\x1a\x0eBat\
-    tleOp.proto\x1a\x16BattleStatistics.proto\"\xfd\x02\n\x14PVEBattleResult\
-    CsReq\x12\x1b\n\tbattle_id\x18\t\x20\x01(\rR\x08battleId\x12,\n\x12clien\
-    t_res_version\x18\n\x20\x01(\rR\x10clientResVersion\x12\x19\n\x08stage_i\
-    d\x18\x05\x20\x01(\rR\x07stageId\x12/\n\nend_status\x18\x01\x20\x01(\x0e\
-    2\x10.BattleEndStatusR\tendStatus\x12\x1b\n\tcost_time\x18\r\x20\x01(\rR\
-    \x08costTime\x12,\n\x12turn_snapshot_hash\x18\x08\x20\x01(\x0cR\x10turnS\
-    napshotHash\x12\"\n\x07op_list\x18\x06\x20\x03(\x0b2\t.BattleOpR\x06opLi\
-    st\x12#\n\x03stt\x18\x0c\x20\x01(\x0b2\x11.BattleStatisticsR\x03stt\x12:\
-    \n\x1ais_ai_consider_ultra_skill\x18\x02\x20\x01(\x08R\x16isAiConsiderUl\
-    traSkillB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x1aPVEBattleResultCsReq.proto\x1a\x11GENDFBIMJBG.proto\x1a\x11KGFGBNF\
+    OADO.proto\x1a\x11MHNHDNOPKML.proto\"\xa6\x05\n\x14PVEBattleResultCsReq\
+    \x12H\n\x0bLAOIGBICBAO\x18\x04\x20\x03(\x0b2&.PVEBattleResultCsReq.LAOIG\
+    BICBAOEntryR\x0bLAOIGBICBAO\x12\x20\n\x0bDBBKNBLOCAH\x18\x02\x20\x01(\rR\
+    \x0bDBBKNBLOCAH\x12.\n\x0bMHFKKEAJPJI\x18\t\x20\x01(\x0e2\x0c.MHNHDNOPKM\
+    LR\x0bMHFKKEAJPJI\x12\x20\n\x0bKNFEGGDGFGC\x18\x0f\x20\x01(\x08R\x0bKNFE\
+    GGDGFGC\x12\x20\n\x0bKBGEDOLPOIL\x18\r\x20\x01(\rR\x0bKBGEDOLPOIL\x12\
+    \x20\n\x0bIDIEPEFFGIC\x18\x07\x20\x01(\rR\x0bIDIEPEFFGIC\x12\x20\n\x0bBN\
+    PJHJNLFDH\x18\x0b\x20\x01(\x08R\x0bBNPJHJNLFDH\x12\x20\n\x0bIJEPENGMPLG\
+    \x18\x01\x20\x01(\rR\x0bIJEPENGMPLG\x12.\n\x0bDDFLFFFIPIC\x18\x0e\x20\
+    \x01(\x0b2\x0c.GENDFBIMJBGR\x0bDDFLFFFIPIC\x12\x20\n\x0bLFDDAGOMEGB\x18\
+    \x05\x20\x01(\tR\x0bLFDDAGOMEGB\x12\x20\n\x0bFLJNOLCHBBC\x18\n\x20\x01(\
+    \rR\x0bFLJNOLCHBBC\x12.\n\x0bPFLLJAIGCLI\x18\x03\x20\x03(\x0b2\x0c.KGFGB\
+    NFOADOR\x0bPFLLJAIGCLI\x12\x20\n\x0bEJELPBGNINF\x18\x06\x20\x01(\rR\x0bE\
+    JELPBGNINF\x12\x20\n\x0bPDAAJCKOAFF\x18\x0c\x20\x01(\x0cR\x0bPDAAJCKOAFF\
+    \x12\x20\n\x0bNKFMMKOBDBC\x18\x08\x20\x01(\x08R\x0bNKFMMKOBDBC\x1a>\n\
+    \x10LAOIGBICBAOEntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03key\x12\x14\
+    \n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -322,9 +441,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::BattleEndStatus::file_descriptor().clone());
-            deps.push(super::BattleOp::file_descriptor().clone());
-            deps.push(super::BattleStatistics::file_descriptor().clone());
+            deps.push(super::GENDFBIMJBG::file_descriptor().clone());
+            deps.push(super::KGFGBNFOADO::file_descriptor().clone());
+            deps.push(super::MHNHDNOPKML::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PVEBattleResultCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

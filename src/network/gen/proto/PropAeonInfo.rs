@@ -87,13 +87,13 @@ impl ::protobuf::Message for PropAeonInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                88 => {
                     self.dialogue_group_id = is.read_uint32()?;
                 },
-                24 => {
+                96 => {
                     self.aeon_id = is.read_uint32()?;
                 },
-                112 => {
+                24 => {
                     self.add_exp = is.read_uint32()?;
                 },
                 tag => {
@@ -109,13 +109,13 @@ impl ::protobuf::Message for PropAeonInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.dialogue_group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.dialogue_group_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.dialogue_group_id);
         }
         if self.aeon_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.aeon_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.aeon_id);
         }
         if self.add_exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.add_exp);
+            my_size += ::protobuf::rt::uint32_size(3, self.add_exp);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for PropAeonInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.dialogue_group_id != 0 {
-            os.write_uint32(10, self.dialogue_group_id)?;
+            os.write_uint32(11, self.dialogue_group_id)?;
         }
         if self.aeon_id != 0 {
-            os.write_uint32(3, self.aeon_id)?;
+            os.write_uint32(12, self.aeon_id)?;
         }
         if self.add_exp != 0 {
-            os.write_uint32(14, self.add_exp)?;
+            os.write_uint32(3, self.add_exp)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for PropAeonInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12PropAeonInfo.proto\"l\n\x0cPropAeonInfo\x12*\n\x11dialogue_group_i\
-    d\x18\n\x20\x01(\rR\x0fdialogueGroupId\x12\x17\n\x07aeon_id\x18\x03\x20\
-    \x01(\rR\x06aeonId\x12\x17\n\x07add_exp\x18\x0e\x20\x01(\rR\x06addExpB\
-    \x15\n\x13emu.lunarcore.protob\x06proto3\
+    d\x18\x0b\x20\x01(\rR\x0fdialogueGroupId\x12\x17\n\x07aeon_id\x18\x0c\
+    \x20\x01(\rR\x06aeonId\x12\x17\n\x07add_exp\x18\x03\x20\x01(\rR\x06addEx\
+    pb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,10 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SearchPlayerScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SearchPlayerScRsp.search_result_list)
-    pub search_result_list: ::std::vec::Vec<super::SimpleInfo::SimpleInfo>,
     // @@protoc_insertion_point(field:SearchPlayerScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:SearchPlayerScRsp.BHIOPKFEMCK)
+    pub BHIOPKFEMCK: ::std::vec::Vec<super::BOENKOAFFPJ::BOENKOAFFPJ>,
+    // @@protoc_insertion_point(field:SearchPlayerScRsp.PEIFPGNGJGK)
+    pub PEIFPGNGJGK: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:SearchPlayerScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,17 +52,22 @@ impl SearchPlayerScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "search_result_list",
-            |m: &SearchPlayerScRsp| { &m.search_result_list },
-            |m: &mut SearchPlayerScRsp| { &mut m.search_result_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &SearchPlayerScRsp| { &m.retcode },
             |m: &mut SearchPlayerScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "BHIOPKFEMCK",
+            |m: &SearchPlayerScRsp| { &m.BHIOPKFEMCK },
+            |m: &mut SearchPlayerScRsp| { &mut m.BHIOPKFEMCK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PEIFPGNGJGK",
+            |m: &SearchPlayerScRsp| { &m.PEIFPGNGJGK },
+            |m: &mut SearchPlayerScRsp| { &mut m.PEIFPGNGJGK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SearchPlayerScRsp>(
             "SearchPlayerScRsp",
@@ -80,11 +87,17 @@ impl ::protobuf::Message for SearchPlayerScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    self.search_result_list.push(is.read_message()?);
-                },
-                72 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
+                },
+                98 => {
+                    self.BHIOPKFEMCK.push(is.read_message()?);
+                },
+                10 => {
+                    is.read_repeated_packed_uint32_into(&mut self.PEIFPGNGJGK)?;
+                },
+                8 => {
+                    self.PEIFPGNGJGK.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,25 +111,31 @@ impl ::protobuf::Message for SearchPlayerScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.search_result_list {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+        }
+        for value in &self.BHIOPKFEMCK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
-        }
+        for value in &self.PEIFPGNGJGK {
+            my_size += ::protobuf::rt::uint32_size(1, *value);
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.search_result_list {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
+        for v in &self.BHIOPKFEMCK {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        };
+        for v in &self.PEIFPGNGJGK {
+            os.write_uint32(1, *v)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -134,15 +153,17 @@ impl ::protobuf::Message for SearchPlayerScRsp {
     }
 
     fn clear(&mut self) {
-        self.search_result_list.clear();
         self.retcode = 0;
+        self.BHIOPKFEMCK.clear();
+        self.PEIFPGNGJGK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SearchPlayerScRsp {
         static instance: SearchPlayerScRsp = SearchPlayerScRsp {
-            search_result_list: ::std::vec::Vec::new(),
             retcode: 0,
+            BHIOPKFEMCK: ::std::vec::Vec::new(),
+            PEIFPGNGJGK: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +188,10 @@ impl ::protobuf::reflect::ProtobufValue for SearchPlayerScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17SearchPlayerScRsp.proto\x1a\x10SimpleInfo.proto\"h\n\x11SearchPlay\
-    erScRsp\x129\n\x12search_result_list\x18\x0b\x20\x03(\x0b2\x0b.SimpleInf\
-    oR\x10searchResultList\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\
-    B\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x17SearchPlayerScRsp.proto\x1a\x11BOENKOAFFPJ.proto\"\x7f\n\x11Search\
+    PlayerScRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12.\n\
+    \x0bBHIOPKFEMCK\x18\x0c\x20\x03(\x0b2\x0c.BOENKOAFFPJR\x0bBHIOPKFEMCK\
+    \x12\x20\n\x0bPEIFPGNGJGK\x18\x01\x20\x03(\rR\x0bPEIFPGNGJGKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +209,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::SimpleInfo::file_descriptor().clone());
+            deps.push(super::BOENKOAFFPJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SearchPlayerScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

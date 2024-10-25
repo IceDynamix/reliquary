@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ExpUpEquipmentScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ExpUpEquipmentScRsp.return_item_list)
-    pub return_item_list: ::std::vec::Vec<super::PileItem::PileItem>,
+    // @@protoc_insertion_point(field:ExpUpEquipmentScRsp.JIBNMFNHKLD)
+    pub JIBNMFNHKLD: ::std::vec::Vec<super::PileItem::PileItem>,
     // @@protoc_insertion_point(field:ExpUpEquipmentScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -53,9 +53,9 @@ impl ExpUpEquipmentScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "return_item_list",
-            |m: &ExpUpEquipmentScRsp| { &m.return_item_list },
-            |m: &mut ExpUpEquipmentScRsp| { &mut m.return_item_list },
+            "JIBNMFNHKLD",
+            |m: &ExpUpEquipmentScRsp| { &m.JIBNMFNHKLD },
+            |m: &mut ExpUpEquipmentScRsp| { &mut m.JIBNMFNHKLD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for ExpUpEquipmentScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.return_item_list.push(is.read_message()?);
+                34 => {
+                    self.JIBNMFNHKLD.push(is.read_message()?);
                 },
-                120 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -98,12 +98,12 @@ impl ::protobuf::Message for ExpUpEquipmentScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.return_item_list {
+        for value in &self.JIBNMFNHKLD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for ExpUpEquipmentScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.return_item_list {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        for v in &self.JIBNMFNHKLD {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for ExpUpEquipmentScRsp {
     }
 
     fn clear(&mut self) {
-        self.return_item_list.clear();
+        self.JIBNMFNHKLD.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ExpUpEquipmentScRsp {
         static instance: ExpUpEquipmentScRsp = ExpUpEquipmentScRsp {
-            return_item_list: ::std::vec::Vec::new(),
+            JIBNMFNHKLD: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -167,10 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for ExpUpEquipmentScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19ExpUpEquipmentScRsp.proto\x1a\x0ePileItem.proto\"d\n\x13ExpUpEquip\
-    mentScRsp\x123\n\x10return_item_list\x18\x05\x20\x03(\x0b2\t.PileItemR\
-    \x0ereturnItemList\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcodeB\
-    \x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x19ExpUpEquipmentScRsp.proto\x1a\x0ePileItem.proto\"\\\n\x13ExpUpEqui\
+    pmentScRsp\x12+\n\x0bJIBNMFNHKLD\x18\x04\x20\x03(\x0b2\t.PileItemR\x0bJI\
+    BNMFNHKLD\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

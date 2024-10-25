@@ -29,10 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LockRelicCsReq {
     // message fields
-    // @@protoc_insertion_point(field:LockRelicCsReq.relic_id_list)
-    pub relic_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:LockRelicCsReq.is_protected)
-    pub is_protected: bool,
+    // @@protoc_insertion_point(field:LockRelicCsReq.HMEAMPPNFDG)
+    pub HMEAMPPNFDG: bool,
+    // @@protoc_insertion_point(field:LockRelicCsReq.EAMLKLABFBO)
+    pub EAMLKLABFBO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:LockRelicCsReq.OKKJFIBNGCE)
+    pub OKKJFIBNGCE: bool,
     // special fields
     // @@protoc_insertion_point(special_field:LockRelicCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,17 +52,22 @@ impl LockRelicCsReq {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HMEAMPPNFDG",
+            |m: &LockRelicCsReq| { &m.HMEAMPPNFDG },
+            |m: &mut LockRelicCsReq| { &mut m.HMEAMPPNFDG },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "relic_id_list",
-            |m: &LockRelicCsReq| { &m.relic_id_list },
-            |m: &mut LockRelicCsReq| { &mut m.relic_id_list },
+            "EAMLKLABFBO",
+            |m: &LockRelicCsReq| { &m.EAMLKLABFBO },
+            |m: &mut LockRelicCsReq| { &mut m.EAMLKLABFBO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_protected",
-            |m: &LockRelicCsReq| { &m.is_protected },
-            |m: &mut LockRelicCsReq| { &mut m.is_protected },
+            "OKKJFIBNGCE",
+            |m: &LockRelicCsReq| { &m.OKKJFIBNGCE },
+            |m: &mut LockRelicCsReq| { &mut m.OKKJFIBNGCE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LockRelicCsReq>(
             "LockRelicCsReq",
@@ -80,14 +87,17 @@ impl ::protobuf::Message for LockRelicCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.relic_id_list)?;
+                104 => {
+                    self.HMEAMPPNFDG = is.read_bool()?;
                 },
-                32 => {
-                    self.relic_id_list.push(is.read_uint32()?);
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.EAMLKLABFBO)?;
                 },
-                40 => {
-                    self.is_protected = is.read_bool()?;
+                64 => {
+                    self.EAMLKLABFBO.push(is.read_uint32()?);
+                },
+                16 => {
+                    self.OKKJFIBNGCE = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,10 +111,13 @@ impl ::protobuf::Message for LockRelicCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.relic_id_list {
-            my_size += ::protobuf::rt::uint32_size(4, *value);
+        if self.HMEAMPPNFDG != false {
+            my_size += 1 + 1;
+        }
+        for value in &self.EAMLKLABFBO {
+            my_size += ::protobuf::rt::uint32_size(8, *value);
         };
-        if self.is_protected != false {
+        if self.OKKJFIBNGCE != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -113,11 +126,14 @@ impl ::protobuf::Message for LockRelicCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.relic_id_list {
-            os.write_uint32(4, *v)?;
+        if self.HMEAMPPNFDG != false {
+            os.write_bool(13, self.HMEAMPPNFDG)?;
+        }
+        for v in &self.EAMLKLABFBO {
+            os.write_uint32(8, *v)?;
         };
-        if self.is_protected != false {
-            os.write_bool(5, self.is_protected)?;
+        if self.OKKJFIBNGCE != false {
+            os.write_bool(2, self.OKKJFIBNGCE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -136,15 +152,17 @@ impl ::protobuf::Message for LockRelicCsReq {
     }
 
     fn clear(&mut self) {
-        self.relic_id_list.clear();
-        self.is_protected = false;
+        self.HMEAMPPNFDG = false;
+        self.EAMLKLABFBO.clear();
+        self.OKKJFIBNGCE = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LockRelicCsReq {
         static instance: LockRelicCsReq = LockRelicCsReq {
-            relic_id_list: ::std::vec::Vec::new(),
-            is_protected: false,
+            HMEAMPPNFDG: false,
+            EAMLKLABFBO: ::std::vec::Vec::new(),
+            OKKJFIBNGCE: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -169,9 +187,10 @@ impl ::protobuf::reflect::ProtobufValue for LockRelicCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14LockRelicCsReq.proto\"W\n\x0eLockRelicCsReq\x12\"\n\rrelic_id_list\
-    \x18\x04\x20\x03(\rR\x0brelicIdList\x12!\n\x0cis_protected\x18\x05\x20\
-    \x01(\x08R\x0bisProtectedB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x14LockRelicCsReq.proto\"v\n\x0eLockRelicCsReq\x12\x20\n\x0bHMEAMPPNF\
+    DG\x18\r\x20\x01(\x08R\x0bHMEAMPPNFDG\x12\x20\n\x0bEAMLKLABFBO\x18\x08\
+    \x20\x03(\rR\x0bEAMLKLABFBO\x12\x20\n\x0bOKKJFIBNGCE\x18\x02\x20\x01(\
+    \x08R\x0bOKKJFIBNGCEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

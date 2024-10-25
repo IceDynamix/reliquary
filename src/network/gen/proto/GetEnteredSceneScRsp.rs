@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetEnteredSceneScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetEnteredSceneScRsp.entered_scene_info)
-    pub entered_scene_info: ::std::vec::Vec<super::EnteredSceneInfo::EnteredSceneInfo>,
     // @@protoc_insertion_point(field:GetEnteredSceneScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetEnteredSceneScRsp.KADKPCCFGBI)
+    pub KADKPCCFGBI: ::std::vec::Vec<super::PFDDBBCICJJ::PFDDBBCICJJ>,
     // special fields
     // @@protoc_insertion_point(special_field:GetEnteredSceneScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl GetEnteredSceneScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "entered_scene_info",
-            |m: &GetEnteredSceneScRsp| { &m.entered_scene_info },
-            |m: &mut GetEnteredSceneScRsp| { &mut m.entered_scene_info },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetEnteredSceneScRsp| { &m.retcode },
             |m: &mut GetEnteredSceneScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "KADKPCCFGBI",
+            |m: &GetEnteredSceneScRsp| { &m.KADKPCCFGBI },
+            |m: &mut GetEnteredSceneScRsp| { &mut m.KADKPCCFGBI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetEnteredSceneScRsp>(
             "GetEnteredSceneScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for GetEnteredSceneScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    self.entered_scene_info.push(is.read_message()?);
-                },
-                64 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
+                },
+                114 => {
+                    self.KADKPCCFGBI.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,25 +98,25 @@ impl ::protobuf::Message for GetEnteredSceneScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.entered_scene_info {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+        }
+        for value in &self.KADKPCCFGBI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.entered_scene_info {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
+        for v in &self.KADKPCCFGBI {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -134,15 +134,15 @@ impl ::protobuf::Message for GetEnteredSceneScRsp {
     }
 
     fn clear(&mut self) {
-        self.entered_scene_info.clear();
         self.retcode = 0;
+        self.KADKPCCFGBI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetEnteredSceneScRsp {
         static instance: GetEnteredSceneScRsp = GetEnteredSceneScRsp {
-            entered_scene_info: ::std::vec::Vec::new(),
             retcode: 0,
+            KADKPCCFGBI: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for GetEnteredSceneScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aGetEnteredSceneScRsp.proto\x1a\x16EnteredSceneInfo.proto\"q\n\x14G\
-    etEnteredSceneScRsp\x12?\n\x12entered_scene_info\x18\t\x20\x03(\x0b2\x11\
-    .EnteredSceneInfoR\x10enteredSceneInfo\x12\x18\n\x07retcode\x18\x08\x20\
-    \x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x1aGetEnteredSceneScRsp.proto\x1a\x11PFDDBBCICJJ.proto\"`\n\x14GetEnt\
+    eredSceneScRsp\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12.\
+    \n\x0bKADKPCCFGBI\x18\x0e\x20\x03(\x0b2\x0c.PFDDBBCICJJR\x0bKADKPCCFGBIb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::EnteredSceneInfo::file_descriptor().clone());
+            deps.push(super::PFDDBBCICJJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetEnteredSceneScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

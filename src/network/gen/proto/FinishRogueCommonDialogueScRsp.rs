@@ -31,8 +31,8 @@ pub struct FinishRogueCommonDialogueScRsp {
     // message fields
     // @@protoc_insertion_point(field:FinishRogueCommonDialogueScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:FinishRogueCommonDialogueScRsp.event_unique_id)
-    pub event_unique_id: u32,
+    // @@protoc_insertion_point(field:FinishRogueCommonDialogueScRsp.BIJDBCMDPPF)
+    pub BIJDBCMDPPF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FinishRogueCommonDialogueScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,9 +58,9 @@ impl FinishRogueCommonDialogueScRsp {
             |m: &mut FinishRogueCommonDialogueScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "event_unique_id",
-            |m: &FinishRogueCommonDialogueScRsp| { &m.event_unique_id },
-            |m: &mut FinishRogueCommonDialogueScRsp| { &mut m.event_unique_id },
+            "BIJDBCMDPPF",
+            |m: &FinishRogueCommonDialogueScRsp| { &m.BIJDBCMDPPF },
+            |m: &mut FinishRogueCommonDialogueScRsp| { &mut m.BIJDBCMDPPF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishRogueCommonDialogueScRsp>(
             "FinishRogueCommonDialogueScRsp",
@@ -83,8 +83,8 @@ impl ::protobuf::Message for FinishRogueCommonDialogueScRsp {
                 104 => {
                     self.retcode = is.read_uint32()?;
                 },
-                24 => {
-                    self.event_unique_id = is.read_uint32()?;
+                120 => {
+                    self.BIJDBCMDPPF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,8 +101,8 @@ impl ::protobuf::Message for FinishRogueCommonDialogueScRsp {
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
-        if self.event_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.event_unique_id);
+        if self.BIJDBCMDPPF != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.BIJDBCMDPPF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,8 +113,8 @@ impl ::protobuf::Message for FinishRogueCommonDialogueScRsp {
         if self.retcode != 0 {
             os.write_uint32(13, self.retcode)?;
         }
-        if self.event_unique_id != 0 {
-            os.write_uint32(3, self.event_unique_id)?;
+        if self.BIJDBCMDPPF != 0 {
+            os.write_uint32(15, self.BIJDBCMDPPF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for FinishRogueCommonDialogueScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.event_unique_id = 0;
+        self.BIJDBCMDPPF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishRogueCommonDialogueScRsp {
         static instance: FinishRogueCommonDialogueScRsp = FinishRogueCommonDialogueScRsp {
             retcode: 0,
-            event_unique_id: 0,
+            BIJDBCMDPPF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for FinishRogueCommonDialogueScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$FinishRogueCommonDialogueScRsp.proto\"b\n\x1eFinishRogueCommonDialogu\
-    eScRsp\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x12&\n\x0fevent\
-    _unique_id\x18\x03\x20\x01(\rR\reventUniqueIdB\x15\n\x13emu.lunarcore.pr\
-    otob\x06proto3\
+    \n$FinishRogueCommonDialogueScRsp.proto\"\\\n\x1eFinishRogueCommonDialog\
+    ueScRsp\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x12\x20\n\x0bB\
+    IJDBCMDPPF\x18\x0f\x20\x01(\rR\x0bBIJDBCMDPPFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

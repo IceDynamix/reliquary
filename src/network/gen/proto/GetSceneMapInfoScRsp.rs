@@ -29,10 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetSceneMapInfoScRsp {
     // message fields
+    // @@protoc_insertion_point(field:GetSceneMapInfoScRsp.JJELCOFADEO)
+    pub JJELCOFADEO: ::std::vec::Vec<super::FFKOBEKEBGK::FFKOBEKEBGK>,
+    // @@protoc_insertion_point(field:GetSceneMapInfoScRsp.PNFPBICGDPC)
+    pub PNFPBICGDPC: bool,
     // @@protoc_insertion_point(field:GetSceneMapInfoScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetSceneMapInfoScRsp.map_list)
-    pub map_list: ::std::vec::Vec<super::MazeMapData::MazeMapData>,
     // special fields
     // @@protoc_insertion_point(special_field:GetSceneMapInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,17 +52,22 @@ impl GetSceneMapInfoScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "JJELCOFADEO",
+            |m: &GetSceneMapInfoScRsp| { &m.JJELCOFADEO },
+            |m: &mut GetSceneMapInfoScRsp| { &mut m.JJELCOFADEO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PNFPBICGDPC",
+            |m: &GetSceneMapInfoScRsp| { &m.PNFPBICGDPC },
+            |m: &mut GetSceneMapInfoScRsp| { &mut m.PNFPBICGDPC },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetSceneMapInfoScRsp| { &m.retcode },
             |m: &mut GetSceneMapInfoScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "map_list",
-            |m: &GetSceneMapInfoScRsp| { &m.map_list },
-            |m: &mut GetSceneMapInfoScRsp| { &mut m.map_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetSceneMapInfoScRsp>(
             "GetSceneMapInfoScRsp",
@@ -80,11 +87,14 @@ impl ::protobuf::Message for GetSceneMapInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                66 => {
+                    self.JJELCOFADEO.push(is.read_message()?);
+                },
+                40 => {
+                    self.PNFPBICGDPC = is.read_bool()?;
+                },
                 72 => {
                     self.retcode = is.read_uint32()?;
-                },
-                42 => {
-                    self.map_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,25 +108,31 @@ impl ::protobuf::Message for GetSceneMapInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
-        }
-        for value in &self.map_list {
+        for value in &self.JJELCOFADEO {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.PNFPBICGDPC != false {
+            my_size += 1 + 1;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        for v in &self.JJELCOFADEO {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        };
+        if self.PNFPBICGDPC != false {
+            os.write_bool(5, self.PNFPBICGDPC)?;
+        }
         if self.retcode != 0 {
             os.write_uint32(9, self.retcode)?;
         }
-        for v in &self.map_list {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -134,15 +150,17 @@ impl ::protobuf::Message for GetSceneMapInfoScRsp {
     }
 
     fn clear(&mut self) {
+        self.JJELCOFADEO.clear();
+        self.PNFPBICGDPC = false;
         self.retcode = 0;
-        self.map_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetSceneMapInfoScRsp {
         static instance: GetSceneMapInfoScRsp = GetSceneMapInfoScRsp {
+            JJELCOFADEO: ::std::vec::Vec::new(),
+            PNFPBICGDPC: false,
             retcode: 0,
-            map_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for GetSceneMapInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aGetSceneMapInfoScRsp.proto\x1a\x11MazeMapData.proto\"Y\n\x14GetSce\
-    neMapInfoScRsp\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x12'\n\
-    \x08map_list\x18\x05\x20\x03(\x0b2\x0c.MazeMapDataR\x07mapListB\x15\n\
-    \x13emu.lunarcore.protob\x06proto3\
+    \n\x1aGetSceneMapInfoScRsp.proto\x1a\x11FFKOBEKEBGK.proto\"\x82\x01\n\
+    \x14GetSceneMapInfoScRsp\x12.\n\x0bJJELCOFADEO\x18\x08\x20\x03(\x0b2\x0c\
+    .FFKOBEKEBGKR\x0bJJELCOFADEO\x12\x20\n\x0bPNFPBICGDPC\x18\x05\x20\x01(\
+    \x08R\x0bPNFPBICGDPC\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcodeb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::MazeMapData::file_descriptor().clone());
+            deps.push(super::FFKOBEKEBGK::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetSceneMapInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

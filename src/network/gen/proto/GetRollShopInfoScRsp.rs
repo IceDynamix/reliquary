@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetRollShopInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetRollShopInfoScRsp.roll_shop_id)
-    pub roll_shop_id: u32,
+    // @@protoc_insertion_point(field:GetRollShopInfoScRsp.ILHKNOBHDBE)
+    pub ILHKNOBHDBE: u32,
+    // @@protoc_insertion_point(field:GetRollShopInfoScRsp.OKHEIOJFJKP)
+    pub OKHEIOJFJKP: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetRollShopInfoScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetRollShopInfoScRsp.DLPBJMPECFC)
-    pub DLPBJMPECFC: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetRollShopInfoScRsp.BBJIJINJAFK)
-    pub BBJIJINJAFK: u32,
+    // @@protoc_insertion_point(field:GetRollShopInfoScRsp.NEIKAIFGMFA)
+    pub NEIKAIFGMFA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetRollShopInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl GetRollShopInfoScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "roll_shop_id",
-            |m: &GetRollShopInfoScRsp| { &m.roll_shop_id },
-            |m: &mut GetRollShopInfoScRsp| { &mut m.roll_shop_id },
+            "ILHKNOBHDBE",
+            |m: &GetRollShopInfoScRsp| { &m.ILHKNOBHDBE },
+            |m: &mut GetRollShopInfoScRsp| { &mut m.ILHKNOBHDBE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OKHEIOJFJKP",
+            |m: &GetRollShopInfoScRsp| { &m.OKHEIOJFJKP },
+            |m: &mut GetRollShopInfoScRsp| { &mut m.OKHEIOJFJKP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetRollShopInfoScRsp| { &m.retcode },
             |m: &mut GetRollShopInfoScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DLPBJMPECFC",
-            |m: &GetRollShopInfoScRsp| { &m.DLPBJMPECFC },
-            |m: &mut GetRollShopInfoScRsp| { &mut m.DLPBJMPECFC },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BBJIJINJAFK",
-            |m: &GetRollShopInfoScRsp| { &m.BBJIJINJAFK },
-            |m: &mut GetRollShopInfoScRsp| { &mut m.BBJIJINJAFK },
+            "NEIKAIFGMFA",
+            |m: &GetRollShopInfoScRsp| { &m.NEIKAIFGMFA },
+            |m: &mut GetRollShopInfoScRsp| { &mut m.NEIKAIFGMFA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetRollShopInfoScRsp>(
             "GetRollShopInfoScRsp",
@@ -94,20 +94,20 @@ impl ::protobuf::Message for GetRollShopInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.roll_shop_id = is.read_uint32()?;
+                32 => {
+                    self.ILHKNOBHDBE = is.read_uint32()?;
                 },
-                64 => {
+                114 => {
+                    is.read_repeated_packed_uint32_into(&mut self.OKHEIOJFJKP)?;
+                },
+                112 => {
+                    self.OKHEIOJFJKP.push(is.read_uint32()?);
+                },
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.DLPBJMPECFC)?;
-                },
-                88 => {
-                    self.DLPBJMPECFC.push(is.read_uint32()?);
-                },
-                24 => {
-                    self.BBJIJINJAFK = is.read_uint32()?;
+                72 => {
+                    self.NEIKAIFGMFA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,17 +121,17 @@ impl ::protobuf::Message for GetRollShopInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.roll_shop_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.roll_shop_id);
+        if self.ILHKNOBHDBE != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.ILHKNOBHDBE);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
-        }
-        for value in &self.DLPBJMPECFC {
-            my_size += ::protobuf::rt::uint32_size(11, *value);
+        for value in &self.OKHEIOJFJKP {
+            my_size += ::protobuf::rt::uint32_size(14, *value);
         };
-        if self.BBJIJINJAFK != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.BBJIJINJAFK);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+        }
+        if self.NEIKAIFGMFA != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.NEIKAIFGMFA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -139,17 +139,17 @@ impl ::protobuf::Message for GetRollShopInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.roll_shop_id != 0 {
-            os.write_uint32(15, self.roll_shop_id)?;
+        if self.ILHKNOBHDBE != 0 {
+            os.write_uint32(4, self.ILHKNOBHDBE)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
-        }
-        for v in &self.DLPBJMPECFC {
-            os.write_uint32(11, *v)?;
+        for v in &self.OKHEIOJFJKP {
+            os.write_uint32(14, *v)?;
         };
-        if self.BBJIJINJAFK != 0 {
-            os.write_uint32(3, self.BBJIJINJAFK)?;
+        if self.retcode != 0 {
+            os.write_uint32(10, self.retcode)?;
+        }
+        if self.NEIKAIFGMFA != 0 {
+            os.write_uint32(9, self.NEIKAIFGMFA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,19 +168,19 @@ impl ::protobuf::Message for GetRollShopInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.roll_shop_id = 0;
+        self.ILHKNOBHDBE = 0;
+        self.OKHEIOJFJKP.clear();
         self.retcode = 0;
-        self.DLPBJMPECFC.clear();
-        self.BBJIJINJAFK = 0;
+        self.NEIKAIFGMFA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetRollShopInfoScRsp {
         static instance: GetRollShopInfoScRsp = GetRollShopInfoScRsp {
-            roll_shop_id: 0,
+            ILHKNOBHDBE: 0,
+            OKHEIOJFJKP: ::std::vec::Vec::new(),
             retcode: 0,
-            DLPBJMPECFC: ::std::vec::Vec::new(),
-            BBJIJINJAFK: 0,
+            NEIKAIFGMFA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -206,10 +206,10 @@ impl ::protobuf::reflect::ProtobufValue for GetRollShopInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aGetRollShopInfoScRsp.proto\"\x96\x01\n\x14GetRollShopInfoScRsp\x12\
-    \x20\n\x0croll_shop_id\x18\x0f\x20\x01(\rR\nrollShopId\x12\x18\n\x07retc\
-    ode\x18\x08\x20\x01(\rR\x07retcode\x12\x20\n\x0bDLPBJMPECFC\x18\x0b\x20\
-    \x03(\rR\x0bDLPBJMPECFC\x12\x20\n\x0bBBJIJINJAFK\x18\x03\x20\x01(\rR\x0b\
-    BBJIJINJAFKB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \x20\n\x0bILHKNOBHDBE\x18\x04\x20\x01(\rR\x0bILHKNOBHDBE\x12\x20\n\x0bOK\
+    HEIOJFJKP\x18\x0e\x20\x03(\rR\x0bOKHEIOJFJKP\x12\x18\n\x07retcode\x18\n\
+    \x20\x01(\rR\x07retcode\x12\x20\n\x0bNEIKAIFGMFA\x18\t\x20\x01(\rR\x0bNE\
+    IKAIFGMFAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

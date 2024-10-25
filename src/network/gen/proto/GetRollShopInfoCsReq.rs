@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetRollShopInfoCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetRollShopInfoCsReq.roll_shop_id)
-    pub roll_shop_id: u32,
+    // @@protoc_insertion_point(field:GetRollShopInfoCsReq.NEIKAIFGMFA)
+    pub NEIKAIFGMFA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetRollShopInfoCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl GetRollShopInfoCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "roll_shop_id",
-            |m: &GetRollShopInfoCsReq| { &m.roll_shop_id },
-            |m: &mut GetRollShopInfoCsReq| { &mut m.roll_shop_id },
+            "NEIKAIFGMFA",
+            |m: &GetRollShopInfoCsReq| { &m.NEIKAIFGMFA },
+            |m: &mut GetRollShopInfoCsReq| { &mut m.NEIKAIFGMFA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetRollShopInfoCsReq>(
             "GetRollShopInfoCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for GetRollShopInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.roll_shop_id = is.read_uint32()?;
+                48 => {
+                    self.NEIKAIFGMFA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for GetRollShopInfoCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.roll_shop_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.roll_shop_id);
+        if self.NEIKAIFGMFA != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.NEIKAIFGMFA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for GetRollShopInfoCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.roll_shop_id != 0 {
-            os.write_uint32(7, self.roll_shop_id)?;
+        if self.NEIKAIFGMFA != 0 {
+            os.write_uint32(6, self.NEIKAIFGMFA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for GetRollShopInfoCsReq {
     }
 
     fn clear(&mut self) {
-        self.roll_shop_id = 0;
+        self.NEIKAIFGMFA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetRollShopInfoCsReq {
         static instance: GetRollShopInfoCsReq = GetRollShopInfoCsReq {
-            roll_shop_id: 0,
+            NEIKAIFGMFA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for GetRollShopInfoCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aGetRollShopInfoCsReq.proto\"8\n\x14GetRollShopInfoCsReq\x12\x20\n\
-    \x0croll_shop_id\x18\x07\x20\x01(\rR\nrollShopIdB\x15\n\x13emu.lunarcore\
-    .protob\x06proto3\
+    \x0bNEIKAIFGMFA\x18\x06\x20\x01(\rR\x0bNEIKAIFGMFAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

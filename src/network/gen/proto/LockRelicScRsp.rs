@@ -31,8 +31,6 @@ pub struct LockRelicScRsp {
     // message fields
     // @@protoc_insertion_point(field:LockRelicScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:LockRelicScRsp.relic_unique_id)
-    pub relic_unique_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LockRelicScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,17 +48,12 @@ impl LockRelicScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &LockRelicScRsp| { &m.retcode },
             |m: &mut LockRelicScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "relic_unique_id",
-            |m: &LockRelicScRsp| { &m.relic_unique_id },
-            |m: &mut LockRelicScRsp| { &mut m.relic_unique_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LockRelicScRsp>(
             "LockRelicScRsp",
@@ -80,11 +73,8 @@ impl ::protobuf::Message for LockRelicScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                112 => {
                     self.retcode = is.read_uint32()?;
-                },
-                120 => {
-                    self.relic_unique_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -99,10 +89,7 @@ impl ::protobuf::Message for LockRelicScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
-        }
-        if self.relic_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.relic_unique_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +98,7 @@ impl ::protobuf::Message for LockRelicScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
-        }
-        if self.relic_unique_id != 0 {
-            os.write_uint32(15, self.relic_unique_id)?;
+            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +118,12 @@ impl ::protobuf::Message for LockRelicScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.relic_unique_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LockRelicScRsp {
         static instance: LockRelicScRsp = LockRelicScRsp {
             retcode: 0,
-            relic_unique_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for LockRelicScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14LockRelicScRsp.proto\"R\n\x0eLockRelicScRsp\x12\x18\n\x07retcode\
-    \x18\r\x20\x01(\rR\x07retcode\x12&\n\x0frelic_unique_id\x18\x0f\x20\x01(\
-    \rR\rrelicUniqueIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x14LockRelicScRsp.proto\"*\n\x0eLockRelicScRsp\x12\x18\n\x07retcode\
+    \x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
