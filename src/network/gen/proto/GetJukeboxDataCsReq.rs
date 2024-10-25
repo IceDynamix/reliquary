@@ -129,8 +129,8 @@ impl ::protobuf::reflect::ProtobufValue for GetJukeboxDataCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19GetJukeboxDataCsReq.proto\"\x15\n\x13GetJukeboxDataCsReqB\x15\n\
-    \x13emu.lunarcore.protob\x06proto3\
+    \n\x19GetJukeboxDataCsReq.proto\"\x15\n\x13GetJukeboxDataCsReqb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

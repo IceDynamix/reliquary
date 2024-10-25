@@ -106,8 +106,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16SyncLineupReason.proto*\x9a\x01\n\x10SyncLineupReason\x12\x14\n\
     \x10SYNC_REASON_NONE\x10\0\x12\x16\n\x12SYNC_REASON_MP_ADD\x10\x01\x12\
     \x1f\n\x1bSYNC_REASON_MP_ADD_PROP_HIT\x10\x02\x12\x16\n\x12SYNC_REASON_H\
-    P_ADD\x10\x03\x12\x1f\n\x1bSYNC_REASON_HP_ADD_PROP_HIT\x10\x04B\x15\n\
-    \x13emu.lunarcore.protob\x06proto3\
+    P_ADD\x10\x03\x12\x1f\n\x1bSYNC_REASON_HP_ADD_PROP_HIT\x10\x04b\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

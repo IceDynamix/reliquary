@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncRogueMapRoomScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncRogueMapRoomScNotify.cur_room)
-    pub cur_room: ::protobuf::MessageField<super::RogueRoom::RogueRoom>,
-    // @@protoc_insertion_point(field:SyncRogueMapRoomScNotify.map_id)
-    pub map_id: u32,
+    // @@protoc_insertion_point(field:SyncRogueMapRoomScNotify.HFDEEPJIEDB)
+    pub HFDEEPJIEDB: ::protobuf::MessageField<super::OFLMBKLKONH::OFLMBKLKONH>,
+    // @@protoc_insertion_point(field:SyncRogueMapRoomScNotify.PHHANACJEGG)
+    pub PHHANACJEGG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SyncRogueMapRoomScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl SyncRogueMapRoomScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueRoom::RogueRoom>(
-            "cur_room",
-            |m: &SyncRogueMapRoomScNotify| { &m.cur_room },
-            |m: &mut SyncRogueMapRoomScNotify| { &mut m.cur_room },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OFLMBKLKONH::OFLMBKLKONH>(
+            "HFDEEPJIEDB",
+            |m: &SyncRogueMapRoomScNotify| { &m.HFDEEPJIEDB },
+            |m: &mut SyncRogueMapRoomScNotify| { &mut m.HFDEEPJIEDB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "map_id",
-            |m: &SyncRogueMapRoomScNotify| { &m.map_id },
-            |m: &mut SyncRogueMapRoomScNotify| { &mut m.map_id },
+            "PHHANACJEGG",
+            |m: &SyncRogueMapRoomScNotify| { &m.PHHANACJEGG },
+            |m: &mut SyncRogueMapRoomScNotify| { &mut m.PHHANACJEGG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncRogueMapRoomScNotify>(
             "SyncRogueMapRoomScNotify",
@@ -81,10 +81,10 @@ impl ::protobuf::Message for SyncRogueMapRoomScNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.cur_room)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HFDEEPJIEDB)?;
                 },
-                8 => {
-                    self.map_id = is.read_uint32()?;
+                16 => {
+                    self.PHHANACJEGG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,12 +98,12 @@ impl ::protobuf::Message for SyncRogueMapRoomScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.cur_room.as_ref() {
+        if let Some(v) = self.HFDEEPJIEDB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.map_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.map_id);
+        if self.PHHANACJEGG != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.PHHANACJEGG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for SyncRogueMapRoomScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.cur_room.as_ref() {
+        if let Some(v) = self.HFDEEPJIEDB.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
-        if self.map_id != 0 {
-            os.write_uint32(1, self.map_id)?;
+        if self.PHHANACJEGG != 0 {
+            os.write_uint32(2, self.PHHANACJEGG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for SyncRogueMapRoomScNotify {
     }
 
     fn clear(&mut self) {
-        self.cur_room.clear();
-        self.map_id = 0;
+        self.HFDEEPJIEDB.clear();
+        self.PHHANACJEGG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncRogueMapRoomScNotify {
         static instance: SyncRogueMapRoomScNotify = SyncRogueMapRoomScNotify {
-            cur_room: ::protobuf::MessageField::none(),
-            map_id: 0,
+            HFDEEPJIEDB: ::protobuf::MessageField::none(),
+            PHHANACJEGG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueMapRoomScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eSyncRogueMapRoomScNotify.proto\x1a\x0fRogueRoom.proto\"X\n\x18Sync\
-    RogueMapRoomScNotify\x12%\n\x08cur_room\x18\x07\x20\x01(\x0b2\n.RogueRoo\
-    mR\x07curRoom\x12\x15\n\x06map_id\x18\x01\x20\x01(\rR\x05mapIdB\x15\n\
-    \x13emu.lunarcore.protob\x06proto3\
+    \n\x1eSyncRogueMapRoomScNotify.proto\x1a\x11OFLMBKLKONH.proto\"l\n\x18Sy\
+    ncRogueMapRoomScNotify\x12.\n\x0bHFDEEPJIEDB\x18\x07\x20\x01(\x0b2\x0c.O\
+    FLMBKLKONHR\x0bHFDEEPJIEDB\x12\x20\n\x0bPHHANACJEGG\x18\x02\x20\x01(\rR\
+    \x0bPHHANACJEGGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::RogueRoom::file_descriptor().clone());
+            deps.push(super::OFLMBKLKONH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SyncRogueMapRoomScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

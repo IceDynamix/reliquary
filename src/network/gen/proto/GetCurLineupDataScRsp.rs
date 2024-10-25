@@ -31,8 +31,8 @@ pub struct GetCurLineupDataScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetCurLineupDataScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetCurLineupDataScRsp.lineup)
-    pub lineup: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
+    // @@protoc_insertion_point(field:GetCurLineupDataScRsp.COCFMLGGMKE)
+    pub COCFMLGGMKE: ::protobuf::MessageField<super::FJPJJEIJLLP::FJPJJEIJLLP>,
     // special fields
     // @@protoc_insertion_point(special_field:GetCurLineupDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,10 +57,10 @@ impl GetCurLineupDataScRsp {
             |m: &GetCurLineupDataScRsp| { &m.retcode },
             |m: &mut GetCurLineupDataScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
-            "lineup",
-            |m: &GetCurLineupDataScRsp| { &m.lineup },
-            |m: &mut GetCurLineupDataScRsp| { &mut m.lineup },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FJPJJEIJLLP::FJPJJEIJLLP>(
+            "COCFMLGGMKE",
+            |m: &GetCurLineupDataScRsp| { &m.COCFMLGGMKE },
+            |m: &mut GetCurLineupDataScRsp| { &mut m.COCFMLGGMKE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetCurLineupDataScRsp>(
             "GetCurLineupDataScRsp",
@@ -83,8 +83,8 @@ impl ::protobuf::Message for GetCurLineupDataScRsp {
                 80 => {
                     self.retcode = is.read_uint32()?;
                 },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.COCFMLGGMKE)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,7 +101,7 @@ impl ::protobuf::Message for GetCurLineupDataScRsp {
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
-        if let Some(v) = self.lineup.as_ref() {
+        if let Some(v) = self.COCFMLGGMKE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -114,8 +114,8 @@ impl ::protobuf::Message for GetCurLineupDataScRsp {
         if self.retcode != 0 {
             os.write_uint32(10, self.retcode)?;
         }
-        if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        if let Some(v) = self.COCFMLGGMKE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -135,14 +135,14 @@ impl ::protobuf::Message for GetCurLineupDataScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.lineup.clear();
+        self.COCFMLGGMKE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetCurLineupDataScRsp {
         static instance: GetCurLineupDataScRsp = GetCurLineupDataScRsp {
             retcode: 0,
-            lineup: ::protobuf::MessageField::none(),
+            COCFMLGGMKE: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for GetCurLineupDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bGetCurLineupDataScRsp.proto\x1a\x10LineupInfo.proto\"V\n\x15GetCur\
-    LineupDataScRsp\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcode\x12#\n\
-    \x06lineup\x18\x0f\x20\x01(\x0b2\x0b.LineupInfoR\x06lineupB\x15\n\x13emu\
-    .lunarcore.protob\x06proto3\
+    \n\x1bGetCurLineupDataScRsp.proto\x1a\x11FJPJJEIJLLP.proto\"a\n\x15GetCu\
+    rLineupDataScRsp\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcode\x12.\
+    \n\x0bCOCFMLGGMKE\x18\x0e\x20\x01(\x0b2\x0c.FJPJJEIJLLPR\x0bCOCFMLGGMKEb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::LineupInfo::file_descriptor().clone());
+            deps.push(super::FJPJJEIJLLP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetCurLineupDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

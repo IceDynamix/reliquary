@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartChallengeCsReq {
     // message fields
-    // @@protoc_insertion_point(field:StartChallengeCsReq.challenge_id)
-    pub challenge_id: u32,
-    // @@protoc_insertion_point(field:StartChallengeCsReq.ext_info)
-    pub ext_info: ::protobuf::MessageField<super::StartChallengeStoryInfo::StartChallengeStoryInfo>,
-    // @@protoc_insertion_point(field:StartChallengeCsReq.first_half_lineup)
-    pub first_half_lineup: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:StartChallengeCsReq.second_half_lineup)
-    pub second_half_lineup: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:StartChallengeCsReq.HNMEEDIDGKL)
+    pub HNMEEDIDGKL: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:StartChallengeCsReq.DBKHFAEKNKL)
+    pub DBKHFAEKNKL: u32,
+    // @@protoc_insertion_point(field:StartChallengeCsReq.HLDLDAPNILF)
+    pub HLDLDAPNILF: ::protobuf::MessageField<super::ANIFJHELMEJ::ANIFJHELMEJ>,
+    // @@protoc_insertion_point(field:StartChallengeCsReq.CPKGDLFPJNF)
+    pub CPKGDLFPJNF: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:StartChallengeCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,25 +56,25 @@ impl StartChallengeCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "HNMEEDIDGKL",
+            |m: &StartChallengeCsReq| { &m.HNMEEDIDGKL },
+            |m: &mut StartChallengeCsReq| { &mut m.HNMEEDIDGKL },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "challenge_id",
-            |m: &StartChallengeCsReq| { &m.challenge_id },
-            |m: &mut StartChallengeCsReq| { &mut m.challenge_id },
+            "DBKHFAEKNKL",
+            |m: &StartChallengeCsReq| { &m.DBKHFAEKNKL },
+            |m: &mut StartChallengeCsReq| { &mut m.DBKHFAEKNKL },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::StartChallengeStoryInfo::StartChallengeStoryInfo>(
-            "ext_info",
-            |m: &StartChallengeCsReq| { &m.ext_info },
-            |m: &mut StartChallengeCsReq| { &mut m.ext_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "first_half_lineup",
-            |m: &StartChallengeCsReq| { &m.first_half_lineup },
-            |m: &mut StartChallengeCsReq| { &mut m.first_half_lineup },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ANIFJHELMEJ::ANIFJHELMEJ>(
+            "HLDLDAPNILF",
+            |m: &StartChallengeCsReq| { &m.HLDLDAPNILF },
+            |m: &mut StartChallengeCsReq| { &mut m.HLDLDAPNILF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "second_half_lineup",
-            |m: &StartChallengeCsReq| { &m.second_half_lineup },
-            |m: &mut StartChallengeCsReq| { &mut m.second_half_lineup },
+            "CPKGDLFPJNF",
+            |m: &StartChallengeCsReq| { &m.CPKGDLFPJNF },
+            |m: &mut StartChallengeCsReq| { &mut m.CPKGDLFPJNF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartChallengeCsReq>(
             "StartChallengeCsReq",
@@ -94,23 +94,23 @@ impl ::protobuf::Message for StartChallengeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                98 => {
+                    is.read_repeated_packed_uint32_into(&mut self.HNMEEDIDGKL)?;
+                },
                 96 => {
-                    self.challenge_id = is.read_uint32()?;
+                    self.HNMEEDIDGKL.push(is.read_uint32()?);
                 },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ext_info)?;
+                32 => {
+                    self.DBKHFAEKNKL = is.read_uint32()?;
                 },
-                50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.first_half_lineup)?;
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HLDLDAPNILF)?;
                 },
-                48 => {
-                    self.first_half_lineup.push(is.read_uint32()?);
+                74 => {
+                    is.read_repeated_packed_uint32_into(&mut self.CPKGDLFPJNF)?;
                 },
-                114 => {
-                    is.read_repeated_packed_uint32_into(&mut self.second_half_lineup)?;
-                },
-                112 => {
-                    self.second_half_lineup.push(is.read_uint32()?);
+                72 => {
+                    self.CPKGDLFPJNF.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -124,18 +124,18 @@ impl ::protobuf::Message for StartChallengeCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.challenge_id);
+        for value in &self.HNMEEDIDGKL {
+            my_size += ::protobuf::rt::uint32_size(12, *value);
+        };
+        if self.DBKHFAEKNKL != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.DBKHFAEKNKL);
         }
-        if let Some(v) = self.ext_info.as_ref() {
+        if let Some(v) = self.HLDLDAPNILF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        for value in &self.first_half_lineup {
-            my_size += ::protobuf::rt::uint32_size(6, *value);
-        };
-        for value in &self.second_half_lineup {
-            my_size += ::protobuf::rt::uint32_size(14, *value);
+        for value in &self.CPKGDLFPJNF {
+            my_size += ::protobuf::rt::uint32_size(9, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -143,17 +143,17 @@ impl ::protobuf::Message for StartChallengeCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.challenge_id != 0 {
-            os.write_uint32(12, self.challenge_id)?;
-        }
-        if let Some(v) = self.ext_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
-        for v in &self.first_half_lineup {
-            os.write_uint32(6, *v)?;
+        for v in &self.HNMEEDIDGKL {
+            os.write_uint32(12, *v)?;
         };
-        for v in &self.second_half_lineup {
-            os.write_uint32(14, *v)?;
+        if self.DBKHFAEKNKL != 0 {
+            os.write_uint32(4, self.DBKHFAEKNKL)?;
+        }
+        if let Some(v) = self.HLDLDAPNILF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
+        for v in &self.CPKGDLFPJNF {
+            os.write_uint32(9, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -172,19 +172,19 @@ impl ::protobuf::Message for StartChallengeCsReq {
     }
 
     fn clear(&mut self) {
-        self.challenge_id = 0;
-        self.ext_info.clear();
-        self.first_half_lineup.clear();
-        self.second_half_lineup.clear();
+        self.HNMEEDIDGKL.clear();
+        self.DBKHFAEKNKL = 0;
+        self.HLDLDAPNILF.clear();
+        self.CPKGDLFPJNF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartChallengeCsReq {
         static instance: StartChallengeCsReq = StartChallengeCsReq {
-            challenge_id: 0,
-            ext_info: ::protobuf::MessageField::none(),
-            first_half_lineup: ::std::vec::Vec::new(),
-            second_half_lineup: ::std::vec::Vec::new(),
+            HNMEEDIDGKL: ::std::vec::Vec::new(),
+            DBKHFAEKNKL: 0,
+            HLDLDAPNILF: ::protobuf::MessageField::none(),
+            CPKGDLFPJNF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -209,12 +209,11 @@ impl ::protobuf::reflect::ProtobufValue for StartChallengeCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19StartChallengeCsReq.proto\x1a\x1dStartChallengeStoryInfo.proto\"\
-    \xc7\x01\n\x13StartChallengeCsReq\x12!\n\x0cchallenge_id\x18\x0c\x20\x01\
-    (\rR\x0bchallengeId\x123\n\x08ext_info\x18\x02\x20\x01(\x0b2\x18.StartCh\
-    allengeStoryInfoR\x07extInfo\x12*\n\x11first_half_lineup\x18\x06\x20\x03\
-    (\rR\x0ffirstHalfLineup\x12,\n\x12second_half_lineup\x18\x0e\x20\x03(\rR\
-    \x10secondHalfLineupB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x19StartChallengeCsReq.proto\x1a\x11ANIFJHELMEJ.proto\"\xab\x01\n\x13\
+    StartChallengeCsReq\x12\x20\n\x0bHNMEEDIDGKL\x18\x0c\x20\x03(\rR\x0bHNME\
+    EDIDGKL\x12\x20\n\x0bDBKHFAEKNKL\x18\x04\x20\x01(\rR\x0bDBKHFAEKNKL\x12.\
+    \n\x0bHLDLDAPNILF\x18\x05\x20\x01(\x0b2\x0c.ANIFJHELMEJR\x0bHLDLDAPNILF\
+    \x12\x20\n\x0bCPKGDLFPJNF\x18\t\x20\x03(\rR\x0bCPKGDLFPJNFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -232,7 +231,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::StartChallengeStoryInfo::file_descriptor().clone());
+            deps.push(super::ANIFJHELMEJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(StartChallengeCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

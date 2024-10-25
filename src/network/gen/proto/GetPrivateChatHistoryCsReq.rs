@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetPrivateChatHistoryCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetPrivateChatHistoryCsReq.to_uid)
-    pub to_uid: u32,
-    // @@protoc_insertion_point(field:GetPrivateChatHistoryCsReq.sender_uid)
-    pub sender_uid: u32,
+    // @@protoc_insertion_point(field:GetPrivateChatHistoryCsReq.CIFLDHGOOCJ)
+    pub CIFLDHGOOCJ: u32,
+    // @@protoc_insertion_point(field:GetPrivateChatHistoryCsReq.OBMLFLCFAFD)
+    pub OBMLFLCFAFD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetPrivateChatHistoryCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl GetPrivateChatHistoryCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "to_uid",
-            |m: &GetPrivateChatHistoryCsReq| { &m.to_uid },
-            |m: &mut GetPrivateChatHistoryCsReq| { &mut m.to_uid },
+            "CIFLDHGOOCJ",
+            |m: &GetPrivateChatHistoryCsReq| { &m.CIFLDHGOOCJ },
+            |m: &mut GetPrivateChatHistoryCsReq| { &mut m.CIFLDHGOOCJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "sender_uid",
-            |m: &GetPrivateChatHistoryCsReq| { &m.sender_uid },
-            |m: &mut GetPrivateChatHistoryCsReq| { &mut m.sender_uid },
+            "OBMLFLCFAFD",
+            |m: &GetPrivateChatHistoryCsReq| { &m.OBMLFLCFAFD },
+            |m: &mut GetPrivateChatHistoryCsReq| { &mut m.OBMLFLCFAFD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetPrivateChatHistoryCsReq>(
             "GetPrivateChatHistoryCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for GetPrivateChatHistoryCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.to_uid = is.read_uint32()?;
+                88 => {
+                    self.CIFLDHGOOCJ = is.read_uint32()?;
                 },
-                8 => {
-                    self.sender_uid = is.read_uint32()?;
+                24 => {
+                    self.OBMLFLCFAFD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for GetPrivateChatHistoryCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.to_uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.to_uid);
+        if self.CIFLDHGOOCJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.CIFLDHGOOCJ);
         }
-        if self.sender_uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.sender_uid);
+        if self.OBMLFLCFAFD != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.OBMLFLCFAFD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for GetPrivateChatHistoryCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.to_uid != 0 {
-            os.write_uint32(2, self.to_uid)?;
+        if self.CIFLDHGOOCJ != 0 {
+            os.write_uint32(11, self.CIFLDHGOOCJ)?;
         }
-        if self.sender_uid != 0 {
-            os.write_uint32(1, self.sender_uid)?;
+        if self.OBMLFLCFAFD != 0 {
+            os.write_uint32(3, self.OBMLFLCFAFD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GetPrivateChatHistoryCsReq {
     }
 
     fn clear(&mut self) {
-        self.to_uid = 0;
-        self.sender_uid = 0;
+        self.CIFLDHGOOCJ = 0;
+        self.OBMLFLCFAFD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetPrivateChatHistoryCsReq {
         static instance: GetPrivateChatHistoryCsReq = GetPrivateChatHistoryCsReq {
-            to_uid: 0,
-            sender_uid: 0,
+            CIFLDHGOOCJ: 0,
+            OBMLFLCFAFD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for GetPrivateChatHistoryCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20GetPrivateChatHistoryCsReq.proto\"R\n\x1aGetPrivateChatHistoryCsRe\
-    q\x12\x15\n\x06to_uid\x18\x02\x20\x01(\rR\x05toUid\x12\x1d\n\nsender_uid\
-    \x18\x01\x20\x01(\rR\tsenderUidB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x20GetPrivateChatHistoryCsReq.proto\"`\n\x1aGetPrivateChatHistoryCsRe\
+    q\x12\x20\n\x0bCIFLDHGOOCJ\x18\x0b\x20\x01(\rR\x0bCIFLDHGOOCJ\x12\x20\n\
+    \x0bOBMLFLCFAFD\x18\x03\x20\x01(\rR\x0bOBMLFLCFAFDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

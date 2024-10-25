@@ -29,18 +29,26 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChallengeSettleNotify {
     // message fields
-    // @@protoc_insertion_point(field:ChallengeSettleNotify.reward)
-    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:ChallengeSettleNotify.stars)
-    pub stars: u32,
-    // @@protoc_insertion_point(field:ChallengeSettleNotify.score_two)
-    pub score_two: u32,
-    // @@protoc_insertion_point(field:ChallengeSettleNotify.challenge_id)
-    pub challenge_id: u32,
-    // @@protoc_insertion_point(field:ChallengeSettleNotify.is_win)
-    pub is_win: bool,
-    // @@protoc_insertion_point(field:ChallengeSettleNotify.challenge_score)
-    pub challenge_score: u32,
+    // @@protoc_insertion_point(field:ChallengeSettleNotify.CLPCCICOGCE)
+    pub CLPCCICOGCE: ::protobuf::MessageField<super::NDACGJLONGF::NDACGJLONGF>,
+    // @@protoc_insertion_point(field:ChallengeSettleNotify.GGBCPNCDMFA)
+    pub GGBCPNCDMFA: u32,
+    // @@protoc_insertion_point(field:ChallengeSettleNotify.CBKLMFOAAFJ)
+    pub CBKLMFOAAFJ: ::protobuf::MessageField<super::OMPDJIJNNBP::OMPDJIJNNBP>,
+    // @@protoc_insertion_point(field:ChallengeSettleNotify.KFHANKAEJFJ)
+    pub KFHANKAEJFJ: u32,
+    // @@protoc_insertion_point(field:ChallengeSettleNotify.IBJDEGFNOIN)
+    pub IBJDEGFNOIN: u32,
+    // @@protoc_insertion_point(field:ChallengeSettleNotify.LPDNAMLHGNJ)
+    pub LPDNAMLHGNJ: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:ChallengeSettleNotify.DBKHFAEKNKL)
+    pub DBKHFAEKNKL: u32,
+    // @@protoc_insertion_point(field:ChallengeSettleNotify.DMIEBIKLCPG)
+    pub DMIEBIKLCPG: u32,
+    // @@protoc_insertion_point(field:ChallengeSettleNotify.BNEBJJBOJDG)
+    pub BNEBJJBOJDG: bool,
+    // @@protoc_insertion_point(field:ChallengeSettleNotify.GLBJGILDBAK)
+    pub GLBJGILDBAK: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:ChallengeSettleNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,37 +66,57 @@ impl ChallengeSettleNotify {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(6);
+        let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NDACGJLONGF::NDACGJLONGF>(
+            "CLPCCICOGCE",
+            |m: &ChallengeSettleNotify| { &m.CLPCCICOGCE },
+            |m: &mut ChallengeSettleNotify| { &mut m.CLPCCICOGCE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GGBCPNCDMFA",
+            |m: &ChallengeSettleNotify| { &m.GGBCPNCDMFA },
+            |m: &mut ChallengeSettleNotify| { &mut m.GGBCPNCDMFA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OMPDJIJNNBP::OMPDJIJNNBP>(
+            "CBKLMFOAAFJ",
+            |m: &ChallengeSettleNotify| { &m.CBKLMFOAAFJ },
+            |m: &mut ChallengeSettleNotify| { &mut m.CBKLMFOAAFJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KFHANKAEJFJ",
+            |m: &ChallengeSettleNotify| { &m.KFHANKAEJFJ },
+            |m: &mut ChallengeSettleNotify| { &mut m.KFHANKAEJFJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IBJDEGFNOIN",
+            |m: &ChallengeSettleNotify| { &m.IBJDEGFNOIN },
+            |m: &mut ChallengeSettleNotify| { &mut m.IBJDEGFNOIN },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "reward",
-            |m: &ChallengeSettleNotify| { &m.reward },
-            |m: &mut ChallengeSettleNotify| { &mut m.reward },
+            "LPDNAMLHGNJ",
+            |m: &ChallengeSettleNotify| { &m.LPDNAMLHGNJ },
+            |m: &mut ChallengeSettleNotify| { &mut m.LPDNAMLHGNJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "stars",
-            |m: &ChallengeSettleNotify| { &m.stars },
-            |m: &mut ChallengeSettleNotify| { &mut m.stars },
+            "DBKHFAEKNKL",
+            |m: &ChallengeSettleNotify| { &m.DBKHFAEKNKL },
+            |m: &mut ChallengeSettleNotify| { &mut m.DBKHFAEKNKL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "score_two",
-            |m: &ChallengeSettleNotify| { &m.score_two },
-            |m: &mut ChallengeSettleNotify| { &mut m.score_two },
+            "DMIEBIKLCPG",
+            |m: &ChallengeSettleNotify| { &m.DMIEBIKLCPG },
+            |m: &mut ChallengeSettleNotify| { &mut m.DMIEBIKLCPG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "challenge_id",
-            |m: &ChallengeSettleNotify| { &m.challenge_id },
-            |m: &mut ChallengeSettleNotify| { &mut m.challenge_id },
+            "BNEBJJBOJDG",
+            |m: &ChallengeSettleNotify| { &m.BNEBJJBOJDG },
+            |m: &mut ChallengeSettleNotify| { &mut m.BNEBJJBOJDG },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_win",
-            |m: &ChallengeSettleNotify| { &m.is_win },
-            |m: &mut ChallengeSettleNotify| { &mut m.is_win },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "challenge_score",
-            |m: &ChallengeSettleNotify| { &m.challenge_score },
-            |m: &mut ChallengeSettleNotify| { &mut m.challenge_score },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "GLBJGILDBAK",
+            |m: &ChallengeSettleNotify| { &m.GLBJGILDBAK },
+            |m: &mut ChallengeSettleNotify| { &mut m.GLBJGILDBAK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChallengeSettleNotify>(
             "ChallengeSettleNotify",
@@ -108,23 +136,38 @@ impl ::protobuf::Message for ChallengeSettleNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
-                },
-                112 => {
-                    self.stars = is.read_uint32()?;
-                },
-                96 => {
-                    self.score_two = is.read_uint32()?;
-                },
-                40 => {
-                    self.challenge_id = is.read_uint32()?;
-                },
-                32 => {
-                    self.is_win = is.read_bool()?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CLPCCICOGCE)?;
                 },
                 8 => {
-                    self.challenge_score = is.read_uint32()?;
+                    self.GGBCPNCDMFA = is.read_uint32()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CBKLMFOAAFJ)?;
+                },
+                72 => {
+                    self.KFHANKAEJFJ = is.read_uint32()?;
+                },
+                80 => {
+                    self.IBJDEGFNOIN = is.read_uint32()?;
+                },
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LPDNAMLHGNJ)?;
+                },
+                56 => {
+                    self.DBKHFAEKNKL = is.read_uint32()?;
+                },
+                104 => {
+                    self.DMIEBIKLCPG = is.read_uint32()?;
+                },
+                16 => {
+                    self.BNEBJJBOJDG = is.read_bool()?;
+                },
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.GLBJGILDBAK)?;
+                },
+                120 => {
+                    self.GLBJGILDBAK.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -138,49 +181,75 @@ impl ::protobuf::Message for ChallengeSettleNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.reward.as_ref() {
+        if let Some(v) = self.CLPCCICOGCE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.stars != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.stars);
+        if self.GGBCPNCDMFA != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.GGBCPNCDMFA);
         }
-        if self.score_two != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.score_two);
+        if let Some(v) = self.CBKLMFOAAFJ.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.challenge_id);
+        if self.KFHANKAEJFJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.KFHANKAEJFJ);
         }
-        if self.is_win != false {
+        if self.IBJDEGFNOIN != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.IBJDEGFNOIN);
+        }
+        if let Some(v) = self.LPDNAMLHGNJ.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.DBKHFAEKNKL != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.DBKHFAEKNKL);
+        }
+        if self.DMIEBIKLCPG != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.DMIEBIKLCPG);
+        }
+        if self.BNEBJJBOJDG != false {
             my_size += 1 + 1;
         }
-        if self.challenge_score != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.challenge_score);
-        }
+        for value in &self.GLBJGILDBAK {
+            my_size += ::protobuf::rt::uint32_size(15, *value);
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if let Some(v) = self.CLPCCICOGCE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
-        if self.stars != 0 {
-            os.write_uint32(14, self.stars)?;
+        if self.GGBCPNCDMFA != 0 {
+            os.write_uint32(1, self.GGBCPNCDMFA)?;
         }
-        if self.score_two != 0 {
-            os.write_uint32(12, self.score_two)?;
+        if let Some(v) = self.CBKLMFOAAFJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
-        if self.challenge_id != 0 {
-            os.write_uint32(5, self.challenge_id)?;
+        if self.KFHANKAEJFJ != 0 {
+            os.write_uint32(9, self.KFHANKAEJFJ)?;
         }
-        if self.is_win != false {
-            os.write_bool(4, self.is_win)?;
+        if self.IBJDEGFNOIN != 0 {
+            os.write_uint32(10, self.IBJDEGFNOIN)?;
         }
-        if self.challenge_score != 0 {
-            os.write_uint32(1, self.challenge_score)?;
+        if let Some(v) = self.LPDNAMLHGNJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
+        if self.DBKHFAEKNKL != 0 {
+            os.write_uint32(7, self.DBKHFAEKNKL)?;
+        }
+        if self.DMIEBIKLCPG != 0 {
+            os.write_uint32(13, self.DMIEBIKLCPG)?;
+        }
+        if self.BNEBJJBOJDG != false {
+            os.write_bool(2, self.BNEBJJBOJDG)?;
+        }
+        for v in &self.GLBJGILDBAK {
+            os.write_uint32(15, *v)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -198,23 +267,31 @@ impl ::protobuf::Message for ChallengeSettleNotify {
     }
 
     fn clear(&mut self) {
-        self.reward.clear();
-        self.stars = 0;
-        self.score_two = 0;
-        self.challenge_id = 0;
-        self.is_win = false;
-        self.challenge_score = 0;
+        self.CLPCCICOGCE.clear();
+        self.GGBCPNCDMFA = 0;
+        self.CBKLMFOAAFJ.clear();
+        self.KFHANKAEJFJ = 0;
+        self.IBJDEGFNOIN = 0;
+        self.LPDNAMLHGNJ.clear();
+        self.DBKHFAEKNKL = 0;
+        self.DMIEBIKLCPG = 0;
+        self.BNEBJJBOJDG = false;
+        self.GLBJGILDBAK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengeSettleNotify {
         static instance: ChallengeSettleNotify = ChallengeSettleNotify {
-            reward: ::protobuf::MessageField::none(),
-            stars: 0,
-            score_two: 0,
-            challenge_id: 0,
-            is_win: false,
-            challenge_score: 0,
+            CLPCCICOGCE: ::protobuf::MessageField::none(),
+            GGBCPNCDMFA: 0,
+            CBKLMFOAAFJ: ::protobuf::MessageField::none(),
+            KFHANKAEJFJ: 0,
+            IBJDEGFNOIN: 0,
+            LPDNAMLHGNJ: ::protobuf::MessageField::none(),
+            DBKHFAEKNKL: 0,
+            DMIEBIKLCPG: 0,
+            BNEBJJBOJDG: false,
+            GLBJGILDBAK: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,13 +316,18 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeSettleNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bChallengeSettleNotify.proto\x1a\x0eItemList.proto\"\xd0\x01\n\x15C\
-    hallengeSettleNotify\x12!\n\x06reward\x18\n\x20\x01(\x0b2\t.ItemListR\
-    \x06reward\x12\x14\n\x05stars\x18\x0e\x20\x01(\rR\x05stars\x12\x1b\n\tsc\
-    ore_two\x18\x0c\x20\x01(\rR\x08scoreTwo\x12!\n\x0cchallenge_id\x18\x05\
-    \x20\x01(\rR\x0bchallengeId\x12\x15\n\x06is_win\x18\x04\x20\x01(\x08R\
-    \x05isWin\x12'\n\x0fchallenge_score\x18\x01\x20\x01(\rR\x0echallengeScor\
-    eB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x1bChallengeSettleNotify.proto\x1a\x0eItemList.proto\x1a\x11NDACGJLON\
+    GF.proto\x1a\x11OMPDJIJNNBP.proto\"\x92\x03\n\x15ChallengeSettleNotify\
+    \x12.\n\x0bCLPCCICOGCE\x18\x04\x20\x01(\x0b2\x0c.NDACGJLONGFR\x0bCLPCCIC\
+    OGCE\x12\x20\n\x0bGGBCPNCDMFA\x18\x01\x20\x01(\rR\x0bGGBCPNCDMFA\x12.\n\
+    \x0bCBKLMFOAAFJ\x18\x0b\x20\x01(\x0b2\x0c.OMPDJIJNNBPR\x0bCBKLMFOAAFJ\
+    \x12\x20\n\x0bKFHANKAEJFJ\x18\t\x20\x01(\rR\x0bKFHANKAEJFJ\x12\x20\n\x0b\
+    IBJDEGFNOIN\x18\n\x20\x01(\rR\x0bIBJDEGFNOIN\x12+\n\x0bLPDNAMLHGNJ\x18\
+    \x03\x20\x01(\x0b2\t.ItemListR\x0bLPDNAMLHGNJ\x12\x20\n\x0bDBKHFAEKNKL\
+    \x18\x07\x20\x01(\rR\x0bDBKHFAEKNKL\x12\x20\n\x0bDMIEBIKLCPG\x18\r\x20\
+    \x01(\rR\x0bDMIEBIKLCPG\x12\x20\n\x0bBNEBJJBOJDG\x18\x02\x20\x01(\x08R\
+    \x0bBNEBJJBOJDG\x12\x20\n\x0bGLBJGILDBAK\x18\x0f\x20\x03(\rR\x0bGLBJGILD\
+    BAKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -262,8 +344,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(1);
+            let mut deps = ::std::vec::Vec::with_capacity(3);
             deps.push(super::ItemList::file_descriptor().clone());
+            deps.push(super::NDACGJLONGF::file_descriptor().clone());
+            deps.push(super::OMPDJIJNNBP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChallengeSettleNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

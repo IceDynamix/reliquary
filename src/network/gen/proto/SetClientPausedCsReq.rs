@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetClientPausedCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetClientPausedCsReq.paused)
-    pub paused: bool,
+    // @@protoc_insertion_point(field:SetClientPausedCsReq.PPMDNFGHBBP)
+    pub PPMDNFGHBBP: bool,
     // special fields
     // @@protoc_insertion_point(special_field:SetClientPausedCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl SetClientPausedCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "paused",
-            |m: &SetClientPausedCsReq| { &m.paused },
-            |m: &mut SetClientPausedCsReq| { &mut m.paused },
+            "PPMDNFGHBBP",
+            |m: &SetClientPausedCsReq| { &m.PPMDNFGHBBP },
+            |m: &mut SetClientPausedCsReq| { &mut m.PPMDNFGHBBP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetClientPausedCsReq>(
             "SetClientPausedCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for SetClientPausedCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.paused = is.read_bool()?;
+                120 => {
+                    self.PPMDNFGHBBP = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for SetClientPausedCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.paused != false {
+        if self.PPMDNFGHBBP != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -97,8 +97,8 @@ impl ::protobuf::Message for SetClientPausedCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.paused != false {
-            os.write_bool(2, self.paused)?;
+        if self.PPMDNFGHBBP != false {
+            os.write_bool(15, self.PPMDNFGHBBP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for SetClientPausedCsReq {
     }
 
     fn clear(&mut self) {
-        self.paused = false;
+        self.PPMDNFGHBBP = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetClientPausedCsReq {
         static instance: SetClientPausedCsReq = SetClientPausedCsReq {
-            paused: false,
+            PPMDNFGHBBP: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for SetClientPausedCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aSetClientPausedCsReq.proto\".\n\x14SetClientPausedCsReq\x12\x16\n\
-    \x06paused\x18\x02\x20\x01(\x08R\x06pausedB\x15\n\x13emu.lunarcore.proto\
-    b\x06proto3\
+    \n\x1aSetClientPausedCsReq.proto\"8\n\x14SetClientPausedCsReq\x12\x20\n\
+    \x0bPPMDNFGHBBP\x18\x0f\x20\x01(\x08R\x0bPPMDNFGHBBPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,32 +29,32 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueCommonBuffSelectInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.roll_buffs_cost)
-    pub roll_buffs_cost: ::protobuf::MessageField<super::ItemCostList::ItemCostList>,
-    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.select_buff_source_hint)
-    pub select_buff_source_hint: u32,
-    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.source_cur_count)
-    pub source_cur_count: u32,
-    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.roll_buff_max_times)
-    pub roll_buff_max_times: u32,
-    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.source_total_count)
-    pub source_total_count: u32,
+    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.select_buff_list)
+    pub select_buff_list: ::std::vec::Vec<super::CCMHPCONEME::CCMHPCONEME>,
     // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.can_roll)
     pub can_roll: bool,
     // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.first_buff_type_list)
     pub first_buff_type_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.roll_buff_times)
-    pub roll_buff_times: u32,
+    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.roll_buff_count)
+    pub roll_buff_count: u32,
+    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.source_hint_id)
+    pub source_hint_id: u32,
+    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.roll_buff_cost_data)
+    pub roll_buff_cost_data: ::protobuf::MessageField<super::CGMLGCGMBDH::CGMLGCGMBDH>,
+    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.roll_buff_max_count)
+    pub roll_buff_max_count: u32,
+    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.source_total_count)
+    pub source_total_count: u32,
+    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.source_type)
+    pub source_type: ::protobuf::EnumOrUnknown<super::RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType>,
+    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.source_cur_count)
+    pub source_cur_count: u32,
     // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.roll_buff_free_count)
     pub roll_buff_free_count: u32,
-    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.maze_buff_list)
-    pub maze_buff_list: ::std::vec::Vec<super::RogueCommonBuff::RogueCommonBuff>,
-    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.source_type)
-    pub source_type: ::protobuf::EnumOrUnknown<super::RogueCommonBuffSelectSource::RogueCommonBuffSelectSource>,
-    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.handbook_unlock_buff_id_list)
-    pub handbook_unlock_buff_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.certain_select_buff_id)
     pub certain_select_buff_id: u32,
+    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.handbook_unlock_buff_id_list)
+    pub handbook_unlock_buff_id_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueCommonBuffSelectInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -74,30 +74,10 @@ impl RogueCommonBuffSelectInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(13);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostList::ItemCostList>(
-            "roll_buffs_cost",
-            |m: &RogueCommonBuffSelectInfo| { &m.roll_buffs_cost },
-            |m: &mut RogueCommonBuffSelectInfo| { &mut m.roll_buffs_cost },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "select_buff_source_hint",
-            |m: &RogueCommonBuffSelectInfo| { &m.select_buff_source_hint },
-            |m: &mut RogueCommonBuffSelectInfo| { &mut m.select_buff_source_hint },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "source_cur_count",
-            |m: &RogueCommonBuffSelectInfo| { &m.source_cur_count },
-            |m: &mut RogueCommonBuffSelectInfo| { &mut m.source_cur_count },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "roll_buff_max_times",
-            |m: &RogueCommonBuffSelectInfo| { &m.roll_buff_max_times },
-            |m: &mut RogueCommonBuffSelectInfo| { &mut m.roll_buff_max_times },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "source_total_count",
-            |m: &RogueCommonBuffSelectInfo| { &m.source_total_count },
-            |m: &mut RogueCommonBuffSelectInfo| { &mut m.source_total_count },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "select_buff_list",
+            |m: &RogueCommonBuffSelectInfo| { &m.select_buff_list },
+            |m: &mut RogueCommonBuffSelectInfo| { &mut m.select_buff_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "can_roll",
@@ -110,34 +90,54 @@ impl RogueCommonBuffSelectInfo {
             |m: &mut RogueCommonBuffSelectInfo| { &mut m.first_buff_type_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "roll_buff_times",
-            |m: &RogueCommonBuffSelectInfo| { &m.roll_buff_times },
-            |m: &mut RogueCommonBuffSelectInfo| { &mut m.roll_buff_times },
+            "roll_buff_count",
+            |m: &RogueCommonBuffSelectInfo| { &m.roll_buff_count },
+            |m: &mut RogueCommonBuffSelectInfo| { &mut m.roll_buff_count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "roll_buff_free_count",
-            |m: &RogueCommonBuffSelectInfo| { &m.roll_buff_free_count },
-            |m: &mut RogueCommonBuffSelectInfo| { &mut m.roll_buff_free_count },
+            "source_hint_id",
+            |m: &RogueCommonBuffSelectInfo| { &m.source_hint_id },
+            |m: &mut RogueCommonBuffSelectInfo| { &mut m.source_hint_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "maze_buff_list",
-            |m: &RogueCommonBuffSelectInfo| { &m.maze_buff_list },
-            |m: &mut RogueCommonBuffSelectInfo| { &mut m.maze_buff_list },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CGMLGCGMBDH::CGMLGCGMBDH>(
+            "roll_buff_cost_data",
+            |m: &RogueCommonBuffSelectInfo| { &m.roll_buff_cost_data },
+            |m: &mut RogueCommonBuffSelectInfo| { &mut m.roll_buff_cost_data },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "roll_buff_max_count",
+            |m: &RogueCommonBuffSelectInfo| { &m.roll_buff_max_count },
+            |m: &mut RogueCommonBuffSelectInfo| { &mut m.roll_buff_max_count },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "source_total_count",
+            |m: &RogueCommonBuffSelectInfo| { &m.source_total_count },
+            |m: &mut RogueCommonBuffSelectInfo| { &mut m.source_total_count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "source_type",
             |m: &RogueCommonBuffSelectInfo| { &m.source_type },
             |m: &mut RogueCommonBuffSelectInfo| { &mut m.source_type },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "handbook_unlock_buff_id_list",
-            |m: &RogueCommonBuffSelectInfo| { &m.handbook_unlock_buff_id_list },
-            |m: &mut RogueCommonBuffSelectInfo| { &mut m.handbook_unlock_buff_id_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "source_cur_count",
+            |m: &RogueCommonBuffSelectInfo| { &m.source_cur_count },
+            |m: &mut RogueCommonBuffSelectInfo| { &mut m.source_cur_count },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "roll_buff_free_count",
+            |m: &RogueCommonBuffSelectInfo| { &m.roll_buff_free_count },
+            |m: &mut RogueCommonBuffSelectInfo| { &mut m.roll_buff_free_count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "certain_select_buff_id",
             |m: &RogueCommonBuffSelectInfo| { &m.certain_select_buff_id },
             |m: &mut RogueCommonBuffSelectInfo| { &mut m.certain_select_buff_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "handbook_unlock_buff_id_list",
+            |m: &RogueCommonBuffSelectInfo| { &m.handbook_unlock_buff_id_list },
+            |m: &mut RogueCommonBuffSelectInfo| { &mut m.handbook_unlock_buff_id_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueCommonBuffSelectInfo>(
             "RogueCommonBuffSelectInfo",
@@ -157,50 +157,50 @@ impl ::protobuf::Message for RogueCommonBuffSelectInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.roll_buffs_cost)?;
+                26 => {
+                    self.select_buff_list.push(is.read_message()?);
                 },
                 88 => {
-                    self.select_buff_source_hint = is.read_uint32()?;
-                },
-                32 => {
-                    self.source_cur_count = is.read_uint32()?;
-                },
-                48 => {
-                    self.roll_buff_max_times = is.read_uint32()?;
-                },
-                120 => {
-                    self.source_total_count = is.read_uint32()?;
-                },
-                8 => {
                     self.can_roll = is.read_bool()?;
                 },
-                18 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.first_buff_type_list)?;
                 },
-                16 => {
+                56 => {
                     self.first_buff_type_list.push(is.read_uint32()?);
                 },
-                96 => {
-                    self.roll_buff_times = is.read_uint32()?;
-                },
-                72 => {
-                    self.roll_buff_free_count = is.read_uint32()?;
-                },
-                58 => {
-                    self.maze_buff_list.push(is.read_message()?);
+                32 => {
+                    self.roll_buff_count = is.read_uint32()?;
                 },
                 64 => {
+                    self.source_hint_id = is.read_uint32()?;
+                },
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.roll_buff_cost_data)?;
+                },
+                8 => {
+                    self.roll_buff_max_count = is.read_uint32()?;
+                },
+                112 => {
+                    self.source_total_count = is.read_uint32()?;
+                },
+                96 => {
                     self.source_type = is.read_enum_or_unknown()?;
                 },
-                26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.handbook_unlock_buff_id_list)?;
-                },
-                24 => {
-                    self.handbook_unlock_buff_id_list.push(is.read_uint32()?);
+                48 => {
+                    self.source_cur_count = is.read_uint32()?;
                 },
                 104 => {
+                    self.roll_buff_free_count = is.read_uint32()?;
+                },
+                16 => {
                     self.certain_select_buff_id = is.read_uint32()?;
+                },
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.handbook_unlock_buff_id_list)?;
+                },
+                120 => {
+                    self.handbook_unlock_buff_id_list.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -214,92 +214,92 @@ impl ::protobuf::Message for RogueCommonBuffSelectInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.roll_buffs_cost.as_ref() {
-            let len = v.compute_size();
+        for value in &self.select_buff_list {
+            let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.select_buff_source_hint != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.select_buff_source_hint);
-        }
-        if self.source_cur_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.source_cur_count);
-        }
-        if self.roll_buff_max_times != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.roll_buff_max_times);
-        }
-        if self.source_total_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.source_total_count);
-        }
+        };
         if self.can_roll != false {
             my_size += 1 + 1;
         }
         for value in &self.first_buff_type_list {
-            my_size += ::protobuf::rt::uint32_size(2, *value);
+            my_size += ::protobuf::rt::uint32_size(7, *value);
         };
-        if self.roll_buff_times != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.roll_buff_times);
+        if self.roll_buff_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.roll_buff_count);
+        }
+        if self.source_hint_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.source_hint_id);
+        }
+        if let Some(v) = self.roll_buff_cost_data.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.roll_buff_max_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.roll_buff_max_count);
+        }
+        if self.source_total_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.source_total_count);
+        }
+        if self.source_type != ::protobuf::EnumOrUnknown::new(super::RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType::ROGUE_COMMON_BUFF_SELECT_SOURCE_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(12, self.source_type.value());
+        }
+        if self.source_cur_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.source_cur_count);
         }
         if self.roll_buff_free_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.roll_buff_free_count);
+            my_size += ::protobuf::rt::uint32_size(13, self.roll_buff_free_count);
         }
-        for value in &self.maze_buff_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.source_type != ::protobuf::EnumOrUnknown::new(super::RogueCommonBuffSelectSource::RogueCommonBuffSelectSource::ROGUE_COMMON_BUFF_SELECT_SOURCE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(8, self.source_type.value());
+        if self.certain_select_buff_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.certain_select_buff_id);
         }
         for value in &self.handbook_unlock_buff_id_list {
-            my_size += ::protobuf::rt::uint32_size(3, *value);
+            my_size += ::protobuf::rt::uint32_size(15, *value);
         };
-        if self.certain_select_buff_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.certain_select_buff_id);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.roll_buffs_cost.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
-        if self.select_buff_source_hint != 0 {
-            os.write_uint32(11, self.select_buff_source_hint)?;
-        }
-        if self.source_cur_count != 0 {
-            os.write_uint32(4, self.source_cur_count)?;
-        }
-        if self.roll_buff_max_times != 0 {
-            os.write_uint32(6, self.roll_buff_max_times)?;
-        }
-        if self.source_total_count != 0 {
-            os.write_uint32(15, self.source_total_count)?;
-        }
+        for v in &self.select_buff_list {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        };
         if self.can_roll != false {
-            os.write_bool(1, self.can_roll)?;
+            os.write_bool(11, self.can_roll)?;
         }
         for v in &self.first_buff_type_list {
-            os.write_uint32(2, *v)?;
+            os.write_uint32(7, *v)?;
         };
-        if self.roll_buff_times != 0 {
-            os.write_uint32(12, self.roll_buff_times)?;
+        if self.roll_buff_count != 0 {
+            os.write_uint32(4, self.roll_buff_count)?;
+        }
+        if self.source_hint_id != 0 {
+            os.write_uint32(8, self.source_hint_id)?;
+        }
+        if let Some(v) = self.roll_buff_cost_data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
+        if self.roll_buff_max_count != 0 {
+            os.write_uint32(1, self.roll_buff_max_count)?;
+        }
+        if self.source_total_count != 0 {
+            os.write_uint32(14, self.source_total_count)?;
+        }
+        if self.source_type != ::protobuf::EnumOrUnknown::new(super::RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType::ROGUE_COMMON_BUFF_SELECT_SOURCE_TYPE_NONE) {
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.source_type))?;
+        }
+        if self.source_cur_count != 0 {
+            os.write_uint32(6, self.source_cur_count)?;
         }
         if self.roll_buff_free_count != 0 {
-            os.write_uint32(9, self.roll_buff_free_count)?;
+            os.write_uint32(13, self.roll_buff_free_count)?;
         }
-        for v in &self.maze_buff_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        };
-        if self.source_type != ::protobuf::EnumOrUnknown::new(super::RogueCommonBuffSelectSource::RogueCommonBuffSelectSource::ROGUE_COMMON_BUFF_SELECT_SOURCE_TYPE_NONE) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.source_type))?;
+        if self.certain_select_buff_id != 0 {
+            os.write_uint32(2, self.certain_select_buff_id)?;
         }
         for v in &self.handbook_unlock_buff_id_list {
-            os.write_uint32(3, *v)?;
+            os.write_uint32(15, *v)?;
         };
-        if self.certain_select_buff_id != 0 {
-            os.write_uint32(13, self.certain_select_buff_id)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -317,37 +317,37 @@ impl ::protobuf::Message for RogueCommonBuffSelectInfo {
     }
 
     fn clear(&mut self) {
-        self.roll_buffs_cost.clear();
-        self.select_buff_source_hint = 0;
-        self.source_cur_count = 0;
-        self.roll_buff_max_times = 0;
-        self.source_total_count = 0;
+        self.select_buff_list.clear();
         self.can_roll = false;
         self.first_buff_type_list.clear();
-        self.roll_buff_times = 0;
+        self.roll_buff_count = 0;
+        self.source_hint_id = 0;
+        self.roll_buff_cost_data.clear();
+        self.roll_buff_max_count = 0;
+        self.source_total_count = 0;
+        self.source_type = ::protobuf::EnumOrUnknown::new(super::RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType::ROGUE_COMMON_BUFF_SELECT_SOURCE_TYPE_NONE);
+        self.source_cur_count = 0;
         self.roll_buff_free_count = 0;
-        self.maze_buff_list.clear();
-        self.source_type = ::protobuf::EnumOrUnknown::new(super::RogueCommonBuffSelectSource::RogueCommonBuffSelectSource::ROGUE_COMMON_BUFF_SELECT_SOURCE_TYPE_NONE);
-        self.handbook_unlock_buff_id_list.clear();
         self.certain_select_buff_id = 0;
+        self.handbook_unlock_buff_id_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueCommonBuffSelectInfo {
         static instance: RogueCommonBuffSelectInfo = RogueCommonBuffSelectInfo {
-            roll_buffs_cost: ::protobuf::MessageField::none(),
-            select_buff_source_hint: 0,
-            source_cur_count: 0,
-            roll_buff_max_times: 0,
-            source_total_count: 0,
+            select_buff_list: ::std::vec::Vec::new(),
             can_roll: false,
             first_buff_type_list: ::std::vec::Vec::new(),
-            roll_buff_times: 0,
-            roll_buff_free_count: 0,
-            maze_buff_list: ::std::vec::Vec::new(),
+            roll_buff_count: 0,
+            source_hint_id: 0,
+            roll_buff_cost_data: ::protobuf::MessageField::none(),
+            roll_buff_max_count: 0,
+            source_total_count: 0,
             source_type: ::protobuf::EnumOrUnknown::from_i32(0),
-            handbook_unlock_buff_id_list: ::std::vec::Vec::new(),
+            source_cur_count: 0,
+            roll_buff_free_count: 0,
             certain_select_buff_id: 0,
+            handbook_unlock_buff_id_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -372,23 +372,22 @@ impl ::protobuf::reflect::ProtobufValue for RogueCommonBuffSelectInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fRogueCommonBuffSelectInfo.proto\x1a\x12ItemCostList.proto\x1a!Rogu\
-    eCommonBuffSelectSource.proto\x1a\x15RogueCommonBuff.proto\"\xa1\x05\n\
-    \x19RogueCommonBuffSelectInfo\x125\n\x0froll_buffs_cost\x18\x05\x20\x01(\
-    \x0b2\r.ItemCostListR\rrollBuffsCost\x125\n\x17select_buff_source_hint\
-    \x18\x0b\x20\x01(\rR\x14selectBuffSourceHint\x12(\n\x10source_cur_count\
-    \x18\x04\x20\x01(\rR\x0esourceCurCount\x12-\n\x13roll_buff_max_times\x18\
-    \x06\x20\x01(\rR\x10rollBuffMaxTimes\x12,\n\x12source_total_count\x18\
-    \x0f\x20\x01(\rR\x10sourceTotalCount\x12\x19\n\x08can_roll\x18\x01\x20\
-    \x01(\x08R\x07canRoll\x12/\n\x14first_buff_type_list\x18\x02\x20\x03(\rR\
-    \x11firstBuffTypeList\x12&\n\x0froll_buff_times\x18\x0c\x20\x01(\rR\rrol\
-    lBuffTimes\x12/\n\x14roll_buff_free_count\x18\t\x20\x01(\rR\x11rollBuffF\
-    reeCount\x126\n\x0emaze_buff_list\x18\x07\x20\x03(\x0b2\x10.RogueCommonB\
-    uffR\x0cmazeBuffList\x12=\n\x0bsource_type\x18\x08\x20\x01(\x0e2\x1c.Rog\
-    ueCommonBuffSelectSourceR\nsourceType\x12>\n\x1chandbook_unlock_buff_id_\
-    list\x18\x03\x20\x03(\rR\x18handbookUnlockBuffIdList\x123\n\x16certain_s\
-    elect_buff_id\x18\r\x20\x01(\rR\x13certainSelectBuffIdB\x15\n\x13emu.lun\
-    arcore.protob\x06proto3\
+    \n\x1fRogueCommonBuffSelectInfo.proto\x1a\x11CCMHPCONEME.proto\x1a\x11CG\
+    MLGCGMBDH.proto\x1a%RogueCommonBuffSelectSourceType.proto\"\x9a\x05\n\
+    \x19RogueCommonBuffSelectInfo\x126\n\x10select_buff_list\x18\x03\x20\x03\
+    (\x0b2\x0c.CCMHPCONEMER\x0eselectBuffList\x12\x19\n\x08can_roll\x18\x0b\
+    \x20\x01(\x08R\x07canRoll\x12/\n\x14first_buff_type_list\x18\x07\x20\x03\
+    (\rR\x11firstBuffTypeList\x12&\n\x0froll_buff_count\x18\x04\x20\x01(\rR\
+    \rrollBuffCount\x12$\n\x0esource_hint_id\x18\x08\x20\x01(\rR\x0csourceHi\
+    ntId\x12;\n\x13roll_buff_cost_data\x18\x05\x20\x01(\x0b2\x0c.CGMLGCGMBDH\
+    R\x10rollBuffCostData\x12-\n\x13roll_buff_max_count\x18\x01\x20\x01(\rR\
+    \x10rollBuffMaxCount\x12,\n\x12source_total_count\x18\x0e\x20\x01(\rR\
+    \x10sourceTotalCount\x12A\n\x0bsource_type\x18\x0c\x20\x01(\x0e2\x20.Rog\
+    ueCommonBuffSelectSourceTypeR\nsourceType\x12(\n\x10source_cur_count\x18\
+    \x06\x20\x01(\rR\x0esourceCurCount\x12/\n\x14roll_buff_free_count\x18\r\
+    \x20\x01(\rR\x11rollBuffFreeCount\x123\n\x16certain_select_buff_id\x18\
+    \x02\x20\x01(\rR\x13certainSelectBuffId\x12>\n\x1chandbook_unlock_buff_i\
+    d_list\x18\x0f\x20\x03(\rR\x18handbookUnlockBuffIdListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -406,9 +405,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::ItemCostList::file_descriptor().clone());
-            deps.push(super::RogueCommonBuffSelectSource::file_descriptor().clone());
-            deps.push(super::RogueCommonBuff::file_descriptor().clone());
+            deps.push(super::CCMHPCONEME::file_descriptor().clone());
+            deps.push(super::CGMLGCGMBDH::file_descriptor().clone());
+            deps.push(super::RogueCommonBuffSelectSourceType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueCommonBuffSelectInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

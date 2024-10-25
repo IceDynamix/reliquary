@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PromoteEquipmentCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PromoteEquipmentCsReq.item_cost_list)
-    pub item_cost_list: ::protobuf::MessageField<super::ItemCostList::ItemCostList>,
     // @@protoc_insertion_point(field:PromoteEquipmentCsReq.equipment_unique_id)
     pub equipment_unique_id: u32,
+    // @@protoc_insertion_point(field:PromoteEquipmentCsReq.NLBLNCBKFKI)
+    pub NLBLNCBKFKI: ::protobuf::MessageField<super::CGMLGCGMBDH::CGMLGCGMBDH>,
     // special fields
     // @@protoc_insertion_point(special_field:PromoteEquipmentCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl PromoteEquipmentCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostList::ItemCostList>(
-            "item_cost_list",
-            |m: &PromoteEquipmentCsReq| { &m.item_cost_list },
-            |m: &mut PromoteEquipmentCsReq| { &mut m.item_cost_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "equipment_unique_id",
             |m: &PromoteEquipmentCsReq| { &m.equipment_unique_id },
             |m: &mut PromoteEquipmentCsReq| { &mut m.equipment_unique_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CGMLGCGMBDH::CGMLGCGMBDH>(
+            "NLBLNCBKFKI",
+            |m: &PromoteEquipmentCsReq| { &m.NLBLNCBKFKI },
+            |m: &mut PromoteEquipmentCsReq| { &mut m.NLBLNCBKFKI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PromoteEquipmentCsReq>(
             "PromoteEquipmentCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for PromoteEquipmentCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_cost_list)?;
-                },
-                88 => {
+                80 => {
                     self.equipment_unique_id = is.read_uint32()?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NLBLNCBKFKI)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,12 +98,12 @@ impl ::protobuf::Message for PromoteEquipmentCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.item_cost_list.as_ref() {
+        if self.equipment_unique_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.equipment_unique_id);
+        }
+        if let Some(v) = self.NLBLNCBKFKI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.equipment_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.equipment_unique_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for PromoteEquipmentCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.item_cost_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        }
         if self.equipment_unique_id != 0 {
-            os.write_uint32(11, self.equipment_unique_id)?;
+            os.write_uint32(10, self.equipment_unique_id)?;
+        }
+        if let Some(v) = self.NLBLNCBKFKI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for PromoteEquipmentCsReq {
     }
 
     fn clear(&mut self) {
-        self.item_cost_list.clear();
         self.equipment_unique_id = 0;
+        self.NLBLNCBKFKI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PromoteEquipmentCsReq {
         static instance: PromoteEquipmentCsReq = PromoteEquipmentCsReq {
-            item_cost_list: ::protobuf::MessageField::none(),
             equipment_unique_id: 0,
+            NLBLNCBKFKI: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for PromoteEquipmentCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bPromoteEquipmentCsReq.proto\x1a\x12ItemCostList.proto\"|\n\x15Prom\
-    oteEquipmentCsReq\x123\n\x0eitem_cost_list\x18\x0f\x20\x01(\x0b2\r.ItemC\
-    ostListR\x0citemCostList\x12.\n\x13equipment_unique_id\x18\x0b\x20\x01(\
-    \rR\x11equipmentUniqueIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x1bPromoteEquipmentCsReq.proto\x1a\x11CGMLGCGMBDH.proto\"w\n\x15Promo\
+    teEquipmentCsReq\x12.\n\x13equipment_unique_id\x18\n\x20\x01(\rR\x11equi\
+    pmentUniqueId\x12.\n\x0bNLBLNCBKFKI\x18\x0e\x20\x01(\x0b2\x0c.CGMLGCGMBD\
+    HR\x0bNLBLNCBKFKIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ItemCostList::file_descriptor().clone());
+            deps.push(super::CGMLGCGMBDH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PromoteEquipmentCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,14 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LeaveRogueScRsp {
     // message fields
-    // @@protoc_insertion_point(field:LeaveRogueScRsp.scene)
-    pub scene: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
-    // @@protoc_insertion_point(field:LeaveRogueScRsp.rogue_info)
-    pub rogue_info: ::protobuf::MessageField<super::RogueInfo::RogueInfo>,
-    // @@protoc_insertion_point(field:LeaveRogueScRsp.lineup)
-    pub lineup: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
+    // @@protoc_insertion_point(field:LeaveRogueScRsp.NPFLJLEEFFI)
+    pub NPFLJLEEFFI: ::protobuf::MessageField<super::MGCIMEKACFE::MGCIMEKACFE>,
+    // @@protoc_insertion_point(field:LeaveRogueScRsp.GOHKAOJCIDM)
+    pub GOHKAOJCIDM: ::protobuf::MessageField<super::BMIEOHPLAKP::BMIEOHPLAKP>,
+    // @@protoc_insertion_point(field:LeaveRogueScRsp.COCFMLGGMKE)
+    pub COCFMLGGMKE: ::protobuf::MessageField<super::FJPJJEIJLLP::FJPJJEIJLLP>,
     // @@protoc_insertion_point(field:LeaveRogueScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:LeaveRogueScRsp.EMDECAJPAPM)
+    pub EMDECAJPAPM: ::protobuf::MessageField<super::FHGPCKGFGAO::FHGPCKGFGAO>,
     // special fields
     // @@protoc_insertion_point(special_field:LeaveRogueScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,27 +56,32 @@ impl LeaveRogueScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(4);
+        let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneInfo::SceneInfo>(
-            "scene",
-            |m: &LeaveRogueScRsp| { &m.scene },
-            |m: &mut LeaveRogueScRsp| { &mut m.scene },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MGCIMEKACFE::MGCIMEKACFE>(
+            "NPFLJLEEFFI",
+            |m: &LeaveRogueScRsp| { &m.NPFLJLEEFFI },
+            |m: &mut LeaveRogueScRsp| { &mut m.NPFLJLEEFFI },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueInfo::RogueInfo>(
-            "rogue_info",
-            |m: &LeaveRogueScRsp| { &m.rogue_info },
-            |m: &mut LeaveRogueScRsp| { &mut m.rogue_info },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BMIEOHPLAKP::BMIEOHPLAKP>(
+            "GOHKAOJCIDM",
+            |m: &LeaveRogueScRsp| { &m.GOHKAOJCIDM },
+            |m: &mut LeaveRogueScRsp| { &mut m.GOHKAOJCIDM },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
-            "lineup",
-            |m: &LeaveRogueScRsp| { &m.lineup },
-            |m: &mut LeaveRogueScRsp| { &mut m.lineup },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FJPJJEIJLLP::FJPJJEIJLLP>(
+            "COCFMLGGMKE",
+            |m: &LeaveRogueScRsp| { &m.COCFMLGGMKE },
+            |m: &mut LeaveRogueScRsp| { &mut m.COCFMLGGMKE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &LeaveRogueScRsp| { &m.retcode },
             |m: &mut LeaveRogueScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FHGPCKGFGAO::FHGPCKGFGAO>(
+            "EMDECAJPAPM",
+            |m: &LeaveRogueScRsp| { &m.EMDECAJPAPM },
+            |m: &mut LeaveRogueScRsp| { &mut m.EMDECAJPAPM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LeaveRogueScRsp>(
             "LeaveRogueScRsp",
@@ -94,17 +101,20 @@ impl ::protobuf::Message for LeaveRogueScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NPFLJLEEFFI)?;
                 },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_info)?;
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GOHKAOJCIDM)?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.COCFMLGGMKE)?;
+                },
+                80 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
-                },
-                8 => {
-                    self.retcode = is.read_uint32()?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EMDECAJPAPM)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,20 +128,24 @@ impl ::protobuf::Message for LeaveRogueScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.scene.as_ref() {
+        if let Some(v) = self.NPFLJLEEFFI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.rogue_info.as_ref() {
+        if let Some(v) = self.GOHKAOJCIDM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.lineup.as_ref() {
+        if let Some(v) = self.COCFMLGGMKE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+        }
+        if let Some(v) = self.EMDECAJPAPM.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -139,17 +153,20 @@ impl ::protobuf::Message for LeaveRogueScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.scene.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if let Some(v) = self.NPFLJLEEFFI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
-        if let Some(v) = self.rogue_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if let Some(v) = self.GOHKAOJCIDM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
-        if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if let Some(v) = self.COCFMLGGMKE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
+        }
+        if let Some(v) = self.EMDECAJPAPM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,19 +185,21 @@ impl ::protobuf::Message for LeaveRogueScRsp {
     }
 
     fn clear(&mut self) {
-        self.scene.clear();
-        self.rogue_info.clear();
-        self.lineup.clear();
+        self.NPFLJLEEFFI.clear();
+        self.GOHKAOJCIDM.clear();
+        self.COCFMLGGMKE.clear();
         self.retcode = 0;
+        self.EMDECAJPAPM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LeaveRogueScRsp {
         static instance: LeaveRogueScRsp = LeaveRogueScRsp {
-            scene: ::protobuf::MessageField::none(),
-            rogue_info: ::protobuf::MessageField::none(),
-            lineup: ::protobuf::MessageField::none(),
+            NPFLJLEEFFI: ::protobuf::MessageField::none(),
+            GOHKAOJCIDM: ::protobuf::MessageField::none(),
+            COCFMLGGMKE: ::protobuf::MessageField::none(),
             retcode: 0,
+            EMDECAJPAPM: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -205,12 +224,14 @@ impl ::protobuf::reflect::ProtobufValue for LeaveRogueScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15LeaveRogueScRsp.proto\x1a\x0fRogueInfo.proto\x1a\x10LineupInfo.pro\
-    to\x1a\x0fSceneInfo.proto\"\x9d\x01\n\x0fLeaveRogueScRsp\x12\x20\n\x05sc\
-    ene\x18\x02\x20\x01(\x0b2\n.SceneInfoR\x05scene\x12)\n\nrogue_info\x18\t\
-    \x20\x01(\x0b2\n.RogueInfoR\trogueInfo\x12#\n\x06lineup\x18\x0e\x20\x01(\
-    \x0b2\x0b.LineupInfoR\x06lineup\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\
-    \x07retcodeB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x15LeaveRogueScRsp.proto\x1a\x11BMIEOHPLAKP.proto\x1a\x11FHGPCKGFGAO.\
+    proto\x1a\x11FJPJJEIJLLP.proto\x1a\x11MGCIMEKACFE.proto\"\xeb\x01\n\x0fL\
+    eaveRogueScRsp\x12.\n\x0bNPFLJLEEFFI\x18\x07\x20\x01(\x0b2\x0c.MGCIMEKAC\
+    FER\x0bNPFLJLEEFFI\x12.\n\x0bGOHKAOJCIDM\x18\x0c\x20\x01(\x0b2\x0c.BMIEO\
+    HPLAKPR\x0bGOHKAOJCIDM\x12.\n\x0bCOCFMLGGMKE\x18\x0b\x20\x01(\x0b2\x0c.F\
+    JPJJEIJLLPR\x0bCOCFMLGGMKE\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07ret\
+    code\x12.\n\x0bEMDECAJPAPM\x18\x0e\x20\x01(\x0b2\x0c.FHGPCKGFGAOR\x0bEMD\
+    ECAJPAPMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -227,10 +248,11 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::RogueInfo::file_descriptor().clone());
-            deps.push(super::LineupInfo::file_descriptor().clone());
-            deps.push(super::SceneInfo::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(4);
+            deps.push(super::BMIEOHPLAKP::file_descriptor().clone());
+            deps.push(super::FHGPCKGFGAO::file_descriptor().clone());
+            deps.push(super::FJPJJEIJLLP::file_descriptor().clone());
+            deps.push(super::MGCIMEKACFE::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(LeaveRogueScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

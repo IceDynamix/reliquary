@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetPrivateChatHistoryScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetPrivateChatHistoryScRsp.sender_uid)
-    pub sender_uid: u32,
-    // @@protoc_insertion_point(field:GetPrivateChatHistoryScRsp.to_uid)
-    pub to_uid: u32,
+    // @@protoc_insertion_point(field:GetPrivateChatHistoryScRsp.OBMLFLCFAFD)
+    pub OBMLFLCFAFD: u32,
+    // @@protoc_insertion_point(field:GetPrivateChatHistoryScRsp.OOLMNNHKCEP)
+    pub OOLMNNHKCEP: ::std::vec::Vec<super::MCDFBBPFGMF::MCDFBBPFGMF>,
     // @@protoc_insertion_point(field:GetPrivateChatHistoryScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetPrivateChatHistoryScRsp.chat_list)
-    pub chat_list: ::std::vec::Vec<super::Chat::Chat>,
+    // @@protoc_insertion_point(field:GetPrivateChatHistoryScRsp.CIFLDHGOOCJ)
+    pub CIFLDHGOOCJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetPrivateChatHistoryScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl GetPrivateChatHistoryScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "sender_uid",
-            |m: &GetPrivateChatHistoryScRsp| { &m.sender_uid },
-            |m: &mut GetPrivateChatHistoryScRsp| { &mut m.sender_uid },
+            "OBMLFLCFAFD",
+            |m: &GetPrivateChatHistoryScRsp| { &m.OBMLFLCFAFD },
+            |m: &mut GetPrivateChatHistoryScRsp| { &mut m.OBMLFLCFAFD },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "to_uid",
-            |m: &GetPrivateChatHistoryScRsp| { &m.to_uid },
-            |m: &mut GetPrivateChatHistoryScRsp| { &mut m.to_uid },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OOLMNNHKCEP",
+            |m: &GetPrivateChatHistoryScRsp| { &m.OOLMNNHKCEP },
+            |m: &mut GetPrivateChatHistoryScRsp| { &mut m.OOLMNNHKCEP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetPrivateChatHistoryScRsp| { &m.retcode },
             |m: &mut GetPrivateChatHistoryScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "chat_list",
-            |m: &GetPrivateChatHistoryScRsp| { &m.chat_list },
-            |m: &mut GetPrivateChatHistoryScRsp| { &mut m.chat_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CIFLDHGOOCJ",
+            |m: &GetPrivateChatHistoryScRsp| { &m.CIFLDHGOOCJ },
+            |m: &mut GetPrivateChatHistoryScRsp| { &mut m.CIFLDHGOOCJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetPrivateChatHistoryScRsp>(
             "GetPrivateChatHistoryScRsp",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for GetPrivateChatHistoryScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.sender_uid = is.read_uint32()?;
+                64 => {
+                    self.OBMLFLCFAFD = is.read_uint32()?;
                 },
-                56 => {
-                    self.to_uid = is.read_uint32()?;
+                42 => {
+                    self.OOLMNNHKCEP.push(is.read_message()?);
                 },
-                120 => {
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
-                74 => {
-                    self.chat_list.push(is.read_message()?);
+                32 => {
+                    self.CIFLDHGOOCJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,37 +118,37 @@ impl ::protobuf::Message for GetPrivateChatHistoryScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.sender_uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.sender_uid);
+        if self.OBMLFLCFAFD != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.OBMLFLCFAFD);
         }
-        if self.to_uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.to_uid);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
-        }
-        for value in &self.chat_list {
+        for value in &self.OOLMNNHKCEP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+        }
+        if self.CIFLDHGOOCJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.CIFLDHGOOCJ);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.sender_uid != 0 {
-            os.write_uint32(3, self.sender_uid)?;
+        if self.OBMLFLCFAFD != 0 {
+            os.write_uint32(8, self.OBMLFLCFAFD)?;
         }
-        if self.to_uid != 0 {
-            os.write_uint32(7, self.to_uid)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
-        }
-        for v in &self.chat_list {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        for v in &self.OOLMNNHKCEP {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
+        if self.retcode != 0 {
+            os.write_uint32(14, self.retcode)?;
+        }
+        if self.CIFLDHGOOCJ != 0 {
+            os.write_uint32(4, self.CIFLDHGOOCJ)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -166,19 +166,19 @@ impl ::protobuf::Message for GetPrivateChatHistoryScRsp {
     }
 
     fn clear(&mut self) {
-        self.sender_uid = 0;
-        self.to_uid = 0;
+        self.OBMLFLCFAFD = 0;
+        self.OOLMNNHKCEP.clear();
         self.retcode = 0;
-        self.chat_list.clear();
+        self.CIFLDHGOOCJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetPrivateChatHistoryScRsp {
         static instance: GetPrivateChatHistoryScRsp = GetPrivateChatHistoryScRsp {
-            sender_uid: 0,
-            to_uid: 0,
+            OBMLFLCFAFD: 0,
+            OOLMNNHKCEP: ::std::vec::Vec::new(),
             retcode: 0,
-            chat_list: ::std::vec::Vec::new(),
+            CIFLDHGOOCJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,11 +203,12 @@ impl ::protobuf::reflect::ProtobufValue for GetPrivateChatHistoryScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20GetPrivateChatHistoryScRsp.proto\x1a\nChat.proto\"\x90\x01\n\x1aGe\
-    tPrivateChatHistoryScRsp\x12\x1d\n\nsender_uid\x18\x03\x20\x01(\rR\tsend\
-    erUid\x12\x15\n\x06to_uid\x18\x07\x20\x01(\rR\x05toUid\x12\x18\n\x07retc\
-    ode\x18\x0f\x20\x01(\rR\x07retcode\x12\"\n\tchat_list\x18\t\x20\x03(\x0b\
-    2\x05.ChatR\x08chatListB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x20GetPrivateChatHistoryScRsp.proto\x1a\x11MCDFBBPFGMF.proto\"\xaa\
+    \x01\n\x1aGetPrivateChatHistoryScRsp\x12\x20\n\x0bOBMLFLCFAFD\x18\x08\
+    \x20\x01(\rR\x0bOBMLFLCFAFD\x12.\n\x0bOOLMNNHKCEP\x18\x05\x20\x03(\x0b2\
+    \x0c.MCDFBBPFGMFR\x0bOOLMNNHKCEP\x12\x18\n\x07retcode\x18\x0e\x20\x01(\r\
+    R\x07retcode\x12\x20\n\x0bCIFLDHGOOCJ\x18\x04\x20\x01(\rR\x0bCIFLDHGOOCJ\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -225,7 +226,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::Chat::file_descriptor().clone());
+            deps.push(super::MCDFBBPFGMF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetPrivateChatHistoryScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

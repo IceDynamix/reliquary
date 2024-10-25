@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueUpdateActionPointScNotify {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueUpdateActionPointScNotify.action_point)
-    pub action_point: u32,
+    // @@protoc_insertion_point(field:ChessRogueUpdateActionPointScNotify.PMJMDJEAGAF)
+    pub PMJMDJEAGAF: i32,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueUpdateActionPointScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl ChessRogueUpdateActionPointScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "action_point",
-            |m: &ChessRogueUpdateActionPointScNotify| { &m.action_point },
-            |m: &mut ChessRogueUpdateActionPointScNotify| { &mut m.action_point },
+            "PMJMDJEAGAF",
+            |m: &ChessRogueUpdateActionPointScNotify| { &m.PMJMDJEAGAF },
+            |m: &mut ChessRogueUpdateActionPointScNotify| { &mut m.PMJMDJEAGAF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueUpdateActionPointScNotify>(
             "ChessRogueUpdateActionPointScNotify",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for ChessRogueUpdateActionPointScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.action_point = is.read_uint32()?;
+                120 => {
+                    self.PMJMDJEAGAF = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for ChessRogueUpdateActionPointScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.action_point != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.action_point);
+        if self.PMJMDJEAGAF != 0 {
+            my_size += ::protobuf::rt::int32_size(15, self.PMJMDJEAGAF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for ChessRogueUpdateActionPointScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.action_point != 0 {
-            os.write_uint32(9, self.action_point)?;
+        if self.PMJMDJEAGAF != 0 {
+            os.write_int32(15, self.PMJMDJEAGAF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for ChessRogueUpdateActionPointScNotify {
     }
 
     fn clear(&mut self) {
-        self.action_point = 0;
+        self.PMJMDJEAGAF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueUpdateActionPointScNotify {
         static instance: ChessRogueUpdateActionPointScNotify = ChessRogueUpdateActionPointScNotify {
-            action_point: 0,
+            PMJMDJEAGAF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueUpdateActionPointScNotify 
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n)ChessRogueUpdateActionPointScNotify.proto\"H\n#ChessRogueUpdateAction\
-    PointScNotify\x12!\n\x0caction_point\x18\t\x20\x01(\rR\x0bactionPointB\
-    \x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n)ChessRogueUpdateActionPointScNotify.proto\"G\n#ChessRogueUpdateAction\
+    PointScNotify\x12\x20\n\x0bPMJMDJEAGAF\x18\x0f\x20\x01(\x05R\x0bPMJMDJEA\
+    GAFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

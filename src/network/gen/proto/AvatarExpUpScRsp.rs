@@ -31,8 +31,8 @@ pub struct AvatarExpUpScRsp {
     // message fields
     // @@protoc_insertion_point(field:AvatarExpUpScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:AvatarExpUpScRsp.return_item_list)
-    pub return_item_list: ::std::vec::Vec<super::PileItem::PileItem>,
+    // @@protoc_insertion_point(field:AvatarExpUpScRsp.JIBNMFNHKLD)
+    pub JIBNMFNHKLD: ::std::vec::Vec<super::PileItem::PileItem>,
     // special fields
     // @@protoc_insertion_point(special_field:AvatarExpUpScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,9 +58,9 @@ impl AvatarExpUpScRsp {
             |m: &mut AvatarExpUpScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "return_item_list",
-            |m: &AvatarExpUpScRsp| { &m.return_item_list },
-            |m: &mut AvatarExpUpScRsp| { &mut m.return_item_list },
+            "JIBNMFNHKLD",
+            |m: &AvatarExpUpScRsp| { &m.JIBNMFNHKLD },
+            |m: &mut AvatarExpUpScRsp| { &mut m.JIBNMFNHKLD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AvatarExpUpScRsp>(
             "AvatarExpUpScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for AvatarExpUpScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
-                90 => {
-                    self.return_item_list.push(is.read_message()?);
+                82 => {
+                    self.JIBNMFNHKLD.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -99,9 +99,9 @@ impl ::protobuf::Message for AvatarExpUpScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
-        for value in &self.return_item_list {
+        for value in &self.JIBNMFNHKLD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -112,10 +112,10 @@ impl ::protobuf::Message for AvatarExpUpScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
-        for v in &self.return_item_list {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        for v in &self.JIBNMFNHKLD {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -135,14 +135,14 @@ impl ::protobuf::Message for AvatarExpUpScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.return_item_list.clear();
+        self.JIBNMFNHKLD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AvatarExpUpScRsp {
         static instance: AvatarExpUpScRsp = AvatarExpUpScRsp {
             retcode: 0,
-            return_item_list: ::std::vec::Vec::new(),
+            JIBNMFNHKLD: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for AvatarExpUpScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16AvatarExpUpScRsp.proto\x1a\x0ePileItem.proto\"a\n\x10AvatarExpUpSc\
-    Rsp\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\x123\n\x10return\
-    _item_list\x18\x0b\x20\x03(\x0b2\t.PileItemR\x0ereturnItemListB\x15\n\
-    \x13emu.lunarcore.protob\x06proto3\
+    \n\x16AvatarExpUpScRsp.proto\x1a\x0ePileItem.proto\"Y\n\x10AvatarExpUpSc\
+    Rsp\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12+\n\x0bJIBNMF\
+    NHKLD\x18\n\x20\x03(\x0b2\t.PileItemR\x0bJIBNMFNHKLDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

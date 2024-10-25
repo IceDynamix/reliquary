@@ -95,7 +95,7 @@ impl ChatType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0eChatType.proto*J\n\x08ChatType\x12\x12\n\x0eCHAT_TYPE_NONE\x10\0\
     \x12\x15\n\x11CHAT_TYPE_PRIVATE\x10\x01\x12\x13\n\x0fCHAT_TYPE_GROUP\x10\
-    \x02B\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \x02b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

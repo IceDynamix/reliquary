@@ -31,8 +31,8 @@ pub struct SetDisplayAvatarScRsp {
     // message fields
     // @@protoc_insertion_point(field:SetDisplayAvatarScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:SetDisplayAvatarScRsp.display_avatar_list)
-    pub display_avatar_list: ::std::vec::Vec<super::DisplayAvatar::DisplayAvatar>,
+    // @@protoc_insertion_point(field:SetDisplayAvatarScRsp.DONCFOCOIJP)
+    pub DONCFOCOIJP: ::std::vec::Vec<super::INIHDKJNEMC::INIHDKJNEMC>,
     // special fields
     // @@protoc_insertion_point(special_field:SetDisplayAvatarScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,9 +58,9 @@ impl SetDisplayAvatarScRsp {
             |m: &mut SetDisplayAvatarScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "display_avatar_list",
-            |m: &SetDisplayAvatarScRsp| { &m.display_avatar_list },
-            |m: &mut SetDisplayAvatarScRsp| { &mut m.display_avatar_list },
+            "DONCFOCOIJP",
+            |m: &SetDisplayAvatarScRsp| { &m.DONCFOCOIJP },
+            |m: &mut SetDisplayAvatarScRsp| { &mut m.DONCFOCOIJP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetDisplayAvatarScRsp>(
             "SetDisplayAvatarScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for SetDisplayAvatarScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
-                34 => {
-                    self.display_avatar_list.push(is.read_message()?);
+                106 => {
+                    self.DONCFOCOIJP.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -99,9 +99,9 @@ impl ::protobuf::Message for SetDisplayAvatarScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
-        for value in &self.display_avatar_list {
+        for value in &self.DONCFOCOIJP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -112,10 +112,10 @@ impl ::protobuf::Message for SetDisplayAvatarScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
         }
-        for v in &self.display_avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        for v in &self.DONCFOCOIJP {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -135,14 +135,14 @@ impl ::protobuf::Message for SetDisplayAvatarScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.display_avatar_list.clear();
+        self.DONCFOCOIJP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetDisplayAvatarScRsp {
         static instance: SetDisplayAvatarScRsp = SetDisplayAvatarScRsp {
             retcode: 0,
-            display_avatar_list: ::std::vec::Vec::new(),
+            DONCFOCOIJP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for SetDisplayAvatarScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bSetDisplayAvatarScRsp.proto\x1a\x13DisplayAvatar.proto\"q\n\x15Set\
-    DisplayAvatarScRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\
-    \x12>\n\x13display_avatar_list\x18\x04\x20\x03(\x0b2\x0e.DisplayAvatarR\
-    \x11displayAvatarListB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x1bSetDisplayAvatarScRsp.proto\x1a\x11INIHDKJNEMC.proto\"a\n\x15SetDi\
+    splayAvatarScRsp\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\x12\
+    .\n\x0bDONCFOCOIJP\x18\r\x20\x03(\x0b2\x0c.INIHDKJNEMCR\x0bDONCFOCOIJPb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::DisplayAvatar::file_descriptor().clone());
+            deps.push(super::INIHDKJNEMC::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SetDisplayAvatarScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -129,8 +129,7 @@ impl ::protobuf::reflect::ProtobufValue for GetQuestDataCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17GetQuestDataCsReq.proto\"\x13\n\x11GetQuestDataCsReqB\x15\n\x13emu\
-    .lunarcore.protob\x06proto3\
+    \n\x17GetQuestDataCsReq.proto\"\x13\n\x11GetQuestDataCsReqb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

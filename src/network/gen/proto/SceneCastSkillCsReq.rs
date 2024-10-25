@@ -29,18 +29,28 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneCastSkillCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SceneCastSkillCsReq.caster_id)
-    pub caster_id: u32,
-    // @@protoc_insertion_point(field:SceneCastSkillCsReq.hit_target_entity_id_list)
-    pub hit_target_entity_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:SceneCastSkillCsReq.target_motion)
-    pub target_motion: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
-    // @@protoc_insertion_point(field:SceneCastSkillCsReq.attacked_group_id)
-    pub attacked_group_id: u32,
-    // @@protoc_insertion_point(field:SceneCastSkillCsReq.skill_index)
-    pub skill_index: u32,
-    // @@protoc_insertion_point(field:SceneCastSkillCsReq.assist_monster_wave_list)
-    pub assist_monster_wave_list: ::std::vec::Vec<super::AssistMonsterWave::AssistMonsterWave>,
+    // @@protoc_insertion_point(field:SceneCastSkillCsReq.GGDJHGBNDFO)
+    pub GGDJHGBNDFO: ::std::vec::Vec<super::FCNPKHDMNFE::FCNPKHDMNFE>,
+    // @@protoc_insertion_point(field:SceneCastSkillCsReq.INDELAJPFGA)
+    pub INDELAJPFGA: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SceneCastSkillCsReq.ACPOKBKHNHE)
+    pub ACPOKBKHNHE: u32,
+    // @@protoc_insertion_point(field:SceneCastSkillCsReq.HEKDEHADKAO)
+    pub HEKDEHADKAO: ::std::vec::Vec<super::ALDDPHFCMGG::ALDDPHFCMGG>,
+    // @@protoc_insertion_point(field:SceneCastSkillCsReq.MFHMICGELNB)
+    pub MFHMICGELNB: ::std::string::String,
+    // @@protoc_insertion_point(field:SceneCastSkillCsReq.EKOBDMKFJID)
+    pub EKOBDMKFJID: u32,
+    // @@protoc_insertion_point(field:SceneCastSkillCsReq.FHHDOAIEMAP)
+    pub FHHDOAIEMAP: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SceneCastSkillCsReq.GKHCJGBKILE)
+    pub GKHCJGBKILE: u32,
+    // @@protoc_insertion_point(field:SceneCastSkillCsReq.EPEFOIBMKEC)
+    pub EPEFOIBMKEC: ::protobuf::MessageField<super::IMLDMJECKLG::IMLDMJECKLG>,
+    // @@protoc_insertion_point(field:SceneCastSkillCsReq.GOJHHBLMAEB)
+    pub GOJHHBLMAEB: u32,
+    // @@protoc_insertion_point(field:SceneCastSkillCsReq.HKJCOIOHFKP)
+    pub HKJCOIOHFKP: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::HGIOOANGAAJ::HGIOOANGAAJ>>,
     // special fields
     // @@protoc_insertion_point(special_field:SceneCastSkillCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,37 +68,62 @@ impl SceneCastSkillCsReq {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(6);
+        let mut fields = ::std::vec::Vec::with_capacity(11);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "caster_id",
-            |m: &SceneCastSkillCsReq| { &m.caster_id },
-            |m: &mut SceneCastSkillCsReq| { &mut m.caster_id },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "GGDJHGBNDFO",
+            |m: &SceneCastSkillCsReq| { &m.GGDJHGBNDFO },
+            |m: &mut SceneCastSkillCsReq| { &mut m.GGDJHGBNDFO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "hit_target_entity_id_list",
-            |m: &SceneCastSkillCsReq| { &m.hit_target_entity_id_list },
-            |m: &mut SceneCastSkillCsReq| { &mut m.hit_target_entity_id_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfo::MotionInfo>(
-            "target_motion",
-            |m: &SceneCastSkillCsReq| { &m.target_motion },
-            |m: &mut SceneCastSkillCsReq| { &mut m.target_motion },
+            "INDELAJPFGA",
+            |m: &SceneCastSkillCsReq| { &m.INDELAJPFGA },
+            |m: &mut SceneCastSkillCsReq| { &mut m.INDELAJPFGA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "attacked_group_id",
-            |m: &SceneCastSkillCsReq| { &m.attacked_group_id },
-            |m: &mut SceneCastSkillCsReq| { &mut m.attacked_group_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "skill_index",
-            |m: &SceneCastSkillCsReq| { &m.skill_index },
-            |m: &mut SceneCastSkillCsReq| { &mut m.skill_index },
+            "ACPOKBKHNHE",
+            |m: &SceneCastSkillCsReq| { &m.ACPOKBKHNHE },
+            |m: &mut SceneCastSkillCsReq| { &mut m.ACPOKBKHNHE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "assist_monster_wave_list",
-            |m: &SceneCastSkillCsReq| { &m.assist_monster_wave_list },
-            |m: &mut SceneCastSkillCsReq| { &mut m.assist_monster_wave_list },
+            "HEKDEHADKAO",
+            |m: &SceneCastSkillCsReq| { &m.HEKDEHADKAO },
+            |m: &mut SceneCastSkillCsReq| { &mut m.HEKDEHADKAO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MFHMICGELNB",
+            |m: &SceneCastSkillCsReq| { &m.MFHMICGELNB },
+            |m: &mut SceneCastSkillCsReq| { &mut m.MFHMICGELNB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EKOBDMKFJID",
+            |m: &SceneCastSkillCsReq| { &m.EKOBDMKFJID },
+            |m: &mut SceneCastSkillCsReq| { &mut m.EKOBDMKFJID },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FHHDOAIEMAP",
+            |m: &SceneCastSkillCsReq| { &m.FHHDOAIEMAP },
+            |m: &mut SceneCastSkillCsReq| { &mut m.FHHDOAIEMAP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GKHCJGBKILE",
+            |m: &SceneCastSkillCsReq| { &m.GKHCJGBKILE },
+            |m: &mut SceneCastSkillCsReq| { &mut m.GKHCJGBKILE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IMLDMJECKLG::IMLDMJECKLG>(
+            "EPEFOIBMKEC",
+            |m: &SceneCastSkillCsReq| { &m.EPEFOIBMKEC },
+            |m: &mut SceneCastSkillCsReq| { &mut m.EPEFOIBMKEC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GOJHHBLMAEB",
+            |m: &SceneCastSkillCsReq| { &m.GOJHHBLMAEB },
+            |m: &mut SceneCastSkillCsReq| { &mut m.GOJHHBLMAEB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "HKJCOIOHFKP",
+            |m: &SceneCastSkillCsReq| { &m.HKJCOIOHFKP },
+            |m: &mut SceneCastSkillCsReq| { &mut m.HKJCOIOHFKP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SceneCastSkillCsReq>(
             "SceneCastSkillCsReq",
@@ -108,26 +143,47 @@ impl ::protobuf::Message for SceneCastSkillCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.caster_id = is.read_uint32()?;
-                },
-                82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.hit_target_entity_id_list)?;
-                },
-                80 => {
-                    self.hit_target_entity_id_list.push(is.read_uint32()?);
-                },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.target_motion)?;
-                },
-                120 => {
-                    self.attacked_group_id = is.read_uint32()?;
-                },
-                32 => {
-                    self.skill_index = is.read_uint32()?;
+                66 => {
+                    self.GGDJHGBNDFO.push(is.read_message()?);
                 },
                 98 => {
-                    self.assist_monster_wave_list.push(is.read_message()?);
+                    is.read_repeated_packed_uint32_into(&mut self.INDELAJPFGA)?;
+                },
+                96 => {
+                    self.INDELAJPFGA.push(is.read_uint32()?);
+                },
+                32 => {
+                    self.ACPOKBKHNHE = is.read_uint32()?;
+                },
+                74 => {
+                    self.HEKDEHADKAO.push(is.read_message()?);
+                },
+                122 => {
+                    self.MFHMICGELNB = is.read_string()?;
+                },
+                104 => {
+                    self.EKOBDMKFJID = is.read_uint32()?;
+                },
+                114 => {
+                    is.read_repeated_packed_uint32_into(&mut self.FHHDOAIEMAP)?;
+                },
+                112 => {
+                    self.FHHDOAIEMAP.push(is.read_uint32()?);
+                },
+                24 => {
+                    self.GKHCJGBKILE = is.read_uint32()?;
+                },
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EPEFOIBMKEC)?;
+                },
+                88 => {
+                    self.GOJHHBLMAEB = is.read_uint32()?;
+                },
+                56 => {
+                    self.HKJCOIOHFKP.push(is.read_enum_or_unknown()?);
+                },
+                58 => {
+                    ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.HKJCOIOHFKP)?
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -141,25 +197,41 @@ impl ::protobuf::Message for SceneCastSkillCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.caster_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.caster_id);
-        }
-        for value in &self.hit_target_entity_id_list {
-            my_size += ::protobuf::rt::uint32_size(10, *value);
+        for value in &self.GGDJHGBNDFO {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.target_motion.as_ref() {
+        for value in &self.INDELAJPFGA {
+            my_size += ::protobuf::rt::uint32_size(12, *value);
+        };
+        if self.ACPOKBKHNHE != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.ACPOKBKHNHE);
+        }
+        for value in &self.HEKDEHADKAO {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if !self.MFHMICGELNB.is_empty() {
+            my_size += ::protobuf::rt::string_size(15, &self.MFHMICGELNB);
+        }
+        if self.EKOBDMKFJID != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.EKOBDMKFJID);
+        }
+        for value in &self.FHHDOAIEMAP {
+            my_size += ::protobuf::rt::uint32_size(14, *value);
+        };
+        if self.GKHCJGBKILE != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.GKHCJGBKILE);
+        }
+        if let Some(v) = self.EPEFOIBMKEC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.attacked_group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.attacked_group_id);
+        if self.GOJHHBLMAEB != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.GOJHHBLMAEB);
         }
-        if self.skill_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.skill_index);
-        }
-        for value in &self.assist_monster_wave_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        for value in &self.HKJCOIOHFKP {
+            my_size += ::protobuf::rt::int32_size(7, value.value());
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -167,23 +239,38 @@ impl ::protobuf::Message for SceneCastSkillCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.caster_id != 0 {
-            os.write_uint32(14, self.caster_id)?;
-        }
-        for v in &self.hit_target_entity_id_list {
-            os.write_uint32(10, *v)?;
+        for v in &self.GGDJHGBNDFO {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
-        if let Some(v) = self.target_motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        for v in &self.INDELAJPFGA {
+            os.write_uint32(12, *v)?;
+        };
+        if self.ACPOKBKHNHE != 0 {
+            os.write_uint32(4, self.ACPOKBKHNHE)?;
         }
-        if self.attacked_group_id != 0 {
-            os.write_uint32(15, self.attacked_group_id)?;
+        for v in &self.HEKDEHADKAO {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
+        if !self.MFHMICGELNB.is_empty() {
+            os.write_string(15, &self.MFHMICGELNB)?;
         }
-        if self.skill_index != 0 {
-            os.write_uint32(4, self.skill_index)?;
+        if self.EKOBDMKFJID != 0 {
+            os.write_uint32(13, self.EKOBDMKFJID)?;
         }
-        for v in &self.assist_monster_wave_list {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        for v in &self.FHHDOAIEMAP {
+            os.write_uint32(14, *v)?;
+        };
+        if self.GKHCJGBKILE != 0 {
+            os.write_uint32(3, self.GKHCJGBKILE)?;
+        }
+        if let Some(v) = self.EPEFOIBMKEC.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        }
+        if self.GOJHHBLMAEB != 0 {
+            os.write_uint32(11, self.GOJHHBLMAEB)?;
+        }
+        for v in &self.HKJCOIOHFKP {
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(v))?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -202,23 +289,33 @@ impl ::protobuf::Message for SceneCastSkillCsReq {
     }
 
     fn clear(&mut self) {
-        self.caster_id = 0;
-        self.hit_target_entity_id_list.clear();
-        self.target_motion.clear();
-        self.attacked_group_id = 0;
-        self.skill_index = 0;
-        self.assist_monster_wave_list.clear();
+        self.GGDJHGBNDFO.clear();
+        self.INDELAJPFGA.clear();
+        self.ACPOKBKHNHE = 0;
+        self.HEKDEHADKAO.clear();
+        self.MFHMICGELNB.clear();
+        self.EKOBDMKFJID = 0;
+        self.FHHDOAIEMAP.clear();
+        self.GKHCJGBKILE = 0;
+        self.EPEFOIBMKEC.clear();
+        self.GOJHHBLMAEB = 0;
+        self.HKJCOIOHFKP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneCastSkillCsReq {
         static instance: SceneCastSkillCsReq = SceneCastSkillCsReq {
-            caster_id: 0,
-            hit_target_entity_id_list: ::std::vec::Vec::new(),
-            target_motion: ::protobuf::MessageField::none(),
-            attacked_group_id: 0,
-            skill_index: 0,
-            assist_monster_wave_list: ::std::vec::Vec::new(),
+            GGDJHGBNDFO: ::std::vec::Vec::new(),
+            INDELAJPFGA: ::std::vec::Vec::new(),
+            ACPOKBKHNHE: 0,
+            HEKDEHADKAO: ::std::vec::Vec::new(),
+            MFHMICGELNB: ::std::string::String::new(),
+            EKOBDMKFJID: 0,
+            FHHDOAIEMAP: ::std::vec::Vec::new(),
+            GKHCJGBKILE: 0,
+            EPEFOIBMKEC: ::protobuf::MessageField::none(),
+            GOJHHBLMAEB: 0,
+            HKJCOIOHFKP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -243,15 +340,19 @@ impl ::protobuf::reflect::ProtobufValue for SceneCastSkillCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19SceneCastSkillCsReq.proto\x1a\x10MotionInfo.proto\x1a\x17AssistMon\
-    sterWave.proto\"\xb8\x02\n\x13SceneCastSkillCsReq\x12\x1b\n\tcaster_id\
-    \x18\x0e\x20\x01(\rR\x08casterId\x128\n\x19hit_target_entity_id_list\x18\
-    \n\x20\x03(\rR\x15hitTargetEntityIdList\x120\n\rtarget_motion\x18\x05\
-    \x20\x01(\x0b2\x0b.MotionInfoR\x0ctargetMotion\x12*\n\x11attacked_group_\
-    id\x18\x0f\x20\x01(\rR\x0fattackedGroupId\x12\x1f\n\x0bskill_index\x18\
-    \x04\x20\x01(\rR\nskillIndex\x12K\n\x18assist_monster_wave_list\x18\x0c\
-    \x20\x03(\x0b2\x12.AssistMonsterWaveR\x15assistMonsterWaveListB\x15\n\
-    \x13emu.lunarcore.protob\x06proto3\
+    \n\x19SceneCastSkillCsReq.proto\x1a\x11ALDDPHFCMGG.proto\x1a\x11FCNPKHDM\
+    NFE.proto\x1a\x11HGIOOANGAAJ.proto\x1a\x11IMLDMJECKLG.proto\"\xc3\x03\n\
+    \x13SceneCastSkillCsReq\x12.\n\x0bGGDJHGBNDFO\x18\x08\x20\x03(\x0b2\x0c.\
+    FCNPKHDMNFER\x0bGGDJHGBNDFO\x12\x20\n\x0bINDELAJPFGA\x18\x0c\x20\x03(\rR\
+    \x0bINDELAJPFGA\x12\x20\n\x0bACPOKBKHNHE\x18\x04\x20\x01(\rR\x0bACPOKBKH\
+    NHE\x12.\n\x0bHEKDEHADKAO\x18\t\x20\x03(\x0b2\x0c.ALDDPHFCMGGR\x0bHEKDEH\
+    ADKAO\x12\x20\n\x0bMFHMICGELNB\x18\x0f\x20\x01(\tR\x0bMFHMICGELNB\x12\
+    \x20\n\x0bEKOBDMKFJID\x18\r\x20\x01(\rR\x0bEKOBDMKFJID\x12\x20\n\x0bFHHD\
+    OAIEMAP\x18\x0e\x20\x03(\rR\x0bFHHDOAIEMAP\x12\x20\n\x0bGKHCJGBKILE\x18\
+    \x03\x20\x01(\rR\x0bGKHCJGBKILE\x12.\n\x0bEPEFOIBMKEC\x18\n\x20\x01(\x0b\
+    2\x0c.IMLDMJECKLGR\x0bEPEFOIBMKEC\x12\x20\n\x0bGOJHHBLMAEB\x18\x0b\x20\
+    \x01(\rR\x0bGOJHHBLMAEB\x12.\n\x0bHKJCOIOHFKP\x18\x07\x20\x03(\x0e2\x0c.\
+    HGIOOANGAAJR\x0bHKJCOIOHFKPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -268,9 +369,11 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::MotionInfo::file_descriptor().clone());
-            deps.push(super::AssistMonsterWave::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(4);
+            deps.push(super::ALDDPHFCMGG::file_descriptor().clone());
+            deps.push(super::FCNPKHDMNFE::file_descriptor().clone());
+            deps.push(super::HGIOOANGAAJ::file_descriptor().clone());
+            deps.push(super::IMLDMJECKLG::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SceneCastSkillCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DeleteSocialEventServerCacheCsReq {
     // message fields
-    // @@protoc_insertion_point(field:DeleteSocialEventServerCacheCsReq.delete_cache)
-    pub delete_cache: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:DeleteSocialEventServerCacheCsReq.CFGEBGPMGAN)
+    pub CFGEBGPMGAN: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:DeleteSocialEventServerCacheCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl DeleteSocialEventServerCacheCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "delete_cache",
-            |m: &DeleteSocialEventServerCacheCsReq| { &m.delete_cache },
-            |m: &mut DeleteSocialEventServerCacheCsReq| { &mut m.delete_cache },
+            "CFGEBGPMGAN",
+            |m: &DeleteSocialEventServerCacheCsReq| { &m.CFGEBGPMGAN },
+            |m: &mut DeleteSocialEventServerCacheCsReq| { &mut m.CFGEBGPMGAN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DeleteSocialEventServerCacheCsReq>(
             "DeleteSocialEventServerCacheCsReq",
@@ -73,11 +73,11 @@ impl ::protobuf::Message for DeleteSocialEventServerCacheCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.delete_cache)?;
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.CFGEBGPMGAN)?;
                 },
-                104 => {
-                    self.delete_cache.push(is.read_uint32()?);
+                56 => {
+                    self.CFGEBGPMGAN.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -91,8 +91,8 @@ impl ::protobuf::Message for DeleteSocialEventServerCacheCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.delete_cache {
-            my_size += ::protobuf::rt::uint32_size(13, *value);
+        for value in &self.CFGEBGPMGAN {
+            my_size += ::protobuf::rt::uint32_size(7, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -100,8 +100,8 @@ impl ::protobuf::Message for DeleteSocialEventServerCacheCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.delete_cache {
-            os.write_uint32(13, *v)?;
+        for v in &self.CFGEBGPMGAN {
+            os.write_uint32(7, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -120,13 +120,13 @@ impl ::protobuf::Message for DeleteSocialEventServerCacheCsReq {
     }
 
     fn clear(&mut self) {
-        self.delete_cache.clear();
+        self.CFGEBGPMGAN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DeleteSocialEventServerCacheCsReq {
         static instance: DeleteSocialEventServerCacheCsReq = DeleteSocialEventServerCacheCsReq {
-            delete_cache: ::std::vec::Vec::new(),
+            CFGEBGPMGAN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -151,9 +151,9 @@ impl ::protobuf::reflect::ProtobufValue for DeleteSocialEventServerCacheCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'DeleteSocialEventServerCacheCsReq.proto\"F\n!DeleteSocialEventServerC\
-    acheCsReq\x12!\n\x0cdelete_cache\x18\r\x20\x03(\rR\x0bdeleteCacheB\x15\n\
-    \x13emu.lunarcore.protob\x06proto3\
+    \n'DeleteSocialEventServerCacheCsReq.proto\"E\n!DeleteSocialEventServerC\
+    acheCsReq\x12\x20\n\x0bCFGEBGPMGAN\x18\x07\x20\x03(\rR\x0bCFGEBGPMGANb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,8 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PickRogueAvatarScRsp {
     // message fields
-    // @@protoc_insertion_point(field:PickRogueAvatarScRsp.base_avatar_list)
-    pub base_avatar_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:PickRogueAvatarScRsp.MOICCJNMBBI)
+    pub MOICCJNMBBI: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:PickRogueAvatarScRsp.FIOAACNKLPC)
+    pub FIOAACNKLPC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:PickRogueAvatarScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PickRogueAvatarScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -48,12 +52,22 @@ impl PickRogueAvatarScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "base_avatar_list",
-            |m: &PickRogueAvatarScRsp| { &m.base_avatar_list },
-            |m: &mut PickRogueAvatarScRsp| { &mut m.base_avatar_list },
+            "MOICCJNMBBI",
+            |m: &PickRogueAvatarScRsp| { &m.MOICCJNMBBI },
+            |m: &mut PickRogueAvatarScRsp| { &mut m.MOICCJNMBBI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FIOAACNKLPC",
+            |m: &PickRogueAvatarScRsp| { &m.FIOAACNKLPC },
+            |m: &mut PickRogueAvatarScRsp| { &mut m.FIOAACNKLPC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &PickRogueAvatarScRsp| { &m.retcode },
+            |m: &mut PickRogueAvatarScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PickRogueAvatarScRsp>(
             "PickRogueAvatarScRsp",
@@ -73,11 +87,20 @@ impl ::protobuf::Message for PickRogueAvatarScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.base_avatar_list)?;
+                18 => {
+                    is.read_repeated_packed_uint32_into(&mut self.MOICCJNMBBI)?;
                 },
-                56 => {
-                    self.base_avatar_list.push(is.read_uint32()?);
+                16 => {
+                    self.MOICCJNMBBI.push(is.read_uint32()?);
+                },
+                34 => {
+                    is.read_repeated_packed_uint32_into(&mut self.FIOAACNKLPC)?;
+                },
+                32 => {
+                    self.FIOAACNKLPC.push(is.read_uint32()?);
+                },
+                64 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -91,18 +114,30 @@ impl ::protobuf::Message for PickRogueAvatarScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.base_avatar_list {
-            my_size += ::protobuf::rt::uint32_size(7, *value);
+        for value in &self.MOICCJNMBBI {
+            my_size += ::protobuf::rt::uint32_size(2, *value);
         };
+        for value in &self.FIOAACNKLPC {
+            my_size += ::protobuf::rt::uint32_size(4, *value);
+        };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.base_avatar_list {
-            os.write_uint32(7, *v)?;
+        for v in &self.MOICCJNMBBI {
+            os.write_uint32(2, *v)?;
         };
+        for v in &self.FIOAACNKLPC {
+            os.write_uint32(4, *v)?;
+        };
+        if self.retcode != 0 {
+            os.write_uint32(8, self.retcode)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -120,13 +155,17 @@ impl ::protobuf::Message for PickRogueAvatarScRsp {
     }
 
     fn clear(&mut self) {
-        self.base_avatar_list.clear();
+        self.MOICCJNMBBI.clear();
+        self.FIOAACNKLPC.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PickRogueAvatarScRsp {
         static instance: PickRogueAvatarScRsp = PickRogueAvatarScRsp {
-            base_avatar_list: ::std::vec::Vec::new(),
+            MOICCJNMBBI: ::std::vec::Vec::new(),
+            FIOAACNKLPC: ::std::vec::Vec::new(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -151,9 +190,10 @@ impl ::protobuf::reflect::ProtobufValue for PickRogueAvatarScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aPickRogueAvatarScRsp.proto\"@\n\x14PickRogueAvatarScRsp\x12(\n\x10\
-    base_avatar_list\x18\x07\x20\x03(\rR\x0ebaseAvatarListB\x15\n\x13emu.lun\
-    arcore.protob\x06proto3\
+    \n\x1aPickRogueAvatarScRsp.proto\"t\n\x14PickRogueAvatarScRsp\x12\x20\n\
+    \x0bMOICCJNMBBI\x18\x02\x20\x03(\rR\x0bMOICCJNMBBI\x12\x20\n\x0bFIOAACNK\
+    LPC\x18\x04\x20\x03(\rR\x0bFIOAACNKLPC\x12\x18\n\x07retcode\x18\x08\x20\
+    \x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

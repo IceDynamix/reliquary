@@ -100,8 +100,7 @@ impl MissionStatus {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13MissionStatus.proto*^\n\rMissionStatus\x12\x10\n\x0cMISSION_NONE\
     \x10\0\x12\x11\n\rMISSION_DOING\x10\x01\x12\x12\n\x0eMISSION_FINISH\x10\
-    \x02\x12\x14\n\x10MISSION_PREPARED\x10\x03B\x15\n\x13emu.lunarcore.proto\
-    b\x06proto3\
+    \x02\x12\x14\n\x10MISSION_PREPARED\x10\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,8 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneEnterStageCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SceneEnterStageCsReq.stage_id)
-    pub stage_id: u32,
+    // @@protoc_insertion_point(field:SceneEnterStageCsReq.GJBOOFHBEOP)
+    pub GJBOOFHBEOP: bool,
+    // @@protoc_insertion_point(field:SceneEnterStageCsReq.CFDONPMLJDP)
+    pub CFDONPMLJDP: ::protobuf::EnumOrUnknown<super::LEGPPEPEACF::LEGPPEPEACF>,
+    // @@protoc_insertion_point(field:SceneEnterStageCsReq.DAAIBKIKBEJ)
+    pub DAAIBKIKBEJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SceneEnterStageCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -48,12 +52,22 @@ impl SceneEnterStageCsReq {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "stage_id",
-            |m: &SceneEnterStageCsReq| { &m.stage_id },
-            |m: &mut SceneEnterStageCsReq| { &mut m.stage_id },
+            "GJBOOFHBEOP",
+            |m: &SceneEnterStageCsReq| { &m.GJBOOFHBEOP },
+            |m: &mut SceneEnterStageCsReq| { &mut m.GJBOOFHBEOP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CFDONPMLJDP",
+            |m: &SceneEnterStageCsReq| { &m.CFDONPMLJDP },
+            |m: &mut SceneEnterStageCsReq| { &mut m.CFDONPMLJDP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DAAIBKIKBEJ",
+            |m: &SceneEnterStageCsReq| { &m.DAAIBKIKBEJ },
+            |m: &mut SceneEnterStageCsReq| { &mut m.DAAIBKIKBEJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SceneEnterStageCsReq>(
             "SceneEnterStageCsReq",
@@ -73,8 +87,14 @@ impl ::protobuf::Message for SceneEnterStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.stage_id = is.read_uint32()?;
+                104 => {
+                    self.GJBOOFHBEOP = is.read_bool()?;
+                },
+                64 => {
+                    self.CFDONPMLJDP = is.read_enum_or_unknown()?;
+                },
+                96 => {
+                    self.DAAIBKIKBEJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +108,14 @@ impl ::protobuf::Message for SceneEnterStageCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.stage_id);
+        if self.GJBOOFHBEOP != false {
+            my_size += 1 + 1;
+        }
+        if self.CFDONPMLJDP != ::protobuf::EnumOrUnknown::new(super::LEGPPEPEACF::LEGPPEPEACF::REBATTLE_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(8, self.CFDONPMLJDP.value());
+        }
+        if self.DAAIBKIKBEJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.DAAIBKIKBEJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +123,14 @@ impl ::protobuf::Message for SceneEnterStageCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.stage_id != 0 {
-            os.write_uint32(4, self.stage_id)?;
+        if self.GJBOOFHBEOP != false {
+            os.write_bool(13, self.GJBOOFHBEOP)?;
+        }
+        if self.CFDONPMLJDP != ::protobuf::EnumOrUnknown::new(super::LEGPPEPEACF::LEGPPEPEACF::REBATTLE_TYPE_NONE) {
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.CFDONPMLJDP))?;
+        }
+        if self.DAAIBKIKBEJ != 0 {
+            os.write_uint32(12, self.DAAIBKIKBEJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +149,17 @@ impl ::protobuf::Message for SceneEnterStageCsReq {
     }
 
     fn clear(&mut self) {
-        self.stage_id = 0;
+        self.GJBOOFHBEOP = false;
+        self.CFDONPMLJDP = ::protobuf::EnumOrUnknown::new(super::LEGPPEPEACF::LEGPPEPEACF::REBATTLE_TYPE_NONE);
+        self.DAAIBKIKBEJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneEnterStageCsReq {
         static instance: SceneEnterStageCsReq = SceneEnterStageCsReq {
-            stage_id: 0,
+            GJBOOFHBEOP: false,
+            CFDONPMLJDP: ::protobuf::EnumOrUnknown::from_i32(0),
+            DAAIBKIKBEJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for SceneEnterStageCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aSceneEnterStageCsReq.proto\"1\n\x14SceneEnterStageCsReq\x12\x19\n\
-    \x08stage_id\x18\x04\x20\x01(\rR\x07stageIdB\x15\n\x13emu.lunarcore.prot\
-    ob\x06proto3\
+    \n\x1aSceneEnterStageCsReq.proto\x1a\x11LEGPPEPEACF.proto\"\x8a\x01\n\
+    \x14SceneEnterStageCsReq\x12\x20\n\x0bGJBOOFHBEOP\x18\r\x20\x01(\x08R\
+    \x0bGJBOOFHBEOP\x12.\n\x0bCFDONPMLJDP\x18\x08\x20\x01(\x0e2\x0c.LEGPPEPE\
+    ACFR\x0bCFDONPMLJDP\x12\x20\n\x0bDAAIBKIKBEJ\x18\x0c\x20\x01(\rR\x0bDAAI\
+    BKIKBEJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -167,7 +205,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(0);
+            let mut deps = ::std::vec::Vec::with_capacity(1);
+            deps.push(super::LEGPPEPEACF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SceneEnterStageCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

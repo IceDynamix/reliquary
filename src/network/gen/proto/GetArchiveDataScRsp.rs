@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetArchiveDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetArchiveDataScRsp.archive_data)
-    pub archive_data: ::protobuf::MessageField<super::ArchiveData::ArchiveData>,
     // @@protoc_insertion_point(field:GetArchiveDataScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetArchiveDataScRsp.GHLBNGHGKDF)
+    pub GHLBNGHGKDF: ::protobuf::MessageField<super::GIEAKFPCEII::GIEAKFPCEII>,
     // special fields
     // @@protoc_insertion_point(special_field:GetArchiveDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl GetArchiveDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ArchiveData::ArchiveData>(
-            "archive_data",
-            |m: &GetArchiveDataScRsp| { &m.archive_data },
-            |m: &mut GetArchiveDataScRsp| { &mut m.archive_data },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetArchiveDataScRsp| { &m.retcode },
             |m: &mut GetArchiveDataScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GIEAKFPCEII::GIEAKFPCEII>(
+            "GHLBNGHGKDF",
+            |m: &GetArchiveDataScRsp| { &m.GHLBNGHGKDF },
+            |m: &mut GetArchiveDataScRsp| { &mut m.GHLBNGHGKDF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetArchiveDataScRsp>(
             "GetArchiveDataScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for GetArchiveDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.archive_data)?;
-                },
-                56 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
+                },
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GHLBNGHGKDF)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,12 +98,12 @@ impl ::protobuf::Message for GetArchiveDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.archive_data.as_ref() {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        }
+        if let Some(v) = self.GHLBNGHGKDF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for GetArchiveDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.archive_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
+        }
+        if let Some(v) = self.GHLBNGHGKDF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for GetArchiveDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.archive_data.clear();
         self.retcode = 0;
+        self.GHLBNGHGKDF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetArchiveDataScRsp {
         static instance: GetArchiveDataScRsp = GetArchiveDataScRsp {
-            archive_data: ::protobuf::MessageField::none(),
             retcode: 0,
+            GHLBNGHGKDF: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for GetArchiveDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19GetArchiveDataScRsp.proto\x1a\x11ArchiveData.proto\"`\n\x13GetArch\
-    iveDataScRsp\x12/\n\x0carchive_data\x18\x03\x20\x01(\x0b2\x0c.ArchiveDat\
-    aR\x0barchiveData\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcodeB\
-    \x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x19GetArchiveDataScRsp.proto\x1a\x11GIEAKFPCEII.proto\"_\n\x13GetArch\
+    iveDataScRsp\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12.\n\
+    \x0bGHLBNGHGKDF\x18\x04\x20\x01(\x0b2\x0c.GIEAKFPCEIIR\x0bGHLBNGHGKDFb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ArchiveData::file_descriptor().clone());
+            deps.push(super::GIEAKFPCEII::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetArchiveDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);
