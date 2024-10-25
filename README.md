@@ -7,7 +7,7 @@ a library to parse network packets from a certain turn based anime game!
 | `network`  | parse bytes into network packets             |
 | `resource` | look up network packet resource ids from SRD |
 
-> [!WARNING] 
+> [!WARNING]
 > Many field names are obfuscated due to lacking a good name translation source for v2.6+
 
 ## use in your projects
@@ -27,14 +27,14 @@ types are outdated? check out [reliquary-codegen](https://github.com/IceDynamix/
 
 ## versioning
 
-different package versions were made for different game versions. all game version updates will warrant breaking changes in the generated protobuf types, hence the major version bumps. 
+different package versions were made for different game versions. all game version updates will warrant breaking changes in the generated protobuf types, hence the major version bumps.
 
 | package version | game version |
 |-----------------|--------------|
 | `2.0.0`         | `2.3`        |
 | `3.1.0`         | `2.4`        |
 | `4.0.0`         | `2.5`        |
-| `5.0.0`         | `2.6`        |
+| `5.1.0`         | `2.6`        |
 
 ## related
 
