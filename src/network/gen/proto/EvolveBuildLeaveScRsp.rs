@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EvolveBuildLeaveScRsp {
     // message fields
-    // @@protoc_insertion_point(field:EvolveBuildLeaveScRsp.GGHEBMCAJKI)
-    pub GGHEBMCAJKI: ::protobuf::MessageField<super::EvolveBuildLevelInfo::EvolveBuildLevelInfo>,
-    // @@protoc_insertion_point(field:EvolveBuildLeaveScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:EvolveBuildLeaveScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:EvolveBuildLeaveScRsp.BCBJPFIKPHG)
+    pub BCBJPFIKPHG: ::protobuf::MessageField<super::EvolveBuildLevelInfo::EvolveBuildLevelInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:EvolveBuildLeaveScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl EvolveBuildLeaveScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EvolveBuildLevelInfo::EvolveBuildLevelInfo>(
-            "GGHEBMCAJKI",
-            |m: &EvolveBuildLeaveScRsp| { &m.GGHEBMCAJKI },
-            |m: &mut EvolveBuildLeaveScRsp| { &mut m.GGHEBMCAJKI },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &EvolveBuildLeaveScRsp| { &m.retcode },
-            |m: &mut EvolveBuildLeaveScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &EvolveBuildLeaveScRsp| { &m.ADADHIHDHJC },
+            |m: &mut EvolveBuildLeaveScRsp| { &mut m.ADADHIHDHJC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EvolveBuildLevelInfo::EvolveBuildLevelInfo>(
+            "BCBJPFIKPHG",
+            |m: &EvolveBuildLeaveScRsp| { &m.BCBJPFIKPHG },
+            |m: &mut EvolveBuildLeaveScRsp| { &mut m.BCBJPFIKPHG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EvolveBuildLeaveScRsp>(
             "EvolveBuildLeaveScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for EvolveBuildLeaveScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GGHEBMCAJKI)?;
-                },
                 120 => {
-                    self.retcode = is.read_uint32()?;
+                    self.ADADHIHDHJC = is.read_uint32()?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BCBJPFIKPHG)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,12 +98,12 @@ impl ::protobuf::Message for EvolveBuildLeaveScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.GGHEBMCAJKI.as_ref() {
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.ADADHIHDHJC);
+        }
+        if let Some(v) = self.BCBJPFIKPHG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for EvolveBuildLeaveScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.GGHEBMCAJKI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(15, self.ADADHIHDHJC)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+        if let Some(v) = self.BCBJPFIKPHG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for EvolveBuildLeaveScRsp {
     }
 
     fn clear(&mut self) {
-        self.GGHEBMCAJKI.clear();
-        self.retcode = 0;
+        self.ADADHIHDHJC = 0;
+        self.BCBJPFIKPHG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EvolveBuildLeaveScRsp {
         static instance: EvolveBuildLeaveScRsp = EvolveBuildLeaveScRsp {
-            GGHEBMCAJKI: ::protobuf::MessageField::none(),
-            retcode: 0,
+            ADADHIHDHJC: 0,
+            BCBJPFIKPHG: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildLeaveScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bEvolveBuildLeaveScRsp.proto\x1a\x1aEvolveBuildLevelInfo.proto\"j\n\
-    \x15EvolveBuildLeaveScRsp\x127\n\x0bGGHEBMCAJKI\x18\x07\x20\x01(\x0b2\
-    \x15.EvolveBuildLevelInfoR\x0bGGHEBMCAJKI\x12\x18\n\x07retcode\x18\x0f\
-    \x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x1bEvolveBuildLeaveScRsp.proto\x1a\x1aEvolveBuildLevelInfo.proto\"r\n\
+    \x15EvolveBuildLeaveScRsp\x12\x20\n\x0bADADHIHDHJC\x18\x0f\x20\x01(\rR\
+    \x0bADADHIHDHJC\x127\n\x0bBCBJPFIKPHG\x18\t\x20\x01(\x0b2\x15.EvolveBuil\
+    dLevelInfoR\x0bBCBJPFIKPHGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

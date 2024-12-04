@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChallengeLineupNotify {
     // message fields
-    // @@protoc_insertion_point(field:ChallengeLineupNotify.IOKADLFHEHK)
-    pub IOKADLFHEHK: ::protobuf::EnumOrUnknown<super::ExtraLineupType::ExtraLineupType>,
+    // @@protoc_insertion_point(field:ChallengeLineupNotify.extra_lineup_type)
+    pub extra_lineup_type: ::protobuf::EnumOrUnknown<super::ExtraLineupType::ExtraLineupType>,
     // special fields
     // @@protoc_insertion_point(special_field:ChallengeLineupNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl ChallengeLineupNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IOKADLFHEHK",
-            |m: &ChallengeLineupNotify| { &m.IOKADLFHEHK },
-            |m: &mut ChallengeLineupNotify| { &mut m.IOKADLFHEHK },
+            "extra_lineup_type",
+            |m: &ChallengeLineupNotify| { &m.extra_lineup_type },
+            |m: &mut ChallengeLineupNotify| { &mut m.extra_lineup_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChallengeLineupNotify>(
             "ChallengeLineupNotify",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for ChallengeLineupNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.IOKADLFHEHK = is.read_enum_or_unknown()?;
+                64 => {
+                    self.extra_lineup_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for ChallengeLineupNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IOKADLFHEHK != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            my_size += ::protobuf::rt::int32_size(9, self.IOKADLFHEHK.value());
+        if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
+            my_size += ::protobuf::rt::int32_size(8, self.extra_lineup_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for ChallengeLineupNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IOKADLFHEHK != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.IOKADLFHEHK))?;
+        if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.extra_lineup_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for ChallengeLineupNotify {
     }
 
     fn clear(&mut self) {
-        self.IOKADLFHEHK = ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE);
+        self.extra_lineup_type = ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengeLineupNotify {
         static instance: ChallengeLineupNotify = ChallengeLineupNotify {
-            IOKADLFHEHK: ::protobuf::EnumOrUnknown::from_i32(0),
+            extra_lineup_type: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,10 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeLineupNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bChallengeLineupNotify.proto\x1a\x15ExtraLineupType.proto\"K\n\x15C\
-    hallengeLineupNotify\x122\n\x0bIOKADLFHEHK\x18\t\x20\x01(\x0e2\x10.Extra\
-    LineupTypeR\x0bIOKADLFHEHKb\x06proto3\
+    \n\x1bChallengeLineupNotify.proto\x1a\x15ExtraLineupType.proto\"U\n\x15C\
+    hallengeLineupNotify\x12<\n\x11extra_lineup_type\x18\x08\x20\x01(\x0e2\
+    \x10.ExtraLineupTypeR\x0fextraLineupTypeB\x15\n\x13emu.lunarcore.protob\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

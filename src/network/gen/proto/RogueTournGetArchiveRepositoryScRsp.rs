@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournGetArchiveRepositoryScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournGetArchiveRepositoryScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:RogueTournGetArchiveRepositoryScRsp.NJDJDLMCIBI)
-    pub NJDJDLMCIBI: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:RogueTournGetArchiveRepositoryScRsp.HFKBDOKHKDH)
-    pub HFKBDOKHKDH: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueTournGetArchiveRepositoryScRsp.KPMIANLJIMI)
+    pub KPMIANLJIMI: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueTournGetArchiveRepositoryScRsp.CPICIEDIKJK)
+    pub CPICIEDIKJK: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueTournGetArchiveRepositoryScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournGetArchiveRepositoryScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl RogueTournGetArchiveRepositoryScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "KPMIANLJIMI",
+            |m: &RogueTournGetArchiveRepositoryScRsp| { &m.KPMIANLJIMI },
+            |m: &mut RogueTournGetArchiveRepositoryScRsp| { &mut m.KPMIANLJIMI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CPICIEDIKJK",
+            |m: &RogueTournGetArchiveRepositoryScRsp| { &m.CPICIEDIKJK },
+            |m: &mut RogueTournGetArchiveRepositoryScRsp| { &mut m.CPICIEDIKJK },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &RogueTournGetArchiveRepositoryScRsp| { &m.retcode },
-            |m: &mut RogueTournGetArchiveRepositoryScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NJDJDLMCIBI",
-            |m: &RogueTournGetArchiveRepositoryScRsp| { &m.NJDJDLMCIBI },
-            |m: &mut RogueTournGetArchiveRepositoryScRsp| { &mut m.NJDJDLMCIBI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HFKBDOKHKDH",
-            |m: &RogueTournGetArchiveRepositoryScRsp| { &m.HFKBDOKHKDH },
-            |m: &mut RogueTournGetArchiveRepositoryScRsp| { &mut m.HFKBDOKHKDH },
+            "ADADHIHDHJC",
+            |m: &RogueTournGetArchiveRepositoryScRsp| { &m.ADADHIHDHJC },
+            |m: &mut RogueTournGetArchiveRepositoryScRsp| { &mut m.ADADHIHDHJC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournGetArchiveRepositoryScRsp>(
             "RogueTournGetArchiveRepositoryScRsp",
@@ -87,20 +87,20 @@ impl ::protobuf::Message for RogueTournGetArchiveRepositoryScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                106 => {
+                    is.read_repeated_packed_uint32_into(&mut self.KPMIANLJIMI)?;
+                },
+                104 => {
+                    self.KPMIANLJIMI.push(is.read_uint32()?);
+                },
+                98 => {
+                    is.read_repeated_packed_uint32_into(&mut self.CPICIEDIKJK)?;
+                },
+                96 => {
+                    self.CPICIEDIKJK.push(is.read_uint32()?);
+                },
                 32 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NJDJDLMCIBI)?;
-                },
-                88 => {
-                    self.NJDJDLMCIBI.push(is.read_uint32()?);
-                },
-                114 => {
-                    is.read_repeated_packed_uint32_into(&mut self.HFKBDOKHKDH)?;
-                },
-                112 => {
-                    self.HFKBDOKHKDH.push(is.read_uint32()?);
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -114,30 +114,30 @@ impl ::protobuf::Message for RogueTournGetArchiveRepositoryScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+        for value in &self.KPMIANLJIMI {
+            my_size += ::protobuf::rt::uint32_size(13, *value);
+        };
+        for value in &self.CPICIEDIKJK {
+            my_size += ::protobuf::rt::uint32_size(12, *value);
+        };
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.ADADHIHDHJC);
         }
-        for value in &self.NJDJDLMCIBI {
-            my_size += ::protobuf::rt::uint32_size(11, *value);
-        };
-        for value in &self.HFKBDOKHKDH {
-            my_size += ::protobuf::rt::uint32_size(14, *value);
-        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+        for v in &self.KPMIANLJIMI {
+            os.write_uint32(13, *v)?;
+        };
+        for v in &self.CPICIEDIKJK {
+            os.write_uint32(12, *v)?;
+        };
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(4, self.ADADHIHDHJC)?;
         }
-        for v in &self.NJDJDLMCIBI {
-            os.write_uint32(11, *v)?;
-        };
-        for v in &self.HFKBDOKHKDH {
-            os.write_uint32(14, *v)?;
-        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -155,17 +155,17 @@ impl ::protobuf::Message for RogueTournGetArchiveRepositoryScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.NJDJDLMCIBI.clear();
-        self.HFKBDOKHKDH.clear();
+        self.KPMIANLJIMI.clear();
+        self.CPICIEDIKJK.clear();
+        self.ADADHIHDHJC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournGetArchiveRepositoryScRsp {
         static instance: RogueTournGetArchiveRepositoryScRsp = RogueTournGetArchiveRepositoryScRsp {
-            retcode: 0,
-            NJDJDLMCIBI: ::std::vec::Vec::new(),
-            HFKBDOKHKDH: ::std::vec::Vec::new(),
+            KPMIANLJIMI: ::std::vec::Vec::new(),
+            CPICIEDIKJK: ::std::vec::Vec::new(),
+            ADADHIHDHJC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -190,10 +190,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournGetArchiveRepositoryScRsp 
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n)RogueTournGetArchiveRepositoryScRsp.proto\"\x83\x01\n#RogueTournGetAr\
-    chiveRepositoryScRsp\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\
-    \x12\x20\n\x0bNJDJDLMCIBI\x18\x0b\x20\x03(\rR\x0bNJDJDLMCIBI\x12\x20\n\
-    \x0bHFKBDOKHKDH\x18\x0e\x20\x03(\rR\x0bHFKBDOKHKDHb\x06proto3\
+    \n)RogueTournGetArchiveRepositoryScRsp.proto\"\x8b\x01\n#RogueTournGetAr\
+    chiveRepositoryScRsp\x12\x20\n\x0bKPMIANLJIMI\x18\r\x20\x03(\rR\x0bKPMIA\
+    NLJIMI\x12\x20\n\x0bCPICIEDIKJK\x18\x0c\x20\x03(\rR\x0bCPICIEDIKJK\x12\
+    \x20\n\x0bADADHIHDHJC\x18\x04\x20\x01(\rR\x0bADADHIHDHJCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

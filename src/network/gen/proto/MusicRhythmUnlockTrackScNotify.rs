@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MusicRhythmUnlockTrackScNotify {
     // message fields
-    // @@protoc_insertion_point(field:MusicRhythmUnlockTrackScNotify.NDNCEKFILDC)
-    pub NDNCEKFILDC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MusicRhythmUnlockTrackScNotify.track_id_list)
+    pub track_id_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:MusicRhythmUnlockTrackScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl MusicRhythmUnlockTrackScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NDNCEKFILDC",
-            |m: &MusicRhythmUnlockTrackScNotify| { &m.NDNCEKFILDC },
-            |m: &mut MusicRhythmUnlockTrackScNotify| { &mut m.NDNCEKFILDC },
+            "track_id_list",
+            |m: &MusicRhythmUnlockTrackScNotify| { &m.track_id_list },
+            |m: &mut MusicRhythmUnlockTrackScNotify| { &mut m.track_id_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MusicRhythmUnlockTrackScNotify>(
             "MusicRhythmUnlockTrackScNotify",
@@ -74,10 +74,10 @@ impl ::protobuf::Message for MusicRhythmUnlockTrackScNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 114 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NDNCEKFILDC)?;
+                    is.read_repeated_packed_uint32_into(&mut self.track_id_list)?;
                 },
                 112 => {
-                    self.NDNCEKFILDC.push(is.read_uint32()?);
+                    self.track_id_list.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -91,7 +91,7 @@ impl ::protobuf::Message for MusicRhythmUnlockTrackScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.NDNCEKFILDC {
+        for value in &self.track_id_list {
             my_size += ::protobuf::rt::uint32_size(14, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -100,7 +100,7 @@ impl ::protobuf::Message for MusicRhythmUnlockTrackScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.NDNCEKFILDC {
+        for v in &self.track_id_list {
             os.write_uint32(14, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -120,13 +120,13 @@ impl ::protobuf::Message for MusicRhythmUnlockTrackScNotify {
     }
 
     fn clear(&mut self) {
-        self.NDNCEKFILDC.clear();
+        self.track_id_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MusicRhythmUnlockTrackScNotify {
         static instance: MusicRhythmUnlockTrackScNotify = MusicRhythmUnlockTrackScNotify {
-            NDNCEKFILDC: ::std::vec::Vec::new(),
+            track_id_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -151,9 +151,9 @@ impl ::protobuf::reflect::ProtobufValue for MusicRhythmUnlockTrackScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$MusicRhythmUnlockTrackScNotify.proto\"B\n\x1eMusicRhythmUnlockTrackSc\
-    Notify\x12\x20\n\x0bNDNCEKFILDC\x18\x0e\x20\x03(\rR\x0bNDNCEKFILDCb\x06p\
-    roto3\
+    \n$MusicRhythmUnlockTrackScNotify.proto\"D\n\x1eMusicRhythmUnlockTrackSc\
+    Notify\x12\"\n\rtrack_id_list\x18\x0e\x20\x03(\rR\x0btrackIdListB\x15\n\
+    \x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterTreasureDungeonCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EnterTreasureDungeonCsReq.avatar_list)
-    pub avatar_list: ::std::vec::Vec<super::ABNFCJAFHBO::ABNFCJAFHBO>,
-    // @@protoc_insertion_point(field:EnterTreasureDungeonCsReq.NCFAJPAMBGD)
-    pub NCFAJPAMBGD: u32,
+    // @@protoc_insertion_point(field:EnterTreasureDungeonCsReq.HMPPFGCIFJK)
+    pub HMPPFGCIFJK: u32,
+    // @@protoc_insertion_point(field:EnterTreasureDungeonCsReq.EMALNMLGANJ)
+    pub EMALNMLGANJ: ::std::vec::Vec<super::EHIMNOKLCOE::EHIMNOKLCOE>,
     // special fields
     // @@protoc_insertion_point(special_field:EnterTreasureDungeonCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl EnterTreasureDungeonCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_list",
-            |m: &EnterTreasureDungeonCsReq| { &m.avatar_list },
-            |m: &mut EnterTreasureDungeonCsReq| { &mut m.avatar_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NCFAJPAMBGD",
-            |m: &EnterTreasureDungeonCsReq| { &m.NCFAJPAMBGD },
-            |m: &mut EnterTreasureDungeonCsReq| { &mut m.NCFAJPAMBGD },
+            "HMPPFGCIFJK",
+            |m: &EnterTreasureDungeonCsReq| { &m.HMPPFGCIFJK },
+            |m: &mut EnterTreasureDungeonCsReq| { &mut m.HMPPFGCIFJK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "EMALNMLGANJ",
+            |m: &EnterTreasureDungeonCsReq| { &m.EMALNMLGANJ },
+            |m: &mut EnterTreasureDungeonCsReq| { &mut m.EMALNMLGANJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterTreasureDungeonCsReq>(
             "EnterTreasureDungeonCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for EnterTreasureDungeonCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    self.avatar_list.push(is.read_message()?);
+                48 => {
+                    self.HMPPFGCIFJK = is.read_uint32()?;
                 },
-                8 => {
-                    self.NCFAJPAMBGD = is.read_uint32()?;
+                122 => {
+                    self.EMALNMLGANJ.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,25 +98,25 @@ impl ::protobuf::Message for EnterTreasureDungeonCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.avatar_list {
+        if self.HMPPFGCIFJK != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.HMPPFGCIFJK);
+        }
+        for value in &self.EMALNMLGANJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.NCFAJPAMBGD != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.NCFAJPAMBGD);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        };
-        if self.NCFAJPAMBGD != 0 {
-            os.write_uint32(1, self.NCFAJPAMBGD)?;
+        if self.HMPPFGCIFJK != 0 {
+            os.write_uint32(6, self.HMPPFGCIFJK)?;
         }
+        for v in &self.EMALNMLGANJ {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -134,15 +134,15 @@ impl ::protobuf::Message for EnterTreasureDungeonCsReq {
     }
 
     fn clear(&mut self) {
-        self.avatar_list.clear();
-        self.NCFAJPAMBGD = 0;
+        self.HMPPFGCIFJK = 0;
+        self.EMALNMLGANJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterTreasureDungeonCsReq {
         static instance: EnterTreasureDungeonCsReq = EnterTreasureDungeonCsReq {
-            avatar_list: ::std::vec::Vec::new(),
-            NCFAJPAMBGD: 0,
+            HMPPFGCIFJK: 0,
+            EMALNMLGANJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for EnterTreasureDungeonCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fEnterTreasureDungeonCsReq.proto\x1a\x11ABNFCJAFHBO.proto\"l\n\x19E\
-    nterTreasureDungeonCsReq\x12-\n\x0bavatar_list\x18\x0b\x20\x03(\x0b2\x0c\
-    .ABNFCJAFHBOR\navatarList\x12\x20\n\x0bNCFAJPAMBGD\x18\x01\x20\x01(\rR\
-    \x0bNCFAJPAMBGDb\x06proto3\
+    \n\x1fEnterTreasureDungeonCsReq.proto\x1a\x11EHIMNOKLCOE.proto\"m\n\x19E\
+    nterTreasureDungeonCsReq\x12\x20\n\x0bHMPPFGCIFJK\x18\x06\x20\x01(\rR\
+    \x0bHMPPFGCIFJK\x12.\n\x0bEMALNMLGANJ\x18\x0f\x20\x03(\x0b2\x0c.EHIMNOKL\
+    COER\x0bEMALNMLGANJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ABNFCJAFHBO::file_descriptor().clone());
+            deps.push(super::EHIMNOKLCOE::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EnterTreasureDungeonCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

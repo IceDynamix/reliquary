@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TravelBrochurePageResetCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TravelBrochurePageResetCsReq.NMAKNJMFFJN)
-    pub NMAKNJMFFJN: u32,
+    // @@protoc_insertion_point(field:TravelBrochurePageResetCsReq.LOFDIGOACGI)
+    pub LOFDIGOACGI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TravelBrochurePageResetCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl TravelBrochurePageResetCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NMAKNJMFFJN",
-            |m: &TravelBrochurePageResetCsReq| { &m.NMAKNJMFFJN },
-            |m: &mut TravelBrochurePageResetCsReq| { &mut m.NMAKNJMFFJN },
+            "LOFDIGOACGI",
+            |m: &TravelBrochurePageResetCsReq| { &m.LOFDIGOACGI },
+            |m: &mut TravelBrochurePageResetCsReq| { &mut m.LOFDIGOACGI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TravelBrochurePageResetCsReq>(
             "TravelBrochurePageResetCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for TravelBrochurePageResetCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.NMAKNJMFFJN = is.read_uint32()?;
+                48 => {
+                    self.LOFDIGOACGI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for TravelBrochurePageResetCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NMAKNJMFFJN != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.NMAKNJMFFJN);
+        if self.LOFDIGOACGI != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.LOFDIGOACGI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for TravelBrochurePageResetCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NMAKNJMFFJN != 0 {
-            os.write_uint32(9, self.NMAKNJMFFJN)?;
+        if self.LOFDIGOACGI != 0 {
+            os.write_uint32(6, self.LOFDIGOACGI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for TravelBrochurePageResetCsReq {
     }
 
     fn clear(&mut self) {
-        self.NMAKNJMFFJN = 0;
+        self.LOFDIGOACGI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TravelBrochurePageResetCsReq {
         static instance: TravelBrochurePageResetCsReq = TravelBrochurePageResetCsReq {
-            NMAKNJMFFJN: 0,
+            LOFDIGOACGI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for TravelBrochurePageResetCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"TravelBrochurePageResetCsReq.proto\"@\n\x1cTravelBrochurePageResetCs\
-    Req\x12\x20\n\x0bNMAKNJMFFJN\x18\t\x20\x01(\rR\x0bNMAKNJMFFJNb\x06proto3\
+    Req\x12\x20\n\x0bLOFDIGOACGI\x18\x06\x20\x01(\rR\x0bLOFDIGOACGIb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

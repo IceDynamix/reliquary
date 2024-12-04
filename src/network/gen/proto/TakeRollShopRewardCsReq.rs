@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeRollShopRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeRollShopRewardCsReq.NEIKAIFGMFA)
-    pub NEIKAIFGMFA: u32,
+    // @@protoc_insertion_point(field:TakeRollShopRewardCsReq.IINPNALNGKE)
+    pub IINPNALNGKE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeRollShopRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl TakeRollShopRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NEIKAIFGMFA",
-            |m: &TakeRollShopRewardCsReq| { &m.NEIKAIFGMFA },
-            |m: &mut TakeRollShopRewardCsReq| { &mut m.NEIKAIFGMFA },
+            "IINPNALNGKE",
+            |m: &TakeRollShopRewardCsReq| { &m.IINPNALNGKE },
+            |m: &mut TakeRollShopRewardCsReq| { &mut m.IINPNALNGKE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeRollShopRewardCsReq>(
             "TakeRollShopRewardCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for TakeRollShopRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.NEIKAIFGMFA = is.read_uint32()?;
+                96 => {
+                    self.IINPNALNGKE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for TakeRollShopRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NEIKAIFGMFA != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.NEIKAIFGMFA);
+        if self.IINPNALNGKE != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.IINPNALNGKE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for TakeRollShopRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NEIKAIFGMFA != 0 {
-            os.write_uint32(6, self.NEIKAIFGMFA)?;
+        if self.IINPNALNGKE != 0 {
+            os.write_uint32(12, self.IINPNALNGKE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for TakeRollShopRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.NEIKAIFGMFA = 0;
+        self.IINPNALNGKE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeRollShopRewardCsReq {
         static instance: TakeRollShopRewardCsReq = TakeRollShopRewardCsReq {
-            NEIKAIFGMFA: 0,
+            IINPNALNGKE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for TakeRollShopRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dTakeRollShopRewardCsReq.proto\";\n\x17TakeRollShopRewardCsReq\x12\
-    \x20\n\x0bNEIKAIFGMFA\x18\x06\x20\x01(\rR\x0bNEIKAIFGMFAb\x06proto3\
+    \x20\n\x0bIINPNALNGKE\x18\x0c\x20\x01(\rR\x0bIINPNALNGKEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

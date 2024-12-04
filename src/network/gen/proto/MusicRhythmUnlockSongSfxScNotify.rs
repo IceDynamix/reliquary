@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MusicRhythmUnlockSongSfxScNotify {
     // message fields
-    // @@protoc_insertion_point(field:MusicRhythmUnlockSongSfxScNotify.LIGFCGAEEPF)
-    pub LIGFCGAEEPF: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MusicRhythmUnlockSongSfxScNotify.song_id_list)
+    pub song_id_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:MusicRhythmUnlockSongSfxScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl MusicRhythmUnlockSongSfxScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LIGFCGAEEPF",
-            |m: &MusicRhythmUnlockSongSfxScNotify| { &m.LIGFCGAEEPF },
-            |m: &mut MusicRhythmUnlockSongSfxScNotify| { &mut m.LIGFCGAEEPF },
+            "song_id_list",
+            |m: &MusicRhythmUnlockSongSfxScNotify| { &m.song_id_list },
+            |m: &mut MusicRhythmUnlockSongSfxScNotify| { &mut m.song_id_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MusicRhythmUnlockSongSfxScNotify>(
             "MusicRhythmUnlockSongSfxScNotify",
@@ -74,10 +74,10 @@ impl ::protobuf::Message for MusicRhythmUnlockSongSfxScNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 114 => {
-                    is.read_repeated_packed_uint32_into(&mut self.LIGFCGAEEPF)?;
+                    is.read_repeated_packed_uint32_into(&mut self.song_id_list)?;
                 },
                 112 => {
-                    self.LIGFCGAEEPF.push(is.read_uint32()?);
+                    self.song_id_list.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -91,7 +91,7 @@ impl ::protobuf::Message for MusicRhythmUnlockSongSfxScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.LIGFCGAEEPF {
+        for value in &self.song_id_list {
             my_size += ::protobuf::rt::uint32_size(14, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -100,7 +100,7 @@ impl ::protobuf::Message for MusicRhythmUnlockSongSfxScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.LIGFCGAEEPF {
+        for v in &self.song_id_list {
             os.write_uint32(14, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -120,13 +120,13 @@ impl ::protobuf::Message for MusicRhythmUnlockSongSfxScNotify {
     }
 
     fn clear(&mut self) {
-        self.LIGFCGAEEPF.clear();
+        self.song_id_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MusicRhythmUnlockSongSfxScNotify {
         static instance: MusicRhythmUnlockSongSfxScNotify = MusicRhythmUnlockSongSfxScNotify {
-            LIGFCGAEEPF: ::std::vec::Vec::new(),
+            song_id_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -152,8 +152,8 @@ impl ::protobuf::reflect::ProtobufValue for MusicRhythmUnlockSongSfxScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&MusicRhythmUnlockSongSfxScNotify.proto\"D\n\x20MusicRhythmUnlockSongS\
-    fxScNotify\x12\x20\n\x0bLIGFCGAEEPF\x18\x0e\x20\x03(\rR\x0bLIGFCGAEEPFb\
-    \x06proto3\
+    fxScNotify\x12\x20\n\x0csong_id_list\x18\x0e\x20\x03(\rR\nsongIdListB\
+    \x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

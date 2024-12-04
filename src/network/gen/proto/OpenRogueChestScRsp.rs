@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OpenRogueChestScRsp {
     // message fields
-    // @@protoc_insertion_point(field:OpenRogueChestScRsp.IKPJKDLJCEA)
-    pub IKPJKDLJCEA: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:OpenRogueChestScRsp.LPDNAMLHGNJ)
-    pub LPDNAMLHGNJ: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:OpenRogueChestScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:OpenRogueChestScRsp.PFJLLGDAABN)
+    pub PFJLLGDAABN: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:OpenRogueChestScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:OpenRogueChestScRsp.ELPMNKHEPKJ)
+    pub ELPMNKHEPKJ: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:OpenRogueChestScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl OpenRogueChestScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "IKPJKDLJCEA",
-            |m: &OpenRogueChestScRsp| { &m.IKPJKDLJCEA },
-            |m: &mut OpenRogueChestScRsp| { &mut m.IKPJKDLJCEA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "LPDNAMLHGNJ",
-            |m: &OpenRogueChestScRsp| { &m.LPDNAMLHGNJ },
-            |m: &mut OpenRogueChestScRsp| { &mut m.LPDNAMLHGNJ },
+            "PFJLLGDAABN",
+            |m: &OpenRogueChestScRsp| { &m.PFJLLGDAABN },
+            |m: &mut OpenRogueChestScRsp| { &mut m.PFJLLGDAABN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &OpenRogueChestScRsp| { &m.retcode },
-            |m: &mut OpenRogueChestScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &OpenRogueChestScRsp| { &m.ADADHIHDHJC },
+            |m: &mut OpenRogueChestScRsp| { &mut m.ADADHIHDHJC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "ELPMNKHEPKJ",
+            |m: &OpenRogueChestScRsp| { &m.ELPMNKHEPKJ },
+            |m: &mut OpenRogueChestScRsp| { &mut m.ELPMNKHEPKJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OpenRogueChestScRsp>(
             "OpenRogueChestScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for OpenRogueChestScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IKPJKDLJCEA)?;
-                },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LPDNAMLHGNJ)?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PFJLLGDAABN)?;
                 },
                 104 => {
-                    self.retcode = is.read_uint32()?;
+                    self.ADADHIHDHJC = is.read_uint32()?;
+                },
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ELPMNKHEPKJ)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,16 +108,16 @@ impl ::protobuf::Message for OpenRogueChestScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.IKPJKDLJCEA.as_ref() {
+        if let Some(v) = self.PFJLLGDAABN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.LPDNAMLHGNJ.as_ref() {
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.ADADHIHDHJC);
+        }
+        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,14 +125,14 @@ impl ::protobuf::Message for OpenRogueChestScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.IKPJKDLJCEA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if let Some(v) = self.PFJLLGDAABN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
-        if let Some(v) = self.LPDNAMLHGNJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(13, self.ADADHIHDHJC)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,17 +151,17 @@ impl ::protobuf::Message for OpenRogueChestScRsp {
     }
 
     fn clear(&mut self) {
-        self.IKPJKDLJCEA.clear();
-        self.LPDNAMLHGNJ.clear();
-        self.retcode = 0;
+        self.PFJLLGDAABN.clear();
+        self.ADADHIHDHJC = 0;
+        self.ELPMNKHEPKJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OpenRogueChestScRsp {
         static instance: OpenRogueChestScRsp = OpenRogueChestScRsp {
-            IKPJKDLJCEA: ::protobuf::MessageField::none(),
-            LPDNAMLHGNJ: ::protobuf::MessageField::none(),
-            retcode: 0,
+            PFJLLGDAABN: ::protobuf::MessageField::none(),
+            ADADHIHDHJC: 0,
+            ELPMNKHEPKJ: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,11 +186,11 @@ impl ::protobuf::reflect::ProtobufValue for OpenRogueChestScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19OpenRogueChestScRsp.proto\x1a\x0eItemList.proto\"\x89\x01\n\x13Ope\
-    nRogueChestScRsp\x12+\n\x0bIKPJKDLJCEA\x18\t\x20\x01(\x0b2\t.ItemListR\
-    \x0bIKPJKDLJCEA\x12+\n\x0bLPDNAMLHGNJ\x18\x05\x20\x01(\x0b2\t.ItemListR\
-    \x0bLPDNAMLHGNJ\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcodeb\x06pr\
-    oto3\
+    \n\x19OpenRogueChestScRsp.proto\x1a\x0eItemList.proto\"\x91\x01\n\x13Ope\
+    nRogueChestScRsp\x12+\n\x0bPFJLLGDAABN\x18\x0f\x20\x01(\x0b2\t.ItemListR\
+    \x0bPFJLLGDAABN\x12\x20\n\x0bADADHIHDHJC\x18\r\x20\x01(\rR\x0bADADHIHDHJ\
+    C\x12+\n\x0bELPMNKHEPKJ\x18\x06\x20\x01(\x0b2\t.ItemListR\x0bELPMNKHEPKJ\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

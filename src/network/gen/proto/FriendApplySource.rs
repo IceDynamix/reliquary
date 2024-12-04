@@ -40,8 +40,6 @@ pub enum FriendApplySource {
     FRIEND_APPLY_SOURCE_RECOMMEND_ASSIST = 4,
     // @@protoc_insertion_point(enum_value:FriendApplySource.FRIEND_APPLY_SOURCE_PSN_FRIEND)
     FRIEND_APPLY_SOURCE_PSN_FRIEND = 5,
-    // @@protoc_insertion_point(enum_value:FriendApplySource.FRIEND_APPLY_SOURCE_ASSIST_REWARD)
-    FRIEND_APPLY_SOURCE_ASSIST_REWARD = 6,
 }
 
 impl ::protobuf::Enum for FriendApplySource {
@@ -59,7 +57,6 @@ impl ::protobuf::Enum for FriendApplySource {
             3 => ::std::option::Option::Some(FriendApplySource::FRIEND_APPLY_SOURCE_ASSIST),
             4 => ::std::option::Option::Some(FriendApplySource::FRIEND_APPLY_SOURCE_RECOMMEND_ASSIST),
             5 => ::std::option::Option::Some(FriendApplySource::FRIEND_APPLY_SOURCE_PSN_FRIEND),
-            6 => ::std::option::Option::Some(FriendApplySource::FRIEND_APPLY_SOURCE_ASSIST_REWARD),
             _ => ::std::option::Option::None
         }
     }
@@ -72,7 +69,6 @@ impl ::protobuf::Enum for FriendApplySource {
             "FRIEND_APPLY_SOURCE_ASSIST" => ::std::option::Option::Some(FriendApplySource::FRIEND_APPLY_SOURCE_ASSIST),
             "FRIEND_APPLY_SOURCE_RECOMMEND_ASSIST" => ::std::option::Option::Some(FriendApplySource::FRIEND_APPLY_SOURCE_RECOMMEND_ASSIST),
             "FRIEND_APPLY_SOURCE_PSN_FRIEND" => ::std::option::Option::Some(FriendApplySource::FRIEND_APPLY_SOURCE_PSN_FRIEND),
-            "FRIEND_APPLY_SOURCE_ASSIST_REWARD" => ::std::option::Option::Some(FriendApplySource::FRIEND_APPLY_SOURCE_ASSIST_REWARD),
             _ => ::std::option::Option::None
         }
     }
@@ -84,7 +80,6 @@ impl ::protobuf::Enum for FriendApplySource {
         FriendApplySource::FRIEND_APPLY_SOURCE_ASSIST,
         FriendApplySource::FRIEND_APPLY_SOURCE_RECOMMEND_ASSIST,
         FriendApplySource::FRIEND_APPLY_SOURCE_PSN_FRIEND,
-        FriendApplySource::FRIEND_APPLY_SOURCE_ASSIST_REWARD,
     ];
 }
 
@@ -113,12 +108,12 @@ impl FriendApplySource {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17FriendApplySource.proto*\x89\x02\n\x11FriendApplySource\x12\x1c\n\
+    \n\x17FriendApplySource.proto*\xe2\x01\n\x11FriendApplySource\x12\x1c\n\
     \x18FRIEND_APPLY_SOURCE_NONE\x10\0\x12\x1e\n\x1aFRIEND_APPLY_SOURCE_SEAR\
     CH\x10\x01\x12!\n\x1dFRIEND_APPLY_SOURCE_RECOMMEND\x10\x02\x12\x1e\n\x1a\
     FRIEND_APPLY_SOURCE_ASSIST\x10\x03\x12(\n$FRIEND_APPLY_SOURCE_RECOMMEND_\
-    ASSIST\x10\x04\x12\"\n\x1eFRIEND_APPLY_SOURCE_PSN_FRIEND\x10\x05\x12%\n!\
-    FRIEND_APPLY_SOURCE_ASSIST_REWARD\x10\x06b\x06proto3\
+    ASSIST\x10\x04\x12\"\n\x1eFRIEND_APPLY_SOURCE_PSN_FRIEND\x10\x05B\x15\n\
+    \x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

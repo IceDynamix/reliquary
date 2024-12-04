@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EvolveBuildStartLevelCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EvolveBuildStartLevelCsReq.DGEJMCKIFJB)
-    pub DGEJMCKIFJB: u32,
-    // @@protoc_insertion_point(field:EvolveBuildStartLevelCsReq.avatar_list)
-    pub avatar_list: ::std::vec::Vec<super::EvolveBuildAvatar::EvolveBuildAvatar>,
-    // @@protoc_insertion_point(field:EvolveBuildStartLevelCsReq.JJLFIBAAJNJ)
-    pub JJLFIBAAJNJ: ::protobuf::MessageField<super::NGIKGHKMAHA::NGIKGHKMAHA>,
+    // @@protoc_insertion_point(field:EvolveBuildStartLevelCsReq.EOLMIMIGFJJ)
+    pub EOLMIMIGFJJ: ::protobuf::MessageField<super::FMNOMCJDCII::FMNOMCJDCII>,
+    // @@protoc_insertion_point(field:EvolveBuildStartLevelCsReq.EMALNMLGANJ)
+    pub EMALNMLGANJ: ::std::vec::Vec<super::EvolveBuildAvatar::EvolveBuildAvatar>,
+    // @@protoc_insertion_point(field:EvolveBuildStartLevelCsReq.AHCAOJCBIOM)
+    pub AHCAOJCBIOM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EvolveBuildStartLevelCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl EvolveBuildStartLevelCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DGEJMCKIFJB",
-            |m: &EvolveBuildStartLevelCsReq| { &m.DGEJMCKIFJB },
-            |m: &mut EvolveBuildStartLevelCsReq| { &mut m.DGEJMCKIFJB },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FMNOMCJDCII::FMNOMCJDCII>(
+            "EOLMIMIGFJJ",
+            |m: &EvolveBuildStartLevelCsReq| { &m.EOLMIMIGFJJ },
+            |m: &mut EvolveBuildStartLevelCsReq| { &mut m.EOLMIMIGFJJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_list",
-            |m: &EvolveBuildStartLevelCsReq| { &m.avatar_list },
-            |m: &mut EvolveBuildStartLevelCsReq| { &mut m.avatar_list },
+            "EMALNMLGANJ",
+            |m: &EvolveBuildStartLevelCsReq| { &m.EMALNMLGANJ },
+            |m: &mut EvolveBuildStartLevelCsReq| { &mut m.EMALNMLGANJ },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NGIKGHKMAHA::NGIKGHKMAHA>(
-            "JJLFIBAAJNJ",
-            |m: &EvolveBuildStartLevelCsReq| { &m.JJLFIBAAJNJ },
-            |m: &mut EvolveBuildStartLevelCsReq| { &mut m.JJLFIBAAJNJ },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AHCAOJCBIOM",
+            |m: &EvolveBuildStartLevelCsReq| { &m.AHCAOJCBIOM },
+            |m: &mut EvolveBuildStartLevelCsReq| { &mut m.AHCAOJCBIOM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EvolveBuildStartLevelCsReq>(
             "EvolveBuildStartLevelCsReq",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for EvolveBuildStartLevelCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.DGEJMCKIFJB = is.read_uint32()?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EOLMIMIGFJJ)?;
                 },
-                106 => {
-                    self.avatar_list.push(is.read_message()?);
+                26 => {
+                    self.EMALNMLGANJ.push(is.read_message()?);
                 },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JJLFIBAAJNJ)?;
+                16 => {
+                    self.AHCAOJCBIOM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,16 +108,16 @@ impl ::protobuf::Message for EvolveBuildStartLevelCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DGEJMCKIFJB != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.DGEJMCKIFJB);
+        if let Some(v) = self.EOLMIMIGFJJ.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        for value in &self.avatar_list {
+        for value in &self.EMALNMLGANJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.JJLFIBAAJNJ.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.AHCAOJCBIOM != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.AHCAOJCBIOM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,14 +125,14 @@ impl ::protobuf::Message for EvolveBuildStartLevelCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DGEJMCKIFJB != 0 {
-            os.write_uint32(4, self.DGEJMCKIFJB)?;
+        if let Some(v) = self.EOLMIMIGFJJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
-        for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        for v in &self.EMALNMLGANJ {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
-        if let Some(v) = self.JJLFIBAAJNJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if self.AHCAOJCBIOM != 0 {
+            os.write_uint32(2, self.AHCAOJCBIOM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,17 +151,17 @@ impl ::protobuf::Message for EvolveBuildStartLevelCsReq {
     }
 
     fn clear(&mut self) {
-        self.DGEJMCKIFJB = 0;
-        self.avatar_list.clear();
-        self.JJLFIBAAJNJ.clear();
+        self.EOLMIMIGFJJ.clear();
+        self.EMALNMLGANJ.clear();
+        self.AHCAOJCBIOM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EvolveBuildStartLevelCsReq {
         static instance: EvolveBuildStartLevelCsReq = EvolveBuildStartLevelCsReq {
-            DGEJMCKIFJB: 0,
-            avatar_list: ::std::vec::Vec::new(),
-            JJLFIBAAJNJ: ::protobuf::MessageField::none(),
+            EOLMIMIGFJJ: ::protobuf::MessageField::none(),
+            EMALNMLGANJ: ::std::vec::Vec::new(),
+            AHCAOJCBIOM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -187,11 +187,11 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildStartLevelCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20EvolveBuildStartLevelCsReq.proto\x1a\x17EvolveBuildAvatar.proto\
-    \x1a\x11NGIKGHKMAHA.proto\"\xa3\x01\n\x1aEvolveBuildStartLevelCsReq\x12\
-    \x20\n\x0bDGEJMCKIFJB\x18\x04\x20\x01(\rR\x0bDGEJMCKIFJB\x123\n\x0bavata\
-    r_list\x18\r\x20\x03(\x0b2\x12.EvolveBuildAvatarR\navatarList\x12.\n\x0b\
-    JJLFIBAAJNJ\x18\x0c\x20\x01(\x0b2\x0c.NGIKGHKMAHAR\x0bJJLFIBAAJNJb\x06pr\
-    oto3\
+    \x1a\x11FMNOMCJDCII.proto\"\xa4\x01\n\x1aEvolveBuildStartLevelCsReq\x12.\
+    \n\x0bEOLMIMIGFJJ\x18\x0f\x20\x01(\x0b2\x0c.FMNOMCJDCIIR\x0bEOLMIMIGFJJ\
+    \x124\n\x0bEMALNMLGANJ\x18\x03\x20\x03(\x0b2\x12.EvolveBuildAvatarR\x0bE\
+    MALNMLGANJ\x12\x20\n\x0bAHCAOJCBIOM\x18\x02\x20\x01(\rR\x0bAHCAOJCBIOMb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -210,7 +210,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::EvolveBuildAvatar::file_descriptor().clone());
-            deps.push(super::NGIKGHKMAHA::file_descriptor().clone());
+            deps.push(super::FMNOMCJDCII::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EvolveBuildStartLevelCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

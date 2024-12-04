@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MultiplayerGetFightGateScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MultiplayerGetFightGateScRsp.IPEPBMIKJCN)
-    pub IPEPBMIKJCN: ::std::string::String,
-    // @@protoc_insertion_point(field:MultiplayerGetFightGateScRsp.MMJIKJEMCON)
-    pub MMJIKJEMCON: u32,
-    // @@protoc_insertion_point(field:MultiplayerGetFightGateScRsp.GCIGJDIMNCE)
-    pub GCIGJDIMNCE: u64,
-    // @@protoc_insertion_point(field:MultiplayerGetFightGateScRsp.BACMIKDHBEF)
-    pub BACMIKDHBEF: ::std::string::String,
-    // @@protoc_insertion_point(field:MultiplayerGetFightGateScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:MultiplayerGetFightGateScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:MultiplayerGetFightGateScRsp.KLIAGNAFNDC)
+    pub KLIAGNAFNDC: ::std::string::String,
+    // @@protoc_insertion_point(field:MultiplayerGetFightGateScRsp.NBLPGHLNIHD)
+    pub NBLPGHLNIHD: ::std::string::String,
+    // @@protoc_insertion_point(field:MultiplayerGetFightGateScRsp.AGFNBILMNFC)
+    pub AGFNBILMNFC: u64,
+    // @@protoc_insertion_point(field:MultiplayerGetFightGateScRsp.OKBIBJMLOAO)
+    pub OKBIBJMLOAO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MultiplayerGetFightGateScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,29 +59,29 @@ impl MultiplayerGetFightGateScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IPEPBMIKJCN",
-            |m: &MultiplayerGetFightGateScRsp| { &m.IPEPBMIKJCN },
-            |m: &mut MultiplayerGetFightGateScRsp| { &mut m.IPEPBMIKJCN },
+            "ADADHIHDHJC",
+            |m: &MultiplayerGetFightGateScRsp| { &m.ADADHIHDHJC },
+            |m: &mut MultiplayerGetFightGateScRsp| { &mut m.ADADHIHDHJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MMJIKJEMCON",
-            |m: &MultiplayerGetFightGateScRsp| { &m.MMJIKJEMCON },
-            |m: &mut MultiplayerGetFightGateScRsp| { &mut m.MMJIKJEMCON },
+            "KLIAGNAFNDC",
+            |m: &MultiplayerGetFightGateScRsp| { &m.KLIAGNAFNDC },
+            |m: &mut MultiplayerGetFightGateScRsp| { &mut m.KLIAGNAFNDC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GCIGJDIMNCE",
-            |m: &MultiplayerGetFightGateScRsp| { &m.GCIGJDIMNCE },
-            |m: &mut MultiplayerGetFightGateScRsp| { &mut m.GCIGJDIMNCE },
+            "NBLPGHLNIHD",
+            |m: &MultiplayerGetFightGateScRsp| { &m.NBLPGHLNIHD },
+            |m: &mut MultiplayerGetFightGateScRsp| { &mut m.NBLPGHLNIHD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BACMIKDHBEF",
-            |m: &MultiplayerGetFightGateScRsp| { &m.BACMIKDHBEF },
-            |m: &mut MultiplayerGetFightGateScRsp| { &mut m.BACMIKDHBEF },
+            "AGFNBILMNFC",
+            |m: &MultiplayerGetFightGateScRsp| { &m.AGFNBILMNFC },
+            |m: &mut MultiplayerGetFightGateScRsp| { &mut m.AGFNBILMNFC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &MultiplayerGetFightGateScRsp| { &m.retcode },
-            |m: &mut MultiplayerGetFightGateScRsp| { &mut m.retcode },
+            "OKBIBJMLOAO",
+            |m: &MultiplayerGetFightGateScRsp| { &m.OKBIBJMLOAO },
+            |m: &mut MultiplayerGetFightGateScRsp| { &mut m.OKBIBJMLOAO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MultiplayerGetFightGateScRsp>(
             "MultiplayerGetFightGateScRsp",
@@ -101,20 +101,20 @@ impl ::protobuf::Message for MultiplayerGetFightGateScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    self.IPEPBMIKJCN = is.read_string()?;
+                64 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                88 => {
-                    self.MMJIKJEMCON = is.read_uint32()?;
+                50 => {
+                    self.KLIAGNAFNDC = is.read_string()?;
+                },
+                18 => {
+                    self.NBLPGHLNIHD = is.read_string()?;
                 },
                 72 => {
-                    self.GCIGJDIMNCE = is.read_uint64()?;
+                    self.AGFNBILMNFC = is.read_uint64()?;
                 },
-                66 => {
-                    self.BACMIKDHBEF = is.read_string()?;
-                },
-                8 => {
-                    self.retcode = is.read_uint32()?;
+                112 => {
+                    self.OKBIBJMLOAO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,20 +128,20 @@ impl ::protobuf::Message for MultiplayerGetFightGateScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.IPEPBMIKJCN.is_empty() {
-            my_size += ::protobuf::rt::string_size(13, &self.IPEPBMIKJCN);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.ADADHIHDHJC);
         }
-        if self.MMJIKJEMCON != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.MMJIKJEMCON);
+        if !self.KLIAGNAFNDC.is_empty() {
+            my_size += ::protobuf::rt::string_size(6, &self.KLIAGNAFNDC);
         }
-        if self.GCIGJDIMNCE != 0 {
-            my_size += ::protobuf::rt::uint64_size(9, self.GCIGJDIMNCE);
+        if !self.NBLPGHLNIHD.is_empty() {
+            my_size += ::protobuf::rt::string_size(2, &self.NBLPGHLNIHD);
         }
-        if !self.BACMIKDHBEF.is_empty() {
-            my_size += ::protobuf::rt::string_size(8, &self.BACMIKDHBEF);
+        if self.AGFNBILMNFC != 0 {
+            my_size += ::protobuf::rt::uint64_size(9, self.AGFNBILMNFC);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        if self.OKBIBJMLOAO != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.OKBIBJMLOAO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for MultiplayerGetFightGateScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.IPEPBMIKJCN.is_empty() {
-            os.write_string(13, &self.IPEPBMIKJCN)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(8, self.ADADHIHDHJC)?;
         }
-        if self.MMJIKJEMCON != 0 {
-            os.write_uint32(11, self.MMJIKJEMCON)?;
+        if !self.KLIAGNAFNDC.is_empty() {
+            os.write_string(6, &self.KLIAGNAFNDC)?;
         }
-        if self.GCIGJDIMNCE != 0 {
-            os.write_uint64(9, self.GCIGJDIMNCE)?;
+        if !self.NBLPGHLNIHD.is_empty() {
+            os.write_string(2, &self.NBLPGHLNIHD)?;
         }
-        if !self.BACMIKDHBEF.is_empty() {
-            os.write_string(8, &self.BACMIKDHBEF)?;
+        if self.AGFNBILMNFC != 0 {
+            os.write_uint64(9, self.AGFNBILMNFC)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+        if self.OKBIBJMLOAO != 0 {
+            os.write_uint32(14, self.OKBIBJMLOAO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for MultiplayerGetFightGateScRsp {
     }
 
     fn clear(&mut self) {
-        self.IPEPBMIKJCN.clear();
-        self.MMJIKJEMCON = 0;
-        self.GCIGJDIMNCE = 0;
-        self.BACMIKDHBEF.clear();
-        self.retcode = 0;
+        self.ADADHIHDHJC = 0;
+        self.KLIAGNAFNDC.clear();
+        self.NBLPGHLNIHD.clear();
+        self.AGFNBILMNFC = 0;
+        self.OKBIBJMLOAO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MultiplayerGetFightGateScRsp {
         static instance: MultiplayerGetFightGateScRsp = MultiplayerGetFightGateScRsp {
-            IPEPBMIKJCN: ::std::string::String::new(),
-            MMJIKJEMCON: 0,
-            GCIGJDIMNCE: 0,
-            BACMIKDHBEF: ::std::string::String::new(),
-            retcode: 0,
+            ADADHIHDHJC: 0,
+            KLIAGNAFNDC: ::std::string::String::new(),
+            NBLPGHLNIHD: ::std::string::String::new(),
+            AGFNBILMNFC: 0,
+            OKBIBJMLOAO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,12 +220,12 @@ impl ::protobuf::reflect::ProtobufValue for MultiplayerGetFightGateScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"MultiplayerGetFightGateScRsp.proto\"\xc0\x01\n\x1cMultiplayerGetFigh\
-    tGateScRsp\x12\x20\n\x0bIPEPBMIKJCN\x18\r\x20\x01(\tR\x0bIPEPBMIKJCN\x12\
-    \x20\n\x0bMMJIKJEMCON\x18\x0b\x20\x01(\rR\x0bMMJIKJEMCON\x12\x20\n\x0bGC\
-    IGJDIMNCE\x18\t\x20\x01(\x04R\x0bGCIGJDIMNCE\x12\x20\n\x0bBACMIKDHBEF\
-    \x18\x08\x20\x01(\tR\x0bBACMIKDHBEF\x12\x18\n\x07retcode\x18\x01\x20\x01\
-    (\rR\x07retcodeb\x06proto3\
+    \n\"MultiplayerGetFightGateScRsp.proto\"\xc8\x01\n\x1cMultiplayerGetFigh\
+    tGateScRsp\x12\x20\n\x0bADADHIHDHJC\x18\x08\x20\x01(\rR\x0bADADHIHDHJC\
+    \x12\x20\n\x0bKLIAGNAFNDC\x18\x06\x20\x01(\tR\x0bKLIAGNAFNDC\x12\x20\n\
+    \x0bNBLPGHLNIHD\x18\x02\x20\x01(\tR\x0bNBLPGHLNIHD\x12\x20\n\x0bAGFNBILM\
+    NFC\x18\t\x20\x01(\x04R\x0bAGFNBILMNFC\x12\x20\n\x0bOKBIBJMLOAO\x18\x0e\
+    \x20\x01(\rR\x0bOKBIBJMLOAOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

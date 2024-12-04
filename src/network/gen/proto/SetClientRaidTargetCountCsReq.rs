@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetClientRaidTargetCountCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetClientRaidTargetCountCsReq.KMGMHPKGEDA)
-    pub KMGMHPKGEDA: u32,
-    // @@protoc_insertion_point(field:SetClientRaidTargetCountCsReq.progress)
-    pub progress: u32,
+    // @@protoc_insertion_point(field:SetClientRaidTargetCountCsReq.DKEPJDPEJKG)
+    pub DKEPJDPEJKG: u32,
+    // @@protoc_insertion_point(field:SetClientRaidTargetCountCsReq.FINLPBFNLHP)
+    pub FINLPBFNLHP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SetClientRaidTargetCountCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl SetClientRaidTargetCountCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KMGMHPKGEDA",
-            |m: &SetClientRaidTargetCountCsReq| { &m.KMGMHPKGEDA },
-            |m: &mut SetClientRaidTargetCountCsReq| { &mut m.KMGMHPKGEDA },
+            "DKEPJDPEJKG",
+            |m: &SetClientRaidTargetCountCsReq| { &m.DKEPJDPEJKG },
+            |m: &mut SetClientRaidTargetCountCsReq| { &mut m.DKEPJDPEJKG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "progress",
-            |m: &SetClientRaidTargetCountCsReq| { &m.progress },
-            |m: &mut SetClientRaidTargetCountCsReq| { &mut m.progress },
+            "FINLPBFNLHP",
+            |m: &SetClientRaidTargetCountCsReq| { &m.FINLPBFNLHP },
+            |m: &mut SetClientRaidTargetCountCsReq| { &mut m.FINLPBFNLHP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetClientRaidTargetCountCsReq>(
             "SetClientRaidTargetCountCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for SetClientRaidTargetCountCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.KMGMHPKGEDA = is.read_uint32()?;
+                80 => {
+                    self.DKEPJDPEJKG = is.read_uint32()?;
                 },
-                8 => {
-                    self.progress = is.read_uint32()?;
+                72 => {
+                    self.FINLPBFNLHP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for SetClientRaidTargetCountCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KMGMHPKGEDA != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.KMGMHPKGEDA);
+        if self.DKEPJDPEJKG != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.DKEPJDPEJKG);
         }
-        if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.progress);
+        if self.FINLPBFNLHP != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.FINLPBFNLHP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for SetClientRaidTargetCountCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KMGMHPKGEDA != 0 {
-            os.write_uint32(12, self.KMGMHPKGEDA)?;
+        if self.DKEPJDPEJKG != 0 {
+            os.write_uint32(10, self.DKEPJDPEJKG)?;
         }
-        if self.progress != 0 {
-            os.write_uint32(1, self.progress)?;
+        if self.FINLPBFNLHP != 0 {
+            os.write_uint32(9, self.FINLPBFNLHP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for SetClientRaidTargetCountCsReq {
     }
 
     fn clear(&mut self) {
-        self.KMGMHPKGEDA = 0;
-        self.progress = 0;
+        self.DKEPJDPEJKG = 0;
+        self.FINLPBFNLHP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetClientRaidTargetCountCsReq {
         static instance: SetClientRaidTargetCountCsReq = SetClientRaidTargetCountCsReq {
-            KMGMHPKGEDA: 0,
-            progress: 0,
+            DKEPJDPEJKG: 0,
+            FINLPBFNLHP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for SetClientRaidTargetCountCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#SetClientRaidTargetCountCsReq.proto\"]\n\x1dSetClientRaidTargetCountC\
-    sReq\x12\x20\n\x0bKMGMHPKGEDA\x18\x0c\x20\x01(\rR\x0bKMGMHPKGEDA\x12\x1a\
-    \n\x08progress\x18\x01\x20\x01(\rR\x08progressb\x06proto3\
+    \n#SetClientRaidTargetCountCsReq.proto\"c\n\x1dSetClientRaidTargetCountC\
+    sReq\x12\x20\n\x0bDKEPJDPEJKG\x18\n\x20\x01(\rR\x0bDKEPJDPEJKG\x12\x20\n\
+    \x0bFINLPBFNLHP\x18\t\x20\x01(\rR\x0bFINLPBFNLHPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

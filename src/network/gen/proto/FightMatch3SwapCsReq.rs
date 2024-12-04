@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightMatch3SwapCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FightMatch3SwapCsReq.GMMHLEKIJHP)
-    pub GMMHLEKIJHP: ::std::vec::Vec<super::KEKABJPICIP::KEKABJPICIP>,
-    // @@protoc_insertion_point(field:FightMatch3SwapCsReq.NGGOBIKLHLC)
-    pub NGGOBIKLHLC: ::protobuf::MessageField<super::MDLLCLADJCP::MDLLCLADJCP>,
-    // @@protoc_insertion_point(field:FightMatch3SwapCsReq.JJHAOGEHFEN)
-    pub JJHAOGEHFEN: ::protobuf::MessageField<super::MDLLCLADJCP::MDLLCLADJCP>,
-    // @@protoc_insertion_point(field:FightMatch3SwapCsReq.PPBIIDKNIDA)
-    pub PPBIIDKNIDA: u32,
+    // @@protoc_insertion_point(field:FightMatch3SwapCsReq.NAGKACACHGD)
+    pub NAGKACACHGD: u32,
+    // @@protoc_insertion_point(field:FightMatch3SwapCsReq.MABDNFCABKO)
+    pub MABDNFCABKO: ::protobuf::MessageField<super::MFEJEEDCDLA::MFEJEEDCDLA>,
+    // @@protoc_insertion_point(field:FightMatch3SwapCsReq.BGCJOIMPLDN)
+    pub BGCJOIMPLDN: ::protobuf::MessageField<super::MFEJEEDCDLA::MFEJEEDCDLA>,
+    // @@protoc_insertion_point(field:FightMatch3SwapCsReq.PAKCGEMHBED)
+    pub PAKCGEMHBED: ::std::vec::Vec<super::KNEJALOEEAB::KNEJALOEEAB>,
     // special fields
     // @@protoc_insertion_point(special_field:FightMatch3SwapCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,25 +56,25 @@ impl FightMatch3SwapCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GMMHLEKIJHP",
-            |m: &FightMatch3SwapCsReq| { &m.GMMHLEKIJHP },
-            |m: &mut FightMatch3SwapCsReq| { &mut m.GMMHLEKIJHP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MDLLCLADJCP::MDLLCLADJCP>(
-            "NGGOBIKLHLC",
-            |m: &FightMatch3SwapCsReq| { &m.NGGOBIKLHLC },
-            |m: &mut FightMatch3SwapCsReq| { &mut m.NGGOBIKLHLC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MDLLCLADJCP::MDLLCLADJCP>(
-            "JJHAOGEHFEN",
-            |m: &FightMatch3SwapCsReq| { &m.JJHAOGEHFEN },
-            |m: &mut FightMatch3SwapCsReq| { &mut m.JJHAOGEHFEN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PPBIIDKNIDA",
-            |m: &FightMatch3SwapCsReq| { &m.PPBIIDKNIDA },
-            |m: &mut FightMatch3SwapCsReq| { &mut m.PPBIIDKNIDA },
+            "NAGKACACHGD",
+            |m: &FightMatch3SwapCsReq| { &m.NAGKACACHGD },
+            |m: &mut FightMatch3SwapCsReq| { &mut m.NAGKACACHGD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MFEJEEDCDLA::MFEJEEDCDLA>(
+            "MABDNFCABKO",
+            |m: &FightMatch3SwapCsReq| { &m.MABDNFCABKO },
+            |m: &mut FightMatch3SwapCsReq| { &mut m.MABDNFCABKO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MFEJEEDCDLA::MFEJEEDCDLA>(
+            "BGCJOIMPLDN",
+            |m: &FightMatch3SwapCsReq| { &m.BGCJOIMPLDN },
+            |m: &mut FightMatch3SwapCsReq| { &mut m.BGCJOIMPLDN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PAKCGEMHBED",
+            |m: &FightMatch3SwapCsReq| { &m.PAKCGEMHBED },
+            |m: &mut FightMatch3SwapCsReq| { &mut m.PAKCGEMHBED },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightMatch3SwapCsReq>(
             "FightMatch3SwapCsReq",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for FightMatch3SwapCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    self.GMMHLEKIJHP.push(is.read_message()?);
+                32 => {
+                    self.NAGKACACHGD = is.read_uint32()?;
                 },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NGGOBIKLHLC)?;
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MABDNFCABKO)?;
                 },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JJHAOGEHFEN)?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BGCJOIMPLDN)?;
                 },
-                88 => {
-                    self.PPBIIDKNIDA = is.read_uint32()?;
+                106 => {
+                    self.PAKCGEMHBED.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,39 +118,39 @@ impl ::protobuf::Message for FightMatch3SwapCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.GMMHLEKIJHP {
+        if self.NAGKACACHGD != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.NAGKACACHGD);
+        }
+        if let Some(v) = self.MABDNFCABKO.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.BGCJOIMPLDN.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        for value in &self.PAKCGEMHBED {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.NGGOBIKLHLC.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.JJHAOGEHFEN.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.PPBIIDKNIDA != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.PPBIIDKNIDA);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.GMMHLEKIJHP {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if self.NAGKACACHGD != 0 {
+            os.write_uint32(4, self.NAGKACACHGD)?;
+        }
+        if let Some(v) = self.MABDNFCABKO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        }
+        if let Some(v) = self.BGCJOIMPLDN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
+        for v in &self.PAKCGEMHBED {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
-        if let Some(v) = self.NGGOBIKLHLC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        }
-        if let Some(v) = self.JJHAOGEHFEN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        }
-        if self.PPBIIDKNIDA != 0 {
-            os.write_uint32(11, self.PPBIIDKNIDA)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -168,19 +168,19 @@ impl ::protobuf::Message for FightMatch3SwapCsReq {
     }
 
     fn clear(&mut self) {
-        self.GMMHLEKIJHP.clear();
-        self.NGGOBIKLHLC.clear();
-        self.JJHAOGEHFEN.clear();
-        self.PPBIIDKNIDA = 0;
+        self.NAGKACACHGD = 0;
+        self.MABDNFCABKO.clear();
+        self.BGCJOIMPLDN.clear();
+        self.PAKCGEMHBED.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightMatch3SwapCsReq {
         static instance: FightMatch3SwapCsReq = FightMatch3SwapCsReq {
-            GMMHLEKIJHP: ::std::vec::Vec::new(),
-            NGGOBIKLHLC: ::protobuf::MessageField::none(),
-            JJHAOGEHFEN: ::protobuf::MessageField::none(),
-            PPBIIDKNIDA: 0,
+            NAGKACACHGD: 0,
+            MABDNFCABKO: ::protobuf::MessageField::none(),
+            BGCJOIMPLDN: ::protobuf::MessageField::none(),
+            PAKCGEMHBED: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -205,12 +205,12 @@ impl ::protobuf::reflect::ProtobufValue for FightMatch3SwapCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aFightMatch3SwapCsReq.proto\x1a\x11KEKABJPICIP.proto\x1a\x11MDLLCLA\
-    DJCP.proto\"\xc8\x01\n\x14FightMatch3SwapCsReq\x12.\n\x0bGMMHLEKIJHP\x18\
-    \n\x20\x03(\x0b2\x0c.KEKABJPICIPR\x0bGMMHLEKIJHP\x12.\n\x0bNGGOBIKLHLC\
-    \x18\x0f\x20\x01(\x0b2\x0c.MDLLCLADJCPR\x0bNGGOBIKLHLC\x12.\n\x0bJJHAOGE\
-    HFEN\x18\x08\x20\x01(\x0b2\x0c.MDLLCLADJCPR\x0bJJHAOGEHFEN\x12\x20\n\x0b\
-    PPBIIDKNIDA\x18\x0b\x20\x01(\rR\x0bPPBIIDKNIDAb\x06proto3\
+    \n\x1aFightMatch3SwapCsReq.proto\x1a\x11KNEJALOEEAB.proto\x1a\x11MFEJEED\
+    CDLA.proto\"\xc8\x01\n\x14FightMatch3SwapCsReq\x12\x20\n\x0bNAGKACACHGD\
+    \x18\x04\x20\x01(\rR\x0bNAGKACACHGD\x12.\n\x0bMABDNFCABKO\x18\x03\x20\
+    \x01(\x0b2\x0c.MFEJEEDCDLAR\x0bMABDNFCABKO\x12.\n\x0bBGCJOIMPLDN\x18\x01\
+    \x20\x01(\x0b2\x0c.MFEJEEDCDLAR\x0bBGCJOIMPLDN\x12.\n\x0bPAKCGEMHBED\x18\
+    \r\x20\x03(\x0b2\x0c.KNEJALOEEABR\x0bPAKCGEMHBEDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -228,8 +228,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::KEKABJPICIP::file_descriptor().clone());
-            deps.push(super::MDLLCLADJCP::file_descriptor().clone());
+            deps.push(super::KNEJALOEEAB::file_descriptor().clone());
+            deps.push(super::MFEJEEDCDLA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FightMatch3SwapCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

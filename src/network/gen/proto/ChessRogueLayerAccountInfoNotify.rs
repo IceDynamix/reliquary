@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueLayerAccountInfoNotify {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueLayerAccountInfoNotify.LBPJJFNLMFC)
-    pub LBPJJFNLMFC: u32,
-    // @@protoc_insertion_point(field:ChessRogueLayerAccountInfoNotify.HBLHPOLEDGA)
-    pub HBLHPOLEDGA: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ChessRogueLayerAccountInfoNotify.GGHEBMCAJKI)
-    pub GGHEBMCAJKI: ::protobuf::MessageField<super::NECPIBKAFJE::NECPIBKAFJE>,
-    // @@protoc_insertion_point(field:ChessRogueLayerAccountInfoNotify.MLMELOKMGBH)
-    pub MLMELOKMGBH: u32,
-    // @@protoc_insertion_point(field:ChessRogueLayerAccountInfoNotify.CMPAKCFPGJN)
-    pub CMPAKCFPGJN: ::protobuf::MessageField<super::JHPFGKKNOGF::JHPFGKKNOGF>,
+    // @@protoc_insertion_point(field:ChessRogueLayerAccountInfoNotify.IGODAFNLDCK)
+    pub IGODAFNLDCK: u32,
+    // @@protoc_insertion_point(field:ChessRogueLayerAccountInfoNotify.GEFPDFLDLHD)
+    pub GEFPDFLDLHD: u32,
+    // @@protoc_insertion_point(field:ChessRogueLayerAccountInfoNotify.LHPDBAMHBKB)
+    pub LHPDBAMHBKB: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ChessRogueLayerAccountInfoNotify.BCBJPFIKPHG)
+    pub BCBJPFIKPHG: ::protobuf::MessageField<super::BNKNFJKMJIE::BNKNFJKMJIE>,
+    // @@protoc_insertion_point(field:ChessRogueLayerAccountInfoNotify.APLCCKHHPKC)
+    pub APLCCKHHPKC: ::protobuf::MessageField<super::LMPHODOEHCN::LMPHODOEHCN>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueLayerAccountInfoNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,29 +59,29 @@ impl ChessRogueLayerAccountInfoNotify {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LBPJJFNLMFC",
-            |m: &ChessRogueLayerAccountInfoNotify| { &m.LBPJJFNLMFC },
-            |m: &mut ChessRogueLayerAccountInfoNotify| { &mut m.LBPJJFNLMFC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HBLHPOLEDGA",
-            |m: &ChessRogueLayerAccountInfoNotify| { &m.HBLHPOLEDGA },
-            |m: &mut ChessRogueLayerAccountInfoNotify| { &mut m.HBLHPOLEDGA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NECPIBKAFJE::NECPIBKAFJE>(
-            "GGHEBMCAJKI",
-            |m: &ChessRogueLayerAccountInfoNotify| { &m.GGHEBMCAJKI },
-            |m: &mut ChessRogueLayerAccountInfoNotify| { &mut m.GGHEBMCAJKI },
+            "IGODAFNLDCK",
+            |m: &ChessRogueLayerAccountInfoNotify| { &m.IGODAFNLDCK },
+            |m: &mut ChessRogueLayerAccountInfoNotify| { &mut m.IGODAFNLDCK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MLMELOKMGBH",
-            |m: &ChessRogueLayerAccountInfoNotify| { &m.MLMELOKMGBH },
-            |m: &mut ChessRogueLayerAccountInfoNotify| { &mut m.MLMELOKMGBH },
+            "GEFPDFLDLHD",
+            |m: &ChessRogueLayerAccountInfoNotify| { &m.GEFPDFLDLHD },
+            |m: &mut ChessRogueLayerAccountInfoNotify| { &mut m.GEFPDFLDLHD },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JHPFGKKNOGF::JHPFGKKNOGF>(
-            "CMPAKCFPGJN",
-            |m: &ChessRogueLayerAccountInfoNotify| { &m.CMPAKCFPGJN },
-            |m: &mut ChessRogueLayerAccountInfoNotify| { &mut m.CMPAKCFPGJN },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LHPDBAMHBKB",
+            |m: &ChessRogueLayerAccountInfoNotify| { &m.LHPDBAMHBKB },
+            |m: &mut ChessRogueLayerAccountInfoNotify| { &mut m.LHPDBAMHBKB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BNKNFJKMJIE::BNKNFJKMJIE>(
+            "BCBJPFIKPHG",
+            |m: &ChessRogueLayerAccountInfoNotify| { &m.BCBJPFIKPHG },
+            |m: &mut ChessRogueLayerAccountInfoNotify| { &mut m.BCBJPFIKPHG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LMPHODOEHCN::LMPHODOEHCN>(
+            "APLCCKHHPKC",
+            |m: &ChessRogueLayerAccountInfoNotify| { &m.APLCCKHHPKC },
+            |m: &mut ChessRogueLayerAccountInfoNotify| { &mut m.APLCCKHHPKC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueLayerAccountInfoNotify>(
             "ChessRogueLayerAccountInfoNotify",
@@ -101,23 +101,23 @@ impl ::protobuf::Message for ChessRogueLayerAccountInfoNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.LBPJJFNLMFC = is.read_uint32()?;
+                16 => {
+                    self.IGODAFNLDCK = is.read_uint32()?;
+                },
+                64 => {
+                    self.GEFPDFLDLHD = is.read_uint32()?;
+                },
+                106 => {
+                    is.read_repeated_packed_uint32_into(&mut self.LHPDBAMHBKB)?;
+                },
+                104 => {
+                    self.LHPDBAMHBKB.push(is.read_uint32()?);
                 },
                 34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.HBLHPOLEDGA)?;
-                },
-                32 => {
-                    self.HBLHPOLEDGA.push(is.read_uint32()?);
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BCBJPFIKPHG)?;
                 },
                 50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GGHEBMCAJKI)?;
-                },
-                88 => {
-                    self.MLMELOKMGBH = is.read_uint32()?;
-                },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CMPAKCFPGJN)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.APLCCKHHPKC)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -131,20 +131,20 @@ impl ::protobuf::Message for ChessRogueLayerAccountInfoNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LBPJJFNLMFC != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.LBPJJFNLMFC);
+        if self.IGODAFNLDCK != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.IGODAFNLDCK);
         }
-        for value in &self.HBLHPOLEDGA {
-            my_size += ::protobuf::rt::uint32_size(4, *value);
+        if self.GEFPDFLDLHD != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.GEFPDFLDLHD);
+        }
+        for value in &self.LHPDBAMHBKB {
+            my_size += ::protobuf::rt::uint32_size(13, *value);
         };
-        if let Some(v) = self.GGHEBMCAJKI.as_ref() {
+        if let Some(v) = self.BCBJPFIKPHG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.MLMELOKMGBH != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.MLMELOKMGBH);
-        }
-        if let Some(v) = self.CMPAKCFPGJN.as_ref() {
+        if let Some(v) = self.APLCCKHHPKC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -154,20 +154,20 @@ impl ::protobuf::Message for ChessRogueLayerAccountInfoNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LBPJJFNLMFC != 0 {
-            os.write_uint32(9, self.LBPJJFNLMFC)?;
+        if self.IGODAFNLDCK != 0 {
+            os.write_uint32(2, self.IGODAFNLDCK)?;
         }
-        for v in &self.HBLHPOLEDGA {
-            os.write_uint32(4, *v)?;
+        if self.GEFPDFLDLHD != 0 {
+            os.write_uint32(8, self.GEFPDFLDLHD)?;
+        }
+        for v in &self.LHPDBAMHBKB {
+            os.write_uint32(13, *v)?;
         };
-        if let Some(v) = self.GGHEBMCAJKI.as_ref() {
+        if let Some(v) = self.BCBJPFIKPHG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        }
+        if let Some(v) = self.APLCCKHHPKC.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
-        if self.MLMELOKMGBH != 0 {
-            os.write_uint32(11, self.MLMELOKMGBH)?;
-        }
-        if let Some(v) = self.CMPAKCFPGJN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,21 +186,21 @@ impl ::protobuf::Message for ChessRogueLayerAccountInfoNotify {
     }
 
     fn clear(&mut self) {
-        self.LBPJJFNLMFC = 0;
-        self.HBLHPOLEDGA.clear();
-        self.GGHEBMCAJKI.clear();
-        self.MLMELOKMGBH = 0;
-        self.CMPAKCFPGJN.clear();
+        self.IGODAFNLDCK = 0;
+        self.GEFPDFLDLHD = 0;
+        self.LHPDBAMHBKB.clear();
+        self.BCBJPFIKPHG.clear();
+        self.APLCCKHHPKC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueLayerAccountInfoNotify {
         static instance: ChessRogueLayerAccountInfoNotify = ChessRogueLayerAccountInfoNotify {
-            LBPJJFNLMFC: 0,
-            HBLHPOLEDGA: ::std::vec::Vec::new(),
-            GGHEBMCAJKI: ::protobuf::MessageField::none(),
-            MLMELOKMGBH: 0,
-            CMPAKCFPGJN: ::protobuf::MessageField::none(),
+            IGODAFNLDCK: 0,
+            GEFPDFLDLHD: 0,
+            LHPDBAMHBKB: ::std::vec::Vec::new(),
+            BCBJPFIKPHG: ::protobuf::MessageField::none(),
+            APLCCKHHPKC: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -225,13 +225,13 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueLayerAccountInfoNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n&ChessRogueLayerAccountInfoNotify.proto\x1a\x11JHPFGKKNOGF.proto\x1a\
-    \x11NECPIBKAFJE.proto\"\xe8\x01\n\x20ChessRogueLayerAccountInfoNotify\
-    \x12\x20\n\x0bLBPJJFNLMFC\x18\t\x20\x01(\rR\x0bLBPJJFNLMFC\x12\x20\n\x0b\
-    HBLHPOLEDGA\x18\x04\x20\x03(\rR\x0bHBLHPOLEDGA\x12.\n\x0bGGHEBMCAJKI\x18\
-    \x06\x20\x01(\x0b2\x0c.NECPIBKAFJER\x0bGGHEBMCAJKI\x12\x20\n\x0bMLMELOKM\
-    GBH\x18\x0b\x20\x01(\rR\x0bMLMELOKMGBH\x12.\n\x0bCMPAKCFPGJN\x18\x08\x20\
-    \x01(\x0b2\x0c.JHPFGKKNOGFR\x0bCMPAKCFPGJNb\x06proto3\
+    \n&ChessRogueLayerAccountInfoNotify.proto\x1a\x11BNKNFJKMJIE.proto\x1a\
+    \x11LMPHODOEHCN.proto\"\xe8\x01\n\x20ChessRogueLayerAccountInfoNotify\
+    \x12\x20\n\x0bIGODAFNLDCK\x18\x02\x20\x01(\rR\x0bIGODAFNLDCK\x12\x20\n\
+    \x0bGEFPDFLDLHD\x18\x08\x20\x01(\rR\x0bGEFPDFLDLHD\x12\x20\n\x0bLHPDBAMH\
+    BKB\x18\r\x20\x03(\rR\x0bLHPDBAMHBKB\x12.\n\x0bBCBJPFIKPHG\x18\x04\x20\
+    \x01(\x0b2\x0c.BNKNFJKMJIER\x0bBCBJPFIKPHG\x12.\n\x0bAPLCCKHHPKC\x18\x06\
+    \x20\x01(\x0b2\x0c.LMPHODOEHCNR\x0bAPLCCKHHPKCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -249,8 +249,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::JHPFGKKNOGF::file_descriptor().clone());
-            deps.push(super::NECPIBKAFJE::file_descriptor().clone());
+            deps.push(super::BNKNFJKMJIE::file_descriptor().clone());
+            deps.push(super::LMPHODOEHCN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChessRogueLayerAccountInfoNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

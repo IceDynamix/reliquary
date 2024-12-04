@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RetcodeNotify {
     // message fields
-    // @@protoc_insertion_point(field:RetcodeNotify.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:RetcodeNotify.DDDNPPAKINN)
-    pub DDDNPPAKINN: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RetcodeNotify.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:RetcodeNotify.EFCCHMBPEFF)
+    pub EFCCHMBPEFF: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:RetcodeNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl RetcodeNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &RetcodeNotify| { &m.retcode },
-            |m: &mut RetcodeNotify| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &RetcodeNotify| { &m.ADADHIHDHJC },
+            |m: &mut RetcodeNotify| { &mut m.ADADHIHDHJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DDDNPPAKINN",
-            |m: &RetcodeNotify| { &m.DDDNPPAKINN },
-            |m: &mut RetcodeNotify| { &mut m.DDDNPPAKINN },
+            "EFCCHMBPEFF",
+            |m: &RetcodeNotify| { &m.EFCCHMBPEFF },
+            |m: &mut RetcodeNotify| { &mut m.EFCCHMBPEFF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RetcodeNotify>(
             "RetcodeNotify",
@@ -80,14 +80,14 @@ impl ::protobuf::Message for RetcodeNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.retcode = is.read_uint32()?;
+                72 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.DDDNPPAKINN)?;
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.EFCCHMBPEFF)?;
                 },
-                104 => {
-                    self.DDDNPPAKINN.push(is.read_uint32()?);
+                64 => {
+                    self.EFCCHMBPEFF.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,11 +101,11 @@ impl ::protobuf::Message for RetcodeNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.ADADHIHDHJC);
         }
-        for value in &self.DDDNPPAKINN {
-            my_size += ::protobuf::rt::uint32_size(13, *value);
+        for value in &self.EFCCHMBPEFF {
+            my_size += ::protobuf::rt::uint32_size(8, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,11 +113,11 @@ impl ::protobuf::Message for RetcodeNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(9, self.ADADHIHDHJC)?;
         }
-        for v in &self.DDDNPPAKINN {
-            os.write_uint32(13, *v)?;
+        for v in &self.EFCCHMBPEFF {
+            os.write_uint32(8, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -136,15 +136,15 @@ impl ::protobuf::Message for RetcodeNotify {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.DDDNPPAKINN.clear();
+        self.ADADHIHDHJC = 0;
+        self.EFCCHMBPEFF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RetcodeNotify {
         static instance: RetcodeNotify = RetcodeNotify {
-            retcode: 0,
-            DDDNPPAKINN: ::std::vec::Vec::new(),
+            ADADHIHDHJC: 0,
+            EFCCHMBPEFF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -169,9 +169,9 @@ impl ::protobuf::reflect::ProtobufValue for RetcodeNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13RetcodeNotify.proto\"K\n\rRetcodeNotify\x12\x18\n\x07retcode\x18\
-    \x03\x20\x01(\rR\x07retcode\x12\x20\n\x0bDDDNPPAKINN\x18\r\x20\x03(\rR\
-    \x0bDDDNPPAKINNb\x06proto3\
+    \n\x13RetcodeNotify.proto\"S\n\rRetcodeNotify\x12\x20\n\x0bADADHIHDHJC\
+    \x18\t\x20\x01(\rR\x0bADADHIHDHJC\x12\x20\n\x0bEFCCHMBPEFF\x18\x08\x20\
+    \x03(\rR\x0bEFCCHMBPEFFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

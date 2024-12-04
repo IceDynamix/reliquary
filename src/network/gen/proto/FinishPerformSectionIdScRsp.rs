@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishPerformSectionIdScRsp {
     // message fields
-    // @@protoc_insertion_point(field:FinishPerformSectionIdScRsp.LPDNAMLHGNJ)
-    pub LPDNAMLHGNJ: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:FinishPerformSectionIdScRsp.DGFNOGJFILI)
-    pub DGFNOGJFILI: ::std::vec::Vec<super::PAMILHACAGM::PAMILHACAGM>,
-    // @@protoc_insertion_point(field:FinishPerformSectionIdScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:FinishPerformSectionIdScRsp.CLJDINBOPJM)
-    pub CLJDINBOPJM: u32,
+    // @@protoc_insertion_point(field:FinishPerformSectionIdScRsp.KBCKGKALLFF)
+    pub KBCKGKALLFF: u32,
+    // @@protoc_insertion_point(field:FinishPerformSectionIdScRsp.AGPKHOOCMPE)
+    pub AGPKHOOCMPE: ::std::vec::Vec<super::HBDPLINHEKH::HBDPLINHEKH>,
+    // @@protoc_insertion_point(field:FinishPerformSectionIdScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:FinishPerformSectionIdScRsp.ELPMNKHEPKJ)
+    pub ELPMNKHEPKJ: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:FinishPerformSectionIdScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,25 +56,25 @@ impl FinishPerformSectionIdScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "LPDNAMLHGNJ",
-            |m: &FinishPerformSectionIdScRsp| { &m.LPDNAMLHGNJ },
-            |m: &mut FinishPerformSectionIdScRsp| { &mut m.LPDNAMLHGNJ },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KBCKGKALLFF",
+            |m: &FinishPerformSectionIdScRsp| { &m.KBCKGKALLFF },
+            |m: &mut FinishPerformSectionIdScRsp| { &mut m.KBCKGKALLFF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DGFNOGJFILI",
-            |m: &FinishPerformSectionIdScRsp| { &m.DGFNOGJFILI },
-            |m: &mut FinishPerformSectionIdScRsp| { &mut m.DGFNOGJFILI },
+            "AGPKHOOCMPE",
+            |m: &FinishPerformSectionIdScRsp| { &m.AGPKHOOCMPE },
+            |m: &mut FinishPerformSectionIdScRsp| { &mut m.AGPKHOOCMPE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &FinishPerformSectionIdScRsp| { &m.retcode },
-            |m: &mut FinishPerformSectionIdScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &FinishPerformSectionIdScRsp| { &m.ADADHIHDHJC },
+            |m: &mut FinishPerformSectionIdScRsp| { &mut m.ADADHIHDHJC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CLJDINBOPJM",
-            |m: &FinishPerformSectionIdScRsp| { &m.CLJDINBOPJM },
-            |m: &mut FinishPerformSectionIdScRsp| { &mut m.CLJDINBOPJM },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "ELPMNKHEPKJ",
+            |m: &FinishPerformSectionIdScRsp| { &m.ELPMNKHEPKJ },
+            |m: &mut FinishPerformSectionIdScRsp| { &mut m.ELPMNKHEPKJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishPerformSectionIdScRsp>(
             "FinishPerformSectionIdScRsp",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for FinishPerformSectionIdScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LPDNAMLHGNJ)?;
+                8 => {
+                    self.KBCKGKALLFF = is.read_uint32()?;
                 },
-                90 => {
-                    self.DGFNOGJFILI.push(is.read_message()?);
+                74 => {
+                    self.AGPKHOOCMPE.push(is.read_message()?);
                 },
-                112 => {
-                    self.retcode = is.read_uint32()?;
+                16 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                96 => {
-                    self.CLJDINBOPJM = is.read_uint32()?;
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ELPMNKHEPKJ)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,19 +118,19 @@ impl ::protobuf::Message for FinishPerformSectionIdScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.LPDNAMLHGNJ.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.KBCKGKALLFF != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.KBCKGKALLFF);
         }
-        for value in &self.DGFNOGJFILI {
+        for value in &self.AGPKHOOCMPE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.ADADHIHDHJC);
         }
-        if self.CLJDINBOPJM != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.CLJDINBOPJM);
+        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,17 +138,17 @@ impl ::protobuf::Message for FinishPerformSectionIdScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.LPDNAMLHGNJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        if self.KBCKGKALLFF != 0 {
+            os.write_uint32(1, self.KBCKGKALLFF)?;
         }
-        for v in &self.DGFNOGJFILI {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        for v in &self.AGPKHOOCMPE {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
-        if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(2, self.ADADHIHDHJC)?;
         }
-        if self.CLJDINBOPJM != 0 {
-            os.write_uint32(12, self.CLJDINBOPJM)?;
+        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,19 +167,19 @@ impl ::protobuf::Message for FinishPerformSectionIdScRsp {
     }
 
     fn clear(&mut self) {
-        self.LPDNAMLHGNJ.clear();
-        self.DGFNOGJFILI.clear();
-        self.retcode = 0;
-        self.CLJDINBOPJM = 0;
+        self.KBCKGKALLFF = 0;
+        self.AGPKHOOCMPE.clear();
+        self.ADADHIHDHJC = 0;
+        self.ELPMNKHEPKJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishPerformSectionIdScRsp {
         static instance: FinishPerformSectionIdScRsp = FinishPerformSectionIdScRsp {
-            LPDNAMLHGNJ: ::protobuf::MessageField::none(),
-            DGFNOGJFILI: ::std::vec::Vec::new(),
-            retcode: 0,
-            CLJDINBOPJM: 0,
+            KBCKGKALLFF: 0,
+            AGPKHOOCMPE: ::std::vec::Vec::new(),
+            ADADHIHDHJC: 0,
+            ELPMNKHEPKJ: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,12 +204,12 @@ impl ::protobuf::reflect::ProtobufValue for FinishPerformSectionIdScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!FinishPerformSectionIdScRsp.proto\x1a\x0eItemList.proto\x1a\x11PAMILH\
-    ACAGM.proto\"\xb6\x01\n\x1bFinishPerformSectionIdScRsp\x12+\n\x0bLPDNAML\
-    HGNJ\x18\x04\x20\x01(\x0b2\t.ItemListR\x0bLPDNAMLHGNJ\x12.\n\x0bDGFNOGJF\
-    ILI\x18\x0b\x20\x03(\x0b2\x0c.PAMILHACAGMR\x0bDGFNOGJFILI\x12\x18\n\x07r\
-    etcode\x18\x0e\x20\x01(\rR\x07retcode\x12\x20\n\x0bCLJDINBOPJM\x18\x0c\
-    \x20\x01(\rR\x0bCLJDINBOPJMb\x06proto3\
+    \n!FinishPerformSectionIdScRsp.proto\x1a\x11HBDPLINHEKH.proto\x1a\x0eIte\
+    mList.proto\"\xbe\x01\n\x1bFinishPerformSectionIdScRsp\x12\x20\n\x0bKBCK\
+    GKALLFF\x18\x01\x20\x01(\rR\x0bKBCKGKALLFF\x12.\n\x0bAGPKHOOCMPE\x18\t\
+    \x20\x03(\x0b2\x0c.HBDPLINHEKHR\x0bAGPKHOOCMPE\x12\x20\n\x0bADADHIHDHJC\
+    \x18\x02\x20\x01(\rR\x0bADADHIHDHJC\x12+\n\x0bELPMNKHEPKJ\x18\x05\x20\
+    \x01(\x0b2\t.ItemListR\x0bELPMNKHEPKJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -227,8 +227,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
+            deps.push(super::HBDPLINHEKH::file_descriptor().clone());
             deps.push(super::ItemList::file_descriptor().clone());
-            deps.push(super::PAMILHACAGM::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FinishPerformSectionIdScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

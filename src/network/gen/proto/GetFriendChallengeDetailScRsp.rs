@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFriendChallengeDetailScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetFriendChallengeDetailScRsp.uid)
-    pub uid: u32,
-    // @@protoc_insertion_point(field:GetFriendChallengeDetailScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:GetFriendChallengeDetailScRsp.DMDAFIBFJHP)
-    pub DMDAFIBFJHP: ::std::vec::Vec<super::DisplayAvatarDetailInfo::DisplayAvatarDetailInfo>,
-    // @@protoc_insertion_point(field:GetFriendChallengeDetailScRsp.DBKHFAEKNKL)
-    pub DBKHFAEKNKL: u32,
+    // @@protoc_insertion_point(field:GetFriendChallengeDetailScRsp.GAIMPKMPKAL)
+    pub GAIMPKMPKAL: ::std::vec::Vec<super::DisplayAvatarDetailInfo::DisplayAvatarDetailInfo>,
+    // @@protoc_insertion_point(field:GetFriendChallengeDetailScRsp.GPKEAKPHIPA)
+    pub GPKEAKPHIPA: u32,
+    // @@protoc_insertion_point(field:GetFriendChallengeDetailScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:GetFriendChallengeDetailScRsp.LNCNOFOEHAA)
+    pub LNCNOFOEHAA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetFriendChallengeDetailScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,25 +56,25 @@ impl GetFriendChallengeDetailScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "uid",
-            |m: &GetFriendChallengeDetailScRsp| { &m.uid },
-            |m: &mut GetFriendChallengeDetailScRsp| { &mut m.uid },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetFriendChallengeDetailScRsp| { &m.retcode },
-            |m: &mut GetFriendChallengeDetailScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DMDAFIBFJHP",
-            |m: &GetFriendChallengeDetailScRsp| { &m.DMDAFIBFJHP },
-            |m: &mut GetFriendChallengeDetailScRsp| { &mut m.DMDAFIBFJHP },
+            "GAIMPKMPKAL",
+            |m: &GetFriendChallengeDetailScRsp| { &m.GAIMPKMPKAL },
+            |m: &mut GetFriendChallengeDetailScRsp| { &mut m.GAIMPKMPKAL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DBKHFAEKNKL",
-            |m: &GetFriendChallengeDetailScRsp| { &m.DBKHFAEKNKL },
-            |m: &mut GetFriendChallengeDetailScRsp| { &mut m.DBKHFAEKNKL },
+            "GPKEAKPHIPA",
+            |m: &GetFriendChallengeDetailScRsp| { &m.GPKEAKPHIPA },
+            |m: &mut GetFriendChallengeDetailScRsp| { &mut m.GPKEAKPHIPA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ADADHIHDHJC",
+            |m: &GetFriendChallengeDetailScRsp| { &m.ADADHIHDHJC },
+            |m: &mut GetFriendChallengeDetailScRsp| { &mut m.ADADHIHDHJC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LNCNOFOEHAA",
+            |m: &GetFriendChallengeDetailScRsp| { &m.LNCNOFOEHAA },
+            |m: &mut GetFriendChallengeDetailScRsp| { &mut m.LNCNOFOEHAA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetFriendChallengeDetailScRsp>(
             "GetFriendChallengeDetailScRsp",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for GetFriendChallengeDetailScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.uid = is.read_uint32()?;
-                },
-                120 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                42 => {
-                    self.DMDAFIBFJHP.push(is.read_message()?);
+                82 => {
+                    self.GAIMPKMPKAL.push(is.read_message()?);
                 },
                 32 => {
-                    self.DBKHFAEKNKL = is.read_uint32()?;
+                    self.GPKEAKPHIPA = is.read_uint32()?;
+                },
+                120 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
+                },
+                112 => {
+                    self.LNCNOFOEHAA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,18 +118,18 @@ impl ::protobuf::Message for GetFriendChallengeDetailScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.uid);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
-        }
-        for value in &self.DMDAFIBFJHP {
+        for value in &self.GAIMPKMPKAL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.DBKHFAEKNKL != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.DBKHFAEKNKL);
+        if self.GPKEAKPHIPA != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.GPKEAKPHIPA);
+        }
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.ADADHIHDHJC);
+        }
+        if self.LNCNOFOEHAA != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.LNCNOFOEHAA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for GetFriendChallengeDetailScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.uid != 0 {
-            os.write_uint32(7, self.uid)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
-        }
-        for v in &self.DMDAFIBFJHP {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        for v in &self.GAIMPKMPKAL {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
-        if self.DBKHFAEKNKL != 0 {
-            os.write_uint32(4, self.DBKHFAEKNKL)?;
+        if self.GPKEAKPHIPA != 0 {
+            os.write_uint32(4, self.GPKEAKPHIPA)?;
+        }
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(15, self.ADADHIHDHJC)?;
+        }
+        if self.LNCNOFOEHAA != 0 {
+            os.write_uint32(14, self.LNCNOFOEHAA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for GetFriendChallengeDetailScRsp {
     }
 
     fn clear(&mut self) {
-        self.uid = 0;
-        self.retcode = 0;
-        self.DMDAFIBFJHP.clear();
-        self.DBKHFAEKNKL = 0;
+        self.GAIMPKMPKAL.clear();
+        self.GPKEAKPHIPA = 0;
+        self.ADADHIHDHJC = 0;
+        self.LNCNOFOEHAA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFriendChallengeDetailScRsp {
         static instance: GetFriendChallengeDetailScRsp = GetFriendChallengeDetailScRsp {
-            uid: 0,
-            retcode: 0,
-            DMDAFIBFJHP: ::std::vec::Vec::new(),
-            DBKHFAEKNKL: 0,
+            GAIMPKMPKAL: ::std::vec::Vec::new(),
+            GPKEAKPHIPA: 0,
+            ADADHIHDHJC: 0,
+            LNCNOFOEHAA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for GetFriendChallengeDetailScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#GetFriendChallengeDetailScRsp.proto\x1a\x1dDisplayAvatarDetailInfo.pr\
-    oto\"\xa9\x01\n\x1dGetFriendChallengeDetailScRsp\x12\x10\n\x03uid\x18\
-    \x07\x20\x01(\rR\x03uid\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retc\
-    ode\x12:\n\x0bDMDAFIBFJHP\x18\x05\x20\x03(\x0b2\x18.DisplayAvatarDetailI\
-    nfoR\x0bDMDAFIBFJHP\x12\x20\n\x0bDBKHFAEKNKL\x18\x04\x20\x01(\rR\x0bDBKH\
-    FAEKNKLb\x06proto3\
+    oto\"\xc1\x01\n\x1dGetFriendChallengeDetailScRsp\x12:\n\x0bGAIMPKMPKAL\
+    \x18\n\x20\x03(\x0b2\x18.DisplayAvatarDetailInfoR\x0bGAIMPKMPKAL\x12\x20\
+    \n\x0bGPKEAKPHIPA\x18\x04\x20\x01(\rR\x0bGPKEAKPHIPA\x12\x20\n\x0bADADHI\
+    HDHJC\x18\x0f\x20\x01(\rR\x0bADADHIHDHJC\x12\x20\n\x0bLNCNOFOEHAA\x18\
+    \x0e\x20\x01(\rR\x0bLNCNOFOEHAAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

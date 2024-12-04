@@ -29,22 +29,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct Relic {
     // message fields
-    // @@protoc_insertion_point(field:Relic.equip_avatar_id)
-    pub equip_avatar_id: u32,
-    // @@protoc_insertion_point(field:Relic.level)
-    pub level: u32,
-    // @@protoc_insertion_point(field:Relic.main_affix_id)
-    pub main_affix_id: u32,
-    // @@protoc_insertion_point(field:Relic.unique_id)
-    pub unique_id: u32,
+    // @@protoc_insertion_point(field:Relic.exp)
+    pub exp: u32,
     // @@protoc_insertion_point(field:Relic.tid)
     pub tid: u32,
+    // @@protoc_insertion_point(field:Relic.unique_id)
+    pub unique_id: u32,
+    // @@protoc_insertion_point(field:Relic.equip_avatar_id)
+    pub equip_avatar_id: u32,
+    // @@protoc_insertion_point(field:Relic.main_affix_id)
+    pub main_affix_id: u32,
+    // @@protoc_insertion_point(field:Relic.level)
+    pub level: u32,
     // @@protoc_insertion_point(field:Relic.sub_affix_list)
     pub sub_affix_list: ::std::vec::Vec<super::RelicAffix::RelicAffix>,
     // @@protoc_insertion_point(field:Relic.is_discarded)
     pub is_discarded: bool,
-    // @@protoc_insertion_point(field:Relic.exp)
-    pub exp: u32,
     // @@protoc_insertion_point(field:Relic.is_protected)
     pub is_protected: bool,
     // special fields
@@ -67,19 +67,14 @@ impl Relic {
         let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "equip_avatar_id",
-            |m: &Relic| { &m.equip_avatar_id },
-            |m: &mut Relic| { &mut m.equip_avatar_id },
+            "exp",
+            |m: &Relic| { &m.exp },
+            |m: &mut Relic| { &mut m.exp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &Relic| { &m.level },
-            |m: &mut Relic| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "main_affix_id",
-            |m: &Relic| { &m.main_affix_id },
-            |m: &mut Relic| { &mut m.main_affix_id },
+            "tid",
+            |m: &Relic| { &m.tid },
+            |m: &mut Relic| { &mut m.tid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "unique_id",
@@ -87,9 +82,19 @@ impl Relic {
             |m: &mut Relic| { &mut m.unique_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "tid",
-            |m: &Relic| { &m.tid },
-            |m: &mut Relic| { &mut m.tid },
+            "equip_avatar_id",
+            |m: &Relic| { &m.equip_avatar_id },
+            |m: &mut Relic| { &mut m.equip_avatar_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "main_affix_id",
+            |m: &Relic| { &m.main_affix_id },
+            |m: &mut Relic| { &mut m.main_affix_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &Relic| { &m.level },
+            |m: &mut Relic| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "sub_affix_list",
@@ -100,11 +105,6 @@ impl Relic {
             "is_discarded",
             |m: &Relic| { &m.is_discarded },
             |m: &mut Relic| { &mut m.is_discarded },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "exp",
-            |m: &Relic| { &m.exp },
-            |m: &mut Relic| { &mut m.exp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_protected",
@@ -129,31 +129,31 @@ impl ::protobuf::Message for Relic {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.equip_avatar_id = is.read_uint32()?;
-                },
-                56 => {
-                    self.level = is.read_uint32()?;
-                },
-                48 => {
-                    self.main_affix_id = is.read_uint32()?;
-                },
-                88 => {
-                    self.unique_id = is.read_uint32()?;
-                },
-                8 => {
-                    self.tid = is.read_uint32()?;
-                },
-                42 => {
-                    self.sub_affix_list.push(is.read_message()?);
-                },
-                104 => {
-                    self.is_discarded = is.read_bool()?;
-                },
-                112 => {
+                32 => {
                     self.exp = is.read_uint32()?;
                 },
-                120 => {
+                16 => {
+                    self.tid = is.read_uint32()?;
+                },
+                56 => {
+                    self.unique_id = is.read_uint32()?;
+                },
+                88 => {
+                    self.equip_avatar_id = is.read_uint32()?;
+                },
+                112 => {
+                    self.main_affix_id = is.read_uint32()?;
+                },
+                96 => {
+                    self.level = is.read_uint32()?;
+                },
+                106 => {
+                    self.sub_affix_list.push(is.read_message()?);
+                },
+                72 => {
+                    self.is_discarded = is.read_bool()?;
+                },
+                64 => {
                     self.is_protected = is.read_bool()?;
                 },
                 tag => {
@@ -168,20 +168,23 @@ impl ::protobuf::Message for Relic {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.equip_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.equip_avatar_id);
-        }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.level);
-        }
-        if self.main_affix_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.main_affix_id);
-        }
-        if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.unique_id);
+        if self.exp != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.exp);
         }
         if self.tid != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.tid);
+            my_size += ::protobuf::rt::uint32_size(2, self.tid);
+        }
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.unique_id);
+        }
+        if self.equip_avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.equip_avatar_id);
+        }
+        if self.main_affix_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.main_affix_id);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.level);
         }
         for value in &self.sub_affix_list {
             let len = value.compute_size();
@@ -189,9 +192,6 @@ impl ::protobuf::Message for Relic {
         };
         if self.is_discarded != false {
             my_size += 1 + 1;
-        }
-        if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.exp);
         }
         if self.is_protected != false {
             my_size += 1 + 1;
@@ -202,32 +202,32 @@ impl ::protobuf::Message for Relic {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.equip_avatar_id != 0 {
-            os.write_uint32(8, self.equip_avatar_id)?;
-        }
-        if self.level != 0 {
-            os.write_uint32(7, self.level)?;
-        }
-        if self.main_affix_id != 0 {
-            os.write_uint32(6, self.main_affix_id)?;
-        }
-        if self.unique_id != 0 {
-            os.write_uint32(11, self.unique_id)?;
+        if self.exp != 0 {
+            os.write_uint32(4, self.exp)?;
         }
         if self.tid != 0 {
-            os.write_uint32(1, self.tid)?;
+            os.write_uint32(2, self.tid)?;
+        }
+        if self.unique_id != 0 {
+            os.write_uint32(7, self.unique_id)?;
+        }
+        if self.equip_avatar_id != 0 {
+            os.write_uint32(11, self.equip_avatar_id)?;
+        }
+        if self.main_affix_id != 0 {
+            os.write_uint32(14, self.main_affix_id)?;
+        }
+        if self.level != 0 {
+            os.write_uint32(12, self.level)?;
         }
         for v in &self.sub_affix_list {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         if self.is_discarded != false {
-            os.write_bool(13, self.is_discarded)?;
-        }
-        if self.exp != 0 {
-            os.write_uint32(14, self.exp)?;
+            os.write_bool(9, self.is_discarded)?;
         }
         if self.is_protected != false {
-            os.write_bool(15, self.is_protected)?;
+            os.write_bool(8, self.is_protected)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -246,28 +246,28 @@ impl ::protobuf::Message for Relic {
     }
 
     fn clear(&mut self) {
-        self.equip_avatar_id = 0;
-        self.level = 0;
-        self.main_affix_id = 0;
-        self.unique_id = 0;
+        self.exp = 0;
         self.tid = 0;
+        self.unique_id = 0;
+        self.equip_avatar_id = 0;
+        self.main_affix_id = 0;
+        self.level = 0;
         self.sub_affix_list.clear();
         self.is_discarded = false;
-        self.exp = 0;
         self.is_protected = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static Relic {
         static instance: Relic = Relic {
-            equip_avatar_id: 0,
-            level: 0,
-            main_affix_id: 0,
-            unique_id: 0,
+            exp: 0,
             tid: 0,
+            unique_id: 0,
+            equip_avatar_id: 0,
+            main_affix_id: 0,
+            level: 0,
             sub_affix_list: ::std::vec::Vec::new(),
             is_discarded: false,
-            exp: 0,
             is_protected: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -293,15 +293,15 @@ impl ::protobuf::reflect::ProtobufValue for Relic {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0bRelic.proto\x1a\x10RelicAffix.proto\"\xa3\x02\n\x05Relic\x12&\n\
-    \x0fequip_avatar_id\x18\x08\x20\x01(\rR\requipAvatarId\x12\x14\n\x05leve\
-    l\x18\x07\x20\x01(\rR\x05level\x12\"\n\rmain_affix_id\x18\x06\x20\x01(\r\
-    R\x0bmainAffixId\x12\x1b\n\tunique_id\x18\x0b\x20\x01(\rR\x08uniqueId\
-    \x12\x10\n\x03tid\x18\x01\x20\x01(\rR\x03tid\x121\n\x0esub_affix_list\
-    \x18\x05\x20\x03(\x0b2\x0b.RelicAffixR\x0csubAffixList\x12!\n\x0cis_disc\
-    arded\x18\r\x20\x01(\x08R\x0bisDiscarded\x12\x10\n\x03exp\x18\x0e\x20\
-    \x01(\rR\x03exp\x12!\n\x0cis_protected\x18\x0f\x20\x01(\x08R\x0bisProtec\
-    tedb\x06proto3\
+    \n\x0bRelic.proto\x1a\x10RelicAffix.proto\"\xa3\x02\n\x05Relic\x12\x10\n\
+    \x03exp\x18\x04\x20\x01(\rR\x03exp\x12\x10\n\x03tid\x18\x02\x20\x01(\rR\
+    \x03tid\x12\x1b\n\tunique_id\x18\x07\x20\x01(\rR\x08uniqueId\x12&\n\x0fe\
+    quip_avatar_id\x18\x0b\x20\x01(\rR\requipAvatarId\x12\"\n\rmain_affix_id\
+    \x18\x0e\x20\x01(\rR\x0bmainAffixId\x12\x14\n\x05level\x18\x0c\x20\x01(\
+    \rR\x05level\x121\n\x0esub_affix_list\x18\r\x20\x03(\x0b2\x0b.RelicAffix\
+    R\x0csubAffixList\x12!\n\x0cis_discarded\x18\t\x20\x01(\x08R\x0bisDiscar\
+    ded\x12!\n\x0cis_protected\x18\x08\x20\x01(\x08R\x0bisProtectedB\x15\n\
+    \x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

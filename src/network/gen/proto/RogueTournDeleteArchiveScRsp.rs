@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournDeleteArchiveScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournDeleteArchiveScRsp.MFLHIEHEKMM)
-    pub MFLHIEHEKMM: u32,
-    // @@protoc_insertion_point(field:RogueTournDeleteArchiveScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:RogueTournDeleteArchiveScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:RogueTournDeleteArchiveScRsp.PFOFHEMGFKL)
+    pub PFOFHEMGFKL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournDeleteArchiveScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl RogueTournDeleteArchiveScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MFLHIEHEKMM",
-            |m: &RogueTournDeleteArchiveScRsp| { &m.MFLHIEHEKMM },
-            |m: &mut RogueTournDeleteArchiveScRsp| { &mut m.MFLHIEHEKMM },
+            "ADADHIHDHJC",
+            |m: &RogueTournDeleteArchiveScRsp| { &m.ADADHIHDHJC },
+            |m: &mut RogueTournDeleteArchiveScRsp| { &mut m.ADADHIHDHJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &RogueTournDeleteArchiveScRsp| { &m.retcode },
-            |m: &mut RogueTournDeleteArchiveScRsp| { &mut m.retcode },
+            "PFOFHEMGFKL",
+            |m: &RogueTournDeleteArchiveScRsp| { &m.PFOFHEMGFKL },
+            |m: &mut RogueTournDeleteArchiveScRsp| { &mut m.PFOFHEMGFKL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournDeleteArchiveScRsp>(
             "RogueTournDeleteArchiveScRsp",
@@ -81,10 +81,10 @@ impl ::protobuf::Message for RogueTournDeleteArchiveScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 48 => {
-                    self.MFLHIEHEKMM = is.read_uint32()?;
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                56 => {
-                    self.retcode = is.read_uint32()?;
+                24 => {
+                    self.PFOFHEMGFKL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for RogueTournDeleteArchiveScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MFLHIEHEKMM != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.MFLHIEHEKMM);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.ADADHIHDHJC);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        if self.PFOFHEMGFKL != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.PFOFHEMGFKL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for RogueTournDeleteArchiveScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MFLHIEHEKMM != 0 {
-            os.write_uint32(6, self.MFLHIEHEKMM)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(6, self.ADADHIHDHJC)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+        if self.PFOFHEMGFKL != 0 {
+            os.write_uint32(3, self.PFOFHEMGFKL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for RogueTournDeleteArchiveScRsp {
     }
 
     fn clear(&mut self) {
-        self.MFLHIEHEKMM = 0;
-        self.retcode = 0;
+        self.ADADHIHDHJC = 0;
+        self.PFOFHEMGFKL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournDeleteArchiveScRsp {
         static instance: RogueTournDeleteArchiveScRsp = RogueTournDeleteArchiveScRsp {
-            MFLHIEHEKMM: 0,
-            retcode: 0,
+            ADADHIHDHJC: 0,
+            PFOFHEMGFKL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournDeleteArchiveScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"RogueTournDeleteArchiveScRsp.proto\"Z\n\x1cRogueTournDeleteArchiveSc\
-    Rsp\x12\x20\n\x0bMFLHIEHEKMM\x18\x06\x20\x01(\rR\x0bMFLHIEHEKMM\x12\x18\
-    \n\x07retcode\x18\x07\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\"RogueTournDeleteArchiveScRsp.proto\"b\n\x1cRogueTournDeleteArchiveSc\
+    Rsp\x12\x20\n\x0bADADHIHDHJC\x18\x06\x20\x01(\rR\x0bADADHIHDHJC\x12\x20\
+    \n\x0bPFOFHEMGFKL\x18\x03\x20\x01(\rR\x0bPFOFHEMGFKLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

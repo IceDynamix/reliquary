@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DoGachaInRollShopCsReq {
     // message fields
-    // @@protoc_insertion_point(field:DoGachaInRollShopCsReq.GOEBADOADAM)
-    pub GOEBADOADAM: u32,
-    // @@protoc_insertion_point(field:DoGachaInRollShopCsReq.NEIKAIFGMFA)
-    pub NEIKAIFGMFA: u32,
-    // @@protoc_insertion_point(field:DoGachaInRollShopCsReq.ILHKNOBHDBE)
-    pub ILHKNOBHDBE: u32,
+    // @@protoc_insertion_point(field:DoGachaInRollShopCsReq.roll_shop_id)
+    pub roll_shop_id: u32,
+    // @@protoc_insertion_point(field:DoGachaInRollShopCsReq.JGBAAAHDGBJ)
+    pub JGBAAAHDGBJ: u32,
+    // @@protoc_insertion_point(field:DoGachaInRollShopCsReq.gacha_random)
+    pub gacha_random: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DoGachaInRollShopCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl DoGachaInRollShopCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GOEBADOADAM",
-            |m: &DoGachaInRollShopCsReq| { &m.GOEBADOADAM },
-            |m: &mut DoGachaInRollShopCsReq| { &mut m.GOEBADOADAM },
+            "roll_shop_id",
+            |m: &DoGachaInRollShopCsReq| { &m.roll_shop_id },
+            |m: &mut DoGachaInRollShopCsReq| { &mut m.roll_shop_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NEIKAIFGMFA",
-            |m: &DoGachaInRollShopCsReq| { &m.NEIKAIFGMFA },
-            |m: &mut DoGachaInRollShopCsReq| { &mut m.NEIKAIFGMFA },
+            "JGBAAAHDGBJ",
+            |m: &DoGachaInRollShopCsReq| { &m.JGBAAAHDGBJ },
+            |m: &mut DoGachaInRollShopCsReq| { &mut m.JGBAAAHDGBJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ILHKNOBHDBE",
-            |m: &DoGachaInRollShopCsReq| { &m.ILHKNOBHDBE },
-            |m: &mut DoGachaInRollShopCsReq| { &mut m.ILHKNOBHDBE },
+            "gacha_random",
+            |m: &DoGachaInRollShopCsReq| { &m.gacha_random },
+            |m: &mut DoGachaInRollShopCsReq| { &mut m.gacha_random },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DoGachaInRollShopCsReq>(
             "DoGachaInRollShopCsReq",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for DoGachaInRollShopCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.GOEBADOADAM = is.read_uint32()?;
+                64 => {
+                    self.roll_shop_id = is.read_uint32()?;
                 },
-                88 => {
-                    self.NEIKAIFGMFA = is.read_uint32()?;
+                56 => {
+                    self.JGBAAAHDGBJ = is.read_uint32()?;
                 },
-                16 => {
-                    self.ILHKNOBHDBE = is.read_uint32()?;
+                120 => {
+                    self.gacha_random = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for DoGachaInRollShopCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GOEBADOADAM != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.GOEBADOADAM);
+        if self.roll_shop_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.roll_shop_id);
         }
-        if self.NEIKAIFGMFA != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.NEIKAIFGMFA);
+        if self.JGBAAAHDGBJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.JGBAAAHDGBJ);
         }
-        if self.ILHKNOBHDBE != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.ILHKNOBHDBE);
+        if self.gacha_random != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.gacha_random);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for DoGachaInRollShopCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GOEBADOADAM != 0 {
-            os.write_uint32(10, self.GOEBADOADAM)?;
+        if self.roll_shop_id != 0 {
+            os.write_uint32(8, self.roll_shop_id)?;
         }
-        if self.NEIKAIFGMFA != 0 {
-            os.write_uint32(11, self.NEIKAIFGMFA)?;
+        if self.JGBAAAHDGBJ != 0 {
+            os.write_uint32(7, self.JGBAAAHDGBJ)?;
         }
-        if self.ILHKNOBHDBE != 0 {
-            os.write_uint32(2, self.ILHKNOBHDBE)?;
+        if self.gacha_random != 0 {
+            os.write_uint32(15, self.gacha_random)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for DoGachaInRollShopCsReq {
     }
 
     fn clear(&mut self) {
-        self.GOEBADOADAM = 0;
-        self.NEIKAIFGMFA = 0;
-        self.ILHKNOBHDBE = 0;
+        self.roll_shop_id = 0;
+        self.JGBAAAHDGBJ = 0;
+        self.gacha_random = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DoGachaInRollShopCsReq {
         static instance: DoGachaInRollShopCsReq = DoGachaInRollShopCsReq {
-            GOEBADOADAM: 0,
-            NEIKAIFGMFA: 0,
-            ILHKNOBHDBE: 0,
+            roll_shop_id: 0,
+            JGBAAAHDGBJ: 0,
+            gacha_random: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for DoGachaInRollShopCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cDoGachaInRollShopCsReq.proto\"~\n\x16DoGachaInRollShopCsReq\x12\
-    \x20\n\x0bGOEBADOADAM\x18\n\x20\x01(\rR\x0bGOEBADOADAM\x12\x20\n\x0bNEIK\
-    AIFGMFA\x18\x0b\x20\x01(\rR\x0bNEIKAIFGMFA\x12\x20\n\x0bILHKNOBHDBE\x18\
-    \x02\x20\x01(\rR\x0bILHKNOBHDBEb\x06proto3\
+    \n\x1cDoGachaInRollShopCsReq.proto\"\x7f\n\x16DoGachaInRollShopCsReq\x12\
+    \x20\n\x0croll_shop_id\x18\x08\x20\x01(\rR\nrollShopId\x12\x20\n\x0bJGBA\
+    AAHDGBJ\x18\x07\x20\x01(\rR\x0bJGBAAAHDGBJ\x12!\n\x0cgacha_random\x18\
+    \x0f\x20\x01(\rR\x0bgachaRandomB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetClientPausedScRsp {
     // message fields
+    // @@protoc_insertion_point(field:SetClientPausedScRsp.paused)
+    pub paused: bool,
     // @@protoc_insertion_point(field:SetClientPausedScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:SetClientPausedScRsp.PPMDNFGHBBP)
-    pub PPMDNFGHBBP: bool,
     // special fields
     // @@protoc_insertion_point(special_field:SetClientPausedScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl SetClientPausedScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "paused",
+            |m: &SetClientPausedScRsp| { &m.paused },
+            |m: &mut SetClientPausedScRsp| { &mut m.paused },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &SetClientPausedScRsp| { &m.retcode },
             |m: &mut SetClientPausedScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PPMDNFGHBBP",
-            |m: &SetClientPausedScRsp| { &m.PPMDNFGHBBP },
-            |m: &mut SetClientPausedScRsp| { &mut m.PPMDNFGHBBP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetClientPausedScRsp>(
             "SetClientPausedScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for SetClientPausedScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.retcode = is.read_uint32()?;
+                96 => {
+                    self.paused = is.read_bool()?;
                 },
-                72 => {
-                    self.PPMDNFGHBBP = is.read_bool()?;
+                16 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for SetClientPausedScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
-        }
-        if self.PPMDNFGHBBP != false {
+        if self.paused != false {
             my_size += 1 + 1;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for SetClientPausedScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+        if self.paused != false {
+            os.write_bool(12, self.paused)?;
         }
-        if self.PPMDNFGHBBP != false {
-            os.write_bool(9, self.PPMDNFGHBBP)?;
+        if self.retcode != 0 {
+            os.write_uint32(2, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for SetClientPausedScRsp {
     }
 
     fn clear(&mut self) {
+        self.paused = false;
         self.retcode = 0;
-        self.PPMDNFGHBBP = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetClientPausedScRsp {
         static instance: SetClientPausedScRsp = SetClientPausedScRsp {
+            paused: false,
             retcode: 0,
-            PPMDNFGHBBP: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for SetClientPausedScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aSetClientPausedScRsp.proto\"R\n\x14SetClientPausedScRsp\x12\x18\n\
-    \x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12\x20\n\x0bPPMDNFGHBBP\x18\
-    \t\x20\x01(\x08R\x0bPPMDNFGHBBPb\x06proto3\
+    \n\x1aSetClientPausedScRsp.proto\"H\n\x14SetClientPausedScRsp\x12\x16\n\
+    \x06paused\x18\x0c\x20\x01(\x08R\x06paused\x12\x18\n\x07retcode\x18\x02\
+    \x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

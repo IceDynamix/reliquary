@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetIsDisplayAvatarInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SetIsDisplayAvatarInfoScRsp.NCGHFMIPMKN)
-    pub NCGHFMIPMKN: bool,
-    // @@protoc_insertion_point(field:SetIsDisplayAvatarInfoScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:SetIsDisplayAvatarInfoScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:SetIsDisplayAvatarInfoScRsp.JPNADLAPBCE)
+    pub JPNADLAPBCE: bool,
     // special fields
     // @@protoc_insertion_point(special_field:SetIsDisplayAvatarInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl SetIsDisplayAvatarInfoScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NCGHFMIPMKN",
-            |m: &SetIsDisplayAvatarInfoScRsp| { &m.NCGHFMIPMKN },
-            |m: &mut SetIsDisplayAvatarInfoScRsp| { &mut m.NCGHFMIPMKN },
+            "ADADHIHDHJC",
+            |m: &SetIsDisplayAvatarInfoScRsp| { &m.ADADHIHDHJC },
+            |m: &mut SetIsDisplayAvatarInfoScRsp| { &mut m.ADADHIHDHJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &SetIsDisplayAvatarInfoScRsp| { &m.retcode },
-            |m: &mut SetIsDisplayAvatarInfoScRsp| { &mut m.retcode },
+            "JPNADLAPBCE",
+            |m: &SetIsDisplayAvatarInfoScRsp| { &m.JPNADLAPBCE },
+            |m: &mut SetIsDisplayAvatarInfoScRsp| { &mut m.JPNADLAPBCE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetIsDisplayAvatarInfoScRsp>(
             "SetIsDisplayAvatarInfoScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for SetIsDisplayAvatarInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.NCGHFMIPMKN = is.read_bool()?;
+                40 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                8 => {
-                    self.retcode = is.read_uint32()?;
+                16 => {
+                    self.JPNADLAPBCE = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for SetIsDisplayAvatarInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NCGHFMIPMKN != false {
-            my_size += 1 + 1;
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.ADADHIHDHJC);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        if self.JPNADLAPBCE != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for SetIsDisplayAvatarInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NCGHFMIPMKN != false {
-            os.write_bool(4, self.NCGHFMIPMKN)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(5, self.ADADHIHDHJC)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+        if self.JPNADLAPBCE != false {
+            os.write_bool(2, self.JPNADLAPBCE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for SetIsDisplayAvatarInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.NCGHFMIPMKN = false;
-        self.retcode = 0;
+        self.ADADHIHDHJC = 0;
+        self.JPNADLAPBCE = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetIsDisplayAvatarInfoScRsp {
         static instance: SetIsDisplayAvatarInfoScRsp = SetIsDisplayAvatarInfoScRsp {
-            NCGHFMIPMKN: false,
-            retcode: 0,
+            ADADHIHDHJC: 0,
+            JPNADLAPBCE: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for SetIsDisplayAvatarInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!SetIsDisplayAvatarInfoScRsp.proto\"Y\n\x1bSetIsDisplayAvatarInfoScRsp\
-    \x12\x20\n\x0bNCGHFMIPMKN\x18\x04\x20\x01(\x08R\x0bNCGHFMIPMKN\x12\x18\n\
-    \x07retcode\x18\x01\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n!SetIsDisplayAvatarInfoScRsp.proto\"a\n\x1bSetIsDisplayAvatarInfoScRsp\
+    \x12\x20\n\x0bADADHIHDHJC\x18\x05\x20\x01(\rR\x0bADADHIHDHJC\x12\x20\n\
+    \x0bJPNADLAPBCE\x18\x02\x20\x01(\x08R\x0bJPNADLAPBCEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

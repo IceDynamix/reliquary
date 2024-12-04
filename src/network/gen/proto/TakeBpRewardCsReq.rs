@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeBpRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeBpRewardCsReq.slot)
-    pub slot: ::protobuf::EnumOrUnknown<super::BpRewardType::BpRewardType>,
-    // @@protoc_insertion_point(field:TakeBpRewardCsReq.IJBDIMILHMJ)
-    pub IJBDIMILHMJ: u32,
-    // @@protoc_insertion_point(field:TakeBpRewardCsReq.level)
-    pub level: u32,
+    // @@protoc_insertion_point(field:TakeBpRewardCsReq.JKOCJIMAGBN)
+    pub JKOCJIMAGBN: u32,
+    // @@protoc_insertion_point(field:TakeBpRewardCsReq.IBMCLHNBDFO)
+    pub IBMCLHNBDFO: u32,
+    // @@protoc_insertion_point(field:TakeBpRewardCsReq.MPNJPFDCBDG)
+    pub MPNJPFDCBDG: ::protobuf::EnumOrUnknown<super::BpRewardType::BpRewardType>,
     // special fields
     // @@protoc_insertion_point(special_field:TakeBpRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl TakeBpRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "slot",
-            |m: &TakeBpRewardCsReq| { &m.slot },
-            |m: &mut TakeBpRewardCsReq| { &mut m.slot },
+            "JKOCJIMAGBN",
+            |m: &TakeBpRewardCsReq| { &m.JKOCJIMAGBN },
+            |m: &mut TakeBpRewardCsReq| { &mut m.JKOCJIMAGBN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IJBDIMILHMJ",
-            |m: &TakeBpRewardCsReq| { &m.IJBDIMILHMJ },
-            |m: &mut TakeBpRewardCsReq| { &mut m.IJBDIMILHMJ },
+            "IBMCLHNBDFO",
+            |m: &TakeBpRewardCsReq| { &m.IBMCLHNBDFO },
+            |m: &mut TakeBpRewardCsReq| { &mut m.IBMCLHNBDFO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &TakeBpRewardCsReq| { &m.level },
-            |m: &mut TakeBpRewardCsReq| { &mut m.level },
+            "MPNJPFDCBDG",
+            |m: &TakeBpRewardCsReq| { &m.MPNJPFDCBDG },
+            |m: &mut TakeBpRewardCsReq| { &mut m.MPNJPFDCBDG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeBpRewardCsReq>(
             "TakeBpRewardCsReq",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for TakeBpRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.slot = is.read_enum_or_unknown()?;
-                },
-                96 => {
-                    self.IJBDIMILHMJ = is.read_uint32()?;
-                },
                 48 => {
-                    self.level = is.read_uint32()?;
+                    self.JKOCJIMAGBN = is.read_uint32()?;
+                },
+                72 => {
+                    self.IBMCLHNBDFO = is.read_uint32()?;
+                },
+                32 => {
+                    self.MPNJPFDCBDG = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for TakeBpRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.slot != ::protobuf::EnumOrUnknown::new(super::BpRewardType::BpRewardType::BP_REWARAD_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(10, self.slot.value());
+        if self.JKOCJIMAGBN != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.JKOCJIMAGBN);
         }
-        if self.IJBDIMILHMJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.IJBDIMILHMJ);
+        if self.IBMCLHNBDFO != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.IBMCLHNBDFO);
         }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.level);
+        if self.MPNJPFDCBDG != ::protobuf::EnumOrUnknown::new(super::BpRewardType::BpRewardType::BP_REWARAD_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(4, self.MPNJPFDCBDG.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for TakeBpRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.slot != ::protobuf::EnumOrUnknown::new(super::BpRewardType::BpRewardType::BP_REWARAD_TYPE_NONE) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.slot))?;
+        if self.JKOCJIMAGBN != 0 {
+            os.write_uint32(6, self.JKOCJIMAGBN)?;
         }
-        if self.IJBDIMILHMJ != 0 {
-            os.write_uint32(12, self.IJBDIMILHMJ)?;
+        if self.IBMCLHNBDFO != 0 {
+            os.write_uint32(9, self.IBMCLHNBDFO)?;
         }
-        if self.level != 0 {
-            os.write_uint32(6, self.level)?;
+        if self.MPNJPFDCBDG != ::protobuf::EnumOrUnknown::new(super::BpRewardType::BpRewardType::BP_REWARAD_TYPE_NONE) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.MPNJPFDCBDG))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for TakeBpRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.slot = ::protobuf::EnumOrUnknown::new(super::BpRewardType::BpRewardType::BP_REWARAD_TYPE_NONE);
-        self.IJBDIMILHMJ = 0;
-        self.level = 0;
+        self.JKOCJIMAGBN = 0;
+        self.IBMCLHNBDFO = 0;
+        self.MPNJPFDCBDG = ::protobuf::EnumOrUnknown::new(super::BpRewardType::BpRewardType::BP_REWARAD_TYPE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeBpRewardCsReq {
         static instance: TakeBpRewardCsReq = TakeBpRewardCsReq {
-            slot: ::protobuf::EnumOrUnknown::from_i32(0),
-            IJBDIMILHMJ: 0,
-            level: 0,
+            JKOCJIMAGBN: 0,
+            IBMCLHNBDFO: 0,
+            MPNJPFDCBDG: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for TakeBpRewardCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17TakeBpRewardCsReq.proto\x1a\x12BpRewardType.proto\"n\n\x11TakeBpRe\
-    wardCsReq\x12!\n\x04slot\x18\n\x20\x01(\x0e2\r.BpRewardTypeR\x04slot\x12\
-    \x20\n\x0bIJBDIMILHMJ\x18\x0c\x20\x01(\rR\x0bIJBDIMILHMJ\x12\x14\n\x05le\
-    vel\x18\x06\x20\x01(\rR\x05levelb\x06proto3\
+    \n\x17TakeBpRewardCsReq.proto\x1a\x12BpRewardType.proto\"\x88\x01\n\x11T\
+    akeBpRewardCsReq\x12\x20\n\x0bJKOCJIMAGBN\x18\x06\x20\x01(\rR\x0bJKOCJIM\
+    AGBN\x12\x20\n\x0bIBMCLHNBDFO\x18\t\x20\x01(\rR\x0bIBMCLHNBDFO\x12/\n\
+    \x0bMPNJPFDCBDG\x18\x04\x20\x01(\x0e2\r.BpRewardTypeR\x0bMPNJPFDCBDGb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

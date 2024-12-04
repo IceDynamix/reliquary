@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeOfferingRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeOfferingRewardScRsp.LPDNAMLHGNJ)
-    pub LPDNAMLHGNJ: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:TakeOfferingRewardScRsp.JLEFMLADEHI)
-    pub JLEFMLADEHI: ::protobuf::MessageField<super::POPDHFEBLPG::POPDHFEBLPG>,
-    // @@protoc_insertion_point(field:TakeOfferingRewardScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:TakeOfferingRewardScRsp.ELPMNKHEPKJ)
+    pub ELPMNKHEPKJ: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:TakeOfferingRewardScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:TakeOfferingRewardScRsp.AKEGHCPLJAC)
+    pub AKEGHCPLJAC: ::protobuf::MessageField<super::OJOBBCKLNFK::OJOBBCKLNFK>,
     // special fields
     // @@protoc_insertion_point(special_field:TakeOfferingRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl TakeOfferingRewardScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "LPDNAMLHGNJ",
-            |m: &TakeOfferingRewardScRsp| { &m.LPDNAMLHGNJ },
-            |m: &mut TakeOfferingRewardScRsp| { &mut m.LPDNAMLHGNJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::POPDHFEBLPG::POPDHFEBLPG>(
-            "JLEFMLADEHI",
-            |m: &TakeOfferingRewardScRsp| { &m.JLEFMLADEHI },
-            |m: &mut TakeOfferingRewardScRsp| { &mut m.JLEFMLADEHI },
+            "ELPMNKHEPKJ",
+            |m: &TakeOfferingRewardScRsp| { &m.ELPMNKHEPKJ },
+            |m: &mut TakeOfferingRewardScRsp| { &mut m.ELPMNKHEPKJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &TakeOfferingRewardScRsp| { &m.retcode },
-            |m: &mut TakeOfferingRewardScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &TakeOfferingRewardScRsp| { &m.ADADHIHDHJC },
+            |m: &mut TakeOfferingRewardScRsp| { &mut m.ADADHIHDHJC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OJOBBCKLNFK::OJOBBCKLNFK>(
+            "AKEGHCPLJAC",
+            |m: &TakeOfferingRewardScRsp| { &m.AKEGHCPLJAC },
+            |m: &mut TakeOfferingRewardScRsp| { &mut m.AKEGHCPLJAC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeOfferingRewardScRsp>(
             "TakeOfferingRewardScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for TakeOfferingRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LPDNAMLHGNJ)?;
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ELPMNKHEPKJ)?;
                 },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JLEFMLADEHI)?;
+                40 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                80 => {
-                    self.retcode = is.read_uint32()?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AKEGHCPLJAC)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,16 +108,16 @@ impl ::protobuf::Message for TakeOfferingRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.LPDNAMLHGNJ.as_ref() {
+        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.JLEFMLADEHI.as_ref() {
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.ADADHIHDHJC);
+        }
+        if let Some(v) = self.AKEGHCPLJAC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,14 +125,14 @@ impl ::protobuf::Message for TakeOfferingRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.LPDNAMLHGNJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
-        if let Some(v) = self.JLEFMLADEHI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(5, self.ADADHIHDHJC)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+        if let Some(v) = self.AKEGHCPLJAC.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,17 +151,17 @@ impl ::protobuf::Message for TakeOfferingRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.LPDNAMLHGNJ.clear();
-        self.JLEFMLADEHI.clear();
-        self.retcode = 0;
+        self.ELPMNKHEPKJ.clear();
+        self.ADADHIHDHJC = 0;
+        self.AKEGHCPLJAC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeOfferingRewardScRsp {
         static instance: TakeOfferingRewardScRsp = TakeOfferingRewardScRsp {
-            LPDNAMLHGNJ: ::protobuf::MessageField::none(),
-            JLEFMLADEHI: ::protobuf::MessageField::none(),
-            retcode: 0,
+            ELPMNKHEPKJ: ::protobuf::MessageField::none(),
+            ADADHIHDHJC: 0,
+            AKEGHCPLJAC: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,11 +186,11 @@ impl ::protobuf::reflect::ProtobufValue for TakeOfferingRewardScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dTakeOfferingRewardScRsp.proto\x1a\x0eItemList.proto\x1a\x11POPDHFE\
-    BLPG.proto\"\x90\x01\n\x17TakeOfferingRewardScRsp\x12+\n\x0bLPDNAMLHGNJ\
-    \x18\x03\x20\x01(\x0b2\t.ItemListR\x0bLPDNAMLHGNJ\x12.\n\x0bJLEFMLADEHI\
-    \x18\x0b\x20\x01(\x0b2\x0c.POPDHFEBLPGR\x0bJLEFMLADEHI\x12\x18\n\x07retc\
-    ode\x18\n\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x1dTakeOfferingRewardScRsp.proto\x1a\x0eItemList.proto\x1a\x11OJOBBCK\
+    LNFK.proto\"\x98\x01\n\x17TakeOfferingRewardScRsp\x12+\n\x0bELPMNKHEPKJ\
+    \x18\r\x20\x01(\x0b2\t.ItemListR\x0bELPMNKHEPKJ\x12\x20\n\x0bADADHIHDHJC\
+    \x18\x05\x20\x01(\rR\x0bADADHIHDHJC\x12.\n\x0bAKEGHCPLJAC\x18\x07\x20\
+    \x01(\x0b2\x0c.OJOBBCKLNFKR\x0bAKEGHCPLJACb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -209,7 +209,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::ItemList::file_descriptor().clone());
-            deps.push(super::POPDHFEBLPG::file_descriptor().clone());
+            deps.push(super::OJOBBCKLNFK::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(TakeOfferingRewardScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

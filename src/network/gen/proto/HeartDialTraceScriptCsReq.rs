@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HeartDialTraceScriptCsReq {
     // message fields
-    // @@protoc_insertion_point(field:HeartDialTraceScriptCsReq.EFICAOAAAPH)
-    pub EFICAOAAAPH: ::protobuf::MessageField<super::KGHFJPEGBNL::KGHFJPEGBNL>,
+    // @@protoc_insertion_point(field:HeartDialTraceScriptCsReq.PENKIFIKIAC)
+    pub PENKIFIKIAC: ::protobuf::MessageField<super::HNGOJHBPFEJ::HNGOJHBPFEJ>,
     // special fields
     // @@protoc_insertion_point(special_field:HeartDialTraceScriptCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,10 +50,10 @@ impl HeartDialTraceScriptCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KGHFJPEGBNL::KGHFJPEGBNL>(
-            "EFICAOAAAPH",
-            |m: &HeartDialTraceScriptCsReq| { &m.EFICAOAAAPH },
-            |m: &mut HeartDialTraceScriptCsReq| { &mut m.EFICAOAAAPH },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HNGOJHBPFEJ::HNGOJHBPFEJ>(
+            "PENKIFIKIAC",
+            |m: &HeartDialTraceScriptCsReq| { &m.PENKIFIKIAC },
+            |m: &mut HeartDialTraceScriptCsReq| { &mut m.PENKIFIKIAC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HeartDialTraceScriptCsReq>(
             "HeartDialTraceScriptCsReq",
@@ -74,7 +74,7 @@ impl ::protobuf::Message for HeartDialTraceScriptCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EFICAOAAAPH)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PENKIFIKIAC)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for HeartDialTraceScriptCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.EFICAOAAAPH.as_ref() {
+        if let Some(v) = self.PENKIFIKIAC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -98,7 +98,7 @@ impl ::protobuf::Message for HeartDialTraceScriptCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.EFICAOAAAPH.as_ref() {
+        if let Some(v) = self.PENKIFIKIAC.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -118,13 +118,13 @@ impl ::protobuf::Message for HeartDialTraceScriptCsReq {
     }
 
     fn clear(&mut self) {
-        self.EFICAOAAAPH.clear();
+        self.PENKIFIKIAC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HeartDialTraceScriptCsReq {
         static instance: HeartDialTraceScriptCsReq = HeartDialTraceScriptCsReq {
-            EFICAOAAAPH: ::protobuf::MessageField::none(),
+            PENKIFIKIAC: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,9 +149,9 @@ impl ::protobuf::reflect::ProtobufValue for HeartDialTraceScriptCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fHeartDialTraceScriptCsReq.proto\x1a\x11KGHFJPEGBNL.proto\"K\n\x19H\
-    eartDialTraceScriptCsReq\x12.\n\x0bEFICAOAAAPH\x18\t\x20\x01(\x0b2\x0c.K\
-    GHFJPEGBNLR\x0bEFICAOAAAPHb\x06proto3\
+    \n\x1fHeartDialTraceScriptCsReq.proto\x1a\x11HNGOJHBPFEJ.proto\"K\n\x19H\
+    eartDialTraceScriptCsReq\x12.\n\x0bPENKIFIKIAC\x18\t\x20\x01(\x0b2\x0c.H\
+    NGOJHBPFEJR\x0bPENKIFIKIACb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -169,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::KGHFJPEGBNL::file_descriptor().clone());
+            deps.push(super::HNGOJHBPFEJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(HeartDialTraceScriptCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

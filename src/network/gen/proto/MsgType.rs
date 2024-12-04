@@ -34,8 +34,6 @@ pub enum MsgType {
     MSG_TYPE_CUSTOM_TEXT = 1,
     // @@protoc_insertion_point(enum_value:MsgType.MSG_TYPE_EMOJI)
     MSG_TYPE_EMOJI = 2,
-    // @@protoc_insertion_point(enum_value:MsgType.MSG_TYPE_INVITE)
-    MSG_TYPE_INVITE = 3,
 }
 
 impl ::protobuf::Enum for MsgType {
@@ -50,7 +48,6 @@ impl ::protobuf::Enum for MsgType {
             0 => ::std::option::Option::Some(MsgType::MSG_TYPE_NONE),
             1 => ::std::option::Option::Some(MsgType::MSG_TYPE_CUSTOM_TEXT),
             2 => ::std::option::Option::Some(MsgType::MSG_TYPE_EMOJI),
-            3 => ::std::option::Option::Some(MsgType::MSG_TYPE_INVITE),
             _ => ::std::option::Option::None
         }
     }
@@ -60,7 +57,6 @@ impl ::protobuf::Enum for MsgType {
             "MSG_TYPE_NONE" => ::std::option::Option::Some(MsgType::MSG_TYPE_NONE),
             "MSG_TYPE_CUSTOM_TEXT" => ::std::option::Option::Some(MsgType::MSG_TYPE_CUSTOM_TEXT),
             "MSG_TYPE_EMOJI" => ::std::option::Option::Some(MsgType::MSG_TYPE_EMOJI),
-            "MSG_TYPE_INVITE" => ::std::option::Option::Some(MsgType::MSG_TYPE_INVITE),
             _ => ::std::option::Option::None
         }
     }
@@ -69,7 +65,6 @@ impl ::protobuf::Enum for MsgType {
         MsgType::MSG_TYPE_NONE,
         MsgType::MSG_TYPE_CUSTOM_TEXT,
         MsgType::MSG_TYPE_EMOJI,
-        MsgType::MSG_TYPE_INVITE,
     ];
 }
 
@@ -98,9 +93,9 @@ impl MsgType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\rMsgType.proto*_\n\x07MsgType\x12\x11\n\rMSG_TYPE_NONE\x10\0\x12\x18\
-    \n\x14MSG_TYPE_CUSTOM_TEXT\x10\x01\x12\x12\n\x0eMSG_TYPE_EMOJI\x10\x02\
-    \x12\x13\n\x0fMSG_TYPE_INVITE\x10\x03b\x06proto3\
+    \n\rMsgType.proto*J\n\x07MsgType\x12\x11\n\rMSG_TYPE_NONE\x10\0\x12\x18\
+    \n\x14MSG_TYPE_CUSTOM_TEXT\x10\x01\x12\x12\n\x0eMSG_TYPE_EMOJI\x10\x02B\
+    \x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

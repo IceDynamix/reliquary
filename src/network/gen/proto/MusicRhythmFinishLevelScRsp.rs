@@ -31,8 +31,8 @@ pub struct MusicRhythmFinishLevelScRsp {
     // message fields
     // @@protoc_insertion_point(field:MusicRhythmFinishLevelScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:MusicRhythmFinishLevelScRsp.DGEJMCKIFJB)
-    pub DGEJMCKIFJB: u32,
+    // @@protoc_insertion_point(field:MusicRhythmFinishLevelScRsp.level_id)
+    pub level_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MusicRhythmFinishLevelScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,9 +58,9 @@ impl MusicRhythmFinishLevelScRsp {
             |m: &mut MusicRhythmFinishLevelScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DGEJMCKIFJB",
-            |m: &MusicRhythmFinishLevelScRsp| { &m.DGEJMCKIFJB },
-            |m: &mut MusicRhythmFinishLevelScRsp| { &mut m.DGEJMCKIFJB },
+            "level_id",
+            |m: &MusicRhythmFinishLevelScRsp| { &m.level_id },
+            |m: &mut MusicRhythmFinishLevelScRsp| { &mut m.level_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MusicRhythmFinishLevelScRsp>(
             "MusicRhythmFinishLevelScRsp",
@@ -84,7 +84,7 @@ impl ::protobuf::Message for MusicRhythmFinishLevelScRsp {
                     self.retcode = is.read_uint32()?;
                 },
                 32 => {
-                    self.DGEJMCKIFJB = is.read_uint32()?;
+                    self.level_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,8 +101,8 @@ impl ::protobuf::Message for MusicRhythmFinishLevelScRsp {
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
-        if self.DGEJMCKIFJB != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.DGEJMCKIFJB);
+        if self.level_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.level_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,8 +113,8 @@ impl ::protobuf::Message for MusicRhythmFinishLevelScRsp {
         if self.retcode != 0 {
             os.write_uint32(9, self.retcode)?;
         }
-        if self.DGEJMCKIFJB != 0 {
-            os.write_uint32(4, self.DGEJMCKIFJB)?;
+        if self.level_id != 0 {
+            os.write_uint32(4, self.level_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for MusicRhythmFinishLevelScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.DGEJMCKIFJB = 0;
+        self.level_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MusicRhythmFinishLevelScRsp {
         static instance: MusicRhythmFinishLevelScRsp = MusicRhythmFinishLevelScRsp {
             retcode: 0,
-            DGEJMCKIFJB: 0,
+            level_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for MusicRhythmFinishLevelScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!MusicRhythmFinishLevelScRsp.proto\"Y\n\x1bMusicRhythmFinishLevelScRsp\
-    \x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x12\x20\n\x0bDGEJMCKI\
-    FJB\x18\x04\x20\x01(\rR\x0bDGEJMCKIFJBb\x06proto3\
+    \n!MusicRhythmFinishLevelScRsp.proto\"R\n\x1bMusicRhythmFinishLevelScRsp\
+    \x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x12\x19\n\x08level_id\
+    \x18\x04\x20\x01(\rR\x07levelIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

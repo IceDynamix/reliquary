@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EvolveBuildUnlockInfoNotify {
     // message fields
-    // @@protoc_insertion_point(field:EvolveBuildUnlockInfoNotify.GMILJKPOPGD)
-    pub GMILJKPOPGD: bool,
-    // @@protoc_insertion_point(field:EvolveBuildUnlockInfoNotify.GNJAGILEMCJ)
-    pub GNJAGILEMCJ: bool,
+    // @@protoc_insertion_point(field:EvolveBuildUnlockInfoNotify.HFEDLLHAELK)
+    pub HFEDLLHAELK: bool,
+    // @@protoc_insertion_point(field:EvolveBuildUnlockInfoNotify.LFFJPMCCIKD)
+    pub LFFJPMCCIKD: bool,
     // special fields
     // @@protoc_insertion_point(special_field:EvolveBuildUnlockInfoNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl EvolveBuildUnlockInfoNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GMILJKPOPGD",
-            |m: &EvolveBuildUnlockInfoNotify| { &m.GMILJKPOPGD },
-            |m: &mut EvolveBuildUnlockInfoNotify| { &mut m.GMILJKPOPGD },
+            "HFEDLLHAELK",
+            |m: &EvolveBuildUnlockInfoNotify| { &m.HFEDLLHAELK },
+            |m: &mut EvolveBuildUnlockInfoNotify| { &mut m.HFEDLLHAELK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GNJAGILEMCJ",
-            |m: &EvolveBuildUnlockInfoNotify| { &m.GNJAGILEMCJ },
-            |m: &mut EvolveBuildUnlockInfoNotify| { &mut m.GNJAGILEMCJ },
+            "LFFJPMCCIKD",
+            |m: &EvolveBuildUnlockInfoNotify| { &m.LFFJPMCCIKD },
+            |m: &mut EvolveBuildUnlockInfoNotify| { &mut m.LFFJPMCCIKD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EvolveBuildUnlockInfoNotify>(
             "EvolveBuildUnlockInfoNotify",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for EvolveBuildUnlockInfoNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.GMILJKPOPGD = is.read_bool()?;
+                48 => {
+                    self.HFEDLLHAELK = is.read_bool()?;
                 },
-                8 => {
-                    self.GNJAGILEMCJ = is.read_bool()?;
+                104 => {
+                    self.LFFJPMCCIKD = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for EvolveBuildUnlockInfoNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GMILJKPOPGD != false {
+        if self.HFEDLLHAELK != false {
             my_size += 1 + 1;
         }
-        if self.GNJAGILEMCJ != false {
+        if self.LFFJPMCCIKD != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -110,11 +110,11 @@ impl ::protobuf::Message for EvolveBuildUnlockInfoNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GMILJKPOPGD != false {
-            os.write_bool(10, self.GMILJKPOPGD)?;
+        if self.HFEDLLHAELK != false {
+            os.write_bool(6, self.HFEDLLHAELK)?;
         }
-        if self.GNJAGILEMCJ != false {
-            os.write_bool(1, self.GNJAGILEMCJ)?;
+        if self.LFFJPMCCIKD != false {
+            os.write_bool(13, self.LFFJPMCCIKD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for EvolveBuildUnlockInfoNotify {
     }
 
     fn clear(&mut self) {
-        self.GMILJKPOPGD = false;
-        self.GNJAGILEMCJ = false;
+        self.HFEDLLHAELK = false;
+        self.LFFJPMCCIKD = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EvolveBuildUnlockInfoNotify {
         static instance: EvolveBuildUnlockInfoNotify = EvolveBuildUnlockInfoNotify {
-            GMILJKPOPGD: false,
-            GNJAGILEMCJ: false,
+            HFEDLLHAELK: false,
+            LFFJPMCCIKD: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildUnlockInfoNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!EvolveBuildUnlockInfoNotify.proto\"a\n\x1bEvolveBuildUnlockInfoNotify\
-    \x12\x20\n\x0bGMILJKPOPGD\x18\n\x20\x01(\x08R\x0bGMILJKPOPGD\x12\x20\n\
-    \x0bGNJAGILEMCJ\x18\x01\x20\x01(\x08R\x0bGNJAGILEMCJb\x06proto3\
+    \x12\x20\n\x0bHFEDLLHAELK\x18\x06\x20\x01(\x08R\x0bHFEDLLHAELK\x12\x20\n\
+    \x0bLFFJPMCCIKD\x18\r\x20\x01(\x08R\x0bLFFJPMCCIKDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

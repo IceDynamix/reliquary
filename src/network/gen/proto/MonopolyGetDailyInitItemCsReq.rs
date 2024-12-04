@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyGetDailyInitItemCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyGetDailyInitItemCsReq.IHEANNCJFBI)
-    pub IHEANNCJFBI: bool,
+    // @@protoc_insertion_point(field:MonopolyGetDailyInitItemCsReq.MAPODHKOPOL)
+    pub MAPODHKOPOL: bool,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyGetDailyInitItemCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl MonopolyGetDailyInitItemCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IHEANNCJFBI",
-            |m: &MonopolyGetDailyInitItemCsReq| { &m.IHEANNCJFBI },
-            |m: &mut MonopolyGetDailyInitItemCsReq| { &mut m.IHEANNCJFBI },
+            "MAPODHKOPOL",
+            |m: &MonopolyGetDailyInitItemCsReq| { &m.MAPODHKOPOL },
+            |m: &mut MonopolyGetDailyInitItemCsReq| { &mut m.MAPODHKOPOL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyGetDailyInitItemCsReq>(
             "MonopolyGetDailyInitItemCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for MonopolyGetDailyInitItemCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.IHEANNCJFBI = is.read_bool()?;
+                112 => {
+                    self.MAPODHKOPOL = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for MonopolyGetDailyInitItemCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IHEANNCJFBI != false {
+        if self.MAPODHKOPOL != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -97,8 +97,8 @@ impl ::protobuf::Message for MonopolyGetDailyInitItemCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IHEANNCJFBI != false {
-            os.write_bool(7, self.IHEANNCJFBI)?;
+        if self.MAPODHKOPOL != false {
+            os.write_bool(14, self.MAPODHKOPOL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for MonopolyGetDailyInitItemCsReq {
     }
 
     fn clear(&mut self) {
-        self.IHEANNCJFBI = false;
+        self.MAPODHKOPOL = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyGetDailyInitItemCsReq {
         static instance: MonopolyGetDailyInitItemCsReq = MonopolyGetDailyInitItemCsReq {
-            IHEANNCJFBI: false,
+            MAPODHKOPOL: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyGetDailyInitItemCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#MonopolyGetDailyInitItemCsReq.proto\"A\n\x1dMonopolyGetDailyInitItemC\
-    sReq\x12\x20\n\x0bIHEANNCJFBI\x18\x07\x20\x01(\x08R\x0bIHEANNCJFBIb\x06p\
+    sReq\x12\x20\n\x0bMAPODHKOPOL\x18\x0e\x20\x01(\x08R\x0bMAPODHKOPOLb\x06p\
     roto3\
 ";
 

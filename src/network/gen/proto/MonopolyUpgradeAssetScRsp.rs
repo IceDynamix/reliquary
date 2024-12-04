@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyUpgradeAssetScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyUpgradeAssetScRsp.CGAAJPDAFMG)
-    pub CGAAJPDAFMG: u32,
-    // @@protoc_insertion_point(field:MonopolyUpgradeAssetScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:MonopolyUpgradeAssetScRsp.LNDLACLKFHK)
+    pub LNDLACLKFHK: u32,
+    // @@protoc_insertion_point(field:MonopolyUpgradeAssetScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyUpgradeAssetScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl MonopolyUpgradeAssetScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CGAAJPDAFMG",
-            |m: &MonopolyUpgradeAssetScRsp| { &m.CGAAJPDAFMG },
-            |m: &mut MonopolyUpgradeAssetScRsp| { &mut m.CGAAJPDAFMG },
+            "LNDLACLKFHK",
+            |m: &MonopolyUpgradeAssetScRsp| { &m.LNDLACLKFHK },
+            |m: &mut MonopolyUpgradeAssetScRsp| { &mut m.LNDLACLKFHK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &MonopolyUpgradeAssetScRsp| { &m.retcode },
-            |m: &mut MonopolyUpgradeAssetScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &MonopolyUpgradeAssetScRsp| { &m.ADADHIHDHJC },
+            |m: &mut MonopolyUpgradeAssetScRsp| { &mut m.ADADHIHDHJC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyUpgradeAssetScRsp>(
             "MonopolyUpgradeAssetScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for MonopolyUpgradeAssetScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.CGAAJPDAFMG = is.read_uint32()?;
+                64 => {
+                    self.LNDLACLKFHK = is.read_uint32()?;
                 },
-                96 => {
-                    self.retcode = is.read_uint32()?;
+                56 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for MonopolyUpgradeAssetScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CGAAJPDAFMG != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.CGAAJPDAFMG);
+        if self.LNDLACLKFHK != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.LNDLACLKFHK);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.ADADHIHDHJC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for MonopolyUpgradeAssetScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CGAAJPDAFMG != 0 {
-            os.write_uint32(11, self.CGAAJPDAFMG)?;
+        if self.LNDLACLKFHK != 0 {
+            os.write_uint32(8, self.LNDLACLKFHK)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(7, self.ADADHIHDHJC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for MonopolyUpgradeAssetScRsp {
     }
 
     fn clear(&mut self) {
-        self.CGAAJPDAFMG = 0;
-        self.retcode = 0;
+        self.LNDLACLKFHK = 0;
+        self.ADADHIHDHJC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyUpgradeAssetScRsp {
         static instance: MonopolyUpgradeAssetScRsp = MonopolyUpgradeAssetScRsp {
-            CGAAJPDAFMG: 0,
-            retcode: 0,
+            LNDLACLKFHK: 0,
+            ADADHIHDHJC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyUpgradeAssetScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fMonopolyUpgradeAssetScRsp.proto\"W\n\x19MonopolyUpgradeAssetScRsp\
-    \x12\x20\n\x0bCGAAJPDAFMG\x18\x0b\x20\x01(\rR\x0bCGAAJPDAFMG\x12\x18\n\
-    \x07retcode\x18\x0c\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x1fMonopolyUpgradeAssetScRsp.proto\"_\n\x19MonopolyUpgradeAssetScRsp\
+    \x12\x20\n\x0bLNDLACLKFHK\x18\x08\x20\x01(\rR\x0bLNDLACLKFHK\x12\x20\n\
+    \x0bADADHIHDHJC\x18\x07\x20\x01(\rR\x0bADADHIHDHJCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

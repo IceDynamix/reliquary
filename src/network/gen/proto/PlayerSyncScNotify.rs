@@ -29,50 +29,32 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayerSyncScNotify {
     // message fields
-    // @@protoc_insertion_point(field:PlayerSyncScNotify.HJGIEKEPBIH)
-    pub HJGIEKEPBIH: ::std::vec::Vec<super::FGGBMCNAOAF::FGGBMCNAOAF>,
     // @@protoc_insertion_point(field:PlayerSyncScNotify.material_list)
     pub material_list: ::std::vec::Vec<super::Material::Material>,
-    // @@protoc_insertion_point(field:PlayerSyncScNotify.JNFEDNBGBHN)
-    pub JNFEDNBGBHN: ::protobuf::MessageField<super::IJJMLIFHIKK::IJJMLIFHIKK>,
-    // @@protoc_insertion_point(field:PlayerSyncScNotify.HELAAAKOCBB)
-    pub HELAAAKOCBB: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:PlayerSyncScNotify.equipment_list)
-    pub equipment_list: ::std::vec::Vec<super::Equipment::Equipment>,
-    // @@protoc_insertion_point(field:PlayerSyncScNotify.PABLGNBDDCG)
-    pub PABLGNBDDCG: ::protobuf::MessageField<super::DEAJGOPAMNB::DEAJGOPAMNB>,
-    // @@protoc_insertion_point(field:PlayerSyncScNotify.INDIHGHPJEL)
-    pub INDIHGHPJEL: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:PlayerSyncScNotify.PBEIJBHOJPJ)
-    pub PBEIJBHOJPJ: ::protobuf::MessageField<super::JIOMHFCHMMJ::JIOMHFCHMMJ>,
-    // @@protoc_insertion_point(field:PlayerSyncScNotify.HNBHLCAKAJG)
-    pub HNBHLCAKAJG: ::std::vec::Vec<super::Material::Material>,
-    // @@protoc_insertion_point(field:PlayerSyncScNotify.MBMDOJOEAKN)
-    pub MBMDOJOEAKN: ::protobuf::MessageField<super::FBHBBNEMOFK::FBHBBNEMOFK>,
+    // @@protoc_insertion_point(field:PlayerSyncScNotify.del_relic_list)
+    pub del_relic_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:PlayerSyncScNotify.total_achievement_exp)
     pub total_achievement_exp: u32,
-    // @@protoc_insertion_point(field:PlayerSyncScNotify.AMAHGKEECPN)
-    pub AMAHGKEECPN: ::protobuf::MessageField<super::PFIJOKJPNBB::PFIJOKJPNBB>,
-    // @@protoc_insertion_point(field:PlayerSyncScNotify.CEOMDDEJKEF)
-    pub CEOMDDEJKEF: ::std::vec::Vec<super::IGFLEJNLOMM::IGFLEJNLOMM>,
-    // @@protoc_insertion_point(field:PlayerSyncScNotify.JPLPJDINOAJ)
-    pub JPLPJDINOAJ: ::std::vec::Vec<super::IEJMBDHDANC::IEJMBDHDANC>,
-    // @@protoc_insertion_point(field:PlayerSyncScNotify.IKLEOCENKJG)
-    pub IKLEOCENKJG: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:PlayerSyncScNotify.multi_path_avatar_info_list)
-    pub multi_path_avatar_info_list: ::std::vec::Vec<super::MultiPathAvatarInfo::MultiPathAvatarInfo>,
-    // @@protoc_insertion_point(field:PlayerSyncScNotify.ABBPIPLFGIC)
-    pub ABBPIPLFGIC: ::protobuf::MessageField<super::HNDDPBJMBFM::HNDDPBJMBFM>,
-    // @@protoc_insertion_point(field:PlayerSyncScNotify.NCCIGLLBCON)
-    pub NCCIGLLBCON: ::std::vec::Vec<super::PIOOJABFAGN::PIOOJABFAGN>,
-    // @@protoc_insertion_point(field:PlayerSyncScNotify.INFGEKJMEND)
-    pub INFGEKJMEND: ::protobuf::MessageField<super::PHOAJMJDFCI::PHOAJMJDFCI>,
-    // @@protoc_insertion_point(field:PlayerSyncScNotify.quest_list)
-    pub quest_list: ::std::vec::Vec<super::Quest::Quest>,
+    // @@protoc_insertion_point(field:PlayerSyncScNotify.LLMKCDEDIFP)
+    pub LLMKCDEDIFP: ::std::vec::Vec<super::Material::Material>,
+    // @@protoc_insertion_point(field:PlayerSyncScNotify.basic_info)
+    pub basic_info: ::protobuf::MessageField<super::PlayerBasicInfo::PlayerBasicInfo>,
+    // @@protoc_insertion_point(field:PlayerSyncScNotify.unk)
+    pub unk: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:PlayerSyncScNotify.equipment_list)
+    pub equipment_list: ::std::vec::Vec<super::Equipment::Equipment>,
+    // @@protoc_insertion_point(field:PlayerSyncScNotify.avatar_sync)
+    pub avatar_sync: ::protobuf::MessageField<super::AvatarSync::AvatarSync>,
+    // @@protoc_insertion_point(field:PlayerSyncScNotify.EDFCAFLFLFH)
+    pub EDFCAFLFLFH: ::protobuf::MessageField<super::MissionSync::MissionSync>,
+    // @@protoc_insertion_point(field:PlayerSyncScNotify.board_data_sync)
+    pub board_data_sync: ::protobuf::MessageField<super::BoardDataSync::BoardDataSync>,
+    // @@protoc_insertion_point(field:PlayerSyncScNotify.del_equipment_list)
+    pub del_equipment_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:PlayerSyncScNotify.relic_list)
     pub relic_list: ::std::vec::Vec<super::Relic::Relic>,
-    // @@protoc_insertion_point(field:PlayerSyncScNotify.COOKFBPFNJM)
-    pub COOKFBPFNJM: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:PlayerSyncScNotify.multi_path_avatar_type_info_list)
+    pub multi_path_avatar_type_info_list: ::std::vec::Vec<super::MultiPathAvatarTypeInfo::MultiPathAvatarTypeInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:PlayerSyncScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -90,107 +72,62 @@ impl PlayerSyncScNotify {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(22);
+        let mut fields = ::std::vec::Vec::with_capacity(13);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HJGIEKEPBIH",
-            |m: &PlayerSyncScNotify| { &m.HJGIEKEPBIH },
-            |m: &mut PlayerSyncScNotify| { &mut m.HJGIEKEPBIH },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "material_list",
             |m: &PlayerSyncScNotify| { &m.material_list },
             |m: &mut PlayerSyncScNotify| { &mut m.material_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IJJMLIFHIKK::IJJMLIFHIKK>(
-            "JNFEDNBGBHN",
-            |m: &PlayerSyncScNotify| { &m.JNFEDNBGBHN },
-            |m: &mut PlayerSyncScNotify| { &mut m.JNFEDNBGBHN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HELAAAKOCBB",
-            |m: &PlayerSyncScNotify| { &m.HELAAAKOCBB },
-            |m: &mut PlayerSyncScNotify| { &mut m.HELAAAKOCBB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "equipment_list",
-            |m: &PlayerSyncScNotify| { &m.equipment_list },
-            |m: &mut PlayerSyncScNotify| { &mut m.equipment_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DEAJGOPAMNB::DEAJGOPAMNB>(
-            "PABLGNBDDCG",
-            |m: &PlayerSyncScNotify| { &m.PABLGNBDDCG },
-            |m: &mut PlayerSyncScNotify| { &mut m.PABLGNBDDCG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "INDIHGHPJEL",
-            |m: &PlayerSyncScNotify| { &m.INDIHGHPJEL },
-            |m: &mut PlayerSyncScNotify| { &mut m.INDIHGHPJEL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JIOMHFCHMMJ::JIOMHFCHMMJ>(
-            "PBEIJBHOJPJ",
-            |m: &PlayerSyncScNotify| { &m.PBEIJBHOJPJ },
-            |m: &mut PlayerSyncScNotify| { &mut m.PBEIJBHOJPJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HNBHLCAKAJG",
-            |m: &PlayerSyncScNotify| { &m.HNBHLCAKAJG },
-            |m: &mut PlayerSyncScNotify| { &mut m.HNBHLCAKAJG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FBHBBNEMOFK::FBHBBNEMOFK>(
-            "MBMDOJOEAKN",
-            |m: &PlayerSyncScNotify| { &m.MBMDOJOEAKN },
-            |m: &mut PlayerSyncScNotify| { &mut m.MBMDOJOEAKN },
+            "del_relic_list",
+            |m: &PlayerSyncScNotify| { &m.del_relic_list },
+            |m: &mut PlayerSyncScNotify| { &mut m.del_relic_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "total_achievement_exp",
             |m: &PlayerSyncScNotify| { &m.total_achievement_exp },
             |m: &mut PlayerSyncScNotify| { &mut m.total_achievement_exp },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PFIJOKJPNBB::PFIJOKJPNBB>(
-            "AMAHGKEECPN",
-            |m: &PlayerSyncScNotify| { &m.AMAHGKEECPN },
-            |m: &mut PlayerSyncScNotify| { &mut m.AMAHGKEECPN },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LLMKCDEDIFP",
+            |m: &PlayerSyncScNotify| { &m.LLMKCDEDIFP },
+            |m: &mut PlayerSyncScNotify| { &mut m.LLMKCDEDIFP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerBasicInfo::PlayerBasicInfo>(
+            "basic_info",
+            |m: &PlayerSyncScNotify| { &m.basic_info },
+            |m: &mut PlayerSyncScNotify| { &mut m.basic_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CEOMDDEJKEF",
-            |m: &PlayerSyncScNotify| { &m.CEOMDDEJKEF },
-            |m: &mut PlayerSyncScNotify| { &mut m.CEOMDDEJKEF },
+            "unk",
+            |m: &PlayerSyncScNotify| { &m.unk },
+            |m: &mut PlayerSyncScNotify| { &mut m.unk },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JPLPJDINOAJ",
-            |m: &PlayerSyncScNotify| { &m.JPLPJDINOAJ },
-            |m: &mut PlayerSyncScNotify| { &mut m.JPLPJDINOAJ },
+            "equipment_list",
+            |m: &PlayerSyncScNotify| { &m.equipment_list },
+            |m: &mut PlayerSyncScNotify| { &mut m.equipment_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "IKLEOCENKJG",
-            |m: &PlayerSyncScNotify| { &m.IKLEOCENKJG },
-            |m: &mut PlayerSyncScNotify| { &mut m.IKLEOCENKJG },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AvatarSync::AvatarSync>(
+            "avatar_sync",
+            |m: &PlayerSyncScNotify| { &m.avatar_sync },
+            |m: &mut PlayerSyncScNotify| { &mut m.avatar_sync },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "multi_path_avatar_info_list",
-            |m: &PlayerSyncScNotify| { &m.multi_path_avatar_info_list },
-            |m: &mut PlayerSyncScNotify| { &mut m.multi_path_avatar_info_list },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MissionSync::MissionSync>(
+            "EDFCAFLFLFH",
+            |m: &PlayerSyncScNotify| { &m.EDFCAFLFLFH },
+            |m: &mut PlayerSyncScNotify| { &mut m.EDFCAFLFLFH },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HNDDPBJMBFM::HNDDPBJMBFM>(
-            "ABBPIPLFGIC",
-            |m: &PlayerSyncScNotify| { &m.ABBPIPLFGIC },
-            |m: &mut PlayerSyncScNotify| { &mut m.ABBPIPLFGIC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NCCIGLLBCON",
-            |m: &PlayerSyncScNotify| { &m.NCCIGLLBCON },
-            |m: &mut PlayerSyncScNotify| { &mut m.NCCIGLLBCON },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PHOAJMJDFCI::PHOAJMJDFCI>(
-            "INFGEKJMEND",
-            |m: &PlayerSyncScNotify| { &m.INFGEKJMEND },
-            |m: &mut PlayerSyncScNotify| { &mut m.INFGEKJMEND },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BoardDataSync::BoardDataSync>(
+            "board_data_sync",
+            |m: &PlayerSyncScNotify| { &m.board_data_sync },
+            |m: &mut PlayerSyncScNotify| { &mut m.board_data_sync },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "quest_list",
-            |m: &PlayerSyncScNotify| { &m.quest_list },
-            |m: &mut PlayerSyncScNotify| { &mut m.quest_list },
+            "del_equipment_list",
+            |m: &PlayerSyncScNotify| { &m.del_equipment_list },
+            |m: &mut PlayerSyncScNotify| { &mut m.del_equipment_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "relic_list",
@@ -198,9 +135,9 @@ impl PlayerSyncScNotify {
             |m: &mut PlayerSyncScNotify| { &mut m.relic_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "COOKFBPFNJM",
-            |m: &PlayerSyncScNotify| { &m.COOKFBPFNJM },
-            |m: &mut PlayerSyncScNotify| { &mut m.COOKFBPFNJM },
+            "multi_path_avatar_type_info_list",
+            |m: &PlayerSyncScNotify| { &m.multi_path_avatar_type_info_list },
+            |m: &mut PlayerSyncScNotify| { &mut m.multi_path_avatar_type_info_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayerSyncScNotify>(
             "PlayerSyncScNotify",
@@ -220,80 +157,53 @@ impl ::protobuf::Message for PlayerSyncScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                1714 => {
-                    self.HJGIEKEPBIH.push(is.read_message()?);
-                },
-                90 => {
+                18 => {
                     self.material_list.push(is.read_message()?);
                 },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JNFEDNBGBHN)?;
+                106 => {
+                    is.read_repeated_packed_uint32_into(&mut self.del_relic_list)?;
                 },
-                15906 => {
-                    is.read_repeated_packed_uint32_into(&mut self.HELAAAKOCBB)?;
+                104 => {
+                    self.del_relic_list.push(is.read_uint32()?);
                 },
-                15904 => {
-                    self.HELAAAKOCBB.push(is.read_uint32()?);
-                },
-                98 => {
-                    self.equipment_list.push(is.read_message()?);
-                },
-                394 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PABLGNBDDCG)?;
-                },
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.INDIHGHPJEL)?;
-                },
-                8 => {
-                    self.INDIHGHPJEL.push(is.read_uint32()?);
-                },
-                1034 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PBEIJBHOJPJ)?;
-                },
-                14002 => {
-                    self.HNBHLCAKAJG.push(is.read_message()?);
-                },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MBMDOJOEAKN)?;
-                },
-                2448 => {
+                6008 => {
                     self.total_achievement_exp = is.read_uint32()?;
                 },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AMAHGKEECPN)?;
+                7890 => {
+                    self.LLMKCDEDIFP.push(is.read_message()?);
                 },
-                8714 => {
-                    self.CEOMDDEJKEF.push(is.read_message()?);
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.basic_info)?;
                 },
-                9178 => {
-                    self.JPLPJDINOAJ.push(is.read_message()?);
+                6938 => {
+                    is.read_repeated_packed_uint32_into(&mut self.unk)?;
                 },
-                10626 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IKLEOCENKJG)?;
-                },
-                818 => {
-                    self.multi_path_avatar_info_list.push(is.read_message()?);
-                },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ABBPIPLFGIC)?;
-                },
-                122 => {
-                    self.NCCIGLLBCON.push(is.read_message()?);
+                6936 => {
+                    self.unk.push(is.read_uint32()?);
                 },
                 42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.INFGEKJMEND)?;
+                    self.equipment_list.push(is.read_message()?);
                 },
-                50 => {
-                    self.quest_list.push(is.read_message()?);
-                },
-                26 => {
-                    self.relic_list.push(is.read_message()?);
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.avatar_sync)?;
                 },
                 58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.COOKFBPFNJM)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EDFCAFLFLFH)?;
                 },
-                56 => {
-                    self.COOKFBPFNJM.push(is.read_uint32()?);
+                15778 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.board_data_sync)?;
+                },
+                74 => {
+                    is.read_repeated_packed_uint32_into(&mut self.del_equipment_list)?;
+                },
+                72 => {
+                    self.del_equipment_list.push(is.read_uint32()?);
+                },
+                90 => {
+                    self.relic_list.push(is.read_message()?);
+                },
+                12010 => {
+                    self.multi_path_avatar_type_info_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -307,89 +217,53 @@ impl ::protobuf::Message for PlayerSyncScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.HJGIEKEPBIH {
-            let len = value.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         for value in &self.material_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.JNFEDNBGBHN.as_ref() {
+        for value in &self.del_relic_list {
+            my_size += ::protobuf::rt::uint32_size(13, *value);
+        };
+        if self.total_achievement_exp != 0 {
+            my_size += ::protobuf::rt::uint32_size(751, self.total_achievement_exp);
+        }
+        for value in &self.LLMKCDEDIFP {
+            let len = value.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if let Some(v) = self.basic_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        for value in &self.HELAAAKOCBB {
-            my_size += ::protobuf::rt::uint32_size(1988, *value);
+        for value in &self.unk {
+            my_size += ::protobuf::rt::uint32_size(867, *value);
         };
         for value in &self.equipment_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.PABLGNBDDCG.as_ref() {
-            let len = v.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        for value in &self.INDIHGHPJEL {
-            my_size += ::protobuf::rt::uint32_size(1, *value);
-        };
-        if let Some(v) = self.PBEIJBHOJPJ.as_ref() {
-            let len = v.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        for value in &self.HNBHLCAKAJG {
-            let len = value.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if let Some(v) = self.MBMDOJOEAKN.as_ref() {
+        if let Some(v) = self.avatar_sync.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.total_achievement_exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(306, self.total_achievement_exp);
-        }
-        if let Some(v) = self.AMAHGKEECPN.as_ref() {
+        if let Some(v) = self.EDFCAFLFLFH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        for value in &self.CEOMDDEJKEF {
-            let len = value.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.JPLPJDINOAJ {
-            let len = value.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if let Some(v) = self.IKLEOCENKJG.as_ref() {
+        if let Some(v) = self.board_data_sync.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        for value in &self.multi_path_avatar_info_list {
-            let len = value.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if let Some(v) = self.ABBPIPLFGIC.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        for value in &self.NCCIGLLBCON {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if let Some(v) = self.INFGEKJMEND.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        for value in &self.quest_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        for value in &self.del_equipment_list {
+            my_size += ::protobuf::rt::uint32_size(9, *value);
         };
         for value in &self.relic_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.COOKFBPFNJM {
-            my_size += ::protobuf::rt::uint32_size(7, *value);
+        for value in &self.multi_path_avatar_type_info_list {
+            let len = value.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -397,71 +271,44 @@ impl ::protobuf::Message for PlayerSyncScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.HJGIEKEPBIH {
-            ::protobuf::rt::write_message_field_with_cached_size(214, v, os)?;
-        };
         for v in &self.material_list {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        };
-        if let Some(v) = self.JNFEDNBGBHN.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        };
+        for v in &self.del_relic_list {
+            os.write_uint32(13, *v)?;
+        };
+        if self.total_achievement_exp != 0 {
+            os.write_uint32(751, self.total_achievement_exp)?;
         }
-        for v in &self.HELAAAKOCBB {
-            os.write_uint32(1988, *v)?;
+        for v in &self.LLMKCDEDIFP {
+            ::protobuf::rt::write_message_field_with_cached_size(986, v, os)?;
+        };
+        if let Some(v) = self.basic_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        }
+        for v in &self.unk {
+            os.write_uint32(867, *v)?;
         };
         for v in &self.equipment_list {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
-        if let Some(v) = self.PABLGNBDDCG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(49, v, os)?;
-        }
-        for v in &self.INDIHGHPJEL {
-            os.write_uint32(1, *v)?;
-        };
-        if let Some(v) = self.PBEIJBHOJPJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(129, v, os)?;
-        }
-        for v in &self.HNBHLCAKAJG {
-            ::protobuf::rt::write_message_field_with_cached_size(1750, v, os)?;
-        };
-        if let Some(v) = self.MBMDOJOEAKN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        }
-        if self.total_achievement_exp != 0 {
-            os.write_uint32(306, self.total_achievement_exp)?;
-        }
-        if let Some(v) = self.AMAHGKEECPN.as_ref() {
+        if let Some(v) = self.avatar_sync.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
-        for v in &self.CEOMDDEJKEF {
-            ::protobuf::rt::write_message_field_with_cached_size(1089, v, os)?;
-        };
-        for v in &self.JPLPJDINOAJ {
-            ::protobuf::rt::write_message_field_with_cached_size(1147, v, os)?;
-        };
-        if let Some(v) = self.IKLEOCENKJG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1328, v, os)?;
+        if let Some(v) = self.EDFCAFLFLFH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
-        for v in &self.multi_path_avatar_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(102, v, os)?;
-        };
-        if let Some(v) = self.ABBPIPLFGIC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if let Some(v) = self.board_data_sync.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1972, v, os)?;
         }
-        for v in &self.NCCIGLLBCON {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        };
-        if let Some(v) = self.INFGEKJMEND.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
-        for v in &self.quest_list {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        for v in &self.del_equipment_list {
+            os.write_uint32(9, *v)?;
         };
         for v in &self.relic_list {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
-        for v in &self.COOKFBPFNJM {
-            os.write_uint32(7, *v)?;
+        for v in &self.multi_path_avatar_type_info_list {
+            ::protobuf::rt::write_message_field_with_cached_size(1501, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -480,55 +327,37 @@ impl ::protobuf::Message for PlayerSyncScNotify {
     }
 
     fn clear(&mut self) {
-        self.HJGIEKEPBIH.clear();
         self.material_list.clear();
-        self.JNFEDNBGBHN.clear();
-        self.HELAAAKOCBB.clear();
-        self.equipment_list.clear();
-        self.PABLGNBDDCG.clear();
-        self.INDIHGHPJEL.clear();
-        self.PBEIJBHOJPJ.clear();
-        self.HNBHLCAKAJG.clear();
-        self.MBMDOJOEAKN.clear();
+        self.del_relic_list.clear();
         self.total_achievement_exp = 0;
-        self.AMAHGKEECPN.clear();
-        self.CEOMDDEJKEF.clear();
-        self.JPLPJDINOAJ.clear();
-        self.IKLEOCENKJG.clear();
-        self.multi_path_avatar_info_list.clear();
-        self.ABBPIPLFGIC.clear();
-        self.NCCIGLLBCON.clear();
-        self.INFGEKJMEND.clear();
-        self.quest_list.clear();
+        self.LLMKCDEDIFP.clear();
+        self.basic_info.clear();
+        self.unk.clear();
+        self.equipment_list.clear();
+        self.avatar_sync.clear();
+        self.EDFCAFLFLFH.clear();
+        self.board_data_sync.clear();
+        self.del_equipment_list.clear();
         self.relic_list.clear();
-        self.COOKFBPFNJM.clear();
+        self.multi_path_avatar_type_info_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayerSyncScNotify {
         static instance: PlayerSyncScNotify = PlayerSyncScNotify {
-            HJGIEKEPBIH: ::std::vec::Vec::new(),
             material_list: ::std::vec::Vec::new(),
-            JNFEDNBGBHN: ::protobuf::MessageField::none(),
-            HELAAAKOCBB: ::std::vec::Vec::new(),
-            equipment_list: ::std::vec::Vec::new(),
-            PABLGNBDDCG: ::protobuf::MessageField::none(),
-            INDIHGHPJEL: ::std::vec::Vec::new(),
-            PBEIJBHOJPJ: ::protobuf::MessageField::none(),
-            HNBHLCAKAJG: ::std::vec::Vec::new(),
-            MBMDOJOEAKN: ::protobuf::MessageField::none(),
+            del_relic_list: ::std::vec::Vec::new(),
             total_achievement_exp: 0,
-            AMAHGKEECPN: ::protobuf::MessageField::none(),
-            CEOMDDEJKEF: ::std::vec::Vec::new(),
-            JPLPJDINOAJ: ::std::vec::Vec::new(),
-            IKLEOCENKJG: ::protobuf::MessageField::none(),
-            multi_path_avatar_info_list: ::std::vec::Vec::new(),
-            ABBPIPLFGIC: ::protobuf::MessageField::none(),
-            NCCIGLLBCON: ::std::vec::Vec::new(),
-            INFGEKJMEND: ::protobuf::MessageField::none(),
-            quest_list: ::std::vec::Vec::new(),
+            LLMKCDEDIFP: ::std::vec::Vec::new(),
+            basic_info: ::protobuf::MessageField::none(),
+            unk: ::std::vec::Vec::new(),
+            equipment_list: ::std::vec::Vec::new(),
+            avatar_sync: ::protobuf::MessageField::none(),
+            EDFCAFLFLFH: ::protobuf::MessageField::none(),
+            board_data_sync: ::protobuf::MessageField::none(),
+            del_equipment_list: ::std::vec::Vec::new(),
             relic_list: ::std::vec::Vec::new(),
-            COOKFBPFNJM: ::std::vec::Vec::new(),
+            multi_path_avatar_type_info_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -553,36 +382,24 @@ impl ::protobuf::reflect::ProtobufValue for PlayerSyncScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18PlayerSyncScNotify.proto\x1a\x11DEAJGOPAMNB.proto\x1a\x0fEquipment\
-    .proto\x1a\x11FBHBBNEMOFK.proto\x1a\x11FGGBMCNAOAF.proto\x1a\x11HNDDPBJM\
-    BFM.proto\x1a\x11IEJMBDHDANC.proto\x1a\x11IGFLEJNLOMM.proto\x1a\x11IJJML\
-    IFHIKK.proto\x1a\x0eItemList.proto\x1a\x11JIOMHFCHMMJ.proto\x1a\x0eMater\
-    ial.proto\x1a\x19MultiPathAvatarInfo.proto\x1a\x11PFIJOKJPNBB.proto\x1a\
-    \x11PHOAJMJDFCI.proto\x1a\x11PIOOJABFAGN.proto\x1a\x0bQuest.proto\x1a\
-    \x0bRelic.proto\"\xa5\x08\n\x12PlayerSyncScNotify\x12/\n\x0bHJGIEKEPBIH\
-    \x18\xd6\x01\x20\x03(\x0b2\x0c.FGGBMCNAOAFR\x0bHJGIEKEPBIH\x12.\n\rmater\
-    ial_list\x18\x0b\x20\x03(\x0b2\t.MaterialR\x0cmaterialList\x12.\n\x0bJNF\
-    EDNBGBHN\x18\x02\x20\x01(\x0b2\x0c.IJJMLIFHIKKR\x0bJNFEDNBGBHN\x12!\n\
-    \x0bHELAAAKOCBB\x18\xc4\x0f\x20\x03(\rR\x0bHELAAAKOCBB\x121\n\x0eequipme\
-    nt_list\x18\x0c\x20\x03(\x0b2\n.EquipmentR\requipmentList\x12.\n\x0bPABL\
-    GNBDDCG\x181\x20\x01(\x0b2\x0c.DEAJGOPAMNBR\x0bPABLGNBDDCG\x12\x20\n\x0b\
-    INDIHGHPJEL\x18\x01\x20\x03(\rR\x0bINDIHGHPJEL\x12/\n\x0bPBEIJBHOJPJ\x18\
-    \x81\x01\x20\x01(\x0b2\x0c.JIOMHFCHMMJR\x0bPBEIJBHOJPJ\x12,\n\x0bHNBHLCA\
-    KAJG\x18\xd6\r\x20\x03(\x0b2\t.MaterialR\x0bHNBHLCAKAJG\x12.\n\x0bMBMDOJ\
-    OEAKN\x18\x0e\x20\x01(\x0b2\x0c.FBHBBNEMOFKR\x0bMBMDOJOEAKN\x123\n\x15to\
-    tal_achievement_exp\x18\xb2\x02\x20\x01(\rR\x13totalAchievementExp\x12.\
-    \n\x0bAMAHGKEECPN\x18\x04\x20\x01(\x0b2\x0c.PFIJOKJPNBBR\x0bAMAHGKEECPN\
-    \x12/\n\x0bCEOMDDEJKEF\x18\xc1\x08\x20\x03(\x0b2\x0c.IGFLEJNLOMMR\x0bCEO\
-    MDDEJKEF\x12/\n\x0bJPLPJDINOAJ\x18\xfb\x08\x20\x03(\x0b2\x0c.IEJMBDHDANC\
-    R\x0bJPLPJDINOAJ\x12,\n\x0bIKLEOCENKJG\x18\xb0\n\x20\x01(\x0b2\t.ItemLis\
-    tR\x0bIKLEOCENKJG\x12R\n\x1bmulti_path_avatar_info_list\x18f\x20\x03(\
-    \x0b2\x14.MultiPathAvatarInfoR\x17multiPathAvatarInfoList\x12.\n\x0bABBP\
-    IPLFGIC\x18\x08\x20\x01(\x0b2\x0c.HNDDPBJMBFMR\x0bABBPIPLFGIC\x12.\n\x0b\
-    NCCIGLLBCON\x18\x0f\x20\x03(\x0b2\x0c.PIOOJABFAGNR\x0bNCCIGLLBCON\x12.\n\
-    \x0bINFGEKJMEND\x18\x05\x20\x01(\x0b2\x0c.PHOAJMJDFCIR\x0bINFGEKJMEND\
-    \x12%\n\nquest_list\x18\x06\x20\x03(\x0b2\x06.QuestR\tquestList\x12%\n\n\
-    relic_list\x18\x03\x20\x03(\x0b2\x06.RelicR\trelicList\x12\x20\n\x0bCOOK\
-    FBPFNJM\x18\x07\x20\x03(\rR\x0bCOOKFBPFNJMb\x06proto3\
+    \n\x18PlayerSyncScNotify.proto\x1a\x0bRelic.proto\x1a\x0fEquipment.proto\
+    \x1a\x15PlayerBasicInfo.proto\x1a\x13BoardDataSync.proto\x1a\x0eMaterial\
+    .proto\x1a\x10AvatarSync.proto\x1a\x11MissionSync.proto\x1a\x1dMultiPath\
+    AvatarTypeInfo.proto\"\x92\x05\n\x12PlayerSyncScNotify\x12.\n\rmaterial_\
+    list\x18\x02\x20\x03(\x0b2\t.MaterialR\x0cmaterialList\x12$\n\x0edel_rel\
+    ic_list\x18\r\x20\x03(\rR\x0cdelRelicList\x123\n\x15total_achievement_ex\
+    p\x18\xef\x05\x20\x01(\rR\x13totalAchievementExp\x12,\n\x0bLLMKCDEDIFP\
+    \x18\xda\x07\x20\x03(\x0b2\t.MaterialR\x0bLLMKCDEDIFP\x12/\n\nbasic_info\
+    \x18\n\x20\x01(\x0b2\x10.PlayerBasicInfoR\tbasicInfo\x12\x11\n\x03unk\
+    \x18\xe3\x06\x20\x03(\rR\x03unk\x121\n\x0eequipment_list\x18\x05\x20\x03\
+    (\x0b2\n.EquipmentR\requipmentList\x12,\n\x0bavatar_sync\x18\x04\x20\x01\
+    (\x0b2\x0b.AvatarSyncR\navatarSync\x12.\n\x0bEDFCAFLFLFH\x18\x07\x20\x01\
+    (\x0b2\x0c.MissionSyncR\x0bEDFCAFLFLFH\x127\n\x0fboard_data_sync\x18\xb4\
+    \x0f\x20\x01(\x0b2\x0e.BoardDataSyncR\rboardDataSync\x12,\n\x12del_equip\
+    ment_list\x18\t\x20\x03(\rR\x10delEquipmentList\x12%\n\nrelic_list\x18\
+    \x0b\x20\x03(\x0b2\x06.RelicR\trelicList\x12`\n\x20multi_path_avatar_typ\
+    e_info_list\x18\xdd\x0b\x20\x03(\x0b2\x18.MultiPathAvatarTypeInfoR\x1bmu\
+    ltiPathAvatarTypeInfoListB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -599,24 +416,15 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(17);
-            deps.push(super::DEAJGOPAMNB::file_descriptor().clone());
-            deps.push(super::Equipment::file_descriptor().clone());
-            deps.push(super::FBHBBNEMOFK::file_descriptor().clone());
-            deps.push(super::FGGBMCNAOAF::file_descriptor().clone());
-            deps.push(super::HNDDPBJMBFM::file_descriptor().clone());
-            deps.push(super::IEJMBDHDANC::file_descriptor().clone());
-            deps.push(super::IGFLEJNLOMM::file_descriptor().clone());
-            deps.push(super::IJJMLIFHIKK::file_descriptor().clone());
-            deps.push(super::ItemList::file_descriptor().clone());
-            deps.push(super::JIOMHFCHMMJ::file_descriptor().clone());
-            deps.push(super::Material::file_descriptor().clone());
-            deps.push(super::MultiPathAvatarInfo::file_descriptor().clone());
-            deps.push(super::PFIJOKJPNBB::file_descriptor().clone());
-            deps.push(super::PHOAJMJDFCI::file_descriptor().clone());
-            deps.push(super::PIOOJABFAGN::file_descriptor().clone());
-            deps.push(super::Quest::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(8);
             deps.push(super::Relic::file_descriptor().clone());
+            deps.push(super::Equipment::file_descriptor().clone());
+            deps.push(super::PlayerBasicInfo::file_descriptor().clone());
+            deps.push(super::BoardDataSync::file_descriptor().clone());
+            deps.push(super::Material::file_descriptor().clone());
+            deps.push(super::AvatarSync::file_descriptor().clone());
+            deps.push(super::MissionSync::file_descriptor().clone());
+            deps.push(super::MultiPathAvatarTypeInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PlayerSyncScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MuseumTargetRewardNotify {
     // message fields
-    // @@protoc_insertion_point(field:MuseumTargetRewardNotify.PHLFJPFKFOF)
-    pub PHLFJPFKFOF: u32,
-    // @@protoc_insertion_point(field:MuseumTargetRewardNotify.EJMJFLGFHJO)
-    pub EJMJFLGFHJO: u32,
-    // @@protoc_insertion_point(field:MuseumTargetRewardNotify.AOHGEEADFGI)
-    pub AOHGEEADFGI: u32,
+    // @@protoc_insertion_point(field:MuseumTargetRewardNotify.LDHPNOKPPFM)
+    pub LDHPNOKPPFM: u32,
+    // @@protoc_insertion_point(field:MuseumTargetRewardNotify.LGBJLFEMFOL)
+    pub LGBJLFEMFOL: u32,
+    // @@protoc_insertion_point(field:MuseumTargetRewardNotify.GMOJJNBEIFL)
+    pub GMOJJNBEIFL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MuseumTargetRewardNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl MuseumTargetRewardNotify {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PHLFJPFKFOF",
-            |m: &MuseumTargetRewardNotify| { &m.PHLFJPFKFOF },
-            |m: &mut MuseumTargetRewardNotify| { &mut m.PHLFJPFKFOF },
+            "LDHPNOKPPFM",
+            |m: &MuseumTargetRewardNotify| { &m.LDHPNOKPPFM },
+            |m: &mut MuseumTargetRewardNotify| { &mut m.LDHPNOKPPFM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EJMJFLGFHJO",
-            |m: &MuseumTargetRewardNotify| { &m.EJMJFLGFHJO },
-            |m: &mut MuseumTargetRewardNotify| { &mut m.EJMJFLGFHJO },
+            "LGBJLFEMFOL",
+            |m: &MuseumTargetRewardNotify| { &m.LGBJLFEMFOL },
+            |m: &mut MuseumTargetRewardNotify| { &mut m.LGBJLFEMFOL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AOHGEEADFGI",
-            |m: &MuseumTargetRewardNotify| { &m.AOHGEEADFGI },
-            |m: &mut MuseumTargetRewardNotify| { &mut m.AOHGEEADFGI },
+            "GMOJJNBEIFL",
+            |m: &MuseumTargetRewardNotify| { &m.GMOJJNBEIFL },
+            |m: &mut MuseumTargetRewardNotify| { &mut m.GMOJJNBEIFL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MuseumTargetRewardNotify>(
             "MuseumTargetRewardNotify",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for MuseumTargetRewardNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.PHLFJPFKFOF = is.read_uint32()?;
+                32 => {
+                    self.LDHPNOKPPFM = is.read_uint32()?;
                 },
-                8 => {
-                    self.EJMJFLGFHJO = is.read_uint32()?;
+                24 => {
+                    self.LGBJLFEMFOL = is.read_uint32()?;
                 },
-                64 => {
-                    self.AOHGEEADFGI = is.read_uint32()?;
+                56 => {
+                    self.GMOJJNBEIFL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for MuseumTargetRewardNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PHLFJPFKFOF != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.PHLFJPFKFOF);
+        if self.LDHPNOKPPFM != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.LDHPNOKPPFM);
         }
-        if self.EJMJFLGFHJO != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.EJMJFLGFHJO);
+        if self.LGBJLFEMFOL != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.LGBJLFEMFOL);
         }
-        if self.AOHGEEADFGI != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.AOHGEEADFGI);
+        if self.GMOJJNBEIFL != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.GMOJJNBEIFL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for MuseumTargetRewardNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PHLFJPFKFOF != 0 {
-            os.write_uint32(11, self.PHLFJPFKFOF)?;
+        if self.LDHPNOKPPFM != 0 {
+            os.write_uint32(4, self.LDHPNOKPPFM)?;
         }
-        if self.EJMJFLGFHJO != 0 {
-            os.write_uint32(1, self.EJMJFLGFHJO)?;
+        if self.LGBJLFEMFOL != 0 {
+            os.write_uint32(3, self.LGBJLFEMFOL)?;
         }
-        if self.AOHGEEADFGI != 0 {
-            os.write_uint32(8, self.AOHGEEADFGI)?;
+        if self.GMOJJNBEIFL != 0 {
+            os.write_uint32(7, self.GMOJJNBEIFL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for MuseumTargetRewardNotify {
     }
 
     fn clear(&mut self) {
-        self.PHLFJPFKFOF = 0;
-        self.EJMJFLGFHJO = 0;
-        self.AOHGEEADFGI = 0;
+        self.LDHPNOKPPFM = 0;
+        self.LGBJLFEMFOL = 0;
+        self.GMOJJNBEIFL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MuseumTargetRewardNotify {
         static instance: MuseumTargetRewardNotify = MuseumTargetRewardNotify {
-            PHLFJPFKFOF: 0,
-            EJMJFLGFHJO: 0,
-            AOHGEEADFGI: 0,
+            LDHPNOKPPFM: 0,
+            LGBJLFEMFOL: 0,
+            GMOJJNBEIFL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for MuseumTargetRewardNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eMuseumTargetRewardNotify.proto\"\x80\x01\n\x18MuseumTargetRewardNo\
-    tify\x12\x20\n\x0bPHLFJPFKFOF\x18\x0b\x20\x01(\rR\x0bPHLFJPFKFOF\x12\x20\
-    \n\x0bEJMJFLGFHJO\x18\x01\x20\x01(\rR\x0bEJMJFLGFHJO\x12\x20\n\x0bAOHGEE\
-    ADFGI\x18\x08\x20\x01(\rR\x0bAOHGEEADFGIb\x06proto3\
+    tify\x12\x20\n\x0bLDHPNOKPPFM\x18\x04\x20\x01(\rR\x0bLDHPNOKPPFM\x12\x20\
+    \n\x0bLGBJLFEMFOL\x18\x03\x20\x01(\rR\x0bLGBJLFEMFOL\x12\x20\n\x0bGMOJJN\
+    BEIFL\x18\x07\x20\x01(\rR\x0bGMOJJNBEIFLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

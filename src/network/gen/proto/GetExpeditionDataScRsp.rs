@@ -29,20 +29,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetExpeditionDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetExpeditionDataScRsp.DLHILDEHBMI)
-    pub DLHILDEHBMI: u32,
-    // @@protoc_insertion_point(field:GetExpeditionDataScRsp.AJMJNIMFDOO)
-    pub AJMJNIMFDOO: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetExpeditionDataScRsp.CLOGAEMKPPM)
-    pub CLOGAEMKPPM: ::std::vec::Vec<super::JLHHCIJPOPD::JLHHCIJPOPD>,
-    // @@protoc_insertion_point(field:GetExpeditionDataScRsp.GNJKNMOAEHA)
-    pub GNJKNMOAEHA: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetExpeditionDataScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:GetExpeditionDataScRsp.LEOJCIHOGPM)
-    pub LEOJCIHOGPM: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetExpeditionDataScRsp.KLMGFFABHCA)
-    pub KLMGFFABHCA: ::std::vec::Vec<super::IFBDJJLGDNJ::IFBDJJLGDNJ>,
+    // @@protoc_insertion_point(field:GetExpeditionDataScRsp.BAFIOLLKBDA)
+    pub BAFIOLLKBDA: ::std::vec::Vec<super::OJGLGPGDEPN::OJGLGPGDEPN>,
+    // @@protoc_insertion_point(field:GetExpeditionDataScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:GetExpeditionDataScRsp.LHJEKCMHHHE)
+    pub LHJEKCMHHHE: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetExpeditionDataScRsp.CLFMFJGLHMJ)
+    pub CLFMFJGLHMJ: ::std::vec::Vec<super::HDGPCEALOPK::HDGPCEALOPK>,
+    // @@protoc_insertion_point(field:GetExpeditionDataScRsp.PBLHKADPDGC)
+    pub PBLHKADPDGC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetExpeditionDataScRsp.MDAODDEMOOC)
+    pub MDAODDEMOOC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetExpeditionDataScRsp.NMCPAHLCPKE)
+    pub NMCPAHLCPKE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetExpeditionDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,40 +62,40 @@ impl GetExpeditionDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DLHILDEHBMI",
-            |m: &GetExpeditionDataScRsp| { &m.DLHILDEHBMI },
-            |m: &mut GetExpeditionDataScRsp| { &mut m.DLHILDEHBMI },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "AJMJNIMFDOO",
-            |m: &GetExpeditionDataScRsp| { &m.AJMJNIMFDOO },
-            |m: &mut GetExpeditionDataScRsp| { &mut m.AJMJNIMFDOO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CLOGAEMKPPM",
-            |m: &GetExpeditionDataScRsp| { &m.CLOGAEMKPPM },
-            |m: &mut GetExpeditionDataScRsp| { &mut m.CLOGAEMKPPM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GNJKNMOAEHA",
-            |m: &GetExpeditionDataScRsp| { &m.GNJKNMOAEHA },
-            |m: &mut GetExpeditionDataScRsp| { &mut m.GNJKNMOAEHA },
+            "BAFIOLLKBDA",
+            |m: &GetExpeditionDataScRsp| { &m.BAFIOLLKBDA },
+            |m: &mut GetExpeditionDataScRsp| { &mut m.BAFIOLLKBDA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetExpeditionDataScRsp| { &m.retcode },
-            |m: &mut GetExpeditionDataScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &GetExpeditionDataScRsp| { &m.ADADHIHDHJC },
+            |m: &mut GetExpeditionDataScRsp| { &mut m.ADADHIHDHJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LEOJCIHOGPM",
-            |m: &GetExpeditionDataScRsp| { &m.LEOJCIHOGPM },
-            |m: &mut GetExpeditionDataScRsp| { &mut m.LEOJCIHOGPM },
+            "LHJEKCMHHHE",
+            |m: &GetExpeditionDataScRsp| { &m.LHJEKCMHHHE },
+            |m: &mut GetExpeditionDataScRsp| { &mut m.LHJEKCMHHHE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KLMGFFABHCA",
-            |m: &GetExpeditionDataScRsp| { &m.KLMGFFABHCA },
-            |m: &mut GetExpeditionDataScRsp| { &mut m.KLMGFFABHCA },
+            "CLFMFJGLHMJ",
+            |m: &GetExpeditionDataScRsp| { &m.CLFMFJGLHMJ },
+            |m: &mut GetExpeditionDataScRsp| { &mut m.CLFMFJGLHMJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PBLHKADPDGC",
+            |m: &GetExpeditionDataScRsp| { &m.PBLHKADPDGC },
+            |m: &mut GetExpeditionDataScRsp| { &mut m.PBLHKADPDGC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "MDAODDEMOOC",
+            |m: &GetExpeditionDataScRsp| { &m.MDAODDEMOOC },
+            |m: &mut GetExpeditionDataScRsp| { &mut m.MDAODDEMOOC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NMCPAHLCPKE",
+            |m: &GetExpeditionDataScRsp| { &m.NMCPAHLCPKE },
+            |m: &mut GetExpeditionDataScRsp| { &mut m.NMCPAHLCPKE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetExpeditionDataScRsp>(
             "GetExpeditionDataScRsp",
@@ -115,35 +115,35 @@ impl ::protobuf::Message for GetExpeditionDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.DLHILDEHBMI = is.read_uint32()?;
-                },
-                42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.AJMJNIMFDOO)?;
-                },
-                40 => {
-                    self.AJMJNIMFDOO.push(is.read_uint32()?);
-                },
-                90 => {
-                    self.CLOGAEMKPPM.push(is.read_message()?);
-                },
-                26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.GNJKNMOAEHA)?;
-                },
-                24 => {
-                    self.GNJKNMOAEHA.push(is.read_uint32()?);
-                },
-                16 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.LEOJCIHOGPM)?;
+                58 => {
+                    self.BAFIOLLKBDA.push(is.read_message()?);
                 },
                 96 => {
-                    self.LEOJCIHOGPM.push(is.read_uint32()?);
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                34 => {
-                    self.KLMGFFABHCA.push(is.read_message()?);
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.LHJEKCMHHHE)?;
+                },
+                120 => {
+                    self.LHJEKCMHHHE.push(is.read_uint32()?);
+                },
+                50 => {
+                    self.CLFMFJGLHMJ.push(is.read_message()?);
+                },
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.PBLHKADPDGC)?;
+                },
+                24 => {
+                    self.PBLHKADPDGC.push(is.read_uint32()?);
+                },
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.MDAODDEMOOC)?;
+                },
+                80 => {
+                    self.MDAODDEMOOC.push(is.read_uint32()?);
+                },
+                32 => {
+                    self.NMCPAHLCPKE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -157,56 +157,56 @@ impl ::protobuf::Message for GetExpeditionDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DLHILDEHBMI != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.DLHILDEHBMI);
-        }
-        for value in &self.AJMJNIMFDOO {
-            my_size += ::protobuf::rt::uint32_size(5, *value);
-        };
-        for value in &self.CLOGAEMKPPM {
+        for value in &self.BAFIOLLKBDA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.GNJKNMOAEHA {
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.ADADHIHDHJC);
+        }
+        for value in &self.LHJEKCMHHHE {
+            my_size += ::protobuf::rt::uint32_size(15, *value);
+        };
+        for value in &self.CLFMFJGLHMJ {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        for value in &self.PBLHKADPDGC {
             my_size += ::protobuf::rt::uint32_size(3, *value);
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+        for value in &self.MDAODDEMOOC {
+            my_size += ::protobuf::rt::uint32_size(10, *value);
+        };
+        if self.NMCPAHLCPKE != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.NMCPAHLCPKE);
         }
-        for value in &self.LEOJCIHOGPM {
-            my_size += ::protobuf::rt::uint32_size(12, *value);
-        };
-        for value in &self.KLMGFFABHCA {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DLHILDEHBMI != 0 {
-            os.write_uint32(9, self.DLHILDEHBMI)?;
+        for v in &self.BAFIOLLKBDA {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        };
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(12, self.ADADHIHDHJC)?;
         }
-        for v in &self.AJMJNIMFDOO {
-            os.write_uint32(5, *v)?;
+        for v in &self.LHJEKCMHHHE {
+            os.write_uint32(15, *v)?;
         };
-        for v in &self.CLOGAEMKPPM {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        for v in &self.CLFMFJGLHMJ {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
-        for v in &self.GNJKNMOAEHA {
+        for v in &self.PBLHKADPDGC {
             os.write_uint32(3, *v)?;
         };
-        if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+        for v in &self.MDAODDEMOOC {
+            os.write_uint32(10, *v)?;
+        };
+        if self.NMCPAHLCPKE != 0 {
+            os.write_uint32(4, self.NMCPAHLCPKE)?;
         }
-        for v in &self.LEOJCIHOGPM {
-            os.write_uint32(12, *v)?;
-        };
-        for v in &self.KLMGFFABHCA {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -224,25 +224,25 @@ impl ::protobuf::Message for GetExpeditionDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.DLHILDEHBMI = 0;
-        self.AJMJNIMFDOO.clear();
-        self.CLOGAEMKPPM.clear();
-        self.GNJKNMOAEHA.clear();
-        self.retcode = 0;
-        self.LEOJCIHOGPM.clear();
-        self.KLMGFFABHCA.clear();
+        self.BAFIOLLKBDA.clear();
+        self.ADADHIHDHJC = 0;
+        self.LHJEKCMHHHE.clear();
+        self.CLFMFJGLHMJ.clear();
+        self.PBLHKADPDGC.clear();
+        self.MDAODDEMOOC.clear();
+        self.NMCPAHLCPKE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetExpeditionDataScRsp {
         static instance: GetExpeditionDataScRsp = GetExpeditionDataScRsp {
-            DLHILDEHBMI: 0,
-            AJMJNIMFDOO: ::std::vec::Vec::new(),
-            CLOGAEMKPPM: ::std::vec::Vec::new(),
-            GNJKNMOAEHA: ::std::vec::Vec::new(),
-            retcode: 0,
-            LEOJCIHOGPM: ::std::vec::Vec::new(),
-            KLMGFFABHCA: ::std::vec::Vec::new(),
+            BAFIOLLKBDA: ::std::vec::Vec::new(),
+            ADADHIHDHJC: 0,
+            LHJEKCMHHHE: ::std::vec::Vec::new(),
+            CLFMFJGLHMJ: ::std::vec::Vec::new(),
+            PBLHKADPDGC: ::std::vec::Vec::new(),
+            MDAODDEMOOC: ::std::vec::Vec::new(),
+            NMCPAHLCPKE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -267,15 +267,15 @@ impl ::protobuf::reflect::ProtobufValue for GetExpeditionDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cGetExpeditionDataScRsp.proto\x1a\x11IFBDJJLGDNJ.proto\x1a\x11JLHHC\
-    IJPOPD.proto\"\x9a\x02\n\x16GetExpeditionDataScRsp\x12\x20\n\x0bDLHILDEH\
-    BMI\x18\t\x20\x01(\rR\x0bDLHILDEHBMI\x12\x20\n\x0bAJMJNIMFDOO\x18\x05\
-    \x20\x03(\rR\x0bAJMJNIMFDOO\x12.\n\x0bCLOGAEMKPPM\x18\x0b\x20\x03(\x0b2\
-    \x0c.JLHHCIJPOPDR\x0bCLOGAEMKPPM\x12\x20\n\x0bGNJKNMOAEHA\x18\x03\x20\
-    \x03(\rR\x0bGNJKNMOAEHA\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retc\
-    ode\x12\x20\n\x0bLEOJCIHOGPM\x18\x0c\x20\x03(\rR\x0bLEOJCIHOGPM\x12.\n\
-    \x0bKLMGFFABHCA\x18\x04\x20\x03(\x0b2\x0c.IFBDJJLGDNJR\x0bKLMGFFABHCAb\
-    \x06proto3\
+    \n\x1cGetExpeditionDataScRsp.proto\x1a\x11HDGPCEALOPK.proto\x1a\x11OJGLG\
+    PGDEPN.proto\"\xa2\x02\n\x16GetExpeditionDataScRsp\x12.\n\x0bBAFIOLLKBDA\
+    \x18\x07\x20\x03(\x0b2\x0c.OJGLGPGDEPNR\x0bBAFIOLLKBDA\x12\x20\n\x0bADAD\
+    HIHDHJC\x18\x0c\x20\x01(\rR\x0bADADHIHDHJC\x12\x20\n\x0bLHJEKCMHHHE\x18\
+    \x0f\x20\x03(\rR\x0bLHJEKCMHHHE\x12.\n\x0bCLFMFJGLHMJ\x18\x06\x20\x03(\
+    \x0b2\x0c.HDGPCEALOPKR\x0bCLFMFJGLHMJ\x12\x20\n\x0bPBLHKADPDGC\x18\x03\
+    \x20\x03(\rR\x0bPBLHKADPDGC\x12\x20\n\x0bMDAODDEMOOC\x18\n\x20\x03(\rR\
+    \x0bMDAODDEMOOC\x12\x20\n\x0bNMCPAHLCPKE\x18\x04\x20\x01(\rR\x0bNMCPAHLC\
+    PKEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -293,8 +293,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::IFBDJJLGDNJ::file_descriptor().clone());
-            deps.push(super::JLHHCIJPOPD::file_descriptor().clone());
+            deps.push(super::HDGPCEALOPK::file_descriptor().clone());
+            deps.push(super::OJGLGPGDEPN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetExpeditionDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

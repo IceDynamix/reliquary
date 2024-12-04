@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdateServerPrefsDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:UpdateServerPrefsDataScRsp.ADDIKBHGIDL)
-    pub ADDIKBHGIDL: u32,
+    // @@protoc_insertion_point(field:UpdateServerPrefsDataScRsp.server_prefs_id)
+    pub server_prefs_id: u32,
     // @@protoc_insertion_point(field:UpdateServerPrefsDataScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -53,9 +53,9 @@ impl UpdateServerPrefsDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADDIKBHGIDL",
-            |m: &UpdateServerPrefsDataScRsp| { &m.ADDIKBHGIDL },
-            |m: &mut UpdateServerPrefsDataScRsp| { &mut m.ADDIKBHGIDL },
+            "server_prefs_id",
+            |m: &UpdateServerPrefsDataScRsp| { &m.server_prefs_id },
+            |m: &mut UpdateServerPrefsDataScRsp| { &mut m.server_prefs_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -81,7 +81,7 @@ impl ::protobuf::Message for UpdateServerPrefsDataScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 72 => {
-                    self.ADDIKBHGIDL = is.read_uint32()?;
+                    self.server_prefs_id = is.read_uint32()?;
                 },
                 96 => {
                     self.retcode = is.read_uint32()?;
@@ -98,8 +98,8 @@ impl ::protobuf::Message for UpdateServerPrefsDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADDIKBHGIDL != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.ADDIKBHGIDL);
+        if self.server_prefs_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.server_prefs_id);
         }
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(12, self.retcode);
@@ -110,8 +110,8 @@ impl ::protobuf::Message for UpdateServerPrefsDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADDIKBHGIDL != 0 {
-            os.write_uint32(9, self.ADDIKBHGIDL)?;
+        if self.server_prefs_id != 0 {
+            os.write_uint32(9, self.server_prefs_id)?;
         }
         if self.retcode != 0 {
             os.write_uint32(12, self.retcode)?;
@@ -133,14 +133,14 @@ impl ::protobuf::Message for UpdateServerPrefsDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADDIKBHGIDL = 0;
+        self.server_prefs_id = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateServerPrefsDataScRsp {
         static instance: UpdateServerPrefsDataScRsp = UpdateServerPrefsDataScRsp {
-            ADDIKBHGIDL: 0,
+            server_prefs_id: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,9 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for UpdateServerPrefsDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20UpdateServerPrefsDataScRsp.proto\"X\n\x1aUpdateServerPrefsDataScRs\
-    p\x12\x20\n\x0bADDIKBHGIDL\x18\t\x20\x01(\rR\x0bADDIKBHGIDL\x12\x18\n\
-    \x07retcode\x18\x0c\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x20UpdateServerPrefsDataScRsp.proto\"^\n\x1aUpdateServerPrefsDataScRs\
+    p\x12&\n\x0fserver_prefs_id\x18\t\x20\x01(\rR\rserverPrefsId\x12\x18\n\
+    \x07retcode\x18\x0c\x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore.proto\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

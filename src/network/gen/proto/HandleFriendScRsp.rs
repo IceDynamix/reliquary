@@ -31,12 +31,12 @@ pub struct HandleFriendScRsp {
     // message fields
     // @@protoc_insertion_point(field:HandleFriendScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:HandleFriendScRsp.DJEMLLCPCED)
-    pub DJEMLLCPCED: ::protobuf::MessageField<super::BBFKIFKAEFL::BBFKIFKAEFL>,
     // @@protoc_insertion_point(field:HandleFriendScRsp.uid)
     pub uid: u32,
-    // @@protoc_insertion_point(field:HandleFriendScRsp.FKBFKDOBOCP)
-    pub FKBFKDOBOCP: bool,
+    // @@protoc_insertion_point(field:HandleFriendScRsp.handle_result)
+    pub handle_result: bool,
+    // @@protoc_insertion_point(field:HandleFriendScRsp.handle_friend_info)
+    pub handle_friend_info: ::protobuf::MessageField<super::FriendListInfo::FriendListInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:HandleFriendScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,20 +61,20 @@ impl HandleFriendScRsp {
             |m: &HandleFriendScRsp| { &m.retcode },
             |m: &mut HandleFriendScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BBFKIFKAEFL::BBFKIFKAEFL>(
-            "DJEMLLCPCED",
-            |m: &HandleFriendScRsp| { &m.DJEMLLCPCED },
-            |m: &mut HandleFriendScRsp| { &mut m.DJEMLLCPCED },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "uid",
             |m: &HandleFriendScRsp| { &m.uid },
             |m: &mut HandleFriendScRsp| { &mut m.uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FKBFKDOBOCP",
-            |m: &HandleFriendScRsp| { &m.FKBFKDOBOCP },
-            |m: &mut HandleFriendScRsp| { &mut m.FKBFKDOBOCP },
+            "handle_result",
+            |m: &HandleFriendScRsp| { &m.handle_result },
+            |m: &mut HandleFriendScRsp| { &mut m.handle_result },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FriendListInfo::FriendListInfo>(
+            "handle_friend_info",
+            |m: &HandleFriendScRsp| { &m.handle_friend_info },
+            |m: &mut HandleFriendScRsp| { &mut m.handle_friend_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HandleFriendScRsp>(
             "HandleFriendScRsp",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for HandleFriendScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DJEMLLCPCED)?;
-                },
-                24 => {
+                48 => {
                     self.uid = is.read_uint32()?;
                 },
-                40 => {
-                    self.FKBFKDOBOCP = is.read_bool()?;
+                80 => {
+                    self.handle_result = is.read_bool()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.handle_friend_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -119,17 +119,17 @@ impl ::protobuf::Message for HandleFriendScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
-        }
-        if let Some(v) = self.DJEMLLCPCED.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.uid);
+            my_size += ::protobuf::rt::uint32_size(6, self.uid);
         }
-        if self.FKBFKDOBOCP != false {
+        if self.handle_result != false {
             my_size += 1 + 1;
+        }
+        if let Some(v) = self.handle_friend_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,16 +138,16 @@ impl ::protobuf::Message for HandleFriendScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
-        }
-        if let Some(v) = self.DJEMLLCPCED.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            os.write_uint32(15, self.retcode)?;
         }
         if self.uid != 0 {
-            os.write_uint32(3, self.uid)?;
+            os.write_uint32(6, self.uid)?;
         }
-        if self.FKBFKDOBOCP != false {
-            os.write_bool(5, self.FKBFKDOBOCP)?;
+        if self.handle_result != false {
+            os.write_bool(10, self.handle_result)?;
+        }
+        if let Some(v) = self.handle_friend_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,18 +167,18 @@ impl ::protobuf::Message for HandleFriendScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.DJEMLLCPCED.clear();
         self.uid = 0;
-        self.FKBFKDOBOCP = false;
+        self.handle_result = false;
+        self.handle_friend_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HandleFriendScRsp {
         static instance: HandleFriendScRsp = HandleFriendScRsp {
             retcode: 0,
-            DJEMLLCPCED: ::protobuf::MessageField::none(),
             uid: 0,
-            FKBFKDOBOCP: false,
+            handle_result: false,
+            handle_friend_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,11 +203,12 @@ impl ::protobuf::reflect::ProtobufValue for HandleFriendScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17HandleFriendScRsp.proto\x1a\x11BBFKIFKAEFL.proto\"\x91\x01\n\x11Ha\
-    ndleFriendScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12.\
-    \n\x0bDJEMLLCPCED\x18\x0e\x20\x01(\x0b2\x0c.BBFKIFKAEFLR\x0bDJEMLLCPCED\
-    \x12\x10\n\x03uid\x18\x03\x20\x01(\rR\x03uid\x12\x20\n\x0bFKBFKDOBOCP\
-    \x18\x05\x20\x01(\x08R\x0bFKBFKDOBOCPb\x06proto3\
+    \n\x17HandleFriendScRsp.proto\x1a\x14FriendListInfo.proto\"\xa3\x01\n\
+    \x11HandleFriendScRsp\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcod\
+    e\x12\x10\n\x03uid\x18\x06\x20\x01(\rR\x03uid\x12#\n\rhandle_result\x18\
+    \n\x20\x01(\x08R\x0chandleResult\x12=\n\x12handle_friend_info\x18\x0b\
+    \x20\x01(\x0b2\x0f.FriendListInfoR\x10handleFriendInfoB\x15\n\x13emu.lun\
+    arcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -225,7 +226,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::BBFKIFKAEFL::file_descriptor().clone());
+            deps.push(super::FriendListInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(HandleFriendScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

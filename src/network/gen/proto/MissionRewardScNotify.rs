@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MissionRewardScNotify {
     // message fields
-    // @@protoc_insertion_point(field:MissionRewardScNotify.NJHPKMHFJAD)
-    pub NJHPKMHFJAD: u32,
-    // @@protoc_insertion_point(field:MissionRewardScNotify.EDIMCJAEKJD)
-    pub EDIMCJAEKJD: u32,
-    // @@protoc_insertion_point(field:MissionRewardScNotify.LPDNAMLHGNJ)
-    pub LPDNAMLHGNJ: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:MissionRewardScNotify.FAFGOIMCDPF)
+    pub FAFGOIMCDPF: u32,
+    // @@protoc_insertion_point(field:MissionRewardScNotify.JPFMOBHIECA)
+    pub JPFMOBHIECA: u32,
+    // @@protoc_insertion_point(field:MissionRewardScNotify.ELPMNKHEPKJ)
+    pub ELPMNKHEPKJ: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:MissionRewardScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl MissionRewardScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NJHPKMHFJAD",
-            |m: &MissionRewardScNotify| { &m.NJHPKMHFJAD },
-            |m: &mut MissionRewardScNotify| { &mut m.NJHPKMHFJAD },
+            "FAFGOIMCDPF",
+            |m: &MissionRewardScNotify| { &m.FAFGOIMCDPF },
+            |m: &mut MissionRewardScNotify| { &mut m.FAFGOIMCDPF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EDIMCJAEKJD",
-            |m: &MissionRewardScNotify| { &m.EDIMCJAEKJD },
-            |m: &mut MissionRewardScNotify| { &mut m.EDIMCJAEKJD },
+            "JPFMOBHIECA",
+            |m: &MissionRewardScNotify| { &m.JPFMOBHIECA },
+            |m: &mut MissionRewardScNotify| { &mut m.JPFMOBHIECA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "LPDNAMLHGNJ",
-            |m: &MissionRewardScNotify| { &m.LPDNAMLHGNJ },
-            |m: &mut MissionRewardScNotify| { &mut m.LPDNAMLHGNJ },
+            "ELPMNKHEPKJ",
+            |m: &MissionRewardScNotify| { &m.ELPMNKHEPKJ },
+            |m: &mut MissionRewardScNotify| { &mut m.ELPMNKHEPKJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MissionRewardScNotify>(
             "MissionRewardScNotify",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for MissionRewardScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.NJHPKMHFJAD = is.read_uint32()?;
+                88 => {
+                    self.FAFGOIMCDPF = is.read_uint32()?;
                 },
-                64 => {
-                    self.EDIMCJAEKJD = is.read_uint32()?;
+                96 => {
+                    self.JPFMOBHIECA = is.read_uint32()?;
                 },
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LPDNAMLHGNJ)?;
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ELPMNKHEPKJ)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for MissionRewardScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NJHPKMHFJAD != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.NJHPKMHFJAD);
+        if self.FAFGOIMCDPF != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.FAFGOIMCDPF);
         }
-        if self.EDIMCJAEKJD != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.EDIMCJAEKJD);
+        if self.JPFMOBHIECA != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.JPFMOBHIECA);
         }
-        if let Some(v) = self.LPDNAMLHGNJ.as_ref() {
+        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -124,14 +124,14 @@ impl ::protobuf::Message for MissionRewardScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NJHPKMHFJAD != 0 {
-            os.write_uint32(13, self.NJHPKMHFJAD)?;
+        if self.FAFGOIMCDPF != 0 {
+            os.write_uint32(11, self.FAFGOIMCDPF)?;
         }
-        if self.EDIMCJAEKJD != 0 {
-            os.write_uint32(8, self.EDIMCJAEKJD)?;
+        if self.JPFMOBHIECA != 0 {
+            os.write_uint32(12, self.JPFMOBHIECA)?;
         }
-        if let Some(v) = self.LPDNAMLHGNJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for MissionRewardScNotify {
     }
 
     fn clear(&mut self) {
-        self.NJHPKMHFJAD = 0;
-        self.EDIMCJAEKJD = 0;
-        self.LPDNAMLHGNJ.clear();
+        self.FAFGOIMCDPF = 0;
+        self.JPFMOBHIECA = 0;
+        self.ELPMNKHEPKJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MissionRewardScNotify {
         static instance: MissionRewardScNotify = MissionRewardScNotify {
-            NJHPKMHFJAD: 0,
-            EDIMCJAEKJD: 0,
-            LPDNAMLHGNJ: ::protobuf::MessageField::none(),
+            FAFGOIMCDPF: 0,
+            JPFMOBHIECA: 0,
+            ELPMNKHEPKJ: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for MissionRewardScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bMissionRewardScNotify.proto\x1a\x0eItemList.proto\"\x88\x01\n\x15M\
-    issionRewardScNotify\x12\x20\n\x0bNJHPKMHFJAD\x18\r\x20\x01(\rR\x0bNJHPK\
-    MHFJAD\x12\x20\n\x0bEDIMCJAEKJD\x18\x08\x20\x01(\rR\x0bEDIMCJAEKJD\x12+\
-    \n\x0bLPDNAMLHGNJ\x18\x03\x20\x01(\x0b2\t.ItemListR\x0bLPDNAMLHGNJb\x06p\
-    roto3\
+    issionRewardScNotify\x12\x20\n\x0bFAFGOIMCDPF\x18\x0b\x20\x01(\rR\x0bFAF\
+    GOIMCDPF\x12\x20\n\x0bJPFMOBHIECA\x18\x0c\x20\x01(\rR\x0bJPFMOBHIECA\x12\
+    +\n\x0bELPMNKHEPKJ\x18\x05\x20\x01(\x0b2\t.ItemListR\x0bELPMNKHEPKJb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

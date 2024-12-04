@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeTrialActivityRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeTrialActivityRewardScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:TakeTrialActivityRewardScRsp.IDIEPEFFGIC)
-    pub IDIEPEFFGIC: u32,
-    // @@protoc_insertion_point(field:TakeTrialActivityRewardScRsp.LPDNAMLHGNJ)
-    pub LPDNAMLHGNJ: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:TakeTrialActivityRewardScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:TakeTrialActivityRewardScRsp.ELPMNKHEPKJ)
+    pub ELPMNKHEPKJ: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:TakeTrialActivityRewardScRsp.KAGEGBLHJDJ)
+    pub KAGEGBLHJDJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeTrialActivityRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl TakeTrialActivityRewardScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &TakeTrialActivityRewardScRsp| { &m.retcode },
-            |m: &mut TakeTrialActivityRewardScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IDIEPEFFGIC",
-            |m: &TakeTrialActivityRewardScRsp| { &m.IDIEPEFFGIC },
-            |m: &mut TakeTrialActivityRewardScRsp| { &mut m.IDIEPEFFGIC },
+            "ADADHIHDHJC",
+            |m: &TakeTrialActivityRewardScRsp| { &m.ADADHIHDHJC },
+            |m: &mut TakeTrialActivityRewardScRsp| { &mut m.ADADHIHDHJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "LPDNAMLHGNJ",
-            |m: &TakeTrialActivityRewardScRsp| { &m.LPDNAMLHGNJ },
-            |m: &mut TakeTrialActivityRewardScRsp| { &mut m.LPDNAMLHGNJ },
+            "ELPMNKHEPKJ",
+            |m: &TakeTrialActivityRewardScRsp| { &m.ELPMNKHEPKJ },
+            |m: &mut TakeTrialActivityRewardScRsp| { &mut m.ELPMNKHEPKJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KAGEGBLHJDJ",
+            |m: &TakeTrialActivityRewardScRsp| { &m.KAGEGBLHJDJ },
+            |m: &mut TakeTrialActivityRewardScRsp| { &mut m.KAGEGBLHJDJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeTrialActivityRewardScRsp>(
             "TakeTrialActivityRewardScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for TakeTrialActivityRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.retcode = is.read_uint32()?;
+                24 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                72 => {
-                    self.IDIEPEFFGIC = is.read_uint32()?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ELPMNKHEPKJ)?;
                 },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LPDNAMLHGNJ)?;
+                112 => {
+                    self.KAGEGBLHJDJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +108,15 @@ impl ::protobuf::Message for TakeTrialActivityRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.ADADHIHDHJC);
         }
-        if self.IDIEPEFFGIC != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.IDIEPEFFGIC);
-        }
-        if let Some(v) = self.LPDNAMLHGNJ.as_ref() {
+        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.KAGEGBLHJDJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.KAGEGBLHJDJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for TakeTrialActivityRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(3, self.ADADHIHDHJC)?;
         }
-        if self.IDIEPEFFGIC != 0 {
-            os.write_uint32(9, self.IDIEPEFFGIC)?;
+        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
-        if let Some(v) = self.LPDNAMLHGNJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if self.KAGEGBLHJDJ != 0 {
+            os.write_uint32(14, self.KAGEGBLHJDJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for TakeTrialActivityRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.IDIEPEFFGIC = 0;
-        self.LPDNAMLHGNJ.clear();
+        self.ADADHIHDHJC = 0;
+        self.ELPMNKHEPKJ.clear();
+        self.KAGEGBLHJDJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeTrialActivityRewardScRsp {
         static instance: TakeTrialActivityRewardScRsp = TakeTrialActivityRewardScRsp {
-            retcode: 0,
-            IDIEPEFFGIC: 0,
-            LPDNAMLHGNJ: ::protobuf::MessageField::none(),
+            ADADHIHDHJC: 0,
+            ELPMNKHEPKJ: ::protobuf::MessageField::none(),
+            KAGEGBLHJDJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for TakeTrialActivityRewardScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"TakeTrialActivityRewardScRsp.proto\x1a\x0eItemList.proto\"\x87\x01\n\
-    \x1cTakeTrialActivityRewardScRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\r\
-    R\x07retcode\x12\x20\n\x0bIDIEPEFFGIC\x18\t\x20\x01(\rR\x0bIDIEPEFFGIC\
-    \x12+\n\x0bLPDNAMLHGNJ\x18\x02\x20\x01(\x0b2\t.ItemListR\x0bLPDNAMLHGNJb\
-    \x06proto3\
+    \n\"TakeTrialActivityRewardScRsp.proto\x1a\x0eItemList.proto\"\x8f\x01\n\
+    \x1cTakeTrialActivityRewardScRsp\x12\x20\n\x0bADADHIHDHJC\x18\x03\x20\
+    \x01(\rR\x0bADADHIHDHJC\x12+\n\x0bELPMNKHEPKJ\x18\x01\x20\x01(\x0b2\t.It\
+    emListR\x0bELPMNKHEPKJ\x12\x20\n\x0bKAGEGBLHJDJ\x18\x0e\x20\x01(\rR\x0bK\
+    AGEGBLHJDJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

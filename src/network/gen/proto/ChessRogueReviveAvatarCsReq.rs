@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueReviveAvatarCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueReviveAvatarCsReq.FIOAACNKLPC)
-    pub FIOAACNKLPC: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ChessRogueReviveAvatarCsReq.OIAECIELHAF)
-    pub OIAECIELHAF: u32,
+    // @@protoc_insertion_point(field:ChessRogueReviveAvatarCsReq.FOPPGNKJGLP)
+    pub FOPPGNKJGLP: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ChessRogueReviveAvatarCsReq.LMFFBHEOONE)
+    pub LMFFBHEOONE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueReviveAvatarCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl ChessRogueReviveAvatarCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FIOAACNKLPC",
-            |m: &ChessRogueReviveAvatarCsReq| { &m.FIOAACNKLPC },
-            |m: &mut ChessRogueReviveAvatarCsReq| { &mut m.FIOAACNKLPC },
+            "FOPPGNKJGLP",
+            |m: &ChessRogueReviveAvatarCsReq| { &m.FOPPGNKJGLP },
+            |m: &mut ChessRogueReviveAvatarCsReq| { &mut m.FOPPGNKJGLP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OIAECIELHAF",
-            |m: &ChessRogueReviveAvatarCsReq| { &m.OIAECIELHAF },
-            |m: &mut ChessRogueReviveAvatarCsReq| { &mut m.OIAECIELHAF },
+            "LMFFBHEOONE",
+            |m: &ChessRogueReviveAvatarCsReq| { &m.LMFFBHEOONE },
+            |m: &mut ChessRogueReviveAvatarCsReq| { &mut m.LMFFBHEOONE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueReviveAvatarCsReq>(
             "ChessRogueReviveAvatarCsReq",
@@ -80,14 +80,14 @@ impl ::protobuf::Message for ChessRogueReviveAvatarCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FIOAACNKLPC)?;
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.FOPPGNKJGLP)?;
                 },
-                104 => {
-                    self.FIOAACNKLPC.push(is.read_uint32()?);
+                88 => {
+                    self.FOPPGNKJGLP.push(is.read_uint32()?);
                 },
-                64 => {
-                    self.OIAECIELHAF = is.read_uint32()?;
+                32 => {
+                    self.LMFFBHEOONE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,11 +101,11 @@ impl ::protobuf::Message for ChessRogueReviveAvatarCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.FIOAACNKLPC {
-            my_size += ::protobuf::rt::uint32_size(13, *value);
+        for value in &self.FOPPGNKJGLP {
+            my_size += ::protobuf::rt::uint32_size(11, *value);
         };
-        if self.OIAECIELHAF != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.OIAECIELHAF);
+        if self.LMFFBHEOONE != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.LMFFBHEOONE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,11 +113,11 @@ impl ::protobuf::Message for ChessRogueReviveAvatarCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.FIOAACNKLPC {
-            os.write_uint32(13, *v)?;
+        for v in &self.FOPPGNKJGLP {
+            os.write_uint32(11, *v)?;
         };
-        if self.OIAECIELHAF != 0 {
-            os.write_uint32(8, self.OIAECIELHAF)?;
+        if self.LMFFBHEOONE != 0 {
+            os.write_uint32(4, self.LMFFBHEOONE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -136,15 +136,15 @@ impl ::protobuf::Message for ChessRogueReviveAvatarCsReq {
     }
 
     fn clear(&mut self) {
-        self.FIOAACNKLPC.clear();
-        self.OIAECIELHAF = 0;
+        self.FOPPGNKJGLP.clear();
+        self.LMFFBHEOONE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueReviveAvatarCsReq {
         static instance: ChessRogueReviveAvatarCsReq = ChessRogueReviveAvatarCsReq {
-            FIOAACNKLPC: ::std::vec::Vec::new(),
-            OIAECIELHAF: 0,
+            FOPPGNKJGLP: ::std::vec::Vec::new(),
+            LMFFBHEOONE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -170,8 +170,8 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueReviveAvatarCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!ChessRogueReviveAvatarCsReq.proto\"a\n\x1bChessRogueReviveAvatarCsReq\
-    \x12\x20\n\x0bFIOAACNKLPC\x18\r\x20\x03(\rR\x0bFIOAACNKLPC\x12\x20\n\x0b\
-    OIAECIELHAF\x18\x08\x20\x01(\rR\x0bOIAECIELHAFb\x06proto3\
+    \x12\x20\n\x0bFOPPGNKJGLP\x18\x0b\x20\x03(\rR\x0bFOPPGNKJGLP\x12\x20\n\
+    \x0bLMFFBHEOONE\x18\x04\x20\x01(\rR\x0bLMFFBHEOONEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

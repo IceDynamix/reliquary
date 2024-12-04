@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UnlockAvatarPathCsReq {
     // message fields
-    // @@protoc_insertion_point(field:UnlockAvatarPathCsReq.avatar_id)
-    pub avatar_id: ::protobuf::EnumOrUnknown<super::MultiPathAvatarType::MultiPathAvatarType>,
+    // @@protoc_insertion_point(field:UnlockAvatarPathCsReq.DHPDHGHAEOP)
+    pub DHPDHGHAEOP: ::protobuf::EnumOrUnknown<super::MultiPathAvatarType::MultiPathAvatarType>,
     // special fields
     // @@protoc_insertion_point(special_field:UnlockAvatarPathCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl UnlockAvatarPathCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "avatar_id",
-            |m: &UnlockAvatarPathCsReq| { &m.avatar_id },
-            |m: &mut UnlockAvatarPathCsReq| { &mut m.avatar_id },
+            "DHPDHGHAEOP",
+            |m: &UnlockAvatarPathCsReq| { &m.DHPDHGHAEOP },
+            |m: &mut UnlockAvatarPathCsReq| { &mut m.DHPDHGHAEOP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UnlockAvatarPathCsReq>(
             "UnlockAvatarPathCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for UnlockAvatarPathCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.avatar_id = is.read_enum_or_unknown()?;
+                80 => {
+                    self.DHPDHGHAEOP = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for UnlockAvatarPathCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.avatar_id != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
-            my_size += ::protobuf::rt::int32_size(14, self.avatar_id.value());
+        if self.DHPDHGHAEOP != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
+            my_size += ::protobuf::rt::int32_size(10, self.DHPDHGHAEOP.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for UnlockAvatarPathCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.avatar_id != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.avatar_id))?;
+        if self.DHPDHGHAEOP != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.DHPDHGHAEOP))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for UnlockAvatarPathCsReq {
     }
 
     fn clear(&mut self) {
-        self.avatar_id = ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone);
+        self.DHPDHGHAEOP = ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UnlockAvatarPathCsReq {
         static instance: UnlockAvatarPathCsReq = UnlockAvatarPathCsReq {
-            avatar_id: ::protobuf::EnumOrUnknown::from_i32(0),
+            DHPDHGHAEOP: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for UnlockAvatarPathCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bUnlockAvatarPathCsReq.proto\x1a\x19MultiPathAvatarType.proto\"J\n\
-    \x15UnlockAvatarPathCsReq\x121\n\tavatar_id\x18\x0e\x20\x01(\x0e2\x14.Mu\
-    ltiPathAvatarTypeR\x08avatarIdb\x06proto3\
+    \n\x1bUnlockAvatarPathCsReq.proto\x1a\x19MultiPathAvatarType.proto\"O\n\
+    \x15UnlockAvatarPathCsReq\x126\n\x0bDHPDHGHAEOP\x18\n\x20\x01(\x0e2\x14.\
+    MultiPathAvatarTypeR\x0bDHPDHGHAEOPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

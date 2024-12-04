@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SecurityReportCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SecurityReportCsReq.CGOCHPPAAKM)
-    pub CGOCHPPAAKM: ::std::string::String,
+    // @@protoc_insertion_point(field:SecurityReportCsReq.IANCKKGKNCO)
+    pub IANCKKGKNCO: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:SecurityReportCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl SecurityReportCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CGOCHPPAAKM",
-            |m: &SecurityReportCsReq| { &m.CGOCHPPAAKM },
-            |m: &mut SecurityReportCsReq| { &mut m.CGOCHPPAAKM },
+            "IANCKKGKNCO",
+            |m: &SecurityReportCsReq| { &m.IANCKKGKNCO },
+            |m: &mut SecurityReportCsReq| { &mut m.IANCKKGKNCO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SecurityReportCsReq>(
             "SecurityReportCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for SecurityReportCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    self.CGOCHPPAAKM = is.read_string()?;
+                114 => {
+                    self.IANCKKGKNCO = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for SecurityReportCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.CGOCHPPAAKM.is_empty() {
-            my_size += ::protobuf::rt::string_size(4, &self.CGOCHPPAAKM);
+        if !self.IANCKKGKNCO.is_empty() {
+            my_size += ::protobuf::rt::string_size(14, &self.IANCKKGKNCO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for SecurityReportCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.CGOCHPPAAKM.is_empty() {
-            os.write_string(4, &self.CGOCHPPAAKM)?;
+        if !self.IANCKKGKNCO.is_empty() {
+            os.write_string(14, &self.IANCKKGKNCO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for SecurityReportCsReq {
     }
 
     fn clear(&mut self) {
-        self.CGOCHPPAAKM.clear();
+        self.IANCKKGKNCO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SecurityReportCsReq {
         static instance: SecurityReportCsReq = SecurityReportCsReq {
-            CGOCHPPAAKM: ::std::string::String::new(),
+            IANCKKGKNCO: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for SecurityReportCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19SecurityReportCsReq.proto\"7\n\x13SecurityReportCsReq\x12\x20\n\
-    \x0bCGOCHPPAAKM\x18\x04\x20\x01(\tR\x0bCGOCHPPAAKMb\x06proto3\
+    \x0bIANCKKGKNCO\x18\x0e\x20\x01(\tR\x0bIANCKKGKNCOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

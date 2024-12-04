@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetNpcTakenRewardScRsp {
     // message fields
+    // @@protoc_insertion_point(field:GetNpcTakenRewardScRsp.DOFNAIEJBMK)
+    pub DOFNAIEJBMK: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetNpcTakenRewardScRsp.npc_id)
+    pub npc_id: u32,
     // @@protoc_insertion_point(field:GetNpcTakenRewardScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetNpcTakenRewardScRsp.LACAEGMIBCM)
-    pub LACAEGMIBCM: u32,
-    // @@protoc_insertion_point(field:GetNpcTakenRewardScRsp.LBMFEPCGHCN)
-    pub LBMFEPCGHCN: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GetNpcTakenRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl GetNpcTakenRewardScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DOFNAIEJBMK",
+            |m: &GetNpcTakenRewardScRsp| { &m.DOFNAIEJBMK },
+            |m: &mut GetNpcTakenRewardScRsp| { &mut m.DOFNAIEJBMK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "npc_id",
+            |m: &GetNpcTakenRewardScRsp| { &m.npc_id },
+            |m: &mut GetNpcTakenRewardScRsp| { &mut m.npc_id },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetNpcTakenRewardScRsp| { &m.retcode },
             |m: &mut GetNpcTakenRewardScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LACAEGMIBCM",
-            |m: &GetNpcTakenRewardScRsp| { &m.LACAEGMIBCM },
-            |m: &mut GetNpcTakenRewardScRsp| { &mut m.LACAEGMIBCM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LBMFEPCGHCN",
-            |m: &GetNpcTakenRewardScRsp| { &m.LBMFEPCGHCN },
-            |m: &mut GetNpcTakenRewardScRsp| { &mut m.LBMFEPCGHCN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetNpcTakenRewardScRsp>(
             "GetNpcTakenRewardScRsp",
@@ -87,17 +87,17 @@ impl ::protobuf::Message for GetNpcTakenRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.DOFNAIEJBMK)?;
+                },
+                40 => {
+                    self.DOFNAIEJBMK.push(is.read_uint32()?);
+                },
+                104 => {
+                    self.npc_id = is.read_uint32()?;
+                },
+                80 => {
                     self.retcode = is.read_uint32()?;
-                },
-                24 => {
-                    self.LACAEGMIBCM = is.read_uint32()?;
-                },
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.LBMFEPCGHCN)?;
-                },
-                88 => {
-                    self.LBMFEPCGHCN.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,30 +111,30 @@ impl ::protobuf::Message for GetNpcTakenRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
-        }
-        if self.LACAEGMIBCM != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.LACAEGMIBCM);
-        }
-        for value in &self.LBMFEPCGHCN {
-            my_size += ::protobuf::rt::uint32_size(11, *value);
+        for value in &self.DOFNAIEJBMK {
+            my_size += ::protobuf::rt::uint32_size(5, *value);
         };
+        if self.npc_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.npc_id);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
-        }
-        if self.LACAEGMIBCM != 0 {
-            os.write_uint32(3, self.LACAEGMIBCM)?;
-        }
-        for v in &self.LBMFEPCGHCN {
-            os.write_uint32(11, *v)?;
+        for v in &self.DOFNAIEJBMK {
+            os.write_uint32(5, *v)?;
         };
+        if self.npc_id != 0 {
+            os.write_uint32(13, self.npc_id)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(10, self.retcode)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -152,17 +152,17 @@ impl ::protobuf::Message for GetNpcTakenRewardScRsp {
     }
 
     fn clear(&mut self) {
+        self.DOFNAIEJBMK.clear();
+        self.npc_id = 0;
         self.retcode = 0;
-        self.LACAEGMIBCM = 0;
-        self.LBMFEPCGHCN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetNpcTakenRewardScRsp {
         static instance: GetNpcTakenRewardScRsp = GetNpcTakenRewardScRsp {
+            DOFNAIEJBMK: ::std::vec::Vec::new(),
+            npc_id: 0,
             retcode: 0,
-            LACAEGMIBCM: 0,
-            LBMFEPCGHCN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -187,10 +187,10 @@ impl ::protobuf::reflect::ProtobufValue for GetNpcTakenRewardScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cGetNpcTakenRewardScRsp.proto\"v\n\x16GetNpcTakenRewardScRsp\x12\
-    \x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\x12\x20\n\x0bLACAEGMIBC\
-    M\x18\x03\x20\x01(\rR\x0bLACAEGMIBCM\x12\x20\n\x0bLBMFEPCGHCN\x18\x0b\
-    \x20\x03(\rR\x0bLBMFEPCGHCNb\x06proto3\
+    \n\x1cGetNpcTakenRewardScRsp.proto\"k\n\x16GetNpcTakenRewardScRsp\x12\
+    \x20\n\x0bDOFNAIEJBMK\x18\x05\x20\x03(\rR\x0bDOFNAIEJBMK\x12\x15\n\x06np\
+    c_id\x18\r\x20\x01(\rR\x05npcId\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\
+    \x07retcodeB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

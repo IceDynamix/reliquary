@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetRogueShopBuffInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetRogueShopBuffInfoScRsp.NGOGFEDLLOO)
-    pub NGOGFEDLLOO: bool,
-    // @@protoc_insertion_point(field:GetRogueShopBuffInfoScRsp.BDNLGEANGAO)
-    pub BDNLGEANGAO: ::protobuf::MessageField<super::CGMLGCGMBDH::CGMLGCGMBDH>,
-    // @@protoc_insertion_point(field:GetRogueShopBuffInfoScRsp.ABKOHABEMMF)
-    pub ABKOHABEMMF: ::protobuf::MessageField<super::JFKLIEHKDDE::JFKLIEHKDDE>,
-    // @@protoc_insertion_point(field:GetRogueShopBuffInfoScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetRogueShopBuffInfoScRsp.EEEDIPMFAFL)
+    pub EEEDIPMFAFL: bool,
+    // @@protoc_insertion_point(field:GetRogueShopBuffInfoScRsp.FHEODGILEEP)
+    pub FHEODGILEEP: ::protobuf::MessageField<super::GLCCJMLODBH::GLCCJMLODBH>,
+    // @@protoc_insertion_point(field:GetRogueShopBuffInfoScRsp.NNIFKHLBMFG)
+    pub NNIFKHLBMFG: ::protobuf::MessageField<super::GCPAMIEDFIP::GCPAMIEDFIP>,
+    // @@protoc_insertion_point(field:GetRogueShopBuffInfoScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetRogueShopBuffInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl GetRogueShopBuffInfoScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NGOGFEDLLOO",
-            |m: &GetRogueShopBuffInfoScRsp| { &m.NGOGFEDLLOO },
-            |m: &mut GetRogueShopBuffInfoScRsp| { &mut m.NGOGFEDLLOO },
+            "EEEDIPMFAFL",
+            |m: &GetRogueShopBuffInfoScRsp| { &m.EEEDIPMFAFL },
+            |m: &mut GetRogueShopBuffInfoScRsp| { &mut m.EEEDIPMFAFL },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CGMLGCGMBDH::CGMLGCGMBDH>(
-            "BDNLGEANGAO",
-            |m: &GetRogueShopBuffInfoScRsp| { &m.BDNLGEANGAO },
-            |m: &mut GetRogueShopBuffInfoScRsp| { &mut m.BDNLGEANGAO },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GLCCJMLODBH::GLCCJMLODBH>(
+            "FHEODGILEEP",
+            |m: &GetRogueShopBuffInfoScRsp| { &m.FHEODGILEEP },
+            |m: &mut GetRogueShopBuffInfoScRsp| { &mut m.FHEODGILEEP },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JFKLIEHKDDE::JFKLIEHKDDE>(
-            "ABKOHABEMMF",
-            |m: &GetRogueShopBuffInfoScRsp| { &m.ABKOHABEMMF },
-            |m: &mut GetRogueShopBuffInfoScRsp| { &mut m.ABKOHABEMMF },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GCPAMIEDFIP::GCPAMIEDFIP>(
+            "NNIFKHLBMFG",
+            |m: &GetRogueShopBuffInfoScRsp| { &m.NNIFKHLBMFG },
+            |m: &mut GetRogueShopBuffInfoScRsp| { &mut m.NNIFKHLBMFG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetRogueShopBuffInfoScRsp| { &m.retcode },
-            |m: &mut GetRogueShopBuffInfoScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &GetRogueShopBuffInfoScRsp| { &m.ADADHIHDHJC },
+            |m: &mut GetRogueShopBuffInfoScRsp| { &mut m.ADADHIHDHJC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetRogueShopBuffInfoScRsp>(
             "GetRogueShopBuffInfoScRsp",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for GetRogueShopBuffInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.NGOGFEDLLOO = is.read_bool()?;
+                96 => {
+                    self.EEEDIPMFAFL = is.read_bool()?;
                 },
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BDNLGEANGAO)?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FHEODGILEEP)?;
                 },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ABKOHABEMMF)?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NNIFKHLBMFG)?;
                 },
-                112 => {
-                    self.retcode = is.read_uint32()?;
+                104 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,19 +118,19 @@ impl ::protobuf::Message for GetRogueShopBuffInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NGOGFEDLLOO != false {
+        if self.EEEDIPMFAFL != false {
             my_size += 1 + 1;
         }
-        if let Some(v) = self.BDNLGEANGAO.as_ref() {
+        if let Some(v) = self.FHEODGILEEP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.ABKOHABEMMF.as_ref() {
+        if let Some(v) = self.NNIFKHLBMFG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.ADADHIHDHJC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,17 +138,17 @@ impl ::protobuf::Message for GetRogueShopBuffInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NGOGFEDLLOO != false {
-            os.write_bool(8, self.NGOGFEDLLOO)?;
+        if self.EEEDIPMFAFL != false {
+            os.write_bool(12, self.EEEDIPMFAFL)?;
         }
-        if let Some(v) = self.BDNLGEANGAO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if let Some(v) = self.FHEODGILEEP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
-        if let Some(v) = self.ABKOHABEMMF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if let Some(v) = self.NNIFKHLBMFG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(13, self.ADADHIHDHJC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,19 +167,19 @@ impl ::protobuf::Message for GetRogueShopBuffInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.NGOGFEDLLOO = false;
-        self.BDNLGEANGAO.clear();
-        self.ABKOHABEMMF.clear();
-        self.retcode = 0;
+        self.EEEDIPMFAFL = false;
+        self.FHEODGILEEP.clear();
+        self.NNIFKHLBMFG.clear();
+        self.ADADHIHDHJC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetRogueShopBuffInfoScRsp {
         static instance: GetRogueShopBuffInfoScRsp = GetRogueShopBuffInfoScRsp {
-            NGOGFEDLLOO: false,
-            BDNLGEANGAO: ::protobuf::MessageField::none(),
-            ABKOHABEMMF: ::protobuf::MessageField::none(),
-            retcode: 0,
+            EEEDIPMFAFL: false,
+            FHEODGILEEP: ::protobuf::MessageField::none(),
+            NNIFKHLBMFG: ::protobuf::MessageField::none(),
+            ADADHIHDHJC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,12 +204,12 @@ impl ::protobuf::reflect::ProtobufValue for GetRogueShopBuffInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fGetRogueShopBuffInfoScRsp.proto\x1a\x11CGMLGCGMBDH.proto\x1a\x11JF\
-    KLIEHKDDE.proto\"\xb7\x01\n\x19GetRogueShopBuffInfoScRsp\x12\x20\n\x0bNG\
-    OGFEDLLOO\x18\x08\x20\x01(\x08R\x0bNGOGFEDLLOO\x12.\n\x0bBDNLGEANGAO\x18\
-    \x03\x20\x01(\x0b2\x0c.CGMLGCGMBDHR\x0bBDNLGEANGAO\x12.\n\x0bABKOHABEMMF\
-    \x18\x02\x20\x01(\x0b2\x0c.JFKLIEHKDDER\x0bABKOHABEMMF\x12\x18\n\x07retc\
-    ode\x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x1fGetRogueShopBuffInfoScRsp.proto\x1a\x11GCPAMIEDFIP.proto\x1a\x11GL\
+    CCJMLODBH.proto\"\xbf\x01\n\x19GetRogueShopBuffInfoScRsp\x12\x20\n\x0bEE\
+    EDIPMFAFL\x18\x0c\x20\x01(\x08R\x0bEEEDIPMFAFL\x12.\n\x0bFHEODGILEEP\x18\
+    \x0f\x20\x01(\x0b2\x0c.GLCCJMLODBHR\x0bFHEODGILEEP\x12.\n\x0bNNIFKHLBMFG\
+    \x18\x04\x20\x01(\x0b2\x0c.GCPAMIEDFIPR\x0bNNIFKHLBMFG\x12\x20\n\x0bADAD\
+    HIHDHJC\x18\r\x20\x01(\rR\x0bADADHIHDHJCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -227,8 +227,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::CGMLGCGMBDH::file_descriptor().clone());
-            deps.push(super::JFKLIEHKDDE::file_descriptor().clone());
+            deps.push(super::GCPAMIEDFIP::file_descriptor().clone());
+            deps.push(super::GLCCJMLODBH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetRogueShopBuffInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

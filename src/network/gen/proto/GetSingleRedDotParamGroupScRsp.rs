@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetSingleRedDotParamGroupScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetSingleRedDotParamGroupScRsp.GCFIIGOLPMF)
-    pub GCFIIGOLPMF: u32,
-    // @@protoc_insertion_point(field:GetSingleRedDotParamGroupScRsp.MDIABNLNKJJ)
-    pub MDIABNLNKJJ: u32,
-    // @@protoc_insertion_point(field:GetSingleRedDotParamGroupScRsp.EMOCKDJPBCB)
-    pub EMOCKDJPBCB: ::protobuf::MessageField<super::KKCABEAAPJC::KKCABEAAPJC>,
-    // @@protoc_insertion_point(field:GetSingleRedDotParamGroupScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:GetSingleRedDotParamGroupScRsp.ACPLFDCNGKO)
-    pub ACPLFDCNGKO: u32,
+    // @@protoc_insertion_point(field:GetSingleRedDotParamGroupScRsp.DDMDPBEGKHC)
+    pub DDMDPBEGKHC: u32,
+    // @@protoc_insertion_point(field:GetSingleRedDotParamGroupScRsp.ILIFHHJFMIH)
+    pub ILIFHHJFMIH: u32,
+    // @@protoc_insertion_point(field:GetSingleRedDotParamGroupScRsp.CKJGINJPCHI)
+    pub CKJGINJPCHI: ::protobuf::MessageField<super::CBBEICDGLMF::CBBEICDGLMF>,
+    // @@protoc_insertion_point(field:GetSingleRedDotParamGroupScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:GetSingleRedDotParamGroupScRsp.LFNNHDHFHHF)
+    pub LFNNHDHFHHF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetSingleRedDotParamGroupScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,29 +59,29 @@ impl GetSingleRedDotParamGroupScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GCFIIGOLPMF",
-            |m: &GetSingleRedDotParamGroupScRsp| { &m.GCFIIGOLPMF },
-            |m: &mut GetSingleRedDotParamGroupScRsp| { &mut m.GCFIIGOLPMF },
+            "DDMDPBEGKHC",
+            |m: &GetSingleRedDotParamGroupScRsp| { &m.DDMDPBEGKHC },
+            |m: &mut GetSingleRedDotParamGroupScRsp| { &mut m.DDMDPBEGKHC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MDIABNLNKJJ",
-            |m: &GetSingleRedDotParamGroupScRsp| { &m.MDIABNLNKJJ },
-            |m: &mut GetSingleRedDotParamGroupScRsp| { &mut m.MDIABNLNKJJ },
+            "ILIFHHJFMIH",
+            |m: &GetSingleRedDotParamGroupScRsp| { &m.ILIFHHJFMIH },
+            |m: &mut GetSingleRedDotParamGroupScRsp| { &mut m.ILIFHHJFMIH },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KKCABEAAPJC::KKCABEAAPJC>(
-            "EMOCKDJPBCB",
-            |m: &GetSingleRedDotParamGroupScRsp| { &m.EMOCKDJPBCB },
-            |m: &mut GetSingleRedDotParamGroupScRsp| { &mut m.EMOCKDJPBCB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetSingleRedDotParamGroupScRsp| { &m.retcode },
-            |m: &mut GetSingleRedDotParamGroupScRsp| { &mut m.retcode },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CBBEICDGLMF::CBBEICDGLMF>(
+            "CKJGINJPCHI",
+            |m: &GetSingleRedDotParamGroupScRsp| { &m.CKJGINJPCHI },
+            |m: &mut GetSingleRedDotParamGroupScRsp| { &mut m.CKJGINJPCHI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ACPLFDCNGKO",
-            |m: &GetSingleRedDotParamGroupScRsp| { &m.ACPLFDCNGKO },
-            |m: &mut GetSingleRedDotParamGroupScRsp| { &mut m.ACPLFDCNGKO },
+            "ADADHIHDHJC",
+            |m: &GetSingleRedDotParamGroupScRsp| { &m.ADADHIHDHJC },
+            |m: &mut GetSingleRedDotParamGroupScRsp| { &mut m.ADADHIHDHJC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LFNNHDHFHHF",
+            |m: &GetSingleRedDotParamGroupScRsp| { &m.LFNNHDHFHHF },
+            |m: &mut GetSingleRedDotParamGroupScRsp| { &mut m.LFNNHDHFHHF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetSingleRedDotParamGroupScRsp>(
             "GetSingleRedDotParamGroupScRsp",
@@ -101,20 +101,20 @@ impl ::protobuf::Message for GetSingleRedDotParamGroupScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                48 => {
+                    self.DDMDPBEGKHC = is.read_uint32()?;
+                },
+                24 => {
+                    self.ILIFHHJFMIH = is.read_uint32()?;
+                },
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CKJGINJPCHI)?;
+                },
+                32 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
+                },
                 112 => {
-                    self.GCFIIGOLPMF = is.read_uint32()?;
-                },
-                64 => {
-                    self.MDIABNLNKJJ = is.read_uint32()?;
-                },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EMOCKDJPBCB)?;
-                },
-                40 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                72 => {
-                    self.ACPLFDCNGKO = is.read_uint32()?;
+                    self.LFNNHDHFHHF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,21 +128,21 @@ impl ::protobuf::Message for GetSingleRedDotParamGroupScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GCFIIGOLPMF != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.GCFIIGOLPMF);
+        if self.DDMDPBEGKHC != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.DDMDPBEGKHC);
         }
-        if self.MDIABNLNKJJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.MDIABNLNKJJ);
+        if self.ILIFHHJFMIH != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.ILIFHHJFMIH);
         }
-        if let Some(v) = self.EMOCKDJPBCB.as_ref() {
+        if let Some(v) = self.CKJGINJPCHI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.ADADHIHDHJC);
         }
-        if self.ACPLFDCNGKO != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.ACPLFDCNGKO);
+        if self.LFNNHDHFHHF != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.LFNNHDHFHHF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,20 +150,20 @@ impl ::protobuf::Message for GetSingleRedDotParamGroupScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GCFIIGOLPMF != 0 {
-            os.write_uint32(14, self.GCFIIGOLPMF)?;
+        if self.DDMDPBEGKHC != 0 {
+            os.write_uint32(6, self.DDMDPBEGKHC)?;
         }
-        if self.MDIABNLNKJJ != 0 {
-            os.write_uint32(8, self.MDIABNLNKJJ)?;
+        if self.ILIFHHJFMIH != 0 {
+            os.write_uint32(3, self.ILIFHHJFMIH)?;
         }
-        if let Some(v) = self.EMOCKDJPBCB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        if let Some(v) = self.CKJGINJPCHI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(4, self.ADADHIHDHJC)?;
         }
-        if self.ACPLFDCNGKO != 0 {
-            os.write_uint32(9, self.ACPLFDCNGKO)?;
+        if self.LFNNHDHFHHF != 0 {
+            os.write_uint32(14, self.LFNNHDHFHHF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,21 +182,21 @@ impl ::protobuf::Message for GetSingleRedDotParamGroupScRsp {
     }
 
     fn clear(&mut self) {
-        self.GCFIIGOLPMF = 0;
-        self.MDIABNLNKJJ = 0;
-        self.EMOCKDJPBCB.clear();
-        self.retcode = 0;
-        self.ACPLFDCNGKO = 0;
+        self.DDMDPBEGKHC = 0;
+        self.ILIFHHJFMIH = 0;
+        self.CKJGINJPCHI.clear();
+        self.ADADHIHDHJC = 0;
+        self.LFNNHDHFHHF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetSingleRedDotParamGroupScRsp {
         static instance: GetSingleRedDotParamGroupScRsp = GetSingleRedDotParamGroupScRsp {
-            GCFIIGOLPMF: 0,
-            MDIABNLNKJJ: 0,
-            EMOCKDJPBCB: ::protobuf::MessageField::none(),
-            retcode: 0,
-            ACPLFDCNGKO: 0,
+            DDMDPBEGKHC: 0,
+            ILIFHHJFMIH: 0,
+            CKJGINJPCHI: ::protobuf::MessageField::none(),
+            ADADHIHDHJC: 0,
+            LFNNHDHFHHF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,12 +221,13 @@ impl ::protobuf::reflect::ProtobufValue for GetSingleRedDotParamGroupScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$GetSingleRedDotParamGroupScRsp.proto\x1a\x11KKCABEAAPJC.proto\"\xd0\
-    \x01\n\x1eGetSingleRedDotParamGroupScRsp\x12\x20\n\x0bGCFIIGOLPMF\x18\
-    \x0e\x20\x01(\rR\x0bGCFIIGOLPMF\x12\x20\n\x0bMDIABNLNKJJ\x18\x08\x20\x01\
-    (\rR\x0bMDIABNLNKJJ\x12.\n\x0bEMOCKDJPBCB\x18\x0f\x20\x01(\x0b2\x0c.KKCA\
-    BEAAPJCR\x0bEMOCKDJPBCB\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retc\
-    ode\x12\x20\n\x0bACPLFDCNGKO\x18\t\x20\x01(\rR\x0bACPLFDCNGKOb\x06proto3\
+    \n$GetSingleRedDotParamGroupScRsp.proto\x1a\x11CBBEICDGLMF.proto\"\xd8\
+    \x01\n\x1eGetSingleRedDotParamGroupScRsp\x12\x20\n\x0bDDMDPBEGKHC\x18\
+    \x06\x20\x01(\rR\x0bDDMDPBEGKHC\x12\x20\n\x0bILIFHHJFMIH\x18\x03\x20\x01\
+    (\rR\x0bILIFHHJFMIH\x12.\n\x0bCKJGINJPCHI\x18\x05\x20\x01(\x0b2\x0c.CBBE\
+    ICDGLMFR\x0bCKJGINJPCHI\x12\x20\n\x0bADADHIHDHJC\x18\x04\x20\x01(\rR\x0b\
+    ADADHIHDHJC\x12\x20\n\x0bLFNNHDHFHHF\x18\x0e\x20\x01(\rR\x0bLFNNHDHFHHFb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -244,7 +245,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::KKCABEAAPJC::file_descriptor().clone());
+            deps.push(super::CBBEICDGLMF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetSingleRedDotParamGroupScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

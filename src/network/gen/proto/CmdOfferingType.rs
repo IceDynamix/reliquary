@@ -30,20 +30,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdOfferingType {
     // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdOfferingTypeNone)
     CmdOfferingTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdOfferingInfoScNotify)
-    CmdOfferingInfoScNotify = 6932,
-    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdTakeOfferingRewardCsReq)
-    CmdTakeOfferingRewardCsReq = 6928,
+    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdSubmitOfferingItemCsReq)
+    CmdSubmitOfferingItemCsReq = 6935,
     // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdSubmitOfferingItemScRsp)
     CmdSubmitOfferingItemScRsp = 6930,
-    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdTakeOfferingRewardScRsp)
-    CmdTakeOfferingRewardScRsp = 6935,
     // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdGetOfferingInfoScRsp)
-    CmdGetOfferingInfoScRsp = 6937,
-    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdSubmitOfferingItemCsReq)
-    CmdSubmitOfferingItemCsReq = 6933,
+    CmdGetOfferingInfoScRsp = 6928,
+    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdOfferingInfoScNotify)
+    CmdOfferingInfoScNotify = 6924,
+    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdTakeOfferingRewardScRsp)
+    CmdTakeOfferingRewardScRsp = 6923,
+    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdTakeOfferingRewardCsReq)
+    CmdTakeOfferingRewardCsReq = 6932,
     // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdGetOfferingInfoCsReq)
-    CmdGetOfferingInfoCsReq = 6934,
+    CmdGetOfferingInfoCsReq = 6925,
 }
 
 impl ::protobuf::Enum for CmdOfferingType {
@@ -56,13 +56,13 @@ impl ::protobuf::Enum for CmdOfferingType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdOfferingType> {
         match value {
             0 => ::std::option::Option::Some(CmdOfferingType::CmdOfferingTypeNone),
-            6932 => ::std::option::Option::Some(CmdOfferingType::CmdOfferingInfoScNotify),
-            6928 => ::std::option::Option::Some(CmdOfferingType::CmdTakeOfferingRewardCsReq),
+            6935 => ::std::option::Option::Some(CmdOfferingType::CmdSubmitOfferingItemCsReq),
             6930 => ::std::option::Option::Some(CmdOfferingType::CmdSubmitOfferingItemScRsp),
-            6935 => ::std::option::Option::Some(CmdOfferingType::CmdTakeOfferingRewardScRsp),
-            6937 => ::std::option::Option::Some(CmdOfferingType::CmdGetOfferingInfoScRsp),
-            6933 => ::std::option::Option::Some(CmdOfferingType::CmdSubmitOfferingItemCsReq),
-            6934 => ::std::option::Option::Some(CmdOfferingType::CmdGetOfferingInfoCsReq),
+            6928 => ::std::option::Option::Some(CmdOfferingType::CmdGetOfferingInfoScRsp),
+            6924 => ::std::option::Option::Some(CmdOfferingType::CmdOfferingInfoScNotify),
+            6923 => ::std::option::Option::Some(CmdOfferingType::CmdTakeOfferingRewardScRsp),
+            6932 => ::std::option::Option::Some(CmdOfferingType::CmdTakeOfferingRewardCsReq),
+            6925 => ::std::option::Option::Some(CmdOfferingType::CmdGetOfferingInfoCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -70,12 +70,12 @@ impl ::protobuf::Enum for CmdOfferingType {
     fn from_str(str: &str) -> ::std::option::Option<CmdOfferingType> {
         match str {
             "CmdOfferingTypeNone" => ::std::option::Option::Some(CmdOfferingType::CmdOfferingTypeNone),
-            "CmdOfferingInfoScNotify" => ::std::option::Option::Some(CmdOfferingType::CmdOfferingInfoScNotify),
-            "CmdTakeOfferingRewardCsReq" => ::std::option::Option::Some(CmdOfferingType::CmdTakeOfferingRewardCsReq),
-            "CmdSubmitOfferingItemScRsp" => ::std::option::Option::Some(CmdOfferingType::CmdSubmitOfferingItemScRsp),
-            "CmdTakeOfferingRewardScRsp" => ::std::option::Option::Some(CmdOfferingType::CmdTakeOfferingRewardScRsp),
-            "CmdGetOfferingInfoScRsp" => ::std::option::Option::Some(CmdOfferingType::CmdGetOfferingInfoScRsp),
             "CmdSubmitOfferingItemCsReq" => ::std::option::Option::Some(CmdOfferingType::CmdSubmitOfferingItemCsReq),
+            "CmdSubmitOfferingItemScRsp" => ::std::option::Option::Some(CmdOfferingType::CmdSubmitOfferingItemScRsp),
+            "CmdGetOfferingInfoScRsp" => ::std::option::Option::Some(CmdOfferingType::CmdGetOfferingInfoScRsp),
+            "CmdOfferingInfoScNotify" => ::std::option::Option::Some(CmdOfferingType::CmdOfferingInfoScNotify),
+            "CmdTakeOfferingRewardScRsp" => ::std::option::Option::Some(CmdOfferingType::CmdTakeOfferingRewardScRsp),
+            "CmdTakeOfferingRewardCsReq" => ::std::option::Option::Some(CmdOfferingType::CmdTakeOfferingRewardCsReq),
             "CmdGetOfferingInfoCsReq" => ::std::option::Option::Some(CmdOfferingType::CmdGetOfferingInfoCsReq),
             _ => ::std::option::Option::None
         }
@@ -83,12 +83,12 @@ impl ::protobuf::Enum for CmdOfferingType {
 
     const VALUES: &'static [CmdOfferingType] = &[
         CmdOfferingType::CmdOfferingTypeNone,
-        CmdOfferingType::CmdOfferingInfoScNotify,
-        CmdOfferingType::CmdTakeOfferingRewardCsReq,
-        CmdOfferingType::CmdSubmitOfferingItemScRsp,
-        CmdOfferingType::CmdTakeOfferingRewardScRsp,
-        CmdOfferingType::CmdGetOfferingInfoScRsp,
         CmdOfferingType::CmdSubmitOfferingItemCsReq,
+        CmdOfferingType::CmdSubmitOfferingItemScRsp,
+        CmdOfferingType::CmdGetOfferingInfoScRsp,
+        CmdOfferingType::CmdOfferingInfoScNotify,
+        CmdOfferingType::CmdTakeOfferingRewardScRsp,
+        CmdOfferingType::CmdTakeOfferingRewardCsReq,
         CmdOfferingType::CmdGetOfferingInfoCsReq,
     ];
 }
@@ -102,12 +102,12 @@ impl ::protobuf::EnumFull for CmdOfferingType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdOfferingType::CmdOfferingTypeNone => 0,
-            CmdOfferingType::CmdOfferingInfoScNotify => 1,
-            CmdOfferingType::CmdTakeOfferingRewardCsReq => 2,
-            CmdOfferingType::CmdSubmitOfferingItemScRsp => 3,
-            CmdOfferingType::CmdTakeOfferingRewardScRsp => 4,
-            CmdOfferingType::CmdGetOfferingInfoScRsp => 5,
-            CmdOfferingType::CmdSubmitOfferingItemCsReq => 6,
+            CmdOfferingType::CmdSubmitOfferingItemCsReq => 1,
+            CmdOfferingType::CmdSubmitOfferingItemScRsp => 2,
+            CmdOfferingType::CmdGetOfferingInfoScRsp => 3,
+            CmdOfferingType::CmdOfferingInfoScNotify => 4,
+            CmdOfferingType::CmdTakeOfferingRewardScRsp => 5,
+            CmdOfferingType::CmdTakeOfferingRewardCsReq => 6,
             CmdOfferingType::CmdGetOfferingInfoCsReq => 7,
         };
         Self::enum_descriptor().value_by_index(index)
@@ -128,12 +128,12 @@ impl CmdOfferingType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15CmdOfferingType.proto*\x88\x02\n\x0fCmdOfferingType\x12\x17\n\x13C\
-    mdOfferingTypeNone\x10\0\x12\x1c\n\x17CmdOfferingInfoScNotify\x10\x946\
-    \x12\x1f\n\x1aCmdTakeOfferingRewardCsReq\x10\x906\x12\x1f\n\x1aCmdSubmit\
-    OfferingItemScRsp\x10\x926\x12\x1f\n\x1aCmdTakeOfferingRewardScRsp\x10\
-    \x976\x12\x1c\n\x17CmdGetOfferingInfoScRsp\x10\x996\x12\x1f\n\x1aCmdSubm\
-    itOfferingItemCsReq\x10\x956\x12\x1c\n\x17CmdGetOfferingInfoCsReq\x10\
-    \x966b\x06proto3\
+    mdOfferingTypeNone\x10\0\x12\x1f\n\x1aCmdSubmitOfferingItemCsReq\x10\x97\
+    6\x12\x1f\n\x1aCmdSubmitOfferingItemScRsp\x10\x926\x12\x1c\n\x17CmdGetOf\
+    feringInfoScRsp\x10\x906\x12\x1c\n\x17CmdOfferingInfoScNotify\x10\x8c6\
+    \x12\x1f\n\x1aCmdTakeOfferingRewardScRsp\x10\x8b6\x12\x1f\n\x1aCmdTakeOf\
+    feringRewardCsReq\x10\x946\x12\x1c\n\x17CmdGetOfferingInfoCsReq\x10\x8d6\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ComposeLimitNumUpdateNotify {
     // message fields
-    // @@protoc_insertion_point(field:ComposeLimitNumUpdateNotify.ALONOHKNCHC)
-    pub ALONOHKNCHC: ::protobuf::MessageField<super::KCEAJGBFCGL::KCEAJGBFCGL>,
+    // @@protoc_insertion_point(field:ComposeLimitNumUpdateNotify.BFFFHDJJHBO)
+    pub BFFFHDJJHBO: ::protobuf::MessageField<super::CEKLMNGKDNM::CEKLMNGKDNM>,
     // special fields
     // @@protoc_insertion_point(special_field:ComposeLimitNumUpdateNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,10 +50,10 @@ impl ComposeLimitNumUpdateNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KCEAJGBFCGL::KCEAJGBFCGL>(
-            "ALONOHKNCHC",
-            |m: &ComposeLimitNumUpdateNotify| { &m.ALONOHKNCHC },
-            |m: &mut ComposeLimitNumUpdateNotify| { &mut m.ALONOHKNCHC },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CEKLMNGKDNM::CEKLMNGKDNM>(
+            "BFFFHDJJHBO",
+            |m: &ComposeLimitNumUpdateNotify| { &m.BFFFHDJJHBO },
+            |m: &mut ComposeLimitNumUpdateNotify| { &mut m.BFFFHDJJHBO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ComposeLimitNumUpdateNotify>(
             "ComposeLimitNumUpdateNotify",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for ComposeLimitNumUpdateNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ALONOHKNCHC)?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BFFFHDJJHBO)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for ComposeLimitNumUpdateNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.ALONOHKNCHC.as_ref() {
+        if let Some(v) = self.BFFFHDJJHBO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -98,8 +98,8 @@ impl ::protobuf::Message for ComposeLimitNumUpdateNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.ALONOHKNCHC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        if let Some(v) = self.BFFFHDJJHBO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -118,13 +118,13 @@ impl ::protobuf::Message for ComposeLimitNumUpdateNotify {
     }
 
     fn clear(&mut self) {
-        self.ALONOHKNCHC.clear();
+        self.BFFFHDJJHBO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ComposeLimitNumUpdateNotify {
         static instance: ComposeLimitNumUpdateNotify = ComposeLimitNumUpdateNotify {
-            ALONOHKNCHC: ::protobuf::MessageField::none(),
+            BFFFHDJJHBO: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,9 +149,9 @@ impl ::protobuf::reflect::ProtobufValue for ComposeLimitNumUpdateNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!ComposeLimitNumUpdateNotify.proto\x1a\x11KCEAJGBFCGL.proto\"M\n\x1bCo\
-    mposeLimitNumUpdateNotify\x12.\n\x0bALONOHKNCHC\x18\x04\x20\x01(\x0b2\
-    \x0c.KCEAJGBFCGLR\x0bALONOHKNCHCb\x06proto3\
+    \n!ComposeLimitNumUpdateNotify.proto\x1a\x11CEKLMNGKDNM.proto\"M\n\x1bCo\
+    mposeLimitNumUpdateNotify\x12.\n\x0bBFFFHDJJHBO\x18\x0e\x20\x01(\x0b2\
+    \x0c.CEKLMNGKDNMR\x0bBFFFHDJJHBOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -169,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::KCEAJGBFCGL::file_descriptor().clone());
+            deps.push(super::CEKLMNGKDNM::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ComposeLimitNumUpdateNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

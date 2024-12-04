@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonthCardRewardNotify {
     // message fields
-    // @@protoc_insertion_point(field:MonthCardRewardNotify.LPDNAMLHGNJ)
-    pub LPDNAMLHGNJ: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:MonthCardRewardNotify.ELPMNKHEPKJ)
+    pub ELPMNKHEPKJ: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:MonthCardRewardNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl MonthCardRewardNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "LPDNAMLHGNJ",
-            |m: &MonthCardRewardNotify| { &m.LPDNAMLHGNJ },
-            |m: &mut MonthCardRewardNotify| { &mut m.LPDNAMLHGNJ },
+            "ELPMNKHEPKJ",
+            |m: &MonthCardRewardNotify| { &m.ELPMNKHEPKJ },
+            |m: &mut MonthCardRewardNotify| { &mut m.ELPMNKHEPKJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonthCardRewardNotify>(
             "MonthCardRewardNotify",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for MonthCardRewardNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LPDNAMLHGNJ)?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ELPMNKHEPKJ)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for MonthCardRewardNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.LPDNAMLHGNJ.as_ref() {
+        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -98,8 +98,8 @@ impl ::protobuf::Message for MonthCardRewardNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.LPDNAMLHGNJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -118,13 +118,13 @@ impl ::protobuf::Message for MonthCardRewardNotify {
     }
 
     fn clear(&mut self) {
-        self.LPDNAMLHGNJ.clear();
+        self.ELPMNKHEPKJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonthCardRewardNotify {
         static instance: MonthCardRewardNotify = MonthCardRewardNotify {
-            LPDNAMLHGNJ: ::protobuf::MessageField::none(),
+            ELPMNKHEPKJ: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -150,8 +150,8 @@ impl ::protobuf::reflect::ProtobufValue for MonthCardRewardNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bMonthCardRewardNotify.proto\x1a\x0eItemList.proto\"D\n\x15MonthCar\
-    dRewardNotify\x12+\n\x0bLPDNAMLHGNJ\x18\x08\x20\x01(\x0b2\t.ItemListR\
-    \x0bLPDNAMLHGNJb\x06proto3\
+    dRewardNotify\x12+\n\x0bELPMNKHEPKJ\x18\x02\x20\x01(\x0b2\t.ItemListR\
+    \x0bELPMNKHEPKJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

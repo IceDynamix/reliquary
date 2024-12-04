@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DailyTaskDataScNotify {
     // message fields
-    // @@protoc_insertion_point(field:DailyTaskDataScNotify.KPJIHAOJKNC)
-    pub KPJIHAOJKNC: u32,
-    // @@protoc_insertion_point(field:DailyTaskDataScNotify.CKKEPCNDEDB)
-    pub CKKEPCNDEDB: ::std::vec::Vec<super::JKOCBNIFOOK::JKOCBNIFOOK>,
+    // @@protoc_insertion_point(field:DailyTaskDataScNotify.DNLPCBDJGJN)
+    pub DNLPCBDJGJN: u32,
+    // @@protoc_insertion_point(field:DailyTaskDataScNotify.JHFIONGGCND)
+    pub JHFIONGGCND: ::std::vec::Vec<super::FIICLEHAKLO::FIICLEHAKLO>,
     // special fields
     // @@protoc_insertion_point(special_field:DailyTaskDataScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl DailyTaskDataScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KPJIHAOJKNC",
-            |m: &DailyTaskDataScNotify| { &m.KPJIHAOJKNC },
-            |m: &mut DailyTaskDataScNotify| { &mut m.KPJIHAOJKNC },
+            "DNLPCBDJGJN",
+            |m: &DailyTaskDataScNotify| { &m.DNLPCBDJGJN },
+            |m: &mut DailyTaskDataScNotify| { &mut m.DNLPCBDJGJN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CKKEPCNDEDB",
-            |m: &DailyTaskDataScNotify| { &m.CKKEPCNDEDB },
-            |m: &mut DailyTaskDataScNotify| { &mut m.CKKEPCNDEDB },
+            "JHFIONGGCND",
+            |m: &DailyTaskDataScNotify| { &m.JHFIONGGCND },
+            |m: &mut DailyTaskDataScNotify| { &mut m.JHFIONGGCND },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DailyTaskDataScNotify>(
             "DailyTaskDataScNotify",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for DailyTaskDataScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.KPJIHAOJKNC = is.read_uint32()?;
+                8 => {
+                    self.DNLPCBDJGJN = is.read_uint32()?;
                 },
-                26 => {
-                    self.CKKEPCNDEDB.push(is.read_message()?);
+                114 => {
+                    self.JHFIONGGCND.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for DailyTaskDataScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KPJIHAOJKNC != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.KPJIHAOJKNC);
+        if self.DNLPCBDJGJN != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.DNLPCBDJGJN);
         }
-        for value in &self.CKKEPCNDEDB {
+        for value in &self.JHFIONGGCND {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -111,11 +111,11 @@ impl ::protobuf::Message for DailyTaskDataScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KPJIHAOJKNC != 0 {
-            os.write_uint32(11, self.KPJIHAOJKNC)?;
+        if self.DNLPCBDJGJN != 0 {
+            os.write_uint32(1, self.DNLPCBDJGJN)?;
         }
-        for v in &self.CKKEPCNDEDB {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        for v in &self.JHFIONGGCND {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for DailyTaskDataScNotify {
     }
 
     fn clear(&mut self) {
-        self.KPJIHAOJKNC = 0;
-        self.CKKEPCNDEDB.clear();
+        self.DNLPCBDJGJN = 0;
+        self.JHFIONGGCND.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DailyTaskDataScNotify {
         static instance: DailyTaskDataScNotify = DailyTaskDataScNotify {
-            KPJIHAOJKNC: 0,
-            CKKEPCNDEDB: ::std::vec::Vec::new(),
+            DNLPCBDJGJN: 0,
+            JHFIONGGCND: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for DailyTaskDataScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bDailyTaskDataScNotify.proto\x1a\x11JKOCBNIFOOK.proto\"i\n\x15Daily\
-    TaskDataScNotify\x12\x20\n\x0bKPJIHAOJKNC\x18\x0b\x20\x01(\rR\x0bKPJIHAO\
-    JKNC\x12.\n\x0bCKKEPCNDEDB\x18\x03\x20\x03(\x0b2\x0c.JKOCBNIFOOKR\x0bCKK\
-    EPCNDEDBb\x06proto3\
+    \n\x1bDailyTaskDataScNotify.proto\x1a\x11FIICLEHAKLO.proto\"i\n\x15Daily\
+    TaskDataScNotify\x12\x20\n\x0bDNLPCBDJGJN\x18\x01\x20\x01(\rR\x0bDNLPCBD\
+    JGJN\x12.\n\x0bJHFIONGGCND\x18\x0e\x20\x03(\x0b2\x0c.FIICLEHAKLOR\x0bJHF\
+    IONGGCNDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::JKOCBNIFOOK::file_descriptor().clone());
+            deps.push(super::FIICLEHAKLO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(DailyTaskDataScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,22 +29,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StrongChallengeActivityBattleEndScNotify {
     // message fields
-    // @@protoc_insertion_point(field:StrongChallengeActivityBattleEndScNotify.GOCJFIAEMKB)
-    pub GOCJFIAEMKB: u32,
-    // @@protoc_insertion_point(field:StrongChallengeActivityBattleEndScNotify.IHCBEKOHBBJ)
-    pub IHCBEKOHBBJ: u32,
-    // @@protoc_insertion_point(field:StrongChallengeActivityBattleEndScNotify.GHJIJIAEPAK)
-    pub GHJIJIAEPAK: u32,
-    // @@protoc_insertion_point(field:StrongChallengeActivityBattleEndScNotify.EMGLBFMFBLN)
-    pub EMGLBFMFBLN: u32,
-    // @@protoc_insertion_point(field:StrongChallengeActivityBattleEndScNotify.BHBEBKFDKEO)
-    pub BHBEBKFDKEO: u32,
-    // @@protoc_insertion_point(field:StrongChallengeActivityBattleEndScNotify.FILMAOEBILH)
-    pub FILMAOEBILH: u32,
-    // @@protoc_insertion_point(field:StrongChallengeActivityBattleEndScNotify.IDIEPEFFGIC)
-    pub IDIEPEFFGIC: u32,
-    // @@protoc_insertion_point(field:StrongChallengeActivityBattleEndScNotify.MHFKKEAJPJI)
-    pub MHFKKEAJPJI: ::protobuf::EnumOrUnknown<super::MHNHDNOPKML::MHNHDNOPKML>,
+    // @@protoc_insertion_point(field:StrongChallengeActivityBattleEndScNotify.BLAGOJADHDG)
+    pub BLAGOJADHDG: u32,
+    // @@protoc_insertion_point(field:StrongChallengeActivityBattleEndScNotify.NJOHPOEHOBF)
+    pub NJOHPOEHOBF: u32,
+    // @@protoc_insertion_point(field:StrongChallengeActivityBattleEndScNotify.OFAGGKBMPJN)
+    pub OFAGGKBMPJN: u32,
+    // @@protoc_insertion_point(field:StrongChallengeActivityBattleEndScNotify.AEFIGCCKDPD)
+    pub AEFIGCCKDPD: u32,
+    // @@protoc_insertion_point(field:StrongChallengeActivityBattleEndScNotify.HODGJHOAHGG)
+    pub HODGJHOAHGG: u32,
+    // @@protoc_insertion_point(field:StrongChallengeActivityBattleEndScNotify.HFBPNMCLBNF)
+    pub HFBPNMCLBNF: ::protobuf::EnumOrUnknown<super::LMIENNAIBLH::LMIENNAIBLH>,
+    // @@protoc_insertion_point(field:StrongChallengeActivityBattleEndScNotify.KAGEGBLHJDJ)
+    pub KAGEGBLHJDJ: u32,
+    // @@protoc_insertion_point(field:StrongChallengeActivityBattleEndScNotify.MEGLDGBCKEH)
+    pub MEGLDGBCKEH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:StrongChallengeActivityBattleEndScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,44 +65,44 @@ impl StrongChallengeActivityBattleEndScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GOCJFIAEMKB",
-            |m: &StrongChallengeActivityBattleEndScNotify| { &m.GOCJFIAEMKB },
-            |m: &mut StrongChallengeActivityBattleEndScNotify| { &mut m.GOCJFIAEMKB },
+            "BLAGOJADHDG",
+            |m: &StrongChallengeActivityBattleEndScNotify| { &m.BLAGOJADHDG },
+            |m: &mut StrongChallengeActivityBattleEndScNotify| { &mut m.BLAGOJADHDG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IHCBEKOHBBJ",
-            |m: &StrongChallengeActivityBattleEndScNotify| { &m.IHCBEKOHBBJ },
-            |m: &mut StrongChallengeActivityBattleEndScNotify| { &mut m.IHCBEKOHBBJ },
+            "NJOHPOEHOBF",
+            |m: &StrongChallengeActivityBattleEndScNotify| { &m.NJOHPOEHOBF },
+            |m: &mut StrongChallengeActivityBattleEndScNotify| { &mut m.NJOHPOEHOBF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GHJIJIAEPAK",
-            |m: &StrongChallengeActivityBattleEndScNotify| { &m.GHJIJIAEPAK },
-            |m: &mut StrongChallengeActivityBattleEndScNotify| { &mut m.GHJIJIAEPAK },
+            "OFAGGKBMPJN",
+            |m: &StrongChallengeActivityBattleEndScNotify| { &m.OFAGGKBMPJN },
+            |m: &mut StrongChallengeActivityBattleEndScNotify| { &mut m.OFAGGKBMPJN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EMGLBFMFBLN",
-            |m: &StrongChallengeActivityBattleEndScNotify| { &m.EMGLBFMFBLN },
-            |m: &mut StrongChallengeActivityBattleEndScNotify| { &mut m.EMGLBFMFBLN },
+            "AEFIGCCKDPD",
+            |m: &StrongChallengeActivityBattleEndScNotify| { &m.AEFIGCCKDPD },
+            |m: &mut StrongChallengeActivityBattleEndScNotify| { &mut m.AEFIGCCKDPD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BHBEBKFDKEO",
-            |m: &StrongChallengeActivityBattleEndScNotify| { &m.BHBEBKFDKEO },
-            |m: &mut StrongChallengeActivityBattleEndScNotify| { &mut m.BHBEBKFDKEO },
+            "HODGJHOAHGG",
+            |m: &StrongChallengeActivityBattleEndScNotify| { &m.HODGJHOAHGG },
+            |m: &mut StrongChallengeActivityBattleEndScNotify| { &mut m.HODGJHOAHGG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FILMAOEBILH",
-            |m: &StrongChallengeActivityBattleEndScNotify| { &m.FILMAOEBILH },
-            |m: &mut StrongChallengeActivityBattleEndScNotify| { &mut m.FILMAOEBILH },
+            "HFBPNMCLBNF",
+            |m: &StrongChallengeActivityBattleEndScNotify| { &m.HFBPNMCLBNF },
+            |m: &mut StrongChallengeActivityBattleEndScNotify| { &mut m.HFBPNMCLBNF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IDIEPEFFGIC",
-            |m: &StrongChallengeActivityBattleEndScNotify| { &m.IDIEPEFFGIC },
-            |m: &mut StrongChallengeActivityBattleEndScNotify| { &mut m.IDIEPEFFGIC },
+            "KAGEGBLHJDJ",
+            |m: &StrongChallengeActivityBattleEndScNotify| { &m.KAGEGBLHJDJ },
+            |m: &mut StrongChallengeActivityBattleEndScNotify| { &mut m.KAGEGBLHJDJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MHFKKEAJPJI",
-            |m: &StrongChallengeActivityBattleEndScNotify| { &m.MHFKKEAJPJI },
-            |m: &mut StrongChallengeActivityBattleEndScNotify| { &mut m.MHFKKEAJPJI },
+            "MEGLDGBCKEH",
+            |m: &StrongChallengeActivityBattleEndScNotify| { &m.MEGLDGBCKEH },
+            |m: &mut StrongChallengeActivityBattleEndScNotify| { &mut m.MEGLDGBCKEH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StrongChallengeActivityBattleEndScNotify>(
             "StrongChallengeActivityBattleEndScNotify",
@@ -122,29 +122,29 @@ impl ::protobuf::Message for StrongChallengeActivityBattleEndScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.GOCJFIAEMKB = is.read_uint32()?;
-                },
-                112 => {
-                    self.IHCBEKOHBBJ = is.read_uint32()?;
-                },
                 32 => {
-                    self.GHJIJIAEPAK = is.read_uint32()?;
+                    self.BLAGOJADHDG = is.read_uint32()?;
                 },
-                56 => {
-                    self.EMGLBFMFBLN = is.read_uint32()?;
+                80 => {
+                    self.NJOHPOEHOBF = is.read_uint32()?;
                 },
-                72 => {
-                    self.BHBEBKFDKEO = is.read_uint32()?;
+                40 => {
+                    self.OFAGGKBMPJN = is.read_uint32()?;
                 },
-                96 => {
-                    self.FILMAOEBILH = is.read_uint32()?;
+                8 => {
+                    self.AEFIGCCKDPD = is.read_uint32()?;
                 },
-                16 => {
-                    self.IDIEPEFFGIC = is.read_uint32()?;
+                24 => {
+                    self.HODGJHOAHGG = is.read_uint32()?;
                 },
-                104 => {
-                    self.MHFKKEAJPJI = is.read_enum_or_unknown()?;
+                120 => {
+                    self.HFBPNMCLBNF = is.read_enum_or_unknown()?;
+                },
+                88 => {
+                    self.KAGEGBLHJDJ = is.read_uint32()?;
+                },
+                64 => {
+                    self.MEGLDGBCKEH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -158,29 +158,29 @@ impl ::protobuf::Message for StrongChallengeActivityBattleEndScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GOCJFIAEMKB != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.GOCJFIAEMKB);
+        if self.BLAGOJADHDG != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.BLAGOJADHDG);
         }
-        if self.IHCBEKOHBBJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.IHCBEKOHBBJ);
+        if self.NJOHPOEHOBF != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.NJOHPOEHOBF);
         }
-        if self.GHJIJIAEPAK != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.GHJIJIAEPAK);
+        if self.OFAGGKBMPJN != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.OFAGGKBMPJN);
         }
-        if self.EMGLBFMFBLN != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.EMGLBFMFBLN);
+        if self.AEFIGCCKDPD != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.AEFIGCCKDPD);
         }
-        if self.BHBEBKFDKEO != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.BHBEBKFDKEO);
+        if self.HODGJHOAHGG != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.HODGJHOAHGG);
         }
-        if self.FILMAOEBILH != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.FILMAOEBILH);
+        if self.HFBPNMCLBNF != ::protobuf::EnumOrUnknown::new(super::LMIENNAIBLH::LMIENNAIBLH::BATTLE_END_NONE) {
+            my_size += ::protobuf::rt::int32_size(15, self.HFBPNMCLBNF.value());
         }
-        if self.IDIEPEFFGIC != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.IDIEPEFFGIC);
+        if self.KAGEGBLHJDJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.KAGEGBLHJDJ);
         }
-        if self.MHFKKEAJPJI != ::protobuf::EnumOrUnknown::new(super::MHNHDNOPKML::MHNHDNOPKML::BATTLE_END_NONE) {
-            my_size += ::protobuf::rt::int32_size(13, self.MHFKKEAJPJI.value());
+        if self.MEGLDGBCKEH != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.MEGLDGBCKEH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -188,29 +188,29 @@ impl ::protobuf::Message for StrongChallengeActivityBattleEndScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GOCJFIAEMKB != 0 {
-            os.write_uint32(8, self.GOCJFIAEMKB)?;
+        if self.BLAGOJADHDG != 0 {
+            os.write_uint32(4, self.BLAGOJADHDG)?;
         }
-        if self.IHCBEKOHBBJ != 0 {
-            os.write_uint32(14, self.IHCBEKOHBBJ)?;
+        if self.NJOHPOEHOBF != 0 {
+            os.write_uint32(10, self.NJOHPOEHOBF)?;
         }
-        if self.GHJIJIAEPAK != 0 {
-            os.write_uint32(4, self.GHJIJIAEPAK)?;
+        if self.OFAGGKBMPJN != 0 {
+            os.write_uint32(5, self.OFAGGKBMPJN)?;
         }
-        if self.EMGLBFMFBLN != 0 {
-            os.write_uint32(7, self.EMGLBFMFBLN)?;
+        if self.AEFIGCCKDPD != 0 {
+            os.write_uint32(1, self.AEFIGCCKDPD)?;
         }
-        if self.BHBEBKFDKEO != 0 {
-            os.write_uint32(9, self.BHBEBKFDKEO)?;
+        if self.HODGJHOAHGG != 0 {
+            os.write_uint32(3, self.HODGJHOAHGG)?;
         }
-        if self.FILMAOEBILH != 0 {
-            os.write_uint32(12, self.FILMAOEBILH)?;
+        if self.HFBPNMCLBNF != ::protobuf::EnumOrUnknown::new(super::LMIENNAIBLH::LMIENNAIBLH::BATTLE_END_NONE) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.HFBPNMCLBNF))?;
         }
-        if self.IDIEPEFFGIC != 0 {
-            os.write_uint32(2, self.IDIEPEFFGIC)?;
+        if self.KAGEGBLHJDJ != 0 {
+            os.write_uint32(11, self.KAGEGBLHJDJ)?;
         }
-        if self.MHFKKEAJPJI != ::protobuf::EnumOrUnknown::new(super::MHNHDNOPKML::MHNHDNOPKML::BATTLE_END_NONE) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.MHFKKEAJPJI))?;
+        if self.MEGLDGBCKEH != 0 {
+            os.write_uint32(8, self.MEGLDGBCKEH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -229,27 +229,27 @@ impl ::protobuf::Message for StrongChallengeActivityBattleEndScNotify {
     }
 
     fn clear(&mut self) {
-        self.GOCJFIAEMKB = 0;
-        self.IHCBEKOHBBJ = 0;
-        self.GHJIJIAEPAK = 0;
-        self.EMGLBFMFBLN = 0;
-        self.BHBEBKFDKEO = 0;
-        self.FILMAOEBILH = 0;
-        self.IDIEPEFFGIC = 0;
-        self.MHFKKEAJPJI = ::protobuf::EnumOrUnknown::new(super::MHNHDNOPKML::MHNHDNOPKML::BATTLE_END_NONE);
+        self.BLAGOJADHDG = 0;
+        self.NJOHPOEHOBF = 0;
+        self.OFAGGKBMPJN = 0;
+        self.AEFIGCCKDPD = 0;
+        self.HODGJHOAHGG = 0;
+        self.HFBPNMCLBNF = ::protobuf::EnumOrUnknown::new(super::LMIENNAIBLH::LMIENNAIBLH::BATTLE_END_NONE);
+        self.KAGEGBLHJDJ = 0;
+        self.MEGLDGBCKEH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StrongChallengeActivityBattleEndScNotify {
         static instance: StrongChallengeActivityBattleEndScNotify = StrongChallengeActivityBattleEndScNotify {
-            GOCJFIAEMKB: 0,
-            IHCBEKOHBBJ: 0,
-            GHJIJIAEPAK: 0,
-            EMGLBFMFBLN: 0,
-            BHBEBKFDKEO: 0,
-            FILMAOEBILH: 0,
-            IDIEPEFFGIC: 0,
-            MHFKKEAJPJI: ::protobuf::EnumOrUnknown::from_i32(0),
+            BLAGOJADHDG: 0,
+            NJOHPOEHOBF: 0,
+            OFAGGKBMPJN: 0,
+            AEFIGCCKDPD: 0,
+            HODGJHOAHGG: 0,
+            HFBPNMCLBNF: ::protobuf::EnumOrUnknown::from_i32(0),
+            KAGEGBLHJDJ: 0,
+            MEGLDGBCKEH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -274,15 +274,15 @@ impl ::protobuf::reflect::ProtobufValue for StrongChallengeActivityBattleEndScNo
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n.StrongChallengeActivityBattleEndScNotify.proto\x1a\x11MHNHDNOPKML.pro\
-    to\"\xc8\x02\n(StrongChallengeActivityBattleEndScNotify\x12\x20\n\x0bGOC\
-    JFIAEMKB\x18\x08\x20\x01(\rR\x0bGOCJFIAEMKB\x12\x20\n\x0bIHCBEKOHBBJ\x18\
-    \x0e\x20\x01(\rR\x0bIHCBEKOHBBJ\x12\x20\n\x0bGHJIJIAEPAK\x18\x04\x20\x01\
-    (\rR\x0bGHJIJIAEPAK\x12\x20\n\x0bEMGLBFMFBLN\x18\x07\x20\x01(\rR\x0bEMGL\
-    BFMFBLN\x12\x20\n\x0bBHBEBKFDKEO\x18\t\x20\x01(\rR\x0bBHBEBKFDKEO\x12\
-    \x20\n\x0bFILMAOEBILH\x18\x0c\x20\x01(\rR\x0bFILMAOEBILH\x12\x20\n\x0bID\
-    IEPEFFGIC\x18\x02\x20\x01(\rR\x0bIDIEPEFFGIC\x12.\n\x0bMHFKKEAJPJI\x18\r\
-    \x20\x01(\x0e2\x0c.MHNHDNOPKMLR\x0bMHFKKEAJPJIb\x06proto3\
+    \n.StrongChallengeActivityBattleEndScNotify.proto\x1a\x11LMIENNAIBLH.pro\
+    to\"\xc8\x02\n(StrongChallengeActivityBattleEndScNotify\x12\x20\n\x0bBLA\
+    GOJADHDG\x18\x04\x20\x01(\rR\x0bBLAGOJADHDG\x12\x20\n\x0bNJOHPOEHOBF\x18\
+    \n\x20\x01(\rR\x0bNJOHPOEHOBF\x12\x20\n\x0bOFAGGKBMPJN\x18\x05\x20\x01(\
+    \rR\x0bOFAGGKBMPJN\x12\x20\n\x0bAEFIGCCKDPD\x18\x01\x20\x01(\rR\x0bAEFIG\
+    CCKDPD\x12\x20\n\x0bHODGJHOAHGG\x18\x03\x20\x01(\rR\x0bHODGJHOAHGG\x12.\
+    \n\x0bHFBPNMCLBNF\x18\x0f\x20\x01(\x0e2\x0c.LMIENNAIBLHR\x0bHFBPNMCLBNF\
+    \x12\x20\n\x0bKAGEGBLHJDJ\x18\x0b\x20\x01(\rR\x0bKAGEGBLHJDJ\x12\x20\n\
+    \x0bMEGLDGBCKEH\x18\x08\x20\x01(\rR\x0bMEGLDGBCKEHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -300,7 +300,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::MHNHDNOPKML::file_descriptor().clone());
+            deps.push(super::LMIENNAIBLH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(StrongChallengeActivityBattleEndScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

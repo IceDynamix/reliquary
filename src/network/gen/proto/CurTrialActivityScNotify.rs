@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CurTrialActivityScNotify {
     // message fields
-    // @@protoc_insertion_point(field:CurTrialActivityScNotify.DHFBKNEIMBP)
-    pub DHFBKNEIMBP: u32,
-    // @@protoc_insertion_point(field:CurTrialActivityScNotify.status)
-    pub status: ::protobuf::EnumOrUnknown<super::JNMHHHOKOKE::JNMHHHOKOKE>,
+    // @@protoc_insertion_point(field:CurTrialActivityScNotify.AHKELHDHOCP)
+    pub AHKELHDHOCP: u32,
+    // @@protoc_insertion_point(field:CurTrialActivityScNotify.OJBAILGKLBM)
+    pub OJBAILGKLBM: ::protobuf::EnumOrUnknown<super::ICKIJPPDPPE::ICKIJPPDPPE>,
     // special fields
     // @@protoc_insertion_point(special_field:CurTrialActivityScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl CurTrialActivityScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DHFBKNEIMBP",
-            |m: &CurTrialActivityScNotify| { &m.DHFBKNEIMBP },
-            |m: &mut CurTrialActivityScNotify| { &mut m.DHFBKNEIMBP },
+            "AHKELHDHOCP",
+            |m: &CurTrialActivityScNotify| { &m.AHKELHDHOCP },
+            |m: &mut CurTrialActivityScNotify| { &mut m.AHKELHDHOCP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "status",
-            |m: &CurTrialActivityScNotify| { &m.status },
-            |m: &mut CurTrialActivityScNotify| { &mut m.status },
+            "OJBAILGKLBM",
+            |m: &CurTrialActivityScNotify| { &m.OJBAILGKLBM },
+            |m: &mut CurTrialActivityScNotify| { &mut m.OJBAILGKLBM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CurTrialActivityScNotify>(
             "CurTrialActivityScNotify",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for CurTrialActivityScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.DHFBKNEIMBP = is.read_uint32()?;
+                40 => {
+                    self.AHKELHDHOCP = is.read_uint32()?;
                 },
-                8 => {
-                    self.status = is.read_enum_or_unknown()?;
+                16 => {
+                    self.OJBAILGKLBM = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for CurTrialActivityScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DHFBKNEIMBP != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.DHFBKNEIMBP);
+        if self.AHKELHDHOCP != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.AHKELHDHOCP);
         }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::JNMHHHOKOKE::JNMHHHOKOKE::TRIAL_ACTIVITY_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(1, self.status.value());
+        if self.OJBAILGKLBM != ::protobuf::EnumOrUnknown::new(super::ICKIJPPDPPE::ICKIJPPDPPE::TRIAL_ACTIVITY_STATUS_NONE) {
+            my_size += ::protobuf::rt::int32_size(2, self.OJBAILGKLBM.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for CurTrialActivityScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DHFBKNEIMBP != 0 {
-            os.write_uint32(7, self.DHFBKNEIMBP)?;
+        if self.AHKELHDHOCP != 0 {
+            os.write_uint32(5, self.AHKELHDHOCP)?;
         }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::JNMHHHOKOKE::JNMHHHOKOKE::TRIAL_ACTIVITY_STATUS_NONE) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        if self.OJBAILGKLBM != ::protobuf::EnumOrUnknown::new(super::ICKIJPPDPPE::ICKIJPPDPPE::TRIAL_ACTIVITY_STATUS_NONE) {
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.OJBAILGKLBM))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for CurTrialActivityScNotify {
     }
 
     fn clear(&mut self) {
-        self.DHFBKNEIMBP = 0;
-        self.status = ::protobuf::EnumOrUnknown::new(super::JNMHHHOKOKE::JNMHHHOKOKE::TRIAL_ACTIVITY_STATUS_NONE);
+        self.AHKELHDHOCP = 0;
+        self.OJBAILGKLBM = ::protobuf::EnumOrUnknown::new(super::ICKIJPPDPPE::ICKIJPPDPPE::TRIAL_ACTIVITY_STATUS_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CurTrialActivityScNotify {
         static instance: CurTrialActivityScNotify = CurTrialActivityScNotify {
-            DHFBKNEIMBP: 0,
-            status: ::protobuf::EnumOrUnknown::from_i32(0),
+            AHKELHDHOCP: 0,
+            OJBAILGKLBM: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for CurTrialActivityScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eCurTrialActivityScNotify.proto\x1a\x11JNMHHHOKOKE.proto\"b\n\x18Cu\
-    rTrialActivityScNotify\x12\x20\n\x0bDHFBKNEIMBP\x18\x07\x20\x01(\rR\x0bD\
-    HFBKNEIMBP\x12$\n\x06status\x18\x01\x20\x01(\x0e2\x0c.JNMHHHOKOKER\x06st\
-    atusb\x06proto3\
+    \n\x1eCurTrialActivityScNotify.proto\x1a\x11ICKIJPPDPPE.proto\"l\n\x18Cu\
+    rTrialActivityScNotify\x12\x20\n\x0bAHKELHDHOCP\x18\x05\x20\x01(\rR\x0bA\
+    HKELHDHOCP\x12.\n\x0bOJBAILGKLBM\x18\x02\x20\x01(\x0e2\x0c.ICKIJPPDPPER\
+    \x0bOJBAILGKLBMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::JNMHHHOKOKE::file_descriptor().clone());
+            deps.push(super::ICKIJPPDPPE::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(CurTrialActivityScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

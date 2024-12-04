@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DeleteSummonUnitScRsp {
     // message fields
-    // @@protoc_insertion_point(field:DeleteSummonUnitScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:DeleteSummonUnitScRsp.IDIPNDIBACA)
-    pub IDIPNDIBACA: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:DeleteSummonUnitScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:DeleteSummonUnitScRsp.IMJIJKBOBMC)
+    pub IMJIJKBOBMC: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:DeleteSummonUnitScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl DeleteSummonUnitScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &DeleteSummonUnitScRsp| { &m.retcode },
-            |m: &mut DeleteSummonUnitScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &DeleteSummonUnitScRsp| { &m.ADADHIHDHJC },
+            |m: &mut DeleteSummonUnitScRsp| { &mut m.ADADHIHDHJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IDIPNDIBACA",
-            |m: &DeleteSummonUnitScRsp| { &m.IDIPNDIBACA },
-            |m: &mut DeleteSummonUnitScRsp| { &mut m.IDIPNDIBACA },
+            "IMJIJKBOBMC",
+            |m: &DeleteSummonUnitScRsp| { &m.IMJIJKBOBMC },
+            |m: &mut DeleteSummonUnitScRsp| { &mut m.IMJIJKBOBMC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DeleteSummonUnitScRsp>(
             "DeleteSummonUnitScRsp",
@@ -80,14 +80,14 @@ impl ::protobuf::Message for DeleteSummonUnitScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.retcode = is.read_uint32()?;
+                72 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                114 => {
-                    is.read_repeated_packed_uint32_into(&mut self.IDIPNDIBACA)?;
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.IMJIJKBOBMC)?;
                 },
-                112 => {
-                    self.IDIPNDIBACA.push(is.read_uint32()?);
+                24 => {
+                    self.IMJIJKBOBMC.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,11 +101,11 @@ impl ::protobuf::Message for DeleteSummonUnitScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.ADADHIHDHJC);
         }
-        for value in &self.IDIPNDIBACA {
-            my_size += ::protobuf::rt::uint32_size(14, *value);
+        for value in &self.IMJIJKBOBMC {
+            my_size += ::protobuf::rt::uint32_size(3, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,11 +113,11 @@ impl ::protobuf::Message for DeleteSummonUnitScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(9, self.ADADHIHDHJC)?;
         }
-        for v in &self.IDIPNDIBACA {
-            os.write_uint32(14, *v)?;
+        for v in &self.IMJIJKBOBMC {
+            os.write_uint32(3, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -136,15 +136,15 @@ impl ::protobuf::Message for DeleteSummonUnitScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.IDIPNDIBACA.clear();
+        self.ADADHIHDHJC = 0;
+        self.IMJIJKBOBMC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DeleteSummonUnitScRsp {
         static instance: DeleteSummonUnitScRsp = DeleteSummonUnitScRsp {
-            retcode: 0,
-            IDIPNDIBACA: ::std::vec::Vec::new(),
+            ADADHIHDHJC: 0,
+            IMJIJKBOBMC: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -169,9 +169,9 @@ impl ::protobuf::reflect::ProtobufValue for DeleteSummonUnitScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bDeleteSummonUnitScRsp.proto\"S\n\x15DeleteSummonUnitScRsp\x12\x18\
-    \n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12\x20\n\x0bIDIPNDIBACA\
-    \x18\x0e\x20\x03(\rR\x0bIDIPNDIBACAb\x06proto3\
+    \n\x1bDeleteSummonUnitScRsp.proto\"[\n\x15DeleteSummonUnitScRsp\x12\x20\
+    \n\x0bADADHIHDHJC\x18\t\x20\x01(\rR\x0bADADHIHDHJC\x12\x20\n\x0bIMJIJKBO\
+    BMC\x18\x03\x20\x03(\rR\x0bIMJIJKBOBMCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

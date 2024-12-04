@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SettleTrackPhotoStageCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SettleTrackPhotoStageCsReq.IDIEPEFFGIC)
-    pub IDIEPEFFGIC: u32,
-    // @@protoc_insertion_point(field:SettleTrackPhotoStageCsReq.PMEHDGILNEF)
-    pub PMEHDGILNEF: ::std::vec::Vec<super::HOELBNFBGHB::HOELBNFBGHB>,
-    // @@protoc_insertion_point(field:SettleTrackPhotoStageCsReq.DBBKNBLOCAH)
-    pub DBBKNBLOCAH: u32,
+    // @@protoc_insertion_point(field:SettleTrackPhotoStageCsReq.GNINDCOPPND)
+    pub GNINDCOPPND: ::std::vec::Vec<super::ECHLGCEPDLJ::ECHLGCEPDLJ>,
+    // @@protoc_insertion_point(field:SettleTrackPhotoStageCsReq.PCCPLLHICJM)
+    pub PCCPLLHICJM: u32,
+    // @@protoc_insertion_point(field:SettleTrackPhotoStageCsReq.KAGEGBLHJDJ)
+    pub KAGEGBLHJDJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SettleTrackPhotoStageCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl SettleTrackPhotoStageCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IDIEPEFFGIC",
-            |m: &SettleTrackPhotoStageCsReq| { &m.IDIEPEFFGIC },
-            |m: &mut SettleTrackPhotoStageCsReq| { &mut m.IDIEPEFFGIC },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PMEHDGILNEF",
-            |m: &SettleTrackPhotoStageCsReq| { &m.PMEHDGILNEF },
-            |m: &mut SettleTrackPhotoStageCsReq| { &mut m.PMEHDGILNEF },
+            "GNINDCOPPND",
+            |m: &SettleTrackPhotoStageCsReq| { &m.GNINDCOPPND },
+            |m: &mut SettleTrackPhotoStageCsReq| { &mut m.GNINDCOPPND },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DBBKNBLOCAH",
-            |m: &SettleTrackPhotoStageCsReq| { &m.DBBKNBLOCAH },
-            |m: &mut SettleTrackPhotoStageCsReq| { &mut m.DBBKNBLOCAH },
+            "PCCPLLHICJM",
+            |m: &SettleTrackPhotoStageCsReq| { &m.PCCPLLHICJM },
+            |m: &mut SettleTrackPhotoStageCsReq| { &mut m.PCCPLLHICJM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KAGEGBLHJDJ",
+            |m: &SettleTrackPhotoStageCsReq| { &m.KAGEGBLHJDJ },
+            |m: &mut SettleTrackPhotoStageCsReq| { &mut m.KAGEGBLHJDJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SettleTrackPhotoStageCsReq>(
             "SettleTrackPhotoStageCsReq",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for SettleTrackPhotoStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.IDIEPEFFGIC = is.read_uint32()?;
+                26 => {
+                    self.GNINDCOPPND.push(is.read_message()?);
                 },
-                34 => {
-                    self.PMEHDGILNEF.push(is.read_message()?);
+                112 => {
+                    self.PCCPLLHICJM = is.read_uint32()?;
                 },
-                8 => {
-                    self.DBBKNBLOCAH = is.read_uint32()?;
+                56 => {
+                    self.KAGEGBLHJDJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +108,15 @@ impl ::protobuf::Message for SettleTrackPhotoStageCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IDIEPEFFGIC != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.IDIEPEFFGIC);
-        }
-        for value in &self.PMEHDGILNEF {
+        for value in &self.GNINDCOPPND {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.DBBKNBLOCAH != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.DBBKNBLOCAH);
+        if self.PCCPLLHICJM != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.PCCPLLHICJM);
+        }
+        if self.KAGEGBLHJDJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.KAGEGBLHJDJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for SettleTrackPhotoStageCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IDIEPEFFGIC != 0 {
-            os.write_uint32(9, self.IDIEPEFFGIC)?;
-        }
-        for v in &self.PMEHDGILNEF {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        for v in &self.GNINDCOPPND {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
-        if self.DBBKNBLOCAH != 0 {
-            os.write_uint32(1, self.DBBKNBLOCAH)?;
+        if self.PCCPLLHICJM != 0 {
+            os.write_uint32(14, self.PCCPLLHICJM)?;
+        }
+        if self.KAGEGBLHJDJ != 0 {
+            os.write_uint32(7, self.KAGEGBLHJDJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for SettleTrackPhotoStageCsReq {
     }
 
     fn clear(&mut self) {
-        self.IDIEPEFFGIC = 0;
-        self.PMEHDGILNEF.clear();
-        self.DBBKNBLOCAH = 0;
+        self.GNINDCOPPND.clear();
+        self.PCCPLLHICJM = 0;
+        self.KAGEGBLHJDJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SettleTrackPhotoStageCsReq {
         static instance: SettleTrackPhotoStageCsReq = SettleTrackPhotoStageCsReq {
-            IDIEPEFFGIC: 0,
-            PMEHDGILNEF: ::std::vec::Vec::new(),
-            DBBKNBLOCAH: 0,
+            GNINDCOPPND: ::std::vec::Vec::new(),
+            PCCPLLHICJM: 0,
+            KAGEGBLHJDJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for SettleTrackPhotoStageCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20SettleTrackPhotoStageCsReq.proto\x1a\x11HOELBNFBGHB.proto\"\x90\
-    \x01\n\x1aSettleTrackPhotoStageCsReq\x12\x20\n\x0bIDIEPEFFGIC\x18\t\x20\
-    \x01(\rR\x0bIDIEPEFFGIC\x12.\n\x0bPMEHDGILNEF\x18\x04\x20\x03(\x0b2\x0c.\
-    HOELBNFBGHBR\x0bPMEHDGILNEF\x12\x20\n\x0bDBBKNBLOCAH\x18\x01\x20\x01(\rR\
-    \x0bDBBKNBLOCAHb\x06proto3\
+    \n\x20SettleTrackPhotoStageCsReq.proto\x1a\x11ECHLGCEPDLJ.proto\"\x90\
+    \x01\n\x1aSettleTrackPhotoStageCsReq\x12.\n\x0bGNINDCOPPND\x18\x03\x20\
+    \x03(\x0b2\x0c.ECHLGCEPDLJR\x0bGNINDCOPPND\x12\x20\n\x0bPCCPLLHICJM\x18\
+    \x0e\x20\x01(\rR\x0bPCCPLLHICJM\x12\x20\n\x0bKAGEGBLHJDJ\x18\x07\x20\x01\
+    (\rR\x0bKAGEGBLHJDJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::HOELBNFBGHB::file_descriptor().clone());
+            deps.push(super::ECHLGCEPDLJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SettleTrackPhotoStageCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

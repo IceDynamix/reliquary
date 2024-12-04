@@ -138,7 +138,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x10\xe9\x07\x12\x15\n\x10Mar_7thRogueType\x10\xc8\t\x12\x13\n\x0eBoyWar\
     riorType\x10\xc1>\x12\x14\n\x0fGirlWarriorType\x10\xc2>\x12\x12\n\rBoyKn\
     ightType\x10\xc3>\x12\x13\n\x0eGirlKnightType\x10\xc4>\x12\x12\n\rBoySha\
-    manType\x10\xc5>\x12\x13\n\x0eGirlShamanType\x10\xc6>b\x06proto3\
+    manType\x10\xc5>\x12\x13\n\x0eGirlShamanType\x10\xc6>B\x15\n\x13emu.luna\
+    rcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

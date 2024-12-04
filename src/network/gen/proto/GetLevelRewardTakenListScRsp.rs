@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetLevelRewardTakenListScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetLevelRewardTakenListScRsp.KDKNCAPFNOD)
-    pub KDKNCAPFNOD: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetLevelRewardTakenListScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetLevelRewardTakenListScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:GetLevelRewardTakenListScRsp.FAJJPCEICAN)
+    pub FAJJPCEICAN: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GetLevelRewardTakenListScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl GetLevelRewardTakenListScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KDKNCAPFNOD",
-            |m: &GetLevelRewardTakenListScRsp| { &m.KDKNCAPFNOD },
-            |m: &mut GetLevelRewardTakenListScRsp| { &mut m.KDKNCAPFNOD },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetLevelRewardTakenListScRsp| { &m.retcode },
-            |m: &mut GetLevelRewardTakenListScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &GetLevelRewardTakenListScRsp| { &m.ADADHIHDHJC },
+            |m: &mut GetLevelRewardTakenListScRsp| { &mut m.ADADHIHDHJC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FAJJPCEICAN",
+            |m: &GetLevelRewardTakenListScRsp| { &m.FAJJPCEICAN },
+            |m: &mut GetLevelRewardTakenListScRsp| { &mut m.FAJJPCEICAN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetLevelRewardTakenListScRsp>(
             "GetLevelRewardTakenListScRsp",
@@ -80,14 +80,14 @@ impl ::protobuf::Message for GetLevelRewardTakenListScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.KDKNCAPFNOD)?;
+                80 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                120 => {
-                    self.KDKNCAPFNOD.push(is.read_uint32()?);
+                106 => {
+                    is.read_repeated_packed_uint32_into(&mut self.FAJJPCEICAN)?;
                 },
-                48 => {
-                    self.retcode = is.read_uint32()?;
+                104 => {
+                    self.FAJJPCEICAN.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,24 +101,24 @@ impl ::protobuf::Message for GetLevelRewardTakenListScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.KDKNCAPFNOD {
-            my_size += ::protobuf::rt::uint32_size(15, *value);
-        };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.ADADHIHDHJC);
         }
+        for value in &self.FAJJPCEICAN {
+            my_size += ::protobuf::rt::uint32_size(13, *value);
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.KDKNCAPFNOD {
-            os.write_uint32(15, *v)?;
-        };
-        if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(10, self.ADADHIHDHJC)?;
         }
+        for v in &self.FAJJPCEICAN {
+            os.write_uint32(13, *v)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -136,15 +136,15 @@ impl ::protobuf::Message for GetLevelRewardTakenListScRsp {
     }
 
     fn clear(&mut self) {
-        self.KDKNCAPFNOD.clear();
-        self.retcode = 0;
+        self.ADADHIHDHJC = 0;
+        self.FAJJPCEICAN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetLevelRewardTakenListScRsp {
         static instance: GetLevelRewardTakenListScRsp = GetLevelRewardTakenListScRsp {
-            KDKNCAPFNOD: ::std::vec::Vec::new(),
-            retcode: 0,
+            ADADHIHDHJC: 0,
+            FAJJPCEICAN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -169,9 +169,9 @@ impl ::protobuf::reflect::ProtobufValue for GetLevelRewardTakenListScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"GetLevelRewardTakenListScRsp.proto\"Z\n\x1cGetLevelRewardTakenListSc\
-    Rsp\x12\x20\n\x0bKDKNCAPFNOD\x18\x0f\x20\x03(\rR\x0bKDKNCAPFNOD\x12\x18\
-    \n\x07retcode\x18\x06\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\"GetLevelRewardTakenListScRsp.proto\"b\n\x1cGetLevelRewardTakenListSc\
+    Rsp\x12\x20\n\x0bADADHIHDHJC\x18\n\x20\x01(\rR\x0bADADHIHDHJC\x12\x20\n\
+    \x0bFAJJPCEICAN\x18\r\x20\x03(\rR\x0bFAJJPCEICANb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

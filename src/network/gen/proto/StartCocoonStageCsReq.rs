@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartCocoonStageCsReq {
     // message fields
-    // @@protoc_insertion_point(field:StartCocoonStageCsReq.MEJPGIDEBMI)
-    pub MEJPGIDEBMI: u32,
-    // @@protoc_insertion_point(field:StartCocoonStageCsReq.FPAPOFCIGGP)
-    pub FPAPOFCIGGP: u32,
-    // @@protoc_insertion_point(field:StartCocoonStageCsReq.MMMOHAJFMID)
-    pub MMMOHAJFMID: u32,
-    // @@protoc_insertion_point(field:StartCocoonStageCsReq.BLEINMLIFDD)
-    pub BLEINMLIFDD: u32,
+    // @@protoc_insertion_point(field:StartCocoonStageCsReq.prop_entity_id)
+    pub prop_entity_id: u32,
+    // @@protoc_insertion_point(field:StartCocoonStageCsReq.world_level)
+    pub world_level: u32,
+    // @@protoc_insertion_point(field:StartCocoonStageCsReq.wave)
+    pub wave: u32,
+    // @@protoc_insertion_point(field:StartCocoonStageCsReq.cocoon_id)
+    pub cocoon_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:StartCocoonStageCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl StartCocoonStageCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MEJPGIDEBMI",
-            |m: &StartCocoonStageCsReq| { &m.MEJPGIDEBMI },
-            |m: &mut StartCocoonStageCsReq| { &mut m.MEJPGIDEBMI },
+            "prop_entity_id",
+            |m: &StartCocoonStageCsReq| { &m.prop_entity_id },
+            |m: &mut StartCocoonStageCsReq| { &mut m.prop_entity_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FPAPOFCIGGP",
-            |m: &StartCocoonStageCsReq| { &m.FPAPOFCIGGP },
-            |m: &mut StartCocoonStageCsReq| { &mut m.FPAPOFCIGGP },
+            "world_level",
+            |m: &StartCocoonStageCsReq| { &m.world_level },
+            |m: &mut StartCocoonStageCsReq| { &mut m.world_level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MMMOHAJFMID",
-            |m: &StartCocoonStageCsReq| { &m.MMMOHAJFMID },
-            |m: &mut StartCocoonStageCsReq| { &mut m.MMMOHAJFMID },
+            "wave",
+            |m: &StartCocoonStageCsReq| { &m.wave },
+            |m: &mut StartCocoonStageCsReq| { &mut m.wave },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BLEINMLIFDD",
-            |m: &StartCocoonStageCsReq| { &m.BLEINMLIFDD },
-            |m: &mut StartCocoonStageCsReq| { &mut m.BLEINMLIFDD },
+            "cocoon_id",
+            |m: &StartCocoonStageCsReq| { &m.cocoon_id },
+            |m: &mut StartCocoonStageCsReq| { &mut m.cocoon_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartCocoonStageCsReq>(
             "StartCocoonStageCsReq",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for StartCocoonStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.MEJPGIDEBMI = is.read_uint32()?;
-                },
                 56 => {
-                    self.FPAPOFCIGGP = is.read_uint32()?;
+                    self.prop_entity_id = is.read_uint32()?;
+                },
+                16 => {
+                    self.world_level = is.read_uint32()?;
+                },
+                88 => {
+                    self.wave = is.read_uint32()?;
                 },
                 32 => {
-                    self.MMMOHAJFMID = is.read_uint32()?;
-                },
-                72 => {
-                    self.BLEINMLIFDD = is.read_uint32()?;
+                    self.cocoon_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,17 +118,17 @@ impl ::protobuf::Message for StartCocoonStageCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MEJPGIDEBMI != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.MEJPGIDEBMI);
+        if self.prop_entity_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.prop_entity_id);
         }
-        if self.FPAPOFCIGGP != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.FPAPOFCIGGP);
+        if self.world_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.world_level);
         }
-        if self.MMMOHAJFMID != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.MMMOHAJFMID);
+        if self.wave != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.wave);
         }
-        if self.BLEINMLIFDD != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.BLEINMLIFDD);
+        if self.cocoon_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.cocoon_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for StartCocoonStageCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MEJPGIDEBMI != 0 {
-            os.write_uint32(8, self.MEJPGIDEBMI)?;
+        if self.prop_entity_id != 0 {
+            os.write_uint32(7, self.prop_entity_id)?;
         }
-        if self.FPAPOFCIGGP != 0 {
-            os.write_uint32(7, self.FPAPOFCIGGP)?;
+        if self.world_level != 0 {
+            os.write_uint32(2, self.world_level)?;
         }
-        if self.MMMOHAJFMID != 0 {
-            os.write_uint32(4, self.MMMOHAJFMID)?;
+        if self.wave != 0 {
+            os.write_uint32(11, self.wave)?;
         }
-        if self.BLEINMLIFDD != 0 {
-            os.write_uint32(9, self.BLEINMLIFDD)?;
+        if self.cocoon_id != 0 {
+            os.write_uint32(4, self.cocoon_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for StartCocoonStageCsReq {
     }
 
     fn clear(&mut self) {
-        self.MEJPGIDEBMI = 0;
-        self.FPAPOFCIGGP = 0;
-        self.MMMOHAJFMID = 0;
-        self.BLEINMLIFDD = 0;
+        self.prop_entity_id = 0;
+        self.world_level = 0;
+        self.wave = 0;
+        self.cocoon_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartCocoonStageCsReq {
         static instance: StartCocoonStageCsReq = StartCocoonStageCsReq {
-            MEJPGIDEBMI: 0,
-            FPAPOFCIGGP: 0,
-            MMMOHAJFMID: 0,
-            BLEINMLIFDD: 0,
+            prop_entity_id: 0,
+            world_level: 0,
+            wave: 0,
+            cocoon_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for StartCocoonStageCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bStartCocoonStageCsReq.proto\"\x9f\x01\n\x15StartCocoonStageCsReq\
-    \x12\x20\n\x0bMEJPGIDEBMI\x18\x08\x20\x01(\rR\x0bMEJPGIDEBMI\x12\x20\n\
-    \x0bFPAPOFCIGGP\x18\x07\x20\x01(\rR\x0bFPAPOFCIGGP\x12\x20\n\x0bMMMOHAJF\
-    MID\x18\x04\x20\x01(\rR\x0bMMMOHAJFMID\x12\x20\n\x0bBLEINMLIFDD\x18\t\
-    \x20\x01(\rR\x0bBLEINMLIFDDb\x06proto3\
+    \n\x1bStartCocoonStageCsReq.proto\"\x8f\x01\n\x15StartCocoonStageCsReq\
+    \x12$\n\x0eprop_entity_id\x18\x07\x20\x01(\rR\x0cpropEntityId\x12\x1f\n\
+    \x0bworld_level\x18\x02\x20\x01(\rR\nworldLevel\x12\x12\n\x04wave\x18\
+    \x0b\x20\x01(\rR\x04wave\x12\x1b\n\tcocoon_id\x18\x04\x20\x01(\rR\x08coc\
+    oonIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

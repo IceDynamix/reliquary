@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetPlayerReturnMultiDropInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetPlayerReturnMultiDropInfoScRsp.AHMGFCCBCBN)
-    pub AHMGFCCBCBN: ::std::vec::Vec<super::HMDAGOFFLED::HMDAGOFFLED>,
-    // @@protoc_insertion_point(field:GetPlayerReturnMultiDropInfoScRsp.MENNNHOCNCC)
-    pub MENNNHOCNCC: ::protobuf::MessageField<super::BJKLPGEPCPO::BJKLPGEPCPO>,
-    // @@protoc_insertion_point(field:GetPlayerReturnMultiDropInfoScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetPlayerReturnMultiDropInfoScRsp.BLDJFJEBJAM)
+    pub BLDJFJEBJAM: ::protobuf::MessageField<super::JMLBJCLDMLG::JMLBJCLDMLG>,
+    // @@protoc_insertion_point(field:GetPlayerReturnMultiDropInfoScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:GetPlayerReturnMultiDropInfoScRsp.AFHHFNGFIFD)
+    pub AFHHFNGFIFD: ::std::vec::Vec<super::PHHKPJJDLDJ::PHHKPJJDLDJ>,
     // special fields
     // @@protoc_insertion_point(special_field:GetPlayerReturnMultiDropInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl GetPlayerReturnMultiDropInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "AHMGFCCBCBN",
-            |m: &GetPlayerReturnMultiDropInfoScRsp| { &m.AHMGFCCBCBN },
-            |m: &mut GetPlayerReturnMultiDropInfoScRsp| { &mut m.AHMGFCCBCBN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BJKLPGEPCPO::BJKLPGEPCPO>(
-            "MENNNHOCNCC",
-            |m: &GetPlayerReturnMultiDropInfoScRsp| { &m.MENNNHOCNCC },
-            |m: &mut GetPlayerReturnMultiDropInfoScRsp| { &mut m.MENNNHOCNCC },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JMLBJCLDMLG::JMLBJCLDMLG>(
+            "BLDJFJEBJAM",
+            |m: &GetPlayerReturnMultiDropInfoScRsp| { &m.BLDJFJEBJAM },
+            |m: &mut GetPlayerReturnMultiDropInfoScRsp| { &mut m.BLDJFJEBJAM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetPlayerReturnMultiDropInfoScRsp| { &m.retcode },
-            |m: &mut GetPlayerReturnMultiDropInfoScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &GetPlayerReturnMultiDropInfoScRsp| { &m.ADADHIHDHJC },
+            |m: &mut GetPlayerReturnMultiDropInfoScRsp| { &mut m.ADADHIHDHJC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "AFHHFNGFIFD",
+            |m: &GetPlayerReturnMultiDropInfoScRsp| { &m.AFHHFNGFIFD },
+            |m: &mut GetPlayerReturnMultiDropInfoScRsp| { &mut m.AFHHFNGFIFD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetPlayerReturnMultiDropInfoScRsp>(
             "GetPlayerReturnMultiDropInfoScRsp",
@@ -88,13 +88,13 @@ impl ::protobuf::Message for GetPlayerReturnMultiDropInfoScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 50 => {
-                    self.AHMGFCCBCBN.push(is.read_message()?);
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BLDJFJEBJAM)?;
                 },
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MENNNHOCNCC)?;
+                72 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                112 => {
-                    self.retcode = is.read_uint32()?;
+                98 => {
+                    self.AFHHFNGFIFD.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,32 +108,32 @@ impl ::protobuf::Message for GetPlayerReturnMultiDropInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.AHMGFCCBCBN {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if let Some(v) = self.MENNNHOCNCC.as_ref() {
+        if let Some(v) = self.BLDJFJEBJAM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.ADADHIHDHJC);
         }
+        for value in &self.AFHHFNGFIFD {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.AHMGFCCBCBN {
+        if let Some(v) = self.BLDJFJEBJAM.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        }
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(9, self.ADADHIHDHJC)?;
+        }
+        for v in &self.AFHHFNGFIFD {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
-        if let Some(v) = self.MENNNHOCNCC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -151,17 +151,17 @@ impl ::protobuf::Message for GetPlayerReturnMultiDropInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.AHMGFCCBCBN.clear();
-        self.MENNNHOCNCC.clear();
-        self.retcode = 0;
+        self.BLDJFJEBJAM.clear();
+        self.ADADHIHDHJC = 0;
+        self.AFHHFNGFIFD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetPlayerReturnMultiDropInfoScRsp {
         static instance: GetPlayerReturnMultiDropInfoScRsp = GetPlayerReturnMultiDropInfoScRsp {
-            AHMGFCCBCBN: ::std::vec::Vec::new(),
-            MENNNHOCNCC: ::protobuf::MessageField::none(),
-            retcode: 0,
+            BLDJFJEBJAM: ::protobuf::MessageField::none(),
+            ADADHIHDHJC: 0,
+            AFHHFNGFIFD: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,11 +186,12 @@ impl ::protobuf::reflect::ProtobufValue for GetPlayerReturnMultiDropInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'GetPlayerReturnMultiDropInfoScRsp.proto\x1a\x11BJKLPGEPCPO.proto\x1a\
-    \x11HMDAGOFFLED.proto\"\x9d\x01\n!GetPlayerReturnMultiDropInfoScRsp\x12.\
-    \n\x0bAHMGFCCBCBN\x18\x06\x20\x03(\x0b2\x0c.HMDAGOFFLEDR\x0bAHMGFCCBCBN\
-    \x12.\n\x0bMENNNHOCNCC\x18\x03\x20\x01(\x0b2\x0c.BJKLPGEPCPOR\x0bMENNNHO\
-    CNCC\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n'GetPlayerReturnMultiDropInfoScRsp.proto\x1a\x11JMLBJCLDMLG.proto\x1a\
+    \x11PHHKPJJDLDJ.proto\"\xa5\x01\n!GetPlayerReturnMultiDropInfoScRsp\x12.\
+    \n\x0bBLDJFJEBJAM\x18\x06\x20\x01(\x0b2\x0c.JMLBJCLDMLGR\x0bBLDJFJEBJAM\
+    \x12\x20\n\x0bADADHIHDHJC\x18\t\x20\x01(\rR\x0bADADHIHDHJC\x12.\n\x0bAFH\
+    HFNGFIFD\x18\x0c\x20\x03(\x0b2\x0c.PHHKPJJDLDJR\x0bAFHHFNGFIFDb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -208,8 +209,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::BJKLPGEPCPO::file_descriptor().clone());
-            deps.push(super::HMDAGOFFLED::file_descriptor().clone());
+            deps.push(super::JMLBJCLDMLG::file_descriptor().clone());
+            deps.push(super::PHHKPJJDLDJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetPlayerReturnMultiDropInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

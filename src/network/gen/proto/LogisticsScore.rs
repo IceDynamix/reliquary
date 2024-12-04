@@ -29,18 +29,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LogisticsScore {
     // message fields
-    // @@protoc_insertion_point(field:LogisticsScore.unlock_level)
-    pub unlock_level: u32,
-    // @@protoc_insertion_point(field:LogisticsScore.max_score)
-    pub max_score: u32,
     // @@protoc_insertion_point(field:LogisticsScore.last_max_score)
     pub last_max_score: u32,
-    // @@protoc_insertion_point(field:LogisticsScore.last_level)
-    pub last_level: u32,
-    // @@protoc_insertion_point(field:LogisticsScore.map_id)
-    pub map_id: u32,
+    // @@protoc_insertion_point(field:LogisticsScore.max_score)
+    pub max_score: u32,
     // @@protoc_insertion_point(field:LogisticsScore.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:LogisticsScore.map_id)
+    pub map_id: u32,
+    // @@protoc_insertion_point(field:LogisticsScore.unlock_level)
+    pub unlock_level: u32,
+    // @@protoc_insertion_point(field:LogisticsScore.last_level)
+    pub last_level: u32,
     // @@protoc_insertion_point(field:LogisticsScore.cur_score)
     pub cur_score: u32,
     // special fields
@@ -63,34 +63,34 @@ impl LogisticsScore {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unlock_level",
-            |m: &LogisticsScore| { &m.unlock_level },
-            |m: &mut LogisticsScore| { &mut m.unlock_level },
+            "last_max_score",
+            |m: &LogisticsScore| { &m.last_max_score },
+            |m: &mut LogisticsScore| { &mut m.last_max_score },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "max_score",
             |m: &LogisticsScore| { &m.max_score },
             |m: &mut LogisticsScore| { &mut m.max_score },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "last_max_score",
-            |m: &LogisticsScore| { &m.last_max_score },
-            |m: &mut LogisticsScore| { &mut m.last_max_score },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "last_level",
-            |m: &LogisticsScore| { &m.last_level },
-            |m: &mut LogisticsScore| { &mut m.last_level },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "reward",
+            |m: &LogisticsScore| { &m.reward },
+            |m: &mut LogisticsScore| { &mut m.reward },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "map_id",
             |m: &LogisticsScore| { &m.map_id },
             |m: &mut LogisticsScore| { &mut m.map_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "reward",
-            |m: &LogisticsScore| { &m.reward },
-            |m: &mut LogisticsScore| { &mut m.reward },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "unlock_level",
+            |m: &LogisticsScore| { &m.unlock_level },
+            |m: &mut LogisticsScore| { &mut m.unlock_level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "last_level",
+            |m: &LogisticsScore| { &m.last_level },
+            |m: &mut LogisticsScore| { &mut m.last_level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cur_score",
@@ -115,25 +115,25 @@ impl ::protobuf::Message for LogisticsScore {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.unlock_level = is.read_uint32()?;
+                48 => {
+                    self.last_max_score = is.read_uint32()?;
                 },
                 24 => {
                     self.max_score = is.read_uint32()?;
                 },
-                120 => {
-                    self.last_max_score = is.read_uint32()?;
-                },
-                40 => {
-                    self.last_level = is.read_uint32()?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
                 104 => {
                     self.map_id = is.read_uint32()?;
                 },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
+                72 => {
+                    self.unlock_level = is.read_uint32()?;
                 },
-                64 => {
+                16 => {
+                    self.last_level = is.read_uint32()?;
+                },
+                112 => {
                     self.cur_score = is.read_uint32()?;
                 },
                 tag => {
@@ -148,27 +148,27 @@ impl ::protobuf::Message for LogisticsScore {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.unlock_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.unlock_level);
+        if self.last_max_score != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.last_max_score);
         }
         if self.max_score != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.max_score);
-        }
-        if self.last_max_score != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.last_max_score);
-        }
-        if self.last_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.last_level);
-        }
-        if self.map_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.map_id);
         }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.map_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.map_id);
+        }
+        if self.unlock_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.unlock_level);
+        }
+        if self.last_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.last_level);
+        }
         if self.cur_score != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.cur_score);
+            my_size += ::protobuf::rt::uint32_size(14, self.cur_score);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -176,26 +176,26 @@ impl ::protobuf::Message for LogisticsScore {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.unlock_level != 0 {
-            os.write_uint32(1, self.unlock_level)?;
+        if self.last_max_score != 0 {
+            os.write_uint32(6, self.last_max_score)?;
         }
         if self.max_score != 0 {
             os.write_uint32(3, self.max_score)?;
         }
-        if self.last_max_score != 0 {
-            os.write_uint32(15, self.last_max_score)?;
-        }
-        if self.last_level != 0 {
-            os.write_uint32(5, self.last_level)?;
+        if let Some(v) = self.reward.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if self.map_id != 0 {
             os.write_uint32(13, self.map_id)?;
         }
-        if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if self.unlock_level != 0 {
+            os.write_uint32(9, self.unlock_level)?;
+        }
+        if self.last_level != 0 {
+            os.write_uint32(2, self.last_level)?;
         }
         if self.cur_score != 0 {
-            os.write_uint32(8, self.cur_score)?;
+            os.write_uint32(14, self.cur_score)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -214,24 +214,24 @@ impl ::protobuf::Message for LogisticsScore {
     }
 
     fn clear(&mut self) {
-        self.unlock_level = 0;
-        self.max_score = 0;
         self.last_max_score = 0;
-        self.last_level = 0;
-        self.map_id = 0;
+        self.max_score = 0;
         self.reward.clear();
+        self.map_id = 0;
+        self.unlock_level = 0;
+        self.last_level = 0;
         self.cur_score = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LogisticsScore {
         static instance: LogisticsScore = LogisticsScore {
-            unlock_level: 0,
-            max_score: 0,
             last_max_score: 0,
-            last_level: 0,
-            map_id: 0,
+            max_score: 0,
             reward: ::protobuf::MessageField::none(),
+            map_id: 0,
+            unlock_level: 0,
+            last_level: 0,
             cur_score: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -258,12 +258,12 @@ impl ::protobuf::reflect::ProtobufValue for LogisticsScore {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14LogisticsScore.proto\x1a\x0eItemList.proto\"\xec\x01\n\x0eLogistic\
-    sScore\x12!\n\x0cunlock_level\x18\x01\x20\x01(\rR\x0bunlockLevel\x12\x1b\
-    \n\tmax_score\x18\x03\x20\x01(\rR\x08maxScore\x12$\n\x0elast_max_score\
-    \x18\x0f\x20\x01(\rR\x0clastMaxScore\x12\x1d\n\nlast_level\x18\x05\x20\
-    \x01(\rR\tlastLevel\x12\x15\n\x06map_id\x18\r\x20\x01(\rR\x05mapId\x12!\
-    \n\x06reward\x18\x0e\x20\x01(\x0b2\t.ItemListR\x06reward\x12\x1b\n\tcur_\
-    score\x18\x08\x20\x01(\rR\x08curScoreb\x06proto3\
+    sScore\x12$\n\x0elast_max_score\x18\x06\x20\x01(\rR\x0clastMaxScore\x12\
+    \x1b\n\tmax_score\x18\x03\x20\x01(\rR\x08maxScore\x12!\n\x06reward\x18\
+    \x07\x20\x01(\x0b2\t.ItemListR\x06reward\x12\x15\n\x06map_id\x18\r\x20\
+    \x01(\rR\x05mapId\x12!\n\x0cunlock_level\x18\t\x20\x01(\rR\x0bunlockLeve\
+    l\x12\x1d\n\nlast_level\x18\x02\x20\x01(\rR\tlastLevel\x12\x1b\n\tcur_sc\
+    ore\x18\x0e\x20\x01(\rR\x08curScoreb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,22 +29,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetMbtiReportScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetMbtiReportScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:GetMbtiReportScRsp.PPNMMPFAMDA)
-    pub PPNMMPFAMDA: bool,
-    // @@protoc_insertion_point(field:GetMbtiReportScRsp.LAEAHDLHOGD)
-    pub LAEAHDLHOGD: bool,
-    // @@protoc_insertion_point(field:GetMbtiReportScRsp.KLHMMAAHANI)
-    pub KLHMMAAHANI: i32,
-    // @@protoc_insertion_point(field:GetMbtiReportScRsp.JLAFELNGAKD)
-    pub JLAFELNGAKD: i32,
-    // @@protoc_insertion_point(field:GetMbtiReportScRsp.progress)
-    pub progress: u32,
-    // @@protoc_insertion_point(field:GetMbtiReportScRsp.AKJJGCIEJMP)
-    pub AKJJGCIEJMP: ::std::vec::Vec<super::BFGPPMDHKJH::BFGPPMDHKJH>,
-    // @@protoc_insertion_point(field:GetMbtiReportScRsp.PHAKIBBELNK)
-    pub PHAKIBBELNK: ::std::vec::Vec<super::GODFNMFIENL::GODFNMFIENL>,
+    // @@protoc_insertion_point(field:GetMbtiReportScRsp.NKECMFCFJAK)
+    pub NKECMFCFJAK: bool,
+    // @@protoc_insertion_point(field:GetMbtiReportScRsp.OJPJILINGJE)
+    pub OJPJILINGJE: ::std::vec::Vec<super::OMBPAIGKBPM::OMBPAIGKBPM>,
+    // @@protoc_insertion_point(field:GetMbtiReportScRsp.PJJIHAOIDLL)
+    pub PJJIHAOIDLL: ::std::vec::Vec<super::HHGENHNPJGI::HHGENHNPJGI>,
+    // @@protoc_insertion_point(field:GetMbtiReportScRsp.HNCHHLBKJBP)
+    pub HNCHHLBKJBP: bool,
+    // @@protoc_insertion_point(field:GetMbtiReportScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:GetMbtiReportScRsp.EDENEPIIEGL)
+    pub EDENEPIIEGL: i32,
+    // @@protoc_insertion_point(field:GetMbtiReportScRsp.HBJGCJMFMKB)
+    pub HBJGCJMFMKB: i32,
+    // @@protoc_insertion_point(field:GetMbtiReportScRsp.FINLPBFNLHP)
+    pub FINLPBFNLHP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetMbtiReportScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,44 +65,44 @@ impl GetMbtiReportScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetMbtiReportScRsp| { &m.retcode },
-            |m: &mut GetMbtiReportScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PPNMMPFAMDA",
-            |m: &GetMbtiReportScRsp| { &m.PPNMMPFAMDA },
-            |m: &mut GetMbtiReportScRsp| { &mut m.PPNMMPFAMDA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LAEAHDLHOGD",
-            |m: &GetMbtiReportScRsp| { &m.LAEAHDLHOGD },
-            |m: &mut GetMbtiReportScRsp| { &mut m.LAEAHDLHOGD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KLHMMAAHANI",
-            |m: &GetMbtiReportScRsp| { &m.KLHMMAAHANI },
-            |m: &mut GetMbtiReportScRsp| { &mut m.KLHMMAAHANI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JLAFELNGAKD",
-            |m: &GetMbtiReportScRsp| { &m.JLAFELNGAKD },
-            |m: &mut GetMbtiReportScRsp| { &mut m.JLAFELNGAKD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "progress",
-            |m: &GetMbtiReportScRsp| { &m.progress },
-            |m: &mut GetMbtiReportScRsp| { &mut m.progress },
+            "NKECMFCFJAK",
+            |m: &GetMbtiReportScRsp| { &m.NKECMFCFJAK },
+            |m: &mut GetMbtiReportScRsp| { &mut m.NKECMFCFJAK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "AKJJGCIEJMP",
-            |m: &GetMbtiReportScRsp| { &m.AKJJGCIEJMP },
-            |m: &mut GetMbtiReportScRsp| { &mut m.AKJJGCIEJMP },
+            "OJPJILINGJE",
+            |m: &GetMbtiReportScRsp| { &m.OJPJILINGJE },
+            |m: &mut GetMbtiReportScRsp| { &mut m.OJPJILINGJE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PHAKIBBELNK",
-            |m: &GetMbtiReportScRsp| { &m.PHAKIBBELNK },
-            |m: &mut GetMbtiReportScRsp| { &mut m.PHAKIBBELNK },
+            "PJJIHAOIDLL",
+            |m: &GetMbtiReportScRsp| { &m.PJJIHAOIDLL },
+            |m: &mut GetMbtiReportScRsp| { &mut m.PJJIHAOIDLL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HNCHHLBKJBP",
+            |m: &GetMbtiReportScRsp| { &m.HNCHHLBKJBP },
+            |m: &mut GetMbtiReportScRsp| { &mut m.HNCHHLBKJBP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ADADHIHDHJC",
+            |m: &GetMbtiReportScRsp| { &m.ADADHIHDHJC },
+            |m: &mut GetMbtiReportScRsp| { &mut m.ADADHIHDHJC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EDENEPIIEGL",
+            |m: &GetMbtiReportScRsp| { &m.EDENEPIIEGL },
+            |m: &mut GetMbtiReportScRsp| { &mut m.EDENEPIIEGL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HBJGCJMFMKB",
+            |m: &GetMbtiReportScRsp| { &m.HBJGCJMFMKB },
+            |m: &mut GetMbtiReportScRsp| { &mut m.HBJGCJMFMKB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FINLPBFNLHP",
+            |m: &GetMbtiReportScRsp| { &m.FINLPBFNLHP },
+            |m: &mut GetMbtiReportScRsp| { &mut m.FINLPBFNLHP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetMbtiReportScRsp>(
             "GetMbtiReportScRsp",
@@ -122,29 +122,29 @@ impl ::protobuf::Message for GetMbtiReportScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                32 => {
-                    self.PPNMMPFAMDA = is.read_bool()?;
-                },
                 40 => {
-                    self.LAEAHDLHOGD = is.read_bool()?;
-                },
-                88 => {
-                    self.KLHMMAAHANI = is.read_int32()?;
-                },
-                8 => {
-                    self.JLAFELNGAKD = is.read_int32()?;
-                },
-                112 => {
-                    self.progress = is.read_uint32()?;
+                    self.NKECMFCFJAK = is.read_bool()?;
                 },
                 50 => {
-                    self.AKJJGCIEJMP.push(is.read_message()?);
+                    self.OJPJILINGJE.push(is.read_message()?);
                 },
                 66 => {
-                    self.PHAKIBBELNK.push(is.read_message()?);
+                    self.PJJIHAOIDLL.push(is.read_message()?);
+                },
+                32 => {
+                    self.HNCHHLBKJBP = is.read_bool()?;
+                },
+                88 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
+                },
+                72 => {
+                    self.EDENEPIIEGL = is.read_int32()?;
+                },
+                112 => {
+                    self.HBJGCJMFMKB = is.read_int32()?;
+                },
+                8 => {
+                    self.FINLPBFNLHP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -158,62 +158,62 @@ impl ::protobuf::Message for GetMbtiReportScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
-        }
-        if self.PPNMMPFAMDA != false {
+        if self.NKECMFCFJAK != false {
             my_size += 1 + 1;
         }
-        if self.LAEAHDLHOGD != false {
-            my_size += 1 + 1;
-        }
-        if self.KLHMMAAHANI != 0 {
-            my_size += ::protobuf::rt::int32_size(11, self.KLHMMAAHANI);
-        }
-        if self.JLAFELNGAKD != 0 {
-            my_size += ::protobuf::rt::int32_size(1, self.JLAFELNGAKD);
-        }
-        if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.progress);
-        }
-        for value in &self.AKJJGCIEJMP {
+        for value in &self.OJPJILINGJE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.PHAKIBBELNK {
+        for value in &self.PJJIHAOIDLL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.HNCHHLBKJBP != false {
+            my_size += 1 + 1;
+        }
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.ADADHIHDHJC);
+        }
+        if self.EDENEPIIEGL != 0 {
+            my_size += ::protobuf::rt::int32_size(9, self.EDENEPIIEGL);
+        }
+        if self.HBJGCJMFMKB != 0 {
+            my_size += ::protobuf::rt::int32_size(14, self.HBJGCJMFMKB);
+        }
+        if self.FINLPBFNLHP != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.FINLPBFNLHP);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+        if self.NKECMFCFJAK != false {
+            os.write_bool(5, self.NKECMFCFJAK)?;
         }
-        if self.PPNMMPFAMDA != false {
-            os.write_bool(4, self.PPNMMPFAMDA)?;
-        }
-        if self.LAEAHDLHOGD != false {
-            os.write_bool(5, self.LAEAHDLHOGD)?;
-        }
-        if self.KLHMMAAHANI != 0 {
-            os.write_int32(11, self.KLHMMAAHANI)?;
-        }
-        if self.JLAFELNGAKD != 0 {
-            os.write_int32(1, self.JLAFELNGAKD)?;
-        }
-        if self.progress != 0 {
-            os.write_uint32(14, self.progress)?;
-        }
-        for v in &self.AKJJGCIEJMP {
+        for v in &self.OJPJILINGJE {
             ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
-        for v in &self.PHAKIBBELNK {
+        for v in &self.PJJIHAOIDLL {
             ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
+        if self.HNCHHLBKJBP != false {
+            os.write_bool(4, self.HNCHHLBKJBP)?;
+        }
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(11, self.ADADHIHDHJC)?;
+        }
+        if self.EDENEPIIEGL != 0 {
+            os.write_int32(9, self.EDENEPIIEGL)?;
+        }
+        if self.HBJGCJMFMKB != 0 {
+            os.write_int32(14, self.HBJGCJMFMKB)?;
+        }
+        if self.FINLPBFNLHP != 0 {
+            os.write_uint32(1, self.FINLPBFNLHP)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -231,27 +231,27 @@ impl ::protobuf::Message for GetMbtiReportScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.PPNMMPFAMDA = false;
-        self.LAEAHDLHOGD = false;
-        self.KLHMMAAHANI = 0;
-        self.JLAFELNGAKD = 0;
-        self.progress = 0;
-        self.AKJJGCIEJMP.clear();
-        self.PHAKIBBELNK.clear();
+        self.NKECMFCFJAK = false;
+        self.OJPJILINGJE.clear();
+        self.PJJIHAOIDLL.clear();
+        self.HNCHHLBKJBP = false;
+        self.ADADHIHDHJC = 0;
+        self.EDENEPIIEGL = 0;
+        self.HBJGCJMFMKB = 0;
+        self.FINLPBFNLHP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetMbtiReportScRsp {
         static instance: GetMbtiReportScRsp = GetMbtiReportScRsp {
-            retcode: 0,
-            PPNMMPFAMDA: false,
-            LAEAHDLHOGD: false,
-            KLHMMAAHANI: 0,
-            JLAFELNGAKD: 0,
-            progress: 0,
-            AKJJGCIEJMP: ::std::vec::Vec::new(),
-            PHAKIBBELNK: ::std::vec::Vec::new(),
+            NKECMFCFJAK: false,
+            OJPJILINGJE: ::std::vec::Vec::new(),
+            PJJIHAOIDLL: ::std::vec::Vec::new(),
+            HNCHHLBKJBP: false,
+            ADADHIHDHJC: 0,
+            EDENEPIIEGL: 0,
+            HBJGCJMFMKB: 0,
+            FINLPBFNLHP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -276,15 +276,15 @@ impl ::protobuf::reflect::ProtobufValue for GetMbtiReportScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18GetMbtiReportScRsp.proto\x1a\x11BFGPPMDHKJH.proto\x1a\x11GODFNMFIE\
-    NL.proto\"\xb2\x02\n\x12GetMbtiReportScRsp\x12\x18\n\x07retcode\x18\n\
-    \x20\x01(\rR\x07retcode\x12\x20\n\x0bPPNMMPFAMDA\x18\x04\x20\x01(\x08R\
-    \x0bPPNMMPFAMDA\x12\x20\n\x0bLAEAHDLHOGD\x18\x05\x20\x01(\x08R\x0bLAEAHD\
-    LHOGD\x12\x20\n\x0bKLHMMAAHANI\x18\x0b\x20\x01(\x05R\x0bKLHMMAAHANI\x12\
-    \x20\n\x0bJLAFELNGAKD\x18\x01\x20\x01(\x05R\x0bJLAFELNGAKD\x12\x1a\n\x08\
-    progress\x18\x0e\x20\x01(\rR\x08progress\x12.\n\x0bAKJJGCIEJMP\x18\x06\
-    \x20\x03(\x0b2\x0c.BFGPPMDHKJHR\x0bAKJJGCIEJMP\x12.\n\x0bPHAKIBBELNK\x18\
-    \x08\x20\x03(\x0b2\x0c.GODFNMFIENLR\x0bPHAKIBBELNKb\x06proto3\
+    \n\x18GetMbtiReportScRsp.proto\x1a\x11HHGENHNPJGI.proto\x1a\x11OMBPAIGKB\
+    PM.proto\"\xc0\x02\n\x12GetMbtiReportScRsp\x12\x20\n\x0bNKECMFCFJAK\x18\
+    \x05\x20\x01(\x08R\x0bNKECMFCFJAK\x12.\n\x0bOJPJILINGJE\x18\x06\x20\x03(\
+    \x0b2\x0c.OMBPAIGKBPMR\x0bOJPJILINGJE\x12.\n\x0bPJJIHAOIDLL\x18\x08\x20\
+    \x03(\x0b2\x0c.HHGENHNPJGIR\x0bPJJIHAOIDLL\x12\x20\n\x0bHNCHHLBKJBP\x18\
+    \x04\x20\x01(\x08R\x0bHNCHHLBKJBP\x12\x20\n\x0bADADHIHDHJC\x18\x0b\x20\
+    \x01(\rR\x0bADADHIHDHJC\x12\x20\n\x0bEDENEPIIEGL\x18\t\x20\x01(\x05R\x0b\
+    EDENEPIIEGL\x12\x20\n\x0bHBJGCJMFMKB\x18\x0e\x20\x01(\x05R\x0bHBJGCJMFMK\
+    B\x12\x20\n\x0bFINLPBFNLHP\x18\x01\x20\x01(\rR\x0bFINLPBFNLHPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -302,8 +302,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::BFGPPMDHKJH::file_descriptor().clone());
-            deps.push(super::GODFNMFIENL::file_descriptor().clone());
+            deps.push(super::HHGENHNPJGI::file_descriptor().clone());
+            deps.push(super::OMBPAIGKBPM::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetMbtiReportScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

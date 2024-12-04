@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DeactivateFarmElementScRsp {
     // message fields
-    // @@protoc_insertion_point(field:DeactivateFarmElementScRsp.GENANPJMLBM)
-    pub GENANPJMLBM: u32,
+    // @@protoc_insertion_point(field:DeactivateFarmElementScRsp.entity_id)
+    pub entity_id: u32,
     // @@protoc_insertion_point(field:DeactivateFarmElementScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -53,9 +53,9 @@ impl DeactivateFarmElementScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GENANPJMLBM",
-            |m: &DeactivateFarmElementScRsp| { &m.GENANPJMLBM },
-            |m: &mut DeactivateFarmElementScRsp| { &mut m.GENANPJMLBM },
+            "entity_id",
+            |m: &DeactivateFarmElementScRsp| { &m.entity_id },
+            |m: &mut DeactivateFarmElementScRsp| { &mut m.entity_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for DeactivateFarmElementScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.GENANPJMLBM = is.read_uint32()?;
+                72 => {
+                    self.entity_id = is.read_uint32()?;
                 },
-                64 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -98,11 +98,11 @@ impl ::protobuf::Message for DeactivateFarmElementScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GENANPJMLBM != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.GENANPJMLBM);
+        if self.entity_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.entity_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for DeactivateFarmElementScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GENANPJMLBM != 0 {
-            os.write_uint32(1, self.GENANPJMLBM)?;
+        if self.entity_id != 0 {
+            os.write_uint32(9, self.entity_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for DeactivateFarmElementScRsp {
     }
 
     fn clear(&mut self) {
-        self.GENANPJMLBM = 0;
+        self.entity_id = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DeactivateFarmElementScRsp {
         static instance: DeactivateFarmElementScRsp = DeactivateFarmElementScRsp {
-            GENANPJMLBM: 0,
+            entity_id: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for DeactivateFarmElementScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20DeactivateFarmElementScRsp.proto\"X\n\x1aDeactivateFarmElementScRs\
-    p\x12\x20\n\x0bGENANPJMLBM\x18\x01\x20\x01(\rR\x0bGENANPJMLBM\x12\x18\n\
-    \x07retcode\x18\x08\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x20DeactivateFarmElementScRsp.proto\"S\n\x1aDeactivateFarmElementScRs\
+    p\x12\x1b\n\tentity_id\x18\t\x20\x01(\rR\x08entityId\x12\x18\n\x07retcod\
+    e\x18\n\x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

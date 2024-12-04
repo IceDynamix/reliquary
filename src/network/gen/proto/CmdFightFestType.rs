@@ -30,22 +30,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdFightFestType {
     // @@protoc_insertion_point(enum_value:CmdFightFestType.CmdFightFestTypeNone)
     CmdFightFestTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdFightFestType.CmdGetFightFestDataScRsp)
-    CmdGetFightFestDataScRsp = 7287,
-    // @@protoc_insertion_point(enum_value:CmdFightFestType.CmdFightFestUnlockSkillNotify)
-    CmdFightFestUnlockSkillNotify = 7260,
-    // @@protoc_insertion_point(enum_value:CmdFightFestType.CmdFightFestUpdateChallengeRecordNotify)
-    CmdFightFestUpdateChallengeRecordNotify = 7274,
-    // @@protoc_insertion_point(enum_value:CmdFightFestType.CmdFightFestUpdateCoinNotify)
-    CmdFightFestUpdateCoinNotify = 7282,
     // @@protoc_insertion_point(enum_value:CmdFightFestType.CmdStartFightFestScRsp)
-    CmdStartFightFestScRsp = 7252,
-    // @@protoc_insertion_point(enum_value:CmdFightFestType.CmdStartFightFestCsReq)
-    CmdStartFightFestCsReq = 7292,
+    CmdStartFightFestScRsp = 7274,
+    // @@protoc_insertion_point(enum_value:CmdFightFestType.CmdFightFestUpdateCoinNotify)
+    CmdFightFestUpdateCoinNotify = 7273,
     // @@protoc_insertion_point(enum_value:CmdFightFestType.CmdGetFightFestDataCsReq)
-    CmdGetFightFestDataCsReq = 7279,
+    CmdGetFightFestDataCsReq = 7265,
+    // @@protoc_insertion_point(enum_value:CmdFightFestType.CmdFightFestUpdateChallengeRecordNotify)
+    CmdFightFestUpdateChallengeRecordNotify = 7290,
+    // @@protoc_insertion_point(enum_value:CmdFightFestType.CmdFightFestUnlockSkillNotify)
+    CmdFightFestUnlockSkillNotify = 7287,
+    // @@protoc_insertion_point(enum_value:CmdFightFestType.CmdStartFightFestCsReq)
+    CmdStartFightFestCsReq = 7262,
+    // @@protoc_insertion_point(enum_value:CmdFightFestType.CmdGetFightFestDataScRsp)
+    CmdGetFightFestDataScRsp = 7266,
     // @@protoc_insertion_point(enum_value:CmdFightFestType.CmdFightFestScoreUpdateNotify)
-    CmdFightFestScoreUpdateNotify = 7294,
+    CmdFightFestScoreUpdateNotify = 7292,
 }
 
 impl ::protobuf::Enum for CmdFightFestType {
@@ -58,14 +58,14 @@ impl ::protobuf::Enum for CmdFightFestType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdFightFestType> {
         match value {
             0 => ::std::option::Option::Some(CmdFightFestType::CmdFightFestTypeNone),
-            7287 => ::std::option::Option::Some(CmdFightFestType::CmdGetFightFestDataScRsp),
-            7260 => ::std::option::Option::Some(CmdFightFestType::CmdFightFestUnlockSkillNotify),
-            7274 => ::std::option::Option::Some(CmdFightFestType::CmdFightFestUpdateChallengeRecordNotify),
-            7282 => ::std::option::Option::Some(CmdFightFestType::CmdFightFestUpdateCoinNotify),
-            7252 => ::std::option::Option::Some(CmdFightFestType::CmdStartFightFestScRsp),
-            7292 => ::std::option::Option::Some(CmdFightFestType::CmdStartFightFestCsReq),
-            7279 => ::std::option::Option::Some(CmdFightFestType::CmdGetFightFestDataCsReq),
-            7294 => ::std::option::Option::Some(CmdFightFestType::CmdFightFestScoreUpdateNotify),
+            7274 => ::std::option::Option::Some(CmdFightFestType::CmdStartFightFestScRsp),
+            7273 => ::std::option::Option::Some(CmdFightFestType::CmdFightFestUpdateCoinNotify),
+            7265 => ::std::option::Option::Some(CmdFightFestType::CmdGetFightFestDataCsReq),
+            7290 => ::std::option::Option::Some(CmdFightFestType::CmdFightFestUpdateChallengeRecordNotify),
+            7287 => ::std::option::Option::Some(CmdFightFestType::CmdFightFestUnlockSkillNotify),
+            7262 => ::std::option::Option::Some(CmdFightFestType::CmdStartFightFestCsReq),
+            7266 => ::std::option::Option::Some(CmdFightFestType::CmdGetFightFestDataScRsp),
+            7292 => ::std::option::Option::Some(CmdFightFestType::CmdFightFestScoreUpdateNotify),
             _ => ::std::option::Option::None
         }
     }
@@ -73,13 +73,13 @@ impl ::protobuf::Enum for CmdFightFestType {
     fn from_str(str: &str) -> ::std::option::Option<CmdFightFestType> {
         match str {
             "CmdFightFestTypeNone" => ::std::option::Option::Some(CmdFightFestType::CmdFightFestTypeNone),
-            "CmdGetFightFestDataScRsp" => ::std::option::Option::Some(CmdFightFestType::CmdGetFightFestDataScRsp),
-            "CmdFightFestUnlockSkillNotify" => ::std::option::Option::Some(CmdFightFestType::CmdFightFestUnlockSkillNotify),
-            "CmdFightFestUpdateChallengeRecordNotify" => ::std::option::Option::Some(CmdFightFestType::CmdFightFestUpdateChallengeRecordNotify),
-            "CmdFightFestUpdateCoinNotify" => ::std::option::Option::Some(CmdFightFestType::CmdFightFestUpdateCoinNotify),
             "CmdStartFightFestScRsp" => ::std::option::Option::Some(CmdFightFestType::CmdStartFightFestScRsp),
-            "CmdStartFightFestCsReq" => ::std::option::Option::Some(CmdFightFestType::CmdStartFightFestCsReq),
+            "CmdFightFestUpdateCoinNotify" => ::std::option::Option::Some(CmdFightFestType::CmdFightFestUpdateCoinNotify),
             "CmdGetFightFestDataCsReq" => ::std::option::Option::Some(CmdFightFestType::CmdGetFightFestDataCsReq),
+            "CmdFightFestUpdateChallengeRecordNotify" => ::std::option::Option::Some(CmdFightFestType::CmdFightFestUpdateChallengeRecordNotify),
+            "CmdFightFestUnlockSkillNotify" => ::std::option::Option::Some(CmdFightFestType::CmdFightFestUnlockSkillNotify),
+            "CmdStartFightFestCsReq" => ::std::option::Option::Some(CmdFightFestType::CmdStartFightFestCsReq),
+            "CmdGetFightFestDataScRsp" => ::std::option::Option::Some(CmdFightFestType::CmdGetFightFestDataScRsp),
             "CmdFightFestScoreUpdateNotify" => ::std::option::Option::Some(CmdFightFestType::CmdFightFestScoreUpdateNotify),
             _ => ::std::option::Option::None
         }
@@ -87,13 +87,13 @@ impl ::protobuf::Enum for CmdFightFestType {
 
     const VALUES: &'static [CmdFightFestType] = &[
         CmdFightFestType::CmdFightFestTypeNone,
-        CmdFightFestType::CmdGetFightFestDataScRsp,
-        CmdFightFestType::CmdFightFestUnlockSkillNotify,
-        CmdFightFestType::CmdFightFestUpdateChallengeRecordNotify,
-        CmdFightFestType::CmdFightFestUpdateCoinNotify,
         CmdFightFestType::CmdStartFightFestScRsp,
-        CmdFightFestType::CmdStartFightFestCsReq,
+        CmdFightFestType::CmdFightFestUpdateCoinNotify,
         CmdFightFestType::CmdGetFightFestDataCsReq,
+        CmdFightFestType::CmdFightFestUpdateChallengeRecordNotify,
+        CmdFightFestType::CmdFightFestUnlockSkillNotify,
+        CmdFightFestType::CmdStartFightFestCsReq,
+        CmdFightFestType::CmdGetFightFestDataScRsp,
         CmdFightFestType::CmdFightFestScoreUpdateNotify,
     ];
 }
@@ -107,13 +107,13 @@ impl ::protobuf::EnumFull for CmdFightFestType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdFightFestType::CmdFightFestTypeNone => 0,
-            CmdFightFestType::CmdGetFightFestDataScRsp => 1,
-            CmdFightFestType::CmdFightFestUnlockSkillNotify => 2,
-            CmdFightFestType::CmdFightFestUpdateChallengeRecordNotify => 3,
-            CmdFightFestType::CmdFightFestUpdateCoinNotify => 4,
-            CmdFightFestType::CmdStartFightFestScRsp => 5,
+            CmdFightFestType::CmdStartFightFestScRsp => 1,
+            CmdFightFestType::CmdFightFestUpdateCoinNotify => 2,
+            CmdFightFestType::CmdGetFightFestDataCsReq => 3,
+            CmdFightFestType::CmdFightFestUpdateChallengeRecordNotify => 4,
+            CmdFightFestType::CmdFightFestUnlockSkillNotify => 5,
             CmdFightFestType::CmdStartFightFestCsReq => 6,
-            CmdFightFestType::CmdGetFightFestDataCsReq => 7,
+            CmdFightFestType::CmdGetFightFestDataScRsp => 7,
             CmdFightFestType::CmdFightFestScoreUpdateNotify => 8,
         };
         Self::enum_descriptor().value_by_index(index)
@@ -134,12 +134,12 @@ impl CmdFightFestType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16CmdFightFestType.proto*\xbd\x02\n\x10CmdFightFestType\x12\x18\n\
-    \x14CmdFightFestTypeNone\x10\0\x12\x1d\n\x18CmdGetFightFestDataScRsp\x10\
-    \xf78\x12\"\n\x1dCmdFightFestUnlockSkillNotify\x10\xdc8\x12,\n'CmdFightF\
-    estUpdateChallengeRecordNotify\x10\xea8\x12!\n\x1cCmdFightFestUpdateCoin\
-    Notify\x10\xf28\x12\x1b\n\x16CmdStartFightFestScRsp\x10\xd48\x12\x1b\n\
-    \x16CmdStartFightFestCsReq\x10\xfc8\x12\x1d\n\x18CmdGetFightFestDataCsRe\
-    q\x10\xef8\x12\"\n\x1dCmdFightFestScoreUpdateNotify\x10\xfe8b\x06proto3\
+    \x14CmdFightFestTypeNone\x10\0\x12\x1b\n\x16CmdStartFightFestScRsp\x10\
+    \xea8\x12!\n\x1cCmdFightFestUpdateCoinNotify\x10\xe98\x12\x1d\n\x18CmdGe\
+    tFightFestDataCsReq\x10\xe18\x12,\n'CmdFightFestUpdateChallengeRecordNot\
+    ify\x10\xfa8\x12\"\n\x1dCmdFightFestUnlockSkillNotify\x10\xf78\x12\x1b\n\
+    \x16CmdStartFightFestCsReq\x10\xde8\x12\x1d\n\x18CmdGetFightFestDataScRs\
+    p\x10\xe28\x12\"\n\x1dCmdFightFestScoreUpdateNotify\x10\xfc8b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

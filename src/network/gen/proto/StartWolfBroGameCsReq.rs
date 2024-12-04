@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartWolfBroGameCsReq {
     // message fields
-    // @@protoc_insertion_point(field:StartWolfBroGameCsReq.JFEMBGKFAJE)
-    pub JFEMBGKFAJE: ::protobuf::MessageField<super::IMLDMJECKLG::IMLDMJECKLG>,
-    // @@protoc_insertion_point(field:StartWolfBroGameCsReq.id)
-    pub id: u32,
-    // @@protoc_insertion_point(field:StartWolfBroGameCsReq.IEEOCMDHLMG)
-    pub IEEOCMDHLMG: ::protobuf::MessageField<super::DGHKDAIGPMJ::DGHKDAIGPMJ>,
-    // @@protoc_insertion_point(field:StartWolfBroGameCsReq.JMAPEPGLENN)
-    pub JMAPEPGLENN: bool,
+    // @@protoc_insertion_point(field:StartWolfBroGameCsReq.DDAIMJPCDLC)
+    pub DDAIMJPCDLC: ::protobuf::MessageField<super::LKKEPEJADNF::LKKEPEJADNF>,
+    // @@protoc_insertion_point(field:StartWolfBroGameCsReq.HDMFHOPNPAI)
+    pub HDMFHOPNPAI: ::protobuf::MessageField<super::IPDPIAGBMNO::IPDPIAGBMNO>,
+    // @@protoc_insertion_point(field:StartWolfBroGameCsReq.IPNHCCODNDI)
+    pub IPNHCCODNDI: u32,
+    // @@protoc_insertion_point(field:StartWolfBroGameCsReq.EMEGKOEPOOH)
+    pub EMEGKOEPOOH: bool,
     // special fields
     // @@protoc_insertion_point(special_field:StartWolfBroGameCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,25 +56,25 @@ impl StartWolfBroGameCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IMLDMJECKLG::IMLDMJECKLG>(
-            "JFEMBGKFAJE",
-            |m: &StartWolfBroGameCsReq| { &m.JFEMBGKFAJE },
-            |m: &mut StartWolfBroGameCsReq| { &mut m.JFEMBGKFAJE },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LKKEPEJADNF::LKKEPEJADNF>(
+            "DDAIMJPCDLC",
+            |m: &StartWolfBroGameCsReq| { &m.DDAIMJPCDLC },
+            |m: &mut StartWolfBroGameCsReq| { &mut m.DDAIMJPCDLC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IPDPIAGBMNO::IPDPIAGBMNO>(
+            "HDMFHOPNPAI",
+            |m: &StartWolfBroGameCsReq| { &m.HDMFHOPNPAI },
+            |m: &mut StartWolfBroGameCsReq| { &mut m.HDMFHOPNPAI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "id",
-            |m: &StartWolfBroGameCsReq| { &m.id },
-            |m: &mut StartWolfBroGameCsReq| { &mut m.id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DGHKDAIGPMJ::DGHKDAIGPMJ>(
-            "IEEOCMDHLMG",
-            |m: &StartWolfBroGameCsReq| { &m.IEEOCMDHLMG },
-            |m: &mut StartWolfBroGameCsReq| { &mut m.IEEOCMDHLMG },
+            "IPNHCCODNDI",
+            |m: &StartWolfBroGameCsReq| { &m.IPNHCCODNDI },
+            |m: &mut StartWolfBroGameCsReq| { &mut m.IPNHCCODNDI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JMAPEPGLENN",
-            |m: &StartWolfBroGameCsReq| { &m.JMAPEPGLENN },
-            |m: &mut StartWolfBroGameCsReq| { &mut m.JMAPEPGLENN },
+            "EMEGKOEPOOH",
+            |m: &StartWolfBroGameCsReq| { &m.EMEGKOEPOOH },
+            |m: &mut StartWolfBroGameCsReq| { &mut m.EMEGKOEPOOH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartWolfBroGameCsReq>(
             "StartWolfBroGameCsReq",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for StartWolfBroGameCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JFEMBGKFAJE)?;
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DDAIMJPCDLC)?;
                 },
-                32 => {
-                    self.id = is.read_uint32()?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HDMFHOPNPAI)?;
                 },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IEEOCMDHLMG)?;
+                104 => {
+                    self.IPNHCCODNDI = is.read_uint32()?;
                 },
                 64 => {
-                    self.JMAPEPGLENN = is.read_bool()?;
+                    self.EMEGKOEPOOH = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,18 +118,18 @@ impl ::protobuf::Message for StartWolfBroGameCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.JFEMBGKFAJE.as_ref() {
+        if let Some(v) = self.DDAIMJPCDLC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.id);
-        }
-        if let Some(v) = self.IEEOCMDHLMG.as_ref() {
+        if let Some(v) = self.HDMFHOPNPAI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.JMAPEPGLENN != false {
+        if self.IPNHCCODNDI != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.IPNHCCODNDI);
+        }
+        if self.EMEGKOEPOOH != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -138,17 +138,17 @@ impl ::protobuf::Message for StartWolfBroGameCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.JFEMBGKFAJE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if let Some(v) = self.DDAIMJPCDLC.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
-        if self.id != 0 {
-            os.write_uint32(4, self.id)?;
+        if let Some(v) = self.HDMFHOPNPAI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
-        if let Some(v) = self.IEEOCMDHLMG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        if self.IPNHCCODNDI != 0 {
+            os.write_uint32(13, self.IPNHCCODNDI)?;
         }
-        if self.JMAPEPGLENN != false {
-            os.write_bool(8, self.JMAPEPGLENN)?;
+        if self.EMEGKOEPOOH != false {
+            os.write_bool(8, self.EMEGKOEPOOH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,19 +167,19 @@ impl ::protobuf::Message for StartWolfBroGameCsReq {
     }
 
     fn clear(&mut self) {
-        self.JFEMBGKFAJE.clear();
-        self.id = 0;
-        self.IEEOCMDHLMG.clear();
-        self.JMAPEPGLENN = false;
+        self.DDAIMJPCDLC.clear();
+        self.HDMFHOPNPAI.clear();
+        self.IPNHCCODNDI = 0;
+        self.EMEGKOEPOOH = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartWolfBroGameCsReq {
         static instance: StartWolfBroGameCsReq = StartWolfBroGameCsReq {
-            JFEMBGKFAJE: ::protobuf::MessageField::none(),
-            id: 0,
-            IEEOCMDHLMG: ::protobuf::MessageField::none(),
-            JMAPEPGLENN: false,
+            DDAIMJPCDLC: ::protobuf::MessageField::none(),
+            HDMFHOPNPAI: ::protobuf::MessageField::none(),
+            IPNHCCODNDI: 0,
+            EMEGKOEPOOH: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,12 +204,12 @@ impl ::protobuf::reflect::ProtobufValue for StartWolfBroGameCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bStartWolfBroGameCsReq.proto\x1a\x11DGHKDAIGPMJ.proto\x1a\x11IMLDMJ\
-    ECKLG.proto\"\xa9\x01\n\x15StartWolfBroGameCsReq\x12.\n\x0bJFEMBGKFAJE\
-    \x18\n\x20\x01(\x0b2\x0c.IMLDMJECKLGR\x0bJFEMBGKFAJE\x12\x0e\n\x02id\x18\
-    \x04\x20\x01(\rR\x02id\x12.\n\x0bIEEOCMDHLMG\x18\x05\x20\x01(\x0b2\x0c.D\
-    GHKDAIGPMJR\x0bIEEOCMDHLMG\x12\x20\n\x0bJMAPEPGLENN\x18\x08\x20\x01(\x08\
-    R\x0bJMAPEPGLENNb\x06proto3\
+    \n\x1bStartWolfBroGameCsReq.proto\x1a\x11IPDPIAGBMNO.proto\x1a\x11LKKEPE\
+    JADNF.proto\"\xbb\x01\n\x15StartWolfBroGameCsReq\x12.\n\x0bDDAIMJPCDLC\
+    \x18\x0b\x20\x01(\x0b2\x0c.LKKEPEJADNFR\x0bDDAIMJPCDLC\x12.\n\x0bHDMFHOP\
+    NPAI\x18\x04\x20\x01(\x0b2\x0c.IPDPIAGBMNOR\x0bHDMFHOPNPAI\x12\x20\n\x0b\
+    IPNHCCODNDI\x18\r\x20\x01(\rR\x0bIPNHCCODNDI\x12\x20\n\x0bEMEGKOEPOOH\
+    \x18\x08\x20\x01(\x08R\x0bEMEGKOEPOOHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -227,8 +227,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::DGHKDAIGPMJ::file_descriptor().clone());
-            deps.push(super::IMLDMJECKLG::file_descriptor().clone());
+            deps.push(super::IPDPIAGBMNO::file_descriptor().clone());
+            deps.push(super::LKKEPEJADNF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(StartWolfBroGameCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

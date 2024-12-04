@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishChessRogueNousSubStoryCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FinishChessRogueNousSubStoryCsReq.OPINDDBIODB)
-    pub OPINDDBIODB: u32,
-    // @@protoc_insertion_point(field:FinishChessRogueNousSubStoryCsReq.GKEJFEAKPAH)
-    pub GKEJFEAKPAH: u32,
+    // @@protoc_insertion_point(field:FinishChessRogueNousSubStoryCsReq.PGHAPHCHHDA)
+    pub PGHAPHCHHDA: u32,
+    // @@protoc_insertion_point(field:FinishChessRogueNousSubStoryCsReq.IBGBNAJCIHD)
+    pub IBGBNAJCIHD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FinishChessRogueNousSubStoryCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl FinishChessRogueNousSubStoryCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OPINDDBIODB",
-            |m: &FinishChessRogueNousSubStoryCsReq| { &m.OPINDDBIODB },
-            |m: &mut FinishChessRogueNousSubStoryCsReq| { &mut m.OPINDDBIODB },
+            "PGHAPHCHHDA",
+            |m: &FinishChessRogueNousSubStoryCsReq| { &m.PGHAPHCHHDA },
+            |m: &mut FinishChessRogueNousSubStoryCsReq| { &mut m.PGHAPHCHHDA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GKEJFEAKPAH",
-            |m: &FinishChessRogueNousSubStoryCsReq| { &m.GKEJFEAKPAH },
-            |m: &mut FinishChessRogueNousSubStoryCsReq| { &mut m.GKEJFEAKPAH },
+            "IBGBNAJCIHD",
+            |m: &FinishChessRogueNousSubStoryCsReq| { &m.IBGBNAJCIHD },
+            |m: &mut FinishChessRogueNousSubStoryCsReq| { &mut m.IBGBNAJCIHD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishChessRogueNousSubStoryCsReq>(
             "FinishChessRogueNousSubStoryCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for FinishChessRogueNousSubStoryCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.OPINDDBIODB = is.read_uint32()?;
+                120 => {
+                    self.PGHAPHCHHDA = is.read_uint32()?;
                 },
-                112 => {
-                    self.GKEJFEAKPAH = is.read_uint32()?;
+                32 => {
+                    self.IBGBNAJCIHD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for FinishChessRogueNousSubStoryCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OPINDDBIODB != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.OPINDDBIODB);
+        if self.PGHAPHCHHDA != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.PGHAPHCHHDA);
         }
-        if self.GKEJFEAKPAH != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.GKEJFEAKPAH);
+        if self.IBGBNAJCIHD != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.IBGBNAJCIHD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for FinishChessRogueNousSubStoryCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OPINDDBIODB != 0 {
-            os.write_uint32(9, self.OPINDDBIODB)?;
+        if self.PGHAPHCHHDA != 0 {
+            os.write_uint32(15, self.PGHAPHCHHDA)?;
         }
-        if self.GKEJFEAKPAH != 0 {
-            os.write_uint32(14, self.GKEJFEAKPAH)?;
+        if self.IBGBNAJCIHD != 0 {
+            os.write_uint32(4, self.IBGBNAJCIHD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for FinishChessRogueNousSubStoryCsReq {
     }
 
     fn clear(&mut self) {
-        self.OPINDDBIODB = 0;
-        self.GKEJFEAKPAH = 0;
+        self.PGHAPHCHHDA = 0;
+        self.IBGBNAJCIHD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishChessRogueNousSubStoryCsReq {
         static instance: FinishChessRogueNousSubStoryCsReq = FinishChessRogueNousSubStoryCsReq {
-            OPINDDBIODB: 0,
-            GKEJFEAKPAH: 0,
+            PGHAPHCHHDA: 0,
+            IBGBNAJCIHD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for FinishChessRogueNousSubStoryCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'FinishChessRogueNousSubStoryCsReq.proto\"g\n!FinishChessRogueNousSubS\
-    toryCsReq\x12\x20\n\x0bOPINDDBIODB\x18\t\x20\x01(\rR\x0bOPINDDBIODB\x12\
-    \x20\n\x0bGKEJFEAKPAH\x18\x0e\x20\x01(\rR\x0bGKEJFEAKPAHb\x06proto3\
+    toryCsReq\x12\x20\n\x0bPGHAPHCHHDA\x18\x0f\x20\x01(\rR\x0bPGHAPHCHHDA\
+    \x12\x20\n\x0bIBGBNAJCIHD\x18\x04\x20\x01(\rR\x0bIBGBNAJCIHDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

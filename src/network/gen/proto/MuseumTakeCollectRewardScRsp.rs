@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MuseumTakeCollectRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MuseumTakeCollectRewardScRsp.EJMJFLGFHJO)
-    pub EJMJFLGFHJO: u32,
-    // @@protoc_insertion_point(field:MuseumTakeCollectRewardScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:MuseumTakeCollectRewardScRsp.LPDNAMLHGNJ)
-    pub LPDNAMLHGNJ: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:MuseumTakeCollectRewardScRsp.ELPMNKHEPKJ)
+    pub ELPMNKHEPKJ: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:MuseumTakeCollectRewardScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:MuseumTakeCollectRewardScRsp.LGBJLFEMFOL)
+    pub LGBJLFEMFOL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MuseumTakeCollectRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl MuseumTakeCollectRewardScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EJMJFLGFHJO",
-            |m: &MuseumTakeCollectRewardScRsp| { &m.EJMJFLGFHJO },
-            |m: &mut MuseumTakeCollectRewardScRsp| { &mut m.EJMJFLGFHJO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &MuseumTakeCollectRewardScRsp| { &m.retcode },
-            |m: &mut MuseumTakeCollectRewardScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "LPDNAMLHGNJ",
-            |m: &MuseumTakeCollectRewardScRsp| { &m.LPDNAMLHGNJ },
-            |m: &mut MuseumTakeCollectRewardScRsp| { &mut m.LPDNAMLHGNJ },
+            "ELPMNKHEPKJ",
+            |m: &MuseumTakeCollectRewardScRsp| { &m.ELPMNKHEPKJ },
+            |m: &mut MuseumTakeCollectRewardScRsp| { &mut m.ELPMNKHEPKJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ADADHIHDHJC",
+            |m: &MuseumTakeCollectRewardScRsp| { &m.ADADHIHDHJC },
+            |m: &mut MuseumTakeCollectRewardScRsp| { &mut m.ADADHIHDHJC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LGBJLFEMFOL",
+            |m: &MuseumTakeCollectRewardScRsp| { &m.LGBJLFEMFOL },
+            |m: &mut MuseumTakeCollectRewardScRsp| { &mut m.LGBJLFEMFOL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MuseumTakeCollectRewardScRsp>(
             "MuseumTakeCollectRewardScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for MuseumTakeCollectRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.EJMJFLGFHJO = is.read_uint32()?;
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ELPMNKHEPKJ)?;
                 },
-                96 => {
-                    self.retcode = is.read_uint32()?;
+                8 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LPDNAMLHGNJ)?;
+                40 => {
+                    self.LGBJLFEMFOL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +108,15 @@ impl ::protobuf::Message for MuseumTakeCollectRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EJMJFLGFHJO != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.EJMJFLGFHJO);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
-        }
-        if let Some(v) = self.LPDNAMLHGNJ.as_ref() {
+        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.ADADHIHDHJC);
+        }
+        if self.LGBJLFEMFOL != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.LGBJLFEMFOL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for MuseumTakeCollectRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EJMJFLGFHJO != 0 {
-            os.write_uint32(14, self.EJMJFLGFHJO)?;
+        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(1, self.ADADHIHDHJC)?;
         }
-        if let Some(v) = self.LPDNAMLHGNJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if self.LGBJLFEMFOL != 0 {
+            os.write_uint32(5, self.LGBJLFEMFOL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for MuseumTakeCollectRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.EJMJFLGFHJO = 0;
-        self.retcode = 0;
-        self.LPDNAMLHGNJ.clear();
+        self.ELPMNKHEPKJ.clear();
+        self.ADADHIHDHJC = 0;
+        self.LGBJLFEMFOL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MuseumTakeCollectRewardScRsp {
         static instance: MuseumTakeCollectRewardScRsp = MuseumTakeCollectRewardScRsp {
-            EJMJFLGFHJO: 0,
-            retcode: 0,
-            LPDNAMLHGNJ: ::protobuf::MessageField::none(),
+            ELPMNKHEPKJ: ::protobuf::MessageField::none(),
+            ADADHIHDHJC: 0,
+            LGBJLFEMFOL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for MuseumTakeCollectRewardScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"MuseumTakeCollectRewardScRsp.proto\x1a\x0eItemList.proto\"\x87\x01\n\
-    \x1cMuseumTakeCollectRewardScRsp\x12\x20\n\x0bEJMJFLGFHJO\x18\x0e\x20\
-    \x01(\rR\x0bEJMJFLGFHJO\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retc\
-    ode\x12+\n\x0bLPDNAMLHGNJ\x18\x01\x20\x01(\x0b2\t.ItemListR\x0bLPDNAMLHG\
-    NJb\x06proto3\
+    \n\"MuseumTakeCollectRewardScRsp.proto\x1a\x0eItemList.proto\"\x8f\x01\n\
+    \x1cMuseumTakeCollectRewardScRsp\x12+\n\x0bELPMNKHEPKJ\x18\r\x20\x01(\
+    \x0b2\t.ItemListR\x0bELPMNKHEPKJ\x12\x20\n\x0bADADHIHDHJC\x18\x01\x20\
+    \x01(\rR\x0bADADHIHDHJC\x12\x20\n\x0bLGBJLFEMFOL\x18\x05\x20\x01(\rR\x0b\
+    LGBJLFEMFOLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

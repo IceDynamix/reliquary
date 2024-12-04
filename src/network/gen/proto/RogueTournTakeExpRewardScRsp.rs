@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournTakeExpRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournTakeExpRewardScRsp.exp)
-    pub exp: u32,
-    // @@protoc_insertion_point(field:RogueTournTakeExpRewardScRsp.LPDNAMLHGNJ)
-    pub LPDNAMLHGNJ: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:RogueTournTakeExpRewardScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:RogueTournTakeExpRewardScRsp.ONAIAHPOIBJ)
-    pub ONAIAHPOIBJ: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueTournTakeExpRewardScRsp.NOGFLOBEFAC)
+    pub NOGFLOBEFAC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueTournTakeExpRewardScRsp.ELPMNKHEPKJ)
+    pub ELPMNKHEPKJ: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:RogueTournTakeExpRewardScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:RogueTournTakeExpRewardScRsp.MAMKEEKMJHA)
+    pub MAMKEEKMJHA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournTakeExpRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,25 +56,25 @@ impl RogueTournTakeExpRewardScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "exp",
-            |m: &RogueTournTakeExpRewardScRsp| { &m.exp },
-            |m: &mut RogueTournTakeExpRewardScRsp| { &mut m.exp },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NOGFLOBEFAC",
+            |m: &RogueTournTakeExpRewardScRsp| { &m.NOGFLOBEFAC },
+            |m: &mut RogueTournTakeExpRewardScRsp| { &mut m.NOGFLOBEFAC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "LPDNAMLHGNJ",
-            |m: &RogueTournTakeExpRewardScRsp| { &m.LPDNAMLHGNJ },
-            |m: &mut RogueTournTakeExpRewardScRsp| { &mut m.LPDNAMLHGNJ },
+            "ELPMNKHEPKJ",
+            |m: &RogueTournTakeExpRewardScRsp| { &m.ELPMNKHEPKJ },
+            |m: &mut RogueTournTakeExpRewardScRsp| { &mut m.ELPMNKHEPKJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &RogueTournTakeExpRewardScRsp| { &m.retcode },
-            |m: &mut RogueTournTakeExpRewardScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &RogueTournTakeExpRewardScRsp| { &m.ADADHIHDHJC },
+            |m: &mut RogueTournTakeExpRewardScRsp| { &mut m.ADADHIHDHJC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ONAIAHPOIBJ",
-            |m: &RogueTournTakeExpRewardScRsp| { &m.ONAIAHPOIBJ },
-            |m: &mut RogueTournTakeExpRewardScRsp| { &mut m.ONAIAHPOIBJ },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MAMKEEKMJHA",
+            |m: &RogueTournTakeExpRewardScRsp| { &m.MAMKEEKMJHA },
+            |m: &mut RogueTournTakeExpRewardScRsp| { &mut m.MAMKEEKMJHA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournTakeExpRewardScRsp>(
             "RogueTournTakeExpRewardScRsp",
@@ -94,20 +94,20 @@ impl ::protobuf::Message for RogueTournTakeExpRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.exp = is.read_uint32()?;
+                114 => {
+                    is.read_repeated_packed_uint32_into(&mut self.NOGFLOBEFAC)?;
                 },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LPDNAMLHGNJ)?;
+                112 => {
+                    self.NOGFLOBEFAC.push(is.read_uint32()?);
                 },
-                72 => {
-                    self.retcode = is.read_uint32()?;
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ELPMNKHEPKJ)?;
                 },
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.ONAIAHPOIBJ)?;
+                48 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
                 16 => {
-                    self.ONAIAHPOIBJ.push(is.read_uint32()?);
+                    self.MAMKEEKMJHA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,37 +121,37 @@ impl ::protobuf::Message for RogueTournTakeExpRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.exp);
-        }
-        if let Some(v) = self.LPDNAMLHGNJ.as_ref() {
+        for value in &self.NOGFLOBEFAC {
+            my_size += ::protobuf::rt::uint32_size(14, *value);
+        };
+        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.ADADHIHDHJC);
         }
-        for value in &self.ONAIAHPOIBJ {
-            my_size += ::protobuf::rt::uint32_size(2, *value);
-        };
+        if self.MAMKEEKMJHA != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.MAMKEEKMJHA);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.exp != 0 {
-            os.write_uint32(15, self.exp)?;
-        }
-        if let Some(v) = self.LPDNAMLHGNJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
-        }
-        for v in &self.ONAIAHPOIBJ {
-            os.write_uint32(2, *v)?;
+        for v in &self.NOGFLOBEFAC {
+            os.write_uint32(14, *v)?;
         };
+        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(6, self.ADADHIHDHJC)?;
+        }
+        if self.MAMKEEKMJHA != 0 {
+            os.write_uint32(2, self.MAMKEEKMJHA)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -169,19 +169,19 @@ impl ::protobuf::Message for RogueTournTakeExpRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.exp = 0;
-        self.LPDNAMLHGNJ.clear();
-        self.retcode = 0;
-        self.ONAIAHPOIBJ.clear();
+        self.NOGFLOBEFAC.clear();
+        self.ELPMNKHEPKJ.clear();
+        self.ADADHIHDHJC = 0;
+        self.MAMKEEKMJHA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournTakeExpRewardScRsp {
         static instance: RogueTournTakeExpRewardScRsp = RogueTournTakeExpRewardScRsp {
-            exp: 0,
-            LPDNAMLHGNJ: ::protobuf::MessageField::none(),
-            retcode: 0,
-            ONAIAHPOIBJ: ::std::vec::Vec::new(),
+            NOGFLOBEFAC: ::std::vec::Vec::new(),
+            ELPMNKHEPKJ: ::protobuf::MessageField::none(),
+            ADADHIHDHJC: 0,
+            MAMKEEKMJHA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -206,11 +206,12 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournTakeExpRewardScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"RogueTournTakeExpRewardScRsp.proto\x1a\x0eItemList.proto\"\x99\x01\n\
-    \x1cRogueTournTakeExpRewardScRsp\x12\x10\n\x03exp\x18\x0f\x20\x01(\rR\
-    \x03exp\x12+\n\x0bLPDNAMLHGNJ\x18\x04\x20\x01(\x0b2\t.ItemListR\x0bLPDNA\
-    MLHGNJ\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x12\x20\n\x0bON\
-    AIAHPOIBJ\x18\x02\x20\x03(\rR\x0bONAIAHPOIBJb\x06proto3\
+    \n\"RogueTournTakeExpRewardScRsp.proto\x1a\x0eItemList.proto\"\xb1\x01\n\
+    \x1cRogueTournTakeExpRewardScRsp\x12\x20\n\x0bNOGFLOBEFAC\x18\x0e\x20\
+    \x03(\rR\x0bNOGFLOBEFAC\x12+\n\x0bELPMNKHEPKJ\x18\t\x20\x01(\x0b2\t.Item\
+    ListR\x0bELPMNKHEPKJ\x12\x20\n\x0bADADHIHDHJC\x18\x06\x20\x01(\rR\x0bADA\
+    DHIHDHJC\x12\x20\n\x0bMAMKEEKMJHA\x18\x02\x20\x01(\rR\x0bMAMKEEKMJHAb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

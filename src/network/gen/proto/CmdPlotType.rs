@@ -30,10 +30,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdPlotType {
     // @@protoc_insertion_point(enum_value:CmdPlotType.CmdPlotTypeNone)
     CmdPlotTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdPlotType.CmdFinishPlotScRsp)
-    CmdFinishPlotScRsp = 1171,
     // @@protoc_insertion_point(enum_value:CmdPlotType.CmdFinishPlotCsReq)
-    CmdFinishPlotCsReq = 1198,
+    CmdFinishPlotCsReq = 1159,
+    // @@protoc_insertion_point(enum_value:CmdPlotType.CmdFinishPlotScRsp)
+    CmdFinishPlotScRsp = 1120,
 }
 
 impl ::protobuf::Enum for CmdPlotType {
@@ -46,8 +46,8 @@ impl ::protobuf::Enum for CmdPlotType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdPlotType> {
         match value {
             0 => ::std::option::Option::Some(CmdPlotType::CmdPlotTypeNone),
-            1171 => ::std::option::Option::Some(CmdPlotType::CmdFinishPlotScRsp),
-            1198 => ::std::option::Option::Some(CmdPlotType::CmdFinishPlotCsReq),
+            1159 => ::std::option::Option::Some(CmdPlotType::CmdFinishPlotCsReq),
+            1120 => ::std::option::Option::Some(CmdPlotType::CmdFinishPlotScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -55,16 +55,16 @@ impl ::protobuf::Enum for CmdPlotType {
     fn from_str(str: &str) -> ::std::option::Option<CmdPlotType> {
         match str {
             "CmdPlotTypeNone" => ::std::option::Option::Some(CmdPlotType::CmdPlotTypeNone),
-            "CmdFinishPlotScRsp" => ::std::option::Option::Some(CmdPlotType::CmdFinishPlotScRsp),
             "CmdFinishPlotCsReq" => ::std::option::Option::Some(CmdPlotType::CmdFinishPlotCsReq),
+            "CmdFinishPlotScRsp" => ::std::option::Option::Some(CmdPlotType::CmdFinishPlotScRsp),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdPlotType] = &[
         CmdPlotType::CmdPlotTypeNone,
-        CmdPlotType::CmdFinishPlotScRsp,
         CmdPlotType::CmdFinishPlotCsReq,
+        CmdPlotType::CmdFinishPlotScRsp,
     ];
 }
 
@@ -77,8 +77,8 @@ impl ::protobuf::EnumFull for CmdPlotType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdPlotType::CmdPlotTypeNone => 0,
-            CmdPlotType::CmdFinishPlotScRsp => 1,
-            CmdPlotType::CmdFinishPlotCsReq => 2,
+            CmdPlotType::CmdFinishPlotCsReq => 1,
+            CmdPlotType::CmdFinishPlotScRsp => 2,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -98,8 +98,8 @@ impl CmdPlotType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CmdPlotType.proto*T\n\x0bCmdPlotType\x12\x13\n\x0fCmdPlotTypeNone\
-    \x10\0\x12\x17\n\x12CmdFinishPlotScRsp\x10\x93\t\x12\x17\n\x12CmdFinishP\
-    lotCsReq\x10\xae\tb\x06proto3\
+    \x10\0\x12\x17\n\x12CmdFinishPlotCsReq\x10\x87\t\x12\x17\n\x12CmdFinishP\
+    lotScRsp\x10\xe0\x08b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

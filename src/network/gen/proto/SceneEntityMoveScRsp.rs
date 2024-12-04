@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneEntityMoveScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SceneEntityMoveScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:SceneEntityMoveScRsp.EOKBDLFCJKI)
-    pub EOKBDLFCJKI: ::std::vec::Vec<super::NDDCJGJPEME::NDDCJGJPEME>,
-    // @@protoc_insertion_point(field:SceneEntityMoveScRsp.KDMJFLFLCHN)
-    pub KDMJFLFLCHN: ::protobuf::MessageField<super::HGGLCIFHMJM::HGGLCIFHMJM>,
+    // @@protoc_insertion_point(field:SceneEntityMoveScRsp.JFNNHMJBMKP)
+    pub JFNNHMJBMKP: ::std::vec::Vec<super::DJOMEMKCBNB::DJOMEMKCBNB>,
+    // @@protoc_insertion_point(field:SceneEntityMoveScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:SceneEntityMoveScRsp.PHIFKLFANPP)
+    pub PHIFKLFANPP: ::protobuf::MessageField<super::NOEMPBNIPII::NOEMPBNIPII>,
     // special fields
     // @@protoc_insertion_point(special_field:SceneEntityMoveScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl SceneEntityMoveScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &SceneEntityMoveScRsp| { &m.retcode },
-            |m: &mut SceneEntityMoveScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EOKBDLFCJKI",
-            |m: &SceneEntityMoveScRsp| { &m.EOKBDLFCJKI },
-            |m: &mut SceneEntityMoveScRsp| { &mut m.EOKBDLFCJKI },
+            "JFNNHMJBMKP",
+            |m: &SceneEntityMoveScRsp| { &m.JFNNHMJBMKP },
+            |m: &mut SceneEntityMoveScRsp| { &mut m.JFNNHMJBMKP },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HGGLCIFHMJM::HGGLCIFHMJM>(
-            "KDMJFLFLCHN",
-            |m: &SceneEntityMoveScRsp| { &m.KDMJFLFLCHN },
-            |m: &mut SceneEntityMoveScRsp| { &mut m.KDMJFLFLCHN },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ADADHIHDHJC",
+            |m: &SceneEntityMoveScRsp| { &m.ADADHIHDHJC },
+            |m: &mut SceneEntityMoveScRsp| { &mut m.ADADHIHDHJC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NOEMPBNIPII::NOEMPBNIPII>(
+            "PHIFKLFANPP",
+            |m: &SceneEntityMoveScRsp| { &m.PHIFKLFANPP },
+            |m: &mut SceneEntityMoveScRsp| { &mut m.PHIFKLFANPP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SceneEntityMoveScRsp>(
             "SceneEntityMoveScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for SceneEntityMoveScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.retcode = is.read_uint32()?;
+                18 => {
+                    self.JFNNHMJBMKP.push(is.read_message()?);
                 },
-                90 => {
-                    self.EOKBDLFCJKI.push(is.read_message()?);
+                112 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KDMJFLFLCHN)?;
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PHIFKLFANPP)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for SceneEntityMoveScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
-        }
-        for value in &self.EOKBDLFCJKI {
+        for value in &self.JFNNHMJBMKP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.KDMJFLFLCHN.as_ref() {
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.ADADHIHDHJC);
+        }
+        if let Some(v) = self.PHIFKLFANPP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -125,14 +125,14 @@ impl ::protobuf::Message for SceneEntityMoveScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
-        }
-        for v in &self.EOKBDLFCJKI {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        for v in &self.JFNNHMJBMKP {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
-        if let Some(v) = self.KDMJFLFLCHN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(14, self.ADADHIHDHJC)?;
+        }
+        if let Some(v) = self.PHIFKLFANPP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,17 +151,17 @@ impl ::protobuf::Message for SceneEntityMoveScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.EOKBDLFCJKI.clear();
-        self.KDMJFLFLCHN.clear();
+        self.JFNNHMJBMKP.clear();
+        self.ADADHIHDHJC = 0;
+        self.PHIFKLFANPP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneEntityMoveScRsp {
         static instance: SceneEntityMoveScRsp = SceneEntityMoveScRsp {
-            retcode: 0,
-            EOKBDLFCJKI: ::std::vec::Vec::new(),
-            KDMJFLFLCHN: ::protobuf::MessageField::none(),
+            JFNNHMJBMKP: ::std::vec::Vec::new(),
+            ADADHIHDHJC: 0,
+            PHIFKLFANPP: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,11 +186,11 @@ impl ::protobuf::reflect::ProtobufValue for SceneEntityMoveScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aSceneEntityMoveScRsp.proto\x1a\x11HGGLCIFHMJM.proto\x1a\x11NDDCJGJ\
-    PEME.proto\"\x90\x01\n\x14SceneEntityMoveScRsp\x12\x18\n\x07retcode\x18\
-    \x08\x20\x01(\rR\x07retcode\x12.\n\x0bEOKBDLFCJKI\x18\x0b\x20\x03(\x0b2\
-    \x0c.NDDCJGJPEMER\x0bEOKBDLFCJKI\x12.\n\x0bKDMJFLFLCHN\x18\x0c\x20\x01(\
-    \x0b2\x0c.HGGLCIFHMJMR\x0bKDMJFLFLCHNb\x06proto3\
+    \n\x1aSceneEntityMoveScRsp.proto\x1a\x11DJOMEMKCBNB.proto\x1a\x11NOEMPBN\
+    IPII.proto\"\x98\x01\n\x14SceneEntityMoveScRsp\x12.\n\x0bJFNNHMJBMKP\x18\
+    \x02\x20\x03(\x0b2\x0c.DJOMEMKCBNBR\x0bJFNNHMJBMKP\x12\x20\n\x0bADADHIHD\
+    HJC\x18\x0e\x20\x01(\rR\x0bADADHIHDHJC\x12.\n\x0bPHIFKLFANPP\x18\n\x20\
+    \x01(\x0b2\x0c.NOEMPBNIPIIR\x0bPHIFKLFANPPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -208,8 +208,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::HGGLCIFHMJM::file_descriptor().clone());
-            deps.push(super::NDDCJGJPEME::file_descriptor().clone());
+            deps.push(super::DJOMEMKCBNB::file_descriptor().clone());
+            deps.push(super::NOEMPBNIPII::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SceneEntityMoveScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

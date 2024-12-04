@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterFantasticStoryActivityStageScRsp {
     // message fields
-    // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageScRsp.KLANEABKELD)
-    pub KLANEABKELD: u32,
-    // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageScRsp.JONHHDCOHBI)
-    pub JONHHDCOHBI: ::protobuf::MessageField<super::AHFFHEBEEGC::AHFFHEBEEGC>,
-    // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageScRsp.IJEPENGMPLG)
-    pub IJEPENGMPLG: u32,
+    // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageScRsp.MGIEBBICLCK)
+    pub MGIEBBICLCK: u32,
+    // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageScRsp.AIHBDNKBNMH)
+    pub AIHBDNKBNMH: u32,
+    // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageScRsp.BBKGPAJCCBM)
+    pub BBKGPAJCCBM: ::protobuf::MessageField<super::CHDPLFOHLCN::CHDPLFOHLCN>,
     // special fields
     // @@protoc_insertion_point(special_field:EnterFantasticStoryActivityStageScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl EnterFantasticStoryActivityStageScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &EnterFantasticStoryActivityStageScRsp| { &m.retcode },
-            |m: &mut EnterFantasticStoryActivityStageScRsp| { &mut m.retcode },
+            "MGIEBBICLCK",
+            |m: &EnterFantasticStoryActivityStageScRsp| { &m.MGIEBBICLCK },
+            |m: &mut EnterFantasticStoryActivityStageScRsp| { &mut m.MGIEBBICLCK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KLANEABKELD",
-            |m: &EnterFantasticStoryActivityStageScRsp| { &m.KLANEABKELD },
-            |m: &mut EnterFantasticStoryActivityStageScRsp| { &mut m.KLANEABKELD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AHFFHEBEEGC::AHFFHEBEEGC>(
-            "JONHHDCOHBI",
-            |m: &EnterFantasticStoryActivityStageScRsp| { &m.JONHHDCOHBI },
-            |m: &mut EnterFantasticStoryActivityStageScRsp| { &mut m.JONHHDCOHBI },
+            "AIHBDNKBNMH",
+            |m: &EnterFantasticStoryActivityStageScRsp| { &m.AIHBDNKBNMH },
+            |m: &mut EnterFantasticStoryActivityStageScRsp| { &mut m.AIHBDNKBNMH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IJEPENGMPLG",
-            |m: &EnterFantasticStoryActivityStageScRsp| { &m.IJEPENGMPLG },
-            |m: &mut EnterFantasticStoryActivityStageScRsp| { &mut m.IJEPENGMPLG },
+            "ADADHIHDHJC",
+            |m: &EnterFantasticStoryActivityStageScRsp| { &m.ADADHIHDHJC },
+            |m: &mut EnterFantasticStoryActivityStageScRsp| { &mut m.ADADHIHDHJC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CHDPLFOHLCN::CHDPLFOHLCN>(
+            "BBKGPAJCCBM",
+            |m: &EnterFantasticStoryActivityStageScRsp| { &m.BBKGPAJCCBM },
+            |m: &mut EnterFantasticStoryActivityStageScRsp| { &mut m.BBKGPAJCCBM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterFantasticStoryActivityStageScRsp>(
             "EnterFantasticStoryActivityStageScRsp",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for EnterFantasticStoryActivityStageScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                16 => {
+                    self.MGIEBBICLCK = is.read_uint32()?;
+                },
+                24 => {
+                    self.AIHBDNKBNMH = is.read_uint32()?;
+                },
                 80 => {
-                    self.retcode = is.read_uint32()?;
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                120 => {
-                    self.KLANEABKELD = is.read_uint32()?;
-                },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JONHHDCOHBI)?;
-                },
-                72 => {
-                    self.IJEPENGMPLG = is.read_uint32()?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BBKGPAJCCBM)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,18 +118,18 @@ impl ::protobuf::Message for EnterFantasticStoryActivityStageScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+        if self.MGIEBBICLCK != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.MGIEBBICLCK);
         }
-        if self.KLANEABKELD != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.KLANEABKELD);
+        if self.AIHBDNKBNMH != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.AIHBDNKBNMH);
         }
-        if let Some(v) = self.JONHHDCOHBI.as_ref() {
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.ADADHIHDHJC);
+        }
+        if let Some(v) = self.BBKGPAJCCBM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.IJEPENGMPLG != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.IJEPENGMPLG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for EnterFantasticStoryActivityStageScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+        if self.MGIEBBICLCK != 0 {
+            os.write_uint32(2, self.MGIEBBICLCK)?;
         }
-        if self.KLANEABKELD != 0 {
-            os.write_uint32(15, self.KLANEABKELD)?;
+        if self.AIHBDNKBNMH != 0 {
+            os.write_uint32(3, self.AIHBDNKBNMH)?;
         }
-        if let Some(v) = self.JONHHDCOHBI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(10, self.ADADHIHDHJC)?;
         }
-        if self.IJEPENGMPLG != 0 {
-            os.write_uint32(9, self.IJEPENGMPLG)?;
+        if let Some(v) = self.BBKGPAJCCBM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for EnterFantasticStoryActivityStageScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.KLANEABKELD = 0;
-        self.JONHHDCOHBI.clear();
-        self.IJEPENGMPLG = 0;
+        self.MGIEBBICLCK = 0;
+        self.AIHBDNKBNMH = 0;
+        self.ADADHIHDHJC = 0;
+        self.BBKGPAJCCBM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterFantasticStoryActivityStageScRsp {
         static instance: EnterFantasticStoryActivityStageScRsp = EnterFantasticStoryActivityStageScRsp {
-            retcode: 0,
-            KLANEABKELD: 0,
-            JONHHDCOHBI: ::protobuf::MessageField::none(),
-            IJEPENGMPLG: 0,
+            MGIEBBICLCK: 0,
+            AIHBDNKBNMH: 0,
+            ADADHIHDHJC: 0,
+            BBKGPAJCCBM: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,12 +203,12 @@ impl ::protobuf::reflect::ProtobufValue for EnterFantasticStoryActivityStageScRs
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n+EnterFantasticStoryActivityStageScRsp.proto\x1a\x11AHFFHEBEEGC.proto\
-    \"\xb5\x01\n%EnterFantasticStoryActivityStageScRsp\x12\x18\n\x07retcode\
-    \x18\n\x20\x01(\rR\x07retcode\x12\x20\n\x0bKLANEABKELD\x18\x0f\x20\x01(\
-    \rR\x0bKLANEABKELD\x12.\n\x0bJONHHDCOHBI\x18\x04\x20\x01(\x0b2\x0c.AHFFH\
-    EBEEGCR\x0bJONHHDCOHBI\x12\x20\n\x0bIJEPENGMPLG\x18\t\x20\x01(\rR\x0bIJE\
-    PENGMPLGb\x06proto3\
+    \n+EnterFantasticStoryActivityStageScRsp.proto\x1a\x11CHDPLFOHLCN.proto\
+    \"\xbd\x01\n%EnterFantasticStoryActivityStageScRsp\x12\x20\n\x0bMGIEBBIC\
+    LCK\x18\x02\x20\x01(\rR\x0bMGIEBBICLCK\x12\x20\n\x0bAIHBDNKBNMH\x18\x03\
+    \x20\x01(\rR\x0bAIHBDNKBNMH\x12\x20\n\x0bADADHIHDHJC\x18\n\x20\x01(\rR\
+    \x0bADADHIHDHJC\x12.\n\x0bBBKGPAJCCBM\x18\x07\x20\x01(\x0b2\x0c.CHDPLFOH\
+    LCNR\x0bBBKGPAJCCBMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -226,7 +226,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::AHFFHEBEEGC::file_descriptor().clone());
+            deps.push(super::CHDPLFOHLCN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EnterFantasticStoryActivityStageScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

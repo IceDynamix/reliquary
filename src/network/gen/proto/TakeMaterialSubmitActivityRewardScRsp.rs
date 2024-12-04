@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeMaterialSubmitActivityRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeMaterialSubmitActivityRewardScRsp.LPDNAMLHGNJ)
-    pub LPDNAMLHGNJ: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:TakeMaterialSubmitActivityRewardScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:TakeMaterialSubmitActivityRewardScRsp.NCEJNFFMGGF)
-    pub NCEJNFFMGGF: u32,
+    // @@protoc_insertion_point(field:TakeMaterialSubmitActivityRewardScRsp.ELPMNKHEPKJ)
+    pub ELPMNKHEPKJ: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:TakeMaterialSubmitActivityRewardScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:TakeMaterialSubmitActivityRewardScRsp.MNCFMFJEOIG)
+    pub MNCFMFJEOIG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeMaterialSubmitActivityRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl TakeMaterialSubmitActivityRewardScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "LPDNAMLHGNJ",
-            |m: &TakeMaterialSubmitActivityRewardScRsp| { &m.LPDNAMLHGNJ },
-            |m: &mut TakeMaterialSubmitActivityRewardScRsp| { &mut m.LPDNAMLHGNJ },
+            "ELPMNKHEPKJ",
+            |m: &TakeMaterialSubmitActivityRewardScRsp| { &m.ELPMNKHEPKJ },
+            |m: &mut TakeMaterialSubmitActivityRewardScRsp| { &mut m.ELPMNKHEPKJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &TakeMaterialSubmitActivityRewardScRsp| { &m.retcode },
-            |m: &mut TakeMaterialSubmitActivityRewardScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &TakeMaterialSubmitActivityRewardScRsp| { &m.ADADHIHDHJC },
+            |m: &mut TakeMaterialSubmitActivityRewardScRsp| { &mut m.ADADHIHDHJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NCEJNFFMGGF",
-            |m: &TakeMaterialSubmitActivityRewardScRsp| { &m.NCEJNFFMGGF },
-            |m: &mut TakeMaterialSubmitActivityRewardScRsp| { &mut m.NCEJNFFMGGF },
+            "MNCFMFJEOIG",
+            |m: &TakeMaterialSubmitActivityRewardScRsp| { &m.MNCFMFJEOIG },
+            |m: &mut TakeMaterialSubmitActivityRewardScRsp| { &mut m.MNCFMFJEOIG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeMaterialSubmitActivityRewardScRsp>(
             "TakeMaterialSubmitActivityRewardScRsp",
@@ -88,13 +88,13 @@ impl ::protobuf::Message for TakeMaterialSubmitActivityRewardScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LPDNAMLHGNJ)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ELPMNKHEPKJ)?;
                 },
-                88 => {
-                    self.retcode = is.read_uint32()?;
+                120 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                24 => {
-                    self.NCEJNFFMGGF = is.read_uint32()?;
+                72 => {
+                    self.MNCFMFJEOIG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +108,15 @@ impl ::protobuf::Message for TakeMaterialSubmitActivityRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.LPDNAMLHGNJ.as_ref() {
+        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.ADADHIHDHJC);
         }
-        if self.NCEJNFFMGGF != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.NCEJNFFMGGF);
+        if self.MNCFMFJEOIG != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.MNCFMFJEOIG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for TakeMaterialSubmitActivityRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.LPDNAMLHGNJ.as_ref() {
+        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(15, self.ADADHIHDHJC)?;
         }
-        if self.NCEJNFFMGGF != 0 {
-            os.write_uint32(3, self.NCEJNFFMGGF)?;
+        if self.MNCFMFJEOIG != 0 {
+            os.write_uint32(9, self.MNCFMFJEOIG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for TakeMaterialSubmitActivityRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.LPDNAMLHGNJ.clear();
-        self.retcode = 0;
-        self.NCEJNFFMGGF = 0;
+        self.ELPMNKHEPKJ.clear();
+        self.ADADHIHDHJC = 0;
+        self.MNCFMFJEOIG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeMaterialSubmitActivityRewardScRsp {
         static instance: TakeMaterialSubmitActivityRewardScRsp = TakeMaterialSubmitActivityRewardScRsp {
-            LPDNAMLHGNJ: ::protobuf::MessageField::none(),
-            retcode: 0,
-            NCEJNFFMGGF: 0,
+            ELPMNKHEPKJ: ::protobuf::MessageField::none(),
+            ADADHIHDHJC: 0,
+            MNCFMFJEOIG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for TakeMaterialSubmitActivityRewardScRs
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+TakeMaterialSubmitActivityRewardScRsp.proto\x1a\x0eItemList.proto\"\
-    \x90\x01\n%TakeMaterialSubmitActivityRewardScRsp\x12+\n\x0bLPDNAMLHGNJ\
-    \x18\r\x20\x01(\x0b2\t.ItemListR\x0bLPDNAMLHGNJ\x12\x18\n\x07retcode\x18\
-    \x0b\x20\x01(\rR\x07retcode\x12\x20\n\x0bNCEJNFFMGGF\x18\x03\x20\x01(\rR\
-    \x0bNCEJNFFMGGFb\x06proto3\
+    \x98\x01\n%TakeMaterialSubmitActivityRewardScRsp\x12+\n\x0bELPMNKHEPKJ\
+    \x18\r\x20\x01(\x0b2\t.ItemListR\x0bELPMNKHEPKJ\x12\x20\n\x0bADADHIHDHJC\
+    \x18\x0f\x20\x01(\rR\x0bADADHIHDHJC\x12\x20\n\x0bMNCFMFJEOIG\x18\t\x20\
+    \x01(\rR\x0bMNCFMFJEOIGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdateGunPlayDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:UpdateGunPlayDataScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:UpdateGunPlayDataScRsp.GHCJKLFLCEM)
-    pub GHCJKLFLCEM: ::protobuf::MessageField<super::NNEOOKDGDIK::NNEOOKDGDIK>,
+    // @@protoc_insertion_point(field:UpdateGunPlayDataScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:UpdateGunPlayDataScRsp.BACCBPEJEPC)
+    pub BACCBPEJEPC: ::protobuf::MessageField<super::LIPOPPCIKOO::LIPOPPCIKOO>,
     // special fields
     // @@protoc_insertion_point(special_field:UpdateGunPlayDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl UpdateGunPlayDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &UpdateGunPlayDataScRsp| { &m.retcode },
-            |m: &mut UpdateGunPlayDataScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &UpdateGunPlayDataScRsp| { &m.ADADHIHDHJC },
+            |m: &mut UpdateGunPlayDataScRsp| { &mut m.ADADHIHDHJC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NNEOOKDGDIK::NNEOOKDGDIK>(
-            "GHCJKLFLCEM",
-            |m: &UpdateGunPlayDataScRsp| { &m.GHCJKLFLCEM },
-            |m: &mut UpdateGunPlayDataScRsp| { &mut m.GHCJKLFLCEM },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LIPOPPCIKOO::LIPOPPCIKOO>(
+            "BACCBPEJEPC",
+            |m: &UpdateGunPlayDataScRsp| { &m.BACCBPEJEPC },
+            |m: &mut UpdateGunPlayDataScRsp| { &mut m.BACCBPEJEPC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdateGunPlayDataScRsp>(
             "UpdateGunPlayDataScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for UpdateGunPlayDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.retcode = is.read_uint32()?;
+                112 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GHCJKLFLCEM)?;
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BACCBPEJEPC)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for UpdateGunPlayDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.ADADHIHDHJC);
         }
-        if let Some(v) = self.GHCJKLFLCEM.as_ref() {
+        if let Some(v) = self.BACCBPEJEPC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for UpdateGunPlayDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(14, self.ADADHIHDHJC)?;
         }
-        if let Some(v) = self.GHCJKLFLCEM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if let Some(v) = self.BACCBPEJEPC.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for UpdateGunPlayDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.GHCJKLFLCEM.clear();
+        self.ADADHIHDHJC = 0;
+        self.BACCBPEJEPC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateGunPlayDataScRsp {
         static instance: UpdateGunPlayDataScRsp = UpdateGunPlayDataScRsp {
-            retcode: 0,
-            GHCJKLFLCEM: ::protobuf::MessageField::none(),
+            ADADHIHDHJC: 0,
+            BACCBPEJEPC: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for UpdateGunPlayDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cUpdateGunPlayDataScRsp.proto\x1a\x11NNEOOKDGDIK.proto\"b\n\x16Upda\
-    teGunPlayDataScRsp\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\
-    \x12.\n\x0bGHCJKLFLCEM\x18\r\x20\x01(\x0b2\x0c.NNEOOKDGDIKR\x0bGHCJKLFLC\
-    EMb\x06proto3\
+    \n\x1cUpdateGunPlayDataScRsp.proto\x1a\x11LIPOPPCIKOO.proto\"j\n\x16Upda\
+    teGunPlayDataScRsp\x12\x20\n\x0bADADHIHDHJC\x18\x0e\x20\x01(\rR\x0bADADH\
+    IHDHJC\x12.\n\x0bBACCBPEJEPC\x18\x06\x20\x01(\x0b2\x0c.LIPOPPCIKOOR\x0bB\
+    ACCBPEJEPCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::NNEOOKDGDIK::file_descriptor().clone());
+            deps.push(super::LIPOPPCIKOO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(UpdateGunPlayDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

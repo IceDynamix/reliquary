@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetReplayTokenScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetReplayTokenScRsp.IDIEPEFFGIC)
-    pub IDIEPEFFGIC: u32,
-    // @@protoc_insertion_point(field:GetReplayTokenScRsp.BNCOODAHHPC)
-    pub BNCOODAHHPC: ::std::string::String,
-    // @@protoc_insertion_point(field:GetReplayTokenScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:GetReplayTokenScRsp.FIIGLKMJODG)
-    pub FIIGLKMJODG: ::protobuf::EnumOrUnknown<super::GPLHKPMPAOH::GPLHKPMPAOH>,
-    // @@protoc_insertion_point(field:GetReplayTokenScRsp.MBIKFFDNCPN)
-    pub MBIKFFDNCPN: ::std::string::String,
+    // @@protoc_insertion_point(field:GetReplayTokenScRsp.LOGEBIDMFJD)
+    pub LOGEBIDMFJD: ::protobuf::EnumOrUnknown<super::JAOPMDDBNHF::JAOPMDDBNHF>,
+    // @@protoc_insertion_point(field:GetReplayTokenScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:GetReplayTokenScRsp.KAGEGBLHJDJ)
+    pub KAGEGBLHJDJ: u32,
+    // @@protoc_insertion_point(field:GetReplayTokenScRsp.BMIEOLBAOBG)
+    pub BMIEOLBAOBG: ::std::string::String,
+    // @@protoc_insertion_point(field:GetReplayTokenScRsp.FJCKEOKNBJL)
+    pub FJCKEOKNBJL: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:GetReplayTokenScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,29 +59,29 @@ impl GetReplayTokenScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IDIEPEFFGIC",
-            |m: &GetReplayTokenScRsp| { &m.IDIEPEFFGIC },
-            |m: &mut GetReplayTokenScRsp| { &mut m.IDIEPEFFGIC },
+            "LOGEBIDMFJD",
+            |m: &GetReplayTokenScRsp| { &m.LOGEBIDMFJD },
+            |m: &mut GetReplayTokenScRsp| { &mut m.LOGEBIDMFJD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BNCOODAHHPC",
-            |m: &GetReplayTokenScRsp| { &m.BNCOODAHHPC },
-            |m: &mut GetReplayTokenScRsp| { &mut m.BNCOODAHHPC },
+            "ADADHIHDHJC",
+            |m: &GetReplayTokenScRsp| { &m.ADADHIHDHJC },
+            |m: &mut GetReplayTokenScRsp| { &mut m.ADADHIHDHJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetReplayTokenScRsp| { &m.retcode },
-            |m: &mut GetReplayTokenScRsp| { &mut m.retcode },
+            "KAGEGBLHJDJ",
+            |m: &GetReplayTokenScRsp| { &m.KAGEGBLHJDJ },
+            |m: &mut GetReplayTokenScRsp| { &mut m.KAGEGBLHJDJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FIIGLKMJODG",
-            |m: &GetReplayTokenScRsp| { &m.FIIGLKMJODG },
-            |m: &mut GetReplayTokenScRsp| { &mut m.FIIGLKMJODG },
+            "BMIEOLBAOBG",
+            |m: &GetReplayTokenScRsp| { &m.BMIEOLBAOBG },
+            |m: &mut GetReplayTokenScRsp| { &mut m.BMIEOLBAOBG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MBIKFFDNCPN",
-            |m: &GetReplayTokenScRsp| { &m.MBIKFFDNCPN },
-            |m: &mut GetReplayTokenScRsp| { &mut m.MBIKFFDNCPN },
+            "FJCKEOKNBJL",
+            |m: &GetReplayTokenScRsp| { &m.FJCKEOKNBJL },
+            |m: &mut GetReplayTokenScRsp| { &mut m.FJCKEOKNBJL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetReplayTokenScRsp>(
             "GetReplayTokenScRsp",
@@ -101,20 +101,20 @@ impl ::protobuf::Message for GetReplayTokenScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.IDIEPEFFGIC = is.read_uint32()?;
-                },
-                106 => {
-                    self.BNCOODAHHPC = is.read_string()?;
-                },
                 64 => {
-                    self.retcode = is.read_uint32()?;
+                    self.LOGEBIDMFJD = is.read_enum_or_unknown()?;
                 },
-                48 => {
-                    self.FIIGLKMJODG = is.read_enum_or_unknown()?;
+                8 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
+                },
+                112 => {
+                    self.KAGEGBLHJDJ = is.read_uint32()?;
                 },
                 58 => {
-                    self.MBIKFFDNCPN = is.read_string()?;
+                    self.BMIEOLBAOBG = is.read_string()?;
+                },
+                34 => {
+                    self.FJCKEOKNBJL = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,20 +128,20 @@ impl ::protobuf::Message for GetReplayTokenScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IDIEPEFFGIC != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.IDIEPEFFGIC);
+        if self.LOGEBIDMFJD != ::protobuf::EnumOrUnknown::new(super::JAOPMDDBNHF::JAOPMDDBNHF::REPLAY_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(8, self.LOGEBIDMFJD.value());
         }
-        if !self.BNCOODAHHPC.is_empty() {
-            my_size += ::protobuf::rt::string_size(13, &self.BNCOODAHHPC);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.ADADHIHDHJC);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        if self.KAGEGBLHJDJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.KAGEGBLHJDJ);
         }
-        if self.FIIGLKMJODG != ::protobuf::EnumOrUnknown::new(super::GPLHKPMPAOH::GPLHKPMPAOH::REPLAY_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(6, self.FIIGLKMJODG.value());
+        if !self.BMIEOLBAOBG.is_empty() {
+            my_size += ::protobuf::rt::string_size(7, &self.BMIEOLBAOBG);
         }
-        if !self.MBIKFFDNCPN.is_empty() {
-            my_size += ::protobuf::rt::string_size(7, &self.MBIKFFDNCPN);
+        if !self.FJCKEOKNBJL.is_empty() {
+            my_size += ::protobuf::rt::string_size(4, &self.FJCKEOKNBJL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for GetReplayTokenScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IDIEPEFFGIC != 0 {
-            os.write_uint32(12, self.IDIEPEFFGIC)?;
+        if self.LOGEBIDMFJD != ::protobuf::EnumOrUnknown::new(super::JAOPMDDBNHF::JAOPMDDBNHF::REPLAY_TYPE_NONE) {
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.LOGEBIDMFJD))?;
         }
-        if !self.BNCOODAHHPC.is_empty() {
-            os.write_string(13, &self.BNCOODAHHPC)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(1, self.ADADHIHDHJC)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+        if self.KAGEGBLHJDJ != 0 {
+            os.write_uint32(14, self.KAGEGBLHJDJ)?;
         }
-        if self.FIIGLKMJODG != ::protobuf::EnumOrUnknown::new(super::GPLHKPMPAOH::GPLHKPMPAOH::REPLAY_TYPE_NONE) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.FIIGLKMJODG))?;
+        if !self.BMIEOLBAOBG.is_empty() {
+            os.write_string(7, &self.BMIEOLBAOBG)?;
         }
-        if !self.MBIKFFDNCPN.is_empty() {
-            os.write_string(7, &self.MBIKFFDNCPN)?;
+        if !self.FJCKEOKNBJL.is_empty() {
+            os.write_string(4, &self.FJCKEOKNBJL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for GetReplayTokenScRsp {
     }
 
     fn clear(&mut self) {
-        self.IDIEPEFFGIC = 0;
-        self.BNCOODAHHPC.clear();
-        self.retcode = 0;
-        self.FIIGLKMJODG = ::protobuf::EnumOrUnknown::new(super::GPLHKPMPAOH::GPLHKPMPAOH::REPLAY_TYPE_NONE);
-        self.MBIKFFDNCPN.clear();
+        self.LOGEBIDMFJD = ::protobuf::EnumOrUnknown::new(super::JAOPMDDBNHF::JAOPMDDBNHF::REPLAY_TYPE_NONE);
+        self.ADADHIHDHJC = 0;
+        self.KAGEGBLHJDJ = 0;
+        self.BMIEOLBAOBG.clear();
+        self.FJCKEOKNBJL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetReplayTokenScRsp {
         static instance: GetReplayTokenScRsp = GetReplayTokenScRsp {
-            IDIEPEFFGIC: 0,
-            BNCOODAHHPC: ::std::string::String::new(),
-            retcode: 0,
-            FIIGLKMJODG: ::protobuf::EnumOrUnknown::from_i32(0),
-            MBIKFFDNCPN: ::std::string::String::new(),
+            LOGEBIDMFJD: ::protobuf::EnumOrUnknown::from_i32(0),
+            ADADHIHDHJC: 0,
+            KAGEGBLHJDJ: 0,
+            BMIEOLBAOBG: ::std::string::String::new(),
+            FJCKEOKNBJL: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,12 +220,12 @@ impl ::protobuf::reflect::ProtobufValue for GetReplayTokenScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19GetReplayTokenScRsp.proto\x1a\x11GPLHKPMPAOH.proto\"\xc5\x01\n\x13\
-    GetReplayTokenScRsp\x12\x20\n\x0bIDIEPEFFGIC\x18\x0c\x20\x01(\rR\x0bIDIE\
-    PEFFGIC\x12\x20\n\x0bBNCOODAHHPC\x18\r\x20\x01(\tR\x0bBNCOODAHHPC\x12\
-    \x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12.\n\x0bFIIGLKMJODG\
-    \x18\x06\x20\x01(\x0e2\x0c.GPLHKPMPAOHR\x0bFIIGLKMJODG\x12\x20\n\x0bMBIK\
-    FFDNCPN\x18\x07\x20\x01(\tR\x0bMBIKFFDNCPNb\x06proto3\
+    \n\x19GetReplayTokenScRsp.proto\x1a\x11JAOPMDDBNHF.proto\"\xcd\x01\n\x13\
+    GetReplayTokenScRsp\x12.\n\x0bLOGEBIDMFJD\x18\x08\x20\x01(\x0e2\x0c.JAOP\
+    MDDBNHFR\x0bLOGEBIDMFJD\x12\x20\n\x0bADADHIHDHJC\x18\x01\x20\x01(\rR\x0b\
+    ADADHIHDHJC\x12\x20\n\x0bKAGEGBLHJDJ\x18\x0e\x20\x01(\rR\x0bKAGEGBLHJDJ\
+    \x12\x20\n\x0bBMIEOLBAOBG\x18\x07\x20\x01(\tR\x0bBMIEOLBAOBG\x12\x20\n\
+    \x0bFJCKEOKNBJL\x18\x04\x20\x01(\tR\x0bFJCKEOKNBJLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -243,7 +243,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::GPLHKPMPAOH::file_descriptor().clone());
+            deps.push(super::JAOPMDDBNHF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetReplayTokenScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

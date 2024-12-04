@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetRogueHandbookDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetRogueHandbookDataScRsp.handbook_info)
-    pub handbook_info: ::protobuf::MessageField<super::BFGDEIBBKDL::BFGDEIBBKDL>,
+    // @@protoc_insertion_point(field:GetRogueHandbookDataScRsp.HandbookInfo)
+    pub HandbookInfo: ::protobuf::MessageField<super::RogueHandbook::RogueHandbook>,
     // @@protoc_insertion_point(field:GetRogueHandbookDataScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,10 +52,10 @@ impl GetRogueHandbookDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BFGDEIBBKDL::BFGDEIBBKDL>(
-            "handbook_info",
-            |m: &GetRogueHandbookDataScRsp| { &m.handbook_info },
-            |m: &mut GetRogueHandbookDataScRsp| { &mut m.handbook_info },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueHandbook::RogueHandbook>(
+            "HandbookInfo",
+            |m: &GetRogueHandbookDataScRsp| { &m.HandbookInfo },
+            |m: &mut GetRogueHandbookDataScRsp| { &mut m.HandbookInfo },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for GetRogueHandbookDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.handbook_info)?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HandbookInfo)?;
                 },
-                64 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -98,12 +98,12 @@ impl ::protobuf::Message for GetRogueHandbookDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.handbook_info.as_ref() {
+        if let Some(v) = self.HandbookInfo.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for GetRogueHandbookDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.handbook_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if let Some(v) = self.HandbookInfo.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for GetRogueHandbookDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.handbook_info.clear();
+        self.HandbookInfo.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetRogueHandbookDataScRsp {
         static instance: GetRogueHandbookDataScRsp = GetRogueHandbookDataScRsp {
-            handbook_info: ::protobuf::MessageField::none(),
+            HandbookInfo: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for GetRogueHandbookDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fGetRogueHandbookDataScRsp.proto\x1a\x11BFGDEIBBKDL.proto\"h\n\x19G\
-    etRogueHandbookDataScRsp\x121\n\rhandbook_info\x18\x02\x20\x01(\x0b2\x0c\
-    .BFGDEIBBKDLR\x0chandbookInfo\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\
-    \x07retcodeb\x06proto3\
+    \n\x1fGetRogueHandbookDataScRsp.proto\x1a\x13RogueHandbook.proto\"i\n\
+    \x19GetRogueHandbookDataScRsp\x122\n\x0cHandbookInfo\x18\x07\x20\x01(\
+    \x0b2\x0e.RogueHandbookR\x0cHandbookInfo\x12\x18\n\x07retcode\x18\x0b\
+    \x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::BFGDEIBBKDL::file_descriptor().clone());
+            deps.push(super::RogueHandbook::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetRogueHandbookDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

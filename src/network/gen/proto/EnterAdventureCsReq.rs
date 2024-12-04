@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterAdventureCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EnterAdventureCsReq.PHHANACJEGG)
-    pub PHHANACJEGG: u32,
+    // @@protoc_insertion_point(field:EnterAdventureCsReq.LNGJKFGLHBE)
+    pub LNGJKFGLHBE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EnterAdventureCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl EnterAdventureCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PHHANACJEGG",
-            |m: &EnterAdventureCsReq| { &m.PHHANACJEGG },
-            |m: &mut EnterAdventureCsReq| { &mut m.PHHANACJEGG },
+            "LNGJKFGLHBE",
+            |m: &EnterAdventureCsReq| { &m.LNGJKFGLHBE },
+            |m: &mut EnterAdventureCsReq| { &mut m.LNGJKFGLHBE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterAdventureCsReq>(
             "EnterAdventureCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for EnterAdventureCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.PHHANACJEGG = is.read_uint32()?;
+                88 => {
+                    self.LNGJKFGLHBE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for EnterAdventureCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PHHANACJEGG != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.PHHANACJEGG);
+        if self.LNGJKFGLHBE != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.LNGJKFGLHBE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for EnterAdventureCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PHHANACJEGG != 0 {
-            os.write_uint32(12, self.PHHANACJEGG)?;
+        if self.LNGJKFGLHBE != 0 {
+            os.write_uint32(11, self.LNGJKFGLHBE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for EnterAdventureCsReq {
     }
 
     fn clear(&mut self) {
-        self.PHHANACJEGG = 0;
+        self.LNGJKFGLHBE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterAdventureCsReq {
         static instance: EnterAdventureCsReq = EnterAdventureCsReq {
-            PHHANACJEGG: 0,
+            LNGJKFGLHBE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for EnterAdventureCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19EnterAdventureCsReq.proto\"7\n\x13EnterAdventureCsReq\x12\x20\n\
-    \x0bPHHANACJEGG\x18\x0c\x20\x01(\rR\x0bPHHANACJEGGb\x06proto3\
+    \x0bLNGJKFGLHBE\x18\x0b\x20\x01(\rR\x0bLNGJKFGLHBEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

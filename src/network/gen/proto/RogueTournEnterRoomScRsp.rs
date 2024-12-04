@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournEnterRoomScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournEnterRoomScRsp.GABLKAFOMAD)
-    pub GABLKAFOMAD: ::protobuf::MessageField<super::FMAJKAEAEJL::FMAJKAEAEJL>,
-    // @@protoc_insertion_point(field:RogueTournEnterRoomScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:RogueTournEnterRoomScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:RogueTournEnterRoomScRsp.LCKJCKJBLEC)
+    pub LCKJCKJBLEC: ::protobuf::MessageField<super::IENMOFDAHID::IENMOFDAHID>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournEnterRoomScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl RogueTournEnterRoomScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FMAJKAEAEJL::FMAJKAEAEJL>(
-            "GABLKAFOMAD",
-            |m: &RogueTournEnterRoomScRsp| { &m.GABLKAFOMAD },
-            |m: &mut RogueTournEnterRoomScRsp| { &mut m.GABLKAFOMAD },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &RogueTournEnterRoomScRsp| { &m.retcode },
-            |m: &mut RogueTournEnterRoomScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &RogueTournEnterRoomScRsp| { &m.ADADHIHDHJC },
+            |m: &mut RogueTournEnterRoomScRsp| { &mut m.ADADHIHDHJC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IENMOFDAHID::IENMOFDAHID>(
+            "LCKJCKJBLEC",
+            |m: &RogueTournEnterRoomScRsp| { &m.LCKJCKJBLEC },
+            |m: &mut RogueTournEnterRoomScRsp| { &mut m.LCKJCKJBLEC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournEnterRoomScRsp>(
             "RogueTournEnterRoomScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for RogueTournEnterRoomScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GABLKAFOMAD)?;
+                104 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                40 => {
-                    self.retcode = is.read_uint32()?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LCKJCKJBLEC)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,12 +98,12 @@ impl ::protobuf::Message for RogueTournEnterRoomScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.GABLKAFOMAD.as_ref() {
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.ADADHIHDHJC);
+        }
+        if let Some(v) = self.LCKJCKJBLEC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for RogueTournEnterRoomScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.GABLKAFOMAD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(13, self.ADADHIHDHJC)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+        if let Some(v) = self.LCKJCKJBLEC.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for RogueTournEnterRoomScRsp {
     }
 
     fn clear(&mut self) {
-        self.GABLKAFOMAD.clear();
-        self.retcode = 0;
+        self.ADADHIHDHJC = 0;
+        self.LCKJCKJBLEC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournEnterRoomScRsp {
         static instance: RogueTournEnterRoomScRsp = RogueTournEnterRoomScRsp {
-            GABLKAFOMAD: ::protobuf::MessageField::none(),
-            retcode: 0,
+            ADADHIHDHJC: 0,
+            LCKJCKJBLEC: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournEnterRoomScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eRogueTournEnterRoomScRsp.proto\x1a\x11FMAJKAEAEJL.proto\"d\n\x18Ro\
-    gueTournEnterRoomScRsp\x12.\n\x0bGABLKAFOMAD\x18\x02\x20\x01(\x0b2\x0c.F\
-    MAJKAEAEJLR\x0bGABLKAFOMAD\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07r\
-    etcodeb\x06proto3\
+    \n\x1eRogueTournEnterRoomScRsp.proto\x1a\x11IENMOFDAHID.proto\"l\n\x18Ro\
+    gueTournEnterRoomScRsp\x12\x20\n\x0bADADHIHDHJC\x18\r\x20\x01(\rR\x0bADA\
+    DHIHDHJC\x12.\n\x0bLCKJCKJBLEC\x18\x08\x20\x01(\x0b2\x0c.IENMOFDAHIDR\
+    \x0bLCKJCKJBLECb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::FMAJKAEAEJL::file_descriptor().clone());
+            deps.push(super::IENMOFDAHID::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueTournEnterRoomScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

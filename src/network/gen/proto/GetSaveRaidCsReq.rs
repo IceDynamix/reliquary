@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetSaveRaidCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetSaveRaidCsReq.OGIOAKBPMAE)
-    pub OGIOAKBPMAE: u32,
-    // @@protoc_insertion_point(field:GetSaveRaidCsReq.MMMOHAJFMID)
-    pub MMMOHAJFMID: u32,
+    // @@protoc_insertion_point(field:GetSaveRaidCsReq.DNMJBNNJLEL)
+    pub DNMJBNNJLEL: u32,
+    // @@protoc_insertion_point(field:GetSaveRaidCsReq.ODOAJJGMBCL)
+    pub ODOAJJGMBCL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetSaveRaidCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl GetSaveRaidCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OGIOAKBPMAE",
-            |m: &GetSaveRaidCsReq| { &m.OGIOAKBPMAE },
-            |m: &mut GetSaveRaidCsReq| { &mut m.OGIOAKBPMAE },
+            "DNMJBNNJLEL",
+            |m: &GetSaveRaidCsReq| { &m.DNMJBNNJLEL },
+            |m: &mut GetSaveRaidCsReq| { &mut m.DNMJBNNJLEL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MMMOHAJFMID",
-            |m: &GetSaveRaidCsReq| { &m.MMMOHAJFMID },
-            |m: &mut GetSaveRaidCsReq| { &mut m.MMMOHAJFMID },
+            "ODOAJJGMBCL",
+            |m: &GetSaveRaidCsReq| { &m.ODOAJJGMBCL },
+            |m: &mut GetSaveRaidCsReq| { &mut m.ODOAJJGMBCL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetSaveRaidCsReq>(
             "GetSaveRaidCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for GetSaveRaidCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.OGIOAKBPMAE = is.read_uint32()?;
+                120 => {
+                    self.DNMJBNNJLEL = is.read_uint32()?;
                 },
-                88 => {
-                    self.MMMOHAJFMID = is.read_uint32()?;
+                80 => {
+                    self.ODOAJJGMBCL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for GetSaveRaidCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OGIOAKBPMAE != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.OGIOAKBPMAE);
+        if self.DNMJBNNJLEL != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.DNMJBNNJLEL);
         }
-        if self.MMMOHAJFMID != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.MMMOHAJFMID);
+        if self.ODOAJJGMBCL != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.ODOAJJGMBCL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for GetSaveRaidCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OGIOAKBPMAE != 0 {
-            os.write_uint32(10, self.OGIOAKBPMAE)?;
+        if self.DNMJBNNJLEL != 0 {
+            os.write_uint32(15, self.DNMJBNNJLEL)?;
         }
-        if self.MMMOHAJFMID != 0 {
-            os.write_uint32(11, self.MMMOHAJFMID)?;
+        if self.ODOAJJGMBCL != 0 {
+            os.write_uint32(10, self.ODOAJJGMBCL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GetSaveRaidCsReq {
     }
 
     fn clear(&mut self) {
-        self.OGIOAKBPMAE = 0;
-        self.MMMOHAJFMID = 0;
+        self.DNMJBNNJLEL = 0;
+        self.ODOAJJGMBCL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetSaveRaidCsReq {
         static instance: GetSaveRaidCsReq = GetSaveRaidCsReq {
-            OGIOAKBPMAE: 0,
-            MMMOHAJFMID: 0,
+            DNMJBNNJLEL: 0,
+            ODOAJJGMBCL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for GetSaveRaidCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16GetSaveRaidCsReq.proto\"V\n\x10GetSaveRaidCsReq\x12\x20\n\x0bOGIOA\
-    KBPMAE\x18\n\x20\x01(\rR\x0bOGIOAKBPMAE\x12\x20\n\x0bMMMOHAJFMID\x18\x0b\
-    \x20\x01(\rR\x0bMMMOHAJFMIDb\x06proto3\
+    \n\x16GetSaveRaidCsReq.proto\"V\n\x10GetSaveRaidCsReq\x12\x20\n\x0bDNMJB\
+    NNJLEL\x18\x0f\x20\x01(\rR\x0bDNMJBNNJLEL\x12\x20\n\x0bODOAJJGMBCL\x18\n\
+    \x20\x01(\rR\x0bODOAJJGMBCLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

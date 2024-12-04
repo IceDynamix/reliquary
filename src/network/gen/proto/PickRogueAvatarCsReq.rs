@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PickRogueAvatarCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PickRogueAvatarCsReq.MEJPGIDEBMI)
-    pub MEJPGIDEBMI: u32,
-    // @@protoc_insertion_point(field:PickRogueAvatarCsReq.MOICCJNMBBI)
-    pub MOICCJNMBBI: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:PickRogueAvatarCsReq.FIOAACNKLPC)
-    pub FIOAACNKLPC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:PickRogueAvatarCsReq.avatar_id_list)
+    pub avatar_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:PickRogueAvatarCsReq.prop_entity_id)
+    pub prop_entity_id: u32,
+    // @@protoc_insertion_point(field:PickRogueAvatarCsReq.trial_avatar_id_list)
+    pub trial_avatar_id_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:PickRogueAvatarCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl PickRogueAvatarCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "avatar_id_list",
+            |m: &PickRogueAvatarCsReq| { &m.avatar_id_list },
+            |m: &mut PickRogueAvatarCsReq| { &mut m.avatar_id_list },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MEJPGIDEBMI",
-            |m: &PickRogueAvatarCsReq| { &m.MEJPGIDEBMI },
-            |m: &mut PickRogueAvatarCsReq| { &mut m.MEJPGIDEBMI },
+            "prop_entity_id",
+            |m: &PickRogueAvatarCsReq| { &m.prop_entity_id },
+            |m: &mut PickRogueAvatarCsReq| { &mut m.prop_entity_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MOICCJNMBBI",
-            |m: &PickRogueAvatarCsReq| { &m.MOICCJNMBBI },
-            |m: &mut PickRogueAvatarCsReq| { &mut m.MOICCJNMBBI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FIOAACNKLPC",
-            |m: &PickRogueAvatarCsReq| { &m.FIOAACNKLPC },
-            |m: &mut PickRogueAvatarCsReq| { &mut m.FIOAACNKLPC },
+            "trial_avatar_id_list",
+            |m: &PickRogueAvatarCsReq| { &m.trial_avatar_id_list },
+            |m: &mut PickRogueAvatarCsReq| { &mut m.trial_avatar_id_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PickRogueAvatarCsReq>(
             "PickRogueAvatarCsReq",
@@ -87,20 +87,20 @@ impl ::protobuf::Message for PickRogueAvatarCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.MEJPGIDEBMI = is.read_uint32()?;
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.avatar_id_list)?;
                 },
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.MOICCJNMBBI)?;
+                120 => {
+                    self.avatar_id_list.push(is.read_uint32()?);
                 },
-                16 => {
-                    self.MOICCJNMBBI.push(is.read_uint32()?);
+                112 => {
+                    self.prop_entity_id = is.read_uint32()?;
                 },
-                66 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FIOAACNKLPC)?;
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.trial_avatar_id_list)?;
                 },
-                64 => {
-                    self.FIOAACNKLPC.push(is.read_uint32()?);
+                88 => {
+                    self.trial_avatar_id_list.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -114,14 +114,14 @@ impl ::protobuf::Message for PickRogueAvatarCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MEJPGIDEBMI != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.MEJPGIDEBMI);
-        }
-        for value in &self.MOICCJNMBBI {
-            my_size += ::protobuf::rt::uint32_size(2, *value);
+        for value in &self.avatar_id_list {
+            my_size += ::protobuf::rt::uint32_size(15, *value);
         };
-        for value in &self.FIOAACNKLPC {
-            my_size += ::protobuf::rt::uint32_size(8, *value);
+        if self.prop_entity_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.prop_entity_id);
+        }
+        for value in &self.trial_avatar_id_list {
+            my_size += ::protobuf::rt::uint32_size(11, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -129,14 +129,14 @@ impl ::protobuf::Message for PickRogueAvatarCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MEJPGIDEBMI != 0 {
-            os.write_uint32(3, self.MEJPGIDEBMI)?;
-        }
-        for v in &self.MOICCJNMBBI {
-            os.write_uint32(2, *v)?;
+        for v in &self.avatar_id_list {
+            os.write_uint32(15, *v)?;
         };
-        for v in &self.FIOAACNKLPC {
-            os.write_uint32(8, *v)?;
+        if self.prop_entity_id != 0 {
+            os.write_uint32(14, self.prop_entity_id)?;
+        }
+        for v in &self.trial_avatar_id_list {
+            os.write_uint32(11, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -155,17 +155,17 @@ impl ::protobuf::Message for PickRogueAvatarCsReq {
     }
 
     fn clear(&mut self) {
-        self.MEJPGIDEBMI = 0;
-        self.MOICCJNMBBI.clear();
-        self.FIOAACNKLPC.clear();
+        self.avatar_id_list.clear();
+        self.prop_entity_id = 0;
+        self.trial_avatar_id_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PickRogueAvatarCsReq {
         static instance: PickRogueAvatarCsReq = PickRogueAvatarCsReq {
-            MEJPGIDEBMI: 0,
-            MOICCJNMBBI: ::std::vec::Vec::new(),
-            FIOAACNKLPC: ::std::vec::Vec::new(),
+            avatar_id_list: ::std::vec::Vec::new(),
+            prop_entity_id: 0,
+            trial_avatar_id_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -190,10 +190,11 @@ impl ::protobuf::reflect::ProtobufValue for PickRogueAvatarCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aPickRogueAvatarCsReq.proto\"|\n\x14PickRogueAvatarCsReq\x12\x20\n\
-    \x0bMEJPGIDEBMI\x18\x03\x20\x01(\rR\x0bMEJPGIDEBMI\x12\x20\n\x0bMOICCJNM\
-    BBI\x18\x02\x20\x03(\rR\x0bMOICCJNMBBI\x12\x20\n\x0bFIOAACNKLPC\x18\x08\
-    \x20\x03(\rR\x0bFIOAACNKLPCb\x06proto3\
+    \n\x1aPickRogueAvatarCsReq.proto\"\x93\x01\n\x14PickRogueAvatarCsReq\x12\
+    $\n\x0eavatar_id_list\x18\x0f\x20\x03(\rR\x0cavatarIdList\x12$\n\x0eprop\
+    _entity_id\x18\x0e\x20\x01(\rR\x0cpropEntityId\x12/\n\x14trial_avatar_id\
+    _list\x18\x0b\x20\x03(\rR\x11trialAvatarIdListB\x15\n\x13emu.lunarcore.p\
+    rotob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

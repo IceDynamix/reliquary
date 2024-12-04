@@ -94,7 +94,8 @@ impl Gender {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0cGender.proto*8\n\x06Gender\x12\x0e\n\nGenderNone\x10\0\x12\r\n\tGe\
-    nderMan\x10\x01\x12\x0f\n\x0bGenderWoman\x10\x02b\x06proto3\
+    nderMan\x10\x01\x12\x0f\n\x0bGenderWoman\x10\x02B\x15\n\x13emu.lunarcore\
+    .protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

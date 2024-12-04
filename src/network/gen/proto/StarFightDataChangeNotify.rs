@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StarFightDataChangeNotify {
     // message fields
-    // @@protoc_insertion_point(field:StarFightDataChangeNotify.PNDIGEEGGBL)
-    pub PNDIGEEGGBL: ::protobuf::MessageField<super::HEFAKEFDMBL::HEFAKEFDMBL>,
-    // @@protoc_insertion_point(field:StarFightDataChangeNotify.GCFIIGOLPMF)
-    pub GCFIIGOLPMF: u32,
+    // @@protoc_insertion_point(field:StarFightDataChangeNotify.ILIFHHJFMIH)
+    pub ILIFHHJFMIH: u32,
+    // @@protoc_insertion_point(field:StarFightDataChangeNotify.MJHOFNHEJFB)
+    pub MJHOFNHEJFB: ::protobuf::MessageField<super::ONOPFMLJIML::ONOPFMLJIML>,
     // special fields
     // @@protoc_insertion_point(special_field:StarFightDataChangeNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl StarFightDataChangeNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HEFAKEFDMBL::HEFAKEFDMBL>(
-            "PNDIGEEGGBL",
-            |m: &StarFightDataChangeNotify| { &m.PNDIGEEGGBL },
-            |m: &mut StarFightDataChangeNotify| { &mut m.PNDIGEEGGBL },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GCFIIGOLPMF",
-            |m: &StarFightDataChangeNotify| { &m.GCFIIGOLPMF },
-            |m: &mut StarFightDataChangeNotify| { &mut m.GCFIIGOLPMF },
+            "ILIFHHJFMIH",
+            |m: &StarFightDataChangeNotify| { &m.ILIFHHJFMIH },
+            |m: &mut StarFightDataChangeNotify| { &mut m.ILIFHHJFMIH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ONOPFMLJIML::ONOPFMLJIML>(
+            "MJHOFNHEJFB",
+            |m: &StarFightDataChangeNotify| { &m.MJHOFNHEJFB },
+            |m: &mut StarFightDataChangeNotify| { &mut m.MJHOFNHEJFB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StarFightDataChangeNotify>(
             "StarFightDataChangeNotify",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for StarFightDataChangeNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PNDIGEEGGBL)?;
+                16 => {
+                    self.ILIFHHJFMIH = is.read_uint32()?;
                 },
-                72 => {
-                    self.GCFIIGOLPMF = is.read_uint32()?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MJHOFNHEJFB)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,12 +98,12 @@ impl ::protobuf::Message for StarFightDataChangeNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.PNDIGEEGGBL.as_ref() {
+        if self.ILIFHHJFMIH != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.ILIFHHJFMIH);
+        }
+        if let Some(v) = self.MJHOFNHEJFB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.GCFIIGOLPMF != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.GCFIIGOLPMF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for StarFightDataChangeNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.PNDIGEEGGBL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        if self.ILIFHHJFMIH != 0 {
+            os.write_uint32(2, self.ILIFHHJFMIH)?;
         }
-        if self.GCFIIGOLPMF != 0 {
-            os.write_uint32(9, self.GCFIIGOLPMF)?;
+        if let Some(v) = self.MJHOFNHEJFB.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for StarFightDataChangeNotify {
     }
 
     fn clear(&mut self) {
-        self.PNDIGEEGGBL.clear();
-        self.GCFIIGOLPMF = 0;
+        self.ILIFHHJFMIH = 0;
+        self.MJHOFNHEJFB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StarFightDataChangeNotify {
         static instance: StarFightDataChangeNotify = StarFightDataChangeNotify {
-            PNDIGEEGGBL: ::protobuf::MessageField::none(),
-            GCFIIGOLPMF: 0,
+            ILIFHHJFMIH: 0,
+            MJHOFNHEJFB: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for StarFightDataChangeNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fStarFightDataChangeNotify.proto\x1a\x11HEFAKEFDMBL.proto\"m\n\x19S\
-    tarFightDataChangeNotify\x12.\n\x0bPNDIGEEGGBL\x18\x06\x20\x01(\x0b2\x0c\
-    .HEFAKEFDMBLR\x0bPNDIGEEGGBL\x12\x20\n\x0bGCFIIGOLPMF\x18\t\x20\x01(\rR\
-    \x0bGCFIIGOLPMFb\x06proto3\
+    \n\x1fStarFightDataChangeNotify.proto\x1a\x11ONOPFMLJIML.proto\"m\n\x19S\
+    tarFightDataChangeNotify\x12\x20\n\x0bILIFHHJFMIH\x18\x02\x20\x01(\rR\
+    \x0bILIFHHJFMIH\x12.\n\x0bMJHOFNHEJFB\x18\x07\x20\x01(\x0b2\x0c.ONOPFMLJ\
+    IMLR\x0bMJHOFNHEJFBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::HEFAKEFDMBL::file_descriptor().clone());
+            deps.push(super::ONOPFMLJIML::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(StarFightDataChangeNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueWorkbenchSelectFuncScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueWorkbenchSelectFuncScRsp.CGCJFPHMMFG)
-    pub CGCJFPHMMFG: ::protobuf::MessageField<super::KMMHJDNCBAB::KMMHJDNCBAB>,
-    // @@protoc_insertion_point(field:RogueWorkbenchSelectFuncScRsp.FHMHCLAMANO)
-    pub FHMHCLAMANO: u32,
-    // @@protoc_insertion_point(field:RogueWorkbenchSelectFuncScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:RogueWorkbenchSelectFuncScRsp.LCPAFKLOHMK)
+    pub LCPAFKLOHMK: ::protobuf::MessageField<super::DBLLFOBCKHE::DBLLFOBCKHE>,
+    // @@protoc_insertion_point(field:RogueWorkbenchSelectFuncScRsp.MLGDAOKGNKI)
+    pub MLGDAOKGNKI: u32,
+    // @@protoc_insertion_point(field:RogueWorkbenchSelectFuncScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueWorkbenchSelectFuncScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl RogueWorkbenchSelectFuncScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KMMHJDNCBAB::KMMHJDNCBAB>(
-            "CGCJFPHMMFG",
-            |m: &RogueWorkbenchSelectFuncScRsp| { &m.CGCJFPHMMFG },
-            |m: &mut RogueWorkbenchSelectFuncScRsp| { &mut m.CGCJFPHMMFG },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DBLLFOBCKHE::DBLLFOBCKHE>(
+            "LCPAFKLOHMK",
+            |m: &RogueWorkbenchSelectFuncScRsp| { &m.LCPAFKLOHMK },
+            |m: &mut RogueWorkbenchSelectFuncScRsp| { &mut m.LCPAFKLOHMK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FHMHCLAMANO",
-            |m: &RogueWorkbenchSelectFuncScRsp| { &m.FHMHCLAMANO },
-            |m: &mut RogueWorkbenchSelectFuncScRsp| { &mut m.FHMHCLAMANO },
+            "MLGDAOKGNKI",
+            |m: &RogueWorkbenchSelectFuncScRsp| { &m.MLGDAOKGNKI },
+            |m: &mut RogueWorkbenchSelectFuncScRsp| { &mut m.MLGDAOKGNKI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &RogueWorkbenchSelectFuncScRsp| { &m.retcode },
-            |m: &mut RogueWorkbenchSelectFuncScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &RogueWorkbenchSelectFuncScRsp| { &m.ADADHIHDHJC },
+            |m: &mut RogueWorkbenchSelectFuncScRsp| { &mut m.ADADHIHDHJC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueWorkbenchSelectFuncScRsp>(
             "RogueWorkbenchSelectFuncScRsp",
@@ -88,13 +88,13 @@ impl ::protobuf::Message for RogueWorkbenchSelectFuncScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CGCJFPHMMFG)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LCPAFKLOHMK)?;
+                },
+                120 => {
+                    self.MLGDAOKGNKI = is.read_uint32()?;
                 },
                 72 => {
-                    self.FHMHCLAMANO = is.read_uint32()?;
-                },
-                48 => {
-                    self.retcode = is.read_uint32()?;
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +108,15 @@ impl ::protobuf::Message for RogueWorkbenchSelectFuncScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.CGCJFPHMMFG.as_ref() {
+        if let Some(v) = self.LCPAFKLOHMK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.FHMHCLAMANO != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.FHMHCLAMANO);
+        if self.MLGDAOKGNKI != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.MLGDAOKGNKI);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.ADADHIHDHJC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for RogueWorkbenchSelectFuncScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.CGCJFPHMMFG.as_ref() {
+        if let Some(v) = self.LCPAFKLOHMK.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
-        if self.FHMHCLAMANO != 0 {
-            os.write_uint32(9, self.FHMHCLAMANO)?;
+        if self.MLGDAOKGNKI != 0 {
+            os.write_uint32(15, self.MLGDAOKGNKI)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(9, self.ADADHIHDHJC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for RogueWorkbenchSelectFuncScRsp {
     }
 
     fn clear(&mut self) {
-        self.CGCJFPHMMFG.clear();
-        self.FHMHCLAMANO = 0;
-        self.retcode = 0;
+        self.LCPAFKLOHMK.clear();
+        self.MLGDAOKGNKI = 0;
+        self.ADADHIHDHJC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueWorkbenchSelectFuncScRsp {
         static instance: RogueWorkbenchSelectFuncScRsp = RogueWorkbenchSelectFuncScRsp {
-            CGCJFPHMMFG: ::protobuf::MessageField::none(),
-            FHMHCLAMANO: 0,
-            retcode: 0,
+            LCPAFKLOHMK: ::protobuf::MessageField::none(),
+            MLGDAOKGNKI: 0,
+            ADADHIHDHJC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for RogueWorkbenchSelectFuncScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#RogueWorkbenchSelectFuncScRsp.proto\x1a\x11KMMHJDNCBAB.proto\"\x8b\
-    \x01\n\x1dRogueWorkbenchSelectFuncScRsp\x12.\n\x0bCGCJFPHMMFG\x18\x07\
-    \x20\x01(\x0b2\x0c.KMMHJDNCBABR\x0bCGCJFPHMMFG\x12\x20\n\x0bFHMHCLAMANO\
-    \x18\t\x20\x01(\rR\x0bFHMHCLAMANO\x12\x18\n\x07retcode\x18\x06\x20\x01(\
-    \rR\x07retcodeb\x06proto3\
+    \n#RogueWorkbenchSelectFuncScRsp.proto\x1a\x11DBLLFOBCKHE.proto\"\x93\
+    \x01\n\x1dRogueWorkbenchSelectFuncScRsp\x12.\n\x0bLCPAFKLOHMK\x18\x07\
+    \x20\x01(\x0b2\x0c.DBLLFOBCKHER\x0bLCPAFKLOHMK\x12\x20\n\x0bMLGDAOKGNKI\
+    \x18\x0f\x20\x01(\rR\x0bMLGDAOKGNKI\x12\x20\n\x0bADADHIHDHJC\x18\t\x20\
+    \x01(\rR\x0bADADHIHDHJCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::KMMHJDNCBAB::file_descriptor().clone());
+            deps.push(super::DBLLFOBCKHE::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueWorkbenchSelectFuncScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BlackInfo {
     // message fields
-    // @@protoc_insertion_point(field:BlackInfo.IIBMDAJNHLA)
-    pub IIBMDAJNHLA: i64,
-    // @@protoc_insertion_point(field:BlackInfo.MMKMCHDADFD)
-    pub MMKMCHDADFD: i64,
-    // @@protoc_insertion_point(field:BlackInfo.LOOJCAKFAGB)
-    pub LOOJCAKFAGB: u32,
-    // @@protoc_insertion_point(field:BlackInfo.ELDMLDJOFEK)
-    pub ELDMLDJOFEK: u32,
+    // @@protoc_insertion_point(field:BlackInfo.begin_time)
+    pub begin_time: i64,
+    // @@protoc_insertion_point(field:BlackInfo.end_time)
+    pub end_time: i64,
+    // @@protoc_insertion_point(field:BlackInfo.limit_level)
+    pub limit_level: u32,
+    // @@protoc_insertion_point(field:BlackInfo.ban_type)
+    pub ban_type: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BlackInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl BlackInfo {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IIBMDAJNHLA",
-            |m: &BlackInfo| { &m.IIBMDAJNHLA },
-            |m: &mut BlackInfo| { &mut m.IIBMDAJNHLA },
+            "begin_time",
+            |m: &BlackInfo| { &m.begin_time },
+            |m: &mut BlackInfo| { &mut m.begin_time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MMKMCHDADFD",
-            |m: &BlackInfo| { &m.MMKMCHDADFD },
-            |m: &mut BlackInfo| { &mut m.MMKMCHDADFD },
+            "end_time",
+            |m: &BlackInfo| { &m.end_time },
+            |m: &mut BlackInfo| { &mut m.end_time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LOOJCAKFAGB",
-            |m: &BlackInfo| { &m.LOOJCAKFAGB },
-            |m: &mut BlackInfo| { &mut m.LOOJCAKFAGB },
+            "limit_level",
+            |m: &BlackInfo| { &m.limit_level },
+            |m: &mut BlackInfo| { &mut m.limit_level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ELDMLDJOFEK",
-            |m: &BlackInfo| { &m.ELDMLDJOFEK },
-            |m: &mut BlackInfo| { &mut m.ELDMLDJOFEK },
+            "ban_type",
+            |m: &BlackInfo| { &m.ban_type },
+            |m: &mut BlackInfo| { &mut m.ban_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BlackInfo>(
             "BlackInfo",
@@ -95,16 +95,16 @@ impl ::protobuf::Message for BlackInfo {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.IIBMDAJNHLA = is.read_int64()?;
+                    self.begin_time = is.read_int64()?;
                 },
                 16 => {
-                    self.MMKMCHDADFD = is.read_int64()?;
+                    self.end_time = is.read_int64()?;
                 },
                 24 => {
-                    self.LOOJCAKFAGB = is.read_uint32()?;
+                    self.limit_level = is.read_uint32()?;
                 },
                 32 => {
-                    self.ELDMLDJOFEK = is.read_uint32()?;
+                    self.ban_type = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,17 +118,17 @@ impl ::protobuf::Message for BlackInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IIBMDAJNHLA != 0 {
-            my_size += ::protobuf::rt::int64_size(1, self.IIBMDAJNHLA);
+        if self.begin_time != 0 {
+            my_size += ::protobuf::rt::int64_size(1, self.begin_time);
         }
-        if self.MMKMCHDADFD != 0 {
-            my_size += ::protobuf::rt::int64_size(2, self.MMKMCHDADFD);
+        if self.end_time != 0 {
+            my_size += ::protobuf::rt::int64_size(2, self.end_time);
         }
-        if self.LOOJCAKFAGB != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.LOOJCAKFAGB);
+        if self.limit_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.limit_level);
         }
-        if self.ELDMLDJOFEK != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.ELDMLDJOFEK);
+        if self.ban_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.ban_type);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for BlackInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IIBMDAJNHLA != 0 {
-            os.write_int64(1, self.IIBMDAJNHLA)?;
+        if self.begin_time != 0 {
+            os.write_int64(1, self.begin_time)?;
         }
-        if self.MMKMCHDADFD != 0 {
-            os.write_int64(2, self.MMKMCHDADFD)?;
+        if self.end_time != 0 {
+            os.write_int64(2, self.end_time)?;
         }
-        if self.LOOJCAKFAGB != 0 {
-            os.write_uint32(3, self.LOOJCAKFAGB)?;
+        if self.limit_level != 0 {
+            os.write_uint32(3, self.limit_level)?;
         }
-        if self.ELDMLDJOFEK != 0 {
-            os.write_uint32(4, self.ELDMLDJOFEK)?;
+        if self.ban_type != 0 {
+            os.write_uint32(4, self.ban_type)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for BlackInfo {
     }
 
     fn clear(&mut self) {
-        self.IIBMDAJNHLA = 0;
-        self.MMKMCHDADFD = 0;
-        self.LOOJCAKFAGB = 0;
-        self.ELDMLDJOFEK = 0;
+        self.begin_time = 0;
+        self.end_time = 0;
+        self.limit_level = 0;
+        self.ban_type = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BlackInfo {
         static instance: BlackInfo = BlackInfo {
-            IIBMDAJNHLA: 0,
-            MMKMCHDADFD: 0,
-            LOOJCAKFAGB: 0,
-            ELDMLDJOFEK: 0,
+            begin_time: 0,
+            end_time: 0,
+            limit_level: 0,
+            ban_type: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for BlackInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0fBlackInfo.proto\"\x93\x01\n\tBlackInfo\x12\x20\n\x0bIIBMDAJNHLA\
-    \x18\x01\x20\x01(\x03R\x0bIIBMDAJNHLA\x12\x20\n\x0bMMKMCHDADFD\x18\x02\
-    \x20\x01(\x03R\x0bMMKMCHDADFD\x12\x20\n\x0bLOOJCAKFAGB\x18\x03\x20\x01(\
-    \rR\x0bLOOJCAKFAGB\x12\x20\n\x0bELDMLDJOFEK\x18\x04\x20\x01(\rR\x0bELDML\
-    DJOFEKb\x06proto3\
+    \n\x0fBlackInfo.proto\"\x81\x01\n\tBlackInfo\x12\x1d\n\nbegin_time\x18\
+    \x01\x20\x01(\x03R\tbeginTime\x12\x19\n\x08end_time\x18\x02\x20\x01(\x03\
+    R\x07endTime\x12\x1f\n\x0blimit_level\x18\x03\x20\x01(\rR\nlimitLevel\
+    \x12\x19\n\x08ban_type\x18\x04\x20\x01(\rR\x07banTypeB\x15\n\x13emu.luna\
+    rcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

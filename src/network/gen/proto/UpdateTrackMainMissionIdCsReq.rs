@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdateTrackMainMissionIdCsReq {
     // message fields
-    // @@protoc_insertion_point(field:UpdateTrackMainMissionIdCsReq.JKJNMKMIDBP)
-    pub JKJNMKMIDBP: ::protobuf::EnumOrUnknown<super::TrackMainMissionUpdateReasonId::TrackMainMissionUpdateReasonId>,
-    // @@protoc_insertion_point(field:UpdateTrackMainMissionIdCsReq.ILCCBCOJEOH)
-    pub ILCCBCOJEOH: u32,
-    // @@protoc_insertion_point(field:UpdateTrackMainMissionIdCsReq.BPIKAMDFNFC)
-    pub BPIKAMDFNFC: u32,
+    // @@protoc_insertion_point(field:UpdateTrackMainMissionIdCsReq.KCCJCMEPHNC)
+    pub KCCJCMEPHNC: ::protobuf::EnumOrUnknown<super::TrackMainMissionUpdateReasonId::TrackMainMissionUpdateReasonId>,
+    // @@protoc_insertion_point(field:UpdateTrackMainMissionIdCsReq.PHJFNNJNADL)
+    pub PHJFNNJNADL: u32,
+    // @@protoc_insertion_point(field:UpdateTrackMainMissionIdCsReq.MLEAOJNCEFO)
+    pub MLEAOJNCEFO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:UpdateTrackMainMissionIdCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl UpdateTrackMainMissionIdCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JKJNMKMIDBP",
-            |m: &UpdateTrackMainMissionIdCsReq| { &m.JKJNMKMIDBP },
-            |m: &mut UpdateTrackMainMissionIdCsReq| { &mut m.JKJNMKMIDBP },
+            "KCCJCMEPHNC",
+            |m: &UpdateTrackMainMissionIdCsReq| { &m.KCCJCMEPHNC },
+            |m: &mut UpdateTrackMainMissionIdCsReq| { &mut m.KCCJCMEPHNC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ILCCBCOJEOH",
-            |m: &UpdateTrackMainMissionIdCsReq| { &m.ILCCBCOJEOH },
-            |m: &mut UpdateTrackMainMissionIdCsReq| { &mut m.ILCCBCOJEOH },
+            "PHJFNNJNADL",
+            |m: &UpdateTrackMainMissionIdCsReq| { &m.PHJFNNJNADL },
+            |m: &mut UpdateTrackMainMissionIdCsReq| { &mut m.PHJFNNJNADL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BPIKAMDFNFC",
-            |m: &UpdateTrackMainMissionIdCsReq| { &m.BPIKAMDFNFC },
-            |m: &mut UpdateTrackMainMissionIdCsReq| { &mut m.BPIKAMDFNFC },
+            "MLEAOJNCEFO",
+            |m: &UpdateTrackMainMissionIdCsReq| { &m.MLEAOJNCEFO },
+            |m: &mut UpdateTrackMainMissionIdCsReq| { &mut m.MLEAOJNCEFO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdateTrackMainMissionIdCsReq>(
             "UpdateTrackMainMissionIdCsReq",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for UpdateTrackMainMissionIdCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.JKJNMKMIDBP = is.read_enum_or_unknown()?;
+                64 => {
+                    self.KCCJCMEPHNC = is.read_enum_or_unknown()?;
                 },
-                56 => {
-                    self.ILCCBCOJEOH = is.read_uint32()?;
+                72 => {
+                    self.PHJFNNJNADL = is.read_uint32()?;
                 },
-                112 => {
-                    self.BPIKAMDFNFC = is.read_uint32()?;
+                40 => {
+                    self.MLEAOJNCEFO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for UpdateTrackMainMissionIdCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JKJNMKMIDBP != ::protobuf::EnumOrUnknown::new(super::TrackMainMissionUpdateReasonId::TrackMainMissionUpdateReasonId::TRACK_MAIN_MISSION_UPDATE_NONE) {
-            my_size += ::protobuf::rt::int32_size(4, self.JKJNMKMIDBP.value());
+        if self.KCCJCMEPHNC != ::protobuf::EnumOrUnknown::new(super::TrackMainMissionUpdateReasonId::TrackMainMissionUpdateReasonId::TRACK_MAIN_MISSION_UPDATE_NONE) {
+            my_size += ::protobuf::rt::int32_size(8, self.KCCJCMEPHNC.value());
         }
-        if self.ILCCBCOJEOH != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.ILCCBCOJEOH);
+        if self.PHJFNNJNADL != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.PHJFNNJNADL);
         }
-        if self.BPIKAMDFNFC != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.BPIKAMDFNFC);
+        if self.MLEAOJNCEFO != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.MLEAOJNCEFO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for UpdateTrackMainMissionIdCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JKJNMKMIDBP != ::protobuf::EnumOrUnknown::new(super::TrackMainMissionUpdateReasonId::TrackMainMissionUpdateReasonId::TRACK_MAIN_MISSION_UPDATE_NONE) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.JKJNMKMIDBP))?;
+        if self.KCCJCMEPHNC != ::protobuf::EnumOrUnknown::new(super::TrackMainMissionUpdateReasonId::TrackMainMissionUpdateReasonId::TRACK_MAIN_MISSION_UPDATE_NONE) {
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.KCCJCMEPHNC))?;
         }
-        if self.ILCCBCOJEOH != 0 {
-            os.write_uint32(7, self.ILCCBCOJEOH)?;
+        if self.PHJFNNJNADL != 0 {
+            os.write_uint32(9, self.PHJFNNJNADL)?;
         }
-        if self.BPIKAMDFNFC != 0 {
-            os.write_uint32(14, self.BPIKAMDFNFC)?;
+        if self.MLEAOJNCEFO != 0 {
+            os.write_uint32(5, self.MLEAOJNCEFO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for UpdateTrackMainMissionIdCsReq {
     }
 
     fn clear(&mut self) {
-        self.JKJNMKMIDBP = ::protobuf::EnumOrUnknown::new(super::TrackMainMissionUpdateReasonId::TrackMainMissionUpdateReasonId::TRACK_MAIN_MISSION_UPDATE_NONE);
-        self.ILCCBCOJEOH = 0;
-        self.BPIKAMDFNFC = 0;
+        self.KCCJCMEPHNC = ::protobuf::EnumOrUnknown::new(super::TrackMainMissionUpdateReasonId::TrackMainMissionUpdateReasonId::TRACK_MAIN_MISSION_UPDATE_NONE);
+        self.PHJFNNJNADL = 0;
+        self.MLEAOJNCEFO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateTrackMainMissionIdCsReq {
         static instance: UpdateTrackMainMissionIdCsReq = UpdateTrackMainMissionIdCsReq {
-            JKJNMKMIDBP: ::protobuf::EnumOrUnknown::from_i32(0),
-            ILCCBCOJEOH: 0,
-            BPIKAMDFNFC: 0,
+            KCCJCMEPHNC: ::protobuf::EnumOrUnknown::from_i32(0),
+            PHJFNNJNADL: 0,
+            MLEAOJNCEFO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for UpdateTrackMainMissionIdCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#UpdateTrackMainMissionIdCsReq.proto\x1a$TrackMainMissionUpdateReasonI\
-    d.proto\"\xa6\x01\n\x1dUpdateTrackMainMissionIdCsReq\x12A\n\x0bJKJNMKMID\
-    BP\x18\x04\x20\x01(\x0e2\x1f.TrackMainMissionUpdateReasonIdR\x0bJKJNMKMI\
-    DBP\x12\x20\n\x0bILCCBCOJEOH\x18\x07\x20\x01(\rR\x0bILCCBCOJEOH\x12\x20\
-    \n\x0bBPIKAMDFNFC\x18\x0e\x20\x01(\rR\x0bBPIKAMDFNFCb\x06proto3\
+    d.proto\"\xa6\x01\n\x1dUpdateTrackMainMissionIdCsReq\x12A\n\x0bKCCJCMEPH\
+    NC\x18\x08\x20\x01(\x0e2\x1f.TrackMainMissionUpdateReasonIdR\x0bKCCJCMEP\
+    HNC\x12\x20\n\x0bPHJFNNJNADL\x18\t\x20\x01(\rR\x0bPHJFNNJNADL\x12\x20\n\
+    \x0bMLEAOJNCEFO\x18\x05\x20\x01(\rR\x0bMLEAOJNCEFOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

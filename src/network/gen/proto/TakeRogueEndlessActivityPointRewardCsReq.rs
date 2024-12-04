@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeRogueEndlessActivityPointRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeRogueEndlessActivityPointRewardCsReq.level)
-    pub level: u32,
-    // @@protoc_insertion_point(field:TakeRogueEndlessActivityPointRewardCsReq.MGCIACFKBFM)
-    pub MGCIACFKBFM: bool,
+    // @@protoc_insertion_point(field:TakeRogueEndlessActivityPointRewardCsReq.JKOCJIMAGBN)
+    pub JKOCJIMAGBN: u32,
+    // @@protoc_insertion_point(field:TakeRogueEndlessActivityPointRewardCsReq.ICDOHKPKMAH)
+    pub ICDOHKPKMAH: bool,
     // special fields
     // @@protoc_insertion_point(special_field:TakeRogueEndlessActivityPointRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl TakeRogueEndlessActivityPointRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &TakeRogueEndlessActivityPointRewardCsReq| { &m.level },
-            |m: &mut TakeRogueEndlessActivityPointRewardCsReq| { &mut m.level },
+            "JKOCJIMAGBN",
+            |m: &TakeRogueEndlessActivityPointRewardCsReq| { &m.JKOCJIMAGBN },
+            |m: &mut TakeRogueEndlessActivityPointRewardCsReq| { &mut m.JKOCJIMAGBN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MGCIACFKBFM",
-            |m: &TakeRogueEndlessActivityPointRewardCsReq| { &m.MGCIACFKBFM },
-            |m: &mut TakeRogueEndlessActivityPointRewardCsReq| { &mut m.MGCIACFKBFM },
+            "ICDOHKPKMAH",
+            |m: &TakeRogueEndlessActivityPointRewardCsReq| { &m.ICDOHKPKMAH },
+            |m: &mut TakeRogueEndlessActivityPointRewardCsReq| { &mut m.ICDOHKPKMAH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeRogueEndlessActivityPointRewardCsReq>(
             "TakeRogueEndlessActivityPointRewardCsReq",
@@ -81,10 +81,10 @@ impl ::protobuf::Message for TakeRogueEndlessActivityPointRewardCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 16 => {
-                    self.level = is.read_uint32()?;
+                    self.JKOCJIMAGBN = is.read_uint32()?;
                 },
-                80 => {
-                    self.MGCIACFKBFM = is.read_bool()?;
+                104 => {
+                    self.ICDOHKPKMAH = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for TakeRogueEndlessActivityPointRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.level);
+        if self.JKOCJIMAGBN != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.JKOCJIMAGBN);
         }
-        if self.MGCIACFKBFM != false {
+        if self.ICDOHKPKMAH != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -110,11 +110,11 @@ impl ::protobuf::Message for TakeRogueEndlessActivityPointRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.level != 0 {
-            os.write_uint32(2, self.level)?;
+        if self.JKOCJIMAGBN != 0 {
+            os.write_uint32(2, self.JKOCJIMAGBN)?;
         }
-        if self.MGCIACFKBFM != false {
-            os.write_bool(10, self.MGCIACFKBFM)?;
+        if self.ICDOHKPKMAH != false {
+            os.write_bool(13, self.ICDOHKPKMAH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for TakeRogueEndlessActivityPointRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.level = 0;
-        self.MGCIACFKBFM = false;
+        self.JKOCJIMAGBN = 0;
+        self.ICDOHKPKMAH = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeRogueEndlessActivityPointRewardCsReq {
         static instance: TakeRogueEndlessActivityPointRewardCsReq = TakeRogueEndlessActivityPointRewardCsReq {
-            level: 0,
-            MGCIACFKBFM: false,
+            JKOCJIMAGBN: 0,
+            ICDOHKPKMAH: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for TakeRogueEndlessActivityPointRewardC
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n.TakeRogueEndlessActivityPointRewardCsReq.proto\"b\n(TakeRogueEndlessA\
-    ctivityPointRewardCsReq\x12\x14\n\x05level\x18\x02\x20\x01(\rR\x05level\
-    \x12\x20\n\x0bMGCIACFKBFM\x18\n\x20\x01(\x08R\x0bMGCIACFKBFMb\x06proto3\
+    \n.TakeRogueEndlessActivityPointRewardCsReq.proto\"n\n(TakeRogueEndlessA\
+    ctivityPointRewardCsReq\x12\x20\n\x0bJKOCJIMAGBN\x18\x02\x20\x01(\rR\x0b\
+    JKOCJIMAGBN\x12\x20\n\x0bICDOHKPKMAH\x18\r\x20\x01(\x08R\x0bICDOHKPKMAHb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BattleCollegeDataChangeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:BattleCollegeDataChangeScNotify.HDDGPMMNICD)
-    pub HDDGPMMNICD: u32,
-    // @@protoc_insertion_point(field:BattleCollegeDataChangeScNotify.LPDNAMLHGNJ)
-    pub LPDNAMLHGNJ: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:BattleCollegeDataChangeScNotify.DALBPMPKMNJ)
-    pub DALBPMPKMNJ: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:BattleCollegeDataChangeScNotify.ELPMNKHEPKJ)
+    pub ELPMNKHEPKJ: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:BattleCollegeDataChangeScNotify.GCMGMAPNMFI)
+    pub GCMGMAPNMFI: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:BattleCollegeDataChangeScNotify.IAGDNEFGGGM)
+    pub IAGDNEFGGGM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BattleCollegeDataChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl BattleCollegeDataChangeScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HDDGPMMNICD",
-            |m: &BattleCollegeDataChangeScNotify| { &m.HDDGPMMNICD },
-            |m: &mut BattleCollegeDataChangeScNotify| { &mut m.HDDGPMMNICD },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "LPDNAMLHGNJ",
-            |m: &BattleCollegeDataChangeScNotify| { &m.LPDNAMLHGNJ },
-            |m: &mut BattleCollegeDataChangeScNotify| { &mut m.LPDNAMLHGNJ },
+            "ELPMNKHEPKJ",
+            |m: &BattleCollegeDataChangeScNotify| { &m.ELPMNKHEPKJ },
+            |m: &mut BattleCollegeDataChangeScNotify| { &mut m.ELPMNKHEPKJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DALBPMPKMNJ",
-            |m: &BattleCollegeDataChangeScNotify| { &m.DALBPMPKMNJ },
-            |m: &mut BattleCollegeDataChangeScNotify| { &mut m.DALBPMPKMNJ },
+            "GCMGMAPNMFI",
+            |m: &BattleCollegeDataChangeScNotify| { &m.GCMGMAPNMFI },
+            |m: &mut BattleCollegeDataChangeScNotify| { &mut m.GCMGMAPNMFI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IAGDNEFGGGM",
+            |m: &BattleCollegeDataChangeScNotify| { &m.IAGDNEFGGGM },
+            |m: &mut BattleCollegeDataChangeScNotify| { &mut m.IAGDNEFGGGM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BattleCollegeDataChangeScNotify>(
             "BattleCollegeDataChangeScNotify",
@@ -87,17 +87,17 @@ impl ::protobuf::Message for BattleCollegeDataChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.HDDGPMMNICD = is.read_uint32()?;
-                },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LPDNAMLHGNJ)?;
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ELPMNKHEPKJ)?;
                 },
                 26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.DALBPMPKMNJ)?;
+                    is.read_repeated_packed_uint32_into(&mut self.GCMGMAPNMFI)?;
                 },
                 24 => {
-                    self.DALBPMPKMNJ.push(is.read_uint32()?);
+                    self.GCMGMAPNMFI.push(is.read_uint32()?);
+                },
+                32 => {
+                    self.IAGDNEFGGGM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,31 +111,31 @@ impl ::protobuf::Message for BattleCollegeDataChangeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HDDGPMMNICD != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.HDDGPMMNICD);
-        }
-        if let Some(v) = self.LPDNAMLHGNJ.as_ref() {
+        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        for value in &self.DALBPMPKMNJ {
+        for value in &self.GCMGMAPNMFI {
             my_size += ::protobuf::rt::uint32_size(3, *value);
         };
+        if self.IAGDNEFGGGM != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.IAGDNEFGGGM);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HDDGPMMNICD != 0 {
-            os.write_uint32(7, self.HDDGPMMNICD)?;
+        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
-        if let Some(v) = self.LPDNAMLHGNJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
-        for v in &self.DALBPMPKMNJ {
+        for v in &self.GCMGMAPNMFI {
             os.write_uint32(3, *v)?;
         };
+        if self.IAGDNEFGGGM != 0 {
+            os.write_uint32(4, self.IAGDNEFGGGM)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -153,17 +153,17 @@ impl ::protobuf::Message for BattleCollegeDataChangeScNotify {
     }
 
     fn clear(&mut self) {
-        self.HDDGPMMNICD = 0;
-        self.LPDNAMLHGNJ.clear();
-        self.DALBPMPKMNJ.clear();
+        self.ELPMNKHEPKJ.clear();
+        self.GCMGMAPNMFI.clear();
+        self.IAGDNEFGGGM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BattleCollegeDataChangeScNotify {
         static instance: BattleCollegeDataChangeScNotify = BattleCollegeDataChangeScNotify {
-            HDDGPMMNICD: 0,
-            LPDNAMLHGNJ: ::protobuf::MessageField::none(),
-            DALBPMPKMNJ: ::std::vec::Vec::new(),
+            ELPMNKHEPKJ: ::protobuf::MessageField::none(),
+            GCMGMAPNMFI: ::std::vec::Vec::new(),
+            IAGDNEFGGGM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -189,10 +189,10 @@ impl ::protobuf::reflect::ProtobufValue for BattleCollegeDataChangeScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%BattleCollegeDataChangeScNotify.proto\x1a\x0eItemList.proto\"\x92\x01\
-    \n\x1fBattleCollegeDataChangeScNotify\x12\x20\n\x0bHDDGPMMNICD\x18\x07\
-    \x20\x01(\rR\x0bHDDGPMMNICD\x12+\n\x0bLPDNAMLHGNJ\x18\r\x20\x01(\x0b2\t.\
-    ItemListR\x0bLPDNAMLHGNJ\x12\x20\n\x0bDALBPMPKMNJ\x18\x03\x20\x03(\rR\
-    \x0bDALBPMPKMNJb\x06proto3\
+    \n\x1fBattleCollegeDataChangeScNotify\x12+\n\x0bELPMNKHEPKJ\x18\t\x20\
+    \x01(\x0b2\t.ItemListR\x0bELPMNKHEPKJ\x12\x20\n\x0bGCMGMAPNMFI\x18\x03\
+    \x20\x03(\rR\x0bGCMGMAPNMFI\x12\x20\n\x0bIAGDNEFGGGM\x18\x04\x20\x01(\rR\
+    \x0bIAGDNEFGGGMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

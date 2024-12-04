@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetPunkLordBattleRecordScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetPunkLordBattleRecordScRsp.BFNGFGHFGJD)
-    pub BFNGFGHFGJD: ::std::vec::Vec<super::PunkLordBattleRecord::PunkLordBattleRecord>,
-    // @@protoc_insertion_point(field:GetPunkLordBattleRecordScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:GetPunkLordBattleRecordScRsp.LEHPJLFNONE)
-    pub LEHPJLFNONE: ::protobuf::MessageField<super::MOMOPCDPLDN::MOMOPCDPLDN>,
-    // @@protoc_insertion_point(field:GetPunkLordBattleRecordScRsp.IAJEKEMIJFA)
-    pub IAJEKEMIJFA: ::std::vec::Vec<super::PunkLordBattleReplay::PunkLordBattleReplay>,
+    // @@protoc_insertion_point(field:GetPunkLordBattleRecordScRsp.ANAGKANMOBM)
+    pub ANAGKANMOBM: ::protobuf::MessageField<super::JMEOKPPCBHL::JMEOKPPCBHL>,
+    // @@protoc_insertion_point(field:GetPunkLordBattleRecordScRsp.LMJJEJMPMCJ)
+    pub LMJJEJMPMCJ: ::std::vec::Vec<super::PunkLordBattleRecord::PunkLordBattleRecord>,
+    // @@protoc_insertion_point(field:GetPunkLordBattleRecordScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:GetPunkLordBattleRecordScRsp.KHDICNCFIAP)
+    pub KHDICNCFIAP: ::std::vec::Vec<super::PunkLordBattleReplay::PunkLordBattleReplay>,
     // special fields
     // @@protoc_insertion_point(special_field:GetPunkLordBattleRecordScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,25 +56,25 @@ impl GetPunkLordBattleRecordScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JMEOKPPCBHL::JMEOKPPCBHL>(
+            "ANAGKANMOBM",
+            |m: &GetPunkLordBattleRecordScRsp| { &m.ANAGKANMOBM },
+            |m: &mut GetPunkLordBattleRecordScRsp| { &mut m.ANAGKANMOBM },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BFNGFGHFGJD",
-            |m: &GetPunkLordBattleRecordScRsp| { &m.BFNGFGHFGJD },
-            |m: &mut GetPunkLordBattleRecordScRsp| { &mut m.BFNGFGHFGJD },
+            "LMJJEJMPMCJ",
+            |m: &GetPunkLordBattleRecordScRsp| { &m.LMJJEJMPMCJ },
+            |m: &mut GetPunkLordBattleRecordScRsp| { &mut m.LMJJEJMPMCJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetPunkLordBattleRecordScRsp| { &m.retcode },
-            |m: &mut GetPunkLordBattleRecordScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MOMOPCDPLDN::MOMOPCDPLDN>(
-            "LEHPJLFNONE",
-            |m: &GetPunkLordBattleRecordScRsp| { &m.LEHPJLFNONE },
-            |m: &mut GetPunkLordBattleRecordScRsp| { &mut m.LEHPJLFNONE },
+            "ADADHIHDHJC",
+            |m: &GetPunkLordBattleRecordScRsp| { &m.ADADHIHDHJC },
+            |m: &mut GetPunkLordBattleRecordScRsp| { &mut m.ADADHIHDHJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IAJEKEMIJFA",
-            |m: &GetPunkLordBattleRecordScRsp| { &m.IAJEKEMIJFA },
-            |m: &mut GetPunkLordBattleRecordScRsp| { &mut m.IAJEKEMIJFA },
+            "KHDICNCFIAP",
+            |m: &GetPunkLordBattleRecordScRsp| { &m.KHDICNCFIAP },
+            |m: &mut GetPunkLordBattleRecordScRsp| { &mut m.KHDICNCFIAP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetPunkLordBattleRecordScRsp>(
             "GetPunkLordBattleRecordScRsp",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for GetPunkLordBattleRecordScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ANAGKANMOBM)?;
+                },
+                66 => {
+                    self.LMJJEJMPMCJ.push(is.read_message()?);
+                },
+                72 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
+                },
                 10 => {
-                    self.BFNGFGHFGJD.push(is.read_message()?);
-                },
-                112 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LEHPJLFNONE)?;
-                },
-                90 => {
-                    self.IAJEKEMIJFA.push(is.read_message()?);
+                    self.KHDICNCFIAP.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,18 +118,18 @@ impl ::protobuf::Message for GetPunkLordBattleRecordScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.BFNGFGHFGJD {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
-        }
-        if let Some(v) = self.LEHPJLFNONE.as_ref() {
+        if let Some(v) = self.ANAGKANMOBM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        for value in &self.IAJEKEMIJFA {
+        for value in &self.LMJJEJMPMCJ {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.ADADHIHDHJC);
+        }
+        for value in &self.KHDICNCFIAP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -139,17 +139,17 @@ impl ::protobuf::Message for GetPunkLordBattleRecordScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.BFNGFGHFGJD {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if let Some(v) = self.ANAGKANMOBM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
+        for v in &self.LMJJEJMPMCJ {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
-        if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(9, self.ADADHIHDHJC)?;
         }
-        if let Some(v) = self.LEHPJLFNONE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
-        for v in &self.IAJEKEMIJFA {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        for v in &self.KHDICNCFIAP {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,19 +168,19 @@ impl ::protobuf::Message for GetPunkLordBattleRecordScRsp {
     }
 
     fn clear(&mut self) {
-        self.BFNGFGHFGJD.clear();
-        self.retcode = 0;
-        self.LEHPJLFNONE.clear();
-        self.IAJEKEMIJFA.clear();
+        self.ANAGKANMOBM.clear();
+        self.LMJJEJMPMCJ.clear();
+        self.ADADHIHDHJC = 0;
+        self.KHDICNCFIAP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetPunkLordBattleRecordScRsp {
         static instance: GetPunkLordBattleRecordScRsp = GetPunkLordBattleRecordScRsp {
-            BFNGFGHFGJD: ::std::vec::Vec::new(),
-            retcode: 0,
-            LEHPJLFNONE: ::protobuf::MessageField::none(),
-            IAJEKEMIJFA: ::std::vec::Vec::new(),
+            ANAGKANMOBM: ::protobuf::MessageField::none(),
+            LMJJEJMPMCJ: ::std::vec::Vec::new(),
+            ADADHIHDHJC: 0,
+            KHDICNCFIAP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -205,13 +205,13 @@ impl ::protobuf::reflect::ProtobufValue for GetPunkLordBattleRecordScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"GetPunkLordBattleRecordScRsp.proto\x1a\x11MOMOPCDPLDN.proto\x1a\x1aP\
-    unkLordBattleRecord.proto\x1a\x1aPunkLordBattleReplay.proto\"\xda\x01\n\
-    \x1cGetPunkLordBattleRecordScRsp\x127\n\x0bBFNGFGHFGJD\x18\x01\x20\x03(\
-    \x0b2\x15.PunkLordBattleRecordR\x0bBFNGFGHFGJD\x12\x18\n\x07retcode\x18\
-    \x0e\x20\x01(\rR\x07retcode\x12.\n\x0bLEHPJLFNONE\x18\x02\x20\x01(\x0b2\
-    \x0c.MOMOPCDPLDNR\x0bLEHPJLFNONE\x127\n\x0bIAJEKEMIJFA\x18\x0b\x20\x03(\
-    \x0b2\x15.PunkLordBattleReplayR\x0bIAJEKEMIJFAb\x06proto3\
+    \n\"GetPunkLordBattleRecordScRsp.proto\x1a\x11JMEOKPPCBHL.proto\x1a\x1aP\
+    unkLordBattleRecord.proto\x1a\x1aPunkLordBattleReplay.proto\"\xe2\x01\n\
+    \x1cGetPunkLordBattleRecordScRsp\x12.\n\x0bANAGKANMOBM\x18\x07\x20\x01(\
+    \x0b2\x0c.JMEOKPPCBHLR\x0bANAGKANMOBM\x127\n\x0bLMJJEJMPMCJ\x18\x08\x20\
+    \x03(\x0b2\x15.PunkLordBattleRecordR\x0bLMJJEJMPMCJ\x12\x20\n\x0bADADHIH\
+    DHJC\x18\t\x20\x01(\rR\x0bADADHIHDHJC\x127\n\x0bKHDICNCFIAP\x18\x01\x20\
+    \x03(\x0b2\x15.PunkLordBattleReplayR\x0bKHDICNCFIAPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -229,7 +229,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::MOMOPCDPLDN::file_descriptor().clone());
+            deps.push(super::JMEOKPPCBHL::file_descriptor().clone());
             deps.push(super::PunkLordBattleRecord::file_descriptor().clone());
             deps.push(super::PunkLordBattleReplay::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);

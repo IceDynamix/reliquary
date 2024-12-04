@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetHeadIconScRsp {
     // message fields
+    // @@protoc_insertion_point(field:SetHeadIconScRsp.current_head_icon_id)
+    pub current_head_icon_id: u32,
     // @@protoc_insertion_point(field:SetHeadIconScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:SetHeadIconScRsp.GNKGNLOHFCN)
-    pub GNKGNLOHFCN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SetHeadIconScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl SetHeadIconScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "current_head_icon_id",
+            |m: &SetHeadIconScRsp| { &m.current_head_icon_id },
+            |m: &mut SetHeadIconScRsp| { &mut m.current_head_icon_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &SetHeadIconScRsp| { &m.retcode },
             |m: &mut SetHeadIconScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GNKGNLOHFCN",
-            |m: &SetHeadIconScRsp| { &m.GNKGNLOHFCN },
-            |m: &mut SetHeadIconScRsp| { &mut m.GNKGNLOHFCN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetHeadIconScRsp>(
             "SetHeadIconScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for SetHeadIconScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.retcode = is.read_uint32()?;
+                24 => {
+                    self.current_head_icon_id = is.read_uint32()?;
                 },
-                72 => {
-                    self.GNKGNLOHFCN = is.read_uint32()?;
+                80 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for SetHeadIconScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        if self.current_head_icon_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.current_head_icon_id);
         }
-        if self.GNKGNLOHFCN != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.GNKGNLOHFCN);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for SetHeadIconScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+        if self.current_head_icon_id != 0 {
+            os.write_uint32(3, self.current_head_icon_id)?;
         }
-        if self.GNKGNLOHFCN != 0 {
-            os.write_uint32(9, self.GNKGNLOHFCN)?;
+        if self.retcode != 0 {
+            os.write_uint32(10, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for SetHeadIconScRsp {
     }
 
     fn clear(&mut self) {
+        self.current_head_icon_id = 0;
         self.retcode = 0;
-        self.GNKGNLOHFCN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetHeadIconScRsp {
         static instance: SetHeadIconScRsp = SetHeadIconScRsp {
+            current_head_icon_id: 0,
             retcode: 0,
-            GNKGNLOHFCN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for SetHeadIconScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16SetHeadIconScRsp.proto\"N\n\x10SetHeadIconScRsp\x12\x18\n\x07retco\
-    de\x18\x08\x20\x01(\rR\x07retcode\x12\x20\n\x0bGNKGNLOHFCN\x18\t\x20\x01\
-    (\rR\x0bGNKGNLOHFCNb\x06proto3\
+    \n\x16SetHeadIconScRsp.proto\"]\n\x10SetHeadIconScRsp\x12/\n\x14current_\
+    head_icon_id\x18\x03\x20\x01(\rR\x11currentHeadIconId\x12\x18\n\x07retco\
+    de\x18\n\x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

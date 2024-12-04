@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightTreasureDungeonMonsterCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FightTreasureDungeonMonsterCsReq.NCFAJPAMBGD)
-    pub NCFAJPAMBGD: u32,
-    // @@protoc_insertion_point(field:FightTreasureDungeonMonsterCsReq.avatar_list)
-    pub avatar_list: ::std::vec::Vec<super::ABNFCJAFHBO::ABNFCJAFHBO>,
-    // @@protoc_insertion_point(field:FightTreasureDungeonMonsterCsReq.EEEABJCNKDO)
-    pub EEEABJCNKDO: u32,
+    // @@protoc_insertion_point(field:FightTreasureDungeonMonsterCsReq.HMPPFGCIFJK)
+    pub HMPPFGCIFJK: u32,
+    // @@protoc_insertion_point(field:FightTreasureDungeonMonsterCsReq.GCIMMFIDPJP)
+    pub GCIMMFIDPJP: u32,
+    // @@protoc_insertion_point(field:FightTreasureDungeonMonsterCsReq.EMALNMLGANJ)
+    pub EMALNMLGANJ: ::std::vec::Vec<super::EHIMNOKLCOE::EHIMNOKLCOE>,
     // special fields
     // @@protoc_insertion_point(special_field:FightTreasureDungeonMonsterCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl FightTreasureDungeonMonsterCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NCFAJPAMBGD",
-            |m: &FightTreasureDungeonMonsterCsReq| { &m.NCFAJPAMBGD },
-            |m: &mut FightTreasureDungeonMonsterCsReq| { &mut m.NCFAJPAMBGD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_list",
-            |m: &FightTreasureDungeonMonsterCsReq| { &m.avatar_list },
-            |m: &mut FightTreasureDungeonMonsterCsReq| { &mut m.avatar_list },
+            "HMPPFGCIFJK",
+            |m: &FightTreasureDungeonMonsterCsReq| { &m.HMPPFGCIFJK },
+            |m: &mut FightTreasureDungeonMonsterCsReq| { &mut m.HMPPFGCIFJK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EEEABJCNKDO",
-            |m: &FightTreasureDungeonMonsterCsReq| { &m.EEEABJCNKDO },
-            |m: &mut FightTreasureDungeonMonsterCsReq| { &mut m.EEEABJCNKDO },
+            "GCIMMFIDPJP",
+            |m: &FightTreasureDungeonMonsterCsReq| { &m.GCIMMFIDPJP },
+            |m: &mut FightTreasureDungeonMonsterCsReq| { &mut m.GCIMMFIDPJP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "EMALNMLGANJ",
+            |m: &FightTreasureDungeonMonsterCsReq| { &m.EMALNMLGANJ },
+            |m: &mut FightTreasureDungeonMonsterCsReq| { &mut m.EMALNMLGANJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightTreasureDungeonMonsterCsReq>(
             "FightTreasureDungeonMonsterCsReq",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for FightTreasureDungeonMonsterCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.NCFAJPAMBGD = is.read_uint32()?;
+                88 => {
+                    self.HMPPFGCIFJK = is.read_uint32()?;
                 },
-                18 => {
-                    self.avatar_list.push(is.read_message()?);
+                64 => {
+                    self.GCIMMFIDPJP = is.read_uint32()?;
                 },
-                56 => {
-                    self.EEEABJCNKDO = is.read_uint32()?;
+                74 => {
+                    self.EMALNMLGANJ.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,31 +108,31 @@ impl ::protobuf::Message for FightTreasureDungeonMonsterCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NCFAJPAMBGD != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.NCFAJPAMBGD);
+        if self.HMPPFGCIFJK != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.HMPPFGCIFJK);
         }
-        for value in &self.avatar_list {
+        if self.GCIMMFIDPJP != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.GCIMMFIDPJP);
+        }
+        for value in &self.EMALNMLGANJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.EEEABJCNKDO != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.EEEABJCNKDO);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NCFAJPAMBGD != 0 {
-            os.write_uint32(9, self.NCFAJPAMBGD)?;
+        if self.HMPPFGCIFJK != 0 {
+            os.write_uint32(11, self.HMPPFGCIFJK)?;
         }
-        for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if self.GCIMMFIDPJP != 0 {
+            os.write_uint32(8, self.GCIMMFIDPJP)?;
+        }
+        for v in &self.EMALNMLGANJ {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
-        if self.EEEABJCNKDO != 0 {
-            os.write_uint32(7, self.EEEABJCNKDO)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,17 +150,17 @@ impl ::protobuf::Message for FightTreasureDungeonMonsterCsReq {
     }
 
     fn clear(&mut self) {
-        self.NCFAJPAMBGD = 0;
-        self.avatar_list.clear();
-        self.EEEABJCNKDO = 0;
+        self.HMPPFGCIFJK = 0;
+        self.GCIMMFIDPJP = 0;
+        self.EMALNMLGANJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightTreasureDungeonMonsterCsReq {
         static instance: FightTreasureDungeonMonsterCsReq = FightTreasureDungeonMonsterCsReq {
-            NCFAJPAMBGD: 0,
-            avatar_list: ::std::vec::Vec::new(),
-            EEEABJCNKDO: 0,
+            HMPPFGCIFJK: 0,
+            GCIMMFIDPJP: 0,
+            EMALNMLGANJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for FightTreasureDungeonMonsterCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n&FightTreasureDungeonMonsterCsReq.proto\x1a\x11ABNFCJAFHBO.proto\"\x95\
-    \x01\n\x20FightTreasureDungeonMonsterCsReq\x12\x20\n\x0bNCFAJPAMBGD\x18\
-    \t\x20\x01(\rR\x0bNCFAJPAMBGD\x12-\n\x0bavatar_list\x18\x02\x20\x03(\x0b\
-    2\x0c.ABNFCJAFHBOR\navatarList\x12\x20\n\x0bEEEABJCNKDO\x18\x07\x20\x01(\
-    \rR\x0bEEEABJCNKDOb\x06proto3\
+    \n&FightTreasureDungeonMonsterCsReq.proto\x1a\x11EHIMNOKLCOE.proto\"\x96\
+    \x01\n\x20FightTreasureDungeonMonsterCsReq\x12\x20\n\x0bHMPPFGCIFJK\x18\
+    \x0b\x20\x01(\rR\x0bHMPPFGCIFJK\x12\x20\n\x0bGCIMMFIDPJP\x18\x08\x20\x01\
+    (\rR\x0bGCIMMFIDPJP\x12.\n\x0bEMALNMLGANJ\x18\t\x20\x03(\x0b2\x0c.EHIMNO\
+    KLCOER\x0bEMALNMLGANJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ABNFCJAFHBO::file_descriptor().clone());
+            deps.push(super::EHIMNOKLCOE::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FightTreasureDungeonMonsterCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

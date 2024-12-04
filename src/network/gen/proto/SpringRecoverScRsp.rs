@@ -30,7 +30,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub struct SpringRecoverScRsp {
     // message fields
     // @@protoc_insertion_point(field:SpringRecoverScRsp.heal_pool_info)
-    pub heal_pool_info: ::protobuf::MessageField<super::KENMCMMFBFJ::KENMCMMFBFJ>,
+    pub heal_pool_info: ::protobuf::MessageField<super::ELJHLDOEKID::ELJHLDOEKID>,
     // @@protoc_insertion_point(field:SpringRecoverScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,7 +52,7 @@ impl SpringRecoverScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KENMCMMFBFJ::KENMCMMFBFJ>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ELJHLDOEKID::ELJHLDOEKID>(
             "heal_pool_info",
             |m: &SpringRecoverScRsp| { &m.heal_pool_info },
             |m: &mut SpringRecoverScRsp| { &mut m.heal_pool_info },
@@ -80,10 +80,10 @@ impl ::protobuf::Message for SpringRecoverScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.heal_pool_info)?;
                 },
-                112 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -103,7 +103,7 @@ impl ::protobuf::Message for SpringRecoverScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -112,10 +112,10 @@ impl ::protobuf::Message for SpringRecoverScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.heal_pool_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for SpringRecoverScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18SpringRecoverScRsp.proto\x1a\x11KENMCMMFBFJ.proto\"b\n\x12SpringRe\
-    coverScRsp\x122\n\x0eheal_pool_info\x18\n\x20\x01(\x0b2\x0c.KENMCMMFBFJR\
-    \x0chealPoolInfo\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcodeb\
+    \n\x18SpringRecoverScRsp.proto\x1a\x11ELJHLDOEKID.proto\"b\n\x12SpringRe\
+    coverScRsp\x122\n\x0eheal_pool_info\x18\x07\x20\x01(\x0b2\x0c.ELJHLDOEKI\
+    DR\x0chealPoolInfo\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcodeb\
     \x06proto3\
 ";
 
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::KENMCMMFBFJ::file_descriptor().clone());
+            deps.push(super::ELJHLDOEKID::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SpringRecoverScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

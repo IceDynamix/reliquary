@@ -30,46 +30,46 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdMapRotationType {
     // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdMapRotationTypeNone)
     CmdMapRotationTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdLeaveMapRotationRegionScRsp)
-    CmdLeaveMapRotationRegionScRsp = 6838,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdUpdateMapRotationDataScNotify)
-    CmdUpdateMapRotationDataScNotify = 6845,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdInteractChargerCsReq)
-    CmdInteractChargerCsReq = 6883,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdUpdateRotaterScNotify)
-    CmdUpdateRotaterScNotify = 6831,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdEnterMapRotationRegionCsReq)
-    CmdEnterMapRotationRegionCsReq = 6898,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdRemoveRotaterScRsp)
-    CmdRemoveRotaterScRsp = 6850,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdDeployRotaterCsReq)
-    CmdDeployRotaterCsReq = 6879,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdRotateMapScRsp)
-    CmdRotateMapScRsp = 6812,
     // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdLeaveMapRotationRegionScNotify)
-    CmdLeaveMapRotationRegionScNotify = 6866,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdLeaveMapRotationRegionCsReq)
-    CmdLeaveMapRotationRegionCsReq = 6828,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdResetMapRotationRegionScRsp)
-    CmdResetMapRotationRegionScRsp = 6822,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdInteractChargerScRsp)
-    CmdInteractChargerScRsp = 6842,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdRemoveRotaterCsReq)
-    CmdRemoveRotaterCsReq = 6820,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdRotateMapCsReq)
-    CmdRotateMapCsReq = 6833,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdEnterMapRotationRegionScRsp)
-    CmdEnterMapRotationRegionScRsp = 6871,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdGetMapRotationDataScRsp)
-    CmdGetMapRotationDataScRsp = 6856,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdUpdateEnergyScNotify)
-    CmdUpdateEnergyScNotify = 6805,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdGetMapRotationDataCsReq)
-    CmdGetMapRotationDataCsReq = 6878,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdDeployRotaterScRsp)
-    CmdDeployRotaterScRsp = 6877,
+    CmdLeaveMapRotationRegionScNotify = 6848,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdEnterMapRotationRegionCsReq)
+    CmdEnterMapRotationRegionCsReq = 6859,
     // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdResetMapRotationRegionCsReq)
-    CmdResetMapRotationRegionCsReq = 6889,
+    CmdResetMapRotationRegionCsReq = 6830,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdRotateMapCsReq)
+    CmdRotateMapCsReq = 6834,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdLeaveMapRotationRegionCsReq)
+    CmdLeaveMapRotationRegionCsReq = 6880,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdRemoveRotaterScRsp)
+    CmdRemoveRotaterScRsp = 6861,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdUpdateMapRotationDataScNotify)
+    CmdUpdateMapRotationDataScNotify = 6879,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdDeployRotaterCsReq)
+    CmdDeployRotaterCsReq = 6839,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdLeaveMapRotationRegionScRsp)
+    CmdLeaveMapRotationRegionScRsp = 6816,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdInteractChargerScRsp)
+    CmdInteractChargerScRsp = 6846,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdEnterMapRotationRegionScRsp)
+    CmdEnterMapRotationRegionScRsp = 6820,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdDeployRotaterScRsp)
+    CmdDeployRotaterScRsp = 6853,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdUpdateEnergyScNotify)
+    CmdUpdateEnergyScNotify = 6890,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdResetMapRotationRegionScRsp)
+    CmdResetMapRotationRegionScRsp = 6875,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdInteractChargerCsReq)
+    CmdInteractChargerCsReq = 6803,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdGetMapRotationDataCsReq)
+    CmdGetMapRotationDataCsReq = 6847,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdGetMapRotationDataScRsp)
+    CmdGetMapRotationDataScRsp = 6874,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdRemoveRotaterCsReq)
+    CmdRemoveRotaterCsReq = 6819,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdRotateMapScRsp)
+    CmdRotateMapScRsp = 6837,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdUpdateRotaterScNotify)
+    CmdUpdateRotaterScNotify = 6825,
 }
 
 impl ::protobuf::Enum for CmdMapRotationType {
@@ -82,26 +82,26 @@ impl ::protobuf::Enum for CmdMapRotationType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdMapRotationType> {
         match value {
             0 => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationTypeNone),
-            6838 => ::std::option::Option::Some(CmdMapRotationType::CmdLeaveMapRotationRegionScRsp),
-            6845 => ::std::option::Option::Some(CmdMapRotationType::CmdUpdateMapRotationDataScNotify),
-            6883 => ::std::option::Option::Some(CmdMapRotationType::CmdInteractChargerCsReq),
-            6831 => ::std::option::Option::Some(CmdMapRotationType::CmdUpdateRotaterScNotify),
-            6898 => ::std::option::Option::Some(CmdMapRotationType::CmdEnterMapRotationRegionCsReq),
-            6850 => ::std::option::Option::Some(CmdMapRotationType::CmdRemoveRotaterScRsp),
-            6879 => ::std::option::Option::Some(CmdMapRotationType::CmdDeployRotaterCsReq),
-            6812 => ::std::option::Option::Some(CmdMapRotationType::CmdRotateMapScRsp),
-            6866 => ::std::option::Option::Some(CmdMapRotationType::CmdLeaveMapRotationRegionScNotify),
-            6828 => ::std::option::Option::Some(CmdMapRotationType::CmdLeaveMapRotationRegionCsReq),
-            6822 => ::std::option::Option::Some(CmdMapRotationType::CmdResetMapRotationRegionScRsp),
-            6842 => ::std::option::Option::Some(CmdMapRotationType::CmdInteractChargerScRsp),
-            6820 => ::std::option::Option::Some(CmdMapRotationType::CmdRemoveRotaterCsReq),
-            6833 => ::std::option::Option::Some(CmdMapRotationType::CmdRotateMapCsReq),
-            6871 => ::std::option::Option::Some(CmdMapRotationType::CmdEnterMapRotationRegionScRsp),
-            6856 => ::std::option::Option::Some(CmdMapRotationType::CmdGetMapRotationDataScRsp),
-            6805 => ::std::option::Option::Some(CmdMapRotationType::CmdUpdateEnergyScNotify),
-            6878 => ::std::option::Option::Some(CmdMapRotationType::CmdGetMapRotationDataCsReq),
-            6877 => ::std::option::Option::Some(CmdMapRotationType::CmdDeployRotaterScRsp),
-            6889 => ::std::option::Option::Some(CmdMapRotationType::CmdResetMapRotationRegionCsReq),
+            6848 => ::std::option::Option::Some(CmdMapRotationType::CmdLeaveMapRotationRegionScNotify),
+            6859 => ::std::option::Option::Some(CmdMapRotationType::CmdEnterMapRotationRegionCsReq),
+            6830 => ::std::option::Option::Some(CmdMapRotationType::CmdResetMapRotationRegionCsReq),
+            6834 => ::std::option::Option::Some(CmdMapRotationType::CmdRotateMapCsReq),
+            6880 => ::std::option::Option::Some(CmdMapRotationType::CmdLeaveMapRotationRegionCsReq),
+            6861 => ::std::option::Option::Some(CmdMapRotationType::CmdRemoveRotaterScRsp),
+            6879 => ::std::option::Option::Some(CmdMapRotationType::CmdUpdateMapRotationDataScNotify),
+            6839 => ::std::option::Option::Some(CmdMapRotationType::CmdDeployRotaterCsReq),
+            6816 => ::std::option::Option::Some(CmdMapRotationType::CmdLeaveMapRotationRegionScRsp),
+            6846 => ::std::option::Option::Some(CmdMapRotationType::CmdInteractChargerScRsp),
+            6820 => ::std::option::Option::Some(CmdMapRotationType::CmdEnterMapRotationRegionScRsp),
+            6853 => ::std::option::Option::Some(CmdMapRotationType::CmdDeployRotaterScRsp),
+            6890 => ::std::option::Option::Some(CmdMapRotationType::CmdUpdateEnergyScNotify),
+            6875 => ::std::option::Option::Some(CmdMapRotationType::CmdResetMapRotationRegionScRsp),
+            6803 => ::std::option::Option::Some(CmdMapRotationType::CmdInteractChargerCsReq),
+            6847 => ::std::option::Option::Some(CmdMapRotationType::CmdGetMapRotationDataCsReq),
+            6874 => ::std::option::Option::Some(CmdMapRotationType::CmdGetMapRotationDataScRsp),
+            6819 => ::std::option::Option::Some(CmdMapRotationType::CmdRemoveRotaterCsReq),
+            6837 => ::std::option::Option::Some(CmdMapRotationType::CmdRotateMapScRsp),
+            6825 => ::std::option::Option::Some(CmdMapRotationType::CmdUpdateRotaterScNotify),
             _ => ::std::option::Option::None
         }
     }
@@ -109,52 +109,52 @@ impl ::protobuf::Enum for CmdMapRotationType {
     fn from_str(str: &str) -> ::std::option::Option<CmdMapRotationType> {
         match str {
             "CmdMapRotationTypeNone" => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationTypeNone),
-            "CmdLeaveMapRotationRegionScRsp" => ::std::option::Option::Some(CmdMapRotationType::CmdLeaveMapRotationRegionScRsp),
-            "CmdUpdateMapRotationDataScNotify" => ::std::option::Option::Some(CmdMapRotationType::CmdUpdateMapRotationDataScNotify),
-            "CmdInteractChargerCsReq" => ::std::option::Option::Some(CmdMapRotationType::CmdInteractChargerCsReq),
-            "CmdUpdateRotaterScNotify" => ::std::option::Option::Some(CmdMapRotationType::CmdUpdateRotaterScNotify),
-            "CmdEnterMapRotationRegionCsReq" => ::std::option::Option::Some(CmdMapRotationType::CmdEnterMapRotationRegionCsReq),
-            "CmdRemoveRotaterScRsp" => ::std::option::Option::Some(CmdMapRotationType::CmdRemoveRotaterScRsp),
-            "CmdDeployRotaterCsReq" => ::std::option::Option::Some(CmdMapRotationType::CmdDeployRotaterCsReq),
-            "CmdRotateMapScRsp" => ::std::option::Option::Some(CmdMapRotationType::CmdRotateMapScRsp),
             "CmdLeaveMapRotationRegionScNotify" => ::std::option::Option::Some(CmdMapRotationType::CmdLeaveMapRotationRegionScNotify),
-            "CmdLeaveMapRotationRegionCsReq" => ::std::option::Option::Some(CmdMapRotationType::CmdLeaveMapRotationRegionCsReq),
-            "CmdResetMapRotationRegionScRsp" => ::std::option::Option::Some(CmdMapRotationType::CmdResetMapRotationRegionScRsp),
-            "CmdInteractChargerScRsp" => ::std::option::Option::Some(CmdMapRotationType::CmdInteractChargerScRsp),
-            "CmdRemoveRotaterCsReq" => ::std::option::Option::Some(CmdMapRotationType::CmdRemoveRotaterCsReq),
-            "CmdRotateMapCsReq" => ::std::option::Option::Some(CmdMapRotationType::CmdRotateMapCsReq),
-            "CmdEnterMapRotationRegionScRsp" => ::std::option::Option::Some(CmdMapRotationType::CmdEnterMapRotationRegionScRsp),
-            "CmdGetMapRotationDataScRsp" => ::std::option::Option::Some(CmdMapRotationType::CmdGetMapRotationDataScRsp),
-            "CmdUpdateEnergyScNotify" => ::std::option::Option::Some(CmdMapRotationType::CmdUpdateEnergyScNotify),
-            "CmdGetMapRotationDataCsReq" => ::std::option::Option::Some(CmdMapRotationType::CmdGetMapRotationDataCsReq),
-            "CmdDeployRotaterScRsp" => ::std::option::Option::Some(CmdMapRotationType::CmdDeployRotaterScRsp),
+            "CmdEnterMapRotationRegionCsReq" => ::std::option::Option::Some(CmdMapRotationType::CmdEnterMapRotationRegionCsReq),
             "CmdResetMapRotationRegionCsReq" => ::std::option::Option::Some(CmdMapRotationType::CmdResetMapRotationRegionCsReq),
+            "CmdRotateMapCsReq" => ::std::option::Option::Some(CmdMapRotationType::CmdRotateMapCsReq),
+            "CmdLeaveMapRotationRegionCsReq" => ::std::option::Option::Some(CmdMapRotationType::CmdLeaveMapRotationRegionCsReq),
+            "CmdRemoveRotaterScRsp" => ::std::option::Option::Some(CmdMapRotationType::CmdRemoveRotaterScRsp),
+            "CmdUpdateMapRotationDataScNotify" => ::std::option::Option::Some(CmdMapRotationType::CmdUpdateMapRotationDataScNotify),
+            "CmdDeployRotaterCsReq" => ::std::option::Option::Some(CmdMapRotationType::CmdDeployRotaterCsReq),
+            "CmdLeaveMapRotationRegionScRsp" => ::std::option::Option::Some(CmdMapRotationType::CmdLeaveMapRotationRegionScRsp),
+            "CmdInteractChargerScRsp" => ::std::option::Option::Some(CmdMapRotationType::CmdInteractChargerScRsp),
+            "CmdEnterMapRotationRegionScRsp" => ::std::option::Option::Some(CmdMapRotationType::CmdEnterMapRotationRegionScRsp),
+            "CmdDeployRotaterScRsp" => ::std::option::Option::Some(CmdMapRotationType::CmdDeployRotaterScRsp),
+            "CmdUpdateEnergyScNotify" => ::std::option::Option::Some(CmdMapRotationType::CmdUpdateEnergyScNotify),
+            "CmdResetMapRotationRegionScRsp" => ::std::option::Option::Some(CmdMapRotationType::CmdResetMapRotationRegionScRsp),
+            "CmdInteractChargerCsReq" => ::std::option::Option::Some(CmdMapRotationType::CmdInteractChargerCsReq),
+            "CmdGetMapRotationDataCsReq" => ::std::option::Option::Some(CmdMapRotationType::CmdGetMapRotationDataCsReq),
+            "CmdGetMapRotationDataScRsp" => ::std::option::Option::Some(CmdMapRotationType::CmdGetMapRotationDataScRsp),
+            "CmdRemoveRotaterCsReq" => ::std::option::Option::Some(CmdMapRotationType::CmdRemoveRotaterCsReq),
+            "CmdRotateMapScRsp" => ::std::option::Option::Some(CmdMapRotationType::CmdRotateMapScRsp),
+            "CmdUpdateRotaterScNotify" => ::std::option::Option::Some(CmdMapRotationType::CmdUpdateRotaterScNotify),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdMapRotationType] = &[
         CmdMapRotationType::CmdMapRotationTypeNone,
-        CmdMapRotationType::CmdLeaveMapRotationRegionScRsp,
-        CmdMapRotationType::CmdUpdateMapRotationDataScNotify,
-        CmdMapRotationType::CmdInteractChargerCsReq,
-        CmdMapRotationType::CmdUpdateRotaterScNotify,
-        CmdMapRotationType::CmdEnterMapRotationRegionCsReq,
-        CmdMapRotationType::CmdRemoveRotaterScRsp,
-        CmdMapRotationType::CmdDeployRotaterCsReq,
-        CmdMapRotationType::CmdRotateMapScRsp,
         CmdMapRotationType::CmdLeaveMapRotationRegionScNotify,
-        CmdMapRotationType::CmdLeaveMapRotationRegionCsReq,
-        CmdMapRotationType::CmdResetMapRotationRegionScRsp,
-        CmdMapRotationType::CmdInteractChargerScRsp,
-        CmdMapRotationType::CmdRemoveRotaterCsReq,
-        CmdMapRotationType::CmdRotateMapCsReq,
-        CmdMapRotationType::CmdEnterMapRotationRegionScRsp,
-        CmdMapRotationType::CmdGetMapRotationDataScRsp,
-        CmdMapRotationType::CmdUpdateEnergyScNotify,
-        CmdMapRotationType::CmdGetMapRotationDataCsReq,
-        CmdMapRotationType::CmdDeployRotaterScRsp,
+        CmdMapRotationType::CmdEnterMapRotationRegionCsReq,
         CmdMapRotationType::CmdResetMapRotationRegionCsReq,
+        CmdMapRotationType::CmdRotateMapCsReq,
+        CmdMapRotationType::CmdLeaveMapRotationRegionCsReq,
+        CmdMapRotationType::CmdRemoveRotaterScRsp,
+        CmdMapRotationType::CmdUpdateMapRotationDataScNotify,
+        CmdMapRotationType::CmdDeployRotaterCsReq,
+        CmdMapRotationType::CmdLeaveMapRotationRegionScRsp,
+        CmdMapRotationType::CmdInteractChargerScRsp,
+        CmdMapRotationType::CmdEnterMapRotationRegionScRsp,
+        CmdMapRotationType::CmdDeployRotaterScRsp,
+        CmdMapRotationType::CmdUpdateEnergyScNotify,
+        CmdMapRotationType::CmdResetMapRotationRegionScRsp,
+        CmdMapRotationType::CmdInteractChargerCsReq,
+        CmdMapRotationType::CmdGetMapRotationDataCsReq,
+        CmdMapRotationType::CmdGetMapRotationDataScRsp,
+        CmdMapRotationType::CmdRemoveRotaterCsReq,
+        CmdMapRotationType::CmdRotateMapScRsp,
+        CmdMapRotationType::CmdUpdateRotaterScNotify,
     ];
 }
 
@@ -167,26 +167,26 @@ impl ::protobuf::EnumFull for CmdMapRotationType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdMapRotationType::CmdMapRotationTypeNone => 0,
-            CmdMapRotationType::CmdLeaveMapRotationRegionScRsp => 1,
-            CmdMapRotationType::CmdUpdateMapRotationDataScNotify => 2,
-            CmdMapRotationType::CmdInteractChargerCsReq => 3,
-            CmdMapRotationType::CmdUpdateRotaterScNotify => 4,
-            CmdMapRotationType::CmdEnterMapRotationRegionCsReq => 5,
+            CmdMapRotationType::CmdLeaveMapRotationRegionScNotify => 1,
+            CmdMapRotationType::CmdEnterMapRotationRegionCsReq => 2,
+            CmdMapRotationType::CmdResetMapRotationRegionCsReq => 3,
+            CmdMapRotationType::CmdRotateMapCsReq => 4,
+            CmdMapRotationType::CmdLeaveMapRotationRegionCsReq => 5,
             CmdMapRotationType::CmdRemoveRotaterScRsp => 6,
-            CmdMapRotationType::CmdDeployRotaterCsReq => 7,
-            CmdMapRotationType::CmdRotateMapScRsp => 8,
-            CmdMapRotationType::CmdLeaveMapRotationRegionScNotify => 9,
-            CmdMapRotationType::CmdLeaveMapRotationRegionCsReq => 10,
-            CmdMapRotationType::CmdResetMapRotationRegionScRsp => 11,
-            CmdMapRotationType::CmdInteractChargerScRsp => 12,
-            CmdMapRotationType::CmdRemoveRotaterCsReq => 13,
-            CmdMapRotationType::CmdRotateMapCsReq => 14,
-            CmdMapRotationType::CmdEnterMapRotationRegionScRsp => 15,
-            CmdMapRotationType::CmdGetMapRotationDataScRsp => 16,
-            CmdMapRotationType::CmdUpdateEnergyScNotify => 17,
-            CmdMapRotationType::CmdGetMapRotationDataCsReq => 18,
-            CmdMapRotationType::CmdDeployRotaterScRsp => 19,
-            CmdMapRotationType::CmdResetMapRotationRegionCsReq => 20,
+            CmdMapRotationType::CmdUpdateMapRotationDataScNotify => 7,
+            CmdMapRotationType::CmdDeployRotaterCsReq => 8,
+            CmdMapRotationType::CmdLeaveMapRotationRegionScRsp => 9,
+            CmdMapRotationType::CmdInteractChargerScRsp => 10,
+            CmdMapRotationType::CmdEnterMapRotationRegionScRsp => 11,
+            CmdMapRotationType::CmdDeployRotaterScRsp => 12,
+            CmdMapRotationType::CmdUpdateEnergyScNotify => 13,
+            CmdMapRotationType::CmdResetMapRotationRegionScRsp => 14,
+            CmdMapRotationType::CmdInteractChargerCsReq => 15,
+            CmdMapRotationType::CmdGetMapRotationDataCsReq => 16,
+            CmdMapRotationType::CmdGetMapRotationDataScRsp => 17,
+            CmdMapRotationType::CmdRemoveRotaterCsReq => 18,
+            CmdMapRotationType::CmdRotateMapScRsp => 19,
+            CmdMapRotationType::CmdUpdateRotaterScNotify => 20,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -206,20 +206,20 @@ impl CmdMapRotationType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18CmdMapRotationType.proto*\xb8\x05\n\x12CmdMapRotationType\x12\x1a\
-    \n\x16CmdMapRotationTypeNone\x10\0\x12#\n\x1eCmdLeaveMapRotationRegionSc\
-    Rsp\x10\xb65\x12%\n\x20CmdUpdateMapRotationDataScNotify\x10\xbd5\x12\x1c\
-    \n\x17CmdInteractChargerCsReq\x10\xe35\x12\x1d\n\x18CmdUpdateRotaterScNo\
-    tify\x10\xaf5\x12#\n\x1eCmdEnterMapRotationRegionCsReq\x10\xf25\x12\x1a\
-    \n\x15CmdRemoveRotaterScRsp\x10\xc25\x12\x1a\n\x15CmdDeployRotaterCsReq\
-    \x10\xdf5\x12\x16\n\x11CmdRotateMapScRsp\x10\x9c5\x12&\n!CmdLeaveMapRota\
-    tionRegionScNotify\x10\xd25\x12#\n\x1eCmdLeaveMapRotationRegionCsReq\x10\
-    \xac5\x12#\n\x1eCmdResetMapRotationRegionScRsp\x10\xa65\x12\x1c\n\x17Cmd\
-    InteractChargerScRsp\x10\xba5\x12\x1a\n\x15CmdRemoveRotaterCsReq\x10\xa4\
-    5\x12\x16\n\x11CmdRotateMapCsReq\x10\xb15\x12#\n\x1eCmdEnterMapRotationR\
-    egionScRsp\x10\xd75\x12\x1f\n\x1aCmdGetMapRotationDataScRsp\x10\xc85\x12\
-    \x1c\n\x17CmdUpdateEnergyScNotify\x10\x955\x12\x1f\n\x1aCmdGetMapRotatio\
-    nDataCsReq\x10\xde5\x12\x1a\n\x15CmdDeployRotaterScRsp\x10\xdd5\x12#\n\
-    \x1eCmdResetMapRotationRegionCsReq\x10\xe95b\x06proto3\
+    \n\x16CmdMapRotationTypeNone\x10\0\x12&\n!CmdLeaveMapRotationRegionScNot\
+    ify\x10\xc05\x12#\n\x1eCmdEnterMapRotationRegionCsReq\x10\xcb5\x12#\n\
+    \x1eCmdResetMapRotationRegionCsReq\x10\xae5\x12\x16\n\x11CmdRotateMapCsR\
+    eq\x10\xb25\x12#\n\x1eCmdLeaveMapRotationRegionCsReq\x10\xe05\x12\x1a\n\
+    \x15CmdRemoveRotaterScRsp\x10\xcd5\x12%\n\x20CmdUpdateMapRotationDataScN\
+    otify\x10\xdf5\x12\x1a\n\x15CmdDeployRotaterCsReq\x10\xb75\x12#\n\x1eCmd\
+    LeaveMapRotationRegionScRsp\x10\xa05\x12\x1c\n\x17CmdInteractChargerScRs\
+    p\x10\xbe5\x12#\n\x1eCmdEnterMapRotationRegionScRsp\x10\xa45\x12\x1a\n\
+    \x15CmdDeployRotaterScRsp\x10\xc55\x12\x1c\n\x17CmdUpdateEnergyScNotify\
+    \x10\xea5\x12#\n\x1eCmdResetMapRotationRegionScRsp\x10\xdb5\x12\x1c\n\
+    \x17CmdInteractChargerCsReq\x10\x935\x12\x1f\n\x1aCmdGetMapRotationDataC\
+    sReq\x10\xbf5\x12\x1f\n\x1aCmdGetMapRotationDataScRsp\x10\xda5\x12\x1a\n\
+    \x15CmdRemoveRotaterCsReq\x10\xa35\x12\x16\n\x11CmdRotateMapScRsp\x10\
+    \xb55\x12\x1d\n\x18CmdUpdateRotaterScNotify\x10\xa95b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

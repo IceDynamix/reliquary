@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetLineupNameScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SetLineupNameScRsp.DMDNGEEPLFJ)
-    pub DMDNGEEPLFJ: ::std::string::String,
-    // @@protoc_insertion_point(field:SetLineupNameScRsp.CMBBJPPMHPM)
-    pub CMBBJPPMHPM: u32,
     // @@protoc_insertion_point(field:SetLineupNameScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:SetLineupNameScRsp.index)
+    pub index: u32,
+    // @@protoc_insertion_point(field:SetLineupNameScRsp.name)
+    pub name: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:SetLineupNameScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl SetLineupNameScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DMDNGEEPLFJ",
-            |m: &SetLineupNameScRsp| { &m.DMDNGEEPLFJ },
-            |m: &mut SetLineupNameScRsp| { &mut m.DMDNGEEPLFJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CMBBJPPMHPM",
-            |m: &SetLineupNameScRsp| { &m.CMBBJPPMHPM },
-            |m: &mut SetLineupNameScRsp| { &mut m.CMBBJPPMHPM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &SetLineupNameScRsp| { &m.retcode },
             |m: &mut SetLineupNameScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "index",
+            |m: &SetLineupNameScRsp| { &m.index },
+            |m: &mut SetLineupNameScRsp| { &mut m.index },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "name",
+            |m: &SetLineupNameScRsp| { &m.name },
+            |m: &mut SetLineupNameScRsp| { &mut m.name },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetLineupNameScRsp>(
             "SetLineupNameScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for SetLineupNameScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    self.DMDNGEEPLFJ = is.read_string()?;
-                },
-                104 => {
-                    self.CMBBJPPMHPM = is.read_uint32()?;
-                },
-                48 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
+                },
+                80 => {
+                    self.index = is.read_uint32()?;
+                },
+                26 => {
+                    self.name = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for SetLineupNameScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.DMDNGEEPLFJ.is_empty() {
-            my_size += ::protobuf::rt::string_size(4, &self.DMDNGEEPLFJ);
-        }
-        if self.CMBBJPPMHPM != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.CMBBJPPMHPM);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        }
+        if self.index != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.index);
+        }
+        if !self.name.is_empty() {
+            my_size += ::protobuf::rt::string_size(3, &self.name);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for SetLineupNameScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.DMDNGEEPLFJ.is_empty() {
-            os.write_string(4, &self.DMDNGEEPLFJ)?;
-        }
-        if self.CMBBJPPMHPM != 0 {
-            os.write_uint32(13, self.CMBBJPPMHPM)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
+        }
+        if self.index != 0 {
+            os.write_uint32(10, self.index)?;
+        }
+        if !self.name.is_empty() {
+            os.write_string(3, &self.name)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for SetLineupNameScRsp {
     }
 
     fn clear(&mut self) {
-        self.DMDNGEEPLFJ.clear();
-        self.CMBBJPPMHPM = 0;
         self.retcode = 0;
+        self.index = 0;
+        self.name.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetLineupNameScRsp {
         static instance: SetLineupNameScRsp = SetLineupNameScRsp {
-            DMDNGEEPLFJ: ::std::string::String::new(),
-            CMBBJPPMHPM: 0,
             retcode: 0,
+            index: 0,
+            name: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for SetLineupNameScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18SetLineupNameScRsp.proto\"r\n\x12SetLineupNameScRsp\x12\x20\n\x0bD\
-    MDNGEEPLFJ\x18\x04\x20\x01(\tR\x0bDMDNGEEPLFJ\x12\x20\n\x0bCMBBJPPMHPM\
-    \x18\r\x20\x01(\rR\x0bCMBBJPPMHPM\x12\x18\n\x07retcode\x18\x06\x20\x01(\
-    \rR\x07retcodeb\x06proto3\
+    \n\x18SetLineupNameScRsp.proto\"X\n\x12SetLineupNameScRsp\x12\x18\n\x07r\
+    etcode\x18\x07\x20\x01(\rR\x07retcode\x12\x14\n\x05index\x18\n\x20\x01(\
+    \rR\x05index\x12\x12\n\x04name\x18\x03\x20\x01(\tR\x04nameB\x15\n\x13emu\
+    .lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

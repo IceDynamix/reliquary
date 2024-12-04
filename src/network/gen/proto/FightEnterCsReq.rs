@@ -29,22 +29,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightEnterCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FightEnterCsReq.LDPPHLJDANL)
-    pub LDPPHLJDANL: u64,
-    // @@protoc_insertion_point(field:FightEnterCsReq.KBGEDOLPOIL)
-    pub KBGEDOLPOIL: u32,
-    // @@protoc_insertion_point(field:FightEnterCsReq.IPEPBMIKJCN)
-    pub IPEPBMIKJCN: ::std::string::String,
-    // @@protoc_insertion_point(field:FightEnterCsReq.NEJJEFEOJOJ)
-    pub NEJJEFEOJOJ: u32,
-    // @@protoc_insertion_point(field:FightEnterCsReq.KMANPJCMAOB)
-    pub KMANPJCMAOB: u32,
-    // @@protoc_insertion_point(field:FightEnterCsReq.JIOPMFNPBNP)
-    pub JIOPMFNPBNP: u32,
-    // @@protoc_insertion_point(field:FightEnterCsReq.uid)
-    pub uid: u32,
-    // @@protoc_insertion_point(field:FightEnterCsReq.CGEGOLLMHCJ)
-    pub CGEGOLLMHCJ: u32,
+    // @@protoc_insertion_point(field:FightEnterCsReq.OMOGHACHNEJ)
+    pub OMOGHACHNEJ: u32,
+    // @@protoc_insertion_point(field:FightEnterCsReq.LFFMLLMDJNL)
+    pub LFFMLLMDJNL: u32,
+    // @@protoc_insertion_point(field:FightEnterCsReq.GJBHJBFLIHF)
+    pub GJBHJBFLIHF: u32,
+    // @@protoc_insertion_point(field:FightEnterCsReq.LNCNOFOEHAA)
+    pub LNCNOFOEHAA: u32,
+    // @@protoc_insertion_point(field:FightEnterCsReq.NBLPGHLNIHD)
+    pub NBLPGHLNIHD: ::std::string::String,
+    // @@protoc_insertion_point(field:FightEnterCsReq.ICGBEBADDBI)
+    pub ICGBEBADDBI: u64,
+    // @@protoc_insertion_point(field:FightEnterCsReq.IMKHANGGECP)
+    pub IMKHANGGECP: u32,
+    // @@protoc_insertion_point(field:FightEnterCsReq.IBMFPJBHJII)
+    pub IBMFPJBHJII: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FightEnterCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,44 +65,44 @@ impl FightEnterCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LDPPHLJDANL",
-            |m: &FightEnterCsReq| { &m.LDPPHLJDANL },
-            |m: &mut FightEnterCsReq| { &mut m.LDPPHLJDANL },
+            "OMOGHACHNEJ",
+            |m: &FightEnterCsReq| { &m.OMOGHACHNEJ },
+            |m: &mut FightEnterCsReq| { &mut m.OMOGHACHNEJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KBGEDOLPOIL",
-            |m: &FightEnterCsReq| { &m.KBGEDOLPOIL },
-            |m: &mut FightEnterCsReq| { &mut m.KBGEDOLPOIL },
+            "LFFMLLMDJNL",
+            |m: &FightEnterCsReq| { &m.LFFMLLMDJNL },
+            |m: &mut FightEnterCsReq| { &mut m.LFFMLLMDJNL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IPEPBMIKJCN",
-            |m: &FightEnterCsReq| { &m.IPEPBMIKJCN },
-            |m: &mut FightEnterCsReq| { &mut m.IPEPBMIKJCN },
+            "GJBHJBFLIHF",
+            |m: &FightEnterCsReq| { &m.GJBHJBFLIHF },
+            |m: &mut FightEnterCsReq| { &mut m.GJBHJBFLIHF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NEJJEFEOJOJ",
-            |m: &FightEnterCsReq| { &m.NEJJEFEOJOJ },
-            |m: &mut FightEnterCsReq| { &mut m.NEJJEFEOJOJ },
+            "LNCNOFOEHAA",
+            |m: &FightEnterCsReq| { &m.LNCNOFOEHAA },
+            |m: &mut FightEnterCsReq| { &mut m.LNCNOFOEHAA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KMANPJCMAOB",
-            |m: &FightEnterCsReq| { &m.KMANPJCMAOB },
-            |m: &mut FightEnterCsReq| { &mut m.KMANPJCMAOB },
+            "NBLPGHLNIHD",
+            |m: &FightEnterCsReq| { &m.NBLPGHLNIHD },
+            |m: &mut FightEnterCsReq| { &mut m.NBLPGHLNIHD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JIOPMFNPBNP",
-            |m: &FightEnterCsReq| { &m.JIOPMFNPBNP },
-            |m: &mut FightEnterCsReq| { &mut m.JIOPMFNPBNP },
+            "ICGBEBADDBI",
+            |m: &FightEnterCsReq| { &m.ICGBEBADDBI },
+            |m: &mut FightEnterCsReq| { &mut m.ICGBEBADDBI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "uid",
-            |m: &FightEnterCsReq| { &m.uid },
-            |m: &mut FightEnterCsReq| { &mut m.uid },
+            "IMKHANGGECP",
+            |m: &FightEnterCsReq| { &m.IMKHANGGECP },
+            |m: &mut FightEnterCsReq| { &mut m.IMKHANGGECP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CGEGOLLMHCJ",
-            |m: &FightEnterCsReq| { &m.CGEGOLLMHCJ },
-            |m: &mut FightEnterCsReq| { &mut m.CGEGOLLMHCJ },
+            "IBMFPJBHJII",
+            |m: &FightEnterCsReq| { &m.IBMFPJBHJII },
+            |m: &mut FightEnterCsReq| { &mut m.IBMFPJBHJII },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightEnterCsReq>(
             "FightEnterCsReq",
@@ -122,29 +122,29 @@ impl ::protobuf::Message for FightEnterCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.LDPPHLJDANL = is.read_uint64()?;
+                40 => {
+                    self.OMOGHACHNEJ = is.read_uint32()?;
                 },
-                104 => {
-                    self.KBGEDOLPOIL = is.read_uint32()?;
+                64 => {
+                    self.LFFMLLMDJNL = is.read_uint32()?;
                 },
-                26 => {
-                    self.IPEPBMIKJCN = is.read_string()?;
-                },
-                80 => {
-                    self.NEJJEFEOJOJ = is.read_uint32()?;
-                },
-                96 => {
-                    self.KMANPJCMAOB = is.read_uint32()?;
+                24 => {
+                    self.GJBHJBFLIHF = is.read_uint32()?;
                 },
                 112 => {
-                    self.JIOPMFNPBNP = is.read_uint32()?;
+                    self.LNCNOFOEHAA = is.read_uint32()?;
+                },
+                10 => {
+                    self.NBLPGHLNIHD = is.read_string()?;
+                },
+                80 => {
+                    self.ICGBEBADDBI = is.read_uint64()?;
                 },
                 56 => {
-                    self.uid = is.read_uint32()?;
+                    self.IMKHANGGECP = is.read_uint32()?;
                 },
-                88 => {
-                    self.CGEGOLLMHCJ = is.read_uint32()?;
+                16 => {
+                    self.IBMFPJBHJII = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -158,29 +158,29 @@ impl ::protobuf::Message for FightEnterCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LDPPHLJDANL != 0 {
-            my_size += ::protobuf::rt::uint64_size(6, self.LDPPHLJDANL);
+        if self.OMOGHACHNEJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.OMOGHACHNEJ);
         }
-        if self.KBGEDOLPOIL != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.KBGEDOLPOIL);
+        if self.LFFMLLMDJNL != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.LFFMLLMDJNL);
         }
-        if !self.IPEPBMIKJCN.is_empty() {
-            my_size += ::protobuf::rt::string_size(3, &self.IPEPBMIKJCN);
+        if self.GJBHJBFLIHF != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.GJBHJBFLIHF);
         }
-        if self.NEJJEFEOJOJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.NEJJEFEOJOJ);
+        if self.LNCNOFOEHAA != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.LNCNOFOEHAA);
         }
-        if self.KMANPJCMAOB != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.KMANPJCMAOB);
+        if !self.NBLPGHLNIHD.is_empty() {
+            my_size += ::protobuf::rt::string_size(1, &self.NBLPGHLNIHD);
         }
-        if self.JIOPMFNPBNP != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.JIOPMFNPBNP);
+        if self.ICGBEBADDBI != 0 {
+            my_size += ::protobuf::rt::uint64_size(10, self.ICGBEBADDBI);
         }
-        if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.uid);
+        if self.IMKHANGGECP != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.IMKHANGGECP);
         }
-        if self.CGEGOLLMHCJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.CGEGOLLMHCJ);
+        if self.IBMFPJBHJII != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.IBMFPJBHJII);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -188,29 +188,29 @@ impl ::protobuf::Message for FightEnterCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LDPPHLJDANL != 0 {
-            os.write_uint64(6, self.LDPPHLJDANL)?;
+        if self.OMOGHACHNEJ != 0 {
+            os.write_uint32(5, self.OMOGHACHNEJ)?;
         }
-        if self.KBGEDOLPOIL != 0 {
-            os.write_uint32(13, self.KBGEDOLPOIL)?;
+        if self.LFFMLLMDJNL != 0 {
+            os.write_uint32(8, self.LFFMLLMDJNL)?;
         }
-        if !self.IPEPBMIKJCN.is_empty() {
-            os.write_string(3, &self.IPEPBMIKJCN)?;
+        if self.GJBHJBFLIHF != 0 {
+            os.write_uint32(3, self.GJBHJBFLIHF)?;
         }
-        if self.NEJJEFEOJOJ != 0 {
-            os.write_uint32(10, self.NEJJEFEOJOJ)?;
+        if self.LNCNOFOEHAA != 0 {
+            os.write_uint32(14, self.LNCNOFOEHAA)?;
         }
-        if self.KMANPJCMAOB != 0 {
-            os.write_uint32(12, self.KMANPJCMAOB)?;
+        if !self.NBLPGHLNIHD.is_empty() {
+            os.write_string(1, &self.NBLPGHLNIHD)?;
         }
-        if self.JIOPMFNPBNP != 0 {
-            os.write_uint32(14, self.JIOPMFNPBNP)?;
+        if self.ICGBEBADDBI != 0 {
+            os.write_uint64(10, self.ICGBEBADDBI)?;
         }
-        if self.uid != 0 {
-            os.write_uint32(7, self.uid)?;
+        if self.IMKHANGGECP != 0 {
+            os.write_uint32(7, self.IMKHANGGECP)?;
         }
-        if self.CGEGOLLMHCJ != 0 {
-            os.write_uint32(11, self.CGEGOLLMHCJ)?;
+        if self.IBMFPJBHJII != 0 {
+            os.write_uint32(2, self.IBMFPJBHJII)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -229,27 +229,27 @@ impl ::protobuf::Message for FightEnterCsReq {
     }
 
     fn clear(&mut self) {
-        self.LDPPHLJDANL = 0;
-        self.KBGEDOLPOIL = 0;
-        self.IPEPBMIKJCN.clear();
-        self.NEJJEFEOJOJ = 0;
-        self.KMANPJCMAOB = 0;
-        self.JIOPMFNPBNP = 0;
-        self.uid = 0;
-        self.CGEGOLLMHCJ = 0;
+        self.OMOGHACHNEJ = 0;
+        self.LFFMLLMDJNL = 0;
+        self.GJBHJBFLIHF = 0;
+        self.LNCNOFOEHAA = 0;
+        self.NBLPGHLNIHD.clear();
+        self.ICGBEBADDBI = 0;
+        self.IMKHANGGECP = 0;
+        self.IBMFPJBHJII = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightEnterCsReq {
         static instance: FightEnterCsReq = FightEnterCsReq {
-            LDPPHLJDANL: 0,
-            KBGEDOLPOIL: 0,
-            IPEPBMIKJCN: ::std::string::String::new(),
-            NEJJEFEOJOJ: 0,
-            KMANPJCMAOB: 0,
-            JIOPMFNPBNP: 0,
-            uid: 0,
-            CGEGOLLMHCJ: 0,
+            OMOGHACHNEJ: 0,
+            LFFMLLMDJNL: 0,
+            GJBHJBFLIHF: 0,
+            LNCNOFOEHAA: 0,
+            NBLPGHLNIHD: ::std::string::String::new(),
+            ICGBEBADDBI: 0,
+            IMKHANGGECP: 0,
+            IBMFPJBHJII: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -274,14 +274,14 @@ impl ::protobuf::reflect::ProtobufValue for FightEnterCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15FightEnterCsReq.proto\"\x91\x02\n\x0fFightEnterCsReq\x12\x20\n\x0b\
-    LDPPHLJDANL\x18\x06\x20\x01(\x04R\x0bLDPPHLJDANL\x12\x20\n\x0bKBGEDOLPOI\
-    L\x18\r\x20\x01(\rR\x0bKBGEDOLPOIL\x12\x20\n\x0bIPEPBMIKJCN\x18\x03\x20\
-    \x01(\tR\x0bIPEPBMIKJCN\x12\x20\n\x0bNEJJEFEOJOJ\x18\n\x20\x01(\rR\x0bNE\
-    JJEFEOJOJ\x12\x20\n\x0bKMANPJCMAOB\x18\x0c\x20\x01(\rR\x0bKMANPJCMAOB\
-    \x12\x20\n\x0bJIOPMFNPBNP\x18\x0e\x20\x01(\rR\x0bJIOPMFNPBNP\x12\x10\n\
-    \x03uid\x18\x07\x20\x01(\rR\x03uid\x12\x20\n\x0bCGEGOLLMHCJ\x18\x0b\x20\
-    \x01(\rR\x0bCGEGOLLMHCJb\x06proto3\
+    \n\x15FightEnterCsReq.proto\"\xa1\x02\n\x0fFightEnterCsReq\x12\x20\n\x0b\
+    OMOGHACHNEJ\x18\x05\x20\x01(\rR\x0bOMOGHACHNEJ\x12\x20\n\x0bLFFMLLMDJNL\
+    \x18\x08\x20\x01(\rR\x0bLFFMLLMDJNL\x12\x20\n\x0bGJBHJBFLIHF\x18\x03\x20\
+    \x01(\rR\x0bGJBHJBFLIHF\x12\x20\n\x0bLNCNOFOEHAA\x18\x0e\x20\x01(\rR\x0b\
+    LNCNOFOEHAA\x12\x20\n\x0bNBLPGHLNIHD\x18\x01\x20\x01(\tR\x0bNBLPGHLNIHD\
+    \x12\x20\n\x0bICGBEBADDBI\x18\n\x20\x01(\x04R\x0bICGBEBADDBI\x12\x20\n\
+    \x0bIMKHANGGECP\x18\x07\x20\x01(\rR\x0bIMKHANGGECP\x12\x20\n\x0bIBMFPJBH\
+    JII\x18\x02\x20\x01(\rR\x0bIBMFPJBHJIIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

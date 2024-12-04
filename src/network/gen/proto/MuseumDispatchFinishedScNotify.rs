@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MuseumDispatchFinishedScNotify {
     // message fields
-    // @@protoc_insertion_point(field:MuseumDispatchFinishedScNotify.CFCPIKEMPIO)
-    pub CFCPIKEMPIO: u32,
-    // @@protoc_insertion_point(field:MuseumDispatchFinishedScNotify.MMIDJEHMHMP)
-    pub MMIDJEHMHMP: u32,
-    // @@protoc_insertion_point(field:MuseumDispatchFinishedScNotify.PEPNGHDEDHG)
-    pub PEPNGHDEDHG: u32,
-    // @@protoc_insertion_point(field:MuseumDispatchFinishedScNotify.POEDFMELAKE)
-    pub POEDFMELAKE: u32,
+    // @@protoc_insertion_point(field:MuseumDispatchFinishedScNotify.OHPDIGGFBJP)
+    pub OHPDIGGFBJP: u32,
+    // @@protoc_insertion_point(field:MuseumDispatchFinishedScNotify.OLBALOBGALI)
+    pub OLBALOBGALI: u32,
+    // @@protoc_insertion_point(field:MuseumDispatchFinishedScNotify.BIIHOBMMFDP)
+    pub BIIHOBMMFDP: u32,
+    // @@protoc_insertion_point(field:MuseumDispatchFinishedScNotify.MLFLLKMIADE)
+    pub MLFLLKMIADE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MuseumDispatchFinishedScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl MuseumDispatchFinishedScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CFCPIKEMPIO",
-            |m: &MuseumDispatchFinishedScNotify| { &m.CFCPIKEMPIO },
-            |m: &mut MuseumDispatchFinishedScNotify| { &mut m.CFCPIKEMPIO },
+            "OHPDIGGFBJP",
+            |m: &MuseumDispatchFinishedScNotify| { &m.OHPDIGGFBJP },
+            |m: &mut MuseumDispatchFinishedScNotify| { &mut m.OHPDIGGFBJP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MMIDJEHMHMP",
-            |m: &MuseumDispatchFinishedScNotify| { &m.MMIDJEHMHMP },
-            |m: &mut MuseumDispatchFinishedScNotify| { &mut m.MMIDJEHMHMP },
+            "OLBALOBGALI",
+            |m: &MuseumDispatchFinishedScNotify| { &m.OLBALOBGALI },
+            |m: &mut MuseumDispatchFinishedScNotify| { &mut m.OLBALOBGALI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PEPNGHDEDHG",
-            |m: &MuseumDispatchFinishedScNotify| { &m.PEPNGHDEDHG },
-            |m: &mut MuseumDispatchFinishedScNotify| { &mut m.PEPNGHDEDHG },
+            "BIIHOBMMFDP",
+            |m: &MuseumDispatchFinishedScNotify| { &m.BIIHOBMMFDP },
+            |m: &mut MuseumDispatchFinishedScNotify| { &mut m.BIIHOBMMFDP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "POEDFMELAKE",
-            |m: &MuseumDispatchFinishedScNotify| { &m.POEDFMELAKE },
-            |m: &mut MuseumDispatchFinishedScNotify| { &mut m.POEDFMELAKE },
+            "MLFLLKMIADE",
+            |m: &MuseumDispatchFinishedScNotify| { &m.MLFLLKMIADE },
+            |m: &mut MuseumDispatchFinishedScNotify| { &mut m.MLFLLKMIADE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MuseumDispatchFinishedScNotify>(
             "MuseumDispatchFinishedScNotify",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for MuseumDispatchFinishedScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.CFCPIKEMPIO = is.read_uint32()?;
+                80 => {
+                    self.OHPDIGGFBJP = is.read_uint32()?;
                 },
-                32 => {
-                    self.MMIDJEHMHMP = is.read_uint32()?;
+                88 => {
+                    self.OLBALOBGALI = is.read_uint32()?;
                 },
-                120 => {
-                    self.PEPNGHDEDHG = is.read_uint32()?;
+                112 => {
+                    self.BIIHOBMMFDP = is.read_uint32()?;
                 },
-                56 => {
-                    self.POEDFMELAKE = is.read_uint32()?;
+                40 => {
+                    self.MLFLLKMIADE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,17 +118,17 @@ impl ::protobuf::Message for MuseumDispatchFinishedScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CFCPIKEMPIO != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.CFCPIKEMPIO);
+        if self.OHPDIGGFBJP != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.OHPDIGGFBJP);
         }
-        if self.MMIDJEHMHMP != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.MMIDJEHMHMP);
+        if self.OLBALOBGALI != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.OLBALOBGALI);
         }
-        if self.PEPNGHDEDHG != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.PEPNGHDEDHG);
+        if self.BIIHOBMMFDP != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.BIIHOBMMFDP);
         }
-        if self.POEDFMELAKE != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.POEDFMELAKE);
+        if self.MLFLLKMIADE != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.MLFLLKMIADE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for MuseumDispatchFinishedScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CFCPIKEMPIO != 0 {
-            os.write_uint32(8, self.CFCPIKEMPIO)?;
+        if self.OHPDIGGFBJP != 0 {
+            os.write_uint32(10, self.OHPDIGGFBJP)?;
         }
-        if self.MMIDJEHMHMP != 0 {
-            os.write_uint32(4, self.MMIDJEHMHMP)?;
+        if self.OLBALOBGALI != 0 {
+            os.write_uint32(11, self.OLBALOBGALI)?;
         }
-        if self.PEPNGHDEDHG != 0 {
-            os.write_uint32(15, self.PEPNGHDEDHG)?;
+        if self.BIIHOBMMFDP != 0 {
+            os.write_uint32(14, self.BIIHOBMMFDP)?;
         }
-        if self.POEDFMELAKE != 0 {
-            os.write_uint32(7, self.POEDFMELAKE)?;
+        if self.MLFLLKMIADE != 0 {
+            os.write_uint32(5, self.MLFLLKMIADE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for MuseumDispatchFinishedScNotify {
     }
 
     fn clear(&mut self) {
-        self.CFCPIKEMPIO = 0;
-        self.MMIDJEHMHMP = 0;
-        self.PEPNGHDEDHG = 0;
-        self.POEDFMELAKE = 0;
+        self.OHPDIGGFBJP = 0;
+        self.OLBALOBGALI = 0;
+        self.BIIHOBMMFDP = 0;
+        self.MLFLLKMIADE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MuseumDispatchFinishedScNotify {
         static instance: MuseumDispatchFinishedScNotify = MuseumDispatchFinishedScNotify {
-            CFCPIKEMPIO: 0,
-            MMIDJEHMHMP: 0,
-            PEPNGHDEDHG: 0,
-            POEDFMELAKE: 0,
+            OHPDIGGFBJP: 0,
+            OLBALOBGALI: 0,
+            BIIHOBMMFDP: 0,
+            MLFLLKMIADE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for MuseumDispatchFinishedScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$MuseumDispatchFinishedScNotify.proto\"\xa8\x01\n\x1eMuseumDispatchFin\
-    ishedScNotify\x12\x20\n\x0bCFCPIKEMPIO\x18\x08\x20\x01(\rR\x0bCFCPIKEMPI\
-    O\x12\x20\n\x0bMMIDJEHMHMP\x18\x04\x20\x01(\rR\x0bMMIDJEHMHMP\x12\x20\n\
-    \x0bPEPNGHDEDHG\x18\x0f\x20\x01(\rR\x0bPEPNGHDEDHG\x12\x20\n\x0bPOEDFMEL\
-    AKE\x18\x07\x20\x01(\rR\x0bPOEDFMELAKEb\x06proto3\
+    ishedScNotify\x12\x20\n\x0bOHPDIGGFBJP\x18\n\x20\x01(\rR\x0bOHPDIGGFBJP\
+    \x12\x20\n\x0bOLBALOBGALI\x18\x0b\x20\x01(\rR\x0bOLBALOBGALI\x12\x20\n\
+    \x0bBIIHOBMMFDP\x18\x0e\x20\x01(\rR\x0bBIIHOBMMFDP\x12\x20\n\x0bMLFLLKMI\
+    ADE\x18\x05\x20\x01(\rR\x0bMLFLLKMIADEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

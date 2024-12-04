@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueSelectCellScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueSelectCellScRsp.KGJJGBGFJAM)
-    pub KGJJGBGFJAM: ::protobuf::MessageField<super::PDMHACNANPF::PDMHACNANPF>,
-    // @@protoc_insertion_point(field:ChessRogueSelectCellScRsp.DOLHMBKDJGL)
-    pub DOLHMBKDJGL: u32,
-    // @@protoc_insertion_point(field:ChessRogueSelectCellScRsp.KMIPNOOKBMB)
-    pub KMIPNOOKBMB: u32,
-    // @@protoc_insertion_point(field:ChessRogueSelectCellScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:ChessRogueSelectCellScRsp.OJPBIKNALIN)
+    pub OJPBIKNALIN: u32,
+    // @@protoc_insertion_point(field:ChessRogueSelectCellScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:ChessRogueSelectCellScRsp.NAIMNIFDKFJ)
+    pub NAIMNIFDKFJ: u32,
+    // @@protoc_insertion_point(field:ChessRogueSelectCellScRsp.CEMCFKFEFPD)
+    pub CEMCFKFEFPD: ::protobuf::MessageField<super::IMBMFNLHNFK::IMBMFNLHNFK>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueSelectCellScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,25 +56,25 @@ impl ChessRogueSelectCellScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PDMHACNANPF::PDMHACNANPF>(
-            "KGJJGBGFJAM",
-            |m: &ChessRogueSelectCellScRsp| { &m.KGJJGBGFJAM },
-            |m: &mut ChessRogueSelectCellScRsp| { &mut m.KGJJGBGFJAM },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OJPBIKNALIN",
+            |m: &ChessRogueSelectCellScRsp| { &m.OJPBIKNALIN },
+            |m: &mut ChessRogueSelectCellScRsp| { &mut m.OJPBIKNALIN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DOLHMBKDJGL",
-            |m: &ChessRogueSelectCellScRsp| { &m.DOLHMBKDJGL },
-            |m: &mut ChessRogueSelectCellScRsp| { &mut m.DOLHMBKDJGL },
+            "ADADHIHDHJC",
+            |m: &ChessRogueSelectCellScRsp| { &m.ADADHIHDHJC },
+            |m: &mut ChessRogueSelectCellScRsp| { &mut m.ADADHIHDHJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KMIPNOOKBMB",
-            |m: &ChessRogueSelectCellScRsp| { &m.KMIPNOOKBMB },
-            |m: &mut ChessRogueSelectCellScRsp| { &mut m.KMIPNOOKBMB },
+            "NAIMNIFDKFJ",
+            |m: &ChessRogueSelectCellScRsp| { &m.NAIMNIFDKFJ },
+            |m: &mut ChessRogueSelectCellScRsp| { &mut m.NAIMNIFDKFJ },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &ChessRogueSelectCellScRsp| { &m.retcode },
-            |m: &mut ChessRogueSelectCellScRsp| { &mut m.retcode },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IMBMFNLHNFK::IMBMFNLHNFK>(
+            "CEMCFKFEFPD",
+            |m: &ChessRogueSelectCellScRsp| { &m.CEMCFKFEFPD },
+            |m: &mut ChessRogueSelectCellScRsp| { &mut m.CEMCFKFEFPD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueSelectCellScRsp>(
             "ChessRogueSelectCellScRsp",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for ChessRogueSelectCellScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                72 => {
+                    self.OJPBIKNALIN = is.read_uint32()?;
+                },
+                120 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
+                },
+                16 => {
+                    self.NAIMNIFDKFJ = is.read_uint32()?;
+                },
                 58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KGJJGBGFJAM)?;
-                },
-                112 => {
-                    self.DOLHMBKDJGL = is.read_uint32()?;
-                },
-                104 => {
-                    self.KMIPNOOKBMB = is.read_uint32()?;
-                },
-                8 => {
-                    self.retcode = is.read_uint32()?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CEMCFKFEFPD)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,18 +118,18 @@ impl ::protobuf::Message for ChessRogueSelectCellScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.KGJJGBGFJAM.as_ref() {
+        if self.OJPBIKNALIN != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.OJPBIKNALIN);
+        }
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.ADADHIHDHJC);
+        }
+        if self.NAIMNIFDKFJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.NAIMNIFDKFJ);
+        }
+        if let Some(v) = self.CEMCFKFEFPD.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.DOLHMBKDJGL != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.DOLHMBKDJGL);
-        }
-        if self.KMIPNOOKBMB != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.KMIPNOOKBMB);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for ChessRogueSelectCellScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.KGJJGBGFJAM.as_ref() {
+        if self.OJPBIKNALIN != 0 {
+            os.write_uint32(9, self.OJPBIKNALIN)?;
+        }
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(15, self.ADADHIHDHJC)?;
+        }
+        if self.NAIMNIFDKFJ != 0 {
+            os.write_uint32(2, self.NAIMNIFDKFJ)?;
+        }
+        if let Some(v) = self.CEMCFKFEFPD.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
-        if self.DOLHMBKDJGL != 0 {
-            os.write_uint32(14, self.DOLHMBKDJGL)?;
-        }
-        if self.KMIPNOOKBMB != 0 {
-            os.write_uint32(13, self.KMIPNOOKBMB)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for ChessRogueSelectCellScRsp {
     }
 
     fn clear(&mut self) {
-        self.KGJJGBGFJAM.clear();
-        self.DOLHMBKDJGL = 0;
-        self.KMIPNOOKBMB = 0;
-        self.retcode = 0;
+        self.OJPBIKNALIN = 0;
+        self.ADADHIHDHJC = 0;
+        self.NAIMNIFDKFJ = 0;
+        self.CEMCFKFEFPD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueSelectCellScRsp {
         static instance: ChessRogueSelectCellScRsp = ChessRogueSelectCellScRsp {
-            KGJJGBGFJAM: ::protobuf::MessageField::none(),
-            DOLHMBKDJGL: 0,
-            KMIPNOOKBMB: 0,
-            retcode: 0,
+            OJPBIKNALIN: 0,
+            ADADHIHDHJC: 0,
+            NAIMNIFDKFJ: 0,
+            CEMCFKFEFPD: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,12 +203,12 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueSelectCellScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fChessRogueSelectCellScRsp.proto\x1a\x11PDMHACNANPF.proto\"\xa9\x01\
-    \n\x19ChessRogueSelectCellScRsp\x12.\n\x0bKGJJGBGFJAM\x18\x07\x20\x01(\
-    \x0b2\x0c.PDMHACNANPFR\x0bKGJJGBGFJAM\x12\x20\n\x0bDOLHMBKDJGL\x18\x0e\
-    \x20\x01(\rR\x0bDOLHMBKDJGL\x12\x20\n\x0bKMIPNOOKBMB\x18\r\x20\x01(\rR\
-    \x0bKMIPNOOKBMB\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcodeb\x06\
-    proto3\
+    \n\x1fChessRogueSelectCellScRsp.proto\x1a\x11IMBMFNLHNFK.proto\"\xb1\x01\
+    \n\x19ChessRogueSelectCellScRsp\x12\x20\n\x0bOJPBIKNALIN\x18\t\x20\x01(\
+    \rR\x0bOJPBIKNALIN\x12\x20\n\x0bADADHIHDHJC\x18\x0f\x20\x01(\rR\x0bADADH\
+    IHDHJC\x12\x20\n\x0bNAIMNIFDKFJ\x18\x02\x20\x01(\rR\x0bNAIMNIFDKFJ\x12.\
+    \n\x0bCEMCFKFEFPD\x18\x07\x20\x01(\x0b2\x0c.IMBMFNLHNFKR\x0bCEMCFKFEFPDb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -226,7 +226,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::PDMHACNANPF::file_descriptor().clone());
+            deps.push(super::IMBMFNLHNFK::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChessRogueSelectCellScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

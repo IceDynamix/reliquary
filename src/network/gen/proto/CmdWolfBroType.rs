@@ -30,44 +30,44 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdWolfBroType {
     // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdWolfBroTypeNone)
     CmdWolfBroTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdWolfBroGameDataChangeScNotify)
-    CmdWolfBroGameDataChangeScNotify = 6578,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdWolfBroGameExplodeMonsterCsReq)
-    CmdWolfBroGameExplodeMonsterCsReq = 6520,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdWolfBroGameActivateBulletCsReq)
-    CmdWolfBroGameActivateBulletCsReq = 6505,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdWolfBroGameActivateBulletScRsp)
-    CmdWolfBroGameActivateBulletScRsp = 6545,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdStartWolfBroGameCsReq)
-    CmdStartWolfBroGameCsReq = 6598,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdArchiveWolfBroGameScRsp)
-    CmdArchiveWolfBroGameScRsp = 6542,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdWolfBroGamePickupBulletCsReq)
-    CmdWolfBroGamePickupBulletCsReq = 6522,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdArchiveWolfBroGameCsReq)
-    CmdArchiveWolfBroGameCsReq = 6583,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdStartWolfBroGameScRsp)
-    CmdStartWolfBroGameScRsp = 6571,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdQuitWolfBroGameScRsp)
-    CmdQuitWolfBroGameScRsp = 6512,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdWolfBroGamePickupBulletScRsp)
-    CmdWolfBroGamePickupBulletScRsp = 6566,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdQuitWolfBroGameCsReq)
-    CmdQuitWolfBroGameCsReq = 6533,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdGetWolfBroGameDataCsReq)
-    CmdGetWolfBroGameDataCsReq = 6528,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdRestoreWolfBroGameArchiveCsReq)
-    CmdRestoreWolfBroGameArchiveCsReq = 6579,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdWolfBroGameUseBulletScRsp)
-    CmdWolfBroGameUseBulletScRsp = 6589,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdWolfBroGameExplodeMonsterScRsp)
-    CmdWolfBroGameExplodeMonsterScRsp = 6550,
     // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdRestoreWolfBroGameArchiveScRsp)
-    CmdRestoreWolfBroGameArchiveScRsp = 6577,
+    CmdRestoreWolfBroGameArchiveScRsp = 6553,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdWolfBroGameUseBulletScRsp)
+    CmdWolfBroGameUseBulletScRsp = 6530,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdWolfBroGamePickupBulletScRsp)
+    CmdWolfBroGamePickupBulletScRsp = 6548,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdWolfBroGameExplodeMonsterScRsp)
+    CmdWolfBroGameExplodeMonsterScRsp = 6561,
     // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdGetWolfBroGameDataScRsp)
-    CmdGetWolfBroGameDataScRsp = 6538,
+    CmdGetWolfBroGameDataScRsp = 6516,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdArchiveWolfBroGameScRsp)
+    CmdArchiveWolfBroGameScRsp = 6546,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdRestoreWolfBroGameArchiveCsReq)
+    CmdRestoreWolfBroGameArchiveCsReq = 6539,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdWolfBroGameActivateBulletCsReq)
+    CmdWolfBroGameActivateBulletCsReq = 6590,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdStartWolfBroGameCsReq)
+    CmdStartWolfBroGameCsReq = 6559,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdGetWolfBroGameDataCsReq)
+    CmdGetWolfBroGameDataCsReq = 6580,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdQuitWolfBroGameScRsp)
+    CmdQuitWolfBroGameScRsp = 6537,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdWolfBroGameExplodeMonsterCsReq)
+    CmdWolfBroGameExplodeMonsterCsReq = 6519,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdWolfBroGameDataChangeScNotify)
+    CmdWolfBroGameDataChangeScNotify = 6547,
     // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdWolfBroGameUseBulletCsReq)
-    CmdWolfBroGameUseBulletCsReq = 6556,
+    CmdWolfBroGameUseBulletCsReq = 6574,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdWolfBroGamePickupBulletCsReq)
+    CmdWolfBroGamePickupBulletCsReq = 6575,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdWolfBroGameActivateBulletScRsp)
+    CmdWolfBroGameActivateBulletScRsp = 6579,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdStartWolfBroGameScRsp)
+    CmdStartWolfBroGameScRsp = 6520,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdArchiveWolfBroGameCsReq)
+    CmdArchiveWolfBroGameCsReq = 6503,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdQuitWolfBroGameCsReq)
+    CmdQuitWolfBroGameCsReq = 6534,
 }
 
 impl ::protobuf::Enum for CmdWolfBroType {
@@ -80,25 +80,25 @@ impl ::protobuf::Enum for CmdWolfBroType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdWolfBroType> {
         match value {
             0 => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroTypeNone),
-            6578 => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameDataChangeScNotify),
-            6520 => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameExplodeMonsterCsReq),
-            6505 => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameActivateBulletCsReq),
-            6545 => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameActivateBulletScRsp),
-            6598 => ::std::option::Option::Some(CmdWolfBroType::CmdStartWolfBroGameCsReq),
-            6542 => ::std::option::Option::Some(CmdWolfBroType::CmdArchiveWolfBroGameScRsp),
-            6522 => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGamePickupBulletCsReq),
-            6583 => ::std::option::Option::Some(CmdWolfBroType::CmdArchiveWolfBroGameCsReq),
-            6571 => ::std::option::Option::Some(CmdWolfBroType::CmdStartWolfBroGameScRsp),
-            6512 => ::std::option::Option::Some(CmdWolfBroType::CmdQuitWolfBroGameScRsp),
-            6566 => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGamePickupBulletScRsp),
-            6533 => ::std::option::Option::Some(CmdWolfBroType::CmdQuitWolfBroGameCsReq),
-            6528 => ::std::option::Option::Some(CmdWolfBroType::CmdGetWolfBroGameDataCsReq),
-            6579 => ::std::option::Option::Some(CmdWolfBroType::CmdRestoreWolfBroGameArchiveCsReq),
-            6589 => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameUseBulletScRsp),
-            6550 => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameExplodeMonsterScRsp),
-            6577 => ::std::option::Option::Some(CmdWolfBroType::CmdRestoreWolfBroGameArchiveScRsp),
-            6538 => ::std::option::Option::Some(CmdWolfBroType::CmdGetWolfBroGameDataScRsp),
-            6556 => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameUseBulletCsReq),
+            6553 => ::std::option::Option::Some(CmdWolfBroType::CmdRestoreWolfBroGameArchiveScRsp),
+            6530 => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameUseBulletScRsp),
+            6548 => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGamePickupBulletScRsp),
+            6561 => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameExplodeMonsterScRsp),
+            6516 => ::std::option::Option::Some(CmdWolfBroType::CmdGetWolfBroGameDataScRsp),
+            6546 => ::std::option::Option::Some(CmdWolfBroType::CmdArchiveWolfBroGameScRsp),
+            6539 => ::std::option::Option::Some(CmdWolfBroType::CmdRestoreWolfBroGameArchiveCsReq),
+            6590 => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameActivateBulletCsReq),
+            6559 => ::std::option::Option::Some(CmdWolfBroType::CmdStartWolfBroGameCsReq),
+            6580 => ::std::option::Option::Some(CmdWolfBroType::CmdGetWolfBroGameDataCsReq),
+            6537 => ::std::option::Option::Some(CmdWolfBroType::CmdQuitWolfBroGameScRsp),
+            6519 => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameExplodeMonsterCsReq),
+            6547 => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameDataChangeScNotify),
+            6574 => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameUseBulletCsReq),
+            6575 => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGamePickupBulletCsReq),
+            6579 => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameActivateBulletScRsp),
+            6520 => ::std::option::Option::Some(CmdWolfBroType::CmdStartWolfBroGameScRsp),
+            6503 => ::std::option::Option::Some(CmdWolfBroType::CmdArchiveWolfBroGameCsReq),
+            6534 => ::std::option::Option::Some(CmdWolfBroType::CmdQuitWolfBroGameCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -106,50 +106,50 @@ impl ::protobuf::Enum for CmdWolfBroType {
     fn from_str(str: &str) -> ::std::option::Option<CmdWolfBroType> {
         match str {
             "CmdWolfBroTypeNone" => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroTypeNone),
-            "CmdWolfBroGameDataChangeScNotify" => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameDataChangeScNotify),
-            "CmdWolfBroGameExplodeMonsterCsReq" => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameExplodeMonsterCsReq),
-            "CmdWolfBroGameActivateBulletCsReq" => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameActivateBulletCsReq),
-            "CmdWolfBroGameActivateBulletScRsp" => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameActivateBulletScRsp),
-            "CmdStartWolfBroGameCsReq" => ::std::option::Option::Some(CmdWolfBroType::CmdStartWolfBroGameCsReq),
-            "CmdArchiveWolfBroGameScRsp" => ::std::option::Option::Some(CmdWolfBroType::CmdArchiveWolfBroGameScRsp),
-            "CmdWolfBroGamePickupBulletCsReq" => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGamePickupBulletCsReq),
-            "CmdArchiveWolfBroGameCsReq" => ::std::option::Option::Some(CmdWolfBroType::CmdArchiveWolfBroGameCsReq),
-            "CmdStartWolfBroGameScRsp" => ::std::option::Option::Some(CmdWolfBroType::CmdStartWolfBroGameScRsp),
-            "CmdQuitWolfBroGameScRsp" => ::std::option::Option::Some(CmdWolfBroType::CmdQuitWolfBroGameScRsp),
-            "CmdWolfBroGamePickupBulletScRsp" => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGamePickupBulletScRsp),
-            "CmdQuitWolfBroGameCsReq" => ::std::option::Option::Some(CmdWolfBroType::CmdQuitWolfBroGameCsReq),
-            "CmdGetWolfBroGameDataCsReq" => ::std::option::Option::Some(CmdWolfBroType::CmdGetWolfBroGameDataCsReq),
-            "CmdRestoreWolfBroGameArchiveCsReq" => ::std::option::Option::Some(CmdWolfBroType::CmdRestoreWolfBroGameArchiveCsReq),
-            "CmdWolfBroGameUseBulletScRsp" => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameUseBulletScRsp),
-            "CmdWolfBroGameExplodeMonsterScRsp" => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameExplodeMonsterScRsp),
             "CmdRestoreWolfBroGameArchiveScRsp" => ::std::option::Option::Some(CmdWolfBroType::CmdRestoreWolfBroGameArchiveScRsp),
+            "CmdWolfBroGameUseBulletScRsp" => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameUseBulletScRsp),
+            "CmdWolfBroGamePickupBulletScRsp" => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGamePickupBulletScRsp),
+            "CmdWolfBroGameExplodeMonsterScRsp" => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameExplodeMonsterScRsp),
             "CmdGetWolfBroGameDataScRsp" => ::std::option::Option::Some(CmdWolfBroType::CmdGetWolfBroGameDataScRsp),
+            "CmdArchiveWolfBroGameScRsp" => ::std::option::Option::Some(CmdWolfBroType::CmdArchiveWolfBroGameScRsp),
+            "CmdRestoreWolfBroGameArchiveCsReq" => ::std::option::Option::Some(CmdWolfBroType::CmdRestoreWolfBroGameArchiveCsReq),
+            "CmdWolfBroGameActivateBulletCsReq" => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameActivateBulletCsReq),
+            "CmdStartWolfBroGameCsReq" => ::std::option::Option::Some(CmdWolfBroType::CmdStartWolfBroGameCsReq),
+            "CmdGetWolfBroGameDataCsReq" => ::std::option::Option::Some(CmdWolfBroType::CmdGetWolfBroGameDataCsReq),
+            "CmdQuitWolfBroGameScRsp" => ::std::option::Option::Some(CmdWolfBroType::CmdQuitWolfBroGameScRsp),
+            "CmdWolfBroGameExplodeMonsterCsReq" => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameExplodeMonsterCsReq),
+            "CmdWolfBroGameDataChangeScNotify" => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameDataChangeScNotify),
             "CmdWolfBroGameUseBulletCsReq" => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameUseBulletCsReq),
+            "CmdWolfBroGamePickupBulletCsReq" => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGamePickupBulletCsReq),
+            "CmdWolfBroGameActivateBulletScRsp" => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameActivateBulletScRsp),
+            "CmdStartWolfBroGameScRsp" => ::std::option::Option::Some(CmdWolfBroType::CmdStartWolfBroGameScRsp),
+            "CmdArchiveWolfBroGameCsReq" => ::std::option::Option::Some(CmdWolfBroType::CmdArchiveWolfBroGameCsReq),
+            "CmdQuitWolfBroGameCsReq" => ::std::option::Option::Some(CmdWolfBroType::CmdQuitWolfBroGameCsReq),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdWolfBroType] = &[
         CmdWolfBroType::CmdWolfBroTypeNone,
-        CmdWolfBroType::CmdWolfBroGameDataChangeScNotify,
-        CmdWolfBroType::CmdWolfBroGameExplodeMonsterCsReq,
-        CmdWolfBroType::CmdWolfBroGameActivateBulletCsReq,
-        CmdWolfBroType::CmdWolfBroGameActivateBulletScRsp,
-        CmdWolfBroType::CmdStartWolfBroGameCsReq,
-        CmdWolfBroType::CmdArchiveWolfBroGameScRsp,
-        CmdWolfBroType::CmdWolfBroGamePickupBulletCsReq,
-        CmdWolfBroType::CmdArchiveWolfBroGameCsReq,
-        CmdWolfBroType::CmdStartWolfBroGameScRsp,
-        CmdWolfBroType::CmdQuitWolfBroGameScRsp,
-        CmdWolfBroType::CmdWolfBroGamePickupBulletScRsp,
-        CmdWolfBroType::CmdQuitWolfBroGameCsReq,
-        CmdWolfBroType::CmdGetWolfBroGameDataCsReq,
-        CmdWolfBroType::CmdRestoreWolfBroGameArchiveCsReq,
-        CmdWolfBroType::CmdWolfBroGameUseBulletScRsp,
-        CmdWolfBroType::CmdWolfBroGameExplodeMonsterScRsp,
         CmdWolfBroType::CmdRestoreWolfBroGameArchiveScRsp,
+        CmdWolfBroType::CmdWolfBroGameUseBulletScRsp,
+        CmdWolfBroType::CmdWolfBroGamePickupBulletScRsp,
+        CmdWolfBroType::CmdWolfBroGameExplodeMonsterScRsp,
         CmdWolfBroType::CmdGetWolfBroGameDataScRsp,
+        CmdWolfBroType::CmdArchiveWolfBroGameScRsp,
+        CmdWolfBroType::CmdRestoreWolfBroGameArchiveCsReq,
+        CmdWolfBroType::CmdWolfBroGameActivateBulletCsReq,
+        CmdWolfBroType::CmdStartWolfBroGameCsReq,
+        CmdWolfBroType::CmdGetWolfBroGameDataCsReq,
+        CmdWolfBroType::CmdQuitWolfBroGameScRsp,
+        CmdWolfBroType::CmdWolfBroGameExplodeMonsterCsReq,
+        CmdWolfBroType::CmdWolfBroGameDataChangeScNotify,
         CmdWolfBroType::CmdWolfBroGameUseBulletCsReq,
+        CmdWolfBroType::CmdWolfBroGamePickupBulletCsReq,
+        CmdWolfBroType::CmdWolfBroGameActivateBulletScRsp,
+        CmdWolfBroType::CmdStartWolfBroGameScRsp,
+        CmdWolfBroType::CmdArchiveWolfBroGameCsReq,
+        CmdWolfBroType::CmdQuitWolfBroGameCsReq,
     ];
 }
 
@@ -162,25 +162,25 @@ impl ::protobuf::EnumFull for CmdWolfBroType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdWolfBroType::CmdWolfBroTypeNone => 0,
-            CmdWolfBroType::CmdWolfBroGameDataChangeScNotify => 1,
-            CmdWolfBroType::CmdWolfBroGameExplodeMonsterCsReq => 2,
-            CmdWolfBroType::CmdWolfBroGameActivateBulletCsReq => 3,
-            CmdWolfBroType::CmdWolfBroGameActivateBulletScRsp => 4,
-            CmdWolfBroType::CmdStartWolfBroGameCsReq => 5,
+            CmdWolfBroType::CmdRestoreWolfBroGameArchiveScRsp => 1,
+            CmdWolfBroType::CmdWolfBroGameUseBulletScRsp => 2,
+            CmdWolfBroType::CmdWolfBroGamePickupBulletScRsp => 3,
+            CmdWolfBroType::CmdWolfBroGameExplodeMonsterScRsp => 4,
+            CmdWolfBroType::CmdGetWolfBroGameDataScRsp => 5,
             CmdWolfBroType::CmdArchiveWolfBroGameScRsp => 6,
-            CmdWolfBroType::CmdWolfBroGamePickupBulletCsReq => 7,
-            CmdWolfBroType::CmdArchiveWolfBroGameCsReq => 8,
-            CmdWolfBroType::CmdStartWolfBroGameScRsp => 9,
-            CmdWolfBroType::CmdQuitWolfBroGameScRsp => 10,
-            CmdWolfBroType::CmdWolfBroGamePickupBulletScRsp => 11,
-            CmdWolfBroType::CmdQuitWolfBroGameCsReq => 12,
-            CmdWolfBroType::CmdGetWolfBroGameDataCsReq => 13,
-            CmdWolfBroType::CmdRestoreWolfBroGameArchiveCsReq => 14,
-            CmdWolfBroType::CmdWolfBroGameUseBulletScRsp => 15,
-            CmdWolfBroType::CmdWolfBroGameExplodeMonsterScRsp => 16,
-            CmdWolfBroType::CmdRestoreWolfBroGameArchiveScRsp => 17,
-            CmdWolfBroType::CmdGetWolfBroGameDataScRsp => 18,
-            CmdWolfBroType::CmdWolfBroGameUseBulletCsReq => 19,
+            CmdWolfBroType::CmdRestoreWolfBroGameArchiveCsReq => 7,
+            CmdWolfBroType::CmdWolfBroGameActivateBulletCsReq => 8,
+            CmdWolfBroType::CmdStartWolfBroGameCsReq => 9,
+            CmdWolfBroType::CmdGetWolfBroGameDataCsReq => 10,
+            CmdWolfBroType::CmdQuitWolfBroGameScRsp => 11,
+            CmdWolfBroType::CmdWolfBroGameExplodeMonsterCsReq => 12,
+            CmdWolfBroType::CmdWolfBroGameDataChangeScNotify => 13,
+            CmdWolfBroType::CmdWolfBroGameUseBulletCsReq => 14,
+            CmdWolfBroType::CmdWolfBroGamePickupBulletCsReq => 15,
+            CmdWolfBroType::CmdWolfBroGameActivateBulletScRsp => 16,
+            CmdWolfBroType::CmdStartWolfBroGameScRsp => 17,
+            CmdWolfBroType::CmdArchiveWolfBroGameCsReq => 18,
+            CmdWolfBroType::CmdQuitWolfBroGameCsReq => 19,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -200,20 +200,20 @@ impl CmdWolfBroType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14CmdWolfBroType.proto*\xcf\x05\n\x0eCmdWolfBroType\x12\x16\n\x12Cmd\
-    WolfBroTypeNone\x10\0\x12%\n\x20CmdWolfBroGameDataChangeScNotify\x10\xb2\
-    3\x12&\n!CmdWolfBroGameExplodeMonsterCsReq\x10\xf82\x12&\n!CmdWolfBroGam\
-    eActivateBulletCsReq\x10\xe92\x12&\n!CmdWolfBroGameActivateBulletScRsp\
-    \x10\x913\x12\x1d\n\x18CmdStartWolfBroGameCsReq\x10\xc63\x12\x1f\n\x1aCm\
-    dArchiveWolfBroGameScRsp\x10\x8e3\x12$\n\x1fCmdWolfBroGamePickupBulletCs\
-    Req\x10\xfa2\x12\x1f\n\x1aCmdArchiveWolfBroGameCsReq\x10\xb73\x12\x1d\n\
-    \x18CmdStartWolfBroGameScRsp\x10\xab3\x12\x1c\n\x17CmdQuitWolfBroGameScR\
-    sp\x10\xf02\x12$\n\x1fCmdWolfBroGamePickupBulletScRsp\x10\xa63\x12\x1c\n\
-    \x17CmdQuitWolfBroGameCsReq\x10\x853\x12\x1f\n\x1aCmdGetWolfBroGameDataC\
-    sReq\x10\x803\x12&\n!CmdRestoreWolfBroGameArchiveCsReq\x10\xb33\x12!\n\
-    \x1cCmdWolfBroGameUseBulletScRsp\x10\xbd3\x12&\n!CmdWolfBroGameExplodeMo\
-    nsterScRsp\x10\x963\x12&\n!CmdRestoreWolfBroGameArchiveScRsp\x10\xb13\
-    \x12\x1f\n\x1aCmdGetWolfBroGameDataScRsp\x10\x8a3\x12!\n\x1cCmdWolfBroGa\
-    meUseBulletCsReq\x10\x9c3b\x06proto3\
+    WolfBroTypeNone\x10\0\x12&\n!CmdRestoreWolfBroGameArchiveScRsp\x10\x993\
+    \x12!\n\x1cCmdWolfBroGameUseBulletScRsp\x10\x823\x12$\n\x1fCmdWolfBroGam\
+    ePickupBulletScRsp\x10\x943\x12&\n!CmdWolfBroGameExplodeMonsterScRsp\x10\
+    \xa13\x12\x1f\n\x1aCmdGetWolfBroGameDataScRsp\x10\xf42\x12\x1f\n\x1aCmdA\
+    rchiveWolfBroGameScRsp\x10\x923\x12&\n!CmdRestoreWolfBroGameArchiveCsReq\
+    \x10\x8b3\x12&\n!CmdWolfBroGameActivateBulletCsReq\x10\xbe3\x12\x1d\n\
+    \x18CmdStartWolfBroGameCsReq\x10\x9f3\x12\x1f\n\x1aCmdGetWolfBroGameData\
+    CsReq\x10\xb43\x12\x1c\n\x17CmdQuitWolfBroGameScRsp\x10\x893\x12&\n!CmdW\
+    olfBroGameExplodeMonsterCsReq\x10\xf72\x12%\n\x20CmdWolfBroGameDataChang\
+    eScNotify\x10\x933\x12!\n\x1cCmdWolfBroGameUseBulletCsReq\x10\xae3\x12$\
+    \n\x1fCmdWolfBroGamePickupBulletCsReq\x10\xaf3\x12&\n!CmdWolfBroGameActi\
+    vateBulletScRsp\x10\xb33\x12\x1d\n\x18CmdStartWolfBroGameScRsp\x10\xf82\
+    \x12\x1f\n\x1aCmdArchiveWolfBroGameCsReq\x10\xe72\x12\x1c\n\x17CmdQuitWo\
+    lfBroGameCsReq\x10\x863b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

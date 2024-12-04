@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetTrainVisitorBehaviorCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetTrainVisitorBehaviorCsReq.PLAGANNGMAI)
-    pub PLAGANNGMAI: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetTrainVisitorBehaviorCsReq.HBFDJLLKIGN)
+    pub HBFDJLLKIGN: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GetTrainVisitorBehaviorCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl GetTrainVisitorBehaviorCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PLAGANNGMAI",
-            |m: &GetTrainVisitorBehaviorCsReq| { &m.PLAGANNGMAI },
-            |m: &mut GetTrainVisitorBehaviorCsReq| { &mut m.PLAGANNGMAI },
+            "HBFDJLLKIGN",
+            |m: &GetTrainVisitorBehaviorCsReq| { &m.HBFDJLLKIGN },
+            |m: &mut GetTrainVisitorBehaviorCsReq| { &mut m.HBFDJLLKIGN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetTrainVisitorBehaviorCsReq>(
             "GetTrainVisitorBehaviorCsReq",
@@ -73,11 +73,11 @@ impl ::protobuf::Message for GetTrainVisitorBehaviorCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.PLAGANNGMAI)?;
+                114 => {
+                    is.read_repeated_packed_uint32_into(&mut self.HBFDJLLKIGN)?;
                 },
-                72 => {
-                    self.PLAGANNGMAI.push(is.read_uint32()?);
+                112 => {
+                    self.HBFDJLLKIGN.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -91,8 +91,8 @@ impl ::protobuf::Message for GetTrainVisitorBehaviorCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.PLAGANNGMAI {
-            my_size += ::protobuf::rt::uint32_size(9, *value);
+        for value in &self.HBFDJLLKIGN {
+            my_size += ::protobuf::rt::uint32_size(14, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -100,8 +100,8 @@ impl ::protobuf::Message for GetTrainVisitorBehaviorCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.PLAGANNGMAI {
-            os.write_uint32(9, *v)?;
+        for v in &self.HBFDJLLKIGN {
+            os.write_uint32(14, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -120,13 +120,13 @@ impl ::protobuf::Message for GetTrainVisitorBehaviorCsReq {
     }
 
     fn clear(&mut self) {
-        self.PLAGANNGMAI.clear();
+        self.HBFDJLLKIGN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetTrainVisitorBehaviorCsReq {
         static instance: GetTrainVisitorBehaviorCsReq = GetTrainVisitorBehaviorCsReq {
-            PLAGANNGMAI: ::std::vec::Vec::new(),
+            HBFDJLLKIGN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -152,7 +152,8 @@ impl ::protobuf::reflect::ProtobufValue for GetTrainVisitorBehaviorCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"GetTrainVisitorBehaviorCsReq.proto\"@\n\x1cGetTrainVisitorBehaviorCs\
-    Req\x12\x20\n\x0bPLAGANNGMAI\x18\t\x20\x03(\rR\x0bPLAGANNGMAIb\x06proto3\
+    Req\x12\x20\n\x0bHBFDJLLKIGN\x18\x0e\x20\x03(\rR\x0bHBFDJLLKIGNb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

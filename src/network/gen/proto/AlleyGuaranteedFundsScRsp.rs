@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AlleyGuaranteedFundsScRsp {
     // message fields
-    // @@protoc_insertion_point(field:AlleyGuaranteedFundsScRsp.PLHCNEGLNLC)
-    pub PLHCNEGLNLC: u32,
-    // @@protoc_insertion_point(field:AlleyGuaranteedFundsScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:AlleyGuaranteedFundsScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:AlleyGuaranteedFundsScRsp.PBICDGADNJN)
+    pub PBICDGADNJN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AlleyGuaranteedFundsScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl AlleyGuaranteedFundsScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PLHCNEGLNLC",
-            |m: &AlleyGuaranteedFundsScRsp| { &m.PLHCNEGLNLC },
-            |m: &mut AlleyGuaranteedFundsScRsp| { &mut m.PLHCNEGLNLC },
+            "ADADHIHDHJC",
+            |m: &AlleyGuaranteedFundsScRsp| { &m.ADADHIHDHJC },
+            |m: &mut AlleyGuaranteedFundsScRsp| { &mut m.ADADHIHDHJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &AlleyGuaranteedFundsScRsp| { &m.retcode },
-            |m: &mut AlleyGuaranteedFundsScRsp| { &mut m.retcode },
+            "PBICDGADNJN",
+            |m: &AlleyGuaranteedFundsScRsp| { &m.PBICDGADNJN },
+            |m: &mut AlleyGuaranteedFundsScRsp| { &mut m.PBICDGADNJN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AlleyGuaranteedFundsScRsp>(
             "AlleyGuaranteedFundsScRsp",
@@ -81,10 +81,10 @@ impl ::protobuf::Message for AlleyGuaranteedFundsScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 16 => {
-                    self.PLHCNEGLNLC = is.read_uint32()?;
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                64 => {
-                    self.retcode = is.read_uint32()?;
+                80 => {
+                    self.PBICDGADNJN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for AlleyGuaranteedFundsScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PLHCNEGLNLC != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.PLHCNEGLNLC);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.ADADHIHDHJC);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        if self.PBICDGADNJN != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.PBICDGADNJN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for AlleyGuaranteedFundsScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PLHCNEGLNLC != 0 {
-            os.write_uint32(2, self.PLHCNEGLNLC)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(2, self.ADADHIHDHJC)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+        if self.PBICDGADNJN != 0 {
+            os.write_uint32(10, self.PBICDGADNJN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for AlleyGuaranteedFundsScRsp {
     }
 
     fn clear(&mut self) {
-        self.PLHCNEGLNLC = 0;
-        self.retcode = 0;
+        self.ADADHIHDHJC = 0;
+        self.PBICDGADNJN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AlleyGuaranteedFundsScRsp {
         static instance: AlleyGuaranteedFundsScRsp = AlleyGuaranteedFundsScRsp {
-            PLHCNEGLNLC: 0,
-            retcode: 0,
+            ADADHIHDHJC: 0,
+            PBICDGADNJN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for AlleyGuaranteedFundsScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fAlleyGuaranteedFundsScRsp.proto\"W\n\x19AlleyGuaranteedFundsScRsp\
-    \x12\x20\n\x0bPLHCNEGLNLC\x18\x02\x20\x01(\rR\x0bPLHCNEGLNLC\x12\x18\n\
-    \x07retcode\x18\x08\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x1fAlleyGuaranteedFundsScRsp.proto\"_\n\x19AlleyGuaranteedFundsScRsp\
+    \x12\x20\n\x0bADADHIHDHJC\x18\x02\x20\x01(\rR\x0bADADHIHDHJC\x12\x20\n\
+    \x0bPBICDGADNJN\x18\n\x20\x01(\rR\x0bPBICDGADNJNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

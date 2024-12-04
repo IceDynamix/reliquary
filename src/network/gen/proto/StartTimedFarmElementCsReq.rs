@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartTimedFarmElementCsReq {
     // message fields
-    // @@protoc_insertion_point(field:StartTimedFarmElementCsReq.MMMOHAJFMID)
-    pub MMMOHAJFMID: u32,
-    // @@protoc_insertion_point(field:StartTimedFarmElementCsReq.POLKBGLCBJD)
-    pub POLKBGLCBJD: u32,
+    // @@protoc_insertion_point(field:StartTimedFarmElementCsReq.MEGEJFGAKDL)
+    pub MEGEJFGAKDL: u32,
+    // @@protoc_insertion_point(field:StartTimedFarmElementCsReq.DNMJBNNJLEL)
+    pub DNMJBNNJLEL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:StartTimedFarmElementCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl StartTimedFarmElementCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MMMOHAJFMID",
-            |m: &StartTimedFarmElementCsReq| { &m.MMMOHAJFMID },
-            |m: &mut StartTimedFarmElementCsReq| { &mut m.MMMOHAJFMID },
+            "MEGEJFGAKDL",
+            |m: &StartTimedFarmElementCsReq| { &m.MEGEJFGAKDL },
+            |m: &mut StartTimedFarmElementCsReq| { &mut m.MEGEJFGAKDL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "POLKBGLCBJD",
-            |m: &StartTimedFarmElementCsReq| { &m.POLKBGLCBJD },
-            |m: &mut StartTimedFarmElementCsReq| { &mut m.POLKBGLCBJD },
+            "DNMJBNNJLEL",
+            |m: &StartTimedFarmElementCsReq| { &m.DNMJBNNJLEL },
+            |m: &mut StartTimedFarmElementCsReq| { &mut m.DNMJBNNJLEL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartTimedFarmElementCsReq>(
             "StartTimedFarmElementCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for StartTimedFarmElementCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.MMMOHAJFMID = is.read_uint32()?;
+                32 => {
+                    self.MEGEJFGAKDL = is.read_uint32()?;
                 },
-                96 => {
-                    self.POLKBGLCBJD = is.read_uint32()?;
+                48 => {
+                    self.DNMJBNNJLEL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for StartTimedFarmElementCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MMMOHAJFMID != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.MMMOHAJFMID);
+        if self.MEGEJFGAKDL != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.MEGEJFGAKDL);
         }
-        if self.POLKBGLCBJD != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.POLKBGLCBJD);
+        if self.DNMJBNNJLEL != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.DNMJBNNJLEL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for StartTimedFarmElementCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MMMOHAJFMID != 0 {
-            os.write_uint32(6, self.MMMOHAJFMID)?;
+        if self.MEGEJFGAKDL != 0 {
+            os.write_uint32(4, self.MEGEJFGAKDL)?;
         }
-        if self.POLKBGLCBJD != 0 {
-            os.write_uint32(12, self.POLKBGLCBJD)?;
+        if self.DNMJBNNJLEL != 0 {
+            os.write_uint32(6, self.DNMJBNNJLEL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for StartTimedFarmElementCsReq {
     }
 
     fn clear(&mut self) {
-        self.MMMOHAJFMID = 0;
-        self.POLKBGLCBJD = 0;
+        self.MEGEJFGAKDL = 0;
+        self.DNMJBNNJLEL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartTimedFarmElementCsReq {
         static instance: StartTimedFarmElementCsReq = StartTimedFarmElementCsReq {
-            MMMOHAJFMID: 0,
-            POLKBGLCBJD: 0,
+            MEGEJFGAKDL: 0,
+            DNMJBNNJLEL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for StartTimedFarmElementCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20StartTimedFarmElementCsReq.proto\"`\n\x1aStartTimedFarmElementCsRe\
-    q\x12\x20\n\x0bMMMOHAJFMID\x18\x06\x20\x01(\rR\x0bMMMOHAJFMID\x12\x20\n\
-    \x0bPOLKBGLCBJD\x18\x0c\x20\x01(\rR\x0bPOLKBGLCBJDb\x06proto3\
+    q\x12\x20\n\x0bMEGEJFGAKDL\x18\x04\x20\x01(\rR\x0bMEGEJFGAKDL\x12\x20\n\
+    \x0bDNMJBNNJLEL\x18\x06\x20\x01(\rR\x0bDNMJBNNJLELb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

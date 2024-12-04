@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SwordTrainingUnlockSyncScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SwordTrainingUnlockSyncScNotify.JKOFJPMDELK)
-    pub JKOFJPMDELK: ::std::vec::Vec<super::HCMJAJFPCKO::HCMJAJFPCKO>,
-    // @@protoc_insertion_point(field:SwordTrainingUnlockSyncScNotify.NFIBKMMKNEE)
-    pub NFIBKMMKNEE: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SwordTrainingUnlockSyncScNotify.NMEDFEAFKPE)
+    pub NMEDFEAFKPE: ::std::vec::Vec<super::FKFEBAHFGCD::FKFEBAHFGCD>,
+    // @@protoc_insertion_point(field:SwordTrainingUnlockSyncScNotify.IIJCEOBIEHP)
+    pub IIJCEOBIEHP: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:SwordTrainingUnlockSyncScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl SwordTrainingUnlockSyncScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JKOFJPMDELK",
-            |m: &SwordTrainingUnlockSyncScNotify| { &m.JKOFJPMDELK },
-            |m: &mut SwordTrainingUnlockSyncScNotify| { &mut m.JKOFJPMDELK },
+            "NMEDFEAFKPE",
+            |m: &SwordTrainingUnlockSyncScNotify| { &m.NMEDFEAFKPE },
+            |m: &mut SwordTrainingUnlockSyncScNotify| { &mut m.NMEDFEAFKPE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NFIBKMMKNEE",
-            |m: &SwordTrainingUnlockSyncScNotify| { &m.NFIBKMMKNEE },
-            |m: &mut SwordTrainingUnlockSyncScNotify| { &mut m.NFIBKMMKNEE },
+            "IIJCEOBIEHP",
+            |m: &SwordTrainingUnlockSyncScNotify| { &m.IIJCEOBIEHP },
+            |m: &mut SwordTrainingUnlockSyncScNotify| { &mut m.IIJCEOBIEHP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SwordTrainingUnlockSyncScNotify>(
             "SwordTrainingUnlockSyncScNotify",
@@ -80,14 +80,14 @@ impl ::protobuf::Message for SwordTrainingUnlockSyncScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    self.JKOFJPMDELK.push(is.read_message()?);
+                106 => {
+                    self.NMEDFEAFKPE.push(is.read_message()?);
                 },
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NFIBKMMKNEE)?;
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.IIJCEOBIEHP)?;
                 },
-                120 => {
-                    self.NFIBKMMKNEE.push(is.read_uint32()?);
+                64 => {
+                    self.IIJCEOBIEHP.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,12 +101,12 @@ impl ::protobuf::Message for SwordTrainingUnlockSyncScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.JKOFJPMDELK {
+        for value in &self.NMEDFEAFKPE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.NFIBKMMKNEE {
-            my_size += ::protobuf::rt::uint32_size(15, *value);
+        for value in &self.IIJCEOBIEHP {
+            my_size += ::protobuf::rt::uint32_size(8, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -114,11 +114,11 @@ impl ::protobuf::Message for SwordTrainingUnlockSyncScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.JKOFJPMDELK {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        for v in &self.NMEDFEAFKPE {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
-        for v in &self.NFIBKMMKNEE {
-            os.write_uint32(15, *v)?;
+        for v in &self.IIJCEOBIEHP {
+            os.write_uint32(8, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -137,15 +137,15 @@ impl ::protobuf::Message for SwordTrainingUnlockSyncScNotify {
     }
 
     fn clear(&mut self) {
-        self.JKOFJPMDELK.clear();
-        self.NFIBKMMKNEE.clear();
+        self.NMEDFEAFKPE.clear();
+        self.IIJCEOBIEHP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwordTrainingUnlockSyncScNotify {
         static instance: SwordTrainingUnlockSyncScNotify = SwordTrainingUnlockSyncScNotify {
-            JKOFJPMDELK: ::std::vec::Vec::new(),
-            NFIBKMMKNEE: ::std::vec::Vec::new(),
+            NMEDFEAFKPE: ::std::vec::Vec::new(),
+            IIJCEOBIEHP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -170,10 +170,10 @@ impl ::protobuf::reflect::ProtobufValue for SwordTrainingUnlockSyncScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n%SwordTrainingUnlockSyncScNotify.proto\x1a\x11HCMJAJFPCKO.proto\"s\n\
-    \x1fSwordTrainingUnlockSyncScNotify\x12.\n\x0bJKOFJPMDELK\x18\n\x20\x03(\
-    \x0b2\x0c.HCMJAJFPCKOR\x0bJKOFJPMDELK\x12\x20\n\x0bNFIBKMMKNEE\x18\x0f\
-    \x20\x03(\rR\x0bNFIBKMMKNEEb\x06proto3\
+    \n%SwordTrainingUnlockSyncScNotify.proto\x1a\x11FKFEBAHFGCD.proto\"s\n\
+    \x1fSwordTrainingUnlockSyncScNotify\x12.\n\x0bNMEDFEAFKPE\x18\r\x20\x03(\
+    \x0b2\x0c.FKFEBAHFGCDR\x0bNMEDFEAFKPE\x12\x20\n\x0bIIJCEOBIEHP\x18\x08\
+    \x20\x03(\rR\x0bIIJCEOBIEHPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -191,7 +191,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::HCMJAJFPCKO::file_descriptor().clone());
+            deps.push(super::FKFEBAHFGCD::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SwordTrainingUnlockSyncScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

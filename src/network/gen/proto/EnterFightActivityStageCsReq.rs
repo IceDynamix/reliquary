@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterFightActivityStageCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EnterFightActivityStageCsReq.DGFNOGJFILI)
-    pub DGFNOGJFILI: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:EnterFightActivityStageCsReq.IPMEKIEMFPD)
-    pub IPMEKIEMFPD: ::std::vec::Vec<super::IIFKDONLDMA::IIFKDONLDMA>,
-    // @@protoc_insertion_point(field:EnterFightActivityStageCsReq.avatar_list)
-    pub avatar_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:EnterFightActivityStageCsReq.AHFNGPLDAII)
-    pub AHFNGPLDAII: u32,
-    // @@protoc_insertion_point(field:EnterFightActivityStageCsReq.GCFIIGOLPMF)
-    pub GCFIIGOLPMF: u32,
+    // @@protoc_insertion_point(field:EnterFightActivityStageCsReq.AAKFBNJMLEJ)
+    pub AAKFBNJMLEJ: ::std::vec::Vec<super::DCOEJEOFDON::DCOEJEOFDON>,
+    // @@protoc_insertion_point(field:EnterFightActivityStageCsReq.KONGAADEJEL)
+    pub KONGAADEJEL: u32,
+    // @@protoc_insertion_point(field:EnterFightActivityStageCsReq.AGPKHOOCMPE)
+    pub AGPKHOOCMPE: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:EnterFightActivityStageCsReq.EMALNMLGANJ)
+    pub EMALNMLGANJ: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:EnterFightActivityStageCsReq.ILIFHHJFMIH)
+    pub ILIFHHJFMIH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EnterFightActivityStageCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,29 +59,29 @@ impl EnterFightActivityStageCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DGFNOGJFILI",
-            |m: &EnterFightActivityStageCsReq| { &m.DGFNOGJFILI },
-            |m: &mut EnterFightActivityStageCsReq| { &mut m.DGFNOGJFILI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IPMEKIEMFPD",
-            |m: &EnterFightActivityStageCsReq| { &m.IPMEKIEMFPD },
-            |m: &mut EnterFightActivityStageCsReq| { &mut m.IPMEKIEMFPD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_list",
-            |m: &EnterFightActivityStageCsReq| { &m.avatar_list },
-            |m: &mut EnterFightActivityStageCsReq| { &mut m.avatar_list },
+            "AAKFBNJMLEJ",
+            |m: &EnterFightActivityStageCsReq| { &m.AAKFBNJMLEJ },
+            |m: &mut EnterFightActivityStageCsReq| { &mut m.AAKFBNJMLEJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AHFNGPLDAII",
-            |m: &EnterFightActivityStageCsReq| { &m.AHFNGPLDAII },
-            |m: &mut EnterFightActivityStageCsReq| { &mut m.AHFNGPLDAII },
+            "KONGAADEJEL",
+            |m: &EnterFightActivityStageCsReq| { &m.KONGAADEJEL },
+            |m: &mut EnterFightActivityStageCsReq| { &mut m.KONGAADEJEL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "AGPKHOOCMPE",
+            |m: &EnterFightActivityStageCsReq| { &m.AGPKHOOCMPE },
+            |m: &mut EnterFightActivityStageCsReq| { &mut m.AGPKHOOCMPE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "EMALNMLGANJ",
+            |m: &EnterFightActivityStageCsReq| { &m.EMALNMLGANJ },
+            |m: &mut EnterFightActivityStageCsReq| { &mut m.EMALNMLGANJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GCFIIGOLPMF",
-            |m: &EnterFightActivityStageCsReq| { &m.GCFIIGOLPMF },
-            |m: &mut EnterFightActivityStageCsReq| { &mut m.GCFIIGOLPMF },
+            "ILIFHHJFMIH",
+            |m: &EnterFightActivityStageCsReq| { &m.ILIFHHJFMIH },
+            |m: &mut EnterFightActivityStageCsReq| { &mut m.ILIFHHJFMIH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterFightActivityStageCsReq>(
             "EnterFightActivityStageCsReq",
@@ -101,26 +101,26 @@ impl ::protobuf::Message for EnterFightActivityStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.DGFNOGJFILI)?;
+                122 => {
+                    self.AAKFBNJMLEJ.push(is.read_message()?);
                 },
-                8 => {
-                    self.DGFNOGJFILI.push(is.read_uint32()?);
+                48 => {
+                    self.KONGAADEJEL = is.read_uint32()?;
                 },
                 26 => {
-                    self.IPMEKIEMFPD.push(is.read_message()?);
+                    is.read_repeated_packed_uint32_into(&mut self.AGPKHOOCMPE)?;
                 },
-                66 => {
-                    is.read_repeated_packed_uint32_into(&mut self.avatar_list)?;
+                24 => {
+                    self.AGPKHOOCMPE.push(is.read_uint32()?);
                 },
-                64 => {
-                    self.avatar_list.push(is.read_uint32()?);
+                10 => {
+                    is.read_repeated_packed_uint32_into(&mut self.EMALNMLGANJ)?;
                 },
-                16 => {
-                    self.AHFNGPLDAII = is.read_uint32()?;
+                8 => {
+                    self.EMALNMLGANJ.push(is.read_uint32()?);
                 },
-                120 => {
-                    self.GCFIIGOLPMF = is.read_uint32()?;
+                72 => {
+                    self.ILIFHHJFMIH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -134,21 +134,21 @@ impl ::protobuf::Message for EnterFightActivityStageCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.DGFNOGJFILI {
-            my_size += ::protobuf::rt::uint32_size(1, *value);
-        };
-        for value in &self.IPMEKIEMFPD {
+        for value in &self.AAKFBNJMLEJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.avatar_list {
-            my_size += ::protobuf::rt::uint32_size(8, *value);
-        };
-        if self.AHFNGPLDAII != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.AHFNGPLDAII);
+        if self.KONGAADEJEL != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.KONGAADEJEL);
         }
-        if self.GCFIIGOLPMF != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.GCFIIGOLPMF);
+        for value in &self.AGPKHOOCMPE {
+            my_size += ::protobuf::rt::uint32_size(3, *value);
+        };
+        for value in &self.EMALNMLGANJ {
+            my_size += ::protobuf::rt::uint32_size(1, *value);
+        };
+        if self.ILIFHHJFMIH != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.ILIFHHJFMIH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -156,20 +156,20 @@ impl ::protobuf::Message for EnterFightActivityStageCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.DGFNOGJFILI {
+        for v in &self.AAKFBNJMLEJ {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
+        if self.KONGAADEJEL != 0 {
+            os.write_uint32(6, self.KONGAADEJEL)?;
+        }
+        for v in &self.AGPKHOOCMPE {
+            os.write_uint32(3, *v)?;
+        };
+        for v in &self.EMALNMLGANJ {
             os.write_uint32(1, *v)?;
         };
-        for v in &self.IPMEKIEMFPD {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        };
-        for v in &self.avatar_list {
-            os.write_uint32(8, *v)?;
-        };
-        if self.AHFNGPLDAII != 0 {
-            os.write_uint32(2, self.AHFNGPLDAII)?;
-        }
-        if self.GCFIIGOLPMF != 0 {
-            os.write_uint32(15, self.GCFIIGOLPMF)?;
+        if self.ILIFHHJFMIH != 0 {
+            os.write_uint32(9, self.ILIFHHJFMIH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -188,21 +188,21 @@ impl ::protobuf::Message for EnterFightActivityStageCsReq {
     }
 
     fn clear(&mut self) {
-        self.DGFNOGJFILI.clear();
-        self.IPMEKIEMFPD.clear();
-        self.avatar_list.clear();
-        self.AHFNGPLDAII = 0;
-        self.GCFIIGOLPMF = 0;
+        self.AAKFBNJMLEJ.clear();
+        self.KONGAADEJEL = 0;
+        self.AGPKHOOCMPE.clear();
+        self.EMALNMLGANJ.clear();
+        self.ILIFHHJFMIH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterFightActivityStageCsReq {
         static instance: EnterFightActivityStageCsReq = EnterFightActivityStageCsReq {
-            DGFNOGJFILI: ::std::vec::Vec::new(),
-            IPMEKIEMFPD: ::std::vec::Vec::new(),
-            avatar_list: ::std::vec::Vec::new(),
-            AHFNGPLDAII: 0,
-            GCFIIGOLPMF: 0,
+            AAKFBNJMLEJ: ::std::vec::Vec::new(),
+            KONGAADEJEL: 0,
+            AGPKHOOCMPE: ::std::vec::Vec::new(),
+            EMALNMLGANJ: ::std::vec::Vec::new(),
+            ILIFHHJFMIH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -227,13 +227,13 @@ impl ::protobuf::reflect::ProtobufValue for EnterFightActivityStageCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"EnterFightActivityStageCsReq.proto\x1a\x11IIFKDONLDMA.proto\"\xd5\
-    \x01\n\x1cEnterFightActivityStageCsReq\x12\x20\n\x0bDGFNOGJFILI\x18\x01\
-    \x20\x03(\rR\x0bDGFNOGJFILI\x12.\n\x0bIPMEKIEMFPD\x18\x03\x20\x03(\x0b2\
-    \x0c.IIFKDONLDMAR\x0bIPMEKIEMFPD\x12\x1f\n\x0bavatar_list\x18\x08\x20\
-    \x03(\rR\navatarList\x12\x20\n\x0bAHFNGPLDAII\x18\x02\x20\x01(\rR\x0bAHF\
-    NGPLDAII\x12\x20\n\x0bGCFIIGOLPMF\x18\x0f\x20\x01(\rR\x0bGCFIIGOLPMFb\
-    \x06proto3\
+    \n\"EnterFightActivityStageCsReq.proto\x1a\x11DCOEJEOFDON.proto\"\xd6\
+    \x01\n\x1cEnterFightActivityStageCsReq\x12.\n\x0bAAKFBNJMLEJ\x18\x0f\x20\
+    \x03(\x0b2\x0c.DCOEJEOFDONR\x0bAAKFBNJMLEJ\x12\x20\n\x0bKONGAADEJEL\x18\
+    \x06\x20\x01(\rR\x0bKONGAADEJEL\x12\x20\n\x0bAGPKHOOCMPE\x18\x03\x20\x03\
+    (\rR\x0bAGPKHOOCMPE\x12\x20\n\x0bEMALNMLGANJ\x18\x01\x20\x03(\rR\x0bEMAL\
+    NMLGANJ\x12\x20\n\x0bILIFHHJFMIH\x18\t\x20\x01(\rR\x0bILIFHHJFMIHb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -251,7 +251,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::IIFKDONLDMA::file_descriptor().clone());
+            deps.push(super::DCOEJEOFDON::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EnterFightActivityStageCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

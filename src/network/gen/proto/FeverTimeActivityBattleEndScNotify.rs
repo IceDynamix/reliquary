@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FeverTimeActivityBattleEndScNotify {
     // message fields
-    // @@protoc_insertion_point(field:FeverTimeActivityBattleEndScNotify.BFADHPMMODP)
-    pub BFADHPMMODP: u32,
-    // @@protoc_insertion_point(field:FeverTimeActivityBattleEndScNotify.id)
-    pub id: u32,
-    // @@protoc_insertion_point(field:FeverTimeActivityBattleEndScNotify.EGPGPJLOHIL)
-    pub EGPGPJLOHIL: ::protobuf::EnumOrUnknown<super::FeverTimeBattleRank::FeverTimeBattleRank>,
-    // @@protoc_insertion_point(field:FeverTimeActivityBattleEndScNotify.DHFALDJEAAN)
-    pub DHFALDJEAAN: u32,
+    // @@protoc_insertion_point(field:FeverTimeActivityBattleEndScNotify.LEKIFOCPGIB)
+    pub LEKIFOCPGIB: u32,
+    // @@protoc_insertion_point(field:FeverTimeActivityBattleEndScNotify.IPNHCCODNDI)
+    pub IPNHCCODNDI: u32,
+    // @@protoc_insertion_point(field:FeverTimeActivityBattleEndScNotify.FMFHGAIDDKE)
+    pub FMFHGAIDDKE: ::protobuf::EnumOrUnknown<super::FeverTimeBattleRank::FeverTimeBattleRank>,
+    // @@protoc_insertion_point(field:FeverTimeActivityBattleEndScNotify.BNEHEBMHOLI)
+    pub BNEHEBMHOLI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FeverTimeActivityBattleEndScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl FeverTimeActivityBattleEndScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BFADHPMMODP",
-            |m: &FeverTimeActivityBattleEndScNotify| { &m.BFADHPMMODP },
-            |m: &mut FeverTimeActivityBattleEndScNotify| { &mut m.BFADHPMMODP },
+            "LEKIFOCPGIB",
+            |m: &FeverTimeActivityBattleEndScNotify| { &m.LEKIFOCPGIB },
+            |m: &mut FeverTimeActivityBattleEndScNotify| { &mut m.LEKIFOCPGIB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "id",
-            |m: &FeverTimeActivityBattleEndScNotify| { &m.id },
-            |m: &mut FeverTimeActivityBattleEndScNotify| { &mut m.id },
+            "IPNHCCODNDI",
+            |m: &FeverTimeActivityBattleEndScNotify| { &m.IPNHCCODNDI },
+            |m: &mut FeverTimeActivityBattleEndScNotify| { &mut m.IPNHCCODNDI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EGPGPJLOHIL",
-            |m: &FeverTimeActivityBattleEndScNotify| { &m.EGPGPJLOHIL },
-            |m: &mut FeverTimeActivityBattleEndScNotify| { &mut m.EGPGPJLOHIL },
+            "FMFHGAIDDKE",
+            |m: &FeverTimeActivityBattleEndScNotify| { &m.FMFHGAIDDKE },
+            |m: &mut FeverTimeActivityBattleEndScNotify| { &mut m.FMFHGAIDDKE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DHFALDJEAAN",
-            |m: &FeverTimeActivityBattleEndScNotify| { &m.DHFALDJEAAN },
-            |m: &mut FeverTimeActivityBattleEndScNotify| { &mut m.DHFALDJEAAN },
+            "BNEHEBMHOLI",
+            |m: &FeverTimeActivityBattleEndScNotify| { &m.BNEHEBMHOLI },
+            |m: &mut FeverTimeActivityBattleEndScNotify| { &mut m.BNEHEBMHOLI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FeverTimeActivityBattleEndScNotify>(
             "FeverTimeActivityBattleEndScNotify",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for FeverTimeActivityBattleEndScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.BFADHPMMODP = is.read_uint32()?;
+                48 => {
+                    self.LEKIFOCPGIB = is.read_uint32()?;
                 },
-                64 => {
-                    self.id = is.read_uint32()?;
+                112 => {
+                    self.IPNHCCODNDI = is.read_uint32()?;
                 },
-                8 => {
-                    self.EGPGPJLOHIL = is.read_enum_or_unknown()?;
+                96 => {
+                    self.FMFHGAIDDKE = is.read_enum_or_unknown()?;
                 },
-                72 => {
-                    self.DHFALDJEAAN = is.read_uint32()?;
+                40 => {
+                    self.BNEHEBMHOLI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,17 +118,17 @@ impl ::protobuf::Message for FeverTimeActivityBattleEndScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BFADHPMMODP != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.BFADHPMMODP);
+        if self.LEKIFOCPGIB != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.LEKIFOCPGIB);
         }
-        if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.id);
+        if self.IPNHCCODNDI != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.IPNHCCODNDI);
         }
-        if self.EGPGPJLOHIL != ::protobuf::EnumOrUnknown::new(super::FeverTimeBattleRank::FeverTimeBattleRank::FEVER_TIME_BATTLE_RANK_C) {
-            my_size += ::protobuf::rt::int32_size(1, self.EGPGPJLOHIL.value());
+        if self.FMFHGAIDDKE != ::protobuf::EnumOrUnknown::new(super::FeverTimeBattleRank::FeverTimeBattleRank::FEVER_TIME_BATTLE_RANK_C) {
+            my_size += ::protobuf::rt::int32_size(12, self.FMFHGAIDDKE.value());
         }
-        if self.DHFALDJEAAN != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.DHFALDJEAAN);
+        if self.BNEHEBMHOLI != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.BNEHEBMHOLI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for FeverTimeActivityBattleEndScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BFADHPMMODP != 0 {
-            os.write_uint32(2, self.BFADHPMMODP)?;
+        if self.LEKIFOCPGIB != 0 {
+            os.write_uint32(6, self.LEKIFOCPGIB)?;
         }
-        if self.id != 0 {
-            os.write_uint32(8, self.id)?;
+        if self.IPNHCCODNDI != 0 {
+            os.write_uint32(14, self.IPNHCCODNDI)?;
         }
-        if self.EGPGPJLOHIL != ::protobuf::EnumOrUnknown::new(super::FeverTimeBattleRank::FeverTimeBattleRank::FEVER_TIME_BATTLE_RANK_C) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.EGPGPJLOHIL))?;
+        if self.FMFHGAIDDKE != ::protobuf::EnumOrUnknown::new(super::FeverTimeBattleRank::FeverTimeBattleRank::FEVER_TIME_BATTLE_RANK_C) {
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.FMFHGAIDDKE))?;
         }
-        if self.DHFALDJEAAN != 0 {
-            os.write_uint32(9, self.DHFALDJEAAN)?;
+        if self.BNEHEBMHOLI != 0 {
+            os.write_uint32(5, self.BNEHEBMHOLI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for FeverTimeActivityBattleEndScNotify {
     }
 
     fn clear(&mut self) {
-        self.BFADHPMMODP = 0;
-        self.id = 0;
-        self.EGPGPJLOHIL = ::protobuf::EnumOrUnknown::new(super::FeverTimeBattleRank::FeverTimeBattleRank::FEVER_TIME_BATTLE_RANK_C);
-        self.DHFALDJEAAN = 0;
+        self.LEKIFOCPGIB = 0;
+        self.IPNHCCODNDI = 0;
+        self.FMFHGAIDDKE = ::protobuf::EnumOrUnknown::new(super::FeverTimeBattleRank::FeverTimeBattleRank::FEVER_TIME_BATTLE_RANK_C);
+        self.BNEHEBMHOLI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FeverTimeActivityBattleEndScNotify {
         static instance: FeverTimeActivityBattleEndScNotify = FeverTimeActivityBattleEndScNotify {
-            BFADHPMMODP: 0,
-            id: 0,
-            EGPGPJLOHIL: ::protobuf::EnumOrUnknown::from_i32(0),
-            DHFALDJEAAN: 0,
+            LEKIFOCPGIB: 0,
+            IPNHCCODNDI: 0,
+            FMFHGAIDDKE: ::protobuf::EnumOrUnknown::from_i32(0),
+            BNEHEBMHOLI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,11 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for FeverTimeActivityBattleEndScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(FeverTimeActivityBattleEndScNotify.proto\x1a\x19FeverTimeBattleRank.p\
-    roto\"\xb0\x01\n\"FeverTimeActivityBattleEndScNotify\x12\x20\n\x0bBFADHP\
-    MMODP\x18\x02\x20\x01(\rR\x0bBFADHPMMODP\x12\x0e\n\x02id\x18\x08\x20\x01\
-    (\rR\x02id\x126\n\x0bEGPGPJLOHIL\x18\x01\x20\x01(\x0e2\x14.FeverTimeBatt\
-    leRankR\x0bEGPGPJLOHIL\x12\x20\n\x0bDHFALDJEAAN\x18\t\x20\x01(\rR\x0bDHF\
-    ALDJEAANb\x06proto3\
+    roto\"\xc2\x01\n\"FeverTimeActivityBattleEndScNotify\x12\x20\n\x0bLEKIFO\
+    CPGIB\x18\x06\x20\x01(\rR\x0bLEKIFOCPGIB\x12\x20\n\x0bIPNHCCODNDI\x18\
+    \x0e\x20\x01(\rR\x0bIPNHCCODNDI\x126\n\x0bFMFHGAIDDKE\x18\x0c\x20\x01(\
+    \x0e2\x14.FeverTimeBattleRankR\x0bFMFHGAIDDKE\x12\x20\n\x0bBNEHEBMHOLI\
+    \x18\x05\x20\x01(\rR\x0bBNEHEBMHOLIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

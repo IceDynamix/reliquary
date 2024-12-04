@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct Goods {
     // message fields
-    // @@protoc_insertion_point(field:Goods.buy_times)
-    pub buy_times: u32,
     // @@protoc_insertion_point(field:Goods.begin_time)
     pub begin_time: i64,
-    // @@protoc_insertion_point(field:Goods.item_id)
-    pub item_id: u32,
     // @@protoc_insertion_point(field:Goods.goods_id)
     pub goods_id: u32,
+    // @@protoc_insertion_point(field:Goods.buy_times)
+    pub buy_times: u32,
+    // @@protoc_insertion_point(field:Goods.item_id)
+    pub item_id: u32,
     // @@protoc_insertion_point(field:Goods.end_time)
     pub end_time: i64,
     // special fields
@@ -59,24 +59,24 @@ impl Goods {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "buy_times",
-            |m: &Goods| { &m.buy_times },
-            |m: &mut Goods| { &mut m.buy_times },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "begin_time",
             |m: &Goods| { &m.begin_time },
             |m: &mut Goods| { &mut m.begin_time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "item_id",
-            |m: &Goods| { &m.item_id },
-            |m: &mut Goods| { &mut m.item_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "goods_id",
             |m: &Goods| { &m.goods_id },
             |m: &mut Goods| { &mut m.goods_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "buy_times",
+            |m: &Goods| { &m.buy_times },
+            |m: &mut Goods| { &mut m.buy_times },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "item_id",
+            |m: &Goods| { &m.item_id },
+            |m: &mut Goods| { &mut m.item_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "end_time",
@@ -101,19 +101,19 @@ impl ::protobuf::Message for Goods {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.buy_times = is.read_uint32()?;
-                },
-                88 => {
+                16 => {
                     self.begin_time = is.read_int64()?;
                 },
-                64 => {
-                    self.item_id = is.read_uint32()?;
-                },
-                56 => {
+                24 => {
                     self.goods_id = is.read_uint32()?;
                 },
-                24 => {
+                88 => {
+                    self.buy_times = is.read_uint32()?;
+                },
+                112 => {
+                    self.item_id = is.read_uint32()?;
+                },
+                104 => {
                     self.end_time = is.read_int64()?;
                 },
                 tag => {
@@ -128,20 +128,20 @@ impl ::protobuf::Message for Goods {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.buy_times != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.buy_times);
-        }
         if self.begin_time != 0 {
-            my_size += ::protobuf::rt::int64_size(11, self.begin_time);
-        }
-        if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.item_id);
+            my_size += ::protobuf::rt::int64_size(2, self.begin_time);
         }
         if self.goods_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.goods_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.goods_id);
+        }
+        if self.buy_times != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.buy_times);
+        }
+        if self.item_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.item_id);
         }
         if self.end_time != 0 {
-            my_size += ::protobuf::rt::int64_size(3, self.end_time);
+            my_size += ::protobuf::rt::int64_size(13, self.end_time);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for Goods {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.buy_times != 0 {
-            os.write_uint32(1, self.buy_times)?;
-        }
         if self.begin_time != 0 {
-            os.write_int64(11, self.begin_time)?;
-        }
-        if self.item_id != 0 {
-            os.write_uint32(8, self.item_id)?;
+            os.write_int64(2, self.begin_time)?;
         }
         if self.goods_id != 0 {
-            os.write_uint32(7, self.goods_id)?;
+            os.write_uint32(3, self.goods_id)?;
+        }
+        if self.buy_times != 0 {
+            os.write_uint32(11, self.buy_times)?;
+        }
+        if self.item_id != 0 {
+            os.write_uint32(14, self.item_id)?;
         }
         if self.end_time != 0 {
-            os.write_int64(3, self.end_time)?;
+            os.write_int64(13, self.end_time)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,20 +181,20 @@ impl ::protobuf::Message for Goods {
     }
 
     fn clear(&mut self) {
-        self.buy_times = 0;
         self.begin_time = 0;
-        self.item_id = 0;
         self.goods_id = 0;
+        self.buy_times = 0;
+        self.item_id = 0;
         self.end_time = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static Goods {
         static instance: Goods = Goods {
-            buy_times: 0,
             begin_time: 0,
-            item_id: 0,
             goods_id: 0,
+            buy_times: 0,
+            item_id: 0,
             end_time: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -220,11 +220,11 @@ impl ::protobuf::reflect::ProtobufValue for Goods {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0bGoods.proto\"\x92\x01\n\x05Goods\x12\x1b\n\tbuy_times\x18\x01\x20\
-    \x01(\rR\x08buyTimes\x12\x1d\n\nbegin_time\x18\x0b\x20\x01(\x03R\tbeginT\
-    ime\x12\x17\n\x07item_id\x18\x08\x20\x01(\rR\x06itemId\x12\x19\n\x08good\
-    s_id\x18\x07\x20\x01(\rR\x07goodsId\x12\x19\n\x08end_time\x18\x03\x20\
-    \x01(\x03R\x07endTimeb\x06proto3\
+    \n\x0bGoods.proto\"\x92\x01\n\x05Goods\x12\x1d\n\nbegin_time\x18\x02\x20\
+    \x01(\x03R\tbeginTime\x12\x19\n\x08goods_id\x18\x03\x20\x01(\rR\x07goods\
+    Id\x12\x1b\n\tbuy_times\x18\x0b\x20\x01(\rR\x08buyTimes\x12\x17\n\x07ite\
+    m_id\x18\x0e\x20\x01(\rR\x06itemId\x12\x19\n\x08end_time\x18\r\x20\x01(\
+    \x03R\x07endTimeB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

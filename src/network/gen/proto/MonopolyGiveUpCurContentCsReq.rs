@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyGiveUpCurContentCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyGiveUpCurContentCsReq.PCABIMPKMBN)
-    pub PCABIMPKMBN: u32,
+    // @@protoc_insertion_point(field:MonopolyGiveUpCurContentCsReq.HBCAFGHLIOP)
+    pub HBCAFGHLIOP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyGiveUpCurContentCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl MonopolyGiveUpCurContentCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PCABIMPKMBN",
-            |m: &MonopolyGiveUpCurContentCsReq| { &m.PCABIMPKMBN },
-            |m: &mut MonopolyGiveUpCurContentCsReq| { &mut m.PCABIMPKMBN },
+            "HBCAFGHLIOP",
+            |m: &MonopolyGiveUpCurContentCsReq| { &m.HBCAFGHLIOP },
+            |m: &mut MonopolyGiveUpCurContentCsReq| { &mut m.HBCAFGHLIOP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyGiveUpCurContentCsReq>(
             "MonopolyGiveUpCurContentCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for MonopolyGiveUpCurContentCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.PCABIMPKMBN = is.read_uint32()?;
+                32 => {
+                    self.HBCAFGHLIOP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for MonopolyGiveUpCurContentCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PCABIMPKMBN != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.PCABIMPKMBN);
+        if self.HBCAFGHLIOP != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.HBCAFGHLIOP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for MonopolyGiveUpCurContentCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PCABIMPKMBN != 0 {
-            os.write_uint32(5, self.PCABIMPKMBN)?;
+        if self.HBCAFGHLIOP != 0 {
+            os.write_uint32(4, self.HBCAFGHLIOP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for MonopolyGiveUpCurContentCsReq {
     }
 
     fn clear(&mut self) {
-        self.PCABIMPKMBN = 0;
+        self.HBCAFGHLIOP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyGiveUpCurContentCsReq {
         static instance: MonopolyGiveUpCurContentCsReq = MonopolyGiveUpCurContentCsReq {
-            PCABIMPKMBN: 0,
+            HBCAFGHLIOP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyGiveUpCurContentCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#MonopolyGiveUpCurContentCsReq.proto\"A\n\x1dMonopolyGiveUpCurContentC\
-    sReq\x12\x20\n\x0bPCABIMPKMBN\x18\x05\x20\x01(\rR\x0bPCABIMPKMBNb\x06pro\
+    sReq\x12\x20\n\x0bHBCAFGHLIOP\x18\x04\x20\x01(\rR\x0bHBCAFGHLIOPb\x06pro\
     to3\
 ";
 

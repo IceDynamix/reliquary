@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetCurAssistScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetCurAssistScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetCurAssistScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
     // @@protoc_insertion_point(field:GetCurAssistScRsp.FRIEND_APPLY_SOURCE_ASSIST)
-    pub FRIEND_APPLY_SOURCE_ASSIST: ::protobuf::MessageField<super::CCAELJADCAB::CCAELJADCAB>,
+    pub FRIEND_APPLY_SOURCE_ASSIST: ::protobuf::MessageField<super::PIMKBDJNKHN::PIMKBDJNKHN>,
     // special fields
     // @@protoc_insertion_point(special_field:GetCurAssistScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,11 +53,11 @@ impl GetCurAssistScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetCurAssistScRsp| { &m.retcode },
-            |m: &mut GetCurAssistScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &GetCurAssistScRsp| { &m.ADADHIHDHJC },
+            |m: &mut GetCurAssistScRsp| { &mut m.ADADHIHDHJC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CCAELJADCAB::CCAELJADCAB>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PIMKBDJNKHN::PIMKBDJNKHN>(
             "FRIEND_APPLY_SOURCE_ASSIST",
             |m: &GetCurAssistScRsp| { &m.FRIEND_APPLY_SOURCE_ASSIST },
             |m: &mut GetCurAssistScRsp| { &mut m.FRIEND_APPLY_SOURCE_ASSIST },
@@ -80,10 +80,10 @@ impl ::protobuf::Message for GetCurAssistScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.retcode = is.read_uint32()?;
+                40 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                122 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FRIEND_APPLY_SOURCE_ASSIST)?;
                 },
                 tag => {
@@ -98,8 +98,8 @@ impl ::protobuf::Message for GetCurAssistScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.ADADHIHDHJC);
         }
         if let Some(v) = self.FRIEND_APPLY_SOURCE_ASSIST.as_ref() {
             let len = v.compute_size();
@@ -111,11 +111,11 @@ impl ::protobuf::Message for GetCurAssistScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(5, self.ADADHIHDHJC)?;
         }
         if let Some(v) = self.FRIEND_APPLY_SOURCE_ASSIST.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for GetCurAssistScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
+        self.ADADHIHDHJC = 0;
         self.FRIEND_APPLY_SOURCE_ASSIST.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetCurAssistScRsp {
         static instance: GetCurAssistScRsp = GetCurAssistScRsp {
-            retcode: 0,
+            ADADHIHDHJC: 0,
             FRIEND_APPLY_SOURCE_ASSIST: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for GetCurAssistScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17GetCurAssistScRsp.proto\x1a\x11CCAELJADCAB.proto\"x\n\x11GetCurAss\
-    istScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12I\n\x1aF\
-    RIEND_APPLY_SOURCE_ASSIST\x18\x0f\x20\x01(\x0b2\x0c.CCAELJADCABR\x17FRIE\
-    NDAPPLYSOURCEASSISTb\x06proto3\
+    \n\x17GetCurAssistScRsp.proto\x1a\x11PIMKBDJNKHN.proto\"\x80\x01\n\x11Ge\
+    tCurAssistScRsp\x12\x20\n\x0bADADHIHDHJC\x18\x05\x20\x01(\rR\x0bADADHIHD\
+    HJC\x12I\n\x1aFRIEND_APPLY_SOURCE_ASSIST\x18\r\x20\x01(\x0b2\x0c.PIMKBDJ\
+    NKHNR\x17FRIENDAPPLYSOURCEASSISTb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::CCAELJADCAB::file_descriptor().clone());
+            deps.push(super::PIMKBDJNKHN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetCurAssistScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

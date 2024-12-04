@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartChallengeScRsp {
     // message fields
-    // @@protoc_insertion_point(field:StartChallengeScRsp.HLDLDAPNILF)
-    pub HLDLDAPNILF: ::protobuf::MessageField<super::KHLGBOHOGPD::KHLGBOHOGPD>,
-    // @@protoc_insertion_point(field:StartChallengeScRsp.EMDECAJPAPM)
-    pub EMDECAJPAPM: ::protobuf::MessageField<super::FHGPCKGFGAO::FHGPCKGFGAO>,
-    // @@protoc_insertion_point(field:StartChallengeScRsp.CKLHHOLMBOO)
-    pub CKLHHOLMBOO: ::std::vec::Vec<super::FJPJJEIJLLP::FJPJJEIJLLP>,
-    // @@protoc_insertion_point(field:StartChallengeScRsp.CLPCCICOGCE)
-    pub CLPCCICOGCE: ::protobuf::MessageField<super::NDACGJLONGF::NDACGJLONGF>,
+    // @@protoc_insertion_point(field:StartChallengeScRsp.challenge_info)
+    pub challenge_info: ::protobuf::MessageField<super::ChallengeInfo::ChallengeInfo>,
+    // @@protoc_insertion_point(field:StartChallengeScRsp.story_info)
+    pub story_info: ::protobuf::MessageField<super::ChallengeBossExtraInfo::ChallengeBossExtraInfo>,
+    // @@protoc_insertion_point(field:StartChallengeScRsp.scene)
+    pub scene: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
+    // @@protoc_insertion_point(field:StartChallengeScRsp.lineup_list)
+    pub lineup_list: ::std::vec::Vec<super::LineupInfo::LineupInfo>,
     // @@protoc_insertion_point(field:StartChallengeScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -58,25 +58,25 @@ impl StartChallengeScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KHLGBOHOGPD::KHLGBOHOGPD>(
-            "HLDLDAPNILF",
-            |m: &StartChallengeScRsp| { &m.HLDLDAPNILF },
-            |m: &mut StartChallengeScRsp| { &mut m.HLDLDAPNILF },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengeInfo::ChallengeInfo>(
+            "challenge_info",
+            |m: &StartChallengeScRsp| { &m.challenge_info },
+            |m: &mut StartChallengeScRsp| { &mut m.challenge_info },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FHGPCKGFGAO::FHGPCKGFGAO>(
-            "EMDECAJPAPM",
-            |m: &StartChallengeScRsp| { &m.EMDECAJPAPM },
-            |m: &mut StartChallengeScRsp| { &mut m.EMDECAJPAPM },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengeBossExtraInfo::ChallengeBossExtraInfo>(
+            "story_info",
+            |m: &StartChallengeScRsp| { &m.story_info },
+            |m: &mut StartChallengeScRsp| { &mut m.story_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneInfo::SceneInfo>(
+            "scene",
+            |m: &StartChallengeScRsp| { &m.scene },
+            |m: &mut StartChallengeScRsp| { &mut m.scene },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CKLHHOLMBOO",
-            |m: &StartChallengeScRsp| { &m.CKLHHOLMBOO },
-            |m: &mut StartChallengeScRsp| { &mut m.CKLHHOLMBOO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NDACGJLONGF::NDACGJLONGF>(
-            "CLPCCICOGCE",
-            |m: &StartChallengeScRsp| { &m.CLPCCICOGCE },
-            |m: &mut StartChallengeScRsp| { &mut m.CLPCCICOGCE },
+            "lineup_list",
+            |m: &StartChallengeScRsp| { &m.lineup_list },
+            |m: &mut StartChallengeScRsp| { &mut m.lineup_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -101,19 +101,19 @@ impl ::protobuf::Message for StartChallengeScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HLDLDAPNILF)?;
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.challenge_info)?;
                 },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EMDECAJPAPM)?;
-                },
-                98 => {
-                    self.CKLHHOLMBOO.push(is.read_message()?);
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.story_info)?;
                 },
                 50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CLPCCICOGCE)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
                 },
-                24 => {
+                34 => {
+                    self.lineup_list.push(is.read_message()?);
+                },
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -128,24 +128,24 @@ impl ::protobuf::Message for StartChallengeScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.HLDLDAPNILF.as_ref() {
+        if let Some(v) = self.challenge_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.EMDECAJPAPM.as_ref() {
+        if let Some(v) = self.story_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        for value in &self.CKLHHOLMBOO {
+        if let Some(v) = self.scene.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        for value in &self.lineup_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.CLPCCICOGCE.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -153,20 +153,20 @@ impl ::protobuf::Message for StartChallengeScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.HLDLDAPNILF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if let Some(v) = self.challenge_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
-        if let Some(v) = self.EMDECAJPAPM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if let Some(v) = self.story_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
-        for v in &self.CKLHHOLMBOO {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        };
-        if let Some(v) = self.CLPCCICOGCE.as_ref() {
+        if let Some(v) = self.scene.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
+        for v in &self.lineup_list {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        };
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,20 +185,20 @@ impl ::protobuf::Message for StartChallengeScRsp {
     }
 
     fn clear(&mut self) {
-        self.HLDLDAPNILF.clear();
-        self.EMDECAJPAPM.clear();
-        self.CKLHHOLMBOO.clear();
-        self.CLPCCICOGCE.clear();
+        self.challenge_info.clear();
+        self.story_info.clear();
+        self.scene.clear();
+        self.lineup_list.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartChallengeScRsp {
         static instance: StartChallengeScRsp = StartChallengeScRsp {
-            HLDLDAPNILF: ::protobuf::MessageField::none(),
-            EMDECAJPAPM: ::protobuf::MessageField::none(),
-            CKLHHOLMBOO: ::std::vec::Vec::new(),
-            CLPCCICOGCE: ::protobuf::MessageField::none(),
+            challenge_info: ::protobuf::MessageField::none(),
+            story_info: ::protobuf::MessageField::none(),
+            scene: ::protobuf::MessageField::none(),
+            lineup_list: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -224,14 +224,14 @@ impl ::protobuf::reflect::ProtobufValue for StartChallengeScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19StartChallengeScRsp.proto\x1a\x11FHGPCKGFGAO.proto\x1a\x11FJPJJEIJ\
-    LLP.proto\x1a\x11KHLGBOHOGPD.proto\x1a\x11NDACGJLONGF.proto\"\xef\x01\n\
-    \x13StartChallengeScRsp\x12.\n\x0bHLDLDAPNILF\x18\x08\x20\x01(\x0b2\x0c.\
-    KHLGBOHOGPDR\x0bHLDLDAPNILF\x12.\n\x0bEMDECAJPAPM\x18\x02\x20\x01(\x0b2\
-    \x0c.FHGPCKGFGAOR\x0bEMDECAJPAPM\x12.\n\x0bCKLHHOLMBOO\x18\x0c\x20\x03(\
-    \x0b2\x0c.FJPJJEIJLLPR\x0bCKLHHOLMBOO\x12.\n\x0bCLPCCICOGCE\x18\x06\x20\
-    \x01(\x0b2\x0c.NDACGJLONGFR\x0bCLPCCICOGCE\x12\x18\n\x07retcode\x18\x03\
-    \x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x19StartChallengeScRsp.proto\x1a\x13ChallengeInfo.proto\x1a\x10Lineup\
+    Info.proto\x1a\x0fSceneInfo.proto\x1a\x1cChallengeBossExtraInfo.proto\"\
+    \xee\x01\n\x13StartChallengeScRsp\x125\n\x0echallenge_info\x18\n\x20\x01\
+    (\x0b2\x0e.ChallengeInfoR\rchallengeInfo\x126\n\nstory_info\x18\x07\x20\
+    \x01(\x0b2\x17.ChallengeBossExtraInfoR\tstoryInfo\x12\x20\n\x05scene\x18\
+    \x06\x20\x01(\x0b2\n.SceneInfoR\x05scene\x12,\n\x0blineup_list\x18\x04\
+    \x20\x03(\x0b2\x0b.LineupInfoR\nlineupList\x12\x18\n\x07retcode\x18\x0f\
+    \x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -249,10 +249,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(4);
-            deps.push(super::FHGPCKGFGAO::file_descriptor().clone());
-            deps.push(super::FJPJJEIJLLP::file_descriptor().clone());
-            deps.push(super::KHLGBOHOGPD::file_descriptor().clone());
-            deps.push(super::NDACGJLONGF::file_descriptor().clone());
+            deps.push(super::ChallengeInfo::file_descriptor().clone());
+            deps.push(super::LineupInfo::file_descriptor().clone());
+            deps.push(super::SceneInfo::file_descriptor().clone());
+            deps.push(super::ChallengeBossExtraInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(StartChallengeScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,12 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFriendListInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetFriendListInfoScRsp.BLGMKOEEIIL)
-    pub BLGMKOEEIIL: ::std::vec::Vec<super::BOENKOAFFPJ::BOENKOAFFPJ>,
-    // @@protoc_insertion_point(field:GetFriendListInfoScRsp.KDHJEHJLMEH)
-    pub KDHJEHJLMEH: ::std::vec::Vec<super::BBFKIFKAEFL::BBFKIFKAEFL>,
     // @@protoc_insertion_point(field:GetFriendListInfoScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetFriendListInfoScRsp.friend_list)
+    pub friend_list: ::std::vec::Vec<super::FriendListInfo::FriendListInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:GetFriendListInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,22 +50,17 @@ impl GetFriendListInfoScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BLGMKOEEIIL",
-            |m: &GetFriendListInfoScRsp| { &m.BLGMKOEEIIL },
-            |m: &mut GetFriendListInfoScRsp| { &mut m.BLGMKOEEIIL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KDHJEHJLMEH",
-            |m: &GetFriendListInfoScRsp| { &m.KDHJEHJLMEH },
-            |m: &mut GetFriendListInfoScRsp| { &mut m.KDHJEHJLMEH },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetFriendListInfoScRsp| { &m.retcode },
             |m: &mut GetFriendListInfoScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "friend_list",
+            |m: &GetFriendListInfoScRsp| { &m.friend_list },
+            |m: &mut GetFriendListInfoScRsp| { &mut m.friend_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetFriendListInfoScRsp>(
             "GetFriendListInfoScRsp",
@@ -87,14 +80,11 @@ impl ::protobuf::Message for GetFriendListInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    self.BLGMKOEEIIL.push(is.read_message()?);
-                },
-                18 => {
-                    self.KDHJEHJLMEH.push(is.read_message()?);
-                },
                 24 => {
                     self.retcode = is.read_uint32()?;
+                },
+                10 => {
+                    self.friend_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,32 +98,25 @@ impl ::protobuf::Message for GetFriendListInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.BLGMKOEEIIL {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.KDHJEHJLMEH {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
+        for value in &self.friend_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.BLGMKOEEIIL {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        };
-        for v in &self.KDHJEHJLMEH {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
         if self.retcode != 0 {
             os.write_uint32(3, self.retcode)?;
         }
+        for v in &self.friend_list {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -151,17 +134,15 @@ impl ::protobuf::Message for GetFriendListInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.BLGMKOEEIIL.clear();
-        self.KDHJEHJLMEH.clear();
         self.retcode = 0;
+        self.friend_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFriendListInfoScRsp {
         static instance: GetFriendListInfoScRsp = GetFriendListInfoScRsp {
-            BLGMKOEEIIL: ::std::vec::Vec::new(),
-            KDHJEHJLMEH: ::std::vec::Vec::new(),
             retcode: 0,
+            friend_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,11 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for GetFriendListInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cGetFriendListInfoScRsp.proto\x1a\x11BBFKIFKAEFL.proto\x1a\x11BOENK\
-    OAFFPJ.proto\"\x92\x01\n\x16GetFriendListInfoScRsp\x12.\n\x0bBLGMKOEEIIL\
-    \x18\x0b\x20\x03(\x0b2\x0c.BOENKOAFFPJR\x0bBLGMKOEEIIL\x12.\n\x0bKDHJEHJ\
-    LMEH\x18\x02\x20\x03(\x0b2\x0c.BBFKIFKAEFLR\x0bKDHJEHJLMEH\x12\x18\n\x07\
-    retcode\x18\x03\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x1cGetFriendListInfoScRsp.proto\x1a\x14FriendListInfo.proto\"d\n\x16G\
+    etFriendListInfoScRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcod\
+    e\x120\n\x0bfriend_list\x18\x01\x20\x03(\x0b2\x0f.FriendListInfoR\nfrien\
+    dListB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,9 +187,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::BBFKIFKAEFL::file_descriptor().clone());
-            deps.push(super::BOENKOAFFPJ::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(1);
+            deps.push(super::FriendListInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetFriendListInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

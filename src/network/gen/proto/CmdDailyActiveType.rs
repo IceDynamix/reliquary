@@ -30,20 +30,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdDailyActiveType {
     // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdDailyActiveTypeNone)
     CmdDailyActiveTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdDailyActiveInfoNotify)
-    CmdDailyActiveInfoNotify = 3379,
-    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdGetDailyActiveInfoCsReq)
-    CmdGetDailyActiveInfoCsReq = 3383,
     // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdTakeApRewardScRsp)
-    CmdTakeApRewardScRsp = 3371,
-    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdTakeApRewardCsReq)
-    CmdTakeApRewardCsReq = 3398,
-    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdTakeAllApRewardScRsp)
-    CmdTakeAllApRewardScRsp = 3333,
-    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdTakeAllApRewardCsReq)
-    CmdTakeAllApRewardCsReq = 3377,
+    CmdTakeApRewardScRsp = 3320,
+    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdDailyActiveInfoNotify)
+    CmdDailyActiveInfoNotify = 3339,
     // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdGetDailyActiveInfoScRsp)
-    CmdGetDailyActiveInfoScRsp = 3342,
+    CmdGetDailyActiveInfoScRsp = 3346,
+    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdTakeAllApRewardScRsp)
+    CmdTakeAllApRewardScRsp = 3334,
+    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdTakeApRewardCsReq)
+    CmdTakeApRewardCsReq = 3359,
+    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdGetDailyActiveInfoCsReq)
+    CmdGetDailyActiveInfoCsReq = 3303,
+    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdTakeAllApRewardCsReq)
+    CmdTakeAllApRewardCsReq = 3353,
 }
 
 impl ::protobuf::Enum for CmdDailyActiveType {
@@ -56,13 +56,13 @@ impl ::protobuf::Enum for CmdDailyActiveType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdDailyActiveType> {
         match value {
             0 => ::std::option::Option::Some(CmdDailyActiveType::CmdDailyActiveTypeNone),
-            3379 => ::std::option::Option::Some(CmdDailyActiveType::CmdDailyActiveInfoNotify),
-            3383 => ::std::option::Option::Some(CmdDailyActiveType::CmdGetDailyActiveInfoCsReq),
-            3371 => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeApRewardScRsp),
-            3398 => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeApRewardCsReq),
-            3333 => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeAllApRewardScRsp),
-            3377 => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeAllApRewardCsReq),
-            3342 => ::std::option::Option::Some(CmdDailyActiveType::CmdGetDailyActiveInfoScRsp),
+            3320 => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeApRewardScRsp),
+            3339 => ::std::option::Option::Some(CmdDailyActiveType::CmdDailyActiveInfoNotify),
+            3346 => ::std::option::Option::Some(CmdDailyActiveType::CmdGetDailyActiveInfoScRsp),
+            3334 => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeAllApRewardScRsp),
+            3359 => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeApRewardCsReq),
+            3303 => ::std::option::Option::Some(CmdDailyActiveType::CmdGetDailyActiveInfoCsReq),
+            3353 => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeAllApRewardCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -70,26 +70,26 @@ impl ::protobuf::Enum for CmdDailyActiveType {
     fn from_str(str: &str) -> ::std::option::Option<CmdDailyActiveType> {
         match str {
             "CmdDailyActiveTypeNone" => ::std::option::Option::Some(CmdDailyActiveType::CmdDailyActiveTypeNone),
-            "CmdDailyActiveInfoNotify" => ::std::option::Option::Some(CmdDailyActiveType::CmdDailyActiveInfoNotify),
-            "CmdGetDailyActiveInfoCsReq" => ::std::option::Option::Some(CmdDailyActiveType::CmdGetDailyActiveInfoCsReq),
             "CmdTakeApRewardScRsp" => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeApRewardScRsp),
-            "CmdTakeApRewardCsReq" => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeApRewardCsReq),
-            "CmdTakeAllApRewardScRsp" => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeAllApRewardScRsp),
-            "CmdTakeAllApRewardCsReq" => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeAllApRewardCsReq),
+            "CmdDailyActiveInfoNotify" => ::std::option::Option::Some(CmdDailyActiveType::CmdDailyActiveInfoNotify),
             "CmdGetDailyActiveInfoScRsp" => ::std::option::Option::Some(CmdDailyActiveType::CmdGetDailyActiveInfoScRsp),
+            "CmdTakeAllApRewardScRsp" => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeAllApRewardScRsp),
+            "CmdTakeApRewardCsReq" => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeApRewardCsReq),
+            "CmdGetDailyActiveInfoCsReq" => ::std::option::Option::Some(CmdDailyActiveType::CmdGetDailyActiveInfoCsReq),
+            "CmdTakeAllApRewardCsReq" => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeAllApRewardCsReq),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdDailyActiveType] = &[
         CmdDailyActiveType::CmdDailyActiveTypeNone,
-        CmdDailyActiveType::CmdDailyActiveInfoNotify,
-        CmdDailyActiveType::CmdGetDailyActiveInfoCsReq,
         CmdDailyActiveType::CmdTakeApRewardScRsp,
-        CmdDailyActiveType::CmdTakeApRewardCsReq,
-        CmdDailyActiveType::CmdTakeAllApRewardScRsp,
-        CmdDailyActiveType::CmdTakeAllApRewardCsReq,
+        CmdDailyActiveType::CmdDailyActiveInfoNotify,
         CmdDailyActiveType::CmdGetDailyActiveInfoScRsp,
+        CmdDailyActiveType::CmdTakeAllApRewardScRsp,
+        CmdDailyActiveType::CmdTakeApRewardCsReq,
+        CmdDailyActiveType::CmdGetDailyActiveInfoCsReq,
+        CmdDailyActiveType::CmdTakeAllApRewardCsReq,
     ];
 }
 
@@ -102,13 +102,13 @@ impl ::protobuf::EnumFull for CmdDailyActiveType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdDailyActiveType::CmdDailyActiveTypeNone => 0,
-            CmdDailyActiveType::CmdDailyActiveInfoNotify => 1,
-            CmdDailyActiveType::CmdGetDailyActiveInfoCsReq => 2,
-            CmdDailyActiveType::CmdTakeApRewardScRsp => 3,
-            CmdDailyActiveType::CmdTakeApRewardCsReq => 4,
-            CmdDailyActiveType::CmdTakeAllApRewardScRsp => 5,
-            CmdDailyActiveType::CmdTakeAllApRewardCsReq => 6,
-            CmdDailyActiveType::CmdGetDailyActiveInfoScRsp => 7,
+            CmdDailyActiveType::CmdTakeApRewardScRsp => 1,
+            CmdDailyActiveType::CmdDailyActiveInfoNotify => 2,
+            CmdDailyActiveType::CmdGetDailyActiveInfoScRsp => 3,
+            CmdDailyActiveType::CmdTakeAllApRewardScRsp => 4,
+            CmdDailyActiveType::CmdTakeApRewardCsReq => 5,
+            CmdDailyActiveType::CmdGetDailyActiveInfoCsReq => 6,
+            CmdDailyActiveType::CmdTakeAllApRewardCsReq => 7,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -128,12 +128,12 @@ impl CmdDailyActiveType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18CmdDailyActiveType.proto*\x83\x02\n\x12CmdDailyActiveType\x12\x1a\
-    \n\x16CmdDailyActiveTypeNone\x10\0\x12\x1d\n\x18CmdDailyActiveInfoNotify\
-    \x10\xb3\x1a\x12\x1f\n\x1aCmdGetDailyActiveInfoCsReq\x10\xb7\x1a\x12\x19\
-    \n\x14CmdTakeApRewardScRsp\x10\xab\x1a\x12\x19\n\x14CmdTakeApRewardCsReq\
-    \x10\xc6\x1a\x12\x1c\n\x17CmdTakeAllApRewardScRsp\x10\x85\x1a\x12\x1c\n\
-    \x17CmdTakeAllApRewardCsReq\x10\xb1\x1a\x12\x1f\n\x1aCmdGetDailyActiveIn\
-    foScRsp\x10\x8e\x1ab\x06proto3\
+    \n\x16CmdDailyActiveTypeNone\x10\0\x12\x19\n\x14CmdTakeApRewardScRsp\x10\
+    \xf8\x19\x12\x1d\n\x18CmdDailyActiveInfoNotify\x10\x8b\x1a\x12\x1f\n\x1a\
+    CmdGetDailyActiveInfoScRsp\x10\x92\x1a\x12\x1c\n\x17CmdTakeAllApRewardSc\
+    Rsp\x10\x86\x1a\x12\x19\n\x14CmdTakeApRewardCsReq\x10\x9f\x1a\x12\x1f\n\
+    \x1aCmdGetDailyActiveInfoCsReq\x10\xe7\x19\x12\x1c\n\x17CmdTakeAllApRewa\
+    rdCsReq\x10\x99\x1ab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

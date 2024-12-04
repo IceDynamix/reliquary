@@ -29,18 +29,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ClockParkHandleWaitOperationScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ClockParkHandleWaitOperationScRsp.KELMDDKDNJA)
-    pub KELMDDKDNJA: ::protobuf::EnumOrUnknown<super::ClockParkPlayStatus::ClockParkPlayStatus>,
-    // @@protoc_insertion_point(field:ClockParkHandleWaitOperationScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:ClockParkHandleWaitOperationScRsp.HIAGEINLAHL)
-    pub HIAGEINLAHL: u32,
-    // @@protoc_insertion_point(field:ClockParkHandleWaitOperationScRsp.JONHHDCOHBI)
-    pub JONHHDCOHBI: ::protobuf::MessageField<super::AHFFHEBEEGC::AHFFHEBEEGC>,
-    // @@protoc_insertion_point(field:ClockParkHandleWaitOperationScRsp.FGBPANCBLEC)
-    pub FGBPANCBLEC: u32,
-    // @@protoc_insertion_point(field:ClockParkHandleWaitOperationScRsp.BLPMDKEPMJB)
-    pub BLPMDKEPMJB: u32,
+    // @@protoc_insertion_point(field:ClockParkHandleWaitOperationScRsp.PIPPFNJBCIM)
+    pub PIPPFNJBCIM: ::protobuf::EnumOrUnknown<super::ClockParkPlayStatus::ClockParkPlayStatus>,
+    // @@protoc_insertion_point(field:ClockParkHandleWaitOperationScRsp.JEIAOKMNOMM)
+    pub JEIAOKMNOMM: u32,
+    // @@protoc_insertion_point(field:ClockParkHandleWaitOperationScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:ClockParkHandleWaitOperationScRsp.BBKGPAJCCBM)
+    pub BBKGPAJCCBM: ::protobuf::MessageField<super::CHDPLFOHLCN::CHDPLFOHLCN>,
+    // @@protoc_insertion_point(field:ClockParkHandleWaitOperationScRsp.BEBCFIIABLI)
+    pub BEBCFIIABLI: u32,
+    // @@protoc_insertion_point(field:ClockParkHandleWaitOperationScRsp.BOGEALGHKEF)
+    pub BOGEALGHKEF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ClockParkHandleWaitOperationScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,34 +61,34 @@ impl ClockParkHandleWaitOperationScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KELMDDKDNJA",
-            |m: &ClockParkHandleWaitOperationScRsp| { &m.KELMDDKDNJA },
-            |m: &mut ClockParkHandleWaitOperationScRsp| { &mut m.KELMDDKDNJA },
+            "PIPPFNJBCIM",
+            |m: &ClockParkHandleWaitOperationScRsp| { &m.PIPPFNJBCIM },
+            |m: &mut ClockParkHandleWaitOperationScRsp| { &mut m.PIPPFNJBCIM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &ClockParkHandleWaitOperationScRsp| { &m.retcode },
-            |m: &mut ClockParkHandleWaitOperationScRsp| { &mut m.retcode },
+            "JEIAOKMNOMM",
+            |m: &ClockParkHandleWaitOperationScRsp| { &m.JEIAOKMNOMM },
+            |m: &mut ClockParkHandleWaitOperationScRsp| { &mut m.JEIAOKMNOMM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HIAGEINLAHL",
-            |m: &ClockParkHandleWaitOperationScRsp| { &m.HIAGEINLAHL },
-            |m: &mut ClockParkHandleWaitOperationScRsp| { &mut m.HIAGEINLAHL },
+            "ADADHIHDHJC",
+            |m: &ClockParkHandleWaitOperationScRsp| { &m.ADADHIHDHJC },
+            |m: &mut ClockParkHandleWaitOperationScRsp| { &mut m.ADADHIHDHJC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AHFFHEBEEGC::AHFFHEBEEGC>(
-            "JONHHDCOHBI",
-            |m: &ClockParkHandleWaitOperationScRsp| { &m.JONHHDCOHBI },
-            |m: &mut ClockParkHandleWaitOperationScRsp| { &mut m.JONHHDCOHBI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FGBPANCBLEC",
-            |m: &ClockParkHandleWaitOperationScRsp| { &m.FGBPANCBLEC },
-            |m: &mut ClockParkHandleWaitOperationScRsp| { &mut m.FGBPANCBLEC },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CHDPLFOHLCN::CHDPLFOHLCN>(
+            "BBKGPAJCCBM",
+            |m: &ClockParkHandleWaitOperationScRsp| { &m.BBKGPAJCCBM },
+            |m: &mut ClockParkHandleWaitOperationScRsp| { &mut m.BBKGPAJCCBM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BLPMDKEPMJB",
-            |m: &ClockParkHandleWaitOperationScRsp| { &m.BLPMDKEPMJB },
-            |m: &mut ClockParkHandleWaitOperationScRsp| { &mut m.BLPMDKEPMJB },
+            "BEBCFIIABLI",
+            |m: &ClockParkHandleWaitOperationScRsp| { &m.BEBCFIIABLI },
+            |m: &mut ClockParkHandleWaitOperationScRsp| { &mut m.BEBCFIIABLI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BOGEALGHKEF",
+            |m: &ClockParkHandleWaitOperationScRsp| { &m.BOGEALGHKEF },
+            |m: &mut ClockParkHandleWaitOperationScRsp| { &mut m.BOGEALGHKEF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ClockParkHandleWaitOperationScRsp>(
             "ClockParkHandleWaitOperationScRsp",
@@ -108,23 +108,23 @@ impl ::protobuf::Message for ClockParkHandleWaitOperationScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.KELMDDKDNJA = is.read_enum_or_unknown()?;
+                8 => {
+                    self.PIPPFNJBCIM = is.read_enum_or_unknown()?;
                 },
-                104 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                64 => {
-                    self.HIAGEINLAHL = is.read_uint32()?;
-                },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JONHHDCOHBI)?;
+                40 => {
+                    self.JEIAOKMNOMM = is.read_uint32()?;
                 },
                 80 => {
-                    self.FGBPANCBLEC = is.read_uint32()?;
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                8 => {
-                    self.BLPMDKEPMJB = is.read_uint32()?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BBKGPAJCCBM)?;
+                },
+                88 => {
+                    self.BEBCFIIABLI = is.read_uint32()?;
+                },
+                112 => {
+                    self.BOGEALGHKEF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -138,24 +138,24 @@ impl ::protobuf::Message for ClockParkHandleWaitOperationScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KELMDDKDNJA != ::protobuf::EnumOrUnknown::new(super::ClockParkPlayStatus::ClockParkPlayStatus::CLOCK_PARK_PLAY_NONE) {
-            my_size += ::protobuf::rt::int32_size(6, self.KELMDDKDNJA.value());
+        if self.PIPPFNJBCIM != ::protobuf::EnumOrUnknown::new(super::ClockParkPlayStatus::ClockParkPlayStatus::CLOCK_PARK_PLAY_NONE) {
+            my_size += ::protobuf::rt::int32_size(1, self.PIPPFNJBCIM.value());
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+        if self.JEIAOKMNOMM != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.JEIAOKMNOMM);
         }
-        if self.HIAGEINLAHL != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.HIAGEINLAHL);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.ADADHIHDHJC);
         }
-        if let Some(v) = self.JONHHDCOHBI.as_ref() {
+        if let Some(v) = self.BBKGPAJCCBM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.FGBPANCBLEC != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.FGBPANCBLEC);
+        if self.BEBCFIIABLI != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.BEBCFIIABLI);
         }
-        if self.BLPMDKEPMJB != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.BLPMDKEPMJB);
+        if self.BOGEALGHKEF != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.BOGEALGHKEF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -163,23 +163,23 @@ impl ::protobuf::Message for ClockParkHandleWaitOperationScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KELMDDKDNJA != ::protobuf::EnumOrUnknown::new(super::ClockParkPlayStatus::ClockParkPlayStatus::CLOCK_PARK_PLAY_NONE) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.KELMDDKDNJA))?;
+        if self.PIPPFNJBCIM != ::protobuf::EnumOrUnknown::new(super::ClockParkPlayStatus::ClockParkPlayStatus::CLOCK_PARK_PLAY_NONE) {
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.PIPPFNJBCIM))?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+        if self.JEIAOKMNOMM != 0 {
+            os.write_uint32(5, self.JEIAOKMNOMM)?;
         }
-        if self.HIAGEINLAHL != 0 {
-            os.write_uint32(8, self.HIAGEINLAHL)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(10, self.ADADHIHDHJC)?;
         }
-        if let Some(v) = self.JONHHDCOHBI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if let Some(v) = self.BBKGPAJCCBM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        if self.FGBPANCBLEC != 0 {
-            os.write_uint32(10, self.FGBPANCBLEC)?;
+        if self.BEBCFIIABLI != 0 {
+            os.write_uint32(11, self.BEBCFIIABLI)?;
         }
-        if self.BLPMDKEPMJB != 0 {
-            os.write_uint32(1, self.BLPMDKEPMJB)?;
+        if self.BOGEALGHKEF != 0 {
+            os.write_uint32(14, self.BOGEALGHKEF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -198,23 +198,23 @@ impl ::protobuf::Message for ClockParkHandleWaitOperationScRsp {
     }
 
     fn clear(&mut self) {
-        self.KELMDDKDNJA = ::protobuf::EnumOrUnknown::new(super::ClockParkPlayStatus::ClockParkPlayStatus::CLOCK_PARK_PLAY_NONE);
-        self.retcode = 0;
-        self.HIAGEINLAHL = 0;
-        self.JONHHDCOHBI.clear();
-        self.FGBPANCBLEC = 0;
-        self.BLPMDKEPMJB = 0;
+        self.PIPPFNJBCIM = ::protobuf::EnumOrUnknown::new(super::ClockParkPlayStatus::ClockParkPlayStatus::CLOCK_PARK_PLAY_NONE);
+        self.JEIAOKMNOMM = 0;
+        self.ADADHIHDHJC = 0;
+        self.BBKGPAJCCBM.clear();
+        self.BEBCFIIABLI = 0;
+        self.BOGEALGHKEF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ClockParkHandleWaitOperationScRsp {
         static instance: ClockParkHandleWaitOperationScRsp = ClockParkHandleWaitOperationScRsp {
-            KELMDDKDNJA: ::protobuf::EnumOrUnknown::from_i32(0),
-            retcode: 0,
-            HIAGEINLAHL: 0,
-            JONHHDCOHBI: ::protobuf::MessageField::none(),
-            FGBPANCBLEC: 0,
-            BLPMDKEPMJB: 0,
+            PIPPFNJBCIM: ::protobuf::EnumOrUnknown::from_i32(0),
+            JEIAOKMNOMM: 0,
+            ADADHIHDHJC: 0,
+            BBKGPAJCCBM: ::protobuf::MessageField::none(),
+            BEBCFIIABLI: 0,
+            BOGEALGHKEF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,14 +239,14 @@ impl ::protobuf::reflect::ProtobufValue for ClockParkHandleWaitOperationScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'ClockParkHandleWaitOperationScRsp.proto\x1a\x11AHFFHEBEEGC.proto\x1a\
-    \x19ClockParkPlayStatus.proto\"\x8b\x02\n!ClockParkHandleWaitOperationSc\
-    Rsp\x126\n\x0bKELMDDKDNJA\x18\x06\x20\x01(\x0e2\x14.ClockParkPlayStatusR\
-    \x0bKELMDDKDNJA\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x12\
-    \x20\n\x0bHIAGEINLAHL\x18\x08\x20\x01(\rR\x0bHIAGEINLAHL\x12.\n\x0bJONHH\
-    DCOHBI\x18\t\x20\x01(\x0b2\x0c.AHFFHEBEEGCR\x0bJONHHDCOHBI\x12\x20\n\x0b\
-    FGBPANCBLEC\x18\n\x20\x01(\rR\x0bFGBPANCBLEC\x12\x20\n\x0bBLPMDKEPMJB\
-    \x18\x01\x20\x01(\rR\x0bBLPMDKEPMJBb\x06proto3\
+    \n'ClockParkHandleWaitOperationScRsp.proto\x1a\x11CHDPLFOHLCN.proto\x1a\
+    \x19ClockParkPlayStatus.proto\"\x93\x02\n!ClockParkHandleWaitOperationSc\
+    Rsp\x126\n\x0bPIPPFNJBCIM\x18\x01\x20\x01(\x0e2\x14.ClockParkPlayStatusR\
+    \x0bPIPPFNJBCIM\x12\x20\n\x0bJEIAOKMNOMM\x18\x05\x20\x01(\rR\x0bJEIAOKMN\
+    OMM\x12\x20\n\x0bADADHIHDHJC\x18\n\x20\x01(\rR\x0bADADHIHDHJC\x12.\n\x0b\
+    BBKGPAJCCBM\x18\x02\x20\x01(\x0b2\x0c.CHDPLFOHLCNR\x0bBBKGPAJCCBM\x12\
+    \x20\n\x0bBEBCFIIABLI\x18\x0b\x20\x01(\rR\x0bBEBCFIIABLI\x12\x20\n\x0bBO\
+    GEALGHKEF\x18\x0e\x20\x01(\rR\x0bBOGEALGHKEFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -264,7 +264,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::AHFFHEBEEGC::file_descriptor().clone());
+            deps.push(super::CHDPLFOHLCN::file_descriptor().clone());
             deps.push(super::ClockParkPlayStatus::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ClockParkHandleWaitOperationScRsp::generated_message_descriptor_data());

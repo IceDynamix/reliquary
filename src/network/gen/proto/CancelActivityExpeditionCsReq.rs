@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CancelActivityExpeditionCsReq {
     // message fields
-    // @@protoc_insertion_point(field:CancelActivityExpeditionCsReq.HADKPJOKKCM)
-    pub HADKPJOKKCM: u32,
+    // @@protoc_insertion_point(field:CancelActivityExpeditionCsReq.IDJNPOONENE)
+    pub IDJNPOONENE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CancelActivityExpeditionCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl CancelActivityExpeditionCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HADKPJOKKCM",
-            |m: &CancelActivityExpeditionCsReq| { &m.HADKPJOKKCM },
-            |m: &mut CancelActivityExpeditionCsReq| { &mut m.HADKPJOKKCM },
+            "IDJNPOONENE",
+            |m: &CancelActivityExpeditionCsReq| { &m.IDJNPOONENE },
+            |m: &mut CancelActivityExpeditionCsReq| { &mut m.IDJNPOONENE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CancelActivityExpeditionCsReq>(
             "CancelActivityExpeditionCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for CancelActivityExpeditionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.HADKPJOKKCM = is.read_uint32()?;
+                24 => {
+                    self.IDJNPOONENE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for CancelActivityExpeditionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HADKPJOKKCM != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.HADKPJOKKCM);
+        if self.IDJNPOONENE != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.IDJNPOONENE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for CancelActivityExpeditionCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HADKPJOKKCM != 0 {
-            os.write_uint32(10, self.HADKPJOKKCM)?;
+        if self.IDJNPOONENE != 0 {
+            os.write_uint32(3, self.IDJNPOONENE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for CancelActivityExpeditionCsReq {
     }
 
     fn clear(&mut self) {
-        self.HADKPJOKKCM = 0;
+        self.IDJNPOONENE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CancelActivityExpeditionCsReq {
         static instance: CancelActivityExpeditionCsReq = CancelActivityExpeditionCsReq {
-            HADKPJOKKCM: 0,
+            IDJNPOONENE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for CancelActivityExpeditionCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#CancelActivityExpeditionCsReq.proto\"A\n\x1dCancelActivityExpeditionC\
-    sReq\x12\x20\n\x0bHADKPJOKKCM\x18\n\x20\x01(\rR\x0bHADKPJOKKCMb\x06proto\
-    3\
+    sReq\x12\x20\n\x0bIDJNPOONENE\x18\x03\x20\x01(\rR\x0bIDJNPOONENEb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetForbidOtherApplyFriendScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SetForbidOtherApplyFriendScRsp.NDBCIOELLJL)
-    pub NDBCIOELLJL: bool,
-    // @@protoc_insertion_point(field:SetForbidOtherApplyFriendScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:SetForbidOtherApplyFriendScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:SetForbidOtherApplyFriendScRsp.AHGJGKMOKAP)
+    pub AHGJGKMOKAP: bool,
     // special fields
     // @@protoc_insertion_point(special_field:SetForbidOtherApplyFriendScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl SetForbidOtherApplyFriendScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NDBCIOELLJL",
-            |m: &SetForbidOtherApplyFriendScRsp| { &m.NDBCIOELLJL },
-            |m: &mut SetForbidOtherApplyFriendScRsp| { &mut m.NDBCIOELLJL },
+            "ADADHIHDHJC",
+            |m: &SetForbidOtherApplyFriendScRsp| { &m.ADADHIHDHJC },
+            |m: &mut SetForbidOtherApplyFriendScRsp| { &mut m.ADADHIHDHJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &SetForbidOtherApplyFriendScRsp| { &m.retcode },
-            |m: &mut SetForbidOtherApplyFriendScRsp| { &mut m.retcode },
+            "AHGJGKMOKAP",
+            |m: &SetForbidOtherApplyFriendScRsp| { &m.AHGJGKMOKAP },
+            |m: &mut SetForbidOtherApplyFriendScRsp| { &mut m.AHGJGKMOKAP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetForbidOtherApplyFriendScRsp>(
             "SetForbidOtherApplyFriendScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for SetForbidOtherApplyFriendScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.NDBCIOELLJL = is.read_bool()?;
+                56 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                8 => {
-                    self.retcode = is.read_uint32()?;
+                120 => {
+                    self.AHGJGKMOKAP = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for SetForbidOtherApplyFriendScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NDBCIOELLJL != false {
-            my_size += 1 + 1;
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.ADADHIHDHJC);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        if self.AHGJGKMOKAP != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for SetForbidOtherApplyFriendScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NDBCIOELLJL != false {
-            os.write_bool(15, self.NDBCIOELLJL)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(7, self.ADADHIHDHJC)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+        if self.AHGJGKMOKAP != false {
+            os.write_bool(15, self.AHGJGKMOKAP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for SetForbidOtherApplyFriendScRsp {
     }
 
     fn clear(&mut self) {
-        self.NDBCIOELLJL = false;
-        self.retcode = 0;
+        self.ADADHIHDHJC = 0;
+        self.AHGJGKMOKAP = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetForbidOtherApplyFriendScRsp {
         static instance: SetForbidOtherApplyFriendScRsp = SetForbidOtherApplyFriendScRsp {
-            NDBCIOELLJL: false,
-            retcode: 0,
+            ADADHIHDHJC: 0,
+            AHGJGKMOKAP: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for SetForbidOtherApplyFriendScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$SetForbidOtherApplyFriendScRsp.proto\"\\\n\x1eSetForbidOtherApplyFrie\
-    ndScRsp\x12\x20\n\x0bNDBCIOELLJL\x18\x0f\x20\x01(\x08R\x0bNDBCIOELLJL\
-    \x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n$SetForbidOtherApplyFriendScRsp.proto\"d\n\x1eSetForbidOtherApplyFrien\
+    dScRsp\x12\x20\n\x0bADADHIHDHJC\x18\x07\x20\x01(\rR\x0bADADHIHDHJC\x12\
+    \x20\n\x0bAHGJGKMOKAP\x18\x0f\x20\x01(\x08R\x0bAHGJGKMOKAPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

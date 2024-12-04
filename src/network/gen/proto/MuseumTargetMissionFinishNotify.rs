@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MuseumTargetMissionFinishNotify {
     // message fields
-    // @@protoc_insertion_point(field:MuseumTargetMissionFinishNotify.DCHJNNNJCGF)
-    pub DCHJNNNJCGF: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:MuseumTargetMissionFinishNotify.PHLFJPFKFOF)
-    pub PHLFJPFKFOF: u32,
-    // @@protoc_insertion_point(field:MuseumTargetMissionFinishNotify.KHKNAFHGLIF)
-    pub KHKNAFHGLIF: bool,
+    // @@protoc_insertion_point(field:MuseumTargetMissionFinishNotify.GMOJJNBEIFL)
+    pub GMOJJNBEIFL: u32,
+    // @@protoc_insertion_point(field:MuseumTargetMissionFinishNotify.LNFDEFNJOKJ)
+    pub LNFDEFNJOKJ: bool,
+    // @@protoc_insertion_point(field:MuseumTargetMissionFinishNotify.GIBEGFHBEFD)
+    pub GIBEGFHBEFD: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:MuseumTargetMissionFinishNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl MuseumTargetMissionFinishNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GMOJJNBEIFL",
+            |m: &MuseumTargetMissionFinishNotify| { &m.GMOJJNBEIFL },
+            |m: &mut MuseumTargetMissionFinishNotify| { &mut m.GMOJJNBEIFL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LNFDEFNJOKJ",
+            |m: &MuseumTargetMissionFinishNotify| { &m.LNFDEFNJOKJ },
+            |m: &mut MuseumTargetMissionFinishNotify| { &mut m.LNFDEFNJOKJ },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DCHJNNNJCGF",
-            |m: &MuseumTargetMissionFinishNotify| { &m.DCHJNNNJCGF },
-            |m: &mut MuseumTargetMissionFinishNotify| { &mut m.DCHJNNNJCGF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PHLFJPFKFOF",
-            |m: &MuseumTargetMissionFinishNotify| { &m.PHLFJPFKFOF },
-            |m: &mut MuseumTargetMissionFinishNotify| { &mut m.PHLFJPFKFOF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KHKNAFHGLIF",
-            |m: &MuseumTargetMissionFinishNotify| { &m.KHKNAFHGLIF },
-            |m: &mut MuseumTargetMissionFinishNotify| { &mut m.KHKNAFHGLIF },
+            "GIBEGFHBEFD",
+            |m: &MuseumTargetMissionFinishNotify| { &m.GIBEGFHBEFD },
+            |m: &mut MuseumTargetMissionFinishNotify| { &mut m.GIBEGFHBEFD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MuseumTargetMissionFinishNotify>(
             "MuseumTargetMissionFinishNotify",
@@ -87,17 +87,17 @@ impl ::protobuf::Message for MuseumTargetMissionFinishNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.DCHJNNNJCGF)?;
-                },
-                8 => {
-                    self.DCHJNNNJCGF.push(is.read_uint32()?);
+                112 => {
+                    self.GMOJJNBEIFL = is.read_uint32()?;
                 },
                 40 => {
-                    self.PHLFJPFKFOF = is.read_uint32()?;
+                    self.LNFDEFNJOKJ = is.read_bool()?;
                 },
-                32 => {
-                    self.KHKNAFHGLIF = is.read_bool()?;
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.GIBEGFHBEFD)?;
+                },
+                64 => {
+                    self.GIBEGFHBEFD.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,30 +111,30 @@ impl ::protobuf::Message for MuseumTargetMissionFinishNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.DCHJNNNJCGF {
-            my_size += ::protobuf::rt::uint32_size(1, *value);
-        };
-        if self.PHLFJPFKFOF != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.PHLFJPFKFOF);
+        if self.GMOJJNBEIFL != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.GMOJJNBEIFL);
         }
-        if self.KHKNAFHGLIF != false {
+        if self.LNFDEFNJOKJ != false {
             my_size += 1 + 1;
         }
+        for value in &self.GIBEGFHBEFD {
+            my_size += ::protobuf::rt::uint32_size(8, *value);
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.DCHJNNNJCGF {
-            os.write_uint32(1, *v)?;
+        if self.GMOJJNBEIFL != 0 {
+            os.write_uint32(14, self.GMOJJNBEIFL)?;
+        }
+        if self.LNFDEFNJOKJ != false {
+            os.write_bool(5, self.LNFDEFNJOKJ)?;
+        }
+        for v in &self.GIBEGFHBEFD {
+            os.write_uint32(8, *v)?;
         };
-        if self.PHLFJPFKFOF != 0 {
-            os.write_uint32(5, self.PHLFJPFKFOF)?;
-        }
-        if self.KHKNAFHGLIF != false {
-            os.write_bool(4, self.KHKNAFHGLIF)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -152,17 +152,17 @@ impl ::protobuf::Message for MuseumTargetMissionFinishNotify {
     }
 
     fn clear(&mut self) {
-        self.DCHJNNNJCGF.clear();
-        self.PHLFJPFKFOF = 0;
-        self.KHKNAFHGLIF = false;
+        self.GMOJJNBEIFL = 0;
+        self.LNFDEFNJOKJ = false;
+        self.GIBEGFHBEFD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MuseumTargetMissionFinishNotify {
         static instance: MuseumTargetMissionFinishNotify = MuseumTargetMissionFinishNotify {
-            DCHJNNNJCGF: ::std::vec::Vec::new(),
-            PHLFJPFKFOF: 0,
-            KHKNAFHGLIF: false,
+            GMOJJNBEIFL: 0,
+            LNFDEFNJOKJ: false,
+            GIBEGFHBEFD: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -188,9 +188,9 @@ impl ::protobuf::reflect::ProtobufValue for MuseumTargetMissionFinishNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%MuseumTargetMissionFinishNotify.proto\"\x87\x01\n\x1fMuseumTargetMiss\
-    ionFinishNotify\x12\x20\n\x0bDCHJNNNJCGF\x18\x01\x20\x03(\rR\x0bDCHJNNNJ\
-    CGF\x12\x20\n\x0bPHLFJPFKFOF\x18\x05\x20\x01(\rR\x0bPHLFJPFKFOF\x12\x20\
-    \n\x0bKHKNAFHGLIF\x18\x04\x20\x01(\x08R\x0bKHKNAFHGLIFb\x06proto3\
+    ionFinishNotify\x12\x20\n\x0bGMOJJNBEIFL\x18\x0e\x20\x01(\rR\x0bGMOJJNBE\
+    IFL\x12\x20\n\x0bLNFDEFNJOKJ\x18\x05\x20\x01(\x08R\x0bLNFDEFNJOKJ\x12\
+    \x20\n\x0bGIBEGFHBEFD\x18\x08\x20\x03(\rR\x0bGIBEGFHBEFDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

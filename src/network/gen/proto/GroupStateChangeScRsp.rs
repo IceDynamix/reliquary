@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GroupStateChangeScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GroupStateChangeScRsp.IEEOCMDHLMG)
-    pub IEEOCMDHLMG: ::protobuf::MessageField<super::DGHKDAIGPMJ::DGHKDAIGPMJ>,
     // @@protoc_insertion_point(field:GroupStateChangeScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GroupStateChangeScRsp.group_state_info)
+    pub group_state_info: ::protobuf::MessageField<super::GroupStateInfo::GroupStateInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:GroupStateChangeScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl GroupStateChangeScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DGHKDAIGPMJ::DGHKDAIGPMJ>(
-            "IEEOCMDHLMG",
-            |m: &GroupStateChangeScRsp| { &m.IEEOCMDHLMG },
-            |m: &mut GroupStateChangeScRsp| { &mut m.IEEOCMDHLMG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GroupStateChangeScRsp| { &m.retcode },
             |m: &mut GroupStateChangeScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GroupStateInfo::GroupStateInfo>(
+            "group_state_info",
+            |m: &GroupStateChangeScRsp| { &m.group_state_info },
+            |m: &mut GroupStateChangeScRsp| { &mut m.group_state_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GroupStateChangeScRsp>(
             "GroupStateChangeScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for GroupStateChangeScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IEEOCMDHLMG)?;
-                },
-                120 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
+                },
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.group_state_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,12 +98,12 @@ impl ::protobuf::Message for GroupStateChangeScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.IEEOCMDHLMG.as_ref() {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        }
+        if let Some(v) = self.group_state_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for GroupStateChangeScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.IEEOCMDHLMG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
+        }
+        if let Some(v) = self.group_state_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for GroupStateChangeScRsp {
     }
 
     fn clear(&mut self) {
-        self.IEEOCMDHLMG.clear();
         self.retcode = 0;
+        self.group_state_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GroupStateChangeScRsp {
         static instance: GroupStateChangeScRsp = GroupStateChangeScRsp {
-            IEEOCMDHLMG: ::protobuf::MessageField::none(),
             retcode: 0,
+            group_state_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for GroupStateChangeScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bGroupStateChangeScRsp.proto\x1a\x11DGHKDAIGPMJ.proto\"a\n\x15Group\
-    StateChangeScRsp\x12.\n\x0bIEEOCMDHLMG\x18\x04\x20\x01(\x0b2\x0c.DGHKDAI\
-    GPMJR\x0bIEEOCMDHLMG\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcode\
-    b\x06proto3\
+    \n\x1bGroupStateChangeScRsp.proto\x1a\x14GroupStateInfo.proto\"l\n\x15Gr\
+    oupStateChangeScRsp\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\
+    \x129\n\x10group_state_info\x18\x06\x20\x01(\x0b2\x0f.GroupStateInfoR\
+    \x0egroupStateInfoB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::DGHKDAIGPMJ::file_descriptor().clone());
+            deps.push(super::GroupStateInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GroupStateChangeScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

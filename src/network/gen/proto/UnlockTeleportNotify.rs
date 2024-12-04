@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UnlockTeleportNotify {
     // message fields
-    // @@protoc_insertion_point(field:UnlockTeleportNotify.CPBJPDAGMML)
-    pub CPBJPDAGMML: u32,
-    // @@protoc_insertion_point(field:UnlockTeleportNotify.EIOMLNNLILI)
-    pub EIOMLNNLILI: u32,
+    // @@protoc_insertion_point(field:UnlockTeleportNotify.BFMMBBBDOMN)
+    pub BFMMBBBDOMN: u32,
+    // @@protoc_insertion_point(field:UnlockTeleportNotify.BBLGKACGAOB)
+    pub BBLGKACGAOB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:UnlockTeleportNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl UnlockTeleportNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CPBJPDAGMML",
-            |m: &UnlockTeleportNotify| { &m.CPBJPDAGMML },
-            |m: &mut UnlockTeleportNotify| { &mut m.CPBJPDAGMML },
+            "BFMMBBBDOMN",
+            |m: &UnlockTeleportNotify| { &m.BFMMBBBDOMN },
+            |m: &mut UnlockTeleportNotify| { &mut m.BFMMBBBDOMN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EIOMLNNLILI",
-            |m: &UnlockTeleportNotify| { &m.EIOMLNNLILI },
-            |m: &mut UnlockTeleportNotify| { &mut m.EIOMLNNLILI },
+            "BBLGKACGAOB",
+            |m: &UnlockTeleportNotify| { &m.BBLGKACGAOB },
+            |m: &mut UnlockTeleportNotify| { &mut m.BBLGKACGAOB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UnlockTeleportNotify>(
             "UnlockTeleportNotify",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for UnlockTeleportNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.CPBJPDAGMML = is.read_uint32()?;
+                64 => {
+                    self.BFMMBBBDOMN = is.read_uint32()?;
                 },
-                96 => {
-                    self.EIOMLNNLILI = is.read_uint32()?;
+                32 => {
+                    self.BBLGKACGAOB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for UnlockTeleportNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CPBJPDAGMML != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.CPBJPDAGMML);
+        if self.BFMMBBBDOMN != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.BFMMBBBDOMN);
         }
-        if self.EIOMLNNLILI != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.EIOMLNNLILI);
+        if self.BBLGKACGAOB != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.BBLGKACGAOB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for UnlockTeleportNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CPBJPDAGMML != 0 {
-            os.write_uint32(14, self.CPBJPDAGMML)?;
+        if self.BFMMBBBDOMN != 0 {
+            os.write_uint32(8, self.BFMMBBBDOMN)?;
         }
-        if self.EIOMLNNLILI != 0 {
-            os.write_uint32(12, self.EIOMLNNLILI)?;
+        if self.BBLGKACGAOB != 0 {
+            os.write_uint32(4, self.BBLGKACGAOB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for UnlockTeleportNotify {
     }
 
     fn clear(&mut self) {
-        self.CPBJPDAGMML = 0;
-        self.EIOMLNNLILI = 0;
+        self.BFMMBBBDOMN = 0;
+        self.BBLGKACGAOB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UnlockTeleportNotify {
         static instance: UnlockTeleportNotify = UnlockTeleportNotify {
-            CPBJPDAGMML: 0,
-            EIOMLNNLILI: 0,
+            BFMMBBBDOMN: 0,
+            BBLGKACGAOB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for UnlockTeleportNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aUnlockTeleportNotify.proto\"Z\n\x14UnlockTeleportNotify\x12\x20\n\
-    \x0bCPBJPDAGMML\x18\x0e\x20\x01(\rR\x0bCPBJPDAGMML\x12\x20\n\x0bEIOMLNNL\
-    ILI\x18\x0c\x20\x01(\rR\x0bEIOMLNNLILIb\x06proto3\
+    \x0bBFMMBBBDOMN\x18\x08\x20\x01(\rR\x0bBFMMBBBDOMN\x12\x20\n\x0bBBLGKACG\
+    AOB\x18\x04\x20\x01(\rR\x0bBBLGKACGAOBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

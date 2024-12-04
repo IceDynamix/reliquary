@@ -31,8 +31,8 @@ pub struct SellItemScRsp {
     // message fields
     // @@protoc_insertion_point(field:SellItemScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:SellItemScRsp.JIBNMFNHKLD)
-    pub JIBNMFNHKLD: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:SellItemScRsp.return_item_list)
+    pub return_item_list: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:SellItemScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,9 +58,9 @@ impl SellItemScRsp {
             |m: &mut SellItemScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "JIBNMFNHKLD",
-            |m: &SellItemScRsp| { &m.JIBNMFNHKLD },
-            |m: &mut SellItemScRsp| { &mut m.JIBNMFNHKLD },
+            "return_item_list",
+            |m: &SellItemScRsp| { &m.return_item_list },
+            |m: &mut SellItemScRsp| { &mut m.return_item_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SellItemScRsp>(
             "SellItemScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for SellItemScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
                 },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JIBNMFNHKLD)?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.return_item_list)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -99,9 +99,9 @@ impl ::protobuf::Message for SellItemScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
-        if let Some(v) = self.JIBNMFNHKLD.as_ref() {
+        if let Some(v) = self.return_item_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -112,10 +112,10 @@ impl ::protobuf::Message for SellItemScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
-        if let Some(v) = self.JIBNMFNHKLD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if let Some(v) = self.return_item_list.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -135,14 +135,14 @@ impl ::protobuf::Message for SellItemScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.JIBNMFNHKLD.clear();
+        self.return_item_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SellItemScRsp {
         static instance: SellItemScRsp = SellItemScRsp {
             retcode: 0,
-            JIBNMFNHKLD: ::protobuf::MessageField::none(),
+            return_item_list: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for SellItemScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13SellItemScRsp.proto\x1a\x0eItemList.proto\"V\n\rSellItemScRsp\x12\
-    \x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12+\n\x0bJIBNMFNHKLD\
-    \x18\x0b\x20\x01(\x0b2\t.ItemListR\x0bJIBNMFNHKLDb\x06proto3\
+    \n\x13SellItemScRsp.proto\x1a\x0eItemList.proto\"^\n\rSellItemScRsp\x12\
+    \x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x123\n\x10return_item_l\
+    ist\x18\x01\x20\x01(\x0b2\t.ItemListR\x0ereturnItemListB\x15\n\x13emu.lu\
+    narcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

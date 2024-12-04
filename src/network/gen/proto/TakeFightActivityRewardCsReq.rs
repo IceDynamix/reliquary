@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeFightActivityRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeFightActivityRewardCsReq.AHFNGPLDAII)
-    pub AHFNGPLDAII: u32,
-    // @@protoc_insertion_point(field:TakeFightActivityRewardCsReq.GCFIIGOLPMF)
-    pub GCFIIGOLPMF: u32,
+    // @@protoc_insertion_point(field:TakeFightActivityRewardCsReq.KONGAADEJEL)
+    pub KONGAADEJEL: u32,
+    // @@protoc_insertion_point(field:TakeFightActivityRewardCsReq.ILIFHHJFMIH)
+    pub ILIFHHJFMIH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeFightActivityRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl TakeFightActivityRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AHFNGPLDAII",
-            |m: &TakeFightActivityRewardCsReq| { &m.AHFNGPLDAII },
-            |m: &mut TakeFightActivityRewardCsReq| { &mut m.AHFNGPLDAII },
+            "KONGAADEJEL",
+            |m: &TakeFightActivityRewardCsReq| { &m.KONGAADEJEL },
+            |m: &mut TakeFightActivityRewardCsReq| { &mut m.KONGAADEJEL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GCFIIGOLPMF",
-            |m: &TakeFightActivityRewardCsReq| { &m.GCFIIGOLPMF },
-            |m: &mut TakeFightActivityRewardCsReq| { &mut m.GCFIIGOLPMF },
+            "ILIFHHJFMIH",
+            |m: &TakeFightActivityRewardCsReq| { &m.ILIFHHJFMIH },
+            |m: &mut TakeFightActivityRewardCsReq| { &mut m.ILIFHHJFMIH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeFightActivityRewardCsReq>(
             "TakeFightActivityRewardCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for TakeFightActivityRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.AHFNGPLDAII = is.read_uint32()?;
+                8 => {
+                    self.KONGAADEJEL = is.read_uint32()?;
                 },
-                24 => {
-                    self.GCFIIGOLPMF = is.read_uint32()?;
+                72 => {
+                    self.ILIFHHJFMIH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for TakeFightActivityRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AHFNGPLDAII != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.AHFNGPLDAII);
+        if self.KONGAADEJEL != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.KONGAADEJEL);
         }
-        if self.GCFIIGOLPMF != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.GCFIIGOLPMF);
+        if self.ILIFHHJFMIH != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.ILIFHHJFMIH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for TakeFightActivityRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AHFNGPLDAII != 0 {
-            os.write_uint32(7, self.AHFNGPLDAII)?;
+        if self.KONGAADEJEL != 0 {
+            os.write_uint32(1, self.KONGAADEJEL)?;
         }
-        if self.GCFIIGOLPMF != 0 {
-            os.write_uint32(3, self.GCFIIGOLPMF)?;
+        if self.ILIFHHJFMIH != 0 {
+            os.write_uint32(9, self.ILIFHHJFMIH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for TakeFightActivityRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.AHFNGPLDAII = 0;
-        self.GCFIIGOLPMF = 0;
+        self.KONGAADEJEL = 0;
+        self.ILIFHHJFMIH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeFightActivityRewardCsReq {
         static instance: TakeFightActivityRewardCsReq = TakeFightActivityRewardCsReq {
-            AHFNGPLDAII: 0,
-            GCFIIGOLPMF: 0,
+            KONGAADEJEL: 0,
+            ILIFHHJFMIH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for TakeFightActivityRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"TakeFightActivityRewardCsReq.proto\"b\n\x1cTakeFightActivityRewardCs\
-    Req\x12\x20\n\x0bAHFNGPLDAII\x18\x07\x20\x01(\rR\x0bAHFNGPLDAII\x12\x20\
-    \n\x0bGCFIIGOLPMF\x18\x03\x20\x01(\rR\x0bGCFIIGOLPMFb\x06proto3\
+    Req\x12\x20\n\x0bKONGAADEJEL\x18\x01\x20\x01(\rR\x0bKONGAADEJEL\x12\x20\
+    \n\x0bILIFHHJFMIH\x18\t\x20\x01(\rR\x0bILIFHHJFMIHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

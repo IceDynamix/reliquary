@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncChessRogueNousMainStoryScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncChessRogueNousMainStoryScNotify.PLHPKLJKFFP)
-    pub PLHPKLJKFFP: ::std::vec::Vec<super::MHAEOBJJIJK::MHAEOBJJIJK>,
+    // @@protoc_insertion_point(field:SyncChessRogueNousMainStoryScNotify.GHJFCDLIFKM)
+    pub GHJFCDLIFKM: ::std::vec::Vec<super::ICJBBCPPCCO::ICJBBCPPCCO>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncChessRogueNousMainStoryScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl SyncChessRogueNousMainStoryScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PLHPKLJKFFP",
-            |m: &SyncChessRogueNousMainStoryScNotify| { &m.PLHPKLJKFFP },
-            |m: &mut SyncChessRogueNousMainStoryScNotify| { &mut m.PLHPKLJKFFP },
+            "GHJFCDLIFKM",
+            |m: &SyncChessRogueNousMainStoryScNotify| { &m.GHJFCDLIFKM },
+            |m: &mut SyncChessRogueNousMainStoryScNotify| { &mut m.GHJFCDLIFKM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncChessRogueNousMainStoryScNotify>(
             "SyncChessRogueNousMainStoryScNotify",
@@ -74,7 +74,7 @@ impl ::protobuf::Message for SyncChessRogueNousMainStoryScNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 42 => {
-                    self.PLHPKLJKFFP.push(is.read_message()?);
+                    self.GHJFCDLIFKM.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for SyncChessRogueNousMainStoryScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.PLHPKLJKFFP {
+        for value in &self.GHJFCDLIFKM {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SyncChessRogueNousMainStoryScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.PLHPKLJKFFP {
+        for v in &self.GHJFCDLIFKM {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -118,13 +118,13 @@ impl ::protobuf::Message for SyncChessRogueNousMainStoryScNotify {
     }
 
     fn clear(&mut self) {
-        self.PLHPKLJKFFP.clear();
+        self.GHJFCDLIFKM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncChessRogueNousMainStoryScNotify {
         static instance: SyncChessRogueNousMainStoryScNotify = SyncChessRogueNousMainStoryScNotify {
-            PLHPKLJKFFP: ::std::vec::Vec::new(),
+            GHJFCDLIFKM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,9 +149,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncChessRogueNousMainStoryScNotify 
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n)SyncChessRogueNousMainStoryScNotify.proto\x1a\x11MHAEOBJJIJK.proto\"U\
-    \n#SyncChessRogueNousMainStoryScNotify\x12.\n\x0bPLHPKLJKFFP\x18\x05\x20\
-    \x03(\x0b2\x0c.MHAEOBJJIJKR\x0bPLHPKLJKFFPb\x06proto3\
+    \n)SyncChessRogueNousMainStoryScNotify.proto\x1a\x11ICJBBCPPCCO.proto\"U\
+    \n#SyncChessRogueNousMainStoryScNotify\x12.\n\x0bGHJFCDLIFKM\x18\x05\x20\
+    \x03(\x0b2\x0c.ICJBBCPPCCOR\x0bGHJFCDLIFKMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -169,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::MHAEOBJJIJK::file_descriptor().clone());
+            deps.push(super::ICJBBCPPCCO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SyncChessRogueNousMainStoryScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

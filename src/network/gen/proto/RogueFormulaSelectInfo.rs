@@ -29,22 +29,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueFormulaSelectInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueFormulaSelectInfo.roll_formula_max_count)
-    pub roll_formula_max_count: u32,
-    // @@protoc_insertion_point(field:RogueFormulaSelectInfo.handbook_unlock_formula_id_list)
-    pub handbook_unlock_formula_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:RogueFormulaSelectInfo.select_formula_id_list)
-    pub select_formula_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:RogueFormulaSelectInfo.can_roll)
-    pub can_roll: bool,
-    // @@protoc_insertion_point(field:RogueFormulaSelectInfo.roll_formula_cost_data)
-    pub roll_formula_cost_data: ::protobuf::MessageField<super::CGMLGCGMBDH::CGMLGCGMBDH>,
-    // @@protoc_insertion_point(field:RogueFormulaSelectInfo.hint_id)
-    pub hint_id: u32,
-    // @@protoc_insertion_point(field:RogueFormulaSelectInfo.roll_formula_free_count)
-    pub roll_formula_free_count: u32,
-    // @@protoc_insertion_point(field:RogueFormulaSelectInfo.roll_formula_count)
-    pub roll_formula_count: u32,
+    // @@protoc_insertion_point(field:RogueFormulaSelectInfo.RollFormulaCostData)
+    pub RollFormulaCostData: ::protobuf::MessageField<super::ItemCostList::ItemCostList>,
+    // @@protoc_insertion_point(field:RogueFormulaSelectInfo.SelectFormulaIdList)
+    pub SelectFormulaIdList: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueFormulaSelectInfo.RollFormulaFreeCount)
+    pub RollFormulaFreeCount: u32,
+    // @@protoc_insertion_point(field:RogueFormulaSelectInfo.HandbookUnlockFormulaIdList)
+    pub HandbookUnlockFormulaIdList: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueFormulaSelectInfo.RollFormulaCount)
+    pub RollFormulaCount: u32,
+    // @@protoc_insertion_point(field:RogueFormulaSelectInfo.CanRoll)
+    pub CanRoll: bool,
+    // @@protoc_insertion_point(field:RogueFormulaSelectInfo.RollFormulaMaxCount)
+    pub RollFormulaMaxCount: u32,
+    // @@protoc_insertion_point(field:RogueFormulaSelectInfo.HintId)
+    pub HintId: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueFormulaSelectInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,45 +64,45 @@ impl RogueFormulaSelectInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "roll_formula_max_count",
-            |m: &RogueFormulaSelectInfo| { &m.roll_formula_max_count },
-            |m: &mut RogueFormulaSelectInfo| { &mut m.roll_formula_max_count },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostList::ItemCostList>(
+            "RollFormulaCostData",
+            |m: &RogueFormulaSelectInfo| { &m.RollFormulaCostData },
+            |m: &mut RogueFormulaSelectInfo| { &mut m.RollFormulaCostData },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "handbook_unlock_formula_id_list",
-            |m: &RogueFormulaSelectInfo| { &m.handbook_unlock_formula_id_list },
-            |m: &mut RogueFormulaSelectInfo| { &mut m.handbook_unlock_formula_id_list },
+            "SelectFormulaIdList",
+            |m: &RogueFormulaSelectInfo| { &m.SelectFormulaIdList },
+            |m: &mut RogueFormulaSelectInfo| { &mut m.SelectFormulaIdList },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "RollFormulaFreeCount",
+            |m: &RogueFormulaSelectInfo| { &m.RollFormulaFreeCount },
+            |m: &mut RogueFormulaSelectInfo| { &mut m.RollFormulaFreeCount },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "select_formula_id_list",
-            |m: &RogueFormulaSelectInfo| { &m.select_formula_id_list },
-            |m: &mut RogueFormulaSelectInfo| { &mut m.select_formula_id_list },
+            "HandbookUnlockFormulaIdList",
+            |m: &RogueFormulaSelectInfo| { &m.HandbookUnlockFormulaIdList },
+            |m: &mut RogueFormulaSelectInfo| { &mut m.HandbookUnlockFormulaIdList },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "can_roll",
-            |m: &RogueFormulaSelectInfo| { &m.can_roll },
-            |m: &mut RogueFormulaSelectInfo| { &mut m.can_roll },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CGMLGCGMBDH::CGMLGCGMBDH>(
-            "roll_formula_cost_data",
-            |m: &RogueFormulaSelectInfo| { &m.roll_formula_cost_data },
-            |m: &mut RogueFormulaSelectInfo| { &mut m.roll_formula_cost_data },
+            "RollFormulaCount",
+            |m: &RogueFormulaSelectInfo| { &m.RollFormulaCount },
+            |m: &mut RogueFormulaSelectInfo| { &mut m.RollFormulaCount },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "hint_id",
-            |m: &RogueFormulaSelectInfo| { &m.hint_id },
-            |m: &mut RogueFormulaSelectInfo| { &mut m.hint_id },
+            "CanRoll",
+            |m: &RogueFormulaSelectInfo| { &m.CanRoll },
+            |m: &mut RogueFormulaSelectInfo| { &mut m.CanRoll },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "roll_formula_free_count",
-            |m: &RogueFormulaSelectInfo| { &m.roll_formula_free_count },
-            |m: &mut RogueFormulaSelectInfo| { &mut m.roll_formula_free_count },
+            "RollFormulaMaxCount",
+            |m: &RogueFormulaSelectInfo| { &m.RollFormulaMaxCount },
+            |m: &mut RogueFormulaSelectInfo| { &mut m.RollFormulaMaxCount },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "roll_formula_count",
-            |m: &RogueFormulaSelectInfo| { &m.roll_formula_count },
-            |m: &mut RogueFormulaSelectInfo| { &mut m.roll_formula_count },
+            "HintId",
+            |m: &RogueFormulaSelectInfo| { &m.HintId },
+            |m: &mut RogueFormulaSelectInfo| { &mut m.HintId },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueFormulaSelectInfo>(
             "RogueFormulaSelectInfo",
@@ -122,35 +122,35 @@ impl ::protobuf::Message for RogueFormulaSelectInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.roll_formula_max_count = is.read_uint32()?;
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.RollFormulaCostData)?;
                 },
-                98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.handbook_unlock_formula_id_list)?;
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.SelectFormulaIdList)?;
                 },
-                96 => {
-                    self.handbook_unlock_formula_id_list.push(is.read_uint32()?);
+                64 => {
+                    self.SelectFormulaIdList.push(is.read_uint32()?);
                 },
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.select_formula_id_list)?;
+                8 => {
+                    self.RollFormulaFreeCount = is.read_uint32()?;
                 },
-                104 => {
-                    self.select_formula_id_list.push(is.read_uint32()?);
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.HandbookUnlockFormulaIdList)?;
+                },
+                24 => {
+                    self.HandbookUnlockFormulaIdList.push(is.read_uint32()?);
+                },
+                72 => {
+                    self.RollFormulaCount = is.read_uint32()?;
+                },
+                16 => {
+                    self.CanRoll = is.read_bool()?;
+                },
+                40 => {
+                    self.RollFormulaMaxCount = is.read_uint32()?;
                 },
                 56 => {
-                    self.can_roll = is.read_bool()?;
-                },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.roll_formula_cost_data)?;
-                },
-                48 => {
-                    self.hint_id = is.read_uint32()?;
-                },
-                32 => {
-                    self.roll_formula_free_count = is.read_uint32()?;
-                },
-                80 => {
-                    self.roll_formula_count = is.read_uint32()?;
+                    self.HintId = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -164,30 +164,30 @@ impl ::protobuf::Message for RogueFormulaSelectInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.roll_formula_max_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.roll_formula_max_count);
-        }
-        for value in &self.handbook_unlock_formula_id_list {
-            my_size += ::protobuf::rt::uint32_size(12, *value);
-        };
-        for value in &self.select_formula_id_list {
-            my_size += ::protobuf::rt::uint32_size(13, *value);
-        };
-        if self.can_roll != false {
-            my_size += 1 + 1;
-        }
-        if let Some(v) = self.roll_formula_cost_data.as_ref() {
+        if let Some(v) = self.RollFormulaCostData.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.hint_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.hint_id);
+        for value in &self.SelectFormulaIdList {
+            my_size += ::protobuf::rt::uint32_size(8, *value);
+        };
+        if self.RollFormulaFreeCount != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.RollFormulaFreeCount);
         }
-        if self.roll_formula_free_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.roll_formula_free_count);
+        for value in &self.HandbookUnlockFormulaIdList {
+            my_size += ::protobuf::rt::uint32_size(3, *value);
+        };
+        if self.RollFormulaCount != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.RollFormulaCount);
         }
-        if self.roll_formula_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.roll_formula_count);
+        if self.CanRoll != false {
+            my_size += 1 + 1;
+        }
+        if self.RollFormulaMaxCount != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.RollFormulaMaxCount);
+        }
+        if self.HintId != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.HintId);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -195,29 +195,29 @@ impl ::protobuf::Message for RogueFormulaSelectInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.roll_formula_max_count != 0 {
-            os.write_uint32(11, self.roll_formula_max_count)?;
+        if let Some(v) = self.RollFormulaCostData.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
-        for v in &self.handbook_unlock_formula_id_list {
-            os.write_uint32(12, *v)?;
+        for v in &self.SelectFormulaIdList {
+            os.write_uint32(8, *v)?;
         };
-        for v in &self.select_formula_id_list {
-            os.write_uint32(13, *v)?;
+        if self.RollFormulaFreeCount != 0 {
+            os.write_uint32(1, self.RollFormulaFreeCount)?;
+        }
+        for v in &self.HandbookUnlockFormulaIdList {
+            os.write_uint32(3, *v)?;
         };
-        if self.can_roll != false {
-            os.write_bool(7, self.can_roll)?;
+        if self.RollFormulaCount != 0 {
+            os.write_uint32(9, self.RollFormulaCount)?;
         }
-        if let Some(v) = self.roll_formula_cost_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        if self.CanRoll != false {
+            os.write_bool(2, self.CanRoll)?;
         }
-        if self.hint_id != 0 {
-            os.write_uint32(6, self.hint_id)?;
+        if self.RollFormulaMaxCount != 0 {
+            os.write_uint32(5, self.RollFormulaMaxCount)?;
         }
-        if self.roll_formula_free_count != 0 {
-            os.write_uint32(4, self.roll_formula_free_count)?;
-        }
-        if self.roll_formula_count != 0 {
-            os.write_uint32(10, self.roll_formula_count)?;
+        if self.HintId != 0 {
+            os.write_uint32(7, self.HintId)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -236,27 +236,27 @@ impl ::protobuf::Message for RogueFormulaSelectInfo {
     }
 
     fn clear(&mut self) {
-        self.roll_formula_max_count = 0;
-        self.handbook_unlock_formula_id_list.clear();
-        self.select_formula_id_list.clear();
-        self.can_roll = false;
-        self.roll_formula_cost_data.clear();
-        self.hint_id = 0;
-        self.roll_formula_free_count = 0;
-        self.roll_formula_count = 0;
+        self.RollFormulaCostData.clear();
+        self.SelectFormulaIdList.clear();
+        self.RollFormulaFreeCount = 0;
+        self.HandbookUnlockFormulaIdList.clear();
+        self.RollFormulaCount = 0;
+        self.CanRoll = false;
+        self.RollFormulaMaxCount = 0;
+        self.HintId = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueFormulaSelectInfo {
         static instance: RogueFormulaSelectInfo = RogueFormulaSelectInfo {
-            roll_formula_max_count: 0,
-            handbook_unlock_formula_id_list: ::std::vec::Vec::new(),
-            select_formula_id_list: ::std::vec::Vec::new(),
-            can_roll: false,
-            roll_formula_cost_data: ::protobuf::MessageField::none(),
-            hint_id: 0,
-            roll_formula_free_count: 0,
-            roll_formula_count: 0,
+            RollFormulaCostData: ::protobuf::MessageField::none(),
+            SelectFormulaIdList: ::std::vec::Vec::new(),
+            RollFormulaFreeCount: 0,
+            HandbookUnlockFormulaIdList: ::std::vec::Vec::new(),
+            RollFormulaCount: 0,
+            CanRoll: false,
+            RollFormulaMaxCount: 0,
+            HintId: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -281,16 +281,16 @@ impl ::protobuf::reflect::ProtobufValue for RogueFormulaSelectInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cRogueFormulaSelectInfo.proto\x1a\x11CGMLGCGMBDH.proto\"\xa4\x03\n\
-    \x16RogueFormulaSelectInfo\x123\n\x16roll_formula_max_count\x18\x0b\x20\
-    \x01(\rR\x13rollFormulaMaxCount\x12D\n\x1fhandbook_unlock_formula_id_lis\
-    t\x18\x0c\x20\x03(\rR\x1bhandbookUnlockFormulaIdList\x123\n\x16select_fo\
-    rmula_id_list\x18\r\x20\x03(\rR\x13selectFormulaIdList\x12\x19\n\x08can_\
-    roll\x18\x07\x20\x01(\x08R\x07canRoll\x12A\n\x16roll_formula_cost_data\
-    \x18\x0f\x20\x01(\x0b2\x0c.CGMLGCGMBDHR\x13rollFormulaCostData\x12\x17\n\
-    \x07hint_id\x18\x06\x20\x01(\rR\x06hintId\x125\n\x17roll_formula_free_co\
-    unt\x18\x04\x20\x01(\rR\x14rollFormulaFreeCount\x12,\n\x12roll_formula_c\
-    ount\x18\n\x20\x01(\rR\x10rollFormulaCountb\x06proto3\
+    \n\x1cRogueFormulaSelectInfo.proto\x1a\x12ItemCostList.proto\"\x91\x03\n\
+    \x16RogueFormulaSelectInfo\x12?\n\x13RollFormulaCostData\x18\x0b\x20\x01\
+    (\x0b2\r.ItemCostListR\x13RollFormulaCostData\x120\n\x13SelectFormulaIdL\
+    ist\x18\x08\x20\x03(\rR\x13SelectFormulaIdList\x122\n\x14RollFormulaFree\
+    Count\x18\x01\x20\x01(\rR\x14RollFormulaFreeCount\x12@\n\x1bHandbookUnlo\
+    ckFormulaIdList\x18\x03\x20\x03(\rR\x1bHandbookUnlockFormulaIdList\x12*\
+    \n\x10RollFormulaCount\x18\t\x20\x01(\rR\x10RollFormulaCount\x12\x18\n\
+    \x07CanRoll\x18\x02\x20\x01(\x08R\x07CanRoll\x120\n\x13RollFormulaMaxCou\
+    nt\x18\x05\x20\x01(\rR\x13RollFormulaMaxCount\x12\x16\n\x06HintId\x18\
+    \x07\x20\x01(\rR\x06HintIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -308,7 +308,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::CGMLGCGMBDH::file_descriptor().clone());
+            deps.push(super::ItemCostList::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueFormulaSelectInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

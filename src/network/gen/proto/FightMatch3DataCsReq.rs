@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightMatch3DataCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FightMatch3DataCsReq.NMGNOHPOJOP)
-    pub NMGNOHPOJOP: i32,
+    // @@protoc_insertion_point(field:FightMatch3DataCsReq.OFKGLABNANO)
+    pub OFKGLABNANO: i32,
     // special fields
     // @@protoc_insertion_point(special_field:FightMatch3DataCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl FightMatch3DataCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NMGNOHPOJOP",
-            |m: &FightMatch3DataCsReq| { &m.NMGNOHPOJOP },
-            |m: &mut FightMatch3DataCsReq| { &mut m.NMGNOHPOJOP },
+            "OFKGLABNANO",
+            |m: &FightMatch3DataCsReq| { &m.OFKGLABNANO },
+            |m: &mut FightMatch3DataCsReq| { &mut m.OFKGLABNANO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightMatch3DataCsReq>(
             "FightMatch3DataCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for FightMatch3DataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.NMGNOHPOJOP = is.read_int32()?;
+                24 => {
+                    self.OFKGLABNANO = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for FightMatch3DataCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NMGNOHPOJOP != 0 {
-            my_size += ::protobuf::rt::int32_size(14, self.NMGNOHPOJOP);
+        if self.OFKGLABNANO != 0 {
+            my_size += ::protobuf::rt::int32_size(3, self.OFKGLABNANO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for FightMatch3DataCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NMGNOHPOJOP != 0 {
-            os.write_int32(14, self.NMGNOHPOJOP)?;
+        if self.OFKGLABNANO != 0 {
+            os.write_int32(3, self.OFKGLABNANO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for FightMatch3DataCsReq {
     }
 
     fn clear(&mut self) {
-        self.NMGNOHPOJOP = 0;
+        self.OFKGLABNANO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightMatch3DataCsReq {
         static instance: FightMatch3DataCsReq = FightMatch3DataCsReq {
-            NMGNOHPOJOP: 0,
+            OFKGLABNANO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for FightMatch3DataCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aFightMatch3DataCsReq.proto\"8\n\x14FightMatch3DataCsReq\x12\x20\n\
-    \x0bNMGNOHPOJOP\x18\x0e\x20\x01(\x05R\x0bNMGNOHPOJOPb\x06proto3\
+    \x0bOFKGLABNANO\x18\x03\x20\x01(\x05R\x0bOFKGLABNANOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

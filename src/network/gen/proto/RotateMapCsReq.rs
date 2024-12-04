@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RotateMapCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RotateMapCsReq.GMCFBLFAFFO)
-    pub GMCFBLFAFFO: u32,
-    // @@protoc_insertion_point(field:RotateMapCsReq.GCFIIGOLPMF)
-    pub GCFIIGOLPMF: u32,
-    // @@protoc_insertion_point(field:RotateMapCsReq.JFEMBGKFAJE)
-    pub JFEMBGKFAJE: ::protobuf::MessageField<super::IMLDMJECKLG::IMLDMJECKLG>,
-    // @@protoc_insertion_point(field:RotateMapCsReq.ICMBDLMGDBO)
-    pub ICMBDLMGDBO: ::protobuf::MessageField<super::HMBLIADNKEO::HMBLIADNKEO>,
+    // @@protoc_insertion_point(field:RotateMapCsReq.motion)
+    pub motion: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
+    // @@protoc_insertion_point(field:RotateMapCsReq.group_id)
+    pub group_id: u32,
+    // @@protoc_insertion_point(field:RotateMapCsReq.BMOBDFECHFF)
+    pub BMOBDFECHFF: u32,
+    // @@protoc_insertion_point(field:RotateMapCsReq.map_info)
+    pub map_info: ::protobuf::MessageField<super::RotateMapInfo::RotateMapInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:RotateMapCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,25 +56,25 @@ impl RotateMapCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GMCFBLFAFFO",
-            |m: &RotateMapCsReq| { &m.GMCFBLFAFFO },
-            |m: &mut RotateMapCsReq| { &mut m.GMCFBLFAFFO },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfo::MotionInfo>(
+            "motion",
+            |m: &RotateMapCsReq| { &m.motion },
+            |m: &mut RotateMapCsReq| { &mut m.motion },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GCFIIGOLPMF",
-            |m: &RotateMapCsReq| { &m.GCFIIGOLPMF },
-            |m: &mut RotateMapCsReq| { &mut m.GCFIIGOLPMF },
+            "group_id",
+            |m: &RotateMapCsReq| { &m.group_id },
+            |m: &mut RotateMapCsReq| { &mut m.group_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IMLDMJECKLG::IMLDMJECKLG>(
-            "JFEMBGKFAJE",
-            |m: &RotateMapCsReq| { &m.JFEMBGKFAJE },
-            |m: &mut RotateMapCsReq| { &mut m.JFEMBGKFAJE },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BMOBDFECHFF",
+            |m: &RotateMapCsReq| { &m.BMOBDFECHFF },
+            |m: &mut RotateMapCsReq| { &mut m.BMOBDFECHFF },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HMBLIADNKEO::HMBLIADNKEO>(
-            "ICMBDLMGDBO",
-            |m: &RotateMapCsReq| { &m.ICMBDLMGDBO },
-            |m: &mut RotateMapCsReq| { &mut m.ICMBDLMGDBO },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RotateMapInfo::RotateMapInfo>(
+            "map_info",
+            |m: &RotateMapCsReq| { &m.map_info },
+            |m: &mut RotateMapCsReq| { &mut m.map_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RotateMapCsReq>(
             "RotateMapCsReq",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for RotateMapCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.GMCFBLFAFFO = is.read_uint32()?;
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
                 },
-                72 => {
-                    self.GCFIIGOLPMF = is.read_uint32()?;
+                96 => {
+                    self.group_id = is.read_uint32()?;
                 },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JFEMBGKFAJE)?;
+                40 => {
+                    self.BMOBDFECHFF = is.read_uint32()?;
                 },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ICMBDLMGDBO)?;
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.map_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,17 +118,17 @@ impl ::protobuf::Message for RotateMapCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GMCFBLFAFFO != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.GMCFBLFAFFO);
-        }
-        if self.GCFIIGOLPMF != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.GCFIIGOLPMF);
-        }
-        if let Some(v) = self.JFEMBGKFAJE.as_ref() {
+        if let Some(v) = self.motion.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.ICMBDLMGDBO.as_ref() {
+        if self.group_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.group_id);
+        }
+        if self.BMOBDFECHFF != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.BMOBDFECHFF);
+        }
+        if let Some(v) = self.map_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -138,17 +138,17 @@ impl ::protobuf::Message for RotateMapCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GMCFBLFAFFO != 0 {
-            os.write_uint32(3, self.GMCFBLFAFFO)?;
+        if let Some(v) = self.motion.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
-        if self.GCFIIGOLPMF != 0 {
-            os.write_uint32(9, self.GCFIIGOLPMF)?;
+        if self.group_id != 0 {
+            os.write_uint32(12, self.group_id)?;
         }
-        if let Some(v) = self.JFEMBGKFAJE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if self.BMOBDFECHFF != 0 {
+            os.write_uint32(5, self.BMOBDFECHFF)?;
         }
-        if let Some(v) = self.ICMBDLMGDBO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if let Some(v) = self.map_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,19 +167,19 @@ impl ::protobuf::Message for RotateMapCsReq {
     }
 
     fn clear(&mut self) {
-        self.GMCFBLFAFFO = 0;
-        self.GCFIIGOLPMF = 0;
-        self.JFEMBGKFAJE.clear();
-        self.ICMBDLMGDBO.clear();
+        self.motion.clear();
+        self.group_id = 0;
+        self.BMOBDFECHFF = 0;
+        self.map_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RotateMapCsReq {
         static instance: RotateMapCsReq = RotateMapCsReq {
-            GMCFBLFAFFO: 0,
-            GCFIIGOLPMF: 0,
-            JFEMBGKFAJE: ::protobuf::MessageField::none(),
-            ICMBDLMGDBO: ::protobuf::MessageField::none(),
+            motion: ::protobuf::MessageField::none(),
+            group_id: 0,
+            BMOBDFECHFF: 0,
+            map_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,12 +204,12 @@ impl ::protobuf::reflect::ProtobufValue for RotateMapCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14RotateMapCsReq.proto\x1a\x11HMBLIADNKEO.proto\x1a\x11IMLDMJECKLG.p\
-    roto\"\xb4\x01\n\x0eRotateMapCsReq\x12\x20\n\x0bGMCFBLFAFFO\x18\x03\x20\
-    \x01(\rR\x0bGMCFBLFAFFO\x12\x20\n\x0bGCFIIGOLPMF\x18\t\x20\x01(\rR\x0bGC\
-    FIIGOLPMF\x12.\n\x0bJFEMBGKFAJE\x18\x0e\x20\x01(\x0b2\x0c.IMLDMJECKLGR\
-    \x0bJFEMBGKFAJE\x12.\n\x0bICMBDLMGDBO\x18\x07\x20\x01(\x0b2\x0c.HMBLIADN\
-    KEOR\x0bICMBDLMGDBOb\x06proto3\
+    \n\x14RotateMapCsReq.proto\x1a\x10MotionInfo.proto\x1a\x0cVector.proto\
+    \x1a\x13RotateMapInfo.proto\"\x9d\x01\n\x0eRotateMapCsReq\x12#\n\x06moti\
+    on\x18\r\x20\x01(\x0b2\x0b.MotionInfoR\x06motion\x12\x19\n\x08group_id\
+    \x18\x0c\x20\x01(\rR\x07groupId\x12\x20\n\x0bBMOBDFECHFF\x18\x05\x20\x01\
+    (\rR\x0bBMOBDFECHFF\x12)\n\x08map_info\x18\t\x20\x01(\x0b2\x0e.RotateMap\
+    InfoR\x07mapInfoB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -226,9 +226,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::HMBLIADNKEO::file_descriptor().clone());
-            deps.push(super::IMLDMJECKLG::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(3);
+            deps.push(super::MotionInfo::file_descriptor().clone());
+            deps.push(super::Vector::file_descriptor().clone());
+            deps.push(super::RotateMapInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RotateMapCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

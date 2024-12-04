@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdateFloorSavedValueNotify {
     // message fields
-    // @@protoc_insertion_point(field:UpdateFloorSavedValueNotify.KPFMEBBLJCD)
-    pub KPFMEBBLJCD: u32,
-    // @@protoc_insertion_point(field:UpdateFloorSavedValueNotify.OGPKNEFGNAN)
-    pub OGPKNEFGNAN: u32,
-    // @@protoc_insertion_point(field:UpdateFloorSavedValueNotify.HHJCAJJINMG)
-    pub HHJCAJJINMG: ::std::collections::HashMap<::std::string::String, i32>,
-    // @@protoc_insertion_point(field:UpdateFloorSavedValueNotify.MLEAECLOGEB)
-    pub MLEAECLOGEB: u32,
+    // @@protoc_insertion_point(field:UpdateFloorSavedValueNotify.PMCIJKIINJL)
+    pub PMCIJKIINJL: u32,
+    // @@protoc_insertion_point(field:UpdateFloorSavedValueNotify.KOCMDLFBKEI)
+    pub KOCMDLFBKEI: u32,
+    // @@protoc_insertion_point(field:UpdateFloorSavedValueNotify.PPCIOOALBNF)
+    pub PPCIOOALBNF: ::std::collections::HashMap<::std::string::String, i32>,
+    // @@protoc_insertion_point(field:UpdateFloorSavedValueNotify.IJGMJLMJABD)
+    pub IJGMJLMJABD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:UpdateFloorSavedValueNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl UpdateFloorSavedValueNotify {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KPFMEBBLJCD",
-            |m: &UpdateFloorSavedValueNotify| { &m.KPFMEBBLJCD },
-            |m: &mut UpdateFloorSavedValueNotify| { &mut m.KPFMEBBLJCD },
+            "PMCIJKIINJL",
+            |m: &UpdateFloorSavedValueNotify| { &m.PMCIJKIINJL },
+            |m: &mut UpdateFloorSavedValueNotify| { &mut m.PMCIJKIINJL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OGPKNEFGNAN",
-            |m: &UpdateFloorSavedValueNotify| { &m.OGPKNEFGNAN },
-            |m: &mut UpdateFloorSavedValueNotify| { &mut m.OGPKNEFGNAN },
+            "KOCMDLFBKEI",
+            |m: &UpdateFloorSavedValueNotify| { &m.KOCMDLFBKEI },
+            |m: &mut UpdateFloorSavedValueNotify| { &mut m.KOCMDLFBKEI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor::<_, _, _>(
-            "HHJCAJJINMG",
-            |m: &UpdateFloorSavedValueNotify| { &m.HHJCAJJINMG },
-            |m: &mut UpdateFloorSavedValueNotify| { &mut m.HHJCAJJINMG },
+            "PPCIOOALBNF",
+            |m: &UpdateFloorSavedValueNotify| { &m.PPCIOOALBNF },
+            |m: &mut UpdateFloorSavedValueNotify| { &mut m.PPCIOOALBNF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MLEAECLOGEB",
-            |m: &UpdateFloorSavedValueNotify| { &m.MLEAECLOGEB },
-            |m: &mut UpdateFloorSavedValueNotify| { &mut m.MLEAECLOGEB },
+            "IJGMJLMJABD",
+            |m: &UpdateFloorSavedValueNotify| { &m.IJGMJLMJABD },
+            |m: &mut UpdateFloorSavedValueNotify| { &mut m.IJGMJLMJABD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdateFloorSavedValueNotify>(
             "UpdateFloorSavedValueNotify",
@@ -94,13 +94,13 @@ impl ::protobuf::Message for UpdateFloorSavedValueNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.KPFMEBBLJCD = is.read_uint32()?;
+                56 => {
+                    self.PMCIJKIINJL = is.read_uint32()?;
                 },
-                16 => {
-                    self.OGPKNEFGNAN = is.read_uint32()?;
+                24 => {
+                    self.KOCMDLFBKEI = is.read_uint32()?;
                 },
-                82 => {
+                66 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -113,10 +113,10 @@ impl ::protobuf::Message for UpdateFloorSavedValueNotify {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.HHJCAJJINMG.insert(key, value);
+                    self.PPCIOOALBNF.insert(key, value);
                 },
-                40 => {
-                    self.MLEAECLOGEB = is.read_uint32()?;
+                8 => {
+                    self.IJGMJLMJABD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -130,20 +130,20 @@ impl ::protobuf::Message for UpdateFloorSavedValueNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KPFMEBBLJCD != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.KPFMEBBLJCD);
+        if self.PMCIJKIINJL != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.PMCIJKIINJL);
         }
-        if self.OGPKNEFGNAN != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.OGPKNEFGNAN);
+        if self.KOCMDLFBKEI != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.KOCMDLFBKEI);
         }
-        for (k, v) in &self.HHJCAJJINMG {
+        for (k, v) in &self.PPCIOOALBNF {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::string_size(1, &k);
             entry_size += ::protobuf::rt::int32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if self.MLEAECLOGEB != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.MLEAECLOGEB);
+        if self.IJGMJLMJABD != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.IJGMJLMJABD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -151,23 +151,23 @@ impl ::protobuf::Message for UpdateFloorSavedValueNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KPFMEBBLJCD != 0 {
-            os.write_uint32(15, self.KPFMEBBLJCD)?;
+        if self.PMCIJKIINJL != 0 {
+            os.write_uint32(7, self.PMCIJKIINJL)?;
         }
-        if self.OGPKNEFGNAN != 0 {
-            os.write_uint32(2, self.OGPKNEFGNAN)?;
+        if self.KOCMDLFBKEI != 0 {
+            os.write_uint32(3, self.KOCMDLFBKEI)?;
         }
-        for (k, v) in &self.HHJCAJJINMG {
+        for (k, v) in &self.PPCIOOALBNF {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::string_size(1, &k);
             entry_size += ::protobuf::rt::int32_size(2, *v);
-            os.write_raw_varint32(82)?; // Tag.
+            os.write_raw_varint32(66)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_string(1, &k)?;
             os.write_int32(2, *v)?;
         };
-        if self.MLEAECLOGEB != 0 {
-            os.write_uint32(5, self.MLEAECLOGEB)?;
+        if self.IJGMJLMJABD != 0 {
+            os.write_uint32(1, self.IJGMJLMJABD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,10 +186,10 @@ impl ::protobuf::Message for UpdateFloorSavedValueNotify {
     }
 
     fn clear(&mut self) {
-        self.KPFMEBBLJCD = 0;
-        self.OGPKNEFGNAN = 0;
-        self.HHJCAJJINMG.clear();
-        self.MLEAECLOGEB = 0;
+        self.PMCIJKIINJL = 0;
+        self.KOCMDLFBKEI = 0;
+        self.PPCIOOALBNF.clear();
+        self.IJGMJLMJABD = 0;
         self.special_fields.clear();
     }
 
@@ -218,13 +218,13 @@ impl ::protobuf::reflect::ProtobufValue for UpdateFloorSavedValueNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!UpdateFloorSavedValueNotify.proto\"\x94\x02\n\x1bUpdateFloorSavedValu\
-    eNotify\x12\x20\n\x0bKPFMEBBLJCD\x18\x0f\x20\x01(\rR\x0bKPFMEBBLJCD\x12\
-    \x20\n\x0bOGPKNEFGNAN\x18\x02\x20\x01(\rR\x0bOGPKNEFGNAN\x12O\n\x0bHHJCA\
-    JJINMG\x18\n\x20\x03(\x0b2-.UpdateFloorSavedValueNotify.HHJCAJJINMGEntry\
-    R\x0bHHJCAJJINMG\x12\x20\n\x0bMLEAECLOGEB\x18\x05\x20\x01(\rR\x0bMLEAECL\
-    OGEB\x1a>\n\x10HHJCAJJINMGEntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03\
-    key\x12\x14\n\x05value\x18\x02\x20\x01(\x05R\x05value:\x028\x01b\x06prot\
-    o3\
+    eNotify\x12\x20\n\x0bPMCIJKIINJL\x18\x07\x20\x01(\rR\x0bPMCIJKIINJL\x12\
+    \x20\n\x0bKOCMDLFBKEI\x18\x03\x20\x01(\rR\x0bKOCMDLFBKEI\x12O\n\x0bPPCIO\
+    OALBNF\x18\x08\x20\x03(\x0b2-.UpdateFloorSavedValueNotify.PPCIOOALBNFEnt\
+    ryR\x0bPPCIOOALBNF\x12\x20\n\x0bIJGMJLMJABD\x18\x01\x20\x01(\rR\x0bIJGMJ\
+    LMJABD\x1a>\n\x10PPCIOOALBNFEntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\
+    \x03key\x12\x14\n\x05value\x18\x02\x20\x01(\x05R\x05value:\x028\x01b\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

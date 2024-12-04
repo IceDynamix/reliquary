@@ -30,14 +30,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdRndOptionType {
     // @@protoc_insertion_point(enum_value:CmdRndOptionType.CmdRndOptionTypeNone)
     CmdRndOptionTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdRndOptionType.CmdDailyFirstMeetPamCsReq)
-    CmdDailyFirstMeetPamCsReq = 3483,
-    // @@protoc_insertion_point(enum_value:CmdRndOptionType.CmdGetRndOptionCsReq)
-    CmdGetRndOptionCsReq = 3498,
-    // @@protoc_insertion_point(enum_value:CmdRndOptionType.CmdGetRndOptionScRsp)
-    CmdGetRndOptionScRsp = 3471,
     // @@protoc_insertion_point(enum_value:CmdRndOptionType.CmdDailyFirstMeetPamScRsp)
-    CmdDailyFirstMeetPamScRsp = 3442,
+    CmdDailyFirstMeetPamScRsp = 3446,
+    // @@protoc_insertion_point(enum_value:CmdRndOptionType.CmdGetRndOptionScRsp)
+    CmdGetRndOptionScRsp = 3420,
+    // @@protoc_insertion_point(enum_value:CmdRndOptionType.CmdGetRndOptionCsReq)
+    CmdGetRndOptionCsReq = 3459,
+    // @@protoc_insertion_point(enum_value:CmdRndOptionType.CmdDailyFirstMeetPamCsReq)
+    CmdDailyFirstMeetPamCsReq = 3403,
 }
 
 impl ::protobuf::Enum for CmdRndOptionType {
@@ -50,10 +50,10 @@ impl ::protobuf::Enum for CmdRndOptionType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdRndOptionType> {
         match value {
             0 => ::std::option::Option::Some(CmdRndOptionType::CmdRndOptionTypeNone),
-            3483 => ::std::option::Option::Some(CmdRndOptionType::CmdDailyFirstMeetPamCsReq),
-            3498 => ::std::option::Option::Some(CmdRndOptionType::CmdGetRndOptionCsReq),
-            3471 => ::std::option::Option::Some(CmdRndOptionType::CmdGetRndOptionScRsp),
-            3442 => ::std::option::Option::Some(CmdRndOptionType::CmdDailyFirstMeetPamScRsp),
+            3446 => ::std::option::Option::Some(CmdRndOptionType::CmdDailyFirstMeetPamScRsp),
+            3420 => ::std::option::Option::Some(CmdRndOptionType::CmdGetRndOptionScRsp),
+            3459 => ::std::option::Option::Some(CmdRndOptionType::CmdGetRndOptionCsReq),
+            3403 => ::std::option::Option::Some(CmdRndOptionType::CmdDailyFirstMeetPamCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -61,20 +61,20 @@ impl ::protobuf::Enum for CmdRndOptionType {
     fn from_str(str: &str) -> ::std::option::Option<CmdRndOptionType> {
         match str {
             "CmdRndOptionTypeNone" => ::std::option::Option::Some(CmdRndOptionType::CmdRndOptionTypeNone),
-            "CmdDailyFirstMeetPamCsReq" => ::std::option::Option::Some(CmdRndOptionType::CmdDailyFirstMeetPamCsReq),
-            "CmdGetRndOptionCsReq" => ::std::option::Option::Some(CmdRndOptionType::CmdGetRndOptionCsReq),
-            "CmdGetRndOptionScRsp" => ::std::option::Option::Some(CmdRndOptionType::CmdGetRndOptionScRsp),
             "CmdDailyFirstMeetPamScRsp" => ::std::option::Option::Some(CmdRndOptionType::CmdDailyFirstMeetPamScRsp),
+            "CmdGetRndOptionScRsp" => ::std::option::Option::Some(CmdRndOptionType::CmdGetRndOptionScRsp),
+            "CmdGetRndOptionCsReq" => ::std::option::Option::Some(CmdRndOptionType::CmdGetRndOptionCsReq),
+            "CmdDailyFirstMeetPamCsReq" => ::std::option::Option::Some(CmdRndOptionType::CmdDailyFirstMeetPamCsReq),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRndOptionType] = &[
         CmdRndOptionType::CmdRndOptionTypeNone,
-        CmdRndOptionType::CmdDailyFirstMeetPamCsReq,
-        CmdRndOptionType::CmdGetRndOptionCsReq,
-        CmdRndOptionType::CmdGetRndOptionScRsp,
         CmdRndOptionType::CmdDailyFirstMeetPamScRsp,
+        CmdRndOptionType::CmdGetRndOptionScRsp,
+        CmdRndOptionType::CmdGetRndOptionCsReq,
+        CmdRndOptionType::CmdDailyFirstMeetPamCsReq,
     ];
 }
 
@@ -87,10 +87,10 @@ impl ::protobuf::EnumFull for CmdRndOptionType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdRndOptionType::CmdRndOptionTypeNone => 0,
-            CmdRndOptionType::CmdDailyFirstMeetPamCsReq => 1,
-            CmdRndOptionType::CmdGetRndOptionCsReq => 2,
-            CmdRndOptionType::CmdGetRndOptionScRsp => 3,
-            CmdRndOptionType::CmdDailyFirstMeetPamScRsp => 4,
+            CmdRndOptionType::CmdDailyFirstMeetPamScRsp => 1,
+            CmdRndOptionType::CmdGetRndOptionScRsp => 2,
+            CmdRndOptionType::CmdGetRndOptionCsReq => 3,
+            CmdRndOptionType::CmdDailyFirstMeetPamCsReq => 4,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -110,10 +110,10 @@ impl CmdRndOptionType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16CmdRndOptionType.proto*\xa2\x01\n\x10CmdRndOptionType\x12\x18\n\
-    \x14CmdRndOptionTypeNone\x10\0\x12\x1e\n\x19CmdDailyFirstMeetPamCsReq\
-    \x10\x9b\x1b\x12\x19\n\x14CmdGetRndOptionCsReq\x10\xaa\x1b\x12\x19\n\x14\
-    CmdGetRndOptionScRsp\x10\x8f\x1b\x12\x1e\n\x19CmdDailyFirstMeetPamScRsp\
-    \x10\xf2\x1ab\x06proto3\
+    \x14CmdRndOptionTypeNone\x10\0\x12\x1e\n\x19CmdDailyFirstMeetPamScRsp\
+    \x10\xf6\x1a\x12\x19\n\x14CmdGetRndOptionScRsp\x10\xdc\x1a\x12\x19\n\x14\
+    CmdGetRndOptionCsReq\x10\x83\x1b\x12\x1e\n\x19CmdDailyFirstMeetPamCsReq\
+    \x10\xcb\x1ab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

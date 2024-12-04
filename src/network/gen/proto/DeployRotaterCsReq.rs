@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DeployRotaterCsReq {
     // message fields
-    // @@protoc_insertion_point(field:DeployRotaterCsReq.BBNNIDBMOMM)
-    pub BBNNIDBMOMM: ::protobuf::MessageField<super::KPHGEEFLHNP::KPHGEEFLHNP>,
+    // @@protoc_insertion_point(field:DeployRotaterCsReq.rotater_data)
+    pub rotater_data: ::protobuf::MessageField<super::RotaterData::RotaterData>,
     // special fields
     // @@protoc_insertion_point(special_field:DeployRotaterCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,10 +50,10 @@ impl DeployRotaterCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KPHGEEFLHNP::KPHGEEFLHNP>(
-            "BBNNIDBMOMM",
-            |m: &DeployRotaterCsReq| { &m.BBNNIDBMOMM },
-            |m: &mut DeployRotaterCsReq| { &mut m.BBNNIDBMOMM },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RotaterData::RotaterData>(
+            "rotater_data",
+            |m: &DeployRotaterCsReq| { &m.rotater_data },
+            |m: &mut DeployRotaterCsReq| { &mut m.rotater_data },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DeployRotaterCsReq>(
             "DeployRotaterCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for DeployRotaterCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BBNNIDBMOMM)?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rotater_data)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for DeployRotaterCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.BBNNIDBMOMM.as_ref() {
+        if let Some(v) = self.rotater_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -98,8 +98,8 @@ impl ::protobuf::Message for DeployRotaterCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.BBNNIDBMOMM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if let Some(v) = self.rotater_data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -118,13 +118,13 @@ impl ::protobuf::Message for DeployRotaterCsReq {
     }
 
     fn clear(&mut self) {
-        self.BBNNIDBMOMM.clear();
+        self.rotater_data.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DeployRotaterCsReq {
         static instance: DeployRotaterCsReq = DeployRotaterCsReq {
-            BBNNIDBMOMM: ::protobuf::MessageField::none(),
+            rotater_data: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,9 +149,9 @@ impl ::protobuf::reflect::ProtobufValue for DeployRotaterCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18DeployRotaterCsReq.proto\x1a\x11KPHGEEFLHNP.proto\"D\n\x12DeployRo\
-    taterCsReq\x12.\n\x0bBBNNIDBMOMM\x18\t\x20\x01(\x0b2\x0c.KPHGEEFLHNPR\
-    \x0bBBNNIDBMOMMb\x06proto3\
+    \n\x18DeployRotaterCsReq.proto\x1a\x11RotaterData.proto\"E\n\x12DeployRo\
+    taterCsReq\x12/\n\x0crotater_data\x18\x07\x20\x01(\x0b2\x0c.RotaterDataR\
+    \x0brotaterDataB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -169,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::KPHGEEFLHNP::file_descriptor().clone());
+            deps.push(super::RotaterData::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(DeployRotaterCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

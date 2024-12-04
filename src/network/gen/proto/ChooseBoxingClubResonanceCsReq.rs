@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChooseBoxingClubResonanceCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ChooseBoxingClubResonanceCsReq.JIBAEJKHDJA)
-    pub JIBAEJKHDJA: u32,
-    // @@protoc_insertion_point(field:ChooseBoxingClubResonanceCsReq.DBKHFAEKNKL)
-    pub DBKHFAEKNKL: u32,
+    // @@protoc_insertion_point(field:ChooseBoxingClubResonanceCsReq.GPKEAKPHIPA)
+    pub GPKEAKPHIPA: u32,
+    // @@protoc_insertion_point(field:ChooseBoxingClubResonanceCsReq.BNPOOOEJBMA)
+    pub BNPOOOEJBMA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChooseBoxingClubResonanceCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl ChooseBoxingClubResonanceCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JIBAEJKHDJA",
-            |m: &ChooseBoxingClubResonanceCsReq| { &m.JIBAEJKHDJA },
-            |m: &mut ChooseBoxingClubResonanceCsReq| { &mut m.JIBAEJKHDJA },
+            "GPKEAKPHIPA",
+            |m: &ChooseBoxingClubResonanceCsReq| { &m.GPKEAKPHIPA },
+            |m: &mut ChooseBoxingClubResonanceCsReq| { &mut m.GPKEAKPHIPA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DBKHFAEKNKL",
-            |m: &ChooseBoxingClubResonanceCsReq| { &m.DBKHFAEKNKL },
-            |m: &mut ChooseBoxingClubResonanceCsReq| { &mut m.DBKHFAEKNKL },
+            "BNPOOOEJBMA",
+            |m: &ChooseBoxingClubResonanceCsReq| { &m.BNPOOOEJBMA },
+            |m: &mut ChooseBoxingClubResonanceCsReq| { &mut m.BNPOOOEJBMA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChooseBoxingClubResonanceCsReq>(
             "ChooseBoxingClubResonanceCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for ChooseBoxingClubResonanceCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.JIBAEJKHDJA = is.read_uint32()?;
+                104 => {
+                    self.GPKEAKPHIPA = is.read_uint32()?;
                 },
-                120 => {
-                    self.DBKHFAEKNKL = is.read_uint32()?;
+                64 => {
+                    self.BNPOOOEJBMA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for ChooseBoxingClubResonanceCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JIBAEJKHDJA != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.JIBAEJKHDJA);
+        if self.GPKEAKPHIPA != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.GPKEAKPHIPA);
         }
-        if self.DBKHFAEKNKL != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.DBKHFAEKNKL);
+        if self.BNPOOOEJBMA != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.BNPOOOEJBMA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for ChooseBoxingClubResonanceCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JIBAEJKHDJA != 0 {
-            os.write_uint32(9, self.JIBAEJKHDJA)?;
+        if self.GPKEAKPHIPA != 0 {
+            os.write_uint32(13, self.GPKEAKPHIPA)?;
         }
-        if self.DBKHFAEKNKL != 0 {
-            os.write_uint32(15, self.DBKHFAEKNKL)?;
+        if self.BNPOOOEJBMA != 0 {
+            os.write_uint32(8, self.BNPOOOEJBMA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for ChooseBoxingClubResonanceCsReq {
     }
 
     fn clear(&mut self) {
-        self.JIBAEJKHDJA = 0;
-        self.DBKHFAEKNKL = 0;
+        self.GPKEAKPHIPA = 0;
+        self.BNPOOOEJBMA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChooseBoxingClubResonanceCsReq {
         static instance: ChooseBoxingClubResonanceCsReq = ChooseBoxingClubResonanceCsReq {
-            JIBAEJKHDJA: 0,
-            DBKHFAEKNKL: 0,
+            GPKEAKPHIPA: 0,
+            BNPOOOEJBMA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for ChooseBoxingClubResonanceCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$ChooseBoxingClubResonanceCsReq.proto\"d\n\x1eChooseBoxingClubResonanc\
-    eCsReq\x12\x20\n\x0bJIBAEJKHDJA\x18\t\x20\x01(\rR\x0bJIBAEJKHDJA\x12\x20\
-    \n\x0bDBKHFAEKNKL\x18\x0f\x20\x01(\rR\x0bDBKHFAEKNKLb\x06proto3\
+    eCsReq\x12\x20\n\x0bGPKEAKPHIPA\x18\r\x20\x01(\rR\x0bGPKEAKPHIPA\x12\x20\
+    \n\x0bBNPOOOEJBMA\x18\x08\x20\x01(\rR\x0bBNPOOOEJBMAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

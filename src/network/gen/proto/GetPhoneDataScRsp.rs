@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetPhoneDataScRsp {
     // message fields
+    // @@protoc_insertion_point(field:GetPhoneDataScRsp.cur_chat_bubble)
+    pub cur_chat_bubble: u32,
+    // @@protoc_insertion_point(field:GetPhoneDataScRsp.owned_phone_themes)
+    pub owned_phone_themes: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetPhoneDataScRsp.cur_phone_theme)
+    pub cur_phone_theme: u32,
     // @@protoc_insertion_point(field:GetPhoneDataScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetPhoneDataScRsp.GMJLGKEPCFB)
-    pub GMJLGKEPCFB: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetPhoneDataScRsp.CLAGIJKMEIG)
-    pub CLAGIJKMEIG: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetPhoneDataScRsp.FMLBKAEOLMG)
-    pub FMLBKAEOLMG: u32,
-    // @@protoc_insertion_point(field:GetPhoneDataScRsp.AFODGLDMKNM)
-    pub AFODGLDMKNM: u32,
+    // @@protoc_insertion_point(field:GetPhoneDataScRsp.owned_chat_bubbles)
+    pub owned_chat_bubbles: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GetPhoneDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,29 +59,29 @@ impl GetPhoneDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "cur_chat_bubble",
+            |m: &GetPhoneDataScRsp| { &m.cur_chat_bubble },
+            |m: &mut GetPhoneDataScRsp| { &mut m.cur_chat_bubble },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "owned_phone_themes",
+            |m: &GetPhoneDataScRsp| { &m.owned_phone_themes },
+            |m: &mut GetPhoneDataScRsp| { &mut m.owned_phone_themes },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "cur_phone_theme",
+            |m: &GetPhoneDataScRsp| { &m.cur_phone_theme },
+            |m: &mut GetPhoneDataScRsp| { &mut m.cur_phone_theme },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetPhoneDataScRsp| { &m.retcode },
             |m: &mut GetPhoneDataScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GMJLGKEPCFB",
-            |m: &GetPhoneDataScRsp| { &m.GMJLGKEPCFB },
-            |m: &mut GetPhoneDataScRsp| { &mut m.GMJLGKEPCFB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CLAGIJKMEIG",
-            |m: &GetPhoneDataScRsp| { &m.CLAGIJKMEIG },
-            |m: &mut GetPhoneDataScRsp| { &mut m.CLAGIJKMEIG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FMLBKAEOLMG",
-            |m: &GetPhoneDataScRsp| { &m.FMLBKAEOLMG },
-            |m: &mut GetPhoneDataScRsp| { &mut m.FMLBKAEOLMG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AFODGLDMKNM",
-            |m: &GetPhoneDataScRsp| { &m.AFODGLDMKNM },
-            |m: &mut GetPhoneDataScRsp| { &mut m.AFODGLDMKNM },
+            "owned_chat_bubbles",
+            |m: &GetPhoneDataScRsp| { &m.owned_chat_bubbles },
+            |m: &mut GetPhoneDataScRsp| { &mut m.owned_chat_bubbles },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetPhoneDataScRsp>(
             "GetPhoneDataScRsp",
@@ -101,26 +101,26 @@ impl ::protobuf::Message for GetPhoneDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                120 => {
+                    self.cur_chat_bubble = is.read_uint32()?;
+                },
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.owned_phone_themes)?;
+                },
+                64 => {
+                    self.owned_phone_themes.push(is.read_uint32()?);
+                },
+                48 => {
+                    self.cur_phone_theme = is.read_uint32()?;
+                },
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
                 10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.GMJLGKEPCFB)?;
+                    is.read_repeated_packed_uint32_into(&mut self.owned_chat_bubbles)?;
                 },
                 8 => {
-                    self.GMJLGKEPCFB.push(is.read_uint32()?);
-                },
-                58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.CLAGIJKMEIG)?;
-                },
-                56 => {
-                    self.CLAGIJKMEIG.push(is.read_uint32()?);
-                },
-                40 => {
-                    self.FMLBKAEOLMG = is.read_uint32()?;
-                },
-                104 => {
-                    self.AFODGLDMKNM = is.read_uint32()?;
+                    self.owned_chat_bubbles.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -134,42 +134,42 @@ impl ::protobuf::Message for GetPhoneDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+        if self.cur_chat_bubble != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.cur_chat_bubble);
         }
-        for value in &self.GMJLGKEPCFB {
+        for value in &self.owned_phone_themes {
+            my_size += ::protobuf::rt::uint32_size(8, *value);
+        };
+        if self.cur_phone_theme != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.cur_phone_theme);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+        }
+        for value in &self.owned_chat_bubbles {
             my_size += ::protobuf::rt::uint32_size(1, *value);
         };
-        for value in &self.CLAGIJKMEIG {
-            my_size += ::protobuf::rt::uint32_size(7, *value);
-        };
-        if self.FMLBKAEOLMG != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.FMLBKAEOLMG);
-        }
-        if self.AFODGLDMKNM != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.AFODGLDMKNM);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+        if self.cur_chat_bubble != 0 {
+            os.write_uint32(15, self.cur_chat_bubble)?;
         }
-        for v in &self.GMJLGKEPCFB {
+        for v in &self.owned_phone_themes {
+            os.write_uint32(8, *v)?;
+        };
+        if self.cur_phone_theme != 0 {
+            os.write_uint32(6, self.cur_phone_theme)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(4, self.retcode)?;
+        }
+        for v in &self.owned_chat_bubbles {
             os.write_uint32(1, *v)?;
         };
-        for v in &self.CLAGIJKMEIG {
-            os.write_uint32(7, *v)?;
-        };
-        if self.FMLBKAEOLMG != 0 {
-            os.write_uint32(5, self.FMLBKAEOLMG)?;
-        }
-        if self.AFODGLDMKNM != 0 {
-            os.write_uint32(13, self.AFODGLDMKNM)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -187,21 +187,21 @@ impl ::protobuf::Message for GetPhoneDataScRsp {
     }
 
     fn clear(&mut self) {
+        self.cur_chat_bubble = 0;
+        self.owned_phone_themes.clear();
+        self.cur_phone_theme = 0;
         self.retcode = 0;
-        self.GMJLGKEPCFB.clear();
-        self.CLAGIJKMEIG.clear();
-        self.FMLBKAEOLMG = 0;
-        self.AFODGLDMKNM = 0;
+        self.owned_chat_bubbles.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetPhoneDataScRsp {
         static instance: GetPhoneDataScRsp = GetPhoneDataScRsp {
+            cur_chat_bubble: 0,
+            owned_phone_themes: ::std::vec::Vec::new(),
+            cur_phone_theme: 0,
             retcode: 0,
-            GMJLGKEPCFB: ::std::vec::Vec::new(),
-            CLAGIJKMEIG: ::std::vec::Vec::new(),
-            FMLBKAEOLMG: 0,
-            AFODGLDMKNM: 0,
+            owned_chat_bubbles: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -226,12 +226,12 @@ impl ::protobuf::reflect::ProtobufValue for GetPhoneDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17GetPhoneDataScRsp.proto\"\xb5\x01\n\x11GetPhoneDataScRsp\x12\x18\n\
-    \x07retcode\x18\t\x20\x01(\rR\x07retcode\x12\x20\n\x0bGMJLGKEPCFB\x18\
-    \x01\x20\x03(\rR\x0bGMJLGKEPCFB\x12\x20\n\x0bCLAGIJKMEIG\x18\x07\x20\x03\
-    (\rR\x0bCLAGIJKMEIG\x12\x20\n\x0bFMLBKAEOLMG\x18\x05\x20\x01(\rR\x0bFMLB\
-    KAEOLMG\x12\x20\n\x0bAFODGLDMKNM\x18\r\x20\x01(\rR\x0bAFODGLDMKNMb\x06pr\
-    oto3\
+    \n\x17GetPhoneDataScRsp.proto\"\xd9\x01\n\x11GetPhoneDataScRsp\x12&\n\
+    \x0fcur_chat_bubble\x18\x0f\x20\x01(\rR\rcurChatBubble\x12,\n\x12owned_p\
+    hone_themes\x18\x08\x20\x03(\rR\x10ownedPhoneThemes\x12&\n\x0fcur_phone_\
+    theme\x18\x06\x20\x01(\rR\rcurPhoneTheme\x12\x18\n\x07retcode\x18\x04\
+    \x20\x01(\rR\x07retcode\x12,\n\x12owned_chat_bubbles\x18\x01\x20\x03(\rR\
+    \x10ownedChatBubblesB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

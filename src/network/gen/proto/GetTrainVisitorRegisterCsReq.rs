@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetTrainVisitorRegisterCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetTrainVisitorRegisterCsReq.slot)
-    pub slot: ::protobuf::EnumOrUnknown<super::GKGIEBBBNLI::GKGIEBBBNLI>,
+    // @@protoc_insertion_point(field:GetTrainVisitorRegisterCsReq.MPNJPFDCBDG)
+    pub MPNJPFDCBDG: ::protobuf::EnumOrUnknown<super::BICOAKMAMIK::BICOAKMAMIK>,
     // special fields
     // @@protoc_insertion_point(special_field:GetTrainVisitorRegisterCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl GetTrainVisitorRegisterCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "slot",
-            |m: &GetTrainVisitorRegisterCsReq| { &m.slot },
-            |m: &mut GetTrainVisitorRegisterCsReq| { &mut m.slot },
+            "MPNJPFDCBDG",
+            |m: &GetTrainVisitorRegisterCsReq| { &m.MPNJPFDCBDG },
+            |m: &mut GetTrainVisitorRegisterCsReq| { &mut m.MPNJPFDCBDG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetTrainVisitorRegisterCsReq>(
             "GetTrainVisitorRegisterCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for GetTrainVisitorRegisterCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.slot = is.read_enum_or_unknown()?;
+                112 => {
+                    self.MPNJPFDCBDG = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for GetTrainVisitorRegisterCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.slot != ::protobuf::EnumOrUnknown::new(super::GKGIEBBBNLI::GKGIEBBBNLI::TRAIN_VISITOR_REGISTER_GET_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(9, self.slot.value());
+        if self.MPNJPFDCBDG != ::protobuf::EnumOrUnknown::new(super::BICOAKMAMIK::BICOAKMAMIK::TRAIN_VISITOR_REGISTER_GET_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(14, self.MPNJPFDCBDG.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for GetTrainVisitorRegisterCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.slot != ::protobuf::EnumOrUnknown::new(super::GKGIEBBBNLI::GKGIEBBBNLI::TRAIN_VISITOR_REGISTER_GET_TYPE_NONE) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.slot))?;
+        if self.MPNJPFDCBDG != ::protobuf::EnumOrUnknown::new(super::BICOAKMAMIK::BICOAKMAMIK::TRAIN_VISITOR_REGISTER_GET_TYPE_NONE) {
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.MPNJPFDCBDG))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for GetTrainVisitorRegisterCsReq {
     }
 
     fn clear(&mut self) {
-        self.slot = ::protobuf::EnumOrUnknown::new(super::GKGIEBBBNLI::GKGIEBBBNLI::TRAIN_VISITOR_REGISTER_GET_TYPE_NONE);
+        self.MPNJPFDCBDG = ::protobuf::EnumOrUnknown::new(super::BICOAKMAMIK::BICOAKMAMIK::TRAIN_VISITOR_REGISTER_GET_TYPE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetTrainVisitorRegisterCsReq {
         static instance: GetTrainVisitorRegisterCsReq = GetTrainVisitorRegisterCsReq {
-            slot: ::protobuf::EnumOrUnknown::from_i32(0),
+            MPNJPFDCBDG: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for GetTrainVisitorRegisterCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"GetTrainVisitorRegisterCsReq.proto\x1a\x11GKGIEBBBNLI.proto\"@\n\x1c\
-    GetTrainVisitorRegisterCsReq\x12\x20\n\x04slot\x18\t\x20\x01(\x0e2\x0c.G\
-    KGIEBBBNLIR\x04slotb\x06proto3\
+    \n\"GetTrainVisitorRegisterCsReq.proto\x1a\x11BICOAKMAMIK.proto\"N\n\x1c\
+    GetTrainVisitorRegisterCsReq\x12.\n\x0bMPNJPFDCBDG\x18\x0e\x20\x01(\x0e2\
+    \x0c.BICOAKMAMIKR\x0bMPNJPFDCBDGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::GKGIEBBBNLI::file_descriptor().clone());
+            deps.push(super::BICOAKMAMIK::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetTrainVisitorRegisterCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

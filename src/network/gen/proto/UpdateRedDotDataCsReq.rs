@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdateRedDotDataCsReq {
     // message fields
-    // @@protoc_insertion_point(field:UpdateRedDotDataCsReq.EMGFKILDLKC)
-    pub EMGFKILDLKC: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:UpdateRedDotDataCsReq.GCFIIGOLPMF)
-    pub GCFIIGOLPMF: u32,
-    // @@protoc_insertion_point(field:UpdateRedDotDataCsReq.MDIABNLNKJJ)
-    pub MDIABNLNKJJ: u32,
-    // @@protoc_insertion_point(field:UpdateRedDotDataCsReq.JONNHKHBKAA)
-    pub JONNHKHBKAA: ::protobuf::EnumOrUnknown<super::IBIECKLCAAL::IBIECKLCAAL>,
-    // @@protoc_insertion_point(field:UpdateRedDotDataCsReq.ACPLFDCNGKO)
-    pub ACPLFDCNGKO: u32,
+    // @@protoc_insertion_point(field:UpdateRedDotDataCsReq.FIIBEDLEJEJ)
+    pub FIIBEDLEJEJ: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:UpdateRedDotDataCsReq.DDMDPBEGKHC)
+    pub DDMDPBEGKHC: u32,
+    // @@protoc_insertion_point(field:UpdateRedDotDataCsReq.ILIFHHJFMIH)
+    pub ILIFHHJFMIH: u32,
+    // @@protoc_insertion_point(field:UpdateRedDotDataCsReq.LFNNHDHFHHF)
+    pub LFNNHDHFHHF: u32,
+    // @@protoc_insertion_point(field:UpdateRedDotDataCsReq.IJMFKIPNONM)
+    pub IJMFKIPNONM: ::protobuf::EnumOrUnknown<super::MIHEAGBCOMO::MIHEAGBCOMO>,
     // special fields
     // @@protoc_insertion_point(special_field:UpdateRedDotDataCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,29 +59,29 @@ impl UpdateRedDotDataCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EMGFKILDLKC",
-            |m: &UpdateRedDotDataCsReq| { &m.EMGFKILDLKC },
-            |m: &mut UpdateRedDotDataCsReq| { &mut m.EMGFKILDLKC },
+            "FIIBEDLEJEJ",
+            |m: &UpdateRedDotDataCsReq| { &m.FIIBEDLEJEJ },
+            |m: &mut UpdateRedDotDataCsReq| { &mut m.FIIBEDLEJEJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GCFIIGOLPMF",
-            |m: &UpdateRedDotDataCsReq| { &m.GCFIIGOLPMF },
-            |m: &mut UpdateRedDotDataCsReq| { &mut m.GCFIIGOLPMF },
+            "DDMDPBEGKHC",
+            |m: &UpdateRedDotDataCsReq| { &m.DDMDPBEGKHC },
+            |m: &mut UpdateRedDotDataCsReq| { &mut m.DDMDPBEGKHC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MDIABNLNKJJ",
-            |m: &UpdateRedDotDataCsReq| { &m.MDIABNLNKJJ },
-            |m: &mut UpdateRedDotDataCsReq| { &mut m.MDIABNLNKJJ },
+            "ILIFHHJFMIH",
+            |m: &UpdateRedDotDataCsReq| { &m.ILIFHHJFMIH },
+            |m: &mut UpdateRedDotDataCsReq| { &mut m.ILIFHHJFMIH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JONNHKHBKAA",
-            |m: &UpdateRedDotDataCsReq| { &m.JONNHKHBKAA },
-            |m: &mut UpdateRedDotDataCsReq| { &mut m.JONNHKHBKAA },
+            "LFNNHDHFHHF",
+            |m: &UpdateRedDotDataCsReq| { &m.LFNNHDHFHHF },
+            |m: &mut UpdateRedDotDataCsReq| { &mut m.LFNNHDHFHHF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ACPLFDCNGKO",
-            |m: &UpdateRedDotDataCsReq| { &m.ACPLFDCNGKO },
-            |m: &mut UpdateRedDotDataCsReq| { &mut m.ACPLFDCNGKO },
+            "IJMFKIPNONM",
+            |m: &UpdateRedDotDataCsReq| { &m.IJMFKIPNONM },
+            |m: &mut UpdateRedDotDataCsReq| { &mut m.IJMFKIPNONM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdateRedDotDataCsReq>(
             "UpdateRedDotDataCsReq",
@@ -101,23 +101,23 @@ impl ::protobuf::Message for UpdateRedDotDataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.EMGFKILDLKC)?;
-                },
-                88 => {
-                    self.EMGFKILDLKC.push(is.read_uint32()?);
-                },
-                56 => {
-                    self.GCFIIGOLPMF = is.read_uint32()?;
-                },
-                8 => {
-                    self.MDIABNLNKJJ = is.read_uint32()?;
-                },
-                104 => {
-                    self.JONNHKHBKAA = is.read_enum_or_unknown()?;
+                74 => {
+                    is.read_repeated_packed_uint32_into(&mut self.FIIBEDLEJEJ)?;
                 },
                 72 => {
-                    self.ACPLFDCNGKO = is.read_uint32()?;
+                    self.FIIBEDLEJEJ.push(is.read_uint32()?);
+                },
+                88 => {
+                    self.DDMDPBEGKHC = is.read_uint32()?;
+                },
+                8 => {
+                    self.ILIFHHJFMIH = is.read_uint32()?;
+                },
+                16 => {
+                    self.LFNNHDHFHHF = is.read_uint32()?;
+                },
+                48 => {
+                    self.IJMFKIPNONM = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -131,20 +131,20 @@ impl ::protobuf::Message for UpdateRedDotDataCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.EMGFKILDLKC {
-            my_size += ::protobuf::rt::uint32_size(11, *value);
+        for value in &self.FIIBEDLEJEJ {
+            my_size += ::protobuf::rt::uint32_size(9, *value);
         };
-        if self.GCFIIGOLPMF != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.GCFIIGOLPMF);
+        if self.DDMDPBEGKHC != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.DDMDPBEGKHC);
         }
-        if self.MDIABNLNKJJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.MDIABNLNKJJ);
+        if self.ILIFHHJFMIH != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.ILIFHHJFMIH);
         }
-        if self.JONNHKHBKAA != ::protobuf::EnumOrUnknown::new(super::IBIECKLCAAL::IBIECKLCAAL::UPDATE_REDDOT_NONE) {
-            my_size += ::protobuf::rt::int32_size(13, self.JONNHKHBKAA.value());
+        if self.LFNNHDHFHHF != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.LFNNHDHFHHF);
         }
-        if self.ACPLFDCNGKO != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.ACPLFDCNGKO);
+        if self.IJMFKIPNONM != ::protobuf::EnumOrUnknown::new(super::MIHEAGBCOMO::MIHEAGBCOMO::UPDATE_REDDOT_NONE) {
+            my_size += ::protobuf::rt::int32_size(6, self.IJMFKIPNONM.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -152,20 +152,20 @@ impl ::protobuf::Message for UpdateRedDotDataCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.EMGFKILDLKC {
-            os.write_uint32(11, *v)?;
+        for v in &self.FIIBEDLEJEJ {
+            os.write_uint32(9, *v)?;
         };
-        if self.GCFIIGOLPMF != 0 {
-            os.write_uint32(7, self.GCFIIGOLPMF)?;
+        if self.DDMDPBEGKHC != 0 {
+            os.write_uint32(11, self.DDMDPBEGKHC)?;
         }
-        if self.MDIABNLNKJJ != 0 {
-            os.write_uint32(1, self.MDIABNLNKJJ)?;
+        if self.ILIFHHJFMIH != 0 {
+            os.write_uint32(1, self.ILIFHHJFMIH)?;
         }
-        if self.JONNHKHBKAA != ::protobuf::EnumOrUnknown::new(super::IBIECKLCAAL::IBIECKLCAAL::UPDATE_REDDOT_NONE) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.JONNHKHBKAA))?;
+        if self.LFNNHDHFHHF != 0 {
+            os.write_uint32(2, self.LFNNHDHFHHF)?;
         }
-        if self.ACPLFDCNGKO != 0 {
-            os.write_uint32(9, self.ACPLFDCNGKO)?;
+        if self.IJMFKIPNONM != ::protobuf::EnumOrUnknown::new(super::MIHEAGBCOMO::MIHEAGBCOMO::UPDATE_REDDOT_NONE) {
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.IJMFKIPNONM))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,21 +184,21 @@ impl ::protobuf::Message for UpdateRedDotDataCsReq {
     }
 
     fn clear(&mut self) {
-        self.EMGFKILDLKC.clear();
-        self.GCFIIGOLPMF = 0;
-        self.MDIABNLNKJJ = 0;
-        self.JONNHKHBKAA = ::protobuf::EnumOrUnknown::new(super::IBIECKLCAAL::IBIECKLCAAL::UPDATE_REDDOT_NONE);
-        self.ACPLFDCNGKO = 0;
+        self.FIIBEDLEJEJ.clear();
+        self.DDMDPBEGKHC = 0;
+        self.ILIFHHJFMIH = 0;
+        self.LFNNHDHFHHF = 0;
+        self.IJMFKIPNONM = ::protobuf::EnumOrUnknown::new(super::MIHEAGBCOMO::MIHEAGBCOMO::UPDATE_REDDOT_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateRedDotDataCsReq {
         static instance: UpdateRedDotDataCsReq = UpdateRedDotDataCsReq {
-            EMGFKILDLKC: ::std::vec::Vec::new(),
-            GCFIIGOLPMF: 0,
-            MDIABNLNKJJ: 0,
-            JONNHKHBKAA: ::protobuf::EnumOrUnknown::from_i32(0),
-            ACPLFDCNGKO: 0,
+            FIIBEDLEJEJ: ::std::vec::Vec::new(),
+            DDMDPBEGKHC: 0,
+            ILIFHHJFMIH: 0,
+            LFNNHDHFHHF: 0,
+            IJMFKIPNONM: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -223,12 +223,12 @@ impl ::protobuf::reflect::ProtobufValue for UpdateRedDotDataCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bUpdateRedDotDataCsReq.proto\x1a\x11IBIECKLCAAL.proto\"\xcf\x01\n\
-    \x15UpdateRedDotDataCsReq\x12\x20\n\x0bEMGFKILDLKC\x18\x0b\x20\x03(\rR\
-    \x0bEMGFKILDLKC\x12\x20\n\x0bGCFIIGOLPMF\x18\x07\x20\x01(\rR\x0bGCFIIGOL\
-    PMF\x12\x20\n\x0bMDIABNLNKJJ\x18\x01\x20\x01(\rR\x0bMDIABNLNKJJ\x12.\n\
-    \x0bJONNHKHBKAA\x18\r\x20\x01(\x0e2\x0c.IBIECKLCAALR\x0bJONNHKHBKAA\x12\
-    \x20\n\x0bACPLFDCNGKO\x18\t\x20\x01(\rR\x0bACPLFDCNGKOb\x06proto3\
+    \n\x1bUpdateRedDotDataCsReq.proto\x1a\x11MIHEAGBCOMO.proto\"\xcf\x01\n\
+    \x15UpdateRedDotDataCsReq\x12\x20\n\x0bFIIBEDLEJEJ\x18\t\x20\x03(\rR\x0b\
+    FIIBEDLEJEJ\x12\x20\n\x0bDDMDPBEGKHC\x18\x0b\x20\x01(\rR\x0bDDMDPBEGKHC\
+    \x12\x20\n\x0bILIFHHJFMIH\x18\x01\x20\x01(\rR\x0bILIFHHJFMIH\x12\x20\n\
+    \x0bLFNNHDHFHHF\x18\x02\x20\x01(\rR\x0bLFNNHDHFHHF\x12.\n\x0bIJMFKIPNONM\
+    \x18\x06\x20\x01(\x0e2\x0c.MIHEAGBCOMOR\x0bIJMFKIPNONMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -246,7 +246,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::IBIECKLCAAL::file_descriptor().clone());
+            deps.push(super::MIHEAGBCOMO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(UpdateRedDotDataCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

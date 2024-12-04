@@ -30,7 +30,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub struct MuseumRandomEventStartScNotify {
     // message fields
     // @@protoc_insertion_point(field:MuseumRandomEventStartScNotify.ROGUE_DEBUG_MESSAGE_TYPE_INFO)
-    pub ROGUE_DEBUG_MESSAGE_TYPE_INFO: ::protobuf::MessageField<super::OPEMMBHKCFD::OPEMMBHKCFD>,
+    pub ROGUE_DEBUG_MESSAGE_TYPE_INFO: ::protobuf::MessageField<super::NNIDMJHAPKK::NNIDMJHAPKK>,
     // special fields
     // @@protoc_insertion_point(special_field:MuseumRandomEventStartScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,7 +50,7 @@ impl MuseumRandomEventStartScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OPEMMBHKCFD::OPEMMBHKCFD>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NNIDMJHAPKK::NNIDMJHAPKK>(
             "ROGUE_DEBUG_MESSAGE_TYPE_INFO",
             |m: &MuseumRandomEventStartScNotify| { &m.ROGUE_DEBUG_MESSAGE_TYPE_INFO },
             |m: &mut MuseumRandomEventStartScNotify| { &mut m.ROGUE_DEBUG_MESSAGE_TYPE_INFO },
@@ -73,7 +73,7 @@ impl ::protobuf::Message for MuseumRandomEventStartScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.ROGUE_DEBUG_MESSAGE_TYPE_INFO)?;
                 },
                 tag => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for MuseumRandomEventStartScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.ROGUE_DEBUG_MESSAGE_TYPE_INFO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,9 +149,9 @@ impl ::protobuf::reflect::ProtobufValue for MuseumRandomEventStartScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$MuseumRandomEventStartScNotify.proto\x1a\x11OPEMMBHKCFD.proto\"p\n\
+    \n$MuseumRandomEventStartScNotify.proto\x1a\x11NNIDMJHAPKK.proto\"p\n\
     \x1eMuseumRandomEventStartScNotify\x12N\n\x1dROGUE_DEBUG_MESSAGE_TYPE_IN\
-    FO\x18\r\x20\x01(\x0b2\x0c.OPEMMBHKCFDR\x19ROGUEDEBUGMESSAGETYPEINFOb\
+    FO\x18\x08\x20\x01(\x0b2\x0c.NNIDMJHAPKKR\x19ROGUEDEBUGMESSAGETYPEINFOb\
     \x06proto3\
 ";
 
@@ -170,7 +170,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::OPEMMBHKCFD::file_descriptor().clone());
+            deps.push(super::NNIDMJHAPKK::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MuseumRandomEventStartScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

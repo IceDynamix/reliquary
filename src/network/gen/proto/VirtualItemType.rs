@@ -66,6 +66,12 @@ pub enum VirtualItemType {
     VIRTUAL_ITEM_BP_REAL_EXP = 52,
     // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_MUSEUM_FUNDS)
     VIRTUAL_ITEM_MUSEUM_FUNDS = 53,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_TRAINPARTY_BUILDING_FUNDS)
+    VIRTUAL_TRAINPARTY_BUILDING_FUNDS = 54,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_TRAINPARTY_AREA_UNLOCK_COIN)
+    VIRTUAL_TRAINPARTY_AREA_UNLOCK_COIN = 55,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_TRAINPARTY_MOBILITY)
+    VIRTUAL_TRAINPARTY_MOBILITY = 56,
     // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_WARRIOR_EXP)
     VIRTUAL_ITEM_WARRIOR_EXP = 190,
     // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_ROGUE_EXP)
@@ -160,6 +166,9 @@ impl ::protobuf::Enum for VirtualItemType {
             51 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_BP_EXP),
             52 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_BP_REAL_EXP),
             53 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_MUSEUM_FUNDS),
+            54 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_TRAINPARTY_BUILDING_FUNDS),
+            55 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_TRAINPARTY_AREA_UNLOCK_COIN),
+            56 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_TRAINPARTY_MOBILITY),
             190 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_WARRIOR_EXP),
             191 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_ROGUE_EXP),
             192 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_MAGE_EXP),
@@ -217,6 +226,9 @@ impl ::protobuf::Enum for VirtualItemType {
             "VIRTUAL_ITEM_BP_EXP" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_BP_EXP),
             "VIRTUAL_ITEM_BP_REAL_EXP" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_BP_REAL_EXP),
             "VIRTUAL_ITEM_MUSEUM_FUNDS" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_MUSEUM_FUNDS),
+            "VIRTUAL_TRAINPARTY_BUILDING_FUNDS" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_TRAINPARTY_BUILDING_FUNDS),
+            "VIRTUAL_TRAINPARTY_AREA_UNLOCK_COIN" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_TRAINPARTY_AREA_UNLOCK_COIN),
+            "VIRTUAL_TRAINPARTY_MOBILITY" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_TRAINPARTY_MOBILITY),
             "VIRTUAL_ITEM_WARRIOR_EXP" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_WARRIOR_EXP),
             "VIRTUAL_ITEM_ROGUE_EXP" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_ROGUE_EXP),
             "VIRTUAL_ITEM_MAGE_EXP" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_MAGE_EXP),
@@ -273,6 +285,9 @@ impl ::protobuf::Enum for VirtualItemType {
         VirtualItemType::VIRTUAL_ITEM_BP_EXP,
         VirtualItemType::VIRTUAL_ITEM_BP_REAL_EXP,
         VirtualItemType::VIRTUAL_ITEM_MUSEUM_FUNDS,
+        VirtualItemType::VIRTUAL_TRAINPARTY_BUILDING_FUNDS,
+        VirtualItemType::VIRTUAL_TRAINPARTY_AREA_UNLOCK_COIN,
+        VirtualItemType::VIRTUAL_TRAINPARTY_MOBILITY,
         VirtualItemType::VIRTUAL_ITEM_WARRIOR_EXP,
         VirtualItemType::VIRTUAL_ITEM_ROGUE_EXP,
         VirtualItemType::VIRTUAL_ITEM_MAGE_EXP,
@@ -335,38 +350,41 @@ impl ::protobuf::EnumFull for VirtualItemType {
             VirtualItemType::VIRTUAL_ITEM_BP_EXP => 16,
             VirtualItemType::VIRTUAL_ITEM_BP_REAL_EXP => 17,
             VirtualItemType::VIRTUAL_ITEM_MUSEUM_FUNDS => 18,
-            VirtualItemType::VIRTUAL_ITEM_WARRIOR_EXP => 19,
-            VirtualItemType::VIRTUAL_ITEM_ROGUE_EXP => 20,
-            VirtualItemType::VIRTUAL_ITEM_MAGE_EXP => 21,
-            VirtualItemType::VIRTUAL_ITEM_SHAMAN_EXP => 22,
-            VirtualItemType::VIRTUAL_ITEM_WARLOCK_EXP => 23,
-            VirtualItemType::VIRTUAL_ITEM_KNIGHT_EXP => 24,
-            VirtualItemType::VIRTUAL_ITEM_PRIEST_EXP => 25,
-            VirtualItemType::VIRTUAL_ITEM_PUNK_LORD_POINT => 26,
-            VirtualItemType::VIRTUAL_ITEM_GAMEPLAY_COUNTER_MONSTER_SNEAK_VISION => 27,
-            VirtualItemType::VIRTUAL_ITEM_GAMEPLAY_COUNTER_WOLF_BRO_BULLET => 28,
-            VirtualItemType::VIRTUAL_ITEM_ALLEY_FUNDS => 29,
-            VirtualItemType::VIRTUAL_ITEM_ROGUE_PUMAN_COUPON => 30,
-            VirtualItemType::VIRTUAL_ITEM_MONTH_CARD => 31,
-            VirtualItemType::VIRTUAL_ITEM_BP_NORMAL => 32,
-            VirtualItemType::VIRTUAL_ITEM_BP_DELUXE => 33,
-            VirtualItemType::VIRTUAL_ITEM_BP_UPGRADE => 34,
-            VirtualItemType::VIRTUAL_ITEM_HELIOBUS_FANS => 35,
-            VirtualItemType::VIRTUAL_ITEM_SPACE_ZOO_HYBRID_ITEM => 36,
-            VirtualItemType::VIRTUAL_ITEM_SPACE_ZOO_EXP_POINT => 37,
-            VirtualItemType::VIRTUAL_ITEM_ROGUE_NOUS_TALENT_COIN => 38,
-            VirtualItemType::VIRTUAL_ITEM_EVOLVE_BUILD_COIN => 39,
-            VirtualItemType::VIRTUAL_ITEM_DRINK_MAKER_TIP => 40,
-            VirtualItemType::VIRTUAL_ITEM_MONOPOLY_DICE => 41,
-            VirtualItemType::VIRTUAL_ITEM_MONOPOLY_COIN => 42,
-            VirtualItemType::VIRTUAL_ITEM_MONOPOLY_CHEATDICE => 43,
-            VirtualItemType::VIRTUAL_ITEM_MONOPOLY_REROLL => 44,
-            VirtualItemType::VIRTUAL_ITEM_ROGUE_TOURN_PERMANENT_TALENT_COIN => 45,
-            VirtualItemType::VIRTUAL_ITEM_ROGUE_TOURN_EXP => 46,
-            VirtualItemType::VIRTUAL_ITEM_MATCHTHREE_COIN => 47,
-            VirtualItemType::VIRTUAL_ITEM_SWORD_TRAINING_SKILL_POINT => 48,
-            VirtualItemType::VIRTUAL_ITEM_FIGHT_FEST_COIN => 49,
-            VirtualItemType::VIRTUAL_ITEM_ROGUE_MAGIC_TALENT_COIN => 50,
+            VirtualItemType::VIRTUAL_TRAINPARTY_BUILDING_FUNDS => 19,
+            VirtualItemType::VIRTUAL_TRAINPARTY_AREA_UNLOCK_COIN => 20,
+            VirtualItemType::VIRTUAL_TRAINPARTY_MOBILITY => 21,
+            VirtualItemType::VIRTUAL_ITEM_WARRIOR_EXP => 22,
+            VirtualItemType::VIRTUAL_ITEM_ROGUE_EXP => 23,
+            VirtualItemType::VIRTUAL_ITEM_MAGE_EXP => 24,
+            VirtualItemType::VIRTUAL_ITEM_SHAMAN_EXP => 25,
+            VirtualItemType::VIRTUAL_ITEM_WARLOCK_EXP => 26,
+            VirtualItemType::VIRTUAL_ITEM_KNIGHT_EXP => 27,
+            VirtualItemType::VIRTUAL_ITEM_PRIEST_EXP => 28,
+            VirtualItemType::VIRTUAL_ITEM_PUNK_LORD_POINT => 29,
+            VirtualItemType::VIRTUAL_ITEM_GAMEPLAY_COUNTER_MONSTER_SNEAK_VISION => 30,
+            VirtualItemType::VIRTUAL_ITEM_GAMEPLAY_COUNTER_WOLF_BRO_BULLET => 31,
+            VirtualItemType::VIRTUAL_ITEM_ALLEY_FUNDS => 32,
+            VirtualItemType::VIRTUAL_ITEM_ROGUE_PUMAN_COUPON => 33,
+            VirtualItemType::VIRTUAL_ITEM_MONTH_CARD => 34,
+            VirtualItemType::VIRTUAL_ITEM_BP_NORMAL => 35,
+            VirtualItemType::VIRTUAL_ITEM_BP_DELUXE => 36,
+            VirtualItemType::VIRTUAL_ITEM_BP_UPGRADE => 37,
+            VirtualItemType::VIRTUAL_ITEM_HELIOBUS_FANS => 38,
+            VirtualItemType::VIRTUAL_ITEM_SPACE_ZOO_HYBRID_ITEM => 39,
+            VirtualItemType::VIRTUAL_ITEM_SPACE_ZOO_EXP_POINT => 40,
+            VirtualItemType::VIRTUAL_ITEM_ROGUE_NOUS_TALENT_COIN => 41,
+            VirtualItemType::VIRTUAL_ITEM_EVOLVE_BUILD_COIN => 42,
+            VirtualItemType::VIRTUAL_ITEM_DRINK_MAKER_TIP => 43,
+            VirtualItemType::VIRTUAL_ITEM_MONOPOLY_DICE => 44,
+            VirtualItemType::VIRTUAL_ITEM_MONOPOLY_COIN => 45,
+            VirtualItemType::VIRTUAL_ITEM_MONOPOLY_CHEATDICE => 46,
+            VirtualItemType::VIRTUAL_ITEM_MONOPOLY_REROLL => 47,
+            VirtualItemType::VIRTUAL_ITEM_ROGUE_TOURN_PERMANENT_TALENT_COIN => 48,
+            VirtualItemType::VIRTUAL_ITEM_ROGUE_TOURN_EXP => 49,
+            VirtualItemType::VIRTUAL_ITEM_MATCHTHREE_COIN => 50,
+            VirtualItemType::VIRTUAL_ITEM_SWORD_TRAINING_SKILL_POINT => 51,
+            VirtualItemType::VIRTUAL_ITEM_FIGHT_FEST_COIN => 52,
+            VirtualItemType::VIRTUAL_ITEM_ROGUE_MAGIC_TALENT_COIN => 53,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -385,8 +403,8 @@ impl VirtualItemType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15VirtualItemType.proto*\xe0\r\n\x0fVirtualItemType\x12\x15\n\x11VIR\
-    TUAL_ITEM_NONE\x10\0\x12\x16\n\x12VIRTUAL_ITEM_HCOIN\x10\x01\x12\x16\n\
+    \n\x15VirtualItemType.proto*\xd1\x0e\n\x0fVirtualItemType\x12\x15\n\x11V\
+    IRTUAL_ITEM_NONE\x10\0\x12\x16\n\x12VIRTUAL_ITEM_HCOIN\x10\x01\x12\x16\n\
     \x12VIRTUAL_ITEM_SCOIN\x10\x02\x12\x16\n\x12VIRTUAL_ITEM_MCOIN\x10\x03\
     \x12\x18\n\x14VIRTUAL_ITEM_STAMINA\x10\x0b\x12\x20\n\x1cVIRTUAL_ITEM_RES\
     ERVE_STAMINA\x10\x0c\x12\x1b\n\x17VIRTUAL_ITEM_AVATAR_EXP\x10\x15\x12\
@@ -397,32 +415,34 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     L_ITEM_ROGUE_TALENT_COIN\x10\x20\x12!\n\x1dVIRTUAL_ITEM_ROGUE_REWARD_KEY\
     \x10!\x12\x20\n\x1cVIRTUAL_ITEM_ACHIEVEMENT_EXP\x10)\x12\x17\n\x13VIRTUA\
     L_ITEM_BP_EXP\x103\x12\x1c\n\x18VIRTUAL_ITEM_BP_REAL_EXP\x104\x12\x1d\n\
-    \x19VIRTUAL_ITEM_MUSEUM_FUNDS\x105\x12\x1d\n\x18VIRTUAL_ITEM_WARRIOR_EXP\
-    \x10\xbe\x01\x12\x1b\n\x16VIRTUAL_ITEM_ROGUE_EXP\x10\xbf\x01\x12\x1a\n\
-    \x15VIRTUAL_ITEM_MAGE_EXP\x10\xc0\x01\x12\x1c\n\x17VIRTUAL_ITEM_SHAMAN_E\
-    XP\x10\xc1\x01\x12\x1d\n\x18VIRTUAL_ITEM_WARLOCK_EXP\x10\xc2\x01\x12\x1c\
-    \n\x17VIRTUAL_ITEM_KNIGHT_EXP\x10\xc3\x01\x12\x1c\n\x17VIRTUAL_ITEM_PRIE\
-    ST_EXP\x10\xc4\x01\x12\"\n\x1cVIRTUAL_ITEM_PUNK_LORD_POINT\x10\xa0\x8d\
-    \x06\x128\n2VIRTUAL_ITEM_GAMEPLAY_COUNTER_MONSTER_SNEAK_VISION\x10\xc1\
-    \x8b\x11\x123\n-VIRTUAL_ITEM_GAMEPLAY_COUNTER_WOLF_BRO_BULLET\x10\xc2\
-    \x8b\x11\x12\x1e\n\x18VIRTUAL_ITEM_ALLEY_FUNDS\x10\xa9\x93\x11\x12%\n\
-    \x1fVIRTUAL_ITEM_ROGUE_PUMAN_COUPON\x10\xb4\x93\x11\x12\x1d\n\x17VIRTUAL\
-    _ITEM_MONTH_CARD\x10\xc5\xa8\x12\x12\x1c\n\x16VIRTUAL_ITEM_BP_NORMAL\x10\
-    \xc6\xa8\x12\x12\x1c\n\x16VIRTUAL_ITEM_BP_DELUXE\x10\xc7\xa8\x12\x12\x1d\
-    \n\x17VIRTUAL_ITEM_BP_UPGRADE\x10\xc8\xa8\x12\x12\x20\n\x1aVIRTUAL_ITEM_\
-    HELIOBUS_FANS\x10\xaa\x93\x11\x12(\n\"VIRTUAL_ITEM_SPACE_ZOO_HYBRID_ITEM\
-    \x10\xab\x93\x11\x12&\n\x20VIRTUAL_ITEM_SPACE_ZOO_EXP_POINT\x10\xac\x93\
-    \x11\x12)\n#VIRTUAL_ITEM_ROGUE_NOUS_TALENT_COIN\x10\xb5\x93\x11\x12$\n\
-    \x1eVIRTUAL_ITEM_EVOLVE_BUILD_COIN\x10\xbb\x93\x11\x12\"\n\x1cVIRTUAL_IT\
-    EM_DRINK_MAKER_TIP\x10\xad\x93\x11\x12\x20\n\x1aVIRTUAL_ITEM_MONOPOLY_DI\
-    CE\x10\xb6\x93\x11\x12\x20\n\x1aVIRTUAL_ITEM_MONOPOLY_COIN\x10\xb7\x93\
-    \x11\x12%\n\x1fVIRTUAL_ITEM_MONOPOLY_CHEATDICE\x10\xb8\x93\x11\x12\"\n\
-    \x1cVIRTUAL_ITEM_MONOPOLY_REROLL\x10\xb9\x93\x11\x124\n.VIRTUAL_ITEM_ROG\
-    UE_TOURN_PERMANENT_TALENT_COIN\x10\xba\x93\x11\x12\"\n\x1cVIRTUAL_ITEM_R\
-    OGUE_TOURN_EXP\x10\xbe\x93\x11\x12\"\n\x1cVIRTUAL_ITEM_MATCHTHREE_COIN\
-    \x10\xc0\x93\x11\x12-\n'VIRTUAL_ITEM_SWORD_TRAINING_SKILL_POINT\x10\xbf\
-    \x93\x11\x12\"\n\x1cVIRTUAL_ITEM_FIGHT_FEST_COIN\x10\xc1\x93\x11\x12*\n$\
-    VIRTUAL_ITEM_ROGUE_MAGIC_TALENT_COIN\x10\xc2\x93\x11b\x06proto3\
+    \x19VIRTUAL_ITEM_MUSEUM_FUNDS\x105\x12%\n!VIRTUAL_TRAINPARTY_BUILDING_FU\
+    NDS\x106\x12'\n#VIRTUAL_TRAINPARTY_AREA_UNLOCK_COIN\x107\x12\x1f\n\x1bVI\
+    RTUAL_TRAINPARTY_MOBILITY\x108\x12\x1d\n\x18VIRTUAL_ITEM_WARRIOR_EXP\x10\
+    \xbe\x01\x12\x1b\n\x16VIRTUAL_ITEM_ROGUE_EXP\x10\xbf\x01\x12\x1a\n\x15VI\
+    RTUAL_ITEM_MAGE_EXP\x10\xc0\x01\x12\x1c\n\x17VIRTUAL_ITEM_SHAMAN_EXP\x10\
+    \xc1\x01\x12\x1d\n\x18VIRTUAL_ITEM_WARLOCK_EXP\x10\xc2\x01\x12\x1c\n\x17\
+    VIRTUAL_ITEM_KNIGHT_EXP\x10\xc3\x01\x12\x1c\n\x17VIRTUAL_ITEM_PRIEST_EXP\
+    \x10\xc4\x01\x12\"\n\x1cVIRTUAL_ITEM_PUNK_LORD_POINT\x10\xa0\x8d\x06\x12\
+    8\n2VIRTUAL_ITEM_GAMEPLAY_COUNTER_MONSTER_SNEAK_VISION\x10\xc1\x8b\x11\
+    \x123\n-VIRTUAL_ITEM_GAMEPLAY_COUNTER_WOLF_BRO_BULLET\x10\xc2\x8b\x11\
+    \x12\x1e\n\x18VIRTUAL_ITEM_ALLEY_FUNDS\x10\xa9\x93\x11\x12%\n\x1fVIRTUAL\
+    _ITEM_ROGUE_PUMAN_COUPON\x10\xb4\x93\x11\x12\x1d\n\x17VIRTUAL_ITEM_MONTH\
+    _CARD\x10\xc5\xa8\x12\x12\x1c\n\x16VIRTUAL_ITEM_BP_NORMAL\x10\xc6\xa8\
+    \x12\x12\x1c\n\x16VIRTUAL_ITEM_BP_DELUXE\x10\xc7\xa8\x12\x12\x1d\n\x17VI\
+    RTUAL_ITEM_BP_UPGRADE\x10\xc8\xa8\x12\x12\x20\n\x1aVIRTUAL_ITEM_HELIOBUS\
+    _FANS\x10\xaa\x93\x11\x12(\n\"VIRTUAL_ITEM_SPACE_ZOO_HYBRID_ITEM\x10\xab\
+    \x93\x11\x12&\n\x20VIRTUAL_ITEM_SPACE_ZOO_EXP_POINT\x10\xac\x93\x11\x12)\
+    \n#VIRTUAL_ITEM_ROGUE_NOUS_TALENT_COIN\x10\xb5\x93\x11\x12$\n\x1eVIRTUAL\
+    _ITEM_EVOLVE_BUILD_COIN\x10\xbb\x93\x11\x12\"\n\x1cVIRTUAL_ITEM_DRINK_MA\
+    KER_TIP\x10\xad\x93\x11\x12\x20\n\x1aVIRTUAL_ITEM_MONOPOLY_DICE\x10\xb6\
+    \x93\x11\x12\x20\n\x1aVIRTUAL_ITEM_MONOPOLY_COIN\x10\xb7\x93\x11\x12%\n\
+    \x1fVIRTUAL_ITEM_MONOPOLY_CHEATDICE\x10\xb8\x93\x11\x12\"\n\x1cVIRTUAL_I\
+    TEM_MONOPOLY_REROLL\x10\xb9\x93\x11\x124\n.VIRTUAL_ITEM_ROGUE_TOURN_PERM\
+    ANENT_TALENT_COIN\x10\xba\x93\x11\x12\"\n\x1cVIRTUAL_ITEM_ROGUE_TOURN_EX\
+    P\x10\xbe\x93\x11\x12\"\n\x1cVIRTUAL_ITEM_MATCHTHREE_COIN\x10\xc0\x93\
+    \x11\x12-\n'VIRTUAL_ITEM_SWORD_TRAINING_SKILL_POINT\x10\xbf\x93\x11\x12\
+    \"\n\x1cVIRTUAL_ITEM_FIGHT_FEST_COIN\x10\xc1\x93\x11\x12*\n$VIRTUAL_ITEM\
+    _ROGUE_MAGIC_TALENT_COIN\x10\xc2\x93\x11b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

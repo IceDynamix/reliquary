@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SwordTrainingGameSyncChangeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SwordTrainingGameSyncChangeScNotify.HNLFBMPHEIL)
-    pub HNLFBMPHEIL: ::std::vec::Vec<super::PNPLHHNBADF::PNPLHHNBADF>,
+    // @@protoc_insertion_point(field:SwordTrainingGameSyncChangeScNotify.FPEBFCPDIAK)
+    pub FPEBFCPDIAK: ::std::vec::Vec<super::OOOEFJNNGFH::OOOEFJNNGFH>,
     // special fields
     // @@protoc_insertion_point(special_field:SwordTrainingGameSyncChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl SwordTrainingGameSyncChangeScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HNLFBMPHEIL",
-            |m: &SwordTrainingGameSyncChangeScNotify| { &m.HNLFBMPHEIL },
-            |m: &mut SwordTrainingGameSyncChangeScNotify| { &mut m.HNLFBMPHEIL },
+            "FPEBFCPDIAK",
+            |m: &SwordTrainingGameSyncChangeScNotify| { &m.FPEBFCPDIAK },
+            |m: &mut SwordTrainingGameSyncChangeScNotify| { &mut m.FPEBFCPDIAK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SwordTrainingGameSyncChangeScNotify>(
             "SwordTrainingGameSyncChangeScNotify",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for SwordTrainingGameSyncChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    self.HNLFBMPHEIL.push(is.read_message()?);
+                42 => {
+                    self.FPEBFCPDIAK.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for SwordTrainingGameSyncChangeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.HNLFBMPHEIL {
+        for value in &self.FPEBFCPDIAK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -98,8 +98,8 @@ impl ::protobuf::Message for SwordTrainingGameSyncChangeScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.HNLFBMPHEIL {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        for v in &self.FPEBFCPDIAK {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -118,13 +118,13 @@ impl ::protobuf::Message for SwordTrainingGameSyncChangeScNotify {
     }
 
     fn clear(&mut self) {
-        self.HNLFBMPHEIL.clear();
+        self.FPEBFCPDIAK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwordTrainingGameSyncChangeScNotify {
         static instance: SwordTrainingGameSyncChangeScNotify = SwordTrainingGameSyncChangeScNotify {
-            HNLFBMPHEIL: ::std::vec::Vec::new(),
+            FPEBFCPDIAK: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,9 +149,9 @@ impl ::protobuf::reflect::ProtobufValue for SwordTrainingGameSyncChangeScNotify 
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n)SwordTrainingGameSyncChangeScNotify.proto\x1a\x11PNPLHHNBADF.proto\"U\
-    \n#SwordTrainingGameSyncChangeScNotify\x12.\n\x0bHNLFBMPHEIL\x18\x04\x20\
-    \x03(\x0b2\x0c.PNPLHHNBADFR\x0bHNLFBMPHEILb\x06proto3\
+    \n)SwordTrainingGameSyncChangeScNotify.proto\x1a\x11OOOEFJNNGFH.proto\"U\
+    \n#SwordTrainingGameSyncChangeScNotify\x12.\n\x0bFPEBFCPDIAK\x18\x05\x20\
+    \x03(\x0b2\x0c.OOOEFJNNGFHR\x0bFPEBFCPDIAKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -169,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::PNPLHHNBADF::file_descriptor().clone());
+            deps.push(super::OOOEFJNNGFH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SwordTrainingGameSyncChangeScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

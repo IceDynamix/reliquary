@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyScrachRaffleTicketScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyScrachRaffleTicketScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:MonopolyScrachRaffleTicketScRsp.CFAABCLGKGB)
-    pub CFAABCLGKGB: u64,
-    // @@protoc_insertion_point(field:MonopolyScrachRaffleTicketScRsp.GNILCGBHAMM)
-    pub GNILCGBHAMM: u32,
+    // @@protoc_insertion_point(field:MonopolyScrachRaffleTicketScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:MonopolyScrachRaffleTicketScRsp.MNAKFNFJLFK)
+    pub MNAKFNFJLFK: u32,
+    // @@protoc_insertion_point(field:MonopolyScrachRaffleTicketScRsp.ABJCHBJJMIO)
+    pub ABJCHBJJMIO: u64,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyScrachRaffleTicketScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl MonopolyScrachRaffleTicketScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &MonopolyScrachRaffleTicketScRsp| { &m.retcode },
-            |m: &mut MonopolyScrachRaffleTicketScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &MonopolyScrachRaffleTicketScRsp| { &m.ADADHIHDHJC },
+            |m: &mut MonopolyScrachRaffleTicketScRsp| { &mut m.ADADHIHDHJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CFAABCLGKGB",
-            |m: &MonopolyScrachRaffleTicketScRsp| { &m.CFAABCLGKGB },
-            |m: &mut MonopolyScrachRaffleTicketScRsp| { &mut m.CFAABCLGKGB },
+            "MNAKFNFJLFK",
+            |m: &MonopolyScrachRaffleTicketScRsp| { &m.MNAKFNFJLFK },
+            |m: &mut MonopolyScrachRaffleTicketScRsp| { &mut m.MNAKFNFJLFK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GNILCGBHAMM",
-            |m: &MonopolyScrachRaffleTicketScRsp| { &m.GNILCGBHAMM },
-            |m: &mut MonopolyScrachRaffleTicketScRsp| { &mut m.GNILCGBHAMM },
+            "ABJCHBJJMIO",
+            |m: &MonopolyScrachRaffleTicketScRsp| { &m.ABJCHBJJMIO },
+            |m: &mut MonopolyScrachRaffleTicketScRsp| { &mut m.ABJCHBJJMIO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyScrachRaffleTicketScRsp>(
             "MonopolyScrachRaffleTicketScRsp",
@@ -88,13 +88,13 @@ impl ::protobuf::Message for MonopolyScrachRaffleTicketScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.retcode = is.read_uint32()?;
+                    self.ADADHIHDHJC = is.read_uint32()?;
+                },
+                80 => {
+                    self.MNAKFNFJLFK = is.read_uint32()?;
                 },
                 40 => {
-                    self.CFAABCLGKGB = is.read_uint64()?;
-                },
-                24 => {
-                    self.GNILCGBHAMM = is.read_uint32()?;
+                    self.ABJCHBJJMIO = is.read_uint64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for MonopolyScrachRaffleTicketScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.ADADHIHDHJC);
         }
-        if self.CFAABCLGKGB != 0 {
-            my_size += ::protobuf::rt::uint64_size(5, self.CFAABCLGKGB);
+        if self.MNAKFNFJLFK != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.MNAKFNFJLFK);
         }
-        if self.GNILCGBHAMM != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.GNILCGBHAMM);
+        if self.ABJCHBJJMIO != 0 {
+            my_size += ::protobuf::rt::uint64_size(5, self.ABJCHBJJMIO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for MonopolyScrachRaffleTicketScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(1, self.ADADHIHDHJC)?;
         }
-        if self.CFAABCLGKGB != 0 {
-            os.write_uint64(5, self.CFAABCLGKGB)?;
+        if self.MNAKFNFJLFK != 0 {
+            os.write_uint32(10, self.MNAKFNFJLFK)?;
         }
-        if self.GNILCGBHAMM != 0 {
-            os.write_uint32(3, self.GNILCGBHAMM)?;
+        if self.ABJCHBJJMIO != 0 {
+            os.write_uint64(5, self.ABJCHBJJMIO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for MonopolyScrachRaffleTicketScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.CFAABCLGKGB = 0;
-        self.GNILCGBHAMM = 0;
+        self.ADADHIHDHJC = 0;
+        self.MNAKFNFJLFK = 0;
+        self.ABJCHBJJMIO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyScrachRaffleTicketScRsp {
         static instance: MonopolyScrachRaffleTicketScRsp = MonopolyScrachRaffleTicketScRsp {
-            retcode: 0,
-            CFAABCLGKGB: 0,
-            GNILCGBHAMM: 0,
+            ADADHIHDHJC: 0,
+            MNAKFNFJLFK: 0,
+            ABJCHBJJMIO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyScrachRaffleTicketScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n%MonopolyScrachRaffleTicketScRsp.proto\"\x7f\n\x1fMonopolyScrachRaffle\
-    TicketScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12\x20\
-    \n\x0bCFAABCLGKGB\x18\x05\x20\x01(\x04R\x0bCFAABCLGKGB\x12\x20\n\x0bGNIL\
-    CGBHAMM\x18\x03\x20\x01(\rR\x0bGNILCGBHAMMb\x06proto3\
+    \n%MonopolyScrachRaffleTicketScRsp.proto\"\x87\x01\n\x1fMonopolyScrachRa\
+    ffleTicketScRsp\x12\x20\n\x0bADADHIHDHJC\x18\x01\x20\x01(\rR\x0bADADHIHD\
+    HJC\x12\x20\n\x0bMNAKFNFJLFK\x18\n\x20\x01(\rR\x0bMNAKFNFJLFK\x12\x20\n\
+    \x0bABJCHBJJMIO\x18\x05\x20\x01(\x04R\x0bABJCHBJJMIOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

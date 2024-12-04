@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EvolveBuildReRandomStageCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EvolveBuildReRandomStageCsReq.DGEJMCKIFJB)
-    pub DGEJMCKIFJB: u32,
+    // @@protoc_insertion_point(field:EvolveBuildReRandomStageCsReq.AHCAOJCBIOM)
+    pub AHCAOJCBIOM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EvolveBuildReRandomStageCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl EvolveBuildReRandomStageCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DGEJMCKIFJB",
-            |m: &EvolveBuildReRandomStageCsReq| { &m.DGEJMCKIFJB },
-            |m: &mut EvolveBuildReRandomStageCsReq| { &mut m.DGEJMCKIFJB },
+            "AHCAOJCBIOM",
+            |m: &EvolveBuildReRandomStageCsReq| { &m.AHCAOJCBIOM },
+            |m: &mut EvolveBuildReRandomStageCsReq| { &mut m.AHCAOJCBIOM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EvolveBuildReRandomStageCsReq>(
             "EvolveBuildReRandomStageCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for EvolveBuildReRandomStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.DGEJMCKIFJB = is.read_uint32()?;
+                56 => {
+                    self.AHCAOJCBIOM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for EvolveBuildReRandomStageCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DGEJMCKIFJB != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.DGEJMCKIFJB);
+        if self.AHCAOJCBIOM != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.AHCAOJCBIOM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for EvolveBuildReRandomStageCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DGEJMCKIFJB != 0 {
-            os.write_uint32(13, self.DGEJMCKIFJB)?;
+        if self.AHCAOJCBIOM != 0 {
+            os.write_uint32(7, self.AHCAOJCBIOM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for EvolveBuildReRandomStageCsReq {
     }
 
     fn clear(&mut self) {
-        self.DGEJMCKIFJB = 0;
+        self.AHCAOJCBIOM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EvolveBuildReRandomStageCsReq {
         static instance: EvolveBuildReRandomStageCsReq = EvolveBuildReRandomStageCsReq {
-            DGEJMCKIFJB: 0,
+            AHCAOJCBIOM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildReRandomStageCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#EvolveBuildReRandomStageCsReq.proto\"A\n\x1dEvolveBuildReRandomStageC\
-    sReq\x12\x20\n\x0bDGEJMCKIFJB\x18\r\x20\x01(\rR\x0bDGEJMCKIFJBb\x06proto\
-    3\
+    sReq\x12\x20\n\x0bAHCAOJCBIOM\x18\x07\x20\x01(\rR\x0bAHCAOJCBIOMb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

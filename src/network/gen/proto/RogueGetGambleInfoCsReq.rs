@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueGetGambleInfoCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RogueGetGambleInfoCsReq.MEJPGIDEBMI)
-    pub MEJPGIDEBMI: u32,
+    // @@protoc_insertion_point(field:RogueGetGambleInfoCsReq.JCPFOPLBOIM)
+    pub JCPFOPLBOIM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueGetGambleInfoCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl RogueGetGambleInfoCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MEJPGIDEBMI",
-            |m: &RogueGetGambleInfoCsReq| { &m.MEJPGIDEBMI },
-            |m: &mut RogueGetGambleInfoCsReq| { &mut m.MEJPGIDEBMI },
+            "JCPFOPLBOIM",
+            |m: &RogueGetGambleInfoCsReq| { &m.JCPFOPLBOIM },
+            |m: &mut RogueGetGambleInfoCsReq| { &mut m.JCPFOPLBOIM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueGetGambleInfoCsReq>(
             "RogueGetGambleInfoCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for RogueGetGambleInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.MEJPGIDEBMI = is.read_uint32()?;
+                96 => {
+                    self.JCPFOPLBOIM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for RogueGetGambleInfoCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MEJPGIDEBMI != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.MEJPGIDEBMI);
+        if self.JCPFOPLBOIM != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.JCPFOPLBOIM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for RogueGetGambleInfoCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MEJPGIDEBMI != 0 {
-            os.write_uint32(9, self.MEJPGIDEBMI)?;
+        if self.JCPFOPLBOIM != 0 {
+            os.write_uint32(12, self.JCPFOPLBOIM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for RogueGetGambleInfoCsReq {
     }
 
     fn clear(&mut self) {
-        self.MEJPGIDEBMI = 0;
+        self.JCPFOPLBOIM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueGetGambleInfoCsReq {
         static instance: RogueGetGambleInfoCsReq = RogueGetGambleInfoCsReq {
-            MEJPGIDEBMI: 0,
+            JCPFOPLBOIM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueGetGambleInfoCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dRogueGetGambleInfoCsReq.proto\";\n\x17RogueGetGambleInfoCsReq\x12\
-    \x20\n\x0bMEJPGIDEBMI\x18\t\x20\x01(\rR\x0bMEJPGIDEBMIb\x06proto3\
+    \x20\n\x0bJCPFOPLBOIM\x18\x0c\x20\x01(\rR\x0bJCPFOPLBOIMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

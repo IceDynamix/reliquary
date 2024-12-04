@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishPerformSectionIdCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FinishPerformSectionIdCsReq.CLJDINBOPJM)
-    pub CLJDINBOPJM: u32,
-    // @@protoc_insertion_point(field:FinishPerformSectionIdCsReq.DGFNOGJFILI)
-    pub DGFNOGJFILI: ::std::vec::Vec<super::PAMILHACAGM::PAMILHACAGM>,
+    // @@protoc_insertion_point(field:FinishPerformSectionIdCsReq.KBCKGKALLFF)
+    pub KBCKGKALLFF: u32,
+    // @@protoc_insertion_point(field:FinishPerformSectionIdCsReq.AGPKHOOCMPE)
+    pub AGPKHOOCMPE: ::std::vec::Vec<super::HBDPLINHEKH::HBDPLINHEKH>,
     // special fields
     // @@protoc_insertion_point(special_field:FinishPerformSectionIdCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl FinishPerformSectionIdCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CLJDINBOPJM",
-            |m: &FinishPerformSectionIdCsReq| { &m.CLJDINBOPJM },
-            |m: &mut FinishPerformSectionIdCsReq| { &mut m.CLJDINBOPJM },
+            "KBCKGKALLFF",
+            |m: &FinishPerformSectionIdCsReq| { &m.KBCKGKALLFF },
+            |m: &mut FinishPerformSectionIdCsReq| { &mut m.KBCKGKALLFF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DGFNOGJFILI",
-            |m: &FinishPerformSectionIdCsReq| { &m.DGFNOGJFILI },
-            |m: &mut FinishPerformSectionIdCsReq| { &mut m.DGFNOGJFILI },
+            "AGPKHOOCMPE",
+            |m: &FinishPerformSectionIdCsReq| { &m.AGPKHOOCMPE },
+            |m: &mut FinishPerformSectionIdCsReq| { &mut m.AGPKHOOCMPE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishPerformSectionIdCsReq>(
             "FinishPerformSectionIdCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for FinishPerformSectionIdCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.CLJDINBOPJM = is.read_uint32()?;
+                112 => {
+                    self.KBCKGKALLFF = is.read_uint32()?;
                 },
-                58 => {
-                    self.DGFNOGJFILI.push(is.read_message()?);
+                74 => {
+                    self.AGPKHOOCMPE.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for FinishPerformSectionIdCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CLJDINBOPJM != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.CLJDINBOPJM);
+        if self.KBCKGKALLFF != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.KBCKGKALLFF);
         }
-        for value in &self.DGFNOGJFILI {
+        for value in &self.AGPKHOOCMPE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -111,11 +111,11 @@ impl ::protobuf::Message for FinishPerformSectionIdCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CLJDINBOPJM != 0 {
-            os.write_uint32(3, self.CLJDINBOPJM)?;
+        if self.KBCKGKALLFF != 0 {
+            os.write_uint32(14, self.KBCKGKALLFF)?;
         }
-        for v in &self.DGFNOGJFILI {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        for v in &self.AGPKHOOCMPE {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for FinishPerformSectionIdCsReq {
     }
 
     fn clear(&mut self) {
-        self.CLJDINBOPJM = 0;
-        self.DGFNOGJFILI.clear();
+        self.KBCKGKALLFF = 0;
+        self.AGPKHOOCMPE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishPerformSectionIdCsReq {
         static instance: FinishPerformSectionIdCsReq = FinishPerformSectionIdCsReq {
-            CLJDINBOPJM: 0,
-            DGFNOGJFILI: ::std::vec::Vec::new(),
+            KBCKGKALLFF: 0,
+            AGPKHOOCMPE: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for FinishPerformSectionIdCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!FinishPerformSectionIdCsReq.proto\x1a\x11PAMILHACAGM.proto\"o\n\x1bFi\
-    nishPerformSectionIdCsReq\x12\x20\n\x0bCLJDINBOPJM\x18\x03\x20\x01(\rR\
-    \x0bCLJDINBOPJM\x12.\n\x0bDGFNOGJFILI\x18\x07\x20\x03(\x0b2\x0c.PAMILHAC\
-    AGMR\x0bDGFNOGJFILIb\x06proto3\
+    \n!FinishPerformSectionIdCsReq.proto\x1a\x11HBDPLINHEKH.proto\"o\n\x1bFi\
+    nishPerformSectionIdCsReq\x12\x20\n\x0bKBCKGKALLFF\x18\x0e\x20\x01(\rR\
+    \x0bKBCKGKALLFF\x12.\n\x0bAGPKHOOCMPE\x18\t\x20\x03(\x0b2\x0c.HBDPLINHEK\
+    HR\x0bAGPKHOOCMPEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::PAMILHACAGM::file_descriptor().clone());
+            deps.push(super::HBDPLINHEKH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FinishPerformSectionIdCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueFinishCurRoomNotify {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueFinishCurRoomNotify.GGHEBMCAJKI)
-    pub GGHEBMCAJKI: ::protobuf::MessageField<super::NECPIBKAFJE::NECPIBKAFJE>,
+    // @@protoc_insertion_point(field:ChessRogueFinishCurRoomNotify.BCBJPFIKPHG)
+    pub BCBJPFIKPHG: ::protobuf::MessageField<super::BNKNFJKMJIE::BNKNFJKMJIE>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueFinishCurRoomNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,10 +50,10 @@ impl ChessRogueFinishCurRoomNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NECPIBKAFJE::NECPIBKAFJE>(
-            "GGHEBMCAJKI",
-            |m: &ChessRogueFinishCurRoomNotify| { &m.GGHEBMCAJKI },
-            |m: &mut ChessRogueFinishCurRoomNotify| { &mut m.GGHEBMCAJKI },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BNKNFJKMJIE::BNKNFJKMJIE>(
+            "BCBJPFIKPHG",
+            |m: &ChessRogueFinishCurRoomNotify| { &m.BCBJPFIKPHG },
+            |m: &mut ChessRogueFinishCurRoomNotify| { &mut m.BCBJPFIKPHG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueFinishCurRoomNotify>(
             "ChessRogueFinishCurRoomNotify",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for ChessRogueFinishCurRoomNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GGHEBMCAJKI)?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BCBJPFIKPHG)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for ChessRogueFinishCurRoomNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.GGHEBMCAJKI.as_ref() {
+        if let Some(v) = self.BCBJPFIKPHG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -98,8 +98,8 @@ impl ::protobuf::Message for ChessRogueFinishCurRoomNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.GGHEBMCAJKI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if let Some(v) = self.BCBJPFIKPHG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -118,13 +118,13 @@ impl ::protobuf::Message for ChessRogueFinishCurRoomNotify {
     }
 
     fn clear(&mut self) {
-        self.GGHEBMCAJKI.clear();
+        self.BCBJPFIKPHG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueFinishCurRoomNotify {
         static instance: ChessRogueFinishCurRoomNotify = ChessRogueFinishCurRoomNotify {
-            GGHEBMCAJKI: ::protobuf::MessageField::none(),
+            BCBJPFIKPHG: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,9 +149,9 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueFinishCurRoomNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#ChessRogueFinishCurRoomNotify.proto\x1a\x11NECPIBKAFJE.proto\"O\n\x1d\
-    ChessRogueFinishCurRoomNotify\x12.\n\x0bGGHEBMCAJKI\x18\x0e\x20\x01(\x0b\
-    2\x0c.NECPIBKAFJER\x0bGGHEBMCAJKIb\x06proto3\
+    \n#ChessRogueFinishCurRoomNotify.proto\x1a\x11BNKNFJKMJIE.proto\"O\n\x1d\
+    ChessRogueFinishCurRoomNotify\x12.\n\x0bBCBJPFIKPHG\x18\x01\x20\x01(\x0b\
+    2\x0c.BNKNFJKMJIER\x0bBCBJPFIKPHGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -169,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::NECPIBKAFJE::file_descriptor().clone());
+            deps.push(super::BNKNFJKMJIE::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChessRogueFinishCurRoomNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

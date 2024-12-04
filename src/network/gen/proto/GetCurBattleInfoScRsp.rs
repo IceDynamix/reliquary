@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetCurBattleInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetCurBattleInfoScRsp.FMLMGOMEIKM)
-    pub FMLMGOMEIKM: ::protobuf::MessageField<super::LFEHJFJHJLH::LFEHJFJHJLH>,
-    // @@protoc_insertion_point(field:GetCurBattleInfoScRsp.DKLNKJIGKEO)
-    pub DKLNKJIGKEO: ::protobuf::EnumOrUnknown<super::MHNHDNOPKML::MHNHDNOPKML>,
-    // @@protoc_insertion_point(field:GetCurBattleInfoScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:GetCurBattleInfoScRsp.NBHCNLGPIDO)
-    pub NBHCNLGPIDO: u32,
-    // @@protoc_insertion_point(field:GetCurBattleInfoScRsp.JONHHDCOHBI)
-    pub JONHHDCOHBI: ::protobuf::MessageField<super::AHFFHEBEEGC::AHFFHEBEEGC>,
+    // @@protoc_insertion_point(field:GetCurBattleInfoScRsp.OEPGAJOMAEP)
+    pub OEPGAJOMAEP: u32,
+    // @@protoc_insertion_point(field:GetCurBattleInfoScRsp.EPCGAGLDLIH)
+    pub EPCGAGLDLIH: ::protobuf::EnumOrUnknown<super::LMIENNAIBLH::LMIENNAIBLH>,
+    // @@protoc_insertion_point(field:GetCurBattleInfoScRsp.NKMIJCINEKP)
+    pub NKMIJCINEKP: ::protobuf::MessageField<super::BNAKOFPAMBI::BNAKOFPAMBI>,
+    // @@protoc_insertion_point(field:GetCurBattleInfoScRsp.BBKGPAJCCBM)
+    pub BBKGPAJCCBM: ::protobuf::MessageField<super::CHDPLFOHLCN::CHDPLFOHLCN>,
+    // @@protoc_insertion_point(field:GetCurBattleInfoScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetCurBattleInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,30 +58,30 @@ impl GetCurBattleInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LFEHJFJHJLH::LFEHJFJHJLH>(
-            "FMLMGOMEIKM",
-            |m: &GetCurBattleInfoScRsp| { &m.FMLMGOMEIKM },
-            |m: &mut GetCurBattleInfoScRsp| { &mut m.FMLMGOMEIKM },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OEPGAJOMAEP",
+            |m: &GetCurBattleInfoScRsp| { &m.OEPGAJOMAEP },
+            |m: &mut GetCurBattleInfoScRsp| { &mut m.OEPGAJOMAEP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DKLNKJIGKEO",
-            |m: &GetCurBattleInfoScRsp| { &m.DKLNKJIGKEO },
-            |m: &mut GetCurBattleInfoScRsp| { &mut m.DKLNKJIGKEO },
+            "EPCGAGLDLIH",
+            |m: &GetCurBattleInfoScRsp| { &m.EPCGAGLDLIH },
+            |m: &mut GetCurBattleInfoScRsp| { &mut m.EPCGAGLDLIH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BNAKOFPAMBI::BNAKOFPAMBI>(
+            "NKMIJCINEKP",
+            |m: &GetCurBattleInfoScRsp| { &m.NKMIJCINEKP },
+            |m: &mut GetCurBattleInfoScRsp| { &mut m.NKMIJCINEKP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CHDPLFOHLCN::CHDPLFOHLCN>(
+            "BBKGPAJCCBM",
+            |m: &GetCurBattleInfoScRsp| { &m.BBKGPAJCCBM },
+            |m: &mut GetCurBattleInfoScRsp| { &mut m.BBKGPAJCCBM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetCurBattleInfoScRsp| { &m.retcode },
-            |m: &mut GetCurBattleInfoScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NBHCNLGPIDO",
-            |m: &GetCurBattleInfoScRsp| { &m.NBHCNLGPIDO },
-            |m: &mut GetCurBattleInfoScRsp| { &mut m.NBHCNLGPIDO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AHFFHEBEEGC::AHFFHEBEEGC>(
-            "JONHHDCOHBI",
-            |m: &GetCurBattleInfoScRsp| { &m.JONHHDCOHBI },
-            |m: &mut GetCurBattleInfoScRsp| { &mut m.JONHHDCOHBI },
+            "ADADHIHDHJC",
+            |m: &GetCurBattleInfoScRsp| { &m.ADADHIHDHJC },
+            |m: &mut GetCurBattleInfoScRsp| { &mut m.ADADHIHDHJC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetCurBattleInfoScRsp>(
             "GetCurBattleInfoScRsp",
@@ -101,20 +101,20 @@ impl ::protobuf::Message for GetCurBattleInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                56 => {
+                    self.OEPGAJOMAEP = is.read_uint32()?;
+                },
+                120 => {
+                    self.EPCGAGLDLIH = is.read_enum_or_unknown()?;
+                },
                 82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FMLMGOMEIKM)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NKMIJCINEKP)?;
                 },
-                24 => {
-                    self.DKLNKJIGKEO = is.read_enum_or_unknown()?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BBKGPAJCCBM)?;
                 },
-                32 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                88 => {
-                    self.NBHCNLGPIDO = is.read_uint32()?;
-                },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JONHHDCOHBI)?;
+                96 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,22 +128,22 @@ impl ::protobuf::Message for GetCurBattleInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.FMLMGOMEIKM.as_ref() {
+        if self.OEPGAJOMAEP != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.OEPGAJOMAEP);
+        }
+        if self.EPCGAGLDLIH != ::protobuf::EnumOrUnknown::new(super::LMIENNAIBLH::LMIENNAIBLH::BATTLE_END_NONE) {
+            my_size += ::protobuf::rt::int32_size(15, self.EPCGAGLDLIH.value());
+        }
+        if let Some(v) = self.NKMIJCINEKP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.DKLNKJIGKEO != ::protobuf::EnumOrUnknown::new(super::MHNHDNOPKML::MHNHDNOPKML::BATTLE_END_NONE) {
-            my_size += ::protobuf::rt::int32_size(3, self.DKLNKJIGKEO.value());
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
-        }
-        if self.NBHCNLGPIDO != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.NBHCNLGPIDO);
-        }
-        if let Some(v) = self.JONHHDCOHBI.as_ref() {
+        if let Some(v) = self.BBKGPAJCCBM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.ADADHIHDHJC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -151,20 +151,20 @@ impl ::protobuf::Message for GetCurBattleInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.FMLMGOMEIKM.as_ref() {
+        if self.OEPGAJOMAEP != 0 {
+            os.write_uint32(7, self.OEPGAJOMAEP)?;
+        }
+        if self.EPCGAGLDLIH != ::protobuf::EnumOrUnknown::new(super::LMIENNAIBLH::LMIENNAIBLH::BATTLE_END_NONE) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.EPCGAGLDLIH))?;
+        }
+        if let Some(v) = self.NKMIJCINEKP.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
-        if self.DKLNKJIGKEO != ::protobuf::EnumOrUnknown::new(super::MHNHDNOPKML::MHNHDNOPKML::BATTLE_END_NONE) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.DKLNKJIGKEO))?;
+        if let Some(v) = self.BBKGPAJCCBM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
-        }
-        if self.NBHCNLGPIDO != 0 {
-            os.write_uint32(11, self.NBHCNLGPIDO)?;
-        }
-        if let Some(v) = self.JONHHDCOHBI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(12, self.ADADHIHDHJC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,21 +183,21 @@ impl ::protobuf::Message for GetCurBattleInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.FMLMGOMEIKM.clear();
-        self.DKLNKJIGKEO = ::protobuf::EnumOrUnknown::new(super::MHNHDNOPKML::MHNHDNOPKML::BATTLE_END_NONE);
-        self.retcode = 0;
-        self.NBHCNLGPIDO = 0;
-        self.JONHHDCOHBI.clear();
+        self.OEPGAJOMAEP = 0;
+        self.EPCGAGLDLIH = ::protobuf::EnumOrUnknown::new(super::LMIENNAIBLH::LMIENNAIBLH::BATTLE_END_NONE);
+        self.NKMIJCINEKP.clear();
+        self.BBKGPAJCCBM.clear();
+        self.ADADHIHDHJC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetCurBattleInfoScRsp {
         static instance: GetCurBattleInfoScRsp = GetCurBattleInfoScRsp {
-            FMLMGOMEIKM: ::protobuf::MessageField::none(),
-            DKLNKJIGKEO: ::protobuf::EnumOrUnknown::from_i32(0),
-            retcode: 0,
-            NBHCNLGPIDO: 0,
-            JONHHDCOHBI: ::protobuf::MessageField::none(),
+            OEPGAJOMAEP: 0,
+            EPCGAGLDLIH: ::protobuf::EnumOrUnknown::from_i32(0),
+            NKMIJCINEKP: ::protobuf::MessageField::none(),
+            BBKGPAJCCBM: ::protobuf::MessageField::none(),
+            ADADHIHDHJC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -222,13 +222,13 @@ impl ::protobuf::reflect::ProtobufValue for GetCurBattleInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bGetCurBattleInfoScRsp.proto\x1a\x11AHFFHEBEEGC.proto\x1a\x11LFEHJF\
-    JHJLH.proto\x1a\x11MHNHDNOPKML.proto\"\xe3\x01\n\x15GetCurBattleInfoScRs\
-    p\x12.\n\x0bFMLMGOMEIKM\x18\n\x20\x01(\x0b2\x0c.LFEHJFJHJLHR\x0bFMLMGOME\
-    IKM\x12.\n\x0bDKLNKJIGKEO\x18\x03\x20\x01(\x0e2\x0c.MHNHDNOPKMLR\x0bDKLN\
-    KJIGKEO\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12\x20\n\
-    \x0bNBHCNLGPIDO\x18\x0b\x20\x01(\rR\x0bNBHCNLGPIDO\x12.\n\x0bJONHHDCOHBI\
-    \x18\x0e\x20\x01(\x0b2\x0c.AHFFHEBEEGCR\x0bJONHHDCOHBIb\x06proto3\
+    \n\x1bGetCurBattleInfoScRsp.proto\x1a\x11BNAKOFPAMBI.proto\x1a\x11CHDPLF\
+    OHLCN.proto\x1a\x11LMIENNAIBLH.proto\"\xeb\x01\n\x15GetCurBattleInfoScRs\
+    p\x12\x20\n\x0bOEPGAJOMAEP\x18\x07\x20\x01(\rR\x0bOEPGAJOMAEP\x12.\n\x0b\
+    EPCGAGLDLIH\x18\x0f\x20\x01(\x0e2\x0c.LMIENNAIBLHR\x0bEPCGAGLDLIH\x12.\n\
+    \x0bNKMIJCINEKP\x18\n\x20\x01(\x0b2\x0c.BNAKOFPAMBIR\x0bNKMIJCINEKP\x12.\
+    \n\x0bBBKGPAJCCBM\x18\x01\x20\x01(\x0b2\x0c.CHDPLFOHLCNR\x0bBBKGPAJCCBM\
+    \x12\x20\n\x0bADADHIHDHJC\x18\x0c\x20\x01(\rR\x0bADADHIHDHJCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -246,9 +246,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::AHFFHEBEEGC::file_descriptor().clone());
-            deps.push(super::LFEHJFJHJLH::file_descriptor().clone());
-            deps.push(super::MHNHDNOPKML::file_descriptor().clone());
+            deps.push(super::BNAKOFPAMBI::file_descriptor().clone());
+            deps.push(super::CHDPLFOHLCN::file_descriptor().clone());
+            deps.push(super::LMIENNAIBLH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetCurBattleInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

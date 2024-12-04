@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SummonActivityBattleEndScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SummonActivityBattleEndScNotify.GCFIIGOLPMF)
-    pub GCFIIGOLPMF: u32,
-    // @@protoc_insertion_point(field:SummonActivityBattleEndScNotify.BELGPLFBDBP)
-    pub BELGPLFBDBP: u32,
-    // @@protoc_insertion_point(field:SummonActivityBattleEndScNotify.AHFNGPLDAII)
-    pub AHFNGPLDAII: u32,
-    // @@protoc_insertion_point(field:SummonActivityBattleEndScNotify.DMIEBIKLCPG)
-    pub DMIEBIKLCPG: u32,
+    // @@protoc_insertion_point(field:SummonActivityBattleEndScNotify.ILIFHHJFMIH)
+    pub ILIFHHJFMIH: u32,
+    // @@protoc_insertion_point(field:SummonActivityBattleEndScNotify.FAJKDKDKOLG)
+    pub FAJKDKDKOLG: u32,
+    // @@protoc_insertion_point(field:SummonActivityBattleEndScNotify.KONGAADEJEL)
+    pub KONGAADEJEL: u32,
+    // @@protoc_insertion_point(field:SummonActivityBattleEndScNotify.KCENJNFNEPL)
+    pub KCENJNFNEPL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SummonActivityBattleEndScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl SummonActivityBattleEndScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GCFIIGOLPMF",
-            |m: &SummonActivityBattleEndScNotify| { &m.GCFIIGOLPMF },
-            |m: &mut SummonActivityBattleEndScNotify| { &mut m.GCFIIGOLPMF },
+            "ILIFHHJFMIH",
+            |m: &SummonActivityBattleEndScNotify| { &m.ILIFHHJFMIH },
+            |m: &mut SummonActivityBattleEndScNotify| { &mut m.ILIFHHJFMIH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BELGPLFBDBP",
-            |m: &SummonActivityBattleEndScNotify| { &m.BELGPLFBDBP },
-            |m: &mut SummonActivityBattleEndScNotify| { &mut m.BELGPLFBDBP },
+            "FAJKDKDKOLG",
+            |m: &SummonActivityBattleEndScNotify| { &m.FAJKDKDKOLG },
+            |m: &mut SummonActivityBattleEndScNotify| { &mut m.FAJKDKDKOLG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AHFNGPLDAII",
-            |m: &SummonActivityBattleEndScNotify| { &m.AHFNGPLDAII },
-            |m: &mut SummonActivityBattleEndScNotify| { &mut m.AHFNGPLDAII },
+            "KONGAADEJEL",
+            |m: &SummonActivityBattleEndScNotify| { &m.KONGAADEJEL },
+            |m: &mut SummonActivityBattleEndScNotify| { &mut m.KONGAADEJEL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DMIEBIKLCPG",
-            |m: &SummonActivityBattleEndScNotify| { &m.DMIEBIKLCPG },
-            |m: &mut SummonActivityBattleEndScNotify| { &mut m.DMIEBIKLCPG },
+            "KCENJNFNEPL",
+            |m: &SummonActivityBattleEndScNotify| { &m.KCENJNFNEPL },
+            |m: &mut SummonActivityBattleEndScNotify| { &mut m.KCENJNFNEPL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SummonActivityBattleEndScNotify>(
             "SummonActivityBattleEndScNotify",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for SummonActivityBattleEndScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.GCFIIGOLPMF = is.read_uint32()?;
-                },
-                120 => {
-                    self.BELGPLFBDBP = is.read_uint32()?;
+                72 => {
+                    self.ILIFHHJFMIH = is.read_uint32()?;
                 },
                 40 => {
-                    self.AHFNGPLDAII = is.read_uint32()?;
+                    self.FAJKDKDKOLG = is.read_uint32()?;
                 },
-                32 => {
-                    self.DMIEBIKLCPG = is.read_uint32()?;
+                104 => {
+                    self.KONGAADEJEL = is.read_uint32()?;
+                },
+                80 => {
+                    self.KCENJNFNEPL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,17 +118,17 @@ impl ::protobuf::Message for SummonActivityBattleEndScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GCFIIGOLPMF != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.GCFIIGOLPMF);
+        if self.ILIFHHJFMIH != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.ILIFHHJFMIH);
         }
-        if self.BELGPLFBDBP != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.BELGPLFBDBP);
+        if self.FAJKDKDKOLG != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.FAJKDKDKOLG);
         }
-        if self.AHFNGPLDAII != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.AHFNGPLDAII);
+        if self.KONGAADEJEL != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.KONGAADEJEL);
         }
-        if self.DMIEBIKLCPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.DMIEBIKLCPG);
+        if self.KCENJNFNEPL != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.KCENJNFNEPL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for SummonActivityBattleEndScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GCFIIGOLPMF != 0 {
-            os.write_uint32(2, self.GCFIIGOLPMF)?;
+        if self.ILIFHHJFMIH != 0 {
+            os.write_uint32(9, self.ILIFHHJFMIH)?;
         }
-        if self.BELGPLFBDBP != 0 {
-            os.write_uint32(15, self.BELGPLFBDBP)?;
+        if self.FAJKDKDKOLG != 0 {
+            os.write_uint32(5, self.FAJKDKDKOLG)?;
         }
-        if self.AHFNGPLDAII != 0 {
-            os.write_uint32(5, self.AHFNGPLDAII)?;
+        if self.KONGAADEJEL != 0 {
+            os.write_uint32(13, self.KONGAADEJEL)?;
         }
-        if self.DMIEBIKLCPG != 0 {
-            os.write_uint32(4, self.DMIEBIKLCPG)?;
+        if self.KCENJNFNEPL != 0 {
+            os.write_uint32(10, self.KCENJNFNEPL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for SummonActivityBattleEndScNotify {
     }
 
     fn clear(&mut self) {
-        self.GCFIIGOLPMF = 0;
-        self.BELGPLFBDBP = 0;
-        self.AHFNGPLDAII = 0;
-        self.DMIEBIKLCPG = 0;
+        self.ILIFHHJFMIH = 0;
+        self.FAJKDKDKOLG = 0;
+        self.KONGAADEJEL = 0;
+        self.KCENJNFNEPL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SummonActivityBattleEndScNotify {
         static instance: SummonActivityBattleEndScNotify = SummonActivityBattleEndScNotify {
-            GCFIIGOLPMF: 0,
-            BELGPLFBDBP: 0,
-            AHFNGPLDAII: 0,
-            DMIEBIKLCPG: 0,
+            ILIFHHJFMIH: 0,
+            FAJKDKDKOLG: 0,
+            KONGAADEJEL: 0,
+            KCENJNFNEPL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for SummonActivityBattleEndScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%SummonActivityBattleEndScNotify.proto\"\xa9\x01\n\x1fSummonActivityBa\
-    ttleEndScNotify\x12\x20\n\x0bGCFIIGOLPMF\x18\x02\x20\x01(\rR\x0bGCFIIGOL\
-    PMF\x12\x20\n\x0bBELGPLFBDBP\x18\x0f\x20\x01(\rR\x0bBELGPLFBDBP\x12\x20\
-    \n\x0bAHFNGPLDAII\x18\x05\x20\x01(\rR\x0bAHFNGPLDAII\x12\x20\n\x0bDMIEBI\
-    KLCPG\x18\x04\x20\x01(\rR\x0bDMIEBIKLCPGb\x06proto3\
+    ttleEndScNotify\x12\x20\n\x0bILIFHHJFMIH\x18\t\x20\x01(\rR\x0bILIFHHJFMI\
+    H\x12\x20\n\x0bFAJKDKDKOLG\x18\x05\x20\x01(\rR\x0bFAJKDKDKOLG\x12\x20\n\
+    \x0bKONGAADEJEL\x18\r\x20\x01(\rR\x0bKONGAADEJEL\x12\x20\n\x0bKCENJNFNEP\
+    L\x18\n\x20\x01(\rR\x0bKCENJNFNEPLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

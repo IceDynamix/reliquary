@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RelicAvatarRecommendScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RelicAvatarRecommendScRsp.EOLGPJIGODN)
-    pub EOLGPJIGODN: u32,
-    // @@protoc_insertion_point(field:RelicAvatarRecommendScRsp.EIDLLGNIOKP)
-    pub EIDLLGNIOKP: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:RelicAvatarRecommendScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:RelicAvatarRecommendScRsp.ROGUE_TALENT_STATUS_ENABLE)
     pub ROGUE_TALENT_STATUS_ENABLE: bool,
+    // @@protoc_insertion_point(field:RelicAvatarRecommendScRsp.IPACGJHEIME)
+    pub IPACGJHEIME: u32,
+    // @@protoc_insertion_point(field:RelicAvatarRecommendScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:RelicAvatarRecommendScRsp.IFJNGOLCGPI)
+    pub IFJNGOLCGPI: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:RelicAvatarRecommendScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl RelicAvatarRecommendScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EOLGPJIGODN",
-            |m: &RelicAvatarRecommendScRsp| { &m.EOLGPJIGODN },
-            |m: &mut RelicAvatarRecommendScRsp| { &mut m.EOLGPJIGODN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EIDLLGNIOKP",
-            |m: &RelicAvatarRecommendScRsp| { &m.EIDLLGNIOKP },
-            |m: &mut RelicAvatarRecommendScRsp| { &mut m.EIDLLGNIOKP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &RelicAvatarRecommendScRsp| { &m.retcode },
-            |m: &mut RelicAvatarRecommendScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ROGUE_TALENT_STATUS_ENABLE",
             |m: &RelicAvatarRecommendScRsp| { &m.ROGUE_TALENT_STATUS_ENABLE },
             |m: &mut RelicAvatarRecommendScRsp| { &mut m.ROGUE_TALENT_STATUS_ENABLE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IPACGJHEIME",
+            |m: &RelicAvatarRecommendScRsp| { &m.IPACGJHEIME },
+            |m: &mut RelicAvatarRecommendScRsp| { &mut m.IPACGJHEIME },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ADADHIHDHJC",
+            |m: &RelicAvatarRecommendScRsp| { &m.ADADHIHDHJC },
+            |m: &mut RelicAvatarRecommendScRsp| { &mut m.ADADHIHDHJC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "IFJNGOLCGPI",
+            |m: &RelicAvatarRecommendScRsp| { &m.IFJNGOLCGPI },
+            |m: &mut RelicAvatarRecommendScRsp| { &mut m.IFJNGOLCGPI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RelicAvatarRecommendScRsp>(
             "RelicAvatarRecommendScRsp",
@@ -94,20 +94,20 @@ impl ::protobuf::Message for RelicAvatarRecommendScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.EOLGPJIGODN = is.read_uint32()?;
-                },
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.EIDLLGNIOKP)?;
-                },
-                104 => {
-                    self.EIDLLGNIOKP.push(is.read_uint32()?);
-                },
-                96 => {
-                    self.retcode = is.read_uint32()?;
-                },
                 48 => {
                     self.ROGUE_TALENT_STATUS_ENABLE = is.read_bool()?;
+                },
+                64 => {
+                    self.IPACGJHEIME = is.read_uint32()?;
+                },
+                120 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
+                },
+                114 => {
+                    is.read_repeated_packed_uint32_into(&mut self.IFJNGOLCGPI)?;
+                },
+                112 => {
+                    self.IFJNGOLCGPI.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,36 +121,36 @@ impl ::protobuf::Message for RelicAvatarRecommendScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EOLGPJIGODN != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.EOLGPJIGODN);
-        }
-        for value in &self.EIDLLGNIOKP {
-            my_size += ::protobuf::rt::uint32_size(13, *value);
-        };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
-        }
         if self.ROGUE_TALENT_STATUS_ENABLE != false {
             my_size += 1 + 1;
         }
+        if self.IPACGJHEIME != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.IPACGJHEIME);
+        }
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.ADADHIHDHJC);
+        }
+        for value in &self.IFJNGOLCGPI {
+            my_size += ::protobuf::rt::uint32_size(14, *value);
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EOLGPJIGODN != 0 {
-            os.write_uint32(15, self.EOLGPJIGODN)?;
-        }
-        for v in &self.EIDLLGNIOKP {
-            os.write_uint32(13, *v)?;
-        };
-        if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
-        }
         if self.ROGUE_TALENT_STATUS_ENABLE != false {
             os.write_bool(6, self.ROGUE_TALENT_STATUS_ENABLE)?;
         }
+        if self.IPACGJHEIME != 0 {
+            os.write_uint32(8, self.IPACGJHEIME)?;
+        }
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(15, self.ADADHIHDHJC)?;
+        }
+        for v in &self.IFJNGOLCGPI {
+            os.write_uint32(14, *v)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -168,19 +168,19 @@ impl ::protobuf::Message for RelicAvatarRecommendScRsp {
     }
 
     fn clear(&mut self) {
-        self.EOLGPJIGODN = 0;
-        self.EIDLLGNIOKP.clear();
-        self.retcode = 0;
         self.ROGUE_TALENT_STATUS_ENABLE = false;
+        self.IPACGJHEIME = 0;
+        self.ADADHIHDHJC = 0;
+        self.IFJNGOLCGPI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RelicAvatarRecommendScRsp {
         static instance: RelicAvatarRecommendScRsp = RelicAvatarRecommendScRsp {
-            EOLGPJIGODN: 0,
-            EIDLLGNIOKP: ::std::vec::Vec::new(),
-            retcode: 0,
             ROGUE_TALENT_STATUS_ENABLE: false,
+            IPACGJHEIME: 0,
+            ADADHIHDHJC: 0,
+            IFJNGOLCGPI: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -205,11 +205,11 @@ impl ::protobuf::reflect::ProtobufValue for RelicAvatarRecommendScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fRelicAvatarRecommendScRsp.proto\"\xb6\x01\n\x19RelicAvatarRecommen\
-    dScRsp\x12\x20\n\x0bEOLGPJIGODN\x18\x0f\x20\x01(\rR\x0bEOLGPJIGODN\x12\
-    \x20\n\x0bEIDLLGNIOKP\x18\r\x20\x03(\rR\x0bEIDLLGNIOKP\x12\x18\n\x07retc\
-    ode\x18\x0c\x20\x01(\rR\x07retcode\x12;\n\x1aROGUE_TALENT_STATUS_ENABLE\
-    \x18\x06\x20\x01(\x08R\x17ROGUETALENTSTATUSENABLEb\x06proto3\
+    \n\x1fRelicAvatarRecommendScRsp.proto\"\xbe\x01\n\x19RelicAvatarRecommen\
+    dScRsp\x12;\n\x1aROGUE_TALENT_STATUS_ENABLE\x18\x06\x20\x01(\x08R\x17ROG\
+    UETALENTSTATUSENABLE\x12\x20\n\x0bIPACGJHEIME\x18\x08\x20\x01(\rR\x0bIPA\
+    CGJHEIME\x12\x20\n\x0bADADHIHDHJC\x18\x0f\x20\x01(\rR\x0bADADHIHDHJC\x12\
+    \x20\n\x0bIFJNGOLCGPI\x18\x0e\x20\x03(\rR\x0bIFJNGOLCGPIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

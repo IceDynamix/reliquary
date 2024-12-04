@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RemoveRotaterScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RemoveRotaterScRsp.PNNKEEFNNOI)
-    pub PNNKEEFNNOI: ::protobuf::MessageField<super::OOBODNGFOAP::OOBODNGFOAP>,
-    // @@protoc_insertion_point(field:RemoveRotaterScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:RemoveRotaterScRsp.BBNNIDBMOMM)
-    pub BBNNIDBMOMM: ::protobuf::MessageField<super::KPHGEEFLHNP::KPHGEEFLHNP>,
+    // @@protoc_insertion_point(field:RemoveRotaterScRsp.DFOAOBFJNNB)
+    pub DFOAOBFJNNB: ::protobuf::MessageField<super::FFLMODAKJOC::FFLMODAKJOC>,
+    // @@protoc_insertion_point(field:RemoveRotaterScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:RemoveRotaterScRsp.CCMFCONAOGP)
+    pub CCMFCONAOGP: ::protobuf::MessageField<super::PEMFPDOPAFN::PEMFPDOPAFN>,
     // special fields
     // @@protoc_insertion_point(special_field:RemoveRotaterScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl RemoveRotaterScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OOBODNGFOAP::OOBODNGFOAP>(
-            "PNNKEEFNNOI",
-            |m: &RemoveRotaterScRsp| { &m.PNNKEEFNNOI },
-            |m: &mut RemoveRotaterScRsp| { &mut m.PNNKEEFNNOI },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FFLMODAKJOC::FFLMODAKJOC>(
+            "DFOAOBFJNNB",
+            |m: &RemoveRotaterScRsp| { &m.DFOAOBFJNNB },
+            |m: &mut RemoveRotaterScRsp| { &mut m.DFOAOBFJNNB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &RemoveRotaterScRsp| { &m.retcode },
-            |m: &mut RemoveRotaterScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &RemoveRotaterScRsp| { &m.ADADHIHDHJC },
+            |m: &mut RemoveRotaterScRsp| { &mut m.ADADHIHDHJC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KPHGEEFLHNP::KPHGEEFLHNP>(
-            "BBNNIDBMOMM",
-            |m: &RemoveRotaterScRsp| { &m.BBNNIDBMOMM },
-            |m: &mut RemoveRotaterScRsp| { &mut m.BBNNIDBMOMM },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PEMFPDOPAFN::PEMFPDOPAFN>(
+            "CCMFCONAOGP",
+            |m: &RemoveRotaterScRsp| { &m.CCMFCONAOGP },
+            |m: &mut RemoveRotaterScRsp| { &mut m.CCMFCONAOGP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RemoveRotaterScRsp>(
             "RemoveRotaterScRsp",
@@ -88,13 +88,13 @@ impl ::protobuf::Message for RemoveRotaterScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PNNKEEFNNOI)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DFOAOBFJNNB)?;
                 },
-                24 => {
-                    self.retcode = is.read_uint32()?;
+                56 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BBNNIDBMOMM)?;
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CCMFCONAOGP)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for RemoveRotaterScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.PNNKEEFNNOI.as_ref() {
+        if let Some(v) = self.DFOAOBFJNNB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.ADADHIHDHJC);
         }
-        if let Some(v) = self.BBNNIDBMOMM.as_ref() {
+        if let Some(v) = self.CCMFCONAOGP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -125,14 +125,14 @@ impl ::protobuf::Message for RemoveRotaterScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.PNNKEEFNNOI.as_ref() {
+        if let Some(v) = self.DFOAOBFJNNB.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(7, self.ADADHIHDHJC)?;
         }
-        if let Some(v) = self.BBNNIDBMOMM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        if let Some(v) = self.CCMFCONAOGP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,17 +151,17 @@ impl ::protobuf::Message for RemoveRotaterScRsp {
     }
 
     fn clear(&mut self) {
-        self.PNNKEEFNNOI.clear();
-        self.retcode = 0;
-        self.BBNNIDBMOMM.clear();
+        self.DFOAOBFJNNB.clear();
+        self.ADADHIHDHJC = 0;
+        self.CCMFCONAOGP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RemoveRotaterScRsp {
         static instance: RemoveRotaterScRsp = RemoveRotaterScRsp {
-            PNNKEEFNNOI: ::protobuf::MessageField::none(),
-            retcode: 0,
-            BBNNIDBMOMM: ::protobuf::MessageField::none(),
+            DFOAOBFJNNB: ::protobuf::MessageField::none(),
+            ADADHIHDHJC: 0,
+            CCMFCONAOGP: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,11 +186,11 @@ impl ::protobuf::reflect::ProtobufValue for RemoveRotaterScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18RemoveRotaterScRsp.proto\x1a\x11KPHGEEFLHNP.proto\x1a\x11OOBODNGFO\
-    AP.proto\"\x8e\x01\n\x12RemoveRotaterScRsp\x12.\n\x0bPNNKEEFNNOI\x18\t\
-    \x20\x01(\x0b2\x0c.OOBODNGFOAPR\x0bPNNKEEFNNOI\x12\x18\n\x07retcode\x18\
-    \x03\x20\x01(\rR\x07retcode\x12.\n\x0bBBNNIDBMOMM\x18\x06\x20\x01(\x0b2\
-    \x0c.KPHGEEFLHNPR\x0bBBNNIDBMOMMb\x06proto3\
+    \n\x18RemoveRotaterScRsp.proto\x1a\x11FFLMODAKJOC.proto\x1a\x11PEMFPDOPA\
+    FN.proto\"\x96\x01\n\x12RemoveRotaterScRsp\x12.\n\x0bDFOAOBFJNNB\x18\t\
+    \x20\x01(\x0b2\x0c.FFLMODAKJOCR\x0bDFOAOBFJNNB\x12\x20\n\x0bADADHIHDHJC\
+    \x18\x07\x20\x01(\rR\x0bADADHIHDHJC\x12.\n\x0bCCMFCONAOGP\x18\x0c\x20\
+    \x01(\x0b2\x0c.PEMFPDOPAFNR\x0bCCMFCONAOGPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -208,8 +208,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::KPHGEEFLHNP::file_descriptor().clone());
-            deps.push(super::OOBODNGFOAP::file_descriptor().clone());
+            deps.push(super::FFLMODAKJOC::file_descriptor().clone());
+            deps.push(super::PEMFPDOPAFN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RemoveRotaterScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

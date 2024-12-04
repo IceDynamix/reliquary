@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MultiplayerGetFightGateCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MultiplayerGetFightGateCsReq.NMGNOHPOJOP)
-    pub NMGNOHPOJOP: u32,
+    // @@protoc_insertion_point(field:MultiplayerGetFightGateCsReq.OFKGLABNANO)
+    pub OFKGLABNANO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MultiplayerGetFightGateCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl MultiplayerGetFightGateCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NMGNOHPOJOP",
-            |m: &MultiplayerGetFightGateCsReq| { &m.NMGNOHPOJOP },
-            |m: &mut MultiplayerGetFightGateCsReq| { &mut m.NMGNOHPOJOP },
+            "OFKGLABNANO",
+            |m: &MultiplayerGetFightGateCsReq| { &m.OFKGLABNANO },
+            |m: &mut MultiplayerGetFightGateCsReq| { &mut m.OFKGLABNANO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MultiplayerGetFightGateCsReq>(
             "MultiplayerGetFightGateCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for MultiplayerGetFightGateCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.NMGNOHPOJOP = is.read_uint32()?;
+                88 => {
+                    self.OFKGLABNANO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for MultiplayerGetFightGateCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NMGNOHPOJOP != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.NMGNOHPOJOP);
+        if self.OFKGLABNANO != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.OFKGLABNANO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for MultiplayerGetFightGateCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NMGNOHPOJOP != 0 {
-            os.write_uint32(8, self.NMGNOHPOJOP)?;
+        if self.OFKGLABNANO != 0 {
+            os.write_uint32(11, self.OFKGLABNANO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for MultiplayerGetFightGateCsReq {
     }
 
     fn clear(&mut self) {
-        self.NMGNOHPOJOP = 0;
+        self.OFKGLABNANO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MultiplayerGetFightGateCsReq {
         static instance: MultiplayerGetFightGateCsReq = MultiplayerGetFightGateCsReq {
-            NMGNOHPOJOP: 0,
+            OFKGLABNANO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for MultiplayerGetFightGateCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"MultiplayerGetFightGateCsReq.proto\"@\n\x1cMultiplayerGetFightGateCs\
-    Req\x12\x20\n\x0bNMGNOHPOJOP\x18\x08\x20\x01(\rR\x0bNMGNOHPOJOPb\x06prot\
+    Req\x12\x20\n\x0bOFKGLABNANO\x18\x0b\x20\x01(\rR\x0bOFKGLABNANOb\x06prot\
     o3\
 ";
 

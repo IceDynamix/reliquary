@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyGuessChooseCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyGuessChooseCsReq.MGOCICCJGFE)
-    pub MGOCICCJGFE: u32,
+    // @@protoc_insertion_point(field:MonopolyGuessChooseCsReq.NIJNJBFIMMB)
+    pub NIJNJBFIMMB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyGuessChooseCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl MonopolyGuessChooseCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MGOCICCJGFE",
-            |m: &MonopolyGuessChooseCsReq| { &m.MGOCICCJGFE },
-            |m: &mut MonopolyGuessChooseCsReq| { &mut m.MGOCICCJGFE },
+            "NIJNJBFIMMB",
+            |m: &MonopolyGuessChooseCsReq| { &m.NIJNJBFIMMB },
+            |m: &mut MonopolyGuessChooseCsReq| { &mut m.NIJNJBFIMMB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyGuessChooseCsReq>(
             "MonopolyGuessChooseCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for MonopolyGuessChooseCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.MGOCICCJGFE = is.read_uint32()?;
+                8 => {
+                    self.NIJNJBFIMMB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for MonopolyGuessChooseCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MGOCICCJGFE != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.MGOCICCJGFE);
+        if self.NIJNJBFIMMB != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.NIJNJBFIMMB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for MonopolyGuessChooseCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MGOCICCJGFE != 0 {
-            os.write_uint32(7, self.MGOCICCJGFE)?;
+        if self.NIJNJBFIMMB != 0 {
+            os.write_uint32(1, self.NIJNJBFIMMB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for MonopolyGuessChooseCsReq {
     }
 
     fn clear(&mut self) {
-        self.MGOCICCJGFE = 0;
+        self.NIJNJBFIMMB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyGuessChooseCsReq {
         static instance: MonopolyGuessChooseCsReq = MonopolyGuessChooseCsReq {
-            MGOCICCJGFE: 0,
+            NIJNJBFIMMB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyGuessChooseCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eMonopolyGuessChooseCsReq.proto\"<\n\x18MonopolyGuessChooseCsReq\
-    \x12\x20\n\x0bMGOCICCJGFE\x18\x07\x20\x01(\rR\x0bMGOCICCJGFEb\x06proto3\
+    \x12\x20\n\x0bNIJNJBFIMMB\x18\x01\x20\x01(\rR\x0bNIJNJBFIMMBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

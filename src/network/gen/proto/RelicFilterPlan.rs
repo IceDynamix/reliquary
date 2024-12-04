@@ -29,18 +29,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RelicFilterPlan {
     // message fields
-    // @@protoc_insertion_point(field:RelicFilterPlan.avatar_id_on_create)
-    pub avatar_id_on_create: u32,
-    // @@protoc_insertion_point(field:RelicFilterPlan.is_marked)
-    pub is_marked: bool,
-    // @@protoc_insertion_point(field:RelicFilterPlan.settings)
-    pub settings: ::protobuf::MessageField<super::RelicFilterPlanSettings::RelicFilterPlanSettings>,
-    // @@protoc_insertion_point(field:RelicFilterPlan.update_timestamp)
-    pub update_timestamp: i64,
-    // @@protoc_insertion_point(field:RelicFilterPlan.name)
-    pub name: ::std::string::String,
     // @@protoc_insertion_point(field:RelicFilterPlan.slot_index)
     pub slot_index: u32,
+    // @@protoc_insertion_point(field:RelicFilterPlan.is_marked)
+    pub is_marked: bool,
+    // @@protoc_insertion_point(field:RelicFilterPlan.name)
+    pub name: ::std::string::String,
+    // @@protoc_insertion_point(field:RelicFilterPlan.update_timestamp)
+    pub update_timestamp: i64,
+    // @@protoc_insertion_point(field:RelicFilterPlan.avatar_id_on_create)
+    pub avatar_id_on_create: u32,
+    // @@protoc_insertion_point(field:RelicFilterPlan.settings)
+    pub settings: ::protobuf::MessageField<super::RelicFilterPlanSettings::RelicFilterPlanSettings>,
     // @@protoc_insertion_point(field:RelicFilterPlan.icon)
     pub icon: ::protobuf::MessageField<super::RelicFilterPlanIcon::RelicFilterPlanIcon>,
     // special fields
@@ -63,24 +63,14 @@ impl RelicFilterPlan {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "avatar_id_on_create",
-            |m: &RelicFilterPlan| { &m.avatar_id_on_create },
-            |m: &mut RelicFilterPlan| { &mut m.avatar_id_on_create },
+            "slot_index",
+            |m: &RelicFilterPlan| { &m.slot_index },
+            |m: &mut RelicFilterPlan| { &mut m.slot_index },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_marked",
             |m: &RelicFilterPlan| { &m.is_marked },
             |m: &mut RelicFilterPlan| { &mut m.is_marked },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RelicFilterPlanSettings::RelicFilterPlanSettings>(
-            "settings",
-            |m: &RelicFilterPlan| { &m.settings },
-            |m: &mut RelicFilterPlan| { &mut m.settings },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "update_timestamp",
-            |m: &RelicFilterPlan| { &m.update_timestamp },
-            |m: &mut RelicFilterPlan| { &mut m.update_timestamp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "name",
@@ -88,9 +78,19 @@ impl RelicFilterPlan {
             |m: &mut RelicFilterPlan| { &mut m.name },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "slot_index",
-            |m: &RelicFilterPlan| { &m.slot_index },
-            |m: &mut RelicFilterPlan| { &mut m.slot_index },
+            "update_timestamp",
+            |m: &RelicFilterPlan| { &m.update_timestamp },
+            |m: &mut RelicFilterPlan| { &mut m.update_timestamp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "avatar_id_on_create",
+            |m: &RelicFilterPlan| { &m.avatar_id_on_create },
+            |m: &mut RelicFilterPlan| { &mut m.avatar_id_on_create },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RelicFilterPlanSettings::RelicFilterPlanSettings>(
+            "settings",
+            |m: &RelicFilterPlan| { &m.settings },
+            |m: &mut RelicFilterPlan| { &mut m.settings },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RelicFilterPlanIcon::RelicFilterPlanIcon>(
             "icon",
@@ -115,25 +115,25 @@ impl ::protobuf::Message for RelicFilterPlan {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.avatar_id_on_create = is.read_uint32()?;
-                },
-                120 => {
-                    self.is_marked = is.read_bool()?;
-                },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.settings)?;
-                },
-                112 => {
-                    self.update_timestamp = is.read_int64()?;
-                },
-                66 => {
-                    self.name = is.read_string()?;
-                },
-                48 => {
+                96 => {
                     self.slot_index = is.read_uint32()?;
                 },
-                90 => {
+                104 => {
+                    self.is_marked = is.read_bool()?;
+                },
+                114 => {
+                    self.name = is.read_string()?;
+                },
+                120 => {
+                    self.update_timestamp = is.read_int64()?;
+                },
+                80 => {
+                    self.avatar_id_on_create = is.read_uint32()?;
+                },
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.settings)?;
+                },
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.icon)?;
                 },
                 tag => {
@@ -148,24 +148,24 @@ impl ::protobuf::Message for RelicFilterPlan {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.avatar_id_on_create != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.avatar_id_on_create);
+        if self.slot_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.slot_index);
         }
         if self.is_marked != false {
             my_size += 1 + 1;
         }
+        if !self.name.is_empty() {
+            my_size += ::protobuf::rt::string_size(14, &self.name);
+        }
+        if self.update_timestamp != 0 {
+            my_size += ::protobuf::rt::int64_size(15, self.update_timestamp);
+        }
+        if self.avatar_id_on_create != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.avatar_id_on_create);
+        }
         if let Some(v) = self.settings.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.update_timestamp != 0 {
-            my_size += ::protobuf::rt::int64_size(14, self.update_timestamp);
-        }
-        if !self.name.is_empty() {
-            my_size += ::protobuf::rt::string_size(8, &self.name);
-        }
-        if self.slot_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.slot_index);
         }
         if let Some(v) = self.icon.as_ref() {
             let len = v.compute_size();
@@ -177,26 +177,26 @@ impl ::protobuf::Message for RelicFilterPlan {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.avatar_id_on_create != 0 {
-            os.write_uint32(3, self.avatar_id_on_create)?;
+        if self.slot_index != 0 {
+            os.write_uint32(12, self.slot_index)?;
         }
         if self.is_marked != false {
-            os.write_bool(15, self.is_marked)?;
-        }
-        if let Some(v) = self.settings.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
-        if self.update_timestamp != 0 {
-            os.write_int64(14, self.update_timestamp)?;
+            os.write_bool(13, self.is_marked)?;
         }
         if !self.name.is_empty() {
-            os.write_string(8, &self.name)?;
+            os.write_string(14, &self.name)?;
         }
-        if self.slot_index != 0 {
-            os.write_uint32(6, self.slot_index)?;
+        if self.update_timestamp != 0 {
+            os.write_int64(15, self.update_timestamp)?;
+        }
+        if self.avatar_id_on_create != 0 {
+            os.write_uint32(10, self.avatar_id_on_create)?;
+        }
+        if let Some(v) = self.settings.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if let Some(v) = self.icon.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -215,24 +215,24 @@ impl ::protobuf::Message for RelicFilterPlan {
     }
 
     fn clear(&mut self) {
-        self.avatar_id_on_create = 0;
-        self.is_marked = false;
-        self.settings.clear();
-        self.update_timestamp = 0;
-        self.name.clear();
         self.slot_index = 0;
+        self.is_marked = false;
+        self.name.clear();
+        self.update_timestamp = 0;
+        self.avatar_id_on_create = 0;
+        self.settings.clear();
         self.icon.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RelicFilterPlan {
         static instance: RelicFilterPlan = RelicFilterPlan {
-            avatar_id_on_create: 0,
-            is_marked: false,
-            settings: ::protobuf::MessageField::none(),
-            update_timestamp: 0,
-            name: ::std::string::String::new(),
             slot_index: 0,
+            is_marked: false,
+            name: ::std::string::String::new(),
+            update_timestamp: 0,
+            avatar_id_on_create: 0,
+            settings: ::protobuf::MessageField::none(),
             icon: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -259,14 +259,14 @@ impl ::protobuf::reflect::ProtobufValue for RelicFilterPlan {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15RelicFilterPlan.proto\x1a\x19RelicFilterPlanIcon.proto\x1a\x1dReli\
-    cFilterPlanSettings.proto\"\x9b\x02\n\x0fRelicFilterPlan\x12-\n\x13avata\
-    r_id_on_create\x18\x03\x20\x01(\rR\x10avatarIdOnCreate\x12\x1b\n\tis_mar\
-    ked\x18\x0f\x20\x01(\x08R\x08isMarked\x124\n\x08settings\x18\x05\x20\x01\
-    (\x0b2\x18.RelicFilterPlanSettingsR\x08settings\x12)\n\x10update_timesta\
-    mp\x18\x0e\x20\x01(\x03R\x0fupdateTimestamp\x12\x12\n\x04name\x18\x08\
-    \x20\x01(\tR\x04name\x12\x1d\n\nslot_index\x18\x06\x20\x01(\rR\tslotInde\
-    x\x12(\n\x04icon\x18\x0b\x20\x01(\x0b2\x14.RelicFilterPlanIconR\x04iconb\
-    \x06proto3\
+    cFilterPlanSettings.proto\"\x9b\x02\n\x0fRelicFilterPlan\x12\x1d\n\nslot\
+    _index\x18\x0c\x20\x01(\rR\tslotIndex\x12\x1b\n\tis_marked\x18\r\x20\x01\
+    (\x08R\x08isMarked\x12\x12\n\x04name\x18\x0e\x20\x01(\tR\x04name\x12)\n\
+    \x10update_timestamp\x18\x0f\x20\x01(\x03R\x0fupdateTimestamp\x12-\n\x13\
+    avatar_id_on_create\x18\n\x20\x01(\rR\x10avatarIdOnCreate\x124\n\x08sett\
+    ings\x18\x01\x20\x01(\x0b2\x18.RelicFilterPlanSettingsR\x08settings\x12(\
+    \n\x04icon\x18\t\x20\x01(\x0b2\x14.RelicFilterPlanIconR\x04iconb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
