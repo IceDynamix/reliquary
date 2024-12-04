@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeMailAttachmentCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeMailAttachmentCsReq.IJBDIMILHMJ)
-    pub IJBDIMILHMJ: u32,
-    // @@protoc_insertion_point(field:TakeMailAttachmentCsReq.INDIANNGFOJ)
-    pub INDIANNGFOJ: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:TakeMailAttachmentCsReq.mail_id_list)
+    pub mail_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:TakeMailAttachmentCsReq.optional_reward_id)
+    pub optional_reward_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeMailAttachmentCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl TakeMailAttachmentCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IJBDIMILHMJ",
-            |m: &TakeMailAttachmentCsReq| { &m.IJBDIMILHMJ },
-            |m: &mut TakeMailAttachmentCsReq| { &mut m.IJBDIMILHMJ },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "INDIANNGFOJ",
-            |m: &TakeMailAttachmentCsReq| { &m.INDIANNGFOJ },
-            |m: &mut TakeMailAttachmentCsReq| { &mut m.INDIANNGFOJ },
+            "mail_id_list",
+            |m: &TakeMailAttachmentCsReq| { &m.mail_id_list },
+            |m: &mut TakeMailAttachmentCsReq| { &mut m.mail_id_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "optional_reward_id",
+            |m: &TakeMailAttachmentCsReq| { &m.optional_reward_id },
+            |m: &mut TakeMailAttachmentCsReq| { &mut m.optional_reward_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeMailAttachmentCsReq>(
             "TakeMailAttachmentCsReq",
@@ -80,14 +80,14 @@ impl ::protobuf::Message for TakeMailAttachmentCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.IJBDIMILHMJ = is.read_uint32()?;
+                106 => {
+                    is.read_repeated_packed_uint32_into(&mut self.mail_id_list)?;
                 },
-                50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.INDIANNGFOJ)?;
+                104 => {
+                    self.mail_id_list.push(is.read_uint32()?);
                 },
-                48 => {
-                    self.INDIANNGFOJ.push(is.read_uint32()?);
+                96 => {
+                    self.optional_reward_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,24 +101,24 @@ impl ::protobuf::Message for TakeMailAttachmentCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IJBDIMILHMJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.IJBDIMILHMJ);
-        }
-        for value in &self.INDIANNGFOJ {
-            my_size += ::protobuf::rt::uint32_size(6, *value);
+        for value in &self.mail_id_list {
+            my_size += ::protobuf::rt::uint32_size(13, *value);
         };
+        if self.optional_reward_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.optional_reward_id);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IJBDIMILHMJ != 0 {
-            os.write_uint32(10, self.IJBDIMILHMJ)?;
-        }
-        for v in &self.INDIANNGFOJ {
-            os.write_uint32(6, *v)?;
+        for v in &self.mail_id_list {
+            os.write_uint32(13, *v)?;
         };
+        if self.optional_reward_id != 0 {
+            os.write_uint32(12, self.optional_reward_id)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -136,15 +136,15 @@ impl ::protobuf::Message for TakeMailAttachmentCsReq {
     }
 
     fn clear(&mut self) {
-        self.IJBDIMILHMJ = 0;
-        self.INDIANNGFOJ.clear();
+        self.mail_id_list.clear();
+        self.optional_reward_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeMailAttachmentCsReq {
         static instance: TakeMailAttachmentCsReq = TakeMailAttachmentCsReq {
-            IJBDIMILHMJ: 0,
-            INDIANNGFOJ: ::std::vec::Vec::new(),
+            mail_id_list: ::std::vec::Vec::new(),
+            optional_reward_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -169,9 +169,10 @@ impl ::protobuf::reflect::ProtobufValue for TakeMailAttachmentCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dTakeMailAttachmentCsReq.proto\"]\n\x17TakeMailAttachmentCsReq\x12\
-    \x20\n\x0bIJBDIMILHMJ\x18\n\x20\x01(\rR\x0bIJBDIMILHMJ\x12\x20\n\x0bINDI\
-    ANNGFOJ\x18\x06\x20\x03(\rR\x0bINDIANNGFOJb\x06proto3\
+    \n\x1dTakeMailAttachmentCsReq.proto\"i\n\x17TakeMailAttachmentCsReq\x12\
+    \x20\n\x0cmail_id_list\x18\r\x20\x03(\rR\nmailIdList\x12,\n\x12optional_\
+    reward_id\x18\x0c\x20\x01(\rR\x10optionalRewardIdB\x15\n\x13emu.lunarcor\
+    e.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

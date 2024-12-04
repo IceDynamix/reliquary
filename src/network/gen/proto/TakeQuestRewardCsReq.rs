@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeQuestRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeQuestRewardCsReq.MGDMCBGHABL)
-    pub MGDMCBGHABL: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:TakeQuestRewardCsReq.AFCIJICKMBO)
+    pub AFCIJICKMBO: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:TakeQuestRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl TakeQuestRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MGDMCBGHABL",
-            |m: &TakeQuestRewardCsReq| { &m.MGDMCBGHABL },
-            |m: &mut TakeQuestRewardCsReq| { &mut m.MGDMCBGHABL },
+            "AFCIJICKMBO",
+            |m: &TakeQuestRewardCsReq| { &m.AFCIJICKMBO },
+            |m: &mut TakeQuestRewardCsReq| { &mut m.AFCIJICKMBO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeQuestRewardCsReq>(
             "TakeQuestRewardCsReq",
@@ -73,11 +73,11 @@ impl ::protobuf::Message for TakeQuestRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.MGDMCBGHABL)?;
+                106 => {
+                    is.read_repeated_packed_uint32_into(&mut self.AFCIJICKMBO)?;
                 },
-                40 => {
-                    self.MGDMCBGHABL.push(is.read_uint32()?);
+                104 => {
+                    self.AFCIJICKMBO.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -91,8 +91,8 @@ impl ::protobuf::Message for TakeQuestRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.MGDMCBGHABL {
-            my_size += ::protobuf::rt::uint32_size(5, *value);
+        for value in &self.AFCIJICKMBO {
+            my_size += ::protobuf::rt::uint32_size(13, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -100,8 +100,8 @@ impl ::protobuf::Message for TakeQuestRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.MGDMCBGHABL {
-            os.write_uint32(5, *v)?;
+        for v in &self.AFCIJICKMBO {
+            os.write_uint32(13, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -120,13 +120,13 @@ impl ::protobuf::Message for TakeQuestRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.MGDMCBGHABL.clear();
+        self.AFCIJICKMBO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeQuestRewardCsReq {
         static instance: TakeQuestRewardCsReq = TakeQuestRewardCsReq {
-            MGDMCBGHABL: ::std::vec::Vec::new(),
+            AFCIJICKMBO: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -152,7 +152,7 @@ impl ::protobuf::reflect::ProtobufValue for TakeQuestRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aTakeQuestRewardCsReq.proto\"8\n\x14TakeQuestRewardCsReq\x12\x20\n\
-    \x0bMGDMCBGHABL\x18\x05\x20\x03(\rR\x0bMGDMCBGHABLb\x06proto3\
+    \x0bAFCIJICKMBO\x18\r\x20\x03(\rR\x0bAFCIJICKMBOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

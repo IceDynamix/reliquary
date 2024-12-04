@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFriendRecommendListInfoCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetFriendRecommendListInfoCsReq.COBDHLMALKI)
-    pub COBDHLMALKI: bool,
+    // @@protoc_insertion_point(field:GetFriendRecommendListInfoCsReq.LJEEPKLGLDM)
+    pub LJEEPKLGLDM: bool,
     // special fields
     // @@protoc_insertion_point(special_field:GetFriendRecommendListInfoCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl GetFriendRecommendListInfoCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "COBDHLMALKI",
-            |m: &GetFriendRecommendListInfoCsReq| { &m.COBDHLMALKI },
-            |m: &mut GetFriendRecommendListInfoCsReq| { &mut m.COBDHLMALKI },
+            "LJEEPKLGLDM",
+            |m: &GetFriendRecommendListInfoCsReq| { &m.LJEEPKLGLDM },
+            |m: &mut GetFriendRecommendListInfoCsReq| { &mut m.LJEEPKLGLDM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetFriendRecommendListInfoCsReq>(
             "GetFriendRecommendListInfoCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for GetFriendRecommendListInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.COBDHLMALKI = is.read_bool()?;
+                48 => {
+                    self.LJEEPKLGLDM = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for GetFriendRecommendListInfoCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.COBDHLMALKI != false {
+        if self.LJEEPKLGLDM != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -97,8 +97,8 @@ impl ::protobuf::Message for GetFriendRecommendListInfoCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.COBDHLMALKI != false {
-            os.write_bool(9, self.COBDHLMALKI)?;
+        if self.LJEEPKLGLDM != false {
+            os.write_bool(6, self.LJEEPKLGLDM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for GetFriendRecommendListInfoCsReq {
     }
 
     fn clear(&mut self) {
-        self.COBDHLMALKI = false;
+        self.LJEEPKLGLDM = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFriendRecommendListInfoCsReq {
         static instance: GetFriendRecommendListInfoCsReq = GetFriendRecommendListInfoCsReq {
-            COBDHLMALKI: false,
+            LJEEPKLGLDM: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for GetFriendRecommendListInfoCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%GetFriendRecommendListInfoCsReq.proto\"C\n\x1fGetFriendRecommendListI\
-    nfoCsReq\x12\x20\n\x0bCOBDHLMALKI\x18\t\x20\x01(\x08R\x0bCOBDHLMALKIb\
+    nfoCsReq\x12\x20\n\x0bLJEEPKLGLDM\x18\x06\x20\x01(\x08R\x0bLJEEPKLGLDMb\
     \x06proto3\
 ";
 

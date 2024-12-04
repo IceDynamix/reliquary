@@ -186,7 +186,8 @@ impl ::protobuf::reflect::ProtobufValue for RelicAffix {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x10RelicAffix.proto\"M\n\nRelicAffix\x12\x19\n\x08affix_id\x18\x01\
     \x20\x01(\rR\x07affixId\x12\x10\n\x03cnt\x18\x02\x20\x01(\rR\x03cnt\x12\
-    \x12\n\x04step\x18\x03\x20\x01(\rR\x04stepb\x06proto3\
+    \x12\n\x04step\x18\x03\x20\x01(\rR\x04stepB\x15\n\x13emu.lunarcore.proto\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

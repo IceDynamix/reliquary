@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncChessRogueMainStoryFinishScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncChessRogueMainStoryFinishScNotify.LACBICGDLJH)
-    pub LACBICGDLJH: u32,
-    // @@protoc_insertion_point(field:SyncChessRogueMainStoryFinishScNotify.MKCLAPDPKDD)
-    pub MKCLAPDPKDD: u32,
+    // @@protoc_insertion_point(field:SyncChessRogueMainStoryFinishScNotify.LBMIPLJOCFE)
+    pub LBMIPLJOCFE: u32,
+    // @@protoc_insertion_point(field:SyncChessRogueMainStoryFinishScNotify.CEHLEHNCNOF)
+    pub CEHLEHNCNOF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SyncChessRogueMainStoryFinishScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl SyncChessRogueMainStoryFinishScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LACBICGDLJH",
-            |m: &SyncChessRogueMainStoryFinishScNotify| { &m.LACBICGDLJH },
-            |m: &mut SyncChessRogueMainStoryFinishScNotify| { &mut m.LACBICGDLJH },
+            "LBMIPLJOCFE",
+            |m: &SyncChessRogueMainStoryFinishScNotify| { &m.LBMIPLJOCFE },
+            |m: &mut SyncChessRogueMainStoryFinishScNotify| { &mut m.LBMIPLJOCFE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MKCLAPDPKDD",
-            |m: &SyncChessRogueMainStoryFinishScNotify| { &m.MKCLAPDPKDD },
-            |m: &mut SyncChessRogueMainStoryFinishScNotify| { &mut m.MKCLAPDPKDD },
+            "CEHLEHNCNOF",
+            |m: &SyncChessRogueMainStoryFinishScNotify| { &m.CEHLEHNCNOF },
+            |m: &mut SyncChessRogueMainStoryFinishScNotify| { &mut m.CEHLEHNCNOF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncChessRogueMainStoryFinishScNotify>(
             "SyncChessRogueMainStoryFinishScNotify",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for SyncChessRogueMainStoryFinishScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.LACBICGDLJH = is.read_uint32()?;
+                80 => {
+                    self.LBMIPLJOCFE = is.read_uint32()?;
                 },
-                32 => {
-                    self.MKCLAPDPKDD = is.read_uint32()?;
+                96 => {
+                    self.CEHLEHNCNOF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for SyncChessRogueMainStoryFinishScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LACBICGDLJH != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.LACBICGDLJH);
+        if self.LBMIPLJOCFE != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.LBMIPLJOCFE);
         }
-        if self.MKCLAPDPKDD != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.MKCLAPDPKDD);
+        if self.CEHLEHNCNOF != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.CEHLEHNCNOF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for SyncChessRogueMainStoryFinishScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LACBICGDLJH != 0 {
-            os.write_uint32(7, self.LACBICGDLJH)?;
+        if self.LBMIPLJOCFE != 0 {
+            os.write_uint32(10, self.LBMIPLJOCFE)?;
         }
-        if self.MKCLAPDPKDD != 0 {
-            os.write_uint32(4, self.MKCLAPDPKDD)?;
+        if self.CEHLEHNCNOF != 0 {
+            os.write_uint32(12, self.CEHLEHNCNOF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for SyncChessRogueMainStoryFinishScNotify {
     }
 
     fn clear(&mut self) {
-        self.LACBICGDLJH = 0;
-        self.MKCLAPDPKDD = 0;
+        self.LBMIPLJOCFE = 0;
+        self.CEHLEHNCNOF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncChessRogueMainStoryFinishScNotify {
         static instance: SyncChessRogueMainStoryFinishScNotify = SyncChessRogueMainStoryFinishScNotify {
-            LACBICGDLJH: 0,
-            MKCLAPDPKDD: 0,
+            LBMIPLJOCFE: 0,
+            CEHLEHNCNOF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncChessRogueMainStoryFinishScNotif
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+SyncChessRogueMainStoryFinishScNotify.proto\"k\n%SyncChessRogueMainSt\
-    oryFinishScNotify\x12\x20\n\x0bLACBICGDLJH\x18\x07\x20\x01(\rR\x0bLACBIC\
-    GDLJH\x12\x20\n\x0bMKCLAPDPKDD\x18\x04\x20\x01(\rR\x0bMKCLAPDPKDDb\x06pr\
-    oto3\
+    oryFinishScNotify\x12\x20\n\x0bLBMIPLJOCFE\x18\n\x20\x01(\rR\x0bLBMIPLJO\
+    CFE\x12\x20\n\x0bCEHLEHNCNOF\x18\x0c\x20\x01(\rR\x0bCEHLEHNCNOFb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

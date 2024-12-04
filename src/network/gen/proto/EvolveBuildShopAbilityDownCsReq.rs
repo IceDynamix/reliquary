@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EvolveBuildShopAbilityDownCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EvolveBuildShopAbilityDownCsReq.ICKOBLBOKIH)
-    pub ICKOBLBOKIH: u32,
-    // @@protoc_insertion_point(field:EvolveBuildShopAbilityDownCsReq.level)
-    pub level: u32,
+    // @@protoc_insertion_point(field:EvolveBuildShopAbilityDownCsReq.GJGFOMCBMDO)
+    pub GJGFOMCBMDO: u32,
+    // @@protoc_insertion_point(field:EvolveBuildShopAbilityDownCsReq.JKOCJIMAGBN)
+    pub JKOCJIMAGBN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EvolveBuildShopAbilityDownCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl EvolveBuildShopAbilityDownCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ICKOBLBOKIH",
-            |m: &EvolveBuildShopAbilityDownCsReq| { &m.ICKOBLBOKIH },
-            |m: &mut EvolveBuildShopAbilityDownCsReq| { &mut m.ICKOBLBOKIH },
+            "GJGFOMCBMDO",
+            |m: &EvolveBuildShopAbilityDownCsReq| { &m.GJGFOMCBMDO },
+            |m: &mut EvolveBuildShopAbilityDownCsReq| { &mut m.GJGFOMCBMDO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &EvolveBuildShopAbilityDownCsReq| { &m.level },
-            |m: &mut EvolveBuildShopAbilityDownCsReq| { &mut m.level },
+            "JKOCJIMAGBN",
+            |m: &EvolveBuildShopAbilityDownCsReq| { &m.JKOCJIMAGBN },
+            |m: &mut EvolveBuildShopAbilityDownCsReq| { &mut m.JKOCJIMAGBN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EvolveBuildShopAbilityDownCsReq>(
             "EvolveBuildShopAbilityDownCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for EvolveBuildShopAbilityDownCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.ICKOBLBOKIH = is.read_uint32()?;
+                56 => {
+                    self.GJGFOMCBMDO = is.read_uint32()?;
                 },
-                112 => {
-                    self.level = is.read_uint32()?;
+                80 => {
+                    self.JKOCJIMAGBN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for EvolveBuildShopAbilityDownCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ICKOBLBOKIH != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.ICKOBLBOKIH);
+        if self.GJGFOMCBMDO != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.GJGFOMCBMDO);
         }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.level);
+        if self.JKOCJIMAGBN != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.JKOCJIMAGBN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for EvolveBuildShopAbilityDownCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ICKOBLBOKIH != 0 {
-            os.write_uint32(9, self.ICKOBLBOKIH)?;
+        if self.GJGFOMCBMDO != 0 {
+            os.write_uint32(7, self.GJGFOMCBMDO)?;
         }
-        if self.level != 0 {
-            os.write_uint32(14, self.level)?;
+        if self.JKOCJIMAGBN != 0 {
+            os.write_uint32(10, self.JKOCJIMAGBN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for EvolveBuildShopAbilityDownCsReq {
     }
 
     fn clear(&mut self) {
-        self.ICKOBLBOKIH = 0;
-        self.level = 0;
+        self.GJGFOMCBMDO = 0;
+        self.JKOCJIMAGBN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EvolveBuildShopAbilityDownCsReq {
         static instance: EvolveBuildShopAbilityDownCsReq = EvolveBuildShopAbilityDownCsReq {
-            ICKOBLBOKIH: 0,
-            level: 0,
+            GJGFOMCBMDO: 0,
+            JKOCJIMAGBN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildShopAbilityDownCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n%EvolveBuildShopAbilityDownCsReq.proto\"Y\n\x1fEvolveBuildShopAbilityD\
-    ownCsReq\x12\x20\n\x0bICKOBLBOKIH\x18\t\x20\x01(\rR\x0bICKOBLBOKIH\x12\
-    \x14\n\x05level\x18\x0e\x20\x01(\rR\x05levelb\x06proto3\
+    \n%EvolveBuildShopAbilityDownCsReq.proto\"e\n\x1fEvolveBuildShopAbilityD\
+    ownCsReq\x12\x20\n\x0bGJGFOMCBMDO\x18\x07\x20\x01(\rR\x0bGJGFOMCBMDO\x12\
+    \x20\n\x0bJKOCJIMAGBN\x18\n\x20\x01(\rR\x0bJKOCJIMAGBNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

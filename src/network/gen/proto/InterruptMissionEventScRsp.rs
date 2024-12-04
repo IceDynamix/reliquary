@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct InterruptMissionEventScRsp {
     // message fields
-    // @@protoc_insertion_point(field:InterruptMissionEventScRsp.LEAPBHCOHII)
-    pub LEAPBHCOHII: u32,
-    // @@protoc_insertion_point(field:InterruptMissionEventScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:InterruptMissionEventScRsp.CBMBKGCHMOK)
+    pub CBMBKGCHMOK: u32,
+    // @@protoc_insertion_point(field:InterruptMissionEventScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:InterruptMissionEventScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl InterruptMissionEventScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LEAPBHCOHII",
-            |m: &InterruptMissionEventScRsp| { &m.LEAPBHCOHII },
-            |m: &mut InterruptMissionEventScRsp| { &mut m.LEAPBHCOHII },
+            "CBMBKGCHMOK",
+            |m: &InterruptMissionEventScRsp| { &m.CBMBKGCHMOK },
+            |m: &mut InterruptMissionEventScRsp| { &mut m.CBMBKGCHMOK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &InterruptMissionEventScRsp| { &m.retcode },
-            |m: &mut InterruptMissionEventScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &InterruptMissionEventScRsp| { &m.ADADHIHDHJC },
+            |m: &mut InterruptMissionEventScRsp| { &mut m.ADADHIHDHJC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<InterruptMissionEventScRsp>(
             "InterruptMissionEventScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for InterruptMissionEventScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.LEAPBHCOHII = is.read_uint32()?;
+                120 => {
+                    self.CBMBKGCHMOK = is.read_uint32()?;
                 },
-                48 => {
-                    self.retcode = is.read_uint32()?;
+                112 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for InterruptMissionEventScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LEAPBHCOHII != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.LEAPBHCOHII);
+        if self.CBMBKGCHMOK != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.CBMBKGCHMOK);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.ADADHIHDHJC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for InterruptMissionEventScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LEAPBHCOHII != 0 {
-            os.write_uint32(11, self.LEAPBHCOHII)?;
+        if self.CBMBKGCHMOK != 0 {
+            os.write_uint32(15, self.CBMBKGCHMOK)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(14, self.ADADHIHDHJC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for InterruptMissionEventScRsp {
     }
 
     fn clear(&mut self) {
-        self.LEAPBHCOHII = 0;
-        self.retcode = 0;
+        self.CBMBKGCHMOK = 0;
+        self.ADADHIHDHJC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static InterruptMissionEventScRsp {
         static instance: InterruptMissionEventScRsp = InterruptMissionEventScRsp {
-            LEAPBHCOHII: 0,
-            retcode: 0,
+            CBMBKGCHMOK: 0,
+            ADADHIHDHJC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for InterruptMissionEventScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20InterruptMissionEventScRsp.proto\"X\n\x1aInterruptMissionEventScRs\
-    p\x12\x20\n\x0bLEAPBHCOHII\x18\x0b\x20\x01(\rR\x0bLEAPBHCOHII\x12\x18\n\
-    \x07retcode\x18\x06\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x20InterruptMissionEventScRsp.proto\"`\n\x1aInterruptMissionEventScRs\
+    p\x12\x20\n\x0bCBMBKGCHMOK\x18\x0f\x20\x01(\rR\x0bCBMBKGCHMOK\x12\x20\n\
+    \x0bADADHIHDHJC\x18\x0e\x20\x01(\rR\x0bADADHIHDHJCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

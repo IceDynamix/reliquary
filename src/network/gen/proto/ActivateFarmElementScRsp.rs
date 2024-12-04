@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ActivateFarmElementScRsp {
     // message fields
+    // @@protoc_insertion_point(field:ActivateFarmElementScRsp.world_level)
+    pub world_level: u32,
+    // @@protoc_insertion_point(field:ActivateFarmElementScRsp.entity_id)
+    pub entity_id: u32,
     // @@protoc_insertion_point(field:ActivateFarmElementScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:ActivateFarmElementScRsp.GENANPJMLBM)
-    pub GENANPJMLBM: u32,
-    // @@protoc_insertion_point(field:ActivateFarmElementScRsp.MMMOHAJFMID)
-    pub MMMOHAJFMID: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ActivateFarmElementScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl ActivateFarmElementScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "world_level",
+            |m: &ActivateFarmElementScRsp| { &m.world_level },
+            |m: &mut ActivateFarmElementScRsp| { &mut m.world_level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "entity_id",
+            |m: &ActivateFarmElementScRsp| { &m.entity_id },
+            |m: &mut ActivateFarmElementScRsp| { &mut m.entity_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &ActivateFarmElementScRsp| { &m.retcode },
             |m: &mut ActivateFarmElementScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GENANPJMLBM",
-            |m: &ActivateFarmElementScRsp| { &m.GENANPJMLBM },
-            |m: &mut ActivateFarmElementScRsp| { &mut m.GENANPJMLBM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MMMOHAJFMID",
-            |m: &ActivateFarmElementScRsp| { &m.MMMOHAJFMID },
-            |m: &mut ActivateFarmElementScRsp| { &mut m.MMMOHAJFMID },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ActivateFarmElementScRsp>(
             "ActivateFarmElementScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for ActivateFarmElementScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                112 => {
-                    self.GENANPJMLBM = is.read_uint32()?;
+                104 => {
+                    self.world_level = is.read_uint32()?;
                 },
                 80 => {
-                    self.MMMOHAJFMID = is.read_uint32()?;
+                    self.entity_id = is.read_uint32()?;
+                },
+                112 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for ActivateFarmElementScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.world_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.world_level);
+        }
+        if self.entity_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.entity_id);
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
-        }
-        if self.GENANPJMLBM != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.GENANPJMLBM);
-        }
-        if self.MMMOHAJFMID != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.MMMOHAJFMID);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for ActivateFarmElementScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.world_level != 0 {
+            os.write_uint32(13, self.world_level)?;
+        }
+        if self.entity_id != 0 {
+            os.write_uint32(10, self.entity_id)?;
+        }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
-        }
-        if self.GENANPJMLBM != 0 {
-            os.write_uint32(14, self.GENANPJMLBM)?;
-        }
-        if self.MMMOHAJFMID != 0 {
-            os.write_uint32(10, self.MMMOHAJFMID)?;
+            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for ActivateFarmElementScRsp {
     }
 
     fn clear(&mut self) {
+        self.world_level = 0;
+        self.entity_id = 0;
         self.retcode = 0;
-        self.GENANPJMLBM = 0;
-        self.MMMOHAJFMID = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ActivateFarmElementScRsp {
         static instance: ActivateFarmElementScRsp = ActivateFarmElementScRsp {
+            world_level: 0,
+            entity_id: 0,
             retcode: 0,
-            GENANPJMLBM: 0,
-            MMMOHAJFMID: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for ActivateFarmElementScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eActivateFarmElementScRsp.proto\"x\n\x18ActivateFarmElementScRsp\
-    \x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcode\x12\x20\n\x0bGENANP\
-    JMLBM\x18\x0e\x20\x01(\rR\x0bGENANPJMLBM\x12\x20\n\x0bMMMOHAJFMID\x18\n\
-    \x20\x01(\rR\x0bMMMOHAJFMIDb\x06proto3\
+    \n\x1eActivateFarmElementScRsp.proto\"r\n\x18ActivateFarmElementScRsp\
+    \x12\x1f\n\x0bworld_level\x18\r\x20\x01(\rR\nworldLevel\x12\x1b\n\tentit\
+    y_id\x18\n\x20\x01(\rR\x08entityId\x12\x18\n\x07retcode\x18\x0e\x20\x01(\
+    \rR\x07retcodeB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

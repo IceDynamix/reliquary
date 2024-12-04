@@ -106,7 +106,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11RogueStatus.proto*\x89\x01\n\x0bRogueStatus\x12\x15\n\x11ROGUE_STA\
     TUS_NONE\x10\0\x12\x16\n\x12ROGUE_STATUS_DOING\x10\x01\x12\x18\n\x14ROGU\
     E_STATUS_PENDING\x10\x02\x12\x18\n\x14ROGUE_STATUS_ENDLESS\x10\x03\x12\
-    \x17\n\x13ROGUE_STATUS_FINISH\x10\x04b\x06proto3\
+    \x17\n\x13ROGUE_STATUS_FINISH\x10\x04B\x15\n\x13emu.lunarcore.protob\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,18 +30,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdServerPrefsType {
     // @@protoc_insertion_point(enum_value:CmdServerPrefsType.CmdServerPrefsTypeNone)
     CmdServerPrefsTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdServerPrefsType.CmdUpdateServerPrefsDataScRsp)
-    CmdUpdateServerPrefsDataScRsp = 6177,
     // @@protoc_insertion_point(enum_value:CmdServerPrefsType.CmdGetAllServerPrefsDataCsReq)
-    CmdGetAllServerPrefsDataCsReq = 6198,
-    // @@protoc_insertion_point(enum_value:CmdServerPrefsType.CmdGetServerPrefsDataScRsp)
-    CmdGetServerPrefsDataScRsp = 6142,
+    CmdGetAllServerPrefsDataCsReq = 6159,
     // @@protoc_insertion_point(enum_value:CmdServerPrefsType.CmdUpdateServerPrefsDataCsReq)
-    CmdUpdateServerPrefsDataCsReq = 6179,
-    // @@protoc_insertion_point(enum_value:CmdServerPrefsType.CmdGetAllServerPrefsDataScRsp)
-    CmdGetAllServerPrefsDataScRsp = 6171,
+    CmdUpdateServerPrefsDataCsReq = 6139,
     // @@protoc_insertion_point(enum_value:CmdServerPrefsType.CmdGetServerPrefsDataCsReq)
-    CmdGetServerPrefsDataCsReq = 6183,
+    CmdGetServerPrefsDataCsReq = 6103,
+    // @@protoc_insertion_point(enum_value:CmdServerPrefsType.CmdGetAllServerPrefsDataScRsp)
+    CmdGetAllServerPrefsDataScRsp = 6120,
+    // @@protoc_insertion_point(enum_value:CmdServerPrefsType.CmdGetServerPrefsDataScRsp)
+    CmdGetServerPrefsDataScRsp = 6146,
+    // @@protoc_insertion_point(enum_value:CmdServerPrefsType.CmdUpdateServerPrefsDataScRsp)
+    CmdUpdateServerPrefsDataScRsp = 6153,
 }
 
 impl ::protobuf::Enum for CmdServerPrefsType {
@@ -54,12 +54,12 @@ impl ::protobuf::Enum for CmdServerPrefsType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdServerPrefsType> {
         match value {
             0 => ::std::option::Option::Some(CmdServerPrefsType::CmdServerPrefsTypeNone),
-            6177 => ::std::option::Option::Some(CmdServerPrefsType::CmdUpdateServerPrefsDataScRsp),
-            6198 => ::std::option::Option::Some(CmdServerPrefsType::CmdGetAllServerPrefsDataCsReq),
-            6142 => ::std::option::Option::Some(CmdServerPrefsType::CmdGetServerPrefsDataScRsp),
-            6179 => ::std::option::Option::Some(CmdServerPrefsType::CmdUpdateServerPrefsDataCsReq),
-            6171 => ::std::option::Option::Some(CmdServerPrefsType::CmdGetAllServerPrefsDataScRsp),
-            6183 => ::std::option::Option::Some(CmdServerPrefsType::CmdGetServerPrefsDataCsReq),
+            6159 => ::std::option::Option::Some(CmdServerPrefsType::CmdGetAllServerPrefsDataCsReq),
+            6139 => ::std::option::Option::Some(CmdServerPrefsType::CmdUpdateServerPrefsDataCsReq),
+            6103 => ::std::option::Option::Some(CmdServerPrefsType::CmdGetServerPrefsDataCsReq),
+            6120 => ::std::option::Option::Some(CmdServerPrefsType::CmdGetAllServerPrefsDataScRsp),
+            6146 => ::std::option::Option::Some(CmdServerPrefsType::CmdGetServerPrefsDataScRsp),
+            6153 => ::std::option::Option::Some(CmdServerPrefsType::CmdUpdateServerPrefsDataScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -67,24 +67,24 @@ impl ::protobuf::Enum for CmdServerPrefsType {
     fn from_str(str: &str) -> ::std::option::Option<CmdServerPrefsType> {
         match str {
             "CmdServerPrefsTypeNone" => ::std::option::Option::Some(CmdServerPrefsType::CmdServerPrefsTypeNone),
-            "CmdUpdateServerPrefsDataScRsp" => ::std::option::Option::Some(CmdServerPrefsType::CmdUpdateServerPrefsDataScRsp),
             "CmdGetAllServerPrefsDataCsReq" => ::std::option::Option::Some(CmdServerPrefsType::CmdGetAllServerPrefsDataCsReq),
-            "CmdGetServerPrefsDataScRsp" => ::std::option::Option::Some(CmdServerPrefsType::CmdGetServerPrefsDataScRsp),
             "CmdUpdateServerPrefsDataCsReq" => ::std::option::Option::Some(CmdServerPrefsType::CmdUpdateServerPrefsDataCsReq),
-            "CmdGetAllServerPrefsDataScRsp" => ::std::option::Option::Some(CmdServerPrefsType::CmdGetAllServerPrefsDataScRsp),
             "CmdGetServerPrefsDataCsReq" => ::std::option::Option::Some(CmdServerPrefsType::CmdGetServerPrefsDataCsReq),
+            "CmdGetAllServerPrefsDataScRsp" => ::std::option::Option::Some(CmdServerPrefsType::CmdGetAllServerPrefsDataScRsp),
+            "CmdGetServerPrefsDataScRsp" => ::std::option::Option::Some(CmdServerPrefsType::CmdGetServerPrefsDataScRsp),
+            "CmdUpdateServerPrefsDataScRsp" => ::std::option::Option::Some(CmdServerPrefsType::CmdUpdateServerPrefsDataScRsp),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdServerPrefsType] = &[
         CmdServerPrefsType::CmdServerPrefsTypeNone,
-        CmdServerPrefsType::CmdUpdateServerPrefsDataScRsp,
         CmdServerPrefsType::CmdGetAllServerPrefsDataCsReq,
-        CmdServerPrefsType::CmdGetServerPrefsDataScRsp,
         CmdServerPrefsType::CmdUpdateServerPrefsDataCsReq,
-        CmdServerPrefsType::CmdGetAllServerPrefsDataScRsp,
         CmdServerPrefsType::CmdGetServerPrefsDataCsReq,
+        CmdServerPrefsType::CmdGetAllServerPrefsDataScRsp,
+        CmdServerPrefsType::CmdGetServerPrefsDataScRsp,
+        CmdServerPrefsType::CmdUpdateServerPrefsDataScRsp,
     ];
 }
 
@@ -97,12 +97,12 @@ impl ::protobuf::EnumFull for CmdServerPrefsType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdServerPrefsType::CmdServerPrefsTypeNone => 0,
-            CmdServerPrefsType::CmdUpdateServerPrefsDataScRsp => 1,
-            CmdServerPrefsType::CmdGetAllServerPrefsDataCsReq => 2,
-            CmdServerPrefsType::CmdGetServerPrefsDataScRsp => 3,
-            CmdServerPrefsType::CmdUpdateServerPrefsDataCsReq => 4,
-            CmdServerPrefsType::CmdGetAllServerPrefsDataScRsp => 5,
-            CmdServerPrefsType::CmdGetServerPrefsDataCsReq => 6,
+            CmdServerPrefsType::CmdGetAllServerPrefsDataCsReq => 1,
+            CmdServerPrefsType::CmdUpdateServerPrefsDataCsReq => 2,
+            CmdServerPrefsType::CmdGetServerPrefsDataCsReq => 3,
+            CmdServerPrefsType::CmdGetAllServerPrefsDataScRsp => 4,
+            CmdServerPrefsType::CmdGetServerPrefsDataScRsp => 5,
+            CmdServerPrefsType::CmdUpdateServerPrefsDataScRsp => 6,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -122,11 +122,11 @@ impl CmdServerPrefsType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18CmdServerPrefsType.proto*\x82\x02\n\x12CmdServerPrefsType\x12\x1a\
-    \n\x16CmdServerPrefsTypeNone\x10\0\x12\"\n\x1dCmdUpdateServerPrefsDataSc\
-    Rsp\x10\xa10\x12\"\n\x1dCmdGetAllServerPrefsDataCsReq\x10\xb60\x12\x1f\n\
-    \x1aCmdGetServerPrefsDataScRsp\x10\xfe/\x12\"\n\x1dCmdUpdateServerPrefsD\
-    ataCsReq\x10\xa30\x12\"\n\x1dCmdGetAllServerPrefsDataScRsp\x10\x9b0\x12\
-    \x1f\n\x1aCmdGetServerPrefsDataCsReq\x10\xa70b\x06proto3\
+    \n\x16CmdServerPrefsTypeNone\x10\0\x12\"\n\x1dCmdGetAllServerPrefsDataCs\
+    Req\x10\x8f0\x12\"\n\x1dCmdUpdateServerPrefsDataCsReq\x10\xfb/\x12\x1f\n\
+    \x1aCmdGetServerPrefsDataCsReq\x10\xd7/\x12\"\n\x1dCmdGetAllServerPrefsD\
+    ataScRsp\x10\xe8/\x12\x1f\n\x1aCmdGetServerPrefsDataScRsp\x10\x820\x12\"\
+    \n\x1dCmdUpdateServerPrefsDataScRsp\x10\x890b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

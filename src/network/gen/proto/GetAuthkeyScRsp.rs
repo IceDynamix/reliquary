@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetAuthkeyScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetAuthkeyScRsp.IEABDLMOEBJ)
-    pub IEABDLMOEBJ: u32,
-    // @@protoc_insertion_point(field:GetAuthkeyScRsp.ADHFDKEPCKL)
-    pub ADHFDKEPCKL: ::std::string::String,
-    // @@protoc_insertion_point(field:GetAuthkeyScRsp.CNKMGCPCCJB)
-    pub CNKMGCPCCJB: u32,
-    // @@protoc_insertion_point(field:GetAuthkeyScRsp.KMGOHIGOEBG)
-    pub KMGOHIGOEBG: ::std::string::String,
-    // @@protoc_insertion_point(field:GetAuthkeyScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetAuthkeyScRsp.ABDAAEFGGMG)
+    pub ABDAAEFGGMG: u32,
+    // @@protoc_insertion_point(field:GetAuthkeyScRsp.COLDHHJCHBI)
+    pub COLDHHJCHBI: ::std::string::String,
+    // @@protoc_insertion_point(field:GetAuthkeyScRsp.OJMPIJLADML)
+    pub OJMPIJLADML: u32,
+    // @@protoc_insertion_point(field:GetAuthkeyScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:GetAuthkeyScRsp.KDLFALBDPIB)
+    pub KDLFALBDPIB: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:GetAuthkeyScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,29 +59,29 @@ impl GetAuthkeyScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IEABDLMOEBJ",
-            |m: &GetAuthkeyScRsp| { &m.IEABDLMOEBJ },
-            |m: &mut GetAuthkeyScRsp| { &mut m.IEABDLMOEBJ },
+            "ABDAAEFGGMG",
+            |m: &GetAuthkeyScRsp| { &m.ABDAAEFGGMG },
+            |m: &mut GetAuthkeyScRsp| { &mut m.ABDAAEFGGMG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADHFDKEPCKL",
-            |m: &GetAuthkeyScRsp| { &m.ADHFDKEPCKL },
-            |m: &mut GetAuthkeyScRsp| { &mut m.ADHFDKEPCKL },
+            "COLDHHJCHBI",
+            |m: &GetAuthkeyScRsp| { &m.COLDHHJCHBI },
+            |m: &mut GetAuthkeyScRsp| { &mut m.COLDHHJCHBI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CNKMGCPCCJB",
-            |m: &GetAuthkeyScRsp| { &m.CNKMGCPCCJB },
-            |m: &mut GetAuthkeyScRsp| { &mut m.CNKMGCPCCJB },
+            "OJMPIJLADML",
+            |m: &GetAuthkeyScRsp| { &m.OJMPIJLADML },
+            |m: &mut GetAuthkeyScRsp| { &mut m.OJMPIJLADML },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KMGOHIGOEBG",
-            |m: &GetAuthkeyScRsp| { &m.KMGOHIGOEBG },
-            |m: &mut GetAuthkeyScRsp| { &mut m.KMGOHIGOEBG },
+            "ADADHIHDHJC",
+            |m: &GetAuthkeyScRsp| { &m.ADADHIHDHJC },
+            |m: &mut GetAuthkeyScRsp| { &mut m.ADADHIHDHJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetAuthkeyScRsp| { &m.retcode },
-            |m: &mut GetAuthkeyScRsp| { &mut m.retcode },
+            "KDLFALBDPIB",
+            |m: &GetAuthkeyScRsp| { &m.KDLFALBDPIB },
+            |m: &mut GetAuthkeyScRsp| { &mut m.KDLFALBDPIB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetAuthkeyScRsp>(
             "GetAuthkeyScRsp",
@@ -101,20 +101,20 @@ impl ::protobuf::Message for GetAuthkeyScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.IEABDLMOEBJ = is.read_uint32()?;
+                56 => {
+                    self.ABDAAEFGGMG = is.read_uint32()?;
                 },
-                26 => {
-                    self.ADHFDKEPCKL = is.read_string()?;
+                114 => {
+                    self.COLDHHJCHBI = is.read_string()?;
                 },
-                64 => {
-                    self.CNKMGCPCCJB = is.read_uint32()?;
+                120 => {
+                    self.OJMPIJLADML = is.read_uint32()?;
                 },
-                82 => {
-                    self.KMGOHIGOEBG = is.read_string()?;
+                80 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                16 => {
-                    self.retcode = is.read_uint32()?;
+                90 => {
+                    self.KDLFALBDPIB = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,20 +128,20 @@ impl ::protobuf::Message for GetAuthkeyScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IEABDLMOEBJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.IEABDLMOEBJ);
+        if self.ABDAAEFGGMG != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.ABDAAEFGGMG);
         }
-        if !self.ADHFDKEPCKL.is_empty() {
-            my_size += ::protobuf::rt::string_size(3, &self.ADHFDKEPCKL);
+        if !self.COLDHHJCHBI.is_empty() {
+            my_size += ::protobuf::rt::string_size(14, &self.COLDHHJCHBI);
         }
-        if self.CNKMGCPCCJB != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.CNKMGCPCCJB);
+        if self.OJMPIJLADML != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.OJMPIJLADML);
         }
-        if !self.KMGOHIGOEBG.is_empty() {
-            my_size += ::protobuf::rt::string_size(10, &self.KMGOHIGOEBG);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.ADADHIHDHJC);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+        if !self.KDLFALBDPIB.is_empty() {
+            my_size += ::protobuf::rt::string_size(11, &self.KDLFALBDPIB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for GetAuthkeyScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IEABDLMOEBJ != 0 {
-            os.write_uint32(12, self.IEABDLMOEBJ)?;
+        if self.ABDAAEFGGMG != 0 {
+            os.write_uint32(7, self.ABDAAEFGGMG)?;
         }
-        if !self.ADHFDKEPCKL.is_empty() {
-            os.write_string(3, &self.ADHFDKEPCKL)?;
+        if !self.COLDHHJCHBI.is_empty() {
+            os.write_string(14, &self.COLDHHJCHBI)?;
         }
-        if self.CNKMGCPCCJB != 0 {
-            os.write_uint32(8, self.CNKMGCPCCJB)?;
+        if self.OJMPIJLADML != 0 {
+            os.write_uint32(15, self.OJMPIJLADML)?;
         }
-        if !self.KMGOHIGOEBG.is_empty() {
-            os.write_string(10, &self.KMGOHIGOEBG)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(10, self.ADADHIHDHJC)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+        if !self.KDLFALBDPIB.is_empty() {
+            os.write_string(11, &self.KDLFALBDPIB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for GetAuthkeyScRsp {
     }
 
     fn clear(&mut self) {
-        self.IEABDLMOEBJ = 0;
-        self.ADHFDKEPCKL.clear();
-        self.CNKMGCPCCJB = 0;
-        self.KMGOHIGOEBG.clear();
-        self.retcode = 0;
+        self.ABDAAEFGGMG = 0;
+        self.COLDHHJCHBI.clear();
+        self.OJMPIJLADML = 0;
+        self.ADADHIHDHJC = 0;
+        self.KDLFALBDPIB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetAuthkeyScRsp {
         static instance: GetAuthkeyScRsp = GetAuthkeyScRsp {
-            IEABDLMOEBJ: 0,
-            ADHFDKEPCKL: ::std::string::String::new(),
-            CNKMGCPCCJB: 0,
-            KMGOHIGOEBG: ::std::string::String::new(),
-            retcode: 0,
+            ABDAAEFGGMG: 0,
+            COLDHHJCHBI: ::std::string::String::new(),
+            OJMPIJLADML: 0,
+            ADADHIHDHJC: 0,
+            KDLFALBDPIB: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,11 +220,12 @@ impl ::protobuf::reflect::ProtobufValue for GetAuthkeyScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15GetAuthkeyScRsp.proto\"\xb3\x01\n\x0fGetAuthkeyScRsp\x12\x20\n\x0b\
-    IEABDLMOEBJ\x18\x0c\x20\x01(\rR\x0bIEABDLMOEBJ\x12\x20\n\x0bADHFDKEPCKL\
-    \x18\x03\x20\x01(\tR\x0bADHFDKEPCKL\x12\x20\n\x0bCNKMGCPCCJB\x18\x08\x20\
-    \x01(\rR\x0bCNKMGCPCCJB\x12\x20\n\x0bKMGOHIGOEBG\x18\n\x20\x01(\tR\x0bKM\
-    GOHIGOEBG\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x15GetAuthkeyScRsp.proto\"\xbb\x01\n\x0fGetAuthkeyScRsp\x12\x20\n\x0b\
+    ABDAAEFGGMG\x18\x07\x20\x01(\rR\x0bABDAAEFGGMG\x12\x20\n\x0bCOLDHHJCHBI\
+    \x18\x0e\x20\x01(\tR\x0bCOLDHHJCHBI\x12\x20\n\x0bOJMPIJLADML\x18\x0f\x20\
+    \x01(\rR\x0bOJMPIJLADML\x12\x20\n\x0bADADHIHDHJC\x18\n\x20\x01(\rR\x0bAD\
+    ADHIHDHJC\x12\x20\n\x0bKDLFALBDPIB\x18\x0b\x20\x01(\tR\x0bKDLFALBDPIBb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

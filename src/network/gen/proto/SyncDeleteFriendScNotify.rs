@@ -149,7 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for SyncDeleteFriendScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eSyncDeleteFriendScNotify.proto\",\n\x18SyncDeleteFriendScNotify\
-    \x12\x10\n\x03uid\x18\r\x20\x01(\rR\x03uidb\x06proto3\
+    \x12\x10\n\x03uid\x18\r\x20\x01(\rR\x03uidB\x15\n\x13emu.lunarcore.proto\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

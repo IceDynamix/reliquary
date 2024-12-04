@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LobbyJoinCsReq {
     // message fields
-    // @@protoc_insertion_point(field:LobbyJoinCsReq.JFODJKAADCL)
-    pub JFODJKAADCL: u64,
-    // @@protoc_insertion_point(field:LobbyJoinCsReq.DIFNDEGMKNA)
-    pub DIFNDEGMKNA: ::protobuf::MessageField<super::PGDACNIBFMP::PGDACNIBFMP>,
+    // @@protoc_insertion_point(field:LobbyJoinCsReq.HGMFEGGJEFB)
+    pub HGMFEGGJEFB: u64,
+    // @@protoc_insertion_point(field:LobbyJoinCsReq.PDLAHDEBOIL)
+    pub PDLAHDEBOIL: ::protobuf::MessageField<super::JCEDNEMPMAJ::JCEDNEMPMAJ>,
     // special fields
     // @@protoc_insertion_point(special_field:LobbyJoinCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl LobbyJoinCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JFODJKAADCL",
-            |m: &LobbyJoinCsReq| { &m.JFODJKAADCL },
-            |m: &mut LobbyJoinCsReq| { &mut m.JFODJKAADCL },
+            "HGMFEGGJEFB",
+            |m: &LobbyJoinCsReq| { &m.HGMFEGGJEFB },
+            |m: &mut LobbyJoinCsReq| { &mut m.HGMFEGGJEFB },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PGDACNIBFMP::PGDACNIBFMP>(
-            "DIFNDEGMKNA",
-            |m: &LobbyJoinCsReq| { &m.DIFNDEGMKNA },
-            |m: &mut LobbyJoinCsReq| { &mut m.DIFNDEGMKNA },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JCEDNEMPMAJ::JCEDNEMPMAJ>(
+            "PDLAHDEBOIL",
+            |m: &LobbyJoinCsReq| { &m.PDLAHDEBOIL },
+            |m: &mut LobbyJoinCsReq| { &mut m.PDLAHDEBOIL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LobbyJoinCsReq>(
             "LobbyJoinCsReq",
@@ -81,10 +81,10 @@ impl ::protobuf::Message for LobbyJoinCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 96 => {
-                    self.JFODJKAADCL = is.read_uint64()?;
+                    self.HGMFEGGJEFB = is.read_uint64()?;
                 },
                 58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DIFNDEGMKNA)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PDLAHDEBOIL)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for LobbyJoinCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JFODJKAADCL != 0 {
-            my_size += ::protobuf::rt::uint64_size(12, self.JFODJKAADCL);
+        if self.HGMFEGGJEFB != 0 {
+            my_size += ::protobuf::rt::uint64_size(12, self.HGMFEGGJEFB);
         }
-        if let Some(v) = self.DIFNDEGMKNA.as_ref() {
+        if let Some(v) = self.PDLAHDEBOIL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,10 +111,10 @@ impl ::protobuf::Message for LobbyJoinCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JFODJKAADCL != 0 {
-            os.write_uint64(12, self.JFODJKAADCL)?;
+        if self.HGMFEGGJEFB != 0 {
+            os.write_uint64(12, self.HGMFEGGJEFB)?;
         }
-        if let Some(v) = self.DIFNDEGMKNA.as_ref() {
+        if let Some(v) = self.PDLAHDEBOIL.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -134,15 +134,15 @@ impl ::protobuf::Message for LobbyJoinCsReq {
     }
 
     fn clear(&mut self) {
-        self.JFODJKAADCL = 0;
-        self.DIFNDEGMKNA.clear();
+        self.HGMFEGGJEFB = 0;
+        self.PDLAHDEBOIL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LobbyJoinCsReq {
         static instance: LobbyJoinCsReq = LobbyJoinCsReq {
-            JFODJKAADCL: 0,
-            DIFNDEGMKNA: ::protobuf::MessageField::none(),
+            HGMFEGGJEFB: 0,
+            PDLAHDEBOIL: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for LobbyJoinCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14LobbyJoinCsReq.proto\x1a\x11PGDACNIBFMP.proto\"b\n\x0eLobbyJoinCsR\
-    eq\x12\x20\n\x0bJFODJKAADCL\x18\x0c\x20\x01(\x04R\x0bJFODJKAADCL\x12.\n\
-    \x0bDIFNDEGMKNA\x18\x07\x20\x01(\x0b2\x0c.PGDACNIBFMPR\x0bDIFNDEGMKNAb\
+    \n\x14LobbyJoinCsReq.proto\x1a\x11JCEDNEMPMAJ.proto\"b\n\x0eLobbyJoinCsR\
+    eq\x12\x20\n\x0bHGMFEGGJEFB\x18\x0c\x20\x01(\x04R\x0bHGMFEGGJEFB\x12.\n\
+    \x0bPDLAHDEBOIL\x18\x07\x20\x01(\x0b2\x0c.JCEDNEMPMAJR\x0bPDLAHDEBOILb\
     \x06proto3\
 ";
 
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::PGDACNIBFMP::file_descriptor().clone());
+            deps.push(super::JCEDNEMPMAJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(LobbyJoinCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

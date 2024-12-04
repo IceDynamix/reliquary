@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EvolveBuildStartStageScRsp {
     // message fields
-    // @@protoc_insertion_point(field:EvolveBuildStartStageScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:EvolveBuildStartStageScRsp.KFPDPBBAOPL)
-    pub KFPDPBBAOPL: ::protobuf::MessageField<super::AHFFHEBEEGC::AHFFHEBEEGC>,
-    // @@protoc_insertion_point(field:EvolveBuildStartStageScRsp.GGHEBMCAJKI)
-    pub GGHEBMCAJKI: ::protobuf::MessageField<super::EvolveBuildLevelInfo::EvolveBuildLevelInfo>,
+    // @@protoc_insertion_point(field:EvolveBuildStartStageScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:EvolveBuildStartStageScRsp.LLLMLIMHHAL)
+    pub LLLMLIMHHAL: ::protobuf::MessageField<super::CHDPLFOHLCN::CHDPLFOHLCN>,
+    // @@protoc_insertion_point(field:EvolveBuildStartStageScRsp.BCBJPFIKPHG)
+    pub BCBJPFIKPHG: ::protobuf::MessageField<super::EvolveBuildLevelInfo::EvolveBuildLevelInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:EvolveBuildStartStageScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl EvolveBuildStartStageScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &EvolveBuildStartStageScRsp| { &m.retcode },
-            |m: &mut EvolveBuildStartStageScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &EvolveBuildStartStageScRsp| { &m.ADADHIHDHJC },
+            |m: &mut EvolveBuildStartStageScRsp| { &mut m.ADADHIHDHJC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AHFFHEBEEGC::AHFFHEBEEGC>(
-            "KFPDPBBAOPL",
-            |m: &EvolveBuildStartStageScRsp| { &m.KFPDPBBAOPL },
-            |m: &mut EvolveBuildStartStageScRsp| { &mut m.KFPDPBBAOPL },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CHDPLFOHLCN::CHDPLFOHLCN>(
+            "LLLMLIMHHAL",
+            |m: &EvolveBuildStartStageScRsp| { &m.LLLMLIMHHAL },
+            |m: &mut EvolveBuildStartStageScRsp| { &mut m.LLLMLIMHHAL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EvolveBuildLevelInfo::EvolveBuildLevelInfo>(
-            "GGHEBMCAJKI",
-            |m: &EvolveBuildStartStageScRsp| { &m.GGHEBMCAJKI },
-            |m: &mut EvolveBuildStartStageScRsp| { &mut m.GGHEBMCAJKI },
+            "BCBJPFIKPHG",
+            |m: &EvolveBuildStartStageScRsp| { &m.BCBJPFIKPHG },
+            |m: &mut EvolveBuildStartStageScRsp| { &mut m.BCBJPFIKPHG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EvolveBuildStartStageScRsp>(
             "EvolveBuildStartStageScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for EvolveBuildStartStageScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KFPDPBBAOPL)?;
+                104 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
                 58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GGHEBMCAJKI)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LLLMLIMHHAL)?;
+                },
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BCBJPFIKPHG)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for EvolveBuildStartStageScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.ADADHIHDHJC);
         }
-        if let Some(v) = self.KFPDPBBAOPL.as_ref() {
+        if let Some(v) = self.LLLMLIMHHAL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.GGHEBMCAJKI.as_ref() {
+        if let Some(v) = self.BCBJPFIKPHG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -125,14 +125,14 @@ impl ::protobuf::Message for EvolveBuildStartStageScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(13, self.ADADHIHDHJC)?;
         }
-        if let Some(v) = self.KFPDPBBAOPL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
-        if let Some(v) = self.GGHEBMCAJKI.as_ref() {
+        if let Some(v) = self.LLLMLIMHHAL.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
+        if let Some(v) = self.BCBJPFIKPHG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,17 +151,17 @@ impl ::protobuf::Message for EvolveBuildStartStageScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.KFPDPBBAOPL.clear();
-        self.GGHEBMCAJKI.clear();
+        self.ADADHIHDHJC = 0;
+        self.LLLMLIMHHAL.clear();
+        self.BCBJPFIKPHG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EvolveBuildStartStageScRsp {
         static instance: EvolveBuildStartStageScRsp = EvolveBuildStartStageScRsp {
-            retcode: 0,
-            KFPDPBBAOPL: ::protobuf::MessageField::none(),
-            GGHEBMCAJKI: ::protobuf::MessageField::none(),
+            ADADHIHDHJC: 0,
+            LLLMLIMHHAL: ::protobuf::MessageField::none(),
+            BCBJPFIKPHG: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,12 +186,12 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildStartStageScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20EvolveBuildStartStageScRsp.proto\x1a\x11AHFFHEBEEGC.proto\x1a\x1aE\
-    volveBuildLevelInfo.proto\"\x9f\x01\n\x1aEvolveBuildStartStageScRsp\x12\
-    \x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12.\n\x0bKFPDPBBAOPL\
-    \x18\n\x20\x01(\x0b2\x0c.AHFFHEBEEGCR\x0bKFPDPBBAOPL\x127\n\x0bGGHEBMCAJ\
-    KI\x18\x07\x20\x01(\x0b2\x15.EvolveBuildLevelInfoR\x0bGGHEBMCAJKIb\x06pr\
-    oto3\
+    \n\x20EvolveBuildStartStageScRsp.proto\x1a\x11CHDPLFOHLCN.proto\x1a\x1aE\
+    volveBuildLevelInfo.proto\"\xa7\x01\n\x1aEvolveBuildStartStageScRsp\x12\
+    \x20\n\x0bADADHIHDHJC\x18\r\x20\x01(\rR\x0bADADHIHDHJC\x12.\n\x0bLLLMLIM\
+    HHAL\x18\x07\x20\x01(\x0b2\x0c.CHDPLFOHLCNR\x0bLLLMLIMHHAL\x127\n\x0bBCB\
+    JPFIKPHG\x18\x03\x20\x01(\x0b2\x15.EvolveBuildLevelInfoR\x0bBCBJPFIKPHGb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -209,7 +209,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::AHFFHEBEEGC::file_descriptor().clone());
+            deps.push(super::CHDPLFOHLCN::file_descriptor().clone());
             deps.push(super::EvolveBuildLevelInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EvolveBuildStartStageScRsp::generated_message_descriptor_data());

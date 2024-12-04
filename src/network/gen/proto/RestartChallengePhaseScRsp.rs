@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RestartChallengePhaseScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RestartChallengePhaseScRsp.EMDECAJPAPM)
-    pub EMDECAJPAPM: ::protobuf::MessageField<super::FHGPCKGFGAO::FHGPCKGFGAO>,
     // @@protoc_insertion_point(field:RestartChallengePhaseScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:RestartChallengePhaseScRsp.scene)
+    pub scene: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:RestartChallengePhaseScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl RestartChallengePhaseScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FHGPCKGFGAO::FHGPCKGFGAO>(
-            "EMDECAJPAPM",
-            |m: &RestartChallengePhaseScRsp| { &m.EMDECAJPAPM },
-            |m: &mut RestartChallengePhaseScRsp| { &mut m.EMDECAJPAPM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &RestartChallengePhaseScRsp| { &m.retcode },
             |m: &mut RestartChallengePhaseScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneInfo::SceneInfo>(
+            "scene",
+            |m: &RestartChallengePhaseScRsp| { &m.scene },
+            |m: &mut RestartChallengePhaseScRsp| { &mut m.scene },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RestartChallengePhaseScRsp>(
             "RestartChallengePhaseScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for RestartChallengePhaseScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EMDECAJPAPM)?;
-                },
-                8 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,12 +98,12 @@ impl ::protobuf::Message for RestartChallengePhaseScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.EMDECAJPAPM.as_ref() {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+        }
+        if let Some(v) = self.scene.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for RestartChallengePhaseScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.EMDECAJPAPM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
+        }
+        if let Some(v) = self.scene.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for RestartChallengePhaseScRsp {
     }
 
     fn clear(&mut self) {
-        self.EMDECAJPAPM.clear();
         self.retcode = 0;
+        self.scene.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RestartChallengePhaseScRsp {
         static instance: RestartChallengePhaseScRsp = RestartChallengePhaseScRsp {
-            EMDECAJPAPM: ::protobuf::MessageField::none(),
             retcode: 0,
+            scene: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for RestartChallengePhaseScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20RestartChallengePhaseScRsp.proto\x1a\x11FHGPCKGFGAO.proto\"f\n\x1a\
-    RestartChallengePhaseScRsp\x12.\n\x0bEMDECAJPAPM\x18\x06\x20\x01(\x0b2\
-    \x0c.FHGPCKGFGAOR\x0bEMDECAJPAPM\x12\x18\n\x07retcode\x18\x01\x20\x01(\r\
-    R\x07retcodeb\x06proto3\
+    \n\x20RestartChallengePhaseScRsp.proto\x1a\x0fSceneInfo.proto\"X\n\x1aRe\
+    startChallengePhaseScRsp\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retco\
+    de\x12\x20\n\x05scene\x18\x0e\x20\x01(\x0b2\n.SceneInfoR\x05sceneB\x15\n\
+    \x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::FHGPCKGFGAO::file_descriptor().clone());
+            deps.push(super::SceneInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RestartChallengePhaseScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

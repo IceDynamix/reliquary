@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueReviveAvatarScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueReviveAvatarScRsp.FIOAACNKLPC)
-    pub FIOAACNKLPC: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ChessRogueReviveAvatarScRsp.AAJEDMFNKBB)
-    pub AAJEDMFNKBB: ::protobuf::MessageField<super::LEHOAIEOONL::LEHOAIEOONL>,
-    // @@protoc_insertion_point(field:ChessRogueReviveAvatarScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:ChessRogueReviveAvatarScRsp.MODEHMLELLN)
+    pub MODEHMLELLN: ::protobuf::MessageField<super::OGMCFCJMIJE::OGMCFCJMIJE>,
+    // @@protoc_insertion_point(field:ChessRogueReviveAvatarScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:ChessRogueReviveAvatarScRsp.FOPPGNKJGLP)
+    pub FOPPGNKJGLP: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueReviveAvatarScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl ChessRogueReviveAvatarScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FIOAACNKLPC",
-            |m: &ChessRogueReviveAvatarScRsp| { &m.FIOAACNKLPC },
-            |m: &mut ChessRogueReviveAvatarScRsp| { &mut m.FIOAACNKLPC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LEHOAIEOONL::LEHOAIEOONL>(
-            "AAJEDMFNKBB",
-            |m: &ChessRogueReviveAvatarScRsp| { &m.AAJEDMFNKBB },
-            |m: &mut ChessRogueReviveAvatarScRsp| { &mut m.AAJEDMFNKBB },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OGMCFCJMIJE::OGMCFCJMIJE>(
+            "MODEHMLELLN",
+            |m: &ChessRogueReviveAvatarScRsp| { &m.MODEHMLELLN },
+            |m: &mut ChessRogueReviveAvatarScRsp| { &mut m.MODEHMLELLN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &ChessRogueReviveAvatarScRsp| { &m.retcode },
-            |m: &mut ChessRogueReviveAvatarScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &ChessRogueReviveAvatarScRsp| { &m.ADADHIHDHJC },
+            |m: &mut ChessRogueReviveAvatarScRsp| { &mut m.ADADHIHDHJC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FOPPGNKJGLP",
+            |m: &ChessRogueReviveAvatarScRsp| { &m.FOPPGNKJGLP },
+            |m: &mut ChessRogueReviveAvatarScRsp| { &mut m.FOPPGNKJGLP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueReviveAvatarScRsp>(
             "ChessRogueReviveAvatarScRsp",
@@ -87,17 +87,17 @@ impl ::protobuf::Message for ChessRogueReviveAvatarScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FIOAACNKLPC)?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MODEHMLELLN)?;
                 },
-                24 => {
-                    self.FIOAACNKLPC.push(is.read_uint32()?);
+                80 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AAJEDMFNKBB)?;
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.FOPPGNKJGLP)?;
                 },
-                88 => {
-                    self.retcode = is.read_uint32()?;
+                120 => {
+                    self.FOPPGNKJGLP.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,31 +111,31 @@ impl ::protobuf::Message for ChessRogueReviveAvatarScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.FIOAACNKLPC {
-            my_size += ::protobuf::rt::uint32_size(3, *value);
-        };
-        if let Some(v) = self.AAJEDMFNKBB.as_ref() {
+        if let Some(v) = self.MODEHMLELLN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.ADADHIHDHJC);
         }
+        for value in &self.FOPPGNKJGLP {
+            my_size += ::protobuf::rt::uint32_size(15, *value);
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.FIOAACNKLPC {
-            os.write_uint32(3, *v)?;
+        if let Some(v) = self.MODEHMLELLN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        }
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(10, self.ADADHIHDHJC)?;
+        }
+        for v in &self.FOPPGNKJGLP {
+            os.write_uint32(15, *v)?;
         };
-        if let Some(v) = self.AAJEDMFNKBB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -153,17 +153,17 @@ impl ::protobuf::Message for ChessRogueReviveAvatarScRsp {
     }
 
     fn clear(&mut self) {
-        self.FIOAACNKLPC.clear();
-        self.AAJEDMFNKBB.clear();
-        self.retcode = 0;
+        self.MODEHMLELLN.clear();
+        self.ADADHIHDHJC = 0;
+        self.FOPPGNKJGLP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueReviveAvatarScRsp {
         static instance: ChessRogueReviveAvatarScRsp = ChessRogueReviveAvatarScRsp {
-            FIOAACNKLPC: ::std::vec::Vec::new(),
-            AAJEDMFNKBB: ::protobuf::MessageField::none(),
-            retcode: 0,
+            MODEHMLELLN: ::protobuf::MessageField::none(),
+            ADADHIHDHJC: 0,
+            FOPPGNKJGLP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -188,11 +188,11 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueReviveAvatarScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!ChessRogueReviveAvatarScRsp.proto\x1a\x11LEHOAIEOONL.proto\"\x89\x01\
-    \n\x1bChessRogueReviveAvatarScRsp\x12\x20\n\x0bFIOAACNKLPC\x18\x03\x20\
-    \x03(\rR\x0bFIOAACNKLPC\x12.\n\x0bAAJEDMFNKBB\x18\t\x20\x01(\x0b2\x0c.LE\
-    HOAIEOONLR\x0bAAJEDMFNKBB\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07re\
-    tcodeb\x06proto3\
+    \n!ChessRogueReviveAvatarScRsp.proto\x1a\x11OGMCFCJMIJE.proto\"\x91\x01\
+    \n\x1bChessRogueReviveAvatarScRsp\x12.\n\x0bMODEHMLELLN\x18\x08\x20\x01(\
+    \x0b2\x0c.OGMCFCJMIJER\x0bMODEHMLELLN\x12\x20\n\x0bADADHIHDHJC\x18\n\x20\
+    \x01(\rR\x0bADADHIHDHJC\x12\x20\n\x0bFOPPGNKJGLP\x18\x0f\x20\x03(\rR\x0b\
+    FOPPGNKJGLPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -210,7 +210,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::LEHOAIEOONL::file_descriptor().clone());
+            deps.push(super::OGMCFCJMIJE::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChessRogueReviveAvatarScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

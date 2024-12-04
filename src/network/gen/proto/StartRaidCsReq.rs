@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartRaidCsReq {
     // message fields
-    // @@protoc_insertion_point(field:StartRaidCsReq.BEDDOLCOMPO)
-    pub BEDDOLCOMPO: u32,
-    // @@protoc_insertion_point(field:StartRaidCsReq.MEJPGIDEBMI)
-    pub MEJPGIDEBMI: u32,
-    // @@protoc_insertion_point(field:StartRaidCsReq.MMMOHAJFMID)
-    pub MMMOHAJFMID: u32,
-    // @@protoc_insertion_point(field:StartRaidCsReq.OGIOAKBPMAE)
-    pub OGIOAKBPMAE: u32,
-    // @@protoc_insertion_point(field:StartRaidCsReq.avatar_list)
-    pub avatar_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:StartRaidCsReq.JCPFOPLBOIM)
+    pub JCPFOPLBOIM: u32,
+    // @@protoc_insertion_point(field:StartRaidCsReq.DNMJBNNJLEL)
+    pub DNMJBNNJLEL: u32,
+    // @@protoc_insertion_point(field:StartRaidCsReq.EMALNMLGANJ)
+    pub EMALNMLGANJ: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:StartRaidCsReq.ODOAJJGMBCL)
+    pub ODOAJJGMBCL: u32,
+    // @@protoc_insertion_point(field:StartRaidCsReq.KDFKCJLHHAF)
+    pub KDFKCJLHHAF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:StartRaidCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,29 +59,29 @@ impl StartRaidCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BEDDOLCOMPO",
-            |m: &StartRaidCsReq| { &m.BEDDOLCOMPO },
-            |m: &mut StartRaidCsReq| { &mut m.BEDDOLCOMPO },
+            "JCPFOPLBOIM",
+            |m: &StartRaidCsReq| { &m.JCPFOPLBOIM },
+            |m: &mut StartRaidCsReq| { &mut m.JCPFOPLBOIM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MEJPGIDEBMI",
-            |m: &StartRaidCsReq| { &m.MEJPGIDEBMI },
-            |m: &mut StartRaidCsReq| { &mut m.MEJPGIDEBMI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MMMOHAJFMID",
-            |m: &StartRaidCsReq| { &m.MMMOHAJFMID },
-            |m: &mut StartRaidCsReq| { &mut m.MMMOHAJFMID },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OGIOAKBPMAE",
-            |m: &StartRaidCsReq| { &m.OGIOAKBPMAE },
-            |m: &mut StartRaidCsReq| { &mut m.OGIOAKBPMAE },
+            "DNMJBNNJLEL",
+            |m: &StartRaidCsReq| { &m.DNMJBNNJLEL },
+            |m: &mut StartRaidCsReq| { &mut m.DNMJBNNJLEL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_list",
-            |m: &StartRaidCsReq| { &m.avatar_list },
-            |m: &mut StartRaidCsReq| { &mut m.avatar_list },
+            "EMALNMLGANJ",
+            |m: &StartRaidCsReq| { &m.EMALNMLGANJ },
+            |m: &mut StartRaidCsReq| { &mut m.EMALNMLGANJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ODOAJJGMBCL",
+            |m: &StartRaidCsReq| { &m.ODOAJJGMBCL },
+            |m: &mut StartRaidCsReq| { &mut m.ODOAJJGMBCL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KDFKCJLHHAF",
+            |m: &StartRaidCsReq| { &m.KDFKCJLHHAF },
+            |m: &mut StartRaidCsReq| { &mut m.KDFKCJLHHAF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartRaidCsReq>(
             "StartRaidCsReq",
@@ -101,23 +101,23 @@ impl ::protobuf::Message for StartRaidCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.BEDDOLCOMPO = is.read_uint32()?;
+                48 => {
+                    self.JCPFOPLBOIM = is.read_uint32()?;
                 },
-                88 => {
-                    self.MEJPGIDEBMI = is.read_uint32()?;
+                104 => {
+                    self.DNMJBNNJLEL = is.read_uint32()?;
+                },
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.EMALNMLGANJ)?;
+                },
+                120 => {
+                    self.EMALNMLGANJ.push(is.read_uint32()?);
                 },
                 112 => {
-                    self.MMMOHAJFMID = is.read_uint32()?;
+                    self.ODOAJJGMBCL = is.read_uint32()?;
                 },
-                32 => {
-                    self.OGIOAKBPMAE = is.read_uint32()?;
-                },
-                50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.avatar_list)?;
-                },
-                48 => {
-                    self.avatar_list.push(is.read_uint32()?);
+                24 => {
+                    self.KDFKCJLHHAF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -131,42 +131,42 @@ impl ::protobuf::Message for StartRaidCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BEDDOLCOMPO != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.BEDDOLCOMPO);
+        if self.JCPFOPLBOIM != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.JCPFOPLBOIM);
         }
-        if self.MEJPGIDEBMI != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.MEJPGIDEBMI);
+        if self.DNMJBNNJLEL != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.DNMJBNNJLEL);
         }
-        if self.MMMOHAJFMID != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.MMMOHAJFMID);
-        }
-        if self.OGIOAKBPMAE != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.OGIOAKBPMAE);
-        }
-        for value in &self.avatar_list {
-            my_size += ::protobuf::rt::uint32_size(6, *value);
+        for value in &self.EMALNMLGANJ {
+            my_size += ::protobuf::rt::uint32_size(15, *value);
         };
+        if self.ODOAJJGMBCL != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.ODOAJJGMBCL);
+        }
+        if self.KDFKCJLHHAF != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.KDFKCJLHHAF);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BEDDOLCOMPO != 0 {
-            os.write_uint32(15, self.BEDDOLCOMPO)?;
+        if self.JCPFOPLBOIM != 0 {
+            os.write_uint32(6, self.JCPFOPLBOIM)?;
         }
-        if self.MEJPGIDEBMI != 0 {
-            os.write_uint32(11, self.MEJPGIDEBMI)?;
+        if self.DNMJBNNJLEL != 0 {
+            os.write_uint32(13, self.DNMJBNNJLEL)?;
         }
-        if self.MMMOHAJFMID != 0 {
-            os.write_uint32(14, self.MMMOHAJFMID)?;
-        }
-        if self.OGIOAKBPMAE != 0 {
-            os.write_uint32(4, self.OGIOAKBPMAE)?;
-        }
-        for v in &self.avatar_list {
-            os.write_uint32(6, *v)?;
+        for v in &self.EMALNMLGANJ {
+            os.write_uint32(15, *v)?;
         };
+        if self.ODOAJJGMBCL != 0 {
+            os.write_uint32(14, self.ODOAJJGMBCL)?;
+        }
+        if self.KDFKCJLHHAF != 0 {
+            os.write_uint32(3, self.KDFKCJLHHAF)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -184,21 +184,21 @@ impl ::protobuf::Message for StartRaidCsReq {
     }
 
     fn clear(&mut self) {
-        self.BEDDOLCOMPO = 0;
-        self.MEJPGIDEBMI = 0;
-        self.MMMOHAJFMID = 0;
-        self.OGIOAKBPMAE = 0;
-        self.avatar_list.clear();
+        self.JCPFOPLBOIM = 0;
+        self.DNMJBNNJLEL = 0;
+        self.EMALNMLGANJ.clear();
+        self.ODOAJJGMBCL = 0;
+        self.KDFKCJLHHAF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartRaidCsReq {
         static instance: StartRaidCsReq = StartRaidCsReq {
-            BEDDOLCOMPO: 0,
-            MEJPGIDEBMI: 0,
-            MMMOHAJFMID: 0,
-            OGIOAKBPMAE: 0,
-            avatar_list: ::std::vec::Vec::new(),
+            JCPFOPLBOIM: 0,
+            DNMJBNNJLEL: 0,
+            EMALNMLGANJ: ::std::vec::Vec::new(),
+            ODOAJJGMBCL: 0,
+            KDFKCJLHHAF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -223,11 +223,11 @@ impl ::protobuf::reflect::ProtobufValue for StartRaidCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14StartRaidCsReq.proto\"\xb9\x01\n\x0eStartRaidCsReq\x12\x20\n\x0bBE\
-    DDOLCOMPO\x18\x0f\x20\x01(\rR\x0bBEDDOLCOMPO\x12\x20\n\x0bMEJPGIDEBMI\
-    \x18\x0b\x20\x01(\rR\x0bMEJPGIDEBMI\x12\x20\n\x0bMMMOHAJFMID\x18\x0e\x20\
-    \x01(\rR\x0bMMMOHAJFMID\x12\x20\n\x0bOGIOAKBPMAE\x18\x04\x20\x01(\rR\x0b\
-    OGIOAKBPMAE\x12\x1f\n\x0bavatar_list\x18\x06\x20\x03(\rR\navatarListb\
+    \n\x14StartRaidCsReq.proto\"\xba\x01\n\x0eStartRaidCsReq\x12\x20\n\x0bJC\
+    PFOPLBOIM\x18\x06\x20\x01(\rR\x0bJCPFOPLBOIM\x12\x20\n\x0bDNMJBNNJLEL\
+    \x18\r\x20\x01(\rR\x0bDNMJBNNJLEL\x12\x20\n\x0bEMALNMLGANJ\x18\x0f\x20\
+    \x03(\rR\x0bEMALNMLGANJ\x12\x20\n\x0bODOAJJGMBCL\x18\x0e\x20\x01(\rR\x0b\
+    ODOAJJGMBCL\x12\x20\n\x0bKDFKCJLHHAF\x18\x03\x20\x01(\rR\x0bKDFKCJLHHAFb\
     \x06proto3\
 ";
 

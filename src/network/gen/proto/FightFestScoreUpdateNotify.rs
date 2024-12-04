@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightFestScoreUpdateNotify {
     // message fields
-    // @@protoc_insertion_point(field:FightFestScoreUpdateNotify.FILMAOEBILH)
-    pub FILMAOEBILH: u32,
-    // @@protoc_insertion_point(field:FightFestScoreUpdateNotify.GFKMCCDPNAH)
-    pub GFKMCCDPNAH: u32,
+    // @@protoc_insertion_point(field:FightFestScoreUpdateNotify.OIMHHCMKDKC)
+    pub OIMHHCMKDKC: u32,
+    // @@protoc_insertion_point(field:FightFestScoreUpdateNotify.OFAGGKBMPJN)
+    pub OFAGGKBMPJN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FightFestScoreUpdateNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl FightFestScoreUpdateNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FILMAOEBILH",
-            |m: &FightFestScoreUpdateNotify| { &m.FILMAOEBILH },
-            |m: &mut FightFestScoreUpdateNotify| { &mut m.FILMAOEBILH },
+            "OIMHHCMKDKC",
+            |m: &FightFestScoreUpdateNotify| { &m.OIMHHCMKDKC },
+            |m: &mut FightFestScoreUpdateNotify| { &mut m.OIMHHCMKDKC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GFKMCCDPNAH",
-            |m: &FightFestScoreUpdateNotify| { &m.GFKMCCDPNAH },
-            |m: &mut FightFestScoreUpdateNotify| { &mut m.GFKMCCDPNAH },
+            "OFAGGKBMPJN",
+            |m: &FightFestScoreUpdateNotify| { &m.OFAGGKBMPJN },
+            |m: &mut FightFestScoreUpdateNotify| { &mut m.OFAGGKBMPJN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightFestScoreUpdateNotify>(
             "FightFestScoreUpdateNotify",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for FightFestScoreUpdateNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.FILMAOEBILH = is.read_uint32()?;
+                112 => {
+                    self.OIMHHCMKDKC = is.read_uint32()?;
                 },
-                80 => {
-                    self.GFKMCCDPNAH = is.read_uint32()?;
+                96 => {
+                    self.OFAGGKBMPJN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for FightFestScoreUpdateNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FILMAOEBILH != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.FILMAOEBILH);
+        if self.OIMHHCMKDKC != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.OIMHHCMKDKC);
         }
-        if self.GFKMCCDPNAH != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.GFKMCCDPNAH);
+        if self.OFAGGKBMPJN != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.OFAGGKBMPJN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for FightFestScoreUpdateNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FILMAOEBILH != 0 {
-            os.write_uint32(9, self.FILMAOEBILH)?;
+        if self.OIMHHCMKDKC != 0 {
+            os.write_uint32(14, self.OIMHHCMKDKC)?;
         }
-        if self.GFKMCCDPNAH != 0 {
-            os.write_uint32(10, self.GFKMCCDPNAH)?;
+        if self.OFAGGKBMPJN != 0 {
+            os.write_uint32(12, self.OFAGGKBMPJN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for FightFestScoreUpdateNotify {
     }
 
     fn clear(&mut self) {
-        self.FILMAOEBILH = 0;
-        self.GFKMCCDPNAH = 0;
+        self.OIMHHCMKDKC = 0;
+        self.OFAGGKBMPJN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightFestScoreUpdateNotify {
         static instance: FightFestScoreUpdateNotify = FightFestScoreUpdateNotify {
-            FILMAOEBILH: 0,
-            GFKMCCDPNAH: 0,
+            OIMHHCMKDKC: 0,
+            OFAGGKBMPJN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for FightFestScoreUpdateNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20FightFestScoreUpdateNotify.proto\"`\n\x1aFightFestScoreUpdateNotif\
-    y\x12\x20\n\x0bFILMAOEBILH\x18\t\x20\x01(\rR\x0bFILMAOEBILH\x12\x20\n\
-    \x0bGFKMCCDPNAH\x18\n\x20\x01(\rR\x0bGFKMCCDPNAHb\x06proto3\
+    y\x12\x20\n\x0bOIMHHCMKDKC\x18\x0e\x20\x01(\rR\x0bOIMHHCMKDKC\x12\x20\n\
+    \x0bOFAGGKBMPJN\x18\x0c\x20\x01(\rR\x0bOFAGGKBMPJNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

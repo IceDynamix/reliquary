@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetGroupCustomSaveDataCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetGroupCustomSaveDataCsReq.AECEMJCEBOF)
-    pub AECEMJCEBOF: ::std::string::String,
-    // @@protoc_insertion_point(field:SetGroupCustomSaveDataCsReq.GCFIIGOLPMF)
-    pub GCFIIGOLPMF: u32,
-    // @@protoc_insertion_point(field:SetGroupCustomSaveDataCsReq.EIOMLNNLILI)
-    pub EIOMLNNLILI: u32,
+    // @@protoc_insertion_point(field:SetGroupCustomSaveDataCsReq.DPOJNDPGDFK)
+    pub DPOJNDPGDFK: ::std::string::String,
+    // @@protoc_insertion_point(field:SetGroupCustomSaveDataCsReq.ILIFHHJFMIH)
+    pub ILIFHHJFMIH: u32,
+    // @@protoc_insertion_point(field:SetGroupCustomSaveDataCsReq.BBLGKACGAOB)
+    pub BBLGKACGAOB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SetGroupCustomSaveDataCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl SetGroupCustomSaveDataCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AECEMJCEBOF",
-            |m: &SetGroupCustomSaveDataCsReq| { &m.AECEMJCEBOF },
-            |m: &mut SetGroupCustomSaveDataCsReq| { &mut m.AECEMJCEBOF },
+            "DPOJNDPGDFK",
+            |m: &SetGroupCustomSaveDataCsReq| { &m.DPOJNDPGDFK },
+            |m: &mut SetGroupCustomSaveDataCsReq| { &mut m.DPOJNDPGDFK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GCFIIGOLPMF",
-            |m: &SetGroupCustomSaveDataCsReq| { &m.GCFIIGOLPMF },
-            |m: &mut SetGroupCustomSaveDataCsReq| { &mut m.GCFIIGOLPMF },
+            "ILIFHHJFMIH",
+            |m: &SetGroupCustomSaveDataCsReq| { &m.ILIFHHJFMIH },
+            |m: &mut SetGroupCustomSaveDataCsReq| { &mut m.ILIFHHJFMIH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EIOMLNNLILI",
-            |m: &SetGroupCustomSaveDataCsReq| { &m.EIOMLNNLILI },
-            |m: &mut SetGroupCustomSaveDataCsReq| { &mut m.EIOMLNNLILI },
+            "BBLGKACGAOB",
+            |m: &SetGroupCustomSaveDataCsReq| { &m.BBLGKACGAOB },
+            |m: &mut SetGroupCustomSaveDataCsReq| { &mut m.BBLGKACGAOB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetGroupCustomSaveDataCsReq>(
             "SetGroupCustomSaveDataCsReq",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for SetGroupCustomSaveDataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    self.AECEMJCEBOF = is.read_string()?;
+                42 => {
+                    self.DPOJNDPGDFK = is.read_string()?;
                 },
-                112 => {
-                    self.GCFIIGOLPMF = is.read_uint32()?;
+                96 => {
+                    self.ILIFHHJFMIH = is.read_uint32()?;
                 },
-                48 => {
-                    self.EIOMLNNLILI = is.read_uint32()?;
+                72 => {
+                    self.BBLGKACGAOB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for SetGroupCustomSaveDataCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.AECEMJCEBOF.is_empty() {
-            my_size += ::protobuf::rt::string_size(10, &self.AECEMJCEBOF);
+        if !self.DPOJNDPGDFK.is_empty() {
+            my_size += ::protobuf::rt::string_size(5, &self.DPOJNDPGDFK);
         }
-        if self.GCFIIGOLPMF != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.GCFIIGOLPMF);
+        if self.ILIFHHJFMIH != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.ILIFHHJFMIH);
         }
-        if self.EIOMLNNLILI != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.EIOMLNNLILI);
+        if self.BBLGKACGAOB != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.BBLGKACGAOB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for SetGroupCustomSaveDataCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.AECEMJCEBOF.is_empty() {
-            os.write_string(10, &self.AECEMJCEBOF)?;
+        if !self.DPOJNDPGDFK.is_empty() {
+            os.write_string(5, &self.DPOJNDPGDFK)?;
         }
-        if self.GCFIIGOLPMF != 0 {
-            os.write_uint32(14, self.GCFIIGOLPMF)?;
+        if self.ILIFHHJFMIH != 0 {
+            os.write_uint32(12, self.ILIFHHJFMIH)?;
         }
-        if self.EIOMLNNLILI != 0 {
-            os.write_uint32(6, self.EIOMLNNLILI)?;
+        if self.BBLGKACGAOB != 0 {
+            os.write_uint32(9, self.BBLGKACGAOB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for SetGroupCustomSaveDataCsReq {
     }
 
     fn clear(&mut self) {
-        self.AECEMJCEBOF.clear();
-        self.GCFIIGOLPMF = 0;
-        self.EIOMLNNLILI = 0;
+        self.DPOJNDPGDFK.clear();
+        self.ILIFHHJFMIH = 0;
+        self.BBLGKACGAOB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetGroupCustomSaveDataCsReq {
         static instance: SetGroupCustomSaveDataCsReq = SetGroupCustomSaveDataCsReq {
-            AECEMJCEBOF: ::std::string::String::new(),
-            GCFIIGOLPMF: 0,
-            EIOMLNNLILI: 0,
+            DPOJNDPGDFK: ::std::string::String::new(),
+            ILIFHHJFMIH: 0,
+            BBLGKACGAOB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for SetGroupCustomSaveDataCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!SetGroupCustomSaveDataCsReq.proto\"\x83\x01\n\x1bSetGroupCustomSaveDa\
-    taCsReq\x12\x20\n\x0bAECEMJCEBOF\x18\n\x20\x01(\tR\x0bAECEMJCEBOF\x12\
-    \x20\n\x0bGCFIIGOLPMF\x18\x0e\x20\x01(\rR\x0bGCFIIGOLPMF\x12\x20\n\x0bEI\
-    OMLNNLILI\x18\x06\x20\x01(\rR\x0bEIOMLNNLILIb\x06proto3\
+    taCsReq\x12\x20\n\x0bDPOJNDPGDFK\x18\x05\x20\x01(\tR\x0bDPOJNDPGDFK\x12\
+    \x20\n\x0bILIFHHJFMIH\x18\x0c\x20\x01(\rR\x0bILIFHHJFMIH\x12\x20\n\x0bBB\
+    LGKACGAOB\x18\t\x20\x01(\rR\x0bBBLGKACGAOBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

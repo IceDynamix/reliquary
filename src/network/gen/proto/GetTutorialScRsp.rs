@@ -83,7 +83,7 @@ impl ::protobuf::Message for GetTutorialScRsp {
                 24 => {
                     self.retcode = is.read_uint32()?;
                 },
-                74 => {
+                122 => {
                     self.tutorial_list.push(is.read_message()?);
                 },
                 tag => {
@@ -115,7 +115,7 @@ impl ::protobuf::Message for GetTutorialScRsp {
             os.write_uint32(3, self.retcode)?;
         }
         for v in &self.tutorial_list {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,7 +169,7 @@ impl ::protobuf::reflect::ProtobufValue for GetTutorialScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16GetTutorialScRsp.proto\x1a\x0eTutorial.proto\"\\\n\x10GetTutorialS\
     cRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12.\n\rtutoria\
-    l_list\x18\t\x20\x03(\x0b2\t.TutorialR\x0ctutorialListb\x06proto3\
+    l_list\x18\x0f\x20\x03(\x0b2\t.TutorialR\x0ctutorialListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

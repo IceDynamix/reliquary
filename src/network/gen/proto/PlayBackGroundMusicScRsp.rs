@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayBackGroundMusicScRsp {
     // message fields
+    // @@protoc_insertion_point(field:PlayBackGroundMusicScRsp.playing_id)
+    pub playing_id: u32,
+    // @@protoc_insertion_point(field:PlayBackGroundMusicScRsp.play_music_id)
+    pub play_music_id: u32,
     // @@protoc_insertion_point(field:PlayBackGroundMusicScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:PlayBackGroundMusicScRsp.OHJFGDIAJFN)
-    pub OHJFGDIAJFN: u32,
-    // @@protoc_insertion_point(field:PlayBackGroundMusicScRsp.KPOGJFFBMAO)
-    pub KPOGJFFBMAO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlayBackGroundMusicScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl PlayBackGroundMusicScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "playing_id",
+            |m: &PlayBackGroundMusicScRsp| { &m.playing_id },
+            |m: &mut PlayBackGroundMusicScRsp| { &mut m.playing_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "play_music_id",
+            |m: &PlayBackGroundMusicScRsp| { &m.play_music_id },
+            |m: &mut PlayBackGroundMusicScRsp| { &mut m.play_music_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &PlayBackGroundMusicScRsp| { &m.retcode },
             |m: &mut PlayBackGroundMusicScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OHJFGDIAJFN",
-            |m: &PlayBackGroundMusicScRsp| { &m.OHJFGDIAJFN },
-            |m: &mut PlayBackGroundMusicScRsp| { &mut m.OHJFGDIAJFN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KPOGJFFBMAO",
-            |m: &PlayBackGroundMusicScRsp| { &m.KPOGJFFBMAO },
-            |m: &mut PlayBackGroundMusicScRsp| { &mut m.KPOGJFFBMAO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayBackGroundMusicScRsp>(
             "PlayBackGroundMusicScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for PlayBackGroundMusicScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.retcode = is.read_uint32()?;
+                64 => {
+                    self.playing_id = is.read_uint32()?;
                 },
-                72 => {
-                    self.OHJFGDIAJFN = is.read_uint32()?;
+                40 => {
+                    self.play_music_id = is.read_uint32()?;
                 },
                 32 => {
-                    self.KPOGJFFBMAO = is.read_uint32()?;
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for PlayBackGroundMusicScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.playing_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.playing_id);
+        }
+        if self.play_music_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.play_music_id);
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
-        }
-        if self.OHJFGDIAJFN != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.OHJFGDIAJFN);
-        }
-        if self.KPOGJFFBMAO != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.KPOGJFFBMAO);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for PlayBackGroundMusicScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.playing_id != 0 {
+            os.write_uint32(8, self.playing_id)?;
+        }
+        if self.play_music_id != 0 {
+            os.write_uint32(5, self.play_music_id)?;
+        }
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
-        }
-        if self.OHJFGDIAJFN != 0 {
-            os.write_uint32(9, self.OHJFGDIAJFN)?;
-        }
-        if self.KPOGJFFBMAO != 0 {
-            os.write_uint32(4, self.KPOGJFFBMAO)?;
+            os.write_uint32(4, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for PlayBackGroundMusicScRsp {
     }
 
     fn clear(&mut self) {
+        self.playing_id = 0;
+        self.play_music_id = 0;
         self.retcode = 0;
-        self.OHJFGDIAJFN = 0;
-        self.KPOGJFFBMAO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayBackGroundMusicScRsp {
         static instance: PlayBackGroundMusicScRsp = PlayBackGroundMusicScRsp {
+            playing_id: 0,
+            play_music_id: 0,
             retcode: 0,
-            OHJFGDIAJFN: 0,
-            KPOGJFFBMAO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for PlayBackGroundMusicScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1ePlayBackGroundMusicScRsp.proto\"x\n\x18PlayBackGroundMusicScRsp\
-    \x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12\x20\n\x0bOHJFGD\
-    IAJFN\x18\t\x20\x01(\rR\x0bOHJFGDIAJFN\x12\x20\n\x0bKPOGJFFBMAO\x18\x04\
-    \x20\x01(\rR\x0bKPOGJFFBMAOb\x06proto3\
+    \n\x1ePlayBackGroundMusicScRsp.proto\"w\n\x18PlayBackGroundMusicScRsp\
+    \x12\x1d\n\nplaying_id\x18\x08\x20\x01(\rR\tplayingId\x12\"\n\rplay_musi\
+    c_id\x18\x05\x20\x01(\rR\x0bplayMusicId\x12\x18\n\x07retcode\x18\x04\x20\
+    \x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

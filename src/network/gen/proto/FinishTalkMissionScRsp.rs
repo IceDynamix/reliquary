@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishTalkMissionScRsp {
     // message fields
-    // @@protoc_insertion_point(field:FinishTalkMissionScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:FinishTalkMissionScRsp.NJHPKMHFJAD)
-    pub NJHPKMHFJAD: u32,
-    // @@protoc_insertion_point(field:FinishTalkMissionScRsp.OILHDJJEHOA)
-    pub OILHDJJEHOA: ::std::string::String,
-    // @@protoc_insertion_point(field:FinishTalkMissionScRsp.OIGPKLBIBAC)
-    pub OIGPKLBIBAC: ::std::vec::Vec<super::AMMOKDCDKOO::AMMOKDCDKOO>,
+    // @@protoc_insertion_point(field:FinishTalkMissionScRsp.NDGNEOFKKKB)
+    pub NDGNEOFKKKB: ::std::vec::Vec<super::KECLGHLEBKO::KECLGHLEBKO>,
+    // @@protoc_insertion_point(field:FinishTalkMissionScRsp.FAFGOIMCDPF)
+    pub FAFGOIMCDPF: u32,
+    // @@protoc_insertion_point(field:FinishTalkMissionScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:FinishTalkMissionScRsp.MDOCEIENLCH)
+    pub MDOCEIENLCH: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:FinishTalkMissionScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,25 +56,25 @@ impl FinishTalkMissionScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &FinishTalkMissionScRsp| { &m.retcode },
-            |m: &mut FinishTalkMissionScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NJHPKMHFJAD",
-            |m: &FinishTalkMissionScRsp| { &m.NJHPKMHFJAD },
-            |m: &mut FinishTalkMissionScRsp| { &mut m.NJHPKMHFJAD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OILHDJJEHOA",
-            |m: &FinishTalkMissionScRsp| { &m.OILHDJJEHOA },
-            |m: &mut FinishTalkMissionScRsp| { &mut m.OILHDJJEHOA },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OIGPKLBIBAC",
-            |m: &FinishTalkMissionScRsp| { &m.OIGPKLBIBAC },
-            |m: &mut FinishTalkMissionScRsp| { &mut m.OIGPKLBIBAC },
+            "NDGNEOFKKKB",
+            |m: &FinishTalkMissionScRsp| { &m.NDGNEOFKKKB },
+            |m: &mut FinishTalkMissionScRsp| { &mut m.NDGNEOFKKKB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FAFGOIMCDPF",
+            |m: &FinishTalkMissionScRsp| { &m.FAFGOIMCDPF },
+            |m: &mut FinishTalkMissionScRsp| { &mut m.FAFGOIMCDPF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ADADHIHDHJC",
+            |m: &FinishTalkMissionScRsp| { &m.ADADHIHDHJC },
+            |m: &mut FinishTalkMissionScRsp| { &mut m.ADADHIHDHJC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MDOCEIENLCH",
+            |m: &FinishTalkMissionScRsp| { &m.MDOCEIENLCH },
+            |m: &mut FinishTalkMissionScRsp| { &mut m.MDOCEIENLCH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishTalkMissionScRsp>(
             "FinishTalkMissionScRsp",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for FinishTalkMissionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.retcode = is.read_uint32()?;
+                42 => {
+                    self.NDGNEOFKKKB.push(is.read_message()?);
                 },
-                80 => {
-                    self.NJHPKMHFJAD = is.read_uint32()?;
+                96 => {
+                    self.FAFGOIMCDPF = is.read_uint32()?;
                 },
-                50 => {
-                    self.OILHDJJEHOA = is.read_string()?;
+                112 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                26 => {
-                    self.OIGPKLBIBAC.push(is.read_message()?);
+                90 => {
+                    self.MDOCEIENLCH = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,37 +118,37 @@ impl ::protobuf::Message for FinishTalkMissionScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
-        }
-        if self.NJHPKMHFJAD != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.NJHPKMHFJAD);
-        }
-        if !self.OILHDJJEHOA.is_empty() {
-            my_size += ::protobuf::rt::string_size(6, &self.OILHDJJEHOA);
-        }
-        for value in &self.OIGPKLBIBAC {
+        for value in &self.NDGNEOFKKKB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.FAFGOIMCDPF != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.FAFGOIMCDPF);
+        }
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.ADADHIHDHJC);
+        }
+        if !self.MDOCEIENLCH.is_empty() {
+            my_size += ::protobuf::rt::string_size(11, &self.MDOCEIENLCH);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
-        }
-        if self.NJHPKMHFJAD != 0 {
-            os.write_uint32(10, self.NJHPKMHFJAD)?;
-        }
-        if !self.OILHDJJEHOA.is_empty() {
-            os.write_string(6, &self.OILHDJJEHOA)?;
-        }
-        for v in &self.OIGPKLBIBAC {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        for v in &self.NDGNEOFKKKB {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
+        if self.FAFGOIMCDPF != 0 {
+            os.write_uint32(12, self.FAFGOIMCDPF)?;
+        }
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(14, self.ADADHIHDHJC)?;
+        }
+        if !self.MDOCEIENLCH.is_empty() {
+            os.write_string(11, &self.MDOCEIENLCH)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -166,19 +166,19 @@ impl ::protobuf::Message for FinishTalkMissionScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.NJHPKMHFJAD = 0;
-        self.OILHDJJEHOA.clear();
-        self.OIGPKLBIBAC.clear();
+        self.NDGNEOFKKKB.clear();
+        self.FAFGOIMCDPF = 0;
+        self.ADADHIHDHJC = 0;
+        self.MDOCEIENLCH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishTalkMissionScRsp {
         static instance: FinishTalkMissionScRsp = FinishTalkMissionScRsp {
-            retcode: 0,
-            NJHPKMHFJAD: 0,
-            OILHDJJEHOA: ::std::string::String::new(),
-            OIGPKLBIBAC: ::std::vec::Vec::new(),
+            NDGNEOFKKKB: ::std::vec::Vec::new(),
+            FAFGOIMCDPF: 0,
+            ADADHIHDHJC: 0,
+            MDOCEIENLCH: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,11 +203,12 @@ impl ::protobuf::reflect::ProtobufValue for FinishTalkMissionScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cFinishTalkMissionScRsp.proto\x1a\x11AMMOKDCDKOO.proto\"\xa6\x01\n\
-    \x16FinishTalkMissionScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07r\
-    etcode\x12\x20\n\x0bNJHPKMHFJAD\x18\n\x20\x01(\rR\x0bNJHPKMHFJAD\x12\x20\
-    \n\x0bOILHDJJEHOA\x18\x06\x20\x01(\tR\x0bOILHDJJEHOA\x12.\n\x0bOIGPKLBIB\
-    AC\x18\x03\x20\x03(\x0b2\x0c.AMMOKDCDKOOR\x0bOIGPKLBIBACb\x06proto3\
+    \n\x1cFinishTalkMissionScRsp.proto\x1a\x11KECLGHLEBKO.proto\"\xae\x01\n\
+    \x16FinishTalkMissionScRsp\x12.\n\x0bNDGNEOFKKKB\x18\x05\x20\x03(\x0b2\
+    \x0c.KECLGHLEBKOR\x0bNDGNEOFKKKB\x12\x20\n\x0bFAFGOIMCDPF\x18\x0c\x20\
+    \x01(\rR\x0bFAFGOIMCDPF\x12\x20\n\x0bADADHIHDHJC\x18\x0e\x20\x01(\rR\x0b\
+    ADADHIHDHJC\x12\x20\n\x0bMDOCEIENLCH\x18\x0b\x20\x01(\tR\x0bMDOCEIENLCHb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -225,7 +226,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::AMMOKDCDKOO::file_descriptor().clone());
+            deps.push(super::KECLGHLEBKO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FinishTalkMissionScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

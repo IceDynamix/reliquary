@@ -29,26 +29,26 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetDrinkMakerDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetDrinkMakerDataScRsp.exp)
-    pub exp: u32,
-    // @@protoc_insertion_point(field:GetDrinkMakerDataScRsp.PAHBKDPKLFB)
-    pub PAHBKDPKLFB: u32,
-    // @@protoc_insertion_point(field:GetDrinkMakerDataScRsp.FLNJDFHNNFI)
-    pub FLNJDFHNNFI: ::protobuf::MessageField<super::LGNIOADJNOJ::LGNIOADJNOJ>,
-    // @@protoc_insertion_point(field:GetDrinkMakerDataScRsp.BAAGLIIDLNK)
-    pub BAAGLIIDLNK: u32,
-    // @@protoc_insertion_point(field:GetDrinkMakerDataScRsp.HJIFBKPIDOG)
-    pub HJIFBKPIDOG: u32,
-    // @@protoc_insertion_point(field:GetDrinkMakerDataScRsp.DCPHNKMFLMN)
-    pub DCPHNKMFLMN: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetDrinkMakerDataScRsp.level)
-    pub level: u32,
-    // @@protoc_insertion_point(field:GetDrinkMakerDataScRsp.FAABGHNMGHM)
-    pub FAABGHNMGHM: u32,
-    // @@protoc_insertion_point(field:GetDrinkMakerDataScRsp.LPNCFLAKPOH)
-    pub LPNCFLAKPOH: ::std::vec::Vec<super::DrinkMakerGuest::DrinkMakerGuest>,
-    // @@protoc_insertion_point(field:GetDrinkMakerDataScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetDrinkMakerDataScRsp.CNINLAJDEHG)
+    pub CNINLAJDEHG: u32,
+    // @@protoc_insertion_point(field:GetDrinkMakerDataScRsp.MAMKEEKMJHA)
+    pub MAMKEEKMJHA: u32,
+    // @@protoc_insertion_point(field:GetDrinkMakerDataScRsp.CNFKHMNAAMP)
+    pub CNFKHMNAAMP: ::protobuf::MessageField<super::PNLHADCBNMN::PNLHADCBNMN>,
+    // @@protoc_insertion_point(field:GetDrinkMakerDataScRsp.JKOCJIMAGBN)
+    pub JKOCJIMAGBN: u32,
+    // @@protoc_insertion_point(field:GetDrinkMakerDataScRsp.BBICFBOEDHG)
+    pub BBICFBOEDHG: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetDrinkMakerDataScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:GetDrinkMakerDataScRsp.PICFNHKDGMI)
+    pub PICFNHKDGMI: u32,
+    // @@protoc_insertion_point(field:GetDrinkMakerDataScRsp.CDMPAMDGMHD)
+    pub CDMPAMDGMHD: u32,
+    // @@protoc_insertion_point(field:GetDrinkMakerDataScRsp.JIJKPFBLGKE)
+    pub JIJKPFBLGKE: u32,
+    // @@protoc_insertion_point(field:GetDrinkMakerDataScRsp.FCCOMPHNCCP)
+    pub FCCOMPHNCCP: ::std::vec::Vec<super::DrinkMakerGuest::DrinkMakerGuest>,
     // special fields
     // @@protoc_insertion_point(special_field:GetDrinkMakerDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -69,54 +69,54 @@ impl GetDrinkMakerDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "exp",
-            |m: &GetDrinkMakerDataScRsp| { &m.exp },
-            |m: &mut GetDrinkMakerDataScRsp| { &mut m.exp },
+            "CNINLAJDEHG",
+            |m: &GetDrinkMakerDataScRsp| { &m.CNINLAJDEHG },
+            |m: &mut GetDrinkMakerDataScRsp| { &mut m.CNINLAJDEHG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PAHBKDPKLFB",
-            |m: &GetDrinkMakerDataScRsp| { &m.PAHBKDPKLFB },
-            |m: &mut GetDrinkMakerDataScRsp| { &mut m.PAHBKDPKLFB },
+            "MAMKEEKMJHA",
+            |m: &GetDrinkMakerDataScRsp| { &m.MAMKEEKMJHA },
+            |m: &mut GetDrinkMakerDataScRsp| { &mut m.MAMKEEKMJHA },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LGNIOADJNOJ::LGNIOADJNOJ>(
-            "FLNJDFHNNFI",
-            |m: &GetDrinkMakerDataScRsp| { &m.FLNJDFHNNFI },
-            |m: &mut GetDrinkMakerDataScRsp| { &mut m.FLNJDFHNNFI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BAAGLIIDLNK",
-            |m: &GetDrinkMakerDataScRsp| { &m.BAAGLIIDLNK },
-            |m: &mut GetDrinkMakerDataScRsp| { &mut m.BAAGLIIDLNK },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PNLHADCBNMN::PNLHADCBNMN>(
+            "CNFKHMNAAMP",
+            |m: &GetDrinkMakerDataScRsp| { &m.CNFKHMNAAMP },
+            |m: &mut GetDrinkMakerDataScRsp| { &mut m.CNFKHMNAAMP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HJIFBKPIDOG",
-            |m: &GetDrinkMakerDataScRsp| { &m.HJIFBKPIDOG },
-            |m: &mut GetDrinkMakerDataScRsp| { &mut m.HJIFBKPIDOG },
+            "JKOCJIMAGBN",
+            |m: &GetDrinkMakerDataScRsp| { &m.JKOCJIMAGBN },
+            |m: &mut GetDrinkMakerDataScRsp| { &mut m.JKOCJIMAGBN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DCPHNKMFLMN",
-            |m: &GetDrinkMakerDataScRsp| { &m.DCPHNKMFLMN },
-            |m: &mut GetDrinkMakerDataScRsp| { &mut m.DCPHNKMFLMN },
+            "BBICFBOEDHG",
+            |m: &GetDrinkMakerDataScRsp| { &m.BBICFBOEDHG },
+            |m: &mut GetDrinkMakerDataScRsp| { &mut m.BBICFBOEDHG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &GetDrinkMakerDataScRsp| { &m.level },
-            |m: &mut GetDrinkMakerDataScRsp| { &mut m.level },
+            "ADADHIHDHJC",
+            |m: &GetDrinkMakerDataScRsp| { &m.ADADHIHDHJC },
+            |m: &mut GetDrinkMakerDataScRsp| { &mut m.ADADHIHDHJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FAABGHNMGHM",
-            |m: &GetDrinkMakerDataScRsp| { &m.FAABGHNMGHM },
-            |m: &mut GetDrinkMakerDataScRsp| { &mut m.FAABGHNMGHM },
+            "PICFNHKDGMI",
+            |m: &GetDrinkMakerDataScRsp| { &m.PICFNHKDGMI },
+            |m: &mut GetDrinkMakerDataScRsp| { &mut m.PICFNHKDGMI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CDMPAMDGMHD",
+            |m: &GetDrinkMakerDataScRsp| { &m.CDMPAMDGMHD },
+            |m: &mut GetDrinkMakerDataScRsp| { &mut m.CDMPAMDGMHD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JIJKPFBLGKE",
+            |m: &GetDrinkMakerDataScRsp| { &m.JIJKPFBLGKE },
+            |m: &mut GetDrinkMakerDataScRsp| { &mut m.JIJKPFBLGKE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LPNCFLAKPOH",
-            |m: &GetDrinkMakerDataScRsp| { &m.LPNCFLAKPOH },
-            |m: &mut GetDrinkMakerDataScRsp| { &mut m.LPNCFLAKPOH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetDrinkMakerDataScRsp| { &m.retcode },
-            |m: &mut GetDrinkMakerDataScRsp| { &mut m.retcode },
+            "FCCOMPHNCCP",
+            |m: &GetDrinkMakerDataScRsp| { &m.FCCOMPHNCCP },
+            |m: &mut GetDrinkMakerDataScRsp| { &mut m.FCCOMPHNCCP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetDrinkMakerDataScRsp>(
             "GetDrinkMakerDataScRsp",
@@ -137,37 +137,37 @@ impl ::protobuf::Message for GetDrinkMakerDataScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 24 => {
-                    self.exp = is.read_uint32()?;
+                    self.CNINLAJDEHG = is.read_uint32()?;
+                },
+                80 => {
+                    self.MAMKEEKMJHA = is.read_uint32()?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CNFKHMNAAMP)?;
+                },
+                56 => {
+                    self.JKOCJIMAGBN = is.read_uint32()?;
+                },
+                18 => {
+                    is.read_repeated_packed_uint32_into(&mut self.BBICFBOEDHG)?;
                 },
                 16 => {
-                    self.PAHBKDPKLFB = is.read_uint32()?;
-                },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FLNJDFHNNFI)?;
-                },
-                88 => {
-                    self.BAAGLIIDLNK = is.read_uint32()?;
-                },
-                40 => {
-                    self.HJIFBKPIDOG = is.read_uint32()?;
-                },
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.DCPHNKMFLMN)?;
-                },
-                8 => {
-                    self.DCPHNKMFLMN.push(is.read_uint32()?);
-                },
-                72 => {
-                    self.level = is.read_uint32()?;
+                    self.BBICFBOEDHG.push(is.read_uint32()?);
                 },
                 48 => {
-                    self.FAABGHNMGHM = is.read_uint32()?;
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                98 => {
-                    self.LPNCFLAKPOH.push(is.read_message()?);
+                64 => {
+                    self.PICFNHKDGMI = is.read_uint32()?;
                 },
                 112 => {
-                    self.retcode = is.read_uint32()?;
+                    self.CDMPAMDGMHD = is.read_uint32()?;
+                },
+                120 => {
+                    self.JIJKPFBLGKE = is.read_uint32()?;
+                },
+                10 => {
+                    self.FCCOMPHNCCP.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -181,74 +181,74 @@ impl ::protobuf::Message for GetDrinkMakerDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.exp);
+        if self.CNINLAJDEHG != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.CNINLAJDEHG);
         }
-        if self.PAHBKDPKLFB != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.PAHBKDPKLFB);
+        if self.MAMKEEKMJHA != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.MAMKEEKMJHA);
         }
-        if let Some(v) = self.FLNJDFHNNFI.as_ref() {
+        if let Some(v) = self.CNFKHMNAAMP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.BAAGLIIDLNK != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.BAAGLIIDLNK);
+        if self.JKOCJIMAGBN != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.JKOCJIMAGBN);
         }
-        if self.HJIFBKPIDOG != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.HJIFBKPIDOG);
-        }
-        for value in &self.DCPHNKMFLMN {
-            my_size += ::protobuf::rt::uint32_size(1, *value);
+        for value in &self.BBICFBOEDHG {
+            my_size += ::protobuf::rt::uint32_size(2, *value);
         };
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.level);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.ADADHIHDHJC);
         }
-        if self.FAABGHNMGHM != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.FAABGHNMGHM);
+        if self.PICFNHKDGMI != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.PICFNHKDGMI);
         }
-        for value in &self.LPNCFLAKPOH {
+        if self.CDMPAMDGMHD != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.CDMPAMDGMHD);
+        }
+        if self.JIJKPFBLGKE != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.JIJKPFBLGKE);
+        }
+        for value in &self.FCCOMPHNCCP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.exp != 0 {
-            os.write_uint32(3, self.exp)?;
+        if self.CNINLAJDEHG != 0 {
+            os.write_uint32(3, self.CNINLAJDEHG)?;
         }
-        if self.PAHBKDPKLFB != 0 {
-            os.write_uint32(2, self.PAHBKDPKLFB)?;
+        if self.MAMKEEKMJHA != 0 {
+            os.write_uint32(10, self.MAMKEEKMJHA)?;
         }
-        if let Some(v) = self.FLNJDFHNNFI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if let Some(v) = self.CNFKHMNAAMP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
-        if self.BAAGLIIDLNK != 0 {
-            os.write_uint32(11, self.BAAGLIIDLNK)?;
+        if self.JKOCJIMAGBN != 0 {
+            os.write_uint32(7, self.JKOCJIMAGBN)?;
         }
-        if self.HJIFBKPIDOG != 0 {
-            os.write_uint32(5, self.HJIFBKPIDOG)?;
-        }
-        for v in &self.DCPHNKMFLMN {
-            os.write_uint32(1, *v)?;
+        for v in &self.BBICFBOEDHG {
+            os.write_uint32(2, *v)?;
         };
-        if self.level != 0 {
-            os.write_uint32(9, self.level)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(6, self.ADADHIHDHJC)?;
         }
-        if self.FAABGHNMGHM != 0 {
-            os.write_uint32(6, self.FAABGHNMGHM)?;
+        if self.PICFNHKDGMI != 0 {
+            os.write_uint32(8, self.PICFNHKDGMI)?;
         }
-        for v in &self.LPNCFLAKPOH {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if self.CDMPAMDGMHD != 0 {
+            os.write_uint32(14, self.CDMPAMDGMHD)?;
+        }
+        if self.JIJKPFBLGKE != 0 {
+            os.write_uint32(15, self.JIJKPFBLGKE)?;
+        }
+        for v in &self.FCCOMPHNCCP {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -266,31 +266,31 @@ impl ::protobuf::Message for GetDrinkMakerDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.exp = 0;
-        self.PAHBKDPKLFB = 0;
-        self.FLNJDFHNNFI.clear();
-        self.BAAGLIIDLNK = 0;
-        self.HJIFBKPIDOG = 0;
-        self.DCPHNKMFLMN.clear();
-        self.level = 0;
-        self.FAABGHNMGHM = 0;
-        self.LPNCFLAKPOH.clear();
-        self.retcode = 0;
+        self.CNINLAJDEHG = 0;
+        self.MAMKEEKMJHA = 0;
+        self.CNFKHMNAAMP.clear();
+        self.JKOCJIMAGBN = 0;
+        self.BBICFBOEDHG.clear();
+        self.ADADHIHDHJC = 0;
+        self.PICFNHKDGMI = 0;
+        self.CDMPAMDGMHD = 0;
+        self.JIJKPFBLGKE = 0;
+        self.FCCOMPHNCCP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetDrinkMakerDataScRsp {
         static instance: GetDrinkMakerDataScRsp = GetDrinkMakerDataScRsp {
-            exp: 0,
-            PAHBKDPKLFB: 0,
-            FLNJDFHNNFI: ::protobuf::MessageField::none(),
-            BAAGLIIDLNK: 0,
-            HJIFBKPIDOG: 0,
-            DCPHNKMFLMN: ::std::vec::Vec::new(),
-            level: 0,
-            FAABGHNMGHM: 0,
-            LPNCFLAKPOH: ::std::vec::Vec::new(),
-            retcode: 0,
+            CNINLAJDEHG: 0,
+            MAMKEEKMJHA: 0,
+            CNFKHMNAAMP: ::protobuf::MessageField::none(),
+            JKOCJIMAGBN: 0,
+            BBICFBOEDHG: ::std::vec::Vec::new(),
+            ADADHIHDHJC: 0,
+            PICFNHKDGMI: 0,
+            CDMPAMDGMHD: 0,
+            JIJKPFBLGKE: 0,
+            FCCOMPHNCCP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -315,17 +315,17 @@ impl ::protobuf::reflect::ProtobufValue for GetDrinkMakerDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cGetDrinkMakerDataScRsp.proto\x1a\x15DrinkMakerGuest.proto\x1a\x11L\
-    GNIOADJNOJ.proto\"\xe8\x02\n\x16GetDrinkMakerDataScRsp\x12\x10\n\x03exp\
-    \x18\x03\x20\x01(\rR\x03exp\x12\x20\n\x0bPAHBKDPKLFB\x18\x02\x20\x01(\rR\
-    \x0bPAHBKDPKLFB\x12.\n\x0bFLNJDFHNNFI\x18\n\x20\x01(\x0b2\x0c.LGNIOADJNO\
-    JR\x0bFLNJDFHNNFI\x12\x20\n\x0bBAAGLIIDLNK\x18\x0b\x20\x01(\rR\x0bBAAGLI\
-    IDLNK\x12\x20\n\x0bHJIFBKPIDOG\x18\x05\x20\x01(\rR\x0bHJIFBKPIDOG\x12\
-    \x20\n\x0bDCPHNKMFLMN\x18\x01\x20\x03(\rR\x0bDCPHNKMFLMN\x12\x14\n\x05le\
-    vel\x18\t\x20\x01(\rR\x05level\x12\x20\n\x0bFAABGHNMGHM\x18\x06\x20\x01(\
-    \rR\x0bFAABGHNMGHM\x122\n\x0bLPNCFLAKPOH\x18\x0c\x20\x03(\x0b2\x10.Drink\
-    MakerGuestR\x0bLPNCFLAKPOH\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07r\
-    etcodeb\x06proto3\
+    \n\x1cGetDrinkMakerDataScRsp.proto\x1a\x15DrinkMakerGuest.proto\x1a\x11P\
+    NLHADCBNMN.proto\"\x8c\x03\n\x16GetDrinkMakerDataScRsp\x12\x20\n\x0bCNIN\
+    LAJDEHG\x18\x03\x20\x01(\rR\x0bCNINLAJDEHG\x12\x20\n\x0bMAMKEEKMJHA\x18\
+    \n\x20\x01(\rR\x0bMAMKEEKMJHA\x12.\n\x0bCNFKHMNAAMP\x18\t\x20\x01(\x0b2\
+    \x0c.PNLHADCBNMNR\x0bCNFKHMNAAMP\x12\x20\n\x0bJKOCJIMAGBN\x18\x07\x20\
+    \x01(\rR\x0bJKOCJIMAGBN\x12\x20\n\x0bBBICFBOEDHG\x18\x02\x20\x03(\rR\x0b\
+    BBICFBOEDHG\x12\x20\n\x0bADADHIHDHJC\x18\x06\x20\x01(\rR\x0bADADHIHDHJC\
+    \x12\x20\n\x0bPICFNHKDGMI\x18\x08\x20\x01(\rR\x0bPICFNHKDGMI\x12\x20\n\
+    \x0bCDMPAMDGMHD\x18\x0e\x20\x01(\rR\x0bCDMPAMDGMHD\x12\x20\n\x0bJIJKPFBL\
+    GKE\x18\x0f\x20\x01(\rR\x0bJIJKPFBLGKE\x122\n\x0bFCCOMPHNCCP\x18\x01\x20\
+    \x03(\x0b2\x10.DrinkMakerGuestR\x0bFCCOMPHNCCPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -344,7 +344,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::DrinkMakerGuest::file_descriptor().clone());
-            deps.push(super::LGNIOADJNOJ::file_descriptor().clone());
+            deps.push(super::PNLHADCBNMN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetDrinkMakerDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

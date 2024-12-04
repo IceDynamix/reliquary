@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetIsDisplayAvatarInfoCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetIsDisplayAvatarInfoCsReq.NCGHFMIPMKN)
-    pub NCGHFMIPMKN: bool,
+    // @@protoc_insertion_point(field:SetIsDisplayAvatarInfoCsReq.JPNADLAPBCE)
+    pub JPNADLAPBCE: bool,
     // special fields
     // @@protoc_insertion_point(special_field:SetIsDisplayAvatarInfoCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl SetIsDisplayAvatarInfoCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NCGHFMIPMKN",
-            |m: &SetIsDisplayAvatarInfoCsReq| { &m.NCGHFMIPMKN },
-            |m: &mut SetIsDisplayAvatarInfoCsReq| { &mut m.NCGHFMIPMKN },
+            "JPNADLAPBCE",
+            |m: &SetIsDisplayAvatarInfoCsReq| { &m.JPNADLAPBCE },
+            |m: &mut SetIsDisplayAvatarInfoCsReq| { &mut m.JPNADLAPBCE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetIsDisplayAvatarInfoCsReq>(
             "SetIsDisplayAvatarInfoCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for SetIsDisplayAvatarInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.NCGHFMIPMKN = is.read_bool()?;
+                80 => {
+                    self.JPNADLAPBCE = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for SetIsDisplayAvatarInfoCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NCGHFMIPMKN != false {
+        if self.JPNADLAPBCE != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -97,8 +97,8 @@ impl ::protobuf::Message for SetIsDisplayAvatarInfoCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NCGHFMIPMKN != false {
-            os.write_bool(12, self.NCGHFMIPMKN)?;
+        if self.JPNADLAPBCE != false {
+            os.write_bool(10, self.JPNADLAPBCE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for SetIsDisplayAvatarInfoCsReq {
     }
 
     fn clear(&mut self) {
-        self.NCGHFMIPMKN = false;
+        self.JPNADLAPBCE = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetIsDisplayAvatarInfoCsReq {
         static instance: SetIsDisplayAvatarInfoCsReq = SetIsDisplayAvatarInfoCsReq {
-            NCGHFMIPMKN: false,
+            JPNADLAPBCE: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for SetIsDisplayAvatarInfoCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!SetIsDisplayAvatarInfoCsReq.proto\"?\n\x1bSetIsDisplayAvatarInfoCsReq\
-    \x12\x20\n\x0bNCGHFMIPMKN\x18\x0c\x20\x01(\x08R\x0bNCGHFMIPMKNb\x06proto\
-    3\
+    \x12\x20\n\x0bJPNADLAPBCE\x18\n\x20\x01(\x08R\x0bJPNADLAPBCEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

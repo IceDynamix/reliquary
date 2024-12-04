@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartTimedCocoonStageScRsp {
     // message fields
-    // @@protoc_insertion_point(field:StartTimedCocoonStageScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:StartTimedCocoonStageScRsp.FPAPOFCIGGP)
-    pub FPAPOFCIGGP: u32,
-    // @@protoc_insertion_point(field:StartTimedCocoonStageScRsp.BLEINMLIFDD)
-    pub BLEINMLIFDD: u32,
-    // @@protoc_insertion_point(field:StartTimedCocoonStageScRsp.JONHHDCOHBI)
-    pub JONHHDCOHBI: ::protobuf::MessageField<super::AHFFHEBEEGC::AHFFHEBEEGC>,
+    // @@protoc_insertion_point(field:StartTimedCocoonStageScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:StartTimedCocoonStageScRsp.AHLKBKEFGII)
+    pub AHLKBKEFGII: u32,
+    // @@protoc_insertion_point(field:StartTimedCocoonStageScRsp.IJOLEKJFLGF)
+    pub IJOLEKJFLGF: u32,
+    // @@protoc_insertion_point(field:StartTimedCocoonStageScRsp.BBKGPAJCCBM)
+    pub BBKGPAJCCBM: ::protobuf::MessageField<super::CHDPLFOHLCN::CHDPLFOHLCN>,
     // special fields
     // @@protoc_insertion_point(special_field:StartTimedCocoonStageScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl StartTimedCocoonStageScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &StartTimedCocoonStageScRsp| { &m.retcode },
-            |m: &mut StartTimedCocoonStageScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &StartTimedCocoonStageScRsp| { &m.ADADHIHDHJC },
+            |m: &mut StartTimedCocoonStageScRsp| { &mut m.ADADHIHDHJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FPAPOFCIGGP",
-            |m: &StartTimedCocoonStageScRsp| { &m.FPAPOFCIGGP },
-            |m: &mut StartTimedCocoonStageScRsp| { &mut m.FPAPOFCIGGP },
+            "AHLKBKEFGII",
+            |m: &StartTimedCocoonStageScRsp| { &m.AHLKBKEFGII },
+            |m: &mut StartTimedCocoonStageScRsp| { &mut m.AHLKBKEFGII },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BLEINMLIFDD",
-            |m: &StartTimedCocoonStageScRsp| { &m.BLEINMLIFDD },
-            |m: &mut StartTimedCocoonStageScRsp| { &mut m.BLEINMLIFDD },
+            "IJOLEKJFLGF",
+            |m: &StartTimedCocoonStageScRsp| { &m.IJOLEKJFLGF },
+            |m: &mut StartTimedCocoonStageScRsp| { &mut m.IJOLEKJFLGF },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AHFFHEBEEGC::AHFFHEBEEGC>(
-            "JONHHDCOHBI",
-            |m: &StartTimedCocoonStageScRsp| { &m.JONHHDCOHBI },
-            |m: &mut StartTimedCocoonStageScRsp| { &mut m.JONHHDCOHBI },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CHDPLFOHLCN::CHDPLFOHLCN>(
+            "BBKGPAJCCBM",
+            |m: &StartTimedCocoonStageScRsp| { &m.BBKGPAJCCBM },
+            |m: &mut StartTimedCocoonStageScRsp| { &mut m.BBKGPAJCCBM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartTimedCocoonStageScRsp>(
             "StartTimedCocoonStageScRsp",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for StartTimedCocoonStageScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.retcode = is.read_uint32()?;
-                },
                 56 => {
-                    self.FPAPOFCIGGP = is.read_uint32()?;
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                88 => {
-                    self.BLEINMLIFDD = is.read_uint32()?;
+                96 => {
+                    self.AHLKBKEFGII = is.read_uint32()?;
                 },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JONHHDCOHBI)?;
+                24 => {
+                    self.IJOLEKJFLGF = is.read_uint32()?;
+                },
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BBKGPAJCCBM)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,16 +118,16 @@ impl ::protobuf::Message for StartTimedCocoonStageScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.ADADHIHDHJC);
         }
-        if self.FPAPOFCIGGP != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.FPAPOFCIGGP);
+        if self.AHLKBKEFGII != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.AHLKBKEFGII);
         }
-        if self.BLEINMLIFDD != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.BLEINMLIFDD);
+        if self.IJOLEKJFLGF != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.IJOLEKJFLGF);
         }
-        if let Some(v) = self.JONHHDCOHBI.as_ref() {
+        if let Some(v) = self.BBKGPAJCCBM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -137,17 +137,17 @@ impl ::protobuf::Message for StartTimedCocoonStageScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(7, self.ADADHIHDHJC)?;
         }
-        if self.FPAPOFCIGGP != 0 {
-            os.write_uint32(7, self.FPAPOFCIGGP)?;
+        if self.AHLKBKEFGII != 0 {
+            os.write_uint32(12, self.AHLKBKEFGII)?;
         }
-        if self.BLEINMLIFDD != 0 {
-            os.write_uint32(11, self.BLEINMLIFDD)?;
+        if self.IJOLEKJFLGF != 0 {
+            os.write_uint32(3, self.IJOLEKJFLGF)?;
         }
-        if let Some(v) = self.JONHHDCOHBI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if let Some(v) = self.BBKGPAJCCBM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for StartTimedCocoonStageScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.FPAPOFCIGGP = 0;
-        self.BLEINMLIFDD = 0;
-        self.JONHHDCOHBI.clear();
+        self.ADADHIHDHJC = 0;
+        self.AHLKBKEFGII = 0;
+        self.IJOLEKJFLGF = 0;
+        self.BBKGPAJCCBM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartTimedCocoonStageScRsp {
         static instance: StartTimedCocoonStageScRsp = StartTimedCocoonStageScRsp {
-            retcode: 0,
-            FPAPOFCIGGP: 0,
-            BLEINMLIFDD: 0,
-            JONHHDCOHBI: ::protobuf::MessageField::none(),
+            ADADHIHDHJC: 0,
+            AHLKBKEFGII: 0,
+            IJOLEKJFLGF: 0,
+            BBKGPAJCCBM: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,12 +203,12 @@ impl ::protobuf::reflect::ProtobufValue for StartTimedCocoonStageScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20StartTimedCocoonStageScRsp.proto\x1a\x11AHFFHEBEEGC.proto\"\xaa\
-    \x01\n\x1aStartTimedCocoonStageScRsp\x12\x18\n\x07retcode\x18\r\x20\x01(\
-    \rR\x07retcode\x12\x20\n\x0bFPAPOFCIGGP\x18\x07\x20\x01(\rR\x0bFPAPOFCIG\
-    GP\x12\x20\n\x0bBLEINMLIFDD\x18\x0b\x20\x01(\rR\x0bBLEINMLIFDD\x12.\n\
-    \x0bJONHHDCOHBI\x18\x0e\x20\x01(\x0b2\x0c.AHFFHEBEEGCR\x0bJONHHDCOHBIb\
-    \x06proto3\
+    \n\x20StartTimedCocoonStageScRsp.proto\x1a\x11CHDPLFOHLCN.proto\"\xb2\
+    \x01\n\x1aStartTimedCocoonStageScRsp\x12\x20\n\x0bADADHIHDHJC\x18\x07\
+    \x20\x01(\rR\x0bADADHIHDHJC\x12\x20\n\x0bAHLKBKEFGII\x18\x0c\x20\x01(\rR\
+    \x0bAHLKBKEFGII\x12\x20\n\x0bIJOLEKJFLGF\x18\x03\x20\x01(\rR\x0bIJOLEKJF\
+    LGF\x12.\n\x0bBBKGPAJCCBM\x18\r\x20\x01(\x0b2\x0c.CHDPLFOHLCNR\x0bBBKGPA\
+    JCCBMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -226,7 +226,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::AHFFHEBEEGC::file_descriptor().clone());
+            deps.push(super::CHDPLFOHLCN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(StartTimedCocoonStageScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdateServerPrefsDataCsReq {
     // message fields
-    // @@protoc_insertion_point(field:UpdateServerPrefsDataCsReq.PEGJDDOLDDB)
-    pub PEGJDDOLDDB: ::protobuf::MessageField<super::NFJLPFKFDLF::NFJLPFKFDLF>,
+    // @@protoc_insertion_point(field:UpdateServerPrefsDataCsReq.server_prefs)
+    pub server_prefs: ::protobuf::MessageField<super::ServerPrefs::ServerPrefs>,
     // special fields
     // @@protoc_insertion_point(special_field:UpdateServerPrefsDataCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,10 +50,10 @@ impl UpdateServerPrefsDataCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NFJLPFKFDLF::NFJLPFKFDLF>(
-            "PEGJDDOLDDB",
-            |m: &UpdateServerPrefsDataCsReq| { &m.PEGJDDOLDDB },
-            |m: &mut UpdateServerPrefsDataCsReq| { &mut m.PEGJDDOLDDB },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ServerPrefs::ServerPrefs>(
+            "server_prefs",
+            |m: &UpdateServerPrefsDataCsReq| { &m.server_prefs },
+            |m: &mut UpdateServerPrefsDataCsReq| { &mut m.server_prefs },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdateServerPrefsDataCsReq>(
             "UpdateServerPrefsDataCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for UpdateServerPrefsDataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PEGJDDOLDDB)?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.server_prefs)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for UpdateServerPrefsDataCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.PEGJDDOLDDB.as_ref() {
+        if let Some(v) = self.server_prefs.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -98,8 +98,8 @@ impl ::protobuf::Message for UpdateServerPrefsDataCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.PEGJDDOLDDB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if let Some(v) = self.server_prefs.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -118,13 +118,13 @@ impl ::protobuf::Message for UpdateServerPrefsDataCsReq {
     }
 
     fn clear(&mut self) {
-        self.PEGJDDOLDDB.clear();
+        self.server_prefs.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateServerPrefsDataCsReq {
         static instance: UpdateServerPrefsDataCsReq = UpdateServerPrefsDataCsReq {
-            PEGJDDOLDDB: ::protobuf::MessageField::none(),
+            server_prefs: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,9 +149,10 @@ impl ::protobuf::reflect::ProtobufValue for UpdateServerPrefsDataCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20UpdateServerPrefsDataCsReq.proto\x1a\x11NFJLPFKFDLF.proto\"L\n\x1a\
-    UpdateServerPrefsDataCsReq\x12.\n\x0bPEGJDDOLDDB\x18\x0b\x20\x01(\x0b2\
-    \x0c.NFJLPFKFDLFR\x0bPEGJDDOLDDBb\x06proto3\
+    \n\x20UpdateServerPrefsDataCsReq.proto\x1a\x11ServerPrefs.proto\"M\n\x1a\
+    UpdateServerPrefsDataCsReq\x12/\n\x0cserver_prefs\x18\x08\x20\x01(\x0b2\
+    \x0c.ServerPrefsR\x0bserverPrefsB\x15\n\x13emu.lunarcore.protob\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -169,7 +170,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::NFJLPFKFDLF::file_descriptor().clone());
+            deps.push(super::ServerPrefs::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(UpdateServerPrefsDataCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

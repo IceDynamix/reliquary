@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SelectPhoneThemeScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SelectPhoneThemeScRsp.EMBLLIMNKAG)
-    pub EMBLLIMNKAG: u32,
+    // @@protoc_insertion_point(field:SelectPhoneThemeScRsp.BMGPODKNLNG)
+    pub BMGPODKNLNG: u32,
+    // @@protoc_insertion_point(field:SelectPhoneThemeScRsp.cur_phone_theme)
+    pub cur_phone_theme: u32,
     // @@protoc_insertion_point(field:SelectPhoneThemeScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:SelectPhoneThemeScRsp.FMLBKAEOLMG)
-    pub FMLBKAEOLMG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SelectPhoneThemeScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl SelectPhoneThemeScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EMBLLIMNKAG",
-            |m: &SelectPhoneThemeScRsp| { &m.EMBLLIMNKAG },
-            |m: &mut SelectPhoneThemeScRsp| { &mut m.EMBLLIMNKAG },
+            "BMGPODKNLNG",
+            |m: &SelectPhoneThemeScRsp| { &m.BMGPODKNLNG },
+            |m: &mut SelectPhoneThemeScRsp| { &mut m.BMGPODKNLNG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "cur_phone_theme",
+            |m: &SelectPhoneThemeScRsp| { &m.cur_phone_theme },
+            |m: &mut SelectPhoneThemeScRsp| { &mut m.cur_phone_theme },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &SelectPhoneThemeScRsp| { &m.retcode },
             |m: &mut SelectPhoneThemeScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FMLBKAEOLMG",
-            |m: &SelectPhoneThemeScRsp| { &m.FMLBKAEOLMG },
-            |m: &mut SelectPhoneThemeScRsp| { &mut m.FMLBKAEOLMG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SelectPhoneThemeScRsp>(
             "SelectPhoneThemeScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for SelectPhoneThemeScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.EMBLLIMNKAG = is.read_uint32()?;
-                },
                 104 => {
-                    self.retcode = is.read_uint32()?;
+                    self.BMGPODKNLNG = is.read_uint32()?;
                 },
-                112 => {
-                    self.FMLBKAEOLMG = is.read_uint32()?;
+                16 => {
+                    self.cur_phone_theme = is.read_uint32()?;
+                },
+                88 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for SelectPhoneThemeScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EMBLLIMNKAG != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.EMBLLIMNKAG);
+        if self.BMGPODKNLNG != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.BMGPODKNLNG);
+        }
+        if self.cur_phone_theme != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.cur_phone_theme);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
-        }
-        if self.FMLBKAEOLMG != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.FMLBKAEOLMG);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for SelectPhoneThemeScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EMBLLIMNKAG != 0 {
-            os.write_uint32(4, self.EMBLLIMNKAG)?;
+        if self.BMGPODKNLNG != 0 {
+            os.write_uint32(13, self.BMGPODKNLNG)?;
+        }
+        if self.cur_phone_theme != 0 {
+            os.write_uint32(2, self.cur_phone_theme)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
-        }
-        if self.FMLBKAEOLMG != 0 {
-            os.write_uint32(14, self.FMLBKAEOLMG)?;
+            os.write_uint32(11, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for SelectPhoneThemeScRsp {
     }
 
     fn clear(&mut self) {
-        self.EMBLLIMNKAG = 0;
+        self.BMGPODKNLNG = 0;
+        self.cur_phone_theme = 0;
         self.retcode = 0;
-        self.FMLBKAEOLMG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SelectPhoneThemeScRsp {
         static instance: SelectPhoneThemeScRsp = SelectPhoneThemeScRsp {
-            EMBLLIMNKAG: 0,
+            BMGPODKNLNG: 0,
+            cur_phone_theme: 0,
             retcode: 0,
-            FMLBKAEOLMG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for SelectPhoneThemeScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bSelectPhoneThemeScRsp.proto\"u\n\x15SelectPhoneThemeScRsp\x12\x20\
-    \n\x0bEMBLLIMNKAG\x18\x04\x20\x01(\rR\x0bEMBLLIMNKAG\x12\x18\n\x07retcod\
-    e\x18\r\x20\x01(\rR\x07retcode\x12\x20\n\x0bFMLBKAEOLMG\x18\x0e\x20\x01(\
-    \rR\x0bFMLBKAEOLMGb\x06proto3\
+    \n\x1bSelectPhoneThemeScRsp.proto\"{\n\x15SelectPhoneThemeScRsp\x12\x20\
+    \n\x0bBMGPODKNLNG\x18\r\x20\x01(\rR\x0bBMGPODKNLNG\x12&\n\x0fcur_phone_t\
+    heme\x18\x02\x20\x01(\rR\rcurPhoneTheme\x12\x18\n\x07retcode\x18\x0b\x20\
+    \x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

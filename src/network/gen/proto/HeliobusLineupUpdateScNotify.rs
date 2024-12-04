@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HeliobusLineupUpdateScNotify {
     // message fields
-    // @@protoc_insertion_point(field:HeliobusLineupUpdateScNotify.COCFMLGGMKE)
-    pub COCFMLGGMKE: ::protobuf::MessageField<super::HeliobusChallengeLineup::HeliobusChallengeLineup>,
+    // @@protoc_insertion_point(field:HeliobusLineupUpdateScNotify.GOOIEHKAGLC)
+    pub GOOIEHKAGLC: ::protobuf::MessageField<super::HeliobusChallengeLineup::HeliobusChallengeLineup>,
     // special fields
     // @@protoc_insertion_point(special_field:HeliobusLineupUpdateScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl HeliobusLineupUpdateScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HeliobusChallengeLineup::HeliobusChallengeLineup>(
-            "COCFMLGGMKE",
-            |m: &HeliobusLineupUpdateScNotify| { &m.COCFMLGGMKE },
-            |m: &mut HeliobusLineupUpdateScNotify| { &mut m.COCFMLGGMKE },
+            "GOOIEHKAGLC",
+            |m: &HeliobusLineupUpdateScNotify| { &m.GOOIEHKAGLC },
+            |m: &mut HeliobusLineupUpdateScNotify| { &mut m.GOOIEHKAGLC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HeliobusLineupUpdateScNotify>(
             "HeliobusLineupUpdateScNotify",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for HeliobusLineupUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.COCFMLGGMKE)?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GOOIEHKAGLC)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for HeliobusLineupUpdateScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.COCFMLGGMKE.as_ref() {
+        if let Some(v) = self.GOOIEHKAGLC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -98,8 +98,8 @@ impl ::protobuf::Message for HeliobusLineupUpdateScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.COCFMLGGMKE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if let Some(v) = self.GOOIEHKAGLC.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -118,13 +118,13 @@ impl ::protobuf::Message for HeliobusLineupUpdateScNotify {
     }
 
     fn clear(&mut self) {
-        self.COCFMLGGMKE.clear();
+        self.GOOIEHKAGLC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HeliobusLineupUpdateScNotify {
         static instance: HeliobusLineupUpdateScNotify = HeliobusLineupUpdateScNotify {
-            COCFMLGGMKE: ::protobuf::MessageField::none(),
+            GOOIEHKAGLC: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -150,8 +150,8 @@ impl ::protobuf::reflect::ProtobufValue for HeliobusLineupUpdateScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"HeliobusLineupUpdateScNotify.proto\x1a\x1dHeliobusChallengeLineup.pr\
-    oto\"Z\n\x1cHeliobusLineupUpdateScNotify\x12:\n\x0bCOCFMLGGMKE\x18\x08\
-    \x20\x01(\x0b2\x18.HeliobusChallengeLineupR\x0bCOCFMLGGMKEb\x06proto3\
+    oto\"Z\n\x1cHeliobusLineupUpdateScNotify\x12:\n\x0bGOOIEHKAGLC\x18\x04\
+    \x20\x01(\x0b2\x18.HeliobusChallengeLineupR\x0bGOOIEHKAGLCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

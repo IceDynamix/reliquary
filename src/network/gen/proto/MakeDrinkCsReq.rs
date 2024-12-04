@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MakeDrinkCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MakeDrinkCsReq.OEEHEOKKNGD)
-    pub OEEHEOKKNGD: ::protobuf::MessageField<super::LGNIOADJNOJ::LGNIOADJNOJ>,
-    // @@protoc_insertion_point(field:MakeDrinkCsReq.FAABGHNMGHM)
-    pub FAABGHNMGHM: u32,
+    // @@protoc_insertion_point(field:MakeDrinkCsReq.JIJKPFBLGKE)
+    pub JIJKPFBLGKE: u32,
+    // @@protoc_insertion_point(field:MakeDrinkCsReq.CMBKNELNFEM)
+    pub CMBKNELNFEM: ::protobuf::MessageField<super::PNLHADCBNMN::PNLHADCBNMN>,
     // special fields
     // @@protoc_insertion_point(special_field:MakeDrinkCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl MakeDrinkCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LGNIOADJNOJ::LGNIOADJNOJ>(
-            "OEEHEOKKNGD",
-            |m: &MakeDrinkCsReq| { &m.OEEHEOKKNGD },
-            |m: &mut MakeDrinkCsReq| { &mut m.OEEHEOKKNGD },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FAABGHNMGHM",
-            |m: &MakeDrinkCsReq| { &m.FAABGHNMGHM },
-            |m: &mut MakeDrinkCsReq| { &mut m.FAABGHNMGHM },
+            "JIJKPFBLGKE",
+            |m: &MakeDrinkCsReq| { &m.JIJKPFBLGKE },
+            |m: &mut MakeDrinkCsReq| { &mut m.JIJKPFBLGKE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PNLHADCBNMN::PNLHADCBNMN>(
+            "CMBKNELNFEM",
+            |m: &MakeDrinkCsReq| { &m.CMBKNELNFEM },
+            |m: &mut MakeDrinkCsReq| { &mut m.CMBKNELNFEM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MakeDrinkCsReq>(
             "MakeDrinkCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for MakeDrinkCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OEEHEOKKNGD)?;
+                64 => {
+                    self.JIJKPFBLGKE = is.read_uint32()?;
                 },
-                80 => {
-                    self.FAABGHNMGHM = is.read_uint32()?;
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CMBKNELNFEM)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,12 +98,12 @@ impl ::protobuf::Message for MakeDrinkCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.OEEHEOKKNGD.as_ref() {
+        if self.JIJKPFBLGKE != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.JIJKPFBLGKE);
+        }
+        if let Some(v) = self.CMBKNELNFEM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.FAABGHNMGHM != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.FAABGHNMGHM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for MakeDrinkCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.OEEHEOKKNGD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if self.JIJKPFBLGKE != 0 {
+            os.write_uint32(8, self.JIJKPFBLGKE)?;
         }
-        if self.FAABGHNMGHM != 0 {
-            os.write_uint32(10, self.FAABGHNMGHM)?;
+        if let Some(v) = self.CMBKNELNFEM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for MakeDrinkCsReq {
     }
 
     fn clear(&mut self) {
-        self.OEEHEOKKNGD.clear();
-        self.FAABGHNMGHM = 0;
+        self.JIJKPFBLGKE = 0;
+        self.CMBKNELNFEM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MakeDrinkCsReq {
         static instance: MakeDrinkCsReq = MakeDrinkCsReq {
-            OEEHEOKKNGD: ::protobuf::MessageField::none(),
-            FAABGHNMGHM: 0,
+            JIJKPFBLGKE: 0,
+            CMBKNELNFEM: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for MakeDrinkCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14MakeDrinkCsReq.proto\x1a\x11LGNIOADJNOJ.proto\"b\n\x0eMakeDrinkCsR\
-    eq\x12.\n\x0bOEEHEOKKNGD\x18\x0e\x20\x01(\x0b2\x0c.LGNIOADJNOJR\x0bOEEHE\
-    OKKNGD\x12\x20\n\x0bFAABGHNMGHM\x18\n\x20\x01(\rR\x0bFAABGHNMGHMb\x06pro\
-    to3\
+    \n\x14MakeDrinkCsReq.proto\x1a\x11PNLHADCBNMN.proto\"b\n\x0eMakeDrinkCsR\
+    eq\x12\x20\n\x0bJIJKPFBLGKE\x18\x08\x20\x01(\rR\x0bJIJKPFBLGKE\x12.\n\
+    \x0bCMBKNELNFEM\x18\x03\x20\x01(\x0b2\x0c.PNLHADCBNMNR\x0bCMBKNELNFEMb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::LGNIOADJNOJ::file_descriptor().clone());
+            deps.push(super::PNLHADCBNMN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MakeDrinkCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

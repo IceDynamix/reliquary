@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetAllLineupDataScRsp {
     // message fields
+    // @@protoc_insertion_point(field:GetAllLineupDataScRsp.lineup_list)
+    pub lineup_list: ::std::vec::Vec<super::LineupInfo::LineupInfo>,
+    // @@protoc_insertion_point(field:GetAllLineupDataScRsp.cur_index)
+    pub cur_index: u32,
     // @@protoc_insertion_point(field:GetAllLineupDataScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetAllLineupDataScRsp.CKLHHOLMBOO)
-    pub CKLHHOLMBOO: ::std::vec::Vec<super::FJPJJEIJLLP::FJPJJEIJLLP>,
-    // @@protoc_insertion_point(field:GetAllLineupDataScRsp.IDJCEGIDPBL)
-    pub IDJCEGIDPBL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetAllLineupDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl GetAllLineupDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "lineup_list",
+            |m: &GetAllLineupDataScRsp| { &m.lineup_list },
+            |m: &mut GetAllLineupDataScRsp| { &mut m.lineup_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "cur_index",
+            |m: &GetAllLineupDataScRsp| { &m.cur_index },
+            |m: &mut GetAllLineupDataScRsp| { &mut m.cur_index },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetAllLineupDataScRsp| { &m.retcode },
             |m: &mut GetAllLineupDataScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CKLHHOLMBOO",
-            |m: &GetAllLineupDataScRsp| { &m.CKLHHOLMBOO },
-            |m: &mut GetAllLineupDataScRsp| { &mut m.CKLHHOLMBOO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IDJCEGIDPBL",
-            |m: &GetAllLineupDataScRsp| { &m.IDJCEGIDPBL },
-            |m: &mut GetAllLineupDataScRsp| { &mut m.IDJCEGIDPBL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetAllLineupDataScRsp>(
             "GetAllLineupDataScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for GetAllLineupDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                66 => {
+                    self.lineup_list.push(is.read_message()?);
+                },
+                120 => {
+                    self.cur_index = is.read_uint32()?;
+                },
+                8 => {
                     self.retcode = is.read_uint32()?;
-                },
-                42 => {
-                    self.CKLHHOLMBOO.push(is.read_message()?);
-                },
-                80 => {
-                    self.IDJCEGIDPBL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +108,15 @@ impl ::protobuf::Message for GetAllLineupDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
-        }
-        for value in &self.CKLHHOLMBOO {
+        for value in &self.lineup_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.IDJCEGIDPBL != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.IDJCEGIDPBL);
+        if self.cur_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.cur_index);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for GetAllLineupDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
-        }
-        for v in &self.CKLHHOLMBOO {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        for v in &self.lineup_list {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
-        if self.IDJCEGIDPBL != 0 {
-            os.write_uint32(10, self.IDJCEGIDPBL)?;
+        if self.cur_index != 0 {
+            os.write_uint32(15, self.cur_index)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(1, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for GetAllLineupDataScRsp {
     }
 
     fn clear(&mut self) {
+        self.lineup_list.clear();
+        self.cur_index = 0;
         self.retcode = 0;
-        self.CKLHHOLMBOO.clear();
-        self.IDJCEGIDPBL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetAllLineupDataScRsp {
         static instance: GetAllLineupDataScRsp = GetAllLineupDataScRsp {
+            lineup_list: ::std::vec::Vec::new(),
+            cur_index: 0,
             retcode: 0,
-            CKLHHOLMBOO: ::std::vec::Vec::new(),
-            IDJCEGIDPBL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for GetAllLineupDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bGetAllLineupDataScRsp.proto\x1a\x11FJPJJEIJLLP.proto\"\x83\x01\n\
-    \x15GetAllLineupDataScRsp\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07re\
-    tcode\x12.\n\x0bCKLHHOLMBOO\x18\x05\x20\x03(\x0b2\x0c.FJPJJEIJLLPR\x0bCK\
-    LHHOLMBOO\x12\x20\n\x0bIDJCEGIDPBL\x18\n\x20\x01(\rR\x0bIDJCEGIDPBLb\x06\
-    proto3\
+    \n\x1bGetAllLineupDataScRsp.proto\x1a\x10LineupInfo.proto\"|\n\x15GetAll\
+    LineupDataScRsp\x12,\n\x0blineup_list\x18\x08\x20\x03(\x0b2\x0b.LineupIn\
+    foR\nlineupList\x12\x1b\n\tcur_index\x18\x0f\x20\x01(\rR\x08curIndex\x12\
+    \x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore\
+    .protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::FJPJJEIJLLP::file_descriptor().clone());
+            deps.push(super::LineupInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetAllLineupDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

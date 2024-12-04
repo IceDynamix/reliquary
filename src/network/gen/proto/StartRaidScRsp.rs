@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartRaidScRsp {
     // message fields
-    // @@protoc_insertion_point(field:StartRaidScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:StartRaidScRsp.EMDECAJPAPM)
-    pub EMDECAJPAPM: ::protobuf::MessageField<super::OIIOLCPBLCF::OIIOLCPBLCF>,
+    // @@protoc_insertion_point(field:StartRaidScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:StartRaidScRsp.HGGFOJICNCG)
+    pub HGGFOJICNCG: ::protobuf::MessageField<super::GAMNEPOEGHM::GAMNEPOEGHM>,
     // special fields
     // @@protoc_insertion_point(special_field:StartRaidScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl StartRaidScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &StartRaidScRsp| { &m.retcode },
-            |m: &mut StartRaidScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &StartRaidScRsp| { &m.ADADHIHDHJC },
+            |m: &mut StartRaidScRsp| { &mut m.ADADHIHDHJC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OIIOLCPBLCF::OIIOLCPBLCF>(
-            "EMDECAJPAPM",
-            |m: &StartRaidScRsp| { &m.EMDECAJPAPM },
-            |m: &mut StartRaidScRsp| { &mut m.EMDECAJPAPM },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GAMNEPOEGHM::GAMNEPOEGHM>(
+            "HGGFOJICNCG",
+            |m: &StartRaidScRsp| { &m.HGGFOJICNCG },
+            |m: &mut StartRaidScRsp| { &mut m.HGGFOJICNCG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartRaidScRsp>(
             "StartRaidScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for StartRaidScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.retcode = is.read_uint32()?;
+                48 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EMDECAJPAPM)?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HGGFOJICNCG)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for StartRaidScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.ADADHIHDHJC);
         }
-        if let Some(v) = self.EMDECAJPAPM.as_ref() {
+        if let Some(v) = self.HGGFOJICNCG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for StartRaidScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(6, self.ADADHIHDHJC)?;
         }
-        if let Some(v) = self.EMDECAJPAPM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if let Some(v) = self.HGGFOJICNCG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for StartRaidScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.EMDECAJPAPM.clear();
+        self.ADADHIHDHJC = 0;
+        self.HGGFOJICNCG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartRaidScRsp {
         static instance: StartRaidScRsp = StartRaidScRsp {
-            retcode: 0,
-            EMDECAJPAPM: ::protobuf::MessageField::none(),
+            ADADHIHDHJC: 0,
+            HGGFOJICNCG: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for StartRaidScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14StartRaidScRsp.proto\x1a\x11OIIOLCPBLCF.proto\"Z\n\x0eStartRaidScR\
-    sp\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12.\n\x0bEMDECAJ\
-    PAPM\x18\n\x20\x01(\x0b2\x0c.OIIOLCPBLCFR\x0bEMDECAJPAPMb\x06proto3\
+    \n\x14StartRaidScRsp.proto\x1a\x11GAMNEPOEGHM.proto\"b\n\x0eStartRaidScR\
+    sp\x12\x20\n\x0bADADHIHDHJC\x18\x06\x20\x01(\rR\x0bADADHIHDHJC\x12.\n\
+    \x0bHGGFOJICNCG\x18\x01\x20\x01(\x0b2\x0c.GAMNEPOEGHMR\x0bHGGFOJICNCGb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::OIIOLCPBLCF::file_descriptor().clone());
+            deps.push(super::GAMNEPOEGHM::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(StartRaidScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

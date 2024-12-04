@@ -30,7 +30,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub struct ChessRogueChangeyAeonDimensionNotify {
     // message fields
     // @@protoc_insertion_point(field:ChessRogueChangeyAeonDimensionNotify.ROGUE_DEBUG_MESSAGE_TYPE_INFO)
-    pub ROGUE_DEBUG_MESSAGE_TYPE_INFO: ::protobuf::MessageField<super::MAMDDPMFNFC::MAMDDPMFNFC>,
+    pub ROGUE_DEBUG_MESSAGE_TYPE_INFO: ::protobuf::MessageField<super::OPLGFILFLDO::OPLGFILFLDO>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueChangeyAeonDimensionNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,7 +50,7 @@ impl ChessRogueChangeyAeonDimensionNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MAMDDPMFNFC::MAMDDPMFNFC>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OPLGFILFLDO::OPLGFILFLDO>(
             "ROGUE_DEBUG_MESSAGE_TYPE_INFO",
             |m: &ChessRogueChangeyAeonDimensionNotify| { &m.ROGUE_DEBUG_MESSAGE_TYPE_INFO },
             |m: &mut ChessRogueChangeyAeonDimensionNotify| { &mut m.ROGUE_DEBUG_MESSAGE_TYPE_INFO },
@@ -73,7 +73,7 @@ impl ::protobuf::Message for ChessRogueChangeyAeonDimensionNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.ROGUE_DEBUG_MESSAGE_TYPE_INFO)?;
                 },
                 tag => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for ChessRogueChangeyAeonDimensionNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.ROGUE_DEBUG_MESSAGE_TYPE_INFO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,9 +149,9 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueChangeyAeonDimensionNotify
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n*ChessRogueChangeyAeonDimensionNotify.proto\x1a\x11MAMDDPMFNFC.proto\"\
+    \n*ChessRogueChangeyAeonDimensionNotify.proto\x1a\x11OPLGFILFLDO.proto\"\
     v\n$ChessRogueChangeyAeonDimensionNotify\x12N\n\x1dROGUE_DEBUG_MESSAGE_T\
-    YPE_INFO\x18\x0e\x20\x01(\x0b2\x0c.MAMDDPMFNFCR\x19ROGUEDEBUGMESSAGETYPE\
+    YPE_INFO\x18\x02\x20\x01(\x0b2\x0c.OPLGFILFLDOR\x19ROGUEDEBUGMESSAGETYPE\
     INFOb\x06proto3\
 ";
 
@@ -170,7 +170,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::MAMDDPMFNFC::file_descriptor().clone());
+            deps.push(super::OPLGFILFLDO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChessRogueChangeyAeonDimensionNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncTurnFoodNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncTurnFoodNotify.IBLPHOPOEOK)
-    pub IBLPHOPOEOK: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::TurnFoodSwitch::TurnFoodSwitch>>,
-    // @@protoc_insertion_point(field:SyncTurnFoodNotify.DHDJIIOIPKH)
-    pub DHDJIIOIPKH: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SyncTurnFoodNotify.DJKHJFIKMDP)
+    pub DJKHJFIKMDP: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SyncTurnFoodNotify.CPDPJAJAFGL)
+    pub CPDPJAJAFGL: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::TurnFoodSwitch::TurnFoodSwitch>>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncTurnFoodNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl SyncTurnFoodNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IBLPHOPOEOK",
-            |m: &SyncTurnFoodNotify| { &m.IBLPHOPOEOK },
-            |m: &mut SyncTurnFoodNotify| { &mut m.IBLPHOPOEOK },
+            "DJKHJFIKMDP",
+            |m: &SyncTurnFoodNotify| { &m.DJKHJFIKMDP },
+            |m: &mut SyncTurnFoodNotify| { &mut m.DJKHJFIKMDP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DHDJIIOIPKH",
-            |m: &SyncTurnFoodNotify| { &m.DHDJIIOIPKH },
-            |m: &mut SyncTurnFoodNotify| { &mut m.DHDJIIOIPKH },
+            "CPDPJAJAFGL",
+            |m: &SyncTurnFoodNotify| { &m.CPDPJAJAFGL },
+            |m: &mut SyncTurnFoodNotify| { &mut m.CPDPJAJAFGL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncTurnFoodNotify>(
             "SyncTurnFoodNotify",
@@ -80,17 +80,17 @@ impl ::protobuf::Message for SyncTurnFoodNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.IBLPHOPOEOK.push(is.read_enum_or_unknown()?);
+                34 => {
+                    is.read_repeated_packed_uint32_into(&mut self.DJKHJFIKMDP)?;
                 },
-                42 => {
-                    ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.IBLPHOPOEOK)?
+                32 => {
+                    self.DJKHJFIKMDP.push(is.read_uint32()?);
                 },
-                82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.DHDJIIOIPKH)?;
+                64 => {
+                    self.CPDPJAJAFGL.push(is.read_enum_or_unknown()?);
                 },
-                80 => {
-                    self.DHDJIIOIPKH.push(is.read_uint32()?);
+                66 => {
+                    ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.CPDPJAJAFGL)?
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -104,11 +104,11 @@ impl ::protobuf::Message for SyncTurnFoodNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.IBLPHOPOEOK {
-            my_size += ::protobuf::rt::int32_size(5, value.value());
+        for value in &self.DJKHJFIKMDP {
+            my_size += ::protobuf::rt::uint32_size(4, *value);
         };
-        for value in &self.DHDJIIOIPKH {
-            my_size += ::protobuf::rt::uint32_size(10, *value);
+        for value in &self.CPDPJAJAFGL {
+            my_size += ::protobuf::rt::int32_size(8, value.value());
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -116,11 +116,11 @@ impl ::protobuf::Message for SyncTurnFoodNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.IBLPHOPOEOK {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(v))?;
+        for v in &self.DJKHJFIKMDP {
+            os.write_uint32(4, *v)?;
         };
-        for v in &self.DHDJIIOIPKH {
-            os.write_uint32(10, *v)?;
+        for v in &self.CPDPJAJAFGL {
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(v))?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -139,15 +139,15 @@ impl ::protobuf::Message for SyncTurnFoodNotify {
     }
 
     fn clear(&mut self) {
-        self.IBLPHOPOEOK.clear();
-        self.DHDJIIOIPKH.clear();
+        self.DJKHJFIKMDP.clear();
+        self.CPDPJAJAFGL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncTurnFoodNotify {
         static instance: SyncTurnFoodNotify = SyncTurnFoodNotify {
-            IBLPHOPOEOK: ::std::vec::Vec::new(),
-            DHDJIIOIPKH: ::std::vec::Vec::new(),
+            DJKHJFIKMDP: ::std::vec::Vec::new(),
+            CPDPJAJAFGL: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -173,9 +173,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncTurnFoodNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18SyncTurnFoodNotify.proto\x1a\x14TurnFoodSwitch.proto\"i\n\x12SyncT\
-    urnFoodNotify\x121\n\x0bIBLPHOPOEOK\x18\x05\x20\x03(\x0e2\x0f.TurnFoodSw\
-    itchR\x0bIBLPHOPOEOK\x12\x20\n\x0bDHDJIIOIPKH\x18\n\x20\x03(\rR\x0bDHDJI\
-    IOIPKHb\x06proto3\
+    urnFoodNotify\x12\x20\n\x0bDJKHJFIKMDP\x18\x04\x20\x03(\rR\x0bDJKHJFIKMD\
+    P\x121\n\x0bCPDPJAJAFGL\x18\x08\x20\x03(\x0e2\x0f.TurnFoodSwitchR\x0bCPD\
+    PJAJAFGLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

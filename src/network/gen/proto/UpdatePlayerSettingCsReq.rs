@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdatePlayerSettingCsReq {
     // message fields
-    // @@protoc_insertion_point(field:UpdatePlayerSettingCsReq.BEMBICIIHNK)
-    pub BEMBICIIHNK: ::protobuf::MessageField<super::OBONHLAFBFD::OBONHLAFBFD>,
+    // @@protoc_insertion_point(field:UpdatePlayerSettingCsReq.LAOGOECAMIK)
+    pub LAOGOECAMIK: ::protobuf::MessageField<super::CNMLONGLBHB::CNMLONGLBHB>,
     // special fields
     // @@protoc_insertion_point(special_field:UpdatePlayerSettingCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,10 +50,10 @@ impl UpdatePlayerSettingCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OBONHLAFBFD::OBONHLAFBFD>(
-            "BEMBICIIHNK",
-            |m: &UpdatePlayerSettingCsReq| { &m.BEMBICIIHNK },
-            |m: &mut UpdatePlayerSettingCsReq| { &mut m.BEMBICIIHNK },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CNMLONGLBHB::CNMLONGLBHB>(
+            "LAOGOECAMIK",
+            |m: &UpdatePlayerSettingCsReq| { &m.LAOGOECAMIK },
+            |m: &mut UpdatePlayerSettingCsReq| { &mut m.LAOGOECAMIK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdatePlayerSettingCsReq>(
             "UpdatePlayerSettingCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for UpdatePlayerSettingCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BEMBICIIHNK)?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LAOGOECAMIK)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for UpdatePlayerSettingCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.BEMBICIIHNK.as_ref() {
+        if let Some(v) = self.LAOGOECAMIK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -98,8 +98,8 @@ impl ::protobuf::Message for UpdatePlayerSettingCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.BEMBICIIHNK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if let Some(v) = self.LAOGOECAMIK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -118,13 +118,13 @@ impl ::protobuf::Message for UpdatePlayerSettingCsReq {
     }
 
     fn clear(&mut self) {
-        self.BEMBICIIHNK.clear();
+        self.LAOGOECAMIK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdatePlayerSettingCsReq {
         static instance: UpdatePlayerSettingCsReq = UpdatePlayerSettingCsReq {
-            BEMBICIIHNK: ::protobuf::MessageField::none(),
+            LAOGOECAMIK: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,9 +149,9 @@ impl ::protobuf::reflect::ProtobufValue for UpdatePlayerSettingCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eUpdatePlayerSettingCsReq.proto\x1a\x11OBONHLAFBFD.proto\"J\n\x18Up\
-    datePlayerSettingCsReq\x12.\n\x0bBEMBICIIHNK\x18\x01\x20\x01(\x0b2\x0c.O\
-    BONHLAFBFDR\x0bBEMBICIIHNKb\x06proto3\
+    \n\x1eUpdatePlayerSettingCsReq.proto\x1a\x11CNMLONGLBHB.proto\"J\n\x18Up\
+    datePlayerSettingCsReq\x12.\n\x0bLAOGOECAMIK\x18\x04\x20\x01(\x0b2\x0c.C\
+    NMLONGLBHBR\x0bLAOGOECAMIKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -169,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::OBONHLAFBFD::file_descriptor().clone());
+            deps.push(super::CNMLONGLBHB::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(UpdatePlayerSettingCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

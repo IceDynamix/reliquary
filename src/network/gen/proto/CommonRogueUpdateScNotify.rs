@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CommonRogueUpdateScNotify {
     // message oneof groups
-    pub IJMNDINHKGD: ::std::option::Option<common_rogue_update_sc_notify::IJMNDINHKGD>,
+    pub MFBEHADMFEG: ::std::option::Option<common_rogue_update_sc_notify::MFBEHADMFEG>,
     // special fields
     // @@protoc_insertion_point(special_field:CommonRogueUpdateScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -46,122 +46,122 @@ impl CommonRogueUpdateScNotify {
         ::std::default::Default::default()
     }
 
-    // .LMPOJGEHFIP GMPHOLJJDCA = 14;
+    // .CPBCGMPJLHG CJPKEOMLPEE = 4;
 
-    pub fn GMPHOLJJDCA(&self) -> &super::LMPOJGEHFIP::LMPOJGEHFIP {
-        match self.IJMNDINHKGD {
-            ::std::option::Option::Some(common_rogue_update_sc_notify::IJMNDINHKGD::GMPHOLJJDCA(ref v)) => v,
-            _ => <super::LMPOJGEHFIP::LMPOJGEHFIP as ::protobuf::Message>::default_instance(),
+    pub fn CJPKEOMLPEE(&self) -> &super::CPBCGMPJLHG::CPBCGMPJLHG {
+        match self.MFBEHADMFEG {
+            ::std::option::Option::Some(common_rogue_update_sc_notify::MFBEHADMFEG::CJPKEOMLPEE(ref v)) => v,
+            _ => <super::CPBCGMPJLHG::CPBCGMPJLHG as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_GMPHOLJJDCA(&mut self) {
-        self.IJMNDINHKGD = ::std::option::Option::None;
+    pub fn clear_CJPKEOMLPEE(&mut self) {
+        self.MFBEHADMFEG = ::std::option::Option::None;
     }
 
-    pub fn has_GMPHOLJJDCA(&self) -> bool {
-        match self.IJMNDINHKGD {
-            ::std::option::Option::Some(common_rogue_update_sc_notify::IJMNDINHKGD::GMPHOLJJDCA(..)) => true,
+    pub fn has_CJPKEOMLPEE(&self) -> bool {
+        match self.MFBEHADMFEG {
+            ::std::option::Option::Some(common_rogue_update_sc_notify::MFBEHADMFEG::CJPKEOMLPEE(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_GMPHOLJJDCA(&mut self, v: super::LMPOJGEHFIP::LMPOJGEHFIP) {
-        self.IJMNDINHKGD = ::std::option::Option::Some(common_rogue_update_sc_notify::IJMNDINHKGD::GMPHOLJJDCA(v))
+    pub fn set_CJPKEOMLPEE(&mut self, v: super::CPBCGMPJLHG::CPBCGMPJLHG) {
+        self.MFBEHADMFEG = ::std::option::Option::Some(common_rogue_update_sc_notify::MFBEHADMFEG::CJPKEOMLPEE(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_GMPHOLJJDCA(&mut self) -> &mut super::LMPOJGEHFIP::LMPOJGEHFIP {
-        if let ::std::option::Option::Some(common_rogue_update_sc_notify::IJMNDINHKGD::GMPHOLJJDCA(_)) = self.IJMNDINHKGD {
+    pub fn mut_CJPKEOMLPEE(&mut self) -> &mut super::CPBCGMPJLHG::CPBCGMPJLHG {
+        if let ::std::option::Option::Some(common_rogue_update_sc_notify::MFBEHADMFEG::CJPKEOMLPEE(_)) = self.MFBEHADMFEG {
         } else {
-            self.IJMNDINHKGD = ::std::option::Option::Some(common_rogue_update_sc_notify::IJMNDINHKGD::GMPHOLJJDCA(super::LMPOJGEHFIP::LMPOJGEHFIP::new()));
+            self.MFBEHADMFEG = ::std::option::Option::Some(common_rogue_update_sc_notify::MFBEHADMFEG::CJPKEOMLPEE(super::CPBCGMPJLHG::CPBCGMPJLHG::new()));
         }
-        match self.IJMNDINHKGD {
-            ::std::option::Option::Some(common_rogue_update_sc_notify::IJMNDINHKGD::GMPHOLJJDCA(ref mut v)) => v,
+        match self.MFBEHADMFEG {
+            ::std::option::Option::Some(common_rogue_update_sc_notify::MFBEHADMFEG::CJPKEOMLPEE(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_GMPHOLJJDCA(&mut self) -> super::LMPOJGEHFIP::LMPOJGEHFIP {
-        if self.has_GMPHOLJJDCA() {
-            match self.IJMNDINHKGD.take() {
-                ::std::option::Option::Some(common_rogue_update_sc_notify::IJMNDINHKGD::GMPHOLJJDCA(v)) => v,
+    pub fn take_CJPKEOMLPEE(&mut self) -> super::CPBCGMPJLHG::CPBCGMPJLHG {
+        if self.has_CJPKEOMLPEE() {
+            match self.MFBEHADMFEG.take() {
+                ::std::option::Option::Some(common_rogue_update_sc_notify::MFBEHADMFEG::CJPKEOMLPEE(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::LMPOJGEHFIP::LMPOJGEHFIP::new()
+            super::CPBCGMPJLHG::CPBCGMPJLHG::new()
         }
     }
 
-    // .KIANELPLCMF OJFJFEJMJPG = 8;
+    // .ADILAOJIMPO ONGHNJCGJLA = 10;
 
-    pub fn OJFJFEJMJPG(&self) -> &super::KIANELPLCMF::KIANELPLCMF {
-        match self.IJMNDINHKGD {
-            ::std::option::Option::Some(common_rogue_update_sc_notify::IJMNDINHKGD::OJFJFEJMJPG(ref v)) => v,
-            _ => <super::KIANELPLCMF::KIANELPLCMF as ::protobuf::Message>::default_instance(),
+    pub fn ONGHNJCGJLA(&self) -> &super::ADILAOJIMPO::ADILAOJIMPO {
+        match self.MFBEHADMFEG {
+            ::std::option::Option::Some(common_rogue_update_sc_notify::MFBEHADMFEG::ONGHNJCGJLA(ref v)) => v,
+            _ => <super::ADILAOJIMPO::ADILAOJIMPO as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_OJFJFEJMJPG(&mut self) {
-        self.IJMNDINHKGD = ::std::option::Option::None;
+    pub fn clear_ONGHNJCGJLA(&mut self) {
+        self.MFBEHADMFEG = ::std::option::Option::None;
     }
 
-    pub fn has_OJFJFEJMJPG(&self) -> bool {
-        match self.IJMNDINHKGD {
-            ::std::option::Option::Some(common_rogue_update_sc_notify::IJMNDINHKGD::OJFJFEJMJPG(..)) => true,
+    pub fn has_ONGHNJCGJLA(&self) -> bool {
+        match self.MFBEHADMFEG {
+            ::std::option::Option::Some(common_rogue_update_sc_notify::MFBEHADMFEG::ONGHNJCGJLA(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_OJFJFEJMJPG(&mut self, v: super::KIANELPLCMF::KIANELPLCMF) {
-        self.IJMNDINHKGD = ::std::option::Option::Some(common_rogue_update_sc_notify::IJMNDINHKGD::OJFJFEJMJPG(v))
+    pub fn set_ONGHNJCGJLA(&mut self, v: super::ADILAOJIMPO::ADILAOJIMPO) {
+        self.MFBEHADMFEG = ::std::option::Option::Some(common_rogue_update_sc_notify::MFBEHADMFEG::ONGHNJCGJLA(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_OJFJFEJMJPG(&mut self) -> &mut super::KIANELPLCMF::KIANELPLCMF {
-        if let ::std::option::Option::Some(common_rogue_update_sc_notify::IJMNDINHKGD::OJFJFEJMJPG(_)) = self.IJMNDINHKGD {
+    pub fn mut_ONGHNJCGJLA(&mut self) -> &mut super::ADILAOJIMPO::ADILAOJIMPO {
+        if let ::std::option::Option::Some(common_rogue_update_sc_notify::MFBEHADMFEG::ONGHNJCGJLA(_)) = self.MFBEHADMFEG {
         } else {
-            self.IJMNDINHKGD = ::std::option::Option::Some(common_rogue_update_sc_notify::IJMNDINHKGD::OJFJFEJMJPG(super::KIANELPLCMF::KIANELPLCMF::new()));
+            self.MFBEHADMFEG = ::std::option::Option::Some(common_rogue_update_sc_notify::MFBEHADMFEG::ONGHNJCGJLA(super::ADILAOJIMPO::ADILAOJIMPO::new()));
         }
-        match self.IJMNDINHKGD {
-            ::std::option::Option::Some(common_rogue_update_sc_notify::IJMNDINHKGD::OJFJFEJMJPG(ref mut v)) => v,
+        match self.MFBEHADMFEG {
+            ::std::option::Option::Some(common_rogue_update_sc_notify::MFBEHADMFEG::ONGHNJCGJLA(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_OJFJFEJMJPG(&mut self) -> super::KIANELPLCMF::KIANELPLCMF {
-        if self.has_OJFJFEJMJPG() {
-            match self.IJMNDINHKGD.take() {
-                ::std::option::Option::Some(common_rogue_update_sc_notify::IJMNDINHKGD::OJFJFEJMJPG(v)) => v,
+    pub fn take_ONGHNJCGJLA(&mut self) -> super::ADILAOJIMPO::ADILAOJIMPO {
+        if self.has_ONGHNJCGJLA() {
+            match self.MFBEHADMFEG.take() {
+                ::std::option::Option::Some(common_rogue_update_sc_notify::MFBEHADMFEG::ONGHNJCGJLA(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::KIANELPLCMF::KIANELPLCMF::new()
+            super::ADILAOJIMPO::ADILAOJIMPO::new()
         }
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LMPOJGEHFIP::LMPOJGEHFIP>(
-            "GMPHOLJJDCA",
-            CommonRogueUpdateScNotify::has_GMPHOLJJDCA,
-            CommonRogueUpdateScNotify::GMPHOLJJDCA,
-            CommonRogueUpdateScNotify::mut_GMPHOLJJDCA,
-            CommonRogueUpdateScNotify::set_GMPHOLJJDCA,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CPBCGMPJLHG::CPBCGMPJLHG>(
+            "CJPKEOMLPEE",
+            CommonRogueUpdateScNotify::has_CJPKEOMLPEE,
+            CommonRogueUpdateScNotify::CJPKEOMLPEE,
+            CommonRogueUpdateScNotify::mut_CJPKEOMLPEE,
+            CommonRogueUpdateScNotify::set_CJPKEOMLPEE,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KIANELPLCMF::KIANELPLCMF>(
-            "OJFJFEJMJPG",
-            CommonRogueUpdateScNotify::has_OJFJFEJMJPG,
-            CommonRogueUpdateScNotify::OJFJFEJMJPG,
-            CommonRogueUpdateScNotify::mut_OJFJFEJMJPG,
-            CommonRogueUpdateScNotify::set_OJFJFEJMJPG,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ADILAOJIMPO::ADILAOJIMPO>(
+            "ONGHNJCGJLA",
+            CommonRogueUpdateScNotify::has_ONGHNJCGJLA,
+            CommonRogueUpdateScNotify::ONGHNJCGJLA,
+            CommonRogueUpdateScNotify::mut_ONGHNJCGJLA,
+            CommonRogueUpdateScNotify::set_ONGHNJCGJLA,
         ));
-        oneofs.push(common_rogue_update_sc_notify::IJMNDINHKGD::generated_oneof_descriptor_data());
+        oneofs.push(common_rogue_update_sc_notify::MFBEHADMFEG::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CommonRogueUpdateScNotify>(
             "CommonRogueUpdateScNotify",
             fields,
@@ -180,11 +180,11 @@ impl ::protobuf::Message for CommonRogueUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    self.IJMNDINHKGD = ::std::option::Option::Some(common_rogue_update_sc_notify::IJMNDINHKGD::GMPHOLJJDCA(is.read_message()?));
+                34 => {
+                    self.MFBEHADMFEG = ::std::option::Option::Some(common_rogue_update_sc_notify::MFBEHADMFEG::CJPKEOMLPEE(is.read_message()?));
                 },
-                66 => {
-                    self.IJMNDINHKGD = ::std::option::Option::Some(common_rogue_update_sc_notify::IJMNDINHKGD::OJFJFEJMJPG(is.read_message()?));
+                82 => {
+                    self.MFBEHADMFEG = ::std::option::Option::Some(common_rogue_update_sc_notify::MFBEHADMFEG::ONGHNJCGJLA(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -198,13 +198,13 @@ impl ::protobuf::Message for CommonRogueUpdateScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.IJMNDINHKGD {
+        if let ::std::option::Option::Some(ref v) = self.MFBEHADMFEG {
             match v {
-                &common_rogue_update_sc_notify::IJMNDINHKGD::GMPHOLJJDCA(ref v) => {
+                &common_rogue_update_sc_notify::MFBEHADMFEG::CJPKEOMLPEE(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &common_rogue_update_sc_notify::IJMNDINHKGD::OJFJFEJMJPG(ref v) => {
+                &common_rogue_update_sc_notify::MFBEHADMFEG::ONGHNJCGJLA(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -216,13 +216,13 @@ impl ::protobuf::Message for CommonRogueUpdateScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.IJMNDINHKGD {
+        if let ::std::option::Option::Some(ref v) = self.MFBEHADMFEG {
             match v {
-                &common_rogue_update_sc_notify::IJMNDINHKGD::GMPHOLJJDCA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                &common_rogue_update_sc_notify::MFBEHADMFEG::CJPKEOMLPEE(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
                 },
-                &common_rogue_update_sc_notify::IJMNDINHKGD::OJFJFEJMJPG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+                &common_rogue_update_sc_notify::MFBEHADMFEG::ONGHNJCGJLA(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
             };
         }
@@ -243,14 +243,14 @@ impl ::protobuf::Message for CommonRogueUpdateScNotify {
     }
 
     fn clear(&mut self) {
-        self.IJMNDINHKGD = ::std::option::Option::None;
-        self.IJMNDINHKGD = ::std::option::Option::None;
+        self.MFBEHADMFEG = ::std::option::Option::None;
+        self.MFBEHADMFEG = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CommonRogueUpdateScNotify {
         static instance: CommonRogueUpdateScNotify = CommonRogueUpdateScNotify {
-            IJMNDINHKGD: ::std::option::Option::None,
+            MFBEHADMFEG: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -279,37 +279,37 @@ pub mod common_rogue_update_sc_notify {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:CommonRogueUpdateScNotify.IJMNDINHKGD)
-    pub enum IJMNDINHKGD {
-        // @@protoc_insertion_point(oneof_field:CommonRogueUpdateScNotify.GMPHOLJJDCA)
-        GMPHOLJJDCA(super::super::LMPOJGEHFIP::LMPOJGEHFIP),
-        // @@protoc_insertion_point(oneof_field:CommonRogueUpdateScNotify.OJFJFEJMJPG)
-        OJFJFEJMJPG(super::super::KIANELPLCMF::KIANELPLCMF),
+    // @@protoc_insertion_point(oneof:CommonRogueUpdateScNotify.MFBEHADMFEG)
+    pub enum MFBEHADMFEG {
+        // @@protoc_insertion_point(oneof_field:CommonRogueUpdateScNotify.CJPKEOMLPEE)
+        CJPKEOMLPEE(super::super::CPBCGMPJLHG::CPBCGMPJLHG),
+        // @@protoc_insertion_point(oneof_field:CommonRogueUpdateScNotify.ONGHNJCGJLA)
+        ONGHNJCGJLA(super::super::ADILAOJIMPO::ADILAOJIMPO),
     }
 
-    impl ::protobuf::Oneof for IJMNDINHKGD {
+    impl ::protobuf::Oneof for MFBEHADMFEG {
     }
 
-    impl ::protobuf::OneofFull for IJMNDINHKGD {
+    impl ::protobuf::OneofFull for MFBEHADMFEG {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::CommonRogueUpdateScNotify as ::protobuf::MessageFull>::descriptor().oneof_by_name("IJMNDINHKGD").unwrap()).clone()
+            descriptor.get(|| <super::CommonRogueUpdateScNotify as ::protobuf::MessageFull>::descriptor().oneof_by_name("MFBEHADMFEG").unwrap()).clone()
         }
     }
 
-    impl IJMNDINHKGD {
+    impl MFBEHADMFEG {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<IJMNDINHKGD>("IJMNDINHKGD")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<MFBEHADMFEG>("MFBEHADMFEG")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fCommonRogueUpdateScNotify.proto\x1a\x11KIANELPLCMF.proto\x1a\x11LM\
-    POJGEHFIP.proto\"\x8e\x01\n\x19CommonRogueUpdateScNotify\x120\n\x0bGMPHO\
-    LJJDCA\x18\x0e\x20\x01(\x0b2\x0c.LMPOJGEHFIPH\0R\x0bGMPHOLJJDCA\x120\n\
-    \x0bOJFJFEJMJPG\x18\x08\x20\x01(\x0b2\x0c.KIANELPLCMFH\0R\x0bOJFJFEJMJPG\
-    B\r\n\x0bIJMNDINHKGDb\x06proto3\
+    \n\x1fCommonRogueUpdateScNotify.proto\x1a\x11ADILAOJIMPO.proto\x1a\x11CP\
+    BCGMPJLHG.proto\"\x8e\x01\n\x19CommonRogueUpdateScNotify\x120\n\x0bCJPKE\
+    OMLPEE\x18\x04\x20\x01(\x0b2\x0c.CPBCGMPJLHGH\0R\x0bCJPKEOMLPEE\x120\n\
+    \x0bONGHNJCGJLA\x18\n\x20\x01(\x0b2\x0c.ADILAOJIMPOH\0R\x0bONGHNJCGJLAB\
+    \r\n\x0bMFBEHADMFEGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -327,8 +327,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::KIANELPLCMF::file_descriptor().clone());
-            deps.push(super::LMPOJGEHFIP::file_descriptor().clone());
+            deps.push(super::ADILAOJIMPO::file_descriptor().clone());
+            deps.push(super::CPBCGMPJLHG::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(CommonRogueUpdateScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

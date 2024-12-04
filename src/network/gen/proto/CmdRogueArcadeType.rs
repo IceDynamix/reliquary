@@ -30,22 +30,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdRogueArcadeType {
     // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.CmdRogueArcadeTypeNone)
     CmdRogueArcadeTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.CmdRogueArcadeLeaveScRsp)
-    CmdRogueArcadeLeaveScRsp = 7652,
-    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.CmdRogueArcadeStartScRsp)
-    CmdRogueArcadeStartScRsp = 7687,
-    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.CmdRogueArcadeGetInfoCsReq)
-    CmdRogueArcadeGetInfoCsReq = 7674,
-    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.CmdRogueArcadeLeaveCsReq)
-    CmdRogueArcadeLeaveCsReq = 7692,
-    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.CmdRogueArcadeRestartScRsp)
-    CmdRogueArcadeRestartScRsp = 7660,
-    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.CmdRogueArcadeGetInfoScRsp)
-    CmdRogueArcadeGetInfoScRsp = 7682,
-    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.CmdRogueArcadeStartCsReq)
-    CmdRogueArcadeStartCsReq = 7679,
     // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.CmdRogueArcadeRestartCsReq)
-    CmdRogueArcadeRestartCsReq = 7694,
+    CmdRogueArcadeRestartCsReq = 7692,
+    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.CmdRogueArcadeStartScRsp)
+    CmdRogueArcadeStartScRsp = 7666,
+    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.CmdRogueArcadeLeaveCsReq)
+    CmdRogueArcadeLeaveCsReq = 7662,
+    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.CmdRogueArcadeRestartScRsp)
+    CmdRogueArcadeRestartScRsp = 7687,
+    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.CmdRogueArcadeGetInfoCsReq)
+    CmdRogueArcadeGetInfoCsReq = 7690,
+    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.CmdRogueArcadeStartCsReq)
+    CmdRogueArcadeStartCsReq = 7665,
+    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.CmdRogueArcadeGetInfoScRsp)
+    CmdRogueArcadeGetInfoScRsp = 7673,
+    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.CmdRogueArcadeLeaveScRsp)
+    CmdRogueArcadeLeaveScRsp = 7674,
 }
 
 impl ::protobuf::Enum for CmdRogueArcadeType {
@@ -58,14 +58,14 @@ impl ::protobuf::Enum for CmdRogueArcadeType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdRogueArcadeType> {
         match value {
             0 => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeTypeNone),
-            7652 => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeLeaveScRsp),
-            7687 => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeStartScRsp),
-            7674 => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeGetInfoCsReq),
-            7692 => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeLeaveCsReq),
-            7660 => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeRestartScRsp),
-            7682 => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeGetInfoScRsp),
-            7679 => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeStartCsReq),
-            7694 => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeRestartCsReq),
+            7692 => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeRestartCsReq),
+            7666 => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeStartScRsp),
+            7662 => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeLeaveCsReq),
+            7687 => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeRestartScRsp),
+            7690 => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeGetInfoCsReq),
+            7665 => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeStartCsReq),
+            7673 => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeGetInfoScRsp),
+            7674 => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeLeaveScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -73,28 +73,28 @@ impl ::protobuf::Enum for CmdRogueArcadeType {
     fn from_str(str: &str) -> ::std::option::Option<CmdRogueArcadeType> {
         match str {
             "CmdRogueArcadeTypeNone" => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeTypeNone),
-            "CmdRogueArcadeLeaveScRsp" => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeLeaveScRsp),
+            "CmdRogueArcadeRestartCsReq" => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeRestartCsReq),
             "CmdRogueArcadeStartScRsp" => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeStartScRsp),
-            "CmdRogueArcadeGetInfoCsReq" => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeGetInfoCsReq),
             "CmdRogueArcadeLeaveCsReq" => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeLeaveCsReq),
             "CmdRogueArcadeRestartScRsp" => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeRestartScRsp),
-            "CmdRogueArcadeGetInfoScRsp" => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeGetInfoScRsp),
+            "CmdRogueArcadeGetInfoCsReq" => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeGetInfoCsReq),
             "CmdRogueArcadeStartCsReq" => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeStartCsReq),
-            "CmdRogueArcadeRestartCsReq" => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeRestartCsReq),
+            "CmdRogueArcadeGetInfoScRsp" => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeGetInfoScRsp),
+            "CmdRogueArcadeLeaveScRsp" => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeLeaveScRsp),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRogueArcadeType] = &[
         CmdRogueArcadeType::CmdRogueArcadeTypeNone,
-        CmdRogueArcadeType::CmdRogueArcadeLeaveScRsp,
+        CmdRogueArcadeType::CmdRogueArcadeRestartCsReq,
         CmdRogueArcadeType::CmdRogueArcadeStartScRsp,
-        CmdRogueArcadeType::CmdRogueArcadeGetInfoCsReq,
         CmdRogueArcadeType::CmdRogueArcadeLeaveCsReq,
         CmdRogueArcadeType::CmdRogueArcadeRestartScRsp,
-        CmdRogueArcadeType::CmdRogueArcadeGetInfoScRsp,
+        CmdRogueArcadeType::CmdRogueArcadeGetInfoCsReq,
         CmdRogueArcadeType::CmdRogueArcadeStartCsReq,
-        CmdRogueArcadeType::CmdRogueArcadeRestartCsReq,
+        CmdRogueArcadeType::CmdRogueArcadeGetInfoScRsp,
+        CmdRogueArcadeType::CmdRogueArcadeLeaveScRsp,
     ];
 }
 
@@ -107,14 +107,14 @@ impl ::protobuf::EnumFull for CmdRogueArcadeType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdRogueArcadeType::CmdRogueArcadeTypeNone => 0,
-            CmdRogueArcadeType::CmdRogueArcadeLeaveScRsp => 1,
+            CmdRogueArcadeType::CmdRogueArcadeRestartCsReq => 1,
             CmdRogueArcadeType::CmdRogueArcadeStartScRsp => 2,
-            CmdRogueArcadeType::CmdRogueArcadeGetInfoCsReq => 3,
-            CmdRogueArcadeType::CmdRogueArcadeLeaveCsReq => 4,
-            CmdRogueArcadeType::CmdRogueArcadeRestartScRsp => 5,
-            CmdRogueArcadeType::CmdRogueArcadeGetInfoScRsp => 6,
-            CmdRogueArcadeType::CmdRogueArcadeStartCsReq => 7,
-            CmdRogueArcadeType::CmdRogueArcadeRestartCsReq => 8,
+            CmdRogueArcadeType::CmdRogueArcadeLeaveCsReq => 3,
+            CmdRogueArcadeType::CmdRogueArcadeRestartScRsp => 4,
+            CmdRogueArcadeType::CmdRogueArcadeGetInfoCsReq => 5,
+            CmdRogueArcadeType::CmdRogueArcadeStartCsReq => 6,
+            CmdRogueArcadeType::CmdRogueArcadeGetInfoScRsp => 7,
+            CmdRogueArcadeType::CmdRogueArcadeLeaveScRsp => 8,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -134,12 +134,12 @@ impl CmdRogueArcadeType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18CmdRogueArcadeType.proto*\xb0\x02\n\x12CmdRogueArcadeType\x12\x1a\
-    \n\x16CmdRogueArcadeTypeNone\x10\0\x12\x1d\n\x18CmdRogueArcadeLeaveScRsp\
-    \x10\xe4;\x12\x1d\n\x18CmdRogueArcadeStartScRsp\x10\x87<\x12\x1f\n\x1aCm\
-    dRogueArcadeGetInfoCsReq\x10\xfa;\x12\x1d\n\x18CmdRogueArcadeLeaveCsReq\
-    \x10\x8c<\x12\x1f\n\x1aCmdRogueArcadeRestartScRsp\x10\xec;\x12\x1f\n\x1a\
-    CmdRogueArcadeGetInfoScRsp\x10\x82<\x12\x1d\n\x18CmdRogueArcadeStartCsRe\
-    q\x10\xff;\x12\x1f\n\x1aCmdRogueArcadeRestartCsReq\x10\x8e<b\x06proto3\
+    \n\x16CmdRogueArcadeTypeNone\x10\0\x12\x1f\n\x1aCmdRogueArcadeRestartCsR\
+    eq\x10\x8c<\x12\x1d\n\x18CmdRogueArcadeStartScRsp\x10\xf2;\x12\x1d\n\x18\
+    CmdRogueArcadeLeaveCsReq\x10\xee;\x12\x1f\n\x1aCmdRogueArcadeRestartScRs\
+    p\x10\x87<\x12\x1f\n\x1aCmdRogueArcadeGetInfoCsReq\x10\x8a<\x12\x1d\n\
+    \x18CmdRogueArcadeStartCsReq\x10\xf1;\x12\x1f\n\x1aCmdRogueArcadeGetInfo\
+    ScRsp\x10\xf9;\x12\x1d\n\x18CmdRogueArcadeLeaveScRsp\x10\xfa;b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

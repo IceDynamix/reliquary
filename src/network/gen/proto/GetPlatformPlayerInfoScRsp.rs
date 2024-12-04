@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetPlatformPlayerInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetPlatformPlayerInfoScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:GetPlatformPlayerInfoScRsp.KKDAMGJHAJD)
-    pub KKDAMGJHAJD: ::std::vec::Vec<super::BOENKOAFFPJ::BOENKOAFFPJ>,
+    // @@protoc_insertion_point(field:GetPlatformPlayerInfoScRsp.CLCNJIKIPHD)
+    pub CLCNJIKIPHD: ::std::vec::Vec<super::DIJLDOPJKAP::DIJLDOPJKAP>,
+    // @@protoc_insertion_point(field:GetPlatformPlayerInfoScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetPlatformPlayerInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl GetPlatformPlayerInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetPlatformPlayerInfoScRsp| { &m.retcode },
-            |m: &mut GetPlatformPlayerInfoScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KKDAMGJHAJD",
-            |m: &GetPlatformPlayerInfoScRsp| { &m.KKDAMGJHAJD },
-            |m: &mut GetPlatformPlayerInfoScRsp| { &mut m.KKDAMGJHAJD },
+            "CLCNJIKIPHD",
+            |m: &GetPlatformPlayerInfoScRsp| { &m.CLCNJIKIPHD },
+            |m: &mut GetPlatformPlayerInfoScRsp| { &mut m.CLCNJIKIPHD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ADADHIHDHJC",
+            |m: &GetPlatformPlayerInfoScRsp| { &m.ADADHIHDHJC },
+            |m: &mut GetPlatformPlayerInfoScRsp| { &mut m.ADADHIHDHJC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetPlatformPlayerInfoScRsp>(
             "GetPlatformPlayerInfoScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for GetPlatformPlayerInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.retcode = is.read_uint32()?;
+                106 => {
+                    self.CLCNJIKIPHD.push(is.read_message()?);
                 },
-                18 => {
-                    self.KKDAMGJHAJD.push(is.read_message()?);
+                32 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,25 +98,25 @@ impl ::protobuf::Message for GetPlatformPlayerInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
-        }
-        for value in &self.KKDAMGJHAJD {
+        for value in &self.CLCNJIKIPHD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.ADADHIHDHJC);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
-        }
-        for v in &self.KKDAMGJHAJD {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        for v in &self.CLCNJIKIPHD {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(4, self.ADADHIHDHJC)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -134,15 +134,15 @@ impl ::protobuf::Message for GetPlatformPlayerInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.KKDAMGJHAJD.clear();
+        self.CLCNJIKIPHD.clear();
+        self.ADADHIHDHJC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetPlatformPlayerInfoScRsp {
         static instance: GetPlatformPlayerInfoScRsp = GetPlatformPlayerInfoScRsp {
-            retcode: 0,
-            KKDAMGJHAJD: ::std::vec::Vec::new(),
+            CLCNJIKIPHD: ::std::vec::Vec::new(),
+            ADADHIHDHJC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for GetPlatformPlayerInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20GetPlatformPlayerInfoScRsp.proto\x1a\x11BOENKOAFFPJ.proto\"f\n\x1a\
-    GetPlatformPlayerInfoScRsp\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07r\
-    etcode\x12.\n\x0bKKDAMGJHAJD\x18\x02\x20\x03(\x0b2\x0c.BOENKOAFFPJR\x0bK\
-    KDAMGJHAJDb\x06proto3\
+    \n\x20GetPlatformPlayerInfoScRsp.proto\x1a\x11DIJLDOPJKAP.proto\"n\n\x1a\
+    GetPlatformPlayerInfoScRsp\x12.\n\x0bCLCNJIKIPHD\x18\r\x20\x03(\x0b2\x0c\
+    .DIJLDOPJKAPR\x0bCLCNJIKIPHD\x12\x20\n\x0bADADHIHDHJC\x18\x04\x20\x01(\r\
+    R\x0bADADHIHDHJCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::BOENKOAFFPJ::file_descriptor().clone());
+            deps.push(super::DIJLDOPJKAP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetPlatformPlayerInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

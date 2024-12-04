@@ -30,28 +30,28 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdHeartdialType {
     // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdHeartdialTypeNone)
     CmdHeartdialTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdSubmitEmotionItemCsReq)
-    CmdSubmitEmotionItemCsReq = 6379,
-    // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdGetHeartDialInfoCsReq)
-    CmdGetHeartDialInfoCsReq = 6398,
-    // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdHeartDialTraceScriptScRsp)
-    CmdHeartDialTraceScriptScRsp = 6378,
-    // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdChangeScriptEmotionScRsp)
-    CmdChangeScriptEmotionScRsp = 6342,
-    // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdHeartDialScriptChangeScNotify)
-    CmdHeartDialScriptChangeScNotify = 6328,
     // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdChangeScriptEmotionCsReq)
-    CmdChangeScriptEmotionCsReq = 6383,
-    // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdHeartDialTraceScriptCsReq)
-    CmdHeartDialTraceScriptCsReq = 6338,
-    // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdGetHeartDialInfoScRsp)
-    CmdGetHeartDialInfoScRsp = 6371,
-    // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdSubmitEmotionItemScRsp)
-    CmdSubmitEmotionItemScRsp = 6377,
+    CmdChangeScriptEmotionCsReq = 6303,
+    // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdChangeScriptEmotionScRsp)
+    CmdChangeScriptEmotionScRsp = 6346,
+    // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdGetHeartDialInfoCsReq)
+    CmdGetHeartDialInfoCsReq = 6359,
     // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdFinishEmotionDialoguePerformanceScRsp)
-    CmdFinishEmotionDialoguePerformanceScRsp = 6312,
+    CmdFinishEmotionDialoguePerformanceScRsp = 6337,
+    // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdHeartDialScriptChangeScNotify)
+    CmdHeartDialScriptChangeScNotify = 6380,
+    // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdHeartDialTraceScriptCsReq)
+    CmdHeartDialTraceScriptCsReq = 6316,
+    // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdSubmitEmotionItemCsReq)
+    CmdSubmitEmotionItemCsReq = 6339,
+    // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdSubmitEmotionItemScRsp)
+    CmdSubmitEmotionItemScRsp = 6353,
+    // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdHeartDialTraceScriptScRsp)
+    CmdHeartDialTraceScriptScRsp = 6347,
     // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdFinishEmotionDialoguePerformanceCsReq)
-    CmdFinishEmotionDialoguePerformanceCsReq = 6333,
+    CmdFinishEmotionDialoguePerformanceCsReq = 6334,
+    // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdGetHeartDialInfoScRsp)
+    CmdGetHeartDialInfoScRsp = 6320,
 }
 
 impl ::protobuf::Enum for CmdHeartdialType {
@@ -64,17 +64,17 @@ impl ::protobuf::Enum for CmdHeartdialType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdHeartdialType> {
         match value {
             0 => ::std::option::Option::Some(CmdHeartdialType::CmdHeartdialTypeNone),
-            6379 => ::std::option::Option::Some(CmdHeartdialType::CmdSubmitEmotionItemCsReq),
-            6398 => ::std::option::Option::Some(CmdHeartdialType::CmdGetHeartDialInfoCsReq),
-            6378 => ::std::option::Option::Some(CmdHeartdialType::CmdHeartDialTraceScriptScRsp),
-            6342 => ::std::option::Option::Some(CmdHeartdialType::CmdChangeScriptEmotionScRsp),
-            6328 => ::std::option::Option::Some(CmdHeartdialType::CmdHeartDialScriptChangeScNotify),
-            6383 => ::std::option::Option::Some(CmdHeartdialType::CmdChangeScriptEmotionCsReq),
-            6338 => ::std::option::Option::Some(CmdHeartdialType::CmdHeartDialTraceScriptCsReq),
-            6371 => ::std::option::Option::Some(CmdHeartdialType::CmdGetHeartDialInfoScRsp),
-            6377 => ::std::option::Option::Some(CmdHeartdialType::CmdSubmitEmotionItemScRsp),
-            6312 => ::std::option::Option::Some(CmdHeartdialType::CmdFinishEmotionDialoguePerformanceScRsp),
-            6333 => ::std::option::Option::Some(CmdHeartdialType::CmdFinishEmotionDialoguePerformanceCsReq),
+            6303 => ::std::option::Option::Some(CmdHeartdialType::CmdChangeScriptEmotionCsReq),
+            6346 => ::std::option::Option::Some(CmdHeartdialType::CmdChangeScriptEmotionScRsp),
+            6359 => ::std::option::Option::Some(CmdHeartdialType::CmdGetHeartDialInfoCsReq),
+            6337 => ::std::option::Option::Some(CmdHeartdialType::CmdFinishEmotionDialoguePerformanceScRsp),
+            6380 => ::std::option::Option::Some(CmdHeartdialType::CmdHeartDialScriptChangeScNotify),
+            6316 => ::std::option::Option::Some(CmdHeartdialType::CmdHeartDialTraceScriptCsReq),
+            6339 => ::std::option::Option::Some(CmdHeartdialType::CmdSubmitEmotionItemCsReq),
+            6353 => ::std::option::Option::Some(CmdHeartdialType::CmdSubmitEmotionItemScRsp),
+            6347 => ::std::option::Option::Some(CmdHeartdialType::CmdHeartDialTraceScriptScRsp),
+            6334 => ::std::option::Option::Some(CmdHeartdialType::CmdFinishEmotionDialoguePerformanceCsReq),
+            6320 => ::std::option::Option::Some(CmdHeartdialType::CmdGetHeartDialInfoScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -82,34 +82,34 @@ impl ::protobuf::Enum for CmdHeartdialType {
     fn from_str(str: &str) -> ::std::option::Option<CmdHeartdialType> {
         match str {
             "CmdHeartdialTypeNone" => ::std::option::Option::Some(CmdHeartdialType::CmdHeartdialTypeNone),
-            "CmdSubmitEmotionItemCsReq" => ::std::option::Option::Some(CmdHeartdialType::CmdSubmitEmotionItemCsReq),
-            "CmdGetHeartDialInfoCsReq" => ::std::option::Option::Some(CmdHeartdialType::CmdGetHeartDialInfoCsReq),
-            "CmdHeartDialTraceScriptScRsp" => ::std::option::Option::Some(CmdHeartdialType::CmdHeartDialTraceScriptScRsp),
-            "CmdChangeScriptEmotionScRsp" => ::std::option::Option::Some(CmdHeartdialType::CmdChangeScriptEmotionScRsp),
-            "CmdHeartDialScriptChangeScNotify" => ::std::option::Option::Some(CmdHeartdialType::CmdHeartDialScriptChangeScNotify),
             "CmdChangeScriptEmotionCsReq" => ::std::option::Option::Some(CmdHeartdialType::CmdChangeScriptEmotionCsReq),
-            "CmdHeartDialTraceScriptCsReq" => ::std::option::Option::Some(CmdHeartdialType::CmdHeartDialTraceScriptCsReq),
-            "CmdGetHeartDialInfoScRsp" => ::std::option::Option::Some(CmdHeartdialType::CmdGetHeartDialInfoScRsp),
-            "CmdSubmitEmotionItemScRsp" => ::std::option::Option::Some(CmdHeartdialType::CmdSubmitEmotionItemScRsp),
+            "CmdChangeScriptEmotionScRsp" => ::std::option::Option::Some(CmdHeartdialType::CmdChangeScriptEmotionScRsp),
+            "CmdGetHeartDialInfoCsReq" => ::std::option::Option::Some(CmdHeartdialType::CmdGetHeartDialInfoCsReq),
             "CmdFinishEmotionDialoguePerformanceScRsp" => ::std::option::Option::Some(CmdHeartdialType::CmdFinishEmotionDialoguePerformanceScRsp),
+            "CmdHeartDialScriptChangeScNotify" => ::std::option::Option::Some(CmdHeartdialType::CmdHeartDialScriptChangeScNotify),
+            "CmdHeartDialTraceScriptCsReq" => ::std::option::Option::Some(CmdHeartdialType::CmdHeartDialTraceScriptCsReq),
+            "CmdSubmitEmotionItemCsReq" => ::std::option::Option::Some(CmdHeartdialType::CmdSubmitEmotionItemCsReq),
+            "CmdSubmitEmotionItemScRsp" => ::std::option::Option::Some(CmdHeartdialType::CmdSubmitEmotionItemScRsp),
+            "CmdHeartDialTraceScriptScRsp" => ::std::option::Option::Some(CmdHeartdialType::CmdHeartDialTraceScriptScRsp),
             "CmdFinishEmotionDialoguePerformanceCsReq" => ::std::option::Option::Some(CmdHeartdialType::CmdFinishEmotionDialoguePerformanceCsReq),
+            "CmdGetHeartDialInfoScRsp" => ::std::option::Option::Some(CmdHeartdialType::CmdGetHeartDialInfoScRsp),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdHeartdialType] = &[
         CmdHeartdialType::CmdHeartdialTypeNone,
-        CmdHeartdialType::CmdSubmitEmotionItemCsReq,
-        CmdHeartdialType::CmdGetHeartDialInfoCsReq,
-        CmdHeartdialType::CmdHeartDialTraceScriptScRsp,
-        CmdHeartdialType::CmdChangeScriptEmotionScRsp,
-        CmdHeartdialType::CmdHeartDialScriptChangeScNotify,
         CmdHeartdialType::CmdChangeScriptEmotionCsReq,
-        CmdHeartdialType::CmdHeartDialTraceScriptCsReq,
-        CmdHeartdialType::CmdGetHeartDialInfoScRsp,
-        CmdHeartdialType::CmdSubmitEmotionItemScRsp,
+        CmdHeartdialType::CmdChangeScriptEmotionScRsp,
+        CmdHeartdialType::CmdGetHeartDialInfoCsReq,
         CmdHeartdialType::CmdFinishEmotionDialoguePerformanceScRsp,
+        CmdHeartdialType::CmdHeartDialScriptChangeScNotify,
+        CmdHeartdialType::CmdHeartDialTraceScriptCsReq,
+        CmdHeartdialType::CmdSubmitEmotionItemCsReq,
+        CmdHeartdialType::CmdSubmitEmotionItemScRsp,
+        CmdHeartdialType::CmdHeartDialTraceScriptScRsp,
         CmdHeartdialType::CmdFinishEmotionDialoguePerformanceCsReq,
+        CmdHeartdialType::CmdGetHeartDialInfoScRsp,
     ];
 }
 
@@ -122,17 +122,17 @@ impl ::protobuf::EnumFull for CmdHeartdialType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdHeartdialType::CmdHeartdialTypeNone => 0,
-            CmdHeartdialType::CmdSubmitEmotionItemCsReq => 1,
-            CmdHeartdialType::CmdGetHeartDialInfoCsReq => 2,
-            CmdHeartdialType::CmdHeartDialTraceScriptScRsp => 3,
-            CmdHeartdialType::CmdChangeScriptEmotionScRsp => 4,
+            CmdHeartdialType::CmdChangeScriptEmotionCsReq => 1,
+            CmdHeartdialType::CmdChangeScriptEmotionScRsp => 2,
+            CmdHeartdialType::CmdGetHeartDialInfoCsReq => 3,
+            CmdHeartdialType::CmdFinishEmotionDialoguePerformanceScRsp => 4,
             CmdHeartdialType::CmdHeartDialScriptChangeScNotify => 5,
-            CmdHeartdialType::CmdChangeScriptEmotionCsReq => 6,
-            CmdHeartdialType::CmdHeartDialTraceScriptCsReq => 7,
-            CmdHeartdialType::CmdGetHeartDialInfoScRsp => 8,
-            CmdHeartdialType::CmdSubmitEmotionItemScRsp => 9,
-            CmdHeartdialType::CmdFinishEmotionDialoguePerformanceScRsp => 10,
-            CmdHeartdialType::CmdFinishEmotionDialoguePerformanceCsReq => 11,
+            CmdHeartdialType::CmdHeartDialTraceScriptCsReq => 6,
+            CmdHeartdialType::CmdSubmitEmotionItemCsReq => 7,
+            CmdHeartdialType::CmdSubmitEmotionItemScRsp => 8,
+            CmdHeartdialType::CmdHeartDialTraceScriptScRsp => 9,
+            CmdHeartdialType::CmdFinishEmotionDialoguePerformanceCsReq => 10,
+            CmdHeartdialType::CmdGetHeartDialInfoScRsp => 11,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -152,15 +152,15 @@ impl CmdHeartdialType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16CmdHeartdialType.proto*\xb9\x03\n\x10CmdHeartdialType\x12\x18\n\
-    \x14CmdHeartdialTypeNone\x10\0\x12\x1e\n\x19CmdSubmitEmotionItemCsReq\
-    \x10\xeb1\x12\x1d\n\x18CmdGetHeartDialInfoCsReq\x10\xfe1\x12!\n\x1cCmdHe\
-    artDialTraceScriptScRsp\x10\xea1\x12\x20\n\x1bCmdChangeScriptEmotionScRs\
-    p\x10\xc61\x12%\n\x20CmdHeartDialScriptChangeScNotify\x10\xb81\x12\x20\n\
-    \x1bCmdChangeScriptEmotionCsReq\x10\xef1\x12!\n\x1cCmdHeartDialTraceScri\
-    ptCsReq\x10\xc21\x12\x1d\n\x18CmdGetHeartDialInfoScRsp\x10\xe31\x12\x1e\
-    \n\x19CmdSubmitEmotionItemScRsp\x10\xe91\x12-\n(CmdFinishEmotionDialogue\
-    PerformanceScRsp\x10\xa81\x12-\n(CmdFinishEmotionDialoguePerformanceCsRe\
-    q\x10\xbd1b\x06proto3\
+    \x14CmdHeartdialTypeNone\x10\0\x12\x20\n\x1bCmdChangeScriptEmotionCsReq\
+    \x10\x9f1\x12\x20\n\x1bCmdChangeScriptEmotionScRsp\x10\xca1\x12\x1d\n\
+    \x18CmdGetHeartDialInfoCsReq\x10\xd71\x12-\n(CmdFinishEmotionDialoguePer\
+    formanceScRsp\x10\xc11\x12%\n\x20CmdHeartDialScriptChangeScNotify\x10\
+    \xec1\x12!\n\x1cCmdHeartDialTraceScriptCsReq\x10\xac1\x12\x1e\n\x19CmdSu\
+    bmitEmotionItemCsReq\x10\xc31\x12\x1e\n\x19CmdSubmitEmotionItemScRsp\x10\
+    \xd11\x12!\n\x1cCmdHeartDialTraceScriptScRsp\x10\xcb1\x12-\n(CmdFinishEm\
+    otionDialoguePerformanceCsReq\x10\xbe1\x12\x1d\n\x18CmdGetHeartDialInfoS\
+    cRsp\x10\xb01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

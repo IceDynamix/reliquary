@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainRefreshTimeNotify {
     // message fields
-    // @@protoc_insertion_point(field:TrainRefreshTimeNotify.DCEGMLENIMF)
-    pub DCEGMLENIMF: u64,
+    // @@protoc_insertion_point(field:TrainRefreshTimeNotify.train_refresh_time)
+    pub train_refresh_time: u64,
     // special fields
     // @@protoc_insertion_point(special_field:TrainRefreshTimeNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl TrainRefreshTimeNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DCEGMLENIMF",
-            |m: &TrainRefreshTimeNotify| { &m.DCEGMLENIMF },
-            |m: &mut TrainRefreshTimeNotify| { &mut m.DCEGMLENIMF },
+            "train_refresh_time",
+            |m: &TrainRefreshTimeNotify| { &m.train_refresh_time },
+            |m: &mut TrainRefreshTimeNotify| { &mut m.train_refresh_time },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainRefreshTimeNotify>(
             "TrainRefreshTimeNotify",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for TrainRefreshTimeNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.DCEGMLENIMF = is.read_uint64()?;
+                112 => {
+                    self.train_refresh_time = is.read_uint64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for TrainRefreshTimeNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DCEGMLENIMF != 0 {
-            my_size += ::protobuf::rt::uint64_size(13, self.DCEGMLENIMF);
+        if self.train_refresh_time != 0 {
+            my_size += ::protobuf::rt::uint64_size(14, self.train_refresh_time);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for TrainRefreshTimeNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DCEGMLENIMF != 0 {
-            os.write_uint64(13, self.DCEGMLENIMF)?;
+        if self.train_refresh_time != 0 {
+            os.write_uint64(14, self.train_refresh_time)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for TrainRefreshTimeNotify {
     }
 
     fn clear(&mut self) {
-        self.DCEGMLENIMF = 0;
+        self.train_refresh_time = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainRefreshTimeNotify {
         static instance: TrainRefreshTimeNotify = TrainRefreshTimeNotify {
-            DCEGMLENIMF: 0,
+            train_refresh_time: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for TrainRefreshTimeNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cTrainRefreshTimeNotify.proto\":\n\x16TrainRefreshTimeNotify\x12\
-    \x20\n\x0bDCEGMLENIMF\x18\r\x20\x01(\x04R\x0bDCEGMLENIMFb\x06proto3\
+    \n\x1cTrainRefreshTimeNotify.proto\"F\n\x16TrainRefreshTimeNotify\x12,\n\
+    \x12train_refresh_time\x18\x0e\x20\x01(\x04R\x10trainRefreshTimeB\x15\n\
+    \x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetChallengeRecommendLineupListCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetChallengeRecommendLineupListCsReq.DBKHFAEKNKL)
-    pub DBKHFAEKNKL: u32,
+    // @@protoc_insertion_point(field:GetChallengeRecommendLineupListCsReq.GPKEAKPHIPA)
+    pub GPKEAKPHIPA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetChallengeRecommendLineupListCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl GetChallengeRecommendLineupListCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DBKHFAEKNKL",
-            |m: &GetChallengeRecommendLineupListCsReq| { &m.DBKHFAEKNKL },
-            |m: &mut GetChallengeRecommendLineupListCsReq| { &mut m.DBKHFAEKNKL },
+            "GPKEAKPHIPA",
+            |m: &GetChallengeRecommendLineupListCsReq| { &m.GPKEAKPHIPA },
+            |m: &mut GetChallengeRecommendLineupListCsReq| { &mut m.GPKEAKPHIPA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetChallengeRecommendLineupListCsReq>(
             "GetChallengeRecommendLineupListCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for GetChallengeRecommendLineupListCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.DBKHFAEKNKL = is.read_uint32()?;
+                24 => {
+                    self.GPKEAKPHIPA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for GetChallengeRecommendLineupListCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DBKHFAEKNKL != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.DBKHFAEKNKL);
+        if self.GPKEAKPHIPA != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.GPKEAKPHIPA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for GetChallengeRecommendLineupListCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DBKHFAEKNKL != 0 {
-            os.write_uint32(5, self.DBKHFAEKNKL)?;
+        if self.GPKEAKPHIPA != 0 {
+            os.write_uint32(3, self.GPKEAKPHIPA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for GetChallengeRecommendLineupListCsReq {
     }
 
     fn clear(&mut self) {
-        self.DBKHFAEKNKL = 0;
+        self.GPKEAKPHIPA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetChallengeRecommendLineupListCsReq {
         static instance: GetChallengeRecommendLineupListCsReq = GetChallengeRecommendLineupListCsReq {
-            DBKHFAEKNKL: 0,
+            GPKEAKPHIPA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for GetChallengeRecommendLineupListCsReq
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n*GetChallengeRecommendLineupListCsReq.proto\"H\n$GetChallengeRecommend\
-    LineupListCsReq\x12\x20\n\x0bDBKHFAEKNKL\x18\x05\x20\x01(\rR\x0bDBKHFAEK\
-    NKLb\x06proto3\
+    LineupListCsReq\x12\x20\n\x0bGPKEAKPHIPA\x18\x03\x20\x01(\rR\x0bGPKEAKPH\
+    IPAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

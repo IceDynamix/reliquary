@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartTrackPhotoStageCsReq {
     // message fields
-    // @@protoc_insertion_point(field:StartTrackPhotoStageCsReq.IDIEPEFFGIC)
-    pub IDIEPEFFGIC: u32,
-    // @@protoc_insertion_point(field:StartTrackPhotoStageCsReq.JMAPEPGLENN)
-    pub JMAPEPGLENN: bool,
+    // @@protoc_insertion_point(field:StartTrackPhotoStageCsReq.EMEGKOEPOOH)
+    pub EMEGKOEPOOH: bool,
+    // @@protoc_insertion_point(field:StartTrackPhotoStageCsReq.KAGEGBLHJDJ)
+    pub KAGEGBLHJDJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:StartTrackPhotoStageCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl StartTrackPhotoStageCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IDIEPEFFGIC",
-            |m: &StartTrackPhotoStageCsReq| { &m.IDIEPEFFGIC },
-            |m: &mut StartTrackPhotoStageCsReq| { &mut m.IDIEPEFFGIC },
+            "EMEGKOEPOOH",
+            |m: &StartTrackPhotoStageCsReq| { &m.EMEGKOEPOOH },
+            |m: &mut StartTrackPhotoStageCsReq| { &mut m.EMEGKOEPOOH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JMAPEPGLENN",
-            |m: &StartTrackPhotoStageCsReq| { &m.JMAPEPGLENN },
-            |m: &mut StartTrackPhotoStageCsReq| { &mut m.JMAPEPGLENN },
+            "KAGEGBLHJDJ",
+            |m: &StartTrackPhotoStageCsReq| { &m.KAGEGBLHJDJ },
+            |m: &mut StartTrackPhotoStageCsReq| { &mut m.KAGEGBLHJDJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartTrackPhotoStageCsReq>(
             "StartTrackPhotoStageCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for StartTrackPhotoStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.IDIEPEFFGIC = is.read_uint32()?;
+                56 => {
+                    self.EMEGKOEPOOH = is.read_bool()?;
                 },
-                104 => {
-                    self.JMAPEPGLENN = is.read_bool()?;
+                88 => {
+                    self.KAGEGBLHJDJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for StartTrackPhotoStageCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IDIEPEFFGIC != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.IDIEPEFFGIC);
-        }
-        if self.JMAPEPGLENN != false {
+        if self.EMEGKOEPOOH != false {
             my_size += 1 + 1;
+        }
+        if self.KAGEGBLHJDJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.KAGEGBLHJDJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for StartTrackPhotoStageCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IDIEPEFFGIC != 0 {
-            os.write_uint32(9, self.IDIEPEFFGIC)?;
+        if self.EMEGKOEPOOH != false {
+            os.write_bool(7, self.EMEGKOEPOOH)?;
         }
-        if self.JMAPEPGLENN != false {
-            os.write_bool(13, self.JMAPEPGLENN)?;
+        if self.KAGEGBLHJDJ != 0 {
+            os.write_uint32(11, self.KAGEGBLHJDJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for StartTrackPhotoStageCsReq {
     }
 
     fn clear(&mut self) {
-        self.IDIEPEFFGIC = 0;
-        self.JMAPEPGLENN = false;
+        self.EMEGKOEPOOH = false;
+        self.KAGEGBLHJDJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartTrackPhotoStageCsReq {
         static instance: StartTrackPhotoStageCsReq = StartTrackPhotoStageCsReq {
-            IDIEPEFFGIC: 0,
-            JMAPEPGLENN: false,
+            EMEGKOEPOOH: false,
+            KAGEGBLHJDJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for StartTrackPhotoStageCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fStartTrackPhotoStageCsReq.proto\"_\n\x19StartTrackPhotoStageCsReq\
-    \x12\x20\n\x0bIDIEPEFFGIC\x18\t\x20\x01(\rR\x0bIDIEPEFFGIC\x12\x20\n\x0b\
-    JMAPEPGLENN\x18\r\x20\x01(\x08R\x0bJMAPEPGLENNb\x06proto3\
+    \x12\x20\n\x0bEMEGKOEPOOH\x18\x07\x20\x01(\x08R\x0bEMEGKOEPOOH\x12\x20\n\
+    \x0bKAGEGBLHJDJ\x18\x0b\x20\x01(\rR\x0bKAGEGBLHJDJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

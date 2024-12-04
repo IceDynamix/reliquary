@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeRogueMiracleHandbookRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeRogueMiracleHandbookRewardCsReq.CLHMBIDDGJN)
-    pub CLHMBIDDGJN: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:TakeRogueMiracleHandbookRewardCsReq.LLMCCHHHKFH)
+    pub LLMCCHHHKFH: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:TakeRogueMiracleHandbookRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl TakeRogueMiracleHandbookRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CLHMBIDDGJN",
-            |m: &TakeRogueMiracleHandbookRewardCsReq| { &m.CLHMBIDDGJN },
-            |m: &mut TakeRogueMiracleHandbookRewardCsReq| { &mut m.CLHMBIDDGJN },
+            "LLMCCHHHKFH",
+            |m: &TakeRogueMiracleHandbookRewardCsReq| { &m.LLMCCHHHKFH },
+            |m: &mut TakeRogueMiracleHandbookRewardCsReq| { &mut m.LLMCCHHHKFH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeRogueMiracleHandbookRewardCsReq>(
             "TakeRogueMiracleHandbookRewardCsReq",
@@ -73,11 +73,11 @@ impl ::protobuf::Message for TakeRogueMiracleHandbookRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.CLHMBIDDGJN)?;
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.LLMCCHHHKFH)?;
                 },
-                24 => {
-                    self.CLHMBIDDGJN.push(is.read_uint32()?);
+                120 => {
+                    self.LLMCCHHHKFH.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -91,8 +91,8 @@ impl ::protobuf::Message for TakeRogueMiracleHandbookRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.CLHMBIDDGJN {
-            my_size += ::protobuf::rt::uint32_size(3, *value);
+        for value in &self.LLMCCHHHKFH {
+            my_size += ::protobuf::rt::uint32_size(15, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -100,8 +100,8 @@ impl ::protobuf::Message for TakeRogueMiracleHandbookRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.CLHMBIDDGJN {
-            os.write_uint32(3, *v)?;
+        for v in &self.LLMCCHHHKFH {
+            os.write_uint32(15, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -120,13 +120,13 @@ impl ::protobuf::Message for TakeRogueMiracleHandbookRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.CLHMBIDDGJN.clear();
+        self.LLMCCHHHKFH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeRogueMiracleHandbookRewardCsReq {
         static instance: TakeRogueMiracleHandbookRewardCsReq = TakeRogueMiracleHandbookRewardCsReq {
-            CLHMBIDDGJN: ::std::vec::Vec::new(),
+            LLMCCHHHKFH: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -152,8 +152,8 @@ impl ::protobuf::reflect::ProtobufValue for TakeRogueMiracleHandbookRewardCsReq 
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)TakeRogueMiracleHandbookRewardCsReq.proto\"G\n#TakeRogueMiracleHandbo\
-    okRewardCsReq\x12\x20\n\x0bCLHMBIDDGJN\x18\x03\x20\x03(\rR\x0bCLHMBIDDGJ\
-    Nb\x06proto3\
+    okRewardCsReq\x12\x20\n\x0bLLMCCHHHKFH\x18\x0f\x20\x03(\rR\x0bLLMCCHHHKF\
+    Hb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

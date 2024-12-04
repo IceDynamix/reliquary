@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetSaveRaidScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetSaveRaidScRsp.OGIOAKBPMAE)
-    pub OGIOAKBPMAE: u32,
-    // @@protoc_insertion_point(field:GetSaveRaidScRsp.MMMOHAJFMID)
-    pub MMMOHAJFMID: u32,
-    // @@protoc_insertion_point(field:GetSaveRaidScRsp.BEDDOLCOMPO)
-    pub BEDDOLCOMPO: bool,
-    // @@protoc_insertion_point(field:GetSaveRaidScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:GetSaveRaidScRsp.KPNBDNGMCFK)
-    pub KPNBDNGMCFK: ::std::vec::Vec<super::CAGJIDOGIMK::CAGJIDOGIMK>,
+    // @@protoc_insertion_point(field:GetSaveRaidScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:GetSaveRaidScRsp.ODOAJJGMBCL)
+    pub ODOAJJGMBCL: u32,
+    // @@protoc_insertion_point(field:GetSaveRaidScRsp.KDFKCJLHHAF)
+    pub KDFKCJLHHAF: bool,
+    // @@protoc_insertion_point(field:GetSaveRaidScRsp.DNMJBNNJLEL)
+    pub DNMJBNNJLEL: u32,
+    // @@protoc_insertion_point(field:GetSaveRaidScRsp.OABBJAHIPLF)
+    pub OABBJAHIPLF: ::std::vec::Vec<super::GDBPCLPHBOL::GDBPCLPHBOL>,
     // special fields
     // @@protoc_insertion_point(special_field:GetSaveRaidScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,29 +59,29 @@ impl GetSaveRaidScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OGIOAKBPMAE",
-            |m: &GetSaveRaidScRsp| { &m.OGIOAKBPMAE },
-            |m: &mut GetSaveRaidScRsp| { &mut m.OGIOAKBPMAE },
+            "ADADHIHDHJC",
+            |m: &GetSaveRaidScRsp| { &m.ADADHIHDHJC },
+            |m: &mut GetSaveRaidScRsp| { &mut m.ADADHIHDHJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MMMOHAJFMID",
-            |m: &GetSaveRaidScRsp| { &m.MMMOHAJFMID },
-            |m: &mut GetSaveRaidScRsp| { &mut m.MMMOHAJFMID },
+            "ODOAJJGMBCL",
+            |m: &GetSaveRaidScRsp| { &m.ODOAJJGMBCL },
+            |m: &mut GetSaveRaidScRsp| { &mut m.ODOAJJGMBCL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BEDDOLCOMPO",
-            |m: &GetSaveRaidScRsp| { &m.BEDDOLCOMPO },
-            |m: &mut GetSaveRaidScRsp| { &mut m.BEDDOLCOMPO },
+            "KDFKCJLHHAF",
+            |m: &GetSaveRaidScRsp| { &m.KDFKCJLHHAF },
+            |m: &mut GetSaveRaidScRsp| { &mut m.KDFKCJLHHAF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetSaveRaidScRsp| { &m.retcode },
-            |m: &mut GetSaveRaidScRsp| { &mut m.retcode },
+            "DNMJBNNJLEL",
+            |m: &GetSaveRaidScRsp| { &m.DNMJBNNJLEL },
+            |m: &mut GetSaveRaidScRsp| { &mut m.DNMJBNNJLEL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KPNBDNGMCFK",
-            |m: &GetSaveRaidScRsp| { &m.KPNBDNGMCFK },
-            |m: &mut GetSaveRaidScRsp| { &mut m.KPNBDNGMCFK },
+            "OABBJAHIPLF",
+            |m: &GetSaveRaidScRsp| { &m.OABBJAHIPLF },
+            |m: &mut GetSaveRaidScRsp| { &mut m.OABBJAHIPLF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetSaveRaidScRsp>(
             "GetSaveRaidScRsp",
@@ -101,20 +101,20 @@ impl ::protobuf::Message for GetSaveRaidScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.OGIOAKBPMAE = is.read_uint32()?;
+                56 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                48 => {
-                    self.MMMOHAJFMID = is.read_uint32()?;
-                },
-                16 => {
-                    self.BEDDOLCOMPO = is.read_bool()?;
+                72 => {
+                    self.ODOAJJGMBCL = is.read_uint32()?;
                 },
                 120 => {
-                    self.retcode = is.read_uint32()?;
+                    self.KDFKCJLHHAF = is.read_bool()?;
                 },
-                34 => {
-                    self.KPNBDNGMCFK.push(is.read_message()?);
+                96 => {
+                    self.DNMJBNNJLEL = is.read_uint32()?;
+                },
+                90 => {
+                    self.OABBJAHIPLF.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,19 +128,19 @@ impl ::protobuf::Message for GetSaveRaidScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OGIOAKBPMAE != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.OGIOAKBPMAE);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.ADADHIHDHJC);
         }
-        if self.MMMOHAJFMID != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.MMMOHAJFMID);
+        if self.ODOAJJGMBCL != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.ODOAJJGMBCL);
         }
-        if self.BEDDOLCOMPO != false {
+        if self.KDFKCJLHHAF != false {
             my_size += 1 + 1;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+        if self.DNMJBNNJLEL != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.DNMJBNNJLEL);
         }
-        for value in &self.KPNBDNGMCFK {
+        for value in &self.OABBJAHIPLF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -150,20 +150,20 @@ impl ::protobuf::Message for GetSaveRaidScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OGIOAKBPMAE != 0 {
-            os.write_uint32(1, self.OGIOAKBPMAE)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(7, self.ADADHIHDHJC)?;
         }
-        if self.MMMOHAJFMID != 0 {
-            os.write_uint32(6, self.MMMOHAJFMID)?;
+        if self.ODOAJJGMBCL != 0 {
+            os.write_uint32(9, self.ODOAJJGMBCL)?;
         }
-        if self.BEDDOLCOMPO != false {
-            os.write_bool(2, self.BEDDOLCOMPO)?;
+        if self.KDFKCJLHHAF != false {
+            os.write_bool(15, self.KDFKCJLHHAF)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+        if self.DNMJBNNJLEL != 0 {
+            os.write_uint32(12, self.DNMJBNNJLEL)?;
         }
-        for v in &self.KPNBDNGMCFK {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        for v in &self.OABBJAHIPLF {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,21 +182,21 @@ impl ::protobuf::Message for GetSaveRaidScRsp {
     }
 
     fn clear(&mut self) {
-        self.OGIOAKBPMAE = 0;
-        self.MMMOHAJFMID = 0;
-        self.BEDDOLCOMPO = false;
-        self.retcode = 0;
-        self.KPNBDNGMCFK.clear();
+        self.ADADHIHDHJC = 0;
+        self.ODOAJJGMBCL = 0;
+        self.KDFKCJLHHAF = false;
+        self.DNMJBNNJLEL = 0;
+        self.OABBJAHIPLF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetSaveRaidScRsp {
         static instance: GetSaveRaidScRsp = GetSaveRaidScRsp {
-            OGIOAKBPMAE: 0,
-            MMMOHAJFMID: 0,
-            BEDDOLCOMPO: false,
-            retcode: 0,
-            KPNBDNGMCFK: ::std::vec::Vec::new(),
+            ADADHIHDHJC: 0,
+            ODOAJJGMBCL: 0,
+            KDFKCJLHHAF: false,
+            DNMJBNNJLEL: 0,
+            OABBJAHIPLF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,12 +221,12 @@ impl ::protobuf::reflect::ProtobufValue for GetSaveRaidScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16GetSaveRaidScRsp.proto\x1a\x11CAGJIDOGIMK.proto\"\xc2\x01\n\x10Get\
-    SaveRaidScRsp\x12\x20\n\x0bOGIOAKBPMAE\x18\x01\x20\x01(\rR\x0bOGIOAKBPMA\
-    E\x12\x20\n\x0bMMMOHAJFMID\x18\x06\x20\x01(\rR\x0bMMMOHAJFMID\x12\x20\n\
-    \x0bBEDDOLCOMPO\x18\x02\x20\x01(\x08R\x0bBEDDOLCOMPO\x12\x18\n\x07retcod\
-    e\x18\x0f\x20\x01(\rR\x07retcode\x12.\n\x0bKPNBDNGMCFK\x18\x04\x20\x03(\
-    \x0b2\x0c.CAGJIDOGIMKR\x0bKPNBDNGMCFKb\x06proto3\
+    \n\x16GetSaveRaidScRsp.proto\x1a\x11GDBPCLPHBOL.proto\"\xca\x01\n\x10Get\
+    SaveRaidScRsp\x12\x20\n\x0bADADHIHDHJC\x18\x07\x20\x01(\rR\x0bADADHIHDHJ\
+    C\x12\x20\n\x0bODOAJJGMBCL\x18\t\x20\x01(\rR\x0bODOAJJGMBCL\x12\x20\n\
+    \x0bKDFKCJLHHAF\x18\x0f\x20\x01(\x08R\x0bKDFKCJLHHAF\x12\x20\n\x0bDNMJBN\
+    NJLEL\x18\x0c\x20\x01(\rR\x0bDNMJBNNJLEL\x12.\n\x0bOABBJAHIPLF\x18\x0b\
+    \x20\x03(\x0b2\x0c.GDBPCLPHBOLR\x0bOABBJAHIPLFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -244,7 +244,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::CAGJIDOGIMK::file_descriptor().clone());
+            deps.push(super::GDBPCLPHBOL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetSaveRaidScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

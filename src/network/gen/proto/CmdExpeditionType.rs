@@ -30,48 +30,48 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdExpeditionType {
     // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdExpeditionTypeNone)
     CmdExpeditionTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdTakeExpeditionRewardCsReq)
-    CmdTakeExpeditionRewardCsReq = 2533,
-    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdTakeMultipleActivityExpeditionRewardScRsp)
-    CmdTakeMultipleActivityExpeditionRewardScRsp = 2504,
-    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdCancelActivityExpeditionCsReq)
-    CmdCancelActivityExpeditionCsReq = 2556,
-    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdTakeMultipleExpeditionRewardScRsp)
-    CmdTakeMultipleExpeditionRewardScRsp = 2550,
-    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdTakeExpeditionRewardScRsp)
-    CmdTakeExpeditionRewardScRsp = 2512,
-    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdAcceptExpeditionScRsp)
-    CmdAcceptExpeditionScRsp = 2542,
-    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdAcceptActivityExpeditionCsReq)
-    CmdAcceptActivityExpeditionCsReq = 2538,
-    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdTakeActivityExpeditionRewardCsReq)
-    CmdTakeActivityExpeditionRewardCsReq = 2522,
-    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdGetExpeditionDataScRsp)
-    CmdGetExpeditionDataScRsp = 2571,
-    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdGetExpeditionDataCsReq)
-    CmdGetExpeditionDataCsReq = 2598,
-    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdAcceptMultipleExpeditionCsReq)
-    CmdAcceptMultipleExpeditionCsReq = 2505,
-    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdTakeMultipleActivityExpeditionRewardCsReq)
-    CmdTakeMultipleActivityExpeditionRewardCsReq = 2531,
-    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdAcceptActivityExpeditionScRsp)
-    CmdAcceptActivityExpeditionScRsp = 2578,
-    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdAcceptMultipleExpeditionScRsp)
-    CmdAcceptMultipleExpeditionScRsp = 2545,
     // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdTakeMultipleExpeditionRewardCsReq)
-    CmdTakeMultipleExpeditionRewardCsReq = 2520,
-    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdCancelActivityExpeditionScRsp)
-    CmdCancelActivityExpeditionScRsp = 2589,
-    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdAcceptExpeditionCsReq)
-    CmdAcceptExpeditionCsReq = 2583,
-    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdCancelExpeditionCsReq)
-    CmdCancelExpeditionCsReq = 2579,
+    CmdTakeMultipleExpeditionRewardCsReq = 2519,
+    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdCancelActivityExpeditionCsReq)
+    CmdCancelActivityExpeditionCsReq = 2574,
+    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdAcceptActivityExpeditionScRsp)
+    CmdAcceptActivityExpeditionScRsp = 2547,
+    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdGetExpeditionDataScRsp)
+    CmdGetExpeditionDataScRsp = 2520,
     // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdExpeditionDataChangeScNotify)
-    CmdExpeditionDataChangeScNotify = 2528,
+    CmdExpeditionDataChangeScNotify = 2580,
+    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdTakeMultipleActivityExpeditionRewardCsReq)
+    CmdTakeMultipleActivityExpeditionRewardCsReq = 2525,
+    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdTakeExpeditionRewardScRsp)
+    CmdTakeExpeditionRewardScRsp = 2537,
+    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdAcceptExpeditionScRsp)
+    CmdAcceptExpeditionScRsp = 2546,
     // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdCancelExpeditionScRsp)
-    CmdCancelExpeditionScRsp = 2577,
+    CmdCancelExpeditionScRsp = 2553,
+    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdAcceptMultipleExpeditionCsReq)
+    CmdAcceptMultipleExpeditionCsReq = 2590,
+    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdAcceptActivityExpeditionCsReq)
+    CmdAcceptActivityExpeditionCsReq = 2516,
+    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdTakeActivityExpeditionRewardCsReq)
+    CmdTakeActivityExpeditionRewardCsReq = 2575,
+    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdAcceptMultipleExpeditionScRsp)
+    CmdAcceptMultipleExpeditionScRsp = 2579,
+    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdCancelActivityExpeditionScRsp)
+    CmdCancelActivityExpeditionScRsp = 2530,
+    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdTakeMultipleExpeditionRewardScRsp)
+    CmdTakeMultipleExpeditionRewardScRsp = 2561,
+    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdCancelExpeditionCsReq)
+    CmdCancelExpeditionCsReq = 2539,
+    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdTakeExpeditionRewardCsReq)
+    CmdTakeExpeditionRewardCsReq = 2534,
+    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdAcceptExpeditionCsReq)
+    CmdAcceptExpeditionCsReq = 2503,
     // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdTakeActivityExpeditionRewardScRsp)
-    CmdTakeActivityExpeditionRewardScRsp = 2566,
+    CmdTakeActivityExpeditionRewardScRsp = 2548,
+    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdTakeMultipleActivityExpeditionRewardScRsp)
+    CmdTakeMultipleActivityExpeditionRewardScRsp = 2529,
+    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdGetExpeditionDataCsReq)
+    CmdGetExpeditionDataCsReq = 2559,
 }
 
 impl ::protobuf::Enum for CmdExpeditionType {
@@ -84,27 +84,27 @@ impl ::protobuf::Enum for CmdExpeditionType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdExpeditionType> {
         match value {
             0 => ::std::option::Option::Some(CmdExpeditionType::CmdExpeditionTypeNone),
-            2533 => ::std::option::Option::Some(CmdExpeditionType::CmdTakeExpeditionRewardCsReq),
-            2504 => ::std::option::Option::Some(CmdExpeditionType::CmdTakeMultipleActivityExpeditionRewardScRsp),
-            2556 => ::std::option::Option::Some(CmdExpeditionType::CmdCancelActivityExpeditionCsReq),
-            2550 => ::std::option::Option::Some(CmdExpeditionType::CmdTakeMultipleExpeditionRewardScRsp),
-            2512 => ::std::option::Option::Some(CmdExpeditionType::CmdTakeExpeditionRewardScRsp),
-            2542 => ::std::option::Option::Some(CmdExpeditionType::CmdAcceptExpeditionScRsp),
-            2538 => ::std::option::Option::Some(CmdExpeditionType::CmdAcceptActivityExpeditionCsReq),
-            2522 => ::std::option::Option::Some(CmdExpeditionType::CmdTakeActivityExpeditionRewardCsReq),
-            2571 => ::std::option::Option::Some(CmdExpeditionType::CmdGetExpeditionDataScRsp),
-            2598 => ::std::option::Option::Some(CmdExpeditionType::CmdGetExpeditionDataCsReq),
-            2505 => ::std::option::Option::Some(CmdExpeditionType::CmdAcceptMultipleExpeditionCsReq),
-            2531 => ::std::option::Option::Some(CmdExpeditionType::CmdTakeMultipleActivityExpeditionRewardCsReq),
-            2578 => ::std::option::Option::Some(CmdExpeditionType::CmdAcceptActivityExpeditionScRsp),
-            2545 => ::std::option::Option::Some(CmdExpeditionType::CmdAcceptMultipleExpeditionScRsp),
-            2520 => ::std::option::Option::Some(CmdExpeditionType::CmdTakeMultipleExpeditionRewardCsReq),
-            2589 => ::std::option::Option::Some(CmdExpeditionType::CmdCancelActivityExpeditionScRsp),
-            2583 => ::std::option::Option::Some(CmdExpeditionType::CmdAcceptExpeditionCsReq),
-            2579 => ::std::option::Option::Some(CmdExpeditionType::CmdCancelExpeditionCsReq),
-            2528 => ::std::option::Option::Some(CmdExpeditionType::CmdExpeditionDataChangeScNotify),
-            2577 => ::std::option::Option::Some(CmdExpeditionType::CmdCancelExpeditionScRsp),
-            2566 => ::std::option::Option::Some(CmdExpeditionType::CmdTakeActivityExpeditionRewardScRsp),
+            2519 => ::std::option::Option::Some(CmdExpeditionType::CmdTakeMultipleExpeditionRewardCsReq),
+            2574 => ::std::option::Option::Some(CmdExpeditionType::CmdCancelActivityExpeditionCsReq),
+            2547 => ::std::option::Option::Some(CmdExpeditionType::CmdAcceptActivityExpeditionScRsp),
+            2520 => ::std::option::Option::Some(CmdExpeditionType::CmdGetExpeditionDataScRsp),
+            2580 => ::std::option::Option::Some(CmdExpeditionType::CmdExpeditionDataChangeScNotify),
+            2525 => ::std::option::Option::Some(CmdExpeditionType::CmdTakeMultipleActivityExpeditionRewardCsReq),
+            2537 => ::std::option::Option::Some(CmdExpeditionType::CmdTakeExpeditionRewardScRsp),
+            2546 => ::std::option::Option::Some(CmdExpeditionType::CmdAcceptExpeditionScRsp),
+            2553 => ::std::option::Option::Some(CmdExpeditionType::CmdCancelExpeditionScRsp),
+            2590 => ::std::option::Option::Some(CmdExpeditionType::CmdAcceptMultipleExpeditionCsReq),
+            2516 => ::std::option::Option::Some(CmdExpeditionType::CmdAcceptActivityExpeditionCsReq),
+            2575 => ::std::option::Option::Some(CmdExpeditionType::CmdTakeActivityExpeditionRewardCsReq),
+            2579 => ::std::option::Option::Some(CmdExpeditionType::CmdAcceptMultipleExpeditionScRsp),
+            2530 => ::std::option::Option::Some(CmdExpeditionType::CmdCancelActivityExpeditionScRsp),
+            2561 => ::std::option::Option::Some(CmdExpeditionType::CmdTakeMultipleExpeditionRewardScRsp),
+            2539 => ::std::option::Option::Some(CmdExpeditionType::CmdCancelExpeditionCsReq),
+            2534 => ::std::option::Option::Some(CmdExpeditionType::CmdTakeExpeditionRewardCsReq),
+            2503 => ::std::option::Option::Some(CmdExpeditionType::CmdAcceptExpeditionCsReq),
+            2548 => ::std::option::Option::Some(CmdExpeditionType::CmdTakeActivityExpeditionRewardScRsp),
+            2529 => ::std::option::Option::Some(CmdExpeditionType::CmdTakeMultipleActivityExpeditionRewardScRsp),
+            2559 => ::std::option::Option::Some(CmdExpeditionType::CmdGetExpeditionDataCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -112,54 +112,54 @@ impl ::protobuf::Enum for CmdExpeditionType {
     fn from_str(str: &str) -> ::std::option::Option<CmdExpeditionType> {
         match str {
             "CmdExpeditionTypeNone" => ::std::option::Option::Some(CmdExpeditionType::CmdExpeditionTypeNone),
-            "CmdTakeExpeditionRewardCsReq" => ::std::option::Option::Some(CmdExpeditionType::CmdTakeExpeditionRewardCsReq),
-            "CmdTakeMultipleActivityExpeditionRewardScRsp" => ::std::option::Option::Some(CmdExpeditionType::CmdTakeMultipleActivityExpeditionRewardScRsp),
+            "CmdTakeMultipleExpeditionRewardCsReq" => ::std::option::Option::Some(CmdExpeditionType::CmdTakeMultipleExpeditionRewardCsReq),
             "CmdCancelActivityExpeditionCsReq" => ::std::option::Option::Some(CmdExpeditionType::CmdCancelActivityExpeditionCsReq),
-            "CmdTakeMultipleExpeditionRewardScRsp" => ::std::option::Option::Some(CmdExpeditionType::CmdTakeMultipleExpeditionRewardScRsp),
+            "CmdAcceptActivityExpeditionScRsp" => ::std::option::Option::Some(CmdExpeditionType::CmdAcceptActivityExpeditionScRsp),
+            "CmdGetExpeditionDataScRsp" => ::std::option::Option::Some(CmdExpeditionType::CmdGetExpeditionDataScRsp),
+            "CmdExpeditionDataChangeScNotify" => ::std::option::Option::Some(CmdExpeditionType::CmdExpeditionDataChangeScNotify),
+            "CmdTakeMultipleActivityExpeditionRewardCsReq" => ::std::option::Option::Some(CmdExpeditionType::CmdTakeMultipleActivityExpeditionRewardCsReq),
             "CmdTakeExpeditionRewardScRsp" => ::std::option::Option::Some(CmdExpeditionType::CmdTakeExpeditionRewardScRsp),
             "CmdAcceptExpeditionScRsp" => ::std::option::Option::Some(CmdExpeditionType::CmdAcceptExpeditionScRsp),
+            "CmdCancelExpeditionScRsp" => ::std::option::Option::Some(CmdExpeditionType::CmdCancelExpeditionScRsp),
+            "CmdAcceptMultipleExpeditionCsReq" => ::std::option::Option::Some(CmdExpeditionType::CmdAcceptMultipleExpeditionCsReq),
             "CmdAcceptActivityExpeditionCsReq" => ::std::option::Option::Some(CmdExpeditionType::CmdAcceptActivityExpeditionCsReq),
             "CmdTakeActivityExpeditionRewardCsReq" => ::std::option::Option::Some(CmdExpeditionType::CmdTakeActivityExpeditionRewardCsReq),
-            "CmdGetExpeditionDataScRsp" => ::std::option::Option::Some(CmdExpeditionType::CmdGetExpeditionDataScRsp),
-            "CmdGetExpeditionDataCsReq" => ::std::option::Option::Some(CmdExpeditionType::CmdGetExpeditionDataCsReq),
-            "CmdAcceptMultipleExpeditionCsReq" => ::std::option::Option::Some(CmdExpeditionType::CmdAcceptMultipleExpeditionCsReq),
-            "CmdTakeMultipleActivityExpeditionRewardCsReq" => ::std::option::Option::Some(CmdExpeditionType::CmdTakeMultipleActivityExpeditionRewardCsReq),
-            "CmdAcceptActivityExpeditionScRsp" => ::std::option::Option::Some(CmdExpeditionType::CmdAcceptActivityExpeditionScRsp),
             "CmdAcceptMultipleExpeditionScRsp" => ::std::option::Option::Some(CmdExpeditionType::CmdAcceptMultipleExpeditionScRsp),
-            "CmdTakeMultipleExpeditionRewardCsReq" => ::std::option::Option::Some(CmdExpeditionType::CmdTakeMultipleExpeditionRewardCsReq),
             "CmdCancelActivityExpeditionScRsp" => ::std::option::Option::Some(CmdExpeditionType::CmdCancelActivityExpeditionScRsp),
-            "CmdAcceptExpeditionCsReq" => ::std::option::Option::Some(CmdExpeditionType::CmdAcceptExpeditionCsReq),
+            "CmdTakeMultipleExpeditionRewardScRsp" => ::std::option::Option::Some(CmdExpeditionType::CmdTakeMultipleExpeditionRewardScRsp),
             "CmdCancelExpeditionCsReq" => ::std::option::Option::Some(CmdExpeditionType::CmdCancelExpeditionCsReq),
-            "CmdExpeditionDataChangeScNotify" => ::std::option::Option::Some(CmdExpeditionType::CmdExpeditionDataChangeScNotify),
-            "CmdCancelExpeditionScRsp" => ::std::option::Option::Some(CmdExpeditionType::CmdCancelExpeditionScRsp),
+            "CmdTakeExpeditionRewardCsReq" => ::std::option::Option::Some(CmdExpeditionType::CmdTakeExpeditionRewardCsReq),
+            "CmdAcceptExpeditionCsReq" => ::std::option::Option::Some(CmdExpeditionType::CmdAcceptExpeditionCsReq),
             "CmdTakeActivityExpeditionRewardScRsp" => ::std::option::Option::Some(CmdExpeditionType::CmdTakeActivityExpeditionRewardScRsp),
+            "CmdTakeMultipleActivityExpeditionRewardScRsp" => ::std::option::Option::Some(CmdExpeditionType::CmdTakeMultipleActivityExpeditionRewardScRsp),
+            "CmdGetExpeditionDataCsReq" => ::std::option::Option::Some(CmdExpeditionType::CmdGetExpeditionDataCsReq),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdExpeditionType] = &[
         CmdExpeditionType::CmdExpeditionTypeNone,
-        CmdExpeditionType::CmdTakeExpeditionRewardCsReq,
-        CmdExpeditionType::CmdTakeMultipleActivityExpeditionRewardScRsp,
+        CmdExpeditionType::CmdTakeMultipleExpeditionRewardCsReq,
         CmdExpeditionType::CmdCancelActivityExpeditionCsReq,
-        CmdExpeditionType::CmdTakeMultipleExpeditionRewardScRsp,
+        CmdExpeditionType::CmdAcceptActivityExpeditionScRsp,
+        CmdExpeditionType::CmdGetExpeditionDataScRsp,
+        CmdExpeditionType::CmdExpeditionDataChangeScNotify,
+        CmdExpeditionType::CmdTakeMultipleActivityExpeditionRewardCsReq,
         CmdExpeditionType::CmdTakeExpeditionRewardScRsp,
         CmdExpeditionType::CmdAcceptExpeditionScRsp,
+        CmdExpeditionType::CmdCancelExpeditionScRsp,
+        CmdExpeditionType::CmdAcceptMultipleExpeditionCsReq,
         CmdExpeditionType::CmdAcceptActivityExpeditionCsReq,
         CmdExpeditionType::CmdTakeActivityExpeditionRewardCsReq,
-        CmdExpeditionType::CmdGetExpeditionDataScRsp,
-        CmdExpeditionType::CmdGetExpeditionDataCsReq,
-        CmdExpeditionType::CmdAcceptMultipleExpeditionCsReq,
-        CmdExpeditionType::CmdTakeMultipleActivityExpeditionRewardCsReq,
-        CmdExpeditionType::CmdAcceptActivityExpeditionScRsp,
         CmdExpeditionType::CmdAcceptMultipleExpeditionScRsp,
-        CmdExpeditionType::CmdTakeMultipleExpeditionRewardCsReq,
         CmdExpeditionType::CmdCancelActivityExpeditionScRsp,
-        CmdExpeditionType::CmdAcceptExpeditionCsReq,
+        CmdExpeditionType::CmdTakeMultipleExpeditionRewardScRsp,
         CmdExpeditionType::CmdCancelExpeditionCsReq,
-        CmdExpeditionType::CmdExpeditionDataChangeScNotify,
-        CmdExpeditionType::CmdCancelExpeditionScRsp,
+        CmdExpeditionType::CmdTakeExpeditionRewardCsReq,
+        CmdExpeditionType::CmdAcceptExpeditionCsReq,
         CmdExpeditionType::CmdTakeActivityExpeditionRewardScRsp,
+        CmdExpeditionType::CmdTakeMultipleActivityExpeditionRewardScRsp,
+        CmdExpeditionType::CmdGetExpeditionDataCsReq,
     ];
 }
 
@@ -172,27 +172,27 @@ impl ::protobuf::EnumFull for CmdExpeditionType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdExpeditionType::CmdExpeditionTypeNone => 0,
-            CmdExpeditionType::CmdTakeExpeditionRewardCsReq => 1,
-            CmdExpeditionType::CmdTakeMultipleActivityExpeditionRewardScRsp => 2,
-            CmdExpeditionType::CmdCancelActivityExpeditionCsReq => 3,
-            CmdExpeditionType::CmdTakeMultipleExpeditionRewardScRsp => 4,
-            CmdExpeditionType::CmdTakeExpeditionRewardScRsp => 5,
-            CmdExpeditionType::CmdAcceptExpeditionScRsp => 6,
-            CmdExpeditionType::CmdAcceptActivityExpeditionCsReq => 7,
-            CmdExpeditionType::CmdTakeActivityExpeditionRewardCsReq => 8,
-            CmdExpeditionType::CmdGetExpeditionDataScRsp => 9,
-            CmdExpeditionType::CmdGetExpeditionDataCsReq => 10,
-            CmdExpeditionType::CmdAcceptMultipleExpeditionCsReq => 11,
-            CmdExpeditionType::CmdTakeMultipleActivityExpeditionRewardCsReq => 12,
-            CmdExpeditionType::CmdAcceptActivityExpeditionScRsp => 13,
-            CmdExpeditionType::CmdAcceptMultipleExpeditionScRsp => 14,
-            CmdExpeditionType::CmdTakeMultipleExpeditionRewardCsReq => 15,
-            CmdExpeditionType::CmdCancelActivityExpeditionScRsp => 16,
-            CmdExpeditionType::CmdAcceptExpeditionCsReq => 17,
-            CmdExpeditionType::CmdCancelExpeditionCsReq => 18,
-            CmdExpeditionType::CmdExpeditionDataChangeScNotify => 19,
-            CmdExpeditionType::CmdCancelExpeditionScRsp => 20,
-            CmdExpeditionType::CmdTakeActivityExpeditionRewardScRsp => 21,
+            CmdExpeditionType::CmdTakeMultipleExpeditionRewardCsReq => 1,
+            CmdExpeditionType::CmdCancelActivityExpeditionCsReq => 2,
+            CmdExpeditionType::CmdAcceptActivityExpeditionScRsp => 3,
+            CmdExpeditionType::CmdGetExpeditionDataScRsp => 4,
+            CmdExpeditionType::CmdExpeditionDataChangeScNotify => 5,
+            CmdExpeditionType::CmdTakeMultipleActivityExpeditionRewardCsReq => 6,
+            CmdExpeditionType::CmdTakeExpeditionRewardScRsp => 7,
+            CmdExpeditionType::CmdAcceptExpeditionScRsp => 8,
+            CmdExpeditionType::CmdCancelExpeditionScRsp => 9,
+            CmdExpeditionType::CmdAcceptMultipleExpeditionCsReq => 10,
+            CmdExpeditionType::CmdAcceptActivityExpeditionCsReq => 11,
+            CmdExpeditionType::CmdTakeActivityExpeditionRewardCsReq => 12,
+            CmdExpeditionType::CmdAcceptMultipleExpeditionScRsp => 13,
+            CmdExpeditionType::CmdCancelActivityExpeditionScRsp => 14,
+            CmdExpeditionType::CmdTakeMultipleExpeditionRewardScRsp => 15,
+            CmdExpeditionType::CmdCancelExpeditionCsReq => 16,
+            CmdExpeditionType::CmdTakeExpeditionRewardCsReq => 17,
+            CmdExpeditionType::CmdAcceptExpeditionCsReq => 18,
+            CmdExpeditionType::CmdTakeActivityExpeditionRewardScRsp => 19,
+            CmdExpeditionType::CmdTakeMultipleActivityExpeditionRewardScRsp => 20,
+            CmdExpeditionType::CmdGetExpeditionDataCsReq => 21,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -212,23 +212,23 @@ impl CmdExpeditionType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17CmdExpeditionType.proto*\xd2\x06\n\x11CmdExpeditionType\x12\x19\n\
-    \x15CmdExpeditionTypeNone\x10\0\x12!\n\x1cCmdTakeExpeditionRewardCsReq\
-    \x10\xe5\x13\x121\n,CmdTakeMultipleActivityExpeditionRewardScRsp\x10\xc8\
-    \x13\x12%\n\x20CmdCancelActivityExpeditionCsReq\x10\xfc\x13\x12)\n$CmdTa\
-    keMultipleExpeditionRewardScRsp\x10\xf6\x13\x12!\n\x1cCmdTakeExpeditionR\
-    ewardScRsp\x10\xd0\x13\x12\x1d\n\x18CmdAcceptExpeditionScRsp\x10\xee\x13\
-    \x12%\n\x20CmdAcceptActivityExpeditionCsReq\x10\xea\x13\x12)\n$CmdTakeAc\
-    tivityExpeditionRewardCsReq\x10\xda\x13\x12\x1e\n\x19CmdGetExpeditionDat\
-    aScRsp\x10\x8b\x14\x12\x1e\n\x19CmdGetExpeditionDataCsReq\x10\xa6\x14\
-    \x12%\n\x20CmdAcceptMultipleExpeditionCsReq\x10\xc9\x13\x121\n,CmdTakeMu\
-    ltipleActivityExpeditionRewardCsReq\x10\xe3\x13\x12%\n\x20CmdAcceptActiv\
-    ityExpeditionScRsp\x10\x92\x14\x12%\n\x20CmdAcceptMultipleExpeditionScRs\
-    p\x10\xf1\x13\x12)\n$CmdTakeMultipleExpeditionRewardCsReq\x10\xd8\x13\
-    \x12%\n\x20CmdCancelActivityExpeditionScRsp\x10\x9d\x14\x12\x1d\n\x18Cmd\
-    AcceptExpeditionCsReq\x10\x97\x14\x12\x1d\n\x18CmdCancelExpeditionCsReq\
-    \x10\x93\x14\x12$\n\x1fCmdExpeditionDataChangeScNotify\x10\xe0\x13\x12\
-    \x1d\n\x18CmdCancelExpeditionScRsp\x10\x91\x14\x12)\n$CmdTakeActivityExp\
-    editionRewardScRsp\x10\x86\x14b\x06proto3\
+    \x15CmdExpeditionTypeNone\x10\0\x12)\n$CmdTakeMultipleExpeditionRewardCs\
+    Req\x10\xd7\x13\x12%\n\x20CmdCancelActivityExpeditionCsReq\x10\x8e\x14\
+    \x12%\n\x20CmdAcceptActivityExpeditionScRsp\x10\xf3\x13\x12\x1e\n\x19Cmd\
+    GetExpeditionDataScRsp\x10\xd8\x13\x12$\n\x1fCmdExpeditionDataChangeScNo\
+    tify\x10\x94\x14\x121\n,CmdTakeMultipleActivityExpeditionRewardCsReq\x10\
+    \xdd\x13\x12!\n\x1cCmdTakeExpeditionRewardScRsp\x10\xe9\x13\x12\x1d\n\
+    \x18CmdAcceptExpeditionScRsp\x10\xf2\x13\x12\x1d\n\x18CmdCancelExpeditio\
+    nScRsp\x10\xf9\x13\x12%\n\x20CmdAcceptMultipleExpeditionCsReq\x10\x9e\
+    \x14\x12%\n\x20CmdAcceptActivityExpeditionCsReq\x10\xd4\x13\x12)\n$CmdTa\
+    keActivityExpeditionRewardCsReq\x10\x8f\x14\x12%\n\x20CmdAcceptMultipleE\
+    xpeditionScRsp\x10\x93\x14\x12%\n\x20CmdCancelActivityExpeditionScRsp\
+    \x10\xe2\x13\x12)\n$CmdTakeMultipleExpeditionRewardScRsp\x10\x81\x14\x12\
+    \x1d\n\x18CmdCancelExpeditionCsReq\x10\xeb\x13\x12!\n\x1cCmdTakeExpediti\
+    onRewardCsReq\x10\xe6\x13\x12\x1d\n\x18CmdAcceptExpeditionCsReq\x10\xc7\
+    \x13\x12)\n$CmdTakeActivityExpeditionRewardScRsp\x10\xf4\x13\x121\n,CmdT\
+    akeMultipleActivityExpeditionRewardScRsp\x10\xe1\x13\x12\x1e\n\x19CmdGet\
+    ExpeditionDataCsReq\x10\xff\x13b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

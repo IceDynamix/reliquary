@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishFirstTalkByPerformanceNpcCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FinishFirstTalkByPerformanceNpcCsReq.DMCHBGFLDBL)
-    pub DMCHBGFLDBL: u32,
+    // @@protoc_insertion_point(field:FinishFirstTalkByPerformanceNpcCsReq.MHIFDFCMGKA)
+    pub MHIFDFCMGKA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FinishFirstTalkByPerformanceNpcCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl FinishFirstTalkByPerformanceNpcCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DMCHBGFLDBL",
-            |m: &FinishFirstTalkByPerformanceNpcCsReq| { &m.DMCHBGFLDBL },
-            |m: &mut FinishFirstTalkByPerformanceNpcCsReq| { &mut m.DMCHBGFLDBL },
+            "MHIFDFCMGKA",
+            |m: &FinishFirstTalkByPerformanceNpcCsReq| { &m.MHIFDFCMGKA },
+            |m: &mut FinishFirstTalkByPerformanceNpcCsReq| { &mut m.MHIFDFCMGKA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishFirstTalkByPerformanceNpcCsReq>(
             "FinishFirstTalkByPerformanceNpcCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for FinishFirstTalkByPerformanceNpcCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.DMCHBGFLDBL = is.read_uint32()?;
+                120 => {
+                    self.MHIFDFCMGKA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for FinishFirstTalkByPerformanceNpcCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DMCHBGFLDBL != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.DMCHBGFLDBL);
+        if self.MHIFDFCMGKA != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.MHIFDFCMGKA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for FinishFirstTalkByPerformanceNpcCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DMCHBGFLDBL != 0 {
-            os.write_uint32(5, self.DMCHBGFLDBL)?;
+        if self.MHIFDFCMGKA != 0 {
+            os.write_uint32(15, self.MHIFDFCMGKA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for FinishFirstTalkByPerformanceNpcCsReq {
     }
 
     fn clear(&mut self) {
-        self.DMCHBGFLDBL = 0;
+        self.MHIFDFCMGKA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishFirstTalkByPerformanceNpcCsReq {
         static instance: FinishFirstTalkByPerformanceNpcCsReq = FinishFirstTalkByPerformanceNpcCsReq {
-            DMCHBGFLDBL: 0,
+            MHIFDFCMGKA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for FinishFirstTalkByPerformanceNpcCsReq
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n*FinishFirstTalkByPerformanceNpcCsReq.proto\"H\n$FinishFirstTalkByPerf\
-    ormanceNpcCsReq\x12\x20\n\x0bDMCHBGFLDBL\x18\x05\x20\x01(\rR\x0bDMCHBGFL\
-    DBLb\x06proto3\
+    ormanceNpcCsReq\x12\x20\n\x0bMHIFDFCMGKA\x18\x0f\x20\x01(\rR\x0bMHIFDFCM\
+    GKAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

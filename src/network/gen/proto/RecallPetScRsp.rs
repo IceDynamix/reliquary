@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RecallPetScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RecallPetScRsp.LDJKCHHPIOM)
-    pub LDJKCHHPIOM: u32,
-    // @@protoc_insertion_point(field:RecallPetScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:RecallPetScRsp.LLKMMAEJFGD)
-    pub LLKMMAEJFGD: u32,
+    // @@protoc_insertion_point(field:RecallPetScRsp.BPPKPFKPMOP)
+    pub BPPKPFKPMOP: u32,
+    // @@protoc_insertion_point(field:RecallPetScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:RecallPetScRsp.MOIOCOMCCDL)
+    pub MOIOCOMCCDL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RecallPetScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl RecallPetScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LDJKCHHPIOM",
-            |m: &RecallPetScRsp| { &m.LDJKCHHPIOM },
-            |m: &mut RecallPetScRsp| { &mut m.LDJKCHHPIOM },
+            "BPPKPFKPMOP",
+            |m: &RecallPetScRsp| { &m.BPPKPFKPMOP },
+            |m: &mut RecallPetScRsp| { &mut m.BPPKPFKPMOP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &RecallPetScRsp| { &m.retcode },
-            |m: &mut RecallPetScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &RecallPetScRsp| { &m.ADADHIHDHJC },
+            |m: &mut RecallPetScRsp| { &mut m.ADADHIHDHJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LLKMMAEJFGD",
-            |m: &RecallPetScRsp| { &m.LLKMMAEJFGD },
-            |m: &mut RecallPetScRsp| { &mut m.LLKMMAEJFGD },
+            "MOIOCOMCCDL",
+            |m: &RecallPetScRsp| { &m.MOIOCOMCCDL },
+            |m: &mut RecallPetScRsp| { &mut m.MOIOCOMCCDL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RecallPetScRsp>(
             "RecallPetScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for RecallPetScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                24 => {
+                    self.BPPKPFKPMOP = is.read_uint32()?;
+                },
+                120 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
+                },
                 48 => {
-                    self.LDJKCHHPIOM = is.read_uint32()?;
-                },
-                16 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                64 => {
-                    self.LLKMMAEJFGD = is.read_uint32()?;
+                    self.MOIOCOMCCDL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for RecallPetScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LDJKCHHPIOM != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.LDJKCHHPIOM);
+        if self.BPPKPFKPMOP != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.BPPKPFKPMOP);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.ADADHIHDHJC);
         }
-        if self.LLKMMAEJFGD != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.LLKMMAEJFGD);
+        if self.MOIOCOMCCDL != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.MOIOCOMCCDL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for RecallPetScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LDJKCHHPIOM != 0 {
-            os.write_uint32(6, self.LDJKCHHPIOM)?;
+        if self.BPPKPFKPMOP != 0 {
+            os.write_uint32(3, self.BPPKPFKPMOP)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(15, self.ADADHIHDHJC)?;
         }
-        if self.LLKMMAEJFGD != 0 {
-            os.write_uint32(8, self.LLKMMAEJFGD)?;
+        if self.MOIOCOMCCDL != 0 {
+            os.write_uint32(6, self.MOIOCOMCCDL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for RecallPetScRsp {
     }
 
     fn clear(&mut self) {
-        self.LDJKCHHPIOM = 0;
-        self.retcode = 0;
-        self.LLKMMAEJFGD = 0;
+        self.BPPKPFKPMOP = 0;
+        self.ADADHIHDHJC = 0;
+        self.MOIOCOMCCDL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RecallPetScRsp {
         static instance: RecallPetScRsp = RecallPetScRsp {
-            LDJKCHHPIOM: 0,
-            retcode: 0,
-            LLKMMAEJFGD: 0,
+            BPPKPFKPMOP: 0,
+            ADADHIHDHJC: 0,
+            MOIOCOMCCDL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for RecallPetScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14RecallPetScRsp.proto\"n\n\x0eRecallPetScRsp\x12\x20\n\x0bLDJKCHHPI\
-    OM\x18\x06\x20\x01(\rR\x0bLDJKCHHPIOM\x12\x18\n\x07retcode\x18\x02\x20\
-    \x01(\rR\x07retcode\x12\x20\n\x0bLLKMMAEJFGD\x18\x08\x20\x01(\rR\x0bLLKM\
-    MAEJFGDb\x06proto3\
+    \n\x14RecallPetScRsp.proto\"v\n\x0eRecallPetScRsp\x12\x20\n\x0bBPPKPFKPM\
+    OP\x18\x03\x20\x01(\rR\x0bBPPKPFKPMOP\x12\x20\n\x0bADADHIHDHJC\x18\x0f\
+    \x20\x01(\rR\x0bADADHIHDHJC\x12\x20\n\x0bMOIOCOMCCDL\x18\x06\x20\x01(\rR\
+    \x0bMOIOCOMCCDLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

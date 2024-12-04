@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeAllRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeAllRewardScRsp.LPDNAMLHGNJ)
-    pub LPDNAMLHGNJ: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:TakeAllRewardScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:TakeAllRewardScRsp.ELPMNKHEPKJ)
+    pub ELPMNKHEPKJ: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:TakeAllRewardScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeAllRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl TakeAllRewardScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "LPDNAMLHGNJ",
-            |m: &TakeAllRewardScRsp| { &m.LPDNAMLHGNJ },
-            |m: &mut TakeAllRewardScRsp| { &mut m.LPDNAMLHGNJ },
+            "ELPMNKHEPKJ",
+            |m: &TakeAllRewardScRsp| { &m.ELPMNKHEPKJ },
+            |m: &mut TakeAllRewardScRsp| { &mut m.ELPMNKHEPKJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &TakeAllRewardScRsp| { &m.retcode },
-            |m: &mut TakeAllRewardScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &TakeAllRewardScRsp| { &m.ADADHIHDHJC },
+            |m: &mut TakeAllRewardScRsp| { &mut m.ADADHIHDHJC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeAllRewardScRsp>(
             "TakeAllRewardScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for TakeAllRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LPDNAMLHGNJ)?;
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ELPMNKHEPKJ)?;
                 },
-                104 => {
-                    self.retcode = is.read_uint32()?;
+                56 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,12 +98,12 @@ impl ::protobuf::Message for TakeAllRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.LPDNAMLHGNJ.as_ref() {
+        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.ADADHIHDHJC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for TakeAllRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.LPDNAMLHGNJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(7, self.ADADHIHDHJC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for TakeAllRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.LPDNAMLHGNJ.clear();
-        self.retcode = 0;
+        self.ELPMNKHEPKJ.clear();
+        self.ADADHIHDHJC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeAllRewardScRsp {
         static instance: TakeAllRewardScRsp = TakeAllRewardScRsp {
-            LPDNAMLHGNJ: ::protobuf::MessageField::none(),
-            retcode: 0,
+            ELPMNKHEPKJ: ::protobuf::MessageField::none(),
+            ADADHIHDHJC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for TakeAllRewardScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18TakeAllRewardScRsp.proto\x1a\x0eItemList.proto\"[\n\x12TakeAllRewa\
-    rdScRsp\x12+\n\x0bLPDNAMLHGNJ\x18\x0b\x20\x01(\x0b2\t.ItemListR\x0bLPDNA\
-    MLHGNJ\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x18TakeAllRewardScRsp.proto\x1a\x0eItemList.proto\"c\n\x12TakeAllRewa\
+    rdScRsp\x12+\n\x0bELPMNKHEPKJ\x18\r\x20\x01(\x0b2\t.ItemListR\x0bELPMNKH\
+    EPKJ\x12\x20\n\x0bADADHIHDHJC\x18\x07\x20\x01(\rR\x0bADADHIHDHJCb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

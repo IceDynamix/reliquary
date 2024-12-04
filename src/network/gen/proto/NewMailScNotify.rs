@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NewMailScNotify {
     // message fields
-    // @@protoc_insertion_point(field:NewMailScNotify.mail_id_list)
-    pub mail_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:NewMailScNotify.MailIdList)
+    pub MailIdList: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:NewMailScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl NewMailScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "mail_id_list",
-            |m: &NewMailScNotify| { &m.mail_id_list },
-            |m: &mut NewMailScNotify| { &mut m.mail_id_list },
+            "MailIdList",
+            |m: &NewMailScNotify| { &m.MailIdList },
+            |m: &mut NewMailScNotify| { &mut m.MailIdList },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NewMailScNotify>(
             "NewMailScNotify",
@@ -73,11 +73,11 @@ impl ::protobuf::Message for NewMailScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.mail_id_list)?;
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.MailIdList)?;
                 },
-                104 => {
-                    self.mail_id_list.push(is.read_uint32()?);
+                40 => {
+                    self.MailIdList.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -91,8 +91,8 @@ impl ::protobuf::Message for NewMailScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.mail_id_list {
-            my_size += ::protobuf::rt::uint32_size(13, *value);
+        for value in &self.MailIdList {
+            my_size += ::protobuf::rt::uint32_size(5, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -100,8 +100,8 @@ impl ::protobuf::Message for NewMailScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.mail_id_list {
-            os.write_uint32(13, *v)?;
+        for v in &self.MailIdList {
+            os.write_uint32(5, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -120,13 +120,13 @@ impl ::protobuf::Message for NewMailScNotify {
     }
 
     fn clear(&mut self) {
-        self.mail_id_list.clear();
+        self.MailIdList.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NewMailScNotify {
         static instance: NewMailScNotify = NewMailScNotify {
-            mail_id_list: ::std::vec::Vec::new(),
+            MailIdList: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -151,8 +151,9 @@ impl ::protobuf::reflect::ProtobufValue for NewMailScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15NewMailScNotify.proto\"3\n\x0fNewMailScNotify\x12\x20\n\x0cmail_id\
-    _list\x18\r\x20\x03(\rR\nmailIdListb\x06proto3\
+    \n\x15NewMailScNotify.proto\"1\n\x0fNewMailScNotify\x12\x1e\n\nMailIdLis\
+    t\x18\x05\x20\x03(\rR\nMailIdListB\x15\n\x13emu.lunarcore.protob\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

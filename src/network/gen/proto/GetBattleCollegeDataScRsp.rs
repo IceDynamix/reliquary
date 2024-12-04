@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetBattleCollegeDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetBattleCollegeDataScRsp.HDDGPMMNICD)
-    pub HDDGPMMNICD: u32,
-    // @@protoc_insertion_point(field:GetBattleCollegeDataScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:GetBattleCollegeDataScRsp.DALBPMPKMNJ)
-    pub DALBPMPKMNJ: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetBattleCollegeDataScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:GetBattleCollegeDataScRsp.IAGDNEFGGGM)
+    pub IAGDNEFGGGM: u32,
+    // @@protoc_insertion_point(field:GetBattleCollegeDataScRsp.GCMGMAPNMFI)
+    pub GCMGMAPNMFI: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GetBattleCollegeDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl GetBattleCollegeDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HDDGPMMNICD",
-            |m: &GetBattleCollegeDataScRsp| { &m.HDDGPMMNICD },
-            |m: &mut GetBattleCollegeDataScRsp| { &mut m.HDDGPMMNICD },
+            "ADADHIHDHJC",
+            |m: &GetBattleCollegeDataScRsp| { &m.ADADHIHDHJC },
+            |m: &mut GetBattleCollegeDataScRsp| { &mut m.ADADHIHDHJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetBattleCollegeDataScRsp| { &m.retcode },
-            |m: &mut GetBattleCollegeDataScRsp| { &mut m.retcode },
+            "IAGDNEFGGGM",
+            |m: &GetBattleCollegeDataScRsp| { &m.IAGDNEFGGGM },
+            |m: &mut GetBattleCollegeDataScRsp| { &mut m.IAGDNEFGGGM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DALBPMPKMNJ",
-            |m: &GetBattleCollegeDataScRsp| { &m.DALBPMPKMNJ },
-            |m: &mut GetBattleCollegeDataScRsp| { &mut m.DALBPMPKMNJ },
+            "GCMGMAPNMFI",
+            |m: &GetBattleCollegeDataScRsp| { &m.GCMGMAPNMFI },
+            |m: &mut GetBattleCollegeDataScRsp| { &mut m.GCMGMAPNMFI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetBattleCollegeDataScRsp>(
             "GetBattleCollegeDataScRsp",
@@ -87,17 +87,17 @@ impl ::protobuf::Message for GetBattleCollegeDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.HDDGPMMNICD = is.read_uint32()?;
+                72 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                56 => {
-                    self.retcode = is.read_uint32()?;
+                8 => {
+                    self.IAGDNEFGGGM = is.read_uint32()?;
                 },
-                82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.DALBPMPKMNJ)?;
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.GCMGMAPNMFI)?;
                 },
-                80 => {
-                    self.DALBPMPKMNJ.push(is.read_uint32()?);
+                88 => {
+                    self.GCMGMAPNMFI.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,14 +111,14 @@ impl ::protobuf::Message for GetBattleCollegeDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HDDGPMMNICD != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.HDDGPMMNICD);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.ADADHIHDHJC);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        if self.IAGDNEFGGGM != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.IAGDNEFGGGM);
         }
-        for value in &self.DALBPMPKMNJ {
-            my_size += ::protobuf::rt::uint32_size(10, *value);
+        for value in &self.GCMGMAPNMFI {
+            my_size += ::protobuf::rt::uint32_size(11, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -126,14 +126,14 @@ impl ::protobuf::Message for GetBattleCollegeDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HDDGPMMNICD != 0 {
-            os.write_uint32(15, self.HDDGPMMNICD)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(9, self.ADADHIHDHJC)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+        if self.IAGDNEFGGGM != 0 {
+            os.write_uint32(1, self.IAGDNEFGGGM)?;
         }
-        for v in &self.DALBPMPKMNJ {
-            os.write_uint32(10, *v)?;
+        for v in &self.GCMGMAPNMFI {
+            os.write_uint32(11, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -152,17 +152,17 @@ impl ::protobuf::Message for GetBattleCollegeDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.HDDGPMMNICD = 0;
-        self.retcode = 0;
-        self.DALBPMPKMNJ.clear();
+        self.ADADHIHDHJC = 0;
+        self.IAGDNEFGGGM = 0;
+        self.GCMGMAPNMFI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetBattleCollegeDataScRsp {
         static instance: GetBattleCollegeDataScRsp = GetBattleCollegeDataScRsp {
-            HDDGPMMNICD: 0,
-            retcode: 0,
-            DALBPMPKMNJ: ::std::vec::Vec::new(),
+            ADADHIHDHJC: 0,
+            IAGDNEFGGGM: 0,
+            GCMGMAPNMFI: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -187,10 +187,10 @@ impl ::protobuf::reflect::ProtobufValue for GetBattleCollegeDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fGetBattleCollegeDataScRsp.proto\"y\n\x19GetBattleCollegeDataScRsp\
-    \x12\x20\n\x0bHDDGPMMNICD\x18\x0f\x20\x01(\rR\x0bHDDGPMMNICD\x12\x18\n\
-    \x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12\x20\n\x0bDALBPMPKMNJ\x18\
-    \n\x20\x03(\rR\x0bDALBPMPKMNJb\x06proto3\
+    \n\x1fGetBattleCollegeDataScRsp.proto\"\x81\x01\n\x19GetBattleCollegeDat\
+    aScRsp\x12\x20\n\x0bADADHIHDHJC\x18\t\x20\x01(\rR\x0bADADHIHDHJC\x12\x20\
+    \n\x0bIAGDNEFGGGM\x18\x01\x20\x01(\rR\x0bIAGDNEFGGGM\x12\x20\n\x0bGCMGMA\
+    PNMFI\x18\x0b\x20\x03(\rR\x0bGCMGMAPNMFIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

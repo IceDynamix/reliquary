@@ -30,62 +30,62 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdAvatarType {
     // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdAvatarTypeNone)
     CmdAvatarTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdTakePromotionRewardScRsp)
-    CmdTakePromotionRewardScRsp = 304,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdGetAvatarDataScRsp)
-    CmdGetAvatarDataScRsp = 371,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdUnlockSkilltreeScRsp)
-    CmdUnlockSkilltreeScRsp = 377,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdTakeOffAvatarSkinCsReq)
-    CmdTakeOffAvatarSkinCsReq = 311,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdDressAvatarSkinCsReq)
-    CmdDressAvatarSkinCsReq = 360,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdDressAvatarSkinScRsp)
-    CmdDressAvatarSkinScRsp = 352,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdTakeOffRelicCsReq)
-    CmdTakeOffRelicCsReq = 320,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdRankUpAvatarCsReq)
-    CmdRankUpAvatarCsReq = 322,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdTakeOffAvatarSkinScRsp)
-    CmdTakeOffAvatarSkinScRsp = 310,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdAddAvatarScNotify)
-    CmdAddAvatarScNotify = 389,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdDressAvatarScRsp)
-    CmdDressAvatarScRsp = 338,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdDressRelicAvatarCsReq)
-    CmdDressRelicAvatarCsReq = 305,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdMarkAvatarScRsp)
-    CmdMarkAvatarScRsp = 306,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdAvatarExpUpCsReq)
-    CmdAvatarExpUpCsReq = 383,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdRankUpAvatarScRsp)
-    CmdRankUpAvatarScRsp = 366,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdAvatarExpUpScRsp)
-    CmdAvatarExpUpScRsp = 342,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdTakePromotionRewardCsReq)
-    CmdTakePromotionRewardCsReq = 331,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdPromoteAvatarCsReq)
-    CmdPromoteAvatarCsReq = 333,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdTakeOffEquipmentScRsp)
-    CmdTakeOffEquipmentScRsp = 356,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdTakeOffEquipmentCsReq)
-    CmdTakeOffEquipmentCsReq = 378,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdUnlockSkilltreeCsReq)
-    CmdUnlockSkilltreeCsReq = 379,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdDressAvatarCsReq)
-    CmdDressAvatarCsReq = 328,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdUnlockAvatarSkinScNotify)
-    CmdUnlockAvatarSkinScNotify = 400,
     // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdTakeOffRelicScRsp)
-    CmdTakeOffRelicScRsp = 350,
+    CmdTakeOffRelicScRsp = 361,
     // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdDressRelicAvatarScRsp)
-    CmdDressRelicAvatarScRsp = 345,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdPromoteAvatarScRsp)
-    CmdPromoteAvatarScRsp = 312,
+    CmdDressRelicAvatarScRsp = 379,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdDressAvatarSkinScRsp)
+    CmdDressAvatarSkinScRsp = 351,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdAvatarExpUpScRsp)
+    CmdAvatarExpUpScRsp = 346,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdTakeOffEquipmentScRsp)
+    CmdTakeOffEquipmentScRsp = 374,
     // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdGetAvatarDataCsReq)
-    CmdGetAvatarDataCsReq = 398,
+    CmdGetAvatarDataCsReq = 359,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdDressAvatarCsReq)
+    CmdDressAvatarCsReq = 380,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdDressRelicAvatarCsReq)
+    CmdDressRelicAvatarCsReq = 390,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdTakePromotionRewardScRsp)
+    CmdTakePromotionRewardScRsp = 329,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdTakePromotionRewardCsReq)
+    CmdTakePromotionRewardCsReq = 325,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdUnlockAvatarSkinScNotify)
+    CmdUnlockAvatarSkinScNotify = 399,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdMarkAvatarScRsp)
+    CmdMarkAvatarScRsp = 393,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdUnlockSkilltreeScRsp)
+    CmdUnlockSkilltreeScRsp = 353,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdGetAvatarDataScRsp)
+    CmdGetAvatarDataScRsp = 320,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdTakeOffEquipmentCsReq)
+    CmdTakeOffEquipmentCsReq = 347,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdAddAvatarScNotify)
+    CmdAddAvatarScNotify = 330,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdTakeOffRelicCsReq)
+    CmdTakeOffRelicCsReq = 319,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdRankUpAvatarScRsp)
+    CmdRankUpAvatarScRsp = 348,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdUnlockSkilltreeCsReq)
+    CmdUnlockSkilltreeCsReq = 339,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdPromoteAvatarScRsp)
+    CmdPromoteAvatarScRsp = 337,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdTakeOffAvatarSkinScRsp)
+    CmdTakeOffAvatarSkinScRsp = 383,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdTakeOffAvatarSkinCsReq)
+    CmdTakeOffAvatarSkinCsReq = 373,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdAvatarExpUpCsReq)
+    CmdAvatarExpUpCsReq = 303,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdRankUpAvatarCsReq)
+    CmdRankUpAvatarCsReq = 375,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdDressAvatarSkinCsReq)
+    CmdDressAvatarSkinCsReq = 333,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdDressAvatarScRsp)
+    CmdDressAvatarScRsp = 316,
     // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdMarkAvatarCsReq)
-    CmdMarkAvatarCsReq = 362,
+    CmdMarkAvatarCsReq = 309,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdPromoteAvatarCsReq)
+    CmdPromoteAvatarCsReq = 334,
 }
 
 impl ::protobuf::Enum for CmdAvatarType {
@@ -98,34 +98,34 @@ impl ::protobuf::Enum for CmdAvatarType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdAvatarType> {
         match value {
             0 => ::std::option::Option::Some(CmdAvatarType::CmdAvatarTypeNone),
-            304 => ::std::option::Option::Some(CmdAvatarType::CmdTakePromotionRewardScRsp),
-            371 => ::std::option::Option::Some(CmdAvatarType::CmdGetAvatarDataScRsp),
-            377 => ::std::option::Option::Some(CmdAvatarType::CmdUnlockSkilltreeScRsp),
-            311 => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffAvatarSkinCsReq),
-            360 => ::std::option::Option::Some(CmdAvatarType::CmdDressAvatarSkinCsReq),
-            352 => ::std::option::Option::Some(CmdAvatarType::CmdDressAvatarSkinScRsp),
-            320 => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffRelicCsReq),
-            322 => ::std::option::Option::Some(CmdAvatarType::CmdRankUpAvatarCsReq),
-            310 => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffAvatarSkinScRsp),
-            389 => ::std::option::Option::Some(CmdAvatarType::CmdAddAvatarScNotify),
-            338 => ::std::option::Option::Some(CmdAvatarType::CmdDressAvatarScRsp),
-            305 => ::std::option::Option::Some(CmdAvatarType::CmdDressRelicAvatarCsReq),
-            306 => ::std::option::Option::Some(CmdAvatarType::CmdMarkAvatarScRsp),
-            383 => ::std::option::Option::Some(CmdAvatarType::CmdAvatarExpUpCsReq),
-            366 => ::std::option::Option::Some(CmdAvatarType::CmdRankUpAvatarScRsp),
-            342 => ::std::option::Option::Some(CmdAvatarType::CmdAvatarExpUpScRsp),
-            331 => ::std::option::Option::Some(CmdAvatarType::CmdTakePromotionRewardCsReq),
-            333 => ::std::option::Option::Some(CmdAvatarType::CmdPromoteAvatarCsReq),
-            356 => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffEquipmentScRsp),
-            378 => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffEquipmentCsReq),
-            379 => ::std::option::Option::Some(CmdAvatarType::CmdUnlockSkilltreeCsReq),
-            328 => ::std::option::Option::Some(CmdAvatarType::CmdDressAvatarCsReq),
-            400 => ::std::option::Option::Some(CmdAvatarType::CmdUnlockAvatarSkinScNotify),
-            350 => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffRelicScRsp),
-            345 => ::std::option::Option::Some(CmdAvatarType::CmdDressRelicAvatarScRsp),
-            312 => ::std::option::Option::Some(CmdAvatarType::CmdPromoteAvatarScRsp),
-            398 => ::std::option::Option::Some(CmdAvatarType::CmdGetAvatarDataCsReq),
-            362 => ::std::option::Option::Some(CmdAvatarType::CmdMarkAvatarCsReq),
+            361 => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffRelicScRsp),
+            379 => ::std::option::Option::Some(CmdAvatarType::CmdDressRelicAvatarScRsp),
+            351 => ::std::option::Option::Some(CmdAvatarType::CmdDressAvatarSkinScRsp),
+            346 => ::std::option::Option::Some(CmdAvatarType::CmdAvatarExpUpScRsp),
+            374 => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffEquipmentScRsp),
+            359 => ::std::option::Option::Some(CmdAvatarType::CmdGetAvatarDataCsReq),
+            380 => ::std::option::Option::Some(CmdAvatarType::CmdDressAvatarCsReq),
+            390 => ::std::option::Option::Some(CmdAvatarType::CmdDressRelicAvatarCsReq),
+            329 => ::std::option::Option::Some(CmdAvatarType::CmdTakePromotionRewardScRsp),
+            325 => ::std::option::Option::Some(CmdAvatarType::CmdTakePromotionRewardCsReq),
+            399 => ::std::option::Option::Some(CmdAvatarType::CmdUnlockAvatarSkinScNotify),
+            393 => ::std::option::Option::Some(CmdAvatarType::CmdMarkAvatarScRsp),
+            353 => ::std::option::Option::Some(CmdAvatarType::CmdUnlockSkilltreeScRsp),
+            320 => ::std::option::Option::Some(CmdAvatarType::CmdGetAvatarDataScRsp),
+            347 => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffEquipmentCsReq),
+            330 => ::std::option::Option::Some(CmdAvatarType::CmdAddAvatarScNotify),
+            319 => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffRelicCsReq),
+            348 => ::std::option::Option::Some(CmdAvatarType::CmdRankUpAvatarScRsp),
+            339 => ::std::option::Option::Some(CmdAvatarType::CmdUnlockSkilltreeCsReq),
+            337 => ::std::option::Option::Some(CmdAvatarType::CmdPromoteAvatarScRsp),
+            383 => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffAvatarSkinScRsp),
+            373 => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffAvatarSkinCsReq),
+            303 => ::std::option::Option::Some(CmdAvatarType::CmdAvatarExpUpCsReq),
+            375 => ::std::option::Option::Some(CmdAvatarType::CmdRankUpAvatarCsReq),
+            333 => ::std::option::Option::Some(CmdAvatarType::CmdDressAvatarSkinCsReq),
+            316 => ::std::option::Option::Some(CmdAvatarType::CmdDressAvatarScRsp),
+            309 => ::std::option::Option::Some(CmdAvatarType::CmdMarkAvatarCsReq),
+            334 => ::std::option::Option::Some(CmdAvatarType::CmdPromoteAvatarCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -133,68 +133,68 @@ impl ::protobuf::Enum for CmdAvatarType {
     fn from_str(str: &str) -> ::std::option::Option<CmdAvatarType> {
         match str {
             "CmdAvatarTypeNone" => ::std::option::Option::Some(CmdAvatarType::CmdAvatarTypeNone),
-            "CmdTakePromotionRewardScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdTakePromotionRewardScRsp),
-            "CmdGetAvatarDataScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdGetAvatarDataScRsp),
-            "CmdUnlockSkilltreeScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdUnlockSkilltreeScRsp),
-            "CmdTakeOffAvatarSkinCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffAvatarSkinCsReq),
-            "CmdDressAvatarSkinCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdDressAvatarSkinCsReq),
-            "CmdDressAvatarSkinScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdDressAvatarSkinScRsp),
-            "CmdTakeOffRelicCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffRelicCsReq),
-            "CmdRankUpAvatarCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdRankUpAvatarCsReq),
-            "CmdTakeOffAvatarSkinScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffAvatarSkinScRsp),
-            "CmdAddAvatarScNotify" => ::std::option::Option::Some(CmdAvatarType::CmdAddAvatarScNotify),
-            "CmdDressAvatarScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdDressAvatarScRsp),
-            "CmdDressRelicAvatarCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdDressRelicAvatarCsReq),
-            "CmdMarkAvatarScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdMarkAvatarScRsp),
-            "CmdAvatarExpUpCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdAvatarExpUpCsReq),
-            "CmdRankUpAvatarScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdRankUpAvatarScRsp),
-            "CmdAvatarExpUpScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdAvatarExpUpScRsp),
-            "CmdTakePromotionRewardCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdTakePromotionRewardCsReq),
-            "CmdPromoteAvatarCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdPromoteAvatarCsReq),
-            "CmdTakeOffEquipmentScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffEquipmentScRsp),
-            "CmdTakeOffEquipmentCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffEquipmentCsReq),
-            "CmdUnlockSkilltreeCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdUnlockSkilltreeCsReq),
-            "CmdDressAvatarCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdDressAvatarCsReq),
-            "CmdUnlockAvatarSkinScNotify" => ::std::option::Option::Some(CmdAvatarType::CmdUnlockAvatarSkinScNotify),
             "CmdTakeOffRelicScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffRelicScRsp),
             "CmdDressRelicAvatarScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdDressRelicAvatarScRsp),
-            "CmdPromoteAvatarScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdPromoteAvatarScRsp),
+            "CmdDressAvatarSkinScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdDressAvatarSkinScRsp),
+            "CmdAvatarExpUpScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdAvatarExpUpScRsp),
+            "CmdTakeOffEquipmentScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffEquipmentScRsp),
             "CmdGetAvatarDataCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdGetAvatarDataCsReq),
+            "CmdDressAvatarCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdDressAvatarCsReq),
+            "CmdDressRelicAvatarCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdDressRelicAvatarCsReq),
+            "CmdTakePromotionRewardScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdTakePromotionRewardScRsp),
+            "CmdTakePromotionRewardCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdTakePromotionRewardCsReq),
+            "CmdUnlockAvatarSkinScNotify" => ::std::option::Option::Some(CmdAvatarType::CmdUnlockAvatarSkinScNotify),
+            "CmdMarkAvatarScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdMarkAvatarScRsp),
+            "CmdUnlockSkilltreeScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdUnlockSkilltreeScRsp),
+            "CmdGetAvatarDataScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdGetAvatarDataScRsp),
+            "CmdTakeOffEquipmentCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffEquipmentCsReq),
+            "CmdAddAvatarScNotify" => ::std::option::Option::Some(CmdAvatarType::CmdAddAvatarScNotify),
+            "CmdTakeOffRelicCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffRelicCsReq),
+            "CmdRankUpAvatarScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdRankUpAvatarScRsp),
+            "CmdUnlockSkilltreeCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdUnlockSkilltreeCsReq),
+            "CmdPromoteAvatarScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdPromoteAvatarScRsp),
+            "CmdTakeOffAvatarSkinScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffAvatarSkinScRsp),
+            "CmdTakeOffAvatarSkinCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffAvatarSkinCsReq),
+            "CmdAvatarExpUpCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdAvatarExpUpCsReq),
+            "CmdRankUpAvatarCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdRankUpAvatarCsReq),
+            "CmdDressAvatarSkinCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdDressAvatarSkinCsReq),
+            "CmdDressAvatarScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdDressAvatarScRsp),
             "CmdMarkAvatarCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdMarkAvatarCsReq),
+            "CmdPromoteAvatarCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdPromoteAvatarCsReq),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdAvatarType] = &[
         CmdAvatarType::CmdAvatarTypeNone,
-        CmdAvatarType::CmdTakePromotionRewardScRsp,
-        CmdAvatarType::CmdGetAvatarDataScRsp,
-        CmdAvatarType::CmdUnlockSkilltreeScRsp,
-        CmdAvatarType::CmdTakeOffAvatarSkinCsReq,
-        CmdAvatarType::CmdDressAvatarSkinCsReq,
-        CmdAvatarType::CmdDressAvatarSkinScRsp,
-        CmdAvatarType::CmdTakeOffRelicCsReq,
-        CmdAvatarType::CmdRankUpAvatarCsReq,
-        CmdAvatarType::CmdTakeOffAvatarSkinScRsp,
-        CmdAvatarType::CmdAddAvatarScNotify,
-        CmdAvatarType::CmdDressAvatarScRsp,
-        CmdAvatarType::CmdDressRelicAvatarCsReq,
-        CmdAvatarType::CmdMarkAvatarScRsp,
-        CmdAvatarType::CmdAvatarExpUpCsReq,
-        CmdAvatarType::CmdRankUpAvatarScRsp,
-        CmdAvatarType::CmdAvatarExpUpScRsp,
-        CmdAvatarType::CmdTakePromotionRewardCsReq,
-        CmdAvatarType::CmdPromoteAvatarCsReq,
-        CmdAvatarType::CmdTakeOffEquipmentScRsp,
-        CmdAvatarType::CmdTakeOffEquipmentCsReq,
-        CmdAvatarType::CmdUnlockSkilltreeCsReq,
-        CmdAvatarType::CmdDressAvatarCsReq,
-        CmdAvatarType::CmdUnlockAvatarSkinScNotify,
         CmdAvatarType::CmdTakeOffRelicScRsp,
         CmdAvatarType::CmdDressRelicAvatarScRsp,
-        CmdAvatarType::CmdPromoteAvatarScRsp,
+        CmdAvatarType::CmdDressAvatarSkinScRsp,
+        CmdAvatarType::CmdAvatarExpUpScRsp,
+        CmdAvatarType::CmdTakeOffEquipmentScRsp,
         CmdAvatarType::CmdGetAvatarDataCsReq,
+        CmdAvatarType::CmdDressAvatarCsReq,
+        CmdAvatarType::CmdDressRelicAvatarCsReq,
+        CmdAvatarType::CmdTakePromotionRewardScRsp,
+        CmdAvatarType::CmdTakePromotionRewardCsReq,
+        CmdAvatarType::CmdUnlockAvatarSkinScNotify,
+        CmdAvatarType::CmdMarkAvatarScRsp,
+        CmdAvatarType::CmdUnlockSkilltreeScRsp,
+        CmdAvatarType::CmdGetAvatarDataScRsp,
+        CmdAvatarType::CmdTakeOffEquipmentCsReq,
+        CmdAvatarType::CmdAddAvatarScNotify,
+        CmdAvatarType::CmdTakeOffRelicCsReq,
+        CmdAvatarType::CmdRankUpAvatarScRsp,
+        CmdAvatarType::CmdUnlockSkilltreeCsReq,
+        CmdAvatarType::CmdPromoteAvatarScRsp,
+        CmdAvatarType::CmdTakeOffAvatarSkinScRsp,
+        CmdAvatarType::CmdTakeOffAvatarSkinCsReq,
+        CmdAvatarType::CmdAvatarExpUpCsReq,
+        CmdAvatarType::CmdRankUpAvatarCsReq,
+        CmdAvatarType::CmdDressAvatarSkinCsReq,
+        CmdAvatarType::CmdDressAvatarScRsp,
         CmdAvatarType::CmdMarkAvatarCsReq,
+        CmdAvatarType::CmdPromoteAvatarCsReq,
     ];
 }
 
@@ -207,34 +207,34 @@ impl ::protobuf::EnumFull for CmdAvatarType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdAvatarType::CmdAvatarTypeNone => 0,
-            CmdAvatarType::CmdTakePromotionRewardScRsp => 1,
-            CmdAvatarType::CmdGetAvatarDataScRsp => 2,
-            CmdAvatarType::CmdUnlockSkilltreeScRsp => 3,
-            CmdAvatarType::CmdTakeOffAvatarSkinCsReq => 4,
-            CmdAvatarType::CmdDressAvatarSkinCsReq => 5,
-            CmdAvatarType::CmdDressAvatarSkinScRsp => 6,
-            CmdAvatarType::CmdTakeOffRelicCsReq => 7,
-            CmdAvatarType::CmdRankUpAvatarCsReq => 8,
-            CmdAvatarType::CmdTakeOffAvatarSkinScRsp => 9,
-            CmdAvatarType::CmdAddAvatarScNotify => 10,
-            CmdAvatarType::CmdDressAvatarScRsp => 11,
-            CmdAvatarType::CmdDressRelicAvatarCsReq => 12,
-            CmdAvatarType::CmdMarkAvatarScRsp => 13,
-            CmdAvatarType::CmdAvatarExpUpCsReq => 14,
-            CmdAvatarType::CmdRankUpAvatarScRsp => 15,
-            CmdAvatarType::CmdAvatarExpUpScRsp => 16,
-            CmdAvatarType::CmdTakePromotionRewardCsReq => 17,
-            CmdAvatarType::CmdPromoteAvatarCsReq => 18,
-            CmdAvatarType::CmdTakeOffEquipmentScRsp => 19,
-            CmdAvatarType::CmdTakeOffEquipmentCsReq => 20,
-            CmdAvatarType::CmdUnlockSkilltreeCsReq => 21,
-            CmdAvatarType::CmdDressAvatarCsReq => 22,
-            CmdAvatarType::CmdUnlockAvatarSkinScNotify => 23,
-            CmdAvatarType::CmdTakeOffRelicScRsp => 24,
-            CmdAvatarType::CmdDressRelicAvatarScRsp => 25,
-            CmdAvatarType::CmdPromoteAvatarScRsp => 26,
-            CmdAvatarType::CmdGetAvatarDataCsReq => 27,
-            CmdAvatarType::CmdMarkAvatarCsReq => 28,
+            CmdAvatarType::CmdTakeOffRelicScRsp => 1,
+            CmdAvatarType::CmdDressRelicAvatarScRsp => 2,
+            CmdAvatarType::CmdDressAvatarSkinScRsp => 3,
+            CmdAvatarType::CmdAvatarExpUpScRsp => 4,
+            CmdAvatarType::CmdTakeOffEquipmentScRsp => 5,
+            CmdAvatarType::CmdGetAvatarDataCsReq => 6,
+            CmdAvatarType::CmdDressAvatarCsReq => 7,
+            CmdAvatarType::CmdDressRelicAvatarCsReq => 8,
+            CmdAvatarType::CmdTakePromotionRewardScRsp => 9,
+            CmdAvatarType::CmdTakePromotionRewardCsReq => 10,
+            CmdAvatarType::CmdUnlockAvatarSkinScNotify => 11,
+            CmdAvatarType::CmdMarkAvatarScRsp => 12,
+            CmdAvatarType::CmdUnlockSkilltreeScRsp => 13,
+            CmdAvatarType::CmdGetAvatarDataScRsp => 14,
+            CmdAvatarType::CmdTakeOffEquipmentCsReq => 15,
+            CmdAvatarType::CmdAddAvatarScNotify => 16,
+            CmdAvatarType::CmdTakeOffRelicCsReq => 17,
+            CmdAvatarType::CmdRankUpAvatarScRsp => 18,
+            CmdAvatarType::CmdUnlockSkilltreeCsReq => 19,
+            CmdAvatarType::CmdPromoteAvatarScRsp => 20,
+            CmdAvatarType::CmdTakeOffAvatarSkinScRsp => 21,
+            CmdAvatarType::CmdTakeOffAvatarSkinCsReq => 22,
+            CmdAvatarType::CmdAvatarExpUpCsReq => 23,
+            CmdAvatarType::CmdRankUpAvatarCsReq => 24,
+            CmdAvatarType::CmdDressAvatarSkinCsReq => 25,
+            CmdAvatarType::CmdDressAvatarScRsp => 26,
+            CmdAvatarType::CmdMarkAvatarCsReq => 27,
+            CmdAvatarType::CmdPromoteAvatarCsReq => 28,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -254,25 +254,25 @@ impl CmdAvatarType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13CmdAvatarType.proto*\xd1\x06\n\rCmdAvatarType\x12\x15\n\x11CmdAvat\
-    arTypeNone\x10\0\x12\x20\n\x1bCmdTakePromotionRewardScRsp\x10\xb0\x02\
-    \x12\x1a\n\x15CmdGetAvatarDataScRsp\x10\xf3\x02\x12\x1c\n\x17CmdUnlockSk\
-    illtreeScRsp\x10\xf9\x02\x12\x1e\n\x19CmdTakeOffAvatarSkinCsReq\x10\xb7\
-    \x02\x12\x1c\n\x17CmdDressAvatarSkinCsReq\x10\xe8\x02\x12\x1c\n\x17CmdDr\
-    essAvatarSkinScRsp\x10\xe0\x02\x12\x19\n\x14CmdTakeOffRelicCsReq\x10\xc0\
-    \x02\x12\x19\n\x14CmdRankUpAvatarCsReq\x10\xc2\x02\x12\x1e\n\x19CmdTakeO\
-    ffAvatarSkinScRsp\x10\xb6\x02\x12\x19\n\x14CmdAddAvatarScNotify\x10\x85\
-    \x03\x12\x18\n\x13CmdDressAvatarScRsp\x10\xd2\x02\x12\x1d\n\x18CmdDressR\
-    elicAvatarCsReq\x10\xb1\x02\x12\x17\n\x12CmdMarkAvatarScRsp\x10\xb2\x02\
-    \x12\x18\n\x13CmdAvatarExpUpCsReq\x10\xff\x02\x12\x19\n\x14CmdRankUpAvat\
-    arScRsp\x10\xee\x02\x12\x18\n\x13CmdAvatarExpUpScRsp\x10\xd6\x02\x12\x20\
-    \n\x1bCmdTakePromotionRewardCsReq\x10\xcb\x02\x12\x1a\n\x15CmdPromoteAva\
-    tarCsReq\x10\xcd\x02\x12\x1d\n\x18CmdTakeOffEquipmentScRsp\x10\xe4\x02\
-    \x12\x1d\n\x18CmdTakeOffEquipmentCsReq\x10\xfa\x02\x12\x1c\n\x17CmdUnloc\
-    kSkilltreeCsReq\x10\xfb\x02\x12\x18\n\x13CmdDressAvatarCsReq\x10\xc8\x02\
-    \x12\x20\n\x1bCmdUnlockAvatarSkinScNotify\x10\x90\x03\x12\x19\n\x14CmdTa\
-    keOffRelicScRsp\x10\xde\x02\x12\x1d\n\x18CmdDressRelicAvatarScRsp\x10\
-    \xd9\x02\x12\x1a\n\x15CmdPromoteAvatarScRsp\x10\xb8\x02\x12\x1a\n\x15Cmd\
-    GetAvatarDataCsReq\x10\x8e\x03\x12\x17\n\x12CmdMarkAvatarCsReq\x10\xea\
+    arTypeNone\x10\0\x12\x19\n\x14CmdTakeOffRelicScRsp\x10\xe9\x02\x12\x1d\n\
+    \x18CmdDressRelicAvatarScRsp\x10\xfb\x02\x12\x1c\n\x17CmdDressAvatarSkin\
+    ScRsp\x10\xdf\x02\x12\x18\n\x13CmdAvatarExpUpScRsp\x10\xda\x02\x12\x1d\n\
+    \x18CmdTakeOffEquipmentScRsp\x10\xf6\x02\x12\x1a\n\x15CmdGetAvatarDataCs\
+    Req\x10\xe7\x02\x12\x18\n\x13CmdDressAvatarCsReq\x10\xfc\x02\x12\x1d\n\
+    \x18CmdDressRelicAvatarCsReq\x10\x86\x03\x12\x20\n\x1bCmdTakePromotionRe\
+    wardScRsp\x10\xc9\x02\x12\x20\n\x1bCmdTakePromotionRewardCsReq\x10\xc5\
+    \x02\x12\x20\n\x1bCmdUnlockAvatarSkinScNotify\x10\x8f\x03\x12\x17\n\x12C\
+    mdMarkAvatarScRsp\x10\x89\x03\x12\x1c\n\x17CmdUnlockSkilltreeScRsp\x10\
+    \xe1\x02\x12\x1a\n\x15CmdGetAvatarDataScRsp\x10\xc0\x02\x12\x1d\n\x18Cmd\
+    TakeOffEquipmentCsReq\x10\xdb\x02\x12\x19\n\x14CmdAddAvatarScNotify\x10\
+    \xca\x02\x12\x19\n\x14CmdTakeOffRelicCsReq\x10\xbf\x02\x12\x19\n\x14CmdR\
+    ankUpAvatarScRsp\x10\xdc\x02\x12\x1c\n\x17CmdUnlockSkilltreeCsReq\x10\
+    \xd3\x02\x12\x1a\n\x15CmdPromoteAvatarScRsp\x10\xd1\x02\x12\x1e\n\x19Cmd\
+    TakeOffAvatarSkinScRsp\x10\xff\x02\x12\x1e\n\x19CmdTakeOffAvatarSkinCsRe\
+    q\x10\xf5\x02\x12\x18\n\x13CmdAvatarExpUpCsReq\x10\xaf\x02\x12\x19\n\x14\
+    CmdRankUpAvatarCsReq\x10\xf7\x02\x12\x1c\n\x17CmdDressAvatarSkinCsReq\
+    \x10\xcd\x02\x12\x18\n\x13CmdDressAvatarScRsp\x10\xbc\x02\x12\x17\n\x12C\
+    mdMarkAvatarCsReq\x10\xb5\x02\x12\x1a\n\x15CmdPromoteAvatarCsReq\x10\xce\
     \x02b\x06proto3\
 ";
 

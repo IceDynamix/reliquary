@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RegionStopScNotify {
     // message fields
-    // @@protoc_insertion_point(field:RegionStopScNotify.GHENHJPJJLK)
-    pub GHENHJPJJLK: i64,
-    // @@protoc_insertion_point(field:RegionStopScNotify.MDAHNIKKAHI)
-    pub MDAHNIKKAHI: i64,
+    // @@protoc_insertion_point(field:RegionStopScNotify.CDDDDBFGKFK)
+    pub CDDDDBFGKFK: i64,
+    // @@protoc_insertion_point(field:RegionStopScNotify.BIFMNHDDACC)
+    pub BIFMNHDDACC: i64,
     // special fields
     // @@protoc_insertion_point(special_field:RegionStopScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl RegionStopScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GHENHJPJJLK",
-            |m: &RegionStopScNotify| { &m.GHENHJPJJLK },
-            |m: &mut RegionStopScNotify| { &mut m.GHENHJPJJLK },
+            "CDDDDBFGKFK",
+            |m: &RegionStopScNotify| { &m.CDDDDBFGKFK },
+            |m: &mut RegionStopScNotify| { &mut m.CDDDDBFGKFK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MDAHNIKKAHI",
-            |m: &RegionStopScNotify| { &m.MDAHNIKKAHI },
-            |m: &mut RegionStopScNotify| { &mut m.MDAHNIKKAHI },
+            "BIFMNHDDACC",
+            |m: &RegionStopScNotify| { &m.BIFMNHDDACC },
+            |m: &mut RegionStopScNotify| { &mut m.BIFMNHDDACC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RegionStopScNotify>(
             "RegionStopScNotify",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for RegionStopScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.GHENHJPJJLK = is.read_int64()?;
+                96 => {
+                    self.CDDDDBFGKFK = is.read_int64()?;
                 },
                 56 => {
-                    self.MDAHNIKKAHI = is.read_int64()?;
+                    self.BIFMNHDDACC = is.read_int64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for RegionStopScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GHENHJPJJLK != 0 {
-            my_size += ::protobuf::rt::int64_size(14, self.GHENHJPJJLK);
+        if self.CDDDDBFGKFK != 0 {
+            my_size += ::protobuf::rt::int64_size(12, self.CDDDDBFGKFK);
         }
-        if self.MDAHNIKKAHI != 0 {
-            my_size += ::protobuf::rt::int64_size(7, self.MDAHNIKKAHI);
+        if self.BIFMNHDDACC != 0 {
+            my_size += ::protobuf::rt::int64_size(7, self.BIFMNHDDACC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for RegionStopScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GHENHJPJJLK != 0 {
-            os.write_int64(14, self.GHENHJPJJLK)?;
+        if self.CDDDDBFGKFK != 0 {
+            os.write_int64(12, self.CDDDDBFGKFK)?;
         }
-        if self.MDAHNIKKAHI != 0 {
-            os.write_int64(7, self.MDAHNIKKAHI)?;
+        if self.BIFMNHDDACC != 0 {
+            os.write_int64(7, self.BIFMNHDDACC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for RegionStopScNotify {
     }
 
     fn clear(&mut self) {
-        self.GHENHJPJJLK = 0;
-        self.MDAHNIKKAHI = 0;
+        self.CDDDDBFGKFK = 0;
+        self.BIFMNHDDACC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RegionStopScNotify {
         static instance: RegionStopScNotify = RegionStopScNotify {
-            GHENHJPJJLK: 0,
-            MDAHNIKKAHI: 0,
+            CDDDDBFGKFK: 0,
+            BIFMNHDDACC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for RegionStopScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18RegionStopScNotify.proto\"X\n\x12RegionStopScNotify\x12\x20\n\x0bG\
-    HENHJPJJLK\x18\x0e\x20\x01(\x03R\x0bGHENHJPJJLK\x12\x20\n\x0bMDAHNIKKAHI\
-    \x18\x07\x20\x01(\x03R\x0bMDAHNIKKAHIb\x06proto3\
+    \n\x18RegionStopScNotify.proto\"X\n\x12RegionStopScNotify\x12\x20\n\x0bC\
+    DDDDBFGKFK\x18\x0c\x20\x01(\x03R\x0bCDDDDBFGKFK\x12\x20\n\x0bBIFMNHDDACC\
+    \x18\x07\x20\x01(\x03R\x0bBIFMNHDDACCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

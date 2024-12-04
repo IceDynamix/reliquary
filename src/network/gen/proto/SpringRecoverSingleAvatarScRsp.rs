@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SpringRecoverSingleAvatarScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SpringRecoverSingleAvatarScRsp.avatar_type)
-    pub avatar_type: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
-    // @@protoc_insertion_point(field:SpringRecoverSingleAvatarScRsp.id)
-    pub id: u32,
     // @@protoc_insertion_point(field:SpringRecoverSingleAvatarScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:SpringRecoverSingleAvatarScRsp.id)
+    pub id: u32,
     // @@protoc_insertion_point(field:SpringRecoverSingleAvatarScRsp.hp)
     pub hp: u32,
+    // @@protoc_insertion_point(field:SpringRecoverSingleAvatarScRsp.avatar_type)
+    pub avatar_type: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
     // special fields
     // @@protoc_insertion_point(special_field:SpringRecoverSingleAvatarScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl SpringRecoverSingleAvatarScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "avatar_type",
-            |m: &SpringRecoverSingleAvatarScRsp| { &m.avatar_type },
-            |m: &mut SpringRecoverSingleAvatarScRsp| { &mut m.avatar_type },
+            "retcode",
+            |m: &SpringRecoverSingleAvatarScRsp| { &m.retcode },
+            |m: &mut SpringRecoverSingleAvatarScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "id",
@@ -67,14 +67,14 @@ impl SpringRecoverSingleAvatarScRsp {
             |m: &mut SpringRecoverSingleAvatarScRsp| { &mut m.id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &SpringRecoverSingleAvatarScRsp| { &m.retcode },
-            |m: &mut SpringRecoverSingleAvatarScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "hp",
             |m: &SpringRecoverSingleAvatarScRsp| { &m.hp },
             |m: &mut SpringRecoverSingleAvatarScRsp| { &mut m.hp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "avatar_type",
+            |m: &SpringRecoverSingleAvatarScRsp| { &m.avatar_type },
+            |m: &mut SpringRecoverSingleAvatarScRsp| { &mut m.avatar_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SpringRecoverSingleAvatarScRsp>(
             "SpringRecoverSingleAvatarScRsp",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for SpringRecoverSingleAvatarScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.avatar_type = is.read_enum_or_unknown()?;
-                },
-                56 => {
-                    self.id = is.read_uint32()?;
-                },
-                8 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                72 => {
+                48 => {
+                    self.id = is.read_uint32()?;
+                },
+                88 => {
                     self.hp = is.read_uint32()?;
+                },
+                112 => {
+                    self.avatar_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,17 +118,17 @@ impl ::protobuf::Message for SpringRecoverSingleAvatarScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(10, self.avatar_type.value());
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.id);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.id);
         }
         if self.hp != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.hp);
+            my_size += ::protobuf::rt::uint32_size(11, self.hp);
+        }
+        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(14, self.avatar_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for SpringRecoverSingleAvatarScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
+        if self.retcode != 0 {
+            os.write_uint32(5, self.retcode)?;
         }
         if self.id != 0 {
-            os.write_uint32(7, self.id)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(6, self.id)?;
         }
         if self.hp != 0 {
-            os.write_uint32(9, self.hp)?;
+            os.write_uint32(11, self.hp)?;
+        }
+        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for SpringRecoverSingleAvatarScRsp {
     }
 
     fn clear(&mut self) {
-        self.avatar_type = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE);
-        self.id = 0;
         self.retcode = 0;
+        self.id = 0;
         self.hp = 0;
+        self.avatar_type = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SpringRecoverSingleAvatarScRsp {
         static instance: SpringRecoverSingleAvatarScRsp = SpringRecoverSingleAvatarScRsp {
-            avatar_type: ::protobuf::EnumOrUnknown::from_i32(0),
-            id: 0,
             retcode: 0,
+            id: 0,
             hp: 0,
+            avatar_type: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for SpringRecoverSingleAvatarScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$SpringRecoverSingleAvatarScRsp.proto\x1a\x10AvatarType.proto\"\x88\
-    \x01\n\x1eSpringRecoverSingleAvatarScRsp\x12,\n\x0bavatar_type\x18\n\x20\
-    \x01(\x0e2\x0b.AvatarTypeR\navatarType\x12\x0e\n\x02id\x18\x07\x20\x01(\
-    \rR\x02id\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12\x0e\n\
-    \x02hp\x18\t\x20\x01(\rR\x02hpb\x06proto3\
+    \x01\n\x1eSpringRecoverSingleAvatarScRsp\x12\x18\n\x07retcode\x18\x05\
+    \x20\x01(\rR\x07retcode\x12\x0e\n\x02id\x18\x06\x20\x01(\rR\x02id\x12\
+    \x0e\n\x02hp\x18\x0b\x20\x01(\rR\x02hp\x12,\n\x0bavatar_type\x18\x0e\x20\
+    \x01(\x0e2\x0b.AvatarTypeR\navatarTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

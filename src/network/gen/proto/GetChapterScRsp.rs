@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetChapterScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetChapterScRsp.MBIICLDDNFF)
-    pub MBIICLDDNFF: ::std::vec::Vec<super::FBMELLHHLMJ::FBMELLHHLMJ>,
-    // @@protoc_insertion_point(field:GetChapterScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:GetChapterScRsp.FALDHGHICGI)
-    pub FALDHGHICGI: u32,
+    // @@protoc_insertion_point(field:GetChapterScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:GetChapterScRsp.FIIMDIGFDNJ)
+    pub FIIMDIGFDNJ: u32,
+    // @@protoc_insertion_point(field:GetChapterScRsp.FCLNMCPLMEG)
+    pub FCLNMCPLMEG: ::std::vec::Vec<super::OBEMPHOCKAH::OBEMPHOCKAH>,
     // special fields
     // @@protoc_insertion_point(special_field:GetChapterScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl GetChapterScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ADADHIHDHJC",
+            |m: &GetChapterScRsp| { &m.ADADHIHDHJC },
+            |m: &mut GetChapterScRsp| { &mut m.ADADHIHDHJC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FIIMDIGFDNJ",
+            |m: &GetChapterScRsp| { &m.FIIMDIGFDNJ },
+            |m: &mut GetChapterScRsp| { &mut m.FIIMDIGFDNJ },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MBIICLDDNFF",
-            |m: &GetChapterScRsp| { &m.MBIICLDDNFF },
-            |m: &mut GetChapterScRsp| { &mut m.MBIICLDDNFF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetChapterScRsp| { &m.retcode },
-            |m: &mut GetChapterScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FALDHGHICGI",
-            |m: &GetChapterScRsp| { &m.FALDHGHICGI },
-            |m: &mut GetChapterScRsp| { &mut m.FALDHGHICGI },
+            "FCLNMCPLMEG",
+            |m: &GetChapterScRsp| { &m.FCLNMCPLMEG },
+            |m: &mut GetChapterScRsp| { &mut m.FCLNMCPLMEG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetChapterScRsp>(
             "GetChapterScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for GetChapterScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    self.MBIICLDDNFF.push(is.read_message()?);
+                16 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                40 => {
-                    self.retcode = is.read_uint32()?;
+                56 => {
+                    self.FIIMDIGFDNJ = is.read_uint32()?;
                 },
-                48 => {
-                    self.FALDHGHICGI = is.read_uint32()?;
+                26 => {
+                    self.FCLNMCPLMEG.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,31 +108,31 @@ impl ::protobuf::Message for GetChapterScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.MBIICLDDNFF {
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.ADADHIHDHJC);
+        }
+        if self.FIIMDIGFDNJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.FIIMDIGFDNJ);
+        }
+        for value in &self.FCLNMCPLMEG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
-        }
-        if self.FALDHGHICGI != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.FALDHGHICGI);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.MBIICLDDNFF {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(2, self.ADADHIHDHJC)?;
+        }
+        if self.FIIMDIGFDNJ != 0 {
+            os.write_uint32(7, self.FIIMDIGFDNJ)?;
+        }
+        for v in &self.FCLNMCPLMEG {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
-        if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
-        }
-        if self.FALDHGHICGI != 0 {
-            os.write_uint32(6, self.FALDHGHICGI)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,17 +150,17 @@ impl ::protobuf::Message for GetChapterScRsp {
     }
 
     fn clear(&mut self) {
-        self.MBIICLDDNFF.clear();
-        self.retcode = 0;
-        self.FALDHGHICGI = 0;
+        self.ADADHIHDHJC = 0;
+        self.FIIMDIGFDNJ = 0;
+        self.FCLNMCPLMEG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetChapterScRsp {
         static instance: GetChapterScRsp = GetChapterScRsp {
-            MBIICLDDNFF: ::std::vec::Vec::new(),
-            retcode: 0,
-            FALDHGHICGI: 0,
+            ADADHIHDHJC: 0,
+            FIIMDIGFDNJ: 0,
+            FCLNMCPLMEG: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for GetChapterScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15GetChapterScRsp.proto\x1a\x11FBMELLHHLMJ.proto\"}\n\x0fGetChapterS\
-    cRsp\x12.\n\x0bMBIICLDDNFF\x18\r\x20\x03(\x0b2\x0c.FBMELLHHLMJR\x0bMBIIC\
-    LDDNFF\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12\x20\n\x0b\
-    FALDHGHICGI\x18\x06\x20\x01(\rR\x0bFALDHGHICGIb\x06proto3\
+    \n\x15GetChapterScRsp.proto\x1a\x11OBEMPHOCKAH.proto\"\x85\x01\n\x0fGetC\
+    hapterScRsp\x12\x20\n\x0bADADHIHDHJC\x18\x02\x20\x01(\rR\x0bADADHIHDHJC\
+    \x12\x20\n\x0bFIIMDIGFDNJ\x18\x07\x20\x01(\rR\x0bFIIMDIGFDNJ\x12.\n\x0bF\
+    CLNMCPLMEG\x18\x03\x20\x03(\x0b2\x0c.OBEMPHOCKAHR\x0bFCLNMCPLMEGb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::FBMELLHHLMJ::file_descriptor().clone());
+            deps.push(super::OBEMPHOCKAH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetChapterScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

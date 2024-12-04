@@ -30,34 +30,34 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdTalkEventType {
     // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdTalkRewardTypeNone)
     CmdTalkRewardTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdFinishFirstTalkByPerformanceNpcScRsp)
-    CmdFinishFirstTalkByPerformanceNpcScRsp = 2122,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdGetFirstTalkByPerformanceNpcCsReq)
-    CmdGetFirstTalkByPerformanceNpcCsReq = 2178,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdGetFirstTalkNpcScRsp)
-    CmdGetFirstTalkNpcScRsp = 2177,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdTakeTalkRewardScRsp)
-    CmdTakeTalkRewardScRsp = 2142,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdGetNpcTakenRewardScRsp)
-    CmdGetNpcTakenRewardScRsp = 2171,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdTakeTalkRewardCsReq)
-    CmdTakeTalkRewardCsReq = 2183,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdSelectInclinationTextCsReq)
-    CmdSelectInclinationTextCsReq = 2128,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdSelectInclinationTextScRsp)
-    CmdSelectInclinationTextScRsp = 2138,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdGetFirstTalkNpcCsReq)
-    CmdGetFirstTalkNpcCsReq = 2179,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdFinishFirstTalkNpcScRsp)
-    CmdFinishFirstTalkNpcScRsp = 2112,
     // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdFinishFirstTalkByPerformanceNpcCsReq)
-    CmdFinishFirstTalkByPerformanceNpcCsReq = 2189,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdGetNpcTakenRewardCsReq)
-    CmdGetNpcTakenRewardCsReq = 2198,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdGetFirstTalkByPerformanceNpcScRsp)
-    CmdGetFirstTalkByPerformanceNpcScRsp = 2156,
+    CmdFinishFirstTalkByPerformanceNpcCsReq = 2130,
     // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdFinishFirstTalkNpcCsReq)
-    CmdFinishFirstTalkNpcCsReq = 2133,
+    CmdFinishFirstTalkNpcCsReq = 2134,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdGetFirstTalkNpcCsReq)
+    CmdGetFirstTalkNpcCsReq = 2139,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdGetNpcTakenRewardCsReq)
+    CmdGetNpcTakenRewardCsReq = 2159,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdSelectInclinationTextScRsp)
+    CmdSelectInclinationTextScRsp = 2116,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdFinishFirstTalkNpcScRsp)
+    CmdFinishFirstTalkNpcScRsp = 2137,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdTakeTalkRewardCsReq)
+    CmdTakeTalkRewardCsReq = 2103,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdSelectInclinationTextCsReq)
+    CmdSelectInclinationTextCsReq = 2180,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdGetFirstTalkByPerformanceNpcScRsp)
+    CmdGetFirstTalkByPerformanceNpcScRsp = 2174,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdGetFirstTalkByPerformanceNpcCsReq)
+    CmdGetFirstTalkByPerformanceNpcCsReq = 2147,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdGetNpcTakenRewardScRsp)
+    CmdGetNpcTakenRewardScRsp = 2120,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdGetFirstTalkNpcScRsp)
+    CmdGetFirstTalkNpcScRsp = 2153,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdFinishFirstTalkByPerformanceNpcScRsp)
+    CmdFinishFirstTalkByPerformanceNpcScRsp = 2175,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdTakeTalkRewardScRsp)
+    CmdTakeTalkRewardScRsp = 2146,
 }
 
 impl ::protobuf::Enum for CmdTalkEventType {
@@ -70,20 +70,20 @@ impl ::protobuf::Enum for CmdTalkEventType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdTalkEventType> {
         match value {
             0 => ::std::option::Option::Some(CmdTalkEventType::CmdTalkRewardTypeNone),
-            2122 => ::std::option::Option::Some(CmdTalkEventType::CmdFinishFirstTalkByPerformanceNpcScRsp),
-            2178 => ::std::option::Option::Some(CmdTalkEventType::CmdGetFirstTalkByPerformanceNpcCsReq),
-            2177 => ::std::option::Option::Some(CmdTalkEventType::CmdGetFirstTalkNpcScRsp),
-            2142 => ::std::option::Option::Some(CmdTalkEventType::CmdTakeTalkRewardScRsp),
-            2171 => ::std::option::Option::Some(CmdTalkEventType::CmdGetNpcTakenRewardScRsp),
-            2183 => ::std::option::Option::Some(CmdTalkEventType::CmdTakeTalkRewardCsReq),
-            2128 => ::std::option::Option::Some(CmdTalkEventType::CmdSelectInclinationTextCsReq),
-            2138 => ::std::option::Option::Some(CmdTalkEventType::CmdSelectInclinationTextScRsp),
-            2179 => ::std::option::Option::Some(CmdTalkEventType::CmdGetFirstTalkNpcCsReq),
-            2112 => ::std::option::Option::Some(CmdTalkEventType::CmdFinishFirstTalkNpcScRsp),
-            2189 => ::std::option::Option::Some(CmdTalkEventType::CmdFinishFirstTalkByPerformanceNpcCsReq),
-            2198 => ::std::option::Option::Some(CmdTalkEventType::CmdGetNpcTakenRewardCsReq),
-            2156 => ::std::option::Option::Some(CmdTalkEventType::CmdGetFirstTalkByPerformanceNpcScRsp),
-            2133 => ::std::option::Option::Some(CmdTalkEventType::CmdFinishFirstTalkNpcCsReq),
+            2130 => ::std::option::Option::Some(CmdTalkEventType::CmdFinishFirstTalkByPerformanceNpcCsReq),
+            2134 => ::std::option::Option::Some(CmdTalkEventType::CmdFinishFirstTalkNpcCsReq),
+            2139 => ::std::option::Option::Some(CmdTalkEventType::CmdGetFirstTalkNpcCsReq),
+            2159 => ::std::option::Option::Some(CmdTalkEventType::CmdGetNpcTakenRewardCsReq),
+            2116 => ::std::option::Option::Some(CmdTalkEventType::CmdSelectInclinationTextScRsp),
+            2137 => ::std::option::Option::Some(CmdTalkEventType::CmdFinishFirstTalkNpcScRsp),
+            2103 => ::std::option::Option::Some(CmdTalkEventType::CmdTakeTalkRewardCsReq),
+            2180 => ::std::option::Option::Some(CmdTalkEventType::CmdSelectInclinationTextCsReq),
+            2174 => ::std::option::Option::Some(CmdTalkEventType::CmdGetFirstTalkByPerformanceNpcScRsp),
+            2147 => ::std::option::Option::Some(CmdTalkEventType::CmdGetFirstTalkByPerformanceNpcCsReq),
+            2120 => ::std::option::Option::Some(CmdTalkEventType::CmdGetNpcTakenRewardScRsp),
+            2153 => ::std::option::Option::Some(CmdTalkEventType::CmdGetFirstTalkNpcScRsp),
+            2175 => ::std::option::Option::Some(CmdTalkEventType::CmdFinishFirstTalkByPerformanceNpcScRsp),
+            2146 => ::std::option::Option::Some(CmdTalkEventType::CmdTakeTalkRewardScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -91,40 +91,40 @@ impl ::protobuf::Enum for CmdTalkEventType {
     fn from_str(str: &str) -> ::std::option::Option<CmdTalkEventType> {
         match str {
             "CmdTalkRewardTypeNone" => ::std::option::Option::Some(CmdTalkEventType::CmdTalkRewardTypeNone),
-            "CmdFinishFirstTalkByPerformanceNpcScRsp" => ::std::option::Option::Some(CmdTalkEventType::CmdFinishFirstTalkByPerformanceNpcScRsp),
-            "CmdGetFirstTalkByPerformanceNpcCsReq" => ::std::option::Option::Some(CmdTalkEventType::CmdGetFirstTalkByPerformanceNpcCsReq),
-            "CmdGetFirstTalkNpcScRsp" => ::std::option::Option::Some(CmdTalkEventType::CmdGetFirstTalkNpcScRsp),
-            "CmdTakeTalkRewardScRsp" => ::std::option::Option::Some(CmdTalkEventType::CmdTakeTalkRewardScRsp),
-            "CmdGetNpcTakenRewardScRsp" => ::std::option::Option::Some(CmdTalkEventType::CmdGetNpcTakenRewardScRsp),
+            "CmdFinishFirstTalkByPerformanceNpcCsReq" => ::std::option::Option::Some(CmdTalkEventType::CmdFinishFirstTalkByPerformanceNpcCsReq),
+            "CmdFinishFirstTalkNpcCsReq" => ::std::option::Option::Some(CmdTalkEventType::CmdFinishFirstTalkNpcCsReq),
+            "CmdGetFirstTalkNpcCsReq" => ::std::option::Option::Some(CmdTalkEventType::CmdGetFirstTalkNpcCsReq),
+            "CmdGetNpcTakenRewardCsReq" => ::std::option::Option::Some(CmdTalkEventType::CmdGetNpcTakenRewardCsReq),
+            "CmdSelectInclinationTextScRsp" => ::std::option::Option::Some(CmdTalkEventType::CmdSelectInclinationTextScRsp),
+            "CmdFinishFirstTalkNpcScRsp" => ::std::option::Option::Some(CmdTalkEventType::CmdFinishFirstTalkNpcScRsp),
             "CmdTakeTalkRewardCsReq" => ::std::option::Option::Some(CmdTalkEventType::CmdTakeTalkRewardCsReq),
             "CmdSelectInclinationTextCsReq" => ::std::option::Option::Some(CmdTalkEventType::CmdSelectInclinationTextCsReq),
-            "CmdSelectInclinationTextScRsp" => ::std::option::Option::Some(CmdTalkEventType::CmdSelectInclinationTextScRsp),
-            "CmdGetFirstTalkNpcCsReq" => ::std::option::Option::Some(CmdTalkEventType::CmdGetFirstTalkNpcCsReq),
-            "CmdFinishFirstTalkNpcScRsp" => ::std::option::Option::Some(CmdTalkEventType::CmdFinishFirstTalkNpcScRsp),
-            "CmdFinishFirstTalkByPerformanceNpcCsReq" => ::std::option::Option::Some(CmdTalkEventType::CmdFinishFirstTalkByPerformanceNpcCsReq),
-            "CmdGetNpcTakenRewardCsReq" => ::std::option::Option::Some(CmdTalkEventType::CmdGetNpcTakenRewardCsReq),
             "CmdGetFirstTalkByPerformanceNpcScRsp" => ::std::option::Option::Some(CmdTalkEventType::CmdGetFirstTalkByPerformanceNpcScRsp),
-            "CmdFinishFirstTalkNpcCsReq" => ::std::option::Option::Some(CmdTalkEventType::CmdFinishFirstTalkNpcCsReq),
+            "CmdGetFirstTalkByPerformanceNpcCsReq" => ::std::option::Option::Some(CmdTalkEventType::CmdGetFirstTalkByPerformanceNpcCsReq),
+            "CmdGetNpcTakenRewardScRsp" => ::std::option::Option::Some(CmdTalkEventType::CmdGetNpcTakenRewardScRsp),
+            "CmdGetFirstTalkNpcScRsp" => ::std::option::Option::Some(CmdTalkEventType::CmdGetFirstTalkNpcScRsp),
+            "CmdFinishFirstTalkByPerformanceNpcScRsp" => ::std::option::Option::Some(CmdTalkEventType::CmdFinishFirstTalkByPerformanceNpcScRsp),
+            "CmdTakeTalkRewardScRsp" => ::std::option::Option::Some(CmdTalkEventType::CmdTakeTalkRewardScRsp),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdTalkEventType] = &[
         CmdTalkEventType::CmdTalkRewardTypeNone,
-        CmdTalkEventType::CmdFinishFirstTalkByPerformanceNpcScRsp,
-        CmdTalkEventType::CmdGetFirstTalkByPerformanceNpcCsReq,
-        CmdTalkEventType::CmdGetFirstTalkNpcScRsp,
-        CmdTalkEventType::CmdTakeTalkRewardScRsp,
-        CmdTalkEventType::CmdGetNpcTakenRewardScRsp,
+        CmdTalkEventType::CmdFinishFirstTalkByPerformanceNpcCsReq,
+        CmdTalkEventType::CmdFinishFirstTalkNpcCsReq,
+        CmdTalkEventType::CmdGetFirstTalkNpcCsReq,
+        CmdTalkEventType::CmdGetNpcTakenRewardCsReq,
+        CmdTalkEventType::CmdSelectInclinationTextScRsp,
+        CmdTalkEventType::CmdFinishFirstTalkNpcScRsp,
         CmdTalkEventType::CmdTakeTalkRewardCsReq,
         CmdTalkEventType::CmdSelectInclinationTextCsReq,
-        CmdTalkEventType::CmdSelectInclinationTextScRsp,
-        CmdTalkEventType::CmdGetFirstTalkNpcCsReq,
-        CmdTalkEventType::CmdFinishFirstTalkNpcScRsp,
-        CmdTalkEventType::CmdFinishFirstTalkByPerformanceNpcCsReq,
-        CmdTalkEventType::CmdGetNpcTakenRewardCsReq,
         CmdTalkEventType::CmdGetFirstTalkByPerformanceNpcScRsp,
-        CmdTalkEventType::CmdFinishFirstTalkNpcCsReq,
+        CmdTalkEventType::CmdGetFirstTalkByPerformanceNpcCsReq,
+        CmdTalkEventType::CmdGetNpcTakenRewardScRsp,
+        CmdTalkEventType::CmdGetFirstTalkNpcScRsp,
+        CmdTalkEventType::CmdFinishFirstTalkByPerformanceNpcScRsp,
+        CmdTalkEventType::CmdTakeTalkRewardScRsp,
     ];
 }
 
@@ -137,20 +137,20 @@ impl ::protobuf::EnumFull for CmdTalkEventType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdTalkEventType::CmdTalkRewardTypeNone => 0,
-            CmdTalkEventType::CmdFinishFirstTalkByPerformanceNpcScRsp => 1,
-            CmdTalkEventType::CmdGetFirstTalkByPerformanceNpcCsReq => 2,
-            CmdTalkEventType::CmdGetFirstTalkNpcScRsp => 3,
-            CmdTalkEventType::CmdTakeTalkRewardScRsp => 4,
-            CmdTalkEventType::CmdGetNpcTakenRewardScRsp => 5,
-            CmdTalkEventType::CmdTakeTalkRewardCsReq => 6,
-            CmdTalkEventType::CmdSelectInclinationTextCsReq => 7,
-            CmdTalkEventType::CmdSelectInclinationTextScRsp => 8,
-            CmdTalkEventType::CmdGetFirstTalkNpcCsReq => 9,
-            CmdTalkEventType::CmdFinishFirstTalkNpcScRsp => 10,
-            CmdTalkEventType::CmdFinishFirstTalkByPerformanceNpcCsReq => 11,
-            CmdTalkEventType::CmdGetNpcTakenRewardCsReq => 12,
-            CmdTalkEventType::CmdGetFirstTalkByPerformanceNpcScRsp => 13,
-            CmdTalkEventType::CmdFinishFirstTalkNpcCsReq => 14,
+            CmdTalkEventType::CmdFinishFirstTalkByPerformanceNpcCsReq => 1,
+            CmdTalkEventType::CmdFinishFirstTalkNpcCsReq => 2,
+            CmdTalkEventType::CmdGetFirstTalkNpcCsReq => 3,
+            CmdTalkEventType::CmdGetNpcTakenRewardCsReq => 4,
+            CmdTalkEventType::CmdSelectInclinationTextScRsp => 5,
+            CmdTalkEventType::CmdFinishFirstTalkNpcScRsp => 6,
+            CmdTalkEventType::CmdTakeTalkRewardCsReq => 7,
+            CmdTalkEventType::CmdSelectInclinationTextCsReq => 8,
+            CmdTalkEventType::CmdGetFirstTalkByPerformanceNpcScRsp => 9,
+            CmdTalkEventType::CmdGetFirstTalkByPerformanceNpcCsReq => 10,
+            CmdTalkEventType::CmdGetNpcTakenRewardScRsp => 11,
+            CmdTalkEventType::CmdGetFirstTalkNpcScRsp => 12,
+            CmdTalkEventType::CmdFinishFirstTalkByPerformanceNpcScRsp => 13,
+            CmdTalkEventType::CmdTakeTalkRewardScRsp => 14,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -171,16 +171,16 @@ impl CmdTalkEventType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16CmdTalkEventType.proto*\x9f\x04\n\x10CmdTalkEventType\x12\x19\n\
     \x15CmdTalkRewardTypeNone\x10\0\x12,\n'CmdFinishFirstTalkByPerformanceNp\
-    cScRsp\x10\xca\x10\x12)\n$CmdGetFirstTalkByPerformanceNpcCsReq\x10\x82\
-    \x11\x12\x1c\n\x17CmdGetFirstTalkNpcScRsp\x10\x81\x11\x12\x1b\n\x16CmdTa\
-    keTalkRewardScRsp\x10\xde\x10\x12\x1e\n\x19CmdGetNpcTakenRewardScRsp\x10\
-    \xfb\x10\x12\x1b\n\x16CmdTakeTalkRewardCsReq\x10\x87\x11\x12\"\n\x1dCmdS\
-    electInclinationTextCsReq\x10\xd0\x10\x12\"\n\x1dCmdSelectInclinationTex\
-    tScRsp\x10\xda\x10\x12\x1c\n\x17CmdGetFirstTalkNpcCsReq\x10\x83\x11\x12\
-    \x1f\n\x1aCmdFinishFirstTalkNpcScRsp\x10\xc0\x10\x12,\n'CmdFinishFirstTa\
-    lkByPerformanceNpcCsReq\x10\x8d\x11\x12\x1e\n\x19CmdGetNpcTakenRewardCsR\
-    eq\x10\x96\x11\x12)\n$CmdGetFirstTalkByPerformanceNpcScRsp\x10\xec\x10\
-    \x12\x1f\n\x1aCmdFinishFirstTalkNpcCsReq\x10\xd5\x10b\x06proto3\
+    cCsReq\x10\xd2\x10\x12\x1f\n\x1aCmdFinishFirstTalkNpcCsReq\x10\xd6\x10\
+    \x12\x1c\n\x17CmdGetFirstTalkNpcCsReq\x10\xdb\x10\x12\x1e\n\x19CmdGetNpc\
+    TakenRewardCsReq\x10\xef\x10\x12\"\n\x1dCmdSelectInclinationTextScRsp\
+    \x10\xc4\x10\x12\x1f\n\x1aCmdFinishFirstTalkNpcScRsp\x10\xd9\x10\x12\x1b\
+    \n\x16CmdTakeTalkRewardCsReq\x10\xb7\x10\x12\"\n\x1dCmdSelectInclination\
+    TextCsReq\x10\x84\x11\x12)\n$CmdGetFirstTalkByPerformanceNpcScRsp\x10\
+    \xfe\x10\x12)\n$CmdGetFirstTalkByPerformanceNpcCsReq\x10\xe3\x10\x12\x1e\
+    \n\x19CmdGetNpcTakenRewardScRsp\x10\xc8\x10\x12\x1c\n\x17CmdGetFirstTalk\
+    NpcScRsp\x10\xe9\x10\x12,\n'CmdFinishFirstTalkByPerformanceNpcScRsp\x10\
+    \xff\x10\x12\x1b\n\x16CmdTakeTalkRewardScRsp\x10\xe2\x10b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

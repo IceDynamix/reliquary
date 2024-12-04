@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetEnhanceCommonRogueBuffInfoCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetEnhanceCommonRogueBuffInfoCsReq.OIAECIELHAF)
-    pub OIAECIELHAF: u32,
+    // @@protoc_insertion_point(field:GetEnhanceCommonRogueBuffInfoCsReq.LMFFBHEOONE)
+    pub LMFFBHEOONE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetEnhanceCommonRogueBuffInfoCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl GetEnhanceCommonRogueBuffInfoCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OIAECIELHAF",
-            |m: &GetEnhanceCommonRogueBuffInfoCsReq| { &m.OIAECIELHAF },
-            |m: &mut GetEnhanceCommonRogueBuffInfoCsReq| { &mut m.OIAECIELHAF },
+            "LMFFBHEOONE",
+            |m: &GetEnhanceCommonRogueBuffInfoCsReq| { &m.LMFFBHEOONE },
+            |m: &mut GetEnhanceCommonRogueBuffInfoCsReq| { &mut m.LMFFBHEOONE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetEnhanceCommonRogueBuffInfoCsReq>(
             "GetEnhanceCommonRogueBuffInfoCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for GetEnhanceCommonRogueBuffInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.OIAECIELHAF = is.read_uint32()?;
+                96 => {
+                    self.LMFFBHEOONE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for GetEnhanceCommonRogueBuffInfoCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OIAECIELHAF != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.OIAECIELHAF);
+        if self.LMFFBHEOONE != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.LMFFBHEOONE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for GetEnhanceCommonRogueBuffInfoCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OIAECIELHAF != 0 {
-            os.write_uint32(7, self.OIAECIELHAF)?;
+        if self.LMFFBHEOONE != 0 {
+            os.write_uint32(12, self.LMFFBHEOONE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for GetEnhanceCommonRogueBuffInfoCsReq {
     }
 
     fn clear(&mut self) {
-        self.OIAECIELHAF = 0;
+        self.LMFFBHEOONE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetEnhanceCommonRogueBuffInfoCsReq {
         static instance: GetEnhanceCommonRogueBuffInfoCsReq = GetEnhanceCommonRogueBuffInfoCsReq {
-            OIAECIELHAF: 0,
+            LMFFBHEOONE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for GetEnhanceCommonRogueBuffInfoCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(GetEnhanceCommonRogueBuffInfoCsReq.proto\"F\n\"GetEnhanceCommonRogueB\
-    uffInfoCsReq\x12\x20\n\x0bOIAECIELHAF\x18\x07\x20\x01(\rR\x0bOIAECIELHAF\
+    uffInfoCsReq\x12\x20\n\x0bLMFFBHEOONE\x18\x0c\x20\x01(\rR\x0bLMFFBHEOONE\
     b\x06proto3\
 ";
 

@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicAreaUpdateScNotify {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicAreaUpdateScNotify.PAINLBMGDBC)
-    pub PAINLBMGDBC: ::std::vec::Vec<super::NHLFAODJIDL::NHLFAODJIDL>,
+    // @@protoc_insertion_point(field:RogueMagicAreaUpdateScNotify.CIDHIIIBIGJ)
+    pub CIDHIIIBIGJ: ::std::vec::Vec<super::GKOBEBCEHHJ::GKOBEBCEHHJ>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicAreaUpdateScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl RogueMagicAreaUpdateScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PAINLBMGDBC",
-            |m: &RogueMagicAreaUpdateScNotify| { &m.PAINLBMGDBC },
-            |m: &mut RogueMagicAreaUpdateScNotify| { &mut m.PAINLBMGDBC },
+            "CIDHIIIBIGJ",
+            |m: &RogueMagicAreaUpdateScNotify| { &m.CIDHIIIBIGJ },
+            |m: &mut RogueMagicAreaUpdateScNotify| { &mut m.CIDHIIIBIGJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicAreaUpdateScNotify>(
             "RogueMagicAreaUpdateScNotify",
@@ -74,7 +74,7 @@ impl ::protobuf::Message for RogueMagicAreaUpdateScNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 114 => {
-                    self.PAINLBMGDBC.push(is.read_message()?);
+                    self.CIDHIIIBIGJ.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for RogueMagicAreaUpdateScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.PAINLBMGDBC {
+        for value in &self.CIDHIIIBIGJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -98,7 +98,7 @@ impl ::protobuf::Message for RogueMagicAreaUpdateScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.PAINLBMGDBC {
+        for v in &self.CIDHIIIBIGJ {
             ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -118,13 +118,13 @@ impl ::protobuf::Message for RogueMagicAreaUpdateScNotify {
     }
 
     fn clear(&mut self) {
-        self.PAINLBMGDBC.clear();
+        self.CIDHIIIBIGJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicAreaUpdateScNotify {
         static instance: RogueMagicAreaUpdateScNotify = RogueMagicAreaUpdateScNotify {
-            PAINLBMGDBC: ::std::vec::Vec::new(),
+            CIDHIIIBIGJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,9 +149,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicAreaUpdateScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"RogueMagicAreaUpdateScNotify.proto\x1a\x11NHLFAODJIDL.proto\"N\n\x1c\
-    RogueMagicAreaUpdateScNotify\x12.\n\x0bPAINLBMGDBC\x18\x0e\x20\x03(\x0b2\
-    \x0c.NHLFAODJIDLR\x0bPAINLBMGDBCb\x06proto3\
+    \n\"RogueMagicAreaUpdateScNotify.proto\x1a\x11GKOBEBCEHHJ.proto\"N\n\x1c\
+    RogueMagicAreaUpdateScNotify\x12.\n\x0bCIDHIIIBIGJ\x18\x0e\x20\x03(\x0b2\
+    \x0c.GKOBEBCEHHJR\x0bCIDHIIIBIGJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -169,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::NHLFAODJIDL::file_descriptor().clone());
+            deps.push(super::GKOBEBCEHHJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueMagicAreaUpdateScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterSceneScRsp {
     // message fields
-    // @@protoc_insertion_point(field:EnterSceneScRsp.PCABIMPKMBN)
-    pub PCABIMPKMBN: u32,
-    // @@protoc_insertion_point(field:EnterSceneScRsp.CPGDHGKAHHD)
-    pub CPGDHGKAHHD: u32,
-    // @@protoc_insertion_point(field:EnterSceneScRsp.GPJEEDFJHAJ)
-    pub GPJEEDFJHAJ: bool,
-    // @@protoc_insertion_point(field:EnterSceneScRsp.ALCKPIOBHLB)
-    pub ALCKPIOBHLB: bool,
-    // @@protoc_insertion_point(field:EnterSceneScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:EnterSceneScRsp.GFKIHHOPJDG)
+    pub GFKIHHOPJDG: u32,
+    // @@protoc_insertion_point(field:EnterSceneScRsp.KHGGDIHPHPA)
+    pub KHGGDIHPHPA: bool,
+    // @@protoc_insertion_point(field:EnterSceneScRsp.IHOAAECIHIK)
+    pub IHOAAECIHIK: bool,
+    // @@protoc_insertion_point(field:EnterSceneScRsp.HBCAFGHLIOP)
+    pub HBCAFGHLIOP: u32,
+    // @@protoc_insertion_point(field:EnterSceneScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EnterSceneScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,29 +59,29 @@ impl EnterSceneScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PCABIMPKMBN",
-            |m: &EnterSceneScRsp| { &m.PCABIMPKMBN },
-            |m: &mut EnterSceneScRsp| { &mut m.PCABIMPKMBN },
+            "GFKIHHOPJDG",
+            |m: &EnterSceneScRsp| { &m.GFKIHHOPJDG },
+            |m: &mut EnterSceneScRsp| { &mut m.GFKIHHOPJDG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CPGDHGKAHHD",
-            |m: &EnterSceneScRsp| { &m.CPGDHGKAHHD },
-            |m: &mut EnterSceneScRsp| { &mut m.CPGDHGKAHHD },
+            "KHGGDIHPHPA",
+            |m: &EnterSceneScRsp| { &m.KHGGDIHPHPA },
+            |m: &mut EnterSceneScRsp| { &mut m.KHGGDIHPHPA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GPJEEDFJHAJ",
-            |m: &EnterSceneScRsp| { &m.GPJEEDFJHAJ },
-            |m: &mut EnterSceneScRsp| { &mut m.GPJEEDFJHAJ },
+            "IHOAAECIHIK",
+            |m: &EnterSceneScRsp| { &m.IHOAAECIHIK },
+            |m: &mut EnterSceneScRsp| { &mut m.IHOAAECIHIK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ALCKPIOBHLB",
-            |m: &EnterSceneScRsp| { &m.ALCKPIOBHLB },
-            |m: &mut EnterSceneScRsp| { &mut m.ALCKPIOBHLB },
+            "HBCAFGHLIOP",
+            |m: &EnterSceneScRsp| { &m.HBCAFGHLIOP },
+            |m: &mut EnterSceneScRsp| { &mut m.HBCAFGHLIOP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &EnterSceneScRsp| { &m.retcode },
-            |m: &mut EnterSceneScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &EnterSceneScRsp| { &m.ADADHIHDHJC },
+            |m: &mut EnterSceneScRsp| { &mut m.ADADHIHDHJC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterSceneScRsp>(
             "EnterSceneScRsp",
@@ -101,20 +101,20 @@ impl ::protobuf::Message for EnterSceneScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.PCABIMPKMBN = is.read_uint32()?;
+                120 => {
+                    self.GFKIHHOPJDG = is.read_uint32()?;
                 },
-                64 => {
-                    self.CPGDHGKAHHD = is.read_uint32()?;
-                },
-                80 => {
-                    self.GPJEEDFJHAJ = is.read_bool()?;
-                },
-                96 => {
-                    self.ALCKPIOBHLB = is.read_bool()?;
+                16 => {
+                    self.KHGGDIHPHPA = is.read_bool()?;
                 },
                 8 => {
-                    self.retcode = is.read_uint32()?;
+                    self.IHOAAECIHIK = is.read_bool()?;
+                },
+                24 => {
+                    self.HBCAFGHLIOP = is.read_uint32()?;
+                },
+                96 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,20 +128,20 @@ impl ::protobuf::Message for EnterSceneScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PCABIMPKMBN != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.PCABIMPKMBN);
+        if self.GFKIHHOPJDG != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.GFKIHHOPJDG);
         }
-        if self.CPGDHGKAHHD != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.CPGDHGKAHHD);
-        }
-        if self.GPJEEDFJHAJ != false {
+        if self.KHGGDIHPHPA != false {
             my_size += 1 + 1;
         }
-        if self.ALCKPIOBHLB != false {
+        if self.IHOAAECIHIK != false {
             my_size += 1 + 1;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        if self.HBCAFGHLIOP != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.HBCAFGHLIOP);
+        }
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.ADADHIHDHJC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for EnterSceneScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PCABIMPKMBN != 0 {
-            os.write_uint32(7, self.PCABIMPKMBN)?;
+        if self.GFKIHHOPJDG != 0 {
+            os.write_uint32(15, self.GFKIHHOPJDG)?;
         }
-        if self.CPGDHGKAHHD != 0 {
-            os.write_uint32(8, self.CPGDHGKAHHD)?;
+        if self.KHGGDIHPHPA != false {
+            os.write_bool(2, self.KHGGDIHPHPA)?;
         }
-        if self.GPJEEDFJHAJ != false {
-            os.write_bool(10, self.GPJEEDFJHAJ)?;
+        if self.IHOAAECIHIK != false {
+            os.write_bool(1, self.IHOAAECIHIK)?;
         }
-        if self.ALCKPIOBHLB != false {
-            os.write_bool(12, self.ALCKPIOBHLB)?;
+        if self.HBCAFGHLIOP != 0 {
+            os.write_uint32(3, self.HBCAFGHLIOP)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(12, self.ADADHIHDHJC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for EnterSceneScRsp {
     }
 
     fn clear(&mut self) {
-        self.PCABIMPKMBN = 0;
-        self.CPGDHGKAHHD = 0;
-        self.GPJEEDFJHAJ = false;
-        self.ALCKPIOBHLB = false;
-        self.retcode = 0;
+        self.GFKIHHOPJDG = 0;
+        self.KHGGDIHPHPA = false;
+        self.IHOAAECIHIK = false;
+        self.HBCAFGHLIOP = 0;
+        self.ADADHIHDHJC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterSceneScRsp {
         static instance: EnterSceneScRsp = EnterSceneScRsp {
-            PCABIMPKMBN: 0,
-            CPGDHGKAHHD: 0,
-            GPJEEDFJHAJ: false,
-            ALCKPIOBHLB: false,
-            retcode: 0,
+            GFKIHHOPJDG: 0,
+            KHGGDIHPHPA: false,
+            IHOAAECIHIK: false,
+            HBCAFGHLIOP: 0,
+            ADADHIHDHJC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,12 +220,12 @@ impl ::protobuf::reflect::ProtobufValue for EnterSceneScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15EnterSceneScRsp.proto\"\xb3\x01\n\x0fEnterSceneScRsp\x12\x20\n\x0b\
-    PCABIMPKMBN\x18\x07\x20\x01(\rR\x0bPCABIMPKMBN\x12\x20\n\x0bCPGDHGKAHHD\
-    \x18\x08\x20\x01(\rR\x0bCPGDHGKAHHD\x12\x20\n\x0bGPJEEDFJHAJ\x18\n\x20\
-    \x01(\x08R\x0bGPJEEDFJHAJ\x12\x20\n\x0bALCKPIOBHLB\x18\x0c\x20\x01(\x08R\
-    \x0bALCKPIOBHLB\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcodeb\x06\
-    proto3\
+    \n\x15EnterSceneScRsp.proto\"\xbb\x01\n\x0fEnterSceneScRsp\x12\x20\n\x0b\
+    GFKIHHOPJDG\x18\x0f\x20\x01(\rR\x0bGFKIHHOPJDG\x12\x20\n\x0bKHGGDIHPHPA\
+    \x18\x02\x20\x01(\x08R\x0bKHGGDIHPHPA\x12\x20\n\x0bIHOAAECIHIK\x18\x01\
+    \x20\x01(\x08R\x0bIHOAAECIHIK\x12\x20\n\x0bHBCAFGHLIOP\x18\x03\x20\x01(\
+    \rR\x0bHBCAFGHLIOP\x12\x20\n\x0bADADHIHDHJC\x18\x0c\x20\x01(\rR\x0bADADH\
+    IHDHJCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

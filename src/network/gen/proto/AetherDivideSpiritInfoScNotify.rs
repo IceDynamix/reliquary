@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AetherDivideSpiritInfoScNotify {
     // message fields
-    // @@protoc_insertion_point(field:AetherDivideSpiritInfoScNotify.NPGOMLFGBJM)
-    pub NPGOMLFGBJM: u32,
-    // @@protoc_insertion_point(field:AetherDivideSpiritInfoScNotify.BHNEEKNMICA)
-    pub BHNEEKNMICA: ::std::vec::Vec<super::CFNKMGAPHHE::CFNKMGAPHHE>,
-    // @@protoc_insertion_point(field:AetherDivideSpiritInfoScNotify.GBMKMMHJHAK)
-    pub GBMKMMHJHAK: ::protobuf::MessageField<super::CFNKMGAPHHE::CFNKMGAPHHE>,
+    // @@protoc_insertion_point(field:AetherDivideSpiritInfoScNotify.HBOCMBOBJNG)
+    pub HBOCMBOBJNG: ::protobuf::MessageField<super::HHBFGOMBIMA::HHBFGOMBIMA>,
+    // @@protoc_insertion_point(field:AetherDivideSpiritInfoScNotify.HMLAHCFILKI)
+    pub HMLAHCFILKI: ::std::vec::Vec<super::HHBFGOMBIMA::HHBFGOMBIMA>,
+    // @@protoc_insertion_point(field:AetherDivideSpiritInfoScNotify.AKFMFBKKEOI)
+    pub AKFMFBKKEOI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AetherDivideSpiritInfoScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl AetherDivideSpiritInfoScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NPGOMLFGBJM",
-            |m: &AetherDivideSpiritInfoScNotify| { &m.NPGOMLFGBJM },
-            |m: &mut AetherDivideSpiritInfoScNotify| { &mut m.NPGOMLFGBJM },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HHBFGOMBIMA::HHBFGOMBIMA>(
+            "HBOCMBOBJNG",
+            |m: &AetherDivideSpiritInfoScNotify| { &m.HBOCMBOBJNG },
+            |m: &mut AetherDivideSpiritInfoScNotify| { &mut m.HBOCMBOBJNG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BHNEEKNMICA",
-            |m: &AetherDivideSpiritInfoScNotify| { &m.BHNEEKNMICA },
-            |m: &mut AetherDivideSpiritInfoScNotify| { &mut m.BHNEEKNMICA },
+            "HMLAHCFILKI",
+            |m: &AetherDivideSpiritInfoScNotify| { &m.HMLAHCFILKI },
+            |m: &mut AetherDivideSpiritInfoScNotify| { &mut m.HMLAHCFILKI },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CFNKMGAPHHE::CFNKMGAPHHE>(
-            "GBMKMMHJHAK",
-            |m: &AetherDivideSpiritInfoScNotify| { &m.GBMKMMHJHAK },
-            |m: &mut AetherDivideSpiritInfoScNotify| { &mut m.GBMKMMHJHAK },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AKFMFBKKEOI",
+            |m: &AetherDivideSpiritInfoScNotify| { &m.AKFMFBKKEOI },
+            |m: &mut AetherDivideSpiritInfoScNotify| { &mut m.AKFMFBKKEOI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AetherDivideSpiritInfoScNotify>(
             "AetherDivideSpiritInfoScNotify",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for AetherDivideSpiritInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.NPGOMLFGBJM = is.read_uint32()?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HBOCMBOBJNG)?;
                 },
-                10 => {
-                    self.BHNEEKNMICA.push(is.read_message()?);
+                42 => {
+                    self.HMLAHCFILKI.push(is.read_message()?);
                 },
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GBMKMMHJHAK)?;
+                120 => {
+                    self.AKFMFBKKEOI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,16 +108,16 @@ impl ::protobuf::Message for AetherDivideSpiritInfoScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NPGOMLFGBJM != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.NPGOMLFGBJM);
+        if let Some(v) = self.HBOCMBOBJNG.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        for value in &self.BHNEEKNMICA {
+        for value in &self.HMLAHCFILKI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.GBMKMMHJHAK.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.AKFMFBKKEOI != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.AKFMFBKKEOI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,14 +125,14 @@ impl ::protobuf::Message for AetherDivideSpiritInfoScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NPGOMLFGBJM != 0 {
-            os.write_uint32(6, self.NPGOMLFGBJM)?;
+        if let Some(v) = self.HBOCMBOBJNG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
-        for v in &self.BHNEEKNMICA {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        for v in &self.HMLAHCFILKI {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
-        if let Some(v) = self.GBMKMMHJHAK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if self.AKFMFBKKEOI != 0 {
+            os.write_uint32(15, self.AKFMFBKKEOI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,17 +151,17 @@ impl ::protobuf::Message for AetherDivideSpiritInfoScNotify {
     }
 
     fn clear(&mut self) {
-        self.NPGOMLFGBJM = 0;
-        self.BHNEEKNMICA.clear();
-        self.GBMKMMHJHAK.clear();
+        self.HBOCMBOBJNG.clear();
+        self.HMLAHCFILKI.clear();
+        self.AKFMFBKKEOI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AetherDivideSpiritInfoScNotify {
         static instance: AetherDivideSpiritInfoScNotify = AetherDivideSpiritInfoScNotify {
-            NPGOMLFGBJM: 0,
-            BHNEEKNMICA: ::std::vec::Vec::new(),
-            GBMKMMHJHAK: ::protobuf::MessageField::none(),
+            HBOCMBOBJNG: ::protobuf::MessageField::none(),
+            HMLAHCFILKI: ::std::vec::Vec::new(),
+            AKFMFBKKEOI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,11 +186,11 @@ impl ::protobuf::reflect::ProtobufValue for AetherDivideSpiritInfoScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$AetherDivideSpiritInfoScNotify.proto\x1a\x11CFNKMGAPHHE.proto\"\xa2\
-    \x01\n\x1eAetherDivideSpiritInfoScNotify\x12\x20\n\x0bNPGOMLFGBJM\x18\
-    \x06\x20\x01(\rR\x0bNPGOMLFGBJM\x12.\n\x0bBHNEEKNMICA\x18\x01\x20\x03(\
-    \x0b2\x0c.CFNKMGAPHHER\x0bBHNEEKNMICA\x12.\n\x0bGBMKMMHJHAK\x18\x03\x20\
-    \x01(\x0b2\x0c.CFNKMGAPHHER\x0bGBMKMMHJHAKb\x06proto3\
+    \n$AetherDivideSpiritInfoScNotify.proto\x1a\x11HHBFGOMBIMA.proto\"\xa2\
+    \x01\n\x1eAetherDivideSpiritInfoScNotify\x12.\n\x0bHBOCMBOBJNG\x18\x04\
+    \x20\x01(\x0b2\x0c.HHBFGOMBIMAR\x0bHBOCMBOBJNG\x12.\n\x0bHMLAHCFILKI\x18\
+    \x05\x20\x03(\x0b2\x0c.HHBFGOMBIMAR\x0bHMLAHCFILKI\x12\x20\n\x0bAKFMFBKK\
+    EOI\x18\x0f\x20\x01(\rR\x0bAKFMFBKKEOIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -208,7 +208,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::CFNKMGAPHHE::file_descriptor().clone());
+            deps.push(super::HHBFGOMBIMA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(AetherDivideSpiritInfoScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

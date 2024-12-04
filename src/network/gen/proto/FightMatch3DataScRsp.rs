@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightMatch3DataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:FightMatch3DataScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:FightMatch3DataScRsp.EBMOKPBKMMD)
-    pub EBMOKPBKMMD: ::std::vec::Vec<super::CCHCPNLPBDK::CCHCPNLPBDK>,
-    // @@protoc_insertion_point(field:FightMatch3DataScRsp.KFPJDGKFDBB)
-    pub KFPJDGKFDBB: ::protobuf::MessageField<super::CFHPMBOAHLA::CFHPMBOAHLA>,
+    // @@protoc_insertion_point(field:FightMatch3DataScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:FightMatch3DataScRsp.LKLJKGKLHID)
+    pub LKLJKGKLHID: ::std::vec::Vec<super::DBBLOFLAAMH::DBBLOFLAAMH>,
+    // @@protoc_insertion_point(field:FightMatch3DataScRsp.NIEKADMHOKK)
+    pub NIEKADMHOKK: ::protobuf::MessageField<super::JDCEDDGFBGF::JDCEDDGFBGF>,
     // special fields
     // @@protoc_insertion_point(special_field:FightMatch3DataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl FightMatch3DataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &FightMatch3DataScRsp| { &m.retcode },
-            |m: &mut FightMatch3DataScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &FightMatch3DataScRsp| { &m.ADADHIHDHJC },
+            |m: &mut FightMatch3DataScRsp| { &mut m.ADADHIHDHJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EBMOKPBKMMD",
-            |m: &FightMatch3DataScRsp| { &m.EBMOKPBKMMD },
-            |m: &mut FightMatch3DataScRsp| { &mut m.EBMOKPBKMMD },
+            "LKLJKGKLHID",
+            |m: &FightMatch3DataScRsp| { &m.LKLJKGKLHID },
+            |m: &mut FightMatch3DataScRsp| { &mut m.LKLJKGKLHID },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CFHPMBOAHLA::CFHPMBOAHLA>(
-            "KFPJDGKFDBB",
-            |m: &FightMatch3DataScRsp| { &m.KFPJDGKFDBB },
-            |m: &mut FightMatch3DataScRsp| { &mut m.KFPJDGKFDBB },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JDCEDDGFBGF::JDCEDDGFBGF>(
+            "NIEKADMHOKK",
+            |m: &FightMatch3DataScRsp| { &m.NIEKADMHOKK },
+            |m: &mut FightMatch3DataScRsp| { &mut m.NIEKADMHOKK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightMatch3DataScRsp>(
             "FightMatch3DataScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for FightMatch3DataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                26 => {
-                    self.EBMOKPBKMMD.push(is.read_message()?);
+                72 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
                 98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KFPJDGKFDBB)?;
+                    self.LKLJKGKLHID.push(is.read_message()?);
+                },
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NIEKADMHOKK)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for FightMatch3DataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.ADADHIHDHJC);
         }
-        for value in &self.EBMOKPBKMMD {
+        for value in &self.LKLJKGKLHID {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.KFPJDGKFDBB.as_ref() {
+        if let Some(v) = self.NIEKADMHOKK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -125,14 +125,14 @@ impl ::protobuf::Message for FightMatch3DataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(9, self.ADADHIHDHJC)?;
         }
-        for v in &self.EBMOKPBKMMD {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        };
-        if let Some(v) = self.KFPJDGKFDBB.as_ref() {
+        for v in &self.LKLJKGKLHID {
             ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        };
+        if let Some(v) = self.NIEKADMHOKK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,17 +151,17 @@ impl ::protobuf::Message for FightMatch3DataScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.EBMOKPBKMMD.clear();
-        self.KFPJDGKFDBB.clear();
+        self.ADADHIHDHJC = 0;
+        self.LKLJKGKLHID.clear();
+        self.NIEKADMHOKK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightMatch3DataScRsp {
         static instance: FightMatch3DataScRsp = FightMatch3DataScRsp {
-            retcode: 0,
-            EBMOKPBKMMD: ::std::vec::Vec::new(),
-            KFPJDGKFDBB: ::protobuf::MessageField::none(),
+            ADADHIHDHJC: 0,
+            LKLJKGKLHID: ::std::vec::Vec::new(),
+            NIEKADMHOKK: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,11 +186,11 @@ impl ::protobuf::reflect::ProtobufValue for FightMatch3DataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aFightMatch3DataScRsp.proto\x1a\x11CCHCPNLPBDK.proto\x1a\x11CFHPMBO\
-    AHLA.proto\"\x90\x01\n\x14FightMatch3DataScRsp\x12\x18\n\x07retcode\x18\
-    \x06\x20\x01(\rR\x07retcode\x12.\n\x0bEBMOKPBKMMD\x18\x03\x20\x03(\x0b2\
-    \x0c.CCHCPNLPBDKR\x0bEBMOKPBKMMD\x12.\n\x0bKFPJDGKFDBB\x18\x0c\x20\x01(\
-    \x0b2\x0c.CFHPMBOAHLAR\x0bKFPJDGKFDBBb\x06proto3\
+    \n\x1aFightMatch3DataScRsp.proto\x1a\x11DBBLOFLAAMH.proto\x1a\x11JDCEDDG\
+    FBGF.proto\"\x98\x01\n\x14FightMatch3DataScRsp\x12\x20\n\x0bADADHIHDHJC\
+    \x18\t\x20\x01(\rR\x0bADADHIHDHJC\x12.\n\x0bLKLJKGKLHID\x18\x0c\x20\x03(\
+    \x0b2\x0c.DBBLOFLAAMHR\x0bLKLJKGKLHID\x12.\n\x0bNIEKADMHOKK\x18\x08\x20\
+    \x01(\x0b2\x0c.JDCEDDGFBGFR\x0bNIEKADMHOKKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -208,8 +208,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::CCHCPNLPBDK::file_descriptor().clone());
-            deps.push(super::CFHPMBOAHLA::file_descriptor().clone());
+            deps.push(super::DBBLOFLAAMH::file_descriptor().clone());
+            deps.push(super::JDCEDDGFBGF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FightMatch3DataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

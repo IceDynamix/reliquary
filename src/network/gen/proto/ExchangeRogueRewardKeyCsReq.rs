@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ExchangeRogueRewardKeyCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ExchangeRogueRewardKeyCsReq.GPGBNLJGHCD)
-    pub GPGBNLJGHCD: u32,
+    // @@protoc_insertion_point(field:ExchangeRogueRewardKeyCsReq.HKEHNFJCILP)
+    pub HKEHNFJCILP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ExchangeRogueRewardKeyCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl ExchangeRogueRewardKeyCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GPGBNLJGHCD",
-            |m: &ExchangeRogueRewardKeyCsReq| { &m.GPGBNLJGHCD },
-            |m: &mut ExchangeRogueRewardKeyCsReq| { &mut m.GPGBNLJGHCD },
+            "HKEHNFJCILP",
+            |m: &ExchangeRogueRewardKeyCsReq| { &m.HKEHNFJCILP },
+            |m: &mut ExchangeRogueRewardKeyCsReq| { &mut m.HKEHNFJCILP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ExchangeRogueRewardKeyCsReq>(
             "ExchangeRogueRewardKeyCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for ExchangeRogueRewardKeyCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.GPGBNLJGHCD = is.read_uint32()?;
+                64 => {
+                    self.HKEHNFJCILP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for ExchangeRogueRewardKeyCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GPGBNLJGHCD != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.GPGBNLJGHCD);
+        if self.HKEHNFJCILP != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.HKEHNFJCILP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for ExchangeRogueRewardKeyCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GPGBNLJGHCD != 0 {
-            os.write_uint32(3, self.GPGBNLJGHCD)?;
+        if self.HKEHNFJCILP != 0 {
+            os.write_uint32(8, self.HKEHNFJCILP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for ExchangeRogueRewardKeyCsReq {
     }
 
     fn clear(&mut self) {
-        self.GPGBNLJGHCD = 0;
+        self.HKEHNFJCILP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ExchangeRogueRewardKeyCsReq {
         static instance: ExchangeRogueRewardKeyCsReq = ExchangeRogueRewardKeyCsReq {
-            GPGBNLJGHCD: 0,
+            HKEHNFJCILP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for ExchangeRogueRewardKeyCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!ExchangeRogueRewardKeyCsReq.proto\"?\n\x1bExchangeRogueRewardKeyCsReq\
-    \x12\x20\n\x0bGPGBNLJGHCD\x18\x03\x20\x01(\rR\x0bGPGBNLJGHCDb\x06proto3\
+    \x12\x20\n\x0bHKEHNFJCILP\x18\x08\x20\x01(\rR\x0bHKEHNFJCILPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

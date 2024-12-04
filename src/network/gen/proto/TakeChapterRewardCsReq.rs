@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeChapterRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeChapterRewardCsReq.CIGPMMBDEJD)
-    pub CIGPMMBDEJD: u32,
-    // @@protoc_insertion_point(field:TakeChapterRewardCsReq.FNIGBOMHLBE)
-    pub FNIGBOMHLBE: u32,
+    // @@protoc_insertion_point(field:TakeChapterRewardCsReq.PNOAKGNANBO)
+    pub PNOAKGNANBO: u32,
+    // @@protoc_insertion_point(field:TakeChapterRewardCsReq.NCLHEOJCFDM)
+    pub NCLHEOJCFDM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeChapterRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl TakeChapterRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CIGPMMBDEJD",
-            |m: &TakeChapterRewardCsReq| { &m.CIGPMMBDEJD },
-            |m: &mut TakeChapterRewardCsReq| { &mut m.CIGPMMBDEJD },
+            "PNOAKGNANBO",
+            |m: &TakeChapterRewardCsReq| { &m.PNOAKGNANBO },
+            |m: &mut TakeChapterRewardCsReq| { &mut m.PNOAKGNANBO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FNIGBOMHLBE",
-            |m: &TakeChapterRewardCsReq| { &m.FNIGBOMHLBE },
-            |m: &mut TakeChapterRewardCsReq| { &mut m.FNIGBOMHLBE },
+            "NCLHEOJCFDM",
+            |m: &TakeChapterRewardCsReq| { &m.NCLHEOJCFDM },
+            |m: &mut TakeChapterRewardCsReq| { &mut m.NCLHEOJCFDM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeChapterRewardCsReq>(
             "TakeChapterRewardCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for TakeChapterRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.CIGPMMBDEJD = is.read_uint32()?;
+                32 => {
+                    self.PNOAKGNANBO = is.read_uint32()?;
                 },
-                48 => {
-                    self.FNIGBOMHLBE = is.read_uint32()?;
+                16 => {
+                    self.NCLHEOJCFDM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for TakeChapterRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CIGPMMBDEJD != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.CIGPMMBDEJD);
+        if self.PNOAKGNANBO != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.PNOAKGNANBO);
         }
-        if self.FNIGBOMHLBE != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.FNIGBOMHLBE);
+        if self.NCLHEOJCFDM != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.NCLHEOJCFDM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for TakeChapterRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CIGPMMBDEJD != 0 {
-            os.write_uint32(10, self.CIGPMMBDEJD)?;
+        if self.PNOAKGNANBO != 0 {
+            os.write_uint32(4, self.PNOAKGNANBO)?;
         }
-        if self.FNIGBOMHLBE != 0 {
-            os.write_uint32(6, self.FNIGBOMHLBE)?;
+        if self.NCLHEOJCFDM != 0 {
+            os.write_uint32(2, self.NCLHEOJCFDM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for TakeChapterRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.CIGPMMBDEJD = 0;
-        self.FNIGBOMHLBE = 0;
+        self.PNOAKGNANBO = 0;
+        self.NCLHEOJCFDM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeChapterRewardCsReq {
         static instance: TakeChapterRewardCsReq = TakeChapterRewardCsReq {
-            CIGPMMBDEJD: 0,
-            FNIGBOMHLBE: 0,
+            PNOAKGNANBO: 0,
+            NCLHEOJCFDM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for TakeChapterRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cTakeChapterRewardCsReq.proto\"\\\n\x16TakeChapterRewardCsReq\x12\
-    \x20\n\x0bCIGPMMBDEJD\x18\n\x20\x01(\rR\x0bCIGPMMBDEJD\x12\x20\n\x0bFNIG\
-    BOMHLBE\x18\x06\x20\x01(\rR\x0bFNIGBOMHLBEb\x06proto3\
+    \x20\n\x0bPNOAKGNANBO\x18\x04\x20\x01(\rR\x0bPNOAKGNANBO\x12\x20\n\x0bNC\
+    LHEOJCFDM\x18\x02\x20\x01(\rR\x0bNCLHEOJCFDMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

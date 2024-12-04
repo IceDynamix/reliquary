@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MarkChatEmojiScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MarkChatEmojiScRsp.OBHOABOLNIH)
-    pub OBHOABOLNIH: u32,
-    // @@protoc_insertion_point(field:MarkChatEmojiScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:MarkChatEmojiScRsp.NJDHCMOMNHB)
-    pub NJDHCMOMNHB: bool,
+    // @@protoc_insertion_point(field:MarkChatEmojiScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:MarkChatEmojiScRsp.JJIIEFNHAFB)
+    pub JJIIEFNHAFB: u32,
+    // @@protoc_insertion_point(field:MarkChatEmojiScRsp.AAMMDFEBIMP)
+    pub AAMMDFEBIMP: bool,
     // special fields
     // @@protoc_insertion_point(special_field:MarkChatEmojiScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl MarkChatEmojiScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OBHOABOLNIH",
-            |m: &MarkChatEmojiScRsp| { &m.OBHOABOLNIH },
-            |m: &mut MarkChatEmojiScRsp| { &mut m.OBHOABOLNIH },
+            "ADADHIHDHJC",
+            |m: &MarkChatEmojiScRsp| { &m.ADADHIHDHJC },
+            |m: &mut MarkChatEmojiScRsp| { &mut m.ADADHIHDHJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &MarkChatEmojiScRsp| { &m.retcode },
-            |m: &mut MarkChatEmojiScRsp| { &mut m.retcode },
+            "JJIIEFNHAFB",
+            |m: &MarkChatEmojiScRsp| { &m.JJIIEFNHAFB },
+            |m: &mut MarkChatEmojiScRsp| { &mut m.JJIIEFNHAFB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NJDHCMOMNHB",
-            |m: &MarkChatEmojiScRsp| { &m.NJDHCMOMNHB },
-            |m: &mut MarkChatEmojiScRsp| { &mut m.NJDHCMOMNHB },
+            "AAMMDFEBIMP",
+            |m: &MarkChatEmojiScRsp| { &m.AAMMDFEBIMP },
+            |m: &mut MarkChatEmojiScRsp| { &mut m.AAMMDFEBIMP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MarkChatEmojiScRsp>(
             "MarkChatEmojiScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for MarkChatEmojiScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.OBHOABOLNIH = is.read_uint32()?;
+                56 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                80 => {
-                    self.retcode = is.read_uint32()?;
+                40 => {
+                    self.JJIIEFNHAFB = is.read_uint32()?;
                 },
-                120 => {
-                    self.NJDHCMOMNHB = is.read_bool()?;
+                104 => {
+                    self.AAMMDFEBIMP = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for MarkChatEmojiScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OBHOABOLNIH != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.OBHOABOLNIH);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.ADADHIHDHJC);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+        if self.JJIIEFNHAFB != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.JJIIEFNHAFB);
         }
-        if self.NJDHCMOMNHB != false {
+        if self.AAMMDFEBIMP != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -123,14 +123,14 @@ impl ::protobuf::Message for MarkChatEmojiScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OBHOABOLNIH != 0 {
-            os.write_uint32(6, self.OBHOABOLNIH)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(7, self.ADADHIHDHJC)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+        if self.JJIIEFNHAFB != 0 {
+            os.write_uint32(5, self.JJIIEFNHAFB)?;
         }
-        if self.NJDHCMOMNHB != false {
-            os.write_bool(15, self.NJDHCMOMNHB)?;
+        if self.AAMMDFEBIMP != false {
+            os.write_bool(13, self.AAMMDFEBIMP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for MarkChatEmojiScRsp {
     }
 
     fn clear(&mut self) {
-        self.OBHOABOLNIH = 0;
-        self.retcode = 0;
-        self.NJDHCMOMNHB = false;
+        self.ADADHIHDHJC = 0;
+        self.JJIIEFNHAFB = 0;
+        self.AAMMDFEBIMP = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MarkChatEmojiScRsp {
         static instance: MarkChatEmojiScRsp = MarkChatEmojiScRsp {
-            OBHOABOLNIH: 0,
-            retcode: 0,
-            NJDHCMOMNHB: false,
+            ADADHIHDHJC: 0,
+            JJIIEFNHAFB: 0,
+            AAMMDFEBIMP: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for MarkChatEmojiScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18MarkChatEmojiScRsp.proto\"r\n\x12MarkChatEmojiScRsp\x12\x20\n\x0bO\
-    BHOABOLNIH\x18\x06\x20\x01(\rR\x0bOBHOABOLNIH\x12\x18\n\x07retcode\x18\n\
-    \x20\x01(\rR\x07retcode\x12\x20\n\x0bNJDHCMOMNHB\x18\x0f\x20\x01(\x08R\
-    \x0bNJDHCMOMNHBb\x06proto3\
+    \n\x18MarkChatEmojiScRsp.proto\"z\n\x12MarkChatEmojiScRsp\x12\x20\n\x0bA\
+    DADHIHDHJC\x18\x07\x20\x01(\rR\x0bADADHIHDHJC\x12\x20\n\x0bJJIIEFNHAFB\
+    \x18\x05\x20\x01(\rR\x0bJJIIEFNHAFB\x12\x20\n\x0bAAMMDFEBIMP\x18\r\x20\
+    \x01(\x08R\x0bAAMMDFEBIMPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

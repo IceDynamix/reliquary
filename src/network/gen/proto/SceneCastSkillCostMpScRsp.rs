@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneCastSkillCostMpScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SceneCastSkillCostMpScRsp.EKOBDMKFJID)
-    pub EKOBDMKFJID: u32,
+    // @@protoc_insertion_point(field:SceneCastSkillCostMpScRsp.attacked_group_id)
+    pub attacked_group_id: u32,
     // @@protoc_insertion_point(field:SceneCastSkillCostMpScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -53,9 +53,9 @@ impl SceneCastSkillCostMpScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EKOBDMKFJID",
-            |m: &SceneCastSkillCostMpScRsp| { &m.EKOBDMKFJID },
-            |m: &mut SceneCastSkillCostMpScRsp| { &mut m.EKOBDMKFJID },
+            "attacked_group_id",
+            |m: &SceneCastSkillCostMpScRsp| { &m.attacked_group_id },
+            |m: &mut SceneCastSkillCostMpScRsp| { &mut m.attacked_group_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for SceneCastSkillCostMpScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.EKOBDMKFJID = is.read_uint32()?;
+                24 => {
+                    self.attacked_group_id = is.read_uint32()?;
                 },
-                64 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -98,11 +98,11 @@ impl ::protobuf::Message for SceneCastSkillCostMpScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EKOBDMKFJID != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.EKOBDMKFJID);
+        if self.attacked_group_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.attacked_group_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for SceneCastSkillCostMpScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EKOBDMKFJID != 0 {
-            os.write_uint32(13, self.EKOBDMKFJID)?;
+        if self.attacked_group_id != 0 {
+            os.write_uint32(3, self.attacked_group_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for SceneCastSkillCostMpScRsp {
     }
 
     fn clear(&mut self) {
-        self.EKOBDMKFJID = 0;
+        self.attacked_group_id = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneCastSkillCostMpScRsp {
         static instance: SceneCastSkillCostMpScRsp = SceneCastSkillCostMpScRsp {
-            EKOBDMKFJID: 0,
+            attacked_group_id: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,9 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for SceneCastSkillCostMpScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fSceneCastSkillCostMpScRsp.proto\"W\n\x19SceneCastSkillCostMpScRsp\
-    \x12\x20\n\x0bEKOBDMKFJID\x18\r\x20\x01(\rR\x0bEKOBDMKFJID\x12\x18\n\x07\
-    retcode\x18\x08\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x1fSceneCastSkillCostMpScRsp.proto\"a\n\x19SceneCastSkillCostMpScRsp\
+    \x12*\n\x11attacked_group_id\x18\x03\x20\x01(\rR\x0fattackedGroupId\x12\
+    \x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore\
+    .protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

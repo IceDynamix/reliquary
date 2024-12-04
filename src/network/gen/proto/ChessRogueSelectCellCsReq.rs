@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueSelectCellCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueSelectCellCsReq.KMIPNOOKBMB)
-    pub KMIPNOOKBMB: u32,
-    // @@protoc_insertion_point(field:ChessRogueSelectCellCsReq.DOLHMBKDJGL)
-    pub DOLHMBKDJGL: u32,
+    // @@protoc_insertion_point(field:ChessRogueSelectCellCsReq.NAIMNIFDKFJ)
+    pub NAIMNIFDKFJ: u32,
+    // @@protoc_insertion_point(field:ChessRogueSelectCellCsReq.OJPBIKNALIN)
+    pub OJPBIKNALIN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueSelectCellCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl ChessRogueSelectCellCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KMIPNOOKBMB",
-            |m: &ChessRogueSelectCellCsReq| { &m.KMIPNOOKBMB },
-            |m: &mut ChessRogueSelectCellCsReq| { &mut m.KMIPNOOKBMB },
+            "NAIMNIFDKFJ",
+            |m: &ChessRogueSelectCellCsReq| { &m.NAIMNIFDKFJ },
+            |m: &mut ChessRogueSelectCellCsReq| { &mut m.NAIMNIFDKFJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DOLHMBKDJGL",
-            |m: &ChessRogueSelectCellCsReq| { &m.DOLHMBKDJGL },
-            |m: &mut ChessRogueSelectCellCsReq| { &mut m.DOLHMBKDJGL },
+            "OJPBIKNALIN",
+            |m: &ChessRogueSelectCellCsReq| { &m.OJPBIKNALIN },
+            |m: &mut ChessRogueSelectCellCsReq| { &mut m.OJPBIKNALIN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueSelectCellCsReq>(
             "ChessRogueSelectCellCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for ChessRogueSelectCellCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.KMIPNOOKBMB = is.read_uint32()?;
+                24 => {
+                    self.NAIMNIFDKFJ = is.read_uint32()?;
                 },
-                112 => {
-                    self.DOLHMBKDJGL = is.read_uint32()?;
+                72 => {
+                    self.OJPBIKNALIN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for ChessRogueSelectCellCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KMIPNOOKBMB != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.KMIPNOOKBMB);
+        if self.NAIMNIFDKFJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.NAIMNIFDKFJ);
         }
-        if self.DOLHMBKDJGL != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.DOLHMBKDJGL);
+        if self.OJPBIKNALIN != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.OJPBIKNALIN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for ChessRogueSelectCellCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KMIPNOOKBMB != 0 {
-            os.write_uint32(10, self.KMIPNOOKBMB)?;
+        if self.NAIMNIFDKFJ != 0 {
+            os.write_uint32(3, self.NAIMNIFDKFJ)?;
         }
-        if self.DOLHMBKDJGL != 0 {
-            os.write_uint32(14, self.DOLHMBKDJGL)?;
+        if self.OJPBIKNALIN != 0 {
+            os.write_uint32(9, self.OJPBIKNALIN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for ChessRogueSelectCellCsReq {
     }
 
     fn clear(&mut self) {
-        self.KMIPNOOKBMB = 0;
-        self.DOLHMBKDJGL = 0;
+        self.NAIMNIFDKFJ = 0;
+        self.OJPBIKNALIN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueSelectCellCsReq {
         static instance: ChessRogueSelectCellCsReq = ChessRogueSelectCellCsReq {
-            KMIPNOOKBMB: 0,
-            DOLHMBKDJGL: 0,
+            NAIMNIFDKFJ: 0,
+            OJPBIKNALIN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueSelectCellCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fChessRogueSelectCellCsReq.proto\"_\n\x19ChessRogueSelectCellCsReq\
-    \x12\x20\n\x0bKMIPNOOKBMB\x18\n\x20\x01(\rR\x0bKMIPNOOKBMB\x12\x20\n\x0b\
-    DOLHMBKDJGL\x18\x0e\x20\x01(\rR\x0bDOLHMBKDJGLb\x06proto3\
+    \x12\x20\n\x0bNAIMNIFDKFJ\x18\x03\x20\x01(\rR\x0bNAIMNIFDKFJ\x12\x20\n\
+    \x0bOJPBIKNALIN\x18\t\x20\x01(\rR\x0bOJPBIKNALINb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

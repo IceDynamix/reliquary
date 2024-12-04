@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SubmitOfferingItemCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SubmitOfferingItemCsReq.BGKKLJMJGOF)
-    pub BGKKLJMJGOF: u32,
-    // @@protoc_insertion_point(field:SubmitOfferingItemCsReq.OIAECIELHAF)
-    pub OIAECIELHAF: u32,
+    // @@protoc_insertion_point(field:SubmitOfferingItemCsReq.AJCHIGGPBAH)
+    pub AJCHIGGPBAH: u32,
+    // @@protoc_insertion_point(field:SubmitOfferingItemCsReq.LMFFBHEOONE)
+    pub LMFFBHEOONE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SubmitOfferingItemCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl SubmitOfferingItemCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BGKKLJMJGOF",
-            |m: &SubmitOfferingItemCsReq| { &m.BGKKLJMJGOF },
-            |m: &mut SubmitOfferingItemCsReq| { &mut m.BGKKLJMJGOF },
+            "AJCHIGGPBAH",
+            |m: &SubmitOfferingItemCsReq| { &m.AJCHIGGPBAH },
+            |m: &mut SubmitOfferingItemCsReq| { &mut m.AJCHIGGPBAH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OIAECIELHAF",
-            |m: &SubmitOfferingItemCsReq| { &m.OIAECIELHAF },
-            |m: &mut SubmitOfferingItemCsReq| { &mut m.OIAECIELHAF },
+            "LMFFBHEOONE",
+            |m: &SubmitOfferingItemCsReq| { &m.LMFFBHEOONE },
+            |m: &mut SubmitOfferingItemCsReq| { &mut m.LMFFBHEOONE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SubmitOfferingItemCsReq>(
             "SubmitOfferingItemCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for SubmitOfferingItemCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.BGKKLJMJGOF = is.read_uint32()?;
+                80 => {
+                    self.AJCHIGGPBAH = is.read_uint32()?;
                 },
-                32 => {
-                    self.OIAECIELHAF = is.read_uint32()?;
+                88 => {
+                    self.LMFFBHEOONE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for SubmitOfferingItemCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BGKKLJMJGOF != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.BGKKLJMJGOF);
+        if self.AJCHIGGPBAH != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.AJCHIGGPBAH);
         }
-        if self.OIAECIELHAF != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.OIAECIELHAF);
+        if self.LMFFBHEOONE != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.LMFFBHEOONE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for SubmitOfferingItemCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BGKKLJMJGOF != 0 {
-            os.write_uint32(12, self.BGKKLJMJGOF)?;
+        if self.AJCHIGGPBAH != 0 {
+            os.write_uint32(10, self.AJCHIGGPBAH)?;
         }
-        if self.OIAECIELHAF != 0 {
-            os.write_uint32(4, self.OIAECIELHAF)?;
+        if self.LMFFBHEOONE != 0 {
+            os.write_uint32(11, self.LMFFBHEOONE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for SubmitOfferingItemCsReq {
     }
 
     fn clear(&mut self) {
-        self.BGKKLJMJGOF = 0;
-        self.OIAECIELHAF = 0;
+        self.AJCHIGGPBAH = 0;
+        self.LMFFBHEOONE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SubmitOfferingItemCsReq {
         static instance: SubmitOfferingItemCsReq = SubmitOfferingItemCsReq {
-            BGKKLJMJGOF: 0,
-            OIAECIELHAF: 0,
+            AJCHIGGPBAH: 0,
+            LMFFBHEOONE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for SubmitOfferingItemCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dSubmitOfferingItemCsReq.proto\"]\n\x17SubmitOfferingItemCsReq\x12\
-    \x20\n\x0bBGKKLJMJGOF\x18\x0c\x20\x01(\rR\x0bBGKKLJMJGOF\x12\x20\n\x0bOI\
-    AECIELHAF\x18\x04\x20\x01(\rR\x0bOIAECIELHAFb\x06proto3\
+    \x20\n\x0bAJCHIGGPBAH\x18\n\x20\x01(\rR\x0bAJCHIGGPBAH\x12\x20\n\x0bLMFF\
+    BHEOONE\x18\x0b\x20\x01(\rR\x0bLMFFBHEOONEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueWorkbenchSelectFuncCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RogueWorkbenchSelectFuncCsReq.MEJPGIDEBMI)
-    pub MEJPGIDEBMI: u32,
-    // @@protoc_insertion_point(field:RogueWorkbenchSelectFuncCsReq.FHMHCLAMANO)
-    pub FHMHCLAMANO: u32,
+    // @@protoc_insertion_point(field:RogueWorkbenchSelectFuncCsReq.MLGDAOKGNKI)
+    pub MLGDAOKGNKI: u32,
+    // @@protoc_insertion_point(field:RogueWorkbenchSelectFuncCsReq.JCPFOPLBOIM)
+    pub JCPFOPLBOIM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueWorkbenchSelectFuncCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl RogueWorkbenchSelectFuncCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MEJPGIDEBMI",
-            |m: &RogueWorkbenchSelectFuncCsReq| { &m.MEJPGIDEBMI },
-            |m: &mut RogueWorkbenchSelectFuncCsReq| { &mut m.MEJPGIDEBMI },
+            "MLGDAOKGNKI",
+            |m: &RogueWorkbenchSelectFuncCsReq| { &m.MLGDAOKGNKI },
+            |m: &mut RogueWorkbenchSelectFuncCsReq| { &mut m.MLGDAOKGNKI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FHMHCLAMANO",
-            |m: &RogueWorkbenchSelectFuncCsReq| { &m.FHMHCLAMANO },
-            |m: &mut RogueWorkbenchSelectFuncCsReq| { &mut m.FHMHCLAMANO },
+            "JCPFOPLBOIM",
+            |m: &RogueWorkbenchSelectFuncCsReq| { &m.JCPFOPLBOIM },
+            |m: &mut RogueWorkbenchSelectFuncCsReq| { &mut m.JCPFOPLBOIM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueWorkbenchSelectFuncCsReq>(
             "RogueWorkbenchSelectFuncCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for RogueWorkbenchSelectFuncCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.MEJPGIDEBMI = is.read_uint32()?;
+                48 => {
+                    self.MLGDAOKGNKI = is.read_uint32()?;
                 },
-                72 => {
-                    self.FHMHCLAMANO = is.read_uint32()?;
+                120 => {
+                    self.JCPFOPLBOIM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for RogueWorkbenchSelectFuncCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MEJPGIDEBMI != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.MEJPGIDEBMI);
+        if self.MLGDAOKGNKI != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.MLGDAOKGNKI);
         }
-        if self.FHMHCLAMANO != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.FHMHCLAMANO);
+        if self.JCPFOPLBOIM != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.JCPFOPLBOIM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for RogueWorkbenchSelectFuncCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MEJPGIDEBMI != 0 {
-            os.write_uint32(2, self.MEJPGIDEBMI)?;
+        if self.MLGDAOKGNKI != 0 {
+            os.write_uint32(6, self.MLGDAOKGNKI)?;
         }
-        if self.FHMHCLAMANO != 0 {
-            os.write_uint32(9, self.FHMHCLAMANO)?;
+        if self.JCPFOPLBOIM != 0 {
+            os.write_uint32(15, self.JCPFOPLBOIM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for RogueWorkbenchSelectFuncCsReq {
     }
 
     fn clear(&mut self) {
-        self.MEJPGIDEBMI = 0;
-        self.FHMHCLAMANO = 0;
+        self.MLGDAOKGNKI = 0;
+        self.JCPFOPLBOIM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueWorkbenchSelectFuncCsReq {
         static instance: RogueWorkbenchSelectFuncCsReq = RogueWorkbenchSelectFuncCsReq {
-            MEJPGIDEBMI: 0,
-            FHMHCLAMANO: 0,
+            MLGDAOKGNKI: 0,
+            JCPFOPLBOIM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueWorkbenchSelectFuncCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#RogueWorkbenchSelectFuncCsReq.proto\"c\n\x1dRogueWorkbenchSelectFuncC\
-    sReq\x12\x20\n\x0bMEJPGIDEBMI\x18\x02\x20\x01(\rR\x0bMEJPGIDEBMI\x12\x20\
-    \n\x0bFHMHCLAMANO\x18\t\x20\x01(\rR\x0bFHMHCLAMANOb\x06proto3\
+    sReq\x12\x20\n\x0bMLGDAOKGNKI\x18\x06\x20\x01(\rR\x0bMLGDAOKGNKI\x12\x20\
+    \n\x0bJCPFOPLBOIM\x18\x0f\x20\x01(\rR\x0bJCPFOPLBOIMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

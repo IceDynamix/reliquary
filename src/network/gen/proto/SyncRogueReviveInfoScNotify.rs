@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncRogueReviveInfoScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncRogueReviveInfoScNotify.AAJEDMFNKBB)
-    pub AAJEDMFNKBB: ::protobuf::MessageField<super::MIDDDENKGLA::MIDDDENKGLA>,
+    // @@protoc_insertion_point(field:SyncRogueReviveInfoScNotify.MODEHMLELLN)
+    pub MODEHMLELLN: ::protobuf::MessageField<super::DDLGLIAIBKI::DDLGLIAIBKI>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncRogueReviveInfoScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,10 +50,10 @@ impl SyncRogueReviveInfoScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MIDDDENKGLA::MIDDDENKGLA>(
-            "AAJEDMFNKBB",
-            |m: &SyncRogueReviveInfoScNotify| { &m.AAJEDMFNKBB },
-            |m: &mut SyncRogueReviveInfoScNotify| { &mut m.AAJEDMFNKBB },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DDLGLIAIBKI::DDLGLIAIBKI>(
+            "MODEHMLELLN",
+            |m: &SyncRogueReviveInfoScNotify| { &m.MODEHMLELLN },
+            |m: &mut SyncRogueReviveInfoScNotify| { &mut m.MODEHMLELLN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncRogueReviveInfoScNotify>(
             "SyncRogueReviveInfoScNotify",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for SyncRogueReviveInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AAJEDMFNKBB)?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MODEHMLELLN)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for SyncRogueReviveInfoScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.AAJEDMFNKBB.as_ref() {
+        if let Some(v) = self.MODEHMLELLN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -98,8 +98,8 @@ impl ::protobuf::Message for SyncRogueReviveInfoScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.AAJEDMFNKBB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if let Some(v) = self.MODEHMLELLN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -118,13 +118,13 @@ impl ::protobuf::Message for SyncRogueReviveInfoScNotify {
     }
 
     fn clear(&mut self) {
-        self.AAJEDMFNKBB.clear();
+        self.MODEHMLELLN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncRogueReviveInfoScNotify {
         static instance: SyncRogueReviveInfoScNotify = SyncRogueReviveInfoScNotify {
-            AAJEDMFNKBB: ::protobuf::MessageField::none(),
+            MODEHMLELLN: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,9 +149,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueReviveInfoScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!SyncRogueReviveInfoScNotify.proto\x1a\x11MIDDDENKGLA.proto\"M\n\x1bSy\
-    ncRogueReviveInfoScNotify\x12.\n\x0bAAJEDMFNKBB\x18\x01\x20\x01(\x0b2\
-    \x0c.MIDDDENKGLAR\x0bAAJEDMFNKBBb\x06proto3\
+    \n!SyncRogueReviveInfoScNotify.proto\x1a\x11DDLGLIAIBKI.proto\"M\n\x1bSy\
+    ncRogueReviveInfoScNotify\x12.\n\x0bMODEHMLELLN\x18\x0e\x20\x01(\x0b2\
+    \x0c.DDLGLIAIBKIR\x0bMODEHMLELLNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -169,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::MIDDDENKGLA::file_descriptor().clone());
+            deps.push(super::DDLGLIAIBKI::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SyncRogueReviveInfoScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

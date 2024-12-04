@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StaminaInfoScNotify {
     // message fields
-    // @@protoc_insertion_point(field:StaminaInfoScNotify.LNBLCOHNANF)
-    pub LNBLCOHNANF: i64,
-    // @@protoc_insertion_point(field:StaminaInfoScNotify.JAHDLPMMDPF)
-    pub JAHDLPMMDPF: i64,
-    // @@protoc_insertion_point(field:StaminaInfoScNotify.IFKFMCNPPJD)
-    pub IFKFMCNPPJD: u32,
-    // @@protoc_insertion_point(field:StaminaInfoScNotify.LAKCDKFALKN)
-    pub LAKCDKFALKN: u32,
+    // @@protoc_insertion_point(field:StaminaInfoScNotify.reserve_stamina)
+    pub reserve_stamina: u32,
+    // @@protoc_insertion_point(field:StaminaInfoScNotify.stamina)
+    pub stamina: u32,
+    // @@protoc_insertion_point(field:StaminaInfoScNotify.OMLFCKHIGNA)
+    pub OMLFCKHIGNA: i64,
+    // @@protoc_insertion_point(field:StaminaInfoScNotify.next_recover_time)
+    pub next_recover_time: i64,
     // special fields
     // @@protoc_insertion_point(special_field:StaminaInfoScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl StaminaInfoScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LNBLCOHNANF",
-            |m: &StaminaInfoScNotify| { &m.LNBLCOHNANF },
-            |m: &mut StaminaInfoScNotify| { &mut m.LNBLCOHNANF },
+            "reserve_stamina",
+            |m: &StaminaInfoScNotify| { &m.reserve_stamina },
+            |m: &mut StaminaInfoScNotify| { &mut m.reserve_stamina },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JAHDLPMMDPF",
-            |m: &StaminaInfoScNotify| { &m.JAHDLPMMDPF },
-            |m: &mut StaminaInfoScNotify| { &mut m.JAHDLPMMDPF },
+            "stamina",
+            |m: &StaminaInfoScNotify| { &m.stamina },
+            |m: &mut StaminaInfoScNotify| { &mut m.stamina },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IFKFMCNPPJD",
-            |m: &StaminaInfoScNotify| { &m.IFKFMCNPPJD },
-            |m: &mut StaminaInfoScNotify| { &mut m.IFKFMCNPPJD },
+            "OMLFCKHIGNA",
+            |m: &StaminaInfoScNotify| { &m.OMLFCKHIGNA },
+            |m: &mut StaminaInfoScNotify| { &mut m.OMLFCKHIGNA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LAKCDKFALKN",
-            |m: &StaminaInfoScNotify| { &m.LAKCDKFALKN },
-            |m: &mut StaminaInfoScNotify| { &mut m.LAKCDKFALKN },
+            "next_recover_time",
+            |m: &StaminaInfoScNotify| { &m.next_recover_time },
+            |m: &mut StaminaInfoScNotify| { &mut m.next_recover_time },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StaminaInfoScNotify>(
             "StaminaInfoScNotify",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for StaminaInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.LNBLCOHNANF = is.read_int64()?;
-                },
-                24 => {
-                    self.JAHDLPMMDPF = is.read_int64()?;
-                },
                 120 => {
-                    self.IFKFMCNPPJD = is.read_uint32()?;
+                    self.reserve_stamina = is.read_uint32()?;
                 },
-                64 => {
-                    self.LAKCDKFALKN = is.read_uint32()?;
+                56 => {
+                    self.stamina = is.read_uint32()?;
+                },
+                80 => {
+                    self.OMLFCKHIGNA = is.read_int64()?;
+                },
+                96 => {
+                    self.next_recover_time = is.read_int64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,17 +118,17 @@ impl ::protobuf::Message for StaminaInfoScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LNBLCOHNANF != 0 {
-            my_size += ::protobuf::rt::int64_size(6, self.LNBLCOHNANF);
+        if self.reserve_stamina != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.reserve_stamina);
         }
-        if self.JAHDLPMMDPF != 0 {
-            my_size += ::protobuf::rt::int64_size(3, self.JAHDLPMMDPF);
+        if self.stamina != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.stamina);
         }
-        if self.IFKFMCNPPJD != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.IFKFMCNPPJD);
+        if self.OMLFCKHIGNA != 0 {
+            my_size += ::protobuf::rt::int64_size(10, self.OMLFCKHIGNA);
         }
-        if self.LAKCDKFALKN != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.LAKCDKFALKN);
+        if self.next_recover_time != 0 {
+            my_size += ::protobuf::rt::int64_size(12, self.next_recover_time);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for StaminaInfoScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LNBLCOHNANF != 0 {
-            os.write_int64(6, self.LNBLCOHNANF)?;
+        if self.reserve_stamina != 0 {
+            os.write_uint32(15, self.reserve_stamina)?;
         }
-        if self.JAHDLPMMDPF != 0 {
-            os.write_int64(3, self.JAHDLPMMDPF)?;
+        if self.stamina != 0 {
+            os.write_uint32(7, self.stamina)?;
         }
-        if self.IFKFMCNPPJD != 0 {
-            os.write_uint32(15, self.IFKFMCNPPJD)?;
+        if self.OMLFCKHIGNA != 0 {
+            os.write_int64(10, self.OMLFCKHIGNA)?;
         }
-        if self.LAKCDKFALKN != 0 {
-            os.write_uint32(8, self.LAKCDKFALKN)?;
+        if self.next_recover_time != 0 {
+            os.write_int64(12, self.next_recover_time)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for StaminaInfoScNotify {
     }
 
     fn clear(&mut self) {
-        self.LNBLCOHNANF = 0;
-        self.JAHDLPMMDPF = 0;
-        self.IFKFMCNPPJD = 0;
-        self.LAKCDKFALKN = 0;
+        self.reserve_stamina = 0;
+        self.stamina = 0;
+        self.OMLFCKHIGNA = 0;
+        self.next_recover_time = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StaminaInfoScNotify {
         static instance: StaminaInfoScNotify = StaminaInfoScNotify {
-            LNBLCOHNANF: 0,
-            JAHDLPMMDPF: 0,
-            IFKFMCNPPJD: 0,
-            LAKCDKFALKN: 0,
+            reserve_stamina: 0,
+            stamina: 0,
+            OMLFCKHIGNA: 0,
+            next_recover_time: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for StaminaInfoScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19StaminaInfoScNotify.proto\"\x9d\x01\n\x13StaminaInfoScNotify\x12\
-    \x20\n\x0bLNBLCOHNANF\x18\x06\x20\x01(\x03R\x0bLNBLCOHNANF\x12\x20\n\x0b\
-    JAHDLPMMDPF\x18\x03\x20\x01(\x03R\x0bJAHDLPMMDPF\x12\x20\n\x0bIFKFMCNPPJ\
-    D\x18\x0f\x20\x01(\rR\x0bIFKFMCNPPJD\x12\x20\n\x0bLAKCDKFALKN\x18\x08\
-    \x20\x01(\rR\x0bLAKCDKFALKNb\x06proto3\
+    \n\x19StaminaInfoScNotify.proto\"\xa6\x01\n\x13StaminaInfoScNotify\x12'\
+    \n\x0freserve_stamina\x18\x0f\x20\x01(\rR\x0ereserveStamina\x12\x18\n\
+    \x07stamina\x18\x07\x20\x01(\rR\x07stamina\x12\x20\n\x0bOMLFCKHIGNA\x18\
+    \n\x20\x01(\x03R\x0bOMLFCKHIGNA\x12*\n\x11next_recover_time\x18\x0c\x20\
+    \x01(\x03R\x0fnextRecoverTimeB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

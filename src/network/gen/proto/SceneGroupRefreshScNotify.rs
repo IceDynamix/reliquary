@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneGroupRefreshScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SceneGroupRefreshScNotify.DKOKPJIJHHN)
-    pub DKOKPJIJHHN: ::std::vec::Vec<super::MGGBHINDMNN::MGGBHINDMNN>,
+    // @@protoc_insertion_point(field:SceneGroupRefreshScNotify.group_refresh_info)
+    pub group_refresh_info: ::std::vec::Vec<super::SceneGroupRefreshInfo::SceneGroupRefreshInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:SceneGroupRefreshScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl SceneGroupRefreshScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DKOKPJIJHHN",
-            |m: &SceneGroupRefreshScNotify| { &m.DKOKPJIJHHN },
-            |m: &mut SceneGroupRefreshScNotify| { &mut m.DKOKPJIJHHN },
+            "group_refresh_info",
+            |m: &SceneGroupRefreshScNotify| { &m.group_refresh_info },
+            |m: &mut SceneGroupRefreshScNotify| { &mut m.group_refresh_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SceneGroupRefreshScNotify>(
             "SceneGroupRefreshScNotify",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for SceneGroupRefreshScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    self.DKOKPJIJHHN.push(is.read_message()?);
+                106 => {
+                    self.group_refresh_info.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for SceneGroupRefreshScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.DKOKPJIJHHN {
+        for value in &self.group_refresh_info {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -98,8 +98,8 @@ impl ::protobuf::Message for SceneGroupRefreshScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.DKOKPJIJHHN {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        for v in &self.group_refresh_info {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -118,13 +118,13 @@ impl ::protobuf::Message for SceneGroupRefreshScNotify {
     }
 
     fn clear(&mut self) {
-        self.DKOKPJIJHHN.clear();
+        self.group_refresh_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneGroupRefreshScNotify {
         static instance: SceneGroupRefreshScNotify = SceneGroupRefreshScNotify {
-            DKOKPJIJHHN: ::std::vec::Vec::new(),
+            group_refresh_info: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,9 +149,10 @@ impl ::protobuf::reflect::ProtobufValue for SceneGroupRefreshScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fSceneGroupRefreshScNotify.proto\x1a\x11MGGBHINDMNN.proto\"K\n\x19S\
-    ceneGroupRefreshScNotify\x12.\n\x0bDKOKPJIJHHN\x18\x08\x20\x03(\x0b2\x0c\
-    .MGGBHINDMNNR\x0bDKOKPJIJHHNb\x06proto3\
+    \n\x1fSceneGroupRefreshScNotify.proto\x1a\x1bSceneGroupRefreshInfo.proto\
+    \"a\n\x19SceneGroupRefreshScNotify\x12D\n\x12group_refresh_info\x18\r\
+    \x20\x03(\x0b2\x16.SceneGroupRefreshInfoR\x10groupRefreshInfoB\x15\n\x13\
+    emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -169,7 +170,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::MGGBHINDMNN::file_descriptor().clone());
+            deps.push(super::SceneGroupRefreshInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SceneGroupRefreshScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TextJoinSaveScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TextJoinSaveScRsp.AINAOENMOME)
-    pub AINAOENMOME: ::std::string::String,
-    // @@protoc_insertion_point(field:TextJoinSaveScRsp.OCIJJOLCNBE)
-    pub OCIJJOLCNBE: u32,
-    // @@protoc_insertion_point(field:TextJoinSaveScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:TextJoinSaveScRsp.PPPJDALAKIG)
-    pub PPPJDALAKIG: u32,
+    // @@protoc_insertion_point(field:TextJoinSaveScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:TextJoinSaveScRsp.NKEANFPKDMN)
+    pub NKEANFPKDMN: u32,
+    // @@protoc_insertion_point(field:TextJoinSaveScRsp.PGHNMIDJOAC)
+    pub PGHNMIDJOAC: u32,
+    // @@protoc_insertion_point(field:TextJoinSaveScRsp.EANJBBEKKII)
+    pub EANJBBEKKII: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:TextJoinSaveScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl TextJoinSaveScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AINAOENMOME",
-            |m: &TextJoinSaveScRsp| { &m.AINAOENMOME },
-            |m: &mut TextJoinSaveScRsp| { &mut m.AINAOENMOME },
+            "ADADHIHDHJC",
+            |m: &TextJoinSaveScRsp| { &m.ADADHIHDHJC },
+            |m: &mut TextJoinSaveScRsp| { &mut m.ADADHIHDHJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OCIJJOLCNBE",
-            |m: &TextJoinSaveScRsp| { &m.OCIJJOLCNBE },
-            |m: &mut TextJoinSaveScRsp| { &mut m.OCIJJOLCNBE },
+            "NKEANFPKDMN",
+            |m: &TextJoinSaveScRsp| { &m.NKEANFPKDMN },
+            |m: &mut TextJoinSaveScRsp| { &mut m.NKEANFPKDMN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &TextJoinSaveScRsp| { &m.retcode },
-            |m: &mut TextJoinSaveScRsp| { &mut m.retcode },
+            "PGHNMIDJOAC",
+            |m: &TextJoinSaveScRsp| { &m.PGHNMIDJOAC },
+            |m: &mut TextJoinSaveScRsp| { &mut m.PGHNMIDJOAC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PPPJDALAKIG",
-            |m: &TextJoinSaveScRsp| { &m.PPPJDALAKIG },
-            |m: &mut TextJoinSaveScRsp| { &mut m.PPPJDALAKIG },
+            "EANJBBEKKII",
+            |m: &TextJoinSaveScRsp| { &m.EANJBBEKKII },
+            |m: &mut TextJoinSaveScRsp| { &mut m.EANJBBEKKII },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TextJoinSaveScRsp>(
             "TextJoinSaveScRsp",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for TextJoinSaveScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    self.AINAOENMOME = is.read_string()?;
-                },
-                80 => {
-                    self.OCIJJOLCNBE = is.read_uint32()?;
-                },
                 112 => {
-                    self.retcode = is.read_uint32()?;
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                48 => {
-                    self.PPPJDALAKIG = is.read_uint32()?;
+                64 => {
+                    self.NKEANFPKDMN = is.read_uint32()?;
+                },
+                72 => {
+                    self.PGHNMIDJOAC = is.read_uint32()?;
+                },
+                82 => {
+                    self.EANJBBEKKII = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,17 +118,17 @@ impl ::protobuf::Message for TextJoinSaveScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.AINAOENMOME.is_empty() {
-            my_size += ::protobuf::rt::string_size(3, &self.AINAOENMOME);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.ADADHIHDHJC);
         }
-        if self.OCIJJOLCNBE != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.OCIJJOLCNBE);
+        if self.NKEANFPKDMN != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.NKEANFPKDMN);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+        if self.PGHNMIDJOAC != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.PGHNMIDJOAC);
         }
-        if self.PPPJDALAKIG != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.PPPJDALAKIG);
+        if !self.EANJBBEKKII.is_empty() {
+            my_size += ::protobuf::rt::string_size(10, &self.EANJBBEKKII);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for TextJoinSaveScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.AINAOENMOME.is_empty() {
-            os.write_string(3, &self.AINAOENMOME)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(14, self.ADADHIHDHJC)?;
         }
-        if self.OCIJJOLCNBE != 0 {
-            os.write_uint32(10, self.OCIJJOLCNBE)?;
+        if self.NKEANFPKDMN != 0 {
+            os.write_uint32(8, self.NKEANFPKDMN)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+        if self.PGHNMIDJOAC != 0 {
+            os.write_uint32(9, self.PGHNMIDJOAC)?;
         }
-        if self.PPPJDALAKIG != 0 {
-            os.write_uint32(6, self.PPPJDALAKIG)?;
+        if !self.EANJBBEKKII.is_empty() {
+            os.write_string(10, &self.EANJBBEKKII)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for TextJoinSaveScRsp {
     }
 
     fn clear(&mut self) {
-        self.AINAOENMOME.clear();
-        self.OCIJJOLCNBE = 0;
-        self.retcode = 0;
-        self.PPPJDALAKIG = 0;
+        self.ADADHIHDHJC = 0;
+        self.NKEANFPKDMN = 0;
+        self.PGHNMIDJOAC = 0;
+        self.EANJBBEKKII.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TextJoinSaveScRsp {
         static instance: TextJoinSaveScRsp = TextJoinSaveScRsp {
-            AINAOENMOME: ::std::string::String::new(),
-            OCIJJOLCNBE: 0,
-            retcode: 0,
-            PPPJDALAKIG: 0,
+            ADADHIHDHJC: 0,
+            NKEANFPKDMN: 0,
+            PGHNMIDJOAC: 0,
+            EANJBBEKKII: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for TextJoinSaveScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17TextJoinSaveScRsp.proto\"\x93\x01\n\x11TextJoinSaveScRsp\x12\x20\n\
-    \x0bAINAOENMOME\x18\x03\x20\x01(\tR\x0bAINAOENMOME\x12\x20\n\x0bOCIJJOLC\
-    NBE\x18\n\x20\x01(\rR\x0bOCIJJOLCNBE\x12\x18\n\x07retcode\x18\x0e\x20\
-    \x01(\rR\x07retcode\x12\x20\n\x0bPPPJDALAKIG\x18\x06\x20\x01(\rR\x0bPPPJ\
-    DALAKIGb\x06proto3\
+    \n\x17TextJoinSaveScRsp.proto\"\x9b\x01\n\x11TextJoinSaveScRsp\x12\x20\n\
+    \x0bADADHIHDHJC\x18\x0e\x20\x01(\rR\x0bADADHIHDHJC\x12\x20\n\x0bNKEANFPK\
+    DMN\x18\x08\x20\x01(\rR\x0bNKEANFPKDMN\x12\x20\n\x0bPGHNMIDJOAC\x18\t\
+    \x20\x01(\rR\x0bPGHNMIDJOAC\x12\x20\n\x0bEANJBBEKKII\x18\n\x20\x01(\tR\
+    \x0bEANJBBEKKIIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

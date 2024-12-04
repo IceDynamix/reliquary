@@ -29,18 +29,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HeliobusStartRaidCsReq {
     // message fields
-    // @@protoc_insertion_point(field:HeliobusStartRaidCsReq.MEJPGIDEBMI)
-    pub MEJPGIDEBMI: u32,
-    // @@protoc_insertion_point(field:HeliobusStartRaidCsReq.LNEDFBLNHEN)
-    pub LNEDFBLNHEN: u32,
-    // @@protoc_insertion_point(field:HeliobusStartRaidCsReq.BEDDOLCOMPO)
-    pub BEDDOLCOMPO: bool,
-    // @@protoc_insertion_point(field:HeliobusStartRaidCsReq.OGIOAKBPMAE)
-    pub OGIOAKBPMAE: u32,
-    // @@protoc_insertion_point(field:HeliobusStartRaidCsReq.avatar_list)
-    pub avatar_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:HeliobusStartRaidCsReq.JFPOBLGOPCP)
-    pub JFPOBLGOPCP: u32,
+    // @@protoc_insertion_point(field:HeliobusStartRaidCsReq.JCPFOPLBOIM)
+    pub JCPFOPLBOIM: u32,
+    // @@protoc_insertion_point(field:HeliobusStartRaidCsReq.KDFKCJLHHAF)
+    pub KDFKCJLHHAF: bool,
+    // @@protoc_insertion_point(field:HeliobusStartRaidCsReq.FEBGEDCCLGE)
+    pub FEBGEDCCLGE: u32,
+    // @@protoc_insertion_point(field:HeliobusStartRaidCsReq.ODOAJJGMBCL)
+    pub ODOAJJGMBCL: u32,
+    // @@protoc_insertion_point(field:HeliobusStartRaidCsReq.EMALNMLGANJ)
+    pub EMALNMLGANJ: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:HeliobusStartRaidCsReq.NCPFPAMHAOE)
+    pub NCPFPAMHAOE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HeliobusStartRaidCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,34 +61,34 @@ impl HeliobusStartRaidCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MEJPGIDEBMI",
-            |m: &HeliobusStartRaidCsReq| { &m.MEJPGIDEBMI },
-            |m: &mut HeliobusStartRaidCsReq| { &mut m.MEJPGIDEBMI },
+            "JCPFOPLBOIM",
+            |m: &HeliobusStartRaidCsReq| { &m.JCPFOPLBOIM },
+            |m: &mut HeliobusStartRaidCsReq| { &mut m.JCPFOPLBOIM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LNEDFBLNHEN",
-            |m: &HeliobusStartRaidCsReq| { &m.LNEDFBLNHEN },
-            |m: &mut HeliobusStartRaidCsReq| { &mut m.LNEDFBLNHEN },
+            "KDFKCJLHHAF",
+            |m: &HeliobusStartRaidCsReq| { &m.KDFKCJLHHAF },
+            |m: &mut HeliobusStartRaidCsReq| { &mut m.KDFKCJLHHAF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BEDDOLCOMPO",
-            |m: &HeliobusStartRaidCsReq| { &m.BEDDOLCOMPO },
-            |m: &mut HeliobusStartRaidCsReq| { &mut m.BEDDOLCOMPO },
+            "FEBGEDCCLGE",
+            |m: &HeliobusStartRaidCsReq| { &m.FEBGEDCCLGE },
+            |m: &mut HeliobusStartRaidCsReq| { &mut m.FEBGEDCCLGE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OGIOAKBPMAE",
-            |m: &HeliobusStartRaidCsReq| { &m.OGIOAKBPMAE },
-            |m: &mut HeliobusStartRaidCsReq| { &mut m.OGIOAKBPMAE },
+            "ODOAJJGMBCL",
+            |m: &HeliobusStartRaidCsReq| { &m.ODOAJJGMBCL },
+            |m: &mut HeliobusStartRaidCsReq| { &mut m.ODOAJJGMBCL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_list",
-            |m: &HeliobusStartRaidCsReq| { &m.avatar_list },
-            |m: &mut HeliobusStartRaidCsReq| { &mut m.avatar_list },
+            "EMALNMLGANJ",
+            |m: &HeliobusStartRaidCsReq| { &m.EMALNMLGANJ },
+            |m: &mut HeliobusStartRaidCsReq| { &mut m.EMALNMLGANJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JFPOBLGOPCP",
-            |m: &HeliobusStartRaidCsReq| { &m.JFPOBLGOPCP },
-            |m: &mut HeliobusStartRaidCsReq| { &mut m.JFPOBLGOPCP },
+            "NCPFPAMHAOE",
+            |m: &HeliobusStartRaidCsReq| { &m.NCPFPAMHAOE },
+            |m: &mut HeliobusStartRaidCsReq| { &mut m.NCPFPAMHAOE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HeliobusStartRaidCsReq>(
             "HeliobusStartRaidCsReq",
@@ -108,26 +108,26 @@ impl ::protobuf::Message for HeliobusStartRaidCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.MEJPGIDEBMI = is.read_uint32()?;
-                },
-                120 => {
-                    self.LNEDFBLNHEN = is.read_uint32()?;
-                },
-                48 => {
-                    self.BEDDOLCOMPO = is.read_bool()?;
-                },
-                24 => {
-                    self.OGIOAKBPMAE = is.read_uint32()?;
-                },
-                82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.avatar_list)?;
-                },
-                80 => {
-                    self.avatar_list.push(is.read_uint32()?);
+                88 => {
+                    self.JCPFOPLBOIM = is.read_uint32()?;
                 },
                 40 => {
-                    self.JFPOBLGOPCP = is.read_uint32()?;
+                    self.KDFKCJLHHAF = is.read_bool()?;
+                },
+                80 => {
+                    self.FEBGEDCCLGE = is.read_uint32()?;
+                },
+                24 => {
+                    self.ODOAJJGMBCL = is.read_uint32()?;
+                },
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.EMALNMLGANJ)?;
+                },
+                64 => {
+                    self.EMALNMLGANJ.push(is.read_uint32()?);
+                },
+                120 => {
+                    self.NCPFPAMHAOE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -141,23 +141,23 @@ impl ::protobuf::Message for HeliobusStartRaidCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MEJPGIDEBMI != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.MEJPGIDEBMI);
+        if self.JCPFOPLBOIM != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.JCPFOPLBOIM);
         }
-        if self.LNEDFBLNHEN != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.LNEDFBLNHEN);
-        }
-        if self.BEDDOLCOMPO != false {
+        if self.KDFKCJLHHAF != false {
             my_size += 1 + 1;
         }
-        if self.OGIOAKBPMAE != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.OGIOAKBPMAE);
+        if self.FEBGEDCCLGE != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.FEBGEDCCLGE);
         }
-        for value in &self.avatar_list {
-            my_size += ::protobuf::rt::uint32_size(10, *value);
+        if self.ODOAJJGMBCL != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.ODOAJJGMBCL);
+        }
+        for value in &self.EMALNMLGANJ {
+            my_size += ::protobuf::rt::uint32_size(8, *value);
         };
-        if self.JFPOBLGOPCP != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.JFPOBLGOPCP);
+        if self.NCPFPAMHAOE != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.NCPFPAMHAOE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -165,23 +165,23 @@ impl ::protobuf::Message for HeliobusStartRaidCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MEJPGIDEBMI != 0 {
-            os.write_uint32(2, self.MEJPGIDEBMI)?;
+        if self.JCPFOPLBOIM != 0 {
+            os.write_uint32(11, self.JCPFOPLBOIM)?;
         }
-        if self.LNEDFBLNHEN != 0 {
-            os.write_uint32(15, self.LNEDFBLNHEN)?;
+        if self.KDFKCJLHHAF != false {
+            os.write_bool(5, self.KDFKCJLHHAF)?;
         }
-        if self.BEDDOLCOMPO != false {
-            os.write_bool(6, self.BEDDOLCOMPO)?;
+        if self.FEBGEDCCLGE != 0 {
+            os.write_uint32(10, self.FEBGEDCCLGE)?;
         }
-        if self.OGIOAKBPMAE != 0 {
-            os.write_uint32(3, self.OGIOAKBPMAE)?;
+        if self.ODOAJJGMBCL != 0 {
+            os.write_uint32(3, self.ODOAJJGMBCL)?;
         }
-        for v in &self.avatar_list {
-            os.write_uint32(10, *v)?;
+        for v in &self.EMALNMLGANJ {
+            os.write_uint32(8, *v)?;
         };
-        if self.JFPOBLGOPCP != 0 {
-            os.write_uint32(5, self.JFPOBLGOPCP)?;
+        if self.NCPFPAMHAOE != 0 {
+            os.write_uint32(15, self.NCPFPAMHAOE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -200,23 +200,23 @@ impl ::protobuf::Message for HeliobusStartRaidCsReq {
     }
 
     fn clear(&mut self) {
-        self.MEJPGIDEBMI = 0;
-        self.LNEDFBLNHEN = 0;
-        self.BEDDOLCOMPO = false;
-        self.OGIOAKBPMAE = 0;
-        self.avatar_list.clear();
-        self.JFPOBLGOPCP = 0;
+        self.JCPFOPLBOIM = 0;
+        self.KDFKCJLHHAF = false;
+        self.FEBGEDCCLGE = 0;
+        self.ODOAJJGMBCL = 0;
+        self.EMALNMLGANJ.clear();
+        self.NCPFPAMHAOE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HeliobusStartRaidCsReq {
         static instance: HeliobusStartRaidCsReq = HeliobusStartRaidCsReq {
-            MEJPGIDEBMI: 0,
-            LNEDFBLNHEN: 0,
-            BEDDOLCOMPO: false,
-            OGIOAKBPMAE: 0,
-            avatar_list: ::std::vec::Vec::new(),
-            JFPOBLGOPCP: 0,
+            JCPFOPLBOIM: 0,
+            KDFKCJLHHAF: false,
+            FEBGEDCCLGE: 0,
+            ODOAJJGMBCL: 0,
+            EMALNMLGANJ: ::std::vec::Vec::new(),
+            NCPFPAMHAOE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -241,13 +241,13 @@ impl ::protobuf::reflect::ProtobufValue for HeliobusStartRaidCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cHeliobusStartRaidCsReq.proto\"\xe3\x01\n\x16HeliobusStartRaidCsReq\
-    \x12\x20\n\x0bMEJPGIDEBMI\x18\x02\x20\x01(\rR\x0bMEJPGIDEBMI\x12\x20\n\
-    \x0bLNEDFBLNHEN\x18\x0f\x20\x01(\rR\x0bLNEDFBLNHEN\x12\x20\n\x0bBEDDOLCO\
-    MPO\x18\x06\x20\x01(\x08R\x0bBEDDOLCOMPO\x12\x20\n\x0bOGIOAKBPMAE\x18\
-    \x03\x20\x01(\rR\x0bOGIOAKBPMAE\x12\x1f\n\x0bavatar_list\x18\n\x20\x03(\
-    \rR\navatarList\x12\x20\n\x0bJFPOBLGOPCP\x18\x05\x20\x01(\rR\x0bJFPOBLGO\
-    PCPb\x06proto3\
+    \n\x1cHeliobusStartRaidCsReq.proto\"\xe4\x01\n\x16HeliobusStartRaidCsReq\
+    \x12\x20\n\x0bJCPFOPLBOIM\x18\x0b\x20\x01(\rR\x0bJCPFOPLBOIM\x12\x20\n\
+    \x0bKDFKCJLHHAF\x18\x05\x20\x01(\x08R\x0bKDFKCJLHHAF\x12\x20\n\x0bFEBGED\
+    CCLGE\x18\n\x20\x01(\rR\x0bFEBGEDCCLGE\x12\x20\n\x0bODOAJJGMBCL\x18\x03\
+    \x20\x01(\rR\x0bODOAJJGMBCL\x12\x20\n\x0bEMALNMLGANJ\x18\x08\x20\x03(\rR\
+    \x0bEMALNMLGANJ\x12\x20\n\x0bNCPFPAMHAOE\x18\x0f\x20\x01(\rR\x0bNCPFPAMH\
+    AOEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

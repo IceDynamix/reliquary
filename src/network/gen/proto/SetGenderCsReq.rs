@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetGenderCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetGenderCsReq.GLBIOLFDHOL)
-    pub GLBIOLFDHOL: ::protobuf::EnumOrUnknown<super::Gender::Gender>,
+    // @@protoc_insertion_point(field:SetGenderCsReq.ANKOFOLEEBL)
+    pub ANKOFOLEEBL: ::protobuf::EnumOrUnknown<super::Gender::Gender>,
     // special fields
     // @@protoc_insertion_point(special_field:SetGenderCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl SetGenderCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GLBIOLFDHOL",
-            |m: &SetGenderCsReq| { &m.GLBIOLFDHOL },
-            |m: &mut SetGenderCsReq| { &mut m.GLBIOLFDHOL },
+            "ANKOFOLEEBL",
+            |m: &SetGenderCsReq| { &m.ANKOFOLEEBL },
+            |m: &mut SetGenderCsReq| { &mut m.ANKOFOLEEBL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetGenderCsReq>(
             "SetGenderCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for SetGenderCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.GLBIOLFDHOL = is.read_enum_or_unknown()?;
+                56 => {
+                    self.ANKOFOLEEBL = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for SetGenderCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GLBIOLFDHOL != ::protobuf::EnumOrUnknown::new(super::Gender::Gender::GenderNone) {
-            my_size += ::protobuf::rt::int32_size(15, self.GLBIOLFDHOL.value());
+        if self.ANKOFOLEEBL != ::protobuf::EnumOrUnknown::new(super::Gender::Gender::GenderNone) {
+            my_size += ::protobuf::rt::int32_size(7, self.ANKOFOLEEBL.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for SetGenderCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GLBIOLFDHOL != ::protobuf::EnumOrUnknown::new(super::Gender::Gender::GenderNone) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.GLBIOLFDHOL))?;
+        if self.ANKOFOLEEBL != ::protobuf::EnumOrUnknown::new(super::Gender::Gender::GenderNone) {
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.ANKOFOLEEBL))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for SetGenderCsReq {
     }
 
     fn clear(&mut self) {
-        self.GLBIOLFDHOL = ::protobuf::EnumOrUnknown::new(super::Gender::Gender::GenderNone);
+        self.ANKOFOLEEBL = ::protobuf::EnumOrUnknown::new(super::Gender::Gender::GenderNone);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetGenderCsReq {
         static instance: SetGenderCsReq = SetGenderCsReq {
-            GLBIOLFDHOL: ::protobuf::EnumOrUnknown::from_i32(0),
+            ANKOFOLEEBL: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for SetGenderCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14SetGenderCsReq.proto\x1a\x0cGender.proto\";\n\x0eSetGenderCsReq\
-    \x12)\n\x0bGLBIOLFDHOL\x18\x0f\x20\x01(\x0e2\x07.GenderR\x0bGLBIOLFDHOLb\
+    \x12)\n\x0bANKOFOLEEBL\x18\x07\x20\x01(\x0e2\x07.GenderR\x0bANKOFOLEEBLb\
     \x06proto3\
 ";
 

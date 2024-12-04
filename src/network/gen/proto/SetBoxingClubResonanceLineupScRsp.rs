@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetBoxingClubResonanceLineupScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SetBoxingClubResonanceLineupScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:SetBoxingClubResonanceLineupScRsp.OBGEJFJDKKF)
-    pub OBGEJFJDKKF: ::protobuf::MessageField<super::LJLLHIJKKOH::LJLLHIJKKOH>,
+    // @@protoc_insertion_point(field:SetBoxingClubResonanceLineupScRsp.AKFANIJHPCN)
+    pub AKFANIJHPCN: ::protobuf::MessageField<super::HKFBMLKMOMJ::HKFBMLKMOMJ>,
+    // @@protoc_insertion_point(field:SetBoxingClubResonanceLineupScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SetBoxingClubResonanceLineupScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl SetBoxingClubResonanceLineupScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &SetBoxingClubResonanceLineupScRsp| { &m.retcode },
-            |m: &mut SetBoxingClubResonanceLineupScRsp| { &mut m.retcode },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HKFBMLKMOMJ::HKFBMLKMOMJ>(
+            "AKFANIJHPCN",
+            |m: &SetBoxingClubResonanceLineupScRsp| { &m.AKFANIJHPCN },
+            |m: &mut SetBoxingClubResonanceLineupScRsp| { &mut m.AKFANIJHPCN },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LJLLHIJKKOH::LJLLHIJKKOH>(
-            "OBGEJFJDKKF",
-            |m: &SetBoxingClubResonanceLineupScRsp| { &m.OBGEJFJDKKF },
-            |m: &mut SetBoxingClubResonanceLineupScRsp| { &mut m.OBGEJFJDKKF },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ADADHIHDHJC",
+            |m: &SetBoxingClubResonanceLineupScRsp| { &m.ADADHIHDHJC },
+            |m: &mut SetBoxingClubResonanceLineupScRsp| { &mut m.ADADHIHDHJC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetBoxingClubResonanceLineupScRsp>(
             "SetBoxingClubResonanceLineupScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for SetBoxingClubResonanceLineupScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.retcode = is.read_uint32()?;
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AKFANIJHPCN)?;
                 },
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OBGEJFJDKKF)?;
+                120 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,12 +98,12 @@ impl ::protobuf::Message for SetBoxingClubResonanceLineupScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
-        }
-        if let Some(v) = self.OBGEJFJDKKF.as_ref() {
+        if let Some(v) = self.AKFANIJHPCN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.ADADHIHDHJC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for SetBoxingClubResonanceLineupScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+        if let Some(v) = self.AKFANIJHPCN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
-        if let Some(v) = self.OBGEJFJDKKF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(15, self.ADADHIHDHJC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for SetBoxingClubResonanceLineupScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.OBGEJFJDKKF.clear();
+        self.AKFANIJHPCN.clear();
+        self.ADADHIHDHJC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetBoxingClubResonanceLineupScRsp {
         static instance: SetBoxingClubResonanceLineupScRsp = SetBoxingClubResonanceLineupScRsp {
-            retcode: 0,
-            OBGEJFJDKKF: ::protobuf::MessageField::none(),
+            AKFANIJHPCN: ::protobuf::MessageField::none(),
+            ADADHIHDHJC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for SetBoxingClubResonanceLineupScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'SetBoxingClubResonanceLineupScRsp.proto\x1a\x11LJLLHIJKKOH.proto\"m\n\
-    !SetBoxingClubResonanceLineupScRsp\x12\x18\n\x07retcode\x18\t\x20\x01(\r\
-    R\x07retcode\x12.\n\x0bOBGEJFJDKKF\x18\x03\x20\x01(\x0b2\x0c.LJLLHIJKKOH\
-    R\x0bOBGEJFJDKKFb\x06proto3\
+    \n'SetBoxingClubResonanceLineupScRsp.proto\x1a\x11HKFBMLKMOMJ.proto\"u\n\
+    !SetBoxingClubResonanceLineupScRsp\x12.\n\x0bAKFANIJHPCN\x18\x05\x20\x01\
+    (\x0b2\x0c.HKFBMLKMOMJR\x0bAKFANIJHPCN\x12\x20\n\x0bADADHIHDHJC\x18\x0f\
+    \x20\x01(\rR\x0bADADHIHDHJCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::LJLLHIJKKOH::file_descriptor().clone());
+            deps.push(super::HKFBMLKMOMJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SetBoxingClubResonanceLineupScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

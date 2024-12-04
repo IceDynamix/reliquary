@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyLikeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyLikeScNotify.AHEMHHBFKLC)
-    pub AHEMHHBFKLC: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:MonopolyLikeScNotify.IMIJBGMIOMF)
-    pub IMIJBGMIOMF: u32,
+    // @@protoc_insertion_point(field:MonopolyLikeScNotify.HOLIAAEONPM)
+    pub HOLIAAEONPM: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MonopolyLikeScNotify.HAGGCKLBIIK)
+    pub HAGGCKLBIIK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyLikeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl MonopolyLikeScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "AHEMHHBFKLC",
-            |m: &MonopolyLikeScNotify| { &m.AHEMHHBFKLC },
-            |m: &mut MonopolyLikeScNotify| { &mut m.AHEMHHBFKLC },
+            "HOLIAAEONPM",
+            |m: &MonopolyLikeScNotify| { &m.HOLIAAEONPM },
+            |m: &mut MonopolyLikeScNotify| { &mut m.HOLIAAEONPM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IMIJBGMIOMF",
-            |m: &MonopolyLikeScNotify| { &m.IMIJBGMIOMF },
-            |m: &mut MonopolyLikeScNotify| { &mut m.IMIJBGMIOMF },
+            "HAGGCKLBIIK",
+            |m: &MonopolyLikeScNotify| { &m.HAGGCKLBIIK },
+            |m: &mut MonopolyLikeScNotify| { &mut m.HAGGCKLBIIK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyLikeScNotify>(
             "MonopolyLikeScNotify",
@@ -81,13 +81,13 @@ impl ::protobuf::Message for MonopolyLikeScNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.AHEMHHBFKLC)?;
+                    is.read_repeated_packed_uint32_into(&mut self.HOLIAAEONPM)?;
                 },
                 56 => {
-                    self.AHEMHHBFKLC.push(is.read_uint32()?);
+                    self.HOLIAAEONPM.push(is.read_uint32()?);
                 },
-                104 => {
-                    self.IMIJBGMIOMF = is.read_uint32()?;
+                112 => {
+                    self.HAGGCKLBIIK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,11 +101,11 @@ impl ::protobuf::Message for MonopolyLikeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.AHEMHHBFKLC {
+        for value in &self.HOLIAAEONPM {
             my_size += ::protobuf::rt::uint32_size(7, *value);
         };
-        if self.IMIJBGMIOMF != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.IMIJBGMIOMF);
+        if self.HAGGCKLBIIK != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.HAGGCKLBIIK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,11 +113,11 @@ impl ::protobuf::Message for MonopolyLikeScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.AHEMHHBFKLC {
+        for v in &self.HOLIAAEONPM {
             os.write_uint32(7, *v)?;
         };
-        if self.IMIJBGMIOMF != 0 {
-            os.write_uint32(13, self.IMIJBGMIOMF)?;
+        if self.HAGGCKLBIIK != 0 {
+            os.write_uint32(14, self.HAGGCKLBIIK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -136,15 +136,15 @@ impl ::protobuf::Message for MonopolyLikeScNotify {
     }
 
     fn clear(&mut self) {
-        self.AHEMHHBFKLC.clear();
-        self.IMIJBGMIOMF = 0;
+        self.HOLIAAEONPM.clear();
+        self.HAGGCKLBIIK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyLikeScNotify {
         static instance: MonopolyLikeScNotify = MonopolyLikeScNotify {
-            AHEMHHBFKLC: ::std::vec::Vec::new(),
-            IMIJBGMIOMF: 0,
+            HOLIAAEONPM: ::std::vec::Vec::new(),
+            HAGGCKLBIIK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -170,8 +170,8 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyLikeScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aMonopolyLikeScNotify.proto\"Z\n\x14MonopolyLikeScNotify\x12\x20\n\
-    \x0bAHEMHHBFKLC\x18\x07\x20\x03(\rR\x0bAHEMHHBFKLC\x12\x20\n\x0bIMIJBGMI\
-    OMF\x18\r\x20\x01(\rR\x0bIMIJBGMIOMFb\x06proto3\
+    \x0bHOLIAAEONPM\x18\x07\x20\x03(\rR\x0bHOLIAAEONPM\x12\x20\n\x0bHAGGCKLB\
+    IIK\x18\x0e\x20\x01(\rR\x0bHAGGCKLBIIKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

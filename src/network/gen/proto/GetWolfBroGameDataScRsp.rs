@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetWolfBroGameDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetWolfBroGameDataScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:GetWolfBroGameDataScRsp.IHCOEGEACHG)
-    pub IHCOEGEACHG: ::protobuf::MessageField<super::JMAIBOCHIMA::JMAIBOCHIMA>,
+    // @@protoc_insertion_point(field:GetWolfBroGameDataScRsp.FCMEOJOJIDF)
+    pub FCMEOJOJIDF: ::protobuf::MessageField<super::CDEEDFGAJCP::CDEEDFGAJCP>,
+    // @@protoc_insertion_point(field:GetWolfBroGameDataScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetWolfBroGameDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl GetWolfBroGameDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetWolfBroGameDataScRsp| { &m.retcode },
-            |m: &mut GetWolfBroGameDataScRsp| { &mut m.retcode },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CDEEDFGAJCP::CDEEDFGAJCP>(
+            "FCMEOJOJIDF",
+            |m: &GetWolfBroGameDataScRsp| { &m.FCMEOJOJIDF },
+            |m: &mut GetWolfBroGameDataScRsp| { &mut m.FCMEOJOJIDF },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JMAIBOCHIMA::JMAIBOCHIMA>(
-            "IHCOEGEACHG",
-            |m: &GetWolfBroGameDataScRsp| { &m.IHCOEGEACHG },
-            |m: &mut GetWolfBroGameDataScRsp| { &mut m.IHCOEGEACHG },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ADADHIHDHJC",
+            |m: &GetWolfBroGameDataScRsp| { &m.ADADHIHDHJC },
+            |m: &mut GetWolfBroGameDataScRsp| { &mut m.ADADHIHDHJC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetWolfBroGameDataScRsp>(
             "GetWolfBroGameDataScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for GetWolfBroGameDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.retcode = is.read_uint32()?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FCMEOJOJIDF)?;
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IHCOEGEACHG)?;
+                80 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,12 +98,12 @@ impl ::protobuf::Message for GetWolfBroGameDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
-        }
-        if let Some(v) = self.IHCOEGEACHG.as_ref() {
+        if let Some(v) = self.FCMEOJOJIDF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.ADADHIHDHJC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for GetWolfBroGameDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+        if let Some(v) = self.FCMEOJOJIDF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        if let Some(v) = self.IHCOEGEACHG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(10, self.ADADHIHDHJC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for GetWolfBroGameDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.IHCOEGEACHG.clear();
+        self.FCMEOJOJIDF.clear();
+        self.ADADHIHDHJC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetWolfBroGameDataScRsp {
         static instance: GetWolfBroGameDataScRsp = GetWolfBroGameDataScRsp {
-            retcode: 0,
-            IHCOEGEACHG: ::protobuf::MessageField::none(),
+            FCMEOJOJIDF: ::protobuf::MessageField::none(),
+            ADADHIHDHJC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for GetWolfBroGameDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dGetWolfBroGameDataScRsp.proto\x1a\x11JMAIBOCHIMA.proto\"c\n\x17Get\
-    WolfBroGameDataScRsp\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\
-    \x12.\n\x0bIHCOEGEACHG\x18\r\x20\x01(\x0b2\x0c.JMAIBOCHIMAR\x0bIHCOEGEAC\
-    HGb\x06proto3\
+    \n\x1dGetWolfBroGameDataScRsp.proto\x1a\x11CDEEDFGAJCP.proto\"k\n\x17Get\
+    WolfBroGameDataScRsp\x12.\n\x0bFCMEOJOJIDF\x18\x02\x20\x01(\x0b2\x0c.CDE\
+    EDFGAJCPR\x0bFCMEOJOJIDF\x12\x20\n\x0bADADHIHDHJC\x18\n\x20\x01(\rR\x0bA\
+    DADHIHDHJCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::JMAIBOCHIMA::file_descriptor().clone());
+            deps.push(super::CDEEDFGAJCP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetWolfBroGameDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,18 +29,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartRogueCsReq {
     // message fields
-    // @@protoc_insertion_point(field:StartRogueCsReq.MOICCJNMBBI)
-    pub MOICCJNMBBI: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:StartRogueCsReq.FIOAACNKLPC)
-    pub FIOAACNKLPC: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:StartRogueCsReq.IGBJOAKIOFL)
-    pub IGBJOAKIOFL: u32,
-    // @@protoc_insertion_point(field:StartRogueCsReq.EGENDGPJHON)
-    pub EGENDGPJHON: u32,
-    // @@protoc_insertion_point(field:StartRogueCsReq.OIAECIELHAF)
-    pub OIAECIELHAF: u32,
-    // @@protoc_insertion_point(field:StartRogueCsReq.NGBFEHEJHHO)
-    pub NGBFEHEJHHO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:StartRogueCsReq.base_avatar_id_list)
+    pub base_avatar_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:StartRogueCsReq.trial_avatar_id_list)
+    pub trial_avatar_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:StartRogueCsReq.area_id)
+    pub area_id: u32,
+    // @@protoc_insertion_point(field:StartRogueCsReq.avatar_id_list)
+    pub avatar_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:StartRogueCsReq.interacted_prop_entity_id)
+    pub interacted_prop_entity_id: u32,
+    // @@protoc_insertion_point(field:StartRogueCsReq.aeon_id)
+    pub aeon_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:StartRogueCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,34 +61,34 @@ impl StartRogueCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MOICCJNMBBI",
-            |m: &StartRogueCsReq| { &m.MOICCJNMBBI },
-            |m: &mut StartRogueCsReq| { &mut m.MOICCJNMBBI },
+            "base_avatar_id_list",
+            |m: &StartRogueCsReq| { &m.base_avatar_id_list },
+            |m: &mut StartRogueCsReq| { &mut m.base_avatar_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FIOAACNKLPC",
-            |m: &StartRogueCsReq| { &m.FIOAACNKLPC },
-            |m: &mut StartRogueCsReq| { &mut m.FIOAACNKLPC },
+            "trial_avatar_id_list",
+            |m: &StartRogueCsReq| { &m.trial_avatar_id_list },
+            |m: &mut StartRogueCsReq| { &mut m.trial_avatar_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IGBJOAKIOFL",
-            |m: &StartRogueCsReq| { &m.IGBJOAKIOFL },
-            |m: &mut StartRogueCsReq| { &mut m.IGBJOAKIOFL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EGENDGPJHON",
-            |m: &StartRogueCsReq| { &m.EGENDGPJHON },
-            |m: &mut StartRogueCsReq| { &mut m.EGENDGPJHON },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OIAECIELHAF",
-            |m: &StartRogueCsReq| { &m.OIAECIELHAF },
-            |m: &mut StartRogueCsReq| { &mut m.OIAECIELHAF },
+            "area_id",
+            |m: &StartRogueCsReq| { &m.area_id },
+            |m: &mut StartRogueCsReq| { &mut m.area_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NGBFEHEJHHO",
-            |m: &StartRogueCsReq| { &m.NGBFEHEJHHO },
-            |m: &mut StartRogueCsReq| { &mut m.NGBFEHEJHHO },
+            "avatar_id_list",
+            |m: &StartRogueCsReq| { &m.avatar_id_list },
+            |m: &mut StartRogueCsReq| { &mut m.avatar_id_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "interacted_prop_entity_id",
+            |m: &StartRogueCsReq| { &m.interacted_prop_entity_id },
+            |m: &mut StartRogueCsReq| { &mut m.interacted_prop_entity_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "aeon_id",
+            |m: &StartRogueCsReq| { &m.aeon_id },
+            |m: &mut StartRogueCsReq| { &mut m.aeon_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartRogueCsReq>(
             "StartRogueCsReq",
@@ -108,32 +108,32 @@ impl ::protobuf::Message for StartRogueCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.MOICCJNMBBI)?;
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.base_avatar_id_list)?;
                 },
-                88 => {
-                    self.MOICCJNMBBI.push(is.read_uint32()?);
+                24 => {
+                    self.base_avatar_id_list.push(is.read_uint32()?);
                 },
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FIOAACNKLPC)?;
+                18 => {
+                    is.read_repeated_packed_uint32_into(&mut self.trial_avatar_id_list)?;
                 },
-                104 => {
-                    self.FIOAACNKLPC.push(is.read_uint32()?);
-                },
-                72 => {
-                    self.IGBJOAKIOFL = is.read_uint32()?;
+                16 => {
+                    self.trial_avatar_id_list.push(is.read_uint32()?);
                 },
                 120 => {
-                    self.EGENDGPJHON = is.read_uint32()?;
+                    self.area_id = is.read_uint32()?;
+                },
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.avatar_id_list)?;
+                },
+                48 => {
+                    self.avatar_id_list.push(is.read_uint32()?);
+                },
+                72 => {
+                    self.interacted_prop_entity_id = is.read_uint32()?;
                 },
                 8 => {
-                    self.OIAECIELHAF = is.read_uint32()?;
-                },
-                66 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NGBFEHEJHHO)?;
-                },
-                64 => {
-                    self.NGBFEHEJHHO.push(is.read_uint32()?);
+                    self.aeon_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,48 +147,48 @@ impl ::protobuf::Message for StartRogueCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.MOICCJNMBBI {
-            my_size += ::protobuf::rt::uint32_size(11, *value);
+        for value in &self.base_avatar_id_list {
+            my_size += ::protobuf::rt::uint32_size(3, *value);
         };
-        for value in &self.FIOAACNKLPC {
-            my_size += ::protobuf::rt::uint32_size(13, *value);
+        for value in &self.trial_avatar_id_list {
+            my_size += ::protobuf::rt::uint32_size(2, *value);
         };
-        if self.IGBJOAKIOFL != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.IGBJOAKIOFL);
+        if self.area_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.area_id);
         }
-        if self.EGENDGPJHON != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.EGENDGPJHON);
-        }
-        if self.OIAECIELHAF != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.OIAECIELHAF);
-        }
-        for value in &self.NGBFEHEJHHO {
-            my_size += ::protobuf::rt::uint32_size(8, *value);
+        for value in &self.avatar_id_list {
+            my_size += ::protobuf::rt::uint32_size(6, *value);
         };
+        if self.interacted_prop_entity_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.interacted_prop_entity_id);
+        }
+        if self.aeon_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.aeon_id);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.MOICCJNMBBI {
-            os.write_uint32(11, *v)?;
+        for v in &self.base_avatar_id_list {
+            os.write_uint32(3, *v)?;
         };
-        for v in &self.FIOAACNKLPC {
-            os.write_uint32(13, *v)?;
+        for v in &self.trial_avatar_id_list {
+            os.write_uint32(2, *v)?;
         };
-        if self.IGBJOAKIOFL != 0 {
-            os.write_uint32(9, self.IGBJOAKIOFL)?;
+        if self.area_id != 0 {
+            os.write_uint32(15, self.area_id)?;
         }
-        if self.EGENDGPJHON != 0 {
-            os.write_uint32(15, self.EGENDGPJHON)?;
-        }
-        if self.OIAECIELHAF != 0 {
-            os.write_uint32(1, self.OIAECIELHAF)?;
-        }
-        for v in &self.NGBFEHEJHHO {
-            os.write_uint32(8, *v)?;
+        for v in &self.avatar_id_list {
+            os.write_uint32(6, *v)?;
         };
+        if self.interacted_prop_entity_id != 0 {
+            os.write_uint32(9, self.interacted_prop_entity_id)?;
+        }
+        if self.aeon_id != 0 {
+            os.write_uint32(1, self.aeon_id)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -206,23 +206,23 @@ impl ::protobuf::Message for StartRogueCsReq {
     }
 
     fn clear(&mut self) {
-        self.MOICCJNMBBI.clear();
-        self.FIOAACNKLPC.clear();
-        self.IGBJOAKIOFL = 0;
-        self.EGENDGPJHON = 0;
-        self.OIAECIELHAF = 0;
-        self.NGBFEHEJHHO.clear();
+        self.base_avatar_id_list.clear();
+        self.trial_avatar_id_list.clear();
+        self.area_id = 0;
+        self.avatar_id_list.clear();
+        self.interacted_prop_entity_id = 0;
+        self.aeon_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartRogueCsReq {
         static instance: StartRogueCsReq = StartRogueCsReq {
-            MOICCJNMBBI: ::std::vec::Vec::new(),
-            FIOAACNKLPC: ::std::vec::Vec::new(),
-            IGBJOAKIOFL: 0,
-            EGENDGPJHON: 0,
-            OIAECIELHAF: 0,
-            NGBFEHEJHHO: ::std::vec::Vec::new(),
+            base_avatar_id_list: ::std::vec::Vec::new(),
+            trial_avatar_id_list: ::std::vec::Vec::new(),
+            area_id: 0,
+            avatar_id_list: ::std::vec::Vec::new(),
+            interacted_prop_entity_id: 0,
+            aeon_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -247,12 +247,13 @@ impl ::protobuf::reflect::ProtobufValue for StartRogueCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15StartRogueCsReq.proto\"\xdd\x01\n\x0fStartRogueCsReq\x12\x20\n\x0b\
-    MOICCJNMBBI\x18\x0b\x20\x03(\rR\x0bMOICCJNMBBI\x12\x20\n\x0bFIOAACNKLPC\
-    \x18\r\x20\x03(\rR\x0bFIOAACNKLPC\x12\x20\n\x0bIGBJOAKIOFL\x18\t\x20\x01\
-    (\rR\x0bIGBJOAKIOFL\x12\x20\n\x0bEGENDGPJHON\x18\x0f\x20\x01(\rR\x0bEGEN\
-    DGPJHON\x12\x20\n\x0bOIAECIELHAF\x18\x01\x20\x01(\rR\x0bOIAECIELHAF\x12\
-    \x20\n\x0bNGBFEHEJHHO\x18\x08\x20\x03(\rR\x0bNGBFEHEJHHOb\x06proto3\
+    \n\x15StartRogueCsReq.proto\"\x84\x02\n\x0fStartRogueCsReq\x12-\n\x13bas\
+    e_avatar_id_list\x18\x03\x20\x03(\rR\x10baseAvatarIdList\x12/\n\x14trial\
+    _avatar_id_list\x18\x02\x20\x03(\rR\x11trialAvatarIdList\x12\x17\n\x07ar\
+    ea_id\x18\x0f\x20\x01(\rR\x06areaId\x12$\n\x0eavatar_id_list\x18\x06\x20\
+    \x03(\rR\x0cavatarIdList\x129\n\x19interacted_prop_entity_id\x18\t\x20\
+    \x01(\rR\x16interactedPropEntityId\x12\x17\n\x07aeon_id\x18\x01\x20\x01(\
+    \rR\x06aeonIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

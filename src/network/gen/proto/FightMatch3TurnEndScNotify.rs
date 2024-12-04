@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightMatch3TurnEndScNotify {
     // message fields
-    // @@protoc_insertion_point(field:FightMatch3TurnEndScNotify.DKEICJHIDNO)
-    pub DKEICJHIDNO: ::protobuf::MessageField<super::CFHPMBOAHLA::CFHPMBOAHLA>,
-    // @@protoc_insertion_point(field:FightMatch3TurnEndScNotify.APOGGHFJJJN)
-    pub APOGGHFJJJN: ::protobuf::MessageField<super::CFHPMBOAHLA::CFHPMBOAHLA>,
+    // @@protoc_insertion_point(field:FightMatch3TurnEndScNotify.DOAHIGNLPKP)
+    pub DOAHIGNLPKP: ::protobuf::MessageField<super::JDCEDDGFBGF::JDCEDDGFBGF>,
+    // @@protoc_insertion_point(field:FightMatch3TurnEndScNotify.ODJMFMHMJMI)
+    pub ODJMFMHMJMI: ::protobuf::MessageField<super::JDCEDDGFBGF::JDCEDDGFBGF>,
     // special fields
     // @@protoc_insertion_point(special_field:FightMatch3TurnEndScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl FightMatch3TurnEndScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CFHPMBOAHLA::CFHPMBOAHLA>(
-            "DKEICJHIDNO",
-            |m: &FightMatch3TurnEndScNotify| { &m.DKEICJHIDNO },
-            |m: &mut FightMatch3TurnEndScNotify| { &mut m.DKEICJHIDNO },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JDCEDDGFBGF::JDCEDDGFBGF>(
+            "DOAHIGNLPKP",
+            |m: &FightMatch3TurnEndScNotify| { &m.DOAHIGNLPKP },
+            |m: &mut FightMatch3TurnEndScNotify| { &mut m.DOAHIGNLPKP },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CFHPMBOAHLA::CFHPMBOAHLA>(
-            "APOGGHFJJJN",
-            |m: &FightMatch3TurnEndScNotify| { &m.APOGGHFJJJN },
-            |m: &mut FightMatch3TurnEndScNotify| { &mut m.APOGGHFJJJN },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JDCEDDGFBGF::JDCEDDGFBGF>(
+            "ODJMFMHMJMI",
+            |m: &FightMatch3TurnEndScNotify| { &m.ODJMFMHMJMI },
+            |m: &mut FightMatch3TurnEndScNotify| { &mut m.ODJMFMHMJMI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightMatch3TurnEndScNotify>(
             "FightMatch3TurnEndScNotify",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for FightMatch3TurnEndScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DKEICJHIDNO)?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DOAHIGNLPKP)?;
                 },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.APOGGHFJJJN)?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ODJMFMHMJMI)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for FightMatch3TurnEndScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.DKEICJHIDNO.as_ref() {
+        if let Some(v) = self.DOAHIGNLPKP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.APOGGHFJJJN.as_ref() {
+        if let Some(v) = self.ODJMFMHMJMI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -112,11 +112,11 @@ impl ::protobuf::Message for FightMatch3TurnEndScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.DKEICJHIDNO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if let Some(v) = self.DOAHIGNLPKP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
-        if let Some(v) = self.APOGGHFJJJN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if let Some(v) = self.ODJMFMHMJMI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -135,15 +135,15 @@ impl ::protobuf::Message for FightMatch3TurnEndScNotify {
     }
 
     fn clear(&mut self) {
-        self.DKEICJHIDNO.clear();
-        self.APOGGHFJJJN.clear();
+        self.DOAHIGNLPKP.clear();
+        self.ODJMFMHMJMI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightMatch3TurnEndScNotify {
         static instance: FightMatch3TurnEndScNotify = FightMatch3TurnEndScNotify {
-            DKEICJHIDNO: ::protobuf::MessageField::none(),
-            APOGGHFJJJN: ::protobuf::MessageField::none(),
+            DOAHIGNLPKP: ::protobuf::MessageField::none(),
+            ODJMFMHMJMI: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,10 +168,10 @@ impl ::protobuf::reflect::ProtobufValue for FightMatch3TurnEndScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20FightMatch3TurnEndScNotify.proto\x1a\x11CFHPMBOAHLA.proto\"|\n\x1a\
-    FightMatch3TurnEndScNotify\x12.\n\x0bDKEICJHIDNO\x18\n\x20\x01(\x0b2\x0c\
-    .CFHPMBOAHLAR\x0bDKEICJHIDNO\x12.\n\x0bAPOGGHFJJJN\x18\x0e\x20\x01(\x0b2\
-    \x0c.CFHPMBOAHLAR\x0bAPOGGHFJJJNb\x06proto3\
+    \n\x20FightMatch3TurnEndScNotify.proto\x1a\x11JDCEDDGFBGF.proto\"|\n\x1a\
+    FightMatch3TurnEndScNotify\x12.\n\x0bDOAHIGNLPKP\x18\x04\x20\x01(\x0b2\
+    \x0c.JDCEDDGFBGFR\x0bDOAHIGNLPKP\x12.\n\x0bODJMFMHMJMI\x18\x01\x20\x01(\
+    \x0b2\x0c.JDCEDDGFBGFR\x0bODJMFMHMJMIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -189,7 +189,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::CFHPMBOAHLA::file_descriptor().clone());
+            deps.push(super::JDCEDDGFBGF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FightMatch3TurnEndScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

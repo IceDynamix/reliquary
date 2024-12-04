@@ -30,14 +30,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdAdventureType {
     // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdAdventureTypeNone)
     CmdAdventureTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdGetFarmStageGachaInfoScRsp)
-    CmdGetFarmStageGachaInfoScRsp = 1342,
-    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdGetFarmStageGachaInfoCsReq)
-    CmdGetFarmStageGachaInfoCsReq = 1383,
-    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdEnterAdventureCsReq)
-    CmdEnterAdventureCsReq = 1398,
     // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdEnterAdventureScRsp)
-    CmdEnterAdventureScRsp = 1371,
+    CmdEnterAdventureScRsp = 1320,
+    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdGetFarmStageGachaInfoScRsp)
+    CmdGetFarmStageGachaInfoScRsp = 1346,
+    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdGetFarmStageGachaInfoCsReq)
+    CmdGetFarmStageGachaInfoCsReq = 1303,
+    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdEnterAdventureCsReq)
+    CmdEnterAdventureCsReq = 1359,
 }
 
 impl ::protobuf::Enum for CmdAdventureType {
@@ -50,10 +50,10 @@ impl ::protobuf::Enum for CmdAdventureType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdAdventureType> {
         match value {
             0 => ::std::option::Option::Some(CmdAdventureType::CmdAdventureTypeNone),
-            1342 => ::std::option::Option::Some(CmdAdventureType::CmdGetFarmStageGachaInfoScRsp),
-            1383 => ::std::option::Option::Some(CmdAdventureType::CmdGetFarmStageGachaInfoCsReq),
-            1398 => ::std::option::Option::Some(CmdAdventureType::CmdEnterAdventureCsReq),
-            1371 => ::std::option::Option::Some(CmdAdventureType::CmdEnterAdventureScRsp),
+            1320 => ::std::option::Option::Some(CmdAdventureType::CmdEnterAdventureScRsp),
+            1346 => ::std::option::Option::Some(CmdAdventureType::CmdGetFarmStageGachaInfoScRsp),
+            1303 => ::std::option::Option::Some(CmdAdventureType::CmdGetFarmStageGachaInfoCsReq),
+            1359 => ::std::option::Option::Some(CmdAdventureType::CmdEnterAdventureCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -61,20 +61,20 @@ impl ::protobuf::Enum for CmdAdventureType {
     fn from_str(str: &str) -> ::std::option::Option<CmdAdventureType> {
         match str {
             "CmdAdventureTypeNone" => ::std::option::Option::Some(CmdAdventureType::CmdAdventureTypeNone),
+            "CmdEnterAdventureScRsp" => ::std::option::Option::Some(CmdAdventureType::CmdEnterAdventureScRsp),
             "CmdGetFarmStageGachaInfoScRsp" => ::std::option::Option::Some(CmdAdventureType::CmdGetFarmStageGachaInfoScRsp),
             "CmdGetFarmStageGachaInfoCsReq" => ::std::option::Option::Some(CmdAdventureType::CmdGetFarmStageGachaInfoCsReq),
             "CmdEnterAdventureCsReq" => ::std::option::Option::Some(CmdAdventureType::CmdEnterAdventureCsReq),
-            "CmdEnterAdventureScRsp" => ::std::option::Option::Some(CmdAdventureType::CmdEnterAdventureScRsp),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdAdventureType] = &[
         CmdAdventureType::CmdAdventureTypeNone,
+        CmdAdventureType::CmdEnterAdventureScRsp,
         CmdAdventureType::CmdGetFarmStageGachaInfoScRsp,
         CmdAdventureType::CmdGetFarmStageGachaInfoCsReq,
         CmdAdventureType::CmdEnterAdventureCsReq,
-        CmdAdventureType::CmdEnterAdventureScRsp,
     ];
 }
 
@@ -87,10 +87,10 @@ impl ::protobuf::EnumFull for CmdAdventureType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdAdventureType::CmdAdventureTypeNone => 0,
-            CmdAdventureType::CmdGetFarmStageGachaInfoScRsp => 1,
-            CmdAdventureType::CmdGetFarmStageGachaInfoCsReq => 2,
-            CmdAdventureType::CmdEnterAdventureCsReq => 3,
-            CmdAdventureType::CmdEnterAdventureScRsp => 4,
+            CmdAdventureType::CmdEnterAdventureScRsp => 1,
+            CmdAdventureType::CmdGetFarmStageGachaInfoScRsp => 2,
+            CmdAdventureType::CmdGetFarmStageGachaInfoCsReq => 3,
+            CmdAdventureType::CmdEnterAdventureCsReq => 4,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -110,10 +110,10 @@ impl CmdAdventureType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16CmdAdventureType.proto*\xae\x01\n\x10CmdAdventureType\x12\x18\n\
-    \x14CmdAdventureTypeNone\x10\0\x12\"\n\x1dCmdGetFarmStageGachaInfoScRsp\
-    \x10\xbe\n\x12\"\n\x1dCmdGetFarmStageGachaInfoCsReq\x10\xe7\n\x12\x1b\n\
-    \x16CmdEnterAdventureCsReq\x10\xf6\n\x12\x1b\n\x16CmdEnterAdventureScRsp\
-    \x10\xdb\nb\x06proto3\
+    \x14CmdAdventureTypeNone\x10\0\x12\x1b\n\x16CmdEnterAdventureScRsp\x10\
+    \xa8\n\x12\"\n\x1dCmdGetFarmStageGachaInfoScRsp\x10\xc2\n\x12\"\n\x1dCmd\
+    GetFarmStageGachaInfoCsReq\x10\x97\n\x12\x1b\n\x16CmdEnterAdventureCsReq\
+    \x10\xcf\nb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

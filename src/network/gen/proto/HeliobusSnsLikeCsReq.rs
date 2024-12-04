@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HeliobusSnsLikeCsReq {
     // message fields
-    // @@protoc_insertion_point(field:HeliobusSnsLikeCsReq.ALAOMAOBNFG)
-    pub ALAOMAOBNFG: u32,
+    // @@protoc_insertion_point(field:HeliobusSnsLikeCsReq.IJIIPGAFKJN)
+    pub IJIIPGAFKJN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HeliobusSnsLikeCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl HeliobusSnsLikeCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ALAOMAOBNFG",
-            |m: &HeliobusSnsLikeCsReq| { &m.ALAOMAOBNFG },
-            |m: &mut HeliobusSnsLikeCsReq| { &mut m.ALAOMAOBNFG },
+            "IJIIPGAFKJN",
+            |m: &HeliobusSnsLikeCsReq| { &m.IJIIPGAFKJN },
+            |m: &mut HeliobusSnsLikeCsReq| { &mut m.IJIIPGAFKJN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HeliobusSnsLikeCsReq>(
             "HeliobusSnsLikeCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for HeliobusSnsLikeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.ALAOMAOBNFG = is.read_uint32()?;
+                56 => {
+                    self.IJIIPGAFKJN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for HeliobusSnsLikeCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ALAOMAOBNFG != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.ALAOMAOBNFG);
+        if self.IJIIPGAFKJN != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.IJIIPGAFKJN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for HeliobusSnsLikeCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ALAOMAOBNFG != 0 {
-            os.write_uint32(15, self.ALAOMAOBNFG)?;
+        if self.IJIIPGAFKJN != 0 {
+            os.write_uint32(7, self.IJIIPGAFKJN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for HeliobusSnsLikeCsReq {
     }
 
     fn clear(&mut self) {
-        self.ALAOMAOBNFG = 0;
+        self.IJIIPGAFKJN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HeliobusSnsLikeCsReq {
         static instance: HeliobusSnsLikeCsReq = HeliobusSnsLikeCsReq {
-            ALAOMAOBNFG: 0,
+            IJIIPGAFKJN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for HeliobusSnsLikeCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aHeliobusSnsLikeCsReq.proto\"8\n\x14HeliobusSnsLikeCsReq\x12\x20\n\
-    \x0bALAOMAOBNFG\x18\x0f\x20\x01(\rR\x0bALAOMAOBNFGb\x06proto3\
+    \x0bIJIIPGAFKJN\x18\x07\x20\x01(\rR\x0bIJIIPGAFKJNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

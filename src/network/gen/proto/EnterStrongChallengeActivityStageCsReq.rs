@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterStrongChallengeActivityStageCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EnterStrongChallengeActivityStageCsReq.IDIEPEFFGIC)
-    pub IDIEPEFFGIC: u32,
-    // @@protoc_insertion_point(field:EnterStrongChallengeActivityStageCsReq.GABPEMANANE)
-    pub GABPEMANANE: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:EnterStrongChallengeActivityStageCsReq.avatar_list)
-    pub avatar_list: ::std::vec::Vec<super::StrongChallengeAvatar::StrongChallengeAvatar>,
+    // @@protoc_insertion_point(field:EnterStrongChallengeActivityStageCsReq.EMALNMLGANJ)
+    pub EMALNMLGANJ: ::std::vec::Vec<super::StrongChallengeAvatar::StrongChallengeAvatar>,
+    // @@protoc_insertion_point(field:EnterStrongChallengeActivityStageCsReq.EBDDNGHLIGH)
+    pub EBDDNGHLIGH: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:EnterStrongChallengeActivityStageCsReq.KAGEGBLHJDJ)
+    pub KAGEGBLHJDJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EnterStrongChallengeActivityStageCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl EnterStrongChallengeActivityStageCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "EMALNMLGANJ",
+            |m: &EnterStrongChallengeActivityStageCsReq| { &m.EMALNMLGANJ },
+            |m: &mut EnterStrongChallengeActivityStageCsReq| { &mut m.EMALNMLGANJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "EBDDNGHLIGH",
+            |m: &EnterStrongChallengeActivityStageCsReq| { &m.EBDDNGHLIGH },
+            |m: &mut EnterStrongChallengeActivityStageCsReq| { &mut m.EBDDNGHLIGH },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IDIEPEFFGIC",
-            |m: &EnterStrongChallengeActivityStageCsReq| { &m.IDIEPEFFGIC },
-            |m: &mut EnterStrongChallengeActivityStageCsReq| { &mut m.IDIEPEFFGIC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GABPEMANANE",
-            |m: &EnterStrongChallengeActivityStageCsReq| { &m.GABPEMANANE },
-            |m: &mut EnterStrongChallengeActivityStageCsReq| { &mut m.GABPEMANANE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_list",
-            |m: &EnterStrongChallengeActivityStageCsReq| { &m.avatar_list },
-            |m: &mut EnterStrongChallengeActivityStageCsReq| { &mut m.avatar_list },
+            "KAGEGBLHJDJ",
+            |m: &EnterStrongChallengeActivityStageCsReq| { &m.KAGEGBLHJDJ },
+            |m: &mut EnterStrongChallengeActivityStageCsReq| { &mut m.KAGEGBLHJDJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterStrongChallengeActivityStageCsReq>(
             "EnterStrongChallengeActivityStageCsReq",
@@ -87,17 +87,17 @@ impl ::protobuf::Message for EnterStrongChallengeActivityStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                98 => {
+                    self.EMALNMLGANJ.push(is.read_message()?);
+                },
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.EBDDNGHLIGH)?;
+                },
+                80 => {
+                    self.EBDDNGHLIGH.push(is.read_uint32()?);
+                },
                 112 => {
-                    self.IDIEPEFFGIC = is.read_uint32()?;
-                },
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.GABPEMANANE)?;
-                },
-                16 => {
-                    self.GABPEMANANE.push(is.read_uint32()?);
-                },
-                10 => {
-                    self.avatar_list.push(is.read_message()?);
+                    self.KAGEGBLHJDJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,31 +111,31 @@ impl ::protobuf::Message for EnterStrongChallengeActivityStageCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IDIEPEFFGIC != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.IDIEPEFFGIC);
-        }
-        for value in &self.GABPEMANANE {
-            my_size += ::protobuf::rt::uint32_size(2, *value);
-        };
-        for value in &self.avatar_list {
+        for value in &self.EMALNMLGANJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        for value in &self.EBDDNGHLIGH {
+            my_size += ::protobuf::rt::uint32_size(10, *value);
+        };
+        if self.KAGEGBLHJDJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.KAGEGBLHJDJ);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IDIEPEFFGIC != 0 {
-            os.write_uint32(14, self.IDIEPEFFGIC)?;
+        for v in &self.EMALNMLGANJ {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        };
+        for v in &self.EBDDNGHLIGH {
+            os.write_uint32(10, *v)?;
+        };
+        if self.KAGEGBLHJDJ != 0 {
+            os.write_uint32(14, self.KAGEGBLHJDJ)?;
         }
-        for v in &self.GABPEMANANE {
-            os.write_uint32(2, *v)?;
-        };
-        for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -153,17 +153,17 @@ impl ::protobuf::Message for EnterStrongChallengeActivityStageCsReq {
     }
 
     fn clear(&mut self) {
-        self.IDIEPEFFGIC = 0;
-        self.GABPEMANANE.clear();
-        self.avatar_list.clear();
+        self.EMALNMLGANJ.clear();
+        self.EBDDNGHLIGH.clear();
+        self.KAGEGBLHJDJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterStrongChallengeActivityStageCsReq {
         static instance: EnterStrongChallengeActivityStageCsReq = EnterStrongChallengeActivityStageCsReq {
-            IDIEPEFFGIC: 0,
-            GABPEMANANE: ::std::vec::Vec::new(),
-            avatar_list: ::std::vec::Vec::new(),
+            EMALNMLGANJ: ::std::vec::Vec::new(),
+            EBDDNGHLIGH: ::std::vec::Vec::new(),
+            KAGEGBLHJDJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -189,10 +189,10 @@ impl ::protobuf::reflect::ProtobufValue for EnterStrongChallengeActivityStageCsR
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n,EnterStrongChallengeActivityStageCsReq.proto\x1a\x1bStrongChallengeAv\
-    atar.proto\"\xa5\x01\n&EnterStrongChallengeActivityStageCsReq\x12\x20\n\
-    \x0bIDIEPEFFGIC\x18\x0e\x20\x01(\rR\x0bIDIEPEFFGIC\x12\x20\n\x0bGABPEMAN\
-    ANE\x18\x02\x20\x03(\rR\x0bGABPEMANANE\x127\n\x0bavatar_list\x18\x01\x20\
-    \x03(\x0b2\x16.StrongChallengeAvatarR\navatarListb\x06proto3\
+    atar.proto\"\xa6\x01\n&EnterStrongChallengeActivityStageCsReq\x128\n\x0b\
+    EMALNMLGANJ\x18\x0c\x20\x03(\x0b2\x16.StrongChallengeAvatarR\x0bEMALNMLG\
+    ANJ\x12\x20\n\x0bEBDDNGHLIGH\x18\n\x20\x03(\rR\x0bEBDDNGHLIGH\x12\x20\n\
+    \x0bKAGEGBLHJDJ\x18\x0e\x20\x01(\rR\x0bKAGEGBLHJDJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

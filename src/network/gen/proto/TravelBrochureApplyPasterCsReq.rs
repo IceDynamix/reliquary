@@ -29,18 +29,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TravelBrochureApplyPasterCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TravelBrochureApplyPasterCsReq.NMAKNJMFFJN)
-    pub NMAKNJMFFJN: u32,
-    // @@protoc_insertion_point(field:TravelBrochureApplyPasterCsReq.GEBIEMEFINN)
-    pub GEBIEMEFINN: i32,
-    // @@protoc_insertion_point(field:TravelBrochureApplyPasterCsReq.EJMJFLGFHJO)
-    pub EJMJFLGFHJO: u32,
-    // @@protoc_insertion_point(field:TravelBrochureApplyPasterCsReq.MIBHBOCHMCH)
-    pub MIBHBOCHMCH: u32,
-    // @@protoc_insertion_point(field:TravelBrochureApplyPasterCsReq.COHAKBPNCDG)
-    pub COHAKBPNCDG: u32,
-    // @@protoc_insertion_point(field:TravelBrochureApplyPasterCsReq.IANMNDOBEOF)
-    pub IANMNDOBEOF: i32,
+    // @@protoc_insertion_point(field:TravelBrochureApplyPasterCsReq.IGADMJFCGCO)
+    pub IGADMJFCGCO: u32,
+    // @@protoc_insertion_point(field:TravelBrochureApplyPasterCsReq.LGBJLFEMFOL)
+    pub LGBJLFEMFOL: u32,
+    // @@protoc_insertion_point(field:TravelBrochureApplyPasterCsReq.LOFDIGOACGI)
+    pub LOFDIGOACGI: u32,
+    // @@protoc_insertion_point(field:TravelBrochureApplyPasterCsReq.GAJFGDGOBCG)
+    pub GAJFGDGOBCG: i32,
+    // @@protoc_insertion_point(field:TravelBrochureApplyPasterCsReq.NPIDJACJPFN)
+    pub NPIDJACJPFN: i32,
+    // @@protoc_insertion_point(field:TravelBrochureApplyPasterCsReq.HLCJKBONMOF)
+    pub HLCJKBONMOF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TravelBrochureApplyPasterCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,34 +61,34 @@ impl TravelBrochureApplyPasterCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NMAKNJMFFJN",
-            |m: &TravelBrochureApplyPasterCsReq| { &m.NMAKNJMFFJN },
-            |m: &mut TravelBrochureApplyPasterCsReq| { &mut m.NMAKNJMFFJN },
+            "IGADMJFCGCO",
+            |m: &TravelBrochureApplyPasterCsReq| { &m.IGADMJFCGCO },
+            |m: &mut TravelBrochureApplyPasterCsReq| { &mut m.IGADMJFCGCO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GEBIEMEFINN",
-            |m: &TravelBrochureApplyPasterCsReq| { &m.GEBIEMEFINN },
-            |m: &mut TravelBrochureApplyPasterCsReq| { &mut m.GEBIEMEFINN },
+            "LGBJLFEMFOL",
+            |m: &TravelBrochureApplyPasterCsReq| { &m.LGBJLFEMFOL },
+            |m: &mut TravelBrochureApplyPasterCsReq| { &mut m.LGBJLFEMFOL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EJMJFLGFHJO",
-            |m: &TravelBrochureApplyPasterCsReq| { &m.EJMJFLGFHJO },
-            |m: &mut TravelBrochureApplyPasterCsReq| { &mut m.EJMJFLGFHJO },
+            "LOFDIGOACGI",
+            |m: &TravelBrochureApplyPasterCsReq| { &m.LOFDIGOACGI },
+            |m: &mut TravelBrochureApplyPasterCsReq| { &mut m.LOFDIGOACGI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MIBHBOCHMCH",
-            |m: &TravelBrochureApplyPasterCsReq| { &m.MIBHBOCHMCH },
-            |m: &mut TravelBrochureApplyPasterCsReq| { &mut m.MIBHBOCHMCH },
+            "GAJFGDGOBCG",
+            |m: &TravelBrochureApplyPasterCsReq| { &m.GAJFGDGOBCG },
+            |m: &mut TravelBrochureApplyPasterCsReq| { &mut m.GAJFGDGOBCG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "COHAKBPNCDG",
-            |m: &TravelBrochureApplyPasterCsReq| { &m.COHAKBPNCDG },
-            |m: &mut TravelBrochureApplyPasterCsReq| { &mut m.COHAKBPNCDG },
+            "NPIDJACJPFN",
+            |m: &TravelBrochureApplyPasterCsReq| { &m.NPIDJACJPFN },
+            |m: &mut TravelBrochureApplyPasterCsReq| { &mut m.NPIDJACJPFN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IANMNDOBEOF",
-            |m: &TravelBrochureApplyPasterCsReq| { &m.IANMNDOBEOF },
-            |m: &mut TravelBrochureApplyPasterCsReq| { &mut m.IANMNDOBEOF },
+            "HLCJKBONMOF",
+            |m: &TravelBrochureApplyPasterCsReq| { &m.HLCJKBONMOF },
+            |m: &mut TravelBrochureApplyPasterCsReq| { &mut m.HLCJKBONMOF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TravelBrochureApplyPasterCsReq>(
             "TravelBrochureApplyPasterCsReq",
@@ -108,23 +108,23 @@ impl ::protobuf::Message for TravelBrochureApplyPasterCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.NMAKNJMFFJN = is.read_uint32()?;
+                24 => {
+                    self.IGADMJFCGCO = is.read_uint32()?;
                 },
                 80 => {
-                    self.GEBIEMEFINN = is.read_int32()?;
+                    self.LGBJLFEMFOL = is.read_uint32()?;
                 },
-                88 => {
-                    self.EJMJFLGFHJO = is.read_uint32()?;
-                },
-                56 => {
-                    self.MIBHBOCHMCH = is.read_uint32()?;
+                40 => {
+                    self.LOFDIGOACGI = is.read_uint32()?;
                 },
                 48 => {
-                    self.COHAKBPNCDG = is.read_uint32()?;
+                    self.GAJFGDGOBCG = is.read_int32()?;
+                },
+                72 => {
+                    self.NPIDJACJPFN = is.read_int32()?;
                 },
                 104 => {
-                    self.IANMNDOBEOF = is.read_int32()?;
+                    self.HLCJKBONMOF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -138,23 +138,23 @@ impl ::protobuf::Message for TravelBrochureApplyPasterCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NMAKNJMFFJN != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.NMAKNJMFFJN);
+        if self.IGADMJFCGCO != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.IGADMJFCGCO);
         }
-        if self.GEBIEMEFINN != 0 {
-            my_size += ::protobuf::rt::int32_size(10, self.GEBIEMEFINN);
+        if self.LGBJLFEMFOL != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.LGBJLFEMFOL);
         }
-        if self.EJMJFLGFHJO != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.EJMJFLGFHJO);
+        if self.LOFDIGOACGI != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.LOFDIGOACGI);
         }
-        if self.MIBHBOCHMCH != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.MIBHBOCHMCH);
+        if self.GAJFGDGOBCG != 0 {
+            my_size += ::protobuf::rt::int32_size(6, self.GAJFGDGOBCG);
         }
-        if self.COHAKBPNCDG != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.COHAKBPNCDG);
+        if self.NPIDJACJPFN != 0 {
+            my_size += ::protobuf::rt::int32_size(9, self.NPIDJACJPFN);
         }
-        if self.IANMNDOBEOF != 0 {
-            my_size += ::protobuf::rt::int32_size(13, self.IANMNDOBEOF);
+        if self.HLCJKBONMOF != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.HLCJKBONMOF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,23 +162,23 @@ impl ::protobuf::Message for TravelBrochureApplyPasterCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NMAKNJMFFJN != 0 {
-            os.write_uint32(14, self.NMAKNJMFFJN)?;
+        if self.IGADMJFCGCO != 0 {
+            os.write_uint32(3, self.IGADMJFCGCO)?;
         }
-        if self.GEBIEMEFINN != 0 {
-            os.write_int32(10, self.GEBIEMEFINN)?;
+        if self.LGBJLFEMFOL != 0 {
+            os.write_uint32(10, self.LGBJLFEMFOL)?;
         }
-        if self.EJMJFLGFHJO != 0 {
-            os.write_uint32(11, self.EJMJFLGFHJO)?;
+        if self.LOFDIGOACGI != 0 {
+            os.write_uint32(5, self.LOFDIGOACGI)?;
         }
-        if self.MIBHBOCHMCH != 0 {
-            os.write_uint32(7, self.MIBHBOCHMCH)?;
+        if self.GAJFGDGOBCG != 0 {
+            os.write_int32(6, self.GAJFGDGOBCG)?;
         }
-        if self.COHAKBPNCDG != 0 {
-            os.write_uint32(6, self.COHAKBPNCDG)?;
+        if self.NPIDJACJPFN != 0 {
+            os.write_int32(9, self.NPIDJACJPFN)?;
         }
-        if self.IANMNDOBEOF != 0 {
-            os.write_int32(13, self.IANMNDOBEOF)?;
+        if self.HLCJKBONMOF != 0 {
+            os.write_uint32(13, self.HLCJKBONMOF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,23 +197,23 @@ impl ::protobuf::Message for TravelBrochureApplyPasterCsReq {
     }
 
     fn clear(&mut self) {
-        self.NMAKNJMFFJN = 0;
-        self.GEBIEMEFINN = 0;
-        self.EJMJFLGFHJO = 0;
-        self.MIBHBOCHMCH = 0;
-        self.COHAKBPNCDG = 0;
-        self.IANMNDOBEOF = 0;
+        self.IGADMJFCGCO = 0;
+        self.LGBJLFEMFOL = 0;
+        self.LOFDIGOACGI = 0;
+        self.GAJFGDGOBCG = 0;
+        self.NPIDJACJPFN = 0;
+        self.HLCJKBONMOF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TravelBrochureApplyPasterCsReq {
         static instance: TravelBrochureApplyPasterCsReq = TravelBrochureApplyPasterCsReq {
-            NMAKNJMFFJN: 0,
-            GEBIEMEFINN: 0,
-            EJMJFLGFHJO: 0,
-            MIBHBOCHMCH: 0,
-            COHAKBPNCDG: 0,
-            IANMNDOBEOF: 0,
+            IGADMJFCGCO: 0,
+            LGBJLFEMFOL: 0,
+            LOFDIGOACGI: 0,
+            GAJFGDGOBCG: 0,
+            NPIDJACJPFN: 0,
+            HLCJKBONMOF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,12 +239,12 @@ impl ::protobuf::reflect::ProtobufValue for TravelBrochureApplyPasterCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$TravelBrochureApplyPasterCsReq.proto\"\xec\x01\n\x1eTravelBrochureApp\
-    lyPasterCsReq\x12\x20\n\x0bNMAKNJMFFJN\x18\x0e\x20\x01(\rR\x0bNMAKNJMFFJ\
-    N\x12\x20\n\x0bGEBIEMEFINN\x18\n\x20\x01(\x05R\x0bGEBIEMEFINN\x12\x20\n\
-    \x0bEJMJFLGFHJO\x18\x0b\x20\x01(\rR\x0bEJMJFLGFHJO\x12\x20\n\x0bMIBHBOCH\
-    MCH\x18\x07\x20\x01(\rR\x0bMIBHBOCHMCH\x12\x20\n\x0bCOHAKBPNCDG\x18\x06\
-    \x20\x01(\rR\x0bCOHAKBPNCDG\x12\x20\n\x0bIANMNDOBEOF\x18\r\x20\x01(\x05R\
-    \x0bIANMNDOBEOFb\x06proto3\
+    lyPasterCsReq\x12\x20\n\x0bIGADMJFCGCO\x18\x03\x20\x01(\rR\x0bIGADMJFCGC\
+    O\x12\x20\n\x0bLGBJLFEMFOL\x18\n\x20\x01(\rR\x0bLGBJLFEMFOL\x12\x20\n\
+    \x0bLOFDIGOACGI\x18\x05\x20\x01(\rR\x0bLOFDIGOACGI\x12\x20\n\x0bGAJFGDGO\
+    BCG\x18\x06\x20\x01(\x05R\x0bGAJFGDGOBCG\x12\x20\n\x0bNPIDJACJPFN\x18\t\
+    \x20\x01(\x05R\x0bNPIDJACJPFN\x12\x20\n\x0bHLCJKBONMOF\x18\r\x20\x01(\rR\
+    \x0bHLCJKBONMOFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

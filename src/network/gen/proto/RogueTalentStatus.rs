@@ -95,7 +95,8 @@ impl RogueTalentStatus {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17RogueTalentStatus.proto*q\n\x11RogueTalentStatus\x12\x1c\n\x18ROGU\
     E_TALENT_STATUS_LOCK\x10\0\x12\x1e\n\x1aROGUE_TALENT_STATUS_UNLOCK\x10\
-    \x01\x12\x1e\n\x1aROGUE_TALENT_STATUS_ENABLE\x10\x02b\x06proto3\
+    \x01\x12\x1e\n\x1aROGUE_TALENT_STATUS_ENABLE\x10\x02B\x15\n\x13emu.lunar\
+    core.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

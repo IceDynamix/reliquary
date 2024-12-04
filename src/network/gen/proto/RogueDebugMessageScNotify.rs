@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueDebugMessageScNotify {
     // message fields
-    // @@protoc_insertion_point(field:RogueDebugMessageScNotify.LEHBFICLHON)
-    pub LEHBFICLHON: ::std::string::String,
-    // @@protoc_insertion_point(field:RogueDebugMessageScNotify.slot)
-    pub slot: ::protobuf::EnumOrUnknown<super::KLGILFNFKEO::KLGILFNFKEO>,
-    // @@protoc_insertion_point(field:RogueDebugMessageScNotify.NCAGBFAKCNI)
-    pub NCAGBFAKCNI: ::std::string::String,
+    // @@protoc_insertion_point(field:RogueDebugMessageScNotify.MPNJPFDCBDG)
+    pub MPNJPFDCBDG: ::protobuf::EnumOrUnknown<super::HKKEAIGEHNP::HKKEAIGEHNP>,
+    // @@protoc_insertion_point(field:RogueDebugMessageScNotify.IKLKBLKBHBN)
+    pub IKLKBLKBHBN: ::std::string::String,
+    // @@protoc_insertion_point(field:RogueDebugMessageScNotify.JIEDCPKJJBP)
+    pub JIEDCPKJJBP: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:RogueDebugMessageScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl RogueDebugMessageScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LEHBFICLHON",
-            |m: &RogueDebugMessageScNotify| { &m.LEHBFICLHON },
-            |m: &mut RogueDebugMessageScNotify| { &mut m.LEHBFICLHON },
+            "MPNJPFDCBDG",
+            |m: &RogueDebugMessageScNotify| { &m.MPNJPFDCBDG },
+            |m: &mut RogueDebugMessageScNotify| { &mut m.MPNJPFDCBDG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "slot",
-            |m: &RogueDebugMessageScNotify| { &m.slot },
-            |m: &mut RogueDebugMessageScNotify| { &mut m.slot },
+            "IKLKBLKBHBN",
+            |m: &RogueDebugMessageScNotify| { &m.IKLKBLKBHBN },
+            |m: &mut RogueDebugMessageScNotify| { &mut m.IKLKBLKBHBN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NCAGBFAKCNI",
-            |m: &RogueDebugMessageScNotify| { &m.NCAGBFAKCNI },
-            |m: &mut RogueDebugMessageScNotify| { &mut m.NCAGBFAKCNI },
+            "JIEDCPKJJBP",
+            |m: &RogueDebugMessageScNotify| { &m.JIEDCPKJJBP },
+            |m: &mut RogueDebugMessageScNotify| { &mut m.JIEDCPKJJBP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueDebugMessageScNotify>(
             "RogueDebugMessageScNotify",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for RogueDebugMessageScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    self.LEHBFICLHON = is.read_string()?;
+                64 => {
+                    self.MPNJPFDCBDG = is.read_enum_or_unknown()?;
                 },
-                24 => {
-                    self.slot = is.read_enum_or_unknown()?;
+                42 => {
+                    self.IKLKBLKBHBN = is.read_string()?;
                 },
-                82 => {
-                    self.NCAGBFAKCNI = is.read_string()?;
+                10 => {
+                    self.JIEDCPKJJBP = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for RogueDebugMessageScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.LEHBFICLHON.is_empty() {
-            my_size += ::protobuf::rt::string_size(4, &self.LEHBFICLHON);
+        if self.MPNJPFDCBDG != ::protobuf::EnumOrUnknown::new(super::HKKEAIGEHNP::HKKEAIGEHNP::ROGUE_DEBUG_MESSAGE_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(8, self.MPNJPFDCBDG.value());
         }
-        if self.slot != ::protobuf::EnumOrUnknown::new(super::KLGILFNFKEO::KLGILFNFKEO::ROGUE_DEBUG_MESSAGE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(3, self.slot.value());
+        if !self.IKLKBLKBHBN.is_empty() {
+            my_size += ::protobuf::rt::string_size(5, &self.IKLKBLKBHBN);
         }
-        if !self.NCAGBFAKCNI.is_empty() {
-            my_size += ::protobuf::rt::string_size(10, &self.NCAGBFAKCNI);
+        if !self.JIEDCPKJJBP.is_empty() {
+            my_size += ::protobuf::rt::string_size(1, &self.JIEDCPKJJBP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for RogueDebugMessageScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.LEHBFICLHON.is_empty() {
-            os.write_string(4, &self.LEHBFICLHON)?;
+        if self.MPNJPFDCBDG != ::protobuf::EnumOrUnknown::new(super::HKKEAIGEHNP::HKKEAIGEHNP::ROGUE_DEBUG_MESSAGE_TYPE_NONE) {
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.MPNJPFDCBDG))?;
         }
-        if self.slot != ::protobuf::EnumOrUnknown::new(super::KLGILFNFKEO::KLGILFNFKEO::ROGUE_DEBUG_MESSAGE_TYPE_NONE) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.slot))?;
+        if !self.IKLKBLKBHBN.is_empty() {
+            os.write_string(5, &self.IKLKBLKBHBN)?;
         }
-        if !self.NCAGBFAKCNI.is_empty() {
-            os.write_string(10, &self.NCAGBFAKCNI)?;
+        if !self.JIEDCPKJJBP.is_empty() {
+            os.write_string(1, &self.JIEDCPKJJBP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for RogueDebugMessageScNotify {
     }
 
     fn clear(&mut self) {
-        self.LEHBFICLHON.clear();
-        self.slot = ::protobuf::EnumOrUnknown::new(super::KLGILFNFKEO::KLGILFNFKEO::ROGUE_DEBUG_MESSAGE_TYPE_NONE);
-        self.NCAGBFAKCNI.clear();
+        self.MPNJPFDCBDG = ::protobuf::EnumOrUnknown::new(super::HKKEAIGEHNP::HKKEAIGEHNP::ROGUE_DEBUG_MESSAGE_TYPE_NONE);
+        self.IKLKBLKBHBN.clear();
+        self.JIEDCPKJJBP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueDebugMessageScNotify {
         static instance: RogueDebugMessageScNotify = RogueDebugMessageScNotify {
-            LEHBFICLHON: ::std::string::String::new(),
-            slot: ::protobuf::EnumOrUnknown::from_i32(0),
-            NCAGBFAKCNI: ::std::string::String::new(),
+            MPNJPFDCBDG: ::protobuf::EnumOrUnknown::from_i32(0),
+            IKLKBLKBHBN: ::std::string::String::new(),
+            JIEDCPKJJBP: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for RogueDebugMessageScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fRogueDebugMessageScNotify.proto\x1a\x11KLGILFNFKEO.proto\"\x81\x01\
-    \n\x19RogueDebugMessageScNotify\x12\x20\n\x0bLEHBFICLHON\x18\x04\x20\x01\
-    (\tR\x0bLEHBFICLHON\x12\x20\n\x04slot\x18\x03\x20\x01(\x0e2\x0c.KLGILFNF\
-    KEOR\x04slot\x12\x20\n\x0bNCAGBFAKCNI\x18\n\x20\x01(\tR\x0bNCAGBFAKCNIb\
-    \x06proto3\
+    \n\x1fRogueDebugMessageScNotify.proto\x1a\x11HKKEAIGEHNP.proto\"\x8f\x01\
+    \n\x19RogueDebugMessageScNotify\x12.\n\x0bMPNJPFDCBDG\x18\x08\x20\x01(\
+    \x0e2\x0c.HKKEAIGEHNPR\x0bMPNJPFDCBDG\x12\x20\n\x0bIKLKBLKBHBN\x18\x05\
+    \x20\x01(\tR\x0bIKLKBLKBHBN\x12\x20\n\x0bJIEDCPKJJBP\x18\x01\x20\x01(\tR\
+    \x0bJIEDCPKJJBPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,7 +206,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::KLGILFNFKEO::file_descriptor().clone());
+            deps.push(super::HKKEAIGEHNP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueDebugMessageScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

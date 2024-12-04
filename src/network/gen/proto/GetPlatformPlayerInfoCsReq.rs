@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetPlatformPlayerInfoCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetPlatformPlayerInfoCsReq.NEJJEFEOJOJ)
-    pub NEJJEFEOJOJ: ::protobuf::EnumOrUnknown<super::BPOEMOLJCCE::BPOEMOLJCCE>,
-    // @@protoc_insertion_point(field:GetPlatformPlayerInfoCsReq.EEOFFDDMGIB)
-    pub EEOFFDDMGIB: ::std::vec::Vec<::std::string::String>,
+    // @@protoc_insertion_point(field:GetPlatformPlayerInfoCsReq.LFFMLLMDJNL)
+    pub LFFMLLMDJNL: ::protobuf::EnumOrUnknown<super::LEFBICDEJDE::LEFBICDEJDE>,
+    // @@protoc_insertion_point(field:GetPlatformPlayerInfoCsReq.JFPDPHNFBKP)
+    pub JFPDPHNFBKP: ::std::vec::Vec<::std::string::String>,
     // special fields
     // @@protoc_insertion_point(special_field:GetPlatformPlayerInfoCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl GetPlatformPlayerInfoCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NEJJEFEOJOJ",
-            |m: &GetPlatformPlayerInfoCsReq| { &m.NEJJEFEOJOJ },
-            |m: &mut GetPlatformPlayerInfoCsReq| { &mut m.NEJJEFEOJOJ },
+            "LFFMLLMDJNL",
+            |m: &GetPlatformPlayerInfoCsReq| { &m.LFFMLLMDJNL },
+            |m: &mut GetPlatformPlayerInfoCsReq| { &mut m.LFFMLLMDJNL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EEOFFDDMGIB",
-            |m: &GetPlatformPlayerInfoCsReq| { &m.EEOFFDDMGIB },
-            |m: &mut GetPlatformPlayerInfoCsReq| { &mut m.EEOFFDDMGIB },
+            "JFPDPHNFBKP",
+            |m: &GetPlatformPlayerInfoCsReq| { &m.JFPDPHNFBKP },
+            |m: &mut GetPlatformPlayerInfoCsReq| { &mut m.JFPDPHNFBKP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetPlatformPlayerInfoCsReq>(
             "GetPlatformPlayerInfoCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for GetPlatformPlayerInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.NEJJEFEOJOJ = is.read_enum_or_unknown()?;
+                48 => {
+                    self.LFFMLLMDJNL = is.read_enum_or_unknown()?;
                 },
-                10 => {
-                    self.EEOFFDDMGIB.push(is.read_string()?);
+                26 => {
+                    self.JFPDPHNFBKP.push(is.read_string()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for GetPlatformPlayerInfoCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NEJJEFEOJOJ != ::protobuf::EnumOrUnknown::new(super::BPOEMOLJCCE::BPOEMOLJCCE::EDITOR) {
-            my_size += ::protobuf::rt::int32_size(4, self.NEJJEFEOJOJ.value());
+        if self.LFFMLLMDJNL != ::protobuf::EnumOrUnknown::new(super::LEFBICDEJDE::LEFBICDEJDE::EDITOR) {
+            my_size += ::protobuf::rt::int32_size(6, self.LFFMLLMDJNL.value());
         }
-        for value in &self.EEOFFDDMGIB {
-            my_size += ::protobuf::rt::string_size(1, &value);
+        for value in &self.JFPDPHNFBKP {
+            my_size += ::protobuf::rt::string_size(3, &value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for GetPlatformPlayerInfoCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NEJJEFEOJOJ != ::protobuf::EnumOrUnknown::new(super::BPOEMOLJCCE::BPOEMOLJCCE::EDITOR) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.NEJJEFEOJOJ))?;
+        if self.LFFMLLMDJNL != ::protobuf::EnumOrUnknown::new(super::LEFBICDEJDE::LEFBICDEJDE::EDITOR) {
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.LFFMLLMDJNL))?;
         }
-        for v in &self.EEOFFDDMGIB {
-            os.write_string(1, &v)?;
+        for v in &self.JFPDPHNFBKP {
+            os.write_string(3, &v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GetPlatformPlayerInfoCsReq {
     }
 
     fn clear(&mut self) {
-        self.NEJJEFEOJOJ = ::protobuf::EnumOrUnknown::new(super::BPOEMOLJCCE::BPOEMOLJCCE::EDITOR);
-        self.EEOFFDDMGIB.clear();
+        self.LFFMLLMDJNL = ::protobuf::EnumOrUnknown::new(super::LEFBICDEJDE::LEFBICDEJDE::EDITOR);
+        self.JFPDPHNFBKP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetPlatformPlayerInfoCsReq {
         static instance: GetPlatformPlayerInfoCsReq = GetPlatformPlayerInfoCsReq {
-            NEJJEFEOJOJ: ::protobuf::EnumOrUnknown::from_i32(0),
-            EEOFFDDMGIB: ::std::vec::Vec::new(),
+            LFFMLLMDJNL: ::protobuf::EnumOrUnknown::from_i32(0),
+            JFPDPHNFBKP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GetPlatformPlayerInfoCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20GetPlatformPlayerInfoCsReq.proto\x1a\x11BPOEMOLJCCE.proto\"n\n\x1a\
-    GetPlatformPlayerInfoCsReq\x12.\n\x0bNEJJEFEOJOJ\x18\x04\x20\x01(\x0e2\
-    \x0c.BPOEMOLJCCER\x0bNEJJEFEOJOJ\x12\x20\n\x0bEEOFFDDMGIB\x18\x01\x20\
-    \x03(\tR\x0bEEOFFDDMGIBb\x06proto3\
+    \n\x20GetPlatformPlayerInfoCsReq.proto\x1a\x11LEFBICDEJDE.proto\"n\n\x1a\
+    GetPlatformPlayerInfoCsReq\x12.\n\x0bLFFMLLMDJNL\x18\x06\x20\x01(\x0e2\
+    \x0c.LEFBICDEJDER\x0bLFFMLLMDJNL\x12\x20\n\x0bJFPDPHNFBKP\x18\x03\x20\
+    \x03(\tR\x0bJFPDPHNFBKPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::BPOEMOLJCCE::file_descriptor().clone());
+            deps.push(super::LEFBICDEJDE::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetPlatformPlayerInfoCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,34 +29,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetBagScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetBagScRsp.NGENOBFFLAB)
-    pub NGENOBFFLAB: ::std::vec::Vec<super::BLOBMPGCHKO::BLOBMPGCHKO>,
-    // @@protoc_insertion_point(field:GetBagScRsp.HNBHLCAKAJG)
-    pub HNBHLCAKAJG: ::std::vec::Vec<super::BLOBMPGCHKO::BLOBMPGCHKO>,
     // @@protoc_insertion_point(field:GetBagScRsp.equipment_list)
     pub equipment_list: ::std::vec::Vec<super::Equipment::Equipment>,
-    // @@protoc_insertion_point(field:GetBagScRsp.PNBPDOGEKGB)
-    pub PNBPDOGEKGB: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetBagScRsp.DHDJIIOIPKH)
-    pub DHDJIIOIPKH: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetBagScRsp.FAMNCJFBAFF)
-    pub FAMNCJFBAFF: ::std::vec::Vec<super::Material::Material>,
-    // @@protoc_insertion_point(field:GetBagScRsp.CGFLEKCNJKD)
-    pub CGFLEKCNJKD: u32,
-    // @@protoc_insertion_point(field:GetBagScRsp.IBLPHOPOEOK)
-    pub IBLPHOPOEOK: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::TurnFoodSwitch::TurnFoodSwitch>>,
-    // @@protoc_insertion_point(field:GetBagScRsp.material_list)
-    pub material_list: ::std::vec::Vec<super::Material::Material>,
-    // @@protoc_insertion_point(field:GetBagScRsp.relic_list)
-    pub relic_list: ::std::vec::Vec<super::Relic::Relic>,
+    // @@protoc_insertion_point(field:GetBagScRsp.DJKHJFIKMDP)
+    pub DJKHJFIKMDP: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetBagScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetBagScRsp.LAFFCMLEILC)
-    pub LAFFCMLEILC: ::std::vec::Vec<super::PileItem::PileItem>,
-    // @@protoc_insertion_point(field:GetBagScRsp.NCCIGLLBCON)
-    pub NCCIGLLBCON: ::std::vec::Vec<super::PIOOJABFAGN::PIOOJABFAGN>,
-    // @@protoc_insertion_point(field:GetBagScRsp.pet_list)
-    pub pet_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetBagScRsp.KCFLKFDONPB)
+    pub KCFLKFDONPB: u32,
+    // @@protoc_insertion_point(field:GetBagScRsp.ODEEBIJLNBK)
+    pub ODEEBIJLNBK: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetBagScRsp.material_list)
+    pub material_list: ::std::vec::Vec<super::Material::Material>,
+    // @@protoc_insertion_point(field:GetBagScRsp.ONOMLHNJCFN)
+    pub ONOMLHNJCFN: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetBagScRsp.PHPMPKOONJD)
+    pub PHPMPKOONJD: ::std::vec::Vec<super::Material::Material>,
+    // @@protoc_insertion_point(field:GetBagScRsp.relic_list)
+    pub relic_list: ::std::vec::Vec<super::Relic::Relic>,
     // special fields
     // @@protoc_insertion_point(special_field:GetBagScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -74,47 +64,32 @@ impl GetBagScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(14);
+        let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NGENOBFFLAB",
-            |m: &GetBagScRsp| { &m.NGENOBFFLAB },
-            |m: &mut GetBagScRsp| { &mut m.NGENOBFFLAB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HNBHLCAKAJG",
-            |m: &GetBagScRsp| { &m.HNBHLCAKAJG },
-            |m: &mut GetBagScRsp| { &mut m.HNBHLCAKAJG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "equipment_list",
             |m: &GetBagScRsp| { &m.equipment_list },
             |m: &mut GetBagScRsp| { &mut m.equipment_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PNBPDOGEKGB",
-            |m: &GetBagScRsp| { &m.PNBPDOGEKGB },
-            |m: &mut GetBagScRsp| { &mut m.PNBPDOGEKGB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DHDJIIOIPKH",
-            |m: &GetBagScRsp| { &m.DHDJIIOIPKH },
-            |m: &mut GetBagScRsp| { &mut m.DHDJIIOIPKH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FAMNCJFBAFF",
-            |m: &GetBagScRsp| { &m.FAMNCJFBAFF },
-            |m: &mut GetBagScRsp| { &mut m.FAMNCJFBAFF },
+            "DJKHJFIKMDP",
+            |m: &GetBagScRsp| { &m.DJKHJFIKMDP },
+            |m: &mut GetBagScRsp| { &mut m.DJKHJFIKMDP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CGFLEKCNJKD",
-            |m: &GetBagScRsp| { &m.CGFLEKCNJKD },
-            |m: &mut GetBagScRsp| { &mut m.CGFLEKCNJKD },
+            "retcode",
+            |m: &GetBagScRsp| { &m.retcode },
+            |m: &mut GetBagScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KCFLKFDONPB",
+            |m: &GetBagScRsp| { &m.KCFLKFDONPB },
+            |m: &mut GetBagScRsp| { &mut m.KCFLKFDONPB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IBLPHOPOEOK",
-            |m: &GetBagScRsp| { &m.IBLPHOPOEOK },
-            |m: &mut GetBagScRsp| { &mut m.IBLPHOPOEOK },
+            "ODEEBIJLNBK",
+            |m: &GetBagScRsp| { &m.ODEEBIJLNBK },
+            |m: &mut GetBagScRsp| { &mut m.ODEEBIJLNBK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "material_list",
@@ -122,29 +97,19 @@ impl GetBagScRsp {
             |m: &mut GetBagScRsp| { &mut m.material_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "ONOMLHNJCFN",
+            |m: &GetBagScRsp| { &m.ONOMLHNJCFN },
+            |m: &mut GetBagScRsp| { &mut m.ONOMLHNJCFN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PHPMPKOONJD",
+            |m: &GetBagScRsp| { &m.PHPMPKOONJD },
+            |m: &mut GetBagScRsp| { &mut m.PHPMPKOONJD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "relic_list",
             |m: &GetBagScRsp| { &m.relic_list },
             |m: &mut GetBagScRsp| { &mut m.relic_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetBagScRsp| { &m.retcode },
-            |m: &mut GetBagScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LAFFCMLEILC",
-            |m: &GetBagScRsp| { &m.LAFFCMLEILC },
-            |m: &mut GetBagScRsp| { &mut m.LAFFCMLEILC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NCCIGLLBCON",
-            |m: &GetBagScRsp| { &m.NCCIGLLBCON },
-            |m: &mut GetBagScRsp| { &mut m.NCCIGLLBCON },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "pet_list",
-            |m: &GetBagScRsp| { &m.pet_list },
-            |m: &mut GetBagScRsp| { &mut m.pet_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetBagScRsp>(
             "GetBagScRsp",
@@ -164,59 +129,41 @@ impl ::protobuf::Message for GetBagScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    self.NGENOBFFLAB.push(is.read_message()?);
-                },
-                34 => {
-                    self.HNBHLCAKAJG.push(is.read_message()?);
-                },
-                122 => {
+                98 => {
                     self.equipment_list.push(is.read_message()?);
                 },
-                42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.PNBPDOGEKGB)?;
+                34 => {
+                    is.read_repeated_packed_uint32_into(&mut self.DJKHJFIKMDP)?;
                 },
-                40 => {
-                    self.PNBPDOGEKGB.push(is.read_uint32()?);
+                32 => {
+                    self.DJKHJFIKMDP.push(is.read_uint32()?);
+                },
+                24 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                120 => {
+                    self.KCFLKFDONPB = is.read_uint32()?;
                 },
                 106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.DHDJIIOIPKH)?;
+                    is.read_repeated_packed_uint32_into(&mut self.ODEEBIJLNBK)?;
                 },
                 104 => {
-                    self.DHDJIIOIPKH.push(is.read_uint32()?);
+                    self.ODEEBIJLNBK.push(is.read_uint32()?);
                 },
-                50 => {
-                    self.FAMNCJFBAFF.push(is.read_message()?);
-                },
-                112 => {
-                    self.CGFLEKCNJKD = is.read_uint32()?;
-                },
-                88 => {
-                    self.IBLPHOPOEOK.push(is.read_enum_or_unknown()?);
-                },
-                90 => {
-                    ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.IBLPHOPOEOK)?
-                },
-                58 => {
+                66 => {
                     self.material_list.push(is.read_message()?);
                 },
                 82 => {
-                    self.relic_list.push(is.read_message()?);
+                    is.read_repeated_packed_uint32_into(&mut self.ONOMLHNJCFN)?;
                 },
-                72 => {
-                    self.retcode = is.read_uint32()?;
+                80 => {
+                    self.ONOMLHNJCFN.push(is.read_uint32()?);
                 },
-                98 => {
-                    self.LAFFCMLEILC.push(is.read_message()?);
-                },
-                66 => {
-                    self.NCCIGLLBCON.push(is.read_message()?);
+                114 => {
+                    self.PHPMPKOONJD.push(is.read_message()?);
                 },
                 18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.pet_list)?;
-                },
-                16 => {
-                    self.pet_list.push(is.read_uint32()?);
+                    self.relic_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -230,35 +177,30 @@ impl ::protobuf::Message for GetBagScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.NGENOBFFLAB {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.HNBHLCAKAJG {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         for value in &self.equipment_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.PNBPDOGEKGB {
-            my_size += ::protobuf::rt::uint32_size(5, *value);
+        for value in &self.DJKHJFIKMDP {
+            my_size += ::protobuf::rt::uint32_size(4, *value);
         };
-        for value in &self.DHDJIIOIPKH {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+        }
+        if self.KCFLKFDONPB != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.KCFLKFDONPB);
+        }
+        for value in &self.ODEEBIJLNBK {
             my_size += ::protobuf::rt::uint32_size(13, *value);
         };
-        for value in &self.FAMNCJFBAFF {
+        for value in &self.material_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.CGFLEKCNJKD != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.CGFLEKCNJKD);
-        }
-        for value in &self.IBLPHOPOEOK {
-            my_size += ::protobuf::rt::int32_size(11, value.value());
+        for value in &self.ONOMLHNJCFN {
+            my_size += ::protobuf::rt::uint32_size(10, *value);
         };
-        for value in &self.material_list {
+        for value in &self.PHPMPKOONJD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -266,67 +208,38 @@ impl ::protobuf::Message for GetBagScRsp {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
-        }
-        for value in &self.LAFFCMLEILC {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.NCCIGLLBCON {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.pet_list {
-            my_size += ::protobuf::rt::uint32_size(2, *value);
-        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.NGENOBFFLAB {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        };
-        for v in &self.HNBHLCAKAJG {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        };
         for v in &self.equipment_list {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        };
-        for v in &self.PNBPDOGEKGB {
-            os.write_uint32(5, *v)?;
-        };
-        for v in &self.DHDJIIOIPKH {
-            os.write_uint32(13, *v)?;
-        };
-        for v in &self.FAMNCJFBAFF {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        };
-        if self.CGFLEKCNJKD != 0 {
-            os.write_uint32(14, self.CGFLEKCNJKD)?;
-        }
-        for v in &self.IBLPHOPOEOK {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(v))?;
-        };
-        for v in &self.material_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        };
-        for v in &self.relic_list {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        };
-        if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
-        }
-        for v in &self.LAFFCMLEILC {
             ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
-        for v in &self.NCCIGLLBCON {
+        for v in &self.DJKHJFIKMDP {
+            os.write_uint32(4, *v)?;
+        };
+        if self.retcode != 0 {
+            os.write_uint32(3, self.retcode)?;
+        }
+        if self.KCFLKFDONPB != 0 {
+            os.write_uint32(15, self.KCFLKFDONPB)?;
+        }
+        for v in &self.ODEEBIJLNBK {
+            os.write_uint32(13, *v)?;
+        };
+        for v in &self.material_list {
             ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
-        for v in &self.pet_list {
-            os.write_uint32(2, *v)?;
+        for v in &self.ONOMLHNJCFN {
+            os.write_uint32(10, *v)?;
+        };
+        for v in &self.PHPMPKOONJD {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        };
+        for v in &self.relic_list {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -345,39 +258,29 @@ impl ::protobuf::Message for GetBagScRsp {
     }
 
     fn clear(&mut self) {
-        self.NGENOBFFLAB.clear();
-        self.HNBHLCAKAJG.clear();
         self.equipment_list.clear();
-        self.PNBPDOGEKGB.clear();
-        self.DHDJIIOIPKH.clear();
-        self.FAMNCJFBAFF.clear();
-        self.CGFLEKCNJKD = 0;
-        self.IBLPHOPOEOK.clear();
-        self.material_list.clear();
-        self.relic_list.clear();
+        self.DJKHJFIKMDP.clear();
         self.retcode = 0;
-        self.LAFFCMLEILC.clear();
-        self.NCCIGLLBCON.clear();
-        self.pet_list.clear();
+        self.KCFLKFDONPB = 0;
+        self.ODEEBIJLNBK.clear();
+        self.material_list.clear();
+        self.ONOMLHNJCFN.clear();
+        self.PHPMPKOONJD.clear();
+        self.relic_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetBagScRsp {
         static instance: GetBagScRsp = GetBagScRsp {
-            NGENOBFFLAB: ::std::vec::Vec::new(),
-            HNBHLCAKAJG: ::std::vec::Vec::new(),
             equipment_list: ::std::vec::Vec::new(),
-            PNBPDOGEKGB: ::std::vec::Vec::new(),
-            DHDJIIOIPKH: ::std::vec::Vec::new(),
-            FAMNCJFBAFF: ::std::vec::Vec::new(),
-            CGFLEKCNJKD: 0,
-            IBLPHOPOEOK: ::std::vec::Vec::new(),
-            material_list: ::std::vec::Vec::new(),
-            relic_list: ::std::vec::Vec::new(),
+            DJKHJFIKMDP: ::std::vec::Vec::new(),
             retcode: 0,
-            LAFFCMLEILC: ::std::vec::Vec::new(),
-            NCCIGLLBCON: ::std::vec::Vec::new(),
-            pet_list: ::std::vec::Vec::new(),
+            KCFLKFDONPB: 0,
+            ODEEBIJLNBK: ::std::vec::Vec::new(),
+            material_list: ::std::vec::Vec::new(),
+            ONOMLHNJCFN: ::std::vec::Vec::new(),
+            PHPMPKOONJD: ::std::vec::Vec::new(),
+            relic_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -402,23 +305,17 @@ impl ::protobuf::reflect::ProtobufValue for GetBagScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GetBagScRsp.proto\x1a\x11BLOBMPGCHKO.proto\x1a\x0fEquipment.proto\
-    \x1a\x0eMaterial.proto\x1a\x11PIOOJABFAGN.proto\x1a\x0ePileItem.proto\
-    \x1a\x0bRelic.proto\x1a\x14TurnFoodSwitch.proto\"\xcf\x04\n\x0bGetBagScR\
-    sp\x12.\n\x0bNGENOBFFLAB\x18\x03\x20\x03(\x0b2\x0c.BLOBMPGCHKOR\x0bNGENO\
-    BFFLAB\x12.\n\x0bHNBHLCAKAJG\x18\x04\x20\x03(\x0b2\x0c.BLOBMPGCHKOR\x0bH\
-    NBHLCAKAJG\x121\n\x0eequipment_list\x18\x0f\x20\x03(\x0b2\n.EquipmentR\r\
-    equipmentList\x12\x20\n\x0bPNBPDOGEKGB\x18\x05\x20\x03(\rR\x0bPNBPDOGEKG\
-    B\x12\x20\n\x0bDHDJIIOIPKH\x18\r\x20\x03(\rR\x0bDHDJIIOIPKH\x12+\n\x0bFA\
-    MNCJFBAFF\x18\x06\x20\x03(\x0b2\t.MaterialR\x0bFAMNCJFBAFF\x12\x20\n\x0b\
-    CGFLEKCNJKD\x18\x0e\x20\x01(\rR\x0bCGFLEKCNJKD\x121\n\x0bIBLPHOPOEOK\x18\
-    \x0b\x20\x03(\x0e2\x0f.TurnFoodSwitchR\x0bIBLPHOPOEOK\x12.\n\rmaterial_l\
-    ist\x18\x07\x20\x03(\x0b2\t.MaterialR\x0cmaterialList\x12%\n\nrelic_list\
-    \x18\n\x20\x03(\x0b2\x06.RelicR\trelicList\x12\x18\n\x07retcode\x18\t\
-    \x20\x01(\rR\x07retcode\x12+\n\x0bLAFFCMLEILC\x18\x0c\x20\x03(\x0b2\t.Pi\
-    leItemR\x0bLAFFCMLEILC\x12.\n\x0bNCCIGLLBCON\x18\x08\x20\x03(\x0b2\x0c.P\
-    IOOJABFAGNR\x0bNCCIGLLBCON\x12\x19\n\x08pet_list\x18\x02\x20\x03(\rR\x07\
-    petListb\x06proto3\
+    \n\x11GetBagScRsp.proto\x1a\x0bRelic.proto\x1a\x0fEquipment.proto\x1a\
+    \x0eMaterial.proto\"\xe6\x02\n\x0bGetBagScRsp\x121\n\x0eequipment_list\
+    \x18\x0c\x20\x03(\x0b2\n.EquipmentR\requipmentList\x12\x20\n\x0bDJKHJFIK\
+    MDP\x18\x04\x20\x03(\rR\x0bDJKHJFIKMDP\x12\x18\n\x07retcode\x18\x03\x20\
+    \x01(\rR\x07retcode\x12\x20\n\x0bKCFLKFDONPB\x18\x0f\x20\x01(\rR\x0bKCFL\
+    KFDONPB\x12\x20\n\x0bODEEBIJLNBK\x18\r\x20\x03(\rR\x0bODEEBIJLNBK\x12.\n\
+    \rmaterial_list\x18\x08\x20\x03(\x0b2\t.MaterialR\x0cmaterialList\x12\
+    \x20\n\x0bONOMLHNJCFN\x18\n\x20\x03(\rR\x0bONOMLHNJCFN\x12+\n\x0bPHPMPKO\
+    ONJD\x18\x0e\x20\x03(\x0b2\t.MaterialR\x0bPHPMPKOONJD\x12%\n\nrelic_list\
+    \x18\x02\x20\x03(\x0b2\x06.RelicR\trelicListB\x15\n\x13emu.lunarcore.pro\
+    tob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -435,14 +332,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(7);
-            deps.push(super::BLOBMPGCHKO::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(3);
+            deps.push(super::Relic::file_descriptor().clone());
             deps.push(super::Equipment::file_descriptor().clone());
             deps.push(super::Material::file_descriptor().clone());
-            deps.push(super::PIOOJABFAGN::file_descriptor().clone());
-            deps.push(super::PileItem::file_descriptor().clone());
-            deps.push(super::Relic::file_descriptor().clone());
-            deps.push(super::TurnFoodSwitch::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetBagScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

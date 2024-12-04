@@ -30,28 +30,28 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdPlayerReturnType {
     // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.CmdPlayerReturnTypeNone)
     CmdPlayerReturnTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.CmdPlayerReturnSignCsReq)
-    CmdPlayerReturnSignCsReq = 4571,
-    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.CmdPlayerReturnForceFinishScNotify)
-    CmdPlayerReturnForceFinishScNotify = 4578,
-    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.CmdPlayerReturnTakeRewardScRsp)
-    CmdPlayerReturnTakeRewardScRsp = 4512,
-    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.CmdPlayerReturnSignScRsp)
-    CmdPlayerReturnSignScRsp = 4583,
-    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.CmdPlayerReturnInfoQueryCsReq)
-    CmdPlayerReturnInfoQueryCsReq = 4528,
-    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.CmdPlayerReturnTakePointRewardScRsp)
-    CmdPlayerReturnTakePointRewardScRsp = 4577,
     // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.CmdPlayerReturnStartScNotify)
-    CmdPlayerReturnStartScNotify = 4598,
-    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.CmdPlayerReturnPointChangeScNotify)
-    CmdPlayerReturnPointChangeScNotify = 4542,
-    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.CmdPlayerReturnTakeRewardCsReq)
-    CmdPlayerReturnTakeRewardCsReq = 4533,
+    CmdPlayerReturnStartScNotify = 4559,
     // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.CmdPlayerReturnTakePointRewardCsReq)
-    CmdPlayerReturnTakePointRewardCsReq = 4579,
+    CmdPlayerReturnTakePointRewardCsReq = 4539,
+    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.CmdPlayerReturnTakePointRewardScRsp)
+    CmdPlayerReturnTakePointRewardScRsp = 4553,
+    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.CmdPlayerReturnSignScRsp)
+    CmdPlayerReturnSignScRsp = 4503,
+    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.CmdPlayerReturnTakeRewardScRsp)
+    CmdPlayerReturnTakeRewardScRsp = 4537,
+    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.CmdPlayerReturnSignCsReq)
+    CmdPlayerReturnSignCsReq = 4520,
+    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.CmdPlayerReturnTakeRewardCsReq)
+    CmdPlayerReturnTakeRewardCsReq = 4534,
     // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.CmdPlayerReturnInfoQueryScRsp)
-    CmdPlayerReturnInfoQueryScRsp = 4538,
+    CmdPlayerReturnInfoQueryScRsp = 4516,
+    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.CmdPlayerReturnForceFinishScNotify)
+    CmdPlayerReturnForceFinishScNotify = 4547,
+    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.CmdPlayerReturnInfoQueryCsReq)
+    CmdPlayerReturnInfoQueryCsReq = 4580,
+    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.CmdPlayerReturnPointChangeScNotify)
+    CmdPlayerReturnPointChangeScNotify = 4546,
 }
 
 impl ::protobuf::Enum for CmdPlayerReturnType {
@@ -64,17 +64,17 @@ impl ::protobuf::Enum for CmdPlayerReturnType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdPlayerReturnType> {
         match value {
             0 => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnTypeNone),
-            4571 => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnSignCsReq),
-            4578 => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnForceFinishScNotify),
-            4512 => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnTakeRewardScRsp),
-            4583 => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnSignScRsp),
-            4528 => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnInfoQueryCsReq),
-            4577 => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnTakePointRewardScRsp),
-            4598 => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnStartScNotify),
-            4542 => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnPointChangeScNotify),
-            4533 => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnTakeRewardCsReq),
-            4579 => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnTakePointRewardCsReq),
-            4538 => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnInfoQueryScRsp),
+            4559 => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnStartScNotify),
+            4539 => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnTakePointRewardCsReq),
+            4553 => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnTakePointRewardScRsp),
+            4503 => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnSignScRsp),
+            4537 => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnTakeRewardScRsp),
+            4520 => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnSignCsReq),
+            4534 => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnTakeRewardCsReq),
+            4516 => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnInfoQueryScRsp),
+            4547 => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnForceFinishScNotify),
+            4580 => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnInfoQueryCsReq),
+            4546 => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnPointChangeScNotify),
             _ => ::std::option::Option::None
         }
     }
@@ -82,34 +82,34 @@ impl ::protobuf::Enum for CmdPlayerReturnType {
     fn from_str(str: &str) -> ::std::option::Option<CmdPlayerReturnType> {
         match str {
             "CmdPlayerReturnTypeNone" => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnTypeNone),
-            "CmdPlayerReturnSignCsReq" => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnSignCsReq),
-            "CmdPlayerReturnForceFinishScNotify" => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnForceFinishScNotify),
-            "CmdPlayerReturnTakeRewardScRsp" => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnTakeRewardScRsp),
-            "CmdPlayerReturnSignScRsp" => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnSignScRsp),
-            "CmdPlayerReturnInfoQueryCsReq" => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnInfoQueryCsReq),
-            "CmdPlayerReturnTakePointRewardScRsp" => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnTakePointRewardScRsp),
             "CmdPlayerReturnStartScNotify" => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnStartScNotify),
-            "CmdPlayerReturnPointChangeScNotify" => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnPointChangeScNotify),
-            "CmdPlayerReturnTakeRewardCsReq" => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnTakeRewardCsReq),
             "CmdPlayerReturnTakePointRewardCsReq" => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnTakePointRewardCsReq),
+            "CmdPlayerReturnTakePointRewardScRsp" => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnTakePointRewardScRsp),
+            "CmdPlayerReturnSignScRsp" => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnSignScRsp),
+            "CmdPlayerReturnTakeRewardScRsp" => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnTakeRewardScRsp),
+            "CmdPlayerReturnSignCsReq" => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnSignCsReq),
+            "CmdPlayerReturnTakeRewardCsReq" => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnTakeRewardCsReq),
             "CmdPlayerReturnInfoQueryScRsp" => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnInfoQueryScRsp),
+            "CmdPlayerReturnForceFinishScNotify" => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnForceFinishScNotify),
+            "CmdPlayerReturnInfoQueryCsReq" => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnInfoQueryCsReq),
+            "CmdPlayerReturnPointChangeScNotify" => ::std::option::Option::Some(CmdPlayerReturnType::CmdPlayerReturnPointChangeScNotify),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdPlayerReturnType] = &[
         CmdPlayerReturnType::CmdPlayerReturnTypeNone,
-        CmdPlayerReturnType::CmdPlayerReturnSignCsReq,
-        CmdPlayerReturnType::CmdPlayerReturnForceFinishScNotify,
-        CmdPlayerReturnType::CmdPlayerReturnTakeRewardScRsp,
-        CmdPlayerReturnType::CmdPlayerReturnSignScRsp,
-        CmdPlayerReturnType::CmdPlayerReturnInfoQueryCsReq,
-        CmdPlayerReturnType::CmdPlayerReturnTakePointRewardScRsp,
         CmdPlayerReturnType::CmdPlayerReturnStartScNotify,
-        CmdPlayerReturnType::CmdPlayerReturnPointChangeScNotify,
-        CmdPlayerReturnType::CmdPlayerReturnTakeRewardCsReq,
         CmdPlayerReturnType::CmdPlayerReturnTakePointRewardCsReq,
+        CmdPlayerReturnType::CmdPlayerReturnTakePointRewardScRsp,
+        CmdPlayerReturnType::CmdPlayerReturnSignScRsp,
+        CmdPlayerReturnType::CmdPlayerReturnTakeRewardScRsp,
+        CmdPlayerReturnType::CmdPlayerReturnSignCsReq,
+        CmdPlayerReturnType::CmdPlayerReturnTakeRewardCsReq,
         CmdPlayerReturnType::CmdPlayerReturnInfoQueryScRsp,
+        CmdPlayerReturnType::CmdPlayerReturnForceFinishScNotify,
+        CmdPlayerReturnType::CmdPlayerReturnInfoQueryCsReq,
+        CmdPlayerReturnType::CmdPlayerReturnPointChangeScNotify,
     ];
 }
 
@@ -122,17 +122,17 @@ impl ::protobuf::EnumFull for CmdPlayerReturnType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdPlayerReturnType::CmdPlayerReturnTypeNone => 0,
-            CmdPlayerReturnType::CmdPlayerReturnSignCsReq => 1,
-            CmdPlayerReturnType::CmdPlayerReturnForceFinishScNotify => 2,
-            CmdPlayerReturnType::CmdPlayerReturnTakeRewardScRsp => 3,
+            CmdPlayerReturnType::CmdPlayerReturnStartScNotify => 1,
+            CmdPlayerReturnType::CmdPlayerReturnTakePointRewardCsReq => 2,
+            CmdPlayerReturnType::CmdPlayerReturnTakePointRewardScRsp => 3,
             CmdPlayerReturnType::CmdPlayerReturnSignScRsp => 4,
-            CmdPlayerReturnType::CmdPlayerReturnInfoQueryCsReq => 5,
-            CmdPlayerReturnType::CmdPlayerReturnTakePointRewardScRsp => 6,
-            CmdPlayerReturnType::CmdPlayerReturnStartScNotify => 7,
-            CmdPlayerReturnType::CmdPlayerReturnPointChangeScNotify => 8,
-            CmdPlayerReturnType::CmdPlayerReturnTakeRewardCsReq => 9,
-            CmdPlayerReturnType::CmdPlayerReturnTakePointRewardCsReq => 10,
-            CmdPlayerReturnType::CmdPlayerReturnInfoQueryScRsp => 11,
+            CmdPlayerReturnType::CmdPlayerReturnTakeRewardScRsp => 5,
+            CmdPlayerReturnType::CmdPlayerReturnSignCsReq => 6,
+            CmdPlayerReturnType::CmdPlayerReturnTakeRewardCsReq => 7,
+            CmdPlayerReturnType::CmdPlayerReturnInfoQueryScRsp => 8,
+            CmdPlayerReturnType::CmdPlayerReturnForceFinishScNotify => 9,
+            CmdPlayerReturnType::CmdPlayerReturnInfoQueryCsReq => 10,
+            CmdPlayerReturnType::CmdPlayerReturnPointChangeScNotify => 11,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -152,15 +152,15 @@ impl CmdPlayerReturnType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19CmdPlayerReturnType.proto*\xcb\x03\n\x13CmdPlayerReturnType\x12\
-    \x1b\n\x17CmdPlayerReturnTypeNone\x10\0\x12\x1d\n\x18CmdPlayerReturnSign\
-    CsReq\x10\xdb#\x12'\n\"CmdPlayerReturnForceFinishScNotify\x10\xe2#\x12#\
-    \n\x1eCmdPlayerReturnTakeRewardScRsp\x10\xa0#\x12\x1d\n\x18CmdPlayerRetu\
-    rnSignScRsp\x10\xe7#\x12\"\n\x1dCmdPlayerReturnInfoQueryCsReq\x10\xb0#\
-    \x12(\n#CmdPlayerReturnTakePointRewardScRsp\x10\xe1#\x12!\n\x1cCmdPlayer\
-    ReturnStartScNotify\x10\xf6#\x12'\n\"CmdPlayerReturnPointChangeScNotify\
-    \x10\xbe#\x12#\n\x1eCmdPlayerReturnTakeRewardCsReq\x10\xb5#\x12(\n#CmdPl\
-    ayerReturnTakePointRewardCsReq\x10\xe3#\x12\"\n\x1dCmdPlayerReturnInfoQu\
-    eryScRsp\x10\xba#b\x06proto3\
+    \x1b\n\x17CmdPlayerReturnTypeNone\x10\0\x12!\n\x1cCmdPlayerReturnStartSc\
+    Notify\x10\xcf#\x12(\n#CmdPlayerReturnTakePointRewardCsReq\x10\xbb#\x12(\
+    \n#CmdPlayerReturnTakePointRewardScRsp\x10\xc9#\x12\x1d\n\x18CmdPlayerRe\
+    turnSignScRsp\x10\x97#\x12#\n\x1eCmdPlayerReturnTakeRewardScRsp\x10\xb9#\
+    \x12\x1d\n\x18CmdPlayerReturnSignCsReq\x10\xa8#\x12#\n\x1eCmdPlayerRetur\
+    nTakeRewardCsReq\x10\xb6#\x12\"\n\x1dCmdPlayerReturnInfoQueryScRsp\x10\
+    \xa4#\x12'\n\"CmdPlayerReturnForceFinishScNotify\x10\xc3#\x12\"\n\x1dCmd\
+    PlayerReturnInfoQueryCsReq\x10\xe4#\x12'\n\"CmdPlayerReturnPointChangeSc\
+    Notify\x10\xc2#b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

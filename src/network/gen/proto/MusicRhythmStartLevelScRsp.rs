@@ -31,10 +31,10 @@ pub struct MusicRhythmStartLevelScRsp {
     // message fields
     // @@protoc_insertion_point(field:MusicRhythmStartLevelScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:MusicRhythmStartLevelScRsp.DGEJMCKIFJB)
-    pub DGEJMCKIFJB: u32,
-    // @@protoc_insertion_point(field:MusicRhythmStartLevelScRsp.NJOONPFKHGE)
-    pub NJOONPFKHGE: ::std::string::String,
+    // @@protoc_insertion_point(field:MusicRhythmStartLevelScRsp.level_id)
+    pub level_id: u32,
+    // @@protoc_insertion_point(field:MusicRhythmStartLevelScRsp.name)
+    pub name: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:MusicRhythmStartLevelScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,14 +60,14 @@ impl MusicRhythmStartLevelScRsp {
             |m: &mut MusicRhythmStartLevelScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DGEJMCKIFJB",
-            |m: &MusicRhythmStartLevelScRsp| { &m.DGEJMCKIFJB },
-            |m: &mut MusicRhythmStartLevelScRsp| { &mut m.DGEJMCKIFJB },
+            "level_id",
+            |m: &MusicRhythmStartLevelScRsp| { &m.level_id },
+            |m: &mut MusicRhythmStartLevelScRsp| { &mut m.level_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NJOONPFKHGE",
-            |m: &MusicRhythmStartLevelScRsp| { &m.NJOONPFKHGE },
-            |m: &mut MusicRhythmStartLevelScRsp| { &mut m.NJOONPFKHGE },
+            "name",
+            |m: &MusicRhythmStartLevelScRsp| { &m.name },
+            |m: &mut MusicRhythmStartLevelScRsp| { &mut m.name },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MusicRhythmStartLevelScRsp>(
             "MusicRhythmStartLevelScRsp",
@@ -91,10 +91,10 @@ impl ::protobuf::Message for MusicRhythmStartLevelScRsp {
                     self.retcode = is.read_uint32()?;
                 },
                 24 => {
-                    self.DGEJMCKIFJB = is.read_uint32()?;
+                    self.level_id = is.read_uint32()?;
                 },
                 66 => {
-                    self.NJOONPFKHGE = is.read_string()?;
+                    self.name = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,11 +111,11 @@ impl ::protobuf::Message for MusicRhythmStartLevelScRsp {
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
-        if self.DGEJMCKIFJB != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.DGEJMCKIFJB);
+        if self.level_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.level_id);
         }
-        if !self.NJOONPFKHGE.is_empty() {
-            my_size += ::protobuf::rt::string_size(8, &self.NJOONPFKHGE);
+        if !self.name.is_empty() {
+            my_size += ::protobuf::rt::string_size(8, &self.name);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -126,11 +126,11 @@ impl ::protobuf::Message for MusicRhythmStartLevelScRsp {
         if self.retcode != 0 {
             os.write_uint32(6, self.retcode)?;
         }
-        if self.DGEJMCKIFJB != 0 {
-            os.write_uint32(3, self.DGEJMCKIFJB)?;
+        if self.level_id != 0 {
+            os.write_uint32(3, self.level_id)?;
         }
-        if !self.NJOONPFKHGE.is_empty() {
-            os.write_string(8, &self.NJOONPFKHGE)?;
+        if !self.name.is_empty() {
+            os.write_string(8, &self.name)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for MusicRhythmStartLevelScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.DGEJMCKIFJB = 0;
-        self.NJOONPFKHGE.clear();
+        self.level_id = 0;
+        self.name.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MusicRhythmStartLevelScRsp {
         static instance: MusicRhythmStartLevelScRsp = MusicRhythmStartLevelScRsp {
             retcode: 0,
-            DGEJMCKIFJB: 0,
-            NJOONPFKHGE: ::std::string::String::new(),
+            level_id: 0,
+            name: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for MusicRhythmStartLevelScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20MusicRhythmStartLevelScRsp.proto\"z\n\x1aMusicRhythmStartLevelScRs\
-    p\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\x12\x20\n\x0bDGEJM\
-    CKIFJB\x18\x03\x20\x01(\rR\x0bDGEJMCKIFJB\x12\x20\n\x0bNJOONPFKHGE\x18\
-    \x08\x20\x01(\tR\x0bNJOONPFKHGEb\x06proto3\
+    \n\x20MusicRhythmStartLevelScRsp.proto\"e\n\x1aMusicRhythmStartLevelScRs\
+    p\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\x12\x19\n\x08level\
+    _id\x18\x03\x20\x01(\rR\x07levelId\x12\x12\n\x04name\x18\x08\x20\x01(\tR\
+    \x04nameB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

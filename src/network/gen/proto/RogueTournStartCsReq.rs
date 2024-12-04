@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournStartCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournStartCsReq.IGBJOAKIOFL)
-    pub IGBJOAKIOFL: u32,
-    // @@protoc_insertion_point(field:RogueTournStartCsReq.CCONMCFLBKG)
-    pub CCONMCFLBKG: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:RogueTournStartCsReq.CAHMPPDMLGH)
-    pub CAHMPPDMLGH: u32,
-    // @@protoc_insertion_point(field:RogueTournStartCsReq.FIOAACNKLPC)
-    pub FIOAACNKLPC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueTournStartCsReq.BFLEPHGFCGE)
+    pub BFLEPHGFCGE: u32,
+    // @@protoc_insertion_point(field:RogueTournStartCsReq.FOPPGNKJGLP)
+    pub FOPPGNKJGLP: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueTournStartCsReq.OMBLHJDKEJA)
+    pub OMBLHJDKEJA: u32,
+    // @@protoc_insertion_point(field:RogueTournStartCsReq.ONLLDNLPHEF)
+    pub ONLLDNLPHEF: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournStartCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl RogueTournStartCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IGBJOAKIOFL",
-            |m: &RogueTournStartCsReq| { &m.IGBJOAKIOFL },
-            |m: &mut RogueTournStartCsReq| { &mut m.IGBJOAKIOFL },
+            "BFLEPHGFCGE",
+            |m: &RogueTournStartCsReq| { &m.BFLEPHGFCGE },
+            |m: &mut RogueTournStartCsReq| { &mut m.BFLEPHGFCGE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CCONMCFLBKG",
-            |m: &RogueTournStartCsReq| { &m.CCONMCFLBKG },
-            |m: &mut RogueTournStartCsReq| { &mut m.CCONMCFLBKG },
+            "FOPPGNKJGLP",
+            |m: &RogueTournStartCsReq| { &m.FOPPGNKJGLP },
+            |m: &mut RogueTournStartCsReq| { &mut m.FOPPGNKJGLP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CAHMPPDMLGH",
-            |m: &RogueTournStartCsReq| { &m.CAHMPPDMLGH },
-            |m: &mut RogueTournStartCsReq| { &mut m.CAHMPPDMLGH },
+            "OMBLHJDKEJA",
+            |m: &RogueTournStartCsReq| { &m.OMBLHJDKEJA },
+            |m: &mut RogueTournStartCsReq| { &mut m.OMBLHJDKEJA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FIOAACNKLPC",
-            |m: &RogueTournStartCsReq| { &m.FIOAACNKLPC },
-            |m: &mut RogueTournStartCsReq| { &mut m.FIOAACNKLPC },
+            "ONLLDNLPHEF",
+            |m: &RogueTournStartCsReq| { &m.ONLLDNLPHEF },
+            |m: &mut RogueTournStartCsReq| { &mut m.ONLLDNLPHEF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournStartCsReq>(
             "RogueTournStartCsReq",
@@ -94,23 +94,23 @@ impl ::protobuf::Message for RogueTournStartCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.IGBJOAKIOFL = is.read_uint32()?;
-                },
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.CCONMCFLBKG)?;
-                },
-                32 => {
-                    self.CCONMCFLBKG.push(is.read_uint32()?);
-                },
-                112 => {
-                    self.CAHMPPDMLGH = is.read_uint32()?;
+                120 => {
+                    self.BFLEPHGFCGE = is.read_uint32()?;
                 },
                 18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FIOAACNKLPC)?;
+                    is.read_repeated_packed_uint32_into(&mut self.FOPPGNKJGLP)?;
                 },
                 16 => {
-                    self.FIOAACNKLPC.push(is.read_uint32()?);
+                    self.FOPPGNKJGLP.push(is.read_uint32()?);
+                },
+                96 => {
+                    self.OMBLHJDKEJA = is.read_uint32()?;
+                },
+                10 => {
+                    is.read_repeated_packed_uint32_into(&mut self.ONLLDNLPHEF)?;
+                },
+                8 => {
+                    self.ONLLDNLPHEF.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -124,17 +124,17 @@ impl ::protobuf::Message for RogueTournStartCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IGBJOAKIOFL != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.IGBJOAKIOFL);
+        if self.BFLEPHGFCGE != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.BFLEPHGFCGE);
         }
-        for value in &self.CCONMCFLBKG {
-            my_size += ::protobuf::rt::uint32_size(4, *value);
-        };
-        if self.CAHMPPDMLGH != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.CAHMPPDMLGH);
-        }
-        for value in &self.FIOAACNKLPC {
+        for value in &self.FOPPGNKJGLP {
             my_size += ::protobuf::rt::uint32_size(2, *value);
+        };
+        if self.OMBLHJDKEJA != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.OMBLHJDKEJA);
+        }
+        for value in &self.ONLLDNLPHEF {
+            my_size += ::protobuf::rt::uint32_size(1, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -142,17 +142,17 @@ impl ::protobuf::Message for RogueTournStartCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IGBJOAKIOFL != 0 {
-            os.write_uint32(5, self.IGBJOAKIOFL)?;
+        if self.BFLEPHGFCGE != 0 {
+            os.write_uint32(15, self.BFLEPHGFCGE)?;
         }
-        for v in &self.CCONMCFLBKG {
-            os.write_uint32(4, *v)?;
-        };
-        if self.CAHMPPDMLGH != 0 {
-            os.write_uint32(14, self.CAHMPPDMLGH)?;
-        }
-        for v in &self.FIOAACNKLPC {
+        for v in &self.FOPPGNKJGLP {
             os.write_uint32(2, *v)?;
+        };
+        if self.OMBLHJDKEJA != 0 {
+            os.write_uint32(12, self.OMBLHJDKEJA)?;
+        }
+        for v in &self.ONLLDNLPHEF {
+            os.write_uint32(1, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -171,19 +171,19 @@ impl ::protobuf::Message for RogueTournStartCsReq {
     }
 
     fn clear(&mut self) {
-        self.IGBJOAKIOFL = 0;
-        self.CCONMCFLBKG.clear();
-        self.CAHMPPDMLGH = 0;
-        self.FIOAACNKLPC.clear();
+        self.BFLEPHGFCGE = 0;
+        self.FOPPGNKJGLP.clear();
+        self.OMBLHJDKEJA = 0;
+        self.ONLLDNLPHEF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournStartCsReq {
         static instance: RogueTournStartCsReq = RogueTournStartCsReq {
-            IGBJOAKIOFL: 0,
-            CCONMCFLBKG: ::std::vec::Vec::new(),
-            CAHMPPDMLGH: 0,
-            FIOAACNKLPC: ::std::vec::Vec::new(),
+            BFLEPHGFCGE: 0,
+            FOPPGNKJGLP: ::std::vec::Vec::new(),
+            OMBLHJDKEJA: 0,
+            ONLLDNLPHEF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -209,10 +209,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournStartCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aRogueTournStartCsReq.proto\"\x9e\x01\n\x14RogueTournStartCsReq\x12\
-    \x20\n\x0bIGBJOAKIOFL\x18\x05\x20\x01(\rR\x0bIGBJOAKIOFL\x12\x20\n\x0bCC\
-    ONMCFLBKG\x18\x04\x20\x03(\rR\x0bCCONMCFLBKG\x12\x20\n\x0bCAHMPPDMLGH\
-    \x18\x0e\x20\x01(\rR\x0bCAHMPPDMLGH\x12\x20\n\x0bFIOAACNKLPC\x18\x02\x20\
-    \x03(\rR\x0bFIOAACNKLPCb\x06proto3\
+    \x20\n\x0bBFLEPHGFCGE\x18\x0f\x20\x01(\rR\x0bBFLEPHGFCGE\x12\x20\n\x0bFO\
+    PPGNKJGLP\x18\x02\x20\x03(\rR\x0bFOPPGNKJGLP\x12\x20\n\x0bOMBLHJDKEJA\
+    \x18\x0c\x20\x01(\rR\x0bOMBLHJDKEJA\x12\x20\n\x0bONLLDNLPHEF\x18\x01\x20\
+    \x03(\rR\x0bONLLDNLPHEFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

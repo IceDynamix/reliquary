@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightMatch3ChatScNotify {
     // message fields
-    // @@protoc_insertion_point(field:FightMatch3ChatScNotify.OAOGPLNDOKA)
-    pub OAOGPLNDOKA: u32,
-    // @@protoc_insertion_point(field:FightMatch3ChatScNotify.NBPDNFMOLGO)
-    pub NBPDNFMOLGO: u32,
+    // @@protoc_insertion_point(field:FightMatch3ChatScNotify.BDPFDKADBDH)
+    pub BDPFDKADBDH: u32,
+    // @@protoc_insertion_point(field:FightMatch3ChatScNotify.EABKHFFDAKJ)
+    pub EABKHFFDAKJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FightMatch3ChatScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl FightMatch3ChatScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OAOGPLNDOKA",
-            |m: &FightMatch3ChatScNotify| { &m.OAOGPLNDOKA },
-            |m: &mut FightMatch3ChatScNotify| { &mut m.OAOGPLNDOKA },
+            "BDPFDKADBDH",
+            |m: &FightMatch3ChatScNotify| { &m.BDPFDKADBDH },
+            |m: &mut FightMatch3ChatScNotify| { &mut m.BDPFDKADBDH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NBPDNFMOLGO",
-            |m: &FightMatch3ChatScNotify| { &m.NBPDNFMOLGO },
-            |m: &mut FightMatch3ChatScNotify| { &mut m.NBPDNFMOLGO },
+            "EABKHFFDAKJ",
+            |m: &FightMatch3ChatScNotify| { &m.EABKHFFDAKJ },
+            |m: &mut FightMatch3ChatScNotify| { &mut m.EABKHFFDAKJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightMatch3ChatScNotify>(
             "FightMatch3ChatScNotify",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for FightMatch3ChatScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.OAOGPLNDOKA = is.read_uint32()?;
+                112 => {
+                    self.BDPFDKADBDH = is.read_uint32()?;
                 },
-                72 => {
-                    self.NBPDNFMOLGO = is.read_uint32()?;
+                32 => {
+                    self.EABKHFFDAKJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for FightMatch3ChatScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OAOGPLNDOKA != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.OAOGPLNDOKA);
+        if self.BDPFDKADBDH != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.BDPFDKADBDH);
         }
-        if self.NBPDNFMOLGO != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.NBPDNFMOLGO);
+        if self.EABKHFFDAKJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.EABKHFFDAKJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for FightMatch3ChatScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OAOGPLNDOKA != 0 {
-            os.write_uint32(1, self.OAOGPLNDOKA)?;
+        if self.BDPFDKADBDH != 0 {
+            os.write_uint32(14, self.BDPFDKADBDH)?;
         }
-        if self.NBPDNFMOLGO != 0 {
-            os.write_uint32(9, self.NBPDNFMOLGO)?;
+        if self.EABKHFFDAKJ != 0 {
+            os.write_uint32(4, self.EABKHFFDAKJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for FightMatch3ChatScNotify {
     }
 
     fn clear(&mut self) {
-        self.OAOGPLNDOKA = 0;
-        self.NBPDNFMOLGO = 0;
+        self.BDPFDKADBDH = 0;
+        self.EABKHFFDAKJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightMatch3ChatScNotify {
         static instance: FightMatch3ChatScNotify = FightMatch3ChatScNotify {
-            OAOGPLNDOKA: 0,
-            NBPDNFMOLGO: 0,
+            BDPFDKADBDH: 0,
+            EABKHFFDAKJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for FightMatch3ChatScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dFightMatch3ChatScNotify.proto\"]\n\x17FightMatch3ChatScNotify\x12\
-    \x20\n\x0bOAOGPLNDOKA\x18\x01\x20\x01(\rR\x0bOAOGPLNDOKA\x12\x20\n\x0bNB\
-    PDNFMOLGO\x18\t\x20\x01(\rR\x0bNBPDNFMOLGOb\x06proto3\
+    \x20\n\x0bBDPFDKADBDH\x18\x0e\x20\x01(\rR\x0bBDPFDKADBDH\x12\x20\n\x0bEA\
+    BKHFFDAKJ\x18\x04\x20\x01(\rR\x0bEABKHFFDAKJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

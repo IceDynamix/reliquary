@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MultipleDropInfoNotify {
     // message fields
-    // @@protoc_insertion_point(field:MultipleDropInfoNotify.JOLFDMNLEDO)
-    pub JOLFDMNLEDO: ::std::vec::Vec<super::BJKLPGEPCPO::BJKLPGEPCPO>,
-    // @@protoc_insertion_point(field:MultipleDropInfoNotify.AHMGFCCBCBN)
-    pub AHMGFCCBCBN: ::std::vec::Vec<super::HMDAGOFFLED::HMDAGOFFLED>,
-    // @@protoc_insertion_point(field:MultipleDropInfoNotify.NEFAKDOLPED)
-    pub NEFAKDOLPED: ::std::vec::Vec<super::KNOAKLPPLOM::KNOAKLPPLOM>,
+    // @@protoc_insertion_point(field:MultipleDropInfoNotify.IJBPMALMAGG)
+    pub IJBPMALMAGG: ::std::vec::Vec<super::JMLBJCLDMLG::JMLBJCLDMLG>,
+    // @@protoc_insertion_point(field:MultipleDropInfoNotify.KOGBMIOKGGL)
+    pub KOGBMIOKGGL: ::std::vec::Vec<super::HLIOONJHGNL::HLIOONJHGNL>,
+    // @@protoc_insertion_point(field:MultipleDropInfoNotify.AFHHFNGFIFD)
+    pub AFHHFNGFIFD: ::std::vec::Vec<super::PHHKPJJDLDJ::PHHKPJJDLDJ>,
     // special fields
     // @@protoc_insertion_point(special_field:MultipleDropInfoNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl MultipleDropInfoNotify {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JOLFDMNLEDO",
-            |m: &MultipleDropInfoNotify| { &m.JOLFDMNLEDO },
-            |m: &mut MultipleDropInfoNotify| { &mut m.JOLFDMNLEDO },
+            "IJBPMALMAGG",
+            |m: &MultipleDropInfoNotify| { &m.IJBPMALMAGG },
+            |m: &mut MultipleDropInfoNotify| { &mut m.IJBPMALMAGG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "AHMGFCCBCBN",
-            |m: &MultipleDropInfoNotify| { &m.AHMGFCCBCBN },
-            |m: &mut MultipleDropInfoNotify| { &mut m.AHMGFCCBCBN },
+            "KOGBMIOKGGL",
+            |m: &MultipleDropInfoNotify| { &m.KOGBMIOKGGL },
+            |m: &mut MultipleDropInfoNotify| { &mut m.KOGBMIOKGGL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NEFAKDOLPED",
-            |m: &MultipleDropInfoNotify| { &m.NEFAKDOLPED },
-            |m: &mut MultipleDropInfoNotify| { &mut m.NEFAKDOLPED },
+            "AFHHFNGFIFD",
+            |m: &MultipleDropInfoNotify| { &m.AFHHFNGFIFD },
+            |m: &mut MultipleDropInfoNotify| { &mut m.AFHHFNGFIFD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MultipleDropInfoNotify>(
             "MultipleDropInfoNotify",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for MultipleDropInfoNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    self.JOLFDMNLEDO.push(is.read_message()?);
+                50 => {
+                    self.IJBPMALMAGG.push(is.read_message()?);
                 },
-                114 => {
-                    self.AHMGFCCBCBN.push(is.read_message()?);
+                66 => {
+                    self.KOGBMIOKGGL.push(is.read_message()?);
                 },
-                90 => {
-                    self.NEFAKDOLPED.push(is.read_message()?);
+                106 => {
+                    self.AFHHFNGFIFD.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +108,15 @@ impl ::protobuf::Message for MultipleDropInfoNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.JOLFDMNLEDO {
+        for value in &self.IJBPMALMAGG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.AHMGFCCBCBN {
+        for value in &self.KOGBMIOKGGL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.NEFAKDOLPED {
+        for value in &self.AFHHFNGFIFD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -126,14 +126,14 @@ impl ::protobuf::Message for MultipleDropInfoNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.JOLFDMNLEDO {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        for v in &self.IJBPMALMAGG {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
-        for v in &self.AHMGFCCBCBN {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        for v in &self.KOGBMIOKGGL {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
-        for v in &self.NEFAKDOLPED {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        for v in &self.AFHHFNGFIFD {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -152,17 +152,17 @@ impl ::protobuf::Message for MultipleDropInfoNotify {
     }
 
     fn clear(&mut self) {
-        self.JOLFDMNLEDO.clear();
-        self.AHMGFCCBCBN.clear();
-        self.NEFAKDOLPED.clear();
+        self.IJBPMALMAGG.clear();
+        self.KOGBMIOKGGL.clear();
+        self.AFHHFNGFIFD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MultipleDropInfoNotify {
         static instance: MultipleDropInfoNotify = MultipleDropInfoNotify {
-            JOLFDMNLEDO: ::std::vec::Vec::new(),
-            AHMGFCCBCBN: ::std::vec::Vec::new(),
-            NEFAKDOLPED: ::std::vec::Vec::new(),
+            IJBPMALMAGG: ::std::vec::Vec::new(),
+            KOGBMIOKGGL: ::std::vec::Vec::new(),
+            AFHHFNGFIFD: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -187,12 +187,12 @@ impl ::protobuf::reflect::ProtobufValue for MultipleDropInfoNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cMultipleDropInfoNotify.proto\x1a\x11BJKLPGEPCPO.proto\x1a\x11HMDAG\
-    OFFLED.proto\x1a\x11KNOAKLPPLOM.proto\"\xa8\x01\n\x16MultipleDropInfoNot\
-    ify\x12.\n\x0bJOLFDMNLEDO\x18\x03\x20\x03(\x0b2\x0c.BJKLPGEPCPOR\x0bJOLF\
-    DMNLEDO\x12.\n\x0bAHMGFCCBCBN\x18\x0e\x20\x03(\x0b2\x0c.HMDAGOFFLEDR\x0b\
-    AHMGFCCBCBN\x12.\n\x0bNEFAKDOLPED\x18\x0b\x20\x03(\x0b2\x0c.KNOAKLPPLOMR\
-    \x0bNEFAKDOLPEDb\x06proto3\
+    \n\x1cMultipleDropInfoNotify.proto\x1a\x11HLIOONJHGNL.proto\x1a\x11JMLBJ\
+    CLDMLG.proto\x1a\x11PHHKPJJDLDJ.proto\"\xa8\x01\n\x16MultipleDropInfoNot\
+    ify\x12.\n\x0bIJBPMALMAGG\x18\x06\x20\x03(\x0b2\x0c.JMLBJCLDMLGR\x0bIJBP\
+    MALMAGG\x12.\n\x0bKOGBMIOKGGL\x18\x08\x20\x03(\x0b2\x0c.HLIOONJHGNLR\x0b\
+    KOGBMIOKGGL\x12.\n\x0bAFHHFNGFIFD\x18\r\x20\x03(\x0b2\x0c.PHHKPJJDLDJR\
+    \x0bAFHHFNGFIFDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -210,9 +210,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::BJKLPGEPCPO::file_descriptor().clone());
-            deps.push(super::HMDAGOFFLED::file_descriptor().clone());
-            deps.push(super::KNOAKLPPLOM::file_descriptor().clone());
+            deps.push(super::HLIOONJHGNL::file_descriptor().clone());
+            deps.push(super::JMLBJCLDMLG::file_descriptor().clone());
+            deps.push(super::PHHKPJJDLDJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MultipleDropInfoNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetAuthkeyCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetAuthkeyCsReq.CNKMGCPCCJB)
-    pub CNKMGCPCCJB: u32,
-    // @@protoc_insertion_point(field:GetAuthkeyCsReq.KMGOHIGOEBG)
-    pub KMGOHIGOEBG: ::std::string::String,
-    // @@protoc_insertion_point(field:GetAuthkeyCsReq.IEABDLMOEBJ)
-    pub IEABDLMOEBJ: u32,
+    // @@protoc_insertion_point(field:GetAuthkeyCsReq.ABDAAEFGGMG)
+    pub ABDAAEFGGMG: u32,
+    // @@protoc_insertion_point(field:GetAuthkeyCsReq.KDLFALBDPIB)
+    pub KDLFALBDPIB: ::std::string::String,
+    // @@protoc_insertion_point(field:GetAuthkeyCsReq.OJMPIJLADML)
+    pub OJMPIJLADML: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetAuthkeyCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl GetAuthkeyCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CNKMGCPCCJB",
-            |m: &GetAuthkeyCsReq| { &m.CNKMGCPCCJB },
-            |m: &mut GetAuthkeyCsReq| { &mut m.CNKMGCPCCJB },
+            "ABDAAEFGGMG",
+            |m: &GetAuthkeyCsReq| { &m.ABDAAEFGGMG },
+            |m: &mut GetAuthkeyCsReq| { &mut m.ABDAAEFGGMG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KMGOHIGOEBG",
-            |m: &GetAuthkeyCsReq| { &m.KMGOHIGOEBG },
-            |m: &mut GetAuthkeyCsReq| { &mut m.KMGOHIGOEBG },
+            "KDLFALBDPIB",
+            |m: &GetAuthkeyCsReq| { &m.KDLFALBDPIB },
+            |m: &mut GetAuthkeyCsReq| { &mut m.KDLFALBDPIB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IEABDLMOEBJ",
-            |m: &GetAuthkeyCsReq| { &m.IEABDLMOEBJ },
-            |m: &mut GetAuthkeyCsReq| { &mut m.IEABDLMOEBJ },
+            "OJMPIJLADML",
+            |m: &GetAuthkeyCsReq| { &m.OJMPIJLADML },
+            |m: &mut GetAuthkeyCsReq| { &mut m.OJMPIJLADML },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetAuthkeyCsReq>(
             "GetAuthkeyCsReq",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for GetAuthkeyCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.CNKMGCPCCJB = is.read_uint32()?;
+                64 => {
+                    self.ABDAAEFGGMG = is.read_uint32()?;
                 },
-                90 => {
-                    self.KMGOHIGOEBG = is.read_string()?;
+                82 => {
+                    self.KDLFALBDPIB = is.read_string()?;
                 },
-                56 => {
-                    self.IEABDLMOEBJ = is.read_uint32()?;
+                112 => {
+                    self.OJMPIJLADML = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for GetAuthkeyCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CNKMGCPCCJB != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.CNKMGCPCCJB);
+        if self.ABDAAEFGGMG != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.ABDAAEFGGMG);
         }
-        if !self.KMGOHIGOEBG.is_empty() {
-            my_size += ::protobuf::rt::string_size(11, &self.KMGOHIGOEBG);
+        if !self.KDLFALBDPIB.is_empty() {
+            my_size += ::protobuf::rt::string_size(10, &self.KDLFALBDPIB);
         }
-        if self.IEABDLMOEBJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.IEABDLMOEBJ);
+        if self.OJMPIJLADML != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.OJMPIJLADML);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for GetAuthkeyCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CNKMGCPCCJB != 0 {
-            os.write_uint32(3, self.CNKMGCPCCJB)?;
+        if self.ABDAAEFGGMG != 0 {
+            os.write_uint32(8, self.ABDAAEFGGMG)?;
         }
-        if !self.KMGOHIGOEBG.is_empty() {
-            os.write_string(11, &self.KMGOHIGOEBG)?;
+        if !self.KDLFALBDPIB.is_empty() {
+            os.write_string(10, &self.KDLFALBDPIB)?;
         }
-        if self.IEABDLMOEBJ != 0 {
-            os.write_uint32(7, self.IEABDLMOEBJ)?;
+        if self.OJMPIJLADML != 0 {
+            os.write_uint32(14, self.OJMPIJLADML)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for GetAuthkeyCsReq {
     }
 
     fn clear(&mut self) {
-        self.CNKMGCPCCJB = 0;
-        self.KMGOHIGOEBG.clear();
-        self.IEABDLMOEBJ = 0;
+        self.ABDAAEFGGMG = 0;
+        self.KDLFALBDPIB.clear();
+        self.OJMPIJLADML = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetAuthkeyCsReq {
         static instance: GetAuthkeyCsReq = GetAuthkeyCsReq {
-            CNKMGCPCCJB: 0,
-            KMGOHIGOEBG: ::std::string::String::new(),
-            IEABDLMOEBJ: 0,
+            ABDAAEFGGMG: 0,
+            KDLFALBDPIB: ::std::string::String::new(),
+            OJMPIJLADML: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for GetAuthkeyCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15GetAuthkeyCsReq.proto\"w\n\x0fGetAuthkeyCsReq\x12\x20\n\x0bCNKMGCP\
-    CCJB\x18\x03\x20\x01(\rR\x0bCNKMGCPCCJB\x12\x20\n\x0bKMGOHIGOEBG\x18\x0b\
-    \x20\x01(\tR\x0bKMGOHIGOEBG\x12\x20\n\x0bIEABDLMOEBJ\x18\x07\x20\x01(\rR\
-    \x0bIEABDLMOEBJb\x06proto3\
+    \n\x15GetAuthkeyCsReq.proto\"w\n\x0fGetAuthkeyCsReq\x12\x20\n\x0bABDAAEF\
+    GGMG\x18\x08\x20\x01(\rR\x0bABDAAEFGGMG\x12\x20\n\x0bKDLFALBDPIB\x18\n\
+    \x20\x01(\tR\x0bKDLFALBDPIB\x12\x20\n\x0bOJMPIJLADML\x18\x0e\x20\x01(\rR\
+    \x0bOJMPIJLADMLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

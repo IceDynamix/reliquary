@@ -29,30 +29,30 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ClockParkGetOngoingScriptInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ClockParkGetOngoingScriptInfoScRsp.FMPDFFAGKFO)
-    pub FMPDFFAGKFO: u32,
-    // @@protoc_insertion_point(field:ClockParkGetOngoingScriptInfoScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:ClockParkGetOngoingScriptInfoScRsp.ABKOHABEMMF)
-    pub ABKOHABEMMF: ::protobuf::MessageField<super::OKIOOBNBDEB::OKIOOBNBDEB>,
-    // @@protoc_insertion_point(field:ClockParkGetOngoingScriptInfoScRsp.JFMPKBHGOPE)
-    pub JFMPKBHGOPE: u32,
-    // @@protoc_insertion_point(field:ClockParkGetOngoingScriptInfoScRsp.GKEADPKKANG)
-    pub GKEADPKKANG: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ClockParkGetOngoingScriptInfoScRsp.OCBBEAJPFGF)
-    pub OCBBEAJPFGF: ::protobuf::MessageField<super::IMJPKICFBLI::IMJPKICFBLI>,
-    // @@protoc_insertion_point(field:ClockParkGetOngoingScriptInfoScRsp.FIHJEFNGFEK)
-    pub FIHJEFNGFEK: ::protobuf::MessageField<super::CMEBMINNJON::CMEBMINNJON>,
-    // @@protoc_insertion_point(field:ClockParkGetOngoingScriptInfoScRsp.FMHJAGNLOFD)
-    pub FMHJAGNLOFD: ::std::string::String,
-    // @@protoc_insertion_point(field:ClockParkGetOngoingScriptInfoScRsp.IBFECHKNJAL)
-    pub IBFECHKNJAL: u32,
-    // @@protoc_insertion_point(field:ClockParkGetOngoingScriptInfoScRsp.GAKDAENACOD)
-    pub GAKDAENACOD: u32,
-    // @@protoc_insertion_point(field:ClockParkGetOngoingScriptInfoScRsp.CIGPMMBDEJD)
-    pub CIGPMMBDEJD: u32,
-    // @@protoc_insertion_point(field:ClockParkGetOngoingScriptInfoScRsp.LKGNGHCPJAG)
-    pub LKGNGHCPJAG: u32,
+    // @@protoc_insertion_point(field:ClockParkGetOngoingScriptInfoScRsp.NPONPMGNKIE)
+    pub NPONPMGNKIE: u32,
+    // @@protoc_insertion_point(field:ClockParkGetOngoingScriptInfoScRsp.LCEEDIGELGM)
+    pub LCEEDIGELGM: u32,
+    // @@protoc_insertion_point(field:ClockParkGetOngoingScriptInfoScRsp.JPECEHHAMPE)
+    pub JPECEHHAMPE: ::std::string::String,
+    // @@protoc_insertion_point(field:ClockParkGetOngoingScriptInfoScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:ClockParkGetOngoingScriptInfoScRsp.AOGMMEFAIFJ)
+    pub AOGMMEFAIFJ: u32,
+    // @@protoc_insertion_point(field:ClockParkGetOngoingScriptInfoScRsp.PFBOBBMELFB)
+    pub PFBOBBMELFB: ::protobuf::MessageField<super::AMIGGMENHFA::AMIGGMENHFA>,
+    // @@protoc_insertion_point(field:ClockParkGetOngoingScriptInfoScRsp.JOIPFMCOINI)
+    pub JOIPFMCOINI: u32,
+    // @@protoc_insertion_point(field:ClockParkGetOngoingScriptInfoScRsp.PNOAKGNANBO)
+    pub PNOAKGNANBO: u32,
+    // @@protoc_insertion_point(field:ClockParkGetOngoingScriptInfoScRsp.FHEODGILEEP)
+    pub FHEODGILEEP: ::protobuf::MessageField<super::MGGJKPGEGLP::MGGJKPGEGLP>,
+    // @@protoc_insertion_point(field:ClockParkGetOngoingScriptInfoScRsp.EJOMHILNCMC)
+    pub EJOMHILNCMC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ClockParkGetOngoingScriptInfoScRsp.DMBNHOFLDFO)
+    pub DMBNHOFLDFO: ::protobuf::MessageField<super::HJLBLONCPML::HJLBLONCPML>,
+    // @@protoc_insertion_point(field:ClockParkGetOngoingScriptInfoScRsp.FBELDFBDFAG)
+    pub FBELDFBDFAG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ClockParkGetOngoingScriptInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -73,64 +73,64 @@ impl ClockParkGetOngoingScriptInfoScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(12);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FMPDFFAGKFO",
-            |m: &ClockParkGetOngoingScriptInfoScRsp| { &m.FMPDFFAGKFO },
-            |m: &mut ClockParkGetOngoingScriptInfoScRsp| { &mut m.FMPDFFAGKFO },
+            "NPONPMGNKIE",
+            |m: &ClockParkGetOngoingScriptInfoScRsp| { &m.NPONPMGNKIE },
+            |m: &mut ClockParkGetOngoingScriptInfoScRsp| { &mut m.NPONPMGNKIE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &ClockParkGetOngoingScriptInfoScRsp| { &m.retcode },
-            |m: &mut ClockParkGetOngoingScriptInfoScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OKIOOBNBDEB::OKIOOBNBDEB>(
-            "ABKOHABEMMF",
-            |m: &ClockParkGetOngoingScriptInfoScRsp| { &m.ABKOHABEMMF },
-            |m: &mut ClockParkGetOngoingScriptInfoScRsp| { &mut m.ABKOHABEMMF },
+            "LCEEDIGELGM",
+            |m: &ClockParkGetOngoingScriptInfoScRsp| { &m.LCEEDIGELGM },
+            |m: &mut ClockParkGetOngoingScriptInfoScRsp| { &mut m.LCEEDIGELGM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JFMPKBHGOPE",
-            |m: &ClockParkGetOngoingScriptInfoScRsp| { &m.JFMPKBHGOPE },
-            |m: &mut ClockParkGetOngoingScriptInfoScRsp| { &mut m.JFMPKBHGOPE },
+            "JPECEHHAMPE",
+            |m: &ClockParkGetOngoingScriptInfoScRsp| { &m.JPECEHHAMPE },
+            |m: &mut ClockParkGetOngoingScriptInfoScRsp| { &mut m.JPECEHHAMPE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ADADHIHDHJC",
+            |m: &ClockParkGetOngoingScriptInfoScRsp| { &m.ADADHIHDHJC },
+            |m: &mut ClockParkGetOngoingScriptInfoScRsp| { &mut m.ADADHIHDHJC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AOGMMEFAIFJ",
+            |m: &ClockParkGetOngoingScriptInfoScRsp| { &m.AOGMMEFAIFJ },
+            |m: &mut ClockParkGetOngoingScriptInfoScRsp| { &mut m.AOGMMEFAIFJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AMIGGMENHFA::AMIGGMENHFA>(
+            "PFBOBBMELFB",
+            |m: &ClockParkGetOngoingScriptInfoScRsp| { &m.PFBOBBMELFB },
+            |m: &mut ClockParkGetOngoingScriptInfoScRsp| { &mut m.PFBOBBMELFB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JOIPFMCOINI",
+            |m: &ClockParkGetOngoingScriptInfoScRsp| { &m.JOIPFMCOINI },
+            |m: &mut ClockParkGetOngoingScriptInfoScRsp| { &mut m.JOIPFMCOINI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PNOAKGNANBO",
+            |m: &ClockParkGetOngoingScriptInfoScRsp| { &m.PNOAKGNANBO },
+            |m: &mut ClockParkGetOngoingScriptInfoScRsp| { &mut m.PNOAKGNANBO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MGGJKPGEGLP::MGGJKPGEGLP>(
+            "FHEODGILEEP",
+            |m: &ClockParkGetOngoingScriptInfoScRsp| { &m.FHEODGILEEP },
+            |m: &mut ClockParkGetOngoingScriptInfoScRsp| { &mut m.FHEODGILEEP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GKEADPKKANG",
-            |m: &ClockParkGetOngoingScriptInfoScRsp| { &m.GKEADPKKANG },
-            |m: &mut ClockParkGetOngoingScriptInfoScRsp| { &mut m.GKEADPKKANG },
+            "EJOMHILNCMC",
+            |m: &ClockParkGetOngoingScriptInfoScRsp| { &m.EJOMHILNCMC },
+            |m: &mut ClockParkGetOngoingScriptInfoScRsp| { &mut m.EJOMHILNCMC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IMJPKICFBLI::IMJPKICFBLI>(
-            "OCBBEAJPFGF",
-            |m: &ClockParkGetOngoingScriptInfoScRsp| { &m.OCBBEAJPFGF },
-            |m: &mut ClockParkGetOngoingScriptInfoScRsp| { &mut m.OCBBEAJPFGF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CMEBMINNJON::CMEBMINNJON>(
-            "FIHJEFNGFEK",
-            |m: &ClockParkGetOngoingScriptInfoScRsp| { &m.FIHJEFNGFEK },
-            |m: &mut ClockParkGetOngoingScriptInfoScRsp| { &mut m.FIHJEFNGFEK },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HJLBLONCPML::HJLBLONCPML>(
+            "DMBNHOFLDFO",
+            |m: &ClockParkGetOngoingScriptInfoScRsp| { &m.DMBNHOFLDFO },
+            |m: &mut ClockParkGetOngoingScriptInfoScRsp| { &mut m.DMBNHOFLDFO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FMHJAGNLOFD",
-            |m: &ClockParkGetOngoingScriptInfoScRsp| { &m.FMHJAGNLOFD },
-            |m: &mut ClockParkGetOngoingScriptInfoScRsp| { &mut m.FMHJAGNLOFD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IBFECHKNJAL",
-            |m: &ClockParkGetOngoingScriptInfoScRsp| { &m.IBFECHKNJAL },
-            |m: &mut ClockParkGetOngoingScriptInfoScRsp| { &mut m.IBFECHKNJAL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GAKDAENACOD",
-            |m: &ClockParkGetOngoingScriptInfoScRsp| { &m.GAKDAENACOD },
-            |m: &mut ClockParkGetOngoingScriptInfoScRsp| { &mut m.GAKDAENACOD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CIGPMMBDEJD",
-            |m: &ClockParkGetOngoingScriptInfoScRsp| { &m.CIGPMMBDEJD },
-            |m: &mut ClockParkGetOngoingScriptInfoScRsp| { &mut m.CIGPMMBDEJD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LKGNGHCPJAG",
-            |m: &ClockParkGetOngoingScriptInfoScRsp| { &m.LKGNGHCPJAG },
-            |m: &mut ClockParkGetOngoingScriptInfoScRsp| { &mut m.LKGNGHCPJAG },
+            "FBELDFBDFAG",
+            |m: &ClockParkGetOngoingScriptInfoScRsp| { &m.FBELDFBDFAG },
+            |m: &mut ClockParkGetOngoingScriptInfoScRsp| { &mut m.FBELDFBDFAG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ClockParkGetOngoingScriptInfoScRsp>(
             "ClockParkGetOngoingScriptInfoScRsp",
@@ -150,44 +150,44 @@ impl ::protobuf::Message for ClockParkGetOngoingScriptInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.FMPDFFAGKFO = is.read_uint32()?;
-                },
-                40 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ABKOHABEMMF)?;
-                },
                 120 => {
-                    self.JFMPKBHGOPE = is.read_uint32()?;
+                    self.NPONPMGNKIE = is.read_uint32()?;
+                },
+                64 => {
+                    self.LCEEDIGELGM = is.read_uint32()?;
                 },
                 82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.GKEADPKKANG)?;
+                    self.JPECEHHAMPE = is.read_string()?;
                 },
-                80 => {
-                    self.GKEADPKKANG.push(is.read_uint32()?);
+                56 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OCBBEAJPFGF)?;
+                112 => {
+                    self.AOGMMEFAIFJ = is.read_uint32()?;
                 },
                 90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FIHJEFNGFEK)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PFBOBBMELFB)?;
+                },
+                48 => {
+                    self.JOIPFMCOINI = is.read_uint32()?;
+                },
+                104 => {
+                    self.PNOAKGNANBO = is.read_uint32()?;
+                },
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FHEODGILEEP)?;
                 },
                 18 => {
-                    self.FMHJAGNLOFD = is.read_string()?;
+                    is.read_repeated_packed_uint32_into(&mut self.EJOMHILNCMC)?;
+                },
+                16 => {
+                    self.EJOMHILNCMC.push(is.read_uint32()?);
+                },
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DMBNHOFLDFO)?;
                 },
                 8 => {
-                    self.IBFECHKNJAL = is.read_uint32()?;
-                },
-                96 => {
-                    self.GAKDAENACOD = is.read_uint32()?;
-                },
-                32 => {
-                    self.CIGPMMBDEJD = is.read_uint32()?;
-                },
-                24 => {
-                    self.LKGNGHCPJAG = is.read_uint32()?;
+                    self.FBELDFBDFAG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -201,44 +201,44 @@ impl ::protobuf::Message for ClockParkGetOngoingScriptInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FMPDFFAGKFO != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.FMPDFFAGKFO);
+        if self.NPONPMGNKIE != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.NPONPMGNKIE);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+        if self.LCEEDIGELGM != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.LCEEDIGELGM);
         }
-        if let Some(v) = self.ABKOHABEMMF.as_ref() {
+        if !self.JPECEHHAMPE.is_empty() {
+            my_size += ::protobuf::rt::string_size(10, &self.JPECEHHAMPE);
+        }
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.ADADHIHDHJC);
+        }
+        if self.AOGMMEFAIFJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.AOGMMEFAIFJ);
+        }
+        if let Some(v) = self.PFBOBBMELFB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.JFMPKBHGOPE != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.JFMPKBHGOPE);
+        if self.JOIPFMCOINI != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.JOIPFMCOINI);
         }
-        for value in &self.GKEADPKKANG {
-            my_size += ::protobuf::rt::uint32_size(10, *value);
+        if self.PNOAKGNANBO != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.PNOAKGNANBO);
+        }
+        if let Some(v) = self.FHEODGILEEP.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        for value in &self.EJOMHILNCMC {
+            my_size += ::protobuf::rt::uint32_size(2, *value);
         };
-        if let Some(v) = self.OCBBEAJPFGF.as_ref() {
+        if let Some(v) = self.DMBNHOFLDFO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.FIHJEFNGFEK.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if !self.FMHJAGNLOFD.is_empty() {
-            my_size += ::protobuf::rt::string_size(2, &self.FMHJAGNLOFD);
-        }
-        if self.IBFECHKNJAL != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.IBFECHKNJAL);
-        }
-        if self.GAKDAENACOD != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.GAKDAENACOD);
-        }
-        if self.CIGPMMBDEJD != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.CIGPMMBDEJD);
-        }
-        if self.LKGNGHCPJAG != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.LKGNGHCPJAG);
+        if self.FBELDFBDFAG != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.FBELDFBDFAG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -246,41 +246,41 @@ impl ::protobuf::Message for ClockParkGetOngoingScriptInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FMPDFFAGKFO != 0 {
-            os.write_uint32(6, self.FMPDFFAGKFO)?;
+        if self.NPONPMGNKIE != 0 {
+            os.write_uint32(15, self.NPONPMGNKIE)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+        if self.LCEEDIGELGM != 0 {
+            os.write_uint32(8, self.LCEEDIGELGM)?;
         }
-        if let Some(v) = self.ABKOHABEMMF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if !self.JPECEHHAMPE.is_empty() {
+            os.write_string(10, &self.JPECEHHAMPE)?;
         }
-        if self.JFMPKBHGOPE != 0 {
-            os.write_uint32(15, self.JFMPKBHGOPE)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(7, self.ADADHIHDHJC)?;
         }
-        for v in &self.GKEADPKKANG {
-            os.write_uint32(10, *v)?;
-        };
-        if let Some(v) = self.OCBBEAJPFGF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if self.AOGMMEFAIFJ != 0 {
+            os.write_uint32(14, self.AOGMMEFAIFJ)?;
         }
-        if let Some(v) = self.FIHJEFNGFEK.as_ref() {
+        if let Some(v) = self.PFBOBBMELFB.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
-        if !self.FMHJAGNLOFD.is_empty() {
-            os.write_string(2, &self.FMHJAGNLOFD)?;
+        if self.JOIPFMCOINI != 0 {
+            os.write_uint32(6, self.JOIPFMCOINI)?;
         }
-        if self.IBFECHKNJAL != 0 {
-            os.write_uint32(1, self.IBFECHKNJAL)?;
+        if self.PNOAKGNANBO != 0 {
+            os.write_uint32(13, self.PNOAKGNANBO)?;
         }
-        if self.GAKDAENACOD != 0 {
-            os.write_uint32(12, self.GAKDAENACOD)?;
+        if let Some(v) = self.FHEODGILEEP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
-        if self.CIGPMMBDEJD != 0 {
-            os.write_uint32(4, self.CIGPMMBDEJD)?;
+        for v in &self.EJOMHILNCMC {
+            os.write_uint32(2, *v)?;
+        };
+        if let Some(v) = self.DMBNHOFLDFO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
-        if self.LKGNGHCPJAG != 0 {
-            os.write_uint32(3, self.LKGNGHCPJAG)?;
+        if self.FBELDFBDFAG != 0 {
+            os.write_uint32(1, self.FBELDFBDFAG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -299,35 +299,35 @@ impl ::protobuf::Message for ClockParkGetOngoingScriptInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.FMPDFFAGKFO = 0;
-        self.retcode = 0;
-        self.ABKOHABEMMF.clear();
-        self.JFMPKBHGOPE = 0;
-        self.GKEADPKKANG.clear();
-        self.OCBBEAJPFGF.clear();
-        self.FIHJEFNGFEK.clear();
-        self.FMHJAGNLOFD.clear();
-        self.IBFECHKNJAL = 0;
-        self.GAKDAENACOD = 0;
-        self.CIGPMMBDEJD = 0;
-        self.LKGNGHCPJAG = 0;
+        self.NPONPMGNKIE = 0;
+        self.LCEEDIGELGM = 0;
+        self.JPECEHHAMPE.clear();
+        self.ADADHIHDHJC = 0;
+        self.AOGMMEFAIFJ = 0;
+        self.PFBOBBMELFB.clear();
+        self.JOIPFMCOINI = 0;
+        self.PNOAKGNANBO = 0;
+        self.FHEODGILEEP.clear();
+        self.EJOMHILNCMC.clear();
+        self.DMBNHOFLDFO.clear();
+        self.FBELDFBDFAG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ClockParkGetOngoingScriptInfoScRsp {
         static instance: ClockParkGetOngoingScriptInfoScRsp = ClockParkGetOngoingScriptInfoScRsp {
-            FMPDFFAGKFO: 0,
-            retcode: 0,
-            ABKOHABEMMF: ::protobuf::MessageField::none(),
-            JFMPKBHGOPE: 0,
-            GKEADPKKANG: ::std::vec::Vec::new(),
-            OCBBEAJPFGF: ::protobuf::MessageField::none(),
-            FIHJEFNGFEK: ::protobuf::MessageField::none(),
-            FMHJAGNLOFD: ::std::string::String::new(),
-            IBFECHKNJAL: 0,
-            GAKDAENACOD: 0,
-            CIGPMMBDEJD: 0,
-            LKGNGHCPJAG: 0,
+            NPONPMGNKIE: 0,
+            LCEEDIGELGM: 0,
+            JPECEHHAMPE: ::std::string::String::new(),
+            ADADHIHDHJC: 0,
+            AOGMMEFAIFJ: 0,
+            PFBOBBMELFB: ::protobuf::MessageField::none(),
+            JOIPFMCOINI: 0,
+            PNOAKGNANBO: 0,
+            FHEODGILEEP: ::protobuf::MessageField::none(),
+            EJOMHILNCMC: ::std::vec::Vec::new(),
+            DMBNHOFLDFO: ::protobuf::MessageField::none(),
+            FBELDFBDFAG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -352,20 +352,20 @@ impl ::protobuf::reflect::ProtobufValue for ClockParkGetOngoingScriptInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n(ClockParkGetOngoingScriptInfoScRsp.proto\x1a\x11CMEBMINNJON.proto\x1a\
-    \x11IMJPKICFBLI.proto\x1a\x11OKIOOBNBDEB.proto\"\xde\x03\n\"ClockParkGet\
-    OngoingScriptInfoScRsp\x12\x20\n\x0bFMPDFFAGKFO\x18\x06\x20\x01(\rR\x0bF\
-    MPDFFAGKFO\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12.\n\
-    \x0bABKOHABEMMF\x18\x08\x20\x01(\x0b2\x0c.OKIOOBNBDEBR\x0bABKOHABEMMF\
-    \x12\x20\n\x0bJFMPKBHGOPE\x18\x0f\x20\x01(\rR\x0bJFMPKBHGOPE\x12\x20\n\
-    \x0bGKEADPKKANG\x18\n\x20\x03(\rR\x0bGKEADPKKANG\x12.\n\x0bOCBBEAJPFGF\
-    \x18\t\x20\x01(\x0b2\x0c.IMJPKICFBLIR\x0bOCBBEAJPFGF\x12.\n\x0bFIHJEFNGF\
-    EK\x18\x0b\x20\x01(\x0b2\x0c.CMEBMINNJONR\x0bFIHJEFNGFEK\x12\x20\n\x0bFM\
-    HJAGNLOFD\x18\x02\x20\x01(\tR\x0bFMHJAGNLOFD\x12\x20\n\x0bIBFECHKNJAL\
-    \x18\x01\x20\x01(\rR\x0bIBFECHKNJAL\x12\x20\n\x0bGAKDAENACOD\x18\x0c\x20\
-    \x01(\rR\x0bGAKDAENACOD\x12\x20\n\x0bCIGPMMBDEJD\x18\x04\x20\x01(\rR\x0b\
-    CIGPMMBDEJD\x12\x20\n\x0bLKGNGHCPJAG\x18\x03\x20\x01(\rR\x0bLKGNGHCPJAGb\
-    \x06proto3\
+    \n(ClockParkGetOngoingScriptInfoScRsp.proto\x1a\x11AMIGGMENHFA.proto\x1a\
+    \x11HJLBLONCPML.proto\x1a\x11MGGJKPGEGLP.proto\"\xe6\x03\n\"ClockParkGet\
+    OngoingScriptInfoScRsp\x12\x20\n\x0bNPONPMGNKIE\x18\x0f\x20\x01(\rR\x0bN\
+    PONPMGNKIE\x12\x20\n\x0bLCEEDIGELGM\x18\x08\x20\x01(\rR\x0bLCEEDIGELGM\
+    \x12\x20\n\x0bJPECEHHAMPE\x18\n\x20\x01(\tR\x0bJPECEHHAMPE\x12\x20\n\x0b\
+    ADADHIHDHJC\x18\x07\x20\x01(\rR\x0bADADHIHDHJC\x12\x20\n\x0bAOGMMEFAIFJ\
+    \x18\x0e\x20\x01(\rR\x0bAOGMMEFAIFJ\x12.\n\x0bPFBOBBMELFB\x18\x0b\x20\
+    \x01(\x0b2\x0c.AMIGGMENHFAR\x0bPFBOBBMELFB\x12\x20\n\x0bJOIPFMCOINI\x18\
+    \x06\x20\x01(\rR\x0bJOIPFMCOINI\x12\x20\n\x0bPNOAKGNANBO\x18\r\x20\x01(\
+    \rR\x0bPNOAKGNANBO\x12.\n\x0bFHEODGILEEP\x18\x0c\x20\x01(\x0b2\x0c.MGGJK\
+    PGEGLPR\x0bFHEODGILEEP\x12\x20\n\x0bEJOMHILNCMC\x18\x02\x20\x03(\rR\x0bE\
+    JOMHILNCMC\x12.\n\x0bDMBNHOFLDFO\x18\x04\x20\x01(\x0b2\x0c.HJLBLONCPMLR\
+    \x0bDMBNHOFLDFO\x12\x20\n\x0bFBELDFBDFAG\x18\x01\x20\x01(\rR\x0bFBELDFBD\
+    FAGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -383,9 +383,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::CMEBMINNJON::file_descriptor().clone());
-            deps.push(super::IMJPKICFBLI::file_descriptor().clone());
-            deps.push(super::OKIOOBNBDEB::file_descriptor().clone());
+            deps.push(super::AMIGGMENHFA::file_descriptor().clone());
+            deps.push(super::HJLBLONCPML::file_descriptor().clone());
+            deps.push(super::MGGJKPGEGLP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ClockParkGetOngoingScriptInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

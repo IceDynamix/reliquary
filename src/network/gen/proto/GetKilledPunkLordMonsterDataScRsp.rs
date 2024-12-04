@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetKilledPunkLordMonsterDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetKilledPunkLordMonsterDataScRsp.KNFDKPFOIJH)
-    pub KNFDKPFOIJH: ::std::vec::Vec<super::MOMOPCDPLDN::MOMOPCDPLDN>,
-    // @@protoc_insertion_point(field:GetKilledPunkLordMonsterDataScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:GetKilledPunkLordMonsterDataScRsp.HECNMGMNACC)
-    pub HECNMGMNACC: ::std::vec::Vec<super::KPJMDLFOAMD::KPJMDLFOAMD>,
+    // @@protoc_insertion_point(field:GetKilledPunkLordMonsterDataScRsp.IEOBBBDMEMI)
+    pub IEOBBBDMEMI: ::std::vec::Vec<super::JMEOKPPCBHL::JMEOKPPCBHL>,
+    // @@protoc_insertion_point(field:GetKilledPunkLordMonsterDataScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:GetKilledPunkLordMonsterDataScRsp.FCELEHKAACO)
+    pub FCELEHKAACO: ::std::vec::Vec<super::HDBGODKIMDA::HDBGODKIMDA>,
     // special fields
     // @@protoc_insertion_point(special_field:GetKilledPunkLordMonsterDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl GetKilledPunkLordMonsterDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KNFDKPFOIJH",
-            |m: &GetKilledPunkLordMonsterDataScRsp| { &m.KNFDKPFOIJH },
-            |m: &mut GetKilledPunkLordMonsterDataScRsp| { &mut m.KNFDKPFOIJH },
+            "IEOBBBDMEMI",
+            |m: &GetKilledPunkLordMonsterDataScRsp| { &m.IEOBBBDMEMI },
+            |m: &mut GetKilledPunkLordMonsterDataScRsp| { &mut m.IEOBBBDMEMI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetKilledPunkLordMonsterDataScRsp| { &m.retcode },
-            |m: &mut GetKilledPunkLordMonsterDataScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &GetKilledPunkLordMonsterDataScRsp| { &m.ADADHIHDHJC },
+            |m: &mut GetKilledPunkLordMonsterDataScRsp| { &mut m.ADADHIHDHJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HECNMGMNACC",
-            |m: &GetKilledPunkLordMonsterDataScRsp| { &m.HECNMGMNACC },
-            |m: &mut GetKilledPunkLordMonsterDataScRsp| { &mut m.HECNMGMNACC },
+            "FCELEHKAACO",
+            |m: &GetKilledPunkLordMonsterDataScRsp| { &m.FCELEHKAACO },
+            |m: &mut GetKilledPunkLordMonsterDataScRsp| { &mut m.FCELEHKAACO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetKilledPunkLordMonsterDataScRsp>(
             "GetKilledPunkLordMonsterDataScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for GetKilledPunkLordMonsterDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    self.KNFDKPFOIJH.push(is.read_message()?);
+                106 => {
+                    self.IEOBBBDMEMI.push(is.read_message()?);
                 },
-                104 => {
-                    self.retcode = is.read_uint32()?;
+                32 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                18 => {
-                    self.HECNMGMNACC.push(is.read_message()?);
+                26 => {
+                    self.FCELEHKAACO.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for GetKilledPunkLordMonsterDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.KNFDKPFOIJH {
+        for value in &self.IEOBBBDMEMI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.ADADHIHDHJC);
         }
-        for value in &self.HECNMGMNACC {
+        for value in &self.FCELEHKAACO {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -125,14 +125,14 @@ impl ::protobuf::Message for GetKilledPunkLordMonsterDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.KNFDKPFOIJH {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        for v in &self.IEOBBBDMEMI {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
-        if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(4, self.ADADHIHDHJC)?;
         }
-        for v in &self.HECNMGMNACC {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        for v in &self.FCELEHKAACO {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,17 +151,17 @@ impl ::protobuf::Message for GetKilledPunkLordMonsterDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.KNFDKPFOIJH.clear();
-        self.retcode = 0;
-        self.HECNMGMNACC.clear();
+        self.IEOBBBDMEMI.clear();
+        self.ADADHIHDHJC = 0;
+        self.FCELEHKAACO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetKilledPunkLordMonsterDataScRsp {
         static instance: GetKilledPunkLordMonsterDataScRsp = GetKilledPunkLordMonsterDataScRsp {
-            KNFDKPFOIJH: ::std::vec::Vec::new(),
-            retcode: 0,
-            HECNMGMNACC: ::std::vec::Vec::new(),
+            IEOBBBDMEMI: ::std::vec::Vec::new(),
+            ADADHIHDHJC: 0,
+            FCELEHKAACO: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,11 +186,12 @@ impl ::protobuf::reflect::ProtobufValue for GetKilledPunkLordMonsterDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'GetKilledPunkLordMonsterDataScRsp.proto\x1a\x11KPJMDLFOAMD.proto\x1a\
-    \x11MOMOPCDPLDN.proto\"\x9d\x01\n!GetKilledPunkLordMonsterDataScRsp\x12.\
-    \n\x0bKNFDKPFOIJH\x18\x0f\x20\x03(\x0b2\x0c.MOMOPCDPLDNR\x0bKNFDKPFOIJH\
-    \x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x12.\n\x0bHECNMGMNACC\
-    \x18\x02\x20\x03(\x0b2\x0c.KPJMDLFOAMDR\x0bHECNMGMNACCb\x06proto3\
+    \n'GetKilledPunkLordMonsterDataScRsp.proto\x1a\x11HDBGODKIMDA.proto\x1a\
+    \x11JMEOKPPCBHL.proto\"\xa5\x01\n!GetKilledPunkLordMonsterDataScRsp\x12.\
+    \n\x0bIEOBBBDMEMI\x18\r\x20\x03(\x0b2\x0c.JMEOKPPCBHLR\x0bIEOBBBDMEMI\
+    \x12\x20\n\x0bADADHIHDHJC\x18\x04\x20\x01(\rR\x0bADADHIHDHJC\x12.\n\x0bF\
+    CELEHKAACO\x18\x03\x20\x03(\x0b2\x0c.HDBGODKIMDAR\x0bFCELEHKAACOb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -208,8 +209,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::KPJMDLFOAMD::file_descriptor().clone());
-            deps.push(super::MOMOPCDPLDN::file_descriptor().clone());
+            deps.push(super::HDBGODKIMDA::file_descriptor().clone());
+            deps.push(super::JMEOKPPCBHL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetKilledPunkLordMonsterDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

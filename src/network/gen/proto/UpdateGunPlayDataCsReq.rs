@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdateGunPlayDataCsReq {
     // message fields
-    // @@protoc_insertion_point(field:UpdateGunPlayDataCsReq.GCFIIGOLPMF)
-    pub GCFIIGOLPMF: u32,
-    // @@protoc_insertion_point(field:UpdateGunPlayDataCsReq.NIEPAOBBFJF)
-    pub NIEPAOBBFJF: u64,
-    // @@protoc_insertion_point(field:UpdateGunPlayDataCsReq.GHCJKLFLCEM)
-    pub GHCJKLFLCEM: ::protobuf::MessageField<super::NNEOOKDGDIK::NNEOOKDGDIK>,
-    // @@protoc_insertion_point(field:UpdateGunPlayDataCsReq.LMGBJJKFLKK)
-    pub LMGBJJKFLKK: u32,
+    // @@protoc_insertion_point(field:UpdateGunPlayDataCsReq.ILIFHHJFMIH)
+    pub ILIFHHJFMIH: u32,
+    // @@protoc_insertion_point(field:UpdateGunPlayDataCsReq.GCHCEGDKCMB)
+    pub GCHCEGDKCMB: u32,
+    // @@protoc_insertion_point(field:UpdateGunPlayDataCsReq.LPDHKPCONMA)
+    pub LPDHKPCONMA: u64,
+    // @@protoc_insertion_point(field:UpdateGunPlayDataCsReq.BACCBPEJEPC)
+    pub BACCBPEJEPC: ::protobuf::MessageField<super::LIPOPPCIKOO::LIPOPPCIKOO>,
     // special fields
     // @@protoc_insertion_point(special_field:UpdateGunPlayDataCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl UpdateGunPlayDataCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GCFIIGOLPMF",
-            |m: &UpdateGunPlayDataCsReq| { &m.GCFIIGOLPMF },
-            |m: &mut UpdateGunPlayDataCsReq| { &mut m.GCFIIGOLPMF },
+            "ILIFHHJFMIH",
+            |m: &UpdateGunPlayDataCsReq| { &m.ILIFHHJFMIH },
+            |m: &mut UpdateGunPlayDataCsReq| { &mut m.ILIFHHJFMIH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NIEPAOBBFJF",
-            |m: &UpdateGunPlayDataCsReq| { &m.NIEPAOBBFJF },
-            |m: &mut UpdateGunPlayDataCsReq| { &mut m.NIEPAOBBFJF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NNEOOKDGDIK::NNEOOKDGDIK>(
-            "GHCJKLFLCEM",
-            |m: &UpdateGunPlayDataCsReq| { &m.GHCJKLFLCEM },
-            |m: &mut UpdateGunPlayDataCsReq| { &mut m.GHCJKLFLCEM },
+            "GCHCEGDKCMB",
+            |m: &UpdateGunPlayDataCsReq| { &m.GCHCEGDKCMB },
+            |m: &mut UpdateGunPlayDataCsReq| { &mut m.GCHCEGDKCMB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LMGBJJKFLKK",
-            |m: &UpdateGunPlayDataCsReq| { &m.LMGBJJKFLKK },
-            |m: &mut UpdateGunPlayDataCsReq| { &mut m.LMGBJJKFLKK },
+            "LPDHKPCONMA",
+            |m: &UpdateGunPlayDataCsReq| { &m.LPDHKPCONMA },
+            |m: &mut UpdateGunPlayDataCsReq| { &mut m.LPDHKPCONMA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LIPOPPCIKOO::LIPOPPCIKOO>(
+            "BACCBPEJEPC",
+            |m: &UpdateGunPlayDataCsReq| { &m.BACCBPEJEPC },
+            |m: &mut UpdateGunPlayDataCsReq| { &mut m.BACCBPEJEPC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdateGunPlayDataCsReq>(
             "UpdateGunPlayDataCsReq",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for UpdateGunPlayDataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                24 => {
+                    self.ILIFHHJFMIH = is.read_uint32()?;
+                },
                 72 => {
-                    self.GCFIIGOLPMF = is.read_uint32()?;
+                    self.GCHCEGDKCMB = is.read_uint32()?;
                 },
-                56 => {
-                    self.NIEPAOBBFJF = is.read_uint64()?;
+                32 => {
+                    self.LPDHKPCONMA = is.read_uint64()?;
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GHCJKLFLCEM)?;
-                },
-                64 => {
-                    self.LMGBJJKFLKK = is.read_uint32()?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BACCBPEJEPC)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,18 +118,18 @@ impl ::protobuf::Message for UpdateGunPlayDataCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GCFIIGOLPMF != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.GCFIIGOLPMF);
+        if self.ILIFHHJFMIH != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.ILIFHHJFMIH);
         }
-        if self.NIEPAOBBFJF != 0 {
-            my_size += ::protobuf::rt::uint64_size(7, self.NIEPAOBBFJF);
+        if self.GCHCEGDKCMB != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.GCHCEGDKCMB);
         }
-        if let Some(v) = self.GHCJKLFLCEM.as_ref() {
+        if self.LPDHKPCONMA != 0 {
+            my_size += ::protobuf::rt::uint64_size(4, self.LPDHKPCONMA);
+        }
+        if let Some(v) = self.BACCBPEJEPC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.LMGBJJKFLKK != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.LMGBJJKFLKK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for UpdateGunPlayDataCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GCFIIGOLPMF != 0 {
-            os.write_uint32(9, self.GCFIIGOLPMF)?;
+        if self.ILIFHHJFMIH != 0 {
+            os.write_uint32(3, self.ILIFHHJFMIH)?;
         }
-        if self.NIEPAOBBFJF != 0 {
-            os.write_uint64(7, self.NIEPAOBBFJF)?;
+        if self.GCHCEGDKCMB != 0 {
+            os.write_uint32(9, self.GCHCEGDKCMB)?;
         }
-        if let Some(v) = self.GHCJKLFLCEM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if self.LPDHKPCONMA != 0 {
+            os.write_uint64(4, self.LPDHKPCONMA)?;
         }
-        if self.LMGBJJKFLKK != 0 {
-            os.write_uint32(8, self.LMGBJJKFLKK)?;
+        if let Some(v) = self.BACCBPEJEPC.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for UpdateGunPlayDataCsReq {
     }
 
     fn clear(&mut self) {
-        self.GCFIIGOLPMF = 0;
-        self.NIEPAOBBFJF = 0;
-        self.GHCJKLFLCEM.clear();
-        self.LMGBJJKFLKK = 0;
+        self.ILIFHHJFMIH = 0;
+        self.GCHCEGDKCMB = 0;
+        self.LPDHKPCONMA = 0;
+        self.BACCBPEJEPC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateGunPlayDataCsReq {
         static instance: UpdateGunPlayDataCsReq = UpdateGunPlayDataCsReq {
-            GCFIIGOLPMF: 0,
-            NIEPAOBBFJF: 0,
-            GHCJKLFLCEM: ::protobuf::MessageField::none(),
-            LMGBJJKFLKK: 0,
+            ILIFHHJFMIH: 0,
+            GCHCEGDKCMB: 0,
+            LPDHKPCONMA: 0,
+            BACCBPEJEPC: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,12 +203,12 @@ impl ::protobuf::reflect::ProtobufValue for UpdateGunPlayDataCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cUpdateGunPlayDataCsReq.proto\x1a\x11NNEOOKDGDIK.proto\"\xae\x01\n\
-    \x16UpdateGunPlayDataCsReq\x12\x20\n\x0bGCFIIGOLPMF\x18\t\x20\x01(\rR\
-    \x0bGCFIIGOLPMF\x12\x20\n\x0bNIEPAOBBFJF\x18\x07\x20\x01(\x04R\x0bNIEPAO\
-    BBFJF\x12.\n\x0bGHCJKLFLCEM\x18\r\x20\x01(\x0b2\x0c.NNEOOKDGDIKR\x0bGHCJ\
-    KLFLCEM\x12\x20\n\x0bLMGBJJKFLKK\x18\x08\x20\x01(\rR\x0bLMGBJJKFLKKb\x06\
-    proto3\
+    \n\x1cUpdateGunPlayDataCsReq.proto\x1a\x11LIPOPPCIKOO.proto\"\xae\x01\n\
+    \x16UpdateGunPlayDataCsReq\x12\x20\n\x0bILIFHHJFMIH\x18\x03\x20\x01(\rR\
+    \x0bILIFHHJFMIH\x12\x20\n\x0bGCHCEGDKCMB\x18\t\x20\x01(\rR\x0bGCHCEGDKCM\
+    B\x12\x20\n\x0bLPDHKPCONMA\x18\x04\x20\x01(\x04R\x0bLPDHKPCONMA\x12.\n\
+    \x0bBACCBPEJEPC\x18\x07\x20\x01(\x0b2\x0c.LIPOPPCIKOOR\x0bBACCBPEJEPCb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -226,7 +226,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::NNEOOKDGDIK::file_descriptor().clone());
+            deps.push(super::LIPOPPCIKOO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(UpdateGunPlayDataCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

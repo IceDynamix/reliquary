@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OpenRogueChestCsReq {
     // message fields
-    // @@protoc_insertion_point(field:OpenRogueChestCsReq.HODGFGACFKC)
-    pub HODGFGACFKC: bool,
-    // @@protoc_insertion_point(field:OpenRogueChestCsReq.OIAECIELHAF)
-    pub OIAECIELHAF: u32,
+    // @@protoc_insertion_point(field:OpenRogueChestCsReq.LMFFBHEOONE)
+    pub LMFFBHEOONE: u32,
+    // @@protoc_insertion_point(field:OpenRogueChestCsReq.HBLIKPICEKE)
+    pub HBLIKPICEKE: bool,
     // special fields
     // @@protoc_insertion_point(special_field:OpenRogueChestCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl OpenRogueChestCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HODGFGACFKC",
-            |m: &OpenRogueChestCsReq| { &m.HODGFGACFKC },
-            |m: &mut OpenRogueChestCsReq| { &mut m.HODGFGACFKC },
+            "LMFFBHEOONE",
+            |m: &OpenRogueChestCsReq| { &m.LMFFBHEOONE },
+            |m: &mut OpenRogueChestCsReq| { &mut m.LMFFBHEOONE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OIAECIELHAF",
-            |m: &OpenRogueChestCsReq| { &m.OIAECIELHAF },
-            |m: &mut OpenRogueChestCsReq| { &mut m.OIAECIELHAF },
+            "HBLIKPICEKE",
+            |m: &OpenRogueChestCsReq| { &m.HBLIKPICEKE },
+            |m: &mut OpenRogueChestCsReq| { &mut m.HBLIKPICEKE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OpenRogueChestCsReq>(
             "OpenRogueChestCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for OpenRogueChestCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.HODGFGACFKC = is.read_bool()?;
+                32 => {
+                    self.LMFFBHEOONE = is.read_uint32()?;
                 },
-                96 => {
-                    self.OIAECIELHAF = is.read_uint32()?;
+                112 => {
+                    self.HBLIKPICEKE = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for OpenRogueChestCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HODGFGACFKC != false {
-            my_size += 1 + 1;
+        if self.LMFFBHEOONE != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.LMFFBHEOONE);
         }
-        if self.OIAECIELHAF != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.OIAECIELHAF);
+        if self.HBLIKPICEKE != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for OpenRogueChestCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HODGFGACFKC != false {
-            os.write_bool(3, self.HODGFGACFKC)?;
+        if self.LMFFBHEOONE != 0 {
+            os.write_uint32(4, self.LMFFBHEOONE)?;
         }
-        if self.OIAECIELHAF != 0 {
-            os.write_uint32(12, self.OIAECIELHAF)?;
+        if self.HBLIKPICEKE != false {
+            os.write_bool(14, self.HBLIKPICEKE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for OpenRogueChestCsReq {
     }
 
     fn clear(&mut self) {
-        self.HODGFGACFKC = false;
-        self.OIAECIELHAF = 0;
+        self.LMFFBHEOONE = 0;
+        self.HBLIKPICEKE = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OpenRogueChestCsReq {
         static instance: OpenRogueChestCsReq = OpenRogueChestCsReq {
-            HODGFGACFKC: false,
-            OIAECIELHAF: 0,
+            LMFFBHEOONE: 0,
+            HBLIKPICEKE: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for OpenRogueChestCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19OpenRogueChestCsReq.proto\"Y\n\x13OpenRogueChestCsReq\x12\x20\n\
-    \x0bHODGFGACFKC\x18\x03\x20\x01(\x08R\x0bHODGFGACFKC\x12\x20\n\x0bOIAECI\
-    ELHAF\x18\x0c\x20\x01(\rR\x0bOIAECIELHAFb\x06proto3\
+    \x0bLMFFBHEOONE\x18\x04\x20\x01(\rR\x0bLMFFBHEOONE\x12\x20\n\x0bHBLIKPIC\
+    EKE\x18\x0e\x20\x01(\x08R\x0bHBLIKPICEKEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

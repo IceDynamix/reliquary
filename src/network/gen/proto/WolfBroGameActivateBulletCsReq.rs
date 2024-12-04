@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct WolfBroGameActivateBulletCsReq {
     // message fields
-    // @@protoc_insertion_point(field:WolfBroGameActivateBulletCsReq.FJPEFPBFALC)
-    pub FJPEFPBFALC: u32,
-    // @@protoc_insertion_point(field:WolfBroGameActivateBulletCsReq.GCFIIGOLPMF)
-    pub GCFIIGOLPMF: u32,
+    // @@protoc_insertion_point(field:WolfBroGameActivateBulletCsReq.ILIFHHJFMIH)
+    pub ILIFHHJFMIH: u32,
+    // @@protoc_insertion_point(field:WolfBroGameActivateBulletCsReq.HBEIKGBDGPJ)
+    pub HBEIKGBDGPJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:WolfBroGameActivateBulletCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl WolfBroGameActivateBulletCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FJPEFPBFALC",
-            |m: &WolfBroGameActivateBulletCsReq| { &m.FJPEFPBFALC },
-            |m: &mut WolfBroGameActivateBulletCsReq| { &mut m.FJPEFPBFALC },
+            "ILIFHHJFMIH",
+            |m: &WolfBroGameActivateBulletCsReq| { &m.ILIFHHJFMIH },
+            |m: &mut WolfBroGameActivateBulletCsReq| { &mut m.ILIFHHJFMIH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GCFIIGOLPMF",
-            |m: &WolfBroGameActivateBulletCsReq| { &m.GCFIIGOLPMF },
-            |m: &mut WolfBroGameActivateBulletCsReq| { &mut m.GCFIIGOLPMF },
+            "HBEIKGBDGPJ",
+            |m: &WolfBroGameActivateBulletCsReq| { &m.HBEIKGBDGPJ },
+            |m: &mut WolfBroGameActivateBulletCsReq| { &mut m.HBEIKGBDGPJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<WolfBroGameActivateBulletCsReq>(
             "WolfBroGameActivateBulletCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for WolfBroGameActivateBulletCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.FJPEFPBFALC = is.read_uint32()?;
+                16 => {
+                    self.ILIFHHJFMIH = is.read_uint32()?;
                 },
-                32 => {
-                    self.GCFIIGOLPMF = is.read_uint32()?;
+                24 => {
+                    self.HBEIKGBDGPJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for WolfBroGameActivateBulletCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FJPEFPBFALC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.FJPEFPBFALC);
+        if self.ILIFHHJFMIH != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.ILIFHHJFMIH);
         }
-        if self.GCFIIGOLPMF != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.GCFIIGOLPMF);
+        if self.HBEIKGBDGPJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.HBEIKGBDGPJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for WolfBroGameActivateBulletCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FJPEFPBFALC != 0 {
-            os.write_uint32(5, self.FJPEFPBFALC)?;
+        if self.ILIFHHJFMIH != 0 {
+            os.write_uint32(2, self.ILIFHHJFMIH)?;
         }
-        if self.GCFIIGOLPMF != 0 {
-            os.write_uint32(4, self.GCFIIGOLPMF)?;
+        if self.HBEIKGBDGPJ != 0 {
+            os.write_uint32(3, self.HBEIKGBDGPJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for WolfBroGameActivateBulletCsReq {
     }
 
     fn clear(&mut self) {
-        self.FJPEFPBFALC = 0;
-        self.GCFIIGOLPMF = 0;
+        self.ILIFHHJFMIH = 0;
+        self.HBEIKGBDGPJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static WolfBroGameActivateBulletCsReq {
         static instance: WolfBroGameActivateBulletCsReq = WolfBroGameActivateBulletCsReq {
-            FJPEFPBFALC: 0,
-            GCFIIGOLPMF: 0,
+            ILIFHHJFMIH: 0,
+            HBEIKGBDGPJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for WolfBroGameActivateBulletCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$WolfBroGameActivateBulletCsReq.proto\"d\n\x1eWolfBroGameActivateBulle\
-    tCsReq\x12\x20\n\x0bFJPEFPBFALC\x18\x05\x20\x01(\rR\x0bFJPEFPBFALC\x12\
-    \x20\n\x0bGCFIIGOLPMF\x18\x04\x20\x01(\rR\x0bGCFIIGOLPMFb\x06proto3\
+    tCsReq\x12\x20\n\x0bILIFHHJFMIH\x18\x02\x20\x01(\rR\x0bILIFHHJFMIH\x12\
+    \x20\n\x0bHBEIKGBDGPJ\x18\x03\x20\x01(\rR\x0bHBEIKGBDGPJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

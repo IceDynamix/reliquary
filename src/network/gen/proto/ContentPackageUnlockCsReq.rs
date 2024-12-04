@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ContentPackageUnlockCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ContentPackageUnlockCsReq.PCABIMPKMBN)
-    pub PCABIMPKMBN: u32,
+    // @@protoc_insertion_point(field:ContentPackageUnlockCsReq.HBCAFGHLIOP)
+    pub HBCAFGHLIOP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ContentPackageUnlockCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl ContentPackageUnlockCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PCABIMPKMBN",
-            |m: &ContentPackageUnlockCsReq| { &m.PCABIMPKMBN },
-            |m: &mut ContentPackageUnlockCsReq| { &mut m.PCABIMPKMBN },
+            "HBCAFGHLIOP",
+            |m: &ContentPackageUnlockCsReq| { &m.HBCAFGHLIOP },
+            |m: &mut ContentPackageUnlockCsReq| { &mut m.HBCAFGHLIOP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ContentPackageUnlockCsReq>(
             "ContentPackageUnlockCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for ContentPackageUnlockCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.PCABIMPKMBN = is.read_uint32()?;
+                32 => {
+                    self.HBCAFGHLIOP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for ContentPackageUnlockCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PCABIMPKMBN != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.PCABIMPKMBN);
+        if self.HBCAFGHLIOP != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.HBCAFGHLIOP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for ContentPackageUnlockCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PCABIMPKMBN != 0 {
-            os.write_uint32(15, self.PCABIMPKMBN)?;
+        if self.HBCAFGHLIOP != 0 {
+            os.write_uint32(4, self.HBCAFGHLIOP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for ContentPackageUnlockCsReq {
     }
 
     fn clear(&mut self) {
-        self.PCABIMPKMBN = 0;
+        self.HBCAFGHLIOP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ContentPackageUnlockCsReq {
         static instance: ContentPackageUnlockCsReq = ContentPackageUnlockCsReq {
-            PCABIMPKMBN: 0,
+            HBCAFGHLIOP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for ContentPackageUnlockCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fContentPackageUnlockCsReq.proto\"=\n\x19ContentPackageUnlockCsReq\
-    \x12\x20\n\x0bPCABIMPKMBN\x18\x0f\x20\x01(\rR\x0bPCABIMPKMBNb\x06proto3\
+    \x12\x20\n\x0bHBCAFGHLIOP\x18\x04\x20\x01(\rR\x0bHBCAFGHLIOPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

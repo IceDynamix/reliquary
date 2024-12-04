@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueRollDiceScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueRollDiceScRsp.JDHBHNMPIPI)
-    pub JDHBHNMPIPI: u32,
-    // @@protoc_insertion_point(field:ChessRogueRollDiceScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:ChessRogueRollDiceScRsp.LHINNDFFHHC)
-    pub LHINNDFFHHC: ::protobuf::MessageField<super::LNFJDOCNPOM::LNFJDOCNPOM>,
+    // @@protoc_insertion_point(field:ChessRogueRollDiceScRsp.OPOJBBKEDBL)
+    pub OPOJBBKEDBL: u32,
+    // @@protoc_insertion_point(field:ChessRogueRollDiceScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:ChessRogueRollDiceScRsp.KCNBPDMKBOG)
+    pub KCNBPDMKBOG: ::protobuf::MessageField<super::BIFPDOCGFLC::BIFPDOCGFLC>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueRollDiceScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl ChessRogueRollDiceScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JDHBHNMPIPI",
-            |m: &ChessRogueRollDiceScRsp| { &m.JDHBHNMPIPI },
-            |m: &mut ChessRogueRollDiceScRsp| { &mut m.JDHBHNMPIPI },
+            "OPOJBBKEDBL",
+            |m: &ChessRogueRollDiceScRsp| { &m.OPOJBBKEDBL },
+            |m: &mut ChessRogueRollDiceScRsp| { &mut m.OPOJBBKEDBL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &ChessRogueRollDiceScRsp| { &m.retcode },
-            |m: &mut ChessRogueRollDiceScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &ChessRogueRollDiceScRsp| { &m.ADADHIHDHJC },
+            |m: &mut ChessRogueRollDiceScRsp| { &mut m.ADADHIHDHJC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LNFJDOCNPOM::LNFJDOCNPOM>(
-            "LHINNDFFHHC",
-            |m: &ChessRogueRollDiceScRsp| { &m.LHINNDFFHHC },
-            |m: &mut ChessRogueRollDiceScRsp| { &mut m.LHINNDFFHHC },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BIFPDOCGFLC::BIFPDOCGFLC>(
+            "KCNBPDMKBOG",
+            |m: &ChessRogueRollDiceScRsp| { &m.KCNBPDMKBOG },
+            |m: &mut ChessRogueRollDiceScRsp| { &mut m.KCNBPDMKBOG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueRollDiceScRsp>(
             "ChessRogueRollDiceScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for ChessRogueRollDiceScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.JDHBHNMPIPI = is.read_uint32()?;
+                64 => {
+                    self.OPOJBBKEDBL = is.read_uint32()?;
                 },
-                80 => {
-                    self.retcode = is.read_uint32()?;
+                120 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LHINNDFFHHC)?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KCNBPDMKBOG)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for ChessRogueRollDiceScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JDHBHNMPIPI != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.JDHBHNMPIPI);
+        if self.OPOJBBKEDBL != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.OPOJBBKEDBL);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.ADADHIHDHJC);
         }
-        if let Some(v) = self.LHINNDFFHHC.as_ref() {
+        if let Some(v) = self.KCNBPDMKBOG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -124,14 +124,14 @@ impl ::protobuf::Message for ChessRogueRollDiceScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JDHBHNMPIPI != 0 {
-            os.write_uint32(1, self.JDHBHNMPIPI)?;
+        if self.OPOJBBKEDBL != 0 {
+            os.write_uint32(8, self.OPOJBBKEDBL)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(15, self.ADADHIHDHJC)?;
         }
-        if let Some(v) = self.LHINNDFFHHC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if let Some(v) = self.KCNBPDMKBOG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for ChessRogueRollDiceScRsp {
     }
 
     fn clear(&mut self) {
-        self.JDHBHNMPIPI = 0;
-        self.retcode = 0;
-        self.LHINNDFFHHC.clear();
+        self.OPOJBBKEDBL = 0;
+        self.ADADHIHDHJC = 0;
+        self.KCNBPDMKBOG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueRollDiceScRsp {
         static instance: ChessRogueRollDiceScRsp = ChessRogueRollDiceScRsp {
-            JDHBHNMPIPI: 0,
-            retcode: 0,
-            LHINNDFFHHC: ::protobuf::MessageField::none(),
+            OPOJBBKEDBL: 0,
+            ADADHIHDHJC: 0,
+            KCNBPDMKBOG: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueRollDiceScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dChessRogueRollDiceScRsp.proto\x1a\x11LNFJDOCNPOM.proto\"\x85\x01\n\
-    \x17ChessRogueRollDiceScRsp\x12\x20\n\x0bJDHBHNMPIPI\x18\x01\x20\x01(\rR\
-    \x0bJDHBHNMPIPI\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcode\x12.\n\
-    \x0bLHINNDFFHHC\x18\x0c\x20\x01(\x0b2\x0c.LNFJDOCNPOMR\x0bLHINNDFFHHCb\
-    \x06proto3\
+    \n\x1dChessRogueRollDiceScRsp.proto\x1a\x11BIFPDOCGFLC.proto\"\x8d\x01\n\
+    \x17ChessRogueRollDiceScRsp\x12\x20\n\x0bOPOJBBKEDBL\x18\x08\x20\x01(\rR\
+    \x0bOPOJBBKEDBL\x12\x20\n\x0bADADHIHDHJC\x18\x0f\x20\x01(\rR\x0bADADHIHD\
+    HJC\x12.\n\x0bKCNBPDMKBOG\x18\x0e\x20\x01(\x0b2\x0c.BIFPDOCGFLCR\x0bKCNB\
+    PDMKBOGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::LNFJDOCNPOM::file_descriptor().clone());
+            deps.push(super::BIFPDOCGFLC::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChessRogueRollDiceScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

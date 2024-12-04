@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetChessRogueStoryAeonTalkInfoCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetChessRogueStoryAeonTalkInfoCsReq.OPIBBFHBGOB)
-    pub OPIBBFHBGOB: u32,
+    // @@protoc_insertion_point(field:GetChessRogueStoryAeonTalkInfoCsReq.NGLOKPIBFPN)
+    pub NGLOKPIBFPN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetChessRogueStoryAeonTalkInfoCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl GetChessRogueStoryAeonTalkInfoCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OPIBBFHBGOB",
-            |m: &GetChessRogueStoryAeonTalkInfoCsReq| { &m.OPIBBFHBGOB },
-            |m: &mut GetChessRogueStoryAeonTalkInfoCsReq| { &mut m.OPIBBFHBGOB },
+            "NGLOKPIBFPN",
+            |m: &GetChessRogueStoryAeonTalkInfoCsReq| { &m.NGLOKPIBFPN },
+            |m: &mut GetChessRogueStoryAeonTalkInfoCsReq| { &mut m.NGLOKPIBFPN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetChessRogueStoryAeonTalkInfoCsReq>(
             "GetChessRogueStoryAeonTalkInfoCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for GetChessRogueStoryAeonTalkInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.OPIBBFHBGOB = is.read_uint32()?;
+                48 => {
+                    self.NGLOKPIBFPN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for GetChessRogueStoryAeonTalkInfoCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OPIBBFHBGOB != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.OPIBBFHBGOB);
+        if self.NGLOKPIBFPN != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.NGLOKPIBFPN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for GetChessRogueStoryAeonTalkInfoCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OPIBBFHBGOB != 0 {
-            os.write_uint32(10, self.OPIBBFHBGOB)?;
+        if self.NGLOKPIBFPN != 0 {
+            os.write_uint32(6, self.NGLOKPIBFPN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for GetChessRogueStoryAeonTalkInfoCsReq {
     }
 
     fn clear(&mut self) {
-        self.OPIBBFHBGOB = 0;
+        self.NGLOKPIBFPN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetChessRogueStoryAeonTalkInfoCsReq {
         static instance: GetChessRogueStoryAeonTalkInfoCsReq = GetChessRogueStoryAeonTalkInfoCsReq {
-            OPIBBFHBGOB: 0,
+            NGLOKPIBFPN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for GetChessRogueStoryAeonTalkInfoCsReq 
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)GetChessRogueStoryAeonTalkInfoCsReq.proto\"G\n#GetChessRogueStoryAeon\
-    TalkInfoCsReq\x12\x20\n\x0bOPIBBFHBGOB\x18\n\x20\x01(\rR\x0bOPIBBFHBGOBb\
-    \x06proto3\
+    TalkInfoCsReq\x12\x20\n\x0bNGLOKPIBFPN\x18\x06\x20\x01(\rR\x0bNGLOKPIBFP\
+    Nb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncRogueGetItemScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncRogueGetItemScNotify.OLMAKEILNNH)
-    pub OLMAKEILNNH: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:SyncRogueGetItemScNotify.ALLDOIJDHCK)
-    pub ALLDOIJDHCK: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:SyncRogueGetItemScNotify.HGIGEEBGAOP)
+    pub HGIGEEBGAOP: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:SyncRogueGetItemScNotify.BPJMEJCLOPP)
+    pub BPJMEJCLOPP: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncRogueGetItemScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl SyncRogueGetItemScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "OLMAKEILNNH",
-            |m: &SyncRogueGetItemScNotify| { &m.OLMAKEILNNH },
-            |m: &mut SyncRogueGetItemScNotify| { &mut m.OLMAKEILNNH },
+            "HGIGEEBGAOP",
+            |m: &SyncRogueGetItemScNotify| { &m.HGIGEEBGAOP },
+            |m: &mut SyncRogueGetItemScNotify| { &mut m.HGIGEEBGAOP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "ALLDOIJDHCK",
-            |m: &SyncRogueGetItemScNotify| { &m.ALLDOIJDHCK },
-            |m: &mut SyncRogueGetItemScNotify| { &mut m.ALLDOIJDHCK },
+            "BPJMEJCLOPP",
+            |m: &SyncRogueGetItemScNotify| { &m.BPJMEJCLOPP },
+            |m: &mut SyncRogueGetItemScNotify| { &mut m.BPJMEJCLOPP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncRogueGetItemScNotify>(
             "SyncRogueGetItemScNotify",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for SyncRogueGetItemScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OLMAKEILNNH)?;
-                },
                 18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ALLDOIJDHCK)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HGIGEEBGAOP)?;
+                },
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BPJMEJCLOPP)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for SyncRogueGetItemScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.OLMAKEILNNH.as_ref() {
+        if let Some(v) = self.HGIGEEBGAOP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.ALLDOIJDHCK.as_ref() {
+        if let Some(v) = self.BPJMEJCLOPP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -112,11 +112,11 @@ impl ::protobuf::Message for SyncRogueGetItemScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.OLMAKEILNNH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        }
-        if let Some(v) = self.ALLDOIJDHCK.as_ref() {
+        if let Some(v) = self.HGIGEEBGAOP.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
+        if let Some(v) = self.BPJMEJCLOPP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -135,15 +135,15 @@ impl ::protobuf::Message for SyncRogueGetItemScNotify {
     }
 
     fn clear(&mut self) {
-        self.OLMAKEILNNH.clear();
-        self.ALLDOIJDHCK.clear();
+        self.HGIGEEBGAOP.clear();
+        self.BPJMEJCLOPP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncRogueGetItemScNotify {
         static instance: SyncRogueGetItemScNotify = SyncRogueGetItemScNotify {
-            OLMAKEILNNH: ::protobuf::MessageField::none(),
-            ALLDOIJDHCK: ::protobuf::MessageField::none(),
+            HGIGEEBGAOP: ::protobuf::MessageField::none(),
+            BPJMEJCLOPP: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -169,9 +169,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueGetItemScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eSyncRogueGetItemScNotify.proto\x1a\x0eItemList.proto\"t\n\x18SyncR\
-    ogueGetItemScNotify\x12+\n\x0bOLMAKEILNNH\x18\x0e\x20\x01(\x0b2\t.ItemLi\
-    stR\x0bOLMAKEILNNH\x12+\n\x0bALLDOIJDHCK\x18\x02\x20\x01(\x0b2\t.ItemLis\
-    tR\x0bALLDOIJDHCKb\x06proto3\
+    ogueGetItemScNotify\x12+\n\x0bHGIGEEBGAOP\x18\x02\x20\x01(\x0b2\t.ItemLi\
+    stR\x0bHGIGEEBGAOP\x12+\n\x0bBPJMEJCLOPP\x18\r\x20\x01(\x0b2\t.ItemListR\
+    \x0bBPJMEJCLOPPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

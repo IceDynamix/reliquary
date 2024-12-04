@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetAllRedDotDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetAllRedDotDataScRsp.JLMALJKDLLC)
-    pub JLMALJKDLLC: ::std::vec::Vec<super::BJLCIEAOMLP::BJLCIEAOMLP>,
-    // @@protoc_insertion_point(field:GetAllRedDotDataScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetAllRedDotDataScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:GetAllRedDotDataScRsp.CACGPPAMLDI)
+    pub CACGPPAMLDI: ::std::vec::Vec<super::IDNPCCEHCNO::IDNPCCEHCNO>,
     // special fields
     // @@protoc_insertion_point(special_field:GetAllRedDotDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl GetAllRedDotDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JLMALJKDLLC",
-            |m: &GetAllRedDotDataScRsp| { &m.JLMALJKDLLC },
-            |m: &mut GetAllRedDotDataScRsp| { &mut m.JLMALJKDLLC },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetAllRedDotDataScRsp| { &m.retcode },
-            |m: &mut GetAllRedDotDataScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &GetAllRedDotDataScRsp| { &m.ADADHIHDHJC },
+            |m: &mut GetAllRedDotDataScRsp| { &mut m.ADADHIHDHJC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CACGPPAMLDI",
+            |m: &GetAllRedDotDataScRsp| { &m.CACGPPAMLDI },
+            |m: &mut GetAllRedDotDataScRsp| { &mut m.CACGPPAMLDI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetAllRedDotDataScRsp>(
             "GetAllRedDotDataScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for GetAllRedDotDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    self.JLMALJKDLLC.push(is.read_message()?);
+                80 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                56 => {
-                    self.retcode = is.read_uint32()?;
+                90 => {
+                    self.CACGPPAMLDI.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,25 +98,25 @@ impl ::protobuf::Message for GetAllRedDotDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.JLMALJKDLLC {
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.ADADHIHDHJC);
+        }
+        for value in &self.CACGPPAMLDI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.JLMALJKDLLC {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
-        if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(10, self.ADADHIHDHJC)?;
         }
+        for v in &self.CACGPPAMLDI {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -134,15 +134,15 @@ impl ::protobuf::Message for GetAllRedDotDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.JLMALJKDLLC.clear();
-        self.retcode = 0;
+        self.ADADHIHDHJC = 0;
+        self.CACGPPAMLDI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetAllRedDotDataScRsp {
         static instance: GetAllRedDotDataScRsp = GetAllRedDotDataScRsp {
-            JLMALJKDLLC: ::std::vec::Vec::new(),
-            retcode: 0,
+            ADADHIHDHJC: 0,
+            CACGPPAMLDI: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for GetAllRedDotDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bGetAllRedDotDataScRsp.proto\x1a\x11BJLCIEAOMLP.proto\"a\n\x15GetAl\
-    lRedDotDataScRsp\x12.\n\x0bJLMALJKDLLC\x18\x08\x20\x03(\x0b2\x0c.BJLCIEA\
-    OMLPR\x0bJLMALJKDLLC\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\
-    b\x06proto3\
+    \n\x1bGetAllRedDotDataScRsp.proto\x1a\x11IDNPCCEHCNO.proto\"i\n\x15GetAl\
+    lRedDotDataScRsp\x12\x20\n\x0bADADHIHDHJC\x18\n\x20\x01(\rR\x0bADADHIHDH\
+    JC\x12.\n\x0bCACGPPAMLDI\x18\x0b\x20\x03(\x0b2\x0c.IDNPCCEHCNOR\x0bCACGP\
+    PAMLDIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::BJLCIEAOMLP::file_descriptor().clone());
+            deps.push(super::IDNPCCEHCNO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetAllRedDotDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

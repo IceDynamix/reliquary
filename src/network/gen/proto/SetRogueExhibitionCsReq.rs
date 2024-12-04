@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetRogueExhibitionCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetRogueExhibitionCsReq.IEOBDKKBHLF)
-    pub IEOBDKKBHLF: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:SetRogueExhibitionCsReq.LAPIDEOBJGL)
-    pub LAPIDEOBJGL: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::RogueCollectionExhibitionOperateType::RogueCollectionExhibitionOperateType>>,
-    // @@protoc_insertion_point(field:SetRogueExhibitionCsReq.NBJKMCJFIJC)
-    pub NBJKMCJFIJC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SetRogueExhibitionCsReq.FAHMHCCMKDL)
+    pub FAHMHCCMKDL: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SetRogueExhibitionCsReq.KDHDHLLEJMN)
+    pub KDHDHLLEJMN: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SetRogueExhibitionCsReq.NCBHKLECBJJ)
+    pub NCBHKLECBJJ: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::RogueCollectionExhibitionOperateType::RogueCollectionExhibitionOperateType>>,
     // special fields
     // @@protoc_insertion_point(special_field:SetRogueExhibitionCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl SetRogueExhibitionCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IEOBDKKBHLF",
-            |m: &SetRogueExhibitionCsReq| { &m.IEOBDKKBHLF },
-            |m: &mut SetRogueExhibitionCsReq| { &mut m.IEOBDKKBHLF },
+            "FAHMHCCMKDL",
+            |m: &SetRogueExhibitionCsReq| { &m.FAHMHCCMKDL },
+            |m: &mut SetRogueExhibitionCsReq| { &mut m.FAHMHCCMKDL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LAPIDEOBJGL",
-            |m: &SetRogueExhibitionCsReq| { &m.LAPIDEOBJGL },
-            |m: &mut SetRogueExhibitionCsReq| { &mut m.LAPIDEOBJGL },
+            "KDHDHLLEJMN",
+            |m: &SetRogueExhibitionCsReq| { &m.KDHDHLLEJMN },
+            |m: &mut SetRogueExhibitionCsReq| { &mut m.KDHDHLLEJMN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NBJKMCJFIJC",
-            |m: &SetRogueExhibitionCsReq| { &m.NBJKMCJFIJC },
-            |m: &mut SetRogueExhibitionCsReq| { &mut m.NBJKMCJFIJC },
+            "NCBHKLECBJJ",
+            |m: &SetRogueExhibitionCsReq| { &m.NCBHKLECBJJ },
+            |m: &mut SetRogueExhibitionCsReq| { &mut m.NCBHKLECBJJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetRogueExhibitionCsReq>(
             "SetRogueExhibitionCsReq",
@@ -87,23 +87,23 @@ impl ::protobuf::Message for SetRogueExhibitionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.IEOBDKKBHLF)?;
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.FAHMHCCMKDL)?;
                 },
-                40 => {
-                    self.IEOBDKKBHLF.push(is.read_uint32()?);
+                88 => {
+                    self.FAHMHCCMKDL.push(is.read_uint32()?);
                 },
-                32 => {
-                    self.LAPIDEOBJGL.push(is.read_enum_or_unknown()?);
+                10 => {
+                    is.read_repeated_packed_uint32_into(&mut self.KDHDHLLEJMN)?;
                 },
-                34 => {
-                    ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.LAPIDEOBJGL)?
+                8 => {
+                    self.KDHDHLLEJMN.push(is.read_uint32()?);
                 },
-                66 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NBJKMCJFIJC)?;
+                16 => {
+                    self.NCBHKLECBJJ.push(is.read_enum_or_unknown()?);
                 },
-                64 => {
-                    self.NBJKMCJFIJC.push(is.read_uint32()?);
+                18 => {
+                    ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.NCBHKLECBJJ)?
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,14 +117,14 @@ impl ::protobuf::Message for SetRogueExhibitionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.IEOBDKKBHLF {
-            my_size += ::protobuf::rt::uint32_size(5, *value);
+        for value in &self.FAHMHCCMKDL {
+            my_size += ::protobuf::rt::uint32_size(11, *value);
         };
-        for value in &self.LAPIDEOBJGL {
-            my_size += ::protobuf::rt::int32_size(4, value.value());
+        for value in &self.KDHDHLLEJMN {
+            my_size += ::protobuf::rt::uint32_size(1, *value);
         };
-        for value in &self.NBJKMCJFIJC {
-            my_size += ::protobuf::rt::uint32_size(8, *value);
+        for value in &self.NCBHKLECBJJ {
+            my_size += ::protobuf::rt::int32_size(2, value.value());
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -132,14 +132,14 @@ impl ::protobuf::Message for SetRogueExhibitionCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.IEOBDKKBHLF {
-            os.write_uint32(5, *v)?;
+        for v in &self.FAHMHCCMKDL {
+            os.write_uint32(11, *v)?;
         };
-        for v in &self.LAPIDEOBJGL {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(v))?;
+        for v in &self.KDHDHLLEJMN {
+            os.write_uint32(1, *v)?;
         };
-        for v in &self.NBJKMCJFIJC {
-            os.write_uint32(8, *v)?;
+        for v in &self.NCBHKLECBJJ {
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(v))?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -158,17 +158,17 @@ impl ::protobuf::Message for SetRogueExhibitionCsReq {
     }
 
     fn clear(&mut self) {
-        self.IEOBDKKBHLF.clear();
-        self.LAPIDEOBJGL.clear();
-        self.NBJKMCJFIJC.clear();
+        self.FAHMHCCMKDL.clear();
+        self.KDHDHLLEJMN.clear();
+        self.NCBHKLECBJJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetRogueExhibitionCsReq {
         static instance: SetRogueExhibitionCsReq = SetRogueExhibitionCsReq {
-            IEOBDKKBHLF: ::std::vec::Vec::new(),
-            LAPIDEOBJGL: ::std::vec::Vec::new(),
-            NBJKMCJFIJC: ::std::vec::Vec::new(),
+            FAHMHCCMKDL: ::std::vec::Vec::new(),
+            KDHDHLLEJMN: ::std::vec::Vec::new(),
+            NCBHKLECBJJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -194,10 +194,10 @@ impl ::protobuf::reflect::ProtobufValue for SetRogueExhibitionCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dSetRogueExhibitionCsReq.proto\x1a*RogueCollectionExhibitionOperate\
-    Type.proto\"\xa6\x01\n\x17SetRogueExhibitionCsReq\x12\x20\n\x0bIEOBDKKBH\
-    LF\x18\x05\x20\x03(\rR\x0bIEOBDKKBHLF\x12G\n\x0bLAPIDEOBJGL\x18\x04\x20\
-    \x03(\x0e2%.RogueCollectionExhibitionOperateTypeR\x0bLAPIDEOBJGL\x12\x20\
-    \n\x0bNBJKMCJFIJC\x18\x08\x20\x03(\rR\x0bNBJKMCJFIJCb\x06proto3\
+    Type.proto\"\xa6\x01\n\x17SetRogueExhibitionCsReq\x12\x20\n\x0bFAHMHCCMK\
+    DL\x18\x0b\x20\x03(\rR\x0bFAHMHCCMKDL\x12\x20\n\x0bKDHDHLLEJMN\x18\x01\
+    \x20\x03(\rR\x0bKDHDHLLEJMN\x12G\n\x0bNCBHKLECBJJ\x18\x02\x20\x03(\x0e2%\
+    .RogueCollectionExhibitionOperateTypeR\x0bNCBHKLECBJJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdateRotaterScNotify {
     // message fields
-    // @@protoc_insertion_point(field:UpdateRotaterScNotify.AIFHIIOBGAI)
-    pub AIFHIIOBGAI: ::std::vec::Vec<super::KPHGEEFLHNP::KPHGEEFLHNP>,
+    // @@protoc_insertion_point(field:UpdateRotaterScNotify.PNAMFGLFKAI)
+    pub PNAMFGLFKAI: ::std::vec::Vec<super::FFLMODAKJOC::FFLMODAKJOC>,
     // special fields
     // @@protoc_insertion_point(special_field:UpdateRotaterScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl UpdateRotaterScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "AIFHIIOBGAI",
-            |m: &UpdateRotaterScNotify| { &m.AIFHIIOBGAI },
-            |m: &mut UpdateRotaterScNotify| { &mut m.AIFHIIOBGAI },
+            "PNAMFGLFKAI",
+            |m: &UpdateRotaterScNotify| { &m.PNAMFGLFKAI },
+            |m: &mut UpdateRotaterScNotify| { &mut m.PNAMFGLFKAI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdateRotaterScNotify>(
             "UpdateRotaterScNotify",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for UpdateRotaterScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.AIFHIIOBGAI.push(is.read_message()?);
+                106 => {
+                    self.PNAMFGLFKAI.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for UpdateRotaterScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.AIFHIIOBGAI {
+        for value in &self.PNAMFGLFKAI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -98,8 +98,8 @@ impl ::protobuf::Message for UpdateRotaterScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.AIFHIIOBGAI {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        for v in &self.PNAMFGLFKAI {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -118,13 +118,13 @@ impl ::protobuf::Message for UpdateRotaterScNotify {
     }
 
     fn clear(&mut self) {
-        self.AIFHIIOBGAI.clear();
+        self.PNAMFGLFKAI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateRotaterScNotify {
         static instance: UpdateRotaterScNotify = UpdateRotaterScNotify {
-            AIFHIIOBGAI: ::std::vec::Vec::new(),
+            PNAMFGLFKAI: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,9 +149,9 @@ impl ::protobuf::reflect::ProtobufValue for UpdateRotaterScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bUpdateRotaterScNotify.proto\x1a\x11KPHGEEFLHNP.proto\"G\n\x15Updat\
-    eRotaterScNotify\x12.\n\x0bAIFHIIOBGAI\x18\x07\x20\x03(\x0b2\x0c.KPHGEEF\
-    LHNPR\x0bAIFHIIOBGAIb\x06proto3\
+    \n\x1bUpdateRotaterScNotify.proto\x1a\x11FFLMODAKJOC.proto\"G\n\x15Updat\
+    eRotaterScNotify\x12.\n\x0bPNAMFGLFKAI\x18\r\x20\x03(\x0b2\x0c.FFLMODAKJ\
+    OCR\x0bPNAMFGLFKAIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -169,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::KPHGEEFLHNP::file_descriptor().clone());
+            deps.push(super::FFLMODAKJOC::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(UpdateRotaterScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

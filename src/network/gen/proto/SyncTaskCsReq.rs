@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncTaskCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SyncTaskCsReq.MFKLINKCPPA)
-    pub MFKLINKCPPA: ::std::string::String,
+    // @@protoc_insertion_point(field:SyncTaskCsReq.BNCHHJCHKON)
+    pub BNCHHJCHKON: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:SyncTaskCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl SyncTaskCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MFKLINKCPPA",
-            |m: &SyncTaskCsReq| { &m.MFKLINKCPPA },
-            |m: &mut SyncTaskCsReq| { &mut m.MFKLINKCPPA },
+            "BNCHHJCHKON",
+            |m: &SyncTaskCsReq| { &m.BNCHHJCHKON },
+            |m: &mut SyncTaskCsReq| { &mut m.BNCHHJCHKON },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncTaskCsReq>(
             "SyncTaskCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for SyncTaskCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    self.MFKLINKCPPA = is.read_string()?;
+                122 => {
+                    self.BNCHHJCHKON = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for SyncTaskCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.MFKLINKCPPA.is_empty() {
-            my_size += ::protobuf::rt::string_size(12, &self.MFKLINKCPPA);
+        if !self.BNCHHJCHKON.is_empty() {
+            my_size += ::protobuf::rt::string_size(15, &self.BNCHHJCHKON);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for SyncTaskCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.MFKLINKCPPA.is_empty() {
-            os.write_string(12, &self.MFKLINKCPPA)?;
+        if !self.BNCHHJCHKON.is_empty() {
+            os.write_string(15, &self.BNCHHJCHKON)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for SyncTaskCsReq {
     }
 
     fn clear(&mut self) {
-        self.MFKLINKCPPA.clear();
+        self.BNCHHJCHKON.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncTaskCsReq {
         static instance: SyncTaskCsReq = SyncTaskCsReq {
-            MFKLINKCPPA: ::std::string::String::new(),
+            BNCHHJCHKON: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for SyncTaskCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13SyncTaskCsReq.proto\"1\n\rSyncTaskCsReq\x12\x20\n\x0bMFKLINKCPPA\
-    \x18\x0c\x20\x01(\tR\x0bMFKLINKCPPAb\x06proto3\
+    \n\x13SyncTaskCsReq.proto\"1\n\rSyncTaskCsReq\x12\x20\n\x0bBNCHHJCHKON\
+    \x18\x0f\x20\x01(\tR\x0bBNCHHJCHKONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

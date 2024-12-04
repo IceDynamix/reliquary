@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ExtraLineupDestroyNotify {
     // message fields
-    // @@protoc_insertion_point(field:ExtraLineupDestroyNotify.IOKADLFHEHK)
-    pub IOKADLFHEHK: ::protobuf::EnumOrUnknown<super::ExtraLineupType::ExtraLineupType>,
+    // @@protoc_insertion_point(field:ExtraLineupDestroyNotify.KKFKECEMFEB)
+    pub KKFKECEMFEB: ::protobuf::EnumOrUnknown<super::ExtraLineupType::ExtraLineupType>,
     // special fields
     // @@protoc_insertion_point(special_field:ExtraLineupDestroyNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl ExtraLineupDestroyNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IOKADLFHEHK",
-            |m: &ExtraLineupDestroyNotify| { &m.IOKADLFHEHK },
-            |m: &mut ExtraLineupDestroyNotify| { &mut m.IOKADLFHEHK },
+            "KKFKECEMFEB",
+            |m: &ExtraLineupDestroyNotify| { &m.KKFKECEMFEB },
+            |m: &mut ExtraLineupDestroyNotify| { &mut m.KKFKECEMFEB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ExtraLineupDestroyNotify>(
             "ExtraLineupDestroyNotify",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for ExtraLineupDestroyNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.IOKADLFHEHK = is.read_enum_or_unknown()?;
+                40 => {
+                    self.KKFKECEMFEB = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for ExtraLineupDestroyNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IOKADLFHEHK != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            my_size += ::protobuf::rt::int32_size(1, self.IOKADLFHEHK.value());
+        if self.KKFKECEMFEB != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
+            my_size += ::protobuf::rt::int32_size(5, self.KKFKECEMFEB.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for ExtraLineupDestroyNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IOKADLFHEHK != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.IOKADLFHEHK))?;
+        if self.KKFKECEMFEB != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.KKFKECEMFEB))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for ExtraLineupDestroyNotify {
     }
 
     fn clear(&mut self) {
-        self.IOKADLFHEHK = ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE);
+        self.KKFKECEMFEB = ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ExtraLineupDestroyNotify {
         static instance: ExtraLineupDestroyNotify = ExtraLineupDestroyNotify {
-            IOKADLFHEHK: ::protobuf::EnumOrUnknown::from_i32(0),
+            KKFKECEMFEB: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for ExtraLineupDestroyNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eExtraLineupDestroyNotify.proto\x1a\x15ExtraLineupType.proto\"N\n\
-    \x18ExtraLineupDestroyNotify\x122\n\x0bIOKADLFHEHK\x18\x01\x20\x01(\x0e2\
-    \x10.ExtraLineupTypeR\x0bIOKADLFHEHKb\x06proto3\
+    \x18ExtraLineupDestroyNotify\x122\n\x0bKKFKECEMFEB\x18\x05\x20\x01(\x0e2\
+    \x10.ExtraLineupTypeR\x0bKKFKECEMFEBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ClientObjUploadScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ClientObjUploadScRsp.KFPJDGKFDBB)
-    pub KFPJDGKFDBB: ::protobuf::MessageField<super::OGECFNIELJF::OGECFNIELJF>,
-    // @@protoc_insertion_point(field:ClientObjUploadScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:ClientObjUploadScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:ClientObjUploadScRsp.NIEKADMHOKK)
+    pub NIEKADMHOKK: ::protobuf::MessageField<super::DJANKKFKNCN::DJANKKFKNCN>,
     // special fields
     // @@protoc_insertion_point(special_field:ClientObjUploadScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl ClientObjUploadScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OGECFNIELJF::OGECFNIELJF>(
-            "KFPJDGKFDBB",
-            |m: &ClientObjUploadScRsp| { &m.KFPJDGKFDBB },
-            |m: &mut ClientObjUploadScRsp| { &mut m.KFPJDGKFDBB },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &ClientObjUploadScRsp| { &m.retcode },
-            |m: &mut ClientObjUploadScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &ClientObjUploadScRsp| { &m.ADADHIHDHJC },
+            |m: &mut ClientObjUploadScRsp| { &mut m.ADADHIHDHJC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DJANKKFKNCN::DJANKKFKNCN>(
+            "NIEKADMHOKK",
+            |m: &ClientObjUploadScRsp| { &m.NIEKADMHOKK },
+            |m: &mut ClientObjUploadScRsp| { &mut m.NIEKADMHOKK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ClientObjUploadScRsp>(
             "ClientObjUploadScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for ClientObjUploadScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KFPJDGKFDBB)?;
+                56 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                24 => {
-                    self.retcode = is.read_uint32()?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NIEKADMHOKK)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,12 +98,12 @@ impl ::protobuf::Message for ClientObjUploadScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.KFPJDGKFDBB.as_ref() {
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.ADADHIHDHJC);
+        }
+        if let Some(v) = self.NIEKADMHOKK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for ClientObjUploadScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.KFPJDGKFDBB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(7, self.ADADHIHDHJC)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+        if let Some(v) = self.NIEKADMHOKK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for ClientObjUploadScRsp {
     }
 
     fn clear(&mut self) {
-        self.KFPJDGKFDBB.clear();
-        self.retcode = 0;
+        self.ADADHIHDHJC = 0;
+        self.NIEKADMHOKK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ClientObjUploadScRsp {
         static instance: ClientObjUploadScRsp = ClientObjUploadScRsp {
-            KFPJDGKFDBB: ::protobuf::MessageField::none(),
-            retcode: 0,
+            ADADHIHDHJC: 0,
+            NIEKADMHOKK: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for ClientObjUploadScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aClientObjUploadScRsp.proto\x1a\x11OGECFNIELJF.proto\"`\n\x14Client\
-    ObjUploadScRsp\x12.\n\x0bKFPJDGKFDBB\x18\x08\x20\x01(\x0b2\x0c.OGECFNIEL\
-    JFR\x0bKFPJDGKFDBB\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcodeb\
-    \x06proto3\
+    \n\x1aClientObjUploadScRsp.proto\x1a\x11DJANKKFKNCN.proto\"h\n\x14Client\
+    ObjUploadScRsp\x12\x20\n\x0bADADHIHDHJC\x18\x07\x20\x01(\rR\x0bADADHIHDH\
+    JC\x12.\n\x0bNIEKADMHOKK\x18\x04\x20\x01(\x0b2\x0c.DJANKKFKNCNR\x0bNIEKA\
+    DMHOKKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::OGECFNIELJF::file_descriptor().clone());
+            deps.push(super::DJANKKFKNCN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ClientObjUploadScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

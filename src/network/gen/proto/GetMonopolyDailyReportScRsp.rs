@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetMonopolyDailyReportScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetMonopolyDailyReportScRsp.PCOEFKDDBOE)
-    pub PCOEFKDDBOE: ::protobuf::MessageField<super::OEEFPPBEAOF::OEEFPPBEAOF>,
-    // @@protoc_insertion_point(field:GetMonopolyDailyReportScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetMonopolyDailyReportScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:GetMonopolyDailyReportScRsp.KJJEFPLAFOA)
+    pub KJJEFPLAFOA: ::protobuf::MessageField<super::MMGHBJCIBMN::MMGHBJCIBMN>,
     // special fields
     // @@protoc_insertion_point(special_field:GetMonopolyDailyReportScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl GetMonopolyDailyReportScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OEEFPPBEAOF::OEEFPPBEAOF>(
-            "PCOEFKDDBOE",
-            |m: &GetMonopolyDailyReportScRsp| { &m.PCOEFKDDBOE },
-            |m: &mut GetMonopolyDailyReportScRsp| { &mut m.PCOEFKDDBOE },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetMonopolyDailyReportScRsp| { &m.retcode },
-            |m: &mut GetMonopolyDailyReportScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &GetMonopolyDailyReportScRsp| { &m.ADADHIHDHJC },
+            |m: &mut GetMonopolyDailyReportScRsp| { &mut m.ADADHIHDHJC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MMGHBJCIBMN::MMGHBJCIBMN>(
+            "KJJEFPLAFOA",
+            |m: &GetMonopolyDailyReportScRsp| { &m.KJJEFPLAFOA },
+            |m: &mut GetMonopolyDailyReportScRsp| { &mut m.KJJEFPLAFOA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetMonopolyDailyReportScRsp>(
             "GetMonopolyDailyReportScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for GetMonopolyDailyReportScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PCOEFKDDBOE)?;
-                },
                 80 => {
-                    self.retcode = is.read_uint32()?;
+                    self.ADADHIHDHJC = is.read_uint32()?;
+                },
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KJJEFPLAFOA)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,12 +98,12 @@ impl ::protobuf::Message for GetMonopolyDailyReportScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.PCOEFKDDBOE.as_ref() {
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.ADADHIHDHJC);
+        }
+        if let Some(v) = self.KJJEFPLAFOA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for GetMonopolyDailyReportScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.PCOEFKDDBOE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(10, self.ADADHIHDHJC)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+        if let Some(v) = self.KJJEFPLAFOA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for GetMonopolyDailyReportScRsp {
     }
 
     fn clear(&mut self) {
-        self.PCOEFKDDBOE.clear();
-        self.retcode = 0;
+        self.ADADHIHDHJC = 0;
+        self.KJJEFPLAFOA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetMonopolyDailyReportScRsp {
         static instance: GetMonopolyDailyReportScRsp = GetMonopolyDailyReportScRsp {
-            PCOEFKDDBOE: ::protobuf::MessageField::none(),
-            retcode: 0,
+            ADADHIHDHJC: 0,
+            KJJEFPLAFOA: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for GetMonopolyDailyReportScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!GetMonopolyDailyReportScRsp.proto\x1a\x11OEEFPPBEAOF.proto\"g\n\x1bGe\
-    tMonopolyDailyReportScRsp\x12.\n\x0bPCOEFKDDBOE\x18\x05\x20\x01(\x0b2\
-    \x0c.OEEFPPBEAOFR\x0bPCOEFKDDBOE\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\
-    \x07retcodeb\x06proto3\
+    \n!GetMonopolyDailyReportScRsp.proto\x1a\x11MMGHBJCIBMN.proto\"o\n\x1bGe\
+    tMonopolyDailyReportScRsp\x12\x20\n\x0bADADHIHDHJC\x18\n\x20\x01(\rR\x0b\
+    ADADHIHDHJC\x12.\n\x0bKJJEFPLAFOA\x18\x05\x20\x01(\x0b2\x0c.MMGHBJCIBMNR\
+    \x0bKJJEFPLAFOAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::OEEFPPBEAOF::file_descriptor().clone());
+            deps.push(super::MMGHBJCIBMN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetMonopolyDailyReportScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

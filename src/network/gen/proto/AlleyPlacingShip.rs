@@ -32,7 +32,7 @@ pub struct AlleyPlacingShip {
     // @@protoc_insertion_point(field:AlleyPlacingShip.ship_id)
     pub ship_id: u32,
     // @@protoc_insertion_point(field:AlleyPlacingShip.goods_list)
-    pub goods_list: ::std::vec::Vec<super::INAMOOJHEAJ::INAMOOJHEAJ>,
+    pub goods_list: ::std::vec::Vec<super::JPMPLLFBBFP::JPMPLLFBBFP>,
     // special fields
     // @@protoc_insertion_point(special_field:AlleyPlacingShip.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -80,10 +80,10 @@ impl ::protobuf::Message for AlleyPlacingShip {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                120 => {
                     self.ship_id = is.read_uint32()?;
                 },
-                106 => {
+                50 => {
                     self.goods_list.push(is.read_message()?);
                 },
                 tag => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for AlleyPlacingShip {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.ship_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.ship_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.ship_id);
         }
         for value in &self.goods_list {
             let len = value.compute_size();
@@ -112,10 +112,10 @@ impl ::protobuf::Message for AlleyPlacingShip {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.ship_id != 0 {
-            os.write_uint32(7, self.ship_id)?;
+            os.write_uint32(15, self.ship_id)?;
         }
         for v in &self.goods_list {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for AlleyPlacingShip {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16AlleyPlacingShip.proto\x1a\x11INAMOOJHEAJ.proto\"X\n\x10AlleyPlaci\
-    ngShip\x12\x17\n\x07ship_id\x18\x07\x20\x01(\rR\x06shipId\x12+\n\ngoods_\
-    list\x18\r\x20\x03(\x0b2\x0c.INAMOOJHEAJR\tgoodsListb\x06proto3\
+    \n\x16AlleyPlacingShip.proto\x1a\x11JPMPLLFBBFP.proto\"X\n\x10AlleyPlaci\
+    ngShip\x12\x17\n\x07ship_id\x18\x0f\x20\x01(\rR\x06shipId\x12+\n\ngoods_\
+    list\x18\x06\x20\x03(\x0b2\x0c.JPMPLLFBBFPR\tgoodsListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::INAMOOJHEAJ::file_descriptor().clone());
+            deps.push(super::JPMPLLFBBFP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(AlleyPlacingShip::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

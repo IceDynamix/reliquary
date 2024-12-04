@@ -29,26 +29,26 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChallengeBossPhaseSettleNotify {
     // message fields
-    // @@protoc_insertion_point(field:ChallengeBossPhaseSettleNotify.BNEBJJBOJDG)
-    pub BNEBJJBOJDG: bool,
-    // @@protoc_insertion_point(field:ChallengeBossPhaseSettleNotify.EEPIGCKDPDK)
-    pub EEPIGCKDPDK: bool,
-    // @@protoc_insertion_point(field:ChallengeBossPhaseSettleNotify.DMIEBIKLCPG)
-    pub DMIEBIKLCPG: u32,
-    // @@protoc_insertion_point(field:ChallengeBossPhaseSettleNotify.HJAALLNAFOO)
-    pub HJAALLNAFOO: ::std::vec::Vec<super::BattleTarget::BattleTarget>,
-    // @@protoc_insertion_point(field:ChallengeBossPhaseSettleNotify.KFHANKAEJFJ)
-    pub KFHANKAEJFJ: u32,
-    // @@protoc_insertion_point(field:ChallengeBossPhaseSettleNotify.IBJDEGFNOIN)
-    pub IBJDEGFNOIN: u32,
-    // @@protoc_insertion_point(field:ChallengeBossPhaseSettleNotify.OFECNECFJJI)
-    pub OFECNECFJJI: bool,
-    // @@protoc_insertion_point(field:ChallengeBossPhaseSettleNotify.DBKHFAEKNKL)
-    pub DBKHFAEKNKL: u32,
-    // @@protoc_insertion_point(field:ChallengeBossPhaseSettleNotify.OGMPDLCDJDL)
-    pub OGMPDLCDJDL: u32,
-    // @@protoc_insertion_point(field:ChallengeBossPhaseSettleNotify.MGGDEINKDMH)
-    pub MGGDEINKDMH: u32,
+    // @@protoc_insertion_point(field:ChallengeBossPhaseSettleNotify.stars)
+    pub stars: u32,
+    // @@protoc_insertion_point(field:ChallengeBossPhaseSettleNotify.unk)
+    pub unk: u32,
+    // @@protoc_insertion_point(field:ChallengeBossPhaseSettleNotify.is_win)
+    pub is_win: bool,
+    // @@protoc_insertion_point(field:ChallengeBossPhaseSettleNotify.phase)
+    pub phase: u32,
+    // @@protoc_insertion_point(field:ChallengeBossPhaseSettleNotify.challenge_battle_target_list)
+    pub challenge_battle_target_list: ::std::vec::Vec<super::BattleTarget::BattleTarget>,
+    // @@protoc_insertion_point(field:ChallengeBossPhaseSettleNotify.challenge_score)
+    pub challenge_score: u32,
+    // @@protoc_insertion_point(field:ChallengeBossPhaseSettleNotify.score_two)
+    pub score_two: u32,
+    // @@protoc_insertion_point(field:ChallengeBossPhaseSettleNotify.challenge_id)
+    pub challenge_id: u32,
+    // @@protoc_insertion_point(field:ChallengeBossPhaseSettleNotify.IEGNKPBDBGG)
+    pub IEGNKPBDBGG: bool,
+    // @@protoc_insertion_point(field:ChallengeBossPhaseSettleNotify.OJIGJJLKBHM)
+    pub OJIGJJLKBHM: bool,
     // special fields
     // @@protoc_insertion_point(special_field:ChallengeBossPhaseSettleNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -69,54 +69,54 @@ impl ChallengeBossPhaseSettleNotify {
         let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BNEBJJBOJDG",
-            |m: &ChallengeBossPhaseSettleNotify| { &m.BNEBJJBOJDG },
-            |m: &mut ChallengeBossPhaseSettleNotify| { &mut m.BNEBJJBOJDG },
+            "stars",
+            |m: &ChallengeBossPhaseSettleNotify| { &m.stars },
+            |m: &mut ChallengeBossPhaseSettleNotify| { &mut m.stars },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EEPIGCKDPDK",
-            |m: &ChallengeBossPhaseSettleNotify| { &m.EEPIGCKDPDK },
-            |m: &mut ChallengeBossPhaseSettleNotify| { &mut m.EEPIGCKDPDK },
+            "unk",
+            |m: &ChallengeBossPhaseSettleNotify| { &m.unk },
+            |m: &mut ChallengeBossPhaseSettleNotify| { &mut m.unk },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DMIEBIKLCPG",
-            |m: &ChallengeBossPhaseSettleNotify| { &m.DMIEBIKLCPG },
-            |m: &mut ChallengeBossPhaseSettleNotify| { &mut m.DMIEBIKLCPG },
+            "is_win",
+            |m: &ChallengeBossPhaseSettleNotify| { &m.is_win },
+            |m: &mut ChallengeBossPhaseSettleNotify| { &mut m.is_win },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "phase",
+            |m: &ChallengeBossPhaseSettleNotify| { &m.phase },
+            |m: &mut ChallengeBossPhaseSettleNotify| { &mut m.phase },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HJAALLNAFOO",
-            |m: &ChallengeBossPhaseSettleNotify| { &m.HJAALLNAFOO },
-            |m: &mut ChallengeBossPhaseSettleNotify| { &mut m.HJAALLNAFOO },
+            "challenge_battle_target_list",
+            |m: &ChallengeBossPhaseSettleNotify| { &m.challenge_battle_target_list },
+            |m: &mut ChallengeBossPhaseSettleNotify| { &mut m.challenge_battle_target_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KFHANKAEJFJ",
-            |m: &ChallengeBossPhaseSettleNotify| { &m.KFHANKAEJFJ },
-            |m: &mut ChallengeBossPhaseSettleNotify| { &mut m.KFHANKAEJFJ },
+            "challenge_score",
+            |m: &ChallengeBossPhaseSettleNotify| { &m.challenge_score },
+            |m: &mut ChallengeBossPhaseSettleNotify| { &mut m.challenge_score },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IBJDEGFNOIN",
-            |m: &ChallengeBossPhaseSettleNotify| { &m.IBJDEGFNOIN },
-            |m: &mut ChallengeBossPhaseSettleNotify| { &mut m.IBJDEGFNOIN },
+            "score_two",
+            |m: &ChallengeBossPhaseSettleNotify| { &m.score_two },
+            |m: &mut ChallengeBossPhaseSettleNotify| { &mut m.score_two },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OFECNECFJJI",
-            |m: &ChallengeBossPhaseSettleNotify| { &m.OFECNECFJJI },
-            |m: &mut ChallengeBossPhaseSettleNotify| { &mut m.OFECNECFJJI },
+            "challenge_id",
+            |m: &ChallengeBossPhaseSettleNotify| { &m.challenge_id },
+            |m: &mut ChallengeBossPhaseSettleNotify| { &mut m.challenge_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DBKHFAEKNKL",
-            |m: &ChallengeBossPhaseSettleNotify| { &m.DBKHFAEKNKL },
-            |m: &mut ChallengeBossPhaseSettleNotify| { &mut m.DBKHFAEKNKL },
+            "IEGNKPBDBGG",
+            |m: &ChallengeBossPhaseSettleNotify| { &m.IEGNKPBDBGG },
+            |m: &mut ChallengeBossPhaseSettleNotify| { &mut m.IEGNKPBDBGG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OGMPDLCDJDL",
-            |m: &ChallengeBossPhaseSettleNotify| { &m.OGMPDLCDJDL },
-            |m: &mut ChallengeBossPhaseSettleNotify| { &mut m.OGMPDLCDJDL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MGGDEINKDMH",
-            |m: &ChallengeBossPhaseSettleNotify| { &m.MGGDEINKDMH },
-            |m: &mut ChallengeBossPhaseSettleNotify| { &mut m.MGGDEINKDMH },
+            "OJIGJJLKBHM",
+            |m: &ChallengeBossPhaseSettleNotify| { &m.OJIGJJLKBHM },
+            |m: &mut ChallengeBossPhaseSettleNotify| { &mut m.OJIGJJLKBHM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChallengeBossPhaseSettleNotify>(
             "ChallengeBossPhaseSettleNotify",
@@ -136,35 +136,35 @@ impl ::protobuf::Message for ChallengeBossPhaseSettleNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.BNEBJJBOJDG = is.read_bool()?;
+                120 => {
+                    self.stars = is.read_uint32()?;
                 },
-                56 => {
-                    self.EEPIGCKDPDK = is.read_bool()?;
+                88 => {
+                    self.unk = is.read_uint32()?;
                 },
-                40 => {
-                    self.DMIEBIKLCPG = is.read_uint32()?;
-                },
-                34 => {
-                    self.HJAALLNAFOO.push(is.read_message()?);
+                32 => {
+                    self.is_win = is.read_bool()?;
                 },
                 96 => {
-                    self.KFHANKAEJFJ = is.read_uint32()?;
+                    self.phase = is.read_uint32()?;
+                },
+                82 => {
+                    self.challenge_battle_target_list.push(is.read_message()?);
                 },
                 72 => {
-                    self.IBJDEGFNOIN = is.read_uint32()?;
+                    self.challenge_score = is.read_uint32()?;
+                },
+                104 => {
+                    self.score_two = is.read_uint32()?;
+                },
+                40 => {
+                    self.challenge_id = is.read_uint32()?;
                 },
                 48 => {
-                    self.OFECNECFJJI = is.read_bool()?;
+                    self.IEGNKPBDBGG = is.read_bool()?;
                 },
-                24 => {
-                    self.DBKHFAEKNKL = is.read_uint32()?;
-                },
-                64 => {
-                    self.OGMPDLCDJDL = is.read_uint32()?;
-                },
-                8 => {
-                    self.MGGDEINKDMH = is.read_uint32()?;
+                112 => {
+                    self.OJIGJJLKBHM = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -178,36 +178,36 @@ impl ::protobuf::Message for ChallengeBossPhaseSettleNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BNEBJJBOJDG != false {
+        if self.stars != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.stars);
+        }
+        if self.unk != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.unk);
+        }
+        if self.is_win != false {
             my_size += 1 + 1;
         }
-        if self.EEPIGCKDPDK != false {
-            my_size += 1 + 1;
+        if self.phase != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.phase);
         }
-        if self.DMIEBIKLCPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.DMIEBIKLCPG);
-        }
-        for value in &self.HJAALLNAFOO {
+        for value in &self.challenge_battle_target_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.KFHANKAEJFJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.KFHANKAEJFJ);
+        if self.challenge_score != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.challenge_score);
         }
-        if self.IBJDEGFNOIN != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.IBJDEGFNOIN);
+        if self.score_two != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.score_two);
         }
-        if self.OFECNECFJJI != false {
+        if self.challenge_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.challenge_id);
+        }
+        if self.IEGNKPBDBGG != false {
             my_size += 1 + 1;
         }
-        if self.DBKHFAEKNKL != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.DBKHFAEKNKL);
-        }
-        if self.OGMPDLCDJDL != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.OGMPDLCDJDL);
-        }
-        if self.MGGDEINKDMH != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.MGGDEINKDMH);
+        if self.OJIGJJLKBHM != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -215,35 +215,35 @@ impl ::protobuf::Message for ChallengeBossPhaseSettleNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BNEBJJBOJDG != false {
-            os.write_bool(14, self.BNEBJJBOJDG)?;
+        if self.stars != 0 {
+            os.write_uint32(15, self.stars)?;
         }
-        if self.EEPIGCKDPDK != false {
-            os.write_bool(7, self.EEPIGCKDPDK)?;
+        if self.unk != 0 {
+            os.write_uint32(11, self.unk)?;
         }
-        if self.DMIEBIKLCPG != 0 {
-            os.write_uint32(5, self.DMIEBIKLCPG)?;
+        if self.is_win != false {
+            os.write_bool(4, self.is_win)?;
         }
-        for v in &self.HJAALLNAFOO {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        if self.phase != 0 {
+            os.write_uint32(12, self.phase)?;
+        }
+        for v in &self.challenge_battle_target_list {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
-        if self.KFHANKAEJFJ != 0 {
-            os.write_uint32(12, self.KFHANKAEJFJ)?;
+        if self.challenge_score != 0 {
+            os.write_uint32(9, self.challenge_score)?;
         }
-        if self.IBJDEGFNOIN != 0 {
-            os.write_uint32(9, self.IBJDEGFNOIN)?;
+        if self.score_two != 0 {
+            os.write_uint32(13, self.score_two)?;
         }
-        if self.OFECNECFJJI != false {
-            os.write_bool(6, self.OFECNECFJJI)?;
+        if self.challenge_id != 0 {
+            os.write_uint32(5, self.challenge_id)?;
         }
-        if self.DBKHFAEKNKL != 0 {
-            os.write_uint32(3, self.DBKHFAEKNKL)?;
+        if self.IEGNKPBDBGG != false {
+            os.write_bool(6, self.IEGNKPBDBGG)?;
         }
-        if self.OGMPDLCDJDL != 0 {
-            os.write_uint32(8, self.OGMPDLCDJDL)?;
-        }
-        if self.MGGDEINKDMH != 0 {
-            os.write_uint32(1, self.MGGDEINKDMH)?;
+        if self.OJIGJJLKBHM != false {
+            os.write_bool(14, self.OJIGJJLKBHM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -262,31 +262,31 @@ impl ::protobuf::Message for ChallengeBossPhaseSettleNotify {
     }
 
     fn clear(&mut self) {
-        self.BNEBJJBOJDG = false;
-        self.EEPIGCKDPDK = false;
-        self.DMIEBIKLCPG = 0;
-        self.HJAALLNAFOO.clear();
-        self.KFHANKAEJFJ = 0;
-        self.IBJDEGFNOIN = 0;
-        self.OFECNECFJJI = false;
-        self.DBKHFAEKNKL = 0;
-        self.OGMPDLCDJDL = 0;
-        self.MGGDEINKDMH = 0;
+        self.stars = 0;
+        self.unk = 0;
+        self.is_win = false;
+        self.phase = 0;
+        self.challenge_battle_target_list.clear();
+        self.challenge_score = 0;
+        self.score_two = 0;
+        self.challenge_id = 0;
+        self.IEGNKPBDBGG = false;
+        self.OJIGJJLKBHM = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengeBossPhaseSettleNotify {
         static instance: ChallengeBossPhaseSettleNotify = ChallengeBossPhaseSettleNotify {
-            BNEBJJBOJDG: false,
-            EEPIGCKDPDK: false,
-            DMIEBIKLCPG: 0,
-            HJAALLNAFOO: ::std::vec::Vec::new(),
-            KFHANKAEJFJ: 0,
-            IBJDEGFNOIN: 0,
-            OFECNECFJJI: false,
-            DBKHFAEKNKL: 0,
-            OGMPDLCDJDL: 0,
-            MGGDEINKDMH: 0,
+            stars: 0,
+            unk: 0,
+            is_win: false,
+            phase: 0,
+            challenge_battle_target_list: ::std::vec::Vec::new(),
+            challenge_score: 0,
+            score_two: 0,
+            challenge_id: 0,
+            IEGNKPBDBGG: false,
+            OJIGJJLKBHM: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -311,17 +311,17 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeBossPhaseSettleNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$ChallengeBossPhaseSettleNotify.proto\x1a\x12BattleTarget.proto\"\x83\
-    \x03\n\x1eChallengeBossPhaseSettleNotify\x12\x20\n\x0bBNEBJJBOJDG\x18\
-    \x0e\x20\x01(\x08R\x0bBNEBJJBOJDG\x12\x20\n\x0bEEPIGCKDPDK\x18\x07\x20\
-    \x01(\x08R\x0bEEPIGCKDPDK\x12\x20\n\x0bDMIEBIKLCPG\x18\x05\x20\x01(\rR\
-    \x0bDMIEBIKLCPG\x12/\n\x0bHJAALLNAFOO\x18\x04\x20\x03(\x0b2\r.BattleTarg\
-    etR\x0bHJAALLNAFOO\x12\x20\n\x0bKFHANKAEJFJ\x18\x0c\x20\x01(\rR\x0bKFHAN\
-    KAEJFJ\x12\x20\n\x0bIBJDEGFNOIN\x18\t\x20\x01(\rR\x0bIBJDEGFNOIN\x12\x20\
-    \n\x0bOFECNECFJJI\x18\x06\x20\x01(\x08R\x0bOFECNECFJJI\x12\x20\n\x0bDBKH\
-    FAEKNKL\x18\x03\x20\x01(\rR\x0bDBKHFAEKNKL\x12\x20\n\x0bOGMPDLCDJDL\x18\
-    \x08\x20\x01(\rR\x0bOGMPDLCDJDL\x12\x20\n\x0bMGGDEINKDMH\x18\x01\x20\x01\
-    (\rR\x0bMGGDEINKDMHb\x06proto3\
+    \n$ChallengeBossPhaseSettleNotify.proto\x1a\x12BattleTarget.proto\"\xf2\
+    \x02\n\x1eChallengeBossPhaseSettleNotify\x12\x14\n\x05stars\x18\x0f\x20\
+    \x01(\rR\x05stars\x12\x10\n\x03unk\x18\x0b\x20\x01(\rR\x03unk\x12\x15\n\
+    \x06is_win\x18\x04\x20\x01(\x08R\x05isWin\x12\x14\n\x05phase\x18\x0c\x20\
+    \x01(\rR\x05phase\x12N\n\x1cchallenge_battle_target_list\x18\n\x20\x03(\
+    \x0b2\r.BattleTargetR\x19challengeBattleTargetList\x12'\n\x0fchallenge_s\
+    core\x18\t\x20\x01(\rR\x0echallengeScore\x12\x1b\n\tscore_two\x18\r\x20\
+    \x01(\rR\x08scoreTwo\x12!\n\x0cchallenge_id\x18\x05\x20\x01(\rR\x0bchall\
+    engeId\x12\x20\n\x0bIEGNKPBDBGG\x18\x06\x20\x01(\x08R\x0bIEGNKPBDBGG\x12\
+    \x20\n\x0bOJIGJJLKBHM\x18\x0e\x20\x01(\x08R\x0bOJIGJJLKBHMB\x15\n\x13emu\
+    .lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

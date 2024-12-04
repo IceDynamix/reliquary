@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ReEnterLastElementStageCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ReEnterLastElementStageCsReq.IDIEPEFFGIC)
-    pub IDIEPEFFGIC: u32,
+    // @@protoc_insertion_point(field:ReEnterLastElementStageCsReq.stage_id)
+    pub stage_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ReEnterLastElementStageCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl ReEnterLastElementStageCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IDIEPEFFGIC",
-            |m: &ReEnterLastElementStageCsReq| { &m.IDIEPEFFGIC },
-            |m: &mut ReEnterLastElementStageCsReq| { &mut m.IDIEPEFFGIC },
+            "stage_id",
+            |m: &ReEnterLastElementStageCsReq| { &m.stage_id },
+            |m: &mut ReEnterLastElementStageCsReq| { &mut m.stage_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ReEnterLastElementStageCsReq>(
             "ReEnterLastElementStageCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for ReEnterLastElementStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.IDIEPEFFGIC = is.read_uint32()?;
+                16 => {
+                    self.stage_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for ReEnterLastElementStageCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IDIEPEFFGIC != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.IDIEPEFFGIC);
+        if self.stage_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.stage_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for ReEnterLastElementStageCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IDIEPEFFGIC != 0 {
-            os.write_uint32(10, self.IDIEPEFFGIC)?;
+        if self.stage_id != 0 {
+            os.write_uint32(2, self.stage_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for ReEnterLastElementStageCsReq {
     }
 
     fn clear(&mut self) {
-        self.IDIEPEFFGIC = 0;
+        self.stage_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ReEnterLastElementStageCsReq {
         static instance: ReEnterLastElementStageCsReq = ReEnterLastElementStageCsReq {
-            IDIEPEFFGIC: 0,
+            stage_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for ReEnterLastElementStageCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"ReEnterLastElementStageCsReq.proto\"@\n\x1cReEnterLastElementStageCs\
-    Req\x12\x20\n\x0bIDIEPEFFGIC\x18\n\x20\x01(\rR\x0bIDIEPEFFGICb\x06proto3\
+    \n\"ReEnterLastElementStageCsReq.proto\"9\n\x1cReEnterLastElementStageCs\
+    Req\x12\x19\n\x08stage_id\x18\x02\x20\x01(\rR\x07stageIdB\x15\n\x13emu.l\
+    unarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

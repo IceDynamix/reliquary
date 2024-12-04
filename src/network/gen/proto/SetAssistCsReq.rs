@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetAssistCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetAssistCsReq.avatar_id)
-    pub avatar_id: u32,
-    // @@protoc_insertion_point(field:SetAssistCsReq.uid)
-    pub uid: u32,
+    // @@protoc_insertion_point(field:SetAssistCsReq.LNCNOFOEHAA)
+    pub LNCNOFOEHAA: u32,
+    // @@protoc_insertion_point(field:SetAssistCsReq.DHPDHGHAEOP)
+    pub DHPDHGHAEOP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SetAssistCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl SetAssistCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "avatar_id",
-            |m: &SetAssistCsReq| { &m.avatar_id },
-            |m: &mut SetAssistCsReq| { &mut m.avatar_id },
+            "LNCNOFOEHAA",
+            |m: &SetAssistCsReq| { &m.LNCNOFOEHAA },
+            |m: &mut SetAssistCsReq| { &mut m.LNCNOFOEHAA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "uid",
-            |m: &SetAssistCsReq| { &m.uid },
-            |m: &mut SetAssistCsReq| { &mut m.uid },
+            "DHPDHGHAEOP",
+            |m: &SetAssistCsReq| { &m.DHPDHGHAEOP },
+            |m: &mut SetAssistCsReq| { &mut m.DHPDHGHAEOP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetAssistCsReq>(
             "SetAssistCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for SetAssistCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.avatar_id = is.read_uint32()?;
+                80 => {
+                    self.LNCNOFOEHAA = is.read_uint32()?;
                 },
-                40 => {
-                    self.uid = is.read_uint32()?;
+                112 => {
+                    self.DHPDHGHAEOP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for SetAssistCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.avatar_id);
+        if self.LNCNOFOEHAA != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.LNCNOFOEHAA);
         }
-        if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.uid);
+        if self.DHPDHGHAEOP != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.DHPDHGHAEOP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for SetAssistCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.avatar_id != 0 {
-            os.write_uint32(11, self.avatar_id)?;
+        if self.LNCNOFOEHAA != 0 {
+            os.write_uint32(10, self.LNCNOFOEHAA)?;
         }
-        if self.uid != 0 {
-            os.write_uint32(5, self.uid)?;
+        if self.DHPDHGHAEOP != 0 {
+            os.write_uint32(14, self.DHPDHGHAEOP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for SetAssistCsReq {
     }
 
     fn clear(&mut self) {
-        self.avatar_id = 0;
-        self.uid = 0;
+        self.LNCNOFOEHAA = 0;
+        self.DHPDHGHAEOP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetAssistCsReq {
         static instance: SetAssistCsReq = SetAssistCsReq {
-            avatar_id: 0,
-            uid: 0,
+            LNCNOFOEHAA: 0,
+            DHPDHGHAEOP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for SetAssistCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14SetAssistCsReq.proto\"?\n\x0eSetAssistCsReq\x12\x1b\n\tavatar_id\
-    \x18\x0b\x20\x01(\rR\x08avatarId\x12\x10\n\x03uid\x18\x05\x20\x01(\rR\
-    \x03uidb\x06proto3\
+    \n\x14SetAssistCsReq.proto\"T\n\x0eSetAssistCsReq\x12\x20\n\x0bLNCNOFOEH\
+    AA\x18\n\x20\x01(\rR\x0bLNCNOFOEHAA\x12\x20\n\x0bDHPDHGHAEOP\x18\x0e\x20\
+    \x01(\rR\x0bDHPDHGHAEOPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFightFestDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetFightFestDataScRsp.FILMAOEBILH)
-    pub FILMAOEBILH: u32,
-    // @@protoc_insertion_point(field:GetFightFestDataScRsp.JJIPJBEAJIH)
-    pub JJIPJBEAJIH: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetFightFestDataScRsp.ANGJEBLFAHN)
-    pub ANGJEBLFAHN: u32,
-    // @@protoc_insertion_point(field:GetFightFestDataScRsp.AHBEKNBEGDL)
-    pub AHBEKNBEGDL: ::std::vec::Vec<super::JMDAEBFHNAI::JMDAEBFHNAI>,
-    // @@protoc_insertion_point(field:GetFightFestDataScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetFightFestDataScRsp.OFAGGKBMPJN)
+    pub OFAGGKBMPJN: u32,
+    // @@protoc_insertion_point(field:GetFightFestDataScRsp.PPNKHDECJBP)
+    pub PPNKHDECJBP: ::std::vec::Vec<super::FFDCMAMKPAB::FFDCMAMKPAB>,
+    // @@protoc_insertion_point(field:GetFightFestDataScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:GetFightFestDataScRsp.ODGNMLBOEAK)
+    pub ODGNMLBOEAK: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetFightFestDataScRsp.HOJJFBAEBDA)
+    pub HOJJFBAEBDA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetFightFestDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,29 +59,29 @@ impl GetFightFestDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FILMAOEBILH",
-            |m: &GetFightFestDataScRsp| { &m.FILMAOEBILH },
-            |m: &mut GetFightFestDataScRsp| { &mut m.FILMAOEBILH },
+            "OFAGGKBMPJN",
+            |m: &GetFightFestDataScRsp| { &m.OFAGGKBMPJN },
+            |m: &mut GetFightFestDataScRsp| { &mut m.OFAGGKBMPJN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JJIPJBEAJIH",
-            |m: &GetFightFestDataScRsp| { &m.JJIPJBEAJIH },
-            |m: &mut GetFightFestDataScRsp| { &mut m.JJIPJBEAJIH },
+            "PPNKHDECJBP",
+            |m: &GetFightFestDataScRsp| { &m.PPNKHDECJBP },
+            |m: &mut GetFightFestDataScRsp| { &mut m.PPNKHDECJBP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ANGJEBLFAHN",
-            |m: &GetFightFestDataScRsp| { &m.ANGJEBLFAHN },
-            |m: &mut GetFightFestDataScRsp| { &mut m.ANGJEBLFAHN },
+            "ADADHIHDHJC",
+            |m: &GetFightFestDataScRsp| { &m.ADADHIHDHJC },
+            |m: &mut GetFightFestDataScRsp| { &mut m.ADADHIHDHJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "AHBEKNBEGDL",
-            |m: &GetFightFestDataScRsp| { &m.AHBEKNBEGDL },
-            |m: &mut GetFightFestDataScRsp| { &mut m.AHBEKNBEGDL },
+            "ODGNMLBOEAK",
+            |m: &GetFightFestDataScRsp| { &m.ODGNMLBOEAK },
+            |m: &mut GetFightFestDataScRsp| { &mut m.ODGNMLBOEAK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetFightFestDataScRsp| { &m.retcode },
-            |m: &mut GetFightFestDataScRsp| { &mut m.retcode },
+            "HOJJFBAEBDA",
+            |m: &GetFightFestDataScRsp| { &m.HOJJFBAEBDA },
+            |m: &mut GetFightFestDataScRsp| { &mut m.HOJJFBAEBDA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetFightFestDataScRsp>(
             "GetFightFestDataScRsp",
@@ -101,23 +101,23 @@ impl ::protobuf::Message for GetFightFestDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.FILMAOEBILH = is.read_uint32()?;
+                72 => {
+                    self.OFAGGKBMPJN = is.read_uint32()?;
                 },
-                82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.JJIPJBEAJIH)?;
+                58 => {
+                    self.PPNKHDECJBP.push(is.read_message()?);
                 },
-                80 => {
-                    self.JJIPJBEAJIH.push(is.read_uint32()?);
+                96 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                32 => {
-                    self.ANGJEBLFAHN = is.read_uint32()?;
+                10 => {
+                    is.read_repeated_packed_uint32_into(&mut self.ODGNMLBOEAK)?;
                 },
-                42 => {
-                    self.AHBEKNBEGDL.push(is.read_message()?);
+                8 => {
+                    self.ODGNMLBOEAK.push(is.read_uint32()?);
                 },
-                56 => {
-                    self.retcode = is.read_uint32()?;
+                48 => {
+                    self.HOJJFBAEBDA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -131,21 +131,21 @@ impl ::protobuf::Message for GetFightFestDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FILMAOEBILH != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.FILMAOEBILH);
+        if self.OFAGGKBMPJN != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.OFAGGKBMPJN);
         }
-        for value in &self.JJIPJBEAJIH {
-            my_size += ::protobuf::rt::uint32_size(10, *value);
-        };
-        if self.ANGJEBLFAHN != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.ANGJEBLFAHN);
-        }
-        for value in &self.AHBEKNBEGDL {
+        for value in &self.PPNKHDECJBP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.ADADHIHDHJC);
+        }
+        for value in &self.ODGNMLBOEAK {
+            my_size += ::protobuf::rt::uint32_size(1, *value);
+        };
+        if self.HOJJFBAEBDA != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.HOJJFBAEBDA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -153,20 +153,20 @@ impl ::protobuf::Message for GetFightFestDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FILMAOEBILH != 0 {
-            os.write_uint32(8, self.FILMAOEBILH)?;
+        if self.OFAGGKBMPJN != 0 {
+            os.write_uint32(9, self.OFAGGKBMPJN)?;
         }
-        for v in &self.JJIPJBEAJIH {
-            os.write_uint32(10, *v)?;
+        for v in &self.PPNKHDECJBP {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
-        if self.ANGJEBLFAHN != 0 {
-            os.write_uint32(4, self.ANGJEBLFAHN)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(12, self.ADADHIHDHJC)?;
         }
-        for v in &self.AHBEKNBEGDL {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        for v in &self.ODGNMLBOEAK {
+            os.write_uint32(1, *v)?;
         };
-        if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+        if self.HOJJFBAEBDA != 0 {
+            os.write_uint32(6, self.HOJJFBAEBDA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,21 +185,21 @@ impl ::protobuf::Message for GetFightFestDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.FILMAOEBILH = 0;
-        self.JJIPJBEAJIH.clear();
-        self.ANGJEBLFAHN = 0;
-        self.AHBEKNBEGDL.clear();
-        self.retcode = 0;
+        self.OFAGGKBMPJN = 0;
+        self.PPNKHDECJBP.clear();
+        self.ADADHIHDHJC = 0;
+        self.ODGNMLBOEAK.clear();
+        self.HOJJFBAEBDA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFightFestDataScRsp {
         static instance: GetFightFestDataScRsp = GetFightFestDataScRsp {
-            FILMAOEBILH: 0,
-            JJIPJBEAJIH: ::std::vec::Vec::new(),
-            ANGJEBLFAHN: 0,
-            AHBEKNBEGDL: ::std::vec::Vec::new(),
-            retcode: 0,
+            OFAGGKBMPJN: 0,
+            PPNKHDECJBP: ::std::vec::Vec::new(),
+            ADADHIHDHJC: 0,
+            ODGNMLBOEAK: ::std::vec::Vec::new(),
+            HOJJFBAEBDA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -224,12 +224,12 @@ impl ::protobuf::reflect::ProtobufValue for GetFightFestDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bGetFightFestDataScRsp.proto\x1a\x11JMDAEBFHNAI.proto\"\xc7\x01\n\
-    \x15GetFightFestDataScRsp\x12\x20\n\x0bFILMAOEBILH\x18\x08\x20\x01(\rR\
-    \x0bFILMAOEBILH\x12\x20\n\x0bJJIPJBEAJIH\x18\n\x20\x03(\rR\x0bJJIPJBEAJI\
-    H\x12\x20\n\x0bANGJEBLFAHN\x18\x04\x20\x01(\rR\x0bANGJEBLFAHN\x12.\n\x0b\
-    AHBEKNBEGDL\x18\x05\x20\x03(\x0b2\x0c.JMDAEBFHNAIR\x0bAHBEKNBEGDL\x12\
-    \x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x1bGetFightFestDataScRsp.proto\x1a\x11FFDCMAMKPAB.proto\"\xcf\x01\n\
+    \x15GetFightFestDataScRsp\x12\x20\n\x0bOFAGGKBMPJN\x18\t\x20\x01(\rR\x0b\
+    OFAGGKBMPJN\x12.\n\x0bPPNKHDECJBP\x18\x07\x20\x03(\x0b2\x0c.FFDCMAMKPABR\
+    \x0bPPNKHDECJBP\x12\x20\n\x0bADADHIHDHJC\x18\x0c\x20\x01(\rR\x0bADADHIHD\
+    HJC\x12\x20\n\x0bODGNMLBOEAK\x18\x01\x20\x03(\rR\x0bODGNMLBOEAK\x12\x20\
+    \n\x0bHOJJFBAEBDA\x18\x06\x20\x01(\rR\x0bHOJJFBAEBDAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -247,7 +247,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::JMDAEBFHNAI::file_descriptor().clone());
+            deps.push(super::FFDCMAMKPAB::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetFightFestDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

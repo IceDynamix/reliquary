@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SharePunkLordMonsterScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SharePunkLordMonsterScRsp.HFMDIBOEOKN)
-    pub HFMDIBOEOKN: u32,
-    // @@protoc_insertion_point(field:SharePunkLordMonsterScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:SharePunkLordMonsterScRsp.ACFOMFGMNEO)
-    pub ACFOMFGMNEO: ::protobuf::EnumOrUnknown<super::PunkLordShareType::PunkLordShareType>,
-    // @@protoc_insertion_point(field:SharePunkLordMonsterScRsp.uid)
-    pub uid: u32,
+    // @@protoc_insertion_point(field:SharePunkLordMonsterScRsp.LNCNOFOEHAA)
+    pub LNCNOFOEHAA: u32,
+    // @@protoc_insertion_point(field:SharePunkLordMonsterScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:SharePunkLordMonsterScRsp.APJBCNFNDHL)
+    pub APJBCNFNDHL: ::protobuf::EnumOrUnknown<super::PunkLordShareType::PunkLordShareType>,
+    // @@protoc_insertion_point(field:SharePunkLordMonsterScRsp.FBMGLKNDECD)
+    pub FBMGLKNDECD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SharePunkLordMonsterScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl SharePunkLordMonsterScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HFMDIBOEOKN",
-            |m: &SharePunkLordMonsterScRsp| { &m.HFMDIBOEOKN },
-            |m: &mut SharePunkLordMonsterScRsp| { &mut m.HFMDIBOEOKN },
+            "LNCNOFOEHAA",
+            |m: &SharePunkLordMonsterScRsp| { &m.LNCNOFOEHAA },
+            |m: &mut SharePunkLordMonsterScRsp| { &mut m.LNCNOFOEHAA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &SharePunkLordMonsterScRsp| { &m.retcode },
-            |m: &mut SharePunkLordMonsterScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &SharePunkLordMonsterScRsp| { &m.ADADHIHDHJC },
+            |m: &mut SharePunkLordMonsterScRsp| { &mut m.ADADHIHDHJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ACFOMFGMNEO",
-            |m: &SharePunkLordMonsterScRsp| { &m.ACFOMFGMNEO },
-            |m: &mut SharePunkLordMonsterScRsp| { &mut m.ACFOMFGMNEO },
+            "APJBCNFNDHL",
+            |m: &SharePunkLordMonsterScRsp| { &m.APJBCNFNDHL },
+            |m: &mut SharePunkLordMonsterScRsp| { &mut m.APJBCNFNDHL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "uid",
-            |m: &SharePunkLordMonsterScRsp| { &m.uid },
-            |m: &mut SharePunkLordMonsterScRsp| { &mut m.uid },
+            "FBMGLKNDECD",
+            |m: &SharePunkLordMonsterScRsp| { &m.FBMGLKNDECD },
+            |m: &mut SharePunkLordMonsterScRsp| { &mut m.FBMGLKNDECD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SharePunkLordMonsterScRsp>(
             "SharePunkLordMonsterScRsp",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for SharePunkLordMonsterScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.HFMDIBOEOKN = is.read_uint32()?;
+                88 => {
+                    self.LNCNOFOEHAA = is.read_uint32()?;
+                },
+                24 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
                 104 => {
-                    self.retcode = is.read_uint32()?;
+                    self.APJBCNFNDHL = is.read_enum_or_unknown()?;
                 },
-                40 => {
-                    self.ACFOMFGMNEO = is.read_enum_or_unknown()?;
-                },
-                8 => {
-                    self.uid = is.read_uint32()?;
+                48 => {
+                    self.FBMGLKNDECD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,17 +118,17 @@ impl ::protobuf::Message for SharePunkLordMonsterScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HFMDIBOEOKN != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.HFMDIBOEOKN);
+        if self.LNCNOFOEHAA != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.LNCNOFOEHAA);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.ADADHIHDHJC);
         }
-        if self.ACFOMFGMNEO != ::protobuf::EnumOrUnknown::new(super::PunkLordShareType::PunkLordShareType::PUNK_LORD_SHARE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(5, self.ACFOMFGMNEO.value());
+        if self.APJBCNFNDHL != ::protobuf::EnumOrUnknown::new(super::PunkLordShareType::PunkLordShareType::PUNK_LORD_SHARE_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(13, self.APJBCNFNDHL.value());
         }
-        if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.uid);
+        if self.FBMGLKNDECD != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.FBMGLKNDECD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for SharePunkLordMonsterScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HFMDIBOEOKN != 0 {
-            os.write_uint32(14, self.HFMDIBOEOKN)?;
+        if self.LNCNOFOEHAA != 0 {
+            os.write_uint32(11, self.LNCNOFOEHAA)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(3, self.ADADHIHDHJC)?;
         }
-        if self.ACFOMFGMNEO != ::protobuf::EnumOrUnknown::new(super::PunkLordShareType::PunkLordShareType::PUNK_LORD_SHARE_TYPE_NONE) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.ACFOMFGMNEO))?;
+        if self.APJBCNFNDHL != ::protobuf::EnumOrUnknown::new(super::PunkLordShareType::PunkLordShareType::PUNK_LORD_SHARE_TYPE_NONE) {
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.APJBCNFNDHL))?;
         }
-        if self.uid != 0 {
-            os.write_uint32(1, self.uid)?;
+        if self.FBMGLKNDECD != 0 {
+            os.write_uint32(6, self.FBMGLKNDECD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for SharePunkLordMonsterScRsp {
     }
 
     fn clear(&mut self) {
-        self.HFMDIBOEOKN = 0;
-        self.retcode = 0;
-        self.ACFOMFGMNEO = ::protobuf::EnumOrUnknown::new(super::PunkLordShareType::PunkLordShareType::PUNK_LORD_SHARE_TYPE_NONE);
-        self.uid = 0;
+        self.LNCNOFOEHAA = 0;
+        self.ADADHIHDHJC = 0;
+        self.APJBCNFNDHL = ::protobuf::EnumOrUnknown::new(super::PunkLordShareType::PunkLordShareType::PUNK_LORD_SHARE_TYPE_NONE);
+        self.FBMGLKNDECD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SharePunkLordMonsterScRsp {
         static instance: SharePunkLordMonsterScRsp = SharePunkLordMonsterScRsp {
-            HFMDIBOEOKN: 0,
-            retcode: 0,
-            ACFOMFGMNEO: ::protobuf::EnumOrUnknown::from_i32(0),
-            uid: 0,
+            LNCNOFOEHAA: 0,
+            ADADHIHDHJC: 0,
+            APJBCNFNDHL: ::protobuf::EnumOrUnknown::from_i32(0),
+            FBMGLKNDECD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for SharePunkLordMonsterScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fSharePunkLordMonsterScRsp.proto\x1a\x17PunkLordShareType.proto\"\
-    \x9f\x01\n\x19SharePunkLordMonsterScRsp\x12\x20\n\x0bHFMDIBOEOKN\x18\x0e\
-    \x20\x01(\rR\x0bHFMDIBOEOKN\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07re\
-    tcode\x124\n\x0bACFOMFGMNEO\x18\x05\x20\x01(\x0e2\x12.PunkLordShareTypeR\
-    \x0bACFOMFGMNEO\x12\x10\n\x03uid\x18\x01\x20\x01(\rR\x03uidb\x06proto3\
+    \xb7\x01\n\x19SharePunkLordMonsterScRsp\x12\x20\n\x0bLNCNOFOEHAA\x18\x0b\
+    \x20\x01(\rR\x0bLNCNOFOEHAA\x12\x20\n\x0bADADHIHDHJC\x18\x03\x20\x01(\rR\
+    \x0bADADHIHDHJC\x124\n\x0bAPJBCNFNDHL\x18\r\x20\x01(\x0e2\x12.PunkLordSh\
+    areTypeR\x0bAPJBCNFNDHL\x12\x20\n\x0bFBMGLKNDECD\x18\x06\x20\x01(\rR\x0b\
+    FBMGLKNDECDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

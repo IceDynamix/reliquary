@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnhanceRogueBuffCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EnhanceRogueBuffCsReq.NOPAKOCNGGA)
-    pub NOPAKOCNGGA: u32,
+    // @@protoc_insertion_point(field:EnhanceRogueBuffCsReq.maze_buff_id)
+    pub maze_buff_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EnhanceRogueBuffCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl EnhanceRogueBuffCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NOPAKOCNGGA",
-            |m: &EnhanceRogueBuffCsReq| { &m.NOPAKOCNGGA },
-            |m: &mut EnhanceRogueBuffCsReq| { &mut m.NOPAKOCNGGA },
+            "maze_buff_id",
+            |m: &EnhanceRogueBuffCsReq| { &m.maze_buff_id },
+            |m: &mut EnhanceRogueBuffCsReq| { &mut m.maze_buff_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnhanceRogueBuffCsReq>(
             "EnhanceRogueBuffCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for EnhanceRogueBuffCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.NOPAKOCNGGA = is.read_uint32()?;
+                80 => {
+                    self.maze_buff_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for EnhanceRogueBuffCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NOPAKOCNGGA != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.NOPAKOCNGGA);
+        if self.maze_buff_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.maze_buff_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for EnhanceRogueBuffCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NOPAKOCNGGA != 0 {
-            os.write_uint32(11, self.NOPAKOCNGGA)?;
+        if self.maze_buff_id != 0 {
+            os.write_uint32(10, self.maze_buff_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for EnhanceRogueBuffCsReq {
     }
 
     fn clear(&mut self) {
-        self.NOPAKOCNGGA = 0;
+        self.maze_buff_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnhanceRogueBuffCsReq {
         static instance: EnhanceRogueBuffCsReq = EnhanceRogueBuffCsReq {
-            NOPAKOCNGGA: 0,
+            maze_buff_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for EnhanceRogueBuffCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bEnhanceRogueBuffCsReq.proto\"9\n\x15EnhanceRogueBuffCsReq\x12\x20\
-    \n\x0bNOPAKOCNGGA\x18\x0b\x20\x01(\rR\x0bNOPAKOCNGGAb\x06proto3\
+    \n\x0cmaze_buff_id\x18\n\x20\x01(\rR\nmazeBuffIdB\x15\n\x13emu.lunarcore\
+    .protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

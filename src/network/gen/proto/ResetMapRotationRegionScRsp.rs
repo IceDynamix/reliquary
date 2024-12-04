@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ResetMapRotationRegionScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ResetMapRotationRegionScRsp.ECKDFNEOBDC)
-    pub ECKDFNEOBDC: u32,
-    // @@protoc_insertion_point(field:ResetMapRotationRegionScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:ResetMapRotationRegionScRsp.JFEMBGKFAJE)
-    pub JFEMBGKFAJE: ::protobuf::MessageField<super::IMLDMJECKLG::IMLDMJECKLG>,
+    // @@protoc_insertion_point(field:ResetMapRotationRegionScRsp.HPDCDPEIAHP)
+    pub HPDCDPEIAHP: u32,
+    // @@protoc_insertion_point(field:ResetMapRotationRegionScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:ResetMapRotationRegionScRsp.HDMFHOPNPAI)
+    pub HDMFHOPNPAI: ::protobuf::MessageField<super::IPDPIAGBMNO::IPDPIAGBMNO>,
     // special fields
     // @@protoc_insertion_point(special_field:ResetMapRotationRegionScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl ResetMapRotationRegionScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ECKDFNEOBDC",
-            |m: &ResetMapRotationRegionScRsp| { &m.ECKDFNEOBDC },
-            |m: &mut ResetMapRotationRegionScRsp| { &mut m.ECKDFNEOBDC },
+            "HPDCDPEIAHP",
+            |m: &ResetMapRotationRegionScRsp| { &m.HPDCDPEIAHP },
+            |m: &mut ResetMapRotationRegionScRsp| { &mut m.HPDCDPEIAHP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &ResetMapRotationRegionScRsp| { &m.retcode },
-            |m: &mut ResetMapRotationRegionScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &ResetMapRotationRegionScRsp| { &m.ADADHIHDHJC },
+            |m: &mut ResetMapRotationRegionScRsp| { &mut m.ADADHIHDHJC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IMLDMJECKLG::IMLDMJECKLG>(
-            "JFEMBGKFAJE",
-            |m: &ResetMapRotationRegionScRsp| { &m.JFEMBGKFAJE },
-            |m: &mut ResetMapRotationRegionScRsp| { &mut m.JFEMBGKFAJE },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IPDPIAGBMNO::IPDPIAGBMNO>(
+            "HDMFHOPNPAI",
+            |m: &ResetMapRotationRegionScRsp| { &m.HDMFHOPNPAI },
+            |m: &mut ResetMapRotationRegionScRsp| { &mut m.HDMFHOPNPAI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ResetMapRotationRegionScRsp>(
             "ResetMapRotationRegionScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for ResetMapRotationRegionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.ECKDFNEOBDC = is.read_uint32()?;
+                72 => {
+                    self.HPDCDPEIAHP = is.read_uint32()?;
                 },
-                80 => {
-                    self.retcode = is.read_uint32()?;
+                48 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JFEMBGKFAJE)?;
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HDMFHOPNPAI)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for ResetMapRotationRegionScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ECKDFNEOBDC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.ECKDFNEOBDC);
+        if self.HPDCDPEIAHP != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.HPDCDPEIAHP);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.ADADHIHDHJC);
         }
-        if let Some(v) = self.JFEMBGKFAJE.as_ref() {
+        if let Some(v) = self.HDMFHOPNPAI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -124,14 +124,14 @@ impl ::protobuf::Message for ResetMapRotationRegionScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ECKDFNEOBDC != 0 {
-            os.write_uint32(5, self.ECKDFNEOBDC)?;
+        if self.HPDCDPEIAHP != 0 {
+            os.write_uint32(9, self.HPDCDPEIAHP)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(6, self.ADADHIHDHJC)?;
         }
-        if let Some(v) = self.JFEMBGKFAJE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        if let Some(v) = self.HDMFHOPNPAI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for ResetMapRotationRegionScRsp {
     }
 
     fn clear(&mut self) {
-        self.ECKDFNEOBDC = 0;
-        self.retcode = 0;
-        self.JFEMBGKFAJE.clear();
+        self.HPDCDPEIAHP = 0;
+        self.ADADHIHDHJC = 0;
+        self.HDMFHOPNPAI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ResetMapRotationRegionScRsp {
         static instance: ResetMapRotationRegionScRsp = ResetMapRotationRegionScRsp {
-            ECKDFNEOBDC: 0,
-            retcode: 0,
-            JFEMBGKFAJE: ::protobuf::MessageField::none(),
+            HPDCDPEIAHP: 0,
+            ADADHIHDHJC: 0,
+            HDMFHOPNPAI: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for ResetMapRotationRegionScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!ResetMapRotationRegionScRsp.proto\x1a\x11IMLDMJECKLG.proto\"\x89\x01\
-    \n\x1bResetMapRotationRegionScRsp\x12\x20\n\x0bECKDFNEOBDC\x18\x05\x20\
-    \x01(\rR\x0bECKDFNEOBDC\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcod\
-    e\x12.\n\x0bJFEMBGKFAJE\x18\x06\x20\x01(\x0b2\x0c.IMLDMJECKLGR\x0bJFEMBG\
-    KFAJEb\x06proto3\
+    \n!ResetMapRotationRegionScRsp.proto\x1a\x11IPDPIAGBMNO.proto\"\x91\x01\
+    \n\x1bResetMapRotationRegionScRsp\x12\x20\n\x0bHPDCDPEIAHP\x18\t\x20\x01\
+    (\rR\x0bHPDCDPEIAHP\x12\x20\n\x0bADADHIHDHJC\x18\x06\x20\x01(\rR\x0bADAD\
+    HIHDHJC\x12.\n\x0bHDMFHOPNPAI\x18\x0b\x20\x01(\x0b2\x0c.IPDPIAGBMNOR\x0b\
+    HDMFHOPNPAIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::IMLDMJECKLG::file_descriptor().clone());
+            deps.push(super::IPDPIAGBMNO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ResetMapRotationRegionScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

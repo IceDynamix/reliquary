@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeCityShopRewardScRsp {
     // message fields
+    // @@protoc_insertion_point(field:TakeCityShopRewardScRsp.shop_id)
+    pub shop_id: u32,
     // @@protoc_insertion_point(field:TakeCityShopRewardScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:TakeCityShopRewardScRsp.level)
     pub level: u32,
-    // @@protoc_insertion_point(field:TakeCityShopRewardScRsp.shop_id)
-    pub shop_id: u32,
     // @@protoc_insertion_point(field:TakeCityShopRewardScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -56,6 +56,11 @@ impl TakeCityShopRewardScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "shop_id",
+            |m: &TakeCityShopRewardScRsp| { &m.shop_id },
+            |m: &mut TakeCityShopRewardScRsp| { &mut m.shop_id },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "reward",
             |m: &TakeCityShopRewardScRsp| { &m.reward },
@@ -65,11 +70,6 @@ impl TakeCityShopRewardScRsp {
             "level",
             |m: &TakeCityShopRewardScRsp| { &m.level },
             |m: &mut TakeCityShopRewardScRsp| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "shop_id",
-            |m: &TakeCityShopRewardScRsp| { &m.shop_id },
-            |m: &mut TakeCityShopRewardScRsp| { &mut m.shop_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -94,16 +94,16 @@ impl ::protobuf::Message for TakeCityShopRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
-                },
-                120 => {
-                    self.level = is.read_uint32()?;
-                },
-                96 => {
+                32 => {
                     self.shop_id = is.read_uint32()?;
                 },
-                16 => {
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
+                },
+                104 => {
+                    self.level = is.read_uint32()?;
+                },
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -118,18 +118,18 @@ impl ::protobuf::Message for TakeCityShopRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.shop_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.shop_id);
+        }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.level);
-        }
-        if self.shop_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.shop_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.level);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for TakeCityShopRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.shop_id != 0 {
+            os.write_uint32(4, self.shop_id)?;
+        }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if self.level != 0 {
-            os.write_uint32(15, self.level)?;
-        }
-        if self.shop_id != 0 {
-            os.write_uint32(12, self.shop_id)?;
+            os.write_uint32(13, self.level)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,18 +166,18 @@ impl ::protobuf::Message for TakeCityShopRewardScRsp {
     }
 
     fn clear(&mut self) {
+        self.shop_id = 0;
         self.reward.clear();
         self.level = 0;
-        self.shop_id = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeCityShopRewardScRsp {
         static instance: TakeCityShopRewardScRsp = TakeCityShopRewardScRsp {
+            shop_id: 0,
             reward: ::protobuf::MessageField::none(),
             level: 0,
-            shop_id: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -204,9 +204,9 @@ impl ::protobuf::reflect::ProtobufValue for TakeCityShopRewardScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dTakeCityShopRewardScRsp.proto\x1a\x0eItemList.proto\"\x85\x01\n\
-    \x17TakeCityShopRewardScRsp\x12!\n\x06reward\x18\t\x20\x01(\x0b2\t.ItemL\
-    istR\x06reward\x12\x14\n\x05level\x18\x0f\x20\x01(\rR\x05level\x12\x17\n\
-    \x07shop_id\x18\x0c\x20\x01(\rR\x06shopId\x12\x18\n\x07retcode\x18\x02\
+    \x17TakeCityShopRewardScRsp\x12\x17\n\x07shop_id\x18\x04\x20\x01(\rR\x06\
+    shopId\x12!\n\x06reward\x18\x0b\x20\x01(\x0b2\t.ItemListR\x06reward\x12\
+    \x14\n\x05level\x18\r\x20\x01(\rR\x05level\x12\x18\n\x07retcode\x18\n\
     \x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 

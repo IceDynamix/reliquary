@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueDialogueEventParam {
     // message fields
-    // @@protoc_insertion_point(field:RogueDialogueEventParam.arg_id)
-    pub arg_id: u32,
-    // @@protoc_insertion_point(field:RogueDialogueEventParam.int_value)
-    pub int_value: i32,
-    // @@protoc_insertion_point(field:RogueDialogueEventParam.dialogue_event_id)
-    pub dialogue_event_id: u32,
-    // @@protoc_insertion_point(field:RogueDialogueEventParam.is_valid)
-    pub is_valid: bool,
-    // @@protoc_insertion_point(field:RogueDialogueEventParam.ratio)
-    pub ratio: f32,
+    // @@protoc_insertion_point(field:RogueDialogueEventParam.Ratio)
+    pub Ratio: f32,
+    // @@protoc_insertion_point(field:RogueDialogueEventParam.IntValue)
+    pub IntValue: i32,
+    // @@protoc_insertion_point(field:RogueDialogueEventParam.ArgId)
+    pub ArgId: u32,
+    // @@protoc_insertion_point(field:RogueDialogueEventParam.DialogueEventId)
+    pub DialogueEventId: u32,
+    // @@protoc_insertion_point(field:RogueDialogueEventParam.IsValid)
+    pub IsValid: bool,
     // special fields
     // @@protoc_insertion_point(special_field:RogueDialogueEventParam.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,29 +59,29 @@ impl RogueDialogueEventParam {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "arg_id",
-            |m: &RogueDialogueEventParam| { &m.arg_id },
-            |m: &mut RogueDialogueEventParam| { &mut m.arg_id },
+            "Ratio",
+            |m: &RogueDialogueEventParam| { &m.Ratio },
+            |m: &mut RogueDialogueEventParam| { &mut m.Ratio },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "int_value",
-            |m: &RogueDialogueEventParam| { &m.int_value },
-            |m: &mut RogueDialogueEventParam| { &mut m.int_value },
+            "IntValue",
+            |m: &RogueDialogueEventParam| { &m.IntValue },
+            |m: &mut RogueDialogueEventParam| { &mut m.IntValue },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "dialogue_event_id",
-            |m: &RogueDialogueEventParam| { &m.dialogue_event_id },
-            |m: &mut RogueDialogueEventParam| { &mut m.dialogue_event_id },
+            "ArgId",
+            |m: &RogueDialogueEventParam| { &m.ArgId },
+            |m: &mut RogueDialogueEventParam| { &mut m.ArgId },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_valid",
-            |m: &RogueDialogueEventParam| { &m.is_valid },
-            |m: &mut RogueDialogueEventParam| { &mut m.is_valid },
+            "DialogueEventId",
+            |m: &RogueDialogueEventParam| { &m.DialogueEventId },
+            |m: &mut RogueDialogueEventParam| { &mut m.DialogueEventId },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ratio",
-            |m: &RogueDialogueEventParam| { &m.ratio },
-            |m: &mut RogueDialogueEventParam| { &mut m.ratio },
+            "IsValid",
+            |m: &RogueDialogueEventParam| { &m.IsValid },
+            |m: &mut RogueDialogueEventParam| { &mut m.IsValid },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueDialogueEventParam>(
             "RogueDialogueEventParam",
@@ -101,20 +101,20 @@ impl ::protobuf::Message for RogueDialogueEventParam {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.arg_id = is.read_uint32()?;
+                117 => {
+                    self.Ratio = is.read_float()?;
                 },
-                112 => {
-                    self.int_value = is.read_int32()?;
+                104 => {
+                    self.IntValue = is.read_int32()?;
                 },
-                48 => {
-                    self.dialogue_event_id = is.read_uint32()?;
+                72 => {
+                    self.ArgId = is.read_uint32()?;
                 },
-                120 => {
-                    self.is_valid = is.read_bool()?;
+                8 => {
+                    self.DialogueEventId = is.read_uint32()?;
                 },
-                109 => {
-                    self.ratio = is.read_float()?;
+                56 => {
+                    self.IsValid = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,20 +128,20 @@ impl ::protobuf::Message for RogueDialogueEventParam {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.arg_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.arg_id);
-        }
-        if self.int_value != 0 {
-            my_size += ::protobuf::rt::int32_size(14, self.int_value);
-        }
-        if self.dialogue_event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.dialogue_event_id);
-        }
-        if self.is_valid != false {
-            my_size += 1 + 1;
-        }
-        if self.ratio != 0. {
+        if self.Ratio != 0. {
             my_size += 1 + 4;
+        }
+        if self.IntValue != 0 {
+            my_size += ::protobuf::rt::int32_size(13, self.IntValue);
+        }
+        if self.ArgId != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.ArgId);
+        }
+        if self.DialogueEventId != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.DialogueEventId);
+        }
+        if self.IsValid != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for RogueDialogueEventParam {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.arg_id != 0 {
-            os.write_uint32(5, self.arg_id)?;
+        if self.Ratio != 0. {
+            os.write_float(14, self.Ratio)?;
         }
-        if self.int_value != 0 {
-            os.write_int32(14, self.int_value)?;
+        if self.IntValue != 0 {
+            os.write_int32(13, self.IntValue)?;
         }
-        if self.dialogue_event_id != 0 {
-            os.write_uint32(6, self.dialogue_event_id)?;
+        if self.ArgId != 0 {
+            os.write_uint32(9, self.ArgId)?;
         }
-        if self.is_valid != false {
-            os.write_bool(15, self.is_valid)?;
+        if self.DialogueEventId != 0 {
+            os.write_uint32(1, self.DialogueEventId)?;
         }
-        if self.ratio != 0. {
-            os.write_float(13, self.ratio)?;
+        if self.IsValid != false {
+            os.write_bool(7, self.IsValid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for RogueDialogueEventParam {
     }
 
     fn clear(&mut self) {
-        self.arg_id = 0;
-        self.int_value = 0;
-        self.dialogue_event_id = 0;
-        self.is_valid = false;
-        self.ratio = 0.;
+        self.Ratio = 0.;
+        self.IntValue = 0;
+        self.ArgId = 0;
+        self.DialogueEventId = 0;
+        self.IsValid = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueDialogueEventParam {
         static instance: RogueDialogueEventParam = RogueDialogueEventParam {
-            arg_id: 0,
-            int_value: 0,
-            dialogue_event_id: 0,
-            is_valid: false,
-            ratio: 0.,
+            Ratio: 0.,
+            IntValue: 0,
+            ArgId: 0,
+            DialogueEventId: 0,
+            IsValid: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,12 +220,12 @@ impl ::protobuf::reflect::ProtobufValue for RogueDialogueEventParam {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dRogueDialogueEventParam.proto\"\xaa\x01\n\x17RogueDialogueEventPar\
-    am\x12\x15\n\x06arg_id\x18\x05\x20\x01(\rR\x05argId\x12\x1b\n\tint_value\
-    \x18\x0e\x20\x01(\x05R\x08intValue\x12*\n\x11dialogue_event_id\x18\x06\
-    \x20\x01(\rR\x0fdialogueEventId\x12\x19\n\x08is_valid\x18\x0f\x20\x01(\
-    \x08R\x07isValid\x12\x14\n\x05ratio\x18\r\x20\x01(\x02R\x05ratiob\x06pro\
-    to3\
+    \n\x1dRogueDialogueEventParam.proto\"\xa5\x01\n\x17RogueDialogueEventPar\
+    am\x12\x14\n\x05Ratio\x18\x0e\x20\x01(\x02R\x05Ratio\x12\x1a\n\x08IntVal\
+    ue\x18\r\x20\x01(\x05R\x08IntValue\x12\x14\n\x05ArgId\x18\t\x20\x01(\rR\
+    \x05ArgId\x12(\n\x0fDialogueEventId\x18\x01\x20\x01(\rR\x0fDialogueEvent\
+    Id\x12\x18\n\x07IsValid\x18\x07\x20\x01(\x08R\x07IsValidB\x15\n\x13emu.l\
+    unarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

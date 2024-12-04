@@ -25,60 +25,53 @@
 /// of protobuf runtime.
 const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 
-// @@protoc_insertion_point(message:QuitRogueScRsp)
+// @@protoc_insertion_point(message:GetRogueInfoScRsp)
 #[derive(PartialEq,Clone,Default,Debug)]
-pub struct QuitRogueScRsp {
+pub struct GetRogueInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:QuitRogueScRsp.retcode)
+    // @@protoc_insertion_point(field:GetRogueInfoScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:QuitRogueScRsp.GOHKAOJCIDM)
-    pub GOHKAOJCIDM: ::protobuf::MessageField<super::BMIEOHPLAKP::BMIEOHPLAKP>,
-    // @@protoc_insertion_point(field:QuitRogueScRsp.KBIGGOMMGCD)
-    pub KBIGGOMMGCD: ::protobuf::MessageField<super::MKFAIJBCICC::MKFAIJBCICC>,
+    // @@protoc_insertion_point(field:GetRogueInfoScRsp.rogue_info)
+    pub rogue_info: ::protobuf::MessageField<super::RogueInfo::RogueInfo>,
     // special fields
-    // @@protoc_insertion_point(special_field:QuitRogueScRsp.special_fields)
+    // @@protoc_insertion_point(special_field:GetRogueInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
 }
 
-impl<'a> ::std::default::Default for &'a QuitRogueScRsp {
-    fn default() -> &'a QuitRogueScRsp {
-        <QuitRogueScRsp as ::protobuf::Message>::default_instance()
+impl<'a> ::std::default::Default for &'a GetRogueInfoScRsp {
+    fn default() -> &'a GetRogueInfoScRsp {
+        <GetRogueInfoScRsp as ::protobuf::Message>::default_instance()
     }
 }
 
-impl QuitRogueScRsp {
-    pub fn new() -> QuitRogueScRsp {
+impl GetRogueInfoScRsp {
+    pub fn new() -> GetRogueInfoScRsp {
         ::std::default::Default::default()
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
-            |m: &QuitRogueScRsp| { &m.retcode },
-            |m: &mut QuitRogueScRsp| { &mut m.retcode },
+            |m: &GetRogueInfoScRsp| { &m.retcode },
+            |m: &mut GetRogueInfoScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BMIEOHPLAKP::BMIEOHPLAKP>(
-            "GOHKAOJCIDM",
-            |m: &QuitRogueScRsp| { &m.GOHKAOJCIDM },
-            |m: &mut QuitRogueScRsp| { &mut m.GOHKAOJCIDM },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueInfo::RogueInfo>(
+            "rogue_info",
+            |m: &GetRogueInfoScRsp| { &m.rogue_info },
+            |m: &mut GetRogueInfoScRsp| { &mut m.rogue_info },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MKFAIJBCICC::MKFAIJBCICC>(
-            "KBIGGOMMGCD",
-            |m: &QuitRogueScRsp| { &m.KBIGGOMMGCD },
-            |m: &mut QuitRogueScRsp| { &mut m.KBIGGOMMGCD },
-        ));
-        ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<QuitRogueScRsp>(
-            "QuitRogueScRsp",
+        ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetRogueInfoScRsp>(
+            "GetRogueInfoScRsp",
             fields,
             oneofs,
         )
     }
 }
 
-impl ::protobuf::Message for QuitRogueScRsp {
-    const NAME: &'static str = "QuitRogueScRsp";
+impl ::protobuf::Message for GetRogueInfoScRsp {
+    const NAME: &'static str = "GetRogueInfoScRsp";
 
     fn is_initialized(&self) -> bool {
         true
@@ -87,14 +80,11 @@ impl ::protobuf::Message for QuitRogueScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GOHKAOJCIDM)?;
-                },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KBIGGOMMGCD)?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -109,13 +99,9 @@ impl ::protobuf::Message for QuitRogueScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
-        if let Some(v) = self.GOHKAOJCIDM.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.KBIGGOMMGCD.as_ref() {
+        if let Some(v) = self.rogue_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -126,13 +112,10 @@ impl ::protobuf::Message for QuitRogueScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
-        if let Some(v) = self.GOHKAOJCIDM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
-        if let Some(v) = self.KBIGGOMMGCD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if let Some(v) = self.rogue_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -146,51 +129,48 @@ impl ::protobuf::Message for QuitRogueScRsp {
         &mut self.special_fields
     }
 
-    fn new() -> QuitRogueScRsp {
-        QuitRogueScRsp::new()
+    fn new() -> GetRogueInfoScRsp {
+        GetRogueInfoScRsp::new()
     }
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.GOHKAOJCIDM.clear();
-        self.KBIGGOMMGCD.clear();
+        self.rogue_info.clear();
         self.special_fields.clear();
     }
 
-    fn default_instance() -> &'static QuitRogueScRsp {
-        static instance: QuitRogueScRsp = QuitRogueScRsp {
+    fn default_instance() -> &'static GetRogueInfoScRsp {
+        static instance: GetRogueInfoScRsp = GetRogueInfoScRsp {
             retcode: 0,
-            GOHKAOJCIDM: ::protobuf::MessageField::none(),
-            KBIGGOMMGCD: ::protobuf::MessageField::none(),
+            rogue_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
     }
 }
 
-impl ::protobuf::MessageFull for QuitRogueScRsp {
+impl ::protobuf::MessageFull for GetRogueInfoScRsp {
     fn descriptor() -> ::protobuf::reflect::MessageDescriptor {
         static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::MessageDescriptor> = ::protobuf::rt::Lazy::new();
-        descriptor.get(|| file_descriptor().message_by_package_relative_name("QuitRogueScRsp").unwrap()).clone()
+        descriptor.get(|| file_descriptor().message_by_package_relative_name("GetRogueInfoScRsp").unwrap()).clone()
     }
 }
 
-impl ::std::fmt::Display for QuitRogueScRsp {
+impl ::std::fmt::Display for GetRogueInfoScRsp {
     fn fmt(&self, f: &mut ::std::fmt::Formatter<'_>) -> ::std::fmt::Result {
         ::protobuf::text_format::fmt(self, f)
     }
 }
 
-impl ::protobuf::reflect::ProtobufValue for QuitRogueScRsp {
+impl ::protobuf::reflect::ProtobufValue for GetRogueInfoScRsp {
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14QuitRogueScRsp.proto\x1a\x11BMIEOHPLAKP.proto\x1a\x11MKFAIJBCICC.p\
-    roto\"\x8a\x01\n\x0eQuitRogueScRsp\x12\x18\n\x07retcode\x18\x0f\x20\x01(\
-    \rR\x07retcode\x12.\n\x0bGOHKAOJCIDM\x18\x07\x20\x01(\x0b2\x0c.BMIEOHPLA\
-    KPR\x0bGOHKAOJCIDM\x12.\n\x0bKBIGGOMMGCD\x18\n\x20\x01(\x0b2\x0c.MKFAIJB\
-    CICCR\x0bKBIGGOMMGCDb\x06proto3\
+    \n\x14QuitRogueScRsp.proto\x1a\x0fRogueInfo.proto\x1a\x15RogueFinishInfo\
+    .proto\"X\n\x11GetRogueInfoScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\r\
+    R\x07retcode\x12)\n\nrogue_info\x18\x04\x20\x01(\x0b2\n.RogueInfoR\trogu\
+    eInfoB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -208,10 +188,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::BMIEOHPLAKP::file_descriptor().clone());
-            deps.push(super::MKFAIJBCICC::file_descriptor().clone());
+            deps.push(super::RogueInfo::file_descriptor().clone());
+            deps.push(super::RogueFinishInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
-            messages.push(QuitRogueScRsp::generated_message_descriptor_data());
+            messages.push(GetRogueInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);
             ::protobuf::reflect::GeneratedFileDescriptor::new_generated(
                 file_descriptor_proto(),

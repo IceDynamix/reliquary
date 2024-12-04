@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EntityBindPropCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EntityBindPropCsReq.AGJMAAKNJMM)
-    pub AGJMAAKNJMM: bool,
-    // @@protoc_insertion_point(field:EntityBindPropCsReq.JFEMBGKFAJE)
-    pub JFEMBGKFAJE: ::protobuf::MessageField<super::IMLDMJECKLG::IMLDMJECKLG>,
+    // @@protoc_insertion_point(field:EntityBindPropCsReq.PHMCEKDLHBH)
+    pub PHMCEKDLHBH: bool,
+    // @@protoc_insertion_point(field:EntityBindPropCsReq.HDMFHOPNPAI)
+    pub HDMFHOPNPAI: ::protobuf::MessageField<super::IPDPIAGBMNO::IPDPIAGBMNO>,
     // special fields
     // @@protoc_insertion_point(special_field:EntityBindPropCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl EntityBindPropCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AGJMAAKNJMM",
-            |m: &EntityBindPropCsReq| { &m.AGJMAAKNJMM },
-            |m: &mut EntityBindPropCsReq| { &mut m.AGJMAAKNJMM },
+            "PHMCEKDLHBH",
+            |m: &EntityBindPropCsReq| { &m.PHMCEKDLHBH },
+            |m: &mut EntityBindPropCsReq| { &mut m.PHMCEKDLHBH },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IMLDMJECKLG::IMLDMJECKLG>(
-            "JFEMBGKFAJE",
-            |m: &EntityBindPropCsReq| { &m.JFEMBGKFAJE },
-            |m: &mut EntityBindPropCsReq| { &mut m.JFEMBGKFAJE },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IPDPIAGBMNO::IPDPIAGBMNO>(
+            "HDMFHOPNPAI",
+            |m: &EntityBindPropCsReq| { &m.HDMFHOPNPAI },
+            |m: &mut EntityBindPropCsReq| { &mut m.HDMFHOPNPAI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EntityBindPropCsReq>(
             "EntityBindPropCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for EntityBindPropCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.AGJMAAKNJMM = is.read_bool()?;
+                24 => {
+                    self.PHMCEKDLHBH = is.read_bool()?;
                 },
                 42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JFEMBGKFAJE)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HDMFHOPNPAI)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for EntityBindPropCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AGJMAAKNJMM != false {
+        if self.PHMCEKDLHBH != false {
             my_size += 1 + 1;
         }
-        if let Some(v) = self.JFEMBGKFAJE.as_ref() {
+        if let Some(v) = self.HDMFHOPNPAI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,10 +111,10 @@ impl ::protobuf::Message for EntityBindPropCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AGJMAAKNJMM != false {
-            os.write_bool(1, self.AGJMAAKNJMM)?;
+        if self.PHMCEKDLHBH != false {
+            os.write_bool(3, self.PHMCEKDLHBH)?;
         }
-        if let Some(v) = self.JFEMBGKFAJE.as_ref() {
+        if let Some(v) = self.HDMFHOPNPAI.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -134,15 +134,15 @@ impl ::protobuf::Message for EntityBindPropCsReq {
     }
 
     fn clear(&mut self) {
-        self.AGJMAAKNJMM = false;
-        self.JFEMBGKFAJE.clear();
+        self.PHMCEKDLHBH = false;
+        self.HDMFHOPNPAI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EntityBindPropCsReq {
         static instance: EntityBindPropCsReq = EntityBindPropCsReq {
-            AGJMAAKNJMM: false,
-            JFEMBGKFAJE: ::protobuf::MessageField::none(),
+            PHMCEKDLHBH: false,
+            HDMFHOPNPAI: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for EntityBindPropCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19EntityBindPropCsReq.proto\x1a\x11IMLDMJECKLG.proto\"g\n\x13EntityB\
-    indPropCsReq\x12\x20\n\x0bAGJMAAKNJMM\x18\x01\x20\x01(\x08R\x0bAGJMAAKNJ\
-    MM\x12.\n\x0bJFEMBGKFAJE\x18\x05\x20\x01(\x0b2\x0c.IMLDMJECKLGR\x0bJFEMB\
-    GKFAJEb\x06proto3\
+    \n\x19EntityBindPropCsReq.proto\x1a\x11IPDPIAGBMNO.proto\"g\n\x13EntityB\
+    indPropCsReq\x12\x20\n\x0bPHMCEKDLHBH\x18\x03\x20\x01(\x08R\x0bPHMCEKDLH\
+    BH\x12.\n\x0bHDMFHOPNPAI\x18\x05\x20\x01(\x0b2\x0c.IPDPIAGBMNOR\x0bHDMFH\
+    OPNPAIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::IMLDMJECKLG::file_descriptor().clone());
+            deps.push(super::IPDPIAGBMNO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EntityBindPropCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

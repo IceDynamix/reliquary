@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ClientObjUploadCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ClientObjUploadCsReq.LFEIOFIHJAB)
-    pub LFEIOFIHJAB: ::std::vec::Vec<u8>,
-    // @@protoc_insertion_point(field:ClientObjUploadCsReq.CANDPJMDEAD)
-    pub CANDPJMDEAD: u32,
+    // @@protoc_insertion_point(field:ClientObjUploadCsReq.IIHMOHBIHKL)
+    pub IIHMOHBIHKL: u32,
+    // @@protoc_insertion_point(field:ClientObjUploadCsReq.FAHECJIMIGN)
+    pub FAHECJIMIGN: ::std::vec::Vec<u8>,
     // special fields
     // @@protoc_insertion_point(special_field:ClientObjUploadCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl ClientObjUploadCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LFEIOFIHJAB",
-            |m: &ClientObjUploadCsReq| { &m.LFEIOFIHJAB },
-            |m: &mut ClientObjUploadCsReq| { &mut m.LFEIOFIHJAB },
+            "IIHMOHBIHKL",
+            |m: &ClientObjUploadCsReq| { &m.IIHMOHBIHKL },
+            |m: &mut ClientObjUploadCsReq| { &mut m.IIHMOHBIHKL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CANDPJMDEAD",
-            |m: &ClientObjUploadCsReq| { &m.CANDPJMDEAD },
-            |m: &mut ClientObjUploadCsReq| { &mut m.CANDPJMDEAD },
+            "FAHECJIMIGN",
+            |m: &ClientObjUploadCsReq| { &m.FAHECJIMIGN },
+            |m: &mut ClientObjUploadCsReq| { &mut m.FAHECJIMIGN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ClientObjUploadCsReq>(
             "ClientObjUploadCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for ClientObjUploadCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.LFEIOFIHJAB = is.read_bytes()?;
+                56 => {
+                    self.IIHMOHBIHKL = is.read_uint32()?;
                 },
-                16 => {
-                    self.CANDPJMDEAD = is.read_uint32()?;
+                122 => {
+                    self.FAHECJIMIGN = is.read_bytes()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for ClientObjUploadCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.LFEIOFIHJAB.is_empty() {
-            my_size += ::protobuf::rt::bytes_size(1, &self.LFEIOFIHJAB);
+        if self.IIHMOHBIHKL != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.IIHMOHBIHKL);
         }
-        if self.CANDPJMDEAD != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.CANDPJMDEAD);
+        if !self.FAHECJIMIGN.is_empty() {
+            my_size += ::protobuf::rt::bytes_size(15, &self.FAHECJIMIGN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for ClientObjUploadCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.LFEIOFIHJAB.is_empty() {
-            os.write_bytes(1, &self.LFEIOFIHJAB)?;
+        if self.IIHMOHBIHKL != 0 {
+            os.write_uint32(7, self.IIHMOHBIHKL)?;
         }
-        if self.CANDPJMDEAD != 0 {
-            os.write_uint32(2, self.CANDPJMDEAD)?;
+        if !self.FAHECJIMIGN.is_empty() {
+            os.write_bytes(15, &self.FAHECJIMIGN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for ClientObjUploadCsReq {
     }
 
     fn clear(&mut self) {
-        self.LFEIOFIHJAB.clear();
-        self.CANDPJMDEAD = 0;
+        self.IIHMOHBIHKL = 0;
+        self.FAHECJIMIGN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ClientObjUploadCsReq {
         static instance: ClientObjUploadCsReq = ClientObjUploadCsReq {
-            LFEIOFIHJAB: ::std::vec::Vec::new(),
-            CANDPJMDEAD: 0,
+            IIHMOHBIHKL: 0,
+            FAHECJIMIGN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for ClientObjUploadCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aClientObjUploadCsReq.proto\"Z\n\x14ClientObjUploadCsReq\x12\x20\n\
-    \x0bLFEIOFIHJAB\x18\x01\x20\x01(\x0cR\x0bLFEIOFIHJAB\x12\x20\n\x0bCANDPJ\
-    MDEAD\x18\x02\x20\x01(\rR\x0bCANDPJMDEADb\x06proto3\
+    \x0bIIHMOHBIHKL\x18\x07\x20\x01(\rR\x0bIIHMOHBIHKL\x12\x20\n\x0bFAHECJIM\
+    IGN\x18\x0f\x20\x01(\x0cR\x0bFAHECJIMIGNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

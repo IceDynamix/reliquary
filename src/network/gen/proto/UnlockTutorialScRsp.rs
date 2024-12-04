@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UnlockTutorialScRsp {
     // message fields
-    // @@protoc_insertion_point(field:UnlockTutorialScRsp.tutorial)
-    pub tutorial: ::protobuf::MessageField<super::Tutorial::Tutorial>,
     // @@protoc_insertion_point(field:UnlockTutorialScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:UnlockTutorialScRsp.tutorial)
+    pub tutorial: ::protobuf::MessageField<super::Tutorial::Tutorial>,
     // special fields
     // @@protoc_insertion_point(special_field:UnlockTutorialScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl UnlockTutorialScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::Tutorial::Tutorial>(
-            "tutorial",
-            |m: &UnlockTutorialScRsp| { &m.tutorial },
-            |m: &mut UnlockTutorialScRsp| { &mut m.tutorial },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &UnlockTutorialScRsp| { &m.retcode },
             |m: &mut UnlockTutorialScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::Tutorial::Tutorial>(
+            "tutorial",
+            |m: &UnlockTutorialScRsp| { &m.tutorial },
+            |m: &mut UnlockTutorialScRsp| { &mut m.tutorial },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UnlockTutorialScRsp>(
             "UnlockTutorialScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for UnlockTutorialScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.tutorial)?;
-                },
-                8 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.tutorial)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,12 +98,12 @@ impl ::protobuf::Message for UnlockTutorialScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+        }
         if let Some(v) = self.tutorial.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for UnlockTutorialScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.tutorial.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
+        }
+        if let Some(v) = self.tutorial.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for UnlockTutorialScRsp {
     }
 
     fn clear(&mut self) {
-        self.tutorial.clear();
         self.retcode = 0;
+        self.tutorial.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UnlockTutorialScRsp {
         static instance: UnlockTutorialScRsp = UnlockTutorialScRsp {
-            tutorial: ::protobuf::MessageField::none(),
             retcode: 0,
+            tutorial: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for UnlockTutorialScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19UnlockTutorialScRsp.proto\x1a\x0eTutorial.proto\"V\n\x13UnlockTuto\
-    rialScRsp\x12%\n\x08tutorial\x18\n\x20\x01(\x0b2\t.TutorialR\x08tutorial\
-    \x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcodeb\x06proto3\
+    rialScRsp\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x12%\n\x08tu\
+    torial\x18\x0b\x20\x01(\x0b2\t.TutorialR\x08tutorialb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

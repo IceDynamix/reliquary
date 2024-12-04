@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RemoveStuffFromAreaScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RemoveStuffFromAreaScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:RemoveStuffFromAreaScRsp.POEDFMELAKE)
-    pub POEDFMELAKE: u32,
+    // @@protoc_insertion_point(field:RemoveStuffFromAreaScRsp.BIIHOBMMFDP)
+    pub BIIHOBMMFDP: u32,
+    // @@protoc_insertion_point(field:RemoveStuffFromAreaScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RemoveStuffFromAreaScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl RemoveStuffFromAreaScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &RemoveStuffFromAreaScRsp| { &m.retcode },
-            |m: &mut RemoveStuffFromAreaScRsp| { &mut m.retcode },
+            "BIIHOBMMFDP",
+            |m: &RemoveStuffFromAreaScRsp| { &m.BIIHOBMMFDP },
+            |m: &mut RemoveStuffFromAreaScRsp| { &mut m.BIIHOBMMFDP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "POEDFMELAKE",
-            |m: &RemoveStuffFromAreaScRsp| { &m.POEDFMELAKE },
-            |m: &mut RemoveStuffFromAreaScRsp| { &mut m.POEDFMELAKE },
+            "ADADHIHDHJC",
+            |m: &RemoveStuffFromAreaScRsp| { &m.ADADHIHDHJC },
+            |m: &mut RemoveStuffFromAreaScRsp| { &mut m.ADADHIHDHJC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RemoveStuffFromAreaScRsp>(
             "RemoveStuffFromAreaScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for RemoveStuffFromAreaScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.retcode = is.read_uint32()?;
+                24 => {
+                    self.BIIHOBMMFDP = is.read_uint32()?;
                 },
-                8 => {
-                    self.POEDFMELAKE = is.read_uint32()?;
+                104 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for RemoveStuffFromAreaScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+        if self.BIIHOBMMFDP != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.BIIHOBMMFDP);
         }
-        if self.POEDFMELAKE != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.POEDFMELAKE);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.ADADHIHDHJC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for RemoveStuffFromAreaScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+        if self.BIIHOBMMFDP != 0 {
+            os.write_uint32(3, self.BIIHOBMMFDP)?;
         }
-        if self.POEDFMELAKE != 0 {
-            os.write_uint32(1, self.POEDFMELAKE)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(13, self.ADADHIHDHJC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for RemoveStuffFromAreaScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.POEDFMELAKE = 0;
+        self.BIIHOBMMFDP = 0;
+        self.ADADHIHDHJC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RemoveStuffFromAreaScRsp {
         static instance: RemoveStuffFromAreaScRsp = RemoveStuffFromAreaScRsp {
-            retcode: 0,
-            POEDFMELAKE: 0,
+            BIIHOBMMFDP: 0,
+            ADADHIHDHJC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for RemoveStuffFromAreaScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eRemoveStuffFromAreaScRsp.proto\"V\n\x18RemoveStuffFromAreaScRsp\
-    \x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12\x20\n\x0bPOEDFM\
-    ELAKE\x18\x01\x20\x01(\rR\x0bPOEDFMELAKEb\x06proto3\
+    \n\x1eRemoveStuffFromAreaScRsp.proto\"^\n\x18RemoveStuffFromAreaScRsp\
+    \x12\x20\n\x0bBIIHOBMMFDP\x18\x03\x20\x01(\rR\x0bBIIHOBMMFDP\x12\x20\n\
+    \x0bADADHIHDHJC\x18\r\x20\x01(\rR\x0bADADHIHDHJCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

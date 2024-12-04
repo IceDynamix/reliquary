@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SwitchAetherDivideLineUpSlotCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SwitchAetherDivideLineUpSlotCsReq.GMMEBDHEGID)
-    pub GMMEBDHEGID: u32,
+    // @@protoc_insertion_point(field:SwitchAetherDivideLineUpSlotCsReq.BNCNMEGFHPM)
+    pub BNCNMEGFHPM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SwitchAetherDivideLineUpSlotCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl SwitchAetherDivideLineUpSlotCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GMMEBDHEGID",
-            |m: &SwitchAetherDivideLineUpSlotCsReq| { &m.GMMEBDHEGID },
-            |m: &mut SwitchAetherDivideLineUpSlotCsReq| { &mut m.GMMEBDHEGID },
+            "BNCNMEGFHPM",
+            |m: &SwitchAetherDivideLineUpSlotCsReq| { &m.BNCNMEGFHPM },
+            |m: &mut SwitchAetherDivideLineUpSlotCsReq| { &mut m.BNCNMEGFHPM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SwitchAetherDivideLineUpSlotCsReq>(
             "SwitchAetherDivideLineUpSlotCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for SwitchAetherDivideLineUpSlotCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.GMMEBDHEGID = is.read_uint32()?;
+                96 => {
+                    self.BNCNMEGFHPM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for SwitchAetherDivideLineUpSlotCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GMMEBDHEGID != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.GMMEBDHEGID);
+        if self.BNCNMEGFHPM != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.BNCNMEGFHPM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for SwitchAetherDivideLineUpSlotCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GMMEBDHEGID != 0 {
-            os.write_uint32(7, self.GMMEBDHEGID)?;
+        if self.BNCNMEGFHPM != 0 {
+            os.write_uint32(12, self.BNCNMEGFHPM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for SwitchAetherDivideLineUpSlotCsReq {
     }
 
     fn clear(&mut self) {
-        self.GMMEBDHEGID = 0;
+        self.BNCNMEGFHPM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwitchAetherDivideLineUpSlotCsReq {
         static instance: SwitchAetherDivideLineUpSlotCsReq = SwitchAetherDivideLineUpSlotCsReq {
-            GMMEBDHEGID: 0,
+            BNCNMEGFHPM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for SwitchAetherDivideLineUpSlotCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'SwitchAetherDivideLineUpSlotCsReq.proto\"E\n!SwitchAetherDivideLineUp\
-    SlotCsReq\x12\x20\n\x0bGMMEBDHEGID\x18\x07\x20\x01(\rR\x0bGMMEBDHEGIDb\
+    SlotCsReq\x12\x20\n\x0bBNCNMEGFHPM\x18\x0c\x20\x01(\rR\x0bBNCNMEGFHPMb\
     \x06proto3\
 ";
 

@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeQuestOptionalRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeQuestOptionalRewardCsReq.OAGKDKDDFAO)
-    pub OAGKDKDDFAO: u32,
-    // @@protoc_insertion_point(field:TakeQuestOptionalRewardCsReq.IJBDIMILHMJ)
-    pub IJBDIMILHMJ: u32,
+    // @@protoc_insertion_point(field:TakeQuestOptionalRewardCsReq.IBMCLHNBDFO)
+    pub IBMCLHNBDFO: u32,
+    // @@protoc_insertion_point(field:TakeQuestOptionalRewardCsReq.FJHBEFPHDIH)
+    pub FJHBEFPHDIH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeQuestOptionalRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl TakeQuestOptionalRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OAGKDKDDFAO",
-            |m: &TakeQuestOptionalRewardCsReq| { &m.OAGKDKDDFAO },
-            |m: &mut TakeQuestOptionalRewardCsReq| { &mut m.OAGKDKDDFAO },
+            "IBMCLHNBDFO",
+            |m: &TakeQuestOptionalRewardCsReq| { &m.IBMCLHNBDFO },
+            |m: &mut TakeQuestOptionalRewardCsReq| { &mut m.IBMCLHNBDFO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IJBDIMILHMJ",
-            |m: &TakeQuestOptionalRewardCsReq| { &m.IJBDIMILHMJ },
-            |m: &mut TakeQuestOptionalRewardCsReq| { &mut m.IJBDIMILHMJ },
+            "FJHBEFPHDIH",
+            |m: &TakeQuestOptionalRewardCsReq| { &m.FJHBEFPHDIH },
+            |m: &mut TakeQuestOptionalRewardCsReq| { &mut m.FJHBEFPHDIH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeQuestOptionalRewardCsReq>(
             "TakeQuestOptionalRewardCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for TakeQuestOptionalRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.OAGKDKDDFAO = is.read_uint32()?;
+                8 => {
+                    self.IBMCLHNBDFO = is.read_uint32()?;
                 },
-                72 => {
-                    self.IJBDIMILHMJ = is.read_uint32()?;
+                32 => {
+                    self.FJHBEFPHDIH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for TakeQuestOptionalRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OAGKDKDDFAO != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.OAGKDKDDFAO);
+        if self.IBMCLHNBDFO != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.IBMCLHNBDFO);
         }
-        if self.IJBDIMILHMJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.IJBDIMILHMJ);
+        if self.FJHBEFPHDIH != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.FJHBEFPHDIH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for TakeQuestOptionalRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OAGKDKDDFAO != 0 {
-            os.write_uint32(12, self.OAGKDKDDFAO)?;
+        if self.IBMCLHNBDFO != 0 {
+            os.write_uint32(1, self.IBMCLHNBDFO)?;
         }
-        if self.IJBDIMILHMJ != 0 {
-            os.write_uint32(9, self.IJBDIMILHMJ)?;
+        if self.FJHBEFPHDIH != 0 {
+            os.write_uint32(4, self.FJHBEFPHDIH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for TakeQuestOptionalRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.OAGKDKDDFAO = 0;
-        self.IJBDIMILHMJ = 0;
+        self.IBMCLHNBDFO = 0;
+        self.FJHBEFPHDIH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeQuestOptionalRewardCsReq {
         static instance: TakeQuestOptionalRewardCsReq = TakeQuestOptionalRewardCsReq {
-            OAGKDKDDFAO: 0,
-            IJBDIMILHMJ: 0,
+            IBMCLHNBDFO: 0,
+            FJHBEFPHDIH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for TakeQuestOptionalRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"TakeQuestOptionalRewardCsReq.proto\"b\n\x1cTakeQuestOptionalRewardCs\
-    Req\x12\x20\n\x0bOAGKDKDDFAO\x18\x0c\x20\x01(\rR\x0bOAGKDKDDFAO\x12\x20\
-    \n\x0bIJBDIMILHMJ\x18\t\x20\x01(\rR\x0bIJBDIMILHMJb\x06proto3\
+    Req\x12\x20\n\x0bIBMCLHNBDFO\x18\x01\x20\x01(\rR\x0bIBMCLHNBDFO\x12\x20\
+    \n\x0bFJHBEFPHDIH\x18\x04\x20\x01(\rR\x0bFJHBEFPHDIHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

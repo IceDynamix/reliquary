@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpgradeAreaCsReq {
     // message fields
-    // @@protoc_insertion_point(field:UpgradeAreaCsReq.level)
-    pub level: u32,
-    // @@protoc_insertion_point(field:UpgradeAreaCsReq.IGBJOAKIOFL)
-    pub IGBJOAKIOFL: u32,
+    // @@protoc_insertion_point(field:UpgradeAreaCsReq.OMBLHJDKEJA)
+    pub OMBLHJDKEJA: u32,
+    // @@protoc_insertion_point(field:UpgradeAreaCsReq.JKOCJIMAGBN)
+    pub JKOCJIMAGBN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:UpgradeAreaCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl UpgradeAreaCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &UpgradeAreaCsReq| { &m.level },
-            |m: &mut UpgradeAreaCsReq| { &mut m.level },
+            "OMBLHJDKEJA",
+            |m: &UpgradeAreaCsReq| { &m.OMBLHJDKEJA },
+            |m: &mut UpgradeAreaCsReq| { &mut m.OMBLHJDKEJA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IGBJOAKIOFL",
-            |m: &UpgradeAreaCsReq| { &m.IGBJOAKIOFL },
-            |m: &mut UpgradeAreaCsReq| { &mut m.IGBJOAKIOFL },
+            "JKOCJIMAGBN",
+            |m: &UpgradeAreaCsReq| { &m.JKOCJIMAGBN },
+            |m: &mut UpgradeAreaCsReq| { &mut m.JKOCJIMAGBN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpgradeAreaCsReq>(
             "UpgradeAreaCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for UpgradeAreaCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.level = is.read_uint32()?;
+                112 => {
+                    self.OMBLHJDKEJA = is.read_uint32()?;
                 },
-                40 => {
-                    self.IGBJOAKIOFL = is.read_uint32()?;
+                24 => {
+                    self.JKOCJIMAGBN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for UpgradeAreaCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.level);
+        if self.OMBLHJDKEJA != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.OMBLHJDKEJA);
         }
-        if self.IGBJOAKIOFL != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.IGBJOAKIOFL);
+        if self.JKOCJIMAGBN != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.JKOCJIMAGBN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for UpgradeAreaCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.level != 0 {
-            os.write_uint32(13, self.level)?;
+        if self.OMBLHJDKEJA != 0 {
+            os.write_uint32(14, self.OMBLHJDKEJA)?;
         }
-        if self.IGBJOAKIOFL != 0 {
-            os.write_uint32(5, self.IGBJOAKIOFL)?;
+        if self.JKOCJIMAGBN != 0 {
+            os.write_uint32(3, self.JKOCJIMAGBN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for UpgradeAreaCsReq {
     }
 
     fn clear(&mut self) {
-        self.level = 0;
-        self.IGBJOAKIOFL = 0;
+        self.OMBLHJDKEJA = 0;
+        self.JKOCJIMAGBN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpgradeAreaCsReq {
         static instance: UpgradeAreaCsReq = UpgradeAreaCsReq {
-            level: 0,
-            IGBJOAKIOFL: 0,
+            OMBLHJDKEJA: 0,
+            JKOCJIMAGBN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for UpgradeAreaCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16UpgradeAreaCsReq.proto\"J\n\x10UpgradeAreaCsReq\x12\x14\n\x05level\
-    \x18\r\x20\x01(\rR\x05level\x12\x20\n\x0bIGBJOAKIOFL\x18\x05\x20\x01(\rR\
-    \x0bIGBJOAKIOFLb\x06proto3\
+    \n\x16UpgradeAreaCsReq.proto\"V\n\x10UpgradeAreaCsReq\x12\x20\n\x0bOMBLH\
+    JDKEJA\x18\x0e\x20\x01(\rR\x0bOMBLHJDKEJA\x12\x20\n\x0bJKOCJIMAGBN\x18\
+    \x03\x20\x01(\rR\x0bJKOCJIMAGBNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

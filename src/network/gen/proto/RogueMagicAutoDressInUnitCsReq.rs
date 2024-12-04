@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicAutoDressInUnitCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicAutoDressInUnitCsReq.LLPGFMDAJJP)
-    pub LLPGFMDAJJP: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueMagicAutoDressInUnitCsReq.MJLKKBGFFAE)
+    pub MJLKKBGFFAE: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicAutoDressInUnitCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl RogueMagicAutoDressInUnitCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LLPGFMDAJJP",
-            |m: &RogueMagicAutoDressInUnitCsReq| { &m.LLPGFMDAJJP },
-            |m: &mut RogueMagicAutoDressInUnitCsReq| { &mut m.LLPGFMDAJJP },
+            "MJLKKBGFFAE",
+            |m: &RogueMagicAutoDressInUnitCsReq| { &m.MJLKKBGFFAE },
+            |m: &mut RogueMagicAutoDressInUnitCsReq| { &mut m.MJLKKBGFFAE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicAutoDressInUnitCsReq>(
             "RogueMagicAutoDressInUnitCsReq",
@@ -73,11 +73,11 @@ impl ::protobuf::Message for RogueMagicAutoDressInUnitCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.LLPGFMDAJJP)?;
+                74 => {
+                    is.read_repeated_packed_uint32_into(&mut self.MJLKKBGFFAE)?;
                 },
-                40 => {
-                    self.LLPGFMDAJJP.push(is.read_uint32()?);
+                72 => {
+                    self.MJLKKBGFFAE.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -91,8 +91,8 @@ impl ::protobuf::Message for RogueMagicAutoDressInUnitCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.LLPGFMDAJJP {
-            my_size += ::protobuf::rt::uint32_size(5, *value);
+        for value in &self.MJLKKBGFFAE {
+            my_size += ::protobuf::rt::uint32_size(9, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -100,8 +100,8 @@ impl ::protobuf::Message for RogueMagicAutoDressInUnitCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.LLPGFMDAJJP {
-            os.write_uint32(5, *v)?;
+        for v in &self.MJLKKBGFFAE {
+            os.write_uint32(9, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -120,13 +120,13 @@ impl ::protobuf::Message for RogueMagicAutoDressInUnitCsReq {
     }
 
     fn clear(&mut self) {
-        self.LLPGFMDAJJP.clear();
+        self.MJLKKBGFFAE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicAutoDressInUnitCsReq {
         static instance: RogueMagicAutoDressInUnitCsReq = RogueMagicAutoDressInUnitCsReq {
-            LLPGFMDAJJP: ::std::vec::Vec::new(),
+            MJLKKBGFFAE: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -152,8 +152,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicAutoDressInUnitCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$RogueMagicAutoDressInUnitCsReq.proto\"B\n\x1eRogueMagicAutoDressInUni\
-    tCsReq\x12\x20\n\x0bLLPGFMDAJJP\x18\x05\x20\x03(\rR\x0bLLPGFMDAJJPb\x06p\
-    roto3\
+    tCsReq\x12\x20\n\x0bMJLKKBGFFAE\x18\t\x20\x03(\rR\x0bMJLKKBGFFAEb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

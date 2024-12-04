@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFirstTalkByPerformanceNpcScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetFirstTalkByPerformanceNpcScRsp.DJNELILOFAO)
-    pub DJNELILOFAO: ::std::vec::Vec<super::MINEMDNHKEK::MINEMDNHKEK>,
     // @@protoc_insertion_point(field:GetFirstTalkByPerformanceNpcScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetFirstTalkByPerformanceNpcScRsp.npc_talk_info_list)
+    pub npc_talk_info_list: ::std::vec::Vec<super::NpcTalkInfo::NpcTalkInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:GetFirstTalkByPerformanceNpcScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl GetFirstTalkByPerformanceNpcScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DJNELILOFAO",
-            |m: &GetFirstTalkByPerformanceNpcScRsp| { &m.DJNELILOFAO },
-            |m: &mut GetFirstTalkByPerformanceNpcScRsp| { &mut m.DJNELILOFAO },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetFirstTalkByPerformanceNpcScRsp| { &m.retcode },
             |m: &mut GetFirstTalkByPerformanceNpcScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "npc_talk_info_list",
+            |m: &GetFirstTalkByPerformanceNpcScRsp| { &m.npc_talk_info_list },
+            |m: &mut GetFirstTalkByPerformanceNpcScRsp| { &mut m.npc_talk_info_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetFirstTalkByPerformanceNpcScRsp>(
             "GetFirstTalkByPerformanceNpcScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for GetFirstTalkByPerformanceNpcScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    self.DJNELILOFAO.push(is.read_message()?);
-                },
                 96 => {
                     self.retcode = is.read_uint32()?;
+                },
+                66 => {
+                    self.npc_talk_info_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,25 +98,25 @@ impl ::protobuf::Message for GetFirstTalkByPerformanceNpcScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.DJNELILOFAO {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
+        for value in &self.npc_talk_info_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.DJNELILOFAO {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        };
         if self.retcode != 0 {
             os.write_uint32(12, self.retcode)?;
         }
+        for v in &self.npc_talk_info_list {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -134,15 +134,15 @@ impl ::protobuf::Message for GetFirstTalkByPerformanceNpcScRsp {
     }
 
     fn clear(&mut self) {
-        self.DJNELILOFAO.clear();
         self.retcode = 0;
+        self.npc_talk_info_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFirstTalkByPerformanceNpcScRsp {
         static instance: GetFirstTalkByPerformanceNpcScRsp = GetFirstTalkByPerformanceNpcScRsp {
-            DJNELILOFAO: ::std::vec::Vec::new(),
             retcode: 0,
+            npc_talk_info_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for GetFirstTalkByPerformanceNpcScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'GetFirstTalkByPerformanceNpcScRsp.proto\x1a\x11MINEMDNHKEK.proto\"m\n\
-    !GetFirstTalkByPerformanceNpcScRsp\x12.\n\x0bDJNELILOFAO\x18\x06\x20\x03\
-    (\x0b2\x0c.MINEMDNHKEKR\x0bDJNELILOFAO\x12\x18\n\x07retcode\x18\x0c\x20\
-    \x01(\rR\x07retcodeb\x06proto3\
+    \n'GetFirstTalkByPerformanceNpcScRsp.proto\x1a\x11NpcTalkInfo.proto\"x\n\
+    !GetFirstTalkByPerformanceNpcScRsp\x12\x18\n\x07retcode\x18\x0c\x20\x01(\
+    \rR\x07retcode\x129\n\x12npc_talk_info_list\x18\x08\x20\x03(\x0b2\x0c.Np\
+    cTalkInfoR\x0fnpcTalkInfoListB\x15\n\x13emu.lunarcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::MINEMDNHKEK::file_descriptor().clone());
+            deps.push(super::NpcTalkInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetFirstTalkByPerformanceNpcScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

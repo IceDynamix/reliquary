@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakePunkLordPointRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakePunkLordPointRewardCsReq.level)
-    pub level: u32,
-    // @@protoc_insertion_point(field:TakePunkLordPointRewardCsReq.MGCIACFKBFM)
-    pub MGCIACFKBFM: bool,
+    // @@protoc_insertion_point(field:TakePunkLordPointRewardCsReq.JKOCJIMAGBN)
+    pub JKOCJIMAGBN: u32,
+    // @@protoc_insertion_point(field:TakePunkLordPointRewardCsReq.ICDOHKPKMAH)
+    pub ICDOHKPKMAH: bool,
     // special fields
     // @@protoc_insertion_point(special_field:TakePunkLordPointRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl TakePunkLordPointRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &TakePunkLordPointRewardCsReq| { &m.level },
-            |m: &mut TakePunkLordPointRewardCsReq| { &mut m.level },
+            "JKOCJIMAGBN",
+            |m: &TakePunkLordPointRewardCsReq| { &m.JKOCJIMAGBN },
+            |m: &mut TakePunkLordPointRewardCsReq| { &mut m.JKOCJIMAGBN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MGCIACFKBFM",
-            |m: &TakePunkLordPointRewardCsReq| { &m.MGCIACFKBFM },
-            |m: &mut TakePunkLordPointRewardCsReq| { &mut m.MGCIACFKBFM },
+            "ICDOHKPKMAH",
+            |m: &TakePunkLordPointRewardCsReq| { &m.ICDOHKPKMAH },
+            |m: &mut TakePunkLordPointRewardCsReq| { &mut m.ICDOHKPKMAH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakePunkLordPointRewardCsReq>(
             "TakePunkLordPointRewardCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for TakePunkLordPointRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.level = is.read_uint32()?;
-                },
                 16 => {
-                    self.MGCIACFKBFM = is.read_bool()?;
+                    self.JKOCJIMAGBN = is.read_uint32()?;
+                },
+                96 => {
+                    self.ICDOHKPKMAH = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for TakePunkLordPointRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.level);
+        if self.JKOCJIMAGBN != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.JKOCJIMAGBN);
         }
-        if self.MGCIACFKBFM != false {
+        if self.ICDOHKPKMAH != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -110,11 +110,11 @@ impl ::protobuf::Message for TakePunkLordPointRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.level != 0 {
-            os.write_uint32(5, self.level)?;
+        if self.JKOCJIMAGBN != 0 {
+            os.write_uint32(2, self.JKOCJIMAGBN)?;
         }
-        if self.MGCIACFKBFM != false {
-            os.write_bool(2, self.MGCIACFKBFM)?;
+        if self.ICDOHKPKMAH != false {
+            os.write_bool(12, self.ICDOHKPKMAH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for TakePunkLordPointRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.level = 0;
-        self.MGCIACFKBFM = false;
+        self.JKOCJIMAGBN = 0;
+        self.ICDOHKPKMAH = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakePunkLordPointRewardCsReq {
         static instance: TakePunkLordPointRewardCsReq = TakePunkLordPointRewardCsReq {
-            level: 0,
-            MGCIACFKBFM: false,
+            JKOCJIMAGBN: 0,
+            ICDOHKPKMAH: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for TakePunkLordPointRewardCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"TakePunkLordPointRewardCsReq.proto\"V\n\x1cTakePunkLordPointRewardCs\
-    Req\x12\x14\n\x05level\x18\x05\x20\x01(\rR\x05level\x12\x20\n\x0bMGCIACF\
-    KBFM\x18\x02\x20\x01(\x08R\x0bMGCIACFKBFMb\x06proto3\
+    \n\"TakePunkLordPointRewardCsReq.proto\"b\n\x1cTakePunkLordPointRewardCs\
+    Req\x12\x20\n\x0bJKOCJIMAGBN\x18\x02\x20\x01(\rR\x0bJKOCJIMAGBN\x12\x20\
+    \n\x0bICDOHKPKMAH\x18\x0c\x20\x01(\x08R\x0bICDOHKPKMAHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

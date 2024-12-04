@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LeaveRaidCsReq {
     // message fields
-    // @@protoc_insertion_point(field:LeaveRaidCsReq.OGIOAKBPMAE)
-    pub OGIOAKBPMAE: u32,
-    // @@protoc_insertion_point(field:LeaveRaidCsReq.BEDDOLCOMPO)
-    pub BEDDOLCOMPO: bool,
+    // @@protoc_insertion_point(field:LeaveRaidCsReq.KDFKCJLHHAF)
+    pub KDFKCJLHHAF: bool,
+    // @@protoc_insertion_point(field:LeaveRaidCsReq.ODOAJJGMBCL)
+    pub ODOAJJGMBCL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LeaveRaidCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl LeaveRaidCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OGIOAKBPMAE",
-            |m: &LeaveRaidCsReq| { &m.OGIOAKBPMAE },
-            |m: &mut LeaveRaidCsReq| { &mut m.OGIOAKBPMAE },
+            "KDFKCJLHHAF",
+            |m: &LeaveRaidCsReq| { &m.KDFKCJLHHAF },
+            |m: &mut LeaveRaidCsReq| { &mut m.KDFKCJLHHAF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BEDDOLCOMPO",
-            |m: &LeaveRaidCsReq| { &m.BEDDOLCOMPO },
-            |m: &mut LeaveRaidCsReq| { &mut m.BEDDOLCOMPO },
+            "ODOAJJGMBCL",
+            |m: &LeaveRaidCsReq| { &m.ODOAJJGMBCL },
+            |m: &mut LeaveRaidCsReq| { &mut m.ODOAJJGMBCL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LeaveRaidCsReq>(
             "LeaveRaidCsReq",
@@ -81,10 +81,10 @@ impl ::protobuf::Message for LeaveRaidCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 48 => {
-                    self.OGIOAKBPMAE = is.read_uint32()?;
+                    self.KDFKCJLHHAF = is.read_bool()?;
                 },
-                24 => {
-                    self.BEDDOLCOMPO = is.read_bool()?;
+                88 => {
+                    self.ODOAJJGMBCL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for LeaveRaidCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OGIOAKBPMAE != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.OGIOAKBPMAE);
-        }
-        if self.BEDDOLCOMPO != false {
+        if self.KDFKCJLHHAF != false {
             my_size += 1 + 1;
+        }
+        if self.ODOAJJGMBCL != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.ODOAJJGMBCL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for LeaveRaidCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OGIOAKBPMAE != 0 {
-            os.write_uint32(6, self.OGIOAKBPMAE)?;
+        if self.KDFKCJLHHAF != false {
+            os.write_bool(6, self.KDFKCJLHHAF)?;
         }
-        if self.BEDDOLCOMPO != false {
-            os.write_bool(3, self.BEDDOLCOMPO)?;
+        if self.ODOAJJGMBCL != 0 {
+            os.write_uint32(11, self.ODOAJJGMBCL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for LeaveRaidCsReq {
     }
 
     fn clear(&mut self) {
-        self.OGIOAKBPMAE = 0;
-        self.BEDDOLCOMPO = false;
+        self.KDFKCJLHHAF = false;
+        self.ODOAJJGMBCL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LeaveRaidCsReq {
         static instance: LeaveRaidCsReq = LeaveRaidCsReq {
-            OGIOAKBPMAE: 0,
-            BEDDOLCOMPO: false,
+            KDFKCJLHHAF: false,
+            ODOAJJGMBCL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for LeaveRaidCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14LeaveRaidCsReq.proto\"T\n\x0eLeaveRaidCsReq\x12\x20\n\x0bOGIOAKBPM\
-    AE\x18\x06\x20\x01(\rR\x0bOGIOAKBPMAE\x12\x20\n\x0bBEDDOLCOMPO\x18\x03\
-    \x20\x01(\x08R\x0bBEDDOLCOMPOb\x06proto3\
+    \n\x14LeaveRaidCsReq.proto\"T\n\x0eLeaveRaidCsReq\x12\x20\n\x0bKDFKCJLHH\
+    AF\x18\x06\x20\x01(\x08R\x0bKDFKCJLHHAF\x12\x20\n\x0bODOAJJGMBCL\x18\x0b\
+    \x20\x01(\rR\x0bODOAJJGMBCLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

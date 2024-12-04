@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetChessRogueStoryAeonTalkInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetChessRogueStoryAeonTalkInfoScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:GetChessRogueStoryAeonTalkInfoScRsp.OPIBBFHBGOB)
-    pub OPIBBFHBGOB: u32,
-    // @@protoc_insertion_point(field:GetChessRogueStoryAeonTalkInfoScRsp.LFEPBAJOCPE)
-    pub LFEPBAJOCPE: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:GetChessRogueStoryAeonTalkInfoScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:GetChessRogueStoryAeonTalkInfoScRsp.NGLOKPIBFPN)
+    pub NGLOKPIBFPN: u32,
+    // @@protoc_insertion_point(field:GetChessRogueStoryAeonTalkInfoScRsp.MIDPEPGGJEL)
+    pub MIDPEPGGJEL: ::std::collections::HashMap<u32, u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GetChessRogueStoryAeonTalkInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl GetChessRogueStoryAeonTalkInfoScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetChessRogueStoryAeonTalkInfoScRsp| { &m.retcode },
-            |m: &mut GetChessRogueStoryAeonTalkInfoScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &GetChessRogueStoryAeonTalkInfoScRsp| { &m.ADADHIHDHJC },
+            |m: &mut GetChessRogueStoryAeonTalkInfoScRsp| { &mut m.ADADHIHDHJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OPIBBFHBGOB",
-            |m: &GetChessRogueStoryAeonTalkInfoScRsp| { &m.OPIBBFHBGOB },
-            |m: &mut GetChessRogueStoryAeonTalkInfoScRsp| { &mut m.OPIBBFHBGOB },
+            "NGLOKPIBFPN",
+            |m: &GetChessRogueStoryAeonTalkInfoScRsp| { &m.NGLOKPIBFPN },
+            |m: &mut GetChessRogueStoryAeonTalkInfoScRsp| { &mut m.NGLOKPIBFPN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor::<_, _, _>(
-            "LFEPBAJOCPE",
-            |m: &GetChessRogueStoryAeonTalkInfoScRsp| { &m.LFEPBAJOCPE },
-            |m: &mut GetChessRogueStoryAeonTalkInfoScRsp| { &mut m.LFEPBAJOCPE },
+            "MIDPEPGGJEL",
+            |m: &GetChessRogueStoryAeonTalkInfoScRsp| { &m.MIDPEPGGJEL },
+            |m: &mut GetChessRogueStoryAeonTalkInfoScRsp| { &mut m.MIDPEPGGJEL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetChessRogueStoryAeonTalkInfoScRsp>(
             "GetChessRogueStoryAeonTalkInfoScRsp",
@@ -88,10 +88,10 @@ impl ::protobuf::Message for GetChessRogueStoryAeonTalkInfoScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 96 => {
-                    self.retcode = is.read_uint32()?;
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                56 => {
-                    self.OPIBBFHBGOB = is.read_uint32()?;
+                24 => {
+                    self.NGLOKPIBFPN = is.read_uint32()?;
                 },
                 90 => {
                     let len = is.read_raw_varint32()?;
@@ -106,7 +106,7 @@ impl ::protobuf::Message for GetChessRogueStoryAeonTalkInfoScRsp {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.LFEPBAJOCPE.insert(key, value);
+                    self.MIDPEPGGJEL.insert(key, value);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,13 +120,13 @@ impl ::protobuf::Message for GetChessRogueStoryAeonTalkInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.ADADHIHDHJC);
         }
-        if self.OPIBBFHBGOB != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.OPIBBFHBGOB);
+        if self.NGLOKPIBFPN != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.NGLOKPIBFPN);
         }
-        for (k, v) in &self.LFEPBAJOCPE {
+        for (k, v) in &self.MIDPEPGGJEL {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
@@ -138,13 +138,13 @@ impl ::protobuf::Message for GetChessRogueStoryAeonTalkInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(12, self.ADADHIHDHJC)?;
         }
-        if self.OPIBBFHBGOB != 0 {
-            os.write_uint32(7, self.OPIBBFHBGOB)?;
+        if self.NGLOKPIBFPN != 0 {
+            os.write_uint32(3, self.NGLOKPIBFPN)?;
         }
-        for (k, v) in &self.LFEPBAJOCPE {
+        for (k, v) in &self.MIDPEPGGJEL {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
@@ -170,9 +170,9 @@ impl ::protobuf::Message for GetChessRogueStoryAeonTalkInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.OPIBBFHBGOB = 0;
-        self.LFEPBAJOCPE.clear();
+        self.ADADHIHDHJC = 0;
+        self.NGLOKPIBFPN = 0;
+        self.MIDPEPGGJEL.clear();
         self.special_fields.clear();
     }
 
@@ -200,13 +200,13 @@ impl ::protobuf::reflect::ProtobufValue for GetChessRogueStoryAeonTalkInfoScRsp 
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n)GetChessRogueStoryAeonTalkInfoScRsp.proto\"\xfa\x01\n#GetChessRogueSt\
-    oryAeonTalkInfoScRsp\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\
-    \x12\x20\n\x0bOPIBBFHBGOB\x18\x07\x20\x01(\rR\x0bOPIBBFHBGOB\x12W\n\x0bL\
-    FEPBAJOCPE\x18\x0b\x20\x03(\x0b25.GetChessRogueStoryAeonTalkInfoScRsp.LF\
-    EPBAJOCPEEntryR\x0bLFEPBAJOCPE\x1a>\n\x10LFEPBAJOCPEEntry\x12\x10\n\x03k\
-    ey\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05\
-    value:\x028\x01b\x06proto3\
+    \n)GetChessRogueStoryAeonTalkInfoScRsp.proto\"\x82\x02\n#GetChessRogueSt\
+    oryAeonTalkInfoScRsp\x12\x20\n\x0bADADHIHDHJC\x18\x0c\x20\x01(\rR\x0bADA\
+    DHIHDHJC\x12\x20\n\x0bNGLOKPIBFPN\x18\x03\x20\x01(\rR\x0bNGLOKPIBFPN\x12\
+    W\n\x0bMIDPEPGGJEL\x18\x0b\x20\x03(\x0b25.GetChessRogueStoryAeonTalkInfo\
+    ScRsp.MIDPEPGGJELEntryR\x0bMIDPEPGGJEL\x1a>\n\x10MIDPEPGGJELEntry\x12\
+    \x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\
+    \x01(\rR\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

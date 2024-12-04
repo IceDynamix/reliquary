@@ -32,7 +32,7 @@ pub struct FeatureSwitchInfo {
     // @@protoc_insertion_point(field:FeatureSwitchInfo.type)
     pub type_: ::protobuf::EnumOrUnknown<super::FeatureSwitchType::FeatureSwitchType>,
     // @@protoc_insertion_point(field:FeatureSwitchInfo.switch_list)
-    pub switch_list: ::std::vec::Vec<super::ABDFAEGOBFO::ABDFAEGOBFO>,
+    pub switch_list: ::std::vec::Vec<super::JKIGFABCOLA::JKIGFABCOLA>,
     // @@protoc_insertion_point(field:FeatureSwitchInfo.is_all_closed)
     pub is_all_closed: bool,
     // special fields
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for FeatureSwitchInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17FeatureSwitchInfo.proto\x1a\x11ABDFAEGOBFO.proto\x1a\x17FeatureSwi\
-    tchType.proto\"\x8e\x01\n\x11FeatureSwitchInfo\x12&\n\x04type\x18\x01\
+    \n\x17FeatureSwitchInfo.proto\x1a\x17FeatureSwitchType.proto\x1a\x11JKIG\
+    FABCOLA.proto\"\x8e\x01\n\x11FeatureSwitchInfo\x12&\n\x04type\x18\x01\
     \x20\x01(\x0e2\x12.FeatureSwitchTypeR\x04type\x12-\n\x0bswitch_list\x18\
-    \x02\x20\x03(\x0b2\x0c.ABDFAEGOBFOR\nswitchList\x12\"\n\ris_all_closed\
+    \x02\x20\x03(\x0b2\x0c.JKIGFABCOLAR\nswitchList\x12\"\n\ris_all_closed\
     \x18\x03\x20\x01(\x08R\x0bisAllClosedb\x06proto3\
 ";
 
@@ -207,8 +207,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::ABDFAEGOBFO::file_descriptor().clone());
             deps.push(super::FeatureSwitchType::file_descriptor().clone());
+            deps.push(super::JKIGFABCOLA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FeatureSwitchInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MatchBoxingClubOpponentCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MatchBoxingClubOpponentCsReq.DBKHFAEKNKL)
-    pub DBKHFAEKNKL: u32,
-    // @@protoc_insertion_point(field:MatchBoxingClubOpponentCsReq.avatar_list)
-    pub avatar_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:MatchBoxingClubOpponentCsReq.HHMFMFHCMOK)
-    pub HHMFMFHCMOK: ::std::vec::Vec<super::BFJBLOCEHJG::BFJBLOCEHJG>,
+    // @@protoc_insertion_point(field:MatchBoxingClubOpponentCsReq.GPKEAKPHIPA)
+    pub GPKEAKPHIPA: u32,
+    // @@protoc_insertion_point(field:MatchBoxingClubOpponentCsReq.GPPHJGGFMCB)
+    pub GPPHJGGFMCB: ::std::vec::Vec<super::CBIEELKJMGL::CBIEELKJMGL>,
+    // @@protoc_insertion_point(field:MatchBoxingClubOpponentCsReq.EMALNMLGANJ)
+    pub EMALNMLGANJ: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:MatchBoxingClubOpponentCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl MatchBoxingClubOpponentCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DBKHFAEKNKL",
-            |m: &MatchBoxingClubOpponentCsReq| { &m.DBKHFAEKNKL },
-            |m: &mut MatchBoxingClubOpponentCsReq| { &mut m.DBKHFAEKNKL },
+            "GPKEAKPHIPA",
+            |m: &MatchBoxingClubOpponentCsReq| { &m.GPKEAKPHIPA },
+            |m: &mut MatchBoxingClubOpponentCsReq| { &mut m.GPKEAKPHIPA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_list",
-            |m: &MatchBoxingClubOpponentCsReq| { &m.avatar_list },
-            |m: &mut MatchBoxingClubOpponentCsReq| { &mut m.avatar_list },
+            "GPPHJGGFMCB",
+            |m: &MatchBoxingClubOpponentCsReq| { &m.GPPHJGGFMCB },
+            |m: &mut MatchBoxingClubOpponentCsReq| { &mut m.GPPHJGGFMCB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HHMFMFHCMOK",
-            |m: &MatchBoxingClubOpponentCsReq| { &m.HHMFMFHCMOK },
-            |m: &mut MatchBoxingClubOpponentCsReq| { &mut m.HHMFMFHCMOK },
+            "EMALNMLGANJ",
+            |m: &MatchBoxingClubOpponentCsReq| { &m.EMALNMLGANJ },
+            |m: &mut MatchBoxingClubOpponentCsReq| { &mut m.EMALNMLGANJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MatchBoxingClubOpponentCsReq>(
             "MatchBoxingClubOpponentCsReq",
@@ -88,16 +88,16 @@ impl ::protobuf::Message for MatchBoxingClubOpponentCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 24 => {
-                    self.DBKHFAEKNKL = is.read_uint32()?;
+                    self.GPKEAKPHIPA = is.read_uint32()?;
                 },
                 10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.avatar_list)?;
+                    self.GPPHJGGFMCB.push(is.read_message()?);
                 },
-                8 => {
-                    self.avatar_list.push(is.read_uint32()?);
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.EMALNMLGANJ)?;
                 },
-                34 => {
-                    self.HHMFMFHCMOK.push(is.read_message()?);
+                88 => {
+                    self.EMALNMLGANJ.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,15 +111,15 @@ impl ::protobuf::Message for MatchBoxingClubOpponentCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DBKHFAEKNKL != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.DBKHFAEKNKL);
+        if self.GPKEAKPHIPA != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.GPKEAKPHIPA);
         }
-        for value in &self.avatar_list {
-            my_size += ::protobuf::rt::uint32_size(1, *value);
-        };
-        for value in &self.HHMFMFHCMOK {
+        for value in &self.GPPHJGGFMCB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        for value in &self.EMALNMLGANJ {
+            my_size += ::protobuf::rt::uint32_size(11, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -127,14 +127,14 @@ impl ::protobuf::Message for MatchBoxingClubOpponentCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DBKHFAEKNKL != 0 {
-            os.write_uint32(3, self.DBKHFAEKNKL)?;
+        if self.GPKEAKPHIPA != 0 {
+            os.write_uint32(3, self.GPKEAKPHIPA)?;
         }
-        for v in &self.avatar_list {
-            os.write_uint32(1, *v)?;
+        for v in &self.GPPHJGGFMCB {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        for v in &self.HHMFMFHCMOK {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        for v in &self.EMALNMLGANJ {
+            os.write_uint32(11, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -153,17 +153,17 @@ impl ::protobuf::Message for MatchBoxingClubOpponentCsReq {
     }
 
     fn clear(&mut self) {
-        self.DBKHFAEKNKL = 0;
-        self.avatar_list.clear();
-        self.HHMFMFHCMOK.clear();
+        self.GPKEAKPHIPA = 0;
+        self.GPPHJGGFMCB.clear();
+        self.EMALNMLGANJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MatchBoxingClubOpponentCsReq {
         static instance: MatchBoxingClubOpponentCsReq = MatchBoxingClubOpponentCsReq {
-            DBKHFAEKNKL: 0,
-            avatar_list: ::std::vec::Vec::new(),
-            HHMFMFHCMOK: ::std::vec::Vec::new(),
+            GPKEAKPHIPA: 0,
+            GPPHJGGFMCB: ::std::vec::Vec::new(),
+            EMALNMLGANJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -188,11 +188,11 @@ impl ::protobuf::reflect::ProtobufValue for MatchBoxingClubOpponentCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"MatchBoxingClubOpponentCsReq.proto\x1a\x11BFJBLOCEHJG.proto\"\x91\
-    \x01\n\x1cMatchBoxingClubOpponentCsReq\x12\x20\n\x0bDBKHFAEKNKL\x18\x03\
-    \x20\x01(\rR\x0bDBKHFAEKNKL\x12\x1f\n\x0bavatar_list\x18\x01\x20\x03(\rR\
-    \navatarList\x12.\n\x0bHHMFMFHCMOK\x18\x04\x20\x03(\x0b2\x0c.BFJBLOCEHJG\
-    R\x0bHHMFMFHCMOKb\x06proto3\
+    \n\"MatchBoxingClubOpponentCsReq.proto\x1a\x11CBIEELKJMGL.proto\"\x92\
+    \x01\n\x1cMatchBoxingClubOpponentCsReq\x12\x20\n\x0bGPKEAKPHIPA\x18\x03\
+    \x20\x01(\rR\x0bGPKEAKPHIPA\x12.\n\x0bGPPHJGGFMCB\x18\x01\x20\x03(\x0b2\
+    \x0c.CBIEELKJMGLR\x0bGPPHJGGFMCB\x12\x20\n\x0bEMALNMLGANJ\x18\x0b\x20\
+    \x03(\rR\x0bEMALNMLGANJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -210,7 +210,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::BFJBLOCEHJG::file_descriptor().clone());
+            deps.push(super::CBIEELKJMGL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MatchBoxingClubOpponentCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

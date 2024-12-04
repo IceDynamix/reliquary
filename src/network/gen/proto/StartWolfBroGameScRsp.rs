@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartWolfBroGameScRsp {
     // message fields
-    // @@protoc_insertion_point(field:StartWolfBroGameScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:StartWolfBroGameScRsp.IHCOEGEACHG)
-    pub IHCOEGEACHG: ::protobuf::MessageField<super::JMAIBOCHIMA::JMAIBOCHIMA>,
+    // @@protoc_insertion_point(field:StartWolfBroGameScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:StartWolfBroGameScRsp.FCMEOJOJIDF)
+    pub FCMEOJOJIDF: ::protobuf::MessageField<super::CDEEDFGAJCP::CDEEDFGAJCP>,
     // special fields
     // @@protoc_insertion_point(special_field:StartWolfBroGameScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl StartWolfBroGameScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &StartWolfBroGameScRsp| { &m.retcode },
-            |m: &mut StartWolfBroGameScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &StartWolfBroGameScRsp| { &m.ADADHIHDHJC },
+            |m: &mut StartWolfBroGameScRsp| { &mut m.ADADHIHDHJC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JMAIBOCHIMA::JMAIBOCHIMA>(
-            "IHCOEGEACHG",
-            |m: &StartWolfBroGameScRsp| { &m.IHCOEGEACHG },
-            |m: &mut StartWolfBroGameScRsp| { &mut m.IHCOEGEACHG },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CDEEDFGAJCP::CDEEDFGAJCP>(
+            "FCMEOJOJIDF",
+            |m: &StartWolfBroGameScRsp| { &m.FCMEOJOJIDF },
+            |m: &mut StartWolfBroGameScRsp| { &mut m.FCMEOJOJIDF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartWolfBroGameScRsp>(
             "StartWolfBroGameScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for StartWolfBroGameScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.retcode = is.read_uint32()?;
+                72 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IHCOEGEACHG)?;
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FCMEOJOJIDF)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for StartWolfBroGameScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.ADADHIHDHJC);
         }
-        if let Some(v) = self.IHCOEGEACHG.as_ref() {
+        if let Some(v) = self.FCMEOJOJIDF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for StartWolfBroGameScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(9, self.ADADHIHDHJC)?;
         }
-        if let Some(v) = self.IHCOEGEACHG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if let Some(v) = self.FCMEOJOJIDF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for StartWolfBroGameScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.IHCOEGEACHG.clear();
+        self.ADADHIHDHJC = 0;
+        self.FCMEOJOJIDF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartWolfBroGameScRsp {
         static instance: StartWolfBroGameScRsp = StartWolfBroGameScRsp {
-            retcode: 0,
-            IHCOEGEACHG: ::protobuf::MessageField::none(),
+            ADADHIHDHJC: 0,
+            FCMEOJOJIDF: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for StartWolfBroGameScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bStartWolfBroGameScRsp.proto\x1a\x11JMAIBOCHIMA.proto\"a\n\x15Start\
-    WolfBroGameScRsp\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12\
-    .\n\x0bIHCOEGEACHG\x18\n\x20\x01(\x0b2\x0c.JMAIBOCHIMAR\x0bIHCOEGEACHGb\
-    \x06proto3\
+    \n\x1bStartWolfBroGameScRsp.proto\x1a\x11CDEEDFGAJCP.proto\"i\n\x15Start\
+    WolfBroGameScRsp\x12\x20\n\x0bADADHIHDHJC\x18\t\x20\x01(\rR\x0bADADHIHDH\
+    JC\x12.\n\x0bFCMEOJOJIDF\x18\x06\x20\x01(\x0b2\x0c.CDEEDFGAJCPR\x0bFCMEO\
+    JOJIDFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::JMAIBOCHIMA::file_descriptor().clone());
+            deps.push(super::CDEEDFGAJCP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(StartWolfBroGameScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeChallengeRaidRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeChallengeRaidRewardScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:TakeChallengeRaidRewardScRsp.CKIDKOCFCLB)
-    pub CKIDKOCFCLB: u32,
-    // @@protoc_insertion_point(field:TakeChallengeRaidRewardScRsp.LPDNAMLHGNJ)
-    pub LPDNAMLHGNJ: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:TakeChallengeRaidRewardScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:TakeChallengeRaidRewardScRsp.HECFCKDEBNH)
+    pub HECFCKDEBNH: u32,
+    // @@protoc_insertion_point(field:TakeChallengeRaidRewardScRsp.ELPMNKHEPKJ)
+    pub ELPMNKHEPKJ: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:TakeChallengeRaidRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl TakeChallengeRaidRewardScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &TakeChallengeRaidRewardScRsp| { &m.retcode },
-            |m: &mut TakeChallengeRaidRewardScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &TakeChallengeRaidRewardScRsp| { &m.ADADHIHDHJC },
+            |m: &mut TakeChallengeRaidRewardScRsp| { &mut m.ADADHIHDHJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CKIDKOCFCLB",
-            |m: &TakeChallengeRaidRewardScRsp| { &m.CKIDKOCFCLB },
-            |m: &mut TakeChallengeRaidRewardScRsp| { &mut m.CKIDKOCFCLB },
+            "HECFCKDEBNH",
+            |m: &TakeChallengeRaidRewardScRsp| { &m.HECFCKDEBNH },
+            |m: &mut TakeChallengeRaidRewardScRsp| { &mut m.HECFCKDEBNH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "LPDNAMLHGNJ",
-            |m: &TakeChallengeRaidRewardScRsp| { &m.LPDNAMLHGNJ },
-            |m: &mut TakeChallengeRaidRewardScRsp| { &mut m.LPDNAMLHGNJ },
+            "ELPMNKHEPKJ",
+            |m: &TakeChallengeRaidRewardScRsp| { &m.ELPMNKHEPKJ },
+            |m: &mut TakeChallengeRaidRewardScRsp| { &mut m.ELPMNKHEPKJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeChallengeRaidRewardScRsp>(
             "TakeChallengeRaidRewardScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for TakeChallengeRaidRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.retcode = is.read_uint32()?;
+                96 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                80 => {
-                    self.CKIDKOCFCLB = is.read_uint32()?;
+                72 => {
+                    self.HECFCKDEBNH = is.read_uint32()?;
                 },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LPDNAMLHGNJ)?;
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ELPMNKHEPKJ)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for TakeChallengeRaidRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.ADADHIHDHJC);
         }
-        if self.CKIDKOCFCLB != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.CKIDKOCFCLB);
+        if self.HECFCKDEBNH != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.HECFCKDEBNH);
         }
-        if let Some(v) = self.LPDNAMLHGNJ.as_ref() {
+        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -124,14 +124,14 @@ impl ::protobuf::Message for TakeChallengeRaidRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(12, self.ADADHIHDHJC)?;
         }
-        if self.CKIDKOCFCLB != 0 {
-            os.write_uint32(10, self.CKIDKOCFCLB)?;
+        if self.HECFCKDEBNH != 0 {
+            os.write_uint32(9, self.HECFCKDEBNH)?;
         }
-        if let Some(v) = self.LPDNAMLHGNJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for TakeChallengeRaidRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.CKIDKOCFCLB = 0;
-        self.LPDNAMLHGNJ.clear();
+        self.ADADHIHDHJC = 0;
+        self.HECFCKDEBNH = 0;
+        self.ELPMNKHEPKJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeChallengeRaidRewardScRsp {
         static instance: TakeChallengeRaidRewardScRsp = TakeChallengeRaidRewardScRsp {
-            retcode: 0,
-            CKIDKOCFCLB: 0,
-            LPDNAMLHGNJ: ::protobuf::MessageField::none(),
+            ADADHIHDHJC: 0,
+            HECFCKDEBNH: 0,
+            ELPMNKHEPKJ: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for TakeChallengeRaidRewardScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"TakeChallengeRaidRewardScRsp.proto\x1a\x0eItemList.proto\"\x87\x01\n\
-    \x1cTakeChallengeRaidRewardScRsp\x12\x18\n\x07retcode\x18\x0f\x20\x01(\r\
-    R\x07retcode\x12\x20\n\x0bCKIDKOCFCLB\x18\n\x20\x01(\rR\x0bCKIDKOCFCLB\
-    \x12+\n\x0bLPDNAMLHGNJ\x18\t\x20\x01(\x0b2\t.ItemListR\x0bLPDNAMLHGNJb\
-    \x06proto3\
+    \n\"TakeChallengeRaidRewardScRsp.proto\x1a\x0eItemList.proto\"\x8f\x01\n\
+    \x1cTakeChallengeRaidRewardScRsp\x12\x20\n\x0bADADHIHDHJC\x18\x0c\x20\
+    \x01(\rR\x0bADADHIHDHJC\x12\x20\n\x0bHECFCKDEBNH\x18\t\x20\x01(\rR\x0bHE\
+    CFCKDEBNH\x12+\n\x0bELPMNKHEPKJ\x18\n\x20\x01(\x0b2\t.ItemListR\x0bELPMN\
+    KHEPKJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

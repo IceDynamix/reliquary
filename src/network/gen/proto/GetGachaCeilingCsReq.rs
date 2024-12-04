@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetGachaCeilingCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetGachaCeilingCsReq.DCEOGEPKEBD)
-    pub DCEOGEPKEBD: u32,
+    // @@protoc_insertion_point(field:GetGachaCeilingCsReq.gacha_type)
+    pub gacha_type: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetGachaCeilingCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl GetGachaCeilingCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DCEOGEPKEBD",
-            |m: &GetGachaCeilingCsReq| { &m.DCEOGEPKEBD },
-            |m: &mut GetGachaCeilingCsReq| { &mut m.DCEOGEPKEBD },
+            "gacha_type",
+            |m: &GetGachaCeilingCsReq| { &m.gacha_type },
+            |m: &mut GetGachaCeilingCsReq| { &mut m.gacha_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetGachaCeilingCsReq>(
             "GetGachaCeilingCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for GetGachaCeilingCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.DCEOGEPKEBD = is.read_uint32()?;
+                16 => {
+                    self.gacha_type = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for GetGachaCeilingCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DCEOGEPKEBD != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.DCEOGEPKEBD);
+        if self.gacha_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.gacha_type);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for GetGachaCeilingCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DCEOGEPKEBD != 0 {
-            os.write_uint32(10, self.DCEOGEPKEBD)?;
+        if self.gacha_type != 0 {
+            os.write_uint32(2, self.gacha_type)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for GetGachaCeilingCsReq {
     }
 
     fn clear(&mut self) {
-        self.DCEOGEPKEBD = 0;
+        self.gacha_type = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetGachaCeilingCsReq {
         static instance: GetGachaCeilingCsReq = GetGachaCeilingCsReq {
-            DCEOGEPKEBD: 0,
+            gacha_type: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for GetGachaCeilingCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aGetGachaCeilingCsReq.proto\"8\n\x14GetGachaCeilingCsReq\x12\x20\n\
-    \x0bDCEOGEPKEBD\x18\n\x20\x01(\rR\x0bDCEOGEPKEBDb\x06proto3\
+    \n\x1aGetGachaCeilingCsReq.proto\"5\n\x14GetGachaCeilingCsReq\x12\x1d\n\
+    \ngacha_type\x18\x02\x20\x01(\rR\tgachaTypeB\x15\n\x13emu.lunarcore.prot\
+    ob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -101,7 +101,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bRogueTournLevelStatus.proto*\xb0\x01\n\x15RogueTournLevelStatus\
     \x12!\n\x1dROGUE_TOURN_LEVEL_STATUS_NONE\x10\0\x12'\n#ROGUE_TOURN_LEVEL_\
     STATUS_PROCESSING\x10\x01\x12%\n!ROGUE_TOURN_LEVEL_STATUS_FINISHED\x10\
-    \x02\x12$\n\x20ROGUE_TOURN_LEVEL_STATUS_SETTLED\x10\x03b\x06proto3\
+    \x02\x12$\n\x20ROGUE_TOURN_LEVEL_STATUS_SETTLED\x10\x03B\x15\n\x13emu.lu\
+    narcore.protob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

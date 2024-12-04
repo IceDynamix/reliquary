@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournRenameArchiveCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournRenameArchiveCsReq.DMDNGEEPLFJ)
-    pub DMDNGEEPLFJ: ::std::string::String,
-    // @@protoc_insertion_point(field:RogueTournRenameArchiveCsReq.MFLHIEHEKMM)
-    pub MFLHIEHEKMM: u32,
+    // @@protoc_insertion_point(field:RogueTournRenameArchiveCsReq.PFOFHEMGFKL)
+    pub PFOFHEMGFKL: u32,
+    // @@protoc_insertion_point(field:RogueTournRenameArchiveCsReq.MMENCOEDNGJ)
+    pub MMENCOEDNGJ: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournRenameArchiveCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl RogueTournRenameArchiveCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DMDNGEEPLFJ",
-            |m: &RogueTournRenameArchiveCsReq| { &m.DMDNGEEPLFJ },
-            |m: &mut RogueTournRenameArchiveCsReq| { &mut m.DMDNGEEPLFJ },
+            "PFOFHEMGFKL",
+            |m: &RogueTournRenameArchiveCsReq| { &m.PFOFHEMGFKL },
+            |m: &mut RogueTournRenameArchiveCsReq| { &mut m.PFOFHEMGFKL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MFLHIEHEKMM",
-            |m: &RogueTournRenameArchiveCsReq| { &m.MFLHIEHEKMM },
-            |m: &mut RogueTournRenameArchiveCsReq| { &mut m.MFLHIEHEKMM },
+            "MMENCOEDNGJ",
+            |m: &RogueTournRenameArchiveCsReq| { &m.MMENCOEDNGJ },
+            |m: &mut RogueTournRenameArchiveCsReq| { &mut m.MMENCOEDNGJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournRenameArchiveCsReq>(
             "RogueTournRenameArchiveCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for RogueTournRenameArchiveCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    self.DMDNGEEPLFJ = is.read_string()?;
+                120 => {
+                    self.PFOFHEMGFKL = is.read_uint32()?;
                 },
-                16 => {
-                    self.MFLHIEHEKMM = is.read_uint32()?;
+                98 => {
+                    self.MMENCOEDNGJ = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for RogueTournRenameArchiveCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.DMDNGEEPLFJ.is_empty() {
-            my_size += ::protobuf::rt::string_size(9, &self.DMDNGEEPLFJ);
+        if self.PFOFHEMGFKL != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.PFOFHEMGFKL);
         }
-        if self.MFLHIEHEKMM != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.MFLHIEHEKMM);
+        if !self.MMENCOEDNGJ.is_empty() {
+            my_size += ::protobuf::rt::string_size(12, &self.MMENCOEDNGJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for RogueTournRenameArchiveCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.DMDNGEEPLFJ.is_empty() {
-            os.write_string(9, &self.DMDNGEEPLFJ)?;
+        if self.PFOFHEMGFKL != 0 {
+            os.write_uint32(15, self.PFOFHEMGFKL)?;
         }
-        if self.MFLHIEHEKMM != 0 {
-            os.write_uint32(2, self.MFLHIEHEKMM)?;
+        if !self.MMENCOEDNGJ.is_empty() {
+            os.write_string(12, &self.MMENCOEDNGJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for RogueTournRenameArchiveCsReq {
     }
 
     fn clear(&mut self) {
-        self.DMDNGEEPLFJ.clear();
-        self.MFLHIEHEKMM = 0;
+        self.PFOFHEMGFKL = 0;
+        self.MMENCOEDNGJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournRenameArchiveCsReq {
         static instance: RogueTournRenameArchiveCsReq = RogueTournRenameArchiveCsReq {
-            DMDNGEEPLFJ: ::std::string::String::new(),
-            MFLHIEHEKMM: 0,
+            PFOFHEMGFKL: 0,
+            MMENCOEDNGJ: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournRenameArchiveCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"RogueTournRenameArchiveCsReq.proto\"b\n\x1cRogueTournRenameArchiveCs\
-    Req\x12\x20\n\x0bDMDNGEEPLFJ\x18\t\x20\x01(\tR\x0bDMDNGEEPLFJ\x12\x20\n\
-    \x0bMFLHIEHEKMM\x18\x02\x20\x01(\rR\x0bMFLHIEHEKMMb\x06proto3\
+    Req\x12\x20\n\x0bPFOFHEMGFKL\x18\x0f\x20\x01(\rR\x0bPFOFHEMGFKL\x12\x20\
+    \n\x0bMMENCOEDNGJ\x18\x0c\x20\x01(\tR\x0bMMENCOEDNGJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

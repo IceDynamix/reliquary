@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnhanceCommonRogueBuffCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EnhanceCommonRogueBuffCsReq.NOPAKOCNGGA)
-    pub NOPAKOCNGGA: u32,
-    // @@protoc_insertion_point(field:EnhanceCommonRogueBuffCsReq.OIAECIELHAF)
-    pub OIAECIELHAF: u32,
+    // @@protoc_insertion_point(field:EnhanceCommonRogueBuffCsReq.FOCLMJPKCHI)
+    pub FOCLMJPKCHI: u32,
+    // @@protoc_insertion_point(field:EnhanceCommonRogueBuffCsReq.LMFFBHEOONE)
+    pub LMFFBHEOONE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EnhanceCommonRogueBuffCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl EnhanceCommonRogueBuffCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NOPAKOCNGGA",
-            |m: &EnhanceCommonRogueBuffCsReq| { &m.NOPAKOCNGGA },
-            |m: &mut EnhanceCommonRogueBuffCsReq| { &mut m.NOPAKOCNGGA },
+            "FOCLMJPKCHI",
+            |m: &EnhanceCommonRogueBuffCsReq| { &m.FOCLMJPKCHI },
+            |m: &mut EnhanceCommonRogueBuffCsReq| { &mut m.FOCLMJPKCHI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OIAECIELHAF",
-            |m: &EnhanceCommonRogueBuffCsReq| { &m.OIAECIELHAF },
-            |m: &mut EnhanceCommonRogueBuffCsReq| { &mut m.OIAECIELHAF },
+            "LMFFBHEOONE",
+            |m: &EnhanceCommonRogueBuffCsReq| { &m.LMFFBHEOONE },
+            |m: &mut EnhanceCommonRogueBuffCsReq| { &mut m.LMFFBHEOONE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnhanceCommonRogueBuffCsReq>(
             "EnhanceCommonRogueBuffCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for EnhanceCommonRogueBuffCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.NOPAKOCNGGA = is.read_uint32()?;
+                64 => {
+                    self.FOCLMJPKCHI = is.read_uint32()?;
                 },
-                104 => {
-                    self.OIAECIELHAF = is.read_uint32()?;
+                48 => {
+                    self.LMFFBHEOONE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for EnhanceCommonRogueBuffCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NOPAKOCNGGA != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.NOPAKOCNGGA);
+        if self.FOCLMJPKCHI != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.FOCLMJPKCHI);
         }
-        if self.OIAECIELHAF != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.OIAECIELHAF);
+        if self.LMFFBHEOONE != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.LMFFBHEOONE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for EnhanceCommonRogueBuffCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NOPAKOCNGGA != 0 {
-            os.write_uint32(2, self.NOPAKOCNGGA)?;
+        if self.FOCLMJPKCHI != 0 {
+            os.write_uint32(8, self.FOCLMJPKCHI)?;
         }
-        if self.OIAECIELHAF != 0 {
-            os.write_uint32(13, self.OIAECIELHAF)?;
+        if self.LMFFBHEOONE != 0 {
+            os.write_uint32(6, self.LMFFBHEOONE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for EnhanceCommonRogueBuffCsReq {
     }
 
     fn clear(&mut self) {
-        self.NOPAKOCNGGA = 0;
-        self.OIAECIELHAF = 0;
+        self.FOCLMJPKCHI = 0;
+        self.LMFFBHEOONE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnhanceCommonRogueBuffCsReq {
         static instance: EnhanceCommonRogueBuffCsReq = EnhanceCommonRogueBuffCsReq {
-            NOPAKOCNGGA: 0,
-            OIAECIELHAF: 0,
+            FOCLMJPKCHI: 0,
+            LMFFBHEOONE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for EnhanceCommonRogueBuffCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!EnhanceCommonRogueBuffCsReq.proto\"a\n\x1bEnhanceCommonRogueBuffCsReq\
-    \x12\x20\n\x0bNOPAKOCNGGA\x18\x02\x20\x01(\rR\x0bNOPAKOCNGGA\x12\x20\n\
-    \x0bOIAECIELHAF\x18\r\x20\x01(\rR\x0bOIAECIELHAFb\x06proto3\
+    \x12\x20\n\x0bFOCLMJPKCHI\x18\x08\x20\x01(\rR\x0bFOCLMJPKCHI\x12\x20\n\
+    \x0bLMFFBHEOONE\x18\x06\x20\x01(\rR\x0bLMFFBHEOONEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

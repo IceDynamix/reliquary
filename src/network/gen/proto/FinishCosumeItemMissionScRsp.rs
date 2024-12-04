@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishCosumeItemMissionScRsp {
     // message fields
-    // @@protoc_insertion_point(field:FinishCosumeItemMissionScRsp.NJHPKMHFJAD)
-    pub NJHPKMHFJAD: u32,
-    // @@protoc_insertion_point(field:FinishCosumeItemMissionScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:FinishCosumeItemMissionScRsp.FAFGOIMCDPF)
+    pub FAFGOIMCDPF: u32,
+    // @@protoc_insertion_point(field:FinishCosumeItemMissionScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FinishCosumeItemMissionScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl FinishCosumeItemMissionScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NJHPKMHFJAD",
-            |m: &FinishCosumeItemMissionScRsp| { &m.NJHPKMHFJAD },
-            |m: &mut FinishCosumeItemMissionScRsp| { &mut m.NJHPKMHFJAD },
+            "FAFGOIMCDPF",
+            |m: &FinishCosumeItemMissionScRsp| { &m.FAFGOIMCDPF },
+            |m: &mut FinishCosumeItemMissionScRsp| { &mut m.FAFGOIMCDPF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &FinishCosumeItemMissionScRsp| { &m.retcode },
-            |m: &mut FinishCosumeItemMissionScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &FinishCosumeItemMissionScRsp| { &m.ADADHIHDHJC },
+            |m: &mut FinishCosumeItemMissionScRsp| { &mut m.ADADHIHDHJC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishCosumeItemMissionScRsp>(
             "FinishCosumeItemMissionScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for FinishCosumeItemMissionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.NJHPKMHFJAD = is.read_uint32()?;
+                104 => {
+                    self.FAFGOIMCDPF = is.read_uint32()?;
                 },
-                112 => {
-                    self.retcode = is.read_uint32()?;
+                88 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for FinishCosumeItemMissionScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NJHPKMHFJAD != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.NJHPKMHFJAD);
+        if self.FAFGOIMCDPF != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.FAFGOIMCDPF);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.ADADHIHDHJC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for FinishCosumeItemMissionScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NJHPKMHFJAD != 0 {
-            os.write_uint32(9, self.NJHPKMHFJAD)?;
+        if self.FAFGOIMCDPF != 0 {
+            os.write_uint32(13, self.FAFGOIMCDPF)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(11, self.ADADHIHDHJC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for FinishCosumeItemMissionScRsp {
     }
 
     fn clear(&mut self) {
-        self.NJHPKMHFJAD = 0;
-        self.retcode = 0;
+        self.FAFGOIMCDPF = 0;
+        self.ADADHIHDHJC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishCosumeItemMissionScRsp {
         static instance: FinishCosumeItemMissionScRsp = FinishCosumeItemMissionScRsp {
-            NJHPKMHFJAD: 0,
-            retcode: 0,
+            FAFGOIMCDPF: 0,
+            ADADHIHDHJC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for FinishCosumeItemMissionScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"FinishCosumeItemMissionScRsp.proto\"Z\n\x1cFinishCosumeItemMissionSc\
-    Rsp\x12\x20\n\x0bNJHPKMHFJAD\x18\t\x20\x01(\rR\x0bNJHPKMHFJAD\x12\x18\n\
-    \x07retcode\x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\"FinishCosumeItemMissionScRsp.proto\"b\n\x1cFinishCosumeItemMissionSc\
+    Rsp\x12\x20\n\x0bFAFGOIMCDPF\x18\r\x20\x01(\rR\x0bFAFGOIMCDPF\x12\x20\n\
+    \x0bADADHIHDHJC\x18\x0b\x20\x01(\rR\x0bADADHIHDHJCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

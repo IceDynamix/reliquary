@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetSpringRecoverDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetSpringRecoverDataScRsp.IIDJGAGFACF)
-    pub IIDJGAGFACF: ::protobuf::MessageField<super::KENMCMMFBFJ::KENMCMMFBFJ>,
-    // @@protoc_insertion_point(field:GetSpringRecoverDataScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:GetSpringRecoverDataScRsp.FJJMGCNPEKO)
-    pub FJJMGCNPEKO: ::protobuf::MessageField<super::MGOIICJIIHP::MGOIICJIIHP>,
+    // @@protoc_insertion_point(field:GetSpringRecoverDataScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:GetSpringRecoverDataScRsp.EDFCEPKKIHE)
+    pub EDFCEPKKIHE: ::protobuf::MessageField<super::CCAFMMONHIG::CCAFMMONHIG>,
+    // @@protoc_insertion_point(field:GetSpringRecoverDataScRsp.IAKPAFAEBEM)
+    pub IAKPAFAEBEM: ::protobuf::MessageField<super::ELJHLDOEKID::ELJHLDOEKID>,
     // special fields
     // @@protoc_insertion_point(special_field:GetSpringRecoverDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl GetSpringRecoverDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KENMCMMFBFJ::KENMCMMFBFJ>(
-            "IIDJGAGFACF",
-            |m: &GetSpringRecoverDataScRsp| { &m.IIDJGAGFACF },
-            |m: &mut GetSpringRecoverDataScRsp| { &mut m.IIDJGAGFACF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetSpringRecoverDataScRsp| { &m.retcode },
-            |m: &mut GetSpringRecoverDataScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &GetSpringRecoverDataScRsp| { &m.ADADHIHDHJC },
+            |m: &mut GetSpringRecoverDataScRsp| { &mut m.ADADHIHDHJC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MGOIICJIIHP::MGOIICJIIHP>(
-            "FJJMGCNPEKO",
-            |m: &GetSpringRecoverDataScRsp| { &m.FJJMGCNPEKO },
-            |m: &mut GetSpringRecoverDataScRsp| { &mut m.FJJMGCNPEKO },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CCAFMMONHIG::CCAFMMONHIG>(
+            "EDFCEPKKIHE",
+            |m: &GetSpringRecoverDataScRsp| { &m.EDFCEPKKIHE },
+            |m: &mut GetSpringRecoverDataScRsp| { &mut m.EDFCEPKKIHE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ELJHLDOEKID::ELJHLDOEKID>(
+            "IAKPAFAEBEM",
+            |m: &GetSpringRecoverDataScRsp| { &m.IAKPAFAEBEM },
+            |m: &mut GetSpringRecoverDataScRsp| { &mut m.IAKPAFAEBEM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetSpringRecoverDataScRsp>(
             "GetSpringRecoverDataScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for GetSpringRecoverDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IIDJGAGFACF)?;
-                },
                 72 => {
-                    self.retcode = is.read_uint32()?;
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FJJMGCNPEKO)?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EDFCEPKKIHE)?;
+                },
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IAKPAFAEBEM)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for GetSpringRecoverDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.IIDJGAGFACF.as_ref() {
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.ADADHIHDHJC);
+        }
+        if let Some(v) = self.EDFCEPKKIHE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
-        }
-        if let Some(v) = self.FJJMGCNPEKO.as_ref() {
+        if let Some(v) = self.IAKPAFAEBEM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -125,14 +125,14 @@ impl ::protobuf::Message for GetSpringRecoverDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.IIDJGAGFACF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(9, self.ADADHIHDHJC)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+        if let Some(v) = self.EDFCEPKKIHE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
-        if let Some(v) = self.FJJMGCNPEKO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if let Some(v) = self.IAKPAFAEBEM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,17 +151,17 @@ impl ::protobuf::Message for GetSpringRecoverDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.IIDJGAGFACF.clear();
-        self.retcode = 0;
-        self.FJJMGCNPEKO.clear();
+        self.ADADHIHDHJC = 0;
+        self.EDFCEPKKIHE.clear();
+        self.IAKPAFAEBEM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetSpringRecoverDataScRsp {
         static instance: GetSpringRecoverDataScRsp = GetSpringRecoverDataScRsp {
-            IIDJGAGFACF: ::protobuf::MessageField::none(),
-            retcode: 0,
-            FJJMGCNPEKO: ::protobuf::MessageField::none(),
+            ADADHIHDHJC: 0,
+            EDFCEPKKIHE: ::protobuf::MessageField::none(),
+            IAKPAFAEBEM: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,11 +186,11 @@ impl ::protobuf::reflect::ProtobufValue for GetSpringRecoverDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fGetSpringRecoverDataScRsp.proto\x1a\x11KENMCMMFBFJ.proto\x1a\x11MG\
-    OIICJIIHP.proto\"\x95\x01\n\x19GetSpringRecoverDataScRsp\x12.\n\x0bIIDJG\
-    AGFACF\x18\r\x20\x01(\x0b2\x0c.KENMCMMFBFJR\x0bIIDJGAGFACF\x12\x18\n\x07\
-    retcode\x18\t\x20\x01(\rR\x07retcode\x12.\n\x0bFJJMGCNPEKO\x18\x02\x20\
-    \x01(\x0b2\x0c.MGOIICJIIHPR\x0bFJJMGCNPEKOb\x06proto3\
+    \n\x1fGetSpringRecoverDataScRsp.proto\x1a\x11CCAFMMONHIG.proto\x1a\x11EL\
+    JHLDOEKID.proto\"\x9d\x01\n\x19GetSpringRecoverDataScRsp\x12\x20\n\x0bAD\
+    ADHIHDHJC\x18\t\x20\x01(\rR\x0bADADHIHDHJC\x12.\n\x0bEDFCEPKKIHE\x18\x04\
+    \x20\x01(\x0b2\x0c.CCAFMMONHIGR\x0bEDFCEPKKIHE\x12.\n\x0bIAKPAFAEBEM\x18\
+    \x08\x20\x01(\x0b2\x0c.ELJHLDOEKIDR\x0bIAKPAFAEBEMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -208,8 +208,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::KENMCMMFBFJ::file_descriptor().clone());
-            deps.push(super::MGOIICJIIHP::file_descriptor().clone());
+            deps.push(super::CCAFMMONHIG::file_descriptor().clone());
+            deps.push(super::ELJHLDOEKID::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetSpringRecoverDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

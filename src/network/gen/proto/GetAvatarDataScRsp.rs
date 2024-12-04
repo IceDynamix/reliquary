@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetAvatarDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetAvatarDataScRsp.avatar_list)
-    pub avatar_list: ::std::vec::Vec<super::Avatar::Avatar>,
-    // @@protoc_insertion_point(field:GetAvatarDataScRsp.KAHBBLAKBBN)
-    pub KAHBBLAKBBN: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetAvatarDataScRsp.is_get_all)
     pub is_get_all: bool,
+    // @@protoc_insertion_point(field:GetAvatarDataScRsp.avatar_list)
+    pub avatar_list: ::std::vec::Vec<super::Avatar::Avatar>,
     // @@protoc_insertion_point(field:GetAvatarDataScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetAvatarDataScRsp.DLEGHAHMNAD)
+    pub DLEGHAHMNAD: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GetAvatarDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,25 +56,25 @@ impl GetAvatarDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_list",
-            |m: &GetAvatarDataScRsp| { &m.avatar_list },
-            |m: &mut GetAvatarDataScRsp| { &mut m.avatar_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KAHBBLAKBBN",
-            |m: &GetAvatarDataScRsp| { &m.KAHBBLAKBBN },
-            |m: &mut GetAvatarDataScRsp| { &mut m.KAHBBLAKBBN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_get_all",
             |m: &GetAvatarDataScRsp| { &m.is_get_all },
             |m: &mut GetAvatarDataScRsp| { &mut m.is_get_all },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "avatar_list",
+            |m: &GetAvatarDataScRsp| { &m.avatar_list },
+            |m: &mut GetAvatarDataScRsp| { &mut m.avatar_list },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetAvatarDataScRsp| { &m.retcode },
             |m: &mut GetAvatarDataScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DLEGHAHMNAD",
+            |m: &GetAvatarDataScRsp| { &m.DLEGHAHMNAD },
+            |m: &mut GetAvatarDataScRsp| { &mut m.DLEGHAHMNAD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetAvatarDataScRsp>(
             "GetAvatarDataScRsp",
@@ -94,20 +94,20 @@ impl ::protobuf::Message for GetAvatarDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.avatar_list.push(is.read_message()?);
-                },
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.KAHBBLAKBBN)?;
-                },
-                16 => {
-                    self.KAHBBLAKBBN.push(is.read_uint32()?);
-                },
-                56 => {
+                96 => {
                     self.is_get_all = is.read_bool()?;
                 },
-                120 => {
+                26 => {
+                    self.avatar_list.push(is.read_message()?);
+                },
+                88 => {
                     self.retcode = is.read_uint32()?;
+                },
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.DLEGHAHMNAD)?;
+                },
+                120 => {
+                    self.DLEGHAHMNAD.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,37 +121,37 @@ impl ::protobuf::Message for GetAvatarDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.is_get_all != false {
+            my_size += 1 + 1;
+        }
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.KAHBBLAKBBN {
-            my_size += ::protobuf::rt::uint32_size(2, *value);
-        };
-        if self.is_get_all != false {
-            my_size += 1 + 1;
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
+        for value in &self.DLEGHAHMNAD {
+            my_size += ::protobuf::rt::uint32_size(15, *value);
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
-        for v in &self.KAHBBLAKBBN {
-            os.write_uint32(2, *v)?;
-        };
         if self.is_get_all != false {
-            os.write_bool(7, self.is_get_all)?;
+            os.write_bool(12, self.is_get_all)?;
         }
+        for v in &self.avatar_list {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        };
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
+        for v in &self.DLEGHAHMNAD {
+            os.write_uint32(15, *v)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -169,19 +169,19 @@ impl ::protobuf::Message for GetAvatarDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.avatar_list.clear();
-        self.KAHBBLAKBBN.clear();
         self.is_get_all = false;
+        self.avatar_list.clear();
         self.retcode = 0;
+        self.DLEGHAHMNAD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetAvatarDataScRsp {
         static instance: GetAvatarDataScRsp = GetAvatarDataScRsp {
-            avatar_list: ::std::vec::Vec::new(),
-            KAHBBLAKBBN: ::std::vec::Vec::new(),
             is_get_all: false,
+            avatar_list: ::std::vec::Vec::new(),
             retcode: 0,
+            DLEGHAHMNAD: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -207,10 +207,11 @@ impl ::protobuf::reflect::ProtobufValue for GetAvatarDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18GetAvatarDataScRsp.proto\x1a\x0cAvatar.proto\"\x98\x01\n\x12GetAva\
-    tarDataScRsp\x12(\n\x0bavatar_list\x18\x05\x20\x03(\x0b2\x07.AvatarR\nav\
-    atarList\x12\x20\n\x0bKAHBBLAKBBN\x18\x02\x20\x03(\rR\x0bKAHBBLAKBBN\x12\
-    \x1c\n\nis_get_all\x18\x07\x20\x01(\x08R\x08isGetAll\x12\x18\n\x07retcod\
-    e\x18\x0f\x20\x01(\rR\x07retcodeb\x06proto3\
+    tarDataScRsp\x12\x1c\n\nis_get_all\x18\x0c\x20\x01(\x08R\x08isGetAll\x12\
+    (\n\x0bavatar_list\x18\x03\x20\x03(\x0b2\x07.AvatarR\navatarList\x12\x18\
+    \n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12\x20\n\x0bDLEGHAHMNAD\
+    \x18\x0f\x20\x03(\rR\x0bDLEGHAHMNADB\x15\n\x13emu.lunarcore.protob\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

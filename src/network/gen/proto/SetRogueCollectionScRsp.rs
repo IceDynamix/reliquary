@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetRogueCollectionScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SetRogueCollectionScRsp.INKHJFOPNAK)
-    pub INKHJFOPNAK: ::std::vec::Vec<super::LAOKOJAIOPD::LAOKOJAIOPD>,
-    // @@protoc_insertion_point(field:SetRogueCollectionScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:SetRogueCollectionScRsp.PKHKABEGPJF)
-    pub PKHKABEGPJF: ::std::vec::Vec<super::HKMBKGENKBG::HKMBKGENKBG>,
+    // @@protoc_insertion_point(field:SetRogueCollectionScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:SetRogueCollectionScRsp.FIOFEMAOALK)
+    pub FIOFEMAOALK: ::std::vec::Vec<super::ENLENIJDDPL::ENLENIJDDPL>,
+    // @@protoc_insertion_point(field:SetRogueCollectionScRsp.GAPCAPJGGIE)
+    pub GAPCAPJGGIE: ::std::vec::Vec<super::PBHEJHECOFJ::PBHEJHECOFJ>,
     // special fields
     // @@protoc_insertion_point(special_field:SetRogueCollectionScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl SetRogueCollectionScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "INKHJFOPNAK",
-            |m: &SetRogueCollectionScRsp| { &m.INKHJFOPNAK },
-            |m: &mut SetRogueCollectionScRsp| { &mut m.INKHJFOPNAK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &SetRogueCollectionScRsp| { &m.retcode },
-            |m: &mut SetRogueCollectionScRsp| { &mut m.retcode },
+            "ADADHIHDHJC",
+            |m: &SetRogueCollectionScRsp| { &m.ADADHIHDHJC },
+            |m: &mut SetRogueCollectionScRsp| { &mut m.ADADHIHDHJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PKHKABEGPJF",
-            |m: &SetRogueCollectionScRsp| { &m.PKHKABEGPJF },
-            |m: &mut SetRogueCollectionScRsp| { &mut m.PKHKABEGPJF },
+            "FIOFEMAOALK",
+            |m: &SetRogueCollectionScRsp| { &m.FIOFEMAOALK },
+            |m: &mut SetRogueCollectionScRsp| { &mut m.FIOFEMAOALK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "GAPCAPJGGIE",
+            |m: &SetRogueCollectionScRsp| { &m.GAPCAPJGGIE },
+            |m: &mut SetRogueCollectionScRsp| { &mut m.GAPCAPJGGIE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetRogueCollectionScRsp>(
             "SetRogueCollectionScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for SetRogueCollectionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    self.INKHJFOPNAK.push(is.read_message()?);
+                56 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                88 => {
-                    self.retcode = is.read_uint32()?;
+                122 => {
+                    self.FIOFEMAOALK.push(is.read_message()?);
                 },
-                26 => {
-                    self.PKHKABEGPJF.push(is.read_message()?);
+                10 => {
+                    self.GAPCAPJGGIE.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for SetRogueCollectionScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.INKHJFOPNAK {
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.ADADHIHDHJC);
+        }
+        for value in &self.FIOFEMAOALK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
-        }
-        for value in &self.PKHKABEGPJF {
+        for value in &self.GAPCAPJGGIE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -125,14 +125,14 @@ impl ::protobuf::Message for SetRogueCollectionScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.INKHJFOPNAK {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        };
-        if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(7, self.ADADHIHDHJC)?;
         }
-        for v in &self.PKHKABEGPJF {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        for v in &self.FIOFEMAOALK {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
+        for v in &self.GAPCAPJGGIE {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,17 +151,17 @@ impl ::protobuf::Message for SetRogueCollectionScRsp {
     }
 
     fn clear(&mut self) {
-        self.INKHJFOPNAK.clear();
-        self.retcode = 0;
-        self.PKHKABEGPJF.clear();
+        self.ADADHIHDHJC = 0;
+        self.FIOFEMAOALK.clear();
+        self.GAPCAPJGGIE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetRogueCollectionScRsp {
         static instance: SetRogueCollectionScRsp = SetRogueCollectionScRsp {
-            INKHJFOPNAK: ::std::vec::Vec::new(),
-            retcode: 0,
-            PKHKABEGPJF: ::std::vec::Vec::new(),
+            ADADHIHDHJC: 0,
+            FIOFEMAOALK: ::std::vec::Vec::new(),
+            GAPCAPJGGIE: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,11 +186,11 @@ impl ::protobuf::reflect::ProtobufValue for SetRogueCollectionScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dSetRogueCollectionScRsp.proto\x1a\x11HKMBKGENKBG.proto\x1a\x11LAOK\
-    OJAIOPD.proto\"\x93\x01\n\x17SetRogueCollectionScRsp\x12.\n\x0bINKHJFOPN\
-    AK\x18\x06\x20\x03(\x0b2\x0c.LAOKOJAIOPDR\x0bINKHJFOPNAK\x12\x18\n\x07re\
-    tcode\x18\x0b\x20\x01(\rR\x07retcode\x12.\n\x0bPKHKABEGPJF\x18\x03\x20\
-    \x03(\x0b2\x0c.HKMBKGENKBGR\x0bPKHKABEGPJFb\x06proto3\
+    \n\x1dSetRogueCollectionScRsp.proto\x1a\x11ENLENIJDDPL.proto\x1a\x11PBHE\
+    JHECOFJ.proto\"\x9b\x01\n\x17SetRogueCollectionScRsp\x12\x20\n\x0bADADHI\
+    HDHJC\x18\x07\x20\x01(\rR\x0bADADHIHDHJC\x12.\n\x0bFIOFEMAOALK\x18\x0f\
+    \x20\x03(\x0b2\x0c.ENLENIJDDPLR\x0bFIOFEMAOALK\x12.\n\x0bGAPCAPJGGIE\x18\
+    \x01\x20\x03(\x0b2\x0c.PBHEJHECOFJR\x0bGAPCAPJGGIEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -208,8 +208,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::HKMBKGENKBG::file_descriptor().clone());
-            deps.push(super::LAOKOJAIOPD::file_descriptor().clone());
+            deps.push(super::ENLENIJDDPL::file_descriptor().clone());
+            deps.push(super::PBHEJHECOFJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SetRogueCollectionScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

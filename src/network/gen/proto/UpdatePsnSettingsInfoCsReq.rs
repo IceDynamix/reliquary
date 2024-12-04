@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdatePsnSettingsInfoCsReq {
     // message oneof groups
-    pub OLMDJGNMKFI: ::std::option::Option<update_psn_settings_info_cs_req::OLMDJGNMKFI>,
+    pub ODENMDAKPBN: ::std::option::Option<update_psn_settings_info_cs_req::ODENMDAKPBN>,
     // special fields
     // @@protoc_insertion_point(special_field:UpdatePsnSettingsInfoCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -46,122 +46,122 @@ impl UpdatePsnSettingsInfoCsReq {
         ::std::default::Default::default()
     }
 
-    // .LODLBMPAHKB CBIONLOHECO = 1290;
+    // .MKCDFIIKEPP AKJFADFKBDJ = 1139;
 
-    pub fn CBIONLOHECO(&self) -> &super::LODLBMPAHKB::LODLBMPAHKB {
-        match self.OLMDJGNMKFI {
-            ::std::option::Option::Some(update_psn_settings_info_cs_req::OLMDJGNMKFI::CBIONLOHECO(ref v)) => v,
-            _ => <super::LODLBMPAHKB::LODLBMPAHKB as ::protobuf::Message>::default_instance(),
+    pub fn AKJFADFKBDJ(&self) -> &super::MKCDFIIKEPP::MKCDFIIKEPP {
+        match self.ODENMDAKPBN {
+            ::std::option::Option::Some(update_psn_settings_info_cs_req::ODENMDAKPBN::AKJFADFKBDJ(ref v)) => v,
+            _ => <super::MKCDFIIKEPP::MKCDFIIKEPP as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_CBIONLOHECO(&mut self) {
-        self.OLMDJGNMKFI = ::std::option::Option::None;
+    pub fn clear_AKJFADFKBDJ(&mut self) {
+        self.ODENMDAKPBN = ::std::option::Option::None;
     }
 
-    pub fn has_CBIONLOHECO(&self) -> bool {
-        match self.OLMDJGNMKFI {
-            ::std::option::Option::Some(update_psn_settings_info_cs_req::OLMDJGNMKFI::CBIONLOHECO(..)) => true,
+    pub fn has_AKJFADFKBDJ(&self) -> bool {
+        match self.ODENMDAKPBN {
+            ::std::option::Option::Some(update_psn_settings_info_cs_req::ODENMDAKPBN::AKJFADFKBDJ(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_CBIONLOHECO(&mut self, v: super::LODLBMPAHKB::LODLBMPAHKB) {
-        self.OLMDJGNMKFI = ::std::option::Option::Some(update_psn_settings_info_cs_req::OLMDJGNMKFI::CBIONLOHECO(v))
+    pub fn set_AKJFADFKBDJ(&mut self, v: super::MKCDFIIKEPP::MKCDFIIKEPP) {
+        self.ODENMDAKPBN = ::std::option::Option::Some(update_psn_settings_info_cs_req::ODENMDAKPBN::AKJFADFKBDJ(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_CBIONLOHECO(&mut self) -> &mut super::LODLBMPAHKB::LODLBMPAHKB {
-        if let ::std::option::Option::Some(update_psn_settings_info_cs_req::OLMDJGNMKFI::CBIONLOHECO(_)) = self.OLMDJGNMKFI {
+    pub fn mut_AKJFADFKBDJ(&mut self) -> &mut super::MKCDFIIKEPP::MKCDFIIKEPP {
+        if let ::std::option::Option::Some(update_psn_settings_info_cs_req::ODENMDAKPBN::AKJFADFKBDJ(_)) = self.ODENMDAKPBN {
         } else {
-            self.OLMDJGNMKFI = ::std::option::Option::Some(update_psn_settings_info_cs_req::OLMDJGNMKFI::CBIONLOHECO(super::LODLBMPAHKB::LODLBMPAHKB::new()));
+            self.ODENMDAKPBN = ::std::option::Option::Some(update_psn_settings_info_cs_req::ODENMDAKPBN::AKJFADFKBDJ(super::MKCDFIIKEPP::MKCDFIIKEPP::new()));
         }
-        match self.OLMDJGNMKFI {
-            ::std::option::Option::Some(update_psn_settings_info_cs_req::OLMDJGNMKFI::CBIONLOHECO(ref mut v)) => v,
+        match self.ODENMDAKPBN {
+            ::std::option::Option::Some(update_psn_settings_info_cs_req::ODENMDAKPBN::AKJFADFKBDJ(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_CBIONLOHECO(&mut self) -> super::LODLBMPAHKB::LODLBMPAHKB {
-        if self.has_CBIONLOHECO() {
-            match self.OLMDJGNMKFI.take() {
-                ::std::option::Option::Some(update_psn_settings_info_cs_req::OLMDJGNMKFI::CBIONLOHECO(v)) => v,
+    pub fn take_AKJFADFKBDJ(&mut self) -> super::MKCDFIIKEPP::MKCDFIIKEPP {
+        if self.has_AKJFADFKBDJ() {
+            match self.ODENMDAKPBN.take() {
+                ::std::option::Option::Some(update_psn_settings_info_cs_req::ODENMDAKPBN::AKJFADFKBDJ(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::LODLBMPAHKB::LODLBMPAHKB::new()
+            super::MKCDFIIKEPP::MKCDFIIKEPP::new()
         }
     }
 
-    // .JPPECDLFCEE MCAJLEBOKOI = 583;
+    // .GIBBJHPOHGE NFAMEILPPGI = 1429;
 
-    pub fn MCAJLEBOKOI(&self) -> &super::JPPECDLFCEE::JPPECDLFCEE {
-        match self.OLMDJGNMKFI {
-            ::std::option::Option::Some(update_psn_settings_info_cs_req::OLMDJGNMKFI::MCAJLEBOKOI(ref v)) => v,
-            _ => <super::JPPECDLFCEE::JPPECDLFCEE as ::protobuf::Message>::default_instance(),
+    pub fn NFAMEILPPGI(&self) -> &super::GIBBJHPOHGE::GIBBJHPOHGE {
+        match self.ODENMDAKPBN {
+            ::std::option::Option::Some(update_psn_settings_info_cs_req::ODENMDAKPBN::NFAMEILPPGI(ref v)) => v,
+            _ => <super::GIBBJHPOHGE::GIBBJHPOHGE as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_MCAJLEBOKOI(&mut self) {
-        self.OLMDJGNMKFI = ::std::option::Option::None;
+    pub fn clear_NFAMEILPPGI(&mut self) {
+        self.ODENMDAKPBN = ::std::option::Option::None;
     }
 
-    pub fn has_MCAJLEBOKOI(&self) -> bool {
-        match self.OLMDJGNMKFI {
-            ::std::option::Option::Some(update_psn_settings_info_cs_req::OLMDJGNMKFI::MCAJLEBOKOI(..)) => true,
+    pub fn has_NFAMEILPPGI(&self) -> bool {
+        match self.ODENMDAKPBN {
+            ::std::option::Option::Some(update_psn_settings_info_cs_req::ODENMDAKPBN::NFAMEILPPGI(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_MCAJLEBOKOI(&mut self, v: super::JPPECDLFCEE::JPPECDLFCEE) {
-        self.OLMDJGNMKFI = ::std::option::Option::Some(update_psn_settings_info_cs_req::OLMDJGNMKFI::MCAJLEBOKOI(v))
+    pub fn set_NFAMEILPPGI(&mut self, v: super::GIBBJHPOHGE::GIBBJHPOHGE) {
+        self.ODENMDAKPBN = ::std::option::Option::Some(update_psn_settings_info_cs_req::ODENMDAKPBN::NFAMEILPPGI(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_MCAJLEBOKOI(&mut self) -> &mut super::JPPECDLFCEE::JPPECDLFCEE {
-        if let ::std::option::Option::Some(update_psn_settings_info_cs_req::OLMDJGNMKFI::MCAJLEBOKOI(_)) = self.OLMDJGNMKFI {
+    pub fn mut_NFAMEILPPGI(&mut self) -> &mut super::GIBBJHPOHGE::GIBBJHPOHGE {
+        if let ::std::option::Option::Some(update_psn_settings_info_cs_req::ODENMDAKPBN::NFAMEILPPGI(_)) = self.ODENMDAKPBN {
         } else {
-            self.OLMDJGNMKFI = ::std::option::Option::Some(update_psn_settings_info_cs_req::OLMDJGNMKFI::MCAJLEBOKOI(super::JPPECDLFCEE::JPPECDLFCEE::new()));
+            self.ODENMDAKPBN = ::std::option::Option::Some(update_psn_settings_info_cs_req::ODENMDAKPBN::NFAMEILPPGI(super::GIBBJHPOHGE::GIBBJHPOHGE::new()));
         }
-        match self.OLMDJGNMKFI {
-            ::std::option::Option::Some(update_psn_settings_info_cs_req::OLMDJGNMKFI::MCAJLEBOKOI(ref mut v)) => v,
+        match self.ODENMDAKPBN {
+            ::std::option::Option::Some(update_psn_settings_info_cs_req::ODENMDAKPBN::NFAMEILPPGI(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_MCAJLEBOKOI(&mut self) -> super::JPPECDLFCEE::JPPECDLFCEE {
-        if self.has_MCAJLEBOKOI() {
-            match self.OLMDJGNMKFI.take() {
-                ::std::option::Option::Some(update_psn_settings_info_cs_req::OLMDJGNMKFI::MCAJLEBOKOI(v)) => v,
+    pub fn take_NFAMEILPPGI(&mut self) -> super::GIBBJHPOHGE::GIBBJHPOHGE {
+        if self.has_NFAMEILPPGI() {
+            match self.ODENMDAKPBN.take() {
+                ::std::option::Option::Some(update_psn_settings_info_cs_req::ODENMDAKPBN::NFAMEILPPGI(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::JPPECDLFCEE::JPPECDLFCEE::new()
+            super::GIBBJHPOHGE::GIBBJHPOHGE::new()
         }
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LODLBMPAHKB::LODLBMPAHKB>(
-            "CBIONLOHECO",
-            UpdatePsnSettingsInfoCsReq::has_CBIONLOHECO,
-            UpdatePsnSettingsInfoCsReq::CBIONLOHECO,
-            UpdatePsnSettingsInfoCsReq::mut_CBIONLOHECO,
-            UpdatePsnSettingsInfoCsReq::set_CBIONLOHECO,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MKCDFIIKEPP::MKCDFIIKEPP>(
+            "AKJFADFKBDJ",
+            UpdatePsnSettingsInfoCsReq::has_AKJFADFKBDJ,
+            UpdatePsnSettingsInfoCsReq::AKJFADFKBDJ,
+            UpdatePsnSettingsInfoCsReq::mut_AKJFADFKBDJ,
+            UpdatePsnSettingsInfoCsReq::set_AKJFADFKBDJ,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JPPECDLFCEE::JPPECDLFCEE>(
-            "MCAJLEBOKOI",
-            UpdatePsnSettingsInfoCsReq::has_MCAJLEBOKOI,
-            UpdatePsnSettingsInfoCsReq::MCAJLEBOKOI,
-            UpdatePsnSettingsInfoCsReq::mut_MCAJLEBOKOI,
-            UpdatePsnSettingsInfoCsReq::set_MCAJLEBOKOI,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GIBBJHPOHGE::GIBBJHPOHGE>(
+            "NFAMEILPPGI",
+            UpdatePsnSettingsInfoCsReq::has_NFAMEILPPGI,
+            UpdatePsnSettingsInfoCsReq::NFAMEILPPGI,
+            UpdatePsnSettingsInfoCsReq::mut_NFAMEILPPGI,
+            UpdatePsnSettingsInfoCsReq::set_NFAMEILPPGI,
         ));
-        oneofs.push(update_psn_settings_info_cs_req::OLMDJGNMKFI::generated_oneof_descriptor_data());
+        oneofs.push(update_psn_settings_info_cs_req::ODENMDAKPBN::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdatePsnSettingsInfoCsReq>(
             "UpdatePsnSettingsInfoCsReq",
             fields,
@@ -180,11 +180,11 @@ impl ::protobuf::Message for UpdatePsnSettingsInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10322 => {
-                    self.OLMDJGNMKFI = ::std::option::Option::Some(update_psn_settings_info_cs_req::OLMDJGNMKFI::CBIONLOHECO(is.read_message()?));
+                9114 => {
+                    self.ODENMDAKPBN = ::std::option::Option::Some(update_psn_settings_info_cs_req::ODENMDAKPBN::AKJFADFKBDJ(is.read_message()?));
                 },
-                4666 => {
-                    self.OLMDJGNMKFI = ::std::option::Option::Some(update_psn_settings_info_cs_req::OLMDJGNMKFI::MCAJLEBOKOI(is.read_message()?));
+                11434 => {
+                    self.ODENMDAKPBN = ::std::option::Option::Some(update_psn_settings_info_cs_req::ODENMDAKPBN::NFAMEILPPGI(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -198,13 +198,13 @@ impl ::protobuf::Message for UpdatePsnSettingsInfoCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.OLMDJGNMKFI {
+        if let ::std::option::Option::Some(ref v) = self.ODENMDAKPBN {
             match v {
-                &update_psn_settings_info_cs_req::OLMDJGNMKFI::CBIONLOHECO(ref v) => {
+                &update_psn_settings_info_cs_req::ODENMDAKPBN::AKJFADFKBDJ(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &update_psn_settings_info_cs_req::OLMDJGNMKFI::MCAJLEBOKOI(ref v) => {
+                &update_psn_settings_info_cs_req::ODENMDAKPBN::NFAMEILPPGI(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -216,13 +216,13 @@ impl ::protobuf::Message for UpdatePsnSettingsInfoCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.OLMDJGNMKFI {
+        if let ::std::option::Option::Some(ref v) = self.ODENMDAKPBN {
             match v {
-                &update_psn_settings_info_cs_req::OLMDJGNMKFI::CBIONLOHECO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1290, v, os)?;
+                &update_psn_settings_info_cs_req::ODENMDAKPBN::AKJFADFKBDJ(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1139, v, os)?;
                 },
-                &update_psn_settings_info_cs_req::OLMDJGNMKFI::MCAJLEBOKOI(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(583, v, os)?;
+                &update_psn_settings_info_cs_req::ODENMDAKPBN::NFAMEILPPGI(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1429, v, os)?;
                 },
             };
         }
@@ -243,14 +243,14 @@ impl ::protobuf::Message for UpdatePsnSettingsInfoCsReq {
     }
 
     fn clear(&mut self) {
-        self.OLMDJGNMKFI = ::std::option::Option::None;
-        self.OLMDJGNMKFI = ::std::option::Option::None;
+        self.ODENMDAKPBN = ::std::option::Option::None;
+        self.ODENMDAKPBN = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdatePsnSettingsInfoCsReq {
         static instance: UpdatePsnSettingsInfoCsReq = UpdatePsnSettingsInfoCsReq {
-            OLMDJGNMKFI: ::std::option::Option::None,
+            ODENMDAKPBN: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -279,37 +279,37 @@ pub mod update_psn_settings_info_cs_req {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:UpdatePsnSettingsInfoCsReq.OLMDJGNMKFI)
-    pub enum OLMDJGNMKFI {
-        // @@protoc_insertion_point(oneof_field:UpdatePsnSettingsInfoCsReq.CBIONLOHECO)
-        CBIONLOHECO(super::super::LODLBMPAHKB::LODLBMPAHKB),
-        // @@protoc_insertion_point(oneof_field:UpdatePsnSettingsInfoCsReq.MCAJLEBOKOI)
-        MCAJLEBOKOI(super::super::JPPECDLFCEE::JPPECDLFCEE),
+    // @@protoc_insertion_point(oneof:UpdatePsnSettingsInfoCsReq.ODENMDAKPBN)
+    pub enum ODENMDAKPBN {
+        // @@protoc_insertion_point(oneof_field:UpdatePsnSettingsInfoCsReq.AKJFADFKBDJ)
+        AKJFADFKBDJ(super::super::MKCDFIIKEPP::MKCDFIIKEPP),
+        // @@protoc_insertion_point(oneof_field:UpdatePsnSettingsInfoCsReq.NFAMEILPPGI)
+        NFAMEILPPGI(super::super::GIBBJHPOHGE::GIBBJHPOHGE),
     }
 
-    impl ::protobuf::Oneof for OLMDJGNMKFI {
+    impl ::protobuf::Oneof for ODENMDAKPBN {
     }
 
-    impl ::protobuf::OneofFull for OLMDJGNMKFI {
+    impl ::protobuf::OneofFull for ODENMDAKPBN {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::UpdatePsnSettingsInfoCsReq as ::protobuf::MessageFull>::descriptor().oneof_by_name("OLMDJGNMKFI").unwrap()).clone()
+            descriptor.get(|| <super::UpdatePsnSettingsInfoCsReq as ::protobuf::MessageFull>::descriptor().oneof_by_name("ODENMDAKPBN").unwrap()).clone()
         }
     }
 
-    impl OLMDJGNMKFI {
+    impl ODENMDAKPBN {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<OLMDJGNMKFI>("OLMDJGNMKFI")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<ODENMDAKPBN>("ODENMDAKPBN")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20UpdatePsnSettingsInfoCsReq.proto\x1a\x11JPPECDLFCEE.proto\x1a\x11L\
-    ODLBMPAHKB.proto\"\x91\x01\n\x1aUpdatePsnSettingsInfoCsReq\x121\n\x0bCBI\
-    ONLOHECO\x18\x8a\n\x20\x01(\x0b2\x0c.LODLBMPAHKBH\0R\x0bCBIONLOHECO\x121\
-    \n\x0bMCAJLEBOKOI\x18\xc7\x04\x20\x01(\x0b2\x0c.JPPECDLFCEEH\0R\x0bMCAJL\
-    EBOKOIB\r\n\x0bOLMDJGNMKFIb\x06proto3\
+    \n\x20UpdatePsnSettingsInfoCsReq.proto\x1a\x11GIBBJHPOHGE.proto\x1a\x11M\
+    KCDFIIKEPP.proto\"\x91\x01\n\x1aUpdatePsnSettingsInfoCsReq\x121\n\x0bAKJ\
+    FADFKBDJ\x18\xf3\x08\x20\x01(\x0b2\x0c.MKCDFIIKEPPH\0R\x0bAKJFADFKBDJ\
+    \x121\n\x0bNFAMEILPPGI\x18\x95\x0b\x20\x01(\x0b2\x0c.GIBBJHPOHGEH\0R\x0b\
+    NFAMEILPPGIB\r\n\x0bODENMDAKPBNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -327,8 +327,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::JPPECDLFCEE::file_descriptor().clone());
-            deps.push(super::LODLBMPAHKB::file_descriptor().clone());
+            deps.push(super::GIBBJHPOHGE::file_descriptor().clone());
+            deps.push(super::MKCDFIIKEPP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(UpdatePsnSettingsInfoCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

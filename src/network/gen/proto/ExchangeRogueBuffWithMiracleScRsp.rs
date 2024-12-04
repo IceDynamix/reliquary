@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ExchangeRogueBuffWithMiracleScRsp {
     // message fields
+    // @@protoc_insertion_point(field:ExchangeRogueBuffWithMiracleScRsp.ADADHIHDHJC)
+    pub ADADHIHDHJC: u32,
     // @@protoc_insertion_point(field:ExchangeRogueBuffWithMiracleScRsp.ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF)
-    pub ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF: ::protobuf::MessageField<super::CCMHPCONEME::CCMHPCONEME>,
-    // @@protoc_insertion_point(field:ExchangeRogueBuffWithMiracleScRsp.retcode)
-    pub retcode: u32,
+    pub ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF: ::protobuf::MessageField<super::PAPPEKLEDIK::PAPPEKLEDIK>,
     // special fields
     // @@protoc_insertion_point(special_field:ExchangeRogueBuffWithMiracleScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl ExchangeRogueBuffWithMiracleScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CCMHPCONEME::CCMHPCONEME>(
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ADADHIHDHJC",
+            |m: &ExchangeRogueBuffWithMiracleScRsp| { &m.ADADHIHDHJC },
+            |m: &mut ExchangeRogueBuffWithMiracleScRsp| { &mut m.ADADHIHDHJC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PAPPEKLEDIK::PAPPEKLEDIK>(
             "ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF",
             |m: &ExchangeRogueBuffWithMiracleScRsp| { &m.ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF },
             |m: &mut ExchangeRogueBuffWithMiracleScRsp| { &mut m.ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &ExchangeRogueBuffWithMiracleScRsp| { &m.retcode },
-            |m: &mut ExchangeRogueBuffWithMiracleScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ExchangeRogueBuffWithMiracleScRsp>(
             "ExchangeRogueBuffWithMiracleScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for ExchangeRogueBuffWithMiracleScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF)?;
+                104 => {
+                    self.ADADHIHDHJC = is.read_uint32()?;
                 },
-                56 => {
-                    self.retcode = is.read_uint32()?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,12 +98,12 @@ impl ::protobuf::Message for ExchangeRogueBuffWithMiracleScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.ADADHIHDHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.ADADHIHDHJC);
+        }
         if let Some(v) = self.ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for ExchangeRogueBuffWithMiracleScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if self.ADADHIHDHJC != 0 {
+            os.write_uint32(13, self.ADADHIHDHJC)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+        if let Some(v) = self.ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for ExchangeRogueBuffWithMiracleScRsp {
     }
 
     fn clear(&mut self) {
+        self.ADADHIHDHJC = 0;
         self.ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF.clear();
-        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ExchangeRogueBuffWithMiracleScRsp {
         static instance: ExchangeRogueBuffWithMiracleScRsp = ExchangeRogueBuffWithMiracleScRsp {
+            ADADHIHDHJC: 0,
             ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF: ::protobuf::MessageField::none(),
-            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,11 +167,11 @@ impl ::protobuf::reflect::ProtobufValue for ExchangeRogueBuffWithMiracleScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'ExchangeRogueBuffWithMiracleScRsp.proto\x1a\x11CCMHPCONEME.proto\"\
-    \xa7\x01\n!ExchangeRogueBuffWithMiracleScRsp\x12h\n+ROGUE_COMMON_ACTION_\
-    RESULT_SOURCE_TYPE_BUFF\x18\x0e\x20\x01(\x0b2\x0c.CCMHPCONEMER%ROGUECOMM\
-    ONACTIONRESULTSOURCETYPEBUFF\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\
-    \x07retcodeb\x06proto3\
+    \n'ExchangeRogueBuffWithMiracleScRsp.proto\x1a\x11PAPPEKLEDIK.proto\"\
+    \xaf\x01\n!ExchangeRogueBuffWithMiracleScRsp\x12\x20\n\x0bADADHIHDHJC\
+    \x18\r\x20\x01(\rR\x0bADADHIHDHJC\x12h\n+ROGUE_COMMON_ACTION_RESULT_SOUR\
+    CE_TYPE_BUFF\x18\x02\x20\x01(\x0b2\x0c.PAPPEKLEDIKR%ROGUECOMMONACTIONRES\
+    ULTSOURCETYPEBUFFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -189,7 +189,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::CCMHPCONEME::file_descriptor().clone());
+            deps.push(super::PAPPEKLEDIK::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ExchangeRogueBuffWithMiracleScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

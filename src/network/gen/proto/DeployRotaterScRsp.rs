@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DeployRotaterScRsp {
     // message fields
+    // @@protoc_insertion_point(field:DeployRotaterScRsp.energy_info)
+    pub energy_info: ::protobuf::MessageField<super::RotatorEnergyInfo::RotatorEnergyInfo>,
     // @@protoc_insertion_point(field:DeployRotaterScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:DeployRotaterScRsp.PNNKEEFNNOI)
-    pub PNNKEEFNNOI: ::protobuf::MessageField<super::OOBODNGFOAP::OOBODNGFOAP>,
-    // @@protoc_insertion_point(field:DeployRotaterScRsp.BBNNIDBMOMM)
-    pub BBNNIDBMOMM: ::protobuf::MessageField<super::KPHGEEFLHNP::KPHGEEFLHNP>,
+    // @@protoc_insertion_point(field:DeployRotaterScRsp.rotater_data)
+    pub rotater_data: ::protobuf::MessageField<super::RotaterData::RotaterData>,
     // special fields
     // @@protoc_insertion_point(special_field:DeployRotaterScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl DeployRotaterScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RotatorEnergyInfo::RotatorEnergyInfo>(
+            "energy_info",
+            |m: &DeployRotaterScRsp| { &m.energy_info },
+            |m: &mut DeployRotaterScRsp| { &mut m.energy_info },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &DeployRotaterScRsp| { &m.retcode },
             |m: &mut DeployRotaterScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OOBODNGFOAP::OOBODNGFOAP>(
-            "PNNKEEFNNOI",
-            |m: &DeployRotaterScRsp| { &m.PNNKEEFNNOI },
-            |m: &mut DeployRotaterScRsp| { &mut m.PNNKEEFNNOI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KPHGEEFLHNP::KPHGEEFLHNP>(
-            "BBNNIDBMOMM",
-            |m: &DeployRotaterScRsp| { &m.BBNNIDBMOMM },
-            |m: &mut DeployRotaterScRsp| { &mut m.BBNNIDBMOMM },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RotaterData::RotaterData>(
+            "rotater_data",
+            |m: &DeployRotaterScRsp| { &m.rotater_data },
+            |m: &mut DeployRotaterScRsp| { &mut m.rotater_data },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DeployRotaterScRsp>(
             "DeployRotaterScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for DeployRotaterScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.energy_info)?;
+                },
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PNNKEEFNNOI)?;
-                },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BBNNIDBMOMM)?;
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rotater_data)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for DeployRotaterScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
-        }
-        if let Some(v) = self.PNNKEEFNNOI.as_ref() {
+        if let Some(v) = self.energy_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.BBNNIDBMOMM.as_ref() {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        }
+        if let Some(v) = self.rotater_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -125,14 +125,14 @@ impl ::protobuf::Message for DeployRotaterScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
-        }
-        if let Some(v) = self.PNNKEEFNNOI.as_ref() {
+        if let Some(v) = self.energy_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
-        if let Some(v) = self.BBNNIDBMOMM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(1, self.retcode)?;
+        }
+        if let Some(v) = self.rotater_data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,17 +151,17 @@ impl ::protobuf::Message for DeployRotaterScRsp {
     }
 
     fn clear(&mut self) {
+        self.energy_info.clear();
         self.retcode = 0;
-        self.PNNKEEFNNOI.clear();
-        self.BBNNIDBMOMM.clear();
+        self.rotater_data.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DeployRotaterScRsp {
         static instance: DeployRotaterScRsp = DeployRotaterScRsp {
+            energy_info: ::protobuf::MessageField::none(),
             retcode: 0,
-            PNNKEEFNNOI: ::protobuf::MessageField::none(),
-            BBNNIDBMOMM: ::protobuf::MessageField::none(),
+            rotater_data: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,11 +186,12 @@ impl ::protobuf::reflect::ProtobufValue for DeployRotaterScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18DeployRotaterScRsp.proto\x1a\x11KPHGEEFLHNP.proto\x1a\x11OOBODNGFO\
-    AP.proto\"\x8e\x01\n\x12DeployRotaterScRsp\x12\x18\n\x07retcode\x18\x0b\
-    \x20\x01(\rR\x07retcode\x12.\n\x0bPNNKEEFNNOI\x18\r\x20\x01(\x0b2\x0c.OO\
-    BODNGFOAPR\x0bPNNKEEFNNOI\x12.\n\x0bBBNNIDBMOMM\x18\x06\x20\x01(\x0b2\
-    \x0c.KPHGEEFLHNPR\x0bBBNNIDBMOMMb\x06proto3\
+    \n\x18DeployRotaterScRsp.proto\x1a\x11RotaterData.proto\x1a\x17RotatorEn\
+    ergyInfo.proto\"\x94\x01\n\x12DeployRotaterScRsp\x123\n\x0benergy_info\
+    \x18\r\x20\x01(\x0b2\x12.RotatorEnergyInfoR\nenergyInfo\x12\x18\n\x07ret\
+    code\x18\x01\x20\x01(\rR\x07retcode\x12/\n\x0crotater_data\x18\x0b\x20\
+    \x01(\x0b2\x0c.RotaterDataR\x0brotaterDataB\x15\n\x13emu.lunarcore.proto\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -208,8 +209,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::KPHGEEFLHNP::file_descriptor().clone());
-            deps.push(super::OOBODNGFOAP::file_descriptor().clone());
+            deps.push(super::RotaterData::file_descriptor().clone());
+            deps.push(super::RotatorEnergyInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(DeployRotaterScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,18 +29,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetReplayTokenCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetReplayTokenCsReq.EHOAOABENLA)
-    pub EHOAOABENLA: u32,
-    // @@protoc_insertion_point(field:GetReplayTokenCsReq.GOIBGNNMHAK)
-    pub GOIBGNNMHAK: ::std::string::String,
-    // @@protoc_insertion_point(field:GetReplayTokenCsReq.LDEABGLLEEK)
-    pub LDEABGLLEEK: u32,
-    // @@protoc_insertion_point(field:GetReplayTokenCsReq.FIIGLKMJODG)
-    pub FIIGLKMJODG: ::protobuf::EnumOrUnknown<super::GPLHKPMPAOH::GPLHKPMPAOH>,
-    // @@protoc_insertion_point(field:GetReplayTokenCsReq.IDIEPEFFGIC)
-    pub IDIEPEFFGIC: u32,
-    // @@protoc_insertion_point(field:GetReplayTokenCsReq.BNCOODAHHPC)
-    pub BNCOODAHHPC: ::std::string::String,
+    // @@protoc_insertion_point(field:GetReplayTokenCsReq.FJCKEOKNBJL)
+    pub FJCKEOKNBJL: ::std::string::String,
+    // @@protoc_insertion_point(field:GetReplayTokenCsReq.HKCCFGPIBIM)
+    pub HKCCFGPIBIM: ::std::string::String,
+    // @@protoc_insertion_point(field:GetReplayTokenCsReq.GCPFDFINJFM)
+    pub GCPFDFINJFM: u32,
+    // @@protoc_insertion_point(field:GetReplayTokenCsReq.LOGEBIDMFJD)
+    pub LOGEBIDMFJD: ::protobuf::EnumOrUnknown<super::JAOPMDDBNHF::JAOPMDDBNHF>,
+    // @@protoc_insertion_point(field:GetReplayTokenCsReq.KAGEGBLHJDJ)
+    pub KAGEGBLHJDJ: u32,
+    // @@protoc_insertion_point(field:GetReplayTokenCsReq.KMEAPHPPMMN)
+    pub KMEAPHPPMMN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetReplayTokenCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,34 +61,34 @@ impl GetReplayTokenCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EHOAOABENLA",
-            |m: &GetReplayTokenCsReq| { &m.EHOAOABENLA },
-            |m: &mut GetReplayTokenCsReq| { &mut m.EHOAOABENLA },
+            "FJCKEOKNBJL",
+            |m: &GetReplayTokenCsReq| { &m.FJCKEOKNBJL },
+            |m: &mut GetReplayTokenCsReq| { &mut m.FJCKEOKNBJL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GOIBGNNMHAK",
-            |m: &GetReplayTokenCsReq| { &m.GOIBGNNMHAK },
-            |m: &mut GetReplayTokenCsReq| { &mut m.GOIBGNNMHAK },
+            "HKCCFGPIBIM",
+            |m: &GetReplayTokenCsReq| { &m.HKCCFGPIBIM },
+            |m: &mut GetReplayTokenCsReq| { &mut m.HKCCFGPIBIM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LDEABGLLEEK",
-            |m: &GetReplayTokenCsReq| { &m.LDEABGLLEEK },
-            |m: &mut GetReplayTokenCsReq| { &mut m.LDEABGLLEEK },
+            "GCPFDFINJFM",
+            |m: &GetReplayTokenCsReq| { &m.GCPFDFINJFM },
+            |m: &mut GetReplayTokenCsReq| { &mut m.GCPFDFINJFM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FIIGLKMJODG",
-            |m: &GetReplayTokenCsReq| { &m.FIIGLKMJODG },
-            |m: &mut GetReplayTokenCsReq| { &mut m.FIIGLKMJODG },
+            "LOGEBIDMFJD",
+            |m: &GetReplayTokenCsReq| { &m.LOGEBIDMFJD },
+            |m: &mut GetReplayTokenCsReq| { &mut m.LOGEBIDMFJD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IDIEPEFFGIC",
-            |m: &GetReplayTokenCsReq| { &m.IDIEPEFFGIC },
-            |m: &mut GetReplayTokenCsReq| { &mut m.IDIEPEFFGIC },
+            "KAGEGBLHJDJ",
+            |m: &GetReplayTokenCsReq| { &m.KAGEGBLHJDJ },
+            |m: &mut GetReplayTokenCsReq| { &mut m.KAGEGBLHJDJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BNCOODAHHPC",
-            |m: &GetReplayTokenCsReq| { &m.BNCOODAHHPC },
-            |m: &mut GetReplayTokenCsReq| { &mut m.BNCOODAHHPC },
+            "KMEAPHPPMMN",
+            |m: &GetReplayTokenCsReq| { &m.KMEAPHPPMMN },
+            |m: &mut GetReplayTokenCsReq| { &mut m.KMEAPHPPMMN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetReplayTokenCsReq>(
             "GetReplayTokenCsReq",
@@ -108,23 +108,23 @@ impl ::protobuf::Message for GetReplayTokenCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.EHOAOABENLA = is.read_uint32()?;
-                },
                 114 => {
-                    self.GOIBGNNMHAK = is.read_string()?;
+                    self.FJCKEOKNBJL = is.read_string()?;
                 },
-                24 => {
-                    self.LDEABGLLEEK = is.read_uint32()?;
+                82 => {
+                    self.HKCCFGPIBIM = is.read_string()?;
+                },
+                88 => {
+                    self.GCPFDFINJFM = is.read_uint32()?;
+                },
+                120 => {
+                    self.LOGEBIDMFJD = is.read_enum_or_unknown()?;
+                },
+                16 => {
+                    self.KAGEGBLHJDJ = is.read_uint32()?;
                 },
                 104 => {
-                    self.FIIGLKMJODG = is.read_enum_or_unknown()?;
-                },
-                56 => {
-                    self.IDIEPEFFGIC = is.read_uint32()?;
-                },
-                18 => {
-                    self.BNCOODAHHPC = is.read_string()?;
+                    self.KMEAPHPPMMN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -138,23 +138,23 @@ impl ::protobuf::Message for GetReplayTokenCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EHOAOABENLA != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.EHOAOABENLA);
+        if !self.FJCKEOKNBJL.is_empty() {
+            my_size += ::protobuf::rt::string_size(14, &self.FJCKEOKNBJL);
         }
-        if !self.GOIBGNNMHAK.is_empty() {
-            my_size += ::protobuf::rt::string_size(14, &self.GOIBGNNMHAK);
+        if !self.HKCCFGPIBIM.is_empty() {
+            my_size += ::protobuf::rt::string_size(10, &self.HKCCFGPIBIM);
         }
-        if self.LDEABGLLEEK != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.LDEABGLLEEK);
+        if self.GCPFDFINJFM != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.GCPFDFINJFM);
         }
-        if self.FIIGLKMJODG != ::protobuf::EnumOrUnknown::new(super::GPLHKPMPAOH::GPLHKPMPAOH::REPLAY_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(13, self.FIIGLKMJODG.value());
+        if self.LOGEBIDMFJD != ::protobuf::EnumOrUnknown::new(super::JAOPMDDBNHF::JAOPMDDBNHF::REPLAY_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(15, self.LOGEBIDMFJD.value());
         }
-        if self.IDIEPEFFGIC != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.IDIEPEFFGIC);
+        if self.KAGEGBLHJDJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.KAGEGBLHJDJ);
         }
-        if !self.BNCOODAHHPC.is_empty() {
-            my_size += ::protobuf::rt::string_size(2, &self.BNCOODAHHPC);
+        if self.KMEAPHPPMMN != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.KMEAPHPPMMN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,23 +162,23 @@ impl ::protobuf::Message for GetReplayTokenCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EHOAOABENLA != 0 {
-            os.write_uint32(4, self.EHOAOABENLA)?;
+        if !self.FJCKEOKNBJL.is_empty() {
+            os.write_string(14, &self.FJCKEOKNBJL)?;
         }
-        if !self.GOIBGNNMHAK.is_empty() {
-            os.write_string(14, &self.GOIBGNNMHAK)?;
+        if !self.HKCCFGPIBIM.is_empty() {
+            os.write_string(10, &self.HKCCFGPIBIM)?;
         }
-        if self.LDEABGLLEEK != 0 {
-            os.write_uint32(3, self.LDEABGLLEEK)?;
+        if self.GCPFDFINJFM != 0 {
+            os.write_uint32(11, self.GCPFDFINJFM)?;
         }
-        if self.FIIGLKMJODG != ::protobuf::EnumOrUnknown::new(super::GPLHKPMPAOH::GPLHKPMPAOH::REPLAY_TYPE_NONE) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.FIIGLKMJODG))?;
+        if self.LOGEBIDMFJD != ::protobuf::EnumOrUnknown::new(super::JAOPMDDBNHF::JAOPMDDBNHF::REPLAY_TYPE_NONE) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.LOGEBIDMFJD))?;
         }
-        if self.IDIEPEFFGIC != 0 {
-            os.write_uint32(7, self.IDIEPEFFGIC)?;
+        if self.KAGEGBLHJDJ != 0 {
+            os.write_uint32(2, self.KAGEGBLHJDJ)?;
         }
-        if !self.BNCOODAHHPC.is_empty() {
-            os.write_string(2, &self.BNCOODAHHPC)?;
+        if self.KMEAPHPPMMN != 0 {
+            os.write_uint32(13, self.KMEAPHPPMMN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,23 +197,23 @@ impl ::protobuf::Message for GetReplayTokenCsReq {
     }
 
     fn clear(&mut self) {
-        self.EHOAOABENLA = 0;
-        self.GOIBGNNMHAK.clear();
-        self.LDEABGLLEEK = 0;
-        self.FIIGLKMJODG = ::protobuf::EnumOrUnknown::new(super::GPLHKPMPAOH::GPLHKPMPAOH::REPLAY_TYPE_NONE);
-        self.IDIEPEFFGIC = 0;
-        self.BNCOODAHHPC.clear();
+        self.FJCKEOKNBJL.clear();
+        self.HKCCFGPIBIM.clear();
+        self.GCPFDFINJFM = 0;
+        self.LOGEBIDMFJD = ::protobuf::EnumOrUnknown::new(super::JAOPMDDBNHF::JAOPMDDBNHF::REPLAY_TYPE_NONE);
+        self.KAGEGBLHJDJ = 0;
+        self.KMEAPHPPMMN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetReplayTokenCsReq {
         static instance: GetReplayTokenCsReq = GetReplayTokenCsReq {
-            EHOAOABENLA: 0,
-            GOIBGNNMHAK: ::std::string::String::new(),
-            LDEABGLLEEK: 0,
-            FIIGLKMJODG: ::protobuf::EnumOrUnknown::from_i32(0),
-            IDIEPEFFGIC: 0,
-            BNCOODAHHPC: ::std::string::String::new(),
+            FJCKEOKNBJL: ::std::string::String::new(),
+            HKCCFGPIBIM: ::std::string::String::new(),
+            GCPFDFINJFM: 0,
+            LOGEBIDMFJD: ::protobuf::EnumOrUnknown::from_i32(0),
+            KAGEGBLHJDJ: 0,
+            KMEAPHPPMMN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -238,13 +238,13 @@ impl ::protobuf::reflect::ProtobufValue for GetReplayTokenCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19GetReplayTokenCsReq.proto\x1a\x11GPLHKPMPAOH.proto\"\xef\x01\n\x13\
-    GetReplayTokenCsReq\x12\x20\n\x0bEHOAOABENLA\x18\x04\x20\x01(\rR\x0bEHOA\
-    OABENLA\x12\x20\n\x0bGOIBGNNMHAK\x18\x0e\x20\x01(\tR\x0bGOIBGNNMHAK\x12\
-    \x20\n\x0bLDEABGLLEEK\x18\x03\x20\x01(\rR\x0bLDEABGLLEEK\x12.\n\x0bFIIGL\
-    KMJODG\x18\r\x20\x01(\x0e2\x0c.GPLHKPMPAOHR\x0bFIIGLKMJODG\x12\x20\n\x0b\
-    IDIEPEFFGIC\x18\x07\x20\x01(\rR\x0bIDIEPEFFGIC\x12\x20\n\x0bBNCOODAHHPC\
-    \x18\x02\x20\x01(\tR\x0bBNCOODAHHPCb\x06proto3\
+    \n\x19GetReplayTokenCsReq.proto\x1a\x11JAOPMDDBNHF.proto\"\xef\x01\n\x13\
+    GetReplayTokenCsReq\x12\x20\n\x0bFJCKEOKNBJL\x18\x0e\x20\x01(\tR\x0bFJCK\
+    EOKNBJL\x12\x20\n\x0bHKCCFGPIBIM\x18\n\x20\x01(\tR\x0bHKCCFGPIBIM\x12\
+    \x20\n\x0bGCPFDFINJFM\x18\x0b\x20\x01(\rR\x0bGCPFDFINJFM\x12.\n\x0bLOGEB\
+    IDMFJD\x18\x0f\x20\x01(\x0e2\x0c.JAOPMDDBNHFR\x0bLOGEBIDMFJD\x12\x20\n\
+    \x0bKAGEGBLHJDJ\x18\x02\x20\x01(\rR\x0bKAGEGBLHJDJ\x12\x20\n\x0bKMEAPHPP\
+    MMN\x18\r\x20\x01(\rR\x0bKMEAPHPPMMNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -262,7 +262,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::GPLHKPMPAOH::file_descriptor().clone());
+            deps.push(super::JAOPMDDBNHF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetReplayTokenCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

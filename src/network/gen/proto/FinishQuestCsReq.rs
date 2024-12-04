@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishQuestCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FinishQuestCsReq.GCFIIGOLPMF)
-    pub GCFIIGOLPMF: u32,
-    // @@protoc_insertion_point(field:FinishQuestCsReq.ONAHLDMECNL)
-    pub ONAHLDMECNL: u32,
-    // @@protoc_insertion_point(field:FinishQuestCsReq.OAGKDKDDFAO)
-    pub OAGKDKDDFAO: u32,
+    // @@protoc_insertion_point(field:FinishQuestCsReq.FJHBEFPHDIH)
+    pub FJHBEFPHDIH: u32,
+    // @@protoc_insertion_point(field:FinishQuestCsReq.ILIFHHJFMIH)
+    pub ILIFHHJFMIH: u32,
+    // @@protoc_insertion_point(field:FinishQuestCsReq.GODPONHFDFN)
+    pub GODPONHFDFN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FinishQuestCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl FinishQuestCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GCFIIGOLPMF",
-            |m: &FinishQuestCsReq| { &m.GCFIIGOLPMF },
-            |m: &mut FinishQuestCsReq| { &mut m.GCFIIGOLPMF },
+            "FJHBEFPHDIH",
+            |m: &FinishQuestCsReq| { &m.FJHBEFPHDIH },
+            |m: &mut FinishQuestCsReq| { &mut m.FJHBEFPHDIH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ONAHLDMECNL",
-            |m: &FinishQuestCsReq| { &m.ONAHLDMECNL },
-            |m: &mut FinishQuestCsReq| { &mut m.ONAHLDMECNL },
+            "ILIFHHJFMIH",
+            |m: &FinishQuestCsReq| { &m.ILIFHHJFMIH },
+            |m: &mut FinishQuestCsReq| { &mut m.ILIFHHJFMIH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OAGKDKDDFAO",
-            |m: &FinishQuestCsReq| { &m.OAGKDKDDFAO },
-            |m: &mut FinishQuestCsReq| { &mut m.OAGKDKDDFAO },
+            "GODPONHFDFN",
+            |m: &FinishQuestCsReq| { &m.GODPONHFDFN },
+            |m: &mut FinishQuestCsReq| { &mut m.GODPONHFDFN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishQuestCsReq>(
             "FinishQuestCsReq",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for FinishQuestCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.GCFIIGOLPMF = is.read_uint32()?;
+                32 => {
+                    self.FJHBEFPHDIH = is.read_uint32()?;
                 },
-                104 => {
-                    self.ONAHLDMECNL = is.read_uint32()?;
+                80 => {
+                    self.ILIFHHJFMIH = is.read_uint32()?;
                 },
                 72 => {
-                    self.OAGKDKDDFAO = is.read_uint32()?;
+                    self.GODPONHFDFN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for FinishQuestCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GCFIIGOLPMF != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.GCFIIGOLPMF);
+        if self.FJHBEFPHDIH != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.FJHBEFPHDIH);
         }
-        if self.ONAHLDMECNL != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.ONAHLDMECNL);
+        if self.ILIFHHJFMIH != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.ILIFHHJFMIH);
         }
-        if self.OAGKDKDDFAO != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.OAGKDKDDFAO);
+        if self.GODPONHFDFN != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.GODPONHFDFN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for FinishQuestCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GCFIIGOLPMF != 0 {
-            os.write_uint32(3, self.GCFIIGOLPMF)?;
+        if self.FJHBEFPHDIH != 0 {
+            os.write_uint32(4, self.FJHBEFPHDIH)?;
         }
-        if self.ONAHLDMECNL != 0 {
-            os.write_uint32(13, self.ONAHLDMECNL)?;
+        if self.ILIFHHJFMIH != 0 {
+            os.write_uint32(10, self.ILIFHHJFMIH)?;
         }
-        if self.OAGKDKDDFAO != 0 {
-            os.write_uint32(9, self.OAGKDKDDFAO)?;
+        if self.GODPONHFDFN != 0 {
+            os.write_uint32(9, self.GODPONHFDFN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for FinishQuestCsReq {
     }
 
     fn clear(&mut self) {
-        self.GCFIIGOLPMF = 0;
-        self.ONAHLDMECNL = 0;
-        self.OAGKDKDDFAO = 0;
+        self.FJHBEFPHDIH = 0;
+        self.ILIFHHJFMIH = 0;
+        self.GODPONHFDFN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishQuestCsReq {
         static instance: FinishQuestCsReq = FinishQuestCsReq {
-            GCFIIGOLPMF: 0,
-            ONAHLDMECNL: 0,
-            OAGKDKDDFAO: 0,
+            FJHBEFPHDIH: 0,
+            ILIFHHJFMIH: 0,
+            GODPONHFDFN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for FinishQuestCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16FinishQuestCsReq.proto\"x\n\x10FinishQuestCsReq\x12\x20\n\x0bGCFII\
-    GOLPMF\x18\x03\x20\x01(\rR\x0bGCFIIGOLPMF\x12\x20\n\x0bONAHLDMECNL\x18\r\
-    \x20\x01(\rR\x0bONAHLDMECNL\x12\x20\n\x0bOAGKDKDDFAO\x18\t\x20\x01(\rR\
-    \x0bOAGKDKDDFAOb\x06proto3\
+    \n\x16FinishQuestCsReq.proto\"x\n\x10FinishQuestCsReq\x12\x20\n\x0bFJHBE\
+    FPHDIH\x18\x04\x20\x01(\rR\x0bFJHBEFPHDIH\x12\x20\n\x0bILIFHHJFMIH\x18\n\
+    \x20\x01(\rR\x0bILIFHHJFMIH\x12\x20\n\x0bGODPONHFDFN\x18\t\x20\x01(\rR\
+    \x0bGODPONHFDFNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

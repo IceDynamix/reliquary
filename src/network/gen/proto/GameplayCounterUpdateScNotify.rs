@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GameplayCounterUpdateScNotify {
     // message fields
-    // @@protoc_insertion_point(field:GameplayCounterUpdateScNotify.NNCFPDLCNHN)
-    pub NNCFPDLCNHN: u32,
-    // @@protoc_insertion_point(field:GameplayCounterUpdateScNotify.GEEJPHNHHOD)
-    pub GEEJPHNHHOD: u32,
-    // @@protoc_insertion_point(field:GameplayCounterUpdateScNotify.DGDDHBLKMLI)
-    pub DGDDHBLKMLI: ::protobuf::EnumOrUnknown<super::OCGBOFDLGGN::OCGBOFDLGGN>,
+    // @@protoc_insertion_point(field:GameplayCounterUpdateScNotify.KPPGEOMIKLJ)
+    pub KPPGEOMIKLJ: u32,
+    // @@protoc_insertion_point(field:GameplayCounterUpdateScNotify.KGGHLADEKGP)
+    pub KGGHLADEKGP: ::protobuf::EnumOrUnknown<super::FFBMLFLALLL::FFBMLFLALLL>,
+    // @@protoc_insertion_point(field:GameplayCounterUpdateScNotify.PFHEGFOOLHE)
+    pub PFHEGFOOLHE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GameplayCounterUpdateScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl GameplayCounterUpdateScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NNCFPDLCNHN",
-            |m: &GameplayCounterUpdateScNotify| { &m.NNCFPDLCNHN },
-            |m: &mut GameplayCounterUpdateScNotify| { &mut m.NNCFPDLCNHN },
+            "KPPGEOMIKLJ",
+            |m: &GameplayCounterUpdateScNotify| { &m.KPPGEOMIKLJ },
+            |m: &mut GameplayCounterUpdateScNotify| { &mut m.KPPGEOMIKLJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GEEJPHNHHOD",
-            |m: &GameplayCounterUpdateScNotify| { &m.GEEJPHNHHOD },
-            |m: &mut GameplayCounterUpdateScNotify| { &mut m.GEEJPHNHHOD },
+            "KGGHLADEKGP",
+            |m: &GameplayCounterUpdateScNotify| { &m.KGGHLADEKGP },
+            |m: &mut GameplayCounterUpdateScNotify| { &mut m.KGGHLADEKGP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DGDDHBLKMLI",
-            |m: &GameplayCounterUpdateScNotify| { &m.DGDDHBLKMLI },
-            |m: &mut GameplayCounterUpdateScNotify| { &mut m.DGDDHBLKMLI },
+            "PFHEGFOOLHE",
+            |m: &GameplayCounterUpdateScNotify| { &m.PFHEGFOOLHE },
+            |m: &mut GameplayCounterUpdateScNotify| { &mut m.PFHEGFOOLHE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GameplayCounterUpdateScNotify>(
             "GameplayCounterUpdateScNotify",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for GameplayCounterUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.NNCFPDLCNHN = is.read_uint32()?;
+                112 => {
+                    self.KPPGEOMIKLJ = is.read_uint32()?;
                 },
-                32 => {
-                    self.GEEJPHNHHOD = is.read_uint32()?;
+                104 => {
+                    self.KGGHLADEKGP = is.read_enum_or_unknown()?;
                 },
-                24 => {
-                    self.DGDDHBLKMLI = is.read_enum_or_unknown()?;
+                40 => {
+                    self.PFHEGFOOLHE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for GameplayCounterUpdateScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NNCFPDLCNHN != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.NNCFPDLCNHN);
+        if self.KPPGEOMIKLJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.KPPGEOMIKLJ);
         }
-        if self.GEEJPHNHHOD != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.GEEJPHNHHOD);
+        if self.KGGHLADEKGP != ::protobuf::EnumOrUnknown::new(super::FFBMLFLALLL::FFBMLFLALLL::GAMEPLAY_COUNTER_UPDATE_REASON_NONE) {
+            my_size += ::protobuf::rt::int32_size(13, self.KGGHLADEKGP.value());
         }
-        if self.DGDDHBLKMLI != ::protobuf::EnumOrUnknown::new(super::OCGBOFDLGGN::OCGBOFDLGGN::GAMEPLAY_COUNTER_UPDATE_REASON_NONE) {
-            my_size += ::protobuf::rt::int32_size(3, self.DGDDHBLKMLI.value());
+        if self.PFHEGFOOLHE != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.PFHEGFOOLHE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for GameplayCounterUpdateScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NNCFPDLCNHN != 0 {
-            os.write_uint32(12, self.NNCFPDLCNHN)?;
+        if self.KPPGEOMIKLJ != 0 {
+            os.write_uint32(14, self.KPPGEOMIKLJ)?;
         }
-        if self.GEEJPHNHHOD != 0 {
-            os.write_uint32(4, self.GEEJPHNHHOD)?;
+        if self.KGGHLADEKGP != ::protobuf::EnumOrUnknown::new(super::FFBMLFLALLL::FFBMLFLALLL::GAMEPLAY_COUNTER_UPDATE_REASON_NONE) {
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.KGGHLADEKGP))?;
         }
-        if self.DGDDHBLKMLI != ::protobuf::EnumOrUnknown::new(super::OCGBOFDLGGN::OCGBOFDLGGN::GAMEPLAY_COUNTER_UPDATE_REASON_NONE) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.DGDDHBLKMLI))?;
+        if self.PFHEGFOOLHE != 0 {
+            os.write_uint32(5, self.PFHEGFOOLHE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for GameplayCounterUpdateScNotify {
     }
 
     fn clear(&mut self) {
-        self.NNCFPDLCNHN = 0;
-        self.GEEJPHNHHOD = 0;
-        self.DGDDHBLKMLI = ::protobuf::EnumOrUnknown::new(super::OCGBOFDLGGN::OCGBOFDLGGN::GAMEPLAY_COUNTER_UPDATE_REASON_NONE);
+        self.KPPGEOMIKLJ = 0;
+        self.KGGHLADEKGP = ::protobuf::EnumOrUnknown::new(super::FFBMLFLALLL::FFBMLFLALLL::GAMEPLAY_COUNTER_UPDATE_REASON_NONE);
+        self.PFHEGFOOLHE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GameplayCounterUpdateScNotify {
         static instance: GameplayCounterUpdateScNotify = GameplayCounterUpdateScNotify {
-            NNCFPDLCNHN: 0,
-            GEEJPHNHHOD: 0,
-            DGDDHBLKMLI: ::protobuf::EnumOrUnknown::from_i32(0),
+            KPPGEOMIKLJ: 0,
+            KGGHLADEKGP: ::protobuf::EnumOrUnknown::from_i32(0),
+            PFHEGFOOLHE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for GameplayCounterUpdateScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#GameplayCounterUpdateScNotify.proto\x1a\x11OCGBOFDLGGN.proto\"\x93\
-    \x01\n\x1dGameplayCounterUpdateScNotify\x12\x20\n\x0bNNCFPDLCNHN\x18\x0c\
-    \x20\x01(\rR\x0bNNCFPDLCNHN\x12\x20\n\x0bGEEJPHNHHOD\x18\x04\x20\x01(\rR\
-    \x0bGEEJPHNHHOD\x12.\n\x0bDGDDHBLKMLI\x18\x03\x20\x01(\x0e2\x0c.OCGBOFDL\
-    GGNR\x0bDGDDHBLKMLIb\x06proto3\
+    \n#GameplayCounterUpdateScNotify.proto\x1a\x11FFBMLFLALLL.proto\"\x93\
+    \x01\n\x1dGameplayCounterUpdateScNotify\x12\x20\n\x0bKPPGEOMIKLJ\x18\x0e\
+    \x20\x01(\rR\x0bKPPGEOMIKLJ\x12.\n\x0bKGGHLADEKGP\x18\r\x20\x01(\x0e2\
+    \x0c.FFBMLFLALLLR\x0bKGGHLADEKGP\x12\x20\n\x0bPFHEGFOOLHE\x18\x05\x20\
+    \x01(\rR\x0bPFHEGFOOLHEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,7 +206,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::OCGBOFDLGGN::file_descriptor().clone());
+            deps.push(super::FFBMLFLALLL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GameplayCounterUpdateScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AddAvatarScNotify {
     // message fields
-    // @@protoc_insertion_point(field:AddAvatarScNotify.CBNBNPMOKNL)
-    pub CBNBNPMOKNL: ::protobuf::EnumOrUnknown<super::LPLPELBHLDN::LPLPELBHLDN>,
-    // @@protoc_insertion_point(field:AddAvatarScNotify.base_avatar_id)
-    pub base_avatar_id: u32,
-    // @@protoc_insertion_point(field:AddAvatarScNotify.AIPNGAMLBDL)
-    pub AIPNGAMLBDL: bool,
-    // @@protoc_insertion_point(field:AddAvatarScNotify.LPDNAMLHGNJ)
-    pub LPDNAMLHGNJ: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:AddAvatarScNotify.MBBINBIICGJ)
+    pub MBBINBIICGJ: u32,
+    // @@protoc_insertion_point(field:AddAvatarScNotify.ELPMNKHEPKJ)
+    pub ELPMNKHEPKJ: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:AddAvatarScNotify.NIBGHGMEGMG)
+    pub NIBGHGMEGMG: ::protobuf::EnumOrUnknown<super::BGCBDAJJEBP::BGCBDAJJEBP>,
+    // @@protoc_insertion_point(field:AddAvatarScNotify.LNCDLNLAPIK)
+    pub LNCDLNLAPIK: bool,
     // special fields
     // @@protoc_insertion_point(special_field:AddAvatarScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl AddAvatarScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CBNBNPMOKNL",
-            |m: &AddAvatarScNotify| { &m.CBNBNPMOKNL },
-            |m: &mut AddAvatarScNotify| { &mut m.CBNBNPMOKNL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "base_avatar_id",
-            |m: &AddAvatarScNotify| { &m.base_avatar_id },
-            |m: &mut AddAvatarScNotify| { &mut m.base_avatar_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AIPNGAMLBDL",
-            |m: &AddAvatarScNotify| { &m.AIPNGAMLBDL },
-            |m: &mut AddAvatarScNotify| { &mut m.AIPNGAMLBDL },
+            "MBBINBIICGJ",
+            |m: &AddAvatarScNotify| { &m.MBBINBIICGJ },
+            |m: &mut AddAvatarScNotify| { &mut m.MBBINBIICGJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "LPDNAMLHGNJ",
-            |m: &AddAvatarScNotify| { &m.LPDNAMLHGNJ },
-            |m: &mut AddAvatarScNotify| { &mut m.LPDNAMLHGNJ },
+            "ELPMNKHEPKJ",
+            |m: &AddAvatarScNotify| { &m.ELPMNKHEPKJ },
+            |m: &mut AddAvatarScNotify| { &mut m.ELPMNKHEPKJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NIBGHGMEGMG",
+            |m: &AddAvatarScNotify| { &m.NIBGHGMEGMG },
+            |m: &mut AddAvatarScNotify| { &mut m.NIBGHGMEGMG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LNCDLNLAPIK",
+            |m: &AddAvatarScNotify| { &m.LNCDLNLAPIK },
+            |m: &mut AddAvatarScNotify| { &mut m.LNCDLNLAPIK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AddAvatarScNotify>(
             "AddAvatarScNotify",
@@ -95,16 +95,16 @@ impl ::protobuf::Message for AddAvatarScNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 24 => {
-                    self.CBNBNPMOKNL = is.read_enum_or_unknown()?;
+                    self.MBBINBIICGJ = is.read_uint32()?;
                 },
-                56 => {
-                    self.base_avatar_id = is.read_uint32()?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ELPMNKHEPKJ)?;
                 },
-                8 => {
-                    self.AIPNGAMLBDL = is.read_bool()?;
+                64 => {
+                    self.NIBGHGMEGMG = is.read_enum_or_unknown()?;
                 },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LPDNAMLHGNJ)?;
+                72 => {
+                    self.LNCDLNLAPIK = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,18 +118,18 @@ impl ::protobuf::Message for AddAvatarScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CBNBNPMOKNL != ::protobuf::EnumOrUnknown::new(super::LPLPELBHLDN::LPLPELBHLDN::ADD_AVATAR_SRC_NONE) {
-            my_size += ::protobuf::rt::int32_size(3, self.CBNBNPMOKNL.value());
+        if self.MBBINBIICGJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.MBBINBIICGJ);
         }
-        if self.base_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.base_avatar_id);
-        }
-        if self.AIPNGAMLBDL != false {
-            my_size += 1 + 1;
-        }
-        if let Some(v) = self.LPDNAMLHGNJ.as_ref() {
+        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.NIBGHGMEGMG != ::protobuf::EnumOrUnknown::new(super::BGCBDAJJEBP::BGCBDAJJEBP::ADD_AVATAR_SRC_NONE) {
+            my_size += ::protobuf::rt::int32_size(8, self.NIBGHGMEGMG.value());
+        }
+        if self.LNCDLNLAPIK != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for AddAvatarScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CBNBNPMOKNL != ::protobuf::EnumOrUnknown::new(super::LPLPELBHLDN::LPLPELBHLDN::ADD_AVATAR_SRC_NONE) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.CBNBNPMOKNL))?;
+        if self.MBBINBIICGJ != 0 {
+            os.write_uint32(3, self.MBBINBIICGJ)?;
         }
-        if self.base_avatar_id != 0 {
-            os.write_uint32(7, self.base_avatar_id)?;
+        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
-        if self.AIPNGAMLBDL != false {
-            os.write_bool(1, self.AIPNGAMLBDL)?;
+        if self.NIBGHGMEGMG != ::protobuf::EnumOrUnknown::new(super::BGCBDAJJEBP::BGCBDAJJEBP::ADD_AVATAR_SRC_NONE) {
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.NIBGHGMEGMG))?;
         }
-        if let Some(v) = self.LPDNAMLHGNJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if self.LNCDLNLAPIK != false {
+            os.write_bool(9, self.LNCDLNLAPIK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for AddAvatarScNotify {
     }
 
     fn clear(&mut self) {
-        self.CBNBNPMOKNL = ::protobuf::EnumOrUnknown::new(super::LPLPELBHLDN::LPLPELBHLDN::ADD_AVATAR_SRC_NONE);
-        self.base_avatar_id = 0;
-        self.AIPNGAMLBDL = false;
-        self.LPDNAMLHGNJ.clear();
+        self.MBBINBIICGJ = 0;
+        self.ELPMNKHEPKJ.clear();
+        self.NIBGHGMEGMG = ::protobuf::EnumOrUnknown::new(super::BGCBDAJJEBP::BGCBDAJJEBP::ADD_AVATAR_SRC_NONE);
+        self.LNCDLNLAPIK = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AddAvatarScNotify {
         static instance: AddAvatarScNotify = AddAvatarScNotify {
-            CBNBNPMOKNL: ::protobuf::EnumOrUnknown::from_i32(0),
-            base_avatar_id: 0,
-            AIPNGAMLBDL: false,
-            LPDNAMLHGNJ: ::protobuf::MessageField::none(),
+            MBBINBIICGJ: 0,
+            ELPMNKHEPKJ: ::protobuf::MessageField::none(),
+            NIBGHGMEGMG: ::protobuf::EnumOrUnknown::from_i32(0),
+            LNCDLNLAPIK: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,12 +203,12 @@ impl ::protobuf::reflect::ProtobufValue for AddAvatarScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17AddAvatarScNotify.proto\x1a\x0eItemList.proto\x1a\x11LPLPELBHLDN.p\
-    roto\"\xb8\x01\n\x11AddAvatarScNotify\x12.\n\x0bCBNBNPMOKNL\x18\x03\x20\
-    \x01(\x0e2\x0c.LPLPELBHLDNR\x0bCBNBNPMOKNL\x12$\n\x0ebase_avatar_id\x18\
-    \x07\x20\x01(\rR\x0cbaseAvatarId\x12\x20\n\x0bAIPNGAMLBDL\x18\x01\x20\
-    \x01(\x08R\x0bAIPNGAMLBDL\x12+\n\x0bLPDNAMLHGNJ\x18\t\x20\x01(\x0b2\t.It\
-    emListR\x0bLPDNAMLHGNJb\x06proto3\
+    \n\x17AddAvatarScNotify.proto\x1a\x11BGCBDAJJEBP.proto\x1a\x0eItemList.p\
+    roto\"\xb4\x01\n\x11AddAvatarScNotify\x12\x20\n\x0bMBBINBIICGJ\x18\x03\
+    \x20\x01(\rR\x0bMBBINBIICGJ\x12+\n\x0bELPMNKHEPKJ\x18\x04\x20\x01(\x0b2\
+    \t.ItemListR\x0bELPMNKHEPKJ\x12.\n\x0bNIBGHGMEGMG\x18\x08\x20\x01(\x0e2\
+    \x0c.BGCBDAJJEBPR\x0bNIBGHGMEGMG\x12\x20\n\x0bLNCDLNLAPIK\x18\t\x20\x01(\
+    \x08R\x0bLNCDLNLAPIKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -226,8 +226,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
+            deps.push(super::BGCBDAJJEBP::file_descriptor().clone());
             deps.push(super::ItemList::file_descriptor().clone());
-            deps.push(super::LPLPELBHLDN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(AddAvatarScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

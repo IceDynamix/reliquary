@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MultiplayerMatch3FinishScNotify {
     // message fields
-    // @@protoc_insertion_point(field:MultiplayerMatch3FinishScNotify.DGDDHBLKMLI)
-    pub DGDDHBLKMLI: ::protobuf::EnumOrUnknown<super::AKMNBMKFKJK::AKMNBMKFKJK>,
-    // @@protoc_insertion_point(field:MultiplayerMatch3FinishScNotify.GDLOCKKLLIK)
-    pub GDLOCKKLLIK: u32,
-    // @@protoc_insertion_point(field:MultiplayerMatch3FinishScNotify.IMKELKMHOIK)
-    pub IMKELKMHOIK: ::protobuf::MessageField<super::DHPIFKICOPP::DHPIFKICOPP>,
-    // @@protoc_insertion_point(field:MultiplayerMatch3FinishScNotify.GBGHPFLHDBP)
-    pub GBGHPFLHDBP: u32,
+    // @@protoc_insertion_point(field:MultiplayerMatch3FinishScNotify.HPMEBECHEEN)
+    pub HPMEBECHEEN: u32,
+    // @@protoc_insertion_point(field:MultiplayerMatch3FinishScNotify.JOKEIGFCDOI)
+    pub JOKEIGFCDOI: ::protobuf::MessageField<super::MLBKADJEBNA::MLBKADJEBNA>,
+    // @@protoc_insertion_point(field:MultiplayerMatch3FinishScNotify.GIBBAHJJDIJ)
+    pub GIBBAHJJDIJ: u32,
+    // @@protoc_insertion_point(field:MultiplayerMatch3FinishScNotify.KGGHLADEKGP)
+    pub KGGHLADEKGP: ::protobuf::EnumOrUnknown<super::JPEDGMMIIFJ::JPEDGMMIIFJ>,
     // special fields
     // @@protoc_insertion_point(special_field:MultiplayerMatch3FinishScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl MultiplayerMatch3FinishScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DGDDHBLKMLI",
-            |m: &MultiplayerMatch3FinishScNotify| { &m.DGDDHBLKMLI },
-            |m: &mut MultiplayerMatch3FinishScNotify| { &mut m.DGDDHBLKMLI },
+            "HPMEBECHEEN",
+            |m: &MultiplayerMatch3FinishScNotify| { &m.HPMEBECHEEN },
+            |m: &mut MultiplayerMatch3FinishScNotify| { &mut m.HPMEBECHEEN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MLBKADJEBNA::MLBKADJEBNA>(
+            "JOKEIGFCDOI",
+            |m: &MultiplayerMatch3FinishScNotify| { &m.JOKEIGFCDOI },
+            |m: &mut MultiplayerMatch3FinishScNotify| { &mut m.JOKEIGFCDOI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GDLOCKKLLIK",
-            |m: &MultiplayerMatch3FinishScNotify| { &m.GDLOCKKLLIK },
-            |m: &mut MultiplayerMatch3FinishScNotify| { &mut m.GDLOCKKLLIK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DHPIFKICOPP::DHPIFKICOPP>(
-            "IMKELKMHOIK",
-            |m: &MultiplayerMatch3FinishScNotify| { &m.IMKELKMHOIK },
-            |m: &mut MultiplayerMatch3FinishScNotify| { &mut m.IMKELKMHOIK },
+            "GIBBAHJJDIJ",
+            |m: &MultiplayerMatch3FinishScNotify| { &m.GIBBAHJJDIJ },
+            |m: &mut MultiplayerMatch3FinishScNotify| { &mut m.GIBBAHJJDIJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GBGHPFLHDBP",
-            |m: &MultiplayerMatch3FinishScNotify| { &m.GBGHPFLHDBP },
-            |m: &mut MultiplayerMatch3FinishScNotify| { &mut m.GBGHPFLHDBP },
+            "KGGHLADEKGP",
+            |m: &MultiplayerMatch3FinishScNotify| { &m.KGGHLADEKGP },
+            |m: &mut MultiplayerMatch3FinishScNotify| { &mut m.KGGHLADEKGP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MultiplayerMatch3FinishScNotify>(
             "MultiplayerMatch3FinishScNotify",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for MultiplayerMatch3FinishScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.DGDDHBLKMLI = is.read_enum_or_unknown()?;
+                88 => {
+                    self.HPMEBECHEEN = is.read_uint32()?;
                 },
-                72 => {
-                    self.GDLOCKKLLIK = is.read_uint32()?;
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JOKEIGFCDOI)?;
                 },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IMKELKMHOIK)?;
+                16 => {
+                    self.GIBBAHJJDIJ = is.read_uint32()?;
                 },
-                56 => {
-                    self.GBGHPFLHDBP = is.read_uint32()?;
+                48 => {
+                    self.KGGHLADEKGP = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,18 +118,18 @@ impl ::protobuf::Message for MultiplayerMatch3FinishScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DGDDHBLKMLI != ::protobuf::EnumOrUnknown::new(super::AKMNBMKFKJK::AKMNBMKFKJK::MATCH3_FINISH_REASON_DEFAULT) {
-            my_size += ::protobuf::rt::int32_size(1, self.DGDDHBLKMLI.value());
+        if self.HPMEBECHEEN != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.HPMEBECHEEN);
         }
-        if self.GDLOCKKLLIK != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.GDLOCKKLLIK);
-        }
-        if let Some(v) = self.IMKELKMHOIK.as_ref() {
+        if let Some(v) = self.JOKEIGFCDOI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.GBGHPFLHDBP != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.GBGHPFLHDBP);
+        if self.GIBBAHJJDIJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.GIBBAHJJDIJ);
+        }
+        if self.KGGHLADEKGP != ::protobuf::EnumOrUnknown::new(super::JPEDGMMIIFJ::JPEDGMMIIFJ::MATCH3_FINISH_REASON_DEFAULT) {
+            my_size += ::protobuf::rt::int32_size(6, self.KGGHLADEKGP.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for MultiplayerMatch3FinishScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DGDDHBLKMLI != ::protobuf::EnumOrUnknown::new(super::AKMNBMKFKJK::AKMNBMKFKJK::MATCH3_FINISH_REASON_DEFAULT) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.DGDDHBLKMLI))?;
+        if self.HPMEBECHEEN != 0 {
+            os.write_uint32(11, self.HPMEBECHEEN)?;
         }
-        if self.GDLOCKKLLIK != 0 {
-            os.write_uint32(9, self.GDLOCKKLLIK)?;
+        if let Some(v) = self.JOKEIGFCDOI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
-        if let Some(v) = self.IMKELKMHOIK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if self.GIBBAHJJDIJ != 0 {
+            os.write_uint32(2, self.GIBBAHJJDIJ)?;
         }
-        if self.GBGHPFLHDBP != 0 {
-            os.write_uint32(7, self.GBGHPFLHDBP)?;
+        if self.KGGHLADEKGP != ::protobuf::EnumOrUnknown::new(super::JPEDGMMIIFJ::JPEDGMMIIFJ::MATCH3_FINISH_REASON_DEFAULT) {
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.KGGHLADEKGP))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for MultiplayerMatch3FinishScNotify {
     }
 
     fn clear(&mut self) {
-        self.DGDDHBLKMLI = ::protobuf::EnumOrUnknown::new(super::AKMNBMKFKJK::AKMNBMKFKJK::MATCH3_FINISH_REASON_DEFAULT);
-        self.GDLOCKKLLIK = 0;
-        self.IMKELKMHOIK.clear();
-        self.GBGHPFLHDBP = 0;
+        self.HPMEBECHEEN = 0;
+        self.JOKEIGFCDOI.clear();
+        self.GIBBAHJJDIJ = 0;
+        self.KGGHLADEKGP = ::protobuf::EnumOrUnknown::new(super::JPEDGMMIIFJ::JPEDGMMIIFJ::MATCH3_FINISH_REASON_DEFAULT);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MultiplayerMatch3FinishScNotify {
         static instance: MultiplayerMatch3FinishScNotify = MultiplayerMatch3FinishScNotify {
-            DGDDHBLKMLI: ::protobuf::EnumOrUnknown::from_i32(0),
-            GDLOCKKLLIK: 0,
-            IMKELKMHOIK: ::protobuf::MessageField::none(),
-            GBGHPFLHDBP: 0,
+            HPMEBECHEEN: 0,
+            JOKEIGFCDOI: ::protobuf::MessageField::none(),
+            GIBBAHJJDIJ: 0,
+            KGGHLADEKGP: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,12 +203,12 @@ impl ::protobuf::reflect::ProtobufValue for MultiplayerMatch3FinishScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n%MultiplayerMatch3FinishScNotify.proto\x1a\x11AKMNBMKFKJK.proto\x1a\
-    \x11DHPIFKICOPP.proto\"\xc5\x01\n\x1fMultiplayerMatch3FinishScNotify\x12\
-    .\n\x0bDGDDHBLKMLI\x18\x01\x20\x01(\x0e2\x0c.AKMNBMKFKJKR\x0bDGDDHBLKMLI\
-    \x12\x20\n\x0bGDLOCKKLLIK\x18\t\x20\x01(\rR\x0bGDLOCKKLLIK\x12.\n\x0bIMK\
-    ELKMHOIK\x18\x08\x20\x01(\x0b2\x0c.DHPIFKICOPPR\x0bIMKELKMHOIK\x12\x20\n\
-    \x0bGBGHPFLHDBP\x18\x07\x20\x01(\rR\x0bGBGHPFLHDBPb\x06proto3\
+    \n%MultiplayerMatch3FinishScNotify.proto\x1a\x11JPEDGMMIIFJ.proto\x1a\
+    \x11MLBKADJEBNA.proto\"\xc5\x01\n\x1fMultiplayerMatch3FinishScNotify\x12\
+    \x20\n\x0bHPMEBECHEEN\x18\x0b\x20\x01(\rR\x0bHPMEBECHEEN\x12.\n\x0bJOKEI\
+    GFCDOI\x18\x03\x20\x01(\x0b2\x0c.MLBKADJEBNAR\x0bJOKEIGFCDOI\x12\x20\n\
+    \x0bGIBBAHJJDIJ\x18\x02\x20\x01(\rR\x0bGIBBAHJJDIJ\x12.\n\x0bKGGHLADEKGP\
+    \x18\x06\x20\x01(\x0e2\x0c.JPEDGMMIIFJR\x0bKGGHLADEKGPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -226,8 +226,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::AKMNBMKFKJK::file_descriptor().clone());
-            deps.push(super::DHPIFKICOPP::file_descriptor().clone());
+            deps.push(super::JPEDGMMIIFJ::file_descriptor().clone());
+            deps.push(super::MLBKADJEBNA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MultiplayerMatch3FinishScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

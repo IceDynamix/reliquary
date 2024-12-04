@@ -149,7 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for TakeOffEquipmentCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bTakeOffEquipmentCsReq.proto\"4\n\x15TakeOffEquipmentCsReq\x12\x1b\
-    \n\tavatar_id\x18\x04\x20\x01(\rR\x08avatarIdb\x06proto3\
+    \n\tavatar_id\x18\x04\x20\x01(\rR\x08avatarIdB\x15\n\x13emu.lunarcore.pr\
+    otob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
