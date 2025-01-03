@@ -32,18 +32,19 @@
 //! ```
 
 use serde::Deserialize;
+use serde::Serialize;
 
 use reliquary_proc_macro::Resource;
 
 use crate::resource::{Float, TextMapEntry, UnhashedTextMapEntry};
 
-#[derive(Deserialize, Debug)]
+#[derive(Deserialize, Serialize, Debug)]
 pub struct ItemQuantity {
     pub ItemID: u32,
     pub ItemNum: u32,
 }
 
-#[derive(Resource, Deserialize, Debug)]
+#[derive(Resource, Deserialize, Serialize, Debug)]
 pub struct AvatarConfig {
     #[resource_key]
     pub AvatarID: u32,
@@ -94,7 +95,7 @@ pub struct AvatarConfig {
     pub AvatarSelfShowOffset: Vec<f32>,
 }
 
-#[derive(Resource, Deserialize, Debug)]
+#[derive(Resource, Deserialize, Serialize, Debug)]
 pub struct EquipmentConfig {
     #[resource_key]
     pub EquipmentID: u32,
@@ -119,7 +120,7 @@ pub struct EquipmentConfig {
     pub GachaResultOffset: Vec<f32>,
 }
 
-#[derive(Resource, Deserialize, Debug)]
+#[derive(Resource, Deserialize, Serialize, Debug)]
 pub struct RelicMainAffixConfig {
     #[resource_key]
     pub GroupID: u32,
@@ -131,7 +132,7 @@ pub struct RelicMainAffixConfig {
     pub IsAvailable: bool,
 }
 
-#[derive(Resource, Deserialize, Debug)]
+#[derive(Resource, Deserialize, Serialize, Debug)]
 pub struct RelicSetConfig {
     #[resource_key]
     pub SetID: u32,
@@ -144,7 +145,7 @@ pub struct RelicSetConfig {
     pub Release: bool,
 }
 
-#[derive(Resource, Deserialize, Debug)]
+#[derive(Resource, Deserialize, Serialize, Debug)]
 pub struct RelicSubAffixConfig {
     #[resource_key]
     pub GroupID: u32,
@@ -156,7 +157,7 @@ pub struct RelicSubAffixConfig {
     pub StepNum: u32,
 }
 
-#[derive(Resource, Deserialize, Debug)]
+#[derive(Resource, Deserialize, Serialize, Debug)]
 pub struct RelicConfig {
     #[resource_key]
     pub ID: u32,
@@ -171,7 +172,7 @@ pub struct RelicConfig {
     pub CoinCost: u32,
 }
 
-#[derive(Resource, Deserialize, Debug)]
+#[derive(Resource, Deserialize, Serialize, Debug)]
 pub struct RelicDataConfig {
     #[resource_key]
     pub SetID: u32,
@@ -185,8 +186,7 @@ pub struct RelicDataConfig {
     pub BGStoryContent: UnhashedTextMapEntry,
 }
 
-
-#[derive(Resource, Deserialize, Debug)]
+#[derive(Resource, Deserialize, Serialize, Debug)]
 pub struct AvatarSkillConfig {
     #[resource_key]
     pub SkillID: u32,
@@ -225,14 +225,13 @@ pub struct AvatarSkillConfig {
     pub SkillComboValueDelta: Option<Float>,
 }
 
-
-#[derive(Deserialize, Debug)]
+#[derive(Deserialize, Serialize, Debug)]
 pub struct PropertyQuantity {
     pub PropertyType: String,
     pub Value: Float,
 }
 
-#[derive(Resource, Deserialize, Debug)]
+#[derive(Resource, Deserialize, Serialize, Debug)]
 pub struct AvatarSkillTreeConfig {
     #[resource_key]
     pub PointID: u32,
@@ -255,13 +254,13 @@ pub struct AvatarSkillTreeConfig {
     pub ParamList: Vec<Float>,
 }
 
-#[derive(Deserialize, Debug)]
+#[derive(Deserialize, Serialize, Debug)]
 pub struct UnlockCondition {
     pub Type: String,
     pub Param: String,
 }
 
-#[derive(Resource, Deserialize, Debug)]
+#[derive(Resource, Deserialize, Serialize, Debug)]
 pub struct MultiplePathAvatarConfig {
     #[resource_key]
     pub AvatarID: u32,

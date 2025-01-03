@@ -1,8 +1,8 @@
 use proc_macro::TokenStream;
 
 use quote::{format_ident, quote, ToTokens};
-use syn::{Data, DeriveInput, Field, Fields, Meta, parse_macro_input};
 use syn::spanned::Spanned;
+use syn::{parse_macro_input, Data, DeriveInput, Field, Fields, Meta};
 
 #[proc_macro_derive(Resource, attributes(resource_key))]
 pub fn derive(input: TokenStream) -> TokenStream {
@@ -55,10 +55,10 @@ pub fn derive(input: TokenStream) -> TokenStream {
         .map(|field| quote! { config.#field == *#field });
 
     let expanded = quote! {
-        #[derive(serde::Deserialize)]
+        #[derive(serde::Deserialize, serde::Serialize)]
         #[serde(transparent)]
         #[doc = #doc]
-        pub struct #map_name(Vec<#struct_name>);
+        pub struct #map_name(pub Vec<#struct_name>);
 
         impl #map_name {
             pub fn get(&self, #(#get_method_args),*) -> Option<&#struct_name> {

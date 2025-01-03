@@ -4,10 +4,11 @@
 
 //! Parse resource files from SRData
 
-use std::ops::Deref;
-use serde::Deserialize;
-use tracing::warn;
 use crate::resource::text_map::TextMap;
+use serde::Deserialize;
+use serde::Serialize;
+use std::ops::Deref;
+use tracing::warn;
 
 pub mod excel;
 pub mod text_map;
@@ -22,7 +23,7 @@ pub mod text_map;
 /// ```
 ///
 /// They can be directly dereferenced to [`f32`].
-#[derive(Deserialize, Debug)]
+#[derive(Deserialize, Serialize, Debug)]
 pub struct Float {
     Value: f32,
 }
@@ -45,7 +46,7 @@ impl Deref for Float {
 ///
 /// They can be directly dereferenced to [`i32`].
 /// The appropriate text entry can be looked up in a [`TextMap`].
-#[derive(Deserialize, Debug)]
+#[derive(Deserialize, Serialize, Debug, Clone, Copy, Eq, PartialEq, Ord, PartialOrd, Hash)]
 pub struct TextMapEntry {
     pub Hash: i32,
 }
@@ -61,7 +62,7 @@ impl TextMapEntry {
     pub fn lookup<'a>(&self, text_map: &'a TextMap) -> Option<&'a str> {
         let entry = text_map.0.get(&self.Hash).map(|s| s.as_str());
         if entry.is_none() {
-            warn!(hash=self.Hash, "could not find text map entry")
+            warn!(hash = self.Hash, "could not find text map entry")
         }
         entry
     }
@@ -71,7 +72,7 @@ pub trait ResourceMap {
     fn get_json_name() -> &'static str;
 }
 
-#[derive(Deserialize, Debug)]
+#[derive(Deserialize, Serialize, Debug)]
 #[serde(transparent)]
 pub struct UnhashedTextMapEntry(String);
 
@@ -82,11 +83,7 @@ impl UnhashedTextMapEntry {
         let mut hash2 = hash1;
 
         for (i, b) in bytes.iter().enumerate() {
-            let hash = if i % 2 == 0 {
-                &mut hash1
-            } else {
-                &mut hash2
-            };
+            let hash = if i % 2 == 0 { &mut hash1 } else { &mut hash2 };
 
             *hash = (*hash).wrapping_shl(5).wrapping_add(*hash) ^ *b as i32;
         }
