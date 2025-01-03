@@ -35,7 +35,7 @@ different package versions were made for different game versions. all game versi
 | `3.1.0`         | `2.4`        |
 | `4.0.0`         | `2.5`        |
 | `5.1.0`         | `2.6`        |
-| `6.2.0`         | `2.7`        |
+| `6.2.1`         | `2.7`        |
 
 ## related
 

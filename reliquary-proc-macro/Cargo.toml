@@ -1,6 +1,6 @@
 [package]
 name = "reliquary-proc-macro"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 license = "MIT"
 
@@ -10,6 +10,6 @@ license = "MIT"
 proc-macro = true
 
 [dependencies]
-quote = "1.0.35"
-syn = "2.0.52"
-tracing = "0.1.40"
+quote = "1.0"
+syn = "2.0"
+tracing = "0.1"
