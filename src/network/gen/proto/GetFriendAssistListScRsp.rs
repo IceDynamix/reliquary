@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFriendAssistListScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetFriendAssistListScRsp.DHJPBDPOIDB)
-    pub DHJPBDPOIDB: ::std::vec::Vec<super::PIMKBDJNKHN::PIMKBDJNKHN>,
-    // @@protoc_insertion_point(field:GetFriendAssistListScRsp.AFFJJBFLNGH)
-    pub AFFJJBFLNGH: u32,
-    // @@protoc_insertion_point(field:GetFriendAssistListScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:GetFriendAssistListScRsp.AELMDKFJPNI)
+    pub AELMDKFJPNI: ::std::vec::Vec<super::JNJGGFAMMBC::JNJGGFAMMBC>,
+    // @@protoc_insertion_point(field:GetFriendAssistListScRsp.AAGCBEJEPCF)
+    pub AAGCBEJEPCF: u32,
+    // @@protoc_insertion_point(field:GetFriendAssistListScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetFriendAssistListScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl GetFriendAssistListScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DHJPBDPOIDB",
-            |m: &GetFriendAssistListScRsp| { &m.DHJPBDPOIDB },
-            |m: &mut GetFriendAssistListScRsp| { &mut m.DHJPBDPOIDB },
+            "AELMDKFJPNI",
+            |m: &GetFriendAssistListScRsp| { &m.AELMDKFJPNI },
+            |m: &mut GetFriendAssistListScRsp| { &mut m.AELMDKFJPNI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AFFJJBFLNGH",
-            |m: &GetFriendAssistListScRsp| { &m.AFFJJBFLNGH },
-            |m: &mut GetFriendAssistListScRsp| { &mut m.AFFJJBFLNGH },
+            "AAGCBEJEPCF",
+            |m: &GetFriendAssistListScRsp| { &m.AAGCBEJEPCF },
+            |m: &mut GetFriendAssistListScRsp| { &mut m.AAGCBEJEPCF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &GetFriendAssistListScRsp| { &m.ADADHIHDHJC },
-            |m: &mut GetFriendAssistListScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &GetFriendAssistListScRsp| { &m.retcode },
+            |m: &mut GetFriendAssistListScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetFriendAssistListScRsp>(
             "GetFriendAssistListScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for GetFriendAssistListScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    self.DHJPBDPOIDB.push(is.read_message()?);
+                58 => {
+                    self.AELMDKFJPNI.push(is.read_message()?);
                 },
-                88 => {
-                    self.AFFJJBFLNGH = is.read_uint32()?;
+                48 => {
+                    self.AAGCBEJEPCF = is.read_uint32()?;
                 },
-                40 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                32 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +108,15 @@ impl ::protobuf::Message for GetFriendAssistListScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.DHJPBDPOIDB {
+        for value in &self.AELMDKFJPNI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.AFFJJBFLNGH != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.AFFJJBFLNGH);
+        if self.AAGCBEJEPCF != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.AAGCBEJEPCF);
         }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for GetFriendAssistListScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.DHJPBDPOIDB {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        for v in &self.AELMDKFJPNI {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
-        if self.AFFJJBFLNGH != 0 {
-            os.write_uint32(11, self.AFFJJBFLNGH)?;
+        if self.AAGCBEJEPCF != 0 {
+            os.write_uint32(6, self.AAGCBEJEPCF)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(5, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(4, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for GetFriendAssistListScRsp {
     }
 
     fn clear(&mut self) {
-        self.DHJPBDPOIDB.clear();
-        self.AFFJJBFLNGH = 0;
-        self.ADADHIHDHJC = 0;
+        self.AELMDKFJPNI.clear();
+        self.AAGCBEJEPCF = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFriendAssistListScRsp {
         static instance: GetFriendAssistListScRsp = GetFriendAssistListScRsp {
-            DHJPBDPOIDB: ::std::vec::Vec::new(),
-            AFFJJBFLNGH: 0,
-            ADADHIHDHJC: 0,
+            AELMDKFJPNI: ::std::vec::Vec::new(),
+            AAGCBEJEPCF: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for GetFriendAssistListScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eGetFriendAssistListScRsp.proto\x1a\x11PIMKBDJNKHN.proto\"\x8e\x01\
-    \n\x18GetFriendAssistListScRsp\x12.\n\x0bDHJPBDPOIDB\x18\r\x20\x03(\x0b2\
-    \x0c.PIMKBDJNKHNR\x0bDHJPBDPOIDB\x12\x20\n\x0bAFFJJBFLNGH\x18\x0b\x20\
-    \x01(\rR\x0bAFFJJBFLNGH\x12\x20\n\x0bADADHIHDHJC\x18\x05\x20\x01(\rR\x0b\
-    ADADHIHDHJCb\x06proto3\
+    \n\x1eGetFriendAssistListScRsp.proto\x1a\x11JNJGGFAMMBC.proto\"\x86\x01\
+    \n\x18GetFriendAssistListScRsp\x12.\n\x0bAELMDKFJPNI\x18\x07\x20\x03(\
+    \x0b2\x0c.JNJGGFAMMBCR\x0bAELMDKFJPNI\x12\x20\n\x0bAAGCBEJEPCF\x18\x06\
+    \x20\x01(\rR\x0bAAGCBEJEPCF\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07\
+    retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::PIMKBDJNKHN::file_descriptor().clone());
+            deps.push(super::JNJGGFAMMBC::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetFriendAssistListScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

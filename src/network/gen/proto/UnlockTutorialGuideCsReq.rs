@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UnlockTutorialGuideCsReq {
     // message fields
-    // @@protoc_insertion_point(field:UnlockTutorialGuideCsReq.ILIFHHJFMIH)
-    pub ILIFHHJFMIH: u32,
+    // @@protoc_insertion_point(field:UnlockTutorialGuideCsReq.IOPPGEGDHGL)
+    pub IOPPGEGDHGL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:UnlockTutorialGuideCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl UnlockTutorialGuideCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ILIFHHJFMIH",
-            |m: &UnlockTutorialGuideCsReq| { &m.ILIFHHJFMIH },
-            |m: &mut UnlockTutorialGuideCsReq| { &mut m.ILIFHHJFMIH },
+            "IOPPGEGDHGL",
+            |m: &UnlockTutorialGuideCsReq| { &m.IOPPGEGDHGL },
+            |m: &mut UnlockTutorialGuideCsReq| { &mut m.IOPPGEGDHGL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UnlockTutorialGuideCsReq>(
             "UnlockTutorialGuideCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for UnlockTutorialGuideCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.ILIFHHJFMIH = is.read_uint32()?;
+                16 => {
+                    self.IOPPGEGDHGL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for UnlockTutorialGuideCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ILIFHHJFMIH != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.ILIFHHJFMIH);
+        if self.IOPPGEGDHGL != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.IOPPGEGDHGL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for UnlockTutorialGuideCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ILIFHHJFMIH != 0 {
-            os.write_uint32(8, self.ILIFHHJFMIH)?;
+        if self.IOPPGEGDHGL != 0 {
+            os.write_uint32(2, self.IOPPGEGDHGL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for UnlockTutorialGuideCsReq {
     }
 
     fn clear(&mut self) {
-        self.ILIFHHJFMIH = 0;
+        self.IOPPGEGDHGL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UnlockTutorialGuideCsReq {
         static instance: UnlockTutorialGuideCsReq = UnlockTutorialGuideCsReq {
-            ILIFHHJFMIH: 0,
+            IOPPGEGDHGL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for UnlockTutorialGuideCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eUnlockTutorialGuideCsReq.proto\"<\n\x18UnlockTutorialGuideCsReq\
-    \x12\x20\n\x0bILIFHHJFMIH\x18\x08\x20\x01(\rR\x0bILIFHHJFMIHb\x06proto3\
+    \x12\x20\n\x0bIOPPGEGDHGL\x18\x02\x20\x01(\rR\x0bIOPPGEGDHGLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

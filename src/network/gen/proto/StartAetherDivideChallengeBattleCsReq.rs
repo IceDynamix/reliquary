@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartAetherDivideChallengeBattleCsReq {
     // message fields
-    // @@protoc_insertion_point(field:StartAetherDivideChallengeBattleCsReq.GPKEAKPHIPA)
-    pub GPKEAKPHIPA: u32,
-    // @@protoc_insertion_point(field:StartAetherDivideChallengeBattleCsReq.BNCNMEGFHPM)
-    pub BNCNMEGFHPM: u32,
+    // @@protoc_insertion_point(field:StartAetherDivideChallengeBattleCsReq.PGGMKGMBBKJ)
+    pub PGGMKGMBBKJ: u32,
+    // @@protoc_insertion_point(field:StartAetherDivideChallengeBattleCsReq.FKHEABMGCGD)
+    pub FKHEABMGCGD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:StartAetherDivideChallengeBattleCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl StartAetherDivideChallengeBattleCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GPKEAKPHIPA",
-            |m: &StartAetherDivideChallengeBattleCsReq| { &m.GPKEAKPHIPA },
-            |m: &mut StartAetherDivideChallengeBattleCsReq| { &mut m.GPKEAKPHIPA },
+            "PGGMKGMBBKJ",
+            |m: &StartAetherDivideChallengeBattleCsReq| { &m.PGGMKGMBBKJ },
+            |m: &mut StartAetherDivideChallengeBattleCsReq| { &mut m.PGGMKGMBBKJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BNCNMEGFHPM",
-            |m: &StartAetherDivideChallengeBattleCsReq| { &m.BNCNMEGFHPM },
-            |m: &mut StartAetherDivideChallengeBattleCsReq| { &mut m.BNCNMEGFHPM },
+            "FKHEABMGCGD",
+            |m: &StartAetherDivideChallengeBattleCsReq| { &m.FKHEABMGCGD },
+            |m: &mut StartAetherDivideChallengeBattleCsReq| { &mut m.FKHEABMGCGD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartAetherDivideChallengeBattleCsReq>(
             "StartAetherDivideChallengeBattleCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for StartAetherDivideChallengeBattleCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.GPKEAKPHIPA = is.read_uint32()?;
+                88 => {
+                    self.PGGMKGMBBKJ = is.read_uint32()?;
                 },
-                96 => {
-                    self.BNCNMEGFHPM = is.read_uint32()?;
+                104 => {
+                    self.FKHEABMGCGD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for StartAetherDivideChallengeBattleCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GPKEAKPHIPA != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.GPKEAKPHIPA);
+        if self.PGGMKGMBBKJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.PGGMKGMBBKJ);
         }
-        if self.BNCNMEGFHPM != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.BNCNMEGFHPM);
+        if self.FKHEABMGCGD != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.FKHEABMGCGD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for StartAetherDivideChallengeBattleCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GPKEAKPHIPA != 0 {
-            os.write_uint32(1, self.GPKEAKPHIPA)?;
+        if self.PGGMKGMBBKJ != 0 {
+            os.write_uint32(11, self.PGGMKGMBBKJ)?;
         }
-        if self.BNCNMEGFHPM != 0 {
-            os.write_uint32(12, self.BNCNMEGFHPM)?;
+        if self.FKHEABMGCGD != 0 {
+            os.write_uint32(13, self.FKHEABMGCGD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for StartAetherDivideChallengeBattleCsReq {
     }
 
     fn clear(&mut self) {
-        self.GPKEAKPHIPA = 0;
-        self.BNCNMEGFHPM = 0;
+        self.PGGMKGMBBKJ = 0;
+        self.FKHEABMGCGD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartAetherDivideChallengeBattleCsReq {
         static instance: StartAetherDivideChallengeBattleCsReq = StartAetherDivideChallengeBattleCsReq {
-            GPKEAKPHIPA: 0,
-            BNCNMEGFHPM: 0,
+            PGGMKGMBBKJ: 0,
+            FKHEABMGCGD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for StartAetherDivideChallengeBattleCsRe
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+StartAetherDivideChallengeBattleCsReq.proto\"k\n%StartAetherDivideCha\
-    llengeBattleCsReq\x12\x20\n\x0bGPKEAKPHIPA\x18\x01\x20\x01(\rR\x0bGPKEAK\
-    PHIPA\x12\x20\n\x0bBNCNMEGFHPM\x18\x0c\x20\x01(\rR\x0bBNCNMEGFHPMb\x06pr\
-    oto3\
+    llengeBattleCsReq\x12\x20\n\x0bPGGMKGMBBKJ\x18\x0b\x20\x01(\rR\x0bPGGMKG\
+    MBBKJ\x12\x20\n\x0bFKHEABMGCGD\x18\r\x20\x01(\rR\x0bFKHEABMGCGDb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,22 +30,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdPhoneType {
     // @@protoc_insertion_point(enum_value:CmdPhoneType.CmdPhoneTypeNone)
     CmdPhoneTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdPhoneType.CmdGetPhoneDataScRsp)
-    CmdGetPhoneDataScRsp = 5120,
-    // @@protoc_insertion_point(enum_value:CmdPhoneType.CmdSelectChatBubbleCsReq)
-    CmdSelectChatBubbleCsReq = 5103,
-    // @@protoc_insertion_point(enum_value:CmdPhoneType.CmdGetPhoneDataCsReq)
-    CmdGetPhoneDataCsReq = 5159,
     // @@protoc_insertion_point(enum_value:CmdPhoneType.CmdSelectPhoneThemeScRsp)
-    CmdSelectPhoneThemeScRsp = 5134,
-    // @@protoc_insertion_point(enum_value:CmdPhoneType.CmdSelectPhoneThemeCsReq)
-    CmdSelectPhoneThemeCsReq = 5153,
-    // @@protoc_insertion_point(enum_value:CmdPhoneType.CmdSelectChatBubbleScRsp)
-    CmdSelectChatBubbleScRsp = 5146,
+    CmdSelectPhoneThemeScRsp = 5152,
     // @@protoc_insertion_point(enum_value:CmdPhoneType.CmdUnlockPhoneThemeScNotify)
-    CmdUnlockPhoneThemeScNotify = 5137,
+    CmdUnlockPhoneThemeScNotify = 5174,
+    // @@protoc_insertion_point(enum_value:CmdPhoneType.CmdSelectPhoneThemeCsReq)
+    CmdSelectPhoneThemeCsReq = 5128,
+    // @@protoc_insertion_point(enum_value:CmdPhoneType.CmdSelectChatBubbleScRsp)
+    CmdSelectChatBubbleScRsp = 5127,
     // @@protoc_insertion_point(enum_value:CmdPhoneType.CmdUnlockChatBubbleScNotify)
-    CmdUnlockChatBubbleScNotify = 5139,
+    CmdUnlockChatBubbleScNotify = 5167,
+    // @@protoc_insertion_point(enum_value:CmdPhoneType.CmdGetPhoneDataCsReq)
+    CmdGetPhoneDataCsReq = 5136,
+    // @@protoc_insertion_point(enum_value:CmdPhoneType.CmdSelectChatBubbleCsReq)
+    CmdSelectChatBubbleCsReq = 5184,
+    // @@protoc_insertion_point(enum_value:CmdPhoneType.CmdGetPhoneDataScRsp)
+    CmdGetPhoneDataScRsp = 5195,
 }
 
 impl ::protobuf::Enum for CmdPhoneType {
@@ -58,14 +58,14 @@ impl ::protobuf::Enum for CmdPhoneType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdPhoneType> {
         match value {
             0 => ::std::option::Option::Some(CmdPhoneType::CmdPhoneTypeNone),
-            5120 => ::std::option::Option::Some(CmdPhoneType::CmdGetPhoneDataScRsp),
-            5103 => ::std::option::Option::Some(CmdPhoneType::CmdSelectChatBubbleCsReq),
-            5159 => ::std::option::Option::Some(CmdPhoneType::CmdGetPhoneDataCsReq),
-            5134 => ::std::option::Option::Some(CmdPhoneType::CmdSelectPhoneThemeScRsp),
-            5153 => ::std::option::Option::Some(CmdPhoneType::CmdSelectPhoneThemeCsReq),
-            5146 => ::std::option::Option::Some(CmdPhoneType::CmdSelectChatBubbleScRsp),
-            5137 => ::std::option::Option::Some(CmdPhoneType::CmdUnlockPhoneThemeScNotify),
-            5139 => ::std::option::Option::Some(CmdPhoneType::CmdUnlockChatBubbleScNotify),
+            5152 => ::std::option::Option::Some(CmdPhoneType::CmdSelectPhoneThemeScRsp),
+            5174 => ::std::option::Option::Some(CmdPhoneType::CmdUnlockPhoneThemeScNotify),
+            5128 => ::std::option::Option::Some(CmdPhoneType::CmdSelectPhoneThemeCsReq),
+            5127 => ::std::option::Option::Some(CmdPhoneType::CmdSelectChatBubbleScRsp),
+            5167 => ::std::option::Option::Some(CmdPhoneType::CmdUnlockChatBubbleScNotify),
+            5136 => ::std::option::Option::Some(CmdPhoneType::CmdGetPhoneDataCsReq),
+            5184 => ::std::option::Option::Some(CmdPhoneType::CmdSelectChatBubbleCsReq),
+            5195 => ::std::option::Option::Some(CmdPhoneType::CmdGetPhoneDataScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -73,28 +73,28 @@ impl ::protobuf::Enum for CmdPhoneType {
     fn from_str(str: &str) -> ::std::option::Option<CmdPhoneType> {
         match str {
             "CmdPhoneTypeNone" => ::std::option::Option::Some(CmdPhoneType::CmdPhoneTypeNone),
-            "CmdGetPhoneDataScRsp" => ::std::option::Option::Some(CmdPhoneType::CmdGetPhoneDataScRsp),
-            "CmdSelectChatBubbleCsReq" => ::std::option::Option::Some(CmdPhoneType::CmdSelectChatBubbleCsReq),
-            "CmdGetPhoneDataCsReq" => ::std::option::Option::Some(CmdPhoneType::CmdGetPhoneDataCsReq),
             "CmdSelectPhoneThemeScRsp" => ::std::option::Option::Some(CmdPhoneType::CmdSelectPhoneThemeScRsp),
+            "CmdUnlockPhoneThemeScNotify" => ::std::option::Option::Some(CmdPhoneType::CmdUnlockPhoneThemeScNotify),
             "CmdSelectPhoneThemeCsReq" => ::std::option::Option::Some(CmdPhoneType::CmdSelectPhoneThemeCsReq),
             "CmdSelectChatBubbleScRsp" => ::std::option::Option::Some(CmdPhoneType::CmdSelectChatBubbleScRsp),
-            "CmdUnlockPhoneThemeScNotify" => ::std::option::Option::Some(CmdPhoneType::CmdUnlockPhoneThemeScNotify),
             "CmdUnlockChatBubbleScNotify" => ::std::option::Option::Some(CmdPhoneType::CmdUnlockChatBubbleScNotify),
+            "CmdGetPhoneDataCsReq" => ::std::option::Option::Some(CmdPhoneType::CmdGetPhoneDataCsReq),
+            "CmdSelectChatBubbleCsReq" => ::std::option::Option::Some(CmdPhoneType::CmdSelectChatBubbleCsReq),
+            "CmdGetPhoneDataScRsp" => ::std::option::Option::Some(CmdPhoneType::CmdGetPhoneDataScRsp),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdPhoneType] = &[
         CmdPhoneType::CmdPhoneTypeNone,
-        CmdPhoneType::CmdGetPhoneDataScRsp,
-        CmdPhoneType::CmdSelectChatBubbleCsReq,
-        CmdPhoneType::CmdGetPhoneDataCsReq,
         CmdPhoneType::CmdSelectPhoneThemeScRsp,
+        CmdPhoneType::CmdUnlockPhoneThemeScNotify,
         CmdPhoneType::CmdSelectPhoneThemeCsReq,
         CmdPhoneType::CmdSelectChatBubbleScRsp,
-        CmdPhoneType::CmdUnlockPhoneThemeScNotify,
         CmdPhoneType::CmdUnlockChatBubbleScNotify,
+        CmdPhoneType::CmdGetPhoneDataCsReq,
+        CmdPhoneType::CmdSelectChatBubbleCsReq,
+        CmdPhoneType::CmdGetPhoneDataScRsp,
     ];
 }
 
@@ -107,14 +107,14 @@ impl ::protobuf::EnumFull for CmdPhoneType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdPhoneType::CmdPhoneTypeNone => 0,
-            CmdPhoneType::CmdGetPhoneDataScRsp => 1,
-            CmdPhoneType::CmdSelectChatBubbleCsReq => 2,
-            CmdPhoneType::CmdGetPhoneDataCsReq => 3,
-            CmdPhoneType::CmdSelectPhoneThemeScRsp => 4,
-            CmdPhoneType::CmdSelectPhoneThemeCsReq => 5,
-            CmdPhoneType::CmdSelectChatBubbleScRsp => 6,
-            CmdPhoneType::CmdUnlockPhoneThemeScNotify => 7,
-            CmdPhoneType::CmdUnlockChatBubbleScNotify => 8,
+            CmdPhoneType::CmdSelectPhoneThemeScRsp => 1,
+            CmdPhoneType::CmdUnlockPhoneThemeScNotify => 2,
+            CmdPhoneType::CmdSelectPhoneThemeCsReq => 3,
+            CmdPhoneType::CmdSelectChatBubbleScRsp => 4,
+            CmdPhoneType::CmdUnlockChatBubbleScNotify => 5,
+            CmdPhoneType::CmdGetPhoneDataCsReq => 6,
+            CmdPhoneType::CmdSelectChatBubbleCsReq => 7,
+            CmdPhoneType::CmdGetPhoneDataScRsp => 8,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -134,12 +134,12 @@ impl CmdPhoneType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12CmdPhoneType.proto*\x9a\x02\n\x0cCmdPhoneType\x12\x14\n\x10CmdPhon\
-    eTypeNone\x10\0\x12\x19\n\x14CmdGetPhoneDataScRsp\x10\x80(\x12\x1d\n\x18\
-    CmdSelectChatBubbleCsReq\x10\xef'\x12\x19\n\x14CmdGetPhoneDataCsReq\x10\
-    \xa7(\x12\x1d\n\x18CmdSelectPhoneThemeScRsp\x10\x8e(\x12\x1d\n\x18CmdSel\
-    ectPhoneThemeCsReq\x10\xa1(\x12\x1d\n\x18CmdSelectChatBubbleScRsp\x10\
-    \x9a(\x12\x20\n\x1bCmdUnlockPhoneThemeScNotify\x10\x91(\x12\x20\n\x1bCmd\
-    UnlockChatBubbleScNotify\x10\x93(b\x06proto3\
+    eTypeNone\x10\0\x12\x1d\n\x18CmdSelectPhoneThemeScRsp\x10\xa0(\x12\x20\n\
+    \x1bCmdUnlockPhoneThemeScNotify\x10\xb6(\x12\x1d\n\x18CmdSelectPhoneThem\
+    eCsReq\x10\x88(\x12\x1d\n\x18CmdSelectChatBubbleScRsp\x10\x87(\x12\x20\n\
+    \x1bCmdUnlockChatBubbleScNotify\x10\xaf(\x12\x19\n\x14CmdGetPhoneDataCsR\
+    eq\x10\x90(\x12\x1d\n\x18CmdSelectChatBubbleCsReq\x10\xc0(\x12\x19\n\x14\
+    CmdGetPhoneDataScRsp\x10\xcb(b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

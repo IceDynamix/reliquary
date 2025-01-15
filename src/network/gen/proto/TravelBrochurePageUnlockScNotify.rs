@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TravelBrochurePageUnlockScNotify {
     // message fields
-    // @@protoc_insertion_point(field:TravelBrochurePageUnlockScNotify.LOFDIGOACGI)
-    pub LOFDIGOACGI: u32,
+    // @@protoc_insertion_point(field:TravelBrochurePageUnlockScNotify.CJAEBOLPIFP)
+    pub CJAEBOLPIFP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TravelBrochurePageUnlockScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl TravelBrochurePageUnlockScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LOFDIGOACGI",
-            |m: &TravelBrochurePageUnlockScNotify| { &m.LOFDIGOACGI },
-            |m: &mut TravelBrochurePageUnlockScNotify| { &mut m.LOFDIGOACGI },
+            "CJAEBOLPIFP",
+            |m: &TravelBrochurePageUnlockScNotify| { &m.CJAEBOLPIFP },
+            |m: &mut TravelBrochurePageUnlockScNotify| { &mut m.CJAEBOLPIFP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TravelBrochurePageUnlockScNotify>(
             "TravelBrochurePageUnlockScNotify",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for TravelBrochurePageUnlockScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.LOFDIGOACGI = is.read_uint32()?;
+                72 => {
+                    self.CJAEBOLPIFP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for TravelBrochurePageUnlockScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LOFDIGOACGI != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.LOFDIGOACGI);
+        if self.CJAEBOLPIFP != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.CJAEBOLPIFP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for TravelBrochurePageUnlockScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LOFDIGOACGI != 0 {
-            os.write_uint32(2, self.LOFDIGOACGI)?;
+        if self.CJAEBOLPIFP != 0 {
+            os.write_uint32(9, self.CJAEBOLPIFP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for TravelBrochurePageUnlockScNotify {
     }
 
     fn clear(&mut self) {
-        self.LOFDIGOACGI = 0;
+        self.CJAEBOLPIFP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TravelBrochurePageUnlockScNotify {
         static instance: TravelBrochurePageUnlockScNotify = TravelBrochurePageUnlockScNotify {
-            LOFDIGOACGI: 0,
+            CJAEBOLPIFP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for TravelBrochurePageUnlockScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&TravelBrochurePageUnlockScNotify.proto\"D\n\x20TravelBrochurePageUnlo\
-    ckScNotify\x12\x20\n\x0bLOFDIGOACGI\x18\x02\x20\x01(\rR\x0bLOFDIGOACGIb\
+    ckScNotify\x12\x20\n\x0bCJAEBOLPIFP\x18\t\x20\x01(\rR\x0bCJAEBOLPIFPb\
     \x06proto3\
 ";
 

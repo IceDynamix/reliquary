@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeOffAvatarSkinCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeOffAvatarSkinCsReq.DHPDHGHAEOP)
-    pub DHPDHGHAEOP: u32,
+    // @@protoc_insertion_point(field:TakeOffAvatarSkinCsReq.avatar_id)
+    pub avatar_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeOffAvatarSkinCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl TakeOffAvatarSkinCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DHPDHGHAEOP",
-            |m: &TakeOffAvatarSkinCsReq| { &m.DHPDHGHAEOP },
-            |m: &mut TakeOffAvatarSkinCsReq| { &mut m.DHPDHGHAEOP },
+            "avatar_id",
+            |m: &TakeOffAvatarSkinCsReq| { &m.avatar_id },
+            |m: &mut TakeOffAvatarSkinCsReq| { &mut m.avatar_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeOffAvatarSkinCsReq>(
             "TakeOffAvatarSkinCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for TakeOffAvatarSkinCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.DHPDHGHAEOP = is.read_uint32()?;
+                112 => {
+                    self.avatar_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for TakeOffAvatarSkinCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DHPDHGHAEOP != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.DHPDHGHAEOP);
+        if self.avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for TakeOffAvatarSkinCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DHPDHGHAEOP != 0 {
-            os.write_uint32(7, self.DHPDHGHAEOP)?;
+        if self.avatar_id != 0 {
+            os.write_uint32(14, self.avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for TakeOffAvatarSkinCsReq {
     }
 
     fn clear(&mut self) {
-        self.DHPDHGHAEOP = 0;
+        self.avatar_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeOffAvatarSkinCsReq {
         static instance: TakeOffAvatarSkinCsReq = TakeOffAvatarSkinCsReq {
-            DHPDHGHAEOP: 0,
+            avatar_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for TakeOffAvatarSkinCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cTakeOffAvatarSkinCsReq.proto\":\n\x16TakeOffAvatarSkinCsReq\x12\
-    \x20\n\x0bDHPDHGHAEOP\x18\x07\x20\x01(\rR\x0bDHPDHGHAEOPb\x06proto3\
+    \n\x1cTakeOffAvatarSkinCsReq.proto\"5\n\x16TakeOffAvatarSkinCsReq\x12\
+    \x1b\n\tavatar_id\x18\x0e\x20\x01(\rR\x08avatarIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyClickCellCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyClickCellCsReq.NAIMNIFDKFJ)
-    pub NAIMNIFDKFJ: u32,
-    // @@protoc_insertion_point(field:MonopolyClickCellCsReq.LNGJKFGLHBE)
-    pub LNGJKFGLHBE: u32,
+    // @@protoc_insertion_point(field:MonopolyClickCellCsReq.CNLLDMNCNCI)
+    pub CNLLDMNCNCI: u32,
+    // @@protoc_insertion_point(field:MonopolyClickCellCsReq.PBIGGPACCPB)
+    pub PBIGGPACCPB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyClickCellCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl MonopolyClickCellCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NAIMNIFDKFJ",
-            |m: &MonopolyClickCellCsReq| { &m.NAIMNIFDKFJ },
-            |m: &mut MonopolyClickCellCsReq| { &mut m.NAIMNIFDKFJ },
+            "CNLLDMNCNCI",
+            |m: &MonopolyClickCellCsReq| { &m.CNLLDMNCNCI },
+            |m: &mut MonopolyClickCellCsReq| { &mut m.CNLLDMNCNCI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LNGJKFGLHBE",
-            |m: &MonopolyClickCellCsReq| { &m.LNGJKFGLHBE },
-            |m: &mut MonopolyClickCellCsReq| { &mut m.LNGJKFGLHBE },
+            "PBIGGPACCPB",
+            |m: &MonopolyClickCellCsReq| { &m.PBIGGPACCPB },
+            |m: &mut MonopolyClickCellCsReq| { &mut m.PBIGGPACCPB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyClickCellCsReq>(
             "MonopolyClickCellCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for MonopolyClickCellCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.NAIMNIFDKFJ = is.read_uint32()?;
+                104 => {
+                    self.CNLLDMNCNCI = is.read_uint32()?;
                 },
-                120 => {
-                    self.LNGJKFGLHBE = is.read_uint32()?;
+                80 => {
+                    self.PBIGGPACCPB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for MonopolyClickCellCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NAIMNIFDKFJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.NAIMNIFDKFJ);
+        if self.CNLLDMNCNCI != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.CNLLDMNCNCI);
         }
-        if self.LNGJKFGLHBE != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.LNGJKFGLHBE);
+        if self.PBIGGPACCPB != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.PBIGGPACCPB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for MonopolyClickCellCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NAIMNIFDKFJ != 0 {
-            os.write_uint32(10, self.NAIMNIFDKFJ)?;
+        if self.CNLLDMNCNCI != 0 {
+            os.write_uint32(13, self.CNLLDMNCNCI)?;
         }
-        if self.LNGJKFGLHBE != 0 {
-            os.write_uint32(15, self.LNGJKFGLHBE)?;
+        if self.PBIGGPACCPB != 0 {
+            os.write_uint32(10, self.PBIGGPACCPB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for MonopolyClickCellCsReq {
     }
 
     fn clear(&mut self) {
-        self.NAIMNIFDKFJ = 0;
-        self.LNGJKFGLHBE = 0;
+        self.CNLLDMNCNCI = 0;
+        self.PBIGGPACCPB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyClickCellCsReq {
         static instance: MonopolyClickCellCsReq = MonopolyClickCellCsReq {
-            NAIMNIFDKFJ: 0,
-            LNGJKFGLHBE: 0,
+            CNLLDMNCNCI: 0,
+            PBIGGPACCPB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyClickCellCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cMonopolyClickCellCsReq.proto\"\\\n\x16MonopolyClickCellCsReq\x12\
-    \x20\n\x0bNAIMNIFDKFJ\x18\n\x20\x01(\rR\x0bNAIMNIFDKFJ\x12\x20\n\x0bLNGJ\
-    KFGLHBE\x18\x0f\x20\x01(\rR\x0bLNGJKFGLHBEb\x06proto3\
+    \x20\n\x0bCNLLDMNCNCI\x18\r\x20\x01(\rR\x0bCNLLDMNCNCI\x12\x20\n\x0bPBIG\
+    GPACCPB\x18\n\x20\x01(\rR\x0bPBIGGPACCPBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

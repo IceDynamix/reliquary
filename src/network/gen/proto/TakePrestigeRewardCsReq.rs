@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakePrestigeRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakePrestigeRewardCsReq.JKOCJIMAGBN)
-    pub JKOCJIMAGBN: u32,
+    // @@protoc_insertion_point(field:TakePrestigeRewardCsReq.level)
+    pub level: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakePrestigeRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl TakePrestigeRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JKOCJIMAGBN",
-            |m: &TakePrestigeRewardCsReq| { &m.JKOCJIMAGBN },
-            |m: &mut TakePrestigeRewardCsReq| { &mut m.JKOCJIMAGBN },
+            "level",
+            |m: &TakePrestigeRewardCsReq| { &m.level },
+            |m: &mut TakePrestigeRewardCsReq| { &mut m.level },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakePrestigeRewardCsReq>(
             "TakePrestigeRewardCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for TakePrestigeRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.JKOCJIMAGBN = is.read_uint32()?;
+                16 => {
+                    self.level = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for TakePrestigeRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JKOCJIMAGBN != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.JKOCJIMAGBN);
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for TakePrestigeRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JKOCJIMAGBN != 0 {
-            os.write_uint32(10, self.JKOCJIMAGBN)?;
+        if self.level != 0 {
+            os.write_uint32(2, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for TakePrestigeRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.JKOCJIMAGBN = 0;
+        self.level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakePrestigeRewardCsReq {
         static instance: TakePrestigeRewardCsReq = TakePrestigeRewardCsReq {
-            JKOCJIMAGBN: 0,
+            level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for TakePrestigeRewardCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dTakePrestigeRewardCsReq.proto\";\n\x17TakePrestigeRewardCsReq\x12\
-    \x20\n\x0bJKOCJIMAGBN\x18\n\x20\x01(\rR\x0bJKOCJIMAGBNb\x06proto3\
+    \n\x1dTakePrestigeRewardCsReq.proto\"/\n\x17TakePrestigeRewardCsReq\x12\
+    \x14\n\x05level\x18\x02\x20\x01(\rR\x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

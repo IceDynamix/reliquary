@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SellItemCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SellItemCsReq.to_material)
-    pub to_material: bool,
-    // @@protoc_insertion_point(field:SellItemCsReq.item_cost_list)
-    pub item_cost_list: ::protobuf::MessageField<super::ItemCostList::ItemCostList>,
+    // @@protoc_insertion_point(field:SellItemCsReq.CHILPEFEDNF)
+    pub CHILPEFEDNF: ::protobuf::MessageField<super::LFKJBBFJDKN::LFKJBBFJDKN>,
+    // @@protoc_insertion_point(field:SellItemCsReq.GPPPOFIIDOG)
+    pub GPPPOFIIDOG: bool,
     // special fields
     // @@protoc_insertion_point(special_field:SellItemCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl SellItemCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "to_material",
-            |m: &SellItemCsReq| { &m.to_material },
-            |m: &mut SellItemCsReq| { &mut m.to_material },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LFKJBBFJDKN::LFKJBBFJDKN>(
+            "CHILPEFEDNF",
+            |m: &SellItemCsReq| { &m.CHILPEFEDNF },
+            |m: &mut SellItemCsReq| { &mut m.CHILPEFEDNF },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostList::ItemCostList>(
-            "item_cost_list",
-            |m: &SellItemCsReq| { &m.item_cost_list },
-            |m: &mut SellItemCsReq| { &mut m.item_cost_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GPPPOFIIDOG",
+            |m: &SellItemCsReq| { &m.GPPPOFIIDOG },
+            |m: &mut SellItemCsReq| { &mut m.GPPPOFIIDOG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SellItemCsReq>(
             "SellItemCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for SellItemCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.to_material = is.read_bool()?;
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CHILPEFEDNF)?;
                 },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_cost_list)?;
+                8 => {
+                    self.GPPPOFIIDOG = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,12 +98,12 @@ impl ::protobuf::Message for SellItemCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.to_material != false {
-            my_size += 1 + 1;
-        }
-        if let Some(v) = self.item_cost_list.as_ref() {
+        if let Some(v) = self.CHILPEFEDNF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.GPPPOFIIDOG != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for SellItemCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.to_material != false {
-            os.write_bool(1, self.to_material)?;
+        if let Some(v) = self.CHILPEFEDNF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
-        if let Some(v) = self.item_cost_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        if self.GPPPOFIIDOG != false {
+            os.write_bool(1, self.GPPPOFIIDOG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for SellItemCsReq {
     }
 
     fn clear(&mut self) {
-        self.to_material = false;
-        self.item_cost_list.clear();
+        self.CHILPEFEDNF.clear();
+        self.GPPPOFIIDOG = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SellItemCsReq {
         static instance: SellItemCsReq = SellItemCsReq {
-            to_material: false,
-            item_cost_list: ::protobuf::MessageField::none(),
+            CHILPEFEDNF: ::protobuf::MessageField::none(),
+            GPPPOFIIDOG: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for SellItemCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13SellItemCsReq.proto\x1a\x12ItemCostList.proto\"e\n\rSellItemCsReq\
-    \x12\x1f\n\x0bto_material\x18\x01\x20\x01(\x08R\ntoMaterial\x123\n\x0eit\
-    em_cost_list\x18\x04\x20\x01(\x0b2\r.ItemCostListR\x0citemCostListB\x15\
-    \n\x13emu.lunarcore.protob\x06proto3\
+    \n\x13SellItemCsReq.proto\x1a\x11LFKJBBFJDKN.proto\"a\n\rSellItemCsReq\
+    \x12.\n\x0bCHILPEFEDNF\x18\x03\x20\x01(\x0b2\x0c.LFKJBBFJDKNR\x0bCHILPEF\
+    EDNF\x12\x20\n\x0bGPPPOFIIDOG\x18\x01\x20\x01(\x08R\x0bGPPPOFIIDOGb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ItemCostList::file_descriptor().clone());
+            deps.push(super::LFKJBBFJDKN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SellItemCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

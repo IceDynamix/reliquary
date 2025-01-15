@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RaidKickByServerScNotify {
     // message fields
-    // @@protoc_insertion_point(field:RaidKickByServerScNotify.ODOAJJGMBCL)
-    pub ODOAJJGMBCL: u32,
-    // @@protoc_insertion_point(field:RaidKickByServerScNotify.GOOIEHKAGLC)
-    pub GOOIEHKAGLC: ::protobuf::MessageField<super::GDHMBEFBPHM::GDHMBEFBPHM>,
-    // @@protoc_insertion_point(field:RaidKickByServerScNotify.KGGHLADEKGP)
-    pub KGGHLADEKGP: ::protobuf::EnumOrUnknown<super::OJLOFJKJBOL::OJLOFJKJBOL>,
-    // @@protoc_insertion_point(field:RaidKickByServerScNotify.DNMJBNNJLEL)
-    pub DNMJBNNJLEL: u32,
-    // @@protoc_insertion_point(field:RaidKickByServerScNotify.HGGFOJICNCG)
-    pub HGGFOJICNCG: ::protobuf::MessageField<super::IJAIFMPFJDN::IJAIFMPFJDN>,
+    // @@protoc_insertion_point(field:RaidKickByServerScNotify.IIBAHAEAEEB)
+    pub IIBAHAEAEEB: ::protobuf::MessageField<super::PMBHFPCDGBM::PMBHFPCDGBM>,
+    // @@protoc_insertion_point(field:RaidKickByServerScNotify.OLDKAMACFMD)
+    pub OLDKAMACFMD: ::protobuf::EnumOrUnknown<super::GJPNLJACAMN::GJPNLJACAMN>,
+    // @@protoc_insertion_point(field:RaidKickByServerScNotify.CFNJJEJIGOK)
+    pub CFNJJEJIGOK: u32,
+    // @@protoc_insertion_point(field:RaidKickByServerScNotify.NBLJPGFHDFI)
+    pub NBLJPGFHDFI: u32,
+    // @@protoc_insertion_point(field:RaidKickByServerScNotify.KJPDBLOAOCG)
+    pub KJPDBLOAOCG: ::protobuf::MessageField<super::NDHNICCLBDN::NDHNICCLBDN>,
     // special fields
     // @@protoc_insertion_point(special_field:RaidKickByServerScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,30 +58,30 @@ impl RaidKickByServerScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ODOAJJGMBCL",
-            |m: &RaidKickByServerScNotify| { &m.ODOAJJGMBCL },
-            |m: &mut RaidKickByServerScNotify| { &mut m.ODOAJJGMBCL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GDHMBEFBPHM::GDHMBEFBPHM>(
-            "GOOIEHKAGLC",
-            |m: &RaidKickByServerScNotify| { &m.GOOIEHKAGLC },
-            |m: &mut RaidKickByServerScNotify| { &mut m.GOOIEHKAGLC },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PMBHFPCDGBM::PMBHFPCDGBM>(
+            "IIBAHAEAEEB",
+            |m: &RaidKickByServerScNotify| { &m.IIBAHAEAEEB },
+            |m: &mut RaidKickByServerScNotify| { &mut m.IIBAHAEAEEB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KGGHLADEKGP",
-            |m: &RaidKickByServerScNotify| { &m.KGGHLADEKGP },
-            |m: &mut RaidKickByServerScNotify| { &mut m.KGGHLADEKGP },
+            "OLDKAMACFMD",
+            |m: &RaidKickByServerScNotify| { &m.OLDKAMACFMD },
+            |m: &mut RaidKickByServerScNotify| { &mut m.OLDKAMACFMD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DNMJBNNJLEL",
-            |m: &RaidKickByServerScNotify| { &m.DNMJBNNJLEL },
-            |m: &mut RaidKickByServerScNotify| { &mut m.DNMJBNNJLEL },
+            "CFNJJEJIGOK",
+            |m: &RaidKickByServerScNotify| { &m.CFNJJEJIGOK },
+            |m: &mut RaidKickByServerScNotify| { &mut m.CFNJJEJIGOK },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IJAIFMPFJDN::IJAIFMPFJDN>(
-            "HGGFOJICNCG",
-            |m: &RaidKickByServerScNotify| { &m.HGGFOJICNCG },
-            |m: &mut RaidKickByServerScNotify| { &mut m.HGGFOJICNCG },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NBLJPGFHDFI",
+            |m: &RaidKickByServerScNotify| { &m.NBLJPGFHDFI },
+            |m: &mut RaidKickByServerScNotify| { &mut m.NBLJPGFHDFI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NDHNICCLBDN::NDHNICCLBDN>(
+            "KJPDBLOAOCG",
+            |m: &RaidKickByServerScNotify| { &m.KJPDBLOAOCG },
+            |m: &mut RaidKickByServerScNotify| { &mut m.KJPDBLOAOCG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RaidKickByServerScNotify>(
             "RaidKickByServerScNotify",
@@ -101,20 +101,20 @@ impl ::protobuf::Message for RaidKickByServerScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IIBAHAEAEEB)?;
+                },
                 72 => {
-                    self.ODOAJJGMBCL = is.read_uint32()?;
-                },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GOOIEHKAGLC)?;
-                },
-                8 => {
-                    self.KGGHLADEKGP = is.read_enum_or_unknown()?;
+                    self.OLDKAMACFMD = is.read_enum_or_unknown()?;
                 },
                 32 => {
-                    self.DNMJBNNJLEL = is.read_uint32()?;
+                    self.CFNJJEJIGOK = is.read_uint32()?;
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HGGFOJICNCG)?;
+                40 => {
+                    self.NBLJPGFHDFI = is.read_uint32()?;
+                },
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KJPDBLOAOCG)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,20 +128,20 @@ impl ::protobuf::Message for RaidKickByServerScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ODOAJJGMBCL != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.ODOAJJGMBCL);
-        }
-        if let Some(v) = self.GOOIEHKAGLC.as_ref() {
+        if let Some(v) = self.IIBAHAEAEEB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.KGGHLADEKGP != ::protobuf::EnumOrUnknown::new(super::OJLOFJKJBOL::OJLOFJKJBOL::RAID_KICK_REASON_NONE) {
-            my_size += ::protobuf::rt::int32_size(1, self.KGGHLADEKGP.value());
+        if self.OLDKAMACFMD != ::protobuf::EnumOrUnknown::new(super::GJPNLJACAMN::GJPNLJACAMN::RAID_KICK_REASON_NONE) {
+            my_size += ::protobuf::rt::int32_size(9, self.OLDKAMACFMD.value());
         }
-        if self.DNMJBNNJLEL != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.DNMJBNNJLEL);
+        if self.CFNJJEJIGOK != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.CFNJJEJIGOK);
         }
-        if let Some(v) = self.HGGFOJICNCG.as_ref() {
+        if self.NBLJPGFHDFI != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.NBLJPGFHDFI);
+        }
+        if let Some(v) = self.KJPDBLOAOCG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -151,20 +151,20 @@ impl ::protobuf::Message for RaidKickByServerScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ODOAJJGMBCL != 0 {
-            os.write_uint32(9, self.ODOAJJGMBCL)?;
+        if let Some(v) = self.IIBAHAEAEEB.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        if let Some(v) = self.GOOIEHKAGLC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        if self.OLDKAMACFMD != ::protobuf::EnumOrUnknown::new(super::GJPNLJACAMN::GJPNLJACAMN::RAID_KICK_REASON_NONE) {
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.OLDKAMACFMD))?;
         }
-        if self.KGGHLADEKGP != ::protobuf::EnumOrUnknown::new(super::OJLOFJKJBOL::OJLOFJKJBOL::RAID_KICK_REASON_NONE) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.KGGHLADEKGP))?;
+        if self.CFNJJEJIGOK != 0 {
+            os.write_uint32(4, self.CFNJJEJIGOK)?;
         }
-        if self.DNMJBNNJLEL != 0 {
-            os.write_uint32(4, self.DNMJBNNJLEL)?;
+        if self.NBLJPGFHDFI != 0 {
+            os.write_uint32(5, self.NBLJPGFHDFI)?;
         }
-        if let Some(v) = self.HGGFOJICNCG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if let Some(v) = self.KJPDBLOAOCG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,21 +183,21 @@ impl ::protobuf::Message for RaidKickByServerScNotify {
     }
 
     fn clear(&mut self) {
-        self.ODOAJJGMBCL = 0;
-        self.GOOIEHKAGLC.clear();
-        self.KGGHLADEKGP = ::protobuf::EnumOrUnknown::new(super::OJLOFJKJBOL::OJLOFJKJBOL::RAID_KICK_REASON_NONE);
-        self.DNMJBNNJLEL = 0;
-        self.HGGFOJICNCG.clear();
+        self.IIBAHAEAEEB.clear();
+        self.OLDKAMACFMD = ::protobuf::EnumOrUnknown::new(super::GJPNLJACAMN::GJPNLJACAMN::RAID_KICK_REASON_NONE);
+        self.CFNJJEJIGOK = 0;
+        self.NBLJPGFHDFI = 0;
+        self.KJPDBLOAOCG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RaidKickByServerScNotify {
         static instance: RaidKickByServerScNotify = RaidKickByServerScNotify {
-            ODOAJJGMBCL: 0,
-            GOOIEHKAGLC: ::protobuf::MessageField::none(),
-            KGGHLADEKGP: ::protobuf::EnumOrUnknown::from_i32(0),
-            DNMJBNNJLEL: 0,
-            HGGFOJICNCG: ::protobuf::MessageField::none(),
+            IIBAHAEAEEB: ::protobuf::MessageField::none(),
+            OLDKAMACFMD: ::protobuf::EnumOrUnknown::from_i32(0),
+            CFNJJEJIGOK: 0,
+            NBLJPGFHDFI: 0,
+            KJPDBLOAOCG: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -222,14 +222,14 @@ impl ::protobuf::reflect::ProtobufValue for RaidKickByServerScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eRaidKickByServerScNotify.proto\x1a\x11GDHMBEFBPHM.proto\x1a\x11IJA\
-    IFMPFJDN.proto\x1a\x11OJLOFJKJBOL.proto\"\xee\x01\n\x18RaidKickByServerS\
-    cNotify\x12\x20\n\x0bODOAJJGMBCL\x18\t\x20\x01(\rR\x0bODOAJJGMBCL\x12.\n\
-    \x0bGOOIEHKAGLC\x18\x05\x20\x01(\x0b2\x0c.GDHMBEFBPHMR\x0bGOOIEHKAGLC\
-    \x12.\n\x0bKGGHLADEKGP\x18\x01\x20\x01(\x0e2\x0c.OJLOFJKJBOLR\x0bKGGHLAD\
-    EKGP\x12\x20\n\x0bDNMJBNNJLEL\x18\x04\x20\x01(\rR\x0bDNMJBNNJLEL\x12.\n\
-    \x0bHGGFOJICNCG\x18\r\x20\x01(\x0b2\x0c.IJAIFMPFJDNR\x0bHGGFOJICNCGb\x06\
-    proto3\
+    \n\x1eRaidKickByServerScNotify.proto\x1a\x11GJPNLJACAMN.proto\x1a\x11NDH\
+    NICCLBDN.proto\x1a\x11PMBHFPCDGBM.proto\"\xee\x01\n\x18RaidKickByServerS\
+    cNotify\x12.\n\x0bIIBAHAEAEEB\x18\x02\x20\x01(\x0b2\x0c.PMBHFPCDGBMR\x0b\
+    IIBAHAEAEEB\x12.\n\x0bOLDKAMACFMD\x18\t\x20\x01(\x0e2\x0c.GJPNLJACAMNR\
+    \x0bOLDKAMACFMD\x12\x20\n\x0bCFNJJEJIGOK\x18\x04\x20\x01(\rR\x0bCFNJJEJI\
+    GOK\x12\x20\n\x0bNBLJPGFHDFI\x18\x05\x20\x01(\rR\x0bNBLJPGFHDFI\x12.\n\
+    \x0bKJPDBLOAOCG\x18\x01\x20\x01(\x0b2\x0c.NDHNICCLBDNR\x0bKJPDBLOAOCGb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -247,9 +247,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::GDHMBEFBPHM::file_descriptor().clone());
-            deps.push(super::IJAIFMPFJDN::file_descriptor().clone());
-            deps.push(super::OJLOFJKJBOL::file_descriptor().clone());
+            deps.push(super::GJPNLJACAMN::file_descriptor().clone());
+            deps.push(super::NDHNICCLBDN::file_descriptor().clone());
+            deps.push(super::PMBHFPCDGBM::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RaidKickByServerScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeLoginActivityRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeLoginActivityRewardScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:TakeLoginActivityRewardScRsp.DDMDPBEGKHC)
-    pub DDMDPBEGKHC: u32,
-    // @@protoc_insertion_point(field:TakeLoginActivityRewardScRsp.ELPMNKHEPKJ)
-    pub ELPMNKHEPKJ: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:TakeLoginActivityRewardScRsp.IPNHCCODNDI)
-    pub IPNHCCODNDI: u32,
-    // @@protoc_insertion_point(field:TakeLoginActivityRewardScRsp.NKLCEJLJDED)
-    pub NKLCEJLJDED: u32,
+    // @@protoc_insertion_point(field:TakeLoginActivityRewardScRsp.AECJKNIGHJK)
+    pub AECJKNIGHJK: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:TakeLoginActivityRewardScRsp.CJJJMNNBGKI)
+    pub CJJJMNNBGKI: u32,
+    // @@protoc_insertion_point(field:TakeLoginActivityRewardScRsp.FFKNMAONGIB)
+    pub FFKNMAONGIB: u32,
+    // @@protoc_insertion_point(field:TakeLoginActivityRewardScRsp.EAPFJLMEMNM)
+    pub EAPFJLMEMNM: u32,
+    // @@protoc_insertion_point(field:TakeLoginActivityRewardScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeLoginActivityRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,30 +58,30 @@ impl TakeLoginActivityRewardScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &TakeLoginActivityRewardScRsp| { &m.ADADHIHDHJC },
-            |m: &mut TakeLoginActivityRewardScRsp| { &mut m.ADADHIHDHJC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DDMDPBEGKHC",
-            |m: &TakeLoginActivityRewardScRsp| { &m.DDMDPBEGKHC },
-            |m: &mut TakeLoginActivityRewardScRsp| { &mut m.DDMDPBEGKHC },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "ELPMNKHEPKJ",
-            |m: &TakeLoginActivityRewardScRsp| { &m.ELPMNKHEPKJ },
-            |m: &mut TakeLoginActivityRewardScRsp| { &mut m.ELPMNKHEPKJ },
+            "AECJKNIGHJK",
+            |m: &TakeLoginActivityRewardScRsp| { &m.AECJKNIGHJK },
+            |m: &mut TakeLoginActivityRewardScRsp| { &mut m.AECJKNIGHJK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IPNHCCODNDI",
-            |m: &TakeLoginActivityRewardScRsp| { &m.IPNHCCODNDI },
-            |m: &mut TakeLoginActivityRewardScRsp| { &mut m.IPNHCCODNDI },
+            "CJJJMNNBGKI",
+            |m: &TakeLoginActivityRewardScRsp| { &m.CJJJMNNBGKI },
+            |m: &mut TakeLoginActivityRewardScRsp| { &mut m.CJJJMNNBGKI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NKLCEJLJDED",
-            |m: &TakeLoginActivityRewardScRsp| { &m.NKLCEJLJDED },
-            |m: &mut TakeLoginActivityRewardScRsp| { &mut m.NKLCEJLJDED },
+            "FFKNMAONGIB",
+            |m: &TakeLoginActivityRewardScRsp| { &m.FFKNMAONGIB },
+            |m: &mut TakeLoginActivityRewardScRsp| { &mut m.FFKNMAONGIB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EAPFJLMEMNM",
+            |m: &TakeLoginActivityRewardScRsp| { &m.EAPFJLMEMNM },
+            |m: &mut TakeLoginActivityRewardScRsp| { &mut m.EAPFJLMEMNM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &TakeLoginActivityRewardScRsp| { &m.retcode },
+            |m: &mut TakeLoginActivityRewardScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeLoginActivityRewardScRsp>(
             "TakeLoginActivityRewardScRsp",
@@ -101,20 +101,20 @@ impl ::protobuf::Message for TakeLoginActivityRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AECJKNIGHJK)?;
+                },
                 8 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                    self.CJJJMNNBGKI = is.read_uint32()?;
                 },
-                40 => {
-                    self.DDMDPBEGKHC = is.read_uint32()?;
+                72 => {
+                    self.FFKNMAONGIB = is.read_uint32()?;
                 },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ELPMNKHEPKJ)?;
+                32 => {
+                    self.EAPFJLMEMNM = is.read_uint32()?;
                 },
-                16 => {
-                    self.IPNHCCODNDI = is.read_uint32()?;
-                },
-                112 => {
-                    self.NKLCEJLJDED = is.read_uint32()?;
+                64 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,21 +128,21 @@ impl ::protobuf::Message for TakeLoginActivityRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.ADADHIHDHJC);
-        }
-        if self.DDMDPBEGKHC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.DDMDPBEGKHC);
-        }
-        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
+        if let Some(v) = self.AECJKNIGHJK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.IPNHCCODNDI != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.IPNHCCODNDI);
+        if self.CJJJMNNBGKI != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.CJJJMNNBGKI);
         }
-        if self.NKLCEJLJDED != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.NKLCEJLJDED);
+        if self.FFKNMAONGIB != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.FFKNMAONGIB);
+        }
+        if self.EAPFJLMEMNM != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.EAPFJLMEMNM);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,20 +150,20 @@ impl ::protobuf::Message for TakeLoginActivityRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(1, self.ADADHIHDHJC)?;
+        if let Some(v) = self.AECJKNIGHJK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
-        if self.DDMDPBEGKHC != 0 {
-            os.write_uint32(5, self.DDMDPBEGKHC)?;
+        if self.CJJJMNNBGKI != 0 {
+            os.write_uint32(1, self.CJJJMNNBGKI)?;
         }
-        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        if self.FFKNMAONGIB != 0 {
+            os.write_uint32(9, self.FFKNMAONGIB)?;
         }
-        if self.IPNHCCODNDI != 0 {
-            os.write_uint32(2, self.IPNHCCODNDI)?;
+        if self.EAPFJLMEMNM != 0 {
+            os.write_uint32(4, self.EAPFJLMEMNM)?;
         }
-        if self.NKLCEJLJDED != 0 {
-            os.write_uint32(14, self.NKLCEJLJDED)?;
+        if self.retcode != 0 {
+            os.write_uint32(8, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,21 +182,21 @@ impl ::protobuf::Message for TakeLoginActivityRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADADHIHDHJC = 0;
-        self.DDMDPBEGKHC = 0;
-        self.ELPMNKHEPKJ.clear();
-        self.IPNHCCODNDI = 0;
-        self.NKLCEJLJDED = 0;
+        self.AECJKNIGHJK.clear();
+        self.CJJJMNNBGKI = 0;
+        self.FFKNMAONGIB = 0;
+        self.EAPFJLMEMNM = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeLoginActivityRewardScRsp {
         static instance: TakeLoginActivityRewardScRsp = TakeLoginActivityRewardScRsp {
-            ADADHIHDHJC: 0,
-            DDMDPBEGKHC: 0,
-            ELPMNKHEPKJ: ::protobuf::MessageField::none(),
-            IPNHCCODNDI: 0,
-            NKLCEJLJDED: 0,
+            AECJKNIGHJK: ::protobuf::MessageField::none(),
+            CJJJMNNBGKI: 0,
+            FFKNMAONGIB: 0,
+            EAPFJLMEMNM: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,12 +221,12 @@ impl ::protobuf::reflect::ProtobufValue for TakeLoginActivityRewardScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"TakeLoginActivityRewardScRsp.proto\x1a\x0eItemList.proto\"\xd3\x01\n\
-    \x1cTakeLoginActivityRewardScRsp\x12\x20\n\x0bADADHIHDHJC\x18\x01\x20\
-    \x01(\rR\x0bADADHIHDHJC\x12\x20\n\x0bDDMDPBEGKHC\x18\x05\x20\x01(\rR\x0b\
-    DDMDPBEGKHC\x12+\n\x0bELPMNKHEPKJ\x18\x04\x20\x01(\x0b2\t.ItemListR\x0bE\
-    LPMNKHEPKJ\x12\x20\n\x0bIPNHCCODNDI\x18\x02\x20\x01(\rR\x0bIPNHCCODNDI\
-    \x12\x20\n\x0bNKLCEJLJDED\x18\x0e\x20\x01(\rR\x0bNKLCEJLJDEDb\x06proto3\
+    \n\"TakeLoginActivityRewardScRsp.proto\x1a\x0eItemList.proto\"\xcb\x01\n\
+    \x1cTakeLoginActivityRewardScRsp\x12+\n\x0bAECJKNIGHJK\x18\x0f\x20\x01(\
+    \x0b2\t.ItemListR\x0bAECJKNIGHJK\x12\x20\n\x0bCJJJMNNBGKI\x18\x01\x20\
+    \x01(\rR\x0bCJJJMNNBGKI\x12\x20\n\x0bFFKNMAONGIB\x18\t\x20\x01(\rR\x0bFF\
+    KNMAONGIB\x12\x20\n\x0bEAPFJLMEMNM\x18\x04\x20\x01(\rR\x0bEAPFJLMEMNM\
+    \x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,9 +30,9 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub struct ChessRogueQueryAeonDimensionsScRsp {
     // message fields
     // @@protoc_insertion_point(field:ChessRogueQueryAeonDimensionsScRsp.ROGUE_DEBUG_MESSAGE_TYPE_INFO)
-    pub ROGUE_DEBUG_MESSAGE_TYPE_INFO: ::protobuf::MessageField<super::FKGKOEMFGEO::FKGKOEMFGEO>,
-    // @@protoc_insertion_point(field:ChessRogueQueryAeonDimensionsScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    pub ROGUE_DEBUG_MESSAGE_TYPE_INFO: ::protobuf::MessageField<super::ADNMNJFEBNI::ADNMNJFEBNI>,
+    // @@protoc_insertion_point(field:ChessRogueQueryAeonDimensionsScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueQueryAeonDimensionsScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl ChessRogueQueryAeonDimensionsScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FKGKOEMFGEO::FKGKOEMFGEO>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ADNMNJFEBNI::ADNMNJFEBNI>(
             "ROGUE_DEBUG_MESSAGE_TYPE_INFO",
             |m: &ChessRogueQueryAeonDimensionsScRsp| { &m.ROGUE_DEBUG_MESSAGE_TYPE_INFO },
             |m: &mut ChessRogueQueryAeonDimensionsScRsp| { &mut m.ROGUE_DEBUG_MESSAGE_TYPE_INFO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &ChessRogueQueryAeonDimensionsScRsp| { &m.ADADHIHDHJC },
-            |m: &mut ChessRogueQueryAeonDimensionsScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &ChessRogueQueryAeonDimensionsScRsp| { &m.retcode },
+            |m: &mut ChessRogueQueryAeonDimensionsScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueQueryAeonDimensionsScRsp>(
             "ChessRogueQueryAeonDimensionsScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for ChessRogueQueryAeonDimensionsScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.ROGUE_DEBUG_MESSAGE_TYPE_INFO)?;
                 },
-                88 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                72 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -102,8 +102,8 @@ impl ::protobuf::Message for ChessRogueQueryAeonDimensionsScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -112,10 +112,10 @@ impl ::protobuf::Message for ChessRogueQueryAeonDimensionsScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.ROGUE_DEBUG_MESSAGE_TYPE_INFO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(11, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(9, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -135,14 +135,14 @@ impl ::protobuf::Message for ChessRogueQueryAeonDimensionsScRsp {
 
     fn clear(&mut self) {
         self.ROGUE_DEBUG_MESSAGE_TYPE_INFO.clear();
-        self.ADADHIHDHJC = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueQueryAeonDimensionsScRsp {
         static instance: ChessRogueQueryAeonDimensionsScRsp = ChessRogueQueryAeonDimensionsScRsp {
             ROGUE_DEBUG_MESSAGE_TYPE_INFO: ::protobuf::MessageField::none(),
-            ADADHIHDHJC: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,11 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueQueryAeonDimensionsScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n(ChessRogueQueryAeonDimensionsScRsp.proto\x1a\x11FKGKOEMFGEO.proto\"\
-    \x96\x01\n\"ChessRogueQueryAeonDimensionsScRsp\x12N\n\x1dROGUE_DEBUG_MES\
-    SAGE_TYPE_INFO\x18\x04\x20\x01(\x0b2\x0c.FKGKOEMFGEOR\x19ROGUEDEBUGMESSA\
-    GETYPEINFO\x12\x20\n\x0bADADHIHDHJC\x18\x0b\x20\x01(\rR\x0bADADHIHDHJCb\
-    \x06proto3\
+    \n(ChessRogueQueryAeonDimensionsScRsp.proto\x1a\x11ADNMNJFEBNI.proto\"\
+    \x8e\x01\n\"ChessRogueQueryAeonDimensionsScRsp\x12N\n\x1dROGUE_DEBUG_MES\
+    SAGE_TYPE_INFO\x18\n\x20\x01(\x0b2\x0c.ADNMNJFEBNIR\x19ROGUEDEBUGMESSAGE\
+    TYPEINFO\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -189,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::FKGKOEMFGEO::file_descriptor().clone());
+            deps.push(super::ADNMNJFEBNI::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChessRogueQueryAeonDimensionsScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

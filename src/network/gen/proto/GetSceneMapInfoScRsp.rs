@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetSceneMapInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetSceneMapInfoScRsp.FLEPBOMHCNE)
-    pub FLEPBOMHCNE: bool,
+    // @@protoc_insertion_point(field:GetSceneMapInfoScRsp.IMKMAFANEEE)
+    pub IMKMAFANEEE: ::std::vec::Vec<super::PGJANPEPNDM::PGJANPEPNDM>,
+    // @@protoc_insertion_point(field:GetSceneMapInfoScRsp.PNBFDKENOJP)
+    pub PNBFDKENOJP: bool,
     // @@protoc_insertion_point(field:GetSceneMapInfoScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetSceneMapInfoScRsp.map_list)
-    pub map_list: ::std::vec::Vec<super::MazeMapData::MazeMapData>,
     // special fields
     // @@protoc_insertion_point(special_field:GetSceneMapInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl GetSceneMapInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "IMKMAFANEEE",
+            |m: &GetSceneMapInfoScRsp| { &m.IMKMAFANEEE },
+            |m: &mut GetSceneMapInfoScRsp| { &mut m.IMKMAFANEEE },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FLEPBOMHCNE",
-            |m: &GetSceneMapInfoScRsp| { &m.FLEPBOMHCNE },
-            |m: &mut GetSceneMapInfoScRsp| { &mut m.FLEPBOMHCNE },
+            "PNBFDKENOJP",
+            |m: &GetSceneMapInfoScRsp| { &m.PNBFDKENOJP },
+            |m: &mut GetSceneMapInfoScRsp| { &mut m.PNBFDKENOJP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetSceneMapInfoScRsp| { &m.retcode },
             |m: &mut GetSceneMapInfoScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "map_list",
-            |m: &GetSceneMapInfoScRsp| { &m.map_list },
-            |m: &mut GetSceneMapInfoScRsp| { &mut m.map_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetSceneMapInfoScRsp>(
             "GetSceneMapInfoScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for GetSceneMapInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.FLEPBOMHCNE = is.read_bool()?;
+                26 => {
+                    self.IMKMAFANEEE.push(is.read_message()?);
                 },
-                24 => {
+                104 => {
+                    self.PNBFDKENOJP = is.read_bool()?;
+                },
+                72 => {
                     self.retcode = is.read_uint32()?;
-                },
-                42 => {
-                    self.map_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,31 +108,31 @@ impl ::protobuf::Message for GetSceneMapInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FLEPBOMHCNE != false {
-            my_size += 1 + 1;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
-        }
-        for value in &self.map_list {
+        for value in &self.IMKMAFANEEE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.PNBFDKENOJP != false {
+            my_size += 1 + 1;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FLEPBOMHCNE != false {
-            os.write_bool(15, self.FLEPBOMHCNE)?;
+        for v in &self.IMKMAFANEEE {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        };
+        if self.PNBFDKENOJP != false {
+            os.write_bool(13, self.PNBFDKENOJP)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
-        for v in &self.map_list {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,17 +150,17 @@ impl ::protobuf::Message for GetSceneMapInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.FLEPBOMHCNE = false;
+        self.IMKMAFANEEE.clear();
+        self.PNBFDKENOJP = false;
         self.retcode = 0;
-        self.map_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetSceneMapInfoScRsp {
         static instance: GetSceneMapInfoScRsp = GetSceneMapInfoScRsp {
-            FLEPBOMHCNE: false,
+            IMKMAFANEEE: ::std::vec::Vec::new(),
+            PNBFDKENOJP: false,
             retcode: 0,
-            map_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,12 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for GetSceneMapInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aGetSceneMapInfoScRsp.proto\x1a\x11MazeMapData.proto\x1a\x0fMazeGro\
-    up.proto\x1a\x0fMazeChest.proto\x1a\x0eMazeProp.proto\"{\n\x14GetSceneMa\
-    pInfoScRsp\x12\x20\n\x0bFLEPBOMHCNE\x18\x0f\x20\x01(\x08R\x0bFLEPBOMHCNE\
-    \x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12'\n\x08map_list\
-    \x18\x05\x20\x03(\x0b2\x0c.MazeMapDataR\x07mapListB\x15\n\x13emu.lunarco\
-    re.protob\x06proto3\
+    \n\x1aGetSceneMapInfoScRsp.proto\x1a\x11PGJANPEPNDM.proto\"\x82\x01\n\
+    \x14GetSceneMapInfoScRsp\x12.\n\x0bIMKMAFANEEE\x18\x03\x20\x03(\x0b2\x0c\
+    .PGJANPEPNDMR\x0bIMKMAFANEEE\x12\x20\n\x0bPNBFDKENOJP\x18\r\x20\x01(\x08\
+    R\x0bPNBFDKENOJP\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcodeb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,11 +206,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(4);
-            deps.push(super::MazeMapData::file_descriptor().clone());
-            deps.push(super::MazeGroup::file_descriptor().clone());
-            deps.push(super::MazeChest::file_descriptor().clone());
-            deps.push(super::MazeProp::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(1);
+            deps.push(super::PGJANPEPNDM::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetSceneMapInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

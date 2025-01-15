@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncRogueAeonLevelUpRewardScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncRogueAeonLevelUpRewardScNotify.ELPMNKHEPKJ)
-    pub ELPMNKHEPKJ: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:SyncRogueAeonLevelUpRewardScNotify.JKOCJIMAGBN)
-    pub JKOCJIMAGBN: u32,
-    // @@protoc_insertion_point(field:SyncRogueAeonLevelUpRewardScNotify.LIKGPACLGBN)
-    pub LIKGPACLGBN: u32,
+    // @@protoc_insertion_point(field:SyncRogueAeonLevelUpRewardScNotify.AECJKNIGHJK)
+    pub AECJKNIGHJK: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:SyncRogueAeonLevelUpRewardScNotify.GEFOKELFPLL)
+    pub GEFOKELFPLL: u32,
+    // @@protoc_insertion_point(field:SyncRogueAeonLevelUpRewardScNotify.level)
+    pub level: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SyncRogueAeonLevelUpRewardScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl SyncRogueAeonLevelUpRewardScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "ELPMNKHEPKJ",
-            |m: &SyncRogueAeonLevelUpRewardScNotify| { &m.ELPMNKHEPKJ },
-            |m: &mut SyncRogueAeonLevelUpRewardScNotify| { &mut m.ELPMNKHEPKJ },
+            "AECJKNIGHJK",
+            |m: &SyncRogueAeonLevelUpRewardScNotify| { &m.AECJKNIGHJK },
+            |m: &mut SyncRogueAeonLevelUpRewardScNotify| { &mut m.AECJKNIGHJK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JKOCJIMAGBN",
-            |m: &SyncRogueAeonLevelUpRewardScNotify| { &m.JKOCJIMAGBN },
-            |m: &mut SyncRogueAeonLevelUpRewardScNotify| { &mut m.JKOCJIMAGBN },
+            "GEFOKELFPLL",
+            |m: &SyncRogueAeonLevelUpRewardScNotify| { &m.GEFOKELFPLL },
+            |m: &mut SyncRogueAeonLevelUpRewardScNotify| { &mut m.GEFOKELFPLL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LIKGPACLGBN",
-            |m: &SyncRogueAeonLevelUpRewardScNotify| { &m.LIKGPACLGBN },
-            |m: &mut SyncRogueAeonLevelUpRewardScNotify| { &mut m.LIKGPACLGBN },
+            "level",
+            |m: &SyncRogueAeonLevelUpRewardScNotify| { &m.level },
+            |m: &mut SyncRogueAeonLevelUpRewardScNotify| { &mut m.level },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncRogueAeonLevelUpRewardScNotify>(
             "SyncRogueAeonLevelUpRewardScNotify",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for SyncRogueAeonLevelUpRewardScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ELPMNKHEPKJ)?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AECJKNIGHJK)?;
                 },
-                40 => {
-                    self.JKOCJIMAGBN = is.read_uint32()?;
+                32 => {
+                    self.GEFOKELFPLL = is.read_uint32()?;
                 },
-                64 => {
-                    self.LIKGPACLGBN = is.read_uint32()?;
+                112 => {
+                    self.level = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +108,15 @@ impl ::protobuf::Message for SyncRogueAeonLevelUpRewardScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
+        if let Some(v) = self.AECJKNIGHJK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.JKOCJIMAGBN != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.JKOCJIMAGBN);
+        if self.GEFOKELFPLL != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.GEFOKELFPLL);
         }
-        if self.LIKGPACLGBN != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.LIKGPACLGBN);
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for SyncRogueAeonLevelUpRewardScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if let Some(v) = self.AECJKNIGHJK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        if self.JKOCJIMAGBN != 0 {
-            os.write_uint32(5, self.JKOCJIMAGBN)?;
+        if self.GEFOKELFPLL != 0 {
+            os.write_uint32(4, self.GEFOKELFPLL)?;
         }
-        if self.LIKGPACLGBN != 0 {
-            os.write_uint32(8, self.LIKGPACLGBN)?;
+        if self.level != 0 {
+            os.write_uint32(14, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for SyncRogueAeonLevelUpRewardScNotify {
     }
 
     fn clear(&mut self) {
-        self.ELPMNKHEPKJ.clear();
-        self.JKOCJIMAGBN = 0;
-        self.LIKGPACLGBN = 0;
+        self.AECJKNIGHJK.clear();
+        self.GEFOKELFPLL = 0;
+        self.level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncRogueAeonLevelUpRewardScNotify {
         static instance: SyncRogueAeonLevelUpRewardScNotify = SyncRogueAeonLevelUpRewardScNotify {
-            ELPMNKHEPKJ: ::protobuf::MessageField::none(),
-            JKOCJIMAGBN: 0,
-            LIKGPACLGBN: 0,
+            AECJKNIGHJK: ::protobuf::MessageField::none(),
+            GEFOKELFPLL: 0,
+            level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueAeonLevelUpRewardScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n(SyncRogueAeonLevelUpRewardScNotify.proto\x1a\x0eItemList.proto\"\x95\
-    \x01\n\"SyncRogueAeonLevelUpRewardScNotify\x12+\n\x0bELPMNKHEPKJ\x18\x03\
-    \x20\x01(\x0b2\t.ItemListR\x0bELPMNKHEPKJ\x12\x20\n\x0bJKOCJIMAGBN\x18\
-    \x05\x20\x01(\rR\x0bJKOCJIMAGBN\x12\x20\n\x0bLIKGPACLGBN\x18\x08\x20\x01\
-    (\rR\x0bLIKGPACLGBNb\x06proto3\
+    \n(SyncRogueAeonLevelUpRewardScNotify.proto\x1a\x0eItemList.proto\"\x89\
+    \x01\n\"SyncRogueAeonLevelUpRewardScNotify\x12+\n\x0bAECJKNIGHJK\x18\x02\
+    \x20\x01(\x0b2\t.ItemListR\x0bAECJKNIGHJK\x12\x20\n\x0bGEFOKELFPLL\x18\
+    \x04\x20\x01(\rR\x0bGEFOKELFPLL\x12\x14\n\x05level\x18\x0e\x20\x01(\rR\
+    \x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

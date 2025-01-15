@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChangeLineupLeaderScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ChangeLineupLeaderScRsp.slot)
-    pub slot: u32,
+    // @@protoc_insertion_point(field:ChangeLineupLeaderScRsp.HEKJJCLEAEH)
+    pub HEKJJCLEAEH: u32,
     // @@protoc_insertion_point(field:ChangeLineupLeaderScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -53,9 +53,9 @@ impl ChangeLineupLeaderScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "slot",
-            |m: &ChangeLineupLeaderScRsp| { &m.slot },
-            |m: &mut ChangeLineupLeaderScRsp| { &mut m.slot },
+            "HEKJJCLEAEH",
+            |m: &ChangeLineupLeaderScRsp| { &m.HEKJJCLEAEH },
+            |m: &mut ChangeLineupLeaderScRsp| { &mut m.HEKJJCLEAEH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for ChangeLineupLeaderScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.slot = is.read_uint32()?;
+                48 => {
+                    self.HEKJJCLEAEH = is.read_uint32()?;
                 },
-                8 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -98,11 +98,11 @@ impl ::protobuf::Message for ChangeLineupLeaderScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.slot);
+        if self.HEKJJCLEAEH != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.HEKJJCLEAEH);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for ChangeLineupLeaderScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.slot != 0 {
-            os.write_uint32(13, self.slot)?;
+        if self.HEKJJCLEAEH != 0 {
+            os.write_uint32(6, self.HEKJJCLEAEH)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for ChangeLineupLeaderScRsp {
     }
 
     fn clear(&mut self) {
-        self.slot = 0;
+        self.HEKJJCLEAEH = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChangeLineupLeaderScRsp {
         static instance: ChangeLineupLeaderScRsp = ChangeLineupLeaderScRsp {
-            slot: 0,
+            HEKJJCLEAEH: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for ChangeLineupLeaderScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dChangeLineupLeaderScRsp.proto\"G\n\x17ChangeLineupLeaderScRsp\x12\
-    \x12\n\x04slot\x18\r\x20\x01(\rR\x04slot\x12\x18\n\x07retcode\x18\x01\
-    \x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x1dChangeLineupLeaderScRsp.proto\"U\n\x17ChangeLineupLeaderScRsp\x12\
+    \x20\n\x0bHEKJJCLEAEH\x18\x06\x20\x01(\rR\x0bHEKJJCLEAEH\x12\x18\n\x07re\
+    tcode\x18\x02\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

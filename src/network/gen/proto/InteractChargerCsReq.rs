@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct InteractChargerCsReq {
     // message fields
-    // @@protoc_insertion_point(field:InteractChargerCsReq.charger_info)
-    pub charger_info: ::protobuf::MessageField<super::ChargerInfo::ChargerInfo>,
+    // @@protoc_insertion_point(field:InteractChargerCsReq.KAEJMPAKJDP)
+    pub KAEJMPAKJDP: ::protobuf::MessageField<super::JJEJHCKMJLG::JJEJHCKMJLG>,
     // special fields
     // @@protoc_insertion_point(special_field:InteractChargerCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,10 +50,10 @@ impl InteractChargerCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChargerInfo::ChargerInfo>(
-            "charger_info",
-            |m: &InteractChargerCsReq| { &m.charger_info },
-            |m: &mut InteractChargerCsReq| { &mut m.charger_info },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JJEJHCKMJLG::JJEJHCKMJLG>(
+            "KAEJMPAKJDP",
+            |m: &InteractChargerCsReq| { &m.KAEJMPAKJDP },
+            |m: &mut InteractChargerCsReq| { &mut m.KAEJMPAKJDP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<InteractChargerCsReq>(
             "InteractChargerCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for InteractChargerCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.charger_info)?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KAEJMPAKJDP)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for InteractChargerCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.charger_info.as_ref() {
+        if let Some(v) = self.KAEJMPAKJDP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -98,8 +98,8 @@ impl ::protobuf::Message for InteractChargerCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.charger_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if let Some(v) = self.KAEJMPAKJDP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -118,13 +118,13 @@ impl ::protobuf::Message for InteractChargerCsReq {
     }
 
     fn clear(&mut self) {
-        self.charger_info.clear();
+        self.KAEJMPAKJDP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static InteractChargerCsReq {
         static instance: InteractChargerCsReq = InteractChargerCsReq {
-            charger_info: ::protobuf::MessageField::none(),
+            KAEJMPAKJDP: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,9 +149,9 @@ impl ::protobuf::reflect::ProtobufValue for InteractChargerCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aInteractChargerCsReq.proto\x1a\x11ChargerInfo.proto\"G\n\x14Intera\
-    ctChargerCsReq\x12/\n\x0ccharger_info\x18\x01\x20\x01(\x0b2\x0c.ChargerI\
-    nfoR\x0bchargerInfoB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x1aInteractChargerCsReq.proto\x1a\x11JJEJHCKMJLG.proto\"F\n\x14Intera\
+    ctChargerCsReq\x12.\n\x0bKAEJMPAKJDP\x18\x08\x20\x01(\x0b2\x0c.JJEJHCKMJ\
+    LGR\x0bKAEJMPAKJDPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -169,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ChargerInfo::file_descriptor().clone());
+            deps.push(super::JJEJHCKMJLG::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(InteractChargerCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

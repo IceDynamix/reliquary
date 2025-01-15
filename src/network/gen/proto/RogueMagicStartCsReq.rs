@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicStartCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicStartCsReq.JCCBMDKGJKM)
-    pub JCCBMDKGJKM: u32,
-    // @@protoc_insertion_point(field:RogueMagicStartCsReq.ONLLDNLPHEF)
-    pub ONLLDNLPHEF: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:RogueMagicStartCsReq.FOPPGNKJGLP)
-    pub FOPPGNKJGLP: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:RogueMagicStartCsReq.OMBLHJDKEJA)
-    pub OMBLHJDKEJA: u32,
+    // @@protoc_insertion_point(field:RogueMagicStartCsReq.KJKPMFFAMFK)
+    pub KJKPMFFAMFK: u32,
+    // @@protoc_insertion_point(field:RogueMagicStartCsReq.CNGEPABGDLM)
+    pub CNGEPABGDLM: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueMagicStartCsReq.LECAMFAFAFB)
+    pub LECAMFAFAFB: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueMagicStartCsReq.HBEEDMLEIPI)
+    pub HBEEDMLEIPI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicStartCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl RogueMagicStartCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JCCBMDKGJKM",
-            |m: &RogueMagicStartCsReq| { &m.JCCBMDKGJKM },
-            |m: &mut RogueMagicStartCsReq| { &mut m.JCCBMDKGJKM },
+            "KJKPMFFAMFK",
+            |m: &RogueMagicStartCsReq| { &m.KJKPMFFAMFK },
+            |m: &mut RogueMagicStartCsReq| { &mut m.KJKPMFFAMFK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ONLLDNLPHEF",
-            |m: &RogueMagicStartCsReq| { &m.ONLLDNLPHEF },
-            |m: &mut RogueMagicStartCsReq| { &mut m.ONLLDNLPHEF },
+            "CNGEPABGDLM",
+            |m: &RogueMagicStartCsReq| { &m.CNGEPABGDLM },
+            |m: &mut RogueMagicStartCsReq| { &mut m.CNGEPABGDLM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FOPPGNKJGLP",
-            |m: &RogueMagicStartCsReq| { &m.FOPPGNKJGLP },
-            |m: &mut RogueMagicStartCsReq| { &mut m.FOPPGNKJGLP },
+            "LECAMFAFAFB",
+            |m: &RogueMagicStartCsReq| { &m.LECAMFAFAFB },
+            |m: &mut RogueMagicStartCsReq| { &mut m.LECAMFAFAFB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OMBLHJDKEJA",
-            |m: &RogueMagicStartCsReq| { &m.OMBLHJDKEJA },
-            |m: &mut RogueMagicStartCsReq| { &mut m.OMBLHJDKEJA },
+            "HBEEDMLEIPI",
+            |m: &RogueMagicStartCsReq| { &m.HBEEDMLEIPI },
+            |m: &mut RogueMagicStartCsReq| { &mut m.HBEEDMLEIPI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicStartCsReq>(
             "RogueMagicStartCsReq",
@@ -94,23 +94,23 @@ impl ::protobuf::Message for RogueMagicStartCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.JCCBMDKGJKM = is.read_uint32()?;
-                },
-                82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.ONLLDNLPHEF)?;
-                },
                 80 => {
-                    self.ONLLDNLPHEF.push(is.read_uint32()?);
+                    self.KJKPMFFAMFK = is.read_uint32()?;
                 },
                 26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FOPPGNKJGLP)?;
+                    is.read_repeated_packed_uint32_into(&mut self.CNGEPABGDLM)?;
                 },
                 24 => {
-                    self.FOPPGNKJGLP.push(is.read_uint32()?);
+                    self.CNGEPABGDLM.push(is.read_uint32()?);
                 },
-                48 => {
-                    self.OMBLHJDKEJA = is.read_uint32()?;
+                114 => {
+                    is.read_repeated_packed_uint32_into(&mut self.LECAMFAFAFB)?;
+                },
+                112 => {
+                    self.LECAMFAFAFB.push(is.read_uint32()?);
+                },
+                64 => {
+                    self.HBEEDMLEIPI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -124,17 +124,17 @@ impl ::protobuf::Message for RogueMagicStartCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JCCBMDKGJKM != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.JCCBMDKGJKM);
+        if self.KJKPMFFAMFK != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.KJKPMFFAMFK);
         }
-        for value in &self.ONLLDNLPHEF {
-            my_size += ::protobuf::rt::uint32_size(10, *value);
-        };
-        for value in &self.FOPPGNKJGLP {
+        for value in &self.CNGEPABGDLM {
             my_size += ::protobuf::rt::uint32_size(3, *value);
         };
-        if self.OMBLHJDKEJA != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.OMBLHJDKEJA);
+        for value in &self.LECAMFAFAFB {
+            my_size += ::protobuf::rt::uint32_size(14, *value);
+        };
+        if self.HBEEDMLEIPI != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.HBEEDMLEIPI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -142,17 +142,17 @@ impl ::protobuf::Message for RogueMagicStartCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JCCBMDKGJKM != 0 {
-            os.write_uint32(12, self.JCCBMDKGJKM)?;
+        if self.KJKPMFFAMFK != 0 {
+            os.write_uint32(10, self.KJKPMFFAMFK)?;
         }
-        for v in &self.ONLLDNLPHEF {
-            os.write_uint32(10, *v)?;
-        };
-        for v in &self.FOPPGNKJGLP {
+        for v in &self.CNGEPABGDLM {
             os.write_uint32(3, *v)?;
         };
-        if self.OMBLHJDKEJA != 0 {
-            os.write_uint32(6, self.OMBLHJDKEJA)?;
+        for v in &self.LECAMFAFAFB {
+            os.write_uint32(14, *v)?;
+        };
+        if self.HBEEDMLEIPI != 0 {
+            os.write_uint32(8, self.HBEEDMLEIPI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -171,19 +171,19 @@ impl ::protobuf::Message for RogueMagicStartCsReq {
     }
 
     fn clear(&mut self) {
-        self.JCCBMDKGJKM = 0;
-        self.ONLLDNLPHEF.clear();
-        self.FOPPGNKJGLP.clear();
-        self.OMBLHJDKEJA = 0;
+        self.KJKPMFFAMFK = 0;
+        self.CNGEPABGDLM.clear();
+        self.LECAMFAFAFB.clear();
+        self.HBEEDMLEIPI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicStartCsReq {
         static instance: RogueMagicStartCsReq = RogueMagicStartCsReq {
-            JCCBMDKGJKM: 0,
-            ONLLDNLPHEF: ::std::vec::Vec::new(),
-            FOPPGNKJGLP: ::std::vec::Vec::new(),
-            OMBLHJDKEJA: 0,
+            KJKPMFFAMFK: 0,
+            CNGEPABGDLM: ::std::vec::Vec::new(),
+            LECAMFAFAFB: ::std::vec::Vec::new(),
+            HBEEDMLEIPI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -209,10 +209,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicStartCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aRogueMagicStartCsReq.proto\"\x9e\x01\n\x14RogueMagicStartCsReq\x12\
-    \x20\n\x0bJCCBMDKGJKM\x18\x0c\x20\x01(\rR\x0bJCCBMDKGJKM\x12\x20\n\x0bON\
-    LLDNLPHEF\x18\n\x20\x03(\rR\x0bONLLDNLPHEF\x12\x20\n\x0bFOPPGNKJGLP\x18\
-    \x03\x20\x03(\rR\x0bFOPPGNKJGLP\x12\x20\n\x0bOMBLHJDKEJA\x18\x06\x20\x01\
-    (\rR\x0bOMBLHJDKEJAb\x06proto3\
+    \x20\n\x0bKJKPMFFAMFK\x18\n\x20\x01(\rR\x0bKJKPMFFAMFK\x12\x20\n\x0bCNGE\
+    PABGDLM\x18\x03\x20\x03(\rR\x0bCNGEPABGDLM\x12\x20\n\x0bLECAMFAFAFB\x18\
+    \x0e\x20\x03(\rR\x0bLECAMFAFAFB\x12\x20\n\x0bHBEEDMLEIPI\x18\x08\x20\x01\
+    (\rR\x0bHBEEDMLEIPIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

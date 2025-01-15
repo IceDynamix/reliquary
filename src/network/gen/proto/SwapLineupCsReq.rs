@@ -29,18 +29,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SwapLineupCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SwapLineupCsReq.src_slot)
-    pub src_slot: u32,
-    // @@protoc_insertion_point(field:SwapLineupCsReq.plane_id)
-    pub plane_id: u32,
-    // @@protoc_insertion_point(field:SwapLineupCsReq.extra_lineup_type)
-    pub extra_lineup_type: ::protobuf::EnumOrUnknown<super::ExtraLineupType::ExtraLineupType>,
-    // @@protoc_insertion_point(field:SwapLineupCsReq.index)
-    pub index: u32,
-    // @@protoc_insertion_point(field:SwapLineupCsReq.dst_slot)
-    pub dst_slot: u32,
-    // @@protoc_insertion_point(field:SwapLineupCsReq.is_virtual)
-    pub is_virtual: bool,
+    // @@protoc_insertion_point(field:SwapLineupCsReq.BHONGJMFKIM)
+    pub BHONGJMFKIM: u32,
+    // @@protoc_insertion_point(field:SwapLineupCsReq.JIPDGGJFKCH)
+    pub JIPDGGJFKCH: u32,
+    // @@protoc_insertion_point(field:SwapLineupCsReq.ICCIODCOABK)
+    pub ICCIODCOABK: u32,
+    // @@protoc_insertion_point(field:SwapLineupCsReq.COIGGIDECNO)
+    pub COIGGIDECNO: u32,
+    // @@protoc_insertion_point(field:SwapLineupCsReq.IPMBAIAICCN)
+    pub IPMBAIAICCN: bool,
+    // @@protoc_insertion_point(field:SwapLineupCsReq.FHHFLHBHBLE)
+    pub FHHFLHBHBLE: ::protobuf::EnumOrUnknown<super::ExtraLineupType::ExtraLineupType>,
     // special fields
     // @@protoc_insertion_point(special_field:SwapLineupCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,34 +61,34 @@ impl SwapLineupCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "src_slot",
-            |m: &SwapLineupCsReq| { &m.src_slot },
-            |m: &mut SwapLineupCsReq| { &mut m.src_slot },
+            "BHONGJMFKIM",
+            |m: &SwapLineupCsReq| { &m.BHONGJMFKIM },
+            |m: &mut SwapLineupCsReq| { &mut m.BHONGJMFKIM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "plane_id",
-            |m: &SwapLineupCsReq| { &m.plane_id },
-            |m: &mut SwapLineupCsReq| { &mut m.plane_id },
+            "JIPDGGJFKCH",
+            |m: &SwapLineupCsReq| { &m.JIPDGGJFKCH },
+            |m: &mut SwapLineupCsReq| { &mut m.JIPDGGJFKCH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "extra_lineup_type",
-            |m: &SwapLineupCsReq| { &m.extra_lineup_type },
-            |m: &mut SwapLineupCsReq| { &mut m.extra_lineup_type },
+            "ICCIODCOABK",
+            |m: &SwapLineupCsReq| { &m.ICCIODCOABK },
+            |m: &mut SwapLineupCsReq| { &mut m.ICCIODCOABK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "index",
-            |m: &SwapLineupCsReq| { &m.index },
-            |m: &mut SwapLineupCsReq| { &mut m.index },
+            "COIGGIDECNO",
+            |m: &SwapLineupCsReq| { &m.COIGGIDECNO },
+            |m: &mut SwapLineupCsReq| { &mut m.COIGGIDECNO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "dst_slot",
-            |m: &SwapLineupCsReq| { &m.dst_slot },
-            |m: &mut SwapLineupCsReq| { &mut m.dst_slot },
+            "IPMBAIAICCN",
+            |m: &SwapLineupCsReq| { &m.IPMBAIAICCN },
+            |m: &mut SwapLineupCsReq| { &mut m.IPMBAIAICCN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_virtual",
-            |m: &SwapLineupCsReq| { &m.is_virtual },
-            |m: &mut SwapLineupCsReq| { &mut m.is_virtual },
+            "FHHFLHBHBLE",
+            |m: &SwapLineupCsReq| { &m.FHHFLHBHBLE },
+            |m: &mut SwapLineupCsReq| { &mut m.FHHFLHBHBLE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SwapLineupCsReq>(
             "SwapLineupCsReq",
@@ -108,23 +108,23 @@ impl ::protobuf::Message for SwapLineupCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.src_slot = is.read_uint32()?;
-                },
-                24 => {
-                    self.plane_id = is.read_uint32()?;
-                },
-                40 => {
-                    self.extra_lineup_type = is.read_enum_or_unknown()?;
-                },
-                56 => {
-                    self.index = is.read_uint32()?;
-                },
                 64 => {
-                    self.dst_slot = is.read_uint32()?;
+                    self.BHONGJMFKIM = is.read_uint32()?;
                 },
-                120 => {
-                    self.is_virtual = is.read_bool()?;
+                80 => {
+                    self.JIPDGGJFKCH = is.read_uint32()?;
+                },
+                88 => {
+                    self.ICCIODCOABK = is.read_uint32()?;
+                },
+                8 => {
+                    self.COIGGIDECNO = is.read_uint32()?;
+                },
+                104 => {
+                    self.IPMBAIAICCN = is.read_bool()?;
+                },
+                96 => {
+                    self.FHHFLHBHBLE = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -138,23 +138,23 @@ impl ::protobuf::Message for SwapLineupCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.src_slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.src_slot);
+        if self.BHONGJMFKIM != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.BHONGJMFKIM);
         }
-        if self.plane_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.plane_id);
+        if self.JIPDGGJFKCH != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.JIPDGGJFKCH);
         }
-        if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            my_size += ::protobuf::rt::int32_size(5, self.extra_lineup_type.value());
+        if self.ICCIODCOABK != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.ICCIODCOABK);
         }
-        if self.index != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.index);
+        if self.COIGGIDECNO != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.COIGGIDECNO);
         }
-        if self.dst_slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.dst_slot);
-        }
-        if self.is_virtual != false {
+        if self.IPMBAIAICCN != false {
             my_size += 1 + 1;
+        }
+        if self.FHHFLHBHBLE != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
+            my_size += ::protobuf::rt::int32_size(12, self.FHHFLHBHBLE.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,23 +162,23 @@ impl ::protobuf::Message for SwapLineupCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.src_slot != 0 {
-            os.write_uint32(6, self.src_slot)?;
+        if self.BHONGJMFKIM != 0 {
+            os.write_uint32(8, self.BHONGJMFKIM)?;
         }
-        if self.plane_id != 0 {
-            os.write_uint32(3, self.plane_id)?;
+        if self.JIPDGGJFKCH != 0 {
+            os.write_uint32(10, self.JIPDGGJFKCH)?;
         }
-        if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.extra_lineup_type))?;
+        if self.ICCIODCOABK != 0 {
+            os.write_uint32(11, self.ICCIODCOABK)?;
         }
-        if self.index != 0 {
-            os.write_uint32(7, self.index)?;
+        if self.COIGGIDECNO != 0 {
+            os.write_uint32(1, self.COIGGIDECNO)?;
         }
-        if self.dst_slot != 0 {
-            os.write_uint32(8, self.dst_slot)?;
+        if self.IPMBAIAICCN != false {
+            os.write_bool(13, self.IPMBAIAICCN)?;
         }
-        if self.is_virtual != false {
-            os.write_bool(15, self.is_virtual)?;
+        if self.FHHFLHBHBLE != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.FHHFLHBHBLE))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,23 +197,23 @@ impl ::protobuf::Message for SwapLineupCsReq {
     }
 
     fn clear(&mut self) {
-        self.src_slot = 0;
-        self.plane_id = 0;
-        self.extra_lineup_type = ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE);
-        self.index = 0;
-        self.dst_slot = 0;
-        self.is_virtual = false;
+        self.BHONGJMFKIM = 0;
+        self.JIPDGGJFKCH = 0;
+        self.ICCIODCOABK = 0;
+        self.COIGGIDECNO = 0;
+        self.IPMBAIAICCN = false;
+        self.FHHFLHBHBLE = ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwapLineupCsReq {
         static instance: SwapLineupCsReq = SwapLineupCsReq {
-            src_slot: 0,
-            plane_id: 0,
-            extra_lineup_type: ::protobuf::EnumOrUnknown::from_i32(0),
-            index: 0,
-            dst_slot: 0,
-            is_virtual: false,
+            BHONGJMFKIM: 0,
+            JIPDGGJFKCH: 0,
+            ICCIODCOABK: 0,
+            COIGGIDECNO: 0,
+            IPMBAIAICCN: false,
+            FHHFLHBHBLE: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -238,13 +238,13 @@ impl ::protobuf::reflect::ProtobufValue for SwapLineupCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15SwapLineupCsReq.proto\x1a\x15ExtraLineupType.proto\"\xd5\x01\n\x0f\
-    SwapLineupCsReq\x12\x19\n\x08src_slot\x18\x06\x20\x01(\rR\x07srcSlot\x12\
-    \x19\n\x08plane_id\x18\x03\x20\x01(\rR\x07planeId\x12<\n\x11extra_lineup\
-    _type\x18\x05\x20\x01(\x0e2\x10.ExtraLineupTypeR\x0fextraLineupType\x12\
-    \x14\n\x05index\x18\x07\x20\x01(\rR\x05index\x12\x19\n\x08dst_slot\x18\
-    \x08\x20\x01(\rR\x07dstSlot\x12\x1d\n\nis_virtual\x18\x0f\x20\x01(\x08R\
-    \tisVirtualB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x15SwapLineupCsReq.proto\x1a\x15ExtraLineupType.proto\"\xef\x01\n\x0f\
+    SwapLineupCsReq\x12\x20\n\x0bBHONGJMFKIM\x18\x08\x20\x01(\rR\x0bBHONGJMF\
+    KIM\x12\x20\n\x0bJIPDGGJFKCH\x18\n\x20\x01(\rR\x0bJIPDGGJFKCH\x12\x20\n\
+    \x0bICCIODCOABK\x18\x0b\x20\x01(\rR\x0bICCIODCOABK\x12\x20\n\x0bCOIGGIDE\
+    CNO\x18\x01\x20\x01(\rR\x0bCOIGGIDECNO\x12\x20\n\x0bIPMBAIAICCN\x18\r\
+    \x20\x01(\x08R\x0bIPMBAIAICCN\x122\n\x0bFHHFLHBHBLE\x18\x0c\x20\x01(\x0e\
+    2\x10.ExtraLineupTypeR\x0bFHHFLHBHBLEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

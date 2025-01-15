@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeExpeditionRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeExpeditionRewardCsReq.NPNHJLGFMIM)
-    pub NPNHJLGFMIM: u32,
+    // @@protoc_insertion_point(field:TakeExpeditionRewardCsReq.KLJLNIOGBCJ)
+    pub KLJLNIOGBCJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeExpeditionRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl TakeExpeditionRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NPNHJLGFMIM",
-            |m: &TakeExpeditionRewardCsReq| { &m.NPNHJLGFMIM },
-            |m: &mut TakeExpeditionRewardCsReq| { &mut m.NPNHJLGFMIM },
+            "KLJLNIOGBCJ",
+            |m: &TakeExpeditionRewardCsReq| { &m.KLJLNIOGBCJ },
+            |m: &mut TakeExpeditionRewardCsReq| { &mut m.KLJLNIOGBCJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeExpeditionRewardCsReq>(
             "TakeExpeditionRewardCsReq",
@@ -74,7 +74,7 @@ impl ::protobuf::Message for TakeExpeditionRewardCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 88 => {
-                    self.NPNHJLGFMIM = is.read_uint32()?;
+                    self.KLJLNIOGBCJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for TakeExpeditionRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NPNHJLGFMIM != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.NPNHJLGFMIM);
+        if self.KLJLNIOGBCJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.KLJLNIOGBCJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for TakeExpeditionRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NPNHJLGFMIM != 0 {
-            os.write_uint32(11, self.NPNHJLGFMIM)?;
+        if self.KLJLNIOGBCJ != 0 {
+            os.write_uint32(11, self.KLJLNIOGBCJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for TakeExpeditionRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.NPNHJLGFMIM = 0;
+        self.KLJLNIOGBCJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeExpeditionRewardCsReq {
         static instance: TakeExpeditionRewardCsReq = TakeExpeditionRewardCsReq {
-            NPNHJLGFMIM: 0,
+            KLJLNIOGBCJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for TakeExpeditionRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fTakeExpeditionRewardCsReq.proto\"=\n\x19TakeExpeditionRewardCsReq\
-    \x12\x20\n\x0bNPNHJLGFMIM\x18\x0b\x20\x01(\rR\x0bNPNHJLGFMIMb\x06proto3\
+    \x12\x20\n\x0bKLJLNIOGBCJ\x18\x0b\x20\x01(\rR\x0bKLJLNIOGBCJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

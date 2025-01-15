@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GameplayCounterCountDownCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GameplayCounterCountDownCsReq.COIFBDJBCDE)
-    pub COIFBDJBCDE: u32,
-    // @@protoc_insertion_point(field:GameplayCounterCountDownCsReq.PFHEGFOOLHE)
-    pub PFHEGFOOLHE: u32,
+    // @@protoc_insertion_point(field:GameplayCounterCountDownCsReq.LOIFEADKBKB)
+    pub LOIFEADKBKB: u32,
+    // @@protoc_insertion_point(field:GameplayCounterCountDownCsReq.CKAGPDJLBGA)
+    pub CKAGPDJLBGA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GameplayCounterCountDownCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl GameplayCounterCountDownCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "COIFBDJBCDE",
-            |m: &GameplayCounterCountDownCsReq| { &m.COIFBDJBCDE },
-            |m: &mut GameplayCounterCountDownCsReq| { &mut m.COIFBDJBCDE },
+            "LOIFEADKBKB",
+            |m: &GameplayCounterCountDownCsReq| { &m.LOIFEADKBKB },
+            |m: &mut GameplayCounterCountDownCsReq| { &mut m.LOIFEADKBKB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PFHEGFOOLHE",
-            |m: &GameplayCounterCountDownCsReq| { &m.PFHEGFOOLHE },
-            |m: &mut GameplayCounterCountDownCsReq| { &mut m.PFHEGFOOLHE },
+            "CKAGPDJLBGA",
+            |m: &GameplayCounterCountDownCsReq| { &m.CKAGPDJLBGA },
+            |m: &mut GameplayCounterCountDownCsReq| { &mut m.CKAGPDJLBGA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GameplayCounterCountDownCsReq>(
             "GameplayCounterCountDownCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for GameplayCounterCountDownCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.COIFBDJBCDE = is.read_uint32()?;
+                32 => {
+                    self.LOIFEADKBKB = is.read_uint32()?;
                 },
-                16 => {
-                    self.PFHEGFOOLHE = is.read_uint32()?;
+                112 => {
+                    self.CKAGPDJLBGA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for GameplayCounterCountDownCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.COIFBDJBCDE != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.COIFBDJBCDE);
+        if self.LOIFEADKBKB != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.LOIFEADKBKB);
         }
-        if self.PFHEGFOOLHE != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.PFHEGFOOLHE);
+        if self.CKAGPDJLBGA != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.CKAGPDJLBGA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for GameplayCounterCountDownCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.COIFBDJBCDE != 0 {
-            os.write_uint32(10, self.COIFBDJBCDE)?;
+        if self.LOIFEADKBKB != 0 {
+            os.write_uint32(4, self.LOIFEADKBKB)?;
         }
-        if self.PFHEGFOOLHE != 0 {
-            os.write_uint32(2, self.PFHEGFOOLHE)?;
+        if self.CKAGPDJLBGA != 0 {
+            os.write_uint32(14, self.CKAGPDJLBGA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GameplayCounterCountDownCsReq {
     }
 
     fn clear(&mut self) {
-        self.COIFBDJBCDE = 0;
-        self.PFHEGFOOLHE = 0;
+        self.LOIFEADKBKB = 0;
+        self.CKAGPDJLBGA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GameplayCounterCountDownCsReq {
         static instance: GameplayCounterCountDownCsReq = GameplayCounterCountDownCsReq {
-            COIFBDJBCDE: 0,
-            PFHEGFOOLHE: 0,
+            LOIFEADKBKB: 0,
+            CKAGPDJLBGA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for GameplayCounterCountDownCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#GameplayCounterCountDownCsReq.proto\"c\n\x1dGameplayCounterCountDownC\
-    sReq\x12\x20\n\x0bCOIFBDJBCDE\x18\n\x20\x01(\rR\x0bCOIFBDJBCDE\x12\x20\n\
-    \x0bPFHEGFOOLHE\x18\x02\x20\x01(\rR\x0bPFHEGFOOLHEb\x06proto3\
+    sReq\x12\x20\n\x0bLOIFEADKBKB\x18\x04\x20\x01(\rR\x0bLOIFEADKBKB\x12\x20\
+    \n\x0bCKAGPDJLBGA\x18\x0e\x20\x01(\rR\x0bCKAGPDJLBGAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

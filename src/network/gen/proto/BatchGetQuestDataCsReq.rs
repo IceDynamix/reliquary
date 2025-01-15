@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BatchGetQuestDataCsReq {
     // message fields
-    // @@protoc_insertion_point(field:BatchGetQuestDataCsReq.JIDEIJEPHIH)
-    pub JIDEIJEPHIH: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:BatchGetQuestDataCsReq.PNHDMGHJJKA)
+    pub PNHDMGHJJKA: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:BatchGetQuestDataCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl BatchGetQuestDataCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JIDEIJEPHIH",
-            |m: &BatchGetQuestDataCsReq| { &m.JIDEIJEPHIH },
-            |m: &mut BatchGetQuestDataCsReq| { &mut m.JIDEIJEPHIH },
+            "PNHDMGHJJKA",
+            |m: &BatchGetQuestDataCsReq| { &m.PNHDMGHJJKA },
+            |m: &mut BatchGetQuestDataCsReq| { &mut m.PNHDMGHJJKA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BatchGetQuestDataCsReq>(
             "BatchGetQuestDataCsReq",
@@ -73,11 +73,11 @@ impl ::protobuf::Message for BatchGetQuestDataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.JIDEIJEPHIH)?;
+                106 => {
+                    is.read_repeated_packed_uint32_into(&mut self.PNHDMGHJJKA)?;
                 },
-                16 => {
-                    self.JIDEIJEPHIH.push(is.read_uint32()?);
+                104 => {
+                    self.PNHDMGHJJKA.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -91,8 +91,8 @@ impl ::protobuf::Message for BatchGetQuestDataCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.JIDEIJEPHIH {
-            my_size += ::protobuf::rt::uint32_size(2, *value);
+        for value in &self.PNHDMGHJJKA {
+            my_size += ::protobuf::rt::uint32_size(13, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -100,8 +100,8 @@ impl ::protobuf::Message for BatchGetQuestDataCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.JIDEIJEPHIH {
-            os.write_uint32(2, *v)?;
+        for v in &self.PNHDMGHJJKA {
+            os.write_uint32(13, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -120,13 +120,13 @@ impl ::protobuf::Message for BatchGetQuestDataCsReq {
     }
 
     fn clear(&mut self) {
-        self.JIDEIJEPHIH.clear();
+        self.PNHDMGHJJKA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BatchGetQuestDataCsReq {
         static instance: BatchGetQuestDataCsReq = BatchGetQuestDataCsReq {
-            JIDEIJEPHIH: ::std::vec::Vec::new(),
+            PNHDMGHJJKA: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -152,7 +152,7 @@ impl ::protobuf::reflect::ProtobufValue for BatchGetQuestDataCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cBatchGetQuestDataCsReq.proto\":\n\x16BatchGetQuestDataCsReq\x12\
-    \x20\n\x0bJIDEIJEPHIH\x18\x02\x20\x03(\rR\x0bJIDEIJEPHIHb\x06proto3\
+    \x20\n\x0bPNHDMGHJJKA\x18\r\x20\x03(\rR\x0bPNHDMGHJJKAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

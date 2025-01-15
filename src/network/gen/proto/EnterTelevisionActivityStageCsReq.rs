@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterTelevisionActivityStageCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EnterTelevisionActivityStageCsReq.EMALNMLGANJ)
-    pub EMALNMLGANJ: ::std::vec::Vec<super::FHJJONJFANM::FHJJONJFANM>,
-    // @@protoc_insertion_point(field:EnterTelevisionActivityStageCsReq.EBDDNGHLIGH)
-    pub EBDDNGHLIGH: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:EnterTelevisionActivityStageCsReq.KKIOHLDDJCJ)
-    pub KKIOHLDDJCJ: u32,
+    // @@protoc_insertion_point(field:EnterTelevisionActivityStageCsReq.avatar_list)
+    pub avatar_list: ::std::vec::Vec<super::CPHNOOOKLCL::CPHNOOOKLCL>,
+    // @@protoc_insertion_point(field:EnterTelevisionActivityStageCsReq.NGDAJKNLELE)
+    pub NGDAJKNLELE: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:EnterTelevisionActivityStageCsReq.AJEBBCLPHAH)
+    pub AJEBBCLPHAH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EnterTelevisionActivityStageCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl EnterTelevisionActivityStageCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EMALNMLGANJ",
-            |m: &EnterTelevisionActivityStageCsReq| { &m.EMALNMLGANJ },
-            |m: &mut EnterTelevisionActivityStageCsReq| { &mut m.EMALNMLGANJ },
+            "avatar_list",
+            |m: &EnterTelevisionActivityStageCsReq| { &m.avatar_list },
+            |m: &mut EnterTelevisionActivityStageCsReq| { &mut m.avatar_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EBDDNGHLIGH",
-            |m: &EnterTelevisionActivityStageCsReq| { &m.EBDDNGHLIGH },
-            |m: &mut EnterTelevisionActivityStageCsReq| { &mut m.EBDDNGHLIGH },
+            "NGDAJKNLELE",
+            |m: &EnterTelevisionActivityStageCsReq| { &m.NGDAJKNLELE },
+            |m: &mut EnterTelevisionActivityStageCsReq| { &mut m.NGDAJKNLELE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KKIOHLDDJCJ",
-            |m: &EnterTelevisionActivityStageCsReq| { &m.KKIOHLDDJCJ },
-            |m: &mut EnterTelevisionActivityStageCsReq| { &mut m.KKIOHLDDJCJ },
+            "AJEBBCLPHAH",
+            |m: &EnterTelevisionActivityStageCsReq| { &m.AJEBBCLPHAH },
+            |m: &mut EnterTelevisionActivityStageCsReq| { &mut m.AJEBBCLPHAH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterTelevisionActivityStageCsReq>(
             "EnterTelevisionActivityStageCsReq",
@@ -88,16 +88,16 @@ impl ::protobuf::Message for EnterTelevisionActivityStageCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 106 => {
-                    self.EMALNMLGANJ.push(is.read_message()?);
+                    self.avatar_list.push(is.read_message()?);
                 },
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.EBDDNGHLIGH)?;
-                },
-                8 => {
-                    self.EBDDNGHLIGH.push(is.read_uint32()?);
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.NGDAJKNLELE)?;
                 },
                 64 => {
-                    self.KKIOHLDDJCJ = is.read_uint32()?;
+                    self.NGDAJKNLELE.push(is.read_uint32()?);
+                },
+                80 => {
+                    self.AJEBBCLPHAH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,15 +111,15 @@ impl ::protobuf::Message for EnterTelevisionActivityStageCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.EMALNMLGANJ {
+        for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.EBDDNGHLIGH {
-            my_size += ::protobuf::rt::uint32_size(1, *value);
+        for value in &self.NGDAJKNLELE {
+            my_size += ::protobuf::rt::uint32_size(8, *value);
         };
-        if self.KKIOHLDDJCJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.KKIOHLDDJCJ);
+        if self.AJEBBCLPHAH != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.AJEBBCLPHAH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -127,14 +127,14 @@ impl ::protobuf::Message for EnterTelevisionActivityStageCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.EMALNMLGANJ {
+        for v in &self.avatar_list {
             ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
-        for v in &self.EBDDNGHLIGH {
-            os.write_uint32(1, *v)?;
+        for v in &self.NGDAJKNLELE {
+            os.write_uint32(8, *v)?;
         };
-        if self.KKIOHLDDJCJ != 0 {
-            os.write_uint32(8, self.KKIOHLDDJCJ)?;
+        if self.AJEBBCLPHAH != 0 {
+            os.write_uint32(10, self.AJEBBCLPHAH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -153,17 +153,17 @@ impl ::protobuf::Message for EnterTelevisionActivityStageCsReq {
     }
 
     fn clear(&mut self) {
-        self.EMALNMLGANJ.clear();
-        self.EBDDNGHLIGH.clear();
-        self.KKIOHLDDJCJ = 0;
+        self.avatar_list.clear();
+        self.NGDAJKNLELE.clear();
+        self.AJEBBCLPHAH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterTelevisionActivityStageCsReq {
         static instance: EnterTelevisionActivityStageCsReq = EnterTelevisionActivityStageCsReq {
-            EMALNMLGANJ: ::std::vec::Vec::new(),
-            EBDDNGHLIGH: ::std::vec::Vec::new(),
-            KKIOHLDDJCJ: 0,
+            avatar_list: ::std::vec::Vec::new(),
+            NGDAJKNLELE: ::std::vec::Vec::new(),
+            AJEBBCLPHAH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -188,11 +188,11 @@ impl ::protobuf::reflect::ProtobufValue for EnterTelevisionActivityStageCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'EnterTelevisionActivityStageCsReq.proto\x1a\x11FHJJONJFANM.proto\"\
-    \x97\x01\n!EnterTelevisionActivityStageCsReq\x12.\n\x0bEMALNMLGANJ\x18\r\
-    \x20\x03(\x0b2\x0c.FHJJONJFANMR\x0bEMALNMLGANJ\x12\x20\n\x0bEBDDNGHLIGH\
-    \x18\x01\x20\x03(\rR\x0bEBDDNGHLIGH\x12\x20\n\x0bKKIOHLDDJCJ\x18\x08\x20\
-    \x01(\rR\x0bKKIOHLDDJCJb\x06proto3\
+    \n'EnterTelevisionActivityStageCsReq.proto\x1a\x11CPHNOOOKLCL.proto\"\
+    \x96\x01\n!EnterTelevisionActivityStageCsReq\x12-\n\x0bavatar_list\x18\r\
+    \x20\x03(\x0b2\x0c.CPHNOOOKLCLR\navatarList\x12\x20\n\x0bNGDAJKNLELE\x18\
+    \x08\x20\x03(\rR\x0bNGDAJKNLELE\x12\x20\n\x0bAJEBBCLPHAH\x18\n\x20\x01(\
+    \rR\x0bAJEBBCLPHAHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -210,7 +210,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::FHJJONJFANM::file_descriptor().clone());
+            deps.push(super::CPHNOOOKLCL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EnterTelevisionActivityStageCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

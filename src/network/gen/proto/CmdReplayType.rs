@@ -30,14 +30,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdReplayType {
     // @@protoc_insertion_point(enum_value:CmdReplayType.CmdReplayTypeNone)
     CmdReplayTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdReplayType.CmdGetReplayTokenCsReq)
-    CmdGetReplayTokenCsReq = 3559,
-    // @@protoc_insertion_point(enum_value:CmdReplayType.CmdGetReplayTokenScRsp)
-    CmdGetReplayTokenScRsp = 3520,
     // @@protoc_insertion_point(enum_value:CmdReplayType.CmdGetPlayerReplayInfoScRsp)
-    CmdGetPlayerReplayInfoScRsp = 3546,
+    CmdGetPlayerReplayInfoScRsp = 3527,
+    // @@protoc_insertion_point(enum_value:CmdReplayType.CmdGetReplayTokenCsReq)
+    CmdGetReplayTokenCsReq = 3536,
+    // @@protoc_insertion_point(enum_value:CmdReplayType.CmdGetReplayTokenScRsp)
+    CmdGetReplayTokenScRsp = 3595,
     // @@protoc_insertion_point(enum_value:CmdReplayType.CmdGetPlayerReplayInfoCsReq)
-    CmdGetPlayerReplayInfoCsReq = 3503,
+    CmdGetPlayerReplayInfoCsReq = 3584,
 }
 
 impl ::protobuf::Enum for CmdReplayType {
@@ -50,10 +50,10 @@ impl ::protobuf::Enum for CmdReplayType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdReplayType> {
         match value {
             0 => ::std::option::Option::Some(CmdReplayType::CmdReplayTypeNone),
-            3559 => ::std::option::Option::Some(CmdReplayType::CmdGetReplayTokenCsReq),
-            3520 => ::std::option::Option::Some(CmdReplayType::CmdGetReplayTokenScRsp),
-            3546 => ::std::option::Option::Some(CmdReplayType::CmdGetPlayerReplayInfoScRsp),
-            3503 => ::std::option::Option::Some(CmdReplayType::CmdGetPlayerReplayInfoCsReq),
+            3527 => ::std::option::Option::Some(CmdReplayType::CmdGetPlayerReplayInfoScRsp),
+            3536 => ::std::option::Option::Some(CmdReplayType::CmdGetReplayTokenCsReq),
+            3595 => ::std::option::Option::Some(CmdReplayType::CmdGetReplayTokenScRsp),
+            3584 => ::std::option::Option::Some(CmdReplayType::CmdGetPlayerReplayInfoCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -61,9 +61,9 @@ impl ::protobuf::Enum for CmdReplayType {
     fn from_str(str: &str) -> ::std::option::Option<CmdReplayType> {
         match str {
             "CmdReplayTypeNone" => ::std::option::Option::Some(CmdReplayType::CmdReplayTypeNone),
+            "CmdGetPlayerReplayInfoScRsp" => ::std::option::Option::Some(CmdReplayType::CmdGetPlayerReplayInfoScRsp),
             "CmdGetReplayTokenCsReq" => ::std::option::Option::Some(CmdReplayType::CmdGetReplayTokenCsReq),
             "CmdGetReplayTokenScRsp" => ::std::option::Option::Some(CmdReplayType::CmdGetReplayTokenScRsp),
-            "CmdGetPlayerReplayInfoScRsp" => ::std::option::Option::Some(CmdReplayType::CmdGetPlayerReplayInfoScRsp),
             "CmdGetPlayerReplayInfoCsReq" => ::std::option::Option::Some(CmdReplayType::CmdGetPlayerReplayInfoCsReq),
             _ => ::std::option::Option::None
         }
@@ -71,9 +71,9 @@ impl ::protobuf::Enum for CmdReplayType {
 
     const VALUES: &'static [CmdReplayType] = &[
         CmdReplayType::CmdReplayTypeNone,
+        CmdReplayType::CmdGetPlayerReplayInfoScRsp,
         CmdReplayType::CmdGetReplayTokenCsReq,
         CmdReplayType::CmdGetReplayTokenScRsp,
-        CmdReplayType::CmdGetPlayerReplayInfoScRsp,
         CmdReplayType::CmdGetPlayerReplayInfoCsReq,
     ];
 }
@@ -87,9 +87,9 @@ impl ::protobuf::EnumFull for CmdReplayType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdReplayType::CmdReplayTypeNone => 0,
-            CmdReplayType::CmdGetReplayTokenCsReq => 1,
-            CmdReplayType::CmdGetReplayTokenScRsp => 2,
-            CmdReplayType::CmdGetPlayerReplayInfoScRsp => 3,
+            CmdReplayType::CmdGetPlayerReplayInfoScRsp => 1,
+            CmdReplayType::CmdGetReplayTokenCsReq => 2,
+            CmdReplayType::CmdGetReplayTokenScRsp => 3,
             CmdReplayType::CmdGetPlayerReplayInfoCsReq => 4,
         };
         Self::enum_descriptor().value_by_index(index)
@@ -110,10 +110,10 @@ impl CmdReplayType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13CmdReplayType.proto*\xa4\x01\n\rCmdReplayType\x12\x15\n\x11CmdRepl\
-    ayTypeNone\x10\0\x12\x1b\n\x16CmdGetReplayTokenCsReq\x10\xe7\x1b\x12\x1b\
-    \n\x16CmdGetReplayTokenScRsp\x10\xc0\x1b\x12\x20\n\x1bCmdGetPlayerReplay\
-    InfoScRsp\x10\xda\x1b\x12\x20\n\x1bCmdGetPlayerReplayInfoCsReq\x10\xaf\
-    \x1bb\x06proto3\
+    ayTypeNone\x10\0\x12\x20\n\x1bCmdGetPlayerReplayInfoScRsp\x10\xc7\x1b\
+    \x12\x1b\n\x16CmdGetReplayTokenCsReq\x10\xd0\x1b\x12\x1b\n\x16CmdGetRepl\
+    ayTokenScRsp\x10\x8b\x1c\x12\x20\n\x1bCmdGetPlayerReplayInfoCsReq\x10\
+    \x80\x1cb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

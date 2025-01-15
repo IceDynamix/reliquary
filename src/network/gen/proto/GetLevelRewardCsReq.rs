@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetLevelRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetLevelRewardCsReq.JKOCJIMAGBN)
-    pub JKOCJIMAGBN: u32,
-    // @@protoc_insertion_point(field:GetLevelRewardCsReq.LMFFBHEOONE)
-    pub LMFFBHEOONE: u32,
+    // @@protoc_insertion_point(field:GetLevelRewardCsReq.level)
+    pub level: u32,
+    // @@protoc_insertion_point(field:GetLevelRewardCsReq.CMDGNACLGID)
+    pub CMDGNACLGID: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetLevelRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl GetLevelRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JKOCJIMAGBN",
-            |m: &GetLevelRewardCsReq| { &m.JKOCJIMAGBN },
-            |m: &mut GetLevelRewardCsReq| { &mut m.JKOCJIMAGBN },
+            "level",
+            |m: &GetLevelRewardCsReq| { &m.level },
+            |m: &mut GetLevelRewardCsReq| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LMFFBHEOONE",
-            |m: &GetLevelRewardCsReq| { &m.LMFFBHEOONE },
-            |m: &mut GetLevelRewardCsReq| { &mut m.LMFFBHEOONE },
+            "CMDGNACLGID",
+            |m: &GetLevelRewardCsReq| { &m.CMDGNACLGID },
+            |m: &mut GetLevelRewardCsReq| { &mut m.CMDGNACLGID },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetLevelRewardCsReq>(
             "GetLevelRewardCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for GetLevelRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.JKOCJIMAGBN = is.read_uint32()?;
+                16 => {
+                    self.level = is.read_uint32()?;
                 },
-                80 => {
-                    self.LMFFBHEOONE = is.read_uint32()?;
+                40 => {
+                    self.CMDGNACLGID = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for GetLevelRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JKOCJIMAGBN != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.JKOCJIMAGBN);
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.level);
         }
-        if self.LMFFBHEOONE != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.LMFFBHEOONE);
+        if self.CMDGNACLGID != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.CMDGNACLGID);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for GetLevelRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JKOCJIMAGBN != 0 {
-            os.write_uint32(5, self.JKOCJIMAGBN)?;
+        if self.level != 0 {
+            os.write_uint32(2, self.level)?;
         }
-        if self.LMFFBHEOONE != 0 {
-            os.write_uint32(10, self.LMFFBHEOONE)?;
+        if self.CMDGNACLGID != 0 {
+            os.write_uint32(5, self.CMDGNACLGID)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GetLevelRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.JKOCJIMAGBN = 0;
-        self.LMFFBHEOONE = 0;
+        self.level = 0;
+        self.CMDGNACLGID = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetLevelRewardCsReq {
         static instance: GetLevelRewardCsReq = GetLevelRewardCsReq {
-            JKOCJIMAGBN: 0,
-            LMFFBHEOONE: 0,
+            level: 0,
+            CMDGNACLGID: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for GetLevelRewardCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19GetLevelRewardCsReq.proto\"Y\n\x13GetLevelRewardCsReq\x12\x20\n\
-    \x0bJKOCJIMAGBN\x18\x05\x20\x01(\rR\x0bJKOCJIMAGBN\x12\x20\n\x0bLMFFBHEO\
-    ONE\x18\n\x20\x01(\rR\x0bLMFFBHEOONEb\x06proto3\
+    \n\x19GetLevelRewardCsReq.proto\"M\n\x13GetLevelRewardCsReq\x12\x14\n\
+    \x05level\x18\x02\x20\x01(\rR\x05level\x12\x20\n\x0bCMDGNACLGID\x18\x05\
+    \x20\x01(\rR\x0bCMDGNACLGIDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

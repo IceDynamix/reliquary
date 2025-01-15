@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SearchPlayerCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SearchPlayerCsReq.search_uid_list)
-    pub search_uid_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:SearchPlayerCsReq.LJEEPKLGLDM)
-    pub LJEEPKLGLDM: bool,
+    // @@protoc_insertion_point(field:SearchPlayerCsReq.NCCHMLNHNDI)
+    pub NCCHMLNHNDI: bool,
+    // @@protoc_insertion_point(field:SearchPlayerCsReq.DEDDKBKPMLH)
+    pub DEDDKBKPMLH: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:SearchPlayerCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl SearchPlayerCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "search_uid_list",
-            |m: &SearchPlayerCsReq| { &m.search_uid_list },
-            |m: &mut SearchPlayerCsReq| { &mut m.search_uid_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LJEEPKLGLDM",
-            |m: &SearchPlayerCsReq| { &m.LJEEPKLGLDM },
-            |m: &mut SearchPlayerCsReq| { &mut m.LJEEPKLGLDM },
+            "NCCHMLNHNDI",
+            |m: &SearchPlayerCsReq| { &m.NCCHMLNHNDI },
+            |m: &mut SearchPlayerCsReq| { &mut m.NCCHMLNHNDI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DEDDKBKPMLH",
+            |m: &SearchPlayerCsReq| { &m.DEDDKBKPMLH },
+            |m: &mut SearchPlayerCsReq| { &mut m.DEDDKBKPMLH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SearchPlayerCsReq>(
             "SearchPlayerCsReq",
@@ -80,14 +80,14 @@ impl ::protobuf::Message for SearchPlayerCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.search_uid_list)?;
-                },
-                104 => {
-                    self.search_uid_list.push(is.read_uint32()?);
-                },
                 96 => {
-                    self.LJEEPKLGLDM = is.read_bool()?;
+                    self.NCCHMLNHNDI = is.read_bool()?;
+                },
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.DEDDKBKPMLH)?;
+                },
+                80 => {
+                    self.DEDDKBKPMLH.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,24 +101,24 @@ impl ::protobuf::Message for SearchPlayerCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.search_uid_list {
-            my_size += ::protobuf::rt::uint32_size(13, *value);
-        };
-        if self.LJEEPKLGLDM != false {
+        if self.NCCHMLNHNDI != false {
             my_size += 1 + 1;
         }
+        for value in &self.DEDDKBKPMLH {
+            my_size += ::protobuf::rt::uint32_size(10, *value);
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.search_uid_list {
-            os.write_uint32(13, *v)?;
-        };
-        if self.LJEEPKLGLDM != false {
-            os.write_bool(12, self.LJEEPKLGLDM)?;
+        if self.NCCHMLNHNDI != false {
+            os.write_bool(12, self.NCCHMLNHNDI)?;
         }
+        for v in &self.DEDDKBKPMLH {
+            os.write_uint32(10, *v)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -136,15 +136,15 @@ impl ::protobuf::Message for SearchPlayerCsReq {
     }
 
     fn clear(&mut self) {
-        self.search_uid_list.clear();
-        self.LJEEPKLGLDM = false;
+        self.NCCHMLNHNDI = false;
+        self.DEDDKBKPMLH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SearchPlayerCsReq {
         static instance: SearchPlayerCsReq = SearchPlayerCsReq {
-            search_uid_list: ::std::vec::Vec::new(),
-            LJEEPKLGLDM: false,
+            NCCHMLNHNDI: false,
+            DEDDKBKPMLH: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -169,10 +169,9 @@ impl ::protobuf::reflect::ProtobufValue for SearchPlayerCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17SearchPlayerCsReq.proto\"]\n\x11SearchPlayerCsReq\x12&\n\x0fsearch\
-    _uid_list\x18\r\x20\x03(\rR\rsearchUidList\x12\x20\n\x0bLJEEPKLGLDM\x18\
-    \x0c\x20\x01(\x08R\x0bLJEEPKLGLDMB\x15\n\x13emu.lunarcore.protob\x06prot\
-    o3\
+    \n\x17SearchPlayerCsReq.proto\"W\n\x11SearchPlayerCsReq\x12\x20\n\x0bNCC\
+    HMLNHNDI\x18\x0c\x20\x01(\x08R\x0bNCCHMLNHNDI\x12\x20\n\x0bDEDDKBKPMLH\
+    \x18\n\x20\x03(\rR\x0bDEDDKBKPMLHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

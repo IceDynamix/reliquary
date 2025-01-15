@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LobbyBeginScRsp {
     // message fields
-    // @@protoc_insertion_point(field:LobbyBeginScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:LobbyBeginScRsp.LKLJKGKLHID)
-    pub LKLJKGKLHID: ::std::vec::Vec<super::DBBLOFLAAMH::DBBLOFLAAMH>,
+    // @@protoc_insertion_point(field:LobbyBeginScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:LobbyBeginScRsp.LHIFALKBALM)
+    pub LHIFALKBALM: ::std::vec::Vec<super::GDOHNMGABGE::GDOHNMGABGE>,
     // special fields
     // @@protoc_insertion_point(special_field:LobbyBeginScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl LobbyBeginScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &LobbyBeginScRsp| { &m.ADADHIHDHJC },
-            |m: &mut LobbyBeginScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &LobbyBeginScRsp| { &m.retcode },
+            |m: &mut LobbyBeginScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LKLJKGKLHID",
-            |m: &LobbyBeginScRsp| { &m.LKLJKGKLHID },
-            |m: &mut LobbyBeginScRsp| { &mut m.LKLJKGKLHID },
+            "LHIFALKBALM",
+            |m: &LobbyBeginScRsp| { &m.LHIFALKBALM },
+            |m: &mut LobbyBeginScRsp| { &mut m.LHIFALKBALM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LobbyBeginScRsp>(
             "LobbyBeginScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for LobbyBeginScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                40 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                122 => {
-                    self.LKLJKGKLHID.push(is.read_message()?);
+                50 => {
+                    self.LHIFALKBALM.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for LobbyBeginScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
-        for value in &self.LKLJKGKLHID {
+        for value in &self.LHIFALKBALM {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -111,11 +111,11 @@ impl ::protobuf::Message for LobbyBeginScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(12, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(5, self.retcode)?;
         }
-        for v in &self.LKLJKGKLHID {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        for v in &self.LHIFALKBALM {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for LobbyBeginScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADADHIHDHJC = 0;
-        self.LKLJKGKLHID.clear();
+        self.retcode = 0;
+        self.LHIFALKBALM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LobbyBeginScRsp {
         static instance: LobbyBeginScRsp = LobbyBeginScRsp {
-            ADADHIHDHJC: 0,
-            LKLJKGKLHID: ::std::vec::Vec::new(),
+            retcode: 0,
+            LHIFALKBALM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for LobbyBeginScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15LobbyBeginScRsp.proto\x1a\x11DBBLOFLAAMH.proto\"c\n\x0fLobbyBeginS\
-    cRsp\x12\x20\n\x0bADADHIHDHJC\x18\x0c\x20\x01(\rR\x0bADADHIHDHJC\x12.\n\
-    \x0bLKLJKGKLHID\x18\x0f\x20\x03(\x0b2\x0c.DBBLOFLAAMHR\x0bLKLJKGKLHIDb\
-    \x06proto3\
+    \n\x15LobbyBeginScRsp.proto\x1a\x11GDOHNMGABGE.proto\"[\n\x0fLobbyBeginS\
+    cRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12.\n\x0bLHIFA\
+    LKBALM\x18\x06\x20\x03(\x0b2\x0c.GDOHNMGABGER\x0bLHIFALKBALMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::DBBLOFLAAMH::file_descriptor().clone());
+            deps.push(super::GDOHNMGABGE::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(LobbyBeginScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

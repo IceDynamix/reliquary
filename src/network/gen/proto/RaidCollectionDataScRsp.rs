@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RaidCollectionDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RaidCollectionDataScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:RaidCollectionDataScRsp.PPNKHDECJBP)
-    pub PPNKHDECJBP: ::std::vec::Vec<super::OKFNNPMACMO::OKFNNPMACMO>,
+    // @@protoc_insertion_point(field:RaidCollectionDataScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:RaidCollectionDataScRsp.HMOEGPGDMPO)
+    pub HMOEGPGDMPO: ::std::vec::Vec<super::GGBLNFPGCBN::GGBLNFPGCBN>,
     // special fields
     // @@protoc_insertion_point(special_field:RaidCollectionDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl RaidCollectionDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &RaidCollectionDataScRsp| { &m.ADADHIHDHJC },
-            |m: &mut RaidCollectionDataScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &RaidCollectionDataScRsp| { &m.retcode },
+            |m: &mut RaidCollectionDataScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PPNKHDECJBP",
-            |m: &RaidCollectionDataScRsp| { &m.PPNKHDECJBP },
-            |m: &mut RaidCollectionDataScRsp| { &mut m.PPNKHDECJBP },
+            "HMOEGPGDMPO",
+            |m: &RaidCollectionDataScRsp| { &m.HMOEGPGDMPO },
+            |m: &mut RaidCollectionDataScRsp| { &mut m.HMOEGPGDMPO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RaidCollectionDataScRsp>(
             "RaidCollectionDataScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for RaidCollectionDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                120 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                26 => {
-                    self.PPNKHDECJBP.push(is.read_message()?);
+                10 => {
+                    self.HMOEGPGDMPO.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for RaidCollectionDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
-        for value in &self.PPNKHDECJBP {
+        for value in &self.HMOEGPGDMPO {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -111,11 +111,11 @@ impl ::protobuf::Message for RaidCollectionDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(8, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(15, self.retcode)?;
         }
-        for v in &self.PPNKHDECJBP {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        for v in &self.HMOEGPGDMPO {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for RaidCollectionDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADADHIHDHJC = 0;
-        self.PPNKHDECJBP.clear();
+        self.retcode = 0;
+        self.HMOEGPGDMPO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RaidCollectionDataScRsp {
         static instance: RaidCollectionDataScRsp = RaidCollectionDataScRsp {
-            ADADHIHDHJC: 0,
-            PPNKHDECJBP: ::std::vec::Vec::new(),
+            retcode: 0,
+            HMOEGPGDMPO: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for RaidCollectionDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dRaidCollectionDataScRsp.proto\x1a\x11OKFNNPMACMO.proto\"k\n\x17Rai\
-    dCollectionDataScRsp\x12\x20\n\x0bADADHIHDHJC\x18\x08\x20\x01(\rR\x0bADA\
-    DHIHDHJC\x12.\n\x0bPPNKHDECJBP\x18\x03\x20\x03(\x0b2\x0c.OKFNNPMACMOR\
-    \x0bPPNKHDECJBPb\x06proto3\
+    \n\x1dRaidCollectionDataScRsp.proto\x1a\x11GGBLNFPGCBN.proto\"c\n\x17Rai\
+    dCollectionDataScRsp\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcode\
+    \x12.\n\x0bHMOEGPGDMPO\x18\x01\x20\x03(\x0b2\x0c.GGBLNFPGCBNR\x0bHMOEGPG\
+    DMPOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::OKFNNPMACMO::file_descriptor().clone());
+            deps.push(super::GGBLNFPGCBN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RaidCollectionDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -36,6 +36,8 @@ pub enum TrainVisitorStatus {
     TRAIN_VISITOR_STATUS_GET_ON = 2,
     // @@protoc_insertion_point(enum_value:TrainVisitorStatus.TRAIN_VISITOR_STATUS_GET_OFF)
     TRAIN_VISITOR_STATUS_GET_OFF = 3,
+    // @@protoc_insertion_point(enum_value:TrainVisitorStatus.TRAIN_VISITOR_STATUS_BE_TRAIN_MEMBER)
+    TRAIN_VISITOR_STATUS_BE_TRAIN_MEMBER = 4,
 }
 
 impl ::protobuf::Enum for TrainVisitorStatus {
@@ -51,6 +53,7 @@ impl ::protobuf::Enum for TrainVisitorStatus {
             1 => ::std::option::Option::Some(TrainVisitorStatus::TRAIN_VISITOR_STATUS_INIT),
             2 => ::std::option::Option::Some(TrainVisitorStatus::TRAIN_VISITOR_STATUS_GET_ON),
             3 => ::std::option::Option::Some(TrainVisitorStatus::TRAIN_VISITOR_STATUS_GET_OFF),
+            4 => ::std::option::Option::Some(TrainVisitorStatus::TRAIN_VISITOR_STATUS_BE_TRAIN_MEMBER),
             _ => ::std::option::Option::None
         }
     }
@@ -61,6 +64,7 @@ impl ::protobuf::Enum for TrainVisitorStatus {
             "TRAIN_VISITOR_STATUS_INIT" => ::std::option::Option::Some(TrainVisitorStatus::TRAIN_VISITOR_STATUS_INIT),
             "TRAIN_VISITOR_STATUS_GET_ON" => ::std::option::Option::Some(TrainVisitorStatus::TRAIN_VISITOR_STATUS_GET_ON),
             "TRAIN_VISITOR_STATUS_GET_OFF" => ::std::option::Option::Some(TrainVisitorStatus::TRAIN_VISITOR_STATUS_GET_OFF),
+            "TRAIN_VISITOR_STATUS_BE_TRAIN_MEMBER" => ::std::option::Option::Some(TrainVisitorStatus::TRAIN_VISITOR_STATUS_BE_TRAIN_MEMBER),
             _ => ::std::option::Option::None
         }
     }
@@ -70,6 +74,7 @@ impl ::protobuf::Enum for TrainVisitorStatus {
         TrainVisitorStatus::TRAIN_VISITOR_STATUS_INIT,
         TrainVisitorStatus::TRAIN_VISITOR_STATUS_GET_ON,
         TrainVisitorStatus::TRAIN_VISITOR_STATUS_GET_OFF,
+        TrainVisitorStatus::TRAIN_VISITOR_STATUS_BE_TRAIN_MEMBER,
     ];
 }
 
@@ -98,10 +103,11 @@ impl TrainVisitorStatus {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18TrainVisitorStatus.proto*\x95\x01\n\x12TrainVisitorStatus\x12\x1d\
+    \n\x18TrainVisitorStatus.proto*\xbf\x01\n\x12TrainVisitorStatus\x12\x1d\
     \n\x19TRAIN_VISITOR_STATUS_NONE\x10\0\x12\x1d\n\x19TRAIN_VISITOR_STATUS_\
     INIT\x10\x01\x12\x1f\n\x1bTRAIN_VISITOR_STATUS_GET_ON\x10\x02\x12\x20\n\
-    \x1cTRAIN_VISITOR_STATUS_GET_OFF\x10\x03b\x06proto3\
+    \x1cTRAIN_VISITOR_STATUS_GET_OFF\x10\x03\x12(\n$TRAIN_VISITOR_STATUS_BE_\
+    TRAIN_MEMBER\x10\x04b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

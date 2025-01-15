@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetAssistListCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetAssistListCsReq.OJLEAILAALK)
-    pub OJLEAILAALK: bool,
-    // @@protoc_insertion_point(field:GetAssistListCsReq.LJEEPKLGLDM)
-    pub LJEEPKLGLDM: bool,
+    // @@protoc_insertion_point(field:GetAssistListCsReq.LBHBKNIMFPN)
+    pub LBHBKNIMFPN: bool,
+    // @@protoc_insertion_point(field:GetAssistListCsReq.NCCHMLNHNDI)
+    pub NCCHMLNHNDI: bool,
     // special fields
     // @@protoc_insertion_point(special_field:GetAssistListCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl GetAssistListCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OJLEAILAALK",
-            |m: &GetAssistListCsReq| { &m.OJLEAILAALK },
-            |m: &mut GetAssistListCsReq| { &mut m.OJLEAILAALK },
+            "LBHBKNIMFPN",
+            |m: &GetAssistListCsReq| { &m.LBHBKNIMFPN },
+            |m: &mut GetAssistListCsReq| { &mut m.LBHBKNIMFPN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LJEEPKLGLDM",
-            |m: &GetAssistListCsReq| { &m.LJEEPKLGLDM },
-            |m: &mut GetAssistListCsReq| { &mut m.LJEEPKLGLDM },
+            "NCCHMLNHNDI",
+            |m: &GetAssistListCsReq| { &m.NCCHMLNHNDI },
+            |m: &mut GetAssistListCsReq| { &mut m.NCCHMLNHNDI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetAssistListCsReq>(
             "GetAssistListCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for GetAssistListCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.OJLEAILAALK = is.read_bool()?;
+                104 => {
+                    self.LBHBKNIMFPN = is.read_bool()?;
                 },
-                48 => {
-                    self.LJEEPKLGLDM = is.read_bool()?;
+                16 => {
+                    self.NCCHMLNHNDI = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for GetAssistListCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OJLEAILAALK != false {
+        if self.LBHBKNIMFPN != false {
             my_size += 1 + 1;
         }
-        if self.LJEEPKLGLDM != false {
+        if self.NCCHMLNHNDI != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -110,11 +110,11 @@ impl ::protobuf::Message for GetAssistListCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OJLEAILAALK != false {
-            os.write_bool(2, self.OJLEAILAALK)?;
+        if self.LBHBKNIMFPN != false {
+            os.write_bool(13, self.LBHBKNIMFPN)?;
         }
-        if self.LJEEPKLGLDM != false {
-            os.write_bool(6, self.LJEEPKLGLDM)?;
+        if self.NCCHMLNHNDI != false {
+            os.write_bool(2, self.NCCHMLNHNDI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GetAssistListCsReq {
     }
 
     fn clear(&mut self) {
-        self.OJLEAILAALK = false;
-        self.LJEEPKLGLDM = false;
+        self.LBHBKNIMFPN = false;
+        self.NCCHMLNHNDI = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetAssistListCsReq {
         static instance: GetAssistListCsReq = GetAssistListCsReq {
-            OJLEAILAALK: false,
-            LJEEPKLGLDM: false,
+            LBHBKNIMFPN: false,
+            NCCHMLNHNDI: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for GetAssistListCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18GetAssistListCsReq.proto\"X\n\x12GetAssistListCsReq\x12\x20\n\x0bO\
-    JLEAILAALK\x18\x02\x20\x01(\x08R\x0bOJLEAILAALK\x12\x20\n\x0bLJEEPKLGLDM\
-    \x18\x06\x20\x01(\x08R\x0bLJEEPKLGLDMb\x06proto3\
+    \n\x18GetAssistListCsReq.proto\"X\n\x12GetAssistListCsReq\x12\x20\n\x0bL\
+    BHBKNIMFPN\x18\r\x20\x01(\x08R\x0bLBHBKNIMFPN\x12\x20\n\x0bNCCHMLNHNDI\
+    \x18\x02\x20\x01(\x08R\x0bNCCHMLNHNDIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

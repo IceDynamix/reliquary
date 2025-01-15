@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueModifierStageStartNotify {
     // message fields
-    // @@protoc_insertion_point(field:RogueModifierStageStartNotify.BJGNEPEEDLN)
-    pub BJGNEPEEDLN: ::protobuf::EnumOrUnknown<super::RogueModifierSourceType::RogueModifierSourceType>,
+    // @@protoc_insertion_point(field:RogueModifierStageStartNotify.LEEACMNGDFL)
+    pub LEEACMNGDFL: ::protobuf::EnumOrUnknown<super::RogueModifierSourceType::RogueModifierSourceType>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueModifierStageStartNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl RogueModifierStageStartNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BJGNEPEEDLN",
-            |m: &RogueModifierStageStartNotify| { &m.BJGNEPEEDLN },
-            |m: &mut RogueModifierStageStartNotify| { &mut m.BJGNEPEEDLN },
+            "LEEACMNGDFL",
+            |m: &RogueModifierStageStartNotify| { &m.LEEACMNGDFL },
+            |m: &mut RogueModifierStageStartNotify| { &mut m.LEEACMNGDFL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueModifierStageStartNotify>(
             "RogueModifierStageStartNotify",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for RogueModifierStageStartNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.BJGNEPEEDLN = is.read_enum_or_unknown()?;
+                32 => {
+                    self.LEEACMNGDFL = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for RogueModifierStageStartNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BJGNEPEEDLN != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::ROGUE_MODIFIER_SOURCE_NONE) {
-            my_size += ::protobuf::rt::int32_size(7, self.BJGNEPEEDLN.value());
+        if self.LEEACMNGDFL != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::ROGUE_MODIFIER_SOURCE_NONE) {
+            my_size += ::protobuf::rt::int32_size(4, self.LEEACMNGDFL.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for RogueModifierStageStartNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BJGNEPEEDLN != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::ROGUE_MODIFIER_SOURCE_NONE) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.BJGNEPEEDLN))?;
+        if self.LEEACMNGDFL != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::ROGUE_MODIFIER_SOURCE_NONE) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.LEEACMNGDFL))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for RogueModifierStageStartNotify {
     }
 
     fn clear(&mut self) {
-        self.BJGNEPEEDLN = ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::ROGUE_MODIFIER_SOURCE_NONE);
+        self.LEEACMNGDFL = ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::ROGUE_MODIFIER_SOURCE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueModifierStageStartNotify {
         static instance: RogueModifierStageStartNotify = RogueModifierStageStartNotify {
-            BJGNEPEEDLN: ::protobuf::EnumOrUnknown::from_i32(0),
+            LEEACMNGDFL: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueModifierStageStartNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#RogueModifierStageStartNotify.proto\x1a\x1dRogueModifierSourceType.pr\
-    oto\"[\n\x1dRogueModifierStageStartNotify\x12:\n\x0bBJGNEPEEDLN\x18\x07\
-    \x20\x01(\x0e2\x18.RogueModifierSourceTypeR\x0bBJGNEPEEDLNb\x06proto3\
+    oto\"[\n\x1dRogueModifierStageStartNotify\x12:\n\x0bLEEACMNGDFL\x18\x04\
+    \x20\x01(\x0e2\x18.RogueModifierSourceTypeR\x0bLEEACMNGDFLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

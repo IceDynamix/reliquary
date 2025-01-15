@@ -30,20 +30,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdPetType {
     // @@protoc_insertion_point(enum_value:CmdPetType.CmdPetTypeNone)
     CmdPetTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdPetType.CmdRecallPetCsReq)
-    CmdRecallPetCsReq = 7642,
-    // @@protoc_insertion_point(enum_value:CmdPetType.CmdRecallPetScRsp)
-    CmdRecallPetScRsp = 7637,
-    // @@protoc_insertion_point(enum_value:CmdPetType.CmdSummonPetScRsp)
-    CmdSummonPetScRsp = 7624,
-    // @@protoc_insertion_point(enum_value:CmdPetType.CmdGetPetDataCsReq)
-    CmdGetPetDataCsReq = 7615,
     // @@protoc_insertion_point(enum_value:CmdPetType.CmdSummonPetCsReq)
-    CmdSummonPetCsReq = 7612,
-    // @@protoc_insertion_point(enum_value:CmdPetType.CmdGetPetDataScRsp)
-    CmdGetPetDataScRsp = 7616,
+    CmdSummonPetCsReq = 7616,
+    // @@protoc_insertion_point(enum_value:CmdPetType.CmdRecallPetScRsp)
+    CmdRecallPetScRsp = 7607,
+    // @@protoc_insertion_point(enum_value:CmdPetType.CmdGetPetDataCsReq)
+    CmdGetPetDataCsReq = 7624,
     // @@protoc_insertion_point(enum_value:CmdPetType.CmdCurPetChangedScNotify)
-    CmdCurPetChangedScNotify = 7640,
+    CmdCurPetChangedScNotify = 7606,
+    // @@protoc_insertion_point(enum_value:CmdPetType.CmdRecallPetCsReq)
+    CmdRecallPetCsReq = 7610,
+    // @@protoc_insertion_point(enum_value:CmdPetType.CmdSummonPetScRsp)
+    CmdSummonPetScRsp = 7603,
+    // @@protoc_insertion_point(enum_value:CmdPetType.CmdGetPetDataScRsp)
+    CmdGetPetDataScRsp = 7623,
 }
 
 impl ::protobuf::Enum for CmdPetType {
@@ -56,13 +56,13 @@ impl ::protobuf::Enum for CmdPetType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdPetType> {
         match value {
             0 => ::std::option::Option::Some(CmdPetType::CmdPetTypeNone),
-            7642 => ::std::option::Option::Some(CmdPetType::CmdRecallPetCsReq),
-            7637 => ::std::option::Option::Some(CmdPetType::CmdRecallPetScRsp),
-            7624 => ::std::option::Option::Some(CmdPetType::CmdSummonPetScRsp),
-            7615 => ::std::option::Option::Some(CmdPetType::CmdGetPetDataCsReq),
-            7612 => ::std::option::Option::Some(CmdPetType::CmdSummonPetCsReq),
-            7616 => ::std::option::Option::Some(CmdPetType::CmdGetPetDataScRsp),
-            7640 => ::std::option::Option::Some(CmdPetType::CmdCurPetChangedScNotify),
+            7616 => ::std::option::Option::Some(CmdPetType::CmdSummonPetCsReq),
+            7607 => ::std::option::Option::Some(CmdPetType::CmdRecallPetScRsp),
+            7624 => ::std::option::Option::Some(CmdPetType::CmdGetPetDataCsReq),
+            7606 => ::std::option::Option::Some(CmdPetType::CmdCurPetChangedScNotify),
+            7610 => ::std::option::Option::Some(CmdPetType::CmdRecallPetCsReq),
+            7603 => ::std::option::Option::Some(CmdPetType::CmdSummonPetScRsp),
+            7623 => ::std::option::Option::Some(CmdPetType::CmdGetPetDataScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -70,26 +70,26 @@ impl ::protobuf::Enum for CmdPetType {
     fn from_str(str: &str) -> ::std::option::Option<CmdPetType> {
         match str {
             "CmdPetTypeNone" => ::std::option::Option::Some(CmdPetType::CmdPetTypeNone),
-            "CmdRecallPetCsReq" => ::std::option::Option::Some(CmdPetType::CmdRecallPetCsReq),
-            "CmdRecallPetScRsp" => ::std::option::Option::Some(CmdPetType::CmdRecallPetScRsp),
-            "CmdSummonPetScRsp" => ::std::option::Option::Some(CmdPetType::CmdSummonPetScRsp),
-            "CmdGetPetDataCsReq" => ::std::option::Option::Some(CmdPetType::CmdGetPetDataCsReq),
             "CmdSummonPetCsReq" => ::std::option::Option::Some(CmdPetType::CmdSummonPetCsReq),
-            "CmdGetPetDataScRsp" => ::std::option::Option::Some(CmdPetType::CmdGetPetDataScRsp),
+            "CmdRecallPetScRsp" => ::std::option::Option::Some(CmdPetType::CmdRecallPetScRsp),
+            "CmdGetPetDataCsReq" => ::std::option::Option::Some(CmdPetType::CmdGetPetDataCsReq),
             "CmdCurPetChangedScNotify" => ::std::option::Option::Some(CmdPetType::CmdCurPetChangedScNotify),
+            "CmdRecallPetCsReq" => ::std::option::Option::Some(CmdPetType::CmdRecallPetCsReq),
+            "CmdSummonPetScRsp" => ::std::option::Option::Some(CmdPetType::CmdSummonPetScRsp),
+            "CmdGetPetDataScRsp" => ::std::option::Option::Some(CmdPetType::CmdGetPetDataScRsp),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdPetType] = &[
         CmdPetType::CmdPetTypeNone,
-        CmdPetType::CmdRecallPetCsReq,
-        CmdPetType::CmdRecallPetScRsp,
-        CmdPetType::CmdSummonPetScRsp,
-        CmdPetType::CmdGetPetDataCsReq,
         CmdPetType::CmdSummonPetCsReq,
-        CmdPetType::CmdGetPetDataScRsp,
+        CmdPetType::CmdRecallPetScRsp,
+        CmdPetType::CmdGetPetDataCsReq,
         CmdPetType::CmdCurPetChangedScNotify,
+        CmdPetType::CmdRecallPetCsReq,
+        CmdPetType::CmdSummonPetScRsp,
+        CmdPetType::CmdGetPetDataScRsp,
     ];
 }
 
@@ -102,13 +102,13 @@ impl ::protobuf::EnumFull for CmdPetType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdPetType::CmdPetTypeNone => 0,
-            CmdPetType::CmdRecallPetCsReq => 1,
+            CmdPetType::CmdSummonPetCsReq => 1,
             CmdPetType::CmdRecallPetScRsp => 2,
-            CmdPetType::CmdSummonPetScRsp => 3,
-            CmdPetType::CmdGetPetDataCsReq => 4,
-            CmdPetType::CmdSummonPetCsReq => 5,
-            CmdPetType::CmdGetPetDataScRsp => 6,
-            CmdPetType::CmdCurPetChangedScNotify => 7,
+            CmdPetType::CmdGetPetDataCsReq => 3,
+            CmdPetType::CmdCurPetChangedScNotify => 4,
+            CmdPetType::CmdRecallPetCsReq => 5,
+            CmdPetType::CmdSummonPetScRsp => 6,
+            CmdPetType::CmdGetPetDataScRsp => 7,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -128,11 +128,11 @@ impl CmdPetType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x10CmdPetType.proto*\xd1\x01\n\nCmdPetType\x12\x12\n\x0eCmdPetTypeNon\
-    e\x10\0\x12\x16\n\x11CmdRecallPetCsReq\x10\xda;\x12\x16\n\x11CmdRecallPe\
-    tScRsp\x10\xd5;\x12\x16\n\x11CmdSummonPetScRsp\x10\xc8;\x12\x17\n\x12Cmd\
-    GetPetDataCsReq\x10\xbf;\x12\x16\n\x11CmdSummonPetCsReq\x10\xbc;\x12\x17\
-    \n\x12CmdGetPetDataScRsp\x10\xc0;\x12\x1d\n\x18CmdCurPetChangedScNotify\
-    \x10\xd8;b\x06proto3\
+    e\x10\0\x12\x16\n\x11CmdSummonPetCsReq\x10\xc0;\x12\x16\n\x11CmdRecallPe\
+    tScRsp\x10\xb7;\x12\x17\n\x12CmdGetPetDataCsReq\x10\xc8;\x12\x1d\n\x18Cm\
+    dCurPetChangedScNotify\x10\xb6;\x12\x16\n\x11CmdRecallPetCsReq\x10\xba;\
+    \x12\x16\n\x11CmdSummonPetScRsp\x10\xb3;\x12\x17\n\x12CmdGetPetDataScRsp\
+    \x10\xc7;b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

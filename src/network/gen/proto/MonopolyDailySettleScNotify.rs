@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyDailySettleScNotify {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyDailySettleScNotify.KJJEFPLAFOA)
-    pub KJJEFPLAFOA: ::protobuf::MessageField<super::MMGHBJCIBMN::MMGHBJCIBMN>,
-    // @@protoc_insertion_point(field:MonopolyDailySettleScNotify.BJDKLPNHDBM)
-    pub BJDKLPNHDBM: u32,
+    // @@protoc_insertion_point(field:MonopolyDailySettleScNotify.KIFPHHDKEFP)
+    pub KIFPHHDKEFP: ::protobuf::MessageField<super::GFJKKCMFEIL::GFJKKCMFEIL>,
+    // @@protoc_insertion_point(field:MonopolyDailySettleScNotify.DCCLBMAPDBC)
+    pub DCCLBMAPDBC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyDailySettleScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl MonopolyDailySettleScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MMGHBJCIBMN::MMGHBJCIBMN>(
-            "KJJEFPLAFOA",
-            |m: &MonopolyDailySettleScNotify| { &m.KJJEFPLAFOA },
-            |m: &mut MonopolyDailySettleScNotify| { &mut m.KJJEFPLAFOA },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GFJKKCMFEIL::GFJKKCMFEIL>(
+            "KIFPHHDKEFP",
+            |m: &MonopolyDailySettleScNotify| { &m.KIFPHHDKEFP },
+            |m: &mut MonopolyDailySettleScNotify| { &mut m.KIFPHHDKEFP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BJDKLPNHDBM",
-            |m: &MonopolyDailySettleScNotify| { &m.BJDKLPNHDBM },
-            |m: &mut MonopolyDailySettleScNotify| { &mut m.BJDKLPNHDBM },
+            "DCCLBMAPDBC",
+            |m: &MonopolyDailySettleScNotify| { &m.DCCLBMAPDBC },
+            |m: &mut MonopolyDailySettleScNotify| { &mut m.DCCLBMAPDBC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyDailySettleScNotify>(
             "MonopolyDailySettleScNotify",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for MonopolyDailySettleScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KJJEFPLAFOA)?;
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KIFPHHDKEFP)?;
                 },
-                96 => {
-                    self.BJDKLPNHDBM = is.read_uint32()?;
+                72 => {
+                    self.DCCLBMAPDBC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,12 +98,12 @@ impl ::protobuf::Message for MonopolyDailySettleScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.KJJEFPLAFOA.as_ref() {
+        if let Some(v) = self.KIFPHHDKEFP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.BJDKLPNHDBM != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.BJDKLPNHDBM);
+        if self.DCCLBMAPDBC != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.DCCLBMAPDBC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for MonopolyDailySettleScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.KJJEFPLAFOA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if let Some(v) = self.KIFPHHDKEFP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
-        if self.BJDKLPNHDBM != 0 {
-            os.write_uint32(12, self.BJDKLPNHDBM)?;
+        if self.DCCLBMAPDBC != 0 {
+            os.write_uint32(9, self.DCCLBMAPDBC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for MonopolyDailySettleScNotify {
     }
 
     fn clear(&mut self) {
-        self.KJJEFPLAFOA.clear();
-        self.BJDKLPNHDBM = 0;
+        self.KIFPHHDKEFP.clear();
+        self.DCCLBMAPDBC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyDailySettleScNotify {
         static instance: MonopolyDailySettleScNotify = MonopolyDailySettleScNotify {
-            KJJEFPLAFOA: ::protobuf::MessageField::none(),
-            BJDKLPNHDBM: 0,
+            KIFPHHDKEFP: ::protobuf::MessageField::none(),
+            DCCLBMAPDBC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyDailySettleScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!MonopolyDailySettleScNotify.proto\x1a\x11MMGHBJCIBMN.proto\"o\n\x1bMo\
-    nopolyDailySettleScNotify\x12.\n\x0bKJJEFPLAFOA\x18\x03\x20\x01(\x0b2\
-    \x0c.MMGHBJCIBMNR\x0bKJJEFPLAFOA\x12\x20\n\x0bBJDKLPNHDBM\x18\x0c\x20\
-    \x01(\rR\x0bBJDKLPNHDBMb\x06proto3\
+    \n!MonopolyDailySettleScNotify.proto\x1a\x11GFJKKCMFEIL.proto\"o\n\x1bMo\
+    nopolyDailySettleScNotify\x12.\n\x0bKIFPHHDKEFP\x18\x05\x20\x01(\x0b2\
+    \x0c.GFJKKCMFEILR\x0bKIFPHHDKEFP\x12\x20\n\x0bDCCLBMAPDBC\x18\t\x20\x01(\
+    \rR\x0bDCCLBMAPDBCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::MMGHBJCIBMN::file_descriptor().clone());
+            deps.push(super::GFJKKCMFEIL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MonopolyDailySettleScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

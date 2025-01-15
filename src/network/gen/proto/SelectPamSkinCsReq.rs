@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SelectPamSkinCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SelectPamSkinCsReq.pam_skin_id)
-    pub pam_skin_id: u32,
+    // @@protoc_insertion_point(field:SelectPamSkinCsReq.AFOCJCNLCEL)
+    pub AFOCJCNLCEL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SelectPamSkinCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl SelectPamSkinCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "pam_skin_id",
-            |m: &SelectPamSkinCsReq| { &m.pam_skin_id },
-            |m: &mut SelectPamSkinCsReq| { &mut m.pam_skin_id },
+            "AFOCJCNLCEL",
+            |m: &SelectPamSkinCsReq| { &m.AFOCJCNLCEL },
+            |m: &mut SelectPamSkinCsReq| { &mut m.AFOCJCNLCEL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SelectPamSkinCsReq>(
             "SelectPamSkinCsReq",
@@ -74,7 +74,7 @@ impl ::protobuf::Message for SelectPamSkinCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 64 => {
-                    self.pam_skin_id = is.read_uint32()?;
+                    self.AFOCJCNLCEL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for SelectPamSkinCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.pam_skin_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.pam_skin_id);
+        if self.AFOCJCNLCEL != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.AFOCJCNLCEL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for SelectPamSkinCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.pam_skin_id != 0 {
-            os.write_uint32(8, self.pam_skin_id)?;
+        if self.AFOCJCNLCEL != 0 {
+            os.write_uint32(8, self.AFOCJCNLCEL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for SelectPamSkinCsReq {
     }
 
     fn clear(&mut self) {
-        self.pam_skin_id = 0;
+        self.AFOCJCNLCEL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SelectPamSkinCsReq {
         static instance: SelectPamSkinCsReq = SelectPamSkinCsReq {
-            pam_skin_id: 0,
+            AFOCJCNLCEL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for SelectPamSkinCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18SelectPamSkinCsReq.proto\"4\n\x12SelectPamSkinCsReq\x12\x1e\n\x0bp\
-    am_skin_id\x18\x08\x20\x01(\rR\tpamSkinIdB\x15\n\x13emu.lunarcore.protob\
-    \x06proto3\
+    \n\x18SelectPamSkinCsReq.proto\"6\n\x12SelectPamSkinCsReq\x12\x20\n\x0bA\
+    FOCJCNLCEL\x18\x08\x20\x01(\rR\x0bAFOCJCNLCELb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

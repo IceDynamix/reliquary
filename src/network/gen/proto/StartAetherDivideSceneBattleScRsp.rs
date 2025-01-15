@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartAetherDivideSceneBattleScRsp {
     // message fields
-    // @@protoc_insertion_point(field:StartAetherDivideSceneBattleScRsp.BBKGPAJCCBM)
-    pub BBKGPAJCCBM: ::protobuf::MessageField<super::BNAKOFPAMBI::BNAKOFPAMBI>,
-    // @@protoc_insertion_point(field:StartAetherDivideSceneBattleScRsp.ONALKMOMMEC)
-    pub ONALKMOMMEC: u32,
-    // @@protoc_insertion_point(field:StartAetherDivideSceneBattleScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:StartAetherDivideSceneBattleScRsp.LPPMFJOCKNO)
+    pub LPPMFJOCKNO: ::protobuf::MessageField<super::MCMKAMOPCJG::MCMKAMOPCJG>,
+    // @@protoc_insertion_point(field:StartAetherDivideSceneBattleScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:StartAetherDivideSceneBattleScRsp.OPGGEDKDIEI)
+    pub OPGGEDKDIEI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:StartAetherDivideSceneBattleScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl StartAetherDivideSceneBattleScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BNAKOFPAMBI::BNAKOFPAMBI>(
-            "BBKGPAJCCBM",
-            |m: &StartAetherDivideSceneBattleScRsp| { &m.BBKGPAJCCBM },
-            |m: &mut StartAetherDivideSceneBattleScRsp| { &mut m.BBKGPAJCCBM },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MCMKAMOPCJG::MCMKAMOPCJG>(
+            "LPPMFJOCKNO",
+            |m: &StartAetherDivideSceneBattleScRsp| { &m.LPPMFJOCKNO },
+            |m: &mut StartAetherDivideSceneBattleScRsp| { &mut m.LPPMFJOCKNO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ONALKMOMMEC",
-            |m: &StartAetherDivideSceneBattleScRsp| { &m.ONALKMOMMEC },
-            |m: &mut StartAetherDivideSceneBattleScRsp| { &mut m.ONALKMOMMEC },
+            "retcode",
+            |m: &StartAetherDivideSceneBattleScRsp| { &m.retcode },
+            |m: &mut StartAetherDivideSceneBattleScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &StartAetherDivideSceneBattleScRsp| { &m.ADADHIHDHJC },
-            |m: &mut StartAetherDivideSceneBattleScRsp| { &mut m.ADADHIHDHJC },
+            "OPGGEDKDIEI",
+            |m: &StartAetherDivideSceneBattleScRsp| { &m.OPGGEDKDIEI },
+            |m: &mut StartAetherDivideSceneBattleScRsp| { &mut m.OPGGEDKDIEI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartAetherDivideSceneBattleScRsp>(
             "StartAetherDivideSceneBattleScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for StartAetherDivideSceneBattleScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BBKGPAJCCBM)?;
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LPPMFJOCKNO)?;
                 },
-                40 => {
-                    self.ONALKMOMMEC = is.read_uint32()?;
+                104 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                88 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                80 => {
+                    self.OPGGEDKDIEI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +108,15 @@ impl ::protobuf::Message for StartAetherDivideSceneBattleScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.BBKGPAJCCBM.as_ref() {
+        if let Some(v) = self.LPPMFJOCKNO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.ONALKMOMMEC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.ONALKMOMMEC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.ADADHIHDHJC);
+        if self.OPGGEDKDIEI != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.OPGGEDKDIEI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for StartAetherDivideSceneBattleScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.BBKGPAJCCBM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if let Some(v) = self.LPPMFJOCKNO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
-        if self.ONALKMOMMEC != 0 {
-            os.write_uint32(5, self.ONALKMOMMEC)?;
+        if self.retcode != 0 {
+            os.write_uint32(13, self.retcode)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(11, self.ADADHIHDHJC)?;
+        if self.OPGGEDKDIEI != 0 {
+            os.write_uint32(10, self.OPGGEDKDIEI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for StartAetherDivideSceneBattleScRsp {
     }
 
     fn clear(&mut self) {
-        self.BBKGPAJCCBM.clear();
-        self.ONALKMOMMEC = 0;
-        self.ADADHIHDHJC = 0;
+        self.LPPMFJOCKNO.clear();
+        self.retcode = 0;
+        self.OPGGEDKDIEI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartAetherDivideSceneBattleScRsp {
         static instance: StartAetherDivideSceneBattleScRsp = StartAetherDivideSceneBattleScRsp {
-            BBKGPAJCCBM: ::protobuf::MessageField::none(),
-            ONALKMOMMEC: 0,
-            ADADHIHDHJC: 0,
+            LPPMFJOCKNO: ::protobuf::MessageField::none(),
+            retcode: 0,
+            OPGGEDKDIEI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for StartAetherDivideSceneBattleScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'StartAetherDivideSceneBattleScRsp.proto\x1a\x11BNAKOFPAMBI.proto\"\
-    \x97\x01\n!StartAetherDivideSceneBattleScRsp\x12.\n\x0bBBKGPAJCCBM\x18\r\
-    \x20\x01(\x0b2\x0c.BNAKOFPAMBIR\x0bBBKGPAJCCBM\x12\x20\n\x0bONALKMOMMEC\
-    \x18\x05\x20\x01(\rR\x0bONALKMOMMEC\x12\x20\n\x0bADADHIHDHJC\x18\x0b\x20\
-    \x01(\rR\x0bADADHIHDHJCb\x06proto3\
+    \n'StartAetherDivideSceneBattleScRsp.proto\x1a\x11MCMKAMOPCJG.proto\"\
+    \x8f\x01\n!StartAetherDivideSceneBattleScRsp\x12.\n\x0bLPPMFJOCKNO\x18\
+    \x06\x20\x01(\x0b2\x0c.MCMKAMOPCJGR\x0bLPPMFJOCKNO\x12\x18\n\x07retcode\
+    \x18\r\x20\x01(\rR\x07retcode\x12\x20\n\x0bOPGGEDKDIEI\x18\n\x20\x01(\rR\
+    \x0bOPGGEDKDIEIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::BNAKOFPAMBI::file_descriptor().clone());
+            deps.push(super::MCMKAMOPCJG::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(StartAetherDivideSceneBattleScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

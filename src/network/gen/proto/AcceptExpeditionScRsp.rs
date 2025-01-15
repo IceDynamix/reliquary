@@ -30,9 +30,9 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub struct AcceptExpeditionScRsp {
     // message fields
     // @@protoc_insertion_point(field:AcceptExpeditionScRsp.FUNC_UNLOCK_ID_EXPEDITION)
-    pub FUNC_UNLOCK_ID_EXPEDITION: ::protobuf::MessageField<super::OJGLGPGDEPN::OJGLGPGDEPN>,
-    // @@protoc_insertion_point(field:AcceptExpeditionScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    pub FUNC_UNLOCK_ID_EXPEDITION: ::protobuf::MessageField<super::INPDKKMOBFL::INPDKKMOBFL>,
+    // @@protoc_insertion_point(field:AcceptExpeditionScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AcceptExpeditionScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl AcceptExpeditionScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OJGLGPGDEPN::OJGLGPGDEPN>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::INPDKKMOBFL::INPDKKMOBFL>(
             "FUNC_UNLOCK_ID_EXPEDITION",
             |m: &AcceptExpeditionScRsp| { &m.FUNC_UNLOCK_ID_EXPEDITION },
             |m: &mut AcceptExpeditionScRsp| { &mut m.FUNC_UNLOCK_ID_EXPEDITION },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &AcceptExpeditionScRsp| { &m.ADADHIHDHJC },
-            |m: &mut AcceptExpeditionScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &AcceptExpeditionScRsp| { &m.retcode },
+            |m: &mut AcceptExpeditionScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AcceptExpeditionScRsp>(
             "AcceptExpeditionScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for AcceptExpeditionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FUNC_UNLOCK_ID_EXPEDITION)?;
                 },
-                32 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                88 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -102,8 +102,8 @@ impl ::protobuf::Message for AcceptExpeditionScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -112,10 +112,10 @@ impl ::protobuf::Message for AcceptExpeditionScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.FUNC_UNLOCK_ID_EXPEDITION.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(4, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(11, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -135,14 +135,14 @@ impl ::protobuf::Message for AcceptExpeditionScRsp {
 
     fn clear(&mut self) {
         self.FUNC_UNLOCK_ID_EXPEDITION.clear();
-        self.ADADHIHDHJC = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AcceptExpeditionScRsp {
         static instance: AcceptExpeditionScRsp = AcceptExpeditionScRsp {
             FUNC_UNLOCK_ID_EXPEDITION: ::protobuf::MessageField::none(),
-            ADADHIHDHJC: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for AcceptExpeditionScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bAcceptExpeditionScRsp.proto\x1a\x11OJGLGPGDEPN.proto\"\x82\x01\n\
-    \x15AcceptExpeditionScRsp\x12G\n\x19FUNC_UNLOCK_ID_EXPEDITION\x18\x0e\
-    \x20\x01(\x0b2\x0c.OJGLGPGDEPNR\x16FUNCUNLOCKIDEXPEDITION\x12\x20\n\x0bA\
-    DADHIHDHJC\x18\x04\x20\x01(\rR\x0bADADHIHDHJCb\x06proto3\
+    \n\x1bAcceptExpeditionScRsp.proto\x1a\x11INPDKKMOBFL.proto\"z\n\x15Accep\
+    tExpeditionScRsp\x12G\n\x19FUNC_UNLOCK_ID_EXPEDITION\x18\x03\x20\x01(\
+    \x0b2\x0c.INPDKKMOBFLR\x16FUNCUNLOCKIDEXPEDITION\x12\x18\n\x07retcode\
+    \x18\x0b\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::OJGLGPGDEPN::file_descriptor().clone());
+            deps.push(super::INPDKKMOBFL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(AcceptExpeditionScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

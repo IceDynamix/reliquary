@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayBackGroundMusicCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlayBackGroundMusicCsReq.play_music_id)
-    pub play_music_id: u32,
+    // @@protoc_insertion_point(field:PlayBackGroundMusicCsReq.PHCJBLNPIGL)
+    pub PHCJBLNPIGL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlayBackGroundMusicCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl PlayBackGroundMusicCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "play_music_id",
-            |m: &PlayBackGroundMusicCsReq| { &m.play_music_id },
-            |m: &mut PlayBackGroundMusicCsReq| { &mut m.play_music_id },
+            "PHCJBLNPIGL",
+            |m: &PlayBackGroundMusicCsReq| { &m.PHCJBLNPIGL },
+            |m: &mut PlayBackGroundMusicCsReq| { &mut m.PHCJBLNPIGL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayBackGroundMusicCsReq>(
             "PlayBackGroundMusicCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for PlayBackGroundMusicCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.play_music_id = is.read_uint32()?;
+                64 => {
+                    self.PHCJBLNPIGL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for PlayBackGroundMusicCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.play_music_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.play_music_id);
+        if self.PHCJBLNPIGL != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.PHCJBLNPIGL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for PlayBackGroundMusicCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.play_music_id != 0 {
-            os.write_uint32(12, self.play_music_id)?;
+        if self.PHCJBLNPIGL != 0 {
+            os.write_uint32(8, self.PHCJBLNPIGL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for PlayBackGroundMusicCsReq {
     }
 
     fn clear(&mut self) {
-        self.play_music_id = 0;
+        self.PHCJBLNPIGL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayBackGroundMusicCsReq {
         static instance: PlayBackGroundMusicCsReq = PlayBackGroundMusicCsReq {
-            play_music_id: 0,
+            PHCJBLNPIGL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for PlayBackGroundMusicCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1ePlayBackGroundMusicCsReq.proto\">\n\x18PlayBackGroundMusicCsReq\
-    \x12\"\n\rplay_music_id\x18\x0c\x20\x01(\rR\x0bplayMusicIdB\x15\n\x13emu\
-    .lunarcore.protob\x06proto3\
+    \n\x1ePlayBackGroundMusicCsReq.proto\"<\n\x18PlayBackGroundMusicCsReq\
+    \x12\x20\n\x0bPHCJBLNPIGL\x18\x08\x20\x01(\rR\x0bPHCJBLNPIGLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

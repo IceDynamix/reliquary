@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MultiplayerFightGameStateScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MultiplayerFightGameStateScRsp.LKLJKGKLHID)
-    pub LKLJKGKLHID: ::std::vec::Vec<super::DBBLOFLAAMH::DBBLOFLAAMH>,
-    // @@protoc_insertion_point(field:MultiplayerFightGameStateScRsp.DJNKCKJMNIL)
-    pub DJNKCKJMNIL: ::protobuf::MessageField<super::MNFBAOKFOPM::MNFBAOKFOPM>,
-    // @@protoc_insertion_point(field:MultiplayerFightGameStateScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:MultiplayerFightGameStateScRsp.LHIFALKBALM)
+    pub LHIFALKBALM: ::std::vec::Vec<super::GDOHNMGABGE::GDOHNMGABGE>,
+    // @@protoc_insertion_point(field:MultiplayerFightGameStateScRsp.KCPFMJCKNLN)
+    pub KCPFMJCKNLN: ::protobuf::MessageField<super::GCIBOEOBJJH::GCIBOEOBJJH>,
+    // @@protoc_insertion_point(field:MultiplayerFightGameStateScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MultiplayerFightGameStateScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl MultiplayerFightGameStateScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LKLJKGKLHID",
-            |m: &MultiplayerFightGameStateScRsp| { &m.LKLJKGKLHID },
-            |m: &mut MultiplayerFightGameStateScRsp| { &mut m.LKLJKGKLHID },
+            "LHIFALKBALM",
+            |m: &MultiplayerFightGameStateScRsp| { &m.LHIFALKBALM },
+            |m: &mut MultiplayerFightGameStateScRsp| { &mut m.LHIFALKBALM },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MNFBAOKFOPM::MNFBAOKFOPM>(
-            "DJNKCKJMNIL",
-            |m: &MultiplayerFightGameStateScRsp| { &m.DJNKCKJMNIL },
-            |m: &mut MultiplayerFightGameStateScRsp| { &mut m.DJNKCKJMNIL },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GCIBOEOBJJH::GCIBOEOBJJH>(
+            "KCPFMJCKNLN",
+            |m: &MultiplayerFightGameStateScRsp| { &m.KCPFMJCKNLN },
+            |m: &mut MultiplayerFightGameStateScRsp| { &mut m.KCPFMJCKNLN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &MultiplayerFightGameStateScRsp| { &m.ADADHIHDHJC },
-            |m: &mut MultiplayerFightGameStateScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &MultiplayerFightGameStateScRsp| { &m.retcode },
+            |m: &mut MultiplayerFightGameStateScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MultiplayerFightGameStateScRsp>(
             "MultiplayerFightGameStateScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for MultiplayerFightGameStateScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    self.LKLJKGKLHID.push(is.read_message()?);
+                106 => {
+                    self.LHIFALKBALM.push(is.read_message()?);
                 },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DJNKCKJMNIL)?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KCPFMJCKNLN)?;
                 },
-                40 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                24 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,16 +108,16 @@ impl ::protobuf::Message for MultiplayerFightGameStateScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.LKLJKGKLHID {
+        for value in &self.LHIFALKBALM {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.DJNKCKJMNIL.as_ref() {
+        if let Some(v) = self.KCPFMJCKNLN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,14 +125,14 @@ impl ::protobuf::Message for MultiplayerFightGameStateScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.LKLJKGKLHID {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        for v in &self.LHIFALKBALM {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
-        if let Some(v) = self.DJNKCKJMNIL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if let Some(v) = self.KCPFMJCKNLN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(5, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(3, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,17 +151,17 @@ impl ::protobuf::Message for MultiplayerFightGameStateScRsp {
     }
 
     fn clear(&mut self) {
-        self.LKLJKGKLHID.clear();
-        self.DJNKCKJMNIL.clear();
-        self.ADADHIHDHJC = 0;
+        self.LHIFALKBALM.clear();
+        self.KCPFMJCKNLN.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MultiplayerFightGameStateScRsp {
         static instance: MultiplayerFightGameStateScRsp = MultiplayerFightGameStateScRsp {
-            LKLJKGKLHID: ::std::vec::Vec::new(),
-            DJNKCKJMNIL: ::protobuf::MessageField::none(),
-            ADADHIHDHJC: 0,
+            LHIFALKBALM: ::std::vec::Vec::new(),
+            KCPFMJCKNLN: ::protobuf::MessageField::none(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,12 +186,11 @@ impl ::protobuf::reflect::ProtobufValue for MultiplayerFightGameStateScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$MultiplayerFightGameStateScRsp.proto\x1a\x11DBBLOFLAAMH.proto\x1a\x11\
-    MNFBAOKFOPM.proto\"\xa2\x01\n\x1eMultiplayerFightGameStateScRsp\x12.\n\
-    \x0bLKLJKGKLHID\x18\x0e\x20\x03(\x0b2\x0c.DBBLOFLAAMHR\x0bLKLJKGKLHID\
-    \x12.\n\x0bDJNKCKJMNIL\x18\x0b\x20\x01(\x0b2\x0c.MNFBAOKFOPMR\x0bDJNKCKJ\
-    MNIL\x12\x20\n\x0bADADHIHDHJC\x18\x05\x20\x01(\rR\x0bADADHIHDHJCb\x06pro\
-    to3\
+    \n$MultiplayerFightGameStateScRsp.proto\x1a\x11GCIBOEOBJJH.proto\x1a\x11\
+    GDOHNMGABGE.proto\"\x9a\x01\n\x1eMultiplayerFightGameStateScRsp\x12.\n\
+    \x0bLHIFALKBALM\x18\r\x20\x03(\x0b2\x0c.GDOHNMGABGER\x0bLHIFALKBALM\x12.\
+    \n\x0bKCPFMJCKNLN\x18\x02\x20\x01(\x0b2\x0c.GCIBOEOBJJHR\x0bKCPFMJCKNLN\
+    \x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -209,8 +208,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::DBBLOFLAAMH::file_descriptor().clone());
-            deps.push(super::MNFBAOKFOPM::file_descriptor().clone());
+            deps.push(super::GCIBOEOBJJH::file_descriptor().clone());
+            deps.push(super::GDOHNMGABGE::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MultiplayerFightGameStateScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -30,78 +30,78 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdSwordTrainingType {
     // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingTypeNone)
     CmdSwordTrainingTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingExamResultConfirmScRsp)
-    CmdSwordTrainingExamResultConfirmScRsp = 7488,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingDialogueSelectOptionCsReq)
-    CmdSwordTrainingDialogueSelectOptionCsReq = 7473,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingStoryConfirmScRsp)
-    CmdSwordTrainingStoryConfirmScRsp = 7481,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingLearnSkillCsReq)
-    CmdSwordTrainingLearnSkillCsReq = 7489,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingRestoreGameCsReq)
-    CmdSwordTrainingRestoreGameCsReq = 7459,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingDailyPhaseConfirmCsReq)
-    CmdSwordTrainingDailyPhaseConfirmCsReq = 7487,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingRestoreGameScRsp)
-    CmdSwordTrainingRestoreGameScRsp = 7451,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingLearnSkillScRsp)
-    CmdSwordTrainingLearnSkillScRsp = 7483,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdGetSwordTrainingDataCsReq)
-    CmdGetSwordTrainingDataCsReq = 7466,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingTurnActionScRsp)
-    CmdSwordTrainingTurnActionScRsp = 7492,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingStoryBattleCsReq)
-    CmdSwordTrainingStoryBattleCsReq = 7454,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingSetSkillTraceCsReq)
-    CmdSwordTrainingSetSkillTraceCsReq = 7500,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingMarkEndingViewedScRsp)
-    CmdSwordTrainingMarkEndingViewedScRsp = 7464,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingGameSettleScNotify)
-    CmdSwordTrainingGameSettleScNotify = 7476,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingSelectEndingScRsp)
-    CmdSwordTrainingSelectEndingScRsp = 7491,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdGetSwordTrainingDataScRsp)
-    CmdGetSwordTrainingDataScRsp = 7462,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingGameSyncChangeScNotify)
-    CmdSwordTrainingGameSyncChangeScNotify = 7465,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingTurnActionCsReq)
-    CmdSwordTrainingTurnActionCsReq = 7474,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingGiveUpGameScRsp)
+    CmdSwordTrainingGiveUpGameScRsp = 7472,
     // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdEnterSwordTrainingExamScRsp)
-    CmdEnterSwordTrainingExamScRsp = 7499,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingResumeGameCsReq)
-    CmdSwordTrainingResumeGameCsReq = 7453,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingStoryBattleScRsp)
-    CmdSwordTrainingStoryBattleScRsp = 7498,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingSetSkillTraceScRsp)
-    CmdSwordTrainingSetSkillTraceScRsp = 7461,
+    CmdEnterSwordTrainingExamScRsp = 7463,
     // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingGiveUpGameCsReq)
     CmdSwordTrainingGiveUpGameCsReq = 7468,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingSelectEndingCsReq)
-    CmdSwordTrainingSelectEndingCsReq = 7467,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdEnterSwordTrainingExamCsReq)
-    CmdEnterSwordTrainingExamCsReq = 7484,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingStartGameCsReq)
-    CmdSwordTrainingStartGameCsReq = 7494,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingMarkEndingViewedCsReq)
-    CmdSwordTrainingMarkEndingViewedCsReq = 7495,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingGiveUpGameScRsp)
-    CmdSwordTrainingGiveUpGameScRsp = 7482,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingUnlockSyncScNotify)
-    CmdSwordTrainingUnlockSyncScNotify = 7452,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingActionTurnSettleScNotify)
-    CmdSwordTrainingActionTurnSettleScNotify = 7471,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingExamResultConfirmCsReq)
-    CmdSwordTrainingExamResultConfirmCsReq = 7479,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingDailyPhaseConfirmScRsp)
-    CmdSwordTrainingDailyPhaseConfirmScRsp = 7490,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingStoryConfirmCsReq)
-    CmdSwordTrainingStoryConfirmCsReq = 7455,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingStartGameScRsp)
-    CmdSwordTrainingStartGameScRsp = 7470,
     // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingResumeGameScRsp)
-    CmdSwordTrainingResumeGameScRsp = 7497,
+    CmdSwordTrainingResumeGameScRsp = 7486,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingSelectEndingCsReq)
+    CmdSwordTrainingSelectEndingCsReq = 7479,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingGameSyncChangeScNotify)
+    CmdSwordTrainingGameSyncChangeScNotify = 7462,
     // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingDialogueSelectOptionScRsp)
-    CmdSwordTrainingDialogueSelectOptionScRsp = 7458,
+    CmdSwordTrainingDialogueSelectOptionScRsp = 7497,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingStoryBattleScRsp)
+    CmdSwordTrainingStoryBattleScRsp = 7451,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingStoryConfirmCsReq)
+    CmdSwordTrainingStoryConfirmCsReq = 7456,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingGameSettleScNotify)
+    CmdSwordTrainingGameSettleScNotify = 7492,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingDailyPhaseConfirmScRsp)
+    CmdSwordTrainingDailyPhaseConfirmScRsp = 7459,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingDailyPhaseConfirmCsReq)
+    CmdSwordTrainingDailyPhaseConfirmCsReq = 7499,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingExamResultConfirmCsReq)
+    CmdSwordTrainingExamResultConfirmCsReq = 7488,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingTurnActionCsReq)
+    CmdSwordTrainingTurnActionCsReq = 7473,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingMarkEndingViewedCsReq)
+    CmdSwordTrainingMarkEndingViewedCsReq = 7457,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingStoryBattleCsReq)
+    CmdSwordTrainingStoryBattleCsReq = 7481,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingStartGameScRsp)
+    CmdSwordTrainingStartGameScRsp = 7461,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingRestoreGameCsReq)
+    CmdSwordTrainingRestoreGameCsReq = 7484,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingExamResultConfirmScRsp)
+    CmdSwordTrainingExamResultConfirmScRsp = 7483,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingSetSkillTraceCsReq)
+    CmdSwordTrainingSetSkillTraceCsReq = 7489,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdEnterSwordTrainingExamCsReq)
+    CmdEnterSwordTrainingExamCsReq = 7498,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingActionTurnSettleScNotify)
+    CmdSwordTrainingActionTurnSettleScNotify = 7487,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdGetSwordTrainingDataCsReq)
+    CmdGetSwordTrainingDataCsReq = 7500,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdGetSwordTrainingDataScRsp)
+    CmdGetSwordTrainingDataScRsp = 7480,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingLearnSkillCsReq)
+    CmdSwordTrainingLearnSkillCsReq = 7467,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingTurnActionScRsp)
+    CmdSwordTrainingTurnActionScRsp = 7465,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingLearnSkillScRsp)
+    CmdSwordTrainingLearnSkillScRsp = 7454,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingStartGameCsReq)
+    CmdSwordTrainingStartGameCsReq = 7490,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingDialogueSelectOptionCsReq)
+    CmdSwordTrainingDialogueSelectOptionCsReq = 7493,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingSelectEndingScRsp)
+    CmdSwordTrainingSelectEndingScRsp = 7475,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingUnlockSyncScNotify)
+    CmdSwordTrainingUnlockSyncScNotify = 7455,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingStoryConfirmScRsp)
+    CmdSwordTrainingStoryConfirmScRsp = 7485,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingMarkEndingViewedScRsp)
+    CmdSwordTrainingMarkEndingViewedScRsp = 7476,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingSetSkillTraceScRsp)
+    CmdSwordTrainingSetSkillTraceScRsp = 7477,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingResumeGameCsReq)
+    CmdSwordTrainingResumeGameCsReq = 7453,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingRestoreGameScRsp)
+    CmdSwordTrainingRestoreGameScRsp = 7469,
 }
 
 impl ::protobuf::Enum for CmdSwordTrainingType {
@@ -114,42 +114,42 @@ impl ::protobuf::Enum for CmdSwordTrainingType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdSwordTrainingType> {
         match value {
             0 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingTypeNone),
-            7488 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingExamResultConfirmScRsp),
-            7473 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingDialogueSelectOptionCsReq),
-            7481 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStoryConfirmScRsp),
-            7489 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingLearnSkillCsReq),
-            7459 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingRestoreGameCsReq),
-            7487 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingDailyPhaseConfirmCsReq),
-            7451 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingRestoreGameScRsp),
-            7483 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingLearnSkillScRsp),
-            7466 => ::std::option::Option::Some(CmdSwordTrainingType::CmdGetSwordTrainingDataCsReq),
-            7492 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingTurnActionScRsp),
-            7454 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStoryBattleCsReq),
-            7500 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingSetSkillTraceCsReq),
-            7464 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingMarkEndingViewedScRsp),
-            7476 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingGameSettleScNotify),
-            7491 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingSelectEndingScRsp),
-            7462 => ::std::option::Option::Some(CmdSwordTrainingType::CmdGetSwordTrainingDataScRsp),
-            7465 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingGameSyncChangeScNotify),
-            7474 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingTurnActionCsReq),
-            7499 => ::std::option::Option::Some(CmdSwordTrainingType::CmdEnterSwordTrainingExamScRsp),
-            7453 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingResumeGameCsReq),
-            7498 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStoryBattleScRsp),
-            7461 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingSetSkillTraceScRsp),
+            7472 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingGiveUpGameScRsp),
+            7463 => ::std::option::Option::Some(CmdSwordTrainingType::CmdEnterSwordTrainingExamScRsp),
             7468 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingGiveUpGameCsReq),
-            7467 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingSelectEndingCsReq),
-            7484 => ::std::option::Option::Some(CmdSwordTrainingType::CmdEnterSwordTrainingExamCsReq),
-            7494 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStartGameCsReq),
-            7495 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingMarkEndingViewedCsReq),
-            7482 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingGiveUpGameScRsp),
-            7452 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingUnlockSyncScNotify),
-            7471 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingActionTurnSettleScNotify),
-            7479 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingExamResultConfirmCsReq),
-            7490 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingDailyPhaseConfirmScRsp),
-            7455 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStoryConfirmCsReq),
-            7470 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStartGameScRsp),
-            7497 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingResumeGameScRsp),
-            7458 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingDialogueSelectOptionScRsp),
+            7486 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingResumeGameScRsp),
+            7479 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingSelectEndingCsReq),
+            7462 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingGameSyncChangeScNotify),
+            7497 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingDialogueSelectOptionScRsp),
+            7451 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStoryBattleScRsp),
+            7456 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStoryConfirmCsReq),
+            7492 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingGameSettleScNotify),
+            7459 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingDailyPhaseConfirmScRsp),
+            7499 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingDailyPhaseConfirmCsReq),
+            7488 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingExamResultConfirmCsReq),
+            7473 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingTurnActionCsReq),
+            7457 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingMarkEndingViewedCsReq),
+            7481 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStoryBattleCsReq),
+            7461 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStartGameScRsp),
+            7484 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingRestoreGameCsReq),
+            7483 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingExamResultConfirmScRsp),
+            7489 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingSetSkillTraceCsReq),
+            7498 => ::std::option::Option::Some(CmdSwordTrainingType::CmdEnterSwordTrainingExamCsReq),
+            7487 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingActionTurnSettleScNotify),
+            7500 => ::std::option::Option::Some(CmdSwordTrainingType::CmdGetSwordTrainingDataCsReq),
+            7480 => ::std::option::Option::Some(CmdSwordTrainingType::CmdGetSwordTrainingDataScRsp),
+            7467 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingLearnSkillCsReq),
+            7465 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingTurnActionScRsp),
+            7454 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingLearnSkillScRsp),
+            7490 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStartGameCsReq),
+            7493 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingDialogueSelectOptionCsReq),
+            7475 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingSelectEndingScRsp),
+            7455 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingUnlockSyncScNotify),
+            7485 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStoryConfirmScRsp),
+            7476 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingMarkEndingViewedScRsp),
+            7477 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingSetSkillTraceScRsp),
+            7453 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingResumeGameCsReq),
+            7469 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingRestoreGameScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -157,84 +157,84 @@ impl ::protobuf::Enum for CmdSwordTrainingType {
     fn from_str(str: &str) -> ::std::option::Option<CmdSwordTrainingType> {
         match str {
             "CmdSwordTrainingTypeNone" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingTypeNone),
-            "CmdSwordTrainingExamResultConfirmScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingExamResultConfirmScRsp),
-            "CmdSwordTrainingDialogueSelectOptionCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingDialogueSelectOptionCsReq),
-            "CmdSwordTrainingStoryConfirmScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStoryConfirmScRsp),
-            "CmdSwordTrainingLearnSkillCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingLearnSkillCsReq),
-            "CmdSwordTrainingRestoreGameCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingRestoreGameCsReq),
-            "CmdSwordTrainingDailyPhaseConfirmCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingDailyPhaseConfirmCsReq),
-            "CmdSwordTrainingRestoreGameScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingRestoreGameScRsp),
-            "CmdSwordTrainingLearnSkillScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingLearnSkillScRsp),
-            "CmdGetSwordTrainingDataCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdGetSwordTrainingDataCsReq),
-            "CmdSwordTrainingTurnActionScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingTurnActionScRsp),
-            "CmdSwordTrainingStoryBattleCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStoryBattleCsReq),
-            "CmdSwordTrainingSetSkillTraceCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingSetSkillTraceCsReq),
-            "CmdSwordTrainingMarkEndingViewedScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingMarkEndingViewedScRsp),
-            "CmdSwordTrainingGameSettleScNotify" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingGameSettleScNotify),
-            "CmdSwordTrainingSelectEndingScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingSelectEndingScRsp),
-            "CmdGetSwordTrainingDataScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdGetSwordTrainingDataScRsp),
-            "CmdSwordTrainingGameSyncChangeScNotify" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingGameSyncChangeScNotify),
-            "CmdSwordTrainingTurnActionCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingTurnActionCsReq),
-            "CmdEnterSwordTrainingExamScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdEnterSwordTrainingExamScRsp),
-            "CmdSwordTrainingResumeGameCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingResumeGameCsReq),
-            "CmdSwordTrainingStoryBattleScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStoryBattleScRsp),
-            "CmdSwordTrainingSetSkillTraceScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingSetSkillTraceScRsp),
-            "CmdSwordTrainingGiveUpGameCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingGiveUpGameCsReq),
-            "CmdSwordTrainingSelectEndingCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingSelectEndingCsReq),
-            "CmdEnterSwordTrainingExamCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdEnterSwordTrainingExamCsReq),
-            "CmdSwordTrainingStartGameCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStartGameCsReq),
-            "CmdSwordTrainingMarkEndingViewedCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingMarkEndingViewedCsReq),
             "CmdSwordTrainingGiveUpGameScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingGiveUpGameScRsp),
-            "CmdSwordTrainingUnlockSyncScNotify" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingUnlockSyncScNotify),
-            "CmdSwordTrainingActionTurnSettleScNotify" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingActionTurnSettleScNotify),
-            "CmdSwordTrainingExamResultConfirmCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingExamResultConfirmCsReq),
-            "CmdSwordTrainingDailyPhaseConfirmScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingDailyPhaseConfirmScRsp),
-            "CmdSwordTrainingStoryConfirmCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStoryConfirmCsReq),
-            "CmdSwordTrainingStartGameScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStartGameScRsp),
+            "CmdEnterSwordTrainingExamScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdEnterSwordTrainingExamScRsp),
+            "CmdSwordTrainingGiveUpGameCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingGiveUpGameCsReq),
             "CmdSwordTrainingResumeGameScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingResumeGameScRsp),
+            "CmdSwordTrainingSelectEndingCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingSelectEndingCsReq),
+            "CmdSwordTrainingGameSyncChangeScNotify" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingGameSyncChangeScNotify),
             "CmdSwordTrainingDialogueSelectOptionScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingDialogueSelectOptionScRsp),
+            "CmdSwordTrainingStoryBattleScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStoryBattleScRsp),
+            "CmdSwordTrainingStoryConfirmCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStoryConfirmCsReq),
+            "CmdSwordTrainingGameSettleScNotify" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingGameSettleScNotify),
+            "CmdSwordTrainingDailyPhaseConfirmScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingDailyPhaseConfirmScRsp),
+            "CmdSwordTrainingDailyPhaseConfirmCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingDailyPhaseConfirmCsReq),
+            "CmdSwordTrainingExamResultConfirmCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingExamResultConfirmCsReq),
+            "CmdSwordTrainingTurnActionCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingTurnActionCsReq),
+            "CmdSwordTrainingMarkEndingViewedCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingMarkEndingViewedCsReq),
+            "CmdSwordTrainingStoryBattleCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStoryBattleCsReq),
+            "CmdSwordTrainingStartGameScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStartGameScRsp),
+            "CmdSwordTrainingRestoreGameCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingRestoreGameCsReq),
+            "CmdSwordTrainingExamResultConfirmScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingExamResultConfirmScRsp),
+            "CmdSwordTrainingSetSkillTraceCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingSetSkillTraceCsReq),
+            "CmdEnterSwordTrainingExamCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdEnterSwordTrainingExamCsReq),
+            "CmdSwordTrainingActionTurnSettleScNotify" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingActionTurnSettleScNotify),
+            "CmdGetSwordTrainingDataCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdGetSwordTrainingDataCsReq),
+            "CmdGetSwordTrainingDataScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdGetSwordTrainingDataScRsp),
+            "CmdSwordTrainingLearnSkillCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingLearnSkillCsReq),
+            "CmdSwordTrainingTurnActionScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingTurnActionScRsp),
+            "CmdSwordTrainingLearnSkillScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingLearnSkillScRsp),
+            "CmdSwordTrainingStartGameCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStartGameCsReq),
+            "CmdSwordTrainingDialogueSelectOptionCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingDialogueSelectOptionCsReq),
+            "CmdSwordTrainingSelectEndingScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingSelectEndingScRsp),
+            "CmdSwordTrainingUnlockSyncScNotify" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingUnlockSyncScNotify),
+            "CmdSwordTrainingStoryConfirmScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStoryConfirmScRsp),
+            "CmdSwordTrainingMarkEndingViewedScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingMarkEndingViewedScRsp),
+            "CmdSwordTrainingSetSkillTraceScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingSetSkillTraceScRsp),
+            "CmdSwordTrainingResumeGameCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingResumeGameCsReq),
+            "CmdSwordTrainingRestoreGameScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingRestoreGameScRsp),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdSwordTrainingType] = &[
         CmdSwordTrainingType::CmdSwordTrainingTypeNone,
-        CmdSwordTrainingType::CmdSwordTrainingExamResultConfirmScRsp,
-        CmdSwordTrainingType::CmdSwordTrainingDialogueSelectOptionCsReq,
-        CmdSwordTrainingType::CmdSwordTrainingStoryConfirmScRsp,
-        CmdSwordTrainingType::CmdSwordTrainingLearnSkillCsReq,
-        CmdSwordTrainingType::CmdSwordTrainingRestoreGameCsReq,
-        CmdSwordTrainingType::CmdSwordTrainingDailyPhaseConfirmCsReq,
-        CmdSwordTrainingType::CmdSwordTrainingRestoreGameScRsp,
-        CmdSwordTrainingType::CmdSwordTrainingLearnSkillScRsp,
-        CmdSwordTrainingType::CmdGetSwordTrainingDataCsReq,
-        CmdSwordTrainingType::CmdSwordTrainingTurnActionScRsp,
-        CmdSwordTrainingType::CmdSwordTrainingStoryBattleCsReq,
-        CmdSwordTrainingType::CmdSwordTrainingSetSkillTraceCsReq,
-        CmdSwordTrainingType::CmdSwordTrainingMarkEndingViewedScRsp,
-        CmdSwordTrainingType::CmdSwordTrainingGameSettleScNotify,
-        CmdSwordTrainingType::CmdSwordTrainingSelectEndingScRsp,
-        CmdSwordTrainingType::CmdGetSwordTrainingDataScRsp,
-        CmdSwordTrainingType::CmdSwordTrainingGameSyncChangeScNotify,
-        CmdSwordTrainingType::CmdSwordTrainingTurnActionCsReq,
-        CmdSwordTrainingType::CmdEnterSwordTrainingExamScRsp,
-        CmdSwordTrainingType::CmdSwordTrainingResumeGameCsReq,
-        CmdSwordTrainingType::CmdSwordTrainingStoryBattleScRsp,
-        CmdSwordTrainingType::CmdSwordTrainingSetSkillTraceScRsp,
-        CmdSwordTrainingType::CmdSwordTrainingGiveUpGameCsReq,
-        CmdSwordTrainingType::CmdSwordTrainingSelectEndingCsReq,
-        CmdSwordTrainingType::CmdEnterSwordTrainingExamCsReq,
-        CmdSwordTrainingType::CmdSwordTrainingStartGameCsReq,
-        CmdSwordTrainingType::CmdSwordTrainingMarkEndingViewedCsReq,
         CmdSwordTrainingType::CmdSwordTrainingGiveUpGameScRsp,
-        CmdSwordTrainingType::CmdSwordTrainingUnlockSyncScNotify,
-        CmdSwordTrainingType::CmdSwordTrainingActionTurnSettleScNotify,
-        CmdSwordTrainingType::CmdSwordTrainingExamResultConfirmCsReq,
-        CmdSwordTrainingType::CmdSwordTrainingDailyPhaseConfirmScRsp,
-        CmdSwordTrainingType::CmdSwordTrainingStoryConfirmCsReq,
-        CmdSwordTrainingType::CmdSwordTrainingStartGameScRsp,
+        CmdSwordTrainingType::CmdEnterSwordTrainingExamScRsp,
+        CmdSwordTrainingType::CmdSwordTrainingGiveUpGameCsReq,
         CmdSwordTrainingType::CmdSwordTrainingResumeGameScRsp,
+        CmdSwordTrainingType::CmdSwordTrainingSelectEndingCsReq,
+        CmdSwordTrainingType::CmdSwordTrainingGameSyncChangeScNotify,
         CmdSwordTrainingType::CmdSwordTrainingDialogueSelectOptionScRsp,
+        CmdSwordTrainingType::CmdSwordTrainingStoryBattleScRsp,
+        CmdSwordTrainingType::CmdSwordTrainingStoryConfirmCsReq,
+        CmdSwordTrainingType::CmdSwordTrainingGameSettleScNotify,
+        CmdSwordTrainingType::CmdSwordTrainingDailyPhaseConfirmScRsp,
+        CmdSwordTrainingType::CmdSwordTrainingDailyPhaseConfirmCsReq,
+        CmdSwordTrainingType::CmdSwordTrainingExamResultConfirmCsReq,
+        CmdSwordTrainingType::CmdSwordTrainingTurnActionCsReq,
+        CmdSwordTrainingType::CmdSwordTrainingMarkEndingViewedCsReq,
+        CmdSwordTrainingType::CmdSwordTrainingStoryBattleCsReq,
+        CmdSwordTrainingType::CmdSwordTrainingStartGameScRsp,
+        CmdSwordTrainingType::CmdSwordTrainingRestoreGameCsReq,
+        CmdSwordTrainingType::CmdSwordTrainingExamResultConfirmScRsp,
+        CmdSwordTrainingType::CmdSwordTrainingSetSkillTraceCsReq,
+        CmdSwordTrainingType::CmdEnterSwordTrainingExamCsReq,
+        CmdSwordTrainingType::CmdSwordTrainingActionTurnSettleScNotify,
+        CmdSwordTrainingType::CmdGetSwordTrainingDataCsReq,
+        CmdSwordTrainingType::CmdGetSwordTrainingDataScRsp,
+        CmdSwordTrainingType::CmdSwordTrainingLearnSkillCsReq,
+        CmdSwordTrainingType::CmdSwordTrainingTurnActionScRsp,
+        CmdSwordTrainingType::CmdSwordTrainingLearnSkillScRsp,
+        CmdSwordTrainingType::CmdSwordTrainingStartGameCsReq,
+        CmdSwordTrainingType::CmdSwordTrainingDialogueSelectOptionCsReq,
+        CmdSwordTrainingType::CmdSwordTrainingSelectEndingScRsp,
+        CmdSwordTrainingType::CmdSwordTrainingUnlockSyncScNotify,
+        CmdSwordTrainingType::CmdSwordTrainingStoryConfirmScRsp,
+        CmdSwordTrainingType::CmdSwordTrainingMarkEndingViewedScRsp,
+        CmdSwordTrainingType::CmdSwordTrainingSetSkillTraceScRsp,
+        CmdSwordTrainingType::CmdSwordTrainingResumeGameCsReq,
+        CmdSwordTrainingType::CmdSwordTrainingRestoreGameScRsp,
     ];
 }
 
@@ -247,42 +247,42 @@ impl ::protobuf::EnumFull for CmdSwordTrainingType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdSwordTrainingType::CmdSwordTrainingTypeNone => 0,
-            CmdSwordTrainingType::CmdSwordTrainingExamResultConfirmScRsp => 1,
-            CmdSwordTrainingType::CmdSwordTrainingDialogueSelectOptionCsReq => 2,
-            CmdSwordTrainingType::CmdSwordTrainingStoryConfirmScRsp => 3,
-            CmdSwordTrainingType::CmdSwordTrainingLearnSkillCsReq => 4,
-            CmdSwordTrainingType::CmdSwordTrainingRestoreGameCsReq => 5,
-            CmdSwordTrainingType::CmdSwordTrainingDailyPhaseConfirmCsReq => 6,
-            CmdSwordTrainingType::CmdSwordTrainingRestoreGameScRsp => 7,
-            CmdSwordTrainingType::CmdSwordTrainingLearnSkillScRsp => 8,
-            CmdSwordTrainingType::CmdGetSwordTrainingDataCsReq => 9,
-            CmdSwordTrainingType::CmdSwordTrainingTurnActionScRsp => 10,
-            CmdSwordTrainingType::CmdSwordTrainingStoryBattleCsReq => 11,
-            CmdSwordTrainingType::CmdSwordTrainingSetSkillTraceCsReq => 12,
-            CmdSwordTrainingType::CmdSwordTrainingMarkEndingViewedScRsp => 13,
-            CmdSwordTrainingType::CmdSwordTrainingGameSettleScNotify => 14,
-            CmdSwordTrainingType::CmdSwordTrainingSelectEndingScRsp => 15,
-            CmdSwordTrainingType::CmdGetSwordTrainingDataScRsp => 16,
-            CmdSwordTrainingType::CmdSwordTrainingGameSyncChangeScNotify => 17,
-            CmdSwordTrainingType::CmdSwordTrainingTurnActionCsReq => 18,
-            CmdSwordTrainingType::CmdEnterSwordTrainingExamScRsp => 19,
-            CmdSwordTrainingType::CmdSwordTrainingResumeGameCsReq => 20,
-            CmdSwordTrainingType::CmdSwordTrainingStoryBattleScRsp => 21,
-            CmdSwordTrainingType::CmdSwordTrainingSetSkillTraceScRsp => 22,
-            CmdSwordTrainingType::CmdSwordTrainingGiveUpGameCsReq => 23,
-            CmdSwordTrainingType::CmdSwordTrainingSelectEndingCsReq => 24,
-            CmdSwordTrainingType::CmdEnterSwordTrainingExamCsReq => 25,
-            CmdSwordTrainingType::CmdSwordTrainingStartGameCsReq => 26,
-            CmdSwordTrainingType::CmdSwordTrainingMarkEndingViewedCsReq => 27,
-            CmdSwordTrainingType::CmdSwordTrainingGiveUpGameScRsp => 28,
-            CmdSwordTrainingType::CmdSwordTrainingUnlockSyncScNotify => 29,
-            CmdSwordTrainingType::CmdSwordTrainingActionTurnSettleScNotify => 30,
-            CmdSwordTrainingType::CmdSwordTrainingExamResultConfirmCsReq => 31,
-            CmdSwordTrainingType::CmdSwordTrainingDailyPhaseConfirmScRsp => 32,
-            CmdSwordTrainingType::CmdSwordTrainingStoryConfirmCsReq => 33,
-            CmdSwordTrainingType::CmdSwordTrainingStartGameScRsp => 34,
-            CmdSwordTrainingType::CmdSwordTrainingResumeGameScRsp => 35,
-            CmdSwordTrainingType::CmdSwordTrainingDialogueSelectOptionScRsp => 36,
+            CmdSwordTrainingType::CmdSwordTrainingGiveUpGameScRsp => 1,
+            CmdSwordTrainingType::CmdEnterSwordTrainingExamScRsp => 2,
+            CmdSwordTrainingType::CmdSwordTrainingGiveUpGameCsReq => 3,
+            CmdSwordTrainingType::CmdSwordTrainingResumeGameScRsp => 4,
+            CmdSwordTrainingType::CmdSwordTrainingSelectEndingCsReq => 5,
+            CmdSwordTrainingType::CmdSwordTrainingGameSyncChangeScNotify => 6,
+            CmdSwordTrainingType::CmdSwordTrainingDialogueSelectOptionScRsp => 7,
+            CmdSwordTrainingType::CmdSwordTrainingStoryBattleScRsp => 8,
+            CmdSwordTrainingType::CmdSwordTrainingStoryConfirmCsReq => 9,
+            CmdSwordTrainingType::CmdSwordTrainingGameSettleScNotify => 10,
+            CmdSwordTrainingType::CmdSwordTrainingDailyPhaseConfirmScRsp => 11,
+            CmdSwordTrainingType::CmdSwordTrainingDailyPhaseConfirmCsReq => 12,
+            CmdSwordTrainingType::CmdSwordTrainingExamResultConfirmCsReq => 13,
+            CmdSwordTrainingType::CmdSwordTrainingTurnActionCsReq => 14,
+            CmdSwordTrainingType::CmdSwordTrainingMarkEndingViewedCsReq => 15,
+            CmdSwordTrainingType::CmdSwordTrainingStoryBattleCsReq => 16,
+            CmdSwordTrainingType::CmdSwordTrainingStartGameScRsp => 17,
+            CmdSwordTrainingType::CmdSwordTrainingRestoreGameCsReq => 18,
+            CmdSwordTrainingType::CmdSwordTrainingExamResultConfirmScRsp => 19,
+            CmdSwordTrainingType::CmdSwordTrainingSetSkillTraceCsReq => 20,
+            CmdSwordTrainingType::CmdEnterSwordTrainingExamCsReq => 21,
+            CmdSwordTrainingType::CmdSwordTrainingActionTurnSettleScNotify => 22,
+            CmdSwordTrainingType::CmdGetSwordTrainingDataCsReq => 23,
+            CmdSwordTrainingType::CmdGetSwordTrainingDataScRsp => 24,
+            CmdSwordTrainingType::CmdSwordTrainingLearnSkillCsReq => 25,
+            CmdSwordTrainingType::CmdSwordTrainingTurnActionScRsp => 26,
+            CmdSwordTrainingType::CmdSwordTrainingLearnSkillScRsp => 27,
+            CmdSwordTrainingType::CmdSwordTrainingStartGameCsReq => 28,
+            CmdSwordTrainingType::CmdSwordTrainingDialogueSelectOptionCsReq => 29,
+            CmdSwordTrainingType::CmdSwordTrainingSelectEndingScRsp => 30,
+            CmdSwordTrainingType::CmdSwordTrainingUnlockSyncScNotify => 31,
+            CmdSwordTrainingType::CmdSwordTrainingStoryConfirmScRsp => 32,
+            CmdSwordTrainingType::CmdSwordTrainingMarkEndingViewedScRsp => 33,
+            CmdSwordTrainingType::CmdSwordTrainingSetSkillTraceScRsp => 34,
+            CmdSwordTrainingType::CmdSwordTrainingResumeGameCsReq => 35,
+            CmdSwordTrainingType::CmdSwordTrainingRestoreGameScRsp => 36,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -302,33 +302,33 @@ impl CmdSwordTrainingType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aCmdSwordTrainingType.proto*\xe6\x0b\n\x14CmdSwordTrainingType\x12\
-    \x1c\n\x18CmdSwordTrainingTypeNone\x10\0\x12+\n&CmdSwordTrainingExamResu\
-    ltConfirmScRsp\x10\xc0:\x12.\n)CmdSwordTrainingDialogueSelectOptionCsReq\
-    \x10\xb1:\x12&\n!CmdSwordTrainingStoryConfirmScRsp\x10\xb9:\x12$\n\x1fCm\
-    dSwordTrainingLearnSkillCsReq\x10\xc1:\x12%\n\x20CmdSwordTrainingRestore\
-    GameCsReq\x10\xa3:\x12+\n&CmdSwordTrainingDailyPhaseConfirmCsReq\x10\xbf\
-    :\x12%\n\x20CmdSwordTrainingRestoreGameScRsp\x10\x9b:\x12$\n\x1fCmdSword\
-    TrainingLearnSkillScRsp\x10\xbb:\x12!\n\x1cCmdGetSwordTrainingDataCsReq\
-    \x10\xaa:\x12$\n\x1fCmdSwordTrainingTurnActionScRsp\x10\xc4:\x12%\n\x20C\
-    mdSwordTrainingStoryBattleCsReq\x10\x9e:\x12'\n\"CmdSwordTrainingSetSkil\
-    lTraceCsReq\x10\xcc:\x12*\n%CmdSwordTrainingMarkEndingViewedScRsp\x10\
-    \xa8:\x12'\n\"CmdSwordTrainingGameSettleScNotify\x10\xb4:\x12&\n!CmdSwor\
-    dTrainingSelectEndingScRsp\x10\xc3:\x12!\n\x1cCmdGetSwordTrainingDataScR\
-    sp\x10\xa6:\x12+\n&CmdSwordTrainingGameSyncChangeScNotify\x10\xa9:\x12$\
-    \n\x1fCmdSwordTrainingTurnActionCsReq\x10\xb2:\x12#\n\x1eCmdEnterSwordTr\
-    ainingExamScRsp\x10\xcb:\x12$\n\x1fCmdSwordTrainingResumeGameCsReq\x10\
-    \x9d:\x12%\n\x20CmdSwordTrainingStoryBattleScRsp\x10\xca:\x12'\n\"CmdSwo\
-    rdTrainingSetSkillTraceScRsp\x10\xa5:\x12$\n\x1fCmdSwordTrainingGiveUpGa\
-    meCsReq\x10\xac:\x12&\n!CmdSwordTrainingSelectEndingCsReq\x10\xab:\x12#\
-    \n\x1eCmdEnterSwordTrainingExamCsReq\x10\xbc:\x12#\n\x1eCmdSwordTraining\
-    StartGameCsReq\x10\xc6:\x12*\n%CmdSwordTrainingMarkEndingViewedCsReq\x10\
-    \xc7:\x12$\n\x1fCmdSwordTrainingGiveUpGameScRsp\x10\xba:\x12'\n\"CmdSwor\
-    dTrainingUnlockSyncScNotify\x10\x9c:\x12-\n(CmdSwordTrainingActionTurnSe\
-    ttleScNotify\x10\xaf:\x12+\n&CmdSwordTrainingExamResultConfirmCsReq\x10\
-    \xb7:\x12+\n&CmdSwordTrainingDailyPhaseConfirmScRsp\x10\xc2:\x12&\n!CmdS\
-    wordTrainingStoryConfirmCsReq\x10\x9f:\x12#\n\x1eCmdSwordTrainingStartGa\
-    meScRsp\x10\xae:\x12$\n\x1fCmdSwordTrainingResumeGameScRsp\x10\xc9:\x12.\
-    \n)CmdSwordTrainingDialogueSelectOptionScRsp\x10\xa2:b\x06proto3\
+    \x1c\n\x18CmdSwordTrainingTypeNone\x10\0\x12$\n\x1fCmdSwordTrainingGiveU\
+    pGameScRsp\x10\xb0:\x12#\n\x1eCmdEnterSwordTrainingExamScRsp\x10\xa7:\
+    \x12$\n\x1fCmdSwordTrainingGiveUpGameCsReq\x10\xac:\x12$\n\x1fCmdSwordTr\
+    ainingResumeGameScRsp\x10\xbe:\x12&\n!CmdSwordTrainingSelectEndingCsReq\
+    \x10\xb7:\x12+\n&CmdSwordTrainingGameSyncChangeScNotify\x10\xa6:\x12.\n)\
+    CmdSwordTrainingDialogueSelectOptionScRsp\x10\xc9:\x12%\n\x20CmdSwordTra\
+    iningStoryBattleScRsp\x10\x9b:\x12&\n!CmdSwordTrainingStoryConfirmCsReq\
+    \x10\xa0:\x12'\n\"CmdSwordTrainingGameSettleScNotify\x10\xc4:\x12+\n&Cmd\
+    SwordTrainingDailyPhaseConfirmScRsp\x10\xa3:\x12+\n&CmdSwordTrainingDail\
+    yPhaseConfirmCsReq\x10\xcb:\x12+\n&CmdSwordTrainingExamResultConfirmCsRe\
+    q\x10\xc0:\x12$\n\x1fCmdSwordTrainingTurnActionCsReq\x10\xb1:\x12*\n%Cmd\
+    SwordTrainingMarkEndingViewedCsReq\x10\xa1:\x12%\n\x20CmdSwordTrainingSt\
+    oryBattleCsReq\x10\xb9:\x12#\n\x1eCmdSwordTrainingStartGameScRsp\x10\xa5\
+    :\x12%\n\x20CmdSwordTrainingRestoreGameCsReq\x10\xbc:\x12+\n&CmdSwordTra\
+    iningExamResultConfirmScRsp\x10\xbb:\x12'\n\"CmdSwordTrainingSetSkillTra\
+    ceCsReq\x10\xc1:\x12#\n\x1eCmdEnterSwordTrainingExamCsReq\x10\xca:\x12-\
+    \n(CmdSwordTrainingActionTurnSettleScNotify\x10\xbf:\x12!\n\x1cCmdGetSwo\
+    rdTrainingDataCsReq\x10\xcc:\x12!\n\x1cCmdGetSwordTrainingDataScRsp\x10\
+    \xb8:\x12$\n\x1fCmdSwordTrainingLearnSkillCsReq\x10\xab:\x12$\n\x1fCmdSw\
+    ordTrainingTurnActionScRsp\x10\xa9:\x12$\n\x1fCmdSwordTrainingLearnSkill\
+    ScRsp\x10\x9e:\x12#\n\x1eCmdSwordTrainingStartGameCsReq\x10\xc2:\x12.\n)\
+    CmdSwordTrainingDialogueSelectOptionCsReq\x10\xc5:\x12&\n!CmdSwordTraini\
+    ngSelectEndingScRsp\x10\xb3:\x12'\n\"CmdSwordTrainingUnlockSyncScNotify\
+    \x10\x9f:\x12&\n!CmdSwordTrainingStoryConfirmScRsp\x10\xbd:\x12*\n%CmdSw\
+    ordTrainingMarkEndingViewedScRsp\x10\xb4:\x12'\n\"CmdSwordTrainingSetSki\
+    llTraceScRsp\x10\xb5:\x12$\n\x1fCmdSwordTrainingResumeGameCsReq\x10\x9d:\
+    \x12%\n\x20CmdSwordTrainingRestoreGameScRsp\x10\xad:b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

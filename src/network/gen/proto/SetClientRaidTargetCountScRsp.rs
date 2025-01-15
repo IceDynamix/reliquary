@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetClientRaidTargetCountScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SetClientRaidTargetCountScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:SetClientRaidTargetCountScRsp.DKEPJDPEJKG)
-    pub DKEPJDPEJKG: u32,
-    // @@protoc_insertion_point(field:SetClientRaidTargetCountScRsp.FINLPBFNLHP)
-    pub FINLPBFNLHP: u32,
+    // @@protoc_insertion_point(field:SetClientRaidTargetCountScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:SetClientRaidTargetCountScRsp.ANFNCHCLLCM)
+    pub ANFNCHCLLCM: u32,
+    // @@protoc_insertion_point(field:SetClientRaidTargetCountScRsp.AFMKGEHANLM)
+    pub AFMKGEHANLM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SetClientRaidTargetCountScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl SetClientRaidTargetCountScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &SetClientRaidTargetCountScRsp| { &m.ADADHIHDHJC },
-            |m: &mut SetClientRaidTargetCountScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &SetClientRaidTargetCountScRsp| { &m.retcode },
+            |m: &mut SetClientRaidTargetCountScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DKEPJDPEJKG",
-            |m: &SetClientRaidTargetCountScRsp| { &m.DKEPJDPEJKG },
-            |m: &mut SetClientRaidTargetCountScRsp| { &mut m.DKEPJDPEJKG },
+            "ANFNCHCLLCM",
+            |m: &SetClientRaidTargetCountScRsp| { &m.ANFNCHCLLCM },
+            |m: &mut SetClientRaidTargetCountScRsp| { &mut m.ANFNCHCLLCM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FINLPBFNLHP",
-            |m: &SetClientRaidTargetCountScRsp| { &m.FINLPBFNLHP },
-            |m: &mut SetClientRaidTargetCountScRsp| { &mut m.FINLPBFNLHP },
+            "AFMKGEHANLM",
+            |m: &SetClientRaidTargetCountScRsp| { &m.AFMKGEHANLM },
+            |m: &mut SetClientRaidTargetCountScRsp| { &mut m.AFMKGEHANLM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetClientRaidTargetCountScRsp>(
             "SetClientRaidTargetCountScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for SetClientRaidTargetCountScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                120 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                112 => {
-                    self.DKEPJDPEJKG = is.read_uint32()?;
+                16 => {
+                    self.ANFNCHCLLCM = is.read_uint32()?;
                 },
-                80 => {
-                    self.FINLPBFNLHP = is.read_uint32()?;
+                72 => {
+                    self.AFMKGEHANLM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for SetClientRaidTargetCountScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
-        if self.DKEPJDPEJKG != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.DKEPJDPEJKG);
+        if self.ANFNCHCLLCM != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.ANFNCHCLLCM);
         }
-        if self.FINLPBFNLHP != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.FINLPBFNLHP);
+        if self.AFMKGEHANLM != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.AFMKGEHANLM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for SetClientRaidTargetCountScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(12, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(15, self.retcode)?;
         }
-        if self.DKEPJDPEJKG != 0 {
-            os.write_uint32(14, self.DKEPJDPEJKG)?;
+        if self.ANFNCHCLLCM != 0 {
+            os.write_uint32(2, self.ANFNCHCLLCM)?;
         }
-        if self.FINLPBFNLHP != 0 {
-            os.write_uint32(10, self.FINLPBFNLHP)?;
+        if self.AFMKGEHANLM != 0 {
+            os.write_uint32(9, self.AFMKGEHANLM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for SetClientRaidTargetCountScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADADHIHDHJC = 0;
-        self.DKEPJDPEJKG = 0;
-        self.FINLPBFNLHP = 0;
+        self.retcode = 0;
+        self.ANFNCHCLLCM = 0;
+        self.AFMKGEHANLM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetClientRaidTargetCountScRsp {
         static instance: SetClientRaidTargetCountScRsp = SetClientRaidTargetCountScRsp {
-            ADADHIHDHJC: 0,
-            DKEPJDPEJKG: 0,
-            FINLPBFNLHP: 0,
+            retcode: 0,
+            ANFNCHCLLCM: 0,
+            AFMKGEHANLM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for SetClientRaidTargetCountScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#SetClientRaidTargetCountScRsp.proto\"\x85\x01\n\x1dSetClientRaidTarge\
-    tCountScRsp\x12\x20\n\x0bADADHIHDHJC\x18\x0c\x20\x01(\rR\x0bADADHIHDHJC\
-    \x12\x20\n\x0bDKEPJDPEJKG\x18\x0e\x20\x01(\rR\x0bDKEPJDPEJKG\x12\x20\n\
-    \x0bFINLPBFNLHP\x18\n\x20\x01(\rR\x0bFINLPBFNLHPb\x06proto3\
+    \n#SetClientRaidTargetCountScRsp.proto\"}\n\x1dSetClientRaidTargetCountS\
+    cRsp\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcode\x12\x20\n\x0bAN\
+    FNCHCLLCM\x18\x02\x20\x01(\rR\x0bANFNCHCLLCM\x12\x20\n\x0bAFMKGEHANLM\
+    \x18\t\x20\x01(\rR\x0bAFMKGEHANLMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

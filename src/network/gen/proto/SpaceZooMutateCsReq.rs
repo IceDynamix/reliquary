@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SpaceZooMutateCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SpaceZooMutateCsReq.LGBJLFEMFOL)
-    pub LGBJLFEMFOL: u32,
-    // @@protoc_insertion_point(field:SpaceZooMutateCsReq.POPPKLNFPPI)
-    pub POPPKLNFPPI: u32,
+    // @@protoc_insertion_point(field:SpaceZooMutateCsReq.AKMIHHHJPON)
+    pub AKMIHHHJPON: u32,
+    // @@protoc_insertion_point(field:SpaceZooMutateCsReq.unique_id)
+    pub unique_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SpaceZooMutateCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl SpaceZooMutateCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LGBJLFEMFOL",
-            |m: &SpaceZooMutateCsReq| { &m.LGBJLFEMFOL },
-            |m: &mut SpaceZooMutateCsReq| { &mut m.LGBJLFEMFOL },
+            "AKMIHHHJPON",
+            |m: &SpaceZooMutateCsReq| { &m.AKMIHHHJPON },
+            |m: &mut SpaceZooMutateCsReq| { &mut m.AKMIHHHJPON },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "POPPKLNFPPI",
-            |m: &SpaceZooMutateCsReq| { &m.POPPKLNFPPI },
-            |m: &mut SpaceZooMutateCsReq| { &mut m.POPPKLNFPPI },
+            "unique_id",
+            |m: &SpaceZooMutateCsReq| { &m.unique_id },
+            |m: &mut SpaceZooMutateCsReq| { &mut m.unique_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SpaceZooMutateCsReq>(
             "SpaceZooMutateCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for SpaceZooMutateCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.LGBJLFEMFOL = is.read_uint32()?;
+                32 => {
+                    self.AKMIHHHJPON = is.read_uint32()?;
                 },
                 72 => {
-                    self.POPPKLNFPPI = is.read_uint32()?;
+                    self.unique_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for SpaceZooMutateCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LGBJLFEMFOL != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.LGBJLFEMFOL);
+        if self.AKMIHHHJPON != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.AKMIHHHJPON);
         }
-        if self.POPPKLNFPPI != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.POPPKLNFPPI);
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.unique_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for SpaceZooMutateCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LGBJLFEMFOL != 0 {
-            os.write_uint32(1, self.LGBJLFEMFOL)?;
+        if self.AKMIHHHJPON != 0 {
+            os.write_uint32(4, self.AKMIHHHJPON)?;
         }
-        if self.POPPKLNFPPI != 0 {
-            os.write_uint32(9, self.POPPKLNFPPI)?;
+        if self.unique_id != 0 {
+            os.write_uint32(9, self.unique_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for SpaceZooMutateCsReq {
     }
 
     fn clear(&mut self) {
-        self.LGBJLFEMFOL = 0;
-        self.POPPKLNFPPI = 0;
+        self.AKMIHHHJPON = 0;
+        self.unique_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SpaceZooMutateCsReq {
         static instance: SpaceZooMutateCsReq = SpaceZooMutateCsReq {
-            LGBJLFEMFOL: 0,
-            POPPKLNFPPI: 0,
+            AKMIHHHJPON: 0,
+            unique_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for SpaceZooMutateCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19SpaceZooMutateCsReq.proto\"Y\n\x13SpaceZooMutateCsReq\x12\x20\n\
-    \x0bLGBJLFEMFOL\x18\x01\x20\x01(\rR\x0bLGBJLFEMFOL\x12\x20\n\x0bPOPPKLNF\
-    PPI\x18\t\x20\x01(\rR\x0bPOPPKLNFPPIb\x06proto3\
+    \n\x19SpaceZooMutateCsReq.proto\"T\n\x13SpaceZooMutateCsReq\x12\x20\n\
+    \x0bAKMIHHHJPON\x18\x04\x20\x01(\rR\x0bAKMIHHHJPON\x12\x1b\n\tunique_id\
+    \x18\t\x20\x01(\rR\x08uniqueIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

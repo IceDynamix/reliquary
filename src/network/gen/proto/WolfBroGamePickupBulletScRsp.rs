@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct WolfBroGamePickupBulletScRsp {
     // message fields
-    // @@protoc_insertion_point(field:WolfBroGamePickupBulletScRsp.FCMEOJOJIDF)
-    pub FCMEOJOJIDF: ::protobuf::MessageField<super::CDEEDFGAJCP::CDEEDFGAJCP>,
-    // @@protoc_insertion_point(field:WolfBroGamePickupBulletScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:WolfBroGamePickupBulletScRsp.LKHDJHFPNLH)
+    pub LKHDJHFPNLH: ::protobuf::MessageField<super::AIOABIIGFKO::AIOABIIGFKO>,
+    // @@protoc_insertion_point(field:WolfBroGamePickupBulletScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:WolfBroGamePickupBulletScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl WolfBroGamePickupBulletScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CDEEDFGAJCP::CDEEDFGAJCP>(
-            "FCMEOJOJIDF",
-            |m: &WolfBroGamePickupBulletScRsp| { &m.FCMEOJOJIDF },
-            |m: &mut WolfBroGamePickupBulletScRsp| { &mut m.FCMEOJOJIDF },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AIOABIIGFKO::AIOABIIGFKO>(
+            "LKHDJHFPNLH",
+            |m: &WolfBroGamePickupBulletScRsp| { &m.LKHDJHFPNLH },
+            |m: &mut WolfBroGamePickupBulletScRsp| { &mut m.LKHDJHFPNLH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &WolfBroGamePickupBulletScRsp| { &m.ADADHIHDHJC },
-            |m: &mut WolfBroGamePickupBulletScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &WolfBroGamePickupBulletScRsp| { &m.retcode },
+            |m: &mut WolfBroGamePickupBulletScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<WolfBroGamePickupBulletScRsp>(
             "WolfBroGamePickupBulletScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for WolfBroGamePickupBulletScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FCMEOJOJIDF)?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LKHDJHFPNLH)?;
                 },
-                8 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                56 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,12 +98,12 @@ impl ::protobuf::Message for WolfBroGamePickupBulletScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.FCMEOJOJIDF.as_ref() {
+        if let Some(v) = self.LKHDJHFPNLH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for WolfBroGamePickupBulletScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.FCMEOJOJIDF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if let Some(v) = self.LKHDJHFPNLH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(1, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(7, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for WolfBroGamePickupBulletScRsp {
     }
 
     fn clear(&mut self) {
-        self.FCMEOJOJIDF.clear();
-        self.ADADHIHDHJC = 0;
+        self.LKHDJHFPNLH.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static WolfBroGamePickupBulletScRsp {
         static instance: WolfBroGamePickupBulletScRsp = WolfBroGamePickupBulletScRsp {
-            FCMEOJOJIDF: ::protobuf::MessageField::none(),
-            ADADHIHDHJC: 0,
+            LKHDJHFPNLH: ::protobuf::MessageField::none(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for WolfBroGamePickupBulletScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"WolfBroGamePickupBulletScRsp.proto\x1a\x11CDEEDFGAJCP.proto\"p\n\x1c\
-    WolfBroGamePickupBulletScRsp\x12.\n\x0bFCMEOJOJIDF\x18\t\x20\x01(\x0b2\
-    \x0c.CDEEDFGAJCPR\x0bFCMEOJOJIDF\x12\x20\n\x0bADADHIHDHJC\x18\x01\x20\
-    \x01(\rR\x0bADADHIHDHJCb\x06proto3\
+    \n\"WolfBroGamePickupBulletScRsp.proto\x1a\x11AIOABIIGFKO.proto\"h\n\x1c\
+    WolfBroGamePickupBulletScRsp\x12.\n\x0bLKHDJHFPNLH\x18\x0f\x20\x01(\x0b2\
+    \x0c.AIOABIIGFKOR\x0bLKHDJHFPNLH\x12\x18\n\x07retcode\x18\x07\x20\x01(\r\
+    R\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::CDEEDFGAJCP::file_descriptor().clone());
+            deps.push(super::AIOABIIGFKO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(WolfBroGamePickupBulletScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

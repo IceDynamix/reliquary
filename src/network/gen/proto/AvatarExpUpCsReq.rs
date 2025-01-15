@@ -31,8 +31,8 @@ pub struct AvatarExpUpCsReq {
     // message fields
     // @@protoc_insertion_point(field:AvatarExpUpCsReq.base_avatar_id)
     pub base_avatar_id: u32,
-    // @@protoc_insertion_point(field:AvatarExpUpCsReq.item_cost_list)
-    pub item_cost_list: ::protobuf::MessageField<super::ItemCostList::ItemCostList>,
+    // @@protoc_insertion_point(field:AvatarExpUpCsReq.CODPOGAFOMI)
+    pub CODPOGAFOMI: ::protobuf::MessageField<super::LFKJBBFJDKN::LFKJBBFJDKN>,
     // special fields
     // @@protoc_insertion_point(special_field:AvatarExpUpCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,10 +57,10 @@ impl AvatarExpUpCsReq {
             |m: &AvatarExpUpCsReq| { &m.base_avatar_id },
             |m: &mut AvatarExpUpCsReq| { &mut m.base_avatar_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostList::ItemCostList>(
-            "item_cost_list",
-            |m: &AvatarExpUpCsReq| { &m.item_cost_list },
-            |m: &mut AvatarExpUpCsReq| { &mut m.item_cost_list },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LFKJBBFJDKN::LFKJBBFJDKN>(
+            "CODPOGAFOMI",
+            |m: &AvatarExpUpCsReq| { &m.CODPOGAFOMI },
+            |m: &mut AvatarExpUpCsReq| { &mut m.CODPOGAFOMI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AvatarExpUpCsReq>(
             "AvatarExpUpCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for AvatarExpUpCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                16 => {
                     self.base_avatar_id = is.read_uint32()?;
                 },
                 82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_cost_list)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CODPOGAFOMI)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -99,9 +99,9 @@ impl ::protobuf::Message for AvatarExpUpCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.base_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.base_avatar_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.base_avatar_id);
         }
-        if let Some(v) = self.item_cost_list.as_ref() {
+        if let Some(v) = self.CODPOGAFOMI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -112,9 +112,9 @@ impl ::protobuf::Message for AvatarExpUpCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.base_avatar_id != 0 {
-            os.write_uint32(6, self.base_avatar_id)?;
+            os.write_uint32(2, self.base_avatar_id)?;
         }
-        if let Some(v) = self.item_cost_list.as_ref() {
+        if let Some(v) = self.CODPOGAFOMI.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -135,14 +135,14 @@ impl ::protobuf::Message for AvatarExpUpCsReq {
 
     fn clear(&mut self) {
         self.base_avatar_id = 0;
-        self.item_cost_list.clear();
+        self.CODPOGAFOMI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AvatarExpUpCsReq {
         static instance: AvatarExpUpCsReq = AvatarExpUpCsReq {
             base_avatar_id: 0,
-            item_cost_list: ::protobuf::MessageField::none(),
+            CODPOGAFOMI: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for AvatarExpUpCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16AvatarExpUpCsReq.proto\x1a\x12ItemCostList.proto\"m\n\x10AvatarExp\
-    UpCsReq\x12$\n\x0ebase_avatar_id\x18\x06\x20\x01(\rR\x0cbaseAvatarId\x12\
-    3\n\x0eitem_cost_list\x18\n\x20\x01(\x0b2\r.ItemCostListR\x0citemCostLis\
-    tB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x16AvatarExpUpCsReq.proto\x1a\x11LFKJBBFJDKN.proto\"h\n\x10AvatarExpU\
+    pCsReq\x12$\n\x0ebase_avatar_id\x18\x02\x20\x01(\rR\x0cbaseAvatarId\x12.\
+    \n\x0bCODPOGAFOMI\x18\n\x20\x01(\x0b2\x0c.LFKJBBFJDKNR\x0bCODPOGAFOMIb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ItemCostList::file_descriptor().clone());
+            deps.push(super::LFKJBBFJDKN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(AvatarExpUpCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

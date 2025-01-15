@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TextJoinSaveCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TextJoinSaveCsReq.PGHNMIDJOAC)
-    pub PGHNMIDJOAC: u32,
-    // @@protoc_insertion_point(field:TextJoinSaveCsReq.EANJBBEKKII)
-    pub EANJBBEKKII: ::std::string::String,
-    // @@protoc_insertion_point(field:TextJoinSaveCsReq.NKEANFPKDMN)
-    pub NKEANFPKDMN: u32,
+    // @@protoc_insertion_point(field:TextJoinSaveCsReq.LDHIMDPKBJJ)
+    pub LDHIMDPKBJJ: u32,
+    // @@protoc_insertion_point(field:TextJoinSaveCsReq.GMEIABHHGJH)
+    pub GMEIABHHGJH: ::std::string::String,
+    // @@protoc_insertion_point(field:TextJoinSaveCsReq.BDONIIOMCDH)
+    pub BDONIIOMCDH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TextJoinSaveCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl TextJoinSaveCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PGHNMIDJOAC",
-            |m: &TextJoinSaveCsReq| { &m.PGHNMIDJOAC },
-            |m: &mut TextJoinSaveCsReq| { &mut m.PGHNMIDJOAC },
+            "LDHIMDPKBJJ",
+            |m: &TextJoinSaveCsReq| { &m.LDHIMDPKBJJ },
+            |m: &mut TextJoinSaveCsReq| { &mut m.LDHIMDPKBJJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EANJBBEKKII",
-            |m: &TextJoinSaveCsReq| { &m.EANJBBEKKII },
-            |m: &mut TextJoinSaveCsReq| { &mut m.EANJBBEKKII },
+            "GMEIABHHGJH",
+            |m: &TextJoinSaveCsReq| { &m.GMEIABHHGJH },
+            |m: &mut TextJoinSaveCsReq| { &mut m.GMEIABHHGJH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NKEANFPKDMN",
-            |m: &TextJoinSaveCsReq| { &m.NKEANFPKDMN },
-            |m: &mut TextJoinSaveCsReq| { &mut m.NKEANFPKDMN },
+            "BDONIIOMCDH",
+            |m: &TextJoinSaveCsReq| { &m.BDONIIOMCDH },
+            |m: &mut TextJoinSaveCsReq| { &mut m.BDONIIOMCDH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TextJoinSaveCsReq>(
             "TextJoinSaveCsReq",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for TextJoinSaveCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.PGHNMIDJOAC = is.read_uint32()?;
+                32 => {
+                    self.LDHIMDPKBJJ = is.read_uint32()?;
                 },
-                10 => {
-                    self.EANJBBEKKII = is.read_string()?;
+                90 => {
+                    self.GMEIABHHGJH = is.read_string()?;
                 },
-                80 => {
-                    self.NKEANFPKDMN = is.read_uint32()?;
+                112 => {
+                    self.BDONIIOMCDH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for TextJoinSaveCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PGHNMIDJOAC != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.PGHNMIDJOAC);
+        if self.LDHIMDPKBJJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.LDHIMDPKBJJ);
         }
-        if !self.EANJBBEKKII.is_empty() {
-            my_size += ::protobuf::rt::string_size(1, &self.EANJBBEKKII);
+        if !self.GMEIABHHGJH.is_empty() {
+            my_size += ::protobuf::rt::string_size(11, &self.GMEIABHHGJH);
         }
-        if self.NKEANFPKDMN != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.NKEANFPKDMN);
+        if self.BDONIIOMCDH != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.BDONIIOMCDH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for TextJoinSaveCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PGHNMIDJOAC != 0 {
-            os.write_uint32(11, self.PGHNMIDJOAC)?;
+        if self.LDHIMDPKBJJ != 0 {
+            os.write_uint32(4, self.LDHIMDPKBJJ)?;
         }
-        if !self.EANJBBEKKII.is_empty() {
-            os.write_string(1, &self.EANJBBEKKII)?;
+        if !self.GMEIABHHGJH.is_empty() {
+            os.write_string(11, &self.GMEIABHHGJH)?;
         }
-        if self.NKEANFPKDMN != 0 {
-            os.write_uint32(10, self.NKEANFPKDMN)?;
+        if self.BDONIIOMCDH != 0 {
+            os.write_uint32(14, self.BDONIIOMCDH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for TextJoinSaveCsReq {
     }
 
     fn clear(&mut self) {
-        self.PGHNMIDJOAC = 0;
-        self.EANJBBEKKII.clear();
-        self.NKEANFPKDMN = 0;
+        self.LDHIMDPKBJJ = 0;
+        self.GMEIABHHGJH.clear();
+        self.BDONIIOMCDH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TextJoinSaveCsReq {
         static instance: TextJoinSaveCsReq = TextJoinSaveCsReq {
-            PGHNMIDJOAC: 0,
-            EANJBBEKKII: ::std::string::String::new(),
-            NKEANFPKDMN: 0,
+            LDHIMDPKBJJ: 0,
+            GMEIABHHGJH: ::std::string::String::new(),
+            BDONIIOMCDH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for TextJoinSaveCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17TextJoinSaveCsReq.proto\"y\n\x11TextJoinSaveCsReq\x12\x20\n\x0bPGH\
-    NMIDJOAC\x18\x0b\x20\x01(\rR\x0bPGHNMIDJOAC\x12\x20\n\x0bEANJBBEKKII\x18\
-    \x01\x20\x01(\tR\x0bEANJBBEKKII\x12\x20\n\x0bNKEANFPKDMN\x18\n\x20\x01(\
-    \rR\x0bNKEANFPKDMNb\x06proto3\
+    \n\x17TextJoinSaveCsReq.proto\"y\n\x11TextJoinSaveCsReq\x12\x20\n\x0bLDH\
+    IMDPKBJJ\x18\x04\x20\x01(\rR\x0bLDHIMDPKBJJ\x12\x20\n\x0bGMEIABHHGJH\x18\
+    \x0b\x20\x01(\tR\x0bGMEIABHHGJH\x12\x20\n\x0bBDONIIOMCDH\x18\x0e\x20\x01\
+    (\rR\x0bBDONIIOMCDHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

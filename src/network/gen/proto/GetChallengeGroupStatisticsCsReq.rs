@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetChallengeGroupStatisticsCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetChallengeGroupStatisticsCsReq.group_id)
-    pub group_id: u32,
+    // @@protoc_insertion_point(field:GetChallengeGroupStatisticsCsReq.IOPPGEGDHGL)
+    pub IOPPGEGDHGL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetChallengeGroupStatisticsCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl GetChallengeGroupStatisticsCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "group_id",
-            |m: &GetChallengeGroupStatisticsCsReq| { &m.group_id },
-            |m: &mut GetChallengeGroupStatisticsCsReq| { &mut m.group_id },
+            "IOPPGEGDHGL",
+            |m: &GetChallengeGroupStatisticsCsReq| { &m.IOPPGEGDHGL },
+            |m: &mut GetChallengeGroupStatisticsCsReq| { &mut m.IOPPGEGDHGL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetChallengeGroupStatisticsCsReq>(
             "GetChallengeGroupStatisticsCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for GetChallengeGroupStatisticsCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.group_id = is.read_uint32()?;
+                104 => {
+                    self.IOPPGEGDHGL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for GetChallengeGroupStatisticsCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.group_id);
+        if self.IOPPGEGDHGL != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.IOPPGEGDHGL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for GetChallengeGroupStatisticsCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.group_id != 0 {
-            os.write_uint32(5, self.group_id)?;
+        if self.IOPPGEGDHGL != 0 {
+            os.write_uint32(13, self.IOPPGEGDHGL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for GetChallengeGroupStatisticsCsReq {
     }
 
     fn clear(&mut self) {
-        self.group_id = 0;
+        self.IOPPGEGDHGL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetChallengeGroupStatisticsCsReq {
         static instance: GetChallengeGroupStatisticsCsReq = GetChallengeGroupStatisticsCsReq {
-            group_id: 0,
+            IOPPGEGDHGL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for GetChallengeGroupStatisticsCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n&GetChallengeGroupStatisticsCsReq.proto\"=\n\x20GetChallengeGroupStati\
-    sticsCsReq\x12\x19\n\x08group_id\x18\x05\x20\x01(\rR\x07groupIdB\x15\n\
-    \x13emu.lunarcore.protob\x06proto3\
+    \n&GetChallengeGroupStatisticsCsReq.proto\"D\n\x20GetChallengeGroupStati\
+    sticsCsReq\x12\x20\n\x0bIOPPGEGDHGL\x18\r\x20\x01(\rR\x0bIOPPGEGDHGLb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

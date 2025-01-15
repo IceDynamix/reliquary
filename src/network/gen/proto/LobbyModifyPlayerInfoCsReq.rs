@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LobbyModifyPlayerInfoCsReq {
     // message fields
-    // @@protoc_insertion_point(field:LobbyModifyPlayerInfoCsReq.MPNJPFDCBDG)
-    pub MPNJPFDCBDG: ::protobuf::EnumOrUnknown<super::LobbyModifyType::LobbyModifyType>,
-    // @@protoc_insertion_point(field:LobbyModifyPlayerInfoCsReq.PDLAHDEBOIL)
-    pub PDLAHDEBOIL: ::protobuf::MessageField<super::JCEDNEMPMAJ::JCEDNEMPMAJ>,
-    // @@protoc_insertion_point(field:LobbyModifyPlayerInfoCsReq.NLNGJCJLDFO)
-    pub NLNGJCJLDFO: u32,
+    // @@protoc_insertion_point(field:LobbyModifyPlayerInfoCsReq.GOLCPAPLOIG)
+    pub GOLCPAPLOIG: u32,
+    // @@protoc_insertion_point(field:LobbyModifyPlayerInfoCsReq.LAJONMOIOFH)
+    pub LAJONMOIOFH: ::protobuf::MessageField<super::EMPBNBJLDNI::EMPBNBJLDNI>,
+    // @@protoc_insertion_point(field:LobbyModifyPlayerInfoCsReq.slot)
+    pub slot: ::protobuf::EnumOrUnknown<super::LobbyModifyType::LobbyModifyType>,
     // special fields
     // @@protoc_insertion_point(special_field:LobbyModifyPlayerInfoCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl LobbyModifyPlayerInfoCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MPNJPFDCBDG",
-            |m: &LobbyModifyPlayerInfoCsReq| { &m.MPNJPFDCBDG },
-            |m: &mut LobbyModifyPlayerInfoCsReq| { &mut m.MPNJPFDCBDG },
+            "GOLCPAPLOIG",
+            |m: &LobbyModifyPlayerInfoCsReq| { &m.GOLCPAPLOIG },
+            |m: &mut LobbyModifyPlayerInfoCsReq| { &mut m.GOLCPAPLOIG },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JCEDNEMPMAJ::JCEDNEMPMAJ>(
-            "PDLAHDEBOIL",
-            |m: &LobbyModifyPlayerInfoCsReq| { &m.PDLAHDEBOIL },
-            |m: &mut LobbyModifyPlayerInfoCsReq| { &mut m.PDLAHDEBOIL },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EMPBNBJLDNI::EMPBNBJLDNI>(
+            "LAJONMOIOFH",
+            |m: &LobbyModifyPlayerInfoCsReq| { &m.LAJONMOIOFH },
+            |m: &mut LobbyModifyPlayerInfoCsReq| { &mut m.LAJONMOIOFH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NLNGJCJLDFO",
-            |m: &LobbyModifyPlayerInfoCsReq| { &m.NLNGJCJLDFO },
-            |m: &mut LobbyModifyPlayerInfoCsReq| { &mut m.NLNGJCJLDFO },
+            "slot",
+            |m: &LobbyModifyPlayerInfoCsReq| { &m.slot },
+            |m: &mut LobbyModifyPlayerInfoCsReq| { &mut m.slot },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LobbyModifyPlayerInfoCsReq>(
             "LobbyModifyPlayerInfoCsReq",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for LobbyModifyPlayerInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.MPNJPFDCBDG = is.read_enum_or_unknown()?;
+                88 => {
+                    self.GOLCPAPLOIG = is.read_uint32()?;
                 },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PDLAHDEBOIL)?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LAJONMOIOFH)?;
                 },
-                104 => {
-                    self.NLNGJCJLDFO = is.read_uint32()?;
+                48 => {
+                    self.slot = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +108,15 @@ impl ::protobuf::Message for LobbyModifyPlayerInfoCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MPNJPFDCBDG != ::protobuf::EnumOrUnknown::new(super::LobbyModifyType::LobbyModifyType::LobbyModifyType_None) {
-            my_size += ::protobuf::rt::int32_size(1, self.MPNJPFDCBDG.value());
+        if self.GOLCPAPLOIG != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.GOLCPAPLOIG);
         }
-        if let Some(v) = self.PDLAHDEBOIL.as_ref() {
+        if let Some(v) = self.LAJONMOIOFH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.NLNGJCJLDFO != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.NLNGJCJLDFO);
+        if self.slot != ::protobuf::EnumOrUnknown::new(super::LobbyModifyType::LobbyModifyType::LobbyModifyType_None) {
+            my_size += ::protobuf::rt::int32_size(6, self.slot.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for LobbyModifyPlayerInfoCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MPNJPFDCBDG != ::protobuf::EnumOrUnknown::new(super::LobbyModifyType::LobbyModifyType::LobbyModifyType_None) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.MPNJPFDCBDG))?;
+        if self.GOLCPAPLOIG != 0 {
+            os.write_uint32(11, self.GOLCPAPLOIG)?;
         }
-        if let Some(v) = self.PDLAHDEBOIL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        if let Some(v) = self.LAJONMOIOFH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
-        if self.NLNGJCJLDFO != 0 {
-            os.write_uint32(13, self.NLNGJCJLDFO)?;
+        if self.slot != ::protobuf::EnumOrUnknown::new(super::LobbyModifyType::LobbyModifyType::LobbyModifyType_None) {
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.slot))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for LobbyModifyPlayerInfoCsReq {
     }
 
     fn clear(&mut self) {
-        self.MPNJPFDCBDG = ::protobuf::EnumOrUnknown::new(super::LobbyModifyType::LobbyModifyType::LobbyModifyType_None);
-        self.PDLAHDEBOIL.clear();
-        self.NLNGJCJLDFO = 0;
+        self.GOLCPAPLOIG = 0;
+        self.LAJONMOIOFH.clear();
+        self.slot = ::protobuf::EnumOrUnknown::new(super::LobbyModifyType::LobbyModifyType::LobbyModifyType_None);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LobbyModifyPlayerInfoCsReq {
         static instance: LobbyModifyPlayerInfoCsReq = LobbyModifyPlayerInfoCsReq {
-            MPNJPFDCBDG: ::protobuf::EnumOrUnknown::from_i32(0),
-            PDLAHDEBOIL: ::protobuf::MessageField::none(),
-            NLNGJCJLDFO: 0,
+            GOLCPAPLOIG: 0,
+            LAJONMOIOFH: ::protobuf::MessageField::none(),
+            slot: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,12 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for LobbyModifyPlayerInfoCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20LobbyModifyPlayerInfoCsReq.proto\x1a\x11JCEDNEMPMAJ.proto\x1a\x15L\
-    obbyModifyType.proto\"\xa2\x01\n\x1aLobbyModifyPlayerInfoCsReq\x122\n\
-    \x0bMPNJPFDCBDG\x18\x01\x20\x01(\x0e2\x10.LobbyModifyTypeR\x0bMPNJPFDCBD\
-    G\x12.\n\x0bPDLAHDEBOIL\x18\x05\x20\x01(\x0b2\x0c.JCEDNEMPMAJR\x0bPDLAHD\
-    EBOIL\x12\x20\n\x0bNLNGJCJLDFO\x18\r\x20\x01(\rR\x0bNLNGJCJLDFOb\x06prot\
-    o3\
+    \n\x20LobbyModifyPlayerInfoCsReq.proto\x1a\x11EMPBNBJLDNI.proto\x1a\x15L\
+    obbyModifyType.proto\"\x94\x01\n\x1aLobbyModifyPlayerInfoCsReq\x12\x20\n\
+    \x0bGOLCPAPLOIG\x18\x0b\x20\x01(\rR\x0bGOLCPAPLOIG\x12.\n\x0bLAJONMOIOFH\
+    \x18\x0f\x20\x01(\x0b2\x0c.EMPBNBJLDNIR\x0bLAJONMOIOFH\x12$\n\x04slot\
+    \x18\x06\x20\x01(\x0e2\x10.LobbyModifyTypeR\x04slotb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -208,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::JCEDNEMPMAJ::file_descriptor().clone());
+            deps.push(super::EMPBNBJLDNI::file_descriptor().clone());
             deps.push(super::LobbyModifyType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(LobbyModifyPlayerInfoCsReq::generated_message_descriptor_data());

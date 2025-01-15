@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetPlayerInfoCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetPlayerInfoCsReq.PBFJCNKOEAM)
-    pub PBFJCNKOEAM: bool,
-    // @@protoc_insertion_point(field:SetPlayerInfoCsReq.ANKOFOLEEBL)
-    pub ANKOFOLEEBL: ::protobuf::EnumOrUnknown<super::Gender::Gender>,
-    // @@protoc_insertion_point(field:SetPlayerInfoCsReq.NIDFCKMAAEH)
-    pub NIDFCKMAAEH: ::std::string::String,
+    // @@protoc_insertion_point(field:SetPlayerInfoCsReq.MPOHAEFEHOE)
+    pub MPOHAEFEHOE: bool,
+    // @@protoc_insertion_point(field:SetPlayerInfoCsReq.FFHMJJADIBG)
+    pub FFHMJJADIBG: ::std::string::String,
+    // @@protoc_insertion_point(field:SetPlayerInfoCsReq.JGDBLKLAGNL)
+    pub JGDBLKLAGNL: ::protobuf::EnumOrUnknown<super::Gender::Gender>,
     // special fields
     // @@protoc_insertion_point(special_field:SetPlayerInfoCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl SetPlayerInfoCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PBFJCNKOEAM",
-            |m: &SetPlayerInfoCsReq| { &m.PBFJCNKOEAM },
-            |m: &mut SetPlayerInfoCsReq| { &mut m.PBFJCNKOEAM },
+            "MPOHAEFEHOE",
+            |m: &SetPlayerInfoCsReq| { &m.MPOHAEFEHOE },
+            |m: &mut SetPlayerInfoCsReq| { &mut m.MPOHAEFEHOE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ANKOFOLEEBL",
-            |m: &SetPlayerInfoCsReq| { &m.ANKOFOLEEBL },
-            |m: &mut SetPlayerInfoCsReq| { &mut m.ANKOFOLEEBL },
+            "FFHMJJADIBG",
+            |m: &SetPlayerInfoCsReq| { &m.FFHMJJADIBG },
+            |m: &mut SetPlayerInfoCsReq| { &mut m.FFHMJJADIBG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NIDFCKMAAEH",
-            |m: &SetPlayerInfoCsReq| { &m.NIDFCKMAAEH },
-            |m: &mut SetPlayerInfoCsReq| { &mut m.NIDFCKMAAEH },
+            "JGDBLKLAGNL",
+            |m: &SetPlayerInfoCsReq| { &m.JGDBLKLAGNL },
+            |m: &mut SetPlayerInfoCsReq| { &mut m.JGDBLKLAGNL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetPlayerInfoCsReq>(
             "SetPlayerInfoCsReq",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for SetPlayerInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.PBFJCNKOEAM = is.read_bool()?;
+                96 => {
+                    self.MPOHAEFEHOE = is.read_bool()?;
                 },
-                72 => {
-                    self.ANKOFOLEEBL = is.read_enum_or_unknown()?;
+                26 => {
+                    self.FFHMJJADIBG = is.read_string()?;
                 },
-                106 => {
-                    self.NIDFCKMAAEH = is.read_string()?;
+                32 => {
+                    self.JGDBLKLAGNL = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for SetPlayerInfoCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PBFJCNKOEAM != false {
+        if self.MPOHAEFEHOE != false {
             my_size += 1 + 1;
         }
-        if self.ANKOFOLEEBL != ::protobuf::EnumOrUnknown::new(super::Gender::Gender::GenderNone) {
-            my_size += ::protobuf::rt::int32_size(9, self.ANKOFOLEEBL.value());
+        if !self.FFHMJJADIBG.is_empty() {
+            my_size += ::protobuf::rt::string_size(3, &self.FFHMJJADIBG);
         }
-        if !self.NIDFCKMAAEH.is_empty() {
-            my_size += ::protobuf::rt::string_size(13, &self.NIDFCKMAAEH);
+        if self.JGDBLKLAGNL != ::protobuf::EnumOrUnknown::new(super::Gender::Gender::GenderNone) {
+            my_size += ::protobuf::rt::int32_size(4, self.JGDBLKLAGNL.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for SetPlayerInfoCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PBFJCNKOEAM != false {
-            os.write_bool(5, self.PBFJCNKOEAM)?;
+        if self.MPOHAEFEHOE != false {
+            os.write_bool(12, self.MPOHAEFEHOE)?;
         }
-        if self.ANKOFOLEEBL != ::protobuf::EnumOrUnknown::new(super::Gender::Gender::GenderNone) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.ANKOFOLEEBL))?;
+        if !self.FFHMJJADIBG.is_empty() {
+            os.write_string(3, &self.FFHMJJADIBG)?;
         }
-        if !self.NIDFCKMAAEH.is_empty() {
-            os.write_string(13, &self.NIDFCKMAAEH)?;
+        if self.JGDBLKLAGNL != ::protobuf::EnumOrUnknown::new(super::Gender::Gender::GenderNone) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.JGDBLKLAGNL))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for SetPlayerInfoCsReq {
     }
 
     fn clear(&mut self) {
-        self.PBFJCNKOEAM = false;
-        self.ANKOFOLEEBL = ::protobuf::EnumOrUnknown::new(super::Gender::Gender::GenderNone);
-        self.NIDFCKMAAEH.clear();
+        self.MPOHAEFEHOE = false;
+        self.FFHMJJADIBG.clear();
+        self.JGDBLKLAGNL = ::protobuf::EnumOrUnknown::new(super::Gender::Gender::GenderNone);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetPlayerInfoCsReq {
         static instance: SetPlayerInfoCsReq = SetPlayerInfoCsReq {
-            PBFJCNKOEAM: false,
-            ANKOFOLEEBL: ::protobuf::EnumOrUnknown::from_i32(0),
-            NIDFCKMAAEH: ::std::string::String::new(),
+            MPOHAEFEHOE: false,
+            FFHMJJADIBG: ::std::string::String::new(),
+            JGDBLKLAGNL: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for SetPlayerInfoCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18SetPlayerInfoCsReq.proto\x1a\x0cGender.proto\"\x83\x01\n\x12SetPla\
-    yerInfoCsReq\x12\x20\n\x0bPBFJCNKOEAM\x18\x05\x20\x01(\x08R\x0bPBFJCNKOE\
-    AM\x12)\n\x0bANKOFOLEEBL\x18\t\x20\x01(\x0e2\x07.GenderR\x0bANKOFOLEEBL\
-    \x12\x20\n\x0bNIDFCKMAAEH\x18\r\x20\x01(\tR\x0bNIDFCKMAAEHb\x06proto3\
+    yerInfoCsReq\x12\x20\n\x0bMPOHAEFEHOE\x18\x0c\x20\x01(\x08R\x0bMPOHAEFEH\
+    OE\x12\x20\n\x0bFFHMJJADIBG\x18\x03\x20\x01(\tR\x0bFFHMJJADIBG\x12)\n\
+    \x0bJGDBLKLAGNL\x18\x04\x20\x01(\x0e2\x07.GenderR\x0bJGDBLKLAGNLb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

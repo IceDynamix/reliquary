@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetRndOptionScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetRndOptionScRsp.BGANMDDKKNG)
-    pub BGANMDDKKNG: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetRndOptionScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:GetRndOptionScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetRndOptionScRsp.KMMKEKKBCMF)
+    pub KMMKEKKBCMF: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GetRndOptionScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl GetRndOptionScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BGANMDDKKNG",
-            |m: &GetRndOptionScRsp| { &m.BGANMDDKKNG },
-            |m: &mut GetRndOptionScRsp| { &mut m.BGANMDDKKNG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &GetRndOptionScRsp| { &m.ADADHIHDHJC },
-            |m: &mut GetRndOptionScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &GetRndOptionScRsp| { &m.retcode },
+            |m: &mut GetRndOptionScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "KMMKEKKBCMF",
+            |m: &GetRndOptionScRsp| { &m.KMMKEKKBCMF },
+            |m: &mut GetRndOptionScRsp| { &mut m.KMMKEKKBCMF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetRndOptionScRsp>(
             "GetRndOptionScRsp",
@@ -80,14 +80,14 @@ impl ::protobuf::Message for GetRndOptionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.BGANMDDKKNG)?;
+                16 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                24 => {
-                    self.BGANMDDKKNG.push(is.read_uint32()?);
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.KMMKEKKBCMF)?;
                 },
-                48 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                56 => {
+                    self.KMMKEKKBCMF.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,24 +101,24 @@ impl ::protobuf::Message for GetRndOptionScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.BGANMDDKKNG {
-            my_size += ::protobuf::rt::uint32_size(3, *value);
-        };
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
+        for value in &self.KMMKEKKBCMF {
+            my_size += ::protobuf::rt::uint32_size(7, *value);
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.BGANMDDKKNG {
-            os.write_uint32(3, *v)?;
-        };
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(6, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(2, self.retcode)?;
         }
+        for v in &self.KMMKEKKBCMF {
+            os.write_uint32(7, *v)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -136,15 +136,15 @@ impl ::protobuf::Message for GetRndOptionScRsp {
     }
 
     fn clear(&mut self) {
-        self.BGANMDDKKNG.clear();
-        self.ADADHIHDHJC = 0;
+        self.retcode = 0;
+        self.KMMKEKKBCMF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetRndOptionScRsp {
         static instance: GetRndOptionScRsp = GetRndOptionScRsp {
-            BGANMDDKKNG: ::std::vec::Vec::new(),
-            ADADHIHDHJC: 0,
+            retcode: 0,
+            KMMKEKKBCMF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -169,9 +169,9 @@ impl ::protobuf::reflect::ProtobufValue for GetRndOptionScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17GetRndOptionScRsp.proto\"W\n\x11GetRndOptionScRsp\x12\x20\n\x0bBGA\
-    NMDDKKNG\x18\x03\x20\x03(\rR\x0bBGANMDDKKNG\x12\x20\n\x0bADADHIHDHJC\x18\
-    \x06\x20\x01(\rR\x0bADADHIHDHJCb\x06proto3\
+    \n\x17GetRndOptionScRsp.proto\"O\n\x11GetRndOptionScRsp\x12\x18\n\x07ret\
+    code\x18\x02\x20\x01(\rR\x07retcode\x12\x20\n\x0bKMMKEKKBCMF\x18\x07\x20\
+    \x03(\rR\x0bKMMKEKKBCMFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

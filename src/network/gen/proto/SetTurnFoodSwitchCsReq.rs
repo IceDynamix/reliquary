@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetTurnFoodSwitchCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetTurnFoodSwitchCsReq.LOKHMBEONGM)
-    pub LOKHMBEONGM: bool,
-    // @@protoc_insertion_point(field:SetTurnFoodSwitchCsReq.GKJMGGJJCFI)
-    pub GKJMGGJJCFI: ::protobuf::EnumOrUnknown<super::TurnFoodSwitch::TurnFoodSwitch>,
+    // @@protoc_insertion_point(field:SetTurnFoodSwitchCsReq.DPJEHJCDBCM)
+    pub DPJEHJCDBCM: bool,
+    // @@protoc_insertion_point(field:SetTurnFoodSwitchCsReq.NIFNPBLKJBE)
+    pub NIFNPBLKJBE: ::protobuf::EnumOrUnknown<super::TurnFoodSwitch::TurnFoodSwitch>,
     // special fields
     // @@protoc_insertion_point(special_field:SetTurnFoodSwitchCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl SetTurnFoodSwitchCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LOKHMBEONGM",
-            |m: &SetTurnFoodSwitchCsReq| { &m.LOKHMBEONGM },
-            |m: &mut SetTurnFoodSwitchCsReq| { &mut m.LOKHMBEONGM },
+            "DPJEHJCDBCM",
+            |m: &SetTurnFoodSwitchCsReq| { &m.DPJEHJCDBCM },
+            |m: &mut SetTurnFoodSwitchCsReq| { &mut m.DPJEHJCDBCM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GKJMGGJJCFI",
-            |m: &SetTurnFoodSwitchCsReq| { &m.GKJMGGJJCFI },
-            |m: &mut SetTurnFoodSwitchCsReq| { &mut m.GKJMGGJJCFI },
+            "NIFNPBLKJBE",
+            |m: &SetTurnFoodSwitchCsReq| { &m.NIFNPBLKJBE },
+            |m: &mut SetTurnFoodSwitchCsReq| { &mut m.NIFNPBLKJBE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetTurnFoodSwitchCsReq>(
             "SetTurnFoodSwitchCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for SetTurnFoodSwitchCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.LOKHMBEONGM = is.read_bool()?;
+                8 => {
+                    self.DPJEHJCDBCM = is.read_bool()?;
                 },
-                16 => {
-                    self.GKJMGGJJCFI = is.read_enum_or_unknown()?;
+                56 => {
+                    self.NIFNPBLKJBE = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for SetTurnFoodSwitchCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LOKHMBEONGM != false {
+        if self.DPJEHJCDBCM != false {
             my_size += 1 + 1;
         }
-        if self.GKJMGGJJCFI != ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::TURN_FOOD_SWITCH_NONE) {
-            my_size += ::protobuf::rt::int32_size(2, self.GKJMGGJJCFI.value());
+        if self.NIFNPBLKJBE != ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::TURN_FOOD_SWITCH_NONE) {
+            my_size += ::protobuf::rt::int32_size(7, self.NIFNPBLKJBE.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for SetTurnFoodSwitchCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LOKHMBEONGM != false {
-            os.write_bool(9, self.LOKHMBEONGM)?;
+        if self.DPJEHJCDBCM != false {
+            os.write_bool(1, self.DPJEHJCDBCM)?;
         }
-        if self.GKJMGGJJCFI != ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::TURN_FOOD_SWITCH_NONE) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.GKJMGGJJCFI))?;
+        if self.NIFNPBLKJBE != ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::TURN_FOOD_SWITCH_NONE) {
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.NIFNPBLKJBE))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for SetTurnFoodSwitchCsReq {
     }
 
     fn clear(&mut self) {
-        self.LOKHMBEONGM = false;
-        self.GKJMGGJJCFI = ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::TURN_FOOD_SWITCH_NONE);
+        self.DPJEHJCDBCM = false;
+        self.NIFNPBLKJBE = ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::TURN_FOOD_SWITCH_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetTurnFoodSwitchCsReq {
         static instance: SetTurnFoodSwitchCsReq = SetTurnFoodSwitchCsReq {
-            LOKHMBEONGM: false,
-            GKJMGGJJCFI: ::protobuf::EnumOrUnknown::from_i32(0),
+            DPJEHJCDBCM: false,
+            NIFNPBLKJBE: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for SetTurnFoodSwitchCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cSetTurnFoodSwitchCsReq.proto\x1a\x14TurnFoodSwitch.proto\"m\n\x16S\
-    etTurnFoodSwitchCsReq\x12\x20\n\x0bLOKHMBEONGM\x18\t\x20\x01(\x08R\x0bLO\
-    KHMBEONGM\x121\n\x0bGKJMGGJJCFI\x18\x02\x20\x01(\x0e2\x0f.TurnFoodSwitch\
-    R\x0bGKJMGGJJCFIb\x06proto3\
+    etTurnFoodSwitchCsReq\x12\x20\n\x0bDPJEHJCDBCM\x18\x01\x20\x01(\x08R\x0b\
+    DPJEHJCDBCM\x121\n\x0bNIFNPBLKJBE\x18\x07\x20\x01(\x0e2\x0f.TurnFoodSwit\
+    chR\x0bNIFNPBLKJBEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartTrackPhotoStageScRsp {
     // message fields
-    // @@protoc_insertion_point(field:StartTrackPhotoStageScRsp.DDEHNCDHFEO)
-    pub DDEHNCDHFEO: u32,
-    // @@protoc_insertion_point(field:StartTrackPhotoStageScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:StartTrackPhotoStageScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:StartTrackPhotoStageScRsp.KBEADBLMILM)
+    pub KBEADBLMILM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:StartTrackPhotoStageScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl StartTrackPhotoStageScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DDEHNCDHFEO",
-            |m: &StartTrackPhotoStageScRsp| { &m.DDEHNCDHFEO },
-            |m: &mut StartTrackPhotoStageScRsp| { &mut m.DDEHNCDHFEO },
+            "retcode",
+            |m: &StartTrackPhotoStageScRsp| { &m.retcode },
+            |m: &mut StartTrackPhotoStageScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &StartTrackPhotoStageScRsp| { &m.ADADHIHDHJC },
-            |m: &mut StartTrackPhotoStageScRsp| { &mut m.ADADHIHDHJC },
+            "KBEADBLMILM",
+            |m: &StartTrackPhotoStageScRsp| { &m.KBEADBLMILM },
+            |m: &mut StartTrackPhotoStageScRsp| { &mut m.KBEADBLMILM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartTrackPhotoStageScRsp>(
             "StartTrackPhotoStageScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for StartTrackPhotoStageScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.DDEHNCDHFEO = is.read_uint32()?;
+                104 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                120 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                96 => {
+                    self.KBEADBLMILM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for StartTrackPhotoStageScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DDEHNCDHFEO != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.DDEHNCDHFEO);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.ADADHIHDHJC);
+        if self.KBEADBLMILM != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.KBEADBLMILM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for StartTrackPhotoStageScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DDEHNCDHFEO != 0 {
-            os.write_uint32(2, self.DDEHNCDHFEO)?;
+        if self.retcode != 0 {
+            os.write_uint32(13, self.retcode)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(15, self.ADADHIHDHJC)?;
+        if self.KBEADBLMILM != 0 {
+            os.write_uint32(12, self.KBEADBLMILM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for StartTrackPhotoStageScRsp {
     }
 
     fn clear(&mut self) {
-        self.DDEHNCDHFEO = 0;
-        self.ADADHIHDHJC = 0;
+        self.retcode = 0;
+        self.KBEADBLMILM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartTrackPhotoStageScRsp {
         static instance: StartTrackPhotoStageScRsp = StartTrackPhotoStageScRsp {
-            DDEHNCDHFEO: 0,
-            ADADHIHDHJC: 0,
+            retcode: 0,
+            KBEADBLMILM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for StartTrackPhotoStageScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fStartTrackPhotoStageScRsp.proto\"_\n\x19StartTrackPhotoStageScRsp\
-    \x12\x20\n\x0bDDEHNCDHFEO\x18\x02\x20\x01(\rR\x0bDDEHNCDHFEO\x12\x20\n\
-    \x0bADADHIHDHJC\x18\x0f\x20\x01(\rR\x0bADADHIHDHJCb\x06proto3\
+    \n\x1fStartTrackPhotoStageScRsp.proto\"W\n\x19StartTrackPhotoStageScRsp\
+    \x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x12\x20\n\x0bKBEADBLM\
+    ILM\x18\x0c\x20\x01(\rR\x0bKBEADBLMILMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

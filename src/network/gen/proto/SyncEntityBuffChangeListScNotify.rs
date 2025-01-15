@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncEntityBuffChangeListScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncEntityBuffChangeListScNotify.entity_buff_info_list)
-    pub entity_buff_info_list: ::std::vec::Vec<super::EntityBuffChangeInfo::EntityBuffChangeInfo>,
+    // @@protoc_insertion_point(field:SyncEntityBuffChangeListScNotify.FDPFIAIHACM)
+    pub FDPFIAIHACM: ::std::vec::Vec<super::DKLHBHCIBNO::DKLHBHCIBNO>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncEntityBuffChangeListScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl SyncEntityBuffChangeListScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "entity_buff_info_list",
-            |m: &SyncEntityBuffChangeListScNotify| { &m.entity_buff_info_list },
-            |m: &mut SyncEntityBuffChangeListScNotify| { &mut m.entity_buff_info_list },
+            "FDPFIAIHACM",
+            |m: &SyncEntityBuffChangeListScNotify| { &m.FDPFIAIHACM },
+            |m: &mut SyncEntityBuffChangeListScNotify| { &mut m.FDPFIAIHACM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncEntityBuffChangeListScNotify>(
             "SyncEntityBuffChangeListScNotify",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for SyncEntityBuffChangeListScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    self.entity_buff_info_list.push(is.read_message()?);
+                58 => {
+                    self.FDPFIAIHACM.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for SyncEntityBuffChangeListScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.entity_buff_info_list {
+        for value in &self.FDPFIAIHACM {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -98,8 +98,8 @@ impl ::protobuf::Message for SyncEntityBuffChangeListScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.entity_buff_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        for v in &self.FDPFIAIHACM {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -118,13 +118,13 @@ impl ::protobuf::Message for SyncEntityBuffChangeListScNotify {
     }
 
     fn clear(&mut self) {
-        self.entity_buff_info_list.clear();
+        self.FDPFIAIHACM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncEntityBuffChangeListScNotify {
         static instance: SyncEntityBuffChangeListScNotify = SyncEntityBuffChangeListScNotify {
-            entity_buff_info_list: ::std::vec::Vec::new(),
+            FDPFIAIHACM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,10 +149,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncEntityBuffChangeListScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n&SyncEntityBuffChangeListScNotify.proto\x1a\x1aEntityBuffChangeInfo.pr\
-    oto\"l\n\x20SyncEntityBuffChangeListScNotify\x12H\n\x15entity_buff_info_\
-    list\x18\x0e\x20\x03(\x0b2\x15.EntityBuffChangeInfoR\x12entityBuffInfoLi\
-    stB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n&SyncEntityBuffChangeListScNotify.proto\x1a\x11DKLHBHCIBNO.proto\"R\n\
+    \x20SyncEntityBuffChangeListScNotify\x12.\n\x0bFDPFIAIHACM\x18\x07\x20\
+    \x03(\x0b2\x0c.DKLHBHCIBNOR\x0bFDPFIAIHACMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -170,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::EntityBuffChangeInfo::file_descriptor().clone());
+            deps.push(super::DKLHBHCIBNO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SyncEntityBuffChangeListScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RefreshTriggerByClientCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RefreshTriggerByClientCsReq.trigger_name)
-    pub trigger_name: ::std::string::String,
-    // @@protoc_insertion_point(field:RefreshTriggerByClientCsReq.trigger_entity_id)
-    pub trigger_entity_id: u32,
-    // @@protoc_insertion_point(field:RefreshTriggerByClientCsReq.trigger_target_id_list)
-    pub trigger_target_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:RefreshTriggerByClientCsReq.trigger_motion)
-    pub trigger_motion: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
+    // @@protoc_insertion_point(field:RefreshTriggerByClientCsReq.PIFLOLCMLKM)
+    pub PIFLOLCMLKM: ::protobuf::MessageField<super::LDFPBJIHOPD::LDFPBJIHOPD>,
+    // @@protoc_insertion_point(field:RefreshTriggerByClientCsReq.HGNDBBMDIBI)
+    pub HGNDBBMDIBI: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RefreshTriggerByClientCsReq.DGGCFCBNILB)
+    pub DGGCFCBNILB: ::std::string::String,
+    // @@protoc_insertion_point(field:RefreshTriggerByClientCsReq.JGHJDPLEPAC)
+    pub JGHJDPLEPAC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RefreshTriggerByClientCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,25 +56,25 @@ impl RefreshTriggerByClientCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "trigger_name",
-            |m: &RefreshTriggerByClientCsReq| { &m.trigger_name },
-            |m: &mut RefreshTriggerByClientCsReq| { &mut m.trigger_name },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "trigger_entity_id",
-            |m: &RefreshTriggerByClientCsReq| { &m.trigger_entity_id },
-            |m: &mut RefreshTriggerByClientCsReq| { &mut m.trigger_entity_id },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LDFPBJIHOPD::LDFPBJIHOPD>(
+            "PIFLOLCMLKM",
+            |m: &RefreshTriggerByClientCsReq| { &m.PIFLOLCMLKM },
+            |m: &mut RefreshTriggerByClientCsReq| { &mut m.PIFLOLCMLKM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "trigger_target_id_list",
-            |m: &RefreshTriggerByClientCsReq| { &m.trigger_target_id_list },
-            |m: &mut RefreshTriggerByClientCsReq| { &mut m.trigger_target_id_list },
+            "HGNDBBMDIBI",
+            |m: &RefreshTriggerByClientCsReq| { &m.HGNDBBMDIBI },
+            |m: &mut RefreshTriggerByClientCsReq| { &mut m.HGNDBBMDIBI },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfo::MotionInfo>(
-            "trigger_motion",
-            |m: &RefreshTriggerByClientCsReq| { &m.trigger_motion },
-            |m: &mut RefreshTriggerByClientCsReq| { &mut m.trigger_motion },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DGGCFCBNILB",
+            |m: &RefreshTriggerByClientCsReq| { &m.DGGCFCBNILB },
+            |m: &mut RefreshTriggerByClientCsReq| { &mut m.DGGCFCBNILB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JGHJDPLEPAC",
+            |m: &RefreshTriggerByClientCsReq| { &m.JGHJDPLEPAC },
+            |m: &mut RefreshTriggerByClientCsReq| { &mut m.JGHJDPLEPAC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RefreshTriggerByClientCsReq>(
             "RefreshTriggerByClientCsReq",
@@ -94,20 +94,20 @@ impl ::protobuf::Message for RefreshTriggerByClientCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    self.trigger_name = is.read_string()?;
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PIFLOLCMLKM)?;
                 },
-                120 => {
-                    self.trigger_entity_id = is.read_uint32()?;
+                114 => {
+                    is.read_repeated_packed_uint32_into(&mut self.HGNDBBMDIBI)?;
+                },
+                112 => {
+                    self.HGNDBBMDIBI.push(is.read_uint32()?);
                 },
                 106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.trigger_target_id_list)?;
+                    self.DGGCFCBNILB = is.read_string()?;
                 },
-                104 => {
-                    self.trigger_target_id_list.push(is.read_uint32()?);
-                },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.trigger_motion)?;
+                40 => {
+                    self.JGHJDPLEPAC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,18 +121,18 @@ impl ::protobuf::Message for RefreshTriggerByClientCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.trigger_name.is_empty() {
-            my_size += ::protobuf::rt::string_size(12, &self.trigger_name);
-        }
-        if self.trigger_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.trigger_entity_id);
-        }
-        for value in &self.trigger_target_id_list {
-            my_size += ::protobuf::rt::uint32_size(13, *value);
-        };
-        if let Some(v) = self.trigger_motion.as_ref() {
+        if let Some(v) = self.PIFLOLCMLKM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        for value in &self.HGNDBBMDIBI {
+            my_size += ::protobuf::rt::uint32_size(14, *value);
+        };
+        if !self.DGGCFCBNILB.is_empty() {
+            my_size += ::protobuf::rt::string_size(13, &self.DGGCFCBNILB);
+        }
+        if self.JGHJDPLEPAC != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.JGHJDPLEPAC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -140,17 +140,17 @@ impl ::protobuf::Message for RefreshTriggerByClientCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.trigger_name.is_empty() {
-            os.write_string(12, &self.trigger_name)?;
+        if let Some(v) = self.PIFLOLCMLKM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
-        if self.trigger_entity_id != 0 {
-            os.write_uint32(15, self.trigger_entity_id)?;
-        }
-        for v in &self.trigger_target_id_list {
-            os.write_uint32(13, *v)?;
+        for v in &self.HGNDBBMDIBI {
+            os.write_uint32(14, *v)?;
         };
-        if let Some(v) = self.trigger_motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if !self.DGGCFCBNILB.is_empty() {
+            os.write_string(13, &self.DGGCFCBNILB)?;
+        }
+        if self.JGHJDPLEPAC != 0 {
+            os.write_uint32(5, self.JGHJDPLEPAC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,19 +169,19 @@ impl ::protobuf::Message for RefreshTriggerByClientCsReq {
     }
 
     fn clear(&mut self) {
-        self.trigger_name.clear();
-        self.trigger_entity_id = 0;
-        self.trigger_target_id_list.clear();
-        self.trigger_motion.clear();
+        self.PIFLOLCMLKM.clear();
+        self.HGNDBBMDIBI.clear();
+        self.DGGCFCBNILB.clear();
+        self.JGHJDPLEPAC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RefreshTriggerByClientCsReq {
         static instance: RefreshTriggerByClientCsReq = RefreshTriggerByClientCsReq {
-            trigger_name: ::std::string::String::new(),
-            trigger_entity_id: 0,
-            trigger_target_id_list: ::std::vec::Vec::new(),
-            trigger_motion: ::protobuf::MessageField::none(),
+            PIFLOLCMLKM: ::protobuf::MessageField::none(),
+            HGNDBBMDIBI: ::std::vec::Vec::new(),
+            DGGCFCBNILB: ::std::string::String::new(),
+            JGHJDPLEPAC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -206,12 +206,12 @@ impl ::protobuf::reflect::ProtobufValue for RefreshTriggerByClientCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!RefreshTriggerByClientCsReq.proto\x1a\x10MotionInfo.proto\"\xd5\x01\n\
-    \x1bRefreshTriggerByClientCsReq\x12!\n\x0ctrigger_name\x18\x0c\x20\x01(\
-    \tR\x0btriggerName\x12*\n\x11trigger_entity_id\x18\x0f\x20\x01(\rR\x0ftr\
-    iggerEntityId\x123\n\x16trigger_target_id_list\x18\r\x20\x03(\rR\x13trig\
-    gerTargetIdList\x122\n\x0etrigger_motion\x18\t\x20\x01(\x0b2\x0b.MotionI\
-    nfoR\rtriggerMotionB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n!RefreshTriggerByClientCsReq.proto\x1a\x11LDFPBJIHOPD.proto\"\xb3\x01\
+    \n\x1bRefreshTriggerByClientCsReq\x12.\n\x0bPIFLOLCMLKM\x18\x06\x20\x01(\
+    \x0b2\x0c.LDFPBJIHOPDR\x0bPIFLOLCMLKM\x12\x20\n\x0bHGNDBBMDIBI\x18\x0e\
+    \x20\x03(\rR\x0bHGNDBBMDIBI\x12\x20\n\x0bDGGCFCBNILB\x18\r\x20\x01(\tR\
+    \x0bDGGCFCBNILB\x12\x20\n\x0bJGHJDPLEPAC\x18\x05\x20\x01(\rR\x0bJGHJDPLE\
+    PACb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -229,7 +229,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::MotionInfo::file_descriptor().clone());
+            deps.push(super::LDFPBJIHOPD::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RefreshTriggerByClientCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

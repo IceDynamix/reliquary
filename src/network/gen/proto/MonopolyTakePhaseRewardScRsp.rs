@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyTakePhaseRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyTakePhaseRewardScRsp.OACGANOMFMM)
-    pub OACGANOMFMM: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:MonopolyTakePhaseRewardScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:MonopolyTakePhaseRewardScRsp.EIHNMCKNPAP)
-    pub EIHNMCKNPAP: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:MonopolyTakePhaseRewardScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:MonopolyTakePhaseRewardScRsp.DBDHBCOKFMK)
+    pub DBDHBCOKFMK: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MonopolyTakePhaseRewardScRsp.KOLMAFOILEK)
+    pub KOLMAFOILEK: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyTakePhaseRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl MonopolyTakePhaseRewardScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OACGANOMFMM",
-            |m: &MonopolyTakePhaseRewardScRsp| { &m.OACGANOMFMM },
-            |m: &mut MonopolyTakePhaseRewardScRsp| { &mut m.OACGANOMFMM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &MonopolyTakePhaseRewardScRsp| { &m.ADADHIHDHJC },
-            |m: &mut MonopolyTakePhaseRewardScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &MonopolyTakePhaseRewardScRsp| { &m.retcode },
+            |m: &mut MonopolyTakePhaseRewardScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DBDHBCOKFMK",
+            |m: &MonopolyTakePhaseRewardScRsp| { &m.DBDHBCOKFMK },
+            |m: &mut MonopolyTakePhaseRewardScRsp| { &mut m.DBDHBCOKFMK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "EIHNMCKNPAP",
-            |m: &MonopolyTakePhaseRewardScRsp| { &m.EIHNMCKNPAP },
-            |m: &mut MonopolyTakePhaseRewardScRsp| { &mut m.EIHNMCKNPAP },
+            "KOLMAFOILEK",
+            |m: &MonopolyTakePhaseRewardScRsp| { &m.KOLMAFOILEK },
+            |m: &mut MonopolyTakePhaseRewardScRsp| { &mut m.KOLMAFOILEK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyTakePhaseRewardScRsp>(
             "MonopolyTakePhaseRewardScRsp",
@@ -87,17 +87,17 @@ impl ::protobuf::Message for MonopolyTakePhaseRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.OACGANOMFMM)?;
+                88 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                120 => {
-                    self.OACGANOMFMM.push(is.read_uint32()?);
+                18 => {
+                    is.read_repeated_packed_uint32_into(&mut self.DBDHBCOKFMK)?;
                 },
                 16 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                    self.DBDHBCOKFMK.push(is.read_uint32()?);
                 },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EIHNMCKNPAP)?;
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KOLMAFOILEK)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,13 +111,13 @@ impl ::protobuf::Message for MonopolyTakePhaseRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.OACGANOMFMM {
-            my_size += ::protobuf::rt::uint32_size(15, *value);
-        };
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
-        if let Some(v) = self.EIHNMCKNPAP.as_ref() {
+        for value in &self.DBDHBCOKFMK {
+            my_size += ::protobuf::rt::uint32_size(2, *value);
+        };
+        if let Some(v) = self.KOLMAFOILEK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -127,14 +127,14 @@ impl ::protobuf::Message for MonopolyTakePhaseRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.OACGANOMFMM {
-            os.write_uint32(15, *v)?;
-        };
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(2, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(11, self.retcode)?;
         }
-        if let Some(v) = self.EIHNMCKNPAP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        for v in &self.DBDHBCOKFMK {
+            os.write_uint32(2, *v)?;
+        };
+        if let Some(v) = self.KOLMAFOILEK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -153,17 +153,17 @@ impl ::protobuf::Message for MonopolyTakePhaseRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.OACGANOMFMM.clear();
-        self.ADADHIHDHJC = 0;
-        self.EIHNMCKNPAP.clear();
+        self.retcode = 0;
+        self.DBDHBCOKFMK.clear();
+        self.KOLMAFOILEK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyTakePhaseRewardScRsp {
         static instance: MonopolyTakePhaseRewardScRsp = MonopolyTakePhaseRewardScRsp {
-            OACGANOMFMM: ::std::vec::Vec::new(),
-            ADADHIHDHJC: 0,
-            EIHNMCKNPAP: ::protobuf::MessageField::none(),
+            retcode: 0,
+            DBDHBCOKFMK: ::std::vec::Vec::new(),
+            KOLMAFOILEK: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -188,11 +188,11 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyTakePhaseRewardScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"MonopolyTakePhaseRewardScRsp.proto\x1a\x0eItemList.proto\"\x8f\x01\n\
-    \x1cMonopolyTakePhaseRewardScRsp\x12\x20\n\x0bOACGANOMFMM\x18\x0f\x20\
-    \x03(\rR\x0bOACGANOMFMM\x12\x20\n\x0bADADHIHDHJC\x18\x02\x20\x01(\rR\x0b\
-    ADADHIHDHJC\x12+\n\x0bEIHNMCKNPAP\x18\n\x20\x01(\x0b2\t.ItemListR\x0bEIH\
-    NMCKNPAPb\x06proto3\
+    \n\"MonopolyTakePhaseRewardScRsp.proto\x1a\x0eItemList.proto\"\x87\x01\n\
+    \x1cMonopolyTakePhaseRewardScRsp\x12\x18\n\x07retcode\x18\x0b\x20\x01(\r\
+    R\x07retcode\x12\x20\n\x0bDBDHBCOKFMK\x18\x02\x20\x03(\rR\x0bDBDHBCOKFMK\
+    \x12+\n\x0bKOLMAFOILEK\x18\x03\x20\x01(\x0b2\t.ItemListR\x0bKOLMAFOILEKb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

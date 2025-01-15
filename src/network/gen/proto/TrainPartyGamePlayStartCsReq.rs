@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartyGamePlayStartCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartyGamePlayStartCsReq.JIBCJFPFHKO)
-    pub JIBCJFPFHKO: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:TrainPartyGamePlayStartCsReq.KNPFNNGBAIC)
-    pub KNPFNNGBAIC: u32,
+    // @@protoc_insertion_point(field:TrainPartyGamePlayStartCsReq.PEPAGOJDNHO)
+    pub PEPAGOJDNHO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:TrainPartyGamePlayStartCsReq.DAHDHMFLEFF)
+    pub DAHDHMFLEFF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyGamePlayStartCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl TrainPartyGamePlayStartCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JIBCJFPFHKO",
-            |m: &TrainPartyGamePlayStartCsReq| { &m.JIBCJFPFHKO },
-            |m: &mut TrainPartyGamePlayStartCsReq| { &mut m.JIBCJFPFHKO },
+            "PEPAGOJDNHO",
+            |m: &TrainPartyGamePlayStartCsReq| { &m.PEPAGOJDNHO },
+            |m: &mut TrainPartyGamePlayStartCsReq| { &mut m.PEPAGOJDNHO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KNPFNNGBAIC",
-            |m: &TrainPartyGamePlayStartCsReq| { &m.KNPFNNGBAIC },
-            |m: &mut TrainPartyGamePlayStartCsReq| { &mut m.KNPFNNGBAIC },
+            "DAHDHMFLEFF",
+            |m: &TrainPartyGamePlayStartCsReq| { &m.DAHDHMFLEFF },
+            |m: &mut TrainPartyGamePlayStartCsReq| { &mut m.DAHDHMFLEFF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyGamePlayStartCsReq>(
             "TrainPartyGamePlayStartCsReq",
@@ -80,14 +80,14 @@ impl ::protobuf::Message for TrainPartyGamePlayStartCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.JIBCJFPFHKO)?;
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.PEPAGOJDNHO)?;
                 },
-                80 => {
-                    self.JIBCJFPFHKO.push(is.read_uint32()?);
+                40 => {
+                    self.PEPAGOJDNHO.push(is.read_uint32()?);
                 },
-                96 => {
-                    self.KNPFNNGBAIC = is.read_uint32()?;
+                72 => {
+                    self.DAHDHMFLEFF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,11 +101,11 @@ impl ::protobuf::Message for TrainPartyGamePlayStartCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.JIBCJFPFHKO {
-            my_size += ::protobuf::rt::uint32_size(10, *value);
+        for value in &self.PEPAGOJDNHO {
+            my_size += ::protobuf::rt::uint32_size(5, *value);
         };
-        if self.KNPFNNGBAIC != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.KNPFNNGBAIC);
+        if self.DAHDHMFLEFF != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.DAHDHMFLEFF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,11 +113,11 @@ impl ::protobuf::Message for TrainPartyGamePlayStartCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.JIBCJFPFHKO {
-            os.write_uint32(10, *v)?;
+        for v in &self.PEPAGOJDNHO {
+            os.write_uint32(5, *v)?;
         };
-        if self.KNPFNNGBAIC != 0 {
-            os.write_uint32(12, self.KNPFNNGBAIC)?;
+        if self.DAHDHMFLEFF != 0 {
+            os.write_uint32(9, self.DAHDHMFLEFF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -136,15 +136,15 @@ impl ::protobuf::Message for TrainPartyGamePlayStartCsReq {
     }
 
     fn clear(&mut self) {
-        self.JIBCJFPFHKO.clear();
-        self.KNPFNNGBAIC = 0;
+        self.PEPAGOJDNHO.clear();
+        self.DAHDHMFLEFF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyGamePlayStartCsReq {
         static instance: TrainPartyGamePlayStartCsReq = TrainPartyGamePlayStartCsReq {
-            JIBCJFPFHKO: ::std::vec::Vec::new(),
-            KNPFNNGBAIC: 0,
+            PEPAGOJDNHO: ::std::vec::Vec::new(),
+            DAHDHMFLEFF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -170,8 +170,8 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyGamePlayStartCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"TrainPartyGamePlayStartCsReq.proto\"b\n\x1cTrainPartyGamePlayStartCs\
-    Req\x12\x20\n\x0bJIBCJFPFHKO\x18\n\x20\x03(\rR\x0bJIBCJFPFHKO\x12\x20\n\
-    \x0bKNPFNNGBAIC\x18\x0c\x20\x01(\rR\x0bKNPFNNGBAICb\x06proto3\
+    Req\x12\x20\n\x0bPEPAGOJDNHO\x18\x05\x20\x03(\rR\x0bPEPAGOJDNHO\x12\x20\
+    \n\x0bDAHDHMFLEFF\x18\t\x20\x01(\rR\x0bDAHDHMFLEFFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CancelActivityExpeditionScRsp {
     // message fields
-    // @@protoc_insertion_point(field:CancelActivityExpeditionScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:CancelActivityExpeditionScRsp.IDJNPOONENE)
-    pub IDJNPOONENE: u32,
+    // @@protoc_insertion_point(field:CancelActivityExpeditionScRsp.JIEGAKIECLJ)
+    pub JIEGAKIECLJ: u32,
+    // @@protoc_insertion_point(field:CancelActivityExpeditionScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CancelActivityExpeditionScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl CancelActivityExpeditionScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &CancelActivityExpeditionScRsp| { &m.ADADHIHDHJC },
-            |m: &mut CancelActivityExpeditionScRsp| { &mut m.ADADHIHDHJC },
+            "JIEGAKIECLJ",
+            |m: &CancelActivityExpeditionScRsp| { &m.JIEGAKIECLJ },
+            |m: &mut CancelActivityExpeditionScRsp| { &mut m.JIEGAKIECLJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IDJNPOONENE",
-            |m: &CancelActivityExpeditionScRsp| { &m.IDJNPOONENE },
-            |m: &mut CancelActivityExpeditionScRsp| { &mut m.IDJNPOONENE },
+            "retcode",
+            |m: &CancelActivityExpeditionScRsp| { &m.retcode },
+            |m: &mut CancelActivityExpeditionScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CancelActivityExpeditionScRsp>(
             "CancelActivityExpeditionScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for CancelActivityExpeditionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                32 => {
+                    self.JIEGAKIECLJ = is.read_uint32()?;
                 },
-                72 => {
-                    self.IDJNPOONENE = is.read_uint32()?;
+                96 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for CancelActivityExpeditionScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.ADADHIHDHJC);
+        if self.JIEGAKIECLJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.JIEGAKIECLJ);
         }
-        if self.IDJNPOONENE != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.IDJNPOONENE);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for CancelActivityExpeditionScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(10, self.ADADHIHDHJC)?;
+        if self.JIEGAKIECLJ != 0 {
+            os.write_uint32(4, self.JIEGAKIECLJ)?;
         }
-        if self.IDJNPOONENE != 0 {
-            os.write_uint32(9, self.IDJNPOONENE)?;
+        if self.retcode != 0 {
+            os.write_uint32(12, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for CancelActivityExpeditionScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADADHIHDHJC = 0;
-        self.IDJNPOONENE = 0;
+        self.JIEGAKIECLJ = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CancelActivityExpeditionScRsp {
         static instance: CancelActivityExpeditionScRsp = CancelActivityExpeditionScRsp {
-            ADADHIHDHJC: 0,
-            IDJNPOONENE: 0,
+            JIEGAKIECLJ: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for CancelActivityExpeditionScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#CancelActivityExpeditionScRsp.proto\"c\n\x1dCancelActivityExpeditionS\
-    cRsp\x12\x20\n\x0bADADHIHDHJC\x18\n\x20\x01(\rR\x0bADADHIHDHJC\x12\x20\n\
-    \x0bIDJNPOONENE\x18\t\x20\x01(\rR\x0bIDJNPOONENEb\x06proto3\
+    \n#CancelActivityExpeditionScRsp.proto\"[\n\x1dCancelActivityExpeditionS\
+    cRsp\x12\x20\n\x0bJIEGAKIECLJ\x18\x04\x20\x01(\rR\x0bJIEGAKIECLJ\x12\x18\
+    \n\x07retcode\x18\x0c\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

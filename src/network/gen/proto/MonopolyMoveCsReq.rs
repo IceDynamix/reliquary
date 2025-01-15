@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyMoveCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyMoveCsReq.AAJBKDEDOFP)
-    pub AAJBKDEDOFP: u32,
-    // @@protoc_insertion_point(field:MonopolyMoveCsReq.BNJGOFNGAJA)
-    pub BNJGOFNGAJA: u32,
+    // @@protoc_insertion_point(field:MonopolyMoveCsReq.FKLBHNCOJIM)
+    pub FKLBHNCOJIM: u32,
+    // @@protoc_insertion_point(field:MonopolyMoveCsReq.GFMLHCBJPCB)
+    pub GFMLHCBJPCB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyMoveCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl MonopolyMoveCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AAJBKDEDOFP",
-            |m: &MonopolyMoveCsReq| { &m.AAJBKDEDOFP },
-            |m: &mut MonopolyMoveCsReq| { &mut m.AAJBKDEDOFP },
+            "FKLBHNCOJIM",
+            |m: &MonopolyMoveCsReq| { &m.FKLBHNCOJIM },
+            |m: &mut MonopolyMoveCsReq| { &mut m.FKLBHNCOJIM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BNJGOFNGAJA",
-            |m: &MonopolyMoveCsReq| { &m.BNJGOFNGAJA },
-            |m: &mut MonopolyMoveCsReq| { &mut m.BNJGOFNGAJA },
+            "GFMLHCBJPCB",
+            |m: &MonopolyMoveCsReq| { &m.GFMLHCBJPCB },
+            |m: &mut MonopolyMoveCsReq| { &mut m.GFMLHCBJPCB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyMoveCsReq>(
             "MonopolyMoveCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for MonopolyMoveCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.AAJBKDEDOFP = is.read_uint32()?;
+                32 => {
+                    self.FKLBHNCOJIM = is.read_uint32()?;
                 },
-                72 => {
-                    self.BNJGOFNGAJA = is.read_uint32()?;
+                48 => {
+                    self.GFMLHCBJPCB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for MonopolyMoveCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AAJBKDEDOFP != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.AAJBKDEDOFP);
+        if self.FKLBHNCOJIM != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.FKLBHNCOJIM);
         }
-        if self.BNJGOFNGAJA != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.BNJGOFNGAJA);
+        if self.GFMLHCBJPCB != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.GFMLHCBJPCB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for MonopolyMoveCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AAJBKDEDOFP != 0 {
-            os.write_uint32(3, self.AAJBKDEDOFP)?;
+        if self.FKLBHNCOJIM != 0 {
+            os.write_uint32(4, self.FKLBHNCOJIM)?;
         }
-        if self.BNJGOFNGAJA != 0 {
-            os.write_uint32(9, self.BNJGOFNGAJA)?;
+        if self.GFMLHCBJPCB != 0 {
+            os.write_uint32(6, self.GFMLHCBJPCB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for MonopolyMoveCsReq {
     }
 
     fn clear(&mut self) {
-        self.AAJBKDEDOFP = 0;
-        self.BNJGOFNGAJA = 0;
+        self.FKLBHNCOJIM = 0;
+        self.GFMLHCBJPCB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyMoveCsReq {
         static instance: MonopolyMoveCsReq = MonopolyMoveCsReq {
-            AAJBKDEDOFP: 0,
-            BNJGOFNGAJA: 0,
+            FKLBHNCOJIM: 0,
+            GFMLHCBJPCB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyMoveCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17MonopolyMoveCsReq.proto\"W\n\x11MonopolyMoveCsReq\x12\x20\n\x0bAAJ\
-    BKDEDOFP\x18\x03\x20\x01(\rR\x0bAAJBKDEDOFP\x12\x20\n\x0bBNJGOFNGAJA\x18\
-    \t\x20\x01(\rR\x0bBNJGOFNGAJAb\x06proto3\
+    \n\x17MonopolyMoveCsReq.proto\"W\n\x11MonopolyMoveCsReq\x12\x20\n\x0bFKL\
+    BHNCOJIM\x18\x04\x20\x01(\rR\x0bFKLBHNCOJIM\x12\x20\n\x0bGFMLHCBJPCB\x18\
+    \x06\x20\x01(\rR\x0bGFMLHCBJPCBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

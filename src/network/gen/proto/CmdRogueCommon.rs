@@ -30,142 +30,142 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdRogueCommon {
     // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueCommonTypeNone)
     CmdRogueCommonTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueNpcDisappearCsReq)
-    CmdRogueNpcDisappearCsReq = 5674,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetEnhanceCommonRogueBuffInfoScRsp)
-    CmdGetEnhanceCommonRogueBuffInfoScRsp = 5633,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueDoGambleScRsp)
-    CmdRogueDoGambleScRsp = 5658,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSelectRogueCommonDialogueOptionCsReq)
-    CmdSelectRogueCommonDialogueOptionCsReq = 5682,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdBuyRogueShopBuffCsReq)
-    CmdBuyRogueShopBuffCsReq = 5616,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdPrepareRogueAdventureRoomCsReq)
-    CmdPrepareRogueAdventureRoomCsReq = 5620,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueWorkbenchSelectFuncScRsp)
-    CmdRogueWorkbenchSelectFuncScRsp = 5644,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdHandleRogueCommonPendingActionCsReq)
-    CmdHandleRogueCommonPendingActionCsReq = 5624,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueCommonDialogueDataCsReq)
-    CmdGetRogueCommonDialogueDataCsReq = 5631,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSetRogueExhibitionCsReq)
-    CmdSetRogueExhibitionCsReq = 5642,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetEnhanceCommonRogueBuffInfoCsReq)
-    CmdGetEnhanceCommonRogueBuffInfoCsReq = 5629,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdBuyRogueShopMiracleScRsp)
-    CmdBuyRogueShopMiracleScRsp = 5680,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdTakeRogueEventHandbookRewardCsReq)
-    CmdTakeRogueEventHandbookRewardCsReq = 5663,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdCommonRogueQueryScRsp)
-    CmdCommonRogueQueryScRsp = 5632,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSyncRogueCommonDialogueOptionFinishScNotify)
-    CmdSyncRogueCommonDialogueOptionFinishScNotify = 5655,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueAdventureRoomInfoScRsp)
-    CmdGetRogueAdventureRoomInfoScRsp = 5648,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdPrepareRogueAdventureRoomScRsp)
-    CmdPrepareRogueAdventureRoomScRsp = 5603,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueCollectionCsReq)
-    CmdGetRogueCollectionCsReq = 5681,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdUpdateRogueAdventureRoomScoreCsReq)
-    CmdUpdateRogueAdventureRoomScoreCsReq = 5645,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueShopBuffInfoCsReq)
-    CmdGetRogueShopBuffInfoCsReq = 5653,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSyncRogueCommonPendingActionScNotify)
-    CmdSyncRogueCommonPendingActionScNotify = 5615,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdFinishRogueCommonDialogueCsReq)
-    CmdFinishRogueCommonDialogueCsReq = 5684,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueWorkbenchGetInfoCsReq)
-    CmdRogueWorkbenchGetInfoCsReq = 5622,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdTakeRogueEventHandbookRewardScRsp)
-    CmdTakeRogueEventHandbookRewardScRsp = 5614,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueWorkbenchHandleFuncCsReq)
-    CmdRogueWorkbenchHandleFuncCsReq = 5607,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueWorkbenchSelectFuncCsReq)
-    CmdRogueWorkbenchSelectFuncCsReq = 5687,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdEnhanceCommonRogueBuffScRsp)
-    CmdEnhanceCommonRogueBuffScRsp = 5673,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSetRogueCollectionCsReq)
-    CmdSetRogueCollectionCsReq = 5669,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSyncRogueHandbookDataUpdateScNotify)
-    CmdSyncRogueHandbookDataUpdateScNotify = 5604,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdExchangeRogueBuffWithMiracleCsReq)
-    CmdExchangeRogueBuffWithMiracleCsReq = 5661,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueExhibitionCsReq)
-    CmdGetRogueExhibitionCsReq = 5692,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSetRogueCollectionScRsp)
-    CmdSetRogueCollectionScRsp = 5668,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdEnhanceCommonRogueBuffCsReq)
-    CmdEnhanceCommonRogueBuffCsReq = 5651,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdStopRogueAdventureRoomScRsp)
-    CmdStopRogueAdventureRoomScRsp = 5699,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueWorkbenchGetInfoScRsp)
-    CmdRogueWorkbenchGetInfoScRsp = 5635,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdStopRogueAdventureRoomCsReq)
-    CmdStopRogueAdventureRoomCsReq = 5683,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueAdventureRoomInfoCsReq)
-    CmdGetRogueAdventureRoomInfoCsReq = 5675,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdFinishRogueCommonDialogueScRsp)
-    CmdFinishRogueCommonDialogueScRsp = 5627,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueShopBuffInfoScRsp)
-    CmdGetRogueShopBuffInfoScRsp = 5634,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdBuyRogueShopBuffScRsp)
-    CmdBuyRogueShopBuffScRsp = 5647,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdBuyRogueShopMiracleCsReq)
-    CmdBuyRogueShopMiracleCsReq = 5637,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSyncRogueCommonVirtualItemInfoScNotify)
-    CmdSyncRogueCommonVirtualItemInfoScNotify = 5666,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueCommonDialogueDataScRsp)
-    CmdGetRogueCommonDialogueDataScRsp = 5671,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueHandbookDataScRsp)
-    CmdGetRogueHandbookDataScRsp = 5691,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueNpcDisappearScRsp)
-    CmdRogueNpcDisappearScRsp = 5630,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdHandleRogueCommonPendingActionScRsp)
-    CmdHandleRogueCommonPendingActionScRsp = 5612,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSyncRogueAdventureRoomInfoScNotify)
-    CmdSyncRogueAdventureRoomInfoScNotify = 5659,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdExchangeRogueBuffWithMiracleScRsp)
-    CmdExchangeRogueBuffWithMiracleScRsp = 5625,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSyncRogueCommonDialogueDataScNotify)
-    CmdSyncRogueCommonDialogueDataScNotify = 5638,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdCommonRogueUpdateScNotify)
-    CmdCommonRogueUpdateScNotify = 5696,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueDebugMessageScNotify)
-    CmdRogueDebugMessageScNotify = 5611,
     // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdCommonRogueQueryCsReq)
-    CmdCommonRogueQueryCsReq = 5660,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSetRogueExhibitionScRsp)
-    CmdSetRogueExhibitionScRsp = 5640,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueWorkbenchHandleFuncScRsp)
-    CmdRogueWorkbenchHandleFuncScRsp = 5618,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSyncRogueCommonActionResultScNotify)
-    CmdSyncRogueCommonActionResultScNotify = 5623,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSelectRogueCommonDialogueOptionScRsp)
-    CmdSelectRogueCommonDialogueOptionScRsp = 5662,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueGetGambleInfoCsReq)
-    CmdRogueGetGambleInfoCsReq = 5676,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueGetGambleInfoScRsp)
-    CmdRogueGetGambleInfoScRsp = 5601,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueExhibitionScRsp)
-    CmdGetRogueExhibitionScRsp = 5698,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdUpdateRogueAdventureRoomScoreScRsp)
-    CmdUpdateRogueAdventureRoomScoreScRsp = 5602,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdTakeRogueMiracleHandbookRewardScRsp)
-    CmdTakeRogueMiracleHandbookRewardScRsp = 5643,
+    CmdCommonRogueQueryCsReq = 5664,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdTakeRogueEventHandbookRewardScRsp)
+    CmdTakeRogueEventHandbookRewardScRsp = 5679,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdBuyRogueShopMiracleScRsp)
+    CmdBuyRogueShopMiracleScRsp = 5624,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSyncRogueCommonPendingActionScNotify)
+    CmdSyncRogueCommonPendingActionScNotify = 5639,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueNpcDisappearScRsp)
+    CmdRogueNpcDisappearScRsp = 5646,
     // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdTakeRogueMiracleHandbookRewardCsReq)
-    CmdTakeRogueMiracleHandbookRewardCsReq = 5688,
+    CmdTakeRogueMiracleHandbookRewardCsReq = 5618,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdUpdateRogueAdventureRoomScoreCsReq)
+    CmdUpdateRogueAdventureRoomScoreCsReq = 5655,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdPrepareRogueAdventureRoomScRsp)
+    CmdPrepareRogueAdventureRoomScRsp = 5684,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueExhibitionScRsp)
+    CmdGetRogueExhibitionScRsp = 5656,
     // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdCommonRogueComponentUpdateScNotify)
-    CmdCommonRogueComponentUpdateScNotify = 5606,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueCollectionScRsp)
-    CmdGetRogueCollectionScRsp = 5650,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueShopMiracleInfoScRsp)
-    CmdGetRogueShopMiracleInfoScRsp = 5639,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueDoGambleCsReq)
-    CmdRogueDoGambleCsReq = 5641,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueShopMiracleInfoCsReq)
-    CmdGetRogueShopMiracleInfoCsReq = 5646,
+    CmdCommonRogueComponentUpdateScNotify = 5657,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSyncRogueCommonVirtualItemInfoScNotify)
+    CmdSyncRogueCommonVirtualItemInfoScNotify = 5700,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSyncRogueCommonDialogueDataScNotify)
+    CmdSyncRogueCommonDialogueDataScNotify = 5683,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueCommonDialogueDataCsReq)
+    CmdGetRogueCommonDialogueDataCsReq = 5603,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueWorkbenchHandleFuncScRsp)
+    CmdRogueWorkbenchHandleFuncScRsp = 5670,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdEnhanceCommonRogueBuffCsReq)
+    CmdEnhanceCommonRogueBuffCsReq = 5659,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSelectRogueCommonDialogueOptionCsReq)
+    CmdSelectRogueCommonDialogueOptionCsReq = 5661,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueWorkbenchGetInfoCsReq)
+    CmdRogueWorkbenchGetInfoCsReq = 5616,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueDebugMessageScNotify)
+    CmdRogueDebugMessageScNotify = 5615,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdBuyRogueShopBuffCsReq)
+    CmdBuyRogueShopBuffCsReq = 5693,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdUpdateRogueAdventureRoomScoreScRsp)
+    CmdUpdateRogueAdventureRoomScoreScRsp = 5622,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSetRogueExhibitionCsReq)
+    CmdSetRogueExhibitionCsReq = 5609,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueGetGambleInfoScRsp)
+    CmdRogueGetGambleInfoScRsp = 5687,
     // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueHandbookDataCsReq)
-    CmdGetRogueHandbookDataCsReq = 5677,
+    CmdGetRogueHandbookDataCsReq = 5621,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueWorkbenchGetInfoScRsp)
+    CmdRogueWorkbenchGetInfoScRsp = 5647,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueAdventureRoomInfoCsReq)
+    CmdGetRogueAdventureRoomInfoCsReq = 5625,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueShopMiracleInfoScRsp)
+    CmdGetRogueShopMiracleInfoScRsp = 5667,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueWorkbenchSelectFuncCsReq)
+    CmdRogueWorkbenchSelectFuncCsReq = 5663,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueWorkbenchHandleFuncCsReq)
+    CmdRogueWorkbenchHandleFuncCsReq = 5649,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdHandleRogueCommonPendingActionScRsp)
+    CmdHandleRogueCommonPendingActionScRsp = 5645,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetEnhanceCommonRogueBuffInfoCsReq)
+    CmdGetEnhanceCommonRogueBuffInfoCsReq = 5653,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSelectRogueCommonDialogueOptionScRsp)
+    CmdSelectRogueCommonDialogueOptionScRsp = 5630,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdHandleRogueCommonPendingActionCsReq)
+    CmdHandleRogueCommonPendingActionCsReq = 5660,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdExchangeRogueBuffWithMiracleScRsp)
+    CmdExchangeRogueBuffWithMiracleScRsp = 5607,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetEnhanceCommonRogueBuffInfoScRsp)
+    CmdGetEnhanceCommonRogueBuffInfoScRsp = 5690,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueHandbookDataScRsp)
+    CmdGetRogueHandbookDataScRsp = 5665,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSyncRogueCommonDialogueOptionFinishScNotify)
+    CmdSyncRogueCommonDialogueOptionFinishScNotify = 5668,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueGetGambleInfoCsReq)
+    CmdRogueGetGambleInfoCsReq = 5638,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueExhibitionCsReq)
+    CmdGetRogueExhibitionCsReq = 5669,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdFinishRogueCommonDialogueScRsp)
+    CmdFinishRogueCommonDialogueScRsp = 5697,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSyncRogueHandbookDataUpdateScNotify)
+    CmdSyncRogueHandbookDataUpdateScNotify = 5608,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdCommonRogueQueryScRsp)
+    CmdCommonRogueQueryScRsp = 5672,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueNpcDisappearCsReq)
+    CmdRogueNpcDisappearCsReq = 5643,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueDoGambleCsReq)
+    CmdRogueDoGambleCsReq = 5686,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueAdventureRoomInfoScRsp)
+    CmdGetRogueAdventureRoomInfoScRsp = 5696,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdBuyRogueShopBuffScRsp)
+    CmdBuyRogueShopBuffScRsp = 5634,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSetRogueCollectionCsReq)
+    CmdSetRogueCollectionCsReq = 5644,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSyncRogueAdventureRoomInfoScNotify)
+    CmdSyncRogueAdventureRoomInfoScNotify = 5636,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueDoGambleScRsp)
+    CmdRogueDoGambleScRsp = 5666,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSetRogueExhibitionScRsp)
+    CmdSetRogueExhibitionScRsp = 5620,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdPrepareRogueAdventureRoomCsReq)
+    CmdPrepareRogueAdventureRoomCsReq = 5695,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdStopRogueAdventureRoomScRsp)
+    CmdStopRogueAdventureRoomScRsp = 5629,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdStopRogueAdventureRoomCsReq)
+    CmdStopRogueAdventureRoomCsReq = 5678,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdEnhanceCommonRogueBuffScRsp)
+    CmdEnhanceCommonRogueBuffScRsp = 5612,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdBuyRogueShopMiracleCsReq)
+    CmdBuyRogueShopMiracleCsReq = 5674,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueCollectionCsReq)
+    CmdGetRogueCollectionCsReq = 5698,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueShopBuffInfoScRsp)
+    CmdGetRogueShopBuffInfoScRsp = 5652,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueCollectionScRsp)
+    CmdGetRogueCollectionScRsp = 5691,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueCommonDialogueDataScRsp)
+    CmdGetRogueCommonDialogueDataScRsp = 5640,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueWorkbenchSelectFuncScRsp)
+    CmdRogueWorkbenchSelectFuncScRsp = 5689,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSyncRogueCommonActionResultScNotify)
+    CmdSyncRogueCommonActionResultScNotify = 5681,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSetRogueCollectionScRsp)
+    CmdSetRogueCollectionScRsp = 5623,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueShopBuffInfoCsReq)
+    CmdGetRogueShopBuffInfoCsReq = 5628,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdTakeRogueMiracleHandbookRewardScRsp)
+    CmdTakeRogueMiracleHandbookRewardScRsp = 5637,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdFinishRogueCommonDialogueCsReq)
+    CmdFinishRogueCommonDialogueCsReq = 5633,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdTakeRogueEventHandbookRewardCsReq)
+    CmdTakeRogueEventHandbookRewardCsReq = 5611,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdExchangeRogueBuffWithMiracleCsReq)
+    CmdExchangeRogueBuffWithMiracleCsReq = 5626,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueShopMiracleInfoCsReq)
+    CmdGetRogueShopMiracleInfoCsReq = 5627,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdCommonRogueUpdateScNotify)
+    CmdCommonRogueUpdateScNotify = 5699,
 }
 
 impl ::protobuf::Enum for CmdRogueCommon {
@@ -178,74 +178,74 @@ impl ::protobuf::Enum for CmdRogueCommon {
     fn from_i32(value: i32) -> ::std::option::Option<CmdRogueCommon> {
         match value {
             0 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueCommonTypeNone),
-            5674 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueNpcDisappearCsReq),
-            5633 => ::std::option::Option::Some(CmdRogueCommon::CmdGetEnhanceCommonRogueBuffInfoScRsp),
-            5658 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueDoGambleScRsp),
-            5682 => ::std::option::Option::Some(CmdRogueCommon::CmdSelectRogueCommonDialogueOptionCsReq),
-            5616 => ::std::option::Option::Some(CmdRogueCommon::CmdBuyRogueShopBuffCsReq),
-            5620 => ::std::option::Option::Some(CmdRogueCommon::CmdPrepareRogueAdventureRoomCsReq),
-            5644 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchSelectFuncScRsp),
-            5624 => ::std::option::Option::Some(CmdRogueCommon::CmdHandleRogueCommonPendingActionCsReq),
-            5631 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueCommonDialogueDataCsReq),
-            5642 => ::std::option::Option::Some(CmdRogueCommon::CmdSetRogueExhibitionCsReq),
-            5629 => ::std::option::Option::Some(CmdRogueCommon::CmdGetEnhanceCommonRogueBuffInfoCsReq),
-            5680 => ::std::option::Option::Some(CmdRogueCommon::CmdBuyRogueShopMiracleScRsp),
-            5663 => ::std::option::Option::Some(CmdRogueCommon::CmdTakeRogueEventHandbookRewardCsReq),
-            5632 => ::std::option::Option::Some(CmdRogueCommon::CmdCommonRogueQueryScRsp),
-            5655 => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueCommonDialogueOptionFinishScNotify),
-            5648 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueAdventureRoomInfoScRsp),
-            5603 => ::std::option::Option::Some(CmdRogueCommon::CmdPrepareRogueAdventureRoomScRsp),
-            5681 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueCollectionCsReq),
-            5645 => ::std::option::Option::Some(CmdRogueCommon::CmdUpdateRogueAdventureRoomScoreCsReq),
-            5653 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueShopBuffInfoCsReq),
-            5615 => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueCommonPendingActionScNotify),
-            5684 => ::std::option::Option::Some(CmdRogueCommon::CmdFinishRogueCommonDialogueCsReq),
-            5622 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchGetInfoCsReq),
-            5614 => ::std::option::Option::Some(CmdRogueCommon::CmdTakeRogueEventHandbookRewardScRsp),
-            5607 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchHandleFuncCsReq),
-            5687 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchSelectFuncCsReq),
-            5673 => ::std::option::Option::Some(CmdRogueCommon::CmdEnhanceCommonRogueBuffScRsp),
-            5669 => ::std::option::Option::Some(CmdRogueCommon::CmdSetRogueCollectionCsReq),
-            5604 => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueHandbookDataUpdateScNotify),
-            5661 => ::std::option::Option::Some(CmdRogueCommon::CmdExchangeRogueBuffWithMiracleCsReq),
-            5692 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueExhibitionCsReq),
-            5668 => ::std::option::Option::Some(CmdRogueCommon::CmdSetRogueCollectionScRsp),
-            5651 => ::std::option::Option::Some(CmdRogueCommon::CmdEnhanceCommonRogueBuffCsReq),
-            5699 => ::std::option::Option::Some(CmdRogueCommon::CmdStopRogueAdventureRoomScRsp),
-            5635 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchGetInfoScRsp),
-            5683 => ::std::option::Option::Some(CmdRogueCommon::CmdStopRogueAdventureRoomCsReq),
-            5675 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueAdventureRoomInfoCsReq),
-            5627 => ::std::option::Option::Some(CmdRogueCommon::CmdFinishRogueCommonDialogueScRsp),
-            5634 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueShopBuffInfoScRsp),
-            5647 => ::std::option::Option::Some(CmdRogueCommon::CmdBuyRogueShopBuffScRsp),
-            5637 => ::std::option::Option::Some(CmdRogueCommon::CmdBuyRogueShopMiracleCsReq),
-            5666 => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueCommonVirtualItemInfoScNotify),
-            5671 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueCommonDialogueDataScRsp),
-            5691 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueHandbookDataScRsp),
-            5630 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueNpcDisappearScRsp),
-            5612 => ::std::option::Option::Some(CmdRogueCommon::CmdHandleRogueCommonPendingActionScRsp),
-            5659 => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueAdventureRoomInfoScNotify),
-            5625 => ::std::option::Option::Some(CmdRogueCommon::CmdExchangeRogueBuffWithMiracleScRsp),
-            5638 => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueCommonDialogueDataScNotify),
-            5696 => ::std::option::Option::Some(CmdRogueCommon::CmdCommonRogueUpdateScNotify),
-            5611 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueDebugMessageScNotify),
-            5660 => ::std::option::Option::Some(CmdRogueCommon::CmdCommonRogueQueryCsReq),
-            5640 => ::std::option::Option::Some(CmdRogueCommon::CmdSetRogueExhibitionScRsp),
-            5618 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchHandleFuncScRsp),
-            5623 => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueCommonActionResultScNotify),
-            5662 => ::std::option::Option::Some(CmdRogueCommon::CmdSelectRogueCommonDialogueOptionScRsp),
-            5676 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueGetGambleInfoCsReq),
-            5601 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueGetGambleInfoScRsp),
-            5698 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueExhibitionScRsp),
-            5602 => ::std::option::Option::Some(CmdRogueCommon::CmdUpdateRogueAdventureRoomScoreScRsp),
-            5643 => ::std::option::Option::Some(CmdRogueCommon::CmdTakeRogueMiracleHandbookRewardScRsp),
-            5688 => ::std::option::Option::Some(CmdRogueCommon::CmdTakeRogueMiracleHandbookRewardCsReq),
-            5606 => ::std::option::Option::Some(CmdRogueCommon::CmdCommonRogueComponentUpdateScNotify),
-            5650 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueCollectionScRsp),
-            5639 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueShopMiracleInfoScRsp),
-            5641 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueDoGambleCsReq),
-            5646 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueShopMiracleInfoCsReq),
-            5677 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueHandbookDataCsReq),
+            5664 => ::std::option::Option::Some(CmdRogueCommon::CmdCommonRogueQueryCsReq),
+            5679 => ::std::option::Option::Some(CmdRogueCommon::CmdTakeRogueEventHandbookRewardScRsp),
+            5624 => ::std::option::Option::Some(CmdRogueCommon::CmdBuyRogueShopMiracleScRsp),
+            5639 => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueCommonPendingActionScNotify),
+            5646 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueNpcDisappearScRsp),
+            5618 => ::std::option::Option::Some(CmdRogueCommon::CmdTakeRogueMiracleHandbookRewardCsReq),
+            5655 => ::std::option::Option::Some(CmdRogueCommon::CmdUpdateRogueAdventureRoomScoreCsReq),
+            5684 => ::std::option::Option::Some(CmdRogueCommon::CmdPrepareRogueAdventureRoomScRsp),
+            5656 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueExhibitionScRsp),
+            5657 => ::std::option::Option::Some(CmdRogueCommon::CmdCommonRogueComponentUpdateScNotify),
+            5700 => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueCommonVirtualItemInfoScNotify),
+            5683 => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueCommonDialogueDataScNotify),
+            5603 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueCommonDialogueDataCsReq),
+            5670 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchHandleFuncScRsp),
+            5659 => ::std::option::Option::Some(CmdRogueCommon::CmdEnhanceCommonRogueBuffCsReq),
+            5661 => ::std::option::Option::Some(CmdRogueCommon::CmdSelectRogueCommonDialogueOptionCsReq),
+            5616 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchGetInfoCsReq),
+            5615 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueDebugMessageScNotify),
+            5693 => ::std::option::Option::Some(CmdRogueCommon::CmdBuyRogueShopBuffCsReq),
+            5622 => ::std::option::Option::Some(CmdRogueCommon::CmdUpdateRogueAdventureRoomScoreScRsp),
+            5609 => ::std::option::Option::Some(CmdRogueCommon::CmdSetRogueExhibitionCsReq),
+            5687 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueGetGambleInfoScRsp),
+            5621 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueHandbookDataCsReq),
+            5647 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchGetInfoScRsp),
+            5625 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueAdventureRoomInfoCsReq),
+            5667 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueShopMiracleInfoScRsp),
+            5663 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchSelectFuncCsReq),
+            5649 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchHandleFuncCsReq),
+            5645 => ::std::option::Option::Some(CmdRogueCommon::CmdHandleRogueCommonPendingActionScRsp),
+            5653 => ::std::option::Option::Some(CmdRogueCommon::CmdGetEnhanceCommonRogueBuffInfoCsReq),
+            5630 => ::std::option::Option::Some(CmdRogueCommon::CmdSelectRogueCommonDialogueOptionScRsp),
+            5660 => ::std::option::Option::Some(CmdRogueCommon::CmdHandleRogueCommonPendingActionCsReq),
+            5607 => ::std::option::Option::Some(CmdRogueCommon::CmdExchangeRogueBuffWithMiracleScRsp),
+            5690 => ::std::option::Option::Some(CmdRogueCommon::CmdGetEnhanceCommonRogueBuffInfoScRsp),
+            5665 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueHandbookDataScRsp),
+            5668 => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueCommonDialogueOptionFinishScNotify),
+            5638 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueGetGambleInfoCsReq),
+            5669 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueExhibitionCsReq),
+            5697 => ::std::option::Option::Some(CmdRogueCommon::CmdFinishRogueCommonDialogueScRsp),
+            5608 => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueHandbookDataUpdateScNotify),
+            5672 => ::std::option::Option::Some(CmdRogueCommon::CmdCommonRogueQueryScRsp),
+            5643 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueNpcDisappearCsReq),
+            5686 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueDoGambleCsReq),
+            5696 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueAdventureRoomInfoScRsp),
+            5634 => ::std::option::Option::Some(CmdRogueCommon::CmdBuyRogueShopBuffScRsp),
+            5644 => ::std::option::Option::Some(CmdRogueCommon::CmdSetRogueCollectionCsReq),
+            5636 => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueAdventureRoomInfoScNotify),
+            5666 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueDoGambleScRsp),
+            5620 => ::std::option::Option::Some(CmdRogueCommon::CmdSetRogueExhibitionScRsp),
+            5695 => ::std::option::Option::Some(CmdRogueCommon::CmdPrepareRogueAdventureRoomCsReq),
+            5629 => ::std::option::Option::Some(CmdRogueCommon::CmdStopRogueAdventureRoomScRsp),
+            5678 => ::std::option::Option::Some(CmdRogueCommon::CmdStopRogueAdventureRoomCsReq),
+            5612 => ::std::option::Option::Some(CmdRogueCommon::CmdEnhanceCommonRogueBuffScRsp),
+            5674 => ::std::option::Option::Some(CmdRogueCommon::CmdBuyRogueShopMiracleCsReq),
+            5698 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueCollectionCsReq),
+            5652 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueShopBuffInfoScRsp),
+            5691 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueCollectionScRsp),
+            5640 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueCommonDialogueDataScRsp),
+            5689 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchSelectFuncScRsp),
+            5681 => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueCommonActionResultScNotify),
+            5623 => ::std::option::Option::Some(CmdRogueCommon::CmdSetRogueCollectionScRsp),
+            5628 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueShopBuffInfoCsReq),
+            5637 => ::std::option::Option::Some(CmdRogueCommon::CmdTakeRogueMiracleHandbookRewardScRsp),
+            5633 => ::std::option::Option::Some(CmdRogueCommon::CmdFinishRogueCommonDialogueCsReq),
+            5611 => ::std::option::Option::Some(CmdRogueCommon::CmdTakeRogueEventHandbookRewardCsReq),
+            5626 => ::std::option::Option::Some(CmdRogueCommon::CmdExchangeRogueBuffWithMiracleCsReq),
+            5627 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueShopMiracleInfoCsReq),
+            5699 => ::std::option::Option::Some(CmdRogueCommon::CmdCommonRogueUpdateScNotify),
             _ => ::std::option::Option::None
         }
     }
@@ -253,148 +253,148 @@ impl ::protobuf::Enum for CmdRogueCommon {
     fn from_str(str: &str) -> ::std::option::Option<CmdRogueCommon> {
         match str {
             "CmdRogueCommonTypeNone" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueCommonTypeNone),
-            "CmdRogueNpcDisappearCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueNpcDisappearCsReq),
-            "CmdGetEnhanceCommonRogueBuffInfoScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdGetEnhanceCommonRogueBuffInfoScRsp),
-            "CmdRogueDoGambleScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueDoGambleScRsp),
-            "CmdSelectRogueCommonDialogueOptionCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdSelectRogueCommonDialogueOptionCsReq),
-            "CmdBuyRogueShopBuffCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdBuyRogueShopBuffCsReq),
-            "CmdPrepareRogueAdventureRoomCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdPrepareRogueAdventureRoomCsReq),
-            "CmdRogueWorkbenchSelectFuncScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchSelectFuncScRsp),
-            "CmdHandleRogueCommonPendingActionCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdHandleRogueCommonPendingActionCsReq),
-            "CmdGetRogueCommonDialogueDataCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueCommonDialogueDataCsReq),
-            "CmdSetRogueExhibitionCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdSetRogueExhibitionCsReq),
-            "CmdGetEnhanceCommonRogueBuffInfoCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdGetEnhanceCommonRogueBuffInfoCsReq),
-            "CmdBuyRogueShopMiracleScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdBuyRogueShopMiracleScRsp),
-            "CmdTakeRogueEventHandbookRewardCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdTakeRogueEventHandbookRewardCsReq),
-            "CmdCommonRogueQueryScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdCommonRogueQueryScRsp),
-            "CmdSyncRogueCommonDialogueOptionFinishScNotify" => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueCommonDialogueOptionFinishScNotify),
-            "CmdGetRogueAdventureRoomInfoScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueAdventureRoomInfoScRsp),
-            "CmdPrepareRogueAdventureRoomScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdPrepareRogueAdventureRoomScRsp),
-            "CmdGetRogueCollectionCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueCollectionCsReq),
-            "CmdUpdateRogueAdventureRoomScoreCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdUpdateRogueAdventureRoomScoreCsReq),
-            "CmdGetRogueShopBuffInfoCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueShopBuffInfoCsReq),
-            "CmdSyncRogueCommonPendingActionScNotify" => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueCommonPendingActionScNotify),
-            "CmdFinishRogueCommonDialogueCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdFinishRogueCommonDialogueCsReq),
-            "CmdRogueWorkbenchGetInfoCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchGetInfoCsReq),
-            "CmdTakeRogueEventHandbookRewardScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdTakeRogueEventHandbookRewardScRsp),
-            "CmdRogueWorkbenchHandleFuncCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchHandleFuncCsReq),
-            "CmdRogueWorkbenchSelectFuncCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchSelectFuncCsReq),
-            "CmdEnhanceCommonRogueBuffScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdEnhanceCommonRogueBuffScRsp),
-            "CmdSetRogueCollectionCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdSetRogueCollectionCsReq),
-            "CmdSyncRogueHandbookDataUpdateScNotify" => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueHandbookDataUpdateScNotify),
-            "CmdExchangeRogueBuffWithMiracleCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdExchangeRogueBuffWithMiracleCsReq),
-            "CmdGetRogueExhibitionCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueExhibitionCsReq),
-            "CmdSetRogueCollectionScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdSetRogueCollectionScRsp),
-            "CmdEnhanceCommonRogueBuffCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdEnhanceCommonRogueBuffCsReq),
-            "CmdStopRogueAdventureRoomScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdStopRogueAdventureRoomScRsp),
-            "CmdRogueWorkbenchGetInfoScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchGetInfoScRsp),
-            "CmdStopRogueAdventureRoomCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdStopRogueAdventureRoomCsReq),
-            "CmdGetRogueAdventureRoomInfoCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueAdventureRoomInfoCsReq),
-            "CmdFinishRogueCommonDialogueScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdFinishRogueCommonDialogueScRsp),
-            "CmdGetRogueShopBuffInfoScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueShopBuffInfoScRsp),
-            "CmdBuyRogueShopBuffScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdBuyRogueShopBuffScRsp),
-            "CmdBuyRogueShopMiracleCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdBuyRogueShopMiracleCsReq),
-            "CmdSyncRogueCommonVirtualItemInfoScNotify" => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueCommonVirtualItemInfoScNotify),
-            "CmdGetRogueCommonDialogueDataScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueCommonDialogueDataScRsp),
-            "CmdGetRogueHandbookDataScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueHandbookDataScRsp),
-            "CmdRogueNpcDisappearScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueNpcDisappearScRsp),
-            "CmdHandleRogueCommonPendingActionScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdHandleRogueCommonPendingActionScRsp),
-            "CmdSyncRogueAdventureRoomInfoScNotify" => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueAdventureRoomInfoScNotify),
-            "CmdExchangeRogueBuffWithMiracleScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdExchangeRogueBuffWithMiracleScRsp),
-            "CmdSyncRogueCommonDialogueDataScNotify" => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueCommonDialogueDataScNotify),
-            "CmdCommonRogueUpdateScNotify" => ::std::option::Option::Some(CmdRogueCommon::CmdCommonRogueUpdateScNotify),
-            "CmdRogueDebugMessageScNotify" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueDebugMessageScNotify),
             "CmdCommonRogueQueryCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdCommonRogueQueryCsReq),
-            "CmdSetRogueExhibitionScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdSetRogueExhibitionScRsp),
-            "CmdRogueWorkbenchHandleFuncScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchHandleFuncScRsp),
-            "CmdSyncRogueCommonActionResultScNotify" => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueCommonActionResultScNotify),
-            "CmdSelectRogueCommonDialogueOptionScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdSelectRogueCommonDialogueOptionScRsp),
-            "CmdRogueGetGambleInfoCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueGetGambleInfoCsReq),
-            "CmdRogueGetGambleInfoScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueGetGambleInfoScRsp),
-            "CmdGetRogueExhibitionScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueExhibitionScRsp),
-            "CmdUpdateRogueAdventureRoomScoreScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdUpdateRogueAdventureRoomScoreScRsp),
-            "CmdTakeRogueMiracleHandbookRewardScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdTakeRogueMiracleHandbookRewardScRsp),
+            "CmdTakeRogueEventHandbookRewardScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdTakeRogueEventHandbookRewardScRsp),
+            "CmdBuyRogueShopMiracleScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdBuyRogueShopMiracleScRsp),
+            "CmdSyncRogueCommonPendingActionScNotify" => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueCommonPendingActionScNotify),
+            "CmdRogueNpcDisappearScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueNpcDisappearScRsp),
             "CmdTakeRogueMiracleHandbookRewardCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdTakeRogueMiracleHandbookRewardCsReq),
+            "CmdUpdateRogueAdventureRoomScoreCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdUpdateRogueAdventureRoomScoreCsReq),
+            "CmdPrepareRogueAdventureRoomScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdPrepareRogueAdventureRoomScRsp),
+            "CmdGetRogueExhibitionScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueExhibitionScRsp),
             "CmdCommonRogueComponentUpdateScNotify" => ::std::option::Option::Some(CmdRogueCommon::CmdCommonRogueComponentUpdateScNotify),
-            "CmdGetRogueCollectionScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueCollectionScRsp),
-            "CmdGetRogueShopMiracleInfoScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueShopMiracleInfoScRsp),
-            "CmdRogueDoGambleCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueDoGambleCsReq),
-            "CmdGetRogueShopMiracleInfoCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueShopMiracleInfoCsReq),
+            "CmdSyncRogueCommonVirtualItemInfoScNotify" => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueCommonVirtualItemInfoScNotify),
+            "CmdSyncRogueCommonDialogueDataScNotify" => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueCommonDialogueDataScNotify),
+            "CmdGetRogueCommonDialogueDataCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueCommonDialogueDataCsReq),
+            "CmdRogueWorkbenchHandleFuncScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchHandleFuncScRsp),
+            "CmdEnhanceCommonRogueBuffCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdEnhanceCommonRogueBuffCsReq),
+            "CmdSelectRogueCommonDialogueOptionCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdSelectRogueCommonDialogueOptionCsReq),
+            "CmdRogueWorkbenchGetInfoCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchGetInfoCsReq),
+            "CmdRogueDebugMessageScNotify" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueDebugMessageScNotify),
+            "CmdBuyRogueShopBuffCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdBuyRogueShopBuffCsReq),
+            "CmdUpdateRogueAdventureRoomScoreScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdUpdateRogueAdventureRoomScoreScRsp),
+            "CmdSetRogueExhibitionCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdSetRogueExhibitionCsReq),
+            "CmdRogueGetGambleInfoScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueGetGambleInfoScRsp),
             "CmdGetRogueHandbookDataCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueHandbookDataCsReq),
+            "CmdRogueWorkbenchGetInfoScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchGetInfoScRsp),
+            "CmdGetRogueAdventureRoomInfoCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueAdventureRoomInfoCsReq),
+            "CmdGetRogueShopMiracleInfoScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueShopMiracleInfoScRsp),
+            "CmdRogueWorkbenchSelectFuncCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchSelectFuncCsReq),
+            "CmdRogueWorkbenchHandleFuncCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchHandleFuncCsReq),
+            "CmdHandleRogueCommonPendingActionScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdHandleRogueCommonPendingActionScRsp),
+            "CmdGetEnhanceCommonRogueBuffInfoCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdGetEnhanceCommonRogueBuffInfoCsReq),
+            "CmdSelectRogueCommonDialogueOptionScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdSelectRogueCommonDialogueOptionScRsp),
+            "CmdHandleRogueCommonPendingActionCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdHandleRogueCommonPendingActionCsReq),
+            "CmdExchangeRogueBuffWithMiracleScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdExchangeRogueBuffWithMiracleScRsp),
+            "CmdGetEnhanceCommonRogueBuffInfoScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdGetEnhanceCommonRogueBuffInfoScRsp),
+            "CmdGetRogueHandbookDataScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueHandbookDataScRsp),
+            "CmdSyncRogueCommonDialogueOptionFinishScNotify" => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueCommonDialogueOptionFinishScNotify),
+            "CmdRogueGetGambleInfoCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueGetGambleInfoCsReq),
+            "CmdGetRogueExhibitionCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueExhibitionCsReq),
+            "CmdFinishRogueCommonDialogueScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdFinishRogueCommonDialogueScRsp),
+            "CmdSyncRogueHandbookDataUpdateScNotify" => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueHandbookDataUpdateScNotify),
+            "CmdCommonRogueQueryScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdCommonRogueQueryScRsp),
+            "CmdRogueNpcDisappearCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueNpcDisappearCsReq),
+            "CmdRogueDoGambleCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueDoGambleCsReq),
+            "CmdGetRogueAdventureRoomInfoScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueAdventureRoomInfoScRsp),
+            "CmdBuyRogueShopBuffScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdBuyRogueShopBuffScRsp),
+            "CmdSetRogueCollectionCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdSetRogueCollectionCsReq),
+            "CmdSyncRogueAdventureRoomInfoScNotify" => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueAdventureRoomInfoScNotify),
+            "CmdRogueDoGambleScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueDoGambleScRsp),
+            "CmdSetRogueExhibitionScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdSetRogueExhibitionScRsp),
+            "CmdPrepareRogueAdventureRoomCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdPrepareRogueAdventureRoomCsReq),
+            "CmdStopRogueAdventureRoomScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdStopRogueAdventureRoomScRsp),
+            "CmdStopRogueAdventureRoomCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdStopRogueAdventureRoomCsReq),
+            "CmdEnhanceCommonRogueBuffScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdEnhanceCommonRogueBuffScRsp),
+            "CmdBuyRogueShopMiracleCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdBuyRogueShopMiracleCsReq),
+            "CmdGetRogueCollectionCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueCollectionCsReq),
+            "CmdGetRogueShopBuffInfoScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueShopBuffInfoScRsp),
+            "CmdGetRogueCollectionScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueCollectionScRsp),
+            "CmdGetRogueCommonDialogueDataScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueCommonDialogueDataScRsp),
+            "CmdRogueWorkbenchSelectFuncScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchSelectFuncScRsp),
+            "CmdSyncRogueCommonActionResultScNotify" => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueCommonActionResultScNotify),
+            "CmdSetRogueCollectionScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdSetRogueCollectionScRsp),
+            "CmdGetRogueShopBuffInfoCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueShopBuffInfoCsReq),
+            "CmdTakeRogueMiracleHandbookRewardScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdTakeRogueMiracleHandbookRewardScRsp),
+            "CmdFinishRogueCommonDialogueCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdFinishRogueCommonDialogueCsReq),
+            "CmdTakeRogueEventHandbookRewardCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdTakeRogueEventHandbookRewardCsReq),
+            "CmdExchangeRogueBuffWithMiracleCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdExchangeRogueBuffWithMiracleCsReq),
+            "CmdGetRogueShopMiracleInfoCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueShopMiracleInfoCsReq),
+            "CmdCommonRogueUpdateScNotify" => ::std::option::Option::Some(CmdRogueCommon::CmdCommonRogueUpdateScNotify),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRogueCommon] = &[
         CmdRogueCommon::CmdRogueCommonTypeNone,
-        CmdRogueCommon::CmdRogueNpcDisappearCsReq,
-        CmdRogueCommon::CmdGetEnhanceCommonRogueBuffInfoScRsp,
-        CmdRogueCommon::CmdRogueDoGambleScRsp,
-        CmdRogueCommon::CmdSelectRogueCommonDialogueOptionCsReq,
-        CmdRogueCommon::CmdBuyRogueShopBuffCsReq,
-        CmdRogueCommon::CmdPrepareRogueAdventureRoomCsReq,
-        CmdRogueCommon::CmdRogueWorkbenchSelectFuncScRsp,
-        CmdRogueCommon::CmdHandleRogueCommonPendingActionCsReq,
-        CmdRogueCommon::CmdGetRogueCommonDialogueDataCsReq,
-        CmdRogueCommon::CmdSetRogueExhibitionCsReq,
-        CmdRogueCommon::CmdGetEnhanceCommonRogueBuffInfoCsReq,
-        CmdRogueCommon::CmdBuyRogueShopMiracleScRsp,
-        CmdRogueCommon::CmdTakeRogueEventHandbookRewardCsReq,
-        CmdRogueCommon::CmdCommonRogueQueryScRsp,
-        CmdRogueCommon::CmdSyncRogueCommonDialogueOptionFinishScNotify,
-        CmdRogueCommon::CmdGetRogueAdventureRoomInfoScRsp,
-        CmdRogueCommon::CmdPrepareRogueAdventureRoomScRsp,
-        CmdRogueCommon::CmdGetRogueCollectionCsReq,
-        CmdRogueCommon::CmdUpdateRogueAdventureRoomScoreCsReq,
-        CmdRogueCommon::CmdGetRogueShopBuffInfoCsReq,
-        CmdRogueCommon::CmdSyncRogueCommonPendingActionScNotify,
-        CmdRogueCommon::CmdFinishRogueCommonDialogueCsReq,
-        CmdRogueCommon::CmdRogueWorkbenchGetInfoCsReq,
-        CmdRogueCommon::CmdTakeRogueEventHandbookRewardScRsp,
-        CmdRogueCommon::CmdRogueWorkbenchHandleFuncCsReq,
-        CmdRogueCommon::CmdRogueWorkbenchSelectFuncCsReq,
-        CmdRogueCommon::CmdEnhanceCommonRogueBuffScRsp,
-        CmdRogueCommon::CmdSetRogueCollectionCsReq,
-        CmdRogueCommon::CmdSyncRogueHandbookDataUpdateScNotify,
-        CmdRogueCommon::CmdExchangeRogueBuffWithMiracleCsReq,
-        CmdRogueCommon::CmdGetRogueExhibitionCsReq,
-        CmdRogueCommon::CmdSetRogueCollectionScRsp,
-        CmdRogueCommon::CmdEnhanceCommonRogueBuffCsReq,
-        CmdRogueCommon::CmdStopRogueAdventureRoomScRsp,
-        CmdRogueCommon::CmdRogueWorkbenchGetInfoScRsp,
-        CmdRogueCommon::CmdStopRogueAdventureRoomCsReq,
-        CmdRogueCommon::CmdGetRogueAdventureRoomInfoCsReq,
-        CmdRogueCommon::CmdFinishRogueCommonDialogueScRsp,
-        CmdRogueCommon::CmdGetRogueShopBuffInfoScRsp,
-        CmdRogueCommon::CmdBuyRogueShopBuffScRsp,
-        CmdRogueCommon::CmdBuyRogueShopMiracleCsReq,
-        CmdRogueCommon::CmdSyncRogueCommonVirtualItemInfoScNotify,
-        CmdRogueCommon::CmdGetRogueCommonDialogueDataScRsp,
-        CmdRogueCommon::CmdGetRogueHandbookDataScRsp,
-        CmdRogueCommon::CmdRogueNpcDisappearScRsp,
-        CmdRogueCommon::CmdHandleRogueCommonPendingActionScRsp,
-        CmdRogueCommon::CmdSyncRogueAdventureRoomInfoScNotify,
-        CmdRogueCommon::CmdExchangeRogueBuffWithMiracleScRsp,
-        CmdRogueCommon::CmdSyncRogueCommonDialogueDataScNotify,
-        CmdRogueCommon::CmdCommonRogueUpdateScNotify,
-        CmdRogueCommon::CmdRogueDebugMessageScNotify,
         CmdRogueCommon::CmdCommonRogueQueryCsReq,
-        CmdRogueCommon::CmdSetRogueExhibitionScRsp,
-        CmdRogueCommon::CmdRogueWorkbenchHandleFuncScRsp,
-        CmdRogueCommon::CmdSyncRogueCommonActionResultScNotify,
-        CmdRogueCommon::CmdSelectRogueCommonDialogueOptionScRsp,
-        CmdRogueCommon::CmdRogueGetGambleInfoCsReq,
-        CmdRogueCommon::CmdRogueGetGambleInfoScRsp,
-        CmdRogueCommon::CmdGetRogueExhibitionScRsp,
-        CmdRogueCommon::CmdUpdateRogueAdventureRoomScoreScRsp,
-        CmdRogueCommon::CmdTakeRogueMiracleHandbookRewardScRsp,
+        CmdRogueCommon::CmdTakeRogueEventHandbookRewardScRsp,
+        CmdRogueCommon::CmdBuyRogueShopMiracleScRsp,
+        CmdRogueCommon::CmdSyncRogueCommonPendingActionScNotify,
+        CmdRogueCommon::CmdRogueNpcDisappearScRsp,
         CmdRogueCommon::CmdTakeRogueMiracleHandbookRewardCsReq,
+        CmdRogueCommon::CmdUpdateRogueAdventureRoomScoreCsReq,
+        CmdRogueCommon::CmdPrepareRogueAdventureRoomScRsp,
+        CmdRogueCommon::CmdGetRogueExhibitionScRsp,
         CmdRogueCommon::CmdCommonRogueComponentUpdateScNotify,
-        CmdRogueCommon::CmdGetRogueCollectionScRsp,
-        CmdRogueCommon::CmdGetRogueShopMiracleInfoScRsp,
-        CmdRogueCommon::CmdRogueDoGambleCsReq,
-        CmdRogueCommon::CmdGetRogueShopMiracleInfoCsReq,
+        CmdRogueCommon::CmdSyncRogueCommonVirtualItemInfoScNotify,
+        CmdRogueCommon::CmdSyncRogueCommonDialogueDataScNotify,
+        CmdRogueCommon::CmdGetRogueCommonDialogueDataCsReq,
+        CmdRogueCommon::CmdRogueWorkbenchHandleFuncScRsp,
+        CmdRogueCommon::CmdEnhanceCommonRogueBuffCsReq,
+        CmdRogueCommon::CmdSelectRogueCommonDialogueOptionCsReq,
+        CmdRogueCommon::CmdRogueWorkbenchGetInfoCsReq,
+        CmdRogueCommon::CmdRogueDebugMessageScNotify,
+        CmdRogueCommon::CmdBuyRogueShopBuffCsReq,
+        CmdRogueCommon::CmdUpdateRogueAdventureRoomScoreScRsp,
+        CmdRogueCommon::CmdSetRogueExhibitionCsReq,
+        CmdRogueCommon::CmdRogueGetGambleInfoScRsp,
         CmdRogueCommon::CmdGetRogueHandbookDataCsReq,
+        CmdRogueCommon::CmdRogueWorkbenchGetInfoScRsp,
+        CmdRogueCommon::CmdGetRogueAdventureRoomInfoCsReq,
+        CmdRogueCommon::CmdGetRogueShopMiracleInfoScRsp,
+        CmdRogueCommon::CmdRogueWorkbenchSelectFuncCsReq,
+        CmdRogueCommon::CmdRogueWorkbenchHandleFuncCsReq,
+        CmdRogueCommon::CmdHandleRogueCommonPendingActionScRsp,
+        CmdRogueCommon::CmdGetEnhanceCommonRogueBuffInfoCsReq,
+        CmdRogueCommon::CmdSelectRogueCommonDialogueOptionScRsp,
+        CmdRogueCommon::CmdHandleRogueCommonPendingActionCsReq,
+        CmdRogueCommon::CmdExchangeRogueBuffWithMiracleScRsp,
+        CmdRogueCommon::CmdGetEnhanceCommonRogueBuffInfoScRsp,
+        CmdRogueCommon::CmdGetRogueHandbookDataScRsp,
+        CmdRogueCommon::CmdSyncRogueCommonDialogueOptionFinishScNotify,
+        CmdRogueCommon::CmdRogueGetGambleInfoCsReq,
+        CmdRogueCommon::CmdGetRogueExhibitionCsReq,
+        CmdRogueCommon::CmdFinishRogueCommonDialogueScRsp,
+        CmdRogueCommon::CmdSyncRogueHandbookDataUpdateScNotify,
+        CmdRogueCommon::CmdCommonRogueQueryScRsp,
+        CmdRogueCommon::CmdRogueNpcDisappearCsReq,
+        CmdRogueCommon::CmdRogueDoGambleCsReq,
+        CmdRogueCommon::CmdGetRogueAdventureRoomInfoScRsp,
+        CmdRogueCommon::CmdBuyRogueShopBuffScRsp,
+        CmdRogueCommon::CmdSetRogueCollectionCsReq,
+        CmdRogueCommon::CmdSyncRogueAdventureRoomInfoScNotify,
+        CmdRogueCommon::CmdRogueDoGambleScRsp,
+        CmdRogueCommon::CmdSetRogueExhibitionScRsp,
+        CmdRogueCommon::CmdPrepareRogueAdventureRoomCsReq,
+        CmdRogueCommon::CmdStopRogueAdventureRoomScRsp,
+        CmdRogueCommon::CmdStopRogueAdventureRoomCsReq,
+        CmdRogueCommon::CmdEnhanceCommonRogueBuffScRsp,
+        CmdRogueCommon::CmdBuyRogueShopMiracleCsReq,
+        CmdRogueCommon::CmdGetRogueCollectionCsReq,
+        CmdRogueCommon::CmdGetRogueShopBuffInfoScRsp,
+        CmdRogueCommon::CmdGetRogueCollectionScRsp,
+        CmdRogueCommon::CmdGetRogueCommonDialogueDataScRsp,
+        CmdRogueCommon::CmdRogueWorkbenchSelectFuncScRsp,
+        CmdRogueCommon::CmdSyncRogueCommonActionResultScNotify,
+        CmdRogueCommon::CmdSetRogueCollectionScRsp,
+        CmdRogueCommon::CmdGetRogueShopBuffInfoCsReq,
+        CmdRogueCommon::CmdTakeRogueMiracleHandbookRewardScRsp,
+        CmdRogueCommon::CmdFinishRogueCommonDialogueCsReq,
+        CmdRogueCommon::CmdTakeRogueEventHandbookRewardCsReq,
+        CmdRogueCommon::CmdExchangeRogueBuffWithMiracleCsReq,
+        CmdRogueCommon::CmdGetRogueShopMiracleInfoCsReq,
+        CmdRogueCommon::CmdCommonRogueUpdateScNotify,
     ];
 }
 
@@ -407,74 +407,74 @@ impl ::protobuf::EnumFull for CmdRogueCommon {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdRogueCommon::CmdRogueCommonTypeNone => 0,
-            CmdRogueCommon::CmdRogueNpcDisappearCsReq => 1,
-            CmdRogueCommon::CmdGetEnhanceCommonRogueBuffInfoScRsp => 2,
-            CmdRogueCommon::CmdRogueDoGambleScRsp => 3,
-            CmdRogueCommon::CmdSelectRogueCommonDialogueOptionCsReq => 4,
-            CmdRogueCommon::CmdBuyRogueShopBuffCsReq => 5,
-            CmdRogueCommon::CmdPrepareRogueAdventureRoomCsReq => 6,
-            CmdRogueCommon::CmdRogueWorkbenchSelectFuncScRsp => 7,
-            CmdRogueCommon::CmdHandleRogueCommonPendingActionCsReq => 8,
-            CmdRogueCommon::CmdGetRogueCommonDialogueDataCsReq => 9,
-            CmdRogueCommon::CmdSetRogueExhibitionCsReq => 10,
-            CmdRogueCommon::CmdGetEnhanceCommonRogueBuffInfoCsReq => 11,
-            CmdRogueCommon::CmdBuyRogueShopMiracleScRsp => 12,
-            CmdRogueCommon::CmdTakeRogueEventHandbookRewardCsReq => 13,
-            CmdRogueCommon::CmdCommonRogueQueryScRsp => 14,
-            CmdRogueCommon::CmdSyncRogueCommonDialogueOptionFinishScNotify => 15,
-            CmdRogueCommon::CmdGetRogueAdventureRoomInfoScRsp => 16,
-            CmdRogueCommon::CmdPrepareRogueAdventureRoomScRsp => 17,
-            CmdRogueCommon::CmdGetRogueCollectionCsReq => 18,
-            CmdRogueCommon::CmdUpdateRogueAdventureRoomScoreCsReq => 19,
-            CmdRogueCommon::CmdGetRogueShopBuffInfoCsReq => 20,
-            CmdRogueCommon::CmdSyncRogueCommonPendingActionScNotify => 21,
-            CmdRogueCommon::CmdFinishRogueCommonDialogueCsReq => 22,
-            CmdRogueCommon::CmdRogueWorkbenchGetInfoCsReq => 23,
-            CmdRogueCommon::CmdTakeRogueEventHandbookRewardScRsp => 24,
-            CmdRogueCommon::CmdRogueWorkbenchHandleFuncCsReq => 25,
-            CmdRogueCommon::CmdRogueWorkbenchSelectFuncCsReq => 26,
-            CmdRogueCommon::CmdEnhanceCommonRogueBuffScRsp => 27,
-            CmdRogueCommon::CmdSetRogueCollectionCsReq => 28,
-            CmdRogueCommon::CmdSyncRogueHandbookDataUpdateScNotify => 29,
-            CmdRogueCommon::CmdExchangeRogueBuffWithMiracleCsReq => 30,
-            CmdRogueCommon::CmdGetRogueExhibitionCsReq => 31,
-            CmdRogueCommon::CmdSetRogueCollectionScRsp => 32,
-            CmdRogueCommon::CmdEnhanceCommonRogueBuffCsReq => 33,
-            CmdRogueCommon::CmdStopRogueAdventureRoomScRsp => 34,
-            CmdRogueCommon::CmdRogueWorkbenchGetInfoScRsp => 35,
-            CmdRogueCommon::CmdStopRogueAdventureRoomCsReq => 36,
-            CmdRogueCommon::CmdGetRogueAdventureRoomInfoCsReq => 37,
-            CmdRogueCommon::CmdFinishRogueCommonDialogueScRsp => 38,
-            CmdRogueCommon::CmdGetRogueShopBuffInfoScRsp => 39,
-            CmdRogueCommon::CmdBuyRogueShopBuffScRsp => 40,
-            CmdRogueCommon::CmdBuyRogueShopMiracleCsReq => 41,
-            CmdRogueCommon::CmdSyncRogueCommonVirtualItemInfoScNotify => 42,
-            CmdRogueCommon::CmdGetRogueCommonDialogueDataScRsp => 43,
-            CmdRogueCommon::CmdGetRogueHandbookDataScRsp => 44,
-            CmdRogueCommon::CmdRogueNpcDisappearScRsp => 45,
-            CmdRogueCommon::CmdHandleRogueCommonPendingActionScRsp => 46,
+            CmdRogueCommon::CmdCommonRogueQueryCsReq => 1,
+            CmdRogueCommon::CmdTakeRogueEventHandbookRewardScRsp => 2,
+            CmdRogueCommon::CmdBuyRogueShopMiracleScRsp => 3,
+            CmdRogueCommon::CmdSyncRogueCommonPendingActionScNotify => 4,
+            CmdRogueCommon::CmdRogueNpcDisappearScRsp => 5,
+            CmdRogueCommon::CmdTakeRogueMiracleHandbookRewardCsReq => 6,
+            CmdRogueCommon::CmdUpdateRogueAdventureRoomScoreCsReq => 7,
+            CmdRogueCommon::CmdPrepareRogueAdventureRoomScRsp => 8,
+            CmdRogueCommon::CmdGetRogueExhibitionScRsp => 9,
+            CmdRogueCommon::CmdCommonRogueComponentUpdateScNotify => 10,
+            CmdRogueCommon::CmdSyncRogueCommonVirtualItemInfoScNotify => 11,
+            CmdRogueCommon::CmdSyncRogueCommonDialogueDataScNotify => 12,
+            CmdRogueCommon::CmdGetRogueCommonDialogueDataCsReq => 13,
+            CmdRogueCommon::CmdRogueWorkbenchHandleFuncScRsp => 14,
+            CmdRogueCommon::CmdEnhanceCommonRogueBuffCsReq => 15,
+            CmdRogueCommon::CmdSelectRogueCommonDialogueOptionCsReq => 16,
+            CmdRogueCommon::CmdRogueWorkbenchGetInfoCsReq => 17,
+            CmdRogueCommon::CmdRogueDebugMessageScNotify => 18,
+            CmdRogueCommon::CmdBuyRogueShopBuffCsReq => 19,
+            CmdRogueCommon::CmdUpdateRogueAdventureRoomScoreScRsp => 20,
+            CmdRogueCommon::CmdSetRogueExhibitionCsReq => 21,
+            CmdRogueCommon::CmdRogueGetGambleInfoScRsp => 22,
+            CmdRogueCommon::CmdGetRogueHandbookDataCsReq => 23,
+            CmdRogueCommon::CmdRogueWorkbenchGetInfoScRsp => 24,
+            CmdRogueCommon::CmdGetRogueAdventureRoomInfoCsReq => 25,
+            CmdRogueCommon::CmdGetRogueShopMiracleInfoScRsp => 26,
+            CmdRogueCommon::CmdRogueWorkbenchSelectFuncCsReq => 27,
+            CmdRogueCommon::CmdRogueWorkbenchHandleFuncCsReq => 28,
+            CmdRogueCommon::CmdHandleRogueCommonPendingActionScRsp => 29,
+            CmdRogueCommon::CmdGetEnhanceCommonRogueBuffInfoCsReq => 30,
+            CmdRogueCommon::CmdSelectRogueCommonDialogueOptionScRsp => 31,
+            CmdRogueCommon::CmdHandleRogueCommonPendingActionCsReq => 32,
+            CmdRogueCommon::CmdExchangeRogueBuffWithMiracleScRsp => 33,
+            CmdRogueCommon::CmdGetEnhanceCommonRogueBuffInfoScRsp => 34,
+            CmdRogueCommon::CmdGetRogueHandbookDataScRsp => 35,
+            CmdRogueCommon::CmdSyncRogueCommonDialogueOptionFinishScNotify => 36,
+            CmdRogueCommon::CmdRogueGetGambleInfoCsReq => 37,
+            CmdRogueCommon::CmdGetRogueExhibitionCsReq => 38,
+            CmdRogueCommon::CmdFinishRogueCommonDialogueScRsp => 39,
+            CmdRogueCommon::CmdSyncRogueHandbookDataUpdateScNotify => 40,
+            CmdRogueCommon::CmdCommonRogueQueryScRsp => 41,
+            CmdRogueCommon::CmdRogueNpcDisappearCsReq => 42,
+            CmdRogueCommon::CmdRogueDoGambleCsReq => 43,
+            CmdRogueCommon::CmdGetRogueAdventureRoomInfoScRsp => 44,
+            CmdRogueCommon::CmdBuyRogueShopBuffScRsp => 45,
+            CmdRogueCommon::CmdSetRogueCollectionCsReq => 46,
             CmdRogueCommon::CmdSyncRogueAdventureRoomInfoScNotify => 47,
-            CmdRogueCommon::CmdExchangeRogueBuffWithMiracleScRsp => 48,
-            CmdRogueCommon::CmdSyncRogueCommonDialogueDataScNotify => 49,
-            CmdRogueCommon::CmdCommonRogueUpdateScNotify => 50,
-            CmdRogueCommon::CmdRogueDebugMessageScNotify => 51,
-            CmdRogueCommon::CmdCommonRogueQueryCsReq => 52,
-            CmdRogueCommon::CmdSetRogueExhibitionScRsp => 53,
-            CmdRogueCommon::CmdRogueWorkbenchHandleFuncScRsp => 54,
-            CmdRogueCommon::CmdSyncRogueCommonActionResultScNotify => 55,
-            CmdRogueCommon::CmdSelectRogueCommonDialogueOptionScRsp => 56,
-            CmdRogueCommon::CmdRogueGetGambleInfoCsReq => 57,
-            CmdRogueCommon::CmdRogueGetGambleInfoScRsp => 58,
-            CmdRogueCommon::CmdGetRogueExhibitionScRsp => 59,
-            CmdRogueCommon::CmdUpdateRogueAdventureRoomScoreScRsp => 60,
-            CmdRogueCommon::CmdTakeRogueMiracleHandbookRewardScRsp => 61,
-            CmdRogueCommon::CmdTakeRogueMiracleHandbookRewardCsReq => 62,
-            CmdRogueCommon::CmdCommonRogueComponentUpdateScNotify => 63,
-            CmdRogueCommon::CmdGetRogueCollectionScRsp => 64,
-            CmdRogueCommon::CmdGetRogueShopMiracleInfoScRsp => 65,
-            CmdRogueCommon::CmdRogueDoGambleCsReq => 66,
+            CmdRogueCommon::CmdRogueDoGambleScRsp => 48,
+            CmdRogueCommon::CmdSetRogueExhibitionScRsp => 49,
+            CmdRogueCommon::CmdPrepareRogueAdventureRoomCsReq => 50,
+            CmdRogueCommon::CmdStopRogueAdventureRoomScRsp => 51,
+            CmdRogueCommon::CmdStopRogueAdventureRoomCsReq => 52,
+            CmdRogueCommon::CmdEnhanceCommonRogueBuffScRsp => 53,
+            CmdRogueCommon::CmdBuyRogueShopMiracleCsReq => 54,
+            CmdRogueCommon::CmdGetRogueCollectionCsReq => 55,
+            CmdRogueCommon::CmdGetRogueShopBuffInfoScRsp => 56,
+            CmdRogueCommon::CmdGetRogueCollectionScRsp => 57,
+            CmdRogueCommon::CmdGetRogueCommonDialogueDataScRsp => 58,
+            CmdRogueCommon::CmdRogueWorkbenchSelectFuncScRsp => 59,
+            CmdRogueCommon::CmdSyncRogueCommonActionResultScNotify => 60,
+            CmdRogueCommon::CmdSetRogueCollectionScRsp => 61,
+            CmdRogueCommon::CmdGetRogueShopBuffInfoCsReq => 62,
+            CmdRogueCommon::CmdTakeRogueMiracleHandbookRewardScRsp => 63,
+            CmdRogueCommon::CmdFinishRogueCommonDialogueCsReq => 64,
+            CmdRogueCommon::CmdTakeRogueEventHandbookRewardCsReq => 65,
+            CmdRogueCommon::CmdExchangeRogueBuffWithMiracleCsReq => 66,
             CmdRogueCommon::CmdGetRogueShopMiracleInfoCsReq => 67,
-            CmdRogueCommon::CmdGetRogueHandbookDataCsReq => 68,
+            CmdRogueCommon::CmdCommonRogueUpdateScNotify => 68,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -494,55 +494,56 @@ impl CmdRogueCommon {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14CmdRogueCommon.proto*\xe4\x14\n\x0eCmdRogueCommon\x12\x1a\n\x16Cmd\
-    RogueCommonTypeNone\x10\0\x12\x1e\n\x19CmdRogueNpcDisappearCsReq\x10\xaa\
-    ,\x12*\n%CmdGetEnhanceCommonRogueBuffInfoScRsp\x10\x81,\x12\x1a\n\x15Cmd\
-    RogueDoGambleScRsp\x10\x9a,\x12,\n'CmdSelectRogueCommonDialogueOptionCsR\
-    eq\x10\xb2,\x12\x1d\n\x18CmdBuyRogueShopBuffCsReq\x10\xf0+\x12&\n!CmdPre\
-    pareRogueAdventureRoomCsReq\x10\xf4+\x12%\n\x20CmdRogueWorkbenchSelectFu\
-    ncScRsp\x10\x8c,\x12+\n&CmdHandleRogueCommonPendingActionCsReq\x10\xf8+\
-    \x12'\n\"CmdGetRogueCommonDialogueDataCsReq\x10\xff+\x12\x1f\n\x1aCmdSet\
-    RogueExhibitionCsReq\x10\x8a,\x12*\n%CmdGetEnhanceCommonRogueBuffInfoCsR\
-    eq\x10\xfd+\x12\x20\n\x1bCmdBuyRogueShopMiracleScRsp\x10\xb0,\x12)\n$Cmd\
-    TakeRogueEventHandbookRewardCsReq\x10\x9f,\x12\x1d\n\x18CmdCommonRogueQu\
-    eryScRsp\x10\x80,\x123\n.CmdSyncRogueCommonDialogueOptionFinishScNotify\
-    \x10\x97,\x12&\n!CmdGetRogueAdventureRoomInfoScRsp\x10\x90,\x12&\n!CmdPr\
-    epareRogueAdventureRoomScRsp\x10\xe3+\x12\x1f\n\x1aCmdGetRogueCollection\
-    CsReq\x10\xb1,\x12*\n%CmdUpdateRogueAdventureRoomScoreCsReq\x10\x8d,\x12\
-    !\n\x1cCmdGetRogueShopBuffInfoCsReq\x10\x95,\x12,\n'CmdSyncRogueCommonPe\
-    ndingActionScNotify\x10\xef+\x12&\n!CmdFinishRogueCommonDialogueCsReq\
-    \x10\xb4,\x12\"\n\x1dCmdRogueWorkbenchGetInfoCsReq\x10\xf6+\x12)\n$CmdTa\
-    keRogueEventHandbookRewardScRsp\x10\xee+\x12%\n\x20CmdRogueWorkbenchHand\
-    leFuncCsReq\x10\xe7+\x12%\n\x20CmdRogueWorkbenchSelectFuncCsReq\x10\xb7,\
-    \x12#\n\x1eCmdEnhanceCommonRogueBuffScRsp\x10\xa9,\x12\x1f\n\x1aCmdSetRo\
-    gueCollectionCsReq\x10\xa5,\x12+\n&CmdSyncRogueHandbookDataUpdateScNotif\
-    y\x10\xe4+\x12)\n$CmdExchangeRogueBuffWithMiracleCsReq\x10\x9d,\x12\x1f\
-    \n\x1aCmdGetRogueExhibitionCsReq\x10\xbc,\x12\x1f\n\x1aCmdSetRogueCollec\
-    tionScRsp\x10\xa4,\x12#\n\x1eCmdEnhanceCommonRogueBuffCsReq\x10\x93,\x12\
-    #\n\x1eCmdStopRogueAdventureRoomScRsp\x10\xc3,\x12\"\n\x1dCmdRogueWorkbe\
-    nchGetInfoScRsp\x10\x83,\x12#\n\x1eCmdStopRogueAdventureRoomCsReq\x10\
-    \xb3,\x12&\n!CmdGetRogueAdventureRoomInfoCsReq\x10\xab,\x12&\n!CmdFinish\
-    RogueCommonDialogueScRsp\x10\xfb+\x12!\n\x1cCmdGetRogueShopBuffInfoScRsp\
-    \x10\x82,\x12\x1d\n\x18CmdBuyRogueShopBuffScRsp\x10\x8f,\x12\x20\n\x1bCm\
-    dBuyRogueShopMiracleCsReq\x10\x85,\x12.\n)CmdSyncRogueCommonVirtualItemI\
-    nfoScNotify\x10\xa2,\x12'\n\"CmdGetRogueCommonDialogueDataScRsp\x10\xa7,\
-    \x12!\n\x1cCmdGetRogueHandbookDataScRsp\x10\xbb,\x12\x1e\n\x19CmdRogueNp\
-    cDisappearScRsp\x10\xfe+\x12+\n&CmdHandleRogueCommonPendingActionScRsp\
-    \x10\xec+\x12*\n%CmdSyncRogueAdventureRoomInfoScNotify\x10\x9b,\x12)\n$C\
-    mdExchangeRogueBuffWithMiracleScRsp\x10\xf9+\x12+\n&CmdSyncRogueCommonDi\
-    alogueDataScNotify\x10\x86,\x12!\n\x1cCmdCommonRogueUpdateScNotify\x10\
-    \xc0,\x12!\n\x1cCmdRogueDebugMessageScNotify\x10\xeb+\x12\x1d\n\x18CmdCo\
-    mmonRogueQueryCsReq\x10\x9c,\x12\x1f\n\x1aCmdSetRogueExhibitionScRsp\x10\
-    \x88,\x12%\n\x20CmdRogueWorkbenchHandleFuncScRsp\x10\xf2+\x12+\n&CmdSync\
-    RogueCommonActionResultScNotify\x10\xf7+\x12,\n'CmdSelectRogueCommonDial\
-    ogueOptionScRsp\x10\x9e,\x12\x1f\n\x1aCmdRogueGetGambleInfoCsReq\x10\xac\
-    ,\x12\x1f\n\x1aCmdRogueGetGambleInfoScRsp\x10\xe1+\x12\x1f\n\x1aCmdGetRo\
-    gueExhibitionScRsp\x10\xc2,\x12*\n%CmdUpdateRogueAdventureRoomScoreScRsp\
-    \x10\xe2+\x12+\n&CmdTakeRogueMiracleHandbookRewardScRsp\x10\x8b,\x12+\n&\
-    CmdTakeRogueMiracleHandbookRewardCsReq\x10\xb8,\x12*\n%CmdCommonRogueCom\
-    ponentUpdateScNotify\x10\xe6+\x12\x1f\n\x1aCmdGetRogueCollectionScRsp\
-    \x10\x92,\x12$\n\x1fCmdGetRogueShopMiracleInfoScRsp\x10\x87,\x12\x1a\n\
-    \x15CmdRogueDoGambleCsReq\x10\x89,\x12$\n\x1fCmdGetRogueShopMiracleInfoC\
-    sReq\x10\x8e,\x12!\n\x1cCmdGetRogueHandbookDataCsReq\x10\xad,b\x06proto3\
+    RogueCommonTypeNone\x10\0\x12\x1d\n\x18CmdCommonRogueQueryCsReq\x10\xa0,\
+    \x12)\n$CmdTakeRogueEventHandbookRewardScRsp\x10\xaf,\x12\x20\n\x1bCmdBu\
+    yRogueShopMiracleScRsp\x10\xf8+\x12,\n'CmdSyncRogueCommonPendingActionSc\
+    Notify\x10\x87,\x12\x1e\n\x19CmdRogueNpcDisappearScRsp\x10\x8e,\x12+\n&C\
+    mdTakeRogueMiracleHandbookRewardCsReq\x10\xf2+\x12*\n%CmdUpdateRogueAdve\
+    ntureRoomScoreCsReq\x10\x97,\x12&\n!CmdPrepareRogueAdventureRoomScRsp\
+    \x10\xb4,\x12\x1f\n\x1aCmdGetRogueExhibitionScRsp\x10\x98,\x12*\n%CmdCom\
+    monRogueComponentUpdateScNotify\x10\x99,\x12.\n)CmdSyncRogueCommonVirtua\
+    lItemInfoScNotify\x10\xc4,\x12+\n&CmdSyncRogueCommonDialogueDataScNotify\
+    \x10\xb3,\x12'\n\"CmdGetRogueCommonDialogueDataCsReq\x10\xe3+\x12%\n\x20\
+    CmdRogueWorkbenchHandleFuncScRsp\x10\xa6,\x12#\n\x1eCmdEnhanceCommonRogu\
+    eBuffCsReq\x10\x9b,\x12,\n'CmdSelectRogueCommonDialogueOptionCsReq\x10\
+    \x9d,\x12\"\n\x1dCmdRogueWorkbenchGetInfoCsReq\x10\xf0+\x12!\n\x1cCmdRog\
+    ueDebugMessageScNotify\x10\xef+\x12\x1d\n\x18CmdBuyRogueShopBuffCsReq\
+    \x10\xbd,\x12*\n%CmdUpdateRogueAdventureRoomScoreScRsp\x10\xf6+\x12\x1f\
+    \n\x1aCmdSetRogueExhibitionCsReq\x10\xe9+\x12\x1f\n\x1aCmdRogueGetGamble\
+    InfoScRsp\x10\xb7,\x12!\n\x1cCmdGetRogueHandbookDataCsReq\x10\xf5+\x12\"\
+    \n\x1dCmdRogueWorkbenchGetInfoScRsp\x10\x8f,\x12&\n!CmdGetRogueAdventure\
+    RoomInfoCsReq\x10\xf9+\x12$\n\x1fCmdGetRogueShopMiracleInfoScRsp\x10\xa3\
+    ,\x12%\n\x20CmdRogueWorkbenchSelectFuncCsReq\x10\x9f,\x12%\n\x20CmdRogue\
+    WorkbenchHandleFuncCsReq\x10\x91,\x12+\n&CmdHandleRogueCommonPendingActi\
+    onScRsp\x10\x8d,\x12*\n%CmdGetEnhanceCommonRogueBuffInfoCsReq\x10\x95,\
+    \x12,\n'CmdSelectRogueCommonDialogueOptionScRsp\x10\xfe+\x12+\n&CmdHandl\
+    eRogueCommonPendingActionCsReq\x10\x9c,\x12)\n$CmdExchangeRogueBuffWithM\
+    iracleScRsp\x10\xe7+\x12*\n%CmdGetEnhanceCommonRogueBuffInfoScRsp\x10\
+    \xba,\x12!\n\x1cCmdGetRogueHandbookDataScRsp\x10\xa1,\x123\n.CmdSyncRogu\
+    eCommonDialogueOptionFinishScNotify\x10\xa4,\x12\x1f\n\x1aCmdRogueGetGam\
+    bleInfoCsReq\x10\x86,\x12\x1f\n\x1aCmdGetRogueExhibitionCsReq\x10\xa5,\
+    \x12&\n!CmdFinishRogueCommonDialogueScRsp\x10\xc1,\x12+\n&CmdSyncRogueHa\
+    ndbookDataUpdateScNotify\x10\xe8+\x12\x1d\n\x18CmdCommonRogueQueryScRsp\
+    \x10\xa8,\x12\x1e\n\x19CmdRogueNpcDisappearCsReq\x10\x8b,\x12\x1a\n\x15C\
+    mdRogueDoGambleCsReq\x10\xb6,\x12&\n!CmdGetRogueAdventureRoomInfoScRsp\
+    \x10\xc0,\x12\x1d\n\x18CmdBuyRogueShopBuffScRsp\x10\x82,\x12\x1f\n\x1aCm\
+    dSetRogueCollectionCsReq\x10\x8c,\x12*\n%CmdSyncRogueAdventureRoomInfoSc\
+    Notify\x10\x84,\x12\x1a\n\x15CmdRogueDoGambleScRsp\x10\xa2,\x12\x1f\n\
+    \x1aCmdSetRogueExhibitionScRsp\x10\xf4+\x12&\n!CmdPrepareRogueAdventureR\
+    oomCsReq\x10\xbf,\x12#\n\x1eCmdStopRogueAdventureRoomScRsp\x10\xfd+\x12#\
+    \n\x1eCmdStopRogueAdventureRoomCsReq\x10\xae,\x12#\n\x1eCmdEnhanceCommon\
+    RogueBuffScRsp\x10\xec+\x12\x20\n\x1bCmdBuyRogueShopMiracleCsReq\x10\xaa\
+    ,\x12\x1f\n\x1aCmdGetRogueCollectionCsReq\x10\xc2,\x12!\n\x1cCmdGetRogue\
+    ShopBuffInfoScRsp\x10\x94,\x12\x1f\n\x1aCmdGetRogueCollectionScRsp\x10\
+    \xbb,\x12'\n\"CmdGetRogueCommonDialogueDataScRsp\x10\x88,\x12%\n\x20CmdR\
+    ogueWorkbenchSelectFuncScRsp\x10\xb9,\x12+\n&CmdSyncRogueCommonActionRes\
+    ultScNotify\x10\xb1,\x12\x1f\n\x1aCmdSetRogueCollectionScRsp\x10\xf7+\
+    \x12!\n\x1cCmdGetRogueShopBuffInfoCsReq\x10\xfc+\x12+\n&CmdTakeRogueMira\
+    cleHandbookRewardScRsp\x10\x85,\x12&\n!CmdFinishRogueCommonDialogueCsReq\
+    \x10\x81,\x12)\n$CmdTakeRogueEventHandbookRewardCsReq\x10\xeb+\x12)\n$Cm\
+    dExchangeRogueBuffWithMiracleCsReq\x10\xfa+\x12$\n\x1fCmdGetRogueShopMir\
+    acleInfoCsReq\x10\xfb+\x12!\n\x1cCmdCommonRogueUpdateScNotify\x10\xc3,b\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

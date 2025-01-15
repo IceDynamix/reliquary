@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetMailCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetMailCsReq.JFLKBENIGAN)
-    pub JFLKBENIGAN: u32,
+    // @@protoc_insertion_point(field:GetMailCsReq.ALPABMAKCFA)
+    pub ALPABMAKCFA: u32,
     // @@protoc_insertion_point(field:GetMailCsReq.MUSEUM_RANDOM_EVENT_STATE_START)
     pub MUSEUM_RANDOM_EVENT_STATE_START: u32,
     // special fields
@@ -53,9 +53,9 @@ impl GetMailCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JFLKBENIGAN",
-            |m: &GetMailCsReq| { &m.JFLKBENIGAN },
-            |m: &mut GetMailCsReq| { &mut m.JFLKBENIGAN },
+            "ALPABMAKCFA",
+            |m: &GetMailCsReq| { &m.ALPABMAKCFA },
+            |m: &mut GetMailCsReq| { &mut m.ALPABMAKCFA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MUSEUM_RANDOM_EVENT_STATE_START",
@@ -81,9 +81,9 @@ impl ::protobuf::Message for GetMailCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 72 => {
-                    self.JFLKBENIGAN = is.read_uint32()?;
+                    self.ALPABMAKCFA = is.read_uint32()?;
                 },
-                96 => {
+                40 => {
                     self.MUSEUM_RANDOM_EVENT_STATE_START = is.read_uint32()?;
                 },
                 tag => {
@@ -98,11 +98,11 @@ impl ::protobuf::Message for GetMailCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JFLKBENIGAN != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.JFLKBENIGAN);
+        if self.ALPABMAKCFA != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.ALPABMAKCFA);
         }
         if self.MUSEUM_RANDOM_EVENT_STATE_START != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.MUSEUM_RANDOM_EVENT_STATE_START);
+            my_size += ::protobuf::rt::uint32_size(5, self.MUSEUM_RANDOM_EVENT_STATE_START);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for GetMailCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JFLKBENIGAN != 0 {
-            os.write_uint32(9, self.JFLKBENIGAN)?;
+        if self.ALPABMAKCFA != 0 {
+            os.write_uint32(9, self.ALPABMAKCFA)?;
         }
         if self.MUSEUM_RANDOM_EVENT_STATE_START != 0 {
-            os.write_uint32(12, self.MUSEUM_RANDOM_EVENT_STATE_START)?;
+            os.write_uint32(5, self.MUSEUM_RANDOM_EVENT_STATE_START)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for GetMailCsReq {
     }
 
     fn clear(&mut self) {
-        self.JFLKBENIGAN = 0;
+        self.ALPABMAKCFA = 0;
         self.MUSEUM_RANDOM_EVENT_STATE_START = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetMailCsReq {
         static instance: GetMailCsReq = GetMailCsReq {
-            JFLKBENIGAN: 0,
+            ALPABMAKCFA: 0,
             MUSEUM_RANDOM_EVENT_STATE_START: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for GetMailCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12GetMailCsReq.proto\"v\n\x0cGetMailCsReq\x12\x20\n\x0bJFLKBENIGAN\
-    \x18\t\x20\x01(\rR\x0bJFLKBENIGAN\x12D\n\x1fMUSEUM_RANDOM_EVENT_STATE_ST\
-    ART\x18\x0c\x20\x01(\rR\x1bMUSEUMRANDOMEVENTSTATESTARTb\x06proto3\
+    \n\x12GetMailCsReq.proto\"v\n\x0cGetMailCsReq\x12\x20\n\x0bALPABMAKCFA\
+    \x18\t\x20\x01(\rR\x0bALPABMAKCFA\x12D\n\x1fMUSEUM_RANDOM_EVENT_STATE_ST\
+    ART\x18\x05\x20\x01(\rR\x1bMUSEUMRANDOMEVENTSTATESTARTb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,48 +30,48 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdChallengeType {
     // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdChallengeTypeNone)
     CmdChallengeTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdLeaveChallengeCsReq)
-    CmdLeaveChallengeCsReq = 1739,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdRestartChallengePhaseCsReq)
-    CmdRestartChallengePhaseCsReq = 1733,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdGetCurChallengeScRsp)
+    CmdGetCurChallengeScRsp = 1734,
     // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdStartChallengeCsReq)
-    CmdStartChallengeCsReq = 1703,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdTakeChallengeRewardCsReq)
-    CmdTakeChallengeRewardCsReq = 1748,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdEnterChallengeNextPhaseCsReq)
-    CmdEnterChallengeNextPhaseCsReq = 1773,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdGetChallengeGroupStatisticsCsReq)
-    CmdGetChallengeGroupStatisticsCsReq = 1779,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdChallengeBossPhaseSettleNotify)
-    CmdChallengeBossPhaseSettleNotify = 1799,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdChallengeLineupNotify)
-    CmdChallengeLineupNotify = 1774,
+    CmdStartChallengeCsReq = 1784,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdLeaveChallengeScRsp)
+    CmdLeaveChallengeScRsp = 1728,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdChallengeSettleNotify)
+    CmdChallengeSettleNotify = 1752,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdStartChallengeScRsp)
+    CmdStartChallengeScRsp = 1727,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdRestartChallengePhaseCsReq)
+    CmdRestartChallengePhaseCsReq = 1790,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdGetCurChallengeCsReq)
+    CmdGetCurChallengeCsReq = 1793,
     // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdGetChallengeGroupStatisticsScRsp)
     CmdGetChallengeGroupStatisticsScRsp = 1719,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdStartPartialChallengeCsReq)
-    CmdStartPartialChallengeCsReq = 1761,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdRestartChallengePhaseScRsp)
-    CmdRestartChallengePhaseScRsp = 1751,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdChallengeSettleNotify)
-    CmdChallengeSettleNotify = 1734,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdTakeChallengeRewardCsReq)
+    CmdTakeChallengeRewardCsReq = 1796,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdChallengeBossPhaseSettleNotify)
+    CmdChallengeBossPhaseSettleNotify = 1729,
     // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdStartPartialChallengeScRsp)
-    CmdStartPartialChallengeScRsp = 1725,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdStartChallengeScRsp)
-    CmdStartChallengeScRsp = 1746,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdGetCurChallengeCsReq)
-    CmdGetCurChallengeCsReq = 1716,
+    CmdStartPartialChallengeScRsp = 1707,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdEnterChallengeNextPhaseCsReq)
+    CmdEnterChallengeNextPhaseCsReq = 1712,
     // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdEnterChallengeNextPhaseScRsp)
-    CmdEnterChallengeNextPhaseScRsp = 1783,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdTakeChallengeRewardScRsp)
-    CmdTakeChallengeRewardScRsp = 1790,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdGetCurChallengeScRsp)
-    CmdGetCurChallengeScRsp = 1747,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdGetChallengeCsReq)
-    CmdGetChallengeCsReq = 1759,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdLeaveChallengeScRsp)
-    CmdLeaveChallengeScRsp = 1753,
+    CmdEnterChallengeNextPhaseScRsp = 1778,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdStartPartialChallengeCsReq)
+    CmdStartPartialChallengeCsReq = 1726,
     // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdGetChallengeScRsp)
-    CmdGetChallengeScRsp = 1720,
+    CmdGetChallengeScRsp = 1795,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdChallengeLineupNotify)
+    CmdChallengeLineupNotify = 1743,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdTakeChallengeRewardScRsp)
+    CmdTakeChallengeRewardScRsp = 1705,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdGetChallengeGroupStatisticsCsReq)
+    CmdGetChallengeGroupStatisticsCsReq = 1775,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdRestartChallengePhaseScRsp)
+    CmdRestartChallengePhaseScRsp = 1759,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdLeaveChallengeCsReq)
+    CmdLeaveChallengeCsReq = 1767,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdGetChallengeCsReq)
+    CmdGetChallengeCsReq = 1736,
 }
 
 impl ::protobuf::Enum for CmdChallengeType {
@@ -84,27 +84,27 @@ impl ::protobuf::Enum for CmdChallengeType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdChallengeType> {
         match value {
             0 => ::std::option::Option::Some(CmdChallengeType::CmdChallengeTypeNone),
-            1739 => ::std::option::Option::Some(CmdChallengeType::CmdLeaveChallengeCsReq),
-            1733 => ::std::option::Option::Some(CmdChallengeType::CmdRestartChallengePhaseCsReq),
-            1703 => ::std::option::Option::Some(CmdChallengeType::CmdStartChallengeCsReq),
-            1748 => ::std::option::Option::Some(CmdChallengeType::CmdTakeChallengeRewardCsReq),
-            1773 => ::std::option::Option::Some(CmdChallengeType::CmdEnterChallengeNextPhaseCsReq),
-            1779 => ::std::option::Option::Some(CmdChallengeType::CmdGetChallengeGroupStatisticsCsReq),
-            1799 => ::std::option::Option::Some(CmdChallengeType::CmdChallengeBossPhaseSettleNotify),
-            1774 => ::std::option::Option::Some(CmdChallengeType::CmdChallengeLineupNotify),
+            1734 => ::std::option::Option::Some(CmdChallengeType::CmdGetCurChallengeScRsp),
+            1784 => ::std::option::Option::Some(CmdChallengeType::CmdStartChallengeCsReq),
+            1728 => ::std::option::Option::Some(CmdChallengeType::CmdLeaveChallengeScRsp),
+            1752 => ::std::option::Option::Some(CmdChallengeType::CmdChallengeSettleNotify),
+            1727 => ::std::option::Option::Some(CmdChallengeType::CmdStartChallengeScRsp),
+            1790 => ::std::option::Option::Some(CmdChallengeType::CmdRestartChallengePhaseCsReq),
+            1793 => ::std::option::Option::Some(CmdChallengeType::CmdGetCurChallengeCsReq),
             1719 => ::std::option::Option::Some(CmdChallengeType::CmdGetChallengeGroupStatisticsScRsp),
-            1761 => ::std::option::Option::Some(CmdChallengeType::CmdStartPartialChallengeCsReq),
-            1751 => ::std::option::Option::Some(CmdChallengeType::CmdRestartChallengePhaseScRsp),
-            1734 => ::std::option::Option::Some(CmdChallengeType::CmdChallengeSettleNotify),
-            1725 => ::std::option::Option::Some(CmdChallengeType::CmdStartPartialChallengeScRsp),
-            1746 => ::std::option::Option::Some(CmdChallengeType::CmdStartChallengeScRsp),
-            1716 => ::std::option::Option::Some(CmdChallengeType::CmdGetCurChallengeCsReq),
-            1783 => ::std::option::Option::Some(CmdChallengeType::CmdEnterChallengeNextPhaseScRsp),
-            1790 => ::std::option::Option::Some(CmdChallengeType::CmdTakeChallengeRewardScRsp),
-            1747 => ::std::option::Option::Some(CmdChallengeType::CmdGetCurChallengeScRsp),
-            1759 => ::std::option::Option::Some(CmdChallengeType::CmdGetChallengeCsReq),
-            1753 => ::std::option::Option::Some(CmdChallengeType::CmdLeaveChallengeScRsp),
-            1720 => ::std::option::Option::Some(CmdChallengeType::CmdGetChallengeScRsp),
+            1796 => ::std::option::Option::Some(CmdChallengeType::CmdTakeChallengeRewardCsReq),
+            1729 => ::std::option::Option::Some(CmdChallengeType::CmdChallengeBossPhaseSettleNotify),
+            1707 => ::std::option::Option::Some(CmdChallengeType::CmdStartPartialChallengeScRsp),
+            1712 => ::std::option::Option::Some(CmdChallengeType::CmdEnterChallengeNextPhaseCsReq),
+            1778 => ::std::option::Option::Some(CmdChallengeType::CmdEnterChallengeNextPhaseScRsp),
+            1726 => ::std::option::Option::Some(CmdChallengeType::CmdStartPartialChallengeCsReq),
+            1795 => ::std::option::Option::Some(CmdChallengeType::CmdGetChallengeScRsp),
+            1743 => ::std::option::Option::Some(CmdChallengeType::CmdChallengeLineupNotify),
+            1705 => ::std::option::Option::Some(CmdChallengeType::CmdTakeChallengeRewardScRsp),
+            1775 => ::std::option::Option::Some(CmdChallengeType::CmdGetChallengeGroupStatisticsCsReq),
+            1759 => ::std::option::Option::Some(CmdChallengeType::CmdRestartChallengePhaseScRsp),
+            1767 => ::std::option::Option::Some(CmdChallengeType::CmdLeaveChallengeCsReq),
+            1736 => ::std::option::Option::Some(CmdChallengeType::CmdGetChallengeCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -112,54 +112,54 @@ impl ::protobuf::Enum for CmdChallengeType {
     fn from_str(str: &str) -> ::std::option::Option<CmdChallengeType> {
         match str {
             "CmdChallengeTypeNone" => ::std::option::Option::Some(CmdChallengeType::CmdChallengeTypeNone),
-            "CmdLeaveChallengeCsReq" => ::std::option::Option::Some(CmdChallengeType::CmdLeaveChallengeCsReq),
-            "CmdRestartChallengePhaseCsReq" => ::std::option::Option::Some(CmdChallengeType::CmdRestartChallengePhaseCsReq),
-            "CmdStartChallengeCsReq" => ::std::option::Option::Some(CmdChallengeType::CmdStartChallengeCsReq),
-            "CmdTakeChallengeRewardCsReq" => ::std::option::Option::Some(CmdChallengeType::CmdTakeChallengeRewardCsReq),
-            "CmdEnterChallengeNextPhaseCsReq" => ::std::option::Option::Some(CmdChallengeType::CmdEnterChallengeNextPhaseCsReq),
-            "CmdGetChallengeGroupStatisticsCsReq" => ::std::option::Option::Some(CmdChallengeType::CmdGetChallengeGroupStatisticsCsReq),
-            "CmdChallengeBossPhaseSettleNotify" => ::std::option::Option::Some(CmdChallengeType::CmdChallengeBossPhaseSettleNotify),
-            "CmdChallengeLineupNotify" => ::std::option::Option::Some(CmdChallengeType::CmdChallengeLineupNotify),
-            "CmdGetChallengeGroupStatisticsScRsp" => ::std::option::Option::Some(CmdChallengeType::CmdGetChallengeGroupStatisticsScRsp),
-            "CmdStartPartialChallengeCsReq" => ::std::option::Option::Some(CmdChallengeType::CmdStartPartialChallengeCsReq),
-            "CmdRestartChallengePhaseScRsp" => ::std::option::Option::Some(CmdChallengeType::CmdRestartChallengePhaseScRsp),
-            "CmdChallengeSettleNotify" => ::std::option::Option::Some(CmdChallengeType::CmdChallengeSettleNotify),
-            "CmdStartPartialChallengeScRsp" => ::std::option::Option::Some(CmdChallengeType::CmdStartPartialChallengeScRsp),
-            "CmdStartChallengeScRsp" => ::std::option::Option::Some(CmdChallengeType::CmdStartChallengeScRsp),
-            "CmdGetCurChallengeCsReq" => ::std::option::Option::Some(CmdChallengeType::CmdGetCurChallengeCsReq),
-            "CmdEnterChallengeNextPhaseScRsp" => ::std::option::Option::Some(CmdChallengeType::CmdEnterChallengeNextPhaseScRsp),
-            "CmdTakeChallengeRewardScRsp" => ::std::option::Option::Some(CmdChallengeType::CmdTakeChallengeRewardScRsp),
             "CmdGetCurChallengeScRsp" => ::std::option::Option::Some(CmdChallengeType::CmdGetCurChallengeScRsp),
-            "CmdGetChallengeCsReq" => ::std::option::Option::Some(CmdChallengeType::CmdGetChallengeCsReq),
+            "CmdStartChallengeCsReq" => ::std::option::Option::Some(CmdChallengeType::CmdStartChallengeCsReq),
             "CmdLeaveChallengeScRsp" => ::std::option::Option::Some(CmdChallengeType::CmdLeaveChallengeScRsp),
+            "CmdChallengeSettleNotify" => ::std::option::Option::Some(CmdChallengeType::CmdChallengeSettleNotify),
+            "CmdStartChallengeScRsp" => ::std::option::Option::Some(CmdChallengeType::CmdStartChallengeScRsp),
+            "CmdRestartChallengePhaseCsReq" => ::std::option::Option::Some(CmdChallengeType::CmdRestartChallengePhaseCsReq),
+            "CmdGetCurChallengeCsReq" => ::std::option::Option::Some(CmdChallengeType::CmdGetCurChallengeCsReq),
+            "CmdGetChallengeGroupStatisticsScRsp" => ::std::option::Option::Some(CmdChallengeType::CmdGetChallengeGroupStatisticsScRsp),
+            "CmdTakeChallengeRewardCsReq" => ::std::option::Option::Some(CmdChallengeType::CmdTakeChallengeRewardCsReq),
+            "CmdChallengeBossPhaseSettleNotify" => ::std::option::Option::Some(CmdChallengeType::CmdChallengeBossPhaseSettleNotify),
+            "CmdStartPartialChallengeScRsp" => ::std::option::Option::Some(CmdChallengeType::CmdStartPartialChallengeScRsp),
+            "CmdEnterChallengeNextPhaseCsReq" => ::std::option::Option::Some(CmdChallengeType::CmdEnterChallengeNextPhaseCsReq),
+            "CmdEnterChallengeNextPhaseScRsp" => ::std::option::Option::Some(CmdChallengeType::CmdEnterChallengeNextPhaseScRsp),
+            "CmdStartPartialChallengeCsReq" => ::std::option::Option::Some(CmdChallengeType::CmdStartPartialChallengeCsReq),
             "CmdGetChallengeScRsp" => ::std::option::Option::Some(CmdChallengeType::CmdGetChallengeScRsp),
+            "CmdChallengeLineupNotify" => ::std::option::Option::Some(CmdChallengeType::CmdChallengeLineupNotify),
+            "CmdTakeChallengeRewardScRsp" => ::std::option::Option::Some(CmdChallengeType::CmdTakeChallengeRewardScRsp),
+            "CmdGetChallengeGroupStatisticsCsReq" => ::std::option::Option::Some(CmdChallengeType::CmdGetChallengeGroupStatisticsCsReq),
+            "CmdRestartChallengePhaseScRsp" => ::std::option::Option::Some(CmdChallengeType::CmdRestartChallengePhaseScRsp),
+            "CmdLeaveChallengeCsReq" => ::std::option::Option::Some(CmdChallengeType::CmdLeaveChallengeCsReq),
+            "CmdGetChallengeCsReq" => ::std::option::Option::Some(CmdChallengeType::CmdGetChallengeCsReq),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdChallengeType] = &[
         CmdChallengeType::CmdChallengeTypeNone,
-        CmdChallengeType::CmdLeaveChallengeCsReq,
-        CmdChallengeType::CmdRestartChallengePhaseCsReq,
-        CmdChallengeType::CmdStartChallengeCsReq,
-        CmdChallengeType::CmdTakeChallengeRewardCsReq,
-        CmdChallengeType::CmdEnterChallengeNextPhaseCsReq,
-        CmdChallengeType::CmdGetChallengeGroupStatisticsCsReq,
-        CmdChallengeType::CmdChallengeBossPhaseSettleNotify,
-        CmdChallengeType::CmdChallengeLineupNotify,
-        CmdChallengeType::CmdGetChallengeGroupStatisticsScRsp,
-        CmdChallengeType::CmdStartPartialChallengeCsReq,
-        CmdChallengeType::CmdRestartChallengePhaseScRsp,
-        CmdChallengeType::CmdChallengeSettleNotify,
-        CmdChallengeType::CmdStartPartialChallengeScRsp,
-        CmdChallengeType::CmdStartChallengeScRsp,
-        CmdChallengeType::CmdGetCurChallengeCsReq,
-        CmdChallengeType::CmdEnterChallengeNextPhaseScRsp,
-        CmdChallengeType::CmdTakeChallengeRewardScRsp,
         CmdChallengeType::CmdGetCurChallengeScRsp,
-        CmdChallengeType::CmdGetChallengeCsReq,
+        CmdChallengeType::CmdStartChallengeCsReq,
         CmdChallengeType::CmdLeaveChallengeScRsp,
+        CmdChallengeType::CmdChallengeSettleNotify,
+        CmdChallengeType::CmdStartChallengeScRsp,
+        CmdChallengeType::CmdRestartChallengePhaseCsReq,
+        CmdChallengeType::CmdGetCurChallengeCsReq,
+        CmdChallengeType::CmdGetChallengeGroupStatisticsScRsp,
+        CmdChallengeType::CmdTakeChallengeRewardCsReq,
+        CmdChallengeType::CmdChallengeBossPhaseSettleNotify,
+        CmdChallengeType::CmdStartPartialChallengeScRsp,
+        CmdChallengeType::CmdEnterChallengeNextPhaseCsReq,
+        CmdChallengeType::CmdEnterChallengeNextPhaseScRsp,
+        CmdChallengeType::CmdStartPartialChallengeCsReq,
         CmdChallengeType::CmdGetChallengeScRsp,
+        CmdChallengeType::CmdChallengeLineupNotify,
+        CmdChallengeType::CmdTakeChallengeRewardScRsp,
+        CmdChallengeType::CmdGetChallengeGroupStatisticsCsReq,
+        CmdChallengeType::CmdRestartChallengePhaseScRsp,
+        CmdChallengeType::CmdLeaveChallengeCsReq,
+        CmdChallengeType::CmdGetChallengeCsReq,
     ];
 }
 
@@ -172,27 +172,27 @@ impl ::protobuf::EnumFull for CmdChallengeType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdChallengeType::CmdChallengeTypeNone => 0,
-            CmdChallengeType::CmdLeaveChallengeCsReq => 1,
-            CmdChallengeType::CmdRestartChallengePhaseCsReq => 2,
-            CmdChallengeType::CmdStartChallengeCsReq => 3,
-            CmdChallengeType::CmdTakeChallengeRewardCsReq => 4,
-            CmdChallengeType::CmdEnterChallengeNextPhaseCsReq => 5,
-            CmdChallengeType::CmdGetChallengeGroupStatisticsCsReq => 6,
-            CmdChallengeType::CmdChallengeBossPhaseSettleNotify => 7,
-            CmdChallengeType::CmdChallengeLineupNotify => 8,
-            CmdChallengeType::CmdGetChallengeGroupStatisticsScRsp => 9,
-            CmdChallengeType::CmdStartPartialChallengeCsReq => 10,
-            CmdChallengeType::CmdRestartChallengePhaseScRsp => 11,
-            CmdChallengeType::CmdChallengeSettleNotify => 12,
-            CmdChallengeType::CmdStartPartialChallengeScRsp => 13,
-            CmdChallengeType::CmdStartChallengeScRsp => 14,
-            CmdChallengeType::CmdGetCurChallengeCsReq => 15,
-            CmdChallengeType::CmdEnterChallengeNextPhaseScRsp => 16,
+            CmdChallengeType::CmdGetCurChallengeScRsp => 1,
+            CmdChallengeType::CmdStartChallengeCsReq => 2,
+            CmdChallengeType::CmdLeaveChallengeScRsp => 3,
+            CmdChallengeType::CmdChallengeSettleNotify => 4,
+            CmdChallengeType::CmdStartChallengeScRsp => 5,
+            CmdChallengeType::CmdRestartChallengePhaseCsReq => 6,
+            CmdChallengeType::CmdGetCurChallengeCsReq => 7,
+            CmdChallengeType::CmdGetChallengeGroupStatisticsScRsp => 8,
+            CmdChallengeType::CmdTakeChallengeRewardCsReq => 9,
+            CmdChallengeType::CmdChallengeBossPhaseSettleNotify => 10,
+            CmdChallengeType::CmdStartPartialChallengeScRsp => 11,
+            CmdChallengeType::CmdEnterChallengeNextPhaseCsReq => 12,
+            CmdChallengeType::CmdEnterChallengeNextPhaseScRsp => 13,
+            CmdChallengeType::CmdStartPartialChallengeCsReq => 14,
+            CmdChallengeType::CmdGetChallengeScRsp => 15,
+            CmdChallengeType::CmdChallengeLineupNotify => 16,
             CmdChallengeType::CmdTakeChallengeRewardScRsp => 17,
-            CmdChallengeType::CmdGetCurChallengeScRsp => 18,
-            CmdChallengeType::CmdGetChallengeCsReq => 19,
-            CmdChallengeType::CmdLeaveChallengeScRsp => 20,
-            CmdChallengeType::CmdGetChallengeScRsp => 21,
+            CmdChallengeType::CmdGetChallengeGroupStatisticsCsReq => 18,
+            CmdChallengeType::CmdRestartChallengePhaseScRsp => 19,
+            CmdChallengeType::CmdLeaveChallengeCsReq => 20,
+            CmdChallengeType::CmdGetChallengeCsReq => 21,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -212,21 +212,21 @@ impl CmdChallengeType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16CmdChallengeType.proto*\xec\x05\n\x10CmdChallengeType\x12\x18\n\
-    \x14CmdChallengeTypeNone\x10\0\x12\x1b\n\x16CmdLeaveChallengeCsReq\x10\
-    \xcb\r\x12\"\n\x1dCmdRestartChallengePhaseCsReq\x10\xc5\r\x12\x1b\n\x16C\
-    mdStartChallengeCsReq\x10\xa7\r\x12\x20\n\x1bCmdTakeChallengeRewardCsReq\
-    \x10\xd4\r\x12$\n\x1fCmdEnterChallengeNextPhaseCsReq\x10\xed\r\x12(\n#Cm\
-    dGetChallengeGroupStatisticsCsReq\x10\xf3\r\x12&\n!CmdChallengeBossPhase\
-    SettleNotify\x10\x87\x0e\x12\x1d\n\x18CmdChallengeLineupNotify\x10\xee\r\
-    \x12(\n#CmdGetChallengeGroupStatisticsScRsp\x10\xb7\r\x12\"\n\x1dCmdStar\
-    tPartialChallengeCsReq\x10\xe1\r\x12\"\n\x1dCmdRestartChallengePhaseScRs\
-    p\x10\xd7\r\x12\x1d\n\x18CmdChallengeSettleNotify\x10\xc6\r\x12\"\n\x1dC\
-    mdStartPartialChallengeScRsp\x10\xbd\r\x12\x1b\n\x16CmdStartChallengeScR\
-    sp\x10\xd2\r\x12\x1c\n\x17CmdGetCurChallengeCsReq\x10\xb4\r\x12$\n\x1fCm\
-    dEnterChallengeNextPhaseScRsp\x10\xf7\r\x12\x20\n\x1bCmdTakeChallengeRew\
-    ardScRsp\x10\xfe\r\x12\x1c\n\x17CmdGetCurChallengeScRsp\x10\xd3\r\x12\
-    \x19\n\x14CmdGetChallengeCsReq\x10\xdf\r\x12\x1b\n\x16CmdLeaveChallengeS\
-    cRsp\x10\xd9\r\x12\x19\n\x14CmdGetChallengeScRsp\x10\xb8\rb\x06proto3\
+    \x14CmdChallengeTypeNone\x10\0\x12\x1c\n\x17CmdGetCurChallengeScRsp\x10\
+    \xc6\r\x12\x1b\n\x16CmdStartChallengeCsReq\x10\xf8\r\x12\x1b\n\x16CmdLea\
+    veChallengeScRsp\x10\xc0\r\x12\x1d\n\x18CmdChallengeSettleNotify\x10\xd8\
+    \r\x12\x1b\n\x16CmdStartChallengeScRsp\x10\xbf\r\x12\"\n\x1dCmdRestartCh\
+    allengePhaseCsReq\x10\xfe\r\x12\x1c\n\x17CmdGetCurChallengeCsReq\x10\x81\
+    \x0e\x12(\n#CmdGetChallengeGroupStatisticsScRsp\x10\xb7\r\x12\x20\n\x1bC\
+    mdTakeChallengeRewardCsReq\x10\x84\x0e\x12&\n!CmdChallengeBossPhaseSettl\
+    eNotify\x10\xc1\r\x12\"\n\x1dCmdStartPartialChallengeScRsp\x10\xab\r\x12\
+    $\n\x1fCmdEnterChallengeNextPhaseCsReq\x10\xb0\r\x12$\n\x1fCmdEnterChall\
+    engeNextPhaseScRsp\x10\xf2\r\x12\"\n\x1dCmdStartPartialChallengeCsReq\
+    \x10\xbe\r\x12\x19\n\x14CmdGetChallengeScRsp\x10\x83\x0e\x12\x1d\n\x18Cm\
+    dChallengeLineupNotify\x10\xcf\r\x12\x20\n\x1bCmdTakeChallengeRewardScRs\
+    p\x10\xa9\r\x12(\n#CmdGetChallengeGroupStatisticsCsReq\x10\xef\r\x12\"\n\
+    \x1dCmdRestartChallengePhaseScRsp\x10\xdf\r\x12\x1b\n\x16CmdLeaveChallen\
+    geCsReq\x10\xe7\r\x12\x19\n\x14CmdGetChallengeCsReq\x10\xc8\rb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

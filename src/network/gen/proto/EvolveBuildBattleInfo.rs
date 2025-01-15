@@ -36,13 +36,13 @@ pub struct EvolveBuildBattleInfo {
     // @@protoc_insertion_point(field:EvolveBuildBattleInfo.cur_coin)
     pub cur_coin: u32,
     // @@protoc_insertion_point(field:EvolveBuildBattleInfo.weapon_slot_list)
-    pub weapon_slot_list: ::std::vec::Vec<super::ANBDAIBNOAI::ANBDAIBNOAI>,
+    pub weapon_slot_list: ::std::vec::Vec<super::BAFDPJPGGOG::BAFDPJPGGOG>,
     // @@protoc_insertion_point(field:EvolveBuildBattleInfo.accessory_slot_list)
-    pub accessory_slot_list: ::std::vec::Vec<super::ANBDAIBNOAI::ANBDAIBNOAI>,
+    pub accessory_slot_list: ::std::vec::Vec<super::BAFDPJPGGOG::BAFDPJPGGOG>,
     // @@protoc_insertion_point(field:EvolveBuildBattleInfo.ban_gear_list)
     pub ban_gear_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:EvolveBuildBattleInfo.collection)
-    pub collection: ::protobuf::MessageField<super::GFICABEFOFD::GFICABEFOFD>,
+    pub collection: ::protobuf::MessageField<super::ANDFBODMGFK::ANDFBODMGFK>,
     // @@protoc_insertion_point(field:EvolveBuildBattleInfo.allowed_gear_list)
     pub allowed_gear_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:EvolveBuildBattleInfo.cur_exp)
@@ -62,9 +62,9 @@ pub struct EvolveBuildBattleInfo {
     // @@protoc_insertion_point(field:EvolveBuildBattleInfo.is_unlock_gear_ban)
     pub is_unlock_gear_ban: bool,
     // @@protoc_insertion_point(field:EvolveBuildBattleInfo.card_list)
-    pub card_list: ::std::vec::Vec<super::LENKFNKPHDK::LENKFNKPHDK>,
+    pub card_list: ::std::vec::Vec<super::AKPEJLAIBLA::AKPEJLAIBLA>,
     // @@protoc_insertion_point(field:EvolveBuildBattleInfo.gear_damage_list)
-    pub gear_damage_list: ::std::vec::Vec<super::EvolveBuild::EvolveBuildGearDamageInfo>,
+    pub gear_damage_list: ::std::vec::Vec<super::EvolveBuildGearDamageInfo::EvolveBuildGearDamageInfo>,
     // @@protoc_insertion_point(field:EvolveBuildBattleInfo.stat_params)
     pub stat_params: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:EvolveBuildBattleInfo.is_giveup)
@@ -72,7 +72,7 @@ pub struct EvolveBuildBattleInfo {
     // @@protoc_insertion_point(field:EvolveBuildBattleInfo.cur_unused_round_cnt)
     pub cur_unused_round_cnt: u32,
     // @@protoc_insertion_point(field:EvolveBuildBattleInfo.stat_log_info)
-    pub stat_log_info: ::protobuf::MessageField<super::PHDMPFFLOEA::PHDMPFFLOEA>,
+    pub stat_log_info: ::protobuf::MessageField<super::OJGEIANDJOE::OJGEIANDJOE>,
     // @@protoc_insertion_point(field:EvolveBuildBattleInfo.period_first_random_seed)
     pub period_first_random_seed: u32,
     // special fields
@@ -124,7 +124,7 @@ impl EvolveBuildBattleInfo {
             |m: &EvolveBuildBattleInfo| { &m.ban_gear_list },
             |m: &mut EvolveBuildBattleInfo| { &mut m.ban_gear_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GFICABEFOFD::GFICABEFOFD>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ANDFBODMGFK::ANDFBODMGFK>(
             "collection",
             |m: &EvolveBuildBattleInfo| { &m.collection },
             |m: &mut EvolveBuildBattleInfo| { &mut m.collection },
@@ -199,7 +199,7 @@ impl EvolveBuildBattleInfo {
             |m: &EvolveBuildBattleInfo| { &m.cur_unused_round_cnt },
             |m: &mut EvolveBuildBattleInfo| { &mut m.cur_unused_round_cnt },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PHDMPFFLOEA::PHDMPFFLOEA>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OJGEIANDJOE::OJGEIANDJOE>(
             "stat_log_info",
             |m: &EvolveBuildBattleInfo| { &m.stat_log_info },
             |m: &mut EvolveBuildBattleInfo| { &mut m.stat_log_info },
@@ -562,16 +562,16 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildBattleInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bEvolveBuildBattleInfo.proto\x1a\x11ANBDAIBNOAI.proto\x1a\x1fEvolve\
-    BuildGearDamageInfo.proto\x1a\x11GFICABEFOFD.proto\x1a\x11LENKFNKPHDK.pr\
-    oto\x1a\x11PHDMPFFLOEA.proto\"\xe9\x07\n\x15EvolveBuildBattleInfo\x12\
+    \n\x1bEvolveBuildBattleInfo.proto\x1a\x11AKPEJLAIBLA.proto\x1a\x11ANDFBO\
+    DMGFK.proto\x1a\x11BAFDPJPGGOG.proto\x1a\x1fEvolveBuildGearDamageInfo.pr\
+    oto\x1a\x11OJGEIANDJOE.proto\"\xe9\x07\n\x15EvolveBuildBattleInfo\x12\
     \x20\n\x0ccur_level_id\x18\x01\x20\x01(\rR\ncurLevelId\x12\x1d\n\ncur_pe\
     riod\x18\x02\x20\x01(\rR\tcurPeriod\x12\x19\n\x08cur_coin\x18\x03\x20\
     \x01(\rR\x07curCoin\x126\n\x10weapon_slot_list\x18\x04\x20\x03(\x0b2\x0c\
-    .ANBDAIBNOAIR\x0eweaponSlotList\x12<\n\x13accessory_slot_list\x18\x05\
-    \x20\x03(\x0b2\x0c.ANBDAIBNOAIR\x11accessorySlotList\x12\"\n\rban_gear_l\
+    .BAFDPJPGGOGR\x0eweaponSlotList\x12<\n\x13accessory_slot_list\x18\x05\
+    \x20\x03(\x0b2\x0c.BAFDPJPGGOGR\x11accessorySlotList\x12\"\n\rban_gear_l\
     ist\x18\x06\x20\x03(\rR\x0bbanGearList\x12,\n\ncollection\x18\x07\x20\
-    \x01(\x0b2\x0c.GFICABEFOFDR\ncollection\x12*\n\x11allowed_gear_list\x18\
+    \x01(\x0b2\x0c.ANDFBODMGFKR\ncollection\x12*\n\x11allowed_gear_list\x18\
     \x08\x20\x03(\rR\x0fallowedGearList\x12\x17\n\x07cur_exp\x18\t\x20\x01(\
     \rR\x06curExp\x12\x1d\n\ncur_reroll\x18\n\x20\x01(\rR\tcurReroll\x121\n\
     \x15cur_treasure_miss_cnt\x18\x0b\x20\x01(\rR\x12curTreasureMissCnt\x12$\
@@ -580,12 +580,12 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x18\x0e\x20\x01(\rR\x07curWave\x121\n\x15is_unlock_gear_reroll\x18\x0f\
     \x20\x01(\x08R\x12isUnlockGearReroll\x12+\n\x12is_unlock_gear_ban\x18\
     \x10\x20\x01(\x08R\x0fisUnlockGearBan\x12)\n\tcard_list\x18\x11\x20\x03(\
-    \x0b2\x0c.LENKFNKPHDKR\x08cardList\x12D\n\x10gear_damage_list\x18\x12\
+    \x0b2\x0c.AKPEJLAIBLAR\x08cardList\x12D\n\x10gear_damage_list\x18\x12\
     \x20\x03(\x0b2\x1a.EvolveBuildGearDamageInfoR\x0egearDamageList\x12\x1f\
     \n\x0bstat_params\x18\x13\x20\x03(\rR\nstatParams\x12\x1b\n\tis_giveup\
     \x18\x14\x20\x01(\x08R\x08isGiveup\x12/\n\x14cur_unused_round_cnt\x18\
     \x15\x20\x01(\rR\x11curUnusedRoundCnt\x120\n\rstat_log_info\x18\x16\x20\
-    \x01(\x0b2\x0c.PHDMPFFLOEAR\x0bstatLogInfo\x127\n\x18period_first_random\
+    \x01(\x0b2\x0c.OJGEIANDJOER\x0bstatLogInfo\x127\n\x18period_first_random\
     _seed\x18\x17\x20\x01(\rR\x15periodFirstRandomSeedb\x06proto3\
 ";
 
@@ -604,11 +604,11 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(5);
-            deps.push(super::ANBDAIBNOAI::file_descriptor().clone());
+            deps.push(super::AKPEJLAIBLA::file_descriptor().clone());
+            deps.push(super::ANDFBODMGFK::file_descriptor().clone());
+            deps.push(super::BAFDPJPGGOG::file_descriptor().clone());
             deps.push(super::EvolveBuildGearDamageInfo::file_descriptor().clone());
-            deps.push(super::GFICABEFOFD::file_descriptor().clone());
-            deps.push(super::LENKFNKPHDK::file_descriptor().clone());
-            deps.push(super::PHDMPFFLOEA::file_descriptor().clone());
+            deps.push(super::OJGEIANDJOE::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EvolveBuildBattleInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

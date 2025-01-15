@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetHeartDialInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetHeartDialInfoScRsp.ADJKGHMHOMP)
-    pub ADJKGHMHOMP: ::std::vec::Vec<super::INDBLNCPNOB::INDBLNCPNOB>,
-    // @@protoc_insertion_point(field:GetHeartDialInfoScRsp.IOJOBNEINOE)
-    pub IOJOBNEINOE: ::std::vec::Vec<super::LBOCLBHDIJL::LBOCLBHDIJL>,
-    // @@protoc_insertion_point(field:GetHeartDialInfoScRsp.ENELMHEDJII)
-    pub ENELMHEDJII: ::std::vec::Vec<super::HNGOJHBPFEJ::HNGOJHBPFEJ>,
-    // @@protoc_insertion_point(field:GetHeartDialInfoScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:GetHeartDialInfoScRsp.BDFEILABDHM)
-    pub BDFEILABDHM: ::protobuf::EnumOrUnknown<super::DBEKLDHFDCG::DBEKLDHFDCG>,
+    // @@protoc_insertion_point(field:GetHeartDialInfoScRsp.JFIFOAECDFK)
+    pub JFIFOAECDFK: ::std::vec::Vec<super::JHMALOGKGBL::JHMALOGKGBL>,
+    // @@protoc_insertion_point(field:GetHeartDialInfoScRsp.MLFGAKMIMIN)
+    pub MLFGAKMIMIN: ::protobuf::EnumOrUnknown<super::GNPHJAPOJJM::GNPHJAPOJJM>,
+    // @@protoc_insertion_point(field:GetHeartDialInfoScRsp.CNIDMIFKPCC)
+    pub CNIDMIFKPCC: ::std::vec::Vec<super::HHGCOJOMGBN::HHGCOJOMGBN>,
+    // @@protoc_insertion_point(field:GetHeartDialInfoScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetHeartDialInfoScRsp.HPKCJDEJLGB)
+    pub HPKCJDEJLGB: ::std::vec::Vec<super::ABMIFMMDLMK::ABMIFMMDLMK>,
     // special fields
     // @@protoc_insertion_point(special_field:GetHeartDialInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,29 +59,29 @@ impl GetHeartDialInfoScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ADJKGHMHOMP",
-            |m: &GetHeartDialInfoScRsp| { &m.ADJKGHMHOMP },
-            |m: &mut GetHeartDialInfoScRsp| { &mut m.ADJKGHMHOMP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IOJOBNEINOE",
-            |m: &GetHeartDialInfoScRsp| { &m.IOJOBNEINOE },
-            |m: &mut GetHeartDialInfoScRsp| { &mut m.IOJOBNEINOE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ENELMHEDJII",
-            |m: &GetHeartDialInfoScRsp| { &m.ENELMHEDJII },
-            |m: &mut GetHeartDialInfoScRsp| { &mut m.ENELMHEDJII },
+            "JFIFOAECDFK",
+            |m: &GetHeartDialInfoScRsp| { &m.JFIFOAECDFK },
+            |m: &mut GetHeartDialInfoScRsp| { &mut m.JFIFOAECDFK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &GetHeartDialInfoScRsp| { &m.ADADHIHDHJC },
-            |m: &mut GetHeartDialInfoScRsp| { &mut m.ADADHIHDHJC },
+            "MLFGAKMIMIN",
+            |m: &GetHeartDialInfoScRsp| { &m.MLFGAKMIMIN },
+            |m: &mut GetHeartDialInfoScRsp| { &mut m.MLFGAKMIMIN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CNIDMIFKPCC",
+            |m: &GetHeartDialInfoScRsp| { &m.CNIDMIFKPCC },
+            |m: &mut GetHeartDialInfoScRsp| { &mut m.CNIDMIFKPCC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BDFEILABDHM",
-            |m: &GetHeartDialInfoScRsp| { &m.BDFEILABDHM },
-            |m: &mut GetHeartDialInfoScRsp| { &mut m.BDFEILABDHM },
+            "retcode",
+            |m: &GetHeartDialInfoScRsp| { &m.retcode },
+            |m: &mut GetHeartDialInfoScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "HPKCJDEJLGB",
+            |m: &GetHeartDialInfoScRsp| { &m.HPKCJDEJLGB },
+            |m: &mut GetHeartDialInfoScRsp| { &mut m.HPKCJDEJLGB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetHeartDialInfoScRsp>(
             "GetHeartDialInfoScRsp",
@@ -101,20 +101,20 @@ impl ::protobuf::Message for GetHeartDialInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    self.ADJKGHMHOMP.push(is.read_message()?);
+                106 => {
+                    self.JFIFOAECDFK.push(is.read_message()?);
                 },
-                66 => {
-                    self.IOJOBNEINOE.push(is.read_message()?);
+                16 => {
+                    self.MLFGAKMIMIN = is.read_enum_or_unknown()?;
                 },
-                58 => {
-                    self.ENELMHEDJII.push(is.read_message()?);
+                10 => {
+                    self.CNIDMIFKPCC.push(is.read_message()?);
                 },
-                40 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                64 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                72 => {
-                    self.BDFEILABDHM = is.read_enum_or_unknown()?;
+                82 => {
+                    self.HPKCJDEJLGB.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,45 +128,45 @@ impl ::protobuf::Message for GetHeartDialInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.ADJKGHMHOMP {
+        for value in &self.JFIFOAECDFK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.IOJOBNEINOE {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.ENELMHEDJII {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.ADADHIHDHJC);
+        if self.MLFGAKMIMIN != ::protobuf::EnumOrUnknown::new(super::GNPHJAPOJJM::GNPHJAPOJJM::HEART_DIAL_UNLOCK_STATUS_LOCK) {
+            my_size += ::protobuf::rt::int32_size(2, self.MLFGAKMIMIN.value());
         }
-        if self.BDFEILABDHM != ::protobuf::EnumOrUnknown::new(super::DBEKLDHFDCG::DBEKLDHFDCG::HEART_DIAL_UNLOCK_STATUS_LOCK) {
-            my_size += ::protobuf::rt::int32_size(9, self.BDFEILABDHM.value());
+        for value in &self.CNIDMIFKPCC {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
+        for value in &self.HPKCJDEJLGB {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.ADJKGHMHOMP {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        for v in &self.JFIFOAECDFK {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
-        for v in &self.IOJOBNEINOE {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
-        for v in &self.ENELMHEDJII {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        };
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(5, self.ADADHIHDHJC)?;
+        if self.MLFGAKMIMIN != ::protobuf::EnumOrUnknown::new(super::GNPHJAPOJJM::GNPHJAPOJJM::HEART_DIAL_UNLOCK_STATUS_LOCK) {
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.MLFGAKMIMIN))?;
         }
-        if self.BDFEILABDHM != ::protobuf::EnumOrUnknown::new(super::DBEKLDHFDCG::DBEKLDHFDCG::HEART_DIAL_UNLOCK_STATUS_LOCK) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.BDFEILABDHM))?;
+        for v in &self.CNIDMIFKPCC {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        };
+        if self.retcode != 0 {
+            os.write_uint32(8, self.retcode)?;
         }
+        for v in &self.HPKCJDEJLGB {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -184,21 +184,21 @@ impl ::protobuf::Message for GetHeartDialInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADJKGHMHOMP.clear();
-        self.IOJOBNEINOE.clear();
-        self.ENELMHEDJII.clear();
-        self.ADADHIHDHJC = 0;
-        self.BDFEILABDHM = ::protobuf::EnumOrUnknown::new(super::DBEKLDHFDCG::DBEKLDHFDCG::HEART_DIAL_UNLOCK_STATUS_LOCK);
+        self.JFIFOAECDFK.clear();
+        self.MLFGAKMIMIN = ::protobuf::EnumOrUnknown::new(super::GNPHJAPOJJM::GNPHJAPOJJM::HEART_DIAL_UNLOCK_STATUS_LOCK);
+        self.CNIDMIFKPCC.clear();
+        self.retcode = 0;
+        self.HPKCJDEJLGB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetHeartDialInfoScRsp {
         static instance: GetHeartDialInfoScRsp = GetHeartDialInfoScRsp {
-            ADJKGHMHOMP: ::std::vec::Vec::new(),
-            IOJOBNEINOE: ::std::vec::Vec::new(),
-            ENELMHEDJII: ::std::vec::Vec::new(),
-            ADADHIHDHJC: 0,
-            BDFEILABDHM: ::protobuf::EnumOrUnknown::from_i32(0),
+            JFIFOAECDFK: ::std::vec::Vec::new(),
+            MLFGAKMIMIN: ::protobuf::EnumOrUnknown::from_i32(0),
+            CNIDMIFKPCC: ::std::vec::Vec::new(),
+            retcode: 0,
+            HPKCJDEJLGB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -223,14 +223,14 @@ impl ::protobuf::reflect::ProtobufValue for GetHeartDialInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bGetHeartDialInfoScRsp.proto\x1a\x11DBEKLDHFDCG.proto\x1a\x11HNGOJH\
-    BPFEJ.proto\x1a\x11INDBLNCPNOB.proto\x1a\x11LBOCLBHDIJL.proto\"\xf9\x01\
-    \n\x15GetHeartDialInfoScRsp\x12.\n\x0bADJKGHMHOMP\x18\x06\x20\x03(\x0b2\
-    \x0c.INDBLNCPNOBR\x0bADJKGHMHOMP\x12.\n\x0bIOJOBNEINOE\x18\x08\x20\x03(\
-    \x0b2\x0c.LBOCLBHDIJLR\x0bIOJOBNEINOE\x12.\n\x0bENELMHEDJII\x18\x07\x20\
-    \x03(\x0b2\x0c.HNGOJHBPFEJR\x0bENELMHEDJII\x12\x20\n\x0bADADHIHDHJC\x18\
-    \x05\x20\x01(\rR\x0bADADHIHDHJC\x12.\n\x0bBDFEILABDHM\x18\t\x20\x01(\x0e\
-    2\x0c.DBEKLDHFDCGR\x0bBDFEILABDHMb\x06proto3\
+    \n\x1bGetHeartDialInfoScRsp.proto\x1a\x11ABMIFMMDLMK.proto\x1a\x11GNPHJA\
+    POJJM.proto\x1a\x11HHGCOJOMGBN.proto\x1a\x11JHMALOGKGBL.proto\"\xf1\x01\
+    \n\x15GetHeartDialInfoScRsp\x12.\n\x0bJFIFOAECDFK\x18\r\x20\x03(\x0b2\
+    \x0c.JHMALOGKGBLR\x0bJFIFOAECDFK\x12.\n\x0bMLFGAKMIMIN\x18\x02\x20\x01(\
+    \x0e2\x0c.GNPHJAPOJJMR\x0bMLFGAKMIMIN\x12.\n\x0bCNIDMIFKPCC\x18\x01\x20\
+    \x03(\x0b2\x0c.HHGCOJOMGBNR\x0bCNIDMIFKPCC\x12\x18\n\x07retcode\x18\x08\
+    \x20\x01(\rR\x07retcode\x12.\n\x0bHPKCJDEJLGB\x18\n\x20\x03(\x0b2\x0c.AB\
+    MIFMMDLMKR\x0bHPKCJDEJLGBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -248,10 +248,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(4);
-            deps.push(super::DBEKLDHFDCG::file_descriptor().clone());
-            deps.push(super::HNGOJHBPFEJ::file_descriptor().clone());
-            deps.push(super::INDBLNCPNOB::file_descriptor().clone());
-            deps.push(super::LBOCLBHDIJL::file_descriptor().clone());
+            deps.push(super::ABMIFMMDLMK::file_descriptor().clone());
+            deps.push(super::GNPHJAPOJJM::file_descriptor().clone());
+            deps.push(super::HHGCOJOMGBN::file_descriptor().clone());
+            deps.push(super::JHMALOGKGBL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetHeartDialInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GiveUpBoxingClubChallengeScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GiveUpBoxingClubChallengeScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:GiveUpBoxingClubChallengeScRsp.AKFANIJHPCN)
-    pub AKFANIJHPCN: ::protobuf::MessageField<super::HKFBMLKMOMJ::HKFBMLKMOMJ>,
+    // @@protoc_insertion_point(field:GiveUpBoxingClubChallengeScRsp.HLNEMJGPFGF)
+    pub HLNEMJGPFGF: ::protobuf::MessageField<super::DKOCAAOHIBK::DKOCAAOHIBK>,
+    // @@protoc_insertion_point(field:GiveUpBoxingClubChallengeScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GiveUpBoxingClubChallengeScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl GiveUpBoxingClubChallengeScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &GiveUpBoxingClubChallengeScRsp| { &m.ADADHIHDHJC },
-            |m: &mut GiveUpBoxingClubChallengeScRsp| { &mut m.ADADHIHDHJC },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DKOCAAOHIBK::DKOCAAOHIBK>(
+            "HLNEMJGPFGF",
+            |m: &GiveUpBoxingClubChallengeScRsp| { &m.HLNEMJGPFGF },
+            |m: &mut GiveUpBoxingClubChallengeScRsp| { &mut m.HLNEMJGPFGF },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HKFBMLKMOMJ::HKFBMLKMOMJ>(
-            "AKFANIJHPCN",
-            |m: &GiveUpBoxingClubChallengeScRsp| { &m.AKFANIJHPCN },
-            |m: &mut GiveUpBoxingClubChallengeScRsp| { &mut m.AKFANIJHPCN },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GiveUpBoxingClubChallengeScRsp| { &m.retcode },
+            |m: &mut GiveUpBoxingClubChallengeScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GiveUpBoxingClubChallengeScRsp>(
             "GiveUpBoxingClubChallengeScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for GiveUpBoxingClubChallengeScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HLNEMJGPFGF)?;
                 },
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AKFANIJHPCN)?;
+                56 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,12 +98,12 @@ impl ::protobuf::Message for GiveUpBoxingClubChallengeScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.ADADHIHDHJC);
-        }
-        if let Some(v) = self.AKFANIJHPCN.as_ref() {
+        if let Some(v) = self.HLNEMJGPFGF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for GiveUpBoxingClubChallengeScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(6, self.ADADHIHDHJC)?;
+        if let Some(v) = self.HLNEMJGPFGF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
-        if let Some(v) = self.AKFANIJHPCN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(7, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for GiveUpBoxingClubChallengeScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADADHIHDHJC = 0;
-        self.AKFANIJHPCN.clear();
+        self.HLNEMJGPFGF.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GiveUpBoxingClubChallengeScRsp {
         static instance: GiveUpBoxingClubChallengeScRsp = GiveUpBoxingClubChallengeScRsp {
-            ADADHIHDHJC: 0,
-            AKFANIJHPCN: ::protobuf::MessageField::none(),
+            HLNEMJGPFGF: ::protobuf::MessageField::none(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for GiveUpBoxingClubChallengeScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$GiveUpBoxingClubChallengeScRsp.proto\x1a\x11HKFBMLKMOMJ.proto\"r\n\
-    \x1eGiveUpBoxingClubChallengeScRsp\x12\x20\n\x0bADADHIHDHJC\x18\x06\x20\
-    \x01(\rR\x0bADADHIHDHJC\x12.\n\x0bAKFANIJHPCN\x18\x01\x20\x01(\x0b2\x0c.\
-    HKFBMLKMOMJR\x0bAKFANIJHPCNb\x06proto3\
+    \n$GiveUpBoxingClubChallengeScRsp.proto\x1a\x11DKOCAAOHIBK.proto\"j\n\
+    \x1eGiveUpBoxingClubChallengeScRsp\x12.\n\x0bHLNEMJGPFGF\x18\x08\x20\x01\
+    (\x0b2\x0c.DKOCAAOHIBKR\x0bHLNEMJGPFGF\x12\x18\n\x07retcode\x18\x07\x20\
+    \x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::HKFBMLKMOMJ::file_descriptor().clone());
+            deps.push(super::DKOCAAOHIBK::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GiveUpBoxingClubChallengeScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

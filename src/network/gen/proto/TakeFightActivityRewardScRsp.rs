@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeFightActivityRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeFightActivityRewardScRsp.ILIFHHJFMIH)
-    pub ILIFHHJFMIH: u32,
-    // @@protoc_insertion_point(field:TakeFightActivityRewardScRsp.ELPMNKHEPKJ)
-    pub ELPMNKHEPKJ: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:TakeFightActivityRewardScRsp.KONGAADEJEL)
-    pub KONGAADEJEL: u32,
-    // @@protoc_insertion_point(field:TakeFightActivityRewardScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:TakeFightActivityRewardScRsp.IBAFDOBBEGD)
+    pub IBAFDOBBEGD: u32,
+    // @@protoc_insertion_point(field:TakeFightActivityRewardScRsp.IOPPGEGDHGL)
+    pub IOPPGEGDHGL: u32,
+    // @@protoc_insertion_point(field:TakeFightActivityRewardScRsp.AECJKNIGHJK)
+    pub AECJKNIGHJK: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:TakeFightActivityRewardScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeFightActivityRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl TakeFightActivityRewardScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ILIFHHJFMIH",
-            |m: &TakeFightActivityRewardScRsp| { &m.ILIFHHJFMIH },
-            |m: &mut TakeFightActivityRewardScRsp| { &mut m.ILIFHHJFMIH },
+            "IBAFDOBBEGD",
+            |m: &TakeFightActivityRewardScRsp| { &m.IBAFDOBBEGD },
+            |m: &mut TakeFightActivityRewardScRsp| { &mut m.IBAFDOBBEGD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IOPPGEGDHGL",
+            |m: &TakeFightActivityRewardScRsp| { &m.IOPPGEGDHGL },
+            |m: &mut TakeFightActivityRewardScRsp| { &mut m.IOPPGEGDHGL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "ELPMNKHEPKJ",
-            |m: &TakeFightActivityRewardScRsp| { &m.ELPMNKHEPKJ },
-            |m: &mut TakeFightActivityRewardScRsp| { &mut m.ELPMNKHEPKJ },
+            "AECJKNIGHJK",
+            |m: &TakeFightActivityRewardScRsp| { &m.AECJKNIGHJK },
+            |m: &mut TakeFightActivityRewardScRsp| { &mut m.AECJKNIGHJK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KONGAADEJEL",
-            |m: &TakeFightActivityRewardScRsp| { &m.KONGAADEJEL },
-            |m: &mut TakeFightActivityRewardScRsp| { &mut m.KONGAADEJEL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &TakeFightActivityRewardScRsp| { &m.ADADHIHDHJC },
-            |m: &mut TakeFightActivityRewardScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &TakeFightActivityRewardScRsp| { &m.retcode },
+            |m: &mut TakeFightActivityRewardScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeFightActivityRewardScRsp>(
             "TakeFightActivityRewardScRsp",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for TakeFightActivityRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                24 => {
+                    self.IBAFDOBBEGD = is.read_uint32()?;
+                },
+                48 => {
+                    self.IOPPGEGDHGL = is.read_uint32()?;
+                },
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AECJKNIGHJK)?;
+                },
                 104 => {
-                    self.ILIFHHJFMIH = is.read_uint32()?;
-                },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ELPMNKHEPKJ)?;
-                },
-                56 => {
-                    self.KONGAADEJEL = is.read_uint32()?;
-                },
-                72 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,18 +118,18 @@ impl ::protobuf::Message for TakeFightActivityRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ILIFHHJFMIH != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.ILIFHHJFMIH);
+        if self.IBAFDOBBEGD != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.IBAFDOBBEGD);
         }
-        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
+        if self.IOPPGEGDHGL != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.IOPPGEGDHGL);
+        }
+        if let Some(v) = self.AECJKNIGHJK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.KONGAADEJEL != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.KONGAADEJEL);
-        }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for TakeFightActivityRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ILIFHHJFMIH != 0 {
-            os.write_uint32(13, self.ILIFHHJFMIH)?;
+        if self.IBAFDOBBEGD != 0 {
+            os.write_uint32(3, self.IBAFDOBBEGD)?;
         }
-        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if self.IOPPGEGDHGL != 0 {
+            os.write_uint32(6, self.IOPPGEGDHGL)?;
         }
-        if self.KONGAADEJEL != 0 {
-            os.write_uint32(7, self.KONGAADEJEL)?;
+        if let Some(v) = self.AECJKNIGHJK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(9, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(13, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for TakeFightActivityRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.ILIFHHJFMIH = 0;
-        self.ELPMNKHEPKJ.clear();
-        self.KONGAADEJEL = 0;
-        self.ADADHIHDHJC = 0;
+        self.IBAFDOBBEGD = 0;
+        self.IOPPGEGDHGL = 0;
+        self.AECJKNIGHJK.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeFightActivityRewardScRsp {
         static instance: TakeFightActivityRewardScRsp = TakeFightActivityRewardScRsp {
-            ILIFHHJFMIH: 0,
-            ELPMNKHEPKJ: ::protobuf::MessageField::none(),
-            KONGAADEJEL: 0,
-            ADADHIHDHJC: 0,
+            IBAFDOBBEGD: 0,
+            IOPPGEGDHGL: 0,
+            AECJKNIGHJK: ::protobuf::MessageField::none(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,11 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for TakeFightActivityRewardScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"TakeFightActivityRewardScRsp.proto\x1a\x0eItemList.proto\"\xb1\x01\n\
-    \x1cTakeFightActivityRewardScRsp\x12\x20\n\x0bILIFHHJFMIH\x18\r\x20\x01(\
-    \rR\x0bILIFHHJFMIH\x12+\n\x0bELPMNKHEPKJ\x18\n\x20\x01(\x0b2\t.ItemListR\
-    \x0bELPMNKHEPKJ\x12\x20\n\x0bKONGAADEJEL\x18\x07\x20\x01(\rR\x0bKONGAADE\
-    JEL\x12\x20\n\x0bADADHIHDHJC\x18\t\x20\x01(\rR\x0bADADHIHDHJCb\x06proto3\
+    \n\"TakeFightActivityRewardScRsp.proto\x1a\x0eItemList.proto\"\xa9\x01\n\
+    \x1cTakeFightActivityRewardScRsp\x12\x20\n\x0bIBAFDOBBEGD\x18\x03\x20\
+    \x01(\rR\x0bIBAFDOBBEGD\x12\x20\n\x0bIOPPGEGDHGL\x18\x06\x20\x01(\rR\x0b\
+    IOPPGEGDHGL\x12+\n\x0bAECJKNIGHJK\x18\x07\x20\x01(\x0b2\t.ItemListR\x0bA\
+    ECJKNIGHJK\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

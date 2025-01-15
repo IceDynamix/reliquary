@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetAssistListScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetAssistListScRsp.DHJPBDPOIDB)
-    pub DHJPBDPOIDB: ::std::vec::Vec<super::PIMKBDJNKHN::PIMKBDJNKHN>,
-    // @@protoc_insertion_point(field:GetAssistListScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:GetAssistListScRsp.AELMDKFJPNI)
+    pub AELMDKFJPNI: ::std::vec::Vec<super::JNJGGFAMMBC::JNJGGFAMMBC>,
+    // @@protoc_insertion_point(field:GetAssistListScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetAssistListScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl GetAssistListScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DHJPBDPOIDB",
-            |m: &GetAssistListScRsp| { &m.DHJPBDPOIDB },
-            |m: &mut GetAssistListScRsp| { &mut m.DHJPBDPOIDB },
+            "AELMDKFJPNI",
+            |m: &GetAssistListScRsp| { &m.AELMDKFJPNI },
+            |m: &mut GetAssistListScRsp| { &mut m.AELMDKFJPNI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &GetAssistListScRsp| { &m.ADADHIHDHJC },
-            |m: &mut GetAssistListScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &GetAssistListScRsp| { &m.retcode },
+            |m: &mut GetAssistListScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetAssistListScRsp>(
             "GetAssistListScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for GetAssistListScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    self.DHJPBDPOIDB.push(is.read_message()?);
+                18 => {
+                    self.AELMDKFJPNI.push(is.read_message()?);
                 },
-                8 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                72 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,12 +98,12 @@ impl ::protobuf::Message for GetAssistListScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.DHJPBDPOIDB {
+        for value in &self.AELMDKFJPNI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for GetAssistListScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.DHJPBDPOIDB {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        for v in &self.AELMDKFJPNI {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(1, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(9, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for GetAssistListScRsp {
     }
 
     fn clear(&mut self) {
-        self.DHJPBDPOIDB.clear();
-        self.ADADHIHDHJC = 0;
+        self.AELMDKFJPNI.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetAssistListScRsp {
         static instance: GetAssistListScRsp = GetAssistListScRsp {
-            DHJPBDPOIDB: ::std::vec::Vec::new(),
-            ADADHIHDHJC: 0,
+            AELMDKFJPNI: ::std::vec::Vec::new(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for GetAssistListScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18GetAssistListScRsp.proto\x1a\x11PIMKBDJNKHN.proto\"f\n\x12GetAssis\
-    tListScRsp\x12.\n\x0bDHJPBDPOIDB\x18\t\x20\x03(\x0b2\x0c.PIMKBDJNKHNR\
-    \x0bDHJPBDPOIDB\x12\x20\n\x0bADADHIHDHJC\x18\x01\x20\x01(\rR\x0bADADHIHD\
-    HJCb\x06proto3\
+    \n\x18GetAssistListScRsp.proto\x1a\x11JNJGGFAMMBC.proto\"^\n\x12GetAssis\
+    tListScRsp\x12.\n\x0bAELMDKFJPNI\x18\x02\x20\x03(\x0b2\x0c.JNJGGFAMMBCR\
+    \x0bAELMDKFJPNI\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcodeb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::PIMKBDJNKHN::file_descriptor().clone());
+            deps.push(super::JNJGGFAMMBC::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetAssistListScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

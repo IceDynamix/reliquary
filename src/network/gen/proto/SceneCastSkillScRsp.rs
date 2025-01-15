@@ -29,12 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneCastSkillScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SceneCastSkillScRsp.battle_info)
-    pub battle_info: ::protobuf::MessageField<super::SceneBattleInfo::SceneBattleInfo>,
-    // @@protoc_insertion_point(field:SceneCastSkillScRsp.attacked_group_id)
-    pub attacked_group_id: u32,
+    // @@protoc_insertion_point(field:SceneCastSkillScRsp.LPPMFJOCKNO)
+    pub LPPMFJOCKNO: ::protobuf::MessageField<super::DDCPCKIHMEF::DDCPCKIHMEF>,
+    // @@protoc_insertion_point(field:SceneCastSkillScRsp.OPGGEDKDIEI)
+    pub OPGGEDKDIEI: u32,
     // @@protoc_insertion_point(field:SceneCastSkillScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:SceneCastSkillScRsp.EBKAEGBGIJI)
+    pub EBKAEGBGIJI: ::std::vec::Vec<super::BONJKDEAHDP::BONJKDEAHDP>,
     // special fields
     // @@protoc_insertion_point(special_field:SceneCastSkillScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,22 +54,27 @@ impl SceneCastSkillScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneBattleInfo::SceneBattleInfo>(
-            "battle_info",
-            |m: &SceneCastSkillScRsp| { &m.battle_info },
-            |m: &mut SceneCastSkillScRsp| { &mut m.battle_info },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DDCPCKIHMEF::DDCPCKIHMEF>(
+            "LPPMFJOCKNO",
+            |m: &SceneCastSkillScRsp| { &m.LPPMFJOCKNO },
+            |m: &mut SceneCastSkillScRsp| { &mut m.LPPMFJOCKNO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "attacked_group_id",
-            |m: &SceneCastSkillScRsp| { &m.attacked_group_id },
-            |m: &mut SceneCastSkillScRsp| { &mut m.attacked_group_id },
+            "OPGGEDKDIEI",
+            |m: &SceneCastSkillScRsp| { &m.OPGGEDKDIEI },
+            |m: &mut SceneCastSkillScRsp| { &mut m.OPGGEDKDIEI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &SceneCastSkillScRsp| { &m.retcode },
             |m: &mut SceneCastSkillScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "EBKAEGBGIJI",
+            |m: &SceneCastSkillScRsp| { &m.EBKAEGBGIJI },
+            |m: &mut SceneCastSkillScRsp| { &mut m.EBKAEGBGIJI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SceneCastSkillScRsp>(
             "SceneCastSkillScRsp",
@@ -87,14 +94,17 @@ impl ::protobuf::Message for SceneCastSkillScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_info)?;
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LPPMFJOCKNO)?;
                 },
-                56 => {
-                    self.attacked_group_id = is.read_uint32()?;
+                16 => {
+                    self.OPGGEDKDIEI = is.read_uint32()?;
                 },
-                72 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
+                },
+                122 => {
+                    self.EBKAEGBGIJI.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,31 +118,38 @@ impl ::protobuf::Message for SceneCastSkillScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.battle_info.as_ref() {
+        if let Some(v) = self.LPPMFJOCKNO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.attacked_group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.attacked_group_id);
+        if self.OPGGEDKDIEI != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.OPGGEDKDIEI);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
+        for value in &self.EBKAEGBGIJI {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.battle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if let Some(v) = self.LPPMFJOCKNO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
-        if self.attacked_group_id != 0 {
-            os.write_uint32(7, self.attacked_group_id)?;
+        if self.OPGGEDKDIEI != 0 {
+            os.write_uint32(2, self.OPGGEDKDIEI)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
         }
+        for v in &self.EBKAEGBGIJI {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,17 +167,19 @@ impl ::protobuf::Message for SceneCastSkillScRsp {
     }
 
     fn clear(&mut self) {
-        self.battle_info.clear();
-        self.attacked_group_id = 0;
+        self.LPPMFJOCKNO.clear();
+        self.OPGGEDKDIEI = 0;
         self.retcode = 0;
+        self.EBKAEGBGIJI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneCastSkillScRsp {
         static instance: SceneCastSkillScRsp = SceneCastSkillScRsp {
-            battle_info: ::protobuf::MessageField::none(),
-            attacked_group_id: 0,
+            LPPMFJOCKNO: ::protobuf::MessageField::none(),
+            OPGGEDKDIEI: 0,
             retcode: 0,
+            EBKAEGBGIJI: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +204,12 @@ impl ::protobuf::reflect::ProtobufValue for SceneCastSkillScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19SceneCastSkillScRsp.proto\x1a\x15SceneBattleInfo.proto\"\x8e\x01\n\
-    \x13SceneCastSkillScRsp\x121\n\x0bbattle_info\x18\x01\x20\x01(\x0b2\x10.\
-    SceneBattleInfoR\nbattleInfo\x12*\n\x11attacked_group_id\x18\x07\x20\x01\
-    (\rR\x0fattackedGroupId\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcod\
-    eB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x19SceneCastSkillScRsp.proto\x1a\x11BONJKDEAHDP.proto\x1a\x11DDCPCKIH\
+    MEF.proto\"\xb1\x01\n\x13SceneCastSkillScRsp\x12.\n\x0bLPPMFJOCKNO\x18\
+    \x05\x20\x01(\x0b2\x0c.DDCPCKIHMEFR\x0bLPPMFJOCKNO\x12\x20\n\x0bOPGGEDKD\
+    IEI\x18\x02\x20\x01(\rR\x0bOPGGEDKDIEI\x12\x18\n\x07retcode\x18\x0c\x20\
+    \x01(\rR\x07retcode\x12.\n\x0bEBKAEGBGIJI\x18\x0f\x20\x03(\x0b2\x0c.BONJ\
+    KDEAHDPR\x0bEBKAEGBGIJIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,8 +226,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::SceneBattleInfo::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(2);
+            deps.push(super::BONJKDEAHDP::file_descriptor().clone());
+            deps.push(super::DDCPCKIHMEF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SceneCastSkillScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

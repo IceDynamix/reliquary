@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyBuyGoodsScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyBuyGoodsScRsp.PNJIJAJMCMG)
-    pub PNJIJAJMCMG: u32,
-    // @@protoc_insertion_point(field:MonopolyBuyGoodsScRsp.HBNLKNHEACP)
-    pub HBNLKNHEACP: u32,
-    // @@protoc_insertion_point(field:MonopolyBuyGoodsScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:MonopolyBuyGoodsScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:MonopolyBuyGoodsScRsp.JCEDPIFGKKO)
+    pub JCEDPIFGKKO: u32,
+    // @@protoc_insertion_point(field:MonopolyBuyGoodsScRsp.EBDMIFPMDPH)
+    pub EBDMIFPMDPH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyBuyGoodsScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl MonopolyBuyGoodsScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PNJIJAJMCMG",
-            |m: &MonopolyBuyGoodsScRsp| { &m.PNJIJAJMCMG },
-            |m: &mut MonopolyBuyGoodsScRsp| { &mut m.PNJIJAJMCMG },
+            "retcode",
+            |m: &MonopolyBuyGoodsScRsp| { &m.retcode },
+            |m: &mut MonopolyBuyGoodsScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HBNLKNHEACP",
-            |m: &MonopolyBuyGoodsScRsp| { &m.HBNLKNHEACP },
-            |m: &mut MonopolyBuyGoodsScRsp| { &mut m.HBNLKNHEACP },
+            "JCEDPIFGKKO",
+            |m: &MonopolyBuyGoodsScRsp| { &m.JCEDPIFGKKO },
+            |m: &mut MonopolyBuyGoodsScRsp| { &mut m.JCEDPIFGKKO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &MonopolyBuyGoodsScRsp| { &m.ADADHIHDHJC },
-            |m: &mut MonopolyBuyGoodsScRsp| { &mut m.ADADHIHDHJC },
+            "EBDMIFPMDPH",
+            |m: &MonopolyBuyGoodsScRsp| { &m.EBDMIFPMDPH },
+            |m: &mut MonopolyBuyGoodsScRsp| { &mut m.EBDMIFPMDPH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyBuyGoodsScRsp>(
             "MonopolyBuyGoodsScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for MonopolyBuyGoodsScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.PNJIJAJMCMG = is.read_uint32()?;
+                120 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                16 => {
-                    self.HBNLKNHEACP = is.read_uint32()?;
+                72 => {
+                    self.JCEDPIFGKKO = is.read_uint32()?;
                 },
-                64 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                112 => {
+                    self.EBDMIFPMDPH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for MonopolyBuyGoodsScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PNJIJAJMCMG != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.PNJIJAJMCMG);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
-        if self.HBNLKNHEACP != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.HBNLKNHEACP);
+        if self.JCEDPIFGKKO != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.JCEDPIFGKKO);
         }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.ADADHIHDHJC);
+        if self.EBDMIFPMDPH != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.EBDMIFPMDPH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for MonopolyBuyGoodsScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PNJIJAJMCMG != 0 {
-            os.write_uint32(11, self.PNJIJAJMCMG)?;
+        if self.retcode != 0 {
+            os.write_uint32(15, self.retcode)?;
         }
-        if self.HBNLKNHEACP != 0 {
-            os.write_uint32(2, self.HBNLKNHEACP)?;
+        if self.JCEDPIFGKKO != 0 {
+            os.write_uint32(9, self.JCEDPIFGKKO)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(8, self.ADADHIHDHJC)?;
+        if self.EBDMIFPMDPH != 0 {
+            os.write_uint32(14, self.EBDMIFPMDPH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for MonopolyBuyGoodsScRsp {
     }
 
     fn clear(&mut self) {
-        self.PNJIJAJMCMG = 0;
-        self.HBNLKNHEACP = 0;
-        self.ADADHIHDHJC = 0;
+        self.retcode = 0;
+        self.JCEDPIFGKKO = 0;
+        self.EBDMIFPMDPH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyBuyGoodsScRsp {
         static instance: MonopolyBuyGoodsScRsp = MonopolyBuyGoodsScRsp {
-            PNJIJAJMCMG: 0,
-            HBNLKNHEACP: 0,
-            ADADHIHDHJC: 0,
+            retcode: 0,
+            JCEDPIFGKKO: 0,
+            EBDMIFPMDPH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyBuyGoodsScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bMonopolyBuyGoodsScRsp.proto\"}\n\x15MonopolyBuyGoodsScRsp\x12\x20\
-    \n\x0bPNJIJAJMCMG\x18\x0b\x20\x01(\rR\x0bPNJIJAJMCMG\x12\x20\n\x0bHBNLKN\
-    HEACP\x18\x02\x20\x01(\rR\x0bHBNLKNHEACP\x12\x20\n\x0bADADHIHDHJC\x18\
-    \x08\x20\x01(\rR\x0bADADHIHDHJCb\x06proto3\
+    \n\x1bMonopolyBuyGoodsScRsp.proto\"u\n\x15MonopolyBuyGoodsScRsp\x12\x18\
+    \n\x07retcode\x18\x0f\x20\x01(\rR\x07retcode\x12\x20\n\x0bJCEDPIFGKKO\
+    \x18\t\x20\x01(\rR\x0bJCEDPIFGKKO\x12\x20\n\x0bEBDMIFPMDPH\x18\x0e\x20\
+    \x01(\rR\x0bEBDMIFPMDPHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

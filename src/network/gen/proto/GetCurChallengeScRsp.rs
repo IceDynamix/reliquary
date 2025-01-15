@@ -31,10 +31,10 @@ pub struct GetCurChallengeScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetCurChallengeScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetCurChallengeScRsp.challenge_info)
-    pub challenge_info: ::protobuf::MessageField<super::ChallengeInfo::ChallengeInfo>,
-    // @@protoc_insertion_point(field:GetCurChallengeScRsp.lineup_list)
-    pub lineup_list: ::std::vec::Vec<super::LineupInfo::LineupInfo>,
+    // @@protoc_insertion_point(field:GetCurChallengeScRsp.AJFGJKFAJEK)
+    pub AJFGJKFAJEK: ::std::vec::Vec<super::PMBHFPCDGBM::PMBHFPCDGBM>,
+    // @@protoc_insertion_point(field:GetCurChallengeScRsp.ALDFGHHPBDG)
+    pub ALDFGHHPBDG: ::protobuf::MessageField<super::MEBPBLCBLJN::MEBPBLCBLJN>,
     // special fields
     // @@protoc_insertion_point(special_field:GetCurChallengeScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,15 +59,15 @@ impl GetCurChallengeScRsp {
             |m: &GetCurChallengeScRsp| { &m.retcode },
             |m: &mut GetCurChallengeScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengeInfo::ChallengeInfo>(
-            "challenge_info",
-            |m: &GetCurChallengeScRsp| { &m.challenge_info },
-            |m: &mut GetCurChallengeScRsp| { &mut m.challenge_info },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "lineup_list",
-            |m: &GetCurChallengeScRsp| { &m.lineup_list },
-            |m: &mut GetCurChallengeScRsp| { &mut m.lineup_list },
+            "AJFGJKFAJEK",
+            |m: &GetCurChallengeScRsp| { &m.AJFGJKFAJEK },
+            |m: &mut GetCurChallengeScRsp| { &mut m.AJFGJKFAJEK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MEBPBLCBLJN::MEBPBLCBLJN>(
+            "ALDFGHHPBDG",
+            |m: &GetCurChallengeScRsp| { &m.ALDFGHHPBDG },
+            |m: &mut GetCurChallengeScRsp| { &mut m.ALDFGHHPBDG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetCurChallengeScRsp>(
             "GetCurChallengeScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for GetCurChallengeScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.challenge_info)?;
+                34 => {
+                    self.AJFGJKFAJEK.push(is.read_message()?);
                 },
-                58 => {
-                    self.lineup_list.push(is.read_message()?);
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ALDFGHHPBDG)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -109,16 +109,16 @@ impl ::protobuf::Message for GetCurChallengeScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
-        if let Some(v) = self.challenge_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        for value in &self.lineup_list {
+        for value in &self.AJFGJKFAJEK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if let Some(v) = self.ALDFGHHPBDG.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -126,14 +126,14 @@ impl ::protobuf::Message for GetCurChallengeScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
-        if let Some(v) = self.challenge_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
-        for v in &self.lineup_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        for v in &self.AJFGJKFAJEK {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
+        if let Some(v) = self.ALDFGHHPBDG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -152,16 +152,16 @@ impl ::protobuf::Message for GetCurChallengeScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.challenge_info.clear();
-        self.lineup_list.clear();
+        self.AJFGJKFAJEK.clear();
+        self.ALDFGHHPBDG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetCurChallengeScRsp {
         static instance: GetCurChallengeScRsp = GetCurChallengeScRsp {
             retcode: 0,
-            challenge_info: ::protobuf::MessageField::none(),
-            lineup_list: ::std::vec::Vec::new(),
+            AJFGJKFAJEK: ::std::vec::Vec::new(),
+            ALDFGHHPBDG: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,12 +186,11 @@ impl ::protobuf::reflect::ProtobufValue for GetCurChallengeScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aGetCurChallengeScRsp.proto\x1a\x13ChallengeInfo.proto\x1a\x10Lineu\
-    pInfo.proto\"\x95\x01\n\x14GetCurChallengeScRsp\x12\x18\n\x07retcode\x18\
-    \x08\x20\x01(\rR\x07retcode\x125\n\x0echallenge_info\x18\x05\x20\x01(\
-    \x0b2\x0e.ChallengeInfoR\rchallengeInfo\x12,\n\x0blineup_list\x18\x07\
-    \x20\x03(\x0b2\x0b.LineupInfoR\nlineupListB\x15\n\x13emu.lunarcore.proto\
-    b\x06proto3\
+    \n\x1aGetCurChallengeScRsp.proto\x1a\x11MEBPBLCBLJN.proto\x1a\x11PMBHFPC\
+    DGBM.proto\"\x90\x01\n\x14GetCurChallengeScRsp\x12\x18\n\x07retcode\x18\
+    \t\x20\x01(\rR\x07retcode\x12.\n\x0bAJFGJKFAJEK\x18\x04\x20\x03(\x0b2\
+    \x0c.PMBHFPCDGBMR\x0bAJFGJKFAJEK\x12.\n\x0bALDFGHHPBDG\x18\x02\x20\x01(\
+    \x0b2\x0c.MEBPBLCBLJNR\x0bALDFGHHPBDGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -209,8 +208,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::ChallengeInfo::file_descriptor().clone());
-            deps.push(super::LineupInfo::file_descriptor().clone());
+            deps.push(super::MEBPBLCBLJN::file_descriptor().clone());
+            deps.push(super::PMBHFPCDGBM::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetCurChallengeScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

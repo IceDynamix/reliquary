@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetAllRedDotDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetAllRedDotDataScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:GetAllRedDotDataScRsp.CACGPPAMLDI)
-    pub CACGPPAMLDI: ::std::vec::Vec<super::IDNPCCEHCNO::IDNPCCEHCNO>,
+    // @@protoc_insertion_point(field:GetAllRedDotDataScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetAllRedDotDataScRsp.FMLJDOJMKPP)
+    pub FMLJDOJMKPP: ::std::vec::Vec<super::MDPAPLMJLIC::MDPAPLMJLIC>,
     // special fields
     // @@protoc_insertion_point(special_field:GetAllRedDotDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl GetAllRedDotDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &GetAllRedDotDataScRsp| { &m.ADADHIHDHJC },
-            |m: &mut GetAllRedDotDataScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &GetAllRedDotDataScRsp| { &m.retcode },
+            |m: &mut GetAllRedDotDataScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CACGPPAMLDI",
-            |m: &GetAllRedDotDataScRsp| { &m.CACGPPAMLDI },
-            |m: &mut GetAllRedDotDataScRsp| { &mut m.CACGPPAMLDI },
+            "FMLJDOJMKPP",
+            |m: &GetAllRedDotDataScRsp| { &m.FMLJDOJMKPP },
+            |m: &mut GetAllRedDotDataScRsp| { &mut m.FMLJDOJMKPP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetAllRedDotDataScRsp>(
             "GetAllRedDotDataScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for GetAllRedDotDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                104 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                90 => {
-                    self.CACGPPAMLDI.push(is.read_message()?);
+                42 => {
+                    self.FMLJDOJMKPP.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for GetAllRedDotDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
-        for value in &self.CACGPPAMLDI {
+        for value in &self.FMLJDOJMKPP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -111,11 +111,11 @@ impl ::protobuf::Message for GetAllRedDotDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(10, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(13, self.retcode)?;
         }
-        for v in &self.CACGPPAMLDI {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        for v in &self.FMLJDOJMKPP {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for GetAllRedDotDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADADHIHDHJC = 0;
-        self.CACGPPAMLDI.clear();
+        self.retcode = 0;
+        self.FMLJDOJMKPP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetAllRedDotDataScRsp {
         static instance: GetAllRedDotDataScRsp = GetAllRedDotDataScRsp {
-            ADADHIHDHJC: 0,
-            CACGPPAMLDI: ::std::vec::Vec::new(),
+            retcode: 0,
+            FMLJDOJMKPP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for GetAllRedDotDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bGetAllRedDotDataScRsp.proto\x1a\x11IDNPCCEHCNO.proto\"i\n\x15GetAl\
-    lRedDotDataScRsp\x12\x20\n\x0bADADHIHDHJC\x18\n\x20\x01(\rR\x0bADADHIHDH\
-    JC\x12.\n\x0bCACGPPAMLDI\x18\x0b\x20\x03(\x0b2\x0c.IDNPCCEHCNOR\x0bCACGP\
-    PAMLDIb\x06proto3\
+    \n\x1bGetAllRedDotDataScRsp.proto\x1a\x11MDPAPLMJLIC.proto\"a\n\x15GetAl\
+    lRedDotDataScRsp\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x12.\
+    \n\x0bFMLJDOJMKPP\x18\x05\x20\x03(\x0b2\x0c.MDPAPLMJLICR\x0bFMLJDOJMKPPb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::IDNPCCEHCNO::file_descriptor().clone());
+            deps.push(super::MDPAPLMJLIC::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetAllRedDotDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

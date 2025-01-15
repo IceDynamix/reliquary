@@ -30,12 +30,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdPamMissionType {
     // @@protoc_insertion_point(enum_value:CmdPamMissionType.CmdPamMissionTypeNone)
     CmdPamMissionTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdPamMissionType.CmdAcceptedPamMissionExpireCsReq)
-    CmdAcceptedPamMissionExpireCsReq = 4059,
-    // @@protoc_insertion_point(enum_value:CmdPamMissionType.CmdAcceptedPamMissionExpireScRsp)
-    CmdAcceptedPamMissionExpireScRsp = 4020,
     // @@protoc_insertion_point(enum_value:CmdPamMissionType.CmdSyncAcceptedPamMissionNotify)
-    CmdSyncAcceptedPamMissionNotify = 4003,
+    CmdSyncAcceptedPamMissionNotify = 4084,
+    // @@protoc_insertion_point(enum_value:CmdPamMissionType.CmdAcceptedPamMissionExpireCsReq)
+    CmdAcceptedPamMissionExpireCsReq = 4036,
+    // @@protoc_insertion_point(enum_value:CmdPamMissionType.CmdAcceptedPamMissionExpireScRsp)
+    CmdAcceptedPamMissionExpireScRsp = 4095,
 }
 
 impl ::protobuf::Enum for CmdPamMissionType {
@@ -48,9 +48,9 @@ impl ::protobuf::Enum for CmdPamMissionType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdPamMissionType> {
         match value {
             0 => ::std::option::Option::Some(CmdPamMissionType::CmdPamMissionTypeNone),
-            4059 => ::std::option::Option::Some(CmdPamMissionType::CmdAcceptedPamMissionExpireCsReq),
-            4020 => ::std::option::Option::Some(CmdPamMissionType::CmdAcceptedPamMissionExpireScRsp),
-            4003 => ::std::option::Option::Some(CmdPamMissionType::CmdSyncAcceptedPamMissionNotify),
+            4084 => ::std::option::Option::Some(CmdPamMissionType::CmdSyncAcceptedPamMissionNotify),
+            4036 => ::std::option::Option::Some(CmdPamMissionType::CmdAcceptedPamMissionExpireCsReq),
+            4095 => ::std::option::Option::Some(CmdPamMissionType::CmdAcceptedPamMissionExpireScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -58,18 +58,18 @@ impl ::protobuf::Enum for CmdPamMissionType {
     fn from_str(str: &str) -> ::std::option::Option<CmdPamMissionType> {
         match str {
             "CmdPamMissionTypeNone" => ::std::option::Option::Some(CmdPamMissionType::CmdPamMissionTypeNone),
+            "CmdSyncAcceptedPamMissionNotify" => ::std::option::Option::Some(CmdPamMissionType::CmdSyncAcceptedPamMissionNotify),
             "CmdAcceptedPamMissionExpireCsReq" => ::std::option::Option::Some(CmdPamMissionType::CmdAcceptedPamMissionExpireCsReq),
             "CmdAcceptedPamMissionExpireScRsp" => ::std::option::Option::Some(CmdPamMissionType::CmdAcceptedPamMissionExpireScRsp),
-            "CmdSyncAcceptedPamMissionNotify" => ::std::option::Option::Some(CmdPamMissionType::CmdSyncAcceptedPamMissionNotify),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdPamMissionType] = &[
         CmdPamMissionType::CmdPamMissionTypeNone,
+        CmdPamMissionType::CmdSyncAcceptedPamMissionNotify,
         CmdPamMissionType::CmdAcceptedPamMissionExpireCsReq,
         CmdPamMissionType::CmdAcceptedPamMissionExpireScRsp,
-        CmdPamMissionType::CmdSyncAcceptedPamMissionNotify,
     ];
 }
 
@@ -82,9 +82,9 @@ impl ::protobuf::EnumFull for CmdPamMissionType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdPamMissionType::CmdPamMissionTypeNone => 0,
-            CmdPamMissionType::CmdAcceptedPamMissionExpireCsReq => 1,
-            CmdPamMissionType::CmdAcceptedPamMissionExpireScRsp => 2,
-            CmdPamMissionType::CmdSyncAcceptedPamMissionNotify => 3,
+            CmdPamMissionType::CmdSyncAcceptedPamMissionNotify => 1,
+            CmdPamMissionType::CmdAcceptedPamMissionExpireCsReq => 2,
+            CmdPamMissionType::CmdAcceptedPamMissionExpireScRsp => 3,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -104,9 +104,9 @@ impl CmdPamMissionType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17CmdPamMissionType.proto*\xa2\x01\n\x11CmdPamMissionType\x12\x19\n\
-    \x15CmdPamMissionTypeNone\x10\0\x12%\n\x20CmdAcceptedPamMissionExpireCsR\
-    eq\x10\xdb\x1f\x12%\n\x20CmdAcceptedPamMissionExpireScRsp\x10\xb4\x1f\
-    \x12$\n\x1fCmdSyncAcceptedPamMissionNotify\x10\xa3\x1fb\x06proto3\
+    \x15CmdPamMissionTypeNone\x10\0\x12$\n\x1fCmdSyncAcceptedPamMissionNotif\
+    y\x10\xf4\x1f\x12%\n\x20CmdAcceptedPamMissionExpireCsReq\x10\xc4\x1f\x12\
+    %\n\x20CmdAcceptedPamMissionExpireScRsp\x10\xff\x1fb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

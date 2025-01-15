@@ -30,7 +30,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub struct RogueModifierAddNotify {
     // message fields
     // @@protoc_insertion_point(field:RogueModifierAddNotify.CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER)
-    pub CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER: ::protobuf::MessageField<super::HHEJBAAIMFE::HHEJBAAIMFE>,
+    pub CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER: ::protobuf::MessageField<super::PPAGBCJIBNL::PPAGBCJIBNL>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueModifierAddNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,7 +50,7 @@ impl RogueModifierAddNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HHEJBAAIMFE::HHEJBAAIMFE>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PPAGBCJIBNL::PPAGBCJIBNL>(
             "CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER",
             |m: &RogueModifierAddNotify| { &m.CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER },
             |m: &mut RogueModifierAddNotify| { &mut m.CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER },
@@ -73,7 +73,7 @@ impl ::protobuf::Message for RogueModifierAddNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER)?;
                 },
                 tag => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for RogueModifierAddNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,9 +149,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueModifierAddNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cRogueModifierAddNotify.proto\x1a\x11HHEJBAAIMFE.proto\"{\n\x16Rogu\
+    \n\x1cRogueModifierAddNotify.proto\x1a\x11PPAGBCJIBNL.proto\"{\n\x16Rogu\
     eModifierAddNotify\x12a\n'CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER\x18\
-    \x03\x20\x01(\x0b2\x0c.HHEJBAAIMFER\"CHESSROGUECELLUPDATEREASONMODIFIERb\
+    \x02\x20\x01(\x0b2\x0c.PPAGBCJIBNLR\"CHESSROGUECELLUPDATEREASONMODIFIERb\
     \x06proto3\
 ";
 
@@ -170,7 +170,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::HHEJBAAIMFE::file_descriptor().clone());
+            deps.push(super::PPAGBCJIBNL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueModifierAddNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

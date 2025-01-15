@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TravelBrochurePageResetScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TravelBrochurePageResetScRsp.MMKOEOCMGIJ)
-    pub MMKOEOCMGIJ: ::protobuf::MessageField<super::ALBOCLFFGIH::ALBOCLFFGIH>,
-    // @@protoc_insertion_point(field:TravelBrochurePageResetScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:TravelBrochurePageResetScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:TravelBrochurePageResetScRsp.GCCFCJIKOLM)
+    pub GCCFCJIKOLM: ::protobuf::MessageField<super::BCENNALFCCO::BCENNALFCCO>,
     // special fields
     // @@protoc_insertion_point(special_field:TravelBrochurePageResetScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl TravelBrochurePageResetScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ALBOCLFFGIH::ALBOCLFFGIH>(
-            "MMKOEOCMGIJ",
-            |m: &TravelBrochurePageResetScRsp| { &m.MMKOEOCMGIJ },
-            |m: &mut TravelBrochurePageResetScRsp| { &mut m.MMKOEOCMGIJ },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &TravelBrochurePageResetScRsp| { &m.ADADHIHDHJC },
-            |m: &mut TravelBrochurePageResetScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &TravelBrochurePageResetScRsp| { &m.retcode },
+            |m: &mut TravelBrochurePageResetScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BCENNALFCCO::BCENNALFCCO>(
+            "GCCFCJIKOLM",
+            |m: &TravelBrochurePageResetScRsp| { &m.GCCFCJIKOLM },
+            |m: &mut TravelBrochurePageResetScRsp| { &mut m.GCCFCJIKOLM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TravelBrochurePageResetScRsp>(
             "TravelBrochurePageResetScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for TravelBrochurePageResetScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MMKOEOCMGIJ)?;
+                56 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                64 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GCCFCJIKOLM)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,12 +98,12 @@ impl ::protobuf::Message for TravelBrochurePageResetScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.MMKOEOCMGIJ.as_ref() {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        }
+        if let Some(v) = self.GCCFCJIKOLM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.ADADHIHDHJC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for TravelBrochurePageResetScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.MMKOEOCMGIJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(7, self.retcode)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(8, self.ADADHIHDHJC)?;
+        if let Some(v) = self.GCCFCJIKOLM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for TravelBrochurePageResetScRsp {
     }
 
     fn clear(&mut self) {
-        self.MMKOEOCMGIJ.clear();
-        self.ADADHIHDHJC = 0;
+        self.retcode = 0;
+        self.GCCFCJIKOLM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TravelBrochurePageResetScRsp {
         static instance: TravelBrochurePageResetScRsp = TravelBrochurePageResetScRsp {
-            MMKOEOCMGIJ: ::protobuf::MessageField::none(),
-            ADADHIHDHJC: 0,
+            retcode: 0,
+            GCCFCJIKOLM: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for TravelBrochurePageResetScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"TravelBrochurePageResetScRsp.proto\x1a\x11ALBOCLFFGIH.proto\"p\n\x1c\
-    TravelBrochurePageResetScRsp\x12.\n\x0bMMKOEOCMGIJ\x18\x03\x20\x01(\x0b2\
-    \x0c.ALBOCLFFGIHR\x0bMMKOEOCMGIJ\x12\x20\n\x0bADADHIHDHJC\x18\x08\x20\
-    \x01(\rR\x0bADADHIHDHJCb\x06proto3\
+    \n\"TravelBrochurePageResetScRsp.proto\x1a\x11BCENNALFCCO.proto\"h\n\x1c\
+    TravelBrochurePageResetScRsp\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\
+    \x07retcode\x12.\n\x0bGCCFCJIKOLM\x18\x0e\x20\x01(\x0b2\x0c.BCENNALFCCOR\
+    \x0bGCCFCJIKOLMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ALBOCLFFGIH::file_descriptor().clone());
+            deps.push(super::BCENNALFCCO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(TravelBrochurePageResetScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

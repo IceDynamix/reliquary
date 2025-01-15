@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LobbyInviteScNotify {
     // message fields
-    // @@protoc_insertion_point(field:LobbyInviteScNotify.FADJIMGIDPH)
-    pub FADJIMGIDPH: u32,
-    // @@protoc_insertion_point(field:LobbyInviteScNotify.DJNELABFJLF)
-    pub DJNELABFJLF: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
-    // @@protoc_insertion_point(field:LobbyInviteScNotify.HGMFEGGJEFB)
-    pub HGMFEGGJEFB: u32,
+    // @@protoc_insertion_point(field:LobbyInviteScNotify.BOKFLFEJHEL)
+    pub BOKFLFEJHEL: u32,
+    // @@protoc_insertion_point(field:LobbyInviteScNotify.MGGMPKIGHBM)
+    pub MGGMPKIGHBM: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
+    // @@protoc_insertion_point(field:LobbyInviteScNotify.FMJCBKLEHDO)
+    pub FMJCBKLEHDO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LobbyInviteScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl LobbyInviteScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FADJIMGIDPH",
-            |m: &LobbyInviteScNotify| { &m.FADJIMGIDPH },
-            |m: &mut LobbyInviteScNotify| { &mut m.FADJIMGIDPH },
+            "BOKFLFEJHEL",
+            |m: &LobbyInviteScNotify| { &m.BOKFLFEJHEL },
+            |m: &mut LobbyInviteScNotify| { &mut m.BOKFLFEJHEL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DJNELABFJLF",
-            |m: &LobbyInviteScNotify| { &m.DJNELABFJLF },
-            |m: &mut LobbyInviteScNotify| { &mut m.DJNELABFJLF },
+            "MGGMPKIGHBM",
+            |m: &LobbyInviteScNotify| { &m.MGGMPKIGHBM },
+            |m: &mut LobbyInviteScNotify| { &mut m.MGGMPKIGHBM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HGMFEGGJEFB",
-            |m: &LobbyInviteScNotify| { &m.HGMFEGGJEFB },
-            |m: &mut LobbyInviteScNotify| { &mut m.HGMFEGGJEFB },
+            "FMJCBKLEHDO",
+            |m: &LobbyInviteScNotify| { &m.FMJCBKLEHDO },
+            |m: &mut LobbyInviteScNotify| { &mut m.FMJCBKLEHDO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LobbyInviteScNotify>(
             "LobbyInviteScNotify",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for LobbyInviteScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.FADJIMGIDPH = is.read_uint32()?;
+                80 => {
+                    self.BOKFLFEJHEL = is.read_uint32()?;
                 },
-                40 => {
-                    self.DJNELABFJLF = is.read_enum_or_unknown()?;
+                104 => {
+                    self.MGGMPKIGHBM = is.read_enum_or_unknown()?;
                 },
-                72 => {
-                    self.HGMFEGGJEFB = is.read_uint32()?;
+                56 => {
+                    self.FMJCBKLEHDO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for LobbyInviteScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FADJIMGIDPH != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.FADJIMGIDPH);
+        if self.BOKFLFEJHEL != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.BOKFLFEJHEL);
         }
-        if self.DJNELABFJLF != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
-            my_size += ::protobuf::rt::int32_size(5, self.DJNELABFJLF.value());
+        if self.MGGMPKIGHBM != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
+            my_size += ::protobuf::rt::int32_size(13, self.MGGMPKIGHBM.value());
         }
-        if self.HGMFEGGJEFB != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.HGMFEGGJEFB);
+        if self.FMJCBKLEHDO != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.FMJCBKLEHDO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for LobbyInviteScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FADJIMGIDPH != 0 {
-            os.write_uint32(8, self.FADJIMGIDPH)?;
+        if self.BOKFLFEJHEL != 0 {
+            os.write_uint32(10, self.BOKFLFEJHEL)?;
         }
-        if self.DJNELABFJLF != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.DJNELABFJLF))?;
+        if self.MGGMPKIGHBM != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.MGGMPKIGHBM))?;
         }
-        if self.HGMFEGGJEFB != 0 {
-            os.write_uint32(9, self.HGMFEGGJEFB)?;
+        if self.FMJCBKLEHDO != 0 {
+            os.write_uint32(7, self.FMJCBKLEHDO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for LobbyInviteScNotify {
     }
 
     fn clear(&mut self) {
-        self.FADJIMGIDPH = 0;
-        self.DJNELABFJLF = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE);
-        self.HGMFEGGJEFB = 0;
+        self.BOKFLFEJHEL = 0;
+        self.MGGMPKIGHBM = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE);
+        self.FMJCBKLEHDO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LobbyInviteScNotify {
         static instance: LobbyInviteScNotify = LobbyInviteScNotify {
-            FADJIMGIDPH: 0,
-            DJNELABFJLF: ::protobuf::EnumOrUnknown::from_i32(0),
-            HGMFEGGJEFB: 0,
+            BOKFLFEJHEL: 0,
+            MGGMPKIGHBM: ::protobuf::EnumOrUnknown::from_i32(0),
+            FMJCBKLEHDO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for LobbyInviteScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19LobbyInviteScNotify.proto\x1a\x13FightGameMode.proto\"\x8b\x01\n\
-    \x13LobbyInviteScNotify\x12\x20\n\x0bFADJIMGIDPH\x18\x08\x20\x01(\rR\x0b\
-    FADJIMGIDPH\x120\n\x0bDJNELABFJLF\x18\x05\x20\x01(\x0e2\x0e.FightGameMod\
-    eR\x0bDJNELABFJLF\x12\x20\n\x0bHGMFEGGJEFB\x18\t\x20\x01(\rR\x0bHGMFEGGJ\
-    EFBb\x06proto3\
+    \x13LobbyInviteScNotify\x12\x20\n\x0bBOKFLFEJHEL\x18\n\x20\x01(\rR\x0bBO\
+    KFLFEJHEL\x120\n\x0bMGGMPKIGHBM\x18\r\x20\x01(\x0e2\x0e.FightGameModeR\
+    \x0bMGGMPKIGHBM\x12\x20\n\x0bFMJCBKLEHDO\x18\x07\x20\x01(\rR\x0bFMJCBKLE\
+    HDOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

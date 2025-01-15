@@ -90,8 +90,6 @@ pub enum FeatureSwitchType {
     FEATURE_SWITCH_SUB_MISSION_REWARD = 29,
     // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_PAM_MISSION)
     FEATURE_SWITCH_PAM_MISSION = 30,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_DAILY_MISSION)
-    FEATURE_SWITCH_DAILY_MISSION = 31,
     // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_DESTROY_ITEM)
     FEATURE_SWITCH_DESTROY_ITEM = 32,
     // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_CONSUME_ITEM_TURN)
@@ -136,6 +134,10 @@ pub enum FeatureSwitchType {
     FEATURE_SWITCH_RED_DOT = 52,
     // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_GAME_STATE_SERVICE)
     FEATURE_SWITCH_GAME_STATE_SERVICE = 53,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_BENEFIT_INDEX)
+    FEATURE_SWITCH_BENEFIT_INDEX = 54,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_MARSEVENTH_SKIN_HINT)
+    FEATURE_SWITCH_MARSEVENTH_SKIN_HINT = 57,
 }
 
 impl ::protobuf::Enum for FeatureSwitchType {
@@ -178,7 +180,6 @@ impl ::protobuf::Enum for FeatureSwitchType {
             28 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_MAIN_MISSION_REWARD),
             29 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_SUB_MISSION_REWARD),
             30 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_PAM_MISSION),
-            31 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_DAILY_MISSION),
             32 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_DESTROY_ITEM),
             33 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_CONSUME_ITEM_TURN),
             34 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_ROGUE_MODIFIER),
@@ -201,6 +202,8 @@ impl ::protobuf::Enum for FeatureSwitchType {
             51 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_MAZE_ITEM_USE_BUFF_DROP),
             52 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_RED_DOT),
             53 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_GAME_STATE_SERVICE),
+            54 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_BENEFIT_INDEX),
+            57 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_MARSEVENTH_SKIN_HINT),
             _ => ::std::option::Option::None
         }
     }
@@ -238,7 +241,6 @@ impl ::protobuf::Enum for FeatureSwitchType {
             "FEATURE_SWITCH_MAIN_MISSION_REWARD" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_MAIN_MISSION_REWARD),
             "FEATURE_SWITCH_SUB_MISSION_REWARD" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_SUB_MISSION_REWARD),
             "FEATURE_SWITCH_PAM_MISSION" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_PAM_MISSION),
-            "FEATURE_SWITCH_DAILY_MISSION" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_DAILY_MISSION),
             "FEATURE_SWITCH_DESTROY_ITEM" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_DESTROY_ITEM),
             "FEATURE_SWITCH_CONSUME_ITEM_TURN" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_CONSUME_ITEM_TURN),
             "FEATURE_SWITCH_ROGUE_MODIFIER" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_ROGUE_MODIFIER),
@@ -261,6 +263,8 @@ impl ::protobuf::Enum for FeatureSwitchType {
             "FEATURE_SWITCH_MAZE_ITEM_USE_BUFF_DROP" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_MAZE_ITEM_USE_BUFF_DROP),
             "FEATURE_SWITCH_RED_DOT" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_RED_DOT),
             "FEATURE_SWITCH_GAME_STATE_SERVICE" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_GAME_STATE_SERVICE),
+            "FEATURE_SWITCH_BENEFIT_INDEX" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_BENEFIT_INDEX),
+            "FEATURE_SWITCH_MARSEVENTH_SKIN_HINT" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_MARSEVENTH_SKIN_HINT),
             _ => ::std::option::Option::None
         }
     }
@@ -297,7 +301,6 @@ impl ::protobuf::Enum for FeatureSwitchType {
         FeatureSwitchType::FEATURE_SWITCH_MAIN_MISSION_REWARD,
         FeatureSwitchType::FEATURE_SWITCH_SUB_MISSION_REWARD,
         FeatureSwitchType::FEATURE_SWITCH_PAM_MISSION,
-        FeatureSwitchType::FEATURE_SWITCH_DAILY_MISSION,
         FeatureSwitchType::FEATURE_SWITCH_DESTROY_ITEM,
         FeatureSwitchType::FEATURE_SWITCH_CONSUME_ITEM_TURN,
         FeatureSwitchType::FEATURE_SWITCH_ROGUE_MODIFIER,
@@ -320,6 +323,8 @@ impl ::protobuf::Enum for FeatureSwitchType {
         FeatureSwitchType::FEATURE_SWITCH_MAZE_ITEM_USE_BUFF_DROP,
         FeatureSwitchType::FEATURE_SWITCH_RED_DOT,
         FeatureSwitchType::FEATURE_SWITCH_GAME_STATE_SERVICE,
+        FeatureSwitchType::FEATURE_SWITCH_BENEFIT_INDEX,
+        FeatureSwitchType::FEATURE_SWITCH_MARSEVENTH_SKIN_HINT,
     ];
 }
 
@@ -330,7 +335,63 @@ impl ::protobuf::EnumFull for FeatureSwitchType {
     }
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
-        let index = *self as usize;
+        let index = match self {
+            FeatureSwitchType::FEATURE_SWITCH_NONE => 0,
+            FeatureSwitchType::FEATURE_SWITCH_SHOP => 1,
+            FeatureSwitchType::FEATURE_SWITCH_LINEUP_NAME => 2,
+            FeatureSwitchType::FEATURE_SWITCH_RECHARGE_SHOP => 3,
+            FeatureSwitchType::FEATURE_SWITCH_NICKNAME => 4,
+            FeatureSwitchType::FEATURE_SWITCH_SIGNATURE => 5,
+            FeatureSwitchType::FEATURE_SWITCH_BATTLEPASS => 6,
+            FeatureSwitchType::FEATURE_SWITCH_PUNK_LORD => 7,
+            FeatureSwitchType::FEATURE_SWITCH_MONTHCARD_DAILY => 8,
+            FeatureSwitchType::FEATURE_SWITCH_PICTURE_SHARE => 9,
+            FeatureSwitchType::FEATURE_SWITCH_ROGUE => 10,
+            FeatureSwitchType::FEATURE_SWITCH_CHALLENGE => 11,
+            FeatureSwitchType::FEATURE_SWITCH_COCOON => 12,
+            FeatureSwitchType::FEATURE_SWITCH_RAID => 13,
+            FeatureSwitchType::FEATURE_SWITCH_MAZE_PLANE_EVENT => 14,
+            FeatureSwitchType::FEATURE_SWITCH_ACTIVITY_PANEL => 15,
+            FeatureSwitchType::FEATURE_SWITCH_MAILBOX => 16,
+            FeatureSwitchType::FEATURE_SWITCH_QUEST => 17,
+            FeatureSwitchType::FEATURE_SWITCH_GACHA => 18,
+            FeatureSwitchType::FEATURE_SWITCH_CHAT => 19,
+            FeatureSwitchType::FEATURE_SWITCH_MODIFY_FRIEND_ALIAS => 20,
+            FeatureSwitchType::FEATURE_SWITCH_USE_ITEM => 21,
+            FeatureSwitchType::FEATURE_SWITCH_ACTIVITY_SCHEDULE => 22,
+            FeatureSwitchType::FEATURE_SWITCH_FARM_ELEMENT => 23,
+            FeatureSwitchType::FEATURE_SWITCH_ACHIEVEMENT_LEVEL => 24,
+            FeatureSwitchType::FEATURE_SWITCH_DAILY_ACTIVE_LEVEL => 25,
+            FeatureSwitchType::FEATURE_SWITCH_PLAYER_RETURN => 26,
+            FeatureSwitchType::FEATURE_SWITCH_FIRST_SET_NICKNAME => 27,
+            FeatureSwitchType::FEATURE_SWITCH_MAIN_MISSION_REWARD => 28,
+            FeatureSwitchType::FEATURE_SWITCH_SUB_MISSION_REWARD => 29,
+            FeatureSwitchType::FEATURE_SWITCH_PAM_MISSION => 30,
+            FeatureSwitchType::FEATURE_SWITCH_DESTROY_ITEM => 31,
+            FeatureSwitchType::FEATURE_SWITCH_CONSUME_ITEM_TURN => 32,
+            FeatureSwitchType::FEATURE_SWITCH_ROGUE_MODIFIER => 33,
+            FeatureSwitchType::FEATURE_SWITCH_CHESS_ROGUE => 34,
+            FeatureSwitchType::FEATURE_SWITCH_CHESS_ROGUE_BOARD => 35,
+            FeatureSwitchType::FEATURE_SWITCH_ROLL_SHOP => 36,
+            FeatureSwitchType::FEATURE_SWITCH_H5_RETURN => 37,
+            FeatureSwitchType::FEATURE_SWITCH_OFFERING => 38,
+            FeatureSwitchType::FEATURE_SWITCH_SERVER_RED_POINT => 39,
+            FeatureSwitchType::FEATURE_SWITCH_MONOPOLY_OPTION_RATIO => 40,
+            FeatureSwitchType::FEATURE_SWITCH_MONOPOLY_GET_RAFFLE_TICKET => 41,
+            FeatureSwitchType::FEATURE_SWITCH_MONOPOLY_TAKE_RAFFLE_REWARD => 42,
+            FeatureSwitchType::FEATURE_SWITCH_CHALLENGE_RECOMMEND_LINEUP => 43,
+            FeatureSwitchType::FEATURE_SWITCH_PSN_MEMBER_SHIP_CHECK => 44,
+            FeatureSwitchType::FEATURE_SWITCH_PLAYER_BOARD_DEVELOPMENT => 45,
+            FeatureSwitchType::FEATURE_SWITCH_PVP => 46,
+            FeatureSwitchType::FEATURE_SWITCH_ROGUE_MODE => 47,
+            FeatureSwitchType::FEATURE_SWITCH_ROGUE_TOURN_UGC => 48,
+            FeatureSwitchType::FEATURE_SWITCH_RELIC_FILTER_PLAN_NAME => 49,
+            FeatureSwitchType::FEATURE_SWITCH_MAZE_ITEM_USE_BUFF_DROP => 50,
+            FeatureSwitchType::FEATURE_SWITCH_RED_DOT => 51,
+            FeatureSwitchType::FEATURE_SWITCH_GAME_STATE_SERVICE => 52,
+            FeatureSwitchType::FEATURE_SWITCH_BENEFIT_INDEX => 53,
+            FeatureSwitchType::FEATURE_SWITCH_MARSEVENTH_SKIN_HINT => 54,
+        };
         Self::enum_descriptor().value_by_index(index)
     }
 }
@@ -348,7 +409,7 @@ impl FeatureSwitchType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17FeatureSwitchType.proto*\xc7\x0e\n\x11FeatureSwitchType\x12\x17\n\
+    \n\x17FeatureSwitchType.proto*\xf0\x0e\n\x11FeatureSwitchType\x12\x17\n\
     \x13FEATURE_SWITCH_NONE\x10\0\x12\x17\n\x13FEATURE_SWITCH_SHOP\x10\x01\
     \x12\x1e\n\x1aFEATURE_SWITCH_LINEUP_NAME\x10\x02\x12\x20\n\x1cFEATURE_SW\
     ITCH_RECHARGE_SHOP\x10\x03\x12\x1b\n\x17FEATURE_SWITCH_NICKNAME\x10\x04\
@@ -369,22 +430,22 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     ER_RETURN\x10\x1a\x12%\n!FEATURE_SWITCH_FIRST_SET_NICKNAME\x10\x1b\x12&\
     \n\"FEATURE_SWITCH_MAIN_MISSION_REWARD\x10\x1c\x12%\n!FEATURE_SWITCH_SUB\
     _MISSION_REWARD\x10\x1d\x12\x1e\n\x1aFEATURE_SWITCH_PAM_MISSION\x10\x1e\
-    \x12\x20\n\x1cFEATURE_SWITCH_DAILY_MISSION\x10\x1f\x12\x1f\n\x1bFEATURE_\
-    SWITCH_DESTROY_ITEM\x10\x20\x12$\n\x20FEATURE_SWITCH_CONSUME_ITEM_TURN\
-    \x10!\x12!\n\x1dFEATURE_SWITCH_ROGUE_MODIFIER\x10\"\x12\x1e\n\x1aFEATURE\
-    _SWITCH_CHESS_ROGUE\x10#\x12$\n\x20FEATURE_SWITCH_CHESS_ROGUE_BOARD\x10$\
-    \x12\x1c\n\x18FEATURE_SWITCH_ROLL_SHOP\x10%\x12\x1c\n\x18FEATURE_SWITCH_\
-    H5_RETURN\x10&\x12\x1b\n\x17FEATURE_SWITCH_OFFERING\x10'\x12#\n\x1fFEATU\
-    RE_SWITCH_SERVER_RED_POINT\x10(\x12(\n$FEATURE_SWITCH_MONOPOLY_OPTION_RA\
-    TIO\x10)\x12-\n)FEATURE_SWITCH_MONOPOLY_GET_RAFFLE_TICKET\x10*\x12.\n*FE\
-    ATURE_SWITCH_MONOPOLY_TAKE_RAFFLE_REWARD\x10+\x12-\n)FEATURE_SWITCH_CHAL\
-    LENGE_RECOMMEND_LINEUP\x10,\x12(\n$FEATURE_SWITCH_PSN_MEMBER_SHIP_CHECK\
-    \x10-\x12+\n'FEATURE_SWITCH_PLAYER_BOARD_DEVELOPMENT\x10.\x12\x16\n\x12F\
-    EATURE_SWITCH_PVP\x10/\x12\x1d\n\x19FEATURE_SWITCH_ROGUE_MODE\x100\x12\"\
-    \n\x1eFEATURE_SWITCH_ROGUE_TOURN_UGC\x101\x12)\n%FEATURE_SWITCH_RELIC_FI\
-    LTER_PLAN_NAME\x102\x12*\n&FEATURE_SWITCH_MAZE_ITEM_USE_BUFF_DROP\x103\
-    \x12\x1a\n\x16FEATURE_SWITCH_RED_DOT\x104\x12%\n!FEATURE_SWITCH_GAME_STA\
-    TE_SERVICE\x105b\x06proto3\
+    \x12\x1f\n\x1bFEATURE_SWITCH_DESTROY_ITEM\x10\x20\x12$\n\x20FEATURE_SWIT\
+    CH_CONSUME_ITEM_TURN\x10!\x12!\n\x1dFEATURE_SWITCH_ROGUE_MODIFIER\x10\"\
+    \x12\x1e\n\x1aFEATURE_SWITCH_CHESS_ROGUE\x10#\x12$\n\x20FEATURE_SWITCH_C\
+    HESS_ROGUE_BOARD\x10$\x12\x1c\n\x18FEATURE_SWITCH_ROLL_SHOP\x10%\x12\x1c\
+    \n\x18FEATURE_SWITCH_H5_RETURN\x10&\x12\x1b\n\x17FEATURE_SWITCH_OFFERING\
+    \x10'\x12#\n\x1fFEATURE_SWITCH_SERVER_RED_POINT\x10(\x12(\n$FEATURE_SWIT\
+    CH_MONOPOLY_OPTION_RATIO\x10)\x12-\n)FEATURE_SWITCH_MONOPOLY_GET_RAFFLE_\
+    TICKET\x10*\x12.\n*FEATURE_SWITCH_MONOPOLY_TAKE_RAFFLE_REWARD\x10+\x12-\
+    \n)FEATURE_SWITCH_CHALLENGE_RECOMMEND_LINEUP\x10,\x12(\n$FEATURE_SWITCH_\
+    PSN_MEMBER_SHIP_CHECK\x10-\x12+\n'FEATURE_SWITCH_PLAYER_BOARD_DEVELOPMEN\
+    T\x10.\x12\x16\n\x12FEATURE_SWITCH_PVP\x10/\x12\x1d\n\x19FEATURE_SWITCH_\
+    ROGUE_MODE\x100\x12\"\n\x1eFEATURE_SWITCH_ROGUE_TOURN_UGC\x101\x12)\n%FE\
+    ATURE_SWITCH_RELIC_FILTER_PLAN_NAME\x102\x12*\n&FEATURE_SWITCH_MAZE_ITEM\
+    _USE_BUFF_DROP\x103\x12\x1a\n\x16FEATURE_SWITCH_RED_DOT\x104\x12%\n!FEAT\
+    URE_SWITCH_GAME_STATE_SERVICE\x105\x12\x20\n\x1cFEATURE_SWITCH_BENEFIT_I\
+    NDEX\x106\x12'\n#FEATURE_SWITCH_MARSEVENTH_SKIN_HINT\x109b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

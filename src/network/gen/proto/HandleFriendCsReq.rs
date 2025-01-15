@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HandleFriendCsReq {
     // message fields
-    // @@protoc_insertion_point(field:HandleFriendCsReq.handle_result)
-    pub handle_result: bool,
-    // @@protoc_insertion_point(field:HandleFriendCsReq.uid)
-    pub uid: u32,
+    // @@protoc_insertion_point(field:HandleFriendCsReq.BPKHJKKEGNK)
+    pub BPKHJKKEGNK: bool,
+    // @@protoc_insertion_point(field:HandleFriendCsReq.DEPEKPIEGJO)
+    pub DEPEKPIEGJO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HandleFriendCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl HandleFriendCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "handle_result",
-            |m: &HandleFriendCsReq| { &m.handle_result },
-            |m: &mut HandleFriendCsReq| { &mut m.handle_result },
+            "BPKHJKKEGNK",
+            |m: &HandleFriendCsReq| { &m.BPKHJKKEGNK },
+            |m: &mut HandleFriendCsReq| { &mut m.BPKHJKKEGNK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "uid",
-            |m: &HandleFriendCsReq| { &m.uid },
-            |m: &mut HandleFriendCsReq| { &mut m.uid },
+            "DEPEKPIEGJO",
+            |m: &HandleFriendCsReq| { &m.DEPEKPIEGJO },
+            |m: &mut HandleFriendCsReq| { &mut m.DEPEKPIEGJO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HandleFriendCsReq>(
             "HandleFriendCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for HandleFriendCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.handle_result = is.read_bool()?;
+                80 => {
+                    self.BPKHJKKEGNK = is.read_bool()?;
                 },
-                32 => {
-                    self.uid = is.read_uint32()?;
+                88 => {
+                    self.DEPEKPIEGJO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for HandleFriendCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.handle_result != false {
+        if self.BPKHJKKEGNK != false {
             my_size += 1 + 1;
         }
-        if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.uid);
+        if self.DEPEKPIEGJO != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.DEPEKPIEGJO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for HandleFriendCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.handle_result != false {
-            os.write_bool(7, self.handle_result)?;
+        if self.BPKHJKKEGNK != false {
+            os.write_bool(10, self.BPKHJKKEGNK)?;
         }
-        if self.uid != 0 {
-            os.write_uint32(4, self.uid)?;
+        if self.DEPEKPIEGJO != 0 {
+            os.write_uint32(11, self.DEPEKPIEGJO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for HandleFriendCsReq {
     }
 
     fn clear(&mut self) {
-        self.handle_result = false;
-        self.uid = 0;
+        self.BPKHJKKEGNK = false;
+        self.DEPEKPIEGJO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HandleFriendCsReq {
         static instance: HandleFriendCsReq = HandleFriendCsReq {
-            handle_result: false,
-            uid: 0,
+            BPKHJKKEGNK: false,
+            DEPEKPIEGJO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for HandleFriendCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17HandleFriendCsReq.proto\"J\n\x11HandleFriendCsReq\x12#\n\rhandle_r\
-    esult\x18\x07\x20\x01(\x08R\x0chandleResult\x12\x10\n\x03uid\x18\x04\x20\
-    \x01(\rR\x03uidB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x17HandleFriendCsReq.proto\"W\n\x11HandleFriendCsReq\x12\x20\n\x0bBPK\
+    HJKKEGNK\x18\n\x20\x01(\x08R\x0bBPKHJKKEGNK\x12\x20\n\x0bDEPEKPIEGJO\x18\
+    \x0b\x20\x01(\rR\x0bDEPEKPIEGJOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

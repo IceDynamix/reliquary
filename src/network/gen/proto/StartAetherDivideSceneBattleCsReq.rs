@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartAetherDivideSceneBattleCsReq {
     // message fields
-    // @@protoc_insertion_point(field:StartAetherDivideSceneBattleCsReq.HMCJAEBONLP)
-    pub HMCJAEBONLP: ::std::vec::Vec<super::HKEFEPKLDJL::HKEFEPKLDJL>,
-    // @@protoc_insertion_point(field:StartAetherDivideSceneBattleCsReq.BGFFOOFCBND)
-    pub BGFFOOFCBND: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:StartAetherDivideSceneBattleCsReq.ONALKMOMMEC)
-    pub ONALKMOMMEC: u32,
-    // @@protoc_insertion_point(field:StartAetherDivideSceneBattleCsReq.GFIICJPIOLK)
-    pub GFIICJPIOLK: u32,
-    // @@protoc_insertion_point(field:StartAetherDivideSceneBattleCsReq.EOKFAKJGPIM)
-    pub EOKFAKJGPIM: u32,
+    // @@protoc_insertion_point(field:StartAetherDivideSceneBattleCsReq.DILFPPEBDNI)
+    pub DILFPPEBDNI: u32,
+    // @@protoc_insertion_point(field:StartAetherDivideSceneBattleCsReq.OPGGEDKDIEI)
+    pub OPGGEDKDIEI: u32,
+    // @@protoc_insertion_point(field:StartAetherDivideSceneBattleCsReq.DNHIFPGJOCD)
+    pub DNHIFPGJOCD: u32,
+    // @@protoc_insertion_point(field:StartAetherDivideSceneBattleCsReq.DPJGIECJDML)
+    pub DPJGIECJDML: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:StartAetherDivideSceneBattleCsReq.LMJEHCPGIKI)
+    pub LMJEHCPGIKI: ::std::vec::Vec<super::NGINONJIJDG::NGINONJIJDG>,
     // special fields
     // @@protoc_insertion_point(special_field:StartAetherDivideSceneBattleCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,30 +58,30 @@ impl StartAetherDivideSceneBattleCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DILFPPEBDNI",
+            |m: &StartAetherDivideSceneBattleCsReq| { &m.DILFPPEBDNI },
+            |m: &mut StartAetherDivideSceneBattleCsReq| { &mut m.DILFPPEBDNI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OPGGEDKDIEI",
+            |m: &StartAetherDivideSceneBattleCsReq| { &m.OPGGEDKDIEI },
+            |m: &mut StartAetherDivideSceneBattleCsReq| { &mut m.OPGGEDKDIEI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DNHIFPGJOCD",
+            |m: &StartAetherDivideSceneBattleCsReq| { &m.DNHIFPGJOCD },
+            |m: &mut StartAetherDivideSceneBattleCsReq| { &mut m.DNHIFPGJOCD },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HMCJAEBONLP",
-            |m: &StartAetherDivideSceneBattleCsReq| { &m.HMCJAEBONLP },
-            |m: &mut StartAetherDivideSceneBattleCsReq| { &mut m.HMCJAEBONLP },
+            "DPJGIECJDML",
+            |m: &StartAetherDivideSceneBattleCsReq| { &m.DPJGIECJDML },
+            |m: &mut StartAetherDivideSceneBattleCsReq| { &mut m.DPJGIECJDML },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BGFFOOFCBND",
-            |m: &StartAetherDivideSceneBattleCsReq| { &m.BGFFOOFCBND },
-            |m: &mut StartAetherDivideSceneBattleCsReq| { &mut m.BGFFOOFCBND },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ONALKMOMMEC",
-            |m: &StartAetherDivideSceneBattleCsReq| { &m.ONALKMOMMEC },
-            |m: &mut StartAetherDivideSceneBattleCsReq| { &mut m.ONALKMOMMEC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GFIICJPIOLK",
-            |m: &StartAetherDivideSceneBattleCsReq| { &m.GFIICJPIOLK },
-            |m: &mut StartAetherDivideSceneBattleCsReq| { &mut m.GFIICJPIOLK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EOKFAKJGPIM",
-            |m: &StartAetherDivideSceneBattleCsReq| { &m.EOKFAKJGPIM },
-            |m: &mut StartAetherDivideSceneBattleCsReq| { &mut m.EOKFAKJGPIM },
+            "LMJEHCPGIKI",
+            |m: &StartAetherDivideSceneBattleCsReq| { &m.LMJEHCPGIKI },
+            |m: &mut StartAetherDivideSceneBattleCsReq| { &mut m.LMJEHCPGIKI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartAetherDivideSceneBattleCsReq>(
             "StartAetherDivideSceneBattleCsReq",
@@ -101,23 +101,23 @@ impl ::protobuf::Message for StartAetherDivideSceneBattleCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.HMCJAEBONLP.push(is.read_message()?);
+                88 => {
+                    self.DILFPPEBDNI = is.read_uint32()?;
+                },
+                40 => {
+                    self.OPGGEDKDIEI = is.read_uint32()?;
+                },
+                16 => {
+                    self.DNHIFPGJOCD = is.read_uint32()?;
                 },
                 58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.BGFFOOFCBND)?;
+                    is.read_repeated_packed_uint32_into(&mut self.DPJGIECJDML)?;
                 },
                 56 => {
-                    self.BGFFOOFCBND.push(is.read_uint32()?);
+                    self.DPJGIECJDML.push(is.read_uint32()?);
                 },
-                104 => {
-                    self.ONALKMOMMEC = is.read_uint32()?;
-                },
-                80 => {
-                    self.GFIICJPIOLK = is.read_uint32()?;
-                },
-                24 => {
-                    self.EOKFAKJGPIM = is.read_uint32()?;
+                66 => {
+                    self.LMJEHCPGIKI.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -131,43 +131,43 @@ impl ::protobuf::Message for StartAetherDivideSceneBattleCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.HMCJAEBONLP {
+        if self.DILFPPEBDNI != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.DILFPPEBDNI);
+        }
+        if self.OPGGEDKDIEI != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.OPGGEDKDIEI);
+        }
+        if self.DNHIFPGJOCD != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.DNHIFPGJOCD);
+        }
+        for value in &self.DPJGIECJDML {
+            my_size += ::protobuf::rt::uint32_size(7, *value);
+        };
+        for value in &self.LMJEHCPGIKI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.BGFFOOFCBND {
-            my_size += ::protobuf::rt::uint32_size(7, *value);
-        };
-        if self.ONALKMOMMEC != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.ONALKMOMMEC);
-        }
-        if self.GFIICJPIOLK != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.GFIICJPIOLK);
-        }
-        if self.EOKFAKJGPIM != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.EOKFAKJGPIM);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.HMCJAEBONLP {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
-        for v in &self.BGFFOOFCBND {
+        if self.DILFPPEBDNI != 0 {
+            os.write_uint32(11, self.DILFPPEBDNI)?;
+        }
+        if self.OPGGEDKDIEI != 0 {
+            os.write_uint32(5, self.OPGGEDKDIEI)?;
+        }
+        if self.DNHIFPGJOCD != 0 {
+            os.write_uint32(2, self.DNHIFPGJOCD)?;
+        }
+        for v in &self.DPJGIECJDML {
             os.write_uint32(7, *v)?;
         };
-        if self.ONALKMOMMEC != 0 {
-            os.write_uint32(13, self.ONALKMOMMEC)?;
-        }
-        if self.GFIICJPIOLK != 0 {
-            os.write_uint32(10, self.GFIICJPIOLK)?;
-        }
-        if self.EOKFAKJGPIM != 0 {
-            os.write_uint32(3, self.EOKFAKJGPIM)?;
-        }
+        for v in &self.LMJEHCPGIKI {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -185,21 +185,21 @@ impl ::protobuf::Message for StartAetherDivideSceneBattleCsReq {
     }
 
     fn clear(&mut self) {
-        self.HMCJAEBONLP.clear();
-        self.BGFFOOFCBND.clear();
-        self.ONALKMOMMEC = 0;
-        self.GFIICJPIOLK = 0;
-        self.EOKFAKJGPIM = 0;
+        self.DILFPPEBDNI = 0;
+        self.OPGGEDKDIEI = 0;
+        self.DNHIFPGJOCD = 0;
+        self.DPJGIECJDML.clear();
+        self.LMJEHCPGIKI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartAetherDivideSceneBattleCsReq {
         static instance: StartAetherDivideSceneBattleCsReq = StartAetherDivideSceneBattleCsReq {
-            HMCJAEBONLP: ::std::vec::Vec::new(),
-            BGFFOOFCBND: ::std::vec::Vec::new(),
-            ONALKMOMMEC: 0,
-            GFIICJPIOLK: 0,
-            EOKFAKJGPIM: 0,
+            DILFPPEBDNI: 0,
+            OPGGEDKDIEI: 0,
+            DNHIFPGJOCD: 0,
+            DPJGIECJDML: ::std::vec::Vec::new(),
+            LMJEHCPGIKI: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -224,13 +224,13 @@ impl ::protobuf::reflect::ProtobufValue for StartAetherDivideSceneBattleCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'StartAetherDivideSceneBattleCsReq.proto\x1a\x11HKEFEPKLDJL.proto\"\
-    \xdb\x01\n!StartAetherDivideSceneBattleCsReq\x12.\n\x0bHMCJAEBONLP\x18\
-    \x02\x20\x03(\x0b2\x0c.HKEFEPKLDJLR\x0bHMCJAEBONLP\x12\x20\n\x0bBGFFOOFC\
-    BND\x18\x07\x20\x03(\rR\x0bBGFFOOFCBND\x12\x20\n\x0bONALKMOMMEC\x18\r\
-    \x20\x01(\rR\x0bONALKMOMMEC\x12\x20\n\x0bGFIICJPIOLK\x18\n\x20\x01(\rR\
-    \x0bGFIICJPIOLK\x12\x20\n\x0bEOKFAKJGPIM\x18\x03\x20\x01(\rR\x0bEOKFAKJG\
-    PIMb\x06proto3\
+    \n'StartAetherDivideSceneBattleCsReq.proto\x1a\x11NGINONJIJDG.proto\"\
+    \xdb\x01\n!StartAetherDivideSceneBattleCsReq\x12\x20\n\x0bDILFPPEBDNI\
+    \x18\x0b\x20\x01(\rR\x0bDILFPPEBDNI\x12\x20\n\x0bOPGGEDKDIEI\x18\x05\x20\
+    \x01(\rR\x0bOPGGEDKDIEI\x12\x20\n\x0bDNHIFPGJOCD\x18\x02\x20\x01(\rR\x0b\
+    DNHIFPGJOCD\x12\x20\n\x0bDPJGIECJDML\x18\x07\x20\x03(\rR\x0bDPJGIECJDML\
+    \x12.\n\x0bLMJEHCPGIKI\x18\x08\x20\x03(\x0b2\x0c.NGINONJIJDGR\x0bLMJEHCP\
+    GIKIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -248,7 +248,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::HKEFEPKLDJL::file_descriptor().clone());
+            deps.push(super::NGINONJIJDG::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(StartAetherDivideSceneBattleCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

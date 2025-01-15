@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolySelectOptionCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MonopolySelectOptionCsReq.FKMOJLILEDA)
-    pub FKMOJLILEDA: u32,
-    // @@protoc_insertion_point(field:MonopolySelectOptionCsReq.PBALFFCFPJD)
-    pub PBALFFCFPJD: u32,
+    // @@protoc_insertion_point(field:MonopolySelectOptionCsReq.CJBDAHMAHKN)
+    pub CJBDAHMAHKN: u32,
+    // @@protoc_insertion_point(field:MonopolySelectOptionCsReq.HCMKAKBEHDN)
+    pub HCMKAKBEHDN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolySelectOptionCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl MonopolySelectOptionCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FKMOJLILEDA",
-            |m: &MonopolySelectOptionCsReq| { &m.FKMOJLILEDA },
-            |m: &mut MonopolySelectOptionCsReq| { &mut m.FKMOJLILEDA },
+            "CJBDAHMAHKN",
+            |m: &MonopolySelectOptionCsReq| { &m.CJBDAHMAHKN },
+            |m: &mut MonopolySelectOptionCsReq| { &mut m.CJBDAHMAHKN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PBALFFCFPJD",
-            |m: &MonopolySelectOptionCsReq| { &m.PBALFFCFPJD },
-            |m: &mut MonopolySelectOptionCsReq| { &mut m.PBALFFCFPJD },
+            "HCMKAKBEHDN",
+            |m: &MonopolySelectOptionCsReq| { &m.HCMKAKBEHDN },
+            |m: &mut MonopolySelectOptionCsReq| { &mut m.HCMKAKBEHDN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolySelectOptionCsReq>(
             "MonopolySelectOptionCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for MonopolySelectOptionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.FKMOJLILEDA = is.read_uint32()?;
+                56 => {
+                    self.CJBDAHMAHKN = is.read_uint32()?;
                 },
-                40 => {
-                    self.PBALFFCFPJD = is.read_uint32()?;
+                88 => {
+                    self.HCMKAKBEHDN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for MonopolySelectOptionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FKMOJLILEDA != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.FKMOJLILEDA);
+        if self.CJBDAHMAHKN != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.CJBDAHMAHKN);
         }
-        if self.PBALFFCFPJD != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.PBALFFCFPJD);
+        if self.HCMKAKBEHDN != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.HCMKAKBEHDN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for MonopolySelectOptionCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FKMOJLILEDA != 0 {
-            os.write_uint32(15, self.FKMOJLILEDA)?;
+        if self.CJBDAHMAHKN != 0 {
+            os.write_uint32(7, self.CJBDAHMAHKN)?;
         }
-        if self.PBALFFCFPJD != 0 {
-            os.write_uint32(5, self.PBALFFCFPJD)?;
+        if self.HCMKAKBEHDN != 0 {
+            os.write_uint32(11, self.HCMKAKBEHDN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for MonopolySelectOptionCsReq {
     }
 
     fn clear(&mut self) {
-        self.FKMOJLILEDA = 0;
-        self.PBALFFCFPJD = 0;
+        self.CJBDAHMAHKN = 0;
+        self.HCMKAKBEHDN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolySelectOptionCsReq {
         static instance: MonopolySelectOptionCsReq = MonopolySelectOptionCsReq {
-            FKMOJLILEDA: 0,
-            PBALFFCFPJD: 0,
+            CJBDAHMAHKN: 0,
+            HCMKAKBEHDN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for MonopolySelectOptionCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fMonopolySelectOptionCsReq.proto\"_\n\x19MonopolySelectOptionCsReq\
-    \x12\x20\n\x0bFKMOJLILEDA\x18\x0f\x20\x01(\rR\x0bFKMOJLILEDA\x12\x20\n\
-    \x0bPBALFFCFPJD\x18\x05\x20\x01(\rR\x0bPBALFFCFPJDb\x06proto3\
+    \x12\x20\n\x0bCJBDAHMAHKN\x18\x07\x20\x01(\rR\x0bCJBDAHMAHKN\x12\x20\n\
+    \x0bHCMKAKBEHDN\x18\x0b\x20\x01(\rR\x0bHCMKAKBEHDNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

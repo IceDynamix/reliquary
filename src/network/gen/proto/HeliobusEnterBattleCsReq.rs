@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HeliobusEnterBattleCsReq {
     // message fields
-    // @@protoc_insertion_point(field:HeliobusEnterBattleCsReq.IFJNGOLCGPI)
-    pub IFJNGOLCGPI: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:HeliobusEnterBattleCsReq.FKMOJLILEDA)
-    pub FKMOJLILEDA: u32,
-    // @@protoc_insertion_point(field:HeliobusEnterBattleCsReq.NCPFPAMHAOE)
-    pub NCPFPAMHAOE: u32,
+    // @@protoc_insertion_point(field:HeliobusEnterBattleCsReq.HCMKAKBEHDN)
+    pub HCMKAKBEHDN: u32,
+    // @@protoc_insertion_point(field:HeliobusEnterBattleCsReq.IBBAMPCADEC)
+    pub IBBAMPCADEC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:HeliobusEnterBattleCsReq.LCLCDINHHNP)
+    pub LCLCDINHHNP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HeliobusEnterBattleCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl HeliobusEnterBattleCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HCMKAKBEHDN",
+            |m: &HeliobusEnterBattleCsReq| { &m.HCMKAKBEHDN },
+            |m: &mut HeliobusEnterBattleCsReq| { &mut m.HCMKAKBEHDN },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IFJNGOLCGPI",
-            |m: &HeliobusEnterBattleCsReq| { &m.IFJNGOLCGPI },
-            |m: &mut HeliobusEnterBattleCsReq| { &mut m.IFJNGOLCGPI },
+            "IBBAMPCADEC",
+            |m: &HeliobusEnterBattleCsReq| { &m.IBBAMPCADEC },
+            |m: &mut HeliobusEnterBattleCsReq| { &mut m.IBBAMPCADEC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FKMOJLILEDA",
-            |m: &HeliobusEnterBattleCsReq| { &m.FKMOJLILEDA },
-            |m: &mut HeliobusEnterBattleCsReq| { &mut m.FKMOJLILEDA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NCPFPAMHAOE",
-            |m: &HeliobusEnterBattleCsReq| { &m.NCPFPAMHAOE },
-            |m: &mut HeliobusEnterBattleCsReq| { &mut m.NCPFPAMHAOE },
+            "LCLCDINHHNP",
+            |m: &HeliobusEnterBattleCsReq| { &m.LCLCDINHHNP },
+            |m: &mut HeliobusEnterBattleCsReq| { &mut m.LCLCDINHHNP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HeliobusEnterBattleCsReq>(
             "HeliobusEnterBattleCsReq",
@@ -87,17 +87,17 @@ impl ::protobuf::Message for HeliobusEnterBattleCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                72 => {
+                    self.HCMKAKBEHDN = is.read_uint32()?;
+                },
                 42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.IFJNGOLCGPI)?;
+                    is.read_repeated_packed_uint32_into(&mut self.IBBAMPCADEC)?;
                 },
                 40 => {
-                    self.IFJNGOLCGPI.push(is.read_uint32()?);
+                    self.IBBAMPCADEC.push(is.read_uint32()?);
                 },
-                64 => {
-                    self.FKMOJLILEDA = is.read_uint32()?;
-                },
-                104 => {
-                    self.NCPFPAMHAOE = is.read_uint32()?;
+                56 => {
+                    self.LCLCDINHHNP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,14 +111,14 @@ impl ::protobuf::Message for HeliobusEnterBattleCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.IFJNGOLCGPI {
+        if self.HCMKAKBEHDN != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.HCMKAKBEHDN);
+        }
+        for value in &self.IBBAMPCADEC {
             my_size += ::protobuf::rt::uint32_size(5, *value);
         };
-        if self.FKMOJLILEDA != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.FKMOJLILEDA);
-        }
-        if self.NCPFPAMHAOE != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.NCPFPAMHAOE);
+        if self.LCLCDINHHNP != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.LCLCDINHHNP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -126,14 +126,14 @@ impl ::protobuf::Message for HeliobusEnterBattleCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.IFJNGOLCGPI {
+        if self.HCMKAKBEHDN != 0 {
+            os.write_uint32(9, self.HCMKAKBEHDN)?;
+        }
+        for v in &self.IBBAMPCADEC {
             os.write_uint32(5, *v)?;
         };
-        if self.FKMOJLILEDA != 0 {
-            os.write_uint32(8, self.FKMOJLILEDA)?;
-        }
-        if self.NCPFPAMHAOE != 0 {
-            os.write_uint32(13, self.NCPFPAMHAOE)?;
+        if self.LCLCDINHHNP != 0 {
+            os.write_uint32(7, self.LCLCDINHHNP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -152,17 +152,17 @@ impl ::protobuf::Message for HeliobusEnterBattleCsReq {
     }
 
     fn clear(&mut self) {
-        self.IFJNGOLCGPI.clear();
-        self.FKMOJLILEDA = 0;
-        self.NCPFPAMHAOE = 0;
+        self.HCMKAKBEHDN = 0;
+        self.IBBAMPCADEC.clear();
+        self.LCLCDINHHNP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HeliobusEnterBattleCsReq {
         static instance: HeliobusEnterBattleCsReq = HeliobusEnterBattleCsReq {
-            IFJNGOLCGPI: ::std::vec::Vec::new(),
-            FKMOJLILEDA: 0,
-            NCPFPAMHAOE: 0,
+            HCMKAKBEHDN: 0,
+            IBBAMPCADEC: ::std::vec::Vec::new(),
+            LCLCDINHHNP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -188,9 +188,9 @@ impl ::protobuf::reflect::ProtobufValue for HeliobusEnterBattleCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eHeliobusEnterBattleCsReq.proto\"\x80\x01\n\x18HeliobusEnterBattleC\
-    sReq\x12\x20\n\x0bIFJNGOLCGPI\x18\x05\x20\x03(\rR\x0bIFJNGOLCGPI\x12\x20\
-    \n\x0bFKMOJLILEDA\x18\x08\x20\x01(\rR\x0bFKMOJLILEDA\x12\x20\n\x0bNCPFPA\
-    MHAOE\x18\r\x20\x01(\rR\x0bNCPFPAMHAOEb\x06proto3\
+    sReq\x12\x20\n\x0bHCMKAKBEHDN\x18\t\x20\x01(\rR\x0bHCMKAKBEHDN\x12\x20\n\
+    \x0bIBBAMPCADEC\x18\x05\x20\x03(\rR\x0bIBBAMPCADEC\x12\x20\n\x0bLCLCDINH\
+    HNP\x18\x07\x20\x01(\rR\x0bLCLCDINHHNPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

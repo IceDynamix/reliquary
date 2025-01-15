@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartCocoonStageCsReq {
     // message fields
-    // @@protoc_insertion_point(field:StartCocoonStageCsReq.prop_entity_id)
-    pub prop_entity_id: u32,
-    // @@protoc_insertion_point(field:StartCocoonStageCsReq.world_level)
-    pub world_level: u32,
-    // @@protoc_insertion_point(field:StartCocoonStageCsReq.wave)
-    pub wave: u32,
-    // @@protoc_insertion_point(field:StartCocoonStageCsReq.cocoon_id)
-    pub cocoon_id: u32,
+    // @@protoc_insertion_point(field:StartCocoonStageCsReq.CFAPNLFIMLN)
+    pub CFAPNLFIMLN: u32,
+    // @@protoc_insertion_point(field:StartCocoonStageCsReq.CFNJJEJIGOK)
+    pub CFNJJEJIGOK: u32,
+    // @@protoc_insertion_point(field:StartCocoonStageCsReq.LFGKKOHHIGE)
+    pub LFGKKOHHIGE: u32,
+    // @@protoc_insertion_point(field:StartCocoonStageCsReq.DFPAIKAJKAL)
+    pub DFPAIKAJKAL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:StartCocoonStageCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl StartCocoonStageCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "prop_entity_id",
-            |m: &StartCocoonStageCsReq| { &m.prop_entity_id },
-            |m: &mut StartCocoonStageCsReq| { &mut m.prop_entity_id },
+            "CFAPNLFIMLN",
+            |m: &StartCocoonStageCsReq| { &m.CFAPNLFIMLN },
+            |m: &mut StartCocoonStageCsReq| { &mut m.CFAPNLFIMLN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "world_level",
-            |m: &StartCocoonStageCsReq| { &m.world_level },
-            |m: &mut StartCocoonStageCsReq| { &mut m.world_level },
+            "CFNJJEJIGOK",
+            |m: &StartCocoonStageCsReq| { &m.CFNJJEJIGOK },
+            |m: &mut StartCocoonStageCsReq| { &mut m.CFNJJEJIGOK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "wave",
-            |m: &StartCocoonStageCsReq| { &m.wave },
-            |m: &mut StartCocoonStageCsReq| { &mut m.wave },
+            "LFGKKOHHIGE",
+            |m: &StartCocoonStageCsReq| { &m.LFGKKOHHIGE },
+            |m: &mut StartCocoonStageCsReq| { &mut m.LFGKKOHHIGE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cocoon_id",
-            |m: &StartCocoonStageCsReq| { &m.cocoon_id },
-            |m: &mut StartCocoonStageCsReq| { &mut m.cocoon_id },
+            "DFPAIKAJKAL",
+            |m: &StartCocoonStageCsReq| { &m.DFPAIKAJKAL },
+            |m: &mut StartCocoonStageCsReq| { &mut m.DFPAIKAJKAL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartCocoonStageCsReq>(
             "StartCocoonStageCsReq",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for StartCocoonStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.prop_entity_id = is.read_uint32()?;
+                104 => {
+                    self.CFAPNLFIMLN = is.read_uint32()?;
                 },
-                16 => {
-                    self.world_level = is.read_uint32()?;
+                120 => {
+                    self.CFNJJEJIGOK = is.read_uint32()?;
                 },
-                88 => {
-                    self.wave = is.read_uint32()?;
+                8 => {
+                    self.LFGKKOHHIGE = is.read_uint32()?;
                 },
-                32 => {
-                    self.cocoon_id = is.read_uint32()?;
+                72 => {
+                    self.DFPAIKAJKAL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,17 +118,17 @@ impl ::protobuf::Message for StartCocoonStageCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.prop_entity_id);
+        if self.CFAPNLFIMLN != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.CFAPNLFIMLN);
         }
-        if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.world_level);
+        if self.CFNJJEJIGOK != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.CFNJJEJIGOK);
         }
-        if self.wave != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.wave);
+        if self.LFGKKOHHIGE != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.LFGKKOHHIGE);
         }
-        if self.cocoon_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.cocoon_id);
+        if self.DFPAIKAJKAL != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.DFPAIKAJKAL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for StartCocoonStageCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.prop_entity_id != 0 {
-            os.write_uint32(7, self.prop_entity_id)?;
+        if self.CFAPNLFIMLN != 0 {
+            os.write_uint32(13, self.CFAPNLFIMLN)?;
         }
-        if self.world_level != 0 {
-            os.write_uint32(2, self.world_level)?;
+        if self.CFNJJEJIGOK != 0 {
+            os.write_uint32(15, self.CFNJJEJIGOK)?;
         }
-        if self.wave != 0 {
-            os.write_uint32(11, self.wave)?;
+        if self.LFGKKOHHIGE != 0 {
+            os.write_uint32(1, self.LFGKKOHHIGE)?;
         }
-        if self.cocoon_id != 0 {
-            os.write_uint32(4, self.cocoon_id)?;
+        if self.DFPAIKAJKAL != 0 {
+            os.write_uint32(9, self.DFPAIKAJKAL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for StartCocoonStageCsReq {
     }
 
     fn clear(&mut self) {
-        self.prop_entity_id = 0;
-        self.world_level = 0;
-        self.wave = 0;
-        self.cocoon_id = 0;
+        self.CFAPNLFIMLN = 0;
+        self.CFNJJEJIGOK = 0;
+        self.LFGKKOHHIGE = 0;
+        self.DFPAIKAJKAL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartCocoonStageCsReq {
         static instance: StartCocoonStageCsReq = StartCocoonStageCsReq {
-            prop_entity_id: 0,
-            world_level: 0,
-            wave: 0,
-            cocoon_id: 0,
+            CFAPNLFIMLN: 0,
+            CFNJJEJIGOK: 0,
+            LFGKKOHHIGE: 0,
+            DFPAIKAJKAL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for StartCocoonStageCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bStartCocoonStageCsReq.proto\"\x8f\x01\n\x15StartCocoonStageCsReq\
-    \x12$\n\x0eprop_entity_id\x18\x07\x20\x01(\rR\x0cpropEntityId\x12\x1f\n\
-    \x0bworld_level\x18\x02\x20\x01(\rR\nworldLevel\x12\x12\n\x04wave\x18\
-    \x0b\x20\x01(\rR\x04wave\x12\x1b\n\tcocoon_id\x18\x04\x20\x01(\rR\x08coc\
-    oonIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x1bStartCocoonStageCsReq.proto\"\x9f\x01\n\x15StartCocoonStageCsReq\
+    \x12\x20\n\x0bCFAPNLFIMLN\x18\r\x20\x01(\rR\x0bCFAPNLFIMLN\x12\x20\n\x0b\
+    CFNJJEJIGOK\x18\x0f\x20\x01(\rR\x0bCFNJJEJIGOK\x12\x20\n\x0bLFGKKOHHIGE\
+    \x18\x01\x20\x01(\rR\x0bLFGKKOHHIGE\x12\x20\n\x0bDFPAIKAJKAL\x18\t\x20\
+    \x01(\rR\x0bDFPAIKAJKALb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

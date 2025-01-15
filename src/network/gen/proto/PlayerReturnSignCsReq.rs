@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayerReturnSignCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlayerReturnSignCsReq.JAABPACOMBG)
-    pub JAABPACOMBG: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:PlayerReturnSignCsReq.AOJPJGHPLDE)
-    pub AOJPJGHPLDE: u32,
+    // @@protoc_insertion_point(field:PlayerReturnSignCsReq.IKEOOHNGMON)
+    pub IKEOOHNGMON: u32,
+    // @@protoc_insertion_point(field:PlayerReturnSignCsReq.ELDNCDBBEMA)
+    pub ELDNCDBBEMA: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:PlayerReturnSignCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl PlayerReturnSignCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JAABPACOMBG",
-            |m: &PlayerReturnSignCsReq| { &m.JAABPACOMBG },
-            |m: &mut PlayerReturnSignCsReq| { &mut m.JAABPACOMBG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AOJPJGHPLDE",
-            |m: &PlayerReturnSignCsReq| { &m.AOJPJGHPLDE },
-            |m: &mut PlayerReturnSignCsReq| { &mut m.AOJPJGHPLDE },
+            "IKEOOHNGMON",
+            |m: &PlayerReturnSignCsReq| { &m.IKEOOHNGMON },
+            |m: &mut PlayerReturnSignCsReq| { &mut m.IKEOOHNGMON },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "ELDNCDBBEMA",
+            |m: &PlayerReturnSignCsReq| { &m.ELDNCDBBEMA },
+            |m: &mut PlayerReturnSignCsReq| { &mut m.ELDNCDBBEMA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayerReturnSignCsReq>(
             "PlayerReturnSignCsReq",
@@ -80,14 +80,14 @@ impl ::protobuf::Message for PlayerReturnSignCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    is.read_repeated_packed_uint32_into(&mut self.JAABPACOMBG)?;
+                120 => {
+                    self.IKEOOHNGMON = is.read_uint32()?;
                 },
-                112 => {
-                    self.JAABPACOMBG.push(is.read_uint32()?);
+                34 => {
+                    is.read_repeated_packed_uint32_into(&mut self.ELDNCDBBEMA)?;
                 },
-                64 => {
-                    self.AOJPJGHPLDE = is.read_uint32()?;
+                32 => {
+                    self.ELDNCDBBEMA.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,24 +101,24 @@ impl ::protobuf::Message for PlayerReturnSignCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.JAABPACOMBG {
-            my_size += ::protobuf::rt::uint32_size(14, *value);
-        };
-        if self.AOJPJGHPLDE != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.AOJPJGHPLDE);
+        if self.IKEOOHNGMON != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.IKEOOHNGMON);
         }
+        for value in &self.ELDNCDBBEMA {
+            my_size += ::protobuf::rt::uint32_size(4, *value);
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.JAABPACOMBG {
-            os.write_uint32(14, *v)?;
-        };
-        if self.AOJPJGHPLDE != 0 {
-            os.write_uint32(8, self.AOJPJGHPLDE)?;
+        if self.IKEOOHNGMON != 0 {
+            os.write_uint32(15, self.IKEOOHNGMON)?;
         }
+        for v in &self.ELDNCDBBEMA {
+            os.write_uint32(4, *v)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -136,15 +136,15 @@ impl ::protobuf::Message for PlayerReturnSignCsReq {
     }
 
     fn clear(&mut self) {
-        self.JAABPACOMBG.clear();
-        self.AOJPJGHPLDE = 0;
+        self.IKEOOHNGMON = 0;
+        self.ELDNCDBBEMA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayerReturnSignCsReq {
         static instance: PlayerReturnSignCsReq = PlayerReturnSignCsReq {
-            JAABPACOMBG: ::std::vec::Vec::new(),
-            AOJPJGHPLDE: 0,
+            IKEOOHNGMON: 0,
+            ELDNCDBBEMA: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -170,8 +170,8 @@ impl ::protobuf::reflect::ProtobufValue for PlayerReturnSignCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bPlayerReturnSignCsReq.proto\"[\n\x15PlayerReturnSignCsReq\x12\x20\
-    \n\x0bJAABPACOMBG\x18\x0e\x20\x03(\rR\x0bJAABPACOMBG\x12\x20\n\x0bAOJPJG\
-    HPLDE\x18\x08\x20\x01(\rR\x0bAOJPJGHPLDEb\x06proto3\
+    \n\x0bIKEOOHNGMON\x18\x0f\x20\x01(\rR\x0bIKEOOHNGMON\x12\x20\n\x0bELDNCD\
+    BBEMA\x18\x04\x20\x03(\rR\x0bELDNCDBBEMAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

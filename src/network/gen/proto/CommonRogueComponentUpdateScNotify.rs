@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CommonRogueComponentUpdateScNotify {
     // message fields
-    // @@protoc_insertion_point(field:CommonRogueComponentUpdateScNotify.DFDPGEBCPEB)
-    pub DFDPGEBCPEB: ::protobuf::MessageField<super::BGPOKPPMEBI::BGPOKPPMEBI>,
-    // @@protoc_insertion_point(field:CommonRogueComponentUpdateScNotify.IJPJDJPBPNJ)
-    pub IJPJDJPBPNJ: u32,
-    // @@protoc_insertion_point(field:CommonRogueComponentUpdateScNotify.PDHDKBJJOFJ)
-    pub PDHDKBJJOFJ: u32,
-    // @@protoc_insertion_point(field:CommonRogueComponentUpdateScNotify.KKLAOBBLGCE)
-    pub KKLAOBBLGCE: u32,
+    // @@protoc_insertion_point(field:CommonRogueComponentUpdateScNotify.NKPDMCKFPPP)
+    pub NKPDMCKFPPP: u32,
+    // @@protoc_insertion_point(field:CommonRogueComponentUpdateScNotify.PINOGNEKCAH)
+    pub PINOGNEKCAH: u32,
+    // @@protoc_insertion_point(field:CommonRogueComponentUpdateScNotify.JMOCNNGMEDG)
+    pub JMOCNNGMEDG: ::protobuf::MessageField<super::IDONDCHFKHG::IDONDCHFKHG>,
+    // @@protoc_insertion_point(field:CommonRogueComponentUpdateScNotify.MOKBHFDEHNF)
+    pub MOKBHFDEHNF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CommonRogueComponentUpdateScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,25 +56,25 @@ impl CommonRogueComponentUpdateScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BGPOKPPMEBI::BGPOKPPMEBI>(
-            "DFDPGEBCPEB",
-            |m: &CommonRogueComponentUpdateScNotify| { &m.DFDPGEBCPEB },
-            |m: &mut CommonRogueComponentUpdateScNotify| { &mut m.DFDPGEBCPEB },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NKPDMCKFPPP",
+            |m: &CommonRogueComponentUpdateScNotify| { &m.NKPDMCKFPPP },
+            |m: &mut CommonRogueComponentUpdateScNotify| { &mut m.NKPDMCKFPPP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IJPJDJPBPNJ",
-            |m: &CommonRogueComponentUpdateScNotify| { &m.IJPJDJPBPNJ },
-            |m: &mut CommonRogueComponentUpdateScNotify| { &mut m.IJPJDJPBPNJ },
+            "PINOGNEKCAH",
+            |m: &CommonRogueComponentUpdateScNotify| { &m.PINOGNEKCAH },
+            |m: &mut CommonRogueComponentUpdateScNotify| { &mut m.PINOGNEKCAH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IDONDCHFKHG::IDONDCHFKHG>(
+            "JMOCNNGMEDG",
+            |m: &CommonRogueComponentUpdateScNotify| { &m.JMOCNNGMEDG },
+            |m: &mut CommonRogueComponentUpdateScNotify| { &mut m.JMOCNNGMEDG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PDHDKBJJOFJ",
-            |m: &CommonRogueComponentUpdateScNotify| { &m.PDHDKBJJOFJ },
-            |m: &mut CommonRogueComponentUpdateScNotify| { &mut m.PDHDKBJJOFJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KKLAOBBLGCE",
-            |m: &CommonRogueComponentUpdateScNotify| { &m.KKLAOBBLGCE },
-            |m: &mut CommonRogueComponentUpdateScNotify| { &mut m.KKLAOBBLGCE },
+            "MOKBHFDEHNF",
+            |m: &CommonRogueComponentUpdateScNotify| { &m.MOKBHFDEHNF },
+            |m: &mut CommonRogueComponentUpdateScNotify| { &mut m.MOKBHFDEHNF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CommonRogueComponentUpdateScNotify>(
             "CommonRogueComponentUpdateScNotify",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for CommonRogueComponentUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DFDPGEBCPEB)?;
-                },
-                40 => {
-                    self.IJPJDJPBPNJ = is.read_uint32()?;
-                },
-                32 => {
-                    self.PDHDKBJJOFJ = is.read_uint32()?;
+                64 => {
+                    self.NKPDMCKFPPP = is.read_uint32()?;
                 },
                 16 => {
-                    self.KKLAOBBLGCE = is.read_uint32()?;
+                    self.PINOGNEKCAH = is.read_uint32()?;
+                },
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JMOCNNGMEDG)?;
+                },
+                40 => {
+                    self.MOKBHFDEHNF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,18 +118,18 @@ impl ::protobuf::Message for CommonRogueComponentUpdateScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.DFDPGEBCPEB.as_ref() {
+        if self.NKPDMCKFPPP != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.NKPDMCKFPPP);
+        }
+        if self.PINOGNEKCAH != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.PINOGNEKCAH);
+        }
+        if let Some(v) = self.JMOCNNGMEDG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.IJPJDJPBPNJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.IJPJDJPBPNJ);
-        }
-        if self.PDHDKBJJOFJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.PDHDKBJJOFJ);
-        }
-        if self.KKLAOBBLGCE != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.KKLAOBBLGCE);
+        if self.MOKBHFDEHNF != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.MOKBHFDEHNF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for CommonRogueComponentUpdateScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.DFDPGEBCPEB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        if self.NKPDMCKFPPP != 0 {
+            os.write_uint32(8, self.NKPDMCKFPPP)?;
         }
-        if self.IJPJDJPBPNJ != 0 {
-            os.write_uint32(5, self.IJPJDJPBPNJ)?;
+        if self.PINOGNEKCAH != 0 {
+            os.write_uint32(2, self.PINOGNEKCAH)?;
         }
-        if self.PDHDKBJJOFJ != 0 {
-            os.write_uint32(4, self.PDHDKBJJOFJ)?;
+        if let Some(v) = self.JMOCNNGMEDG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
-        if self.KKLAOBBLGCE != 0 {
-            os.write_uint32(2, self.KKLAOBBLGCE)?;
+        if self.MOKBHFDEHNF != 0 {
+            os.write_uint32(5, self.MOKBHFDEHNF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for CommonRogueComponentUpdateScNotify {
     }
 
     fn clear(&mut self) {
-        self.DFDPGEBCPEB.clear();
-        self.IJPJDJPBPNJ = 0;
-        self.PDHDKBJJOFJ = 0;
-        self.KKLAOBBLGCE = 0;
+        self.NKPDMCKFPPP = 0;
+        self.PINOGNEKCAH = 0;
+        self.JMOCNNGMEDG.clear();
+        self.MOKBHFDEHNF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CommonRogueComponentUpdateScNotify {
         static instance: CommonRogueComponentUpdateScNotify = CommonRogueComponentUpdateScNotify {
-            DFDPGEBCPEB: ::protobuf::MessageField::none(),
-            IJPJDJPBPNJ: 0,
-            PDHDKBJJOFJ: 0,
-            KKLAOBBLGCE: 0,
+            NKPDMCKFPPP: 0,
+            PINOGNEKCAH: 0,
+            JMOCNNGMEDG: ::protobuf::MessageField::none(),
+            MOKBHFDEHNF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,12 +203,12 @@ impl ::protobuf::reflect::ProtobufValue for CommonRogueComponentUpdateScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n(CommonRogueComponentUpdateScNotify.proto\x1a\x11BGPOKPPMEBI.proto\"\
-    \xba\x01\n\"CommonRogueComponentUpdateScNotify\x12.\n\x0bDFDPGEBCPEB\x18\
-    \x0f\x20\x01(\x0b2\x0c.BGPOKPPMEBIR\x0bDFDPGEBCPEB\x12\x20\n\x0bIJPJDJPB\
-    PNJ\x18\x05\x20\x01(\rR\x0bIJPJDJPBPNJ\x12\x20\n\x0bPDHDKBJJOFJ\x18\x04\
-    \x20\x01(\rR\x0bPDHDKBJJOFJ\x12\x20\n\x0bKKLAOBBLGCE\x18\x02\x20\x01(\rR\
-    \x0bKKLAOBBLGCEb\x06proto3\
+    \n(CommonRogueComponentUpdateScNotify.proto\x1a\x11IDONDCHFKHG.proto\"\
+    \xba\x01\n\"CommonRogueComponentUpdateScNotify\x12\x20\n\x0bNKPDMCKFPPP\
+    \x18\x08\x20\x01(\rR\x0bNKPDMCKFPPP\x12\x20\n\x0bPINOGNEKCAH\x18\x02\x20\
+    \x01(\rR\x0bPINOGNEKCAH\x12.\n\x0bJMOCNNGMEDG\x18\n\x20\x01(\x0b2\x0c.ID\
+    ONDCHFKHGR\x0bJMOCNNGMEDG\x12\x20\n\x0bMOKBHFDEHNF\x18\x05\x20\x01(\rR\
+    \x0bMOKBHFDEHNFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -226,7 +226,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::BGPOKPPMEBI::file_descriptor().clone());
+            deps.push(super::IDONDCHFKHG::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(CommonRogueComponentUpdateScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

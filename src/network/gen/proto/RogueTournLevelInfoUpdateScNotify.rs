@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournLevelInfoUpdateScNotify {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournLevelInfoUpdateScNotify.OJBAILGKLBM)
-    pub OJBAILGKLBM: ::protobuf::EnumOrUnknown<super::RogueTournLevelStatus::RogueTournLevelStatus>,
-    // @@protoc_insertion_point(field:RogueTournLevelInfoUpdateScNotify.COOINBPIEOC)
-    pub COOINBPIEOC: u32,
-    // @@protoc_insertion_point(field:RogueTournLevelInfoUpdateScNotify.KGGHLADEKGP)
-    pub KGGHLADEKGP: ::protobuf::EnumOrUnknown<super::ADHODBDKOEJ::ADHODBDKOEJ>,
-    // @@protoc_insertion_point(field:RogueTournLevelInfoUpdateScNotify.GPKMFMJLMJP)
-    pub GPKMFMJLMJP: ::std::vec::Vec<super::IEDMIAHONDF::IEDMIAHONDF>,
+    // @@protoc_insertion_point(field:RogueTournLevelInfoUpdateScNotify.KECHADNGNEG)
+    pub KECHADNGNEG: ::std::vec::Vec<super::NCIOGBELNBB::NCIOGBELNBB>,
+    // @@protoc_insertion_point(field:RogueTournLevelInfoUpdateScNotify.IOPEEMNLIDM)
+    pub IOPEEMNLIDM: ::protobuf::EnumOrUnknown<super::RogueTournLevelStatus::RogueTournLevelStatus>,
+    // @@protoc_insertion_point(field:RogueTournLevelInfoUpdateScNotify.NNOGGMBOOKF)
+    pub NNOGGMBOOKF: u32,
+    // @@protoc_insertion_point(field:RogueTournLevelInfoUpdateScNotify.OLDKAMACFMD)
+    pub OLDKAMACFMD: ::protobuf::EnumOrUnknown<super::LKOILBGBKEM::LKOILBGBKEM>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournLevelInfoUpdateScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,25 +56,25 @@ impl RogueTournLevelInfoUpdateScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OJBAILGKLBM",
-            |m: &RogueTournLevelInfoUpdateScNotify| { &m.OJBAILGKLBM },
-            |m: &mut RogueTournLevelInfoUpdateScNotify| { &mut m.OJBAILGKLBM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "COOINBPIEOC",
-            |m: &RogueTournLevelInfoUpdateScNotify| { &m.COOINBPIEOC },
-            |m: &mut RogueTournLevelInfoUpdateScNotify| { &mut m.COOINBPIEOC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KGGHLADEKGP",
-            |m: &RogueTournLevelInfoUpdateScNotify| { &m.KGGHLADEKGP },
-            |m: &mut RogueTournLevelInfoUpdateScNotify| { &mut m.KGGHLADEKGP },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GPKMFMJLMJP",
-            |m: &RogueTournLevelInfoUpdateScNotify| { &m.GPKMFMJLMJP },
-            |m: &mut RogueTournLevelInfoUpdateScNotify| { &mut m.GPKMFMJLMJP },
+            "KECHADNGNEG",
+            |m: &RogueTournLevelInfoUpdateScNotify| { &m.KECHADNGNEG },
+            |m: &mut RogueTournLevelInfoUpdateScNotify| { &mut m.KECHADNGNEG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IOPEEMNLIDM",
+            |m: &RogueTournLevelInfoUpdateScNotify| { &m.IOPEEMNLIDM },
+            |m: &mut RogueTournLevelInfoUpdateScNotify| { &mut m.IOPEEMNLIDM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NNOGGMBOOKF",
+            |m: &RogueTournLevelInfoUpdateScNotify| { &m.NNOGGMBOOKF },
+            |m: &mut RogueTournLevelInfoUpdateScNotify| { &mut m.NNOGGMBOOKF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OLDKAMACFMD",
+            |m: &RogueTournLevelInfoUpdateScNotify| { &m.OLDKAMACFMD },
+            |m: &mut RogueTournLevelInfoUpdateScNotify| { &mut m.OLDKAMACFMD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournLevelInfoUpdateScNotify>(
             "RogueTournLevelInfoUpdateScNotify",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for RogueTournLevelInfoUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.OJBAILGKLBM = is.read_enum_or_unknown()?;
-                },
-                32 => {
-                    self.COOINBPIEOC = is.read_uint32()?;
+                26 => {
+                    self.KECHADNGNEG.push(is.read_message()?);
                 },
                 48 => {
-                    self.KGGHLADEKGP = is.read_enum_or_unknown()?;
+                    self.IOPEEMNLIDM = is.read_enum_or_unknown()?;
                 },
-                10 => {
-                    self.GPKMFMJLMJP.push(is.read_message()?);
+                56 => {
+                    self.NNOGGMBOOKF = is.read_uint32()?;
+                },
+                16 => {
+                    self.OLDKAMACFMD = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,37 +118,37 @@ impl ::protobuf::Message for RogueTournLevelInfoUpdateScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OJBAILGKLBM != ::protobuf::EnumOrUnknown::new(super::RogueTournLevelStatus::RogueTournLevelStatus::ROGUE_TOURN_LEVEL_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(5, self.OJBAILGKLBM.value());
-        }
-        if self.COOINBPIEOC != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.COOINBPIEOC);
-        }
-        if self.KGGHLADEKGP != ::protobuf::EnumOrUnknown::new(super::ADHODBDKOEJ::ADHODBDKOEJ::ROGUE_TOURN_SETTLE_REASON_NONE) {
-            my_size += ::protobuf::rt::int32_size(6, self.KGGHLADEKGP.value());
-        }
-        for value in &self.GPKMFMJLMJP {
+        for value in &self.KECHADNGNEG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.IOPEEMNLIDM != ::protobuf::EnumOrUnknown::new(super::RogueTournLevelStatus::RogueTournLevelStatus::ROGUE_TOURN_LEVEL_STATUS_NONE) {
+            my_size += ::protobuf::rt::int32_size(6, self.IOPEEMNLIDM.value());
+        }
+        if self.NNOGGMBOOKF != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.NNOGGMBOOKF);
+        }
+        if self.OLDKAMACFMD != ::protobuf::EnumOrUnknown::new(super::LKOILBGBKEM::LKOILBGBKEM::ROGUE_TOURN_SETTLE_REASON_NONE) {
+            my_size += ::protobuf::rt::int32_size(2, self.OLDKAMACFMD.value());
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OJBAILGKLBM != ::protobuf::EnumOrUnknown::new(super::RogueTournLevelStatus::RogueTournLevelStatus::ROGUE_TOURN_LEVEL_STATUS_NONE) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.OJBAILGKLBM))?;
-        }
-        if self.COOINBPIEOC != 0 {
-            os.write_uint32(4, self.COOINBPIEOC)?;
-        }
-        if self.KGGHLADEKGP != ::protobuf::EnumOrUnknown::new(super::ADHODBDKOEJ::ADHODBDKOEJ::ROGUE_TOURN_SETTLE_REASON_NONE) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.KGGHLADEKGP))?;
-        }
-        for v in &self.GPKMFMJLMJP {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        for v in &self.KECHADNGNEG {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
+        if self.IOPEEMNLIDM != ::protobuf::EnumOrUnknown::new(super::RogueTournLevelStatus::RogueTournLevelStatus::ROGUE_TOURN_LEVEL_STATUS_NONE) {
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.IOPEEMNLIDM))?;
+        }
+        if self.NNOGGMBOOKF != 0 {
+            os.write_uint32(7, self.NNOGGMBOOKF)?;
+        }
+        if self.OLDKAMACFMD != ::protobuf::EnumOrUnknown::new(super::LKOILBGBKEM::LKOILBGBKEM::ROGUE_TOURN_SETTLE_REASON_NONE) {
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.OLDKAMACFMD))?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -166,19 +166,19 @@ impl ::protobuf::Message for RogueTournLevelInfoUpdateScNotify {
     }
 
     fn clear(&mut self) {
-        self.OJBAILGKLBM = ::protobuf::EnumOrUnknown::new(super::RogueTournLevelStatus::RogueTournLevelStatus::ROGUE_TOURN_LEVEL_STATUS_NONE);
-        self.COOINBPIEOC = 0;
-        self.KGGHLADEKGP = ::protobuf::EnumOrUnknown::new(super::ADHODBDKOEJ::ADHODBDKOEJ::ROGUE_TOURN_SETTLE_REASON_NONE);
-        self.GPKMFMJLMJP.clear();
+        self.KECHADNGNEG.clear();
+        self.IOPEEMNLIDM = ::protobuf::EnumOrUnknown::new(super::RogueTournLevelStatus::RogueTournLevelStatus::ROGUE_TOURN_LEVEL_STATUS_NONE);
+        self.NNOGGMBOOKF = 0;
+        self.OLDKAMACFMD = ::protobuf::EnumOrUnknown::new(super::LKOILBGBKEM::LKOILBGBKEM::ROGUE_TOURN_SETTLE_REASON_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournLevelInfoUpdateScNotify {
         static instance: RogueTournLevelInfoUpdateScNotify = RogueTournLevelInfoUpdateScNotify {
-            OJBAILGKLBM: ::protobuf::EnumOrUnknown::from_i32(0),
-            COOINBPIEOC: 0,
-            KGGHLADEKGP: ::protobuf::EnumOrUnknown::from_i32(0),
-            GPKMFMJLMJP: ::std::vec::Vec::new(),
+            KECHADNGNEG: ::std::vec::Vec::new(),
+            IOPEEMNLIDM: ::protobuf::EnumOrUnknown::from_i32(0),
+            NNOGGMBOOKF: 0,
+            OLDKAMACFMD: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,13 +203,13 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournLevelInfoUpdateScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'RogueTournLevelInfoUpdateScNotify.proto\x1a\x11ADHODBDKOEJ.proto\x1a\
-    \x11IEDMIAHONDF.proto\x1a\x1bRogueTournLevelStatus.proto\"\xdf\x01\n!Rog\
-    ueTournLevelInfoUpdateScNotify\x128\n\x0bOJBAILGKLBM\x18\x05\x20\x01(\
-    \x0e2\x16.RogueTournLevelStatusR\x0bOJBAILGKLBM\x12\x20\n\x0bCOOINBPIEOC\
-    \x18\x04\x20\x01(\rR\x0bCOOINBPIEOC\x12.\n\x0bKGGHLADEKGP\x18\x06\x20\
-    \x01(\x0e2\x0c.ADHODBDKOEJR\x0bKGGHLADEKGP\x12.\n\x0bGPKMFMJLMJP\x18\x01\
-    \x20\x03(\x0b2\x0c.IEDMIAHONDFR\x0bGPKMFMJLMJPb\x06proto3\
+    \n'RogueTournLevelInfoUpdateScNotify.proto\x1a\x11LKOILBGBKEM.proto\x1a\
+    \x11NCIOGBELNBB.proto\x1a\x1bRogueTournLevelStatus.proto\"\xdf\x01\n!Rog\
+    ueTournLevelInfoUpdateScNotify\x12.\n\x0bKECHADNGNEG\x18\x03\x20\x03(\
+    \x0b2\x0c.NCIOGBELNBBR\x0bKECHADNGNEG\x128\n\x0bIOPEEMNLIDM\x18\x06\x20\
+    \x01(\x0e2\x16.RogueTournLevelStatusR\x0bIOPEEMNLIDM\x12\x20\n\x0bNNOGGM\
+    BOOKF\x18\x07\x20\x01(\rR\x0bNNOGGMBOOKF\x12.\n\x0bOLDKAMACFMD\x18\x02\
+    \x20\x01(\x0e2\x0c.LKOILBGBKEMR\x0bOLDKAMACFMDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -227,8 +227,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::ADHODBDKOEJ::file_descriptor().clone());
-            deps.push(super::IEDMIAHONDF::file_descriptor().clone());
+            deps.push(super::LKOILBGBKEM::file_descriptor().clone());
+            deps.push(super::NCIOGBELNBB::file_descriptor().clone());
             deps.push(super::RogueTournLevelStatus::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueTournLevelInfoUpdateScNotify::generated_message_descriptor_data());

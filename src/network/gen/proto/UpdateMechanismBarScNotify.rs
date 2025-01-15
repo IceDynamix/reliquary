@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdateMechanismBarScNotify {
     // message fields
-    // @@protoc_insertion_point(field:UpdateMechanismBarScNotify.KOCMDLFBKEI)
-    pub KOCMDLFBKEI: u32,
-    // @@protoc_insertion_point(field:UpdateMechanismBarScNotify.DILEAMLLJFF)
-    pub DILEAMLLJFF: ::protobuf::MessageField<super::MENNDCCODOM::MENNDCCODOM>,
-    // @@protoc_insertion_point(field:UpdateMechanismBarScNotify.IJGMJLMJABD)
-    pub IJGMJLMJABD: u32,
+    // @@protoc_insertion_point(field:UpdateMechanismBarScNotify.GJEDCKBOKKA)
+    pub GJEDCKBOKKA: ::protobuf::MessageField<super::PJKLLMMJJPB::PJKLLMMJJPB>,
+    // @@protoc_insertion_point(field:UpdateMechanismBarScNotify.BHONGJMFKIM)
+    pub BHONGJMFKIM: u32,
+    // @@protoc_insertion_point(field:UpdateMechanismBarScNotify.BJNKEEFKAIK)
+    pub BJNKEEFKAIK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:UpdateMechanismBarScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl UpdateMechanismBarScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KOCMDLFBKEI",
-            |m: &UpdateMechanismBarScNotify| { &m.KOCMDLFBKEI },
-            |m: &mut UpdateMechanismBarScNotify| { &mut m.KOCMDLFBKEI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MENNDCCODOM::MENNDCCODOM>(
-            "DILEAMLLJFF",
-            |m: &UpdateMechanismBarScNotify| { &m.DILEAMLLJFF },
-            |m: &mut UpdateMechanismBarScNotify| { &mut m.DILEAMLLJFF },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PJKLLMMJJPB::PJKLLMMJJPB>(
+            "GJEDCKBOKKA",
+            |m: &UpdateMechanismBarScNotify| { &m.GJEDCKBOKKA },
+            |m: &mut UpdateMechanismBarScNotify| { &mut m.GJEDCKBOKKA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IJGMJLMJABD",
-            |m: &UpdateMechanismBarScNotify| { &m.IJGMJLMJABD },
-            |m: &mut UpdateMechanismBarScNotify| { &mut m.IJGMJLMJABD },
+            "BHONGJMFKIM",
+            |m: &UpdateMechanismBarScNotify| { &m.BHONGJMFKIM },
+            |m: &mut UpdateMechanismBarScNotify| { &mut m.BHONGJMFKIM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BJNKEEFKAIK",
+            |m: &UpdateMechanismBarScNotify| { &m.BJNKEEFKAIK },
+            |m: &mut UpdateMechanismBarScNotify| { &mut m.BJNKEEFKAIK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdateMechanismBarScNotify>(
             "UpdateMechanismBarScNotify",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for UpdateMechanismBarScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.KOCMDLFBKEI = is.read_uint32()?;
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GJEDCKBOKKA)?;
                 },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DILEAMLLJFF)?;
+                104 => {
+                    self.BHONGJMFKIM = is.read_uint32()?;
                 },
-                40 => {
-                    self.IJGMJLMJABD = is.read_uint32()?;
+                88 => {
+                    self.BJNKEEFKAIK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +108,15 @@ impl ::protobuf::Message for UpdateMechanismBarScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KOCMDLFBKEI != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.KOCMDLFBKEI);
-        }
-        if let Some(v) = self.DILEAMLLJFF.as_ref() {
+        if let Some(v) = self.GJEDCKBOKKA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.IJGMJLMJABD != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.IJGMJLMJABD);
+        if self.BHONGJMFKIM != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.BHONGJMFKIM);
+        }
+        if self.BJNKEEFKAIK != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.BJNKEEFKAIK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for UpdateMechanismBarScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KOCMDLFBKEI != 0 {
-            os.write_uint32(2, self.KOCMDLFBKEI)?;
+        if let Some(v) = self.GJEDCKBOKKA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
-        if let Some(v) = self.DILEAMLLJFF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        if self.BHONGJMFKIM != 0 {
+            os.write_uint32(13, self.BHONGJMFKIM)?;
         }
-        if self.IJGMJLMJABD != 0 {
-            os.write_uint32(5, self.IJGMJLMJABD)?;
+        if self.BJNKEEFKAIK != 0 {
+            os.write_uint32(11, self.BJNKEEFKAIK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for UpdateMechanismBarScNotify {
     }
 
     fn clear(&mut self) {
-        self.KOCMDLFBKEI = 0;
-        self.DILEAMLLJFF.clear();
-        self.IJGMJLMJABD = 0;
+        self.GJEDCKBOKKA.clear();
+        self.BHONGJMFKIM = 0;
+        self.BJNKEEFKAIK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateMechanismBarScNotify {
         static instance: UpdateMechanismBarScNotify = UpdateMechanismBarScNotify {
-            KOCMDLFBKEI: 0,
-            DILEAMLLJFF: ::protobuf::MessageField::none(),
-            IJGMJLMJABD: 0,
+            GJEDCKBOKKA: ::protobuf::MessageField::none(),
+            BHONGJMFKIM: 0,
+            BJNKEEFKAIK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for UpdateMechanismBarScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20UpdateMechanismBarScNotify.proto\x1a\x11MENNDCCODOM.proto\"\x90\
-    \x01\n\x1aUpdateMechanismBarScNotify\x12\x20\n\x0bKOCMDLFBKEI\x18\x02\
-    \x20\x01(\rR\x0bKOCMDLFBKEI\x12.\n\x0bDILEAMLLJFF\x18\x06\x20\x01(\x0b2\
-    \x0c.MENNDCCODOMR\x0bDILEAMLLJFF\x12\x20\n\x0bIJGMJLMJABD\x18\x05\x20\
-    \x01(\rR\x0bIJGMJLMJABDb\x06proto3\
+    \n\x20UpdateMechanismBarScNotify.proto\x1a\x11PJKLLMMJJPB.proto\"\x90\
+    \x01\n\x1aUpdateMechanismBarScNotify\x12.\n\x0bGJEDCKBOKKA\x18\x0c\x20\
+    \x01(\x0b2\x0c.PJKLLMMJJPBR\x0bGJEDCKBOKKA\x12\x20\n\x0bBHONGJMFKIM\x18\
+    \r\x20\x01(\rR\x0bBHONGJMFKIM\x12\x20\n\x0bBJNKEEFKAIK\x18\x0b\x20\x01(\
+    \rR\x0bBJNKEEFKAIKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::MENNDCCODOM::file_descriptor().clone());
+            deps.push(super::PJKLLMMJJPB::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(UpdateMechanismBarScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SwordTrainingLearnSkillCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SwordTrainingLearnSkillCsReq.NCPFPAMHAOE)
-    pub NCPFPAMHAOE: u32,
+    // @@protoc_insertion_point(field:SwordTrainingLearnSkillCsReq.LCLCDINHHNP)
+    pub LCLCDINHHNP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SwordTrainingLearnSkillCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl SwordTrainingLearnSkillCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NCPFPAMHAOE",
-            |m: &SwordTrainingLearnSkillCsReq| { &m.NCPFPAMHAOE },
-            |m: &mut SwordTrainingLearnSkillCsReq| { &mut m.NCPFPAMHAOE },
+            "LCLCDINHHNP",
+            |m: &SwordTrainingLearnSkillCsReq| { &m.LCLCDINHHNP },
+            |m: &mut SwordTrainingLearnSkillCsReq| { &mut m.LCLCDINHHNP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SwordTrainingLearnSkillCsReq>(
             "SwordTrainingLearnSkillCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for SwordTrainingLearnSkillCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.NCPFPAMHAOE = is.read_uint32()?;
+                72 => {
+                    self.LCLCDINHHNP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for SwordTrainingLearnSkillCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NCPFPAMHAOE != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.NCPFPAMHAOE);
+        if self.LCLCDINHHNP != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.LCLCDINHHNP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for SwordTrainingLearnSkillCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NCPFPAMHAOE != 0 {
-            os.write_uint32(2, self.NCPFPAMHAOE)?;
+        if self.LCLCDINHHNP != 0 {
+            os.write_uint32(9, self.LCLCDINHHNP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for SwordTrainingLearnSkillCsReq {
     }
 
     fn clear(&mut self) {
-        self.NCPFPAMHAOE = 0;
+        self.LCLCDINHHNP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwordTrainingLearnSkillCsReq {
         static instance: SwordTrainingLearnSkillCsReq = SwordTrainingLearnSkillCsReq {
-            NCPFPAMHAOE: 0,
+            LCLCDINHHNP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for SwordTrainingLearnSkillCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"SwordTrainingLearnSkillCsReq.proto\"@\n\x1cSwordTrainingLearnSkillCs\
-    Req\x12\x20\n\x0bNCPFPAMHAOE\x18\x02\x20\x01(\rR\x0bNCPFPAMHAOEb\x06prot\
-    o3\
+    Req\x12\x20\n\x0bLCLCDINHHNP\x18\t\x20\x01(\rR\x0bLCLCDINHHNPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -31,8 +31,8 @@ pub struct RestartChallengePhaseScRsp {
     // message fields
     // @@protoc_insertion_point(field:RestartChallengePhaseScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:RestartChallengePhaseScRsp.scene)
-    pub scene: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
+    // @@protoc_insertion_point(field:RestartChallengePhaseScRsp.KJPDBLOAOCG)
+    pub KJPDBLOAOCG: ::protobuf::MessageField<super::NDHNICCLBDN::NDHNICCLBDN>,
     // special fields
     // @@protoc_insertion_point(special_field:RestartChallengePhaseScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,10 +57,10 @@ impl RestartChallengePhaseScRsp {
             |m: &RestartChallengePhaseScRsp| { &m.retcode },
             |m: &mut RestartChallengePhaseScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneInfo::SceneInfo>(
-            "scene",
-            |m: &RestartChallengePhaseScRsp| { &m.scene },
-            |m: &mut RestartChallengePhaseScRsp| { &mut m.scene },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NDHNICCLBDN::NDHNICCLBDN>(
+            "KJPDBLOAOCG",
+            |m: &RestartChallengePhaseScRsp| { &m.KJPDBLOAOCG },
+            |m: &mut RestartChallengePhaseScRsp| { &mut m.KJPDBLOAOCG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RestartChallengePhaseScRsp>(
             "RestartChallengePhaseScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for RestartChallengePhaseScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KJPDBLOAOCG)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -99,9 +99,9 @@ impl ::protobuf::Message for RestartChallengePhaseScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
-        if let Some(v) = self.scene.as_ref() {
+        if let Some(v) = self.KJPDBLOAOCG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -112,10 +112,10 @@ impl ::protobuf::Message for RestartChallengePhaseScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
-        if let Some(v) = self.scene.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if let Some(v) = self.KJPDBLOAOCG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -135,14 +135,14 @@ impl ::protobuf::Message for RestartChallengePhaseScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.scene.clear();
+        self.KJPDBLOAOCG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RestartChallengePhaseScRsp {
         static instance: RestartChallengePhaseScRsp = RestartChallengePhaseScRsp {
             retcode: 0,
-            scene: ::protobuf::MessageField::none(),
+            KJPDBLOAOCG: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for RestartChallengePhaseScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20RestartChallengePhaseScRsp.proto\x1a\x0fSceneInfo.proto\"X\n\x1aRe\
-    startChallengePhaseScRsp\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retco\
-    de\x12\x20\n\x05scene\x18\x0e\x20\x01(\x0b2\n.SceneInfoR\x05sceneB\x15\n\
-    \x13emu.lunarcore.protob\x06proto3\
+    \n\x20RestartChallengePhaseScRsp.proto\x1a\x11NDHNICCLBDN.proto\"f\n\x1a\
+    RestartChallengePhaseScRsp\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07r\
+    etcode\x12.\n\x0bKJPDBLOAOCG\x18\r\x20\x01(\x0b2\x0c.NDHNICCLBDNR\x0bKJP\
+    DBLOAOCGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::SceneInfo::file_descriptor().clone());
+            deps.push(super::NDHNICCLBDN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RestartChallengePhaseScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

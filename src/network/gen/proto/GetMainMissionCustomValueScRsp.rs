@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetMainMissionCustomValueScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetMainMissionCustomValueScRsp.DICENMOIOLM)
-    pub DICENMOIOLM: ::std::vec::Vec<super::AGEKPOMLDDF::AGEKPOMLDDF>,
-    // @@protoc_insertion_point(field:GetMainMissionCustomValueScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:GetMainMissionCustomValueScRsp.DBBEJCPPMFO)
+    pub DBBEJCPPMFO: ::std::vec::Vec<super::ODDIMNJKOKF::ODDIMNJKOKF>,
+    // @@protoc_insertion_point(field:GetMainMissionCustomValueScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetMainMissionCustomValueScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl GetMainMissionCustomValueScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DICENMOIOLM",
-            |m: &GetMainMissionCustomValueScRsp| { &m.DICENMOIOLM },
-            |m: &mut GetMainMissionCustomValueScRsp| { &mut m.DICENMOIOLM },
+            "DBBEJCPPMFO",
+            |m: &GetMainMissionCustomValueScRsp| { &m.DBBEJCPPMFO },
+            |m: &mut GetMainMissionCustomValueScRsp| { &mut m.DBBEJCPPMFO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &GetMainMissionCustomValueScRsp| { &m.ADADHIHDHJC },
-            |m: &mut GetMainMissionCustomValueScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &GetMainMissionCustomValueScRsp| { &m.retcode },
+            |m: &mut GetMainMissionCustomValueScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetMainMissionCustomValueScRsp>(
             "GetMainMissionCustomValueScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for GetMainMissionCustomValueScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    self.DICENMOIOLM.push(is.read_message()?);
+                26 => {
+                    self.DBBEJCPPMFO.push(is.read_message()?);
                 },
-                104 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                16 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,12 +98,12 @@ impl ::protobuf::Message for GetMainMissionCustomValueScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.DICENMOIOLM {
+        for value in &self.DBBEJCPPMFO {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for GetMainMissionCustomValueScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.DICENMOIOLM {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        for v in &self.DBBEJCPPMFO {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(13, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(2, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for GetMainMissionCustomValueScRsp {
     }
 
     fn clear(&mut self) {
-        self.DICENMOIOLM.clear();
-        self.ADADHIHDHJC = 0;
+        self.DBBEJCPPMFO.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetMainMissionCustomValueScRsp {
         static instance: GetMainMissionCustomValueScRsp = GetMainMissionCustomValueScRsp {
-            DICENMOIOLM: ::std::vec::Vec::new(),
-            ADADHIHDHJC: 0,
+            DBBEJCPPMFO: ::std::vec::Vec::new(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for GetMainMissionCustomValueScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$GetMainMissionCustomValueScRsp.proto\x1a\x11AGEKPOMLDDF.proto\"r\n\
-    \x1eGetMainMissionCustomValueScRsp\x12.\n\x0bDICENMOIOLM\x18\x06\x20\x03\
-    (\x0b2\x0c.AGEKPOMLDDFR\x0bDICENMOIOLM\x12\x20\n\x0bADADHIHDHJC\x18\r\
-    \x20\x01(\rR\x0bADADHIHDHJCb\x06proto3\
+    \n$GetMainMissionCustomValueScRsp.proto\x1a\x11ODDIMNJKOKF.proto\"j\n\
+    \x1eGetMainMissionCustomValueScRsp\x12.\n\x0bDBBEJCPPMFO\x18\x03\x20\x03\
+    (\x0b2\x0c.ODDIMNJKOKFR\x0bDBBEJCPPMFO\x12\x18\n\x07retcode\x18\x02\x20\
+    \x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::AGEKPOMLDDF::file_descriptor().clone());
+            deps.push(super::ODDIMNJKOKF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetMainMissionCustomValueScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

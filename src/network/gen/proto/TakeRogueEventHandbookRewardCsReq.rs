@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeRogueEventHandbookRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeRogueEventHandbookRewardCsReq.ABAIJKEGGOI)
-    pub ABAIJKEGGOI: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:TakeRogueEventHandbookRewardCsReq.ACCPEHFPKAB)
+    pub ACCPEHFPKAB: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:TakeRogueEventHandbookRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl TakeRogueEventHandbookRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ABAIJKEGGOI",
-            |m: &TakeRogueEventHandbookRewardCsReq| { &m.ABAIJKEGGOI },
-            |m: &mut TakeRogueEventHandbookRewardCsReq| { &mut m.ABAIJKEGGOI },
+            "ACCPEHFPKAB",
+            |m: &TakeRogueEventHandbookRewardCsReq| { &m.ACCPEHFPKAB },
+            |m: &mut TakeRogueEventHandbookRewardCsReq| { &mut m.ACCPEHFPKAB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeRogueEventHandbookRewardCsReq>(
             "TakeRogueEventHandbookRewardCsReq",
@@ -73,11 +73,11 @@ impl ::protobuf::Message for TakeRogueEventHandbookRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.ABAIJKEGGOI)?;
+                34 => {
+                    is.read_repeated_packed_uint32_into(&mut self.ACCPEHFPKAB)?;
                 },
-                24 => {
-                    self.ABAIJKEGGOI.push(is.read_uint32()?);
+                32 => {
+                    self.ACCPEHFPKAB.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -91,8 +91,8 @@ impl ::protobuf::Message for TakeRogueEventHandbookRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.ABAIJKEGGOI {
-            my_size += ::protobuf::rt::uint32_size(3, *value);
+        for value in &self.ACCPEHFPKAB {
+            my_size += ::protobuf::rt::uint32_size(4, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -100,8 +100,8 @@ impl ::protobuf::Message for TakeRogueEventHandbookRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.ABAIJKEGGOI {
-            os.write_uint32(3, *v)?;
+        for v in &self.ACCPEHFPKAB {
+            os.write_uint32(4, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -120,13 +120,13 @@ impl ::protobuf::Message for TakeRogueEventHandbookRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.ABAIJKEGGOI.clear();
+        self.ACCPEHFPKAB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeRogueEventHandbookRewardCsReq {
         static instance: TakeRogueEventHandbookRewardCsReq = TakeRogueEventHandbookRewardCsReq {
-            ABAIJKEGGOI: ::std::vec::Vec::new(),
+            ACCPEHFPKAB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -152,7 +152,7 @@ impl ::protobuf::reflect::ProtobufValue for TakeRogueEventHandbookRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'TakeRogueEventHandbookRewardCsReq.proto\"E\n!TakeRogueEventHandbookRe\
-    wardCsReq\x12\x20\n\x0bABAIJKEGGOI\x18\x03\x20\x03(\rR\x0bABAIJKEGGOIb\
+    wardCsReq\x12\x20\n\x0bACCPEHFPKAB\x18\x04\x20\x03(\rR\x0bACCPEHFPKABb\
     \x06proto3\
 ";
 

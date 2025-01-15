@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueEnterScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueEnterScRsp.IPNHCCODNDI)
-    pub IPNHCCODNDI: u32,
-    // @@protoc_insertion_point(field:ChessRogueEnterScRsp.BDAJBMAANIN)
-    pub BDAJBMAANIN: ::protobuf::MessageField<super::FBGHJICBPMN::FBGHJICBPMN>,
-    // @@protoc_insertion_point(field:ChessRogueEnterScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:ChessRogueEnterScRsp.LKGOAPJDNBJ)
-    pub LKGOAPJDNBJ: ::protobuf::MessageField<super::NBOICPBANIC::NBOICPBANIC>,
+    // @@protoc_insertion_point(field:ChessRogueEnterScRsp.POCDNJBLNAN)
+    pub POCDNJBLNAN: ::protobuf::MessageField<super::DIEDGIEDKHM::DIEDGIEDKHM>,
     // @@protoc_insertion_point(field:ChessRogueEnterScRsp.ROGUE_DEBUG_MESSAGE_TYPE_INFO)
-    pub ROGUE_DEBUG_MESSAGE_TYPE_INFO: ::protobuf::MessageField<super::JGNAJFOGFBJ::JGNAJFOGFBJ>,
+    pub ROGUE_DEBUG_MESSAGE_TYPE_INFO: ::protobuf::MessageField<super::NOMDNDHHELA::NOMDNDHHELA>,
+    // @@protoc_insertion_point(field:ChessRogueEnterScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:ChessRogueEnterScRsp.CPJGLAJDNAC)
+    pub CPJGLAJDNAC: ::protobuf::MessageField<super::IKHALMEKJNA::IKHALMEKJNA>,
+    // @@protoc_insertion_point(field:ChessRogueEnterScRsp.FFKNMAONGIB)
+    pub FFKNMAONGIB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueEnterScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,30 +58,30 @@ impl ChessRogueEnterScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IPNHCCODNDI",
-            |m: &ChessRogueEnterScRsp| { &m.IPNHCCODNDI },
-            |m: &mut ChessRogueEnterScRsp| { &mut m.IPNHCCODNDI },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DIEDGIEDKHM::DIEDGIEDKHM>(
+            "POCDNJBLNAN",
+            |m: &ChessRogueEnterScRsp| { &m.POCDNJBLNAN },
+            |m: &mut ChessRogueEnterScRsp| { &mut m.POCDNJBLNAN },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FBGHJICBPMN::FBGHJICBPMN>(
-            "BDAJBMAANIN",
-            |m: &ChessRogueEnterScRsp| { &m.BDAJBMAANIN },
-            |m: &mut ChessRogueEnterScRsp| { &mut m.BDAJBMAANIN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &ChessRogueEnterScRsp| { &m.ADADHIHDHJC },
-            |m: &mut ChessRogueEnterScRsp| { &mut m.ADADHIHDHJC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NBOICPBANIC::NBOICPBANIC>(
-            "LKGOAPJDNBJ",
-            |m: &ChessRogueEnterScRsp| { &m.LKGOAPJDNBJ },
-            |m: &mut ChessRogueEnterScRsp| { &mut m.LKGOAPJDNBJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JGNAJFOGFBJ::JGNAJFOGFBJ>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NOMDNDHHELA::NOMDNDHHELA>(
             "ROGUE_DEBUG_MESSAGE_TYPE_INFO",
             |m: &ChessRogueEnterScRsp| { &m.ROGUE_DEBUG_MESSAGE_TYPE_INFO },
             |m: &mut ChessRogueEnterScRsp| { &mut m.ROGUE_DEBUG_MESSAGE_TYPE_INFO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &ChessRogueEnterScRsp| { &m.retcode },
+            |m: &mut ChessRogueEnterScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IKHALMEKJNA::IKHALMEKJNA>(
+            "CPJGLAJDNAC",
+            |m: &ChessRogueEnterScRsp| { &m.CPJGLAJDNAC },
+            |m: &mut ChessRogueEnterScRsp| { &mut m.CPJGLAJDNAC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FFKNMAONGIB",
+            |m: &ChessRogueEnterScRsp| { &m.FFKNMAONGIB },
+            |m: &mut ChessRogueEnterScRsp| { &mut m.FFKNMAONGIB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueEnterScRsp>(
             "ChessRogueEnterScRsp",
@@ -101,20 +101,20 @@ impl ::protobuf::Message for ChessRogueEnterScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.IPNHCCODNDI = is.read_uint32()?;
-                },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BDAJBMAANIN)?;
-                },
-                24 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
-                },
                 10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LKGOAPJDNBJ)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.POCDNJBLNAN)?;
                 },
-                98 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.ROGUE_DEBUG_MESSAGE_TYPE_INFO)?;
+                },
+                16 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CPJGLAJDNAC)?;
+                },
+                64 => {
+                    self.FFKNMAONGIB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,23 +128,23 @@ impl ::protobuf::Message for ChessRogueEnterScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IPNHCCODNDI != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.IPNHCCODNDI);
-        }
-        if let Some(v) = self.BDAJBMAANIN.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.ADADHIHDHJC);
-        }
-        if let Some(v) = self.LKGOAPJDNBJ.as_ref() {
+        if let Some(v) = self.POCDNJBLNAN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if let Some(v) = self.ROGUE_DEBUG_MESSAGE_TYPE_INFO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+        }
+        if let Some(v) = self.CPJGLAJDNAC.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.FFKNMAONGIB != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.FFKNMAONGIB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -152,20 +152,20 @@ impl ::protobuf::Message for ChessRogueEnterScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IPNHCCODNDI != 0 {
-            os.write_uint32(10, self.IPNHCCODNDI)?;
-        }
-        if let Some(v) = self.BDAJBMAANIN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(3, self.ADADHIHDHJC)?;
-        }
-        if let Some(v) = self.LKGOAPJDNBJ.as_ref() {
+        if let Some(v) = self.POCDNJBLNAN.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if let Some(v) = self.ROGUE_DEBUG_MESSAGE_TYPE_INFO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(2, self.retcode)?;
+        }
+        if let Some(v) = self.CPJGLAJDNAC.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        }
+        if self.FFKNMAONGIB != 0 {
+            os.write_uint32(8, self.FFKNMAONGIB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,21 +184,21 @@ impl ::protobuf::Message for ChessRogueEnterScRsp {
     }
 
     fn clear(&mut self) {
-        self.IPNHCCODNDI = 0;
-        self.BDAJBMAANIN.clear();
-        self.ADADHIHDHJC = 0;
-        self.LKGOAPJDNBJ.clear();
+        self.POCDNJBLNAN.clear();
         self.ROGUE_DEBUG_MESSAGE_TYPE_INFO.clear();
+        self.retcode = 0;
+        self.CPJGLAJDNAC.clear();
+        self.FFKNMAONGIB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueEnterScRsp {
         static instance: ChessRogueEnterScRsp = ChessRogueEnterScRsp {
-            IPNHCCODNDI: 0,
-            BDAJBMAANIN: ::protobuf::MessageField::none(),
-            ADADHIHDHJC: 0,
-            LKGOAPJDNBJ: ::protobuf::MessageField::none(),
+            POCDNJBLNAN: ::protobuf::MessageField::none(),
             ROGUE_DEBUG_MESSAGE_TYPE_INFO: ::protobuf::MessageField::none(),
+            retcode: 0,
+            CPJGLAJDNAC: ::protobuf::MessageField::none(),
+            FFKNMAONGIB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -223,14 +223,14 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueEnterScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aChessRogueEnterScRsp.proto\x1a\x11FBGHJICBPMN.proto\x1a\x11JGNAJFO\
-    GFBJ.proto\x1a\x11NBOICPBANIC.proto\"\x8a\x02\n\x14ChessRogueEnterScRsp\
-    \x12\x20\n\x0bIPNHCCODNDI\x18\n\x20\x01(\rR\x0bIPNHCCODNDI\x12.\n\x0bBDA\
-    JBMAANIN\x18\x0b\x20\x01(\x0b2\x0c.FBGHJICBPMNR\x0bBDAJBMAANIN\x12\x20\n\
-    \x0bADADHIHDHJC\x18\x03\x20\x01(\rR\x0bADADHIHDHJC\x12.\n\x0bLKGOAPJDNBJ\
-    \x18\x01\x20\x01(\x0b2\x0c.NBOICPBANICR\x0bLKGOAPJDNBJ\x12N\n\x1dROGUE_D\
-    EBUG_MESSAGE_TYPE_INFO\x18\x0c\x20\x01(\x0b2\x0c.JGNAJFOGFBJR\x19ROGUEDE\
-    BUGMESSAGETYPEINFOb\x06proto3\
+    \n\x1aChessRogueEnterScRsp.proto\x1a\x11DIEDGIEDKHM.proto\x1a\x11IKHALME\
+    KJNA.proto\x1a\x11NOMDNDHHELA.proto\"\x82\x02\n\x14ChessRogueEnterScRsp\
+    \x12.\n\x0bPOCDNJBLNAN\x18\x01\x20\x01(\x0b2\x0c.DIEDGIEDKHMR\x0bPOCDNJB\
+    LNAN\x12N\n\x1dROGUE_DEBUG_MESSAGE_TYPE_INFO\x18\x04\x20\x01(\x0b2\x0c.N\
+    OMDNDHHELAR\x19ROGUEDEBUGMESSAGETYPEINFO\x12\x18\n\x07retcode\x18\x02\
+    \x20\x01(\rR\x07retcode\x12.\n\x0bCPJGLAJDNAC\x18\x0f\x20\x01(\x0b2\x0c.\
+    IKHALMEKJNAR\x0bCPJGLAJDNAC\x12\x20\n\x0bFFKNMAONGIB\x18\x08\x20\x01(\rR\
+    \x0bFFKNMAONGIBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -248,9 +248,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::FBGHJICBPMN::file_descriptor().clone());
-            deps.push(super::JGNAJFOGFBJ::file_descriptor().clone());
-            deps.push(super::NBOICPBANIC::file_descriptor().clone());
+            deps.push(super::DIEDGIEDKHM::file_descriptor().clone());
+            deps.push(super::IKHALMEKJNA::file_descriptor().clone());
+            deps.push(super::NOMDNDHHELA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChessRogueEnterScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

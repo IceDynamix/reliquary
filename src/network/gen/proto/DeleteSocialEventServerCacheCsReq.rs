@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DeleteSocialEventServerCacheCsReq {
     // message fields
-    // @@protoc_insertion_point(field:DeleteSocialEventServerCacheCsReq.JBMAKPPFCJA)
-    pub JBMAKPPFCJA: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:DeleteSocialEventServerCacheCsReq.CIFANHOCAOK)
+    pub CIFANHOCAOK: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:DeleteSocialEventServerCacheCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl DeleteSocialEventServerCacheCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JBMAKPPFCJA",
-            |m: &DeleteSocialEventServerCacheCsReq| { &m.JBMAKPPFCJA },
-            |m: &mut DeleteSocialEventServerCacheCsReq| { &mut m.JBMAKPPFCJA },
+            "CIFANHOCAOK",
+            |m: &DeleteSocialEventServerCacheCsReq| { &m.CIFANHOCAOK },
+            |m: &mut DeleteSocialEventServerCacheCsReq| { &mut m.CIFANHOCAOK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DeleteSocialEventServerCacheCsReq>(
             "DeleteSocialEventServerCacheCsReq",
@@ -73,11 +73,11 @@ impl ::protobuf::Message for DeleteSocialEventServerCacheCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    is.read_repeated_packed_uint32_into(&mut self.JBMAKPPFCJA)?;
+                34 => {
+                    is.read_repeated_packed_uint32_into(&mut self.CIFANHOCAOK)?;
                 },
-                64 => {
-                    self.JBMAKPPFCJA.push(is.read_uint32()?);
+                32 => {
+                    self.CIFANHOCAOK.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -91,8 +91,8 @@ impl ::protobuf::Message for DeleteSocialEventServerCacheCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.JBMAKPPFCJA {
-            my_size += ::protobuf::rt::uint32_size(8, *value);
+        for value in &self.CIFANHOCAOK {
+            my_size += ::protobuf::rt::uint32_size(4, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -100,8 +100,8 @@ impl ::protobuf::Message for DeleteSocialEventServerCacheCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.JBMAKPPFCJA {
-            os.write_uint32(8, *v)?;
+        for v in &self.CIFANHOCAOK {
+            os.write_uint32(4, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -120,13 +120,13 @@ impl ::protobuf::Message for DeleteSocialEventServerCacheCsReq {
     }
 
     fn clear(&mut self) {
-        self.JBMAKPPFCJA.clear();
+        self.CIFANHOCAOK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DeleteSocialEventServerCacheCsReq {
         static instance: DeleteSocialEventServerCacheCsReq = DeleteSocialEventServerCacheCsReq {
-            JBMAKPPFCJA: ::std::vec::Vec::new(),
+            CIFANHOCAOK: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -152,7 +152,7 @@ impl ::protobuf::reflect::ProtobufValue for DeleteSocialEventServerCacheCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'DeleteSocialEventServerCacheCsReq.proto\"E\n!DeleteSocialEventServerC\
-    acheCsReq\x12\x20\n\x0bJBMAKPPFCJA\x18\x08\x20\x03(\rR\x0bJBMAKPPFCJAb\
+    acheCsReq\x12\x20\n\x0bCIFANHOCAOK\x18\x04\x20\x03(\rR\x0bCIFANHOCAOKb\
     \x06proto3\
 ";
 

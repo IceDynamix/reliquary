@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ActivityRaidPlacingGameScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ActivityRaidPlacingGameScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:ActivityRaidPlacingGameScRsp.retcode)
+    pub retcode: u32,
     // message oneof groups
-    pub MMFEKPOMGDB: ::std::option::Option<activity_raid_placing_game_sc_rsp::MMFEKPOMGDB>,
+    pub DCEGDBABMEP: ::std::option::Option<activity_raid_placing_game_sc_rsp::DCEGDBABMEP>,
     // special fields
     // @@protoc_insertion_point(special_field:ActivityRaidPlacingGameScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,77 +49,77 @@ impl ActivityRaidPlacingGameScRsp {
         ::std::default::Default::default()
     }
 
-    // uint32 BJBPKKOPBMC = 1;
+    // uint32 JMPDDBKCLHI = 3;
 
-    pub fn BJBPKKOPBMC(&self) -> u32 {
-        match self.MMFEKPOMGDB {
-            ::std::option::Option::Some(activity_raid_placing_game_sc_rsp::MMFEKPOMGDB::BJBPKKOPBMC(v)) => v,
+    pub fn JMPDDBKCLHI(&self) -> u32 {
+        match self.DCEGDBABMEP {
+            ::std::option::Option::Some(activity_raid_placing_game_sc_rsp::DCEGDBABMEP::JMPDDBKCLHI(v)) => v,
             _ => 0,
         }
     }
 
-    pub fn clear_BJBPKKOPBMC(&mut self) {
-        self.MMFEKPOMGDB = ::std::option::Option::None;
+    pub fn clear_JMPDDBKCLHI(&mut self) {
+        self.DCEGDBABMEP = ::std::option::Option::None;
     }
 
-    pub fn has_BJBPKKOPBMC(&self) -> bool {
-        match self.MMFEKPOMGDB {
-            ::std::option::Option::Some(activity_raid_placing_game_sc_rsp::MMFEKPOMGDB::BJBPKKOPBMC(..)) => true,
+    pub fn has_JMPDDBKCLHI(&self) -> bool {
+        match self.DCEGDBABMEP {
+            ::std::option::Option::Some(activity_raid_placing_game_sc_rsp::DCEGDBABMEP::JMPDDBKCLHI(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_BJBPKKOPBMC(&mut self, v: u32) {
-        self.MMFEKPOMGDB = ::std::option::Option::Some(activity_raid_placing_game_sc_rsp::MMFEKPOMGDB::BJBPKKOPBMC(v))
+    pub fn set_JMPDDBKCLHI(&mut self, v: u32) {
+        self.DCEGDBABMEP = ::std::option::Option::Some(activity_raid_placing_game_sc_rsp::DCEGDBABMEP::JMPDDBKCLHI(v))
     }
 
-    // uint32 HDCEPMKIMMG = 10;
+    // uint32 LBCCMFHGMHC = 8;
 
-    pub fn HDCEPMKIMMG(&self) -> u32 {
-        match self.MMFEKPOMGDB {
-            ::std::option::Option::Some(activity_raid_placing_game_sc_rsp::MMFEKPOMGDB::HDCEPMKIMMG(v)) => v,
+    pub fn LBCCMFHGMHC(&self) -> u32 {
+        match self.DCEGDBABMEP {
+            ::std::option::Option::Some(activity_raid_placing_game_sc_rsp::DCEGDBABMEP::LBCCMFHGMHC(v)) => v,
             _ => 0,
         }
     }
 
-    pub fn clear_HDCEPMKIMMG(&mut self) {
-        self.MMFEKPOMGDB = ::std::option::Option::None;
+    pub fn clear_LBCCMFHGMHC(&mut self) {
+        self.DCEGDBABMEP = ::std::option::Option::None;
     }
 
-    pub fn has_HDCEPMKIMMG(&self) -> bool {
-        match self.MMFEKPOMGDB {
-            ::std::option::Option::Some(activity_raid_placing_game_sc_rsp::MMFEKPOMGDB::HDCEPMKIMMG(..)) => true,
+    pub fn has_LBCCMFHGMHC(&self) -> bool {
+        match self.DCEGDBABMEP {
+            ::std::option::Option::Some(activity_raid_placing_game_sc_rsp::DCEGDBABMEP::LBCCMFHGMHC(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_HDCEPMKIMMG(&mut self, v: u32) {
-        self.MMFEKPOMGDB = ::std::option::Option::Some(activity_raid_placing_game_sc_rsp::MMFEKPOMGDB::HDCEPMKIMMG(v))
+    pub fn set_LBCCMFHGMHC(&mut self, v: u32) {
+        self.DCEGDBABMEP = ::std::option::Option::Some(activity_raid_placing_game_sc_rsp::DCEGDBABMEP::LBCCMFHGMHC(v))
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &ActivityRaidPlacingGameScRsp| { &m.ADADHIHDHJC },
-            |m: &mut ActivityRaidPlacingGameScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &ActivityRaidPlacingGameScRsp| { &m.retcode },
+            |m: &mut ActivityRaidPlacingGameScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "BJBPKKOPBMC",
-            ActivityRaidPlacingGameScRsp::has_BJBPKKOPBMC,
-            ActivityRaidPlacingGameScRsp::BJBPKKOPBMC,
-            ActivityRaidPlacingGameScRsp::set_BJBPKKOPBMC,
+            "JMPDDBKCLHI",
+            ActivityRaidPlacingGameScRsp::has_JMPDDBKCLHI,
+            ActivityRaidPlacingGameScRsp::JMPDDBKCLHI,
+            ActivityRaidPlacingGameScRsp::set_JMPDDBKCLHI,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "HDCEPMKIMMG",
-            ActivityRaidPlacingGameScRsp::has_HDCEPMKIMMG,
-            ActivityRaidPlacingGameScRsp::HDCEPMKIMMG,
-            ActivityRaidPlacingGameScRsp::set_HDCEPMKIMMG,
+            "LBCCMFHGMHC",
+            ActivityRaidPlacingGameScRsp::has_LBCCMFHGMHC,
+            ActivityRaidPlacingGameScRsp::LBCCMFHGMHC,
+            ActivityRaidPlacingGameScRsp::set_LBCCMFHGMHC,
         ));
-        oneofs.push(activity_raid_placing_game_sc_rsp::MMFEKPOMGDB::generated_oneof_descriptor_data());
+        oneofs.push(activity_raid_placing_game_sc_rsp::DCEGDBABMEP::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ActivityRaidPlacingGameScRsp>(
             "ActivityRaidPlacingGameScRsp",
             fields,
@@ -138,14 +138,14 @@ impl ::protobuf::Message for ActivityRaidPlacingGameScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                112 => {
+                    self.retcode = is.read_uint32()?;
+                },
                 24 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                    self.DCEGDBABMEP = ::std::option::Option::Some(activity_raid_placing_game_sc_rsp::DCEGDBABMEP::JMPDDBKCLHI(is.read_uint32()?));
                 },
-                8 => {
-                    self.MMFEKPOMGDB = ::std::option::Option::Some(activity_raid_placing_game_sc_rsp::MMFEKPOMGDB::BJBPKKOPBMC(is.read_uint32()?));
-                },
-                80 => {
-                    self.MMFEKPOMGDB = ::std::option::Option::Some(activity_raid_placing_game_sc_rsp::MMFEKPOMGDB::HDCEPMKIMMG(is.read_uint32()?));
+                64 => {
+                    self.DCEGDBABMEP = ::std::option::Option::Some(activity_raid_placing_game_sc_rsp::DCEGDBABMEP::LBCCMFHGMHC(is.read_uint32()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -159,16 +159,16 @@ impl ::protobuf::Message for ActivityRaidPlacingGameScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
-        if let ::std::option::Option::Some(ref v) = self.MMFEKPOMGDB {
+        if let ::std::option::Option::Some(ref v) = self.DCEGDBABMEP {
             match v {
-                &activity_raid_placing_game_sc_rsp::MMFEKPOMGDB::BJBPKKOPBMC(v) => {
-                    my_size += ::protobuf::rt::uint32_size(1, v);
+                &activity_raid_placing_game_sc_rsp::DCEGDBABMEP::JMPDDBKCLHI(v) => {
+                    my_size += ::protobuf::rt::uint32_size(3, v);
                 },
-                &activity_raid_placing_game_sc_rsp::MMFEKPOMGDB::HDCEPMKIMMG(v) => {
-                    my_size += ::protobuf::rt::uint32_size(10, v);
+                &activity_raid_placing_game_sc_rsp::DCEGDBABMEP::LBCCMFHGMHC(v) => {
+                    my_size += ::protobuf::rt::uint32_size(8, v);
                 },
             };
         }
@@ -178,16 +178,16 @@ impl ::protobuf::Message for ActivityRaidPlacingGameScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(3, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(14, self.retcode)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.MMFEKPOMGDB {
+        if let ::std::option::Option::Some(ref v) = self.DCEGDBABMEP {
             match v {
-                &activity_raid_placing_game_sc_rsp::MMFEKPOMGDB::BJBPKKOPBMC(v) => {
-                    os.write_uint32(1, v)?;
+                &activity_raid_placing_game_sc_rsp::DCEGDBABMEP::JMPDDBKCLHI(v) => {
+                    os.write_uint32(3, v)?;
                 },
-                &activity_raid_placing_game_sc_rsp::MMFEKPOMGDB::HDCEPMKIMMG(v) => {
-                    os.write_uint32(10, v)?;
+                &activity_raid_placing_game_sc_rsp::DCEGDBABMEP::LBCCMFHGMHC(v) => {
+                    os.write_uint32(8, v)?;
                 },
             };
         }
@@ -208,16 +208,16 @@ impl ::protobuf::Message for ActivityRaidPlacingGameScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADADHIHDHJC = 0;
-        self.MMFEKPOMGDB = ::std::option::Option::None;
-        self.MMFEKPOMGDB = ::std::option::Option::None;
+        self.retcode = 0;
+        self.DCEGDBABMEP = ::std::option::Option::None;
+        self.DCEGDBABMEP = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ActivityRaidPlacingGameScRsp {
         static instance: ActivityRaidPlacingGameScRsp = ActivityRaidPlacingGameScRsp {
-            ADADHIHDHJC: 0,
-            MMFEKPOMGDB: ::std::option::Option::None,
+            retcode: 0,
+            DCEGDBABMEP: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -246,37 +246,37 @@ pub mod activity_raid_placing_game_sc_rsp {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:ActivityRaidPlacingGameScRsp.MMFEKPOMGDB)
-    pub enum MMFEKPOMGDB {
-        // @@protoc_insertion_point(oneof_field:ActivityRaidPlacingGameScRsp.BJBPKKOPBMC)
-        BJBPKKOPBMC(u32),
-        // @@protoc_insertion_point(oneof_field:ActivityRaidPlacingGameScRsp.HDCEPMKIMMG)
-        HDCEPMKIMMG(u32),
+    // @@protoc_insertion_point(oneof:ActivityRaidPlacingGameScRsp.DCEGDBABMEP)
+    pub enum DCEGDBABMEP {
+        // @@protoc_insertion_point(oneof_field:ActivityRaidPlacingGameScRsp.JMPDDBKCLHI)
+        JMPDDBKCLHI(u32),
+        // @@protoc_insertion_point(oneof_field:ActivityRaidPlacingGameScRsp.LBCCMFHGMHC)
+        LBCCMFHGMHC(u32),
     }
 
-    impl ::protobuf::Oneof for MMFEKPOMGDB {
+    impl ::protobuf::Oneof for DCEGDBABMEP {
     }
 
-    impl ::protobuf::OneofFull for MMFEKPOMGDB {
+    impl ::protobuf::OneofFull for DCEGDBABMEP {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::ActivityRaidPlacingGameScRsp as ::protobuf::MessageFull>::descriptor().oneof_by_name("MMFEKPOMGDB").unwrap()).clone()
+            descriptor.get(|| <super::ActivityRaidPlacingGameScRsp as ::protobuf::MessageFull>::descriptor().oneof_by_name("DCEGDBABMEP").unwrap()).clone()
         }
     }
 
-    impl MMFEKPOMGDB {
+    impl DCEGDBABMEP {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<MMFEKPOMGDB>("MMFEKPOMGDB")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<DCEGDBABMEP>("DCEGDBABMEP")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"ActivityRaidPlacingGameScRsp.proto\"\x97\x01\n\x1cActivityRaidPlacin\
-    gGameScRsp\x12\x20\n\x0bADADHIHDHJC\x18\x03\x20\x01(\rR\x0bADADHIHDHJC\
-    \x12\"\n\x0bBJBPKKOPBMC\x18\x01\x20\x01(\rH\0R\x0bBJBPKKOPBMC\x12\"\n\
-    \x0bHDCEPMKIMMG\x18\n\x20\x01(\rH\0R\x0bHDCEPMKIMMGB\r\n\x0bMMFEKPOMGDBb\
-    \x06proto3\
+    \n\"ActivityRaidPlacingGameScRsp.proto\"\x8f\x01\n\x1cActivityRaidPlacin\
+    gGameScRsp\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcode\x12\"\n\
+    \x0bJMPDDBKCLHI\x18\x03\x20\x01(\rH\0R\x0bJMPDDBKCLHI\x12\"\n\x0bLBCCMFH\
+    GMHC\x18\x08\x20\x01(\rH\0R\x0bLBCCMFHGMHCB\r\n\x0bDCEGDBABMEPb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

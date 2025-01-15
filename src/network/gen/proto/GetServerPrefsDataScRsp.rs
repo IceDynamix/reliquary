@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetServerPrefsDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetServerPrefsDataScRsp.DCALFMAFHOH)
-    pub DCALFMAFHOH: ::protobuf::MessageField<super::PJCFIIDEDHM::PJCFIIDEDHM>,
-    // @@protoc_insertion_point(field:GetServerPrefsDataScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:GetServerPrefsDataScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetServerPrefsDataScRsp.NBBHPGBKDOF)
+    pub NBBHPGBKDOF: ::protobuf::MessageField<super::GJIMOHEFDFN::GJIMOHEFDFN>,
     // special fields
     // @@protoc_insertion_point(special_field:GetServerPrefsDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl GetServerPrefsDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PJCFIIDEDHM::PJCFIIDEDHM>(
-            "DCALFMAFHOH",
-            |m: &GetServerPrefsDataScRsp| { &m.DCALFMAFHOH },
-            |m: &mut GetServerPrefsDataScRsp| { &mut m.DCALFMAFHOH },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &GetServerPrefsDataScRsp| { &m.ADADHIHDHJC },
-            |m: &mut GetServerPrefsDataScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &GetServerPrefsDataScRsp| { &m.retcode },
+            |m: &mut GetServerPrefsDataScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GJIMOHEFDFN::GJIMOHEFDFN>(
+            "NBBHPGBKDOF",
+            |m: &GetServerPrefsDataScRsp| { &m.NBBHPGBKDOF },
+            |m: &mut GetServerPrefsDataScRsp| { &mut m.NBBHPGBKDOF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetServerPrefsDataScRsp>(
             "GetServerPrefsDataScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for GetServerPrefsDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DCALFMAFHOH)?;
+                120 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                88 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NBBHPGBKDOF)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,12 +98,12 @@ impl ::protobuf::Message for GetServerPrefsDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.DCALFMAFHOH.as_ref() {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+        }
+        if let Some(v) = self.NBBHPGBKDOF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.ADADHIHDHJC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for GetServerPrefsDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.DCALFMAFHOH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(15, self.retcode)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(11, self.ADADHIHDHJC)?;
+        if let Some(v) = self.NBBHPGBKDOF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for GetServerPrefsDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.DCALFMAFHOH.clear();
-        self.ADADHIHDHJC = 0;
+        self.retcode = 0;
+        self.NBBHPGBKDOF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetServerPrefsDataScRsp {
         static instance: GetServerPrefsDataScRsp = GetServerPrefsDataScRsp {
-            DCALFMAFHOH: ::protobuf::MessageField::none(),
-            ADADHIHDHJC: 0,
+            retcode: 0,
+            NBBHPGBKDOF: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for GetServerPrefsDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dGetServerPrefsDataScRsp.proto\x1a\x11PJCFIIDEDHM.proto\"k\n\x17Get\
-    ServerPrefsDataScRsp\x12.\n\x0bDCALFMAFHOH\x18\x01\x20\x01(\x0b2\x0c.PJC\
-    FIIDEDHMR\x0bDCALFMAFHOH\x12\x20\n\x0bADADHIHDHJC\x18\x0b\x20\x01(\rR\
-    \x0bADADHIHDHJCb\x06proto3\
+    \n\x1dGetServerPrefsDataScRsp.proto\x1a\x11GJIMOHEFDFN.proto\"c\n\x17Get\
+    ServerPrefsDataScRsp\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcode\
+    \x12.\n\x0bNBBHPGBKDOF\x18\x05\x20\x01(\x0b2\x0c.GJIMOHEFDFNR\x0bNBBHPGB\
+    KDOFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::PJCFIIDEDHM::file_descriptor().clone());
+            deps.push(super::GJIMOHEFDFN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetServerPrefsDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

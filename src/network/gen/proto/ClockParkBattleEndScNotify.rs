@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ClockParkBattleEndScNotify {
     // message fields
-    // @@protoc_insertion_point(field:ClockParkBattleEndScNotify.BEBCFIIABLI)
-    pub BEBCFIIABLI: u32,
-    // @@protoc_insertion_point(field:ClockParkBattleEndScNotify.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:ClockParkBattleEndScNotify.EMCJNOFILKP)
+    pub EMCJNOFILKP: u32,
+    // @@protoc_insertion_point(field:ClockParkBattleEndScNotify.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ClockParkBattleEndScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl ClockParkBattleEndScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BEBCFIIABLI",
-            |m: &ClockParkBattleEndScNotify| { &m.BEBCFIIABLI },
-            |m: &mut ClockParkBattleEndScNotify| { &mut m.BEBCFIIABLI },
+            "EMCJNOFILKP",
+            |m: &ClockParkBattleEndScNotify| { &m.EMCJNOFILKP },
+            |m: &mut ClockParkBattleEndScNotify| { &mut m.EMCJNOFILKP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &ClockParkBattleEndScNotify| { &m.ADADHIHDHJC },
-            |m: &mut ClockParkBattleEndScNotify| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &ClockParkBattleEndScNotify| { &m.retcode },
+            |m: &mut ClockParkBattleEndScNotify| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ClockParkBattleEndScNotify>(
             "ClockParkBattleEndScNotify",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for ClockParkBattleEndScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.BEBCFIIABLI = is.read_uint32()?;
+                48 => {
+                    self.EMCJNOFILKP = is.read_uint32()?;
                 },
-                104 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                80 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for ClockParkBattleEndScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BEBCFIIABLI != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.BEBCFIIABLI);
+        if self.EMCJNOFILKP != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.EMCJNOFILKP);
         }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for ClockParkBattleEndScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BEBCFIIABLI != 0 {
-            os.write_uint32(15, self.BEBCFIIABLI)?;
+        if self.EMCJNOFILKP != 0 {
+            os.write_uint32(6, self.EMCJNOFILKP)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(13, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(10, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for ClockParkBattleEndScNotify {
     }
 
     fn clear(&mut self) {
-        self.BEBCFIIABLI = 0;
-        self.ADADHIHDHJC = 0;
+        self.EMCJNOFILKP = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ClockParkBattleEndScNotify {
         static instance: ClockParkBattleEndScNotify = ClockParkBattleEndScNotify {
-            BEBCFIIABLI: 0,
-            ADADHIHDHJC: 0,
+            EMCJNOFILKP: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for ClockParkBattleEndScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20ClockParkBattleEndScNotify.proto\"`\n\x1aClockParkBattleEndScNotif\
-    y\x12\x20\n\x0bBEBCFIIABLI\x18\x0f\x20\x01(\rR\x0bBEBCFIIABLI\x12\x20\n\
-    \x0bADADHIHDHJC\x18\r\x20\x01(\rR\x0bADADHIHDHJCb\x06proto3\
+    \n\x20ClockParkBattleEndScNotify.proto\"X\n\x1aClockParkBattleEndScNotif\
+    y\x12\x20\n\x0bEMCJNOFILKP\x18\x06\x20\x01(\rR\x0bEMCJNOFILKP\x12\x18\n\
+    \x07retcode\x18\n\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

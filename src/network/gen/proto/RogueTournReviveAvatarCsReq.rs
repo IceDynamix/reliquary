@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournReviveAvatarCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournReviveAvatarCsReq.LMFFBHEOONE)
-    pub LMFFBHEOONE: u32,
-    // @@protoc_insertion_point(field:RogueTournReviveAvatarCsReq.FOPPGNKJGLP)
-    pub FOPPGNKJGLP: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueTournReviveAvatarCsReq.LECAMFAFAFB)
+    pub LECAMFAFAFB: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueTournReviveAvatarCsReq.CMDGNACLGID)
+    pub CMDGNACLGID: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournReviveAvatarCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl RogueTournReviveAvatarCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LMFFBHEOONE",
-            |m: &RogueTournReviveAvatarCsReq| { &m.LMFFBHEOONE },
-            |m: &mut RogueTournReviveAvatarCsReq| { &mut m.LMFFBHEOONE },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FOPPGNKJGLP",
-            |m: &RogueTournReviveAvatarCsReq| { &m.FOPPGNKJGLP },
-            |m: &mut RogueTournReviveAvatarCsReq| { &mut m.FOPPGNKJGLP },
+            "LECAMFAFAFB",
+            |m: &RogueTournReviveAvatarCsReq| { &m.LECAMFAFAFB },
+            |m: &mut RogueTournReviveAvatarCsReq| { &mut m.LECAMFAFAFB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CMDGNACLGID",
+            |m: &RogueTournReviveAvatarCsReq| { &m.CMDGNACLGID },
+            |m: &mut RogueTournReviveAvatarCsReq| { &mut m.CMDGNACLGID },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournReviveAvatarCsReq>(
             "RogueTournReviveAvatarCsReq",
@@ -80,14 +80,14 @@ impl ::protobuf::Message for RogueTournReviveAvatarCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.LMFFBHEOONE = is.read_uint32()?;
+                98 => {
+                    is.read_repeated_packed_uint32_into(&mut self.LECAMFAFAFB)?;
                 },
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FOPPGNKJGLP)?;
+                96 => {
+                    self.LECAMFAFAFB.push(is.read_uint32()?);
                 },
                 72 => {
-                    self.FOPPGNKJGLP.push(is.read_uint32()?);
+                    self.CMDGNACLGID = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,24 +101,24 @@ impl ::protobuf::Message for RogueTournReviveAvatarCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LMFFBHEOONE != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.LMFFBHEOONE);
-        }
-        for value in &self.FOPPGNKJGLP {
-            my_size += ::protobuf::rt::uint32_size(9, *value);
+        for value in &self.LECAMFAFAFB {
+            my_size += ::protobuf::rt::uint32_size(12, *value);
         };
+        if self.CMDGNACLGID != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.CMDGNACLGID);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LMFFBHEOONE != 0 {
-            os.write_uint32(13, self.LMFFBHEOONE)?;
-        }
-        for v in &self.FOPPGNKJGLP {
-            os.write_uint32(9, *v)?;
+        for v in &self.LECAMFAFAFB {
+            os.write_uint32(12, *v)?;
         };
+        if self.CMDGNACLGID != 0 {
+            os.write_uint32(9, self.CMDGNACLGID)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -136,15 +136,15 @@ impl ::protobuf::Message for RogueTournReviveAvatarCsReq {
     }
 
     fn clear(&mut self) {
-        self.LMFFBHEOONE = 0;
-        self.FOPPGNKJGLP.clear();
+        self.LECAMFAFAFB.clear();
+        self.CMDGNACLGID = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournReviveAvatarCsReq {
         static instance: RogueTournReviveAvatarCsReq = RogueTournReviveAvatarCsReq {
-            LMFFBHEOONE: 0,
-            FOPPGNKJGLP: ::std::vec::Vec::new(),
+            LECAMFAFAFB: ::std::vec::Vec::new(),
+            CMDGNACLGID: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -170,8 +170,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournReviveAvatarCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!RogueTournReviveAvatarCsReq.proto\"a\n\x1bRogueTournReviveAvatarCsReq\
-    \x12\x20\n\x0bLMFFBHEOONE\x18\r\x20\x01(\rR\x0bLMFFBHEOONE\x12\x20\n\x0b\
-    FOPPGNKJGLP\x18\t\x20\x03(\rR\x0bFOPPGNKJGLPb\x06proto3\
+    \x12\x20\n\x0bLECAMFAFAFB\x18\x0c\x20\x03(\rR\x0bLECAMFAFAFB\x12\x20\n\
+    \x0bCMDGNACLGID\x18\t\x20\x01(\rR\x0bCMDGNACLGIDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

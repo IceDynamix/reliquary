@@ -31,8 +31,8 @@ pub struct GetRogueBuffEnhanceInfoScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetRogueBuffEnhanceInfoScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetRogueBuffEnhanceInfoScRsp.buff_enhance_info)
-    pub buff_enhance_info: ::protobuf::MessageField<super::RogueBuffEnhanceInfoList::RogueBuffEnhanceInfoList>,
+    // @@protoc_insertion_point(field:GetRogueBuffEnhanceInfoScRsp.NPBAMCNHAFJ)
+    pub NPBAMCNHAFJ: ::protobuf::MessageField<super::LMLPNFFMHNE::LMLPNFFMHNE>,
     // special fields
     // @@protoc_insertion_point(special_field:GetRogueBuffEnhanceInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,10 +57,10 @@ impl GetRogueBuffEnhanceInfoScRsp {
             |m: &GetRogueBuffEnhanceInfoScRsp| { &m.retcode },
             |m: &mut GetRogueBuffEnhanceInfoScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueBuffEnhanceInfoList::RogueBuffEnhanceInfoList>(
-            "buff_enhance_info",
-            |m: &GetRogueBuffEnhanceInfoScRsp| { &m.buff_enhance_info },
-            |m: &mut GetRogueBuffEnhanceInfoScRsp| { &mut m.buff_enhance_info },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LMLPNFFMHNE::LMLPNFFMHNE>(
+            "NPBAMCNHAFJ",
+            |m: &GetRogueBuffEnhanceInfoScRsp| { &m.NPBAMCNHAFJ },
+            |m: &mut GetRogueBuffEnhanceInfoScRsp| { &mut m.NPBAMCNHAFJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetRogueBuffEnhanceInfoScRsp>(
             "GetRogueBuffEnhanceInfoScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for GetRogueBuffEnhanceInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.buff_enhance_info)?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NPBAMCNHAFJ)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -99,9 +99,9 @@ impl ::protobuf::Message for GetRogueBuffEnhanceInfoScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
-        if let Some(v) = self.buff_enhance_info.as_ref() {
+        if let Some(v) = self.NPBAMCNHAFJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -112,10 +112,10 @@ impl ::protobuf::Message for GetRogueBuffEnhanceInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
-        if let Some(v) = self.buff_enhance_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        if let Some(v) = self.NPBAMCNHAFJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -135,14 +135,14 @@ impl ::protobuf::Message for GetRogueBuffEnhanceInfoScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.buff_enhance_info.clear();
+        self.NPBAMCNHAFJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetRogueBuffEnhanceInfoScRsp {
         static instance: GetRogueBuffEnhanceInfoScRsp = GetRogueBuffEnhanceInfoScRsp {
             retcode: 0,
-            buff_enhance_info: ::protobuf::MessageField::none(),
+            NPBAMCNHAFJ: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,11 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for GetRogueBuffEnhanceInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"GetRogueBuffEnhanceInfoScRsp.proto\x1a\x1eRogueBuffEnhanceInfoList.p\
-    roto\"\x7f\n\x1cGetRogueBuffEnhanceInfoScRsp\x12\x18\n\x07retcode\x18\
-    \x07\x20\x01(\rR\x07retcode\x12E\n\x11buff_enhance_info\x18\x05\x20\x01(\
-    \x0b2\x19.RogueBuffEnhanceInfoListR\x0fbuffEnhanceInfoB\x15\n\x13emu.lun\
-    arcore.protob\x06proto3\
+    \n\"GetRogueBuffEnhanceInfoScRsp.proto\x1a\x11LMLPNFFMHNE.proto\"h\n\x1c\
+    GetRogueBuffEnhanceInfoScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\
+    \x07retcode\x12.\n\x0bNPBAMCNHAFJ\x18\x07\x20\x01(\x0b2\x0c.LMLPNFFMHNER\
+    \x0bNPBAMCNHAFJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -189,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::RogueBuffEnhanceInfoList::file_descriptor().clone());
+            deps.push(super::LMLPNFFMHNE::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetRogueBuffEnhanceInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

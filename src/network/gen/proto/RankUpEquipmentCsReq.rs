@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RankUpEquipmentCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RankUpEquipmentCsReq.item_cost_list)
-    pub item_cost_list: ::protobuf::MessageField<super::ItemCostList::ItemCostList>,
+    // @@protoc_insertion_point(field:RankUpEquipmentCsReq.CHILPEFEDNF)
+    pub CHILPEFEDNF: ::protobuf::MessageField<super::LFKJBBFJDKN::LFKJBBFJDKN>,
     // @@protoc_insertion_point(field:RankUpEquipmentCsReq.equipment_unique_id)
     pub equipment_unique_id: u32,
     // special fields
@@ -52,10 +52,10 @@ impl RankUpEquipmentCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostList::ItemCostList>(
-            "item_cost_list",
-            |m: &RankUpEquipmentCsReq| { &m.item_cost_list },
-            |m: &mut RankUpEquipmentCsReq| { &mut m.item_cost_list },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LFKJBBFJDKN::LFKJBBFJDKN>(
+            "CHILPEFEDNF",
+            |m: &RankUpEquipmentCsReq| { &m.CHILPEFEDNF },
+            |m: &mut RankUpEquipmentCsReq| { &mut m.CHILPEFEDNF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "equipment_unique_id",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for RankUpEquipmentCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_cost_list)?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CHILPEFEDNF)?;
                 },
-                64 => {
+                56 => {
                     self.equipment_unique_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,12 +98,12 @@ impl ::protobuf::Message for RankUpEquipmentCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.item_cost_list.as_ref() {
+        if let Some(v) = self.CHILPEFEDNF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.equipment_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.equipment_unique_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.equipment_unique_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for RankUpEquipmentCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.item_cost_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if let Some(v) = self.CHILPEFEDNF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.equipment_unique_id != 0 {
-            os.write_uint32(8, self.equipment_unique_id)?;
+            os.write_uint32(7, self.equipment_unique_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for RankUpEquipmentCsReq {
     }
 
     fn clear(&mut self) {
-        self.item_cost_list.clear();
+        self.CHILPEFEDNF.clear();
         self.equipment_unique_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RankUpEquipmentCsReq {
         static instance: RankUpEquipmentCsReq = RankUpEquipmentCsReq {
-            item_cost_list: ::protobuf::MessageField::none(),
+            CHILPEFEDNF: ::protobuf::MessageField::none(),
             equipment_unique_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for RankUpEquipmentCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aRankUpEquipmentCsReq.proto\x1a\x12ItemCostList.proto\"{\n\x14RankU\
-    pEquipmentCsReq\x123\n\x0eitem_cost_list\x18\x07\x20\x01(\x0b2\r.ItemCos\
-    tListR\x0citemCostList\x12.\n\x13equipment_unique_id\x18\x08\x20\x01(\rR\
-    \x11equipmentUniqueIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x1aRankUpEquipmentCsReq.proto\x1a\x11LFKJBBFJDKN.proto\"v\n\x14RankUp\
+    EquipmentCsReq\x12.\n\x0bCHILPEFEDNF\x18\x01\x20\x01(\x0b2\x0c.LFKJBBFJD\
+    KNR\x0bCHILPEFEDNF\x12.\n\x13equipment_unique_id\x18\x07\x20\x01(\rR\x11\
+    equipmentUniqueIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ItemCostList::file_descriptor().clone());
+            deps.push(super::LFKJBBFJDKN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RankUpEquipmentCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

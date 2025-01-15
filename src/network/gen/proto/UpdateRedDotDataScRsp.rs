@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdateRedDotDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:UpdateRedDotDataScRsp.ILIFHHJFMIH)
-    pub ILIFHHJFMIH: u32,
-    // @@protoc_insertion_point(field:UpdateRedDotDataScRsp.DDMDPBEGKHC)
-    pub DDMDPBEGKHC: u32,
-    // @@protoc_insertion_point(field:UpdateRedDotDataScRsp.LFNNHDHFHHF)
-    pub LFNNHDHFHHF: u32,
-    // @@protoc_insertion_point(field:UpdateRedDotDataScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:UpdateRedDotDataScRsp.OBJJENBPJPM)
+    pub OBJJENBPJPM: u32,
+    // @@protoc_insertion_point(field:UpdateRedDotDataScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:UpdateRedDotDataScRsp.EAPFJLMEMNM)
+    pub EAPFJLMEMNM: u32,
+    // @@protoc_insertion_point(field:UpdateRedDotDataScRsp.IOPPGEGDHGL)
+    pub IOPPGEGDHGL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:UpdateRedDotDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl UpdateRedDotDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ILIFHHJFMIH",
-            |m: &UpdateRedDotDataScRsp| { &m.ILIFHHJFMIH },
-            |m: &mut UpdateRedDotDataScRsp| { &mut m.ILIFHHJFMIH },
+            "OBJJENBPJPM",
+            |m: &UpdateRedDotDataScRsp| { &m.OBJJENBPJPM },
+            |m: &mut UpdateRedDotDataScRsp| { &mut m.OBJJENBPJPM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DDMDPBEGKHC",
-            |m: &UpdateRedDotDataScRsp| { &m.DDMDPBEGKHC },
-            |m: &mut UpdateRedDotDataScRsp| { &mut m.DDMDPBEGKHC },
+            "retcode",
+            |m: &UpdateRedDotDataScRsp| { &m.retcode },
+            |m: &mut UpdateRedDotDataScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LFNNHDHFHHF",
-            |m: &UpdateRedDotDataScRsp| { &m.LFNNHDHFHHF },
-            |m: &mut UpdateRedDotDataScRsp| { &mut m.LFNNHDHFHHF },
+            "EAPFJLMEMNM",
+            |m: &UpdateRedDotDataScRsp| { &m.EAPFJLMEMNM },
+            |m: &mut UpdateRedDotDataScRsp| { &mut m.EAPFJLMEMNM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &UpdateRedDotDataScRsp| { &m.ADADHIHDHJC },
-            |m: &mut UpdateRedDotDataScRsp| { &mut m.ADADHIHDHJC },
+            "IOPPGEGDHGL",
+            |m: &UpdateRedDotDataScRsp| { &m.IOPPGEGDHGL },
+            |m: &mut UpdateRedDotDataScRsp| { &mut m.IOPPGEGDHGL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdateRedDotDataScRsp>(
             "UpdateRedDotDataScRsp",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for UpdateRedDotDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.ILIFHHJFMIH = is.read_uint32()?;
+                24 => {
+                    self.OBJJENBPJPM = is.read_uint32()?;
+                },
+                16 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 72 => {
-                    self.DDMDPBEGKHC = is.read_uint32()?;
+                    self.EAPFJLMEMNM = is.read_uint32()?;
                 },
-                120 => {
-                    self.LFNNHDHFHHF = is.read_uint32()?;
-                },
-                48 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                64 => {
+                    self.IOPPGEGDHGL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,17 +118,17 @@ impl ::protobuf::Message for UpdateRedDotDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ILIFHHJFMIH != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.ILIFHHJFMIH);
+        if self.OBJJENBPJPM != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.OBJJENBPJPM);
         }
-        if self.DDMDPBEGKHC != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.DDMDPBEGKHC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
-        if self.LFNNHDHFHHF != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.LFNNHDHFHHF);
+        if self.EAPFJLMEMNM != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.EAPFJLMEMNM);
         }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.ADADHIHDHJC);
+        if self.IOPPGEGDHGL != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.IOPPGEGDHGL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for UpdateRedDotDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ILIFHHJFMIH != 0 {
-            os.write_uint32(5, self.ILIFHHJFMIH)?;
+        if self.OBJJENBPJPM != 0 {
+            os.write_uint32(3, self.OBJJENBPJPM)?;
         }
-        if self.DDMDPBEGKHC != 0 {
-            os.write_uint32(9, self.DDMDPBEGKHC)?;
+        if self.retcode != 0 {
+            os.write_uint32(2, self.retcode)?;
         }
-        if self.LFNNHDHFHHF != 0 {
-            os.write_uint32(15, self.LFNNHDHFHHF)?;
+        if self.EAPFJLMEMNM != 0 {
+            os.write_uint32(9, self.EAPFJLMEMNM)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(6, self.ADADHIHDHJC)?;
+        if self.IOPPGEGDHGL != 0 {
+            os.write_uint32(8, self.IOPPGEGDHGL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for UpdateRedDotDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.ILIFHHJFMIH = 0;
-        self.DDMDPBEGKHC = 0;
-        self.LFNNHDHFHHF = 0;
-        self.ADADHIHDHJC = 0;
+        self.OBJJENBPJPM = 0;
+        self.retcode = 0;
+        self.EAPFJLMEMNM = 0;
+        self.IOPPGEGDHGL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateRedDotDataScRsp {
         static instance: UpdateRedDotDataScRsp = UpdateRedDotDataScRsp {
-            ILIFHHJFMIH: 0,
-            DDMDPBEGKHC: 0,
-            LFNNHDHFHHF: 0,
-            ADADHIHDHJC: 0,
+            OBJJENBPJPM: 0,
+            retcode: 0,
+            EAPFJLMEMNM: 0,
+            IOPPGEGDHGL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for UpdateRedDotDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bUpdateRedDotDataScRsp.proto\"\x9f\x01\n\x15UpdateRedDotDataScRsp\
-    \x12\x20\n\x0bILIFHHJFMIH\x18\x05\x20\x01(\rR\x0bILIFHHJFMIH\x12\x20\n\
-    \x0bDDMDPBEGKHC\x18\t\x20\x01(\rR\x0bDDMDPBEGKHC\x12\x20\n\x0bLFNNHDHFHH\
-    F\x18\x0f\x20\x01(\rR\x0bLFNNHDHFHHF\x12\x20\n\x0bADADHIHDHJC\x18\x06\
-    \x20\x01(\rR\x0bADADHIHDHJCb\x06proto3\
+    \n\x1bUpdateRedDotDataScRsp.proto\"\x97\x01\n\x15UpdateRedDotDataScRsp\
+    \x12\x20\n\x0bOBJJENBPJPM\x18\x03\x20\x01(\rR\x0bOBJJENBPJPM\x12\x18\n\
+    \x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\x20\n\x0bEAPFJLMEMNM\x18\
+    \t\x20\x01(\rR\x0bEAPFJLMEMNM\x12\x20\n\x0bIOPPGEGDHGL\x18\x08\x20\x01(\
+    \rR\x0bIOPPGEGDHGLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

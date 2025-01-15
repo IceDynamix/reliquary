@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RebattleByClientCsNotify {
     // message fields
-    // @@protoc_insertion_point(field:RebattleByClientCsNotify.ONJPOPFPEFH)
-    pub ONJPOPFPEFH: ::protobuf::MessageField<super::KMAHOCEKPAK::KMAHOCEKPAK>,
-    // @@protoc_insertion_point(field:RebattleByClientCsNotify.AJMDFDMDMAN)
-    pub AJMDFDMDMAN: ::protobuf::EnumOrUnknown<super::OELNNDOBEKP::OELNNDOBEKP>,
+    // @@protoc_insertion_point(field:RebattleByClientCsNotify.AHOLPNCMJOL)
+    pub AHOLPNCMJOL: ::protobuf::EnumOrUnknown<super::FKFMMNOCIPK::FKFMMNOCIPK>,
+    // @@protoc_insertion_point(field:RebattleByClientCsNotify.BLGPIKHEGCC)
+    pub BLGPIKHEGCC: ::protobuf::MessageField<super::DEDFMIPCCEC::DEDFMIPCCEC>,
     // special fields
     // @@protoc_insertion_point(special_field:RebattleByClientCsNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl RebattleByClientCsNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KMAHOCEKPAK::KMAHOCEKPAK>(
-            "ONJPOPFPEFH",
-            |m: &RebattleByClientCsNotify| { &m.ONJPOPFPEFH },
-            |m: &mut RebattleByClientCsNotify| { &mut m.ONJPOPFPEFH },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AJMDFDMDMAN",
-            |m: &RebattleByClientCsNotify| { &m.AJMDFDMDMAN },
-            |m: &mut RebattleByClientCsNotify| { &mut m.AJMDFDMDMAN },
+            "AHOLPNCMJOL",
+            |m: &RebattleByClientCsNotify| { &m.AHOLPNCMJOL },
+            |m: &mut RebattleByClientCsNotify| { &mut m.AHOLPNCMJOL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DEDFMIPCCEC::DEDFMIPCCEC>(
+            "BLGPIKHEGCC",
+            |m: &RebattleByClientCsNotify| { &m.BLGPIKHEGCC },
+            |m: &mut RebattleByClientCsNotify| { &mut m.BLGPIKHEGCC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RebattleByClientCsNotify>(
             "RebattleByClientCsNotify",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for RebattleByClientCsNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ONJPOPFPEFH)?;
+                56 => {
+                    self.AHOLPNCMJOL = is.read_enum_or_unknown()?;
                 },
-                80 => {
-                    self.AJMDFDMDMAN = is.read_enum_or_unknown()?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BLGPIKHEGCC)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,12 +98,12 @@ impl ::protobuf::Message for RebattleByClientCsNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.ONJPOPFPEFH.as_ref() {
+        if self.AHOLPNCMJOL != ::protobuf::EnumOrUnknown::new(super::FKFMMNOCIPK::FKFMMNOCIPK::REBATTLE_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(7, self.AHOLPNCMJOL.value());
+        }
+        if let Some(v) = self.BLGPIKHEGCC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.AJMDFDMDMAN != ::protobuf::EnumOrUnknown::new(super::OELNNDOBEKP::OELNNDOBEKP::REBATTLE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(10, self.AJMDFDMDMAN.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for RebattleByClientCsNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.ONJPOPFPEFH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if self.AHOLPNCMJOL != ::protobuf::EnumOrUnknown::new(super::FKFMMNOCIPK::FKFMMNOCIPK::REBATTLE_TYPE_NONE) {
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.AHOLPNCMJOL))?;
         }
-        if self.AJMDFDMDMAN != ::protobuf::EnumOrUnknown::new(super::OELNNDOBEKP::OELNNDOBEKP::REBATTLE_TYPE_NONE) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.AJMDFDMDMAN))?;
+        if let Some(v) = self.BLGPIKHEGCC.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for RebattleByClientCsNotify {
     }
 
     fn clear(&mut self) {
-        self.ONJPOPFPEFH.clear();
-        self.AJMDFDMDMAN = ::protobuf::EnumOrUnknown::new(super::OELNNDOBEKP::OELNNDOBEKP::REBATTLE_TYPE_NONE);
+        self.AHOLPNCMJOL = ::protobuf::EnumOrUnknown::new(super::FKFMMNOCIPK::FKFMMNOCIPK::REBATTLE_TYPE_NONE);
+        self.BLGPIKHEGCC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RebattleByClientCsNotify {
         static instance: RebattleByClientCsNotify = RebattleByClientCsNotify {
-            ONJPOPFPEFH: ::protobuf::MessageField::none(),
-            AJMDFDMDMAN: ::protobuf::EnumOrUnknown::from_i32(0),
+            AHOLPNCMJOL: ::protobuf::EnumOrUnknown::from_i32(0),
+            BLGPIKHEGCC: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for RebattleByClientCsNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eRebattleByClientCsNotify.proto\x1a\x11KMAHOCEKPAK.proto\x1a\x11OEL\
-    NNDOBEKP.proto\"z\n\x18RebattleByClientCsNotify\x12.\n\x0bONJPOPFPEFH\
-    \x18\x07\x20\x01(\x0b2\x0c.KMAHOCEKPAKR\x0bONJPOPFPEFH\x12.\n\x0bAJMDFDM\
-    DMAN\x18\n\x20\x01(\x0e2\x0c.OELNNDOBEKPR\x0bAJMDFDMDMANb\x06proto3\
+    \n\x1eRebattleByClientCsNotify.proto\x1a\x11DEDFMIPCCEC.proto\x1a\x11FKF\
+    MMNOCIPK.proto\"z\n\x18RebattleByClientCsNotify\x12.\n\x0bAHOLPNCMJOL\
+    \x18\x07\x20\x01(\x0e2\x0c.FKFMMNOCIPKR\x0bAHOLPNCMJOL\x12.\n\x0bBLGPIKH\
+    EGCC\x18\x01\x20\x01(\x0b2\x0c.DEDFMIPCCECR\x0bBLGPIKHEGCCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,8 +188,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::KMAHOCEKPAK::file_descriptor().clone());
-            deps.push(super::OELNNDOBEKP::file_descriptor().clone());
+            deps.push(super::DEDFMIPCCEC::file_descriptor().clone());
+            deps.push(super::FKFMMNOCIPK::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RebattleByClientCsNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

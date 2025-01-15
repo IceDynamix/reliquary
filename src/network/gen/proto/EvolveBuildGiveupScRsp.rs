@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EvolveBuildGiveupScRsp {
     // message fields
-    // @@protoc_insertion_point(field:EvolveBuildGiveupScRsp.BCBJPFIKPHG)
-    pub BCBJPFIKPHG: ::protobuf::MessageField<super::EvolveBuildLevelInfo::EvolveBuildLevelInfo>,
-    // @@protoc_insertion_point(field:EvolveBuildGiveupScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:EvolveBuildGiveupScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:EvolveBuildGiveupScRsp.DNCPGOIAJME)
+    pub DNCPGOIAJME: ::protobuf::MessageField<super::EvolveBuildLevelInfo::EvolveBuildLevelInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:EvolveBuildGiveupScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl EvolveBuildGiveupScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EvolveBuildLevelInfo::EvolveBuildLevelInfo>(
-            "BCBJPFIKPHG",
-            |m: &EvolveBuildGiveupScRsp| { &m.BCBJPFIKPHG },
-            |m: &mut EvolveBuildGiveupScRsp| { &mut m.BCBJPFIKPHG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &EvolveBuildGiveupScRsp| { &m.ADADHIHDHJC },
-            |m: &mut EvolveBuildGiveupScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &EvolveBuildGiveupScRsp| { &m.retcode },
+            |m: &mut EvolveBuildGiveupScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EvolveBuildLevelInfo::EvolveBuildLevelInfo>(
+            "DNCPGOIAJME",
+            |m: &EvolveBuildGiveupScRsp| { &m.DNCPGOIAJME },
+            |m: &mut EvolveBuildGiveupScRsp| { &mut m.DNCPGOIAJME },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EvolveBuildGiveupScRsp>(
             "EvolveBuildGiveupScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for EvolveBuildGiveupScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BCBJPFIKPHG)?;
+                72 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                32 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DNCPGOIAJME)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,12 +98,12 @@ impl ::protobuf::Message for EvolveBuildGiveupScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.BCBJPFIKPHG.as_ref() {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+        }
+        if let Some(v) = self.DNCPGOIAJME.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.ADADHIHDHJC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for EvolveBuildGiveupScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.BCBJPFIKPHG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(9, self.retcode)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(4, self.ADADHIHDHJC)?;
+        if let Some(v) = self.DNCPGOIAJME.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for EvolveBuildGiveupScRsp {
     }
 
     fn clear(&mut self) {
-        self.BCBJPFIKPHG.clear();
-        self.ADADHIHDHJC = 0;
+        self.retcode = 0;
+        self.DNCPGOIAJME.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EvolveBuildGiveupScRsp {
         static instance: EvolveBuildGiveupScRsp = EvolveBuildGiveupScRsp {
-            BCBJPFIKPHG: ::protobuf::MessageField::none(),
-            ADADHIHDHJC: 0,
+            retcode: 0,
+            DNCPGOIAJME: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildGiveupScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cEvolveBuildGiveupScRsp.proto\x1a\x1aEvolveBuildLevelInfo.proto\"s\
-    \n\x16EvolveBuildGiveupScRsp\x127\n\x0bBCBJPFIKPHG\x18\x0e\x20\x01(\x0b2\
-    \x15.EvolveBuildLevelInfoR\x0bBCBJPFIKPHG\x12\x20\n\x0bADADHIHDHJC\x18\
-    \x04\x20\x01(\rR\x0bADADHIHDHJCb\x06proto3\
+    \n\x1cEvolveBuildGiveupScRsp.proto\x1a\x1aEvolveBuildLevelInfo.proto\"k\
+    \n\x16EvolveBuildGiveupScRsp\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07r\
+    etcode\x127\n\x0bDNCPGOIAJME\x18\x02\x20\x01(\x0b2\x15.EvolveBuildLevelI\
+    nfoR\x0bDNCPGOIAJMEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

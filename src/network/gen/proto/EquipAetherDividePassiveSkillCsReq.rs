@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EquipAetherDividePassiveSkillCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EquipAetherDividePassiveSkillCsReq.GBEABPKGNHD)
-    pub GBEABPKGNHD: u32,
-    // @@protoc_insertion_point(field:EquipAetherDividePassiveSkillCsReq.LGBJLFEMFOL)
-    pub LGBJLFEMFOL: u32,
-    // @@protoc_insertion_point(field:EquipAetherDividePassiveSkillCsReq.BFMEPOPIGOL)
-    pub BFMEPOPIGOL: u32,
+    // @@protoc_insertion_point(field:EquipAetherDividePassiveSkillCsReq.HEKJJCLEAEH)
+    pub HEKJJCLEAEH: u32,
+    // @@protoc_insertion_point(field:EquipAetherDividePassiveSkillCsReq.AKMIHHHJPON)
+    pub AKMIHHHJPON: u32,
+    // @@protoc_insertion_point(field:EquipAetherDividePassiveSkillCsReq.FCHKEAGLMPH)
+    pub FCHKEAGLMPH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EquipAetherDividePassiveSkillCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl EquipAetherDividePassiveSkillCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GBEABPKGNHD",
-            |m: &EquipAetherDividePassiveSkillCsReq| { &m.GBEABPKGNHD },
-            |m: &mut EquipAetherDividePassiveSkillCsReq| { &mut m.GBEABPKGNHD },
+            "HEKJJCLEAEH",
+            |m: &EquipAetherDividePassiveSkillCsReq| { &m.HEKJJCLEAEH },
+            |m: &mut EquipAetherDividePassiveSkillCsReq| { &mut m.HEKJJCLEAEH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LGBJLFEMFOL",
-            |m: &EquipAetherDividePassiveSkillCsReq| { &m.LGBJLFEMFOL },
-            |m: &mut EquipAetherDividePassiveSkillCsReq| { &mut m.LGBJLFEMFOL },
+            "AKMIHHHJPON",
+            |m: &EquipAetherDividePassiveSkillCsReq| { &m.AKMIHHHJPON },
+            |m: &mut EquipAetherDividePassiveSkillCsReq| { &mut m.AKMIHHHJPON },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BFMEPOPIGOL",
-            |m: &EquipAetherDividePassiveSkillCsReq| { &m.BFMEPOPIGOL },
-            |m: &mut EquipAetherDividePassiveSkillCsReq| { &mut m.BFMEPOPIGOL },
+            "FCHKEAGLMPH",
+            |m: &EquipAetherDividePassiveSkillCsReq| { &m.FCHKEAGLMPH },
+            |m: &mut EquipAetherDividePassiveSkillCsReq| { &mut m.FCHKEAGLMPH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EquipAetherDividePassiveSkillCsReq>(
             "EquipAetherDividePassiveSkillCsReq",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for EquipAetherDividePassiveSkillCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.GBEABPKGNHD = is.read_uint32()?;
+                32 => {
+                    self.HEKJJCLEAEH = is.read_uint32()?;
                 },
-                24 => {
-                    self.LGBJLFEMFOL = is.read_uint32()?;
+                48 => {
+                    self.AKMIHHHJPON = is.read_uint32()?;
                 },
-                96 => {
-                    self.BFMEPOPIGOL = is.read_uint32()?;
+                72 => {
+                    self.FCHKEAGLMPH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for EquipAetherDividePassiveSkillCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GBEABPKGNHD != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.GBEABPKGNHD);
+        if self.HEKJJCLEAEH != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.HEKJJCLEAEH);
         }
-        if self.LGBJLFEMFOL != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.LGBJLFEMFOL);
+        if self.AKMIHHHJPON != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.AKMIHHHJPON);
         }
-        if self.BFMEPOPIGOL != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.BFMEPOPIGOL);
+        if self.FCHKEAGLMPH != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.FCHKEAGLMPH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for EquipAetherDividePassiveSkillCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GBEABPKGNHD != 0 {
-            os.write_uint32(1, self.GBEABPKGNHD)?;
+        if self.HEKJJCLEAEH != 0 {
+            os.write_uint32(4, self.HEKJJCLEAEH)?;
         }
-        if self.LGBJLFEMFOL != 0 {
-            os.write_uint32(3, self.LGBJLFEMFOL)?;
+        if self.AKMIHHHJPON != 0 {
+            os.write_uint32(6, self.AKMIHHHJPON)?;
         }
-        if self.BFMEPOPIGOL != 0 {
-            os.write_uint32(12, self.BFMEPOPIGOL)?;
+        if self.FCHKEAGLMPH != 0 {
+            os.write_uint32(9, self.FCHKEAGLMPH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for EquipAetherDividePassiveSkillCsReq {
     }
 
     fn clear(&mut self) {
-        self.GBEABPKGNHD = 0;
-        self.LGBJLFEMFOL = 0;
-        self.BFMEPOPIGOL = 0;
+        self.HEKJJCLEAEH = 0;
+        self.AKMIHHHJPON = 0;
+        self.FCHKEAGLMPH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EquipAetherDividePassiveSkillCsReq {
         static instance: EquipAetherDividePassiveSkillCsReq = EquipAetherDividePassiveSkillCsReq {
-            GBEABPKGNHD: 0,
-            LGBJLFEMFOL: 0,
-            BFMEPOPIGOL: 0,
+            HEKJJCLEAEH: 0,
+            AKMIHHHJPON: 0,
+            FCHKEAGLMPH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for EquipAetherDividePassiveSkillCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(EquipAetherDividePassiveSkillCsReq.proto\"\x8a\x01\n\"EquipAetherDivi\
-    dePassiveSkillCsReq\x12\x20\n\x0bGBEABPKGNHD\x18\x01\x20\x01(\rR\x0bGBEA\
-    BPKGNHD\x12\x20\n\x0bLGBJLFEMFOL\x18\x03\x20\x01(\rR\x0bLGBJLFEMFOL\x12\
-    \x20\n\x0bBFMEPOPIGOL\x18\x0c\x20\x01(\rR\x0bBFMEPOPIGOLb\x06proto3\
+    dePassiveSkillCsReq\x12\x20\n\x0bHEKJJCLEAEH\x18\x04\x20\x01(\rR\x0bHEKJ\
+    JCLEAEH\x12\x20\n\x0bAKMIHHHJPON\x18\x06\x20\x01(\rR\x0bAKMIHHHJPON\x12\
+    \x20\n\x0bFCHKEAGLMPH\x18\t\x20\x01(\rR\x0bFCHKEAGLMPHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

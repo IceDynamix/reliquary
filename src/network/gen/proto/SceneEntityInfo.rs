@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneEntityInfo {
     // message fields
-    // @@protoc_insertion_point(field:SceneEntityInfo.inst_id)
-    pub inst_id: u32,
-    // @@protoc_insertion_point(field:SceneEntityInfo.group_id)
-    pub group_id: u32,
     // @@protoc_insertion_point(field:SceneEntityInfo.entity_id)
     pub entity_id: u32,
+    // @@protoc_insertion_point(field:SceneEntityInfo.group_id)
+    pub group_id: u32,
+    // @@protoc_insertion_point(field:SceneEntityInfo.inst_id)
+    pub inst_id: u32,
     // @@protoc_insertion_point(field:SceneEntityInfo.motion)
-    pub motion: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
+    pub motion: ::protobuf::MessageField<super::LDFPBJIHOPD::LDFPBJIHOPD>,
     // message oneof groups
-    pub entity: ::std::option::Option<scene_entity_info::Entity>,
+    pub entity_case: ::std::option::Option<scene_entity_info::Entity_case>,
     // special fields
     // @@protoc_insertion_point(special_field:SceneEntityInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,293 +55,258 @@ impl SceneEntityInfo {
         ::std::default::Default::default()
     }
 
-    // .SceneActorInfo actor = 9;
+    // .GJFAEDDOFHJ actor = 11;
 
-    pub fn actor(&self) -> &super::SceneActorInfo::SceneActorInfo {
-        match self.entity {
-            ::std::option::Option::Some(scene_entity_info::Entity::Actor(ref v)) => v,
-            _ => <super::SceneActorInfo::SceneActorInfo as ::protobuf::Message>::default_instance(),
+    pub fn actor(&self) -> &super::GJFAEDDOFHJ::GJFAEDDOFHJ {
+        match self.entity_case {
+            ::std::option::Option::Some(scene_entity_info::Entity_case::Actor(ref v)) => v,
+            _ => <super::GJFAEDDOFHJ::GJFAEDDOFHJ as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_actor(&mut self) {
-        self.entity = ::std::option::Option::None;
+        self.entity_case = ::std::option::Option::None;
     }
 
     pub fn has_actor(&self) -> bool {
-        match self.entity {
-            ::std::option::Option::Some(scene_entity_info::Entity::Actor(..)) => true,
+        match self.entity_case {
+            ::std::option::Option::Some(scene_entity_info::Entity_case::Actor(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_actor(&mut self, v: super::SceneActorInfo::SceneActorInfo) {
-        self.entity = ::std::option::Option::Some(scene_entity_info::Entity::Actor(v))
+    pub fn set_actor(&mut self, v: super::GJFAEDDOFHJ::GJFAEDDOFHJ) {
+        self.entity_case = ::std::option::Option::Some(scene_entity_info::Entity_case::Actor(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_actor(&mut self) -> &mut super::SceneActorInfo::SceneActorInfo {
-        if let ::std::option::Option::Some(scene_entity_info::Entity::Actor(_)) = self.entity {
+    pub fn mut_actor(&mut self) -> &mut super::GJFAEDDOFHJ::GJFAEDDOFHJ {
+        if let ::std::option::Option::Some(scene_entity_info::Entity_case::Actor(_)) = self.entity_case {
         } else {
-            self.entity = ::std::option::Option::Some(scene_entity_info::Entity::Actor(super::SceneActorInfo::SceneActorInfo::new()));
+            self.entity_case = ::std::option::Option::Some(scene_entity_info::Entity_case::Actor(super::GJFAEDDOFHJ::GJFAEDDOFHJ::new()));
         }
-        match self.entity {
-            ::std::option::Option::Some(scene_entity_info::Entity::Actor(ref mut v)) => v,
+        match self.entity_case {
+            ::std::option::Option::Some(scene_entity_info::Entity_case::Actor(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_actor(&mut self) -> super::SceneActorInfo::SceneActorInfo {
+    pub fn take_actor(&mut self) -> super::GJFAEDDOFHJ::GJFAEDDOFHJ {
         if self.has_actor() {
-            match self.entity.take() {
-                ::std::option::Option::Some(scene_entity_info::Entity::Actor(v)) => v,
+            match self.entity_case.take() {
+                ::std::option::Option::Some(scene_entity_info::Entity_case::Actor(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::SceneActorInfo::SceneActorInfo::new()
+            super::GJFAEDDOFHJ::GJFAEDDOFHJ::new()
         }
     }
 
-    // .SceneNpcMonsterInfo npc_monster = 13;
+    // .EPEFCDLMNLO npc_monster = 9;
 
-    pub fn npc_monster(&self) -> &super::SceneNpcMonsterInfo::SceneNpcMonsterInfo {
-        match self.entity {
-            ::std::option::Option::Some(scene_entity_info::Entity::NpcMonster(ref v)) => v,
-            _ => <super::SceneNpcMonsterInfo::SceneNpcMonsterInfo as ::protobuf::Message>::default_instance(),
+    pub fn npc_monster(&self) -> &super::EPEFCDLMNLO::EPEFCDLMNLO {
+        match self.entity_case {
+            ::std::option::Option::Some(scene_entity_info::Entity_case::NpcMonster(ref v)) => v,
+            _ => <super::EPEFCDLMNLO::EPEFCDLMNLO as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_npc_monster(&mut self) {
-        self.entity = ::std::option::Option::None;
+        self.entity_case = ::std::option::Option::None;
     }
 
     pub fn has_npc_monster(&self) -> bool {
-        match self.entity {
-            ::std::option::Option::Some(scene_entity_info::Entity::NpcMonster(..)) => true,
+        match self.entity_case {
+            ::std::option::Option::Some(scene_entity_info::Entity_case::NpcMonster(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_npc_monster(&mut self, v: super::SceneNpcMonsterInfo::SceneNpcMonsterInfo) {
-        self.entity = ::std::option::Option::Some(scene_entity_info::Entity::NpcMonster(v))
+    pub fn set_npc_monster(&mut self, v: super::EPEFCDLMNLO::EPEFCDLMNLO) {
+        self.entity_case = ::std::option::Option::Some(scene_entity_info::Entity_case::NpcMonster(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_npc_monster(&mut self) -> &mut super::SceneNpcMonsterInfo::SceneNpcMonsterInfo {
-        if let ::std::option::Option::Some(scene_entity_info::Entity::NpcMonster(_)) = self.entity {
+    pub fn mut_npc_monster(&mut self) -> &mut super::EPEFCDLMNLO::EPEFCDLMNLO {
+        if let ::std::option::Option::Some(scene_entity_info::Entity_case::NpcMonster(_)) = self.entity_case {
         } else {
-            self.entity = ::std::option::Option::Some(scene_entity_info::Entity::NpcMonster(super::SceneNpcMonsterInfo::SceneNpcMonsterInfo::new()));
+            self.entity_case = ::std::option::Option::Some(scene_entity_info::Entity_case::NpcMonster(super::EPEFCDLMNLO::EPEFCDLMNLO::new()));
         }
-        match self.entity {
-            ::std::option::Option::Some(scene_entity_info::Entity::NpcMonster(ref mut v)) => v,
+        match self.entity_case {
+            ::std::option::Option::Some(scene_entity_info::Entity_case::NpcMonster(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_npc_monster(&mut self) -> super::SceneNpcMonsterInfo::SceneNpcMonsterInfo {
+    pub fn take_npc_monster(&mut self) -> super::EPEFCDLMNLO::EPEFCDLMNLO {
         if self.has_npc_monster() {
-            match self.entity.take() {
-                ::std::option::Option::Some(scene_entity_info::Entity::NpcMonster(v)) => v,
+            match self.entity_case.take() {
+                ::std::option::Option::Some(scene_entity_info::Entity_case::NpcMonster(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::SceneNpcMonsterInfo::SceneNpcMonsterInfo::new()
+            super::EPEFCDLMNLO::EPEFCDLMNLO::new()
         }
     }
 
-    // .SceneNpcInfo npc = 5;
+    // .CNHICFOOMPL npc = 13;
 
-    pub fn npc(&self) -> &super::SceneNpcInfo::SceneNpcInfo {
-        match self.entity {
-            ::std::option::Option::Some(scene_entity_info::Entity::Npc(ref v)) => v,
-            _ => <super::SceneNpcInfo::SceneNpcInfo as ::protobuf::Message>::default_instance(),
+    pub fn npc(&self) -> &super::CNHICFOOMPL::CNHICFOOMPL {
+        match self.entity_case {
+            ::std::option::Option::Some(scene_entity_info::Entity_case::Npc(ref v)) => v,
+            _ => <super::CNHICFOOMPL::CNHICFOOMPL as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_npc(&mut self) {
-        self.entity = ::std::option::Option::None;
+        self.entity_case = ::std::option::Option::None;
     }
 
     pub fn has_npc(&self) -> bool {
-        match self.entity {
-            ::std::option::Option::Some(scene_entity_info::Entity::Npc(..)) => true,
+        match self.entity_case {
+            ::std::option::Option::Some(scene_entity_info::Entity_case::Npc(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_npc(&mut self, v: super::SceneNpcInfo::SceneNpcInfo) {
-        self.entity = ::std::option::Option::Some(scene_entity_info::Entity::Npc(v))
+    pub fn set_npc(&mut self, v: super::CNHICFOOMPL::CNHICFOOMPL) {
+        self.entity_case = ::std::option::Option::Some(scene_entity_info::Entity_case::Npc(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_npc(&mut self) -> &mut super::SceneNpcInfo::SceneNpcInfo {
-        if let ::std::option::Option::Some(scene_entity_info::Entity::Npc(_)) = self.entity {
+    pub fn mut_npc(&mut self) -> &mut super::CNHICFOOMPL::CNHICFOOMPL {
+        if let ::std::option::Option::Some(scene_entity_info::Entity_case::Npc(_)) = self.entity_case {
         } else {
-            self.entity = ::std::option::Option::Some(scene_entity_info::Entity::Npc(super::SceneNpcInfo::SceneNpcInfo::new()));
+            self.entity_case = ::std::option::Option::Some(scene_entity_info::Entity_case::Npc(super::CNHICFOOMPL::CNHICFOOMPL::new()));
         }
-        match self.entity {
-            ::std::option::Option::Some(scene_entity_info::Entity::Npc(ref mut v)) => v,
+        match self.entity_case {
+            ::std::option::Option::Some(scene_entity_info::Entity_case::Npc(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_npc(&mut self) -> super::SceneNpcInfo::SceneNpcInfo {
+    pub fn take_npc(&mut self) -> super::CNHICFOOMPL::CNHICFOOMPL {
         if self.has_npc() {
-            match self.entity.take() {
-                ::std::option::Option::Some(scene_entity_info::Entity::Npc(v)) => v,
+            match self.entity_case.take() {
+                ::std::option::Option::Some(scene_entity_info::Entity_case::Npc(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::SceneNpcInfo::SceneNpcInfo::new()
+            super::CNHICFOOMPL::CNHICFOOMPL::new()
         }
     }
 
-    // .ScenePropInfo prop = 7;
+    // .DEEMDJICKGG prop = 7;
 
-    pub fn prop(&self) -> &super::ScenePropInfo::ScenePropInfo {
-        match self.entity {
-            ::std::option::Option::Some(scene_entity_info::Entity::Prop(ref v)) => v,
-            _ => <super::ScenePropInfo::ScenePropInfo as ::protobuf::Message>::default_instance(),
+    pub fn prop(&self) -> &super::DEEMDJICKGG::DEEMDJICKGG {
+        match self.entity_case {
+            ::std::option::Option::Some(scene_entity_info::Entity_case::Prop(ref v)) => v,
+            _ => <super::DEEMDJICKGG::DEEMDJICKGG as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_prop(&mut self) {
-        self.entity = ::std::option::Option::None;
+        self.entity_case = ::std::option::Option::None;
     }
 
     pub fn has_prop(&self) -> bool {
-        match self.entity {
-            ::std::option::Option::Some(scene_entity_info::Entity::Prop(..)) => true,
+        match self.entity_case {
+            ::std::option::Option::Some(scene_entity_info::Entity_case::Prop(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_prop(&mut self, v: super::ScenePropInfo::ScenePropInfo) {
-        self.entity = ::std::option::Option::Some(scene_entity_info::Entity::Prop(v))
+    pub fn set_prop(&mut self, v: super::DEEMDJICKGG::DEEMDJICKGG) {
+        self.entity_case = ::std::option::Option::Some(scene_entity_info::Entity_case::Prop(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_prop(&mut self) -> &mut super::ScenePropInfo::ScenePropInfo {
-        if let ::std::option::Option::Some(scene_entity_info::Entity::Prop(_)) = self.entity {
+    pub fn mut_prop(&mut self) -> &mut super::DEEMDJICKGG::DEEMDJICKGG {
+        if let ::std::option::Option::Some(scene_entity_info::Entity_case::Prop(_)) = self.entity_case {
         } else {
-            self.entity = ::std::option::Option::Some(scene_entity_info::Entity::Prop(super::ScenePropInfo::ScenePropInfo::new()));
+            self.entity_case = ::std::option::Option::Some(scene_entity_info::Entity_case::Prop(super::DEEMDJICKGG::DEEMDJICKGG::new()));
         }
-        match self.entity {
-            ::std::option::Option::Some(scene_entity_info::Entity::Prop(ref mut v)) => v,
+        match self.entity_case {
+            ::std::option::Option::Some(scene_entity_info::Entity_case::Prop(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_prop(&mut self) -> super::ScenePropInfo::ScenePropInfo {
+    pub fn take_prop(&mut self) -> super::DEEMDJICKGG::DEEMDJICKGG {
         if self.has_prop() {
-            match self.entity.take() {
-                ::std::option::Option::Some(scene_entity_info::Entity::Prop(v)) => v,
+            match self.entity_case.take() {
+                ::std::option::Option::Some(scene_entity_info::Entity_case::Prop(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::ScenePropInfo::ScenePropInfo::new()
+            super::DEEMDJICKGG::DEEMDJICKGG::new()
         }
     }
 
-    // .SceneSummonUnitInfo summon_unit = 3;
+    // .IFGNFCLAIGM summon_unit = 4;
 
-    pub fn summon_unit(&self) -> &super::SceneSummonUnitInfo::SceneSummonUnitInfo {
-        match self.entity {
-            ::std::option::Option::Some(scene_entity_info::Entity::SummonUnit(ref v)) => v,
-            _ => <super::SceneSummonUnitInfo::SceneSummonUnitInfo as ::protobuf::Message>::default_instance(),
+    pub fn summon_unit(&self) -> &super::IFGNFCLAIGM::IFGNFCLAIGM {
+        match self.entity_case {
+            ::std::option::Option::Some(scene_entity_info::Entity_case::SummonUnit(ref v)) => v,
+            _ => <super::IFGNFCLAIGM::IFGNFCLAIGM as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_summon_unit(&mut self) {
-        self.entity = ::std::option::Option::None;
+        self.entity_case = ::std::option::Option::None;
     }
 
     pub fn has_summon_unit(&self) -> bool {
-        match self.entity {
-            ::std::option::Option::Some(scene_entity_info::Entity::SummonUnit(..)) => true,
+        match self.entity_case {
+            ::std::option::Option::Some(scene_entity_info::Entity_case::SummonUnit(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_summon_unit(&mut self, v: super::SceneSummonUnitInfo::SceneSummonUnitInfo) {
-        self.entity = ::std::option::Option::Some(scene_entity_info::Entity::SummonUnit(v))
+    pub fn set_summon_unit(&mut self, v: super::IFGNFCLAIGM::IFGNFCLAIGM) {
+        self.entity_case = ::std::option::Option::Some(scene_entity_info::Entity_case::SummonUnit(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_summon_unit(&mut self) -> &mut super::SceneSummonUnitInfo::SceneSummonUnitInfo {
-        if let ::std::option::Option::Some(scene_entity_info::Entity::SummonUnit(_)) = self.entity {
+    pub fn mut_summon_unit(&mut self) -> &mut super::IFGNFCLAIGM::IFGNFCLAIGM {
+        if let ::std::option::Option::Some(scene_entity_info::Entity_case::SummonUnit(_)) = self.entity_case {
         } else {
-            self.entity = ::std::option::Option::Some(scene_entity_info::Entity::SummonUnit(super::SceneSummonUnitInfo::SceneSummonUnitInfo::new()));
+            self.entity_case = ::std::option::Option::Some(scene_entity_info::Entity_case::SummonUnit(super::IFGNFCLAIGM::IFGNFCLAIGM::new()));
         }
-        match self.entity {
-            ::std::option::Option::Some(scene_entity_info::Entity::SummonUnit(ref mut v)) => v,
+        match self.entity_case {
+            ::std::option::Option::Some(scene_entity_info::Entity_case::SummonUnit(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_summon_unit(&mut self) -> super::SceneSummonUnitInfo::SceneSummonUnitInfo {
+    pub fn take_summon_unit(&mut self) -> super::IFGNFCLAIGM::IFGNFCLAIGM {
         if self.has_summon_unit() {
-            match self.entity.take() {
-                ::std::option::Option::Some(scene_entity_info::Entity::SummonUnit(v)) => v,
+            match self.entity_case.take() {
+                ::std::option::Option::Some(scene_entity_info::Entity_case::SummonUnit(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::SceneSummonUnitInfo::SceneSummonUnitInfo::new()
+            super::IFGNFCLAIGM::IFGNFCLAIGM::new()
         }
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::SceneActorInfo::SceneActorInfo>(
-            "actor",
-            SceneEntityInfo::has_actor,
-            SceneEntityInfo::actor,
-            SceneEntityInfo::mut_actor,
-            SceneEntityInfo::set_actor,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::SceneNpcMonsterInfo::SceneNpcMonsterInfo>(
-            "npc_monster",
-            SceneEntityInfo::has_npc_monster,
-            SceneEntityInfo::npc_monster,
-            SceneEntityInfo::mut_npc_monster,
-            SceneEntityInfo::set_npc_monster,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::SceneNpcInfo::SceneNpcInfo>(
-            "npc",
-            SceneEntityInfo::has_npc,
-            SceneEntityInfo::npc,
-            SceneEntityInfo::mut_npc,
-            SceneEntityInfo::set_npc,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ScenePropInfo::ScenePropInfo>(
-            "prop",
-            SceneEntityInfo::has_prop,
-            SceneEntityInfo::prop,
-            SceneEntityInfo::mut_prop,
-            SceneEntityInfo::set_prop,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::SceneSummonUnitInfo::SceneSummonUnitInfo>(
-            "summon_unit",
-            SceneEntityInfo::has_summon_unit,
-            SceneEntityInfo::summon_unit,
-            SceneEntityInfo::mut_summon_unit,
-            SceneEntityInfo::set_summon_unit,
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "inst_id",
-            |m: &SceneEntityInfo| { &m.inst_id },
-            |m: &mut SceneEntityInfo| { &mut m.inst_id },
+            "entity_id",
+            |m: &SceneEntityInfo| { &m.entity_id },
+            |m: &mut SceneEntityInfo| { &mut m.entity_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_id",
@@ -349,16 +314,51 @@ impl SceneEntityInfo {
             |m: &mut SceneEntityInfo| { &mut m.group_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "entity_id",
-            |m: &SceneEntityInfo| { &m.entity_id },
-            |m: &mut SceneEntityInfo| { &mut m.entity_id },
+            "inst_id",
+            |m: &SceneEntityInfo| { &m.inst_id },
+            |m: &mut SceneEntityInfo| { &mut m.inst_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfo::MotionInfo>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LDFPBJIHOPD::LDFPBJIHOPD>(
             "motion",
             |m: &SceneEntityInfo| { &m.motion },
             |m: &mut SceneEntityInfo| { &mut m.motion },
         ));
-        oneofs.push(scene_entity_info::Entity::generated_oneof_descriptor_data());
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GJFAEDDOFHJ::GJFAEDDOFHJ>(
+            "actor",
+            SceneEntityInfo::has_actor,
+            SceneEntityInfo::actor,
+            SceneEntityInfo::mut_actor,
+            SceneEntityInfo::set_actor,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::EPEFCDLMNLO::EPEFCDLMNLO>(
+            "npc_monster",
+            SceneEntityInfo::has_npc_monster,
+            SceneEntityInfo::npc_monster,
+            SceneEntityInfo::mut_npc_monster,
+            SceneEntityInfo::set_npc_monster,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CNHICFOOMPL::CNHICFOOMPL>(
+            "npc",
+            SceneEntityInfo::has_npc,
+            SceneEntityInfo::npc,
+            SceneEntityInfo::mut_npc,
+            SceneEntityInfo::set_npc,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::DEEMDJICKGG::DEEMDJICKGG>(
+            "prop",
+            SceneEntityInfo::has_prop,
+            SceneEntityInfo::prop,
+            SceneEntityInfo::mut_prop,
+            SceneEntityInfo::set_prop,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IFGNFCLAIGM::IFGNFCLAIGM>(
+            "summon_unit",
+            SceneEntityInfo::has_summon_unit,
+            SceneEntityInfo::summon_unit,
+            SceneEntityInfo::mut_summon_unit,
+            SceneEntityInfo::set_summon_unit,
+        ));
+        oneofs.push(scene_entity_info::Entity_case::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SceneEntityInfo>(
             "SceneEntityInfo",
             fields,
@@ -377,32 +377,32 @@ impl ::protobuf::Message for SceneEntityInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    self.entity = ::std::option::Option::Some(scene_entity_info::Entity::Actor(is.read_message()?));
-                },
-                106 => {
-                    self.entity = ::std::option::Option::Some(scene_entity_info::Entity::NpcMonster(is.read_message()?));
-                },
-                42 => {
-                    self.entity = ::std::option::Option::Some(scene_entity_info::Entity::Npc(is.read_message()?));
-                },
-                58 => {
-                    self.entity = ::std::option::Option::Some(scene_entity_info::Entity::Prop(is.read_message()?));
-                },
-                26 => {
-                    self.entity = ::std::option::Option::Some(scene_entity_info::Entity::SummonUnit(is.read_message()?));
-                },
-                32 => {
-                    self.inst_id = is.read_uint32()?;
-                },
-                96 => {
-                    self.group_id = is.read_uint32()?;
-                },
-                88 => {
+                16 => {
                     self.entity_id = is.read_uint32()?;
                 },
-                114 => {
+                112 => {
+                    self.group_id = is.read_uint32()?;
+                },
+                48 => {
+                    self.inst_id = is.read_uint32()?;
+                },
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
+                },
+                90 => {
+                    self.entity_case = ::std::option::Option::Some(scene_entity_info::Entity_case::Actor(is.read_message()?));
+                },
+                74 => {
+                    self.entity_case = ::std::option::Option::Some(scene_entity_info::Entity_case::NpcMonster(is.read_message()?));
+                },
+                106 => {
+                    self.entity_case = ::std::option::Option::Some(scene_entity_info::Entity_case::Npc(is.read_message()?));
+                },
+                58 => {
+                    self.entity_case = ::std::option::Option::Some(scene_entity_info::Entity_case::Prop(is.read_message()?));
+                },
+                34 => {
+                    self.entity_case = ::std::option::Option::Some(scene_entity_info::Entity_case::SummonUnit(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -416,38 +416,38 @@ impl ::protobuf::Message for SceneEntityInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.inst_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.inst_id);
+        if self.entity_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.entity_id);
         }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.group_id);
         }
-        if self.entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.entity_id);
+        if self.inst_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.inst_id);
         }
         if let Some(v) = self.motion.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let ::std::option::Option::Some(ref v) = self.entity {
+        if let ::std::option::Option::Some(ref v) = self.entity_case {
             match v {
-                &scene_entity_info::Entity::Actor(ref v) => {
+                &scene_entity_info::Entity_case::Actor(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &scene_entity_info::Entity::NpcMonster(ref v) => {
+                &scene_entity_info::Entity_case::NpcMonster(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &scene_entity_info::Entity::Npc(ref v) => {
+                &scene_entity_info::Entity_case::Npc(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &scene_entity_info::Entity::Prop(ref v) => {
+                &scene_entity_info::Entity_case::Prop(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &scene_entity_info::Entity::SummonUnit(ref v) => {
+                &scene_entity_info::Entity_case::SummonUnit(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -459,34 +459,34 @@ impl ::protobuf::Message for SceneEntityInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.inst_id != 0 {
-            os.write_uint32(4, self.inst_id)?;
+        if self.entity_id != 0 {
+            os.write_uint32(2, self.entity_id)?;
         }
         if self.group_id != 0 {
-            os.write_uint32(12, self.group_id)?;
+            os.write_uint32(14, self.group_id)?;
         }
-        if self.entity_id != 0 {
-            os.write_uint32(11, self.entity_id)?;
+        if self.inst_id != 0 {
+            os.write_uint32(6, self.inst_id)?;
         }
         if let Some(v) = self.motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.entity {
+        if let ::std::option::Option::Some(ref v) = self.entity_case {
             match v {
-                &scene_entity_info::Entity::Actor(ref v) => {
+                &scene_entity_info::Entity_case::Actor(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                },
+                &scene_entity_info::Entity_case::NpcMonster(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
                 },
-                &scene_entity_info::Entity::NpcMonster(ref v) => {
+                &scene_entity_info::Entity_case::Npc(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
-                &scene_entity_info::Entity::Npc(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-                },
-                &scene_entity_info::Entity::Prop(ref v) => {
+                &scene_entity_info::Entity_case::Prop(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
-                &scene_entity_info::Entity::SummonUnit(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                &scene_entity_info::Entity_case::SummonUnit(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
                 },
             };
         }
@@ -507,25 +507,25 @@ impl ::protobuf::Message for SceneEntityInfo {
     }
 
     fn clear(&mut self) {
-        self.entity = ::std::option::Option::None;
-        self.entity = ::std::option::Option::None;
-        self.entity = ::std::option::Option::None;
-        self.entity = ::std::option::Option::None;
-        self.entity = ::std::option::Option::None;
-        self.inst_id = 0;
-        self.group_id = 0;
         self.entity_id = 0;
+        self.group_id = 0;
+        self.inst_id = 0;
         self.motion.clear();
+        self.entity_case = ::std::option::Option::None;
+        self.entity_case = ::std::option::Option::None;
+        self.entity_case = ::std::option::Option::None;
+        self.entity_case = ::std::option::Option::None;
+        self.entity_case = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneEntityInfo {
         static instance: SceneEntityInfo = SceneEntityInfo {
-            inst_id: 0,
-            group_id: 0,
             entity_id: 0,
+            group_id: 0,
+            inst_id: 0,
             motion: ::protobuf::MessageField::none(),
-            entity: ::std::option::Option::None,
+            entity_case: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -554,51 +554,50 @@ pub mod scene_entity_info {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:SceneEntityInfo.entity)
-    pub enum Entity {
+    // @@protoc_insertion_point(oneof:SceneEntityInfo.entity_case)
+    pub enum Entity_case {
         // @@protoc_insertion_point(oneof_field:SceneEntityInfo.actor)
-        Actor(super::super::SceneActorInfo::SceneActorInfo),
+        Actor(super::super::GJFAEDDOFHJ::GJFAEDDOFHJ),
         // @@protoc_insertion_point(oneof_field:SceneEntityInfo.npc_monster)
-        NpcMonster(super::super::SceneNpcMonsterInfo::SceneNpcMonsterInfo),
+        NpcMonster(super::super::EPEFCDLMNLO::EPEFCDLMNLO),
         // @@protoc_insertion_point(oneof_field:SceneEntityInfo.npc)
-        Npc(super::super::SceneNpcInfo::SceneNpcInfo),
+        Npc(super::super::CNHICFOOMPL::CNHICFOOMPL),
         // @@protoc_insertion_point(oneof_field:SceneEntityInfo.prop)
-        Prop(super::super::ScenePropInfo::ScenePropInfo),
+        Prop(super::super::DEEMDJICKGG::DEEMDJICKGG),
         // @@protoc_insertion_point(oneof_field:SceneEntityInfo.summon_unit)
-        SummonUnit(super::super::SceneSummonUnitInfo::SceneSummonUnitInfo),
+        SummonUnit(super::super::IFGNFCLAIGM::IFGNFCLAIGM),
     }
 
-    impl ::protobuf::Oneof for Entity {
+    impl ::protobuf::Oneof for Entity_case {
     }
 
-    impl ::protobuf::OneofFull for Entity {
+    impl ::protobuf::OneofFull for Entity_case {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::SceneEntityInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("entity").unwrap()).clone()
+            descriptor.get(|| <super::SceneEntityInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("entity_case").unwrap()).clone()
         }
     }
 
-    impl Entity {
+    impl Entity_case {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<Entity>("entity")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<Entity_case>("entity_case")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15SceneEntityInfo.proto\x1a\x10MotionInfo.proto\x1a\x19SceneSummonUn\
-    itInfo.proto\x1a\x14SceneActorInfo.proto\x1a\x19SceneNpcMonsterInfo.prot\
-    o\x1a\x12SceneNpcInfo.proto\x1a\x13ScenePropInfo.proto\"\xf5\x02\n\x0fSc\
-    eneEntityInfo\x12'\n\x05actor\x18\t\x20\x01(\x0b2\x0f.SceneActorInfoH\0R\
-    \x05actor\x127\n\x0bnpc_monster\x18\r\x20\x01(\x0b2\x14.SceneNpcMonsterI\
-    nfoH\0R\nnpcMonster\x12!\n\x03npc\x18\x05\x20\x01(\x0b2\r.SceneNpcInfoH\
-    \0R\x03npc\x12$\n\x04prop\x18\x07\x20\x01(\x0b2\x0e.ScenePropInfoH\0R\
-    \x04prop\x127\n\x0bsummon_unit\x18\x03\x20\x01(\x0b2\x14.SceneSummonUnit\
-    InfoH\0R\nsummonUnit\x12\x17\n\x07inst_id\x18\x04\x20\x01(\rR\x06instId\
-    \x12\x19\n\x08group_id\x18\x0c\x20\x01(\rR\x07groupId\x12\x1b\n\tentity_\
-    id\x18\x0b\x20\x01(\rR\x08entityId\x12#\n\x06motion\x18\x0e\x20\x01(\x0b\
-    2\x0b.MotionInfoR\x06motionB\x08\n\x06entityB\x15\n\x13emu.lunarcore.pro\
-    tob\x06proto3\
+    \n\x15SceneEntityInfo.proto\x1a\x11CNHICFOOMPL.proto\x1a\x11DEEMDJICKGG.\
+    proto\x1a\x11EPEFCDLMNLO.proto\x1a\x11GJFAEDDOFHJ.proto\x1a\x11IFGNFCLAI\
+    GM.proto\x1a\x11LDFPBJIHOPD.proto\"\xe5\x02\n\x0fSceneEntityInfo\x12\x1b\
+    \n\tentity_id\x18\x02\x20\x01(\rR\x08entityId\x12\x19\n\x08group_id\x18\
+    \x0e\x20\x01(\rR\x07groupId\x12\x17\n\x07inst_id\x18\x06\x20\x01(\rR\x06\
+    instId\x12$\n\x06motion\x18\n\x20\x01(\x0b2\x0c.LDFPBJIHOPDR\x06motion\
+    \x12$\n\x05actor\x18\x0b\x20\x01(\x0b2\x0c.GJFAEDDOFHJH\0R\x05actor\x12/\
+    \n\x0bnpc_monster\x18\t\x20\x01(\x0b2\x0c.EPEFCDLMNLOH\0R\nnpcMonster\
+    \x12\x20\n\x03npc\x18\r\x20\x01(\x0b2\x0c.CNHICFOOMPLH\0R\x03npc\x12\"\n\
+    \x04prop\x18\x07\x20\x01(\x0b2\x0c.DEEMDJICKGGH\0R\x04prop\x12/\n\x0bsum\
+    mon_unit\x18\x04\x20\x01(\x0b2\x0c.IFGNFCLAIGMH\0R\nsummonUnitB\r\n\x0be\
+    ntity_caseb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -616,12 +615,12 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(6);
-            deps.push(super::MotionInfo::file_descriptor().clone());
-            deps.push(super::SceneSummonUnitInfo::file_descriptor().clone());
-            deps.push(super::SceneActorInfo::file_descriptor().clone());
-            deps.push(super::SceneNpcMonsterInfo::file_descriptor().clone());
-            deps.push(super::SceneNpcInfo::file_descriptor().clone());
-            deps.push(super::ScenePropInfo::file_descriptor().clone());
+            deps.push(super::CNHICFOOMPL::file_descriptor().clone());
+            deps.push(super::DEEMDJICKGG::file_descriptor().clone());
+            deps.push(super::EPEFCDLMNLO::file_descriptor().clone());
+            deps.push(super::GJFAEDDOFHJ::file_descriptor().clone());
+            deps.push(super::IFGNFCLAIGM::file_descriptor().clone());
+            deps.push(super::LDFPBJIHOPD::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SceneEntityInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

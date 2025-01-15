@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetNpcTakenRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetNpcTakenRewardCsReq.npc_id)
-    pub npc_id: u32,
+    // @@protoc_insertion_point(field:GetNpcTakenRewardCsReq.IMKICBKMEIO)
+    pub IMKICBKMEIO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetNpcTakenRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl GetNpcTakenRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "npc_id",
-            |m: &GetNpcTakenRewardCsReq| { &m.npc_id },
-            |m: &mut GetNpcTakenRewardCsReq| { &mut m.npc_id },
+            "IMKICBKMEIO",
+            |m: &GetNpcTakenRewardCsReq| { &m.IMKICBKMEIO },
+            |m: &mut GetNpcTakenRewardCsReq| { &mut m.IMKICBKMEIO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetNpcTakenRewardCsReq>(
             "GetNpcTakenRewardCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for GetNpcTakenRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.npc_id = is.read_uint32()?;
+                24 => {
+                    self.IMKICBKMEIO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for GetNpcTakenRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.npc_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.npc_id);
+        if self.IMKICBKMEIO != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.IMKICBKMEIO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for GetNpcTakenRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.npc_id != 0 {
-            os.write_uint32(13, self.npc_id)?;
+        if self.IMKICBKMEIO != 0 {
+            os.write_uint32(3, self.IMKICBKMEIO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for GetNpcTakenRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.npc_id = 0;
+        self.IMKICBKMEIO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetNpcTakenRewardCsReq {
         static instance: GetNpcTakenRewardCsReq = GetNpcTakenRewardCsReq {
-            npc_id: 0,
+            IMKICBKMEIO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for GetNpcTakenRewardCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cGetNpcTakenRewardCsReq.proto\"/\n\x16GetNpcTakenRewardCsReq\x12\
-    \x15\n\x06npc_id\x18\r\x20\x01(\rR\x05npcIdB\x15\n\x13emu.lunarcore.prot\
-    ob\x06proto3\
+    \n\x1cGetNpcTakenRewardCsReq.proto\":\n\x16GetNpcTakenRewardCsReq\x12\
+    \x20\n\x0bIMKICBKMEIO\x18\x03\x20\x01(\rR\x0bIMKICBKMEIOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

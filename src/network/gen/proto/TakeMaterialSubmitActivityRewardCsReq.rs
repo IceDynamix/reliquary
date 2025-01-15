@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeMaterialSubmitActivityRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeMaterialSubmitActivityRewardCsReq.MNCFMFJEOIG)
-    pub MNCFMFJEOIG: u32,
+    // @@protoc_insertion_point(field:TakeMaterialSubmitActivityRewardCsReq.CHHLBIOFBEF)
+    pub CHHLBIOFBEF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeMaterialSubmitActivityRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl TakeMaterialSubmitActivityRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MNCFMFJEOIG",
-            |m: &TakeMaterialSubmitActivityRewardCsReq| { &m.MNCFMFJEOIG },
-            |m: &mut TakeMaterialSubmitActivityRewardCsReq| { &mut m.MNCFMFJEOIG },
+            "CHHLBIOFBEF",
+            |m: &TakeMaterialSubmitActivityRewardCsReq| { &m.CHHLBIOFBEF },
+            |m: &mut TakeMaterialSubmitActivityRewardCsReq| { &mut m.CHHLBIOFBEF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeMaterialSubmitActivityRewardCsReq>(
             "TakeMaterialSubmitActivityRewardCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for TakeMaterialSubmitActivityRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.MNCFMFJEOIG = is.read_uint32()?;
+                64 => {
+                    self.CHHLBIOFBEF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for TakeMaterialSubmitActivityRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MNCFMFJEOIG != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.MNCFMFJEOIG);
+        if self.CHHLBIOFBEF != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.CHHLBIOFBEF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for TakeMaterialSubmitActivityRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MNCFMFJEOIG != 0 {
-            os.write_uint32(7, self.MNCFMFJEOIG)?;
+        if self.CHHLBIOFBEF != 0 {
+            os.write_uint32(8, self.CHHLBIOFBEF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for TakeMaterialSubmitActivityRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.MNCFMFJEOIG = 0;
+        self.CHHLBIOFBEF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeMaterialSubmitActivityRewardCsReq {
         static instance: TakeMaterialSubmitActivityRewardCsReq = TakeMaterialSubmitActivityRewardCsReq {
-            MNCFMFJEOIG: 0,
+            CHHLBIOFBEF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for TakeMaterialSubmitActivityRewardCsRe
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+TakeMaterialSubmitActivityRewardCsReq.proto\"I\n%TakeMaterialSubmitAc\
-    tivityRewardCsReq\x12\x20\n\x0bMNCFMFJEOIG\x18\x07\x20\x01(\rR\x0bMNCFMF\
-    JEOIGb\x06proto3\
+    tivityRewardCsReq\x12\x20\n\x0bCHHLBIOFBEF\x18\x08\x20\x01(\rR\x0bCHHLBI\
+    OFBEFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

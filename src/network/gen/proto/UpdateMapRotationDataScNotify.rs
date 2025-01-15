@@ -29,20 +29,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdateMapRotationDataScNotify {
     // message fields
-    // @@protoc_insertion_point(field:UpdateMapRotationDataScNotify.MOOKNNKOEHL)
-    pub MOOKNNKOEHL: ::std::vec::Vec<super::FCPOCIKPEBN::FCPOCIKPEBN>,
-    // @@protoc_insertion_point(field:UpdateMapRotationDataScNotify.PNAMFGLFKAI)
-    pub PNAMFGLFKAI: ::std::vec::Vec<super::FFLMODAKJOC::FFLMODAKJOC>,
-    // @@protoc_insertion_point(field:UpdateMapRotationDataScNotify.CCMFCONAOGP)
-    pub CCMFCONAOGP: ::protobuf::MessageField<super::PEMFPDOPAFN::PEMFPDOPAFN>,
-    // @@protoc_insertion_point(field:UpdateMapRotationDataScNotify.LGCHOINHLDJ)
-    pub LGCHOINHLDJ: i32,
-    // @@protoc_insertion_point(field:UpdateMapRotationDataScNotify.LMMLDDKKKAI)
-    pub LMMLDDKKKAI: ::protobuf::MessageField<super::JKEAOFKCAGO::JKEAOFKCAGO>,
-    // @@protoc_insertion_point(field:UpdateMapRotationDataScNotify.JOBJHNJJNDI)
-    pub JOBJHNJJNDI: bool,
-    // @@protoc_insertion_point(field:UpdateMapRotationDataScNotify.FPHPEJPOBGJ)
-    pub FPHPEJPOBGJ: u32,
+    // @@protoc_insertion_point(field:UpdateMapRotationDataScNotify.IFDGJOJKBPN)
+    pub IFDGJOJKBPN: u32,
+    // @@protoc_insertion_point(field:UpdateMapRotationDataScNotify.DBMHDFODCDB)
+    pub DBMHDFODCDB: ::std::vec::Vec<super::JJEJHCKMJLG::JJEJHCKMJLG>,
+    // @@protoc_insertion_point(field:UpdateMapRotationDataScNotify.FPGMDIPJKDJ)
+    pub FPGMDIPJKDJ: ::protobuf::MessageField<super::PJNIEDFALHN::PJNIEDFALHN>,
+    // @@protoc_insertion_point(field:UpdateMapRotationDataScNotify.GOFLEFHOKDF)
+    pub GOFLEFHOKDF: bool,
+    // @@protoc_insertion_point(field:UpdateMapRotationDataScNotify.FDGGLLHCPLI)
+    pub FDGGLLHCPLI: i32,
+    // @@protoc_insertion_point(field:UpdateMapRotationDataScNotify.KBMFLPNPKOJ)
+    pub KBMFLPNPKOJ: ::protobuf::MessageField<super::LAMKDPDMLEC::LAMKDPDMLEC>,
+    // @@protoc_insertion_point(field:UpdateMapRotationDataScNotify.JGFOHPFEKBE)
+    pub JGFOHPFEKBE: ::std::vec::Vec<super::GFNOJBNEOAA::GFNOJBNEOAA>,
     // special fields
     // @@protoc_insertion_point(special_field:UpdateMapRotationDataScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,40 +62,40 @@ impl UpdateMapRotationDataScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IFDGJOJKBPN",
+            |m: &UpdateMapRotationDataScNotify| { &m.IFDGJOJKBPN },
+            |m: &mut UpdateMapRotationDataScNotify| { &mut m.IFDGJOJKBPN },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MOOKNNKOEHL",
-            |m: &UpdateMapRotationDataScNotify| { &m.MOOKNNKOEHL },
-            |m: &mut UpdateMapRotationDataScNotify| { &mut m.MOOKNNKOEHL },
+            "DBMHDFODCDB",
+            |m: &UpdateMapRotationDataScNotify| { &m.DBMHDFODCDB },
+            |m: &mut UpdateMapRotationDataScNotify| { &mut m.DBMHDFODCDB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PJNIEDFALHN::PJNIEDFALHN>(
+            "FPGMDIPJKDJ",
+            |m: &UpdateMapRotationDataScNotify| { &m.FPGMDIPJKDJ },
+            |m: &mut UpdateMapRotationDataScNotify| { &mut m.FPGMDIPJKDJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GOFLEFHOKDF",
+            |m: &UpdateMapRotationDataScNotify| { &m.GOFLEFHOKDF },
+            |m: &mut UpdateMapRotationDataScNotify| { &mut m.GOFLEFHOKDF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FDGGLLHCPLI",
+            |m: &UpdateMapRotationDataScNotify| { &m.FDGGLLHCPLI },
+            |m: &mut UpdateMapRotationDataScNotify| { &mut m.FDGGLLHCPLI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LAMKDPDMLEC::LAMKDPDMLEC>(
+            "KBMFLPNPKOJ",
+            |m: &UpdateMapRotationDataScNotify| { &m.KBMFLPNPKOJ },
+            |m: &mut UpdateMapRotationDataScNotify| { &mut m.KBMFLPNPKOJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PNAMFGLFKAI",
-            |m: &UpdateMapRotationDataScNotify| { &m.PNAMFGLFKAI },
-            |m: &mut UpdateMapRotationDataScNotify| { &mut m.PNAMFGLFKAI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PEMFPDOPAFN::PEMFPDOPAFN>(
-            "CCMFCONAOGP",
-            |m: &UpdateMapRotationDataScNotify| { &m.CCMFCONAOGP },
-            |m: &mut UpdateMapRotationDataScNotify| { &mut m.CCMFCONAOGP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LGCHOINHLDJ",
-            |m: &UpdateMapRotationDataScNotify| { &m.LGCHOINHLDJ },
-            |m: &mut UpdateMapRotationDataScNotify| { &mut m.LGCHOINHLDJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JKEAOFKCAGO::JKEAOFKCAGO>(
-            "LMMLDDKKKAI",
-            |m: &UpdateMapRotationDataScNotify| { &m.LMMLDDKKKAI },
-            |m: &mut UpdateMapRotationDataScNotify| { &mut m.LMMLDDKKKAI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JOBJHNJJNDI",
-            |m: &UpdateMapRotationDataScNotify| { &m.JOBJHNJJNDI },
-            |m: &mut UpdateMapRotationDataScNotify| { &mut m.JOBJHNJJNDI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FPHPEJPOBGJ",
-            |m: &UpdateMapRotationDataScNotify| { &m.FPHPEJPOBGJ },
-            |m: &mut UpdateMapRotationDataScNotify| { &mut m.FPHPEJPOBGJ },
+            "JGFOHPFEKBE",
+            |m: &UpdateMapRotationDataScNotify| { &m.JGFOHPFEKBE },
+            |m: &mut UpdateMapRotationDataScNotify| { &mut m.JGFOHPFEKBE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdateMapRotationDataScNotify>(
             "UpdateMapRotationDataScNotify",
@@ -115,26 +115,26 @@ impl ::protobuf::Message for UpdateMapRotationDataScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.MOOKNNKOEHL.push(is.read_message()?);
+                80 => {
+                    self.IFDGJOJKBPN = is.read_uint32()?;
                 },
-                114 => {
-                    self.PNAMFGLFKAI.push(is.read_message()?);
+                58 => {
+                    self.DBMHDFODCDB.push(is.read_message()?);
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CCMFCONAOGP)?;
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FPGMDIPJKDJ)?;
                 },
-                120 => {
-                    self.LGCHOINHLDJ = is.read_int32()?;
-                },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LMMLDDKKKAI)?;
+                112 => {
+                    self.GOFLEFHOKDF = is.read_bool()?;
                 },
                 32 => {
-                    self.JOBJHNJJNDI = is.read_bool()?;
+                    self.FDGGLLHCPLI = is.read_int32()?;
                 },
-                40 => {
-                    self.FPHPEJPOBGJ = is.read_uint32()?;
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KBMFLPNPKOJ)?;
+                },
+                98 => {
+                    self.JGFOHPFEKBE.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -148,58 +148,58 @@ impl ::protobuf::Message for UpdateMapRotationDataScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.MOOKNNKOEHL {
+        if self.IFDGJOJKBPN != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.IFDGJOJKBPN);
+        }
+        for value in &self.DBMHDFODCDB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.PNAMFGLFKAI {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if let Some(v) = self.CCMFCONAOGP.as_ref() {
+        if let Some(v) = self.FPGMDIPJKDJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.LGCHOINHLDJ != 0 {
-            my_size += ::protobuf::rt::int32_size(15, self.LGCHOINHLDJ);
-        }
-        if let Some(v) = self.LMMLDDKKKAI.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.JOBJHNJJNDI != false {
+        if self.GOFLEFHOKDF != false {
             my_size += 1 + 1;
         }
-        if self.FPHPEJPOBGJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.FPHPEJPOBGJ);
+        if self.FDGGLLHCPLI != 0 {
+            my_size += ::protobuf::rt::int32_size(4, self.FDGGLLHCPLI);
         }
+        if let Some(v) = self.KBMFLPNPKOJ.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        for value in &self.JGFOHPFEKBE {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.MOOKNNKOEHL {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if self.IFDGJOJKBPN != 0 {
+            os.write_uint32(10, self.IFDGJOJKBPN)?;
+        }
+        for v in &self.DBMHDFODCDB {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
-        for v in &self.PNAMFGLFKAI {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        };
-        if let Some(v) = self.CCMFCONAOGP.as_ref() {
+        if let Some(v) = self.FPGMDIPJKDJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        }
+        if self.GOFLEFHOKDF != false {
+            os.write_bool(14, self.GOFLEFHOKDF)?;
+        }
+        if self.FDGGLLHCPLI != 0 {
+            os.write_int32(4, self.FDGGLLHCPLI)?;
+        }
+        if let Some(v) = self.KBMFLPNPKOJ.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
-        if self.LGCHOINHLDJ != 0 {
-            os.write_int32(15, self.LGCHOINHLDJ)?;
-        }
-        if let Some(v) = self.LMMLDDKKKAI.as_ref() {
+        for v in &self.JGFOHPFEKBE {
             ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        }
-        if self.JOBJHNJJNDI != false {
-            os.write_bool(4, self.JOBJHNJJNDI)?;
-        }
-        if self.FPHPEJPOBGJ != 0 {
-            os.write_uint32(5, self.FPHPEJPOBGJ)?;
-        }
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -217,25 +217,25 @@ impl ::protobuf::Message for UpdateMapRotationDataScNotify {
     }
 
     fn clear(&mut self) {
-        self.MOOKNNKOEHL.clear();
-        self.PNAMFGLFKAI.clear();
-        self.CCMFCONAOGP.clear();
-        self.LGCHOINHLDJ = 0;
-        self.LMMLDDKKKAI.clear();
-        self.JOBJHNJJNDI = false;
-        self.FPHPEJPOBGJ = 0;
+        self.IFDGJOJKBPN = 0;
+        self.DBMHDFODCDB.clear();
+        self.FPGMDIPJKDJ.clear();
+        self.GOFLEFHOKDF = false;
+        self.FDGGLLHCPLI = 0;
+        self.KBMFLPNPKOJ.clear();
+        self.JGFOHPFEKBE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateMapRotationDataScNotify {
         static instance: UpdateMapRotationDataScNotify = UpdateMapRotationDataScNotify {
-            MOOKNNKOEHL: ::std::vec::Vec::new(),
-            PNAMFGLFKAI: ::std::vec::Vec::new(),
-            CCMFCONAOGP: ::protobuf::MessageField::none(),
-            LGCHOINHLDJ: 0,
-            LMMLDDKKKAI: ::protobuf::MessageField::none(),
-            JOBJHNJJNDI: false,
-            FPHPEJPOBGJ: 0,
+            IFDGJOJKBPN: 0,
+            DBMHDFODCDB: ::std::vec::Vec::new(),
+            FPGMDIPJKDJ: ::protobuf::MessageField::none(),
+            GOFLEFHOKDF: false,
+            FDGGLLHCPLI: 0,
+            KBMFLPNPKOJ: ::protobuf::MessageField::none(),
+            JGFOHPFEKBE: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -260,16 +260,16 @@ impl ::protobuf::reflect::ProtobufValue for UpdateMapRotationDataScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#UpdateMapRotationDataScNotify.proto\x1a\x11FCPOCIKPEBN.proto\x1a\x11F\
-    FLMODAKJOC.proto\x1a\x11JKEAOFKCAGO.proto\x1a\x11PEMFPDOPAFN.proto\"\xc5\
-    \x02\n\x1dUpdateMapRotationDataScNotify\x12.\n\x0bMOOKNNKOEHL\x18\x02\
-    \x20\x03(\x0b2\x0c.FCPOCIKPEBNR\x0bMOOKNNKOEHL\x12.\n\x0bPNAMFGLFKAI\x18\
-    \x0e\x20\x03(\x0b2\x0c.FFLMODAKJOCR\x0bPNAMFGLFKAI\x12.\n\x0bCCMFCONAOGP\
-    \x18\r\x20\x01(\x0b2\x0c.PEMFPDOPAFNR\x0bCCMFCONAOGP\x12\x20\n\x0bLGCHOI\
-    NHLDJ\x18\x0f\x20\x01(\x05R\x0bLGCHOINHLDJ\x12.\n\x0bLMMLDDKKKAI\x18\x0c\
-    \x20\x01(\x0b2\x0c.JKEAOFKCAGOR\x0bLMMLDDKKKAI\x12\x20\n\x0bJOBJHNJJNDI\
-    \x18\x04\x20\x01(\x08R\x0bJOBJHNJJNDI\x12\x20\n\x0bFPHPEJPOBGJ\x18\x05\
-    \x20\x01(\rR\x0bFPHPEJPOBGJb\x06proto3\
+    \n#UpdateMapRotationDataScNotify.proto\x1a\x11GFNOJBNEOAA.proto\x1a\x11J\
+    JEJHCKMJLG.proto\x1a\x11LAMKDPDMLEC.proto\x1a\x11PJNIEDFALHN.proto\"\xc5\
+    \x02\n\x1dUpdateMapRotationDataScNotify\x12\x20\n\x0bIFDGJOJKBPN\x18\n\
+    \x20\x01(\rR\x0bIFDGJOJKBPN\x12.\n\x0bDBMHDFODCDB\x18\x07\x20\x03(\x0b2\
+    \x0c.JJEJHCKMJLGR\x0bDBMHDFODCDB\x12.\n\x0bFPGMDIPJKDJ\x18\x0b\x20\x01(\
+    \x0b2\x0c.PJNIEDFALHNR\x0bFPGMDIPJKDJ\x12\x20\n\x0bGOFLEFHOKDF\x18\x0e\
+    \x20\x01(\x08R\x0bGOFLEFHOKDF\x12\x20\n\x0bFDGGLLHCPLI\x18\x04\x20\x01(\
+    \x05R\x0bFDGGLLHCPLI\x12.\n\x0bKBMFLPNPKOJ\x18\r\x20\x01(\x0b2\x0c.LAMKD\
+    PDMLECR\x0bKBMFLPNPKOJ\x12.\n\x0bJGFOHPFEKBE\x18\x0c\x20\x03(\x0b2\x0c.G\
+    FNOJBNEOAAR\x0bJGFOHPFEKBEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -287,10 +287,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(4);
-            deps.push(super::FCPOCIKPEBN::file_descriptor().clone());
-            deps.push(super::FFLMODAKJOC::file_descriptor().clone());
-            deps.push(super::JKEAOFKCAGO::file_descriptor().clone());
-            deps.push(super::PEMFPDOPAFN::file_descriptor().clone());
+            deps.push(super::GFNOJBNEOAA::file_descriptor().clone());
+            deps.push(super::JJEJHCKMJLG::file_descriptor().clone());
+            deps.push(super::LAMKDPDMLEC::file_descriptor().clone());
+            deps.push(super::PJNIEDFALHN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(UpdateMapRotationDataScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

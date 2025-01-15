@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SpaceZooExchangeItemScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SpaceZooExchangeItemScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:SpaceZooExchangeItemScRsp.LGBJLFEMFOL)
-    pub LGBJLFEMFOL: u32,
+    // @@protoc_insertion_point(field:SpaceZooExchangeItemScRsp.AKMIHHHJPON)
+    pub AKMIHHHJPON: u32,
+    // @@protoc_insertion_point(field:SpaceZooExchangeItemScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SpaceZooExchangeItemScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl SpaceZooExchangeItemScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &SpaceZooExchangeItemScRsp| { &m.ADADHIHDHJC },
-            |m: &mut SpaceZooExchangeItemScRsp| { &mut m.ADADHIHDHJC },
+            "AKMIHHHJPON",
+            |m: &SpaceZooExchangeItemScRsp| { &m.AKMIHHHJPON },
+            |m: &mut SpaceZooExchangeItemScRsp| { &mut m.AKMIHHHJPON },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LGBJLFEMFOL",
-            |m: &SpaceZooExchangeItemScRsp| { &m.LGBJLFEMFOL },
-            |m: &mut SpaceZooExchangeItemScRsp| { &mut m.LGBJLFEMFOL },
+            "retcode",
+            |m: &SpaceZooExchangeItemScRsp| { &m.retcode },
+            |m: &mut SpaceZooExchangeItemScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SpaceZooExchangeItemScRsp>(
             "SpaceZooExchangeItemScRsp",
@@ -81,10 +81,10 @@ impl ::protobuf::Message for SpaceZooExchangeItemScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 24 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                    self.AKMIHHHJPON = is.read_uint32()?;
                 },
-                80 => {
-                    self.LGBJLFEMFOL = is.read_uint32()?;
+                32 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for SpaceZooExchangeItemScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.ADADHIHDHJC);
+        if self.AKMIHHHJPON != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.AKMIHHHJPON);
         }
-        if self.LGBJLFEMFOL != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.LGBJLFEMFOL);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for SpaceZooExchangeItemScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(3, self.ADADHIHDHJC)?;
+        if self.AKMIHHHJPON != 0 {
+            os.write_uint32(3, self.AKMIHHHJPON)?;
         }
-        if self.LGBJLFEMFOL != 0 {
-            os.write_uint32(10, self.LGBJLFEMFOL)?;
+        if self.retcode != 0 {
+            os.write_uint32(4, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for SpaceZooExchangeItemScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADADHIHDHJC = 0;
-        self.LGBJLFEMFOL = 0;
+        self.AKMIHHHJPON = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SpaceZooExchangeItemScRsp {
         static instance: SpaceZooExchangeItemScRsp = SpaceZooExchangeItemScRsp {
-            ADADHIHDHJC: 0,
-            LGBJLFEMFOL: 0,
+            AKMIHHHJPON: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for SpaceZooExchangeItemScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fSpaceZooExchangeItemScRsp.proto\"_\n\x19SpaceZooExchangeItemScRsp\
-    \x12\x20\n\x0bADADHIHDHJC\x18\x03\x20\x01(\rR\x0bADADHIHDHJC\x12\x20\n\
-    \x0bLGBJLFEMFOL\x18\n\x20\x01(\rR\x0bLGBJLFEMFOLb\x06proto3\
+    \n\x1fSpaceZooExchangeItemScRsp.proto\"W\n\x19SpaceZooExchangeItemScRsp\
+    \x12\x20\n\x0bAKMIHHHJPON\x18\x03\x20\x01(\rR\x0bAKMIHHHJPON\x12\x18\n\
+    \x07retcode\x18\x04\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

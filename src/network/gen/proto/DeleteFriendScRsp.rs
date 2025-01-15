@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DeleteFriendScRsp {
     // message fields
-    // @@protoc_insertion_point(field:DeleteFriendScRsp.LNCNOFOEHAA)
-    pub LNCNOFOEHAA: u32,
-    // @@protoc_insertion_point(field:DeleteFriendScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:DeleteFriendScRsp.DEPEKPIEGJO)
+    pub DEPEKPIEGJO: u32,
+    // @@protoc_insertion_point(field:DeleteFriendScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DeleteFriendScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl DeleteFriendScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LNCNOFOEHAA",
-            |m: &DeleteFriendScRsp| { &m.LNCNOFOEHAA },
-            |m: &mut DeleteFriendScRsp| { &mut m.LNCNOFOEHAA },
+            "DEPEKPIEGJO",
+            |m: &DeleteFriendScRsp| { &m.DEPEKPIEGJO },
+            |m: &mut DeleteFriendScRsp| { &mut m.DEPEKPIEGJO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &DeleteFriendScRsp| { &m.ADADHIHDHJC },
-            |m: &mut DeleteFriendScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &DeleteFriendScRsp| { &m.retcode },
+            |m: &mut DeleteFriendScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DeleteFriendScRsp>(
             "DeleteFriendScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for DeleteFriendScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.LNCNOFOEHAA = is.read_uint32()?;
+                24 => {
+                    self.DEPEKPIEGJO = is.read_uint32()?;
                 },
-                16 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                32 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for DeleteFriendScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LNCNOFOEHAA != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.LNCNOFOEHAA);
+        if self.DEPEKPIEGJO != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.DEPEKPIEGJO);
         }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for DeleteFriendScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LNCNOFOEHAA != 0 {
-            os.write_uint32(15, self.LNCNOFOEHAA)?;
+        if self.DEPEKPIEGJO != 0 {
+            os.write_uint32(3, self.DEPEKPIEGJO)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(2, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(4, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for DeleteFriendScRsp {
     }
 
     fn clear(&mut self) {
-        self.LNCNOFOEHAA = 0;
-        self.ADADHIHDHJC = 0;
+        self.DEPEKPIEGJO = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DeleteFriendScRsp {
         static instance: DeleteFriendScRsp = DeleteFriendScRsp {
-            LNCNOFOEHAA: 0,
-            ADADHIHDHJC: 0,
+            DEPEKPIEGJO: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for DeleteFriendScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17DeleteFriendScRsp.proto\"W\n\x11DeleteFriendScRsp\x12\x20\n\x0bLNC\
-    NOFOEHAA\x18\x0f\x20\x01(\rR\x0bLNCNOFOEHAA\x12\x20\n\x0bADADHIHDHJC\x18\
-    \x02\x20\x01(\rR\x0bADADHIHDHJCb\x06proto3\
+    \n\x17DeleteFriendScRsp.proto\"O\n\x11DeleteFriendScRsp\x12\x20\n\x0bDEP\
+    EKPIEGJO\x18\x03\x20\x01(\rR\x0bDEPEKPIEGJO\x12\x18\n\x07retcode\x18\x04\
+    \x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

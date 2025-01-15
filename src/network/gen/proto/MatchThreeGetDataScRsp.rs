@@ -31,6 +31,8 @@ pub struct MatchThreeGetDataScRsp {
     // message fields
     // @@protoc_insertion_point(field:MatchThreeGetDataScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:MatchThreeGetDataScRsp.IKCEMNHLCEC)
+    pub IKCEMNHLCEC: ::protobuf::MessageField<super::AKPLEIPECMG::AKPLEIPECMG>,
     // special fields
     // @@protoc_insertion_point(special_field:MatchThreeGetDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -48,12 +50,17 @@ impl MatchThreeGetDataScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &MatchThreeGetDataScRsp| { &m.retcode },
             |m: &mut MatchThreeGetDataScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AKPLEIPECMG::AKPLEIPECMG>(
+            "IKCEMNHLCEC",
+            |m: &MatchThreeGetDataScRsp| { &m.IKCEMNHLCEC },
+            |m: &mut MatchThreeGetDataScRsp| { &mut m.IKCEMNHLCEC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MatchThreeGetDataScRsp>(
             "MatchThreeGetDataScRsp",
@@ -73,8 +80,11 @@ impl ::protobuf::Message for MatchThreeGetDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
+                },
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IKCEMNHLCEC)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -89,7 +99,11 @@ impl ::protobuf::Message for MatchThreeGetDataScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+        }
+        if let Some(v) = self.IKCEMNHLCEC.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -98,7 +112,10 @@ impl ::protobuf::Message for MatchThreeGetDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
+        }
+        if let Some(v) = self.IKCEMNHLCEC.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -118,12 +135,14 @@ impl ::protobuf::Message for MatchThreeGetDataScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
+        self.IKCEMNHLCEC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MatchThreeGetDataScRsp {
         static instance: MatchThreeGetDataScRsp = MatchThreeGetDataScRsp {
             retcode: 0,
+            IKCEMNHLCEC: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for MatchThreeGetDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cMatchThreeGetDataScRsp.proto\"2\n\x16MatchThreeGetDataScRsp\x12\
-    \x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore\
-    .protob\x06proto3\
+    \n\x1cMatchThreeGetDataScRsp.proto\x1a\x11AKPLEIPECMG.proto\"b\n\x16Matc\
+    hThreeGetDataScRsp\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcode\x12\
+    .\n\x0bIKCEMNHLCEC\x18\x05\x20\x01(\x0b2\x0c.AKPLEIPECMGR\x0bIKCEMNHLCEC\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -167,7 +187,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(0);
+            let mut deps = ::std::vec::Vec::with_capacity(1);
+            deps.push(super::AKPLEIPECMG::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MatchThreeGetDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

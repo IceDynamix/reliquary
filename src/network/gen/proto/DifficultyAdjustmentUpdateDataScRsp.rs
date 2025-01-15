@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DifficultyAdjustmentUpdateDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:DifficultyAdjustmentUpdateDataScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:DifficultyAdjustmentUpdateDataScRsp.NIEKADMHOKK)
-    pub NIEKADMHOKK: ::protobuf::MessageField<super::JLLIFGDBMIO::JLLIFGDBMIO>,
-    // @@protoc_insertion_point(field:DifficultyAdjustmentUpdateDataScRsp.JNMOKIAHMLD)
-    pub JNMOKIAHMLD: ::std::vec::Vec<super::JLLIFGDBMIO::JLLIFGDBMIO>,
+    // @@protoc_insertion_point(field:DifficultyAdjustmentUpdateDataScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:DifficultyAdjustmentUpdateDataScRsp.CEFPLAOBMNB)
+    pub CEFPLAOBMNB: ::protobuf::MessageField<super::MDHBKFGIJJL::MDHBKFGIJJL>,
+    // @@protoc_insertion_point(field:DifficultyAdjustmentUpdateDataScRsp.KOLHBBJCPFD)
+    pub KOLHBBJCPFD: ::std::vec::Vec<super::MDHBKFGIJJL::MDHBKFGIJJL>,
     // special fields
     // @@protoc_insertion_point(special_field:DifficultyAdjustmentUpdateDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl DifficultyAdjustmentUpdateDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &DifficultyAdjustmentUpdateDataScRsp| { &m.ADADHIHDHJC },
-            |m: &mut DifficultyAdjustmentUpdateDataScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &DifficultyAdjustmentUpdateDataScRsp| { &m.retcode },
+            |m: &mut DifficultyAdjustmentUpdateDataScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JLLIFGDBMIO::JLLIFGDBMIO>(
-            "NIEKADMHOKK",
-            |m: &DifficultyAdjustmentUpdateDataScRsp| { &m.NIEKADMHOKK },
-            |m: &mut DifficultyAdjustmentUpdateDataScRsp| { &mut m.NIEKADMHOKK },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MDHBKFGIJJL::MDHBKFGIJJL>(
+            "CEFPLAOBMNB",
+            |m: &DifficultyAdjustmentUpdateDataScRsp| { &m.CEFPLAOBMNB },
+            |m: &mut DifficultyAdjustmentUpdateDataScRsp| { &mut m.CEFPLAOBMNB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JNMOKIAHMLD",
-            |m: &DifficultyAdjustmentUpdateDataScRsp| { &m.JNMOKIAHMLD },
-            |m: &mut DifficultyAdjustmentUpdateDataScRsp| { &mut m.JNMOKIAHMLD },
+            "KOLHBBJCPFD",
+            |m: &DifficultyAdjustmentUpdateDataScRsp| { &m.KOLHBBJCPFD },
+            |m: &mut DifficultyAdjustmentUpdateDataScRsp| { &mut m.KOLHBBJCPFD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DifficultyAdjustmentUpdateDataScRsp>(
             "DifficultyAdjustmentUpdateDataScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for DifficultyAdjustmentUpdateDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                48 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CEFPLAOBMNB)?;
                 },
                 66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NIEKADMHOKK)?;
-                },
-                122 => {
-                    self.JNMOKIAHMLD.push(is.read_message()?);
+                    self.KOLHBBJCPFD.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for DifficultyAdjustmentUpdateDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
-        if let Some(v) = self.NIEKADMHOKK.as_ref() {
+        if let Some(v) = self.CEFPLAOBMNB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        for value in &self.JNMOKIAHMLD {
+        for value in &self.KOLHBBJCPFD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -125,14 +125,14 @@ impl ::protobuf::Message for DifficultyAdjustmentUpdateDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(13, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(6, self.retcode)?;
         }
-        if let Some(v) = self.NIEKADMHOKK.as_ref() {
+        if let Some(v) = self.CEFPLAOBMNB.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        }
+        for v in &self.KOLHBBJCPFD {
             ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        }
-        for v in &self.JNMOKIAHMLD {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,17 +151,17 @@ impl ::protobuf::Message for DifficultyAdjustmentUpdateDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADADHIHDHJC = 0;
-        self.NIEKADMHOKK.clear();
-        self.JNMOKIAHMLD.clear();
+        self.retcode = 0;
+        self.CEFPLAOBMNB.clear();
+        self.KOLHBBJCPFD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DifficultyAdjustmentUpdateDataScRsp {
         static instance: DifficultyAdjustmentUpdateDataScRsp = DifficultyAdjustmentUpdateDataScRsp {
-            ADADHIHDHJC: 0,
-            NIEKADMHOKK: ::protobuf::MessageField::none(),
-            JNMOKIAHMLD: ::std::vec::Vec::new(),
+            retcode: 0,
+            CEFPLAOBMNB: ::protobuf::MessageField::none(),
+            KOLHBBJCPFD: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,11 +186,11 @@ impl ::protobuf::reflect::ProtobufValue for DifficultyAdjustmentUpdateDataScRsp 
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n)DifficultyAdjustmentUpdateDataScRsp.proto\x1a\x11JLLIFGDBMIO.proto\"\
-    \xa7\x01\n#DifficultyAdjustmentUpdateDataScRsp\x12\x20\n\x0bADADHIHDHJC\
-    \x18\r\x20\x01(\rR\x0bADADHIHDHJC\x12.\n\x0bNIEKADMHOKK\x18\x08\x20\x01(\
-    \x0b2\x0c.JLLIFGDBMIOR\x0bNIEKADMHOKK\x12.\n\x0bJNMOKIAHMLD\x18\x0f\x20\
-    \x03(\x0b2\x0c.JLLIFGDBMIOR\x0bJNMOKIAHMLDb\x06proto3\
+    \n)DifficultyAdjustmentUpdateDataScRsp.proto\x1a\x11MDHBKFGIJJL.proto\"\
+    \x9f\x01\n#DifficultyAdjustmentUpdateDataScRsp\x12\x18\n\x07retcode\x18\
+    \x06\x20\x01(\rR\x07retcode\x12.\n\x0bCEFPLAOBMNB\x18\r\x20\x01(\x0b2\
+    \x0c.MDHBKFGIJJLR\x0bCEFPLAOBMNB\x12.\n\x0bKOLHBBJCPFD\x18\x08\x20\x03(\
+    \x0b2\x0c.MDHBKFGIJJLR\x0bKOLHBBJCPFDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -208,7 +208,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::JLLIFGDBMIO::file_descriptor().clone());
+            deps.push(super::MDHBKFGIJJL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(DifficultyAdjustmentUpdateDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

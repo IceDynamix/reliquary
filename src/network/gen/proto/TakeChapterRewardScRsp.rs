@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeChapterRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeChapterRewardScRsp.PNOAKGNANBO)
-    pub PNOAKGNANBO: u32,
-    // @@protoc_insertion_point(field:TakeChapterRewardScRsp.NCLHEOJCFDM)
-    pub NCLHEOJCFDM: u32,
-    // @@protoc_insertion_point(field:TakeChapterRewardScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:TakeChapterRewardScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:TakeChapterRewardScRsp.IMKIGFMNNMD)
+    pub IMKIGFMNNMD: u32,
+    // @@protoc_insertion_point(field:TakeChapterRewardScRsp.AMBCBCLHIHJ)
+    pub AMBCBCLHIHJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeChapterRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl TakeChapterRewardScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PNOAKGNANBO",
-            |m: &TakeChapterRewardScRsp| { &m.PNOAKGNANBO },
-            |m: &mut TakeChapterRewardScRsp| { &mut m.PNOAKGNANBO },
+            "retcode",
+            |m: &TakeChapterRewardScRsp| { &m.retcode },
+            |m: &mut TakeChapterRewardScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NCLHEOJCFDM",
-            |m: &TakeChapterRewardScRsp| { &m.NCLHEOJCFDM },
-            |m: &mut TakeChapterRewardScRsp| { &mut m.NCLHEOJCFDM },
+            "IMKIGFMNNMD",
+            |m: &TakeChapterRewardScRsp| { &m.IMKIGFMNNMD },
+            |m: &mut TakeChapterRewardScRsp| { &mut m.IMKIGFMNNMD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &TakeChapterRewardScRsp| { &m.ADADHIHDHJC },
-            |m: &mut TakeChapterRewardScRsp| { &mut m.ADADHIHDHJC },
+            "AMBCBCLHIHJ",
+            |m: &TakeChapterRewardScRsp| { &m.AMBCBCLHIHJ },
+            |m: &mut TakeChapterRewardScRsp| { &mut m.AMBCBCLHIHJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeChapterRewardScRsp>(
             "TakeChapterRewardScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for TakeChapterRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.PNOAKGNANBO = is.read_uint32()?;
+                112 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                24 => {
-                    self.NCLHEOJCFDM = is.read_uint32()?;
+                120 => {
+                    self.IMKIGFMNNMD = is.read_uint32()?;
                 },
-                72 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                96 => {
+                    self.AMBCBCLHIHJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for TakeChapterRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PNOAKGNANBO != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.PNOAKGNANBO);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
-        if self.NCLHEOJCFDM != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.NCLHEOJCFDM);
+        if self.IMKIGFMNNMD != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.IMKIGFMNNMD);
         }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.ADADHIHDHJC);
+        if self.AMBCBCLHIHJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.AMBCBCLHIHJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for TakeChapterRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PNOAKGNANBO != 0 {
-            os.write_uint32(8, self.PNOAKGNANBO)?;
+        if self.retcode != 0 {
+            os.write_uint32(14, self.retcode)?;
         }
-        if self.NCLHEOJCFDM != 0 {
-            os.write_uint32(3, self.NCLHEOJCFDM)?;
+        if self.IMKIGFMNNMD != 0 {
+            os.write_uint32(15, self.IMKIGFMNNMD)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(9, self.ADADHIHDHJC)?;
+        if self.AMBCBCLHIHJ != 0 {
+            os.write_uint32(12, self.AMBCBCLHIHJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for TakeChapterRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.PNOAKGNANBO = 0;
-        self.NCLHEOJCFDM = 0;
-        self.ADADHIHDHJC = 0;
+        self.retcode = 0;
+        self.IMKIGFMNNMD = 0;
+        self.AMBCBCLHIHJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeChapterRewardScRsp {
         static instance: TakeChapterRewardScRsp = TakeChapterRewardScRsp {
-            PNOAKGNANBO: 0,
-            NCLHEOJCFDM: 0,
-            ADADHIHDHJC: 0,
+            retcode: 0,
+            IMKIGFMNNMD: 0,
+            AMBCBCLHIHJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for TakeChapterRewardScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cTakeChapterRewardScRsp.proto\"~\n\x16TakeChapterRewardScRsp\x12\
-    \x20\n\x0bPNOAKGNANBO\x18\x08\x20\x01(\rR\x0bPNOAKGNANBO\x12\x20\n\x0bNC\
-    LHEOJCFDM\x18\x03\x20\x01(\rR\x0bNCLHEOJCFDM\x12\x20\n\x0bADADHIHDHJC\
-    \x18\t\x20\x01(\rR\x0bADADHIHDHJCb\x06proto3\
+    \n\x1cTakeChapterRewardScRsp.proto\"v\n\x16TakeChapterRewardScRsp\x12\
+    \x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcode\x12\x20\n\x0bIMKIGFMNNM\
+    D\x18\x0f\x20\x01(\rR\x0bIMKIGFMNNMD\x12\x20\n\x0bAMBCBCLHIHJ\x18\x0c\
+    \x20\x01(\rR\x0bAMBCBCLHIHJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

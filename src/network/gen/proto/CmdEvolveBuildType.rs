@@ -30,52 +30,52 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdEvolveBuildType {
     // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildNone)
     CmdEvolveBuildNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildShopAbilityResetScRsp)
-    CmdEvolveBuildShopAbilityResetScRsp = 7132,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildLeaveCsReq)
-    CmdEvolveBuildLeaveCsReq = 7108,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildCoinNotify)
-    CmdEvolveBuildCoinNotify = 7119,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildQueryInfoScRsp)
-    CmdEvolveBuildQueryInfoScRsp = 7116,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildLeaveScRsp)
-    CmdEvolveBuildLeaveScRsp = 7130,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildShopAbilityResetCsReq)
-    CmdEvolveBuildShopAbilityResetCsReq = 7118,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildStartStageScRsp)
-    CmdEvolveBuildStartStageScRsp = 7137,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildTakeExpRewardCsReq)
-    CmdEvolveBuildTakeExpRewardCsReq = 7105,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildShopAbilityDownCsReq)
-    CmdEvolveBuildShopAbilityDownCsReq = 7144,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildStartStageCsReq)
-    CmdEvolveBuildStartStageCsReq = 7142,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildShopAbilityUpScRsp)
-    CmdEvolveBuildShopAbilityUpScRsp = 7133,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildUnlockInfoNotify)
-    CmdEvolveBuildUnlockInfoNotify = 7126,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildFinishScNotify)
-    CmdEvolveBuildFinishScNotify = 7135,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildShopAbilityUpCsReq)
-    CmdEvolveBuildShopAbilityUpCsReq = 7139,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildQueryInfoCsReq)
-    CmdEvolveBuildQueryInfoCsReq = 7115,
     // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildReRandomStageCsReq)
     CmdEvolveBuildReRandomStageCsReq = 7128,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildReRandomStageScRsp)
-    CmdEvolveBuildReRandomStageScRsp = 7107,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildStartLevelCsReq)
-    CmdEvolveBuildStartLevelCsReq = 7112,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildStartLevelScRsp)
-    CmdEvolveBuildStartLevelScRsp = 7124,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildGiveupCsReq)
-    CmdEvolveBuildGiveupCsReq = 7140,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildTakeExpRewardScRsp)
-    CmdEvolveBuildTakeExpRewardScRsp = 7131,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildStartStageScRsp)
+    CmdEvolveBuildStartStageScRsp = 7149,
     // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildShopAbilityDownScRsp)
-    CmdEvolveBuildShopAbilityDownScRsp = 7120,
+    CmdEvolveBuildShopAbilityDownScRsp = 7111,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildShopAbilityDownCsReq)
+    CmdEvolveBuildShopAbilityDownCsReq = 7140,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildStartLevelScRsp)
+    CmdEvolveBuildStartLevelScRsp = 7123,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildShopAbilityUpCsReq)
+    CmdEvolveBuildShopAbilityUpCsReq = 7117,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildStartLevelCsReq)
+    CmdEvolveBuildStartLevelCsReq = 7130,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildFinishScNotify)
+    CmdEvolveBuildFinishScNotify = 7145,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildQueryInfoCsReq)
+    CmdEvolveBuildQueryInfoCsReq = 7112,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildCoinNotify)
+    CmdEvolveBuildCoinNotify = 7114,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildTakeExpRewardScRsp)
+    CmdEvolveBuildTakeExpRewardScRsp = 7135,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildLeaveCsReq)
+    CmdEvolveBuildLeaveCsReq = 7147,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildStartStageCsReq)
+    CmdEvolveBuildStartStageCsReq = 7115,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildGiveupCsReq)
+    CmdEvolveBuildGiveupCsReq = 7109,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildShopAbilityUpScRsp)
+    CmdEvolveBuildShopAbilityUpScRsp = 7104,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildTakeExpRewardCsReq)
+    CmdEvolveBuildTakeExpRewardCsReq = 7106,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildReRandomStageScRsp)
+    CmdEvolveBuildReRandomStageScRsp = 7110,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildUnlockInfoNotify)
+    CmdEvolveBuildUnlockInfoNotify = 7142,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildShopAbilityResetCsReq)
+    CmdEvolveBuildShopAbilityResetCsReq = 7118,
     // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildGiveupScRsp)
-    CmdEvolveBuildGiveupScRsp = 7123,
+    CmdEvolveBuildGiveupScRsp = 7143,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildQueryInfoScRsp)
+    CmdEvolveBuildQueryInfoScRsp = 7150,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildLeaveScRsp)
+    CmdEvolveBuildLeaveScRsp = 7146,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildShopAbilityResetScRsp)
+    CmdEvolveBuildShopAbilityResetScRsp = 7122,
 }
 
 impl ::protobuf::Enum for CmdEvolveBuildType {
@@ -88,29 +88,29 @@ impl ::protobuf::Enum for CmdEvolveBuildType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdEvolveBuildType> {
         match value {
             0 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildNone),
-            7132 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildShopAbilityResetScRsp),
-            7108 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildLeaveCsReq),
-            7119 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildCoinNotify),
-            7116 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildQueryInfoScRsp),
-            7130 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildLeaveScRsp),
-            7118 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildShopAbilityResetCsReq),
-            7137 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildStartStageScRsp),
-            7105 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildTakeExpRewardCsReq),
-            7144 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildShopAbilityDownCsReq),
-            7142 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildStartStageCsReq),
-            7133 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildShopAbilityUpScRsp),
-            7126 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildUnlockInfoNotify),
-            7135 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildFinishScNotify),
-            7139 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildShopAbilityUpCsReq),
-            7115 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildQueryInfoCsReq),
             7128 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildReRandomStageCsReq),
-            7107 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildReRandomStageScRsp),
-            7112 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildStartLevelCsReq),
-            7124 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildStartLevelScRsp),
-            7140 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildGiveupCsReq),
-            7131 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildTakeExpRewardScRsp),
-            7120 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildShopAbilityDownScRsp),
-            7123 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildGiveupScRsp),
+            7149 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildStartStageScRsp),
+            7111 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildShopAbilityDownScRsp),
+            7140 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildShopAbilityDownCsReq),
+            7123 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildStartLevelScRsp),
+            7117 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildShopAbilityUpCsReq),
+            7130 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildStartLevelCsReq),
+            7145 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildFinishScNotify),
+            7112 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildQueryInfoCsReq),
+            7114 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildCoinNotify),
+            7135 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildTakeExpRewardScRsp),
+            7147 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildLeaveCsReq),
+            7115 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildStartStageCsReq),
+            7109 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildGiveupCsReq),
+            7104 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildShopAbilityUpScRsp),
+            7106 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildTakeExpRewardCsReq),
+            7110 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildReRandomStageScRsp),
+            7142 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildUnlockInfoNotify),
+            7118 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildShopAbilityResetCsReq),
+            7143 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildGiveupScRsp),
+            7150 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildQueryInfoScRsp),
+            7146 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildLeaveScRsp),
+            7122 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildShopAbilityResetScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -118,58 +118,58 @@ impl ::protobuf::Enum for CmdEvolveBuildType {
     fn from_str(str: &str) -> ::std::option::Option<CmdEvolveBuildType> {
         match str {
             "CmdEvolveBuildNone" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildNone),
-            "CmdEvolveBuildShopAbilityResetScRsp" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildShopAbilityResetScRsp),
-            "CmdEvolveBuildLeaveCsReq" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildLeaveCsReq),
+            "CmdEvolveBuildReRandomStageCsReq" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildReRandomStageCsReq),
+            "CmdEvolveBuildStartStageScRsp" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildStartStageScRsp),
+            "CmdEvolveBuildShopAbilityDownScRsp" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildShopAbilityDownScRsp),
+            "CmdEvolveBuildShopAbilityDownCsReq" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildShopAbilityDownCsReq),
+            "CmdEvolveBuildStartLevelScRsp" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildStartLevelScRsp),
+            "CmdEvolveBuildShopAbilityUpCsReq" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildShopAbilityUpCsReq),
+            "CmdEvolveBuildStartLevelCsReq" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildStartLevelCsReq),
+            "CmdEvolveBuildFinishScNotify" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildFinishScNotify),
+            "CmdEvolveBuildQueryInfoCsReq" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildQueryInfoCsReq),
             "CmdEvolveBuildCoinNotify" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildCoinNotify),
+            "CmdEvolveBuildTakeExpRewardScRsp" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildTakeExpRewardScRsp),
+            "CmdEvolveBuildLeaveCsReq" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildLeaveCsReq),
+            "CmdEvolveBuildStartStageCsReq" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildStartStageCsReq),
+            "CmdEvolveBuildGiveupCsReq" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildGiveupCsReq),
+            "CmdEvolveBuildShopAbilityUpScRsp" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildShopAbilityUpScRsp),
+            "CmdEvolveBuildTakeExpRewardCsReq" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildTakeExpRewardCsReq),
+            "CmdEvolveBuildReRandomStageScRsp" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildReRandomStageScRsp),
+            "CmdEvolveBuildUnlockInfoNotify" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildUnlockInfoNotify),
+            "CmdEvolveBuildShopAbilityResetCsReq" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildShopAbilityResetCsReq),
+            "CmdEvolveBuildGiveupScRsp" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildGiveupScRsp),
             "CmdEvolveBuildQueryInfoScRsp" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildQueryInfoScRsp),
             "CmdEvolveBuildLeaveScRsp" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildLeaveScRsp),
-            "CmdEvolveBuildShopAbilityResetCsReq" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildShopAbilityResetCsReq),
-            "CmdEvolveBuildStartStageScRsp" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildStartStageScRsp),
-            "CmdEvolveBuildTakeExpRewardCsReq" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildTakeExpRewardCsReq),
-            "CmdEvolveBuildShopAbilityDownCsReq" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildShopAbilityDownCsReq),
-            "CmdEvolveBuildStartStageCsReq" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildStartStageCsReq),
-            "CmdEvolveBuildShopAbilityUpScRsp" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildShopAbilityUpScRsp),
-            "CmdEvolveBuildUnlockInfoNotify" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildUnlockInfoNotify),
-            "CmdEvolveBuildFinishScNotify" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildFinishScNotify),
-            "CmdEvolveBuildShopAbilityUpCsReq" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildShopAbilityUpCsReq),
-            "CmdEvolveBuildQueryInfoCsReq" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildQueryInfoCsReq),
-            "CmdEvolveBuildReRandomStageCsReq" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildReRandomStageCsReq),
-            "CmdEvolveBuildReRandomStageScRsp" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildReRandomStageScRsp),
-            "CmdEvolveBuildStartLevelCsReq" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildStartLevelCsReq),
-            "CmdEvolveBuildStartLevelScRsp" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildStartLevelScRsp),
-            "CmdEvolveBuildGiveupCsReq" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildGiveupCsReq),
-            "CmdEvolveBuildTakeExpRewardScRsp" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildTakeExpRewardScRsp),
-            "CmdEvolveBuildShopAbilityDownScRsp" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildShopAbilityDownScRsp),
-            "CmdEvolveBuildGiveupScRsp" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildGiveupScRsp),
+            "CmdEvolveBuildShopAbilityResetScRsp" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildShopAbilityResetScRsp),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdEvolveBuildType] = &[
         CmdEvolveBuildType::CmdEvolveBuildNone,
-        CmdEvolveBuildType::CmdEvolveBuildShopAbilityResetScRsp,
-        CmdEvolveBuildType::CmdEvolveBuildLeaveCsReq,
+        CmdEvolveBuildType::CmdEvolveBuildReRandomStageCsReq,
+        CmdEvolveBuildType::CmdEvolveBuildStartStageScRsp,
+        CmdEvolveBuildType::CmdEvolveBuildShopAbilityDownScRsp,
+        CmdEvolveBuildType::CmdEvolveBuildShopAbilityDownCsReq,
+        CmdEvolveBuildType::CmdEvolveBuildStartLevelScRsp,
+        CmdEvolveBuildType::CmdEvolveBuildShopAbilityUpCsReq,
+        CmdEvolveBuildType::CmdEvolveBuildStartLevelCsReq,
+        CmdEvolveBuildType::CmdEvolveBuildFinishScNotify,
+        CmdEvolveBuildType::CmdEvolveBuildQueryInfoCsReq,
         CmdEvolveBuildType::CmdEvolveBuildCoinNotify,
+        CmdEvolveBuildType::CmdEvolveBuildTakeExpRewardScRsp,
+        CmdEvolveBuildType::CmdEvolveBuildLeaveCsReq,
+        CmdEvolveBuildType::CmdEvolveBuildStartStageCsReq,
+        CmdEvolveBuildType::CmdEvolveBuildGiveupCsReq,
+        CmdEvolveBuildType::CmdEvolveBuildShopAbilityUpScRsp,
+        CmdEvolveBuildType::CmdEvolveBuildTakeExpRewardCsReq,
+        CmdEvolveBuildType::CmdEvolveBuildReRandomStageScRsp,
+        CmdEvolveBuildType::CmdEvolveBuildUnlockInfoNotify,
+        CmdEvolveBuildType::CmdEvolveBuildShopAbilityResetCsReq,
+        CmdEvolveBuildType::CmdEvolveBuildGiveupScRsp,
         CmdEvolveBuildType::CmdEvolveBuildQueryInfoScRsp,
         CmdEvolveBuildType::CmdEvolveBuildLeaveScRsp,
-        CmdEvolveBuildType::CmdEvolveBuildShopAbilityResetCsReq,
-        CmdEvolveBuildType::CmdEvolveBuildStartStageScRsp,
-        CmdEvolveBuildType::CmdEvolveBuildTakeExpRewardCsReq,
-        CmdEvolveBuildType::CmdEvolveBuildShopAbilityDownCsReq,
-        CmdEvolveBuildType::CmdEvolveBuildStartStageCsReq,
-        CmdEvolveBuildType::CmdEvolveBuildShopAbilityUpScRsp,
-        CmdEvolveBuildType::CmdEvolveBuildUnlockInfoNotify,
-        CmdEvolveBuildType::CmdEvolveBuildFinishScNotify,
-        CmdEvolveBuildType::CmdEvolveBuildShopAbilityUpCsReq,
-        CmdEvolveBuildType::CmdEvolveBuildQueryInfoCsReq,
-        CmdEvolveBuildType::CmdEvolveBuildReRandomStageCsReq,
-        CmdEvolveBuildType::CmdEvolveBuildReRandomStageScRsp,
-        CmdEvolveBuildType::CmdEvolveBuildStartLevelCsReq,
-        CmdEvolveBuildType::CmdEvolveBuildStartLevelScRsp,
-        CmdEvolveBuildType::CmdEvolveBuildGiveupCsReq,
-        CmdEvolveBuildType::CmdEvolveBuildTakeExpRewardScRsp,
-        CmdEvolveBuildType::CmdEvolveBuildShopAbilityDownScRsp,
-        CmdEvolveBuildType::CmdEvolveBuildGiveupScRsp,
+        CmdEvolveBuildType::CmdEvolveBuildShopAbilityResetScRsp,
     ];
 }
 
@@ -182,29 +182,29 @@ impl ::protobuf::EnumFull for CmdEvolveBuildType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdEvolveBuildType::CmdEvolveBuildNone => 0,
-            CmdEvolveBuildType::CmdEvolveBuildShopAbilityResetScRsp => 1,
-            CmdEvolveBuildType::CmdEvolveBuildLeaveCsReq => 2,
-            CmdEvolveBuildType::CmdEvolveBuildCoinNotify => 3,
-            CmdEvolveBuildType::CmdEvolveBuildQueryInfoScRsp => 4,
-            CmdEvolveBuildType::CmdEvolveBuildLeaveScRsp => 5,
-            CmdEvolveBuildType::CmdEvolveBuildShopAbilityResetCsReq => 6,
-            CmdEvolveBuildType::CmdEvolveBuildStartStageScRsp => 7,
-            CmdEvolveBuildType::CmdEvolveBuildTakeExpRewardCsReq => 8,
-            CmdEvolveBuildType::CmdEvolveBuildShopAbilityDownCsReq => 9,
-            CmdEvolveBuildType::CmdEvolveBuildStartStageCsReq => 10,
-            CmdEvolveBuildType::CmdEvolveBuildShopAbilityUpScRsp => 11,
-            CmdEvolveBuildType::CmdEvolveBuildUnlockInfoNotify => 12,
-            CmdEvolveBuildType::CmdEvolveBuildFinishScNotify => 13,
-            CmdEvolveBuildType::CmdEvolveBuildShopAbilityUpCsReq => 14,
-            CmdEvolveBuildType::CmdEvolveBuildQueryInfoCsReq => 15,
-            CmdEvolveBuildType::CmdEvolveBuildReRandomStageCsReq => 16,
+            CmdEvolveBuildType::CmdEvolveBuildReRandomStageCsReq => 1,
+            CmdEvolveBuildType::CmdEvolveBuildStartStageScRsp => 2,
+            CmdEvolveBuildType::CmdEvolveBuildShopAbilityDownScRsp => 3,
+            CmdEvolveBuildType::CmdEvolveBuildShopAbilityDownCsReq => 4,
+            CmdEvolveBuildType::CmdEvolveBuildStartLevelScRsp => 5,
+            CmdEvolveBuildType::CmdEvolveBuildShopAbilityUpCsReq => 6,
+            CmdEvolveBuildType::CmdEvolveBuildStartLevelCsReq => 7,
+            CmdEvolveBuildType::CmdEvolveBuildFinishScNotify => 8,
+            CmdEvolveBuildType::CmdEvolveBuildQueryInfoCsReq => 9,
+            CmdEvolveBuildType::CmdEvolveBuildCoinNotify => 10,
+            CmdEvolveBuildType::CmdEvolveBuildTakeExpRewardScRsp => 11,
+            CmdEvolveBuildType::CmdEvolveBuildLeaveCsReq => 12,
+            CmdEvolveBuildType::CmdEvolveBuildStartStageCsReq => 13,
+            CmdEvolveBuildType::CmdEvolveBuildGiveupCsReq => 14,
+            CmdEvolveBuildType::CmdEvolveBuildShopAbilityUpScRsp => 15,
+            CmdEvolveBuildType::CmdEvolveBuildTakeExpRewardCsReq => 16,
             CmdEvolveBuildType::CmdEvolveBuildReRandomStageScRsp => 17,
-            CmdEvolveBuildType::CmdEvolveBuildStartLevelCsReq => 18,
-            CmdEvolveBuildType::CmdEvolveBuildStartLevelScRsp => 19,
-            CmdEvolveBuildType::CmdEvolveBuildGiveupCsReq => 20,
-            CmdEvolveBuildType::CmdEvolveBuildTakeExpRewardScRsp => 21,
-            CmdEvolveBuildType::CmdEvolveBuildShopAbilityDownScRsp => 22,
-            CmdEvolveBuildType::CmdEvolveBuildGiveupScRsp => 23,
+            CmdEvolveBuildType::CmdEvolveBuildUnlockInfoNotify => 18,
+            CmdEvolveBuildType::CmdEvolveBuildShopAbilityResetCsReq => 19,
+            CmdEvolveBuildType::CmdEvolveBuildGiveupScRsp => 20,
+            CmdEvolveBuildType::CmdEvolveBuildQueryInfoScRsp => 21,
+            CmdEvolveBuildType::CmdEvolveBuildLeaveScRsp => 22,
+            CmdEvolveBuildType::CmdEvolveBuildShopAbilityResetScRsp => 23,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -224,23 +224,23 @@ impl CmdEvolveBuildType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18CmdEvolveBuildType.proto*\xf7\x06\n\x12CmdEvolveBuildType\x12\x16\
-    \n\x12CmdEvolveBuildNone\x10\0\x12(\n#CmdEvolveBuildShopAbilityResetScRs\
-    p\x10\xdc7\x12\x1d\n\x18CmdEvolveBuildLeaveCsReq\x10\xc47\x12\x1d\n\x18C\
-    mdEvolveBuildCoinNotify\x10\xcf7\x12!\n\x1cCmdEvolveBuildQueryInfoScRsp\
-    \x10\xcc7\x12\x1d\n\x18CmdEvolveBuildLeaveScRsp\x10\xda7\x12(\n#CmdEvolv\
-    eBuildShopAbilityResetCsReq\x10\xce7\x12\"\n\x1dCmdEvolveBuildStartStage\
-    ScRsp\x10\xe17\x12%\n\x20CmdEvolveBuildTakeExpRewardCsReq\x10\xc17\x12'\
-    \n\"CmdEvolveBuildShopAbilityDownCsReq\x10\xe87\x12\"\n\x1dCmdEvolveBuil\
-    dStartStageCsReq\x10\xe67\x12%\n\x20CmdEvolveBuildShopAbilityUpScRsp\x10\
-    \xdd7\x12#\n\x1eCmdEvolveBuildUnlockInfoNotify\x10\xd67\x12!\n\x1cCmdEvo\
-    lveBuildFinishScNotify\x10\xdf7\x12%\n\x20CmdEvolveBuildShopAbilityUpCsR\
-    eq\x10\xe37\x12!\n\x1cCmdEvolveBuildQueryInfoCsReq\x10\xcb7\x12%\n\x20Cm\
-    dEvolveBuildReRandomStageCsReq\x10\xd87\x12%\n\x20CmdEvolveBuildReRandom\
-    StageScRsp\x10\xc37\x12\"\n\x1dCmdEvolveBuildStartLevelCsReq\x10\xc87\
-    \x12\"\n\x1dCmdEvolveBuildStartLevelScRsp\x10\xd47\x12\x1e\n\x19CmdEvolv\
-    eBuildGiveupCsReq\x10\xe47\x12%\n\x20CmdEvolveBuildTakeExpRewardScRsp\
-    \x10\xdb7\x12'\n\"CmdEvolveBuildShopAbilityDownScRsp\x10\xd07\x12\x1e\n\
-    \x19CmdEvolveBuildGiveupScRsp\x10\xd37b\x06proto3\
+    \n\x12CmdEvolveBuildNone\x10\0\x12%\n\x20CmdEvolveBuildReRandomStageCsRe\
+    q\x10\xd87\x12\"\n\x1dCmdEvolveBuildStartStageScRsp\x10\xed7\x12'\n\"Cmd\
+    EvolveBuildShopAbilityDownScRsp\x10\xc77\x12'\n\"CmdEvolveBuildShopAbili\
+    tyDownCsReq\x10\xe47\x12\"\n\x1dCmdEvolveBuildStartLevelScRsp\x10\xd37\
+    \x12%\n\x20CmdEvolveBuildShopAbilityUpCsReq\x10\xcd7\x12\"\n\x1dCmdEvolv\
+    eBuildStartLevelCsReq\x10\xda7\x12!\n\x1cCmdEvolveBuildFinishScNotify\
+    \x10\xe97\x12!\n\x1cCmdEvolveBuildQueryInfoCsReq\x10\xc87\x12\x1d\n\x18C\
+    mdEvolveBuildCoinNotify\x10\xca7\x12%\n\x20CmdEvolveBuildTakeExpRewardSc\
+    Rsp\x10\xdf7\x12\x1d\n\x18CmdEvolveBuildLeaveCsReq\x10\xeb7\x12\"\n\x1dC\
+    mdEvolveBuildStartStageCsReq\x10\xcb7\x12\x1e\n\x19CmdEvolveBuildGiveupC\
+    sReq\x10\xc57\x12%\n\x20CmdEvolveBuildShopAbilityUpScRsp\x10\xc07\x12%\n\
+    \x20CmdEvolveBuildTakeExpRewardCsReq\x10\xc27\x12%\n\x20CmdEvolveBuildRe\
+    RandomStageScRsp\x10\xc67\x12#\n\x1eCmdEvolveBuildUnlockInfoNotify\x10\
+    \xe67\x12(\n#CmdEvolveBuildShopAbilityResetCsReq\x10\xce7\x12\x1e\n\x19C\
+    mdEvolveBuildGiveupScRsp\x10\xe77\x12!\n\x1cCmdEvolveBuildQueryInfoScRsp\
+    \x10\xee7\x12\x1d\n\x18CmdEvolveBuildLeaveScRsp\x10\xea7\x12(\n#CmdEvolv\
+    eBuildShopAbilityResetScRsp\x10\xd27b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

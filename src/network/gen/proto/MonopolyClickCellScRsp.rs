@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyClickCellScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyClickCellScRsp.NAIMNIFDKFJ)
-    pub NAIMNIFDKFJ: u32,
-    // @@protoc_insertion_point(field:MonopolyClickCellScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:MonopolyClickCellScRsp.LNGJKFGLHBE)
-    pub LNGJKFGLHBE: u32,
+    // @@protoc_insertion_point(field:MonopolyClickCellScRsp.PBIGGPACCPB)
+    pub PBIGGPACCPB: u32,
+    // @@protoc_insertion_point(field:MonopolyClickCellScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:MonopolyClickCellScRsp.CNLLDMNCNCI)
+    pub CNLLDMNCNCI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyClickCellScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl MonopolyClickCellScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NAIMNIFDKFJ",
-            |m: &MonopolyClickCellScRsp| { &m.NAIMNIFDKFJ },
-            |m: &mut MonopolyClickCellScRsp| { &mut m.NAIMNIFDKFJ },
+            "PBIGGPACCPB",
+            |m: &MonopolyClickCellScRsp| { &m.PBIGGPACCPB },
+            |m: &mut MonopolyClickCellScRsp| { &mut m.PBIGGPACCPB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &MonopolyClickCellScRsp| { &m.ADADHIHDHJC },
-            |m: &mut MonopolyClickCellScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &MonopolyClickCellScRsp| { &m.retcode },
+            |m: &mut MonopolyClickCellScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LNGJKFGLHBE",
-            |m: &MonopolyClickCellScRsp| { &m.LNGJKFGLHBE },
-            |m: &mut MonopolyClickCellScRsp| { &mut m.LNGJKFGLHBE },
+            "CNLLDMNCNCI",
+            |m: &MonopolyClickCellScRsp| { &m.CNLLDMNCNCI },
+            |m: &mut MonopolyClickCellScRsp| { &mut m.CNLLDMNCNCI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyClickCellScRsp>(
             "MonopolyClickCellScRsp",
@@ -88,13 +88,13 @@ impl ::protobuf::Message for MonopolyClickCellScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 112 => {
-                    self.NAIMNIFDKFJ = is.read_uint32()?;
+                    self.PBIGGPACCPB = is.read_uint32()?;
                 },
-                120 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                96 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 88 => {
-                    self.LNGJKFGLHBE = is.read_uint32()?;
+                    self.CNLLDMNCNCI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for MonopolyClickCellScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NAIMNIFDKFJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.NAIMNIFDKFJ);
+        if self.PBIGGPACCPB != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.PBIGGPACCPB);
         }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
-        if self.LNGJKFGLHBE != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.LNGJKFGLHBE);
+        if self.CNLLDMNCNCI != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.CNLLDMNCNCI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for MonopolyClickCellScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NAIMNIFDKFJ != 0 {
-            os.write_uint32(14, self.NAIMNIFDKFJ)?;
+        if self.PBIGGPACCPB != 0 {
+            os.write_uint32(14, self.PBIGGPACCPB)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(15, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(12, self.retcode)?;
         }
-        if self.LNGJKFGLHBE != 0 {
-            os.write_uint32(11, self.LNGJKFGLHBE)?;
+        if self.CNLLDMNCNCI != 0 {
+            os.write_uint32(11, self.CNLLDMNCNCI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for MonopolyClickCellScRsp {
     }
 
     fn clear(&mut self) {
-        self.NAIMNIFDKFJ = 0;
-        self.ADADHIHDHJC = 0;
-        self.LNGJKFGLHBE = 0;
+        self.PBIGGPACCPB = 0;
+        self.retcode = 0;
+        self.CNLLDMNCNCI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyClickCellScRsp {
         static instance: MonopolyClickCellScRsp = MonopolyClickCellScRsp {
-            NAIMNIFDKFJ: 0,
-            ADADHIHDHJC: 0,
-            LNGJKFGLHBE: 0,
+            PBIGGPACCPB: 0,
+            retcode: 0,
+            CNLLDMNCNCI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyClickCellScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cMonopolyClickCellScRsp.proto\"~\n\x16MonopolyClickCellScRsp\x12\
-    \x20\n\x0bNAIMNIFDKFJ\x18\x0e\x20\x01(\rR\x0bNAIMNIFDKFJ\x12\x20\n\x0bAD\
-    ADHIHDHJC\x18\x0f\x20\x01(\rR\x0bADADHIHDHJC\x12\x20\n\x0bLNGJKFGLHBE\
-    \x18\x0b\x20\x01(\rR\x0bLNGJKFGLHBEb\x06proto3\
+    \n\x1cMonopolyClickCellScRsp.proto\"v\n\x16MonopolyClickCellScRsp\x12\
+    \x20\n\x0bPBIGGPACCPB\x18\x0e\x20\x01(\rR\x0bPBIGGPACCPB\x12\x18\n\x07re\
+    tcode\x18\x0c\x20\x01(\rR\x07retcode\x12\x20\n\x0bCNLLDMNCNCI\x18\x0b\
+    \x20\x01(\rR\x0bCNLLDMNCNCIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

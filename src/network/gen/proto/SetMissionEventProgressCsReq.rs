@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetMissionEventProgressCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetMissionEventProgressCsReq.FINLPBFNLHP)
-    pub FINLPBFNLHP: u32,
-    // @@protoc_insertion_point(field:SetMissionEventProgressCsReq.CBMBKGCHMOK)
-    pub CBMBKGCHMOK: u32,
+    // @@protoc_insertion_point(field:SetMissionEventProgressCsReq.AFMKGEHANLM)
+    pub AFMKGEHANLM: u32,
+    // @@protoc_insertion_point(field:SetMissionEventProgressCsReq.IGBJPCHPPKP)
+    pub IGBJPCHPPKP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SetMissionEventProgressCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl SetMissionEventProgressCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FINLPBFNLHP",
-            |m: &SetMissionEventProgressCsReq| { &m.FINLPBFNLHP },
-            |m: &mut SetMissionEventProgressCsReq| { &mut m.FINLPBFNLHP },
+            "AFMKGEHANLM",
+            |m: &SetMissionEventProgressCsReq| { &m.AFMKGEHANLM },
+            |m: &mut SetMissionEventProgressCsReq| { &mut m.AFMKGEHANLM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CBMBKGCHMOK",
-            |m: &SetMissionEventProgressCsReq| { &m.CBMBKGCHMOK },
-            |m: &mut SetMissionEventProgressCsReq| { &mut m.CBMBKGCHMOK },
+            "IGBJPCHPPKP",
+            |m: &SetMissionEventProgressCsReq| { &m.IGBJPCHPPKP },
+            |m: &mut SetMissionEventProgressCsReq| { &mut m.IGBJPCHPPKP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetMissionEventProgressCsReq>(
             "SetMissionEventProgressCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for SetMissionEventProgressCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.FINLPBFNLHP = is.read_uint32()?;
+                40 => {
+                    self.AFMKGEHANLM = is.read_uint32()?;
                 },
-                64 => {
-                    self.CBMBKGCHMOK = is.read_uint32()?;
+                16 => {
+                    self.IGBJPCHPPKP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for SetMissionEventProgressCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FINLPBFNLHP != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.FINLPBFNLHP);
+        if self.AFMKGEHANLM != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.AFMKGEHANLM);
         }
-        if self.CBMBKGCHMOK != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.CBMBKGCHMOK);
+        if self.IGBJPCHPPKP != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.IGBJPCHPPKP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for SetMissionEventProgressCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FINLPBFNLHP != 0 {
-            os.write_uint32(7, self.FINLPBFNLHP)?;
+        if self.AFMKGEHANLM != 0 {
+            os.write_uint32(5, self.AFMKGEHANLM)?;
         }
-        if self.CBMBKGCHMOK != 0 {
-            os.write_uint32(8, self.CBMBKGCHMOK)?;
+        if self.IGBJPCHPPKP != 0 {
+            os.write_uint32(2, self.IGBJPCHPPKP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for SetMissionEventProgressCsReq {
     }
 
     fn clear(&mut self) {
-        self.FINLPBFNLHP = 0;
-        self.CBMBKGCHMOK = 0;
+        self.AFMKGEHANLM = 0;
+        self.IGBJPCHPPKP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetMissionEventProgressCsReq {
         static instance: SetMissionEventProgressCsReq = SetMissionEventProgressCsReq {
-            FINLPBFNLHP: 0,
-            CBMBKGCHMOK: 0,
+            AFMKGEHANLM: 0,
+            IGBJPCHPPKP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for SetMissionEventProgressCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"SetMissionEventProgressCsReq.proto\"b\n\x1cSetMissionEventProgressCs\
-    Req\x12\x20\n\x0bFINLPBFNLHP\x18\x07\x20\x01(\rR\x0bFINLPBFNLHP\x12\x20\
-    \n\x0bCBMBKGCHMOK\x18\x08\x20\x01(\rR\x0bCBMBKGCHMOKb\x06proto3\
+    Req\x12\x20\n\x0bAFMKGEHANLM\x18\x05\x20\x01(\rR\x0bAFMKGEHANLM\x12\x20\
+    \n\x0bIGBJPCHPPKP\x18\x02\x20\x01(\rR\x0bIGBJPCHPPKPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

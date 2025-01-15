@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChallengeRaidNotify {
     // message fields
-    // @@protoc_insertion_point(field:ChallengeRaidNotify.OMJMAHJCHMA)
-    pub OMJMAHJCHMA: ::protobuf::MessageField<super::MHINMBLGHHD::MHINMBLGHHD>,
+    // @@protoc_insertion_point(field:ChallengeRaidNotify.CGGEFEKKBAG)
+    pub CGGEFEKKBAG: ::protobuf::MessageField<super::HMJENOAHIHE::HMJENOAHIHE>,
     // special fields
     // @@protoc_insertion_point(special_field:ChallengeRaidNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,10 +50,10 @@ impl ChallengeRaidNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MHINMBLGHHD::MHINMBLGHHD>(
-            "OMJMAHJCHMA",
-            |m: &ChallengeRaidNotify| { &m.OMJMAHJCHMA },
-            |m: &mut ChallengeRaidNotify| { &mut m.OMJMAHJCHMA },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HMJENOAHIHE::HMJENOAHIHE>(
+            "CGGEFEKKBAG",
+            |m: &ChallengeRaidNotify| { &m.CGGEFEKKBAG },
+            |m: &mut ChallengeRaidNotify| { &mut m.CGGEFEKKBAG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChallengeRaidNotify>(
             "ChallengeRaidNotify",
@@ -74,7 +74,7 @@ impl ::protobuf::Message for ChallengeRaidNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OMJMAHJCHMA)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CGGEFEKKBAG)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for ChallengeRaidNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.OMJMAHJCHMA.as_ref() {
+        if let Some(v) = self.CGGEFEKKBAG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -98,7 +98,7 @@ impl ::protobuf::Message for ChallengeRaidNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.OMJMAHJCHMA.as_ref() {
+        if let Some(v) = self.CGGEFEKKBAG.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -118,13 +118,13 @@ impl ::protobuf::Message for ChallengeRaidNotify {
     }
 
     fn clear(&mut self) {
-        self.OMJMAHJCHMA.clear();
+        self.CGGEFEKKBAG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengeRaidNotify {
         static instance: ChallengeRaidNotify = ChallengeRaidNotify {
-            OMJMAHJCHMA: ::protobuf::MessageField::none(),
+            CGGEFEKKBAG: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,9 +149,9 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeRaidNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19ChallengeRaidNotify.proto\x1a\x11MHINMBLGHHD.proto\"E\n\x13Challen\
-    geRaidNotify\x12.\n\x0bOMJMAHJCHMA\x18\x03\x20\x01(\x0b2\x0c.MHINMBLGHHD\
-    R\x0bOMJMAHJCHMAb\x06proto3\
+    \n\x19ChallengeRaidNotify.proto\x1a\x11HMJENOAHIHE.proto\"E\n\x13Challen\
+    geRaidNotify\x12.\n\x0bCGGEFEKKBAG\x18\x03\x20\x01(\x0b2\x0c.HMJENOAHIHE\
+    R\x0bCGGEFEKKBAGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -169,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::MHINMBLGHHD::file_descriptor().clone());
+            deps.push(super::HMJENOAHIHE::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChallengeRaidNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AetherDivideFinishChallengeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:AetherDivideFinishChallengeScNotify.GPKEAKPHIPA)
-    pub GPKEAKPHIPA: u32,
+    // @@protoc_insertion_point(field:AetherDivideFinishChallengeScNotify.PGGMKGMBBKJ)
+    pub PGGMKGMBBKJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AetherDivideFinishChallengeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl AetherDivideFinishChallengeScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GPKEAKPHIPA",
-            |m: &AetherDivideFinishChallengeScNotify| { &m.GPKEAKPHIPA },
-            |m: &mut AetherDivideFinishChallengeScNotify| { &mut m.GPKEAKPHIPA },
+            "PGGMKGMBBKJ",
+            |m: &AetherDivideFinishChallengeScNotify| { &m.PGGMKGMBBKJ },
+            |m: &mut AetherDivideFinishChallengeScNotify| { &mut m.PGGMKGMBBKJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AetherDivideFinishChallengeScNotify>(
             "AetherDivideFinishChallengeScNotify",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for AetherDivideFinishChallengeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.GPKEAKPHIPA = is.read_uint32()?;
+                48 => {
+                    self.PGGMKGMBBKJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for AetherDivideFinishChallengeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GPKEAKPHIPA != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.GPKEAKPHIPA);
+        if self.PGGMKGMBBKJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.PGGMKGMBBKJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for AetherDivideFinishChallengeScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GPKEAKPHIPA != 0 {
-            os.write_uint32(13, self.GPKEAKPHIPA)?;
+        if self.PGGMKGMBBKJ != 0 {
+            os.write_uint32(6, self.PGGMKGMBBKJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for AetherDivideFinishChallengeScNotify {
     }
 
     fn clear(&mut self) {
-        self.GPKEAKPHIPA = 0;
+        self.PGGMKGMBBKJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AetherDivideFinishChallengeScNotify {
         static instance: AetherDivideFinishChallengeScNotify = AetherDivideFinishChallengeScNotify {
-            GPKEAKPHIPA: 0,
+            PGGMKGMBBKJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for AetherDivideFinishChallengeScNotify 
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)AetherDivideFinishChallengeScNotify.proto\"G\n#AetherDivideFinishChal\
-    lengeScNotify\x12\x20\n\x0bGPKEAKPHIPA\x18\r\x20\x01(\rR\x0bGPKEAKPHIPAb\
-    \x06proto3\
+    lengeScNotify\x12\x20\n\x0bPGGMKGMBBKJ\x18\x06\x20\x01(\rR\x0bPGGMKGMBBK\
+    Jb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncHandleFriendScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncHandleFriendScNotify.handle_friend_info)
-    pub handle_friend_info: ::protobuf::MessageField<super::FriendListInfo::FriendListInfo>,
-    // @@protoc_insertion_point(field:SyncHandleFriendScNotify.uid)
-    pub uid: u32,
-    // @@protoc_insertion_point(field:SyncHandleFriendScNotify.handle_result)
-    pub handle_result: bool,
+    // @@protoc_insertion_point(field:SyncHandleFriendScNotify.DEPEKPIEGJO)
+    pub DEPEKPIEGJO: u32,
+    // @@protoc_insertion_point(field:SyncHandleFriendScNotify.DEACJCHEGAN)
+    pub DEACJCHEGAN: ::protobuf::MessageField<super::ANGKCPDGNPM::ANGKCPDGNPM>,
+    // @@protoc_insertion_point(field:SyncHandleFriendScNotify.BPKHJKKEGNK)
+    pub BPKHJKKEGNK: bool,
     // special fields
     // @@protoc_insertion_point(special_field:SyncHandleFriendScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl SyncHandleFriendScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FriendListInfo::FriendListInfo>(
-            "handle_friend_info",
-            |m: &SyncHandleFriendScNotify| { &m.handle_friend_info },
-            |m: &mut SyncHandleFriendScNotify| { &mut m.handle_friend_info },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DEPEKPIEGJO",
+            |m: &SyncHandleFriendScNotify| { &m.DEPEKPIEGJO },
+            |m: &mut SyncHandleFriendScNotify| { &mut m.DEPEKPIEGJO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ANGKCPDGNPM::ANGKCPDGNPM>(
+            "DEACJCHEGAN",
+            |m: &SyncHandleFriendScNotify| { &m.DEACJCHEGAN },
+            |m: &mut SyncHandleFriendScNotify| { &mut m.DEACJCHEGAN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "uid",
-            |m: &SyncHandleFriendScNotify| { &m.uid },
-            |m: &mut SyncHandleFriendScNotify| { &mut m.uid },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "handle_result",
-            |m: &SyncHandleFriendScNotify| { &m.handle_result },
-            |m: &mut SyncHandleFriendScNotify| { &mut m.handle_result },
+            "BPKHJKKEGNK",
+            |m: &SyncHandleFriendScNotify| { &m.BPKHJKKEGNK },
+            |m: &mut SyncHandleFriendScNotify| { &mut m.BPKHJKKEGNK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncHandleFriendScNotify>(
             "SyncHandleFriendScNotify",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for SyncHandleFriendScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.handle_friend_info)?;
+                88 => {
+                    self.DEPEKPIEGJO = is.read_uint32()?;
                 },
-                24 => {
-                    self.uid = is.read_uint32()?;
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DEACJCHEGAN)?;
                 },
-                120 => {
-                    self.handle_result = is.read_bool()?;
+                64 => {
+                    self.BPKHJKKEGNK = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for SyncHandleFriendScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.handle_friend_info.as_ref() {
+        if self.DEPEKPIEGJO != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.DEPEKPIEGJO);
+        }
+        if let Some(v) = self.DEACJCHEGAN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.uid);
-        }
-        if self.handle_result != false {
+        if self.BPKHJKKEGNK != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -124,14 +124,14 @@ impl ::protobuf::Message for SyncHandleFriendScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.handle_friend_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if self.DEPEKPIEGJO != 0 {
+            os.write_uint32(11, self.DEPEKPIEGJO)?;
         }
-        if self.uid != 0 {
-            os.write_uint32(3, self.uid)?;
+        if let Some(v) = self.DEACJCHEGAN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
-        if self.handle_result != false {
-            os.write_bool(15, self.handle_result)?;
+        if self.BPKHJKKEGNK != false {
+            os.write_bool(8, self.BPKHJKKEGNK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for SyncHandleFriendScNotify {
     }
 
     fn clear(&mut self) {
-        self.handle_friend_info.clear();
-        self.uid = 0;
-        self.handle_result = false;
+        self.DEPEKPIEGJO = 0;
+        self.DEACJCHEGAN.clear();
+        self.BPKHJKKEGNK = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncHandleFriendScNotify {
         static instance: SyncHandleFriendScNotify = SyncHandleFriendScNotify {
-            handle_friend_info: ::protobuf::MessageField::none(),
-            uid: 0,
-            handle_result: false,
+            DEPEKPIEGJO: 0,
+            DEACJCHEGAN: ::protobuf::MessageField::none(),
+            BPKHJKKEGNK: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for SyncHandleFriendScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eSyncHandleFriendScNotify.proto\x1a\x14FriendListInfo.proto\"\x90\
-    \x01\n\x18SyncHandleFriendScNotify\x12=\n\x12handle_friend_info\x18\x0b\
-    \x20\x01(\x0b2\x0f.FriendListInfoR\x10handleFriendInfo\x12\x10\n\x03uid\
-    \x18\x03\x20\x01(\rR\x03uid\x12#\n\rhandle_result\x18\x0f\x20\x01(\x08R\
-    \x0chandleResultB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x1eSyncHandleFriendScNotify.proto\x1a\x11ANGKCPDGNPM.proto\"\x8e\x01\
+    \n\x18SyncHandleFriendScNotify\x12\x20\n\x0bDEPEKPIEGJO\x18\x0b\x20\x01(\
+    \rR\x0bDEPEKPIEGJO\x12.\n\x0bDEACJCHEGAN\x18\r\x20\x01(\x0b2\x0c.ANGKCPD\
+    GNPMR\x0bDEACJCHEGAN\x12\x20\n\x0bBPKHJKKEGNK\x18\x08\x20\x01(\x08R\x0bB\
+    PKHJKKEGNKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::FriendListInfo::file_descriptor().clone());
+            deps.push(super::ANGKCPDGNPM::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SyncHandleFriendScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

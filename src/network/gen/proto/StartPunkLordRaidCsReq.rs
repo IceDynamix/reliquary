@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartPunkLordRaidCsReq {
     // message fields
-    // @@protoc_insertion_point(field:StartPunkLordRaidCsReq.OLBEAFGCGGA)
-    pub OLBEAFGCGGA: bool,
-    // @@protoc_insertion_point(field:StartPunkLordRaidCsReq.LNCNOFOEHAA)
-    pub LNCNOFOEHAA: u32,
-    // @@protoc_insertion_point(field:StartPunkLordRaidCsReq.FBMGLKNDECD)
-    pub FBMGLKNDECD: u32,
+    // @@protoc_insertion_point(field:StartPunkLordRaidCsReq.DEPEKPIEGJO)
+    pub DEPEKPIEGJO: u32,
+    // @@protoc_insertion_point(field:StartPunkLordRaidCsReq.JCJJEMBFKGB)
+    pub JCJJEMBFKGB: bool,
+    // @@protoc_insertion_point(field:StartPunkLordRaidCsReq.PPAEDKGDKDA)
+    pub PPAEDKGDKDA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:StartPunkLordRaidCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl StartPunkLordRaidCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OLBEAFGCGGA",
-            |m: &StartPunkLordRaidCsReq| { &m.OLBEAFGCGGA },
-            |m: &mut StartPunkLordRaidCsReq| { &mut m.OLBEAFGCGGA },
+            "DEPEKPIEGJO",
+            |m: &StartPunkLordRaidCsReq| { &m.DEPEKPIEGJO },
+            |m: &mut StartPunkLordRaidCsReq| { &mut m.DEPEKPIEGJO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LNCNOFOEHAA",
-            |m: &StartPunkLordRaidCsReq| { &m.LNCNOFOEHAA },
-            |m: &mut StartPunkLordRaidCsReq| { &mut m.LNCNOFOEHAA },
+            "JCJJEMBFKGB",
+            |m: &StartPunkLordRaidCsReq| { &m.JCJJEMBFKGB },
+            |m: &mut StartPunkLordRaidCsReq| { &mut m.JCJJEMBFKGB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FBMGLKNDECD",
-            |m: &StartPunkLordRaidCsReq| { &m.FBMGLKNDECD },
-            |m: &mut StartPunkLordRaidCsReq| { &mut m.FBMGLKNDECD },
+            "PPAEDKGDKDA",
+            |m: &StartPunkLordRaidCsReq| { &m.PPAEDKGDKDA },
+            |m: &mut StartPunkLordRaidCsReq| { &mut m.PPAEDKGDKDA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartPunkLordRaidCsReq>(
             "StartPunkLordRaidCsReq",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for StartPunkLordRaidCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.OLBEAFGCGGA = is.read_bool()?;
+                120 => {
+                    self.DEPEKPIEGJO = is.read_uint32()?;
                 },
-                88 => {
-                    self.LNCNOFOEHAA = is.read_uint32()?;
+                32 => {
+                    self.JCJJEMBFKGB = is.read_bool()?;
                 },
-                40 => {
-                    self.FBMGLKNDECD = is.read_uint32()?;
+                72 => {
+                    self.PPAEDKGDKDA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for StartPunkLordRaidCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OLBEAFGCGGA != false {
+        if self.DEPEKPIEGJO != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.DEPEKPIEGJO);
+        }
+        if self.JCJJEMBFKGB != false {
             my_size += 1 + 1;
         }
-        if self.LNCNOFOEHAA != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.LNCNOFOEHAA);
-        }
-        if self.FBMGLKNDECD != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.FBMGLKNDECD);
+        if self.PPAEDKGDKDA != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.PPAEDKGDKDA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for StartPunkLordRaidCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OLBEAFGCGGA != false {
-            os.write_bool(6, self.OLBEAFGCGGA)?;
+        if self.DEPEKPIEGJO != 0 {
+            os.write_uint32(15, self.DEPEKPIEGJO)?;
         }
-        if self.LNCNOFOEHAA != 0 {
-            os.write_uint32(11, self.LNCNOFOEHAA)?;
+        if self.JCJJEMBFKGB != false {
+            os.write_bool(4, self.JCJJEMBFKGB)?;
         }
-        if self.FBMGLKNDECD != 0 {
-            os.write_uint32(5, self.FBMGLKNDECD)?;
+        if self.PPAEDKGDKDA != 0 {
+            os.write_uint32(9, self.PPAEDKGDKDA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for StartPunkLordRaidCsReq {
     }
 
     fn clear(&mut self) {
-        self.OLBEAFGCGGA = false;
-        self.LNCNOFOEHAA = 0;
-        self.FBMGLKNDECD = 0;
+        self.DEPEKPIEGJO = 0;
+        self.JCJJEMBFKGB = false;
+        self.PPAEDKGDKDA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartPunkLordRaidCsReq {
         static instance: StartPunkLordRaidCsReq = StartPunkLordRaidCsReq {
-            OLBEAFGCGGA: false,
-            LNCNOFOEHAA: 0,
-            FBMGLKNDECD: 0,
+            DEPEKPIEGJO: 0,
+            JCJJEMBFKGB: false,
+            PPAEDKGDKDA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for StartPunkLordRaidCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cStartPunkLordRaidCsReq.proto\"~\n\x16StartPunkLordRaidCsReq\x12\
-    \x20\n\x0bOLBEAFGCGGA\x18\x06\x20\x01(\x08R\x0bOLBEAFGCGGA\x12\x20\n\x0b\
-    LNCNOFOEHAA\x18\x0b\x20\x01(\rR\x0bLNCNOFOEHAA\x12\x20\n\x0bFBMGLKNDECD\
-    \x18\x05\x20\x01(\rR\x0bFBMGLKNDECDb\x06proto3\
+    \x20\n\x0bDEPEKPIEGJO\x18\x0f\x20\x01(\rR\x0bDEPEKPIEGJO\x12\x20\n\x0bJC\
+    JJEMBFKGB\x18\x04\x20\x01(\x08R\x0bJCJJEMBFKGB\x12\x20\n\x0bPPAEDKGDKDA\
+    \x18\t\x20\x01(\rR\x0bPPAEDKGDKDAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

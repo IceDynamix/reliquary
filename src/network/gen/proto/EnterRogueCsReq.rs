@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterRogueCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EnterRogueCsReq.OMBLHJDKEJA)
-    pub OMBLHJDKEJA: u32,
-    // @@protoc_insertion_point(field:EnterRogueCsReq.LMFFBHEOONE)
-    pub LMFFBHEOONE: u32,
+    // @@protoc_insertion_point(field:EnterRogueCsReq.CMDGNACLGID)
+    pub CMDGNACLGID: u32,
+    // @@protoc_insertion_point(field:EnterRogueCsReq.KJKPMFFAMFK)
+    pub KJKPMFFAMFK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EnterRogueCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl EnterRogueCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OMBLHJDKEJA",
-            |m: &EnterRogueCsReq| { &m.OMBLHJDKEJA },
-            |m: &mut EnterRogueCsReq| { &mut m.OMBLHJDKEJA },
+            "CMDGNACLGID",
+            |m: &EnterRogueCsReq| { &m.CMDGNACLGID },
+            |m: &mut EnterRogueCsReq| { &mut m.CMDGNACLGID },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LMFFBHEOONE",
-            |m: &EnterRogueCsReq| { &m.LMFFBHEOONE },
-            |m: &mut EnterRogueCsReq| { &mut m.LMFFBHEOONE },
+            "KJKPMFFAMFK",
+            |m: &EnterRogueCsReq| { &m.KJKPMFFAMFK },
+            |m: &mut EnterRogueCsReq| { &mut m.KJKPMFFAMFK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterRogueCsReq>(
             "EnterRogueCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for EnterRogueCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.OMBLHJDKEJA = is.read_uint32()?;
+                120 => {
+                    self.CMDGNACLGID = is.read_uint32()?;
                 },
-                96 => {
-                    self.LMFFBHEOONE = is.read_uint32()?;
+                112 => {
+                    self.KJKPMFFAMFK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for EnterRogueCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OMBLHJDKEJA != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.OMBLHJDKEJA);
+        if self.CMDGNACLGID != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.CMDGNACLGID);
         }
-        if self.LMFFBHEOONE != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.LMFFBHEOONE);
+        if self.KJKPMFFAMFK != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.KJKPMFFAMFK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for EnterRogueCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OMBLHJDKEJA != 0 {
-            os.write_uint32(1, self.OMBLHJDKEJA)?;
+        if self.CMDGNACLGID != 0 {
+            os.write_uint32(15, self.CMDGNACLGID)?;
         }
-        if self.LMFFBHEOONE != 0 {
-            os.write_uint32(12, self.LMFFBHEOONE)?;
+        if self.KJKPMFFAMFK != 0 {
+            os.write_uint32(14, self.KJKPMFFAMFK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for EnterRogueCsReq {
     }
 
     fn clear(&mut self) {
-        self.OMBLHJDKEJA = 0;
-        self.LMFFBHEOONE = 0;
+        self.CMDGNACLGID = 0;
+        self.KJKPMFFAMFK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterRogueCsReq {
         static instance: EnterRogueCsReq = EnterRogueCsReq {
-            OMBLHJDKEJA: 0,
-            LMFFBHEOONE: 0,
+            CMDGNACLGID: 0,
+            KJKPMFFAMFK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for EnterRogueCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15EnterRogueCsReq.proto\"U\n\x0fEnterRogueCsReq\x12\x20\n\x0bOMBLHJD\
-    KEJA\x18\x01\x20\x01(\rR\x0bOMBLHJDKEJA\x12\x20\n\x0bLMFFBHEOONE\x18\x0c\
-    \x20\x01(\rR\x0bLMFFBHEOONEb\x06proto3\
+    \n\x15EnterRogueCsReq.proto\"U\n\x0fEnterRogueCsReq\x12\x20\n\x0bCMDGNAC\
+    LGID\x18\x0f\x20\x01(\rR\x0bCMDGNACLGID\x12\x20\n\x0bKJKPMFFAMFK\x18\x0e\
+    \x20\x01(\rR\x0bKJKPMFFAMFKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

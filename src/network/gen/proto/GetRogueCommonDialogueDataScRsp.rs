@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetRogueCommonDialogueDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetRogueCommonDialogueDataScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:GetRogueCommonDialogueDataScRsp.MEGOKDOCHJH)
-    pub MEGOKDOCHJH: ::std::vec::Vec<super::OMJJAFALBLM::OMJJAFALBLM>,
+    // @@protoc_insertion_point(field:GetRogueCommonDialogueDataScRsp.OFKGHJCHEHE)
+    pub OFKGHJCHEHE: ::std::vec::Vec<super::DOKFNAEEADE::DOKFNAEEADE>,
+    // @@protoc_insertion_point(field:GetRogueCommonDialogueDataScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetRogueCommonDialogueDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl GetRogueCommonDialogueDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &GetRogueCommonDialogueDataScRsp| { &m.ADADHIHDHJC },
-            |m: &mut GetRogueCommonDialogueDataScRsp| { &mut m.ADADHIHDHJC },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MEGOKDOCHJH",
-            |m: &GetRogueCommonDialogueDataScRsp| { &m.MEGOKDOCHJH },
-            |m: &mut GetRogueCommonDialogueDataScRsp| { &mut m.MEGOKDOCHJH },
+            "OFKGHJCHEHE",
+            |m: &GetRogueCommonDialogueDataScRsp| { &m.OFKGHJCHEHE },
+            |m: &mut GetRogueCommonDialogueDataScRsp| { &mut m.OFKGHJCHEHE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GetRogueCommonDialogueDataScRsp| { &m.retcode },
+            |m: &mut GetRogueCommonDialogueDataScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetRogueCommonDialogueDataScRsp>(
             "GetRogueCommonDialogueDataScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for GetRogueCommonDialogueDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                10 => {
+                    self.OFKGHJCHEHE.push(is.read_message()?);
                 },
-                82 => {
-                    self.MEGOKDOCHJH.push(is.read_message()?);
+                56 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,25 +98,25 @@ impl ::protobuf::Message for GetRogueCommonDialogueDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.ADADHIHDHJC);
-        }
-        for value in &self.MEGOKDOCHJH {
+        for value in &self.OFKGHJCHEHE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(11, self.ADADHIHDHJC)?;
-        }
-        for v in &self.MEGOKDOCHJH {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        for v in &self.OFKGHJCHEHE {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
+        if self.retcode != 0 {
+            os.write_uint32(7, self.retcode)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -134,15 +134,15 @@ impl ::protobuf::Message for GetRogueCommonDialogueDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADADHIHDHJC = 0;
-        self.MEGOKDOCHJH.clear();
+        self.OFKGHJCHEHE.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetRogueCommonDialogueDataScRsp {
         static instance: GetRogueCommonDialogueDataScRsp = GetRogueCommonDialogueDataScRsp {
-            ADADHIHDHJC: 0,
-            MEGOKDOCHJH: ::std::vec::Vec::new(),
+            OFKGHJCHEHE: ::std::vec::Vec::new(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for GetRogueCommonDialogueDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n%GetRogueCommonDialogueDataScRsp.proto\x1a\x11OMJJAFALBLM.proto\"s\n\
-    \x1fGetRogueCommonDialogueDataScRsp\x12\x20\n\x0bADADHIHDHJC\x18\x0b\x20\
-    \x01(\rR\x0bADADHIHDHJC\x12.\n\x0bMEGOKDOCHJH\x18\n\x20\x03(\x0b2\x0c.OM\
-    JJAFALBLMR\x0bMEGOKDOCHJHb\x06proto3\
+    \n%GetRogueCommonDialogueDataScRsp.proto\x1a\x11DOKFNAEEADE.proto\"k\n\
+    \x1fGetRogueCommonDialogueDataScRsp\x12.\n\x0bOFKGHJCHEHE\x18\x01\x20\
+    \x03(\x0b2\x0c.DOKFNAEEADER\x0bOFKGHJCHEHE\x12\x18\n\x07retcode\x18\x07\
+    \x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::OMJJAFALBLM::file_descriptor().clone());
+            deps.push(super::DOKFNAEEADE::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetRogueCommonDialogueDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

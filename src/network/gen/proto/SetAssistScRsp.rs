@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetAssistScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SetAssistScRsp.DHPDHGHAEOP)
-    pub DHPDHGHAEOP: u32,
-    // @@protoc_insertion_point(field:SetAssistScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:SetAssistScRsp.LNCNOFOEHAA)
-    pub LNCNOFOEHAA: u32,
+    // @@protoc_insertion_point(field:SetAssistScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:SetAssistScRsp.DEPEKPIEGJO)
+    pub DEPEKPIEGJO: u32,
+    // @@protoc_insertion_point(field:SetAssistScRsp.avatar_id)
+    pub avatar_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SetAssistScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl SetAssistScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DHPDHGHAEOP",
-            |m: &SetAssistScRsp| { &m.DHPDHGHAEOP },
-            |m: &mut SetAssistScRsp| { &mut m.DHPDHGHAEOP },
+            "retcode",
+            |m: &SetAssistScRsp| { &m.retcode },
+            |m: &mut SetAssistScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &SetAssistScRsp| { &m.ADADHIHDHJC },
-            |m: &mut SetAssistScRsp| { &mut m.ADADHIHDHJC },
+            "DEPEKPIEGJO",
+            |m: &SetAssistScRsp| { &m.DEPEKPIEGJO },
+            |m: &mut SetAssistScRsp| { &mut m.DEPEKPIEGJO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LNCNOFOEHAA",
-            |m: &SetAssistScRsp| { &m.LNCNOFOEHAA },
-            |m: &mut SetAssistScRsp| { &mut m.LNCNOFOEHAA },
+            "avatar_id",
+            |m: &SetAssistScRsp| { &m.avatar_id },
+            |m: &mut SetAssistScRsp| { &mut m.avatar_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetAssistScRsp>(
             "SetAssistScRsp",
@@ -88,13 +88,13 @@ impl ::protobuf::Message for SetAssistScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 24 => {
-                    self.DHPDHGHAEOP = is.read_uint32()?;
+                    self.retcode = is.read_uint32()?;
                 },
-                40 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                16 => {
+                    self.DEPEKPIEGJO = is.read_uint32()?;
                 },
-                8 => {
-                    self.LNCNOFOEHAA = is.read_uint32()?;
+                32 => {
+                    self.avatar_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for SetAssistScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DHPDHGHAEOP != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.DHPDHGHAEOP);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.ADADHIHDHJC);
+        if self.DEPEKPIEGJO != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.DEPEKPIEGJO);
         }
-        if self.LNCNOFOEHAA != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.LNCNOFOEHAA);
+        if self.avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for SetAssistScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DHPDHGHAEOP != 0 {
-            os.write_uint32(3, self.DHPDHGHAEOP)?;
+        if self.retcode != 0 {
+            os.write_uint32(3, self.retcode)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(5, self.ADADHIHDHJC)?;
+        if self.DEPEKPIEGJO != 0 {
+            os.write_uint32(2, self.DEPEKPIEGJO)?;
         }
-        if self.LNCNOFOEHAA != 0 {
-            os.write_uint32(1, self.LNCNOFOEHAA)?;
+        if self.avatar_id != 0 {
+            os.write_uint32(4, self.avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for SetAssistScRsp {
     }
 
     fn clear(&mut self) {
-        self.DHPDHGHAEOP = 0;
-        self.ADADHIHDHJC = 0;
-        self.LNCNOFOEHAA = 0;
+        self.retcode = 0;
+        self.DEPEKPIEGJO = 0;
+        self.avatar_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetAssistScRsp {
         static instance: SetAssistScRsp = SetAssistScRsp {
-            DHPDHGHAEOP: 0,
-            ADADHIHDHJC: 0,
-            LNCNOFOEHAA: 0,
+            retcode: 0,
+            DEPEKPIEGJO: 0,
+            avatar_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for SetAssistScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14SetAssistScRsp.proto\"v\n\x0eSetAssistScRsp\x12\x20\n\x0bDHPDHGHAE\
-    OP\x18\x03\x20\x01(\rR\x0bDHPDHGHAEOP\x12\x20\n\x0bADADHIHDHJC\x18\x05\
-    \x20\x01(\rR\x0bADADHIHDHJC\x12\x20\n\x0bLNCNOFOEHAA\x18\x01\x20\x01(\rR\
-    \x0bLNCNOFOEHAAb\x06proto3\
+    \n\x14SetAssistScRsp.proto\"i\n\x0eSetAssistScRsp\x12\x18\n\x07retcode\
+    \x18\x03\x20\x01(\rR\x07retcode\x12\x20\n\x0bDEPEKPIEGJO\x18\x02\x20\x01\
+    (\rR\x0bDEPEKPIEGJO\x12\x1b\n\tavatar_id\x18\x04\x20\x01(\rR\x08avatarId\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

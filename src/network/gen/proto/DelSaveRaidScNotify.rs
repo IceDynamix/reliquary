@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DelSaveRaidScNotify {
     // message fields
-    // @@protoc_insertion_point(field:DelSaveRaidScNotify.DNMJBNNJLEL)
-    pub DNMJBNNJLEL: u32,
-    // @@protoc_insertion_point(field:DelSaveRaidScNotify.ODOAJJGMBCL)
-    pub ODOAJJGMBCL: u32,
+    // @@protoc_insertion_point(field:DelSaveRaidScNotify.NBLJPGFHDFI)
+    pub NBLJPGFHDFI: u32,
+    // @@protoc_insertion_point(field:DelSaveRaidScNotify.CFNJJEJIGOK)
+    pub CFNJJEJIGOK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DelSaveRaidScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl DelSaveRaidScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DNMJBNNJLEL",
-            |m: &DelSaveRaidScNotify| { &m.DNMJBNNJLEL },
-            |m: &mut DelSaveRaidScNotify| { &mut m.DNMJBNNJLEL },
+            "NBLJPGFHDFI",
+            |m: &DelSaveRaidScNotify| { &m.NBLJPGFHDFI },
+            |m: &mut DelSaveRaidScNotify| { &mut m.NBLJPGFHDFI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ODOAJJGMBCL",
-            |m: &DelSaveRaidScNotify| { &m.ODOAJJGMBCL },
-            |m: &mut DelSaveRaidScNotify| { &mut m.ODOAJJGMBCL },
+            "CFNJJEJIGOK",
+            |m: &DelSaveRaidScNotify| { &m.CFNJJEJIGOK },
+            |m: &mut DelSaveRaidScNotify| { &mut m.CFNJJEJIGOK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DelSaveRaidScNotify>(
             "DelSaveRaidScNotify",
@@ -81,10 +81,10 @@ impl ::protobuf::Message for DelSaveRaidScNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 16 => {
-                    self.DNMJBNNJLEL = is.read_uint32()?;
+                    self.NBLJPGFHDFI = is.read_uint32()?;
                 },
-                120 => {
-                    self.ODOAJJGMBCL = is.read_uint32()?;
+                48 => {
+                    self.CFNJJEJIGOK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for DelSaveRaidScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DNMJBNNJLEL != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.DNMJBNNJLEL);
+        if self.NBLJPGFHDFI != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.NBLJPGFHDFI);
         }
-        if self.ODOAJJGMBCL != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.ODOAJJGMBCL);
+        if self.CFNJJEJIGOK != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.CFNJJEJIGOK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for DelSaveRaidScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DNMJBNNJLEL != 0 {
-            os.write_uint32(2, self.DNMJBNNJLEL)?;
+        if self.NBLJPGFHDFI != 0 {
+            os.write_uint32(2, self.NBLJPGFHDFI)?;
         }
-        if self.ODOAJJGMBCL != 0 {
-            os.write_uint32(15, self.ODOAJJGMBCL)?;
+        if self.CFNJJEJIGOK != 0 {
+            os.write_uint32(6, self.CFNJJEJIGOK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for DelSaveRaidScNotify {
     }
 
     fn clear(&mut self) {
-        self.DNMJBNNJLEL = 0;
-        self.ODOAJJGMBCL = 0;
+        self.NBLJPGFHDFI = 0;
+        self.CFNJJEJIGOK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DelSaveRaidScNotify {
         static instance: DelSaveRaidScNotify = DelSaveRaidScNotify {
-            DNMJBNNJLEL: 0,
-            ODOAJJGMBCL: 0,
+            NBLJPGFHDFI: 0,
+            CFNJJEJIGOK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for DelSaveRaidScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19DelSaveRaidScNotify.proto\"Y\n\x13DelSaveRaidScNotify\x12\x20\n\
-    \x0bDNMJBNNJLEL\x18\x02\x20\x01(\rR\x0bDNMJBNNJLEL\x12\x20\n\x0bODOAJJGM\
-    BCL\x18\x0f\x20\x01(\rR\x0bODOAJJGMBCLb\x06proto3\
+    \x0bNBLJPGFHDFI\x18\x02\x20\x01(\rR\x0bNBLJPGFHDFI\x12\x20\n\x0bCFNJJEJI\
+    GOK\x18\x06\x20\x01(\rR\x0bCFNJJEJIGOKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

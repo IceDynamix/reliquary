@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ClockParkStartScriptCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ClockParkStartScriptCsReq.DMLOCLPCMJM)
-    pub DMLOCLPCMJM: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ClockParkStartScriptCsReq.LCEEDIGELGM)
-    pub LCEEDIGELGM: u32,
+    // @@protoc_insertion_point(field:ClockParkStartScriptCsReq.GOHGIEMLNOM)
+    pub GOHGIEMLNOM: u32,
+    // @@protoc_insertion_point(field:ClockParkStartScriptCsReq.DBCMOBKPKJI)
+    pub DBCMOBKPKJI: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:ClockParkStartScriptCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl ClockParkStartScriptCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DMLOCLPCMJM",
-            |m: &ClockParkStartScriptCsReq| { &m.DMLOCLPCMJM },
-            |m: &mut ClockParkStartScriptCsReq| { &mut m.DMLOCLPCMJM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LCEEDIGELGM",
-            |m: &ClockParkStartScriptCsReq| { &m.LCEEDIGELGM },
-            |m: &mut ClockParkStartScriptCsReq| { &mut m.LCEEDIGELGM },
+            "GOHGIEMLNOM",
+            |m: &ClockParkStartScriptCsReq| { &m.GOHGIEMLNOM },
+            |m: &mut ClockParkStartScriptCsReq| { &mut m.GOHGIEMLNOM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DBCMOBKPKJI",
+            |m: &ClockParkStartScriptCsReq| { &m.DBCMOBKPKJI },
+            |m: &mut ClockParkStartScriptCsReq| { &mut m.DBCMOBKPKJI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ClockParkStartScriptCsReq>(
             "ClockParkStartScriptCsReq",
@@ -80,14 +80,14 @@ impl ::protobuf::Message for ClockParkStartScriptCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.DMLOCLPCMJM)?;
+                24 => {
+                    self.GOHGIEMLNOM = is.read_uint32()?;
                 },
-                72 => {
-                    self.DMLOCLPCMJM.push(is.read_uint32()?);
+                18 => {
+                    is.read_repeated_packed_uint32_into(&mut self.DBCMOBKPKJI)?;
                 },
-                32 => {
-                    self.LCEEDIGELGM = is.read_uint32()?;
+                16 => {
+                    self.DBCMOBKPKJI.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,24 +101,24 @@ impl ::protobuf::Message for ClockParkStartScriptCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.DMLOCLPCMJM {
-            my_size += ::protobuf::rt::uint32_size(9, *value);
-        };
-        if self.LCEEDIGELGM != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.LCEEDIGELGM);
+        if self.GOHGIEMLNOM != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.GOHGIEMLNOM);
         }
+        for value in &self.DBCMOBKPKJI {
+            my_size += ::protobuf::rt::uint32_size(2, *value);
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.DMLOCLPCMJM {
-            os.write_uint32(9, *v)?;
-        };
-        if self.LCEEDIGELGM != 0 {
-            os.write_uint32(4, self.LCEEDIGELGM)?;
+        if self.GOHGIEMLNOM != 0 {
+            os.write_uint32(3, self.GOHGIEMLNOM)?;
         }
+        for v in &self.DBCMOBKPKJI {
+            os.write_uint32(2, *v)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -136,15 +136,15 @@ impl ::protobuf::Message for ClockParkStartScriptCsReq {
     }
 
     fn clear(&mut self) {
-        self.DMLOCLPCMJM.clear();
-        self.LCEEDIGELGM = 0;
+        self.GOHGIEMLNOM = 0;
+        self.DBCMOBKPKJI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ClockParkStartScriptCsReq {
         static instance: ClockParkStartScriptCsReq = ClockParkStartScriptCsReq {
-            DMLOCLPCMJM: ::std::vec::Vec::new(),
-            LCEEDIGELGM: 0,
+            GOHGIEMLNOM: 0,
+            DBCMOBKPKJI: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -170,8 +170,8 @@ impl ::protobuf::reflect::ProtobufValue for ClockParkStartScriptCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fClockParkStartScriptCsReq.proto\"_\n\x19ClockParkStartScriptCsReq\
-    \x12\x20\n\x0bDMLOCLPCMJM\x18\t\x20\x03(\rR\x0bDMLOCLPCMJM\x12\x20\n\x0b\
-    LCEEDIGELGM\x18\x04\x20\x01(\rR\x0bLCEEDIGELGMb\x06proto3\
+    \x12\x20\n\x0bGOHGIEMLNOM\x18\x03\x20\x01(\rR\x0bGOHGIEMLNOM\x12\x20\n\
+    \x0bDBCMOBKPKJI\x18\x02\x20\x03(\rR\x0bDBCMOBKPKJIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayerReturnForceFinishScNotify {
     // message fields
-    // @@protoc_insertion_point(field:PlayerReturnForceFinishScNotify.PBEMGMEBGGG)
-    pub PBEMGMEBGGG: ::protobuf::MessageField<super::FMELHEFCAJB::FMELHEFCAJB>,
+    // @@protoc_insertion_point(field:PlayerReturnForceFinishScNotify.BNKGHFHHJIK)
+    pub BNKGHFHHJIK: ::protobuf::MessageField<super::KODBOONBEBO::KODBOONBEBO>,
     // special fields
     // @@protoc_insertion_point(special_field:PlayerReturnForceFinishScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,10 +50,10 @@ impl PlayerReturnForceFinishScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FMELHEFCAJB::FMELHEFCAJB>(
-            "PBEMGMEBGGG",
-            |m: &PlayerReturnForceFinishScNotify| { &m.PBEMGMEBGGG },
-            |m: &mut PlayerReturnForceFinishScNotify| { &mut m.PBEMGMEBGGG },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KODBOONBEBO::KODBOONBEBO>(
+            "BNKGHFHHJIK",
+            |m: &PlayerReturnForceFinishScNotify| { &m.BNKGHFHHJIK },
+            |m: &mut PlayerReturnForceFinishScNotify| { &mut m.BNKGHFHHJIK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayerReturnForceFinishScNotify>(
             "PlayerReturnForceFinishScNotify",
@@ -74,7 +74,7 @@ impl ::protobuf::Message for PlayerReturnForceFinishScNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PBEMGMEBGGG)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BNKGHFHHJIK)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for PlayerReturnForceFinishScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.PBEMGMEBGGG.as_ref() {
+        if let Some(v) = self.BNKGHFHHJIK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -98,7 +98,7 @@ impl ::protobuf::Message for PlayerReturnForceFinishScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.PBEMGMEBGGG.as_ref() {
+        if let Some(v) = self.BNKGHFHHJIK.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -118,13 +118,13 @@ impl ::protobuf::Message for PlayerReturnForceFinishScNotify {
     }
 
     fn clear(&mut self) {
-        self.PBEMGMEBGGG.clear();
+        self.BNKGHFHHJIK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayerReturnForceFinishScNotify {
         static instance: PlayerReturnForceFinishScNotify = PlayerReturnForceFinishScNotify {
-            PBEMGMEBGGG: ::protobuf::MessageField::none(),
+            BNKGHFHHJIK: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,9 +149,9 @@ impl ::protobuf::reflect::ProtobufValue for PlayerReturnForceFinishScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n%PlayerReturnForceFinishScNotify.proto\x1a\x11FMELHEFCAJB.proto\"Q\n\
-    \x1fPlayerReturnForceFinishScNotify\x12.\n\x0bPBEMGMEBGGG\x18\t\x20\x01(\
-    \x0b2\x0c.FMELHEFCAJBR\x0bPBEMGMEBGGGb\x06proto3\
+    \n%PlayerReturnForceFinishScNotify.proto\x1a\x11KODBOONBEBO.proto\"Q\n\
+    \x1fPlayerReturnForceFinishScNotify\x12.\n\x0bBNKGHFHHJIK\x18\t\x20\x01(\
+    \x0b2\x0c.KODBOONBEBOR\x0bBNKGHFHHJIKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -169,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::FMELHEFCAJB::file_descriptor().clone());
+            deps.push(super::KODBOONBEBO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PlayerReturnForceFinishScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

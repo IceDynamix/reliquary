@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MatchThreeSetBirdPosScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MatchThreeSetBirdPosScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:MatchThreeSetBirdPosScRsp.JOJMKBPLJPD)
-    pub JOJMKBPLJPD: u32,
-    // @@protoc_insertion_point(field:MatchThreeSetBirdPosScRsp.AIPLKCHCKDL)
-    pub AIPLKCHCKDL: u32,
+    // @@protoc_insertion_point(field:MatchThreeSetBirdPosScRsp.KFAHMGFLAAA)
+    pub KFAHMGFLAAA: u32,
+    // @@protoc_insertion_point(field:MatchThreeSetBirdPosScRsp.EGJBCBEIIII)
+    pub EGJBCBEIIII: u32,
+    // @@protoc_insertion_point(field:MatchThreeSetBirdPosScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MatchThreeSetBirdPosScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl MatchThreeSetBirdPosScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &MatchThreeSetBirdPosScRsp| { &m.ADADHIHDHJC },
-            |m: &mut MatchThreeSetBirdPosScRsp| { &mut m.ADADHIHDHJC },
+            "KFAHMGFLAAA",
+            |m: &MatchThreeSetBirdPosScRsp| { &m.KFAHMGFLAAA },
+            |m: &mut MatchThreeSetBirdPosScRsp| { &mut m.KFAHMGFLAAA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JOJMKBPLJPD",
-            |m: &MatchThreeSetBirdPosScRsp| { &m.JOJMKBPLJPD },
-            |m: &mut MatchThreeSetBirdPosScRsp| { &mut m.JOJMKBPLJPD },
+            "EGJBCBEIIII",
+            |m: &MatchThreeSetBirdPosScRsp| { &m.EGJBCBEIIII },
+            |m: &mut MatchThreeSetBirdPosScRsp| { &mut m.EGJBCBEIIII },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AIPLKCHCKDL",
-            |m: &MatchThreeSetBirdPosScRsp| { &m.AIPLKCHCKDL },
-            |m: &mut MatchThreeSetBirdPosScRsp| { &mut m.AIPLKCHCKDL },
+            "retcode",
+            |m: &MatchThreeSetBirdPosScRsp| { &m.retcode },
+            |m: &mut MatchThreeSetBirdPosScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MatchThreeSetBirdPosScRsp>(
             "MatchThreeSetBirdPosScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for MatchThreeSetBirdPosScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
-                },
                 16 => {
-                    self.JOJMKBPLJPD = is.read_uint32()?;
+                    self.KFAHMGFLAAA = is.read_uint32()?;
                 },
-                120 => {
-                    self.AIPLKCHCKDL = is.read_uint32()?;
+                80 => {
+                    self.EGJBCBEIIII = is.read_uint32()?;
+                },
+                8 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for MatchThreeSetBirdPosScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.ADADHIHDHJC);
+        if self.KFAHMGFLAAA != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.KFAHMGFLAAA);
         }
-        if self.JOJMKBPLJPD != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.JOJMKBPLJPD);
+        if self.EGJBCBEIIII != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.EGJBCBEIIII);
         }
-        if self.AIPLKCHCKDL != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.AIPLKCHCKDL);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for MatchThreeSetBirdPosScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(10, self.ADADHIHDHJC)?;
+        if self.KFAHMGFLAAA != 0 {
+            os.write_uint32(2, self.KFAHMGFLAAA)?;
         }
-        if self.JOJMKBPLJPD != 0 {
-            os.write_uint32(2, self.JOJMKBPLJPD)?;
+        if self.EGJBCBEIIII != 0 {
+            os.write_uint32(10, self.EGJBCBEIIII)?;
         }
-        if self.AIPLKCHCKDL != 0 {
-            os.write_uint32(15, self.AIPLKCHCKDL)?;
+        if self.retcode != 0 {
+            os.write_uint32(1, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for MatchThreeSetBirdPosScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADADHIHDHJC = 0;
-        self.JOJMKBPLJPD = 0;
-        self.AIPLKCHCKDL = 0;
+        self.KFAHMGFLAAA = 0;
+        self.EGJBCBEIIII = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MatchThreeSetBirdPosScRsp {
         static instance: MatchThreeSetBirdPosScRsp = MatchThreeSetBirdPosScRsp {
-            ADADHIHDHJC: 0,
-            JOJMKBPLJPD: 0,
-            AIPLKCHCKDL: 0,
+            KFAHMGFLAAA: 0,
+            EGJBCBEIIII: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for MatchThreeSetBirdPosScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fMatchThreeSetBirdPosScRsp.proto\"\x81\x01\n\x19MatchThreeSetBirdPo\
-    sScRsp\x12\x20\n\x0bADADHIHDHJC\x18\n\x20\x01(\rR\x0bADADHIHDHJC\x12\x20\
-    \n\x0bJOJMKBPLJPD\x18\x02\x20\x01(\rR\x0bJOJMKBPLJPD\x12\x20\n\x0bAIPLKC\
-    HCKDL\x18\x0f\x20\x01(\rR\x0bAIPLKCHCKDLb\x06proto3\
+    \n\x1fMatchThreeSetBirdPosScRsp.proto\"y\n\x19MatchThreeSetBirdPosScRsp\
+    \x12\x20\n\x0bKFAHMGFLAAA\x18\x02\x20\x01(\rR\x0bKFAHMGFLAAA\x12\x20\n\
+    \x0bEGJBCBEIIII\x18\n\x20\x01(\rR\x0bEGJBCBEIIII\x12\x18\n\x07retcode\
+    \x18\x01\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

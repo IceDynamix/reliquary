@@ -30,7 +30,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub struct RogueModifierUpdateNotify {
     // message fields
     // @@protoc_insertion_point(field:RogueModifierUpdateNotify.CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER)
-    pub CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER: ::protobuf::MessageField<super::HHEJBAAIMFE::HHEJBAAIMFE>,
+    pub CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER: ::protobuf::MessageField<super::PPAGBCJIBNL::PPAGBCJIBNL>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueModifierUpdateNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,7 +50,7 @@ impl RogueModifierUpdateNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HHEJBAAIMFE::HHEJBAAIMFE>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PPAGBCJIBNL::PPAGBCJIBNL>(
             "CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER",
             |m: &RogueModifierUpdateNotify| { &m.CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER },
             |m: &mut RogueModifierUpdateNotify| { &mut m.CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER },
@@ -149,9 +149,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueModifierUpdateNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fRogueModifierUpdateNotify.proto\x1a\x11HHEJBAAIMFE.proto\"~\n\x19R\
+    \n\x1fRogueModifierUpdateNotify.proto\x1a\x11PPAGBCJIBNL.proto\"~\n\x19R\
     ogueModifierUpdateNotify\x12a\n'CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER\
-    \x18\x07\x20\x01(\x0b2\x0c.HHEJBAAIMFER\"CHESSROGUECELLUPDATEREASONMODIF\
+    \x18\x07\x20\x01(\x0b2\x0c.PPAGBCJIBNLR\"CHESSROGUECELLUPDATEREASONMODIF\
     IERb\x06proto3\
 ";
 
@@ -170,7 +170,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::HHEJBAAIMFE::file_descriptor().clone());
+            deps.push(super::PPAGBCJIBNL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueModifierUpdateNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

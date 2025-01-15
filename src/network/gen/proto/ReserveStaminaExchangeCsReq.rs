@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ReserveStaminaExchangeCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ReserveStaminaExchangeCsReq.num)
-    pub num: u32,
+    // @@protoc_insertion_point(field:ReserveStaminaExchangeCsReq.LJDBKCBFPPC)
+    pub LJDBKCBFPPC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ReserveStaminaExchangeCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl ReserveStaminaExchangeCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "num",
-            |m: &ReserveStaminaExchangeCsReq| { &m.num },
-            |m: &mut ReserveStaminaExchangeCsReq| { &mut m.num },
+            "LJDBKCBFPPC",
+            |m: &ReserveStaminaExchangeCsReq| { &m.LJDBKCBFPPC },
+            |m: &mut ReserveStaminaExchangeCsReq| { &mut m.LJDBKCBFPPC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ReserveStaminaExchangeCsReq>(
             "ReserveStaminaExchangeCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for ReserveStaminaExchangeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.num = is.read_uint32()?;
+                32 => {
+                    self.LJDBKCBFPPC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for ReserveStaminaExchangeCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.num != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.num);
+        if self.LJDBKCBFPPC != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.LJDBKCBFPPC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for ReserveStaminaExchangeCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.num != 0 {
-            os.write_uint32(12, self.num)?;
+        if self.LJDBKCBFPPC != 0 {
+            os.write_uint32(4, self.LJDBKCBFPPC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for ReserveStaminaExchangeCsReq {
     }
 
     fn clear(&mut self) {
-        self.num = 0;
+        self.LJDBKCBFPPC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ReserveStaminaExchangeCsReq {
         static instance: ReserveStaminaExchangeCsReq = ReserveStaminaExchangeCsReq {
-            num: 0,
+            LJDBKCBFPPC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for ReserveStaminaExchangeCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!ReserveStaminaExchangeCsReq.proto\"/\n\x1bReserveStaminaExchangeCsReq\
-    \x12\x10\n\x03num\x18\x0c\x20\x01(\rR\x03numB\x15\n\x13emu.lunarcore.pro\
-    tob\x06proto3\
+    \n!ReserveStaminaExchangeCsReq.proto\"?\n\x1bReserveStaminaExchangeCsReq\
+    \x12\x20\n\x0bLJDBKCBFPPC\x18\x04\x20\x01(\rR\x0bLJDBKCBFPPCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

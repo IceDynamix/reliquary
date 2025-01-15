@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct WolfBroGameExplodeMonsterCsReq {
     // message fields
-    // @@protoc_insertion_point(field:WolfBroGameExplodeMonsterCsReq.BGFFOOFCBND)
-    pub BGFFOOFCBND: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:WolfBroGameExplodeMonsterCsReq.DPJGIECJDML)
+    pub DPJGIECJDML: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:WolfBroGameExplodeMonsterCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl WolfBroGameExplodeMonsterCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BGFFOOFCBND",
-            |m: &WolfBroGameExplodeMonsterCsReq| { &m.BGFFOOFCBND },
-            |m: &mut WolfBroGameExplodeMonsterCsReq| { &mut m.BGFFOOFCBND },
+            "DPJGIECJDML",
+            |m: &WolfBroGameExplodeMonsterCsReq| { &m.DPJGIECJDML },
+            |m: &mut WolfBroGameExplodeMonsterCsReq| { &mut m.DPJGIECJDML },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<WolfBroGameExplodeMonsterCsReq>(
             "WolfBroGameExplodeMonsterCsReq",
@@ -73,11 +73,11 @@ impl ::protobuf::Message for WolfBroGameExplodeMonsterCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.BGFFOOFCBND)?;
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.DPJGIECJDML)?;
                 },
-                8 => {
-                    self.BGFFOOFCBND.push(is.read_uint32()?);
+                48 => {
+                    self.DPJGIECJDML.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -91,8 +91,8 @@ impl ::protobuf::Message for WolfBroGameExplodeMonsterCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.BGFFOOFCBND {
-            my_size += ::protobuf::rt::uint32_size(1, *value);
+        for value in &self.DPJGIECJDML {
+            my_size += ::protobuf::rt::uint32_size(6, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -100,8 +100,8 @@ impl ::protobuf::Message for WolfBroGameExplodeMonsterCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.BGFFOOFCBND {
-            os.write_uint32(1, *v)?;
+        for v in &self.DPJGIECJDML {
+            os.write_uint32(6, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -120,13 +120,13 @@ impl ::protobuf::Message for WolfBroGameExplodeMonsterCsReq {
     }
 
     fn clear(&mut self) {
-        self.BGFFOOFCBND.clear();
+        self.DPJGIECJDML.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static WolfBroGameExplodeMonsterCsReq {
         static instance: WolfBroGameExplodeMonsterCsReq = WolfBroGameExplodeMonsterCsReq {
-            BGFFOOFCBND: ::std::vec::Vec::new(),
+            DPJGIECJDML: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -152,7 +152,7 @@ impl ::protobuf::reflect::ProtobufValue for WolfBroGameExplodeMonsterCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$WolfBroGameExplodeMonsterCsReq.proto\"B\n\x1eWolfBroGameExplodeMonste\
-    rCsReq\x12\x20\n\x0bBGFFOOFCBND\x18\x01\x20\x03(\rR\x0bBGFFOOFCBNDb\x06p\
+    rCsReq\x12\x20\n\x0bDPJGIECJDML\x18\x06\x20\x03(\rR\x0bDPJGIECJDMLb\x06p\
     roto3\
 ";
 

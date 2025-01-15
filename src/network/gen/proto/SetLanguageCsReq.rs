@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetLanguageCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetLanguageCsReq.DKNJKIALLGI)
-    pub DKNJKIALLGI: ::protobuf::EnumOrUnknown<super::IPBFBMPANGG::IPBFBMPANGG>,
+    // @@protoc_insertion_point(field:SetLanguageCsReq.DGDPJGPLKHM)
+    pub DGDPJGPLKHM: ::protobuf::EnumOrUnknown<super::EPPGKKCMNEF::EPPGKKCMNEF>,
     // special fields
     // @@protoc_insertion_point(special_field:SetLanguageCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl SetLanguageCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DKNJKIALLGI",
-            |m: &SetLanguageCsReq| { &m.DKNJKIALLGI },
-            |m: &mut SetLanguageCsReq| { &mut m.DKNJKIALLGI },
+            "DGDPJGPLKHM",
+            |m: &SetLanguageCsReq| { &m.DGDPJGPLKHM },
+            |m: &mut SetLanguageCsReq| { &mut m.DGDPJGPLKHM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetLanguageCsReq>(
             "SetLanguageCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for SetLanguageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.DKNJKIALLGI = is.read_enum_or_unknown()?;
+                32 => {
+                    self.DGDPJGPLKHM = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for SetLanguageCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DKNJKIALLGI != ::protobuf::EnumOrUnknown::new(super::IPBFBMPANGG::IPBFBMPANGG::LANGUAGE_NONE) {
-            my_size += ::protobuf::rt::int32_size(1, self.DKNJKIALLGI.value());
+        if self.DGDPJGPLKHM != ::protobuf::EnumOrUnknown::new(super::EPPGKKCMNEF::EPPGKKCMNEF::LANGUAGE_NONE) {
+            my_size += ::protobuf::rt::int32_size(4, self.DGDPJGPLKHM.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for SetLanguageCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DKNJKIALLGI != ::protobuf::EnumOrUnknown::new(super::IPBFBMPANGG::IPBFBMPANGG::LANGUAGE_NONE) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.DKNJKIALLGI))?;
+        if self.DGDPJGPLKHM != ::protobuf::EnumOrUnknown::new(super::EPPGKKCMNEF::EPPGKKCMNEF::LANGUAGE_NONE) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.DGDPJGPLKHM))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for SetLanguageCsReq {
     }
 
     fn clear(&mut self) {
-        self.DKNJKIALLGI = ::protobuf::EnumOrUnknown::new(super::IPBFBMPANGG::IPBFBMPANGG::LANGUAGE_NONE);
+        self.DGDPJGPLKHM = ::protobuf::EnumOrUnknown::new(super::EPPGKKCMNEF::EPPGKKCMNEF::LANGUAGE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetLanguageCsReq {
         static instance: SetLanguageCsReq = SetLanguageCsReq {
-            DKNJKIALLGI: ::protobuf::EnumOrUnknown::from_i32(0),
+            DGDPJGPLKHM: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for SetLanguageCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16SetLanguageCsReq.proto\x1a\x11IPBFBMPANGG.proto\"B\n\x10SetLanguag\
-    eCsReq\x12.\n\x0bDKNJKIALLGI\x18\x01\x20\x01(\x0e2\x0c.IPBFBMPANGGR\x0bD\
-    KNJKIALLGIb\x06proto3\
+    \n\x16SetLanguageCsReq.proto\x1a\x11EPPGKKCMNEF.proto\"B\n\x10SetLanguag\
+    eCsReq\x12.\n\x0bDGDPJGPLKHM\x18\x04\x20\x01(\x0e2\x0c.EPPGKKCMNEFR\x0bD\
+    GDPJGPLKHMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::IPBFBMPANGG::file_descriptor().clone());
+            deps.push(super::EPPGKKCMNEF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SetLanguageCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

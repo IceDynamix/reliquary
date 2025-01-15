@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetMultipleAvatarPathsCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetMultipleAvatarPathsCsReq.IFJNGOLCGPI)
-    pub IFJNGOLCGPI: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::MultiPathAvatarType::MultiPathAvatarType>>,
+    // @@protoc_insertion_point(field:SetMultipleAvatarPathsCsReq.IBBAMPCADEC)
+    pub IBBAMPCADEC: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::MultiPathAvatarType::MultiPathAvatarType>>,
     // special fields
     // @@protoc_insertion_point(special_field:SetMultipleAvatarPathsCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl SetMultipleAvatarPathsCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IFJNGOLCGPI",
-            |m: &SetMultipleAvatarPathsCsReq| { &m.IFJNGOLCGPI },
-            |m: &mut SetMultipleAvatarPathsCsReq| { &mut m.IFJNGOLCGPI },
+            "IBBAMPCADEC",
+            |m: &SetMultipleAvatarPathsCsReq| { &m.IBBAMPCADEC },
+            |m: &mut SetMultipleAvatarPathsCsReq| { &mut m.IBBAMPCADEC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetMultipleAvatarPathsCsReq>(
             "SetMultipleAvatarPathsCsReq",
@@ -73,11 +73,11 @@ impl ::protobuf::Message for SetMultipleAvatarPathsCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.IFJNGOLCGPI.push(is.read_enum_or_unknown()?);
+                72 => {
+                    self.IBBAMPCADEC.push(is.read_enum_or_unknown()?);
                 },
-                50 => {
-                    ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.IFJNGOLCGPI)?
+                74 => {
+                    ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.IBBAMPCADEC)?
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -91,8 +91,8 @@ impl ::protobuf::Message for SetMultipleAvatarPathsCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.IFJNGOLCGPI {
-            my_size += ::protobuf::rt::int32_size(6, value.value());
+        for value in &self.IBBAMPCADEC {
+            my_size += ::protobuf::rt::int32_size(9, value.value());
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -100,8 +100,8 @@ impl ::protobuf::Message for SetMultipleAvatarPathsCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.IFJNGOLCGPI {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(v))?;
+        for v in &self.IBBAMPCADEC {
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(v))?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -120,13 +120,13 @@ impl ::protobuf::Message for SetMultipleAvatarPathsCsReq {
     }
 
     fn clear(&mut self) {
-        self.IFJNGOLCGPI.clear();
+        self.IBBAMPCADEC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetMultipleAvatarPathsCsReq {
         static instance: SetMultipleAvatarPathsCsReq = SetMultipleAvatarPathsCsReq {
-            IFJNGOLCGPI: ::std::vec::Vec::new(),
+            IBBAMPCADEC: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -152,8 +152,8 @@ impl ::protobuf::reflect::ProtobufValue for SetMultipleAvatarPathsCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!SetMultipleAvatarPathsCsReq.proto\x1a\x19MultiPathAvatarType.proto\"U\
-    \n\x1bSetMultipleAvatarPathsCsReq\x126\n\x0bIFJNGOLCGPI\x18\x06\x20\x03(\
-    \x0e2\x14.MultiPathAvatarTypeR\x0bIFJNGOLCGPIb\x06proto3\
+    \n\x1bSetMultipleAvatarPathsCsReq\x126\n\x0bIBBAMPCADEC\x18\t\x20\x03(\
+    \x0e2\x14.MultiPathAvatarTypeR\x0bIBBAMPCADECb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

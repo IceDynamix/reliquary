@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HeliobusUnlockSkillScNotify {
     // message fields
-    // @@protoc_insertion_point(field:HeliobusUnlockSkillScNotify.GBJFLMMGGLN)
-    pub GBJFLMMGGLN: u32,
-    // @@protoc_insertion_point(field:HeliobusUnlockSkillScNotify.NCPFPAMHAOE)
-    pub NCPFPAMHAOE: u32,
+    // @@protoc_insertion_point(field:HeliobusUnlockSkillScNotify.LCLCDINHHNP)
+    pub LCLCDINHHNP: u32,
+    // @@protoc_insertion_point(field:HeliobusUnlockSkillScNotify.CCKAEKMOPPP)
+    pub CCKAEKMOPPP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HeliobusUnlockSkillScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl HeliobusUnlockSkillScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GBJFLMMGGLN",
-            |m: &HeliobusUnlockSkillScNotify| { &m.GBJFLMMGGLN },
-            |m: &mut HeliobusUnlockSkillScNotify| { &mut m.GBJFLMMGGLN },
+            "LCLCDINHHNP",
+            |m: &HeliobusUnlockSkillScNotify| { &m.LCLCDINHHNP },
+            |m: &mut HeliobusUnlockSkillScNotify| { &mut m.LCLCDINHHNP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NCPFPAMHAOE",
-            |m: &HeliobusUnlockSkillScNotify| { &m.NCPFPAMHAOE },
-            |m: &mut HeliobusUnlockSkillScNotify| { &mut m.NCPFPAMHAOE },
+            "CCKAEKMOPPP",
+            |m: &HeliobusUnlockSkillScNotify| { &m.CCKAEKMOPPP },
+            |m: &mut HeliobusUnlockSkillScNotify| { &mut m.CCKAEKMOPPP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HeliobusUnlockSkillScNotify>(
             "HeliobusUnlockSkillScNotify",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for HeliobusUnlockSkillScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.GBJFLMMGGLN = is.read_uint32()?;
+                112 => {
+                    self.LCLCDINHHNP = is.read_uint32()?;
                 },
-                72 => {
-                    self.NCPFPAMHAOE = is.read_uint32()?;
+                32 => {
+                    self.CCKAEKMOPPP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for HeliobusUnlockSkillScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GBJFLMMGGLN != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.GBJFLMMGGLN);
+        if self.LCLCDINHHNP != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.LCLCDINHHNP);
         }
-        if self.NCPFPAMHAOE != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.NCPFPAMHAOE);
+        if self.CCKAEKMOPPP != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.CCKAEKMOPPP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for HeliobusUnlockSkillScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GBJFLMMGGLN != 0 {
-            os.write_uint32(5, self.GBJFLMMGGLN)?;
+        if self.LCLCDINHHNP != 0 {
+            os.write_uint32(14, self.LCLCDINHHNP)?;
         }
-        if self.NCPFPAMHAOE != 0 {
-            os.write_uint32(9, self.NCPFPAMHAOE)?;
+        if self.CCKAEKMOPPP != 0 {
+            os.write_uint32(4, self.CCKAEKMOPPP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for HeliobusUnlockSkillScNotify {
     }
 
     fn clear(&mut self) {
-        self.GBJFLMMGGLN = 0;
-        self.NCPFPAMHAOE = 0;
+        self.LCLCDINHHNP = 0;
+        self.CCKAEKMOPPP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HeliobusUnlockSkillScNotify {
         static instance: HeliobusUnlockSkillScNotify = HeliobusUnlockSkillScNotify {
-            GBJFLMMGGLN: 0,
-            NCPFPAMHAOE: 0,
+            LCLCDINHHNP: 0,
+            CCKAEKMOPPP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for HeliobusUnlockSkillScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!HeliobusUnlockSkillScNotify.proto\"a\n\x1bHeliobusUnlockSkillScNotify\
-    \x12\x20\n\x0bGBJFLMMGGLN\x18\x05\x20\x01(\rR\x0bGBJFLMMGGLN\x12\x20\n\
-    \x0bNCPFPAMHAOE\x18\t\x20\x01(\rR\x0bNCPFPAMHAOEb\x06proto3\
+    \x12\x20\n\x0bLCLCDINHHNP\x18\x0e\x20\x01(\rR\x0bLCLCDINHHNP\x12\x20\n\
+    \x0bCCKAEKMOPPP\x18\x04\x20\x01(\rR\x0bCCKAEKMOPPPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

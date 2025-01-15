@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueUpdateLevelBaseInfoScNotify {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueUpdateLevelBaseInfoScNotify.PFGAHNOAPHB)
-    pub PFGAHNOAPHB: ::protobuf::EnumOrUnknown<super::GGILDDCJLGA::GGILDDCJLGA>,
-    // @@protoc_insertion_point(field:ChessRogueUpdateLevelBaseInfoScNotify.KGGHLADEKGP)
-    pub KGGHLADEKGP: ::protobuf::EnumOrUnknown<super::MKCKFOOAGPF::MKCKFOOAGPF>,
+    // @@protoc_insertion_point(field:ChessRogueUpdateLevelBaseInfoScNotify.OLDKAMACFMD)
+    pub OLDKAMACFMD: ::protobuf::EnumOrUnknown<super::ANEHJMAFBLJ::ANEHJMAFBLJ>,
+    // @@protoc_insertion_point(field:ChessRogueUpdateLevelBaseInfoScNotify.GCCEGGBEICJ)
+    pub GCCEGGBEICJ: ::protobuf::EnumOrUnknown<super::LMIBFMLFCGO::LMIBFMLFCGO>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueUpdateLevelBaseInfoScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl ChessRogueUpdateLevelBaseInfoScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PFGAHNOAPHB",
-            |m: &ChessRogueUpdateLevelBaseInfoScNotify| { &m.PFGAHNOAPHB },
-            |m: &mut ChessRogueUpdateLevelBaseInfoScNotify| { &mut m.PFGAHNOAPHB },
+            "OLDKAMACFMD",
+            |m: &ChessRogueUpdateLevelBaseInfoScNotify| { &m.OLDKAMACFMD },
+            |m: &mut ChessRogueUpdateLevelBaseInfoScNotify| { &mut m.OLDKAMACFMD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KGGHLADEKGP",
-            |m: &ChessRogueUpdateLevelBaseInfoScNotify| { &m.KGGHLADEKGP },
-            |m: &mut ChessRogueUpdateLevelBaseInfoScNotify| { &mut m.KGGHLADEKGP },
+            "GCCEGGBEICJ",
+            |m: &ChessRogueUpdateLevelBaseInfoScNotify| { &m.GCCEGGBEICJ },
+            |m: &mut ChessRogueUpdateLevelBaseInfoScNotify| { &mut m.GCCEGGBEICJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueUpdateLevelBaseInfoScNotify>(
             "ChessRogueUpdateLevelBaseInfoScNotify",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for ChessRogueUpdateLevelBaseInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.PFGAHNOAPHB = is.read_enum_or_unknown()?;
+                120 => {
+                    self.OLDKAMACFMD = is.read_enum_or_unknown()?;
                 },
-                88 => {
-                    self.KGGHLADEKGP = is.read_enum_or_unknown()?;
+                96 => {
+                    self.GCCEGGBEICJ = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for ChessRogueUpdateLevelBaseInfoScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PFGAHNOAPHB != ::protobuf::EnumOrUnknown::new(super::GGILDDCJLGA::GGILDDCJLGA::CHESS_ROGUE_LEVEL_IDLE) {
-            my_size += ::protobuf::rt::int32_size(12, self.PFGAHNOAPHB.value());
+        if self.OLDKAMACFMD != ::protobuf::EnumOrUnknown::new(super::ANEHJMAFBLJ::ANEHJMAFBLJ::CHESS_ROGUE_UPDATE_LEVEL_STATUS_BY_NONE) {
+            my_size += ::protobuf::rt::int32_size(15, self.OLDKAMACFMD.value());
         }
-        if self.KGGHLADEKGP != ::protobuf::EnumOrUnknown::new(super::MKCKFOOAGPF::MKCKFOOAGPF::CHESS_ROGUE_UPDATE_LEVEL_STATUS_BY_NONE) {
-            my_size += ::protobuf::rt::int32_size(11, self.KGGHLADEKGP.value());
+        if self.GCCEGGBEICJ != ::protobuf::EnumOrUnknown::new(super::LMIBFMLFCGO::LMIBFMLFCGO::CHESS_ROGUE_LEVEL_IDLE) {
+            my_size += ::protobuf::rt::int32_size(12, self.GCCEGGBEICJ.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for ChessRogueUpdateLevelBaseInfoScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PFGAHNOAPHB != ::protobuf::EnumOrUnknown::new(super::GGILDDCJLGA::GGILDDCJLGA::CHESS_ROGUE_LEVEL_IDLE) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.PFGAHNOAPHB))?;
+        if self.OLDKAMACFMD != ::protobuf::EnumOrUnknown::new(super::ANEHJMAFBLJ::ANEHJMAFBLJ::CHESS_ROGUE_UPDATE_LEVEL_STATUS_BY_NONE) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.OLDKAMACFMD))?;
         }
-        if self.KGGHLADEKGP != ::protobuf::EnumOrUnknown::new(super::MKCKFOOAGPF::MKCKFOOAGPF::CHESS_ROGUE_UPDATE_LEVEL_STATUS_BY_NONE) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.KGGHLADEKGP))?;
+        if self.GCCEGGBEICJ != ::protobuf::EnumOrUnknown::new(super::LMIBFMLFCGO::LMIBFMLFCGO::CHESS_ROGUE_LEVEL_IDLE) {
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.GCCEGGBEICJ))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for ChessRogueUpdateLevelBaseInfoScNotify {
     }
 
     fn clear(&mut self) {
-        self.PFGAHNOAPHB = ::protobuf::EnumOrUnknown::new(super::GGILDDCJLGA::GGILDDCJLGA::CHESS_ROGUE_LEVEL_IDLE);
-        self.KGGHLADEKGP = ::protobuf::EnumOrUnknown::new(super::MKCKFOOAGPF::MKCKFOOAGPF::CHESS_ROGUE_UPDATE_LEVEL_STATUS_BY_NONE);
+        self.OLDKAMACFMD = ::protobuf::EnumOrUnknown::new(super::ANEHJMAFBLJ::ANEHJMAFBLJ::CHESS_ROGUE_UPDATE_LEVEL_STATUS_BY_NONE);
+        self.GCCEGGBEICJ = ::protobuf::EnumOrUnknown::new(super::LMIBFMLFCGO::LMIBFMLFCGO::CHESS_ROGUE_LEVEL_IDLE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueUpdateLevelBaseInfoScNotify {
         static instance: ChessRogueUpdateLevelBaseInfoScNotify = ChessRogueUpdateLevelBaseInfoScNotify {
-            PFGAHNOAPHB: ::protobuf::EnumOrUnknown::from_i32(0),
-            KGGHLADEKGP: ::protobuf::EnumOrUnknown::from_i32(0),
+            OLDKAMACFMD: ::protobuf::EnumOrUnknown::from_i32(0),
+            GCCEGGBEICJ: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,11 +166,11 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueUpdateLevelBaseInfoScNotif
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n+ChessRogueUpdateLevelBaseInfoScNotify.proto\x1a\x11GGILDDCJLGA.proto\
-    \x1a\x11MKCKFOOAGPF.proto\"\x87\x01\n%ChessRogueUpdateLevelBaseInfoScNot\
-    ify\x12.\n\x0bPFGAHNOAPHB\x18\x0c\x20\x01(\x0e2\x0c.GGILDDCJLGAR\x0bPFGA\
-    HNOAPHB\x12.\n\x0bKGGHLADEKGP\x18\x0b\x20\x01(\x0e2\x0c.MKCKFOOAGPFR\x0b\
-    KGGHLADEKGPb\x06proto3\
+    \n+ChessRogueUpdateLevelBaseInfoScNotify.proto\x1a\x11ANEHJMAFBLJ.proto\
+    \x1a\x11LMIBFMLFCGO.proto\"\x87\x01\n%ChessRogueUpdateLevelBaseInfoScNot\
+    ify\x12.\n\x0bOLDKAMACFMD\x18\x0f\x20\x01(\x0e2\x0c.ANEHJMAFBLJR\x0bOLDK\
+    AMACFMD\x12.\n\x0bGCCEGGBEICJ\x18\x0c\x20\x01(\x0e2\x0c.LMIBFMLFCGOR\x0b\
+    GCCEGGBEICJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,8 +188,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::GGILDDCJLGA::file_descriptor().clone());
-            deps.push(super::MKCKFOOAGPF::file_descriptor().clone());
+            deps.push(super::ANEHJMAFBLJ::file_descriptor().clone());
+            deps.push(super::LMIBFMLFCGO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChessRogueUpdateLevelBaseInfoScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SubmitMaterialSubmitActivityMaterialScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SubmitMaterialSubmitActivityMaterialScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:SubmitMaterialSubmitActivityMaterialScRsp.ABEAIFNDDCA)
-    pub ABEAIFNDDCA: ::protobuf::MessageField<super::FKOEICLBLOK::FKOEICLBLOK>,
+    // @@protoc_insertion_point(field:SubmitMaterialSubmitActivityMaterialScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:SubmitMaterialSubmitActivityMaterialScRsp.CFDEPEJIGGG)
+    pub CFDEPEJIGGG: ::protobuf::MessageField<super::JCOFDIPBJME::JCOFDIPBJME>,
     // special fields
     // @@protoc_insertion_point(special_field:SubmitMaterialSubmitActivityMaterialScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl SubmitMaterialSubmitActivityMaterialScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &SubmitMaterialSubmitActivityMaterialScRsp| { &m.ADADHIHDHJC },
-            |m: &mut SubmitMaterialSubmitActivityMaterialScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &SubmitMaterialSubmitActivityMaterialScRsp| { &m.retcode },
+            |m: &mut SubmitMaterialSubmitActivityMaterialScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FKOEICLBLOK::FKOEICLBLOK>(
-            "ABEAIFNDDCA",
-            |m: &SubmitMaterialSubmitActivityMaterialScRsp| { &m.ABEAIFNDDCA },
-            |m: &mut SubmitMaterialSubmitActivityMaterialScRsp| { &mut m.ABEAIFNDDCA },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JCOFDIPBJME::JCOFDIPBJME>(
+            "CFDEPEJIGGG",
+            |m: &SubmitMaterialSubmitActivityMaterialScRsp| { &m.CFDEPEJIGGG },
+            |m: &mut SubmitMaterialSubmitActivityMaterialScRsp| { &mut m.CFDEPEJIGGG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SubmitMaterialSubmitActivityMaterialScRsp>(
             "SubmitMaterialSubmitActivityMaterialScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for SubmitMaterialSubmitActivityMaterialScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                64 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ABEAIFNDDCA)?;
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CFDEPEJIGGG)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for SubmitMaterialSubmitActivityMaterialScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
-        if let Some(v) = self.ABEAIFNDDCA.as_ref() {
+        if let Some(v) = self.CFDEPEJIGGG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for SubmitMaterialSubmitActivityMaterialScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(3, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(8, self.retcode)?;
         }
-        if let Some(v) = self.ABEAIFNDDCA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if let Some(v) = self.CFDEPEJIGGG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for SubmitMaterialSubmitActivityMaterialScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADADHIHDHJC = 0;
-        self.ABEAIFNDDCA.clear();
+        self.retcode = 0;
+        self.CFDEPEJIGGG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SubmitMaterialSubmitActivityMaterialScRsp {
         static instance: SubmitMaterialSubmitActivityMaterialScRsp = SubmitMaterialSubmitActivityMaterialScRsp {
-            ADADHIHDHJC: 0,
-            ABEAIFNDDCA: ::protobuf::MessageField::none(),
+            retcode: 0,
+            CFDEPEJIGGG: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for SubmitMaterialSubmitActivityMaterial
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n/SubmitMaterialSubmitActivityMaterialScRsp.proto\x1a\x11FKOEICLBLOK.pr\
-    oto\"}\n)SubmitMaterialSubmitActivityMaterialScRsp\x12\x20\n\x0bADADHIHD\
-    HJC\x18\x03\x20\x01(\rR\x0bADADHIHDHJC\x12.\n\x0bABEAIFNDDCA\x18\x07\x20\
-    \x01(\x0b2\x0c.FKOEICLBLOKR\x0bABEAIFNDDCAb\x06proto3\
+    \n/SubmitMaterialSubmitActivityMaterialScRsp.proto\x1a\x11JCOFDIPBJME.pr\
+    oto\"u\n)SubmitMaterialSubmitActivityMaterialScRsp\x12\x18\n\x07retcode\
+    \x18\x08\x20\x01(\rR\x07retcode\x12.\n\x0bCFDEPEJIGGG\x18\t\x20\x01(\x0b\
+    2\x0c.JCOFDIPBJMER\x0bCFDEPEJIGGGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::FKOEICLBLOK::file_descriptor().clone());
+            deps.push(super::JCOFDIPBJME::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SubmitMaterialSubmitActivityMaterialScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

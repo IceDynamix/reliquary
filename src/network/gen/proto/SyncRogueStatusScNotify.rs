@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncRogueStatusScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncRogueStatusScNotify.status)
-    pub status: ::protobuf::EnumOrUnknown<super::RogueStatus::RogueStatus>,
-    // @@protoc_insertion_point(field:SyncRogueStatusScNotify.IBHHFPLJNAF)
-    pub IBHHFPLJNAF: bool,
+    // @@protoc_insertion_point(field:SyncRogueStatusScNotify.IOPEEMNLIDM)
+    pub IOPEEMNLIDM: ::protobuf::EnumOrUnknown<super::RogueStatus::RogueStatus>,
+    // @@protoc_insertion_point(field:SyncRogueStatusScNotify.LEDFHAPODCL)
+    pub LEDFHAPODCL: bool,
     // special fields
     // @@protoc_insertion_point(special_field:SyncRogueStatusScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl SyncRogueStatusScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "status",
-            |m: &SyncRogueStatusScNotify| { &m.status },
-            |m: &mut SyncRogueStatusScNotify| { &mut m.status },
+            "IOPEEMNLIDM",
+            |m: &SyncRogueStatusScNotify| { &m.IOPEEMNLIDM },
+            |m: &mut SyncRogueStatusScNotify| { &mut m.IOPEEMNLIDM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IBHHFPLJNAF",
-            |m: &SyncRogueStatusScNotify| { &m.IBHHFPLJNAF },
-            |m: &mut SyncRogueStatusScNotify| { &mut m.IBHHFPLJNAF },
+            "LEDFHAPODCL",
+            |m: &SyncRogueStatusScNotify| { &m.LEDFHAPODCL },
+            |m: &mut SyncRogueStatusScNotify| { &mut m.LEDFHAPODCL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncRogueStatusScNotify>(
             "SyncRogueStatusScNotify",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for SyncRogueStatusScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.status = is.read_enum_or_unknown()?;
+                80 => {
+                    self.IOPEEMNLIDM = is.read_enum_or_unknown()?;
                 },
-                104 => {
-                    self.IBHHFPLJNAF = is.read_bool()?;
+                96 => {
+                    self.LEDFHAPODCL = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for SyncRogueStatusScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::ROGUE_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(11, self.status.value());
+        if self.IOPEEMNLIDM != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::ROGUE_STATUS_NONE) {
+            my_size += ::protobuf::rt::int32_size(10, self.IOPEEMNLIDM.value());
         }
-        if self.IBHHFPLJNAF != false {
+        if self.LEDFHAPODCL != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -110,11 +110,11 @@ impl ::protobuf::Message for SyncRogueStatusScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::ROGUE_STATUS_NONE) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        if self.IOPEEMNLIDM != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::ROGUE_STATUS_NONE) {
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.IOPEEMNLIDM))?;
         }
-        if self.IBHHFPLJNAF != false {
-            os.write_bool(13, self.IBHHFPLJNAF)?;
+        if self.LEDFHAPODCL != false {
+            os.write_bool(12, self.LEDFHAPODCL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for SyncRogueStatusScNotify {
     }
 
     fn clear(&mut self) {
-        self.status = ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::ROGUE_STATUS_NONE);
-        self.IBHHFPLJNAF = false;
+        self.IOPEEMNLIDM = ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::ROGUE_STATUS_NONE);
+        self.LEDFHAPODCL = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncRogueStatusScNotify {
         static instance: SyncRogueStatusScNotify = SyncRogueStatusScNotify {
-            status: ::protobuf::EnumOrUnknown::from_i32(0),
-            IBHHFPLJNAF: false,
+            IOPEEMNLIDM: ::protobuf::EnumOrUnknown::from_i32(0),
+            LEDFHAPODCL: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueStatusScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dSyncRogueStatusScNotify.proto\x1a\x11RogueStatus.proto\"a\n\x17Syn\
-    cRogueStatusScNotify\x12$\n\x06status\x18\x0b\x20\x01(\x0e2\x0c.RogueSta\
-    tusR\x06status\x12\x20\n\x0bIBHHFPLJNAF\x18\r\x20\x01(\x08R\x0bIBHHFPLJN\
-    AFB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x1dSyncRogueStatusScNotify.proto\x1a\x11RogueStatus.proto\"k\n\x17Syn\
+    cRogueStatusScNotify\x12.\n\x0bIOPEEMNLIDM\x18\n\x20\x01(\x0e2\x0c.Rogue\
+    StatusR\x0bIOPEEMNLIDM\x12\x20\n\x0bLEDFHAPODCL\x18\x0c\x20\x01(\x08R\
+    \x0bLEDFHAPODCLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

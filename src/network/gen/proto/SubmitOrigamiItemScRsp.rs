@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SubmitOrigamiItemScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SubmitOrigamiItemScRsp.DIJMBPECNMC)
-    pub DIJMBPECNMC: u32,
-    // @@protoc_insertion_point(field:SubmitOrigamiItemScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:SubmitOrigamiItemScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:SubmitOrigamiItemScRsp.BIMCHMDJPLC)
+    pub BIMCHMDJPLC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SubmitOrigamiItemScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl SubmitOrigamiItemScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DIJMBPECNMC",
-            |m: &SubmitOrigamiItemScRsp| { &m.DIJMBPECNMC },
-            |m: &mut SubmitOrigamiItemScRsp| { &mut m.DIJMBPECNMC },
+            "retcode",
+            |m: &SubmitOrigamiItemScRsp| { &m.retcode },
+            |m: &mut SubmitOrigamiItemScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &SubmitOrigamiItemScRsp| { &m.ADADHIHDHJC },
-            |m: &mut SubmitOrigamiItemScRsp| { &mut m.ADADHIHDHJC },
+            "BIMCHMDJPLC",
+            |m: &SubmitOrigamiItemScRsp| { &m.BIMCHMDJPLC },
+            |m: &mut SubmitOrigamiItemScRsp| { &mut m.BIMCHMDJPLC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SubmitOrigamiItemScRsp>(
             "SubmitOrigamiItemScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for SubmitOrigamiItemScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.DIJMBPECNMC = is.read_uint32()?;
+                24 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                16 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                88 => {
+                    self.BIMCHMDJPLC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for SubmitOrigamiItemScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DIJMBPECNMC != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.DIJMBPECNMC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.ADADHIHDHJC);
+        if self.BIMCHMDJPLC != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.BIMCHMDJPLC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for SubmitOrigamiItemScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DIJMBPECNMC != 0 {
-            os.write_uint32(12, self.DIJMBPECNMC)?;
+        if self.retcode != 0 {
+            os.write_uint32(3, self.retcode)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(2, self.ADADHIHDHJC)?;
+        if self.BIMCHMDJPLC != 0 {
+            os.write_uint32(11, self.BIMCHMDJPLC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for SubmitOrigamiItemScRsp {
     }
 
     fn clear(&mut self) {
-        self.DIJMBPECNMC = 0;
-        self.ADADHIHDHJC = 0;
+        self.retcode = 0;
+        self.BIMCHMDJPLC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SubmitOrigamiItemScRsp {
         static instance: SubmitOrigamiItemScRsp = SubmitOrigamiItemScRsp {
-            DIJMBPECNMC: 0,
-            ADADHIHDHJC: 0,
+            retcode: 0,
+            BIMCHMDJPLC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for SubmitOrigamiItemScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cSubmitOrigamiItemScRsp.proto\"\\\n\x16SubmitOrigamiItemScRsp\x12\
-    \x20\n\x0bDIJMBPECNMC\x18\x0c\x20\x01(\rR\x0bDIJMBPECNMC\x12\x20\n\x0bAD\
-    ADHIHDHJC\x18\x02\x20\x01(\rR\x0bADADHIHDHJCb\x06proto3\
+    \n\x1cSubmitOrigamiItemScRsp.proto\"T\n\x16SubmitOrigamiItemScRsp\x12\
+    \x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12\x20\n\x0bBIMCHMDJPL\
+    C\x18\x0b\x20\x01(\rR\x0bBIMCHMDJPLCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

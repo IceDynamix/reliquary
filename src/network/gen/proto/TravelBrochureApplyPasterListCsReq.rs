@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TravelBrochureApplyPasterListCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TravelBrochureApplyPasterListCsReq.GJEFDCJPHNM)
-    pub GJEFDCJPHNM: ::std::vec::Vec<super::OHDFBINCPNF::OHDFBINCPNF>,
-    // @@protoc_insertion_point(field:TravelBrochureApplyPasterListCsReq.LOFDIGOACGI)
-    pub LOFDIGOACGI: u32,
+    // @@protoc_insertion_point(field:TravelBrochureApplyPasterListCsReq.MIGFDMJPIHI)
+    pub MIGFDMJPIHI: ::std::vec::Vec<super::OBGHKLANOGB::OBGHKLANOGB>,
+    // @@protoc_insertion_point(field:TravelBrochureApplyPasterListCsReq.CJAEBOLPIFP)
+    pub CJAEBOLPIFP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TravelBrochureApplyPasterListCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl TravelBrochureApplyPasterListCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GJEFDCJPHNM",
-            |m: &TravelBrochureApplyPasterListCsReq| { &m.GJEFDCJPHNM },
-            |m: &mut TravelBrochureApplyPasterListCsReq| { &mut m.GJEFDCJPHNM },
+            "MIGFDMJPIHI",
+            |m: &TravelBrochureApplyPasterListCsReq| { &m.MIGFDMJPIHI },
+            |m: &mut TravelBrochureApplyPasterListCsReq| { &mut m.MIGFDMJPIHI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LOFDIGOACGI",
-            |m: &TravelBrochureApplyPasterListCsReq| { &m.LOFDIGOACGI },
-            |m: &mut TravelBrochureApplyPasterListCsReq| { &mut m.LOFDIGOACGI },
+            "CJAEBOLPIFP",
+            |m: &TravelBrochureApplyPasterListCsReq| { &m.CJAEBOLPIFP },
+            |m: &mut TravelBrochureApplyPasterListCsReq| { &mut m.CJAEBOLPIFP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TravelBrochureApplyPasterListCsReq>(
             "TravelBrochureApplyPasterListCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for TravelBrochureApplyPasterListCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    self.GJEFDCJPHNM.push(is.read_message()?);
+                106 => {
+                    self.MIGFDMJPIHI.push(is.read_message()?);
                 },
                 40 => {
-                    self.LOFDIGOACGI = is.read_uint32()?;
+                    self.CJAEBOLPIFP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,12 +98,12 @@ impl ::protobuf::Message for TravelBrochureApplyPasterListCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.GJEFDCJPHNM {
+        for value in &self.MIGFDMJPIHI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.LOFDIGOACGI != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.LOFDIGOACGI);
+        if self.CJAEBOLPIFP != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.CJAEBOLPIFP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for TravelBrochureApplyPasterListCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.GJEFDCJPHNM {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        for v in &self.MIGFDMJPIHI {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
-        if self.LOFDIGOACGI != 0 {
-            os.write_uint32(5, self.LOFDIGOACGI)?;
+        if self.CJAEBOLPIFP != 0 {
+            os.write_uint32(5, self.CJAEBOLPIFP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for TravelBrochureApplyPasterListCsReq {
     }
 
     fn clear(&mut self) {
-        self.GJEFDCJPHNM.clear();
-        self.LOFDIGOACGI = 0;
+        self.MIGFDMJPIHI.clear();
+        self.CJAEBOLPIFP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TravelBrochureApplyPasterListCsReq {
         static instance: TravelBrochureApplyPasterListCsReq = TravelBrochureApplyPasterListCsReq {
-            GJEFDCJPHNM: ::std::vec::Vec::new(),
-            LOFDIGOACGI: 0,
+            MIGFDMJPIHI: ::std::vec::Vec::new(),
+            CJAEBOLPIFP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for TravelBrochureApplyPasterListCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n(TravelBrochureApplyPasterListCsReq.proto\x1a\x11OHDFBINCPNF.proto\"v\
-    \n\"TravelBrochureApplyPasterListCsReq\x12.\n\x0bGJEFDCJPHNM\x18\x08\x20\
-    \x03(\x0b2\x0c.OHDFBINCPNFR\x0bGJEFDCJPHNM\x12\x20\n\x0bLOFDIGOACGI\x18\
-    \x05\x20\x01(\rR\x0bLOFDIGOACGIb\x06proto3\
+    \n(TravelBrochureApplyPasterListCsReq.proto\x1a\x11OBGHKLANOGB.proto\"v\
+    \n\"TravelBrochureApplyPasterListCsReq\x12.\n\x0bMIGFDMJPIHI\x18\r\x20\
+    \x03(\x0b2\x0c.OBGHKLANOGBR\x0bMIGFDMJPIHI\x12\x20\n\x0bCJAEBOLPIFP\x18\
+    \x05\x20\x01(\rR\x0bCJAEBOLPIFPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::OHDFBINCPNF::file_descriptor().clone());
+            deps.push(super::OBGHKLANOGB::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(TravelBrochureApplyPasterListCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

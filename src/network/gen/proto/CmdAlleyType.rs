@@ -30,78 +30,78 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdAlleyType {
     // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyTypeNone)
     CmdAlleyTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdStartAlleyEventCsReq)
-    CmdStartAlleyEventCsReq = 4734,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdActivityRaidPlacingGameScRsp)
-    CmdActivityRaidPlacingGameScRsp = 4743,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdTakePrestigeRewardCsReq)
-    CmdTakePrestigeRewardCsReq = 4747,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdLogisticsDetonateStarSkiffScRsp)
-    CmdLogisticsDetonateStarSkiffScRsp = 4791,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyOrderChangedScNotify)
-    CmdAlleyOrderChangedScNotify = 4761,
     // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdGetAlleyInfoScRsp)
-    CmdGetAlleyInfoScRsp = 4720,
+    CmdGetAlleyInfoScRsp = 4795,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyShipUsedCountScNotify)
+    CmdAlleyShipUsedCountScNotify = 4776,
     // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdLogisticsScoreRewardSyncInfoScNotify)
-    CmdLogisticsScoreRewardSyncInfoScNotify = 4704,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyShopLevelScNotify)
-    CmdAlleyShopLevelScNotify = 4773,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyPlacingGameScRsp)
-    CmdAlleyPlacingGameScRsp = 4775,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdGetSaveLogisticsMapCsReq)
-    CmdGetSaveLogisticsMapCsReq = 4794,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdGetSaveLogisticsMapScRsp)
-    CmdGetSaveLogisticsMapScRsp = 4710,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdSaveLogisticsScRsp)
-    CmdSaveLogisticsScRsp = 4709,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyTakeEventRewardCsReq)
-    CmdAlleyTakeEventRewardCsReq = 4726,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdLogisticsInfoScNotify)
-    CmdLogisticsInfoScNotify = 4793,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyPlacingGameCsReq)
-    CmdAlleyPlacingGameCsReq = 4730,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdLogisticsGameScRsp)
-    CmdLogisticsGameScRsp = 4746,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdGetAlleyInfoCsReq)
-    CmdGetAlleyInfoCsReq = 4759,
+    CmdLogisticsScoreRewardSyncInfoScNotify = 4708,
     // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyTakeEventRewardScRsp)
     CmdAlleyTakeEventRewardScRsp = 4713,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdPrestigeLevelUpCsReq)
-    CmdPrestigeLevelUpCsReq = 4729,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdGetSaveLogisticsMapCsReq)
+    CmdGetSaveLogisticsMapCsReq = 4758,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdGetSaveLogisticsMapScRsp)
+    CmdGetSaveLogisticsMapScRsp = 4710,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdStartAlleyEventScRsp)
+    CmdStartAlleyEventScRsp = 4774,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdLogisticsInfoScNotify)
+    CmdLogisticsInfoScNotify = 4748,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyPlacingGameCsReq)
+    CmdAlleyPlacingGameCsReq = 4746,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdActivityRaidPlacingGameScRsp)
+    CmdActivityRaidPlacingGameScRsp = 4737,
     // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdRefreshAlleyOrderScRsp)
     CmdRefreshAlleyOrderScRsp = 4719,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyShipUnlockScNotify)
-    CmdAlleyShipUnlockScNotify = 4783,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyShipUsedCountScNotify)
-    CmdAlleyShipUsedCountScNotify = 4770,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdLogisticsGameCsReq)
-    CmdLogisticsGameCsReq = 4703,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyEventEffectNotify)
-    CmdAlleyEventEffectNotify = 4716,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdTakePrestigeRewardScRsp)
-    CmdTakePrestigeRewardScRsp = 4774,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdPrestigeLevelUpScRsp)
-    CmdPrestigeLevelUpScRsp = 4733,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdStartAlleyEventScRsp)
-    CmdStartAlleyEventScRsp = 4737,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyFundsScNotify)
-    CmdAlleyFundsScNotify = 4751,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdRefreshAlleyOrderCsReq)
-    CmdRefreshAlleyOrderCsReq = 4779,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdPrestigeLevelUpCsReq)
+    CmdPrestigeLevelUpCsReq = 4753,
     // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyShipmentEventEffectsScNotify)
-    CmdAlleyShipmentEventEffectsScNotify = 4764,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyGuaranteedFundsCsReq)
-    CmdAlleyGuaranteedFundsCsReq = 4736,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyGuaranteedFundsScRsp)
-    CmdAlleyGuaranteedFundsScRsp = 4765,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyEventChangeNotify)
-    CmdAlleyEventChangeNotify = 4780,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdSaveLogisticsCsReq)
-    CmdSaveLogisticsCsReq = 4799,
+    CmdAlleyShipmentEventEffectsScNotify = 4788,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyPlacingGameScRsp)
+    CmdAlleyPlacingGameScRsp = 4725,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyEventEffectNotify)
+    CmdAlleyEventEffectNotify = 4793,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdRefreshAlleyOrderCsReq)
+    CmdRefreshAlleyOrderCsReq = 4775,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdPrestigeLevelUpScRsp)
+    CmdPrestigeLevelUpScRsp = 4790,
     // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdActivityRaidPlacingGameCsReq)
-    CmdActivityRaidPlacingGameCsReq = 4788,
+    CmdActivityRaidPlacingGameCsReq = 4718,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdStartAlleyEventCsReq)
+    CmdStartAlleyEventCsReq = 4752,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyGuaranteedFundsCsReq)
+    CmdAlleyGuaranteedFundsCsReq = 4735,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdLogisticsGameCsReq)
+    CmdLogisticsGameCsReq = 4784,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdSaveLogisticsScRsp)
+    CmdSaveLogisticsScRsp = 4750,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyGuaranteedFundsScRsp)
+    CmdAlleyGuaranteedFundsScRsp = 4773,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdTakePrestigeRewardScRsp)
+    CmdTakePrestigeRewardScRsp = 4743,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyShipUnlockScNotify)
+    CmdAlleyShipUnlockScNotify = 4778,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdGetAlleyInfoCsReq)
+    CmdGetAlleyInfoCsReq = 4736,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyFundsScNotify)
+    CmdAlleyFundsScNotify = 4759,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyOrderChangedScNotify)
+    CmdAlleyOrderChangedScNotify = 4726,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyShopLevelScNotify)
+    CmdAlleyShopLevelScNotify = 4712,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdTakePrestigeRewardCsReq)
+    CmdTakePrestigeRewardCsReq = 4734,
     // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdLogisticsDetonateStarSkiffCsReq)
-    CmdLogisticsDetonateStarSkiffCsReq = 4777,
+    CmdLogisticsDetonateStarSkiffCsReq = 4721,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyTakeEventRewardCsReq)
+    CmdAlleyTakeEventRewardCsReq = 4717,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdSaveLogisticsCsReq)
+    CmdSaveLogisticsCsReq = 4729,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdLogisticsDetonateStarSkiffScRsp)
+    CmdLogisticsDetonateStarSkiffScRsp = 4765,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyEventChangeNotify)
+    CmdAlleyEventChangeNotify = 4724,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdLogisticsGameScRsp)
+    CmdLogisticsGameScRsp = 4727,
 }
 
 impl ::protobuf::Enum for CmdAlleyType {
@@ -114,42 +114,42 @@ impl ::protobuf::Enum for CmdAlleyType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdAlleyType> {
         match value {
             0 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyTypeNone),
-            4734 => ::std::option::Option::Some(CmdAlleyType::CmdStartAlleyEventCsReq),
-            4743 => ::std::option::Option::Some(CmdAlleyType::CmdActivityRaidPlacingGameScRsp),
-            4747 => ::std::option::Option::Some(CmdAlleyType::CmdTakePrestigeRewardCsReq),
-            4791 => ::std::option::Option::Some(CmdAlleyType::CmdLogisticsDetonateStarSkiffScRsp),
-            4761 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyOrderChangedScNotify),
-            4720 => ::std::option::Option::Some(CmdAlleyType::CmdGetAlleyInfoScRsp),
-            4704 => ::std::option::Option::Some(CmdAlleyType::CmdLogisticsScoreRewardSyncInfoScNotify),
-            4773 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyShopLevelScNotify),
-            4775 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyPlacingGameScRsp),
-            4794 => ::std::option::Option::Some(CmdAlleyType::CmdGetSaveLogisticsMapCsReq),
-            4710 => ::std::option::Option::Some(CmdAlleyType::CmdGetSaveLogisticsMapScRsp),
-            4709 => ::std::option::Option::Some(CmdAlleyType::CmdSaveLogisticsScRsp),
-            4726 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyTakeEventRewardCsReq),
-            4793 => ::std::option::Option::Some(CmdAlleyType::CmdLogisticsInfoScNotify),
-            4730 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyPlacingGameCsReq),
-            4746 => ::std::option::Option::Some(CmdAlleyType::CmdLogisticsGameScRsp),
-            4759 => ::std::option::Option::Some(CmdAlleyType::CmdGetAlleyInfoCsReq),
+            4795 => ::std::option::Option::Some(CmdAlleyType::CmdGetAlleyInfoScRsp),
+            4776 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyShipUsedCountScNotify),
+            4708 => ::std::option::Option::Some(CmdAlleyType::CmdLogisticsScoreRewardSyncInfoScNotify),
             4713 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyTakeEventRewardScRsp),
-            4729 => ::std::option::Option::Some(CmdAlleyType::CmdPrestigeLevelUpCsReq),
+            4758 => ::std::option::Option::Some(CmdAlleyType::CmdGetSaveLogisticsMapCsReq),
+            4710 => ::std::option::Option::Some(CmdAlleyType::CmdGetSaveLogisticsMapScRsp),
+            4774 => ::std::option::Option::Some(CmdAlleyType::CmdStartAlleyEventScRsp),
+            4748 => ::std::option::Option::Some(CmdAlleyType::CmdLogisticsInfoScNotify),
+            4746 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyPlacingGameCsReq),
+            4737 => ::std::option::Option::Some(CmdAlleyType::CmdActivityRaidPlacingGameScRsp),
             4719 => ::std::option::Option::Some(CmdAlleyType::CmdRefreshAlleyOrderScRsp),
-            4783 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyShipUnlockScNotify),
-            4770 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyShipUsedCountScNotify),
-            4703 => ::std::option::Option::Some(CmdAlleyType::CmdLogisticsGameCsReq),
-            4716 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyEventEffectNotify),
-            4774 => ::std::option::Option::Some(CmdAlleyType::CmdTakePrestigeRewardScRsp),
-            4733 => ::std::option::Option::Some(CmdAlleyType::CmdPrestigeLevelUpScRsp),
-            4737 => ::std::option::Option::Some(CmdAlleyType::CmdStartAlleyEventScRsp),
-            4751 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyFundsScNotify),
-            4779 => ::std::option::Option::Some(CmdAlleyType::CmdRefreshAlleyOrderCsReq),
-            4764 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyShipmentEventEffectsScNotify),
-            4736 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyGuaranteedFundsCsReq),
-            4765 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyGuaranteedFundsScRsp),
-            4780 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyEventChangeNotify),
-            4799 => ::std::option::Option::Some(CmdAlleyType::CmdSaveLogisticsCsReq),
-            4788 => ::std::option::Option::Some(CmdAlleyType::CmdActivityRaidPlacingGameCsReq),
-            4777 => ::std::option::Option::Some(CmdAlleyType::CmdLogisticsDetonateStarSkiffCsReq),
+            4753 => ::std::option::Option::Some(CmdAlleyType::CmdPrestigeLevelUpCsReq),
+            4788 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyShipmentEventEffectsScNotify),
+            4725 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyPlacingGameScRsp),
+            4793 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyEventEffectNotify),
+            4775 => ::std::option::Option::Some(CmdAlleyType::CmdRefreshAlleyOrderCsReq),
+            4790 => ::std::option::Option::Some(CmdAlleyType::CmdPrestigeLevelUpScRsp),
+            4718 => ::std::option::Option::Some(CmdAlleyType::CmdActivityRaidPlacingGameCsReq),
+            4752 => ::std::option::Option::Some(CmdAlleyType::CmdStartAlleyEventCsReq),
+            4735 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyGuaranteedFundsCsReq),
+            4784 => ::std::option::Option::Some(CmdAlleyType::CmdLogisticsGameCsReq),
+            4750 => ::std::option::Option::Some(CmdAlleyType::CmdSaveLogisticsScRsp),
+            4773 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyGuaranteedFundsScRsp),
+            4743 => ::std::option::Option::Some(CmdAlleyType::CmdTakePrestigeRewardScRsp),
+            4778 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyShipUnlockScNotify),
+            4736 => ::std::option::Option::Some(CmdAlleyType::CmdGetAlleyInfoCsReq),
+            4759 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyFundsScNotify),
+            4726 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyOrderChangedScNotify),
+            4712 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyShopLevelScNotify),
+            4734 => ::std::option::Option::Some(CmdAlleyType::CmdTakePrestigeRewardCsReq),
+            4721 => ::std::option::Option::Some(CmdAlleyType::CmdLogisticsDetonateStarSkiffCsReq),
+            4717 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyTakeEventRewardCsReq),
+            4729 => ::std::option::Option::Some(CmdAlleyType::CmdSaveLogisticsCsReq),
+            4765 => ::std::option::Option::Some(CmdAlleyType::CmdLogisticsDetonateStarSkiffScRsp),
+            4724 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyEventChangeNotify),
+            4727 => ::std::option::Option::Some(CmdAlleyType::CmdLogisticsGameScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -157,84 +157,84 @@ impl ::protobuf::Enum for CmdAlleyType {
     fn from_str(str: &str) -> ::std::option::Option<CmdAlleyType> {
         match str {
             "CmdAlleyTypeNone" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyTypeNone),
-            "CmdStartAlleyEventCsReq" => ::std::option::Option::Some(CmdAlleyType::CmdStartAlleyEventCsReq),
-            "CmdActivityRaidPlacingGameScRsp" => ::std::option::Option::Some(CmdAlleyType::CmdActivityRaidPlacingGameScRsp),
-            "CmdTakePrestigeRewardCsReq" => ::std::option::Option::Some(CmdAlleyType::CmdTakePrestigeRewardCsReq),
-            "CmdLogisticsDetonateStarSkiffScRsp" => ::std::option::Option::Some(CmdAlleyType::CmdLogisticsDetonateStarSkiffScRsp),
-            "CmdAlleyOrderChangedScNotify" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyOrderChangedScNotify),
             "CmdGetAlleyInfoScRsp" => ::std::option::Option::Some(CmdAlleyType::CmdGetAlleyInfoScRsp),
+            "CmdAlleyShipUsedCountScNotify" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyShipUsedCountScNotify),
             "CmdLogisticsScoreRewardSyncInfoScNotify" => ::std::option::Option::Some(CmdAlleyType::CmdLogisticsScoreRewardSyncInfoScNotify),
-            "CmdAlleyShopLevelScNotify" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyShopLevelScNotify),
-            "CmdAlleyPlacingGameScRsp" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyPlacingGameScRsp),
+            "CmdAlleyTakeEventRewardScRsp" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyTakeEventRewardScRsp),
             "CmdGetSaveLogisticsMapCsReq" => ::std::option::Option::Some(CmdAlleyType::CmdGetSaveLogisticsMapCsReq),
             "CmdGetSaveLogisticsMapScRsp" => ::std::option::Option::Some(CmdAlleyType::CmdGetSaveLogisticsMapScRsp),
-            "CmdSaveLogisticsScRsp" => ::std::option::Option::Some(CmdAlleyType::CmdSaveLogisticsScRsp),
-            "CmdAlleyTakeEventRewardCsReq" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyTakeEventRewardCsReq),
+            "CmdStartAlleyEventScRsp" => ::std::option::Option::Some(CmdAlleyType::CmdStartAlleyEventScRsp),
             "CmdLogisticsInfoScNotify" => ::std::option::Option::Some(CmdAlleyType::CmdLogisticsInfoScNotify),
             "CmdAlleyPlacingGameCsReq" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyPlacingGameCsReq),
-            "CmdLogisticsGameScRsp" => ::std::option::Option::Some(CmdAlleyType::CmdLogisticsGameScRsp),
-            "CmdGetAlleyInfoCsReq" => ::std::option::Option::Some(CmdAlleyType::CmdGetAlleyInfoCsReq),
-            "CmdAlleyTakeEventRewardScRsp" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyTakeEventRewardScRsp),
-            "CmdPrestigeLevelUpCsReq" => ::std::option::Option::Some(CmdAlleyType::CmdPrestigeLevelUpCsReq),
+            "CmdActivityRaidPlacingGameScRsp" => ::std::option::Option::Some(CmdAlleyType::CmdActivityRaidPlacingGameScRsp),
             "CmdRefreshAlleyOrderScRsp" => ::std::option::Option::Some(CmdAlleyType::CmdRefreshAlleyOrderScRsp),
-            "CmdAlleyShipUnlockScNotify" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyShipUnlockScNotify),
-            "CmdAlleyShipUsedCountScNotify" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyShipUsedCountScNotify),
-            "CmdLogisticsGameCsReq" => ::std::option::Option::Some(CmdAlleyType::CmdLogisticsGameCsReq),
-            "CmdAlleyEventEffectNotify" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyEventEffectNotify),
-            "CmdTakePrestigeRewardScRsp" => ::std::option::Option::Some(CmdAlleyType::CmdTakePrestigeRewardScRsp),
-            "CmdPrestigeLevelUpScRsp" => ::std::option::Option::Some(CmdAlleyType::CmdPrestigeLevelUpScRsp),
-            "CmdStartAlleyEventScRsp" => ::std::option::Option::Some(CmdAlleyType::CmdStartAlleyEventScRsp),
-            "CmdAlleyFundsScNotify" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyFundsScNotify),
-            "CmdRefreshAlleyOrderCsReq" => ::std::option::Option::Some(CmdAlleyType::CmdRefreshAlleyOrderCsReq),
+            "CmdPrestigeLevelUpCsReq" => ::std::option::Option::Some(CmdAlleyType::CmdPrestigeLevelUpCsReq),
             "CmdAlleyShipmentEventEffectsScNotify" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyShipmentEventEffectsScNotify),
-            "CmdAlleyGuaranteedFundsCsReq" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyGuaranteedFundsCsReq),
-            "CmdAlleyGuaranteedFundsScRsp" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyGuaranteedFundsScRsp),
-            "CmdAlleyEventChangeNotify" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyEventChangeNotify),
-            "CmdSaveLogisticsCsReq" => ::std::option::Option::Some(CmdAlleyType::CmdSaveLogisticsCsReq),
+            "CmdAlleyPlacingGameScRsp" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyPlacingGameScRsp),
+            "CmdAlleyEventEffectNotify" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyEventEffectNotify),
+            "CmdRefreshAlleyOrderCsReq" => ::std::option::Option::Some(CmdAlleyType::CmdRefreshAlleyOrderCsReq),
+            "CmdPrestigeLevelUpScRsp" => ::std::option::Option::Some(CmdAlleyType::CmdPrestigeLevelUpScRsp),
             "CmdActivityRaidPlacingGameCsReq" => ::std::option::Option::Some(CmdAlleyType::CmdActivityRaidPlacingGameCsReq),
+            "CmdStartAlleyEventCsReq" => ::std::option::Option::Some(CmdAlleyType::CmdStartAlleyEventCsReq),
+            "CmdAlleyGuaranteedFundsCsReq" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyGuaranteedFundsCsReq),
+            "CmdLogisticsGameCsReq" => ::std::option::Option::Some(CmdAlleyType::CmdLogisticsGameCsReq),
+            "CmdSaveLogisticsScRsp" => ::std::option::Option::Some(CmdAlleyType::CmdSaveLogisticsScRsp),
+            "CmdAlleyGuaranteedFundsScRsp" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyGuaranteedFundsScRsp),
+            "CmdTakePrestigeRewardScRsp" => ::std::option::Option::Some(CmdAlleyType::CmdTakePrestigeRewardScRsp),
+            "CmdAlleyShipUnlockScNotify" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyShipUnlockScNotify),
+            "CmdGetAlleyInfoCsReq" => ::std::option::Option::Some(CmdAlleyType::CmdGetAlleyInfoCsReq),
+            "CmdAlleyFundsScNotify" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyFundsScNotify),
+            "CmdAlleyOrderChangedScNotify" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyOrderChangedScNotify),
+            "CmdAlleyShopLevelScNotify" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyShopLevelScNotify),
+            "CmdTakePrestigeRewardCsReq" => ::std::option::Option::Some(CmdAlleyType::CmdTakePrestigeRewardCsReq),
             "CmdLogisticsDetonateStarSkiffCsReq" => ::std::option::Option::Some(CmdAlleyType::CmdLogisticsDetonateStarSkiffCsReq),
+            "CmdAlleyTakeEventRewardCsReq" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyTakeEventRewardCsReq),
+            "CmdSaveLogisticsCsReq" => ::std::option::Option::Some(CmdAlleyType::CmdSaveLogisticsCsReq),
+            "CmdLogisticsDetonateStarSkiffScRsp" => ::std::option::Option::Some(CmdAlleyType::CmdLogisticsDetonateStarSkiffScRsp),
+            "CmdAlleyEventChangeNotify" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyEventChangeNotify),
+            "CmdLogisticsGameScRsp" => ::std::option::Option::Some(CmdAlleyType::CmdLogisticsGameScRsp),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdAlleyType] = &[
         CmdAlleyType::CmdAlleyTypeNone,
-        CmdAlleyType::CmdStartAlleyEventCsReq,
-        CmdAlleyType::CmdActivityRaidPlacingGameScRsp,
-        CmdAlleyType::CmdTakePrestigeRewardCsReq,
-        CmdAlleyType::CmdLogisticsDetonateStarSkiffScRsp,
-        CmdAlleyType::CmdAlleyOrderChangedScNotify,
         CmdAlleyType::CmdGetAlleyInfoScRsp,
+        CmdAlleyType::CmdAlleyShipUsedCountScNotify,
         CmdAlleyType::CmdLogisticsScoreRewardSyncInfoScNotify,
-        CmdAlleyType::CmdAlleyShopLevelScNotify,
-        CmdAlleyType::CmdAlleyPlacingGameScRsp,
+        CmdAlleyType::CmdAlleyTakeEventRewardScRsp,
         CmdAlleyType::CmdGetSaveLogisticsMapCsReq,
         CmdAlleyType::CmdGetSaveLogisticsMapScRsp,
-        CmdAlleyType::CmdSaveLogisticsScRsp,
-        CmdAlleyType::CmdAlleyTakeEventRewardCsReq,
+        CmdAlleyType::CmdStartAlleyEventScRsp,
         CmdAlleyType::CmdLogisticsInfoScNotify,
         CmdAlleyType::CmdAlleyPlacingGameCsReq,
-        CmdAlleyType::CmdLogisticsGameScRsp,
-        CmdAlleyType::CmdGetAlleyInfoCsReq,
-        CmdAlleyType::CmdAlleyTakeEventRewardScRsp,
-        CmdAlleyType::CmdPrestigeLevelUpCsReq,
+        CmdAlleyType::CmdActivityRaidPlacingGameScRsp,
         CmdAlleyType::CmdRefreshAlleyOrderScRsp,
-        CmdAlleyType::CmdAlleyShipUnlockScNotify,
-        CmdAlleyType::CmdAlleyShipUsedCountScNotify,
-        CmdAlleyType::CmdLogisticsGameCsReq,
-        CmdAlleyType::CmdAlleyEventEffectNotify,
-        CmdAlleyType::CmdTakePrestigeRewardScRsp,
-        CmdAlleyType::CmdPrestigeLevelUpScRsp,
-        CmdAlleyType::CmdStartAlleyEventScRsp,
-        CmdAlleyType::CmdAlleyFundsScNotify,
-        CmdAlleyType::CmdRefreshAlleyOrderCsReq,
+        CmdAlleyType::CmdPrestigeLevelUpCsReq,
         CmdAlleyType::CmdAlleyShipmentEventEffectsScNotify,
-        CmdAlleyType::CmdAlleyGuaranteedFundsCsReq,
-        CmdAlleyType::CmdAlleyGuaranteedFundsScRsp,
-        CmdAlleyType::CmdAlleyEventChangeNotify,
-        CmdAlleyType::CmdSaveLogisticsCsReq,
+        CmdAlleyType::CmdAlleyPlacingGameScRsp,
+        CmdAlleyType::CmdAlleyEventEffectNotify,
+        CmdAlleyType::CmdRefreshAlleyOrderCsReq,
+        CmdAlleyType::CmdPrestigeLevelUpScRsp,
         CmdAlleyType::CmdActivityRaidPlacingGameCsReq,
+        CmdAlleyType::CmdStartAlleyEventCsReq,
+        CmdAlleyType::CmdAlleyGuaranteedFundsCsReq,
+        CmdAlleyType::CmdLogisticsGameCsReq,
+        CmdAlleyType::CmdSaveLogisticsScRsp,
+        CmdAlleyType::CmdAlleyGuaranteedFundsScRsp,
+        CmdAlleyType::CmdTakePrestigeRewardScRsp,
+        CmdAlleyType::CmdAlleyShipUnlockScNotify,
+        CmdAlleyType::CmdGetAlleyInfoCsReq,
+        CmdAlleyType::CmdAlleyFundsScNotify,
+        CmdAlleyType::CmdAlleyOrderChangedScNotify,
+        CmdAlleyType::CmdAlleyShopLevelScNotify,
+        CmdAlleyType::CmdTakePrestigeRewardCsReq,
         CmdAlleyType::CmdLogisticsDetonateStarSkiffCsReq,
+        CmdAlleyType::CmdAlleyTakeEventRewardCsReq,
+        CmdAlleyType::CmdSaveLogisticsCsReq,
+        CmdAlleyType::CmdLogisticsDetonateStarSkiffScRsp,
+        CmdAlleyType::CmdAlleyEventChangeNotify,
+        CmdAlleyType::CmdLogisticsGameScRsp,
     ];
 }
 
@@ -247,42 +247,42 @@ impl ::protobuf::EnumFull for CmdAlleyType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdAlleyType::CmdAlleyTypeNone => 0,
-            CmdAlleyType::CmdStartAlleyEventCsReq => 1,
-            CmdAlleyType::CmdActivityRaidPlacingGameScRsp => 2,
-            CmdAlleyType::CmdTakePrestigeRewardCsReq => 3,
-            CmdAlleyType::CmdLogisticsDetonateStarSkiffScRsp => 4,
-            CmdAlleyType::CmdAlleyOrderChangedScNotify => 5,
-            CmdAlleyType::CmdGetAlleyInfoScRsp => 6,
-            CmdAlleyType::CmdLogisticsScoreRewardSyncInfoScNotify => 7,
-            CmdAlleyType::CmdAlleyShopLevelScNotify => 8,
-            CmdAlleyType::CmdAlleyPlacingGameScRsp => 9,
-            CmdAlleyType::CmdGetSaveLogisticsMapCsReq => 10,
-            CmdAlleyType::CmdGetSaveLogisticsMapScRsp => 11,
-            CmdAlleyType::CmdSaveLogisticsScRsp => 12,
-            CmdAlleyType::CmdAlleyTakeEventRewardCsReq => 13,
-            CmdAlleyType::CmdLogisticsInfoScNotify => 14,
-            CmdAlleyType::CmdAlleyPlacingGameCsReq => 15,
-            CmdAlleyType::CmdLogisticsGameScRsp => 16,
-            CmdAlleyType::CmdGetAlleyInfoCsReq => 17,
-            CmdAlleyType::CmdAlleyTakeEventRewardScRsp => 18,
-            CmdAlleyType::CmdPrestigeLevelUpCsReq => 19,
-            CmdAlleyType::CmdRefreshAlleyOrderScRsp => 20,
-            CmdAlleyType::CmdAlleyShipUnlockScNotify => 21,
-            CmdAlleyType::CmdAlleyShipUsedCountScNotify => 22,
-            CmdAlleyType::CmdLogisticsGameCsReq => 23,
-            CmdAlleyType::CmdAlleyEventEffectNotify => 24,
-            CmdAlleyType::CmdTakePrestigeRewardScRsp => 25,
-            CmdAlleyType::CmdPrestigeLevelUpScRsp => 26,
-            CmdAlleyType::CmdStartAlleyEventScRsp => 27,
-            CmdAlleyType::CmdAlleyFundsScNotify => 28,
-            CmdAlleyType::CmdRefreshAlleyOrderCsReq => 29,
-            CmdAlleyType::CmdAlleyShipmentEventEffectsScNotify => 30,
-            CmdAlleyType::CmdAlleyGuaranteedFundsCsReq => 31,
-            CmdAlleyType::CmdAlleyGuaranteedFundsScRsp => 32,
-            CmdAlleyType::CmdAlleyEventChangeNotify => 33,
-            CmdAlleyType::CmdSaveLogisticsCsReq => 34,
-            CmdAlleyType::CmdActivityRaidPlacingGameCsReq => 35,
-            CmdAlleyType::CmdLogisticsDetonateStarSkiffCsReq => 36,
+            CmdAlleyType::CmdGetAlleyInfoScRsp => 1,
+            CmdAlleyType::CmdAlleyShipUsedCountScNotify => 2,
+            CmdAlleyType::CmdLogisticsScoreRewardSyncInfoScNotify => 3,
+            CmdAlleyType::CmdAlleyTakeEventRewardScRsp => 4,
+            CmdAlleyType::CmdGetSaveLogisticsMapCsReq => 5,
+            CmdAlleyType::CmdGetSaveLogisticsMapScRsp => 6,
+            CmdAlleyType::CmdStartAlleyEventScRsp => 7,
+            CmdAlleyType::CmdLogisticsInfoScNotify => 8,
+            CmdAlleyType::CmdAlleyPlacingGameCsReq => 9,
+            CmdAlleyType::CmdActivityRaidPlacingGameScRsp => 10,
+            CmdAlleyType::CmdRefreshAlleyOrderScRsp => 11,
+            CmdAlleyType::CmdPrestigeLevelUpCsReq => 12,
+            CmdAlleyType::CmdAlleyShipmentEventEffectsScNotify => 13,
+            CmdAlleyType::CmdAlleyPlacingGameScRsp => 14,
+            CmdAlleyType::CmdAlleyEventEffectNotify => 15,
+            CmdAlleyType::CmdRefreshAlleyOrderCsReq => 16,
+            CmdAlleyType::CmdPrestigeLevelUpScRsp => 17,
+            CmdAlleyType::CmdActivityRaidPlacingGameCsReq => 18,
+            CmdAlleyType::CmdStartAlleyEventCsReq => 19,
+            CmdAlleyType::CmdAlleyGuaranteedFundsCsReq => 20,
+            CmdAlleyType::CmdLogisticsGameCsReq => 21,
+            CmdAlleyType::CmdSaveLogisticsScRsp => 22,
+            CmdAlleyType::CmdAlleyGuaranteedFundsScRsp => 23,
+            CmdAlleyType::CmdTakePrestigeRewardScRsp => 24,
+            CmdAlleyType::CmdAlleyShipUnlockScNotify => 25,
+            CmdAlleyType::CmdGetAlleyInfoCsReq => 26,
+            CmdAlleyType::CmdAlleyFundsScNotify => 27,
+            CmdAlleyType::CmdAlleyOrderChangedScNotify => 28,
+            CmdAlleyType::CmdAlleyShopLevelScNotify => 29,
+            CmdAlleyType::CmdTakePrestigeRewardCsReq => 30,
+            CmdAlleyType::CmdLogisticsDetonateStarSkiffCsReq => 31,
+            CmdAlleyType::CmdAlleyTakeEventRewardCsReq => 32,
+            CmdAlleyType::CmdSaveLogisticsCsReq => 33,
+            CmdAlleyType::CmdLogisticsDetonateStarSkiffScRsp => 34,
+            CmdAlleyType::CmdAlleyEventChangeNotify => 35,
+            CmdAlleyType::CmdLogisticsGameScRsp => 36,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -302,31 +302,31 @@ impl CmdAlleyType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12CmdAlleyType.proto*\xcc\t\n\x0cCmdAlleyType\x12\x14\n\x10CmdAlleyT\
-    ypeNone\x10\0\x12\x1c\n\x17CmdStartAlleyEventCsReq\x10\xfe$\x12$\n\x1fCm\
-    dActivityRaidPlacingGameScRsp\x10\x87%\x12\x1f\n\x1aCmdTakePrestigeRewar\
-    dCsReq\x10\x8b%\x12'\n\"CmdLogisticsDetonateStarSkiffScRsp\x10\xb7%\x12!\
-    \n\x1cCmdAlleyOrderChangedScNotify\x10\x99%\x12\x19\n\x14CmdGetAlleyInfo\
-    ScRsp\x10\xf0$\x12,\n'CmdLogisticsScoreRewardSyncInfoScNotify\x10\xe0$\
-    \x12\x1e\n\x19CmdAlleyShopLevelScNotify\x10\xa5%\x12\x1d\n\x18CmdAlleyPl\
-    acingGameScRsp\x10\xa7%\x12\x20\n\x1bCmdGetSaveLogisticsMapCsReq\x10\xba\
-    %\x12\x20\n\x1bCmdGetSaveLogisticsMapScRsp\x10\xe6$\x12\x1a\n\x15CmdSave\
-    LogisticsScRsp\x10\xe5$\x12!\n\x1cCmdAlleyTakeEventRewardCsReq\x10\xf6$\
-    \x12\x1d\n\x18CmdLogisticsInfoScNotify\x10\xb9%\x12\x1d\n\x18CmdAlleyPla\
-    cingGameCsReq\x10\xfa$\x12\x1a\n\x15CmdLogisticsGameScRsp\x10\x8a%\x12\
-    \x19\n\x14CmdGetAlleyInfoCsReq\x10\x97%\x12!\n\x1cCmdAlleyTakeEventRewar\
-    dScRsp\x10\xe9$\x12\x1c\n\x17CmdPrestigeLevelUpCsReq\x10\xf9$\x12\x1e\n\
-    \x19CmdRefreshAlleyOrderScRsp\x10\xef$\x12\x1f\n\x1aCmdAlleyShipUnlockSc\
-    Notify\x10\xaf%\x12\"\n\x1dCmdAlleyShipUsedCountScNotify\x10\xa2%\x12\
-    \x1a\n\x15CmdLogisticsGameCsReq\x10\xdf$\x12\x1e\n\x19CmdAlleyEventEffec\
-    tNotify\x10\xec$\x12\x1f\n\x1aCmdTakePrestigeRewardScRsp\x10\xa6%\x12\
-    \x1c\n\x17CmdPrestigeLevelUpScRsp\x10\xfd$\x12\x1c\n\x17CmdStartAlleyEve\
-    ntScRsp\x10\x81%\x12\x1a\n\x15CmdAlleyFundsScNotify\x10\x8f%\x12\x1e\n\
-    \x19CmdRefreshAlleyOrderCsReq\x10\xab%\x12)\n$CmdAlleyShipmentEventEffec\
-    tsScNotify\x10\x9c%\x12!\n\x1cCmdAlleyGuaranteedFundsCsReq\x10\x80%\x12!\
-    \n\x1cCmdAlleyGuaranteedFundsScRsp\x10\x9d%\x12\x1e\n\x19CmdAlleyEventCh\
-    angeNotify\x10\xac%\x12\x1a\n\x15CmdSaveLogisticsCsReq\x10\xbf%\x12$\n\
-    \x1fCmdActivityRaidPlacingGameCsReq\x10\xb4%\x12'\n\"CmdLogisticsDetonat\
-    eStarSkiffCsReq\x10\xa9%b\x06proto3\
+    ypeNone\x10\0\x12\x19\n\x14CmdGetAlleyInfoScRsp\x10\xbb%\x12\"\n\x1dCmdA\
+    lleyShipUsedCountScNotify\x10\xa8%\x12,\n'CmdLogisticsScoreRewardSyncInf\
+    oScNotify\x10\xe4$\x12!\n\x1cCmdAlleyTakeEventRewardScRsp\x10\xe9$\x12\
+    \x20\n\x1bCmdGetSaveLogisticsMapCsReq\x10\x96%\x12\x20\n\x1bCmdGetSaveLo\
+    gisticsMapScRsp\x10\xe6$\x12\x1c\n\x17CmdStartAlleyEventScRsp\x10\xa6%\
+    \x12\x1d\n\x18CmdLogisticsInfoScNotify\x10\x8c%\x12\x1d\n\x18CmdAlleyPla\
+    cingGameCsReq\x10\x8a%\x12$\n\x1fCmdActivityRaidPlacingGameScRsp\x10\x81\
+    %\x12\x1e\n\x19CmdRefreshAlleyOrderScRsp\x10\xef$\x12\x1c\n\x17CmdPresti\
+    geLevelUpCsReq\x10\x91%\x12)\n$CmdAlleyShipmentEventEffectsScNotify\x10\
+    \xb4%\x12\x1d\n\x18CmdAlleyPlacingGameScRsp\x10\xf5$\x12\x1e\n\x19CmdAll\
+    eyEventEffectNotify\x10\xb9%\x12\x1e\n\x19CmdRefreshAlleyOrderCsReq\x10\
+    \xa7%\x12\x1c\n\x17CmdPrestigeLevelUpScRsp\x10\xb6%\x12$\n\x1fCmdActivit\
+    yRaidPlacingGameCsReq\x10\xee$\x12\x1c\n\x17CmdStartAlleyEventCsReq\x10\
+    \x90%\x12!\n\x1cCmdAlleyGuaranteedFundsCsReq\x10\xff$\x12\x1a\n\x15CmdLo\
+    gisticsGameCsReq\x10\xb0%\x12\x1a\n\x15CmdSaveLogisticsScRsp\x10\x8e%\
+    \x12!\n\x1cCmdAlleyGuaranteedFundsScRsp\x10\xa5%\x12\x1f\n\x1aCmdTakePre\
+    stigeRewardScRsp\x10\x87%\x12\x1f\n\x1aCmdAlleyShipUnlockScNotify\x10\
+    \xaa%\x12\x19\n\x14CmdGetAlleyInfoCsReq\x10\x80%\x12\x1a\n\x15CmdAlleyFu\
+    ndsScNotify\x10\x97%\x12!\n\x1cCmdAlleyOrderChangedScNotify\x10\xf6$\x12\
+    \x1e\n\x19CmdAlleyShopLevelScNotify\x10\xe8$\x12\x1f\n\x1aCmdTakePrestig\
+    eRewardCsReq\x10\xfe$\x12'\n\"CmdLogisticsDetonateStarSkiffCsReq\x10\xf1\
+    $\x12!\n\x1cCmdAlleyTakeEventRewardCsReq\x10\xed$\x12\x1a\n\x15CmdSaveLo\
+    gisticsCsReq\x10\xf9$\x12'\n\"CmdLogisticsDetonateStarSkiffScRsp\x10\x9d\
+    %\x12\x1e\n\x19CmdAlleyEventChangeNotify\x10\xf4$\x12\x1a\n\x15CmdLogist\
+    icsGameScRsp\x10\xf7$b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

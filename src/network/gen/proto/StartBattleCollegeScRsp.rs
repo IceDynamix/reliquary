@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartBattleCollegeScRsp {
     // message fields
-    // @@protoc_insertion_point(field:StartBattleCollegeScRsp.BBKGPAJCCBM)
-    pub BBKGPAJCCBM: ::protobuf::MessageField<super::CHDPLFOHLCN::CHDPLFOHLCN>,
-    // @@protoc_insertion_point(field:StartBattleCollegeScRsp.IPNHCCODNDI)
-    pub IPNHCCODNDI: u32,
-    // @@protoc_insertion_point(field:StartBattleCollegeScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:StartBattleCollegeScRsp.FFKNMAONGIB)
+    pub FFKNMAONGIB: u32,
+    // @@protoc_insertion_point(field:StartBattleCollegeScRsp.LPPMFJOCKNO)
+    pub LPPMFJOCKNO: ::protobuf::MessageField<super::DDCPCKIHMEF::DDCPCKIHMEF>,
+    // @@protoc_insertion_point(field:StartBattleCollegeScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:StartBattleCollegeScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl StartBattleCollegeScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CHDPLFOHLCN::CHDPLFOHLCN>(
-            "BBKGPAJCCBM",
-            |m: &StartBattleCollegeScRsp| { &m.BBKGPAJCCBM },
-            |m: &mut StartBattleCollegeScRsp| { &mut m.BBKGPAJCCBM },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FFKNMAONGIB",
+            |m: &StartBattleCollegeScRsp| { &m.FFKNMAONGIB },
+            |m: &mut StartBattleCollegeScRsp| { &mut m.FFKNMAONGIB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DDCPCKIHMEF::DDCPCKIHMEF>(
+            "LPPMFJOCKNO",
+            |m: &StartBattleCollegeScRsp| { &m.LPPMFJOCKNO },
+            |m: &mut StartBattleCollegeScRsp| { &mut m.LPPMFJOCKNO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IPNHCCODNDI",
-            |m: &StartBattleCollegeScRsp| { &m.IPNHCCODNDI },
-            |m: &mut StartBattleCollegeScRsp| { &mut m.IPNHCCODNDI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &StartBattleCollegeScRsp| { &m.ADADHIHDHJC },
-            |m: &mut StartBattleCollegeScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &StartBattleCollegeScRsp| { &m.retcode },
+            |m: &mut StartBattleCollegeScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartBattleCollegeScRsp>(
             "StartBattleCollegeScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for StartBattleCollegeScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BBKGPAJCCBM)?;
+                8 => {
+                    self.FFKNMAONGIB = is.read_uint32()?;
                 },
-                64 => {
-                    self.IPNHCCODNDI = is.read_uint32()?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LPPMFJOCKNO)?;
                 },
-                16 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                56 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +108,15 @@ impl ::protobuf::Message for StartBattleCollegeScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.BBKGPAJCCBM.as_ref() {
+        if self.FFKNMAONGIB != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.FFKNMAONGIB);
+        }
+        if let Some(v) = self.LPPMFJOCKNO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.IPNHCCODNDI != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.IPNHCCODNDI);
-        }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for StartBattleCollegeScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.BBKGPAJCCBM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if self.FFKNMAONGIB != 0 {
+            os.write_uint32(1, self.FFKNMAONGIB)?;
         }
-        if self.IPNHCCODNDI != 0 {
-            os.write_uint32(8, self.IPNHCCODNDI)?;
+        if let Some(v) = self.LPPMFJOCKNO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(2, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(7, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for StartBattleCollegeScRsp {
     }
 
     fn clear(&mut self) {
-        self.BBKGPAJCCBM.clear();
-        self.IPNHCCODNDI = 0;
-        self.ADADHIHDHJC = 0;
+        self.FFKNMAONGIB = 0;
+        self.LPPMFJOCKNO.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartBattleCollegeScRsp {
         static instance: StartBattleCollegeScRsp = StartBattleCollegeScRsp {
-            BBKGPAJCCBM: ::protobuf::MessageField::none(),
-            IPNHCCODNDI: 0,
-            ADADHIHDHJC: 0,
+            FFKNMAONGIB: 0,
+            LPPMFJOCKNO: ::protobuf::MessageField::none(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for StartBattleCollegeScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dStartBattleCollegeScRsp.proto\x1a\x11CHDPLFOHLCN.proto\"\x8d\x01\n\
-    \x17StartBattleCollegeScRsp\x12.\n\x0bBBKGPAJCCBM\x18\x03\x20\x01(\x0b2\
-    \x0c.CHDPLFOHLCNR\x0bBBKGPAJCCBM\x12\x20\n\x0bIPNHCCODNDI\x18\x08\x20\
-    \x01(\rR\x0bIPNHCCODNDI\x12\x20\n\x0bADADHIHDHJC\x18\x02\x20\x01(\rR\x0b\
-    ADADHIHDHJCb\x06proto3\
+    \n\x1dStartBattleCollegeScRsp.proto\x1a\x11DDCPCKIHMEF.proto\"\x85\x01\n\
+    \x17StartBattleCollegeScRsp\x12\x20\n\x0bFFKNMAONGIB\x18\x01\x20\x01(\rR\
+    \x0bFFKNMAONGIB\x12.\n\x0bLPPMFJOCKNO\x18\x0e\x20\x01(\x0b2\x0c.DDCPCKIH\
+    MEFR\x0bLPPMFJOCKNO\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcodeb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::CHDPLFOHLCN::file_descriptor().clone());
+            deps.push(super::DDCPCKIHMEF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(StartBattleCollegeScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

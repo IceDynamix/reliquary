@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SpringRefreshCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SpringRefreshCsReq.JCPFOPLBOIM)
-    pub JCPFOPLBOIM: u32,
-    // @@protoc_insertion_point(field:SpringRefreshCsReq.IJGMJLMJABD)
-    pub IJGMJLMJABD: u32,
-    // @@protoc_insertion_point(field:SpringRefreshCsReq.KOCMDLFBKEI)
-    pub KOCMDLFBKEI: u32,
+    // @@protoc_insertion_point(field:SpringRefreshCsReq.BHONGJMFKIM)
+    pub BHONGJMFKIM: u32,
+    // @@protoc_insertion_point(field:SpringRefreshCsReq.BJNKEEFKAIK)
+    pub BJNKEEFKAIK: u32,
+    // @@protoc_insertion_point(field:SpringRefreshCsReq.CFAPNLFIMLN)
+    pub CFAPNLFIMLN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SpringRefreshCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl SpringRefreshCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JCPFOPLBOIM",
-            |m: &SpringRefreshCsReq| { &m.JCPFOPLBOIM },
-            |m: &mut SpringRefreshCsReq| { &mut m.JCPFOPLBOIM },
+            "BHONGJMFKIM",
+            |m: &SpringRefreshCsReq| { &m.BHONGJMFKIM },
+            |m: &mut SpringRefreshCsReq| { &mut m.BHONGJMFKIM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IJGMJLMJABD",
-            |m: &SpringRefreshCsReq| { &m.IJGMJLMJABD },
-            |m: &mut SpringRefreshCsReq| { &mut m.IJGMJLMJABD },
+            "BJNKEEFKAIK",
+            |m: &SpringRefreshCsReq| { &m.BJNKEEFKAIK },
+            |m: &mut SpringRefreshCsReq| { &mut m.BJNKEEFKAIK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KOCMDLFBKEI",
-            |m: &SpringRefreshCsReq| { &m.KOCMDLFBKEI },
-            |m: &mut SpringRefreshCsReq| { &mut m.KOCMDLFBKEI },
+            "CFAPNLFIMLN",
+            |m: &SpringRefreshCsReq| { &m.CFAPNLFIMLN },
+            |m: &mut SpringRefreshCsReq| { &mut m.CFAPNLFIMLN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SpringRefreshCsReq>(
             "SpringRefreshCsReq",
@@ -88,13 +88,13 @@ impl ::protobuf::Message for SpringRefreshCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 40 => {
-                    self.JCPFOPLBOIM = is.read_uint32()?;
+                    self.BHONGJMFKIM = is.read_uint32()?;
                 },
-                64 => {
-                    self.IJGMJLMJABD = is.read_uint32()?;
+                8 => {
+                    self.BJNKEEFKAIK = is.read_uint32()?;
                 },
-                32 => {
-                    self.KOCMDLFBKEI = is.read_uint32()?;
+                112 => {
+                    self.CFAPNLFIMLN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for SpringRefreshCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JCPFOPLBOIM != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.JCPFOPLBOIM);
+        if self.BHONGJMFKIM != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.BHONGJMFKIM);
         }
-        if self.IJGMJLMJABD != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.IJGMJLMJABD);
+        if self.BJNKEEFKAIK != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.BJNKEEFKAIK);
         }
-        if self.KOCMDLFBKEI != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.KOCMDLFBKEI);
+        if self.CFAPNLFIMLN != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.CFAPNLFIMLN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for SpringRefreshCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JCPFOPLBOIM != 0 {
-            os.write_uint32(5, self.JCPFOPLBOIM)?;
+        if self.BHONGJMFKIM != 0 {
+            os.write_uint32(5, self.BHONGJMFKIM)?;
         }
-        if self.IJGMJLMJABD != 0 {
-            os.write_uint32(8, self.IJGMJLMJABD)?;
+        if self.BJNKEEFKAIK != 0 {
+            os.write_uint32(1, self.BJNKEEFKAIK)?;
         }
-        if self.KOCMDLFBKEI != 0 {
-            os.write_uint32(4, self.KOCMDLFBKEI)?;
+        if self.CFAPNLFIMLN != 0 {
+            os.write_uint32(14, self.CFAPNLFIMLN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for SpringRefreshCsReq {
     }
 
     fn clear(&mut self) {
-        self.JCPFOPLBOIM = 0;
-        self.IJGMJLMJABD = 0;
-        self.KOCMDLFBKEI = 0;
+        self.BHONGJMFKIM = 0;
+        self.BJNKEEFKAIK = 0;
+        self.CFAPNLFIMLN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SpringRefreshCsReq {
         static instance: SpringRefreshCsReq = SpringRefreshCsReq {
-            JCPFOPLBOIM: 0,
-            IJGMJLMJABD: 0,
-            KOCMDLFBKEI: 0,
+            BHONGJMFKIM: 0,
+            BJNKEEFKAIK: 0,
+            CFAPNLFIMLN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for SpringRefreshCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18SpringRefreshCsReq.proto\"z\n\x12SpringRefreshCsReq\x12\x20\n\x0bJ\
-    CPFOPLBOIM\x18\x05\x20\x01(\rR\x0bJCPFOPLBOIM\x12\x20\n\x0bIJGMJLMJABD\
-    \x18\x08\x20\x01(\rR\x0bIJGMJLMJABD\x12\x20\n\x0bKOCMDLFBKEI\x18\x04\x20\
-    \x01(\rR\x0bKOCMDLFBKEIb\x06proto3\
+    \n\x18SpringRefreshCsReq.proto\"z\n\x12SpringRefreshCsReq\x12\x20\n\x0bB\
+    HONGJMFKIM\x18\x05\x20\x01(\rR\x0bBHONGJMFKIM\x12\x20\n\x0bBJNKEEFKAIK\
+    \x18\x01\x20\x01(\rR\x0bBJNKEEFKAIK\x12\x20\n\x0bCFAPNLFIMLN\x18\x0e\x20\
+    \x01(\rR\x0bCFAPNLFIMLNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

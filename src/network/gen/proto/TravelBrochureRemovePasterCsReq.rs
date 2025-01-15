@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TravelBrochureRemovePasterCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TravelBrochureRemovePasterCsReq.LGBJLFEMFOL)
-    pub LGBJLFEMFOL: u32,
-    // @@protoc_insertion_point(field:TravelBrochureRemovePasterCsReq.LOFDIGOACGI)
-    pub LOFDIGOACGI: u32,
-    // @@protoc_insertion_point(field:TravelBrochureRemovePasterCsReq.POPPKLNFPPI)
-    pub POPPKLNFPPI: u64,
+    // @@protoc_insertion_point(field:TravelBrochureRemovePasterCsReq.unique_id)
+    pub unique_id: u64,
+    // @@protoc_insertion_point(field:TravelBrochureRemovePasterCsReq.CJAEBOLPIFP)
+    pub CJAEBOLPIFP: u32,
+    // @@protoc_insertion_point(field:TravelBrochureRemovePasterCsReq.AKMIHHHJPON)
+    pub AKMIHHHJPON: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TravelBrochureRemovePasterCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl TravelBrochureRemovePasterCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LGBJLFEMFOL",
-            |m: &TravelBrochureRemovePasterCsReq| { &m.LGBJLFEMFOL },
-            |m: &mut TravelBrochureRemovePasterCsReq| { &mut m.LGBJLFEMFOL },
+            "unique_id",
+            |m: &TravelBrochureRemovePasterCsReq| { &m.unique_id },
+            |m: &mut TravelBrochureRemovePasterCsReq| { &mut m.unique_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LOFDIGOACGI",
-            |m: &TravelBrochureRemovePasterCsReq| { &m.LOFDIGOACGI },
-            |m: &mut TravelBrochureRemovePasterCsReq| { &mut m.LOFDIGOACGI },
+            "CJAEBOLPIFP",
+            |m: &TravelBrochureRemovePasterCsReq| { &m.CJAEBOLPIFP },
+            |m: &mut TravelBrochureRemovePasterCsReq| { &mut m.CJAEBOLPIFP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "POPPKLNFPPI",
-            |m: &TravelBrochureRemovePasterCsReq| { &m.POPPKLNFPPI },
-            |m: &mut TravelBrochureRemovePasterCsReq| { &mut m.POPPKLNFPPI },
+            "AKMIHHHJPON",
+            |m: &TravelBrochureRemovePasterCsReq| { &m.AKMIHHHJPON },
+            |m: &mut TravelBrochureRemovePasterCsReq| { &mut m.AKMIHHHJPON },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TravelBrochureRemovePasterCsReq>(
             "TravelBrochureRemovePasterCsReq",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for TravelBrochureRemovePasterCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.LGBJLFEMFOL = is.read_uint32()?;
+                72 => {
+                    self.unique_id = is.read_uint64()?;
                 },
-                40 => {
-                    self.LOFDIGOACGI = is.read_uint32()?;
+                56 => {
+                    self.CJAEBOLPIFP = is.read_uint32()?;
                 },
                 16 => {
-                    self.POPPKLNFPPI = is.read_uint64()?;
+                    self.AKMIHHHJPON = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for TravelBrochureRemovePasterCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LGBJLFEMFOL != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.LGBJLFEMFOL);
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::uint64_size(9, self.unique_id);
         }
-        if self.LOFDIGOACGI != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.LOFDIGOACGI);
+        if self.CJAEBOLPIFP != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.CJAEBOLPIFP);
         }
-        if self.POPPKLNFPPI != 0 {
-            my_size += ::protobuf::rt::uint64_size(2, self.POPPKLNFPPI);
+        if self.AKMIHHHJPON != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.AKMIHHHJPON);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for TravelBrochureRemovePasterCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LGBJLFEMFOL != 0 {
-            os.write_uint32(3, self.LGBJLFEMFOL)?;
+        if self.unique_id != 0 {
+            os.write_uint64(9, self.unique_id)?;
         }
-        if self.LOFDIGOACGI != 0 {
-            os.write_uint32(5, self.LOFDIGOACGI)?;
+        if self.CJAEBOLPIFP != 0 {
+            os.write_uint32(7, self.CJAEBOLPIFP)?;
         }
-        if self.POPPKLNFPPI != 0 {
-            os.write_uint64(2, self.POPPKLNFPPI)?;
+        if self.AKMIHHHJPON != 0 {
+            os.write_uint32(2, self.AKMIHHHJPON)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for TravelBrochureRemovePasterCsReq {
     }
 
     fn clear(&mut self) {
-        self.LGBJLFEMFOL = 0;
-        self.LOFDIGOACGI = 0;
-        self.POPPKLNFPPI = 0;
+        self.unique_id = 0;
+        self.CJAEBOLPIFP = 0;
+        self.AKMIHHHJPON = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TravelBrochureRemovePasterCsReq {
         static instance: TravelBrochureRemovePasterCsReq = TravelBrochureRemovePasterCsReq {
-            LGBJLFEMFOL: 0,
-            LOFDIGOACGI: 0,
-            POPPKLNFPPI: 0,
+            unique_id: 0,
+            CJAEBOLPIFP: 0,
+            AKMIHHHJPON: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for TravelBrochureRemovePasterCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n%TravelBrochureRemovePasterCsReq.proto\"\x87\x01\n\x1fTravelBrochureRe\
-    movePasterCsReq\x12\x20\n\x0bLGBJLFEMFOL\x18\x03\x20\x01(\rR\x0bLGBJLFEM\
-    FOL\x12\x20\n\x0bLOFDIGOACGI\x18\x05\x20\x01(\rR\x0bLOFDIGOACGI\x12\x20\
-    \n\x0bPOPPKLNFPPI\x18\x02\x20\x01(\x04R\x0bPOPPKLNFPPIb\x06proto3\
+    \n%TravelBrochureRemovePasterCsReq.proto\"\x82\x01\n\x1fTravelBrochureRe\
+    movePasterCsReq\x12\x1b\n\tunique_id\x18\t\x20\x01(\x04R\x08uniqueId\x12\
+    \x20\n\x0bCJAEBOLPIFP\x18\x07\x20\x01(\rR\x0bCJAEBOLPIFP\x12\x20\n\x0bAK\
+    MIHHHJPON\x18\x02\x20\x01(\rR\x0bAKMIHHHJPONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

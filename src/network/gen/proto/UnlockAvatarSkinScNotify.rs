@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UnlockAvatarSkinScNotify {
     // message fields
-    // @@protoc_insertion_point(field:UnlockAvatarSkinScNotify.ECAMKNOPNEL)
-    pub ECAMKNOPNEL: u32,
+    // @@protoc_insertion_point(field:UnlockAvatarSkinScNotify.GDFMLBCPHMH)
+    pub GDFMLBCPHMH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:UnlockAvatarSkinScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl UnlockAvatarSkinScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ECAMKNOPNEL",
-            |m: &UnlockAvatarSkinScNotify| { &m.ECAMKNOPNEL },
-            |m: &mut UnlockAvatarSkinScNotify| { &mut m.ECAMKNOPNEL },
+            "GDFMLBCPHMH",
+            |m: &UnlockAvatarSkinScNotify| { &m.GDFMLBCPHMH },
+            |m: &mut UnlockAvatarSkinScNotify| { &mut m.GDFMLBCPHMH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UnlockAvatarSkinScNotify>(
             "UnlockAvatarSkinScNotify",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for UnlockAvatarSkinScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.ECAMKNOPNEL = is.read_uint32()?;
+                80 => {
+                    self.GDFMLBCPHMH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for UnlockAvatarSkinScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ECAMKNOPNEL != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.ECAMKNOPNEL);
+        if self.GDFMLBCPHMH != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.GDFMLBCPHMH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for UnlockAvatarSkinScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ECAMKNOPNEL != 0 {
-            os.write_uint32(6, self.ECAMKNOPNEL)?;
+        if self.GDFMLBCPHMH != 0 {
+            os.write_uint32(10, self.GDFMLBCPHMH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for UnlockAvatarSkinScNotify {
     }
 
     fn clear(&mut self) {
-        self.ECAMKNOPNEL = 0;
+        self.GDFMLBCPHMH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UnlockAvatarSkinScNotify {
         static instance: UnlockAvatarSkinScNotify = UnlockAvatarSkinScNotify {
-            ECAMKNOPNEL: 0,
+            GDFMLBCPHMH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for UnlockAvatarSkinScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eUnlockAvatarSkinScNotify.proto\"<\n\x18UnlockAvatarSkinScNotify\
-    \x12\x20\n\x0bECAMKNOPNEL\x18\x06\x20\x01(\rR\x0bECAMKNOPNELb\x06proto3\
+    \x12\x20\n\x0bGDFMLBCPHMH\x18\n\x20\x01(\rR\x0bGDFMLBCPHMHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

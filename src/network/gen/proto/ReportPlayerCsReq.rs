@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ReportPlayerCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ReportPlayerCsReq.LNCNOFOEHAA)
-    pub LNCNOFOEHAA: u32,
-    // @@protoc_insertion_point(field:ReportPlayerCsReq.PBOHGNKFCPE)
-    pub PBOHGNKFCPE: u32,
-    // @@protoc_insertion_point(field:ReportPlayerCsReq.BGCPIFKDJKH)
-    pub BGCPIFKDJKH: ::std::string::String,
+    // @@protoc_insertion_point(field:ReportPlayerCsReq.DEPEKPIEGJO)
+    pub DEPEKPIEGJO: u32,
+    // @@protoc_insertion_point(field:ReportPlayerCsReq.NKDAEFBKHBI)
+    pub NKDAEFBKHBI: u32,
+    // @@protoc_insertion_point(field:ReportPlayerCsReq.KLEONNFGBPM)
+    pub KLEONNFGBPM: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:ReportPlayerCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl ReportPlayerCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LNCNOFOEHAA",
-            |m: &ReportPlayerCsReq| { &m.LNCNOFOEHAA },
-            |m: &mut ReportPlayerCsReq| { &mut m.LNCNOFOEHAA },
+            "DEPEKPIEGJO",
+            |m: &ReportPlayerCsReq| { &m.DEPEKPIEGJO },
+            |m: &mut ReportPlayerCsReq| { &mut m.DEPEKPIEGJO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PBOHGNKFCPE",
-            |m: &ReportPlayerCsReq| { &m.PBOHGNKFCPE },
-            |m: &mut ReportPlayerCsReq| { &mut m.PBOHGNKFCPE },
+            "NKDAEFBKHBI",
+            |m: &ReportPlayerCsReq| { &m.NKDAEFBKHBI },
+            |m: &mut ReportPlayerCsReq| { &mut m.NKDAEFBKHBI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BGCPIFKDJKH",
-            |m: &ReportPlayerCsReq| { &m.BGCPIFKDJKH },
-            |m: &mut ReportPlayerCsReq| { &mut m.BGCPIFKDJKH },
+            "KLEONNFGBPM",
+            |m: &ReportPlayerCsReq| { &m.KLEONNFGBPM },
+            |m: &mut ReportPlayerCsReq| { &mut m.KLEONNFGBPM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ReportPlayerCsReq>(
             "ReportPlayerCsReq",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for ReportPlayerCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.LNCNOFOEHAA = is.read_uint32()?;
+                64 => {
+                    self.DEPEKPIEGJO = is.read_uint32()?;
                 },
-                48 => {
-                    self.PBOHGNKFCPE = is.read_uint32()?;
+                32 => {
+                    self.NKDAEFBKHBI = is.read_uint32()?;
                 },
-                66 => {
-                    self.BGCPIFKDJKH = is.read_string()?;
+                122 => {
+                    self.KLEONNFGBPM = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for ReportPlayerCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LNCNOFOEHAA != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.LNCNOFOEHAA);
+        if self.DEPEKPIEGJO != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.DEPEKPIEGJO);
         }
-        if self.PBOHGNKFCPE != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.PBOHGNKFCPE);
+        if self.NKDAEFBKHBI != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.NKDAEFBKHBI);
         }
-        if !self.BGCPIFKDJKH.is_empty() {
-            my_size += ::protobuf::rt::string_size(8, &self.BGCPIFKDJKH);
+        if !self.KLEONNFGBPM.is_empty() {
+            my_size += ::protobuf::rt::string_size(15, &self.KLEONNFGBPM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for ReportPlayerCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LNCNOFOEHAA != 0 {
-            os.write_uint32(13, self.LNCNOFOEHAA)?;
+        if self.DEPEKPIEGJO != 0 {
+            os.write_uint32(8, self.DEPEKPIEGJO)?;
         }
-        if self.PBOHGNKFCPE != 0 {
-            os.write_uint32(6, self.PBOHGNKFCPE)?;
+        if self.NKDAEFBKHBI != 0 {
+            os.write_uint32(4, self.NKDAEFBKHBI)?;
         }
-        if !self.BGCPIFKDJKH.is_empty() {
-            os.write_string(8, &self.BGCPIFKDJKH)?;
+        if !self.KLEONNFGBPM.is_empty() {
+            os.write_string(15, &self.KLEONNFGBPM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for ReportPlayerCsReq {
     }
 
     fn clear(&mut self) {
-        self.LNCNOFOEHAA = 0;
-        self.PBOHGNKFCPE = 0;
-        self.BGCPIFKDJKH.clear();
+        self.DEPEKPIEGJO = 0;
+        self.NKDAEFBKHBI = 0;
+        self.KLEONNFGBPM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ReportPlayerCsReq {
         static instance: ReportPlayerCsReq = ReportPlayerCsReq {
-            LNCNOFOEHAA: 0,
-            PBOHGNKFCPE: 0,
-            BGCPIFKDJKH: ::std::string::String::new(),
+            DEPEKPIEGJO: 0,
+            NKDAEFBKHBI: 0,
+            KLEONNFGBPM: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for ReportPlayerCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17ReportPlayerCsReq.proto\"y\n\x11ReportPlayerCsReq\x12\x20\n\x0bLNC\
-    NOFOEHAA\x18\r\x20\x01(\rR\x0bLNCNOFOEHAA\x12\x20\n\x0bPBOHGNKFCPE\x18\
-    \x06\x20\x01(\rR\x0bPBOHGNKFCPE\x12\x20\n\x0bBGCPIFKDJKH\x18\x08\x20\x01\
-    (\tR\x0bBGCPIFKDJKHb\x06proto3\
+    \n\x17ReportPlayerCsReq.proto\"y\n\x11ReportPlayerCsReq\x12\x20\n\x0bDEP\
+    EKPIEGJO\x18\x08\x20\x01(\rR\x0bDEPEKPIEGJO\x12\x20\n\x0bNKDAEFBKHBI\x18\
+    \x04\x20\x01(\rR\x0bNKDAEFBKHBI\x12\x20\n\x0bKLEONNFGBPM\x18\x0f\x20\x01\
+    (\tR\x0bKLEONNFGBPMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

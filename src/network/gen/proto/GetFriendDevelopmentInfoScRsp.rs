@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFriendDevelopmentInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetFriendDevelopmentInfoScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:GetFriendDevelopmentInfoScRsp.LNCNOFOEHAA)
-    pub LNCNOFOEHAA: u32,
-    // @@protoc_insertion_point(field:GetFriendDevelopmentInfoScRsp.EBOFGBNNOMN)
-    pub EBOFGBNNOMN: ::std::vec::Vec<super::BOHJMDPLICI::BOHJMDPLICI>,
+    // @@protoc_insertion_point(field:GetFriendDevelopmentInfoScRsp.EMDGMAMEJKB)
+    pub EMDGMAMEJKB: ::std::vec::Vec<super::BHBEDKJMNED::BHBEDKJMNED>,
+    // @@protoc_insertion_point(field:GetFriendDevelopmentInfoScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetFriendDevelopmentInfoScRsp.DEPEKPIEGJO)
+    pub DEPEKPIEGJO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetFriendDevelopmentInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl GetFriendDevelopmentInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &GetFriendDevelopmentInfoScRsp| { &m.ADADHIHDHJC },
-            |m: &mut GetFriendDevelopmentInfoScRsp| { &mut m.ADADHIHDHJC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LNCNOFOEHAA",
-            |m: &GetFriendDevelopmentInfoScRsp| { &m.LNCNOFOEHAA },
-            |m: &mut GetFriendDevelopmentInfoScRsp| { &mut m.LNCNOFOEHAA },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EBOFGBNNOMN",
-            |m: &GetFriendDevelopmentInfoScRsp| { &m.EBOFGBNNOMN },
-            |m: &mut GetFriendDevelopmentInfoScRsp| { &mut m.EBOFGBNNOMN },
+            "EMDGMAMEJKB",
+            |m: &GetFriendDevelopmentInfoScRsp| { &m.EMDGMAMEJKB },
+            |m: &mut GetFriendDevelopmentInfoScRsp| { &mut m.EMDGMAMEJKB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GetFriendDevelopmentInfoScRsp| { &m.retcode },
+            |m: &mut GetFriendDevelopmentInfoScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DEPEKPIEGJO",
+            |m: &GetFriendDevelopmentInfoScRsp| { &m.DEPEKPIEGJO },
+            |m: &mut GetFriendDevelopmentInfoScRsp| { &mut m.DEPEKPIEGJO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetFriendDevelopmentInfoScRsp>(
             "GetFriendDevelopmentInfoScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for GetFriendDevelopmentInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                82 => {
+                    self.EMDGMAMEJKB.push(is.read_message()?);
+                },
                 88 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                    self.retcode = is.read_uint32()?;
                 },
                 8 => {
-                    self.LNCNOFOEHAA = is.read_uint32()?;
-                },
-                82 => {
-                    self.EBOFGBNNOMN.push(is.read_message()?);
+                    self.DEPEKPIEGJO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,31 +108,31 @@ impl ::protobuf::Message for GetFriendDevelopmentInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.ADADHIHDHJC);
-        }
-        if self.LNCNOFOEHAA != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.LNCNOFOEHAA);
-        }
-        for value in &self.EBOFGBNNOMN {
+        for value in &self.EMDGMAMEJKB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        }
+        if self.DEPEKPIEGJO != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.DEPEKPIEGJO);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(11, self.ADADHIHDHJC)?;
-        }
-        if self.LNCNOFOEHAA != 0 {
-            os.write_uint32(1, self.LNCNOFOEHAA)?;
-        }
-        for v in &self.EBOFGBNNOMN {
+        for v in &self.EMDGMAMEJKB {
             ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
+        if self.retcode != 0 {
+            os.write_uint32(11, self.retcode)?;
+        }
+        if self.DEPEKPIEGJO != 0 {
+            os.write_uint32(1, self.DEPEKPIEGJO)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,17 +150,17 @@ impl ::protobuf::Message for GetFriendDevelopmentInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADADHIHDHJC = 0;
-        self.LNCNOFOEHAA = 0;
-        self.EBOFGBNNOMN.clear();
+        self.EMDGMAMEJKB.clear();
+        self.retcode = 0;
+        self.DEPEKPIEGJO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFriendDevelopmentInfoScRsp {
         static instance: GetFriendDevelopmentInfoScRsp = GetFriendDevelopmentInfoScRsp {
-            ADADHIHDHJC: 0,
-            LNCNOFOEHAA: 0,
-            EBOFGBNNOMN: ::std::vec::Vec::new(),
+            EMDGMAMEJKB: ::std::vec::Vec::new(),
+            retcode: 0,
+            DEPEKPIEGJO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for GetFriendDevelopmentInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#GetFriendDevelopmentInfoScRsp.proto\x1a\x11BOHJMDPLICI.proto\"\x93\
-    \x01\n\x1dGetFriendDevelopmentInfoScRsp\x12\x20\n\x0bADADHIHDHJC\x18\x0b\
-    \x20\x01(\rR\x0bADADHIHDHJC\x12\x20\n\x0bLNCNOFOEHAA\x18\x01\x20\x01(\rR\
-    \x0bLNCNOFOEHAA\x12.\n\x0bEBOFGBNNOMN\x18\n\x20\x03(\x0b2\x0c.BOHJMDPLIC\
-    IR\x0bEBOFGBNNOMNb\x06proto3\
+    \n#GetFriendDevelopmentInfoScRsp.proto\x1a\x11BHBEDKJMNED.proto\"\x8b\
+    \x01\n\x1dGetFriendDevelopmentInfoScRsp\x12.\n\x0bEMDGMAMEJKB\x18\n\x20\
+    \x03(\x0b2\x0c.BHBEDKJMNEDR\x0bEMDGMAMEJKB\x12\x18\n\x07retcode\x18\x0b\
+    \x20\x01(\rR\x07retcode\x12\x20\n\x0bDEPEKPIEGJO\x18\x01\x20\x01(\rR\x0b\
+    DEPEKPIEGJOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::BOHJMDPLICI::file_descriptor().clone());
+            deps.push(super::BHBEDKJMNED::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetFriendDevelopmentInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

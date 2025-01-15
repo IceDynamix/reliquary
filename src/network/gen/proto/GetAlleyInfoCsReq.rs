@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetAlleyInfoCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetAlleyInfoCsReq.JKOCJIMAGBN)
-    pub JKOCJIMAGBN: u32,
-    // @@protoc_insertion_point(field:GetAlleyInfoCsReq.PNJIJAJMCMG)
-    pub PNJIJAJMCMG: u32,
+    // @@protoc_insertion_point(field:GetAlleyInfoCsReq.JCEDPIFGKKO)
+    pub JCEDPIFGKKO: u32,
+    // @@protoc_insertion_point(field:GetAlleyInfoCsReq.level)
+    pub level: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetAlleyInfoCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl GetAlleyInfoCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JKOCJIMAGBN",
-            |m: &GetAlleyInfoCsReq| { &m.JKOCJIMAGBN },
-            |m: &mut GetAlleyInfoCsReq| { &mut m.JKOCJIMAGBN },
+            "JCEDPIFGKKO",
+            |m: &GetAlleyInfoCsReq| { &m.JCEDPIFGKKO },
+            |m: &mut GetAlleyInfoCsReq| { &mut m.JCEDPIFGKKO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PNJIJAJMCMG",
-            |m: &GetAlleyInfoCsReq| { &m.PNJIJAJMCMG },
-            |m: &mut GetAlleyInfoCsReq| { &mut m.PNJIJAJMCMG },
+            "level",
+            |m: &GetAlleyInfoCsReq| { &m.level },
+            |m: &mut GetAlleyInfoCsReq| { &mut m.level },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetAlleyInfoCsReq>(
             "GetAlleyInfoCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for GetAlleyInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.JKOCJIMAGBN = is.read_uint32()?;
+                16 => {
+                    self.JCEDPIFGKKO = is.read_uint32()?;
                 },
-                56 => {
-                    self.PNJIJAJMCMG = is.read_uint32()?;
+                24 => {
+                    self.level = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for GetAlleyInfoCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JKOCJIMAGBN != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.JKOCJIMAGBN);
+        if self.JCEDPIFGKKO != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.JCEDPIFGKKO);
         }
-        if self.PNJIJAJMCMG != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.PNJIJAJMCMG);
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for GetAlleyInfoCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JKOCJIMAGBN != 0 {
-            os.write_uint32(14, self.JKOCJIMAGBN)?;
+        if self.JCEDPIFGKKO != 0 {
+            os.write_uint32(2, self.JCEDPIFGKKO)?;
         }
-        if self.PNJIJAJMCMG != 0 {
-            os.write_uint32(7, self.PNJIJAJMCMG)?;
+        if self.level != 0 {
+            os.write_uint32(3, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GetAlleyInfoCsReq {
     }
 
     fn clear(&mut self) {
-        self.JKOCJIMAGBN = 0;
-        self.PNJIJAJMCMG = 0;
+        self.JCEDPIFGKKO = 0;
+        self.level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetAlleyInfoCsReq {
         static instance: GetAlleyInfoCsReq = GetAlleyInfoCsReq {
-            JKOCJIMAGBN: 0,
-            PNJIJAJMCMG: 0,
+            JCEDPIFGKKO: 0,
+            level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for GetAlleyInfoCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17GetAlleyInfoCsReq.proto\"W\n\x11GetAlleyInfoCsReq\x12\x20\n\x0bJKO\
-    CJIMAGBN\x18\x0e\x20\x01(\rR\x0bJKOCJIMAGBN\x12\x20\n\x0bPNJIJAJMCMG\x18\
-    \x07\x20\x01(\rR\x0bPNJIJAJMCMGb\x06proto3\
+    \n\x17GetAlleyInfoCsReq.proto\"K\n\x11GetAlleyInfoCsReq\x12\x20\n\x0bJCE\
+    DPIFGKKO\x18\x02\x20\x01(\rR\x0bJCEDPIFGKKO\x12\x14\n\x05level\x18\x03\
+    \x20\x01(\rR\x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

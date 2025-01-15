@@ -31,8 +31,8 @@ pub struct PromoteAvatarCsReq {
     // message fields
     // @@protoc_insertion_point(field:PromoteAvatarCsReq.base_avatar_id)
     pub base_avatar_id: u32,
-    // @@protoc_insertion_point(field:PromoteAvatarCsReq.item_list)
-    pub item_list: ::std::vec::Vec<super::ItemCost::ItemCost>,
+    // @@protoc_insertion_point(field:PromoteAvatarCsReq.OCDLCGIILKI)
+    pub OCDLCGIILKI: ::std::vec::Vec<super::ItemCost::ItemCost>,
     // special fields
     // @@protoc_insertion_point(special_field:PromoteAvatarCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,9 +58,9 @@ impl PromoteAvatarCsReq {
             |m: &mut PromoteAvatarCsReq| { &mut m.base_avatar_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "item_list",
-            |m: &PromoteAvatarCsReq| { &m.item_list },
-            |m: &mut PromoteAvatarCsReq| { &mut m.item_list },
+            "OCDLCGIILKI",
+            |m: &PromoteAvatarCsReq| { &m.OCDLCGIILKI },
+            |m: &mut PromoteAvatarCsReq| { &mut m.OCDLCGIILKI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PromoteAvatarCsReq>(
             "PromoteAvatarCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for PromoteAvatarCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                16 => {
                     self.base_avatar_id = is.read_uint32()?;
                 },
-                26 => {
-                    self.item_list.push(is.read_message()?);
+                82 => {
+                    self.OCDLCGIILKI.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -99,9 +99,9 @@ impl ::protobuf::Message for PromoteAvatarCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.base_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.base_avatar_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.base_avatar_id);
         }
-        for value in &self.item_list {
+        for value in &self.OCDLCGIILKI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -112,10 +112,10 @@ impl ::protobuf::Message for PromoteAvatarCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.base_avatar_id != 0 {
-            os.write_uint32(5, self.base_avatar_id)?;
+            os.write_uint32(2, self.base_avatar_id)?;
         }
-        for v in &self.item_list {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        for v in &self.OCDLCGIILKI {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -135,14 +135,14 @@ impl ::protobuf::Message for PromoteAvatarCsReq {
 
     fn clear(&mut self) {
         self.base_avatar_id = 0;
-        self.item_list.clear();
+        self.OCDLCGIILKI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PromoteAvatarCsReq {
         static instance: PromoteAvatarCsReq = PromoteAvatarCsReq {
             base_avatar_id: 0,
-            item_list: ::std::vec::Vec::new(),
+            OCDLCGIILKI: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for PromoteAvatarCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18PromoteAvatarCsReq.proto\x1a\x0eItemCost.proto\"b\n\x12PromoteAvat\
-    arCsReq\x12$\n\x0ebase_avatar_id\x18\x05\x20\x01(\rR\x0cbaseAvatarId\x12\
-    &\n\titem_list\x18\x03\x20\x03(\x0b2\t.ItemCostR\x08itemListB\x15\n\x13e\
-    mu.lunarcore.protob\x06proto3\
+    \n\x18PromoteAvatarCsReq.proto\x1a\x0eItemCost.proto\"g\n\x12PromoteAvat\
+    arCsReq\x12$\n\x0ebase_avatar_id\x18\x02\x20\x01(\rR\x0cbaseAvatarId\x12\
+    +\n\x0bOCDLCGIILKI\x18\n\x20\x03(\x0b2\t.ItemCostR\x0bOCDLCGIILKIb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

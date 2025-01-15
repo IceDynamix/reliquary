@@ -29,12 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StoryLineInfoScNotify {
     // message fields
-    // @@protoc_insertion_point(field:StoryLineInfoScNotify.JABOAEELCFJ)
-    pub JABOAEELCFJ: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:StoryLineInfoScNotify.BAJFEJJEFFN)
-    pub BAJFEJJEFFN: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:StoryLineInfoScNotify.HBDAKHJJOIF)
-    pub HBDAKHJJOIF: u32,
+    // @@protoc_insertion_point(field:StoryLineInfoScNotify.GIIIGPLNIBN)
+    pub GIIIGPLNIBN: u32,
+    // @@protoc_insertion_point(field:StoryLineInfoScNotify.GKMBNPAFGGB)
+    pub GKMBNPAFGGB: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:StoryLineInfoScNotify.ELJINBJEAEL)
+    pub ELJINBJEAEL: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:StoryLineInfoScNotify.PKPBKKBBPPG)
+    pub PKPBKKBBPPG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:StoryLineInfoScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,22 +54,27 @@ impl StoryLineInfoScNotify {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JABOAEELCFJ",
-            |m: &StoryLineInfoScNotify| { &m.JABOAEELCFJ },
-            |m: &mut StoryLineInfoScNotify| { &mut m.JABOAEELCFJ },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GIIIGPLNIBN",
+            |m: &StoryLineInfoScNotify| { &m.GIIIGPLNIBN },
+            |m: &mut StoryLineInfoScNotify| { &mut m.GIIIGPLNIBN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BAJFEJJEFFN",
-            |m: &StoryLineInfoScNotify| { &m.BAJFEJJEFFN },
-            |m: &mut StoryLineInfoScNotify| { &mut m.BAJFEJJEFFN },
+            "GKMBNPAFGGB",
+            |m: &StoryLineInfoScNotify| { &m.GKMBNPAFGGB },
+            |m: &mut StoryLineInfoScNotify| { &mut m.GKMBNPAFGGB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "ELJINBJEAEL",
+            |m: &StoryLineInfoScNotify| { &m.ELJINBJEAEL },
+            |m: &mut StoryLineInfoScNotify| { &mut m.ELJINBJEAEL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HBDAKHJJOIF",
-            |m: &StoryLineInfoScNotify| { &m.HBDAKHJJOIF },
-            |m: &mut StoryLineInfoScNotify| { &mut m.HBDAKHJJOIF },
+            "PKPBKKBBPPG",
+            |m: &StoryLineInfoScNotify| { &m.PKPBKKBBPPG },
+            |m: &mut StoryLineInfoScNotify| { &mut m.PKPBKKBBPPG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StoryLineInfoScNotify>(
             "StoryLineInfoScNotify",
@@ -87,20 +94,23 @@ impl ::protobuf::Message for StoryLineInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.JABOAEELCFJ)?;
+                88 => {
+                    self.GIIIGPLNIBN = is.read_uint32()?;
                 },
-                96 => {
-                    self.JABOAEELCFJ.push(is.read_uint32()?);
-                },
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.BAJFEJJEFFN)?;
-                },
-                32 => {
-                    self.BAJFEJJEFFN.push(is.read_uint32()?);
+                10 => {
+                    is.read_repeated_packed_uint32_into(&mut self.GKMBNPAFGGB)?;
                 },
                 8 => {
-                    self.HBDAKHJJOIF = is.read_uint32()?;
+                    self.GKMBNPAFGGB.push(is.read_uint32()?);
+                },
+                114 => {
+                    is.read_repeated_packed_uint32_into(&mut self.ELJINBJEAEL)?;
+                },
+                112 => {
+                    self.ELJINBJEAEL.push(is.read_uint32()?);
+                },
+                40 => {
+                    self.PKPBKKBBPPG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -114,14 +124,17 @@ impl ::protobuf::Message for StoryLineInfoScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.JABOAEELCFJ {
-            my_size += ::protobuf::rt::uint32_size(12, *value);
+        if self.GIIIGPLNIBN != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.GIIIGPLNIBN);
+        }
+        for value in &self.GKMBNPAFGGB {
+            my_size += ::protobuf::rt::uint32_size(1, *value);
         };
-        for value in &self.BAJFEJJEFFN {
-            my_size += ::protobuf::rt::uint32_size(4, *value);
+        for value in &self.ELJINBJEAEL {
+            my_size += ::protobuf::rt::uint32_size(14, *value);
         };
-        if self.HBDAKHJJOIF != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.HBDAKHJJOIF);
+        if self.PKPBKKBBPPG != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.PKPBKKBBPPG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -129,14 +142,17 @@ impl ::protobuf::Message for StoryLineInfoScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.JABOAEELCFJ {
-            os.write_uint32(12, *v)?;
+        if self.GIIIGPLNIBN != 0 {
+            os.write_uint32(11, self.GIIIGPLNIBN)?;
+        }
+        for v in &self.GKMBNPAFGGB {
+            os.write_uint32(1, *v)?;
         };
-        for v in &self.BAJFEJJEFFN {
-            os.write_uint32(4, *v)?;
+        for v in &self.ELJINBJEAEL {
+            os.write_uint32(14, *v)?;
         };
-        if self.HBDAKHJJOIF != 0 {
-            os.write_uint32(1, self.HBDAKHJJOIF)?;
+        if self.PKPBKKBBPPG != 0 {
+            os.write_uint32(5, self.PKPBKKBBPPG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -155,17 +171,19 @@ impl ::protobuf::Message for StoryLineInfoScNotify {
     }
 
     fn clear(&mut self) {
-        self.JABOAEELCFJ.clear();
-        self.BAJFEJJEFFN.clear();
-        self.HBDAKHJJOIF = 0;
+        self.GIIIGPLNIBN = 0;
+        self.GKMBNPAFGGB.clear();
+        self.ELJINBJEAEL.clear();
+        self.PKPBKKBBPPG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StoryLineInfoScNotify {
         static instance: StoryLineInfoScNotify = StoryLineInfoScNotify {
-            JABOAEELCFJ: ::std::vec::Vec::new(),
-            BAJFEJJEFFN: ::std::vec::Vec::new(),
-            HBDAKHJJOIF: 0,
+            GIIIGPLNIBN: 0,
+            GKMBNPAFGGB: ::std::vec::Vec::new(),
+            ELJINBJEAEL: ::std::vec::Vec::new(),
+            PKPBKKBBPPG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -190,10 +208,11 @@ impl ::protobuf::reflect::ProtobufValue for StoryLineInfoScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bStoryLineInfoScNotify.proto\"}\n\x15StoryLineInfoScNotify\x12\x20\
-    \n\x0bJABOAEELCFJ\x18\x0c\x20\x03(\rR\x0bJABOAEELCFJ\x12\x20\n\x0bBAJFEJ\
-    JEFFN\x18\x04\x20\x03(\rR\x0bBAJFEJJEFFN\x12\x20\n\x0bHBDAKHJJOIF\x18\
-    \x01\x20\x01(\rR\x0bHBDAKHJJOIFb\x06proto3\
+    \n\x1bStoryLineInfoScNotify.proto\"\x9f\x01\n\x15StoryLineInfoScNotify\
+    \x12\x20\n\x0bGIIIGPLNIBN\x18\x0b\x20\x01(\rR\x0bGIIIGPLNIBN\x12\x20\n\
+    \x0bGKMBNPAFGGB\x18\x01\x20\x03(\rR\x0bGKMBNPAFGGB\x12\x20\n\x0bELJINBJE\
+    AEL\x18\x0e\x20\x03(\rR\x0bELJINBJEAEL\x12\x20\n\x0bPKPBKKBBPPG\x18\x05\
+    \x20\x01(\rR\x0bPKPBKKBBPPGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

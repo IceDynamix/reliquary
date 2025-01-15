@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AlleyEventEffectNotify {
     // message fields
-    // @@protoc_insertion_point(field:AlleyEventEffectNotify.LPHMPPFNLNN)
-    pub LPHMPPFNLNN: u32,
+    // @@protoc_insertion_point(field:AlleyEventEffectNotify.NAGCHGBANMP)
+    pub NAGCHGBANMP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AlleyEventEffectNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl AlleyEventEffectNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LPHMPPFNLNN",
-            |m: &AlleyEventEffectNotify| { &m.LPHMPPFNLNN },
-            |m: &mut AlleyEventEffectNotify| { &mut m.LPHMPPFNLNN },
+            "NAGCHGBANMP",
+            |m: &AlleyEventEffectNotify| { &m.NAGCHGBANMP },
+            |m: &mut AlleyEventEffectNotify| { &mut m.NAGCHGBANMP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AlleyEventEffectNotify>(
             "AlleyEventEffectNotify",
@@ -74,7 +74,7 @@ impl ::protobuf::Message for AlleyEventEffectNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 88 => {
-                    self.LPHMPPFNLNN = is.read_uint32()?;
+                    self.NAGCHGBANMP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for AlleyEventEffectNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LPHMPPFNLNN != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.LPHMPPFNLNN);
+        if self.NAGCHGBANMP != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.NAGCHGBANMP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for AlleyEventEffectNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LPHMPPFNLNN != 0 {
-            os.write_uint32(11, self.LPHMPPFNLNN)?;
+        if self.NAGCHGBANMP != 0 {
+            os.write_uint32(11, self.NAGCHGBANMP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for AlleyEventEffectNotify {
     }
 
     fn clear(&mut self) {
-        self.LPHMPPFNLNN = 0;
+        self.NAGCHGBANMP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AlleyEventEffectNotify {
         static instance: AlleyEventEffectNotify = AlleyEventEffectNotify {
-            LPHMPPFNLNN: 0,
+            NAGCHGBANMP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for AlleyEventEffectNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cAlleyEventEffectNotify.proto\":\n\x16AlleyEventEffectNotify\x12\
-    \x20\n\x0bLPHMPPFNLNN\x18\x0b\x20\x01(\rR\x0bLPHMPPFNLNNb\x06proto3\
+    \x20\n\x0bNAGCHGBANMP\x18\x0b\x20\x01(\rR\x0bNAGCHGBANMPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

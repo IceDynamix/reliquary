@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HeliobusUpgradeLevelScRsp {
     // message fields
-    // @@protoc_insertion_point(field:HeliobusUpgradeLevelScRsp.JKOCJIMAGBN)
-    pub JKOCJIMAGBN: u32,
-    // @@protoc_insertion_point(field:HeliobusUpgradeLevelScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:HeliobusUpgradeLevelScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:HeliobusUpgradeLevelScRsp.level)
+    pub level: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HeliobusUpgradeLevelScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl HeliobusUpgradeLevelScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JKOCJIMAGBN",
-            |m: &HeliobusUpgradeLevelScRsp| { &m.JKOCJIMAGBN },
-            |m: &mut HeliobusUpgradeLevelScRsp| { &mut m.JKOCJIMAGBN },
+            "retcode",
+            |m: &HeliobusUpgradeLevelScRsp| { &m.retcode },
+            |m: &mut HeliobusUpgradeLevelScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &HeliobusUpgradeLevelScRsp| { &m.ADADHIHDHJC },
-            |m: &mut HeliobusUpgradeLevelScRsp| { &mut m.ADADHIHDHJC },
+            "level",
+            |m: &HeliobusUpgradeLevelScRsp| { &m.level },
+            |m: &mut HeliobusUpgradeLevelScRsp| { &mut m.level },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HeliobusUpgradeLevelScRsp>(
             "HeliobusUpgradeLevelScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for HeliobusUpgradeLevelScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.JKOCJIMAGBN = is.read_uint32()?;
+                32 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                88 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                40 => {
+                    self.level = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for HeliobusUpgradeLevelScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JKOCJIMAGBN != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.JKOCJIMAGBN);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.ADADHIHDHJC);
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for HeliobusUpgradeLevelScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JKOCJIMAGBN != 0 {
-            os.write_uint32(8, self.JKOCJIMAGBN)?;
+        if self.retcode != 0 {
+            os.write_uint32(4, self.retcode)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(11, self.ADADHIHDHJC)?;
+        if self.level != 0 {
+            os.write_uint32(5, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for HeliobusUpgradeLevelScRsp {
     }
 
     fn clear(&mut self) {
-        self.JKOCJIMAGBN = 0;
-        self.ADADHIHDHJC = 0;
+        self.retcode = 0;
+        self.level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HeliobusUpgradeLevelScRsp {
         static instance: HeliobusUpgradeLevelScRsp = HeliobusUpgradeLevelScRsp {
-            JKOCJIMAGBN: 0,
-            ADADHIHDHJC: 0,
+            retcode: 0,
+            level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for HeliobusUpgradeLevelScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fHeliobusUpgradeLevelScRsp.proto\"_\n\x19HeliobusUpgradeLevelScRsp\
-    \x12\x20\n\x0bJKOCJIMAGBN\x18\x08\x20\x01(\rR\x0bJKOCJIMAGBN\x12\x20\n\
-    \x0bADADHIHDHJC\x18\x0b\x20\x01(\rR\x0bADADHIHDHJCb\x06proto3\
+    \n\x1fHeliobusUpgradeLevelScRsp.proto\"K\n\x19HeliobusUpgradeLevelScRsp\
+    \x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12\x14\n\x05level\
+    \x18\x05\x20\x01(\rR\x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

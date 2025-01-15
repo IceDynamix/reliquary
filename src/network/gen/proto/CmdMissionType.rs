@@ -30,76 +30,74 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdMissionType {
     // @@protoc_insertion_point(enum_value:CmdMissionType.CmdMissionTypeNone)
     CmdMissionTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdGetMainMissionCustomValueCsReq)
-    CmdGetMainMissionCustomValueCsReq = 1236,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdGetMissionStatusScRsp)
-    CmdGetMissionStatusScRsp = 1229,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdGetMissionEventDataScRsp)
-    CmdGetMissionEventDataScRsp = 1290,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdMissionGroupWarnScNotify)
-    CmdMissionGroupWarnScNotify = 1274,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdSetMissionEventProgressScRsp)
-    CmdSetMissionEventProgressScRsp = 1283,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdFinishTalkMissionCsReq)
-    CmdFinishTalkMissionCsReq = 1203,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdFinishTalkMissionScRsp)
-    CmdFinishTalkMissionScRsp = 1246,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdAcceptMissionEventScRsp)
-    CmdAcceptMissionEventScRsp = 1261,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdSyncTaskCsReq)
-    CmdSyncTaskCsReq = 1253,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdDailyTaskDataScNotify)
-    CmdDailyTaskDataScNotify = 1237,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdGetMissionStatusCsReq)
-    CmdGetMissionStatusCsReq = 1225,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdStartFinishSubMissionScNotify)
-    CmdStartFinishSubMissionScNotify = 1264,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdMissionRewardScNotify)
-    CmdMissionRewardScNotify = 1239,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdTeleportToMissionResetPointCsReq)
-    CmdTeleportToMissionResetPointCsReq = 1209,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdAcceptMissionEventCsReq)
-    CmdAcceptMissionEventCsReq = 1219,
     // @@protoc_insertion_point(enum_value:CmdMissionType.CmdTeleportToMissionResetPointScRsp)
-    CmdTeleportToMissionResetPointScRsp = 1293,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdInterruptMissionEventScRsp)
-    CmdInterruptMissionEventScRsp = 1251,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdUpdateTrackMainMissionIdCsReq)
-    CmdUpdateTrackMainMissionIdCsReq = 1277,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdFinishCosumeItemMissionScRsp)
-    CmdFinishCosumeItemMissionScRsp = 1275,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdGetMissionEventDataCsReq)
-    CmdGetMissionEventDataCsReq = 1248,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdMissionEventRewardScNotify)
-    CmdMissionEventRewardScNotify = 1279,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdSyncTaskScRsp)
-    CmdSyncTaskScRsp = 1234,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdSetMissionEventProgressCsReq)
-    CmdSetMissionEventProgressCsReq = 1273,
+    CmdTeleportToMissionResetPointScRsp = 1248,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdStartFinishMainMissionScNotify)
+    CmdStartFinishMainMissionScNotify = 1258,
     // @@protoc_insertion_point(enum_value:CmdMissionType.CmdAcceptMainMissionCsReq)
     CmdAcceptMainMissionCsReq = 1210,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdAcceptMainMissionScRsp)
-    CmdAcceptMainMissionScRsp = 1270,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdUpdateTrackMainMissionIdScRsp)
-    CmdUpdateTrackMainMissionIdScRsp = 1291,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdStartFinishMainMissionScNotify)
-    CmdStartFinishMainMissionScNotify = 1294,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdSubMissionRewardScNotify)
-    CmdSubMissionRewardScNotify = 1299,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdGetMainMissionCustomValueScRsp)
-    CmdGetMainMissionCustomValueScRsp = 1265,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdMissionAcceptScNotify)
-    CmdMissionAcceptScNotify = 1226,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdGetMissionDataScRsp)
-    CmdGetMissionDataScRsp = 1220,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdAcceptMissionEventCsReq)
+    CmdAcceptMissionEventCsReq = 1219,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdInterruptMissionEventScRsp)
+    CmdInterruptMissionEventScRsp = 1259,
     // @@protoc_insertion_point(enum_value:CmdMissionType.CmdFinishedMissionScNotify)
-    CmdFinishedMissionScNotify = 1204,
+    CmdFinishedMissionScNotify = 1208,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdUpdateTrackMainMissionIdScRsp)
+    CmdUpdateTrackMainMissionIdScRsp = 1265,
     // @@protoc_insertion_point(enum_value:CmdMissionType.CmdInterruptMissionEventCsReq)
-    CmdInterruptMissionEventCsReq = 1233,
+    CmdInterruptMissionEventCsReq = 1290,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdSyncTaskCsReq)
+    CmdSyncTaskCsReq = 1228,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdSetMissionEventProgressScRsp)
+    CmdSetMissionEventProgressScRsp = 1278,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdSubMissionRewardScNotify)
+    CmdSubMissionRewardScNotify = 1229,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdGetMissionStatusCsReq)
+    CmdGetMissionStatusCsReq = 1207,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdSyncTaskScRsp)
+    CmdSyncTaskScRsp = 1252,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdGetMainMissionCustomValueScRsp)
+    CmdGetMainMissionCustomValueScRsp = 1273,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdFinishTalkMissionScRsp)
+    CmdFinishTalkMissionScRsp = 1227,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdUpdateTrackMainMissionIdCsReq)
+    CmdUpdateTrackMainMissionIdCsReq = 1221,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdMissionRewardScNotify)
+    CmdMissionRewardScNotify = 1267,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdGetMainMissionCustomValueCsReq)
+    CmdGetMainMissionCustomValueCsReq = 1235,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdGetMissionDataScRsp)
+    CmdGetMissionDataScRsp = 1295,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdFinishTalkMissionCsReq)
+    CmdFinishTalkMissionCsReq = 1284,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdStartFinishSubMissionScNotify)
+    CmdStartFinishSubMissionScNotify = 1288,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdGetMissionEventDataCsReq)
+    CmdGetMissionEventDataCsReq = 1296,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdMissionAcceptScNotify)
+    CmdMissionAcceptScNotify = 1217,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdMissionGroupWarnScNotify)
+    CmdMissionGroupWarnScNotify = 1243,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdMissionEventRewardScNotify)
+    CmdMissionEventRewardScNotify = 1275,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdAcceptMissionEventScRsp)
+    CmdAcceptMissionEventScRsp = 1226,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdGetMissionStatusScRsp)
+    CmdGetMissionStatusScRsp = 1253,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdSetMissionEventProgressCsReq)
+    CmdSetMissionEventProgressCsReq = 1212,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdTeleportToMissionResetPointCsReq)
+    CmdTeleportToMissionResetPointCsReq = 1250,
     // @@protoc_insertion_point(enum_value:CmdMissionType.CmdGetMissionDataCsReq)
-    CmdGetMissionDataCsReq = 1259,
+    CmdGetMissionDataCsReq = 1236,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdGetMissionEventDataScRsp)
+    CmdGetMissionEventDataScRsp = 1205,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdFinishCosumeItemMissionScRsp)
+    CmdFinishCosumeItemMissionScRsp = 1225,
     // @@protoc_insertion_point(enum_value:CmdMissionType.CmdFinishCosumeItemMissionCsReq)
-    CmdFinishCosumeItemMissionCsReq = 1230,
+    CmdFinishCosumeItemMissionCsReq = 1246,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.CmdAcceptMainMissionScRsp)
+    CmdAcceptMainMissionScRsp = 1276,
 }
 
 impl ::protobuf::Enum for CmdMissionType {
@@ -112,41 +110,40 @@ impl ::protobuf::Enum for CmdMissionType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdMissionType> {
         match value {
             0 => ::std::option::Option::Some(CmdMissionType::CmdMissionTypeNone),
-            1236 => ::std::option::Option::Some(CmdMissionType::CmdGetMainMissionCustomValueCsReq),
-            1229 => ::std::option::Option::Some(CmdMissionType::CmdGetMissionStatusScRsp),
-            1290 => ::std::option::Option::Some(CmdMissionType::CmdGetMissionEventDataScRsp),
-            1274 => ::std::option::Option::Some(CmdMissionType::CmdMissionGroupWarnScNotify),
-            1283 => ::std::option::Option::Some(CmdMissionType::CmdSetMissionEventProgressScRsp),
-            1203 => ::std::option::Option::Some(CmdMissionType::CmdFinishTalkMissionCsReq),
-            1246 => ::std::option::Option::Some(CmdMissionType::CmdFinishTalkMissionScRsp),
-            1261 => ::std::option::Option::Some(CmdMissionType::CmdAcceptMissionEventScRsp),
-            1253 => ::std::option::Option::Some(CmdMissionType::CmdSyncTaskCsReq),
-            1237 => ::std::option::Option::Some(CmdMissionType::CmdDailyTaskDataScNotify),
-            1225 => ::std::option::Option::Some(CmdMissionType::CmdGetMissionStatusCsReq),
-            1264 => ::std::option::Option::Some(CmdMissionType::CmdStartFinishSubMissionScNotify),
-            1239 => ::std::option::Option::Some(CmdMissionType::CmdMissionRewardScNotify),
-            1209 => ::std::option::Option::Some(CmdMissionType::CmdTeleportToMissionResetPointCsReq),
-            1219 => ::std::option::Option::Some(CmdMissionType::CmdAcceptMissionEventCsReq),
-            1293 => ::std::option::Option::Some(CmdMissionType::CmdTeleportToMissionResetPointScRsp),
-            1251 => ::std::option::Option::Some(CmdMissionType::CmdInterruptMissionEventScRsp),
-            1277 => ::std::option::Option::Some(CmdMissionType::CmdUpdateTrackMainMissionIdCsReq),
-            1275 => ::std::option::Option::Some(CmdMissionType::CmdFinishCosumeItemMissionScRsp),
-            1248 => ::std::option::Option::Some(CmdMissionType::CmdGetMissionEventDataCsReq),
-            1279 => ::std::option::Option::Some(CmdMissionType::CmdMissionEventRewardScNotify),
-            1234 => ::std::option::Option::Some(CmdMissionType::CmdSyncTaskScRsp),
-            1273 => ::std::option::Option::Some(CmdMissionType::CmdSetMissionEventProgressCsReq),
+            1248 => ::std::option::Option::Some(CmdMissionType::CmdTeleportToMissionResetPointScRsp),
+            1258 => ::std::option::Option::Some(CmdMissionType::CmdStartFinishMainMissionScNotify),
             1210 => ::std::option::Option::Some(CmdMissionType::CmdAcceptMainMissionCsReq),
-            1270 => ::std::option::Option::Some(CmdMissionType::CmdAcceptMainMissionScRsp),
-            1291 => ::std::option::Option::Some(CmdMissionType::CmdUpdateTrackMainMissionIdScRsp),
-            1294 => ::std::option::Option::Some(CmdMissionType::CmdStartFinishMainMissionScNotify),
-            1299 => ::std::option::Option::Some(CmdMissionType::CmdSubMissionRewardScNotify),
-            1265 => ::std::option::Option::Some(CmdMissionType::CmdGetMainMissionCustomValueScRsp),
-            1226 => ::std::option::Option::Some(CmdMissionType::CmdMissionAcceptScNotify),
-            1220 => ::std::option::Option::Some(CmdMissionType::CmdGetMissionDataScRsp),
-            1204 => ::std::option::Option::Some(CmdMissionType::CmdFinishedMissionScNotify),
-            1233 => ::std::option::Option::Some(CmdMissionType::CmdInterruptMissionEventCsReq),
-            1259 => ::std::option::Option::Some(CmdMissionType::CmdGetMissionDataCsReq),
-            1230 => ::std::option::Option::Some(CmdMissionType::CmdFinishCosumeItemMissionCsReq),
+            1219 => ::std::option::Option::Some(CmdMissionType::CmdAcceptMissionEventCsReq),
+            1259 => ::std::option::Option::Some(CmdMissionType::CmdInterruptMissionEventScRsp),
+            1208 => ::std::option::Option::Some(CmdMissionType::CmdFinishedMissionScNotify),
+            1265 => ::std::option::Option::Some(CmdMissionType::CmdUpdateTrackMainMissionIdScRsp),
+            1290 => ::std::option::Option::Some(CmdMissionType::CmdInterruptMissionEventCsReq),
+            1228 => ::std::option::Option::Some(CmdMissionType::CmdSyncTaskCsReq),
+            1278 => ::std::option::Option::Some(CmdMissionType::CmdSetMissionEventProgressScRsp),
+            1229 => ::std::option::Option::Some(CmdMissionType::CmdSubMissionRewardScNotify),
+            1207 => ::std::option::Option::Some(CmdMissionType::CmdGetMissionStatusCsReq),
+            1252 => ::std::option::Option::Some(CmdMissionType::CmdSyncTaskScRsp),
+            1273 => ::std::option::Option::Some(CmdMissionType::CmdGetMainMissionCustomValueScRsp),
+            1227 => ::std::option::Option::Some(CmdMissionType::CmdFinishTalkMissionScRsp),
+            1221 => ::std::option::Option::Some(CmdMissionType::CmdUpdateTrackMainMissionIdCsReq),
+            1267 => ::std::option::Option::Some(CmdMissionType::CmdMissionRewardScNotify),
+            1235 => ::std::option::Option::Some(CmdMissionType::CmdGetMainMissionCustomValueCsReq),
+            1295 => ::std::option::Option::Some(CmdMissionType::CmdGetMissionDataScRsp),
+            1284 => ::std::option::Option::Some(CmdMissionType::CmdFinishTalkMissionCsReq),
+            1288 => ::std::option::Option::Some(CmdMissionType::CmdStartFinishSubMissionScNotify),
+            1296 => ::std::option::Option::Some(CmdMissionType::CmdGetMissionEventDataCsReq),
+            1217 => ::std::option::Option::Some(CmdMissionType::CmdMissionAcceptScNotify),
+            1243 => ::std::option::Option::Some(CmdMissionType::CmdMissionGroupWarnScNotify),
+            1275 => ::std::option::Option::Some(CmdMissionType::CmdMissionEventRewardScNotify),
+            1226 => ::std::option::Option::Some(CmdMissionType::CmdAcceptMissionEventScRsp),
+            1253 => ::std::option::Option::Some(CmdMissionType::CmdGetMissionStatusScRsp),
+            1212 => ::std::option::Option::Some(CmdMissionType::CmdSetMissionEventProgressCsReq),
+            1250 => ::std::option::Option::Some(CmdMissionType::CmdTeleportToMissionResetPointCsReq),
+            1236 => ::std::option::Option::Some(CmdMissionType::CmdGetMissionDataCsReq),
+            1205 => ::std::option::Option::Some(CmdMissionType::CmdGetMissionEventDataScRsp),
+            1225 => ::std::option::Option::Some(CmdMissionType::CmdFinishCosumeItemMissionScRsp),
+            1246 => ::std::option::Option::Some(CmdMissionType::CmdFinishCosumeItemMissionCsReq),
+            1276 => ::std::option::Option::Some(CmdMissionType::CmdAcceptMainMissionScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -154,82 +151,80 @@ impl ::protobuf::Enum for CmdMissionType {
     fn from_str(str: &str) -> ::std::option::Option<CmdMissionType> {
         match str {
             "CmdMissionTypeNone" => ::std::option::Option::Some(CmdMissionType::CmdMissionTypeNone),
-            "CmdGetMainMissionCustomValueCsReq" => ::std::option::Option::Some(CmdMissionType::CmdGetMainMissionCustomValueCsReq),
-            "CmdGetMissionStatusScRsp" => ::std::option::Option::Some(CmdMissionType::CmdGetMissionStatusScRsp),
-            "CmdGetMissionEventDataScRsp" => ::std::option::Option::Some(CmdMissionType::CmdGetMissionEventDataScRsp),
-            "CmdMissionGroupWarnScNotify" => ::std::option::Option::Some(CmdMissionType::CmdMissionGroupWarnScNotify),
-            "CmdSetMissionEventProgressScRsp" => ::std::option::Option::Some(CmdMissionType::CmdSetMissionEventProgressScRsp),
-            "CmdFinishTalkMissionCsReq" => ::std::option::Option::Some(CmdMissionType::CmdFinishTalkMissionCsReq),
-            "CmdFinishTalkMissionScRsp" => ::std::option::Option::Some(CmdMissionType::CmdFinishTalkMissionScRsp),
-            "CmdAcceptMissionEventScRsp" => ::std::option::Option::Some(CmdMissionType::CmdAcceptMissionEventScRsp),
-            "CmdSyncTaskCsReq" => ::std::option::Option::Some(CmdMissionType::CmdSyncTaskCsReq),
-            "CmdDailyTaskDataScNotify" => ::std::option::Option::Some(CmdMissionType::CmdDailyTaskDataScNotify),
-            "CmdGetMissionStatusCsReq" => ::std::option::Option::Some(CmdMissionType::CmdGetMissionStatusCsReq),
-            "CmdStartFinishSubMissionScNotify" => ::std::option::Option::Some(CmdMissionType::CmdStartFinishSubMissionScNotify),
-            "CmdMissionRewardScNotify" => ::std::option::Option::Some(CmdMissionType::CmdMissionRewardScNotify),
-            "CmdTeleportToMissionResetPointCsReq" => ::std::option::Option::Some(CmdMissionType::CmdTeleportToMissionResetPointCsReq),
-            "CmdAcceptMissionEventCsReq" => ::std::option::Option::Some(CmdMissionType::CmdAcceptMissionEventCsReq),
             "CmdTeleportToMissionResetPointScRsp" => ::std::option::Option::Some(CmdMissionType::CmdTeleportToMissionResetPointScRsp),
-            "CmdInterruptMissionEventScRsp" => ::std::option::Option::Some(CmdMissionType::CmdInterruptMissionEventScRsp),
-            "CmdUpdateTrackMainMissionIdCsReq" => ::std::option::Option::Some(CmdMissionType::CmdUpdateTrackMainMissionIdCsReq),
-            "CmdFinishCosumeItemMissionScRsp" => ::std::option::Option::Some(CmdMissionType::CmdFinishCosumeItemMissionScRsp),
-            "CmdGetMissionEventDataCsReq" => ::std::option::Option::Some(CmdMissionType::CmdGetMissionEventDataCsReq),
-            "CmdMissionEventRewardScNotify" => ::std::option::Option::Some(CmdMissionType::CmdMissionEventRewardScNotify),
-            "CmdSyncTaskScRsp" => ::std::option::Option::Some(CmdMissionType::CmdSyncTaskScRsp),
-            "CmdSetMissionEventProgressCsReq" => ::std::option::Option::Some(CmdMissionType::CmdSetMissionEventProgressCsReq),
-            "CmdAcceptMainMissionCsReq" => ::std::option::Option::Some(CmdMissionType::CmdAcceptMainMissionCsReq),
-            "CmdAcceptMainMissionScRsp" => ::std::option::Option::Some(CmdMissionType::CmdAcceptMainMissionScRsp),
-            "CmdUpdateTrackMainMissionIdScRsp" => ::std::option::Option::Some(CmdMissionType::CmdUpdateTrackMainMissionIdScRsp),
             "CmdStartFinishMainMissionScNotify" => ::std::option::Option::Some(CmdMissionType::CmdStartFinishMainMissionScNotify),
-            "CmdSubMissionRewardScNotify" => ::std::option::Option::Some(CmdMissionType::CmdSubMissionRewardScNotify),
-            "CmdGetMainMissionCustomValueScRsp" => ::std::option::Option::Some(CmdMissionType::CmdGetMainMissionCustomValueScRsp),
-            "CmdMissionAcceptScNotify" => ::std::option::Option::Some(CmdMissionType::CmdMissionAcceptScNotify),
-            "CmdGetMissionDataScRsp" => ::std::option::Option::Some(CmdMissionType::CmdGetMissionDataScRsp),
+            "CmdAcceptMainMissionCsReq" => ::std::option::Option::Some(CmdMissionType::CmdAcceptMainMissionCsReq),
+            "CmdAcceptMissionEventCsReq" => ::std::option::Option::Some(CmdMissionType::CmdAcceptMissionEventCsReq),
+            "CmdInterruptMissionEventScRsp" => ::std::option::Option::Some(CmdMissionType::CmdInterruptMissionEventScRsp),
             "CmdFinishedMissionScNotify" => ::std::option::Option::Some(CmdMissionType::CmdFinishedMissionScNotify),
+            "CmdUpdateTrackMainMissionIdScRsp" => ::std::option::Option::Some(CmdMissionType::CmdUpdateTrackMainMissionIdScRsp),
             "CmdInterruptMissionEventCsReq" => ::std::option::Option::Some(CmdMissionType::CmdInterruptMissionEventCsReq),
+            "CmdSyncTaskCsReq" => ::std::option::Option::Some(CmdMissionType::CmdSyncTaskCsReq),
+            "CmdSetMissionEventProgressScRsp" => ::std::option::Option::Some(CmdMissionType::CmdSetMissionEventProgressScRsp),
+            "CmdSubMissionRewardScNotify" => ::std::option::Option::Some(CmdMissionType::CmdSubMissionRewardScNotify),
+            "CmdGetMissionStatusCsReq" => ::std::option::Option::Some(CmdMissionType::CmdGetMissionStatusCsReq),
+            "CmdSyncTaskScRsp" => ::std::option::Option::Some(CmdMissionType::CmdSyncTaskScRsp),
+            "CmdGetMainMissionCustomValueScRsp" => ::std::option::Option::Some(CmdMissionType::CmdGetMainMissionCustomValueScRsp),
+            "CmdFinishTalkMissionScRsp" => ::std::option::Option::Some(CmdMissionType::CmdFinishTalkMissionScRsp),
+            "CmdUpdateTrackMainMissionIdCsReq" => ::std::option::Option::Some(CmdMissionType::CmdUpdateTrackMainMissionIdCsReq),
+            "CmdMissionRewardScNotify" => ::std::option::Option::Some(CmdMissionType::CmdMissionRewardScNotify),
+            "CmdGetMainMissionCustomValueCsReq" => ::std::option::Option::Some(CmdMissionType::CmdGetMainMissionCustomValueCsReq),
+            "CmdGetMissionDataScRsp" => ::std::option::Option::Some(CmdMissionType::CmdGetMissionDataScRsp),
+            "CmdFinishTalkMissionCsReq" => ::std::option::Option::Some(CmdMissionType::CmdFinishTalkMissionCsReq),
+            "CmdStartFinishSubMissionScNotify" => ::std::option::Option::Some(CmdMissionType::CmdStartFinishSubMissionScNotify),
+            "CmdGetMissionEventDataCsReq" => ::std::option::Option::Some(CmdMissionType::CmdGetMissionEventDataCsReq),
+            "CmdMissionAcceptScNotify" => ::std::option::Option::Some(CmdMissionType::CmdMissionAcceptScNotify),
+            "CmdMissionGroupWarnScNotify" => ::std::option::Option::Some(CmdMissionType::CmdMissionGroupWarnScNotify),
+            "CmdMissionEventRewardScNotify" => ::std::option::Option::Some(CmdMissionType::CmdMissionEventRewardScNotify),
+            "CmdAcceptMissionEventScRsp" => ::std::option::Option::Some(CmdMissionType::CmdAcceptMissionEventScRsp),
+            "CmdGetMissionStatusScRsp" => ::std::option::Option::Some(CmdMissionType::CmdGetMissionStatusScRsp),
+            "CmdSetMissionEventProgressCsReq" => ::std::option::Option::Some(CmdMissionType::CmdSetMissionEventProgressCsReq),
+            "CmdTeleportToMissionResetPointCsReq" => ::std::option::Option::Some(CmdMissionType::CmdTeleportToMissionResetPointCsReq),
             "CmdGetMissionDataCsReq" => ::std::option::Option::Some(CmdMissionType::CmdGetMissionDataCsReq),
+            "CmdGetMissionEventDataScRsp" => ::std::option::Option::Some(CmdMissionType::CmdGetMissionEventDataScRsp),
+            "CmdFinishCosumeItemMissionScRsp" => ::std::option::Option::Some(CmdMissionType::CmdFinishCosumeItemMissionScRsp),
             "CmdFinishCosumeItemMissionCsReq" => ::std::option::Option::Some(CmdMissionType::CmdFinishCosumeItemMissionCsReq),
+            "CmdAcceptMainMissionScRsp" => ::std::option::Option::Some(CmdMissionType::CmdAcceptMainMissionScRsp),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdMissionType] = &[
         CmdMissionType::CmdMissionTypeNone,
-        CmdMissionType::CmdGetMainMissionCustomValueCsReq,
-        CmdMissionType::CmdGetMissionStatusScRsp,
-        CmdMissionType::CmdGetMissionEventDataScRsp,
-        CmdMissionType::CmdMissionGroupWarnScNotify,
-        CmdMissionType::CmdSetMissionEventProgressScRsp,
-        CmdMissionType::CmdFinishTalkMissionCsReq,
-        CmdMissionType::CmdFinishTalkMissionScRsp,
-        CmdMissionType::CmdAcceptMissionEventScRsp,
-        CmdMissionType::CmdSyncTaskCsReq,
-        CmdMissionType::CmdDailyTaskDataScNotify,
-        CmdMissionType::CmdGetMissionStatusCsReq,
-        CmdMissionType::CmdStartFinishSubMissionScNotify,
-        CmdMissionType::CmdMissionRewardScNotify,
-        CmdMissionType::CmdTeleportToMissionResetPointCsReq,
-        CmdMissionType::CmdAcceptMissionEventCsReq,
         CmdMissionType::CmdTeleportToMissionResetPointScRsp,
-        CmdMissionType::CmdInterruptMissionEventScRsp,
-        CmdMissionType::CmdUpdateTrackMainMissionIdCsReq,
-        CmdMissionType::CmdFinishCosumeItemMissionScRsp,
-        CmdMissionType::CmdGetMissionEventDataCsReq,
-        CmdMissionType::CmdMissionEventRewardScNotify,
-        CmdMissionType::CmdSyncTaskScRsp,
-        CmdMissionType::CmdSetMissionEventProgressCsReq,
-        CmdMissionType::CmdAcceptMainMissionCsReq,
-        CmdMissionType::CmdAcceptMainMissionScRsp,
-        CmdMissionType::CmdUpdateTrackMainMissionIdScRsp,
         CmdMissionType::CmdStartFinishMainMissionScNotify,
-        CmdMissionType::CmdSubMissionRewardScNotify,
-        CmdMissionType::CmdGetMainMissionCustomValueScRsp,
-        CmdMissionType::CmdMissionAcceptScNotify,
-        CmdMissionType::CmdGetMissionDataScRsp,
+        CmdMissionType::CmdAcceptMainMissionCsReq,
+        CmdMissionType::CmdAcceptMissionEventCsReq,
+        CmdMissionType::CmdInterruptMissionEventScRsp,
         CmdMissionType::CmdFinishedMissionScNotify,
+        CmdMissionType::CmdUpdateTrackMainMissionIdScRsp,
         CmdMissionType::CmdInterruptMissionEventCsReq,
+        CmdMissionType::CmdSyncTaskCsReq,
+        CmdMissionType::CmdSetMissionEventProgressScRsp,
+        CmdMissionType::CmdSubMissionRewardScNotify,
+        CmdMissionType::CmdGetMissionStatusCsReq,
+        CmdMissionType::CmdSyncTaskScRsp,
+        CmdMissionType::CmdGetMainMissionCustomValueScRsp,
+        CmdMissionType::CmdFinishTalkMissionScRsp,
+        CmdMissionType::CmdUpdateTrackMainMissionIdCsReq,
+        CmdMissionType::CmdMissionRewardScNotify,
+        CmdMissionType::CmdGetMainMissionCustomValueCsReq,
+        CmdMissionType::CmdGetMissionDataScRsp,
+        CmdMissionType::CmdFinishTalkMissionCsReq,
+        CmdMissionType::CmdStartFinishSubMissionScNotify,
+        CmdMissionType::CmdGetMissionEventDataCsReq,
+        CmdMissionType::CmdMissionAcceptScNotify,
+        CmdMissionType::CmdMissionGroupWarnScNotify,
+        CmdMissionType::CmdMissionEventRewardScNotify,
+        CmdMissionType::CmdAcceptMissionEventScRsp,
+        CmdMissionType::CmdGetMissionStatusScRsp,
+        CmdMissionType::CmdSetMissionEventProgressCsReq,
+        CmdMissionType::CmdTeleportToMissionResetPointCsReq,
         CmdMissionType::CmdGetMissionDataCsReq,
+        CmdMissionType::CmdGetMissionEventDataScRsp,
+        CmdMissionType::CmdFinishCosumeItemMissionScRsp,
         CmdMissionType::CmdFinishCosumeItemMissionCsReq,
+        CmdMissionType::CmdAcceptMainMissionScRsp,
     ];
 }
 
@@ -242,41 +237,40 @@ impl ::protobuf::EnumFull for CmdMissionType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdMissionType::CmdMissionTypeNone => 0,
-            CmdMissionType::CmdGetMainMissionCustomValueCsReq => 1,
-            CmdMissionType::CmdGetMissionStatusScRsp => 2,
-            CmdMissionType::CmdGetMissionEventDataScRsp => 3,
-            CmdMissionType::CmdMissionGroupWarnScNotify => 4,
-            CmdMissionType::CmdSetMissionEventProgressScRsp => 5,
-            CmdMissionType::CmdFinishTalkMissionCsReq => 6,
-            CmdMissionType::CmdFinishTalkMissionScRsp => 7,
-            CmdMissionType::CmdAcceptMissionEventScRsp => 8,
+            CmdMissionType::CmdTeleportToMissionResetPointScRsp => 1,
+            CmdMissionType::CmdStartFinishMainMissionScNotify => 2,
+            CmdMissionType::CmdAcceptMainMissionCsReq => 3,
+            CmdMissionType::CmdAcceptMissionEventCsReq => 4,
+            CmdMissionType::CmdInterruptMissionEventScRsp => 5,
+            CmdMissionType::CmdFinishedMissionScNotify => 6,
+            CmdMissionType::CmdUpdateTrackMainMissionIdScRsp => 7,
+            CmdMissionType::CmdInterruptMissionEventCsReq => 8,
             CmdMissionType::CmdSyncTaskCsReq => 9,
-            CmdMissionType::CmdDailyTaskDataScNotify => 10,
-            CmdMissionType::CmdGetMissionStatusCsReq => 11,
-            CmdMissionType::CmdStartFinishSubMissionScNotify => 12,
-            CmdMissionType::CmdMissionRewardScNotify => 13,
-            CmdMissionType::CmdTeleportToMissionResetPointCsReq => 14,
-            CmdMissionType::CmdAcceptMissionEventCsReq => 15,
-            CmdMissionType::CmdTeleportToMissionResetPointScRsp => 16,
-            CmdMissionType::CmdInterruptMissionEventScRsp => 17,
-            CmdMissionType::CmdUpdateTrackMainMissionIdCsReq => 18,
-            CmdMissionType::CmdFinishCosumeItemMissionScRsp => 19,
-            CmdMissionType::CmdGetMissionEventDataCsReq => 20,
-            CmdMissionType::CmdMissionEventRewardScNotify => 21,
-            CmdMissionType::CmdSyncTaskScRsp => 22,
-            CmdMissionType::CmdSetMissionEventProgressCsReq => 23,
-            CmdMissionType::CmdAcceptMainMissionCsReq => 24,
-            CmdMissionType::CmdAcceptMainMissionScRsp => 25,
-            CmdMissionType::CmdUpdateTrackMainMissionIdScRsp => 26,
-            CmdMissionType::CmdStartFinishMainMissionScNotify => 27,
-            CmdMissionType::CmdSubMissionRewardScNotify => 28,
-            CmdMissionType::CmdGetMainMissionCustomValueScRsp => 29,
-            CmdMissionType::CmdMissionAcceptScNotify => 30,
-            CmdMissionType::CmdGetMissionDataScRsp => 31,
-            CmdMissionType::CmdFinishedMissionScNotify => 32,
-            CmdMissionType::CmdInterruptMissionEventCsReq => 33,
-            CmdMissionType::CmdGetMissionDataCsReq => 34,
-            CmdMissionType::CmdFinishCosumeItemMissionCsReq => 35,
+            CmdMissionType::CmdSetMissionEventProgressScRsp => 10,
+            CmdMissionType::CmdSubMissionRewardScNotify => 11,
+            CmdMissionType::CmdGetMissionStatusCsReq => 12,
+            CmdMissionType::CmdSyncTaskScRsp => 13,
+            CmdMissionType::CmdGetMainMissionCustomValueScRsp => 14,
+            CmdMissionType::CmdFinishTalkMissionScRsp => 15,
+            CmdMissionType::CmdUpdateTrackMainMissionIdCsReq => 16,
+            CmdMissionType::CmdMissionRewardScNotify => 17,
+            CmdMissionType::CmdGetMainMissionCustomValueCsReq => 18,
+            CmdMissionType::CmdGetMissionDataScRsp => 19,
+            CmdMissionType::CmdFinishTalkMissionCsReq => 20,
+            CmdMissionType::CmdStartFinishSubMissionScNotify => 21,
+            CmdMissionType::CmdGetMissionEventDataCsReq => 22,
+            CmdMissionType::CmdMissionAcceptScNotify => 23,
+            CmdMissionType::CmdMissionGroupWarnScNotify => 24,
+            CmdMissionType::CmdMissionEventRewardScNotify => 25,
+            CmdMissionType::CmdAcceptMissionEventScRsp => 26,
+            CmdMissionType::CmdGetMissionStatusScRsp => 27,
+            CmdMissionType::CmdSetMissionEventProgressCsReq => 28,
+            CmdMissionType::CmdTeleportToMissionResetPointCsReq => 29,
+            CmdMissionType::CmdGetMissionDataCsReq => 30,
+            CmdMissionType::CmdGetMissionEventDataScRsp => 31,
+            CmdMissionType::CmdFinishCosumeItemMissionScRsp => 32,
+            CmdMissionType::CmdFinishCosumeItemMissionCsReq => 33,
+            CmdMissionType::CmdAcceptMainMissionScRsp => 34,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -295,32 +289,32 @@ impl CmdMissionType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14CmdMissionType.proto*\xdb\t\n\x0eCmdMissionType\x12\x16\n\x12CmdMi\
-    ssionTypeNone\x10\0\x12&\n!CmdGetMainMissionCustomValueCsReq\x10\xd4\t\
-    \x12\x1d\n\x18CmdGetMissionStatusScRsp\x10\xcd\t\x12\x20\n\x1bCmdGetMiss\
-    ionEventDataScRsp\x10\x8a\n\x12\x20\n\x1bCmdMissionGroupWarnScNotify\x10\
-    \xfa\t\x12$\n\x1fCmdSetMissionEventProgressScRsp\x10\x83\n\x12\x1e\n\x19\
-    CmdFinishTalkMissionCsReq\x10\xb3\t\x12\x1e\n\x19CmdFinishTalkMissionScR\
-    sp\x10\xde\t\x12\x1f\n\x1aCmdAcceptMissionEventScRsp\x10\xed\t\x12\x15\n\
-    \x10CmdSyncTaskCsReq\x10\xe5\t\x12\x1d\n\x18CmdDailyTaskDataScNotify\x10\
-    \xd5\t\x12\x1d\n\x18CmdGetMissionStatusCsReq\x10\xc9\t\x12%\n\x20CmdStar\
-    tFinishSubMissionScNotify\x10\xf0\t\x12\x1d\n\x18CmdMissionRewardScNotif\
-    y\x10\xd7\t\x12(\n#CmdTeleportToMissionResetPointCsReq\x10\xb9\t\x12\x1f\
-    \n\x1aCmdAcceptMissionEventCsReq\x10\xc3\t\x12(\n#CmdTeleportToMissionRe\
-    setPointScRsp\x10\x8d\n\x12\"\n\x1dCmdInterruptMissionEventScRsp\x10\xe3\
-    \t\x12%\n\x20CmdUpdateTrackMainMissionIdCsReq\x10\xfd\t\x12$\n\x1fCmdFin\
-    ishCosumeItemMissionScRsp\x10\xfb\t\x12\x20\n\x1bCmdGetMissionEventDataC\
-    sReq\x10\xe0\t\x12\"\n\x1dCmdMissionEventRewardScNotify\x10\xff\t\x12\
-    \x15\n\x10CmdSyncTaskScRsp\x10\xd2\t\x12$\n\x1fCmdSetMissionEventProgres\
-    sCsReq\x10\xf9\t\x12\x1e\n\x19CmdAcceptMainMissionCsReq\x10\xba\t\x12\
-    \x1e\n\x19CmdAcceptMainMissionScRsp\x10\xf6\t\x12%\n\x20CmdUpdateTrackMa\
-    inMissionIdScRsp\x10\x8b\n\x12&\n!CmdStartFinishMainMissionScNotify\x10\
-    \x8e\n\x12\x20\n\x1bCmdSubMissionRewardScNotify\x10\x93\n\x12&\n!CmdGetM\
-    ainMissionCustomValueScRsp\x10\xf1\t\x12\x1d\n\x18CmdMissionAcceptScNoti\
-    fy\x10\xca\t\x12\x1b\n\x16CmdGetMissionDataScRsp\x10\xc4\t\x12\x1f\n\x1a\
-    CmdFinishedMissionScNotify\x10\xb4\t\x12\"\n\x1dCmdInterruptMissionEvent\
-    CsReq\x10\xd1\t\x12\x1b\n\x16CmdGetMissionDataCsReq\x10\xeb\t\x12$\n\x1f\
-    CmdFinishCosumeItemMissionCsReq\x10\xce\tb\x06proto3\
+    \n\x14CmdMissionType.proto*\xbc\t\n\x0eCmdMissionType\x12\x16\n\x12CmdMi\
+    ssionTypeNone\x10\0\x12(\n#CmdTeleportToMissionResetPointScRsp\x10\xe0\t\
+    \x12&\n!CmdStartFinishMainMissionScNotify\x10\xea\t\x12\x1e\n\x19CmdAcce\
+    ptMainMissionCsReq\x10\xba\t\x12\x1f\n\x1aCmdAcceptMissionEventCsReq\x10\
+    \xc3\t\x12\"\n\x1dCmdInterruptMissionEventScRsp\x10\xeb\t\x12\x1f\n\x1aC\
+    mdFinishedMissionScNotify\x10\xb8\t\x12%\n\x20CmdUpdateTrackMainMissionI\
+    dScRsp\x10\xf1\t\x12\"\n\x1dCmdInterruptMissionEventCsReq\x10\x8a\n\x12\
+    \x15\n\x10CmdSyncTaskCsReq\x10\xcc\t\x12$\n\x1fCmdSetMissionEventProgres\
+    sScRsp\x10\xfe\t\x12\x20\n\x1bCmdSubMissionRewardScNotify\x10\xcd\t\x12\
+    \x1d\n\x18CmdGetMissionStatusCsReq\x10\xb7\t\x12\x15\n\x10CmdSyncTaskScR\
+    sp\x10\xe4\t\x12&\n!CmdGetMainMissionCustomValueScRsp\x10\xf9\t\x12\x1e\
+    \n\x19CmdFinishTalkMissionScRsp\x10\xcb\t\x12%\n\x20CmdUpdateTrackMainMi\
+    ssionIdCsReq\x10\xc5\t\x12\x1d\n\x18CmdMissionRewardScNotify\x10\xf3\t\
+    \x12&\n!CmdGetMainMissionCustomValueCsReq\x10\xd3\t\x12\x1b\n\x16CmdGetM\
+    issionDataScRsp\x10\x8f\n\x12\x1e\n\x19CmdFinishTalkMissionCsReq\x10\x84\
+    \n\x12%\n\x20CmdStartFinishSubMissionScNotify\x10\x88\n\x12\x20\n\x1bCmd\
+    GetMissionEventDataCsReq\x10\x90\n\x12\x1d\n\x18CmdMissionAcceptScNotify\
+    \x10\xc1\t\x12\x20\n\x1bCmdMissionGroupWarnScNotify\x10\xdb\t\x12\"\n\
+    \x1dCmdMissionEventRewardScNotify\x10\xfb\t\x12\x1f\n\x1aCmdAcceptMissio\
+    nEventScRsp\x10\xca\t\x12\x1d\n\x18CmdGetMissionStatusScRsp\x10\xe5\t\
+    \x12$\n\x1fCmdSetMissionEventProgressCsReq\x10\xbc\t\x12(\n#CmdTeleportT\
+    oMissionResetPointCsReq\x10\xe2\t\x12\x1b\n\x16CmdGetMissionDataCsReq\
+    \x10\xd4\t\x12\x20\n\x1bCmdGetMissionEventDataScRsp\x10\xb5\t\x12$\n\x1f\
+    CmdFinishCosumeItemMissionScRsp\x10\xc9\t\x12$\n\x1fCmdFinishCosumeItemM\
+    issionCsReq\x10\xde\t\x12\x1e\n\x19CmdAcceptMainMissionScRsp\x10\xfc\tb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

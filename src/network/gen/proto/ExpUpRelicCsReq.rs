@@ -31,8 +31,8 @@ pub struct ExpUpRelicCsReq {
     // message fields
     // @@protoc_insertion_point(field:ExpUpRelicCsReq.relic_unique_id)
     pub relic_unique_id: u32,
-    // @@protoc_insertion_point(field:ExpUpRelicCsReq.item_cost_list)
-    pub item_cost_list: ::protobuf::MessageField<super::ItemCostList::ItemCostList>,
+    // @@protoc_insertion_point(field:ExpUpRelicCsReq.CHILPEFEDNF)
+    pub CHILPEFEDNF: ::protobuf::MessageField<super::LFKJBBFJDKN::LFKJBBFJDKN>,
     // special fields
     // @@protoc_insertion_point(special_field:ExpUpRelicCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,10 +57,10 @@ impl ExpUpRelicCsReq {
             |m: &ExpUpRelicCsReq| { &m.relic_unique_id },
             |m: &mut ExpUpRelicCsReq| { &mut m.relic_unique_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostList::ItemCostList>(
-            "item_cost_list",
-            |m: &ExpUpRelicCsReq| { &m.item_cost_list },
-            |m: &mut ExpUpRelicCsReq| { &mut m.item_cost_list },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LFKJBBFJDKN::LFKJBBFJDKN>(
+            "CHILPEFEDNF",
+            |m: &ExpUpRelicCsReq| { &m.CHILPEFEDNF },
+            |m: &mut ExpUpRelicCsReq| { &mut m.CHILPEFEDNF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ExpUpRelicCsReq>(
             "ExpUpRelicCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for ExpUpRelicCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                104 => {
                     self.relic_unique_id = is.read_uint32()?;
                 },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_cost_list)?;
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CHILPEFEDNF)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -99,9 +99,9 @@ impl ::protobuf::Message for ExpUpRelicCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.relic_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.relic_unique_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.relic_unique_id);
         }
-        if let Some(v) = self.item_cost_list.as_ref() {
+        if let Some(v) = self.CHILPEFEDNF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -112,10 +112,10 @@ impl ::protobuf::Message for ExpUpRelicCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.relic_unique_id != 0 {
-            os.write_uint32(9, self.relic_unique_id)?;
+            os.write_uint32(13, self.relic_unique_id)?;
         }
-        if let Some(v) = self.item_cost_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        if let Some(v) = self.CHILPEFEDNF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -135,14 +135,14 @@ impl ::protobuf::Message for ExpUpRelicCsReq {
 
     fn clear(&mut self) {
         self.relic_unique_id = 0;
-        self.item_cost_list.clear();
+        self.CHILPEFEDNF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ExpUpRelicCsReq {
         static instance: ExpUpRelicCsReq = ExpUpRelicCsReq {
             relic_unique_id: 0,
-            item_cost_list: ::protobuf::MessageField::none(),
+            CHILPEFEDNF: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for ExpUpRelicCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15ExpUpRelicCsReq.proto\x1a\x12ItemCostList.proto\"n\n\x0fExpUpRelic\
-    CsReq\x12&\n\x0frelic_unique_id\x18\t\x20\x01(\rR\rrelicUniqueId\x123\n\
-    \x0eitem_cost_list\x18\x05\x20\x01(\x0b2\r.ItemCostListR\x0citemCostList\
-    B\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x15ExpUpRelicCsReq.proto\x1a\x11LFKJBBFJDKN.proto\"i\n\x0fExpUpRelicC\
+    sReq\x12&\n\x0frelic_unique_id\x18\r\x20\x01(\rR\rrelicUniqueId\x12.\n\
+    \x0bCHILPEFEDNF\x18\x0c\x20\x01(\x0b2\x0c.LFKJBBFJDKNR\x0bCHILPEFEDNFb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ItemCostList::file_descriptor().clone());
+            deps.push(super::LFKJBBFJDKN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ExpUpRelicCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

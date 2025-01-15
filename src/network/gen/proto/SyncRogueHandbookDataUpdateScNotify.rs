@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncRogueHandbookDataUpdateScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncRogueHandbookDataUpdateScNotify.HPIGMMEBIOM)
-    pub HPIGMMEBIOM: ::std::vec::Vec<super::EGCDAGLJMDH::EGCDAGLJMDH>,
-    // @@protoc_insertion_point(field:SyncRogueHandbookDataUpdateScNotify.GEBABKPBPFA)
-    pub GEBABKPBPFA: ::std::vec::Vec<super::EMIIFPJHLCM::EMIIFPJHLCM>,
-    // @@protoc_insertion_point(field:SyncRogueHandbookDataUpdateScNotify.LNFPFBJGJDC)
-    pub LNFPFBJGJDC: ::std::vec::Vec<super::MMMBOIJODHG::MMMBOIJODHG>,
-    // @@protoc_insertion_point(field:SyncRogueHandbookDataUpdateScNotify.JNPENACFMCI)
-    pub JNPENACFMCI: ::std::vec::Vec<super::MBFGFOGLDAP::MBFGFOGLDAP>,
-    // @@protoc_insertion_point(field:SyncRogueHandbookDataUpdateScNotify.HGNEIIEGLJK)
-    pub HGNEIIEGLJK: ::std::vec::Vec<super::KMIPDKEICBA::KMIPDKEICBA>,
+    // @@protoc_insertion_point(field:SyncRogueHandbookDataUpdateScNotify.GEEHFPKAMJO)
+    pub GEEHFPKAMJO: ::std::vec::Vec<super::LOCCIAJBHEE::LOCCIAJBHEE>,
+    // @@protoc_insertion_point(field:SyncRogueHandbookDataUpdateScNotify.NBJBAJGPFKK)
+    pub NBJBAJGPFKK: ::std::vec::Vec<super::BFLIMEGCDIN::BFLIMEGCDIN>,
+    // @@protoc_insertion_point(field:SyncRogueHandbookDataUpdateScNotify.BOIOIGDHNNJ)
+    pub BOIOIGDHNNJ: ::std::vec::Vec<super::JBGNJNJEOIL::JBGNJNJEOIL>,
+    // @@protoc_insertion_point(field:SyncRogueHandbookDataUpdateScNotify.JOJBDJHNAHK)
+    pub JOJBDJHNAHK: ::std::vec::Vec<super::CEJLMKNDFPM::CEJLMKNDFPM>,
+    // @@protoc_insertion_point(field:SyncRogueHandbookDataUpdateScNotify.LMMHCDENLMH)
+    pub LMMHCDENLMH: ::std::vec::Vec<super::AFCBFFDAHEB::AFCBFFDAHEB>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncRogueHandbookDataUpdateScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,29 +59,29 @@ impl SyncRogueHandbookDataUpdateScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HPIGMMEBIOM",
-            |m: &SyncRogueHandbookDataUpdateScNotify| { &m.HPIGMMEBIOM },
-            |m: &mut SyncRogueHandbookDataUpdateScNotify| { &mut m.HPIGMMEBIOM },
+            "GEEHFPKAMJO",
+            |m: &SyncRogueHandbookDataUpdateScNotify| { &m.GEEHFPKAMJO },
+            |m: &mut SyncRogueHandbookDataUpdateScNotify| { &mut m.GEEHFPKAMJO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GEBABKPBPFA",
-            |m: &SyncRogueHandbookDataUpdateScNotify| { &m.GEBABKPBPFA },
-            |m: &mut SyncRogueHandbookDataUpdateScNotify| { &mut m.GEBABKPBPFA },
+            "NBJBAJGPFKK",
+            |m: &SyncRogueHandbookDataUpdateScNotify| { &m.NBJBAJGPFKK },
+            |m: &mut SyncRogueHandbookDataUpdateScNotify| { &mut m.NBJBAJGPFKK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LNFPFBJGJDC",
-            |m: &SyncRogueHandbookDataUpdateScNotify| { &m.LNFPFBJGJDC },
-            |m: &mut SyncRogueHandbookDataUpdateScNotify| { &mut m.LNFPFBJGJDC },
+            "BOIOIGDHNNJ",
+            |m: &SyncRogueHandbookDataUpdateScNotify| { &m.BOIOIGDHNNJ },
+            |m: &mut SyncRogueHandbookDataUpdateScNotify| { &mut m.BOIOIGDHNNJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JNPENACFMCI",
-            |m: &SyncRogueHandbookDataUpdateScNotify| { &m.JNPENACFMCI },
-            |m: &mut SyncRogueHandbookDataUpdateScNotify| { &mut m.JNPENACFMCI },
+            "JOJBDJHNAHK",
+            |m: &SyncRogueHandbookDataUpdateScNotify| { &m.JOJBDJHNAHK },
+            |m: &mut SyncRogueHandbookDataUpdateScNotify| { &mut m.JOJBDJHNAHK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HGNEIIEGLJK",
-            |m: &SyncRogueHandbookDataUpdateScNotify| { &m.HGNEIIEGLJK },
-            |m: &mut SyncRogueHandbookDataUpdateScNotify| { &mut m.HGNEIIEGLJK },
+            "LMMHCDENLMH",
+            |m: &SyncRogueHandbookDataUpdateScNotify| { &m.LMMHCDENLMH },
+            |m: &mut SyncRogueHandbookDataUpdateScNotify| { &mut m.LMMHCDENLMH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncRogueHandbookDataUpdateScNotify>(
             "SyncRogueHandbookDataUpdateScNotify",
@@ -101,20 +101,20 @@ impl ::protobuf::Message for SyncRogueHandbookDataUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    self.HPIGMMEBIOM.push(is.read_message()?);
+                66 => {
+                    self.GEEHFPKAMJO.push(is.read_message()?);
                 },
-                18 => {
-                    self.GEBABKPBPFA.push(is.read_message()?);
-                },
-                42 => {
-                    self.LNFPFBJGJDC.push(is.read_message()?);
-                },
-                82 => {
-                    self.JNPENACFMCI.push(is.read_message()?);
+                50 => {
+                    self.NBJBAJGPFKK.push(is.read_message()?);
                 },
                 74 => {
-                    self.HGNEIIEGLJK.push(is.read_message()?);
+                    self.BOIOIGDHNNJ.push(is.read_message()?);
+                },
+                58 => {
+                    self.JOJBDJHNAHK.push(is.read_message()?);
+                },
+                98 => {
+                    self.LMMHCDENLMH.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,23 +128,23 @@ impl ::protobuf::Message for SyncRogueHandbookDataUpdateScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.HPIGMMEBIOM {
+        for value in &self.GEEHFPKAMJO {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.GEBABKPBPFA {
+        for value in &self.NBJBAJGPFKK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.LNFPFBJGJDC {
+        for value in &self.BOIOIGDHNNJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.JNPENACFMCI {
+        for value in &self.JOJBDJHNAHK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.HGNEIIEGLJK {
+        for value in &self.LMMHCDENLMH {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -154,20 +154,20 @@ impl ::protobuf::Message for SyncRogueHandbookDataUpdateScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.HPIGMMEBIOM {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        for v in &self.GEEHFPKAMJO {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
-        for v in &self.GEBABKPBPFA {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        for v in &self.NBJBAJGPFKK {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
-        for v in &self.LNFPFBJGJDC {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
-        for v in &self.JNPENACFMCI {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        };
-        for v in &self.HGNEIIEGLJK {
+        for v in &self.BOIOIGDHNNJ {
             ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
+        for v in &self.JOJBDJHNAHK {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        };
+        for v in &self.LMMHCDENLMH {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,21 +186,21 @@ impl ::protobuf::Message for SyncRogueHandbookDataUpdateScNotify {
     }
 
     fn clear(&mut self) {
-        self.HPIGMMEBIOM.clear();
-        self.GEBABKPBPFA.clear();
-        self.LNFPFBJGJDC.clear();
-        self.JNPENACFMCI.clear();
-        self.HGNEIIEGLJK.clear();
+        self.GEEHFPKAMJO.clear();
+        self.NBJBAJGPFKK.clear();
+        self.BOIOIGDHNNJ.clear();
+        self.JOJBDJHNAHK.clear();
+        self.LMMHCDENLMH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncRogueHandbookDataUpdateScNotify {
         static instance: SyncRogueHandbookDataUpdateScNotify = SyncRogueHandbookDataUpdateScNotify {
-            HPIGMMEBIOM: ::std::vec::Vec::new(),
-            GEBABKPBPFA: ::std::vec::Vec::new(),
-            LNFPFBJGJDC: ::std::vec::Vec::new(),
-            JNPENACFMCI: ::std::vec::Vec::new(),
-            HGNEIIEGLJK: ::std::vec::Vec::new(),
+            GEEHFPKAMJO: ::std::vec::Vec::new(),
+            NBJBAJGPFKK: ::std::vec::Vec::new(),
+            BOIOIGDHNNJ: ::std::vec::Vec::new(),
+            JOJBDJHNAHK: ::std::vec::Vec::new(),
+            LMMHCDENLMH: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -225,15 +225,15 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueHandbookDataUpdateScNotify 
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n)SyncRogueHandbookDataUpdateScNotify.proto\x1a\x11EGCDAGLJMDH.proto\
-    \x1a\x11EMIIFPJHLCM.proto\x1a\x11KMIPDKEICBA.proto\x1a\x11MBFGFOGLDAP.pr\
-    oto\x1a\x11MMMBOIJODHG.proto\"\x95\x02\n#SyncRogueHandbookDataUpdateScNo\
-    tify\x12.\n\x0bHPIGMMEBIOM\x18\x04\x20\x03(\x0b2\x0c.EGCDAGLJMDHR\x0bHPI\
-    GMMEBIOM\x12.\n\x0bGEBABKPBPFA\x18\x02\x20\x03(\x0b2\x0c.EMIIFPJHLCMR\
-    \x0bGEBABKPBPFA\x12.\n\x0bLNFPFBJGJDC\x18\x05\x20\x03(\x0b2\x0c.MMMBOIJO\
-    DHGR\x0bLNFPFBJGJDC\x12.\n\x0bJNPENACFMCI\x18\n\x20\x03(\x0b2\x0c.MBFGFO\
-    GLDAPR\x0bJNPENACFMCI\x12.\n\x0bHGNEIIEGLJK\x18\t\x20\x03(\x0b2\x0c.KMIP\
-    DKEICBAR\x0bHGNEIIEGLJKb\x06proto3\
+    \n)SyncRogueHandbookDataUpdateScNotify.proto\x1a\x11AFCBFFDAHEB.proto\
+    \x1a\x11BFLIMEGCDIN.proto\x1a\x11CEJLMKNDFPM.proto\x1a\x11JBGNJNJEOIL.pr\
+    oto\x1a\x11LOCCIAJBHEE.proto\"\x95\x02\n#SyncRogueHandbookDataUpdateScNo\
+    tify\x12.\n\x0bGEEHFPKAMJO\x18\x08\x20\x03(\x0b2\x0c.LOCCIAJBHEER\x0bGEE\
+    HFPKAMJO\x12.\n\x0bNBJBAJGPFKK\x18\x06\x20\x03(\x0b2\x0c.BFLIMEGCDINR\
+    \x0bNBJBAJGPFKK\x12.\n\x0bBOIOIGDHNNJ\x18\t\x20\x03(\x0b2\x0c.JBGNJNJEOI\
+    LR\x0bBOIOIGDHNNJ\x12.\n\x0bJOJBDJHNAHK\x18\x07\x20\x03(\x0b2\x0c.CEJLMK\
+    NDFPMR\x0bJOJBDJHNAHK\x12.\n\x0bLMMHCDENLMH\x18\x0c\x20\x03(\x0b2\x0c.AF\
+    CBFFDAHEBR\x0bLMMHCDENLMHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -251,11 +251,11 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(5);
-            deps.push(super::EGCDAGLJMDH::file_descriptor().clone());
-            deps.push(super::EMIIFPJHLCM::file_descriptor().clone());
-            deps.push(super::KMIPDKEICBA::file_descriptor().clone());
-            deps.push(super::MBFGFOGLDAP::file_descriptor().clone());
-            deps.push(super::MMMBOIJODHG::file_descriptor().clone());
+            deps.push(super::AFCBFFDAHEB::file_descriptor().clone());
+            deps.push(super::BFLIMEGCDIN::file_descriptor().clone());
+            deps.push(super::CEJLMKNDFPM::file_descriptor().clone());
+            deps.push(super::JBGNJNJEOIL::file_descriptor().clone());
+            deps.push(super::LOCCIAJBHEE::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SyncRogueHandbookDataUpdateScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

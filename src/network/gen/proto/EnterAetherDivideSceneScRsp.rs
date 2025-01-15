@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterAetherDivideSceneScRsp {
     // message fields
-    // @@protoc_insertion_point(field:EnterAetherDivideSceneScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:EnterAetherDivideSceneScRsp.GKOJBDLINLP)
-    pub GKOJBDLINLP: u32,
+    // @@protoc_insertion_point(field:EnterAetherDivideSceneScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:EnterAetherDivideSceneScRsp.IBCCPLKOGFD)
+    pub IBCCPLKOGFD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EnterAetherDivideSceneScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl EnterAetherDivideSceneScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &EnterAetherDivideSceneScRsp| { &m.ADADHIHDHJC },
-            |m: &mut EnterAetherDivideSceneScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &EnterAetherDivideSceneScRsp| { &m.retcode },
+            |m: &mut EnterAetherDivideSceneScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GKOJBDLINLP",
-            |m: &EnterAetherDivideSceneScRsp| { &m.GKOJBDLINLP },
-            |m: &mut EnterAetherDivideSceneScRsp| { &mut m.GKOJBDLINLP },
+            "IBCCPLKOGFD",
+            |m: &EnterAetherDivideSceneScRsp| { &m.IBCCPLKOGFD },
+            |m: &mut EnterAetherDivideSceneScRsp| { &mut m.IBCCPLKOGFD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterAetherDivideSceneScRsp>(
             "EnterAetherDivideSceneScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for EnterAetherDivideSceneScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                56 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                88 => {
-                    self.GKOJBDLINLP = is.read_uint32()?;
+                80 => {
+                    self.IBCCPLKOGFD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for EnterAetherDivideSceneScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
-        if self.GKOJBDLINLP != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.GKOJBDLINLP);
+        if self.IBCCPLKOGFD != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.IBCCPLKOGFD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for EnterAetherDivideSceneScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(5, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(7, self.retcode)?;
         }
-        if self.GKOJBDLINLP != 0 {
-            os.write_uint32(11, self.GKOJBDLINLP)?;
+        if self.IBCCPLKOGFD != 0 {
+            os.write_uint32(10, self.IBCCPLKOGFD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for EnterAetherDivideSceneScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADADHIHDHJC = 0;
-        self.GKOJBDLINLP = 0;
+        self.retcode = 0;
+        self.IBCCPLKOGFD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterAetherDivideSceneScRsp {
         static instance: EnterAetherDivideSceneScRsp = EnterAetherDivideSceneScRsp {
-            ADADHIHDHJC: 0,
-            GKOJBDLINLP: 0,
+            retcode: 0,
+            IBCCPLKOGFD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for EnterAetherDivideSceneScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!EnterAetherDivideSceneScRsp.proto\"a\n\x1bEnterAetherDivideSceneScRsp\
-    \x12\x20\n\x0bADADHIHDHJC\x18\x05\x20\x01(\rR\x0bADADHIHDHJC\x12\x20\n\
-    \x0bGKOJBDLINLP\x18\x0b\x20\x01(\rR\x0bGKOJBDLINLPb\x06proto3\
+    \n!EnterAetherDivideSceneScRsp.proto\"Y\n\x1bEnterAetherDivideSceneScRsp\
+    \x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12\x20\n\x0bIBCCPL\
+    KOGFD\x18\n\x20\x01(\rR\x0bIBCCPLKOGFDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

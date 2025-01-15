@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DiscardRelicCsReq {
     // message fields
-    // @@protoc_insertion_point(field:DiscardRelicCsReq.is_batch_op)
-    pub is_batch_op: bool,
-    // @@protoc_insertion_point(field:DiscardRelicCsReq.is_discard)
-    pub is_discard: bool,
-    // @@protoc_insertion_point(field:DiscardRelicCsReq.GIOODPOAKKL)
-    pub GIOODPOAKKL: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:DiscardRelicCsReq.NKMGAMMOGBE)
+    pub NKMGAMMOGBE: bool,
+    // @@protoc_insertion_point(field:DiscardRelicCsReq.PHJDEANEBBP)
+    pub PHJDEANEBBP: bool,
+    // @@protoc_insertion_point(field:DiscardRelicCsReq.AKNEOPOEADM)
+    pub AKNEOPOEADM: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:DiscardRelicCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl DiscardRelicCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_batch_op",
-            |m: &DiscardRelicCsReq| { &m.is_batch_op },
-            |m: &mut DiscardRelicCsReq| { &mut m.is_batch_op },
+            "NKMGAMMOGBE",
+            |m: &DiscardRelicCsReq| { &m.NKMGAMMOGBE },
+            |m: &mut DiscardRelicCsReq| { &mut m.NKMGAMMOGBE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_discard",
-            |m: &DiscardRelicCsReq| { &m.is_discard },
-            |m: &mut DiscardRelicCsReq| { &mut m.is_discard },
+            "PHJDEANEBBP",
+            |m: &DiscardRelicCsReq| { &m.PHJDEANEBBP },
+            |m: &mut DiscardRelicCsReq| { &mut m.PHJDEANEBBP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GIOODPOAKKL",
-            |m: &DiscardRelicCsReq| { &m.GIOODPOAKKL },
-            |m: &mut DiscardRelicCsReq| { &mut m.GIOODPOAKKL },
+            "AKNEOPOEADM",
+            |m: &DiscardRelicCsReq| { &m.AKNEOPOEADM },
+            |m: &mut DiscardRelicCsReq| { &mut m.AKNEOPOEADM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DiscardRelicCsReq>(
             "DiscardRelicCsReq",
@@ -87,17 +87,17 @@ impl ::protobuf::Message for DiscardRelicCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.is_batch_op = is.read_bool()?;
-                },
-                48 => {
-                    self.is_discard = is.read_bool()?;
-                },
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.GIOODPOAKKL)?;
+                104 => {
+                    self.NKMGAMMOGBE = is.read_bool()?;
                 },
                 120 => {
-                    self.GIOODPOAKKL.push(is.read_uint32()?);
+                    self.PHJDEANEBBP = is.read_bool()?;
+                },
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.AKNEOPOEADM)?;
+                },
+                40 => {
+                    self.AKNEOPOEADM.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,14 +111,14 @@ impl ::protobuf::Message for DiscardRelicCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_batch_op != false {
+        if self.NKMGAMMOGBE != false {
             my_size += 1 + 1;
         }
-        if self.is_discard != false {
+        if self.PHJDEANEBBP != false {
             my_size += 1 + 1;
         }
-        for value in &self.GIOODPOAKKL {
-            my_size += ::protobuf::rt::uint32_size(15, *value);
+        for value in &self.AKNEOPOEADM {
+            my_size += ::protobuf::rt::uint32_size(5, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -126,14 +126,14 @@ impl ::protobuf::Message for DiscardRelicCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_batch_op != false {
-            os.write_bool(7, self.is_batch_op)?;
+        if self.NKMGAMMOGBE != false {
+            os.write_bool(13, self.NKMGAMMOGBE)?;
         }
-        if self.is_discard != false {
-            os.write_bool(6, self.is_discard)?;
+        if self.PHJDEANEBBP != false {
+            os.write_bool(15, self.PHJDEANEBBP)?;
         }
-        for v in &self.GIOODPOAKKL {
-            os.write_uint32(15, *v)?;
+        for v in &self.AKNEOPOEADM {
+            os.write_uint32(5, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -152,17 +152,17 @@ impl ::protobuf::Message for DiscardRelicCsReq {
     }
 
     fn clear(&mut self) {
-        self.is_batch_op = false;
-        self.is_discard = false;
-        self.GIOODPOAKKL.clear();
+        self.NKMGAMMOGBE = false;
+        self.PHJDEANEBBP = false;
+        self.AKNEOPOEADM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DiscardRelicCsReq {
         static instance: DiscardRelicCsReq = DiscardRelicCsReq {
-            is_batch_op: false,
-            is_discard: false,
-            GIOODPOAKKL: ::std::vec::Vec::new(),
+            NKMGAMMOGBE: false,
+            PHJDEANEBBP: false,
+            AKNEOPOEADM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -187,10 +187,10 @@ impl ::protobuf::reflect::ProtobufValue for DiscardRelicCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17DiscardRelicCsReq.proto\"t\n\x11DiscardRelicCsReq\x12\x1e\n\x0bis_\
-    batch_op\x18\x07\x20\x01(\x08R\tisBatchOp\x12\x1d\n\nis_discard\x18\x06\
-    \x20\x01(\x08R\tisDiscard\x12\x20\n\x0bGIOODPOAKKL\x18\x0f\x20\x03(\rR\
-    \x0bGIOODPOAKKLB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x17DiscardRelicCsReq.proto\"y\n\x11DiscardRelicCsReq\x12\x20\n\x0bNKM\
+    GAMMOGBE\x18\r\x20\x01(\x08R\x0bNKMGAMMOGBE\x12\x20\n\x0bPHJDEANEBBP\x18\
+    \x0f\x20\x01(\x08R\x0bPHJDEANEBBP\x12\x20\n\x0bAKNEOPOEADM\x18\x05\x20\
+    \x03(\rR\x0bAKNEOPOEADMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ExpeditionDataChangeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.PBLHKADPDGC)
-    pub PBLHKADPDGC: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.MDAODDEMOOC)
-    pub MDAODDEMOOC: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.NMCPAHLCPKE)
-    pub NMCPAHLCPKE: u32,
-    // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.BAFIOLLKBDA)
-    pub BAFIOLLKBDA: ::std::vec::Vec<super::OJGLGPGDEPN::OJGLGPGDEPN>,
-    // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.CLFMFJGLHMJ)
-    pub CLFMFJGLHMJ: ::std::vec::Vec<super::HDGPCEALOPK::HDGPCEALOPK>,
+    // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.IJFKBLEOOIF)
+    pub IJFKBLEOOIF: u32,
+    // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.BFFHLICNPBA)
+    pub BFFHLICNPBA: ::std::vec::Vec<super::HIMOBNCPCEK::HIMOBNCPCEK>,
+    // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.JBFNFGBPLDB)
+    pub JBFNFGBPLDB: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.OPKHGKIBJJH)
+    pub OPKHGKIBJJH: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.OBGBOJNDEPK)
+    pub OBGBOJNDEPK: ::std::vec::Vec<super::INPDKKMOBFL::INPDKKMOBFL>,
     // special fields
     // @@protoc_insertion_point(special_field:ExpeditionDataChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,30 +58,30 @@ impl ExpeditionDataChangeScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PBLHKADPDGC",
-            |m: &ExpeditionDataChangeScNotify| { &m.PBLHKADPDGC },
-            |m: &mut ExpeditionDataChangeScNotify| { &mut m.PBLHKADPDGC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MDAODDEMOOC",
-            |m: &ExpeditionDataChangeScNotify| { &m.MDAODDEMOOC },
-            |m: &mut ExpeditionDataChangeScNotify| { &mut m.MDAODDEMOOC },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NMCPAHLCPKE",
-            |m: &ExpeditionDataChangeScNotify| { &m.NMCPAHLCPKE },
-            |m: &mut ExpeditionDataChangeScNotify| { &mut m.NMCPAHLCPKE },
+            "IJFKBLEOOIF",
+            |m: &ExpeditionDataChangeScNotify| { &m.IJFKBLEOOIF },
+            |m: &mut ExpeditionDataChangeScNotify| { &mut m.IJFKBLEOOIF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BAFIOLLKBDA",
-            |m: &ExpeditionDataChangeScNotify| { &m.BAFIOLLKBDA },
-            |m: &mut ExpeditionDataChangeScNotify| { &mut m.BAFIOLLKBDA },
+            "BFFHLICNPBA",
+            |m: &ExpeditionDataChangeScNotify| { &m.BFFHLICNPBA },
+            |m: &mut ExpeditionDataChangeScNotify| { &mut m.BFFHLICNPBA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CLFMFJGLHMJ",
-            |m: &ExpeditionDataChangeScNotify| { &m.CLFMFJGLHMJ },
-            |m: &mut ExpeditionDataChangeScNotify| { &mut m.CLFMFJGLHMJ },
+            "JBFNFGBPLDB",
+            |m: &ExpeditionDataChangeScNotify| { &m.JBFNFGBPLDB },
+            |m: &mut ExpeditionDataChangeScNotify| { &mut m.JBFNFGBPLDB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OPKHGKIBJJH",
+            |m: &ExpeditionDataChangeScNotify| { &m.OPKHGKIBJJH },
+            |m: &mut ExpeditionDataChangeScNotify| { &mut m.OPKHGKIBJJH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OBGBOJNDEPK",
+            |m: &ExpeditionDataChangeScNotify| { &m.OBGBOJNDEPK },
+            |m: &mut ExpeditionDataChangeScNotify| { &mut m.OBGBOJNDEPK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ExpeditionDataChangeScNotify>(
             "ExpeditionDataChangeScNotify",
@@ -101,26 +101,26 @@ impl ::protobuf::Message for ExpeditionDataChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                56 => {
+                    self.IJFKBLEOOIF = is.read_uint32()?;
+                },
+                82 => {
+                    self.BFFHLICNPBA.push(is.read_message()?);
+                },
                 74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.PBLHKADPDGC)?;
+                    is.read_repeated_packed_uint32_into(&mut self.JBFNFGBPLDB)?;
                 },
                 72 => {
-                    self.PBLHKADPDGC.push(is.read_uint32()?);
+                    self.JBFNFGBPLDB.push(is.read_uint32()?);
                 },
-                58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.MDAODDEMOOC)?;
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.OPKHGKIBJJH)?;
                 },
-                56 => {
-                    self.MDAODDEMOOC.push(is.read_uint32()?);
+                24 => {
+                    self.OPKHGKIBJJH.push(is.read_uint32()?);
                 },
-                8 => {
-                    self.NMCPAHLCPKE = is.read_uint32()?;
-                },
-                66 => {
-                    self.BAFIOLLKBDA.push(is.read_message()?);
-                },
-                42 => {
-                    self.CLFMFJGLHMJ.push(is.read_message()?);
+                98 => {
+                    self.OBGBOJNDEPK.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -134,20 +134,20 @@ impl ::protobuf::Message for ExpeditionDataChangeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.PBLHKADPDGC {
-            my_size += ::protobuf::rt::uint32_size(9, *value);
-        };
-        for value in &self.MDAODDEMOOC {
-            my_size += ::protobuf::rt::uint32_size(7, *value);
-        };
-        if self.NMCPAHLCPKE != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.NMCPAHLCPKE);
+        if self.IJFKBLEOOIF != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.IJFKBLEOOIF);
         }
-        for value in &self.BAFIOLLKBDA {
+        for value in &self.BFFHLICNPBA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.CLFMFJGLHMJ {
+        for value in &self.JBFNFGBPLDB {
+            my_size += ::protobuf::rt::uint32_size(9, *value);
+        };
+        for value in &self.OPKHGKIBJJH {
+            my_size += ::protobuf::rt::uint32_size(3, *value);
+        };
+        for value in &self.OBGBOJNDEPK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -157,20 +157,20 @@ impl ::protobuf::Message for ExpeditionDataChangeScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.PBLHKADPDGC {
+        if self.IJFKBLEOOIF != 0 {
+            os.write_uint32(7, self.IJFKBLEOOIF)?;
+        }
+        for v in &self.BFFHLICNPBA {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        };
+        for v in &self.JBFNFGBPLDB {
             os.write_uint32(9, *v)?;
         };
-        for v in &self.MDAODDEMOOC {
-            os.write_uint32(7, *v)?;
+        for v in &self.OPKHGKIBJJH {
+            os.write_uint32(3, *v)?;
         };
-        if self.NMCPAHLCPKE != 0 {
-            os.write_uint32(1, self.NMCPAHLCPKE)?;
-        }
-        for v in &self.BAFIOLLKBDA {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
-        for v in &self.CLFMFJGLHMJ {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        for v in &self.OBGBOJNDEPK {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -189,21 +189,21 @@ impl ::protobuf::Message for ExpeditionDataChangeScNotify {
     }
 
     fn clear(&mut self) {
-        self.PBLHKADPDGC.clear();
-        self.MDAODDEMOOC.clear();
-        self.NMCPAHLCPKE = 0;
-        self.BAFIOLLKBDA.clear();
-        self.CLFMFJGLHMJ.clear();
+        self.IJFKBLEOOIF = 0;
+        self.BFFHLICNPBA.clear();
+        self.JBFNFGBPLDB.clear();
+        self.OPKHGKIBJJH.clear();
+        self.OBGBOJNDEPK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ExpeditionDataChangeScNotify {
         static instance: ExpeditionDataChangeScNotify = ExpeditionDataChangeScNotify {
-            PBLHKADPDGC: ::std::vec::Vec::new(),
-            MDAODDEMOOC: ::std::vec::Vec::new(),
-            NMCPAHLCPKE: 0,
-            BAFIOLLKBDA: ::std::vec::Vec::new(),
-            CLFMFJGLHMJ: ::std::vec::Vec::new(),
+            IJFKBLEOOIF: 0,
+            BFFHLICNPBA: ::std::vec::Vec::new(),
+            JBFNFGBPLDB: ::std::vec::Vec::new(),
+            OPKHGKIBJJH: ::std::vec::Vec::new(),
+            OBGBOJNDEPK: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -228,13 +228,13 @@ impl ::protobuf::reflect::ProtobufValue for ExpeditionDataChangeScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"ExpeditionDataChangeScNotify.proto\x1a\x11HDGPCEALOPK.proto\x1a\x11O\
-    JGLGPGDEPN.proto\"\xe4\x01\n\x1cExpeditionDataChangeScNotify\x12\x20\n\
-    \x0bPBLHKADPDGC\x18\t\x20\x03(\rR\x0bPBLHKADPDGC\x12\x20\n\x0bMDAODDEMOO\
-    C\x18\x07\x20\x03(\rR\x0bMDAODDEMOOC\x12\x20\n\x0bNMCPAHLCPKE\x18\x01\
-    \x20\x01(\rR\x0bNMCPAHLCPKE\x12.\n\x0bBAFIOLLKBDA\x18\x08\x20\x03(\x0b2\
-    \x0c.OJGLGPGDEPNR\x0bBAFIOLLKBDA\x12.\n\x0bCLFMFJGLHMJ\x18\x05\x20\x03(\
-    \x0b2\x0c.HDGPCEALOPKR\x0bCLFMFJGLHMJb\x06proto3\
+    \n\"ExpeditionDataChangeScNotify.proto\x1a\x11HIMOBNCPCEK.proto\x1a\x11I\
+    NPDKKMOBFL.proto\"\xe4\x01\n\x1cExpeditionDataChangeScNotify\x12\x20\n\
+    \x0bIJFKBLEOOIF\x18\x07\x20\x01(\rR\x0bIJFKBLEOOIF\x12.\n\x0bBFFHLICNPBA\
+    \x18\n\x20\x03(\x0b2\x0c.HIMOBNCPCEKR\x0bBFFHLICNPBA\x12\x20\n\x0bJBFNFG\
+    BPLDB\x18\t\x20\x03(\rR\x0bJBFNFGBPLDB\x12\x20\n\x0bOPKHGKIBJJH\x18\x03\
+    \x20\x03(\rR\x0bOPKHGKIBJJH\x12.\n\x0bOBGBOJNDEPK\x18\x0c\x20\x03(\x0b2\
+    \x0c.INPDKKMOBFLR\x0bOBGBOJNDEPKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -252,8 +252,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::HDGPCEALOPK::file_descriptor().clone());
-            deps.push(super::OJGLGPGDEPN::file_descriptor().clone());
+            deps.push(super::HIMOBNCPCEK::file_descriptor().clone());
+            deps.push(super::INPDKKMOBFL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ExpeditionDataChangeScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

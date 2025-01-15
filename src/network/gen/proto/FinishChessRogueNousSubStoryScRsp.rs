@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishChessRogueNousSubStoryScRsp {
     // message fields
-    // @@protoc_insertion_point(field:FinishChessRogueNousSubStoryScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:FinishChessRogueNousSubStoryScRsp.IBGBNAJCIHD)
-    pub IBGBNAJCIHD: u32,
-    // @@protoc_insertion_point(field:FinishChessRogueNousSubStoryScRsp.PGHAPHCHHDA)
-    pub PGHAPHCHHDA: u32,
+    // @@protoc_insertion_point(field:FinishChessRogueNousSubStoryScRsp.BHONDMALHBO)
+    pub BHONDMALHBO: u32,
+    // @@protoc_insertion_point(field:FinishChessRogueNousSubStoryScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:FinishChessRogueNousSubStoryScRsp.CEDPKLPEFMJ)
+    pub CEDPKLPEFMJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FinishChessRogueNousSubStoryScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl FinishChessRogueNousSubStoryScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &FinishChessRogueNousSubStoryScRsp| { &m.ADADHIHDHJC },
-            |m: &mut FinishChessRogueNousSubStoryScRsp| { &mut m.ADADHIHDHJC },
+            "BHONDMALHBO",
+            |m: &FinishChessRogueNousSubStoryScRsp| { &m.BHONDMALHBO },
+            |m: &mut FinishChessRogueNousSubStoryScRsp| { &mut m.BHONDMALHBO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IBGBNAJCIHD",
-            |m: &FinishChessRogueNousSubStoryScRsp| { &m.IBGBNAJCIHD },
-            |m: &mut FinishChessRogueNousSubStoryScRsp| { &mut m.IBGBNAJCIHD },
+            "retcode",
+            |m: &FinishChessRogueNousSubStoryScRsp| { &m.retcode },
+            |m: &mut FinishChessRogueNousSubStoryScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PGHAPHCHHDA",
-            |m: &FinishChessRogueNousSubStoryScRsp| { &m.PGHAPHCHHDA },
-            |m: &mut FinishChessRogueNousSubStoryScRsp| { &mut m.PGHAPHCHHDA },
+            "CEDPKLPEFMJ",
+            |m: &FinishChessRogueNousSubStoryScRsp| { &m.CEDPKLPEFMJ },
+            |m: &mut FinishChessRogueNousSubStoryScRsp| { &mut m.CEDPKLPEFMJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishChessRogueNousSubStoryScRsp>(
             "FinishChessRogueNousSubStoryScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for FinishChessRogueNousSubStoryScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                96 => {
+                    self.BHONDMALHBO = is.read_uint32()?;
                 },
-                120 => {
-                    self.IBGBNAJCIHD = is.read_uint32()?;
+                80 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                32 => {
-                    self.PGHAPHCHHDA = is.read_uint32()?;
+                72 => {
+                    self.CEDPKLPEFMJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for FinishChessRogueNousSubStoryScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.ADADHIHDHJC);
+        if self.BHONDMALHBO != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.BHONDMALHBO);
         }
-        if self.IBGBNAJCIHD != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.IBGBNAJCIHD);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
-        if self.PGHAPHCHHDA != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.PGHAPHCHHDA);
+        if self.CEDPKLPEFMJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.CEDPKLPEFMJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for FinishChessRogueNousSubStoryScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(11, self.ADADHIHDHJC)?;
+        if self.BHONDMALHBO != 0 {
+            os.write_uint32(12, self.BHONDMALHBO)?;
         }
-        if self.IBGBNAJCIHD != 0 {
-            os.write_uint32(15, self.IBGBNAJCIHD)?;
+        if self.retcode != 0 {
+            os.write_uint32(10, self.retcode)?;
         }
-        if self.PGHAPHCHHDA != 0 {
-            os.write_uint32(4, self.PGHAPHCHHDA)?;
+        if self.CEDPKLPEFMJ != 0 {
+            os.write_uint32(9, self.CEDPKLPEFMJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for FinishChessRogueNousSubStoryScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADADHIHDHJC = 0;
-        self.IBGBNAJCIHD = 0;
-        self.PGHAPHCHHDA = 0;
+        self.BHONDMALHBO = 0;
+        self.retcode = 0;
+        self.CEDPKLPEFMJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishChessRogueNousSubStoryScRsp {
         static instance: FinishChessRogueNousSubStoryScRsp = FinishChessRogueNousSubStoryScRsp {
-            ADADHIHDHJC: 0,
-            IBGBNAJCIHD: 0,
-            PGHAPHCHHDA: 0,
+            BHONDMALHBO: 0,
+            retcode: 0,
+            CEDPKLPEFMJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for FinishChessRogueNousSubStoryScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'FinishChessRogueNousSubStoryScRsp.proto\"\x89\x01\n!FinishChessRogueN\
-    ousSubStoryScRsp\x12\x20\n\x0bADADHIHDHJC\x18\x0b\x20\x01(\rR\x0bADADHIH\
-    DHJC\x12\x20\n\x0bIBGBNAJCIHD\x18\x0f\x20\x01(\rR\x0bIBGBNAJCIHD\x12\x20\
-    \n\x0bPGHAPHCHHDA\x18\x04\x20\x01(\rR\x0bPGHAPHCHHDAb\x06proto3\
+    \n'FinishChessRogueNousSubStoryScRsp.proto\"\x81\x01\n!FinishChessRogueN\
+    ousSubStoryScRsp\x12\x20\n\x0bBHONDMALHBO\x18\x0c\x20\x01(\rR\x0bBHONDMA\
+    LHBO\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcode\x12\x20\n\x0bCEDP\
+    KLPEFMJ\x18\t\x20\x01(\rR\x0bCEDPKLPEFMJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

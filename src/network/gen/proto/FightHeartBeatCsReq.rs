@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightHeartBeatCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FightHeartBeatCsReq.FHLFBKJHHHF)
-    pub FHLFBKJHHHF: u64,
+    // @@protoc_insertion_point(field:FightHeartBeatCsReq.OLHAHCPNGCE)
+    pub OLHAHCPNGCE: u64,
     // special fields
     // @@protoc_insertion_point(special_field:FightHeartBeatCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl FightHeartBeatCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FHLFBKJHHHF",
-            |m: &FightHeartBeatCsReq| { &m.FHLFBKJHHHF },
-            |m: &mut FightHeartBeatCsReq| { &mut m.FHLFBKJHHHF },
+            "OLHAHCPNGCE",
+            |m: &FightHeartBeatCsReq| { &m.OLHAHCPNGCE },
+            |m: &mut FightHeartBeatCsReq| { &mut m.OLHAHCPNGCE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightHeartBeatCsReq>(
             "FightHeartBeatCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for FightHeartBeatCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.FHLFBKJHHHF = is.read_uint64()?;
+                104 => {
+                    self.OLHAHCPNGCE = is.read_uint64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for FightHeartBeatCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FHLFBKJHHHF != 0 {
-            my_size += ::protobuf::rt::uint64_size(6, self.FHLFBKJHHHF);
+        if self.OLHAHCPNGCE != 0 {
+            my_size += ::protobuf::rt::uint64_size(13, self.OLHAHCPNGCE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for FightHeartBeatCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FHLFBKJHHHF != 0 {
-            os.write_uint64(6, self.FHLFBKJHHHF)?;
+        if self.OLHAHCPNGCE != 0 {
+            os.write_uint64(13, self.OLHAHCPNGCE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for FightHeartBeatCsReq {
     }
 
     fn clear(&mut self) {
-        self.FHLFBKJHHHF = 0;
+        self.OLHAHCPNGCE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightHeartBeatCsReq {
         static instance: FightHeartBeatCsReq = FightHeartBeatCsReq {
-            FHLFBKJHHHF: 0,
+            OLHAHCPNGCE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for FightHeartBeatCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19FightHeartBeatCsReq.proto\"7\n\x13FightHeartBeatCsReq\x12\x20\n\
-    \x0bFHLFBKJHHHF\x18\x06\x20\x01(\x04R\x0bFHLFBKJHHHFb\x06proto3\
+    \x0bOLHAHCPNGCE\x18\r\x20\x01(\x04R\x0bOLHAHCPNGCEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

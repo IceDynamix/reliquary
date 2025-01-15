@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CurPetChangedScNotify {
     // message fields
-    // @@protoc_insertion_point(field:CurPetChangedScNotify.BPPKPFKPMOP)
-    pub BPPKPFKPMOP: u32,
+    // @@protoc_insertion_point(field:CurPetChangedScNotify.AJGKIKFGMPI)
+    pub AJGKIKFGMPI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CurPetChangedScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl CurPetChangedScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BPPKPFKPMOP",
-            |m: &CurPetChangedScNotify| { &m.BPPKPFKPMOP },
-            |m: &mut CurPetChangedScNotify| { &mut m.BPPKPFKPMOP },
+            "AJGKIKFGMPI",
+            |m: &CurPetChangedScNotify| { &m.AJGKIKFGMPI },
+            |m: &mut CurPetChangedScNotify| { &mut m.AJGKIKFGMPI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CurPetChangedScNotify>(
             "CurPetChangedScNotify",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for CurPetChangedScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.BPPKPFKPMOP = is.read_uint32()?;
+                112 => {
+                    self.AJGKIKFGMPI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for CurPetChangedScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BPPKPFKPMOP != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.BPPKPFKPMOP);
+        if self.AJGKIKFGMPI != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.AJGKIKFGMPI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for CurPetChangedScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BPPKPFKPMOP != 0 {
-            os.write_uint32(13, self.BPPKPFKPMOP)?;
+        if self.AJGKIKFGMPI != 0 {
+            os.write_uint32(14, self.AJGKIKFGMPI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for CurPetChangedScNotify {
     }
 
     fn clear(&mut self) {
-        self.BPPKPFKPMOP = 0;
+        self.AJGKIKFGMPI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CurPetChangedScNotify {
         static instance: CurPetChangedScNotify = CurPetChangedScNotify {
-            BPPKPFKPMOP: 0,
+            AJGKIKFGMPI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for CurPetChangedScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bCurPetChangedScNotify.proto\"9\n\x15CurPetChangedScNotify\x12\x20\
-    \n\x0bBPPKPFKPMOP\x18\r\x20\x01(\rR\x0bBPPKPFKPMOPb\x06proto3\
+    \n\x0bAJGKIKFGMPI\x18\x0e\x20\x01(\rR\x0bAJGKIKFGMPIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TravelBrochureGetPasterScNotify {
     // message fields
-    // @@protoc_insertion_point(field:TravelBrochureGetPasterScNotify.DGOBHABBJPD)
-    pub DGOBHABBJPD: u32,
-    // @@protoc_insertion_point(field:TravelBrochureGetPasterScNotify.OLNEPHADOEA)
-    pub OLNEPHADOEA: u32,
+    // @@protoc_insertion_point(field:TravelBrochureGetPasterScNotify.CAGPLAPDGBI)
+    pub CAGPLAPDGBI: u32,
+    // @@protoc_insertion_point(field:TravelBrochureGetPasterScNotify.LJDBKCBFPPC)
+    pub LJDBKCBFPPC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TravelBrochureGetPasterScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl TravelBrochureGetPasterScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DGOBHABBJPD",
-            |m: &TravelBrochureGetPasterScNotify| { &m.DGOBHABBJPD },
-            |m: &mut TravelBrochureGetPasterScNotify| { &mut m.DGOBHABBJPD },
+            "CAGPLAPDGBI",
+            |m: &TravelBrochureGetPasterScNotify| { &m.CAGPLAPDGBI },
+            |m: &mut TravelBrochureGetPasterScNotify| { &mut m.CAGPLAPDGBI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OLNEPHADOEA",
-            |m: &TravelBrochureGetPasterScNotify| { &m.OLNEPHADOEA },
-            |m: &mut TravelBrochureGetPasterScNotify| { &mut m.OLNEPHADOEA },
+            "LJDBKCBFPPC",
+            |m: &TravelBrochureGetPasterScNotify| { &m.LJDBKCBFPPC },
+            |m: &mut TravelBrochureGetPasterScNotify| { &mut m.LJDBKCBFPPC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TravelBrochureGetPasterScNotify>(
             "TravelBrochureGetPasterScNotify",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for TravelBrochureGetPasterScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.DGOBHABBJPD = is.read_uint32()?;
+                40 => {
+                    self.CAGPLAPDGBI = is.read_uint32()?;
                 },
-                32 => {
-                    self.OLNEPHADOEA = is.read_uint32()?;
+                16 => {
+                    self.LJDBKCBFPPC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for TravelBrochureGetPasterScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DGOBHABBJPD != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.DGOBHABBJPD);
+        if self.CAGPLAPDGBI != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.CAGPLAPDGBI);
         }
-        if self.OLNEPHADOEA != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.OLNEPHADOEA);
+        if self.LJDBKCBFPPC != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.LJDBKCBFPPC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for TravelBrochureGetPasterScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DGOBHABBJPD != 0 {
-            os.write_uint32(12, self.DGOBHABBJPD)?;
+        if self.CAGPLAPDGBI != 0 {
+            os.write_uint32(5, self.CAGPLAPDGBI)?;
         }
-        if self.OLNEPHADOEA != 0 {
-            os.write_uint32(4, self.OLNEPHADOEA)?;
+        if self.LJDBKCBFPPC != 0 {
+            os.write_uint32(2, self.LJDBKCBFPPC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for TravelBrochureGetPasterScNotify {
     }
 
     fn clear(&mut self) {
-        self.DGOBHABBJPD = 0;
-        self.OLNEPHADOEA = 0;
+        self.CAGPLAPDGBI = 0;
+        self.LJDBKCBFPPC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TravelBrochureGetPasterScNotify {
         static instance: TravelBrochureGetPasterScNotify = TravelBrochureGetPasterScNotify {
-            DGOBHABBJPD: 0,
-            OLNEPHADOEA: 0,
+            CAGPLAPDGBI: 0,
+            LJDBKCBFPPC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for TravelBrochureGetPasterScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%TravelBrochureGetPasterScNotify.proto\"e\n\x1fTravelBrochureGetPaster\
-    ScNotify\x12\x20\n\x0bDGOBHABBJPD\x18\x0c\x20\x01(\rR\x0bDGOBHABBJPD\x12\
-    \x20\n\x0bOLNEPHADOEA\x18\x04\x20\x01(\rR\x0bOLNEPHADOEAb\x06proto3\
+    ScNotify\x12\x20\n\x0bCAGPLAPDGBI\x18\x05\x20\x01(\rR\x0bCAGPLAPDGBI\x12\
+    \x20\n\x0bLJDBKCBFPPC\x18\x02\x20\x01(\rR\x0bLJDBKCBFPPCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

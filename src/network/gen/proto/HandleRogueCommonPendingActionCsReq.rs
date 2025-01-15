@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HandleRogueCommonPendingActionCsReq {
     // message fields
-    // @@protoc_insertion_point(field:HandleRogueCommonPendingActionCsReq.queue_location)
-    pub queue_location: u32,
+    // @@protoc_insertion_point(field:HandleRogueCommonPendingActionCsReq.LODFDJGPEMN)
+    pub LODFDJGPEMN: u32,
     // message oneof groups
-    pub action: ::std::option::Option<handle_rogue_common_pending_action_cs_req::Action>,
+    pub DKFKPIPNNLF: ::std::option::Option<handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF>,
     // special fields
     // @@protoc_insertion_point(special_field:HandleRogueCommonPendingActionCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,295 +49,1639 @@ impl HandleRogueCommonPendingActionCsReq {
         ::std::default::Default::default()
     }
 
-    // .RogueBuffSelectResult buff_select_result = 1840;
+    // .ODGADHGEGPD MEBMDEGGLDB = 1158;
 
-    pub fn buff_select_result(&self) -> &super::RogueBuffSelectResult::RogueBuffSelectResult {
-        match self.action {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BuffSelectResult(ref v)) => v,
-            _ => <super::RogueBuffSelectResult::RogueBuffSelectResult as ::protobuf::Message>::default_instance(),
+    pub fn MEBMDEGGLDB(&self) -> &super::ODGADHGEGPD::ODGADHGEGPD {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MEBMDEGGLDB(ref v)) => v,
+            _ => <super::ODGADHGEGPD::ODGADHGEGPD as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_buff_select_result(&mut self) {
-        self.action = ::std::option::Option::None;
+    pub fn clear_MEBMDEGGLDB(&mut self) {
+        self.DKFKPIPNNLF = ::std::option::Option::None;
     }
 
-    pub fn has_buff_select_result(&self) -> bool {
-        match self.action {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BuffSelectResult(..)) => true,
+    pub fn has_MEBMDEGGLDB(&self) -> bool {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MEBMDEGGLDB(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_buff_select_result(&mut self, v: super::RogueBuffSelectResult::RogueBuffSelectResult) {
-        self.action = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BuffSelectResult(v))
+    pub fn set_MEBMDEGGLDB(&mut self, v: super::ODGADHGEGPD::ODGADHGEGPD) {
+        self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MEBMDEGGLDB(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_buff_select_result(&mut self) -> &mut super::RogueBuffSelectResult::RogueBuffSelectResult {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BuffSelectResult(_)) = self.action {
+    pub fn mut_MEBMDEGGLDB(&mut self) -> &mut super::ODGADHGEGPD::ODGADHGEGPD {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MEBMDEGGLDB(_)) = self.DKFKPIPNNLF {
         } else {
-            self.action = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BuffSelectResult(super::RogueBuffSelectResult::RogueBuffSelectResult::new()));
+            self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MEBMDEGGLDB(super::ODGADHGEGPD::ODGADHGEGPD::new()));
         }
-        match self.action {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BuffSelectResult(ref mut v)) => v,
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MEBMDEGGLDB(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_buff_select_result(&mut self) -> super::RogueBuffSelectResult::RogueBuffSelectResult {
-        if self.has_buff_select_result() {
-            match self.action.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BuffSelectResult(v)) => v,
+    pub fn take_MEBMDEGGLDB(&mut self) -> super::ODGADHGEGPD::ODGADHGEGPD {
+        if self.has_MEBMDEGGLDB() {
+            match self.DKFKPIPNNLF.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MEBMDEGGLDB(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::RogueBuffSelectResult::RogueBuffSelectResult::new()
+            super::ODGADHGEGPD::ODGADHGEGPD::new()
         }
     }
 
-    // .RogueBuffRerollResult buff_reroll_select_result = 301;
+    // .EEPPFEODLPN AECOKNOFGPO = 1990;
 
-    pub fn buff_reroll_select_result(&self) -> &super::RogueBuffRerollResult::RogueBuffRerollResult {
-        match self.action {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BuffRerollSelectResult(ref v)) => v,
-            _ => <super::RogueBuffRerollResult::RogueBuffRerollResult as ::protobuf::Message>::default_instance(),
+    pub fn AECOKNOFGPO(&self) -> &super::EEPPFEODLPN::EEPPFEODLPN {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AECOKNOFGPO(ref v)) => v,
+            _ => <super::EEPPFEODLPN::EEPPFEODLPN as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_buff_reroll_select_result(&mut self) {
-        self.action = ::std::option::Option::None;
+    pub fn clear_AECOKNOFGPO(&mut self) {
+        self.DKFKPIPNNLF = ::std::option::Option::None;
     }
 
-    pub fn has_buff_reroll_select_result(&self) -> bool {
-        match self.action {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BuffRerollSelectResult(..)) => true,
+    pub fn has_AECOKNOFGPO(&self) -> bool {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AECOKNOFGPO(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_buff_reroll_select_result(&mut self, v: super::RogueBuffRerollResult::RogueBuffRerollResult) {
-        self.action = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BuffRerollSelectResult(v))
+    pub fn set_AECOKNOFGPO(&mut self, v: super::EEPPFEODLPN::EEPPFEODLPN) {
+        self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AECOKNOFGPO(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_buff_reroll_select_result(&mut self) -> &mut super::RogueBuffRerollResult::RogueBuffRerollResult {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BuffRerollSelectResult(_)) = self.action {
+    pub fn mut_AECOKNOFGPO(&mut self) -> &mut super::EEPPFEODLPN::EEPPFEODLPN {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AECOKNOFGPO(_)) = self.DKFKPIPNNLF {
         } else {
-            self.action = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BuffRerollSelectResult(super::RogueBuffRerollResult::RogueBuffRerollResult::new()));
+            self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AECOKNOFGPO(super::EEPPFEODLPN::EEPPFEODLPN::new()));
         }
-        match self.action {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BuffRerollSelectResult(ref mut v)) => v,
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AECOKNOFGPO(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_buff_reroll_select_result(&mut self) -> super::RogueBuffRerollResult::RogueBuffRerollResult {
-        if self.has_buff_reroll_select_result() {
-            match self.action.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BuffRerollSelectResult(v)) => v,
+    pub fn take_AECOKNOFGPO(&mut self) -> super::EEPPFEODLPN::EEPPFEODLPN {
+        if self.has_AECOKNOFGPO() {
+            match self.DKFKPIPNNLF.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AECOKNOFGPO(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::RogueBuffRerollResult::RogueBuffRerollResult::new()
+            super::EEPPFEODLPN::EEPPFEODLPN::new()
         }
     }
 
-    // .RogueBuffReforgeSelectResult buff_reforge_select_result = 954;
+    // .GHJMKHCAPLE IABMLAHDAFO = 1546;
 
-    pub fn buff_reforge_select_result(&self) -> &super::RogueBuffReforgeSelectResult::RogueBuffReforgeSelectResult {
-        match self.action {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BuffReforgeSelectResult(ref v)) => v,
-            _ => <super::RogueBuffReforgeSelectResult::RogueBuffReforgeSelectResult as ::protobuf::Message>::default_instance(),
+    pub fn IABMLAHDAFO(&self) -> &super::GHJMKHCAPLE::GHJMKHCAPLE {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::IABMLAHDAFO(ref v)) => v,
+            _ => <super::GHJMKHCAPLE::GHJMKHCAPLE as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_buff_reforge_select_result(&mut self) {
-        self.action = ::std::option::Option::None;
+    pub fn clear_IABMLAHDAFO(&mut self) {
+        self.DKFKPIPNNLF = ::std::option::Option::None;
     }
 
-    pub fn has_buff_reforge_select_result(&self) -> bool {
-        match self.action {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BuffReforgeSelectResult(..)) => true,
+    pub fn has_IABMLAHDAFO(&self) -> bool {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::IABMLAHDAFO(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_buff_reforge_select_result(&mut self, v: super::RogueBuffReforgeSelectResult::RogueBuffReforgeSelectResult) {
-        self.action = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BuffReforgeSelectResult(v))
+    pub fn set_IABMLAHDAFO(&mut self, v: super::GHJMKHCAPLE::GHJMKHCAPLE) {
+        self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::IABMLAHDAFO(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_buff_reforge_select_result(&mut self) -> &mut super::RogueBuffReforgeSelectResult::RogueBuffReforgeSelectResult {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BuffReforgeSelectResult(_)) = self.action {
+    pub fn mut_IABMLAHDAFO(&mut self) -> &mut super::GHJMKHCAPLE::GHJMKHCAPLE {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::IABMLAHDAFO(_)) = self.DKFKPIPNNLF {
         } else {
-            self.action = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BuffReforgeSelectResult(super::RogueBuffReforgeSelectResult::RogueBuffReforgeSelectResult::new()));
+            self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::IABMLAHDAFO(super::GHJMKHCAPLE::GHJMKHCAPLE::new()));
         }
-        match self.action {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BuffReforgeSelectResult(ref mut v)) => v,
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::IABMLAHDAFO(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_buff_reforge_select_result(&mut self) -> super::RogueBuffReforgeSelectResult::RogueBuffReforgeSelectResult {
-        if self.has_buff_reforge_select_result() {
-            match self.action.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BuffReforgeSelectResult(v)) => v,
+    pub fn take_IABMLAHDAFO(&mut self) -> super::GHJMKHCAPLE::GHJMKHCAPLE {
+        if self.has_IABMLAHDAFO() {
+            match self.DKFKPIPNNLF.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::IABMLAHDAFO(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::RogueBuffReforgeSelectResult::RogueBuffReforgeSelectResult::new()
+            super::GHJMKHCAPLE::GHJMKHCAPLE::new()
         }
     }
 
-    // .RogueMiracleSelectResult miracle_select_result = 1880;
+    // .GBMLHMCDPBP HCIGFCPPGLB = 868;
 
-    pub fn miracle_select_result(&self) -> &super::RogueMiracleSelectResult::RogueMiracleSelectResult {
-        match self.action {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::MiracleSelectResult(ref v)) => v,
-            _ => <super::RogueMiracleSelectResult::RogueMiracleSelectResult as ::protobuf::Message>::default_instance(),
+    pub fn HCIGFCPPGLB(&self) -> &super::GBMLHMCDPBP::GBMLHMCDPBP {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HCIGFCPPGLB(ref v)) => v,
+            _ => <super::GBMLHMCDPBP::GBMLHMCDPBP as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_miracle_select_result(&mut self) {
-        self.action = ::std::option::Option::None;
+    pub fn clear_HCIGFCPPGLB(&mut self) {
+        self.DKFKPIPNNLF = ::std::option::Option::None;
     }
 
-    pub fn has_miracle_select_result(&self) -> bool {
-        match self.action {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::MiracleSelectResult(..)) => true,
+    pub fn has_HCIGFCPPGLB(&self) -> bool {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HCIGFCPPGLB(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_miracle_select_result(&mut self, v: super::RogueMiracleSelectResult::RogueMiracleSelectResult) {
-        self.action = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::MiracleSelectResult(v))
+    pub fn set_HCIGFCPPGLB(&mut self, v: super::GBMLHMCDPBP::GBMLHMCDPBP) {
+        self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HCIGFCPPGLB(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_miracle_select_result(&mut self) -> &mut super::RogueMiracleSelectResult::RogueMiracleSelectResult {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::MiracleSelectResult(_)) = self.action {
+    pub fn mut_HCIGFCPPGLB(&mut self) -> &mut super::GBMLHMCDPBP::GBMLHMCDPBP {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HCIGFCPPGLB(_)) = self.DKFKPIPNNLF {
         } else {
-            self.action = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::MiracleSelectResult(super::RogueMiracleSelectResult::RogueMiracleSelectResult::new()));
+            self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HCIGFCPPGLB(super::GBMLHMCDPBP::GBMLHMCDPBP::new()));
         }
-        match self.action {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::MiracleSelectResult(ref mut v)) => v,
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HCIGFCPPGLB(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_miracle_select_result(&mut self) -> super::RogueMiracleSelectResult::RogueMiracleSelectResult {
-        if self.has_miracle_select_result() {
-            match self.action.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::MiracleSelectResult(v)) => v,
+    pub fn take_HCIGFCPPGLB(&mut self) -> super::GBMLHMCDPBP::GBMLHMCDPBP {
+        if self.has_HCIGFCPPGLB() {
+            match self.DKFKPIPNNLF.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HCIGFCPPGLB(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::RogueMiracleSelectResult::RogueMiracleSelectResult::new()
+            super::GBMLHMCDPBP::GBMLHMCDPBP::new()
         }
     }
 
-    // .RogueBonusSelectResult bonus_select_result = 1380;
+    // .MLNLEPKOFDB MJFBFEACPBF = 1486;
 
-    pub fn bonus_select_result(&self) -> &super::RogueBonusSelectResult::RogueBonusSelectResult {
-        match self.action {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BonusSelectResult(ref v)) => v,
-            _ => <super::RogueBonusSelectResult::RogueBonusSelectResult as ::protobuf::Message>::default_instance(),
+    pub fn MJFBFEACPBF(&self) -> &super::MLNLEPKOFDB::MLNLEPKOFDB {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MJFBFEACPBF(ref v)) => v,
+            _ => <super::MLNLEPKOFDB::MLNLEPKOFDB as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_bonus_select_result(&mut self) {
-        self.action = ::std::option::Option::None;
+    pub fn clear_MJFBFEACPBF(&mut self) {
+        self.DKFKPIPNNLF = ::std::option::Option::None;
     }
 
-    pub fn has_bonus_select_result(&self) -> bool {
-        match self.action {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BonusSelectResult(..)) => true,
+    pub fn has_MJFBFEACPBF(&self) -> bool {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MJFBFEACPBF(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_bonus_select_result(&mut self, v: super::RogueBonusSelectResult::RogueBonusSelectResult) {
-        self.action = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BonusSelectResult(v))
+    pub fn set_MJFBFEACPBF(&mut self, v: super::MLNLEPKOFDB::MLNLEPKOFDB) {
+        self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MJFBFEACPBF(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_bonus_select_result(&mut self) -> &mut super::RogueBonusSelectResult::RogueBonusSelectResult {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BonusSelectResult(_)) = self.action {
+    pub fn mut_MJFBFEACPBF(&mut self) -> &mut super::MLNLEPKOFDB::MLNLEPKOFDB {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MJFBFEACPBF(_)) = self.DKFKPIPNNLF {
         } else {
-            self.action = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BonusSelectResult(super::RogueBonusSelectResult::RogueBonusSelectResult::new()));
+            self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MJFBFEACPBF(super::MLNLEPKOFDB::MLNLEPKOFDB::new()));
         }
-        match self.action {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BonusSelectResult(ref mut v)) => v,
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MJFBFEACPBF(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_bonus_select_result(&mut self) -> super::RogueBonusSelectResult::RogueBonusSelectResult {
-        if self.has_bonus_select_result() {
-            match self.action.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BonusSelectResult(v)) => v,
+    pub fn take_MJFBFEACPBF(&mut self) -> super::MLNLEPKOFDB::MLNLEPKOFDB {
+        if self.has_MJFBFEACPBF() {
+            match self.DKFKPIPNNLF.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MJFBFEACPBF(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::RogueBonusSelectResult::RogueBonusSelectResult::new()
+            super::MLNLEPKOFDB::MLNLEPKOFDB::new()
+        }
+    }
+
+    // .IDDEDGOENKP FMOFFMKNGIK = 144;
+
+    pub fn FMOFFMKNGIK(&self) -> &super::IDDEDGOENKP::IDDEDGOENKP {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::FMOFFMKNGIK(ref v)) => v,
+            _ => <super::IDDEDGOENKP::IDDEDGOENKP as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_FMOFFMKNGIK(&mut self) {
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+    }
+
+    pub fn has_FMOFFMKNGIK(&self) -> bool {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::FMOFFMKNGIK(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_FMOFFMKNGIK(&mut self, v: super::IDDEDGOENKP::IDDEDGOENKP) {
+        self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::FMOFFMKNGIK(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_FMOFFMKNGIK(&mut self) -> &mut super::IDDEDGOENKP::IDDEDGOENKP {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::FMOFFMKNGIK(_)) = self.DKFKPIPNNLF {
+        } else {
+            self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::FMOFFMKNGIK(super::IDDEDGOENKP::IDDEDGOENKP::new()));
+        }
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::FMOFFMKNGIK(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_FMOFFMKNGIK(&mut self) -> super::IDDEDGOENKP::IDDEDGOENKP {
+        if self.has_FMOFFMKNGIK() {
+            match self.DKFKPIPNNLF.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::FMOFFMKNGIK(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::IDDEDGOENKP::IDDEDGOENKP::new()
+        }
+    }
+
+    // .LOMNOALJIAN BJPJGLJFCLE = 329;
+
+    pub fn BJPJGLJFCLE(&self) -> &super::LOMNOALJIAN::LOMNOALJIAN {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::BJPJGLJFCLE(ref v)) => v,
+            _ => <super::LOMNOALJIAN::LOMNOALJIAN as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_BJPJGLJFCLE(&mut self) {
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+    }
+
+    pub fn has_BJPJGLJFCLE(&self) -> bool {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::BJPJGLJFCLE(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_BJPJGLJFCLE(&mut self, v: super::LOMNOALJIAN::LOMNOALJIAN) {
+        self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::BJPJGLJFCLE(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_BJPJGLJFCLE(&mut self) -> &mut super::LOMNOALJIAN::LOMNOALJIAN {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::BJPJGLJFCLE(_)) = self.DKFKPIPNNLF {
+        } else {
+            self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::BJPJGLJFCLE(super::LOMNOALJIAN::LOMNOALJIAN::new()));
+        }
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::BJPJGLJFCLE(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_BJPJGLJFCLE(&mut self) -> super::LOMNOALJIAN::LOMNOALJIAN {
+        if self.has_BJPJGLJFCLE() {
+            match self.DKFKPIPNNLF.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::BJPJGLJFCLE(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::LOMNOALJIAN::LOMNOALJIAN::new()
+        }
+    }
+
+    // .KMPOHDALDHA ADNLJEFPDGA = 1388;
+
+    pub fn ADNLJEFPDGA(&self) -> &super::KMPOHDALDHA::KMPOHDALDHA {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::ADNLJEFPDGA(ref v)) => v,
+            _ => <super::KMPOHDALDHA::KMPOHDALDHA as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_ADNLJEFPDGA(&mut self) {
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+    }
+
+    pub fn has_ADNLJEFPDGA(&self) -> bool {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::ADNLJEFPDGA(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_ADNLJEFPDGA(&mut self, v: super::KMPOHDALDHA::KMPOHDALDHA) {
+        self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::ADNLJEFPDGA(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_ADNLJEFPDGA(&mut self) -> &mut super::KMPOHDALDHA::KMPOHDALDHA {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::ADNLJEFPDGA(_)) = self.DKFKPIPNNLF {
+        } else {
+            self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::ADNLJEFPDGA(super::KMPOHDALDHA::KMPOHDALDHA::new()));
+        }
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::ADNLJEFPDGA(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_ADNLJEFPDGA(&mut self) -> super::KMPOHDALDHA::KMPOHDALDHA {
+        if self.has_ADNLJEFPDGA() {
+            match self.DKFKPIPNNLF.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::ADNLJEFPDGA(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::KMPOHDALDHA::KMPOHDALDHA::new()
+        }
+    }
+
+    // .DFAFNDLFBLF NMFPJHLAHEL = 220;
+
+    pub fn NMFPJHLAHEL(&self) -> &super::DFAFNDLFBLF::DFAFNDLFBLF {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::NMFPJHLAHEL(ref v)) => v,
+            _ => <super::DFAFNDLFBLF::DFAFNDLFBLF as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_NMFPJHLAHEL(&mut self) {
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+    }
+
+    pub fn has_NMFPJHLAHEL(&self) -> bool {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::NMFPJHLAHEL(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_NMFPJHLAHEL(&mut self, v: super::DFAFNDLFBLF::DFAFNDLFBLF) {
+        self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::NMFPJHLAHEL(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_NMFPJHLAHEL(&mut self) -> &mut super::DFAFNDLFBLF::DFAFNDLFBLF {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::NMFPJHLAHEL(_)) = self.DKFKPIPNNLF {
+        } else {
+            self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::NMFPJHLAHEL(super::DFAFNDLFBLF::DFAFNDLFBLF::new()));
+        }
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::NMFPJHLAHEL(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_NMFPJHLAHEL(&mut self) -> super::DFAFNDLFBLF::DFAFNDLFBLF {
+        if self.has_NMFPJHLAHEL() {
+            match self.DKFKPIPNNLF.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::NMFPJHLAHEL(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::DFAFNDLFBLF::DFAFNDLFBLF::new()
+        }
+    }
+
+    // .ANGDGEIHHPG KJBFIFOMGDO = 425;
+
+    pub fn KJBFIFOMGDO(&self) -> &super::ANGDGEIHHPG::ANGDGEIHHPG {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::KJBFIFOMGDO(ref v)) => v,
+            _ => <super::ANGDGEIHHPG::ANGDGEIHHPG as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_KJBFIFOMGDO(&mut self) {
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+    }
+
+    pub fn has_KJBFIFOMGDO(&self) -> bool {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::KJBFIFOMGDO(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_KJBFIFOMGDO(&mut self, v: super::ANGDGEIHHPG::ANGDGEIHHPG) {
+        self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::KJBFIFOMGDO(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_KJBFIFOMGDO(&mut self) -> &mut super::ANGDGEIHHPG::ANGDGEIHHPG {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::KJBFIFOMGDO(_)) = self.DKFKPIPNNLF {
+        } else {
+            self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::KJBFIFOMGDO(super::ANGDGEIHHPG::ANGDGEIHHPG::new()));
+        }
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::KJBFIFOMGDO(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_KJBFIFOMGDO(&mut self) -> super::ANGDGEIHHPG::ANGDGEIHHPG {
+        if self.has_KJBFIFOMGDO() {
+            match self.DKFKPIPNNLF.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::KJBFIFOMGDO(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::ANGDGEIHHPG::ANGDGEIHHPG::new()
+        }
+    }
+
+    // .LOBLGOHDMAF DPJCFBFCNGF = 1680;
+
+    pub fn DPJCFBFCNGF(&self) -> &super::LOBLGOHDMAF::LOBLGOHDMAF {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::DPJCFBFCNGF(ref v)) => v,
+            _ => <super::LOBLGOHDMAF::LOBLGOHDMAF as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_DPJCFBFCNGF(&mut self) {
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+    }
+
+    pub fn has_DPJCFBFCNGF(&self) -> bool {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::DPJCFBFCNGF(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_DPJCFBFCNGF(&mut self, v: super::LOBLGOHDMAF::LOBLGOHDMAF) {
+        self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::DPJCFBFCNGF(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_DPJCFBFCNGF(&mut self) -> &mut super::LOBLGOHDMAF::LOBLGOHDMAF {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::DPJCFBFCNGF(_)) = self.DKFKPIPNNLF {
+        } else {
+            self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::DPJCFBFCNGF(super::LOBLGOHDMAF::LOBLGOHDMAF::new()));
+        }
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::DPJCFBFCNGF(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_DPJCFBFCNGF(&mut self) -> super::LOBLGOHDMAF::LOBLGOHDMAF {
+        if self.has_DPJCFBFCNGF() {
+            match self.DKFKPIPNNLF.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::DPJCFBFCNGF(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::LOBLGOHDMAF::LOBLGOHDMAF::new()
+        }
+    }
+
+    // .IAOHGLNLNHM HIBIHIADOAD = 69;
+
+    pub fn HIBIHIADOAD(&self) -> &super::IAOHGLNLNHM::IAOHGLNLNHM {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HIBIHIADOAD(ref v)) => v,
+            _ => <super::IAOHGLNLNHM::IAOHGLNLNHM as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_HIBIHIADOAD(&mut self) {
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+    }
+
+    pub fn has_HIBIHIADOAD(&self) -> bool {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HIBIHIADOAD(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_HIBIHIADOAD(&mut self, v: super::IAOHGLNLNHM::IAOHGLNLNHM) {
+        self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HIBIHIADOAD(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_HIBIHIADOAD(&mut self) -> &mut super::IAOHGLNLNHM::IAOHGLNLNHM {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HIBIHIADOAD(_)) = self.DKFKPIPNNLF {
+        } else {
+            self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HIBIHIADOAD(super::IAOHGLNLNHM::IAOHGLNLNHM::new()));
+        }
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HIBIHIADOAD(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_HIBIHIADOAD(&mut self) -> super::IAOHGLNLNHM::IAOHGLNLNHM {
+        if self.has_HIBIHIADOAD() {
+            match self.DKFKPIPNNLF.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HIBIHIADOAD(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::IAOHGLNLNHM::IAOHGLNLNHM::new()
+        }
+    }
+
+    // .NOEIGMCEGOI GLGFADAIBCF = 714;
+
+    pub fn GLGFADAIBCF(&self) -> &super::NOEIGMCEGOI::NOEIGMCEGOI {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::GLGFADAIBCF(ref v)) => v,
+            _ => <super::NOEIGMCEGOI::NOEIGMCEGOI as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_GLGFADAIBCF(&mut self) {
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+    }
+
+    pub fn has_GLGFADAIBCF(&self) -> bool {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::GLGFADAIBCF(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_GLGFADAIBCF(&mut self, v: super::NOEIGMCEGOI::NOEIGMCEGOI) {
+        self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::GLGFADAIBCF(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_GLGFADAIBCF(&mut self) -> &mut super::NOEIGMCEGOI::NOEIGMCEGOI {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::GLGFADAIBCF(_)) = self.DKFKPIPNNLF {
+        } else {
+            self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::GLGFADAIBCF(super::NOEIGMCEGOI::NOEIGMCEGOI::new()));
+        }
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::GLGFADAIBCF(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_GLGFADAIBCF(&mut self) -> super::NOEIGMCEGOI::NOEIGMCEGOI {
+        if self.has_GLGFADAIBCF() {
+            match self.DKFKPIPNNLF.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::GLGFADAIBCF(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::NOEIGMCEGOI::NOEIGMCEGOI::new()
+        }
+    }
+
+    // .JCEDKLHEEJI HDNGLJEDJAM = 1893;
+
+    pub fn HDNGLJEDJAM(&self) -> &super::JCEDKLHEEJI::JCEDKLHEEJI {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HDNGLJEDJAM(ref v)) => v,
+            _ => <super::JCEDKLHEEJI::JCEDKLHEEJI as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_HDNGLJEDJAM(&mut self) {
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+    }
+
+    pub fn has_HDNGLJEDJAM(&self) -> bool {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HDNGLJEDJAM(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_HDNGLJEDJAM(&mut self, v: super::JCEDKLHEEJI::JCEDKLHEEJI) {
+        self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HDNGLJEDJAM(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_HDNGLJEDJAM(&mut self) -> &mut super::JCEDKLHEEJI::JCEDKLHEEJI {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HDNGLJEDJAM(_)) = self.DKFKPIPNNLF {
+        } else {
+            self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HDNGLJEDJAM(super::JCEDKLHEEJI::JCEDKLHEEJI::new()));
+        }
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HDNGLJEDJAM(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_HDNGLJEDJAM(&mut self) -> super::JCEDKLHEEJI::JCEDKLHEEJI {
+        if self.has_HDNGLJEDJAM() {
+            match self.DKFKPIPNNLF.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HDNGLJEDJAM(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::JCEDKLHEEJI::JCEDKLHEEJI::new()
+        }
+    }
+
+    // .LKOEBDLAAOO EJMLOPFGJHM = 1409;
+
+    pub fn EJMLOPFGJHM(&self) -> &super::LKOEBDLAAOO::LKOEBDLAAOO {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::EJMLOPFGJHM(ref v)) => v,
+            _ => <super::LKOEBDLAAOO::LKOEBDLAAOO as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_EJMLOPFGJHM(&mut self) {
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+    }
+
+    pub fn has_EJMLOPFGJHM(&self) -> bool {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::EJMLOPFGJHM(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_EJMLOPFGJHM(&mut self, v: super::LKOEBDLAAOO::LKOEBDLAAOO) {
+        self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::EJMLOPFGJHM(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_EJMLOPFGJHM(&mut self) -> &mut super::LKOEBDLAAOO::LKOEBDLAAOO {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::EJMLOPFGJHM(_)) = self.DKFKPIPNNLF {
+        } else {
+            self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::EJMLOPFGJHM(super::LKOEBDLAAOO::LKOEBDLAAOO::new()));
+        }
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::EJMLOPFGJHM(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_EJMLOPFGJHM(&mut self) -> super::LKOEBDLAAOO::LKOEBDLAAOO {
+        if self.has_EJMLOPFGJHM() {
+            match self.DKFKPIPNNLF.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::EJMLOPFGJHM(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::LKOEBDLAAOO::LKOEBDLAAOO::new()
+        }
+    }
+
+    // .JEPHNACILDJ MHIGCBBGDPB = 1796;
+
+    pub fn MHIGCBBGDPB(&self) -> &super::JEPHNACILDJ::JEPHNACILDJ {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MHIGCBBGDPB(ref v)) => v,
+            _ => <super::JEPHNACILDJ::JEPHNACILDJ as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_MHIGCBBGDPB(&mut self) {
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+    }
+
+    pub fn has_MHIGCBBGDPB(&self) -> bool {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MHIGCBBGDPB(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_MHIGCBBGDPB(&mut self, v: super::JEPHNACILDJ::JEPHNACILDJ) {
+        self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MHIGCBBGDPB(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_MHIGCBBGDPB(&mut self) -> &mut super::JEPHNACILDJ::JEPHNACILDJ {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MHIGCBBGDPB(_)) = self.DKFKPIPNNLF {
+        } else {
+            self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MHIGCBBGDPB(super::JEPHNACILDJ::JEPHNACILDJ::new()));
+        }
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MHIGCBBGDPB(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_MHIGCBBGDPB(&mut self) -> super::JEPHNACILDJ::JEPHNACILDJ {
+        if self.has_MHIGCBBGDPB() {
+            match self.DKFKPIPNNLF.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MHIGCBBGDPB(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::JEPHNACILDJ::JEPHNACILDJ::new()
+        }
+    }
+
+    // .DCLCNFBOOKH MBJEHCBGKFI = 1738;
+
+    pub fn MBJEHCBGKFI(&self) -> &super::DCLCNFBOOKH::DCLCNFBOOKH {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MBJEHCBGKFI(ref v)) => v,
+            _ => <super::DCLCNFBOOKH::DCLCNFBOOKH as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_MBJEHCBGKFI(&mut self) {
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+    }
+
+    pub fn has_MBJEHCBGKFI(&self) -> bool {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MBJEHCBGKFI(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_MBJEHCBGKFI(&mut self, v: super::DCLCNFBOOKH::DCLCNFBOOKH) {
+        self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MBJEHCBGKFI(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_MBJEHCBGKFI(&mut self) -> &mut super::DCLCNFBOOKH::DCLCNFBOOKH {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MBJEHCBGKFI(_)) = self.DKFKPIPNNLF {
+        } else {
+            self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MBJEHCBGKFI(super::DCLCNFBOOKH::DCLCNFBOOKH::new()));
+        }
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MBJEHCBGKFI(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_MBJEHCBGKFI(&mut self) -> super::DCLCNFBOOKH::DCLCNFBOOKH {
+        if self.has_MBJEHCBGKFI() {
+            match self.DKFKPIPNNLF.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MBJEHCBGKFI(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::DCLCNFBOOKH::DCLCNFBOOKH::new()
+        }
+    }
+
+    // .IGKLJMIEAIJ GIMCCANEODD = 1860;
+
+    pub fn GIMCCANEODD(&self) -> &super::IGKLJMIEAIJ::IGKLJMIEAIJ {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::GIMCCANEODD(ref v)) => v,
+            _ => <super::IGKLJMIEAIJ::IGKLJMIEAIJ as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_GIMCCANEODD(&mut self) {
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+    }
+
+    pub fn has_GIMCCANEODD(&self) -> bool {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::GIMCCANEODD(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_GIMCCANEODD(&mut self, v: super::IGKLJMIEAIJ::IGKLJMIEAIJ) {
+        self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::GIMCCANEODD(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_GIMCCANEODD(&mut self) -> &mut super::IGKLJMIEAIJ::IGKLJMIEAIJ {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::GIMCCANEODD(_)) = self.DKFKPIPNNLF {
+        } else {
+            self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::GIMCCANEODD(super::IGKLJMIEAIJ::IGKLJMIEAIJ::new()));
+        }
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::GIMCCANEODD(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_GIMCCANEODD(&mut self) -> super::IGKLJMIEAIJ::IGKLJMIEAIJ {
+        if self.has_GIMCCANEODD() {
+            match self.DKFKPIPNNLF.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::GIMCCANEODD(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::IGKLJMIEAIJ::IGKLJMIEAIJ::new()
+        }
+    }
+
+    // .DNNIABNANIA AEFFIMIHEJE = 1639;
+
+    pub fn AEFFIMIHEJE(&self) -> &super::DNNIABNANIA::DNNIABNANIA {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AEFFIMIHEJE(ref v)) => v,
+            _ => <super::DNNIABNANIA::DNNIABNANIA as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_AEFFIMIHEJE(&mut self) {
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+    }
+
+    pub fn has_AEFFIMIHEJE(&self) -> bool {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AEFFIMIHEJE(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_AEFFIMIHEJE(&mut self, v: super::DNNIABNANIA::DNNIABNANIA) {
+        self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AEFFIMIHEJE(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_AEFFIMIHEJE(&mut self) -> &mut super::DNNIABNANIA::DNNIABNANIA {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AEFFIMIHEJE(_)) = self.DKFKPIPNNLF {
+        } else {
+            self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AEFFIMIHEJE(super::DNNIABNANIA::DNNIABNANIA::new()));
+        }
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AEFFIMIHEJE(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_AEFFIMIHEJE(&mut self) -> super::DNNIABNANIA::DNNIABNANIA {
+        if self.has_AEFFIMIHEJE() {
+            match self.DKFKPIPNNLF.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AEFFIMIHEJE(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::DNNIABNANIA::DNNIABNANIA::new()
+        }
+    }
+
+    // .CHBGHLCIELJ DNFGMFJANDO = 1012;
+
+    pub fn DNFGMFJANDO(&self) -> &super::CHBGHLCIELJ::CHBGHLCIELJ {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::DNFGMFJANDO(ref v)) => v,
+            _ => <super::CHBGHLCIELJ::CHBGHLCIELJ as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_DNFGMFJANDO(&mut self) {
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+    }
+
+    pub fn has_DNFGMFJANDO(&self) -> bool {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::DNFGMFJANDO(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_DNFGMFJANDO(&mut self, v: super::CHBGHLCIELJ::CHBGHLCIELJ) {
+        self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::DNFGMFJANDO(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_DNFGMFJANDO(&mut self) -> &mut super::CHBGHLCIELJ::CHBGHLCIELJ {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::DNFGMFJANDO(_)) = self.DKFKPIPNNLF {
+        } else {
+            self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::DNFGMFJANDO(super::CHBGHLCIELJ::CHBGHLCIELJ::new()));
+        }
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::DNFGMFJANDO(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_DNFGMFJANDO(&mut self) -> super::CHBGHLCIELJ::CHBGHLCIELJ {
+        if self.has_DNFGMFJANDO() {
+            match self.DKFKPIPNNLF.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::DNFGMFJANDO(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::CHBGHLCIELJ::CHBGHLCIELJ::new()
+        }
+    }
+
+    // .IGKLJMIEAIJ AGFBKJFDEDN = 1479;
+
+    pub fn AGFBKJFDEDN(&self) -> &super::IGKLJMIEAIJ::IGKLJMIEAIJ {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AGFBKJFDEDN(ref v)) => v,
+            _ => <super::IGKLJMIEAIJ::IGKLJMIEAIJ as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_AGFBKJFDEDN(&mut self) {
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+    }
+
+    pub fn has_AGFBKJFDEDN(&self) -> bool {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AGFBKJFDEDN(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_AGFBKJFDEDN(&mut self, v: super::IGKLJMIEAIJ::IGKLJMIEAIJ) {
+        self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AGFBKJFDEDN(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_AGFBKJFDEDN(&mut self) -> &mut super::IGKLJMIEAIJ::IGKLJMIEAIJ {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AGFBKJFDEDN(_)) = self.DKFKPIPNNLF {
+        } else {
+            self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AGFBKJFDEDN(super::IGKLJMIEAIJ::IGKLJMIEAIJ::new()));
+        }
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AGFBKJFDEDN(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_AGFBKJFDEDN(&mut self) -> super::IGKLJMIEAIJ::IGKLJMIEAIJ {
+        if self.has_AGFBKJFDEDN() {
+            match self.DKFKPIPNNLF.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AGFBKJFDEDN(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::IGKLJMIEAIJ::IGKLJMIEAIJ::new()
+        }
+    }
+
+    // .IGKLJMIEAIJ OEABHOACGMP = 1723;
+
+    pub fn OEABHOACGMP(&self) -> &super::IGKLJMIEAIJ::IGKLJMIEAIJ {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::OEABHOACGMP(ref v)) => v,
+            _ => <super::IGKLJMIEAIJ::IGKLJMIEAIJ as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_OEABHOACGMP(&mut self) {
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+    }
+
+    pub fn has_OEABHOACGMP(&self) -> bool {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::OEABHOACGMP(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_OEABHOACGMP(&mut self, v: super::IGKLJMIEAIJ::IGKLJMIEAIJ) {
+        self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::OEABHOACGMP(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_OEABHOACGMP(&mut self) -> &mut super::IGKLJMIEAIJ::IGKLJMIEAIJ {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::OEABHOACGMP(_)) = self.DKFKPIPNNLF {
+        } else {
+            self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::OEABHOACGMP(super::IGKLJMIEAIJ::IGKLJMIEAIJ::new()));
+        }
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::OEABHOACGMP(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_OEABHOACGMP(&mut self) -> super::IGKLJMIEAIJ::IGKLJMIEAIJ {
+        if self.has_OEABHOACGMP() {
+            match self.DKFKPIPNNLF.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::OEABHOACGMP(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::IGKLJMIEAIJ::IGKLJMIEAIJ::new()
+        }
+    }
+
+    // .IGKLJMIEAIJ HDIODGBGMFI = 1060;
+
+    pub fn HDIODGBGMFI(&self) -> &super::IGKLJMIEAIJ::IGKLJMIEAIJ {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HDIODGBGMFI(ref v)) => v,
+            _ => <super::IGKLJMIEAIJ::IGKLJMIEAIJ as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_HDIODGBGMFI(&mut self) {
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+    }
+
+    pub fn has_HDIODGBGMFI(&self) -> bool {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HDIODGBGMFI(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_HDIODGBGMFI(&mut self, v: super::IGKLJMIEAIJ::IGKLJMIEAIJ) {
+        self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HDIODGBGMFI(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_HDIODGBGMFI(&mut self) -> &mut super::IGKLJMIEAIJ::IGKLJMIEAIJ {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HDIODGBGMFI(_)) = self.DKFKPIPNNLF {
+        } else {
+            self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HDIODGBGMFI(super::IGKLJMIEAIJ::IGKLJMIEAIJ::new()));
+        }
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HDIODGBGMFI(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_HDIODGBGMFI(&mut self) -> super::IGKLJMIEAIJ::IGKLJMIEAIJ {
+        if self.has_HDIODGBGMFI() {
+            match self.DKFKPIPNNLF.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HDIODGBGMFI(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::IGKLJMIEAIJ::IGKLJMIEAIJ::new()
+        }
+    }
+
+    // .LDBCELODHMC OIHFPKGLJPP = 1560;
+
+    pub fn OIHFPKGLJPP(&self) -> &super::LDBCELODHMC::LDBCELODHMC {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::OIHFPKGLJPP(ref v)) => v,
+            _ => <super::LDBCELODHMC::LDBCELODHMC as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_OIHFPKGLJPP(&mut self) {
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+    }
+
+    pub fn has_OIHFPKGLJPP(&self) -> bool {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::OIHFPKGLJPP(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_OIHFPKGLJPP(&mut self, v: super::LDBCELODHMC::LDBCELODHMC) {
+        self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::OIHFPKGLJPP(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_OIHFPKGLJPP(&mut self) -> &mut super::LDBCELODHMC::LDBCELODHMC {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::OIHFPKGLJPP(_)) = self.DKFKPIPNNLF {
+        } else {
+            self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::OIHFPKGLJPP(super::LDBCELODHMC::LDBCELODHMC::new()));
+        }
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::OIHFPKGLJPP(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_OIHFPKGLJPP(&mut self) -> super::LDBCELODHMC::LDBCELODHMC {
+        if self.has_OIHFPKGLJPP() {
+            match self.DKFKPIPNNLF.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::OIHFPKGLJPP(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::LDBCELODHMC::LDBCELODHMC::new()
+        }
+    }
+
+    // .LDBCELODHMC LIHJGJNLALB = 214;
+
+    pub fn LIHJGJNLALB(&self) -> &super::LDBCELODHMC::LDBCELODHMC {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::LIHJGJNLALB(ref v)) => v,
+            _ => <super::LDBCELODHMC::LDBCELODHMC as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_LIHJGJNLALB(&mut self) {
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+    }
+
+    pub fn has_LIHJGJNLALB(&self) -> bool {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::LIHJGJNLALB(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_LIHJGJNLALB(&mut self, v: super::LDBCELODHMC::LDBCELODHMC) {
+        self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::LIHJGJNLALB(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_LIHJGJNLALB(&mut self) -> &mut super::LDBCELODHMC::LDBCELODHMC {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::LIHJGJNLALB(_)) = self.DKFKPIPNNLF {
+        } else {
+            self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::LIHJGJNLALB(super::LDBCELODHMC::LDBCELODHMC::new()));
+        }
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::LIHJGJNLALB(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_LIHJGJNLALB(&mut self) -> super::LDBCELODHMC::LDBCELODHMC {
+        if self.has_LIHJGJNLALB() {
+            match self.DKFKPIPNNLF.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::LIHJGJNLALB(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::LDBCELODHMC::LDBCELODHMC::new()
+        }
+    }
+
+    // .LDBCELODHMC AGGEOKJMHMN = 1066;
+
+    pub fn AGGEOKJMHMN(&self) -> &super::LDBCELODHMC::LDBCELODHMC {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AGGEOKJMHMN(ref v)) => v,
+            _ => <super::LDBCELODHMC::LDBCELODHMC as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_AGGEOKJMHMN(&mut self) {
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+    }
+
+    pub fn has_AGGEOKJMHMN(&self) -> bool {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AGGEOKJMHMN(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_AGGEOKJMHMN(&mut self, v: super::LDBCELODHMC::LDBCELODHMC) {
+        self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AGGEOKJMHMN(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_AGGEOKJMHMN(&mut self) -> &mut super::LDBCELODHMC::LDBCELODHMC {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AGGEOKJMHMN(_)) = self.DKFKPIPNNLF {
+        } else {
+            self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AGGEOKJMHMN(super::LDBCELODHMC::LDBCELODHMC::new()));
+        }
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AGGEOKJMHMN(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_AGGEOKJMHMN(&mut self) -> super::LDBCELODHMC::LDBCELODHMC {
+        if self.has_AGGEOKJMHMN() {
+            match self.DKFKPIPNNLF.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AGGEOKJMHMN(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::LDBCELODHMC::LDBCELODHMC::new()
+        }
+    }
+
+    // .AFLBELCPOMC JAMFEIGFCMA = 512;
+
+    pub fn JAMFEIGFCMA(&self) -> &super::AFLBELCPOMC::AFLBELCPOMC {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::JAMFEIGFCMA(ref v)) => v,
+            _ => <super::AFLBELCPOMC::AFLBELCPOMC as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_JAMFEIGFCMA(&mut self) {
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+    }
+
+    pub fn has_JAMFEIGFCMA(&self) -> bool {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::JAMFEIGFCMA(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_JAMFEIGFCMA(&mut self, v: super::AFLBELCPOMC::AFLBELCPOMC) {
+        self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::JAMFEIGFCMA(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_JAMFEIGFCMA(&mut self) -> &mut super::AFLBELCPOMC::AFLBELCPOMC {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::JAMFEIGFCMA(_)) = self.DKFKPIPNNLF {
+        } else {
+            self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::JAMFEIGFCMA(super::AFLBELCPOMC::AFLBELCPOMC::new()));
+        }
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::JAMFEIGFCMA(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_JAMFEIGFCMA(&mut self) -> super::AFLBELCPOMC::AFLBELCPOMC {
+        if self.has_JAMFEIGFCMA() {
+            match self.DKFKPIPNNLF.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::JAMFEIGFCMA(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::AFLBELCPOMC::AFLBELCPOMC::new()
+        }
+    }
+
+    // .HLGLPHAPMCL KMMNAOINBNP = 112471;
+
+    pub fn KMMNAOINBNP(&self) -> &super::HLGLPHAPMCL::HLGLPHAPMCL {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::KMMNAOINBNP(ref v)) => v,
+            _ => <super::HLGLPHAPMCL::HLGLPHAPMCL as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_KMMNAOINBNP(&mut self) {
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+    }
+
+    pub fn has_KMMNAOINBNP(&self) -> bool {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::KMMNAOINBNP(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_KMMNAOINBNP(&mut self, v: super::HLGLPHAPMCL::HLGLPHAPMCL) {
+        self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::KMMNAOINBNP(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_KMMNAOINBNP(&mut self) -> &mut super::HLGLPHAPMCL::HLGLPHAPMCL {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::KMMNAOINBNP(_)) = self.DKFKPIPNNLF {
+        } else {
+            self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::KMMNAOINBNP(super::HLGLPHAPMCL::HLGLPHAPMCL::new()));
+        }
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::KMMNAOINBNP(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_KMMNAOINBNP(&mut self) -> super::HLGLPHAPMCL::HLGLPHAPMCL {
+        if self.has_KMMNAOINBNP() {
+            match self.DKFKPIPNNLF.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::KMMNAOINBNP(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::HLGLPHAPMCL::HLGLPHAPMCL::new()
+        }
+    }
+
+    // .HGNCCBHGKME MFFNLCJJJID = 99577;
+
+    pub fn MFFNLCJJJID(&self) -> &super::HGNCCBHGKME::HGNCCBHGKME {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MFFNLCJJJID(ref v)) => v,
+            _ => <super::HGNCCBHGKME::HGNCCBHGKME as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_MFFNLCJJJID(&mut self) {
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+    }
+
+    pub fn has_MFFNLCJJJID(&self) -> bool {
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MFFNLCJJJID(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_MFFNLCJJJID(&mut self, v: super::HGNCCBHGKME::HGNCCBHGKME) {
+        self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MFFNLCJJJID(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_MFFNLCJJJID(&mut self) -> &mut super::HGNCCBHGKME::HGNCCBHGKME {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MFFNLCJJJID(_)) = self.DKFKPIPNNLF {
+        } else {
+            self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MFFNLCJJJID(super::HGNCCBHGKME::HGNCCBHGKME::new()));
+        }
+        match self.DKFKPIPNNLF {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MFFNLCJJJID(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_MFFNLCJJJID(&mut self) -> super::HGNCCBHGKME::HGNCCBHGKME {
+        if self.has_MFFNLCJJJID() {
+            match self.DKFKPIPNNLF.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MFFNLCJJJID(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::HGNCCBHGKME::HGNCCBHGKME::new()
         }
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(6);
+        let mut fields = ::std::vec::Vec::with_capacity(30);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueBuffSelectResult::RogueBuffSelectResult>(
-            "buff_select_result",
-            HandleRogueCommonPendingActionCsReq::has_buff_select_result,
-            HandleRogueCommonPendingActionCsReq::buff_select_result,
-            HandleRogueCommonPendingActionCsReq::mut_buff_select_result,
-            HandleRogueCommonPendingActionCsReq::set_buff_select_result,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueBuffRerollResult::RogueBuffRerollResult>(
-            "buff_reroll_select_result",
-            HandleRogueCommonPendingActionCsReq::has_buff_reroll_select_result,
-            HandleRogueCommonPendingActionCsReq::buff_reroll_select_result,
-            HandleRogueCommonPendingActionCsReq::mut_buff_reroll_select_result,
-            HandleRogueCommonPendingActionCsReq::set_buff_reroll_select_result,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueBuffReforgeSelectResult::RogueBuffReforgeSelectResult>(
-            "buff_reforge_select_result",
-            HandleRogueCommonPendingActionCsReq::has_buff_reforge_select_result,
-            HandleRogueCommonPendingActionCsReq::buff_reforge_select_result,
-            HandleRogueCommonPendingActionCsReq::mut_buff_reforge_select_result,
-            HandleRogueCommonPendingActionCsReq::set_buff_reforge_select_result,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueMiracleSelectResult::RogueMiracleSelectResult>(
-            "miracle_select_result",
-            HandleRogueCommonPendingActionCsReq::has_miracle_select_result,
-            HandleRogueCommonPendingActionCsReq::miracle_select_result,
-            HandleRogueCommonPendingActionCsReq::mut_miracle_select_result,
-            HandleRogueCommonPendingActionCsReq::set_miracle_select_result,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueBonusSelectResult::RogueBonusSelectResult>(
-            "bonus_select_result",
-            HandleRogueCommonPendingActionCsReq::has_bonus_select_result,
-            HandleRogueCommonPendingActionCsReq::bonus_select_result,
-            HandleRogueCommonPendingActionCsReq::mut_bonus_select_result,
-            HandleRogueCommonPendingActionCsReq::set_bonus_select_result,
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "queue_location",
-            |m: &HandleRogueCommonPendingActionCsReq| { &m.queue_location },
-            |m: &mut HandleRogueCommonPendingActionCsReq| { &mut m.queue_location },
+            "LODFDJGPEMN",
+            |m: &HandleRogueCommonPendingActionCsReq| { &m.LODFDJGPEMN },
+            |m: &mut HandleRogueCommonPendingActionCsReq| { &mut m.LODFDJGPEMN },
         ));
-        oneofs.push(handle_rogue_common_pending_action_cs_req::Action::generated_oneof_descriptor_data());
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ODGADHGEGPD::ODGADHGEGPD>(
+            "MEBMDEGGLDB",
+            HandleRogueCommonPendingActionCsReq::has_MEBMDEGGLDB,
+            HandleRogueCommonPendingActionCsReq::MEBMDEGGLDB,
+            HandleRogueCommonPendingActionCsReq::mut_MEBMDEGGLDB,
+            HandleRogueCommonPendingActionCsReq::set_MEBMDEGGLDB,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::EEPPFEODLPN::EEPPFEODLPN>(
+            "AECOKNOFGPO",
+            HandleRogueCommonPendingActionCsReq::has_AECOKNOFGPO,
+            HandleRogueCommonPendingActionCsReq::AECOKNOFGPO,
+            HandleRogueCommonPendingActionCsReq::mut_AECOKNOFGPO,
+            HandleRogueCommonPendingActionCsReq::set_AECOKNOFGPO,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GHJMKHCAPLE::GHJMKHCAPLE>(
+            "IABMLAHDAFO",
+            HandleRogueCommonPendingActionCsReq::has_IABMLAHDAFO,
+            HandleRogueCommonPendingActionCsReq::IABMLAHDAFO,
+            HandleRogueCommonPendingActionCsReq::mut_IABMLAHDAFO,
+            HandleRogueCommonPendingActionCsReq::set_IABMLAHDAFO,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GBMLHMCDPBP::GBMLHMCDPBP>(
+            "HCIGFCPPGLB",
+            HandleRogueCommonPendingActionCsReq::has_HCIGFCPPGLB,
+            HandleRogueCommonPendingActionCsReq::HCIGFCPPGLB,
+            HandleRogueCommonPendingActionCsReq::mut_HCIGFCPPGLB,
+            HandleRogueCommonPendingActionCsReq::set_HCIGFCPPGLB,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MLNLEPKOFDB::MLNLEPKOFDB>(
+            "MJFBFEACPBF",
+            HandleRogueCommonPendingActionCsReq::has_MJFBFEACPBF,
+            HandleRogueCommonPendingActionCsReq::MJFBFEACPBF,
+            HandleRogueCommonPendingActionCsReq::mut_MJFBFEACPBF,
+            HandleRogueCommonPendingActionCsReq::set_MJFBFEACPBF,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IDDEDGOENKP::IDDEDGOENKP>(
+            "FMOFFMKNGIK",
+            HandleRogueCommonPendingActionCsReq::has_FMOFFMKNGIK,
+            HandleRogueCommonPendingActionCsReq::FMOFFMKNGIK,
+            HandleRogueCommonPendingActionCsReq::mut_FMOFFMKNGIK,
+            HandleRogueCommonPendingActionCsReq::set_FMOFFMKNGIK,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LOMNOALJIAN::LOMNOALJIAN>(
+            "BJPJGLJFCLE",
+            HandleRogueCommonPendingActionCsReq::has_BJPJGLJFCLE,
+            HandleRogueCommonPendingActionCsReq::BJPJGLJFCLE,
+            HandleRogueCommonPendingActionCsReq::mut_BJPJGLJFCLE,
+            HandleRogueCommonPendingActionCsReq::set_BJPJGLJFCLE,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KMPOHDALDHA::KMPOHDALDHA>(
+            "ADNLJEFPDGA",
+            HandleRogueCommonPendingActionCsReq::has_ADNLJEFPDGA,
+            HandleRogueCommonPendingActionCsReq::ADNLJEFPDGA,
+            HandleRogueCommonPendingActionCsReq::mut_ADNLJEFPDGA,
+            HandleRogueCommonPendingActionCsReq::set_ADNLJEFPDGA,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::DFAFNDLFBLF::DFAFNDLFBLF>(
+            "NMFPJHLAHEL",
+            HandleRogueCommonPendingActionCsReq::has_NMFPJHLAHEL,
+            HandleRogueCommonPendingActionCsReq::NMFPJHLAHEL,
+            HandleRogueCommonPendingActionCsReq::mut_NMFPJHLAHEL,
+            HandleRogueCommonPendingActionCsReq::set_NMFPJHLAHEL,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ANGDGEIHHPG::ANGDGEIHHPG>(
+            "KJBFIFOMGDO",
+            HandleRogueCommonPendingActionCsReq::has_KJBFIFOMGDO,
+            HandleRogueCommonPendingActionCsReq::KJBFIFOMGDO,
+            HandleRogueCommonPendingActionCsReq::mut_KJBFIFOMGDO,
+            HandleRogueCommonPendingActionCsReq::set_KJBFIFOMGDO,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LOBLGOHDMAF::LOBLGOHDMAF>(
+            "DPJCFBFCNGF",
+            HandleRogueCommonPendingActionCsReq::has_DPJCFBFCNGF,
+            HandleRogueCommonPendingActionCsReq::DPJCFBFCNGF,
+            HandleRogueCommonPendingActionCsReq::mut_DPJCFBFCNGF,
+            HandleRogueCommonPendingActionCsReq::set_DPJCFBFCNGF,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IAOHGLNLNHM::IAOHGLNLNHM>(
+            "HIBIHIADOAD",
+            HandleRogueCommonPendingActionCsReq::has_HIBIHIADOAD,
+            HandleRogueCommonPendingActionCsReq::HIBIHIADOAD,
+            HandleRogueCommonPendingActionCsReq::mut_HIBIHIADOAD,
+            HandleRogueCommonPendingActionCsReq::set_HIBIHIADOAD,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NOEIGMCEGOI::NOEIGMCEGOI>(
+            "GLGFADAIBCF",
+            HandleRogueCommonPendingActionCsReq::has_GLGFADAIBCF,
+            HandleRogueCommonPendingActionCsReq::GLGFADAIBCF,
+            HandleRogueCommonPendingActionCsReq::mut_GLGFADAIBCF,
+            HandleRogueCommonPendingActionCsReq::set_GLGFADAIBCF,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JCEDKLHEEJI::JCEDKLHEEJI>(
+            "HDNGLJEDJAM",
+            HandleRogueCommonPendingActionCsReq::has_HDNGLJEDJAM,
+            HandleRogueCommonPendingActionCsReq::HDNGLJEDJAM,
+            HandleRogueCommonPendingActionCsReq::mut_HDNGLJEDJAM,
+            HandleRogueCommonPendingActionCsReq::set_HDNGLJEDJAM,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LKOEBDLAAOO::LKOEBDLAAOO>(
+            "EJMLOPFGJHM",
+            HandleRogueCommonPendingActionCsReq::has_EJMLOPFGJHM,
+            HandleRogueCommonPendingActionCsReq::EJMLOPFGJHM,
+            HandleRogueCommonPendingActionCsReq::mut_EJMLOPFGJHM,
+            HandleRogueCommonPendingActionCsReq::set_EJMLOPFGJHM,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JEPHNACILDJ::JEPHNACILDJ>(
+            "MHIGCBBGDPB",
+            HandleRogueCommonPendingActionCsReq::has_MHIGCBBGDPB,
+            HandleRogueCommonPendingActionCsReq::MHIGCBBGDPB,
+            HandleRogueCommonPendingActionCsReq::mut_MHIGCBBGDPB,
+            HandleRogueCommonPendingActionCsReq::set_MHIGCBBGDPB,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::DCLCNFBOOKH::DCLCNFBOOKH>(
+            "MBJEHCBGKFI",
+            HandleRogueCommonPendingActionCsReq::has_MBJEHCBGKFI,
+            HandleRogueCommonPendingActionCsReq::MBJEHCBGKFI,
+            HandleRogueCommonPendingActionCsReq::mut_MBJEHCBGKFI,
+            HandleRogueCommonPendingActionCsReq::set_MBJEHCBGKFI,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IGKLJMIEAIJ::IGKLJMIEAIJ>(
+            "GIMCCANEODD",
+            HandleRogueCommonPendingActionCsReq::has_GIMCCANEODD,
+            HandleRogueCommonPendingActionCsReq::GIMCCANEODD,
+            HandleRogueCommonPendingActionCsReq::mut_GIMCCANEODD,
+            HandleRogueCommonPendingActionCsReq::set_GIMCCANEODD,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::DNNIABNANIA::DNNIABNANIA>(
+            "AEFFIMIHEJE",
+            HandleRogueCommonPendingActionCsReq::has_AEFFIMIHEJE,
+            HandleRogueCommonPendingActionCsReq::AEFFIMIHEJE,
+            HandleRogueCommonPendingActionCsReq::mut_AEFFIMIHEJE,
+            HandleRogueCommonPendingActionCsReq::set_AEFFIMIHEJE,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CHBGHLCIELJ::CHBGHLCIELJ>(
+            "DNFGMFJANDO",
+            HandleRogueCommonPendingActionCsReq::has_DNFGMFJANDO,
+            HandleRogueCommonPendingActionCsReq::DNFGMFJANDO,
+            HandleRogueCommonPendingActionCsReq::mut_DNFGMFJANDO,
+            HandleRogueCommonPendingActionCsReq::set_DNFGMFJANDO,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IGKLJMIEAIJ::IGKLJMIEAIJ>(
+            "AGFBKJFDEDN",
+            HandleRogueCommonPendingActionCsReq::has_AGFBKJFDEDN,
+            HandleRogueCommonPendingActionCsReq::AGFBKJFDEDN,
+            HandleRogueCommonPendingActionCsReq::mut_AGFBKJFDEDN,
+            HandleRogueCommonPendingActionCsReq::set_AGFBKJFDEDN,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IGKLJMIEAIJ::IGKLJMIEAIJ>(
+            "OEABHOACGMP",
+            HandleRogueCommonPendingActionCsReq::has_OEABHOACGMP,
+            HandleRogueCommonPendingActionCsReq::OEABHOACGMP,
+            HandleRogueCommonPendingActionCsReq::mut_OEABHOACGMP,
+            HandleRogueCommonPendingActionCsReq::set_OEABHOACGMP,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IGKLJMIEAIJ::IGKLJMIEAIJ>(
+            "HDIODGBGMFI",
+            HandleRogueCommonPendingActionCsReq::has_HDIODGBGMFI,
+            HandleRogueCommonPendingActionCsReq::HDIODGBGMFI,
+            HandleRogueCommonPendingActionCsReq::mut_HDIODGBGMFI,
+            HandleRogueCommonPendingActionCsReq::set_HDIODGBGMFI,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LDBCELODHMC::LDBCELODHMC>(
+            "OIHFPKGLJPP",
+            HandleRogueCommonPendingActionCsReq::has_OIHFPKGLJPP,
+            HandleRogueCommonPendingActionCsReq::OIHFPKGLJPP,
+            HandleRogueCommonPendingActionCsReq::mut_OIHFPKGLJPP,
+            HandleRogueCommonPendingActionCsReq::set_OIHFPKGLJPP,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LDBCELODHMC::LDBCELODHMC>(
+            "LIHJGJNLALB",
+            HandleRogueCommonPendingActionCsReq::has_LIHJGJNLALB,
+            HandleRogueCommonPendingActionCsReq::LIHJGJNLALB,
+            HandleRogueCommonPendingActionCsReq::mut_LIHJGJNLALB,
+            HandleRogueCommonPendingActionCsReq::set_LIHJGJNLALB,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LDBCELODHMC::LDBCELODHMC>(
+            "AGGEOKJMHMN",
+            HandleRogueCommonPendingActionCsReq::has_AGGEOKJMHMN,
+            HandleRogueCommonPendingActionCsReq::AGGEOKJMHMN,
+            HandleRogueCommonPendingActionCsReq::mut_AGGEOKJMHMN,
+            HandleRogueCommonPendingActionCsReq::set_AGGEOKJMHMN,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AFLBELCPOMC::AFLBELCPOMC>(
+            "JAMFEIGFCMA",
+            HandleRogueCommonPendingActionCsReq::has_JAMFEIGFCMA,
+            HandleRogueCommonPendingActionCsReq::JAMFEIGFCMA,
+            HandleRogueCommonPendingActionCsReq::mut_JAMFEIGFCMA,
+            HandleRogueCommonPendingActionCsReq::set_JAMFEIGFCMA,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HLGLPHAPMCL::HLGLPHAPMCL>(
+            "KMMNAOINBNP",
+            HandleRogueCommonPendingActionCsReq::has_KMMNAOINBNP,
+            HandleRogueCommonPendingActionCsReq::KMMNAOINBNP,
+            HandleRogueCommonPendingActionCsReq::mut_KMMNAOINBNP,
+            HandleRogueCommonPendingActionCsReq::set_KMMNAOINBNP,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HGNCCBHGKME::HGNCCBHGKME>(
+            "MFFNLCJJJID",
+            HandleRogueCommonPendingActionCsReq::has_MFFNLCJJJID,
+            HandleRogueCommonPendingActionCsReq::MFFNLCJJJID,
+            HandleRogueCommonPendingActionCsReq::mut_MFFNLCJJJID,
+            HandleRogueCommonPendingActionCsReq::set_MFFNLCJJJID,
+        ));
+        oneofs.push(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HandleRogueCommonPendingActionCsReq>(
             "HandleRogueCommonPendingActionCsReq",
             fields,
@@ -356,23 +1700,95 @@ impl ::protobuf::Message for HandleRogueCommonPendingActionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                14722 => {
-                    self.action = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BuffSelectResult(is.read_message()?));
+                104 => {
+                    self.LODFDJGPEMN = is.read_uint32()?;
                 },
-                2410 => {
-                    self.action = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BuffRerollSelectResult(is.read_message()?));
+                9266 => {
+                    self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MEBMDEGGLDB(is.read_message()?));
                 },
-                7634 => {
-                    self.action = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BuffReforgeSelectResult(is.read_message()?));
+                15922 => {
+                    self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AECOKNOFGPO(is.read_message()?));
                 },
-                15042 => {
-                    self.action = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::MiracleSelectResult(is.read_message()?));
+                12370 => {
+                    self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::IABMLAHDAFO(is.read_message()?));
                 },
-                11042 => {
-                    self.action = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::Action::BonusSelectResult(is.read_message()?));
+                6946 => {
+                    self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HCIGFCPPGLB(is.read_message()?));
                 },
-                56 => {
-                    self.queue_location = is.read_uint32()?;
+                11890 => {
+                    self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MJFBFEACPBF(is.read_message()?));
+                },
+                1154 => {
+                    self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::FMOFFMKNGIK(is.read_message()?));
+                },
+                2634 => {
+                    self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::BJPJGLJFCLE(is.read_message()?));
+                },
+                11106 => {
+                    self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::ADNLJEFPDGA(is.read_message()?));
+                },
+                1762 => {
+                    self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::NMFPJHLAHEL(is.read_message()?));
+                },
+                3402 => {
+                    self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::KJBFIFOMGDO(is.read_message()?));
+                },
+                13442 => {
+                    self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::DPJCFBFCNGF(is.read_message()?));
+                },
+                554 => {
+                    self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HIBIHIADOAD(is.read_message()?));
+                },
+                5714 => {
+                    self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::GLGFADAIBCF(is.read_message()?));
+                },
+                15146 => {
+                    self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HDNGLJEDJAM(is.read_message()?));
+                },
+                11274 => {
+                    self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::EJMLOPFGJHM(is.read_message()?));
+                },
+                14370 => {
+                    self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MHIGCBBGDPB(is.read_message()?));
+                },
+                13906 => {
+                    self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MBJEHCBGKFI(is.read_message()?));
+                },
+                14882 => {
+                    self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::GIMCCANEODD(is.read_message()?));
+                },
+                13114 => {
+                    self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AEFFIMIHEJE(is.read_message()?));
+                },
+                8098 => {
+                    self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::DNFGMFJANDO(is.read_message()?));
+                },
+                11834 => {
+                    self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AGFBKJFDEDN(is.read_message()?));
+                },
+                13786 => {
+                    self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::OEABHOACGMP(is.read_message()?));
+                },
+                8482 => {
+                    self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HDIODGBGMFI(is.read_message()?));
+                },
+                12482 => {
+                    self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::OIHFPKGLJPP(is.read_message()?));
+                },
+                1714 => {
+                    self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::LIHJGJNLALB(is.read_message()?));
+                },
+                8530 => {
+                    self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AGGEOKJMHMN(is.read_message()?));
+                },
+                4098 => {
+                    self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::JAMFEIGFCMA(is.read_message()?));
+                },
+                899770 => {
+                    self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::KMMNAOINBNP(is.read_message()?));
+                },
+                796618 => {
+                    self.DKFKPIPNNLF = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MFFNLCJJJID(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -386,30 +1802,126 @@ impl ::protobuf::Message for HandleRogueCommonPendingActionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.queue_location != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.queue_location);
+        if self.LODFDJGPEMN != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.LODFDJGPEMN);
         }
-        if let ::std::option::Option::Some(ref v) = self.action {
+        if let ::std::option::Option::Some(ref v) = self.DKFKPIPNNLF {
             match v {
-                &handle_rogue_common_pending_action_cs_req::Action::BuffSelectResult(ref v) => {
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MEBMDEGGLDB(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_cs_req::Action::BuffRerollSelectResult(ref v) => {
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AECOKNOFGPO(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_cs_req::Action::BuffReforgeSelectResult(ref v) => {
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::IABMLAHDAFO(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_cs_req::Action::MiracleSelectResult(ref v) => {
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HCIGFCPPGLB(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_cs_req::Action::BonusSelectResult(ref v) => {
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MJFBFEACPBF(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::FMOFFMKNGIK(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::BJPJGLJFCLE(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::ADNLJEFPDGA(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::NMFPJHLAHEL(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::KJBFIFOMGDO(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::DPJCFBFCNGF(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HIBIHIADOAD(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::GLGFADAIBCF(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HDNGLJEDJAM(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::EJMLOPFGJHM(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MHIGCBBGDPB(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MBJEHCBGKFI(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::GIMCCANEODD(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AEFFIMIHEJE(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::DNFGMFJANDO(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AGFBKJFDEDN(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::OEABHOACGMP(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HDIODGBGMFI(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::OIHFPKGLJPP(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::LIHJGJNLALB(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AGGEOKJMHMN(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::JAMFEIGFCMA(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::KMMNAOINBNP(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 3 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MFFNLCJJJID(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 3 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
             };
         }
@@ -419,25 +1931,97 @@ impl ::protobuf::Message for HandleRogueCommonPendingActionCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.queue_location != 0 {
-            os.write_uint32(7, self.queue_location)?;
+        if self.LODFDJGPEMN != 0 {
+            os.write_uint32(13, self.LODFDJGPEMN)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.action {
+        if let ::std::option::Option::Some(ref v) = self.DKFKPIPNNLF {
             match v {
-                &handle_rogue_common_pending_action_cs_req::Action::BuffSelectResult(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1840, v, os)?;
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MEBMDEGGLDB(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1158, v, os)?;
                 },
-                &handle_rogue_common_pending_action_cs_req::Action::BuffRerollSelectResult(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(301, v, os)?;
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AECOKNOFGPO(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1990, v, os)?;
                 },
-                &handle_rogue_common_pending_action_cs_req::Action::BuffReforgeSelectResult(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(954, v, os)?;
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::IABMLAHDAFO(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1546, v, os)?;
                 },
-                &handle_rogue_common_pending_action_cs_req::Action::MiracleSelectResult(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1880, v, os)?;
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HCIGFCPPGLB(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(868, v, os)?;
                 },
-                &handle_rogue_common_pending_action_cs_req::Action::BonusSelectResult(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1380, v, os)?;
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MJFBFEACPBF(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1486, v, os)?;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::FMOFFMKNGIK(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(144, v, os)?;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::BJPJGLJFCLE(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(329, v, os)?;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::ADNLJEFPDGA(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1388, v, os)?;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::NMFPJHLAHEL(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(220, v, os)?;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::KJBFIFOMGDO(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(425, v, os)?;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::DPJCFBFCNGF(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1680, v, os)?;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HIBIHIADOAD(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(69, v, os)?;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::GLGFADAIBCF(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(714, v, os)?;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HDNGLJEDJAM(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1893, v, os)?;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::EJMLOPFGJHM(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1409, v, os)?;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MHIGCBBGDPB(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1796, v, os)?;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MBJEHCBGKFI(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1738, v, os)?;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::GIMCCANEODD(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1860, v, os)?;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AEFFIMIHEJE(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1639, v, os)?;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::DNFGMFJANDO(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1012, v, os)?;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AGFBKJFDEDN(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1479, v, os)?;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::OEABHOACGMP(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1723, v, os)?;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::HDIODGBGMFI(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1060, v, os)?;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::OIHFPKGLJPP(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1560, v, os)?;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::LIHJGJNLALB(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(214, v, os)?;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::AGGEOKJMHMN(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1066, v, os)?;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::JAMFEIGFCMA(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(512, v, os)?;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::KMMNAOINBNP(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(112471, v, os)?;
+                },
+                &handle_rogue_common_pending_action_cs_req::DKFKPIPNNLF::MFFNLCJJJID(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(99577, v, os)?;
                 },
             };
         }
@@ -458,19 +2042,43 @@ impl ::protobuf::Message for HandleRogueCommonPendingActionCsReq {
     }
 
     fn clear(&mut self) {
-        self.action = ::std::option::Option::None;
-        self.action = ::std::option::Option::None;
-        self.action = ::std::option::Option::None;
-        self.action = ::std::option::Option::None;
-        self.action = ::std::option::Option::None;
-        self.queue_location = 0;
+        self.LODFDJGPEMN = 0;
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+        self.DKFKPIPNNLF = ::std::option::Option::None;
+        self.DKFKPIPNNLF = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HandleRogueCommonPendingActionCsReq {
         static instance: HandleRogueCommonPendingActionCsReq = HandleRogueCommonPendingActionCsReq {
-            queue_location: 0,
-            action: ::std::option::Option::None,
+            LODFDJGPEMN: 0,
+            DKFKPIPNNLF: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -499,52 +2107,131 @@ pub mod handle_rogue_common_pending_action_cs_req {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:HandleRogueCommonPendingActionCsReq.action)
-    pub enum Action {
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.buff_select_result)
-        BuffSelectResult(super::super::RogueBuffSelectResult::RogueBuffSelectResult),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.buff_reroll_select_result)
-        BuffRerollSelectResult(super::super::RogueBuffRerollResult::RogueBuffRerollResult),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.buff_reforge_select_result)
-        BuffReforgeSelectResult(super::super::RogueBuffReforgeSelectResult::RogueBuffReforgeSelectResult),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.miracle_select_result)
-        MiracleSelectResult(super::super::RogueMiracleSelectResult::RogueMiracleSelectResult),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.bonus_select_result)
-        BonusSelectResult(super::super::RogueBonusSelectResult::RogueBonusSelectResult),
+    // @@protoc_insertion_point(oneof:HandleRogueCommonPendingActionCsReq.DKFKPIPNNLF)
+    pub enum DKFKPIPNNLF {
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.MEBMDEGGLDB)
+        MEBMDEGGLDB(super::super::ODGADHGEGPD::ODGADHGEGPD),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.AECOKNOFGPO)
+        AECOKNOFGPO(super::super::EEPPFEODLPN::EEPPFEODLPN),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.IABMLAHDAFO)
+        IABMLAHDAFO(super::super::GHJMKHCAPLE::GHJMKHCAPLE),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.HCIGFCPPGLB)
+        HCIGFCPPGLB(super::super::GBMLHMCDPBP::GBMLHMCDPBP),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.MJFBFEACPBF)
+        MJFBFEACPBF(super::super::MLNLEPKOFDB::MLNLEPKOFDB),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.FMOFFMKNGIK)
+        FMOFFMKNGIK(super::super::IDDEDGOENKP::IDDEDGOENKP),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.BJPJGLJFCLE)
+        BJPJGLJFCLE(super::super::LOMNOALJIAN::LOMNOALJIAN),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.ADNLJEFPDGA)
+        ADNLJEFPDGA(super::super::KMPOHDALDHA::KMPOHDALDHA),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.NMFPJHLAHEL)
+        NMFPJHLAHEL(super::super::DFAFNDLFBLF::DFAFNDLFBLF),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.KJBFIFOMGDO)
+        KJBFIFOMGDO(super::super::ANGDGEIHHPG::ANGDGEIHHPG),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.DPJCFBFCNGF)
+        DPJCFBFCNGF(super::super::LOBLGOHDMAF::LOBLGOHDMAF),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.HIBIHIADOAD)
+        HIBIHIADOAD(super::super::IAOHGLNLNHM::IAOHGLNLNHM),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.GLGFADAIBCF)
+        GLGFADAIBCF(super::super::NOEIGMCEGOI::NOEIGMCEGOI),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.HDNGLJEDJAM)
+        HDNGLJEDJAM(super::super::JCEDKLHEEJI::JCEDKLHEEJI),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.EJMLOPFGJHM)
+        EJMLOPFGJHM(super::super::LKOEBDLAAOO::LKOEBDLAAOO),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.MHIGCBBGDPB)
+        MHIGCBBGDPB(super::super::JEPHNACILDJ::JEPHNACILDJ),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.MBJEHCBGKFI)
+        MBJEHCBGKFI(super::super::DCLCNFBOOKH::DCLCNFBOOKH),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.GIMCCANEODD)
+        GIMCCANEODD(super::super::IGKLJMIEAIJ::IGKLJMIEAIJ),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.AEFFIMIHEJE)
+        AEFFIMIHEJE(super::super::DNNIABNANIA::DNNIABNANIA),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.DNFGMFJANDO)
+        DNFGMFJANDO(super::super::CHBGHLCIELJ::CHBGHLCIELJ),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.AGFBKJFDEDN)
+        AGFBKJFDEDN(super::super::IGKLJMIEAIJ::IGKLJMIEAIJ),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.OEABHOACGMP)
+        OEABHOACGMP(super::super::IGKLJMIEAIJ::IGKLJMIEAIJ),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.HDIODGBGMFI)
+        HDIODGBGMFI(super::super::IGKLJMIEAIJ::IGKLJMIEAIJ),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.OIHFPKGLJPP)
+        OIHFPKGLJPP(super::super::LDBCELODHMC::LDBCELODHMC),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.LIHJGJNLALB)
+        LIHJGJNLALB(super::super::LDBCELODHMC::LDBCELODHMC),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.AGGEOKJMHMN)
+        AGGEOKJMHMN(super::super::LDBCELODHMC::LDBCELODHMC),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.JAMFEIGFCMA)
+        JAMFEIGFCMA(super::super::AFLBELCPOMC::AFLBELCPOMC),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.KMMNAOINBNP)
+        KMMNAOINBNP(super::super::HLGLPHAPMCL::HLGLPHAPMCL),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.MFFNLCJJJID)
+        MFFNLCJJJID(super::super::HGNCCBHGKME::HGNCCBHGKME),
     }
 
-    impl ::protobuf::Oneof for Action {
+    impl ::protobuf::Oneof for DKFKPIPNNLF {
     }
 
-    impl ::protobuf::OneofFull for Action {
+    impl ::protobuf::OneofFull for DKFKPIPNNLF {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::HandleRogueCommonPendingActionCsReq as ::protobuf::MessageFull>::descriptor().oneof_by_name("action").unwrap()).clone()
+            descriptor.get(|| <super::HandleRogueCommonPendingActionCsReq as ::protobuf::MessageFull>::descriptor().oneof_by_name("DKFKPIPNNLF").unwrap()).clone()
         }
     }
 
-    impl Action {
+    impl DKFKPIPNNLF {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<Action>("action")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<DKFKPIPNNLF>("DKFKPIPNNLF")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n)HandleRogueCommonPendingActionCsReq.proto\x1a\x1eRogueMiracleSelectRe\
-    sult.proto\x1a\x1cRogueBonusSelectResult.proto\x1a\x1bRogueBuffSelectRes\
-    ult.proto\x1a\x1bRogueBuffRerollResult.proto\x1a\"RogueBuffReforgeSelect\
-    Result.proto\"\xf2\x03\n#HandleRogueCommonPendingActionCsReq\x12G\n\x12b\
-    uff_select_result\x18\xb0\x0e\x20\x01(\x0b2\x16.RogueBuffSelectResultH\0\
-    R\x10buffSelectResult\x12T\n\x19buff_reroll_select_result\x18\xad\x02\
-    \x20\x01(\x0b2\x16.RogueBuffRerollResultH\0R\x16buffRerollSelectResult\
-    \x12]\n\x1abuff_reforge_select_result\x18\xba\x07\x20\x01(\x0b2\x1d.Rogu\
-    eBuffReforgeSelectResultH\0R\x17buffReforgeSelectResult\x12P\n\x15miracl\
-    e_select_result\x18\xd8\x0e\x20\x01(\x0b2\x19.RogueMiracleSelectResultH\
-    \0R\x13miracleSelectResult\x12J\n\x13bonus_select_result\x18\xe4\n\x20\
-    \x01(\x0b2\x17.RogueBonusSelectResultH\0R\x11bonusSelectResult\x12%\n\
-    \x0equeue_location\x18\x07\x20\x01(\rR\rqueueLocationB\x08\n\x06actionB\
-    \x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n)HandleRogueCommonPendingActionCsReq.proto\x1a\x11AFLBELCPOMC.proto\
+    \x1a\x11ANGDGEIHHPG.proto\x1a\x11CHBGHLCIELJ.proto\x1a\x11DCLCNFBOOKH.pr\
+    oto\x1a\x11DFAFNDLFBLF.proto\x1a\x11DNNIABNANIA.proto\x1a\x11EEPPFEODLPN\
+    .proto\x1a\x11GBMLHMCDPBP.proto\x1a\x11GHJMKHCAPLE.proto\x1a\x11HGNCCBHG\
+    KME.proto\x1a\x11HLGLPHAPMCL.proto\x1a\x11IAOHGLNLNHM.proto\x1a\x11IDDED\
+    GOENKP.proto\x1a\x11IGKLJMIEAIJ.proto\x1a\x11JCEDKLHEEJI.proto\x1a\x11JE\
+    PHNACILDJ.proto\x1a\x11KMPOHDALDHA.proto\x1a\x11LDBCELODHMC.proto\x1a\
+    \x11LKOEBDLAAOO.proto\x1a\x11LOBLGOHDMAF.proto\x1a\x11LOMNOALJIAN.proto\
+    \x1a\x11MLNLEPKOFDB.proto\x1a\x11NOEIGMCEGOI.proto\x1a\x11ODGADHGEGPD.pr\
+    oto\"\x9e\x0c\n#HandleRogueCommonPendingActionCsReq\x12\x20\n\x0bLODFDJG\
+    PEMN\x18\r\x20\x01(\rR\x0bLODFDJGPEMN\x121\n\x0bMEBMDEGGLDB\x18\x86\t\
+    \x20\x01(\x0b2\x0c.ODGADHGEGPDH\0R\x0bMEBMDEGGLDB\x121\n\x0bAECOKNOFGPO\
+    \x18\xc6\x0f\x20\x01(\x0b2\x0c.EEPPFEODLPNH\0R\x0bAECOKNOFGPO\x121\n\x0b\
+    IABMLAHDAFO\x18\x8a\x0c\x20\x01(\x0b2\x0c.GHJMKHCAPLEH\0R\x0bIABMLAHDAFO\
+    \x121\n\x0bHCIGFCPPGLB\x18\xe4\x06\x20\x01(\x0b2\x0c.GBMLHMCDPBPH\0R\x0b\
+    HCIGFCPPGLB\x121\n\x0bMJFBFEACPBF\x18\xce\x0b\x20\x01(\x0b2\x0c.MLNLEPKO\
+    FDBH\0R\x0bMJFBFEACPBF\x121\n\x0bFMOFFMKNGIK\x18\x90\x01\x20\x01(\x0b2\
+    \x0c.IDDEDGOENKPH\0R\x0bFMOFFMKNGIK\x121\n\x0bBJPJGLJFCLE\x18\xc9\x02\
+    \x20\x01(\x0b2\x0c.LOMNOALJIANH\0R\x0bBJPJGLJFCLE\x121\n\x0bADNLJEFPDGA\
+    \x18\xec\n\x20\x01(\x0b2\x0c.KMPOHDALDHAH\0R\x0bADNLJEFPDGA\x121\n\x0bNM\
+    FPJHLAHEL\x18\xdc\x01\x20\x01(\x0b2\x0c.DFAFNDLFBLFH\0R\x0bNMFPJHLAHEL\
+    \x121\n\x0bKJBFIFOMGDO\x18\xa9\x03\x20\x01(\x0b2\x0c.ANGDGEIHHPGH\0R\x0b\
+    KJBFIFOMGDO\x121\n\x0bDPJCFBFCNGF\x18\x90\r\x20\x01(\x0b2\x0c.LOBLGOHDMA\
+    FH\0R\x0bDPJCFBFCNGF\x120\n\x0bHIBIHIADOAD\x18E\x20\x01(\x0b2\x0c.IAOHGL\
+    NLNHMH\0R\x0bHIBIHIADOAD\x121\n\x0bGLGFADAIBCF\x18\xca\x05\x20\x01(\x0b2\
+    \x0c.NOEIGMCEGOIH\0R\x0bGLGFADAIBCF\x121\n\x0bHDNGLJEDJAM\x18\xe5\x0e\
+    \x20\x01(\x0b2\x0c.JCEDKLHEEJIH\0R\x0bHDNGLJEDJAM\x121\n\x0bEJMLOPFGJHM\
+    \x18\x81\x0b\x20\x01(\x0b2\x0c.LKOEBDLAAOOH\0R\x0bEJMLOPFGJHM\x121\n\x0b\
+    MHIGCBBGDPB\x18\x84\x0e\x20\x01(\x0b2\x0c.JEPHNACILDJH\0R\x0bMHIGCBBGDPB\
+    \x121\n\x0bMBJEHCBGKFI\x18\xca\r\x20\x01(\x0b2\x0c.DCLCNFBOOKHH\0R\x0bMB\
+    JEHCBGKFI\x121\n\x0bGIMCCANEODD\x18\xc4\x0e\x20\x01(\x0b2\x0c.IGKLJMIEAI\
+    JH\0R\x0bGIMCCANEODD\x121\n\x0bAEFFIMIHEJE\x18\xe7\x0c\x20\x01(\x0b2\x0c\
+    .DNNIABNANIAH\0R\x0bAEFFIMIHEJE\x121\n\x0bDNFGMFJANDO\x18\xf4\x07\x20\
+    \x01(\x0b2\x0c.CHBGHLCIELJH\0R\x0bDNFGMFJANDO\x121\n\x0bAGFBKJFDEDN\x18\
+    \xc7\x0b\x20\x01(\x0b2\x0c.IGKLJMIEAIJH\0R\x0bAGFBKJFDEDN\x121\n\x0bOEAB\
+    HOACGMP\x18\xbb\r\x20\x01(\x0b2\x0c.IGKLJMIEAIJH\0R\x0bOEABHOACGMP\x121\
+    \n\x0bHDIODGBGMFI\x18\xa4\x08\x20\x01(\x0b2\x0c.IGKLJMIEAIJH\0R\x0bHDIOD\
+    GBGMFI\x121\n\x0bOIHFPKGLJPP\x18\x98\x0c\x20\x01(\x0b2\x0c.LDBCELODHMCH\
+    \0R\x0bOIHFPKGLJPP\x121\n\x0bLIHJGJNLALB\x18\xd6\x01\x20\x01(\x0b2\x0c.L\
+    DBCELODHMCH\0R\x0bLIHJGJNLALB\x121\n\x0bAGGEOKJMHMN\x18\xaa\x08\x20\x01(\
+    \x0b2\x0c.LDBCELODHMCH\0R\x0bAGGEOKJMHMN\x121\n\x0bJAMFEIGFCMA\x18\x80\
+    \x04\x20\x01(\x0b2\x0c.AFLBELCPOMCH\0R\x0bJAMFEIGFCMA\x122\n\x0bKMMNAOIN\
+    BNP\x18\xd7\xee\x06\x20\x01(\x0b2\x0c.HLGLPHAPMCLH\0R\x0bKMMNAOINBNP\x12\
+    2\n\x0bMFFNLCJJJID\x18\xf9\x89\x06\x20\x01(\x0b2\x0c.HGNCCBHGKMEH\0R\x0b\
+    MFFNLCJJJIDB\r\n\x0bDKFKPIPNNLFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -561,12 +2248,31 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(5);
-            deps.push(super::RogueMiracleSelectResult::file_descriptor().clone());
-            deps.push(super::RogueBonusSelectResult::file_descriptor().clone());
-            deps.push(super::RogueBuffSelectResult::file_descriptor().clone());
-            deps.push(super::RogueBuffRerollResult::file_descriptor().clone());
-            deps.push(super::RogueBuffReforgeSelectResult::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(24);
+            deps.push(super::AFLBELCPOMC::file_descriptor().clone());
+            deps.push(super::ANGDGEIHHPG::file_descriptor().clone());
+            deps.push(super::CHBGHLCIELJ::file_descriptor().clone());
+            deps.push(super::DCLCNFBOOKH::file_descriptor().clone());
+            deps.push(super::DFAFNDLFBLF::file_descriptor().clone());
+            deps.push(super::DNNIABNANIA::file_descriptor().clone());
+            deps.push(super::EEPPFEODLPN::file_descriptor().clone());
+            deps.push(super::GBMLHMCDPBP::file_descriptor().clone());
+            deps.push(super::GHJMKHCAPLE::file_descriptor().clone());
+            deps.push(super::HGNCCBHGKME::file_descriptor().clone());
+            deps.push(super::HLGLPHAPMCL::file_descriptor().clone());
+            deps.push(super::IAOHGLNLNHM::file_descriptor().clone());
+            deps.push(super::IDDEDGOENKP::file_descriptor().clone());
+            deps.push(super::IGKLJMIEAIJ::file_descriptor().clone());
+            deps.push(super::JCEDKLHEEJI::file_descriptor().clone());
+            deps.push(super::JEPHNACILDJ::file_descriptor().clone());
+            deps.push(super::KMPOHDALDHA::file_descriptor().clone());
+            deps.push(super::LDBCELODHMC::file_descriptor().clone());
+            deps.push(super::LKOEBDLAAOO::file_descriptor().clone());
+            deps.push(super::LOBLGOHDMAF::file_descriptor().clone());
+            deps.push(super::LOMNOALJIAN::file_descriptor().clone());
+            deps.push(super::MLNLEPKOFDB::file_descriptor().clone());
+            deps.push(super::NOEIGMCEGOI::file_descriptor().clone());
+            deps.push(super::ODGADHGEGPD::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(HandleRogueCommonPendingActionCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

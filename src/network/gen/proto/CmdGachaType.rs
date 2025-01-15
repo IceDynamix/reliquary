@@ -30,22 +30,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdGachaType {
     // @@protoc_insertion_point(enum_value:CmdGachaType.CmdGachaTypeNone)
     CmdGachaTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdGachaType.CmdGetGachaInfoScRsp)
-    CmdGetGachaInfoScRsp = 1920,
-    // @@protoc_insertion_point(enum_value:CmdGachaType.CmdGetGachaCeilingScRsp)
-    CmdGetGachaCeilingScRsp = 1953,
-    // @@protoc_insertion_point(enum_value:CmdGachaType.CmdExchangeGachaCeilingScRsp)
-    CmdExchangeGachaCeilingScRsp = 1937,
-    // @@protoc_insertion_point(enum_value:CmdGachaType.CmdDoGachaCsReq)
-    CmdDoGachaCsReq = 1903,
-    // @@protoc_insertion_point(enum_value:CmdGachaType.CmdExchangeGachaCeilingCsReq)
-    CmdExchangeGachaCeilingCsReq = 1934,
-    // @@protoc_insertion_point(enum_value:CmdGachaType.CmdDoGachaScRsp)
-    CmdDoGachaScRsp = 1946,
-    // @@protoc_insertion_point(enum_value:CmdGachaType.CmdGetGachaInfoCsReq)
-    CmdGetGachaInfoCsReq = 1959,
     // @@protoc_insertion_point(enum_value:CmdGachaType.CmdGetGachaCeilingCsReq)
-    CmdGetGachaCeilingCsReq = 1939,
+    CmdGetGachaCeilingCsReq = 1967,
+    // @@protoc_insertion_point(enum_value:CmdGachaType.CmdExchangeGachaCeilingCsReq)
+    CmdExchangeGachaCeilingCsReq = 1952,
+    // @@protoc_insertion_point(enum_value:CmdGachaType.CmdGetGachaInfoScRsp)
+    CmdGetGachaInfoScRsp = 1995,
+    // @@protoc_insertion_point(enum_value:CmdGachaType.CmdGetGachaCeilingScRsp)
+    CmdGetGachaCeilingScRsp = 1928,
+    // @@protoc_insertion_point(enum_value:CmdGachaType.CmdDoGachaScRsp)
+    CmdDoGachaScRsp = 1927,
+    // @@protoc_insertion_point(enum_value:CmdGachaType.CmdExchangeGachaCeilingScRsp)
+    CmdExchangeGachaCeilingScRsp = 1974,
+    // @@protoc_insertion_point(enum_value:CmdGachaType.CmdDoGachaCsReq)
+    CmdDoGachaCsReq = 1984,
+    // @@protoc_insertion_point(enum_value:CmdGachaType.CmdGetGachaInfoCsReq)
+    CmdGetGachaInfoCsReq = 1936,
 }
 
 impl ::protobuf::Enum for CmdGachaType {
@@ -58,14 +58,14 @@ impl ::protobuf::Enum for CmdGachaType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdGachaType> {
         match value {
             0 => ::std::option::Option::Some(CmdGachaType::CmdGachaTypeNone),
-            1920 => ::std::option::Option::Some(CmdGachaType::CmdGetGachaInfoScRsp),
-            1953 => ::std::option::Option::Some(CmdGachaType::CmdGetGachaCeilingScRsp),
-            1937 => ::std::option::Option::Some(CmdGachaType::CmdExchangeGachaCeilingScRsp),
-            1903 => ::std::option::Option::Some(CmdGachaType::CmdDoGachaCsReq),
-            1934 => ::std::option::Option::Some(CmdGachaType::CmdExchangeGachaCeilingCsReq),
-            1946 => ::std::option::Option::Some(CmdGachaType::CmdDoGachaScRsp),
-            1959 => ::std::option::Option::Some(CmdGachaType::CmdGetGachaInfoCsReq),
-            1939 => ::std::option::Option::Some(CmdGachaType::CmdGetGachaCeilingCsReq),
+            1967 => ::std::option::Option::Some(CmdGachaType::CmdGetGachaCeilingCsReq),
+            1952 => ::std::option::Option::Some(CmdGachaType::CmdExchangeGachaCeilingCsReq),
+            1995 => ::std::option::Option::Some(CmdGachaType::CmdGetGachaInfoScRsp),
+            1928 => ::std::option::Option::Some(CmdGachaType::CmdGetGachaCeilingScRsp),
+            1927 => ::std::option::Option::Some(CmdGachaType::CmdDoGachaScRsp),
+            1974 => ::std::option::Option::Some(CmdGachaType::CmdExchangeGachaCeilingScRsp),
+            1984 => ::std::option::Option::Some(CmdGachaType::CmdDoGachaCsReq),
+            1936 => ::std::option::Option::Some(CmdGachaType::CmdGetGachaInfoCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -73,28 +73,28 @@ impl ::protobuf::Enum for CmdGachaType {
     fn from_str(str: &str) -> ::std::option::Option<CmdGachaType> {
         match str {
             "CmdGachaTypeNone" => ::std::option::Option::Some(CmdGachaType::CmdGachaTypeNone),
+            "CmdGetGachaCeilingCsReq" => ::std::option::Option::Some(CmdGachaType::CmdGetGachaCeilingCsReq),
+            "CmdExchangeGachaCeilingCsReq" => ::std::option::Option::Some(CmdGachaType::CmdExchangeGachaCeilingCsReq),
             "CmdGetGachaInfoScRsp" => ::std::option::Option::Some(CmdGachaType::CmdGetGachaInfoScRsp),
             "CmdGetGachaCeilingScRsp" => ::std::option::Option::Some(CmdGachaType::CmdGetGachaCeilingScRsp),
+            "CmdDoGachaScRsp" => ::std::option::Option::Some(CmdGachaType::CmdDoGachaScRsp),
             "CmdExchangeGachaCeilingScRsp" => ::std::option::Option::Some(CmdGachaType::CmdExchangeGachaCeilingScRsp),
             "CmdDoGachaCsReq" => ::std::option::Option::Some(CmdGachaType::CmdDoGachaCsReq),
-            "CmdExchangeGachaCeilingCsReq" => ::std::option::Option::Some(CmdGachaType::CmdExchangeGachaCeilingCsReq),
-            "CmdDoGachaScRsp" => ::std::option::Option::Some(CmdGachaType::CmdDoGachaScRsp),
             "CmdGetGachaInfoCsReq" => ::std::option::Option::Some(CmdGachaType::CmdGetGachaInfoCsReq),
-            "CmdGetGachaCeilingCsReq" => ::std::option::Option::Some(CmdGachaType::CmdGetGachaCeilingCsReq),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdGachaType] = &[
         CmdGachaType::CmdGachaTypeNone,
+        CmdGachaType::CmdGetGachaCeilingCsReq,
+        CmdGachaType::CmdExchangeGachaCeilingCsReq,
         CmdGachaType::CmdGetGachaInfoScRsp,
         CmdGachaType::CmdGetGachaCeilingScRsp,
+        CmdGachaType::CmdDoGachaScRsp,
         CmdGachaType::CmdExchangeGachaCeilingScRsp,
         CmdGachaType::CmdDoGachaCsReq,
-        CmdGachaType::CmdExchangeGachaCeilingCsReq,
-        CmdGachaType::CmdDoGachaScRsp,
         CmdGachaType::CmdGetGachaInfoCsReq,
-        CmdGachaType::CmdGetGachaCeilingCsReq,
     ];
 }
 
@@ -107,14 +107,14 @@ impl ::protobuf::EnumFull for CmdGachaType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdGachaType::CmdGachaTypeNone => 0,
-            CmdGachaType::CmdGetGachaInfoScRsp => 1,
-            CmdGachaType::CmdGetGachaCeilingScRsp => 2,
-            CmdGachaType::CmdExchangeGachaCeilingScRsp => 3,
-            CmdGachaType::CmdDoGachaCsReq => 4,
-            CmdGachaType::CmdExchangeGachaCeilingCsReq => 5,
-            CmdGachaType::CmdDoGachaScRsp => 6,
-            CmdGachaType::CmdGetGachaInfoCsReq => 7,
-            CmdGachaType::CmdGetGachaCeilingCsReq => 8,
+            CmdGachaType::CmdGetGachaCeilingCsReq => 1,
+            CmdGachaType::CmdExchangeGachaCeilingCsReq => 2,
+            CmdGachaType::CmdGetGachaInfoScRsp => 3,
+            CmdGachaType::CmdGetGachaCeilingScRsp => 4,
+            CmdGachaType::CmdDoGachaScRsp => 5,
+            CmdGachaType::CmdExchangeGachaCeilingScRsp => 6,
+            CmdGachaType::CmdDoGachaCsReq => 7,
+            CmdGachaType::CmdGetGachaInfoCsReq => 8,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -134,12 +134,12 @@ impl CmdGachaType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12CmdGachaType.proto*\x88\x02\n\x0cCmdGachaType\x12\x14\n\x10CmdGach\
-    aTypeNone\x10\0\x12\x19\n\x14CmdGetGachaInfoScRsp\x10\x80\x0f\x12\x1c\n\
-    \x17CmdGetGachaCeilingScRsp\x10\xa1\x0f\x12!\n\x1cCmdExchangeGachaCeilin\
-    gScRsp\x10\x91\x0f\x12\x14\n\x0fCmdDoGachaCsReq\x10\xef\x0e\x12!\n\x1cCm\
-    dExchangeGachaCeilingCsReq\x10\x8e\x0f\x12\x14\n\x0fCmdDoGachaScRsp\x10\
-    \x9a\x0f\x12\x19\n\x14CmdGetGachaInfoCsReq\x10\xa7\x0f\x12\x1c\n\x17CmdG\
-    etGachaCeilingCsReq\x10\x93\x0fb\x06proto3\
+    aTypeNone\x10\0\x12\x1c\n\x17CmdGetGachaCeilingCsReq\x10\xaf\x0f\x12!\n\
+    \x1cCmdExchangeGachaCeilingCsReq\x10\xa0\x0f\x12\x19\n\x14CmdGetGachaInf\
+    oScRsp\x10\xcb\x0f\x12\x1c\n\x17CmdGetGachaCeilingScRsp\x10\x88\x0f\x12\
+    \x14\n\x0fCmdDoGachaScRsp\x10\x87\x0f\x12!\n\x1cCmdExchangeGachaCeilingS\
+    cRsp\x10\xb6\x0f\x12\x14\n\x0fCmdDoGachaCsReq\x10\xc0\x0f\x12\x19\n\x14C\
+    mdGetGachaInfoCsReq\x10\x90\x0fb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
