@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneEntityMoveCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SceneEntityMoveCsReq.entry_id)
-    pub entry_id: u32,
-    // @@protoc_insertion_point(field:SceneEntityMoveCsReq.CLENBGIJACP)
-    pub CLENBGIJACP: u64,
-    // @@protoc_insertion_point(field:SceneEntityMoveCsReq.entity_motion_list)
-    pub entity_motion_list: ::std::vec::Vec<super::EntityMotion::EntityMotion>,
+    // @@protoc_insertion_point(field:SceneEntityMoveCsReq.PHBPBGIJEKG)
+    pub PHBPBGIJEKG: u32,
+    // @@protoc_insertion_point(field:SceneEntityMoveCsReq.DCMNCGDJOBJ)
+    pub DCMNCGDJOBJ: u64,
+    // @@protoc_insertion_point(field:SceneEntityMoveCsReq.BEJKFHBIION)
+    pub BEJKFHBIION: ::std::vec::Vec<super::HJMLDBKEGCN::HJMLDBKEGCN>,
     // special fields
     // @@protoc_insertion_point(special_field:SceneEntityMoveCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl SceneEntityMoveCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "entry_id",
-            |m: &SceneEntityMoveCsReq| { &m.entry_id },
-            |m: &mut SceneEntityMoveCsReq| { &mut m.entry_id },
+            "PHBPBGIJEKG",
+            |m: &SceneEntityMoveCsReq| { &m.PHBPBGIJEKG },
+            |m: &mut SceneEntityMoveCsReq| { &mut m.PHBPBGIJEKG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CLENBGIJACP",
-            |m: &SceneEntityMoveCsReq| { &m.CLENBGIJACP },
-            |m: &mut SceneEntityMoveCsReq| { &mut m.CLENBGIJACP },
+            "DCMNCGDJOBJ",
+            |m: &SceneEntityMoveCsReq| { &m.DCMNCGDJOBJ },
+            |m: &mut SceneEntityMoveCsReq| { &mut m.DCMNCGDJOBJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "entity_motion_list",
-            |m: &SceneEntityMoveCsReq| { &m.entity_motion_list },
-            |m: &mut SceneEntityMoveCsReq| { &mut m.entity_motion_list },
+            "BEJKFHBIION",
+            |m: &SceneEntityMoveCsReq| { &m.BEJKFHBIION },
+            |m: &mut SceneEntityMoveCsReq| { &mut m.BEJKFHBIION },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SceneEntityMoveCsReq>(
             "SceneEntityMoveCsReq",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for SceneEntityMoveCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.entry_id = is.read_uint32()?;
+                64 => {
+                    self.PHBPBGIJEKG = is.read_uint32()?;
                 },
                 120 => {
-                    self.CLENBGIJACP = is.read_uint64()?;
+                    self.DCMNCGDJOBJ = is.read_uint64()?;
                 },
-                114 => {
-                    self.entity_motion_list.push(is.read_message()?);
+                74 => {
+                    self.BEJKFHBIION.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for SceneEntityMoveCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.entry_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.entry_id);
+        if self.PHBPBGIJEKG != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.PHBPBGIJEKG);
         }
-        if self.CLENBGIJACP != 0 {
-            my_size += ::protobuf::rt::uint64_size(15, self.CLENBGIJACP);
+        if self.DCMNCGDJOBJ != 0 {
+            my_size += ::protobuf::rt::uint64_size(15, self.DCMNCGDJOBJ);
         }
-        for value in &self.entity_motion_list {
+        for value in &self.BEJKFHBIION {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -124,14 +124,14 @@ impl ::protobuf::Message for SceneEntityMoveCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.entry_id != 0 {
-            os.write_uint32(1, self.entry_id)?;
+        if self.PHBPBGIJEKG != 0 {
+            os.write_uint32(8, self.PHBPBGIJEKG)?;
         }
-        if self.CLENBGIJACP != 0 {
-            os.write_uint64(15, self.CLENBGIJACP)?;
+        if self.DCMNCGDJOBJ != 0 {
+            os.write_uint64(15, self.DCMNCGDJOBJ)?;
         }
-        for v in &self.entity_motion_list {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        for v in &self.BEJKFHBIION {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for SceneEntityMoveCsReq {
     }
 
     fn clear(&mut self) {
-        self.entry_id = 0;
-        self.CLENBGIJACP = 0;
-        self.entity_motion_list.clear();
+        self.PHBPBGIJEKG = 0;
+        self.DCMNCGDJOBJ = 0;
+        self.BEJKFHBIION.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneEntityMoveCsReq {
         static instance: SceneEntityMoveCsReq = SceneEntityMoveCsReq {
-            entry_id: 0,
-            CLENBGIJACP: 0,
-            entity_motion_list: ::std::vec::Vec::new(),
+            PHBPBGIJEKG: 0,
+            DCMNCGDJOBJ: 0,
+            BEJKFHBIION: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for SceneEntityMoveCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aSceneEntityMoveCsReq.proto\x1a\x12EntityMotion.proto\"\x90\x01\n\
-    \x14SceneEntityMoveCsReq\x12\x19\n\x08entry_id\x18\x01\x20\x01(\rR\x07en\
-    tryId\x12\x20\n\x0bCLENBGIJACP\x18\x0f\x20\x01(\x04R\x0bCLENBGIJACP\x12;\
-    \n\x12entity_motion_list\x18\x0e\x20\x03(\x0b2\r.EntityMotionR\x10entity\
-    MotionListB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x1aSceneEntityMoveCsReq.proto\x1a\x11HJMLDBKEGCN.proto\"\x8a\x01\n\
+    \x14SceneEntityMoveCsReq\x12\x20\n\x0bPHBPBGIJEKG\x18\x08\x20\x01(\rR\
+    \x0bPHBPBGIJEKG\x12\x20\n\x0bDCMNCGDJOBJ\x18\x0f\x20\x01(\x04R\x0bDCMNCG\
+    DJOBJ\x12.\n\x0bBEJKFHBIION\x18\t\x20\x03(\x0b2\x0c.HJMLDBKEGCNR\x0bBEJK\
+    FHBIIONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::EntityMotion::file_descriptor().clone());
+            deps.push(super::HJMLDBKEGCN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SceneEntityMoveCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

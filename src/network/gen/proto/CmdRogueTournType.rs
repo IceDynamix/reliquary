@@ -31,115 +31,115 @@ pub enum CmdRogueTournType {
     // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournTypeNone)
     CmdRogueTournTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournDeleteArchiveScRsp)
-    CmdRogueTournDeleteArchiveScRsp = 6058,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetArchiveRepositoryCsReq)
-    CmdRogueTournGetArchiveRepositoryCsReq = 6079,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournReviveCostUpdateScNotify)
-    CmdRogueTournReviveCostUpdateScNotify = 6037,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetAllArchiveScRsp)
-    CmdRogueTournGetAllArchiveScRsp = 6019,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetMiscRealTimeDataScRsp)
-    CmdRogueTournGetMiscRealTimeDataScRsp = 6076,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournLeaveRogueCocoonSceneScRsp)
-    CmdRogueTournLeaveRogueCocoonSceneScRsp = 6047,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournResetPermanentTalentScRsp)
-    CmdRogueTournResetPermanentTalentScRsp = 6087,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournEnterScRsp)
-    CmdRogueTournEnterScRsp = 6066,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournEnablePermanentTalentScRsp)
-    CmdRogueTournEnablePermanentTalentScRsp = 6094,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournEnterRoomScRsp)
-    CmdRogueTournEnterRoomScRsp = 6044,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetSettleInfoScRsp)
-    CmdRogueTournGetSettleInfoScRsp = 6022,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournTakeExpRewardCsReq)
-    CmdRogueTournTakeExpRewardCsReq = 6063,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournDeleteArchiveCsReq)
-    CmdRogueTournDeleteArchiveCsReq = 6023,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournReviveAvatarCsReq)
-    CmdRogueTournReviveAvatarCsReq = 6100,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournStartCsReq)
-    CmdRogueTournStartCsReq = 6081,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetSettleInfoCsReq)
-    CmdRogueTournGetSettleInfoCsReq = 6034,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournReEnterRogueCocoonStageCsReq)
-    CmdRogueTournReEnterRogueCocoonStageCsReq = 6024,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournEnterLayerScRsp)
-    CmdRogueTournEnterLayerScRsp = 6053,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournQueryScRsp)
-    CmdRogueTournQueryScRsp = 6029,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournEnablePermanentTalentCsReq)
-    CmdRogueTournEnablePermanentTalentCsReq = 6043,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournLeaveRogueCocoonSceneCsReq)
-    CmdRogueTournLeaveRogueCocoonSceneCsReq = 6069,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournLevelInfoUpdateScNotify)
-    CmdRogueTournLevelInfoUpdateScNotify = 6083,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournReviveAvatarScRsp)
-    CmdRogueTournReviveAvatarScRsp = 6035,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetPermanentTalentInfoCsReq)
-    CmdRogueTournGetPermanentTalentInfoCsReq = 6036,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournEnterRogueCocoonSceneCsReq)
-    CmdRogueTournEnterRogueCocoonSceneCsReq = 6056,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetPermanentTalentInfoScRsp)
-    CmdRogueTournGetPermanentTalentInfoScRsp = 6085,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournReEnterRogueCocoonStageScRsp)
-    CmdRogueTournReEnterRogueCocoonStageScRsp = 6033,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournQueryCsReq)
-    CmdRogueTournQueryCsReq = 6055,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournConfirmSettleScRsp)
-    CmdRogueTournConfirmSettleScRsp = 6042,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournLeaveScRsp)
-    CmdRogueTournLeaveScRsp = 6078,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournSettleScRsp)
-    CmdRogueTournSettleScRsp = 6040,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournResetPermanentTalentCsReq)
-    CmdRogueTournResetPermanentTalentCsReq = 6075,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournClearArchiveNameScNotify)
-    CmdRogueTournClearArchiveNameScNotify = 6086,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournDifficultyCompNotify)
-    CmdRogueTournDifficultyCompNotify = 6025,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournAreaUpdateScNotify)
-    CmdRogueTournAreaUpdateScNotify = 6039,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournRenameArchiveScRsp)
-    CmdRogueTournRenameArchiveScRsp = 6061,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournExpNotify)
-    CmdRogueTournExpNotify = 6032,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetArchiveRepositoryScRsp)
-    CmdRogueTournGetArchiveRepositoryScRsp = 6072,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournHandBookNotify)
-    CmdRogueTournHandBookNotify = 6012,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournRenameArchiveCsReq)
-    CmdRogueTournRenameArchiveCsReq = 6017,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournTakeExpRewardScRsp)
-    CmdRogueTournTakeExpRewardScRsp = 6057,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournBattleFailSettleInfoScNotify)
-    CmdRogueTournBattleFailSettleInfoScNotify = 6048,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournConfirmSettleCsReq)
-    CmdRogueTournConfirmSettleCsReq = 6082,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournLeaveCsReq)
-    CmdRogueTournLeaveCsReq = 6016,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournWeekChallengeUpdateScNotify)
-    CmdRogueTournWeekChallengeUpdateScNotify = 6088,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetAllArchiveCsReq)
-    CmdRogueTournGetAllArchiveCsReq = 6020,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournEnterLayerCsReq)
-    CmdRogueTournEnterLayerCsReq = 6049,
+    CmdRogueTournDeleteArchiveScRsp = 6077,
     // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournEnterRoomCsReq)
-    CmdRogueTournEnterRoomCsReq = 6030,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournSettleCsReq)
-    CmdRogueTournSettleCsReq = 6046,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournEnterRogueCocoonSceneScRsp)
-    CmdRogueTournEnterRogueCocoonSceneScRsp = 6071,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetMiscRealTimeDataCsReq)
-    CmdRogueTournGetMiscRealTimeDataCsReq = 6041,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetCurRogueCocoonInfoScRsp)
-    CmdRogueTournGetCurRogueCocoonInfoScRsp = 6073,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournEnterCsReq)
-    CmdRogueTournEnterCsReq = 6026,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetCurRogueCocoonInfoCsReq)
-    CmdRogueTournGetCurRogueCocoonInfoCsReq = 6045,
+    CmdRogueTournEnterRoomCsReq = 6044,
     // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournStartScRsp)
-    CmdRogueTournStartScRsp = 6080,
+    CmdRogueTournStartScRsp = 6027,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournEnablePermanentTalentScRsp)
+    CmdRogueTournEnablePermanentTalentScRsp = 6045,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetArchiveRepositoryCsReq)
+    CmdRogueTournGetArchiveRepositoryCsReq = 6043,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournReEnterRogueCocoonStageCsReq)
+    CmdRogueTournReEnterRogueCocoonStageCsReq = 6082,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournResetPermanentTalentCsReq)
+    CmdRogueTournResetPermanentTalentCsReq = 6020,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetSettleInfoScRsp)
+    CmdRogueTournGetSettleInfoScRsp = 6055,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournClearArchiveNameScNotify)
+    CmdRogueTournClearArchiveNameScNotify = 6068,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetAllArchiveScRsp)
+    CmdRogueTournGetAllArchiveScRsp = 6022,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournLeaveRogueCocoonSceneCsReq)
+    CmdRogueTournLeaveRogueCocoonSceneCsReq = 6028,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournEnterRogueCocoonSceneCsReq)
+    CmdRogueTournEnterRogueCocoonSceneCsReq = 6057,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournQueryCsReq)
+    CmdRogueTournQueryCsReq = 6053,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournDifficultyCompNotify)
+    CmdRogueTournDifficultyCompNotify = 6086,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournTakeExpRewardCsReq)
+    CmdRogueTournTakeExpRewardCsReq = 6023,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournResetPermanentTalentScRsp)
+    CmdRogueTournResetPermanentTalentScRsp = 6015,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetArchiveRepositoryScRsp)
+    CmdRogueTournGetArchiveRepositoryScRsp = 6026,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournEnterScRsp)
+    CmdRogueTournEnterScRsp = 6069,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournTakeExpRewardScRsp)
+    CmdRogueTournTakeExpRewardScRsp = 6078,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetCurRogueCocoonInfoScRsp)
+    CmdRogueTournGetCurRogueCocoonInfoScRsp = 6092,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetSettleInfoCsReq)
+    CmdRogueTournGetSettleInfoCsReq = 6060,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournHandBookNotify)
+    CmdRogueTournHandBookNotify = 6032,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournLeaveScRsp)
+    CmdRogueTournLeaveScRsp = 6097,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournWeekChallengeUpdateScNotify)
+    CmdRogueTournWeekChallengeUpdateScNotify = 6050,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournReEnterRogueCocoonStageScRsp)
+    CmdRogueTournReEnterRogueCocoonStageScRsp = 6083,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournBattleFailSettleInfoScNotify)
+    CmdRogueTournBattleFailSettleInfoScNotify = 6018,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetMiscRealTimeDataCsReq)
+    CmdRogueTournGetMiscRealTimeDataCsReq = 6099,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetAllArchiveCsReq)
+    CmdRogueTournGetAllArchiveCsReq = 6037,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournEnterRoomScRsp)
+    CmdRogueTournEnterRoomScRsp = 6036,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetMiscRealTimeDataScRsp)
+    CmdRogueTournGetMiscRealTimeDataScRsp = 6040,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournSettleScRsp)
+    CmdRogueTournSettleScRsp = 6074,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournEnterCsReq)
+    CmdRogueTournEnterCsReq = 6100,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournLevelInfoUpdateScNotify)
+    CmdRogueTournLevelInfoUpdateScNotify = 6029,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournEnablePermanentTalentCsReq)
+    CmdRogueTournEnablePermanentTalentCsReq = 6089,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournSettleCsReq)
+    CmdRogueTournSettleCsReq = 6075,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetCurRogueCocoonInfoCsReq)
+    CmdRogueTournGetCurRogueCocoonInfoCsReq = 6094,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetPermanentTalentInfoCsReq)
+    CmdRogueTournGetPermanentTalentInfoCsReq = 6058,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetPermanentTalentInfoScRsp)
+    CmdRogueTournGetPermanentTalentInfoScRsp = 6046,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournExpNotify)
+    CmdRogueTournExpNotify = 6051,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournReviveAvatarScRsp)
+    CmdRogueTournReviveAvatarScRsp = 6079,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournConfirmSettleScRsp)
+    CmdRogueTournConfirmSettleScRsp = 6013,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournConfirmSettleCsReq)
+    CmdRogueTournConfirmSettleCsReq = 6085,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournDeleteArchiveCsReq)
+    CmdRogueTournDeleteArchiveCsReq = 6070,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournLeaveRogueCocoonSceneScRsp)
+    CmdRogueTournLeaveRogueCocoonSceneScRsp = 6021,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournEnterRogueCocoonSceneScRsp)
+    CmdRogueTournEnterRogueCocoonSceneScRsp = 6065,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournQueryScRsp)
+    CmdRogueTournQueryScRsp = 6093,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournLeaveCsReq)
+    CmdRogueTournLeaveCsReq = 6047,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournRenameArchiveScRsp)
+    CmdRogueTournRenameArchiveScRsp = 6031,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournEnterLayerScRsp)
+    CmdRogueTournEnterLayerScRsp = 6038,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournStartCsReq)
+    CmdRogueTournStartCsReq = 6059,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournReviveAvatarCsReq)
+    CmdRogueTournReviveAvatarCsReq = 6063,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournRenameArchiveCsReq)
+    CmdRogueTournRenameArchiveCsReq = 6090,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournAreaUpdateScNotify)
+    CmdRogueTournAreaUpdateScNotify = 6080,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournReviveCostUpdateScNotify)
+    CmdRogueTournReviveCostUpdateScNotify = 6039,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournEnterLayerCsReq)
+    CmdRogueTournEnterLayerCsReq = 6095,
 }
 
 impl ::protobuf::Enum for CmdRogueTournType {
@@ -152,61 +152,61 @@ impl ::protobuf::Enum for CmdRogueTournType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdRogueTournType> {
         match value {
             0 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournTypeNone),
-            6058 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournDeleteArchiveScRsp),
-            6079 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetArchiveRepositoryCsReq),
-            6037 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournReviveCostUpdateScNotify),
-            6019 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetAllArchiveScRsp),
-            6076 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetMiscRealTimeDataScRsp),
-            6047 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournLeaveRogueCocoonSceneScRsp),
-            6087 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournResetPermanentTalentScRsp),
-            6066 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterScRsp),
-            6094 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnablePermanentTalentScRsp),
-            6044 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterRoomScRsp),
-            6022 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetSettleInfoScRsp),
-            6063 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournTakeExpRewardCsReq),
-            6023 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournDeleteArchiveCsReq),
-            6100 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournReviveAvatarCsReq),
-            6081 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournStartCsReq),
-            6034 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetSettleInfoCsReq),
-            6024 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournReEnterRogueCocoonStageCsReq),
-            6053 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterLayerScRsp),
-            6029 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournQueryScRsp),
-            6043 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnablePermanentTalentCsReq),
-            6069 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournLeaveRogueCocoonSceneCsReq),
-            6083 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournLevelInfoUpdateScNotify),
-            6035 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournReviveAvatarScRsp),
-            6036 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetPermanentTalentInfoCsReq),
-            6056 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterRogueCocoonSceneCsReq),
-            6085 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetPermanentTalentInfoScRsp),
-            6033 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournReEnterRogueCocoonStageScRsp),
-            6055 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournQueryCsReq),
-            6042 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournConfirmSettleScRsp),
-            6078 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournLeaveScRsp),
-            6040 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournSettleScRsp),
-            6075 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournResetPermanentTalentCsReq),
-            6086 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournClearArchiveNameScNotify),
-            6025 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournDifficultyCompNotify),
-            6039 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournAreaUpdateScNotify),
-            6061 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournRenameArchiveScRsp),
-            6032 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournExpNotify),
-            6072 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetArchiveRepositoryScRsp),
-            6012 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournHandBookNotify),
-            6017 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournRenameArchiveCsReq),
-            6057 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournTakeExpRewardScRsp),
-            6048 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournBattleFailSettleInfoScNotify),
-            6082 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournConfirmSettleCsReq),
-            6016 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournLeaveCsReq),
-            6088 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournWeekChallengeUpdateScNotify),
-            6020 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetAllArchiveCsReq),
-            6049 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterLayerCsReq),
-            6030 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterRoomCsReq),
-            6046 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournSettleCsReq),
-            6071 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterRogueCocoonSceneScRsp),
-            6041 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetMiscRealTimeDataCsReq),
-            6073 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetCurRogueCocoonInfoScRsp),
-            6026 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterCsReq),
-            6045 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetCurRogueCocoonInfoCsReq),
-            6080 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournStartScRsp),
+            6077 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournDeleteArchiveScRsp),
+            6044 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterRoomCsReq),
+            6027 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournStartScRsp),
+            6045 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnablePermanentTalentScRsp),
+            6043 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetArchiveRepositoryCsReq),
+            6082 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournReEnterRogueCocoonStageCsReq),
+            6020 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournResetPermanentTalentCsReq),
+            6055 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetSettleInfoScRsp),
+            6068 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournClearArchiveNameScNotify),
+            6022 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetAllArchiveScRsp),
+            6028 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournLeaveRogueCocoonSceneCsReq),
+            6057 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterRogueCocoonSceneCsReq),
+            6053 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournQueryCsReq),
+            6086 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournDifficultyCompNotify),
+            6023 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournTakeExpRewardCsReq),
+            6015 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournResetPermanentTalentScRsp),
+            6026 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetArchiveRepositoryScRsp),
+            6069 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterScRsp),
+            6078 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournTakeExpRewardScRsp),
+            6092 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetCurRogueCocoonInfoScRsp),
+            6060 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetSettleInfoCsReq),
+            6032 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournHandBookNotify),
+            6097 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournLeaveScRsp),
+            6050 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournWeekChallengeUpdateScNotify),
+            6083 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournReEnterRogueCocoonStageScRsp),
+            6018 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournBattleFailSettleInfoScNotify),
+            6099 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetMiscRealTimeDataCsReq),
+            6037 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetAllArchiveCsReq),
+            6036 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterRoomScRsp),
+            6040 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetMiscRealTimeDataScRsp),
+            6074 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournSettleScRsp),
+            6100 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterCsReq),
+            6029 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournLevelInfoUpdateScNotify),
+            6089 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnablePermanentTalentCsReq),
+            6075 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournSettleCsReq),
+            6094 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetCurRogueCocoonInfoCsReq),
+            6058 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetPermanentTalentInfoCsReq),
+            6046 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetPermanentTalentInfoScRsp),
+            6051 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournExpNotify),
+            6079 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournReviveAvatarScRsp),
+            6013 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournConfirmSettleScRsp),
+            6085 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournConfirmSettleCsReq),
+            6070 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournDeleteArchiveCsReq),
+            6021 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournLeaveRogueCocoonSceneScRsp),
+            6065 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterRogueCocoonSceneScRsp),
+            6093 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournQueryScRsp),
+            6047 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournLeaveCsReq),
+            6031 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournRenameArchiveScRsp),
+            6038 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterLayerScRsp),
+            6059 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournStartCsReq),
+            6063 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournReviveAvatarCsReq),
+            6090 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournRenameArchiveCsReq),
+            6080 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournAreaUpdateScNotify),
+            6039 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournReviveCostUpdateScNotify),
+            6095 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterLayerCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -215,60 +215,60 @@ impl ::protobuf::Enum for CmdRogueTournType {
         match str {
             "CmdRogueTournTypeNone" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournTypeNone),
             "CmdRogueTournDeleteArchiveScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournDeleteArchiveScRsp),
-            "CmdRogueTournGetArchiveRepositoryCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetArchiveRepositoryCsReq),
-            "CmdRogueTournReviveCostUpdateScNotify" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournReviveCostUpdateScNotify),
-            "CmdRogueTournGetAllArchiveScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetAllArchiveScRsp),
-            "CmdRogueTournGetMiscRealTimeDataScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetMiscRealTimeDataScRsp),
-            "CmdRogueTournLeaveRogueCocoonSceneScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournLeaveRogueCocoonSceneScRsp),
-            "CmdRogueTournResetPermanentTalentScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournResetPermanentTalentScRsp),
-            "CmdRogueTournEnterScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterScRsp),
-            "CmdRogueTournEnablePermanentTalentScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnablePermanentTalentScRsp),
-            "CmdRogueTournEnterRoomScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterRoomScRsp),
-            "CmdRogueTournGetSettleInfoScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetSettleInfoScRsp),
-            "CmdRogueTournTakeExpRewardCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournTakeExpRewardCsReq),
-            "CmdRogueTournDeleteArchiveCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournDeleteArchiveCsReq),
-            "CmdRogueTournReviveAvatarCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournReviveAvatarCsReq),
-            "CmdRogueTournStartCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournStartCsReq),
-            "CmdRogueTournGetSettleInfoCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetSettleInfoCsReq),
-            "CmdRogueTournReEnterRogueCocoonStageCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournReEnterRogueCocoonStageCsReq),
-            "CmdRogueTournEnterLayerScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterLayerScRsp),
-            "CmdRogueTournQueryScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournQueryScRsp),
-            "CmdRogueTournEnablePermanentTalentCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnablePermanentTalentCsReq),
-            "CmdRogueTournLeaveRogueCocoonSceneCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournLeaveRogueCocoonSceneCsReq),
-            "CmdRogueTournLevelInfoUpdateScNotify" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournLevelInfoUpdateScNotify),
-            "CmdRogueTournReviveAvatarScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournReviveAvatarScRsp),
-            "CmdRogueTournGetPermanentTalentInfoCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetPermanentTalentInfoCsReq),
-            "CmdRogueTournEnterRogueCocoonSceneCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterRogueCocoonSceneCsReq),
-            "CmdRogueTournGetPermanentTalentInfoScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetPermanentTalentInfoScRsp),
-            "CmdRogueTournReEnterRogueCocoonStageScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournReEnterRogueCocoonStageScRsp),
-            "CmdRogueTournQueryCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournQueryCsReq),
-            "CmdRogueTournConfirmSettleScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournConfirmSettleScRsp),
-            "CmdRogueTournLeaveScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournLeaveScRsp),
-            "CmdRogueTournSettleScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournSettleScRsp),
-            "CmdRogueTournResetPermanentTalentCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournResetPermanentTalentCsReq),
-            "CmdRogueTournClearArchiveNameScNotify" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournClearArchiveNameScNotify),
-            "CmdRogueTournDifficultyCompNotify" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournDifficultyCompNotify),
-            "CmdRogueTournAreaUpdateScNotify" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournAreaUpdateScNotify),
-            "CmdRogueTournRenameArchiveScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournRenameArchiveScRsp),
-            "CmdRogueTournExpNotify" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournExpNotify),
-            "CmdRogueTournGetArchiveRepositoryScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetArchiveRepositoryScRsp),
-            "CmdRogueTournHandBookNotify" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournHandBookNotify),
-            "CmdRogueTournRenameArchiveCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournRenameArchiveCsReq),
-            "CmdRogueTournTakeExpRewardScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournTakeExpRewardScRsp),
-            "CmdRogueTournBattleFailSettleInfoScNotify" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournBattleFailSettleInfoScNotify),
-            "CmdRogueTournConfirmSettleCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournConfirmSettleCsReq),
-            "CmdRogueTournLeaveCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournLeaveCsReq),
-            "CmdRogueTournWeekChallengeUpdateScNotify" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournWeekChallengeUpdateScNotify),
-            "CmdRogueTournGetAllArchiveCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetAllArchiveCsReq),
-            "CmdRogueTournEnterLayerCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterLayerCsReq),
             "CmdRogueTournEnterRoomCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterRoomCsReq),
-            "CmdRogueTournSettleCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournSettleCsReq),
-            "CmdRogueTournEnterRogueCocoonSceneScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterRogueCocoonSceneScRsp),
-            "CmdRogueTournGetMiscRealTimeDataCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetMiscRealTimeDataCsReq),
-            "CmdRogueTournGetCurRogueCocoonInfoScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetCurRogueCocoonInfoScRsp),
-            "CmdRogueTournEnterCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterCsReq),
-            "CmdRogueTournGetCurRogueCocoonInfoCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetCurRogueCocoonInfoCsReq),
             "CmdRogueTournStartScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournStartScRsp),
+            "CmdRogueTournEnablePermanentTalentScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnablePermanentTalentScRsp),
+            "CmdRogueTournGetArchiveRepositoryCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetArchiveRepositoryCsReq),
+            "CmdRogueTournReEnterRogueCocoonStageCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournReEnterRogueCocoonStageCsReq),
+            "CmdRogueTournResetPermanentTalentCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournResetPermanentTalentCsReq),
+            "CmdRogueTournGetSettleInfoScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetSettleInfoScRsp),
+            "CmdRogueTournClearArchiveNameScNotify" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournClearArchiveNameScNotify),
+            "CmdRogueTournGetAllArchiveScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetAllArchiveScRsp),
+            "CmdRogueTournLeaveRogueCocoonSceneCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournLeaveRogueCocoonSceneCsReq),
+            "CmdRogueTournEnterRogueCocoonSceneCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterRogueCocoonSceneCsReq),
+            "CmdRogueTournQueryCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournQueryCsReq),
+            "CmdRogueTournDifficultyCompNotify" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournDifficultyCompNotify),
+            "CmdRogueTournTakeExpRewardCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournTakeExpRewardCsReq),
+            "CmdRogueTournResetPermanentTalentScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournResetPermanentTalentScRsp),
+            "CmdRogueTournGetArchiveRepositoryScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetArchiveRepositoryScRsp),
+            "CmdRogueTournEnterScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterScRsp),
+            "CmdRogueTournTakeExpRewardScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournTakeExpRewardScRsp),
+            "CmdRogueTournGetCurRogueCocoonInfoScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetCurRogueCocoonInfoScRsp),
+            "CmdRogueTournGetSettleInfoCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetSettleInfoCsReq),
+            "CmdRogueTournHandBookNotify" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournHandBookNotify),
+            "CmdRogueTournLeaveScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournLeaveScRsp),
+            "CmdRogueTournWeekChallengeUpdateScNotify" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournWeekChallengeUpdateScNotify),
+            "CmdRogueTournReEnterRogueCocoonStageScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournReEnterRogueCocoonStageScRsp),
+            "CmdRogueTournBattleFailSettleInfoScNotify" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournBattleFailSettleInfoScNotify),
+            "CmdRogueTournGetMiscRealTimeDataCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetMiscRealTimeDataCsReq),
+            "CmdRogueTournGetAllArchiveCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetAllArchiveCsReq),
+            "CmdRogueTournEnterRoomScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterRoomScRsp),
+            "CmdRogueTournGetMiscRealTimeDataScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetMiscRealTimeDataScRsp),
+            "CmdRogueTournSettleScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournSettleScRsp),
+            "CmdRogueTournEnterCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterCsReq),
+            "CmdRogueTournLevelInfoUpdateScNotify" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournLevelInfoUpdateScNotify),
+            "CmdRogueTournEnablePermanentTalentCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnablePermanentTalentCsReq),
+            "CmdRogueTournSettleCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournSettleCsReq),
+            "CmdRogueTournGetCurRogueCocoonInfoCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetCurRogueCocoonInfoCsReq),
+            "CmdRogueTournGetPermanentTalentInfoCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetPermanentTalentInfoCsReq),
+            "CmdRogueTournGetPermanentTalentInfoScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetPermanentTalentInfoScRsp),
+            "CmdRogueTournExpNotify" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournExpNotify),
+            "CmdRogueTournReviveAvatarScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournReviveAvatarScRsp),
+            "CmdRogueTournConfirmSettleScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournConfirmSettleScRsp),
+            "CmdRogueTournConfirmSettleCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournConfirmSettleCsReq),
+            "CmdRogueTournDeleteArchiveCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournDeleteArchiveCsReq),
+            "CmdRogueTournLeaveRogueCocoonSceneScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournLeaveRogueCocoonSceneScRsp),
+            "CmdRogueTournEnterRogueCocoonSceneScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterRogueCocoonSceneScRsp),
+            "CmdRogueTournQueryScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournQueryScRsp),
+            "CmdRogueTournLeaveCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournLeaveCsReq),
+            "CmdRogueTournRenameArchiveScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournRenameArchiveScRsp),
+            "CmdRogueTournEnterLayerScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterLayerScRsp),
+            "CmdRogueTournStartCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournStartCsReq),
+            "CmdRogueTournReviveAvatarCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournReviveAvatarCsReq),
+            "CmdRogueTournRenameArchiveCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournRenameArchiveCsReq),
+            "CmdRogueTournAreaUpdateScNotify" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournAreaUpdateScNotify),
+            "CmdRogueTournReviveCostUpdateScNotify" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournReviveCostUpdateScNotify),
+            "CmdRogueTournEnterLayerCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterLayerCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -276,60 +276,60 @@ impl ::protobuf::Enum for CmdRogueTournType {
     const VALUES: &'static [CmdRogueTournType] = &[
         CmdRogueTournType::CmdRogueTournTypeNone,
         CmdRogueTournType::CmdRogueTournDeleteArchiveScRsp,
-        CmdRogueTournType::CmdRogueTournGetArchiveRepositoryCsReq,
-        CmdRogueTournType::CmdRogueTournReviveCostUpdateScNotify,
-        CmdRogueTournType::CmdRogueTournGetAllArchiveScRsp,
-        CmdRogueTournType::CmdRogueTournGetMiscRealTimeDataScRsp,
-        CmdRogueTournType::CmdRogueTournLeaveRogueCocoonSceneScRsp,
-        CmdRogueTournType::CmdRogueTournResetPermanentTalentScRsp,
-        CmdRogueTournType::CmdRogueTournEnterScRsp,
-        CmdRogueTournType::CmdRogueTournEnablePermanentTalentScRsp,
-        CmdRogueTournType::CmdRogueTournEnterRoomScRsp,
-        CmdRogueTournType::CmdRogueTournGetSettleInfoScRsp,
-        CmdRogueTournType::CmdRogueTournTakeExpRewardCsReq,
-        CmdRogueTournType::CmdRogueTournDeleteArchiveCsReq,
-        CmdRogueTournType::CmdRogueTournReviveAvatarCsReq,
-        CmdRogueTournType::CmdRogueTournStartCsReq,
-        CmdRogueTournType::CmdRogueTournGetSettleInfoCsReq,
-        CmdRogueTournType::CmdRogueTournReEnterRogueCocoonStageCsReq,
-        CmdRogueTournType::CmdRogueTournEnterLayerScRsp,
-        CmdRogueTournType::CmdRogueTournQueryScRsp,
-        CmdRogueTournType::CmdRogueTournEnablePermanentTalentCsReq,
-        CmdRogueTournType::CmdRogueTournLeaveRogueCocoonSceneCsReq,
-        CmdRogueTournType::CmdRogueTournLevelInfoUpdateScNotify,
-        CmdRogueTournType::CmdRogueTournReviveAvatarScRsp,
-        CmdRogueTournType::CmdRogueTournGetPermanentTalentInfoCsReq,
-        CmdRogueTournType::CmdRogueTournEnterRogueCocoonSceneCsReq,
-        CmdRogueTournType::CmdRogueTournGetPermanentTalentInfoScRsp,
-        CmdRogueTournType::CmdRogueTournReEnterRogueCocoonStageScRsp,
-        CmdRogueTournType::CmdRogueTournQueryCsReq,
-        CmdRogueTournType::CmdRogueTournConfirmSettleScRsp,
-        CmdRogueTournType::CmdRogueTournLeaveScRsp,
-        CmdRogueTournType::CmdRogueTournSettleScRsp,
-        CmdRogueTournType::CmdRogueTournResetPermanentTalentCsReq,
-        CmdRogueTournType::CmdRogueTournClearArchiveNameScNotify,
-        CmdRogueTournType::CmdRogueTournDifficultyCompNotify,
-        CmdRogueTournType::CmdRogueTournAreaUpdateScNotify,
-        CmdRogueTournType::CmdRogueTournRenameArchiveScRsp,
-        CmdRogueTournType::CmdRogueTournExpNotify,
-        CmdRogueTournType::CmdRogueTournGetArchiveRepositoryScRsp,
-        CmdRogueTournType::CmdRogueTournHandBookNotify,
-        CmdRogueTournType::CmdRogueTournRenameArchiveCsReq,
-        CmdRogueTournType::CmdRogueTournTakeExpRewardScRsp,
-        CmdRogueTournType::CmdRogueTournBattleFailSettleInfoScNotify,
-        CmdRogueTournType::CmdRogueTournConfirmSettleCsReq,
-        CmdRogueTournType::CmdRogueTournLeaveCsReq,
-        CmdRogueTournType::CmdRogueTournWeekChallengeUpdateScNotify,
-        CmdRogueTournType::CmdRogueTournGetAllArchiveCsReq,
-        CmdRogueTournType::CmdRogueTournEnterLayerCsReq,
         CmdRogueTournType::CmdRogueTournEnterRoomCsReq,
-        CmdRogueTournType::CmdRogueTournSettleCsReq,
-        CmdRogueTournType::CmdRogueTournEnterRogueCocoonSceneScRsp,
-        CmdRogueTournType::CmdRogueTournGetMiscRealTimeDataCsReq,
-        CmdRogueTournType::CmdRogueTournGetCurRogueCocoonInfoScRsp,
-        CmdRogueTournType::CmdRogueTournEnterCsReq,
-        CmdRogueTournType::CmdRogueTournGetCurRogueCocoonInfoCsReq,
         CmdRogueTournType::CmdRogueTournStartScRsp,
+        CmdRogueTournType::CmdRogueTournEnablePermanentTalentScRsp,
+        CmdRogueTournType::CmdRogueTournGetArchiveRepositoryCsReq,
+        CmdRogueTournType::CmdRogueTournReEnterRogueCocoonStageCsReq,
+        CmdRogueTournType::CmdRogueTournResetPermanentTalentCsReq,
+        CmdRogueTournType::CmdRogueTournGetSettleInfoScRsp,
+        CmdRogueTournType::CmdRogueTournClearArchiveNameScNotify,
+        CmdRogueTournType::CmdRogueTournGetAllArchiveScRsp,
+        CmdRogueTournType::CmdRogueTournLeaveRogueCocoonSceneCsReq,
+        CmdRogueTournType::CmdRogueTournEnterRogueCocoonSceneCsReq,
+        CmdRogueTournType::CmdRogueTournQueryCsReq,
+        CmdRogueTournType::CmdRogueTournDifficultyCompNotify,
+        CmdRogueTournType::CmdRogueTournTakeExpRewardCsReq,
+        CmdRogueTournType::CmdRogueTournResetPermanentTalentScRsp,
+        CmdRogueTournType::CmdRogueTournGetArchiveRepositoryScRsp,
+        CmdRogueTournType::CmdRogueTournEnterScRsp,
+        CmdRogueTournType::CmdRogueTournTakeExpRewardScRsp,
+        CmdRogueTournType::CmdRogueTournGetCurRogueCocoonInfoScRsp,
+        CmdRogueTournType::CmdRogueTournGetSettleInfoCsReq,
+        CmdRogueTournType::CmdRogueTournHandBookNotify,
+        CmdRogueTournType::CmdRogueTournLeaveScRsp,
+        CmdRogueTournType::CmdRogueTournWeekChallengeUpdateScNotify,
+        CmdRogueTournType::CmdRogueTournReEnterRogueCocoonStageScRsp,
+        CmdRogueTournType::CmdRogueTournBattleFailSettleInfoScNotify,
+        CmdRogueTournType::CmdRogueTournGetMiscRealTimeDataCsReq,
+        CmdRogueTournType::CmdRogueTournGetAllArchiveCsReq,
+        CmdRogueTournType::CmdRogueTournEnterRoomScRsp,
+        CmdRogueTournType::CmdRogueTournGetMiscRealTimeDataScRsp,
+        CmdRogueTournType::CmdRogueTournSettleScRsp,
+        CmdRogueTournType::CmdRogueTournEnterCsReq,
+        CmdRogueTournType::CmdRogueTournLevelInfoUpdateScNotify,
+        CmdRogueTournType::CmdRogueTournEnablePermanentTalentCsReq,
+        CmdRogueTournType::CmdRogueTournSettleCsReq,
+        CmdRogueTournType::CmdRogueTournGetCurRogueCocoonInfoCsReq,
+        CmdRogueTournType::CmdRogueTournGetPermanentTalentInfoCsReq,
+        CmdRogueTournType::CmdRogueTournGetPermanentTalentInfoScRsp,
+        CmdRogueTournType::CmdRogueTournExpNotify,
+        CmdRogueTournType::CmdRogueTournReviveAvatarScRsp,
+        CmdRogueTournType::CmdRogueTournConfirmSettleScRsp,
+        CmdRogueTournType::CmdRogueTournConfirmSettleCsReq,
+        CmdRogueTournType::CmdRogueTournDeleteArchiveCsReq,
+        CmdRogueTournType::CmdRogueTournLeaveRogueCocoonSceneScRsp,
+        CmdRogueTournType::CmdRogueTournEnterRogueCocoonSceneScRsp,
+        CmdRogueTournType::CmdRogueTournQueryScRsp,
+        CmdRogueTournType::CmdRogueTournLeaveCsReq,
+        CmdRogueTournType::CmdRogueTournRenameArchiveScRsp,
+        CmdRogueTournType::CmdRogueTournEnterLayerScRsp,
+        CmdRogueTournType::CmdRogueTournStartCsReq,
+        CmdRogueTournType::CmdRogueTournReviveAvatarCsReq,
+        CmdRogueTournType::CmdRogueTournRenameArchiveCsReq,
+        CmdRogueTournType::CmdRogueTournAreaUpdateScNotify,
+        CmdRogueTournType::CmdRogueTournReviveCostUpdateScNotify,
+        CmdRogueTournType::CmdRogueTournEnterLayerCsReq,
     ];
 }
 
@@ -343,60 +343,60 @@ impl ::protobuf::EnumFull for CmdRogueTournType {
         let index = match self {
             CmdRogueTournType::CmdRogueTournTypeNone => 0,
             CmdRogueTournType::CmdRogueTournDeleteArchiveScRsp => 1,
-            CmdRogueTournType::CmdRogueTournGetArchiveRepositoryCsReq => 2,
-            CmdRogueTournType::CmdRogueTournReviveCostUpdateScNotify => 3,
-            CmdRogueTournType::CmdRogueTournGetAllArchiveScRsp => 4,
-            CmdRogueTournType::CmdRogueTournGetMiscRealTimeDataScRsp => 5,
-            CmdRogueTournType::CmdRogueTournLeaveRogueCocoonSceneScRsp => 6,
-            CmdRogueTournType::CmdRogueTournResetPermanentTalentScRsp => 7,
-            CmdRogueTournType::CmdRogueTournEnterScRsp => 8,
-            CmdRogueTournType::CmdRogueTournEnablePermanentTalentScRsp => 9,
-            CmdRogueTournType::CmdRogueTournEnterRoomScRsp => 10,
-            CmdRogueTournType::CmdRogueTournGetSettleInfoScRsp => 11,
-            CmdRogueTournType::CmdRogueTournTakeExpRewardCsReq => 12,
-            CmdRogueTournType::CmdRogueTournDeleteArchiveCsReq => 13,
-            CmdRogueTournType::CmdRogueTournReviveAvatarCsReq => 14,
-            CmdRogueTournType::CmdRogueTournStartCsReq => 15,
-            CmdRogueTournType::CmdRogueTournGetSettleInfoCsReq => 16,
-            CmdRogueTournType::CmdRogueTournReEnterRogueCocoonStageCsReq => 17,
-            CmdRogueTournType::CmdRogueTournEnterLayerScRsp => 18,
-            CmdRogueTournType::CmdRogueTournQueryScRsp => 19,
-            CmdRogueTournType::CmdRogueTournEnablePermanentTalentCsReq => 20,
-            CmdRogueTournType::CmdRogueTournLeaveRogueCocoonSceneCsReq => 21,
-            CmdRogueTournType::CmdRogueTournLevelInfoUpdateScNotify => 22,
-            CmdRogueTournType::CmdRogueTournReviveAvatarScRsp => 23,
-            CmdRogueTournType::CmdRogueTournGetPermanentTalentInfoCsReq => 24,
-            CmdRogueTournType::CmdRogueTournEnterRogueCocoonSceneCsReq => 25,
-            CmdRogueTournType::CmdRogueTournGetPermanentTalentInfoScRsp => 26,
-            CmdRogueTournType::CmdRogueTournReEnterRogueCocoonStageScRsp => 27,
-            CmdRogueTournType::CmdRogueTournQueryCsReq => 28,
-            CmdRogueTournType::CmdRogueTournConfirmSettleScRsp => 29,
-            CmdRogueTournType::CmdRogueTournLeaveScRsp => 30,
+            CmdRogueTournType::CmdRogueTournEnterRoomCsReq => 2,
+            CmdRogueTournType::CmdRogueTournStartScRsp => 3,
+            CmdRogueTournType::CmdRogueTournEnablePermanentTalentScRsp => 4,
+            CmdRogueTournType::CmdRogueTournGetArchiveRepositoryCsReq => 5,
+            CmdRogueTournType::CmdRogueTournReEnterRogueCocoonStageCsReq => 6,
+            CmdRogueTournType::CmdRogueTournResetPermanentTalentCsReq => 7,
+            CmdRogueTournType::CmdRogueTournGetSettleInfoScRsp => 8,
+            CmdRogueTournType::CmdRogueTournClearArchiveNameScNotify => 9,
+            CmdRogueTournType::CmdRogueTournGetAllArchiveScRsp => 10,
+            CmdRogueTournType::CmdRogueTournLeaveRogueCocoonSceneCsReq => 11,
+            CmdRogueTournType::CmdRogueTournEnterRogueCocoonSceneCsReq => 12,
+            CmdRogueTournType::CmdRogueTournQueryCsReq => 13,
+            CmdRogueTournType::CmdRogueTournDifficultyCompNotify => 14,
+            CmdRogueTournType::CmdRogueTournTakeExpRewardCsReq => 15,
+            CmdRogueTournType::CmdRogueTournResetPermanentTalentScRsp => 16,
+            CmdRogueTournType::CmdRogueTournGetArchiveRepositoryScRsp => 17,
+            CmdRogueTournType::CmdRogueTournEnterScRsp => 18,
+            CmdRogueTournType::CmdRogueTournTakeExpRewardScRsp => 19,
+            CmdRogueTournType::CmdRogueTournGetCurRogueCocoonInfoScRsp => 20,
+            CmdRogueTournType::CmdRogueTournGetSettleInfoCsReq => 21,
+            CmdRogueTournType::CmdRogueTournHandBookNotify => 22,
+            CmdRogueTournType::CmdRogueTournLeaveScRsp => 23,
+            CmdRogueTournType::CmdRogueTournWeekChallengeUpdateScNotify => 24,
+            CmdRogueTournType::CmdRogueTournReEnterRogueCocoonStageScRsp => 25,
+            CmdRogueTournType::CmdRogueTournBattleFailSettleInfoScNotify => 26,
+            CmdRogueTournType::CmdRogueTournGetMiscRealTimeDataCsReq => 27,
+            CmdRogueTournType::CmdRogueTournGetAllArchiveCsReq => 28,
+            CmdRogueTournType::CmdRogueTournEnterRoomScRsp => 29,
+            CmdRogueTournType::CmdRogueTournGetMiscRealTimeDataScRsp => 30,
             CmdRogueTournType::CmdRogueTournSettleScRsp => 31,
-            CmdRogueTournType::CmdRogueTournResetPermanentTalentCsReq => 32,
-            CmdRogueTournType::CmdRogueTournClearArchiveNameScNotify => 33,
-            CmdRogueTournType::CmdRogueTournDifficultyCompNotify => 34,
-            CmdRogueTournType::CmdRogueTournAreaUpdateScNotify => 35,
-            CmdRogueTournType::CmdRogueTournRenameArchiveScRsp => 36,
-            CmdRogueTournType::CmdRogueTournExpNotify => 37,
-            CmdRogueTournType::CmdRogueTournGetArchiveRepositoryScRsp => 38,
-            CmdRogueTournType::CmdRogueTournHandBookNotify => 39,
-            CmdRogueTournType::CmdRogueTournRenameArchiveCsReq => 40,
-            CmdRogueTournType::CmdRogueTournTakeExpRewardScRsp => 41,
-            CmdRogueTournType::CmdRogueTournBattleFailSettleInfoScNotify => 42,
-            CmdRogueTournType::CmdRogueTournConfirmSettleCsReq => 43,
-            CmdRogueTournType::CmdRogueTournLeaveCsReq => 44,
-            CmdRogueTournType::CmdRogueTournWeekChallengeUpdateScNotify => 45,
-            CmdRogueTournType::CmdRogueTournGetAllArchiveCsReq => 46,
-            CmdRogueTournType::CmdRogueTournEnterLayerCsReq => 47,
-            CmdRogueTournType::CmdRogueTournEnterRoomCsReq => 48,
-            CmdRogueTournType::CmdRogueTournSettleCsReq => 49,
-            CmdRogueTournType::CmdRogueTournEnterRogueCocoonSceneScRsp => 50,
-            CmdRogueTournType::CmdRogueTournGetMiscRealTimeDataCsReq => 51,
-            CmdRogueTournType::CmdRogueTournGetCurRogueCocoonInfoScRsp => 52,
-            CmdRogueTournType::CmdRogueTournEnterCsReq => 53,
-            CmdRogueTournType::CmdRogueTournGetCurRogueCocoonInfoCsReq => 54,
-            CmdRogueTournType::CmdRogueTournStartScRsp => 55,
+            CmdRogueTournType::CmdRogueTournEnterCsReq => 32,
+            CmdRogueTournType::CmdRogueTournLevelInfoUpdateScNotify => 33,
+            CmdRogueTournType::CmdRogueTournEnablePermanentTalentCsReq => 34,
+            CmdRogueTournType::CmdRogueTournSettleCsReq => 35,
+            CmdRogueTournType::CmdRogueTournGetCurRogueCocoonInfoCsReq => 36,
+            CmdRogueTournType::CmdRogueTournGetPermanentTalentInfoCsReq => 37,
+            CmdRogueTournType::CmdRogueTournGetPermanentTalentInfoScRsp => 38,
+            CmdRogueTournType::CmdRogueTournExpNotify => 39,
+            CmdRogueTournType::CmdRogueTournReviveAvatarScRsp => 40,
+            CmdRogueTournType::CmdRogueTournConfirmSettleScRsp => 41,
+            CmdRogueTournType::CmdRogueTournConfirmSettleCsReq => 42,
+            CmdRogueTournType::CmdRogueTournDeleteArchiveCsReq => 43,
+            CmdRogueTournType::CmdRogueTournLeaveRogueCocoonSceneScRsp => 44,
+            CmdRogueTournType::CmdRogueTournEnterRogueCocoonSceneScRsp => 45,
+            CmdRogueTournType::CmdRogueTournQueryScRsp => 46,
+            CmdRogueTournType::CmdRogueTournLeaveCsReq => 47,
+            CmdRogueTournType::CmdRogueTournRenameArchiveScRsp => 48,
+            CmdRogueTournType::CmdRogueTournEnterLayerScRsp => 49,
+            CmdRogueTournType::CmdRogueTournStartCsReq => 50,
+            CmdRogueTournType::CmdRogueTournReviveAvatarCsReq => 51,
+            CmdRogueTournType::CmdRogueTournRenameArchiveCsReq => 52,
+            CmdRogueTournType::CmdRogueTournAreaUpdateScNotify => 53,
+            CmdRogueTournType::CmdRogueTournReviveCostUpdateScNotify => 54,
+            CmdRogueTournType::CmdRogueTournEnterLayerCsReq => 55,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -417,46 +417,46 @@ impl CmdRogueTournType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17CmdRogueTournType.proto*\xa1\x11\n\x11CmdRogueTournType\x12\x19\n\
     \x15CmdRogueTournTypeNone\x10\0\x12$\n\x1fCmdRogueTournDeleteArchiveScRs\
-    p\x10\xaa/\x12+\n&CmdRogueTournGetArchiveRepositoryCsReq\x10\xbf/\x12*\n\
-    %CmdRogueTournReviveCostUpdateScNotify\x10\x95/\x12$\n\x1fCmdRogueTournG\
-    etAllArchiveScRsp\x10\x83/\x12*\n%CmdRogueTournGetMiscRealTimeDataScRsp\
-    \x10\xbc/\x12,\n'CmdRogueTournLeaveRogueCocoonSceneScRsp\x10\x9f/\x12+\n\
-    &CmdRogueTournResetPermanentTalentScRsp\x10\xc7/\x12\x1c\n\x17CmdRogueTo\
-    urnEnterScRsp\x10\xb2/\x12,\n'CmdRogueTournEnablePermanentTalentScRsp\
-    \x10\xce/\x12\x20\n\x1bCmdRogueTournEnterRoomScRsp\x10\x9c/\x12$\n\x1fCm\
-    dRogueTournGetSettleInfoScRsp\x10\x86/\x12$\n\x1fCmdRogueTournTakeExpRew\
-    ardCsReq\x10\xaf/\x12$\n\x1fCmdRogueTournDeleteArchiveCsReq\x10\x87/\x12\
-    #\n\x1eCmdRogueTournReviveAvatarCsReq\x10\xd4/\x12\x1c\n\x17CmdRogueTour\
-    nStartCsReq\x10\xc1/\x12$\n\x1fCmdRogueTournGetSettleInfoCsReq\x10\x92/\
-    \x12.\n)CmdRogueTournReEnterRogueCocoonStageCsReq\x10\x88/\x12!\n\x1cCmd\
-    RogueTournEnterLayerScRsp\x10\xa5/\x12\x1c\n\x17CmdRogueTournQueryScRsp\
-    \x10\x8d/\x12,\n'CmdRogueTournEnablePermanentTalentCsReq\x10\x9b/\x12,\n\
-    'CmdRogueTournLeaveRogueCocoonSceneCsReq\x10\xb5/\x12)\n$CmdRogueTournLe\
-    velInfoUpdateScNotify\x10\xc3/\x12#\n\x1eCmdRogueTournReviveAvatarScRsp\
-    \x10\x93/\x12-\n(CmdRogueTournGetPermanentTalentInfoCsReq\x10\x94/\x12,\
-    \n'CmdRogueTournEnterRogueCocoonSceneCsReq\x10\xa8/\x12-\n(CmdRogueTourn\
-    GetPermanentTalentInfoScRsp\x10\xc5/\x12.\n)CmdRogueTournReEnterRogueCoc\
-    oonStageScRsp\x10\x91/\x12\x1c\n\x17CmdRogueTournQueryCsReq\x10\xa7/\x12\
-    $\n\x1fCmdRogueTournConfirmSettleScRsp\x10\x9a/\x12\x1c\n\x17CmdRogueTou\
-    rnLeaveScRsp\x10\xbe/\x12\x1d\n\x18CmdRogueTournSettleScRsp\x10\x98/\x12\
-    +\n&CmdRogueTournResetPermanentTalentCsReq\x10\xbb/\x12*\n%CmdRogueTourn\
-    ClearArchiveNameScNotify\x10\xc6/\x12&\n!CmdRogueTournDifficultyCompNoti\
-    fy\x10\x89/\x12$\n\x1fCmdRogueTournAreaUpdateScNotify\x10\x97/\x12$\n\
-    \x1fCmdRogueTournRenameArchiveScRsp\x10\xad/\x12\x1b\n\x16CmdRogueTournE\
-    xpNotify\x10\x90/\x12+\n&CmdRogueTournGetArchiveRepositoryScRsp\x10\xb8/\
-    \x12\x20\n\x1bCmdRogueTournHandBookNotify\x10\xfc.\x12$\n\x1fCmdRogueTou\
-    rnRenameArchiveCsReq\x10\x81/\x12$\n\x1fCmdRogueTournTakeExpRewardScRsp\
-    \x10\xa9/\x12.\n)CmdRogueTournBattleFailSettleInfoScNotify\x10\xa0/\x12$\
-    \n\x1fCmdRogueTournConfirmSettleCsReq\x10\xc2/\x12\x1c\n\x17CmdRogueTour\
-    nLeaveCsReq\x10\x80/\x12-\n(CmdRogueTournWeekChallengeUpdateScNotify\x10\
-    \xc8/\x12$\n\x1fCmdRogueTournGetAllArchiveCsReq\x10\x84/\x12!\n\x1cCmdRo\
-    gueTournEnterLayerCsReq\x10\xa1/\x12\x20\n\x1bCmdRogueTournEnterRoomCsRe\
-    q\x10\x8e/\x12\x1d\n\x18CmdRogueTournSettleCsReq\x10\x9e/\x12,\n'CmdRogu\
-    eTournEnterRogueCocoonSceneScRsp\x10\xb7/\x12*\n%CmdRogueTournGetMiscRea\
-    lTimeDataCsReq\x10\x99/\x12,\n'CmdRogueTournGetCurRogueCocoonInfoScRsp\
-    \x10\xb9/\x12\x1c\n\x17CmdRogueTournEnterCsReq\x10\x8a/\x12,\n'CmdRogueT\
-    ournGetCurRogueCocoonInfoCsReq\x10\x9d/\x12\x1c\n\x17CmdRogueTournStartS\
-    cRsp\x10\xc0/b\x06proto3\
+    p\x10\xbd/\x12\x20\n\x1bCmdRogueTournEnterRoomCsReq\x10\x9c/\x12\x1c\n\
+    \x17CmdRogueTournStartScRsp\x10\x8b/\x12,\n'CmdRogueTournEnablePermanent\
+    TalentScRsp\x10\x9d/\x12+\n&CmdRogueTournGetArchiveRepositoryCsReq\x10\
+    \x9b/\x12.\n)CmdRogueTournReEnterRogueCocoonStageCsReq\x10\xc2/\x12+\n&C\
+    mdRogueTournResetPermanentTalentCsReq\x10\x84/\x12$\n\x1fCmdRogueTournGe\
+    tSettleInfoScRsp\x10\xa7/\x12*\n%CmdRogueTournClearArchiveNameScNotify\
+    \x10\xb4/\x12$\n\x1fCmdRogueTournGetAllArchiveScRsp\x10\x86/\x12,\n'CmdR\
+    ogueTournLeaveRogueCocoonSceneCsReq\x10\x8c/\x12,\n'CmdRogueTournEnterRo\
+    gueCocoonSceneCsReq\x10\xa9/\x12\x1c\n\x17CmdRogueTournQueryCsReq\x10\
+    \xa5/\x12&\n!CmdRogueTournDifficultyCompNotify\x10\xc6/\x12$\n\x1fCmdRog\
+    ueTournTakeExpRewardCsReq\x10\x87/\x12+\n&CmdRogueTournResetPermanentTal\
+    entScRsp\x10\xff.\x12+\n&CmdRogueTournGetArchiveRepositoryScRsp\x10\x8a/\
+    \x12\x1c\n\x17CmdRogueTournEnterScRsp\x10\xb5/\x12$\n\x1fCmdRogueTournTa\
+    keExpRewardScRsp\x10\xbe/\x12,\n'CmdRogueTournGetCurRogueCocoonInfoScRsp\
+    \x10\xcc/\x12$\n\x1fCmdRogueTournGetSettleInfoCsReq\x10\xac/\x12\x20\n\
+    \x1bCmdRogueTournHandBookNotify\x10\x90/\x12\x1c\n\x17CmdRogueTournLeave\
+    ScRsp\x10\xd1/\x12-\n(CmdRogueTournWeekChallengeUpdateScNotify\x10\xa2/\
+    \x12.\n)CmdRogueTournReEnterRogueCocoonStageScRsp\x10\xc3/\x12.\n)CmdRog\
+    ueTournBattleFailSettleInfoScNotify\x10\x82/\x12*\n%CmdRogueTournGetMisc\
+    RealTimeDataCsReq\x10\xd3/\x12$\n\x1fCmdRogueTournGetAllArchiveCsReq\x10\
+    \x95/\x12\x20\n\x1bCmdRogueTournEnterRoomScRsp\x10\x94/\x12*\n%CmdRogueT\
+    ournGetMiscRealTimeDataScRsp\x10\x98/\x12\x1d\n\x18CmdRogueTournSettleSc\
+    Rsp\x10\xba/\x12\x1c\n\x17CmdRogueTournEnterCsReq\x10\xd4/\x12)\n$CmdRog\
+    ueTournLevelInfoUpdateScNotify\x10\x8d/\x12,\n'CmdRogueTournEnablePerman\
+    entTalentCsReq\x10\xc9/\x12\x1d\n\x18CmdRogueTournSettleCsReq\x10\xbb/\
+    \x12,\n'CmdRogueTournGetCurRogueCocoonInfoCsReq\x10\xce/\x12-\n(CmdRogue\
+    TournGetPermanentTalentInfoCsReq\x10\xaa/\x12-\n(CmdRogueTournGetPermane\
+    ntTalentInfoScRsp\x10\x9e/\x12\x1b\n\x16CmdRogueTournExpNotify\x10\xa3/\
+    \x12#\n\x1eCmdRogueTournReviveAvatarScRsp\x10\xbf/\x12$\n\x1fCmdRogueTou\
+    rnConfirmSettleScRsp\x10\xfd.\x12$\n\x1fCmdRogueTournConfirmSettleCsReq\
+    \x10\xc5/\x12$\n\x1fCmdRogueTournDeleteArchiveCsReq\x10\xb6/\x12,\n'CmdR\
+    ogueTournLeaveRogueCocoonSceneScRsp\x10\x85/\x12,\n'CmdRogueTournEnterRo\
+    gueCocoonSceneScRsp\x10\xb1/\x12\x1c\n\x17CmdRogueTournQueryScRsp\x10\
+    \xcd/\x12\x1c\n\x17CmdRogueTournLeaveCsReq\x10\x9f/\x12$\n\x1fCmdRogueTo\
+    urnRenameArchiveScRsp\x10\x8f/\x12!\n\x1cCmdRogueTournEnterLayerScRsp\
+    \x10\x96/\x12\x1c\n\x17CmdRogueTournStartCsReq\x10\xab/\x12#\n\x1eCmdRog\
+    ueTournReviveAvatarCsReq\x10\xaf/\x12$\n\x1fCmdRogueTournRenameArchiveCs\
+    Req\x10\xca/\x12$\n\x1fCmdRogueTournAreaUpdateScNotify\x10\xc0/\x12*\n%C\
+    mdRogueTournReviveCostUpdateScNotify\x10\x97/\x12!\n\x1cCmdRogueTournEnt\
+    erLayerCsReq\x10\xcf/b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

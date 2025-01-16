@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightActivityDataChangeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:FightActivityDataChangeScNotify.FILOFJLGANE)
-    pub FILOFJLGANE: ::std::vec::Vec<super::FightActivityGroup::FightActivityGroup>,
-    // @@protoc_insertion_point(field:FightActivityDataChangeScNotify.HMEPCMMKMEP)
-    pub HMEPCMMKMEP: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:FightActivityDataChangeScNotify.KHGBGLLGBFE)
+    pub KHGBGLLGBFE: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:FightActivityDataChangeScNotify.EBKEMIEJMKM)
+    pub EBKEMIEJMKM: ::std::vec::Vec<super::FightActivityGroup::FightActivityGroup>,
     // special fields
     // @@protoc_insertion_point(special_field:FightActivityDataChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl FightActivityDataChangeScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FILOFJLGANE",
-            |m: &FightActivityDataChangeScNotify| { &m.FILOFJLGANE },
-            |m: &mut FightActivityDataChangeScNotify| { &mut m.FILOFJLGANE },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor::<_, _, _>(
-            "HMEPCMMKMEP",
-            |m: &FightActivityDataChangeScNotify| { &m.HMEPCMMKMEP },
-            |m: &mut FightActivityDataChangeScNotify| { &mut m.HMEPCMMKMEP },
+            "KHGBGLLGBFE",
+            |m: &FightActivityDataChangeScNotify| { &m.KHGBGLLGBFE },
+            |m: &mut FightActivityDataChangeScNotify| { &mut m.KHGBGLLGBFE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "EBKEMIEJMKM",
+            |m: &FightActivityDataChangeScNotify| { &m.EBKEMIEJMKM },
+            |m: &mut FightActivityDataChangeScNotify| { &mut m.EBKEMIEJMKM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightActivityDataChangeScNotify>(
             "FightActivityDataChangeScNotify",
@@ -80,10 +80,7 @@ impl ::protobuf::Message for FightActivityDataChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    self.FILOFJLGANE.push(is.read_message()?);
-                },
-                42 => {
+                106 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -96,7 +93,10 @@ impl ::protobuf::Message for FightActivityDataChangeScNotify {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.HMEPCMMKMEP.insert(key, value);
+                    self.KHGBGLLGBFE.insert(key, value);
+                },
+                50 => {
+                    self.EBKEMIEJMKM.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,15 +110,15 @@ impl ::protobuf::Message for FightActivityDataChangeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.FILOFJLGANE {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for (k, v) in &self.HMEPCMMKMEP {
+        for (k, v) in &self.KHGBGLLGBFE {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
+        };
+        for value in &self.EBKEMIEJMKM {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -126,17 +126,17 @@ impl ::protobuf::Message for FightActivityDataChangeScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.FILOFJLGANE {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        };
-        for (k, v) in &self.HMEPCMMKMEP {
+        for (k, v) in &self.KHGBGLLGBFE {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(42)?; // Tag.
+            os.write_raw_varint32(106)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
+        };
+        for v in &self.EBKEMIEJMKM {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -155,8 +155,8 @@ impl ::protobuf::Message for FightActivityDataChangeScNotify {
     }
 
     fn clear(&mut self) {
-        self.FILOFJLGANE.clear();
-        self.HMEPCMMKMEP.clear();
+        self.KHGBGLLGBFE.clear();
+        self.EBKEMIEJMKM.clear();
         self.special_fields.clear();
     }
 
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for FightActivityDataChangeScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%FightActivityDataChangeScNotify.proto\x1a\x18FightActivityGroup.proto\
-    \"\xed\x01\n\x1fFightActivityDataChangeScNotify\x125\n\x0bFILOFJLGANE\
-    \x18\x06\x20\x03(\x0b2\x13.FightActivityGroupR\x0bFILOFJLGANE\x12S\n\x0b\
-    HMEPCMMKMEP\x18\x05\x20\x03(\x0b21.FightActivityDataChangeScNotify.HMEPC\
-    MMKMEPEntryR\x0bHMEPCMMKMEP\x1a>\n\x10HMEPCMMKMEPEntry\x12\x10\n\x03key\
+    \"\xed\x01\n\x1fFightActivityDataChangeScNotify\x12S\n\x0bKHGBGLLGBFE\
+    \x18\r\x20\x03(\x0b21.FightActivityDataChangeScNotify.KHGBGLLGBFEEntryR\
+    \x0bKHGBGLLGBFE\x125\n\x0bEBKEMIEJMKM\x18\x06\x20\x03(\x0b2\x13.FightAct\
+    ivityGroupR\x0bEBKEMIEJMKM\x1a>\n\x10KHGBGLLGBFEEntry\x12\x10\n\x03key\
     \x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05va\
     lue:\x028\x01b\x06proto3\
 ";

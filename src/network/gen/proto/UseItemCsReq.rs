@@ -29,18 +29,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UseItemCsReq {
     // message fields
+    // @@protoc_insertion_point(field:UseItemCsReq.AACGCNJHDPF)
+    pub AACGCNJHDPF: u32,
     // @@protoc_insertion_point(field:UseItemCsReq.base_avatar_id)
     pub base_avatar_id: u32,
-    // @@protoc_insertion_point(field:UseItemCsReq.use_item_count)
-    pub use_item_count: u32,
-    // @@protoc_insertion_point(field:UseItemCsReq.use_item_id)
-    pub use_item_id: u32,
-    // @@protoc_insertion_point(field:UseItemCsReq.MLHBIFIFHHK)
-    pub MLHBIFIFHHK: bool,
-    // @@protoc_insertion_point(field:UseItemCsReq.optional_reward_id)
-    pub optional_reward_id: u32,
-    // @@protoc_insertion_point(field:UseItemCsReq.AJMLMLFLJIJ)
-    pub AJMLMLFLJIJ: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
+    // @@protoc_insertion_point(field:UseItemCsReq.ENPCGJBKMGJ)
+    pub ENPCGJBKMGJ: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
+    // @@protoc_insertion_point(field:UseItemCsReq.KIAOMBGCLHD)
+    pub KIAOMBGCLHD: u32,
+    // @@protoc_insertion_point(field:UseItemCsReq.ADLEGBJLLEA)
+    pub ADLEGBJLLEA: u32,
+    // @@protoc_insertion_point(field:UseItemCsReq.DBIOHFLJCJF)
+    pub DBIOHFLJCJF: bool,
     // special fields
     // @@protoc_insertion_point(special_field:UseItemCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,34 +61,34 @@ impl UseItemCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AACGCNJHDPF",
+            |m: &UseItemCsReq| { &m.AACGCNJHDPF },
+            |m: &mut UseItemCsReq| { &mut m.AACGCNJHDPF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "base_avatar_id",
             |m: &UseItemCsReq| { &m.base_avatar_id },
             |m: &mut UseItemCsReq| { &mut m.base_avatar_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "use_item_count",
-            |m: &UseItemCsReq| { &m.use_item_count },
-            |m: &mut UseItemCsReq| { &mut m.use_item_count },
+            "ENPCGJBKMGJ",
+            |m: &UseItemCsReq| { &m.ENPCGJBKMGJ },
+            |m: &mut UseItemCsReq| { &mut m.ENPCGJBKMGJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "use_item_id",
-            |m: &UseItemCsReq| { &m.use_item_id },
-            |m: &mut UseItemCsReq| { &mut m.use_item_id },
+            "KIAOMBGCLHD",
+            |m: &UseItemCsReq| { &m.KIAOMBGCLHD },
+            |m: &mut UseItemCsReq| { &mut m.KIAOMBGCLHD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MLHBIFIFHHK",
-            |m: &UseItemCsReq| { &m.MLHBIFIFHHK },
-            |m: &mut UseItemCsReq| { &mut m.MLHBIFIFHHK },
+            "ADLEGBJLLEA",
+            |m: &UseItemCsReq| { &m.ADLEGBJLLEA },
+            |m: &mut UseItemCsReq| { &mut m.ADLEGBJLLEA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "optional_reward_id",
-            |m: &UseItemCsReq| { &m.optional_reward_id },
-            |m: &mut UseItemCsReq| { &mut m.optional_reward_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AJMLMLFLJIJ",
-            |m: &UseItemCsReq| { &m.AJMLMLFLJIJ },
-            |m: &mut UseItemCsReq| { &mut m.AJMLMLFLJIJ },
+            "DBIOHFLJCJF",
+            |m: &UseItemCsReq| { &m.DBIOHFLJCJF },
+            |m: &mut UseItemCsReq| { &mut m.DBIOHFLJCJF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UseItemCsReq>(
             "UseItemCsReq",
@@ -108,23 +108,23 @@ impl ::protobuf::Message for UseItemCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                48 => {
+                    self.AACGCNJHDPF = is.read_uint32()?;
+                },
+                8 => {
                     self.base_avatar_id = is.read_uint32()?;
                 },
+                16 => {
+                    self.ENPCGJBKMGJ = is.read_enum_or_unknown()?;
+                },
+                72 => {
+                    self.KIAOMBGCLHD = is.read_uint32()?;
+                },
+                120 => {
+                    self.ADLEGBJLLEA = is.read_uint32()?;
+                },
                 112 => {
-                    self.use_item_count = is.read_uint32()?;
-                },
-                32 => {
-                    self.use_item_id = is.read_uint32()?;
-                },
-                80 => {
-                    self.MLHBIFIFHHK = is.read_bool()?;
-                },
-                48 => {
-                    self.optional_reward_id = is.read_uint32()?;
-                },
-                104 => {
-                    self.AJMLMLFLJIJ = is.read_enum_or_unknown()?;
+                    self.DBIOHFLJCJF = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -138,23 +138,23 @@ impl ::protobuf::Message for UseItemCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.AACGCNJHDPF != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.AACGCNJHDPF);
+        }
         if self.base_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.base_avatar_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.base_avatar_id);
         }
-        if self.use_item_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.use_item_count);
+        if self.ENPCGJBKMGJ != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(2, self.ENPCGJBKMGJ.value());
         }
-        if self.use_item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.use_item_id);
+        if self.KIAOMBGCLHD != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.KIAOMBGCLHD);
         }
-        if self.MLHBIFIFHHK != false {
+        if self.ADLEGBJLLEA != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.ADLEGBJLLEA);
+        }
+        if self.DBIOHFLJCJF != false {
             my_size += 1 + 1;
-        }
-        if self.optional_reward_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.optional_reward_id);
-        }
-        if self.AJMLMLFLJIJ != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(13, self.AJMLMLFLJIJ.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,23 +162,23 @@ impl ::protobuf::Message for UseItemCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.AACGCNJHDPF != 0 {
+            os.write_uint32(6, self.AACGCNJHDPF)?;
+        }
         if self.base_avatar_id != 0 {
-            os.write_uint32(8, self.base_avatar_id)?;
+            os.write_uint32(1, self.base_avatar_id)?;
         }
-        if self.use_item_count != 0 {
-            os.write_uint32(14, self.use_item_count)?;
+        if self.ENPCGJBKMGJ != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.ENPCGJBKMGJ))?;
         }
-        if self.use_item_id != 0 {
-            os.write_uint32(4, self.use_item_id)?;
+        if self.KIAOMBGCLHD != 0 {
+            os.write_uint32(9, self.KIAOMBGCLHD)?;
         }
-        if self.MLHBIFIFHHK != false {
-            os.write_bool(10, self.MLHBIFIFHHK)?;
+        if self.ADLEGBJLLEA != 0 {
+            os.write_uint32(15, self.ADLEGBJLLEA)?;
         }
-        if self.optional_reward_id != 0 {
-            os.write_uint32(6, self.optional_reward_id)?;
-        }
-        if self.AJMLMLFLJIJ != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.AJMLMLFLJIJ))?;
+        if self.DBIOHFLJCJF != false {
+            os.write_bool(14, self.DBIOHFLJCJF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,23 +197,23 @@ impl ::protobuf::Message for UseItemCsReq {
     }
 
     fn clear(&mut self) {
+        self.AACGCNJHDPF = 0;
         self.base_avatar_id = 0;
-        self.use_item_count = 0;
-        self.use_item_id = 0;
-        self.MLHBIFIFHHK = false;
-        self.optional_reward_id = 0;
-        self.AJMLMLFLJIJ = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE);
+        self.ENPCGJBKMGJ = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE);
+        self.KIAOMBGCLHD = 0;
+        self.ADLEGBJLLEA = 0;
+        self.DBIOHFLJCJF = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UseItemCsReq {
         static instance: UseItemCsReq = UseItemCsReq {
+            AACGCNJHDPF: 0,
             base_avatar_id: 0,
-            use_item_count: 0,
-            use_item_id: 0,
-            MLHBIFIFHHK: false,
-            optional_reward_id: 0,
-            AJMLMLFLJIJ: ::protobuf::EnumOrUnknown::from_i32(0),
+            ENPCGJBKMGJ: ::protobuf::EnumOrUnknown::from_i32(0),
+            KIAOMBGCLHD: 0,
+            ADLEGBJLLEA: 0,
+            DBIOHFLJCJF: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -238,13 +238,13 @@ impl ::protobuf::reflect::ProtobufValue for UseItemCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12UseItemCsReq.proto\x1a\x10AvatarType.proto\"\xf9\x01\n\x0cUseItemC\
-    sReq\x12$\n\x0ebase_avatar_id\x18\x08\x20\x01(\rR\x0cbaseAvatarId\x12$\n\
-    \x0euse_item_count\x18\x0e\x20\x01(\rR\x0cuseItemCount\x12\x1e\n\x0buse_\
-    item_id\x18\x04\x20\x01(\rR\tuseItemId\x12\x20\n\x0bMLHBIFIFHHK\x18\n\
-    \x20\x01(\x08R\x0bMLHBIFIFHHK\x12,\n\x12optional_reward_id\x18\x06\x20\
-    \x01(\rR\x10optionalRewardId\x12-\n\x0bAJMLMLFLJIJ\x18\r\x20\x01(\x0e2\
-    \x0b.AvatarTypeR\x0bAJMLMLFLJIJB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x12UseItemCsReq.proto\x1a\x10AvatarType.proto\"\xeb\x01\n\x0cUseItemC\
+    sReq\x12\x20\n\x0bAACGCNJHDPF\x18\x06\x20\x01(\rR\x0bAACGCNJHDPF\x12$\n\
+    \x0ebase_avatar_id\x18\x01\x20\x01(\rR\x0cbaseAvatarId\x12-\n\x0bENPCGJB\
+    KMGJ\x18\x02\x20\x01(\x0e2\x0b.AvatarTypeR\x0bENPCGJBKMGJ\x12\x20\n\x0bK\
+    IAOMBGCLHD\x18\t\x20\x01(\rR\x0bKIAOMBGCLHD\x12\x20\n\x0bADLEGBJLLEA\x18\
+    \x0f\x20\x01(\rR\x0bADLEGBJLLEA\x12\x20\n\x0bDBIOHFLJCJF\x18\x0e\x20\x01\
+    (\x08R\x0bDBIOHFLJCJFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

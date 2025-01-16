@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ExchangeRogueBuffWithMiracleCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ExchangeRogueBuffWithMiracleCsReq.LMFFBHEOONE)
-    pub LMFFBHEOONE: u32,
-    // @@protoc_insertion_point(field:ExchangeRogueBuffWithMiracleCsReq.ALKCACAFBME)
-    pub ALKCACAFBME: u32,
+    // @@protoc_insertion_point(field:ExchangeRogueBuffWithMiracleCsReq.CMDGNACLGID)
+    pub CMDGNACLGID: u32,
+    // @@protoc_insertion_point(field:ExchangeRogueBuffWithMiracleCsReq.FODEHAMPGJB)
+    pub FODEHAMPGJB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ExchangeRogueBuffWithMiracleCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl ExchangeRogueBuffWithMiracleCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LMFFBHEOONE",
-            |m: &ExchangeRogueBuffWithMiracleCsReq| { &m.LMFFBHEOONE },
-            |m: &mut ExchangeRogueBuffWithMiracleCsReq| { &mut m.LMFFBHEOONE },
+            "CMDGNACLGID",
+            |m: &ExchangeRogueBuffWithMiracleCsReq| { &m.CMDGNACLGID },
+            |m: &mut ExchangeRogueBuffWithMiracleCsReq| { &mut m.CMDGNACLGID },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ALKCACAFBME",
-            |m: &ExchangeRogueBuffWithMiracleCsReq| { &m.ALKCACAFBME },
-            |m: &mut ExchangeRogueBuffWithMiracleCsReq| { &mut m.ALKCACAFBME },
+            "FODEHAMPGJB",
+            |m: &ExchangeRogueBuffWithMiracleCsReq| { &m.FODEHAMPGJB },
+            |m: &mut ExchangeRogueBuffWithMiracleCsReq| { &mut m.FODEHAMPGJB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ExchangeRogueBuffWithMiracleCsReq>(
             "ExchangeRogueBuffWithMiracleCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for ExchangeRogueBuffWithMiracleCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.LMFFBHEOONE = is.read_uint32()?;
+                40 => {
+                    self.CMDGNACLGID = is.read_uint32()?;
                 },
-                8 => {
-                    self.ALKCACAFBME = is.read_uint32()?;
+                64 => {
+                    self.FODEHAMPGJB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for ExchangeRogueBuffWithMiracleCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LMFFBHEOONE != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.LMFFBHEOONE);
+        if self.CMDGNACLGID != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.CMDGNACLGID);
         }
-        if self.ALKCACAFBME != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.ALKCACAFBME);
+        if self.FODEHAMPGJB != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.FODEHAMPGJB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for ExchangeRogueBuffWithMiracleCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LMFFBHEOONE != 0 {
-            os.write_uint32(13, self.LMFFBHEOONE)?;
+        if self.CMDGNACLGID != 0 {
+            os.write_uint32(5, self.CMDGNACLGID)?;
         }
-        if self.ALKCACAFBME != 0 {
-            os.write_uint32(1, self.ALKCACAFBME)?;
+        if self.FODEHAMPGJB != 0 {
+            os.write_uint32(8, self.FODEHAMPGJB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for ExchangeRogueBuffWithMiracleCsReq {
     }
 
     fn clear(&mut self) {
-        self.LMFFBHEOONE = 0;
-        self.ALKCACAFBME = 0;
+        self.CMDGNACLGID = 0;
+        self.FODEHAMPGJB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ExchangeRogueBuffWithMiracleCsReq {
         static instance: ExchangeRogueBuffWithMiracleCsReq = ExchangeRogueBuffWithMiracleCsReq {
-            LMFFBHEOONE: 0,
-            ALKCACAFBME: 0,
+            CMDGNACLGID: 0,
+            FODEHAMPGJB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for ExchangeRogueBuffWithMiracleCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'ExchangeRogueBuffWithMiracleCsReq.proto\"g\n!ExchangeRogueBuffWithMir\
-    acleCsReq\x12\x20\n\x0bLMFFBHEOONE\x18\r\x20\x01(\rR\x0bLMFFBHEOONE\x12\
-    \x20\n\x0bALKCACAFBME\x18\x01\x20\x01(\rR\x0bALKCACAFBMEb\x06proto3\
+    acleCsReq\x12\x20\n\x0bCMDGNACLGID\x18\x05\x20\x01(\rR\x0bCMDGNACLGID\
+    \x12\x20\n\x0bFODEHAMPGJB\x18\x08\x20\x01(\rR\x0bFODEHAMPGJBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

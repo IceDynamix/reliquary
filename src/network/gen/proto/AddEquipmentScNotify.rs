@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AddEquipmentScNotify {
     // message fields
-    // @@protoc_insertion_point(field:AddEquipmentScNotify.DCMFEJJJFIA)
-    pub DCMFEJJJFIA: u32,
+    // @@protoc_insertion_point(field:AddEquipmentScNotify.GCOMEOGCKEN)
+    pub GCOMEOGCKEN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AddEquipmentScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl AddEquipmentScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DCMFEJJJFIA",
-            |m: &AddEquipmentScNotify| { &m.DCMFEJJJFIA },
-            |m: &mut AddEquipmentScNotify| { &mut m.DCMFEJJJFIA },
+            "GCOMEOGCKEN",
+            |m: &AddEquipmentScNotify| { &m.GCOMEOGCKEN },
+            |m: &mut AddEquipmentScNotify| { &mut m.GCOMEOGCKEN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AddEquipmentScNotify>(
             "AddEquipmentScNotify",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for AddEquipmentScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.DCMFEJJJFIA = is.read_uint32()?;
+                56 => {
+                    self.GCOMEOGCKEN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for AddEquipmentScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DCMFEJJJFIA != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.DCMFEJJJFIA);
+        if self.GCOMEOGCKEN != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.GCOMEOGCKEN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for AddEquipmentScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DCMFEJJJFIA != 0 {
-            os.write_uint32(9, self.DCMFEJJJFIA)?;
+        if self.GCOMEOGCKEN != 0 {
+            os.write_uint32(7, self.GCOMEOGCKEN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for AddEquipmentScNotify {
     }
 
     fn clear(&mut self) {
-        self.DCMFEJJJFIA = 0;
+        self.GCOMEOGCKEN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AddEquipmentScNotify {
         static instance: AddEquipmentScNotify = AddEquipmentScNotify {
-            DCMFEJJJFIA: 0,
+            GCOMEOGCKEN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for AddEquipmentScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aAddEquipmentScNotify.proto\"8\n\x14AddEquipmentScNotify\x12\x20\n\
-    \x0bDCMFEJJJFIA\x18\t\x20\x01(\rR\x0bDCMFEJJJFIAb\x06proto3\
+    \x0bGCOMEOGCKEN\x18\x07\x20\x01(\rR\x0bGCOMEOGCKENb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

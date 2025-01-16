@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ContentPackageUnlockScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ContentPackageUnlockScRsp.HBCAFGHLIOP)
-    pub HBCAFGHLIOP: u32,
-    // @@protoc_insertion_point(field:ContentPackageUnlockScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:ContentPackageUnlockScRsp.AKCMBCMDMBC)
+    pub AKCMBCMDMBC: u32,
+    // @@protoc_insertion_point(field:ContentPackageUnlockScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ContentPackageUnlockScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl ContentPackageUnlockScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HBCAFGHLIOP",
-            |m: &ContentPackageUnlockScRsp| { &m.HBCAFGHLIOP },
-            |m: &mut ContentPackageUnlockScRsp| { &mut m.HBCAFGHLIOP },
+            "AKCMBCMDMBC",
+            |m: &ContentPackageUnlockScRsp| { &m.AKCMBCMDMBC },
+            |m: &mut ContentPackageUnlockScRsp| { &mut m.AKCMBCMDMBC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &ContentPackageUnlockScRsp| { &m.ADADHIHDHJC },
-            |m: &mut ContentPackageUnlockScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &ContentPackageUnlockScRsp| { &m.retcode },
+            |m: &mut ContentPackageUnlockScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ContentPackageUnlockScRsp>(
             "ContentPackageUnlockScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for ContentPackageUnlockScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.HBCAFGHLIOP = is.read_uint32()?;
+                48 => {
+                    self.AKCMBCMDMBC = is.read_uint32()?;
                 },
-                80 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                96 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for ContentPackageUnlockScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HBCAFGHLIOP != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.HBCAFGHLIOP);
+        if self.AKCMBCMDMBC != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.AKCMBCMDMBC);
         }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for ContentPackageUnlockScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HBCAFGHLIOP != 0 {
-            os.write_uint32(9, self.HBCAFGHLIOP)?;
+        if self.AKCMBCMDMBC != 0 {
+            os.write_uint32(6, self.AKCMBCMDMBC)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(10, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(12, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for ContentPackageUnlockScRsp {
     }
 
     fn clear(&mut self) {
-        self.HBCAFGHLIOP = 0;
-        self.ADADHIHDHJC = 0;
+        self.AKCMBCMDMBC = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ContentPackageUnlockScRsp {
         static instance: ContentPackageUnlockScRsp = ContentPackageUnlockScRsp {
-            HBCAFGHLIOP: 0,
-            ADADHIHDHJC: 0,
+            AKCMBCMDMBC: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for ContentPackageUnlockScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fContentPackageUnlockScRsp.proto\"_\n\x19ContentPackageUnlockScRsp\
-    \x12\x20\n\x0bHBCAFGHLIOP\x18\t\x20\x01(\rR\x0bHBCAFGHLIOP\x12\x20\n\x0b\
-    ADADHIHDHJC\x18\n\x20\x01(\rR\x0bADADHIHDHJCb\x06proto3\
+    \n\x1fContentPackageUnlockScRsp.proto\"W\n\x19ContentPackageUnlockScRsp\
+    \x12\x20\n\x0bAKCMBCMDMBC\x18\x06\x20\x01(\rR\x0bAKCMBCMDMBC\x12\x18\n\
+    \x07retcode\x18\x0c\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

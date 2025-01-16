@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightMatch3SwapScRsp {
     // message fields
-    // @@protoc_insertion_point(field:FightMatch3SwapScRsp.HOFBEKABNNL)
-    pub HOFBEKABNNL: bool,
-    // @@protoc_insertion_point(field:FightMatch3SwapScRsp.NAGKACACHGD)
-    pub NAGKACACHGD: u32,
-    // @@protoc_insertion_point(field:FightMatch3SwapScRsp.NBEKPGDILJE)
-    pub NBEKPGDILJE: ::protobuf::MessageField<super::ELAMGBPKDFA::ELAMGBPKDFA>,
-    // @@protoc_insertion_point(field:FightMatch3SwapScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:FightMatch3SwapScRsp.GJHBHNBPKMG)
+    pub GJHBHNBPKMG: bool,
+    // @@protoc_insertion_point(field:FightMatch3SwapScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:FightMatch3SwapScRsp.IDKJPDGJCDK)
+    pub IDKJPDGJCDK: ::protobuf::MessageField<super::ABOIFBHJJJH::ABOIFBHJJJH>,
+    // @@protoc_insertion_point(field:FightMatch3SwapScRsp.LHFLCFNAOPB)
+    pub LHFLCFNAOPB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FightMatch3SwapScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl FightMatch3SwapScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HOFBEKABNNL",
-            |m: &FightMatch3SwapScRsp| { &m.HOFBEKABNNL },
-            |m: &mut FightMatch3SwapScRsp| { &mut m.HOFBEKABNNL },
+            "GJHBHNBPKMG",
+            |m: &FightMatch3SwapScRsp| { &m.GJHBHNBPKMG },
+            |m: &mut FightMatch3SwapScRsp| { &mut m.GJHBHNBPKMG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NAGKACACHGD",
-            |m: &FightMatch3SwapScRsp| { &m.NAGKACACHGD },
-            |m: &mut FightMatch3SwapScRsp| { &mut m.NAGKACACHGD },
+            "retcode",
+            |m: &FightMatch3SwapScRsp| { &m.retcode },
+            |m: &mut FightMatch3SwapScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ELAMGBPKDFA::ELAMGBPKDFA>(
-            "NBEKPGDILJE",
-            |m: &FightMatch3SwapScRsp| { &m.NBEKPGDILJE },
-            |m: &mut FightMatch3SwapScRsp| { &mut m.NBEKPGDILJE },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ABOIFBHJJJH::ABOIFBHJJJH>(
+            "IDKJPDGJCDK",
+            |m: &FightMatch3SwapScRsp| { &m.IDKJPDGJCDK },
+            |m: &mut FightMatch3SwapScRsp| { &mut m.IDKJPDGJCDK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &FightMatch3SwapScRsp| { &m.ADADHIHDHJC },
-            |m: &mut FightMatch3SwapScRsp| { &mut m.ADADHIHDHJC },
+            "LHFLCFNAOPB",
+            |m: &FightMatch3SwapScRsp| { &m.LHFLCFNAOPB },
+            |m: &mut FightMatch3SwapScRsp| { &mut m.LHFLCFNAOPB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightMatch3SwapScRsp>(
             "FightMatch3SwapScRsp",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for FightMatch3SwapScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.HOFBEKABNNL = is.read_bool()?;
-                },
-                80 => {
-                    self.NAGKACACHGD = is.read_uint32()?;
-                },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NBEKPGDILJE)?;
-                },
                 48 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                    self.GJHBHNBPKMG = is.read_bool()?;
+                },
+                32 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IDKJPDGJCDK)?;
+                },
+                72 => {
+                    self.LHFLCFNAOPB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,18 +118,18 @@ impl ::protobuf::Message for FightMatch3SwapScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HOFBEKABNNL != false {
+        if self.GJHBHNBPKMG != false {
             my_size += 1 + 1;
         }
-        if self.NAGKACACHGD != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.NAGKACACHGD);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
-        if let Some(v) = self.NBEKPGDILJE.as_ref() {
+        if let Some(v) = self.IDKJPDGJCDK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.ADADHIHDHJC);
+        if self.LHFLCFNAOPB != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.LHFLCFNAOPB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for FightMatch3SwapScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HOFBEKABNNL != false {
-            os.write_bool(9, self.HOFBEKABNNL)?;
+        if self.GJHBHNBPKMG != false {
+            os.write_bool(6, self.GJHBHNBPKMG)?;
         }
-        if self.NAGKACACHGD != 0 {
-            os.write_uint32(10, self.NAGKACACHGD)?;
+        if self.retcode != 0 {
+            os.write_uint32(4, self.retcode)?;
         }
-        if let Some(v) = self.NBEKPGDILJE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if let Some(v) = self.IDKJPDGJCDK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(6, self.ADADHIHDHJC)?;
+        if self.LHFLCFNAOPB != 0 {
+            os.write_uint32(9, self.LHFLCFNAOPB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for FightMatch3SwapScRsp {
     }
 
     fn clear(&mut self) {
-        self.HOFBEKABNNL = false;
-        self.NAGKACACHGD = 0;
-        self.NBEKPGDILJE.clear();
-        self.ADADHIHDHJC = 0;
+        self.GJHBHNBPKMG = false;
+        self.retcode = 0;
+        self.IDKJPDGJCDK.clear();
+        self.LHFLCFNAOPB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightMatch3SwapScRsp {
         static instance: FightMatch3SwapScRsp = FightMatch3SwapScRsp {
-            HOFBEKABNNL: false,
-            NAGKACACHGD: 0,
-            NBEKPGDILJE: ::protobuf::MessageField::none(),
-            ADADHIHDHJC: 0,
+            GJHBHNBPKMG: false,
+            retcode: 0,
+            IDKJPDGJCDK: ::protobuf::MessageField::none(),
+            LHFLCFNAOPB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,12 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for FightMatch3SwapScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aFightMatch3SwapScRsp.proto\x1a\x11ELAMGBPKDFA.proto\"\xac\x01\n\
-    \x14FightMatch3SwapScRsp\x12\x20\n\x0bHOFBEKABNNL\x18\t\x20\x01(\x08R\
-    \x0bHOFBEKABNNL\x12\x20\n\x0bNAGKACACHGD\x18\n\x20\x01(\rR\x0bNAGKACACHG\
-    D\x12.\n\x0bNBEKPGDILJE\x18\x08\x20\x01(\x0b2\x0c.ELAMGBPKDFAR\x0bNBEKPG\
-    DILJE\x12\x20\n\x0bADADHIHDHJC\x18\x06\x20\x01(\rR\x0bADADHIHDHJCb\x06pr\
-    oto3\
+    \n\x1aFightMatch3SwapScRsp.proto\x1a\x11ABOIFBHJJJH.proto\"\xa4\x01\n\
+    \x14FightMatch3SwapScRsp\x12\x20\n\x0bGJHBHNBPKMG\x18\x06\x20\x01(\x08R\
+    \x0bGJHBHNBPKMG\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12.\
+    \n\x0bIDKJPDGJCDK\x18\x0b\x20\x01(\x0b2\x0c.ABOIFBHJJJHR\x0bIDKJPDGJCDK\
+    \x12\x20\n\x0bLHFLCFNAOPB\x18\t\x20\x01(\rR\x0bLHFLCFNAOPBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -226,7 +225,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ELAMGBPKDFA::file_descriptor().clone());
+            deps.push(super::ABOIFBHJJJH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FightMatch3SwapScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

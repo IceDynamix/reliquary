@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartStarFightLevelScRsp {
     // message fields
-    // @@protoc_insertion_point(field:StartStarFightLevelScRsp.BBKGPAJCCBM)
-    pub BBKGPAJCCBM: ::protobuf::MessageField<super::CHDPLFOHLCN::CHDPLFOHLCN>,
-    // @@protoc_insertion_point(field:StartStarFightLevelScRsp.KONGAADEJEL)
-    pub KONGAADEJEL: u32,
-    // @@protoc_insertion_point(field:StartStarFightLevelScRsp.ILIFHHJFMIH)
-    pub ILIFHHJFMIH: u32,
-    // @@protoc_insertion_point(field:StartStarFightLevelScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:StartStarFightLevelScRsp.IBAFDOBBEGD)
+    pub IBAFDOBBEGD: u32,
+    // @@protoc_insertion_point(field:StartStarFightLevelScRsp.IOPPGEGDHGL)
+    pub IOPPGEGDHGL: u32,
+    // @@protoc_insertion_point(field:StartStarFightLevelScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:StartStarFightLevelScRsp.LPPMFJOCKNO)
+    pub LPPMFJOCKNO: ::protobuf::MessageField<super::DDCPCKIHMEF::DDCPCKIHMEF>,
     // special fields
     // @@protoc_insertion_point(special_field:StartStarFightLevelScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,25 +56,25 @@ impl StartStarFightLevelScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CHDPLFOHLCN::CHDPLFOHLCN>(
-            "BBKGPAJCCBM",
-            |m: &StartStarFightLevelScRsp| { &m.BBKGPAJCCBM },
-            |m: &mut StartStarFightLevelScRsp| { &mut m.BBKGPAJCCBM },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IBAFDOBBEGD",
+            |m: &StartStarFightLevelScRsp| { &m.IBAFDOBBEGD },
+            |m: &mut StartStarFightLevelScRsp| { &mut m.IBAFDOBBEGD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KONGAADEJEL",
-            |m: &StartStarFightLevelScRsp| { &m.KONGAADEJEL },
-            |m: &mut StartStarFightLevelScRsp| { &mut m.KONGAADEJEL },
+            "IOPPGEGDHGL",
+            |m: &StartStarFightLevelScRsp| { &m.IOPPGEGDHGL },
+            |m: &mut StartStarFightLevelScRsp| { &mut m.IOPPGEGDHGL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ILIFHHJFMIH",
-            |m: &StartStarFightLevelScRsp| { &m.ILIFHHJFMIH },
-            |m: &mut StartStarFightLevelScRsp| { &mut m.ILIFHHJFMIH },
+            "retcode",
+            |m: &StartStarFightLevelScRsp| { &m.retcode },
+            |m: &mut StartStarFightLevelScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &StartStarFightLevelScRsp| { &m.ADADHIHDHJC },
-            |m: &mut StartStarFightLevelScRsp| { &mut m.ADADHIHDHJC },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DDCPCKIHMEF::DDCPCKIHMEF>(
+            "LPPMFJOCKNO",
+            |m: &StartStarFightLevelScRsp| { &m.LPPMFJOCKNO },
+            |m: &mut StartStarFightLevelScRsp| { &mut m.LPPMFJOCKNO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartStarFightLevelScRsp>(
             "StartStarFightLevelScRsp",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for StartStarFightLevelScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BBKGPAJCCBM)?;
-                },
-                8 => {
-                    self.KONGAADEJEL = is.read_uint32()?;
-                },
-                80 => {
-                    self.ILIFHHJFMIH = is.read_uint32()?;
+                64 => {
+                    self.IBAFDOBBEGD = is.read_uint32()?;
                 },
                 72 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                    self.IOPPGEGDHGL = is.read_uint32()?;
+                },
+                80 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LPPMFJOCKNO)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,18 +118,18 @@ impl ::protobuf::Message for StartStarFightLevelScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.BBKGPAJCCBM.as_ref() {
+        if self.IBAFDOBBEGD != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.IBAFDOBBEGD);
+        }
+        if self.IOPPGEGDHGL != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.IOPPGEGDHGL);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+        }
+        if let Some(v) = self.LPPMFJOCKNO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.KONGAADEJEL != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.KONGAADEJEL);
-        }
-        if self.ILIFHHJFMIH != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.ILIFHHJFMIH);
-        }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.ADADHIHDHJC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for StartStarFightLevelScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.BBKGPAJCCBM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if self.IBAFDOBBEGD != 0 {
+            os.write_uint32(8, self.IBAFDOBBEGD)?;
         }
-        if self.KONGAADEJEL != 0 {
-            os.write_uint32(1, self.KONGAADEJEL)?;
+        if self.IOPPGEGDHGL != 0 {
+            os.write_uint32(9, self.IOPPGEGDHGL)?;
         }
-        if self.ILIFHHJFMIH != 0 {
-            os.write_uint32(10, self.ILIFHHJFMIH)?;
+        if self.retcode != 0 {
+            os.write_uint32(10, self.retcode)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(9, self.ADADHIHDHJC)?;
+        if let Some(v) = self.LPPMFJOCKNO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for StartStarFightLevelScRsp {
     }
 
     fn clear(&mut self) {
-        self.BBKGPAJCCBM.clear();
-        self.KONGAADEJEL = 0;
-        self.ILIFHHJFMIH = 0;
-        self.ADADHIHDHJC = 0;
+        self.IBAFDOBBEGD = 0;
+        self.IOPPGEGDHGL = 0;
+        self.retcode = 0;
+        self.LPPMFJOCKNO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartStarFightLevelScRsp {
         static instance: StartStarFightLevelScRsp = StartStarFightLevelScRsp {
-            BBKGPAJCCBM: ::protobuf::MessageField::none(),
-            KONGAADEJEL: 0,
-            ILIFHHJFMIH: 0,
-            ADADHIHDHJC: 0,
+            IBAFDOBBEGD: 0,
+            IOPPGEGDHGL: 0,
+            retcode: 0,
+            LPPMFJOCKNO: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,12 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for StartStarFightLevelScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eStartStarFightLevelScRsp.proto\x1a\x11CHDPLFOHLCN.proto\"\xb0\x01\
-    \n\x18StartStarFightLevelScRsp\x12.\n\x0bBBKGPAJCCBM\x18\x0b\x20\x01(\
-    \x0b2\x0c.CHDPLFOHLCNR\x0bBBKGPAJCCBM\x12\x20\n\x0bKONGAADEJEL\x18\x01\
-    \x20\x01(\rR\x0bKONGAADEJEL\x12\x20\n\x0bILIFHHJFMIH\x18\n\x20\x01(\rR\
-    \x0bILIFHHJFMIH\x12\x20\n\x0bADADHIHDHJC\x18\t\x20\x01(\rR\x0bADADHIHDHJ\
-    Cb\x06proto3\
+    \n\x1eStartStarFightLevelScRsp.proto\x1a\x11DDCPCKIHMEF.proto\"\xa8\x01\
+    \n\x18StartStarFightLevelScRsp\x12\x20\n\x0bIBAFDOBBEGD\x18\x08\x20\x01(\
+    \rR\x0bIBAFDOBBEGD\x12\x20\n\x0bIOPPGEGDHGL\x18\t\x20\x01(\rR\x0bIOPPGEG\
+    DHGL\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcode\x12.\n\x0bLPPMFJO\
+    CKNO\x18\x05\x20\x01(\x0b2\x0c.DDCPCKIHMEFR\x0bLPPMFJOCKNOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -226,7 +225,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::CHDPLFOHLCN::file_descriptor().clone());
+            deps.push(super::DDCPCKIHMEF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(StartStarFightLevelScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

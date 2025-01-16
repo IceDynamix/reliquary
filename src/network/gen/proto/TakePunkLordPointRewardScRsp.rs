@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakePunkLordPointRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakePunkLordPointRewardScRsp.JKOCJIMAGBN)
-    pub JKOCJIMAGBN: u32,
-    // @@protoc_insertion_point(field:TakePunkLordPointRewardScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:TakePunkLordPointRewardScRsp.ICDOHKPKMAH)
-    pub ICDOHKPKMAH: bool,
-    // @@protoc_insertion_point(field:TakePunkLordPointRewardScRsp.ELPMNKHEPKJ)
-    pub ELPMNKHEPKJ: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:TakePunkLordPointRewardScRsp.AECJKNIGHJK)
+    pub AECJKNIGHJK: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:TakePunkLordPointRewardScRsp.HGOIJNKNIOA)
+    pub HGOIJNKNIOA: bool,
+    // @@protoc_insertion_point(field:TakePunkLordPointRewardScRsp.level)
+    pub level: u32,
+    // @@protoc_insertion_point(field:TakePunkLordPointRewardScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakePunkLordPointRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,25 +56,25 @@ impl TakePunkLordPointRewardScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JKOCJIMAGBN",
-            |m: &TakePunkLordPointRewardScRsp| { &m.JKOCJIMAGBN },
-            |m: &mut TakePunkLordPointRewardScRsp| { &mut m.JKOCJIMAGBN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &TakePunkLordPointRewardScRsp| { &m.ADADHIHDHJC },
-            |m: &mut TakePunkLordPointRewardScRsp| { &mut m.ADADHIHDHJC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ICDOHKPKMAH",
-            |m: &TakePunkLordPointRewardScRsp| { &m.ICDOHKPKMAH },
-            |m: &mut TakePunkLordPointRewardScRsp| { &mut m.ICDOHKPKMAH },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "ELPMNKHEPKJ",
-            |m: &TakePunkLordPointRewardScRsp| { &m.ELPMNKHEPKJ },
-            |m: &mut TakePunkLordPointRewardScRsp| { &mut m.ELPMNKHEPKJ },
+            "AECJKNIGHJK",
+            |m: &TakePunkLordPointRewardScRsp| { &m.AECJKNIGHJK },
+            |m: &mut TakePunkLordPointRewardScRsp| { &mut m.AECJKNIGHJK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HGOIJNKNIOA",
+            |m: &TakePunkLordPointRewardScRsp| { &m.HGOIJNKNIOA },
+            |m: &mut TakePunkLordPointRewardScRsp| { &mut m.HGOIJNKNIOA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &TakePunkLordPointRewardScRsp| { &m.level },
+            |m: &mut TakePunkLordPointRewardScRsp| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &TakePunkLordPointRewardScRsp| { &m.retcode },
+            |m: &mut TakePunkLordPointRewardScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakePunkLordPointRewardScRsp>(
             "TakePunkLordPointRewardScRsp",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for TakePunkLordPointRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.JKOCJIMAGBN = is.read_uint32()?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AECJKNIGHJK)?;
                 },
-                120 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                48 => {
+                    self.HGOIJNKNIOA = is.read_bool()?;
+                },
+                96 => {
+                    self.level = is.read_uint32()?;
                 },
                 64 => {
-                    self.ICDOHKPKMAH = is.read_bool()?;
-                },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ELPMNKHEPKJ)?;
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,18 +118,18 @@ impl ::protobuf::Message for TakePunkLordPointRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JKOCJIMAGBN != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.JKOCJIMAGBN);
-        }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.ADADHIHDHJC);
-        }
-        if self.ICDOHKPKMAH != false {
-            my_size += 1 + 1;
-        }
-        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
+        if let Some(v) = self.AECJKNIGHJK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.HGOIJNKNIOA != false {
+            my_size += 1 + 1;
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.level);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for TakePunkLordPointRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JKOCJIMAGBN != 0 {
-            os.write_uint32(2, self.JKOCJIMAGBN)?;
+        if let Some(v) = self.AECJKNIGHJK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(15, self.ADADHIHDHJC)?;
+        if self.HGOIJNKNIOA != false {
+            os.write_bool(6, self.HGOIJNKNIOA)?;
         }
-        if self.ICDOHKPKMAH != false {
-            os.write_bool(8, self.ICDOHKPKMAH)?;
+        if self.level != 0 {
+            os.write_uint32(12, self.level)?;
         }
-        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(8, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for TakePunkLordPointRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.JKOCJIMAGBN = 0;
-        self.ADADHIHDHJC = 0;
-        self.ICDOHKPKMAH = false;
-        self.ELPMNKHEPKJ.clear();
+        self.AECJKNIGHJK.clear();
+        self.HGOIJNKNIOA = false;
+        self.level = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakePunkLordPointRewardScRsp {
         static instance: TakePunkLordPointRewardScRsp = TakePunkLordPointRewardScRsp {
-            JKOCJIMAGBN: 0,
-            ADADHIHDHJC: 0,
-            ICDOHKPKMAH: false,
-            ELPMNKHEPKJ: ::protobuf::MessageField::none(),
+            AECJKNIGHJK: ::protobuf::MessageField::none(),
+            HGOIJNKNIOA: false,
+            level: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,12 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for TakePunkLordPointRewardScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"TakePunkLordPointRewardScRsp.proto\x1a\x0eItemList.proto\"\xb1\x01\n\
-    \x1cTakePunkLordPointRewardScRsp\x12\x20\n\x0bJKOCJIMAGBN\x18\x02\x20\
-    \x01(\rR\x0bJKOCJIMAGBN\x12\x20\n\x0bADADHIHDHJC\x18\x0f\x20\x01(\rR\x0b\
-    ADADHIHDHJC\x12\x20\n\x0bICDOHKPKMAH\x18\x08\x20\x01(\x08R\x0bICDOHKPKMA\
-    H\x12+\n\x0bELPMNKHEPKJ\x18\x07\x20\x01(\x0b2\t.ItemListR\x0bELPMNKHEPKJ\
-    b\x06proto3\
+    \n\"TakePunkLordPointRewardScRsp.proto\x1a\x0eItemList.proto\"\x9d\x01\n\
+    \x1cTakePunkLordPointRewardScRsp\x12+\n\x0bAECJKNIGHJK\x18\x0e\x20\x01(\
+    \x0b2\t.ItemListR\x0bAECJKNIGHJK\x12\x20\n\x0bHGOIJNKNIOA\x18\x06\x20\
+    \x01(\x08R\x0bHGOIJNKNIOA\x12\x14\n\x05level\x18\x0c\x20\x01(\rR\x05leve\
+    l\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

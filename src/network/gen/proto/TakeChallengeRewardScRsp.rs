@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeChallengeRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeChallengeRewardScRsp.group_id)
-    pub group_id: u32,
     // @@protoc_insertion_point(field:TakeChallengeRewardScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:TakeChallengeRewardScRsp.taken_reward_list)
-    pub taken_reward_list: ::std::vec::Vec<super::TakenChallengeRewardInfo::TakenChallengeRewardInfo>,
+    // @@protoc_insertion_point(field:TakeChallengeRewardScRsp.IOPPGEGDHGL)
+    pub IOPPGEGDHGL: u32,
+    // @@protoc_insertion_point(field:TakeChallengeRewardScRsp.IKIGKGFIHNJ)
+    pub IKIGKGFIHNJ: ::std::vec::Vec<super::LAJFJGAEMNH::LAJFJGAEMNH>,
     // special fields
     // @@protoc_insertion_point(special_field:TakeChallengeRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl TakeChallengeRewardScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "group_id",
-            |m: &TakeChallengeRewardScRsp| { &m.group_id },
-            |m: &mut TakeChallengeRewardScRsp| { &mut m.group_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &TakeChallengeRewardScRsp| { &m.retcode },
             |m: &mut TakeChallengeRewardScRsp| { &mut m.retcode },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IOPPGEGDHGL",
+            |m: &TakeChallengeRewardScRsp| { &m.IOPPGEGDHGL },
+            |m: &mut TakeChallengeRewardScRsp| { &mut m.IOPPGEGDHGL },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "taken_reward_list",
-            |m: &TakeChallengeRewardScRsp| { &m.taken_reward_list },
-            |m: &mut TakeChallengeRewardScRsp| { &mut m.taken_reward_list },
+            "IKIGKGFIHNJ",
+            |m: &TakeChallengeRewardScRsp| { &m.IKIGKGFIHNJ },
+            |m: &mut TakeChallengeRewardScRsp| { &mut m.IKIGKGFIHNJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeChallengeRewardScRsp>(
             "TakeChallengeRewardScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for TakeChallengeRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.group_id = is.read_uint32()?;
-                },
-                40 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
-                18 => {
-                    self.taken_reward_list.push(is.read_message()?);
+                24 => {
+                    self.IOPPGEGDHGL = is.read_uint32()?;
+                },
+                82 => {
+                    self.IKIGKGFIHNJ.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for TakeChallengeRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.group_id);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
-        for value in &self.taken_reward_list {
+        if self.IOPPGEGDHGL != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.IOPPGEGDHGL);
+        }
+        for value in &self.IKIGKGFIHNJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -124,14 +124,14 @@ impl ::protobuf::Message for TakeChallengeRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.group_id != 0 {
-            os.write_uint32(3, self.group_id)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
-        for v in &self.taken_reward_list {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if self.IOPPGEGDHGL != 0 {
+            os.write_uint32(3, self.IOPPGEGDHGL)?;
+        }
+        for v in &self.IKIGKGFIHNJ {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for TakeChallengeRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.group_id = 0;
         self.retcode = 0;
-        self.taken_reward_list.clear();
+        self.IOPPGEGDHGL = 0;
+        self.IKIGKGFIHNJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeChallengeRewardScRsp {
         static instance: TakeChallengeRewardScRsp = TakeChallengeRewardScRsp {
-            group_id: 0,
             retcode: 0,
-            taken_reward_list: ::std::vec::Vec::new(),
+            IOPPGEGDHGL: 0,
+            IKIGKGFIHNJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for TakeChallengeRewardScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eTakeChallengeRewardScRsp.proto\x1a\x1eTakenChallengeRewardInfo.pro\
-    to\"\x96\x01\n\x18TakeChallengeRewardScRsp\x12\x19\n\x08group_id\x18\x03\
-    \x20\x01(\rR\x07groupId\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retc\
-    ode\x12E\n\x11taken_reward_list\x18\x02\x20\x03(\x0b2\x19.TakenChallenge\
-    RewardInfoR\x0ftakenRewardListB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x1eTakeChallengeRewardScRsp.proto\x1a\x11LAJFJGAEMNH.proto\"\x86\x01\
+    \n\x18TakeChallengeRewardScRsp\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\
+    \x07retcode\x12\x20\n\x0bIOPPGEGDHGL\x18\x03\x20\x01(\rR\x0bIOPPGEGDHGL\
+    \x12.\n\x0bIKIGKGFIHNJ\x18\n\x20\x03(\x0b2\x0c.LAJFJGAEMNHR\x0bIKIGKGFIH\
+    NJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::TakenChallengeRewardInfo::file_descriptor().clone());
+            deps.push(super::LAJFJGAEMNH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(TakeChallengeRewardScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

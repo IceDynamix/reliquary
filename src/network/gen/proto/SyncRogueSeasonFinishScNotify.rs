@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncRogueSeasonFinishScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncRogueSeasonFinishScNotify.HGGFOJICNCG)
-    pub HGGFOJICNCG: ::protobuf::MessageField<super::IJAIFMPFJDN::IJAIFMPFJDN>,
-    // @@protoc_insertion_point(field:SyncRogueSeasonFinishScNotify.IJJDOFIBLIP)
-    pub IJJDOFIBLIP: ::protobuf::MessageField<super::NGBLIPAIBAA::NGBLIPAIBAA>,
-    // @@protoc_insertion_point(field:SyncRogueSeasonFinishScNotify.GOOIEHKAGLC)
-    pub GOOIEHKAGLC: ::protobuf::MessageField<super::GDHMBEFBPHM::GDHMBEFBPHM>,
-    // @@protoc_insertion_point(field:SyncRogueSeasonFinishScNotify.GCBDLKOICKC)
-    pub GCBDLKOICKC: bool,
-    // @@protoc_insertion_point(field:SyncRogueSeasonFinishScNotify.KFLBOPELPED)
-    pub KFLBOPELPED: ::protobuf::MessageField<super::EOJIMNJPNPN::EOJIMNJPNPN>,
+    // @@protoc_insertion_point(field:SyncRogueSeasonFinishScNotify.ALIIIFGLPDA)
+    pub ALIIIFGLPDA: ::protobuf::MessageField<super::GAFCOEJCDPG::GAFCOEJCDPG>,
+    // @@protoc_insertion_point(field:SyncRogueSeasonFinishScNotify.IHACFPLKGHP)
+    pub IHACFPLKGHP: ::protobuf::MessageField<super::NFIHEGJPADD::NFIHEGJPADD>,
+    // @@protoc_insertion_point(field:SyncRogueSeasonFinishScNotify.BELNAEHAMCO)
+    pub BELNAEHAMCO: bool,
+    // @@protoc_insertion_point(field:SyncRogueSeasonFinishScNotify.IIBAHAEAEEB)
+    pub IIBAHAEAEEB: ::protobuf::MessageField<super::PMBHFPCDGBM::PMBHFPCDGBM>,
+    // @@protoc_insertion_point(field:SyncRogueSeasonFinishScNotify.KJPDBLOAOCG)
+    pub KJPDBLOAOCG: ::protobuf::MessageField<super::NDHNICCLBDN::NDHNICCLBDN>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncRogueSeasonFinishScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,30 +58,30 @@ impl SyncRogueSeasonFinishScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IJAIFMPFJDN::IJAIFMPFJDN>(
-            "HGGFOJICNCG",
-            |m: &SyncRogueSeasonFinishScNotify| { &m.HGGFOJICNCG },
-            |m: &mut SyncRogueSeasonFinishScNotify| { &mut m.HGGFOJICNCG },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GAFCOEJCDPG::GAFCOEJCDPG>(
+            "ALIIIFGLPDA",
+            |m: &SyncRogueSeasonFinishScNotify| { &m.ALIIIFGLPDA },
+            |m: &mut SyncRogueSeasonFinishScNotify| { &mut m.ALIIIFGLPDA },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NGBLIPAIBAA::NGBLIPAIBAA>(
-            "IJJDOFIBLIP",
-            |m: &SyncRogueSeasonFinishScNotify| { &m.IJJDOFIBLIP },
-            |m: &mut SyncRogueSeasonFinishScNotify| { &mut m.IJJDOFIBLIP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GDHMBEFBPHM::GDHMBEFBPHM>(
-            "GOOIEHKAGLC",
-            |m: &SyncRogueSeasonFinishScNotify| { &m.GOOIEHKAGLC },
-            |m: &mut SyncRogueSeasonFinishScNotify| { &mut m.GOOIEHKAGLC },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NFIHEGJPADD::NFIHEGJPADD>(
+            "IHACFPLKGHP",
+            |m: &SyncRogueSeasonFinishScNotify| { &m.IHACFPLKGHP },
+            |m: &mut SyncRogueSeasonFinishScNotify| { &mut m.IHACFPLKGHP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GCBDLKOICKC",
-            |m: &SyncRogueSeasonFinishScNotify| { &m.GCBDLKOICKC },
-            |m: &mut SyncRogueSeasonFinishScNotify| { &mut m.GCBDLKOICKC },
+            "BELNAEHAMCO",
+            |m: &SyncRogueSeasonFinishScNotify| { &m.BELNAEHAMCO },
+            |m: &mut SyncRogueSeasonFinishScNotify| { &mut m.BELNAEHAMCO },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EOJIMNJPNPN::EOJIMNJPNPN>(
-            "KFLBOPELPED",
-            |m: &SyncRogueSeasonFinishScNotify| { &m.KFLBOPELPED },
-            |m: &mut SyncRogueSeasonFinishScNotify| { &mut m.KFLBOPELPED },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PMBHFPCDGBM::PMBHFPCDGBM>(
+            "IIBAHAEAEEB",
+            |m: &SyncRogueSeasonFinishScNotify| { &m.IIBAHAEAEEB },
+            |m: &mut SyncRogueSeasonFinishScNotify| { &mut m.IIBAHAEAEEB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NDHNICCLBDN::NDHNICCLBDN>(
+            "KJPDBLOAOCG",
+            |m: &SyncRogueSeasonFinishScNotify| { &m.KJPDBLOAOCG },
+            |m: &mut SyncRogueSeasonFinishScNotify| { &mut m.KJPDBLOAOCG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncRogueSeasonFinishScNotify>(
             "SyncRogueSeasonFinishScNotify",
@@ -101,20 +101,20 @@ impl ::protobuf::Message for SyncRogueSeasonFinishScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HGGFOJICNCG)?;
-                },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IJJDOFIBLIP)?;
-                },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GOOIEHKAGLC)?;
-                },
-                72 => {
-                    self.GCBDLKOICKC = is.read_bool()?;
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ALIIIFGLPDA)?;
                 },
                 42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KFLBOPELPED)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IHACFPLKGHP)?;
+                },
+                64 => {
+                    self.BELNAEHAMCO = is.read_bool()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IIBAHAEAEEB)?;
+                },
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KJPDBLOAOCG)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,22 +128,22 @@ impl ::protobuf::Message for SyncRogueSeasonFinishScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.HGGFOJICNCG.as_ref() {
+        if let Some(v) = self.ALIIIFGLPDA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.IJJDOFIBLIP.as_ref() {
+        if let Some(v) = self.IHACFPLKGHP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.GOOIEHKAGLC.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.GCBDLKOICKC != false {
+        if self.BELNAEHAMCO != false {
             my_size += 1 + 1;
         }
-        if let Some(v) = self.KFLBOPELPED.as_ref() {
+        if let Some(v) = self.IIBAHAEAEEB.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.KJPDBLOAOCG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -153,20 +153,20 @@ impl ::protobuf::Message for SyncRogueSeasonFinishScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.HGGFOJICNCG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if let Some(v) = self.ALIIIFGLPDA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
-        if let Some(v) = self.IJJDOFIBLIP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
-        if let Some(v) = self.GOOIEHKAGLC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        }
-        if self.GCBDLKOICKC != false {
-            os.write_bool(9, self.GCBDLKOICKC)?;
-        }
-        if let Some(v) = self.KFLBOPELPED.as_ref() {
+        if let Some(v) = self.IHACFPLKGHP.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
+        if self.BELNAEHAMCO != false {
+            os.write_bool(8, self.BELNAEHAMCO)?;
+        }
+        if let Some(v) = self.IIBAHAEAEEB.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        }
+        if let Some(v) = self.KJPDBLOAOCG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,21 +185,21 @@ impl ::protobuf::Message for SyncRogueSeasonFinishScNotify {
     }
 
     fn clear(&mut self) {
-        self.HGGFOJICNCG.clear();
-        self.IJJDOFIBLIP.clear();
-        self.GOOIEHKAGLC.clear();
-        self.GCBDLKOICKC = false;
-        self.KFLBOPELPED.clear();
+        self.ALIIIFGLPDA.clear();
+        self.IHACFPLKGHP.clear();
+        self.BELNAEHAMCO = false;
+        self.IIBAHAEAEEB.clear();
+        self.KJPDBLOAOCG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncRogueSeasonFinishScNotify {
         static instance: SyncRogueSeasonFinishScNotify = SyncRogueSeasonFinishScNotify {
-            HGGFOJICNCG: ::protobuf::MessageField::none(),
-            IJJDOFIBLIP: ::protobuf::MessageField::none(),
-            GOOIEHKAGLC: ::protobuf::MessageField::none(),
-            GCBDLKOICKC: false,
-            KFLBOPELPED: ::protobuf::MessageField::none(),
+            ALIIIFGLPDA: ::protobuf::MessageField::none(),
+            IHACFPLKGHP: ::protobuf::MessageField::none(),
+            BELNAEHAMCO: false,
+            IIBAHAEAEEB: ::protobuf::MessageField::none(),
+            KJPDBLOAOCG: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -224,14 +224,14 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueSeasonFinishScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#SyncRogueSeasonFinishScNotify.proto\x1a\x11EOJIMNJPNPN.proto\x1a\x11G\
-    DHMBEFBPHM.proto\x1a\x11IJAIFMPFJDN.proto\x1a\x11NGBLIPAIBAA.proto\"\x81\
-    \x02\n\x1dSyncRogueSeasonFinishScNotify\x12.\n\x0bHGGFOJICNCG\x18\x08\
-    \x20\x01(\x0b2\x0c.IJAIFMPFJDNR\x0bHGGFOJICNCG\x12.\n\x0bIJJDOFIBLIP\x18\
-    \n\x20\x01(\x0b2\x0c.NGBLIPAIBAAR\x0bIJJDOFIBLIP\x12.\n\x0bGOOIEHKAGLC\
-    \x18\x0c\x20\x01(\x0b2\x0c.GDHMBEFBPHMR\x0bGOOIEHKAGLC\x12\x20\n\x0bGCBD\
-    LKOICKC\x18\t\x20\x01(\x08R\x0bGCBDLKOICKC\x12.\n\x0bKFLBOPELPED\x18\x05\
-    \x20\x01(\x0b2\x0c.EOJIMNJPNPNR\x0bKFLBOPELPEDb\x06proto3\
+    \n#SyncRogueSeasonFinishScNotify.proto\x1a\x11GAFCOEJCDPG.proto\x1a\x11N\
+    DHNICCLBDN.proto\x1a\x11NFIHEGJPADD.proto\x1a\x11PMBHFPCDGBM.proto\"\x81\
+    \x02\n\x1dSyncRogueSeasonFinishScNotify\x12.\n\x0bALIIIFGLPDA\x18\r\x20\
+    \x01(\x0b2\x0c.GAFCOEJCDPGR\x0bALIIIFGLPDA\x12.\n\x0bIHACFPLKGHP\x18\x05\
+    \x20\x01(\x0b2\x0c.NFIHEGJPADDR\x0bIHACFPLKGHP\x12\x20\n\x0bBELNAEHAMCO\
+    \x18\x08\x20\x01(\x08R\x0bBELNAEHAMCO\x12.\n\x0bIIBAHAEAEEB\x18\x0b\x20\
+    \x01(\x0b2\x0c.PMBHFPCDGBMR\x0bIIBAHAEAEEB\x12.\n\x0bKJPDBLOAOCG\x18\n\
+    \x20\x01(\x0b2\x0c.NDHNICCLBDNR\x0bKJPDBLOAOCGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -249,10 +249,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(4);
-            deps.push(super::EOJIMNJPNPN::file_descriptor().clone());
-            deps.push(super::GDHMBEFBPHM::file_descriptor().clone());
-            deps.push(super::IJAIFMPFJDN::file_descriptor().clone());
-            deps.push(super::NGBLIPAIBAA::file_descriptor().clone());
+            deps.push(super::GAFCOEJCDPG::file_descriptor().clone());
+            deps.push(super::NDHNICCLBDN::file_descriptor().clone());
+            deps.push(super::NFIHEGJPADD::file_descriptor().clone());
+            deps.push(super::PMBHFPCDGBM::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SyncRogueSeasonFinishScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

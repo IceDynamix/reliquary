@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncRoguePickAvatarInfoScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncRoguePickAvatarInfoScNotify.BAJFEJJEFFN)
-    pub BAJFEJJEFFN: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:SyncRoguePickAvatarInfoScNotify.FOPPGNKJGLP)
-    pub FOPPGNKJGLP: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SyncRoguePickAvatarInfoScNotify.ELJINBJEAEL)
+    pub ELJINBJEAEL: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SyncRoguePickAvatarInfoScNotify.LECAMFAFAFB)
+    pub LECAMFAFAFB: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncRoguePickAvatarInfoScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl SyncRoguePickAvatarInfoScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BAJFEJJEFFN",
-            |m: &SyncRoguePickAvatarInfoScNotify| { &m.BAJFEJJEFFN },
-            |m: &mut SyncRoguePickAvatarInfoScNotify| { &mut m.BAJFEJJEFFN },
+            "ELJINBJEAEL",
+            |m: &SyncRoguePickAvatarInfoScNotify| { &m.ELJINBJEAEL },
+            |m: &mut SyncRoguePickAvatarInfoScNotify| { &mut m.ELJINBJEAEL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FOPPGNKJGLP",
-            |m: &SyncRoguePickAvatarInfoScNotify| { &m.FOPPGNKJGLP },
-            |m: &mut SyncRoguePickAvatarInfoScNotify| { &mut m.FOPPGNKJGLP },
+            "LECAMFAFAFB",
+            |m: &SyncRoguePickAvatarInfoScNotify| { &m.LECAMFAFAFB },
+            |m: &mut SyncRoguePickAvatarInfoScNotify| { &mut m.LECAMFAFAFB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncRoguePickAvatarInfoScNotify>(
             "SyncRoguePickAvatarInfoScNotify",
@@ -81,16 +81,16 @@ impl ::protobuf::Message for SyncRoguePickAvatarInfoScNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.BAJFEJJEFFN)?;
+                    is.read_repeated_packed_uint32_into(&mut self.ELJINBJEAEL)?;
                 },
                 104 => {
-                    self.BAJFEJJEFFN.push(is.read_uint32()?);
+                    self.ELJINBJEAEL.push(is.read_uint32()?);
                 },
-                58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FOPPGNKJGLP)?;
+                34 => {
+                    is.read_repeated_packed_uint32_into(&mut self.LECAMFAFAFB)?;
                 },
-                56 => {
-                    self.FOPPGNKJGLP.push(is.read_uint32()?);
+                32 => {
+                    self.LECAMFAFAFB.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -104,11 +104,11 @@ impl ::protobuf::Message for SyncRoguePickAvatarInfoScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.BAJFEJJEFFN {
+        for value in &self.ELJINBJEAEL {
             my_size += ::protobuf::rt::uint32_size(13, *value);
         };
-        for value in &self.FOPPGNKJGLP {
-            my_size += ::protobuf::rt::uint32_size(7, *value);
+        for value in &self.LECAMFAFAFB {
+            my_size += ::protobuf::rt::uint32_size(4, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -116,11 +116,11 @@ impl ::protobuf::Message for SyncRoguePickAvatarInfoScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.BAJFEJJEFFN {
+        for v in &self.ELJINBJEAEL {
             os.write_uint32(13, *v)?;
         };
-        for v in &self.FOPPGNKJGLP {
-            os.write_uint32(7, *v)?;
+        for v in &self.LECAMFAFAFB {
+            os.write_uint32(4, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -139,15 +139,15 @@ impl ::protobuf::Message for SyncRoguePickAvatarInfoScNotify {
     }
 
     fn clear(&mut self) {
-        self.BAJFEJJEFFN.clear();
-        self.FOPPGNKJGLP.clear();
+        self.ELJINBJEAEL.clear();
+        self.LECAMFAFAFB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncRoguePickAvatarInfoScNotify {
         static instance: SyncRoguePickAvatarInfoScNotify = SyncRoguePickAvatarInfoScNotify {
-            BAJFEJJEFFN: ::std::vec::Vec::new(),
-            FOPPGNKJGLP: ::std::vec::Vec::new(),
+            ELJINBJEAEL: ::std::vec::Vec::new(),
+            LECAMFAFAFB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -173,8 +173,8 @@ impl ::protobuf::reflect::ProtobufValue for SyncRoguePickAvatarInfoScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%SyncRoguePickAvatarInfoScNotify.proto\"e\n\x1fSyncRoguePickAvatarInfo\
-    ScNotify\x12\x20\n\x0bBAJFEJJEFFN\x18\r\x20\x03(\rR\x0bBAJFEJJEFFN\x12\
-    \x20\n\x0bFOPPGNKJGLP\x18\x07\x20\x03(\rR\x0bFOPPGNKJGLPb\x06proto3\
+    ScNotify\x12\x20\n\x0bELJINBJEAEL\x18\r\x20\x03(\rR\x0bELJINBJEAEL\x12\
+    \x20\n\x0bLECAMFAFAFB\x18\x04\x20\x03(\rR\x0bLECAMFAFAFBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

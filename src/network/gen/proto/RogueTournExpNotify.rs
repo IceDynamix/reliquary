@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournExpNotify {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournExpNotify.MAMKEEKMJHA)
-    pub MAMKEEKMJHA: u32,
+    // @@protoc_insertion_point(field:RogueTournExpNotify.exp)
+    pub exp: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournExpNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl RogueTournExpNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MAMKEEKMJHA",
-            |m: &RogueTournExpNotify| { &m.MAMKEEKMJHA },
-            |m: &mut RogueTournExpNotify| { &mut m.MAMKEEKMJHA },
+            "exp",
+            |m: &RogueTournExpNotify| { &m.exp },
+            |m: &mut RogueTournExpNotify| { &mut m.exp },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournExpNotify>(
             "RogueTournExpNotify",
@@ -74,7 +74,7 @@ impl ::protobuf::Message for RogueTournExpNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 32 => {
-                    self.MAMKEEKMJHA = is.read_uint32()?;
+                    self.exp = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for RogueTournExpNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MAMKEEKMJHA != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.MAMKEEKMJHA);
+        if self.exp != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.exp);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for RogueTournExpNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MAMKEEKMJHA != 0 {
-            os.write_uint32(4, self.MAMKEEKMJHA)?;
+        if self.exp != 0 {
+            os.write_uint32(4, self.exp)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for RogueTournExpNotify {
     }
 
     fn clear(&mut self) {
-        self.MAMKEEKMJHA = 0;
+        self.exp = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournExpNotify {
         static instance: RogueTournExpNotify = RogueTournExpNotify {
-            MAMKEEKMJHA: 0,
+            exp: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournExpNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19RogueTournExpNotify.proto\"7\n\x13RogueTournExpNotify\x12\x20\n\
-    \x0bMAMKEEKMJHA\x18\x04\x20\x01(\rR\x0bMAMKEEKMJHAb\x06proto3\
+    \n\x19RogueTournExpNotify.proto\"'\n\x13RogueTournExpNotify\x12\x10\n\
+    \x03exp\x18\x04\x20\x01(\rR\x03expb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

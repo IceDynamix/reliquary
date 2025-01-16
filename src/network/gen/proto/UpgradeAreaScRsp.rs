@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpgradeAreaScRsp {
     // message fields
-    // @@protoc_insertion_point(field:UpgradeAreaScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:UpgradeAreaScRsp.OMBLHJDKEJA)
-    pub OMBLHJDKEJA: u32,
-    // @@protoc_insertion_point(field:UpgradeAreaScRsp.JKOCJIMAGBN)
-    pub JKOCJIMAGBN: u32,
+    // @@protoc_insertion_point(field:UpgradeAreaScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:UpgradeAreaScRsp.level)
+    pub level: u32,
+    // @@protoc_insertion_point(field:UpgradeAreaScRsp.KJKPMFFAMFK)
+    pub KJKPMFFAMFK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:UpgradeAreaScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl UpgradeAreaScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &UpgradeAreaScRsp| { &m.ADADHIHDHJC },
-            |m: &mut UpgradeAreaScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &UpgradeAreaScRsp| { &m.retcode },
+            |m: &mut UpgradeAreaScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OMBLHJDKEJA",
-            |m: &UpgradeAreaScRsp| { &m.OMBLHJDKEJA },
-            |m: &mut UpgradeAreaScRsp| { &mut m.OMBLHJDKEJA },
+            "level",
+            |m: &UpgradeAreaScRsp| { &m.level },
+            |m: &mut UpgradeAreaScRsp| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JKOCJIMAGBN",
-            |m: &UpgradeAreaScRsp| { &m.JKOCJIMAGBN },
-            |m: &mut UpgradeAreaScRsp| { &mut m.JKOCJIMAGBN },
+            "KJKPMFFAMFK",
+            |m: &UpgradeAreaScRsp| { &m.KJKPMFFAMFK },
+            |m: &mut UpgradeAreaScRsp| { &mut m.KJKPMFFAMFK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpgradeAreaScRsp>(
             "UpgradeAreaScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for UpgradeAreaScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                32 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 8 => {
-                    self.OMBLHJDKEJA = is.read_uint32()?;
+                    self.level = is.read_uint32()?;
                 },
                 120 => {
-                    self.JKOCJIMAGBN = is.read_uint32()?;
+                    self.KJKPMFFAMFK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for UpgradeAreaScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
-        if self.OMBLHJDKEJA != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.OMBLHJDKEJA);
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.level);
         }
-        if self.JKOCJIMAGBN != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.JKOCJIMAGBN);
+        if self.KJKPMFFAMFK != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.KJKPMFFAMFK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for UpgradeAreaScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(11, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(4, self.retcode)?;
         }
-        if self.OMBLHJDKEJA != 0 {
-            os.write_uint32(1, self.OMBLHJDKEJA)?;
+        if self.level != 0 {
+            os.write_uint32(1, self.level)?;
         }
-        if self.JKOCJIMAGBN != 0 {
-            os.write_uint32(15, self.JKOCJIMAGBN)?;
+        if self.KJKPMFFAMFK != 0 {
+            os.write_uint32(15, self.KJKPMFFAMFK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for UpgradeAreaScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADADHIHDHJC = 0;
-        self.OMBLHJDKEJA = 0;
-        self.JKOCJIMAGBN = 0;
+        self.retcode = 0;
+        self.level = 0;
+        self.KJKPMFFAMFK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpgradeAreaScRsp {
         static instance: UpgradeAreaScRsp = UpgradeAreaScRsp {
-            ADADHIHDHJC: 0,
-            OMBLHJDKEJA: 0,
-            JKOCJIMAGBN: 0,
+            retcode: 0,
+            level: 0,
+            KJKPMFFAMFK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for UpgradeAreaScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16UpgradeAreaScRsp.proto\"x\n\x10UpgradeAreaScRsp\x12\x20\n\x0bADADH\
-    IHDHJC\x18\x0b\x20\x01(\rR\x0bADADHIHDHJC\x12\x20\n\x0bOMBLHJDKEJA\x18\
-    \x01\x20\x01(\rR\x0bOMBLHJDKEJA\x12\x20\n\x0bJKOCJIMAGBN\x18\x0f\x20\x01\
-    (\rR\x0bJKOCJIMAGBNb\x06proto3\
+    \n\x16UpgradeAreaScRsp.proto\"d\n\x10UpgradeAreaScRsp\x12\x18\n\x07retco\
+    de\x18\x04\x20\x01(\rR\x07retcode\x12\x14\n\x05level\x18\x01\x20\x01(\rR\
+    \x05level\x12\x20\n\x0bKJKPMFFAMFK\x18\x0f\x20\x01(\rR\x0bKJKPMFFAMFKb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

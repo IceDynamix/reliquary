@@ -30,16 +30,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdPamSkinType {
     // @@protoc_insertion_point(enum_value:CmdPamSkinType.CmdPamSkinTypeNone)
     CmdPamSkinTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdPamSkinType.CmdGetPamSkinDataCsReq)
-    CmdGetPamSkinDataCsReq = 8125,
-    // @@protoc_insertion_point(enum_value:CmdPamSkinType.CmdSelectPamSkinScRsp)
-    CmdSelectPamSkinScRsp = 8130,
-    // @@protoc_insertion_point(enum_value:CmdPamSkinType.CmdSelectPamSkinCsReq)
-    CmdSelectPamSkinCsReq = 8135,
     // @@protoc_insertion_point(enum_value:CmdPamSkinType.CmdGetPamSkinDataScRsp)
-    CmdGetPamSkinDataScRsp = 8128,
+    CmdGetPamSkinDataScRsp = 8135,
+    // @@protoc_insertion_point(enum_value:CmdPamSkinType.CmdSelectPamSkinScRsp)
+    CmdSelectPamSkinScRsp = 8123,
+    // @@protoc_insertion_point(enum_value:CmdPamSkinType.CmdSelectPamSkinCsReq)
+    CmdSelectPamSkinCsReq = 8127,
     // @@protoc_insertion_point(enum_value:CmdPamSkinType.CmdUnlockPamSkinScNotify)
-    CmdUnlockPamSkinScNotify = 8132,
+    CmdUnlockPamSkinScNotify = 8137,
+    // @@protoc_insertion_point(enum_value:CmdPamSkinType.CmdGetPamSkinDataCsReq)
+    CmdGetPamSkinDataCsReq = 8140,
 }
 
 impl ::protobuf::Enum for CmdPamSkinType {
@@ -52,11 +52,11 @@ impl ::protobuf::Enum for CmdPamSkinType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdPamSkinType> {
         match value {
             0 => ::std::option::Option::Some(CmdPamSkinType::CmdPamSkinTypeNone),
-            8125 => ::std::option::Option::Some(CmdPamSkinType::CmdGetPamSkinDataCsReq),
-            8130 => ::std::option::Option::Some(CmdPamSkinType::CmdSelectPamSkinScRsp),
-            8135 => ::std::option::Option::Some(CmdPamSkinType::CmdSelectPamSkinCsReq),
-            8128 => ::std::option::Option::Some(CmdPamSkinType::CmdGetPamSkinDataScRsp),
-            8132 => ::std::option::Option::Some(CmdPamSkinType::CmdUnlockPamSkinScNotify),
+            8135 => ::std::option::Option::Some(CmdPamSkinType::CmdGetPamSkinDataScRsp),
+            8123 => ::std::option::Option::Some(CmdPamSkinType::CmdSelectPamSkinScRsp),
+            8127 => ::std::option::Option::Some(CmdPamSkinType::CmdSelectPamSkinCsReq),
+            8137 => ::std::option::Option::Some(CmdPamSkinType::CmdUnlockPamSkinScNotify),
+            8140 => ::std::option::Option::Some(CmdPamSkinType::CmdGetPamSkinDataCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -64,22 +64,22 @@ impl ::protobuf::Enum for CmdPamSkinType {
     fn from_str(str: &str) -> ::std::option::Option<CmdPamSkinType> {
         match str {
             "CmdPamSkinTypeNone" => ::std::option::Option::Some(CmdPamSkinType::CmdPamSkinTypeNone),
-            "CmdGetPamSkinDataCsReq" => ::std::option::Option::Some(CmdPamSkinType::CmdGetPamSkinDataCsReq),
+            "CmdGetPamSkinDataScRsp" => ::std::option::Option::Some(CmdPamSkinType::CmdGetPamSkinDataScRsp),
             "CmdSelectPamSkinScRsp" => ::std::option::Option::Some(CmdPamSkinType::CmdSelectPamSkinScRsp),
             "CmdSelectPamSkinCsReq" => ::std::option::Option::Some(CmdPamSkinType::CmdSelectPamSkinCsReq),
-            "CmdGetPamSkinDataScRsp" => ::std::option::Option::Some(CmdPamSkinType::CmdGetPamSkinDataScRsp),
             "CmdUnlockPamSkinScNotify" => ::std::option::Option::Some(CmdPamSkinType::CmdUnlockPamSkinScNotify),
+            "CmdGetPamSkinDataCsReq" => ::std::option::Option::Some(CmdPamSkinType::CmdGetPamSkinDataCsReq),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdPamSkinType] = &[
         CmdPamSkinType::CmdPamSkinTypeNone,
-        CmdPamSkinType::CmdGetPamSkinDataCsReq,
+        CmdPamSkinType::CmdGetPamSkinDataScRsp,
         CmdPamSkinType::CmdSelectPamSkinScRsp,
         CmdPamSkinType::CmdSelectPamSkinCsReq,
-        CmdPamSkinType::CmdGetPamSkinDataScRsp,
         CmdPamSkinType::CmdUnlockPamSkinScNotify,
+        CmdPamSkinType::CmdGetPamSkinDataCsReq,
     ];
 }
 
@@ -92,11 +92,11 @@ impl ::protobuf::EnumFull for CmdPamSkinType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdPamSkinType::CmdPamSkinTypeNone => 0,
-            CmdPamSkinType::CmdGetPamSkinDataCsReq => 1,
+            CmdPamSkinType::CmdGetPamSkinDataScRsp => 1,
             CmdPamSkinType::CmdSelectPamSkinScRsp => 2,
             CmdPamSkinType::CmdSelectPamSkinCsReq => 3,
-            CmdPamSkinType::CmdGetPamSkinDataScRsp => 4,
-            CmdPamSkinType::CmdUnlockPamSkinScNotify => 5,
+            CmdPamSkinType::CmdUnlockPamSkinScNotify => 4,
+            CmdPamSkinType::CmdGetPamSkinDataCsReq => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -116,10 +116,10 @@ impl CmdPamSkinType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14CmdPamSkinType.proto*\xb9\x01\n\x0eCmdPamSkinType\x12\x16\n\x12Cmd\
-    PamSkinTypeNone\x10\0\x12\x1b\n\x16CmdGetPamSkinDataCsReq\x10\xbd?\x12\
-    \x1a\n\x15CmdSelectPamSkinScRsp\x10\xc2?\x12\x1a\n\x15CmdSelectPamSkinCs\
-    Req\x10\xc7?\x12\x1b\n\x16CmdGetPamSkinDataScRsp\x10\xc0?\x12\x1d\n\x18C\
-    mdUnlockPamSkinScNotify\x10\xc4?b\x06proto3\
+    PamSkinTypeNone\x10\0\x12\x1b\n\x16CmdGetPamSkinDataScRsp\x10\xc7?\x12\
+    \x1a\n\x15CmdSelectPamSkinScRsp\x10\xbb?\x12\x1a\n\x15CmdSelectPamSkinCs\
+    Req\x10\xbf?\x12\x1d\n\x18CmdUnlockPamSkinScNotify\x10\xc9?\x12\x1b\n\
+    \x16CmdGetPamSkinDataCsReq\x10\xcc?b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

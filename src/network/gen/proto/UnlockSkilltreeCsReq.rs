@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UnlockSkilltreeCsReq {
     // message fields
-    // @@protoc_insertion_point(field:UnlockSkilltreeCsReq.point_id)
-    pub point_id: u32,
-    // @@protoc_insertion_point(field:UnlockSkilltreeCsReq.item_list)
-    pub item_list: ::std::vec::Vec<super::ItemCost::ItemCost>,
     // @@protoc_insertion_point(field:UnlockSkilltreeCsReq.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:UnlockSkilltreeCsReq.OCDLCGIILKI)
+    pub OCDLCGIILKI: ::std::vec::Vec<super::ItemCost::ItemCost>,
+    // @@protoc_insertion_point(field:UnlockSkilltreeCsReq.point_id)
+    pub point_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:UnlockSkilltreeCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl UnlockSkilltreeCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "point_id",
-            |m: &UnlockSkilltreeCsReq| { &m.point_id },
-            |m: &mut UnlockSkilltreeCsReq| { &mut m.point_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "item_list",
-            |m: &UnlockSkilltreeCsReq| { &m.item_list },
-            |m: &mut UnlockSkilltreeCsReq| { &mut m.item_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &UnlockSkilltreeCsReq| { &m.level },
             |m: &mut UnlockSkilltreeCsReq| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OCDLCGIILKI",
+            |m: &UnlockSkilltreeCsReq| { &m.OCDLCGIILKI },
+            |m: &mut UnlockSkilltreeCsReq| { &mut m.OCDLCGIILKI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "point_id",
+            |m: &UnlockSkilltreeCsReq| { &m.point_id },
+            |m: &mut UnlockSkilltreeCsReq| { &mut m.point_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UnlockSkilltreeCsReq>(
             "UnlockSkilltreeCsReq",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for UnlockSkilltreeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.point_id = is.read_uint32()?;
+                56 => {
+                    self.level = is.read_uint32()?;
                 },
-                82 => {
-                    self.item_list.push(is.read_message()?);
+                114 => {
+                    self.OCDLCGIILKI.push(is.read_message()?);
                 },
                 48 => {
-                    self.level = is.read_uint32()?;
+                    self.point_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +108,15 @@ impl ::protobuf::Message for UnlockSkilltreeCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.point_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.point_id);
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.level);
         }
-        for value in &self.item_list {
+        for value in &self.OCDLCGIILKI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.level);
+        if self.point_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.point_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for UnlockSkilltreeCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.point_id != 0 {
-            os.write_uint32(11, self.point_id)?;
-        }
-        for v in &self.item_list {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        };
         if self.level != 0 {
-            os.write_uint32(6, self.level)?;
+            os.write_uint32(7, self.level)?;
+        }
+        for v in &self.OCDLCGIILKI {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        };
+        if self.point_id != 0 {
+            os.write_uint32(6, self.point_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for UnlockSkilltreeCsReq {
     }
 
     fn clear(&mut self) {
-        self.point_id = 0;
-        self.item_list.clear();
         self.level = 0;
+        self.OCDLCGIILKI.clear();
+        self.point_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UnlockSkilltreeCsReq {
         static instance: UnlockSkilltreeCsReq = UnlockSkilltreeCsReq {
-            point_id: 0,
-            item_list: ::std::vec::Vec::new(),
             level: 0,
+            OCDLCGIILKI: ::std::vec::Vec::new(),
+            point_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for UnlockSkilltreeCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aUnlockSkilltreeCsReq.proto\x1a\x0eItemCost.proto\"o\n\x14UnlockSki\
-    lltreeCsReq\x12\x19\n\x08point_id\x18\x0b\x20\x01(\rR\x07pointId\x12&\n\
-    \titem_list\x18\n\x20\x03(\x0b2\t.ItemCostR\x08itemList\x12\x14\n\x05lev\
-    el\x18\x06\x20\x01(\rR\x05levelB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x1aUnlockSkilltreeCsReq.proto\x1a\x0eItemCost.proto\"t\n\x14UnlockSki\
+    lltreeCsReq\x12\x14\n\x05level\x18\x07\x20\x01(\rR\x05level\x12+\n\x0bOC\
+    DLCGIILKI\x18\x0e\x20\x03(\x0b2\t.ItemCostR\x0bOCDLCGIILKI\x12\x19\n\x08\
+    point_id\x18\x06\x20\x01(\rR\x07pointIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

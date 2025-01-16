@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PunkLordDataChangeNotify {
     // message fields
-    // @@protoc_insertion_point(field:PunkLordDataChangeNotify.IBAKCHMIOGG)
-    pub IBAKCHMIOGG: u32,
-    // @@protoc_insertion_point(field:PunkLordDataChangeNotify.HMGCNFIFKDJ)
-    pub HMGCNFIFKDJ: u32,
-    // @@protoc_insertion_point(field:PunkLordDataChangeNotify.NDHNELNKLAA)
-    pub NDHNELNKLAA: u32,
+    // @@protoc_insertion_point(field:PunkLordDataChangeNotify.INFCNCKAPFH)
+    pub INFCNCKAPFH: u32,
+    // @@protoc_insertion_point(field:PunkLordDataChangeNotify.ICOHFPGNIIH)
+    pub ICOHFPGNIIH: u32,
+    // @@protoc_insertion_point(field:PunkLordDataChangeNotify.NDEFCGKBPLO)
+    pub NDEFCGKBPLO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PunkLordDataChangeNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl PunkLordDataChangeNotify {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IBAKCHMIOGG",
-            |m: &PunkLordDataChangeNotify| { &m.IBAKCHMIOGG },
-            |m: &mut PunkLordDataChangeNotify| { &mut m.IBAKCHMIOGG },
+            "INFCNCKAPFH",
+            |m: &PunkLordDataChangeNotify| { &m.INFCNCKAPFH },
+            |m: &mut PunkLordDataChangeNotify| { &mut m.INFCNCKAPFH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HMGCNFIFKDJ",
-            |m: &PunkLordDataChangeNotify| { &m.HMGCNFIFKDJ },
-            |m: &mut PunkLordDataChangeNotify| { &mut m.HMGCNFIFKDJ },
+            "ICOHFPGNIIH",
+            |m: &PunkLordDataChangeNotify| { &m.ICOHFPGNIIH },
+            |m: &mut PunkLordDataChangeNotify| { &mut m.ICOHFPGNIIH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NDHNELNKLAA",
-            |m: &PunkLordDataChangeNotify| { &m.NDHNELNKLAA },
-            |m: &mut PunkLordDataChangeNotify| { &mut m.NDHNELNKLAA },
+            "NDEFCGKBPLO",
+            |m: &PunkLordDataChangeNotify| { &m.NDEFCGKBPLO },
+            |m: &mut PunkLordDataChangeNotify| { &mut m.NDEFCGKBPLO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PunkLordDataChangeNotify>(
             "PunkLordDataChangeNotify",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for PunkLordDataChangeNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                32 => {
+                    self.INFCNCKAPFH = is.read_uint32()?;
+                },
+                96 => {
+                    self.ICOHFPGNIIH = is.read_uint32()?;
+                },
                 40 => {
-                    self.IBAKCHMIOGG = is.read_uint32()?;
-                },
-                104 => {
-                    self.HMGCNFIFKDJ = is.read_uint32()?;
-                },
-                64 => {
-                    self.NDHNELNKLAA = is.read_uint32()?;
+                    self.NDEFCGKBPLO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for PunkLordDataChangeNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IBAKCHMIOGG != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.IBAKCHMIOGG);
+        if self.INFCNCKAPFH != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.INFCNCKAPFH);
         }
-        if self.HMGCNFIFKDJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.HMGCNFIFKDJ);
+        if self.ICOHFPGNIIH != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.ICOHFPGNIIH);
         }
-        if self.NDHNELNKLAA != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.NDHNELNKLAA);
+        if self.NDEFCGKBPLO != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.NDEFCGKBPLO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for PunkLordDataChangeNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IBAKCHMIOGG != 0 {
-            os.write_uint32(5, self.IBAKCHMIOGG)?;
+        if self.INFCNCKAPFH != 0 {
+            os.write_uint32(4, self.INFCNCKAPFH)?;
         }
-        if self.HMGCNFIFKDJ != 0 {
-            os.write_uint32(13, self.HMGCNFIFKDJ)?;
+        if self.ICOHFPGNIIH != 0 {
+            os.write_uint32(12, self.ICOHFPGNIIH)?;
         }
-        if self.NDHNELNKLAA != 0 {
-            os.write_uint32(8, self.NDHNELNKLAA)?;
+        if self.NDEFCGKBPLO != 0 {
+            os.write_uint32(5, self.NDEFCGKBPLO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for PunkLordDataChangeNotify {
     }
 
     fn clear(&mut self) {
-        self.IBAKCHMIOGG = 0;
-        self.HMGCNFIFKDJ = 0;
-        self.NDHNELNKLAA = 0;
+        self.INFCNCKAPFH = 0;
+        self.ICOHFPGNIIH = 0;
+        self.NDEFCGKBPLO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PunkLordDataChangeNotify {
         static instance: PunkLordDataChangeNotify = PunkLordDataChangeNotify {
-            IBAKCHMIOGG: 0,
-            HMGCNFIFKDJ: 0,
-            NDHNELNKLAA: 0,
+            INFCNCKAPFH: 0,
+            ICOHFPGNIIH: 0,
+            NDEFCGKBPLO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for PunkLordDataChangeNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1ePunkLordDataChangeNotify.proto\"\x80\x01\n\x18PunkLordDataChangeNo\
-    tify\x12\x20\n\x0bIBAKCHMIOGG\x18\x05\x20\x01(\rR\x0bIBAKCHMIOGG\x12\x20\
-    \n\x0bHMGCNFIFKDJ\x18\r\x20\x01(\rR\x0bHMGCNFIFKDJ\x12\x20\n\x0bNDHNELNK\
-    LAA\x18\x08\x20\x01(\rR\x0bNDHNELNKLAAb\x06proto3\
+    tify\x12\x20\n\x0bINFCNCKAPFH\x18\x04\x20\x01(\rR\x0bINFCNCKAPFH\x12\x20\
+    \n\x0bICOHFPGNIIH\x18\x0c\x20\x01(\rR\x0bICOHFPGNIIH\x12\x20\n\x0bNDEFCG\
+    KBPLO\x18\x05\x20\x01(\rR\x0bNDEFCGKBPLOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

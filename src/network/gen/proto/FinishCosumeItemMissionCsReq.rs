@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishCosumeItemMissionCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FinishCosumeItemMissionCsReq.FAFGOIMCDPF)
-    pub FAFGOIMCDPF: u32,
-    // @@protoc_insertion_point(field:FinishCosumeItemMissionCsReq.AGPKHOOCMPE)
-    pub AGPKHOOCMPE: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:FinishCosumeItemMissionCsReq.OCDLCGIILKI)
+    pub OCDLCGIILKI: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:FinishCosumeItemMissionCsReq.INDIGLPDHNC)
+    pub INDIGLPDHNC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FinishCosumeItemMissionCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl FinishCosumeItemMissionCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FAFGOIMCDPF",
-            |m: &FinishCosumeItemMissionCsReq| { &m.FAFGOIMCDPF },
-            |m: &mut FinishCosumeItemMissionCsReq| { &mut m.FAFGOIMCDPF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "AGPKHOOCMPE",
-            |m: &FinishCosumeItemMissionCsReq| { &m.AGPKHOOCMPE },
-            |m: &mut FinishCosumeItemMissionCsReq| { &mut m.AGPKHOOCMPE },
+            "OCDLCGIILKI",
+            |m: &FinishCosumeItemMissionCsReq| { &m.OCDLCGIILKI },
+            |m: &mut FinishCosumeItemMissionCsReq| { &mut m.OCDLCGIILKI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "INDIGLPDHNC",
+            |m: &FinishCosumeItemMissionCsReq| { &m.INDIGLPDHNC },
+            |m: &mut FinishCosumeItemMissionCsReq| { &mut m.INDIGLPDHNC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishCosumeItemMissionCsReq>(
             "FinishCosumeItemMissionCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for FinishCosumeItemMissionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.FAFGOIMCDPF = is.read_uint32()?;
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OCDLCGIILKI)?;
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AGPKHOOCMPE)?;
+                16 => {
+                    self.INDIGLPDHNC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,12 +98,12 @@ impl ::protobuf::Message for FinishCosumeItemMissionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FAFGOIMCDPF != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.FAFGOIMCDPF);
-        }
-        if let Some(v) = self.AGPKHOOCMPE.as_ref() {
+        if let Some(v) = self.OCDLCGIILKI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.INDIGLPDHNC != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.INDIGLPDHNC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for FinishCosumeItemMissionCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FAFGOIMCDPF != 0 {
-            os.write_uint32(10, self.FAFGOIMCDPF)?;
+        if let Some(v) = self.OCDLCGIILKI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
-        if let Some(v) = self.AGPKHOOCMPE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if self.INDIGLPDHNC != 0 {
+            os.write_uint32(2, self.INDIGLPDHNC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for FinishCosumeItemMissionCsReq {
     }
 
     fn clear(&mut self) {
-        self.FAFGOIMCDPF = 0;
-        self.AGPKHOOCMPE.clear();
+        self.OCDLCGIILKI.clear();
+        self.INDIGLPDHNC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishCosumeItemMissionCsReq {
         static instance: FinishCosumeItemMissionCsReq = FinishCosumeItemMissionCsReq {
-            FAFGOIMCDPF: 0,
-            AGPKHOOCMPE: ::protobuf::MessageField::none(),
+            OCDLCGIILKI: ::protobuf::MessageField::none(),
+            INDIGLPDHNC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for FinishCosumeItemMissionCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"FinishCosumeItemMissionCsReq.proto\x1a\x0eItemList.proto\"m\n\x1cFin\
-    ishCosumeItemMissionCsReq\x12\x20\n\x0bFAFGOIMCDPF\x18\n\x20\x01(\rR\x0b\
-    FAFGOIMCDPF\x12+\n\x0bAGPKHOOCMPE\x18\r\x20\x01(\x0b2\t.ItemListR\x0bAGP\
-    KHOOCMPEb\x06proto3\
+    ishCosumeItemMissionCsReq\x12+\n\x0bOCDLCGIILKI\x18\n\x20\x01(\x0b2\t.It\
+    emListR\x0bOCDLCGIILKI\x12\x20\n\x0bINDIGLPDHNC\x18\x02\x20\x01(\rR\x0bI\
+    NDIGLPDHNCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

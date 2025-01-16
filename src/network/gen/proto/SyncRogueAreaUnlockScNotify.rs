@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncRogueAreaUnlockScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncRogueAreaUnlockScNotify.OMBLHJDKEJA)
-    pub OMBLHJDKEJA: u32,
+    // @@protoc_insertion_point(field:SyncRogueAreaUnlockScNotify.KJKPMFFAMFK)
+    pub KJKPMFFAMFK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SyncRogueAreaUnlockScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl SyncRogueAreaUnlockScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OMBLHJDKEJA",
-            |m: &SyncRogueAreaUnlockScNotify| { &m.OMBLHJDKEJA },
-            |m: &mut SyncRogueAreaUnlockScNotify| { &mut m.OMBLHJDKEJA },
+            "KJKPMFFAMFK",
+            |m: &SyncRogueAreaUnlockScNotify| { &m.KJKPMFFAMFK },
+            |m: &mut SyncRogueAreaUnlockScNotify| { &mut m.KJKPMFFAMFK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncRogueAreaUnlockScNotify>(
             "SyncRogueAreaUnlockScNotify",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for SyncRogueAreaUnlockScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.OMBLHJDKEJA = is.read_uint32()?;
+                16 => {
+                    self.KJKPMFFAMFK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for SyncRogueAreaUnlockScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OMBLHJDKEJA != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.OMBLHJDKEJA);
+        if self.KJKPMFFAMFK != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.KJKPMFFAMFK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for SyncRogueAreaUnlockScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OMBLHJDKEJA != 0 {
-            os.write_uint32(10, self.OMBLHJDKEJA)?;
+        if self.KJKPMFFAMFK != 0 {
+            os.write_uint32(2, self.KJKPMFFAMFK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for SyncRogueAreaUnlockScNotify {
     }
 
     fn clear(&mut self) {
-        self.OMBLHJDKEJA = 0;
+        self.KJKPMFFAMFK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncRogueAreaUnlockScNotify {
         static instance: SyncRogueAreaUnlockScNotify = SyncRogueAreaUnlockScNotify {
-            OMBLHJDKEJA: 0,
+            KJKPMFFAMFK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueAreaUnlockScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!SyncRogueAreaUnlockScNotify.proto\"?\n\x1bSyncRogueAreaUnlockScNotify\
-    \x12\x20\n\x0bOMBLHJDKEJA\x18\n\x20\x01(\rR\x0bOMBLHJDKEJAb\x06proto3\
+    \x12\x20\n\x0bKJKPMFFAMFK\x18\x02\x20\x01(\rR\x0bKJKPMFFAMFKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

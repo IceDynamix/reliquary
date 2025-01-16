@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartyBuildDiyScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartyBuildDiyScRsp.BLDHIEJJNJC)
-    pub BLDHIEJJNJC: ::std::vec::Vec<super::FDJBLAFDLAC::FDJBLAFDLAC>,
-    // @@protoc_insertion_point(field:TrainPartyBuildDiyScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:TrainPartyBuildDiyScRsp.OMBLHJDKEJA)
-    pub OMBLHJDKEJA: u32,
-    // @@protoc_insertion_point(field:TrainPartyBuildDiyScRsp.HEMODCFENHP)
-    pub HEMODCFENHP: bool,
-    // @@protoc_insertion_point(field:TrainPartyBuildDiyScRsp.HMNLCHNLEAP)
-    pub HMNLCHNLEAP: ::std::vec::Vec<super::IGGCJANLKCL::IGGCJANLKCL>,
+    // @@protoc_insertion_point(field:TrainPartyBuildDiyScRsp.NKCOMPHIJFI)
+    pub NKCOMPHIJFI: ::std::vec::Vec<super::AEMKLEGNHIA::AEMKLEGNHIA>,
+    // @@protoc_insertion_point(field:TrainPartyBuildDiyScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:TrainPartyBuildDiyScRsp.KJKPMFFAMFK)
+    pub KJKPMFFAMFK: u32,
+    // @@protoc_insertion_point(field:TrainPartyBuildDiyScRsp.PLGIBHOCDGP)
+    pub PLGIBHOCDGP: bool,
+    // @@protoc_insertion_point(field:TrainPartyBuildDiyScRsp.GDEBGNKHJKI)
+    pub GDEBGNKHJKI: ::std::vec::Vec<super::ADCGGKAPKFK::ADCGGKAPKFK>,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyBuildDiyScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,29 +59,29 @@ impl TrainPartyBuildDiyScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BLDHIEJJNJC",
-            |m: &TrainPartyBuildDiyScRsp| { &m.BLDHIEJJNJC },
-            |m: &mut TrainPartyBuildDiyScRsp| { &mut m.BLDHIEJJNJC },
+            "NKCOMPHIJFI",
+            |m: &TrainPartyBuildDiyScRsp| { &m.NKCOMPHIJFI },
+            |m: &mut TrainPartyBuildDiyScRsp| { &mut m.NKCOMPHIJFI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &TrainPartyBuildDiyScRsp| { &m.ADADHIHDHJC },
-            |m: &mut TrainPartyBuildDiyScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &TrainPartyBuildDiyScRsp| { &m.retcode },
+            |m: &mut TrainPartyBuildDiyScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OMBLHJDKEJA",
-            |m: &TrainPartyBuildDiyScRsp| { &m.OMBLHJDKEJA },
-            |m: &mut TrainPartyBuildDiyScRsp| { &mut m.OMBLHJDKEJA },
+            "KJKPMFFAMFK",
+            |m: &TrainPartyBuildDiyScRsp| { &m.KJKPMFFAMFK },
+            |m: &mut TrainPartyBuildDiyScRsp| { &mut m.KJKPMFFAMFK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HEMODCFENHP",
-            |m: &TrainPartyBuildDiyScRsp| { &m.HEMODCFENHP },
-            |m: &mut TrainPartyBuildDiyScRsp| { &mut m.HEMODCFENHP },
+            "PLGIBHOCDGP",
+            |m: &TrainPartyBuildDiyScRsp| { &m.PLGIBHOCDGP },
+            |m: &mut TrainPartyBuildDiyScRsp| { &mut m.PLGIBHOCDGP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HMNLCHNLEAP",
-            |m: &TrainPartyBuildDiyScRsp| { &m.HMNLCHNLEAP },
-            |m: &mut TrainPartyBuildDiyScRsp| { &mut m.HMNLCHNLEAP },
+            "GDEBGNKHJKI",
+            |m: &TrainPartyBuildDiyScRsp| { &m.GDEBGNKHJKI },
+            |m: &mut TrainPartyBuildDiyScRsp| { &mut m.GDEBGNKHJKI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyBuildDiyScRsp>(
             "TrainPartyBuildDiyScRsp",
@@ -101,20 +101,20 @@ impl ::protobuf::Message for TrainPartyBuildDiyScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    self.BLDHIEJJNJC.push(is.read_message()?);
+                26 => {
+                    self.NKCOMPHIJFI.push(is.read_message()?);
                 },
-                16 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                32 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                56 => {
-                    self.OMBLHJDKEJA = is.read_uint32()?;
+                112 => {
+                    self.KJKPMFFAMFK = is.read_uint32()?;
                 },
-                88 => {
-                    self.HEMODCFENHP = is.read_bool()?;
+                96 => {
+                    self.PLGIBHOCDGP = is.read_bool()?;
                 },
-                74 => {
-                    self.HMNLCHNLEAP.push(is.read_message()?);
+                10 => {
+                    self.GDEBGNKHJKI.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,20 +128,20 @@ impl ::protobuf::Message for TrainPartyBuildDiyScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.BLDHIEJJNJC {
+        for value in &self.NKCOMPHIJFI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
-        if self.OMBLHJDKEJA != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.OMBLHJDKEJA);
+        if self.KJKPMFFAMFK != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.KJKPMFFAMFK);
         }
-        if self.HEMODCFENHP != false {
+        if self.PLGIBHOCDGP != false {
             my_size += 1 + 1;
         }
-        for value in &self.HMNLCHNLEAP {
+        for value in &self.GDEBGNKHJKI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -151,20 +151,20 @@ impl ::protobuf::Message for TrainPartyBuildDiyScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.BLDHIEJJNJC {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        for v in &self.NKCOMPHIJFI {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(2, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(4, self.retcode)?;
         }
-        if self.OMBLHJDKEJA != 0 {
-            os.write_uint32(7, self.OMBLHJDKEJA)?;
+        if self.KJKPMFFAMFK != 0 {
+            os.write_uint32(14, self.KJKPMFFAMFK)?;
         }
-        if self.HEMODCFENHP != false {
-            os.write_bool(11, self.HEMODCFENHP)?;
+        if self.PLGIBHOCDGP != false {
+            os.write_bool(12, self.PLGIBHOCDGP)?;
         }
-        for v in &self.HMNLCHNLEAP {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        for v in &self.GDEBGNKHJKI {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,21 +183,21 @@ impl ::protobuf::Message for TrainPartyBuildDiyScRsp {
     }
 
     fn clear(&mut self) {
-        self.BLDHIEJJNJC.clear();
-        self.ADADHIHDHJC = 0;
-        self.OMBLHJDKEJA = 0;
-        self.HEMODCFENHP = false;
-        self.HMNLCHNLEAP.clear();
+        self.NKCOMPHIJFI.clear();
+        self.retcode = 0;
+        self.KJKPMFFAMFK = 0;
+        self.PLGIBHOCDGP = false;
+        self.GDEBGNKHJKI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyBuildDiyScRsp {
         static instance: TrainPartyBuildDiyScRsp = TrainPartyBuildDiyScRsp {
-            BLDHIEJJNJC: ::std::vec::Vec::new(),
-            ADADHIHDHJC: 0,
-            OMBLHJDKEJA: 0,
-            HEMODCFENHP: false,
-            HMNLCHNLEAP: ::std::vec::Vec::new(),
+            NKCOMPHIJFI: ::std::vec::Vec::new(),
+            retcode: 0,
+            KJKPMFFAMFK: 0,
+            PLGIBHOCDGP: false,
+            GDEBGNKHJKI: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -222,13 +222,13 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyBuildDiyScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dTrainPartyBuildDiyScRsp.proto\x1a\x11FDJBLAFDLAC.proto\x1a\x11IGGC\
-    JANLKCL.proto\"\xdf\x01\n\x17TrainPartyBuildDiyScRsp\x12.\n\x0bBLDHIEJJN\
-    JC\x18\x08\x20\x03(\x0b2\x0c.FDJBLAFDLACR\x0bBLDHIEJJNJC\x12\x20\n\x0bAD\
-    ADHIHDHJC\x18\x02\x20\x01(\rR\x0bADADHIHDHJC\x12\x20\n\x0bOMBLHJDKEJA\
-    \x18\x07\x20\x01(\rR\x0bOMBLHJDKEJA\x12\x20\n\x0bHEMODCFENHP\x18\x0b\x20\
-    \x01(\x08R\x0bHEMODCFENHP\x12.\n\x0bHMNLCHNLEAP\x18\t\x20\x03(\x0b2\x0c.\
-    IGGCJANLKCLR\x0bHMNLCHNLEAPb\x06proto3\
+    \n\x1dTrainPartyBuildDiyScRsp.proto\x1a\x11ADCGGKAPKFK.proto\x1a\x11AEMK\
+    LEGNHIA.proto\"\xd7\x01\n\x17TrainPartyBuildDiyScRsp\x12.\n\x0bNKCOMPHIJ\
+    FI\x18\x03\x20\x03(\x0b2\x0c.AEMKLEGNHIAR\x0bNKCOMPHIJFI\x12\x18\n\x07re\
+    tcode\x18\x04\x20\x01(\rR\x07retcode\x12\x20\n\x0bKJKPMFFAMFK\x18\x0e\
+    \x20\x01(\rR\x0bKJKPMFFAMFK\x12\x20\n\x0bPLGIBHOCDGP\x18\x0c\x20\x01(\
+    \x08R\x0bPLGIBHOCDGP\x12.\n\x0bGDEBGNKHJKI\x18\x01\x20\x03(\x0b2\x0c.ADC\
+    GGKAPKFKR\x0bGDEBGNKHJKIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -246,8 +246,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::FDJBLAFDLAC::file_descriptor().clone());
-            deps.push(super::IGGCJANLKCL::file_descriptor().clone());
+            deps.push(super::ADCGGKAPKFK::file_descriptor().clone());
+            deps.push(super::AEMKLEGNHIA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(TrainPartyBuildDiyScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

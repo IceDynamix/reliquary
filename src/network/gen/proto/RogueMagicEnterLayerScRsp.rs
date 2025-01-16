@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicEnterLayerScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicEnterLayerScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:RogueMagicEnterLayerScRsp.LCKJCKJBLEC)
-    pub LCKJCKJBLEC: ::protobuf::MessageField<super::LMKFPPPCHCI::LMKFPPPCHCI>,
+    // @@protoc_insertion_point(field:RogueMagicEnterLayerScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:RogueMagicEnterLayerScRsp.KJBIGGIHKDP)
+    pub KJBIGGIHKDP: ::protobuf::MessageField<super::KLGIDKPMIBH::KLGIDKPMIBH>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicEnterLayerScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl RogueMagicEnterLayerScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &RogueMagicEnterLayerScRsp| { &m.ADADHIHDHJC },
-            |m: &mut RogueMagicEnterLayerScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &RogueMagicEnterLayerScRsp| { &m.retcode },
+            |m: &mut RogueMagicEnterLayerScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LMKFPPPCHCI::LMKFPPPCHCI>(
-            "LCKJCKJBLEC",
-            |m: &RogueMagicEnterLayerScRsp| { &m.LCKJCKJBLEC },
-            |m: &mut RogueMagicEnterLayerScRsp| { &mut m.LCKJCKJBLEC },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KLGIDKPMIBH::KLGIDKPMIBH>(
+            "KJBIGGIHKDP",
+            |m: &RogueMagicEnterLayerScRsp| { &m.KJBIGGIHKDP },
+            |m: &mut RogueMagicEnterLayerScRsp| { &mut m.KJBIGGIHKDP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicEnterLayerScRsp>(
             "RogueMagicEnterLayerScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for RogueMagicEnterLayerScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                56 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LCKJCKJBLEC)?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KJBIGGIHKDP)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for RogueMagicEnterLayerScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
-        if let Some(v) = self.LCKJCKJBLEC.as_ref() {
+        if let Some(v) = self.KJBIGGIHKDP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for RogueMagicEnterLayerScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(4, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(7, self.retcode)?;
         }
-        if let Some(v) = self.LCKJCKJBLEC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if let Some(v) = self.KJBIGGIHKDP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for RogueMagicEnterLayerScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADADHIHDHJC = 0;
-        self.LCKJCKJBLEC.clear();
+        self.retcode = 0;
+        self.KJBIGGIHKDP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicEnterLayerScRsp {
         static instance: RogueMagicEnterLayerScRsp = RogueMagicEnterLayerScRsp {
-            ADADHIHDHJC: 0,
-            LCKJCKJBLEC: ::protobuf::MessageField::none(),
+            retcode: 0,
+            KJBIGGIHKDP: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicEnterLayerScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fRogueMagicEnterLayerScRsp.proto\x1a\x11LMKFPPPCHCI.proto\"m\n\x19R\
-    ogueMagicEnterLayerScRsp\x12\x20\n\x0bADADHIHDHJC\x18\x04\x20\x01(\rR\
-    \x0bADADHIHDHJC\x12.\n\x0bLCKJCKJBLEC\x18\n\x20\x01(\x0b2\x0c.LMKFPPPCHC\
-    IR\x0bLCKJCKJBLECb\x06proto3\
+    \n\x1fRogueMagicEnterLayerScRsp.proto\x1a\x11KLGIDKPMIBH.proto\"e\n\x19R\
+    ogueMagicEnterLayerScRsp\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07ret\
+    code\x12.\n\x0bKJBIGGIHKDP\x18\x04\x20\x01(\x0b2\x0c.KLGIDKPMIBHR\x0bKJB\
+    IGGIHKDPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::LMKFPPPCHCI::file_descriptor().clone());
+            deps.push(super::KLGIDKPMIBH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueMagicEnterLayerScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

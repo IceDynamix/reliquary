@@ -29,22 +29,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct Equipment {
     // message fields
-    // @@protoc_insertion_point(field:Equipment.rank)
-    pub rank: u32,
-    // @@protoc_insertion_point(field:Equipment.promotion)
-    pub promotion: u32,
     // @@protoc_insertion_point(field:Equipment.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:Equipment.equip_avatar_id)
+    pub equip_avatar_id: u32,
     // @@protoc_insertion_point(field:Equipment.tid)
     pub tid: u32,
     // @@protoc_insertion_point(field:Equipment.exp)
     pub exp: u32,
-    // @@protoc_insertion_point(field:Equipment.is_protected)
-    pub is_protected: bool,
-    // @@protoc_insertion_point(field:Equipment.equip_avatar_id)
-    pub equip_avatar_id: u32,
+    // @@protoc_insertion_point(field:Equipment.promotion)
+    pub promotion: u32,
+    // @@protoc_insertion_point(field:Equipment.rank)
+    pub rank: u32,
     // @@protoc_insertion_point(field:Equipment.unique_id)
     pub unique_id: u32,
+    // @@protoc_insertion_point(field:Equipment.is_protected)
+    pub is_protected: bool,
     // special fields
     // @@protoc_insertion_point(special_field:Equipment.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,19 +65,14 @@ impl Equipment {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "rank",
-            |m: &Equipment| { &m.rank },
-            |m: &mut Equipment| { &mut m.rank },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "promotion",
-            |m: &Equipment| { &m.promotion },
-            |m: &mut Equipment| { &mut m.promotion },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &Equipment| { &m.level },
             |m: &mut Equipment| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "equip_avatar_id",
+            |m: &Equipment| { &m.equip_avatar_id },
+            |m: &mut Equipment| { &mut m.equip_avatar_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "tid",
@@ -90,19 +85,24 @@ impl Equipment {
             |m: &mut Equipment| { &mut m.exp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_protected",
-            |m: &Equipment| { &m.is_protected },
-            |m: &mut Equipment| { &mut m.is_protected },
+            "promotion",
+            |m: &Equipment| { &m.promotion },
+            |m: &mut Equipment| { &mut m.promotion },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "equip_avatar_id",
-            |m: &Equipment| { &m.equip_avatar_id },
-            |m: &mut Equipment| { &mut m.equip_avatar_id },
+            "rank",
+            |m: &Equipment| { &m.rank },
+            |m: &mut Equipment| { &mut m.rank },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "unique_id",
             |m: &Equipment| { &m.unique_id },
             |m: &mut Equipment| { &mut m.unique_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_protected",
+            |m: &Equipment| { &m.is_protected },
+            |m: &mut Equipment| { &mut m.is_protected },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<Equipment>(
             "Equipment",
@@ -122,29 +122,29 @@ impl ::protobuf::Message for Equipment {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.rank = is.read_uint32()?;
-                },
-                40 => {
-                    self.promotion = is.read_uint32()?;
-                },
-                8 => {
+                72 => {
                     self.level = is.read_uint32()?;
                 },
-                64 => {
-                    self.tid = is.read_uint32()?;
-                },
-                96 => {
-                    self.exp = is.read_uint32()?;
-                },
-                112 => {
-                    self.is_protected = is.read_bool()?;
-                },
-                16 => {
+                80 => {
                     self.equip_avatar_id = is.read_uint32()?;
                 },
-                24 => {
+                48 => {
+                    self.tid = is.read_uint32()?;
+                },
+                32 => {
+                    self.exp = is.read_uint32()?;
+                },
+                16 => {
+                    self.promotion = is.read_uint32()?;
+                },
+                96 => {
+                    self.rank = is.read_uint32()?;
+                },
+                8 => {
                     self.unique_id = is.read_uint32()?;
+                },
+                24 => {
+                    self.is_protected = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -158,29 +158,29 @@ impl ::protobuf::Message for Equipment {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.rank != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.rank);
-        }
-        if self.promotion != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.promotion);
-        }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.level);
+            my_size += ::protobuf::rt::uint32_size(9, self.level);
+        }
+        if self.equip_avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.equip_avatar_id);
         }
         if self.tid != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.tid);
+            my_size += ::protobuf::rt::uint32_size(6, self.tid);
         }
         if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.exp);
+            my_size += ::protobuf::rt::uint32_size(4, self.exp);
+        }
+        if self.promotion != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.promotion);
+        }
+        if self.rank != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.rank);
+        }
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.unique_id);
         }
         if self.is_protected != false {
             my_size += 1 + 1;
-        }
-        if self.equip_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.equip_avatar_id);
-        }
-        if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.unique_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -188,29 +188,29 @@ impl ::protobuf::Message for Equipment {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.rank != 0 {
-            os.write_uint32(7, self.rank)?;
-        }
-        if self.promotion != 0 {
-            os.write_uint32(5, self.promotion)?;
-        }
         if self.level != 0 {
-            os.write_uint32(1, self.level)?;
-        }
-        if self.tid != 0 {
-            os.write_uint32(8, self.tid)?;
-        }
-        if self.exp != 0 {
-            os.write_uint32(12, self.exp)?;
-        }
-        if self.is_protected != false {
-            os.write_bool(14, self.is_protected)?;
+            os.write_uint32(9, self.level)?;
         }
         if self.equip_avatar_id != 0 {
-            os.write_uint32(2, self.equip_avatar_id)?;
+            os.write_uint32(10, self.equip_avatar_id)?;
+        }
+        if self.tid != 0 {
+            os.write_uint32(6, self.tid)?;
+        }
+        if self.exp != 0 {
+            os.write_uint32(4, self.exp)?;
+        }
+        if self.promotion != 0 {
+            os.write_uint32(2, self.promotion)?;
+        }
+        if self.rank != 0 {
+            os.write_uint32(12, self.rank)?;
         }
         if self.unique_id != 0 {
-            os.write_uint32(3, self.unique_id)?;
+            os.write_uint32(1, self.unique_id)?;
+        }
+        if self.is_protected != false {
+            os.write_bool(3, self.is_protected)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -229,27 +229,27 @@ impl ::protobuf::Message for Equipment {
     }
 
     fn clear(&mut self) {
-        self.rank = 0;
-        self.promotion = 0;
         self.level = 0;
+        self.equip_avatar_id = 0;
         self.tid = 0;
         self.exp = 0;
-        self.is_protected = false;
-        self.equip_avatar_id = 0;
+        self.promotion = 0;
+        self.rank = 0;
         self.unique_id = 0;
+        self.is_protected = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static Equipment {
         static instance: Equipment = Equipment {
-            rank: 0,
-            promotion: 0,
             level: 0,
+            equip_avatar_id: 0,
             tid: 0,
             exp: 0,
-            is_protected: false,
-            equip_avatar_id: 0,
+            promotion: 0,
+            rank: 0,
             unique_id: 0,
+            is_protected: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -274,13 +274,13 @@ impl ::protobuf::reflect::ProtobufValue for Equipment {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0fEquipment.proto\"\xdf\x01\n\tEquipment\x12\x12\n\x04rank\x18\x07\
-    \x20\x01(\rR\x04rank\x12\x1c\n\tpromotion\x18\x05\x20\x01(\rR\tpromotion\
-    \x12\x14\n\x05level\x18\x01\x20\x01(\rR\x05level\x12\x10\n\x03tid\x18\
-    \x08\x20\x01(\rR\x03tid\x12\x10\n\x03exp\x18\x0c\x20\x01(\rR\x03exp\x12!\
-    \n\x0cis_protected\x18\x0e\x20\x01(\x08R\x0bisProtected\x12&\n\x0fequip_\
-    avatar_id\x18\x02\x20\x01(\rR\requipAvatarId\x12\x1b\n\tunique_id\x18\
-    \x03\x20\x01(\rR\x08uniqueIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x0fEquipment.proto\"\xdf\x01\n\tEquipment\x12\x14\n\x05level\x18\t\
+    \x20\x01(\rR\x05level\x12&\n\x0fequip_avatar_id\x18\n\x20\x01(\rR\requip\
+    AvatarId\x12\x10\n\x03tid\x18\x06\x20\x01(\rR\x03tid\x12\x10\n\x03exp\
+    \x18\x04\x20\x01(\rR\x03exp\x12\x1c\n\tpromotion\x18\x02\x20\x01(\rR\tpr\
+    omotion\x12\x12\n\x04rank\x18\x0c\x20\x01(\rR\x04rank\x12\x1b\n\tunique_\
+    id\x18\x01\x20\x01(\rR\x08uniqueId\x12!\n\x0cis_protected\x18\x03\x20\
+    \x01(\x08R\x0bisProtectedb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

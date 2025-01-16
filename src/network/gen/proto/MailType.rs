@@ -89,8 +89,7 @@ impl MailType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0eMailType.proto*4\n\x08MailType\x12\x14\n\x10MAIL_TYPE_NORMAL\x10\0\
-    \x12\x12\n\x0eMAIL_TYPE_STAR\x10\x01B\x15\n\x13emu.lunarcore.protob\x06p\
-    roto3\
+    \x12\x12\n\x0eMAIL_TYPE_STAR\x10\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

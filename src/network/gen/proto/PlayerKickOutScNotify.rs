@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayerKickOutScNotify {
     // message fields
-    // @@protoc_insertion_point(field:PlayerKickOutScNotify.JAPBDHEILIO)
-    pub JAPBDHEILIO: ::protobuf::EnumOrUnknown<super::EKCLCNHOBEL::EKCLCNHOBEL>,
-    // @@protoc_insertion_point(field:PlayerKickOutScNotify.CKJIMBBPJPD)
-    pub CKJIMBBPJPD: ::protobuf::MessageField<super::BlackInfo::BlackInfo>,
+    // @@protoc_insertion_point(field:PlayerKickOutScNotify.KJLNBIBOLBJ)
+    pub KJLNBIBOLBJ: ::protobuf::EnumOrUnknown<super::AMJMENEBFKG::AMJMENEBFKG>,
+    // @@protoc_insertion_point(field:PlayerKickOutScNotify.MFJPFLGKHDI)
+    pub MFJPFLGKHDI: ::protobuf::MessageField<super::BlackInfo::BlackInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:PlayerKickOutScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl PlayerKickOutScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JAPBDHEILIO",
-            |m: &PlayerKickOutScNotify| { &m.JAPBDHEILIO },
-            |m: &mut PlayerKickOutScNotify| { &mut m.JAPBDHEILIO },
+            "KJLNBIBOLBJ",
+            |m: &PlayerKickOutScNotify| { &m.KJLNBIBOLBJ },
+            |m: &mut PlayerKickOutScNotify| { &mut m.KJLNBIBOLBJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BlackInfo::BlackInfo>(
-            "CKJIMBBPJPD",
-            |m: &PlayerKickOutScNotify| { &m.CKJIMBBPJPD },
-            |m: &mut PlayerKickOutScNotify| { &mut m.CKJIMBBPJPD },
+            "MFJPFLGKHDI",
+            |m: &PlayerKickOutScNotify| { &m.MFJPFLGKHDI },
+            |m: &mut PlayerKickOutScNotify| { &mut m.MFJPFLGKHDI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayerKickOutScNotify>(
             "PlayerKickOutScNotify",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for PlayerKickOutScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.JAPBDHEILIO = is.read_enum_or_unknown()?;
+                72 => {
+                    self.KJLNBIBOLBJ = is.read_enum_or_unknown()?;
                 },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CKJIMBBPJPD)?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MFJPFLGKHDI)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for PlayerKickOutScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JAPBDHEILIO != ::protobuf::EnumOrUnknown::new(super::EKCLCNHOBEL::EKCLCNHOBEL::KICK_SQUEEZED) {
-            my_size += ::protobuf::rt::int32_size(13, self.JAPBDHEILIO.value());
+        if self.KJLNBIBOLBJ != ::protobuf::EnumOrUnknown::new(super::AMJMENEBFKG::AMJMENEBFKG::KICK_SQUEEZED) {
+            my_size += ::protobuf::rt::int32_size(9, self.KJLNBIBOLBJ.value());
         }
-        if let Some(v) = self.CKJIMBBPJPD.as_ref() {
+        if let Some(v) = self.MFJPFLGKHDI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for PlayerKickOutScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JAPBDHEILIO != ::protobuf::EnumOrUnknown::new(super::EKCLCNHOBEL::EKCLCNHOBEL::KICK_SQUEEZED) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.JAPBDHEILIO))?;
+        if self.KJLNBIBOLBJ != ::protobuf::EnumOrUnknown::new(super::AMJMENEBFKG::AMJMENEBFKG::KICK_SQUEEZED) {
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.KJLNBIBOLBJ))?;
         }
-        if let Some(v) = self.CKJIMBBPJPD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if let Some(v) = self.MFJPFLGKHDI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for PlayerKickOutScNotify {
     }
 
     fn clear(&mut self) {
-        self.JAPBDHEILIO = ::protobuf::EnumOrUnknown::new(super::EKCLCNHOBEL::EKCLCNHOBEL::KICK_SQUEEZED);
-        self.CKJIMBBPJPD.clear();
+        self.KJLNBIBOLBJ = ::protobuf::EnumOrUnknown::new(super::AMJMENEBFKG::AMJMENEBFKG::KICK_SQUEEZED);
+        self.MFJPFLGKHDI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayerKickOutScNotify {
         static instance: PlayerKickOutScNotify = PlayerKickOutScNotify {
-            JAPBDHEILIO: ::protobuf::EnumOrUnknown::from_i32(0),
-            CKJIMBBPJPD: ::protobuf::MessageField::none(),
+            KJLNBIBOLBJ: ::protobuf::EnumOrUnknown::from_i32(0),
+            MFJPFLGKHDI: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for PlayerKickOutScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bPlayerKickOutScNotify.proto\x1a\x0fBlackInfo.proto\x1a\x11EKCLCNHO\
-    BEL.proto\"u\n\x15PlayerKickOutScNotify\x12.\n\x0bJAPBDHEILIO\x18\r\x20\
-    \x01(\x0e2\x0c.EKCLCNHOBELR\x0bJAPBDHEILIO\x12,\n\x0bCKJIMBBPJPD\x18\x07\
-    \x20\x01(\x0b2\n.BlackInfoR\x0bCKJIMBBPJPDb\x06proto3\
+    \n\x1bPlayerKickOutScNotify.proto\x1a\x11AMJMENEBFKG.proto\x1a\x0fBlackI\
+    nfo.proto\"u\n\x15PlayerKickOutScNotify\x12.\n\x0bKJLNBIBOLBJ\x18\t\x20\
+    \x01(\x0e2\x0c.AMJMENEBFKGR\x0bKJLNBIBOLBJ\x12,\n\x0bMFJPFLGKHDI\x18\x02\
+    \x20\x01(\x0b2\n.BlackInfoR\x0bMFJPFLGKHDIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,8 +188,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
+            deps.push(super::AMJMENEBFKG::file_descriptor().clone());
             deps.push(super::BlackInfo::file_descriptor().clone());
-            deps.push(super::EKCLCNHOBEL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PlayerKickOutScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

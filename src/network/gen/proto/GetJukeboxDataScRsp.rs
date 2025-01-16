@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetJukeboxDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetJukeboxDataScRsp.playing_id)
-    pub playing_id: u32,
     // @@protoc_insertion_point(field:GetJukeboxDataScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetJukeboxDataScRsp.music_list)
-    pub music_list: ::std::vec::Vec<super::UnlockedMusic::UnlockedMusic>,
+    // @@protoc_insertion_point(field:GetJukeboxDataScRsp.HMGGJKMKCGD)
+    pub HMGGJKMKCGD: ::std::vec::Vec<super::ALLOEKHHKBN::ALLOEKHHKBN>,
+    // @@protoc_insertion_point(field:GetJukeboxDataScRsp.DIPAFHKNKBD)
+    pub DIPAFHKNKBD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetJukeboxDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl GetJukeboxDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "playing_id",
-            |m: &GetJukeboxDataScRsp| { &m.playing_id },
-            |m: &mut GetJukeboxDataScRsp| { &mut m.playing_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetJukeboxDataScRsp| { &m.retcode },
             |m: &mut GetJukeboxDataScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "music_list",
-            |m: &GetJukeboxDataScRsp| { &m.music_list },
-            |m: &mut GetJukeboxDataScRsp| { &mut m.music_list },
+            "HMGGJKMKCGD",
+            |m: &GetJukeboxDataScRsp| { &m.HMGGJKMKCGD },
+            |m: &mut GetJukeboxDataScRsp| { &mut m.HMGGJKMKCGD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DIPAFHKNKBD",
+            |m: &GetJukeboxDataScRsp| { &m.DIPAFHKNKBD },
+            |m: &mut GetJukeboxDataScRsp| { &mut m.DIPAFHKNKBD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetJukeboxDataScRsp>(
             "GetJukeboxDataScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for GetJukeboxDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.playing_id = is.read_uint32()?;
-                },
-                16 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
-                114 => {
-                    self.music_list.push(is.read_message()?);
+                26 => {
+                    self.HMGGJKMKCGD.push(is.read_message()?);
+                },
+                80 => {
+                    self.DIPAFHKNKBD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,31 +108,31 @@ impl ::protobuf::Message for GetJukeboxDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.playing_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.playing_id);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
-        for value in &self.music_list {
+        for value in &self.HMGGJKMKCGD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.DIPAFHKNKBD != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.DIPAFHKNKBD);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.playing_id != 0 {
-            os.write_uint32(5, self.playing_id)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
-        for v in &self.music_list {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        for v in &self.HMGGJKMKCGD {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
+        if self.DIPAFHKNKBD != 0 {
+            os.write_uint32(10, self.DIPAFHKNKBD)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,17 +150,17 @@ impl ::protobuf::Message for GetJukeboxDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.playing_id = 0;
         self.retcode = 0;
-        self.music_list.clear();
+        self.HMGGJKMKCGD.clear();
+        self.DIPAFHKNKBD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetJukeboxDataScRsp {
         static instance: GetJukeboxDataScRsp = GetJukeboxDataScRsp {
-            playing_id: 0,
             retcode: 0,
-            music_list: ::std::vec::Vec::new(),
+            HMGGJKMKCGD: ::std::vec::Vec::new(),
+            DIPAFHKNKBD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for GetJukeboxDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19GetJukeboxDataScRsp.proto\x1a\x13UnlockedMusic.proto\"}\n\x13GetJu\
-    keboxDataScRsp\x12\x1d\n\nplaying_id\x18\x05\x20\x01(\rR\tplayingId\x12\
-    \x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12-\n\nmusic_list\x18\
-    \x0e\x20\x03(\x0b2\x0e.UnlockedMusicR\tmusicListB\x15\n\x13emu.lunarcore\
-    .protob\x06proto3\
+    \n\x19GetJukeboxDataScRsp.proto\x1a\x11ALLOEKHHKBN.proto\"\x81\x01\n\x13\
+    GetJukeboxDataScRsp\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\
+    \x12.\n\x0bHMGGJKMKCGD\x18\x03\x20\x03(\x0b2\x0c.ALLOEKHHKBNR\x0bHMGGJKM\
+    KCGD\x12\x20\n\x0bDIPAFHKNKBD\x18\n\x20\x01(\rR\x0bDIPAFHKNKBDb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::UnlockedMusic::file_descriptor().clone());
+            deps.push(super::ALLOEKHHKBN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetJukeboxDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UnlockPhoneThemeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:UnlockPhoneThemeScNotify.theme_id)
-    pub theme_id: u32,
+    // @@protoc_insertion_point(field:UnlockPhoneThemeScNotify.IFIFOFJCJOP)
+    pub IFIFOFJCJOP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:UnlockPhoneThemeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl UnlockPhoneThemeScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "theme_id",
-            |m: &UnlockPhoneThemeScNotify| { &m.theme_id },
-            |m: &mut UnlockPhoneThemeScNotify| { &mut m.theme_id },
+            "IFIFOFJCJOP",
+            |m: &UnlockPhoneThemeScNotify| { &m.IFIFOFJCJOP },
+            |m: &mut UnlockPhoneThemeScNotify| { &mut m.IFIFOFJCJOP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UnlockPhoneThemeScNotify>(
             "UnlockPhoneThemeScNotify",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for UnlockPhoneThemeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.theme_id = is.read_uint32()?;
+                112 => {
+                    self.IFIFOFJCJOP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for UnlockPhoneThemeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.theme_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.theme_id);
+        if self.IFIFOFJCJOP != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.IFIFOFJCJOP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for UnlockPhoneThemeScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.theme_id != 0 {
-            os.write_uint32(6, self.theme_id)?;
+        if self.IFIFOFJCJOP != 0 {
+            os.write_uint32(14, self.IFIFOFJCJOP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for UnlockPhoneThemeScNotify {
     }
 
     fn clear(&mut self) {
-        self.theme_id = 0;
+        self.IFIFOFJCJOP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UnlockPhoneThemeScNotify {
         static instance: UnlockPhoneThemeScNotify = UnlockPhoneThemeScNotify {
-            theme_id: 0,
+            IFIFOFJCJOP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for UnlockPhoneThemeScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eUnlockPhoneThemeScNotify.proto\"5\n\x18UnlockPhoneThemeScNotify\
-    \x12\x19\n\x08theme_id\x18\x06\x20\x01(\rR\x07themeIdB\x15\n\x13emu.luna\
-    rcore.protob\x06proto3\
+    \n\x1eUnlockPhoneThemeScNotify.proto\"<\n\x18UnlockPhoneThemeScNotify\
+    \x12\x20\n\x0bIFIFOFJCJOP\x18\x0e\x20\x01(\rR\x0bIFIFOFJCJOPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

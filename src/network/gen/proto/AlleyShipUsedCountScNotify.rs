@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AlleyShipUsedCountScNotify {
     // message fields
-    // @@protoc_insertion_point(field:AlleyShipUsedCountScNotify.CAPNJOIANHJ)
-    pub CAPNJOIANHJ: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:AlleyShipUsedCountScNotify.OAMOFNCMDHJ)
+    pub OAMOFNCMDHJ: ::std::collections::HashMap<u32, u32>,
     // special fields
     // @@protoc_insertion_point(special_field:AlleyShipUsedCountScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl AlleyShipUsedCountScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor::<_, _, _>(
-            "CAPNJOIANHJ",
-            |m: &AlleyShipUsedCountScNotify| { &m.CAPNJOIANHJ },
-            |m: &mut AlleyShipUsedCountScNotify| { &mut m.CAPNJOIANHJ },
+            "OAMOFNCMDHJ",
+            |m: &AlleyShipUsedCountScNotify| { &m.OAMOFNCMDHJ },
+            |m: &mut AlleyShipUsedCountScNotify| { &mut m.OAMOFNCMDHJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AlleyShipUsedCountScNotify>(
             "AlleyShipUsedCountScNotify",
@@ -86,7 +86,7 @@ impl ::protobuf::Message for AlleyShipUsedCountScNotify {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.CAPNJOIANHJ.insert(key, value);
+                    self.OAMOFNCMDHJ.insert(key, value);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,7 +100,7 @@ impl ::protobuf::Message for AlleyShipUsedCountScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for (k, v) in &self.CAPNJOIANHJ {
+        for (k, v) in &self.OAMOFNCMDHJ {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
@@ -112,7 +112,7 @@ impl ::protobuf::Message for AlleyShipUsedCountScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for (k, v) in &self.CAPNJOIANHJ {
+        for (k, v) in &self.OAMOFNCMDHJ {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
@@ -138,7 +138,7 @@ impl ::protobuf::Message for AlleyShipUsedCountScNotify {
     }
 
     fn clear(&mut self) {
-        self.CAPNJOIANHJ.clear();
+        self.OAMOFNCMDHJ.clear();
         self.special_fields.clear();
     }
 
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for AlleyShipUsedCountScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20AlleyShipUsedCountScNotify.proto\"\xac\x01\n\x1aAlleyShipUsedCount\
-    ScNotify\x12N\n\x0bCAPNJOIANHJ\x18\x0f\x20\x03(\x0b2,.AlleyShipUsedCount\
-    ScNotify.CAPNJOIANHJEntryR\x0bCAPNJOIANHJ\x1a>\n\x10CAPNJOIANHJEntry\x12\
+    ScNotify\x12N\n\x0bOAMOFNCMDHJ\x18\x0f\x20\x03(\x0b2,.AlleyShipUsedCount\
+    ScNotify.OAMOFNCMDHJEntryR\x0bOAMOFNCMDHJ\x1a>\n\x10OAMOFNCMDHJEntry\x12\
     \x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\
     \x01(\rR\x05value:\x028\x01b\x06proto3\
 ";

@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TravelBrochureSetCustomValueScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TravelBrochureSetCustomValueScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:TravelBrochureSetCustomValueScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TravelBrochureSetCustomValueScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl TravelBrochureSetCustomValueScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &TravelBrochureSetCustomValueScRsp| { &m.ADADHIHDHJC },
-            |m: &mut TravelBrochureSetCustomValueScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &TravelBrochureSetCustomValueScRsp| { &m.retcode },
+            |m: &mut TravelBrochureSetCustomValueScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TravelBrochureSetCustomValueScRsp>(
             "TravelBrochureSetCustomValueScRsp",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for TravelBrochureSetCustomValueScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                120 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for TravelBrochureSetCustomValueScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for TravelBrochureSetCustomValueScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(4, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(15, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for TravelBrochureSetCustomValueScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADADHIHDHJC = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TravelBrochureSetCustomValueScRsp {
         static instance: TravelBrochureSetCustomValueScRsp = TravelBrochureSetCustomValueScRsp {
-            ADADHIHDHJC: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for TravelBrochureSetCustomValueScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'TravelBrochureSetCustomValueScRsp.proto\"E\n!TravelBrochureSetCustomV\
-    alueScRsp\x12\x20\n\x0bADADHIHDHJC\x18\x04\x20\x01(\rR\x0bADADHIHDHJCb\
-    \x06proto3\
+    \n'TravelBrochureSetCustomValueScRsp.proto\"=\n!TravelBrochureSetCustomV\
+    alueScRsp\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

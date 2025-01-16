@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct QuitBattleCsReq {
     // message fields
-    // @@protoc_insertion_point(field:QuitBattleCsReq.AJMDFDMDMAN)
-    pub AJMDFDMDMAN: ::protobuf::EnumOrUnknown<super::OELNNDOBEKP::OELNNDOBEKP>,
-    // @@protoc_insertion_point(field:QuitBattleCsReq.ONJPOPFPEFH)
-    pub ONJPOPFPEFH: ::protobuf::MessageField<super::KMAHOCEKPAK::KMAHOCEKPAK>,
+    // @@protoc_insertion_point(field:QuitBattleCsReq.AHOLPNCMJOL)
+    pub AHOLPNCMJOL: ::protobuf::EnumOrUnknown<super::FKFMMNOCIPK::FKFMMNOCIPK>,
+    // @@protoc_insertion_point(field:QuitBattleCsReq.BLGPIKHEGCC)
+    pub BLGPIKHEGCC: ::protobuf::MessageField<super::DEDFMIPCCEC::DEDFMIPCCEC>,
     // special fields
     // @@protoc_insertion_point(special_field:QuitBattleCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl QuitBattleCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AJMDFDMDMAN",
-            |m: &QuitBattleCsReq| { &m.AJMDFDMDMAN },
-            |m: &mut QuitBattleCsReq| { &mut m.AJMDFDMDMAN },
+            "AHOLPNCMJOL",
+            |m: &QuitBattleCsReq| { &m.AHOLPNCMJOL },
+            |m: &mut QuitBattleCsReq| { &mut m.AHOLPNCMJOL },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KMAHOCEKPAK::KMAHOCEKPAK>(
-            "ONJPOPFPEFH",
-            |m: &QuitBattleCsReq| { &m.ONJPOPFPEFH },
-            |m: &mut QuitBattleCsReq| { &mut m.ONJPOPFPEFH },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DEDFMIPCCEC::DEDFMIPCCEC>(
+            "BLGPIKHEGCC",
+            |m: &QuitBattleCsReq| { &m.BLGPIKHEGCC },
+            |m: &mut QuitBattleCsReq| { &mut m.BLGPIKHEGCC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<QuitBattleCsReq>(
             "QuitBattleCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for QuitBattleCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.AJMDFDMDMAN = is.read_enum_or_unknown()?;
+                120 => {
+                    self.AHOLPNCMJOL = is.read_enum_or_unknown()?;
                 },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ONJPOPFPEFH)?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BLGPIKHEGCC)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for QuitBattleCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AJMDFDMDMAN != ::protobuf::EnumOrUnknown::new(super::OELNNDOBEKP::OELNNDOBEKP::REBATTLE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(11, self.AJMDFDMDMAN.value());
+        if self.AHOLPNCMJOL != ::protobuf::EnumOrUnknown::new(super::FKFMMNOCIPK::FKFMMNOCIPK::REBATTLE_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(15, self.AHOLPNCMJOL.value());
         }
-        if let Some(v) = self.ONJPOPFPEFH.as_ref() {
+        if let Some(v) = self.BLGPIKHEGCC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for QuitBattleCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AJMDFDMDMAN != ::protobuf::EnumOrUnknown::new(super::OELNNDOBEKP::OELNNDOBEKP::REBATTLE_TYPE_NONE) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.AJMDFDMDMAN))?;
+        if self.AHOLPNCMJOL != ::protobuf::EnumOrUnknown::new(super::FKFMMNOCIPK::FKFMMNOCIPK::REBATTLE_TYPE_NONE) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.AHOLPNCMJOL))?;
         }
-        if let Some(v) = self.ONJPOPFPEFH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if let Some(v) = self.BLGPIKHEGCC.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for QuitBattleCsReq {
     }
 
     fn clear(&mut self) {
-        self.AJMDFDMDMAN = ::protobuf::EnumOrUnknown::new(super::OELNNDOBEKP::OELNNDOBEKP::REBATTLE_TYPE_NONE);
-        self.ONJPOPFPEFH.clear();
+        self.AHOLPNCMJOL = ::protobuf::EnumOrUnknown::new(super::FKFMMNOCIPK::FKFMMNOCIPK::REBATTLE_TYPE_NONE);
+        self.BLGPIKHEGCC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static QuitBattleCsReq {
         static instance: QuitBattleCsReq = QuitBattleCsReq {
-            AJMDFDMDMAN: ::protobuf::EnumOrUnknown::from_i32(0),
-            ONJPOPFPEFH: ::protobuf::MessageField::none(),
+            AHOLPNCMJOL: ::protobuf::EnumOrUnknown::from_i32(0),
+            BLGPIKHEGCC: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for QuitBattleCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15QuitBattleCsReq.proto\x1a\x11KMAHOCEKPAK.proto\x1a\x11OELNNDOBEKP.\
-    proto\"q\n\x0fQuitBattleCsReq\x12.\n\x0bAJMDFDMDMAN\x18\x0b\x20\x01(\x0e\
-    2\x0c.OELNNDOBEKPR\x0bAJMDFDMDMAN\x12.\n\x0bONJPOPFPEFH\x18\t\x20\x01(\
-    \x0b2\x0c.KMAHOCEKPAKR\x0bONJPOPFPEFHb\x06proto3\
+    \n\x15QuitBattleCsReq.proto\x1a\x11DEDFMIPCCEC.proto\x1a\x11FKFMMNOCIPK.\
+    proto\"q\n\x0fQuitBattleCsReq\x12.\n\x0bAHOLPNCMJOL\x18\x0f\x20\x01(\x0e\
+    2\x0c.FKFMMNOCIPKR\x0bAHOLPNCMJOL\x12.\n\x0bBLGPIKHEGCC\x18\x07\x20\x01(\
+    \x0b2\x0c.DEDFMIPCCECR\x0bBLGPIKHEGCCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,8 +188,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::KMAHOCEKPAK::file_descriptor().clone());
-            deps.push(super::OELNNDOBEKP::file_descriptor().clone());
+            deps.push(super::DEDFMIPCCEC::file_descriptor().clone());
+            deps.push(super::FKFMMNOCIPK::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(QuitBattleCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ComposeItemCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ComposeItemCsReq.count)
-    pub count: u32,
-    // @@protoc_insertion_point(field:ComposeItemCsReq.compose_id)
-    pub compose_id: u32,
-    // @@protoc_insertion_point(field:ComposeItemCsReq.compose_item_list)
-    pub compose_item_list: ::protobuf::MessageField<super::ItemCostList::ItemCostList>,
+    // @@protoc_insertion_point(field:ComposeItemCsReq.BFMBKPACMBG)
+    pub BFMBKPACMBG: ::protobuf::MessageField<super::LFKJBBFJDKN::LFKJBBFJDKN>,
+    // @@protoc_insertion_point(field:ComposeItemCsReq.DPKDABEHBOL)
+    pub DPKDABEHBOL: u32,
+    // @@protoc_insertion_point(field:ComposeItemCsReq.JHKABAMKHFJ)
+    pub JHKABAMKHFJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ComposeItemCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl ComposeItemCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "count",
-            |m: &ComposeItemCsReq| { &m.count },
-            |m: &mut ComposeItemCsReq| { &mut m.count },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LFKJBBFJDKN::LFKJBBFJDKN>(
+            "BFMBKPACMBG",
+            |m: &ComposeItemCsReq| { &m.BFMBKPACMBG },
+            |m: &mut ComposeItemCsReq| { &mut m.BFMBKPACMBG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "compose_id",
-            |m: &ComposeItemCsReq| { &m.compose_id },
-            |m: &mut ComposeItemCsReq| { &mut m.compose_id },
+            "DPKDABEHBOL",
+            |m: &ComposeItemCsReq| { &m.DPKDABEHBOL },
+            |m: &mut ComposeItemCsReq| { &mut m.DPKDABEHBOL },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostList::ItemCostList>(
-            "compose_item_list",
-            |m: &ComposeItemCsReq| { &m.compose_item_list },
-            |m: &mut ComposeItemCsReq| { &mut m.compose_item_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JHKABAMKHFJ",
+            |m: &ComposeItemCsReq| { &m.JHKABAMKHFJ },
+            |m: &mut ComposeItemCsReq| { &mut m.JHKABAMKHFJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ComposeItemCsReq>(
             "ComposeItemCsReq",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for ComposeItemCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.count = is.read_uint32()?;
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BFMBKPACMBG)?;
                 },
-                80 => {
-                    self.compose_id = is.read_uint32()?;
+                96 => {
+                    self.DPKDABEHBOL = is.read_uint32()?;
                 },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.compose_item_list)?;
+                88 => {
+                    self.JHKABAMKHFJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +108,15 @@ impl ::protobuf::Message for ComposeItemCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.count != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.count);
-        }
-        if self.compose_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.compose_id);
-        }
-        if let Some(v) = self.compose_item_list.as_ref() {
+        if let Some(v) = self.BFMBKPACMBG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.DPKDABEHBOL != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.DPKDABEHBOL);
+        }
+        if self.JHKABAMKHFJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.JHKABAMKHFJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for ComposeItemCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.count != 0 {
-            os.write_uint32(4, self.count)?;
+        if let Some(v) = self.BFMBKPACMBG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
-        if self.compose_id != 0 {
-            os.write_uint32(10, self.compose_id)?;
+        if self.DPKDABEHBOL != 0 {
+            os.write_uint32(12, self.DPKDABEHBOL)?;
         }
-        if let Some(v) = self.compose_item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if self.JHKABAMKHFJ != 0 {
+            os.write_uint32(11, self.JHKABAMKHFJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for ComposeItemCsReq {
     }
 
     fn clear(&mut self) {
-        self.count = 0;
-        self.compose_id = 0;
-        self.compose_item_list.clear();
+        self.BFMBKPACMBG.clear();
+        self.DPKDABEHBOL = 0;
+        self.JHKABAMKHFJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ComposeItemCsReq {
         static instance: ComposeItemCsReq = ComposeItemCsReq {
-            count: 0,
-            compose_id: 0,
-            compose_item_list: ::protobuf::MessageField::none(),
+            BFMBKPACMBG: ::protobuf::MessageField::none(),
+            DPKDABEHBOL: 0,
+            JHKABAMKHFJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for ComposeItemCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16ComposeItemCsReq.proto\x1a\x12ItemCostList.proto\"\x82\x01\n\x10Co\
-    mposeItemCsReq\x12\x14\n\x05count\x18\x04\x20\x01(\rR\x05count\x12\x1d\n\
-    \ncompose_id\x18\n\x20\x01(\rR\tcomposeId\x129\n\x11compose_item_list\
-    \x18\x0e\x20\x01(\x0b2\r.ItemCostListR\x0fcomposeItemListB\x15\n\x13emu.\
-    lunarcore.protob\x06proto3\
+    \n\x16ComposeItemCsReq.proto\x1a\x11LFKJBBFJDKN.proto\"\x86\x01\n\x10Com\
+    poseItemCsReq\x12.\n\x0bBFMBKPACMBG\x18\n\x20\x01(\x0b2\x0c.LFKJBBFJDKNR\
+    \x0bBFMBKPACMBG\x12\x20\n\x0bDPKDABEHBOL\x18\x0c\x20\x01(\rR\x0bDPKDABEH\
+    BOL\x12\x20\n\x0bJHKABAMKHFJ\x18\x0b\x20\x01(\rR\x0bJHKABAMKHFJb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ItemCostList::file_descriptor().clone());
+            deps.push(super::LFKJBBFJDKN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ComposeItemCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

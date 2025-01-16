@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EvolveBuildShopAbilityUpScRsp {
     // message fields
-    // @@protoc_insertion_point(field:EvolveBuildShopAbilityUpScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:EvolveBuildShopAbilityUpScRsp.GJGFOMCBMDO)
-    pub GJGFOMCBMDO: u32,
-    // @@protoc_insertion_point(field:EvolveBuildShopAbilityUpScRsp.JKOCJIMAGBN)
-    pub JKOCJIMAGBN: u32,
+    // @@protoc_insertion_point(field:EvolveBuildShopAbilityUpScRsp.level)
+    pub level: u32,
+    // @@protoc_insertion_point(field:EvolveBuildShopAbilityUpScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:EvolveBuildShopAbilityUpScRsp.DHDKHMFCJMA)
+    pub DHDKHMFCJMA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EvolveBuildShopAbilityUpScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl EvolveBuildShopAbilityUpScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &EvolveBuildShopAbilityUpScRsp| { &m.ADADHIHDHJC },
-            |m: &mut EvolveBuildShopAbilityUpScRsp| { &mut m.ADADHIHDHJC },
+            "level",
+            |m: &EvolveBuildShopAbilityUpScRsp| { &m.level },
+            |m: &mut EvolveBuildShopAbilityUpScRsp| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GJGFOMCBMDO",
-            |m: &EvolveBuildShopAbilityUpScRsp| { &m.GJGFOMCBMDO },
-            |m: &mut EvolveBuildShopAbilityUpScRsp| { &mut m.GJGFOMCBMDO },
+            "retcode",
+            |m: &EvolveBuildShopAbilityUpScRsp| { &m.retcode },
+            |m: &mut EvolveBuildShopAbilityUpScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JKOCJIMAGBN",
-            |m: &EvolveBuildShopAbilityUpScRsp| { &m.JKOCJIMAGBN },
-            |m: &mut EvolveBuildShopAbilityUpScRsp| { &mut m.JKOCJIMAGBN },
+            "DHDKHMFCJMA",
+            |m: &EvolveBuildShopAbilityUpScRsp| { &m.DHDKHMFCJMA },
+            |m: &mut EvolveBuildShopAbilityUpScRsp| { &mut m.DHDKHMFCJMA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EvolveBuildShopAbilityUpScRsp>(
             "EvolveBuildShopAbilityUpScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for EvolveBuildShopAbilityUpScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
-                },
-                64 => {
-                    self.GJGFOMCBMDO = is.read_uint32()?;
+                8 => {
+                    self.level = is.read_uint32()?;
                 },
                 80 => {
-                    self.JKOCJIMAGBN = is.read_uint32()?;
+                    self.retcode = is.read_uint32()?;
+                },
+                56 => {
+                    self.DHDKHMFCJMA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for EvolveBuildShopAbilityUpScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.ADADHIHDHJC);
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.level);
         }
-        if self.GJGFOMCBMDO != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.GJGFOMCBMDO);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
-        if self.JKOCJIMAGBN != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.JKOCJIMAGBN);
+        if self.DHDKHMFCJMA != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.DHDKHMFCJMA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for EvolveBuildShopAbilityUpScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(7, self.ADADHIHDHJC)?;
+        if self.level != 0 {
+            os.write_uint32(1, self.level)?;
         }
-        if self.GJGFOMCBMDO != 0 {
-            os.write_uint32(8, self.GJGFOMCBMDO)?;
+        if self.retcode != 0 {
+            os.write_uint32(10, self.retcode)?;
         }
-        if self.JKOCJIMAGBN != 0 {
-            os.write_uint32(10, self.JKOCJIMAGBN)?;
+        if self.DHDKHMFCJMA != 0 {
+            os.write_uint32(7, self.DHDKHMFCJMA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for EvolveBuildShopAbilityUpScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADADHIHDHJC = 0;
-        self.GJGFOMCBMDO = 0;
-        self.JKOCJIMAGBN = 0;
+        self.level = 0;
+        self.retcode = 0;
+        self.DHDKHMFCJMA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EvolveBuildShopAbilityUpScRsp {
         static instance: EvolveBuildShopAbilityUpScRsp = EvolveBuildShopAbilityUpScRsp {
-            ADADHIHDHJC: 0,
-            GJGFOMCBMDO: 0,
-            JKOCJIMAGBN: 0,
+            level: 0,
+            retcode: 0,
+            DHDKHMFCJMA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildShopAbilityUpScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#EvolveBuildShopAbilityUpScRsp.proto\"\x85\x01\n\x1dEvolveBuildShopAbi\
-    lityUpScRsp\x12\x20\n\x0bADADHIHDHJC\x18\x07\x20\x01(\rR\x0bADADHIHDHJC\
-    \x12\x20\n\x0bGJGFOMCBMDO\x18\x08\x20\x01(\rR\x0bGJGFOMCBMDO\x12\x20\n\
-    \x0bJKOCJIMAGBN\x18\n\x20\x01(\rR\x0bJKOCJIMAGBNb\x06proto3\
+    \n#EvolveBuildShopAbilityUpScRsp.proto\"q\n\x1dEvolveBuildShopAbilityUpS\
+    cRsp\x12\x14\n\x05level\x18\x01\x20\x01(\rR\x05level\x12\x18\n\x07retcod\
+    e\x18\n\x20\x01(\rR\x07retcode\x12\x20\n\x0bDHDKHMFCJMA\x18\x07\x20\x01(\
+    \rR\x0bDHDKHMFCJMAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueUpdateActionPointScNotify {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueUpdateActionPointScNotify.GBMAAJIKNAJ)
-    pub GBMAAJIKNAJ: i32,
+    // @@protoc_insertion_point(field:ChessRogueUpdateActionPointScNotify.OLIDJODAKKA)
+    pub OLIDJODAKKA: i32,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueUpdateActionPointScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl ChessRogueUpdateActionPointScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GBMAAJIKNAJ",
-            |m: &ChessRogueUpdateActionPointScNotify| { &m.GBMAAJIKNAJ },
-            |m: &mut ChessRogueUpdateActionPointScNotify| { &mut m.GBMAAJIKNAJ },
+            "OLIDJODAKKA",
+            |m: &ChessRogueUpdateActionPointScNotify| { &m.OLIDJODAKKA },
+            |m: &mut ChessRogueUpdateActionPointScNotify| { &mut m.OLIDJODAKKA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueUpdateActionPointScNotify>(
             "ChessRogueUpdateActionPointScNotify",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for ChessRogueUpdateActionPointScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.GBMAAJIKNAJ = is.read_int32()?;
+                32 => {
+                    self.OLIDJODAKKA = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for ChessRogueUpdateActionPointScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GBMAAJIKNAJ != 0 {
-            my_size += ::protobuf::rt::int32_size(11, self.GBMAAJIKNAJ);
+        if self.OLIDJODAKKA != 0 {
+            my_size += ::protobuf::rt::int32_size(4, self.OLIDJODAKKA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for ChessRogueUpdateActionPointScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GBMAAJIKNAJ != 0 {
-            os.write_int32(11, self.GBMAAJIKNAJ)?;
+        if self.OLIDJODAKKA != 0 {
+            os.write_int32(4, self.OLIDJODAKKA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for ChessRogueUpdateActionPointScNotify {
     }
 
     fn clear(&mut self) {
-        self.GBMAAJIKNAJ = 0;
+        self.OLIDJODAKKA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueUpdateActionPointScNotify {
         static instance: ChessRogueUpdateActionPointScNotify = ChessRogueUpdateActionPointScNotify {
-            GBMAAJIKNAJ: 0,
+            OLIDJODAKKA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueUpdateActionPointScNotify 
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)ChessRogueUpdateActionPointScNotify.proto\"G\n#ChessRogueUpdateAction\
-    PointScNotify\x12\x20\n\x0bGBMAAJIKNAJ\x18\x0b\x20\x01(\x05R\x0bGBMAAJIK\
-    NAJb\x06proto3\
+    PointScNotify\x12\x20\n\x0bOLIDJODAKKA\x18\x04\x20\x01(\x05R\x0bOLIDJODA\
+    KKAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

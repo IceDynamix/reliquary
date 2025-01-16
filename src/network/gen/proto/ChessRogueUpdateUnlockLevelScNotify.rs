@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueUpdateUnlockLevelScNotify {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueUpdateUnlockLevelScNotify.DAELBDIDMMH)
-    pub DAELBDIDMMH: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ChessRogueUpdateUnlockLevelScNotify.HDAHAHDPKMP)
+    pub HDAHAHDPKMP: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueUpdateUnlockLevelScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl ChessRogueUpdateUnlockLevelScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DAELBDIDMMH",
-            |m: &ChessRogueUpdateUnlockLevelScNotify| { &m.DAELBDIDMMH },
-            |m: &mut ChessRogueUpdateUnlockLevelScNotify| { &mut m.DAELBDIDMMH },
+            "HDAHAHDPKMP",
+            |m: &ChessRogueUpdateUnlockLevelScNotify| { &m.HDAHAHDPKMP },
+            |m: &mut ChessRogueUpdateUnlockLevelScNotify| { &mut m.HDAHAHDPKMP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueUpdateUnlockLevelScNotify>(
             "ChessRogueUpdateUnlockLevelScNotify",
@@ -73,11 +73,11 @@ impl ::protobuf::Message for ChessRogueUpdateUnlockLevelScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.DAELBDIDMMH)?;
+                18 => {
+                    is.read_repeated_packed_uint32_into(&mut self.HDAHAHDPKMP)?;
                 },
-                72 => {
-                    self.DAELBDIDMMH.push(is.read_uint32()?);
+                16 => {
+                    self.HDAHAHDPKMP.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -91,8 +91,8 @@ impl ::protobuf::Message for ChessRogueUpdateUnlockLevelScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.DAELBDIDMMH {
-            my_size += ::protobuf::rt::uint32_size(9, *value);
+        for value in &self.HDAHAHDPKMP {
+            my_size += ::protobuf::rt::uint32_size(2, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -100,8 +100,8 @@ impl ::protobuf::Message for ChessRogueUpdateUnlockLevelScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.DAELBDIDMMH {
-            os.write_uint32(9, *v)?;
+        for v in &self.HDAHAHDPKMP {
+            os.write_uint32(2, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -120,13 +120,13 @@ impl ::protobuf::Message for ChessRogueUpdateUnlockLevelScNotify {
     }
 
     fn clear(&mut self) {
-        self.DAELBDIDMMH.clear();
+        self.HDAHAHDPKMP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueUpdateUnlockLevelScNotify {
         static instance: ChessRogueUpdateUnlockLevelScNotify = ChessRogueUpdateUnlockLevelScNotify {
-            DAELBDIDMMH: ::std::vec::Vec::new(),
+            HDAHAHDPKMP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -152,8 +152,8 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueUpdateUnlockLevelScNotify 
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)ChessRogueUpdateUnlockLevelScNotify.proto\"G\n#ChessRogueUpdateUnlock\
-    LevelScNotify\x12\x20\n\x0bDAELBDIDMMH\x18\t\x20\x03(\rR\x0bDAELBDIDMMHb\
-    \x06proto3\
+    LevelScNotify\x12\x20\n\x0bHDAHAHDPKMP\x18\x02\x20\x03(\rR\x0bHDAHAHDPKM\
+    Pb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

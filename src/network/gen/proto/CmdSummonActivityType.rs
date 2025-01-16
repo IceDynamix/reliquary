@@ -30,16 +30,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdSummonActivityType {
     // @@protoc_insertion_point(enum_value:CmdSummonActivityType.CmdSummonActivityTypeNone)
     CmdSummonActivityTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.CmdGetSummonActivityDataScRsp)
-    CmdGetSummonActivityDataScRsp = 7565,
+    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.CmdGetSummonActivityDataCsReq)
+    CmdGetSummonActivityDataCsReq = 7569,
     // @@protoc_insertion_point(enum_value:CmdSummonActivityType.CmdEnterSummonActivityStageCsReq)
-    CmdEnterSummonActivityStageCsReq = 7569,
+    CmdEnterSummonActivityStageCsReq = 7563,
     // @@protoc_insertion_point(enum_value:CmdSummonActivityType.CmdSummonActivityBattleEndScNotify)
     CmdSummonActivityBattleEndScNotify = 7561,
+    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.CmdGetSummonActivityDataScRsp)
+    CmdGetSummonActivityDataScRsp = 7570,
     // @@protoc_insertion_point(enum_value:CmdSummonActivityType.CmdEnterSummonActivityStageScRsp)
     CmdEnterSummonActivityStageScRsp = 7568,
-    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.CmdGetSummonActivityDataCsReq)
-    CmdGetSummonActivityDataCsReq = 7566,
 }
 
 impl ::protobuf::Enum for CmdSummonActivityType {
@@ -52,11 +52,11 @@ impl ::protobuf::Enum for CmdSummonActivityType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdSummonActivityType> {
         match value {
             0 => ::std::option::Option::Some(CmdSummonActivityType::CmdSummonActivityTypeNone),
-            7565 => ::std::option::Option::Some(CmdSummonActivityType::CmdGetSummonActivityDataScRsp),
-            7569 => ::std::option::Option::Some(CmdSummonActivityType::CmdEnterSummonActivityStageCsReq),
+            7569 => ::std::option::Option::Some(CmdSummonActivityType::CmdGetSummonActivityDataCsReq),
+            7563 => ::std::option::Option::Some(CmdSummonActivityType::CmdEnterSummonActivityStageCsReq),
             7561 => ::std::option::Option::Some(CmdSummonActivityType::CmdSummonActivityBattleEndScNotify),
+            7570 => ::std::option::Option::Some(CmdSummonActivityType::CmdGetSummonActivityDataScRsp),
             7568 => ::std::option::Option::Some(CmdSummonActivityType::CmdEnterSummonActivityStageScRsp),
-            7566 => ::std::option::Option::Some(CmdSummonActivityType::CmdGetSummonActivityDataCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -64,22 +64,22 @@ impl ::protobuf::Enum for CmdSummonActivityType {
     fn from_str(str: &str) -> ::std::option::Option<CmdSummonActivityType> {
         match str {
             "CmdSummonActivityTypeNone" => ::std::option::Option::Some(CmdSummonActivityType::CmdSummonActivityTypeNone),
-            "CmdGetSummonActivityDataScRsp" => ::std::option::Option::Some(CmdSummonActivityType::CmdGetSummonActivityDataScRsp),
+            "CmdGetSummonActivityDataCsReq" => ::std::option::Option::Some(CmdSummonActivityType::CmdGetSummonActivityDataCsReq),
             "CmdEnterSummonActivityStageCsReq" => ::std::option::Option::Some(CmdSummonActivityType::CmdEnterSummonActivityStageCsReq),
             "CmdSummonActivityBattleEndScNotify" => ::std::option::Option::Some(CmdSummonActivityType::CmdSummonActivityBattleEndScNotify),
+            "CmdGetSummonActivityDataScRsp" => ::std::option::Option::Some(CmdSummonActivityType::CmdGetSummonActivityDataScRsp),
             "CmdEnterSummonActivityStageScRsp" => ::std::option::Option::Some(CmdSummonActivityType::CmdEnterSummonActivityStageScRsp),
-            "CmdGetSummonActivityDataCsReq" => ::std::option::Option::Some(CmdSummonActivityType::CmdGetSummonActivityDataCsReq),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdSummonActivityType] = &[
         CmdSummonActivityType::CmdSummonActivityTypeNone,
-        CmdSummonActivityType::CmdGetSummonActivityDataScRsp,
+        CmdSummonActivityType::CmdGetSummonActivityDataCsReq,
         CmdSummonActivityType::CmdEnterSummonActivityStageCsReq,
         CmdSummonActivityType::CmdSummonActivityBattleEndScNotify,
+        CmdSummonActivityType::CmdGetSummonActivityDataScRsp,
         CmdSummonActivityType::CmdEnterSummonActivityStageScRsp,
-        CmdSummonActivityType::CmdGetSummonActivityDataCsReq,
     ];
 }
 
@@ -92,11 +92,11 @@ impl ::protobuf::EnumFull for CmdSummonActivityType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdSummonActivityType::CmdSummonActivityTypeNone => 0,
-            CmdSummonActivityType::CmdGetSummonActivityDataScRsp => 1,
+            CmdSummonActivityType::CmdGetSummonActivityDataCsReq => 1,
             CmdSummonActivityType::CmdEnterSummonActivityStageCsReq => 2,
             CmdSummonActivityType::CmdSummonActivityBattleEndScNotify => 3,
-            CmdSummonActivityType::CmdEnterSummonActivityStageScRsp => 4,
-            CmdSummonActivityType::CmdGetSummonActivityDataCsReq => 5,
+            CmdSummonActivityType::CmdGetSummonActivityDataScRsp => 4,
+            CmdSummonActivityType::CmdEnterSummonActivityStageScRsp => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -117,10 +117,10 @@ impl CmdSummonActivityType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bCmdSummonActivityType.proto*\xf5\x01\n\x15CmdSummonActivityType\
     \x12\x1d\n\x19CmdSummonActivityTypeNone\x10\0\x12\"\n\x1dCmdGetSummonAct\
-    ivityDataScRsp\x10\x8d;\x12%\n\x20CmdEnterSummonActivityStageCsReq\x10\
-    \x91;\x12'\n\"CmdSummonActivityBattleEndScNotify\x10\x89;\x12%\n\x20CmdE\
-    nterSummonActivityStageScRsp\x10\x90;\x12\"\n\x1dCmdGetSummonActivityDat\
-    aCsReq\x10\x8e;b\x06proto3\
+    ivityDataCsReq\x10\x91;\x12%\n\x20CmdEnterSummonActivityStageCsReq\x10\
+    \x8b;\x12'\n\"CmdSummonActivityBattleEndScNotify\x10\x89;\x12\"\n\x1dCmd\
+    GetSummonActivityDataScRsp\x10\x92;\x12%\n\x20CmdEnterSummonActivityStag\
+    eScRsp\x10\x90;b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

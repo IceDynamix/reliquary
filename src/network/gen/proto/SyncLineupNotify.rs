@@ -30,9 +30,9 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub struct SyncLineupNotify {
     // message fields
     // @@protoc_insertion_point(field:SyncLineupNotify.lineup)
-    pub lineup: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
+    pub lineup: ::protobuf::MessageField<super::PMBHFPCDGBM::PMBHFPCDGBM>,
     // @@protoc_insertion_point(field:SyncLineupNotify.reason_list)
-    pub reason_list: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::SyncReason::SyncReason>>,
+    pub reason_list: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::SyncLineupReason::SyncLineupReason>>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncLineupNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,7 +52,7 @@ impl SyncLineupNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PMBHFPCDGBM::PMBHFPCDGBM>(
             "lineup",
             |m: &SyncLineupNotify| { &m.lineup },
             |m: &mut SyncLineupNotify| { &mut m.lineup },
@@ -80,7 +80,7 @@ impl ::protobuf::Message for SyncLineupNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
                 96 => {
@@ -115,7 +115,7 @@ impl ::protobuf::Message for SyncLineupNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         for v in &self.reason_list {
             os.write_enum(12, ::protobuf::EnumOrUnknown::value(v))?;
@@ -170,10 +170,10 @@ impl ::protobuf::reflect::ProtobufValue for SyncLineupNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16SyncLineupNotify.proto\x1a\x10SyncReason.proto\x1a\x10LineupInfo.p\
-    roto\"e\n\x10SyncLineupNotify\x12#\n\x06lineup\x18\x08\x20\x01(\x0b2\x0b\
-    .LineupInfoR\x06lineup\x12,\n\x0breason_list\x18\x0c\x20\x03(\x0e2\x0b.S\
-    yncReasonR\nreasonListB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x16SyncLineupNotify.proto\x1a\x11PMBHFPCDGBM.proto\x1a\x16SyncLineupR\
+    eason.proto\"l\n\x10SyncLineupNotify\x12$\n\x06lineup\x18\x0e\x20\x01(\
+    \x0b2\x0c.PMBHFPCDGBMR\x06lineup\x122\n\x0breason_list\x18\x0c\x20\x03(\
+    \x0e2\x11.SyncLineupReasonR\nreasonListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -191,8 +191,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::SyncReason::file_descriptor().clone());
-            deps.push(super::LineupInfo::file_descriptor().clone());
+            deps.push(super::PMBHFPCDGBM::file_descriptor().clone());
+            deps.push(super::SyncLineupReason::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SyncLineupNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

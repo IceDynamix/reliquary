@@ -29,18 +29,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct QuitLineupCsReq {
     // message fields
-    // @@protoc_insertion_point(field:QuitLineupCsReq.extra_lineup_type)
-    pub extra_lineup_type: ::protobuf::EnumOrUnknown<super::ExtraLineupType::ExtraLineupType>,
-    // @@protoc_insertion_point(field:QuitLineupCsReq.plane_id)
-    pub plane_id: u32,
-    // @@protoc_insertion_point(field:QuitLineupCsReq.avatar_type)
-    pub avatar_type: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
-    // @@protoc_insertion_point(field:QuitLineupCsReq.index)
-    pub index: u32,
+    // @@protoc_insertion_point(field:QuitLineupCsReq.ICCIODCOABK)
+    pub ICCIODCOABK: u32,
+    // @@protoc_insertion_point(field:QuitLineupCsReq.BHONGJMFKIM)
+    pub BHONGJMFKIM: u32,
+    // @@protoc_insertion_point(field:QuitLineupCsReq.IPMBAIAICCN)
+    pub IPMBAIAICCN: bool,
+    // @@protoc_insertion_point(field:QuitLineupCsReq.JHFEDGIMCDG)
+    pub JHFEDGIMCDG: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
     // @@protoc_insertion_point(field:QuitLineupCsReq.base_avatar_id)
     pub base_avatar_id: u32,
-    // @@protoc_insertion_point(field:QuitLineupCsReq.is_virtual)
-    pub is_virtual: bool,
+    // @@protoc_insertion_point(field:QuitLineupCsReq.FHHFLHBHBLE)
+    pub FHHFLHBHBLE: ::protobuf::EnumOrUnknown<super::ExtraLineupType::ExtraLineupType>,
     // special fields
     // @@protoc_insertion_point(special_field:QuitLineupCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,24 +61,24 @@ impl QuitLineupCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "extra_lineup_type",
-            |m: &QuitLineupCsReq| { &m.extra_lineup_type },
-            |m: &mut QuitLineupCsReq| { &mut m.extra_lineup_type },
+            "ICCIODCOABK",
+            |m: &QuitLineupCsReq| { &m.ICCIODCOABK },
+            |m: &mut QuitLineupCsReq| { &mut m.ICCIODCOABK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "plane_id",
-            |m: &QuitLineupCsReq| { &m.plane_id },
-            |m: &mut QuitLineupCsReq| { &mut m.plane_id },
+            "BHONGJMFKIM",
+            |m: &QuitLineupCsReq| { &m.BHONGJMFKIM },
+            |m: &mut QuitLineupCsReq| { &mut m.BHONGJMFKIM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "avatar_type",
-            |m: &QuitLineupCsReq| { &m.avatar_type },
-            |m: &mut QuitLineupCsReq| { &mut m.avatar_type },
+            "IPMBAIAICCN",
+            |m: &QuitLineupCsReq| { &m.IPMBAIAICCN },
+            |m: &mut QuitLineupCsReq| { &mut m.IPMBAIAICCN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "index",
-            |m: &QuitLineupCsReq| { &m.index },
-            |m: &mut QuitLineupCsReq| { &mut m.index },
+            "JHFEDGIMCDG",
+            |m: &QuitLineupCsReq| { &m.JHFEDGIMCDG },
+            |m: &mut QuitLineupCsReq| { &mut m.JHFEDGIMCDG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "base_avatar_id",
@@ -86,9 +86,9 @@ impl QuitLineupCsReq {
             |m: &mut QuitLineupCsReq| { &mut m.base_avatar_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_virtual",
-            |m: &QuitLineupCsReq| { &m.is_virtual },
-            |m: &mut QuitLineupCsReq| { &mut m.is_virtual },
+            "FHHFLHBHBLE",
+            |m: &QuitLineupCsReq| { &m.FHHFLHBHBLE },
+            |m: &mut QuitLineupCsReq| { &mut m.FHHFLHBHBLE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<QuitLineupCsReq>(
             "QuitLineupCsReq",
@@ -108,23 +108,23 @@ impl ::protobuf::Message for QuitLineupCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.extra_lineup_type = is.read_enum_or_unknown()?;
-                },
                 40 => {
-                    self.plane_id = is.read_uint32()?;
-                },
-                32 => {
-                    self.avatar_type = is.read_enum_or_unknown()?;
-                },
-                96 => {
-                    self.index = is.read_uint32()?;
+                    self.ICCIODCOABK = is.read_uint32()?;
                 },
                 56 => {
-                    self.base_avatar_id = is.read_uint32()?;
+                    self.BHONGJMFKIM = is.read_uint32()?;
+                },
+                96 => {
+                    self.IPMBAIAICCN = is.read_bool()?;
+                },
+                8 => {
+                    self.JHFEDGIMCDG = is.read_enum_or_unknown()?;
                 },
                 88 => {
-                    self.is_virtual = is.read_bool()?;
+                    self.base_avatar_id = is.read_uint32()?;
+                },
+                64 => {
+                    self.FHHFLHBHBLE = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -138,23 +138,23 @@ impl ::protobuf::Message for QuitLineupCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            my_size += ::protobuf::rt::int32_size(6, self.extra_lineup_type.value());
+        if self.ICCIODCOABK != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.ICCIODCOABK);
         }
-        if self.plane_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.plane_id);
+        if self.BHONGJMFKIM != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.BHONGJMFKIM);
         }
-        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(4, self.avatar_type.value());
+        if self.IPMBAIAICCN != false {
+            my_size += 1 + 1;
         }
-        if self.index != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.index);
+        if self.JHFEDGIMCDG != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(1, self.JHFEDGIMCDG.value());
         }
         if self.base_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.base_avatar_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.base_avatar_id);
         }
-        if self.is_virtual != false {
-            my_size += 1 + 1;
+        if self.FHHFLHBHBLE != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
+            my_size += ::protobuf::rt::int32_size(8, self.FHHFLHBHBLE.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,23 +162,23 @@ impl ::protobuf::Message for QuitLineupCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.extra_lineup_type))?;
+        if self.ICCIODCOABK != 0 {
+            os.write_uint32(5, self.ICCIODCOABK)?;
         }
-        if self.plane_id != 0 {
-            os.write_uint32(5, self.plane_id)?;
+        if self.BHONGJMFKIM != 0 {
+            os.write_uint32(7, self.BHONGJMFKIM)?;
         }
-        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
+        if self.IPMBAIAICCN != false {
+            os.write_bool(12, self.IPMBAIAICCN)?;
         }
-        if self.index != 0 {
-            os.write_uint32(12, self.index)?;
+        if self.JHFEDGIMCDG != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.JHFEDGIMCDG))?;
         }
         if self.base_avatar_id != 0 {
-            os.write_uint32(7, self.base_avatar_id)?;
+            os.write_uint32(11, self.base_avatar_id)?;
         }
-        if self.is_virtual != false {
-            os.write_bool(11, self.is_virtual)?;
+        if self.FHHFLHBHBLE != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.FHHFLHBHBLE))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,23 +197,23 @@ impl ::protobuf::Message for QuitLineupCsReq {
     }
 
     fn clear(&mut self) {
-        self.extra_lineup_type = ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE);
-        self.plane_id = 0;
-        self.avatar_type = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE);
-        self.index = 0;
+        self.ICCIODCOABK = 0;
+        self.BHONGJMFKIM = 0;
+        self.IPMBAIAICCN = false;
+        self.JHFEDGIMCDG = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE);
         self.base_avatar_id = 0;
-        self.is_virtual = false;
+        self.FHHFLHBHBLE = ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static QuitLineupCsReq {
         static instance: QuitLineupCsReq = QuitLineupCsReq {
-            extra_lineup_type: ::protobuf::EnumOrUnknown::from_i32(0),
-            plane_id: 0,
-            avatar_type: ::protobuf::EnumOrUnknown::from_i32(0),
-            index: 0,
+            ICCIODCOABK: 0,
+            BHONGJMFKIM: 0,
+            IPMBAIAICCN: false,
+            JHFEDGIMCDG: ::protobuf::EnumOrUnknown::from_i32(0),
             base_avatar_id: 0,
-            is_virtual: false,
+            FHHFLHBHBLE: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -238,14 +238,14 @@ impl ::protobuf::reflect::ProtobufValue for QuitLineupCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15QuitLineupCsReq.proto\x1a\x15ExtraLineupType.proto\x1a\x10AvatarTy\
-    pe.proto\"\xf3\x01\n\x0fQuitLineupCsReq\x12<\n\x11extra_lineup_type\x18\
-    \x06\x20\x01(\x0e2\x10.ExtraLineupTypeR\x0fextraLineupType\x12\x19\n\x08\
-    plane_id\x18\x05\x20\x01(\rR\x07planeId\x12,\n\x0bavatar_type\x18\x04\
-    \x20\x01(\x0e2\x0b.AvatarTypeR\navatarType\x12\x14\n\x05index\x18\x0c\
-    \x20\x01(\rR\x05index\x12$\n\x0ebase_avatar_id\x18\x07\x20\x01(\rR\x0cba\
-    seAvatarId\x12\x1d\n\nis_virtual\x18\x0b\x20\x01(\x08R\tisVirtualB\x15\n\
-    \x13emu.lunarcore.protob\x06proto3\
+    \n\x15QuitLineupCsReq.proto\x1a\x10AvatarType.proto\x1a\x15ExtraLineupTy\
+    pe.proto\"\x80\x02\n\x0fQuitLineupCsReq\x12\x20\n\x0bICCIODCOABK\x18\x05\
+    \x20\x01(\rR\x0bICCIODCOABK\x12\x20\n\x0bBHONGJMFKIM\x18\x07\x20\x01(\rR\
+    \x0bBHONGJMFKIM\x12\x20\n\x0bIPMBAIAICCN\x18\x0c\x20\x01(\x08R\x0bIPMBAI\
+    AICCN\x12-\n\x0bJHFEDGIMCDG\x18\x01\x20\x01(\x0e2\x0b.AvatarTypeR\x0bJHF\
+    EDGIMCDG\x12$\n\x0ebase_avatar_id\x18\x0b\x20\x01(\rR\x0cbaseAvatarId\
+    \x122\n\x0bFHHFLHBHBLE\x18\x08\x20\x01(\x0e2\x10.ExtraLineupTypeR\x0bFHH\
+    FLHBHBLEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -263,8 +263,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::ExtraLineupType::file_descriptor().clone());
             deps.push(super::AvatarType::file_descriptor().clone());
+            deps.push(super::ExtraLineupType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(QuitLineupCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetCurWaypointCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetCurWaypointCsReq.KNPCBCKKKOD)
-    pub KNPCBCKKKOD: u32,
+    // @@protoc_insertion_point(field:SetCurWaypointCsReq.KMAAGDFAKNI)
+    pub KMAAGDFAKNI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SetCurWaypointCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl SetCurWaypointCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KNPCBCKKKOD",
-            |m: &SetCurWaypointCsReq| { &m.KNPCBCKKKOD },
-            |m: &mut SetCurWaypointCsReq| { &mut m.KNPCBCKKKOD },
+            "KMAAGDFAKNI",
+            |m: &SetCurWaypointCsReq| { &m.KMAAGDFAKNI },
+            |m: &mut SetCurWaypointCsReq| { &mut m.KMAAGDFAKNI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetCurWaypointCsReq>(
             "SetCurWaypointCsReq",
@@ -74,7 +74,7 @@ impl ::protobuf::Message for SetCurWaypointCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 96 => {
-                    self.KNPCBCKKKOD = is.read_uint32()?;
+                    self.KMAAGDFAKNI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for SetCurWaypointCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KNPCBCKKKOD != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.KNPCBCKKKOD);
+        if self.KMAAGDFAKNI != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.KMAAGDFAKNI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for SetCurWaypointCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KNPCBCKKKOD != 0 {
-            os.write_uint32(12, self.KNPCBCKKKOD)?;
+        if self.KMAAGDFAKNI != 0 {
+            os.write_uint32(12, self.KMAAGDFAKNI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for SetCurWaypointCsReq {
     }
 
     fn clear(&mut self) {
-        self.KNPCBCKKKOD = 0;
+        self.KMAAGDFAKNI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetCurWaypointCsReq {
         static instance: SetCurWaypointCsReq = SetCurWaypointCsReq {
-            KNPCBCKKKOD: 0,
+            KMAAGDFAKNI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for SetCurWaypointCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19SetCurWaypointCsReq.proto\"7\n\x13SetCurWaypointCsReq\x12\x20\n\
-    \x0bKNPCBCKKKOD\x18\x0c\x20\x01(\rR\x0bKNPCBCKKKODb\x06proto3\
+    \x0bKMAAGDFAKNI\x18\x0c\x20\x01(\rR\x0bKMAAGDFAKNIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

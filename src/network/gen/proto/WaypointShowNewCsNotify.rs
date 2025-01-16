@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct WaypointShowNewCsNotify {
     // message fields
-    // @@protoc_insertion_point(field:WaypointShowNewCsNotify.PNOAKGNANBO)
-    pub PNOAKGNANBO: u32,
-    // @@protoc_insertion_point(field:WaypointShowNewCsNotify.KNPCBCKKKOD)
-    pub KNPCBCKKKOD: u32,
+    // @@protoc_insertion_point(field:WaypointShowNewCsNotify.AMBCBCLHIHJ)
+    pub AMBCBCLHIHJ: u32,
+    // @@protoc_insertion_point(field:WaypointShowNewCsNotify.KMAAGDFAKNI)
+    pub KMAAGDFAKNI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:WaypointShowNewCsNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl WaypointShowNewCsNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PNOAKGNANBO",
-            |m: &WaypointShowNewCsNotify| { &m.PNOAKGNANBO },
-            |m: &mut WaypointShowNewCsNotify| { &mut m.PNOAKGNANBO },
+            "AMBCBCLHIHJ",
+            |m: &WaypointShowNewCsNotify| { &m.AMBCBCLHIHJ },
+            |m: &mut WaypointShowNewCsNotify| { &mut m.AMBCBCLHIHJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KNPCBCKKKOD",
-            |m: &WaypointShowNewCsNotify| { &m.KNPCBCKKKOD },
-            |m: &mut WaypointShowNewCsNotify| { &mut m.KNPCBCKKKOD },
+            "KMAAGDFAKNI",
+            |m: &WaypointShowNewCsNotify| { &m.KMAAGDFAKNI },
+            |m: &mut WaypointShowNewCsNotify| { &mut m.KMAAGDFAKNI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<WaypointShowNewCsNotify>(
             "WaypointShowNewCsNotify",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for WaypointShowNewCsNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.PNOAKGNANBO = is.read_uint32()?;
+                96 => {
+                    self.AMBCBCLHIHJ = is.read_uint32()?;
                 },
-                104 => {
-                    self.KNPCBCKKKOD = is.read_uint32()?;
+                8 => {
+                    self.KMAAGDFAKNI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for WaypointShowNewCsNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PNOAKGNANBO != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.PNOAKGNANBO);
+        if self.AMBCBCLHIHJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.AMBCBCLHIHJ);
         }
-        if self.KNPCBCKKKOD != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.KNPCBCKKKOD);
+        if self.KMAAGDFAKNI != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.KMAAGDFAKNI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for WaypointShowNewCsNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PNOAKGNANBO != 0 {
-            os.write_uint32(15, self.PNOAKGNANBO)?;
+        if self.AMBCBCLHIHJ != 0 {
+            os.write_uint32(12, self.AMBCBCLHIHJ)?;
         }
-        if self.KNPCBCKKKOD != 0 {
-            os.write_uint32(13, self.KNPCBCKKKOD)?;
+        if self.KMAAGDFAKNI != 0 {
+            os.write_uint32(1, self.KMAAGDFAKNI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for WaypointShowNewCsNotify {
     }
 
     fn clear(&mut self) {
-        self.PNOAKGNANBO = 0;
-        self.KNPCBCKKKOD = 0;
+        self.AMBCBCLHIHJ = 0;
+        self.KMAAGDFAKNI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static WaypointShowNewCsNotify {
         static instance: WaypointShowNewCsNotify = WaypointShowNewCsNotify {
-            PNOAKGNANBO: 0,
-            KNPCBCKKKOD: 0,
+            AMBCBCLHIHJ: 0,
+            KMAAGDFAKNI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for WaypointShowNewCsNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dWaypointShowNewCsNotify.proto\"]\n\x17WaypointShowNewCsNotify\x12\
-    \x20\n\x0bPNOAKGNANBO\x18\x0f\x20\x01(\rR\x0bPNOAKGNANBO\x12\x20\n\x0bKN\
-    PCBCKKKOD\x18\r\x20\x01(\rR\x0bKNPCBCKKKODb\x06proto3\
+    \x20\n\x0bAMBCBCLHIHJ\x18\x0c\x20\x01(\rR\x0bAMBCBCLHIHJ\x12\x20\n\x0bKM\
+    AAGDFAKNI\x18\x01\x20\x01(\rR\x0bKMAAGDFAKNIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

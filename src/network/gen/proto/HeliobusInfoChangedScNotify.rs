@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HeliobusInfoChangedScNotify {
     // message fields
-    // @@protoc_insertion_point(field:HeliobusInfoChangedScNotify.KGKACGAPGIJ)
-    pub KGKACGAPGIJ: u32,
-    // @@protoc_insertion_point(field:HeliobusInfoChangedScNotify.NJJNAMJGOHD)
-    pub NJJNAMJGOHD: ::std::vec::Vec<super::PDDIMHHHMKL::PDDIMHHHMKL>,
-    // @@protoc_insertion_point(field:HeliobusInfoChangedScNotify.NCPHFIDNGHE)
-    pub NCPHFIDNGHE: u32,
-    // @@protoc_insertion_point(field:HeliobusInfoChangedScNotify.MFFOKHAHJIA)
-    pub MFFOKHAHJIA: u32,
+    // @@protoc_insertion_point(field:HeliobusInfoChangedScNotify.KMIOCEODNOM)
+    pub KMIOCEODNOM: u32,
+    // @@protoc_insertion_point(field:HeliobusInfoChangedScNotify.LMBPKEOBMHK)
+    pub LMBPKEOBMHK: u32,
+    // @@protoc_insertion_point(field:HeliobusInfoChangedScNotify.BNJIDMEANNM)
+    pub BNJIDMEANNM: ::std::vec::Vec<super::FHHCIFJOCBP::FHHCIFJOCBP>,
+    // @@protoc_insertion_point(field:HeliobusInfoChangedScNotify.DLOCFNANKAI)
+    pub DLOCFNANKAI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HeliobusInfoChangedScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl HeliobusInfoChangedScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KGKACGAPGIJ",
-            |m: &HeliobusInfoChangedScNotify| { &m.KGKACGAPGIJ },
-            |m: &mut HeliobusInfoChangedScNotify| { &mut m.KGKACGAPGIJ },
+            "KMIOCEODNOM",
+            |m: &HeliobusInfoChangedScNotify| { &m.KMIOCEODNOM },
+            |m: &mut HeliobusInfoChangedScNotify| { &mut m.KMIOCEODNOM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LMBPKEOBMHK",
+            |m: &HeliobusInfoChangedScNotify| { &m.LMBPKEOBMHK },
+            |m: &mut HeliobusInfoChangedScNotify| { &mut m.LMBPKEOBMHK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NJJNAMJGOHD",
-            |m: &HeliobusInfoChangedScNotify| { &m.NJJNAMJGOHD },
-            |m: &mut HeliobusInfoChangedScNotify| { &mut m.NJJNAMJGOHD },
+            "BNJIDMEANNM",
+            |m: &HeliobusInfoChangedScNotify| { &m.BNJIDMEANNM },
+            |m: &mut HeliobusInfoChangedScNotify| { &mut m.BNJIDMEANNM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NCPHFIDNGHE",
-            |m: &HeliobusInfoChangedScNotify| { &m.NCPHFIDNGHE },
-            |m: &mut HeliobusInfoChangedScNotify| { &mut m.NCPHFIDNGHE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MFFOKHAHJIA",
-            |m: &HeliobusInfoChangedScNotify| { &m.MFFOKHAHJIA },
-            |m: &mut HeliobusInfoChangedScNotify| { &mut m.MFFOKHAHJIA },
+            "DLOCFNANKAI",
+            |m: &HeliobusInfoChangedScNotify| { &m.DLOCFNANKAI },
+            |m: &mut HeliobusInfoChangedScNotify| { &mut m.DLOCFNANKAI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HeliobusInfoChangedScNotify>(
             "HeliobusInfoChangedScNotify",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for HeliobusInfoChangedScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.KGKACGAPGIJ = is.read_uint32()?;
+                48 => {
+                    self.KMIOCEODNOM = is.read_uint32()?;
                 },
-                42 => {
-                    self.NJJNAMJGOHD.push(is.read_message()?);
+                72 => {
+                    self.LMBPKEOBMHK = is.read_uint32()?;
                 },
-                88 => {
-                    self.NCPHFIDNGHE = is.read_uint32()?;
+                26 => {
+                    self.BNJIDMEANNM.push(is.read_message()?);
                 },
-                56 => {
-                    self.MFFOKHAHJIA = is.read_uint32()?;
+                8 => {
+                    self.DLOCFNANKAI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,18 +118,18 @@ impl ::protobuf::Message for HeliobusInfoChangedScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KGKACGAPGIJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.KGKACGAPGIJ);
+        if self.KMIOCEODNOM != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.KMIOCEODNOM);
         }
-        for value in &self.NJJNAMJGOHD {
+        if self.LMBPKEOBMHK != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.LMBPKEOBMHK);
+        }
+        for value in &self.BNJIDMEANNM {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.NCPHFIDNGHE != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.NCPHFIDNGHE);
-        }
-        if self.MFFOKHAHJIA != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.MFFOKHAHJIA);
+        if self.DLOCFNANKAI != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.DLOCFNANKAI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for HeliobusInfoChangedScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KGKACGAPGIJ != 0 {
-            os.write_uint32(12, self.KGKACGAPGIJ)?;
+        if self.KMIOCEODNOM != 0 {
+            os.write_uint32(6, self.KMIOCEODNOM)?;
         }
-        for v in &self.NJJNAMJGOHD {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        if self.LMBPKEOBMHK != 0 {
+            os.write_uint32(9, self.LMBPKEOBMHK)?;
+        }
+        for v in &self.BNJIDMEANNM {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
-        if self.NCPHFIDNGHE != 0 {
-            os.write_uint32(11, self.NCPHFIDNGHE)?;
-        }
-        if self.MFFOKHAHJIA != 0 {
-            os.write_uint32(7, self.MFFOKHAHJIA)?;
+        if self.DLOCFNANKAI != 0 {
+            os.write_uint32(1, self.DLOCFNANKAI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for HeliobusInfoChangedScNotify {
     }
 
     fn clear(&mut self) {
-        self.KGKACGAPGIJ = 0;
-        self.NJJNAMJGOHD.clear();
-        self.NCPHFIDNGHE = 0;
-        self.MFFOKHAHJIA = 0;
+        self.KMIOCEODNOM = 0;
+        self.LMBPKEOBMHK = 0;
+        self.BNJIDMEANNM.clear();
+        self.DLOCFNANKAI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HeliobusInfoChangedScNotify {
         static instance: HeliobusInfoChangedScNotify = HeliobusInfoChangedScNotify {
-            KGKACGAPGIJ: 0,
-            NJJNAMJGOHD: ::std::vec::Vec::new(),
-            NCPHFIDNGHE: 0,
-            MFFOKHAHJIA: 0,
+            KMIOCEODNOM: 0,
+            LMBPKEOBMHK: 0,
+            BNJIDMEANNM: ::std::vec::Vec::new(),
+            DLOCFNANKAI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,12 +203,12 @@ impl ::protobuf::reflect::ProtobufValue for HeliobusInfoChangedScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!HeliobusInfoChangedScNotify.proto\x1a\x11PDDIMHHHMKL.proto\"\xb3\x01\
-    \n\x1bHeliobusInfoChangedScNotify\x12\x20\n\x0bKGKACGAPGIJ\x18\x0c\x20\
-    \x01(\rR\x0bKGKACGAPGIJ\x12.\n\x0bNJJNAMJGOHD\x18\x05\x20\x03(\x0b2\x0c.\
-    PDDIMHHHMKLR\x0bNJJNAMJGOHD\x12\x20\n\x0bNCPHFIDNGHE\x18\x0b\x20\x01(\rR\
-    \x0bNCPHFIDNGHE\x12\x20\n\x0bMFFOKHAHJIA\x18\x07\x20\x01(\rR\x0bMFFOKHAH\
-    JIAb\x06proto3\
+    \n!HeliobusInfoChangedScNotify.proto\x1a\x11FHHCIFJOCBP.proto\"\xb3\x01\
+    \n\x1bHeliobusInfoChangedScNotify\x12\x20\n\x0bKMIOCEODNOM\x18\x06\x20\
+    \x01(\rR\x0bKMIOCEODNOM\x12\x20\n\x0bLMBPKEOBMHK\x18\t\x20\x01(\rR\x0bLM\
+    BPKEOBMHK\x12.\n\x0bBNJIDMEANNM\x18\x03\x20\x03(\x0b2\x0c.FHHCIFJOCBPR\
+    \x0bBNJIDMEANNM\x12\x20\n\x0bDLOCFNANKAI\x18\x01\x20\x01(\rR\x0bDLOCFNAN\
+    KAIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -226,7 +226,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::PDDIMHHHMKL::file_descriptor().clone());
+            deps.push(super::FHHCIFJOCBP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(HeliobusInfoChangedScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

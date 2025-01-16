@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DifficultyAdjustmentUpdateDataCsReq {
     // message fields
-    // @@protoc_insertion_point(field:DifficultyAdjustmentUpdateDataCsReq.NIEKADMHOKK)
-    pub NIEKADMHOKK: ::protobuf::MessageField<super::JLLIFGDBMIO::JLLIFGDBMIO>,
+    // @@protoc_insertion_point(field:DifficultyAdjustmentUpdateDataCsReq.CEFPLAOBMNB)
+    pub CEFPLAOBMNB: ::protobuf::MessageField<super::MDHBKFGIJJL::MDHBKFGIJJL>,
     // special fields
     // @@protoc_insertion_point(special_field:DifficultyAdjustmentUpdateDataCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,10 +50,10 @@ impl DifficultyAdjustmentUpdateDataCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JLLIFGDBMIO::JLLIFGDBMIO>(
-            "NIEKADMHOKK",
-            |m: &DifficultyAdjustmentUpdateDataCsReq| { &m.NIEKADMHOKK },
-            |m: &mut DifficultyAdjustmentUpdateDataCsReq| { &mut m.NIEKADMHOKK },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MDHBKFGIJJL::MDHBKFGIJJL>(
+            "CEFPLAOBMNB",
+            |m: &DifficultyAdjustmentUpdateDataCsReq| { &m.CEFPLAOBMNB },
+            |m: &mut DifficultyAdjustmentUpdateDataCsReq| { &mut m.CEFPLAOBMNB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DifficultyAdjustmentUpdateDataCsReq>(
             "DifficultyAdjustmentUpdateDataCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for DifficultyAdjustmentUpdateDataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NIEKADMHOKK)?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CEFPLAOBMNB)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for DifficultyAdjustmentUpdateDataCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.NIEKADMHOKK.as_ref() {
+        if let Some(v) = self.CEFPLAOBMNB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -98,8 +98,8 @@ impl ::protobuf::Message for DifficultyAdjustmentUpdateDataCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.NIEKADMHOKK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if let Some(v) = self.CEFPLAOBMNB.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -118,13 +118,13 @@ impl ::protobuf::Message for DifficultyAdjustmentUpdateDataCsReq {
     }
 
     fn clear(&mut self) {
-        self.NIEKADMHOKK.clear();
+        self.CEFPLAOBMNB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DifficultyAdjustmentUpdateDataCsReq {
         static instance: DifficultyAdjustmentUpdateDataCsReq = DifficultyAdjustmentUpdateDataCsReq {
-            NIEKADMHOKK: ::protobuf::MessageField::none(),
+            CEFPLAOBMNB: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,9 +149,9 @@ impl ::protobuf::reflect::ProtobufValue for DifficultyAdjustmentUpdateDataCsReq 
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n)DifficultyAdjustmentUpdateDataCsReq.proto\x1a\x11JLLIFGDBMIO.proto\"U\
-    \n#DifficultyAdjustmentUpdateDataCsReq\x12.\n\x0bNIEKADMHOKK\x18\r\x20\
-    \x01(\x0b2\x0c.JLLIFGDBMIOR\x0bNIEKADMHOKKb\x06proto3\
+    \n)DifficultyAdjustmentUpdateDataCsReq.proto\x1a\x11MDHBKFGIJJL.proto\"U\
+    \n#DifficultyAdjustmentUpdateDataCsReq\x12.\n\x0bCEFPLAOBMNB\x18\x07\x20\
+    \x01(\x0b2\x0c.MDHBKFGIJJLR\x0bCEFPLAOBMNBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -169,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::JLLIFGDBMIO::file_descriptor().clone());
+            deps.push(super::MDHBKFGIJJL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(DifficultyAdjustmentUpdateDataCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

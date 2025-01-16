@@ -31,8 +31,8 @@ pub struct ExpUpRelicScRsp {
     // message fields
     // @@protoc_insertion_point(field:ExpUpRelicScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:ExpUpRelicScRsp.return_item_list)
-    pub return_item_list: ::std::vec::Vec<super::PileItem::PileItem>,
+    // @@protoc_insertion_point(field:ExpUpRelicScRsp.BKBPLGAMOIN)
+    pub BKBPLGAMOIN: ::std::vec::Vec<super::PileItem::PileItem>,
     // special fields
     // @@protoc_insertion_point(special_field:ExpUpRelicScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,9 +58,9 @@ impl ExpUpRelicScRsp {
             |m: &mut ExpUpRelicScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "return_item_list",
-            |m: &ExpUpRelicScRsp| { &m.return_item_list },
-            |m: &mut ExpUpRelicScRsp| { &mut m.return_item_list },
+            "BKBPLGAMOIN",
+            |m: &ExpUpRelicScRsp| { &m.BKBPLGAMOIN },
+            |m: &mut ExpUpRelicScRsp| { &mut m.BKBPLGAMOIN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ExpUpRelicScRsp>(
             "ExpUpRelicScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for ExpUpRelicScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                10 => {
-                    self.return_item_list.push(is.read_message()?);
+                66 => {
+                    self.BKBPLGAMOIN.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -99,9 +99,9 @@ impl ::protobuf::Message for ExpUpRelicScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
-        for value in &self.return_item_list {
+        for value in &self.BKBPLGAMOIN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -112,10 +112,10 @@ impl ::protobuf::Message for ExpUpRelicScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
-        for v in &self.return_item_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        for v in &self.BKBPLGAMOIN {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -135,14 +135,14 @@ impl ::protobuf::Message for ExpUpRelicScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.return_item_list.clear();
+        self.BKBPLGAMOIN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ExpUpRelicScRsp {
         static instance: ExpUpRelicScRsp = ExpUpRelicScRsp {
             retcode: 0,
-            return_item_list: ::std::vec::Vec::new(),
+            BKBPLGAMOIN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for ExpUpRelicScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15ExpUpRelicScRsp.proto\x1a\x0ePileItem.proto\"`\n\x0fExpUpRelicScRs\
-    p\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x123\n\x10return_i\
-    tem_list\x18\x01\x20\x03(\x0b2\t.PileItemR\x0ereturnItemListB\x15\n\x13e\
-    mu.lunarcore.protob\x06proto3\
+    \n\x15ExpUpRelicScRsp.proto\x1a\x0ePileItem.proto\"X\n\x0fExpUpRelicScRs\
+    p\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12+\n\x0bBKBPLGAM\
+    OIN\x18\x08\x20\x03(\x0b2\t.PileItemR\x0bBKBPLGAMOINb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

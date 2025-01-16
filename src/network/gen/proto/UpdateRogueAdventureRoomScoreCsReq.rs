@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdateRogueAdventureRoomScoreCsReq {
     // message fields
-    // @@protoc_insertion_point(field:UpdateRogueAdventureRoomScoreCsReq.KCENJNFNEPL)
-    pub KCENJNFNEPL: u32,
-    // @@protoc_insertion_point(field:UpdateRogueAdventureRoomScoreCsReq.OFAGGKBMPJN)
-    pub OFAGGKBMPJN: u32,
+    // @@protoc_insertion_point(field:UpdateRogueAdventureRoomScoreCsReq.DPOKCFKNDIG)
+    pub DPOKCFKNDIG: u32,
+    // @@protoc_insertion_point(field:UpdateRogueAdventureRoomScoreCsReq.HHLBDGMIBNP)
+    pub HHLBDGMIBNP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:UpdateRogueAdventureRoomScoreCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl UpdateRogueAdventureRoomScoreCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KCENJNFNEPL",
-            |m: &UpdateRogueAdventureRoomScoreCsReq| { &m.KCENJNFNEPL },
-            |m: &mut UpdateRogueAdventureRoomScoreCsReq| { &mut m.KCENJNFNEPL },
+            "DPOKCFKNDIG",
+            |m: &UpdateRogueAdventureRoomScoreCsReq| { &m.DPOKCFKNDIG },
+            |m: &mut UpdateRogueAdventureRoomScoreCsReq| { &mut m.DPOKCFKNDIG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OFAGGKBMPJN",
-            |m: &UpdateRogueAdventureRoomScoreCsReq| { &m.OFAGGKBMPJN },
-            |m: &mut UpdateRogueAdventureRoomScoreCsReq| { &mut m.OFAGGKBMPJN },
+            "HHLBDGMIBNP",
+            |m: &UpdateRogueAdventureRoomScoreCsReq| { &m.HHLBDGMIBNP },
+            |m: &mut UpdateRogueAdventureRoomScoreCsReq| { &mut m.HHLBDGMIBNP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdateRogueAdventureRoomScoreCsReq>(
             "UpdateRogueAdventureRoomScoreCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for UpdateRogueAdventureRoomScoreCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.KCENJNFNEPL = is.read_uint32()?;
+                32 => {
+                    self.DPOKCFKNDIG = is.read_uint32()?;
                 },
-                80 => {
-                    self.OFAGGKBMPJN = is.read_uint32()?;
+                16 => {
+                    self.HHLBDGMIBNP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for UpdateRogueAdventureRoomScoreCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KCENJNFNEPL != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.KCENJNFNEPL);
+        if self.DPOKCFKNDIG != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.DPOKCFKNDIG);
         }
-        if self.OFAGGKBMPJN != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.OFAGGKBMPJN);
+        if self.HHLBDGMIBNP != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.HHLBDGMIBNP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for UpdateRogueAdventureRoomScoreCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KCENJNFNEPL != 0 {
-            os.write_uint32(13, self.KCENJNFNEPL)?;
+        if self.DPOKCFKNDIG != 0 {
+            os.write_uint32(4, self.DPOKCFKNDIG)?;
         }
-        if self.OFAGGKBMPJN != 0 {
-            os.write_uint32(10, self.OFAGGKBMPJN)?;
+        if self.HHLBDGMIBNP != 0 {
+            os.write_uint32(2, self.HHLBDGMIBNP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for UpdateRogueAdventureRoomScoreCsReq {
     }
 
     fn clear(&mut self) {
-        self.KCENJNFNEPL = 0;
-        self.OFAGGKBMPJN = 0;
+        self.DPOKCFKNDIG = 0;
+        self.HHLBDGMIBNP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateRogueAdventureRoomScoreCsReq {
         static instance: UpdateRogueAdventureRoomScoreCsReq = UpdateRogueAdventureRoomScoreCsReq {
-            KCENJNFNEPL: 0,
-            OFAGGKBMPJN: 0,
+            DPOKCFKNDIG: 0,
+            HHLBDGMIBNP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for UpdateRogueAdventureRoomScoreCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(UpdateRogueAdventureRoomScoreCsReq.proto\"h\n\"UpdateRogueAdventureRo\
-    omScoreCsReq\x12\x20\n\x0bKCENJNFNEPL\x18\r\x20\x01(\rR\x0bKCENJNFNEPL\
-    \x12\x20\n\x0bOFAGGKBMPJN\x18\n\x20\x01(\rR\x0bOFAGGKBMPJNb\x06proto3\
+    omScoreCsReq\x12\x20\n\x0bDPOKCFKNDIG\x18\x04\x20\x01(\rR\x0bDPOKCFKNDIG\
+    \x12\x20\n\x0bHHLBDGMIBNP\x18\x02\x20\x01(\rR\x0bHHLBDGMIBNPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetPlayerInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SetPlayerInfoScRsp.JKHOCHIJPDH)
-    pub JKHOCHIJPDH: i64,
-    // @@protoc_insertion_point(field:SetPlayerInfoScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:SetPlayerInfoScRsp.LGMDJJNEONL)
-    pub LGMDJJNEONL: ::protobuf::EnumOrUnknown<super::MultiPathAvatarType::MultiPathAvatarType>,
-    // @@protoc_insertion_point(field:SetPlayerInfoScRsp.PBFJCNKOEAM)
-    pub PBFJCNKOEAM: bool,
-    // @@protoc_insertion_point(field:SetPlayerInfoScRsp.JKGCJJJAMBH)
-    pub JKGCJJJAMBH: ::std::vec::Vec<super::CPFAAFNPNJL::CPFAAFNPNJL>,
+    // @@protoc_insertion_point(field:SetPlayerInfoScRsp.OADEDDNNDDJ)
+    pub OADEDDNNDDJ: ::std::vec::Vec<super::MultiPathAvatarTypeInfo::MultiPathAvatarTypeInfo>,
+    // @@protoc_insertion_point(field:SetPlayerInfoScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:SetPlayerInfoScRsp.MPOHAEFEHOE)
+    pub MPOHAEFEHOE: bool,
+    // @@protoc_insertion_point(field:SetPlayerInfoScRsp.EFADNKKLHKM)
+    pub EFADNKKLHKM: ::protobuf::EnumOrUnknown<super::MultiPathAvatarType::MultiPathAvatarType>,
+    // @@protoc_insertion_point(field:SetPlayerInfoScRsp.GJKEMKAPJAL)
+    pub GJKEMKAPJAL: i64,
     // special fields
     // @@protoc_insertion_point(special_field:SetPlayerInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,30 +58,30 @@ impl SetPlayerInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JKHOCHIJPDH",
-            |m: &SetPlayerInfoScRsp| { &m.JKHOCHIJPDH },
-            |m: &mut SetPlayerInfoScRsp| { &mut m.JKHOCHIJPDH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &SetPlayerInfoScRsp| { &m.ADADHIHDHJC },
-            |m: &mut SetPlayerInfoScRsp| { &mut m.ADADHIHDHJC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LGMDJJNEONL",
-            |m: &SetPlayerInfoScRsp| { &m.LGMDJJNEONL },
-            |m: &mut SetPlayerInfoScRsp| { &mut m.LGMDJJNEONL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PBFJCNKOEAM",
-            |m: &SetPlayerInfoScRsp| { &m.PBFJCNKOEAM },
-            |m: &mut SetPlayerInfoScRsp| { &mut m.PBFJCNKOEAM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JKGCJJJAMBH",
-            |m: &SetPlayerInfoScRsp| { &m.JKGCJJJAMBH },
-            |m: &mut SetPlayerInfoScRsp| { &mut m.JKGCJJJAMBH },
+            "OADEDDNNDDJ",
+            |m: &SetPlayerInfoScRsp| { &m.OADEDDNNDDJ },
+            |m: &mut SetPlayerInfoScRsp| { &mut m.OADEDDNNDDJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &SetPlayerInfoScRsp| { &m.retcode },
+            |m: &mut SetPlayerInfoScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MPOHAEFEHOE",
+            |m: &SetPlayerInfoScRsp| { &m.MPOHAEFEHOE },
+            |m: &mut SetPlayerInfoScRsp| { &mut m.MPOHAEFEHOE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EFADNKKLHKM",
+            |m: &SetPlayerInfoScRsp| { &m.EFADNKKLHKM },
+            |m: &mut SetPlayerInfoScRsp| { &mut m.EFADNKKLHKM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GJKEMKAPJAL",
+            |m: &SetPlayerInfoScRsp| { &m.GJKEMKAPJAL },
+            |m: &mut SetPlayerInfoScRsp| { &mut m.GJKEMKAPJAL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetPlayerInfoScRsp>(
             "SetPlayerInfoScRsp",
@@ -101,20 +101,20 @@ impl ::protobuf::Message for SetPlayerInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                66 => {
+                    self.OADEDDNNDDJ.push(is.read_message()?);
+                },
+                32 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                56 => {
+                    self.MPOHAEFEHOE = is.read_bool()?;
+                },
                 112 => {
-                    self.JKHOCHIJPDH = is.read_int64()?;
+                    self.EFADNKKLHKM = is.read_enum_or_unknown()?;
                 },
-                48 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
-                },
-                120 => {
-                    self.LGMDJJNEONL = is.read_enum_or_unknown()?;
-                },
-                80 => {
-                    self.PBFJCNKOEAM = is.read_bool()?;
-                },
-                106 => {
-                    self.JKGCJJJAMBH.push(is.read_message()?);
+                8 => {
+                    self.GJKEMKAPJAL = is.read_int64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,43 +128,43 @@ impl ::protobuf::Message for SetPlayerInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JKHOCHIJPDH != 0 {
-            my_size += ::protobuf::rt::int64_size(14, self.JKHOCHIJPDH);
-        }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.ADADHIHDHJC);
-        }
-        if self.LGMDJJNEONL != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
-            my_size += ::protobuf::rt::int32_size(15, self.LGMDJJNEONL.value());
-        }
-        if self.PBFJCNKOEAM != false {
-            my_size += 1 + 1;
-        }
-        for value in &self.JKGCJJJAMBH {
+        for value in &self.OADEDDNNDDJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+        }
+        if self.MPOHAEFEHOE != false {
+            my_size += 1 + 1;
+        }
+        if self.EFADNKKLHKM != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
+            my_size += ::protobuf::rt::int32_size(14, self.EFADNKKLHKM.value());
+        }
+        if self.GJKEMKAPJAL != 0 {
+            my_size += ::protobuf::rt::int64_size(1, self.GJKEMKAPJAL);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JKHOCHIJPDH != 0 {
-            os.write_int64(14, self.JKHOCHIJPDH)?;
-        }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(6, self.ADADHIHDHJC)?;
-        }
-        if self.LGMDJJNEONL != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.LGMDJJNEONL))?;
-        }
-        if self.PBFJCNKOEAM != false {
-            os.write_bool(10, self.PBFJCNKOEAM)?;
-        }
-        for v in &self.JKGCJJJAMBH {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        for v in &self.OADEDDNNDDJ {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
+        if self.retcode != 0 {
+            os.write_uint32(4, self.retcode)?;
+        }
+        if self.MPOHAEFEHOE != false {
+            os.write_bool(7, self.MPOHAEFEHOE)?;
+        }
+        if self.EFADNKKLHKM != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.EFADNKKLHKM))?;
+        }
+        if self.GJKEMKAPJAL != 0 {
+            os.write_int64(1, self.GJKEMKAPJAL)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -182,21 +182,21 @@ impl ::protobuf::Message for SetPlayerInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.JKHOCHIJPDH = 0;
-        self.ADADHIHDHJC = 0;
-        self.LGMDJJNEONL = ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone);
-        self.PBFJCNKOEAM = false;
-        self.JKGCJJJAMBH.clear();
+        self.OADEDDNNDDJ.clear();
+        self.retcode = 0;
+        self.MPOHAEFEHOE = false;
+        self.EFADNKKLHKM = ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone);
+        self.GJKEMKAPJAL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetPlayerInfoScRsp {
         static instance: SetPlayerInfoScRsp = SetPlayerInfoScRsp {
-            JKHOCHIJPDH: 0,
-            ADADHIHDHJC: 0,
-            LGMDJJNEONL: ::protobuf::EnumOrUnknown::from_i32(0),
-            PBFJCNKOEAM: false,
-            JKGCJJJAMBH: ::std::vec::Vec::new(),
+            OADEDDNNDDJ: ::std::vec::Vec::new(),
+            retcode: 0,
+            MPOHAEFEHOE: false,
+            EFADNKKLHKM: ::protobuf::EnumOrUnknown::from_i32(0),
+            GJKEMKAPJAL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,13 +221,13 @@ impl ::protobuf::reflect::ProtobufValue for SetPlayerInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18SetPlayerInfoScRsp.proto\x1a\x11CPFAAFNPNJL.proto\x1a\x19MultiPath\
-    AvatarType.proto\"\xe2\x01\n\x12SetPlayerInfoScRsp\x12\x20\n\x0bJKHOCHIJ\
-    PDH\x18\x0e\x20\x01(\x03R\x0bJKHOCHIJPDH\x12\x20\n\x0bADADHIHDHJC\x18\
-    \x06\x20\x01(\rR\x0bADADHIHDHJC\x126\n\x0bLGMDJJNEONL\x18\x0f\x20\x01(\
-    \x0e2\x14.MultiPathAvatarTypeR\x0bLGMDJJNEONL\x12\x20\n\x0bPBFJCNKOEAM\
-    \x18\n\x20\x01(\x08R\x0bPBFJCNKOEAM\x12.\n\x0bJKGCJJJAMBH\x18\r\x20\x03(\
-    \x0b2\x0c.CPFAAFNPNJLR\x0bJKGCJJJAMBHb\x06proto3\
+    \n\x18SetPlayerInfoScRsp.proto\x1a\x19MultiPathAvatarType.proto\x1a\x1dM\
+    ultiPathAvatarTypeInfo.proto\"\xe6\x01\n\x12SetPlayerInfoScRsp\x12:\n\
+    \x0bOADEDDNNDDJ\x18\x08\x20\x03(\x0b2\x18.MultiPathAvatarTypeInfoR\x0bOA\
+    DEDDNNDDJ\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12\x20\n\
+    \x0bMPOHAEFEHOE\x18\x07\x20\x01(\x08R\x0bMPOHAEFEHOE\x126\n\x0bEFADNKKLH\
+    KM\x18\x0e\x20\x01(\x0e2\x14.MultiPathAvatarTypeR\x0bEFADNKKLHKM\x12\x20\
+    \n\x0bGJKEMKAPJAL\x18\x01\x20\x01(\x03R\x0bGJKEMKAPJALb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -245,8 +245,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::CPFAAFNPNJL::file_descriptor().clone());
             deps.push(super::MultiPathAvatarType::file_descriptor().clone());
+            deps.push(super::MultiPathAvatarTypeInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SetPlayerInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

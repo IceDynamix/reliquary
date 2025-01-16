@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChangeLineupLeaderCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ChangeLineupLeaderCsReq.slot)
-    pub slot: u32,
+    // @@protoc_insertion_point(field:ChangeLineupLeaderCsReq.HEKJJCLEAEH)
+    pub HEKJJCLEAEH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChangeLineupLeaderCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl ChangeLineupLeaderCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "slot",
-            |m: &ChangeLineupLeaderCsReq| { &m.slot },
-            |m: &mut ChangeLineupLeaderCsReq| { &mut m.slot },
+            "HEKJJCLEAEH",
+            |m: &ChangeLineupLeaderCsReq| { &m.HEKJJCLEAEH },
+            |m: &mut ChangeLineupLeaderCsReq| { &mut m.HEKJJCLEAEH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChangeLineupLeaderCsReq>(
             "ChangeLineupLeaderCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for ChangeLineupLeaderCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.slot = is.read_uint32()?;
+                16 => {
+                    self.HEKJJCLEAEH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for ChangeLineupLeaderCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.slot);
+        if self.HEKJJCLEAEH != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.HEKJJCLEAEH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for ChangeLineupLeaderCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.slot != 0 {
-            os.write_uint32(3, self.slot)?;
+        if self.HEKJJCLEAEH != 0 {
+            os.write_uint32(2, self.HEKJJCLEAEH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for ChangeLineupLeaderCsReq {
     }
 
     fn clear(&mut self) {
-        self.slot = 0;
+        self.HEKJJCLEAEH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChangeLineupLeaderCsReq {
         static instance: ChangeLineupLeaderCsReq = ChangeLineupLeaderCsReq {
-            slot: 0,
+            HEKJJCLEAEH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for ChangeLineupLeaderCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dChangeLineupLeaderCsReq.proto\"-\n\x17ChangeLineupLeaderCsReq\x12\
-    \x12\n\x04slot\x18\x03\x20\x01(\rR\x04slotB\x15\n\x13emu.lunarcore.proto\
-    b\x06proto3\
+    \n\x1dChangeLineupLeaderCsReq.proto\";\n\x17ChangeLineupLeaderCsReq\x12\
+    \x20\n\x0bHEKJJCLEAEH\x18\x02\x20\x01(\rR\x0bHEKJJCLEAEHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

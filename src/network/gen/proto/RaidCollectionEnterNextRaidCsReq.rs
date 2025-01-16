@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RaidCollectionEnterNextRaidCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RaidCollectionEnterNextRaidCsReq.DNMJBNNJLEL)
-    pub DNMJBNNJLEL: u32,
-    // @@protoc_insertion_point(field:RaidCollectionEnterNextRaidCsReq.KDFKCJLHHAF)
-    pub KDFKCJLHHAF: u32,
-    // @@protoc_insertion_point(field:RaidCollectionEnterNextRaidCsReq.EMALNMLGANJ)
-    pub EMALNMLGANJ: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:RaidCollectionEnterNextRaidCsReq.ODOAJJGMBCL)
-    pub ODOAJJGMBCL: u32,
+    // @@protoc_insertion_point(field:RaidCollectionEnterNextRaidCsReq.avatar_list)
+    pub avatar_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RaidCollectionEnterNextRaidCsReq.NBLJPGFHDFI)
+    pub NBLJPGFHDFI: u32,
+    // @@protoc_insertion_point(field:RaidCollectionEnterNextRaidCsReq.CFNJJEJIGOK)
+    pub CFNJJEJIGOK: u32,
+    // @@protoc_insertion_point(field:RaidCollectionEnterNextRaidCsReq.FCBODANKHEE)
+    pub FCBODANKHEE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RaidCollectionEnterNextRaidCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,25 +56,25 @@ impl RaidCollectionEnterNextRaidCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DNMJBNNJLEL",
-            |m: &RaidCollectionEnterNextRaidCsReq| { &m.DNMJBNNJLEL },
-            |m: &mut RaidCollectionEnterNextRaidCsReq| { &mut m.DNMJBNNJLEL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KDFKCJLHHAF",
-            |m: &RaidCollectionEnterNextRaidCsReq| { &m.KDFKCJLHHAF },
-            |m: &mut RaidCollectionEnterNextRaidCsReq| { &mut m.KDFKCJLHHAF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EMALNMLGANJ",
-            |m: &RaidCollectionEnterNextRaidCsReq| { &m.EMALNMLGANJ },
-            |m: &mut RaidCollectionEnterNextRaidCsReq| { &mut m.EMALNMLGANJ },
+            "avatar_list",
+            |m: &RaidCollectionEnterNextRaidCsReq| { &m.avatar_list },
+            |m: &mut RaidCollectionEnterNextRaidCsReq| { &mut m.avatar_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ODOAJJGMBCL",
-            |m: &RaidCollectionEnterNextRaidCsReq| { &m.ODOAJJGMBCL },
-            |m: &mut RaidCollectionEnterNextRaidCsReq| { &mut m.ODOAJJGMBCL },
+            "NBLJPGFHDFI",
+            |m: &RaidCollectionEnterNextRaidCsReq| { &m.NBLJPGFHDFI },
+            |m: &mut RaidCollectionEnterNextRaidCsReq| { &mut m.NBLJPGFHDFI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CFNJJEJIGOK",
+            |m: &RaidCollectionEnterNextRaidCsReq| { &m.CFNJJEJIGOK },
+            |m: &mut RaidCollectionEnterNextRaidCsReq| { &mut m.CFNJJEJIGOK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FCBODANKHEE",
+            |m: &RaidCollectionEnterNextRaidCsReq| { &m.FCBODANKHEE },
+            |m: &mut RaidCollectionEnterNextRaidCsReq| { &mut m.FCBODANKHEE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RaidCollectionEnterNextRaidCsReq>(
             "RaidCollectionEnterNextRaidCsReq",
@@ -94,20 +94,20 @@ impl ::protobuf::Message for RaidCollectionEnterNextRaidCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.DNMJBNNJLEL = is.read_uint32()?;
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.avatar_list)?;
                 },
-                96 => {
-                    self.KDFKCJLHHAF = is.read_uint32()?;
+                56 => {
+                    self.avatar_list.push(is.read_uint32()?);
                 },
-                50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.EMALNMLGANJ)?;
+                64 => {
+                    self.NBLJPGFHDFI = is.read_uint32()?;
                 },
-                48 => {
-                    self.EMALNMLGANJ.push(is.read_uint32()?);
+                40 => {
+                    self.CFNJJEJIGOK = is.read_uint32()?;
                 },
-                16 => {
-                    self.ODOAJJGMBCL = is.read_uint32()?;
+                112 => {
+                    self.FCBODANKHEE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,17 +121,17 @@ impl ::protobuf::Message for RaidCollectionEnterNextRaidCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DNMJBNNJLEL != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.DNMJBNNJLEL);
-        }
-        if self.KDFKCJLHHAF != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.KDFKCJLHHAF);
-        }
-        for value in &self.EMALNMLGANJ {
-            my_size += ::protobuf::rt::uint32_size(6, *value);
+        for value in &self.avatar_list {
+            my_size += ::protobuf::rt::uint32_size(7, *value);
         };
-        if self.ODOAJJGMBCL != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.ODOAJJGMBCL);
+        if self.NBLJPGFHDFI != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.NBLJPGFHDFI);
+        }
+        if self.CFNJJEJIGOK != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.CFNJJEJIGOK);
+        }
+        if self.FCBODANKHEE != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.FCBODANKHEE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -139,17 +139,17 @@ impl ::protobuf::Message for RaidCollectionEnterNextRaidCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DNMJBNNJLEL != 0 {
-            os.write_uint32(9, self.DNMJBNNJLEL)?;
-        }
-        if self.KDFKCJLHHAF != 0 {
-            os.write_uint32(12, self.KDFKCJLHHAF)?;
-        }
-        for v in &self.EMALNMLGANJ {
-            os.write_uint32(6, *v)?;
+        for v in &self.avatar_list {
+            os.write_uint32(7, *v)?;
         };
-        if self.ODOAJJGMBCL != 0 {
-            os.write_uint32(2, self.ODOAJJGMBCL)?;
+        if self.NBLJPGFHDFI != 0 {
+            os.write_uint32(8, self.NBLJPGFHDFI)?;
+        }
+        if self.CFNJJEJIGOK != 0 {
+            os.write_uint32(5, self.CFNJJEJIGOK)?;
+        }
+        if self.FCBODANKHEE != 0 {
+            os.write_uint32(14, self.FCBODANKHEE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,19 +168,19 @@ impl ::protobuf::Message for RaidCollectionEnterNextRaidCsReq {
     }
 
     fn clear(&mut self) {
-        self.DNMJBNNJLEL = 0;
-        self.KDFKCJLHHAF = 0;
-        self.EMALNMLGANJ.clear();
-        self.ODOAJJGMBCL = 0;
+        self.avatar_list.clear();
+        self.NBLJPGFHDFI = 0;
+        self.CFNJJEJIGOK = 0;
+        self.FCBODANKHEE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RaidCollectionEnterNextRaidCsReq {
         static instance: RaidCollectionEnterNextRaidCsReq = RaidCollectionEnterNextRaidCsReq {
-            DNMJBNNJLEL: 0,
-            KDFKCJLHHAF: 0,
-            EMALNMLGANJ: ::std::vec::Vec::new(),
-            ODOAJJGMBCL: 0,
+            avatar_list: ::std::vec::Vec::new(),
+            NBLJPGFHDFI: 0,
+            CFNJJEJIGOK: 0,
+            FCBODANKHEE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -205,11 +205,11 @@ impl ::protobuf::reflect::ProtobufValue for RaidCollectionEnterNextRaidCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n&RaidCollectionEnterNextRaidCsReq.proto\"\xaa\x01\n\x20RaidCollectionE\
-    nterNextRaidCsReq\x12\x20\n\x0bDNMJBNNJLEL\x18\t\x20\x01(\rR\x0bDNMJBNNJ\
-    LEL\x12\x20\n\x0bKDFKCJLHHAF\x18\x0c\x20\x01(\rR\x0bKDFKCJLHHAF\x12\x20\
-    \n\x0bEMALNMLGANJ\x18\x06\x20\x03(\rR\x0bEMALNMLGANJ\x12\x20\n\x0bODOAJJ\
-    GMBCL\x18\x02\x20\x01(\rR\x0bODOAJJGMBCLb\x06proto3\
+    \n&RaidCollectionEnterNextRaidCsReq.proto\"\xa9\x01\n\x20RaidCollectionE\
+    nterNextRaidCsReq\x12\x1f\n\x0bavatar_list\x18\x07\x20\x03(\rR\navatarLi\
+    st\x12\x20\n\x0bNBLJPGFHDFI\x18\x08\x20\x01(\rR\x0bNBLJPGFHDFI\x12\x20\n\
+    \x0bCFNJJEJIGOK\x18\x05\x20\x01(\rR\x0bCFNJJEJIGOK\x12\x20\n\x0bFCBODANK\
+    HEE\x18\x0e\x20\x01(\rR\x0bFCBODANKHEEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

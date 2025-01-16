@@ -29,16 +29,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SendMsgCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SendMsgCsReq.emote)
-    pub emote: u32,
-    // @@protoc_insertion_point(field:SendMsgCsReq.text)
-    pub text: ::std::string::String,
-    // @@protoc_insertion_point(field:SendMsgCsReq.to_uid_list)
-    pub to_uid_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:SendMsgCsReq.chat_type)
-    pub chat_type: ::protobuf::EnumOrUnknown<super::ChatType::ChatType>,
-    // @@protoc_insertion_point(field:SendMsgCsReq.msg_type)
-    pub msg_type: ::protobuf::EnumOrUnknown<super::MsgType::MsgType>,
+    // @@protoc_insertion_point(field:SendMsgCsReq.OHMLAEEKJEG)
+    pub OHMLAEEKJEG: ::protobuf::EnumOrUnknown<super::ChatType::ChatType>,
+    // @@protoc_insertion_point(field:SendMsgCsReq.GKBNNAIDBAC)
+    pub GKBNNAIDBAC: ::protobuf::EnumOrUnknown<super::MsgType::MsgType>,
+    // @@protoc_insertion_point(field:SendMsgCsReq.MPHLIBPFLNG)
+    pub MPHLIBPFLNG: u32,
+    // @@protoc_insertion_point(field:SendMsgCsReq.LEKPNLAPCED)
+    pub LEKPNLAPCED: ::protobuf::MessageField<super::CDGPKIJBFDK::CDGPKIJBFDK>,
+    // @@protoc_insertion_point(field:SendMsgCsReq.HEPFLIPLPFD)
+    pub HEPFLIPLPFD: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SendMsgCsReq.EAOBMBKHOCE)
+    pub EAOBMBKHOCE: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:SendMsgCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,32 +58,37 @@ impl SendMsgCsReq {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(5);
+        let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "emote",
-            |m: &SendMsgCsReq| { &m.emote },
-            |m: &mut SendMsgCsReq| { &mut m.emote },
+            "OHMLAEEKJEG",
+            |m: &SendMsgCsReq| { &m.OHMLAEEKJEG },
+            |m: &mut SendMsgCsReq| { &mut m.OHMLAEEKJEG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "text",
-            |m: &SendMsgCsReq| { &m.text },
-            |m: &mut SendMsgCsReq| { &mut m.text },
+            "GKBNNAIDBAC",
+            |m: &SendMsgCsReq| { &m.GKBNNAIDBAC },
+            |m: &mut SendMsgCsReq| { &mut m.GKBNNAIDBAC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MPHLIBPFLNG",
+            |m: &SendMsgCsReq| { &m.MPHLIBPFLNG },
+            |m: &mut SendMsgCsReq| { &mut m.MPHLIBPFLNG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CDGPKIJBFDK::CDGPKIJBFDK>(
+            "LEKPNLAPCED",
+            |m: &SendMsgCsReq| { &m.LEKPNLAPCED },
+            |m: &mut SendMsgCsReq| { &mut m.LEKPNLAPCED },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "to_uid_list",
-            |m: &SendMsgCsReq| { &m.to_uid_list },
-            |m: &mut SendMsgCsReq| { &mut m.to_uid_list },
+            "HEPFLIPLPFD",
+            |m: &SendMsgCsReq| { &m.HEPFLIPLPFD },
+            |m: &mut SendMsgCsReq| { &mut m.HEPFLIPLPFD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "chat_type",
-            |m: &SendMsgCsReq| { &m.chat_type },
-            |m: &mut SendMsgCsReq| { &mut m.chat_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "msg_type",
-            |m: &SendMsgCsReq| { &m.msg_type },
-            |m: &mut SendMsgCsReq| { &mut m.msg_type },
+            "EAOBMBKHOCE",
+            |m: &SendMsgCsReq| { &m.EAOBMBKHOCE },
+            |m: &mut SendMsgCsReq| { &mut m.EAOBMBKHOCE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SendMsgCsReq>(
             "SendMsgCsReq",
@@ -101,23 +108,26 @@ impl ::protobuf::Message for SendMsgCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.emote = is.read_uint32()?;
-                },
-                66 => {
-                    self.text = is.read_string()?;
-                },
-                50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.to_uid_list)?;
+                104 => {
+                    self.OHMLAEEKJEG = is.read_enum_or_unknown()?;
                 },
                 48 => {
-                    self.to_uid_list.push(is.read_uint32()?);
+                    self.GKBNNAIDBAC = is.read_enum_or_unknown()?;
                 },
-                8 => {
-                    self.chat_type = is.read_enum_or_unknown()?;
+                80 => {
+                    self.MPHLIBPFLNG = is.read_uint32()?;
                 },
-                24 => {
-                    self.msg_type = is.read_enum_or_unknown()?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LEKPNLAPCED)?;
+                },
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.HEPFLIPLPFD)?;
+                },
+                64 => {
+                    self.HEPFLIPLPFD.push(is.read_uint32()?);
+                },
+                90 => {
+                    self.EAOBMBKHOCE = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -131,20 +141,24 @@ impl ::protobuf::Message for SendMsgCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.emote != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.emote);
+        if self.OHMLAEEKJEG != ::protobuf::EnumOrUnknown::new(super::ChatType::ChatType::CHAT_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(13, self.OHMLAEEKJEG.value());
         }
-        if !self.text.is_empty() {
-            my_size += ::protobuf::rt::string_size(8, &self.text);
+        if self.GKBNNAIDBAC != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(6, self.GKBNNAIDBAC.value());
         }
-        for value in &self.to_uid_list {
-            my_size += ::protobuf::rt::uint32_size(6, *value);
+        if self.MPHLIBPFLNG != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.MPHLIBPFLNG);
+        }
+        if let Some(v) = self.LEKPNLAPCED.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        for value in &self.HEPFLIPLPFD {
+            my_size += ::protobuf::rt::uint32_size(8, *value);
         };
-        if self.chat_type != ::protobuf::EnumOrUnknown::new(super::ChatType::ChatType::CHAT_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(1, self.chat_type.value());
-        }
-        if self.msg_type != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(3, self.msg_type.value());
+        if !self.EAOBMBKHOCE.is_empty() {
+            my_size += ::protobuf::rt::string_size(11, &self.EAOBMBKHOCE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -152,20 +166,23 @@ impl ::protobuf::Message for SendMsgCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.emote != 0 {
-            os.write_uint32(11, self.emote)?;
+        if self.OHMLAEEKJEG != ::protobuf::EnumOrUnknown::new(super::ChatType::ChatType::CHAT_TYPE_NONE) {
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.OHMLAEEKJEG))?;
         }
-        if !self.text.is_empty() {
-            os.write_string(8, &self.text)?;
+        if self.GKBNNAIDBAC != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE) {
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.GKBNNAIDBAC))?;
         }
-        for v in &self.to_uid_list {
-            os.write_uint32(6, *v)?;
+        if self.MPHLIBPFLNG != 0 {
+            os.write_uint32(10, self.MPHLIBPFLNG)?;
+        }
+        if let Some(v) = self.LEKPNLAPCED.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
+        for v in &self.HEPFLIPLPFD {
+            os.write_uint32(8, *v)?;
         };
-        if self.chat_type != ::protobuf::EnumOrUnknown::new(super::ChatType::ChatType::CHAT_TYPE_NONE) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.chat_type))?;
-        }
-        if self.msg_type != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.msg_type))?;
+        if !self.EAOBMBKHOCE.is_empty() {
+            os.write_string(11, &self.EAOBMBKHOCE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,21 +201,23 @@ impl ::protobuf::Message for SendMsgCsReq {
     }
 
     fn clear(&mut self) {
-        self.emote = 0;
-        self.text.clear();
-        self.to_uid_list.clear();
-        self.chat_type = ::protobuf::EnumOrUnknown::new(super::ChatType::ChatType::CHAT_TYPE_NONE);
-        self.msg_type = ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE);
+        self.OHMLAEEKJEG = ::protobuf::EnumOrUnknown::new(super::ChatType::ChatType::CHAT_TYPE_NONE);
+        self.GKBNNAIDBAC = ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE);
+        self.MPHLIBPFLNG = 0;
+        self.LEKPNLAPCED.clear();
+        self.HEPFLIPLPFD.clear();
+        self.EAOBMBKHOCE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SendMsgCsReq {
         static instance: SendMsgCsReq = SendMsgCsReq {
-            emote: 0,
-            text: ::std::string::String::new(),
-            to_uid_list: ::std::vec::Vec::new(),
-            chat_type: ::protobuf::EnumOrUnknown::from_i32(0),
-            msg_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            OHMLAEEKJEG: ::protobuf::EnumOrUnknown::from_i32(0),
+            GKBNNAIDBAC: ::protobuf::EnumOrUnknown::from_i32(0),
+            MPHLIBPFLNG: 0,
+            LEKPNLAPCED: ::protobuf::MessageField::none(),
+            HEPFLIPLPFD: ::std::vec::Vec::new(),
+            EAOBMBKHOCE: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -223,12 +242,14 @@ impl ::protobuf::reflect::ProtobufValue for SendMsgCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12SendMsgCsReq.proto\x1a\x0eChatType.proto\x1a\rMsgType.proto\"\xa5\
-    \x01\n\x0cSendMsgCsReq\x12\x14\n\x05emote\x18\x0b\x20\x01(\rR\x05emote\
-    \x12\x12\n\x04text\x18\x08\x20\x01(\tR\x04text\x12\x1e\n\x0bto_uid_list\
-    \x18\x06\x20\x03(\rR\ttoUidList\x12&\n\tchat_type\x18\x01\x20\x01(\x0e2\
-    \t.ChatTypeR\x08chatType\x12#\n\x08msg_type\x18\x03\x20\x01(\x0e2\x08.Ms\
-    gTypeR\x07msgTypeB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x12SendMsgCsReq.proto\x1a\x11CDGPKIJBFDK.proto\x1a\x0eChatType.proto\
+    \x1a\rMsgType.proto\"\xfd\x01\n\x0cSendMsgCsReq\x12+\n\x0bOHMLAEEKJEG\
+    \x18\r\x20\x01(\x0e2\t.ChatTypeR\x0bOHMLAEEKJEG\x12*\n\x0bGKBNNAIDBAC\
+    \x18\x06\x20\x01(\x0e2\x08.MsgTypeR\x0bGKBNNAIDBAC\x12\x20\n\x0bMPHLIBPF\
+    LNG\x18\n\x20\x01(\rR\x0bMPHLIBPFLNG\x12.\n\x0bLEKPNLAPCED\x18\x02\x20\
+    \x01(\x0b2\x0c.CDGPKIJBFDKR\x0bLEKPNLAPCED\x12\x20\n\x0bHEPFLIPLPFD\x18\
+    \x08\x20\x03(\rR\x0bHEPFLIPLPFD\x12\x20\n\x0bEAOBMBKHOCE\x18\x0b\x20\x01\
+    (\tR\x0bEAOBMBKHOCEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -245,7 +266,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(2);
+            let mut deps = ::std::vec::Vec::with_capacity(3);
+            deps.push(super::CDGPKIJBFDK::file_descriptor().clone());
             deps.push(super::ChatType::file_descriptor().clone());
             deps.push(super::MsgType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);

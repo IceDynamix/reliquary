@@ -31,8 +31,8 @@ pub struct ExpUpEquipmentScRsp {
     // message fields
     // @@protoc_insertion_point(field:ExpUpEquipmentScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:ExpUpEquipmentScRsp.return_item_list)
-    pub return_item_list: ::std::vec::Vec<super::PileItem::PileItem>,
+    // @@protoc_insertion_point(field:ExpUpEquipmentScRsp.BKBPLGAMOIN)
+    pub BKBPLGAMOIN: ::std::vec::Vec<super::PileItem::PileItem>,
     // special fields
     // @@protoc_insertion_point(special_field:ExpUpEquipmentScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,9 +58,9 @@ impl ExpUpEquipmentScRsp {
             |m: &mut ExpUpEquipmentScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "return_item_list",
-            |m: &ExpUpEquipmentScRsp| { &m.return_item_list },
-            |m: &mut ExpUpEquipmentScRsp| { &mut m.return_item_list },
+            "BKBPLGAMOIN",
+            |m: &ExpUpEquipmentScRsp| { &m.BKBPLGAMOIN },
+            |m: &mut ExpUpEquipmentScRsp| { &mut m.BKBPLGAMOIN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ExpUpEquipmentScRsp>(
             "ExpUpEquipmentScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for ExpUpEquipmentScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                74 => {
-                    self.return_item_list.push(is.read_message()?);
+                66 => {
+                    self.BKBPLGAMOIN.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -99,9 +99,9 @@ impl ::protobuf::Message for ExpUpEquipmentScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
-        for value in &self.return_item_list {
+        for value in &self.BKBPLGAMOIN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -112,10 +112,10 @@ impl ::protobuf::Message for ExpUpEquipmentScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
-        for v in &self.return_item_list {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        for v in &self.BKBPLGAMOIN {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -135,14 +135,14 @@ impl ::protobuf::Message for ExpUpEquipmentScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.return_item_list.clear();
+        self.BKBPLGAMOIN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ExpUpEquipmentScRsp {
         static instance: ExpUpEquipmentScRsp = ExpUpEquipmentScRsp {
             retcode: 0,
-            return_item_list: ::std::vec::Vec::new(),
+            BKBPLGAMOIN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for ExpUpEquipmentScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19ExpUpEquipmentScRsp.proto\x1a\x0ePileItem.proto\"d\n\x13ExpUpEquip\
-    mentScRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x123\n\x10\
-    return_item_list\x18\t\x20\x03(\x0b2\t.PileItemR\x0ereturnItemListB\x15\
-    \n\x13emu.lunarcore.protob\x06proto3\
+    \n\x19ExpUpEquipmentScRsp.proto\x1a\x0ePileItem.proto\"\\\n\x13ExpUpEqui\
+    pmentScRsp\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12+\n\
+    \x0bBKBPLGAMOIN\x18\x08\x20\x03(\x0b2\t.PileItemR\x0bBKBPLGAMOINb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

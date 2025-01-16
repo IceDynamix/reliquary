@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicReviveCostUpdateScNotify {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicReviveCostUpdateScNotify.EMCOGFJADHF)
-    pub EMCOGFJADHF: ::protobuf::MessageField<super::GCPAMIEDFIP::GCPAMIEDFIP>,
+    // @@protoc_insertion_point(field:RogueMagicReviveCostUpdateScNotify.GJDDLKJOCLD)
+    pub GJDDLKJOCLD: ::protobuf::MessageField<super::LFKJBBFJDKN::LFKJBBFJDKN>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicReviveCostUpdateScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,10 +50,10 @@ impl RogueMagicReviveCostUpdateScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GCPAMIEDFIP::GCPAMIEDFIP>(
-            "EMCOGFJADHF",
-            |m: &RogueMagicReviveCostUpdateScNotify| { &m.EMCOGFJADHF },
-            |m: &mut RogueMagicReviveCostUpdateScNotify| { &mut m.EMCOGFJADHF },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LFKJBBFJDKN::LFKJBBFJDKN>(
+            "GJDDLKJOCLD",
+            |m: &RogueMagicReviveCostUpdateScNotify| { &m.GJDDLKJOCLD },
+            |m: &mut RogueMagicReviveCostUpdateScNotify| { &mut m.GJDDLKJOCLD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicReviveCostUpdateScNotify>(
             "RogueMagicReviveCostUpdateScNotify",
@@ -74,7 +74,7 @@ impl ::protobuf::Message for RogueMagicReviveCostUpdateScNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EMCOGFJADHF)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GJDDLKJOCLD)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for RogueMagicReviveCostUpdateScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.EMCOGFJADHF.as_ref() {
+        if let Some(v) = self.GJDDLKJOCLD.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -98,7 +98,7 @@ impl ::protobuf::Message for RogueMagicReviveCostUpdateScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.EMCOGFJADHF.as_ref() {
+        if let Some(v) = self.GJDDLKJOCLD.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -118,13 +118,13 @@ impl ::protobuf::Message for RogueMagicReviveCostUpdateScNotify {
     }
 
     fn clear(&mut self) {
-        self.EMCOGFJADHF.clear();
+        self.GJDDLKJOCLD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicReviveCostUpdateScNotify {
         static instance: RogueMagicReviveCostUpdateScNotify = RogueMagicReviveCostUpdateScNotify {
-            EMCOGFJADHF: ::protobuf::MessageField::none(),
+            GJDDLKJOCLD: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,9 +149,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicReviveCostUpdateScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n(RogueMagicReviveCostUpdateScNotify.proto\x1a\x11GCPAMIEDFIP.proto\"T\
-    \n\"RogueMagicReviveCostUpdateScNotify\x12.\n\x0bEMCOGFJADHF\x18\x0f\x20\
-    \x01(\x0b2\x0c.GCPAMIEDFIPR\x0bEMCOGFJADHFb\x06proto3\
+    \n(RogueMagicReviveCostUpdateScNotify.proto\x1a\x11LFKJBBFJDKN.proto\"T\
+    \n\"RogueMagicReviveCostUpdateScNotify\x12.\n\x0bGJDDLKJOCLD\x18\x0f\x20\
+    \x01(\x0b2\x0c.LFKJBBFJDKNR\x0bGJDDLKJOCLDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -169,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::GCPAMIEDFIP::file_descriptor().clone());
+            deps.push(super::LFKJBBFJDKN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueMagicReviveCostUpdateScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

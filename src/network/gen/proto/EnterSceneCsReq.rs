@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterSceneCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EnterSceneCsReq.content_id)
-    pub content_id: u32,
-    // @@protoc_insertion_point(field:EnterSceneCsReq.entry_id)
-    pub entry_id: u32,
-    // @@protoc_insertion_point(field:EnterSceneCsReq.KHGGDIHPHPA)
-    pub KHGGDIHPHPA: bool,
-    // @@protoc_insertion_point(field:EnterSceneCsReq.GFKIHHOPJDG)
-    pub GFKIHHOPJDG: u32,
-    // @@protoc_insertion_point(field:EnterSceneCsReq.teleport_id)
-    pub teleport_id: u32,
+    // @@protoc_insertion_point(field:EnterSceneCsReq.AKCMBCMDMBC)
+    pub AKCMBCMDMBC: u32,
+    // @@protoc_insertion_point(field:EnterSceneCsReq.EPHAAINOBKC)
+    pub EPHAAINOBKC: u32,
+    // @@protoc_insertion_point(field:EnterSceneCsReq.PHBPBGIJEKG)
+    pub PHBPBGIJEKG: u32,
+    // @@protoc_insertion_point(field:EnterSceneCsReq.CCCEDBIGCDG)
+    pub CCCEDBIGCDG: u32,
+    // @@protoc_insertion_point(field:EnterSceneCsReq.ALGGCGIBMMH)
+    pub ALGGCGIBMMH: bool,
     // special fields
     // @@protoc_insertion_point(special_field:EnterSceneCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,29 +59,29 @@ impl EnterSceneCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "content_id",
-            |m: &EnterSceneCsReq| { &m.content_id },
-            |m: &mut EnterSceneCsReq| { &mut m.content_id },
+            "AKCMBCMDMBC",
+            |m: &EnterSceneCsReq| { &m.AKCMBCMDMBC },
+            |m: &mut EnterSceneCsReq| { &mut m.AKCMBCMDMBC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "entry_id",
-            |m: &EnterSceneCsReq| { &m.entry_id },
-            |m: &mut EnterSceneCsReq| { &mut m.entry_id },
+            "EPHAAINOBKC",
+            |m: &EnterSceneCsReq| { &m.EPHAAINOBKC },
+            |m: &mut EnterSceneCsReq| { &mut m.EPHAAINOBKC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KHGGDIHPHPA",
-            |m: &EnterSceneCsReq| { &m.KHGGDIHPHPA },
-            |m: &mut EnterSceneCsReq| { &mut m.KHGGDIHPHPA },
+            "PHBPBGIJEKG",
+            |m: &EnterSceneCsReq| { &m.PHBPBGIJEKG },
+            |m: &mut EnterSceneCsReq| { &mut m.PHBPBGIJEKG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GFKIHHOPJDG",
-            |m: &EnterSceneCsReq| { &m.GFKIHHOPJDG },
-            |m: &mut EnterSceneCsReq| { &mut m.GFKIHHOPJDG },
+            "CCCEDBIGCDG",
+            |m: &EnterSceneCsReq| { &m.CCCEDBIGCDG },
+            |m: &mut EnterSceneCsReq| { &mut m.CCCEDBIGCDG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "teleport_id",
-            |m: &EnterSceneCsReq| { &m.teleport_id },
-            |m: &mut EnterSceneCsReq| { &mut m.teleport_id },
+            "ALGGCGIBMMH",
+            |m: &EnterSceneCsReq| { &m.ALGGCGIBMMH },
+            |m: &mut EnterSceneCsReq| { &mut m.ALGGCGIBMMH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterSceneCsReq>(
             "EnterSceneCsReq",
@@ -101,20 +101,20 @@ impl ::protobuf::Message for EnterSceneCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.content_id = is.read_uint32()?;
-                },
-                8 => {
-                    self.entry_id = is.read_uint32()?;
-                },
                 32 => {
-                    self.KHGGDIHPHPA = is.read_bool()?;
+                    self.AKCMBCMDMBC = is.read_uint32()?;
                 },
-                96 => {
-                    self.GFKIHHOPJDG = is.read_uint32()?;
+                72 => {
+                    self.EPHAAINOBKC = is.read_uint32()?;
+                },
+                104 => {
+                    self.PHBPBGIJEKG = is.read_uint32()?;
+                },
+                120 => {
+                    self.CCCEDBIGCDG = is.read_uint32()?;
                 },
                 48 => {
-                    self.teleport_id = is.read_uint32()?;
+                    self.ALGGCGIBMMH = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,20 +128,20 @@ impl ::protobuf::Message for EnterSceneCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.content_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.content_id);
+        if self.AKCMBCMDMBC != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.AKCMBCMDMBC);
         }
-        if self.entry_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.entry_id);
+        if self.EPHAAINOBKC != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.EPHAAINOBKC);
         }
-        if self.KHGGDIHPHPA != false {
+        if self.PHBPBGIJEKG != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.PHBPBGIJEKG);
+        }
+        if self.CCCEDBIGCDG != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.CCCEDBIGCDG);
+        }
+        if self.ALGGCGIBMMH != false {
             my_size += 1 + 1;
-        }
-        if self.GFKIHHOPJDG != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.GFKIHHOPJDG);
-        }
-        if self.teleport_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.teleport_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for EnterSceneCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.content_id != 0 {
-            os.write_uint32(7, self.content_id)?;
+        if self.AKCMBCMDMBC != 0 {
+            os.write_uint32(4, self.AKCMBCMDMBC)?;
         }
-        if self.entry_id != 0 {
-            os.write_uint32(1, self.entry_id)?;
+        if self.EPHAAINOBKC != 0 {
+            os.write_uint32(9, self.EPHAAINOBKC)?;
         }
-        if self.KHGGDIHPHPA != false {
-            os.write_bool(4, self.KHGGDIHPHPA)?;
+        if self.PHBPBGIJEKG != 0 {
+            os.write_uint32(13, self.PHBPBGIJEKG)?;
         }
-        if self.GFKIHHOPJDG != 0 {
-            os.write_uint32(12, self.GFKIHHOPJDG)?;
+        if self.CCCEDBIGCDG != 0 {
+            os.write_uint32(15, self.CCCEDBIGCDG)?;
         }
-        if self.teleport_id != 0 {
-            os.write_uint32(6, self.teleport_id)?;
+        if self.ALGGCGIBMMH != false {
+            os.write_bool(6, self.ALGGCGIBMMH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for EnterSceneCsReq {
     }
 
     fn clear(&mut self) {
-        self.content_id = 0;
-        self.entry_id = 0;
-        self.KHGGDIHPHPA = false;
-        self.GFKIHHOPJDG = 0;
-        self.teleport_id = 0;
+        self.AKCMBCMDMBC = 0;
+        self.EPHAAINOBKC = 0;
+        self.PHBPBGIJEKG = 0;
+        self.CCCEDBIGCDG = 0;
+        self.ALGGCGIBMMH = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterSceneCsReq {
         static instance: EnterSceneCsReq = EnterSceneCsReq {
-            content_id: 0,
-            entry_id: 0,
-            KHGGDIHPHPA: false,
-            GFKIHHOPJDG: 0,
-            teleport_id: 0,
+            AKCMBCMDMBC: 0,
+            EPHAAINOBKC: 0,
+            PHBPBGIJEKG: 0,
+            CCCEDBIGCDG: 0,
+            ALGGCGIBMMH: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,12 +220,12 @@ impl ::protobuf::reflect::ProtobufValue for EnterSceneCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15EnterSceneCsReq.proto\"\xb0\x01\n\x0fEnterSceneCsReq\x12\x1d\n\nco\
-    ntent_id\x18\x07\x20\x01(\rR\tcontentId\x12\x19\n\x08entry_id\x18\x01\
-    \x20\x01(\rR\x07entryId\x12\x20\n\x0bKHGGDIHPHPA\x18\x04\x20\x01(\x08R\
-    \x0bKHGGDIHPHPA\x12\x20\n\x0bGFKIHHOPJDG\x18\x0c\x20\x01(\rR\x0bGFKIHHOP\
-    JDG\x12\x1f\n\x0bteleport_id\x18\x06\x20\x01(\rR\nteleportIdB\x15\n\x13e\
-    mu.lunarcore.protob\x06proto3\
+    \n\x15EnterSceneCsReq.proto\"\xbb\x01\n\x0fEnterSceneCsReq\x12\x20\n\x0b\
+    AKCMBCMDMBC\x18\x04\x20\x01(\rR\x0bAKCMBCMDMBC\x12\x20\n\x0bEPHAAINOBKC\
+    \x18\t\x20\x01(\rR\x0bEPHAAINOBKC\x12\x20\n\x0bPHBPBGIJEKG\x18\r\x20\x01\
+    (\rR\x0bPHBPBGIJEKG\x12\x20\n\x0bCCCEDBIGCDG\x18\x0f\x20\x01(\rR\x0bCCCE\
+    DBIGCDG\x12\x20\n\x0bALGGCGIBMMH\x18\x06\x20\x01(\x08R\x0bALGGCGIBMMHb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

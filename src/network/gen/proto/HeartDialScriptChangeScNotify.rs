@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HeartDialScriptChangeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:HeartDialScriptChangeScNotify.NKNNLDMHODM)
-    pub NKNNLDMHODM: ::std::vec::Vec<super::INDBLNCPNOB::INDBLNCPNOB>,
-    // @@protoc_insertion_point(field:HeartDialScriptChangeScNotify.NLNJIJMHODG)
-    pub NLNJIJMHODG: ::std::vec::Vec<super::LBOCLBHDIJL::LBOCLBHDIJL>,
-    // @@protoc_insertion_point(field:HeartDialScriptChangeScNotify.ENELMHEDJII)
-    pub ENELMHEDJII: ::std::vec::Vec<super::HNGOJHBPFEJ::HNGOJHBPFEJ>,
-    // @@protoc_insertion_point(field:HeartDialScriptChangeScNotify.BDFEILABDHM)
-    pub BDFEILABDHM: ::protobuf::EnumOrUnknown<super::DBEKLDHFDCG::DBEKLDHFDCG>,
+    // @@protoc_insertion_point(field:HeartDialScriptChangeScNotify.PALDNLFJJNH)
+    pub PALDNLFJJNH: ::std::vec::Vec<super::HHGCOJOMGBN::HHGCOJOMGBN>,
+    // @@protoc_insertion_point(field:HeartDialScriptChangeScNotify.MLFGAKMIMIN)
+    pub MLFGAKMIMIN: ::protobuf::EnumOrUnknown<super::GNPHJAPOJJM::GNPHJAPOJJM>,
+    // @@protoc_insertion_point(field:HeartDialScriptChangeScNotify.HPKCJDEJLGB)
+    pub HPKCJDEJLGB: ::std::vec::Vec<super::ABMIFMMDLMK::ABMIFMMDLMK>,
+    // @@protoc_insertion_point(field:HeartDialScriptChangeScNotify.GHHDIEEHKDP)
+    pub GHHDIEEHKDP: ::std::vec::Vec<super::JHMALOGKGBL::JHMALOGKGBL>,
     // special fields
     // @@protoc_insertion_point(special_field:HeartDialScriptChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl HeartDialScriptChangeScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NKNNLDMHODM",
-            |m: &HeartDialScriptChangeScNotify| { &m.NKNNLDMHODM },
-            |m: &mut HeartDialScriptChangeScNotify| { &mut m.NKNNLDMHODM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NLNJIJMHODG",
-            |m: &HeartDialScriptChangeScNotify| { &m.NLNJIJMHODG },
-            |m: &mut HeartDialScriptChangeScNotify| { &mut m.NLNJIJMHODG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ENELMHEDJII",
-            |m: &HeartDialScriptChangeScNotify| { &m.ENELMHEDJII },
-            |m: &mut HeartDialScriptChangeScNotify| { &mut m.ENELMHEDJII },
+            "PALDNLFJJNH",
+            |m: &HeartDialScriptChangeScNotify| { &m.PALDNLFJJNH },
+            |m: &mut HeartDialScriptChangeScNotify| { &mut m.PALDNLFJJNH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BDFEILABDHM",
-            |m: &HeartDialScriptChangeScNotify| { &m.BDFEILABDHM },
-            |m: &mut HeartDialScriptChangeScNotify| { &mut m.BDFEILABDHM },
+            "MLFGAKMIMIN",
+            |m: &HeartDialScriptChangeScNotify| { &m.MLFGAKMIMIN },
+            |m: &mut HeartDialScriptChangeScNotify| { &mut m.MLFGAKMIMIN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "HPKCJDEJLGB",
+            |m: &HeartDialScriptChangeScNotify| { &m.HPKCJDEJLGB },
+            |m: &mut HeartDialScriptChangeScNotify| { &mut m.HPKCJDEJLGB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "GHHDIEEHKDP",
+            |m: &HeartDialScriptChangeScNotify| { &m.GHHDIEEHKDP },
+            |m: &mut HeartDialScriptChangeScNotify| { &mut m.GHHDIEEHKDP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HeartDialScriptChangeScNotify>(
             "HeartDialScriptChangeScNotify",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for HeartDialScriptChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    self.NKNNLDMHODM.push(is.read_message()?);
-                },
                 122 => {
-                    self.NLNJIJMHODG.push(is.read_message()?);
+                    self.PALDNLFJJNH.push(is.read_message()?);
                 },
-                74 => {
-                    self.ENELMHEDJII.push(is.read_message()?);
+                104 => {
+                    self.MLFGAKMIMIN = is.read_enum_or_unknown()?;
                 },
-                24 => {
-                    self.BDFEILABDHM = is.read_enum_or_unknown()?;
+                90 => {
+                    self.HPKCJDEJLGB.push(is.read_message()?);
+                },
+                82 => {
+                    self.GHHDIEEHKDP.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,39 +118,39 @@ impl ::protobuf::Message for HeartDialScriptChangeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.NKNNLDMHODM {
+        for value in &self.PALDNLFJJNH {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.NLNJIJMHODG {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.ENELMHEDJII {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.BDFEILABDHM != ::protobuf::EnumOrUnknown::new(super::DBEKLDHFDCG::DBEKLDHFDCG::HEART_DIAL_UNLOCK_STATUS_LOCK) {
-            my_size += ::protobuf::rt::int32_size(3, self.BDFEILABDHM.value());
+        if self.MLFGAKMIMIN != ::protobuf::EnumOrUnknown::new(super::GNPHJAPOJJM::GNPHJAPOJJM::HEART_DIAL_UNLOCK_STATUS_LOCK) {
+            my_size += ::protobuf::rt::int32_size(13, self.MLFGAKMIMIN.value());
         }
+        for value in &self.HPKCJDEJLGB {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        for value in &self.GHHDIEEHKDP {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.NKNNLDMHODM {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        };
-        for v in &self.NLNJIJMHODG {
+        for v in &self.PALDNLFJJNH {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
-        for v in &self.ENELMHEDJII {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
-        if self.BDFEILABDHM != ::protobuf::EnumOrUnknown::new(super::DBEKLDHFDCG::DBEKLDHFDCG::HEART_DIAL_UNLOCK_STATUS_LOCK) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.BDFEILABDHM))?;
+        if self.MLFGAKMIMIN != ::protobuf::EnumOrUnknown::new(super::GNPHJAPOJJM::GNPHJAPOJJM::HEART_DIAL_UNLOCK_STATUS_LOCK) {
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.MLFGAKMIMIN))?;
         }
+        for v in &self.HPKCJDEJLGB {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
+        for v in &self.GHHDIEEHKDP {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -168,19 +168,19 @@ impl ::protobuf::Message for HeartDialScriptChangeScNotify {
     }
 
     fn clear(&mut self) {
-        self.NKNNLDMHODM.clear();
-        self.NLNJIJMHODG.clear();
-        self.ENELMHEDJII.clear();
-        self.BDFEILABDHM = ::protobuf::EnumOrUnknown::new(super::DBEKLDHFDCG::DBEKLDHFDCG::HEART_DIAL_UNLOCK_STATUS_LOCK);
+        self.PALDNLFJJNH.clear();
+        self.MLFGAKMIMIN = ::protobuf::EnumOrUnknown::new(super::GNPHJAPOJJM::GNPHJAPOJJM::HEART_DIAL_UNLOCK_STATUS_LOCK);
+        self.HPKCJDEJLGB.clear();
+        self.GHHDIEEHKDP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HeartDialScriptChangeScNotify {
         static instance: HeartDialScriptChangeScNotify = HeartDialScriptChangeScNotify {
-            NKNNLDMHODM: ::std::vec::Vec::new(),
-            NLNJIJMHODG: ::std::vec::Vec::new(),
-            ENELMHEDJII: ::std::vec::Vec::new(),
-            BDFEILABDHM: ::protobuf::EnumOrUnknown::from_i32(0),
+            PALDNLFJJNH: ::std::vec::Vec::new(),
+            MLFGAKMIMIN: ::protobuf::EnumOrUnknown::from_i32(0),
+            HPKCJDEJLGB: ::std::vec::Vec::new(),
+            GHHDIEEHKDP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -205,13 +205,13 @@ impl ::protobuf::reflect::ProtobufValue for HeartDialScriptChangeScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#HeartDialScriptChangeScNotify.proto\x1a\x11DBEKLDHFDCG.proto\x1a\x11H\
-    NGOJHBPFEJ.proto\x1a\x11INDBLNCPNOB.proto\x1a\x11LBOCLBHDIJL.proto\"\xdf\
-    \x01\n\x1dHeartDialScriptChangeScNotify\x12.\n\x0bNKNNLDMHODM\x18\x0e\
-    \x20\x03(\x0b2\x0c.INDBLNCPNOBR\x0bNKNNLDMHODM\x12.\n\x0bNLNJIJMHODG\x18\
-    \x0f\x20\x03(\x0b2\x0c.LBOCLBHDIJLR\x0bNLNJIJMHODG\x12.\n\x0bENELMHEDJII\
-    \x18\t\x20\x03(\x0b2\x0c.HNGOJHBPFEJR\x0bENELMHEDJII\x12.\n\x0bBDFEILABD\
-    HM\x18\x03\x20\x01(\x0e2\x0c.DBEKLDHFDCGR\x0bBDFEILABDHMb\x06proto3\
+    \n#HeartDialScriptChangeScNotify.proto\x1a\x11ABMIFMMDLMK.proto\x1a\x11G\
+    NPHJAPOJJM.proto\x1a\x11HHGCOJOMGBN.proto\x1a\x11JHMALOGKGBL.proto\"\xdf\
+    \x01\n\x1dHeartDialScriptChangeScNotify\x12.\n\x0bPALDNLFJJNH\x18\x0f\
+    \x20\x03(\x0b2\x0c.HHGCOJOMGBNR\x0bPALDNLFJJNH\x12.\n\x0bMLFGAKMIMIN\x18\
+    \r\x20\x01(\x0e2\x0c.GNPHJAPOJJMR\x0bMLFGAKMIMIN\x12.\n\x0bHPKCJDEJLGB\
+    \x18\x0b\x20\x03(\x0b2\x0c.ABMIFMMDLMKR\x0bHPKCJDEJLGB\x12.\n\x0bGHHDIEE\
+    HKDP\x18\n\x20\x03(\x0b2\x0c.JHMALOGKGBLR\x0bGHHDIEEHKDPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -229,10 +229,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(4);
-            deps.push(super::DBEKLDHFDCG::file_descriptor().clone());
-            deps.push(super::HNGOJHBPFEJ::file_descriptor().clone());
-            deps.push(super::INDBLNCPNOB::file_descriptor().clone());
-            deps.push(super::LBOCLBHDIJL::file_descriptor().clone());
+            deps.push(super::ABMIFMMDLMK::file_descriptor().clone());
+            deps.push(super::GNPHJAPOJJM::file_descriptor().clone());
+            deps.push(super::HHGCOJOMGBN::file_descriptor().clone());
+            deps.push(super::JHMALOGKGBL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(HeartDialScriptChangeScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetAssistAvatarScRsp {
     // message fields
+    // @@protoc_insertion_point(field:SetAssistAvatarScRsp.IBBAMPCADEC)
+    pub IBBAMPCADEC: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:SetAssistAvatarScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:SetAssistAvatarScRsp.avatar_id_list)
-    pub avatar_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:SetAssistAvatarScRsp.avatar_id)
     pub avatar_id: u32,
     // special fields
@@ -54,15 +54,15 @@ impl SetAssistAvatarScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "IBBAMPCADEC",
+            |m: &SetAssistAvatarScRsp| { &m.IBBAMPCADEC },
+            |m: &mut SetAssistAvatarScRsp| { &mut m.IBBAMPCADEC },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &SetAssistAvatarScRsp| { &m.retcode },
             |m: &mut SetAssistAvatarScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_id_list",
-            |m: &SetAssistAvatarScRsp| { &m.avatar_id_list },
-            |m: &mut SetAssistAvatarScRsp| { &mut m.avatar_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for SetAssistAvatarScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.IBBAMPCADEC)?;
+                },
+                64 => {
+                    self.IBBAMPCADEC.push(is.read_uint32()?);
+                },
+                40 => {
                     self.retcode = is.read_uint32()?;
-                },
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.avatar_id_list)?;
-                },
-                104 => {
-                    self.avatar_id_list.push(is.read_uint32()?);
                 },
                 88 => {
                     self.avatar_id = is.read_uint32()?;
@@ -111,12 +111,12 @@ impl ::protobuf::Message for SetAssistAvatarScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
-        }
-        for value in &self.avatar_id_list {
-            my_size += ::protobuf::rt::uint32_size(13, *value);
+        for value in &self.IBBAMPCADEC {
+            my_size += ::protobuf::rt::uint32_size(8, *value);
         };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+        }
         if self.avatar_id != 0 {
             my_size += ::protobuf::rt::uint32_size(11, self.avatar_id);
         }
@@ -126,12 +126,12 @@ impl ::protobuf::Message for SetAssistAvatarScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
-        }
-        for v in &self.avatar_id_list {
-            os.write_uint32(13, *v)?;
+        for v in &self.IBBAMPCADEC {
+            os.write_uint32(8, *v)?;
         };
+        if self.retcode != 0 {
+            os.write_uint32(5, self.retcode)?;
+        }
         if self.avatar_id != 0 {
             os.write_uint32(11, self.avatar_id)?;
         }
@@ -152,16 +152,16 @@ impl ::protobuf::Message for SetAssistAvatarScRsp {
     }
 
     fn clear(&mut self) {
+        self.IBBAMPCADEC.clear();
         self.retcode = 0;
-        self.avatar_id_list.clear();
         self.avatar_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetAssistAvatarScRsp {
         static instance: SetAssistAvatarScRsp = SetAssistAvatarScRsp {
+            IBBAMPCADEC: ::std::vec::Vec::new(),
             retcode: 0,
-            avatar_id_list: ::std::vec::Vec::new(),
             avatar_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -187,10 +187,10 @@ impl ::protobuf::reflect::ProtobufValue for SetAssistAvatarScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aSetAssistAvatarScRsp.proto\"s\n\x14SetAssistAvatarScRsp\x12\x18\n\
-    \x07retcode\x18\x0f\x20\x01(\rR\x07retcode\x12$\n\x0eavatar_id_list\x18\
-    \r\x20\x03(\rR\x0cavatarIdList\x12\x1b\n\tavatar_id\x18\x0b\x20\x01(\rR\
-    \x08avatarIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x1aSetAssistAvatarScRsp.proto\"o\n\x14SetAssistAvatarScRsp\x12\x20\n\
+    \x0bIBBAMPCADEC\x18\x08\x20\x03(\rR\x0bIBBAMPCADEC\x12\x18\n\x07retcode\
+    \x18\x05\x20\x01(\rR\x07retcode\x12\x1b\n\tavatar_id\x18\x0b\x20\x01(\rR\
+    \x08avatarIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

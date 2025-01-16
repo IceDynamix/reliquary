@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightHeartBeatScRsp {
     // message fields
-    // @@protoc_insertion_point(field:FightHeartBeatScRsp.FHLFBKJHHHF)
-    pub FHLFBKJHHHF: u64,
-    // @@protoc_insertion_point(field:FightHeartBeatScRsp.AIPMMMLBOOA)
-    pub AIPMMMLBOOA: u64,
-    // @@protoc_insertion_point(field:FightHeartBeatScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:FightHeartBeatScRsp.OLHAHCPNGCE)
+    pub OLHAHCPNGCE: u64,
+    // @@protoc_insertion_point(field:FightHeartBeatScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:FightHeartBeatScRsp.OFHLAAHPJMM)
+    pub OFHLAAHPJMM: u64,
     // special fields
     // @@protoc_insertion_point(special_field:FightHeartBeatScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl FightHeartBeatScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FHLFBKJHHHF",
-            |m: &FightHeartBeatScRsp| { &m.FHLFBKJHHHF },
-            |m: &mut FightHeartBeatScRsp| { &mut m.FHLFBKJHHHF },
+            "OLHAHCPNGCE",
+            |m: &FightHeartBeatScRsp| { &m.OLHAHCPNGCE },
+            |m: &mut FightHeartBeatScRsp| { &mut m.OLHAHCPNGCE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AIPMMMLBOOA",
-            |m: &FightHeartBeatScRsp| { &m.AIPMMMLBOOA },
-            |m: &mut FightHeartBeatScRsp| { &mut m.AIPMMMLBOOA },
+            "retcode",
+            |m: &FightHeartBeatScRsp| { &m.retcode },
+            |m: &mut FightHeartBeatScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &FightHeartBeatScRsp| { &m.ADADHIHDHJC },
-            |m: &mut FightHeartBeatScRsp| { &mut m.ADADHIHDHJC },
+            "OFHLAAHPJMM",
+            |m: &FightHeartBeatScRsp| { &m.OFHLAAHPJMM },
+            |m: &mut FightHeartBeatScRsp| { &mut m.OFHLAAHPJMM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightHeartBeatScRsp>(
             "FightHeartBeatScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for FightHeartBeatScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.FHLFBKJHHHF = is.read_uint64()?;
+                104 => {
+                    self.OLHAHCPNGCE = is.read_uint64()?;
                 },
                 48 => {
-                    self.AIPMMMLBOOA = is.read_uint64()?;
+                    self.retcode = is.read_uint32()?;
                 },
-                56 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                112 => {
+                    self.OFHLAAHPJMM = is.read_uint64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for FightHeartBeatScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FHLFBKJHHHF != 0 {
-            my_size += ::protobuf::rt::uint64_size(1, self.FHLFBKJHHHF);
+        if self.OLHAHCPNGCE != 0 {
+            my_size += ::protobuf::rt::uint64_size(13, self.OLHAHCPNGCE);
         }
-        if self.AIPMMMLBOOA != 0 {
-            my_size += ::protobuf::rt::uint64_size(6, self.AIPMMMLBOOA);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.ADADHIHDHJC);
+        if self.OFHLAAHPJMM != 0 {
+            my_size += ::protobuf::rt::uint64_size(14, self.OFHLAAHPJMM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for FightHeartBeatScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FHLFBKJHHHF != 0 {
-            os.write_uint64(1, self.FHLFBKJHHHF)?;
+        if self.OLHAHCPNGCE != 0 {
+            os.write_uint64(13, self.OLHAHCPNGCE)?;
         }
-        if self.AIPMMMLBOOA != 0 {
-            os.write_uint64(6, self.AIPMMMLBOOA)?;
+        if self.retcode != 0 {
+            os.write_uint32(6, self.retcode)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(7, self.ADADHIHDHJC)?;
+        if self.OFHLAAHPJMM != 0 {
+            os.write_uint64(14, self.OFHLAAHPJMM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for FightHeartBeatScRsp {
     }
 
     fn clear(&mut self) {
-        self.FHLFBKJHHHF = 0;
-        self.AIPMMMLBOOA = 0;
-        self.ADADHIHDHJC = 0;
+        self.OLHAHCPNGCE = 0;
+        self.retcode = 0;
+        self.OFHLAAHPJMM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightHeartBeatScRsp {
         static instance: FightHeartBeatScRsp = FightHeartBeatScRsp {
-            FHLFBKJHHHF: 0,
-            AIPMMMLBOOA: 0,
-            ADADHIHDHJC: 0,
+            OLHAHCPNGCE: 0,
+            retcode: 0,
+            OFHLAAHPJMM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for FightHeartBeatScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19FightHeartBeatScRsp.proto\"{\n\x13FightHeartBeatScRsp\x12\x20\n\
-    \x0bFHLFBKJHHHF\x18\x01\x20\x01(\x04R\x0bFHLFBKJHHHF\x12\x20\n\x0bAIPMMM\
-    LBOOA\x18\x06\x20\x01(\x04R\x0bAIPMMMLBOOA\x12\x20\n\x0bADADHIHDHJC\x18\
-    \x07\x20\x01(\rR\x0bADADHIHDHJCb\x06proto3\
+    \n\x19FightHeartBeatScRsp.proto\"s\n\x13FightHeartBeatScRsp\x12\x20\n\
+    \x0bOLHAHCPNGCE\x18\r\x20\x01(\x04R\x0bOLHAHCPNGCE\x12\x18\n\x07retcode\
+    \x18\x06\x20\x01(\rR\x07retcode\x12\x20\n\x0bOFHLAAHPJMM\x18\x0e\x20\x01\
+    (\x04R\x0bOFHLAAHPJMMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

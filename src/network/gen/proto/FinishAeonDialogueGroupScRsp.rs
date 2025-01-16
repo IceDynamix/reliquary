@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishAeonDialogueGroupScRsp {
     // message fields
-    // @@protoc_insertion_point(field:FinishAeonDialogueGroupScRsp.KACLLKAKKKO)
-    pub KACLLKAKKKO: ::protobuf::MessageField<super::EKLDBJMNOHO::EKLDBJMNOHO>,
-    // @@protoc_insertion_point(field:FinishAeonDialogueGroupScRsp.ELPMNKHEPKJ)
-    pub ELPMNKHEPKJ: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:FinishAeonDialogueGroupScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:FinishAeonDialogueGroupScRsp.AECJKNIGHJK)
+    pub AECJKNIGHJK: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:FinishAeonDialogueGroupScRsp.IJOPANKCEKJ)
+    pub IJOPANKCEKJ: ::protobuf::MessageField<super::INIBDHGOMEP::INIBDHGOMEP>,
+    // @@protoc_insertion_point(field:FinishAeonDialogueGroupScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FinishAeonDialogueGroupScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl FinishAeonDialogueGroupScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EKLDBJMNOHO::EKLDBJMNOHO>(
-            "KACLLKAKKKO",
-            |m: &FinishAeonDialogueGroupScRsp| { &m.KACLLKAKKKO },
-            |m: &mut FinishAeonDialogueGroupScRsp| { &mut m.KACLLKAKKKO },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "ELPMNKHEPKJ",
-            |m: &FinishAeonDialogueGroupScRsp| { &m.ELPMNKHEPKJ },
-            |m: &mut FinishAeonDialogueGroupScRsp| { &mut m.ELPMNKHEPKJ },
+            "AECJKNIGHJK",
+            |m: &FinishAeonDialogueGroupScRsp| { &m.AECJKNIGHJK },
+            |m: &mut FinishAeonDialogueGroupScRsp| { &mut m.AECJKNIGHJK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::INIBDHGOMEP::INIBDHGOMEP>(
+            "IJOPANKCEKJ",
+            |m: &FinishAeonDialogueGroupScRsp| { &m.IJOPANKCEKJ },
+            |m: &mut FinishAeonDialogueGroupScRsp| { &mut m.IJOPANKCEKJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &FinishAeonDialogueGroupScRsp| { &m.ADADHIHDHJC },
-            |m: &mut FinishAeonDialogueGroupScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &FinishAeonDialogueGroupScRsp| { &m.retcode },
+            |m: &mut FinishAeonDialogueGroupScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishAeonDialogueGroupScRsp>(
             "FinishAeonDialogueGroupScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for FinishAeonDialogueGroupScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KACLLKAKKKO)?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AECJKNIGHJK)?;
                 },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ELPMNKHEPKJ)?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IJOPANKCEKJ)?;
                 },
-                40 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                104 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,16 +108,16 @@ impl ::protobuf::Message for FinishAeonDialogueGroupScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.KACLLKAKKKO.as_ref() {
+        if let Some(v) = self.AECJKNIGHJK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
+        if let Some(v) = self.IJOPANKCEKJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,14 +125,14 @@ impl ::protobuf::Message for FinishAeonDialogueGroupScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.KACLLKAKKKO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if let Some(v) = self.AECJKNIGHJK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
-        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if let Some(v) = self.IJOPANKCEKJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(5, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(13, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,17 +151,17 @@ impl ::protobuf::Message for FinishAeonDialogueGroupScRsp {
     }
 
     fn clear(&mut self) {
-        self.KACLLKAKKKO.clear();
-        self.ELPMNKHEPKJ.clear();
-        self.ADADHIHDHJC = 0;
+        self.AECJKNIGHJK.clear();
+        self.IJOPANKCEKJ.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishAeonDialogueGroupScRsp {
         static instance: FinishAeonDialogueGroupScRsp = FinishAeonDialogueGroupScRsp {
-            KACLLKAKKKO: ::protobuf::MessageField::none(),
-            ELPMNKHEPKJ: ::protobuf::MessageField::none(),
-            ADADHIHDHJC: 0,
+            AECJKNIGHJK: ::protobuf::MessageField::none(),
+            IJOPANKCEKJ: ::protobuf::MessageField::none(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,11 +186,11 @@ impl ::protobuf::reflect::ProtobufValue for FinishAeonDialogueGroupScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"FinishAeonDialogueGroupScRsp.proto\x1a\x11EKLDBJMNOHO.proto\x1a\x0eI\
-    temList.proto\"\x9d\x01\n\x1cFinishAeonDialogueGroupScRsp\x12.\n\x0bKACL\
-    LKAKKKO\x18\r\x20\x01(\x0b2\x0c.EKLDBJMNOHOR\x0bKACLLKAKKKO\x12+\n\x0bEL\
-    PMNKHEPKJ\x18\x0e\x20\x01(\x0b2\t.ItemListR\x0bELPMNKHEPKJ\x12\x20\n\x0b\
-    ADADHIHDHJC\x18\x05\x20\x01(\rR\x0bADADHIHDHJCb\x06proto3\
+    \n\"FinishAeonDialogueGroupScRsp.proto\x1a\x11INIBDHGOMEP.proto\x1a\x0eI\
+    temList.proto\"\x95\x01\n\x1cFinishAeonDialogueGroupScRsp\x12+\n\x0bAECJ\
+    KNIGHJK\x18\x04\x20\x01(\x0b2\t.ItemListR\x0bAECJKNIGHJK\x12.\n\x0bIJOPA\
+    NKCEKJ\x18\x02\x20\x01(\x0b2\x0c.INIBDHGOMEPR\x0bIJOPANKCEKJ\x12\x18\n\
+    \x07retcode\x18\r\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -208,7 +208,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::EKLDBJMNOHO::file_descriptor().clone());
+            deps.push(super::INIBDHGOMEP::file_descriptor().clone());
             deps.push(super::ItemList::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FinishAeonDialogueGroupScRsp::generated_message_descriptor_data());

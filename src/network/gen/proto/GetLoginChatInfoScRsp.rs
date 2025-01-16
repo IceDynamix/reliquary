@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetLoginChatInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetLoginChatInfoScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:GetLoginChatInfoScRsp.EHIBBCNKEIK)
-    pub EHIBBCNKEIK: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetLoginChatInfoScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetLoginChatInfoScRsp.IIBLPCAMKOG)
+    pub IIBLPCAMKOG: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GetLoginChatInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl GetLoginChatInfoScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &GetLoginChatInfoScRsp| { &m.ADADHIHDHJC },
-            |m: &mut GetLoginChatInfoScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &GetLoginChatInfoScRsp| { &m.retcode },
+            |m: &mut GetLoginChatInfoScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EHIBBCNKEIK",
-            |m: &GetLoginChatInfoScRsp| { &m.EHIBBCNKEIK },
-            |m: &mut GetLoginChatInfoScRsp| { &mut m.EHIBBCNKEIK },
+            "IIBLPCAMKOG",
+            |m: &GetLoginChatInfoScRsp| { &m.IIBLPCAMKOG },
+            |m: &mut GetLoginChatInfoScRsp| { &mut m.IIBLPCAMKOG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetLoginChatInfoScRsp>(
             "GetLoginChatInfoScRsp",
@@ -80,14 +80,14 @@ impl ::protobuf::Message for GetLoginChatInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                8 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.EHIBBCNKEIK)?;
+                    is.read_repeated_packed_uint32_into(&mut self.IIBLPCAMKOG)?;
                 },
                 96 => {
-                    self.EHIBBCNKEIK.push(is.read_uint32()?);
+                    self.IIBLPCAMKOG.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,10 +101,10 @@ impl ::protobuf::Message for GetLoginChatInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
-        for value in &self.EHIBBCNKEIK {
+        for value in &self.IIBLPCAMKOG {
             my_size += ::protobuf::rt::uint32_size(12, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -113,10 +113,10 @@ impl ::protobuf::Message for GetLoginChatInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(3, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(1, self.retcode)?;
         }
-        for v in &self.EHIBBCNKEIK {
+        for v in &self.IIBLPCAMKOG {
             os.write_uint32(12, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -136,15 +136,15 @@ impl ::protobuf::Message for GetLoginChatInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADADHIHDHJC = 0;
-        self.EHIBBCNKEIK.clear();
+        self.retcode = 0;
+        self.IIBLPCAMKOG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetLoginChatInfoScRsp {
         static instance: GetLoginChatInfoScRsp = GetLoginChatInfoScRsp {
-            ADADHIHDHJC: 0,
-            EHIBBCNKEIK: ::std::vec::Vec::new(),
+            retcode: 0,
+            IIBLPCAMKOG: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -169,9 +169,9 @@ impl ::protobuf::reflect::ProtobufValue for GetLoginChatInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bGetLoginChatInfoScRsp.proto\"[\n\x15GetLoginChatInfoScRsp\x12\x20\
-    \n\x0bADADHIHDHJC\x18\x03\x20\x01(\rR\x0bADADHIHDHJC\x12\x20\n\x0bEHIBBC\
-    NKEIK\x18\x0c\x20\x03(\rR\x0bEHIBBCNKEIKb\x06proto3\
+    \n\x1bGetLoginChatInfoScRsp.proto\"S\n\x15GetLoginChatInfoScRsp\x12\x18\
+    \n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12\x20\n\x0bIIBLPCAMKOG\
+    \x18\x0c\x20\x03(\rR\x0bIIBLPCAMKOGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

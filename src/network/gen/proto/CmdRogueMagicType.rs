@@ -30,86 +30,86 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdRogueMagicType {
     // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicNone)
     CmdRogueMagicNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicUnitComposeCsReq)
-    CmdRogueMagicUnitComposeCsReq = 7764,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicEnterRoomScRsp)
-    CmdRogueMagicEnterRoomScRsp = 7716,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicGetTalentInfoScRsp)
-    CmdRogueMagicGetTalentInfoScRsp = 7765,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicGetMiscRealTimeDataCsReq)
-    CmdRogueMagicGetMiscRealTimeDataCsReq = 7704,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicEnterLayerCsReq)
-    CmdRogueMagicEnterLayerCsReq = 7747,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicAutoDressInUnitCsReq)
-    CmdRogueMagicAutoDressInUnitCsReq = 7743,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicEnableTalentScRsp)
-    CmdRogueMagicEnableTalentScRsp = 7713,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicEnterLayerScRsp)
-    CmdRogueMagicEnterLayerScRsp = 7774,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicSettleScRsp)
-    CmdRogueMagicSettleScRsp = 7737,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicLeaveScRsp)
-    CmdRogueMagicLeaveScRsp = 7753,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicSettleCsReq)
-    CmdRogueMagicSettleCsReq = 7734,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicEnableTalentCsReq)
-    CmdRogueMagicEnableTalentCsReq = 7726,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicReviveAvatarCsReq)
-    CmdRogueMagicReviveAvatarCsReq = 7725,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicAreaUpdateScNotify)
-    CmdRogueMagicAreaUpdateScNotify = 7775,
     // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicUnitReforgeCsReq)
     CmdRogueMagicUnitReforgeCsReq = 7710,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicLeaveCsReq)
+    CmdRogueMagicLeaveCsReq = 7767,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicSetAutoDressInMagicUnitScRsp)
+    CmdRogueMagicSetAutoDressInMagicUnitScRsp = 7765,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicUnitReforgeScRsp)
+    CmdRogueMagicUnitReforgeScRsp = 7776,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicEnterRoomScRsp)
+    CmdRogueMagicEnterRoomScRsp = 7793,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicLevelInfoUpdateScNotify)
+    CmdRogueMagicLevelInfoUpdateScNotify = 7746,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicUnitComposeCsReq)
+    CmdRogueMagicUnitComposeCsReq = 7788,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicReviveAvatarCsReq)
+    CmdRogueMagicReviveAvatarCsReq = 7707,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicSetAutoDressInMagicUnitCsReq)
+    CmdRogueMagicSetAutoDressInMagicUnitCsReq = 7721,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicQueryScRsp)
+    CmdRogueMagicQueryScRsp = 7759,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicEnableTalentCsReq)
+    CmdRogueMagicEnableTalentCsReq = 7717,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicEnterCsReq)
+    CmdRogueMagicEnterCsReq = 7784,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicGetTalentInfoCsReq)
+    CmdRogueMagicGetTalentInfoCsReq = 7735,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicStartScRsp)
+    CmdRogueMagicStartScRsp = 7795,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicGetTalentInfoScRsp)
+    CmdRogueMagicGetTalentInfoScRsp = 7773,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicScepterTakeOffUnitCsReq)
+    CmdRogueMagicScepterTakeOffUnitCsReq = 7750,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicScepterDressInUnitCsReq)
+    CmdRogueMagicScepterDressInUnitCsReq = 7778,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicScepterDressInUnitScRsp)
+    CmdRogueMagicScepterDressInUnitScRsp = 7729,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicAreaUpdateScNotify)
+    CmdRogueMagicAreaUpdateScNotify = 7725,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicAutoDressInMagicUnitChangeScNotify)
+    CmdRogueMagicAutoDressInMagicUnitChangeScNotify = 7781,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicSettleCsReq)
+    CmdRogueMagicSettleCsReq = 7752,
     // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicScepterTakeOffUnitScRsp)
-    CmdRogueMagicScepterTakeOffUnitScRsp = 7793,
+    CmdRogueMagicScepterTakeOffUnitScRsp = 7748,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicQueryCsReq)
+    CmdRogueMagicQueryCsReq = 7790,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicEnterLayerCsReq)
+    CmdRogueMagicEnterLayerCsReq = 7734,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicEnterLayerScRsp)
+    CmdRogueMagicEnterLayerScRsp = 7743,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicEnterRoomCsReq)
+    CmdRogueMagicEnterRoomCsReq = 7724,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicAutoDressInUnitCsReq)
+    CmdRogueMagicAutoDressInUnitCsReq = 7737,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicEnterScRsp)
+    CmdRogueMagicEnterScRsp = 7727,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicUnitComposeScRsp)
+    CmdRogueMagicUnitComposeScRsp = 7758,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicEnableTalentScRsp)
+    CmdRogueMagicEnableTalentScRsp = 7713,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicStartCsReq)
+    CmdRogueMagicStartCsReq = 7736,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicGetMiscRealTimeDataCsReq)
+    CmdRogueMagicGetMiscRealTimeDataCsReq = 7708,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicReviveCostUpdateScNotify)
+    CmdRogueMagicReviveCostUpdateScNotify = 7726,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicStoryInfoUpdateScNotify)
+    CmdRogueMagicStoryInfoUpdateScNotify = 7779,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicLeaveScRsp)
+    CmdRogueMagicLeaveScRsp = 7728,
     // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicBattleFailSettleInfoScNotify)
     CmdRogueMagicBattleFailSettleInfoScNotify = 7719,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicLevelInfoUpdateScNotify)
-    CmdRogueMagicLevelInfoUpdateScNotify = 7730,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicSetAutoDressInMagicUnitScRsp)
-    CmdRogueMagicSetAutoDressInMagicUnitScRsp = 7791,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicAutoDressInUnitScRsp)
-    CmdRogueMagicAutoDressInUnitScRsp = 7763,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicQueryCsReq)
-    CmdRogueMagicQueryCsReq = 7733,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicUnitReforgeScRsp)
-    CmdRogueMagicUnitReforgeScRsp = 7770,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicStoryInfoUpdateScNotify)
-    CmdRogueMagicStoryInfoUpdateScNotify = 7714,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicScepterDressInUnitScRsp)
-    CmdRogueMagicScepterDressInUnitScRsp = 7799,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicUnitComposeScRsp)
-    CmdRogueMagicUnitComposeScRsp = 7794,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicReviveAvatarScRsp)
-    CmdRogueMagicReviveAvatarScRsp = 7729,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicEnterRoomCsReq)
-    CmdRogueMagicEnterRoomCsReq = 7780,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicGetTalentInfoCsReq)
-    CmdRogueMagicGetTalentInfoCsReq = 7736,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicStartScRsp)
-    CmdRogueMagicStartScRsp = 7720,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicScepterDressInUnitCsReq)
-    CmdRogueMagicScepterDressInUnitCsReq = 7783,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicQueryScRsp)
-    CmdRogueMagicQueryScRsp = 7751,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicSetAutoDressInMagicUnitCsReq)
-    CmdRogueMagicSetAutoDressInMagicUnitCsReq = 7777,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicLeaveCsReq)
-    CmdRogueMagicLeaveCsReq = 7739,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicStartCsReq)
-    CmdRogueMagicStartCsReq = 7759,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicReviveCostUpdateScNotify)
-    CmdRogueMagicReviveCostUpdateScNotify = 7761,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicSettleScRsp)
+    CmdRogueMagicSettleScRsp = 7774,
     // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicGetMiscRealTimeDataScRsp)
-    CmdRogueMagicGetMiscRealTimeDataScRsp = 7788,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicScepterTakeOffUnitCsReq)
-    CmdRogueMagicScepterTakeOffUnitCsReq = 7709,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicEnterScRsp)
-    CmdRogueMagicEnterScRsp = 7746,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicAutoDressInMagicUnitChangeScNotify)
-    CmdRogueMagicAutoDressInMagicUnitChangeScNotify = 7723,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicEnterCsReq)
-    CmdRogueMagicEnterCsReq = 7703,
+    CmdRogueMagicGetMiscRealTimeDataScRsp = 7718,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicAutoDressInUnitScRsp)
+    CmdRogueMagicAutoDressInUnitScRsp = 7711,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicReviveAvatarScRsp)
+    CmdRogueMagicReviveAvatarScRsp = 7753,
 }
 
 impl ::protobuf::Enum for CmdRogueMagicType {
@@ -122,46 +122,46 @@ impl ::protobuf::Enum for CmdRogueMagicType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdRogueMagicType> {
         match value {
             0 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicNone),
-            7764 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicUnitComposeCsReq),
-            7716 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterRoomScRsp),
-            7765 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicGetTalentInfoScRsp),
-            7704 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicGetMiscRealTimeDataCsReq),
-            7747 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterLayerCsReq),
-            7743 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicAutoDressInUnitCsReq),
-            7713 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnableTalentScRsp),
-            7774 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterLayerScRsp),
-            7737 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicSettleScRsp),
-            7753 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicLeaveScRsp),
-            7734 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicSettleCsReq),
-            7726 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnableTalentCsReq),
-            7725 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicReviveAvatarCsReq),
-            7775 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicAreaUpdateScNotify),
             7710 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicUnitReforgeCsReq),
-            7793 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicScepterTakeOffUnitScRsp),
+            7767 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicLeaveCsReq),
+            7765 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicSetAutoDressInMagicUnitScRsp),
+            7776 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicUnitReforgeScRsp),
+            7793 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterRoomScRsp),
+            7746 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicLevelInfoUpdateScNotify),
+            7788 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicUnitComposeCsReq),
+            7707 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicReviveAvatarCsReq),
+            7721 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicSetAutoDressInMagicUnitCsReq),
+            7759 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicQueryScRsp),
+            7717 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnableTalentCsReq),
+            7784 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterCsReq),
+            7735 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicGetTalentInfoCsReq),
+            7795 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicStartScRsp),
+            7773 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicGetTalentInfoScRsp),
+            7750 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicScepterTakeOffUnitCsReq),
+            7778 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicScepterDressInUnitCsReq),
+            7729 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicScepterDressInUnitScRsp),
+            7725 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicAreaUpdateScNotify),
+            7781 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicAutoDressInMagicUnitChangeScNotify),
+            7752 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicSettleCsReq),
+            7748 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicScepterTakeOffUnitScRsp),
+            7790 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicQueryCsReq),
+            7734 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterLayerCsReq),
+            7743 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterLayerScRsp),
+            7724 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterRoomCsReq),
+            7737 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicAutoDressInUnitCsReq),
+            7727 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterScRsp),
+            7758 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicUnitComposeScRsp),
+            7713 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnableTalentScRsp),
+            7736 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicStartCsReq),
+            7708 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicGetMiscRealTimeDataCsReq),
+            7726 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicReviveCostUpdateScNotify),
+            7779 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicStoryInfoUpdateScNotify),
+            7728 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicLeaveScRsp),
             7719 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicBattleFailSettleInfoScNotify),
-            7730 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicLevelInfoUpdateScNotify),
-            7791 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicSetAutoDressInMagicUnitScRsp),
-            7763 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicAutoDressInUnitScRsp),
-            7733 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicQueryCsReq),
-            7770 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicUnitReforgeScRsp),
-            7714 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicStoryInfoUpdateScNotify),
-            7799 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicScepterDressInUnitScRsp),
-            7794 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicUnitComposeScRsp),
-            7729 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicReviveAvatarScRsp),
-            7780 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterRoomCsReq),
-            7736 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicGetTalentInfoCsReq),
-            7720 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicStartScRsp),
-            7783 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicScepterDressInUnitCsReq),
-            7751 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicQueryScRsp),
-            7777 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicSetAutoDressInMagicUnitCsReq),
-            7739 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicLeaveCsReq),
-            7759 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicStartCsReq),
-            7761 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicReviveCostUpdateScNotify),
-            7788 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicGetMiscRealTimeDataScRsp),
-            7709 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicScepterTakeOffUnitCsReq),
-            7746 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterScRsp),
-            7723 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicAutoDressInMagicUnitChangeScNotify),
-            7703 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterCsReq),
+            7774 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicSettleScRsp),
+            7718 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicGetMiscRealTimeDataScRsp),
+            7711 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicAutoDressInUnitScRsp),
+            7753 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicReviveAvatarScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -169,92 +169,92 @@ impl ::protobuf::Enum for CmdRogueMagicType {
     fn from_str(str: &str) -> ::std::option::Option<CmdRogueMagicType> {
         match str {
             "CmdRogueMagicNone" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicNone),
-            "CmdRogueMagicUnitComposeCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicUnitComposeCsReq),
-            "CmdRogueMagicEnterRoomScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterRoomScRsp),
-            "CmdRogueMagicGetTalentInfoScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicGetTalentInfoScRsp),
-            "CmdRogueMagicGetMiscRealTimeDataCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicGetMiscRealTimeDataCsReq),
-            "CmdRogueMagicEnterLayerCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterLayerCsReq),
-            "CmdRogueMagicAutoDressInUnitCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicAutoDressInUnitCsReq),
-            "CmdRogueMagicEnableTalentScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnableTalentScRsp),
-            "CmdRogueMagicEnterLayerScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterLayerScRsp),
-            "CmdRogueMagicSettleScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicSettleScRsp),
-            "CmdRogueMagicLeaveScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicLeaveScRsp),
-            "CmdRogueMagicSettleCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicSettleCsReq),
-            "CmdRogueMagicEnableTalentCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnableTalentCsReq),
-            "CmdRogueMagicReviveAvatarCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicReviveAvatarCsReq),
-            "CmdRogueMagicAreaUpdateScNotify" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicAreaUpdateScNotify),
             "CmdRogueMagicUnitReforgeCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicUnitReforgeCsReq),
-            "CmdRogueMagicScepterTakeOffUnitScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicScepterTakeOffUnitScRsp),
-            "CmdRogueMagicBattleFailSettleInfoScNotify" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicBattleFailSettleInfoScNotify),
-            "CmdRogueMagicLevelInfoUpdateScNotify" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicLevelInfoUpdateScNotify),
+            "CmdRogueMagicLeaveCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicLeaveCsReq),
             "CmdRogueMagicSetAutoDressInMagicUnitScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicSetAutoDressInMagicUnitScRsp),
-            "CmdRogueMagicAutoDressInUnitScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicAutoDressInUnitScRsp),
-            "CmdRogueMagicQueryCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicQueryCsReq),
             "CmdRogueMagicUnitReforgeScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicUnitReforgeScRsp),
-            "CmdRogueMagicStoryInfoUpdateScNotify" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicStoryInfoUpdateScNotify),
-            "CmdRogueMagicScepterDressInUnitScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicScepterDressInUnitScRsp),
-            "CmdRogueMagicUnitComposeScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicUnitComposeScRsp),
-            "CmdRogueMagicReviveAvatarScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicReviveAvatarScRsp),
-            "CmdRogueMagicEnterRoomCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterRoomCsReq),
+            "CmdRogueMagicEnterRoomScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterRoomScRsp),
+            "CmdRogueMagicLevelInfoUpdateScNotify" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicLevelInfoUpdateScNotify),
+            "CmdRogueMagicUnitComposeCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicUnitComposeCsReq),
+            "CmdRogueMagicReviveAvatarCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicReviveAvatarCsReq),
+            "CmdRogueMagicSetAutoDressInMagicUnitCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicSetAutoDressInMagicUnitCsReq),
+            "CmdRogueMagicQueryScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicQueryScRsp),
+            "CmdRogueMagicEnableTalentCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnableTalentCsReq),
+            "CmdRogueMagicEnterCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterCsReq),
             "CmdRogueMagicGetTalentInfoCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicGetTalentInfoCsReq),
             "CmdRogueMagicStartScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicStartScRsp),
-            "CmdRogueMagicScepterDressInUnitCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicScepterDressInUnitCsReq),
-            "CmdRogueMagicQueryScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicQueryScRsp),
-            "CmdRogueMagicSetAutoDressInMagicUnitCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicSetAutoDressInMagicUnitCsReq),
-            "CmdRogueMagicLeaveCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicLeaveCsReq),
-            "CmdRogueMagicStartCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicStartCsReq),
-            "CmdRogueMagicReviveCostUpdateScNotify" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicReviveCostUpdateScNotify),
-            "CmdRogueMagicGetMiscRealTimeDataScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicGetMiscRealTimeDataScRsp),
+            "CmdRogueMagicGetTalentInfoScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicGetTalentInfoScRsp),
             "CmdRogueMagicScepterTakeOffUnitCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicScepterTakeOffUnitCsReq),
-            "CmdRogueMagicEnterScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterScRsp),
+            "CmdRogueMagicScepterDressInUnitCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicScepterDressInUnitCsReq),
+            "CmdRogueMagicScepterDressInUnitScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicScepterDressInUnitScRsp),
+            "CmdRogueMagicAreaUpdateScNotify" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicAreaUpdateScNotify),
             "CmdRogueMagicAutoDressInMagicUnitChangeScNotify" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicAutoDressInMagicUnitChangeScNotify),
-            "CmdRogueMagicEnterCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterCsReq),
+            "CmdRogueMagicSettleCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicSettleCsReq),
+            "CmdRogueMagicScepterTakeOffUnitScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicScepterTakeOffUnitScRsp),
+            "CmdRogueMagicQueryCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicQueryCsReq),
+            "CmdRogueMagicEnterLayerCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterLayerCsReq),
+            "CmdRogueMagicEnterLayerScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterLayerScRsp),
+            "CmdRogueMagicEnterRoomCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterRoomCsReq),
+            "CmdRogueMagicAutoDressInUnitCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicAutoDressInUnitCsReq),
+            "CmdRogueMagicEnterScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterScRsp),
+            "CmdRogueMagicUnitComposeScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicUnitComposeScRsp),
+            "CmdRogueMagicEnableTalentScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnableTalentScRsp),
+            "CmdRogueMagicStartCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicStartCsReq),
+            "CmdRogueMagicGetMiscRealTimeDataCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicGetMiscRealTimeDataCsReq),
+            "CmdRogueMagicReviveCostUpdateScNotify" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicReviveCostUpdateScNotify),
+            "CmdRogueMagicStoryInfoUpdateScNotify" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicStoryInfoUpdateScNotify),
+            "CmdRogueMagicLeaveScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicLeaveScRsp),
+            "CmdRogueMagicBattleFailSettleInfoScNotify" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicBattleFailSettleInfoScNotify),
+            "CmdRogueMagicSettleScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicSettleScRsp),
+            "CmdRogueMagicGetMiscRealTimeDataScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicGetMiscRealTimeDataScRsp),
+            "CmdRogueMagicAutoDressInUnitScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicAutoDressInUnitScRsp),
+            "CmdRogueMagicReviveAvatarScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicReviveAvatarScRsp),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRogueMagicType] = &[
         CmdRogueMagicType::CmdRogueMagicNone,
-        CmdRogueMagicType::CmdRogueMagicUnitComposeCsReq,
-        CmdRogueMagicType::CmdRogueMagicEnterRoomScRsp,
-        CmdRogueMagicType::CmdRogueMagicGetTalentInfoScRsp,
-        CmdRogueMagicType::CmdRogueMagicGetMiscRealTimeDataCsReq,
-        CmdRogueMagicType::CmdRogueMagicEnterLayerCsReq,
-        CmdRogueMagicType::CmdRogueMagicAutoDressInUnitCsReq,
-        CmdRogueMagicType::CmdRogueMagicEnableTalentScRsp,
-        CmdRogueMagicType::CmdRogueMagicEnterLayerScRsp,
-        CmdRogueMagicType::CmdRogueMagicSettleScRsp,
-        CmdRogueMagicType::CmdRogueMagicLeaveScRsp,
-        CmdRogueMagicType::CmdRogueMagicSettleCsReq,
-        CmdRogueMagicType::CmdRogueMagicEnableTalentCsReq,
-        CmdRogueMagicType::CmdRogueMagicReviveAvatarCsReq,
-        CmdRogueMagicType::CmdRogueMagicAreaUpdateScNotify,
         CmdRogueMagicType::CmdRogueMagicUnitReforgeCsReq,
-        CmdRogueMagicType::CmdRogueMagicScepterTakeOffUnitScRsp,
-        CmdRogueMagicType::CmdRogueMagicBattleFailSettleInfoScNotify,
-        CmdRogueMagicType::CmdRogueMagicLevelInfoUpdateScNotify,
+        CmdRogueMagicType::CmdRogueMagicLeaveCsReq,
         CmdRogueMagicType::CmdRogueMagicSetAutoDressInMagicUnitScRsp,
-        CmdRogueMagicType::CmdRogueMagicAutoDressInUnitScRsp,
-        CmdRogueMagicType::CmdRogueMagicQueryCsReq,
         CmdRogueMagicType::CmdRogueMagicUnitReforgeScRsp,
-        CmdRogueMagicType::CmdRogueMagicStoryInfoUpdateScNotify,
-        CmdRogueMagicType::CmdRogueMagicScepterDressInUnitScRsp,
-        CmdRogueMagicType::CmdRogueMagicUnitComposeScRsp,
-        CmdRogueMagicType::CmdRogueMagicReviveAvatarScRsp,
-        CmdRogueMagicType::CmdRogueMagicEnterRoomCsReq,
+        CmdRogueMagicType::CmdRogueMagicEnterRoomScRsp,
+        CmdRogueMagicType::CmdRogueMagicLevelInfoUpdateScNotify,
+        CmdRogueMagicType::CmdRogueMagicUnitComposeCsReq,
+        CmdRogueMagicType::CmdRogueMagicReviveAvatarCsReq,
+        CmdRogueMagicType::CmdRogueMagicSetAutoDressInMagicUnitCsReq,
+        CmdRogueMagicType::CmdRogueMagicQueryScRsp,
+        CmdRogueMagicType::CmdRogueMagicEnableTalentCsReq,
+        CmdRogueMagicType::CmdRogueMagicEnterCsReq,
         CmdRogueMagicType::CmdRogueMagicGetTalentInfoCsReq,
         CmdRogueMagicType::CmdRogueMagicStartScRsp,
-        CmdRogueMagicType::CmdRogueMagicScepterDressInUnitCsReq,
-        CmdRogueMagicType::CmdRogueMagicQueryScRsp,
-        CmdRogueMagicType::CmdRogueMagicSetAutoDressInMagicUnitCsReq,
-        CmdRogueMagicType::CmdRogueMagicLeaveCsReq,
-        CmdRogueMagicType::CmdRogueMagicStartCsReq,
-        CmdRogueMagicType::CmdRogueMagicReviveCostUpdateScNotify,
-        CmdRogueMagicType::CmdRogueMagicGetMiscRealTimeDataScRsp,
+        CmdRogueMagicType::CmdRogueMagicGetTalentInfoScRsp,
         CmdRogueMagicType::CmdRogueMagicScepterTakeOffUnitCsReq,
-        CmdRogueMagicType::CmdRogueMagicEnterScRsp,
+        CmdRogueMagicType::CmdRogueMagicScepterDressInUnitCsReq,
+        CmdRogueMagicType::CmdRogueMagicScepterDressInUnitScRsp,
+        CmdRogueMagicType::CmdRogueMagicAreaUpdateScNotify,
         CmdRogueMagicType::CmdRogueMagicAutoDressInMagicUnitChangeScNotify,
-        CmdRogueMagicType::CmdRogueMagicEnterCsReq,
+        CmdRogueMagicType::CmdRogueMagicSettleCsReq,
+        CmdRogueMagicType::CmdRogueMagicScepterTakeOffUnitScRsp,
+        CmdRogueMagicType::CmdRogueMagicQueryCsReq,
+        CmdRogueMagicType::CmdRogueMagicEnterLayerCsReq,
+        CmdRogueMagicType::CmdRogueMagicEnterLayerScRsp,
+        CmdRogueMagicType::CmdRogueMagicEnterRoomCsReq,
+        CmdRogueMagicType::CmdRogueMagicAutoDressInUnitCsReq,
+        CmdRogueMagicType::CmdRogueMagicEnterScRsp,
+        CmdRogueMagicType::CmdRogueMagicUnitComposeScRsp,
+        CmdRogueMagicType::CmdRogueMagicEnableTalentScRsp,
+        CmdRogueMagicType::CmdRogueMagicStartCsReq,
+        CmdRogueMagicType::CmdRogueMagicGetMiscRealTimeDataCsReq,
+        CmdRogueMagicType::CmdRogueMagicReviveCostUpdateScNotify,
+        CmdRogueMagicType::CmdRogueMagicStoryInfoUpdateScNotify,
+        CmdRogueMagicType::CmdRogueMagicLeaveScRsp,
+        CmdRogueMagicType::CmdRogueMagicBattleFailSettleInfoScNotify,
+        CmdRogueMagicType::CmdRogueMagicSettleScRsp,
+        CmdRogueMagicType::CmdRogueMagicGetMiscRealTimeDataScRsp,
+        CmdRogueMagicType::CmdRogueMagicAutoDressInUnitScRsp,
+        CmdRogueMagicType::CmdRogueMagicReviveAvatarScRsp,
     ];
 }
 
@@ -267,46 +267,46 @@ impl ::protobuf::EnumFull for CmdRogueMagicType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdRogueMagicType::CmdRogueMagicNone => 0,
-            CmdRogueMagicType::CmdRogueMagicUnitComposeCsReq => 1,
-            CmdRogueMagicType::CmdRogueMagicEnterRoomScRsp => 2,
-            CmdRogueMagicType::CmdRogueMagicGetTalentInfoScRsp => 3,
-            CmdRogueMagicType::CmdRogueMagicGetMiscRealTimeDataCsReq => 4,
-            CmdRogueMagicType::CmdRogueMagicEnterLayerCsReq => 5,
-            CmdRogueMagicType::CmdRogueMagicAutoDressInUnitCsReq => 6,
-            CmdRogueMagicType::CmdRogueMagicEnableTalentScRsp => 7,
-            CmdRogueMagicType::CmdRogueMagicEnterLayerScRsp => 8,
-            CmdRogueMagicType::CmdRogueMagicSettleScRsp => 9,
-            CmdRogueMagicType::CmdRogueMagicLeaveScRsp => 10,
-            CmdRogueMagicType::CmdRogueMagicSettleCsReq => 11,
-            CmdRogueMagicType::CmdRogueMagicEnableTalentCsReq => 12,
-            CmdRogueMagicType::CmdRogueMagicReviveAvatarCsReq => 13,
-            CmdRogueMagicType::CmdRogueMagicAreaUpdateScNotify => 14,
-            CmdRogueMagicType::CmdRogueMagicUnitReforgeCsReq => 15,
-            CmdRogueMagicType::CmdRogueMagicScepterTakeOffUnitScRsp => 16,
-            CmdRogueMagicType::CmdRogueMagicBattleFailSettleInfoScNotify => 17,
-            CmdRogueMagicType::CmdRogueMagicLevelInfoUpdateScNotify => 18,
-            CmdRogueMagicType::CmdRogueMagicSetAutoDressInMagicUnitScRsp => 19,
-            CmdRogueMagicType::CmdRogueMagicAutoDressInUnitScRsp => 20,
-            CmdRogueMagicType::CmdRogueMagicQueryCsReq => 21,
-            CmdRogueMagicType::CmdRogueMagicUnitReforgeScRsp => 22,
-            CmdRogueMagicType::CmdRogueMagicStoryInfoUpdateScNotify => 23,
-            CmdRogueMagicType::CmdRogueMagicScepterDressInUnitScRsp => 24,
-            CmdRogueMagicType::CmdRogueMagicUnitComposeScRsp => 25,
-            CmdRogueMagicType::CmdRogueMagicReviveAvatarScRsp => 26,
-            CmdRogueMagicType::CmdRogueMagicEnterRoomCsReq => 27,
-            CmdRogueMagicType::CmdRogueMagicGetTalentInfoCsReq => 28,
-            CmdRogueMagicType::CmdRogueMagicStartScRsp => 29,
-            CmdRogueMagicType::CmdRogueMagicScepterDressInUnitCsReq => 30,
-            CmdRogueMagicType::CmdRogueMagicQueryScRsp => 31,
-            CmdRogueMagicType::CmdRogueMagicSetAutoDressInMagicUnitCsReq => 32,
-            CmdRogueMagicType::CmdRogueMagicLeaveCsReq => 33,
-            CmdRogueMagicType::CmdRogueMagicStartCsReq => 34,
-            CmdRogueMagicType::CmdRogueMagicReviveCostUpdateScNotify => 35,
-            CmdRogueMagicType::CmdRogueMagicGetMiscRealTimeDataScRsp => 36,
-            CmdRogueMagicType::CmdRogueMagicScepterTakeOffUnitCsReq => 37,
-            CmdRogueMagicType::CmdRogueMagicEnterScRsp => 38,
-            CmdRogueMagicType::CmdRogueMagicAutoDressInMagicUnitChangeScNotify => 39,
-            CmdRogueMagicType::CmdRogueMagicEnterCsReq => 40,
+            CmdRogueMagicType::CmdRogueMagicUnitReforgeCsReq => 1,
+            CmdRogueMagicType::CmdRogueMagicLeaveCsReq => 2,
+            CmdRogueMagicType::CmdRogueMagicSetAutoDressInMagicUnitScRsp => 3,
+            CmdRogueMagicType::CmdRogueMagicUnitReforgeScRsp => 4,
+            CmdRogueMagicType::CmdRogueMagicEnterRoomScRsp => 5,
+            CmdRogueMagicType::CmdRogueMagicLevelInfoUpdateScNotify => 6,
+            CmdRogueMagicType::CmdRogueMagicUnitComposeCsReq => 7,
+            CmdRogueMagicType::CmdRogueMagicReviveAvatarCsReq => 8,
+            CmdRogueMagicType::CmdRogueMagicSetAutoDressInMagicUnitCsReq => 9,
+            CmdRogueMagicType::CmdRogueMagicQueryScRsp => 10,
+            CmdRogueMagicType::CmdRogueMagicEnableTalentCsReq => 11,
+            CmdRogueMagicType::CmdRogueMagicEnterCsReq => 12,
+            CmdRogueMagicType::CmdRogueMagicGetTalentInfoCsReq => 13,
+            CmdRogueMagicType::CmdRogueMagicStartScRsp => 14,
+            CmdRogueMagicType::CmdRogueMagicGetTalentInfoScRsp => 15,
+            CmdRogueMagicType::CmdRogueMagicScepterTakeOffUnitCsReq => 16,
+            CmdRogueMagicType::CmdRogueMagicScepterDressInUnitCsReq => 17,
+            CmdRogueMagicType::CmdRogueMagicScepterDressInUnitScRsp => 18,
+            CmdRogueMagicType::CmdRogueMagicAreaUpdateScNotify => 19,
+            CmdRogueMagicType::CmdRogueMagicAutoDressInMagicUnitChangeScNotify => 20,
+            CmdRogueMagicType::CmdRogueMagicSettleCsReq => 21,
+            CmdRogueMagicType::CmdRogueMagicScepterTakeOffUnitScRsp => 22,
+            CmdRogueMagicType::CmdRogueMagicQueryCsReq => 23,
+            CmdRogueMagicType::CmdRogueMagicEnterLayerCsReq => 24,
+            CmdRogueMagicType::CmdRogueMagicEnterLayerScRsp => 25,
+            CmdRogueMagicType::CmdRogueMagicEnterRoomCsReq => 26,
+            CmdRogueMagicType::CmdRogueMagicAutoDressInUnitCsReq => 27,
+            CmdRogueMagicType::CmdRogueMagicEnterScRsp => 28,
+            CmdRogueMagicType::CmdRogueMagicUnitComposeScRsp => 29,
+            CmdRogueMagicType::CmdRogueMagicEnableTalentScRsp => 30,
+            CmdRogueMagicType::CmdRogueMagicStartCsReq => 31,
+            CmdRogueMagicType::CmdRogueMagicGetMiscRealTimeDataCsReq => 32,
+            CmdRogueMagicType::CmdRogueMagicReviveCostUpdateScNotify => 33,
+            CmdRogueMagicType::CmdRogueMagicStoryInfoUpdateScNotify => 34,
+            CmdRogueMagicType::CmdRogueMagicLeaveScRsp => 35,
+            CmdRogueMagicType::CmdRogueMagicBattleFailSettleInfoScNotify => 36,
+            CmdRogueMagicType::CmdRogueMagicSettleScRsp => 37,
+            CmdRogueMagicType::CmdRogueMagicGetMiscRealTimeDataScRsp => 38,
+            CmdRogueMagicType::CmdRogueMagicAutoDressInUnitScRsp => 39,
+            CmdRogueMagicType::CmdRogueMagicReviveAvatarScRsp => 40,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -326,35 +326,36 @@ impl CmdRogueMagicType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17CmdRogueMagicType.proto*\x94\x0c\n\x11CmdRogueMagicType\x12\x15\n\
-    \x11CmdRogueMagicNone\x10\0\x12\"\n\x1dCmdRogueMagicUnitComposeCsReq\x10\
-    \xd4<\x12\x20\n\x1bCmdRogueMagicEnterRoomScRsp\x10\xa4<\x12$\n\x1fCmdRog\
-    ueMagicGetTalentInfoScRsp\x10\xd5<\x12*\n%CmdRogueMagicGetMiscRealTimeDa\
-    taCsReq\x10\x98<\x12!\n\x1cCmdRogueMagicEnterLayerCsReq\x10\xc3<\x12&\n!\
-    CmdRogueMagicAutoDressInUnitCsReq\x10\xbf<\x12#\n\x1eCmdRogueMagicEnable\
-    TalentScRsp\x10\xa1<\x12!\n\x1cCmdRogueMagicEnterLayerScRsp\x10\xde<\x12\
-    \x1d\n\x18CmdRogueMagicSettleScRsp\x10\xb9<\x12\x1c\n\x17CmdRogueMagicLe\
-    aveScRsp\x10\xc9<\x12\x1d\n\x18CmdRogueMagicSettleCsReq\x10\xb6<\x12#\n\
-    \x1eCmdRogueMagicEnableTalentCsReq\x10\xae<\x12#\n\x1eCmdRogueMagicReviv\
-    eAvatarCsReq\x10\xad<\x12$\n\x1fCmdRogueMagicAreaUpdateScNotify\x10\xdf<\
-    \x12\"\n\x1dCmdRogueMagicUnitReforgeCsReq\x10\x9e<\x12)\n$CmdRogueMagicS\
-    cepterTakeOffUnitScRsp\x10\xf1<\x12.\n)CmdRogueMagicBattleFailSettleInfo\
-    ScNotify\x10\xa7<\x12)\n$CmdRogueMagicLevelInfoUpdateScNotify\x10\xb2<\
-    \x12.\n)CmdRogueMagicSetAutoDressInMagicUnitScRsp\x10\xef<\x12&\n!CmdRog\
-    ueMagicAutoDressInUnitScRsp\x10\xd3<\x12\x1c\n\x17CmdRogueMagicQueryCsRe\
-    q\x10\xb5<\x12\"\n\x1dCmdRogueMagicUnitReforgeScRsp\x10\xda<\x12)\n$CmdR\
-    ogueMagicStoryInfoUpdateScNotify\x10\xa2<\x12)\n$CmdRogueMagicScepterDre\
-    ssInUnitScRsp\x10\xf7<\x12\"\n\x1dCmdRogueMagicUnitComposeScRsp\x10\xf2<\
-    \x12#\n\x1eCmdRogueMagicReviveAvatarScRsp\x10\xb1<\x12\x20\n\x1bCmdRogue\
-    MagicEnterRoomCsReq\x10\xe4<\x12$\n\x1fCmdRogueMagicGetTalentInfoCsReq\
-    \x10\xb8<\x12\x1c\n\x17CmdRogueMagicStartScRsp\x10\xa8<\x12)\n$CmdRogueM\
-    agicScepterDressInUnitCsReq\x10\xe7<\x12\x1c\n\x17CmdRogueMagicQueryScRs\
-    p\x10\xc7<\x12.\n)CmdRogueMagicSetAutoDressInMagicUnitCsReq\x10\xe1<\x12\
-    \x1c\n\x17CmdRogueMagicLeaveCsReq\x10\xbb<\x12\x1c\n\x17CmdRogueMagicSta\
-    rtCsReq\x10\xcf<\x12*\n%CmdRogueMagicReviveCostUpdateScNotify\x10\xd1<\
-    \x12*\n%CmdRogueMagicGetMiscRealTimeDataScRsp\x10\xec<\x12)\n$CmdRogueMa\
-    gicScepterTakeOffUnitCsReq\x10\x9d<\x12\x1c\n\x17CmdRogueMagicEnterScRsp\
-    \x10\xc2<\x124\n/CmdRogueMagicAutoDressInMagicUnitChangeScNotify\x10\xab\
-    <\x12\x1c\n\x17CmdRogueMagicEnterCsReq\x10\x97<b\x06proto3\
+    \x11CmdRogueMagicNone\x10\0\x12\"\n\x1dCmdRogueMagicUnitReforgeCsReq\x10\
+    \x9e<\x12\x1c\n\x17CmdRogueMagicLeaveCsReq\x10\xd7<\x12.\n)CmdRogueMagic\
+    SetAutoDressInMagicUnitScRsp\x10\xd5<\x12\"\n\x1dCmdRogueMagicUnitReforg\
+    eScRsp\x10\xe0<\x12\x20\n\x1bCmdRogueMagicEnterRoomScRsp\x10\xf1<\x12)\n\
+    $CmdRogueMagicLevelInfoUpdateScNotify\x10\xc2<\x12\"\n\x1dCmdRogueMagicU\
+    nitComposeCsReq\x10\xec<\x12#\n\x1eCmdRogueMagicReviveAvatarCsReq\x10\
+    \x9b<\x12.\n)CmdRogueMagicSetAutoDressInMagicUnitCsReq\x10\xa9<\x12\x1c\
+    \n\x17CmdRogueMagicQueryScRsp\x10\xcf<\x12#\n\x1eCmdRogueMagicEnableTale\
+    ntCsReq\x10\xa5<\x12\x1c\n\x17CmdRogueMagicEnterCsReq\x10\xe8<\x12$\n\
+    \x1fCmdRogueMagicGetTalentInfoCsReq\x10\xb7<\x12\x1c\n\x17CmdRogueMagicS\
+    tartScRsp\x10\xf3<\x12$\n\x1fCmdRogueMagicGetTalentInfoScRsp\x10\xdd<\
+    \x12)\n$CmdRogueMagicScepterTakeOffUnitCsReq\x10\xc6<\x12)\n$CmdRogueMag\
+    icScepterDressInUnitCsReq\x10\xe2<\x12)\n$CmdRogueMagicScepterDressInUni\
+    tScRsp\x10\xb1<\x12$\n\x1fCmdRogueMagicAreaUpdateScNotify\x10\xad<\x124\
+    \n/CmdRogueMagicAutoDressInMagicUnitChangeScNotify\x10\xe5<\x12\x1d\n\
+    \x18CmdRogueMagicSettleCsReq\x10\xc8<\x12)\n$CmdRogueMagicScepterTakeOff\
+    UnitScRsp\x10\xc4<\x12\x1c\n\x17CmdRogueMagicQueryCsReq\x10\xee<\x12!\n\
+    \x1cCmdRogueMagicEnterLayerCsReq\x10\xb6<\x12!\n\x1cCmdRogueMagicEnterLa\
+    yerScRsp\x10\xbf<\x12\x20\n\x1bCmdRogueMagicEnterRoomCsReq\x10\xac<\x12&\
+    \n!CmdRogueMagicAutoDressInUnitCsReq\x10\xb9<\x12\x1c\n\x17CmdRogueMagic\
+    EnterScRsp\x10\xaf<\x12\"\n\x1dCmdRogueMagicUnitComposeScRsp\x10\xce<\
+    \x12#\n\x1eCmdRogueMagicEnableTalentScRsp\x10\xa1<\x12\x1c\n\x17CmdRogue\
+    MagicStartCsReq\x10\xb8<\x12*\n%CmdRogueMagicGetMiscRealTimeDataCsReq\
+    \x10\x9c<\x12*\n%CmdRogueMagicReviveCostUpdateScNotify\x10\xae<\x12)\n$C\
+    mdRogueMagicStoryInfoUpdateScNotify\x10\xe3<\x12\x1c\n\x17CmdRogueMagicL\
+    eaveScRsp\x10\xb0<\x12.\n)CmdRogueMagicBattleFailSettleInfoScNotify\x10\
+    \xa7<\x12\x1d\n\x18CmdRogueMagicSettleScRsp\x10\xde<\x12*\n%CmdRogueMagi\
+    cGetMiscRealTimeDataScRsp\x10\xa6<\x12&\n!CmdRogueMagicAutoDressInUnitSc\
+    Rsp\x10\x9f<\x12#\n\x1eCmdRogueMagicReviveAvatarScRsp\x10\xc9<b\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

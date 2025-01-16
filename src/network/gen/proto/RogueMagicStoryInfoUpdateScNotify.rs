@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicStoryInfoUpdateScNotify {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicStoryInfoUpdateScNotify.FALJIFGODLN)
-    pub FALJIFGODLN: u32,
+    // @@protoc_insertion_point(field:RogueMagicStoryInfoUpdateScNotify.FJDIONEPIPH)
+    pub FJDIONEPIPH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicStoryInfoUpdateScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl RogueMagicStoryInfoUpdateScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FALJIFGODLN",
-            |m: &RogueMagicStoryInfoUpdateScNotify| { &m.FALJIFGODLN },
-            |m: &mut RogueMagicStoryInfoUpdateScNotify| { &mut m.FALJIFGODLN },
+            "FJDIONEPIPH",
+            |m: &RogueMagicStoryInfoUpdateScNotify| { &m.FJDIONEPIPH },
+            |m: &mut RogueMagicStoryInfoUpdateScNotify| { &mut m.FJDIONEPIPH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicStoryInfoUpdateScNotify>(
             "RogueMagicStoryInfoUpdateScNotify",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for RogueMagicStoryInfoUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.FALJIFGODLN = is.read_uint32()?;
+                96 => {
+                    self.FJDIONEPIPH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for RogueMagicStoryInfoUpdateScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FALJIFGODLN != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.FALJIFGODLN);
+        if self.FJDIONEPIPH != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.FJDIONEPIPH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for RogueMagicStoryInfoUpdateScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FALJIFGODLN != 0 {
-            os.write_uint32(15, self.FALJIFGODLN)?;
+        if self.FJDIONEPIPH != 0 {
+            os.write_uint32(12, self.FJDIONEPIPH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for RogueMagicStoryInfoUpdateScNotify {
     }
 
     fn clear(&mut self) {
-        self.FALJIFGODLN = 0;
+        self.FJDIONEPIPH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicStoryInfoUpdateScNotify {
         static instance: RogueMagicStoryInfoUpdateScNotify = RogueMagicStoryInfoUpdateScNotify {
-            FALJIFGODLN: 0,
+            FJDIONEPIPH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicStoryInfoUpdateScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'RogueMagicStoryInfoUpdateScNotify.proto\"E\n!RogueMagicStoryInfoUpdat\
-    eScNotify\x12\x20\n\x0bFALJIFGODLN\x18\x0f\x20\x01(\rR\x0bFALJIFGODLNb\
+    eScNotify\x12\x20\n\x0bFJDIONEPIPH\x18\x0c\x20\x01(\rR\x0bFJDIONEPIPHb\
     \x06proto3\
 ";
 

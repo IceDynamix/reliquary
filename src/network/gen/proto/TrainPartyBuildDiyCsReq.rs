@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartyBuildDiyCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartyBuildDiyCsReq.OMBLHJDKEJA)
-    pub OMBLHJDKEJA: u32,
-    // @@protoc_insertion_point(field:TrainPartyBuildDiyCsReq.KOANOHFOMKD)
-    pub KOANOHFOMKD: u32,
-    // @@protoc_insertion_point(field:TrainPartyBuildDiyCsReq.KHOCGAGJLFD)
-    pub KHOCGAGJLFD: u32,
-    // @@protoc_insertion_point(field:TrainPartyBuildDiyCsReq.HEMODCFENHP)
-    pub HEMODCFENHP: bool,
+    // @@protoc_insertion_point(field:TrainPartyBuildDiyCsReq.KKDPMHFIBKH)
+    pub KKDPMHFIBKH: u32,
+    // @@protoc_insertion_point(field:TrainPartyBuildDiyCsReq.EPIOPBNPNOJ)
+    pub EPIOPBNPNOJ: u32,
+    // @@protoc_insertion_point(field:TrainPartyBuildDiyCsReq.PLGIBHOCDGP)
+    pub PLGIBHOCDGP: bool,
+    // @@protoc_insertion_point(field:TrainPartyBuildDiyCsReq.KJKPMFFAMFK)
+    pub KJKPMFFAMFK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyBuildDiyCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl TrainPartyBuildDiyCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OMBLHJDKEJA",
-            |m: &TrainPartyBuildDiyCsReq| { &m.OMBLHJDKEJA },
-            |m: &mut TrainPartyBuildDiyCsReq| { &mut m.OMBLHJDKEJA },
+            "KKDPMHFIBKH",
+            |m: &TrainPartyBuildDiyCsReq| { &m.KKDPMHFIBKH },
+            |m: &mut TrainPartyBuildDiyCsReq| { &mut m.KKDPMHFIBKH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KOANOHFOMKD",
-            |m: &TrainPartyBuildDiyCsReq| { &m.KOANOHFOMKD },
-            |m: &mut TrainPartyBuildDiyCsReq| { &mut m.KOANOHFOMKD },
+            "EPIOPBNPNOJ",
+            |m: &TrainPartyBuildDiyCsReq| { &m.EPIOPBNPNOJ },
+            |m: &mut TrainPartyBuildDiyCsReq| { &mut m.EPIOPBNPNOJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KHOCGAGJLFD",
-            |m: &TrainPartyBuildDiyCsReq| { &m.KHOCGAGJLFD },
-            |m: &mut TrainPartyBuildDiyCsReq| { &mut m.KHOCGAGJLFD },
+            "PLGIBHOCDGP",
+            |m: &TrainPartyBuildDiyCsReq| { &m.PLGIBHOCDGP },
+            |m: &mut TrainPartyBuildDiyCsReq| { &mut m.PLGIBHOCDGP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HEMODCFENHP",
-            |m: &TrainPartyBuildDiyCsReq| { &m.HEMODCFENHP },
-            |m: &mut TrainPartyBuildDiyCsReq| { &mut m.HEMODCFENHP },
+            "KJKPMFFAMFK",
+            |m: &TrainPartyBuildDiyCsReq| { &m.KJKPMFFAMFK },
+            |m: &mut TrainPartyBuildDiyCsReq| { &mut m.KJKPMFFAMFK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyBuildDiyCsReq>(
             "TrainPartyBuildDiyCsReq",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for TrainPartyBuildDiyCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.OMBLHJDKEJA = is.read_uint32()?;
-                },
-                32 => {
-                    self.KOANOHFOMKD = is.read_uint32()?;
+                120 => {
+                    self.KKDPMHFIBKH = is.read_uint32()?;
                 },
                 112 => {
-                    self.KHOCGAGJLFD = is.read_uint32()?;
+                    self.EPIOPBNPNOJ = is.read_uint32()?;
                 },
-                64 => {
-                    self.HEMODCFENHP = is.read_bool()?;
+                56 => {
+                    self.PLGIBHOCDGP = is.read_bool()?;
+                },
+                24 => {
+                    self.KJKPMFFAMFK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,17 +118,17 @@ impl ::protobuf::Message for TrainPartyBuildDiyCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OMBLHJDKEJA != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.OMBLHJDKEJA);
+        if self.KKDPMHFIBKH != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.KKDPMHFIBKH);
         }
-        if self.KOANOHFOMKD != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.KOANOHFOMKD);
+        if self.EPIOPBNPNOJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.EPIOPBNPNOJ);
         }
-        if self.KHOCGAGJLFD != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.KHOCGAGJLFD);
-        }
-        if self.HEMODCFENHP != false {
+        if self.PLGIBHOCDGP != false {
             my_size += 1 + 1;
+        }
+        if self.KJKPMFFAMFK != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.KJKPMFFAMFK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for TrainPartyBuildDiyCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OMBLHJDKEJA != 0 {
-            os.write_uint32(10, self.OMBLHJDKEJA)?;
+        if self.KKDPMHFIBKH != 0 {
+            os.write_uint32(15, self.KKDPMHFIBKH)?;
         }
-        if self.KOANOHFOMKD != 0 {
-            os.write_uint32(4, self.KOANOHFOMKD)?;
+        if self.EPIOPBNPNOJ != 0 {
+            os.write_uint32(14, self.EPIOPBNPNOJ)?;
         }
-        if self.KHOCGAGJLFD != 0 {
-            os.write_uint32(14, self.KHOCGAGJLFD)?;
+        if self.PLGIBHOCDGP != false {
+            os.write_bool(7, self.PLGIBHOCDGP)?;
         }
-        if self.HEMODCFENHP != false {
-            os.write_bool(8, self.HEMODCFENHP)?;
+        if self.KJKPMFFAMFK != 0 {
+            os.write_uint32(3, self.KJKPMFFAMFK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for TrainPartyBuildDiyCsReq {
     }
 
     fn clear(&mut self) {
-        self.OMBLHJDKEJA = 0;
-        self.KOANOHFOMKD = 0;
-        self.KHOCGAGJLFD = 0;
-        self.HEMODCFENHP = false;
+        self.KKDPMHFIBKH = 0;
+        self.EPIOPBNPNOJ = 0;
+        self.PLGIBHOCDGP = false;
+        self.KJKPMFFAMFK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyBuildDiyCsReq {
         static instance: TrainPartyBuildDiyCsReq = TrainPartyBuildDiyCsReq {
-            OMBLHJDKEJA: 0,
-            KOANOHFOMKD: 0,
-            KHOCGAGJLFD: 0,
-            HEMODCFENHP: false,
+            KKDPMHFIBKH: 0,
+            EPIOPBNPNOJ: 0,
+            PLGIBHOCDGP: false,
+            KJKPMFFAMFK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyBuildDiyCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dTrainPartyBuildDiyCsReq.proto\"\xa1\x01\n\x17TrainPartyBuildDiyCsR\
-    eq\x12\x20\n\x0bOMBLHJDKEJA\x18\n\x20\x01(\rR\x0bOMBLHJDKEJA\x12\x20\n\
-    \x0bKOANOHFOMKD\x18\x04\x20\x01(\rR\x0bKOANOHFOMKD\x12\x20\n\x0bKHOCGAGJ\
-    LFD\x18\x0e\x20\x01(\rR\x0bKHOCGAGJLFD\x12\x20\n\x0bHEMODCFENHP\x18\x08\
-    \x20\x01(\x08R\x0bHEMODCFENHPb\x06proto3\
+    eq\x12\x20\n\x0bKKDPMHFIBKH\x18\x0f\x20\x01(\rR\x0bKKDPMHFIBKH\x12\x20\n\
+    \x0bEPIOPBNPNOJ\x18\x0e\x20\x01(\rR\x0bEPIOPBNPNOJ\x12\x20\n\x0bPLGIBHOC\
+    DGP\x18\x07\x20\x01(\x08R\x0bPLGIBHOCDGP\x12\x20\n\x0bKJKPMFFAMFK\x18\
+    \x03\x20\x01(\rR\x0bKJKPMFFAMFKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

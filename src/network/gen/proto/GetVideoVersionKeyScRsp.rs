@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetVideoVersionKeyScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetVideoVersionKeyScRsp.video_key_info_list)
-    pub video_key_info_list: ::std::vec::Vec<super::VideoKeyInfo::VideoKeyInfo>,
+    // @@protoc_insertion_point(field:GetVideoVersionKeyScRsp.OGHACDPDGGH)
+    pub OGHACDPDGGH: ::std::vec::Vec<super::IKBIFFFBBEF::IKBIFFFBBEF>,
+    // @@protoc_insertion_point(field:GetVideoVersionKeyScRsp.ALCMEJBOEPN)
+    pub ALCMEJBOEPN: ::std::vec::Vec<super::IKBIFFFBBEF::IKBIFFFBBEF>,
     // @@protoc_insertion_point(field:GetVideoVersionKeyScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetVideoVersionKeyScRsp.FNOIPKAFBLG)
-    pub FNOIPKAFBLG: ::std::vec::Vec<super::VideoKeyInfo::VideoKeyInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:GetVideoVersionKeyScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl GetVideoVersionKeyScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "video_key_info_list",
-            |m: &GetVideoVersionKeyScRsp| { &m.video_key_info_list },
-            |m: &mut GetVideoVersionKeyScRsp| { &mut m.video_key_info_list },
+            "OGHACDPDGGH",
+            |m: &GetVideoVersionKeyScRsp| { &m.OGHACDPDGGH },
+            |m: &mut GetVideoVersionKeyScRsp| { &mut m.OGHACDPDGGH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "ALCMEJBOEPN",
+            |m: &GetVideoVersionKeyScRsp| { &m.ALCMEJBOEPN },
+            |m: &mut GetVideoVersionKeyScRsp| { &mut m.ALCMEJBOEPN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetVideoVersionKeyScRsp| { &m.retcode },
             |m: &mut GetVideoVersionKeyScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FNOIPKAFBLG",
-            |m: &GetVideoVersionKeyScRsp| { &m.FNOIPKAFBLG },
-            |m: &mut GetVideoVersionKeyScRsp| { &mut m.FNOIPKAFBLG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetVideoVersionKeyScRsp>(
             "GetVideoVersionKeyScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for GetVideoVersionKeyScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    self.video_key_info_list.push(is.read_message()?);
+                82 => {
+                    self.OGHACDPDGGH.push(is.read_message()?);
                 },
-                56 => {
+                26 => {
+                    self.ALCMEJBOEPN.push(is.read_message()?);
+                },
+                48 => {
                     self.retcode = is.read_uint32()?;
-                },
-                98 => {
-                    self.FNOIPKAFBLG.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,32 +108,32 @@ impl ::protobuf::Message for GetVideoVersionKeyScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.video_key_info_list {
+        for value in &self.OGHACDPDGGH {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        for value in &self.ALCMEJBOEPN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
-        for value in &self.FNOIPKAFBLG {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.video_key_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        for v in &self.OGHACDPDGGH {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        };
+        for v in &self.ALCMEJBOEPN {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
         }
-        for v in &self.FNOIPKAFBLG {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -151,17 +151,17 @@ impl ::protobuf::Message for GetVideoVersionKeyScRsp {
     }
 
     fn clear(&mut self) {
-        self.video_key_info_list.clear();
+        self.OGHACDPDGGH.clear();
+        self.ALCMEJBOEPN.clear();
         self.retcode = 0;
-        self.FNOIPKAFBLG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetVideoVersionKeyScRsp {
         static instance: GetVideoVersionKeyScRsp = GetVideoVersionKeyScRsp {
-            video_key_info_list: ::std::vec::Vec::new(),
+            OGHACDPDGGH: ::std::vec::Vec::new(),
+            ALCMEJBOEPN: ::std::vec::Vec::new(),
             retcode: 0,
-            FNOIPKAFBLG: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,11 +186,11 @@ impl ::protobuf::reflect::ProtobufValue for GetVideoVersionKeyScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dGetVideoVersionKeyScRsp.proto\x1a\x12VideoKeyInfo.proto\"\xa2\x01\
-    \n\x17GetVideoVersionKeyScRsp\x12<\n\x13video_key_info_list\x18\x0b\x20\
-    \x03(\x0b2\r.VideoKeyInfoR\x10videoKeyInfoList\x12\x18\n\x07retcode\x18\
-    \x07\x20\x01(\rR\x07retcode\x12/\n\x0bFNOIPKAFBLG\x18\x0c\x20\x03(\x0b2\
-    \r.VideoKeyInfoR\x0bFNOIPKAFBLGB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x1dGetVideoVersionKeyScRsp.proto\x1a\x11IKBIFFFBBEF.proto\"\x93\x01\n\
+    \x17GetVideoVersionKeyScRsp\x12.\n\x0bOGHACDPDGGH\x18\n\x20\x03(\x0b2\
+    \x0c.IKBIFFFBBEFR\x0bOGHACDPDGGH\x12.\n\x0bALCMEJBOEPN\x18\x03\x20\x03(\
+    \x0b2\x0c.IKBIFFFBBEFR\x0bALCMEJBOEPN\x12\x18\n\x07retcode\x18\x06\x20\
+    \x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -208,7 +208,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::VideoKeyInfo::file_descriptor().clone());
+            deps.push(super::IKBIFFFBBEF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetVideoVersionKeyScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

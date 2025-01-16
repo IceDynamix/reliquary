@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishEmotionDialoguePerformanceScRsp {
     // message fields
-    // @@protoc_insertion_point(field:FinishEmotionDialoguePerformanceScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:FinishEmotionDialoguePerformanceScRsp.JLFLJLKDJDF)
-    pub JLFLJLKDJDF: u32,
-    // @@protoc_insertion_point(field:FinishEmotionDialoguePerformanceScRsp.LCEEDIGELGM)
-    pub LCEEDIGELGM: u32,
-    // @@protoc_insertion_point(field:FinishEmotionDialoguePerformanceScRsp.EIHNMCKNPAP)
-    pub EIHNMCKNPAP: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:FinishEmotionDialoguePerformanceScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:FinishEmotionDialoguePerformanceScRsp.KOLMAFOILEK)
+    pub KOLMAFOILEK: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:FinishEmotionDialoguePerformanceScRsp.LMJAEIPJAOM)
+    pub LMJAEIPJAOM: u32,
+    // @@protoc_insertion_point(field:FinishEmotionDialoguePerformanceScRsp.GOHGIEMLNOM)
+    pub GOHGIEMLNOM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FinishEmotionDialoguePerformanceScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl FinishEmotionDialoguePerformanceScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &FinishEmotionDialoguePerformanceScRsp| { &m.ADADHIHDHJC },
-            |m: &mut FinishEmotionDialoguePerformanceScRsp| { &mut m.ADADHIHDHJC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JLFLJLKDJDF",
-            |m: &FinishEmotionDialoguePerformanceScRsp| { &m.JLFLJLKDJDF },
-            |m: &mut FinishEmotionDialoguePerformanceScRsp| { &mut m.JLFLJLKDJDF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LCEEDIGELGM",
-            |m: &FinishEmotionDialoguePerformanceScRsp| { &m.LCEEDIGELGM },
-            |m: &mut FinishEmotionDialoguePerformanceScRsp| { &mut m.LCEEDIGELGM },
+            "retcode",
+            |m: &FinishEmotionDialoguePerformanceScRsp| { &m.retcode },
+            |m: &mut FinishEmotionDialoguePerformanceScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "EIHNMCKNPAP",
-            |m: &FinishEmotionDialoguePerformanceScRsp| { &m.EIHNMCKNPAP },
-            |m: &mut FinishEmotionDialoguePerformanceScRsp| { &mut m.EIHNMCKNPAP },
+            "KOLMAFOILEK",
+            |m: &FinishEmotionDialoguePerformanceScRsp| { &m.KOLMAFOILEK },
+            |m: &mut FinishEmotionDialoguePerformanceScRsp| { &mut m.KOLMAFOILEK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LMJAEIPJAOM",
+            |m: &FinishEmotionDialoguePerformanceScRsp| { &m.LMJAEIPJAOM },
+            |m: &mut FinishEmotionDialoguePerformanceScRsp| { &mut m.LMJAEIPJAOM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GOHGIEMLNOM",
+            |m: &FinishEmotionDialoguePerformanceScRsp| { &m.GOHGIEMLNOM },
+            |m: &mut FinishEmotionDialoguePerformanceScRsp| { &mut m.GOHGIEMLNOM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishEmotionDialoguePerformanceScRsp>(
             "FinishEmotionDialoguePerformanceScRsp",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for FinishEmotionDialoguePerformanceScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                104 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KOLMAFOILEK)?;
+                },
                 96 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                    self.LMJAEIPJAOM = is.read_uint32()?;
                 },
-                72 => {
-                    self.JLFLJLKDJDF = is.read_uint32()?;
-                },
-                48 => {
-                    self.LCEEDIGELGM = is.read_uint32()?;
-                },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EIHNMCKNPAP)?;
+                40 => {
+                    self.GOHGIEMLNOM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,18 +118,18 @@ impl ::protobuf::Message for FinishEmotionDialoguePerformanceScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
-        if self.JLFLJLKDJDF != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.JLFLJLKDJDF);
-        }
-        if self.LCEEDIGELGM != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.LCEEDIGELGM);
-        }
-        if let Some(v) = self.EIHNMCKNPAP.as_ref() {
+        if let Some(v) = self.KOLMAFOILEK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.LMJAEIPJAOM != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.LMJAEIPJAOM);
+        }
+        if self.GOHGIEMLNOM != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.GOHGIEMLNOM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for FinishEmotionDialoguePerformanceScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(12, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(13, self.retcode)?;
         }
-        if self.JLFLJLKDJDF != 0 {
-            os.write_uint32(9, self.JLFLJLKDJDF)?;
+        if let Some(v) = self.KOLMAFOILEK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
-        if self.LCEEDIGELGM != 0 {
-            os.write_uint32(6, self.LCEEDIGELGM)?;
+        if self.LMJAEIPJAOM != 0 {
+            os.write_uint32(12, self.LMJAEIPJAOM)?;
         }
-        if let Some(v) = self.EIHNMCKNPAP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if self.GOHGIEMLNOM != 0 {
+            os.write_uint32(5, self.GOHGIEMLNOM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for FinishEmotionDialoguePerformanceScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADADHIHDHJC = 0;
-        self.JLFLJLKDJDF = 0;
-        self.LCEEDIGELGM = 0;
-        self.EIHNMCKNPAP.clear();
+        self.retcode = 0;
+        self.KOLMAFOILEK.clear();
+        self.LMJAEIPJAOM = 0;
+        self.GOHGIEMLNOM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishEmotionDialoguePerformanceScRsp {
         static instance: FinishEmotionDialoguePerformanceScRsp = FinishEmotionDialoguePerformanceScRsp {
-            ADADHIHDHJC: 0,
-            JLFLJLKDJDF: 0,
-            LCEEDIGELGM: 0,
-            EIHNMCKNPAP: ::protobuf::MessageField::none(),
+            retcode: 0,
+            KOLMAFOILEK: ::protobuf::MessageField::none(),
+            LMJAEIPJAOM: 0,
+            GOHGIEMLNOM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for FinishEmotionDialoguePerformanceScRs
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+FinishEmotionDialoguePerformanceScRsp.proto\x1a\x0eItemList.proto\"\
-    \xba\x01\n%FinishEmotionDialoguePerformanceScRsp\x12\x20\n\x0bADADHIHDHJ\
-    C\x18\x0c\x20\x01(\rR\x0bADADHIHDHJC\x12\x20\n\x0bJLFLJLKDJDF\x18\t\x20\
-    \x01(\rR\x0bJLFLJLKDJDF\x12\x20\n\x0bLCEEDIGELGM\x18\x06\x20\x01(\rR\x0b\
-    LCEEDIGELGM\x12+\n\x0bEIHNMCKNPAP\x18\x0b\x20\x01(\x0b2\t.ItemListR\x0bE\
-    IHNMCKNPAPb\x06proto3\
+    \xb2\x01\n%FinishEmotionDialoguePerformanceScRsp\x12\x18\n\x07retcode\
+    \x18\r\x20\x01(\rR\x07retcode\x12+\n\x0bKOLMAFOILEK\x18\x04\x20\x01(\x0b\
+    2\t.ItemListR\x0bKOLMAFOILEK\x12\x20\n\x0bLMJAEIPJAOM\x18\x0c\x20\x01(\r\
+    R\x0bLMJAEIPJAOM\x12\x20\n\x0bGOHGIEMLNOM\x18\x05\x20\x01(\rR\x0bGOHGIEM\
+    LNOMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

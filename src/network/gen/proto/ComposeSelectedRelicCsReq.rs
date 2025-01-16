@@ -29,16 +29,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ComposeSelectedRelicCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ComposeSelectedRelicCsReq.compose_relic_id)
-    pub compose_relic_id: u32,
-    // @@protoc_insertion_point(field:ComposeSelectedRelicCsReq.compose_item_list)
-    pub compose_item_list: ::protobuf::MessageField<super::ItemCostList::ItemCostList>,
+    // @@protoc_insertion_point(field:ComposeSelectedRelicCsReq.JHKABAMKHFJ)
+    pub JHKABAMKHFJ: u32,
+    // @@protoc_insertion_point(field:ComposeSelectedRelicCsReq.DPKDABEHBOL)
+    pub DPKDABEHBOL: u32,
+    // @@protoc_insertion_point(field:ComposeSelectedRelicCsReq.OCEFMJHEKKM)
+    pub OCEFMJHEKKM: ::protobuf::MessageField<super::LFKJBBFJDKN::LFKJBBFJDKN>,
     // @@protoc_insertion_point(field:ComposeSelectedRelicCsReq.main_affix_id)
     pub main_affix_id: u32,
-    // @@protoc_insertion_point(field:ComposeSelectedRelicCsReq.count)
-    pub count: u32,
-    // @@protoc_insertion_point(field:ComposeSelectedRelicCsReq.compose_id)
-    pub compose_id: u32,
+    // @@protoc_insertion_point(field:ComposeSelectedRelicCsReq.EJCEFPJNOPA)
+    pub EJCEFPJNOPA: ::protobuf::MessageField<super::LFKJBBFJDKN::LFKJBBFJDKN>,
+    // @@protoc_insertion_point(field:ComposeSelectedRelicCsReq.PLFGLPNFNBH)
+    pub PLFGLPNFNBH: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ComposeSelectedRelicCsReq.KGEKGBGCJNK)
+    pub KGEKGBGCJNK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ComposeSelectedRelicCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,32 +60,42 @@ impl ComposeSelectedRelicCsReq {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(5);
+        let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "compose_relic_id",
-            |m: &ComposeSelectedRelicCsReq| { &m.compose_relic_id },
-            |m: &mut ComposeSelectedRelicCsReq| { &mut m.compose_relic_id },
+            "JHKABAMKHFJ",
+            |m: &ComposeSelectedRelicCsReq| { &m.JHKABAMKHFJ },
+            |m: &mut ComposeSelectedRelicCsReq| { &mut m.JHKABAMKHFJ },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostList::ItemCostList>(
-            "compose_item_list",
-            |m: &ComposeSelectedRelicCsReq| { &m.compose_item_list },
-            |m: &mut ComposeSelectedRelicCsReq| { &mut m.compose_item_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DPKDABEHBOL",
+            |m: &ComposeSelectedRelicCsReq| { &m.DPKDABEHBOL },
+            |m: &mut ComposeSelectedRelicCsReq| { &mut m.DPKDABEHBOL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LFKJBBFJDKN::LFKJBBFJDKN>(
+            "OCEFMJHEKKM",
+            |m: &ComposeSelectedRelicCsReq| { &m.OCEFMJHEKKM },
+            |m: &mut ComposeSelectedRelicCsReq| { &mut m.OCEFMJHEKKM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "main_affix_id",
             |m: &ComposeSelectedRelicCsReq| { &m.main_affix_id },
             |m: &mut ComposeSelectedRelicCsReq| { &mut m.main_affix_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "count",
-            |m: &ComposeSelectedRelicCsReq| { &m.count },
-            |m: &mut ComposeSelectedRelicCsReq| { &mut m.count },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LFKJBBFJDKN::LFKJBBFJDKN>(
+            "EJCEFPJNOPA",
+            |m: &ComposeSelectedRelicCsReq| { &m.EJCEFPJNOPA },
+            |m: &mut ComposeSelectedRelicCsReq| { &mut m.EJCEFPJNOPA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PLFGLPNFNBH",
+            |m: &ComposeSelectedRelicCsReq| { &m.PLFGLPNFNBH },
+            |m: &mut ComposeSelectedRelicCsReq| { &mut m.PLFGLPNFNBH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "compose_id",
-            |m: &ComposeSelectedRelicCsReq| { &m.compose_id },
-            |m: &mut ComposeSelectedRelicCsReq| { &mut m.compose_id },
+            "KGEKGBGCJNK",
+            |m: &ComposeSelectedRelicCsReq| { &m.KGEKGBGCJNK },
+            |m: &mut ComposeSelectedRelicCsReq| { &mut m.KGEKGBGCJNK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ComposeSelectedRelicCsReq>(
             "ComposeSelectedRelicCsReq",
@@ -101,20 +115,29 @@ impl ::protobuf::Message for ComposeSelectedRelicCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.compose_relic_id = is.read_uint32()?;
+                80 => {
+                    self.JHKABAMKHFJ = is.read_uint32()?;
                 },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.compose_item_list)?;
+                8 => {
+                    self.DPKDABEHBOL = is.read_uint32()?;
                 },
-                16 => {
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OCEFMJHEKKM)?;
+                },
+                96 => {
                     self.main_affix_id = is.read_uint32()?;
                 },
-                48 => {
-                    self.count = is.read_uint32()?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EJCEFPJNOPA)?;
                 },
-                72 => {
-                    self.compose_id = is.read_uint32()?;
+                106 => {
+                    is.read_repeated_packed_uint32_into(&mut self.PLFGLPNFNBH)?;
+                },
+                104 => {
+                    self.PLFGLPNFNBH.push(is.read_uint32()?);
+                },
+                56 => {
+                    self.KGEKGBGCJNK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,21 +151,28 @@ impl ::protobuf::Message for ComposeSelectedRelicCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.compose_relic_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.compose_relic_id);
+        if self.JHKABAMKHFJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.JHKABAMKHFJ);
         }
-        if let Some(v) = self.compose_item_list.as_ref() {
+        if self.DPKDABEHBOL != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.DPKDABEHBOL);
+        }
+        if let Some(v) = self.OCEFMJHEKKM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.main_affix_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.main_affix_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.main_affix_id);
         }
-        if self.count != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.count);
+        if let Some(v) = self.EJCEFPJNOPA.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.compose_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.compose_id);
+        for value in &self.PLFGLPNFNBH {
+            my_size += ::protobuf::rt::uint32_size(13, *value);
+        };
+        if self.KGEKGBGCJNK != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.KGEKGBGCJNK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,20 +180,26 @@ impl ::protobuf::Message for ComposeSelectedRelicCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.compose_relic_id != 0 {
-            os.write_uint32(13, self.compose_relic_id)?;
+        if self.JHKABAMKHFJ != 0 {
+            os.write_uint32(10, self.JHKABAMKHFJ)?;
         }
-        if let Some(v) = self.compose_item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if self.DPKDABEHBOL != 0 {
+            os.write_uint32(1, self.DPKDABEHBOL)?;
+        }
+        if let Some(v) = self.OCEFMJHEKKM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if self.main_affix_id != 0 {
-            os.write_uint32(2, self.main_affix_id)?;
+            os.write_uint32(12, self.main_affix_id)?;
         }
-        if self.count != 0 {
-            os.write_uint32(6, self.count)?;
+        if let Some(v) = self.EJCEFPJNOPA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        if self.compose_id != 0 {
-            os.write_uint32(9, self.compose_id)?;
+        for v in &self.PLFGLPNFNBH {
+            os.write_uint32(13, *v)?;
+        };
+        if self.KGEKGBGCJNK != 0 {
+            os.write_uint32(7, self.KGEKGBGCJNK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,21 +218,25 @@ impl ::protobuf::Message for ComposeSelectedRelicCsReq {
     }
 
     fn clear(&mut self) {
-        self.compose_relic_id = 0;
-        self.compose_item_list.clear();
+        self.JHKABAMKHFJ = 0;
+        self.DPKDABEHBOL = 0;
+        self.OCEFMJHEKKM.clear();
         self.main_affix_id = 0;
-        self.count = 0;
-        self.compose_id = 0;
+        self.EJCEFPJNOPA.clear();
+        self.PLFGLPNFNBH.clear();
+        self.KGEKGBGCJNK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ComposeSelectedRelicCsReq {
         static instance: ComposeSelectedRelicCsReq = ComposeSelectedRelicCsReq {
-            compose_relic_id: 0,
-            compose_item_list: ::protobuf::MessageField::none(),
+            JHKABAMKHFJ: 0,
+            DPKDABEHBOL: 0,
+            OCEFMJHEKKM: ::protobuf::MessageField::none(),
             main_affix_id: 0,
-            count: 0,
-            compose_id: 0,
+            EJCEFPJNOPA: ::protobuf::MessageField::none(),
+            PLFGLPNFNBH: ::std::vec::Vec::new(),
+            KGEKGBGCJNK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,13 +261,14 @@ impl ::protobuf::reflect::ProtobufValue for ComposeSelectedRelicCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fComposeSelectedRelicCsReq.proto\x1a\x12ItemCostList.proto\"\xd9\
-    \x01\n\x19ComposeSelectedRelicCsReq\x12(\n\x10compose_relic_id\x18\r\x20\
-    \x01(\rR\x0ecomposeRelicId\x129\n\x11compose_item_list\x18\n\x20\x01(\
-    \x0b2\r.ItemCostListR\x0fcomposeItemList\x12\"\n\rmain_affix_id\x18\x02\
-    \x20\x01(\rR\x0bmainAffixId\x12\x14\n\x05count\x18\x06\x20\x01(\rR\x05co\
-    unt\x12\x1d\n\ncompose_id\x18\t\x20\x01(\rR\tcomposeIdB\x15\n\x13emu.lun\
-    arcore.protob\x06proto3\
+    \n\x1fComposeSelectedRelicCsReq.proto\x1a\x11LFKJBBFJDKN.proto\"\xa7\x02\
+    \n\x19ComposeSelectedRelicCsReq\x12\x20\n\x0bJHKABAMKHFJ\x18\n\x20\x01(\
+    \rR\x0bJHKABAMKHFJ\x12\x20\n\x0bDPKDABEHBOL\x18\x01\x20\x01(\rR\x0bDPKDA\
+    BEHBOL\x12.\n\x0bOCEFMJHEKKM\x18\x06\x20\x01(\x0b2\x0c.LFKJBBFJDKNR\x0bO\
+    CEFMJHEKKM\x12\"\n\rmain_affix_id\x18\x0c\x20\x01(\rR\x0bmainAffixId\x12\
+    .\n\x0bEJCEFPJNOPA\x18\x02\x20\x01(\x0b2\x0c.LFKJBBFJDKNR\x0bEJCEFPJNOPA\
+    \x12\x20\n\x0bPLFGLPNFNBH\x18\r\x20\x03(\rR\x0bPLFGLPNFNBH\x12\x20\n\x0b\
+    KGEKGBGCJNK\x18\x07\x20\x01(\rR\x0bKGEKGBGCJNKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -245,7 +286,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ItemCostList::file_descriptor().clone());
+            deps.push(super::LFKJBBFJDKN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ComposeSelectedRelicCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

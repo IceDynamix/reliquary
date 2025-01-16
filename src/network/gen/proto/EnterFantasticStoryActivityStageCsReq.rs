@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterFantasticStoryActivityStageCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageCsReq.MGIEBBICLCK)
-    pub MGIEBBICLCK: u32,
-    // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageCsReq.EMALNMLGANJ)
-    pub EMALNMLGANJ: ::std::vec::Vec<super::FFMHCHHHGBA::FFMHCHHHGBA>,
-    // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageCsReq.EBDDNGHLIGH)
-    pub EBDDNGHLIGH: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageCsReq.AIHBDNKBNMH)
-    pub AIHBDNKBNMH: u32,
+    // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageCsReq.LKFNJAKABLB)
+    pub LKFNJAKABLB: u32,
+    // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageCsReq.avatar_list)
+    pub avatar_list: ::std::vec::Vec<super::OLHLJPHENMO::OLHLJPHENMO>,
+    // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageCsReq.HEMOBIBINDG)
+    pub HEMOBIBINDG: u32,
+    // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageCsReq.NGDAJKNLELE)
+    pub NGDAJKNLELE: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:EnterFantasticStoryActivityStageCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl EnterFantasticStoryActivityStageCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MGIEBBICLCK",
-            |m: &EnterFantasticStoryActivityStageCsReq| { &m.MGIEBBICLCK },
-            |m: &mut EnterFantasticStoryActivityStageCsReq| { &mut m.MGIEBBICLCK },
+            "LKFNJAKABLB",
+            |m: &EnterFantasticStoryActivityStageCsReq| { &m.LKFNJAKABLB },
+            |m: &mut EnterFantasticStoryActivityStageCsReq| { &mut m.LKFNJAKABLB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EMALNMLGANJ",
-            |m: &EnterFantasticStoryActivityStageCsReq| { &m.EMALNMLGANJ },
-            |m: &mut EnterFantasticStoryActivityStageCsReq| { &mut m.EMALNMLGANJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EBDDNGHLIGH",
-            |m: &EnterFantasticStoryActivityStageCsReq| { &m.EBDDNGHLIGH },
-            |m: &mut EnterFantasticStoryActivityStageCsReq| { &mut m.EBDDNGHLIGH },
+            "avatar_list",
+            |m: &EnterFantasticStoryActivityStageCsReq| { &m.avatar_list },
+            |m: &mut EnterFantasticStoryActivityStageCsReq| { &mut m.avatar_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AIHBDNKBNMH",
-            |m: &EnterFantasticStoryActivityStageCsReq| { &m.AIHBDNKBNMH },
-            |m: &mut EnterFantasticStoryActivityStageCsReq| { &mut m.AIHBDNKBNMH },
+            "HEMOBIBINDG",
+            |m: &EnterFantasticStoryActivityStageCsReq| { &m.HEMOBIBINDG },
+            |m: &mut EnterFantasticStoryActivityStageCsReq| { &mut m.HEMOBIBINDG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NGDAJKNLELE",
+            |m: &EnterFantasticStoryActivityStageCsReq| { &m.NGDAJKNLELE },
+            |m: &mut EnterFantasticStoryActivityStageCsReq| { &mut m.NGDAJKNLELE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterFantasticStoryActivityStageCsReq>(
             "EnterFantasticStoryActivityStageCsReq",
@@ -94,20 +94,20 @@ impl ::protobuf::Message for EnterFantasticStoryActivityStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.MGIEBBICLCK = is.read_uint32()?;
+                40 => {
+                    self.LKFNJAKABLB = is.read_uint32()?;
                 },
-                10 => {
-                    self.EMALNMLGANJ.push(is.read_message()?);
-                },
-                66 => {
-                    is.read_repeated_packed_uint32_into(&mut self.EBDDNGHLIGH)?;
+                74 => {
+                    self.avatar_list.push(is.read_message()?);
                 },
                 64 => {
-                    self.EBDDNGHLIGH.push(is.read_uint32()?);
+                    self.HEMOBIBINDG = is.read_uint32()?;
                 },
-                96 => {
-                    self.AIHBDNKBNMH = is.read_uint32()?;
+                106 => {
+                    is.read_repeated_packed_uint32_into(&mut self.NGDAJKNLELE)?;
+                },
+                104 => {
+                    self.NGDAJKNLELE.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,37 +121,37 @@ impl ::protobuf::Message for EnterFantasticStoryActivityStageCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MGIEBBICLCK != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.MGIEBBICLCK);
+        if self.LKFNJAKABLB != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.LKFNJAKABLB);
         }
-        for value in &self.EMALNMLGANJ {
+        for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.EBDDNGHLIGH {
-            my_size += ::protobuf::rt::uint32_size(8, *value);
-        };
-        if self.AIHBDNKBNMH != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.AIHBDNKBNMH);
+        if self.HEMOBIBINDG != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.HEMOBIBINDG);
         }
+        for value in &self.NGDAJKNLELE {
+            my_size += ::protobuf::rt::uint32_size(13, *value);
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MGIEBBICLCK != 0 {
-            os.write_uint32(9, self.MGIEBBICLCK)?;
+        if self.LKFNJAKABLB != 0 {
+            os.write_uint32(5, self.LKFNJAKABLB)?;
         }
-        for v in &self.EMALNMLGANJ {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        for v in &self.avatar_list {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
-        for v in &self.EBDDNGHLIGH {
-            os.write_uint32(8, *v)?;
-        };
-        if self.AIHBDNKBNMH != 0 {
-            os.write_uint32(12, self.AIHBDNKBNMH)?;
+        if self.HEMOBIBINDG != 0 {
+            os.write_uint32(8, self.HEMOBIBINDG)?;
         }
+        for v in &self.NGDAJKNLELE {
+            os.write_uint32(13, *v)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -169,19 +169,19 @@ impl ::protobuf::Message for EnterFantasticStoryActivityStageCsReq {
     }
 
     fn clear(&mut self) {
-        self.MGIEBBICLCK = 0;
-        self.EMALNMLGANJ.clear();
-        self.EBDDNGHLIGH.clear();
-        self.AIHBDNKBNMH = 0;
+        self.LKFNJAKABLB = 0;
+        self.avatar_list.clear();
+        self.HEMOBIBINDG = 0;
+        self.NGDAJKNLELE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterFantasticStoryActivityStageCsReq {
         static instance: EnterFantasticStoryActivityStageCsReq = EnterFantasticStoryActivityStageCsReq {
-            MGIEBBICLCK: 0,
-            EMALNMLGANJ: ::std::vec::Vec::new(),
-            EBDDNGHLIGH: ::std::vec::Vec::new(),
-            AIHBDNKBNMH: 0,
+            LKFNJAKABLB: 0,
+            avatar_list: ::std::vec::Vec::new(),
+            HEMOBIBINDG: 0,
+            NGDAJKNLELE: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -206,12 +206,12 @@ impl ::protobuf::reflect::ProtobufValue for EnterFantasticStoryActivityStageCsRe
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n+EnterFantasticStoryActivityStageCsReq.proto\x1a\x11FFMHCHHHGBA.proto\
-    \"\xbd\x01\n%EnterFantasticStoryActivityStageCsReq\x12\x20\n\x0bMGIEBBIC\
-    LCK\x18\t\x20\x01(\rR\x0bMGIEBBICLCK\x12.\n\x0bEMALNMLGANJ\x18\x01\x20\
-    \x03(\x0b2\x0c.FFMHCHHHGBAR\x0bEMALNMLGANJ\x12\x20\n\x0bEBDDNGHLIGH\x18\
-    \x08\x20\x03(\rR\x0bEBDDNGHLIGH\x12\x20\n\x0bAIHBDNKBNMH\x18\x0c\x20\x01\
-    (\rR\x0bAIHBDNKBNMHb\x06proto3\
+    \n+EnterFantasticStoryActivityStageCsReq.proto\x1a\x11OLHLJPHENMO.proto\
+    \"\xbc\x01\n%EnterFantasticStoryActivityStageCsReq\x12\x20\n\x0bLKFNJAKA\
+    BLB\x18\x05\x20\x01(\rR\x0bLKFNJAKABLB\x12-\n\x0bavatar_list\x18\t\x20\
+    \x03(\x0b2\x0c.OLHLJPHENMOR\navatarList\x12\x20\n\x0bHEMOBIBINDG\x18\x08\
+    \x20\x01(\rR\x0bHEMOBIBINDG\x12\x20\n\x0bNGDAJKNLELE\x18\r\x20\x03(\rR\
+    \x0bNGDAJKNLELEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -229,7 +229,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::FFMHCHHHGBA::file_descriptor().clone());
+            deps.push(super::OLHLJPHENMO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EnterFantasticStoryActivityStageCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

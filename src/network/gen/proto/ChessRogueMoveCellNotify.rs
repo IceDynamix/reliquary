@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueMoveCellNotify {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueMoveCellNotify.LGMOMDHGFOB)
-    pub LGMOMDHGFOB: u32,
-    // @@protoc_insertion_point(field:ChessRogueMoveCellNotify.JDNOOCLHPLE)
-    pub JDNOOCLHPLE: ::protobuf::MessageField<super::PFGJIPKOOPJ::PFGJIPKOOPJ>,
-    // @@protoc_insertion_point(field:ChessRogueMoveCellNotify.FKABGMJJKAO)
-    pub FKABGMJJKAO: u32,
+    // @@protoc_insertion_point(field:ChessRogueMoveCellNotify.LFMNHHMDFHG)
+    pub LFMNHHMDFHG: u32,
+    // @@protoc_insertion_point(field:ChessRogueMoveCellNotify.KGLPMNHMNMM)
+    pub KGLPMNHMNMM: ::protobuf::MessageField<super::EJPLFEAMOMD::EJPLFEAMOMD>,
+    // @@protoc_insertion_point(field:ChessRogueMoveCellNotify.CKEKJPGLFEG)
+    pub CKEKJPGLFEG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueMoveCellNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl ChessRogueMoveCellNotify {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LGMOMDHGFOB",
-            |m: &ChessRogueMoveCellNotify| { &m.LGMOMDHGFOB },
-            |m: &mut ChessRogueMoveCellNotify| { &mut m.LGMOMDHGFOB },
+            "LFMNHHMDFHG",
+            |m: &ChessRogueMoveCellNotify| { &m.LFMNHHMDFHG },
+            |m: &mut ChessRogueMoveCellNotify| { &mut m.LFMNHHMDFHG },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PFGJIPKOOPJ::PFGJIPKOOPJ>(
-            "JDNOOCLHPLE",
-            |m: &ChessRogueMoveCellNotify| { &m.JDNOOCLHPLE },
-            |m: &mut ChessRogueMoveCellNotify| { &mut m.JDNOOCLHPLE },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EJPLFEAMOMD::EJPLFEAMOMD>(
+            "KGLPMNHMNMM",
+            |m: &ChessRogueMoveCellNotify| { &m.KGLPMNHMNMM },
+            |m: &mut ChessRogueMoveCellNotify| { &mut m.KGLPMNHMNMM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FKABGMJJKAO",
-            |m: &ChessRogueMoveCellNotify| { &m.FKABGMJJKAO },
-            |m: &mut ChessRogueMoveCellNotify| { &mut m.FKABGMJJKAO },
+            "CKEKJPGLFEG",
+            |m: &ChessRogueMoveCellNotify| { &m.CKEKJPGLFEG },
+            |m: &mut ChessRogueMoveCellNotify| { &mut m.CKEKJPGLFEG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueMoveCellNotify>(
             "ChessRogueMoveCellNotify",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for ChessRogueMoveCellNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.LGMOMDHGFOB = is.read_uint32()?;
+                88 => {
+                    self.LFMNHHMDFHG = is.read_uint32()?;
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JDNOOCLHPLE)?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KGLPMNHMNMM)?;
                 },
-                112 => {
-                    self.FKABGMJJKAO = is.read_uint32()?;
+                64 => {
+                    self.CKEKJPGLFEG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +108,15 @@ impl ::protobuf::Message for ChessRogueMoveCellNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LGMOMDHGFOB != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.LGMOMDHGFOB);
+        if self.LFMNHHMDFHG != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.LFMNHHMDFHG);
         }
-        if let Some(v) = self.JDNOOCLHPLE.as_ref() {
+        if let Some(v) = self.KGLPMNHMNMM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.FKABGMJJKAO != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.FKABGMJJKAO);
+        if self.CKEKJPGLFEG != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.CKEKJPGLFEG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for ChessRogueMoveCellNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LGMOMDHGFOB != 0 {
-            os.write_uint32(2, self.LGMOMDHGFOB)?;
+        if self.LFMNHHMDFHG != 0 {
+            os.write_uint32(11, self.LFMNHHMDFHG)?;
         }
-        if let Some(v) = self.JDNOOCLHPLE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if let Some(v) = self.KGLPMNHMNMM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
-        if self.FKABGMJJKAO != 0 {
-            os.write_uint32(14, self.FKABGMJJKAO)?;
+        if self.CKEKJPGLFEG != 0 {
+            os.write_uint32(8, self.CKEKJPGLFEG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for ChessRogueMoveCellNotify {
     }
 
     fn clear(&mut self) {
-        self.LGMOMDHGFOB = 0;
-        self.JDNOOCLHPLE.clear();
-        self.FKABGMJJKAO = 0;
+        self.LFMNHHMDFHG = 0;
+        self.KGLPMNHMNMM.clear();
+        self.CKEKJPGLFEG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueMoveCellNotify {
         static instance: ChessRogueMoveCellNotify = ChessRogueMoveCellNotify {
-            LGMOMDHGFOB: 0,
-            JDNOOCLHPLE: ::protobuf::MessageField::none(),
-            FKABGMJJKAO: 0,
+            LFMNHHMDFHG: 0,
+            KGLPMNHMNMM: ::protobuf::MessageField::none(),
+            CKEKJPGLFEG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueMoveCellNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eChessRogueMoveCellNotify.proto\x1a\x11PFGJIPKOOPJ.proto\"\x8e\x01\
-    \n\x18ChessRogueMoveCellNotify\x12\x20\n\x0bLGMOMDHGFOB\x18\x02\x20\x01(\
-    \rR\x0bLGMOMDHGFOB\x12.\n\x0bJDNOOCLHPLE\x18\r\x20\x01(\x0b2\x0c.PFGJIPK\
-    OOPJR\x0bJDNOOCLHPLE\x12\x20\n\x0bFKABGMJJKAO\x18\x0e\x20\x01(\rR\x0bFKA\
-    BGMJJKAOb\x06proto3\
+    \n\x1eChessRogueMoveCellNotify.proto\x1a\x11EJPLFEAMOMD.proto\"\x8e\x01\
+    \n\x18ChessRogueMoveCellNotify\x12\x20\n\x0bLFMNHHMDFHG\x18\x0b\x20\x01(\
+    \rR\x0bLFMNHHMDFHG\x12.\n\x0bKGLPMNHMNMM\x18\x04\x20\x01(\x0b2\x0c.EJPLF\
+    EAMOMDR\x0bKGLPMNHMNMM\x12\x20\n\x0bCKEKJPGLFEG\x18\x08\x20\x01(\rR\x0bC\
+    KEKJPGLFEGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::PFGJIPKOOPJ::file_descriptor().clone());
+            deps.push(super::EJPLFEAMOMD::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChessRogueMoveCellNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

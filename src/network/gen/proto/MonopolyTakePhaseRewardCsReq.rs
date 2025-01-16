@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyTakePhaseRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyTakePhaseRewardCsReq.OACGANOMFMM)
-    pub OACGANOMFMM: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MonopolyTakePhaseRewardCsReq.DBDHBCOKFMK)
+    pub DBDHBCOKFMK: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyTakePhaseRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl MonopolyTakePhaseRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OACGANOMFMM",
-            |m: &MonopolyTakePhaseRewardCsReq| { &m.OACGANOMFMM },
-            |m: &mut MonopolyTakePhaseRewardCsReq| { &mut m.OACGANOMFMM },
+            "DBDHBCOKFMK",
+            |m: &MonopolyTakePhaseRewardCsReq| { &m.DBDHBCOKFMK },
+            |m: &mut MonopolyTakePhaseRewardCsReq| { &mut m.DBDHBCOKFMK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyTakePhaseRewardCsReq>(
             "MonopolyTakePhaseRewardCsReq",
@@ -73,11 +73,11 @@ impl ::protobuf::Message for MonopolyTakePhaseRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.OACGANOMFMM)?;
+                98 => {
+                    is.read_repeated_packed_uint32_into(&mut self.DBDHBCOKFMK)?;
                 },
-                56 => {
-                    self.OACGANOMFMM.push(is.read_uint32()?);
+                96 => {
+                    self.DBDHBCOKFMK.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -91,8 +91,8 @@ impl ::protobuf::Message for MonopolyTakePhaseRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.OACGANOMFMM {
-            my_size += ::protobuf::rt::uint32_size(7, *value);
+        for value in &self.DBDHBCOKFMK {
+            my_size += ::protobuf::rt::uint32_size(12, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -100,8 +100,8 @@ impl ::protobuf::Message for MonopolyTakePhaseRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.OACGANOMFMM {
-            os.write_uint32(7, *v)?;
+        for v in &self.DBDHBCOKFMK {
+            os.write_uint32(12, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -120,13 +120,13 @@ impl ::protobuf::Message for MonopolyTakePhaseRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.OACGANOMFMM.clear();
+        self.DBDHBCOKFMK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyTakePhaseRewardCsReq {
         static instance: MonopolyTakePhaseRewardCsReq = MonopolyTakePhaseRewardCsReq {
-            OACGANOMFMM: ::std::vec::Vec::new(),
+            DBDHBCOKFMK: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -152,7 +152,7 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyTakePhaseRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"MonopolyTakePhaseRewardCsReq.proto\"@\n\x1cMonopolyTakePhaseRewardCs\
-    Req\x12\x20\n\x0bOACGANOMFMM\x18\x07\x20\x03(\rR\x0bOACGANOMFMMb\x06prot\
+    Req\x12\x20\n\x0bDBDHBCOKFMK\x18\x0c\x20\x03(\rR\x0bDBDHBCOKFMKb\x06prot\
     o3\
 ";
 

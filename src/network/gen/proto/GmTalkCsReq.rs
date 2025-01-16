@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GmTalkCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GmTalkCsReq.JNFBNHBGCOJ)
-    pub JNFBNHBGCOJ: ::std::string::String,
+    // @@protoc_insertion_point(field:GmTalkCsReq.OKLOCCDBABL)
+    pub OKLOCCDBABL: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:GmTalkCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl GmTalkCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JNFBNHBGCOJ",
-            |m: &GmTalkCsReq| { &m.JNFBNHBGCOJ },
-            |m: &mut GmTalkCsReq| { &mut m.JNFBNHBGCOJ },
+            "OKLOCCDBABL",
+            |m: &GmTalkCsReq| { &m.OKLOCCDBABL },
+            |m: &mut GmTalkCsReq| { &mut m.OKLOCCDBABL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GmTalkCsReq>(
             "GmTalkCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for GmTalkCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    self.JNFBNHBGCOJ = is.read_string()?;
+                42 => {
+                    self.OKLOCCDBABL = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for GmTalkCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.JNFBNHBGCOJ.is_empty() {
-            my_size += ::protobuf::rt::string_size(6, &self.JNFBNHBGCOJ);
+        if !self.OKLOCCDBABL.is_empty() {
+            my_size += ::protobuf::rt::string_size(5, &self.OKLOCCDBABL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for GmTalkCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.JNFBNHBGCOJ.is_empty() {
-            os.write_string(6, &self.JNFBNHBGCOJ)?;
+        if !self.OKLOCCDBABL.is_empty() {
+            os.write_string(5, &self.OKLOCCDBABL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for GmTalkCsReq {
     }
 
     fn clear(&mut self) {
-        self.JNFBNHBGCOJ.clear();
+        self.OKLOCCDBABL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GmTalkCsReq {
         static instance: GmTalkCsReq = GmTalkCsReq {
-            JNFBNHBGCOJ: ::std::string::String::new(),
+            OKLOCCDBABL: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for GmTalkCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GmTalkCsReq.proto\"/\n\x0bGmTalkCsReq\x12\x20\n\x0bJNFBNHBGCOJ\x18\
-    \x06\x20\x01(\tR\x0bJNFBNHBGCOJb\x06proto3\
+    \n\x11GmTalkCsReq.proto\"/\n\x0bGmTalkCsReq\x12\x20\n\x0bOKLOCCDBABL\x18\
+    \x05\x20\x01(\tR\x0bOKLOCCDBABLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

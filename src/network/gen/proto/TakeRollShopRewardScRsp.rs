@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeRollShopRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeRollShopRewardScRsp.group_type)
-    pub group_type: u32,
     // @@protoc_insertion_point(field:TakeRollShopRewardScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:TakeRollShopRewardScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:TakeRollShopRewardScRsp.group_type)
+    pub group_type: u32,
     // @@protoc_insertion_point(field:TakeRollShopRewardScRsp.roll_shop_id)
     pub roll_shop_id: u32,
     // special fields
@@ -57,11 +57,6 @@ impl TakeRollShopRewardScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "group_type",
-            |m: &TakeRollShopRewardScRsp| { &m.group_type },
-            |m: &mut TakeRollShopRewardScRsp| { &mut m.group_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &TakeRollShopRewardScRsp| { &m.retcode },
             |m: &mut TakeRollShopRewardScRsp| { &mut m.retcode },
@@ -70,6 +65,11 @@ impl TakeRollShopRewardScRsp {
             "reward",
             |m: &TakeRollShopRewardScRsp| { &m.reward },
             |m: &mut TakeRollShopRewardScRsp| { &mut m.reward },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "group_type",
+            |m: &TakeRollShopRewardScRsp| { &m.group_type },
+            |m: &mut TakeRollShopRewardScRsp| { &mut m.group_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "roll_shop_id",
@@ -94,16 +94,16 @@ impl ::protobuf::Message for TakeRollShopRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.group_type = is.read_uint32()?;
-                },
-                104 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                122 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                72 => {
+                32 => {
+                    self.group_type = is.read_uint32()?;
+                },
+                96 => {
                     self.roll_shop_id = is.read_uint32()?;
                 },
                 tag => {
@@ -118,18 +118,18 @@ impl ::protobuf::Message for TakeRollShopRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.group_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.group_type);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.group_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.group_type);
+        }
         if self.roll_shop_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.roll_shop_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.roll_shop_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for TakeRollShopRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.group_type != 0 {
-            os.write_uint32(6, self.group_type)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        }
+        if self.group_type != 0 {
+            os.write_uint32(4, self.group_type)?;
         }
         if self.roll_shop_id != 0 {
-            os.write_uint32(9, self.roll_shop_id)?;
+            os.write_uint32(12, self.roll_shop_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,18 +166,18 @@ impl ::protobuf::Message for TakeRollShopRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.group_type = 0;
         self.retcode = 0;
         self.reward.clear();
+        self.group_type = 0;
         self.roll_shop_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeRollShopRewardScRsp {
         static instance: TakeRollShopRewardScRsp = TakeRollShopRewardScRsp {
-            group_type: 0,
             retcode: 0,
             reward: ::protobuf::MessageField::none(),
+            group_type: 0,
             roll_shop_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -204,10 +204,10 @@ impl ::protobuf::reflect::ProtobufValue for TakeRollShopRewardScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dTakeRollShopRewardScRsp.proto\x1a\x0eItemList.proto\"\x97\x01\n\
-    \x17TakeRollShopRewardScRsp\x12\x1d\n\ngroup_type\x18\x06\x20\x01(\rR\tg\
-    roupType\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x12!\n\x06rew\
-    ard\x18\x0f\x20\x01(\x0b2\t.ItemListR\x06reward\x12\x20\n\x0croll_shop_i\
-    d\x18\t\x20\x01(\rR\nrollShopIdb\x06proto3\
+    \x17TakeRollShopRewardScRsp\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07\
+    retcode\x12!\n\x06reward\x18\x06\x20\x01(\x0b2\t.ItemListR\x06reward\x12\
+    \x1d\n\ngroup_type\x18\x04\x20\x01(\rR\tgroupType\x12\x20\n\x0croll_shop\
+    _id\x18\x0c\x20\x01(\rR\nrollShopIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

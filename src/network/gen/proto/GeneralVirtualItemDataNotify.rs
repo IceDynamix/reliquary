@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GeneralVirtualItemDataNotify {
     // message fields
-    // @@protoc_insertion_point(field:GeneralVirtualItemDataNotify.FPMOCJGIEOG)
-    pub FPMOCJGIEOG: ::std::vec::Vec<super::PileItem::PileItem>,
-    // @@protoc_insertion_point(field:GeneralVirtualItemDataNotify.PCALCOCEHLM)
-    pub PCALCOCEHLM: bool,
+    // @@protoc_insertion_point(field:GeneralVirtualItemDataNotify.PGFACHCOIEJ)
+    pub PGFACHCOIEJ: bool,
+    // @@protoc_insertion_point(field:GeneralVirtualItemDataNotify.GPBMHEBNOFH)
+    pub GPBMHEBNOFH: ::std::vec::Vec<super::PileItem::PileItem>,
     // special fields
     // @@protoc_insertion_point(special_field:GeneralVirtualItemDataNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl GeneralVirtualItemDataNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FPMOCJGIEOG",
-            |m: &GeneralVirtualItemDataNotify| { &m.FPMOCJGIEOG },
-            |m: &mut GeneralVirtualItemDataNotify| { &mut m.FPMOCJGIEOG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PCALCOCEHLM",
-            |m: &GeneralVirtualItemDataNotify| { &m.PCALCOCEHLM },
-            |m: &mut GeneralVirtualItemDataNotify| { &mut m.PCALCOCEHLM },
+            "PGFACHCOIEJ",
+            |m: &GeneralVirtualItemDataNotify| { &m.PGFACHCOIEJ },
+            |m: &mut GeneralVirtualItemDataNotify| { &mut m.PGFACHCOIEJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "GPBMHEBNOFH",
+            |m: &GeneralVirtualItemDataNotify| { &m.GPBMHEBNOFH },
+            |m: &mut GeneralVirtualItemDataNotify| { &mut m.GPBMHEBNOFH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GeneralVirtualItemDataNotify>(
             "GeneralVirtualItemDataNotify",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for GeneralVirtualItemDataNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    self.FPMOCJGIEOG.push(is.read_message()?);
+                48 => {
+                    self.PGFACHCOIEJ = is.read_bool()?;
                 },
-                8 => {
-                    self.PCALCOCEHLM = is.read_bool()?;
+                90 => {
+                    self.GPBMHEBNOFH.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,25 +98,25 @@ impl ::protobuf::Message for GeneralVirtualItemDataNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.FPMOCJGIEOG {
+        if self.PGFACHCOIEJ != false {
+            my_size += 1 + 1;
+        }
+        for value in &self.GPBMHEBNOFH {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.PCALCOCEHLM != false {
-            my_size += 1 + 1;
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.FPMOCJGIEOG {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        };
-        if self.PCALCOCEHLM != false {
-            os.write_bool(1, self.PCALCOCEHLM)?;
+        if self.PGFACHCOIEJ != false {
+            os.write_bool(6, self.PGFACHCOIEJ)?;
         }
+        for v in &self.GPBMHEBNOFH {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -134,15 +134,15 @@ impl ::protobuf::Message for GeneralVirtualItemDataNotify {
     }
 
     fn clear(&mut self) {
-        self.FPMOCJGIEOG.clear();
-        self.PCALCOCEHLM = false;
+        self.PGFACHCOIEJ = false;
+        self.GPBMHEBNOFH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GeneralVirtualItemDataNotify {
         static instance: GeneralVirtualItemDataNotify = GeneralVirtualItemDataNotify {
-            FPMOCJGIEOG: ::std::vec::Vec::new(),
-            PCALCOCEHLM: false,
+            PGFACHCOIEJ: false,
+            GPBMHEBNOFH: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for GeneralVirtualItemDataNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"GeneralVirtualItemDataNotify.proto\x1a\x0ePileItem.proto\"m\n\x1cGen\
-    eralVirtualItemDataNotify\x12+\n\x0bFPMOCJGIEOG\x18\x04\x20\x03(\x0b2\t.\
-    PileItemR\x0bFPMOCJGIEOG\x12\x20\n\x0bPCALCOCEHLM\x18\x01\x20\x01(\x08R\
-    \x0bPCALCOCEHLMb\x06proto3\
+    eralVirtualItemDataNotify\x12\x20\n\x0bPGFACHCOIEJ\x18\x06\x20\x01(\x08R\
+    \x0bPGFACHCOIEJ\x12+\n\x0bGPBMHEBNOFH\x18\x0b\x20\x03(\x0b2\t.PileItemR\
+    \x0bGPBMHEBNOFHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

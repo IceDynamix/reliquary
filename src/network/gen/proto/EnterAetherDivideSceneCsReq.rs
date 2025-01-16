@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterAetherDivideSceneCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EnterAetherDivideSceneCsReq.GKOJBDLINLP)
-    pub GKOJBDLINLP: u32,
+    // @@protoc_insertion_point(field:EnterAetherDivideSceneCsReq.IBCCPLKOGFD)
+    pub IBCCPLKOGFD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EnterAetherDivideSceneCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl EnterAetherDivideSceneCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GKOJBDLINLP",
-            |m: &EnterAetherDivideSceneCsReq| { &m.GKOJBDLINLP },
-            |m: &mut EnterAetherDivideSceneCsReq| { &mut m.GKOJBDLINLP },
+            "IBCCPLKOGFD",
+            |m: &EnterAetherDivideSceneCsReq| { &m.IBCCPLKOGFD },
+            |m: &mut EnterAetherDivideSceneCsReq| { &mut m.IBCCPLKOGFD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterAetherDivideSceneCsReq>(
             "EnterAetherDivideSceneCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for EnterAetherDivideSceneCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.GKOJBDLINLP = is.read_uint32()?;
+                72 => {
+                    self.IBCCPLKOGFD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for EnterAetherDivideSceneCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GKOJBDLINLP != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.GKOJBDLINLP);
+        if self.IBCCPLKOGFD != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.IBCCPLKOGFD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for EnterAetherDivideSceneCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GKOJBDLINLP != 0 {
-            os.write_uint32(3, self.GKOJBDLINLP)?;
+        if self.IBCCPLKOGFD != 0 {
+            os.write_uint32(9, self.IBCCPLKOGFD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for EnterAetherDivideSceneCsReq {
     }
 
     fn clear(&mut self) {
-        self.GKOJBDLINLP = 0;
+        self.IBCCPLKOGFD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterAetherDivideSceneCsReq {
         static instance: EnterAetherDivideSceneCsReq = EnterAetherDivideSceneCsReq {
-            GKOJBDLINLP: 0,
+            IBCCPLKOGFD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for EnterAetherDivideSceneCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!EnterAetherDivideSceneCsReq.proto\"?\n\x1bEnterAetherDivideSceneCsReq\
-    \x12\x20\n\x0bGKOJBDLINLP\x18\x03\x20\x01(\rR\x0bGKOJBDLINLPb\x06proto3\
+    \x12\x20\n\x0bIBCCPLKOGFD\x18\t\x20\x01(\rR\x0bIBCCPLKOGFDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

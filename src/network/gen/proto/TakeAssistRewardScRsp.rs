@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeAssistRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeAssistRewardScRsp.MJKNGJCJAIN)
-    pub MJKNGJCJAIN: ::std::vec::Vec<super::ILFBFGAEPAK::ILFBFGAEPAK>,
-    // @@protoc_insertion_point(field:TakeAssistRewardScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:TakeAssistRewardScRsp.ELPMNKHEPKJ)
-    pub ELPMNKHEPKJ: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:TakeAssistRewardScRsp.AECJKNIGHJK)
+    pub AECJKNIGHJK: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:TakeAssistRewardScRsp.OBKJPNIIGPK)
+    pub OBKJPNIIGPK: ::std::vec::Vec<super::BOKGBGGOHNM::BOKGBGGOHNM>,
+    // @@protoc_insertion_point(field:TakeAssistRewardScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeAssistRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl TakeAssistRewardScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "AECJKNIGHJK",
+            |m: &TakeAssistRewardScRsp| { &m.AECJKNIGHJK },
+            |m: &mut TakeAssistRewardScRsp| { &mut m.AECJKNIGHJK },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MJKNGJCJAIN",
-            |m: &TakeAssistRewardScRsp| { &m.MJKNGJCJAIN },
-            |m: &mut TakeAssistRewardScRsp| { &mut m.MJKNGJCJAIN },
+            "OBKJPNIIGPK",
+            |m: &TakeAssistRewardScRsp| { &m.OBKJPNIIGPK },
+            |m: &mut TakeAssistRewardScRsp| { &mut m.OBKJPNIIGPK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &TakeAssistRewardScRsp| { &m.ADADHIHDHJC },
-            |m: &mut TakeAssistRewardScRsp| { &mut m.ADADHIHDHJC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "ELPMNKHEPKJ",
-            |m: &TakeAssistRewardScRsp| { &m.ELPMNKHEPKJ },
-            |m: &mut TakeAssistRewardScRsp| { &mut m.ELPMNKHEPKJ },
+            "retcode",
+            |m: &TakeAssistRewardScRsp| { &m.retcode },
+            |m: &mut TakeAssistRewardScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeAssistRewardScRsp>(
             "TakeAssistRewardScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for TakeAssistRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.MJKNGJCJAIN.push(is.read_message()?);
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AECJKNIGHJK)?;
                 },
-                8 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                50 => {
+                    self.OBKJPNIIGPK.push(is.read_message()?);
                 },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ELPMNKHEPKJ)?;
+                88 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,16 +108,16 @@ impl ::protobuf::Message for TakeAssistRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.MJKNGJCJAIN {
+        if let Some(v) = self.AECJKNIGHJK.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        for value in &self.OBKJPNIIGPK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.ADADHIHDHJC);
-        }
-        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,14 +125,14 @@ impl ::protobuf::Message for TakeAssistRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.MJKNGJCJAIN {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(1, self.ADADHIHDHJC)?;
+        if let Some(v) = self.AECJKNIGHJK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
-        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        for v in &self.OBKJPNIIGPK {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        };
+        if self.retcode != 0 {
+            os.write_uint32(11, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,17 +151,17 @@ impl ::protobuf::Message for TakeAssistRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.MJKNGJCJAIN.clear();
-        self.ADADHIHDHJC = 0;
-        self.ELPMNKHEPKJ.clear();
+        self.AECJKNIGHJK.clear();
+        self.OBKJPNIIGPK.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeAssistRewardScRsp {
         static instance: TakeAssistRewardScRsp = TakeAssistRewardScRsp {
-            MJKNGJCJAIN: ::std::vec::Vec::new(),
-            ADADHIHDHJC: 0,
-            ELPMNKHEPKJ: ::protobuf::MessageField::none(),
+            AECJKNIGHJK: ::protobuf::MessageField::none(),
+            OBKJPNIIGPK: ::std::vec::Vec::new(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,11 +186,11 @@ impl ::protobuf::reflect::ProtobufValue for TakeAssistRewardScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bTakeAssistRewardScRsp.proto\x1a\x11ILFBFGAEPAK.proto\x1a\x0eItemLi\
-    st.proto\"\x96\x01\n\x15TakeAssistRewardScRsp\x12.\n\x0bMJKNGJCJAIN\x18\
-    \x05\x20\x03(\x0b2\x0c.ILFBFGAEPAKR\x0bMJKNGJCJAIN\x12\x20\n\x0bADADHIHD\
-    HJC\x18\x01\x20\x01(\rR\x0bADADHIHDHJC\x12+\n\x0bELPMNKHEPKJ\x18\x0f\x20\
-    \x01(\x0b2\t.ItemListR\x0bELPMNKHEPKJb\x06proto3\
+    \n\x1bTakeAssistRewardScRsp.proto\x1a\x11BOKGBGGOHNM.proto\x1a\x0eItemLi\
+    st.proto\"\x8e\x01\n\x15TakeAssistRewardScRsp\x12+\n\x0bAECJKNIGHJK\x18\
+    \t\x20\x01(\x0b2\t.ItemListR\x0bAECJKNIGHJK\x12.\n\x0bOBKJPNIIGPK\x18\
+    \x06\x20\x03(\x0b2\x0c.BOKGBGGOHNMR\x0bOBKJPNIIGPK\x12\x18\n\x07retcode\
+    \x18\x0b\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -208,7 +208,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::ILFBFGAEPAK::file_descriptor().clone());
+            deps.push(super::BOKGBGGOHNM::file_descriptor().clone());
             deps.push(super::ItemList::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(TakeAssistRewardScRsp::generated_message_descriptor_data());

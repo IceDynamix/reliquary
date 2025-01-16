@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetRecyleTimeCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetRecyleTimeCsReq.OHPEFIEGLIB)
-    pub OHPEFIEGLIB: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetRecyleTimeCsReq.LOGPFNGFILM)
+    pub LOGPFNGFILM: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GetRecyleTimeCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl GetRecyleTimeCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OHPEFIEGLIB",
-            |m: &GetRecyleTimeCsReq| { &m.OHPEFIEGLIB },
-            |m: &mut GetRecyleTimeCsReq| { &mut m.OHPEFIEGLIB },
+            "LOGPFNGFILM",
+            |m: &GetRecyleTimeCsReq| { &m.LOGPFNGFILM },
+            |m: &mut GetRecyleTimeCsReq| { &mut m.LOGPFNGFILM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetRecyleTimeCsReq>(
             "GetRecyleTimeCsReq",
@@ -73,11 +73,11 @@ impl ::protobuf::Message for GetRecyleTimeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.OHPEFIEGLIB)?;
+                106 => {
+                    is.read_repeated_packed_uint32_into(&mut self.LOGPFNGFILM)?;
                 },
-                48 => {
-                    self.OHPEFIEGLIB.push(is.read_uint32()?);
+                104 => {
+                    self.LOGPFNGFILM.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -91,8 +91,8 @@ impl ::protobuf::Message for GetRecyleTimeCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.OHPEFIEGLIB {
-            my_size += ::protobuf::rt::uint32_size(6, *value);
+        for value in &self.LOGPFNGFILM {
+            my_size += ::protobuf::rt::uint32_size(13, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -100,8 +100,8 @@ impl ::protobuf::Message for GetRecyleTimeCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.OHPEFIEGLIB {
-            os.write_uint32(6, *v)?;
+        for v in &self.LOGPFNGFILM {
+            os.write_uint32(13, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -120,13 +120,13 @@ impl ::protobuf::Message for GetRecyleTimeCsReq {
     }
 
     fn clear(&mut self) {
-        self.OHPEFIEGLIB.clear();
+        self.LOGPFNGFILM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetRecyleTimeCsReq {
         static instance: GetRecyleTimeCsReq = GetRecyleTimeCsReq {
-            OHPEFIEGLIB: ::std::vec::Vec::new(),
+            LOGPFNGFILM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -151,8 +151,8 @@ impl ::protobuf::reflect::ProtobufValue for GetRecyleTimeCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18GetRecyleTimeCsReq.proto\"6\n\x12GetRecyleTimeCsReq\x12\x20\n\x0bO\
-    HPEFIEGLIB\x18\x06\x20\x03(\rR\x0bOHPEFIEGLIBb\x06proto3\
+    \n\x18GetRecyleTimeCsReq.proto\"6\n\x12GetRecyleTimeCsReq\x12\x20\n\x0bL\
+    OGPFNGFILM\x18\r\x20\x03(\rR\x0bLOGPFNGFILMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

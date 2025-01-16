@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournEnterRogueCocoonSceneCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.GEFPDFLDLHD)
-    pub GEFPDFLDLHD: u32,
-    // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.EMALNMLGANJ)
-    pub EMALNMLGANJ: ::std::vec::Vec<super::FHBGCJDCJKP::FHBGCJDCJKP>,
-    // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.HBLIKPICEKE)
-    pub HBLIKPICEKE: bool,
-    // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.DDACBMOIGCA)
-    pub DDACBMOIGCA: u32,
-    // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.GEBLLHGAKFF)
-    pub GEBLLHGAKFF: u32,
+    // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.NOFJGLFKGFI)
+    pub NOFJGLFKGFI: u32,
+    // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.avatar_list)
+    pub avatar_list: ::std::vec::Vec<super::CKHGFCABIFI::CKHGFCABIFI>,
+    // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.LMCCPIPDHDM)
+    pub LMCCPIPDHDM: u32,
+    // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.OALOBBJOFBI)
+    pub OALOBBJOFBI: u32,
+    // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.ONHHPLEKHKI)
+    pub ONHHPLEKHKI: bool,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournEnterRogueCocoonSceneCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,29 +59,29 @@ impl RogueTournEnterRogueCocoonSceneCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GEFPDFLDLHD",
-            |m: &RogueTournEnterRogueCocoonSceneCsReq| { &m.GEFPDFLDLHD },
-            |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.GEFPDFLDLHD },
+            "NOFJGLFKGFI",
+            |m: &RogueTournEnterRogueCocoonSceneCsReq| { &m.NOFJGLFKGFI },
+            |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.NOFJGLFKGFI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EMALNMLGANJ",
-            |m: &RogueTournEnterRogueCocoonSceneCsReq| { &m.EMALNMLGANJ },
-            |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.EMALNMLGANJ },
+            "avatar_list",
+            |m: &RogueTournEnterRogueCocoonSceneCsReq| { &m.avatar_list },
+            |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.avatar_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HBLIKPICEKE",
-            |m: &RogueTournEnterRogueCocoonSceneCsReq| { &m.HBLIKPICEKE },
-            |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.HBLIKPICEKE },
+            "LMCCPIPDHDM",
+            |m: &RogueTournEnterRogueCocoonSceneCsReq| { &m.LMCCPIPDHDM },
+            |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.LMCCPIPDHDM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DDACBMOIGCA",
-            |m: &RogueTournEnterRogueCocoonSceneCsReq| { &m.DDACBMOIGCA },
-            |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.DDACBMOIGCA },
+            "OALOBBJOFBI",
+            |m: &RogueTournEnterRogueCocoonSceneCsReq| { &m.OALOBBJOFBI },
+            |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.OALOBBJOFBI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GEBLLHGAKFF",
-            |m: &RogueTournEnterRogueCocoonSceneCsReq| { &m.GEBLLHGAKFF },
-            |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.GEBLLHGAKFF },
+            "ONHHPLEKHKI",
+            |m: &RogueTournEnterRogueCocoonSceneCsReq| { &m.ONHHPLEKHKI },
+            |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.ONHHPLEKHKI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournEnterRogueCocoonSceneCsReq>(
             "RogueTournEnterRogueCocoonSceneCsReq",
@@ -101,20 +101,20 @@ impl ::protobuf::Message for RogueTournEnterRogueCocoonSceneCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.GEFPDFLDLHD = is.read_uint32()?;
-                },
-                26 => {
-                    self.EMALNMLGANJ.push(is.read_message()?);
-                },
-                8 => {
-                    self.HBLIKPICEKE = is.read_bool()?;
-                },
                 120 => {
-                    self.DDACBMOIGCA = is.read_uint32()?;
+                    self.NOFJGLFKGFI = is.read_uint32()?;
                 },
-                96 => {
-                    self.GEBLLHGAKFF = is.read_uint32()?;
+                58 => {
+                    self.avatar_list.push(is.read_message()?);
+                },
+                24 => {
+                    self.LMCCPIPDHDM = is.read_uint32()?;
+                },
+                72 => {
+                    self.OALOBBJOFBI = is.read_uint32()?;
+                },
+                32 => {
+                    self.ONHHPLEKHKI = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,21 +128,21 @@ impl ::protobuf::Message for RogueTournEnterRogueCocoonSceneCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GEFPDFLDLHD != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.GEFPDFLDLHD);
+        if self.NOFJGLFKGFI != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.NOFJGLFKGFI);
         }
-        for value in &self.EMALNMLGANJ {
+        for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.HBLIKPICEKE != false {
+        if self.LMCCPIPDHDM != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.LMCCPIPDHDM);
+        }
+        if self.OALOBBJOFBI != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.OALOBBJOFBI);
+        }
+        if self.ONHHPLEKHKI != false {
             my_size += 1 + 1;
-        }
-        if self.DDACBMOIGCA != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.DDACBMOIGCA);
-        }
-        if self.GEBLLHGAKFF != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.GEBLLHGAKFF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,20 +150,20 @@ impl ::protobuf::Message for RogueTournEnterRogueCocoonSceneCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GEFPDFLDLHD != 0 {
-            os.write_uint32(10, self.GEFPDFLDLHD)?;
+        if self.NOFJGLFKGFI != 0 {
+            os.write_uint32(15, self.NOFJGLFKGFI)?;
         }
-        for v in &self.EMALNMLGANJ {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        for v in &self.avatar_list {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
-        if self.HBLIKPICEKE != false {
-            os.write_bool(1, self.HBLIKPICEKE)?;
+        if self.LMCCPIPDHDM != 0 {
+            os.write_uint32(3, self.LMCCPIPDHDM)?;
         }
-        if self.DDACBMOIGCA != 0 {
-            os.write_uint32(15, self.DDACBMOIGCA)?;
+        if self.OALOBBJOFBI != 0 {
+            os.write_uint32(9, self.OALOBBJOFBI)?;
         }
-        if self.GEBLLHGAKFF != 0 {
-            os.write_uint32(12, self.GEBLLHGAKFF)?;
+        if self.ONHHPLEKHKI != false {
+            os.write_bool(4, self.ONHHPLEKHKI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,21 +182,21 @@ impl ::protobuf::Message for RogueTournEnterRogueCocoonSceneCsReq {
     }
 
     fn clear(&mut self) {
-        self.GEFPDFLDLHD = 0;
-        self.EMALNMLGANJ.clear();
-        self.HBLIKPICEKE = false;
-        self.DDACBMOIGCA = 0;
-        self.GEBLLHGAKFF = 0;
+        self.NOFJGLFKGFI = 0;
+        self.avatar_list.clear();
+        self.LMCCPIPDHDM = 0;
+        self.OALOBBJOFBI = 0;
+        self.ONHHPLEKHKI = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournEnterRogueCocoonSceneCsReq {
         static instance: RogueTournEnterRogueCocoonSceneCsReq = RogueTournEnterRogueCocoonSceneCsReq {
-            GEFPDFLDLHD: 0,
-            EMALNMLGANJ: ::std::vec::Vec::new(),
-            HBLIKPICEKE: false,
-            DDACBMOIGCA: 0,
-            GEBLLHGAKFF: 0,
+            NOFJGLFKGFI: 0,
+            avatar_list: ::std::vec::Vec::new(),
+            LMCCPIPDHDM: 0,
+            OALOBBJOFBI: 0,
+            ONHHPLEKHKI: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,13 +221,13 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournEnterRogueCocoonSceneCsReq
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n*RogueTournEnterRogueCocoonSceneCsReq.proto\x1a\x11FHBGCJDCJKP.proto\"\
-    \xde\x01\n$RogueTournEnterRogueCocoonSceneCsReq\x12\x20\n\x0bGEFPDFLDLHD\
-    \x18\n\x20\x01(\rR\x0bGEFPDFLDLHD\x12.\n\x0bEMALNMLGANJ\x18\x03\x20\x03(\
-    \x0b2\x0c.FHBGCJDCJKPR\x0bEMALNMLGANJ\x12\x20\n\x0bHBLIKPICEKE\x18\x01\
-    \x20\x01(\x08R\x0bHBLIKPICEKE\x12\x20\n\x0bDDACBMOIGCA\x18\x0f\x20\x01(\
-    \rR\x0bDDACBMOIGCA\x12\x20\n\x0bGEBLLHGAKFF\x18\x0c\x20\x01(\rR\x0bGEBLL\
-    HGAKFFb\x06proto3\
+    \n*RogueTournEnterRogueCocoonSceneCsReq.proto\x1a\x11CKHGFCABIFI.proto\"\
+    \xdd\x01\n$RogueTournEnterRogueCocoonSceneCsReq\x12\x20\n\x0bNOFJGLFKGFI\
+    \x18\x0f\x20\x01(\rR\x0bNOFJGLFKGFI\x12-\n\x0bavatar_list\x18\x07\x20\
+    \x03(\x0b2\x0c.CKHGFCABIFIR\navatarList\x12\x20\n\x0bLMCCPIPDHDM\x18\x03\
+    \x20\x01(\rR\x0bLMCCPIPDHDM\x12\x20\n\x0bOALOBBJOFBI\x18\t\x20\x01(\rR\
+    \x0bOALOBBJOFBI\x12\x20\n\x0bONHHPLEKHKI\x18\x04\x20\x01(\x08R\x0bONHHPL\
+    EKHKIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -245,7 +245,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::FHBGCJDCJKP::file_descriptor().clone());
+            deps.push(super::CKHGFCABIFI::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueTournEnterRogueCocoonSceneCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

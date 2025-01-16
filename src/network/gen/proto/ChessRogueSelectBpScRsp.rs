@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueSelectBpScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueSelectBpScRsp.PHHKJLLGBKK)
-    pub PHHKJLLGBKK: u32,
-    // @@protoc_insertion_point(field:ChessRogueSelectBpScRsp.PLIFGMFHFIE)
-    pub PLIFGMFHFIE: ::protobuf::MessageField<super::CKNIBADCANC::CKNIBADCANC>,
-    // @@protoc_insertion_point(field:ChessRogueSelectBpScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:ChessRogueSelectBpScRsp.BLCHBOMACIO)
+    pub BLCHBOMACIO: u32,
+    // @@protoc_insertion_point(field:ChessRogueSelectBpScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:ChessRogueSelectBpScRsp.IIMCIJEIJNF)
+    pub IIMCIJEIJNF: ::protobuf::MessageField<super::MOKCFFGFFPC::MOKCFFGFFPC>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueSelectBpScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl ChessRogueSelectBpScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PHHKJLLGBKK",
-            |m: &ChessRogueSelectBpScRsp| { &m.PHHKJLLGBKK },
-            |m: &mut ChessRogueSelectBpScRsp| { &mut m.PHHKJLLGBKK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CKNIBADCANC::CKNIBADCANC>(
-            "PLIFGMFHFIE",
-            |m: &ChessRogueSelectBpScRsp| { &m.PLIFGMFHFIE },
-            |m: &mut ChessRogueSelectBpScRsp| { &mut m.PLIFGMFHFIE },
+            "BLCHBOMACIO",
+            |m: &ChessRogueSelectBpScRsp| { &m.BLCHBOMACIO },
+            |m: &mut ChessRogueSelectBpScRsp| { &mut m.BLCHBOMACIO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &ChessRogueSelectBpScRsp| { &m.ADADHIHDHJC },
-            |m: &mut ChessRogueSelectBpScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &ChessRogueSelectBpScRsp| { &m.retcode },
+            |m: &mut ChessRogueSelectBpScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MOKCFFGFFPC::MOKCFFGFFPC>(
+            "IIMCIJEIJNF",
+            |m: &ChessRogueSelectBpScRsp| { &m.IIMCIJEIJNF },
+            |m: &mut ChessRogueSelectBpScRsp| { &mut m.IIMCIJEIJNF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueSelectBpScRsp>(
             "ChessRogueSelectBpScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for ChessRogueSelectBpScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.PHHKJLLGBKK = is.read_uint32()?;
+                80 => {
+                    self.BLCHBOMACIO = is.read_uint32()?;
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PLIFGMFHFIE)?;
+                104 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                88 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IIMCIJEIJNF)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +108,15 @@ impl ::protobuf::Message for ChessRogueSelectBpScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PHHKJLLGBKK != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.PHHKJLLGBKK);
+        if self.BLCHBOMACIO != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.BLCHBOMACIO);
         }
-        if let Some(v) = self.PLIFGMFHFIE.as_ref() {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+        }
+        if let Some(v) = self.IIMCIJEIJNF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.ADADHIHDHJC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for ChessRogueSelectBpScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PHHKJLLGBKK != 0 {
-            os.write_uint32(7, self.PHHKJLLGBKK)?;
+        if self.BLCHBOMACIO != 0 {
+            os.write_uint32(10, self.BLCHBOMACIO)?;
         }
-        if let Some(v) = self.PLIFGMFHFIE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(13, self.retcode)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(11, self.ADADHIHDHJC)?;
+        if let Some(v) = self.IIMCIJEIJNF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for ChessRogueSelectBpScRsp {
     }
 
     fn clear(&mut self) {
-        self.PHHKJLLGBKK = 0;
-        self.PLIFGMFHFIE.clear();
-        self.ADADHIHDHJC = 0;
+        self.BLCHBOMACIO = 0;
+        self.retcode = 0;
+        self.IIMCIJEIJNF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueSelectBpScRsp {
         static instance: ChessRogueSelectBpScRsp = ChessRogueSelectBpScRsp {
-            PHHKJLLGBKK: 0,
-            PLIFGMFHFIE: ::protobuf::MessageField::none(),
-            ADADHIHDHJC: 0,
+            BLCHBOMACIO: 0,
+            retcode: 0,
+            IIMCIJEIJNF: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueSelectBpScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dChessRogueSelectBpScRsp.proto\x1a\x11CKNIBADCANC.proto\"\x8d\x01\n\
-    \x17ChessRogueSelectBpScRsp\x12\x20\n\x0bPHHKJLLGBKK\x18\x07\x20\x01(\rR\
-    \x0bPHHKJLLGBKK\x12.\n\x0bPLIFGMFHFIE\x18\r\x20\x01(\x0b2\x0c.CKNIBADCAN\
-    CR\x0bPLIFGMFHFIE\x12\x20\n\x0bADADHIHDHJC\x18\x0b\x20\x01(\rR\x0bADADHI\
-    HDHJCb\x06proto3\
+    \n\x1dChessRogueSelectBpScRsp.proto\x1a\x11MOKCFFGFFPC.proto\"\x85\x01\n\
+    \x17ChessRogueSelectBpScRsp\x12\x20\n\x0bBLCHBOMACIO\x18\n\x20\x01(\rR\
+    \x0bBLCHBOMACIO\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x12.\n\
+    \x0bIIMCIJEIJNF\x18\x03\x20\x01(\x0b2\x0c.MOKCFFGFFPCR\x0bIIMCIJEIJNFb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::CKNIBADCANC::file_descriptor().clone());
+            deps.push(super::MOKCFFGFFPC::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChessRogueSelectBpScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

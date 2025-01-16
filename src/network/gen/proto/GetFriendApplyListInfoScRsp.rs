@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFriendApplyListInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetFriendApplyListInfoScRsp.friend_apply_list)
-    pub friend_apply_list: ::std::vec::Vec<super::FriendApplyInfo::FriendApplyInfo>,
+    // @@protoc_insertion_point(field:GetFriendApplyListInfoScRsp.MMGMGJLNALJ)
+    pub MMGMGJLNALJ: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetFriendApplyListInfoScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetFriendApplyListInfoScRsp.send_apply_list)
-    pub send_apply_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetFriendApplyListInfoScRsp.FPKPBEKHCEO)
+    pub FPKPBEKHCEO: ::std::vec::Vec<super::DFNGGEHLCEO::DFNGGEHLCEO>,
     // special fields
     // @@protoc_insertion_point(special_field:GetFriendApplyListInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,9 +55,9 @@ impl GetFriendApplyListInfoScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "friend_apply_list",
-            |m: &GetFriendApplyListInfoScRsp| { &m.friend_apply_list },
-            |m: &mut GetFriendApplyListInfoScRsp| { &mut m.friend_apply_list },
+            "MMGMGJLNALJ",
+            |m: &GetFriendApplyListInfoScRsp| { &m.MMGMGJLNALJ },
+            |m: &mut GetFriendApplyListInfoScRsp| { &mut m.MMGMGJLNALJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -65,9 +65,9 @@ impl GetFriendApplyListInfoScRsp {
             |m: &mut GetFriendApplyListInfoScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "send_apply_list",
-            |m: &GetFriendApplyListInfoScRsp| { &m.send_apply_list },
-            |m: &mut GetFriendApplyListInfoScRsp| { &mut m.send_apply_list },
+            "FPKPBEKHCEO",
+            |m: &GetFriendApplyListInfoScRsp| { &m.FPKPBEKHCEO },
+            |m: &mut GetFriendApplyListInfoScRsp| { &mut m.FPKPBEKHCEO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetFriendApplyListInfoScRsp>(
             "GetFriendApplyListInfoScRsp",
@@ -87,17 +87,17 @@ impl ::protobuf::Message for GetFriendApplyListInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    self.friend_apply_list.push(is.read_message()?);
+                34 => {
+                    is.read_repeated_packed_uint32_into(&mut self.MMGMGJLNALJ)?;
                 },
-                112 => {
+                32 => {
+                    self.MMGMGJLNALJ.push(is.read_uint32()?);
+                },
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
-                98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.send_apply_list)?;
-                },
-                96 => {
-                    self.send_apply_list.push(is.read_uint32()?);
+                10 => {
+                    self.FPKPBEKHCEO.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,15 +111,15 @@ impl ::protobuf::Message for GetFriendApplyListInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.friend_apply_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        for value in &self.MMGMGJLNALJ {
+            my_size += ::protobuf::rt::uint32_size(4, *value);
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
-        for value in &self.send_apply_list {
-            my_size += ::protobuf::rt::uint32_size(12, *value);
+        for value in &self.FPKPBEKHCEO {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -127,14 +127,14 @@ impl ::protobuf::Message for GetFriendApplyListInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.friend_apply_list {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        for v in &self.MMGMGJLNALJ {
+            os.write_uint32(4, *v)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
-        for v in &self.send_apply_list {
-            os.write_uint32(12, *v)?;
+        for v in &self.FPKPBEKHCEO {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -153,17 +153,17 @@ impl ::protobuf::Message for GetFriendApplyListInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.friend_apply_list.clear();
+        self.MMGMGJLNALJ.clear();
         self.retcode = 0;
-        self.send_apply_list.clear();
+        self.FPKPBEKHCEO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFriendApplyListInfoScRsp {
         static instance: GetFriendApplyListInfoScRsp = GetFriendApplyListInfoScRsp {
-            friend_apply_list: ::std::vec::Vec::new(),
+            MMGMGJLNALJ: ::std::vec::Vec::new(),
             retcode: 0,
-            send_apply_list: ::std::vec::Vec::new(),
+            FPKPBEKHCEO: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -188,11 +188,11 @@ impl ::protobuf::reflect::ProtobufValue for GetFriendApplyListInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!GetFriendApplyListInfoScRsp.proto\x1a\x15FriendApplyInfo.proto\"\x9d\
-    \x01\n\x1bGetFriendApplyListInfoScRsp\x12<\n\x11friend_apply_list\x18\n\
-    \x20\x03(\x0b2\x10.FriendApplyInfoR\x0ffriendApplyList\x12\x18\n\x07retc\
-    ode\x18\x0e\x20\x01(\rR\x07retcode\x12&\n\x0fsend_apply_list\x18\x0c\x20\
-    \x03(\rR\rsendApplyListB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n!GetFriendApplyListInfoScRsp.proto\x1a\x11DFNGGEHLCEO.proto\"\x89\x01\
+    \n\x1bGetFriendApplyListInfoScRsp\x12\x20\n\x0bMMGMGJLNALJ\x18\x04\x20\
+    \x03(\rR\x0bMMGMGJLNALJ\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retc\
+    ode\x12.\n\x0bFPKPBEKHCEO\x18\x01\x20\x03(\x0b2\x0c.DFNGGEHLCEOR\x0bFPKP\
+    BEKHCEOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -210,7 +210,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::FriendApplyInfo::file_descriptor().clone());
+            deps.push(super::DFNGGEHLCEO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetFriendApplyListInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

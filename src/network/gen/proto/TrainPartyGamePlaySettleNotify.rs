@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartyGamePlaySettleNotify {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartyGamePlaySettleNotify.MPLMHGMENFL)
-    pub MPLMHGMENFL: ::protobuf::MessageField<super::JKCHFFCLKFL::JKCHFFCLKFL>,
-    // @@protoc_insertion_point(field:TrainPartyGamePlaySettleNotify.OEKPIJPEIAN)
-    pub OEKPIJPEIAN: u32,
-    // @@protoc_insertion_point(field:TrainPartyGamePlaySettleNotify.DPOLGBKEKLD)
-    pub DPOLGBKEKLD: u32,
-    // @@protoc_insertion_point(field:TrainPartyGamePlaySettleNotify.BFBPHDKHHKO)
-    pub BFBPHDKHHKO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:TrainPartyGamePlaySettleNotify.CMGMGNOMJFN)
+    pub CMGMGNOMJFN: u32,
+    // @@protoc_insertion_point(field:TrainPartyGamePlaySettleNotify.MMABIFCHJNG)
+    pub MMABIFCHJNG: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:TrainPartyGamePlaySettleNotify.EMFIDIGHFCC)
+    pub EMFIDIGHFCC: u32,
+    // @@protoc_insertion_point(field:TrainPartyGamePlaySettleNotify.NLMMBGKBKJE)
+    pub NLMMBGKBKJE: ::protobuf::MessageField<super::KOOLHIMDCDF::KOOLHIMDCDF>,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyGamePlaySettleNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,25 +56,25 @@ impl TrainPartyGamePlaySettleNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JKCHFFCLKFL::JKCHFFCLKFL>(
-            "MPLMHGMENFL",
-            |m: &TrainPartyGamePlaySettleNotify| { &m.MPLMHGMENFL },
-            |m: &mut TrainPartyGamePlaySettleNotify| { &mut m.MPLMHGMENFL },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OEKPIJPEIAN",
-            |m: &TrainPartyGamePlaySettleNotify| { &m.OEKPIJPEIAN },
-            |m: &mut TrainPartyGamePlaySettleNotify| { &mut m.OEKPIJPEIAN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DPOLGBKEKLD",
-            |m: &TrainPartyGamePlaySettleNotify| { &m.DPOLGBKEKLD },
-            |m: &mut TrainPartyGamePlaySettleNotify| { &mut m.DPOLGBKEKLD },
+            "CMGMGNOMJFN",
+            |m: &TrainPartyGamePlaySettleNotify| { &m.CMGMGNOMJFN },
+            |m: &mut TrainPartyGamePlaySettleNotify| { &mut m.CMGMGNOMJFN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BFBPHDKHHKO",
-            |m: &TrainPartyGamePlaySettleNotify| { &m.BFBPHDKHHKO },
-            |m: &mut TrainPartyGamePlaySettleNotify| { &mut m.BFBPHDKHHKO },
+            "MMABIFCHJNG",
+            |m: &TrainPartyGamePlaySettleNotify| { &m.MMABIFCHJNG },
+            |m: &mut TrainPartyGamePlaySettleNotify| { &mut m.MMABIFCHJNG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EMFIDIGHFCC",
+            |m: &TrainPartyGamePlaySettleNotify| { &m.EMFIDIGHFCC },
+            |m: &mut TrainPartyGamePlaySettleNotify| { &mut m.EMFIDIGHFCC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KOOLHIMDCDF::KOOLHIMDCDF>(
+            "NLMMBGKBKJE",
+            |m: &TrainPartyGamePlaySettleNotify| { &m.NLMMBGKBKJE },
+            |m: &mut TrainPartyGamePlaySettleNotify| { &mut m.NLMMBGKBKJE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyGamePlaySettleNotify>(
             "TrainPartyGamePlaySettleNotify",
@@ -94,20 +94,20 @@ impl ::protobuf::Message for TrainPartyGamePlaySettleNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MPLMHGMENFL)?;
-                },
-                72 => {
-                    self.OEKPIJPEIAN = is.read_uint32()?;
-                },
-                112 => {
-                    self.DPOLGBKEKLD = is.read_uint32()?;
+                40 => {
+                    self.CMGMGNOMJFN = is.read_uint32()?;
                 },
                 10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.BFBPHDKHHKO)?;
+                    is.read_repeated_packed_uint32_into(&mut self.MMABIFCHJNG)?;
                 },
                 8 => {
-                    self.BFBPHDKHHKO.push(is.read_uint32()?);
+                    self.MMABIFCHJNG.push(is.read_uint32()?);
+                },
+                72 => {
+                    self.EMFIDIGHFCC = is.read_uint32()?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NLMMBGKBKJE)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,37 +121,37 @@ impl ::protobuf::Message for TrainPartyGamePlaySettleNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.MPLMHGMENFL.as_ref() {
+        if self.CMGMGNOMJFN != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.CMGMGNOMJFN);
+        }
+        for value in &self.MMABIFCHJNG {
+            my_size += ::protobuf::rt::uint32_size(1, *value);
+        };
+        if self.EMFIDIGHFCC != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.EMFIDIGHFCC);
+        }
+        if let Some(v) = self.NLMMBGKBKJE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.OEKPIJPEIAN != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.OEKPIJPEIAN);
-        }
-        if self.DPOLGBKEKLD != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.DPOLGBKEKLD);
-        }
-        for value in &self.BFBPHDKHHKO {
-            my_size += ::protobuf::rt::uint32_size(1, *value);
-        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.MPLMHGMENFL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if self.CMGMGNOMJFN != 0 {
+            os.write_uint32(5, self.CMGMGNOMJFN)?;
         }
-        if self.OEKPIJPEIAN != 0 {
-            os.write_uint32(9, self.OEKPIJPEIAN)?;
-        }
-        if self.DPOLGBKEKLD != 0 {
-            os.write_uint32(14, self.DPOLGBKEKLD)?;
-        }
-        for v in &self.BFBPHDKHHKO {
+        for v in &self.MMABIFCHJNG {
             os.write_uint32(1, *v)?;
         };
+        if self.EMFIDIGHFCC != 0 {
+            os.write_uint32(9, self.EMFIDIGHFCC)?;
+        }
+        if let Some(v) = self.NLMMBGKBKJE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -169,19 +169,19 @@ impl ::protobuf::Message for TrainPartyGamePlaySettleNotify {
     }
 
     fn clear(&mut self) {
-        self.MPLMHGMENFL.clear();
-        self.OEKPIJPEIAN = 0;
-        self.DPOLGBKEKLD = 0;
-        self.BFBPHDKHHKO.clear();
+        self.CMGMGNOMJFN = 0;
+        self.MMABIFCHJNG.clear();
+        self.EMFIDIGHFCC = 0;
+        self.NLMMBGKBKJE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyGamePlaySettleNotify {
         static instance: TrainPartyGamePlaySettleNotify = TrainPartyGamePlaySettleNotify {
-            MPLMHGMENFL: ::protobuf::MessageField::none(),
-            OEKPIJPEIAN: 0,
-            DPOLGBKEKLD: 0,
-            BFBPHDKHHKO: ::std::vec::Vec::new(),
+            CMGMGNOMJFN: 0,
+            MMABIFCHJNG: ::std::vec::Vec::new(),
+            EMFIDIGHFCC: 0,
+            NLMMBGKBKJE: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -206,12 +206,12 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyGamePlaySettleNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$TrainPartyGamePlaySettleNotify.proto\x1a\x11JKCHFFCLKFL.proto\"\xb6\
-    \x01\n\x1eTrainPartyGamePlaySettleNotify\x12.\n\x0bMPLMHGMENFL\x18\x03\
-    \x20\x01(\x0b2\x0c.JKCHFFCLKFLR\x0bMPLMHGMENFL\x12\x20\n\x0bOEKPIJPEIAN\
-    \x18\t\x20\x01(\rR\x0bOEKPIJPEIAN\x12\x20\n\x0bDPOLGBKEKLD\x18\x0e\x20\
-    \x01(\rR\x0bDPOLGBKEKLD\x12\x20\n\x0bBFBPHDKHHKO\x18\x01\x20\x03(\rR\x0b\
-    BFBPHDKHHKOb\x06proto3\
+    \n$TrainPartyGamePlaySettleNotify.proto\x1a\x11KOOLHIMDCDF.proto\"\xb6\
+    \x01\n\x1eTrainPartyGamePlaySettleNotify\x12\x20\n\x0bCMGMGNOMJFN\x18\
+    \x05\x20\x01(\rR\x0bCMGMGNOMJFN\x12\x20\n\x0bMMABIFCHJNG\x18\x01\x20\x03\
+    (\rR\x0bMMABIFCHJNG\x12\x20\n\x0bEMFIDIGHFCC\x18\t\x20\x01(\rR\x0bEMFIDI\
+    GHFCC\x12.\n\x0bNLMMBGKBKJE\x18\x0e\x20\x01(\x0b2\x0c.KOOLHIMDCDFR\x0bNL\
+    MMBGKBKJEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -229,7 +229,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::JKCHFFCLKFL::file_descriptor().clone());
+            deps.push(super::KOOLHIMDCDF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(TrainPartyGamePlaySettleNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournGetCurRogueCocoonInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournGetCurRogueCocoonInfoScRsp.difficulty_level)
-    pub difficulty_level: u32,
+    // @@protoc_insertion_point(field:RogueTournGetCurRogueCocoonInfoScRsp.NOFJGLFKGFI)
+    pub NOFJGLFKGFI: u32,
+    // @@protoc_insertion_point(field:RogueTournGetCurRogueCocoonInfoScRsp.OALOBBJOFBI)
+    pub OALOBBJOFBI: u32,
+    // @@protoc_insertion_point(field:RogueTournGetCurRogueCocoonInfoScRsp.LMCCPIPDHDM)
+    pub LMCCPIPDHDM: u32,
     // @@protoc_insertion_point(field:RogueTournGetCurRogueCocoonInfoScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:RogueTournGetCurRogueCocoonInfoScRsp.GEBLLHGAKFF)
-    pub GEBLLHGAKFF: u32,
-    // @@protoc_insertion_point(field:RogueTournGetCurRogueCocoonInfoScRsp.DDACBMOIGCA)
-    pub DDACBMOIGCA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournGetCurRogueCocoonInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl RogueTournGetCurRogueCocoonInfoScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "difficulty_level",
-            |m: &RogueTournGetCurRogueCocoonInfoScRsp| { &m.difficulty_level },
-            |m: &mut RogueTournGetCurRogueCocoonInfoScRsp| { &mut m.difficulty_level },
+            "NOFJGLFKGFI",
+            |m: &RogueTournGetCurRogueCocoonInfoScRsp| { &m.NOFJGLFKGFI },
+            |m: &mut RogueTournGetCurRogueCocoonInfoScRsp| { &mut m.NOFJGLFKGFI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OALOBBJOFBI",
+            |m: &RogueTournGetCurRogueCocoonInfoScRsp| { &m.OALOBBJOFBI },
+            |m: &mut RogueTournGetCurRogueCocoonInfoScRsp| { &mut m.OALOBBJOFBI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LMCCPIPDHDM",
+            |m: &RogueTournGetCurRogueCocoonInfoScRsp| { &m.LMCCPIPDHDM },
+            |m: &mut RogueTournGetCurRogueCocoonInfoScRsp| { &mut m.LMCCPIPDHDM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &RogueTournGetCurRogueCocoonInfoScRsp| { &m.retcode },
             |m: &mut RogueTournGetCurRogueCocoonInfoScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GEBLLHGAKFF",
-            |m: &RogueTournGetCurRogueCocoonInfoScRsp| { &m.GEBLLHGAKFF },
-            |m: &mut RogueTournGetCurRogueCocoonInfoScRsp| { &mut m.GEBLLHGAKFF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DDACBMOIGCA",
-            |m: &RogueTournGetCurRogueCocoonInfoScRsp| { &m.DDACBMOIGCA },
-            |m: &mut RogueTournGetCurRogueCocoonInfoScRsp| { &mut m.DDACBMOIGCA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournGetCurRogueCocoonInfoScRsp>(
             "RogueTournGetCurRogueCocoonInfoScRsp",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for RogueTournGetCurRogueCocoonInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.difficulty_level = is.read_uint32()?;
+                88 => {
+                    self.NOFJGLFKGFI = is.read_uint32()?;
+                },
+                104 => {
+                    self.OALOBBJOFBI = is.read_uint32()?;
+                },
+                32 => {
+                    self.LMCCPIPDHDM = is.read_uint32()?;
                 },
                 112 => {
                     self.retcode = is.read_uint32()?;
-                },
-                24 => {
-                    self.GEBLLHGAKFF = is.read_uint32()?;
-                },
-                104 => {
-                    self.DDACBMOIGCA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,17 +118,17 @@ impl ::protobuf::Message for RogueTournGetCurRogueCocoonInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.difficulty_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.difficulty_level);
+        if self.NOFJGLFKGFI != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.NOFJGLFKGFI);
+        }
+        if self.OALOBBJOFBI != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.OALOBBJOFBI);
+        }
+        if self.LMCCPIPDHDM != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.LMCCPIPDHDM);
         }
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.retcode);
-        }
-        if self.GEBLLHGAKFF != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.GEBLLHGAKFF);
-        }
-        if self.DDACBMOIGCA != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.DDACBMOIGCA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for RogueTournGetCurRogueCocoonInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.difficulty_level != 0 {
-            os.write_uint32(10, self.difficulty_level)?;
+        if self.NOFJGLFKGFI != 0 {
+            os.write_uint32(11, self.NOFJGLFKGFI)?;
+        }
+        if self.OALOBBJOFBI != 0 {
+            os.write_uint32(13, self.OALOBBJOFBI)?;
+        }
+        if self.LMCCPIPDHDM != 0 {
+            os.write_uint32(4, self.LMCCPIPDHDM)?;
         }
         if self.retcode != 0 {
             os.write_uint32(14, self.retcode)?;
-        }
-        if self.GEBLLHGAKFF != 0 {
-            os.write_uint32(3, self.GEBLLHGAKFF)?;
-        }
-        if self.DDACBMOIGCA != 0 {
-            os.write_uint32(13, self.DDACBMOIGCA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for RogueTournGetCurRogueCocoonInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.difficulty_level = 0;
+        self.NOFJGLFKGFI = 0;
+        self.OALOBBJOFBI = 0;
+        self.LMCCPIPDHDM = 0;
         self.retcode = 0;
-        self.GEBLLHGAKFF = 0;
-        self.DDACBMOIGCA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournGetCurRogueCocoonInfoScRsp {
         static instance: RogueTournGetCurRogueCocoonInfoScRsp = RogueTournGetCurRogueCocoonInfoScRsp {
-            difficulty_level: 0,
+            NOFJGLFKGFI: 0,
+            OALOBBJOFBI: 0,
+            LMCCPIPDHDM: 0,
             retcode: 0,
-            GEBLLHGAKFF: 0,
-            DDACBMOIGCA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,12 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournGetCurRogueCocoonInfoScRsp
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n*RogueTournGetCurRogueCocoonInfoScRsp.proto\"\xaf\x01\n$RogueTournGetC\
-    urRogueCocoonInfoScRsp\x12)\n\x10difficulty_level\x18\n\x20\x01(\rR\x0fd\
-    ifficultyLevel\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcode\x12\
-    \x20\n\x0bGEBLLHGAKFF\x18\x03\x20\x01(\rR\x0bGEBLLHGAKFF\x12\x20\n\x0bDD\
-    ACBMOIGCA\x18\r\x20\x01(\rR\x0bDDACBMOIGCAB\x15\n\x13emu.lunarcore.proto\
-    b\x06proto3\
+    \n*RogueTournGetCurRogueCocoonInfoScRsp.proto\"\xa6\x01\n$RogueTournGetC\
+    urRogueCocoonInfoScRsp\x12\x20\n\x0bNOFJGLFKGFI\x18\x0b\x20\x01(\rR\x0bN\
+    OFJGLFKGFI\x12\x20\n\x0bOALOBBJOFBI\x18\r\x20\x01(\rR\x0bOALOBBJOFBI\x12\
+    \x20\n\x0bLMCCPIPDHDM\x18\x04\x20\x01(\rR\x0bLMCCPIPDHDM\x12\x18\n\x07re\
+    tcode\x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

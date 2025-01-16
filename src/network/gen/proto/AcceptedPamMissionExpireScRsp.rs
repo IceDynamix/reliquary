@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AcceptedPamMissionExpireScRsp {
     // message fields
-    // @@protoc_insertion_point(field:AcceptedPamMissionExpireScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:AcceptedPamMissionExpireScRsp.JPFMOBHIECA)
-    pub JPFMOBHIECA: u32,
+    // @@protoc_insertion_point(field:AcceptedPamMissionExpireScRsp.BOJKIHLNEEG)
+    pub BOJKIHLNEEG: u32,
+    // @@protoc_insertion_point(field:AcceptedPamMissionExpireScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AcceptedPamMissionExpireScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl AcceptedPamMissionExpireScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &AcceptedPamMissionExpireScRsp| { &m.ADADHIHDHJC },
-            |m: &mut AcceptedPamMissionExpireScRsp| { &mut m.ADADHIHDHJC },
+            "BOJKIHLNEEG",
+            |m: &AcceptedPamMissionExpireScRsp| { &m.BOJKIHLNEEG },
+            |m: &mut AcceptedPamMissionExpireScRsp| { &mut m.BOJKIHLNEEG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JPFMOBHIECA",
-            |m: &AcceptedPamMissionExpireScRsp| { &m.JPFMOBHIECA },
-            |m: &mut AcceptedPamMissionExpireScRsp| { &mut m.JPFMOBHIECA },
+            "retcode",
+            |m: &AcceptedPamMissionExpireScRsp| { &m.retcode },
+            |m: &mut AcceptedPamMissionExpireScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AcceptedPamMissionExpireScRsp>(
             "AcceptedPamMissionExpireScRsp",
@@ -81,10 +81,10 @@ impl ::protobuf::Message for AcceptedPamMissionExpireScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 64 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                    self.BOJKIHLNEEG = is.read_uint32()?;
                 },
-                56 => {
-                    self.JPFMOBHIECA = is.read_uint32()?;
+                88 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for AcceptedPamMissionExpireScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.ADADHIHDHJC);
+        if self.BOJKIHLNEEG != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.BOJKIHLNEEG);
         }
-        if self.JPFMOBHIECA != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.JPFMOBHIECA);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for AcceptedPamMissionExpireScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(8, self.ADADHIHDHJC)?;
+        if self.BOJKIHLNEEG != 0 {
+            os.write_uint32(8, self.BOJKIHLNEEG)?;
         }
-        if self.JPFMOBHIECA != 0 {
-            os.write_uint32(7, self.JPFMOBHIECA)?;
+        if self.retcode != 0 {
+            os.write_uint32(11, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for AcceptedPamMissionExpireScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADADHIHDHJC = 0;
-        self.JPFMOBHIECA = 0;
+        self.BOJKIHLNEEG = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AcceptedPamMissionExpireScRsp {
         static instance: AcceptedPamMissionExpireScRsp = AcceptedPamMissionExpireScRsp {
-            ADADHIHDHJC: 0,
-            JPFMOBHIECA: 0,
+            BOJKIHLNEEG: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for AcceptedPamMissionExpireScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#AcceptedPamMissionExpireScRsp.proto\"c\n\x1dAcceptedPamMissionExpireS\
-    cRsp\x12\x20\n\x0bADADHIHDHJC\x18\x08\x20\x01(\rR\x0bADADHIHDHJC\x12\x20\
-    \n\x0bJPFMOBHIECA\x18\x07\x20\x01(\rR\x0bJPFMOBHIECAb\x06proto3\
+    \n#AcceptedPamMissionExpireScRsp.proto\"[\n\x1dAcceptedPamMissionExpireS\
+    cRsp\x12\x20\n\x0bBOJKIHLNEEG\x18\x08\x20\x01(\rR\x0bBOJKIHLNEEG\x12\x18\
+    \n\x07retcode\x18\x0b\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

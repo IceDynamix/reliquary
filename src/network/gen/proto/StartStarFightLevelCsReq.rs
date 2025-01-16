@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartStarFightLevelCsReq {
     // message fields
-    // @@protoc_insertion_point(field:StartStarFightLevelCsReq.ILIFHHJFMIH)
-    pub ILIFHHJFMIH: u32,
-    // @@protoc_insertion_point(field:StartStarFightLevelCsReq.KONGAADEJEL)
-    pub KONGAADEJEL: u32,
-    // @@protoc_insertion_point(field:StartStarFightLevelCsReq.EMALNMLGANJ)
-    pub EMALNMLGANJ: ::std::vec::Vec<super::IAEKELNHGFP::IAEKELNHGFP>,
+    // @@protoc_insertion_point(field:StartStarFightLevelCsReq.avatar_list)
+    pub avatar_list: ::std::vec::Vec<super::KBLPGMIDFEG::KBLPGMIDFEG>,
+    // @@protoc_insertion_point(field:StartStarFightLevelCsReq.IBAFDOBBEGD)
+    pub IBAFDOBBEGD: u32,
+    // @@protoc_insertion_point(field:StartStarFightLevelCsReq.IOPPGEGDHGL)
+    pub IOPPGEGDHGL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:StartStarFightLevelCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl StartStarFightLevelCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ILIFHHJFMIH",
-            |m: &StartStarFightLevelCsReq| { &m.ILIFHHJFMIH },
-            |m: &mut StartStarFightLevelCsReq| { &mut m.ILIFHHJFMIH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KONGAADEJEL",
-            |m: &StartStarFightLevelCsReq| { &m.KONGAADEJEL },
-            |m: &mut StartStarFightLevelCsReq| { &mut m.KONGAADEJEL },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EMALNMLGANJ",
-            |m: &StartStarFightLevelCsReq| { &m.EMALNMLGANJ },
-            |m: &mut StartStarFightLevelCsReq| { &mut m.EMALNMLGANJ },
+            "avatar_list",
+            |m: &StartStarFightLevelCsReq| { &m.avatar_list },
+            |m: &mut StartStarFightLevelCsReq| { &mut m.avatar_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IBAFDOBBEGD",
+            |m: &StartStarFightLevelCsReq| { &m.IBAFDOBBEGD },
+            |m: &mut StartStarFightLevelCsReq| { &mut m.IBAFDOBBEGD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IOPPGEGDHGL",
+            |m: &StartStarFightLevelCsReq| { &m.IOPPGEGDHGL },
+            |m: &mut StartStarFightLevelCsReq| { &mut m.IOPPGEGDHGL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartStarFightLevelCsReq>(
             "StartStarFightLevelCsReq",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for StartStarFightLevelCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.ILIFHHJFMIH = is.read_uint32()?;
+                50 => {
+                    self.avatar_list.push(is.read_message()?);
                 },
-                104 => {
-                    self.KONGAADEJEL = is.read_uint32()?;
+                40 => {
+                    self.IBAFDOBBEGD = is.read_uint32()?;
                 },
-                74 => {
-                    self.EMALNMLGANJ.push(is.read_message()?);
+                32 => {
+                    self.IOPPGEGDHGL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,31 +108,31 @@ impl ::protobuf::Message for StartStarFightLevelCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ILIFHHJFMIH != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.ILIFHHJFMIH);
-        }
-        if self.KONGAADEJEL != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.KONGAADEJEL);
-        }
-        for value in &self.EMALNMLGANJ {
+        for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.IBAFDOBBEGD != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.IBAFDOBBEGD);
+        }
+        if self.IOPPGEGDHGL != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.IOPPGEGDHGL);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ILIFHHJFMIH != 0 {
-            os.write_uint32(2, self.ILIFHHJFMIH)?;
-        }
-        if self.KONGAADEJEL != 0 {
-            os.write_uint32(13, self.KONGAADEJEL)?;
-        }
-        for v in &self.EMALNMLGANJ {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        for v in &self.avatar_list {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
+        if self.IBAFDOBBEGD != 0 {
+            os.write_uint32(5, self.IBAFDOBBEGD)?;
+        }
+        if self.IOPPGEGDHGL != 0 {
+            os.write_uint32(4, self.IOPPGEGDHGL)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,17 +150,17 @@ impl ::protobuf::Message for StartStarFightLevelCsReq {
     }
 
     fn clear(&mut self) {
-        self.ILIFHHJFMIH = 0;
-        self.KONGAADEJEL = 0;
-        self.EMALNMLGANJ.clear();
+        self.avatar_list.clear();
+        self.IBAFDOBBEGD = 0;
+        self.IOPPGEGDHGL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartStarFightLevelCsReq {
         static instance: StartStarFightLevelCsReq = StartStarFightLevelCsReq {
-            ILIFHHJFMIH: 0,
-            KONGAADEJEL: 0,
-            EMALNMLGANJ: ::std::vec::Vec::new(),
+            avatar_list: ::std::vec::Vec::new(),
+            IBAFDOBBEGD: 0,
+            IOPPGEGDHGL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for StartStarFightLevelCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eStartStarFightLevelCsReq.proto\x1a\x11IAEKELNHGFP.proto\"\x8e\x01\
-    \n\x18StartStarFightLevelCsReq\x12\x20\n\x0bILIFHHJFMIH\x18\x02\x20\x01(\
-    \rR\x0bILIFHHJFMIH\x12\x20\n\x0bKONGAADEJEL\x18\r\x20\x01(\rR\x0bKONGAAD\
-    EJEL\x12.\n\x0bEMALNMLGANJ\x18\t\x20\x03(\x0b2\x0c.IAEKELNHGFPR\x0bEMALN\
-    MLGANJb\x06proto3\
+    \n\x1eStartStarFightLevelCsReq.proto\x1a\x11KBLPGMIDFEG.proto\"\x8d\x01\
+    \n\x18StartStarFightLevelCsReq\x12-\n\x0bavatar_list\x18\x06\x20\x03(\
+    \x0b2\x0c.KBLPGMIDFEGR\navatarList\x12\x20\n\x0bIBAFDOBBEGD\x18\x05\x20\
+    \x01(\rR\x0bIBAFDOBBEGD\x12\x20\n\x0bIOPPGEGDHGL\x18\x04\x20\x01(\rR\x0b\
+    IOPPGEGDHGLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::IAEKELNHGFP::file_descriptor().clone());
+            deps.push(super::KBLPGMIDFEG::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(StartStarFightLevelCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

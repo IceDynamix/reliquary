@@ -30,18 +30,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdRogueModifierType {
     // @@protoc_insertion_point(enum_value:CmdRogueModifierType.CmdRogueModifierTypeNone)
     CmdRogueModifierTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdRogueModifierType.CmdRogueModifierSelectCellScRsp)
-    CmdRogueModifierSelectCellScRsp = 5339,
-    // @@protoc_insertion_point(enum_value:CmdRogueModifierType.CmdRogueModifierUpdateNotify)
-    CmdRogueModifierUpdateNotify = 5337,
-    // @@protoc_insertion_point(enum_value:CmdRogueModifierType.CmdRogueModifierSelectCellCsReq)
-    CmdRogueModifierSelectCellCsReq = 5346,
-    // @@protoc_insertion_point(enum_value:CmdRogueModifierType.CmdRogueModifierStageStartNotify)
-    CmdRogueModifierStageStartNotify = 5316,
     // @@protoc_insertion_point(enum_value:CmdRogueModifierType.CmdRogueModifierAddNotify)
-    CmdRogueModifierAddNotify = 5303,
+    CmdRogueModifierAddNotify = 5384,
+    // @@protoc_insertion_point(enum_value:CmdRogueModifierType.CmdRogueModifierUpdateNotify)
+    CmdRogueModifierUpdateNotify = 5374,
+    // @@protoc_insertion_point(enum_value:CmdRogueModifierType.CmdRogueModifierSelectCellScRsp)
+    CmdRogueModifierSelectCellScRsp = 5367,
+    // @@protoc_insertion_point(enum_value:CmdRogueModifierType.CmdRogueModifierStageStartNotify)
+    CmdRogueModifierStageStartNotify = 5393,
     // @@protoc_insertion_point(enum_value:CmdRogueModifierType.CmdRogueModifierDelNotify)
-    CmdRogueModifierDelNotify = 5380,
+    CmdRogueModifierDelNotify = 5324,
+    // @@protoc_insertion_point(enum_value:CmdRogueModifierType.CmdRogueModifierSelectCellCsReq)
+    CmdRogueModifierSelectCellCsReq = 5327,
 }
 
 impl ::protobuf::Enum for CmdRogueModifierType {
@@ -54,12 +54,12 @@ impl ::protobuf::Enum for CmdRogueModifierType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdRogueModifierType> {
         match value {
             0 => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierTypeNone),
-            5339 => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierSelectCellScRsp),
-            5337 => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierUpdateNotify),
-            5346 => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierSelectCellCsReq),
-            5316 => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierStageStartNotify),
-            5303 => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierAddNotify),
-            5380 => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierDelNotify),
+            5384 => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierAddNotify),
+            5374 => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierUpdateNotify),
+            5367 => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierSelectCellScRsp),
+            5393 => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierStageStartNotify),
+            5324 => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierDelNotify),
+            5327 => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierSelectCellCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -67,24 +67,24 @@ impl ::protobuf::Enum for CmdRogueModifierType {
     fn from_str(str: &str) -> ::std::option::Option<CmdRogueModifierType> {
         match str {
             "CmdRogueModifierTypeNone" => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierTypeNone),
-            "CmdRogueModifierSelectCellScRsp" => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierSelectCellScRsp),
-            "CmdRogueModifierUpdateNotify" => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierUpdateNotify),
-            "CmdRogueModifierSelectCellCsReq" => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierSelectCellCsReq),
-            "CmdRogueModifierStageStartNotify" => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierStageStartNotify),
             "CmdRogueModifierAddNotify" => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierAddNotify),
+            "CmdRogueModifierUpdateNotify" => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierUpdateNotify),
+            "CmdRogueModifierSelectCellScRsp" => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierSelectCellScRsp),
+            "CmdRogueModifierStageStartNotify" => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierStageStartNotify),
             "CmdRogueModifierDelNotify" => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierDelNotify),
+            "CmdRogueModifierSelectCellCsReq" => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierSelectCellCsReq),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRogueModifierType] = &[
         CmdRogueModifierType::CmdRogueModifierTypeNone,
-        CmdRogueModifierType::CmdRogueModifierSelectCellScRsp,
-        CmdRogueModifierType::CmdRogueModifierUpdateNotify,
-        CmdRogueModifierType::CmdRogueModifierSelectCellCsReq,
-        CmdRogueModifierType::CmdRogueModifierStageStartNotify,
         CmdRogueModifierType::CmdRogueModifierAddNotify,
+        CmdRogueModifierType::CmdRogueModifierUpdateNotify,
+        CmdRogueModifierType::CmdRogueModifierSelectCellScRsp,
+        CmdRogueModifierType::CmdRogueModifierStageStartNotify,
         CmdRogueModifierType::CmdRogueModifierDelNotify,
+        CmdRogueModifierType::CmdRogueModifierSelectCellCsReq,
     ];
 }
 
@@ -97,12 +97,12 @@ impl ::protobuf::EnumFull for CmdRogueModifierType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdRogueModifierType::CmdRogueModifierTypeNone => 0,
-            CmdRogueModifierType::CmdRogueModifierSelectCellScRsp => 1,
+            CmdRogueModifierType::CmdRogueModifierAddNotify => 1,
             CmdRogueModifierType::CmdRogueModifierUpdateNotify => 2,
-            CmdRogueModifierType::CmdRogueModifierSelectCellCsReq => 3,
+            CmdRogueModifierType::CmdRogueModifierSelectCellScRsp => 3,
             CmdRogueModifierType::CmdRogueModifierStageStartNotify => 4,
-            CmdRogueModifierType::CmdRogueModifierAddNotify => 5,
-            CmdRogueModifierType::CmdRogueModifierDelNotify => 6,
+            CmdRogueModifierType::CmdRogueModifierDelNotify => 5,
+            CmdRogueModifierType::CmdRogueModifierSelectCellCsReq => 6,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -122,11 +122,11 @@ impl CmdRogueModifierType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aCmdRogueModifierType.proto*\x8a\x02\n\x14CmdRogueModifierType\x12\
-    \x1c\n\x18CmdRogueModifierTypeNone\x10\0\x12$\n\x1fCmdRogueModifierSelec\
-    tCellScRsp\x10\xdb)\x12!\n\x1cCmdRogueModifierUpdateNotify\x10\xd9)\x12$\
-    \n\x1fCmdRogueModifierSelectCellCsReq\x10\xe2)\x12%\n\x20CmdRogueModifie\
-    rStageStartNotify\x10\xc4)\x12\x1e\n\x19CmdRogueModifierAddNotify\x10\
-    \xb7)\x12\x1e\n\x19CmdRogueModifierDelNotify\x10\x84*b\x06proto3\
+    \x1c\n\x18CmdRogueModifierTypeNone\x10\0\x12\x1e\n\x19CmdRogueModifierAd\
+    dNotify\x10\x88*\x12!\n\x1cCmdRogueModifierUpdateNotify\x10\xfe)\x12$\n\
+    \x1fCmdRogueModifierSelectCellScRsp\x10\xf7)\x12%\n\x20CmdRogueModifierS\
+    tageStartNotify\x10\x91*\x12\x1e\n\x19CmdRogueModifierDelNotify\x10\xcc)\
+    \x12$\n\x1fCmdRogueModifierSelectCellCsReq\x10\xcf)b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

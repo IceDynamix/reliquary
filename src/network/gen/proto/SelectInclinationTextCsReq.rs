@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SelectInclinationTextCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SelectInclinationTextCsReq.AKPGMBPDIOO)
-    pub AKPGMBPDIOO: u32,
+    // @@protoc_insertion_point(field:SelectInclinationTextCsReq.OLPGMFLHDMH)
+    pub OLPGMFLHDMH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SelectInclinationTextCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl SelectInclinationTextCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AKPGMBPDIOO",
-            |m: &SelectInclinationTextCsReq| { &m.AKPGMBPDIOO },
-            |m: &mut SelectInclinationTextCsReq| { &mut m.AKPGMBPDIOO },
+            "OLPGMFLHDMH",
+            |m: &SelectInclinationTextCsReq| { &m.OLPGMFLHDMH },
+            |m: &mut SelectInclinationTextCsReq| { &mut m.OLPGMFLHDMH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SelectInclinationTextCsReq>(
             "SelectInclinationTextCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for SelectInclinationTextCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.AKPGMBPDIOO = is.read_uint32()?;
+                112 => {
+                    self.OLPGMFLHDMH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for SelectInclinationTextCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AKPGMBPDIOO != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.AKPGMBPDIOO);
+        if self.OLPGMFLHDMH != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.OLPGMFLHDMH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for SelectInclinationTextCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AKPGMBPDIOO != 0 {
-            os.write_uint32(13, self.AKPGMBPDIOO)?;
+        if self.OLPGMFLHDMH != 0 {
+            os.write_uint32(14, self.OLPGMFLHDMH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for SelectInclinationTextCsReq {
     }
 
     fn clear(&mut self) {
-        self.AKPGMBPDIOO = 0;
+        self.OLPGMFLHDMH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SelectInclinationTextCsReq {
         static instance: SelectInclinationTextCsReq = SelectInclinationTextCsReq {
-            AKPGMBPDIOO: 0,
+            OLPGMFLHDMH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for SelectInclinationTextCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20SelectInclinationTextCsReq.proto\">\n\x1aSelectInclinationTextCsRe\
-    q\x12\x20\n\x0bAKPGMBPDIOO\x18\r\x20\x01(\rR\x0bAKPGMBPDIOOb\x06proto3\
+    q\x12\x20\n\x0bOLPGMFLHDMH\x18\x0e\x20\x01(\rR\x0bOLPGMFLHDMHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

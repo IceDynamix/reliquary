@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct QueryProductInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:QueryProductInfoScRsp.NLIAMAMHJEF)
-    pub NLIAMAMHJEF: u32,
-    // @@protoc_insertion_point(field:QueryProductInfoScRsp.KGHDCIIGJGH)
-    pub KGHDCIIGJGH: u32,
-    // @@protoc_insertion_point(field:QueryProductInfoScRsp.GAAIMJLKDMB)
-    pub GAAIMJLKDMB: u64,
-    // @@protoc_insertion_point(field:QueryProductInfoScRsp.PNGGDBGOHPN)
-    pub PNGGDBGOHPN: ::std::vec::Vec<super::BJNNBGFLMGF::BJNNBGFLMGF>,
-    // @@protoc_insertion_point(field:QueryProductInfoScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:QueryProductInfoScRsp.LDMEEHEEGPH)
+    pub LDMEEHEEGPH: u32,
+    // @@protoc_insertion_point(field:QueryProductInfoScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:QueryProductInfoScRsp.GKDBGJECGHK)
+    pub GKDBGJECGHK: u32,
+    // @@protoc_insertion_point(field:QueryProductInfoScRsp.OMLLGHPOLAH)
+    pub OMLLGHPOLAH: u64,
+    // @@protoc_insertion_point(field:QueryProductInfoScRsp.BPHIHGOEKBB)
+    pub BPHIHGOEKBB: ::std::vec::Vec<super::JNINMFIMJFO::JNINMFIMJFO>,
     // special fields
     // @@protoc_insertion_point(special_field:QueryProductInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,29 +59,29 @@ impl QueryProductInfoScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NLIAMAMHJEF",
-            |m: &QueryProductInfoScRsp| { &m.NLIAMAMHJEF },
-            |m: &mut QueryProductInfoScRsp| { &mut m.NLIAMAMHJEF },
+            "LDMEEHEEGPH",
+            |m: &QueryProductInfoScRsp| { &m.LDMEEHEEGPH },
+            |m: &mut QueryProductInfoScRsp| { &mut m.LDMEEHEEGPH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KGHDCIIGJGH",
-            |m: &QueryProductInfoScRsp| { &m.KGHDCIIGJGH },
-            |m: &mut QueryProductInfoScRsp| { &mut m.KGHDCIIGJGH },
+            "retcode",
+            |m: &QueryProductInfoScRsp| { &m.retcode },
+            |m: &mut QueryProductInfoScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GAAIMJLKDMB",
-            |m: &QueryProductInfoScRsp| { &m.GAAIMJLKDMB },
-            |m: &mut QueryProductInfoScRsp| { &mut m.GAAIMJLKDMB },
+            "GKDBGJECGHK",
+            |m: &QueryProductInfoScRsp| { &m.GKDBGJECGHK },
+            |m: &mut QueryProductInfoScRsp| { &mut m.GKDBGJECGHK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OMLLGHPOLAH",
+            |m: &QueryProductInfoScRsp| { &m.OMLLGHPOLAH },
+            |m: &mut QueryProductInfoScRsp| { &mut m.OMLLGHPOLAH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PNGGDBGOHPN",
-            |m: &QueryProductInfoScRsp| { &m.PNGGDBGOHPN },
-            |m: &mut QueryProductInfoScRsp| { &mut m.PNGGDBGOHPN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &QueryProductInfoScRsp| { &m.ADADHIHDHJC },
-            |m: &mut QueryProductInfoScRsp| { &mut m.ADADHIHDHJC },
+            "BPHIHGOEKBB",
+            |m: &QueryProductInfoScRsp| { &m.BPHIHGOEKBB },
+            |m: &mut QueryProductInfoScRsp| { &mut m.BPHIHGOEKBB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<QueryProductInfoScRsp>(
             "QueryProductInfoScRsp",
@@ -102,19 +102,19 @@ impl ::protobuf::Message for QueryProductInfoScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 96 => {
-                    self.NLIAMAMHJEF = is.read_uint32()?;
+                    self.LDMEEHEEGPH = is.read_uint32()?;
+                },
+                64 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 72 => {
-                    self.KGHDCIIGJGH = is.read_uint32()?;
+                    self.GKDBGJECGHK = is.read_uint32()?;
                 },
-                48 => {
-                    self.GAAIMJLKDMB = is.read_uint64()?;
+                24 => {
+                    self.OMLLGHPOLAH = is.read_uint64()?;
                 },
-                90 => {
-                    self.PNGGDBGOHPN.push(is.read_message()?);
-                },
-                8 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                10 => {
+                    self.BPHIHGOEKBB.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,43 +128,43 @@ impl ::protobuf::Message for QueryProductInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NLIAMAMHJEF != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.NLIAMAMHJEF);
+        if self.LDMEEHEEGPH != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.LDMEEHEEGPH);
         }
-        if self.KGHDCIIGJGH != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.KGHDCIIGJGH);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
-        if self.GAAIMJLKDMB != 0 {
-            my_size += ::protobuf::rt::uint64_size(6, self.GAAIMJLKDMB);
+        if self.GKDBGJECGHK != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.GKDBGJECGHK);
         }
-        for value in &self.PNGGDBGOHPN {
+        if self.OMLLGHPOLAH != 0 {
+            my_size += ::protobuf::rt::uint64_size(3, self.OMLLGHPOLAH);
+        }
+        for value in &self.BPHIHGOEKBB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.ADADHIHDHJC);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NLIAMAMHJEF != 0 {
-            os.write_uint32(12, self.NLIAMAMHJEF)?;
+        if self.LDMEEHEEGPH != 0 {
+            os.write_uint32(12, self.LDMEEHEEGPH)?;
         }
-        if self.KGHDCIIGJGH != 0 {
-            os.write_uint32(9, self.KGHDCIIGJGH)?;
+        if self.retcode != 0 {
+            os.write_uint32(8, self.retcode)?;
         }
-        if self.GAAIMJLKDMB != 0 {
-            os.write_uint64(6, self.GAAIMJLKDMB)?;
+        if self.GKDBGJECGHK != 0 {
+            os.write_uint32(9, self.GKDBGJECGHK)?;
         }
-        for v in &self.PNGGDBGOHPN {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if self.OMLLGHPOLAH != 0 {
+            os.write_uint64(3, self.OMLLGHPOLAH)?;
+        }
+        for v in &self.BPHIHGOEKBB {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(1, self.ADADHIHDHJC)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -182,21 +182,21 @@ impl ::protobuf::Message for QueryProductInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.NLIAMAMHJEF = 0;
-        self.KGHDCIIGJGH = 0;
-        self.GAAIMJLKDMB = 0;
-        self.PNGGDBGOHPN.clear();
-        self.ADADHIHDHJC = 0;
+        self.LDMEEHEEGPH = 0;
+        self.retcode = 0;
+        self.GKDBGJECGHK = 0;
+        self.OMLLGHPOLAH = 0;
+        self.BPHIHGOEKBB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static QueryProductInfoScRsp {
         static instance: QueryProductInfoScRsp = QueryProductInfoScRsp {
-            NLIAMAMHJEF: 0,
-            KGHDCIIGJGH: 0,
-            GAAIMJLKDMB: 0,
-            PNGGDBGOHPN: ::std::vec::Vec::new(),
-            ADADHIHDHJC: 0,
+            LDMEEHEEGPH: 0,
+            retcode: 0,
+            GKDBGJECGHK: 0,
+            OMLLGHPOLAH: 0,
+            BPHIHGOEKBB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,12 +221,12 @@ impl ::protobuf::reflect::ProtobufValue for QueryProductInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bQueryProductInfoScRsp.proto\x1a\x11BJNNBGFLMGF.proto\"\xcf\x01\n\
-    \x15QueryProductInfoScRsp\x12\x20\n\x0bNLIAMAMHJEF\x18\x0c\x20\x01(\rR\
-    \x0bNLIAMAMHJEF\x12\x20\n\x0bKGHDCIIGJGH\x18\t\x20\x01(\rR\x0bKGHDCIIGJG\
-    H\x12\x20\n\x0bGAAIMJLKDMB\x18\x06\x20\x01(\x04R\x0bGAAIMJLKDMB\x12.\n\
-    \x0bPNGGDBGOHPN\x18\x0b\x20\x03(\x0b2\x0c.BJNNBGFLMGFR\x0bPNGGDBGOHPN\
-    \x12\x20\n\x0bADADHIHDHJC\x18\x01\x20\x01(\rR\x0bADADHIHDHJCb\x06proto3\
+    \n\x1bQueryProductInfoScRsp.proto\x1a\x11JNINMFIMJFO.proto\"\xc7\x01\n\
+    \x15QueryProductInfoScRsp\x12\x20\n\x0bLDMEEHEEGPH\x18\x0c\x20\x01(\rR\
+    \x0bLDMEEHEEGPH\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12\
+    \x20\n\x0bGKDBGJECGHK\x18\t\x20\x01(\rR\x0bGKDBGJECGHK\x12\x20\n\x0bOMLL\
+    GHPOLAH\x18\x03\x20\x01(\x04R\x0bOMLLGHPOLAH\x12.\n\x0bBPHIHGOEKBB\x18\
+    \x01\x20\x03(\x0b2\x0c.JNINMFIMJFOR\x0bBPHIHGOEKBBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -244,7 +244,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::BJNNBGFLMGF::file_descriptor().clone());
+            deps.push(super::JNINMFIMJFO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(QueryProductInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MusicRhythmSaveSongConfigDataCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MusicRhythmSaveSongConfigDataCsReq.OGBKIFPBBID)
-    pub OGBKIFPBBID: ::protobuf::MessageField<super::HCHODFHAOFE::HCHODFHAOFE>,
+    // @@protoc_insertion_point(field:MusicRhythmSaveSongConfigDataCsReq.CHIGIHIMCPH)
+    pub CHIGIHIMCPH: ::protobuf::MessageField<super::OLAHIJKAOFD::OLAHIJKAOFD>,
     // special fields
     // @@protoc_insertion_point(special_field:MusicRhythmSaveSongConfigDataCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,10 +50,10 @@ impl MusicRhythmSaveSongConfigDataCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HCHODFHAOFE::HCHODFHAOFE>(
-            "OGBKIFPBBID",
-            |m: &MusicRhythmSaveSongConfigDataCsReq| { &m.OGBKIFPBBID },
-            |m: &mut MusicRhythmSaveSongConfigDataCsReq| { &mut m.OGBKIFPBBID },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OLAHIJKAOFD::OLAHIJKAOFD>(
+            "CHIGIHIMCPH",
+            |m: &MusicRhythmSaveSongConfigDataCsReq| { &m.CHIGIHIMCPH },
+            |m: &mut MusicRhythmSaveSongConfigDataCsReq| { &mut m.CHIGIHIMCPH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MusicRhythmSaveSongConfigDataCsReq>(
             "MusicRhythmSaveSongConfigDataCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for MusicRhythmSaveSongConfigDataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OGBKIFPBBID)?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CHIGIHIMCPH)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for MusicRhythmSaveSongConfigDataCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.OGBKIFPBBID.as_ref() {
+        if let Some(v) = self.CHIGIHIMCPH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -98,8 +98,8 @@ impl ::protobuf::Message for MusicRhythmSaveSongConfigDataCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.OGBKIFPBBID.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if let Some(v) = self.CHIGIHIMCPH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -118,13 +118,13 @@ impl ::protobuf::Message for MusicRhythmSaveSongConfigDataCsReq {
     }
 
     fn clear(&mut self) {
-        self.OGBKIFPBBID.clear();
+        self.CHIGIHIMCPH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MusicRhythmSaveSongConfigDataCsReq {
         static instance: MusicRhythmSaveSongConfigDataCsReq = MusicRhythmSaveSongConfigDataCsReq {
-            OGBKIFPBBID: ::protobuf::MessageField::none(),
+            CHIGIHIMCPH: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,9 +149,9 @@ impl ::protobuf::reflect::ProtobufValue for MusicRhythmSaveSongConfigDataCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n(MusicRhythmSaveSongConfigDataCsReq.proto\x1a\x11HCHODFHAOFE.proto\"T\
-    \n\"MusicRhythmSaveSongConfigDataCsReq\x12.\n\x0bOGBKIFPBBID\x18\x0b\x20\
-    \x01(\x0b2\x0c.HCHODFHAOFER\x0bOGBKIFPBBIDb\x06proto3\
+    \n(MusicRhythmSaveSongConfigDataCsReq.proto\x1a\x11OLAHIJKAOFD.proto\"T\
+    \n\"MusicRhythmSaveSongConfigDataCsReq\x12.\n\x0bCHIGIHIMCPH\x18\x0e\x20\
+    \x01(\x0b2\x0c.OLAHIJKAOFDR\x0bCHIGIHIMCPHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -169,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::HCHODFHAOFE::file_descriptor().clone());
+            deps.push(super::OLAHIJKAOFD::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MusicRhythmSaveSongConfigDataCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

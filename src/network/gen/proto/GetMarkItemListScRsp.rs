@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetMarkItemListScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetMarkItemListScRsp.FIOELBEMJAB)
-    pub FIOELBEMJAB: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetMarkItemListScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:GetMarkItemListScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetMarkItemListScRsp.ANKCABIGDBN)
+    pub ANKCABIGDBN: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GetMarkItemListScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl GetMarkItemListScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FIOELBEMJAB",
-            |m: &GetMarkItemListScRsp| { &m.FIOELBEMJAB },
-            |m: &mut GetMarkItemListScRsp| { &mut m.FIOELBEMJAB },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &GetMarkItemListScRsp| { &m.ADADHIHDHJC },
-            |m: &mut GetMarkItemListScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &GetMarkItemListScRsp| { &m.retcode },
+            |m: &mut GetMarkItemListScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "ANKCABIGDBN",
+            |m: &GetMarkItemListScRsp| { &m.ANKCABIGDBN },
+            |m: &mut GetMarkItemListScRsp| { &mut m.ANKCABIGDBN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetMarkItemListScRsp>(
             "GetMarkItemListScRsp",
@@ -80,14 +80,14 @@ impl ::protobuf::Message for GetMarkItemListScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FIOELBEMJAB)?;
+                32 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                104 => {
-                    self.FIOELBEMJAB.push(is.read_uint32()?);
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.ANKCABIGDBN)?;
                 },
-                112 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                64 => {
+                    self.ANKCABIGDBN.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,24 +101,24 @@ impl ::protobuf::Message for GetMarkItemListScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.FIOELBEMJAB {
-            my_size += ::protobuf::rt::uint32_size(13, *value);
-        };
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
+        for value in &self.ANKCABIGDBN {
+            my_size += ::protobuf::rt::uint32_size(8, *value);
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.FIOELBEMJAB {
-            os.write_uint32(13, *v)?;
-        };
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(14, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(4, self.retcode)?;
         }
+        for v in &self.ANKCABIGDBN {
+            os.write_uint32(8, *v)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -136,15 +136,15 @@ impl ::protobuf::Message for GetMarkItemListScRsp {
     }
 
     fn clear(&mut self) {
-        self.FIOELBEMJAB.clear();
-        self.ADADHIHDHJC = 0;
+        self.retcode = 0;
+        self.ANKCABIGDBN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetMarkItemListScRsp {
         static instance: GetMarkItemListScRsp = GetMarkItemListScRsp {
-            FIOELBEMJAB: ::std::vec::Vec::new(),
-            ADADHIHDHJC: 0,
+            retcode: 0,
+            ANKCABIGDBN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -169,9 +169,9 @@ impl ::protobuf::reflect::ProtobufValue for GetMarkItemListScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aGetMarkItemListScRsp.proto\"Z\n\x14GetMarkItemListScRsp\x12\x20\n\
-    \x0bFIOELBEMJAB\x18\r\x20\x03(\rR\x0bFIOELBEMJAB\x12\x20\n\x0bADADHIHDHJ\
-    C\x18\x0e\x20\x01(\rR\x0bADADHIHDHJCb\x06proto3\
+    \n\x1aGetMarkItemListScRsp.proto\"R\n\x14GetMarkItemListScRsp\x12\x18\n\
+    \x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12\x20\n\x0bANKCABIGDBN\x18\
+    \x08\x20\x03(\rR\x0bANKCABIGDBNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

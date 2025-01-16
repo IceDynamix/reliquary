@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OfferingInfoScNotify {
     // message fields
-    // @@protoc_insertion_point(field:OfferingInfoScNotify.AKEGHCPLJAC)
-    pub AKEGHCPLJAC: ::protobuf::MessageField<super::OJOBBCKLNFK::OJOBBCKLNFK>,
+    // @@protoc_insertion_point(field:OfferingInfoScNotify.PIOGACBPIHF)
+    pub PIOGACBPIHF: ::protobuf::MessageField<super::GMFNBHECOGD::GMFNBHECOGD>,
     // special fields
     // @@protoc_insertion_point(special_field:OfferingInfoScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,10 +50,10 @@ impl OfferingInfoScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OJOBBCKLNFK::OJOBBCKLNFK>(
-            "AKEGHCPLJAC",
-            |m: &OfferingInfoScNotify| { &m.AKEGHCPLJAC },
-            |m: &mut OfferingInfoScNotify| { &mut m.AKEGHCPLJAC },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GMFNBHECOGD::GMFNBHECOGD>(
+            "PIOGACBPIHF",
+            |m: &OfferingInfoScNotify| { &m.PIOGACBPIHF },
+            |m: &mut OfferingInfoScNotify| { &mut m.PIOGACBPIHF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OfferingInfoScNotify>(
             "OfferingInfoScNotify",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for OfferingInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AKEGHCPLJAC)?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PIOGACBPIHF)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for OfferingInfoScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.AKEGHCPLJAC.as_ref() {
+        if let Some(v) = self.PIOGACBPIHF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -98,8 +98,8 @@ impl ::protobuf::Message for OfferingInfoScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.AKEGHCPLJAC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if let Some(v) = self.PIOGACBPIHF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -118,13 +118,13 @@ impl ::protobuf::Message for OfferingInfoScNotify {
     }
 
     fn clear(&mut self) {
-        self.AKEGHCPLJAC.clear();
+        self.PIOGACBPIHF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OfferingInfoScNotify {
         static instance: OfferingInfoScNotify = OfferingInfoScNotify {
-            AKEGHCPLJAC: ::protobuf::MessageField::none(),
+            PIOGACBPIHF: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,9 +149,9 @@ impl ::protobuf::reflect::ProtobufValue for OfferingInfoScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aOfferingInfoScNotify.proto\x1a\x11OJOBBCKLNFK.proto\"F\n\x14Offeri\
-    ngInfoScNotify\x12.\n\x0bAKEGHCPLJAC\x18\x02\x20\x01(\x0b2\x0c.OJOBBCKLN\
-    FKR\x0bAKEGHCPLJACb\x06proto3\
+    \n\x1aOfferingInfoScNotify.proto\x1a\x11GMFNBHECOGD.proto\"F\n\x14Offeri\
+    ngInfoScNotify\x12.\n\x0bPIOGACBPIHF\x18\x08\x20\x01(\x0b2\x0c.GMFNBHECO\
+    GDR\x0bPIOGACBPIHFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -169,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::OJOBBCKLNFK::file_descriptor().clone());
+            deps.push(super::GMFNBHECOGD::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(OfferingInfoScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

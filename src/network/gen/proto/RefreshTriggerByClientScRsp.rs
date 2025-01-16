@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RefreshTriggerByClientScRsp {
     // message fields
+    // @@protoc_insertion_point(field:RefreshTriggerByClientScRsp.JGHJDPLEPAC)
+    pub JGHJDPLEPAC: u32,
+    // @@protoc_insertion_point(field:RefreshTriggerByClientScRsp.INGKOBLIHGP)
+    pub INGKOBLIHGP: bool,
+    // @@protoc_insertion_point(field:RefreshTriggerByClientScRsp.DGGCFCBNILB)
+    pub DGGCFCBNILB: ::std::string::String,
     // @@protoc_insertion_point(field:RefreshTriggerByClientScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:RefreshTriggerByClientScRsp.trigger_name)
-    pub trigger_name: ::std::string::String,
-    // @@protoc_insertion_point(field:RefreshTriggerByClientScRsp.trigger_entity_id)
-    pub trigger_entity_id: u32,
-    // @@protoc_insertion_point(field:RefreshTriggerByClientScRsp.refresh_trigger)
-    pub refresh_trigger: bool,
     // special fields
     // @@protoc_insertion_point(special_field:RefreshTriggerByClientScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl RefreshTriggerByClientScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JGHJDPLEPAC",
+            |m: &RefreshTriggerByClientScRsp| { &m.JGHJDPLEPAC },
+            |m: &mut RefreshTriggerByClientScRsp| { &mut m.JGHJDPLEPAC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "INGKOBLIHGP",
+            |m: &RefreshTriggerByClientScRsp| { &m.INGKOBLIHGP },
+            |m: &mut RefreshTriggerByClientScRsp| { &mut m.INGKOBLIHGP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DGGCFCBNILB",
+            |m: &RefreshTriggerByClientScRsp| { &m.DGGCFCBNILB },
+            |m: &mut RefreshTriggerByClientScRsp| { &mut m.DGGCFCBNILB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &RefreshTriggerByClientScRsp| { &m.retcode },
             |m: &mut RefreshTriggerByClientScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "trigger_name",
-            |m: &RefreshTriggerByClientScRsp| { &m.trigger_name },
-            |m: &mut RefreshTriggerByClientScRsp| { &mut m.trigger_name },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "trigger_entity_id",
-            |m: &RefreshTriggerByClientScRsp| { &m.trigger_entity_id },
-            |m: &mut RefreshTriggerByClientScRsp| { &mut m.trigger_entity_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "refresh_trigger",
-            |m: &RefreshTriggerByClientScRsp| { &m.refresh_trigger },
-            |m: &mut RefreshTriggerByClientScRsp| { &mut m.refresh_trigger },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RefreshTriggerByClientScRsp>(
             "RefreshTriggerByClientScRsp",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for RefreshTriggerByClientScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                58 => {
-                    self.trigger_name = is.read_string()?;
-                },
-                88 => {
-                    self.trigger_entity_id = is.read_uint32()?;
+                120 => {
+                    self.JGHJDPLEPAC = is.read_uint32()?;
                 },
                 40 => {
-                    self.refresh_trigger = is.read_bool()?;
+                    self.INGKOBLIHGP = is.read_bool()?;
+                },
+                98 => {
+                    self.DGGCFCBNILB = is.read_string()?;
+                },
+                56 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,17 +118,17 @@ impl ::protobuf::Message for RefreshTriggerByClientScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+        if self.JGHJDPLEPAC != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.JGHJDPLEPAC);
         }
-        if !self.trigger_name.is_empty() {
-            my_size += ::protobuf::rt::string_size(7, &self.trigger_name);
-        }
-        if self.trigger_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.trigger_entity_id);
-        }
-        if self.refresh_trigger != false {
+        if self.INGKOBLIHGP != false {
             my_size += 1 + 1;
+        }
+        if !self.DGGCFCBNILB.is_empty() {
+            my_size += ::protobuf::rt::string_size(12, &self.DGGCFCBNILB);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for RefreshTriggerByClientScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.JGHJDPLEPAC != 0 {
+            os.write_uint32(15, self.JGHJDPLEPAC)?;
+        }
+        if self.INGKOBLIHGP != false {
+            os.write_bool(5, self.INGKOBLIHGP)?;
+        }
+        if !self.DGGCFCBNILB.is_empty() {
+            os.write_string(12, &self.DGGCFCBNILB)?;
+        }
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
-        }
-        if !self.trigger_name.is_empty() {
-            os.write_string(7, &self.trigger_name)?;
-        }
-        if self.trigger_entity_id != 0 {
-            os.write_uint32(11, self.trigger_entity_id)?;
-        }
-        if self.refresh_trigger != false {
-            os.write_bool(5, self.refresh_trigger)?;
+            os.write_uint32(7, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for RefreshTriggerByClientScRsp {
     }
 
     fn clear(&mut self) {
+        self.JGHJDPLEPAC = 0;
+        self.INGKOBLIHGP = false;
+        self.DGGCFCBNILB.clear();
         self.retcode = 0;
-        self.trigger_name.clear();
-        self.trigger_entity_id = 0;
-        self.refresh_trigger = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RefreshTriggerByClientScRsp {
         static instance: RefreshTriggerByClientScRsp = RefreshTriggerByClientScRsp {
+            JGHJDPLEPAC: 0,
+            INGKOBLIHGP: false,
+            DGGCFCBNILB: ::std::string::String::new(),
             retcode: 0,
-            trigger_name: ::std::string::String::new(),
-            trigger_entity_id: 0,
-            refresh_trigger: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,12 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for RefreshTriggerByClientScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!RefreshTriggerByClientScRsp.proto\"\xaf\x01\n\x1bRefreshTriggerByClie\
-    ntScRsp\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcode\x12!\n\x0ctr\
-    igger_name\x18\x07\x20\x01(\tR\x0btriggerName\x12*\n\x11trigger_entity_i\
-    d\x18\x0b\x20\x01(\rR\x0ftriggerEntityId\x12'\n\x0frefresh_trigger\x18\
-    \x05\x20\x01(\x08R\x0erefreshTriggerB\x15\n\x13emu.lunarcore.protob\x06p\
-    roto3\
+    \n!RefreshTriggerByClientScRsp.proto\"\x9d\x01\n\x1bRefreshTriggerByClie\
+    ntScRsp\x12\x20\n\x0bJGHJDPLEPAC\x18\x0f\x20\x01(\rR\x0bJGHJDPLEPAC\x12\
+    \x20\n\x0bINGKOBLIHGP\x18\x05\x20\x01(\x08R\x0bINGKOBLIHGP\x12\x20\n\x0b\
+    DGGCFCBNILB\x18\x0c\x20\x01(\tR\x0bDGGCFCBNILB\x12\x18\n\x07retcode\x18\
+    \x07\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

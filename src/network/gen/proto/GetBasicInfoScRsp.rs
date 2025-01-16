@@ -29,26 +29,26 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetBasicInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetBasicInfoScRsp.cur_day)
-    pub cur_day: u32,
     // @@protoc_insertion_point(field:GetBasicInfoScRsp.week_cocoon_finished_count)
     pub week_cocoon_finished_count: u32,
-    // @@protoc_insertion_point(field:GetBasicInfoScRsp.exchange_times)
-    pub exchange_times: u32,
-    // @@protoc_insertion_point(field:GetBasicInfoScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:GetBasicInfoScRsp.next_recover_time)
-    pub next_recover_time: i64,
-    // @@protoc_insertion_point(field:GetBasicInfoScRsp.player_setting_info)
-    pub player_setting_info: ::protobuf::MessageField<super::PlayerSettingInfo::PlayerSettingInfo>,
-    // @@protoc_insertion_point(field:GetBasicInfoScRsp.gameplay_birthday)
-    pub gameplay_birthday: u32,
-    // @@protoc_insertion_point(field:GetBasicInfoScRsp.is_gender_set)
-    pub is_gender_set: bool,
+    // @@protoc_insertion_point(field:GetBasicInfoScRsp.gender)
+    pub gender: u32,
     // @@protoc_insertion_point(field:GetBasicInfoScRsp.last_set_nickname_time)
     pub last_set_nickname_time: i64,
-    // @@protoc_insertion_point(field:GetBasicInfoScRsp.Gender)
-    pub Gender: u32,
+    // @@protoc_insertion_point(field:GetBasicInfoScRsp.cur_day)
+    pub cur_day: u32,
+    // @@protoc_insertion_point(field:GetBasicInfoScRsp.player_setting_info)
+    pub player_setting_info: ::protobuf::MessageField<super::JCPBMBJDOIM::JCPBMBJDOIM>,
+    // @@protoc_insertion_point(field:GetBasicInfoScRsp.next_recover_time)
+    pub next_recover_time: i64,
+    // @@protoc_insertion_point(field:GetBasicInfoScRsp.is_gender_set)
+    pub is_gender_set: bool,
+    // @@protoc_insertion_point(field:GetBasicInfoScRsp.gameplay_birthday)
+    pub gameplay_birthday: u32,
+    // @@protoc_insertion_point(field:GetBasicInfoScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetBasicInfoScRsp.exchange_times)
+    pub exchange_times: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetBasicInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -69,44 +69,14 @@ impl GetBasicInfoScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cur_day",
-            |m: &GetBasicInfoScRsp| { &m.cur_day },
-            |m: &mut GetBasicInfoScRsp| { &mut m.cur_day },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "week_cocoon_finished_count",
             |m: &GetBasicInfoScRsp| { &m.week_cocoon_finished_count },
             |m: &mut GetBasicInfoScRsp| { &mut m.week_cocoon_finished_count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "exchange_times",
-            |m: &GetBasicInfoScRsp| { &m.exchange_times },
-            |m: &mut GetBasicInfoScRsp| { &mut m.exchange_times },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetBasicInfoScRsp| { &m.retcode },
-            |m: &mut GetBasicInfoScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "next_recover_time",
-            |m: &GetBasicInfoScRsp| { &m.next_recover_time },
-            |m: &mut GetBasicInfoScRsp| { &mut m.next_recover_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerSettingInfo::PlayerSettingInfo>(
-            "player_setting_info",
-            |m: &GetBasicInfoScRsp| { &m.player_setting_info },
-            |m: &mut GetBasicInfoScRsp| { &mut m.player_setting_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "gameplay_birthday",
-            |m: &GetBasicInfoScRsp| { &m.gameplay_birthday },
-            |m: &mut GetBasicInfoScRsp| { &mut m.gameplay_birthday },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_gender_set",
-            |m: &GetBasicInfoScRsp| { &m.is_gender_set },
-            |m: &mut GetBasicInfoScRsp| { &mut m.is_gender_set },
+            "gender",
+            |m: &GetBasicInfoScRsp| { &m.gender },
+            |m: &mut GetBasicInfoScRsp| { &mut m.gender },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "last_set_nickname_time",
@@ -114,9 +84,39 @@ impl GetBasicInfoScRsp {
             |m: &mut GetBasicInfoScRsp| { &mut m.last_set_nickname_time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "Gender",
-            |m: &GetBasicInfoScRsp| { &m.Gender },
-            |m: &mut GetBasicInfoScRsp| { &mut m.Gender },
+            "cur_day",
+            |m: &GetBasicInfoScRsp| { &m.cur_day },
+            |m: &mut GetBasicInfoScRsp| { &mut m.cur_day },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JCPBMBJDOIM::JCPBMBJDOIM>(
+            "player_setting_info",
+            |m: &GetBasicInfoScRsp| { &m.player_setting_info },
+            |m: &mut GetBasicInfoScRsp| { &mut m.player_setting_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "next_recover_time",
+            |m: &GetBasicInfoScRsp| { &m.next_recover_time },
+            |m: &mut GetBasicInfoScRsp| { &mut m.next_recover_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_gender_set",
+            |m: &GetBasicInfoScRsp| { &m.is_gender_set },
+            |m: &mut GetBasicInfoScRsp| { &mut m.is_gender_set },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "gameplay_birthday",
+            |m: &GetBasicInfoScRsp| { &m.gameplay_birthday },
+            |m: &mut GetBasicInfoScRsp| { &mut m.gameplay_birthday },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GetBasicInfoScRsp| { &m.retcode },
+            |m: &mut GetBasicInfoScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "exchange_times",
+            |m: &GetBasicInfoScRsp| { &m.exchange_times },
+            |m: &mut GetBasicInfoScRsp| { &mut m.exchange_times },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetBasicInfoScRsp>(
             "GetBasicInfoScRsp",
@@ -136,35 +136,35 @@ impl ::protobuf::Message for GetBasicInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.cur_day = is.read_uint32()?;
-                },
-                112 => {
+                80 => {
                     self.week_cocoon_finished_count = is.read_uint32()?;
                 },
-                8 => {
-                    self.exchange_times = is.read_uint32()?;
+                112 => {
+                    self.gender = is.read_uint32()?;
                 },
-                24 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                96 => {
-                    self.next_recover_time = is.read_int64()?;
-                },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_setting_info)?;
+                48 => {
+                    self.last_set_nickname_time = is.read_int64()?;
                 },
                 32 => {
+                    self.cur_day = is.read_uint32()?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_setting_info)?;
+                },
+                24 => {
+                    self.next_recover_time = is.read_int64()?;
+                },
+                64 => {
+                    self.is_gender_set = is.read_bool()?;
+                },
+                40 => {
                     self.gameplay_birthday = is.read_uint32()?;
                 },
                 16 => {
-                    self.is_gender_set = is.read_bool()?;
+                    self.retcode = is.read_uint32()?;
                 },
-                64 => {
-                    self.last_set_nickname_time = is.read_int64()?;
-                },
-                80 => {
-                    self.Gender = is.read_uint32()?;
+                8 => {
+                    self.exchange_times = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -178,36 +178,36 @@ impl ::protobuf::Message for GetBasicInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.cur_day != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.cur_day);
-        }
         if self.week_cocoon_finished_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.week_cocoon_finished_count);
+            my_size += ::protobuf::rt::uint32_size(10, self.week_cocoon_finished_count);
         }
-        if self.exchange_times != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.exchange_times);
+        if self.gender != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.gender);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+        if self.last_set_nickname_time != 0 {
+            my_size += ::protobuf::rt::int64_size(6, self.last_set_nickname_time);
         }
-        if self.next_recover_time != 0 {
-            my_size += ::protobuf::rt::int64_size(12, self.next_recover_time);
+        if self.cur_day != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.cur_day);
         }
         if let Some(v) = self.player_setting_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.gameplay_birthday != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.gameplay_birthday);
+        if self.next_recover_time != 0 {
+            my_size += ::protobuf::rt::int64_size(3, self.next_recover_time);
         }
         if self.is_gender_set != false {
             my_size += 1 + 1;
         }
-        if self.last_set_nickname_time != 0 {
-            my_size += ::protobuf::rt::int64_size(8, self.last_set_nickname_time);
+        if self.gameplay_birthday != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.gameplay_birthday);
         }
-        if self.Gender != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.Gender);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+        }
+        if self.exchange_times != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.exchange_times);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -215,35 +215,35 @@ impl ::protobuf::Message for GetBasicInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.cur_day != 0 {
-            os.write_uint32(5, self.cur_day)?;
-        }
         if self.week_cocoon_finished_count != 0 {
-            os.write_uint32(14, self.week_cocoon_finished_count)?;
+            os.write_uint32(10, self.week_cocoon_finished_count)?;
+        }
+        if self.gender != 0 {
+            os.write_uint32(14, self.gender)?;
+        }
+        if self.last_set_nickname_time != 0 {
+            os.write_int64(6, self.last_set_nickname_time)?;
+        }
+        if self.cur_day != 0 {
+            os.write_uint32(4, self.cur_day)?;
+        }
+        if let Some(v) = self.player_setting_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        }
+        if self.next_recover_time != 0 {
+            os.write_int64(3, self.next_recover_time)?;
+        }
+        if self.is_gender_set != false {
+            os.write_bool(8, self.is_gender_set)?;
+        }
+        if self.gameplay_birthday != 0 {
+            os.write_uint32(5, self.gameplay_birthday)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(2, self.retcode)?;
         }
         if self.exchange_times != 0 {
             os.write_uint32(1, self.exchange_times)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
-        }
-        if self.next_recover_time != 0 {
-            os.write_int64(12, self.next_recover_time)?;
-        }
-        if let Some(v) = self.player_setting_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        }
-        if self.gameplay_birthday != 0 {
-            os.write_uint32(4, self.gameplay_birthday)?;
-        }
-        if self.is_gender_set != false {
-            os.write_bool(2, self.is_gender_set)?;
-        }
-        if self.last_set_nickname_time != 0 {
-            os.write_int64(8, self.last_set_nickname_time)?;
-        }
-        if self.Gender != 0 {
-            os.write_uint32(10, self.Gender)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -262,31 +262,31 @@ impl ::protobuf::Message for GetBasicInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.cur_day = 0;
         self.week_cocoon_finished_count = 0;
-        self.exchange_times = 0;
-        self.retcode = 0;
-        self.next_recover_time = 0;
-        self.player_setting_info.clear();
-        self.gameplay_birthday = 0;
-        self.is_gender_set = false;
+        self.gender = 0;
         self.last_set_nickname_time = 0;
-        self.Gender = 0;
+        self.cur_day = 0;
+        self.player_setting_info.clear();
+        self.next_recover_time = 0;
+        self.is_gender_set = false;
+        self.gameplay_birthday = 0;
+        self.retcode = 0;
+        self.exchange_times = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetBasicInfoScRsp {
         static instance: GetBasicInfoScRsp = GetBasicInfoScRsp {
-            cur_day: 0,
             week_cocoon_finished_count: 0,
-            exchange_times: 0,
-            retcode: 0,
-            next_recover_time: 0,
-            player_setting_info: ::protobuf::MessageField::none(),
-            gameplay_birthday: 0,
-            is_gender_set: false,
+            gender: 0,
             last_set_nickname_time: 0,
-            Gender: 0,
+            cur_day: 0,
+            player_setting_info: ::protobuf::MessageField::none(),
+            next_recover_time: 0,
+            is_gender_set: false,
+            gameplay_birthday: 0,
+            retcode: 0,
+            exchange_times: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -311,18 +311,17 @@ impl ::protobuf::reflect::ProtobufValue for GetBasicInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17GetBasicInfoScRsp.proto\x1a\x17PlayerSettingInfo.proto\"\xb8\x03\n\
-    \x11GetBasicInfoScRsp\x12\x17\n\x07cur_day\x18\x05\x20\x01(\rR\x06curDay\
-    \x12;\n\x1aweek_cocoon_finished_count\x18\x0e\x20\x01(\rR\x17weekCocoonF\
-    inishedCount\x12%\n\x0eexchange_times\x18\x01\x20\x01(\rR\rexchangeTimes\
-    \x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12*\n\x11next_reco\
-    ver_time\x18\x0c\x20\x01(\x03R\x0fnextRecoverTime\x12B\n\x13player_setti\
-    ng_info\x18\t\x20\x01(\x0b2\x12.PlayerSettingInfoR\x11playerSettingInfo\
-    \x12+\n\x11gameplay_birthday\x18\x04\x20\x01(\rR\x10gameplayBirthday\x12\
-    \"\n\ris_gender_set\x18\x02\x20\x01(\x08R\x0bisGenderSet\x123\n\x16last_\
-    set_nickname_time\x18\x08\x20\x01(\x03R\x13lastSetNicknameTime\x12\x16\n\
-    \x06Gender\x18\n\x20\x01(\rR\x06GenderB\x15\n\x13emu.lunarcore.protob\
-    \x06proto3\
+    \n\x17GetBasicInfoScRsp.proto\x1a\x11JCPBMBJDOIM.proto\"\xb2\x03\n\x11Ge\
+    tBasicInfoScRsp\x12;\n\x1aweek_cocoon_finished_count\x18\n\x20\x01(\rR\
+    \x17weekCocoonFinishedCount\x12\x16\n\x06gender\x18\x0e\x20\x01(\rR\x06g\
+    ender\x123\n\x16last_set_nickname_time\x18\x06\x20\x01(\x03R\x13lastSetN\
+    icknameTime\x12\x17\n\x07cur_day\x18\x04\x20\x01(\rR\x06curDay\x12<\n\
+    \x13player_setting_info\x18\x0f\x20\x01(\x0b2\x0c.JCPBMBJDOIMR\x11player\
+    SettingInfo\x12*\n\x11next_recover_time\x18\x03\x20\x01(\x03R\x0fnextRec\
+    overTime\x12\"\n\ris_gender_set\x18\x08\x20\x01(\x08R\x0bisGenderSet\x12\
+    +\n\x11gameplay_birthday\x18\x05\x20\x01(\rR\x10gameplayBirthday\x12\x18\
+    \n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12%\n\x0eexchange_times\
+    \x18\x01\x20\x01(\rR\rexchangeTimesb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -340,7 +339,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::PlayerSettingInfo::file_descriptor().clone());
+            deps.push(super::JCPBMBJDOIM::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetBasicInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetAvatarDataCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetAvatarDataCsReq.avatar_id_list)
-    pub avatar_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetAvatarDataCsReq.is_get_all)
-    pub is_get_all: bool,
+    // @@protoc_insertion_point(field:GetAvatarDataCsReq.LECAMFAFAFB)
+    pub LECAMFAFAFB: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetAvatarDataCsReq.GAMOMGLNPPE)
+    pub GAMOMGLNPPE: bool,
     // special fields
     // @@protoc_insertion_point(special_field:GetAvatarDataCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl GetAvatarDataCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_id_list",
-            |m: &GetAvatarDataCsReq| { &m.avatar_id_list },
-            |m: &mut GetAvatarDataCsReq| { &mut m.avatar_id_list },
+            "LECAMFAFAFB",
+            |m: &GetAvatarDataCsReq| { &m.LECAMFAFAFB },
+            |m: &mut GetAvatarDataCsReq| { &mut m.LECAMFAFAFB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_get_all",
-            |m: &GetAvatarDataCsReq| { &m.is_get_all },
-            |m: &mut GetAvatarDataCsReq| { &mut m.is_get_all },
+            "GAMOMGLNPPE",
+            |m: &GetAvatarDataCsReq| { &m.GAMOMGLNPPE },
+            |m: &mut GetAvatarDataCsReq| { &mut m.GAMOMGLNPPE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetAvatarDataCsReq>(
             "GetAvatarDataCsReq",
@@ -80,14 +80,14 @@ impl ::protobuf::Message for GetAvatarDataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    is.read_repeated_packed_uint32_into(&mut self.avatar_id_list)?;
+                34 => {
+                    is.read_repeated_packed_uint32_into(&mut self.LECAMFAFAFB)?;
                 },
-                64 => {
-                    self.avatar_id_list.push(is.read_uint32()?);
+                32 => {
+                    self.LECAMFAFAFB.push(is.read_uint32()?);
                 },
-                16 => {
-                    self.is_get_all = is.read_bool()?;
+                24 => {
+                    self.GAMOMGLNPPE = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,10 +101,10 @@ impl ::protobuf::Message for GetAvatarDataCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.avatar_id_list {
-            my_size += ::protobuf::rt::uint32_size(8, *value);
+        for value in &self.LECAMFAFAFB {
+            my_size += ::protobuf::rt::uint32_size(4, *value);
         };
-        if self.is_get_all != false {
+        if self.GAMOMGLNPPE != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -113,11 +113,11 @@ impl ::protobuf::Message for GetAvatarDataCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.avatar_id_list {
-            os.write_uint32(8, *v)?;
+        for v in &self.LECAMFAFAFB {
+            os.write_uint32(4, *v)?;
         };
-        if self.is_get_all != false {
-            os.write_bool(2, self.is_get_all)?;
+        if self.GAMOMGLNPPE != false {
+            os.write_bool(3, self.GAMOMGLNPPE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -136,15 +136,15 @@ impl ::protobuf::Message for GetAvatarDataCsReq {
     }
 
     fn clear(&mut self) {
-        self.avatar_id_list.clear();
-        self.is_get_all = false;
+        self.LECAMFAFAFB.clear();
+        self.GAMOMGLNPPE = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetAvatarDataCsReq {
         static instance: GetAvatarDataCsReq = GetAvatarDataCsReq {
-            avatar_id_list: ::std::vec::Vec::new(),
-            is_get_all: false,
+            LECAMFAFAFB: ::std::vec::Vec::new(),
+            GAMOMGLNPPE: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -169,9 +169,9 @@ impl ::protobuf::reflect::ProtobufValue for GetAvatarDataCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18GetAvatarDataCsReq.proto\"X\n\x12GetAvatarDataCsReq\x12$\n\x0eavat\
-    ar_id_list\x18\x08\x20\x03(\rR\x0cavatarIdList\x12\x1c\n\nis_get_all\x18\
-    \x02\x20\x01(\x08R\x08isGetAllB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x18GetAvatarDataCsReq.proto\"X\n\x12GetAvatarDataCsReq\x12\x20\n\x0bL\
+    ECAMFAFAFB\x18\x04\x20\x03(\rR\x0bLECAMFAFAFB\x12\x20\n\x0bGAMOMGLNPPE\
+    \x18\x03\x20\x01(\x08R\x0bGAMOMGLNPPEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

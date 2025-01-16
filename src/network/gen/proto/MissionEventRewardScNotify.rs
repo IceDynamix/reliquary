@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MissionEventRewardScNotify {
     // message fields
-    // @@protoc_insertion_point(field:MissionEventRewardScNotify.CBMBKGCHMOK)
-    pub CBMBKGCHMOK: u32,
-    // @@protoc_insertion_point(field:MissionEventRewardScNotify.ELPMNKHEPKJ)
-    pub ELPMNKHEPKJ: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:MissionEventRewardScNotify.AECJKNIGHJK)
+    pub AECJKNIGHJK: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:MissionEventRewardScNotify.IGBJPCHPPKP)
+    pub IGBJPCHPPKP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MissionEventRewardScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl MissionEventRewardScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CBMBKGCHMOK",
-            |m: &MissionEventRewardScNotify| { &m.CBMBKGCHMOK },
-            |m: &mut MissionEventRewardScNotify| { &mut m.CBMBKGCHMOK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "ELPMNKHEPKJ",
-            |m: &MissionEventRewardScNotify| { &m.ELPMNKHEPKJ },
-            |m: &mut MissionEventRewardScNotify| { &mut m.ELPMNKHEPKJ },
+            "AECJKNIGHJK",
+            |m: &MissionEventRewardScNotify| { &m.AECJKNIGHJK },
+            |m: &mut MissionEventRewardScNotify| { &mut m.AECJKNIGHJK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IGBJPCHPPKP",
+            |m: &MissionEventRewardScNotify| { &m.IGBJPCHPPKP },
+            |m: &mut MissionEventRewardScNotify| { &mut m.IGBJPCHPPKP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MissionEventRewardScNotify>(
             "MissionEventRewardScNotify",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for MissionEventRewardScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.CBMBKGCHMOK = is.read_uint32()?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AECJKNIGHJK)?;
                 },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ELPMNKHEPKJ)?;
+                64 => {
+                    self.IGBJPCHPPKP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,12 +98,12 @@ impl ::protobuf::Message for MissionEventRewardScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CBMBKGCHMOK != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.CBMBKGCHMOK);
-        }
-        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
+        if let Some(v) = self.AECJKNIGHJK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.IGBJPCHPPKP != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.IGBJPCHPPKP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for MissionEventRewardScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CBMBKGCHMOK != 0 {
-            os.write_uint32(5, self.CBMBKGCHMOK)?;
+        if let Some(v) = self.AECJKNIGHJK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if self.IGBJPCHPPKP != 0 {
+            os.write_uint32(8, self.IGBJPCHPPKP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for MissionEventRewardScNotify {
     }
 
     fn clear(&mut self) {
-        self.CBMBKGCHMOK = 0;
-        self.ELPMNKHEPKJ.clear();
+        self.AECJKNIGHJK.clear();
+        self.IGBJPCHPPKP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MissionEventRewardScNotify {
         static instance: MissionEventRewardScNotify = MissionEventRewardScNotify {
-            CBMBKGCHMOK: 0,
-            ELPMNKHEPKJ: ::protobuf::MessageField::none(),
+            AECJKNIGHJK: ::protobuf::MessageField::none(),
+            IGBJPCHPPKP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for MissionEventRewardScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20MissionEventRewardScNotify.proto\x1a\x0eItemList.proto\"k\n\x1aMis\
-    sionEventRewardScNotify\x12\x20\n\x0bCBMBKGCHMOK\x18\x05\x20\x01(\rR\x0b\
-    CBMBKGCHMOK\x12+\n\x0bELPMNKHEPKJ\x18\x08\x20\x01(\x0b2\t.ItemListR\x0bE\
-    LPMNKHEPKJb\x06proto3\
+    sionEventRewardScNotify\x12+\n\x0bAECJKNIGHJK\x18\x02\x20\x01(\x0b2\t.It\
+    emListR\x0bAECJKNIGHJK\x12\x20\n\x0bIGBJPCHPPKP\x18\x08\x20\x01(\rR\x0bI\
+    GBJPCHPPKPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

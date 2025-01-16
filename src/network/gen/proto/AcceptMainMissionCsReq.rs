@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AcceptMainMissionCsReq {
     // message fields
-    // @@protoc_insertion_point(field:AcceptMainMissionCsReq.main_mission_id)
-    pub main_mission_id: u32,
+    // @@protoc_insertion_point(field:AcceptMainMissionCsReq.BOJKIHLNEEG)
+    pub BOJKIHLNEEG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AcceptMainMissionCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl AcceptMainMissionCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "main_mission_id",
-            |m: &AcceptMainMissionCsReq| { &m.main_mission_id },
-            |m: &mut AcceptMainMissionCsReq| { &mut m.main_mission_id },
+            "BOJKIHLNEEG",
+            |m: &AcceptMainMissionCsReq| { &m.BOJKIHLNEEG },
+            |m: &mut AcceptMainMissionCsReq| { &mut m.BOJKIHLNEEG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AcceptMainMissionCsReq>(
             "AcceptMainMissionCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for AcceptMainMissionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.main_mission_id = is.read_uint32()?;
+                120 => {
+                    self.BOJKIHLNEEG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for AcceptMainMissionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.main_mission_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.main_mission_id);
+        if self.BOJKIHLNEEG != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.BOJKIHLNEEG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for AcceptMainMissionCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.main_mission_id != 0 {
-            os.write_uint32(8, self.main_mission_id)?;
+        if self.BOJKIHLNEEG != 0 {
+            os.write_uint32(15, self.BOJKIHLNEEG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for AcceptMainMissionCsReq {
     }
 
     fn clear(&mut self) {
-        self.main_mission_id = 0;
+        self.BOJKIHLNEEG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AcceptMainMissionCsReq {
         static instance: AcceptMainMissionCsReq = AcceptMainMissionCsReq {
-            main_mission_id: 0,
+            BOJKIHLNEEG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for AcceptMainMissionCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cAcceptMainMissionCsReq.proto\"@\n\x16AcceptMainMissionCsReq\x12&\n\
-    \x0fmain_mission_id\x18\x08\x20\x01(\rR\rmainMissionIdB\x15\n\x13emu.lun\
-    arcore.protob\x06proto3\
+    \n\x1cAcceptMainMissionCsReq.proto\":\n\x16AcceptMainMissionCsReq\x12\
+    \x20\n\x0bBOJKIHLNEEG\x18\x0f\x20\x01(\rR\x0bBOJKIHLNEEGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

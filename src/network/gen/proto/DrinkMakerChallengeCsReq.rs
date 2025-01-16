@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DrinkMakerChallengeCsReq {
     // message fields
-    // @@protoc_insertion_point(field:DrinkMakerChallengeCsReq.CMBKNELNFEM)
-    pub CMBKNELNFEM: ::protobuf::MessageField<super::PNLHADCBNMN::PNLHADCBNMN>,
-    // @@protoc_insertion_point(field:DrinkMakerChallengeCsReq.GPKEAKPHIPA)
-    pub GPKEAKPHIPA: u32,
+    // @@protoc_insertion_point(field:DrinkMakerChallengeCsReq.JBHNFHOCFFP)
+    pub JBHNFHOCFFP: ::protobuf::MessageField<super::HHIINBEPCPI::HHIINBEPCPI>,
+    // @@protoc_insertion_point(field:DrinkMakerChallengeCsReq.PGGMKGMBBKJ)
+    pub PGGMKGMBBKJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DrinkMakerChallengeCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl DrinkMakerChallengeCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PNLHADCBNMN::PNLHADCBNMN>(
-            "CMBKNELNFEM",
-            |m: &DrinkMakerChallengeCsReq| { &m.CMBKNELNFEM },
-            |m: &mut DrinkMakerChallengeCsReq| { &mut m.CMBKNELNFEM },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HHIINBEPCPI::HHIINBEPCPI>(
+            "JBHNFHOCFFP",
+            |m: &DrinkMakerChallengeCsReq| { &m.JBHNFHOCFFP },
+            |m: &mut DrinkMakerChallengeCsReq| { &mut m.JBHNFHOCFFP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GPKEAKPHIPA",
-            |m: &DrinkMakerChallengeCsReq| { &m.GPKEAKPHIPA },
-            |m: &mut DrinkMakerChallengeCsReq| { &mut m.GPKEAKPHIPA },
+            "PGGMKGMBBKJ",
+            |m: &DrinkMakerChallengeCsReq| { &m.PGGMKGMBBKJ },
+            |m: &mut DrinkMakerChallengeCsReq| { &mut m.PGGMKGMBBKJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DrinkMakerChallengeCsReq>(
             "DrinkMakerChallengeCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for DrinkMakerChallengeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CMBKNELNFEM)?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JBHNFHOCFFP)?;
                 },
                 16 => {
-                    self.GPKEAKPHIPA = is.read_uint32()?;
+                    self.PGGMKGMBBKJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,12 +98,12 @@ impl ::protobuf::Message for DrinkMakerChallengeCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.CMBKNELNFEM.as_ref() {
+        if let Some(v) = self.JBHNFHOCFFP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.GPKEAKPHIPA != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.GPKEAKPHIPA);
+        if self.PGGMKGMBBKJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.PGGMKGMBBKJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for DrinkMakerChallengeCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.CMBKNELNFEM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if let Some(v) = self.JBHNFHOCFFP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
-        if self.GPKEAKPHIPA != 0 {
-            os.write_uint32(2, self.GPKEAKPHIPA)?;
+        if self.PGGMKGMBBKJ != 0 {
+            os.write_uint32(2, self.PGGMKGMBBKJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for DrinkMakerChallengeCsReq {
     }
 
     fn clear(&mut self) {
-        self.CMBKNELNFEM.clear();
-        self.GPKEAKPHIPA = 0;
+        self.JBHNFHOCFFP.clear();
+        self.PGGMKGMBBKJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DrinkMakerChallengeCsReq {
         static instance: DrinkMakerChallengeCsReq = DrinkMakerChallengeCsReq {
-            CMBKNELNFEM: ::protobuf::MessageField::none(),
-            GPKEAKPHIPA: 0,
+            JBHNFHOCFFP: ::protobuf::MessageField::none(),
+            PGGMKGMBBKJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for DrinkMakerChallengeCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eDrinkMakerChallengeCsReq.proto\x1a\x11PNLHADCBNMN.proto\"l\n\x18Dr\
-    inkMakerChallengeCsReq\x12.\n\x0bCMBKNELNFEM\x18\x03\x20\x01(\x0b2\x0c.P\
-    NLHADCBNMNR\x0bCMBKNELNFEM\x12\x20\n\x0bGPKEAKPHIPA\x18\x02\x20\x01(\rR\
-    \x0bGPKEAKPHIPAb\x06proto3\
+    \n\x1eDrinkMakerChallengeCsReq.proto\x1a\x11HHIINBEPCPI.proto\"l\n\x18Dr\
+    inkMakerChallengeCsReq\x12.\n\x0bJBHNFHOCFFP\x18\x0f\x20\x01(\x0b2\x0c.H\
+    HIINBEPCPIR\x0bJBHNFHOCFFP\x12\x20\n\x0bPGGMKGMBBKJ\x18\x02\x20\x01(\rR\
+    \x0bPGGMKGMBBKJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::PNLHADCBNMN::file_descriptor().clone());
+            deps.push(super::HHIINBEPCPI::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(DrinkMakerChallengeCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyActionResultScNotify {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyActionResultScNotify.HAPALBNOBAB)
-    pub HAPALBNOBAB: ::std::vec::Vec<super::MonopolyActionResult::MonopolyActionResult>,
+    // @@protoc_insertion_point(field:MonopolyActionResultScNotify.HHOPOADNECF)
+    pub HHOPOADNECF: ::std::vec::Vec<super::MonopolyActionResult::MonopolyActionResult>,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyActionResultScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl MonopolyActionResultScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HAPALBNOBAB",
-            |m: &MonopolyActionResultScNotify| { &m.HAPALBNOBAB },
-            |m: &mut MonopolyActionResultScNotify| { &mut m.HAPALBNOBAB },
+            "HHOPOADNECF",
+            |m: &MonopolyActionResultScNotify| { &m.HHOPOADNECF },
+            |m: &mut MonopolyActionResultScNotify| { &mut m.HHOPOADNECF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyActionResultScNotify>(
             "MonopolyActionResultScNotify",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for MonopolyActionResultScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.HAPALBNOBAB.push(is.read_message()?);
+                34 => {
+                    self.HHOPOADNECF.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for MonopolyActionResultScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.HAPALBNOBAB {
+        for value in &self.HHOPOADNECF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -98,8 +98,8 @@ impl ::protobuf::Message for MonopolyActionResultScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.HAPALBNOBAB {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        for v in &self.HHOPOADNECF {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -118,13 +118,13 @@ impl ::protobuf::Message for MonopolyActionResultScNotify {
     }
 
     fn clear(&mut self) {
-        self.HAPALBNOBAB.clear();
+        self.HHOPOADNECF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyActionResultScNotify {
         static instance: MonopolyActionResultScNotify = MonopolyActionResultScNotify {
-            HAPALBNOBAB: ::std::vec::Vec::new(),
+            HHOPOADNECF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -150,8 +150,8 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyActionResultScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"MonopolyActionResultScNotify.proto\x1a\x1aMonopolyActionResult.proto\
-    \"W\n\x1cMonopolyActionResultScNotify\x127\n\x0bHAPALBNOBAB\x18\x01\x20\
-    \x03(\x0b2\x15.MonopolyActionResultR\x0bHAPALBNOBABb\x06proto3\
+    \"W\n\x1cMonopolyActionResultScNotify\x127\n\x0bHHOPOADNECF\x18\x04\x20\
+    \x03(\x0b2\x15.MonopolyActionResultR\x0bHHOPOADNECFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

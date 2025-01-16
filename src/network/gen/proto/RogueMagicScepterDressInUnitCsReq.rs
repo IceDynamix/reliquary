@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicScepterDressInUnitCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicScepterDressInUnitCsReq.KHOCGAGJLFD)
-    pub KHOCGAGJLFD: u32,
-    // @@protoc_insertion_point(field:RogueMagicScepterDressInUnitCsReq.DNGEHCMMIOL)
-    pub DNGEHCMMIOL: u32,
-    // @@protoc_insertion_point(field:RogueMagicScepterDressInUnitCsReq.IMEENEHMHCF)
-    pub IMEENEHMHCF: u32,
+    // @@protoc_insertion_point(field:RogueMagicScepterDressInUnitCsReq.EPIOPBNPNOJ)
+    pub EPIOPBNPNOJ: u32,
+    // @@protoc_insertion_point(field:RogueMagicScepterDressInUnitCsReq.IOFEEDEMHKO)
+    pub IOFEEDEMHKO: u32,
+    // @@protoc_insertion_point(field:RogueMagicScepterDressInUnitCsReq.DNPCFLFCPNL)
+    pub DNPCFLFCPNL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicScepterDressInUnitCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl RogueMagicScepterDressInUnitCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KHOCGAGJLFD",
-            |m: &RogueMagicScepterDressInUnitCsReq| { &m.KHOCGAGJLFD },
-            |m: &mut RogueMagicScepterDressInUnitCsReq| { &mut m.KHOCGAGJLFD },
+            "EPIOPBNPNOJ",
+            |m: &RogueMagicScepterDressInUnitCsReq| { &m.EPIOPBNPNOJ },
+            |m: &mut RogueMagicScepterDressInUnitCsReq| { &mut m.EPIOPBNPNOJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DNGEHCMMIOL",
-            |m: &RogueMagicScepterDressInUnitCsReq| { &m.DNGEHCMMIOL },
-            |m: &mut RogueMagicScepterDressInUnitCsReq| { &mut m.DNGEHCMMIOL },
+            "IOFEEDEMHKO",
+            |m: &RogueMagicScepterDressInUnitCsReq| { &m.IOFEEDEMHKO },
+            |m: &mut RogueMagicScepterDressInUnitCsReq| { &mut m.IOFEEDEMHKO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IMEENEHMHCF",
-            |m: &RogueMagicScepterDressInUnitCsReq| { &m.IMEENEHMHCF },
-            |m: &mut RogueMagicScepterDressInUnitCsReq| { &mut m.IMEENEHMHCF },
+            "DNPCFLFCPNL",
+            |m: &RogueMagicScepterDressInUnitCsReq| { &m.DNPCFLFCPNL },
+            |m: &mut RogueMagicScepterDressInUnitCsReq| { &mut m.DNPCFLFCPNL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicScepterDressInUnitCsReq>(
             "RogueMagicScepterDressInUnitCsReq",
@@ -88,13 +88,13 @@ impl ::protobuf::Message for RogueMagicScepterDressInUnitCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 24 => {
-                    self.KHOCGAGJLFD = is.read_uint32()?;
+                    self.EPIOPBNPNOJ = is.read_uint32()?;
                 },
-                56 => {
-                    self.DNGEHCMMIOL = is.read_uint32()?;
+                72 => {
+                    self.IOFEEDEMHKO = is.read_uint32()?;
                 },
-                104 => {
-                    self.IMEENEHMHCF = is.read_uint32()?;
+                112 => {
+                    self.DNPCFLFCPNL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for RogueMagicScepterDressInUnitCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KHOCGAGJLFD != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.KHOCGAGJLFD);
+        if self.EPIOPBNPNOJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.EPIOPBNPNOJ);
         }
-        if self.DNGEHCMMIOL != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.DNGEHCMMIOL);
+        if self.IOFEEDEMHKO != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.IOFEEDEMHKO);
         }
-        if self.IMEENEHMHCF != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.IMEENEHMHCF);
+        if self.DNPCFLFCPNL != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.DNPCFLFCPNL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for RogueMagicScepterDressInUnitCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KHOCGAGJLFD != 0 {
-            os.write_uint32(3, self.KHOCGAGJLFD)?;
+        if self.EPIOPBNPNOJ != 0 {
+            os.write_uint32(3, self.EPIOPBNPNOJ)?;
         }
-        if self.DNGEHCMMIOL != 0 {
-            os.write_uint32(7, self.DNGEHCMMIOL)?;
+        if self.IOFEEDEMHKO != 0 {
+            os.write_uint32(9, self.IOFEEDEMHKO)?;
         }
-        if self.IMEENEHMHCF != 0 {
-            os.write_uint32(13, self.IMEENEHMHCF)?;
+        if self.DNPCFLFCPNL != 0 {
+            os.write_uint32(14, self.DNPCFLFCPNL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for RogueMagicScepterDressInUnitCsReq {
     }
 
     fn clear(&mut self) {
-        self.KHOCGAGJLFD = 0;
-        self.DNGEHCMMIOL = 0;
-        self.IMEENEHMHCF = 0;
+        self.EPIOPBNPNOJ = 0;
+        self.IOFEEDEMHKO = 0;
+        self.DNPCFLFCPNL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicScepterDressInUnitCsReq {
         static instance: RogueMagicScepterDressInUnitCsReq = RogueMagicScepterDressInUnitCsReq {
-            KHOCGAGJLFD: 0,
-            DNGEHCMMIOL: 0,
-            IMEENEHMHCF: 0,
+            EPIOPBNPNOJ: 0,
+            IOFEEDEMHKO: 0,
+            DNPCFLFCPNL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicScepterDressInUnitCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'RogueMagicScepterDressInUnitCsReq.proto\"\x89\x01\n!RogueMagicScepter\
-    DressInUnitCsReq\x12\x20\n\x0bKHOCGAGJLFD\x18\x03\x20\x01(\rR\x0bKHOCGAG\
-    JLFD\x12\x20\n\x0bDNGEHCMMIOL\x18\x07\x20\x01(\rR\x0bDNGEHCMMIOL\x12\x20\
-    \n\x0bIMEENEHMHCF\x18\r\x20\x01(\rR\x0bIMEENEHMHCFb\x06proto3\
+    DressInUnitCsReq\x12\x20\n\x0bEPIOPBNPNOJ\x18\x03\x20\x01(\rR\x0bEPIOPBN\
+    PNOJ\x12\x20\n\x0bIOFEEDEMHKO\x18\t\x20\x01(\rR\x0bIOFEEDEMHKO\x12\x20\n\
+    \x0bDNPCFLFCPNL\x18\x0e\x20\x01(\rR\x0bDNPCFLFCPNLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

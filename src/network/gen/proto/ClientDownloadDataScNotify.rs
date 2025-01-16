@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ClientDownloadDataScNotify {
     // message fields
-    // @@protoc_insertion_point(field:ClientDownloadDataScNotify.download_data)
-    pub download_data: ::protobuf::MessageField<super::ClientDownloadData::ClientDownloadData>,
+    // @@protoc_insertion_point(field:ClientDownloadDataScNotify.ADFIOHIHPMJ)
+    pub ADFIOHIHPMJ: ::protobuf::MessageField<super::GECGIJIIHDI::GECGIJIIHDI>,
     // special fields
     // @@protoc_insertion_point(special_field:ClientDownloadDataScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,10 +50,10 @@ impl ClientDownloadDataScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ClientDownloadData::ClientDownloadData>(
-            "download_data",
-            |m: &ClientDownloadDataScNotify| { &m.download_data },
-            |m: &mut ClientDownloadDataScNotify| { &mut m.download_data },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GECGIJIIHDI::GECGIJIIHDI>(
+            "ADFIOHIHPMJ",
+            |m: &ClientDownloadDataScNotify| { &m.ADFIOHIHPMJ },
+            |m: &mut ClientDownloadDataScNotify| { &mut m.ADFIOHIHPMJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ClientDownloadDataScNotify>(
             "ClientDownloadDataScNotify",
@@ -74,7 +74,7 @@ impl ::protobuf::Message for ClientDownloadDataScNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.download_data)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ADFIOHIHPMJ)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for ClientDownloadDataScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.download_data.as_ref() {
+        if let Some(v) = self.ADFIOHIHPMJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -98,7 +98,7 @@ impl ::protobuf::Message for ClientDownloadDataScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.download_data.as_ref() {
+        if let Some(v) = self.ADFIOHIHPMJ.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -118,13 +118,13 @@ impl ::protobuf::Message for ClientDownloadDataScNotify {
     }
 
     fn clear(&mut self) {
-        self.download_data.clear();
+        self.ADFIOHIHPMJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ClientDownloadDataScNotify {
         static instance: ClientDownloadDataScNotify = ClientDownloadDataScNotify {
-            download_data: ::protobuf::MessageField::none(),
+            ADFIOHIHPMJ: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,10 +149,9 @@ impl ::protobuf::reflect::ProtobufValue for ClientDownloadDataScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20ClientDownloadDataScNotify.proto\x1a\x18ClientDownloadData.proto\"\
-    V\n\x1aClientDownloadDataScNotify\x128\n\rdownload_data\x18\x02\x20\x01(\
-    \x0b2\x13.ClientDownloadDataR\x0cdownloadDataB\x15\n\x13emu.lunarcore.pr\
-    otob\x06proto3\
+    \n\x20ClientDownloadDataScNotify.proto\x1a\x11GECGIJIIHDI.proto\"L\n\x1a\
+    ClientDownloadDataScNotify\x12.\n\x0bADFIOHIHPMJ\x18\x02\x20\x01(\x0b2\
+    \x0c.GECGIJIIHDIR\x0bADFIOHIHPMJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -170,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ClientDownloadData::file_descriptor().clone());
+            deps.push(super::GECGIJIIHDI::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ClientDownloadDataScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

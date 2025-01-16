@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GameplayCounterRecoverCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GameplayCounterRecoverCsReq.PFHEGFOOLHE)
-    pub PFHEGFOOLHE: u32,
-    // @@protoc_insertion_point(field:GameplayCounterRecoverCsReq.FLEFKMDIGOF)
-    pub FLEFKMDIGOF: u32,
+    // @@protoc_insertion_point(field:GameplayCounterRecoverCsReq.KOILJFNCCFM)
+    pub KOILJFNCCFM: u32,
+    // @@protoc_insertion_point(field:GameplayCounterRecoverCsReq.CKAGPDJLBGA)
+    pub CKAGPDJLBGA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GameplayCounterRecoverCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl GameplayCounterRecoverCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PFHEGFOOLHE",
-            |m: &GameplayCounterRecoverCsReq| { &m.PFHEGFOOLHE },
-            |m: &mut GameplayCounterRecoverCsReq| { &mut m.PFHEGFOOLHE },
+            "KOILJFNCCFM",
+            |m: &GameplayCounterRecoverCsReq| { &m.KOILJFNCCFM },
+            |m: &mut GameplayCounterRecoverCsReq| { &mut m.KOILJFNCCFM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FLEFKMDIGOF",
-            |m: &GameplayCounterRecoverCsReq| { &m.FLEFKMDIGOF },
-            |m: &mut GameplayCounterRecoverCsReq| { &mut m.FLEFKMDIGOF },
+            "CKAGPDJLBGA",
+            |m: &GameplayCounterRecoverCsReq| { &m.CKAGPDJLBGA },
+            |m: &mut GameplayCounterRecoverCsReq| { &mut m.CKAGPDJLBGA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GameplayCounterRecoverCsReq>(
             "GameplayCounterRecoverCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for GameplayCounterRecoverCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.PFHEGFOOLHE = is.read_uint32()?;
+                80 => {
+                    self.KOILJFNCCFM = is.read_uint32()?;
                 },
-                32 => {
-                    self.FLEFKMDIGOF = is.read_uint32()?;
+                24 => {
+                    self.CKAGPDJLBGA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for GameplayCounterRecoverCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PFHEGFOOLHE != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.PFHEGFOOLHE);
+        if self.KOILJFNCCFM != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.KOILJFNCCFM);
         }
-        if self.FLEFKMDIGOF != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.FLEFKMDIGOF);
+        if self.CKAGPDJLBGA != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.CKAGPDJLBGA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for GameplayCounterRecoverCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PFHEGFOOLHE != 0 {
-            os.write_uint32(3, self.PFHEGFOOLHE)?;
+        if self.KOILJFNCCFM != 0 {
+            os.write_uint32(10, self.KOILJFNCCFM)?;
         }
-        if self.FLEFKMDIGOF != 0 {
-            os.write_uint32(4, self.FLEFKMDIGOF)?;
+        if self.CKAGPDJLBGA != 0 {
+            os.write_uint32(3, self.CKAGPDJLBGA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GameplayCounterRecoverCsReq {
     }
 
     fn clear(&mut self) {
-        self.PFHEGFOOLHE = 0;
-        self.FLEFKMDIGOF = 0;
+        self.KOILJFNCCFM = 0;
+        self.CKAGPDJLBGA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GameplayCounterRecoverCsReq {
         static instance: GameplayCounterRecoverCsReq = GameplayCounterRecoverCsReq {
-            PFHEGFOOLHE: 0,
-            FLEFKMDIGOF: 0,
+            KOILJFNCCFM: 0,
+            CKAGPDJLBGA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for GameplayCounterRecoverCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!GameplayCounterRecoverCsReq.proto\"a\n\x1bGameplayCounterRecoverCsReq\
-    \x12\x20\n\x0bPFHEGFOOLHE\x18\x03\x20\x01(\rR\x0bPFHEGFOOLHE\x12\x20\n\
-    \x0bFLEFKMDIGOF\x18\x04\x20\x01(\rR\x0bFLEFKMDIGOFb\x06proto3\
+    \x12\x20\n\x0bKOILJFNCCFM\x18\n\x20\x01(\rR\x0bKOILJFNCCFM\x12\x20\n\x0b\
+    CKAGPDJLBGA\x18\x03\x20\x01(\rR\x0bCKAGPDJLBGAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

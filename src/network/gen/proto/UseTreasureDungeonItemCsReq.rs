@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UseTreasureDungeonItemCsReq {
     // message fields
-    // @@protoc_insertion_point(field:UseTreasureDungeonItemCsReq.GCIMMFIDPJP)
-    pub GCIMMFIDPJP: u32,
-    // @@protoc_insertion_point(field:UseTreasureDungeonItemCsReq.HMPPFGCIFJK)
-    pub HMPPFGCIFJK: u32,
-    // @@protoc_insertion_point(field:UseTreasureDungeonItemCsReq.LGBJLFEMFOL)
-    pub LGBJLFEMFOL: u32,
+    // @@protoc_insertion_point(field:UseTreasureDungeonItemCsReq.ILOFIMODIEN)
+    pub ILOFIMODIEN: u32,
+    // @@protoc_insertion_point(field:UseTreasureDungeonItemCsReq.AKMIHHHJPON)
+    pub AKMIHHHJPON: u32,
+    // @@protoc_insertion_point(field:UseTreasureDungeonItemCsReq.DLEEJGFABLC)
+    pub DLEEJGFABLC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:UseTreasureDungeonItemCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl UseTreasureDungeonItemCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GCIMMFIDPJP",
-            |m: &UseTreasureDungeonItemCsReq| { &m.GCIMMFIDPJP },
-            |m: &mut UseTreasureDungeonItemCsReq| { &mut m.GCIMMFIDPJP },
+            "ILOFIMODIEN",
+            |m: &UseTreasureDungeonItemCsReq| { &m.ILOFIMODIEN },
+            |m: &mut UseTreasureDungeonItemCsReq| { &mut m.ILOFIMODIEN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HMPPFGCIFJK",
-            |m: &UseTreasureDungeonItemCsReq| { &m.HMPPFGCIFJK },
-            |m: &mut UseTreasureDungeonItemCsReq| { &mut m.HMPPFGCIFJK },
+            "AKMIHHHJPON",
+            |m: &UseTreasureDungeonItemCsReq| { &m.AKMIHHHJPON },
+            |m: &mut UseTreasureDungeonItemCsReq| { &mut m.AKMIHHHJPON },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LGBJLFEMFOL",
-            |m: &UseTreasureDungeonItemCsReq| { &m.LGBJLFEMFOL },
-            |m: &mut UseTreasureDungeonItemCsReq| { &mut m.LGBJLFEMFOL },
+            "DLEEJGFABLC",
+            |m: &UseTreasureDungeonItemCsReq| { &m.DLEEJGFABLC },
+            |m: &mut UseTreasureDungeonItemCsReq| { &mut m.DLEEJGFABLC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UseTreasureDungeonItemCsReq>(
             "UseTreasureDungeonItemCsReq",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for UseTreasureDungeonItemCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                72 => {
+                    self.ILOFIMODIEN = is.read_uint32()?;
+                },
+                48 => {
+                    self.AKMIHHHJPON = is.read_uint32()?;
+                },
                 32 => {
-                    self.GCIMMFIDPJP = is.read_uint32()?;
-                },
-                88 => {
-                    self.HMPPFGCIFJK = is.read_uint32()?;
-                },
-                104 => {
-                    self.LGBJLFEMFOL = is.read_uint32()?;
+                    self.DLEEJGFABLC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for UseTreasureDungeonItemCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GCIMMFIDPJP != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.GCIMMFIDPJP);
+        if self.ILOFIMODIEN != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.ILOFIMODIEN);
         }
-        if self.HMPPFGCIFJK != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.HMPPFGCIFJK);
+        if self.AKMIHHHJPON != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.AKMIHHHJPON);
         }
-        if self.LGBJLFEMFOL != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.LGBJLFEMFOL);
+        if self.DLEEJGFABLC != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.DLEEJGFABLC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for UseTreasureDungeonItemCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GCIMMFIDPJP != 0 {
-            os.write_uint32(4, self.GCIMMFIDPJP)?;
+        if self.ILOFIMODIEN != 0 {
+            os.write_uint32(9, self.ILOFIMODIEN)?;
         }
-        if self.HMPPFGCIFJK != 0 {
-            os.write_uint32(11, self.HMPPFGCIFJK)?;
+        if self.AKMIHHHJPON != 0 {
+            os.write_uint32(6, self.AKMIHHHJPON)?;
         }
-        if self.LGBJLFEMFOL != 0 {
-            os.write_uint32(13, self.LGBJLFEMFOL)?;
+        if self.DLEEJGFABLC != 0 {
+            os.write_uint32(4, self.DLEEJGFABLC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for UseTreasureDungeonItemCsReq {
     }
 
     fn clear(&mut self) {
-        self.GCIMMFIDPJP = 0;
-        self.HMPPFGCIFJK = 0;
-        self.LGBJLFEMFOL = 0;
+        self.ILOFIMODIEN = 0;
+        self.AKMIHHHJPON = 0;
+        self.DLEEJGFABLC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UseTreasureDungeonItemCsReq {
         static instance: UseTreasureDungeonItemCsReq = UseTreasureDungeonItemCsReq {
-            GCIMMFIDPJP: 0,
-            HMPPFGCIFJK: 0,
-            LGBJLFEMFOL: 0,
+            ILOFIMODIEN: 0,
+            AKMIHHHJPON: 0,
+            DLEEJGFABLC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for UseTreasureDungeonItemCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!UseTreasureDungeonItemCsReq.proto\"\x83\x01\n\x1bUseTreasureDungeonIt\
-    emCsReq\x12\x20\n\x0bGCIMMFIDPJP\x18\x04\x20\x01(\rR\x0bGCIMMFIDPJP\x12\
-    \x20\n\x0bHMPPFGCIFJK\x18\x0b\x20\x01(\rR\x0bHMPPFGCIFJK\x12\x20\n\x0bLG\
-    BJLFEMFOL\x18\r\x20\x01(\rR\x0bLGBJLFEMFOLb\x06proto3\
+    emCsReq\x12\x20\n\x0bILOFIMODIEN\x18\t\x20\x01(\rR\x0bILOFIMODIEN\x12\
+    \x20\n\x0bAKMIHHHJPON\x18\x06\x20\x01(\rR\x0bAKMIHHHJPON\x12\x20\n\x0bDL\
+    EEJGFABLC\x18\x04\x20\x01(\rR\x0bDLEEJGFABLCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

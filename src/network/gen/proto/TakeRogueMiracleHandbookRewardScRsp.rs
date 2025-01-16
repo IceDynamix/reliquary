@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeRogueMiracleHandbookRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeRogueMiracleHandbookRewardScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:TakeRogueMiracleHandbookRewardScRsp.ELPMNKHEPKJ)
-    pub ELPMNKHEPKJ: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:TakeRogueMiracleHandbookRewardScRsp.EJJGDLNJBPE)
-    pub EJJGDLNJBPE: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:TakeRogueMiracleHandbookRewardScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:TakeRogueMiracleHandbookRewardScRsp.BGGONIGEGKM)
+    pub BGGONIGEGKM: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:TakeRogueMiracleHandbookRewardScRsp.AECJKNIGHJK)
+    pub AECJKNIGHJK: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:TakeRogueMiracleHandbookRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl TakeRogueMiracleHandbookRewardScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &TakeRogueMiracleHandbookRewardScRsp| { &m.ADADHIHDHJC },
-            |m: &mut TakeRogueMiracleHandbookRewardScRsp| { &mut m.ADADHIHDHJC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "ELPMNKHEPKJ",
-            |m: &TakeRogueMiracleHandbookRewardScRsp| { &m.ELPMNKHEPKJ },
-            |m: &mut TakeRogueMiracleHandbookRewardScRsp| { &mut m.ELPMNKHEPKJ },
+            "retcode",
+            |m: &TakeRogueMiracleHandbookRewardScRsp| { &m.retcode },
+            |m: &mut TakeRogueMiracleHandbookRewardScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EJJGDLNJBPE",
-            |m: &TakeRogueMiracleHandbookRewardScRsp| { &m.EJJGDLNJBPE },
-            |m: &mut TakeRogueMiracleHandbookRewardScRsp| { &mut m.EJJGDLNJBPE },
+            "BGGONIGEGKM",
+            |m: &TakeRogueMiracleHandbookRewardScRsp| { &m.BGGONIGEGKM },
+            |m: &mut TakeRogueMiracleHandbookRewardScRsp| { &mut m.BGGONIGEGKM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "AECJKNIGHJK",
+            |m: &TakeRogueMiracleHandbookRewardScRsp| { &m.AECJKNIGHJK },
+            |m: &mut TakeRogueMiracleHandbookRewardScRsp| { &mut m.AECJKNIGHJK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeRogueMiracleHandbookRewardScRsp>(
             "TakeRogueMiracleHandbookRewardScRsp",
@@ -87,17 +87,17 @@ impl ::protobuf::Message for TakeRogueMiracleHandbookRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
-                },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ELPMNKHEPKJ)?;
+                16 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.EJJGDLNJBPE)?;
+                    is.read_repeated_packed_uint32_into(&mut self.BGGONIGEGKM)?;
                 },
                 96 => {
-                    self.EJJGDLNJBPE.push(is.read_uint32()?);
+                    self.BGGONIGEGKM.push(is.read_uint32()?);
+                },
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AECJKNIGHJK)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,31 +111,31 @@ impl ::protobuf::Message for TakeRogueMiracleHandbookRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
-        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
+        for value in &self.BGGONIGEGKM {
+            my_size += ::protobuf::rt::uint32_size(12, *value);
+        };
+        if let Some(v) = self.AECJKNIGHJK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        for value in &self.EJJGDLNJBPE {
-            my_size += ::protobuf::rt::uint32_size(12, *value);
-        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(8, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(2, self.retcode)?;
         }
-        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
-        for v in &self.EJJGDLNJBPE {
+        for v in &self.BGGONIGEGKM {
             os.write_uint32(12, *v)?;
         };
+        if let Some(v) = self.AECJKNIGHJK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -153,17 +153,17 @@ impl ::protobuf::Message for TakeRogueMiracleHandbookRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADADHIHDHJC = 0;
-        self.ELPMNKHEPKJ.clear();
-        self.EJJGDLNJBPE.clear();
+        self.retcode = 0;
+        self.BGGONIGEGKM.clear();
+        self.AECJKNIGHJK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeRogueMiracleHandbookRewardScRsp {
         static instance: TakeRogueMiracleHandbookRewardScRsp = TakeRogueMiracleHandbookRewardScRsp {
-            ADADHIHDHJC: 0,
-            ELPMNKHEPKJ: ::protobuf::MessageField::none(),
-            EJJGDLNJBPE: ::std::vec::Vec::new(),
+            retcode: 0,
+            BGGONIGEGKM: ::std::vec::Vec::new(),
+            AECJKNIGHJK: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -188,11 +188,11 @@ impl ::protobuf::reflect::ProtobufValue for TakeRogueMiracleHandbookRewardScRsp 
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n)TakeRogueMiracleHandbookRewardScRsp.proto\x1a\x0eItemList.proto\"\x96\
-    \x01\n#TakeRogueMiracleHandbookRewardScRsp\x12\x20\n\x0bADADHIHDHJC\x18\
-    \x08\x20\x01(\rR\x0bADADHIHDHJC\x12+\n\x0bELPMNKHEPKJ\x18\x06\x20\x01(\
-    \x0b2\t.ItemListR\x0bELPMNKHEPKJ\x12\x20\n\x0bEJJGDLNJBPE\x18\x0c\x20\
-    \x03(\rR\x0bEJJGDLNJBPEb\x06proto3\
+    \n)TakeRogueMiracleHandbookRewardScRsp.proto\x1a\x0eItemList.proto\"\x8e\
+    \x01\n#TakeRogueMiracleHandbookRewardScRsp\x12\x18\n\x07retcode\x18\x02\
+    \x20\x01(\rR\x07retcode\x12\x20\n\x0bBGGONIGEGKM\x18\x0c\x20\x03(\rR\x0b\
+    BGGONIGEGKM\x12+\n\x0bAECJKNIGHJK\x18\x05\x20\x01(\x0b2\t.ItemListR\x0bA\
+    ECJKNIGHJKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

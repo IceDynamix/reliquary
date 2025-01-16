@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetStarFightDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetStarFightDataScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:GetStarFightDataScRsp.NMLFDCAGKPF)
-    pub NMLFDCAGKPF: ::std::vec::Vec<super::ONOPFMLJIML::ONOPFMLJIML>,
+    // @@protoc_insertion_point(field:GetStarFightDataScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetStarFightDataScRsp.KOBHOPIFCDP)
+    pub KOBHOPIFCDP: ::std::vec::Vec<super::JJDILBLLAAB::JJDILBLLAAB>,
     // special fields
     // @@protoc_insertion_point(special_field:GetStarFightDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl GetStarFightDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &GetStarFightDataScRsp| { &m.ADADHIHDHJC },
-            |m: &mut GetStarFightDataScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &GetStarFightDataScRsp| { &m.retcode },
+            |m: &mut GetStarFightDataScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NMLFDCAGKPF",
-            |m: &GetStarFightDataScRsp| { &m.NMLFDCAGKPF },
-            |m: &mut GetStarFightDataScRsp| { &mut m.NMLFDCAGKPF },
+            "KOBHOPIFCDP",
+            |m: &GetStarFightDataScRsp| { &m.KOBHOPIFCDP },
+            |m: &mut GetStarFightDataScRsp| { &mut m.KOBHOPIFCDP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetStarFightDataScRsp>(
             "GetStarFightDataScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for GetStarFightDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                8 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                74 => {
-                    self.NMLFDCAGKPF.push(is.read_message()?);
+                58 => {
+                    self.KOBHOPIFCDP.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for GetStarFightDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
-        for value in &self.NMLFDCAGKPF {
+        for value in &self.KOBHOPIFCDP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -111,11 +111,11 @@ impl ::protobuf::Message for GetStarFightDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(15, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(1, self.retcode)?;
         }
-        for v in &self.NMLFDCAGKPF {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        for v in &self.KOBHOPIFCDP {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for GetStarFightDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADADHIHDHJC = 0;
-        self.NMLFDCAGKPF.clear();
+        self.retcode = 0;
+        self.KOBHOPIFCDP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetStarFightDataScRsp {
         static instance: GetStarFightDataScRsp = GetStarFightDataScRsp {
-            ADADHIHDHJC: 0,
-            NMLFDCAGKPF: ::std::vec::Vec::new(),
+            retcode: 0,
+            KOBHOPIFCDP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for GetStarFightDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bGetStarFightDataScRsp.proto\x1a\x11ONOPFMLJIML.proto\"i\n\x15GetSt\
-    arFightDataScRsp\x12\x20\n\x0bADADHIHDHJC\x18\x0f\x20\x01(\rR\x0bADADHIH\
-    DHJC\x12.\n\x0bNMLFDCAGKPF\x18\t\x20\x03(\x0b2\x0c.ONOPFMLJIMLR\x0bNMLFD\
-    CAGKPFb\x06proto3\
+    \n\x1bGetStarFightDataScRsp.proto\x1a\x11JJDILBLLAAB.proto\"a\n\x15GetSt\
+    arFightDataScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12\
+    .\n\x0bKOBHOPIFCDP\x18\x07\x20\x03(\x0b2\x0c.JJDILBLLAABR\x0bKOBHOPIFCDP\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ONOPFMLJIML::file_descriptor().clone());
+            deps.push(super::JJDILBLLAAB::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetStarFightDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

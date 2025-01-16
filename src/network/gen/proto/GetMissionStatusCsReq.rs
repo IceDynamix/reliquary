@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetMissionStatusCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetMissionStatusCsReq.mission_event_id_list)
-    pub mission_event_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetMissionStatusCsReq.sub_mission_id_list)
-    pub sub_mission_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetMissionStatusCsReq.main_mission_id_list)
-    pub main_mission_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetMissionStatusCsReq.KNMEMOHIIMH)
+    pub KNMEMOHIIMH: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetMissionStatusCsReq.GFCCBAFIJOJ)
+    pub GFCCBAFIJOJ: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetMissionStatusCsReq.FOABILEAJHK)
+    pub FOABILEAJHK: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GetMissionStatusCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl GetMissionStatusCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "mission_event_id_list",
-            |m: &GetMissionStatusCsReq| { &m.mission_event_id_list },
-            |m: &mut GetMissionStatusCsReq| { &mut m.mission_event_id_list },
+            "KNMEMOHIIMH",
+            |m: &GetMissionStatusCsReq| { &m.KNMEMOHIIMH },
+            |m: &mut GetMissionStatusCsReq| { &mut m.KNMEMOHIIMH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "sub_mission_id_list",
-            |m: &GetMissionStatusCsReq| { &m.sub_mission_id_list },
-            |m: &mut GetMissionStatusCsReq| { &mut m.sub_mission_id_list },
+            "GFCCBAFIJOJ",
+            |m: &GetMissionStatusCsReq| { &m.GFCCBAFIJOJ },
+            |m: &mut GetMissionStatusCsReq| { &mut m.GFCCBAFIJOJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "main_mission_id_list",
-            |m: &GetMissionStatusCsReq| { &m.main_mission_id_list },
-            |m: &mut GetMissionStatusCsReq| { &mut m.main_mission_id_list },
+            "FOABILEAJHK",
+            |m: &GetMissionStatusCsReq| { &m.FOABILEAJHK },
+            |m: &mut GetMissionStatusCsReq| { &mut m.FOABILEAJHK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetMissionStatusCsReq>(
             "GetMissionStatusCsReq",
@@ -87,23 +87,23 @@ impl ::protobuf::Message for GetMissionStatusCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.mission_event_id_list)?;
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.KNMEMOHIIMH)?;
                 },
-                40 => {
-                    self.mission_event_id_list.push(is.read_uint32()?);
+                56 => {
+                    self.KNMEMOHIIMH.push(is.read_uint32()?);
                 },
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.sub_mission_id_list)?;
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.GFCCBAFIJOJ)?;
                 },
-                120 => {
-                    self.sub_mission_id_list.push(is.read_uint32()?);
+                64 => {
+                    self.GFCCBAFIJOJ.push(is.read_uint32()?);
                 },
-                98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.main_mission_id_list)?;
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.FOABILEAJHK)?;
                 },
-                96 => {
-                    self.main_mission_id_list.push(is.read_uint32()?);
+                24 => {
+                    self.FOABILEAJHK.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,14 +117,14 @@ impl ::protobuf::Message for GetMissionStatusCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.mission_event_id_list {
-            my_size += ::protobuf::rt::uint32_size(5, *value);
+        for value in &self.KNMEMOHIIMH {
+            my_size += ::protobuf::rt::uint32_size(7, *value);
         };
-        for value in &self.sub_mission_id_list {
-            my_size += ::protobuf::rt::uint32_size(15, *value);
+        for value in &self.GFCCBAFIJOJ {
+            my_size += ::protobuf::rt::uint32_size(8, *value);
         };
-        for value in &self.main_mission_id_list {
-            my_size += ::protobuf::rt::uint32_size(12, *value);
+        for value in &self.FOABILEAJHK {
+            my_size += ::protobuf::rt::uint32_size(3, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -132,14 +132,14 @@ impl ::protobuf::Message for GetMissionStatusCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.mission_event_id_list {
-            os.write_uint32(5, *v)?;
+        for v in &self.KNMEMOHIIMH {
+            os.write_uint32(7, *v)?;
         };
-        for v in &self.sub_mission_id_list {
-            os.write_uint32(15, *v)?;
+        for v in &self.GFCCBAFIJOJ {
+            os.write_uint32(8, *v)?;
         };
-        for v in &self.main_mission_id_list {
-            os.write_uint32(12, *v)?;
+        for v in &self.FOABILEAJHK {
+            os.write_uint32(3, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -158,17 +158,17 @@ impl ::protobuf::Message for GetMissionStatusCsReq {
     }
 
     fn clear(&mut self) {
-        self.mission_event_id_list.clear();
-        self.sub_mission_id_list.clear();
-        self.main_mission_id_list.clear();
+        self.KNMEMOHIIMH.clear();
+        self.GFCCBAFIJOJ.clear();
+        self.FOABILEAJHK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetMissionStatusCsReq {
         static instance: GetMissionStatusCsReq = GetMissionStatusCsReq {
-            mission_event_id_list: ::std::vec::Vec::new(),
-            sub_mission_id_list: ::std::vec::Vec::new(),
-            main_mission_id_list: ::std::vec::Vec::new(),
+            KNMEMOHIIMH: ::std::vec::Vec::new(),
+            GFCCBAFIJOJ: ::std::vec::Vec::new(),
+            FOABILEAJHK: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -193,11 +193,10 @@ impl ::protobuf::reflect::ProtobufValue for GetMissionStatusCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bGetMissionStatusCsReq.proto\"\xaa\x01\n\x15GetMissionStatusCsReq\
-    \x121\n\x15mission_event_id_list\x18\x05\x20\x03(\rR\x12missionEventIdLi\
-    st\x12-\n\x13sub_mission_id_list\x18\x0f\x20\x03(\rR\x10subMissionIdList\
-    \x12/\n\x14main_mission_id_list\x18\x0c\x20\x03(\rR\x11mainMissionIdList\
-    B\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x1bGetMissionStatusCsReq.proto\"}\n\x15GetMissionStatusCsReq\x12\x20\
+    \n\x0bKNMEMOHIIMH\x18\x07\x20\x03(\rR\x0bKNMEMOHIIMH\x12\x20\n\x0bGFCCBA\
+    FIJOJ\x18\x08\x20\x03(\rR\x0bGFCCBAFIJOJ\x12\x20\n\x0bFOABILEAJHK\x18\
+    \x03\x20\x03(\rR\x0bFOABILEAJHKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

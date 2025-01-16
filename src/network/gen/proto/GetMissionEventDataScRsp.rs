@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetMissionEventDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetMissionEventDataScRsp.CLLEEPCOAJC)
-    pub CLLEEPCOAJC: u32,
-    // @@protoc_insertion_point(field:GetMissionEventDataScRsp.NFCLDJLDOOG)
-    pub NFCLDJLDOOG: ::std::vec::Vec<super::HLPMMJEGFMI::HLPMMJEGFMI>,
-    // @@protoc_insertion_point(field:GetMissionEventDataScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:GetMissionEventDataScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetMissionEventDataScRsp.MCFKGJEJLPI)
+    pub MCFKGJEJLPI: u32,
+    // @@protoc_insertion_point(field:GetMissionEventDataScRsp.KNIEDIJFCJK)
+    pub KNIEDIJFCJK: ::std::vec::Vec<super::FBDLAHIKIBJ::FBDLAHIKIBJ>,
     // special fields
     // @@protoc_insertion_point(special_field:GetMissionEventDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl GetMissionEventDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CLLEEPCOAJC",
-            |m: &GetMissionEventDataScRsp| { &m.CLLEEPCOAJC },
-            |m: &mut GetMissionEventDataScRsp| { &mut m.CLLEEPCOAJC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NFCLDJLDOOG",
-            |m: &GetMissionEventDataScRsp| { &m.NFCLDJLDOOG },
-            |m: &mut GetMissionEventDataScRsp| { &mut m.NFCLDJLDOOG },
+            "retcode",
+            |m: &GetMissionEventDataScRsp| { &m.retcode },
+            |m: &mut GetMissionEventDataScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &GetMissionEventDataScRsp| { &m.ADADHIHDHJC },
-            |m: &mut GetMissionEventDataScRsp| { &mut m.ADADHIHDHJC },
+            "MCFKGJEJLPI",
+            |m: &GetMissionEventDataScRsp| { &m.MCFKGJEJLPI },
+            |m: &mut GetMissionEventDataScRsp| { &mut m.MCFKGJEJLPI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "KNIEDIJFCJK",
+            |m: &GetMissionEventDataScRsp| { &m.KNIEDIJFCJK },
+            |m: &mut GetMissionEventDataScRsp| { &mut m.KNIEDIJFCJK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetMissionEventDataScRsp>(
             "GetMissionEventDataScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for GetMissionEventDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.CLLEEPCOAJC = is.read_uint32()?;
+                96 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                90 => {
-                    self.NFCLDJLDOOG.push(is.read_message()?);
+                40 => {
+                    self.MCFKGJEJLPI = is.read_uint32()?;
                 },
-                16 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                106 => {
+                    self.KNIEDIJFCJK.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,31 +108,31 @@ impl ::protobuf::Message for GetMissionEventDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CLLEEPCOAJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.CLLEEPCOAJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
-        for value in &self.NFCLDJLDOOG {
+        if self.MCFKGJEJLPI != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.MCFKGJEJLPI);
+        }
+        for value in &self.KNIEDIJFCJK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.ADADHIHDHJC);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CLLEEPCOAJC != 0 {
-            os.write_uint32(3, self.CLLEEPCOAJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(12, self.retcode)?;
         }
-        for v in &self.NFCLDJLDOOG {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if self.MCFKGJEJLPI != 0 {
+            os.write_uint32(5, self.MCFKGJEJLPI)?;
+        }
+        for v in &self.KNIEDIJFCJK {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(2, self.ADADHIHDHJC)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,17 +150,17 @@ impl ::protobuf::Message for GetMissionEventDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.CLLEEPCOAJC = 0;
-        self.NFCLDJLDOOG.clear();
-        self.ADADHIHDHJC = 0;
+        self.retcode = 0;
+        self.MCFKGJEJLPI = 0;
+        self.KNIEDIJFCJK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetMissionEventDataScRsp {
         static instance: GetMissionEventDataScRsp = GetMissionEventDataScRsp {
-            CLLEEPCOAJC: 0,
-            NFCLDJLDOOG: ::std::vec::Vec::new(),
-            ADADHIHDHJC: 0,
+            retcode: 0,
+            MCFKGJEJLPI: 0,
+            KNIEDIJFCJK: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for GetMissionEventDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eGetMissionEventDataScRsp.proto\x1a\x11HLPMMJEGFMI.proto\"\x8e\x01\
-    \n\x18GetMissionEventDataScRsp\x12\x20\n\x0bCLLEEPCOAJC\x18\x03\x20\x01(\
-    \rR\x0bCLLEEPCOAJC\x12.\n\x0bNFCLDJLDOOG\x18\x0b\x20\x03(\x0b2\x0c.HLPMM\
-    JEGFMIR\x0bNFCLDJLDOOG\x12\x20\n\x0bADADHIHDHJC\x18\x02\x20\x01(\rR\x0bA\
-    DADHIHDHJCb\x06proto3\
+    \n\x1eGetMissionEventDataScRsp.proto\x1a\x11FBDLAHIKIBJ.proto\"\x86\x01\
+    \n\x18GetMissionEventDataScRsp\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\
+    \x07retcode\x12\x20\n\x0bMCFKGJEJLPI\x18\x05\x20\x01(\rR\x0bMCFKGJEJLPI\
+    \x12.\n\x0bKNIEDIJFCJK\x18\r\x20\x03(\x0b2\x0c.FBDLAHIKIBJR\x0bKNIEDIJFC\
+    JKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::HLPMMJEGFMI::file_descriptor().clone());
+            deps.push(super::FBDLAHIKIBJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetMissionEventDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

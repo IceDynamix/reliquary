@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartPartialChallengeCsReq {
     // message fields
-    // @@protoc_insertion_point(field:StartPartialChallengeCsReq.is_first_half)
-    pub is_first_half: bool,
-    // @@protoc_insertion_point(field:StartPartialChallengeCsReq.buff_id)
-    pub buff_id: u32,
-    // @@protoc_insertion_point(field:StartPartialChallengeCsReq.challenge_id)
-    pub challenge_id: u32,
+    // @@protoc_insertion_point(field:StartPartialChallengeCsReq.DPCJCEGIAEJ)
+    pub DPCJCEGIAEJ: u32,
+    // @@protoc_insertion_point(field:StartPartialChallengeCsReq.PGGMKGMBBKJ)
+    pub PGGMKGMBBKJ: u32,
+    // @@protoc_insertion_point(field:StartPartialChallengeCsReq.IKAJHFMOKGD)
+    pub IKAJHFMOKGD: bool,
     // special fields
     // @@protoc_insertion_point(special_field:StartPartialChallengeCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl StartPartialChallengeCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_first_half",
-            |m: &StartPartialChallengeCsReq| { &m.is_first_half },
-            |m: &mut StartPartialChallengeCsReq| { &mut m.is_first_half },
+            "DPCJCEGIAEJ",
+            |m: &StartPartialChallengeCsReq| { &m.DPCJCEGIAEJ },
+            |m: &mut StartPartialChallengeCsReq| { &mut m.DPCJCEGIAEJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "buff_id",
-            |m: &StartPartialChallengeCsReq| { &m.buff_id },
-            |m: &mut StartPartialChallengeCsReq| { &mut m.buff_id },
+            "PGGMKGMBBKJ",
+            |m: &StartPartialChallengeCsReq| { &m.PGGMKGMBBKJ },
+            |m: &mut StartPartialChallengeCsReq| { &mut m.PGGMKGMBBKJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "challenge_id",
-            |m: &StartPartialChallengeCsReq| { &m.challenge_id },
-            |m: &mut StartPartialChallengeCsReq| { &mut m.challenge_id },
+            "IKAJHFMOKGD",
+            |m: &StartPartialChallengeCsReq| { &m.IKAJHFMOKGD },
+            |m: &mut StartPartialChallengeCsReq| { &mut m.IKAJHFMOKGD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartPartialChallengeCsReq>(
             "StartPartialChallengeCsReq",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for StartPartialChallengeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.is_first_half = is.read_bool()?;
+                80 => {
+                    self.DPCJCEGIAEJ = is.read_uint32()?;
                 },
-                88 => {
-                    self.buff_id = is.read_uint32()?;
+                32 => {
+                    self.PGGMKGMBBKJ = is.read_uint32()?;
                 },
-                120 => {
-                    self.challenge_id = is.read_uint32()?;
+                112 => {
+                    self.IKAJHFMOKGD = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for StartPartialChallengeCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_first_half != false {
+        if self.DPCJCEGIAEJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.DPCJCEGIAEJ);
+        }
+        if self.PGGMKGMBBKJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.PGGMKGMBBKJ);
+        }
+        if self.IKAJHFMOKGD != false {
             my_size += 1 + 1;
-        }
-        if self.buff_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.buff_id);
-        }
-        if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.challenge_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for StartPartialChallengeCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_first_half != false {
-            os.write_bool(13, self.is_first_half)?;
+        if self.DPCJCEGIAEJ != 0 {
+            os.write_uint32(10, self.DPCJCEGIAEJ)?;
         }
-        if self.buff_id != 0 {
-            os.write_uint32(11, self.buff_id)?;
+        if self.PGGMKGMBBKJ != 0 {
+            os.write_uint32(4, self.PGGMKGMBBKJ)?;
         }
-        if self.challenge_id != 0 {
-            os.write_uint32(15, self.challenge_id)?;
+        if self.IKAJHFMOKGD != false {
+            os.write_bool(14, self.IKAJHFMOKGD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for StartPartialChallengeCsReq {
     }
 
     fn clear(&mut self) {
-        self.is_first_half = false;
-        self.buff_id = 0;
-        self.challenge_id = 0;
+        self.DPCJCEGIAEJ = 0;
+        self.PGGMKGMBBKJ = 0;
+        self.IKAJHFMOKGD = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartPartialChallengeCsReq {
         static instance: StartPartialChallengeCsReq = StartPartialChallengeCsReq {
-            is_first_half: false,
-            buff_id: 0,
-            challenge_id: 0,
+            DPCJCEGIAEJ: 0,
+            PGGMKGMBBKJ: 0,
+            IKAJHFMOKGD: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for StartPartialChallengeCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20StartPartialChallengeCsReq.proto\"|\n\x1aStartPartialChallengeCsRe\
-    q\x12\"\n\ris_first_half\x18\r\x20\x01(\x08R\x0bisFirstHalf\x12\x17\n\
-    \x07buff_id\x18\x0b\x20\x01(\rR\x06buffId\x12!\n\x0cchallenge_id\x18\x0f\
-    \x20\x01(\rR\x0bchallengeIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x20StartPartialChallengeCsReq.proto\"\x82\x01\n\x1aStartPartialChalle\
+    ngeCsReq\x12\x20\n\x0bDPCJCEGIAEJ\x18\n\x20\x01(\rR\x0bDPCJCEGIAEJ\x12\
+    \x20\n\x0bPGGMKGMBBKJ\x18\x04\x20\x01(\rR\x0bPGGMKGMBBKJ\x12\x20\n\x0bIK\
+    AJHFMOKGD\x18\x0e\x20\x01(\x08R\x0bIKAJHFMOKGDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeCityShopRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeCityShopRewardCsReq.JKOCJIMAGBN)
-    pub JKOCJIMAGBN: u32,
-    // @@protoc_insertion_point(field:TakeCityShopRewardCsReq.PNJIJAJMCMG)
-    pub PNJIJAJMCMG: u32,
+    // @@protoc_insertion_point(field:TakeCityShopRewardCsReq.JCEDPIFGKKO)
+    pub JCEDPIFGKKO: u32,
+    // @@protoc_insertion_point(field:TakeCityShopRewardCsReq.level)
+    pub level: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeCityShopRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl TakeCityShopRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JKOCJIMAGBN",
-            |m: &TakeCityShopRewardCsReq| { &m.JKOCJIMAGBN },
-            |m: &mut TakeCityShopRewardCsReq| { &mut m.JKOCJIMAGBN },
+            "JCEDPIFGKKO",
+            |m: &TakeCityShopRewardCsReq| { &m.JCEDPIFGKKO },
+            |m: &mut TakeCityShopRewardCsReq| { &mut m.JCEDPIFGKKO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PNJIJAJMCMG",
-            |m: &TakeCityShopRewardCsReq| { &m.PNJIJAJMCMG },
-            |m: &mut TakeCityShopRewardCsReq| { &mut m.PNJIJAJMCMG },
+            "level",
+            |m: &TakeCityShopRewardCsReq| { &m.level },
+            |m: &mut TakeCityShopRewardCsReq| { &mut m.level },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeCityShopRewardCsReq>(
             "TakeCityShopRewardCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for TakeCityShopRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.JKOCJIMAGBN = is.read_uint32()?;
+                120 => {
+                    self.JCEDPIFGKKO = is.read_uint32()?;
                 },
-                40 => {
-                    self.PNJIJAJMCMG = is.read_uint32()?;
+                72 => {
+                    self.level = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for TakeCityShopRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JKOCJIMAGBN != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.JKOCJIMAGBN);
+        if self.JCEDPIFGKKO != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.JCEDPIFGKKO);
         }
-        if self.PNJIJAJMCMG != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.PNJIJAJMCMG);
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for TakeCityShopRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JKOCJIMAGBN != 0 {
-            os.write_uint32(6, self.JKOCJIMAGBN)?;
+        if self.JCEDPIFGKKO != 0 {
+            os.write_uint32(15, self.JCEDPIFGKKO)?;
         }
-        if self.PNJIJAJMCMG != 0 {
-            os.write_uint32(5, self.PNJIJAJMCMG)?;
+        if self.level != 0 {
+            os.write_uint32(9, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for TakeCityShopRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.JKOCJIMAGBN = 0;
-        self.PNJIJAJMCMG = 0;
+        self.JCEDPIFGKKO = 0;
+        self.level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeCityShopRewardCsReq {
         static instance: TakeCityShopRewardCsReq = TakeCityShopRewardCsReq {
-            JKOCJIMAGBN: 0,
-            PNJIJAJMCMG: 0,
+            JCEDPIFGKKO: 0,
+            level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for TakeCityShopRewardCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dTakeCityShopRewardCsReq.proto\"]\n\x17TakeCityShopRewardCsReq\x12\
-    \x20\n\x0bJKOCJIMAGBN\x18\x06\x20\x01(\rR\x0bJKOCJIMAGBN\x12\x20\n\x0bPN\
-    JIJAJMCMG\x18\x05\x20\x01(\rR\x0bPNJIJAJMCMGb\x06proto3\
+    \n\x1dTakeCityShopRewardCsReq.proto\"Q\n\x17TakeCityShopRewardCsReq\x12\
+    \x20\n\x0bJCEDPIFGKKO\x18\x0f\x20\x01(\rR\x0bJCEDPIFGKKO\x12\x14\n\x05le\
+    vel\x18\t\x20\x01(\rR\x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

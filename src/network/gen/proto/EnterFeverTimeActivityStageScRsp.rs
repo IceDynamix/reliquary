@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterFeverTimeActivityStageScRsp {
     // message fields
-    // @@protoc_insertion_point(field:EnterFeverTimeActivityStageScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:EnterFeverTimeActivityStageScRsp.IPNHCCODNDI)
-    pub IPNHCCODNDI: u32,
-    // @@protoc_insertion_point(field:EnterFeverTimeActivityStageScRsp.BBKGPAJCCBM)
-    pub BBKGPAJCCBM: ::protobuf::MessageField<super::CHDPLFOHLCN::CHDPLFOHLCN>,
+    // @@protoc_insertion_point(field:EnterFeverTimeActivityStageScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:EnterFeverTimeActivityStageScRsp.FFKNMAONGIB)
+    pub FFKNMAONGIB: u32,
+    // @@protoc_insertion_point(field:EnterFeverTimeActivityStageScRsp.LPPMFJOCKNO)
+    pub LPPMFJOCKNO: ::protobuf::MessageField<super::DDCPCKIHMEF::DDCPCKIHMEF>,
     // special fields
     // @@protoc_insertion_point(special_field:EnterFeverTimeActivityStageScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl EnterFeverTimeActivityStageScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &EnterFeverTimeActivityStageScRsp| { &m.ADADHIHDHJC },
-            |m: &mut EnterFeverTimeActivityStageScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &EnterFeverTimeActivityStageScRsp| { &m.retcode },
+            |m: &mut EnterFeverTimeActivityStageScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IPNHCCODNDI",
-            |m: &EnterFeverTimeActivityStageScRsp| { &m.IPNHCCODNDI },
-            |m: &mut EnterFeverTimeActivityStageScRsp| { &mut m.IPNHCCODNDI },
+            "FFKNMAONGIB",
+            |m: &EnterFeverTimeActivityStageScRsp| { &m.FFKNMAONGIB },
+            |m: &mut EnterFeverTimeActivityStageScRsp| { &mut m.FFKNMAONGIB },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CHDPLFOHLCN::CHDPLFOHLCN>(
-            "BBKGPAJCCBM",
-            |m: &EnterFeverTimeActivityStageScRsp| { &m.BBKGPAJCCBM },
-            |m: &mut EnterFeverTimeActivityStageScRsp| { &mut m.BBKGPAJCCBM },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DDCPCKIHMEF::DDCPCKIHMEF>(
+            "LPPMFJOCKNO",
+            |m: &EnterFeverTimeActivityStageScRsp| { &m.LPPMFJOCKNO },
+            |m: &mut EnterFeverTimeActivityStageScRsp| { &mut m.LPPMFJOCKNO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterFeverTimeActivityStageScRsp>(
             "EnterFeverTimeActivityStageScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for EnterFeverTimeActivityStageScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                96 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                64 => {
-                    self.IPNHCCODNDI = is.read_uint32()?;
+                80 => {
+                    self.FFKNMAONGIB = is.read_uint32()?;
                 },
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BBKGPAJCCBM)?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LPPMFJOCKNO)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for EnterFeverTimeActivityStageScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
-        if self.IPNHCCODNDI != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.IPNHCCODNDI);
+        if self.FFKNMAONGIB != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.FFKNMAONGIB);
         }
-        if let Some(v) = self.BBKGPAJCCBM.as_ref() {
+        if let Some(v) = self.LPPMFJOCKNO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -124,14 +124,14 @@ impl ::protobuf::Message for EnterFeverTimeActivityStageScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(5, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(12, self.retcode)?;
         }
-        if self.IPNHCCODNDI != 0 {
-            os.write_uint32(8, self.IPNHCCODNDI)?;
+        if self.FFKNMAONGIB != 0 {
+            os.write_uint32(10, self.FFKNMAONGIB)?;
         }
-        if let Some(v) = self.BBKGPAJCCBM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if let Some(v) = self.LPPMFJOCKNO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for EnterFeverTimeActivityStageScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADADHIHDHJC = 0;
-        self.IPNHCCODNDI = 0;
-        self.BBKGPAJCCBM.clear();
+        self.retcode = 0;
+        self.FFKNMAONGIB = 0;
+        self.LPPMFJOCKNO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterFeverTimeActivityStageScRsp {
         static instance: EnterFeverTimeActivityStageScRsp = EnterFeverTimeActivityStageScRsp {
-            ADADHIHDHJC: 0,
-            IPNHCCODNDI: 0,
-            BBKGPAJCCBM: ::protobuf::MessageField::none(),
+            retcode: 0,
+            FFKNMAONGIB: 0,
+            LPPMFJOCKNO: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for EnterFeverTimeActivityStageScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n&EnterFeverTimeActivityStageScRsp.proto\x1a\x11CHDPLFOHLCN.proto\"\x96\
-    \x01\n\x20EnterFeverTimeActivityStageScRsp\x12\x20\n\x0bADADHIHDHJC\x18\
-    \x05\x20\x01(\rR\x0bADADHIHDHJC\x12\x20\n\x0bIPNHCCODNDI\x18\x08\x20\x01\
-    (\rR\x0bIPNHCCODNDI\x12.\n\x0bBBKGPAJCCBM\x18\x03\x20\x01(\x0b2\x0c.CHDP\
-    LFOHLCNR\x0bBBKGPAJCCBMb\x06proto3\
+    \n&EnterFeverTimeActivityStageScRsp.proto\x1a\x11DDCPCKIHMEF.proto\"\x8e\
+    \x01\n\x20EnterFeverTimeActivityStageScRsp\x12\x18\n\x07retcode\x18\x0c\
+    \x20\x01(\rR\x07retcode\x12\x20\n\x0bFFKNMAONGIB\x18\n\x20\x01(\rR\x0bFF\
+    KNMAONGIB\x12.\n\x0bLPPMFJOCKNO\x18\x08\x20\x01(\x0b2\x0c.DDCPCKIHMEFR\
+    \x0bLPPMFJOCKNOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::CHDPLFOHLCN::file_descriptor().clone());
+            deps.push(super::DDCPCKIHMEF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EnterFeverTimeActivityStageScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

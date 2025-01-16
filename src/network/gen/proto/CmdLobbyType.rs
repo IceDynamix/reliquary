@@ -30,42 +30,42 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdLobbyType {
     // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyTypeNone)
     CmdLobbyTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyInviteScNotify)
-    CmdLobbyInviteScNotify = 7389,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyBeginCsReq)
+    CmdLobbyBeginCsReq = 7365,
     // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyInviteScRsp)
-    CmdLobbyInviteScRsp = 7357,
+    CmdLobbyInviteScRsp = 7360,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbySyncInfoScNotify)
+    CmdLobbySyncInfoScNotify = 7395,
     // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyInviteCsReq)
     CmdLobbyInviteCsReq = 7378,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyGetInfoScRsp)
-    CmdLobbyGetInfoScRsp = 7394,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyJoinCsReq)
-    CmdLobbyJoinCsReq = 7362,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyKickOutCsReq)
-    CmdLobbyKickOutCsReq = 7358,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyJoinScRsp)
-    CmdLobbyJoinScRsp = 7374,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyBeginCsReq)
-    CmdLobbyBeginCsReq = 7392,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyModifyPlayerInfoCsReq)
-    CmdLobbyModifyPlayerInfoCsReq = 7390,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyQuitScRsp)
-    CmdLobbyQuitScRsp = 7399,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyBeginScRsp)
-    CmdLobbyBeginScRsp = 7387,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyGetInfoCsReq)
-    CmdLobbyGetInfoCsReq = 7383,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyCreateCsReq)
-    CmdLobbyCreateCsReq = 7365,
     // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyKickOutScRsp)
-    CmdLobbyKickOutScRsp = 7380,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyModifyPlayerInfoScRsp)
-    CmdLobbyModifyPlayerInfoScRsp = 7373,
+    CmdLobbyKickOutScRsp = 7396,
     // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyQuitCsReq)
-    CmdLobbyQuitCsReq = 7384,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbySyncInfoScNotify)
-    CmdLobbySyncInfoScNotify = 7385,
+    CmdLobbyQuitCsReq = 7398,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyQuitScRsp)
+    CmdLobbyQuitScRsp = 7363,
     // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyCreateScRsp)
-    CmdLobbyCreateScRsp = 7366,
+    CmdLobbyCreateScRsp = 7400,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyKickOutCsReq)
+    CmdLobbyKickOutCsReq = 7397,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyModifyPlayerInfoScRsp)
+    CmdLobbyModifyPlayerInfoScRsp = 7393,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyGetInfoCsReq)
+    CmdLobbyGetInfoCsReq = 7354,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyGetInfoScRsp)
+    CmdLobbyGetInfoScRsp = 7390,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyModifyPlayerInfoCsReq)
+    CmdLobbyModifyPlayerInfoCsReq = 7359,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyBeginScRsp)
+    CmdLobbyBeginScRsp = 7399,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyInviteScNotify)
+    CmdLobbyInviteScNotify = 7367,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyJoinCsReq)
+    CmdLobbyJoinCsReq = 7380,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyJoinScRsp)
+    CmdLobbyJoinScRsp = 7373,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyCreateCsReq)
+    CmdLobbyCreateCsReq = 7362,
 }
 
 impl ::protobuf::Enum for CmdLobbyType {
@@ -78,24 +78,24 @@ impl ::protobuf::Enum for CmdLobbyType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdLobbyType> {
         match value {
             0 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyTypeNone),
-            7389 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyInviteScNotify),
-            7357 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyInviteScRsp),
+            7365 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyBeginCsReq),
+            7360 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyInviteScRsp),
+            7395 => ::std::option::Option::Some(CmdLobbyType::CmdLobbySyncInfoScNotify),
             7378 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyInviteCsReq),
-            7394 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyGetInfoScRsp),
-            7362 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyJoinCsReq),
-            7358 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyKickOutCsReq),
-            7374 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyJoinScRsp),
-            7392 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyBeginCsReq),
-            7390 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyModifyPlayerInfoCsReq),
-            7399 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyQuitScRsp),
-            7387 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyBeginScRsp),
-            7383 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyGetInfoCsReq),
-            7365 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyCreateCsReq),
-            7380 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyKickOutScRsp),
-            7373 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyModifyPlayerInfoScRsp),
-            7384 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyQuitCsReq),
-            7385 => ::std::option::Option::Some(CmdLobbyType::CmdLobbySyncInfoScNotify),
-            7366 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyCreateScRsp),
+            7396 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyKickOutScRsp),
+            7398 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyQuitCsReq),
+            7363 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyQuitScRsp),
+            7400 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyCreateScRsp),
+            7397 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyKickOutCsReq),
+            7393 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyModifyPlayerInfoScRsp),
+            7354 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyGetInfoCsReq),
+            7390 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyGetInfoScRsp),
+            7359 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyModifyPlayerInfoCsReq),
+            7399 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyBeginScRsp),
+            7367 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyInviteScNotify),
+            7380 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyJoinCsReq),
+            7373 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyJoinScRsp),
+            7362 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyCreateCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -103,48 +103,48 @@ impl ::protobuf::Enum for CmdLobbyType {
     fn from_str(str: &str) -> ::std::option::Option<CmdLobbyType> {
         match str {
             "CmdLobbyTypeNone" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyTypeNone),
-            "CmdLobbyInviteScNotify" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyInviteScNotify),
-            "CmdLobbyInviteScRsp" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyInviteScRsp),
-            "CmdLobbyInviteCsReq" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyInviteCsReq),
-            "CmdLobbyGetInfoScRsp" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyGetInfoScRsp),
-            "CmdLobbyJoinCsReq" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyJoinCsReq),
-            "CmdLobbyKickOutCsReq" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyKickOutCsReq),
-            "CmdLobbyJoinScRsp" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyJoinScRsp),
             "CmdLobbyBeginCsReq" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyBeginCsReq),
-            "CmdLobbyModifyPlayerInfoCsReq" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyModifyPlayerInfoCsReq),
-            "CmdLobbyQuitScRsp" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyQuitScRsp),
-            "CmdLobbyBeginScRsp" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyBeginScRsp),
-            "CmdLobbyGetInfoCsReq" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyGetInfoCsReq),
-            "CmdLobbyCreateCsReq" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyCreateCsReq),
-            "CmdLobbyKickOutScRsp" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyKickOutScRsp),
-            "CmdLobbyModifyPlayerInfoScRsp" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyModifyPlayerInfoScRsp),
-            "CmdLobbyQuitCsReq" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyQuitCsReq),
+            "CmdLobbyInviteScRsp" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyInviteScRsp),
             "CmdLobbySyncInfoScNotify" => ::std::option::Option::Some(CmdLobbyType::CmdLobbySyncInfoScNotify),
+            "CmdLobbyInviteCsReq" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyInviteCsReq),
+            "CmdLobbyKickOutScRsp" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyKickOutScRsp),
+            "CmdLobbyQuitCsReq" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyQuitCsReq),
+            "CmdLobbyQuitScRsp" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyQuitScRsp),
             "CmdLobbyCreateScRsp" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyCreateScRsp),
+            "CmdLobbyKickOutCsReq" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyKickOutCsReq),
+            "CmdLobbyModifyPlayerInfoScRsp" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyModifyPlayerInfoScRsp),
+            "CmdLobbyGetInfoCsReq" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyGetInfoCsReq),
+            "CmdLobbyGetInfoScRsp" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyGetInfoScRsp),
+            "CmdLobbyModifyPlayerInfoCsReq" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyModifyPlayerInfoCsReq),
+            "CmdLobbyBeginScRsp" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyBeginScRsp),
+            "CmdLobbyInviteScNotify" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyInviteScNotify),
+            "CmdLobbyJoinCsReq" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyJoinCsReq),
+            "CmdLobbyJoinScRsp" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyJoinScRsp),
+            "CmdLobbyCreateCsReq" => ::std::option::Option::Some(CmdLobbyType::CmdLobbyCreateCsReq),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdLobbyType] = &[
         CmdLobbyType::CmdLobbyTypeNone,
-        CmdLobbyType::CmdLobbyInviteScNotify,
-        CmdLobbyType::CmdLobbyInviteScRsp,
-        CmdLobbyType::CmdLobbyInviteCsReq,
-        CmdLobbyType::CmdLobbyGetInfoScRsp,
-        CmdLobbyType::CmdLobbyJoinCsReq,
-        CmdLobbyType::CmdLobbyKickOutCsReq,
-        CmdLobbyType::CmdLobbyJoinScRsp,
         CmdLobbyType::CmdLobbyBeginCsReq,
-        CmdLobbyType::CmdLobbyModifyPlayerInfoCsReq,
-        CmdLobbyType::CmdLobbyQuitScRsp,
-        CmdLobbyType::CmdLobbyBeginScRsp,
-        CmdLobbyType::CmdLobbyGetInfoCsReq,
-        CmdLobbyType::CmdLobbyCreateCsReq,
-        CmdLobbyType::CmdLobbyKickOutScRsp,
-        CmdLobbyType::CmdLobbyModifyPlayerInfoScRsp,
-        CmdLobbyType::CmdLobbyQuitCsReq,
+        CmdLobbyType::CmdLobbyInviteScRsp,
         CmdLobbyType::CmdLobbySyncInfoScNotify,
+        CmdLobbyType::CmdLobbyInviteCsReq,
+        CmdLobbyType::CmdLobbyKickOutScRsp,
+        CmdLobbyType::CmdLobbyQuitCsReq,
+        CmdLobbyType::CmdLobbyQuitScRsp,
         CmdLobbyType::CmdLobbyCreateScRsp,
+        CmdLobbyType::CmdLobbyKickOutCsReq,
+        CmdLobbyType::CmdLobbyModifyPlayerInfoScRsp,
+        CmdLobbyType::CmdLobbyGetInfoCsReq,
+        CmdLobbyType::CmdLobbyGetInfoScRsp,
+        CmdLobbyType::CmdLobbyModifyPlayerInfoCsReq,
+        CmdLobbyType::CmdLobbyBeginScRsp,
+        CmdLobbyType::CmdLobbyInviteScNotify,
+        CmdLobbyType::CmdLobbyJoinCsReq,
+        CmdLobbyType::CmdLobbyJoinScRsp,
+        CmdLobbyType::CmdLobbyCreateCsReq,
     ];
 }
 
@@ -157,24 +157,24 @@ impl ::protobuf::EnumFull for CmdLobbyType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdLobbyType::CmdLobbyTypeNone => 0,
-            CmdLobbyType::CmdLobbyInviteScNotify => 1,
+            CmdLobbyType::CmdLobbyBeginCsReq => 1,
             CmdLobbyType::CmdLobbyInviteScRsp => 2,
-            CmdLobbyType::CmdLobbyInviteCsReq => 3,
-            CmdLobbyType::CmdLobbyGetInfoScRsp => 4,
-            CmdLobbyType::CmdLobbyJoinCsReq => 5,
-            CmdLobbyType::CmdLobbyKickOutCsReq => 6,
-            CmdLobbyType::CmdLobbyJoinScRsp => 7,
-            CmdLobbyType::CmdLobbyBeginCsReq => 8,
-            CmdLobbyType::CmdLobbyModifyPlayerInfoCsReq => 9,
-            CmdLobbyType::CmdLobbyQuitScRsp => 10,
-            CmdLobbyType::CmdLobbyBeginScRsp => 11,
-            CmdLobbyType::CmdLobbyGetInfoCsReq => 12,
-            CmdLobbyType::CmdLobbyCreateCsReq => 13,
-            CmdLobbyType::CmdLobbyKickOutScRsp => 14,
-            CmdLobbyType::CmdLobbyModifyPlayerInfoScRsp => 15,
-            CmdLobbyType::CmdLobbyQuitCsReq => 16,
-            CmdLobbyType::CmdLobbySyncInfoScNotify => 17,
-            CmdLobbyType::CmdLobbyCreateScRsp => 18,
+            CmdLobbyType::CmdLobbySyncInfoScNotify => 3,
+            CmdLobbyType::CmdLobbyInviteCsReq => 4,
+            CmdLobbyType::CmdLobbyKickOutScRsp => 5,
+            CmdLobbyType::CmdLobbyQuitCsReq => 6,
+            CmdLobbyType::CmdLobbyQuitScRsp => 7,
+            CmdLobbyType::CmdLobbyCreateScRsp => 8,
+            CmdLobbyType::CmdLobbyKickOutCsReq => 9,
+            CmdLobbyType::CmdLobbyModifyPlayerInfoScRsp => 10,
+            CmdLobbyType::CmdLobbyGetInfoCsReq => 11,
+            CmdLobbyType::CmdLobbyGetInfoScRsp => 12,
+            CmdLobbyType::CmdLobbyModifyPlayerInfoCsReq => 13,
+            CmdLobbyType::CmdLobbyBeginScRsp => 14,
+            CmdLobbyType::CmdLobbyInviteScNotify => 15,
+            CmdLobbyType::CmdLobbyJoinCsReq => 16,
+            CmdLobbyType::CmdLobbyJoinScRsp => 17,
+            CmdLobbyType::CmdLobbyCreateCsReq => 18,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -194,18 +194,18 @@ impl CmdLobbyType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12CmdLobbyType.proto*\x8e\x04\n\x0cCmdLobbyType\x12\x14\n\x10CmdLobb\
-    yTypeNone\x10\0\x12\x1b\n\x16CmdLobbyInviteScNotify\x10\xdd9\x12\x18\n\
-    \x13CmdLobbyInviteScRsp\x10\xbd9\x12\x18\n\x13CmdLobbyInviteCsReq\x10\
-    \xd29\x12\x19\n\x14CmdLobbyGetInfoScRsp\x10\xe29\x12\x16\n\x11CmdLobbyJo\
-    inCsReq\x10\xc29\x12\x19\n\x14CmdLobbyKickOutCsReq\x10\xbe9\x12\x16\n\
-    \x11CmdLobbyJoinScRsp\x10\xce9\x12\x17\n\x12CmdLobbyBeginCsReq\x10\xe09\
-    \x12\"\n\x1dCmdLobbyModifyPlayerInfoCsReq\x10\xde9\x12\x16\n\x11CmdLobby\
-    QuitScRsp\x10\xe79\x12\x17\n\x12CmdLobbyBeginScRsp\x10\xdb9\x12\x19\n\
-    \x14CmdLobbyGetInfoCsReq\x10\xd79\x12\x18\n\x13CmdLobbyCreateCsReq\x10\
-    \xc59\x12\x19\n\x14CmdLobbyKickOutScRsp\x10\xd49\x12\"\n\x1dCmdLobbyModi\
-    fyPlayerInfoScRsp\x10\xcd9\x12\x16\n\x11CmdLobbyQuitCsReq\x10\xd89\x12\
-    \x1d\n\x18CmdLobbySyncInfoScNotify\x10\xd99\x12\x18\n\x13CmdLobbyCreateS\
-    cRsp\x10\xc69b\x06proto3\
+    yTypeNone\x10\0\x12\x17\n\x12CmdLobbyBeginCsReq\x10\xc59\x12\x18\n\x13Cm\
+    dLobbyInviteScRsp\x10\xc09\x12\x1d\n\x18CmdLobbySyncInfoScNotify\x10\xe3\
+    9\x12\x18\n\x13CmdLobbyInviteCsReq\x10\xd29\x12\x19\n\x14CmdLobbyKickOut\
+    ScRsp\x10\xe49\x12\x16\n\x11CmdLobbyQuitCsReq\x10\xe69\x12\x16\n\x11CmdL\
+    obbyQuitScRsp\x10\xc39\x12\x18\n\x13CmdLobbyCreateScRsp\x10\xe89\x12\x19\
+    \n\x14CmdLobbyKickOutCsReq\x10\xe59\x12\"\n\x1dCmdLobbyModifyPlayerInfoS\
+    cRsp\x10\xe19\x12\x19\n\x14CmdLobbyGetInfoCsReq\x10\xba9\x12\x19\n\x14Cm\
+    dLobbyGetInfoScRsp\x10\xde9\x12\"\n\x1dCmdLobbyModifyPlayerInfoCsReq\x10\
+    \xbf9\x12\x17\n\x12CmdLobbyBeginScRsp\x10\xe79\x12\x1b\n\x16CmdLobbyInvi\
+    teScNotify\x10\xc79\x12\x16\n\x11CmdLobbyJoinCsReq\x10\xd49\x12\x16\n\
+    \x11CmdLobbyJoinScRsp\x10\xcd9\x12\x18\n\x13CmdLobbyCreateCsReq\x10\xc29\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

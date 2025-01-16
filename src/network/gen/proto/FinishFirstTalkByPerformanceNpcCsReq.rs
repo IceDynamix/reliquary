@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishFirstTalkByPerformanceNpcCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FinishFirstTalkByPerformanceNpcCsReq.MHIFDFCMGKA)
-    pub MHIFDFCMGKA: u32,
+    // @@protoc_insertion_point(field:FinishFirstTalkByPerformanceNpcCsReq.BPIOHDFIFLK)
+    pub BPIOHDFIFLK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FinishFirstTalkByPerformanceNpcCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl FinishFirstTalkByPerformanceNpcCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MHIFDFCMGKA",
-            |m: &FinishFirstTalkByPerformanceNpcCsReq| { &m.MHIFDFCMGKA },
-            |m: &mut FinishFirstTalkByPerformanceNpcCsReq| { &mut m.MHIFDFCMGKA },
+            "BPIOHDFIFLK",
+            |m: &FinishFirstTalkByPerformanceNpcCsReq| { &m.BPIOHDFIFLK },
+            |m: &mut FinishFirstTalkByPerformanceNpcCsReq| { &mut m.BPIOHDFIFLK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishFirstTalkByPerformanceNpcCsReq>(
             "FinishFirstTalkByPerformanceNpcCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for FinishFirstTalkByPerformanceNpcCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.MHIFDFCMGKA = is.read_uint32()?;
+                48 => {
+                    self.BPIOHDFIFLK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for FinishFirstTalkByPerformanceNpcCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MHIFDFCMGKA != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.MHIFDFCMGKA);
+        if self.BPIOHDFIFLK != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.BPIOHDFIFLK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for FinishFirstTalkByPerformanceNpcCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MHIFDFCMGKA != 0 {
-            os.write_uint32(15, self.MHIFDFCMGKA)?;
+        if self.BPIOHDFIFLK != 0 {
+            os.write_uint32(6, self.BPIOHDFIFLK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for FinishFirstTalkByPerformanceNpcCsReq {
     }
 
     fn clear(&mut self) {
-        self.MHIFDFCMGKA = 0;
+        self.BPIOHDFIFLK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishFirstTalkByPerformanceNpcCsReq {
         static instance: FinishFirstTalkByPerformanceNpcCsReq = FinishFirstTalkByPerformanceNpcCsReq {
-            MHIFDFCMGKA: 0,
+            BPIOHDFIFLK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for FinishFirstTalkByPerformanceNpcCsReq
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n*FinishFirstTalkByPerformanceNpcCsReq.proto\"H\n$FinishFirstTalkByPerf\
-    ormanceNpcCsReq\x12\x20\n\x0bMHIFDFCMGKA\x18\x0f\x20\x01(\rR\x0bMHIFDFCM\
-    GKAb\x06proto3\
+    ormanceNpcCsReq\x12\x20\n\x0bBPIOHDFIFLK\x18\x06\x20\x01(\rR\x0bBPIOHDFI\
+    FLKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

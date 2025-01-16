@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyAcceptQuizCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyAcceptQuizCsReq.IKOOPCBPGLG)
-    pub IKOOPCBPGLG: ::std::vec::Vec<super::LOAKNMELPHL::LOAKNMELPHL>,
+    // @@protoc_insertion_point(field:MonopolyAcceptQuizCsReq.IKHOBNLDECJ)
+    pub IKHOBNLDECJ: ::std::vec::Vec<super::ICNEDOCPBPP::ICNEDOCPBPP>,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyAcceptQuizCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl MonopolyAcceptQuizCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IKOOPCBPGLG",
-            |m: &MonopolyAcceptQuizCsReq| { &m.IKOOPCBPGLG },
-            |m: &mut MonopolyAcceptQuizCsReq| { &mut m.IKOOPCBPGLG },
+            "IKHOBNLDECJ",
+            |m: &MonopolyAcceptQuizCsReq| { &m.IKHOBNLDECJ },
+            |m: &mut MonopolyAcceptQuizCsReq| { &mut m.IKHOBNLDECJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyAcceptQuizCsReq>(
             "MonopolyAcceptQuizCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for MonopolyAcceptQuizCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    self.IKOOPCBPGLG.push(is.read_message()?);
+                82 => {
+                    self.IKHOBNLDECJ.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for MonopolyAcceptQuizCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.IKOOPCBPGLG {
+        for value in &self.IKHOBNLDECJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -98,8 +98,8 @@ impl ::protobuf::Message for MonopolyAcceptQuizCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.IKOOPCBPGLG {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        for v in &self.IKHOBNLDECJ {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -118,13 +118,13 @@ impl ::protobuf::Message for MonopolyAcceptQuizCsReq {
     }
 
     fn clear(&mut self) {
-        self.IKOOPCBPGLG.clear();
+        self.IKHOBNLDECJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyAcceptQuizCsReq {
         static instance: MonopolyAcceptQuizCsReq = MonopolyAcceptQuizCsReq {
-            IKOOPCBPGLG: ::std::vec::Vec::new(),
+            IKHOBNLDECJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,9 +149,9 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyAcceptQuizCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dMonopolyAcceptQuizCsReq.proto\x1a\x11LOAKNMELPHL.proto\"I\n\x17Mon\
-    opolyAcceptQuizCsReq\x12.\n\x0bIKOOPCBPGLG\x18\x04\x20\x03(\x0b2\x0c.LOA\
-    KNMELPHLR\x0bIKOOPCBPGLGb\x06proto3\
+    \n\x1dMonopolyAcceptQuizCsReq.proto\x1a\x11ICNEDOCPBPP.proto\"I\n\x17Mon\
+    opolyAcceptQuizCsReq\x12.\n\x0bIKHOBNLDECJ\x18\n\x20\x03(\x0b2\x0c.ICNED\
+    OCPBPPR\x0bIKHOBNLDECJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -169,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::LOAKNMELPHL::file_descriptor().clone());
+            deps.push(super::ICNEDOCPBPP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MonopolyAcceptQuizCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

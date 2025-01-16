@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CancelCacheNotifyCsReq {
     // message fields
-    // @@protoc_insertion_point(field:CancelCacheNotifyCsReq.ENKBLEFCOID)
-    pub ENKBLEFCOID: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:CancelCacheNotifyCsReq.OAPHLEHOFKM)
-    pub OAPHLEHOFKM: ::std::vec::Vec<::std::string::String>,
-    // @@protoc_insertion_point(field:CancelCacheNotifyCsReq.MPNJPFDCBDG)
-    pub MPNJPFDCBDG: ::protobuf::EnumOrUnknown<super::GECDMPFBLMF::GECDMPFBLMF>,
+    // @@protoc_insertion_point(field:CancelCacheNotifyCsReq.slot)
+    pub slot: ::protobuf::EnumOrUnknown<super::IHHMHLDLFHN::IHHMHLDLFHN>,
+    // @@protoc_insertion_point(field:CancelCacheNotifyCsReq.DNNHNHABFIO)
+    pub DNNHNHABFIO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:CancelCacheNotifyCsReq.BGEMFGHABBA)
+    pub BGEMFGHABBA: ::std::vec::Vec<::std::string::String>,
     // special fields
     // @@protoc_insertion_point(special_field:CancelCacheNotifyCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl CancelCacheNotifyCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ENKBLEFCOID",
-            |m: &CancelCacheNotifyCsReq| { &m.ENKBLEFCOID },
-            |m: &mut CancelCacheNotifyCsReq| { &mut m.ENKBLEFCOID },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OAPHLEHOFKM",
-            |m: &CancelCacheNotifyCsReq| { &m.OAPHLEHOFKM },
-            |m: &mut CancelCacheNotifyCsReq| { &mut m.OAPHLEHOFKM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MPNJPFDCBDG",
-            |m: &CancelCacheNotifyCsReq| { &m.MPNJPFDCBDG },
-            |m: &mut CancelCacheNotifyCsReq| { &mut m.MPNJPFDCBDG },
+            "slot",
+            |m: &CancelCacheNotifyCsReq| { &m.slot },
+            |m: &mut CancelCacheNotifyCsReq| { &mut m.slot },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DNNHNHABFIO",
+            |m: &CancelCacheNotifyCsReq| { &m.DNNHNHABFIO },
+            |m: &mut CancelCacheNotifyCsReq| { &mut m.DNNHNHABFIO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "BGEMFGHABBA",
+            |m: &CancelCacheNotifyCsReq| { &m.BGEMFGHABBA },
+            |m: &mut CancelCacheNotifyCsReq| { &mut m.BGEMFGHABBA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CancelCacheNotifyCsReq>(
             "CancelCacheNotifyCsReq",
@@ -87,17 +87,17 @@ impl ::protobuf::Message for CancelCacheNotifyCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.ENKBLEFCOID)?;
+                48 => {
+                    self.slot = is.read_enum_or_unknown()?;
                 },
-                104 => {
-                    self.ENKBLEFCOID.push(is.read_uint32()?);
+                114 => {
+                    is.read_repeated_packed_uint32_into(&mut self.DNNHNHABFIO)?;
                 },
-                74 => {
-                    self.OAPHLEHOFKM.push(is.read_string()?);
+                112 => {
+                    self.DNNHNHABFIO.push(is.read_uint32()?);
                 },
-                32 => {
-                    self.MPNJPFDCBDG = is.read_enum_or_unknown()?;
+                122 => {
+                    self.BGEMFGHABBA.push(is.read_string()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,30 +111,30 @@ impl ::protobuf::Message for CancelCacheNotifyCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.ENKBLEFCOID {
-            my_size += ::protobuf::rt::uint32_size(13, *value);
-        };
-        for value in &self.OAPHLEHOFKM {
-            my_size += ::protobuf::rt::string_size(9, &value);
-        };
-        if self.MPNJPFDCBDG != ::protobuf::EnumOrUnknown::new(super::GECDMPFBLMF::GECDMPFBLMF::CACHE_NOTIFY_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(4, self.MPNJPFDCBDG.value());
+        if self.slot != ::protobuf::EnumOrUnknown::new(super::IHHMHLDLFHN::IHHMHLDLFHN::CACHE_NOTIFY_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(6, self.slot.value());
         }
+        for value in &self.DNNHNHABFIO {
+            my_size += ::protobuf::rt::uint32_size(14, *value);
+        };
+        for value in &self.BGEMFGHABBA {
+            my_size += ::protobuf::rt::string_size(15, &value);
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.ENKBLEFCOID {
-            os.write_uint32(13, *v)?;
-        };
-        for v in &self.OAPHLEHOFKM {
-            os.write_string(9, &v)?;
-        };
-        if self.MPNJPFDCBDG != ::protobuf::EnumOrUnknown::new(super::GECDMPFBLMF::GECDMPFBLMF::CACHE_NOTIFY_TYPE_NONE) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.MPNJPFDCBDG))?;
+        if self.slot != ::protobuf::EnumOrUnknown::new(super::IHHMHLDLFHN::IHHMHLDLFHN::CACHE_NOTIFY_TYPE_NONE) {
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.slot))?;
         }
+        for v in &self.DNNHNHABFIO {
+            os.write_uint32(14, *v)?;
+        };
+        for v in &self.BGEMFGHABBA {
+            os.write_string(15, &v)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -152,17 +152,17 @@ impl ::protobuf::Message for CancelCacheNotifyCsReq {
     }
 
     fn clear(&mut self) {
-        self.ENKBLEFCOID.clear();
-        self.OAPHLEHOFKM.clear();
-        self.MPNJPFDCBDG = ::protobuf::EnumOrUnknown::new(super::GECDMPFBLMF::GECDMPFBLMF::CACHE_NOTIFY_TYPE_NONE);
+        self.slot = ::protobuf::EnumOrUnknown::new(super::IHHMHLDLFHN::IHHMHLDLFHN::CACHE_NOTIFY_TYPE_NONE);
+        self.DNNHNHABFIO.clear();
+        self.BGEMFGHABBA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CancelCacheNotifyCsReq {
         static instance: CancelCacheNotifyCsReq = CancelCacheNotifyCsReq {
-            ENKBLEFCOID: ::std::vec::Vec::new(),
-            OAPHLEHOFKM: ::std::vec::Vec::new(),
-            MPNJPFDCBDG: ::protobuf::EnumOrUnknown::from_i32(0),
+            slot: ::protobuf::EnumOrUnknown::from_i32(0),
+            DNNHNHABFIO: ::std::vec::Vec::new(),
+            BGEMFGHABBA: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -187,11 +187,10 @@ impl ::protobuf::reflect::ProtobufValue for CancelCacheNotifyCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cCancelCacheNotifyCsReq.proto\x1a\x11GECDMPFBLMF.proto\"\x8c\x01\n\
-    \x16CancelCacheNotifyCsReq\x12\x20\n\x0bENKBLEFCOID\x18\r\x20\x03(\rR\
-    \x0bENKBLEFCOID\x12\x20\n\x0bOAPHLEHOFKM\x18\t\x20\x03(\tR\x0bOAPHLEHOFK\
-    M\x12.\n\x0bMPNJPFDCBDG\x18\x04\x20\x01(\x0e2\x0c.GECDMPFBLMFR\x0bMPNJPF\
-    DCBDGb\x06proto3\
+    \n\x1cCancelCacheNotifyCsReq.proto\x1a\x11IHHMHLDLFHN.proto\"~\n\x16Canc\
+    elCacheNotifyCsReq\x12\x20\n\x04slot\x18\x06\x20\x01(\x0e2\x0c.IHHMHLDLF\
+    HNR\x04slot\x12\x20\n\x0bDNNHNHABFIO\x18\x0e\x20\x03(\rR\x0bDNNHNHABFIO\
+    \x12\x20\n\x0bBGEMFGHABBA\x18\x0f\x20\x03(\tR\x0bBGEMFGHABBAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -209,7 +208,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::GECDMPFBLMF::file_descriptor().clone());
+            deps.push(super::IHHMHLDLFHN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(CancelCacheNotifyCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

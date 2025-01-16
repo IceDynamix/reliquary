@@ -31,8 +31,8 @@ pub struct GetRogueScoreRewardInfoScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetRogueScoreRewardInfoScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetRogueScoreRewardInfoScRsp.score_reward_info)
-    pub score_reward_info: ::protobuf::MessageField<super::RogueScoreRewardInfo::RogueScoreRewardInfo>,
+    // @@protoc_insertion_point(field:GetRogueScoreRewardInfoScRsp.ROGUE_DEBUG_MESSAGE_TYPE_INFO)
+    pub ROGUE_DEBUG_MESSAGE_TYPE_INFO: ::protobuf::MessageField<super::GAFCOEJCDPG::GAFCOEJCDPG>,
     // special fields
     // @@protoc_insertion_point(special_field:GetRogueScoreRewardInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,10 +57,10 @@ impl GetRogueScoreRewardInfoScRsp {
             |m: &GetRogueScoreRewardInfoScRsp| { &m.retcode },
             |m: &mut GetRogueScoreRewardInfoScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueScoreRewardInfo::RogueScoreRewardInfo>(
-            "score_reward_info",
-            |m: &GetRogueScoreRewardInfoScRsp| { &m.score_reward_info },
-            |m: &mut GetRogueScoreRewardInfoScRsp| { &mut m.score_reward_info },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GAFCOEJCDPG::GAFCOEJCDPG>(
+            "ROGUE_DEBUG_MESSAGE_TYPE_INFO",
+            |m: &GetRogueScoreRewardInfoScRsp| { &m.ROGUE_DEBUG_MESSAGE_TYPE_INFO },
+            |m: &mut GetRogueScoreRewardInfoScRsp| { &mut m.ROGUE_DEBUG_MESSAGE_TYPE_INFO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetRogueScoreRewardInfoScRsp>(
             "GetRogueScoreRewardInfoScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for GetRogueScoreRewardInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.score_reward_info)?;
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ROGUE_DEBUG_MESSAGE_TYPE_INFO)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -99,9 +99,9 @@ impl ::protobuf::Message for GetRogueScoreRewardInfoScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
-        if let Some(v) = self.score_reward_info.as_ref() {
+        if let Some(v) = self.ROGUE_DEBUG_MESSAGE_TYPE_INFO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -112,10 +112,10 @@ impl ::protobuf::Message for GetRogueScoreRewardInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
-        if let Some(v) = self.score_reward_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if let Some(v) = self.ROGUE_DEBUG_MESSAGE_TYPE_INFO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -135,14 +135,14 @@ impl ::protobuf::Message for GetRogueScoreRewardInfoScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.score_reward_info.clear();
+        self.ROGUE_DEBUG_MESSAGE_TYPE_INFO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetRogueScoreRewardInfoScRsp {
         static instance: GetRogueScoreRewardInfoScRsp = GetRogueScoreRewardInfoScRsp {
             retcode: 0,
-            score_reward_info: ::protobuf::MessageField::none(),
+            ROGUE_DEBUG_MESSAGE_TYPE_INFO: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,11 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for GetRogueScoreRewardInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"GetRogueScoreRewardInfoScRsp.proto\x1a\x1aRogueScoreRewardInfo.proto\
-    \"{\n\x1cGetRogueScoreRewardInfoScRsp\x12\x18\n\x07retcode\x18\x0b\x20\
-    \x01(\rR\x07retcode\x12A\n\x11score_reward_info\x18\x01\x20\x01(\x0b2\
-    \x15.RogueScoreRewardInfoR\x0fscoreRewardInfoB\x15\n\x13emu.lunarcore.pr\
-    otob\x06proto3\
+    \n\"GetRogueScoreRewardInfoScRsp.proto\x1a\x11GAFCOEJCDPG.proto\"\x88\
+    \x01\n\x1cGetRogueScoreRewardInfoScRsp\x12\x18\n\x07retcode\x18\x02\x20\
+    \x01(\rR\x07retcode\x12N\n\x1dROGUE_DEBUG_MESSAGE_TYPE_INFO\x18\x03\x20\
+    \x01(\x0b2\x0c.GAFCOEJCDPGR\x19ROGUEDEBUGMESSAGETYPEINFOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -189,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::RogueScoreRewardInfo::file_descriptor().clone());
+            deps.push(super::GAFCOEJCDPG::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetRogueScoreRewardInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

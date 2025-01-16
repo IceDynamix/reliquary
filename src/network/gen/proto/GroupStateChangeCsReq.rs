@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GroupStateChangeCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GroupStateChangeCsReq.group_state_info)
-    pub group_state_info: ::protobuf::MessageField<super::GroupStateInfo::GroupStateInfo>,
+    // @@protoc_insertion_point(field:GroupStateChangeCsReq.OKGCLDPBEPH)
+    pub OKGCLDPBEPH: ::protobuf::MessageField<super::GEDJODIELBB::GEDJODIELBB>,
     // special fields
     // @@protoc_insertion_point(special_field:GroupStateChangeCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,10 +50,10 @@ impl GroupStateChangeCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GroupStateInfo::GroupStateInfo>(
-            "group_state_info",
-            |m: &GroupStateChangeCsReq| { &m.group_state_info },
-            |m: &mut GroupStateChangeCsReq| { &mut m.group_state_info },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GEDJODIELBB::GEDJODIELBB>(
+            "OKGCLDPBEPH",
+            |m: &GroupStateChangeCsReq| { &m.OKGCLDPBEPH },
+            |m: &mut GroupStateChangeCsReq| { &mut m.OKGCLDPBEPH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GroupStateChangeCsReq>(
             "GroupStateChangeCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for GroupStateChangeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.group_state_info)?;
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OKGCLDPBEPH)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for GroupStateChangeCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.group_state_info.as_ref() {
+        if let Some(v) = self.OKGCLDPBEPH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -98,8 +98,8 @@ impl ::protobuf::Message for GroupStateChangeCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.group_state_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        if let Some(v) = self.OKGCLDPBEPH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -118,13 +118,13 @@ impl ::protobuf::Message for GroupStateChangeCsReq {
     }
 
     fn clear(&mut self) {
-        self.group_state_info.clear();
+        self.OKGCLDPBEPH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GroupStateChangeCsReq {
         static instance: GroupStateChangeCsReq = GroupStateChangeCsReq {
-            group_state_info: ::protobuf::MessageField::none(),
+            OKGCLDPBEPH: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,10 +149,9 @@ impl ::protobuf::reflect::ProtobufValue for GroupStateChangeCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bGroupStateChangeCsReq.proto\x1a\x14GroupStateInfo.proto\"R\n\x15Gr\
-    oupStateChangeCsReq\x129\n\x10group_state_info\x18\x0f\x20\x01(\x0b2\x0f\
-    .GroupStateInfoR\x0egroupStateInfoB\x15\n\x13emu.lunarcore.protob\x06pro\
-    to3\
+    \n\x1bGroupStateChangeCsReq.proto\x1a\x11GEDJODIELBB.proto\"G\n\x15Group\
+    StateChangeCsReq\x12.\n\x0bOKGCLDPBEPH\x18\n\x20\x01(\x0b2\x0c.GEDJODIEL\
+    BBR\x0bOKGCLDPBEPHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -170,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::GroupStateInfo::file_descriptor().clone());
+            deps.push(super::GEDJODIELBB::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GroupStateChangeCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

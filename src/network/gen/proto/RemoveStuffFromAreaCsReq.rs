@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RemoveStuffFromAreaCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RemoveStuffFromAreaCsReq.BIIHOBMMFDP)
-    pub BIIHOBMMFDP: u32,
+    // @@protoc_insertion_point(field:RemoveStuffFromAreaCsReq.POMEOFHEMGH)
+    pub POMEOFHEMGH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RemoveStuffFromAreaCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl RemoveStuffFromAreaCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BIIHOBMMFDP",
-            |m: &RemoveStuffFromAreaCsReq| { &m.BIIHOBMMFDP },
-            |m: &mut RemoveStuffFromAreaCsReq| { &mut m.BIIHOBMMFDP },
+            "POMEOFHEMGH",
+            |m: &RemoveStuffFromAreaCsReq| { &m.POMEOFHEMGH },
+            |m: &mut RemoveStuffFromAreaCsReq| { &mut m.POMEOFHEMGH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RemoveStuffFromAreaCsReq>(
             "RemoveStuffFromAreaCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for RemoveStuffFromAreaCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.BIIHOBMMFDP = is.read_uint32()?;
+                48 => {
+                    self.POMEOFHEMGH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for RemoveStuffFromAreaCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BIIHOBMMFDP != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.BIIHOBMMFDP);
+        if self.POMEOFHEMGH != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.POMEOFHEMGH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for RemoveStuffFromAreaCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BIIHOBMMFDP != 0 {
-            os.write_uint32(7, self.BIIHOBMMFDP)?;
+        if self.POMEOFHEMGH != 0 {
+            os.write_uint32(6, self.POMEOFHEMGH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for RemoveStuffFromAreaCsReq {
     }
 
     fn clear(&mut self) {
-        self.BIIHOBMMFDP = 0;
+        self.POMEOFHEMGH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RemoveStuffFromAreaCsReq {
         static instance: RemoveStuffFromAreaCsReq = RemoveStuffFromAreaCsReq {
-            BIIHOBMMFDP: 0,
+            POMEOFHEMGH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for RemoveStuffFromAreaCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eRemoveStuffFromAreaCsReq.proto\"<\n\x18RemoveStuffFromAreaCsReq\
-    \x12\x20\n\x0bBIIHOBMMFDP\x18\x07\x20\x01(\rR\x0bBIIHOBMMFDPb\x06proto3\
+    \x12\x20\n\x0bPOMEOFHEMGH\x18\x06\x20\x01(\rR\x0bPOMEOFHEMGHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

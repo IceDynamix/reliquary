@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ActivateFarmElementCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ActivateFarmElementCsReq.world_level)
-    pub world_level: u32,
-    // @@protoc_insertion_point(field:ActivateFarmElementCsReq.entity_id)
-    pub entity_id: u32,
+    // @@protoc_insertion_point(field:ActivateFarmElementCsReq.NHPGEOMCILN)
+    pub NHPGEOMCILN: u32,
+    // @@protoc_insertion_point(field:ActivateFarmElementCsReq.CFNJJEJIGOK)
+    pub CFNJJEJIGOK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ActivateFarmElementCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl ActivateFarmElementCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "world_level",
-            |m: &ActivateFarmElementCsReq| { &m.world_level },
-            |m: &mut ActivateFarmElementCsReq| { &mut m.world_level },
+            "NHPGEOMCILN",
+            |m: &ActivateFarmElementCsReq| { &m.NHPGEOMCILN },
+            |m: &mut ActivateFarmElementCsReq| { &mut m.NHPGEOMCILN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "entity_id",
-            |m: &ActivateFarmElementCsReq| { &m.entity_id },
-            |m: &mut ActivateFarmElementCsReq| { &mut m.entity_id },
+            "CFNJJEJIGOK",
+            |m: &ActivateFarmElementCsReq| { &m.CFNJJEJIGOK },
+            |m: &mut ActivateFarmElementCsReq| { &mut m.CFNJJEJIGOK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ActivateFarmElementCsReq>(
             "ActivateFarmElementCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for ActivateFarmElementCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.world_level = is.read_uint32()?;
+                32 => {
+                    self.NHPGEOMCILN = is.read_uint32()?;
                 },
-                112 => {
-                    self.entity_id = is.read_uint32()?;
+                56 => {
+                    self.CFNJJEJIGOK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for ActivateFarmElementCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.world_level);
+        if self.NHPGEOMCILN != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.NHPGEOMCILN);
         }
-        if self.entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.entity_id);
+        if self.CFNJJEJIGOK != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.CFNJJEJIGOK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for ActivateFarmElementCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.world_level != 0 {
-            os.write_uint32(6, self.world_level)?;
+        if self.NHPGEOMCILN != 0 {
+            os.write_uint32(4, self.NHPGEOMCILN)?;
         }
-        if self.entity_id != 0 {
-            os.write_uint32(14, self.entity_id)?;
+        if self.CFNJJEJIGOK != 0 {
+            os.write_uint32(7, self.CFNJJEJIGOK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for ActivateFarmElementCsReq {
     }
 
     fn clear(&mut self) {
-        self.world_level = 0;
-        self.entity_id = 0;
+        self.NHPGEOMCILN = 0;
+        self.CFNJJEJIGOK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ActivateFarmElementCsReq {
         static instance: ActivateFarmElementCsReq = ActivateFarmElementCsReq {
-            world_level: 0,
-            entity_id: 0,
+            NHPGEOMCILN: 0,
+            CFNJJEJIGOK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for ActivateFarmElementCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eActivateFarmElementCsReq.proto\"X\n\x18ActivateFarmElementCsReq\
-    \x12\x1f\n\x0bworld_level\x18\x06\x20\x01(\rR\nworldLevel\x12\x1b\n\tent\
-    ity_id\x18\x0e\x20\x01(\rR\x08entityIdB\x15\n\x13emu.lunarcore.protob\
-    \x06proto3\
+    \n\x1eActivateFarmElementCsReq.proto\"^\n\x18ActivateFarmElementCsReq\
+    \x12\x20\n\x0bNHPGEOMCILN\x18\x04\x20\x01(\rR\x0bNHPGEOMCILN\x12\x20\n\
+    \x0bCFNJJEJIGOK\x18\x07\x20\x01(\rR\x0bCFNJJEJIGOKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

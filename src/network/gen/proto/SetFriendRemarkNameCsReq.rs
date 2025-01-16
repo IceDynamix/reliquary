@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetFriendRemarkNameCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetFriendRemarkNameCsReq.KGGHLADEKGP)
-    pub KGGHLADEKGP: u32,
-    // @@protoc_insertion_point(field:SetFriendRemarkNameCsReq.JCAIPEGOGCI)
-    pub JCAIPEGOGCI: ::std::string::String,
-    // @@protoc_insertion_point(field:SetFriendRemarkNameCsReq.LNCNOFOEHAA)
-    pub LNCNOFOEHAA: u32,
+    // @@protoc_insertion_point(field:SetFriendRemarkNameCsReq.DEPEKPIEGJO)
+    pub DEPEKPIEGJO: u32,
+    // @@protoc_insertion_point(field:SetFriendRemarkNameCsReq.OLDKAMACFMD)
+    pub OLDKAMACFMD: u32,
+    // @@protoc_insertion_point(field:SetFriendRemarkNameCsReq.JNJJBIGBGPA)
+    pub JNJJBIGBGPA: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:SetFriendRemarkNameCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl SetFriendRemarkNameCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KGGHLADEKGP",
-            |m: &SetFriendRemarkNameCsReq| { &m.KGGHLADEKGP },
-            |m: &mut SetFriendRemarkNameCsReq| { &mut m.KGGHLADEKGP },
+            "DEPEKPIEGJO",
+            |m: &SetFriendRemarkNameCsReq| { &m.DEPEKPIEGJO },
+            |m: &mut SetFriendRemarkNameCsReq| { &mut m.DEPEKPIEGJO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JCAIPEGOGCI",
-            |m: &SetFriendRemarkNameCsReq| { &m.JCAIPEGOGCI },
-            |m: &mut SetFriendRemarkNameCsReq| { &mut m.JCAIPEGOGCI },
+            "OLDKAMACFMD",
+            |m: &SetFriendRemarkNameCsReq| { &m.OLDKAMACFMD },
+            |m: &mut SetFriendRemarkNameCsReq| { &mut m.OLDKAMACFMD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LNCNOFOEHAA",
-            |m: &SetFriendRemarkNameCsReq| { &m.LNCNOFOEHAA },
-            |m: &mut SetFriendRemarkNameCsReq| { &mut m.LNCNOFOEHAA },
+            "JNJJBIGBGPA",
+            |m: &SetFriendRemarkNameCsReq| { &m.JNJJBIGBGPA },
+            |m: &mut SetFriendRemarkNameCsReq| { &mut m.JNJJBIGBGPA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetFriendRemarkNameCsReq>(
             "SetFriendRemarkNameCsReq",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for SetFriendRemarkNameCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.KGGHLADEKGP = is.read_uint32()?;
+                104 => {
+                    self.DEPEKPIEGJO = is.read_uint32()?;
+                },
+                24 => {
+                    self.OLDKAMACFMD = is.read_uint32()?;
                 },
                 50 => {
-                    self.JCAIPEGOGCI = is.read_string()?;
-                },
-                112 => {
-                    self.LNCNOFOEHAA = is.read_uint32()?;
+                    self.JNJJBIGBGPA = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for SetFriendRemarkNameCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KGGHLADEKGP != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.KGGHLADEKGP);
+        if self.DEPEKPIEGJO != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.DEPEKPIEGJO);
         }
-        if !self.JCAIPEGOGCI.is_empty() {
-            my_size += ::protobuf::rt::string_size(6, &self.JCAIPEGOGCI);
+        if self.OLDKAMACFMD != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.OLDKAMACFMD);
         }
-        if self.LNCNOFOEHAA != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.LNCNOFOEHAA);
+        if !self.JNJJBIGBGPA.is_empty() {
+            my_size += ::protobuf::rt::string_size(6, &self.JNJJBIGBGPA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for SetFriendRemarkNameCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KGGHLADEKGP != 0 {
-            os.write_uint32(4, self.KGGHLADEKGP)?;
+        if self.DEPEKPIEGJO != 0 {
+            os.write_uint32(13, self.DEPEKPIEGJO)?;
         }
-        if !self.JCAIPEGOGCI.is_empty() {
-            os.write_string(6, &self.JCAIPEGOGCI)?;
+        if self.OLDKAMACFMD != 0 {
+            os.write_uint32(3, self.OLDKAMACFMD)?;
         }
-        if self.LNCNOFOEHAA != 0 {
-            os.write_uint32(14, self.LNCNOFOEHAA)?;
+        if !self.JNJJBIGBGPA.is_empty() {
+            os.write_string(6, &self.JNJJBIGBGPA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for SetFriendRemarkNameCsReq {
     }
 
     fn clear(&mut self) {
-        self.KGGHLADEKGP = 0;
-        self.JCAIPEGOGCI.clear();
-        self.LNCNOFOEHAA = 0;
+        self.DEPEKPIEGJO = 0;
+        self.OLDKAMACFMD = 0;
+        self.JNJJBIGBGPA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetFriendRemarkNameCsReq {
         static instance: SetFriendRemarkNameCsReq = SetFriendRemarkNameCsReq {
-            KGGHLADEKGP: 0,
-            JCAIPEGOGCI: ::std::string::String::new(),
-            LNCNOFOEHAA: 0,
+            DEPEKPIEGJO: 0,
+            OLDKAMACFMD: 0,
+            JNJJBIGBGPA: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for SetFriendRemarkNameCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eSetFriendRemarkNameCsReq.proto\"\x80\x01\n\x18SetFriendRemarkNameC\
-    sReq\x12\x20\n\x0bKGGHLADEKGP\x18\x04\x20\x01(\rR\x0bKGGHLADEKGP\x12\x20\
-    \n\x0bJCAIPEGOGCI\x18\x06\x20\x01(\tR\x0bJCAIPEGOGCI\x12\x20\n\x0bLNCNOF\
-    OEHAA\x18\x0e\x20\x01(\rR\x0bLNCNOFOEHAAb\x06proto3\
+    sReq\x12\x20\n\x0bDEPEKPIEGJO\x18\r\x20\x01(\rR\x0bDEPEKPIEGJO\x12\x20\n\
+    \x0bOLDKAMACFMD\x18\x03\x20\x01(\rR\x0bOLDKAMACFMD\x12\x20\n\x0bJNJJBIGB\
+    GPA\x18\x06\x20\x01(\tR\x0bJNJJBIGBGPAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

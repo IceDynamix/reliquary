@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetChallengeRecommendLineupListScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetChallengeRecommendLineupListScRsp.DCECKPANHHB)
-    pub DCECKPANHHB: ::std::vec::Vec<super::CNDDKBFJAJN::CNDDKBFJAJN>,
-    // @@protoc_insertion_point(field:GetChallengeRecommendLineupListScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:GetChallengeRecommendLineupListScRsp.GPKEAKPHIPA)
-    pub GPKEAKPHIPA: u32,
+    // @@protoc_insertion_point(field:GetChallengeRecommendLineupListScRsp.PGGMKGMBBKJ)
+    pub PGGMKGMBBKJ: u32,
+    // @@protoc_insertion_point(field:GetChallengeRecommendLineupListScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetChallengeRecommendLineupListScRsp.HOBEFLEKPFG)
+    pub HOBEFLEKPFG: ::std::vec::Vec<super::LOBALPNNPNL::LOBALPNNPNL>,
     // special fields
     // @@protoc_insertion_point(special_field:GetChallengeRecommendLineupListScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl GetChallengeRecommendLineupListScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PGGMKGMBBKJ",
+            |m: &GetChallengeRecommendLineupListScRsp| { &m.PGGMKGMBBKJ },
+            |m: &mut GetChallengeRecommendLineupListScRsp| { &mut m.PGGMKGMBBKJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GetChallengeRecommendLineupListScRsp| { &m.retcode },
+            |m: &mut GetChallengeRecommendLineupListScRsp| { &mut m.retcode },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DCECKPANHHB",
-            |m: &GetChallengeRecommendLineupListScRsp| { &m.DCECKPANHHB },
-            |m: &mut GetChallengeRecommendLineupListScRsp| { &mut m.DCECKPANHHB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &GetChallengeRecommendLineupListScRsp| { &m.ADADHIHDHJC },
-            |m: &mut GetChallengeRecommendLineupListScRsp| { &mut m.ADADHIHDHJC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GPKEAKPHIPA",
-            |m: &GetChallengeRecommendLineupListScRsp| { &m.GPKEAKPHIPA },
-            |m: &mut GetChallengeRecommendLineupListScRsp| { &mut m.GPKEAKPHIPA },
+            "HOBEFLEKPFG",
+            |m: &GetChallengeRecommendLineupListScRsp| { &m.HOBEFLEKPFG },
+            |m: &mut GetChallengeRecommendLineupListScRsp| { &mut m.HOBEFLEKPFG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetChallengeRecommendLineupListScRsp>(
             "GetChallengeRecommendLineupListScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for GetChallengeRecommendLineupListScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    self.DCECKPANHHB.push(is.read_message()?);
+                64 => {
+                    self.PGGMKGMBBKJ = is.read_uint32()?;
                 },
-                104 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                120 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                112 => {
-                    self.GPKEAKPHIPA = is.read_uint32()?;
+                98 => {
+                    self.HOBEFLEKPFG.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,31 +108,31 @@ impl ::protobuf::Message for GetChallengeRecommendLineupListScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.DCECKPANHHB {
+        if self.PGGMKGMBBKJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.PGGMKGMBBKJ);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+        }
+        for value in &self.HOBEFLEKPFG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.ADADHIHDHJC);
-        }
-        if self.GPKEAKPHIPA != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.GPKEAKPHIPA);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.DCECKPANHHB {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        if self.PGGMKGMBBKJ != 0 {
+            os.write_uint32(8, self.PGGMKGMBBKJ)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(15, self.retcode)?;
+        }
+        for v in &self.HOBEFLEKPFG {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(13, self.ADADHIHDHJC)?;
-        }
-        if self.GPKEAKPHIPA != 0 {
-            os.write_uint32(14, self.GPKEAKPHIPA)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,17 +150,17 @@ impl ::protobuf::Message for GetChallengeRecommendLineupListScRsp {
     }
 
     fn clear(&mut self) {
-        self.DCECKPANHHB.clear();
-        self.ADADHIHDHJC = 0;
-        self.GPKEAKPHIPA = 0;
+        self.PGGMKGMBBKJ = 0;
+        self.retcode = 0;
+        self.HOBEFLEKPFG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetChallengeRecommendLineupListScRsp {
         static instance: GetChallengeRecommendLineupListScRsp = GetChallengeRecommendLineupListScRsp {
-            DCECKPANHHB: ::std::vec::Vec::new(),
-            ADADHIHDHJC: 0,
-            GPKEAKPHIPA: 0,
+            PGGMKGMBBKJ: 0,
+            retcode: 0,
+            HOBEFLEKPFG: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for GetChallengeRecommendLineupListScRsp
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n*GetChallengeRecommendLineupListScRsp.proto\x1a\x11CNDDKBFJAJN.proto\"\
-    \x9a\x01\n$GetChallengeRecommendLineupListScRsp\x12.\n\x0bDCECKPANHHB\
-    \x18\x0f\x20\x03(\x0b2\x0c.CNDDKBFJAJNR\x0bDCECKPANHHB\x12\x20\n\x0bADAD\
-    HIHDHJC\x18\r\x20\x01(\rR\x0bADADHIHDHJC\x12\x20\n\x0bGPKEAKPHIPA\x18\
-    \x0e\x20\x01(\rR\x0bGPKEAKPHIPAb\x06proto3\
+    \n*GetChallengeRecommendLineupListScRsp.proto\x1a\x11LOBALPNNPNL.proto\"\
+    \x92\x01\n$GetChallengeRecommendLineupListScRsp\x12\x20\n\x0bPGGMKGMBBKJ\
+    \x18\x08\x20\x01(\rR\x0bPGGMKGMBBKJ\x12\x18\n\x07retcode\x18\x0f\x20\x01\
+    (\rR\x07retcode\x12.\n\x0bHOBEFLEKPFG\x18\x0c\x20\x03(\x0b2\x0c.LOBALPNN\
+    PNLR\x0bHOBEFLEKPFGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::CNDDKBFJAJN::file_descriptor().clone());
+            deps.push(super::LOBALPNNPNL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetChallengeRecommendLineupListScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

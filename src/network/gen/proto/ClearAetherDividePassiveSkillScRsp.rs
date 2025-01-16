@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ClearAetherDividePassiveSkillScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ClearAetherDividePassiveSkillScRsp.AEABHIJBFCJ)
-    pub AEABHIJBFCJ: ::protobuf::MessageField<super::ADDCJFIBCFF::ADDCJFIBCFF>,
-    // @@protoc_insertion_point(field:ClearAetherDividePassiveSkillScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:ClearAetherDividePassiveSkillScRsp.HBOCMBOBJNG)
-    pub HBOCMBOBJNG: ::protobuf::MessageField<super::HHBFGOMBIMA::HHBFGOMBIMA>,
+    // @@protoc_insertion_point(field:ClearAetherDividePassiveSkillScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:ClearAetherDividePassiveSkillScRsp.HNLBOGKHFAI)
+    pub HNLBOGKHFAI: ::protobuf::MessageField<super::JKHDPPNJELA::JKHDPPNJELA>,
+    // @@protoc_insertion_point(field:ClearAetherDividePassiveSkillScRsp.LKCMBLDKFLF)
+    pub LKCMBLDKFLF: ::protobuf::MessageField<super::CHEONOGHMHD::CHEONOGHMHD>,
     // special fields
     // @@protoc_insertion_point(special_field:ClearAetherDividePassiveSkillScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl ClearAetherDividePassiveSkillScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ADDCJFIBCFF::ADDCJFIBCFF>(
-            "AEABHIJBFCJ",
-            |m: &ClearAetherDividePassiveSkillScRsp| { &m.AEABHIJBFCJ },
-            |m: &mut ClearAetherDividePassiveSkillScRsp| { &mut m.AEABHIJBFCJ },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &ClearAetherDividePassiveSkillScRsp| { &m.ADADHIHDHJC },
-            |m: &mut ClearAetherDividePassiveSkillScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &ClearAetherDividePassiveSkillScRsp| { &m.retcode },
+            |m: &mut ClearAetherDividePassiveSkillScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HHBFGOMBIMA::HHBFGOMBIMA>(
-            "HBOCMBOBJNG",
-            |m: &ClearAetherDividePassiveSkillScRsp| { &m.HBOCMBOBJNG },
-            |m: &mut ClearAetherDividePassiveSkillScRsp| { &mut m.HBOCMBOBJNG },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JKHDPPNJELA::JKHDPPNJELA>(
+            "HNLBOGKHFAI",
+            |m: &ClearAetherDividePassiveSkillScRsp| { &m.HNLBOGKHFAI },
+            |m: &mut ClearAetherDividePassiveSkillScRsp| { &mut m.HNLBOGKHFAI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CHEONOGHMHD::CHEONOGHMHD>(
+            "LKCMBLDKFLF",
+            |m: &ClearAetherDividePassiveSkillScRsp| { &m.LKCMBLDKFLF },
+            |m: &mut ClearAetherDividePassiveSkillScRsp| { &mut m.LKCMBLDKFLF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ClearAetherDividePassiveSkillScRsp>(
             "ClearAetherDividePassiveSkillScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for ClearAetherDividePassiveSkillScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                88 => {
+                    self.retcode = is.read_uint32()?;
+                },
                 122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AEABHIJBFCJ)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HNLBOGKHFAI)?;
                 },
-                104 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
-                },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HBOCMBOBJNG)?;
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LKCMBLDKFLF)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for ClearAetherDividePassiveSkillScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.AEABHIJBFCJ.as_ref() {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        }
+        if let Some(v) = self.HNLBOGKHFAI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.ADADHIHDHJC);
-        }
-        if let Some(v) = self.HBOCMBOBJNG.as_ref() {
+        if let Some(v) = self.LKCMBLDKFLF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -125,14 +125,14 @@ impl ::protobuf::Message for ClearAetherDividePassiveSkillScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.AEABHIJBFCJ.as_ref() {
+        if self.retcode != 0 {
+            os.write_uint32(11, self.retcode)?;
+        }
+        if let Some(v) = self.HNLBOGKHFAI.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(13, self.ADADHIHDHJC)?;
-        }
-        if let Some(v) = self.HBOCMBOBJNG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if let Some(v) = self.LKCMBLDKFLF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,17 +151,17 @@ impl ::protobuf::Message for ClearAetherDividePassiveSkillScRsp {
     }
 
     fn clear(&mut self) {
-        self.AEABHIJBFCJ.clear();
-        self.ADADHIHDHJC = 0;
-        self.HBOCMBOBJNG.clear();
+        self.retcode = 0;
+        self.HNLBOGKHFAI.clear();
+        self.LKCMBLDKFLF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ClearAetherDividePassiveSkillScRsp {
         static instance: ClearAetherDividePassiveSkillScRsp = ClearAetherDividePassiveSkillScRsp {
-            AEABHIJBFCJ: ::protobuf::MessageField::none(),
-            ADADHIHDHJC: 0,
-            HBOCMBOBJNG: ::protobuf::MessageField::none(),
+            retcode: 0,
+            HNLBOGKHFAI: ::protobuf::MessageField::none(),
+            LKCMBLDKFLF: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,12 +186,11 @@ impl ::protobuf::reflect::ProtobufValue for ClearAetherDividePassiveSkillScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n(ClearAetherDividePassiveSkillScRsp.proto\x1a\x11ADDCJFIBCFF.proto\x1a\
-    \x11HHBFGOMBIMA.proto\"\xa6\x01\n\"ClearAetherDividePassiveSkillScRsp\
-    \x12.\n\x0bAEABHIJBFCJ\x18\x0f\x20\x01(\x0b2\x0c.ADDCJFIBCFFR\x0bAEABHIJ\
-    BFCJ\x12\x20\n\x0bADADHIHDHJC\x18\r\x20\x01(\rR\x0bADADHIHDHJC\x12.\n\
-    \x0bHBOCMBOBJNG\x18\x0e\x20\x01(\x0b2\x0c.HHBFGOMBIMAR\x0bHBOCMBOBJNGb\
-    \x06proto3\
+    \n(ClearAetherDividePassiveSkillScRsp.proto\x1a\x11CHEONOGHMHD.proto\x1a\
+    \x11JKHDPPNJELA.proto\"\x9e\x01\n\"ClearAetherDividePassiveSkillScRsp\
+    \x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12.\n\x0bHNLBOGKHF\
+    AI\x18\x0f\x20\x01(\x0b2\x0c.JKHDPPNJELAR\x0bHNLBOGKHFAI\x12.\n\x0bLKCMB\
+    LDKFLF\x18\n\x20\x01(\x0b2\x0c.CHEONOGHMHDR\x0bLKCMBLDKFLFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -209,8 +208,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::ADDCJFIBCFF::file_descriptor().clone());
-            deps.push(super::HHBFGOMBIMA::file_descriptor().clone());
+            deps.push(super::CHEONOGHMHD::file_descriptor().clone());
+            deps.push(super::JKHDPPNJELA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ClearAetherDividePassiveSkillScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

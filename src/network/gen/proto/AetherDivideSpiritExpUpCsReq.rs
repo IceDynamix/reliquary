@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AetherDivideSpiritExpUpCsReq {
     // message fields
-    // @@protoc_insertion_point(field:AetherDivideSpiritExpUpCsReq.AKFMFBKKEOI)
-    pub AKFMFBKKEOI: u32,
-    // @@protoc_insertion_point(field:AetherDivideSpiritExpUpCsReq.MLEBCLFEAAL)
-    pub MLEBCLFEAAL: u32,
-    // @@protoc_insertion_point(field:AetherDivideSpiritExpUpCsReq.GBEABPKGNHD)
-    pub GBEABPKGNHD: u32,
+    // @@protoc_insertion_point(field:AetherDivideSpiritExpUpCsReq.FCHKEAGLMPH)
+    pub FCHKEAGLMPH: u32,
+    // @@protoc_insertion_point(field:AetherDivideSpiritExpUpCsReq.IPJLCFAMMDB)
+    pub IPJLCFAMMDB: u32,
+    // @@protoc_insertion_point(field:AetherDivideSpiritExpUpCsReq.GFIMLBECJLC)
+    pub GFIMLBECJLC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AetherDivideSpiritExpUpCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl AetherDivideSpiritExpUpCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AKFMFBKKEOI",
-            |m: &AetherDivideSpiritExpUpCsReq| { &m.AKFMFBKKEOI },
-            |m: &mut AetherDivideSpiritExpUpCsReq| { &mut m.AKFMFBKKEOI },
+            "FCHKEAGLMPH",
+            |m: &AetherDivideSpiritExpUpCsReq| { &m.FCHKEAGLMPH },
+            |m: &mut AetherDivideSpiritExpUpCsReq| { &mut m.FCHKEAGLMPH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MLEBCLFEAAL",
-            |m: &AetherDivideSpiritExpUpCsReq| { &m.MLEBCLFEAAL },
-            |m: &mut AetherDivideSpiritExpUpCsReq| { &mut m.MLEBCLFEAAL },
+            "IPJLCFAMMDB",
+            |m: &AetherDivideSpiritExpUpCsReq| { &m.IPJLCFAMMDB },
+            |m: &mut AetherDivideSpiritExpUpCsReq| { &mut m.IPJLCFAMMDB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GBEABPKGNHD",
-            |m: &AetherDivideSpiritExpUpCsReq| { &m.GBEABPKGNHD },
-            |m: &mut AetherDivideSpiritExpUpCsReq| { &mut m.GBEABPKGNHD },
+            "GFIMLBECJLC",
+            |m: &AetherDivideSpiritExpUpCsReq| { &m.GFIMLBECJLC },
+            |m: &mut AetherDivideSpiritExpUpCsReq| { &mut m.GFIMLBECJLC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AetherDivideSpiritExpUpCsReq>(
             "AetherDivideSpiritExpUpCsReq",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for AetherDivideSpiritExpUpCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.AKFMFBKKEOI = is.read_uint32()?;
-                },
                 56 => {
-                    self.MLEBCLFEAAL = is.read_uint32()?;
+                    self.FCHKEAGLMPH = is.read_uint32()?;
                 },
-                24 => {
-                    self.GBEABPKGNHD = is.read_uint32()?;
+                104 => {
+                    self.IPJLCFAMMDB = is.read_uint32()?;
+                },
+                40 => {
+                    self.GFIMLBECJLC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for AetherDivideSpiritExpUpCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AKFMFBKKEOI != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.AKFMFBKKEOI);
+        if self.FCHKEAGLMPH != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.FCHKEAGLMPH);
         }
-        if self.MLEBCLFEAAL != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.MLEBCLFEAAL);
+        if self.IPJLCFAMMDB != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.IPJLCFAMMDB);
         }
-        if self.GBEABPKGNHD != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.GBEABPKGNHD);
+        if self.GFIMLBECJLC != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.GFIMLBECJLC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for AetherDivideSpiritExpUpCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AKFMFBKKEOI != 0 {
-            os.write_uint32(1, self.AKFMFBKKEOI)?;
+        if self.FCHKEAGLMPH != 0 {
+            os.write_uint32(7, self.FCHKEAGLMPH)?;
         }
-        if self.MLEBCLFEAAL != 0 {
-            os.write_uint32(7, self.MLEBCLFEAAL)?;
+        if self.IPJLCFAMMDB != 0 {
+            os.write_uint32(13, self.IPJLCFAMMDB)?;
         }
-        if self.GBEABPKGNHD != 0 {
-            os.write_uint32(3, self.GBEABPKGNHD)?;
+        if self.GFIMLBECJLC != 0 {
+            os.write_uint32(5, self.GFIMLBECJLC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for AetherDivideSpiritExpUpCsReq {
     }
 
     fn clear(&mut self) {
-        self.AKFMFBKKEOI = 0;
-        self.MLEBCLFEAAL = 0;
-        self.GBEABPKGNHD = 0;
+        self.FCHKEAGLMPH = 0;
+        self.IPJLCFAMMDB = 0;
+        self.GFIMLBECJLC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AetherDivideSpiritExpUpCsReq {
         static instance: AetherDivideSpiritExpUpCsReq = AetherDivideSpiritExpUpCsReq {
-            AKFMFBKKEOI: 0,
-            MLEBCLFEAAL: 0,
-            GBEABPKGNHD: 0,
+            FCHKEAGLMPH: 0,
+            IPJLCFAMMDB: 0,
+            GFIMLBECJLC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for AetherDivideSpiritExpUpCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"AetherDivideSpiritExpUpCsReq.proto\"\x84\x01\n\x1cAetherDivideSpirit\
-    ExpUpCsReq\x12\x20\n\x0bAKFMFBKKEOI\x18\x01\x20\x01(\rR\x0bAKFMFBKKEOI\
-    \x12\x20\n\x0bMLEBCLFEAAL\x18\x07\x20\x01(\rR\x0bMLEBCLFEAAL\x12\x20\n\
-    \x0bGBEABPKGNHD\x18\x03\x20\x01(\rR\x0bGBEABPKGNHDb\x06proto3\
+    ExpUpCsReq\x12\x20\n\x0bFCHKEAGLMPH\x18\x07\x20\x01(\rR\x0bFCHKEAGLMPH\
+    \x12\x20\n\x0bIPJLCFAMMDB\x18\r\x20\x01(\rR\x0bIPJLCFAMMDB\x12\x20\n\x0b\
+    GFIMLBECJLC\x18\x05\x20\x01(\rR\x0bGFIMLBECJLCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

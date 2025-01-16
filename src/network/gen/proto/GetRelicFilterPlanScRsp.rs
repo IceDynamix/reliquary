@@ -80,10 +80,10 @@ impl ::protobuf::Message for GetRelicFilterPlanScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                42 => {
+                106 => {
                     self.relic_filter_plan_list.push(is.read_message()?);
                 },
                 tag => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for GetRelicFilterPlanScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         for value in &self.relic_filter_plan_list {
             let len = value.compute_size();
@@ -112,10 +112,10 @@ impl ::protobuf::Message for GetRelicFilterPlanScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
         for v in &self.relic_filter_plan_list {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for GetRelicFilterPlanScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dGetRelicFilterPlanScRsp.proto\x1a\x15RelicFilterPlan.proto\"z\n\
-    \x17GetRelicFilterPlanScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07\
-    retcode\x12E\n\x16relic_filter_plan_list\x18\x05\x20\x03(\x0b2\x10.Relic\
-    FilterPlanR\x13relicFilterPlanListb\x06proto3\
+    \x17GetRelicFilterPlanScRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07\
+    retcode\x12E\n\x16relic_filter_plan_list\x18\r\x20\x03(\x0b2\x10.RelicFi\
+    lterPlanR\x13relicFilterPlanListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

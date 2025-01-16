@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeTrainVisitorUntakenBehaviorRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeTrainVisitorUntakenBehaviorRewardScRsp.BKHCLMJKOIP)
-    pub BKHCLMJKOIP: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:TakeTrainVisitorUntakenBehaviorRewardScRsp.DCOIKPEBLHO)
-    pub DCOIKPEBLHO: u32,
-    // @@protoc_insertion_point(field:TakeTrainVisitorUntakenBehaviorRewardScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:TakeTrainVisitorUntakenBehaviorRewardScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:TakeTrainVisitorUntakenBehaviorRewardScRsp.HHHLOHFNNHG)
+    pub HHHLOHFNNHG: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:TakeTrainVisitorUntakenBehaviorRewardScRsp.DMMELMGMHLO)
+    pub DMMELMGMHLO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeTrainVisitorUntakenBehaviorRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl TakeTrainVisitorUntakenBehaviorRewardScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &TakeTrainVisitorUntakenBehaviorRewardScRsp| { &m.retcode },
+            |m: &mut TakeTrainVisitorUntakenBehaviorRewardScRsp| { &mut m.retcode },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BKHCLMJKOIP",
-            |m: &TakeTrainVisitorUntakenBehaviorRewardScRsp| { &m.BKHCLMJKOIP },
-            |m: &mut TakeTrainVisitorUntakenBehaviorRewardScRsp| { &mut m.BKHCLMJKOIP },
+            "HHHLOHFNNHG",
+            |m: &TakeTrainVisitorUntakenBehaviorRewardScRsp| { &m.HHHLOHFNNHG },
+            |m: &mut TakeTrainVisitorUntakenBehaviorRewardScRsp| { &mut m.HHHLOHFNNHG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DCOIKPEBLHO",
-            |m: &TakeTrainVisitorUntakenBehaviorRewardScRsp| { &m.DCOIKPEBLHO },
-            |m: &mut TakeTrainVisitorUntakenBehaviorRewardScRsp| { &mut m.DCOIKPEBLHO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &TakeTrainVisitorUntakenBehaviorRewardScRsp| { &m.ADADHIHDHJC },
-            |m: &mut TakeTrainVisitorUntakenBehaviorRewardScRsp| { &mut m.ADADHIHDHJC },
+            "DMMELMGMHLO",
+            |m: &TakeTrainVisitorUntakenBehaviorRewardScRsp| { &m.DMMELMGMHLO },
+            |m: &mut TakeTrainVisitorUntakenBehaviorRewardScRsp| { &mut m.DMMELMGMHLO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeTrainVisitorUntakenBehaviorRewardScRsp>(
             "TakeTrainVisitorUntakenBehaviorRewardScRsp",
@@ -87,17 +87,17 @@ impl ::protobuf::Message for TakeTrainVisitorUntakenBehaviorRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.BKHCLMJKOIP)?;
-                },
                 120 => {
-                    self.BKHCLMJKOIP.push(is.read_uint32()?);
+                    self.retcode = is.read_uint32()?;
+                },
+                74 => {
+                    is.read_repeated_packed_uint32_into(&mut self.HHHLOHFNNHG)?;
                 },
                 72 => {
-                    self.DCOIKPEBLHO = is.read_uint32()?;
+                    self.HHHLOHFNNHG.push(is.read_uint32()?);
                 },
-                8 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                104 => {
+                    self.DMMELMGMHLO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,14 +111,14 @@ impl ::protobuf::Message for TakeTrainVisitorUntakenBehaviorRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.BKHCLMJKOIP {
-            my_size += ::protobuf::rt::uint32_size(15, *value);
-        };
-        if self.DCOIKPEBLHO != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.DCOIKPEBLHO);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.ADADHIHDHJC);
+        for value in &self.HHHLOHFNNHG {
+            my_size += ::protobuf::rt::uint32_size(9, *value);
+        };
+        if self.DMMELMGMHLO != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.DMMELMGMHLO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -126,14 +126,14 @@ impl ::protobuf::Message for TakeTrainVisitorUntakenBehaviorRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.BKHCLMJKOIP {
-            os.write_uint32(15, *v)?;
-        };
-        if self.DCOIKPEBLHO != 0 {
-            os.write_uint32(9, self.DCOIKPEBLHO)?;
+        if self.retcode != 0 {
+            os.write_uint32(15, self.retcode)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(1, self.ADADHIHDHJC)?;
+        for v in &self.HHHLOHFNNHG {
+            os.write_uint32(9, *v)?;
+        };
+        if self.DMMELMGMHLO != 0 {
+            os.write_uint32(13, self.DMMELMGMHLO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -152,17 +152,17 @@ impl ::protobuf::Message for TakeTrainVisitorUntakenBehaviorRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.BKHCLMJKOIP.clear();
-        self.DCOIKPEBLHO = 0;
-        self.ADADHIHDHJC = 0;
+        self.retcode = 0;
+        self.HHHLOHFNNHG.clear();
+        self.DMMELMGMHLO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeTrainVisitorUntakenBehaviorRewardScRsp {
         static instance: TakeTrainVisitorUntakenBehaviorRewardScRsp = TakeTrainVisitorUntakenBehaviorRewardScRsp {
-            BKHCLMJKOIP: ::std::vec::Vec::new(),
-            DCOIKPEBLHO: 0,
-            ADADHIHDHJC: 0,
+            retcode: 0,
+            HHHLOHFNNHG: ::std::vec::Vec::new(),
+            DMMELMGMHLO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -187,11 +187,10 @@ impl ::protobuf::reflect::ProtobufValue for TakeTrainVisitorUntakenBehaviorRewar
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n0TakeTrainVisitorUntakenBehaviorRewardScRsp.proto\"\x92\x01\n*TakeTrai\
-    nVisitorUntakenBehaviorRewardScRsp\x12\x20\n\x0bBKHCLMJKOIP\x18\x0f\x20\
-    \x03(\rR\x0bBKHCLMJKOIP\x12\x20\n\x0bDCOIKPEBLHO\x18\t\x20\x01(\rR\x0bDC\
-    OIKPEBLHO\x12\x20\n\x0bADADHIHDHJC\x18\x01\x20\x01(\rR\x0bADADHIHDHJCb\
-    \x06proto3\
+    \n0TakeTrainVisitorUntakenBehaviorRewardScRsp.proto\"\x8a\x01\n*TakeTrai\
+    nVisitorUntakenBehaviorRewardScRsp\x12\x18\n\x07retcode\x18\x0f\x20\x01(\
+    \rR\x07retcode\x12\x20\n\x0bHHHLOHFNNHG\x18\t\x20\x03(\rR\x0bHHHLOHFNNHG\
+    \x12\x20\n\x0bDMMELMGMHLO\x18\r\x20\x01(\rR\x0bDMMELMGMHLOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

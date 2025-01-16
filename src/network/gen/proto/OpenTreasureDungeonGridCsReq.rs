@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OpenTreasureDungeonGridCsReq {
     // message fields
-    // @@protoc_insertion_point(field:OpenTreasureDungeonGridCsReq.GCIMMFIDPJP)
-    pub GCIMMFIDPJP: u32,
-    // @@protoc_insertion_point(field:OpenTreasureDungeonGridCsReq.HMPPFGCIFJK)
-    pub HMPPFGCIFJK: u32,
+    // @@protoc_insertion_point(field:OpenTreasureDungeonGridCsReq.ILOFIMODIEN)
+    pub ILOFIMODIEN: u32,
+    // @@protoc_insertion_point(field:OpenTreasureDungeonGridCsReq.DLEEJGFABLC)
+    pub DLEEJGFABLC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:OpenTreasureDungeonGridCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl OpenTreasureDungeonGridCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GCIMMFIDPJP",
-            |m: &OpenTreasureDungeonGridCsReq| { &m.GCIMMFIDPJP },
-            |m: &mut OpenTreasureDungeonGridCsReq| { &mut m.GCIMMFIDPJP },
+            "ILOFIMODIEN",
+            |m: &OpenTreasureDungeonGridCsReq| { &m.ILOFIMODIEN },
+            |m: &mut OpenTreasureDungeonGridCsReq| { &mut m.ILOFIMODIEN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HMPPFGCIFJK",
-            |m: &OpenTreasureDungeonGridCsReq| { &m.HMPPFGCIFJK },
-            |m: &mut OpenTreasureDungeonGridCsReq| { &mut m.HMPPFGCIFJK },
+            "DLEEJGFABLC",
+            |m: &OpenTreasureDungeonGridCsReq| { &m.DLEEJGFABLC },
+            |m: &mut OpenTreasureDungeonGridCsReq| { &mut m.DLEEJGFABLC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OpenTreasureDungeonGridCsReq>(
             "OpenTreasureDungeonGridCsReq",
@@ -81,10 +81,10 @@ impl ::protobuf::Message for OpenTreasureDungeonGridCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 64 => {
-                    self.GCIMMFIDPJP = is.read_uint32()?;
+                    self.ILOFIMODIEN = is.read_uint32()?;
                 },
-                112 => {
-                    self.HMPPFGCIFJK = is.read_uint32()?;
+                56 => {
+                    self.DLEEJGFABLC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for OpenTreasureDungeonGridCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GCIMMFIDPJP != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.GCIMMFIDPJP);
+        if self.ILOFIMODIEN != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.ILOFIMODIEN);
         }
-        if self.HMPPFGCIFJK != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.HMPPFGCIFJK);
+        if self.DLEEJGFABLC != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.DLEEJGFABLC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for OpenTreasureDungeonGridCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GCIMMFIDPJP != 0 {
-            os.write_uint32(8, self.GCIMMFIDPJP)?;
+        if self.ILOFIMODIEN != 0 {
+            os.write_uint32(8, self.ILOFIMODIEN)?;
         }
-        if self.HMPPFGCIFJK != 0 {
-            os.write_uint32(14, self.HMPPFGCIFJK)?;
+        if self.DLEEJGFABLC != 0 {
+            os.write_uint32(7, self.DLEEJGFABLC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for OpenTreasureDungeonGridCsReq {
     }
 
     fn clear(&mut self) {
-        self.GCIMMFIDPJP = 0;
-        self.HMPPFGCIFJK = 0;
+        self.ILOFIMODIEN = 0;
+        self.DLEEJGFABLC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OpenTreasureDungeonGridCsReq {
         static instance: OpenTreasureDungeonGridCsReq = OpenTreasureDungeonGridCsReq {
-            GCIMMFIDPJP: 0,
-            HMPPFGCIFJK: 0,
+            ILOFIMODIEN: 0,
+            DLEEJGFABLC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for OpenTreasureDungeonGridCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"OpenTreasureDungeonGridCsReq.proto\"b\n\x1cOpenTreasureDungeonGridCs\
-    Req\x12\x20\n\x0bGCIMMFIDPJP\x18\x08\x20\x01(\rR\x0bGCIMMFIDPJP\x12\x20\
-    \n\x0bHMPPFGCIFJK\x18\x0e\x20\x01(\rR\x0bHMPPFGCIFJKb\x06proto3\
+    Req\x12\x20\n\x0bILOFIMODIEN\x18\x08\x20\x01(\rR\x0bILOFIMODIEN\x12\x20\
+    \n\x0bDLEEJGFABLC\x18\x07\x20\x01(\rR\x0bDLEEJGFABLCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

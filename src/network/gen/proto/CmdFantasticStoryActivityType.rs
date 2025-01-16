@@ -30,18 +30,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdFantasticStoryActivityType {
     // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdFantasticStoryActivityTypeNone)
     CmdFantasticStoryActivityTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdEnterFantasticStoryActivityStageScRsp)
-    CmdEnterFantasticStoryActivityStageScRsp = 4939,
     // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdFinishChapterScNotify)
-    CmdFinishChapterScNotify = 4903,
-    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdEnterFantasticStoryActivityStageCsReq)
-    CmdEnterFantasticStoryActivityStageCsReq = 4946,
-    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdGetFantasticStoryActivityDataScRsp)
-    CmdGetFantasticStoryActivityDataScRsp = 4920,
-    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdGetFantasticStoryActivityDataCsReq)
-    CmdGetFantasticStoryActivityDataCsReq = 4959,
+    CmdFinishChapterScNotify = 4984,
+    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdEnterFantasticStoryActivityStageScRsp)
+    CmdEnterFantasticStoryActivityStageScRsp = 4967,
     // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdFantasticStoryActivityBattleEndScNotify)
-    CmdFantasticStoryActivityBattleEndScNotify = 4953,
+    CmdFantasticStoryActivityBattleEndScNotify = 4928,
+    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdGetFantasticStoryActivityDataScRsp)
+    CmdGetFantasticStoryActivityDataScRsp = 4995,
+    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdEnterFantasticStoryActivityStageCsReq)
+    CmdEnterFantasticStoryActivityStageCsReq = 4927,
+    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdGetFantasticStoryActivityDataCsReq)
+    CmdGetFantasticStoryActivityDataCsReq = 4936,
 }
 
 impl ::protobuf::Enum for CmdFantasticStoryActivityType {
@@ -54,12 +54,12 @@ impl ::protobuf::Enum for CmdFantasticStoryActivityType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdFantasticStoryActivityType> {
         match value {
             0 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFantasticStoryActivityTypeNone),
-            4939 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdEnterFantasticStoryActivityStageScRsp),
-            4903 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFinishChapterScNotify),
-            4946 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdEnterFantasticStoryActivityStageCsReq),
-            4920 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdGetFantasticStoryActivityDataScRsp),
-            4959 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdGetFantasticStoryActivityDataCsReq),
-            4953 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFantasticStoryActivityBattleEndScNotify),
+            4984 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFinishChapterScNotify),
+            4967 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdEnterFantasticStoryActivityStageScRsp),
+            4928 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFantasticStoryActivityBattleEndScNotify),
+            4995 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdGetFantasticStoryActivityDataScRsp),
+            4927 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdEnterFantasticStoryActivityStageCsReq),
+            4936 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdGetFantasticStoryActivityDataCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -67,24 +67,24 @@ impl ::protobuf::Enum for CmdFantasticStoryActivityType {
     fn from_str(str: &str) -> ::std::option::Option<CmdFantasticStoryActivityType> {
         match str {
             "CmdFantasticStoryActivityTypeNone" => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFantasticStoryActivityTypeNone),
-            "CmdEnterFantasticStoryActivityStageScRsp" => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdEnterFantasticStoryActivityStageScRsp),
             "CmdFinishChapterScNotify" => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFinishChapterScNotify),
-            "CmdEnterFantasticStoryActivityStageCsReq" => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdEnterFantasticStoryActivityStageCsReq),
-            "CmdGetFantasticStoryActivityDataScRsp" => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdGetFantasticStoryActivityDataScRsp),
-            "CmdGetFantasticStoryActivityDataCsReq" => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdGetFantasticStoryActivityDataCsReq),
+            "CmdEnterFantasticStoryActivityStageScRsp" => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdEnterFantasticStoryActivityStageScRsp),
             "CmdFantasticStoryActivityBattleEndScNotify" => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFantasticStoryActivityBattleEndScNotify),
+            "CmdGetFantasticStoryActivityDataScRsp" => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdGetFantasticStoryActivityDataScRsp),
+            "CmdEnterFantasticStoryActivityStageCsReq" => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdEnterFantasticStoryActivityStageCsReq),
+            "CmdGetFantasticStoryActivityDataCsReq" => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdGetFantasticStoryActivityDataCsReq),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdFantasticStoryActivityType] = &[
         CmdFantasticStoryActivityType::CmdFantasticStoryActivityTypeNone,
-        CmdFantasticStoryActivityType::CmdEnterFantasticStoryActivityStageScRsp,
         CmdFantasticStoryActivityType::CmdFinishChapterScNotify,
-        CmdFantasticStoryActivityType::CmdEnterFantasticStoryActivityStageCsReq,
-        CmdFantasticStoryActivityType::CmdGetFantasticStoryActivityDataScRsp,
-        CmdFantasticStoryActivityType::CmdGetFantasticStoryActivityDataCsReq,
+        CmdFantasticStoryActivityType::CmdEnterFantasticStoryActivityStageScRsp,
         CmdFantasticStoryActivityType::CmdFantasticStoryActivityBattleEndScNotify,
+        CmdFantasticStoryActivityType::CmdGetFantasticStoryActivityDataScRsp,
+        CmdFantasticStoryActivityType::CmdEnterFantasticStoryActivityStageCsReq,
+        CmdFantasticStoryActivityType::CmdGetFantasticStoryActivityDataCsReq,
     ];
 }
 
@@ -97,12 +97,12 @@ impl ::protobuf::EnumFull for CmdFantasticStoryActivityType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdFantasticStoryActivityType::CmdFantasticStoryActivityTypeNone => 0,
-            CmdFantasticStoryActivityType::CmdEnterFantasticStoryActivityStageScRsp => 1,
-            CmdFantasticStoryActivityType::CmdFinishChapterScNotify => 2,
-            CmdFantasticStoryActivityType::CmdEnterFantasticStoryActivityStageCsReq => 3,
+            CmdFantasticStoryActivityType::CmdFinishChapterScNotify => 1,
+            CmdFantasticStoryActivityType::CmdEnterFantasticStoryActivityStageScRsp => 2,
+            CmdFantasticStoryActivityType::CmdFantasticStoryActivityBattleEndScNotify => 3,
             CmdFantasticStoryActivityType::CmdGetFantasticStoryActivityDataScRsp => 4,
-            CmdFantasticStoryActivityType::CmdGetFantasticStoryActivityDataCsReq => 5,
-            CmdFantasticStoryActivityType::CmdFantasticStoryActivityBattleEndScNotify => 6,
+            CmdFantasticStoryActivityType::CmdEnterFantasticStoryActivityStageCsReq => 5,
+            CmdFantasticStoryActivityType::CmdGetFantasticStoryActivityDataCsReq => 6,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -122,12 +122,12 @@ impl CmdFantasticStoryActivityType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#CmdFantasticStoryActivityType.proto*\xcc\x02\n\x1dCmdFantasticStoryAc\
-    tivityType\x12%\n!CmdFantasticStoryActivityTypeNone\x10\0\x12-\n(CmdEnte\
-    rFantasticStoryActivityStageScRsp\x10\xcb&\x12\x1d\n\x18CmdFinishChapter\
-    ScNotify\x10\xa7&\x12-\n(CmdEnterFantasticStoryActivityStageCsReq\x10\
-    \xd2&\x12*\n%CmdGetFantasticStoryActivityDataScRsp\x10\xb8&\x12*\n%CmdGe\
-    tFantasticStoryActivityDataCsReq\x10\xdf&\x12/\n*CmdFantasticStoryActivi\
-    tyBattleEndScNotify\x10\xd9&b\x06proto3\
+    tivityType\x12%\n!CmdFantasticStoryActivityTypeNone\x10\0\x12\x1d\n\x18C\
+    mdFinishChapterScNotify\x10\xf8&\x12-\n(CmdEnterFantasticStoryActivitySt\
+    ageScRsp\x10\xe7&\x12/\n*CmdFantasticStoryActivityBattleEndScNotify\x10\
+    \xc0&\x12*\n%CmdGetFantasticStoryActivityDataScRsp\x10\x83'\x12-\n(CmdEn\
+    terFantasticStoryActivityStageCsReq\x10\xbf&\x12*\n%CmdGetFantasticStory\
+    ActivityDataCsReq\x10\xc8&b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

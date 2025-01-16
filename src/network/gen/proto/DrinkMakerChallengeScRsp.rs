@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DrinkMakerChallengeScRsp {
     // message fields
-    // @@protoc_insertion_point(field:DrinkMakerChallengeScRsp.GPKEAKPHIPA)
-    pub GPKEAKPHIPA: u32,
-    // @@protoc_insertion_point(field:DrinkMakerChallengeScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:DrinkMakerChallengeScRsp.ELPMNKHEPKJ)
-    pub ELPMNKHEPKJ: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:DrinkMakerChallengeScRsp.PHLELGAJABE)
-    pub PHLELGAJABE: bool,
+    // @@protoc_insertion_point(field:DrinkMakerChallengeScRsp.AECJKNIGHJK)
+    pub AECJKNIGHJK: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:DrinkMakerChallengeScRsp.LLLOOMDOJCJ)
+    pub LLLOOMDOJCJ: bool,
+    // @@protoc_insertion_point(field:DrinkMakerChallengeScRsp.PGGMKGMBBKJ)
+    pub PGGMKGMBBKJ: u32,
+    // @@protoc_insertion_point(field:DrinkMakerChallengeScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DrinkMakerChallengeScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,25 +56,25 @@ impl DrinkMakerChallengeScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GPKEAKPHIPA",
-            |m: &DrinkMakerChallengeScRsp| { &m.GPKEAKPHIPA },
-            |m: &mut DrinkMakerChallengeScRsp| { &mut m.GPKEAKPHIPA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &DrinkMakerChallengeScRsp| { &m.ADADHIHDHJC },
-            |m: &mut DrinkMakerChallengeScRsp| { &mut m.ADADHIHDHJC },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "ELPMNKHEPKJ",
-            |m: &DrinkMakerChallengeScRsp| { &m.ELPMNKHEPKJ },
-            |m: &mut DrinkMakerChallengeScRsp| { &mut m.ELPMNKHEPKJ },
+            "AECJKNIGHJK",
+            |m: &DrinkMakerChallengeScRsp| { &m.AECJKNIGHJK },
+            |m: &mut DrinkMakerChallengeScRsp| { &mut m.AECJKNIGHJK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PHLELGAJABE",
-            |m: &DrinkMakerChallengeScRsp| { &m.PHLELGAJABE },
-            |m: &mut DrinkMakerChallengeScRsp| { &mut m.PHLELGAJABE },
+            "LLLOOMDOJCJ",
+            |m: &DrinkMakerChallengeScRsp| { &m.LLLOOMDOJCJ },
+            |m: &mut DrinkMakerChallengeScRsp| { &mut m.LLLOOMDOJCJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PGGMKGMBBKJ",
+            |m: &DrinkMakerChallengeScRsp| { &m.PGGMKGMBBKJ },
+            |m: &mut DrinkMakerChallengeScRsp| { &mut m.PGGMKGMBBKJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &DrinkMakerChallengeScRsp| { &m.retcode },
+            |m: &mut DrinkMakerChallengeScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DrinkMakerChallengeScRsp>(
             "DrinkMakerChallengeScRsp",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for DrinkMakerChallengeScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.GPKEAKPHIPA = is.read_uint32()?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AECJKNIGHJK)?;
                 },
-                16 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                120 => {
+                    self.LLLOOMDOJCJ = is.read_bool()?;
                 },
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ELPMNKHEPKJ)?;
+                56 => {
+                    self.PGGMKGMBBKJ = is.read_uint32()?;
                 },
-                64 => {
-                    self.PHLELGAJABE = is.read_bool()?;
+                48 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,18 +118,18 @@ impl ::protobuf::Message for DrinkMakerChallengeScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GPKEAKPHIPA != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.GPKEAKPHIPA);
-        }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.ADADHIHDHJC);
-        }
-        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
+        if let Some(v) = self.AECJKNIGHJK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.PHLELGAJABE != false {
+        if self.LLLOOMDOJCJ != false {
             my_size += 1 + 1;
+        }
+        if self.PGGMKGMBBKJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.PGGMKGMBBKJ);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for DrinkMakerChallengeScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GPKEAKPHIPA != 0 {
-            os.write_uint32(11, self.GPKEAKPHIPA)?;
+        if let Some(v) = self.AECJKNIGHJK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(2, self.ADADHIHDHJC)?;
+        if self.LLLOOMDOJCJ != false {
+            os.write_bool(15, self.LLLOOMDOJCJ)?;
         }
-        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if self.PGGMKGMBBKJ != 0 {
+            os.write_uint32(7, self.PGGMKGMBBKJ)?;
         }
-        if self.PHLELGAJABE != false {
-            os.write_bool(8, self.PHLELGAJABE)?;
+        if self.retcode != 0 {
+            os.write_uint32(6, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for DrinkMakerChallengeScRsp {
     }
 
     fn clear(&mut self) {
-        self.GPKEAKPHIPA = 0;
-        self.ADADHIHDHJC = 0;
-        self.ELPMNKHEPKJ.clear();
-        self.PHLELGAJABE = false;
+        self.AECJKNIGHJK.clear();
+        self.LLLOOMDOJCJ = false;
+        self.PGGMKGMBBKJ = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DrinkMakerChallengeScRsp {
         static instance: DrinkMakerChallengeScRsp = DrinkMakerChallengeScRsp {
-            GPKEAKPHIPA: 0,
-            ADADHIHDHJC: 0,
-            ELPMNKHEPKJ: ::protobuf::MessageField::none(),
-            PHLELGAJABE: false,
+            AECJKNIGHJK: ::protobuf::MessageField::none(),
+            LLLOOMDOJCJ: false,
+            PGGMKGMBBKJ: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,12 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for DrinkMakerChallengeScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eDrinkMakerChallengeScRsp.proto\x1a\x0eItemList.proto\"\xad\x01\n\
-    \x18DrinkMakerChallengeScRsp\x12\x20\n\x0bGPKEAKPHIPA\x18\x0b\x20\x01(\r\
-    R\x0bGPKEAKPHIPA\x12\x20\n\x0bADADHIHDHJC\x18\x02\x20\x01(\rR\x0bADADHIH\
-    DHJC\x12+\n\x0bELPMNKHEPKJ\x18\x03\x20\x01(\x0b2\t.ItemListR\x0bELPMNKHE\
-    PKJ\x12\x20\n\x0bPHLELGAJABE\x18\x08\x20\x01(\x08R\x0bPHLELGAJABEb\x06pr\
-    oto3\
+    \n\x1eDrinkMakerChallengeScRsp.proto\x1a\x0eItemList.proto\"\xa5\x01\n\
+    \x18DrinkMakerChallengeScRsp\x12+\n\x0bAECJKNIGHJK\x18\x08\x20\x01(\x0b2\
+    \t.ItemListR\x0bAECJKNIGHJK\x12\x20\n\x0bLLLOOMDOJCJ\x18\x0f\x20\x01(\
+    \x08R\x0bLLLOOMDOJCJ\x12\x20\n\x0bPGGMKGMBBKJ\x18\x07\x20\x01(\rR\x0bPGG\
+    MKGMBBKJ\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

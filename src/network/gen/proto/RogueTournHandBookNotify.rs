@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournHandBookNotify {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournHandBookNotify.HHDCKGBMHAI)
-    pub HHDCKGBMHAI: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:RogueTournHandBookNotify.PKDJDPGCMFN)
-    pub PKDJDPGCMFN: ::protobuf::EnumOrUnknown<super::JDHNHBBCGPK::JDHNHBBCGPK>,
+    // @@protoc_insertion_point(field:RogueTournHandBookNotify.DEPCDMOIPEG)
+    pub DEPCDMOIPEG: ::protobuf::EnumOrUnknown<super::MDLBADPPHIH::MDLBADPPHIH>,
+    // @@protoc_insertion_point(field:RogueTournHandBookNotify.AANGIBDKIEH)
+    pub AANGIBDKIEH: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournHandBookNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl RogueTournHandBookNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HHDCKGBMHAI",
-            |m: &RogueTournHandBookNotify| { &m.HHDCKGBMHAI },
-            |m: &mut RogueTournHandBookNotify| { &mut m.HHDCKGBMHAI },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PKDJDPGCMFN",
-            |m: &RogueTournHandBookNotify| { &m.PKDJDPGCMFN },
-            |m: &mut RogueTournHandBookNotify| { &mut m.PKDJDPGCMFN },
+            "DEPCDMOIPEG",
+            |m: &RogueTournHandBookNotify| { &m.DEPCDMOIPEG },
+            |m: &mut RogueTournHandBookNotify| { &mut m.DEPCDMOIPEG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "AANGIBDKIEH",
+            |m: &RogueTournHandBookNotify| { &m.AANGIBDKIEH },
+            |m: &mut RogueTournHandBookNotify| { &mut m.AANGIBDKIEH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournHandBookNotify>(
             "RogueTournHandBookNotify",
@@ -80,14 +80,14 @@ impl ::protobuf::Message for RogueTournHandBookNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.HHDCKGBMHAI)?;
+                16 => {
+                    self.DEPCDMOIPEG = is.read_enum_or_unknown()?;
                 },
-                40 => {
-                    self.HHDCKGBMHAI.push(is.read_uint32()?);
+                10 => {
+                    is.read_repeated_packed_uint32_into(&mut self.AANGIBDKIEH)?;
                 },
-                64 => {
-                    self.PKDJDPGCMFN = is.read_enum_or_unknown()?;
+                8 => {
+                    self.AANGIBDKIEH.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,24 +101,24 @@ impl ::protobuf::Message for RogueTournHandBookNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.HHDCKGBMHAI {
-            my_size += ::protobuf::rt::uint32_size(5, *value);
-        };
-        if self.PKDJDPGCMFN != ::protobuf::EnumOrUnknown::new(super::JDHNHBBCGPK::JDHNHBBCGPK::ROGUE_TOURN_HANDBOOK_NONE) {
-            my_size += ::protobuf::rt::int32_size(8, self.PKDJDPGCMFN.value());
+        if self.DEPCDMOIPEG != ::protobuf::EnumOrUnknown::new(super::MDLBADPPHIH::MDLBADPPHIH::ROGUE_TOURN_HANDBOOK_NONE) {
+            my_size += ::protobuf::rt::int32_size(2, self.DEPCDMOIPEG.value());
         }
+        for value in &self.AANGIBDKIEH {
+            my_size += ::protobuf::rt::uint32_size(1, *value);
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.HHDCKGBMHAI {
-            os.write_uint32(5, *v)?;
-        };
-        if self.PKDJDPGCMFN != ::protobuf::EnumOrUnknown::new(super::JDHNHBBCGPK::JDHNHBBCGPK::ROGUE_TOURN_HANDBOOK_NONE) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.PKDJDPGCMFN))?;
+        if self.DEPCDMOIPEG != ::protobuf::EnumOrUnknown::new(super::MDLBADPPHIH::MDLBADPPHIH::ROGUE_TOURN_HANDBOOK_NONE) {
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.DEPCDMOIPEG))?;
         }
+        for v in &self.AANGIBDKIEH {
+            os.write_uint32(1, *v)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -136,15 +136,15 @@ impl ::protobuf::Message for RogueTournHandBookNotify {
     }
 
     fn clear(&mut self) {
-        self.HHDCKGBMHAI.clear();
-        self.PKDJDPGCMFN = ::protobuf::EnumOrUnknown::new(super::JDHNHBBCGPK::JDHNHBBCGPK::ROGUE_TOURN_HANDBOOK_NONE);
+        self.DEPCDMOIPEG = ::protobuf::EnumOrUnknown::new(super::MDLBADPPHIH::MDLBADPPHIH::ROGUE_TOURN_HANDBOOK_NONE);
+        self.AANGIBDKIEH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournHandBookNotify {
         static instance: RogueTournHandBookNotify = RogueTournHandBookNotify {
-            HHDCKGBMHAI: ::std::vec::Vec::new(),
-            PKDJDPGCMFN: ::protobuf::EnumOrUnknown::from_i32(0),
+            DEPCDMOIPEG: ::protobuf::EnumOrUnknown::from_i32(0),
+            AANGIBDKIEH: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -169,10 +169,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournHandBookNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eRogueTournHandBookNotify.proto\x1a\x11JDHNHBBCGPK.proto\"l\n\x18Ro\
-    gueTournHandBookNotify\x12\x20\n\x0bHHDCKGBMHAI\x18\x05\x20\x03(\rR\x0bH\
-    HDCKGBMHAI\x12.\n\x0bPKDJDPGCMFN\x18\x08\x20\x01(\x0e2\x0c.JDHNHBBCGPKR\
-    \x0bPKDJDPGCMFNb\x06proto3\
+    \n\x1eRogueTournHandBookNotify.proto\x1a\x11MDLBADPPHIH.proto\"l\n\x18Ro\
+    gueTournHandBookNotify\x12.\n\x0bDEPCDMOIPEG\x18\x02\x20\x01(\x0e2\x0c.M\
+    DLBADPPHIHR\x0bDEPCDMOIPEG\x12\x20\n\x0bAANGIBDKIEH\x18\x01\x20\x03(\rR\
+    \x0bAANGIBDKIEHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -190,7 +190,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::JDHNHBBCGPK::file_descriptor().clone());
+            deps.push(super::MDLBADPPHIH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueTournHandBookNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

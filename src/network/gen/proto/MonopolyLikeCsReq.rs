@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyLikeCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyLikeCsReq.ICFEEGEIIOB)
-    pub ICFEEGEIIOB: u32,
+    // @@protoc_insertion_point(field:MonopolyLikeCsReq.HJAOHLGPOCP)
+    pub HJAOHLGPOCP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyLikeCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl MonopolyLikeCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ICFEEGEIIOB",
-            |m: &MonopolyLikeCsReq| { &m.ICFEEGEIIOB },
-            |m: &mut MonopolyLikeCsReq| { &mut m.ICFEEGEIIOB },
+            "HJAOHLGPOCP",
+            |m: &MonopolyLikeCsReq| { &m.HJAOHLGPOCP },
+            |m: &mut MonopolyLikeCsReq| { &mut m.HJAOHLGPOCP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyLikeCsReq>(
             "MonopolyLikeCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for MonopolyLikeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.ICFEEGEIIOB = is.read_uint32()?;
+                32 => {
+                    self.HJAOHLGPOCP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for MonopolyLikeCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ICFEEGEIIOB != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.ICFEEGEIIOB);
+        if self.HJAOHLGPOCP != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.HJAOHLGPOCP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for MonopolyLikeCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ICFEEGEIIOB != 0 {
-            os.write_uint32(6, self.ICFEEGEIIOB)?;
+        if self.HJAOHLGPOCP != 0 {
+            os.write_uint32(4, self.HJAOHLGPOCP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for MonopolyLikeCsReq {
     }
 
     fn clear(&mut self) {
-        self.ICFEEGEIIOB = 0;
+        self.HJAOHLGPOCP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyLikeCsReq {
         static instance: MonopolyLikeCsReq = MonopolyLikeCsReq {
-            ICFEEGEIIOB: 0,
+            HJAOHLGPOCP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyLikeCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17MonopolyLikeCsReq.proto\"5\n\x11MonopolyLikeCsReq\x12\x20\n\x0bICF\
-    EEGEIIOB\x18\x06\x20\x01(\rR\x0bICFEEGEIIOBb\x06proto3\
+    \n\x17MonopolyLikeCsReq.proto\"5\n\x11MonopolyLikeCsReq\x12\x20\n\x0bHJA\
+    OHLGPOCP\x18\x04\x20\x01(\rR\x0bHJAOHLGPOCPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

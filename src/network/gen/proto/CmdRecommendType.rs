@@ -30,18 +30,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdRecommendType {
     // @@protoc_insertion_point(enum_value:CmdRecommendType.CMD_RECOMMEND_TYPE_NONE)
     CMD_RECOMMEND_TYPE_NONE = 0,
-    // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdRelicAvatarRecommendScRsp)
-    CmdRelicAvatarRecommendScRsp = 2424,
-    // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdRelicRecommendCsReq)
-    CmdRelicRecommendCsReq = 2415,
-    // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdGetChallengeRecommendLineupListCsReq)
-    CmdGetChallengeRecommendLineupListCsReq = 2442,
+    // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdGetBigDataRecommendScRsp)
+    CmdGetBigDataRecommendScRsp = 2443,
     // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdGetChallengeRecommendLineupListScRsp)
-    CmdGetChallengeRecommendLineupListScRsp = 2437,
+    CmdGetChallengeRecommendLineupListScRsp = 2449,
+    // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdRelicAvatarRecommendScRsp)
+    CmdRelicAvatarRecommendScRsp = 2423,
     // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdRelicRecommendScRsp)
-    CmdRelicRecommendScRsp = 2416,
+    CmdRelicRecommendScRsp = 2450,
+    // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdGetChallengeRecommendLineupListCsReq)
+    CmdGetChallengeRecommendLineupListCsReq = 2415,
     // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdRelicAvatarRecommendCsReq)
-    CmdRelicAvatarRecommendCsReq = 2412,
+    CmdRelicAvatarRecommendCsReq = 2430,
+    // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdRelicRecommendCsReq)
+    CmdRelicRecommendCsReq = 2412,
+    // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdGetBigDataRecommendCsReq)
+    CmdGetBigDataRecommendCsReq = 2409,
 }
 
 impl ::protobuf::Enum for CmdRecommendType {
@@ -54,12 +58,14 @@ impl ::protobuf::Enum for CmdRecommendType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdRecommendType> {
         match value {
             0 => ::std::option::Option::Some(CmdRecommendType::CMD_RECOMMEND_TYPE_NONE),
-            2424 => ::std::option::Option::Some(CmdRecommendType::CmdRelicAvatarRecommendScRsp),
-            2415 => ::std::option::Option::Some(CmdRecommendType::CmdRelicRecommendCsReq),
-            2442 => ::std::option::Option::Some(CmdRecommendType::CmdGetChallengeRecommendLineupListCsReq),
-            2437 => ::std::option::Option::Some(CmdRecommendType::CmdGetChallengeRecommendLineupListScRsp),
-            2416 => ::std::option::Option::Some(CmdRecommendType::CmdRelicRecommendScRsp),
-            2412 => ::std::option::Option::Some(CmdRecommendType::CmdRelicAvatarRecommendCsReq),
+            2443 => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataRecommendScRsp),
+            2449 => ::std::option::Option::Some(CmdRecommendType::CmdGetChallengeRecommendLineupListScRsp),
+            2423 => ::std::option::Option::Some(CmdRecommendType::CmdRelicAvatarRecommendScRsp),
+            2450 => ::std::option::Option::Some(CmdRecommendType::CmdRelicRecommendScRsp),
+            2415 => ::std::option::Option::Some(CmdRecommendType::CmdGetChallengeRecommendLineupListCsReq),
+            2430 => ::std::option::Option::Some(CmdRecommendType::CmdRelicAvatarRecommendCsReq),
+            2412 => ::std::option::Option::Some(CmdRecommendType::CmdRelicRecommendCsReq),
+            2409 => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataRecommendCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -67,24 +73,28 @@ impl ::protobuf::Enum for CmdRecommendType {
     fn from_str(str: &str) -> ::std::option::Option<CmdRecommendType> {
         match str {
             "CMD_RECOMMEND_TYPE_NONE" => ::std::option::Option::Some(CmdRecommendType::CMD_RECOMMEND_TYPE_NONE),
-            "CmdRelicAvatarRecommendScRsp" => ::std::option::Option::Some(CmdRecommendType::CmdRelicAvatarRecommendScRsp),
-            "CmdRelicRecommendCsReq" => ::std::option::Option::Some(CmdRecommendType::CmdRelicRecommendCsReq),
-            "CmdGetChallengeRecommendLineupListCsReq" => ::std::option::Option::Some(CmdRecommendType::CmdGetChallengeRecommendLineupListCsReq),
+            "CmdGetBigDataRecommendScRsp" => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataRecommendScRsp),
             "CmdGetChallengeRecommendLineupListScRsp" => ::std::option::Option::Some(CmdRecommendType::CmdGetChallengeRecommendLineupListScRsp),
+            "CmdRelicAvatarRecommendScRsp" => ::std::option::Option::Some(CmdRecommendType::CmdRelicAvatarRecommendScRsp),
             "CmdRelicRecommendScRsp" => ::std::option::Option::Some(CmdRecommendType::CmdRelicRecommendScRsp),
+            "CmdGetChallengeRecommendLineupListCsReq" => ::std::option::Option::Some(CmdRecommendType::CmdGetChallengeRecommendLineupListCsReq),
             "CmdRelicAvatarRecommendCsReq" => ::std::option::Option::Some(CmdRecommendType::CmdRelicAvatarRecommendCsReq),
+            "CmdRelicRecommendCsReq" => ::std::option::Option::Some(CmdRecommendType::CmdRelicRecommendCsReq),
+            "CmdGetBigDataRecommendCsReq" => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataRecommendCsReq),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRecommendType] = &[
         CmdRecommendType::CMD_RECOMMEND_TYPE_NONE,
-        CmdRecommendType::CmdRelicAvatarRecommendScRsp,
-        CmdRecommendType::CmdRelicRecommendCsReq,
-        CmdRecommendType::CmdGetChallengeRecommendLineupListCsReq,
+        CmdRecommendType::CmdGetBigDataRecommendScRsp,
         CmdRecommendType::CmdGetChallengeRecommendLineupListScRsp,
+        CmdRecommendType::CmdRelicAvatarRecommendScRsp,
         CmdRecommendType::CmdRelicRecommendScRsp,
+        CmdRecommendType::CmdGetChallengeRecommendLineupListCsReq,
         CmdRecommendType::CmdRelicAvatarRecommendCsReq,
+        CmdRecommendType::CmdRelicRecommendCsReq,
+        CmdRecommendType::CmdGetBigDataRecommendCsReq,
     ];
 }
 
@@ -97,12 +107,14 @@ impl ::protobuf::EnumFull for CmdRecommendType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdRecommendType::CMD_RECOMMEND_TYPE_NONE => 0,
-            CmdRecommendType::CmdRelicAvatarRecommendScRsp => 1,
-            CmdRecommendType::CmdRelicRecommendCsReq => 2,
-            CmdRecommendType::CmdGetChallengeRecommendLineupListCsReq => 3,
-            CmdRecommendType::CmdGetChallengeRecommendLineupListScRsp => 4,
-            CmdRecommendType::CmdRelicRecommendScRsp => 5,
+            CmdRecommendType::CmdGetBigDataRecommendScRsp => 1,
+            CmdRecommendType::CmdGetChallengeRecommendLineupListScRsp => 2,
+            CmdRecommendType::CmdRelicAvatarRecommendScRsp => 3,
+            CmdRecommendType::CmdRelicRecommendScRsp => 4,
+            CmdRecommendType::CmdGetChallengeRecommendLineupListCsReq => 5,
             CmdRecommendType::CmdRelicAvatarRecommendCsReq => 6,
+            CmdRecommendType::CmdRelicRecommendCsReq => 7,
+            CmdRecommendType::CmdGetBigDataRecommendCsReq => 8,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -121,13 +133,14 @@ impl CmdRecommendType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16CmdRecommendType.proto*\x8b\x02\n\x10CmdRecommendType\x12\x1b\n\
-    \x17CMD_RECOMMEND_TYPE_NONE\x10\0\x12!\n\x1cCmdRelicAvatarRecommendScRsp\
-    \x10\xf8\x12\x12\x1b\n\x16CmdRelicRecommendCsReq\x10\xef\x12\x12,\n'CmdG\
-    etChallengeRecommendLineupListCsReq\x10\x8a\x13\x12,\n'CmdGetChallengeRe\
-    commendLineupListScRsp\x10\x85\x13\x12\x1b\n\x16CmdRelicRecommendScRsp\
-    \x10\xf0\x12\x12!\n\x1cCmdRelicAvatarRecommendCsReq\x10\xec\x12b\x06prot\
-    o3\
+    \n\x16CmdRecommendType.proto*\xcf\x02\n\x10CmdRecommendType\x12\x1b\n\
+    \x17CMD_RECOMMEND_TYPE_NONE\x10\0\x12\x20\n\x1bCmdGetBigDataRecommendScR\
+    sp\x10\x8b\x13\x12,\n'CmdGetChallengeRecommendLineupListScRsp\x10\x91\
+    \x13\x12!\n\x1cCmdRelicAvatarRecommendScRsp\x10\xf7\x12\x12\x1b\n\x16Cmd\
+    RelicRecommendScRsp\x10\x92\x13\x12,\n'CmdGetChallengeRecommendLineupLis\
+    tCsReq\x10\xef\x12\x12!\n\x1cCmdRelicAvatarRecommendCsReq\x10\xfe\x12\
+    \x12\x1b\n\x16CmdRelicRecommendCsReq\x10\xec\x12\x12\x20\n\x1bCmdGetBigD\
+    ataRecommendCsReq\x10\xe9\x12b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

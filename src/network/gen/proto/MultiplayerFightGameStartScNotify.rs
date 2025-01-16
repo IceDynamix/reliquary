@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MultiplayerFightGameStartScNotify {
     // message fields
-    // @@protoc_insertion_point(field:MultiplayerFightGameStartScNotify.LKLJKGKLHID)
-    pub LKLJKGKLHID: ::std::vec::Vec<super::DBBLOFLAAMH::DBBLOFLAAMH>,
-    // @@protoc_insertion_point(field:MultiplayerFightGameStartScNotify.DJNKCKJMNIL)
-    pub DJNKCKJMNIL: ::protobuf::MessageField<super::MNFBAOKFOPM::MNFBAOKFOPM>,
+    // @@protoc_insertion_point(field:MultiplayerFightGameStartScNotify.KCPFMJCKNLN)
+    pub KCPFMJCKNLN: ::protobuf::MessageField<super::GCIBOEOBJJH::GCIBOEOBJJH>,
+    // @@protoc_insertion_point(field:MultiplayerFightGameStartScNotify.LHIFALKBALM)
+    pub LHIFALKBALM: ::std::vec::Vec<super::GDOHNMGABGE::GDOHNMGABGE>,
     // special fields
     // @@protoc_insertion_point(special_field:MultiplayerFightGameStartScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl MultiplayerFightGameStartScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LKLJKGKLHID",
-            |m: &MultiplayerFightGameStartScNotify| { &m.LKLJKGKLHID },
-            |m: &mut MultiplayerFightGameStartScNotify| { &mut m.LKLJKGKLHID },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GCIBOEOBJJH::GCIBOEOBJJH>(
+            "KCPFMJCKNLN",
+            |m: &MultiplayerFightGameStartScNotify| { &m.KCPFMJCKNLN },
+            |m: &mut MultiplayerFightGameStartScNotify| { &mut m.KCPFMJCKNLN },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MNFBAOKFOPM::MNFBAOKFOPM>(
-            "DJNKCKJMNIL",
-            |m: &MultiplayerFightGameStartScNotify| { &m.DJNKCKJMNIL },
-            |m: &mut MultiplayerFightGameStartScNotify| { &mut m.DJNKCKJMNIL },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LHIFALKBALM",
+            |m: &MultiplayerFightGameStartScNotify| { &m.LHIFALKBALM },
+            |m: &mut MultiplayerFightGameStartScNotify| { &mut m.LHIFALKBALM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MultiplayerFightGameStartScNotify>(
             "MultiplayerFightGameStartScNotify",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for MultiplayerFightGameStartScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    self.LKLJKGKLHID.push(is.read_message()?);
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KCPFMJCKNLN)?;
                 },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DJNKCKJMNIL)?;
+                98 => {
+                    self.LHIFALKBALM.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,26 +98,26 @@ impl ::protobuf::Message for MultiplayerFightGameStartScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.LKLJKGKLHID {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if let Some(v) = self.DJNKCKJMNIL.as_ref() {
+        if let Some(v) = self.KCPFMJCKNLN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        for value in &self.LHIFALKBALM {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.LKLJKGKLHID {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
-        if let Some(v) = self.DJNKCKJMNIL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        if let Some(v) = self.KCPFMJCKNLN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
+        for v in &self.LHIFALKBALM {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -135,15 +135,15 @@ impl ::protobuf::Message for MultiplayerFightGameStartScNotify {
     }
 
     fn clear(&mut self) {
-        self.LKLJKGKLHID.clear();
-        self.DJNKCKJMNIL.clear();
+        self.KCPFMJCKNLN.clear();
+        self.LHIFALKBALM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MultiplayerFightGameStartScNotify {
         static instance: MultiplayerFightGameStartScNotify = MultiplayerFightGameStartScNotify {
-            LKLJKGKLHID: ::std::vec::Vec::new(),
-            DJNKCKJMNIL: ::protobuf::MessageField::none(),
+            KCPFMJCKNLN: ::protobuf::MessageField::none(),
+            LHIFALKBALM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,11 +168,11 @@ impl ::protobuf::reflect::ProtobufValue for MultiplayerFightGameStartScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'MultiplayerFightGameStartScNotify.proto\x1a\x11DBBLOFLAAMH.proto\x1a\
-    \x11MNFBAOKFOPM.proto\"\x83\x01\n!MultiplayerFightGameStartScNotify\x12.\
-    \n\x0bLKLJKGKLHID\x18\t\x20\x03(\x0b2\x0c.DBBLOFLAAMHR\x0bLKLJKGKLHID\
-    \x12.\n\x0bDJNKCKJMNIL\x18\x05\x20\x01(\x0b2\x0c.MNFBAOKFOPMR\x0bDJNKCKJ\
-    MNILb\x06proto3\
+    \n'MultiplayerFightGameStartScNotify.proto\x1a\x11GCIBOEOBJJH.proto\x1a\
+    \x11GDOHNMGABGE.proto\"\x83\x01\n!MultiplayerFightGameStartScNotify\x12.\
+    \n\x0bKCPFMJCKNLN\x18\x07\x20\x01(\x0b2\x0c.GCIBOEOBJJHR\x0bKCPFMJCKNLN\
+    \x12.\n\x0bLHIFALKBALM\x18\x0c\x20\x03(\x0b2\x0c.GDOHNMGABGER\x0bLHIFALK\
+    BALMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -190,8 +190,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::DBBLOFLAAMH::file_descriptor().clone());
-            deps.push(super::MNFBAOKFOPM::file_descriptor().clone());
+            deps.push(super::GCIBOEOBJJH::file_descriptor().clone());
+            deps.push(super::GDOHNMGABGE::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MultiplayerFightGameStartScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SwitchAetherDivideLineUpSlotScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SwitchAetherDivideLineUpSlotScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:SwitchAetherDivideLineUpSlotScRsp.BNCNMEGFHPM)
-    pub BNCNMEGFHPM: u32,
+    // @@protoc_insertion_point(field:SwitchAetherDivideLineUpSlotScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:SwitchAetherDivideLineUpSlotScRsp.FKHEABMGCGD)
+    pub FKHEABMGCGD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SwitchAetherDivideLineUpSlotScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl SwitchAetherDivideLineUpSlotScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &SwitchAetherDivideLineUpSlotScRsp| { &m.ADADHIHDHJC },
-            |m: &mut SwitchAetherDivideLineUpSlotScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &SwitchAetherDivideLineUpSlotScRsp| { &m.retcode },
+            |m: &mut SwitchAetherDivideLineUpSlotScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BNCNMEGFHPM",
-            |m: &SwitchAetherDivideLineUpSlotScRsp| { &m.BNCNMEGFHPM },
-            |m: &mut SwitchAetherDivideLineUpSlotScRsp| { &mut m.BNCNMEGFHPM },
+            "FKHEABMGCGD",
+            |m: &SwitchAetherDivideLineUpSlotScRsp| { &m.FKHEABMGCGD },
+            |m: &mut SwitchAetherDivideLineUpSlotScRsp| { &mut m.FKHEABMGCGD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SwitchAetherDivideLineUpSlotScRsp>(
             "SwitchAetherDivideLineUpSlotScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for SwitchAetherDivideLineUpSlotScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                112 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                120 => {
-                    self.BNCNMEGFHPM = is.read_uint32()?;
+                104 => {
+                    self.FKHEABMGCGD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for SwitchAetherDivideLineUpSlotScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
-        if self.BNCNMEGFHPM != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.BNCNMEGFHPM);
+        if self.FKHEABMGCGD != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.FKHEABMGCGD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for SwitchAetherDivideLineUpSlotScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(8, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(14, self.retcode)?;
         }
-        if self.BNCNMEGFHPM != 0 {
-            os.write_uint32(15, self.BNCNMEGFHPM)?;
+        if self.FKHEABMGCGD != 0 {
+            os.write_uint32(13, self.FKHEABMGCGD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for SwitchAetherDivideLineUpSlotScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADADHIHDHJC = 0;
-        self.BNCNMEGFHPM = 0;
+        self.retcode = 0;
+        self.FKHEABMGCGD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwitchAetherDivideLineUpSlotScRsp {
         static instance: SwitchAetherDivideLineUpSlotScRsp = SwitchAetherDivideLineUpSlotScRsp {
-            ADADHIHDHJC: 0,
-            BNCNMEGFHPM: 0,
+            retcode: 0,
+            FKHEABMGCGD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for SwitchAetherDivideLineUpSlotScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'SwitchAetherDivideLineUpSlotScRsp.proto\"g\n!SwitchAetherDivideLineUp\
-    SlotScRsp\x12\x20\n\x0bADADHIHDHJC\x18\x08\x20\x01(\rR\x0bADADHIHDHJC\
-    \x12\x20\n\x0bBNCNMEGFHPM\x18\x0f\x20\x01(\rR\x0bBNCNMEGFHPMb\x06proto3\
+    \n'SwitchAetherDivideLineUpSlotScRsp.proto\"_\n!SwitchAetherDivideLineUp\
+    SlotScRsp\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcode\x12\x20\n\
+    \x0bFKHEABMGCGD\x18\r\x20\x01(\rR\x0bFKHEABMGCGDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

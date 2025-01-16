@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetRogueShopMiracleInfoCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetRogueShopMiracleInfoCsReq.LMFFBHEOONE)
-    pub LMFFBHEOONE: u32,
     // @@protoc_insertion_point(field:GetRogueShopMiracleInfoCsReq.PUNK_LORD_OPERATION_REFRESH)
     pub PUNK_LORD_OPERATION_REFRESH: bool,
+    // @@protoc_insertion_point(field:GetRogueShopMiracleInfoCsReq.CMDGNACLGID)
+    pub CMDGNACLGID: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetRogueShopMiracleInfoCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl GetRogueShopMiracleInfoCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LMFFBHEOONE",
-            |m: &GetRogueShopMiracleInfoCsReq| { &m.LMFFBHEOONE },
-            |m: &mut GetRogueShopMiracleInfoCsReq| { &mut m.LMFFBHEOONE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PUNK_LORD_OPERATION_REFRESH",
             |m: &GetRogueShopMiracleInfoCsReq| { &m.PUNK_LORD_OPERATION_REFRESH },
             |m: &mut GetRogueShopMiracleInfoCsReq| { &mut m.PUNK_LORD_OPERATION_REFRESH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CMDGNACLGID",
+            |m: &GetRogueShopMiracleInfoCsReq| { &m.CMDGNACLGID },
+            |m: &mut GetRogueShopMiracleInfoCsReq| { &mut m.CMDGNACLGID },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetRogueShopMiracleInfoCsReq>(
             "GetRogueShopMiracleInfoCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for GetRogueShopMiracleInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.LMFFBHEOONE = is.read_uint32()?;
-                },
-                64 => {
+                56 => {
                     self.PUNK_LORD_OPERATION_REFRESH = is.read_bool()?;
+                },
+                32 => {
+                    self.CMDGNACLGID = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for GetRogueShopMiracleInfoCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LMFFBHEOONE != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.LMFFBHEOONE);
-        }
         if self.PUNK_LORD_OPERATION_REFRESH != false {
             my_size += 1 + 1;
+        }
+        if self.CMDGNACLGID != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.CMDGNACLGID);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for GetRogueShopMiracleInfoCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LMFFBHEOONE != 0 {
-            os.write_uint32(4, self.LMFFBHEOONE)?;
-        }
         if self.PUNK_LORD_OPERATION_REFRESH != false {
-            os.write_bool(8, self.PUNK_LORD_OPERATION_REFRESH)?;
+            os.write_bool(7, self.PUNK_LORD_OPERATION_REFRESH)?;
+        }
+        if self.CMDGNACLGID != 0 {
+            os.write_uint32(4, self.CMDGNACLGID)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GetRogueShopMiracleInfoCsReq {
     }
 
     fn clear(&mut self) {
-        self.LMFFBHEOONE = 0;
         self.PUNK_LORD_OPERATION_REFRESH = false;
+        self.CMDGNACLGID = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetRogueShopMiracleInfoCsReq {
         static instance: GetRogueShopMiracleInfoCsReq = GetRogueShopMiracleInfoCsReq {
-            LMFFBHEOONE: 0,
             PUNK_LORD_OPERATION_REFRESH: false,
+            CMDGNACLGID: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for GetRogueShopMiracleInfoCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"GetRogueShopMiracleInfoCsReq.proto\"\x7f\n\x1cGetRogueShopMiracleInf\
-    oCsReq\x12\x20\n\x0bLMFFBHEOONE\x18\x04\x20\x01(\rR\x0bLMFFBHEOONE\x12=\
-    \n\x1bPUNK_LORD_OPERATION_REFRESH\x18\x08\x20\x01(\x08R\x18PUNKLORDOPERA\
-    TIONREFRESHb\x06proto3\
+    oCsReq\x12=\n\x1bPUNK_LORD_OPERATION_REFRESH\x18\x07\x20\x01(\x08R\x18PU\
+    NKLORDOPERATIONREFRESH\x12\x20\n\x0bCMDGNACLGID\x18\x04\x20\x01(\rR\x0bC\
+    MDGNACLGIDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -129,7 +129,6 @@ pub struct RelicMainAffixConfig {
     pub Property: String,
     pub BaseValue: Float,
     pub LevelAdd: Float,
-    pub IsAvailable: bool,
 }
 
 #[derive(Resource, Deserialize, Serialize, Debug)]
@@ -250,7 +249,7 @@ pub struct AvatarSkillTreeConfig {
     pub PointName: String,
     pub PointDesc: String,
     pub AbilityName: String,
-    pub PointTriggerKey: TextMapEntry,
+    pub PointTriggerKey: String,
     pub ParamList: Vec<Float>,
 }
 

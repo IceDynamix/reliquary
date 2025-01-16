@@ -31,8 +31,8 @@ pub struct GetRogueShopBuffInfoCsReq {
     // message fields
     // @@protoc_insertion_point(field:GetRogueShopBuffInfoCsReq.PUNK_LORD_OPERATION_REFRESH)
     pub PUNK_LORD_OPERATION_REFRESH: bool,
-    // @@protoc_insertion_point(field:GetRogueShopBuffInfoCsReq.LMFFBHEOONE)
-    pub LMFFBHEOONE: u32,
+    // @@protoc_insertion_point(field:GetRogueShopBuffInfoCsReq.CMDGNACLGID)
+    pub CMDGNACLGID: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetRogueShopBuffInfoCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,9 +58,9 @@ impl GetRogueShopBuffInfoCsReq {
             |m: &mut GetRogueShopBuffInfoCsReq| { &mut m.PUNK_LORD_OPERATION_REFRESH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LMFFBHEOONE",
-            |m: &GetRogueShopBuffInfoCsReq| { &m.LMFFBHEOONE },
-            |m: &mut GetRogueShopBuffInfoCsReq| { &mut m.LMFFBHEOONE },
+            "CMDGNACLGID",
+            |m: &GetRogueShopBuffInfoCsReq| { &m.CMDGNACLGID },
+            |m: &mut GetRogueShopBuffInfoCsReq| { &mut m.CMDGNACLGID },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetRogueShopBuffInfoCsReq>(
             "GetRogueShopBuffInfoCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for GetRogueShopBuffInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                120 => {
                     self.PUNK_LORD_OPERATION_REFRESH = is.read_bool()?;
                 },
-                64 => {
-                    self.LMFFBHEOONE = is.read_uint32()?;
+                40 => {
+                    self.CMDGNACLGID = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,8 +101,8 @@ impl ::protobuf::Message for GetRogueShopBuffInfoCsReq {
         if self.PUNK_LORD_OPERATION_REFRESH != false {
             my_size += 1 + 1;
         }
-        if self.LMFFBHEOONE != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.LMFFBHEOONE);
+        if self.CMDGNACLGID != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.CMDGNACLGID);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for GetRogueShopBuffInfoCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PUNK_LORD_OPERATION_REFRESH != false {
-            os.write_bool(12, self.PUNK_LORD_OPERATION_REFRESH)?;
+            os.write_bool(15, self.PUNK_LORD_OPERATION_REFRESH)?;
         }
-        if self.LMFFBHEOONE != 0 {
-            os.write_uint32(8, self.LMFFBHEOONE)?;
+        if self.CMDGNACLGID != 0 {
+            os.write_uint32(5, self.CMDGNACLGID)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for GetRogueShopBuffInfoCsReq {
 
     fn clear(&mut self) {
         self.PUNK_LORD_OPERATION_REFRESH = false;
-        self.LMFFBHEOONE = 0;
+        self.CMDGNACLGID = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetRogueShopBuffInfoCsReq {
         static instance: GetRogueShopBuffInfoCsReq = GetRogueShopBuffInfoCsReq {
             PUNK_LORD_OPERATION_REFRESH: false,
-            LMFFBHEOONE: 0,
+            CMDGNACLGID: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for GetRogueShopBuffInfoCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fGetRogueShopBuffInfoCsReq.proto\"|\n\x19GetRogueShopBuffInfoCsReq\
-    \x12=\n\x1bPUNK_LORD_OPERATION_REFRESH\x18\x0c\x20\x01(\x08R\x18PUNKLORD\
-    OPERATIONREFRESH\x12\x20\n\x0bLMFFBHEOONE\x18\x08\x20\x01(\rR\x0bLMFFBHE\
-    OONEb\x06proto3\
+    \x12=\n\x1bPUNK_LORD_OPERATION_REFRESH\x18\x0f\x20\x01(\x08R\x18PUNKLORD\
+    OPERATIONREFRESH\x12\x20\n\x0bCMDGNACLGID\x18\x05\x20\x01(\rR\x0bCMDGNAC\
+    LGIDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncChessRogueNousSubStoryScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncChessRogueNousSubStoryScNotify.PGHAPHCHHDA)
-    pub PGHAPHCHHDA: u32,
+    // @@protoc_insertion_point(field:SyncChessRogueNousSubStoryScNotify.CEDPKLPEFMJ)
+    pub CEDPKLPEFMJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SyncChessRogueNousSubStoryScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl SyncChessRogueNousSubStoryScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PGHAPHCHHDA",
-            |m: &SyncChessRogueNousSubStoryScNotify| { &m.PGHAPHCHHDA },
-            |m: &mut SyncChessRogueNousSubStoryScNotify| { &mut m.PGHAPHCHHDA },
+            "CEDPKLPEFMJ",
+            |m: &SyncChessRogueNousSubStoryScNotify| { &m.CEDPKLPEFMJ },
+            |m: &mut SyncChessRogueNousSubStoryScNotify| { &mut m.CEDPKLPEFMJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncChessRogueNousSubStoryScNotify>(
             "SyncChessRogueNousSubStoryScNotify",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for SyncChessRogueNousSubStoryScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.PGHAPHCHHDA = is.read_uint32()?;
+                48 => {
+                    self.CEDPKLPEFMJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for SyncChessRogueNousSubStoryScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PGHAPHCHHDA != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.PGHAPHCHHDA);
+        if self.CEDPKLPEFMJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.CEDPKLPEFMJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for SyncChessRogueNousSubStoryScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PGHAPHCHHDA != 0 {
-            os.write_uint32(3, self.PGHAPHCHHDA)?;
+        if self.CEDPKLPEFMJ != 0 {
+            os.write_uint32(6, self.CEDPKLPEFMJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for SyncChessRogueNousSubStoryScNotify {
     }
 
     fn clear(&mut self) {
-        self.PGHAPHCHHDA = 0;
+        self.CEDPKLPEFMJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncChessRogueNousSubStoryScNotify {
         static instance: SyncChessRogueNousSubStoryScNotify = SyncChessRogueNousSubStoryScNotify {
-            PGHAPHCHHDA: 0,
+            CEDPKLPEFMJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for SyncChessRogueNousSubStoryScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(SyncChessRogueNousSubStoryScNotify.proto\"F\n\"SyncChessRogueNousSubS\
-    toryScNotify\x12\x20\n\x0bPGHAPHCHHDA\x18\x03\x20\x01(\rR\x0bPGHAPHCHHDA\
+    toryScNotify\x12\x20\n\x0bCEDPKLPEFMJ\x18\x06\x20\x01(\rR\x0bCEDPKLPEFMJ\
     b\x06proto3\
 ";
 

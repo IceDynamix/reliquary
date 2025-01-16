@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnteredSceneChangeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:EnteredSceneChangeScNotify.KLDMNAJFFCB)
-    pub KLDMNAJFFCB: ::std::vec::Vec<super::CLBCILGMDEL::CLBCILGMDEL>,
+    // @@protoc_insertion_point(field:EnteredSceneChangeScNotify.MGGAMDEMICJ)
+    pub MGGAMDEMICJ: ::std::vec::Vec<super::EHIBHPIEKOM::EHIBHPIEKOM>,
     // special fields
     // @@protoc_insertion_point(special_field:EnteredSceneChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl EnteredSceneChangeScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KLDMNAJFFCB",
-            |m: &EnteredSceneChangeScNotify| { &m.KLDMNAJFFCB },
-            |m: &mut EnteredSceneChangeScNotify| { &mut m.KLDMNAJFFCB },
+            "MGGAMDEMICJ",
+            |m: &EnteredSceneChangeScNotify| { &m.MGGAMDEMICJ },
+            |m: &mut EnteredSceneChangeScNotify| { &mut m.MGGAMDEMICJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnteredSceneChangeScNotify>(
             "EnteredSceneChangeScNotify",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for EnteredSceneChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    self.KLDMNAJFFCB.push(is.read_message()?);
+                98 => {
+                    self.MGGAMDEMICJ.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for EnteredSceneChangeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.KLDMNAJFFCB {
+        for value in &self.MGGAMDEMICJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -98,8 +98,8 @@ impl ::protobuf::Message for EnteredSceneChangeScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.KLDMNAJFFCB {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        for v in &self.MGGAMDEMICJ {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -118,13 +118,13 @@ impl ::protobuf::Message for EnteredSceneChangeScNotify {
     }
 
     fn clear(&mut self) {
-        self.KLDMNAJFFCB.clear();
+        self.MGGAMDEMICJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnteredSceneChangeScNotify {
         static instance: EnteredSceneChangeScNotify = EnteredSceneChangeScNotify {
-            KLDMNAJFFCB: ::std::vec::Vec::new(),
+            MGGAMDEMICJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,9 +149,9 @@ impl ::protobuf::reflect::ProtobufValue for EnteredSceneChangeScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20EnteredSceneChangeScNotify.proto\x1a\x11CLBCILGMDEL.proto\"L\n\x1a\
-    EnteredSceneChangeScNotify\x12.\n\x0bKLDMNAJFFCB\x18\r\x20\x03(\x0b2\x0c\
-    .CLBCILGMDELR\x0bKLDMNAJFFCBb\x06proto3\
+    \n\x20EnteredSceneChangeScNotify.proto\x1a\x11EHIBHPIEKOM.proto\"L\n\x1a\
+    EnteredSceneChangeScNotify\x12.\n\x0bMGGAMDEMICJ\x18\x0c\x20\x03(\x0b2\
+    \x0c.EHIBHPIEKOMR\x0bMGGAMDEMICJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -169,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::CLBCILGMDEL::file_descriptor().clone());
+            deps.push(super::EHIBHPIEKOM::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EnteredSceneChangeScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

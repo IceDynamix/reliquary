@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SubmitEmotionItemCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SubmitEmotionItemCsReq.LCEEDIGELGM)
-    pub LCEEDIGELGM: u32,
-    // @@protoc_insertion_point(field:SubmitEmotionItemCsReq.EKJNIKMMFLE)
-    pub EKJNIKMMFLE: u32,
-    // @@protoc_insertion_point(field:SubmitEmotionItemCsReq.AGPKHOOCMPE)
-    pub AGPKHOOCMPE: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:SubmitEmotionItemCsReq.BKIDMGPJNAK)
+    pub BKIDMGPJNAK: u32,
+    // @@protoc_insertion_point(field:SubmitEmotionItemCsReq.GOHGIEMLNOM)
+    pub GOHGIEMLNOM: u32,
+    // @@protoc_insertion_point(field:SubmitEmotionItemCsReq.OCDLCGIILKI)
+    pub OCDLCGIILKI: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:SubmitEmotionItemCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl SubmitEmotionItemCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LCEEDIGELGM",
-            |m: &SubmitEmotionItemCsReq| { &m.LCEEDIGELGM },
-            |m: &mut SubmitEmotionItemCsReq| { &mut m.LCEEDIGELGM },
+            "BKIDMGPJNAK",
+            |m: &SubmitEmotionItemCsReq| { &m.BKIDMGPJNAK },
+            |m: &mut SubmitEmotionItemCsReq| { &mut m.BKIDMGPJNAK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EKJNIKMMFLE",
-            |m: &SubmitEmotionItemCsReq| { &m.EKJNIKMMFLE },
-            |m: &mut SubmitEmotionItemCsReq| { &mut m.EKJNIKMMFLE },
+            "GOHGIEMLNOM",
+            |m: &SubmitEmotionItemCsReq| { &m.GOHGIEMLNOM },
+            |m: &mut SubmitEmotionItemCsReq| { &mut m.GOHGIEMLNOM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "AGPKHOOCMPE",
-            |m: &SubmitEmotionItemCsReq| { &m.AGPKHOOCMPE },
-            |m: &mut SubmitEmotionItemCsReq| { &mut m.AGPKHOOCMPE },
+            "OCDLCGIILKI",
+            |m: &SubmitEmotionItemCsReq| { &m.OCDLCGIILKI },
+            |m: &mut SubmitEmotionItemCsReq| { &mut m.OCDLCGIILKI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SubmitEmotionItemCsReq>(
             "SubmitEmotionItemCsReq",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for SubmitEmotionItemCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.LCEEDIGELGM = is.read_uint32()?;
+                112 => {
+                    self.BKIDMGPJNAK = is.read_uint32()?;
                 },
-                72 => {
-                    self.EKJNIKMMFLE = is.read_uint32()?;
+                96 => {
+                    self.GOHGIEMLNOM = is.read_uint32()?;
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AGPKHOOCMPE)?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OCDLCGIILKI)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for SubmitEmotionItemCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LCEEDIGELGM != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.LCEEDIGELGM);
+        if self.BKIDMGPJNAK != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.BKIDMGPJNAK);
         }
-        if self.EKJNIKMMFLE != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.EKJNIKMMFLE);
+        if self.GOHGIEMLNOM != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.GOHGIEMLNOM);
         }
-        if let Some(v) = self.AGPKHOOCMPE.as_ref() {
+        if let Some(v) = self.OCDLCGIILKI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -124,14 +124,14 @@ impl ::protobuf::Message for SubmitEmotionItemCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LCEEDIGELGM != 0 {
-            os.write_uint32(10, self.LCEEDIGELGM)?;
+        if self.BKIDMGPJNAK != 0 {
+            os.write_uint32(14, self.BKIDMGPJNAK)?;
         }
-        if self.EKJNIKMMFLE != 0 {
-            os.write_uint32(9, self.EKJNIKMMFLE)?;
+        if self.GOHGIEMLNOM != 0 {
+            os.write_uint32(12, self.GOHGIEMLNOM)?;
         }
-        if let Some(v) = self.AGPKHOOCMPE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if let Some(v) = self.OCDLCGIILKI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for SubmitEmotionItemCsReq {
     }
 
     fn clear(&mut self) {
-        self.LCEEDIGELGM = 0;
-        self.EKJNIKMMFLE = 0;
-        self.AGPKHOOCMPE.clear();
+        self.BKIDMGPJNAK = 0;
+        self.GOHGIEMLNOM = 0;
+        self.OCDLCGIILKI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SubmitEmotionItemCsReq {
         static instance: SubmitEmotionItemCsReq = SubmitEmotionItemCsReq {
-            LCEEDIGELGM: 0,
-            EKJNIKMMFLE: 0,
-            AGPKHOOCMPE: ::protobuf::MessageField::none(),
+            BKIDMGPJNAK: 0,
+            GOHGIEMLNOM: 0,
+            OCDLCGIILKI: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for SubmitEmotionItemCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cSubmitEmotionItemCsReq.proto\x1a\x0eItemList.proto\"\x89\x01\n\x16\
-    SubmitEmotionItemCsReq\x12\x20\n\x0bLCEEDIGELGM\x18\n\x20\x01(\rR\x0bLCE\
-    EDIGELGM\x12\x20\n\x0bEKJNIKMMFLE\x18\t\x20\x01(\rR\x0bEKJNIKMMFLE\x12+\
-    \n\x0bAGPKHOOCMPE\x18\r\x20\x01(\x0b2\t.ItemListR\x0bAGPKHOOCMPEb\x06pro\
-    to3\
+    SubmitEmotionItemCsReq\x12\x20\n\x0bBKIDMGPJNAK\x18\x0e\x20\x01(\rR\x0bB\
+    KIDMGPJNAK\x12\x20\n\x0bGOHGIEMLNOM\x18\x0c\x20\x01(\rR\x0bGOHGIEMLNOM\
+    \x12+\n\x0bOCDLCGIILKI\x18\x01\x20\x01(\x0b2\t.ItemListR\x0bOCDLCGIILKIb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

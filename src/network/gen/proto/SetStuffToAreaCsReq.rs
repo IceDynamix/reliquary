@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetStuffToAreaCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetStuffToAreaCsReq.LGBDDMADNBE)
-    pub LGBDDMADNBE: u32,
-    // @@protoc_insertion_point(field:SetStuffToAreaCsReq.JOJMKBPLJPD)
-    pub JOJMKBPLJPD: ::protobuf::EnumOrUnknown<super::PEFBCGPHGBG::PEFBCGPHGBG>,
-    // @@protoc_insertion_point(field:SetStuffToAreaCsReq.BIIHOBMMFDP)
-    pub BIIHOBMMFDP: u32,
+    // @@protoc_insertion_point(field:SetStuffToAreaCsReq.POMEOFHEMGH)
+    pub POMEOFHEMGH: u32,
+    // @@protoc_insertion_point(field:SetStuffToAreaCsReq.KFAHMGFLAAA)
+    pub KFAHMGFLAAA: ::protobuf::EnumOrUnknown<super::MEDPDEALGMJ::MEDPDEALGMJ>,
+    // @@protoc_insertion_point(field:SetStuffToAreaCsReq.APBJMEOCBFA)
+    pub APBJMEOCBFA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SetStuffToAreaCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl SetStuffToAreaCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LGBDDMADNBE",
-            |m: &SetStuffToAreaCsReq| { &m.LGBDDMADNBE },
-            |m: &mut SetStuffToAreaCsReq| { &mut m.LGBDDMADNBE },
+            "POMEOFHEMGH",
+            |m: &SetStuffToAreaCsReq| { &m.POMEOFHEMGH },
+            |m: &mut SetStuffToAreaCsReq| { &mut m.POMEOFHEMGH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JOJMKBPLJPD",
-            |m: &SetStuffToAreaCsReq| { &m.JOJMKBPLJPD },
-            |m: &mut SetStuffToAreaCsReq| { &mut m.JOJMKBPLJPD },
+            "KFAHMGFLAAA",
+            |m: &SetStuffToAreaCsReq| { &m.KFAHMGFLAAA },
+            |m: &mut SetStuffToAreaCsReq| { &mut m.KFAHMGFLAAA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BIIHOBMMFDP",
-            |m: &SetStuffToAreaCsReq| { &m.BIIHOBMMFDP },
-            |m: &mut SetStuffToAreaCsReq| { &mut m.BIIHOBMMFDP },
+            "APBJMEOCBFA",
+            |m: &SetStuffToAreaCsReq| { &m.APBJMEOCBFA },
+            |m: &mut SetStuffToAreaCsReq| { &mut m.APBJMEOCBFA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetStuffToAreaCsReq>(
             "SetStuffToAreaCsReq",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for SetStuffToAreaCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.LGBDDMADNBE = is.read_uint32()?;
+                96 => {
+                    self.POMEOFHEMGH = is.read_uint32()?;
                 },
                 64 => {
-                    self.JOJMKBPLJPD = is.read_enum_or_unknown()?;
+                    self.KFAHMGFLAAA = is.read_enum_or_unknown()?;
                 },
-                32 => {
-                    self.BIIHOBMMFDP = is.read_uint32()?;
+                104 => {
+                    self.APBJMEOCBFA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for SetStuffToAreaCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LGBDDMADNBE != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.LGBDDMADNBE);
+        if self.POMEOFHEMGH != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.POMEOFHEMGH);
         }
-        if self.JOJMKBPLJPD != ::protobuf::EnumOrUnknown::new(super::PEFBCGPHGBG::PEFBCGPHGBG::WORK_POS_NONE) {
-            my_size += ::protobuf::rt::int32_size(8, self.JOJMKBPLJPD.value());
+        if self.KFAHMGFLAAA != ::protobuf::EnumOrUnknown::new(super::MEDPDEALGMJ::MEDPDEALGMJ::WORK_POS_NONE) {
+            my_size += ::protobuf::rt::int32_size(8, self.KFAHMGFLAAA.value());
         }
-        if self.BIIHOBMMFDP != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.BIIHOBMMFDP);
+        if self.APBJMEOCBFA != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.APBJMEOCBFA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for SetStuffToAreaCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LGBDDMADNBE != 0 {
-            os.write_uint32(7, self.LGBDDMADNBE)?;
+        if self.POMEOFHEMGH != 0 {
+            os.write_uint32(12, self.POMEOFHEMGH)?;
         }
-        if self.JOJMKBPLJPD != ::protobuf::EnumOrUnknown::new(super::PEFBCGPHGBG::PEFBCGPHGBG::WORK_POS_NONE) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.JOJMKBPLJPD))?;
+        if self.KFAHMGFLAAA != ::protobuf::EnumOrUnknown::new(super::MEDPDEALGMJ::MEDPDEALGMJ::WORK_POS_NONE) {
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.KFAHMGFLAAA))?;
         }
-        if self.BIIHOBMMFDP != 0 {
-            os.write_uint32(4, self.BIIHOBMMFDP)?;
+        if self.APBJMEOCBFA != 0 {
+            os.write_uint32(13, self.APBJMEOCBFA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for SetStuffToAreaCsReq {
     }
 
     fn clear(&mut self) {
-        self.LGBDDMADNBE = 0;
-        self.JOJMKBPLJPD = ::protobuf::EnumOrUnknown::new(super::PEFBCGPHGBG::PEFBCGPHGBG::WORK_POS_NONE);
-        self.BIIHOBMMFDP = 0;
+        self.POMEOFHEMGH = 0;
+        self.KFAHMGFLAAA = ::protobuf::EnumOrUnknown::new(super::MEDPDEALGMJ::MEDPDEALGMJ::WORK_POS_NONE);
+        self.APBJMEOCBFA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetStuffToAreaCsReq {
         static instance: SetStuffToAreaCsReq = SetStuffToAreaCsReq {
-            LGBDDMADNBE: 0,
-            JOJMKBPLJPD: ::protobuf::EnumOrUnknown::from_i32(0),
-            BIIHOBMMFDP: 0,
+            POMEOFHEMGH: 0,
+            KFAHMGFLAAA: ::protobuf::EnumOrUnknown::from_i32(0),
+            APBJMEOCBFA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for SetStuffToAreaCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19SetStuffToAreaCsReq.proto\x1a\x11PEFBCGPHGBG.proto\"\x89\x01\n\x13\
-    SetStuffToAreaCsReq\x12\x20\n\x0bLGBDDMADNBE\x18\x07\x20\x01(\rR\x0bLGBD\
-    DMADNBE\x12.\n\x0bJOJMKBPLJPD\x18\x08\x20\x01(\x0e2\x0c.PEFBCGPHGBGR\x0b\
-    JOJMKBPLJPD\x12\x20\n\x0bBIIHOBMMFDP\x18\x04\x20\x01(\rR\x0bBIIHOBMMFDPb\
+    \n\x19SetStuffToAreaCsReq.proto\x1a\x11MEDPDEALGMJ.proto\"\x89\x01\n\x13\
+    SetStuffToAreaCsReq\x12\x20\n\x0bPOMEOFHEMGH\x18\x0c\x20\x01(\rR\x0bPOME\
+    OFHEMGH\x12.\n\x0bKFAHMGFLAAA\x18\x08\x20\x01(\x0e2\x0c.MEDPDEALGMJR\x0b\
+    KFAHMGFLAAA\x12\x20\n\x0bAPBJMEOCBFA\x18\r\x20\x01(\rR\x0bAPBJMEOCBFAb\
     \x06proto3\
 ";
 
@@ -206,7 +206,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::PEFBCGPHGBG::file_descriptor().clone());
+            deps.push(super::MEDPDEALGMJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SetStuffToAreaCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

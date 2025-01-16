@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRoguePickAvatarCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ChessRoguePickAvatarCsReq.FOPPGNKJGLP)
-    pub FOPPGNKJGLP: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ChessRoguePickAvatarCsReq.JCPFOPLBOIM)
-    pub JCPFOPLBOIM: u32,
+    // @@protoc_insertion_point(field:ChessRoguePickAvatarCsReq.CFAPNLFIMLN)
+    pub CFAPNLFIMLN: u32,
+    // @@protoc_insertion_point(field:ChessRoguePickAvatarCsReq.LECAMFAFAFB)
+    pub LECAMFAFAFB: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRoguePickAvatarCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl ChessRoguePickAvatarCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FOPPGNKJGLP",
-            |m: &ChessRoguePickAvatarCsReq| { &m.FOPPGNKJGLP },
-            |m: &mut ChessRoguePickAvatarCsReq| { &mut m.FOPPGNKJGLP },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JCPFOPLBOIM",
-            |m: &ChessRoguePickAvatarCsReq| { &m.JCPFOPLBOIM },
-            |m: &mut ChessRoguePickAvatarCsReq| { &mut m.JCPFOPLBOIM },
+            "CFAPNLFIMLN",
+            |m: &ChessRoguePickAvatarCsReq| { &m.CFAPNLFIMLN },
+            |m: &mut ChessRoguePickAvatarCsReq| { &mut m.CFAPNLFIMLN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LECAMFAFAFB",
+            |m: &ChessRoguePickAvatarCsReq| { &m.LECAMFAFAFB },
+            |m: &mut ChessRoguePickAvatarCsReq| { &mut m.LECAMFAFAFB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRoguePickAvatarCsReq>(
             "ChessRoguePickAvatarCsReq",
@@ -80,14 +80,14 @@ impl ::protobuf::Message for ChessRoguePickAvatarCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FOPPGNKJGLP)?;
+                88 => {
+                    self.CFAPNLFIMLN = is.read_uint32()?;
                 },
-                40 => {
-                    self.FOPPGNKJGLP.push(is.read_uint32()?);
+                114 => {
+                    is.read_repeated_packed_uint32_into(&mut self.LECAMFAFAFB)?;
                 },
-                120 => {
-                    self.JCPFOPLBOIM = is.read_uint32()?;
+                112 => {
+                    self.LECAMFAFAFB.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,24 +101,24 @@ impl ::protobuf::Message for ChessRoguePickAvatarCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.FOPPGNKJGLP {
-            my_size += ::protobuf::rt::uint32_size(5, *value);
-        };
-        if self.JCPFOPLBOIM != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.JCPFOPLBOIM);
+        if self.CFAPNLFIMLN != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.CFAPNLFIMLN);
         }
+        for value in &self.LECAMFAFAFB {
+            my_size += ::protobuf::rt::uint32_size(14, *value);
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.FOPPGNKJGLP {
-            os.write_uint32(5, *v)?;
-        };
-        if self.JCPFOPLBOIM != 0 {
-            os.write_uint32(15, self.JCPFOPLBOIM)?;
+        if self.CFAPNLFIMLN != 0 {
+            os.write_uint32(11, self.CFAPNLFIMLN)?;
         }
+        for v in &self.LECAMFAFAFB {
+            os.write_uint32(14, *v)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -136,15 +136,15 @@ impl ::protobuf::Message for ChessRoguePickAvatarCsReq {
     }
 
     fn clear(&mut self) {
-        self.FOPPGNKJGLP.clear();
-        self.JCPFOPLBOIM = 0;
+        self.CFAPNLFIMLN = 0;
+        self.LECAMFAFAFB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRoguePickAvatarCsReq {
         static instance: ChessRoguePickAvatarCsReq = ChessRoguePickAvatarCsReq {
-            FOPPGNKJGLP: ::std::vec::Vec::new(),
-            JCPFOPLBOIM: 0,
+            CFAPNLFIMLN: 0,
+            LECAMFAFAFB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -170,8 +170,8 @@ impl ::protobuf::reflect::ProtobufValue for ChessRoguePickAvatarCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fChessRoguePickAvatarCsReq.proto\"_\n\x19ChessRoguePickAvatarCsReq\
-    \x12\x20\n\x0bFOPPGNKJGLP\x18\x05\x20\x03(\rR\x0bFOPPGNKJGLP\x12\x20\n\
-    \x0bJCPFOPLBOIM\x18\x0f\x20\x01(\rR\x0bJCPFOPLBOIMb\x06proto3\
+    \x12\x20\n\x0bCFAPNLFIMLN\x18\x0b\x20\x01(\rR\x0bCFAPNLFIMLN\x12\x20\n\
+    \x0bLECAMFAFAFB\x18\x0e\x20\x03(\rR\x0bLECAMFAFAFBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

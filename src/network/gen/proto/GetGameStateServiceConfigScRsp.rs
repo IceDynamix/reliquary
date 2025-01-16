@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetGameStateServiceConfigScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetGameStateServiceConfigScRsp.EEGCPACGOKG)
-    pub EEGCPACGOKG: ::std::vec::Vec<::std::string::String>,
-    // @@protoc_insertion_point(field:GetGameStateServiceConfigScRsp.DKGAMCJEKNB)
-    pub DKGAMCJEKNB: ::std::vec::Vec<::std::string::String>,
-    // @@protoc_insertion_point(field:GetGameStateServiceConfigScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:GetGameStateServiceConfigScRsp.NGKMBHEIOOE)
-    pub NGKMBHEIOOE: ::std::vec::Vec<::std::string::String>,
+    // @@protoc_insertion_point(field:GetGameStateServiceConfigScRsp.GAENLLHLHDN)
+    pub GAENLLHLHDN: ::std::vec::Vec<::std::string::String>,
+    // @@protoc_insertion_point(field:GetGameStateServiceConfigScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetGameStateServiceConfigScRsp.LNLAAACODIC)
+    pub LNLAAACODIC: ::std::vec::Vec<::std::string::String>,
+    // @@protoc_insertion_point(field:GetGameStateServiceConfigScRsp.PJDNCMEMNJH)
+    pub PJDNCMEMNJH: ::std::vec::Vec<::std::string::String>,
     // special fields
     // @@protoc_insertion_point(special_field:GetGameStateServiceConfigScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,24 +57,24 @@ impl GetGameStateServiceConfigScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EEGCPACGOKG",
-            |m: &GetGameStateServiceConfigScRsp| { &m.EEGCPACGOKG },
-            |m: &mut GetGameStateServiceConfigScRsp| { &mut m.EEGCPACGOKG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DKGAMCJEKNB",
-            |m: &GetGameStateServiceConfigScRsp| { &m.DKGAMCJEKNB },
-            |m: &mut GetGameStateServiceConfigScRsp| { &mut m.DKGAMCJEKNB },
+            "GAENLLHLHDN",
+            |m: &GetGameStateServiceConfigScRsp| { &m.GAENLLHLHDN },
+            |m: &mut GetGameStateServiceConfigScRsp| { &mut m.GAENLLHLHDN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &GetGameStateServiceConfigScRsp| { &m.ADADHIHDHJC },
-            |m: &mut GetGameStateServiceConfigScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &GetGameStateServiceConfigScRsp| { &m.retcode },
+            |m: &mut GetGameStateServiceConfigScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NGKMBHEIOOE",
-            |m: &GetGameStateServiceConfigScRsp| { &m.NGKMBHEIOOE },
-            |m: &mut GetGameStateServiceConfigScRsp| { &mut m.NGKMBHEIOOE },
+            "LNLAAACODIC",
+            |m: &GetGameStateServiceConfigScRsp| { &m.LNLAAACODIC },
+            |m: &mut GetGameStateServiceConfigScRsp| { &mut m.LNLAAACODIC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PJDNCMEMNJH",
+            |m: &GetGameStateServiceConfigScRsp| { &m.PJDNCMEMNJH },
+            |m: &mut GetGameStateServiceConfigScRsp| { &mut m.PJDNCMEMNJH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetGameStateServiceConfigScRsp>(
             "GetGameStateServiceConfigScRsp",
@@ -94,17 +94,17 @@ impl ::protobuf::Message for GetGameStateServiceConfigScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                122 => {
+                    self.GAENLLHLHDN.push(is.read_string()?);
+                },
+                16 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                82 => {
+                    self.LNLAAACODIC.push(is.read_string()?);
+                },
                 98 => {
-                    self.EEGCPACGOKG.push(is.read_string()?);
-                },
-                66 => {
-                    self.DKGAMCJEKNB.push(is.read_string()?);
-                },
-                8 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
-                },
-                58 => {
-                    self.NGKMBHEIOOE.push(is.read_string()?);
+                    self.PJDNCMEMNJH.push(is.read_string()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,17 +118,17 @@ impl ::protobuf::Message for GetGameStateServiceConfigScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.EEGCPACGOKG {
-            my_size += ::protobuf::rt::string_size(12, &value);
+        for value in &self.GAENLLHLHDN {
+            my_size += ::protobuf::rt::string_size(15, &value);
         };
-        for value in &self.DKGAMCJEKNB {
-            my_size += ::protobuf::rt::string_size(8, &value);
-        };
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
-        for value in &self.NGKMBHEIOOE {
-            my_size += ::protobuf::rt::string_size(7, &value);
+        for value in &self.LNLAAACODIC {
+            my_size += ::protobuf::rt::string_size(10, &value);
+        };
+        for value in &self.PJDNCMEMNJH {
+            my_size += ::protobuf::rt::string_size(12, &value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for GetGameStateServiceConfigScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.EEGCPACGOKG {
-            os.write_string(12, &v)?;
+        for v in &self.GAENLLHLHDN {
+            os.write_string(15, &v)?;
         };
-        for v in &self.DKGAMCJEKNB {
-            os.write_string(8, &v)?;
-        };
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(1, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(2, self.retcode)?;
         }
-        for v in &self.NGKMBHEIOOE {
-            os.write_string(7, &v)?;
+        for v in &self.LNLAAACODIC {
+            os.write_string(10, &v)?;
+        };
+        for v in &self.PJDNCMEMNJH {
+            os.write_string(12, &v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for GetGameStateServiceConfigScRsp {
     }
 
     fn clear(&mut self) {
-        self.EEGCPACGOKG.clear();
-        self.DKGAMCJEKNB.clear();
-        self.ADADHIHDHJC = 0;
-        self.NGKMBHEIOOE.clear();
+        self.GAENLLHLHDN.clear();
+        self.retcode = 0;
+        self.LNLAAACODIC.clear();
+        self.PJDNCMEMNJH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetGameStateServiceConfigScRsp {
         static instance: GetGameStateServiceConfigScRsp = GetGameStateServiceConfigScRsp {
-            EEGCPACGOKG: ::std::vec::Vec::new(),
-            DKGAMCJEKNB: ::std::vec::Vec::new(),
-            ADADHIHDHJC: 0,
-            NGKMBHEIOOE: ::std::vec::Vec::new(),
+            GAENLLHLHDN: ::std::vec::Vec::new(),
+            retcode: 0,
+            LNLAAACODIC: ::std::vec::Vec::new(),
+            PJDNCMEMNJH: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for GetGameStateServiceConfigScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$GetGameStateServiceConfigScRsp.proto\"\xa8\x01\n\x1eGetGameStateServi\
-    ceConfigScRsp\x12\x20\n\x0bEEGCPACGOKG\x18\x0c\x20\x03(\tR\x0bEEGCPACGOK\
-    G\x12\x20\n\x0bDKGAMCJEKNB\x18\x08\x20\x03(\tR\x0bDKGAMCJEKNB\x12\x20\n\
-    \x0bADADHIHDHJC\x18\x01\x20\x01(\rR\x0bADADHIHDHJC\x12\x20\n\x0bNGKMBHEI\
-    OOE\x18\x07\x20\x03(\tR\x0bNGKMBHEIOOEb\x06proto3\
+    \n$GetGameStateServiceConfigScRsp.proto\"\xa0\x01\n\x1eGetGameStateServi\
+    ceConfigScRsp\x12\x20\n\x0bGAENLLHLHDN\x18\x0f\x20\x03(\tR\x0bGAENLLHLHD\
+    N\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\x20\n\x0bLNLAA\
+    ACODIC\x18\n\x20\x03(\tR\x0bLNLAAACODIC\x12\x20\n\x0bPJDNCMEMNJH\x18\x0c\
+    \x20\x03(\tR\x0bPJDNCMEMNJHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetCurSceneInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetCurSceneInfoScRsp.scene)
-    pub scene: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
+    // @@protoc_insertion_point(field:GetCurSceneInfoScRsp.KJPDBLOAOCG)
+    pub KJPDBLOAOCG: ::protobuf::MessageField<super::NDHNICCLBDN::NDHNICCLBDN>,
     // @@protoc_insertion_point(field:GetCurSceneInfoScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,10 +52,10 @@ impl GetCurSceneInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneInfo::SceneInfo>(
-            "scene",
-            |m: &GetCurSceneInfoScRsp| { &m.scene },
-            |m: &mut GetCurSceneInfoScRsp| { &mut m.scene },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NDHNICCLBDN::NDHNICCLBDN>(
+            "KJPDBLOAOCG",
+            |m: &GetCurSceneInfoScRsp| { &m.KJPDBLOAOCG },
+            |m: &mut GetCurSceneInfoScRsp| { &mut m.KJPDBLOAOCG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for GetCurSceneInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KJPDBLOAOCG)?;
                 },
-                104 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -98,12 +98,12 @@ impl ::protobuf::Message for GetCurSceneInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.scene.as_ref() {
+        if let Some(v) = self.KJPDBLOAOCG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for GetCurSceneInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.scene.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if let Some(v) = self.KJPDBLOAOCG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for GetCurSceneInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.scene.clear();
+        self.KJPDBLOAOCG.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetCurSceneInfoScRsp {
         static instance: GetCurSceneInfoScRsp = GetCurSceneInfoScRsp {
-            scene: ::protobuf::MessageField::none(),
+            KJPDBLOAOCG: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for GetCurSceneInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aGetCurSceneInfoScRsp.proto\x1a\x0fSceneInfo.proto\"R\n\x14GetCurSc\
-    eneInfoScRsp\x12\x20\n\x05scene\x18\x03\x20\x01(\x0b2\n.SceneInfoR\x05sc\
-    ene\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcodeB\x15\n\x13emu.luna\
-    rcore.protob\x06proto3\
+    \n\x1aGetCurSceneInfoScRsp.proto\x1a\x11NDHNICCLBDN.proto\"`\n\x14GetCur\
+    SceneInfoScRsp\x12.\n\x0bKJPDBLOAOCG\x18\x01\x20\x01(\x0b2\x0c.NDHNICCLB\
+    DNR\x0bKJPDBLOAOCG\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcodeb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::SceneInfo::file_descriptor().clone());
+            deps.push(super::NDHNICCLBDN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetCurSceneInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

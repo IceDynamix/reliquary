@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartyBuildStartStepScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartyBuildStartStepScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:TrainPartyBuildStartStepScRsp.MLFLLKMIADE)
-    pub MLFLLKMIADE: u32,
+    // @@protoc_insertion_point(field:TrainPartyBuildStartStepScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:TrainPartyBuildStartStepScRsp.BDMNAPIFCIM)
+    pub BDMNAPIFCIM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyBuildStartStepScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl TrainPartyBuildStartStepScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &TrainPartyBuildStartStepScRsp| { &m.ADADHIHDHJC },
-            |m: &mut TrainPartyBuildStartStepScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &TrainPartyBuildStartStepScRsp| { &m.retcode },
+            |m: &mut TrainPartyBuildStartStepScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MLFLLKMIADE",
-            |m: &TrainPartyBuildStartStepScRsp| { &m.MLFLLKMIADE },
-            |m: &mut TrainPartyBuildStartStepScRsp| { &mut m.MLFLLKMIADE },
+            "BDMNAPIFCIM",
+            |m: &TrainPartyBuildStartStepScRsp| { &m.BDMNAPIFCIM },
+            |m: &mut TrainPartyBuildStartStepScRsp| { &mut m.BDMNAPIFCIM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyBuildStartStepScRsp>(
             "TrainPartyBuildStartStepScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for TrainPartyBuildStartStepScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                64 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                16 => {
-                    self.MLFLLKMIADE = is.read_uint32()?;
+                88 => {
+                    self.BDMNAPIFCIM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for TrainPartyBuildStartStepScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
-        if self.MLFLLKMIADE != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.MLFLLKMIADE);
+        if self.BDMNAPIFCIM != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.BDMNAPIFCIM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for TrainPartyBuildStartStepScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(9, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(8, self.retcode)?;
         }
-        if self.MLFLLKMIADE != 0 {
-            os.write_uint32(2, self.MLFLLKMIADE)?;
+        if self.BDMNAPIFCIM != 0 {
+            os.write_uint32(11, self.BDMNAPIFCIM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for TrainPartyBuildStartStepScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADADHIHDHJC = 0;
-        self.MLFLLKMIADE = 0;
+        self.retcode = 0;
+        self.BDMNAPIFCIM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyBuildStartStepScRsp {
         static instance: TrainPartyBuildStartStepScRsp = TrainPartyBuildStartStepScRsp {
-            ADADHIHDHJC: 0,
-            MLFLLKMIADE: 0,
+            retcode: 0,
+            BDMNAPIFCIM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyBuildStartStepScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#TrainPartyBuildStartStepScRsp.proto\"c\n\x1dTrainPartyBuildStartStepS\
-    cRsp\x12\x20\n\x0bADADHIHDHJC\x18\t\x20\x01(\rR\x0bADADHIHDHJC\x12\x20\n\
-    \x0bMLFLLKMIADE\x18\x02\x20\x01(\rR\x0bMLFLLKMIADEb\x06proto3\
+    \n#TrainPartyBuildStartStepScRsp.proto\"[\n\x1dTrainPartyBuildStartStepS\
+    cRsp\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12\x20\n\x0bBD\
+    MNAPIFCIM\x18\x0b\x20\x01(\rR\x0bBDMNAPIFCIMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

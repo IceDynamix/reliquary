@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DressAvatarSkinCsReq {
     // message fields
-    // @@protoc_insertion_point(field:DressAvatarSkinCsReq.DHPDHGHAEOP)
-    pub DHPDHGHAEOP: u32,
-    // @@protoc_insertion_point(field:DressAvatarSkinCsReq.ECAMKNOPNEL)
-    pub ECAMKNOPNEL: u32,
+    // @@protoc_insertion_point(field:DressAvatarSkinCsReq.GDFMLBCPHMH)
+    pub GDFMLBCPHMH: u32,
+    // @@protoc_insertion_point(field:DressAvatarSkinCsReq.avatar_id)
+    pub avatar_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DressAvatarSkinCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl DressAvatarSkinCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DHPDHGHAEOP",
-            |m: &DressAvatarSkinCsReq| { &m.DHPDHGHAEOP },
-            |m: &mut DressAvatarSkinCsReq| { &mut m.DHPDHGHAEOP },
+            "GDFMLBCPHMH",
+            |m: &DressAvatarSkinCsReq| { &m.GDFMLBCPHMH },
+            |m: &mut DressAvatarSkinCsReq| { &mut m.GDFMLBCPHMH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ECAMKNOPNEL",
-            |m: &DressAvatarSkinCsReq| { &m.ECAMKNOPNEL },
-            |m: &mut DressAvatarSkinCsReq| { &mut m.ECAMKNOPNEL },
+            "avatar_id",
+            |m: &DressAvatarSkinCsReq| { &m.avatar_id },
+            |m: &mut DressAvatarSkinCsReq| { &mut m.avatar_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DressAvatarSkinCsReq>(
             "DressAvatarSkinCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for DressAvatarSkinCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.DHPDHGHAEOP = is.read_uint32()?;
+                64 => {
+                    self.GDFMLBCPHMH = is.read_uint32()?;
                 },
-                80 => {
-                    self.ECAMKNOPNEL = is.read_uint32()?;
+                120 => {
+                    self.avatar_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for DressAvatarSkinCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DHPDHGHAEOP != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.DHPDHGHAEOP);
+        if self.GDFMLBCPHMH != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.GDFMLBCPHMH);
         }
-        if self.ECAMKNOPNEL != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.ECAMKNOPNEL);
+        if self.avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for DressAvatarSkinCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DHPDHGHAEOP != 0 {
-            os.write_uint32(6, self.DHPDHGHAEOP)?;
+        if self.GDFMLBCPHMH != 0 {
+            os.write_uint32(8, self.GDFMLBCPHMH)?;
         }
-        if self.ECAMKNOPNEL != 0 {
-            os.write_uint32(10, self.ECAMKNOPNEL)?;
+        if self.avatar_id != 0 {
+            os.write_uint32(15, self.avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for DressAvatarSkinCsReq {
     }
 
     fn clear(&mut self) {
-        self.DHPDHGHAEOP = 0;
-        self.ECAMKNOPNEL = 0;
+        self.GDFMLBCPHMH = 0;
+        self.avatar_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DressAvatarSkinCsReq {
         static instance: DressAvatarSkinCsReq = DressAvatarSkinCsReq {
-            DHPDHGHAEOP: 0,
-            ECAMKNOPNEL: 0,
+            GDFMLBCPHMH: 0,
+            avatar_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for DressAvatarSkinCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aDressAvatarSkinCsReq.proto\"Z\n\x14DressAvatarSkinCsReq\x12\x20\n\
-    \x0bDHPDHGHAEOP\x18\x06\x20\x01(\rR\x0bDHPDHGHAEOP\x12\x20\n\x0bECAMKNOP\
-    NEL\x18\n\x20\x01(\rR\x0bECAMKNOPNELb\x06proto3\
+    \n\x1aDressAvatarSkinCsReq.proto\"U\n\x14DressAvatarSkinCsReq\x12\x20\n\
+    \x0bGDFMLBCPHMH\x18\x08\x20\x01(\rR\x0bGDFMLBCPHMH\x12\x1b\n\tavatar_id\
+    \x18\x0f\x20\x01(\rR\x08avatarIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

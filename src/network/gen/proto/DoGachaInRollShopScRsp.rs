@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DoGachaInRollShopScRsp {
     // message fields
-    // @@protoc_insertion_point(field:DoGachaInRollShopScRsp.reward)
-    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:DoGachaInRollShopScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:DoGachaInRollShopScRsp.ordering_index)
-    pub ordering_index: u32,
-    // @@protoc_insertion_point(field:DoGachaInRollShopScRsp.roll_shop_id)
-    pub roll_shop_id: u32,
-    // @@protoc_insertion_point(field:DoGachaInRollShopScRsp.GMMLAIMHMMB)
-    pub GMMLAIMHMMB: u32,
+    // @@protoc_insertion_point(field:DoGachaInRollShopScRsp.PKGLPDHBHCI)
+    pub PKGLPDHBHCI: u32,
+    // @@protoc_insertion_point(field:DoGachaInRollShopScRsp.DNCJDOODMLG)
+    pub DNCJDOODMLG: u32,
+    // @@protoc_insertion_point(field:DoGachaInRollShopScRsp.AECJKNIGHJK)
+    pub AECJKNIGHJK: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:DoGachaInRollShopScRsp.BGNKMLPOHGH)
+    pub BGNKMLPOHGH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DoGachaInRollShopScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,30 +58,30 @@ impl DoGachaInRollShopScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "reward",
-            |m: &DoGachaInRollShopScRsp| { &m.reward },
-            |m: &mut DoGachaInRollShopScRsp| { &mut m.reward },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &DoGachaInRollShopScRsp| { &m.retcode },
             |m: &mut DoGachaInRollShopScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ordering_index",
-            |m: &DoGachaInRollShopScRsp| { &m.ordering_index },
-            |m: &mut DoGachaInRollShopScRsp| { &mut m.ordering_index },
+            "PKGLPDHBHCI",
+            |m: &DoGachaInRollShopScRsp| { &m.PKGLPDHBHCI },
+            |m: &mut DoGachaInRollShopScRsp| { &mut m.PKGLPDHBHCI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "roll_shop_id",
-            |m: &DoGachaInRollShopScRsp| { &m.roll_shop_id },
-            |m: &mut DoGachaInRollShopScRsp| { &mut m.roll_shop_id },
+            "DNCJDOODMLG",
+            |m: &DoGachaInRollShopScRsp| { &m.DNCJDOODMLG },
+            |m: &mut DoGachaInRollShopScRsp| { &mut m.DNCJDOODMLG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "AECJKNIGHJK",
+            |m: &DoGachaInRollShopScRsp| { &m.AECJKNIGHJK },
+            |m: &mut DoGachaInRollShopScRsp| { &mut m.AECJKNIGHJK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GMMLAIMHMMB",
-            |m: &DoGachaInRollShopScRsp| { &m.GMMLAIMHMMB },
-            |m: &mut DoGachaInRollShopScRsp| { &mut m.GMMLAIMHMMB },
+            "BGNKMLPOHGH",
+            |m: &DoGachaInRollShopScRsp| { &m.BGNKMLPOHGH },
+            |m: &mut DoGachaInRollShopScRsp| { &mut m.BGNKMLPOHGH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DoGachaInRollShopScRsp>(
             "DoGachaInRollShopScRsp",
@@ -101,20 +101,20 @@ impl ::protobuf::Message for DoGachaInRollShopScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
-                },
-                80 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
-                96 => {
-                    self.ordering_index = is.read_uint32()?;
+                112 => {
+                    self.PKGLPDHBHCI = is.read_uint32()?;
                 },
-                8 => {
-                    self.roll_shop_id = is.read_uint32()?;
+                64 => {
+                    self.DNCJDOODMLG = is.read_uint32()?;
                 },
-                120 => {
-                    self.GMMLAIMHMMB = is.read_uint32()?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AECJKNIGHJK)?;
+                },
+                88 => {
+                    self.BGNKMLPOHGH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,21 +128,21 @@ impl ::protobuf::Message for DoGachaInRollShopScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.reward.as_ref() {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+        }
+        if self.PKGLPDHBHCI != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.PKGLPDHBHCI);
+        }
+        if self.DNCJDOODMLG != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.DNCJDOODMLG);
+        }
+        if let Some(v) = self.AECJKNIGHJK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
-        }
-        if self.ordering_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.ordering_index);
-        }
-        if self.roll_shop_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.roll_shop_id);
-        }
-        if self.GMMLAIMHMMB != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.GMMLAIMHMMB);
+        if self.BGNKMLPOHGH != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.BGNKMLPOHGH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,20 +150,20 @@ impl ::protobuf::Message for DoGachaInRollShopScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
-        if self.ordering_index != 0 {
-            os.write_uint32(12, self.ordering_index)?;
+        if self.PKGLPDHBHCI != 0 {
+            os.write_uint32(14, self.PKGLPDHBHCI)?;
         }
-        if self.roll_shop_id != 0 {
-            os.write_uint32(1, self.roll_shop_id)?;
+        if self.DNCJDOODMLG != 0 {
+            os.write_uint32(8, self.DNCJDOODMLG)?;
         }
-        if self.GMMLAIMHMMB != 0 {
-            os.write_uint32(15, self.GMMLAIMHMMB)?;
+        if let Some(v) = self.AECJKNIGHJK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        }
+        if self.BGNKMLPOHGH != 0 {
+            os.write_uint32(11, self.BGNKMLPOHGH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,21 +182,21 @@ impl ::protobuf::Message for DoGachaInRollShopScRsp {
     }
 
     fn clear(&mut self) {
-        self.reward.clear();
         self.retcode = 0;
-        self.ordering_index = 0;
-        self.roll_shop_id = 0;
-        self.GMMLAIMHMMB = 0;
+        self.PKGLPDHBHCI = 0;
+        self.DNCJDOODMLG = 0;
+        self.AECJKNIGHJK.clear();
+        self.BGNKMLPOHGH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DoGachaInRollShopScRsp {
         static instance: DoGachaInRollShopScRsp = DoGachaInRollShopScRsp {
-            reward: ::protobuf::MessageField::none(),
             retcode: 0,
-            ordering_index: 0,
-            roll_shop_id: 0,
-            GMMLAIMHMMB: 0,
+            PKGLPDHBHCI: 0,
+            DNCJDOODMLG: 0,
+            AECJKNIGHJK: ::protobuf::MessageField::none(),
+            BGNKMLPOHGH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,12 +221,12 @@ impl ::protobuf::reflect::ProtobufValue for DoGachaInRollShopScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cDoGachaInRollShopScRsp.proto\x1a\x0eItemList.proto\"\xc0\x01\n\x16\
-    DoGachaInRollShopScRsp\x12!\n\x06reward\x18\r\x20\x01(\x0b2\t.ItemListR\
-    \x06reward\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcode\x12%\n\x0eo\
-    rdering_index\x18\x0c\x20\x01(\rR\rorderingIndex\x12\x20\n\x0croll_shop_\
-    id\x18\x01\x20\x01(\rR\nrollShopId\x12\x20\n\x0bGMMLAIMHMMB\x18\x0f\x20\
-    \x01(\rR\x0bGMMLAIMHMMBB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x1cDoGachaInRollShopScRsp.proto\x1a\x0eItemList.proto\"\xc5\x01\n\x16\
+    DoGachaInRollShopScRsp\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retco\
+    de\x12\x20\n\x0bPKGLPDHBHCI\x18\x0e\x20\x01(\rR\x0bPKGLPDHBHCI\x12\x20\n\
+    \x0bDNCJDOODMLG\x18\x08\x20\x01(\rR\x0bDNCJDOODMLG\x12+\n\x0bAECJKNIGHJK\
+    \x18\x04\x20\x01(\x0b2\t.ItemListR\x0bAECJKNIGHJK\x12\x20\n\x0bBGNKMLPOH\
+    GH\x18\x0b\x20\x01(\rR\x0bBGNKMLPOHGHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

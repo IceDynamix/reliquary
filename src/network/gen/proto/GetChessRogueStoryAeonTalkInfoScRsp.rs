@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetChessRogueStoryAeonTalkInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetChessRogueStoryAeonTalkInfoScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:GetChessRogueStoryAeonTalkInfoScRsp.NGLOKPIBFPN)
-    pub NGLOKPIBFPN: u32,
-    // @@protoc_insertion_point(field:GetChessRogueStoryAeonTalkInfoScRsp.MIDPEPGGJEL)
-    pub MIDPEPGGJEL: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:GetChessRogueStoryAeonTalkInfoScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetChessRogueStoryAeonTalkInfoScRsp.OAMJLNBOLEG)
+    pub OAMJLNBOLEG: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:GetChessRogueStoryAeonTalkInfoScRsp.MDOBIPHNABD)
+    pub MDOBIPHNABD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetChessRogueStoryAeonTalkInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl GetChessRogueStoryAeonTalkInfoScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &GetChessRogueStoryAeonTalkInfoScRsp| { &m.ADADHIHDHJC },
-            |m: &mut GetChessRogueStoryAeonTalkInfoScRsp| { &mut m.ADADHIHDHJC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NGLOKPIBFPN",
-            |m: &GetChessRogueStoryAeonTalkInfoScRsp| { &m.NGLOKPIBFPN },
-            |m: &mut GetChessRogueStoryAeonTalkInfoScRsp| { &mut m.NGLOKPIBFPN },
+            "retcode",
+            |m: &GetChessRogueStoryAeonTalkInfoScRsp| { &m.retcode },
+            |m: &mut GetChessRogueStoryAeonTalkInfoScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor::<_, _, _>(
-            "MIDPEPGGJEL",
-            |m: &GetChessRogueStoryAeonTalkInfoScRsp| { &m.MIDPEPGGJEL },
-            |m: &mut GetChessRogueStoryAeonTalkInfoScRsp| { &mut m.MIDPEPGGJEL },
+            "OAMJLNBOLEG",
+            |m: &GetChessRogueStoryAeonTalkInfoScRsp| { &m.OAMJLNBOLEG },
+            |m: &mut GetChessRogueStoryAeonTalkInfoScRsp| { &mut m.OAMJLNBOLEG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MDOBIPHNABD",
+            |m: &GetChessRogueStoryAeonTalkInfoScRsp| { &m.MDOBIPHNABD },
+            |m: &mut GetChessRogueStoryAeonTalkInfoScRsp| { &mut m.MDOBIPHNABD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetChessRogueStoryAeonTalkInfoScRsp>(
             "GetChessRogueStoryAeonTalkInfoScRsp",
@@ -87,13 +87,10 @@ impl ::protobuf::Message for GetChessRogueStoryAeonTalkInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                120 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                24 => {
-                    self.NGLOKPIBFPN = is.read_uint32()?;
-                },
-                90 => {
+                50 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -106,7 +103,10 @@ impl ::protobuf::Message for GetChessRogueStoryAeonTalkInfoScRsp {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.MIDPEPGGJEL.insert(key, value);
+                    self.OAMJLNBOLEG.insert(key, value);
+                },
+                88 => {
+                    self.MDOBIPHNABD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,39 +120,39 @@ impl ::protobuf::Message for GetChessRogueStoryAeonTalkInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.ADADHIHDHJC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
-        if self.NGLOKPIBFPN != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.NGLOKPIBFPN);
-        }
-        for (k, v) in &self.MIDPEPGGJEL {
+        for (k, v) in &self.OAMJLNBOLEG {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
+        if self.MDOBIPHNABD != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.MDOBIPHNABD);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(12, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(15, self.retcode)?;
         }
-        if self.NGLOKPIBFPN != 0 {
-            os.write_uint32(3, self.NGLOKPIBFPN)?;
-        }
-        for (k, v) in &self.MIDPEPGGJEL {
+        for (k, v) in &self.OAMJLNBOLEG {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(90)?; // Tag.
+            os.write_raw_varint32(50)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
+        if self.MDOBIPHNABD != 0 {
+            os.write_uint32(11, self.MDOBIPHNABD)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -170,9 +170,9 @@ impl ::protobuf::Message for GetChessRogueStoryAeonTalkInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADADHIHDHJC = 0;
-        self.NGLOKPIBFPN = 0;
-        self.MIDPEPGGJEL.clear();
+        self.retcode = 0;
+        self.OAMJLNBOLEG.clear();
+        self.MDOBIPHNABD = 0;
         self.special_fields.clear();
     }
 
@@ -200,13 +200,13 @@ impl ::protobuf::reflect::ProtobufValue for GetChessRogueStoryAeonTalkInfoScRsp 
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n)GetChessRogueStoryAeonTalkInfoScRsp.proto\"\x82\x02\n#GetChessRogueSt\
-    oryAeonTalkInfoScRsp\x12\x20\n\x0bADADHIHDHJC\x18\x0c\x20\x01(\rR\x0bADA\
-    DHIHDHJC\x12\x20\n\x0bNGLOKPIBFPN\x18\x03\x20\x01(\rR\x0bNGLOKPIBFPN\x12\
-    W\n\x0bMIDPEPGGJEL\x18\x0b\x20\x03(\x0b25.GetChessRogueStoryAeonTalkInfo\
-    ScRsp.MIDPEPGGJELEntryR\x0bMIDPEPGGJEL\x1a>\n\x10MIDPEPGGJELEntry\x12\
-    \x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\
-    \x01(\rR\x05value:\x028\x01b\x06proto3\
+    \n)GetChessRogueStoryAeonTalkInfoScRsp.proto\"\xfa\x01\n#GetChessRogueSt\
+    oryAeonTalkInfoScRsp\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcode\
+    \x12W\n\x0bOAMJLNBOLEG\x18\x06\x20\x03(\x0b25.GetChessRogueStoryAeonTalk\
+    InfoScRsp.OAMJLNBOLEGEntryR\x0bOAMJLNBOLEG\x12\x20\n\x0bMDOBIPHNABD\x18\
+    \x0b\x20\x01(\rR\x0bMDOBIPHNABD\x1a>\n\x10OAMJLNBOLEGEntry\x12\x10\n\x03\
+    key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\
+    \x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

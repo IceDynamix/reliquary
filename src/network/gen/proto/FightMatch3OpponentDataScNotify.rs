@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightMatch3OpponentDataScNotify {
     // message fields
-    // @@protoc_insertion_point(field:FightMatch3OpponentDataScNotify.APKEFKGPHIE)
-    pub APKEFKGPHIE: ::protobuf::EnumOrUnknown<super::EOFOHACMKEP::EOFOHACMKEP>,
-    // @@protoc_insertion_point(field:FightMatch3OpponentDataScNotify.KBNIFCHMAOB)
-    pub KBNIFCHMAOB: u32,
-    // @@protoc_insertion_point(field:FightMatch3OpponentDataScNotify.FCLNEEKGEJF)
-    pub FCLNEEKGEJF: u32,
-    // @@protoc_insertion_point(field:FightMatch3OpponentDataScNotify.OFAGGKBMPJN)
-    pub OFAGGKBMPJN: u32,
-    // @@protoc_insertion_point(field:FightMatch3OpponentDataScNotify.IDGGIBBPPLK)
-    pub IDGGIBBPPLK: u32,
+    // @@protoc_insertion_point(field:FightMatch3OpponentDataScNotify.AMMLLHIPCJD)
+    pub AMMLLHIPCJD: ::protobuf::EnumOrUnknown<super::CKMJGCGAEEI::CKMJGCGAEEI>,
+    // @@protoc_insertion_point(field:FightMatch3OpponentDataScNotify.HHLBDGMIBNP)
+    pub HHLBDGMIBNP: u32,
+    // @@protoc_insertion_point(field:FightMatch3OpponentDataScNotify.OHLNDHCKIOM)
+    pub OHLNDHCKIOM: u32,
+    // @@protoc_insertion_point(field:FightMatch3OpponentDataScNotify.DBCEMIIFOMI)
+    pub DBCEMIIFOMI: u32,
+    // @@protoc_insertion_point(field:FightMatch3OpponentDataScNotify.BCBJKKAOJHL)
+    pub BCBJKKAOJHL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FightMatch3OpponentDataScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,29 +59,29 @@ impl FightMatch3OpponentDataScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "APKEFKGPHIE",
-            |m: &FightMatch3OpponentDataScNotify| { &m.APKEFKGPHIE },
-            |m: &mut FightMatch3OpponentDataScNotify| { &mut m.APKEFKGPHIE },
+            "AMMLLHIPCJD",
+            |m: &FightMatch3OpponentDataScNotify| { &m.AMMLLHIPCJD },
+            |m: &mut FightMatch3OpponentDataScNotify| { &mut m.AMMLLHIPCJD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KBNIFCHMAOB",
-            |m: &FightMatch3OpponentDataScNotify| { &m.KBNIFCHMAOB },
-            |m: &mut FightMatch3OpponentDataScNotify| { &mut m.KBNIFCHMAOB },
+            "HHLBDGMIBNP",
+            |m: &FightMatch3OpponentDataScNotify| { &m.HHLBDGMIBNP },
+            |m: &mut FightMatch3OpponentDataScNotify| { &mut m.HHLBDGMIBNP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FCLNEEKGEJF",
-            |m: &FightMatch3OpponentDataScNotify| { &m.FCLNEEKGEJF },
-            |m: &mut FightMatch3OpponentDataScNotify| { &mut m.FCLNEEKGEJF },
+            "OHLNDHCKIOM",
+            |m: &FightMatch3OpponentDataScNotify| { &m.OHLNDHCKIOM },
+            |m: &mut FightMatch3OpponentDataScNotify| { &mut m.OHLNDHCKIOM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OFAGGKBMPJN",
-            |m: &FightMatch3OpponentDataScNotify| { &m.OFAGGKBMPJN },
-            |m: &mut FightMatch3OpponentDataScNotify| { &mut m.OFAGGKBMPJN },
+            "DBCEMIIFOMI",
+            |m: &FightMatch3OpponentDataScNotify| { &m.DBCEMIIFOMI },
+            |m: &mut FightMatch3OpponentDataScNotify| { &mut m.DBCEMIIFOMI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IDGGIBBPPLK",
-            |m: &FightMatch3OpponentDataScNotify| { &m.IDGGIBBPPLK },
-            |m: &mut FightMatch3OpponentDataScNotify| { &mut m.IDGGIBBPPLK },
+            "BCBJKKAOJHL",
+            |m: &FightMatch3OpponentDataScNotify| { &m.BCBJKKAOJHL },
+            |m: &mut FightMatch3OpponentDataScNotify| { &mut m.BCBJKKAOJHL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightMatch3OpponentDataScNotify>(
             "FightMatch3OpponentDataScNotify",
@@ -102,19 +102,19 @@ impl ::protobuf::Message for FightMatch3OpponentDataScNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.APKEFKGPHIE = is.read_enum_or_unknown()?;
+                    self.AMMLLHIPCJD = is.read_enum_or_unknown()?;
                 },
-                120 => {
-                    self.KBNIFCHMAOB = is.read_uint32()?;
+                24 => {
+                    self.HHLBDGMIBNP = is.read_uint32()?;
                 },
-                64 => {
-                    self.FCLNEEKGEJF = is.read_uint32()?;
-                },
-                104 => {
-                    self.OFAGGKBMPJN = is.read_uint32()?;
+                16 => {
+                    self.OHLNDHCKIOM = is.read_uint32()?;
                 },
                 32 => {
-                    self.IDGGIBBPPLK = is.read_uint32()?;
+                    self.DBCEMIIFOMI = is.read_uint32()?;
+                },
+                64 => {
+                    self.BCBJKKAOJHL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,20 +128,20 @@ impl ::protobuf::Message for FightMatch3OpponentDataScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.APKEFKGPHIE != ::protobuf::EnumOrUnknown::new(super::EOFOHACMKEP::EOFOHACMKEP::MATCH3_PLAYER_STATE_ALIVE) {
-            my_size += ::protobuf::rt::int32_size(1, self.APKEFKGPHIE.value());
+        if self.AMMLLHIPCJD != ::protobuf::EnumOrUnknown::new(super::CKMJGCGAEEI::CKMJGCGAEEI::MATCH3_PLAYER_STATE_ALIVE) {
+            my_size += ::protobuf::rt::int32_size(1, self.AMMLLHIPCJD.value());
         }
-        if self.KBNIFCHMAOB != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.KBNIFCHMAOB);
+        if self.HHLBDGMIBNP != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.HHLBDGMIBNP);
         }
-        if self.FCLNEEKGEJF != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.FCLNEEKGEJF);
+        if self.OHLNDHCKIOM != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.OHLNDHCKIOM);
         }
-        if self.OFAGGKBMPJN != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.OFAGGKBMPJN);
+        if self.DBCEMIIFOMI != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.DBCEMIIFOMI);
         }
-        if self.IDGGIBBPPLK != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.IDGGIBBPPLK);
+        if self.BCBJKKAOJHL != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.BCBJKKAOJHL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for FightMatch3OpponentDataScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.APKEFKGPHIE != ::protobuf::EnumOrUnknown::new(super::EOFOHACMKEP::EOFOHACMKEP::MATCH3_PLAYER_STATE_ALIVE) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.APKEFKGPHIE))?;
+        if self.AMMLLHIPCJD != ::protobuf::EnumOrUnknown::new(super::CKMJGCGAEEI::CKMJGCGAEEI::MATCH3_PLAYER_STATE_ALIVE) {
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.AMMLLHIPCJD))?;
         }
-        if self.KBNIFCHMAOB != 0 {
-            os.write_uint32(15, self.KBNIFCHMAOB)?;
+        if self.HHLBDGMIBNP != 0 {
+            os.write_uint32(3, self.HHLBDGMIBNP)?;
         }
-        if self.FCLNEEKGEJF != 0 {
-            os.write_uint32(8, self.FCLNEEKGEJF)?;
+        if self.OHLNDHCKIOM != 0 {
+            os.write_uint32(2, self.OHLNDHCKIOM)?;
         }
-        if self.OFAGGKBMPJN != 0 {
-            os.write_uint32(13, self.OFAGGKBMPJN)?;
+        if self.DBCEMIIFOMI != 0 {
+            os.write_uint32(4, self.DBCEMIIFOMI)?;
         }
-        if self.IDGGIBBPPLK != 0 {
-            os.write_uint32(4, self.IDGGIBBPPLK)?;
+        if self.BCBJKKAOJHL != 0 {
+            os.write_uint32(8, self.BCBJKKAOJHL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for FightMatch3OpponentDataScNotify {
     }
 
     fn clear(&mut self) {
-        self.APKEFKGPHIE = ::protobuf::EnumOrUnknown::new(super::EOFOHACMKEP::EOFOHACMKEP::MATCH3_PLAYER_STATE_ALIVE);
-        self.KBNIFCHMAOB = 0;
-        self.FCLNEEKGEJF = 0;
-        self.OFAGGKBMPJN = 0;
-        self.IDGGIBBPPLK = 0;
+        self.AMMLLHIPCJD = ::protobuf::EnumOrUnknown::new(super::CKMJGCGAEEI::CKMJGCGAEEI::MATCH3_PLAYER_STATE_ALIVE);
+        self.HHLBDGMIBNP = 0;
+        self.OHLNDHCKIOM = 0;
+        self.DBCEMIIFOMI = 0;
+        self.BCBJKKAOJHL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightMatch3OpponentDataScNotify {
         static instance: FightMatch3OpponentDataScNotify = FightMatch3OpponentDataScNotify {
-            APKEFKGPHIE: ::protobuf::EnumOrUnknown::from_i32(0),
-            KBNIFCHMAOB: 0,
-            FCLNEEKGEJF: 0,
-            OFAGGKBMPJN: 0,
-            IDGGIBBPPLK: 0,
+            AMMLLHIPCJD: ::protobuf::EnumOrUnknown::from_i32(0),
+            HHLBDGMIBNP: 0,
+            OHLNDHCKIOM: 0,
+            DBCEMIIFOMI: 0,
+            BCBJKKAOJHL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,12 +220,12 @@ impl ::protobuf::reflect::ProtobufValue for FightMatch3OpponentDataScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n%FightMatch3OpponentDataScNotify.proto\x1a\x11EOFOHACMKEP.proto\"\xd9\
-    \x01\n\x1fFightMatch3OpponentDataScNotify\x12.\n\x0bAPKEFKGPHIE\x18\x01\
-    \x20\x01(\x0e2\x0c.EOFOHACMKEPR\x0bAPKEFKGPHIE\x12\x20\n\x0bKBNIFCHMAOB\
-    \x18\x0f\x20\x01(\rR\x0bKBNIFCHMAOB\x12\x20\n\x0bFCLNEEKGEJF\x18\x08\x20\
-    \x01(\rR\x0bFCLNEEKGEJF\x12\x20\n\x0bOFAGGKBMPJN\x18\r\x20\x01(\rR\x0bOF\
-    AGGKBMPJN\x12\x20\n\x0bIDGGIBBPPLK\x18\x04\x20\x01(\rR\x0bIDGGIBBPPLKb\
+    \n%FightMatch3OpponentDataScNotify.proto\x1a\x11CKMJGCGAEEI.proto\"\xd9\
+    \x01\n\x1fFightMatch3OpponentDataScNotify\x12.\n\x0bAMMLLHIPCJD\x18\x01\
+    \x20\x01(\x0e2\x0c.CKMJGCGAEEIR\x0bAMMLLHIPCJD\x12\x20\n\x0bHHLBDGMIBNP\
+    \x18\x03\x20\x01(\rR\x0bHHLBDGMIBNP\x12\x20\n\x0bOHLNDHCKIOM\x18\x02\x20\
+    \x01(\rR\x0bOHLNDHCKIOM\x12\x20\n\x0bDBCEMIIFOMI\x18\x04\x20\x01(\rR\x0b\
+    DBCEMIIFOMI\x12\x20\n\x0bBCBJKKAOJHL\x18\x08\x20\x01(\rR\x0bBCBJKKAOJHLb\
     \x06proto3\
 ";
 
@@ -244,7 +244,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::EOFOHACMKEP::file_descriptor().clone());
+            deps.push(super::CKMJGCGAEEI::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FightMatch3OpponentDataScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

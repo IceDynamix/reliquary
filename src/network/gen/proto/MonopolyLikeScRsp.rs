@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyLikeScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyLikeScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:MonopolyLikeScRsp.EIHNMCKNPAP)
-    pub EIHNMCKNPAP: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:MonopolyLikeScRsp.ICFEEGEIIOB)
-    pub ICFEEGEIIOB: u32,
+    // @@protoc_insertion_point(field:MonopolyLikeScRsp.KOLMAFOILEK)
+    pub KOLMAFOILEK: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:MonopolyLikeScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:MonopolyLikeScRsp.HJAOHLGPOCP)
+    pub HJAOHLGPOCP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyLikeScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl MonopolyLikeScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &MonopolyLikeScRsp| { &m.ADADHIHDHJC },
-            |m: &mut MonopolyLikeScRsp| { &mut m.ADADHIHDHJC },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "EIHNMCKNPAP",
-            |m: &MonopolyLikeScRsp| { &m.EIHNMCKNPAP },
-            |m: &mut MonopolyLikeScRsp| { &mut m.EIHNMCKNPAP },
+            "KOLMAFOILEK",
+            |m: &MonopolyLikeScRsp| { &m.KOLMAFOILEK },
+            |m: &mut MonopolyLikeScRsp| { &mut m.KOLMAFOILEK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ICFEEGEIIOB",
-            |m: &MonopolyLikeScRsp| { &m.ICFEEGEIIOB },
-            |m: &mut MonopolyLikeScRsp| { &mut m.ICFEEGEIIOB },
+            "retcode",
+            |m: &MonopolyLikeScRsp| { &m.retcode },
+            |m: &mut MonopolyLikeScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HJAOHLGPOCP",
+            |m: &MonopolyLikeScRsp| { &m.HJAOHLGPOCP },
+            |m: &mut MonopolyLikeScRsp| { &mut m.HJAOHLGPOCP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyLikeScRsp>(
             "MonopolyLikeScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for MonopolyLikeScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KOLMAFOILEK)?;
                 },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EIHNMCKNPAP)?;
+                104 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                16 => {
-                    self.ICFEEGEIIOB = is.read_uint32()?;
+                112 => {
+                    self.HJAOHLGPOCP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +108,15 @@ impl ::protobuf::Message for MonopolyLikeScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.ADADHIHDHJC);
-        }
-        if let Some(v) = self.EIHNMCKNPAP.as_ref() {
+        if let Some(v) = self.KOLMAFOILEK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.ICFEEGEIIOB != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.ICFEEGEIIOB);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+        }
+        if self.HJAOHLGPOCP != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.HJAOHLGPOCP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for MonopolyLikeScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(12, self.ADADHIHDHJC)?;
+        if let Some(v) = self.KOLMAFOILEK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
-        if let Some(v) = self.EIHNMCKNPAP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(13, self.retcode)?;
         }
-        if self.ICFEEGEIIOB != 0 {
-            os.write_uint32(2, self.ICFEEGEIIOB)?;
+        if self.HJAOHLGPOCP != 0 {
+            os.write_uint32(14, self.HJAOHLGPOCP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for MonopolyLikeScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADADHIHDHJC = 0;
-        self.EIHNMCKNPAP.clear();
-        self.ICFEEGEIIOB = 0;
+        self.KOLMAFOILEK.clear();
+        self.retcode = 0;
+        self.HJAOHLGPOCP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyLikeScRsp {
         static instance: MonopolyLikeScRsp = MonopolyLikeScRsp {
-            ADADHIHDHJC: 0,
-            EIHNMCKNPAP: ::protobuf::MessageField::none(),
-            ICFEEGEIIOB: 0,
+            KOLMAFOILEK: ::protobuf::MessageField::none(),
+            retcode: 0,
+            HJAOHLGPOCP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyLikeScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17MonopolyLikeScRsp.proto\x1a\x0eItemList.proto\"\x84\x01\n\x11Monop\
-    olyLikeScRsp\x12\x20\n\x0bADADHIHDHJC\x18\x0c\x20\x01(\rR\x0bADADHIHDHJC\
-    \x12+\n\x0bEIHNMCKNPAP\x18\x04\x20\x01(\x0b2\t.ItemListR\x0bEIHNMCKNPAP\
-    \x12\x20\n\x0bICFEEGEIIOB\x18\x02\x20\x01(\rR\x0bICFEEGEIIOBb\x06proto3\
+    \n\x17MonopolyLikeScRsp.proto\x1a\x0eItemList.proto\"|\n\x11MonopolyLike\
+    ScRsp\x12+\n\x0bKOLMAFOILEK\x18\x07\x20\x01(\x0b2\t.ItemListR\x0bKOLMAFO\
+    ILEK\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x12\x20\n\x0bHJAO\
+    HLGPOCP\x18\x0e\x20\x01(\rR\x0bHJAOHLGPOCPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

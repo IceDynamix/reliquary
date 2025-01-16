@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HeliobusSnsCommentCsReq {
     // message fields
-    // @@protoc_insertion_point(field:HeliobusSnsCommentCsReq.MNDGEDMDEGF)
-    pub MNDGEDMDEGF: u32,
-    // @@protoc_insertion_point(field:HeliobusSnsCommentCsReq.IJIIPGAFKJN)
-    pub IJIIPGAFKJN: u32,
-    // @@protoc_insertion_point(field:HeliobusSnsCommentCsReq.IENGAGBCHAA)
-    pub IENGAGBCHAA: u32,
+    // @@protoc_insertion_point(field:HeliobusSnsCommentCsReq.OJDPNDCPPGF)
+    pub OJDPNDCPPGF: u32,
+    // @@protoc_insertion_point(field:HeliobusSnsCommentCsReq.LDBKMPFBCED)
+    pub LDBKMPFBCED: u32,
+    // @@protoc_insertion_point(field:HeliobusSnsCommentCsReq.EOKOLOBBJLI)
+    pub EOKOLOBBJLI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HeliobusSnsCommentCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl HeliobusSnsCommentCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MNDGEDMDEGF",
-            |m: &HeliobusSnsCommentCsReq| { &m.MNDGEDMDEGF },
-            |m: &mut HeliobusSnsCommentCsReq| { &mut m.MNDGEDMDEGF },
+            "OJDPNDCPPGF",
+            |m: &HeliobusSnsCommentCsReq| { &m.OJDPNDCPPGF },
+            |m: &mut HeliobusSnsCommentCsReq| { &mut m.OJDPNDCPPGF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IJIIPGAFKJN",
-            |m: &HeliobusSnsCommentCsReq| { &m.IJIIPGAFKJN },
-            |m: &mut HeliobusSnsCommentCsReq| { &mut m.IJIIPGAFKJN },
+            "LDBKMPFBCED",
+            |m: &HeliobusSnsCommentCsReq| { &m.LDBKMPFBCED },
+            |m: &mut HeliobusSnsCommentCsReq| { &mut m.LDBKMPFBCED },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IENGAGBCHAA",
-            |m: &HeliobusSnsCommentCsReq| { &m.IENGAGBCHAA },
-            |m: &mut HeliobusSnsCommentCsReq| { &mut m.IENGAGBCHAA },
+            "EOKOLOBBJLI",
+            |m: &HeliobusSnsCommentCsReq| { &m.EOKOLOBBJLI },
+            |m: &mut HeliobusSnsCommentCsReq| { &mut m.EOKOLOBBJLI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HeliobusSnsCommentCsReq>(
             "HeliobusSnsCommentCsReq",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for HeliobusSnsCommentCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.MNDGEDMDEGF = is.read_uint32()?;
+                8 => {
+                    self.OJDPNDCPPGF = is.read_uint32()?;
                 },
-                24 => {
-                    self.IJIIPGAFKJN = is.read_uint32()?;
+                104 => {
+                    self.LDBKMPFBCED = is.read_uint32()?;
                 },
-                40 => {
-                    self.IENGAGBCHAA = is.read_uint32()?;
+                88 => {
+                    self.EOKOLOBBJLI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for HeliobusSnsCommentCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MNDGEDMDEGF != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.MNDGEDMDEGF);
+        if self.OJDPNDCPPGF != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.OJDPNDCPPGF);
         }
-        if self.IJIIPGAFKJN != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.IJIIPGAFKJN);
+        if self.LDBKMPFBCED != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.LDBKMPFBCED);
         }
-        if self.IENGAGBCHAA != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.IENGAGBCHAA);
+        if self.EOKOLOBBJLI != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.EOKOLOBBJLI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for HeliobusSnsCommentCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MNDGEDMDEGF != 0 {
-            os.write_uint32(15, self.MNDGEDMDEGF)?;
+        if self.OJDPNDCPPGF != 0 {
+            os.write_uint32(1, self.OJDPNDCPPGF)?;
         }
-        if self.IJIIPGAFKJN != 0 {
-            os.write_uint32(3, self.IJIIPGAFKJN)?;
+        if self.LDBKMPFBCED != 0 {
+            os.write_uint32(13, self.LDBKMPFBCED)?;
         }
-        if self.IENGAGBCHAA != 0 {
-            os.write_uint32(5, self.IENGAGBCHAA)?;
+        if self.EOKOLOBBJLI != 0 {
+            os.write_uint32(11, self.EOKOLOBBJLI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for HeliobusSnsCommentCsReq {
     }
 
     fn clear(&mut self) {
-        self.MNDGEDMDEGF = 0;
-        self.IJIIPGAFKJN = 0;
-        self.IENGAGBCHAA = 0;
+        self.OJDPNDCPPGF = 0;
+        self.LDBKMPFBCED = 0;
+        self.EOKOLOBBJLI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HeliobusSnsCommentCsReq {
         static instance: HeliobusSnsCommentCsReq = HeliobusSnsCommentCsReq {
-            MNDGEDMDEGF: 0,
-            IJIIPGAFKJN: 0,
-            IENGAGBCHAA: 0,
+            OJDPNDCPPGF: 0,
+            LDBKMPFBCED: 0,
+            EOKOLOBBJLI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for HeliobusSnsCommentCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dHeliobusSnsCommentCsReq.proto\"\x7f\n\x17HeliobusSnsCommentCsReq\
-    \x12\x20\n\x0bMNDGEDMDEGF\x18\x0f\x20\x01(\rR\x0bMNDGEDMDEGF\x12\x20\n\
-    \x0bIJIIPGAFKJN\x18\x03\x20\x01(\rR\x0bIJIIPGAFKJN\x12\x20\n\x0bIENGAGBC\
-    HAA\x18\x05\x20\x01(\rR\x0bIENGAGBCHAAb\x06proto3\
+    \x12\x20\n\x0bOJDPNDCPPGF\x18\x01\x20\x01(\rR\x0bOJDPNDCPPGF\x12\x20\n\
+    \x0bLDBKMPFBCED\x18\r\x20\x01(\rR\x0bLDBKMPFBCED\x12\x20\n\x0bEOKOLOBBJL\
+    I\x18\x0b\x20\x01(\rR\x0bEOKOLOBBJLIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetLineupNameCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetLineupNameCsReq.index)
-    pub index: u32,
-    // @@protoc_insertion_point(field:SetLineupNameCsReq.name)
-    pub name: ::std::string::String,
+    // @@protoc_insertion_point(field:SetLineupNameCsReq.JALCDONPFMC)
+    pub JALCDONPFMC: ::std::string::String,
+    // @@protoc_insertion_point(field:SetLineupNameCsReq.ICCIODCOABK)
+    pub ICCIODCOABK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SetLineupNameCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl SetLineupNameCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "index",
-            |m: &SetLineupNameCsReq| { &m.index },
-            |m: &mut SetLineupNameCsReq| { &mut m.index },
+            "JALCDONPFMC",
+            |m: &SetLineupNameCsReq| { &m.JALCDONPFMC },
+            |m: &mut SetLineupNameCsReq| { &mut m.JALCDONPFMC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "name",
-            |m: &SetLineupNameCsReq| { &m.name },
-            |m: &mut SetLineupNameCsReq| { &mut m.name },
+            "ICCIODCOABK",
+            |m: &SetLineupNameCsReq| { &m.ICCIODCOABK },
+            |m: &mut SetLineupNameCsReq| { &mut m.ICCIODCOABK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetLineupNameCsReq>(
             "SetLineupNameCsReq",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for SetLineupNameCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.index = is.read_uint32()?;
+                18 => {
+                    self.JALCDONPFMC = is.read_string()?;
                 },
-                106 => {
-                    self.name = is.read_string()?;
+                24 => {
+                    self.ICCIODCOABK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for SetLineupNameCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.index != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.index);
+        if !self.JALCDONPFMC.is_empty() {
+            my_size += ::protobuf::rt::string_size(2, &self.JALCDONPFMC);
         }
-        if !self.name.is_empty() {
-            my_size += ::protobuf::rt::string_size(13, &self.name);
+        if self.ICCIODCOABK != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.ICCIODCOABK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for SetLineupNameCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.index != 0 {
-            os.write_uint32(2, self.index)?;
+        if !self.JALCDONPFMC.is_empty() {
+            os.write_string(2, &self.JALCDONPFMC)?;
         }
-        if !self.name.is_empty() {
-            os.write_string(13, &self.name)?;
+        if self.ICCIODCOABK != 0 {
+            os.write_uint32(3, self.ICCIODCOABK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for SetLineupNameCsReq {
     }
 
     fn clear(&mut self) {
-        self.index = 0;
-        self.name.clear();
+        self.JALCDONPFMC.clear();
+        self.ICCIODCOABK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetLineupNameCsReq {
         static instance: SetLineupNameCsReq = SetLineupNameCsReq {
-            index: 0,
-            name: ::std::string::String::new(),
+            JALCDONPFMC: ::std::string::String::new(),
+            ICCIODCOABK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for SetLineupNameCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18SetLineupNameCsReq.proto\">\n\x12SetLineupNameCsReq\x12\x14\n\x05i\
-    ndex\x18\x02\x20\x01(\rR\x05index\x12\x12\n\x04name\x18\r\x20\x01(\tR\
-    \x04nameB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x18SetLineupNameCsReq.proto\"X\n\x12SetLineupNameCsReq\x12\x20\n\x0bJ\
+    ALCDONPFMC\x18\x02\x20\x01(\tR\x0bJALCDONPFMC\x12\x20\n\x0bICCIODCOABK\
+    \x18\x03\x20\x01(\rR\x0bICCIODCOABKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

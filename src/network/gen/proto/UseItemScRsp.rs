@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UseItemScRsp {
     // message fields
-    // @@protoc_insertion_point(field:UseItemScRsp.return_data)
-    pub return_data: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:UseItemScRsp.AFIMLKGDGNJ)
-    pub AFIMLKGDGNJ: u32,
-    // @@protoc_insertion_point(field:UseItemScRsp.month_card_out_date_time)
-    pub month_card_out_date_time: u64,
-    // @@protoc_insertion_point(field:UseItemScRsp.use_item_count)
-    pub use_item_count: u32,
-    // @@protoc_insertion_point(field:UseItemScRsp.use_item_id)
-    pub use_item_id: u32,
+    // @@protoc_insertion_point(field:UseItemScRsp.AACGCNJHDPF)
+    pub AACGCNJHDPF: u32,
+    // @@protoc_insertion_point(field:UseItemScRsp.OMLLGHPOLAH)
+    pub OMLLGHPOLAH: u64,
+    // @@protoc_insertion_point(field:UseItemScRsp.KIAOMBGCLHD)
+    pub KIAOMBGCLHD: u32,
+    // @@protoc_insertion_point(field:UseItemScRsp.FONCPACJIMB)
+    pub FONCPACJIMB: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:UseItemScRsp.PBMFNJCGLBG)
+    pub PBMFNJCGLBG: u32,
     // @@protoc_insertion_point(field:UseItemScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -60,30 +60,30 @@ impl UseItemScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AACGCNJHDPF",
+            |m: &UseItemScRsp| { &m.AACGCNJHDPF },
+            |m: &mut UseItemScRsp| { &mut m.AACGCNJHDPF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OMLLGHPOLAH",
+            |m: &UseItemScRsp| { &m.OMLLGHPOLAH },
+            |m: &mut UseItemScRsp| { &mut m.OMLLGHPOLAH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KIAOMBGCLHD",
+            |m: &UseItemScRsp| { &m.KIAOMBGCLHD },
+            |m: &mut UseItemScRsp| { &mut m.KIAOMBGCLHD },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "return_data",
-            |m: &UseItemScRsp| { &m.return_data },
-            |m: &mut UseItemScRsp| { &mut m.return_data },
+            "FONCPACJIMB",
+            |m: &UseItemScRsp| { &m.FONCPACJIMB },
+            |m: &mut UseItemScRsp| { &mut m.FONCPACJIMB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AFIMLKGDGNJ",
-            |m: &UseItemScRsp| { &m.AFIMLKGDGNJ },
-            |m: &mut UseItemScRsp| { &mut m.AFIMLKGDGNJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "month_card_out_date_time",
-            |m: &UseItemScRsp| { &m.month_card_out_date_time },
-            |m: &mut UseItemScRsp| { &mut m.month_card_out_date_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "use_item_count",
-            |m: &UseItemScRsp| { &m.use_item_count },
-            |m: &mut UseItemScRsp| { &mut m.use_item_count },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "use_item_id",
-            |m: &UseItemScRsp| { &m.use_item_id },
-            |m: &mut UseItemScRsp| { &mut m.use_item_id },
+            "PBMFNJCGLBG",
+            |m: &UseItemScRsp| { &m.PBMFNJCGLBG },
+            |m: &mut UseItemScRsp| { &mut m.PBMFNJCGLBG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -108,22 +108,22 @@ impl ::protobuf::Message for UseItemScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.return_data)?;
+                112 => {
+                    self.AACGCNJHDPF = is.read_uint32()?;
+                },
+                40 => {
+                    self.OMLLGHPOLAH = is.read_uint64()?;
+                },
+                16 => {
+                    self.KIAOMBGCLHD = is.read_uint32()?;
+                },
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FONCPACJIMB)?;
                 },
                 120 => {
-                    self.AFIMLKGDGNJ = is.read_uint32()?;
-                },
-                72 => {
-                    self.month_card_out_date_time = is.read_uint64()?;
-                },
-                104 => {
-                    self.use_item_count = is.read_uint32()?;
+                    self.PBMFNJCGLBG = is.read_uint32()?;
                 },
                 88 => {
-                    self.use_item_id = is.read_uint32()?;
-                },
-                48 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -138,24 +138,24 @@ impl ::protobuf::Message for UseItemScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.return_data.as_ref() {
+        if self.AACGCNJHDPF != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.AACGCNJHDPF);
+        }
+        if self.OMLLGHPOLAH != 0 {
+            my_size += ::protobuf::rt::uint64_size(5, self.OMLLGHPOLAH);
+        }
+        if self.KIAOMBGCLHD != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.KIAOMBGCLHD);
+        }
+        if let Some(v) = self.FONCPACJIMB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.AFIMLKGDGNJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.AFIMLKGDGNJ);
-        }
-        if self.month_card_out_date_time != 0 {
-            my_size += ::protobuf::rt::uint64_size(9, self.month_card_out_date_time);
-        }
-        if self.use_item_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.use_item_count);
-        }
-        if self.use_item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.use_item_id);
+        if self.PBMFNJCGLBG != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.PBMFNJCGLBG);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -163,23 +163,23 @@ impl ::protobuf::Message for UseItemScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.return_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if self.AACGCNJHDPF != 0 {
+            os.write_uint32(14, self.AACGCNJHDPF)?;
         }
-        if self.AFIMLKGDGNJ != 0 {
-            os.write_uint32(15, self.AFIMLKGDGNJ)?;
+        if self.OMLLGHPOLAH != 0 {
+            os.write_uint64(5, self.OMLLGHPOLAH)?;
         }
-        if self.month_card_out_date_time != 0 {
-            os.write_uint64(9, self.month_card_out_date_time)?;
+        if self.KIAOMBGCLHD != 0 {
+            os.write_uint32(2, self.KIAOMBGCLHD)?;
         }
-        if self.use_item_count != 0 {
-            os.write_uint32(13, self.use_item_count)?;
+        if let Some(v) = self.FONCPACJIMB.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
-        if self.use_item_id != 0 {
-            os.write_uint32(11, self.use_item_id)?;
+        if self.PBMFNJCGLBG != 0 {
+            os.write_uint32(15, self.PBMFNJCGLBG)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -198,22 +198,22 @@ impl ::protobuf::Message for UseItemScRsp {
     }
 
     fn clear(&mut self) {
-        self.return_data.clear();
-        self.AFIMLKGDGNJ = 0;
-        self.month_card_out_date_time = 0;
-        self.use_item_count = 0;
-        self.use_item_id = 0;
+        self.AACGCNJHDPF = 0;
+        self.OMLLGHPOLAH = 0;
+        self.KIAOMBGCLHD = 0;
+        self.FONCPACJIMB.clear();
+        self.PBMFNJCGLBG = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UseItemScRsp {
         static instance: UseItemScRsp = UseItemScRsp {
-            return_data: ::protobuf::MessageField::none(),
-            AFIMLKGDGNJ: 0,
-            month_card_out_date_time: 0,
-            use_item_count: 0,
-            use_item_id: 0,
+            AACGCNJHDPF: 0,
+            OMLLGHPOLAH: 0,
+            KIAOMBGCLHD: 0,
+            FONCPACJIMB: ::protobuf::MessageField::none(),
+            PBMFNJCGLBG: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -239,13 +239,13 @@ impl ::protobuf::reflect::ProtobufValue for UseItemScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12UseItemScRsp.proto\x1a\x0eItemList.proto\"\xf4\x01\n\x0cUseItemScR\
-    sp\x12*\n\x0breturn_data\x18\x07\x20\x01(\x0b2\t.ItemListR\nreturnData\
-    \x12\x20\n\x0bAFIMLKGDGNJ\x18\x0f\x20\x01(\rR\x0bAFIMLKGDGNJ\x126\n\x18m\
-    onth_card_out_date_time\x18\t\x20\x01(\x04R\x14monthCardOutDateTime\x12$\
-    \n\x0euse_item_count\x18\r\x20\x01(\rR\x0cuseItemCount\x12\x1e\n\x0buse_\
-    item_id\x18\x0b\x20\x01(\rR\tuseItemId\x12\x18\n\x07retcode\x18\x06\x20\
-    \x01(\rR\x07retcodeB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x12UseItemScRsp.proto\x1a\x0eItemList.proto\"\xdd\x01\n\x0cUseItemScR\
+    sp\x12\x20\n\x0bAACGCNJHDPF\x18\x0e\x20\x01(\rR\x0bAACGCNJHDPF\x12\x20\n\
+    \x0bOMLLGHPOLAH\x18\x05\x20\x01(\x04R\x0bOMLLGHPOLAH\x12\x20\n\x0bKIAOMB\
+    GCLHD\x18\x02\x20\x01(\rR\x0bKIAOMBGCLHD\x12+\n\x0bFONCPACJIMB\x18\x0c\
+    \x20\x01(\x0b2\t.ItemListR\x0bFONCPACJIMB\x12\x20\n\x0bPBMFNJCGLBG\x18\
+    \x0f\x20\x01(\rR\x0bPBMFNJCGLBG\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\
+    \x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

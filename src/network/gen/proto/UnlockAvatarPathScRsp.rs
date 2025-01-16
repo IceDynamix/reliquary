@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UnlockAvatarPathScRsp {
     // message fields
-    // @@protoc_insertion_point(field:UnlockAvatarPathScRsp.ELPMNKHEPKJ)
-    pub ELPMNKHEPKJ: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:UnlockAvatarPathScRsp.DHPDHGHAEOP)
-    pub DHPDHGHAEOP: ::protobuf::EnumOrUnknown<super::MultiPathAvatarType::MultiPathAvatarType>,
-    // @@protoc_insertion_point(field:UnlockAvatarPathScRsp.GJBABBMIDPL)
-    pub GJBABBMIDPL: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:UnlockAvatarPathScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:UnlockAvatarPathScRsp.avatar_id)
+    pub avatar_id: ::protobuf::EnumOrUnknown<super::MultiPathAvatarType::MultiPathAvatarType>,
+    // @@protoc_insertion_point(field:UnlockAvatarPathScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:UnlockAvatarPathScRsp.AECJKNIGHJK)
+    pub AECJKNIGHJK: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:UnlockAvatarPathScRsp.basic_type_id_list)
+    pub basic_type_id_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:UnlockAvatarPathScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,25 +56,25 @@ impl UnlockAvatarPathScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "ELPMNKHEPKJ",
-            |m: &UnlockAvatarPathScRsp| { &m.ELPMNKHEPKJ },
-            |m: &mut UnlockAvatarPathScRsp| { &mut m.ELPMNKHEPKJ },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "avatar_id",
+            |m: &UnlockAvatarPathScRsp| { &m.avatar_id },
+            |m: &mut UnlockAvatarPathScRsp| { &mut m.avatar_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DHPDHGHAEOP",
-            |m: &UnlockAvatarPathScRsp| { &m.DHPDHGHAEOP },
-            |m: &mut UnlockAvatarPathScRsp| { &mut m.DHPDHGHAEOP },
+            "retcode",
+            |m: &UnlockAvatarPathScRsp| { &m.retcode },
+            |m: &mut UnlockAvatarPathScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "AECJKNIGHJK",
+            |m: &UnlockAvatarPathScRsp| { &m.AECJKNIGHJK },
+            |m: &mut UnlockAvatarPathScRsp| { &mut m.AECJKNIGHJK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GJBABBMIDPL",
-            |m: &UnlockAvatarPathScRsp| { &m.GJBABBMIDPL },
-            |m: &mut UnlockAvatarPathScRsp| { &mut m.GJBABBMIDPL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &UnlockAvatarPathScRsp| { &m.ADADHIHDHJC },
-            |m: &mut UnlockAvatarPathScRsp| { &mut m.ADADHIHDHJC },
+            "basic_type_id_list",
+            |m: &UnlockAvatarPathScRsp| { &m.basic_type_id_list },
+            |m: &mut UnlockAvatarPathScRsp| { &mut m.basic_type_id_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UnlockAvatarPathScRsp>(
             "UnlockAvatarPathScRsp",
@@ -94,20 +94,20 @@ impl ::protobuf::Message for UnlockAvatarPathScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                120 => {
+                    self.avatar_id = is.read_enum_or_unknown()?;
+                },
+                104 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AECJKNIGHJK)?;
+                },
                 82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ELPMNKHEPKJ)?;
+                    is.read_repeated_packed_uint32_into(&mut self.basic_type_id_list)?;
                 },
-                48 => {
-                    self.DHPDHGHAEOP = is.read_enum_or_unknown()?;
-                },
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.GJBABBMIDPL)?;
-                },
-                88 => {
-                    self.GJBABBMIDPL.push(is.read_uint32()?);
-                },
-                8 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                80 => {
+                    self.basic_type_id_list.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,37 +121,37 @@ impl ::protobuf::Message for UnlockAvatarPathScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
+        if self.avatar_id != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
+            my_size += ::protobuf::rt::int32_size(15, self.avatar_id.value());
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+        }
+        if let Some(v) = self.AECJKNIGHJK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.DHPDHGHAEOP != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
-            my_size += ::protobuf::rt::int32_size(6, self.DHPDHGHAEOP.value());
-        }
-        for value in &self.GJBABBMIDPL {
-            my_size += ::protobuf::rt::uint32_size(11, *value);
+        for value in &self.basic_type_id_list {
+            my_size += ::protobuf::rt::uint32_size(10, *value);
         };
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.ADADHIHDHJC);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.ELPMNKHEPKJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if self.avatar_id != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.avatar_id))?;
         }
-        if self.DHPDHGHAEOP != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.DHPDHGHAEOP))?;
+        if self.retcode != 0 {
+            os.write_uint32(13, self.retcode)?;
         }
-        for v in &self.GJBABBMIDPL {
-            os.write_uint32(11, *v)?;
+        if let Some(v) = self.AECJKNIGHJK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        }
+        for v in &self.basic_type_id_list {
+            os.write_uint32(10, *v)?;
         };
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(1, self.ADADHIHDHJC)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -169,19 +169,19 @@ impl ::protobuf::Message for UnlockAvatarPathScRsp {
     }
 
     fn clear(&mut self) {
-        self.ELPMNKHEPKJ.clear();
-        self.DHPDHGHAEOP = ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone);
-        self.GJBABBMIDPL.clear();
-        self.ADADHIHDHJC = 0;
+        self.avatar_id = ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone);
+        self.retcode = 0;
+        self.AECJKNIGHJK.clear();
+        self.basic_type_id_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UnlockAvatarPathScRsp {
         static instance: UnlockAvatarPathScRsp = UnlockAvatarPathScRsp {
-            ELPMNKHEPKJ: ::protobuf::MessageField::none(),
-            DHPDHGHAEOP: ::protobuf::EnumOrUnknown::from_i32(0),
-            GJBABBMIDPL: ::std::vec::Vec::new(),
-            ADADHIHDHJC: 0,
+            avatar_id: ::protobuf::EnumOrUnknown::from_i32(0),
+            retcode: 0,
+            AECJKNIGHJK: ::protobuf::MessageField::none(),
+            basic_type_id_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -207,11 +207,11 @@ impl ::protobuf::reflect::ProtobufValue for UnlockAvatarPathScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bUnlockAvatarPathScRsp.proto\x1a\x0eItemList.proto\x1a\x19MultiPath\
-    AvatarType.proto\"\xc0\x01\n\x15UnlockAvatarPathScRsp\x12+\n\x0bELPMNKHE\
-    PKJ\x18\n\x20\x01(\x0b2\t.ItemListR\x0bELPMNKHEPKJ\x126\n\x0bDHPDHGHAEOP\
-    \x18\x06\x20\x01(\x0e2\x14.MultiPathAvatarTypeR\x0bDHPDHGHAEOP\x12\x20\n\
-    \x0bGJBABBMIDPL\x18\x0b\x20\x03(\rR\x0bGJBABBMIDPL\x12\x20\n\x0bADADHIHD\
-    HJC\x18\x01\x20\x01(\rR\x0bADADHIHDHJCb\x06proto3\
+    AvatarType.proto\"\xbe\x01\n\x15UnlockAvatarPathScRsp\x121\n\tavatar_id\
+    \x18\x0f\x20\x01(\x0e2\x14.MultiPathAvatarTypeR\x08avatarId\x12\x18\n\
+    \x07retcode\x18\r\x20\x01(\rR\x07retcode\x12+\n\x0bAECJKNIGHJK\x18\x04\
+    \x20\x01(\x0b2\t.ItemListR\x0bAECJKNIGHJK\x12+\n\x12basic_type_id_list\
+    \x18\n\x20\x03(\rR\x0fbasicTypeIdListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterSectionCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EnterSectionCsReq.KBCKGKALLFF)
-    pub KBCKGKALLFF: u32,
+    // @@protoc_insertion_point(field:EnterSectionCsReq.PNBFNBHBMME)
+    pub PNBFNBHBMME: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EnterSectionCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl EnterSectionCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KBCKGKALLFF",
-            |m: &EnterSectionCsReq| { &m.KBCKGKALLFF },
-            |m: &mut EnterSectionCsReq| { &mut m.KBCKGKALLFF },
+            "PNBFNBHBMME",
+            |m: &EnterSectionCsReq| { &m.PNBFNBHBMME },
+            |m: &mut EnterSectionCsReq| { &mut m.PNBFNBHBMME },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterSectionCsReq>(
             "EnterSectionCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for EnterSectionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.KBCKGKALLFF = is.read_uint32()?;
+                72 => {
+                    self.PNBFNBHBMME = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for EnterSectionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KBCKGKALLFF != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.KBCKGKALLFF);
+        if self.PNBFNBHBMME != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.PNBFNBHBMME);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for EnterSectionCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KBCKGKALLFF != 0 {
-            os.write_uint32(2, self.KBCKGKALLFF)?;
+        if self.PNBFNBHBMME != 0 {
+            os.write_uint32(9, self.PNBFNBHBMME)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for EnterSectionCsReq {
     }
 
     fn clear(&mut self) {
-        self.KBCKGKALLFF = 0;
+        self.PNBFNBHBMME = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterSectionCsReq {
         static instance: EnterSectionCsReq = EnterSectionCsReq {
-            KBCKGKALLFF: 0,
+            PNBFNBHBMME: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for EnterSectionCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17EnterSectionCsReq.proto\"5\n\x11EnterSectionCsReq\x12\x20\n\x0bKBC\
-    KGKALLFF\x18\x02\x20\x01(\rR\x0bKBCKGKALLFFb\x06proto3\
+    \n\x17EnterSectionCsReq.proto\"5\n\x11EnterSectionCsReq\x12\x20\n\x0bPNB\
+    FNBHBMME\x18\t\x20\x01(\rR\x0bPNBFNBHBMMEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EvolveBuildCoinNotify {
     // message fields
-    // @@protoc_insertion_point(field:EvolveBuildCoinNotify.HOJJFBAEBDA)
-    pub HOJJFBAEBDA: u32,
+    // @@protoc_insertion_point(field:EvolveBuildCoinNotify.MPFMPMLGOGE)
+    pub MPFMPMLGOGE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EvolveBuildCoinNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl EvolveBuildCoinNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HOJJFBAEBDA",
-            |m: &EvolveBuildCoinNotify| { &m.HOJJFBAEBDA },
-            |m: &mut EvolveBuildCoinNotify| { &mut m.HOJJFBAEBDA },
+            "MPFMPMLGOGE",
+            |m: &EvolveBuildCoinNotify| { &m.MPFMPMLGOGE },
+            |m: &mut EvolveBuildCoinNotify| { &mut m.MPFMPMLGOGE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EvolveBuildCoinNotify>(
             "EvolveBuildCoinNotify",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for EvolveBuildCoinNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.HOJJFBAEBDA = is.read_uint32()?;
+                120 => {
+                    self.MPFMPMLGOGE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for EvolveBuildCoinNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HOJJFBAEBDA != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.HOJJFBAEBDA);
+        if self.MPFMPMLGOGE != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.MPFMPMLGOGE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for EvolveBuildCoinNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HOJJFBAEBDA != 0 {
-            os.write_uint32(12, self.HOJJFBAEBDA)?;
+        if self.MPFMPMLGOGE != 0 {
+            os.write_uint32(15, self.MPFMPMLGOGE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for EvolveBuildCoinNotify {
     }
 
     fn clear(&mut self) {
-        self.HOJJFBAEBDA = 0;
+        self.MPFMPMLGOGE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EvolveBuildCoinNotify {
         static instance: EvolveBuildCoinNotify = EvolveBuildCoinNotify {
-            HOJJFBAEBDA: 0,
+            MPFMPMLGOGE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildCoinNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bEvolveBuildCoinNotify.proto\"9\n\x15EvolveBuildCoinNotify\x12\x20\
-    \n\x0bHOJJFBAEBDA\x18\x0c\x20\x01(\rR\x0bHOJJFBAEBDAb\x06proto3\
+    \n\x0bMPFMPMLGOGE\x18\x0f\x20\x01(\rR\x0bMPFMPMLGOGEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

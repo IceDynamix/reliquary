@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartyGamePlayStartScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartyGamePlayStartScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:TrainPartyGamePlayStartScRsp.ONBLCJEGCKF)
-    pub ONBLCJEGCKF: ::protobuf::MessageField<super::MJKBNJAKOJH::MJKBNJAKOJH>,
+    // @@protoc_insertion_point(field:TrainPartyGamePlayStartScRsp.AMAENPHGGFB)
+    pub AMAENPHGGFB: ::protobuf::MessageField<super::AMNHLKNIGPJ::AMNHLKNIGPJ>,
+    // @@protoc_insertion_point(field:TrainPartyGamePlayStartScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyGamePlayStartScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,15 +52,15 @@ impl TrainPartyGamePlayStartScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &TrainPartyGamePlayStartScRsp| { &m.ADADHIHDHJC },
-            |m: &mut TrainPartyGamePlayStartScRsp| { &mut m.ADADHIHDHJC },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AMNHLKNIGPJ::AMNHLKNIGPJ>(
+            "AMAENPHGGFB",
+            |m: &TrainPartyGamePlayStartScRsp| { &m.AMAENPHGGFB },
+            |m: &mut TrainPartyGamePlayStartScRsp| { &mut m.AMAENPHGGFB },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MJKBNJAKOJH::MJKBNJAKOJH>(
-            "ONBLCJEGCKF",
-            |m: &TrainPartyGamePlayStartScRsp| { &m.ONBLCJEGCKF },
-            |m: &mut TrainPartyGamePlayStartScRsp| { &mut m.ONBLCJEGCKF },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &TrainPartyGamePlayStartScRsp| { &m.retcode },
+            |m: &mut TrainPartyGamePlayStartScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyGamePlayStartScRsp>(
             "TrainPartyGamePlayStartScRsp",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for TrainPartyGamePlayStartScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AMAENPHGGFB)?;
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ONBLCJEGCKF)?;
+                72 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,12 +98,12 @@ impl ::protobuf::Message for TrainPartyGamePlayStartScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.ADADHIHDHJC);
-        }
-        if let Some(v) = self.ONBLCJEGCKF.as_ref() {
+        if let Some(v) = self.AMAENPHGGFB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for TrainPartyGamePlayStartScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(2, self.ADADHIHDHJC)?;
+        if let Some(v) = self.AMAENPHGGFB.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
-        if let Some(v) = self.ONBLCJEGCKF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(9, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for TrainPartyGamePlayStartScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADADHIHDHJC = 0;
-        self.ONBLCJEGCKF.clear();
+        self.AMAENPHGGFB.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyGamePlayStartScRsp {
         static instance: TrainPartyGamePlayStartScRsp = TrainPartyGamePlayStartScRsp {
-            ADADHIHDHJC: 0,
-            ONBLCJEGCKF: ::protobuf::MessageField::none(),
+            AMAENPHGGFB: ::protobuf::MessageField::none(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyGamePlayStartScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"TrainPartyGamePlayStartScRsp.proto\x1a\x11MJKBNJAKOJH.proto\"p\n\x1c\
-    TrainPartyGamePlayStartScRsp\x12\x20\n\x0bADADHIHDHJC\x18\x02\x20\x01(\r\
-    R\x0bADADHIHDHJC\x12.\n\x0bONBLCJEGCKF\x18\r\x20\x01(\x0b2\x0c.MJKBNJAKO\
-    JHR\x0bONBLCJEGCKFb\x06proto3\
+    \n\"TrainPartyGamePlayStartScRsp.proto\x1a\x11AMNHLKNIGPJ.proto\"h\n\x1c\
+    TrainPartyGamePlayStartScRsp\x12.\n\x0bAMAENPHGGFB\x18\x0b\x20\x01(\x0b2\
+    \x0c.AMNHLKNIGPJR\x0bAMAENPHGGFB\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\
+    \x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::MJKBNJAKOJH::file_descriptor().clone());
+            deps.push(super::AMNHLKNIGPJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(TrainPartyGamePlayStartScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

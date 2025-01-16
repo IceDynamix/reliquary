@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueQuestFinishNotify {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueQuestFinishNotify.EOCNMIIBCNG)
-    pub EOCNMIIBCNG: u32,
-    // @@protoc_insertion_point(field:ChessRogueQuestFinishNotify.FJHBEFPHDIH)
-    pub FJHBEFPHDIH: u32,
+    // @@protoc_insertion_point(field:ChessRogueQuestFinishNotify.HCOPMGFADOO)
+    pub HCOPMGFADOO: u32,
+    // @@protoc_insertion_point(field:ChessRogueQuestFinishNotify.AMNIDDNEBAM)
+    pub AMNIDDNEBAM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueQuestFinishNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,14 +53,14 @@ impl ChessRogueQuestFinishNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EOCNMIIBCNG",
-            |m: &ChessRogueQuestFinishNotify| { &m.EOCNMIIBCNG },
-            |m: &mut ChessRogueQuestFinishNotify| { &mut m.EOCNMIIBCNG },
+            "HCOPMGFADOO",
+            |m: &ChessRogueQuestFinishNotify| { &m.HCOPMGFADOO },
+            |m: &mut ChessRogueQuestFinishNotify| { &mut m.HCOPMGFADOO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FJHBEFPHDIH",
-            |m: &ChessRogueQuestFinishNotify| { &m.FJHBEFPHDIH },
-            |m: &mut ChessRogueQuestFinishNotify| { &mut m.FJHBEFPHDIH },
+            "AMNIDDNEBAM",
+            |m: &ChessRogueQuestFinishNotify| { &m.AMNIDDNEBAM },
+            |m: &mut ChessRogueQuestFinishNotify| { &mut m.AMNIDDNEBAM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueQuestFinishNotify>(
             "ChessRogueQuestFinishNotify",
@@ -80,11 +80,11 @@ impl ::protobuf::Message for ChessRogueQuestFinishNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.EOCNMIIBCNG = is.read_uint32()?;
+                40 => {
+                    self.HCOPMGFADOO = is.read_uint32()?;
                 },
-                56 => {
-                    self.FJHBEFPHDIH = is.read_uint32()?;
+                24 => {
+                    self.AMNIDDNEBAM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +98,11 @@ impl ::protobuf::Message for ChessRogueQuestFinishNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EOCNMIIBCNG != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.EOCNMIIBCNG);
+        if self.HCOPMGFADOO != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.HCOPMGFADOO);
         }
-        if self.FJHBEFPHDIH != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.FJHBEFPHDIH);
+        if self.AMNIDDNEBAM != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.AMNIDDNEBAM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for ChessRogueQuestFinishNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EOCNMIIBCNG != 0 {
-            os.write_uint32(13, self.EOCNMIIBCNG)?;
+        if self.HCOPMGFADOO != 0 {
+            os.write_uint32(5, self.HCOPMGFADOO)?;
         }
-        if self.FJHBEFPHDIH != 0 {
-            os.write_uint32(7, self.FJHBEFPHDIH)?;
+        if self.AMNIDDNEBAM != 0 {
+            os.write_uint32(3, self.AMNIDDNEBAM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for ChessRogueQuestFinishNotify {
     }
 
     fn clear(&mut self) {
-        self.EOCNMIIBCNG = 0;
-        self.FJHBEFPHDIH = 0;
+        self.HCOPMGFADOO = 0;
+        self.AMNIDDNEBAM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueQuestFinishNotify {
         static instance: ChessRogueQuestFinishNotify = ChessRogueQuestFinishNotify {
-            EOCNMIIBCNG: 0,
-            FJHBEFPHDIH: 0,
+            HCOPMGFADOO: 0,
+            AMNIDDNEBAM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueQuestFinishNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!ChessRogueQuestFinishNotify.proto\"a\n\x1bChessRogueQuestFinishNotify\
-    \x12\x20\n\x0bEOCNMIIBCNG\x18\r\x20\x01(\rR\x0bEOCNMIIBCNG\x12\x20\n\x0b\
-    FJHBEFPHDIH\x18\x07\x20\x01(\rR\x0bFJHBEFPHDIHb\x06proto3\
+    \x12\x20\n\x0bHCOPMGFADOO\x18\x05\x20\x01(\rR\x0bHCOPMGFADOO\x12\x20\n\
+    \x0bAMNIDDNEBAM\x18\x03\x20\x01(\rR\x0bAMNIDDNEBAMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

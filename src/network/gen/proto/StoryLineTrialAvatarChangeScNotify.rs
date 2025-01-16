@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StoryLineTrialAvatarChangeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:StoryLineTrialAvatarChangeScNotify.HNELIDCNCCC)
-    pub HNELIDCNCCC: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:StoryLineTrialAvatarChangeScNotify.NLHFLLFPEHE)
-    pub NLHFLLFPEHE: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:StoryLineTrialAvatarChangeScNotify.MFFGPCCKLCG)
-    pub MFFGPCCKLCG: bool,
+    // @@protoc_insertion_point(field:StoryLineTrialAvatarChangeScNotify.AAEAAEONBOE)
+    pub AAEAAEONBOE: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:StoryLineTrialAvatarChangeScNotify.CGKFOPJCGLN)
+    pub CGKFOPJCGLN: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:StoryLineTrialAvatarChangeScNotify.CLGKLCHEOEA)
+    pub CLGKLCHEOEA: bool,
     // special fields
     // @@protoc_insertion_point(special_field:StoryLineTrialAvatarChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl StoryLineTrialAvatarChangeScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HNELIDCNCCC",
-            |m: &StoryLineTrialAvatarChangeScNotify| { &m.HNELIDCNCCC },
-            |m: &mut StoryLineTrialAvatarChangeScNotify| { &mut m.HNELIDCNCCC },
+            "AAEAAEONBOE",
+            |m: &StoryLineTrialAvatarChangeScNotify| { &m.AAEAAEONBOE },
+            |m: &mut StoryLineTrialAvatarChangeScNotify| { &mut m.AAEAAEONBOE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NLHFLLFPEHE",
-            |m: &StoryLineTrialAvatarChangeScNotify| { &m.NLHFLLFPEHE },
-            |m: &mut StoryLineTrialAvatarChangeScNotify| { &mut m.NLHFLLFPEHE },
+            "CGKFOPJCGLN",
+            |m: &StoryLineTrialAvatarChangeScNotify| { &m.CGKFOPJCGLN },
+            |m: &mut StoryLineTrialAvatarChangeScNotify| { &mut m.CGKFOPJCGLN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MFFGPCCKLCG",
-            |m: &StoryLineTrialAvatarChangeScNotify| { &m.MFFGPCCKLCG },
-            |m: &mut StoryLineTrialAvatarChangeScNotify| { &mut m.MFFGPCCKLCG },
+            "CLGKLCHEOEA",
+            |m: &StoryLineTrialAvatarChangeScNotify| { &m.CLGKLCHEOEA },
+            |m: &mut StoryLineTrialAvatarChangeScNotify| { &mut m.CLGKLCHEOEA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StoryLineTrialAvatarChangeScNotify>(
             "StoryLineTrialAvatarChangeScNotify",
@@ -88,19 +88,19 @@ impl ::protobuf::Message for StoryLineTrialAvatarChangeScNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.HNELIDCNCCC)?;
+                    is.read_repeated_packed_uint32_into(&mut self.AAEAAEONBOE)?;
                 },
                 32 => {
-                    self.HNELIDCNCCC.push(is.read_uint32()?);
+                    self.AAEAAEONBOE.push(is.read_uint32()?);
                 },
-                58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NLHFLLFPEHE)?;
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.CGKFOPJCGLN)?;
                 },
-                56 => {
-                    self.NLHFLLFPEHE.push(is.read_uint32()?);
+                88 => {
+                    self.CGKFOPJCGLN.push(is.read_uint32()?);
                 },
-                8 => {
-                    self.MFFGPCCKLCG = is.read_bool()?;
+                72 => {
+                    self.CLGKLCHEOEA = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -114,13 +114,13 @@ impl ::protobuf::Message for StoryLineTrialAvatarChangeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.HNELIDCNCCC {
+        for value in &self.AAEAAEONBOE {
             my_size += ::protobuf::rt::uint32_size(4, *value);
         };
-        for value in &self.NLHFLLFPEHE {
-            my_size += ::protobuf::rt::uint32_size(7, *value);
+        for value in &self.CGKFOPJCGLN {
+            my_size += ::protobuf::rt::uint32_size(11, *value);
         };
-        if self.MFFGPCCKLCG != false {
+        if self.CLGKLCHEOEA != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -129,14 +129,14 @@ impl ::protobuf::Message for StoryLineTrialAvatarChangeScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.HNELIDCNCCC {
+        for v in &self.AAEAAEONBOE {
             os.write_uint32(4, *v)?;
         };
-        for v in &self.NLHFLLFPEHE {
-            os.write_uint32(7, *v)?;
+        for v in &self.CGKFOPJCGLN {
+            os.write_uint32(11, *v)?;
         };
-        if self.MFFGPCCKLCG != false {
-            os.write_bool(1, self.MFFGPCCKLCG)?;
+        if self.CLGKLCHEOEA != false {
+            os.write_bool(9, self.CLGKLCHEOEA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -155,17 +155,17 @@ impl ::protobuf::Message for StoryLineTrialAvatarChangeScNotify {
     }
 
     fn clear(&mut self) {
-        self.HNELIDCNCCC.clear();
-        self.NLHFLLFPEHE.clear();
-        self.MFFGPCCKLCG = false;
+        self.AAEAAEONBOE.clear();
+        self.CGKFOPJCGLN.clear();
+        self.CLGKLCHEOEA = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StoryLineTrialAvatarChangeScNotify {
         static instance: StoryLineTrialAvatarChangeScNotify = StoryLineTrialAvatarChangeScNotify {
-            HNELIDCNCCC: ::std::vec::Vec::new(),
-            NLHFLLFPEHE: ::std::vec::Vec::new(),
-            MFFGPCCKLCG: false,
+            AAEAAEONBOE: ::std::vec::Vec::new(),
+            CGKFOPJCGLN: ::std::vec::Vec::new(),
+            CLGKLCHEOEA: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -191,9 +191,9 @@ impl ::protobuf::reflect::ProtobufValue for StoryLineTrialAvatarChangeScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(StoryLineTrialAvatarChangeScNotify.proto\"\x8a\x01\n\"StoryLineTrialA\
-    vatarChangeScNotify\x12\x20\n\x0bHNELIDCNCCC\x18\x04\x20\x03(\rR\x0bHNEL\
-    IDCNCCC\x12\x20\n\x0bNLHFLLFPEHE\x18\x07\x20\x03(\rR\x0bNLHFLLFPEHE\x12\
-    \x20\n\x0bMFFGPCCKLCG\x18\x01\x20\x01(\x08R\x0bMFFGPCCKLCGb\x06proto3\
+    vatarChangeScNotify\x12\x20\n\x0bAAEAAEONBOE\x18\x04\x20\x03(\rR\x0bAAEA\
+    AEONBOE\x12\x20\n\x0bCGKFOPJCGLN\x18\x0b\x20\x03(\rR\x0bCGKFOPJCGLN\x12\
+    \x20\n\x0bCLGKLCHEOEA\x18\t\x20\x01(\x08R\x0bCLGKLCHEOEAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

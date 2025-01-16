@@ -30,60 +30,60 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdTrainPartyType {
     // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyTypeNone)
     CmdTrainPartyTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyBuildStartStepCsReq)
-    CmdTrainPartyBuildStartStepCsReq = 8030,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyGetDataScRsp)
-    CmdTrainPartyGetDataScRsp = 8020,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyBuildingUpdateNotify)
-    CmdTrainPartyBuildingUpdateNotify = 8079,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyGamePlaySettleNotify)
-    CmdTrainPartyGamePlaySettleNotify = 8064,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyBuildDiyScRsp)
-    CmdTrainPartyBuildDiyScRsp = 8090,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyHandlePendingActionScRsp)
-    CmdTrainPartyHandlePendingActionScRsp = 8074,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyBuildDiyCsReq)
-    CmdTrainPartyBuildDiyCsReq = 8048,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyGamePlayStartCsReq)
-    CmdTrainPartyGamePlayStartCsReq = 8009,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyGamePlayStartScRsp)
-    CmdTrainPartyGamePlayStartScRsp = 8093,
     // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyBuildStartStepScRsp)
-    CmdTrainPartyBuildStartStepScRsp = 8075,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyMoveScNotify)
-    CmdTrainPartyMoveScNotify = 8039,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartySettleNotify)
-    CmdTrainPartySettleNotify = 8034,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyTakeBuildLevelAwardCsReq)
-    CmdTrainPartyTakeBuildLevelAwardCsReq = 8036,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyEnterScRsp)
-    CmdTrainPartyEnterScRsp = 8025,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyUseCardScRsp)
-    CmdTrainPartyUseCardScRsp = 8046,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyLeaveCsReq)
-    CmdTrainPartyLeaveCsReq = 8029,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyAddBuildDynamicBuffCsReq)
-    CmdTrainPartyAddBuildDynamicBuffCsReq = 8026,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyGetDataCsReq)
-    CmdTrainPartyGetDataCsReq = 8059,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartySyncUpdateScNotify)
-    CmdTrainPartySyncUpdateScNotify = 8080,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyEnterCsReq)
-    CmdTrainPartyEnterCsReq = 8061,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyLeaveScRsp)
-    CmdTrainPartyLeaveScRsp = 8033,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyUseCardCsReq)
-    CmdTrainPartyUseCardCsReq = 8003,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyTakeBuildLevelAwardScRsp)
-    CmdTrainPartyTakeBuildLevelAwardScRsp = 8065,
+    CmdTrainPartyBuildStartStepScRsp = 8025,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyGamePlayStartCsReq)
+    CmdTrainPartyGamePlayStartCsReq = 8050,
     // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyAddBuildDynamicBuffScRsp)
     CmdTrainPartyAddBuildDynamicBuffScRsp = 8013,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyUpdatePosEnvScRsp)
-    CmdTrainPartyUpdatePosEnvScRsp = 8070,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyHandlePendingActionCsReq)
-    CmdTrainPartyHandlePendingActionCsReq = 8047,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyTakeBuildLevelAwardScRsp)
+    CmdTrainPartyTakeBuildLevelAwardScRsp = 8073,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyBuildStartStepCsReq)
+    CmdTrainPartyBuildStartStepCsReq = 8046,
     // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyUpdatePosEnvCsReq)
     CmdTrainPartyUpdatePosEnvCsReq = 8010,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyGetDataCsReq)
+    CmdTrainPartyGetDataCsReq = 8036,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyBuildingUpdateNotify)
+    CmdTrainPartyBuildingUpdateNotify = 8075,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyBuildDiyScRsp)
+    CmdTrainPartyBuildDiyScRsp = 8005,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyEnterCsReq)
+    CmdTrainPartyEnterCsReq = 8026,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyUseCardCsReq)
+    CmdTrainPartyUseCardCsReq = 8084,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyMoveScNotify)
+    CmdTrainPartyMoveScNotify = 8067,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartySettleNotify)
+    CmdTrainPartySettleNotify = 8052,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyEnterScRsp)
+    CmdTrainPartyEnterScRsp = 8007,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyTakeBuildLevelAwardCsReq)
+    CmdTrainPartyTakeBuildLevelAwardCsReq = 8035,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartySyncUpdateScNotify)
+    CmdTrainPartySyncUpdateScNotify = 8024,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyLeaveCsReq)
+    CmdTrainPartyLeaveCsReq = 8053,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyGamePlayStartScRsp)
+    CmdTrainPartyGamePlayStartScRsp = 8048,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyBuildDiyCsReq)
+    CmdTrainPartyBuildDiyCsReq = 8096,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyUseCardScRsp)
+    CmdTrainPartyUseCardScRsp = 8027,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyHandlePendingActionScRsp)
+    CmdTrainPartyHandlePendingActionScRsp = 8043,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyGamePlaySettleNotify)
+    CmdTrainPartyGamePlaySettleNotify = 8088,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyUpdatePosEnvScRsp)
+    CmdTrainPartyUpdatePosEnvScRsp = 8076,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyHandlePendingActionCsReq)
+    CmdTrainPartyHandlePendingActionCsReq = 8034,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyAddBuildDynamicBuffCsReq)
+    CmdTrainPartyAddBuildDynamicBuffCsReq = 8017,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyLeaveScRsp)
+    CmdTrainPartyLeaveScRsp = 8090,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyGetDataScRsp)
+    CmdTrainPartyGetDataScRsp = 8095,
 }
 
 impl ::protobuf::Enum for CmdTrainPartyType {
@@ -96,33 +96,33 @@ impl ::protobuf::Enum for CmdTrainPartyType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdTrainPartyType> {
         match value {
             0 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyTypeNone),
-            8030 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildStartStepCsReq),
-            8020 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyGetDataScRsp),
-            8079 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildingUpdateNotify),
-            8064 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyGamePlaySettleNotify),
-            8090 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildDiyScRsp),
-            8074 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyHandlePendingActionScRsp),
-            8048 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildDiyCsReq),
-            8009 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyGamePlayStartCsReq),
-            8093 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyGamePlayStartScRsp),
-            8075 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildStartStepScRsp),
-            8039 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyMoveScNotify),
-            8034 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartySettleNotify),
-            8036 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyTakeBuildLevelAwardCsReq),
-            8025 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyEnterScRsp),
-            8046 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyUseCardScRsp),
-            8029 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyLeaveCsReq),
-            8026 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyAddBuildDynamicBuffCsReq),
-            8059 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyGetDataCsReq),
-            8080 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartySyncUpdateScNotify),
-            8061 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyEnterCsReq),
-            8033 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyLeaveScRsp),
-            8003 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyUseCardCsReq),
-            8065 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyTakeBuildLevelAwardScRsp),
+            8025 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildStartStepScRsp),
+            8050 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyGamePlayStartCsReq),
             8013 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyAddBuildDynamicBuffScRsp),
-            8070 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyUpdatePosEnvScRsp),
-            8047 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyHandlePendingActionCsReq),
+            8073 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyTakeBuildLevelAwardScRsp),
+            8046 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildStartStepCsReq),
             8010 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyUpdatePosEnvCsReq),
+            8036 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyGetDataCsReq),
+            8075 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildingUpdateNotify),
+            8005 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildDiyScRsp),
+            8026 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyEnterCsReq),
+            8084 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyUseCardCsReq),
+            8067 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyMoveScNotify),
+            8052 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartySettleNotify),
+            8007 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyEnterScRsp),
+            8035 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyTakeBuildLevelAwardCsReq),
+            8024 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartySyncUpdateScNotify),
+            8053 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyLeaveCsReq),
+            8048 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyGamePlayStartScRsp),
+            8096 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildDiyCsReq),
+            8027 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyUseCardScRsp),
+            8043 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyHandlePendingActionScRsp),
+            8088 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyGamePlaySettleNotify),
+            8076 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyUpdatePosEnvScRsp),
+            8034 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyHandlePendingActionCsReq),
+            8017 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyAddBuildDynamicBuffCsReq),
+            8090 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyLeaveScRsp),
+            8095 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyGetDataScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -130,66 +130,66 @@ impl ::protobuf::Enum for CmdTrainPartyType {
     fn from_str(str: &str) -> ::std::option::Option<CmdTrainPartyType> {
         match str {
             "CmdTrainPartyTypeNone" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyTypeNone),
-            "CmdTrainPartyBuildStartStepCsReq" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildStartStepCsReq),
-            "CmdTrainPartyGetDataScRsp" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyGetDataScRsp),
-            "CmdTrainPartyBuildingUpdateNotify" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildingUpdateNotify),
-            "CmdTrainPartyGamePlaySettleNotify" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyGamePlaySettleNotify),
-            "CmdTrainPartyBuildDiyScRsp" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildDiyScRsp),
-            "CmdTrainPartyHandlePendingActionScRsp" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyHandlePendingActionScRsp),
-            "CmdTrainPartyBuildDiyCsReq" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildDiyCsReq),
-            "CmdTrainPartyGamePlayStartCsReq" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyGamePlayStartCsReq),
-            "CmdTrainPartyGamePlayStartScRsp" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyGamePlayStartScRsp),
             "CmdTrainPartyBuildStartStepScRsp" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildStartStepScRsp),
+            "CmdTrainPartyGamePlayStartCsReq" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyGamePlayStartCsReq),
+            "CmdTrainPartyAddBuildDynamicBuffScRsp" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyAddBuildDynamicBuffScRsp),
+            "CmdTrainPartyTakeBuildLevelAwardScRsp" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyTakeBuildLevelAwardScRsp),
+            "CmdTrainPartyBuildStartStepCsReq" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildStartStepCsReq),
+            "CmdTrainPartyUpdatePosEnvCsReq" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyUpdatePosEnvCsReq),
+            "CmdTrainPartyGetDataCsReq" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyGetDataCsReq),
+            "CmdTrainPartyBuildingUpdateNotify" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildingUpdateNotify),
+            "CmdTrainPartyBuildDiyScRsp" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildDiyScRsp),
+            "CmdTrainPartyEnterCsReq" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyEnterCsReq),
+            "CmdTrainPartyUseCardCsReq" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyUseCardCsReq),
             "CmdTrainPartyMoveScNotify" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyMoveScNotify),
             "CmdTrainPartySettleNotify" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartySettleNotify),
-            "CmdTrainPartyTakeBuildLevelAwardCsReq" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyTakeBuildLevelAwardCsReq),
             "CmdTrainPartyEnterScRsp" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyEnterScRsp),
-            "CmdTrainPartyUseCardScRsp" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyUseCardScRsp),
-            "CmdTrainPartyLeaveCsReq" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyLeaveCsReq),
-            "CmdTrainPartyAddBuildDynamicBuffCsReq" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyAddBuildDynamicBuffCsReq),
-            "CmdTrainPartyGetDataCsReq" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyGetDataCsReq),
+            "CmdTrainPartyTakeBuildLevelAwardCsReq" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyTakeBuildLevelAwardCsReq),
             "CmdTrainPartySyncUpdateScNotify" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartySyncUpdateScNotify),
-            "CmdTrainPartyEnterCsReq" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyEnterCsReq),
-            "CmdTrainPartyLeaveScRsp" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyLeaveScRsp),
-            "CmdTrainPartyUseCardCsReq" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyUseCardCsReq),
-            "CmdTrainPartyTakeBuildLevelAwardScRsp" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyTakeBuildLevelAwardScRsp),
-            "CmdTrainPartyAddBuildDynamicBuffScRsp" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyAddBuildDynamicBuffScRsp),
+            "CmdTrainPartyLeaveCsReq" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyLeaveCsReq),
+            "CmdTrainPartyGamePlayStartScRsp" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyGamePlayStartScRsp),
+            "CmdTrainPartyBuildDiyCsReq" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildDiyCsReq),
+            "CmdTrainPartyUseCardScRsp" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyUseCardScRsp),
+            "CmdTrainPartyHandlePendingActionScRsp" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyHandlePendingActionScRsp),
+            "CmdTrainPartyGamePlaySettleNotify" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyGamePlaySettleNotify),
             "CmdTrainPartyUpdatePosEnvScRsp" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyUpdatePosEnvScRsp),
             "CmdTrainPartyHandlePendingActionCsReq" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyHandlePendingActionCsReq),
-            "CmdTrainPartyUpdatePosEnvCsReq" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyUpdatePosEnvCsReq),
+            "CmdTrainPartyAddBuildDynamicBuffCsReq" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyAddBuildDynamicBuffCsReq),
+            "CmdTrainPartyLeaveScRsp" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyLeaveScRsp),
+            "CmdTrainPartyGetDataScRsp" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyGetDataScRsp),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdTrainPartyType] = &[
         CmdTrainPartyType::CmdTrainPartyTypeNone,
-        CmdTrainPartyType::CmdTrainPartyBuildStartStepCsReq,
-        CmdTrainPartyType::CmdTrainPartyGetDataScRsp,
-        CmdTrainPartyType::CmdTrainPartyBuildingUpdateNotify,
-        CmdTrainPartyType::CmdTrainPartyGamePlaySettleNotify,
-        CmdTrainPartyType::CmdTrainPartyBuildDiyScRsp,
-        CmdTrainPartyType::CmdTrainPartyHandlePendingActionScRsp,
-        CmdTrainPartyType::CmdTrainPartyBuildDiyCsReq,
-        CmdTrainPartyType::CmdTrainPartyGamePlayStartCsReq,
-        CmdTrainPartyType::CmdTrainPartyGamePlayStartScRsp,
         CmdTrainPartyType::CmdTrainPartyBuildStartStepScRsp,
+        CmdTrainPartyType::CmdTrainPartyGamePlayStartCsReq,
+        CmdTrainPartyType::CmdTrainPartyAddBuildDynamicBuffScRsp,
+        CmdTrainPartyType::CmdTrainPartyTakeBuildLevelAwardScRsp,
+        CmdTrainPartyType::CmdTrainPartyBuildStartStepCsReq,
+        CmdTrainPartyType::CmdTrainPartyUpdatePosEnvCsReq,
+        CmdTrainPartyType::CmdTrainPartyGetDataCsReq,
+        CmdTrainPartyType::CmdTrainPartyBuildingUpdateNotify,
+        CmdTrainPartyType::CmdTrainPartyBuildDiyScRsp,
+        CmdTrainPartyType::CmdTrainPartyEnterCsReq,
+        CmdTrainPartyType::CmdTrainPartyUseCardCsReq,
         CmdTrainPartyType::CmdTrainPartyMoveScNotify,
         CmdTrainPartyType::CmdTrainPartySettleNotify,
-        CmdTrainPartyType::CmdTrainPartyTakeBuildLevelAwardCsReq,
         CmdTrainPartyType::CmdTrainPartyEnterScRsp,
-        CmdTrainPartyType::CmdTrainPartyUseCardScRsp,
-        CmdTrainPartyType::CmdTrainPartyLeaveCsReq,
-        CmdTrainPartyType::CmdTrainPartyAddBuildDynamicBuffCsReq,
-        CmdTrainPartyType::CmdTrainPartyGetDataCsReq,
+        CmdTrainPartyType::CmdTrainPartyTakeBuildLevelAwardCsReq,
         CmdTrainPartyType::CmdTrainPartySyncUpdateScNotify,
-        CmdTrainPartyType::CmdTrainPartyEnterCsReq,
-        CmdTrainPartyType::CmdTrainPartyLeaveScRsp,
-        CmdTrainPartyType::CmdTrainPartyUseCardCsReq,
-        CmdTrainPartyType::CmdTrainPartyTakeBuildLevelAwardScRsp,
-        CmdTrainPartyType::CmdTrainPartyAddBuildDynamicBuffScRsp,
+        CmdTrainPartyType::CmdTrainPartyLeaveCsReq,
+        CmdTrainPartyType::CmdTrainPartyGamePlayStartScRsp,
+        CmdTrainPartyType::CmdTrainPartyBuildDiyCsReq,
+        CmdTrainPartyType::CmdTrainPartyUseCardScRsp,
+        CmdTrainPartyType::CmdTrainPartyHandlePendingActionScRsp,
+        CmdTrainPartyType::CmdTrainPartyGamePlaySettleNotify,
         CmdTrainPartyType::CmdTrainPartyUpdatePosEnvScRsp,
         CmdTrainPartyType::CmdTrainPartyHandlePendingActionCsReq,
-        CmdTrainPartyType::CmdTrainPartyUpdatePosEnvCsReq,
+        CmdTrainPartyType::CmdTrainPartyAddBuildDynamicBuffCsReq,
+        CmdTrainPartyType::CmdTrainPartyLeaveScRsp,
+        CmdTrainPartyType::CmdTrainPartyGetDataScRsp,
     ];
 }
 
@@ -202,33 +202,33 @@ impl ::protobuf::EnumFull for CmdTrainPartyType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdTrainPartyType::CmdTrainPartyTypeNone => 0,
-            CmdTrainPartyType::CmdTrainPartyBuildStartStepCsReq => 1,
-            CmdTrainPartyType::CmdTrainPartyGetDataScRsp => 2,
-            CmdTrainPartyType::CmdTrainPartyBuildingUpdateNotify => 3,
-            CmdTrainPartyType::CmdTrainPartyGamePlaySettleNotify => 4,
-            CmdTrainPartyType::CmdTrainPartyBuildDiyScRsp => 5,
-            CmdTrainPartyType::CmdTrainPartyHandlePendingActionScRsp => 6,
-            CmdTrainPartyType::CmdTrainPartyBuildDiyCsReq => 7,
-            CmdTrainPartyType::CmdTrainPartyGamePlayStartCsReq => 8,
-            CmdTrainPartyType::CmdTrainPartyGamePlayStartScRsp => 9,
-            CmdTrainPartyType::CmdTrainPartyBuildStartStepScRsp => 10,
-            CmdTrainPartyType::CmdTrainPartyMoveScNotify => 11,
-            CmdTrainPartyType::CmdTrainPartySettleNotify => 12,
-            CmdTrainPartyType::CmdTrainPartyTakeBuildLevelAwardCsReq => 13,
+            CmdTrainPartyType::CmdTrainPartyBuildStartStepScRsp => 1,
+            CmdTrainPartyType::CmdTrainPartyGamePlayStartCsReq => 2,
+            CmdTrainPartyType::CmdTrainPartyAddBuildDynamicBuffScRsp => 3,
+            CmdTrainPartyType::CmdTrainPartyTakeBuildLevelAwardScRsp => 4,
+            CmdTrainPartyType::CmdTrainPartyBuildStartStepCsReq => 5,
+            CmdTrainPartyType::CmdTrainPartyUpdatePosEnvCsReq => 6,
+            CmdTrainPartyType::CmdTrainPartyGetDataCsReq => 7,
+            CmdTrainPartyType::CmdTrainPartyBuildingUpdateNotify => 8,
+            CmdTrainPartyType::CmdTrainPartyBuildDiyScRsp => 9,
+            CmdTrainPartyType::CmdTrainPartyEnterCsReq => 10,
+            CmdTrainPartyType::CmdTrainPartyUseCardCsReq => 11,
+            CmdTrainPartyType::CmdTrainPartyMoveScNotify => 12,
+            CmdTrainPartyType::CmdTrainPartySettleNotify => 13,
             CmdTrainPartyType::CmdTrainPartyEnterScRsp => 14,
-            CmdTrainPartyType::CmdTrainPartyUseCardScRsp => 15,
-            CmdTrainPartyType::CmdTrainPartyLeaveCsReq => 16,
-            CmdTrainPartyType::CmdTrainPartyAddBuildDynamicBuffCsReq => 17,
-            CmdTrainPartyType::CmdTrainPartyGetDataCsReq => 18,
-            CmdTrainPartyType::CmdTrainPartySyncUpdateScNotify => 19,
-            CmdTrainPartyType::CmdTrainPartyEnterCsReq => 20,
-            CmdTrainPartyType::CmdTrainPartyLeaveScRsp => 21,
-            CmdTrainPartyType::CmdTrainPartyUseCardCsReq => 22,
-            CmdTrainPartyType::CmdTrainPartyTakeBuildLevelAwardScRsp => 23,
-            CmdTrainPartyType::CmdTrainPartyAddBuildDynamicBuffScRsp => 24,
-            CmdTrainPartyType::CmdTrainPartyUpdatePosEnvScRsp => 25,
-            CmdTrainPartyType::CmdTrainPartyHandlePendingActionCsReq => 26,
-            CmdTrainPartyType::CmdTrainPartyUpdatePosEnvCsReq => 27,
+            CmdTrainPartyType::CmdTrainPartyTakeBuildLevelAwardCsReq => 15,
+            CmdTrainPartyType::CmdTrainPartySyncUpdateScNotify => 16,
+            CmdTrainPartyType::CmdTrainPartyLeaveCsReq => 17,
+            CmdTrainPartyType::CmdTrainPartyGamePlayStartScRsp => 18,
+            CmdTrainPartyType::CmdTrainPartyBuildDiyCsReq => 19,
+            CmdTrainPartyType::CmdTrainPartyUseCardScRsp => 20,
+            CmdTrainPartyType::CmdTrainPartyHandlePendingActionScRsp => 21,
+            CmdTrainPartyType::CmdTrainPartyGamePlaySettleNotify => 22,
+            CmdTrainPartyType::CmdTrainPartyUpdatePosEnvScRsp => 23,
+            CmdTrainPartyType::CmdTrainPartyHandlePendingActionCsReq => 24,
+            CmdTrainPartyType::CmdTrainPartyAddBuildDynamicBuffCsReq => 25,
+            CmdTrainPartyType::CmdTrainPartyLeaveScRsp => 26,
+            CmdTrainPartyType::CmdTrainPartyGetDataScRsp => 27,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -248,26 +248,26 @@ impl CmdTrainPartyType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17CmdTrainPartyType.proto*\x8a\x08\n\x11CmdTrainPartyType\x12\x19\n\
-    \x15CmdTrainPartyTypeNone\x10\0\x12%\n\x20CmdTrainPartyBuildStartStepCsR\
-    eq\x10\xde>\x12\x1e\n\x19CmdTrainPartyGetDataScRsp\x10\xd4>\x12&\n!CmdTr\
-    ainPartyBuildingUpdateNotify\x10\x8f?\x12&\n!CmdTrainPartyGamePlaySettle\
-    Notify\x10\x80?\x12\x1f\n\x1aCmdTrainPartyBuildDiyScRsp\x10\x9a?\x12*\n%\
-    CmdTrainPartyHandlePendingActionScRsp\x10\x8a?\x12\x1f\n\x1aCmdTrainPart\
-    yBuildDiyCsReq\x10\xf0>\x12$\n\x1fCmdTrainPartyGamePlayStartCsReq\x10\
-    \xc9>\x12$\n\x1fCmdTrainPartyGamePlayStartScRsp\x10\x9d?\x12%\n\x20CmdTr\
-    ainPartyBuildStartStepScRsp\x10\x8b?\x12\x1e\n\x19CmdTrainPartyMoveScNot\
-    ify\x10\xe7>\x12\x1e\n\x19CmdTrainPartySettleNotify\x10\xe2>\x12*\n%CmdT\
-    rainPartyTakeBuildLevelAwardCsReq\x10\xe4>\x12\x1c\n\x17CmdTrainPartyEnt\
-    erScRsp\x10\xd9>\x12\x1e\n\x19CmdTrainPartyUseCardScRsp\x10\xee>\x12\x1c\
-    \n\x17CmdTrainPartyLeaveCsReq\x10\xdd>\x12*\n%CmdTrainPartyAddBuildDynam\
-    icBuffCsReq\x10\xda>\x12\x1e\n\x19CmdTrainPartyGetDataCsReq\x10\xfb>\x12\
-    $\n\x1fCmdTrainPartySyncUpdateScNotify\x10\x90?\x12\x1c\n\x17CmdTrainPar\
-    tyEnterCsReq\x10\xfd>\x12\x1c\n\x17CmdTrainPartyLeaveScRsp\x10\xe1>\x12\
-    \x1e\n\x19CmdTrainPartyUseCardCsReq\x10\xc3>\x12*\n%CmdTrainPartyTakeBui\
-    ldLevelAwardScRsp\x10\x81?\x12*\n%CmdTrainPartyAddBuildDynamicBuffScRsp\
-    \x10\xcd>\x12#\n\x1eCmdTrainPartyUpdatePosEnvScRsp\x10\x86?\x12*\n%CmdTr\
-    ainPartyHandlePendingActionCsReq\x10\xef>\x12#\n\x1eCmdTrainPartyUpdateP\
-    osEnvCsReq\x10\xca>b\x06proto3\
+    \x15CmdTrainPartyTypeNone\x10\0\x12%\n\x20CmdTrainPartyBuildStartStepScR\
+    sp\x10\xd9>\x12$\n\x1fCmdTrainPartyGamePlayStartCsReq\x10\xf2>\x12*\n%Cm\
+    dTrainPartyAddBuildDynamicBuffScRsp\x10\xcd>\x12*\n%CmdTrainPartyTakeBui\
+    ldLevelAwardScRsp\x10\x89?\x12%\n\x20CmdTrainPartyBuildStartStepCsReq\
+    \x10\xee>\x12#\n\x1eCmdTrainPartyUpdatePosEnvCsReq\x10\xca>\x12\x1e\n\
+    \x19CmdTrainPartyGetDataCsReq\x10\xe4>\x12&\n!CmdTrainPartyBuildingUpdat\
+    eNotify\x10\x8b?\x12\x1f\n\x1aCmdTrainPartyBuildDiyScRsp\x10\xc5>\x12\
+    \x1c\n\x17CmdTrainPartyEnterCsReq\x10\xda>\x12\x1e\n\x19CmdTrainPartyUse\
+    CardCsReq\x10\x94?\x12\x1e\n\x19CmdTrainPartyMoveScNotify\x10\x83?\x12\
+    \x1e\n\x19CmdTrainPartySettleNotify\x10\xf4>\x12\x1c\n\x17CmdTrainPartyE\
+    nterScRsp\x10\xc7>\x12*\n%CmdTrainPartyTakeBuildLevelAwardCsReq\x10\xe3>\
+    \x12$\n\x1fCmdTrainPartySyncUpdateScNotify\x10\xd8>\x12\x1c\n\x17CmdTrai\
+    nPartyLeaveCsReq\x10\xf5>\x12$\n\x1fCmdTrainPartyGamePlayStartScRsp\x10\
+    \xf0>\x12\x1f\n\x1aCmdTrainPartyBuildDiyCsReq\x10\xa0?\x12\x1e\n\x19CmdT\
+    rainPartyUseCardScRsp\x10\xdb>\x12*\n%CmdTrainPartyHandlePendingActionSc\
+    Rsp\x10\xeb>\x12&\n!CmdTrainPartyGamePlaySettleNotify\x10\x98?\x12#\n\
+    \x1eCmdTrainPartyUpdatePosEnvScRsp\x10\x8c?\x12*\n%CmdTrainPartyHandlePe\
+    ndingActionCsReq\x10\xe2>\x12*\n%CmdTrainPartyAddBuildDynamicBuffCsReq\
+    \x10\xd1>\x12\x1c\n\x17CmdTrainPartyLeaveScRsp\x10\x9a?\x12\x1e\n\x19Cmd\
+    TrainPartyGetDataScRsp\x10\x9f?b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

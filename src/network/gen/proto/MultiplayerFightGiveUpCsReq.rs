@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MultiplayerFightGiveUpCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MultiplayerFightGiveUpCsReq.AGFNBILMNFC)
-    pub AGFNBILMNFC: u64,
+    // @@protoc_insertion_point(field:MultiplayerFightGiveUpCsReq.FDBOEOGNPFB)
+    pub FDBOEOGNPFB: u64,
     // special fields
     // @@protoc_insertion_point(special_field:MultiplayerFightGiveUpCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl MultiplayerFightGiveUpCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AGFNBILMNFC",
-            |m: &MultiplayerFightGiveUpCsReq| { &m.AGFNBILMNFC },
-            |m: &mut MultiplayerFightGiveUpCsReq| { &mut m.AGFNBILMNFC },
+            "FDBOEOGNPFB",
+            |m: &MultiplayerFightGiveUpCsReq| { &m.FDBOEOGNPFB },
+            |m: &mut MultiplayerFightGiveUpCsReq| { &mut m.FDBOEOGNPFB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MultiplayerFightGiveUpCsReq>(
             "MultiplayerFightGiveUpCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for MultiplayerFightGiveUpCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.AGFNBILMNFC = is.read_uint64()?;
+                8 => {
+                    self.FDBOEOGNPFB = is.read_uint64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for MultiplayerFightGiveUpCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AGFNBILMNFC != 0 {
-            my_size += ::protobuf::rt::uint64_size(2, self.AGFNBILMNFC);
+        if self.FDBOEOGNPFB != 0 {
+            my_size += ::protobuf::rt::uint64_size(1, self.FDBOEOGNPFB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for MultiplayerFightGiveUpCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AGFNBILMNFC != 0 {
-            os.write_uint64(2, self.AGFNBILMNFC)?;
+        if self.FDBOEOGNPFB != 0 {
+            os.write_uint64(1, self.FDBOEOGNPFB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for MultiplayerFightGiveUpCsReq {
     }
 
     fn clear(&mut self) {
-        self.AGFNBILMNFC = 0;
+        self.FDBOEOGNPFB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MultiplayerFightGiveUpCsReq {
         static instance: MultiplayerFightGiveUpCsReq = MultiplayerFightGiveUpCsReq {
-            AGFNBILMNFC: 0,
+            FDBOEOGNPFB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for MultiplayerFightGiveUpCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!MultiplayerFightGiveUpCsReq.proto\"?\n\x1bMultiplayerFightGiveUpCsReq\
-    \x12\x20\n\x0bAGFNBILMNFC\x18\x02\x20\x01(\x04R\x0bAGFNBILMNFCb\x06proto\
+    \x12\x20\n\x0bFDBOEOGNPFB\x18\x01\x20\x01(\x04R\x0bFDBOEOGNPFBb\x06proto\
     3\
 ";
 

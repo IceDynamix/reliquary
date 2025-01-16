@@ -29,18 +29,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterMapRotationRegionScRsp {
     // message fields
+    // @@protoc_insertion_point(field:EnterMapRotationRegionScRsp.FDGGLLHCPLI)
+    pub FDGGLLHCPLI: u32,
     // @@protoc_insertion_point(field:EnterMapRotationRegionScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:EnterMapRotationRegionScRsp.FPHPEJPOBGJ)
-    pub FPHPEJPOBGJ: u32,
-    // @@protoc_insertion_point(field:EnterMapRotationRegionScRsp.LGCHOINHLDJ)
-    pub LGCHOINHLDJ: u32,
-    // @@protoc_insertion_point(field:EnterMapRotationRegionScRsp.client_pos_version)
-    pub client_pos_version: u32,
-    // @@protoc_insertion_point(field:EnterMapRotationRegionScRsp.motion)
-    pub motion: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
-    // @@protoc_insertion_point(field:EnterMapRotationRegionScRsp.energy_info)
-    pub energy_info: ::protobuf::MessageField<super::RotatorEnergyInfo::RotatorEnergyInfo>,
+    // @@protoc_insertion_point(field:EnterMapRotationRegionScRsp.LLLHPFLFKPP)
+    pub LLLHPFLFKPP: u32,
+    // @@protoc_insertion_point(field:EnterMapRotationRegionScRsp.LNKKMEHBDPG)
+    pub LNKKMEHBDPG: ::protobuf::MessageField<super::LDFPBJIHOPD::LDFPBJIHOPD>,
+    // @@protoc_insertion_point(field:EnterMapRotationRegionScRsp.KBMFLPNPKOJ)
+    pub KBMFLPNPKOJ: ::protobuf::MessageField<super::LAMKDPDMLEC::LAMKDPDMLEC>,
+    // @@protoc_insertion_point(field:EnterMapRotationRegionScRsp.IFDGJOJKBPN)
+    pub IFDGJOJKBPN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EnterMapRotationRegionScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,34 +61,34 @@ impl EnterMapRotationRegionScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FDGGLLHCPLI",
+            |m: &EnterMapRotationRegionScRsp| { &m.FDGGLLHCPLI },
+            |m: &mut EnterMapRotationRegionScRsp| { &mut m.FDGGLLHCPLI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &EnterMapRotationRegionScRsp| { &m.retcode },
             |m: &mut EnterMapRotationRegionScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FPHPEJPOBGJ",
-            |m: &EnterMapRotationRegionScRsp| { &m.FPHPEJPOBGJ },
-            |m: &mut EnterMapRotationRegionScRsp| { &mut m.FPHPEJPOBGJ },
+            "LLLHPFLFKPP",
+            |m: &EnterMapRotationRegionScRsp| { &m.LLLHPFLFKPP },
+            |m: &mut EnterMapRotationRegionScRsp| { &mut m.LLLHPFLFKPP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LDFPBJIHOPD::LDFPBJIHOPD>(
+            "LNKKMEHBDPG",
+            |m: &EnterMapRotationRegionScRsp| { &m.LNKKMEHBDPG },
+            |m: &mut EnterMapRotationRegionScRsp| { &mut m.LNKKMEHBDPG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LAMKDPDMLEC::LAMKDPDMLEC>(
+            "KBMFLPNPKOJ",
+            |m: &EnterMapRotationRegionScRsp| { &m.KBMFLPNPKOJ },
+            |m: &mut EnterMapRotationRegionScRsp| { &mut m.KBMFLPNPKOJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LGCHOINHLDJ",
-            |m: &EnterMapRotationRegionScRsp| { &m.LGCHOINHLDJ },
-            |m: &mut EnterMapRotationRegionScRsp| { &mut m.LGCHOINHLDJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "client_pos_version",
-            |m: &EnterMapRotationRegionScRsp| { &m.client_pos_version },
-            |m: &mut EnterMapRotationRegionScRsp| { &mut m.client_pos_version },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfo::MotionInfo>(
-            "motion",
-            |m: &EnterMapRotationRegionScRsp| { &m.motion },
-            |m: &mut EnterMapRotationRegionScRsp| { &mut m.motion },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RotatorEnergyInfo::RotatorEnergyInfo>(
-            "energy_info",
-            |m: &EnterMapRotationRegionScRsp| { &m.energy_info },
-            |m: &mut EnterMapRotationRegionScRsp| { &mut m.energy_info },
+            "IFDGJOJKBPN",
+            |m: &EnterMapRotationRegionScRsp| { &m.IFDGJOJKBPN },
+            |m: &mut EnterMapRotationRegionScRsp| { &mut m.IFDGJOJKBPN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterMapRotationRegionScRsp>(
             "EnterMapRotationRegionScRsp",
@@ -109,22 +109,22 @@ impl ::protobuf::Message for EnterMapRotationRegionScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 16 => {
+                    self.FDGGLLHCPLI = is.read_uint32()?;
+                },
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
-                120 => {
-                    self.FPHPEJPOBGJ = is.read_uint32()?;
+                40 => {
+                    self.LLLHPFLFKPP = is.read_uint32()?;
                 },
-                8 => {
-                    self.LGCHOINHLDJ = is.read_uint32()?;
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LNKKMEHBDPG)?;
                 },
-                112 => {
-                    self.client_pos_version = is.read_uint32()?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KBMFLPNPKOJ)?;
                 },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
-                },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.energy_info)?;
+                32 => {
+                    self.IFDGJOJKBPN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -138,25 +138,25 @@ impl ::protobuf::Message for EnterMapRotationRegionScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.FDGGLLHCPLI != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.FDGGLLHCPLI);
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
-        if self.FPHPEJPOBGJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.FPHPEJPOBGJ);
+        if self.LLLHPFLFKPP != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.LLLHPFLFKPP);
         }
-        if self.LGCHOINHLDJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.LGCHOINHLDJ);
-        }
-        if self.client_pos_version != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.client_pos_version);
-        }
-        if let Some(v) = self.motion.as_ref() {
+        if let Some(v) = self.LNKKMEHBDPG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.energy_info.as_ref() {
+        if let Some(v) = self.KBMFLPNPKOJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.IFDGJOJKBPN != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.IFDGJOJKBPN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -164,23 +164,23 @@ impl ::protobuf::Message for EnterMapRotationRegionScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.FDGGLLHCPLI != 0 {
+            os.write_uint32(2, self.FDGGLLHCPLI)?;
+        }
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
         }
-        if self.FPHPEJPOBGJ != 0 {
-            os.write_uint32(15, self.FPHPEJPOBGJ)?;
+        if self.LLLHPFLFKPP != 0 {
+            os.write_uint32(5, self.LLLHPFLFKPP)?;
         }
-        if self.LGCHOINHLDJ != 0 {
-            os.write_uint32(1, self.LGCHOINHLDJ)?;
+        if let Some(v) = self.LNKKMEHBDPG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
-        if self.client_pos_version != 0 {
-            os.write_uint32(14, self.client_pos_version)?;
+        if let Some(v) = self.KBMFLPNPKOJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
-        if let Some(v) = self.motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
-        if let Some(v) = self.energy_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if self.IFDGJOJKBPN != 0 {
+            os.write_uint32(4, self.IFDGJOJKBPN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -199,23 +199,23 @@ impl ::protobuf::Message for EnterMapRotationRegionScRsp {
     }
 
     fn clear(&mut self) {
+        self.FDGGLLHCPLI = 0;
         self.retcode = 0;
-        self.FPHPEJPOBGJ = 0;
-        self.LGCHOINHLDJ = 0;
-        self.client_pos_version = 0;
-        self.motion.clear();
-        self.energy_info.clear();
+        self.LLLHPFLFKPP = 0;
+        self.LNKKMEHBDPG.clear();
+        self.KBMFLPNPKOJ.clear();
+        self.IFDGJOJKBPN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterMapRotationRegionScRsp {
         static instance: EnterMapRotationRegionScRsp = EnterMapRotationRegionScRsp {
+            FDGGLLHCPLI: 0,
             retcode: 0,
-            FPHPEJPOBGJ: 0,
-            LGCHOINHLDJ: 0,
-            client_pos_version: 0,
-            motion: ::protobuf::MessageField::none(),
-            energy_info: ::protobuf::MessageField::none(),
+            LLLHPFLFKPP: 0,
+            LNKKMEHBDPG: ::protobuf::MessageField::none(),
+            KBMFLPNPKOJ: ::protobuf::MessageField::none(),
+            IFDGJOJKBPN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -240,14 +240,14 @@ impl ::protobuf::reflect::ProtobufValue for EnterMapRotationRegionScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!EnterMapRotationRegionScRsp.proto\x1a\x10MotionInfo.proto\x1a\x17Rota\
-    torEnergyInfo.proto\"\x83\x02\n\x1bEnterMapRotationRegionScRsp\x12\x18\n\
-    \x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\x20\n\x0bFPHPEJPOBGJ\x18\
-    \x0f\x20\x01(\rR\x0bFPHPEJPOBGJ\x12\x20\n\x0bLGCHOINHLDJ\x18\x01\x20\x01\
-    (\rR\x0bLGCHOINHLDJ\x12,\n\x12client_pos_version\x18\x0e\x20\x01(\rR\x10\
-    clientPosVersion\x12#\n\x06motion\x18\x04\x20\x01(\x0b2\x0b.MotionInfoR\
-    \x06motion\x123\n\x0benergy_info\x18\x08\x20\x01(\x0b2\x12.RotatorEnergy\
-    InfoR\nenergyInfoB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n!EnterMapRotationRegionScRsp.proto\x1a\x11LAMKDPDMLEC.proto\x1a\x11LDF\
+    PBJIHOPD.proto\"\xfd\x01\n\x1bEnterMapRotationRegionScRsp\x12\x20\n\x0bF\
+    DGGLLHCPLI\x18\x02\x20\x01(\rR\x0bFDGGLLHCPLI\x12\x18\n\x07retcode\x18\
+    \x0c\x20\x01(\rR\x07retcode\x12\x20\n\x0bLLLHPFLFKPP\x18\x05\x20\x01(\rR\
+    \x0bLLLHPFLFKPP\x12.\n\x0bLNKKMEHBDPG\x18\n\x20\x01(\x0b2\x0c.LDFPBJIHOP\
+    DR\x0bLNKKMEHBDPG\x12.\n\x0bKBMFLPNPKOJ\x18\x0f\x20\x01(\x0b2\x0c.LAMKDP\
+    DMLECR\x0bKBMFLPNPKOJ\x12\x20\n\x0bIFDGJOJKBPN\x18\x04\x20\x01(\rR\x0bIF\
+    DGJOJKBPNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -265,8 +265,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::MotionInfo::file_descriptor().clone());
-            deps.push(super::RotatorEnergyInfo::file_descriptor().clone());
+            deps.push(super::LAMKDPDMLEC::file_descriptor().clone());
+            deps.push(super::LDFPBJIHOPD::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EnterMapRotationRegionScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

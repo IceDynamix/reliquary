@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartySyncUpdateScNotify {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartySyncUpdateScNotify.BLDHIEJJNJC)
-    pub BLDHIEJJNJC: ::std::vec::Vec<super::FFKJEABAMKI::FFKJEABAMKI>,
+    // @@protoc_insertion_point(field:TrainPartySyncUpdateScNotify.NKCOMPHIJFI)
+    pub NKCOMPHIJFI: ::std::vec::Vec<super::LOBBLPHFBEA::LOBBLPHFBEA>,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartySyncUpdateScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl TrainPartySyncUpdateScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BLDHIEJJNJC",
-            |m: &TrainPartySyncUpdateScNotify| { &m.BLDHIEJJNJC },
-            |m: &mut TrainPartySyncUpdateScNotify| { &mut m.BLDHIEJJNJC },
+            "NKCOMPHIJFI",
+            |m: &TrainPartySyncUpdateScNotify| { &m.NKCOMPHIJFI },
+            |m: &mut TrainPartySyncUpdateScNotify| { &mut m.NKCOMPHIJFI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartySyncUpdateScNotify>(
             "TrainPartySyncUpdateScNotify",
@@ -74,7 +74,7 @@ impl ::protobuf::Message for TrainPartySyncUpdateScNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 74 => {
-                    self.BLDHIEJJNJC.push(is.read_message()?);
+                    self.NKCOMPHIJFI.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +88,7 @@ impl ::protobuf::Message for TrainPartySyncUpdateScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.BLDHIEJJNJC {
+        for value in &self.NKCOMPHIJFI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -98,7 +98,7 @@ impl ::protobuf::Message for TrainPartySyncUpdateScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.BLDHIEJJNJC {
+        for v in &self.NKCOMPHIJFI {
             ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -118,13 +118,13 @@ impl ::protobuf::Message for TrainPartySyncUpdateScNotify {
     }
 
     fn clear(&mut self) {
-        self.BLDHIEJJNJC.clear();
+        self.NKCOMPHIJFI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartySyncUpdateScNotify {
         static instance: TrainPartySyncUpdateScNotify = TrainPartySyncUpdateScNotify {
-            BLDHIEJJNJC: ::std::vec::Vec::new(),
+            NKCOMPHIJFI: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,9 +149,9 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartySyncUpdateScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"TrainPartySyncUpdateScNotify.proto\x1a\x11FFKJEABAMKI.proto\"N\n\x1c\
-    TrainPartySyncUpdateScNotify\x12.\n\x0bBLDHIEJJNJC\x18\t\x20\x03(\x0b2\
-    \x0c.FFKJEABAMKIR\x0bBLDHIEJJNJCb\x06proto3\
+    \n\"TrainPartySyncUpdateScNotify.proto\x1a\x11LOBBLPHFBEA.proto\"N\n\x1c\
+    TrainPartySyncUpdateScNotify\x12.\n\x0bNKCOMPHIJFI\x18\t\x20\x03(\x0b2\
+    \x0c.LOBBLPHFBEAR\x0bNKCOMPHIJFIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -169,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::FFKJEABAMKI::file_descriptor().clone());
+            deps.push(super::LOBBLPHFBEA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(TrainPartySyncUpdateScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

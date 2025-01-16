@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LastSpringRefreshTimeNotify {
     // message fields
-    // @@protoc_insertion_point(field:LastSpringRefreshTimeNotify.PEFEFNGGEBL)
-    pub PEFEFNGGEBL: i64,
+    // @@protoc_insertion_point(field:LastSpringRefreshTimeNotify.KKJMJJAFMPD)
+    pub KKJMJJAFMPD: i64,
     // special fields
     // @@protoc_insertion_point(special_field:LastSpringRefreshTimeNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl LastSpringRefreshTimeNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PEFEFNGGEBL",
-            |m: &LastSpringRefreshTimeNotify| { &m.PEFEFNGGEBL },
-            |m: &mut LastSpringRefreshTimeNotify| { &mut m.PEFEFNGGEBL },
+            "KKJMJJAFMPD",
+            |m: &LastSpringRefreshTimeNotify| { &m.KKJMJJAFMPD },
+            |m: &mut LastSpringRefreshTimeNotify| { &mut m.KKJMJJAFMPD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LastSpringRefreshTimeNotify>(
             "LastSpringRefreshTimeNotify",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for LastSpringRefreshTimeNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.PEFEFNGGEBL = is.read_int64()?;
+                48 => {
+                    self.KKJMJJAFMPD = is.read_int64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for LastSpringRefreshTimeNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PEFEFNGGEBL != 0 {
-            my_size += ::protobuf::rt::int64_size(14, self.PEFEFNGGEBL);
+        if self.KKJMJJAFMPD != 0 {
+            my_size += ::protobuf::rt::int64_size(6, self.KKJMJJAFMPD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for LastSpringRefreshTimeNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PEFEFNGGEBL != 0 {
-            os.write_int64(14, self.PEFEFNGGEBL)?;
+        if self.KKJMJJAFMPD != 0 {
+            os.write_int64(6, self.KKJMJJAFMPD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for LastSpringRefreshTimeNotify {
     }
 
     fn clear(&mut self) {
-        self.PEFEFNGGEBL = 0;
+        self.KKJMJJAFMPD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LastSpringRefreshTimeNotify {
         static instance: LastSpringRefreshTimeNotify = LastSpringRefreshTimeNotify {
-            PEFEFNGGEBL: 0,
+            KKJMJJAFMPD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for LastSpringRefreshTimeNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!LastSpringRefreshTimeNotify.proto\"?\n\x1bLastSpringRefreshTimeNotify\
-    \x12\x20\n\x0bPEFEFNGGEBL\x18\x0e\x20\x01(\x03R\x0bPEFEFNGGEBLb\x06proto\
+    \x12\x20\n\x0bKKJMJJAFMPD\x18\x06\x20\x01(\x03R\x0bKKJMJJAFMPDb\x06proto\
     3\
 ";
 

@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFirstTalkNpcCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetFirstTalkNpcCsReq.npc_id_list)
-    pub npc_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetFirstTalkNpcCsReq.CMICEDEHOMK)
+    pub CMICEDEHOMK: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GetFirstTalkNpcCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl GetFirstTalkNpcCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "npc_id_list",
-            |m: &GetFirstTalkNpcCsReq| { &m.npc_id_list },
-            |m: &mut GetFirstTalkNpcCsReq| { &mut m.npc_id_list },
+            "CMICEDEHOMK",
+            |m: &GetFirstTalkNpcCsReq| { &m.CMICEDEHOMK },
+            |m: &mut GetFirstTalkNpcCsReq| { &mut m.CMICEDEHOMK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetFirstTalkNpcCsReq>(
             "GetFirstTalkNpcCsReq",
@@ -73,11 +73,11 @@ impl ::protobuf::Message for GetFirstTalkNpcCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.npc_id_list)?;
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.CMICEDEHOMK)?;
                 },
-                24 => {
-                    self.npc_id_list.push(is.read_uint32()?);
+                88 => {
+                    self.CMICEDEHOMK.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -91,8 +91,8 @@ impl ::protobuf::Message for GetFirstTalkNpcCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.npc_id_list {
-            my_size += ::protobuf::rt::uint32_size(3, *value);
+        for value in &self.CMICEDEHOMK {
+            my_size += ::protobuf::rt::uint32_size(11, *value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -100,8 +100,8 @@ impl ::protobuf::Message for GetFirstTalkNpcCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.npc_id_list {
-            os.write_uint32(3, *v)?;
+        for v in &self.CMICEDEHOMK {
+            os.write_uint32(11, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -120,13 +120,13 @@ impl ::protobuf::Message for GetFirstTalkNpcCsReq {
     }
 
     fn clear(&mut self) {
-        self.npc_id_list.clear();
+        self.CMICEDEHOMK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFirstTalkNpcCsReq {
         static instance: GetFirstTalkNpcCsReq = GetFirstTalkNpcCsReq {
-            npc_id_list: ::std::vec::Vec::new(),
+            CMICEDEHOMK: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -151,9 +151,8 @@ impl ::protobuf::reflect::ProtobufValue for GetFirstTalkNpcCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aGetFirstTalkNpcCsReq.proto\"6\n\x14GetFirstTalkNpcCsReq\x12\x1e\n\
-    \x0bnpc_id_list\x18\x03\x20\x03(\rR\tnpcIdListB\x15\n\x13emu.lunarcore.p\
-    rotob\x06proto3\
+    \n\x1aGetFirstTalkNpcCsReq.proto\"8\n\x14GetFirstTalkNpcCsReq\x12\x20\n\
+    \x0bCMICEDEHOMK\x18\x0b\x20\x03(\rR\x0bCMICEDEHOMKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

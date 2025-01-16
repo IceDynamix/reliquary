@@ -29,10 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneEnterStageCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SceneEnterStageCsReq.EGPENEEKJMB)
-    pub EGPENEEKJMB: bool,
-    // @@protoc_insertion_point(field:SceneEnterStageCsReq.event_id)
-    pub event_id: u32,
+    // @@protoc_insertion_point(field:SceneEnterStageCsReq.EJGPCIPHEED)
+    pub EJGPCIPHEED: bool,
+    // @@protoc_insertion_point(field:SceneEnterStageCsReq.AHOLPNCMJOL)
+    pub AHOLPNCMJOL: ::protobuf::EnumOrUnknown<super::FKFMMNOCIPK::FKFMMNOCIPK>,
+    // @@protoc_insertion_point(field:SceneEnterStageCsReq.HCMKAKBEHDN)
+    pub HCMKAKBEHDN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SceneEnterStageCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,17 +52,22 @@ impl SceneEnterStageCsReq {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EGPENEEKJMB",
-            |m: &SceneEnterStageCsReq| { &m.EGPENEEKJMB },
-            |m: &mut SceneEnterStageCsReq| { &mut m.EGPENEEKJMB },
+            "EJGPCIPHEED",
+            |m: &SceneEnterStageCsReq| { &m.EJGPCIPHEED },
+            |m: &mut SceneEnterStageCsReq| { &mut m.EJGPCIPHEED },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "event_id",
-            |m: &SceneEnterStageCsReq| { &m.event_id },
-            |m: &mut SceneEnterStageCsReq| { &mut m.event_id },
+            "AHOLPNCMJOL",
+            |m: &SceneEnterStageCsReq| { &m.AHOLPNCMJOL },
+            |m: &mut SceneEnterStageCsReq| { &mut m.AHOLPNCMJOL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HCMKAKBEHDN",
+            |m: &SceneEnterStageCsReq| { &m.HCMKAKBEHDN },
+            |m: &mut SceneEnterStageCsReq| { &mut m.HCMKAKBEHDN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SceneEnterStageCsReq>(
             "SceneEnterStageCsReq",
@@ -81,10 +88,13 @@ impl ::protobuf::Message for SceneEnterStageCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 96 => {
-                    self.EGPENEEKJMB = is.read_bool()?;
+                    self.EJGPCIPHEED = is.read_bool()?;
                 },
-                72 => {
-                    self.event_id = is.read_uint32()?;
+                112 => {
+                    self.AHOLPNCMJOL = is.read_enum_or_unknown()?;
+                },
+                120 => {
+                    self.HCMKAKBEHDN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,11 +108,14 @@ impl ::protobuf::Message for SceneEnterStageCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EGPENEEKJMB != false {
+        if self.EJGPCIPHEED != false {
             my_size += 1 + 1;
         }
-        if self.event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.event_id);
+        if self.AHOLPNCMJOL != ::protobuf::EnumOrUnknown::new(super::FKFMMNOCIPK::FKFMMNOCIPK::REBATTLE_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(14, self.AHOLPNCMJOL.value());
+        }
+        if self.HCMKAKBEHDN != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.HCMKAKBEHDN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +123,14 @@ impl ::protobuf::Message for SceneEnterStageCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EGPENEEKJMB != false {
-            os.write_bool(12, self.EGPENEEKJMB)?;
+        if self.EJGPCIPHEED != false {
+            os.write_bool(12, self.EJGPCIPHEED)?;
         }
-        if self.event_id != 0 {
-            os.write_uint32(9, self.event_id)?;
+        if self.AHOLPNCMJOL != ::protobuf::EnumOrUnknown::new(super::FKFMMNOCIPK::FKFMMNOCIPK::REBATTLE_TYPE_NONE) {
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.AHOLPNCMJOL))?;
+        }
+        if self.HCMKAKBEHDN != 0 {
+            os.write_uint32(15, self.HCMKAKBEHDN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +149,17 @@ impl ::protobuf::Message for SceneEnterStageCsReq {
     }
 
     fn clear(&mut self) {
-        self.EGPENEEKJMB = false;
-        self.event_id = 0;
+        self.EJGPCIPHEED = false;
+        self.AHOLPNCMJOL = ::protobuf::EnumOrUnknown::new(super::FKFMMNOCIPK::FKFMMNOCIPK::REBATTLE_TYPE_NONE);
+        self.HCMKAKBEHDN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneEnterStageCsReq {
         static instance: SceneEnterStageCsReq = SceneEnterStageCsReq {
-            EGPENEEKJMB: false,
-            event_id: 0,
+            EJGPCIPHEED: false,
+            AHOLPNCMJOL: ::protobuf::EnumOrUnknown::from_i32(0),
+            HCMKAKBEHDN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for SceneEnterStageCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aSceneEnterStageCsReq.proto\"S\n\x14SceneEnterStageCsReq\x12\x20\n\
-    \x0bEGPENEEKJMB\x18\x0c\x20\x01(\x08R\x0bEGPENEEKJMB\x12\x19\n\x08event_\
-    id\x18\t\x20\x01(\rR\x07eventIdB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n\x1aSceneEnterStageCsReq.proto\x1a\x11FKFMMNOCIPK.proto\"\x8a\x01\n\
+    \x14SceneEnterStageCsReq\x12\x20\n\x0bEJGPCIPHEED\x18\x0c\x20\x01(\x08R\
+    \x0bEJGPCIPHEED\x12.\n\x0bAHOLPNCMJOL\x18\x0e\x20\x01(\x0e2\x0c.FKFMMNOC\
+    IPKR\x0bAHOLPNCMJOL\x12\x20\n\x0bHCMKAKBEHDN\x18\x0f\x20\x01(\rR\x0bHCMK\
+    AKBEHDNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -185,7 +205,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(0);
+            let mut deps = ::std::vec::Vec::with_capacity(1);
+            deps.push(super::FKFMMNOCIPK::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SceneEnterStageCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

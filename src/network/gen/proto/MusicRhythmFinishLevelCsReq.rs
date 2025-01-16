@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MusicRhythmFinishLevelCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MusicRhythmFinishLevelCsReq.score)
-    pub score: u32,
-    // @@protoc_insertion_point(field:MusicRhythmFinishLevelCsReq.star)
-    pub star: u32,
-    // @@protoc_insertion_point(field:MusicRhythmFinishLevelCsReq.is_full_combo)
-    pub is_full_combo: bool,
+    // @@protoc_insertion_point(field:MusicRhythmFinishLevelCsReq.MAIL_TYPE_STAR)
+    pub MAIL_TYPE_STAR: u32,
+    // @@protoc_insertion_point(field:MusicRhythmFinishLevelCsReq.HHLBDGMIBNP)
+    pub HHLBDGMIBNP: u32,
+    // @@protoc_insertion_point(field:MusicRhythmFinishLevelCsReq.JCMNDDHIKEP)
+    pub JCMNDDHIKEP: bool,
     // special fields
     // @@protoc_insertion_point(special_field:MusicRhythmFinishLevelCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl MusicRhythmFinishLevelCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "score",
-            |m: &MusicRhythmFinishLevelCsReq| { &m.score },
-            |m: &mut MusicRhythmFinishLevelCsReq| { &mut m.score },
+            "MAIL_TYPE_STAR",
+            |m: &MusicRhythmFinishLevelCsReq| { &m.MAIL_TYPE_STAR },
+            |m: &mut MusicRhythmFinishLevelCsReq| { &mut m.MAIL_TYPE_STAR },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "star",
-            |m: &MusicRhythmFinishLevelCsReq| { &m.star },
-            |m: &mut MusicRhythmFinishLevelCsReq| { &mut m.star },
+            "HHLBDGMIBNP",
+            |m: &MusicRhythmFinishLevelCsReq| { &m.HHLBDGMIBNP },
+            |m: &mut MusicRhythmFinishLevelCsReq| { &mut m.HHLBDGMIBNP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_full_combo",
-            |m: &MusicRhythmFinishLevelCsReq| { &m.is_full_combo },
-            |m: &mut MusicRhythmFinishLevelCsReq| { &mut m.is_full_combo },
+            "JCMNDDHIKEP",
+            |m: &MusicRhythmFinishLevelCsReq| { &m.JCMNDDHIKEP },
+            |m: &mut MusicRhythmFinishLevelCsReq| { &mut m.JCMNDDHIKEP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MusicRhythmFinishLevelCsReq>(
             "MusicRhythmFinishLevelCsReq",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for MusicRhythmFinishLevelCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.score = is.read_uint32()?;
+                48 => {
+                    self.MAIL_TYPE_STAR = is.read_uint32()?;
                 },
-                88 => {
-                    self.star = is.read_uint32()?;
+                72 => {
+                    self.HHLBDGMIBNP = is.read_uint32()?;
                 },
-                16 => {
-                    self.is_full_combo = is.read_bool()?;
+                64 => {
+                    self.JCMNDDHIKEP = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for MusicRhythmFinishLevelCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.score != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.score);
+        if self.MAIL_TYPE_STAR != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.MAIL_TYPE_STAR);
         }
-        if self.star != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.star);
+        if self.HHLBDGMIBNP != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.HHLBDGMIBNP);
         }
-        if self.is_full_combo != false {
+        if self.JCMNDDHIKEP != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -123,14 +123,14 @@ impl ::protobuf::Message for MusicRhythmFinishLevelCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.score != 0 {
-            os.write_uint32(12, self.score)?;
+        if self.MAIL_TYPE_STAR != 0 {
+            os.write_uint32(6, self.MAIL_TYPE_STAR)?;
         }
-        if self.star != 0 {
-            os.write_uint32(11, self.star)?;
+        if self.HHLBDGMIBNP != 0 {
+            os.write_uint32(9, self.HHLBDGMIBNP)?;
         }
-        if self.is_full_combo != false {
-            os.write_bool(2, self.is_full_combo)?;
+        if self.JCMNDDHIKEP != false {
+            os.write_bool(8, self.JCMNDDHIKEP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for MusicRhythmFinishLevelCsReq {
     }
 
     fn clear(&mut self) {
-        self.score = 0;
-        self.star = 0;
-        self.is_full_combo = false;
+        self.MAIL_TYPE_STAR = 0;
+        self.HHLBDGMIBNP = 0;
+        self.JCMNDDHIKEP = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MusicRhythmFinishLevelCsReq {
         static instance: MusicRhythmFinishLevelCsReq = MusicRhythmFinishLevelCsReq {
-            score: 0,
-            star: 0,
-            is_full_combo: false,
+            MAIL_TYPE_STAR: 0,
+            HHLBDGMIBNP: 0,
+            JCMNDDHIKEP: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for MusicRhythmFinishLevelCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!MusicRhythmFinishLevelCsReq.proto\"k\n\x1bMusicRhythmFinishLevelCsReq\
-    \x12\x14\n\x05score\x18\x0c\x20\x01(\rR\x05score\x12\x12\n\x04star\x18\
-    \x0b\x20\x01(\rR\x04star\x12\"\n\ris_full_combo\x18\x02\x20\x01(\x08R\
-    \x0bisFullComboB\x15\n\x13emu.lunarcore.protob\x06proto3\
+    \n!MusicRhythmFinishLevelCsReq.proto\"\x87\x01\n\x1bMusicRhythmFinishLev\
+    elCsReq\x12$\n\x0eMAIL_TYPE_STAR\x18\x06\x20\x01(\rR\x0cMAILTYPESTAR\x12\
+    \x20\n\x0bHHLBDGMIBNP\x18\t\x20\x01(\rR\x0bHHLBDGMIBNP\x12\x20\n\x0bJCMN\
+    DDHIKEP\x18\x08\x20\x01(\x08R\x0bJCMNDDHIKEPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

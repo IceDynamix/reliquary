@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdateGroupPropertyCsReq {
     // message fields
-    // @@protoc_insertion_point(field:UpdateGroupPropertyCsReq.OEOPFGEDFGB)
-    pub OEOPFGEDFGB: i32,
-    // @@protoc_insertion_point(field:UpdateGroupPropertyCsReq.IJGMJLMJABD)
-    pub IJGMJLMJABD: u32,
-    // @@protoc_insertion_point(field:UpdateGroupPropertyCsReq.ILIFHHJFMIH)
-    pub ILIFHHJFMIH: u32,
-    // @@protoc_insertion_point(field:UpdateGroupPropertyCsReq.LBLFEKKPCNC)
-    pub LBLFEKKPCNC: ::std::string::String,
-    // @@protoc_insertion_point(field:UpdateGroupPropertyCsReq.PMCIJKIINJL)
-    pub PMCIJKIINJL: u32,
+    // @@protoc_insertion_point(field:UpdateGroupPropertyCsReq.BJNKEEFKAIK)
+    pub BJNKEEFKAIK: u32,
+    // @@protoc_insertion_point(field:UpdateGroupPropertyCsReq.LKPFMBIBEEN)
+    pub LKPFMBIBEEN: i32,
+    // @@protoc_insertion_point(field:UpdateGroupPropertyCsReq.HLOMDJJPMEP)
+    pub HLOMDJJPMEP: ::std::string::String,
+    // @@protoc_insertion_point(field:UpdateGroupPropertyCsReq.OLGCJIKGFFC)
+    pub OLGCJIKGFFC: u32,
+    // @@protoc_insertion_point(field:UpdateGroupPropertyCsReq.IOPPGEGDHGL)
+    pub IOPPGEGDHGL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:UpdateGroupPropertyCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,29 +59,29 @@ impl UpdateGroupPropertyCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OEOPFGEDFGB",
-            |m: &UpdateGroupPropertyCsReq| { &m.OEOPFGEDFGB },
-            |m: &mut UpdateGroupPropertyCsReq| { &mut m.OEOPFGEDFGB },
+            "BJNKEEFKAIK",
+            |m: &UpdateGroupPropertyCsReq| { &m.BJNKEEFKAIK },
+            |m: &mut UpdateGroupPropertyCsReq| { &mut m.BJNKEEFKAIK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IJGMJLMJABD",
-            |m: &UpdateGroupPropertyCsReq| { &m.IJGMJLMJABD },
-            |m: &mut UpdateGroupPropertyCsReq| { &mut m.IJGMJLMJABD },
+            "LKPFMBIBEEN",
+            |m: &UpdateGroupPropertyCsReq| { &m.LKPFMBIBEEN },
+            |m: &mut UpdateGroupPropertyCsReq| { &mut m.LKPFMBIBEEN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ILIFHHJFMIH",
-            |m: &UpdateGroupPropertyCsReq| { &m.ILIFHHJFMIH },
-            |m: &mut UpdateGroupPropertyCsReq| { &mut m.ILIFHHJFMIH },
+            "HLOMDJJPMEP",
+            |m: &UpdateGroupPropertyCsReq| { &m.HLOMDJJPMEP },
+            |m: &mut UpdateGroupPropertyCsReq| { &mut m.HLOMDJJPMEP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LBLFEKKPCNC",
-            |m: &UpdateGroupPropertyCsReq| { &m.LBLFEKKPCNC },
-            |m: &mut UpdateGroupPropertyCsReq| { &mut m.LBLFEKKPCNC },
+            "OLGCJIKGFFC",
+            |m: &UpdateGroupPropertyCsReq| { &m.OLGCJIKGFFC },
+            |m: &mut UpdateGroupPropertyCsReq| { &mut m.OLGCJIKGFFC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PMCIJKIINJL",
-            |m: &UpdateGroupPropertyCsReq| { &m.PMCIJKIINJL },
-            |m: &mut UpdateGroupPropertyCsReq| { &mut m.PMCIJKIINJL },
+            "IOPPGEGDHGL",
+            |m: &UpdateGroupPropertyCsReq| { &m.IOPPGEGDHGL },
+            |m: &mut UpdateGroupPropertyCsReq| { &mut m.IOPPGEGDHGL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdateGroupPropertyCsReq>(
             "UpdateGroupPropertyCsReq",
@@ -101,20 +101,20 @@ impl ::protobuf::Message for UpdateGroupPropertyCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.OEOPFGEDFGB = is.read_int32()?;
+                16 => {
+                    self.BJNKEEFKAIK = is.read_uint32()?;
                 },
-                40 => {
-                    self.IJGMJLMJABD = is.read_uint32()?;
-                },
-                8 => {
-                    self.ILIFHHJFMIH = is.read_uint32()?;
+                104 => {
+                    self.LKPFMBIBEEN = is.read_int32()?;
                 },
                 98 => {
-                    self.LBLFEKKPCNC = is.read_string()?;
+                    self.HLOMDJJPMEP = is.read_string()?;
                 },
-                64 => {
-                    self.PMCIJKIINJL = is.read_uint32()?;
+                48 => {
+                    self.OLGCJIKGFFC = is.read_uint32()?;
+                },
+                32 => {
+                    self.IOPPGEGDHGL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,20 +128,20 @@ impl ::protobuf::Message for UpdateGroupPropertyCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OEOPFGEDFGB != 0 {
-            my_size += ::protobuf::rt::int32_size(9, self.OEOPFGEDFGB);
+        if self.BJNKEEFKAIK != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.BJNKEEFKAIK);
         }
-        if self.IJGMJLMJABD != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.IJGMJLMJABD);
+        if self.LKPFMBIBEEN != 0 {
+            my_size += ::protobuf::rt::int32_size(13, self.LKPFMBIBEEN);
         }
-        if self.ILIFHHJFMIH != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.ILIFHHJFMIH);
+        if !self.HLOMDJJPMEP.is_empty() {
+            my_size += ::protobuf::rt::string_size(12, &self.HLOMDJJPMEP);
         }
-        if !self.LBLFEKKPCNC.is_empty() {
-            my_size += ::protobuf::rt::string_size(12, &self.LBLFEKKPCNC);
+        if self.OLGCJIKGFFC != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.OLGCJIKGFFC);
         }
-        if self.PMCIJKIINJL != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.PMCIJKIINJL);
+        if self.IOPPGEGDHGL != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.IOPPGEGDHGL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for UpdateGroupPropertyCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OEOPFGEDFGB != 0 {
-            os.write_int32(9, self.OEOPFGEDFGB)?;
+        if self.BJNKEEFKAIK != 0 {
+            os.write_uint32(2, self.BJNKEEFKAIK)?;
         }
-        if self.IJGMJLMJABD != 0 {
-            os.write_uint32(5, self.IJGMJLMJABD)?;
+        if self.LKPFMBIBEEN != 0 {
+            os.write_int32(13, self.LKPFMBIBEEN)?;
         }
-        if self.ILIFHHJFMIH != 0 {
-            os.write_uint32(1, self.ILIFHHJFMIH)?;
+        if !self.HLOMDJJPMEP.is_empty() {
+            os.write_string(12, &self.HLOMDJJPMEP)?;
         }
-        if !self.LBLFEKKPCNC.is_empty() {
-            os.write_string(12, &self.LBLFEKKPCNC)?;
+        if self.OLGCJIKGFFC != 0 {
+            os.write_uint32(6, self.OLGCJIKGFFC)?;
         }
-        if self.PMCIJKIINJL != 0 {
-            os.write_uint32(8, self.PMCIJKIINJL)?;
+        if self.IOPPGEGDHGL != 0 {
+            os.write_uint32(4, self.IOPPGEGDHGL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for UpdateGroupPropertyCsReq {
     }
 
     fn clear(&mut self) {
-        self.OEOPFGEDFGB = 0;
-        self.IJGMJLMJABD = 0;
-        self.ILIFHHJFMIH = 0;
-        self.LBLFEKKPCNC.clear();
-        self.PMCIJKIINJL = 0;
+        self.BJNKEEFKAIK = 0;
+        self.LKPFMBIBEEN = 0;
+        self.HLOMDJJPMEP.clear();
+        self.OLGCJIKGFFC = 0;
+        self.IOPPGEGDHGL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateGroupPropertyCsReq {
         static instance: UpdateGroupPropertyCsReq = UpdateGroupPropertyCsReq {
-            OEOPFGEDFGB: 0,
-            IJGMJLMJABD: 0,
-            ILIFHHJFMIH: 0,
-            LBLFEKKPCNC: ::std::string::String::new(),
-            PMCIJKIINJL: 0,
+            BJNKEEFKAIK: 0,
+            LKPFMBIBEEN: 0,
+            HLOMDJJPMEP: ::std::string::String::new(),
+            OLGCJIKGFFC: 0,
+            IOPPGEGDHGL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for UpdateGroupPropertyCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eUpdateGroupPropertyCsReq.proto\"\xc4\x01\n\x18UpdateGroupPropertyC\
-    sReq\x12\x20\n\x0bOEOPFGEDFGB\x18\t\x20\x01(\x05R\x0bOEOPFGEDFGB\x12\x20\
-    \n\x0bIJGMJLMJABD\x18\x05\x20\x01(\rR\x0bIJGMJLMJABD\x12\x20\n\x0bILIFHH\
-    JFMIH\x18\x01\x20\x01(\rR\x0bILIFHHJFMIH\x12\x20\n\x0bLBLFEKKPCNC\x18\
-    \x0c\x20\x01(\tR\x0bLBLFEKKPCNC\x12\x20\n\x0bPMCIJKIINJL\x18\x08\x20\x01\
-    (\rR\x0bPMCIJKIINJLb\x06proto3\
+    sReq\x12\x20\n\x0bBJNKEEFKAIK\x18\x02\x20\x01(\rR\x0bBJNKEEFKAIK\x12\x20\
+    \n\x0bLKPFMBIBEEN\x18\r\x20\x01(\x05R\x0bLKPFMBIBEEN\x12\x20\n\x0bHLOMDJ\
+    JPMEP\x18\x0c\x20\x01(\tR\x0bHLOMDJJPMEP\x12\x20\n\x0bOLGCJIKGFFC\x18\
+    \x06\x20\x01(\rR\x0bOLGCJIKGFFC\x12\x20\n\x0bIOPPGEGDHGL\x18\x04\x20\x01\
+    (\rR\x0bIOPPGEGDHGLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

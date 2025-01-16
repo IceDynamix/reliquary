@@ -46,6 +46,10 @@ pub enum MultiPathAvatarType {
     BoyShamanType = 8005,
     // @@protoc_insertion_point(enum_value:MultiPathAvatarType.GirlShamanType)
     GirlShamanType = 8006,
+    // @@protoc_insertion_point(enum_value:MultiPathAvatarType.BoyMemoryType)
+    BoyMemoryType = 8007,
+    // @@protoc_insertion_point(enum_value:MultiPathAvatarType.GirlMemoryType)
+    GirlMemoryType = 8008,
 }
 
 impl ::protobuf::Enum for MultiPathAvatarType {
@@ -66,6 +70,8 @@ impl ::protobuf::Enum for MultiPathAvatarType {
             8004 => ::std::option::Option::Some(MultiPathAvatarType::GirlKnightType),
             8005 => ::std::option::Option::Some(MultiPathAvatarType::BoyShamanType),
             8006 => ::std::option::Option::Some(MultiPathAvatarType::GirlShamanType),
+            8007 => ::std::option::Option::Some(MultiPathAvatarType::BoyMemoryType),
+            8008 => ::std::option::Option::Some(MultiPathAvatarType::GirlMemoryType),
             _ => ::std::option::Option::None
         }
     }
@@ -81,6 +87,8 @@ impl ::protobuf::Enum for MultiPathAvatarType {
             "GirlKnightType" => ::std::option::Option::Some(MultiPathAvatarType::GirlKnightType),
             "BoyShamanType" => ::std::option::Option::Some(MultiPathAvatarType::BoyShamanType),
             "GirlShamanType" => ::std::option::Option::Some(MultiPathAvatarType::GirlShamanType),
+            "BoyMemoryType" => ::std::option::Option::Some(MultiPathAvatarType::BoyMemoryType),
+            "GirlMemoryType" => ::std::option::Option::Some(MultiPathAvatarType::GirlMemoryType),
             _ => ::std::option::Option::None
         }
     }
@@ -95,6 +103,8 @@ impl ::protobuf::Enum for MultiPathAvatarType {
         MultiPathAvatarType::GirlKnightType,
         MultiPathAvatarType::BoyShamanType,
         MultiPathAvatarType::GirlShamanType,
+        MultiPathAvatarType::BoyMemoryType,
+        MultiPathAvatarType::GirlMemoryType,
     ];
 }
 
@@ -115,6 +125,8 @@ impl ::protobuf::EnumFull for MultiPathAvatarType {
             MultiPathAvatarType::GirlKnightType => 6,
             MultiPathAvatarType::BoyShamanType => 7,
             MultiPathAvatarType::GirlShamanType => 8,
+            MultiPathAvatarType::BoyMemoryType => 9,
+            MultiPathAvatarType::GirlMemoryType => 10,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -133,13 +145,13 @@ impl MultiPathAvatarType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19MultiPathAvatarType.proto*\xde\x01\n\x13MultiPathAvatarType\x12\
+    \n\x19MultiPathAvatarType.proto*\x87\x02\n\x13MultiPathAvatarType\x12\
     \x1b\n\x17MultiPathAvatarTypeNone\x10\0\x12\x16\n\x11Mar_7thKnightType\
     \x10\xe9\x07\x12\x15\n\x10Mar_7thRogueType\x10\xc8\t\x12\x13\n\x0eBoyWar\
     riorType\x10\xc1>\x12\x14\n\x0fGirlWarriorType\x10\xc2>\x12\x12\n\rBoyKn\
     ightType\x10\xc3>\x12\x13\n\x0eGirlKnightType\x10\xc4>\x12\x12\n\rBoySha\
-    manType\x10\xc5>\x12\x13\n\x0eGirlShamanType\x10\xc6>B\x15\n\x13emu.luna\
-    rcore.protob\x06proto3\
+    manType\x10\xc5>\x12\x13\n\x0eGirlShamanType\x10\xc6>\x12\x12\n\rBoyMemo\
+    ryType\x10\xc7>\x12\x13\n\x0eGirlMemoryType\x10\xc8>b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

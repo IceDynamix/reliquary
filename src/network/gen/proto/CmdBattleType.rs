@@ -30,34 +30,34 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub enum CmdBattleType {
     // @@protoc_insertion_point(enum_value:CmdBattleType.CmdBattleTypeNone)
     CmdBattleTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdBattleLogReportCsReq)
-    CmdBattleLogReportCsReq = 116,
-    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdQuitBattleCsReq)
-    CmdQuitBattleCsReq = 103,
-    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdGetCurBattleInfoCsReq)
-    CmdGetCurBattleInfoCsReq = 139,
-    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdRebattleByClientCsNotify)
-    CmdRebattleByClientCsNotify = 175,
-    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdQuitBattleScRsp)
-    CmdQuitBattleScRsp = 146,
-    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdPVEBattleResultCsReq)
-    CmdPVEBattleResultCsReq = 159,
-    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdBattleLogReportScRsp)
-    CmdBattleLogReportScRsp = 147,
-    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdServerSimulateBattleFinishScNotify)
-    CmdServerSimulateBattleFinishScNotify = 174,
-    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdSyncClientResVersionScRsp)
-    CmdSyncClientResVersionScRsp = 137,
     // @@protoc_insertion_point(enum_value:CmdBattleType.CmdQuitBattleScNotify)
-    CmdQuitBattleScNotify = 180,
-    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdGetCurBattleInfoScRsp)
-    CmdGetCurBattleInfoScRsp = 153,
+    CmdQuitBattleScNotify = 124,
+    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdGetCurBattleInfoCsReq)
+    CmdGetCurBattleInfoCsReq = 167,
     // @@protoc_insertion_point(enum_value:CmdBattleType.CmdPVEBattleResultScRsp)
-    CmdPVEBattleResultScRsp = 120,
-    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdReBattleAfterBattleLoseCsNotify)
-    CmdReBattleAfterBattleLoseCsNotify = 130,
+    CmdPVEBattleResultScRsp = 195,
+    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdPVEBattleResultCsReq)
+    CmdPVEBattleResultCsReq = 136,
     // @@protoc_insertion_point(enum_value:CmdBattleType.CmdSyncClientResVersionCsReq)
-    CmdSyncClientResVersionCsReq = 134,
+    CmdSyncClientResVersionCsReq = 152,
+    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdQuitBattleCsReq)
+    CmdQuitBattleCsReq = 184,
+    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdServerSimulateBattleFinishScNotify)
+    CmdServerSimulateBattleFinishScNotify = 143,
+    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdQuitBattleScRsp)
+    CmdQuitBattleScRsp = 127,
+    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdBattleLogReportScRsp)
+    CmdBattleLogReportScRsp = 134,
+    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdBattleLogReportCsReq)
+    CmdBattleLogReportCsReq = 193,
+    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdReBattleAfterBattleLoseCsNotify)
+    CmdReBattleAfterBattleLoseCsNotify = 146,
+    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdSyncClientResVersionScRsp)
+    CmdSyncClientResVersionScRsp = 174,
+    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdGetCurBattleInfoScRsp)
+    CmdGetCurBattleInfoScRsp = 128,
+    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdRebattleByClientCsNotify)
+    CmdRebattleByClientCsNotify = 125,
 }
 
 impl ::protobuf::Enum for CmdBattleType {
@@ -70,20 +70,20 @@ impl ::protobuf::Enum for CmdBattleType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdBattleType> {
         match value {
             0 => ::std::option::Option::Some(CmdBattleType::CmdBattleTypeNone),
-            116 => ::std::option::Option::Some(CmdBattleType::CmdBattleLogReportCsReq),
-            103 => ::std::option::Option::Some(CmdBattleType::CmdQuitBattleCsReq),
-            139 => ::std::option::Option::Some(CmdBattleType::CmdGetCurBattleInfoCsReq),
-            175 => ::std::option::Option::Some(CmdBattleType::CmdRebattleByClientCsNotify),
-            146 => ::std::option::Option::Some(CmdBattleType::CmdQuitBattleScRsp),
-            159 => ::std::option::Option::Some(CmdBattleType::CmdPVEBattleResultCsReq),
-            147 => ::std::option::Option::Some(CmdBattleType::CmdBattleLogReportScRsp),
-            174 => ::std::option::Option::Some(CmdBattleType::CmdServerSimulateBattleFinishScNotify),
-            137 => ::std::option::Option::Some(CmdBattleType::CmdSyncClientResVersionScRsp),
-            180 => ::std::option::Option::Some(CmdBattleType::CmdQuitBattleScNotify),
-            153 => ::std::option::Option::Some(CmdBattleType::CmdGetCurBattleInfoScRsp),
-            120 => ::std::option::Option::Some(CmdBattleType::CmdPVEBattleResultScRsp),
-            130 => ::std::option::Option::Some(CmdBattleType::CmdReBattleAfterBattleLoseCsNotify),
-            134 => ::std::option::Option::Some(CmdBattleType::CmdSyncClientResVersionCsReq),
+            124 => ::std::option::Option::Some(CmdBattleType::CmdQuitBattleScNotify),
+            167 => ::std::option::Option::Some(CmdBattleType::CmdGetCurBattleInfoCsReq),
+            195 => ::std::option::Option::Some(CmdBattleType::CmdPVEBattleResultScRsp),
+            136 => ::std::option::Option::Some(CmdBattleType::CmdPVEBattleResultCsReq),
+            152 => ::std::option::Option::Some(CmdBattleType::CmdSyncClientResVersionCsReq),
+            184 => ::std::option::Option::Some(CmdBattleType::CmdQuitBattleCsReq),
+            143 => ::std::option::Option::Some(CmdBattleType::CmdServerSimulateBattleFinishScNotify),
+            127 => ::std::option::Option::Some(CmdBattleType::CmdQuitBattleScRsp),
+            134 => ::std::option::Option::Some(CmdBattleType::CmdBattleLogReportScRsp),
+            193 => ::std::option::Option::Some(CmdBattleType::CmdBattleLogReportCsReq),
+            146 => ::std::option::Option::Some(CmdBattleType::CmdReBattleAfterBattleLoseCsNotify),
+            174 => ::std::option::Option::Some(CmdBattleType::CmdSyncClientResVersionScRsp),
+            128 => ::std::option::Option::Some(CmdBattleType::CmdGetCurBattleInfoScRsp),
+            125 => ::std::option::Option::Some(CmdBattleType::CmdRebattleByClientCsNotify),
             _ => ::std::option::Option::None
         }
     }
@@ -91,40 +91,40 @@ impl ::protobuf::Enum for CmdBattleType {
     fn from_str(str: &str) -> ::std::option::Option<CmdBattleType> {
         match str {
             "CmdBattleTypeNone" => ::std::option::Option::Some(CmdBattleType::CmdBattleTypeNone),
-            "CmdBattleLogReportCsReq" => ::std::option::Option::Some(CmdBattleType::CmdBattleLogReportCsReq),
-            "CmdQuitBattleCsReq" => ::std::option::Option::Some(CmdBattleType::CmdQuitBattleCsReq),
-            "CmdGetCurBattleInfoCsReq" => ::std::option::Option::Some(CmdBattleType::CmdGetCurBattleInfoCsReq),
-            "CmdRebattleByClientCsNotify" => ::std::option::Option::Some(CmdBattleType::CmdRebattleByClientCsNotify),
-            "CmdQuitBattleScRsp" => ::std::option::Option::Some(CmdBattleType::CmdQuitBattleScRsp),
-            "CmdPVEBattleResultCsReq" => ::std::option::Option::Some(CmdBattleType::CmdPVEBattleResultCsReq),
-            "CmdBattleLogReportScRsp" => ::std::option::Option::Some(CmdBattleType::CmdBattleLogReportScRsp),
-            "CmdServerSimulateBattleFinishScNotify" => ::std::option::Option::Some(CmdBattleType::CmdServerSimulateBattleFinishScNotify),
-            "CmdSyncClientResVersionScRsp" => ::std::option::Option::Some(CmdBattleType::CmdSyncClientResVersionScRsp),
             "CmdQuitBattleScNotify" => ::std::option::Option::Some(CmdBattleType::CmdQuitBattleScNotify),
-            "CmdGetCurBattleInfoScRsp" => ::std::option::Option::Some(CmdBattleType::CmdGetCurBattleInfoScRsp),
+            "CmdGetCurBattleInfoCsReq" => ::std::option::Option::Some(CmdBattleType::CmdGetCurBattleInfoCsReq),
             "CmdPVEBattleResultScRsp" => ::std::option::Option::Some(CmdBattleType::CmdPVEBattleResultScRsp),
-            "CmdReBattleAfterBattleLoseCsNotify" => ::std::option::Option::Some(CmdBattleType::CmdReBattleAfterBattleLoseCsNotify),
+            "CmdPVEBattleResultCsReq" => ::std::option::Option::Some(CmdBattleType::CmdPVEBattleResultCsReq),
             "CmdSyncClientResVersionCsReq" => ::std::option::Option::Some(CmdBattleType::CmdSyncClientResVersionCsReq),
+            "CmdQuitBattleCsReq" => ::std::option::Option::Some(CmdBattleType::CmdQuitBattleCsReq),
+            "CmdServerSimulateBattleFinishScNotify" => ::std::option::Option::Some(CmdBattleType::CmdServerSimulateBattleFinishScNotify),
+            "CmdQuitBattleScRsp" => ::std::option::Option::Some(CmdBattleType::CmdQuitBattleScRsp),
+            "CmdBattleLogReportScRsp" => ::std::option::Option::Some(CmdBattleType::CmdBattleLogReportScRsp),
+            "CmdBattleLogReportCsReq" => ::std::option::Option::Some(CmdBattleType::CmdBattleLogReportCsReq),
+            "CmdReBattleAfterBattleLoseCsNotify" => ::std::option::Option::Some(CmdBattleType::CmdReBattleAfterBattleLoseCsNotify),
+            "CmdSyncClientResVersionScRsp" => ::std::option::Option::Some(CmdBattleType::CmdSyncClientResVersionScRsp),
+            "CmdGetCurBattleInfoScRsp" => ::std::option::Option::Some(CmdBattleType::CmdGetCurBattleInfoScRsp),
+            "CmdRebattleByClientCsNotify" => ::std::option::Option::Some(CmdBattleType::CmdRebattleByClientCsNotify),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdBattleType] = &[
         CmdBattleType::CmdBattleTypeNone,
-        CmdBattleType::CmdBattleLogReportCsReq,
-        CmdBattleType::CmdQuitBattleCsReq,
-        CmdBattleType::CmdGetCurBattleInfoCsReq,
-        CmdBattleType::CmdRebattleByClientCsNotify,
-        CmdBattleType::CmdQuitBattleScRsp,
-        CmdBattleType::CmdPVEBattleResultCsReq,
-        CmdBattleType::CmdBattleLogReportScRsp,
-        CmdBattleType::CmdServerSimulateBattleFinishScNotify,
-        CmdBattleType::CmdSyncClientResVersionScRsp,
         CmdBattleType::CmdQuitBattleScNotify,
-        CmdBattleType::CmdGetCurBattleInfoScRsp,
+        CmdBattleType::CmdGetCurBattleInfoCsReq,
         CmdBattleType::CmdPVEBattleResultScRsp,
-        CmdBattleType::CmdReBattleAfterBattleLoseCsNotify,
+        CmdBattleType::CmdPVEBattleResultCsReq,
         CmdBattleType::CmdSyncClientResVersionCsReq,
+        CmdBattleType::CmdQuitBattleCsReq,
+        CmdBattleType::CmdServerSimulateBattleFinishScNotify,
+        CmdBattleType::CmdQuitBattleScRsp,
+        CmdBattleType::CmdBattleLogReportScRsp,
+        CmdBattleType::CmdBattleLogReportCsReq,
+        CmdBattleType::CmdReBattleAfterBattleLoseCsNotify,
+        CmdBattleType::CmdSyncClientResVersionScRsp,
+        CmdBattleType::CmdGetCurBattleInfoScRsp,
+        CmdBattleType::CmdRebattleByClientCsNotify,
     ];
 }
 
@@ -137,20 +137,20 @@ impl ::protobuf::EnumFull for CmdBattleType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdBattleType::CmdBattleTypeNone => 0,
-            CmdBattleType::CmdBattleLogReportCsReq => 1,
-            CmdBattleType::CmdQuitBattleCsReq => 2,
-            CmdBattleType::CmdGetCurBattleInfoCsReq => 3,
-            CmdBattleType::CmdRebattleByClientCsNotify => 4,
-            CmdBattleType::CmdQuitBattleScRsp => 5,
-            CmdBattleType::CmdPVEBattleResultCsReq => 6,
-            CmdBattleType::CmdBattleLogReportScRsp => 7,
-            CmdBattleType::CmdServerSimulateBattleFinishScNotify => 8,
-            CmdBattleType::CmdSyncClientResVersionScRsp => 9,
-            CmdBattleType::CmdQuitBattleScNotify => 10,
-            CmdBattleType::CmdGetCurBattleInfoScRsp => 11,
-            CmdBattleType::CmdPVEBattleResultScRsp => 12,
-            CmdBattleType::CmdReBattleAfterBattleLoseCsNotify => 13,
-            CmdBattleType::CmdSyncClientResVersionCsReq => 14,
+            CmdBattleType::CmdQuitBattleScNotify => 1,
+            CmdBattleType::CmdGetCurBattleInfoCsReq => 2,
+            CmdBattleType::CmdPVEBattleResultScRsp => 3,
+            CmdBattleType::CmdPVEBattleResultCsReq => 4,
+            CmdBattleType::CmdSyncClientResVersionCsReq => 5,
+            CmdBattleType::CmdQuitBattleCsReq => 6,
+            CmdBattleType::CmdServerSimulateBattleFinishScNotify => 7,
+            CmdBattleType::CmdQuitBattleScRsp => 8,
+            CmdBattleType::CmdBattleLogReportScRsp => 9,
+            CmdBattleType::CmdBattleLogReportCsReq => 10,
+            CmdBattleType::CmdReBattleAfterBattleLoseCsNotify => 11,
+            CmdBattleType::CmdSyncClientResVersionScRsp => 12,
+            CmdBattleType::CmdGetCurBattleInfoScRsp => 13,
+            CmdBattleType::CmdRebattleByClientCsNotify => 14,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -170,16 +170,16 @@ impl CmdBattleType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13CmdBattleType.proto*\xe4\x03\n\rCmdBattleType\x12\x15\n\x11CmdBatt\
-    leTypeNone\x10\0\x12\x1b\n\x17CmdBattleLogReportCsReq\x10t\x12\x16\n\x12\
-    CmdQuitBattleCsReq\x10g\x12\x1d\n\x18CmdGetCurBattleInfoCsReq\x10\x8b\
-    \x01\x12\x20\n\x1bCmdRebattleByClientCsNotify\x10\xaf\x01\x12\x17\n\x12C\
-    mdQuitBattleScRsp\x10\x92\x01\x12\x1c\n\x17CmdPVEBattleResultCsReq\x10\
-    \x9f\x01\x12\x1c\n\x17CmdBattleLogReportScRsp\x10\x93\x01\x12*\n%CmdServ\
-    erSimulateBattleFinishScNotify\x10\xae\x01\x12!\n\x1cCmdSyncClientResVer\
-    sionScRsp\x10\x89\x01\x12\x1a\n\x15CmdQuitBattleScNotify\x10\xb4\x01\x12\
-    \x1d\n\x18CmdGetCurBattleInfoScRsp\x10\x99\x01\x12\x1b\n\x17CmdPVEBattle\
-    ResultScRsp\x10x\x12'\n\"CmdReBattleAfterBattleLoseCsNotify\x10\x82\x01\
-    \x12!\n\x1cCmdSyncClientResVersionCsReq\x10\x86\x01b\x06proto3\
+    leTypeNone\x10\0\x12\x19\n\x15CmdQuitBattleScNotify\x10|\x12\x1d\n\x18Cm\
+    dGetCurBattleInfoCsReq\x10\xa7\x01\x12\x1c\n\x17CmdPVEBattleResultScRsp\
+    \x10\xc3\x01\x12\x1c\n\x17CmdPVEBattleResultCsReq\x10\x88\x01\x12!\n\x1c\
+    CmdSyncClientResVersionCsReq\x10\x98\x01\x12\x17\n\x12CmdQuitBattleCsReq\
+    \x10\xb8\x01\x12*\n%CmdServerSimulateBattleFinishScNotify\x10\x8f\x01\
+    \x12\x16\n\x12CmdQuitBattleScRsp\x10\x7f\x12\x1c\n\x17CmdBattleLogReport\
+    ScRsp\x10\x86\x01\x12\x1c\n\x17CmdBattleLogReportCsReq\x10\xc1\x01\x12'\
+    \n\"CmdReBattleAfterBattleLoseCsNotify\x10\x92\x01\x12!\n\x1cCmdSyncClie\
+    ntResVersionScRsp\x10\xae\x01\x12\x1d\n\x18CmdGetCurBattleInfoScRsp\x10\
+    \x80\x01\x12\x1f\n\x1bCmdRebattleByClientCsNotify\x10}b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LeaveMapRotationRegionScRsp {
     // message fields
-    // @@protoc_insertion_point(field:LeaveMapRotationRegionScRsp.HDMFHOPNPAI)
-    pub HDMFHOPNPAI: ::protobuf::MessageField<super::IPDPIAGBMNO::IPDPIAGBMNO>,
-    // @@protoc_insertion_point(field:LeaveMapRotationRegionScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:LeaveMapRotationRegionScRsp.HPDCDPEIAHP)
-    pub HPDCDPEIAHP: u32,
+    // @@protoc_insertion_point(field:LeaveMapRotationRegionScRsp.LLLHPFLFKPP)
+    pub LLLHPFLFKPP: u32,
+    // @@protoc_insertion_point(field:LeaveMapRotationRegionScRsp.LNKKMEHBDPG)
+    pub LNKKMEHBDPG: ::protobuf::MessageField<super::LDFPBJIHOPD::LDFPBJIHOPD>,
+    // @@protoc_insertion_point(field:LeaveMapRotationRegionScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LeaveMapRotationRegionScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl LeaveMapRotationRegionScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IPDPIAGBMNO::IPDPIAGBMNO>(
-            "HDMFHOPNPAI",
-            |m: &LeaveMapRotationRegionScRsp| { &m.HDMFHOPNPAI },
-            |m: &mut LeaveMapRotationRegionScRsp| { &mut m.HDMFHOPNPAI },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LLLHPFLFKPP",
+            |m: &LeaveMapRotationRegionScRsp| { &m.LLLHPFLFKPP },
+            |m: &mut LeaveMapRotationRegionScRsp| { &mut m.LLLHPFLFKPP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LDFPBJIHOPD::LDFPBJIHOPD>(
+            "LNKKMEHBDPG",
+            |m: &LeaveMapRotationRegionScRsp| { &m.LNKKMEHBDPG },
+            |m: &mut LeaveMapRotationRegionScRsp| { &mut m.LNKKMEHBDPG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &LeaveMapRotationRegionScRsp| { &m.ADADHIHDHJC },
-            |m: &mut LeaveMapRotationRegionScRsp| { &mut m.ADADHIHDHJC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HPDCDPEIAHP",
-            |m: &LeaveMapRotationRegionScRsp| { &m.HPDCDPEIAHP },
-            |m: &mut LeaveMapRotationRegionScRsp| { &mut m.HPDCDPEIAHP },
+            "retcode",
+            |m: &LeaveMapRotationRegionScRsp| { &m.retcode },
+            |m: &mut LeaveMapRotationRegionScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LeaveMapRotationRegionScRsp>(
             "LeaveMapRotationRegionScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for LeaveMapRotationRegionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HDMFHOPNPAI)?;
+                32 => {
+                    self.LLLHPFLFKPP = is.read_uint32()?;
                 },
-                88 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LNKKMEHBDPG)?;
                 },
-                48 => {
-                    self.HPDCDPEIAHP = is.read_uint32()?;
+                112 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +108,15 @@ impl ::protobuf::Message for LeaveMapRotationRegionScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.HDMFHOPNPAI.as_ref() {
+        if self.LLLHPFLFKPP != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.LLLHPFLFKPP);
+        }
+        if let Some(v) = self.LNKKMEHBDPG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.ADADHIHDHJC);
-        }
-        if self.HPDCDPEIAHP != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.HPDCDPEIAHP);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for LeaveMapRotationRegionScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.HDMFHOPNPAI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if self.LLLHPFLFKPP != 0 {
+            os.write_uint32(4, self.LLLHPFLFKPP)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(11, self.ADADHIHDHJC)?;
+        if let Some(v) = self.LNKKMEHBDPG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
-        if self.HPDCDPEIAHP != 0 {
-            os.write_uint32(6, self.HPDCDPEIAHP)?;
+        if self.retcode != 0 {
+            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for LeaveMapRotationRegionScRsp {
     }
 
     fn clear(&mut self) {
-        self.HDMFHOPNPAI.clear();
-        self.ADADHIHDHJC = 0;
-        self.HPDCDPEIAHP = 0;
+        self.LLLHPFLFKPP = 0;
+        self.LNKKMEHBDPG.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LeaveMapRotationRegionScRsp {
         static instance: LeaveMapRotationRegionScRsp = LeaveMapRotationRegionScRsp {
-            HDMFHOPNPAI: ::protobuf::MessageField::none(),
-            ADADHIHDHJC: 0,
-            HPDCDPEIAHP: 0,
+            LLLHPFLFKPP: 0,
+            LNKKMEHBDPG: ::protobuf::MessageField::none(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for LeaveMapRotationRegionScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!LeaveMapRotationRegionScRsp.proto\x1a\x11IPDPIAGBMNO.proto\"\x91\x01\
-    \n\x1bLeaveMapRotationRegionScRsp\x12.\n\x0bHDMFHOPNPAI\x18\t\x20\x01(\
-    \x0b2\x0c.IPDPIAGBMNOR\x0bHDMFHOPNPAI\x12\x20\n\x0bADADHIHDHJC\x18\x0b\
-    \x20\x01(\rR\x0bADADHIHDHJC\x12\x20\n\x0bHPDCDPEIAHP\x18\x06\x20\x01(\rR\
-    \x0bHPDCDPEIAHPb\x06proto3\
+    \n!LeaveMapRotationRegionScRsp.proto\x1a\x11LDFPBJIHOPD.proto\"\x89\x01\
+    \n\x1bLeaveMapRotationRegionScRsp\x12\x20\n\x0bLLLHPFLFKPP\x18\x04\x20\
+    \x01(\rR\x0bLLLHPFLFKPP\x12.\n\x0bLNKKMEHBDPG\x18\x01\x20\x01(\x0b2\x0c.\
+    LDFPBJIHOPDR\x0bLNKKMEHBDPG\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07\
+    retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::IPDPIAGBMNO::file_descriptor().clone());
+            deps.push(super::LDFPBJIHOPD::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(LeaveMapRotationRegionScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

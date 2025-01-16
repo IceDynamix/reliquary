@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetChallengeRaidInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetChallengeRaidInfoScRsp.OCHCLCEEJNJ)
-    pub OCHCLCEEJNJ: ::std::vec::Vec<super::MHINMBLGHHD::MHINMBLGHHD>,
-    // @@protoc_insertion_point(field:GetChallengeRaidInfoScRsp.NFAPJEGAOAJ)
-    pub NFAPJEGAOAJ: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetChallengeRaidInfoScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
+    // @@protoc_insertion_point(field:GetChallengeRaidInfoScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetChallengeRaidInfoScRsp.OKNNLACIHPF)
+    pub OKNNLACIHPF: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetChallengeRaidInfoScRsp.CILPBABLFFC)
+    pub CILPBABLFFC: ::std::vec::Vec<super::HMJENOAHIHE::HMJENOAHIHE>,
     // special fields
     // @@protoc_insertion_point(special_field:GetChallengeRaidInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl GetChallengeRaidInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OCHCLCEEJNJ",
-            |m: &GetChallengeRaidInfoScRsp| { &m.OCHCLCEEJNJ },
-            |m: &mut GetChallengeRaidInfoScRsp| { &mut m.OCHCLCEEJNJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NFAPJEGAOAJ",
-            |m: &GetChallengeRaidInfoScRsp| { &m.NFAPJEGAOAJ },
-            |m: &mut GetChallengeRaidInfoScRsp| { &mut m.NFAPJEGAOAJ },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &GetChallengeRaidInfoScRsp| { &m.ADADHIHDHJC },
-            |m: &mut GetChallengeRaidInfoScRsp| { &mut m.ADADHIHDHJC },
+            "retcode",
+            |m: &GetChallengeRaidInfoScRsp| { &m.retcode },
+            |m: &mut GetChallengeRaidInfoScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OKNNLACIHPF",
+            |m: &GetChallengeRaidInfoScRsp| { &m.OKNNLACIHPF },
+            |m: &mut GetChallengeRaidInfoScRsp| { &mut m.OKNNLACIHPF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CILPBABLFFC",
+            |m: &GetChallengeRaidInfoScRsp| { &m.CILPBABLFFC },
+            |m: &mut GetChallengeRaidInfoScRsp| { &mut m.CILPBABLFFC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetChallengeRaidInfoScRsp>(
             "GetChallengeRaidInfoScRsp",
@@ -87,17 +87,17 @@ impl ::protobuf::Message for GetChallengeRaidInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    self.OCHCLCEEJNJ.push(is.read_message()?);
+                48 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NFAPJEGAOAJ)?;
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.OKNNLACIHPF)?;
                 },
-                120 => {
-                    self.NFAPJEGAOAJ.push(is.read_uint32()?);
+                64 => {
+                    self.OKNNLACIHPF.push(is.read_uint32()?);
                 },
-                80 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                90 => {
+                    self.CILPBABLFFC.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,31 +111,31 @@ impl ::protobuf::Message for GetChallengeRaidInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.OCHCLCEEJNJ {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+        }
+        for value in &self.OKNNLACIHPF {
+            my_size += ::protobuf::rt::uint32_size(8, *value);
+        };
+        for value in &self.CILPBABLFFC {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.NFAPJEGAOAJ {
-            my_size += ::protobuf::rt::uint32_size(15, *value);
-        };
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.ADADHIHDHJC);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.OCHCLCEEJNJ {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        };
-        for v in &self.NFAPJEGAOAJ {
-            os.write_uint32(15, *v)?;
-        };
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(10, self.ADADHIHDHJC)?;
+        if self.retcode != 0 {
+            os.write_uint32(6, self.retcode)?;
         }
+        for v in &self.OKNNLACIHPF {
+            os.write_uint32(8, *v)?;
+        };
+        for v in &self.CILPBABLFFC {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -153,17 +153,17 @@ impl ::protobuf::Message for GetChallengeRaidInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.OCHCLCEEJNJ.clear();
-        self.NFAPJEGAOAJ.clear();
-        self.ADADHIHDHJC = 0;
+        self.retcode = 0;
+        self.OKNNLACIHPF.clear();
+        self.CILPBABLFFC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetChallengeRaidInfoScRsp {
         static instance: GetChallengeRaidInfoScRsp = GetChallengeRaidInfoScRsp {
-            OCHCLCEEJNJ: ::std::vec::Vec::new(),
-            NFAPJEGAOAJ: ::std::vec::Vec::new(),
-            ADADHIHDHJC: 0,
+            retcode: 0,
+            OKNNLACIHPF: ::std::vec::Vec::new(),
+            CILPBABLFFC: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -188,11 +188,11 @@ impl ::protobuf::reflect::ProtobufValue for GetChallengeRaidInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fGetChallengeRaidInfoScRsp.proto\x1a\x11MHINMBLGHHD.proto\"\x8f\x01\
-    \n\x19GetChallengeRaidInfoScRsp\x12.\n\x0bOCHCLCEEJNJ\x18\x06\x20\x03(\
-    \x0b2\x0c.MHINMBLGHHDR\x0bOCHCLCEEJNJ\x12\x20\n\x0bNFAPJEGAOAJ\x18\x0f\
-    \x20\x03(\rR\x0bNFAPJEGAOAJ\x12\x20\n\x0bADADHIHDHJC\x18\n\x20\x01(\rR\
-    \x0bADADHIHDHJCb\x06proto3\
+    \n\x1fGetChallengeRaidInfoScRsp.proto\x1a\x11HMJENOAHIHE.proto\"\x87\x01\
+    \n\x19GetChallengeRaidInfoScRsp\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\
+    \x07retcode\x12\x20\n\x0bOKNNLACIHPF\x18\x08\x20\x03(\rR\x0bOKNNLACIHPF\
+    \x12.\n\x0bCILPBABLFFC\x18\x0b\x20\x03(\x0b2\x0c.HMJENOAHIHER\x0bCILPBAB\
+    LFFCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -210,7 +210,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::MHINMBLGHHD::file_descriptor().clone());
+            deps.push(super::HMJENOAHIHE::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetChallengeRaidInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

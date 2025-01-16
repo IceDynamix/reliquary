@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyRollRandomCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyRollRandomCsReq.FKMOJLILEDA)
-    pub FKMOJLILEDA: u32,
+    // @@protoc_insertion_point(field:MonopolyRollRandomCsReq.HCMKAKBEHDN)
+    pub HCMKAKBEHDN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyRollRandomCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,9 +51,9 @@ impl MonopolyRollRandomCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FKMOJLILEDA",
-            |m: &MonopolyRollRandomCsReq| { &m.FKMOJLILEDA },
-            |m: &mut MonopolyRollRandomCsReq| { &mut m.FKMOJLILEDA },
+            "HCMKAKBEHDN",
+            |m: &MonopolyRollRandomCsReq| { &m.HCMKAKBEHDN },
+            |m: &mut MonopolyRollRandomCsReq| { &mut m.HCMKAKBEHDN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyRollRandomCsReq>(
             "MonopolyRollRandomCsReq",
@@ -73,8 +73,8 @@ impl ::protobuf::Message for MonopolyRollRandomCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.FKMOJLILEDA = is.read_uint32()?;
+                112 => {
+                    self.HCMKAKBEHDN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,8 +88,8 @@ impl ::protobuf::Message for MonopolyRollRandomCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FKMOJLILEDA != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.FKMOJLILEDA);
+        if self.HCMKAKBEHDN != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.HCMKAKBEHDN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,8 +97,8 @@ impl ::protobuf::Message for MonopolyRollRandomCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FKMOJLILEDA != 0 {
-            os.write_uint32(11, self.FKMOJLILEDA)?;
+        if self.HCMKAKBEHDN != 0 {
+            os.write_uint32(14, self.HCMKAKBEHDN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for MonopolyRollRandomCsReq {
     }
 
     fn clear(&mut self) {
-        self.FKMOJLILEDA = 0;
+        self.HCMKAKBEHDN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyRollRandomCsReq {
         static instance: MonopolyRollRandomCsReq = MonopolyRollRandomCsReq {
-            FKMOJLILEDA: 0,
+            HCMKAKBEHDN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyRollRandomCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dMonopolyRollRandomCsReq.proto\";\n\x17MonopolyRollRandomCsReq\x12\
-    \x20\n\x0bFKMOJLILEDA\x18\x0b\x20\x01(\rR\x0bFKMOJLILEDAb\x06proto3\
+    \x20\n\x0bHCMKAKBEHDN\x18\x0e\x20\x01(\rR\x0bHCMKAKBEHDNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

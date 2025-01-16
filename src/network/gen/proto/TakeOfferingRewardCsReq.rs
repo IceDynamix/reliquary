@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeOfferingRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeOfferingRewardCsReq.LMFFBHEOONE)
-    pub LMFFBHEOONE: u32,
-    // @@protoc_insertion_point(field:TakeOfferingRewardCsReq.DDFEGMCDOGF)
-    pub DDFEGMCDOGF: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:TakeOfferingRewardCsReq.AJCHIGGPBAH)
-    pub AJCHIGGPBAH: u32,
+    // @@protoc_insertion_point(field:TakeOfferingRewardCsReq.PFHLBOGFBLC)
+    pub PFHLBOGFBLC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:TakeOfferingRewardCsReq.HNGNMJJIFJG)
+    pub HNGNMJJIFJG: u32,
+    // @@protoc_insertion_point(field:TakeOfferingRewardCsReq.CMDGNACLGID)
+    pub CMDGNACLGID: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeOfferingRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,20 +54,20 @@ impl TakeOfferingRewardCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LMFFBHEOONE",
-            |m: &TakeOfferingRewardCsReq| { &m.LMFFBHEOONE },
-            |m: &mut TakeOfferingRewardCsReq| { &mut m.LMFFBHEOONE },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DDFEGMCDOGF",
-            |m: &TakeOfferingRewardCsReq| { &m.DDFEGMCDOGF },
-            |m: &mut TakeOfferingRewardCsReq| { &mut m.DDFEGMCDOGF },
+            "PFHLBOGFBLC",
+            |m: &TakeOfferingRewardCsReq| { &m.PFHLBOGFBLC },
+            |m: &mut TakeOfferingRewardCsReq| { &mut m.PFHLBOGFBLC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AJCHIGGPBAH",
-            |m: &TakeOfferingRewardCsReq| { &m.AJCHIGGPBAH },
-            |m: &mut TakeOfferingRewardCsReq| { &mut m.AJCHIGGPBAH },
+            "HNGNMJJIFJG",
+            |m: &TakeOfferingRewardCsReq| { &m.HNGNMJJIFJG },
+            |m: &mut TakeOfferingRewardCsReq| { &mut m.HNGNMJJIFJG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CMDGNACLGID",
+            |m: &TakeOfferingRewardCsReq| { &m.CMDGNACLGID },
+            |m: &mut TakeOfferingRewardCsReq| { &mut m.CMDGNACLGID },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeOfferingRewardCsReq>(
             "TakeOfferingRewardCsReq",
@@ -87,17 +87,17 @@ impl ::protobuf::Message for TakeOfferingRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.LMFFBHEOONE = is.read_uint32()?;
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.PFHLBOGFBLC)?;
                 },
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.DDFEGMCDOGF)?;
+                56 => {
+                    self.PFHLBOGFBLC.push(is.read_uint32()?);
                 },
-                120 => {
-                    self.DDFEGMCDOGF.push(is.read_uint32()?);
+                16 => {
+                    self.HNGNMJJIFJG = is.read_uint32()?;
                 },
-                32 => {
-                    self.AJCHIGGPBAH = is.read_uint32()?;
+                88 => {
+                    self.CMDGNACLGID = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,14 +111,14 @@ impl ::protobuf::Message for TakeOfferingRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LMFFBHEOONE != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.LMFFBHEOONE);
-        }
-        for value in &self.DDFEGMCDOGF {
-            my_size += ::protobuf::rt::uint32_size(15, *value);
+        for value in &self.PFHLBOGFBLC {
+            my_size += ::protobuf::rt::uint32_size(7, *value);
         };
-        if self.AJCHIGGPBAH != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.AJCHIGGPBAH);
+        if self.HNGNMJJIFJG != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.HNGNMJJIFJG);
+        }
+        if self.CMDGNACLGID != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.CMDGNACLGID);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -126,14 +126,14 @@ impl ::protobuf::Message for TakeOfferingRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LMFFBHEOONE != 0 {
-            os.write_uint32(8, self.LMFFBHEOONE)?;
-        }
-        for v in &self.DDFEGMCDOGF {
-            os.write_uint32(15, *v)?;
+        for v in &self.PFHLBOGFBLC {
+            os.write_uint32(7, *v)?;
         };
-        if self.AJCHIGGPBAH != 0 {
-            os.write_uint32(4, self.AJCHIGGPBAH)?;
+        if self.HNGNMJJIFJG != 0 {
+            os.write_uint32(2, self.HNGNMJJIFJG)?;
+        }
+        if self.CMDGNACLGID != 0 {
+            os.write_uint32(11, self.CMDGNACLGID)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -152,17 +152,17 @@ impl ::protobuf::Message for TakeOfferingRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.LMFFBHEOONE = 0;
-        self.DDFEGMCDOGF.clear();
-        self.AJCHIGGPBAH = 0;
+        self.PFHLBOGFBLC.clear();
+        self.HNGNMJJIFJG = 0;
+        self.CMDGNACLGID = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeOfferingRewardCsReq {
         static instance: TakeOfferingRewardCsReq = TakeOfferingRewardCsReq {
-            LMFFBHEOONE: 0,
-            DDFEGMCDOGF: ::std::vec::Vec::new(),
-            AJCHIGGPBAH: 0,
+            PFHLBOGFBLC: ::std::vec::Vec::new(),
+            HNGNMJJIFJG: 0,
+            CMDGNACLGID: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -188,9 +188,9 @@ impl ::protobuf::reflect::ProtobufValue for TakeOfferingRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dTakeOfferingRewardCsReq.proto\"\x7f\n\x17TakeOfferingRewardCsReq\
-    \x12\x20\n\x0bLMFFBHEOONE\x18\x08\x20\x01(\rR\x0bLMFFBHEOONE\x12\x20\n\
-    \x0bDDFEGMCDOGF\x18\x0f\x20\x03(\rR\x0bDDFEGMCDOGF\x12\x20\n\x0bAJCHIGGP\
-    BAH\x18\x04\x20\x01(\rR\x0bAJCHIGGPBAHb\x06proto3\
+    \x12\x20\n\x0bPFHLBOGFBLC\x18\x07\x20\x03(\rR\x0bPFHLBOGFBLC\x12\x20\n\
+    \x0bHNGNMJJIFJG\x18\x02\x20\x01(\rR\x0bHNGNMJJIFJG\x12\x20\n\x0bCMDGNACL\
+    GID\x18\x0b\x20\x01(\rR\x0bCMDGNACLGIDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

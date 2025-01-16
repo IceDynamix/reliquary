@@ -30,7 +30,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 pub struct CurAssistChangedNotify {
     // message fields
     // @@protoc_insertion_point(field:CurAssistChangedNotify.FRIEND_APPLY_SOURCE_ASSIST)
-    pub FRIEND_APPLY_SOURCE_ASSIST: ::protobuf::MessageField<super::PIMKBDJNKHN::PIMKBDJNKHN>,
+    pub FRIEND_APPLY_SOURCE_ASSIST: ::protobuf::MessageField<super::JNJGGFAMMBC::JNJGGFAMMBC>,
     // special fields
     // @@protoc_insertion_point(special_field:CurAssistChangedNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,7 +50,7 @@ impl CurAssistChangedNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PIMKBDJNKHN::PIMKBDJNKHN>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JNJGGFAMMBC::JNJGGFAMMBC>(
             "FRIEND_APPLY_SOURCE_ASSIST",
             |m: &CurAssistChangedNotify| { &m.FRIEND_APPLY_SOURCE_ASSIST },
             |m: &mut CurAssistChangedNotify| { &mut m.FRIEND_APPLY_SOURCE_ASSIST },
@@ -73,7 +73,7 @@ impl ::protobuf::Message for CurAssistChangedNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FRIEND_APPLY_SOURCE_ASSIST)?;
                 },
                 tag => {
@@ -99,7 +99,7 @@ impl ::protobuf::Message for CurAssistChangedNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.FRIEND_APPLY_SOURCE_ASSIST.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,9 +149,9 @@ impl ::protobuf::reflect::ProtobufValue for CurAssistChangedNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cCurAssistChangedNotify.proto\x1a\x11PIMKBDJNKHN.proto\"c\n\x16CurA\
-    ssistChangedNotify\x12I\n\x1aFRIEND_APPLY_SOURCE_ASSIST\x18\x02\x20\x01(\
-    \x0b2\x0c.PIMKBDJNKHNR\x17FRIENDAPPLYSOURCEASSISTb\x06proto3\
+    \n\x1cCurAssistChangedNotify.proto\x1a\x11JNJGGFAMMBC.proto\"c\n\x16CurA\
+    ssistChangedNotify\x12I\n\x1aFRIEND_APPLY_SOURCE_ASSIST\x18\x06\x20\x01(\
+    \x0b2\x0c.JNJGGFAMMBCR\x17FRIENDAPPLYSOURCEASSISTb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -169,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::PIMKBDJNKHN::file_descriptor().clone());
+            deps.push(super::JNJGGFAMMBC::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(CurAssistChangedNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

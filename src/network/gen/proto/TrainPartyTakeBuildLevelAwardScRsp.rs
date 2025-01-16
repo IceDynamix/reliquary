@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_4_0;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartyTakeBuildLevelAwardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartyTakeBuildLevelAwardScRsp.AGPKHOOCMPE)
-    pub AGPKHOOCMPE: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:TrainPartyTakeBuildLevelAwardScRsp.ADADHIHDHJC)
-    pub ADADHIHDHJC: u32,
-    // @@protoc_insertion_point(field:TrainPartyTakeBuildLevelAwardScRsp.BJFLLFADCIH)
-    pub BJFLLFADCIH: u32,
+    // @@protoc_insertion_point(field:TrainPartyTakeBuildLevelAwardScRsp.OCDLCGIILKI)
+    pub OCDLCGIILKI: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:TrainPartyTakeBuildLevelAwardScRsp.EPEIIAGGFFM)
+    pub EPEIIAGGFFM: u32,
+    // @@protoc_insertion_point(field:TrainPartyTakeBuildLevelAwardScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyTakeBuildLevelAwardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,19 +55,19 @@ impl TrainPartyTakeBuildLevelAwardScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "AGPKHOOCMPE",
-            |m: &TrainPartyTakeBuildLevelAwardScRsp| { &m.AGPKHOOCMPE },
-            |m: &mut TrainPartyTakeBuildLevelAwardScRsp| { &mut m.AGPKHOOCMPE },
+            "OCDLCGIILKI",
+            |m: &TrainPartyTakeBuildLevelAwardScRsp| { &m.OCDLCGIILKI },
+            |m: &mut TrainPartyTakeBuildLevelAwardScRsp| { &mut m.OCDLCGIILKI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADADHIHDHJC",
-            |m: &TrainPartyTakeBuildLevelAwardScRsp| { &m.ADADHIHDHJC },
-            |m: &mut TrainPartyTakeBuildLevelAwardScRsp| { &mut m.ADADHIHDHJC },
+            "EPEIIAGGFFM",
+            |m: &TrainPartyTakeBuildLevelAwardScRsp| { &m.EPEIIAGGFFM },
+            |m: &mut TrainPartyTakeBuildLevelAwardScRsp| { &mut m.EPEIIAGGFFM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BJFLLFADCIH",
-            |m: &TrainPartyTakeBuildLevelAwardScRsp| { &m.BJFLLFADCIH },
-            |m: &mut TrainPartyTakeBuildLevelAwardScRsp| { &mut m.BJFLLFADCIH },
+            "retcode",
+            |m: &TrainPartyTakeBuildLevelAwardScRsp| { &m.retcode },
+            |m: &mut TrainPartyTakeBuildLevelAwardScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyTakeBuildLevelAwardScRsp>(
             "TrainPartyTakeBuildLevelAwardScRsp",
@@ -87,14 +87,14 @@ impl ::protobuf::Message for TrainPartyTakeBuildLevelAwardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AGPKHOOCMPE)?;
-                },
-                104 => {
-                    self.ADADHIHDHJC = is.read_uint32()?;
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OCDLCGIILKI)?;
                 },
                 96 => {
-                    self.BJFLLFADCIH = is.read_uint32()?;
+                    self.EPEIIAGGFFM = is.read_uint32()?;
+                },
+                48 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +108,15 @@ impl ::protobuf::Message for TrainPartyTakeBuildLevelAwardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.AGPKHOOCMPE.as_ref() {
+        if let Some(v) = self.OCDLCGIILKI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.ADADHIHDHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.ADADHIHDHJC);
+        if self.EPEIIAGGFFM != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.EPEIIAGGFFM);
         }
-        if self.BJFLLFADCIH != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.BJFLLFADCIH);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for TrainPartyTakeBuildLevelAwardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.AGPKHOOCMPE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if let Some(v) = self.OCDLCGIILKI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
-        if self.ADADHIHDHJC != 0 {
-            os.write_uint32(13, self.ADADHIHDHJC)?;
+        if self.EPEIIAGGFFM != 0 {
+            os.write_uint32(12, self.EPEIIAGGFFM)?;
         }
-        if self.BJFLLFADCIH != 0 {
-            os.write_uint32(12, self.BJFLLFADCIH)?;
+        if self.retcode != 0 {
+            os.write_uint32(6, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for TrainPartyTakeBuildLevelAwardScRsp {
     }
 
     fn clear(&mut self) {
-        self.AGPKHOOCMPE.clear();
-        self.ADADHIHDHJC = 0;
-        self.BJFLLFADCIH = 0;
+        self.OCDLCGIILKI.clear();
+        self.EPEIIAGGFFM = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyTakeBuildLevelAwardScRsp {
         static instance: TrainPartyTakeBuildLevelAwardScRsp = TrainPartyTakeBuildLevelAwardScRsp {
-            AGPKHOOCMPE: ::protobuf::MessageField::none(),
-            ADADHIHDHJC: 0,
-            BJFLLFADCIH: 0,
+            OCDLCGIILKI: ::protobuf::MessageField::none(),
+            EPEIIAGGFFM: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyTakeBuildLevelAwardScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n(TrainPartyTakeBuildLevelAwardScRsp.proto\x1a\x0eItemList.proto\"\x95\
-    \x01\n\"TrainPartyTakeBuildLevelAwardScRsp\x12+\n\x0bAGPKHOOCMPE\x18\x02\
-    \x20\x01(\x0b2\t.ItemListR\x0bAGPKHOOCMPE\x12\x20\n\x0bADADHIHDHJC\x18\r\
-    \x20\x01(\rR\x0bADADHIHDHJC\x12\x20\n\x0bBJFLLFADCIH\x18\x0c\x20\x01(\rR\
-    \x0bBJFLLFADCIHb\x06proto3\
+    \n(TrainPartyTakeBuildLevelAwardScRsp.proto\x1a\x0eItemList.proto\"\x8d\
+    \x01\n\"TrainPartyTakeBuildLevelAwardScRsp\x12+\n\x0bOCDLCGIILKI\x18\r\
+    \x20\x01(\x0b2\t.ItemListR\x0bOCDLCGIILKI\x12\x20\n\x0bEPEIIAGGFFM\x18\
+    \x0c\x20\x01(\rR\x0bEPEIIAGGFFM\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\
+    \x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
