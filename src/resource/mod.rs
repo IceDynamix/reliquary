@@ -44,15 +44,15 @@ impl Deref for Float {
 /// }
 /// ```
 ///
-/// They can be directly dereferenced to [`i32`].
+/// They can be directly dereferenced to [`u64`].
 /// The appropriate text entry can be looked up in a [`TextMap`].
 #[derive(Deserialize, Serialize, Debug, Clone, Copy, Eq, PartialEq, Ord, PartialOrd, Hash)]
 pub struct TextMapEntry {
-    pub Hash: i32,
+    pub Hash: u64,
 }
 
 impl Deref for TextMapEntry {
-    type Target = i32;
+    type Target = u64;
     fn deref(&self) -> &Self::Target {
         &self.Hash
     }
@@ -72,23 +72,16 @@ pub trait ResourceMap {
     fn get_json_name() -> &'static str;
 }
 
+/// A text-map entry that hasn't been converted to its hash.
+///
+/// The hash function used is the 64-bit xxhash with seed `0`.
 #[derive(Deserialize, Serialize, Debug)]
 #[serde(transparent)]
 pub struct UnhashedTextMapEntry(String);
 
 impl UnhashedTextMapEntry {
-    pub fn hash(&self) -> i32 {
-        let bytes = self.0.as_bytes();
-        let mut hash1 = 5381i32;
-        let mut hash2 = hash1;
-
-        for (i, b) in bytes.iter().enumerate() {
-            let hash = if i % 2 == 0 { &mut hash1 } else { &mut hash2 };
-
-            *hash = (*hash).wrapping_shl(5).wrapping_add(*hash) ^ *b as i32;
-        }
-
-        hash1.wrapping_add(hash2.wrapping_mul(1566083941))
+    pub fn hash(&self) -> u64 {
+        twox_hash::XxHash64::oneshot(0, self.0.as_bytes())
     }
 
     pub fn lookup<'a>(&self, text_map: &'a TextMap) -> Option<&'a str> {
@@ -103,6 +96,6 @@ mod test {
     #[test]
     fn hash() {
         let s = UnhashedTextMapEntry("RelicName_31011".to_string());
-        assert_eq!(s.hash(), 386090711);
+        assert_eq!(s.hash(), 2829070117814105902);
     }
 }

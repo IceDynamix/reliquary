@@ -8,7 +8,7 @@ use serde::Serialize;
 use std::collections::HashMap;
 
 #[derive(Deserialize, Serialize)]
-pub struct TextMap(pub HashMap<i32, String>);
+pub struct TextMap(pub HashMap<u64, String>);
 
 impl TextMap {
     pub fn get(&self, text_map_string: &TextMapEntry) -> Option<&str> {

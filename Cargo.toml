@@ -11,11 +11,12 @@ license = "MIT"
 
 [dependencies]
 base64 = "0.22"
-etherparse = "0.16"
+etherparse = "0.17"
 kcp = "0.5"
 protobuf = "~3.4.0" # match the protobuf version used in reliquary-codegen
-rand_mt = "4.2"
+rand_mt = "5.0"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 tracing = "0.1"
 reliquary-proc-macro = { path = "reliquary-proc-macro" }
+twox-hash = { version = "2.1.0", features = ["xxhash64"], default-features = false }
