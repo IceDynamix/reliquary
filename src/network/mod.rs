@@ -50,12 +50,12 @@ use base64::Engine;
 use thiserror::Error;
 use tracing::{info, info_span, instrument, trace, warn};
 
-use crate::network::command::{GameCommand, GameCommandError};
-use crate::network::connection::{parse_connection_packet, ConnectionPacketError};
-use crate::network::crypto::{decrypt_command, lookup_initial_key, new_key_from_seed};
-use crate::network::gen::proto::PlayerGetTokenScRsp::PlayerGetTokenScRsp;
-use crate::network::kcp::{KcpError, KcpSniffer};
-use gen::command_id;
+use command::command_id;
+use command::proto::PlayerGetTokenScRsp::PlayerGetTokenScRsp;
+use command::{GameCommand, GameCommandError};
+use connection::{parse_connection_packet, ConnectionPacketError};
+use crypto::{decrypt_command, lookup_initial_key, new_key_from_seed};
+use kcp::{KcpError, KcpSniffer};
 
 fn bytes_as_hex(bytes: &[u8]) -> String {
     bytes.iter().fold(String::new(), |mut output, b| {
@@ -64,9 +64,7 @@ fn bytes_as_hex(bytes: &[u8]) -> String {
     })
 }
 
-pub mod gen;
-
-mod command;
+pub mod command;
 mod connection;
 mod crypto;
 mod kcp;
