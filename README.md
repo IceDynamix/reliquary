@@ -29,8 +29,14 @@ for documentation, use `cargo doc`
 
 ## feature flags
 
-modules are split up into feature flags. all features are enabled by default, you can disable default features in your
-`Cargo.toml` with `default-features = false` and only enable the features you need.
+| feature         | effect                                                                                                              | default |
+|-----------------|---------------------------------------------------------------------------------------------------------------------|---------|
+| `network`       | includes the `network` module                                                                                       | yes     |
+| `resource`      | includes the `resource` module                                                                                      | yes     |
+| `proto-limited` | removes all protos except for the ones required to decrypt the packets                                              |         |
+| `proto-rqa`     | removes all protos that are not relevant for [reliquary-archiver](https://github.com/IceDynamix/reliquary-archiver) |         |
+
+`proto-*` features depend on `network` and are mutually exclusive
 
 ## codegen
 

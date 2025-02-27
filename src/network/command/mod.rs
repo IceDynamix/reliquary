@@ -19,7 +19,38 @@ use thiserror::Error;
 use tracing::{instrument, warn};
 
 pub mod command_id;
+
+#[cfg(all(not(feature = "proto-limited"), not(feature = "proto-rqa")))]
 pub mod proto;
+
+#[cfg(all(feature = "proto-limited"))]
+pub mod proto {
+    pub mod BlackInfo;
+    pub mod PlayerGetTokenScRsp;
+}
+
+#[cfg(all(feature = "proto-rqa"))]
+pub mod proto {
+    pub mod Avatar;
+    pub mod AvatarSkillTree;
+    pub mod BlackInfo;
+    pub mod CLLPNMOCFKB;
+    pub mod EquipRelic;
+    pub mod Equipment;
+    pub mod GetAvatarDataScRsp;
+    pub mod GetBagScRsp;
+    pub mod GetMultiPathAvatarInfoScRsp;
+    pub mod GrowthTargetFunctionType;
+    pub mod Material;
+    pub mod MultiPathAvatarType;
+    pub mod MultiPathAvatarTypeInfo;
+    pub mod PLFIIABDDMC;
+    pub mod PileItem;
+    pub mod PlayerGetTokenScRsp;
+    pub mod Relic;
+    pub mod RelicAffix;
+    pub mod TurnFoodSwitch;
+}
 
 /// Game command header.
 ///
