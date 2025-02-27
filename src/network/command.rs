@@ -1,0 +1,85 @@
+//! Game command header.
+//!
+//! Contains the type of the command in `command_id`
+//! and the data encoded in protobuf in `proto_data`
+//!
+//! ## Bit Layout
+//! | Bit indices     |  Type |  Name |
+//! | - | - | - |
+//! |   0..4      |  `u32`  |  Header (magic constant) |
+//! |   0..6      |  `u16`  |  command_id |
+//! |   6..8      |  `u16`  |  header_len (unsure) |
+//! |   8..12     |  `u32`  |  data_len |
+//! |  12..12+data_len |  variable  |  proto_data |
+//! | data_len..data_len+4  |  `u32`  |  Tail (magic constant) |
+use crate::network::gen::command_id::command_id_to_str;
+use std::fmt;
+use thiserror::Error;
+use tracing::{instrument, warn};
+
+#[derive(Clone)]
+pub struct GameCommand {
+    pub command_id: u16,
+    #[allow(unused)]
+    pub header_len: u16,
+    #[allow(unused)]
+    pub data_len: u32,
+    pub proto_data: Vec<u8>,
+}
+
+impl GameCommand {
+    const HEADER_LEN: usize = 12;
+    const TAIL_LEN: usize = 4;
+
+    #[instrument(skip(bytes), fields(len = bytes.len()))]
+    pub fn try_new(bytes: Vec<u8>) -> Result<Self, GameCommandError> {
+        let header_overhead = Self::HEADER_LEN + Self::TAIL_LEN;
+        if bytes.len() < header_overhead {
+            warn!(len = bytes.len(), "game command header incomplete");
+            return Err(GameCommandError::HeaderTooShort {
+                expected: header_overhead,
+                actual: bytes.len(),
+            });
+        }
+
+        // skip header magic const
+        let command_id = u16::from_be_bytes(bytes[4..6].try_into().unwrap());
+        let header_len = u16::from_be_bytes(bytes[6..8].try_into().unwrap());
+        let data_len = u32::from_be_bytes(bytes[8..12].try_into().unwrap());
+
+        let data = bytes[12..12 + data_len as usize + header_len as usize].to_vec();
+        Ok(GameCommand {
+            command_id,
+            header_len,
+            data_len,
+            proto_data: data,
+        })
+    }
+
+    pub fn get_command_name(&self) -> Option<&str> {
+        command_id_to_str(self.command_id)
+    }
+
+    pub fn parse_proto<T: protobuf::Message>(&self) -> protobuf::Result<T> {
+        T::parse_from_bytes(&self.proto_data)
+    }
+}
+
+impl fmt::Debug for GameCommand {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        f.debug_struct("GameCommand")
+            .field("command_id", &self.command_id)
+            .field("command_name", &self.get_command_name())
+            .field("header_len", &self.header_len)
+            .field("data_len", &self.data_len)
+            .finish()
+    }
+}
+
+#[derive(Error, Debug)]
+pub enum GameCommandError {
+    #[error("command header must be at least {expected} bytes, but was {actual}")]
+    HeaderTooShort { expected: usize, actual: usize },
+    #[error("decryption key is missing for command")]
+    DecryptionKeyMissing,
+}
