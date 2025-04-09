@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneCastSkillCostMpCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SceneCastSkillCostMpCsReq.EMNMEOOOJBH)
-    pub EMNMEOOOJBH: u32,
     // @@protoc_insertion_point(field:SceneCastSkillCostMpCsReq.BPMDFENIDBF)
     pub BPMDFENIDBF: u32,
+    // @@protoc_insertion_point(field:SceneCastSkillCostMpCsReq.EMNMEOOOJBH)
+    pub EMNMEOOOJBH: u32,
     // @@protoc_insertion_point(field:SceneCastSkillCostMpCsReq.LNJDMBPOGHH)
     pub LNJDMBPOGHH: u32,
     // special fields
@@ -54,14 +54,14 @@ impl SceneCastSkillCostMpCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EMNMEOOOJBH",
-            |m: &SceneCastSkillCostMpCsReq| { &m.EMNMEOOOJBH },
-            |m: &mut SceneCastSkillCostMpCsReq| { &mut m.EMNMEOOOJBH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BPMDFENIDBF",
             |m: &SceneCastSkillCostMpCsReq| { &m.BPMDFENIDBF },
             |m: &mut SceneCastSkillCostMpCsReq| { &mut m.BPMDFENIDBF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EMNMEOOOJBH",
+            |m: &SceneCastSkillCostMpCsReq| { &m.EMNMEOOOJBH },
+            |m: &mut SceneCastSkillCostMpCsReq| { &mut m.EMNMEOOOJBH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LNJDMBPOGHH",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for SceneCastSkillCostMpCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.EMNMEOOOJBH = is.read_uint32()?;
-                },
                 64 => {
                     self.BPMDFENIDBF = is.read_uint32()?;
                 },
-                8 => {
+                32 => {
+                    self.EMNMEOOOJBH = is.read_uint32()?;
+                },
+                72 => {
                     self.LNJDMBPOGHH = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for SceneCastSkillCostMpCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EMNMEOOOJBH != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.EMNMEOOOJBH);
-        }
         if self.BPMDFENIDBF != 0 {
             my_size += ::protobuf::rt::uint32_size(8, self.BPMDFENIDBF);
         }
+        if self.EMNMEOOOJBH != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.EMNMEOOOJBH);
+        }
         if self.LNJDMBPOGHH != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.LNJDMBPOGHH);
+            my_size += ::protobuf::rt::uint32_size(9, self.LNJDMBPOGHH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for SceneCastSkillCostMpCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EMNMEOOOJBH != 0 {
-            os.write_uint32(3, self.EMNMEOOOJBH)?;
-        }
         if self.BPMDFENIDBF != 0 {
             os.write_uint32(8, self.BPMDFENIDBF)?;
         }
+        if self.EMNMEOOOJBH != 0 {
+            os.write_uint32(4, self.EMNMEOOOJBH)?;
+        }
         if self.LNJDMBPOGHH != 0 {
-            os.write_uint32(1, self.LNJDMBPOGHH)?;
+            os.write_uint32(9, self.LNJDMBPOGHH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for SceneCastSkillCostMpCsReq {
     }
 
     fn clear(&mut self) {
-        self.EMNMEOOOJBH = 0;
         self.BPMDFENIDBF = 0;
+        self.EMNMEOOOJBH = 0;
         self.LNJDMBPOGHH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneCastSkillCostMpCsReq {
         static instance: SceneCastSkillCostMpCsReq = SceneCastSkillCostMpCsReq {
-            EMNMEOOOJBH: 0,
             BPMDFENIDBF: 0,
+            EMNMEOOOJBH: 0,
             LNJDMBPOGHH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for SceneCastSkillCostMpCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fSceneCastSkillCostMpCsReq.proto\"\x81\x01\n\x19SceneCastSkillCostM\
-    pCsReq\x12\x20\n\x0bEMNMEOOOJBH\x18\x03\x20\x01(\rR\x0bEMNMEOOOJBH\x12\
-    \x20\n\x0bBPMDFENIDBF\x18\x08\x20\x01(\rR\x0bBPMDFENIDBF\x12\x20\n\x0bLN\
-    JDMBPOGHH\x18\x01\x20\x01(\rR\x0bLNJDMBPOGHHb\x06proto3\
+    pCsReq\x12\x20\n\x0bBPMDFENIDBF\x18\x08\x20\x01(\rR\x0bBPMDFENIDBF\x12\
+    \x20\n\x0bEMNMEOOOJBH\x18\x04\x20\x01(\rR\x0bEMNMEOOOJBH\x12\x20\n\x0bLN\
+    JDMBPOGHH\x18\t\x20\x01(\rR\x0bLNJDMBPOGHHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

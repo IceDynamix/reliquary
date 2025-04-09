@@ -79,10 +79,10 @@ impl ::protobuf::Message for GEOAEOFJOGC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                112 => {
                     self.HIODKMAPOAE = is.read_uint32()?;
                 },
-                56 => {
+                32 => {
                     self.KFBOAONLDEM = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for GEOAEOFJOGC {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HIODKMAPOAE != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.HIODKMAPOAE);
+            my_size += ::protobuf::rt::uint32_size(14, self.HIODKMAPOAE);
         }
         if self.KFBOAONLDEM != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GEOAEOFJOGC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HIODKMAPOAE != 0 {
-            os.write_uint32(5, self.HIODKMAPOAE)?;
+            os.write_uint32(14, self.HIODKMAPOAE)?;
         }
         if self.KFBOAONLDEM != false {
-            os.write_bool(7, self.KFBOAONLDEM)?;
+            os.write_bool(4, self.KFBOAONLDEM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for GEOAEOFJOGC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GEOAEOFJOGC.proto\"Q\n\x0bGEOAEOFJOGC\x12\x20\n\x0bHIODKMAPOAE\x18\
-    \x05\x20\x01(\rR\x0bHIODKMAPOAE\x12\x20\n\x0bKFBOAONLDEM\x18\x07\x20\x01\
+    \x0e\x20\x01(\rR\x0bHIODKMAPOAE\x12\x20\n\x0bKFBOAONLDEM\x18\x04\x20\x01\
     (\x08R\x0bKFBOAONLDEMb\x06proto3\
 ";
 

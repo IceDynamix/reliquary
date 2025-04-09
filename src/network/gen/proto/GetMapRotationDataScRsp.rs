@@ -32,18 +32,18 @@ pub struct GetMapRotationDataScRsp {
     pub retcode: u32,
     // @@protoc_insertion_point(field:GetMapRotationDataScRsp.OCBKFGAOHEH)
     pub OCBKFGAOHEH: ::protobuf::MessageField<super::ICIMAKBAJGB::ICIMAKBAJGB>,
-    // @@protoc_insertion_point(field:GetMapRotationDataScRsp.NFLBONDJAIE)
-    pub NFLBONDJAIE: u32,
     // @@protoc_insertion_point(field:GetMapRotationDataScRsp.FGNHLHEDLPN)
     pub FGNHLHEDLPN: ::protobuf::MessageField<super::PBNBNCJCPEI::PBNBNCJCPEI>,
-    // @@protoc_insertion_point(field:GetMapRotationDataScRsp.OCPOFGJPHLJ)
-    pub OCPOFGJPHLJ: ::std::vec::Vec<super::OFCCFDPCILL::OFCCFDPCILL>,
+    // @@protoc_insertion_point(field:GetMapRotationDataScRsp.EFGLILFANNC)
+    pub EFGLILFANNC: ::std::vec::Vec<super::CIDBBHAMNKI::CIDBBHAMNKI>,
+    // @@protoc_insertion_point(field:GetMapRotationDataScRsp.NFLBONDJAIE)
+    pub NFLBONDJAIE: u32,
     // @@protoc_insertion_point(field:GetMapRotationDataScRsp.ACNPBBNLMIE)
     pub ACNPBBNLMIE: i32,
     // @@protoc_insertion_point(field:GetMapRotationDataScRsp.OMEJLLMNPCN)
     pub OMEJLLMNPCN: bool,
-    // @@protoc_insertion_point(field:GetMapRotationDataScRsp.EFGLILFANNC)
-    pub EFGLILFANNC: ::std::vec::Vec<super::CIDBBHAMNKI::CIDBBHAMNKI>,
+    // @@protoc_insertion_point(field:GetMapRotationDataScRsp.OCPOFGJPHLJ)
+    pub OCPOFGJPHLJ: ::std::vec::Vec<super::OFCCFDPCILL::OFCCFDPCILL>,
     // special fields
     // @@protoc_insertion_point(special_field:GetMapRotationDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -73,20 +73,20 @@ impl GetMapRotationDataScRsp {
             |m: &GetMapRotationDataScRsp| { &m.OCBKFGAOHEH },
             |m: &mut GetMapRotationDataScRsp| { &mut m.OCBKFGAOHEH },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NFLBONDJAIE",
-            |m: &GetMapRotationDataScRsp| { &m.NFLBONDJAIE },
-            |m: &mut GetMapRotationDataScRsp| { &mut m.NFLBONDJAIE },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PBNBNCJCPEI::PBNBNCJCPEI>(
             "FGNHLHEDLPN",
             |m: &GetMapRotationDataScRsp| { &m.FGNHLHEDLPN },
             |m: &mut GetMapRotationDataScRsp| { &mut m.FGNHLHEDLPN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OCPOFGJPHLJ",
-            |m: &GetMapRotationDataScRsp| { &m.OCPOFGJPHLJ },
-            |m: &mut GetMapRotationDataScRsp| { &mut m.OCPOFGJPHLJ },
+            "EFGLILFANNC",
+            |m: &GetMapRotationDataScRsp| { &m.EFGLILFANNC },
+            |m: &mut GetMapRotationDataScRsp| { &mut m.EFGLILFANNC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NFLBONDJAIE",
+            |m: &GetMapRotationDataScRsp| { &m.NFLBONDJAIE },
+            |m: &mut GetMapRotationDataScRsp| { &mut m.NFLBONDJAIE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ACNPBBNLMIE",
@@ -99,9 +99,9 @@ impl GetMapRotationDataScRsp {
             |m: &mut GetMapRotationDataScRsp| { &mut m.OMEJLLMNPCN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EFGLILFANNC",
-            |m: &GetMapRotationDataScRsp| { &m.EFGLILFANNC },
-            |m: &mut GetMapRotationDataScRsp| { &mut m.EFGLILFANNC },
+            "OCPOFGJPHLJ",
+            |m: &GetMapRotationDataScRsp| { &m.OCPOFGJPHLJ },
+            |m: &mut GetMapRotationDataScRsp| { &mut m.OCPOFGJPHLJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetMapRotationDataScRsp>(
             "GetMapRotationDataScRsp",
@@ -121,29 +121,29 @@ impl ::protobuf::Message for GetMapRotationDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
                 },
-                50 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.OCBKFGAOHEH)?;
                 },
-                40 => {
-                    self.NFLBONDJAIE = is.read_uint32()?;
-                },
-                10 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FGNHLHEDLPN)?;
                 },
-                66 => {
-                    self.OCPOFGJPHLJ.push(is.read_message()?);
+                90 => {
+                    self.EFGLILFANNC.push(is.read_message()?);
                 },
-                112 => {
+                96 => {
+                    self.NFLBONDJAIE = is.read_uint32()?;
+                },
+                8 => {
                     self.ACNPBBNLMIE = is.read_int32()?;
                 },
-                72 => {
+                112 => {
                     self.OMEJLLMNPCN = is.read_bool()?;
                 },
-                98 => {
-                    self.EFGLILFANNC.push(is.read_message()?);
+                34 => {
+                    self.OCPOFGJPHLJ.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -158,30 +158,30 @@ impl ::protobuf::Message for GetMapRotationDataScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         if let Some(v) = self.OCBKFGAOHEH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.NFLBONDJAIE != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.NFLBONDJAIE);
-        }
         if let Some(v) = self.FGNHLHEDLPN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        for value in &self.OCPOFGJPHLJ {
+        for value in &self.EFGLILFANNC {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.NFLBONDJAIE != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.NFLBONDJAIE);
+        }
         if self.ACNPBBNLMIE != 0 {
-            my_size += ::protobuf::rt::int32_size(14, self.ACNPBBNLMIE);
+            my_size += ::protobuf::rt::int32_size(1, self.ACNPBBNLMIE);
         }
         if self.OMEJLLMNPCN != false {
             my_size += 1 + 1;
         }
-        for value in &self.EFGLILFANNC {
+        for value in &self.OCPOFGJPHLJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -192,28 +192,28 @@ impl ::protobuf::Message for GetMapRotationDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
         }
         if let Some(v) = self.OCBKFGAOHEH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
-        if self.NFLBONDJAIE != 0 {
-            os.write_uint32(5, self.NFLBONDJAIE)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         if let Some(v) = self.FGNHLHEDLPN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
-        for v in &self.OCPOFGJPHLJ {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
-        if self.ACNPBBNLMIE != 0 {
-            os.write_int32(14, self.ACNPBBNLMIE)?;
-        }
-        if self.OMEJLLMNPCN != false {
-            os.write_bool(9, self.OMEJLLMNPCN)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         for v in &self.EFGLILFANNC {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
+        if self.NFLBONDJAIE != 0 {
+            os.write_uint32(12, self.NFLBONDJAIE)?;
+        }
+        if self.ACNPBBNLMIE != 0 {
+            os.write_int32(1, self.ACNPBBNLMIE)?;
+        }
+        if self.OMEJLLMNPCN != false {
+            os.write_bool(14, self.OMEJLLMNPCN)?;
+        }
+        for v in &self.OCPOFGJPHLJ {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -234,12 +234,12 @@ impl ::protobuf::Message for GetMapRotationDataScRsp {
     fn clear(&mut self) {
         self.retcode = 0;
         self.OCBKFGAOHEH.clear();
-        self.NFLBONDJAIE = 0;
         self.FGNHLHEDLPN.clear();
-        self.OCPOFGJPHLJ.clear();
+        self.EFGLILFANNC.clear();
+        self.NFLBONDJAIE = 0;
         self.ACNPBBNLMIE = 0;
         self.OMEJLLMNPCN = false;
-        self.EFGLILFANNC.clear();
+        self.OCPOFGJPHLJ.clear();
         self.special_fields.clear();
     }
 
@@ -247,12 +247,12 @@ impl ::protobuf::Message for GetMapRotationDataScRsp {
         static instance: GetMapRotationDataScRsp = GetMapRotationDataScRsp {
             retcode: 0,
             OCBKFGAOHEH: ::protobuf::MessageField::none(),
-            NFLBONDJAIE: 0,
             FGNHLHEDLPN: ::protobuf::MessageField::none(),
-            OCPOFGJPHLJ: ::std::vec::Vec::new(),
+            EFGLILFANNC: ::std::vec::Vec::new(),
+            NFLBONDJAIE: 0,
             ACNPBBNLMIE: 0,
             OMEJLLMNPCN: false,
-            EFGLILFANNC: ::std::vec::Vec::new(),
+            OCPOFGJPHLJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -279,14 +279,14 @@ impl ::protobuf::reflect::ProtobufValue for GetMapRotationDataScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dGetMapRotationDataScRsp.proto\x1a\x11CIDBBHAMNKI.proto\x1a\x11ICIM\
     AKBAJGB.proto\x1a\x11OFCCFDPCILL.proto\x1a\x11PBNBNCJCPEI.proto\"\xd9\
-    \x02\n\x17GetMapRotationDataScRsp\x12\x18\n\x07retcode\x18\x0f\x20\x01(\
-    \rR\x07retcode\x12.\n\x0bOCBKFGAOHEH\x18\x06\x20\x01(\x0b2\x0c.ICIMAKBAJ\
-    GBR\x0bOCBKFGAOHEH\x12\x20\n\x0bNFLBONDJAIE\x18\x05\x20\x01(\rR\x0bNFLBO\
-    NDJAIE\x12.\n\x0bFGNHLHEDLPN\x18\x01\x20\x01(\x0b2\x0c.PBNBNCJCPEIR\x0bF\
-    GNHLHEDLPN\x12.\n\x0bOCPOFGJPHLJ\x18\x08\x20\x03(\x0b2\x0c.OFCCFDPCILLR\
-    \x0bOCPOFGJPHLJ\x12\x20\n\x0bACNPBBNLMIE\x18\x0e\x20\x01(\x05R\x0bACNPBB\
-    NLMIE\x12\x20\n\x0bOMEJLLMNPCN\x18\t\x20\x01(\x08R\x0bOMEJLLMNPCN\x12.\n\
-    \x0bEFGLILFANNC\x18\x0c\x20\x03(\x0b2\x0c.CIDBBHAMNKIR\x0bEFGLILFANNCb\
+    \x02\n\x17GetMapRotationDataScRsp\x12\x18\n\x07retcode\x18\x06\x20\x01(\
+    \rR\x07retcode\x12.\n\x0bOCBKFGAOHEH\x18\x05\x20\x01(\x0b2\x0c.ICIMAKBAJ\
+    GBR\x0bOCBKFGAOHEH\x12.\n\x0bFGNHLHEDLPN\x18\x02\x20\x01(\x0b2\x0c.PBNBN\
+    CJCPEIR\x0bFGNHLHEDLPN\x12.\n\x0bEFGLILFANNC\x18\x0b\x20\x03(\x0b2\x0c.C\
+    IDBBHAMNKIR\x0bEFGLILFANNC\x12\x20\n\x0bNFLBONDJAIE\x18\x0c\x20\x01(\rR\
+    \x0bNFLBONDJAIE\x12\x20\n\x0bACNPBBNLMIE\x18\x01\x20\x01(\x05R\x0bACNPBB\
+    NLMIE\x12\x20\n\x0bOMEJLLMNPCN\x18\x0e\x20\x01(\x08R\x0bOMEJLLMNPCN\x12.\
+    \n\x0bOCPOFGJPHLJ\x18\x04\x20\x03(\x0b2\x0c.OFCCFDPCILLR\x0bOCPOFGJPHLJb\
     \x06proto3\
 ";
 

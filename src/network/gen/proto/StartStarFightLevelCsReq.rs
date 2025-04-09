@@ -30,10 +30,10 @@ pub struct StartStarFightLevelCsReq {
     // message fields
     // @@protoc_insertion_point(field:StartStarFightLevelCsReq.NEDFIBONLKB)
     pub NEDFIBONLKB: u32,
-    // @@protoc_insertion_point(field:StartStarFightLevelCsReq.avatar_list)
-    pub avatar_list: ::std::vec::Vec<super::AEDAOIFFIGN::AEDAOIFFIGN>,
     // @@protoc_insertion_point(field:StartStarFightLevelCsReq.FJNHDHOHBCL)
     pub FJNHDHOHBCL: u32,
+    // @@protoc_insertion_point(field:StartStarFightLevelCsReq.avatar_list)
+    pub avatar_list: ::std::vec::Vec<super::AEDAOIFFIGN::AEDAOIFFIGN>,
     // special fields
     // @@protoc_insertion_point(special_field:StartStarFightLevelCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl StartStarFightLevelCsReq {
             |m: &StartStarFightLevelCsReq| { &m.NEDFIBONLKB },
             |m: &mut StartStarFightLevelCsReq| { &mut m.NEDFIBONLKB },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_list",
-            |m: &StartStarFightLevelCsReq| { &m.avatar_list },
-            |m: &mut StartStarFightLevelCsReq| { &mut m.avatar_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FJNHDHOHBCL",
             |m: &StartStarFightLevelCsReq| { &m.FJNHDHOHBCL },
             |m: &mut StartStarFightLevelCsReq| { &mut m.FJNHDHOHBCL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "avatar_list",
+            |m: &StartStarFightLevelCsReq| { &m.avatar_list },
+            |m: &mut StartStarFightLevelCsReq| { &mut m.avatar_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartStarFightLevelCsReq>(
             "StartStarFightLevelCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for StartStarFightLevelCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                48 => {
                     self.NEDFIBONLKB = is.read_uint32()?;
                 },
-                82 => {
-                    self.avatar_list.push(is.read_message()?);
-                },
-                120 => {
+                40 => {
                     self.FJNHDHOHBCL = is.read_uint32()?;
+                },
+                58 => {
+                    self.avatar_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +108,15 @@ impl ::protobuf::Message for StartStarFightLevelCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.NEDFIBONLKB != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.NEDFIBONLKB);
+            my_size += ::protobuf::rt::uint32_size(6, self.NEDFIBONLKB);
+        }
+        if self.FJNHDHOHBCL != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.FJNHDHOHBCL);
         }
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.FJNHDHOHBCL != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.FJNHDHOHBCL);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -124,14 +124,14 @@ impl ::protobuf::Message for StartStarFightLevelCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.NEDFIBONLKB != 0 {
-            os.write_uint32(1, self.NEDFIBONLKB)?;
+            os.write_uint32(6, self.NEDFIBONLKB)?;
+        }
+        if self.FJNHDHOHBCL != 0 {
+            os.write_uint32(5, self.FJNHDHOHBCL)?;
         }
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
-        if self.FJNHDHOHBCL != 0 {
-            os.write_uint32(15, self.FJNHDHOHBCL)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,16 +150,16 @@ impl ::protobuf::Message for StartStarFightLevelCsReq {
 
     fn clear(&mut self) {
         self.NEDFIBONLKB = 0;
-        self.avatar_list.clear();
         self.FJNHDHOHBCL = 0;
+        self.avatar_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartStarFightLevelCsReq {
         static instance: StartStarFightLevelCsReq = StartStarFightLevelCsReq {
             NEDFIBONLKB: 0,
-            avatar_list: ::std::vec::Vec::new(),
             FJNHDHOHBCL: 0,
+            avatar_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for StartStarFightLevelCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eStartStarFightLevelCsReq.proto\x1a\x11AEDAOIFFIGN.proto\"\x8d\x01\
-    \n\x18StartStarFightLevelCsReq\x12\x20\n\x0bNEDFIBONLKB\x18\x01\x20\x01(\
-    \rR\x0bNEDFIBONLKB\x12-\n\x0bavatar_list\x18\n\x20\x03(\x0b2\x0c.AEDAOIF\
-    FIGNR\navatarList\x12\x20\n\x0bFJNHDHOHBCL\x18\x0f\x20\x01(\rR\x0bFJNHDH\
-    OHBCLb\x06proto3\
+    \n\x18StartStarFightLevelCsReq\x12\x20\n\x0bNEDFIBONLKB\x18\x06\x20\x01(\
+    \rR\x0bNEDFIBONLKB\x12\x20\n\x0bFJNHDHOHBCL\x18\x05\x20\x01(\rR\x0bFJNHD\
+    HOHBCL\x12-\n\x0bavatar_list\x18\x07\x20\x03(\x0b2\x0c.AEDAOIFFIGNR\nava\
+    tarListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for MatchThreeGetDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MFKJDOEBLIM)?;
                 },
-                40 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for MatchThreeGetDataScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for MatchThreeGetDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.MFKJDOEBLIM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for MatchThreeGetDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cMatchThreeGetDataScRsp.proto\x1a\x11ABGEJNBCDJK.proto\"b\n\x16Matc\
-    hThreeGetDataScRsp\x12.\n\x0bMFKJDOEBLIM\x18\x0b\x20\x01(\x0b2\x0c.ABGEJ\
-    NBCDJKR\x0bMFKJDOEBLIM\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retco\
-    deb\x06proto3\
+    hThreeGetDataScRsp\x12.\n\x0bMFKJDOEBLIM\x18\x07\x20\x01(\x0b2\x0c.ABGEJ\
+    NBCDJKR\x0bMFKJDOEBLIM\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

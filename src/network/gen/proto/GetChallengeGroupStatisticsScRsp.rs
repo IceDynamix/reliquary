@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetChallengeGroupStatisticsScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetChallengeGroupStatisticsScRsp.FJNHDHOHBCL)
-    pub FJNHDHOHBCL: u32,
     // @@protoc_insertion_point(field:GetChallengeGroupStatisticsScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetChallengeGroupStatisticsScRsp.FJNHDHOHBCL)
+    pub FJNHDHOHBCL: u32,
     // message oneof groups
     pub JDICGGKKOOI: ::std::option::Option<get_challenge_group_statistics_sc_rsp::JDICGGKKOOI>,
     // special fields
@@ -50,7 +50,7 @@ impl GetChallengeGroupStatisticsScRsp {
         ::std::default::Default::default()
     }
 
-    // .LDCHNCDFICP MJBENBDBHAJ = 13;
+    // .LDCHNCDFICP MJBENBDBHAJ = 3;
 
     pub fn MJBENBDBHAJ(&self) -> &super::LDCHNCDFICP::LDCHNCDFICP {
         match self.JDICGGKKOOI {
@@ -99,7 +99,7 @@ impl GetChallengeGroupStatisticsScRsp {
         }
     }
 
-    // .LAAIGBDPLJC AJGCMALNLEN = 10;
+    // .LAAIGBDPLJC AJGCMALNLEN = 15;
 
     pub fn AJGCMALNLEN(&self) -> &super::LAAIGBDPLJC::LAAIGBDPLJC {
         match self.JDICGGKKOOI {
@@ -148,7 +148,7 @@ impl GetChallengeGroupStatisticsScRsp {
         }
     }
 
-    // .LGNMPMCPOPF BMCKMGINCIA = 7;
+    // .LGNMPMCPOPF BMCKMGINCIA = 10;
 
     pub fn BMCKMGINCIA(&self) -> &super::LGNMPMCPOPF::LGNMPMCPOPF {
         match self.JDICGGKKOOI {
@@ -201,14 +201,14 @@ impl GetChallengeGroupStatisticsScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FJNHDHOHBCL",
-            |m: &GetChallengeGroupStatisticsScRsp| { &m.FJNHDHOHBCL },
-            |m: &mut GetChallengeGroupStatisticsScRsp| { &mut m.FJNHDHOHBCL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetChallengeGroupStatisticsScRsp| { &m.retcode },
             |m: &mut GetChallengeGroupStatisticsScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FJNHDHOHBCL",
+            |m: &GetChallengeGroupStatisticsScRsp| { &m.FJNHDHOHBCL },
+            |m: &mut GetChallengeGroupStatisticsScRsp| { &mut m.FJNHDHOHBCL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LDCHNCDFICP::LDCHNCDFICP>(
             "MJBENBDBHAJ",
@@ -250,19 +250,19 @@ impl ::protobuf::Message for GetChallengeGroupStatisticsScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.FJNHDHOHBCL = is.read_uint32()?;
-                },
-                16 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
                 },
-                106 => {
+                88 => {
+                    self.FJNHDHOHBCL = is.read_uint32()?;
+                },
+                26 => {
                     self.JDICGGKKOOI = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::MJBENBDBHAJ(is.read_message()?));
                 },
-                82 => {
+                122 => {
                     self.JDICGGKKOOI = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::AJGCMALNLEN(is.read_message()?));
                 },
-                58 => {
+                82 => {
                     self.JDICGGKKOOI = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::BMCKMGINCIA(is.read_message()?));
                 },
                 tag => {
@@ -277,11 +277,11 @@ impl ::protobuf::Message for GetChallengeGroupStatisticsScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FJNHDHOHBCL != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.FJNHDHOHBCL);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+        }
+        if self.FJNHDHOHBCL != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.FJNHDHOHBCL);
         }
         if let ::std::option::Option::Some(ref v) = self.JDICGGKKOOI {
             match v {
@@ -305,22 +305,22 @@ impl ::protobuf::Message for GetChallengeGroupStatisticsScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FJNHDHOHBCL != 0 {
-            os.write_uint32(14, self.FJNHDHOHBCL)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
+        }
+        if self.FJNHDHOHBCL != 0 {
+            os.write_uint32(11, self.FJNHDHOHBCL)?;
         }
         if let ::std::option::Option::Some(ref v) = self.JDICGGKKOOI {
             match v {
                 &get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::MJBENBDBHAJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
                 },
                 &get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::AJGCMALNLEN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
                 &get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::BMCKMGINCIA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
             };
         }
@@ -341,8 +341,8 @@ impl ::protobuf::Message for GetChallengeGroupStatisticsScRsp {
     }
 
     fn clear(&mut self) {
-        self.FJNHDHOHBCL = 0;
         self.retcode = 0;
+        self.FJNHDHOHBCL = 0;
         self.JDICGGKKOOI = ::std::option::Option::None;
         self.JDICGGKKOOI = ::std::option::Option::None;
         self.JDICGGKKOOI = ::std::option::Option::None;
@@ -351,8 +351,8 @@ impl ::protobuf::Message for GetChallengeGroupStatisticsScRsp {
 
     fn default_instance() -> &'static GetChallengeGroupStatisticsScRsp {
         static instance: GetChallengeGroupStatisticsScRsp = GetChallengeGroupStatisticsScRsp {
-            FJNHDHOHBCL: 0,
             retcode: 0,
+            FJNHDHOHBCL: 0,
             JDICGGKKOOI: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -412,11 +412,11 @@ pub mod get_challenge_group_statistics_sc_rsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&GetChallengeGroupStatisticsScRsp.proto\x1a\x11LAAIGBDPLJC.proto\x1a\
     \x11LDCHNCDFICP.proto\x1a\x11LGNMPMCPOPF.proto\"\x83\x02\n\x20GetChallen\
-    geGroupStatisticsScRsp\x12\x20\n\x0bFJNHDHOHBCL\x18\x0e\x20\x01(\rR\x0bF\
-    JNHDHOHBCL\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x120\n\
-    \x0bMJBENBDBHAJ\x18\r\x20\x01(\x0b2\x0c.LDCHNCDFICPH\0R\x0bMJBENBDBHAJ\
-    \x120\n\x0bAJGCMALNLEN\x18\n\x20\x01(\x0b2\x0c.LAAIGBDPLJCH\0R\x0bAJGCMA\
-    LNLEN\x120\n\x0bBMCKMGINCIA\x18\x07\x20\x01(\x0b2\x0c.LGNMPMCPOPFH\0R\
+    geGroupStatisticsScRsp\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retco\
+    de\x12\x20\n\x0bFJNHDHOHBCL\x18\x0b\x20\x01(\rR\x0bFJNHDHOHBCL\x120\n\
+    \x0bMJBENBDBHAJ\x18\x03\x20\x01(\x0b2\x0c.LDCHNCDFICPH\0R\x0bMJBENBDBHAJ\
+    \x120\n\x0bAJGCMALNLEN\x18\x0f\x20\x01(\x0b2\x0c.LAAIGBDPLJCH\0R\x0bAJGC\
+    MALNLEN\x120\n\x0bBMCKMGINCIA\x18\n\x20\x01(\x0b2\x0c.LGNMPMCPOPFH\0R\
     \x0bBMCKMGINCIAB\r\n\x0bJDICGGKKOOIb\x06proto3\
 ";
 

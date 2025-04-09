@@ -79,10 +79,10 @@ impl ::protobuf::Message for MFDKKGFPOOB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                48 => {
                     self.PDONLOOBBCI = is.read_uint32()?;
                 },
-                16 => {
+                24 => {
                     self.LJHIJCABHEP = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for MFDKKGFPOOB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PDONLOOBBCI != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.PDONLOOBBCI);
+            my_size += ::protobuf::rt::uint32_size(6, self.PDONLOOBBCI);
         }
         if self.LJHIJCABHEP != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.LJHIJCABHEP);
+            my_size += ::protobuf::rt::uint32_size(3, self.LJHIJCABHEP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for MFDKKGFPOOB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PDONLOOBBCI != 0 {
-            os.write_uint32(3, self.PDONLOOBBCI)?;
+            os.write_uint32(6, self.PDONLOOBBCI)?;
         }
         if self.LJHIJCABHEP != 0 {
-            os.write_uint32(2, self.LJHIJCABHEP)?;
+            os.write_uint32(3, self.LJHIJCABHEP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for MFDKKGFPOOB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MFDKKGFPOOB.proto\"Q\n\x0bMFDKKGFPOOB\x12\x20\n\x0bPDONLOOBBCI\x18\
-    \x03\x20\x01(\rR\x0bPDONLOOBBCI\x12\x20\n\x0bLJHIJCABHEP\x18\x02\x20\x01\
+    \x06\x20\x01(\rR\x0bPDONLOOBBCI\x12\x20\n\x0bLJHIJCABHEP\x18\x03\x20\x01\
     (\rR\x0bLJHIJCABHEPb\x06proto3\
 ";
 

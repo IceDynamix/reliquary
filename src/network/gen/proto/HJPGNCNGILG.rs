@@ -45,7 +45,7 @@ impl HJPGNCNGILG {
         ::std::default::Default::default()
     }
 
-    // .GOKKMEOMOFC CAPIJNMCDAM = 7;
+    // .GOKKMEOMOFC CAPIJNMCDAM = 14;
 
     pub fn CAPIJNMCDAM(&self) -> &super::GOKKMEOMOFC::GOKKMEOMOFC {
         match self.DCOECLCEDOB {
@@ -94,7 +94,7 @@ impl HJPGNCNGILG {
         }
     }
 
-    // .NEBPGHDDEPC HMLCEHIKFFK = 8;
+    // .NEBPGHDDEPC HMLCEHIKFFK = 7;
 
     pub fn HMLCEHIKFFK(&self) -> &super::NEBPGHDDEPC::NEBPGHDDEPC {
         match self.DCOECLCEDOB {
@@ -179,10 +179,10 @@ impl ::protobuf::Message for HJPGNCNGILG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                114 => {
                     self.DCOECLCEDOB = ::std::option::Option::Some(hjpgncngilg::DCOECLCEDOB::CAPIJNMCDAM(is.read_message()?));
                 },
-                66 => {
+                58 => {
                     self.DCOECLCEDOB = ::std::option::Option::Some(hjpgncngilg::DCOECLCEDOB::HMLCEHIKFFK(is.read_message()?));
                 },
                 tag => {
@@ -218,10 +218,10 @@ impl ::protobuf::Message for HJPGNCNGILG {
         if let ::std::option::Option::Some(ref v) = self.DCOECLCEDOB {
             match v {
                 &hjpgncngilg::DCOECLCEDOB::CAPIJNMCDAM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
                 &hjpgncngilg::DCOECLCEDOB::HMLCEHIKFFK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
             };
         }
@@ -305,8 +305,8 @@ pub mod hjpgncngilg {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HJPGNCNGILG.proto\x1a\x11GOKKMEOMOFC.proto\x1a\x11NEBPGHDDEPC.prot\
-    o\"\x80\x01\n\x0bHJPGNCNGILG\x120\n\x0bCAPIJNMCDAM\x18\x07\x20\x01(\x0b2\
-    \x0c.GOKKMEOMOFCH\0R\x0bCAPIJNMCDAM\x120\n\x0bHMLCEHIKFFK\x18\x08\x20\
+    o\"\x80\x01\n\x0bHJPGNCNGILG\x120\n\x0bCAPIJNMCDAM\x18\x0e\x20\x01(\x0b2\
+    \x0c.GOKKMEOMOFCH\0R\x0bCAPIJNMCDAM\x120\n\x0bHMLCEHIKFFK\x18\x07\x20\
     \x01(\x0b2\x0c.NEBPGHDDEPCH\0R\x0bHMLCEHIKFFKB\r\n\x0bDCOECLCEDOBb\x06pr\
     oto3\
 ";

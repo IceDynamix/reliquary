@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HMOPIBLFCLN {
     // message fields
-    // @@protoc_insertion_point(field:HMOPIBLFCLN.LNMMKFMEAJM)
-    pub LNMMKFMEAJM: ::protobuf::MessageField<super::HBCINIKPAFI::HBCINIKPAFI>,
     // @@protoc_insertion_point(field:HMOPIBLFCLN.HAFCKONEHFM)
     pub HAFCKONEHFM: u32,
     // @@protoc_insertion_point(field:HMOPIBLFCLN.GDGHCBGHLND)
     pub GDGHCBGHLND: ::protobuf::MessageField<super::KACKJJDJONI::KACKJJDJONI>,
+    // @@protoc_insertion_point(field:HMOPIBLFCLN.LNMMKFMEAJM)
+    pub LNMMKFMEAJM: ::protobuf::MessageField<super::HBCINIKPAFI::HBCINIKPAFI>,
     // @@protoc_insertion_point(field:HMOPIBLFCLN.LKLLMPOKOGH)
     pub LKLLMPOKOGH: bool,
     // special fields
@@ -55,11 +55,6 @@ impl HMOPIBLFCLN {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HBCINIKPAFI::HBCINIKPAFI>(
-            "LNMMKFMEAJM",
-            |m: &HMOPIBLFCLN| { &m.LNMMKFMEAJM },
-            |m: &mut HMOPIBLFCLN| { &mut m.LNMMKFMEAJM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HAFCKONEHFM",
             |m: &HMOPIBLFCLN| { &m.HAFCKONEHFM },
@@ -69,6 +64,11 @@ impl HMOPIBLFCLN {
             "GDGHCBGHLND",
             |m: &HMOPIBLFCLN| { &m.GDGHCBGHLND },
             |m: &mut HMOPIBLFCLN| { &mut m.GDGHCBGHLND },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HBCINIKPAFI::HBCINIKPAFI>(
+            "LNMMKFMEAJM",
+            |m: &HMOPIBLFCLN| { &m.LNMMKFMEAJM },
+            |m: &mut HMOPIBLFCLN| { &mut m.LNMMKFMEAJM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LKLLMPOKOGH",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for HMOPIBLFCLN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LNMMKFMEAJM)?;
-                },
-                56 => {
+                24 => {
                     self.HAFCKONEHFM = is.read_uint32()?;
                 },
-                82 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GDGHCBGHLND)?;
                 },
-                64 => {
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LNMMKFMEAJM)?;
+                },
+                72 => {
                     self.LKLLMPOKOGH = is.read_bool()?;
                 },
                 tag => {
@@ -117,14 +117,14 @@ impl ::protobuf::Message for HMOPIBLFCLN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.LNMMKFMEAJM.as_ref() {
+        if self.HAFCKONEHFM != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.HAFCKONEHFM);
+        }
+        if let Some(v) = self.GDGHCBGHLND.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.HAFCKONEHFM != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.HAFCKONEHFM);
-        }
-        if let Some(v) = self.GDGHCBGHLND.as_ref() {
+        if let Some(v) = self.LNMMKFMEAJM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -137,17 +137,17 @@ impl ::protobuf::Message for HMOPIBLFCLN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.LNMMKFMEAJM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
         if self.HAFCKONEHFM != 0 {
-            os.write_uint32(7, self.HAFCKONEHFM)?;
+            os.write_uint32(3, self.HAFCKONEHFM)?;
         }
         if let Some(v) = self.GDGHCBGHLND.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        }
+        if let Some(v) = self.LNMMKFMEAJM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.LKLLMPOKOGH != false {
-            os.write_bool(8, self.LKLLMPOKOGH)?;
+            os.write_bool(9, self.LKLLMPOKOGH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,18 +166,18 @@ impl ::protobuf::Message for HMOPIBLFCLN {
     }
 
     fn clear(&mut self) {
-        self.LNMMKFMEAJM.clear();
         self.HAFCKONEHFM = 0;
         self.GDGHCBGHLND.clear();
+        self.LNMMKFMEAJM.clear();
         self.LKLLMPOKOGH = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HMOPIBLFCLN {
         static instance: HMOPIBLFCLN = HMOPIBLFCLN {
-            LNMMKFMEAJM: ::protobuf::MessageField::none(),
             HAFCKONEHFM: 0,
             GDGHCBGHLND: ::protobuf::MessageField::none(),
+            LNMMKFMEAJM: ::protobuf::MessageField::none(),
             LKLLMPOKOGH: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -204,10 +204,10 @@ impl ::protobuf::reflect::ProtobufValue for HMOPIBLFCLN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HMOPIBLFCLN.proto\x1a\x11HBCINIKPAFI.proto\x1a\x11KACKJJDJONI.prot\
-    o\"\xb1\x01\n\x0bHMOPIBLFCLN\x12.\n\x0bLNMMKFMEAJM\x18\r\x20\x01(\x0b2\
-    \x0c.HBCINIKPAFIR\x0bLNMMKFMEAJM\x12\x20\n\x0bHAFCKONEHFM\x18\x07\x20\
-    \x01(\rR\x0bHAFCKONEHFM\x12.\n\x0bGDGHCBGHLND\x18\n\x20\x01(\x0b2\x0c.KA\
-    CKJJDJONIR\x0bGDGHCBGHLND\x12\x20\n\x0bLKLLMPOKOGH\x18\x08\x20\x01(\x08R\
+    o\"\xb1\x01\n\x0bHMOPIBLFCLN\x12\x20\n\x0bHAFCKONEHFM\x18\x03\x20\x01(\r\
+    R\x0bHAFCKONEHFM\x12.\n\x0bGDGHCBGHLND\x18\x04\x20\x01(\x0b2\x0c.KACKJJD\
+    JONIR\x0bGDGHCBGHLND\x12.\n\x0bLNMMKFMEAJM\x18\x02\x20\x01(\x0b2\x0c.HBC\
+    INIKPAFIR\x0bLNMMKFMEAJM\x12\x20\n\x0bLKLLMPOKOGH\x18\t\x20\x01(\x08R\
     \x0bLKLLMPOKOGHb\x06proto3\
 ";
 

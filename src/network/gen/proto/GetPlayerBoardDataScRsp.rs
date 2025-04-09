@@ -28,18 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetPlayerBoardDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetPlayerBoardDataScRsp.CIADJOKLLPK)
-    pub CIADJOKLLPK: u32,
-    // @@protoc_insertion_point(field:GetPlayerBoardDataScRsp.CLNFIJMGMDP)
-    pub CLNFIJMGMDP: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetPlayerBoardDataScRsp.IIDEAOAACCF)
-    pub IIDEAOAACCF: ::std::vec::Vec<super::KAODKKLGDEN::KAODKKLGDEN>,
     // @@protoc_insertion_point(field:GetPlayerBoardDataScRsp.DMCCBECKHML)
     pub DMCCBECKHML: ::std::string::String,
+    // @@protoc_insertion_point(field:GetPlayerBoardDataScRsp.KKNJHENMGPK)
+    pub KKNJHENMGPK: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetPlayerBoardDataScRsp.CLNFIJMGMDP)
+    pub CLNFIJMGMDP: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetPlayerBoardDataScRsp.JLMICFLEFPG)
     pub JLMICFLEFPG: ::protobuf::MessageField<super::JBMOIHFMEMJ::JBMOIHFMEMJ>,
+    // @@protoc_insertion_point(field:GetPlayerBoardDataScRsp.CIADJOKLLPK)
+    pub CIADJOKLLPK: u32,
     // @@protoc_insertion_point(field:GetPlayerBoardDataScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetPlayerBoardDataScRsp.OLDMJONBJOM)
+    pub OLDMJONBJOM: u32,
+    // @@protoc_insertion_point(field:GetPlayerBoardDataScRsp.IIDEAOAACCF)
+    pub IIDEAOAACCF: ::std::vec::Vec<super::KAODKKLGDEN::KAODKKLGDEN>,
     // special fields
     // @@protoc_insertion_point(special_field:GetPlayerBoardDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,27 +61,22 @@ impl GetPlayerBoardDataScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(6);
+        let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CIADJOKLLPK",
-            |m: &GetPlayerBoardDataScRsp| { &m.CIADJOKLLPK },
-            |m: &mut GetPlayerBoardDataScRsp| { &mut m.CIADJOKLLPK },
+            "DMCCBECKHML",
+            |m: &GetPlayerBoardDataScRsp| { &m.DMCCBECKHML },
+            |m: &mut GetPlayerBoardDataScRsp| { &mut m.DMCCBECKHML },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "KKNJHENMGPK",
+            |m: &GetPlayerBoardDataScRsp| { &m.KKNJHENMGPK },
+            |m: &mut GetPlayerBoardDataScRsp| { &mut m.KKNJHENMGPK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "CLNFIJMGMDP",
             |m: &GetPlayerBoardDataScRsp| { &m.CLNFIJMGMDP },
             |m: &mut GetPlayerBoardDataScRsp| { &mut m.CLNFIJMGMDP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IIDEAOAACCF",
-            |m: &GetPlayerBoardDataScRsp| { &m.IIDEAOAACCF },
-            |m: &mut GetPlayerBoardDataScRsp| { &mut m.IIDEAOAACCF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DMCCBECKHML",
-            |m: &GetPlayerBoardDataScRsp| { &m.DMCCBECKHML },
-            |m: &mut GetPlayerBoardDataScRsp| { &mut m.DMCCBECKHML },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JBMOIHFMEMJ::JBMOIHFMEMJ>(
             "JLMICFLEFPG",
@@ -85,9 +84,24 @@ impl GetPlayerBoardDataScRsp {
             |m: &mut GetPlayerBoardDataScRsp| { &mut m.JLMICFLEFPG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CIADJOKLLPK",
+            |m: &GetPlayerBoardDataScRsp| { &m.CIADJOKLLPK },
+            |m: &mut GetPlayerBoardDataScRsp| { &mut m.CIADJOKLLPK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetPlayerBoardDataScRsp| { &m.retcode },
             |m: &mut GetPlayerBoardDataScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OLDMJONBJOM",
+            |m: &GetPlayerBoardDataScRsp| { &m.OLDMJONBJOM },
+            |m: &mut GetPlayerBoardDataScRsp| { &mut m.OLDMJONBJOM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "IIDEAOAACCF",
+            |m: &GetPlayerBoardDataScRsp| { &m.IIDEAOAACCF },
+            |m: &mut GetPlayerBoardDataScRsp| { &mut m.IIDEAOAACCF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetPlayerBoardDataScRsp>(
             "GetPlayerBoardDataScRsp",
@@ -107,26 +121,35 @@ impl ::protobuf::Message for GetPlayerBoardDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.CIADJOKLLPK = is.read_uint32()?;
-                },
-                50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.CLNFIJMGMDP)?;
-                },
-                48 => {
-                    self.CLNFIJMGMDP.push(is.read_uint32()?);
-                },
-                42 => {
-                    self.IIDEAOAACCF.push(is.read_message()?);
-                },
-                10 => {
+                34 => {
                     self.DMCCBECKHML = is.read_string()?;
                 },
-                122 => {
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.KKNJHENMGPK)?;
+                },
+                88 => {
+                    self.KKNJHENMGPK.push(is.read_uint32()?);
+                },
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.CLNFIJMGMDP)?;
+                },
+                40 => {
+                    self.CLNFIJMGMDP.push(is.read_uint32()?);
+                },
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.JLMICFLEFPG)?;
                 },
-                96 => {
+                72 => {
+                    self.CIADJOKLLPK = is.read_uint32()?;
+                },
+                64 => {
                     self.retcode = is.read_uint32()?;
+                },
+                120 => {
+                    self.OLDMJONBJOM = is.read_uint32()?;
+                },
+                10 => {
+                    self.IIDEAOAACCF.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,46 +163,54 @@ impl ::protobuf::Message for GetPlayerBoardDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CIADJOKLLPK != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.CIADJOKLLPK);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.CLNFIJMGMDP);
-        for value in &self.IIDEAOAACCF {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if !self.DMCCBECKHML.is_empty() {
-            my_size += ::protobuf::rt::string_size(1, &self.DMCCBECKHML);
+            my_size += ::protobuf::rt::string_size(4, &self.DMCCBECKHML);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.KKNJHENMGPK);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.CLNFIJMGMDP);
         if let Some(v) = self.JLMICFLEFPG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+        if self.CIADJOKLLPK != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.CIADJOKLLPK);
         }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        }
+        if self.OLDMJONBJOM != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.OLDMJONBJOM);
+        }
+        for value in &self.IIDEAOAACCF {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CIADJOKLLPK != 0 {
-            os.write_uint32(8, self.CIADJOKLLPK)?;
-        }
-        os.write_repeated_packed_uint32(6, &self.CLNFIJMGMDP)?;
-        for v in &self.IIDEAOAACCF {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
         if !self.DMCCBECKHML.is_empty() {
-            os.write_string(1, &self.DMCCBECKHML)?;
+            os.write_string(4, &self.DMCCBECKHML)?;
         }
+        os.write_repeated_packed_uint32(11, &self.KKNJHENMGPK)?;
+        os.write_repeated_packed_uint32(5, &self.CLNFIJMGMDP)?;
         if let Some(v) = self.JLMICFLEFPG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        }
+        if self.CIADJOKLLPK != 0 {
+            os.write_uint32(9, self.CIADJOKLLPK)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
+        if self.OLDMJONBJOM != 0 {
+            os.write_uint32(15, self.OLDMJONBJOM)?;
+        }
+        for v in &self.IIDEAOAACCF {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -197,23 +228,27 @@ impl ::protobuf::Message for GetPlayerBoardDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.CIADJOKLLPK = 0;
-        self.CLNFIJMGMDP.clear();
-        self.IIDEAOAACCF.clear();
         self.DMCCBECKHML.clear();
+        self.KKNJHENMGPK.clear();
+        self.CLNFIJMGMDP.clear();
         self.JLMICFLEFPG.clear();
+        self.CIADJOKLLPK = 0;
         self.retcode = 0;
+        self.OLDMJONBJOM = 0;
+        self.IIDEAOAACCF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetPlayerBoardDataScRsp {
         static instance: GetPlayerBoardDataScRsp = GetPlayerBoardDataScRsp {
-            CIADJOKLLPK: 0,
-            CLNFIJMGMDP: ::std::vec::Vec::new(),
-            IIDEAOAACCF: ::std::vec::Vec::new(),
             DMCCBECKHML: ::std::string::String::new(),
+            KKNJHENMGPK: ::std::vec::Vec::new(),
+            CLNFIJMGMDP: ::std::vec::Vec::new(),
             JLMICFLEFPG: ::protobuf::MessageField::none(),
+            CIADJOKLLPK: 0,
             retcode: 0,
+            OLDMJONBJOM: 0,
+            IIDEAOAACCF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,13 +274,14 @@ impl ::protobuf::reflect::ProtobufValue for GetPlayerBoardDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dGetPlayerBoardDataScRsp.proto\x1a\x11JBMOIHFMEMJ.proto\x1a\x11KAOD\
-    KKLGDEN.proto\"\xf9\x01\n\x17GetPlayerBoardDataScRsp\x12\x20\n\x0bCIADJO\
-    KLLPK\x18\x08\x20\x01(\rR\x0bCIADJOKLLPK\x12\x20\n\x0bCLNFIJMGMDP\x18\
-    \x06\x20\x03(\rR\x0bCLNFIJMGMDP\x12.\n\x0bIIDEAOAACCF\x18\x05\x20\x03(\
-    \x0b2\x0c.KAODKKLGDENR\x0bIIDEAOAACCF\x12\x20\n\x0bDMCCBECKHML\x18\x01\
-    \x20\x01(\tR\x0bDMCCBECKHML\x12.\n\x0bJLMICFLEFPG\x18\x0f\x20\x01(\x0b2\
-    \x0c.JBMOIHFMEMJR\x0bJLMICFLEFPG\x12\x18\n\x07retcode\x18\x0c\x20\x01(\r\
-    R\x07retcodeb\x06proto3\
+    KKLGDEN.proto\"\xbd\x02\n\x17GetPlayerBoardDataScRsp\x12\x20\n\x0bDMCCBE\
+    CKHML\x18\x04\x20\x01(\tR\x0bDMCCBECKHML\x12\x20\n\x0bKKNJHENMGPK\x18\
+    \x0b\x20\x03(\rR\x0bKKNJHENMGPK\x12\x20\n\x0bCLNFIJMGMDP\x18\x05\x20\x03\
+    (\rR\x0bCLNFIJMGMDP\x12.\n\x0bJLMICFLEFPG\x18\x0c\x20\x01(\x0b2\x0c.JBMO\
+    IHFMEMJR\x0bJLMICFLEFPG\x12\x20\n\x0bCIADJOKLLPK\x18\t\x20\x01(\rR\x0bCI\
+    ADJOKLLPK\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12\x20\n\
+    \x0bOLDMJONBJOM\x18\x0f\x20\x01(\rR\x0bOLDMJONBJOM\x12.\n\x0bIIDEAOAACCF\
+    \x18\x01\x20\x03(\x0b2\x0c.KAODKKLGDENR\x0bIIDEAOAACCFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

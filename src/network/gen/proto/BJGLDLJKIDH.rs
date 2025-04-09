@@ -79,10 +79,10 @@ impl ::protobuf::Message for BJGLDLJKIDH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                16 => {
                     self.level = is.read_uint32()?;
                 },
-                104 => {
+                96 => {
                     self.JLLNMGBENAF = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for BJGLDLJKIDH {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.level);
+            my_size += ::protobuf::rt::uint32_size(2, self.level);
         }
         if self.JLLNMGBENAF != ::protobuf::EnumOrUnknown::new(super::DMLCPAKDBLJ::DMLCPAKDBLJ::TRAIN_PARTY_MT_CATEGORY_NONE) {
-            my_size += ::protobuf::rt::int32_size(13, self.JLLNMGBENAF.value());
+            my_size += ::protobuf::rt::int32_size(12, self.JLLNMGBENAF.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for BJGLDLJKIDH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.level != 0 {
-            os.write_uint32(10, self.level)?;
+            os.write_uint32(2, self.level)?;
         }
         if self.JLLNMGBENAF != ::protobuf::EnumOrUnknown::new(super::DMLCPAKDBLJ::DMLCPAKDBLJ::TRAIN_PARTY_MT_CATEGORY_NONE) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.JLLNMGBENAF))?;
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.JLLNMGBENAF))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for BJGLDLJKIDH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BJGLDLJKIDH.proto\x1a\x11DMLCPAKDBLJ.proto\"S\n\x0bBJGLDLJKIDH\x12\
-    \x14\n\x05level\x18\n\x20\x01(\rR\x05level\x12.\n\x0bJLLNMGBENAF\x18\r\
-    \x20\x01(\x0e2\x0c.DMLCPAKDBLJR\x0bJLLNMGBENAFb\x06proto3\
+    \x14\n\x05level\x18\x02\x20\x01(\rR\x05level\x12.\n\x0bJLLNMGBENAF\x18\
+    \x0c\x20\x01(\x0e2\x0c.DMLCPAKDBLJR\x0bJLLNMGBENAFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

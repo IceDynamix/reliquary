@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyReRollRandomScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyReRollRandomScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:MonopolyReRollRandomScRsp.GPFGDOKNGEL)
-    pub GPFGDOKNGEL: ::protobuf::MessageField<super::BLMJNFFPMCN_LBENAAHCPEO::LBENAAHCPEO>,
     // @@protoc_insertion_point(field:MonopolyReRollRandomScRsp.FHICMGDFGBC)
     pub FHICMGDFGBC: u32,
+    // @@protoc_insertion_point(field:MonopolyReRollRandomScRsp.GPFGDOKNGEL)
+    pub GPFGDOKNGEL: ::protobuf::MessageField<super::BLMJNFFPMCN_LBENAAHCPEO::LBENAAHCPEO>,
+    // @@protoc_insertion_point(field:MonopolyReRollRandomScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyReRollRandomScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl MonopolyReRollRandomScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &MonopolyReRollRandomScRsp| { &m.retcode },
-            |m: &mut MonopolyReRollRandomScRsp| { &mut m.retcode },
+            "FHICMGDFGBC",
+            |m: &MonopolyReRollRandomScRsp| { &m.FHICMGDFGBC },
+            |m: &mut MonopolyReRollRandomScRsp| { &mut m.FHICMGDFGBC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BLMJNFFPMCN_LBENAAHCPEO::LBENAAHCPEO>(
             "GPFGDOKNGEL",
@@ -64,9 +64,9 @@ impl MonopolyReRollRandomScRsp {
             |m: &mut MonopolyReRollRandomScRsp| { &mut m.GPFGDOKNGEL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FHICMGDFGBC",
-            |m: &MonopolyReRollRandomScRsp| { &m.FHICMGDFGBC },
-            |m: &mut MonopolyReRollRandomScRsp| { &mut m.FHICMGDFGBC },
+            "retcode",
+            |m: &MonopolyReRollRandomScRsp| { &m.retcode },
+            |m: &mut MonopolyReRollRandomScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyReRollRandomScRsp>(
             "MonopolyReRollRandomScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for MonopolyReRollRandomScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.retcode = is.read_uint32()?;
+                56 => {
+                    self.FHICMGDFGBC = is.read_uint32()?;
                 },
-                58 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GPFGDOKNGEL)?;
                 },
-                112 => {
-                    self.FHICMGDFGBC = is.read_uint32()?;
+                88 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for MonopolyReRollRandomScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        if self.FHICMGDFGBC != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.FHICMGDFGBC);
         }
         if let Some(v) = self.GPFGDOKNGEL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.FHICMGDFGBC != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.FHICMGDFGBC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for MonopolyReRollRandomScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+        if self.FHICMGDFGBC != 0 {
+            os.write_uint32(7, self.FHICMGDFGBC)?;
         }
         if let Some(v) = self.GPFGDOKNGEL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
-        if self.FHICMGDFGBC != 0 {
-            os.write_uint32(14, self.FHICMGDFGBC)?;
+        if self.retcode != 0 {
+            os.write_uint32(11, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for MonopolyReRollRandomScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.GPFGDOKNGEL.clear();
         self.FHICMGDFGBC = 0;
+        self.GPFGDOKNGEL.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyReRollRandomScRsp {
         static instance: MonopolyReRollRandomScRsp = MonopolyReRollRandomScRsp {
-            retcode: 0,
-            GPFGDOKNGEL: ::protobuf::MessageField::none(),
             FHICMGDFGBC: 0,
+            GPFGDOKNGEL: ::protobuf::MessageField::none(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyReRollRandomScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fMonopolyReRollRandomScRsp.proto\x1a\x1dBLMJNFFPMCN_LBENAAHCPEO.pro\
-    to\"\x87\x01\n\x19MonopolyReRollRandomScRsp\x12\x18\n\x07retcode\x18\x08\
-    \x20\x01(\rR\x07retcode\x12.\n\x0bGPFGDOKNGEL\x18\x07\x20\x01(\x0b2\x0c.\
-    LBENAAHCPEOR\x0bGPFGDOKNGEL\x12\x20\n\x0bFHICMGDFGBC\x18\x0e\x20\x01(\rR\
-    \x0bFHICMGDFGBCb\x06proto3\
+    to\"\x87\x01\n\x19MonopolyReRollRandomScRsp\x12\x20\n\x0bFHICMGDFGBC\x18\
+    \x07\x20\x01(\rR\x0bFHICMGDFGBC\x12.\n\x0bGPFGDOKNGEL\x18\x06\x20\x01(\
+    \x0b2\x0c.LBENAAHCPEOR\x0bGPFGDOKNGEL\x12\x18\n\x07retcode\x18\x0b\x20\
+    \x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

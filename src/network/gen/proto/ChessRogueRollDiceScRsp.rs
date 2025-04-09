@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueRollDiceScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueRollDiceScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:ChessRogueRollDiceScRsp.DCIHKMFNHBM)
     pub DCIHKMFNHBM: u32,
+    // @@protoc_insertion_point(field:ChessRogueRollDiceScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:ChessRogueRollDiceScRsp.AIAONPFBGNG)
     pub AIAONPFBGNG: ::protobuf::MessageField<super::OALOINNAINI::OALOINNAINI>,
     // special fields
@@ -54,14 +54,14 @@ impl ChessRogueRollDiceScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &ChessRogueRollDiceScRsp| { &m.retcode },
-            |m: &mut ChessRogueRollDiceScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DCIHKMFNHBM",
             |m: &ChessRogueRollDiceScRsp| { &m.DCIHKMFNHBM },
             |m: &mut ChessRogueRollDiceScRsp| { &mut m.DCIHKMFNHBM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &ChessRogueRollDiceScRsp| { &m.retcode },
+            |m: &mut ChessRogueRollDiceScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OALOINNAINI::OALOINNAINI>(
             "AIAONPFBGNG",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for ChessRogueRollDiceScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                80 => {
+                56 => {
                     self.DCIHKMFNHBM = is.read_uint32()?;
                 },
-                34 => {
+                64 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.AIAONPFBGNG)?;
                 },
                 tag => {
@@ -107,11 +107,11 @@ impl ::protobuf::Message for ChessRogueRollDiceScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
-        }
         if self.DCIHKMFNHBM != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.DCIHKMFNHBM);
+            my_size += ::protobuf::rt::uint32_size(7, self.DCIHKMFNHBM);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         if let Some(v) = self.AIAONPFBGNG.as_ref() {
             let len = v.compute_size();
@@ -123,14 +123,14 @@ impl ::protobuf::Message for ChessRogueRollDiceScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
-        }
         if self.DCIHKMFNHBM != 0 {
-            os.write_uint32(10, self.DCIHKMFNHBM)?;
+            os.write_uint32(7, self.DCIHKMFNHBM)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(8, self.retcode)?;
         }
         if let Some(v) = self.AIAONPFBGNG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for ChessRogueRollDiceScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.DCIHKMFNHBM = 0;
+        self.retcode = 0;
         self.AIAONPFBGNG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueRollDiceScRsp {
         static instance: ChessRogueRollDiceScRsp = ChessRogueRollDiceScRsp {
-            retcode: 0,
             DCIHKMFNHBM: 0,
+            retcode: 0,
             AIAONPFBGNG: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueRollDiceScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dChessRogueRollDiceScRsp.proto\x1a\x11OALOINNAINI.proto\"\x85\x01\n\
-    \x17ChessRogueRollDiceScRsp\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07\
-    retcode\x12\x20\n\x0bDCIHKMFNHBM\x18\n\x20\x01(\rR\x0bDCIHKMFNHBM\x12.\n\
-    \x0bAIAONPFBGNG\x18\x04\x20\x01(\x0b2\x0c.OALOINNAINIR\x0bAIAONPFBGNGb\
+    \x17ChessRogueRollDiceScRsp\x12\x20\n\x0bDCIHKMFNHBM\x18\x07\x20\x01(\rR\
+    \x0bDCIHKMFNHBM\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12.\
+    \n\x0bAIAONPFBGNG\x18\x0e\x20\x01(\x0b2\x0c.OALOINNAINIR\x0bAIAONPFBGNGb\
     \x06proto3\
 ";
 

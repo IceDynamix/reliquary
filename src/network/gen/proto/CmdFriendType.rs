@@ -29,122 +29,122 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdFriendType {
     // @@protoc_insertion_point(enum_value:CmdFriendType.CmdFriendTypeNone)
     CmdFriendTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetPlatformPlayerInfoCsReq)
-    CmdGetPlatformPlayerInfoCsReq = 2913,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendRecommendListInfoCsReq)
-    CmdGetFriendRecommendListInfoCsReq = 2923,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetPlayerDetailInfoCsReq)
-    CmdGetPlayerDetailInfoCsReq = 2958,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdAddBlacklistScRsp)
-    CmdAddBlacklistScRsp = 2939,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetCurAssistCsReq)
-    CmdGetCurAssistCsReq = 2919,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSetFriendRemarkNameScRsp)
-    CmdSetFriendRemarkNameScRsp = 2991,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendChallengeDetailCsReq)
-    CmdGetFriendChallengeDetailCsReq = 2955,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSyncApplyFriendScNotify)
-    CmdSyncApplyFriendScNotify = 2928,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendChallengeDetailScRsp)
-    CmdGetFriendChallengeDetailScRsp = 2985,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendBattleRecordDetailCsReq)
-    CmdGetFriendBattleRecordDetailCsReq = 2960,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSetAssistCsReq)
-    CmdSetAssistCsReq = 2981,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdApplyFriendCsReq)
-    CmdApplyFriendCsReq = 2997,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSearchPlayerScRsp)
-    CmdSearchPlayerScRsp = 2920,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdDeleteFriendScRsp)
-    CmdDeleteFriendScRsp = 2922,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendDevelopmentInfoScRsp)
-    CmdGetFriendDevelopmentInfoScRsp = 2907,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendChallengeLineupScRsp)
-    CmdGetFriendChallengeLineupScRsp = 2990,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdCurAssistChangedNotify)
-    CmdCurAssistChangedNotify = 2957,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdReportPlayerCsReq)
-    CmdReportPlayerCsReq = 2918,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSetAssistScRsp)
-    CmdSetAssistScRsp = 2938,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendDevelopmentInfoCsReq)
-    CmdGetFriendDevelopmentInfoCsReq = 2963,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetAssistListScRsp)
-    CmdGetAssistListScRsp = 2970,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSyncDeleteFriendScNotify)
-    CmdSyncDeleteFriendScNotify = 2947,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdAddBlacklistCsReq)
-    CmdAddBlacklistCsReq = 2980,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdHandleFriendScRsp)
-    CmdHandleFriendScRsp = 2905,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetCurAssistScRsp)
-    CmdGetCurAssistScRsp = 2982,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetAssistHistoryScRsp)
-    CmdGetAssistHistoryScRsp = 2941,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSearchPlayerCsReq)
-    CmdSearchPlayerCsReq = 2969,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendApplyListInfoCsReq)
-    CmdGetFriendApplyListInfoCsReq = 2930,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSetForbidOtherApplyFriendCsReq)
-    CmdSetForbidOtherApplyFriendCsReq = 2929,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdHandleFriendCsReq)
-    CmdHandleFriendCsReq = 2911,
     // @@protoc_insertion_point(enum_value:CmdFriendType.CmdNewAssistHistoryNotify)
-    CmdNewAssistHistoryNotify = 2973,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendListInfoScRsp)
-    CmdGetFriendListInfoScRsp = 2968,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetAssistListCsReq)
-    CmdGetAssistListCsReq = 2992,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdDeleteBlacklistCsReq)
-    CmdDeleteBlacklistCsReq = 2950,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendBattleRecordDetailScRsp)
-    CmdGetFriendBattleRecordDetailScRsp = 2926,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendChallengeLineupCsReq)
-    CmdGetFriendChallengeLineupCsReq = 2961,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetPlatformPlayerInfoScRsp)
-    CmdGetPlatformPlayerInfoScRsp = 2908,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdTakeAssistRewardScRsp)
-    CmdTakeAssistRewardScRsp = 2903,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdTakeAssistRewardCsReq)
-    CmdTakeAssistRewardCsReq = 2940,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendAssistListScRsp)
-    CmdGetFriendAssistListScRsp = 2954,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendRecommendListInfoScRsp)
-    CmdGetFriendRecommendListInfoScRsp = 2912,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetAssistHistoryCsReq)
-    CmdGetAssistHistoryCsReq = 2959,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetPlayerDetailInfoScRsp)
-    CmdGetPlayerDetailInfoScRsp = 2924,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendAssistListCsReq)
-    CmdGetFriendAssistListCsReq = 2906,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendLoginInfoScRsp)
-    CmdGetFriendLoginInfoScRsp = 2967,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendApplyListInfoScRsp)
-    CmdGetFriendApplyListInfoScRsp = 2956,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSyncAddBlacklistScNotify)
-    CmdSyncAddBlacklistScNotify = 2996,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdDeleteBlacklistScRsp)
-    CmdDeleteBlacklistScRsp = 2948,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdApplyFriendScRsp)
-    CmdApplyFriendScRsp = 2976,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSetForbidOtherApplyFriendScRsp)
-    CmdSetForbidOtherApplyFriendScRsp = 2964,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdReportPlayerScRsp)
-    CmdReportPlayerScRsp = 2995,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSetFriendMarkScRsp)
-    CmdSetFriendMarkScRsp = 2977,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendLoginInfoCsReq)
-    CmdGetFriendLoginInfoCsReq = 2978,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendListInfoCsReq)
-    CmdGetFriendListInfoCsReq = 2901,
+    CmdNewAssistHistoryNotify = 2983,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdAddBlacklistCsReq)
+    CmdAddBlacklistCsReq = 2977,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSyncApplyFriendScNotify)
+    CmdSyncApplyFriendScNotify = 2926,
     // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSetFriendMarkCsReq)
-    CmdSetFriendMarkCsReq = 2915,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdDeleteFriendCsReq)
-    CmdDeleteFriendCsReq = 2949,
+    CmdSetFriendMarkCsReq = 2914,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendListInfoScRsp)
+    CmdGetFriendListInfoScRsp = 2913,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetPlatformPlayerInfoScRsp)
+    CmdGetPlatformPlayerInfoScRsp = 2987,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetAssistHistoryCsReq)
+    CmdGetAssistHistoryCsReq = 2975,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendAssistListCsReq)
+    CmdGetFriendAssistListCsReq = 2917,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdTakeAssistRewardScRsp)
+    CmdTakeAssistRewardScRsp = 2968,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendLoginInfoCsReq)
+    CmdGetFriendLoginInfoCsReq = 2956,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendLoginInfoScRsp)
+    CmdGetFriendLoginInfoScRsp = 2981,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetPlayerDetailInfoScRsp)
+    CmdGetPlayerDetailInfoScRsp = 2909,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdApplyFriendCsReq)
+    CmdApplyFriendCsReq = 2970,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdApplyFriendScRsp)
+    CmdApplyFriendScRsp = 2989,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetAssistListCsReq)
+    CmdGetAssistListCsReq = 2922,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSearchPlayerCsReq)
+    CmdSearchPlayerCsReq = 2965,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetAssistHistoryScRsp)
+    CmdGetAssistHistoryScRsp = 2928,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdReportPlayerCsReq)
+    CmdReportPlayerCsReq = 2971,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSetFriendMarkScRsp)
+    CmdSetFriendMarkScRsp = 2941,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendBattleRecordDetailScRsp)
+    CmdGetFriendBattleRecordDetailScRsp = 2999,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSetFriendRemarkNameScRsp)
+    CmdSetFriendRemarkNameScRsp = 2907,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdDeleteFriendScRsp)
+    CmdDeleteFriendScRsp = 2950,
     // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSyncHandleFriendScNotify)
-    CmdSyncHandleFriendScNotify = 2914,
+    CmdSyncHandleFriendScNotify = 2918,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSearchPlayerScRsp)
+    CmdSearchPlayerScRsp = 2952,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdAddBlacklistScRsp)
+    CmdAddBlacklistScRsp = 2991,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendRecommendListInfoCsReq)
+    CmdGetFriendRecommendListInfoCsReq = 2957,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendAssistListScRsp)
+    CmdGetFriendAssistListScRsp = 2963,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendApplyListInfoScRsp)
+    CmdGetFriendApplyListInfoScRsp = 2906,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSyncDeleteFriendScNotify)
+    CmdSyncDeleteFriendScNotify = 2973,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdReportPlayerScRsp)
+    CmdReportPlayerScRsp = 2982,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetCurAssistScRsp)
+    CmdGetCurAssistScRsp = 2984,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendChallengeDetailCsReq)
+    CmdGetFriendChallengeDetailCsReq = 2996,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendApplyListInfoCsReq)
+    CmdGetFriendApplyListInfoCsReq = 2935,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdDeleteFriendCsReq)
+    CmdDeleteFriendCsReq = 2936,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetAssistListScRsp)
+    CmdGetAssistListScRsp = 2986,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdDeleteBlacklistScRsp)
+    CmdDeleteBlacklistScRsp = 2937,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetCurAssistCsReq)
+    CmdGetCurAssistCsReq = 2924,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendBattleRecordDetailCsReq)
+    CmdGetFriendBattleRecordDetailCsReq = 2966,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSetForbidOtherApplyFriendCsReq)
+    CmdSetForbidOtherApplyFriendCsReq = 3000,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSetForbidOtherApplyFriendScRsp)
+    CmdSetForbidOtherApplyFriendScRsp = 2946,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSetAssistScRsp)
+    CmdSetAssistScRsp = 2953,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSetAssistCsReq)
+    CmdSetAssistCsReq = 2992,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdDeleteBlacklistCsReq)
+    CmdDeleteBlacklistCsReq = 2951,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendDevelopmentInfoScRsp)
+    CmdGetFriendDevelopmentInfoScRsp = 2908,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendChallengeLineupCsReq)
+    CmdGetFriendChallengeLineupCsReq = 2904,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendChallengeDetailScRsp)
+    CmdGetFriendChallengeDetailScRsp = 2969,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendListInfoCsReq)
+    CmdGetFriendListInfoCsReq = 2911,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdCurAssistChangedNotify)
+    CmdCurAssistChangedNotify = 2960,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetPlayerDetailInfoCsReq)
+    CmdGetPlayerDetailInfoCsReq = 2947,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendChallengeLineupScRsp)
+    CmdGetFriendChallengeLineupScRsp = 2978,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdHandleFriendScRsp)
+    CmdHandleFriendScRsp = 2995,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendRecommendListInfoScRsp)
+    CmdGetFriendRecommendListInfoScRsp = 2925,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetPlatformPlayerInfoCsReq)
+    CmdGetPlatformPlayerInfoCsReq = 2994,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdTakeAssistRewardCsReq)
+    CmdTakeAssistRewardCsReq = 2958,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendDevelopmentInfoCsReq)
+    CmdGetFriendDevelopmentInfoCsReq = 2921,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSyncAddBlacklistScNotify)
+    CmdSyncAddBlacklistScNotify = 2993,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdHandleFriendCsReq)
+    CmdHandleFriendCsReq = 2930,
     // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSetFriendRemarkNameCsReq)
-    CmdSetFriendRemarkNameCsReq = 2917,
+    CmdSetFriendRemarkNameCsReq = 2910,
 }
 
 impl ::protobuf::Enum for CmdFriendType {
@@ -157,64 +157,64 @@ impl ::protobuf::Enum for CmdFriendType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdFriendType> {
         match value {
             0 => ::std::option::Option::Some(CmdFriendType::CmdFriendTypeNone),
-            2913 => ::std::option::Option::Some(CmdFriendType::CmdGetPlatformPlayerInfoCsReq),
-            2923 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendRecommendListInfoCsReq),
-            2958 => ::std::option::Option::Some(CmdFriendType::CmdGetPlayerDetailInfoCsReq),
-            2939 => ::std::option::Option::Some(CmdFriendType::CmdAddBlacklistScRsp),
-            2919 => ::std::option::Option::Some(CmdFriendType::CmdGetCurAssistCsReq),
-            2991 => ::std::option::Option::Some(CmdFriendType::CmdSetFriendRemarkNameScRsp),
-            2955 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendChallengeDetailCsReq),
-            2928 => ::std::option::Option::Some(CmdFriendType::CmdSyncApplyFriendScNotify),
-            2985 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendChallengeDetailScRsp),
-            2960 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendBattleRecordDetailCsReq),
-            2981 => ::std::option::Option::Some(CmdFriendType::CmdSetAssistCsReq),
-            2997 => ::std::option::Option::Some(CmdFriendType::CmdApplyFriendCsReq),
-            2920 => ::std::option::Option::Some(CmdFriendType::CmdSearchPlayerScRsp),
-            2922 => ::std::option::Option::Some(CmdFriendType::CmdDeleteFriendScRsp),
-            2907 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendDevelopmentInfoScRsp),
-            2990 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendChallengeLineupScRsp),
-            2957 => ::std::option::Option::Some(CmdFriendType::CmdCurAssistChangedNotify),
-            2918 => ::std::option::Option::Some(CmdFriendType::CmdReportPlayerCsReq),
-            2938 => ::std::option::Option::Some(CmdFriendType::CmdSetAssistScRsp),
-            2963 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendDevelopmentInfoCsReq),
-            2970 => ::std::option::Option::Some(CmdFriendType::CmdGetAssistListScRsp),
-            2947 => ::std::option::Option::Some(CmdFriendType::CmdSyncDeleteFriendScNotify),
-            2980 => ::std::option::Option::Some(CmdFriendType::CmdAddBlacklistCsReq),
-            2905 => ::std::option::Option::Some(CmdFriendType::CmdHandleFriendScRsp),
-            2982 => ::std::option::Option::Some(CmdFriendType::CmdGetCurAssistScRsp),
-            2941 => ::std::option::Option::Some(CmdFriendType::CmdGetAssistHistoryScRsp),
-            2969 => ::std::option::Option::Some(CmdFriendType::CmdSearchPlayerCsReq),
-            2930 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendApplyListInfoCsReq),
-            2929 => ::std::option::Option::Some(CmdFriendType::CmdSetForbidOtherApplyFriendCsReq),
-            2911 => ::std::option::Option::Some(CmdFriendType::CmdHandleFriendCsReq),
-            2973 => ::std::option::Option::Some(CmdFriendType::CmdNewAssistHistoryNotify),
-            2968 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendListInfoScRsp),
-            2992 => ::std::option::Option::Some(CmdFriendType::CmdGetAssistListCsReq),
-            2950 => ::std::option::Option::Some(CmdFriendType::CmdDeleteBlacklistCsReq),
-            2926 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendBattleRecordDetailScRsp),
-            2961 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendChallengeLineupCsReq),
-            2908 => ::std::option::Option::Some(CmdFriendType::CmdGetPlatformPlayerInfoScRsp),
-            2903 => ::std::option::Option::Some(CmdFriendType::CmdTakeAssistRewardScRsp),
-            2940 => ::std::option::Option::Some(CmdFriendType::CmdTakeAssistRewardCsReq),
-            2954 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendAssistListScRsp),
-            2912 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendRecommendListInfoScRsp),
-            2959 => ::std::option::Option::Some(CmdFriendType::CmdGetAssistHistoryCsReq),
-            2924 => ::std::option::Option::Some(CmdFriendType::CmdGetPlayerDetailInfoScRsp),
-            2906 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendAssistListCsReq),
-            2967 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendLoginInfoScRsp),
-            2956 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendApplyListInfoScRsp),
-            2996 => ::std::option::Option::Some(CmdFriendType::CmdSyncAddBlacklistScNotify),
-            2948 => ::std::option::Option::Some(CmdFriendType::CmdDeleteBlacklistScRsp),
-            2976 => ::std::option::Option::Some(CmdFriendType::CmdApplyFriendScRsp),
-            2964 => ::std::option::Option::Some(CmdFriendType::CmdSetForbidOtherApplyFriendScRsp),
-            2995 => ::std::option::Option::Some(CmdFriendType::CmdReportPlayerScRsp),
-            2977 => ::std::option::Option::Some(CmdFriendType::CmdSetFriendMarkScRsp),
-            2978 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendLoginInfoCsReq),
-            2901 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendListInfoCsReq),
-            2915 => ::std::option::Option::Some(CmdFriendType::CmdSetFriendMarkCsReq),
-            2949 => ::std::option::Option::Some(CmdFriendType::CmdDeleteFriendCsReq),
-            2914 => ::std::option::Option::Some(CmdFriendType::CmdSyncHandleFriendScNotify),
-            2917 => ::std::option::Option::Some(CmdFriendType::CmdSetFriendRemarkNameCsReq),
+            2983 => ::std::option::Option::Some(CmdFriendType::CmdNewAssistHistoryNotify),
+            2977 => ::std::option::Option::Some(CmdFriendType::CmdAddBlacklistCsReq),
+            2926 => ::std::option::Option::Some(CmdFriendType::CmdSyncApplyFriendScNotify),
+            2914 => ::std::option::Option::Some(CmdFriendType::CmdSetFriendMarkCsReq),
+            2913 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendListInfoScRsp),
+            2987 => ::std::option::Option::Some(CmdFriendType::CmdGetPlatformPlayerInfoScRsp),
+            2975 => ::std::option::Option::Some(CmdFriendType::CmdGetAssistHistoryCsReq),
+            2917 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendAssistListCsReq),
+            2968 => ::std::option::Option::Some(CmdFriendType::CmdTakeAssistRewardScRsp),
+            2956 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendLoginInfoCsReq),
+            2981 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendLoginInfoScRsp),
+            2909 => ::std::option::Option::Some(CmdFriendType::CmdGetPlayerDetailInfoScRsp),
+            2970 => ::std::option::Option::Some(CmdFriendType::CmdApplyFriendCsReq),
+            2989 => ::std::option::Option::Some(CmdFriendType::CmdApplyFriendScRsp),
+            2922 => ::std::option::Option::Some(CmdFriendType::CmdGetAssistListCsReq),
+            2965 => ::std::option::Option::Some(CmdFriendType::CmdSearchPlayerCsReq),
+            2928 => ::std::option::Option::Some(CmdFriendType::CmdGetAssistHistoryScRsp),
+            2971 => ::std::option::Option::Some(CmdFriendType::CmdReportPlayerCsReq),
+            2941 => ::std::option::Option::Some(CmdFriendType::CmdSetFriendMarkScRsp),
+            2999 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendBattleRecordDetailScRsp),
+            2907 => ::std::option::Option::Some(CmdFriendType::CmdSetFriendRemarkNameScRsp),
+            2950 => ::std::option::Option::Some(CmdFriendType::CmdDeleteFriendScRsp),
+            2918 => ::std::option::Option::Some(CmdFriendType::CmdSyncHandleFriendScNotify),
+            2952 => ::std::option::Option::Some(CmdFriendType::CmdSearchPlayerScRsp),
+            2991 => ::std::option::Option::Some(CmdFriendType::CmdAddBlacklistScRsp),
+            2957 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendRecommendListInfoCsReq),
+            2963 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendAssistListScRsp),
+            2906 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendApplyListInfoScRsp),
+            2973 => ::std::option::Option::Some(CmdFriendType::CmdSyncDeleteFriendScNotify),
+            2982 => ::std::option::Option::Some(CmdFriendType::CmdReportPlayerScRsp),
+            2984 => ::std::option::Option::Some(CmdFriendType::CmdGetCurAssistScRsp),
+            2996 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendChallengeDetailCsReq),
+            2935 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendApplyListInfoCsReq),
+            2936 => ::std::option::Option::Some(CmdFriendType::CmdDeleteFriendCsReq),
+            2986 => ::std::option::Option::Some(CmdFriendType::CmdGetAssistListScRsp),
+            2937 => ::std::option::Option::Some(CmdFriendType::CmdDeleteBlacklistScRsp),
+            2924 => ::std::option::Option::Some(CmdFriendType::CmdGetCurAssistCsReq),
+            2966 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendBattleRecordDetailCsReq),
+            3000 => ::std::option::Option::Some(CmdFriendType::CmdSetForbidOtherApplyFriendCsReq),
+            2946 => ::std::option::Option::Some(CmdFriendType::CmdSetForbidOtherApplyFriendScRsp),
+            2953 => ::std::option::Option::Some(CmdFriendType::CmdSetAssistScRsp),
+            2992 => ::std::option::Option::Some(CmdFriendType::CmdSetAssistCsReq),
+            2951 => ::std::option::Option::Some(CmdFriendType::CmdDeleteBlacklistCsReq),
+            2908 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendDevelopmentInfoScRsp),
+            2904 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendChallengeLineupCsReq),
+            2969 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendChallengeDetailScRsp),
+            2911 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendListInfoCsReq),
+            2960 => ::std::option::Option::Some(CmdFriendType::CmdCurAssistChangedNotify),
+            2947 => ::std::option::Option::Some(CmdFriendType::CmdGetPlayerDetailInfoCsReq),
+            2978 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendChallengeLineupScRsp),
+            2995 => ::std::option::Option::Some(CmdFriendType::CmdHandleFriendScRsp),
+            2925 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendRecommendListInfoScRsp),
+            2994 => ::std::option::Option::Some(CmdFriendType::CmdGetPlatformPlayerInfoCsReq),
+            2958 => ::std::option::Option::Some(CmdFriendType::CmdTakeAssistRewardCsReq),
+            2921 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendDevelopmentInfoCsReq),
+            2993 => ::std::option::Option::Some(CmdFriendType::CmdSyncAddBlacklistScNotify),
+            2930 => ::std::option::Option::Some(CmdFriendType::CmdHandleFriendCsReq),
+            2910 => ::std::option::Option::Some(CmdFriendType::CmdSetFriendRemarkNameCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -222,63 +222,63 @@ impl ::protobuf::Enum for CmdFriendType {
     fn from_str(str: &str) -> ::std::option::Option<CmdFriendType> {
         match str {
             "CmdFriendTypeNone" => ::std::option::Option::Some(CmdFriendType::CmdFriendTypeNone),
-            "CmdGetPlatformPlayerInfoCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetPlatformPlayerInfoCsReq),
-            "CmdGetFriendRecommendListInfoCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendRecommendListInfoCsReq),
-            "CmdGetPlayerDetailInfoCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetPlayerDetailInfoCsReq),
-            "CmdAddBlacklistScRsp" => ::std::option::Option::Some(CmdFriendType::CmdAddBlacklistScRsp),
-            "CmdGetCurAssistCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetCurAssistCsReq),
-            "CmdSetFriendRemarkNameScRsp" => ::std::option::Option::Some(CmdFriendType::CmdSetFriendRemarkNameScRsp),
-            "CmdGetFriendChallengeDetailCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendChallengeDetailCsReq),
-            "CmdSyncApplyFriendScNotify" => ::std::option::Option::Some(CmdFriendType::CmdSyncApplyFriendScNotify),
-            "CmdGetFriendChallengeDetailScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendChallengeDetailScRsp),
-            "CmdGetFriendBattleRecordDetailCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendBattleRecordDetailCsReq),
-            "CmdSetAssistCsReq" => ::std::option::Option::Some(CmdFriendType::CmdSetAssistCsReq),
-            "CmdApplyFriendCsReq" => ::std::option::Option::Some(CmdFriendType::CmdApplyFriendCsReq),
-            "CmdSearchPlayerScRsp" => ::std::option::Option::Some(CmdFriendType::CmdSearchPlayerScRsp),
-            "CmdDeleteFriendScRsp" => ::std::option::Option::Some(CmdFriendType::CmdDeleteFriendScRsp),
-            "CmdGetFriendDevelopmentInfoScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendDevelopmentInfoScRsp),
-            "CmdGetFriendChallengeLineupScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendChallengeLineupScRsp),
-            "CmdCurAssistChangedNotify" => ::std::option::Option::Some(CmdFriendType::CmdCurAssistChangedNotify),
-            "CmdReportPlayerCsReq" => ::std::option::Option::Some(CmdFriendType::CmdReportPlayerCsReq),
-            "CmdSetAssistScRsp" => ::std::option::Option::Some(CmdFriendType::CmdSetAssistScRsp),
-            "CmdGetFriendDevelopmentInfoCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendDevelopmentInfoCsReq),
-            "CmdGetAssistListScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetAssistListScRsp),
-            "CmdSyncDeleteFriendScNotify" => ::std::option::Option::Some(CmdFriendType::CmdSyncDeleteFriendScNotify),
-            "CmdAddBlacklistCsReq" => ::std::option::Option::Some(CmdFriendType::CmdAddBlacklistCsReq),
-            "CmdHandleFriendScRsp" => ::std::option::Option::Some(CmdFriendType::CmdHandleFriendScRsp),
-            "CmdGetCurAssistScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetCurAssistScRsp),
-            "CmdGetAssistHistoryScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetAssistHistoryScRsp),
-            "CmdSearchPlayerCsReq" => ::std::option::Option::Some(CmdFriendType::CmdSearchPlayerCsReq),
-            "CmdGetFriendApplyListInfoCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendApplyListInfoCsReq),
-            "CmdSetForbidOtherApplyFriendCsReq" => ::std::option::Option::Some(CmdFriendType::CmdSetForbidOtherApplyFriendCsReq),
-            "CmdHandleFriendCsReq" => ::std::option::Option::Some(CmdFriendType::CmdHandleFriendCsReq),
             "CmdNewAssistHistoryNotify" => ::std::option::Option::Some(CmdFriendType::CmdNewAssistHistoryNotify),
-            "CmdGetFriendListInfoScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendListInfoScRsp),
-            "CmdGetAssistListCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetAssistListCsReq),
-            "CmdDeleteBlacklistCsReq" => ::std::option::Option::Some(CmdFriendType::CmdDeleteBlacklistCsReq),
-            "CmdGetFriendBattleRecordDetailScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendBattleRecordDetailScRsp),
-            "CmdGetFriendChallengeLineupCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendChallengeLineupCsReq),
-            "CmdGetPlatformPlayerInfoScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetPlatformPlayerInfoScRsp),
-            "CmdTakeAssistRewardScRsp" => ::std::option::Option::Some(CmdFriendType::CmdTakeAssistRewardScRsp),
-            "CmdTakeAssistRewardCsReq" => ::std::option::Option::Some(CmdFriendType::CmdTakeAssistRewardCsReq),
-            "CmdGetFriendAssistListScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendAssistListScRsp),
-            "CmdGetFriendRecommendListInfoScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendRecommendListInfoScRsp),
-            "CmdGetAssistHistoryCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetAssistHistoryCsReq),
-            "CmdGetPlayerDetailInfoScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetPlayerDetailInfoScRsp),
-            "CmdGetFriendAssistListCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendAssistListCsReq),
-            "CmdGetFriendLoginInfoScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendLoginInfoScRsp),
-            "CmdGetFriendApplyListInfoScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendApplyListInfoScRsp),
-            "CmdSyncAddBlacklistScNotify" => ::std::option::Option::Some(CmdFriendType::CmdSyncAddBlacklistScNotify),
-            "CmdDeleteBlacklistScRsp" => ::std::option::Option::Some(CmdFriendType::CmdDeleteBlacklistScRsp),
-            "CmdApplyFriendScRsp" => ::std::option::Option::Some(CmdFriendType::CmdApplyFriendScRsp),
-            "CmdSetForbidOtherApplyFriendScRsp" => ::std::option::Option::Some(CmdFriendType::CmdSetForbidOtherApplyFriendScRsp),
-            "CmdReportPlayerScRsp" => ::std::option::Option::Some(CmdFriendType::CmdReportPlayerScRsp),
-            "CmdSetFriendMarkScRsp" => ::std::option::Option::Some(CmdFriendType::CmdSetFriendMarkScRsp),
-            "CmdGetFriendLoginInfoCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendLoginInfoCsReq),
-            "CmdGetFriendListInfoCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendListInfoCsReq),
+            "CmdAddBlacklistCsReq" => ::std::option::Option::Some(CmdFriendType::CmdAddBlacklistCsReq),
+            "CmdSyncApplyFriendScNotify" => ::std::option::Option::Some(CmdFriendType::CmdSyncApplyFriendScNotify),
             "CmdSetFriendMarkCsReq" => ::std::option::Option::Some(CmdFriendType::CmdSetFriendMarkCsReq),
-            "CmdDeleteFriendCsReq" => ::std::option::Option::Some(CmdFriendType::CmdDeleteFriendCsReq),
+            "CmdGetFriendListInfoScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendListInfoScRsp),
+            "CmdGetPlatformPlayerInfoScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetPlatformPlayerInfoScRsp),
+            "CmdGetAssistHistoryCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetAssistHistoryCsReq),
+            "CmdGetFriendAssistListCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendAssistListCsReq),
+            "CmdTakeAssistRewardScRsp" => ::std::option::Option::Some(CmdFriendType::CmdTakeAssistRewardScRsp),
+            "CmdGetFriendLoginInfoCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendLoginInfoCsReq),
+            "CmdGetFriendLoginInfoScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendLoginInfoScRsp),
+            "CmdGetPlayerDetailInfoScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetPlayerDetailInfoScRsp),
+            "CmdApplyFriendCsReq" => ::std::option::Option::Some(CmdFriendType::CmdApplyFriendCsReq),
+            "CmdApplyFriendScRsp" => ::std::option::Option::Some(CmdFriendType::CmdApplyFriendScRsp),
+            "CmdGetAssistListCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetAssistListCsReq),
+            "CmdSearchPlayerCsReq" => ::std::option::Option::Some(CmdFriendType::CmdSearchPlayerCsReq),
+            "CmdGetAssistHistoryScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetAssistHistoryScRsp),
+            "CmdReportPlayerCsReq" => ::std::option::Option::Some(CmdFriendType::CmdReportPlayerCsReq),
+            "CmdSetFriendMarkScRsp" => ::std::option::Option::Some(CmdFriendType::CmdSetFriendMarkScRsp),
+            "CmdGetFriendBattleRecordDetailScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendBattleRecordDetailScRsp),
+            "CmdSetFriendRemarkNameScRsp" => ::std::option::Option::Some(CmdFriendType::CmdSetFriendRemarkNameScRsp),
+            "CmdDeleteFriendScRsp" => ::std::option::Option::Some(CmdFriendType::CmdDeleteFriendScRsp),
             "CmdSyncHandleFriendScNotify" => ::std::option::Option::Some(CmdFriendType::CmdSyncHandleFriendScNotify),
+            "CmdSearchPlayerScRsp" => ::std::option::Option::Some(CmdFriendType::CmdSearchPlayerScRsp),
+            "CmdAddBlacklistScRsp" => ::std::option::Option::Some(CmdFriendType::CmdAddBlacklistScRsp),
+            "CmdGetFriendRecommendListInfoCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendRecommendListInfoCsReq),
+            "CmdGetFriendAssistListScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendAssistListScRsp),
+            "CmdGetFriendApplyListInfoScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendApplyListInfoScRsp),
+            "CmdSyncDeleteFriendScNotify" => ::std::option::Option::Some(CmdFriendType::CmdSyncDeleteFriendScNotify),
+            "CmdReportPlayerScRsp" => ::std::option::Option::Some(CmdFriendType::CmdReportPlayerScRsp),
+            "CmdGetCurAssistScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetCurAssistScRsp),
+            "CmdGetFriendChallengeDetailCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendChallengeDetailCsReq),
+            "CmdGetFriendApplyListInfoCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendApplyListInfoCsReq),
+            "CmdDeleteFriendCsReq" => ::std::option::Option::Some(CmdFriendType::CmdDeleteFriendCsReq),
+            "CmdGetAssistListScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetAssistListScRsp),
+            "CmdDeleteBlacklistScRsp" => ::std::option::Option::Some(CmdFriendType::CmdDeleteBlacklistScRsp),
+            "CmdGetCurAssistCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetCurAssistCsReq),
+            "CmdGetFriendBattleRecordDetailCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendBattleRecordDetailCsReq),
+            "CmdSetForbidOtherApplyFriendCsReq" => ::std::option::Option::Some(CmdFriendType::CmdSetForbidOtherApplyFriendCsReq),
+            "CmdSetForbidOtherApplyFriendScRsp" => ::std::option::Option::Some(CmdFriendType::CmdSetForbidOtherApplyFriendScRsp),
+            "CmdSetAssistScRsp" => ::std::option::Option::Some(CmdFriendType::CmdSetAssistScRsp),
+            "CmdSetAssistCsReq" => ::std::option::Option::Some(CmdFriendType::CmdSetAssistCsReq),
+            "CmdDeleteBlacklistCsReq" => ::std::option::Option::Some(CmdFriendType::CmdDeleteBlacklistCsReq),
+            "CmdGetFriendDevelopmentInfoScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendDevelopmentInfoScRsp),
+            "CmdGetFriendChallengeLineupCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendChallengeLineupCsReq),
+            "CmdGetFriendChallengeDetailScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendChallengeDetailScRsp),
+            "CmdGetFriendListInfoCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendListInfoCsReq),
+            "CmdCurAssistChangedNotify" => ::std::option::Option::Some(CmdFriendType::CmdCurAssistChangedNotify),
+            "CmdGetPlayerDetailInfoCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetPlayerDetailInfoCsReq),
+            "CmdGetFriendChallengeLineupScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendChallengeLineupScRsp),
+            "CmdHandleFriendScRsp" => ::std::option::Option::Some(CmdFriendType::CmdHandleFriendScRsp),
+            "CmdGetFriendRecommendListInfoScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendRecommendListInfoScRsp),
+            "CmdGetPlatformPlayerInfoCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetPlatformPlayerInfoCsReq),
+            "CmdTakeAssistRewardCsReq" => ::std::option::Option::Some(CmdFriendType::CmdTakeAssistRewardCsReq),
+            "CmdGetFriendDevelopmentInfoCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendDevelopmentInfoCsReq),
+            "CmdSyncAddBlacklistScNotify" => ::std::option::Option::Some(CmdFriendType::CmdSyncAddBlacklistScNotify),
+            "CmdHandleFriendCsReq" => ::std::option::Option::Some(CmdFriendType::CmdHandleFriendCsReq),
             "CmdSetFriendRemarkNameCsReq" => ::std::option::Option::Some(CmdFriendType::CmdSetFriendRemarkNameCsReq),
             _ => ::std::option::Option::None
         }
@@ -286,63 +286,63 @@ impl ::protobuf::Enum for CmdFriendType {
 
     const VALUES: &'static [CmdFriendType] = &[
         CmdFriendType::CmdFriendTypeNone,
-        CmdFriendType::CmdGetPlatformPlayerInfoCsReq,
-        CmdFriendType::CmdGetFriendRecommendListInfoCsReq,
-        CmdFriendType::CmdGetPlayerDetailInfoCsReq,
-        CmdFriendType::CmdAddBlacklistScRsp,
-        CmdFriendType::CmdGetCurAssistCsReq,
-        CmdFriendType::CmdSetFriendRemarkNameScRsp,
-        CmdFriendType::CmdGetFriendChallengeDetailCsReq,
-        CmdFriendType::CmdSyncApplyFriendScNotify,
-        CmdFriendType::CmdGetFriendChallengeDetailScRsp,
-        CmdFriendType::CmdGetFriendBattleRecordDetailCsReq,
-        CmdFriendType::CmdSetAssistCsReq,
-        CmdFriendType::CmdApplyFriendCsReq,
-        CmdFriendType::CmdSearchPlayerScRsp,
-        CmdFriendType::CmdDeleteFriendScRsp,
-        CmdFriendType::CmdGetFriendDevelopmentInfoScRsp,
-        CmdFriendType::CmdGetFriendChallengeLineupScRsp,
-        CmdFriendType::CmdCurAssistChangedNotify,
-        CmdFriendType::CmdReportPlayerCsReq,
-        CmdFriendType::CmdSetAssistScRsp,
-        CmdFriendType::CmdGetFriendDevelopmentInfoCsReq,
-        CmdFriendType::CmdGetAssistListScRsp,
-        CmdFriendType::CmdSyncDeleteFriendScNotify,
-        CmdFriendType::CmdAddBlacklistCsReq,
-        CmdFriendType::CmdHandleFriendScRsp,
-        CmdFriendType::CmdGetCurAssistScRsp,
-        CmdFriendType::CmdGetAssistHistoryScRsp,
-        CmdFriendType::CmdSearchPlayerCsReq,
-        CmdFriendType::CmdGetFriendApplyListInfoCsReq,
-        CmdFriendType::CmdSetForbidOtherApplyFriendCsReq,
-        CmdFriendType::CmdHandleFriendCsReq,
         CmdFriendType::CmdNewAssistHistoryNotify,
-        CmdFriendType::CmdGetFriendListInfoScRsp,
-        CmdFriendType::CmdGetAssistListCsReq,
-        CmdFriendType::CmdDeleteBlacklistCsReq,
-        CmdFriendType::CmdGetFriendBattleRecordDetailScRsp,
-        CmdFriendType::CmdGetFriendChallengeLineupCsReq,
-        CmdFriendType::CmdGetPlatformPlayerInfoScRsp,
-        CmdFriendType::CmdTakeAssistRewardScRsp,
-        CmdFriendType::CmdTakeAssistRewardCsReq,
-        CmdFriendType::CmdGetFriendAssistListScRsp,
-        CmdFriendType::CmdGetFriendRecommendListInfoScRsp,
-        CmdFriendType::CmdGetAssistHistoryCsReq,
-        CmdFriendType::CmdGetPlayerDetailInfoScRsp,
-        CmdFriendType::CmdGetFriendAssistListCsReq,
-        CmdFriendType::CmdGetFriendLoginInfoScRsp,
-        CmdFriendType::CmdGetFriendApplyListInfoScRsp,
-        CmdFriendType::CmdSyncAddBlacklistScNotify,
-        CmdFriendType::CmdDeleteBlacklistScRsp,
-        CmdFriendType::CmdApplyFriendScRsp,
-        CmdFriendType::CmdSetForbidOtherApplyFriendScRsp,
-        CmdFriendType::CmdReportPlayerScRsp,
-        CmdFriendType::CmdSetFriendMarkScRsp,
-        CmdFriendType::CmdGetFriendLoginInfoCsReq,
-        CmdFriendType::CmdGetFriendListInfoCsReq,
+        CmdFriendType::CmdAddBlacklistCsReq,
+        CmdFriendType::CmdSyncApplyFriendScNotify,
         CmdFriendType::CmdSetFriendMarkCsReq,
-        CmdFriendType::CmdDeleteFriendCsReq,
+        CmdFriendType::CmdGetFriendListInfoScRsp,
+        CmdFriendType::CmdGetPlatformPlayerInfoScRsp,
+        CmdFriendType::CmdGetAssistHistoryCsReq,
+        CmdFriendType::CmdGetFriendAssistListCsReq,
+        CmdFriendType::CmdTakeAssistRewardScRsp,
+        CmdFriendType::CmdGetFriendLoginInfoCsReq,
+        CmdFriendType::CmdGetFriendLoginInfoScRsp,
+        CmdFriendType::CmdGetPlayerDetailInfoScRsp,
+        CmdFriendType::CmdApplyFriendCsReq,
+        CmdFriendType::CmdApplyFriendScRsp,
+        CmdFriendType::CmdGetAssistListCsReq,
+        CmdFriendType::CmdSearchPlayerCsReq,
+        CmdFriendType::CmdGetAssistHistoryScRsp,
+        CmdFriendType::CmdReportPlayerCsReq,
+        CmdFriendType::CmdSetFriendMarkScRsp,
+        CmdFriendType::CmdGetFriendBattleRecordDetailScRsp,
+        CmdFriendType::CmdSetFriendRemarkNameScRsp,
+        CmdFriendType::CmdDeleteFriendScRsp,
         CmdFriendType::CmdSyncHandleFriendScNotify,
+        CmdFriendType::CmdSearchPlayerScRsp,
+        CmdFriendType::CmdAddBlacklistScRsp,
+        CmdFriendType::CmdGetFriendRecommendListInfoCsReq,
+        CmdFriendType::CmdGetFriendAssistListScRsp,
+        CmdFriendType::CmdGetFriendApplyListInfoScRsp,
+        CmdFriendType::CmdSyncDeleteFriendScNotify,
+        CmdFriendType::CmdReportPlayerScRsp,
+        CmdFriendType::CmdGetCurAssistScRsp,
+        CmdFriendType::CmdGetFriendChallengeDetailCsReq,
+        CmdFriendType::CmdGetFriendApplyListInfoCsReq,
+        CmdFriendType::CmdDeleteFriendCsReq,
+        CmdFriendType::CmdGetAssistListScRsp,
+        CmdFriendType::CmdDeleteBlacklistScRsp,
+        CmdFriendType::CmdGetCurAssistCsReq,
+        CmdFriendType::CmdGetFriendBattleRecordDetailCsReq,
+        CmdFriendType::CmdSetForbidOtherApplyFriendCsReq,
+        CmdFriendType::CmdSetForbidOtherApplyFriendScRsp,
+        CmdFriendType::CmdSetAssistScRsp,
+        CmdFriendType::CmdSetAssistCsReq,
+        CmdFriendType::CmdDeleteBlacklistCsReq,
+        CmdFriendType::CmdGetFriendDevelopmentInfoScRsp,
+        CmdFriendType::CmdGetFriendChallengeLineupCsReq,
+        CmdFriendType::CmdGetFriendChallengeDetailScRsp,
+        CmdFriendType::CmdGetFriendListInfoCsReq,
+        CmdFriendType::CmdCurAssistChangedNotify,
+        CmdFriendType::CmdGetPlayerDetailInfoCsReq,
+        CmdFriendType::CmdGetFriendChallengeLineupScRsp,
+        CmdFriendType::CmdHandleFriendScRsp,
+        CmdFriendType::CmdGetFriendRecommendListInfoScRsp,
+        CmdFriendType::CmdGetPlatformPlayerInfoCsReq,
+        CmdFriendType::CmdTakeAssistRewardCsReq,
+        CmdFriendType::CmdGetFriendDevelopmentInfoCsReq,
+        CmdFriendType::CmdSyncAddBlacklistScNotify,
+        CmdFriendType::CmdHandleFriendCsReq,
         CmdFriendType::CmdSetFriendRemarkNameCsReq,
     ];
 }
@@ -356,63 +356,63 @@ impl ::protobuf::EnumFull for CmdFriendType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdFriendType::CmdFriendTypeNone => 0,
-            CmdFriendType::CmdGetPlatformPlayerInfoCsReq => 1,
-            CmdFriendType::CmdGetFriendRecommendListInfoCsReq => 2,
-            CmdFriendType::CmdGetPlayerDetailInfoCsReq => 3,
-            CmdFriendType::CmdAddBlacklistScRsp => 4,
-            CmdFriendType::CmdGetCurAssistCsReq => 5,
-            CmdFriendType::CmdSetFriendRemarkNameScRsp => 6,
-            CmdFriendType::CmdGetFriendChallengeDetailCsReq => 7,
-            CmdFriendType::CmdSyncApplyFriendScNotify => 8,
-            CmdFriendType::CmdGetFriendChallengeDetailScRsp => 9,
-            CmdFriendType::CmdGetFriendBattleRecordDetailCsReq => 10,
-            CmdFriendType::CmdSetAssistCsReq => 11,
-            CmdFriendType::CmdApplyFriendCsReq => 12,
-            CmdFriendType::CmdSearchPlayerScRsp => 13,
-            CmdFriendType::CmdDeleteFriendScRsp => 14,
-            CmdFriendType::CmdGetFriendDevelopmentInfoScRsp => 15,
-            CmdFriendType::CmdGetFriendChallengeLineupScRsp => 16,
-            CmdFriendType::CmdCurAssistChangedNotify => 17,
+            CmdFriendType::CmdNewAssistHistoryNotify => 1,
+            CmdFriendType::CmdAddBlacklistCsReq => 2,
+            CmdFriendType::CmdSyncApplyFriendScNotify => 3,
+            CmdFriendType::CmdSetFriendMarkCsReq => 4,
+            CmdFriendType::CmdGetFriendListInfoScRsp => 5,
+            CmdFriendType::CmdGetPlatformPlayerInfoScRsp => 6,
+            CmdFriendType::CmdGetAssistHistoryCsReq => 7,
+            CmdFriendType::CmdGetFriendAssistListCsReq => 8,
+            CmdFriendType::CmdTakeAssistRewardScRsp => 9,
+            CmdFriendType::CmdGetFriendLoginInfoCsReq => 10,
+            CmdFriendType::CmdGetFriendLoginInfoScRsp => 11,
+            CmdFriendType::CmdGetPlayerDetailInfoScRsp => 12,
+            CmdFriendType::CmdApplyFriendCsReq => 13,
+            CmdFriendType::CmdApplyFriendScRsp => 14,
+            CmdFriendType::CmdGetAssistListCsReq => 15,
+            CmdFriendType::CmdSearchPlayerCsReq => 16,
+            CmdFriendType::CmdGetAssistHistoryScRsp => 17,
             CmdFriendType::CmdReportPlayerCsReq => 18,
-            CmdFriendType::CmdSetAssistScRsp => 19,
-            CmdFriendType::CmdGetFriendDevelopmentInfoCsReq => 20,
-            CmdFriendType::CmdGetAssistListScRsp => 21,
-            CmdFriendType::CmdSyncDeleteFriendScNotify => 22,
-            CmdFriendType::CmdAddBlacklistCsReq => 23,
-            CmdFriendType::CmdHandleFriendScRsp => 24,
-            CmdFriendType::CmdGetCurAssistScRsp => 25,
-            CmdFriendType::CmdGetAssistHistoryScRsp => 26,
-            CmdFriendType::CmdSearchPlayerCsReq => 27,
-            CmdFriendType::CmdGetFriendApplyListInfoCsReq => 28,
-            CmdFriendType::CmdSetForbidOtherApplyFriendCsReq => 29,
-            CmdFriendType::CmdHandleFriendCsReq => 30,
-            CmdFriendType::CmdNewAssistHistoryNotify => 31,
-            CmdFriendType::CmdGetFriendListInfoScRsp => 32,
-            CmdFriendType::CmdGetAssistListCsReq => 33,
-            CmdFriendType::CmdDeleteBlacklistCsReq => 34,
-            CmdFriendType::CmdGetFriendBattleRecordDetailScRsp => 35,
-            CmdFriendType::CmdGetFriendChallengeLineupCsReq => 36,
-            CmdFriendType::CmdGetPlatformPlayerInfoScRsp => 37,
-            CmdFriendType::CmdTakeAssistRewardScRsp => 38,
-            CmdFriendType::CmdTakeAssistRewardCsReq => 39,
-            CmdFriendType::CmdGetFriendAssistListScRsp => 40,
-            CmdFriendType::CmdGetFriendRecommendListInfoScRsp => 41,
-            CmdFriendType::CmdGetAssistHistoryCsReq => 42,
-            CmdFriendType::CmdGetPlayerDetailInfoScRsp => 43,
-            CmdFriendType::CmdGetFriendAssistListCsReq => 44,
-            CmdFriendType::CmdGetFriendLoginInfoScRsp => 45,
-            CmdFriendType::CmdGetFriendApplyListInfoScRsp => 46,
-            CmdFriendType::CmdSyncAddBlacklistScNotify => 47,
-            CmdFriendType::CmdDeleteBlacklistScRsp => 48,
-            CmdFriendType::CmdApplyFriendScRsp => 49,
-            CmdFriendType::CmdSetForbidOtherApplyFriendScRsp => 50,
-            CmdFriendType::CmdReportPlayerScRsp => 51,
-            CmdFriendType::CmdSetFriendMarkScRsp => 52,
-            CmdFriendType::CmdGetFriendLoginInfoCsReq => 53,
-            CmdFriendType::CmdGetFriendListInfoCsReq => 54,
-            CmdFriendType::CmdSetFriendMarkCsReq => 55,
-            CmdFriendType::CmdDeleteFriendCsReq => 56,
-            CmdFriendType::CmdSyncHandleFriendScNotify => 57,
+            CmdFriendType::CmdSetFriendMarkScRsp => 19,
+            CmdFriendType::CmdGetFriendBattleRecordDetailScRsp => 20,
+            CmdFriendType::CmdSetFriendRemarkNameScRsp => 21,
+            CmdFriendType::CmdDeleteFriendScRsp => 22,
+            CmdFriendType::CmdSyncHandleFriendScNotify => 23,
+            CmdFriendType::CmdSearchPlayerScRsp => 24,
+            CmdFriendType::CmdAddBlacklistScRsp => 25,
+            CmdFriendType::CmdGetFriendRecommendListInfoCsReq => 26,
+            CmdFriendType::CmdGetFriendAssistListScRsp => 27,
+            CmdFriendType::CmdGetFriendApplyListInfoScRsp => 28,
+            CmdFriendType::CmdSyncDeleteFriendScNotify => 29,
+            CmdFriendType::CmdReportPlayerScRsp => 30,
+            CmdFriendType::CmdGetCurAssistScRsp => 31,
+            CmdFriendType::CmdGetFriendChallengeDetailCsReq => 32,
+            CmdFriendType::CmdGetFriendApplyListInfoCsReq => 33,
+            CmdFriendType::CmdDeleteFriendCsReq => 34,
+            CmdFriendType::CmdGetAssistListScRsp => 35,
+            CmdFriendType::CmdDeleteBlacklistScRsp => 36,
+            CmdFriendType::CmdGetCurAssistCsReq => 37,
+            CmdFriendType::CmdGetFriendBattleRecordDetailCsReq => 38,
+            CmdFriendType::CmdSetForbidOtherApplyFriendCsReq => 39,
+            CmdFriendType::CmdSetForbidOtherApplyFriendScRsp => 40,
+            CmdFriendType::CmdSetAssistScRsp => 41,
+            CmdFriendType::CmdSetAssistCsReq => 42,
+            CmdFriendType::CmdDeleteBlacklistCsReq => 43,
+            CmdFriendType::CmdGetFriendDevelopmentInfoScRsp => 44,
+            CmdFriendType::CmdGetFriendChallengeLineupCsReq => 45,
+            CmdFriendType::CmdGetFriendChallengeDetailScRsp => 46,
+            CmdFriendType::CmdGetFriendListInfoCsReq => 47,
+            CmdFriendType::CmdCurAssistChangedNotify => 48,
+            CmdFriendType::CmdGetPlayerDetailInfoCsReq => 49,
+            CmdFriendType::CmdGetFriendChallengeLineupScRsp => 50,
+            CmdFriendType::CmdHandleFriendScRsp => 51,
+            CmdFriendType::CmdGetFriendRecommendListInfoScRsp => 52,
+            CmdFriendType::CmdGetPlatformPlayerInfoCsReq => 53,
+            CmdFriendType::CmdTakeAssistRewardCsReq => 54,
+            CmdFriendType::CmdGetFriendDevelopmentInfoCsReq => 55,
+            CmdFriendType::CmdSyncAddBlacklistScNotify => 56,
+            CmdFriendType::CmdHandleFriendCsReq => 57,
             CmdFriendType::CmdSetFriendRemarkNameCsReq => 58,
         };
         Self::enum_descriptor().value_by_index(index)
@@ -433,48 +433,48 @@ impl CmdFriendType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13CmdFriendType.proto*\xfd\x0e\n\rCmdFriendType\x12\x15\n\x11CmdFrie\
-    ndTypeNone\x10\0\x12\"\n\x1dCmdGetPlatformPlayerInfoCsReq\x10\xe1\x16\
-    \x12'\n\"CmdGetFriendRecommendListInfoCsReq\x10\xeb\x16\x12\x20\n\x1bCmd\
-    GetPlayerDetailInfoCsReq\x10\x8e\x17\x12\x19\n\x14CmdAddBlacklistScRsp\
-    \x10\xfb\x16\x12\x19\n\x14CmdGetCurAssistCsReq\x10\xe7\x16\x12\x20\n\x1b\
-    CmdSetFriendRemarkNameScRsp\x10\xaf\x17\x12%\n\x20CmdGetFriendChallengeD\
-    etailCsReq\x10\x8b\x17\x12\x1f\n\x1aCmdSyncApplyFriendScNotify\x10\xf0\
-    \x16\x12%\n\x20CmdGetFriendChallengeDetailScRsp\x10\xa9\x17\x12(\n#CmdGe\
-    tFriendBattleRecordDetailCsReq\x10\x90\x17\x12\x16\n\x11CmdSetAssistCsRe\
-    q\x10\xa5\x17\x12\x18\n\x13CmdApplyFriendCsReq\x10\xb5\x17\x12\x19\n\x14\
-    CmdSearchPlayerScRsp\x10\xe8\x16\x12\x19\n\x14CmdDeleteFriendScRsp\x10\
-    \xea\x16\x12%\n\x20CmdGetFriendDevelopmentInfoScRsp\x10\xdb\x16\x12%\n\
-    \x20CmdGetFriendChallengeLineupScRsp\x10\xae\x17\x12\x1e\n\x19CmdCurAssi\
-    stChangedNotify\x10\x8d\x17\x12\x19\n\x14CmdReportPlayerCsReq\x10\xe6\
-    \x16\x12\x16\n\x11CmdSetAssistScRsp\x10\xfa\x16\x12%\n\x20CmdGetFriendDe\
-    velopmentInfoCsReq\x10\x93\x17\x12\x1a\n\x15CmdGetAssistListScRsp\x10\
-    \x9a\x17\x12\x20\n\x1bCmdSyncDeleteFriendScNotify\x10\x83\x17\x12\x19\n\
-    \x14CmdAddBlacklistCsReq\x10\xa4\x17\x12\x19\n\x14CmdHandleFriendScRsp\
-    \x10\xd9\x16\x12\x19\n\x14CmdGetCurAssistScRsp\x10\xa6\x17\x12\x1d\n\x18\
-    CmdGetAssistHistoryScRsp\x10\xfd\x16\x12\x19\n\x14CmdSearchPlayerCsReq\
-    \x10\x99\x17\x12#\n\x1eCmdGetFriendApplyListInfoCsReq\x10\xf2\x16\x12&\n\
-    !CmdSetForbidOtherApplyFriendCsReq\x10\xf1\x16\x12\x19\n\x14CmdHandleFri\
-    endCsReq\x10\xdf\x16\x12\x1e\n\x19CmdNewAssistHistoryNotify\x10\x9d\x17\
-    \x12\x1e\n\x19CmdGetFriendListInfoScRsp\x10\x98\x17\x12\x1a\n\x15CmdGetA\
-    ssistListCsReq\x10\xb0\x17\x12\x1c\n\x17CmdDeleteBlacklistCsReq\x10\x86\
-    \x17\x12(\n#CmdGetFriendBattleRecordDetailScRsp\x10\xee\x16\x12%\n\x20Cm\
-    dGetFriendChallengeLineupCsReq\x10\x91\x17\x12\"\n\x1dCmdGetPlatformPlay\
-    erInfoScRsp\x10\xdc\x16\x12\x1d\n\x18CmdTakeAssistRewardScRsp\x10\xd7\
-    \x16\x12\x1d\n\x18CmdTakeAssistRewardCsReq\x10\xfc\x16\x12\x20\n\x1bCmdG\
-    etFriendAssistListScRsp\x10\x8a\x17\x12'\n\"CmdGetFriendRecommendListInf\
-    oScRsp\x10\xe0\x16\x12\x1d\n\x18CmdGetAssistHistoryCsReq\x10\x8f\x17\x12\
-    \x20\n\x1bCmdGetPlayerDetailInfoScRsp\x10\xec\x16\x12\x20\n\x1bCmdGetFri\
-    endAssistListCsReq\x10\xda\x16\x12\x1f\n\x1aCmdGetFriendLoginInfoScRsp\
-    \x10\x97\x17\x12#\n\x1eCmdGetFriendApplyListInfoScRsp\x10\x8c\x17\x12\
-    \x20\n\x1bCmdSyncAddBlacklistScNotify\x10\xb4\x17\x12\x1c\n\x17CmdDelete\
-    BlacklistScRsp\x10\x84\x17\x12\x18\n\x13CmdApplyFriendScRsp\x10\xa0\x17\
-    \x12&\n!CmdSetForbidOtherApplyFriendScRsp\x10\x94\x17\x12\x19\n\x14CmdRe\
-    portPlayerScRsp\x10\xb3\x17\x12\x1a\n\x15CmdSetFriendMarkScRsp\x10\xa1\
-    \x17\x12\x1f\n\x1aCmdGetFriendLoginInfoCsReq\x10\xa2\x17\x12\x1e\n\x19Cm\
-    dGetFriendListInfoCsReq\x10\xd5\x16\x12\x1a\n\x15CmdSetFriendMarkCsReq\
-    \x10\xe3\x16\x12\x19\n\x14CmdDeleteFriendCsReq\x10\x85\x17\x12\x20\n\x1b\
-    CmdSyncHandleFriendScNotify\x10\xe2\x16\x12\x20\n\x1bCmdSetFriendRemarkN\
-    ameCsReq\x10\xe5\x16b\x06proto3\
+    ndTypeNone\x10\0\x12\x1e\n\x19CmdNewAssistHistoryNotify\x10\xa7\x17\x12\
+    \x19\n\x14CmdAddBlacklistCsReq\x10\xa1\x17\x12\x1f\n\x1aCmdSyncApplyFrie\
+    ndScNotify\x10\xee\x16\x12\x1a\n\x15CmdSetFriendMarkCsReq\x10\xe2\x16\
+    \x12\x1e\n\x19CmdGetFriendListInfoScRsp\x10\xe1\x16\x12\"\n\x1dCmdGetPla\
+    tformPlayerInfoScRsp\x10\xab\x17\x12\x1d\n\x18CmdGetAssistHistoryCsReq\
+    \x10\x9f\x17\x12\x20\n\x1bCmdGetFriendAssistListCsReq\x10\xe5\x16\x12\
+    \x1d\n\x18CmdTakeAssistRewardScRsp\x10\x98\x17\x12\x1f\n\x1aCmdGetFriend\
+    LoginInfoCsReq\x10\x8c\x17\x12\x1f\n\x1aCmdGetFriendLoginInfoScRsp\x10\
+    \xa5\x17\x12\x20\n\x1bCmdGetPlayerDetailInfoScRsp\x10\xdd\x16\x12\x18\n\
+    \x13CmdApplyFriendCsReq\x10\x9a\x17\x12\x18\n\x13CmdApplyFriendScRsp\x10\
+    \xad\x17\x12\x1a\n\x15CmdGetAssistListCsReq\x10\xea\x16\x12\x19\n\x14Cmd\
+    SearchPlayerCsReq\x10\x95\x17\x12\x1d\n\x18CmdGetAssistHistoryScRsp\x10\
+    \xf0\x16\x12\x19\n\x14CmdReportPlayerCsReq\x10\x9b\x17\x12\x1a\n\x15CmdS\
+    etFriendMarkScRsp\x10\xfd\x16\x12(\n#CmdGetFriendBattleRecordDetailScRsp\
+    \x10\xb7\x17\x12\x20\n\x1bCmdSetFriendRemarkNameScRsp\x10\xdb\x16\x12\
+    \x19\n\x14CmdDeleteFriendScRsp\x10\x86\x17\x12\x20\n\x1bCmdSyncHandleFri\
+    endScNotify\x10\xe6\x16\x12\x19\n\x14CmdSearchPlayerScRsp\x10\x88\x17\
+    \x12\x19\n\x14CmdAddBlacklistScRsp\x10\xaf\x17\x12'\n\"CmdGetFriendRecom\
+    mendListInfoCsReq\x10\x8d\x17\x12\x20\n\x1bCmdGetFriendAssistListScRsp\
+    \x10\x93\x17\x12#\n\x1eCmdGetFriendApplyListInfoScRsp\x10\xda\x16\x12\
+    \x20\n\x1bCmdSyncDeleteFriendScNotify\x10\x9d\x17\x12\x19\n\x14CmdReport\
+    PlayerScRsp\x10\xa6\x17\x12\x19\n\x14CmdGetCurAssistScRsp\x10\xa8\x17\
+    \x12%\n\x20CmdGetFriendChallengeDetailCsReq\x10\xb4\x17\x12#\n\x1eCmdGet\
+    FriendApplyListInfoCsReq\x10\xf7\x16\x12\x19\n\x14CmdDeleteFriendCsReq\
+    \x10\xf8\x16\x12\x1a\n\x15CmdGetAssistListScRsp\x10\xaa\x17\x12\x1c\n\
+    \x17CmdDeleteBlacklistScRsp\x10\xf9\x16\x12\x19\n\x14CmdGetCurAssistCsRe\
+    q\x10\xec\x16\x12(\n#CmdGetFriendBattleRecordDetailCsReq\x10\x96\x17\x12\
+    &\n!CmdSetForbidOtherApplyFriendCsReq\x10\xb8\x17\x12&\n!CmdSetForbidOth\
+    erApplyFriendScRsp\x10\x82\x17\x12\x16\n\x11CmdSetAssistScRsp\x10\x89\
+    \x17\x12\x16\n\x11CmdSetAssistCsReq\x10\xb0\x17\x12\x1c\n\x17CmdDeleteBl\
+    acklistCsReq\x10\x87\x17\x12%\n\x20CmdGetFriendDevelopmentInfoScRsp\x10\
+    \xdc\x16\x12%\n\x20CmdGetFriendChallengeLineupCsReq\x10\xd8\x16\x12%\n\
+    \x20CmdGetFriendChallengeDetailScRsp\x10\x99\x17\x12\x1e\n\x19CmdGetFrie\
+    ndListInfoCsReq\x10\xdf\x16\x12\x1e\n\x19CmdCurAssistChangedNotify\x10\
+    \x90\x17\x12\x20\n\x1bCmdGetPlayerDetailInfoCsReq\x10\x83\x17\x12%\n\x20\
+    CmdGetFriendChallengeLineupScRsp\x10\xa2\x17\x12\x19\n\x14CmdHandleFrien\
+    dScRsp\x10\xb3\x17\x12'\n\"CmdGetFriendRecommendListInfoScRsp\x10\xed\
+    \x16\x12\"\n\x1dCmdGetPlatformPlayerInfoCsReq\x10\xb2\x17\x12\x1d\n\x18C\
+    mdTakeAssistRewardCsReq\x10\x8e\x17\x12%\n\x20CmdGetFriendDevelopmentInf\
+    oCsReq\x10\xe9\x16\x12\x20\n\x1bCmdSyncAddBlacklistScNotify\x10\xb1\x17\
+    \x12\x19\n\x14CmdHandleFriendCsReq\x10\xf2\x16\x12\x20\n\x1bCmdSetFriend\
+    RemarkNameCsReq\x10\xde\x16b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

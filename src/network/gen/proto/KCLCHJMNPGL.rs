@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KCLCHJMNPGL {
     // message fields
-    // @@protoc_insertion_point(field:KCLCHJMNPGL.NGIAMBEIHPI)
-    pub NGIAMBEIHPI: u32,
     // @@protoc_insertion_point(field:KCLCHJMNPGL.OFGBJCCCIKE)
     pub OFGBJCCCIKE: u32,
+    // @@protoc_insertion_point(field:KCLCHJMNPGL.NGIAMBEIHPI)
+    pub NGIAMBEIHPI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KCLCHJMNPGL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl KCLCHJMNPGL {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NGIAMBEIHPI",
-            |m: &KCLCHJMNPGL| { &m.NGIAMBEIHPI },
-            |m: &mut KCLCHJMNPGL| { &mut m.NGIAMBEIHPI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OFGBJCCCIKE",
             |m: &KCLCHJMNPGL| { &m.OFGBJCCCIKE },
             |m: &mut KCLCHJMNPGL| { &mut m.OFGBJCCCIKE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NGIAMBEIHPI",
+            |m: &KCLCHJMNPGL| { &m.NGIAMBEIHPI },
+            |m: &mut KCLCHJMNPGL| { &mut m.NGIAMBEIHPI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KCLCHJMNPGL>(
             "KCLCHJMNPGL",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for KCLCHJMNPGL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.NGIAMBEIHPI = is.read_uint32()?;
-                },
-                72 => {
+                104 => {
                     self.OFGBJCCCIKE = is.read_uint32()?;
+                },
+                16 => {
+                    self.NGIAMBEIHPI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for KCLCHJMNPGL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NGIAMBEIHPI != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.NGIAMBEIHPI);
-        }
         if self.OFGBJCCCIKE != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.OFGBJCCCIKE);
+            my_size += ::protobuf::rt::uint32_size(13, self.OFGBJCCCIKE);
+        }
+        if self.NGIAMBEIHPI != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.NGIAMBEIHPI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for KCLCHJMNPGL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NGIAMBEIHPI != 0 {
-            os.write_uint32(15, self.NGIAMBEIHPI)?;
-        }
         if self.OFGBJCCCIKE != 0 {
-            os.write_uint32(9, self.OFGBJCCCIKE)?;
+            os.write_uint32(13, self.OFGBJCCCIKE)?;
+        }
+        if self.NGIAMBEIHPI != 0 {
+            os.write_uint32(2, self.NGIAMBEIHPI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for KCLCHJMNPGL {
     }
 
     fn clear(&mut self) {
-        self.NGIAMBEIHPI = 0;
         self.OFGBJCCCIKE = 0;
+        self.NGIAMBEIHPI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KCLCHJMNPGL {
         static instance: KCLCHJMNPGL = KCLCHJMNPGL {
-            NGIAMBEIHPI: 0,
             OFGBJCCCIKE: 0,
+            NGIAMBEIHPI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for KCLCHJMNPGL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KCLCHJMNPGL.proto\"Q\n\x0bKCLCHJMNPGL\x12\x20\n\x0bNGIAMBEIHPI\x18\
-    \x0f\x20\x01(\rR\x0bNGIAMBEIHPI\x12\x20\n\x0bOFGBJCCCIKE\x18\t\x20\x01(\
-    \rR\x0bOFGBJCCCIKEb\x06proto3\
+    \n\x11KCLCHJMNPGL.proto\"Q\n\x0bKCLCHJMNPGL\x12\x20\n\x0bOFGBJCCCIKE\x18\
+    \r\x20\x01(\rR\x0bOFGBJCCCIKE\x12\x20\n\x0bNGIAMBEIHPI\x18\x02\x20\x01(\
+    \rR\x0bNGIAMBEIHPIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

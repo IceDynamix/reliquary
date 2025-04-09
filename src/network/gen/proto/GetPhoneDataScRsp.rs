@@ -28,16 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetPhoneDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetPhoneDataScRsp.EBFDAANIFLF)
-    pub EBFDAANIFLF: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetPhoneDataScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:GetPhoneDataScRsp.KKJNCIPJFCG)
-    pub KKJNCIPJFCG: u32,
+    // @@protoc_insertion_point(field:GetPhoneDataScRsp.KKNEEGDKEMD)
+    pub KKNEEGDKEMD: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetPhoneDataScRsp.MEGJHDHLOJA)
     pub MEGJHDHLOJA: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetPhoneDataScRsp.KKJNCIPJFCG)
+    pub KKJNCIPJFCG: u32,
+    // @@protoc_insertion_point(field:GetPhoneDataScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:GetPhoneDataScRsp.DOPNJNCKHCC)
     pub DOPNJNCKHCC: u32,
+    // @@protoc_insertion_point(field:GetPhoneDataScRsp.LMOCAMKLKPI)
+    pub LMOCAMKLKPI: u32,
+    // @@protoc_insertion_point(field:GetPhoneDataScRsp.EBFDAANIFLF)
+    pub EBFDAANIFLF: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GetPhoneDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,22 +59,12 @@ impl GetPhoneDataScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(5);
+        let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EBFDAANIFLF",
-            |m: &GetPhoneDataScRsp| { &m.EBFDAANIFLF },
-            |m: &mut GetPhoneDataScRsp| { &mut m.EBFDAANIFLF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetPhoneDataScRsp| { &m.retcode },
-            |m: &mut GetPhoneDataScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KKJNCIPJFCG",
-            |m: &GetPhoneDataScRsp| { &m.KKJNCIPJFCG },
-            |m: &mut GetPhoneDataScRsp| { &mut m.KKJNCIPJFCG },
+            "KKNEEGDKEMD",
+            |m: &GetPhoneDataScRsp| { &m.KKNEEGDKEMD },
+            |m: &mut GetPhoneDataScRsp| { &mut m.KKNEEGDKEMD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "MEGJHDHLOJA",
@@ -78,9 +72,29 @@ impl GetPhoneDataScRsp {
             |m: &mut GetPhoneDataScRsp| { &mut m.MEGJHDHLOJA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KKJNCIPJFCG",
+            |m: &GetPhoneDataScRsp| { &m.KKJNCIPJFCG },
+            |m: &mut GetPhoneDataScRsp| { &mut m.KKJNCIPJFCG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GetPhoneDataScRsp| { &m.retcode },
+            |m: &mut GetPhoneDataScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DOPNJNCKHCC",
             |m: &GetPhoneDataScRsp| { &m.DOPNJNCKHCC },
             |m: &mut GetPhoneDataScRsp| { &mut m.DOPNJNCKHCC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LMOCAMKLKPI",
+            |m: &GetPhoneDataScRsp| { &m.LMOCAMKLKPI },
+            |m: &mut GetPhoneDataScRsp| { &mut m.LMOCAMKLKPI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "EBFDAANIFLF",
+            |m: &GetPhoneDataScRsp| { &m.EBFDAANIFLF },
+            |m: &mut GetPhoneDataScRsp| { &mut m.EBFDAANIFLF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetPhoneDataScRsp>(
             "GetPhoneDataScRsp",
@@ -100,26 +114,35 @@ impl ::protobuf::Message for GetPhoneDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.EBFDAANIFLF)?;
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.KKNEEGDKEMD)?;
                 },
-                72 => {
-                    self.EBFDAANIFLF.push(is.read_uint32()?);
+                64 => {
+                    self.KKNEEGDKEMD.push(is.read_uint32()?);
+                },
+                114 => {
+                    is.read_repeated_packed_uint32_into(&mut self.MEGJHDHLOJA)?;
+                },
+                112 => {
+                    self.MEGJHDHLOJA.push(is.read_uint32()?);
+                },
+                96 => {
+                    self.KKJNCIPJFCG = is.read_uint32()?;
                 },
                 24 => {
                     self.retcode = is.read_uint32()?;
                 },
-                56 => {
-                    self.KKJNCIPJFCG = is.read_uint32()?;
+                72 => {
+                    self.DOPNJNCKHCC = is.read_uint32()?;
                 },
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.MEGJHDHLOJA)?;
+                32 => {
+                    self.LMOCAMKLKPI = is.read_uint32()?;
                 },
-                8 => {
-                    self.MEGJHDHLOJA.push(is.read_uint32()?);
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.EBFDAANIFLF)?;
                 },
                 120 => {
-                    self.DOPNJNCKHCC = is.read_uint32()?;
+                    self.EBFDAANIFLF.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -133,34 +156,42 @@ impl ::protobuf::Message for GetPhoneDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.EBFDAANIFLF);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.KKNEEGDKEMD);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.MEGJHDHLOJA);
+        if self.KKJNCIPJFCG != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.KKJNCIPJFCG);
+        }
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
-        if self.KKJNCIPJFCG != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.KKJNCIPJFCG);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.MEGJHDHLOJA);
         if self.DOPNJNCKHCC != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.DOPNJNCKHCC);
+            my_size += ::protobuf::rt::uint32_size(9, self.DOPNJNCKHCC);
         }
+        if self.LMOCAMKLKPI != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.LMOCAMKLKPI);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.EBFDAANIFLF);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(9, &self.EBFDAANIFLF)?;
+        os.write_repeated_packed_uint32(8, &self.KKNEEGDKEMD)?;
+        os.write_repeated_packed_uint32(14, &self.MEGJHDHLOJA)?;
+        if self.KKJNCIPJFCG != 0 {
+            os.write_uint32(12, self.KKJNCIPJFCG)?;
+        }
         if self.retcode != 0 {
             os.write_uint32(3, self.retcode)?;
         }
-        if self.KKJNCIPJFCG != 0 {
-            os.write_uint32(7, self.KKJNCIPJFCG)?;
-        }
-        os.write_repeated_packed_uint32(1, &self.MEGJHDHLOJA)?;
         if self.DOPNJNCKHCC != 0 {
-            os.write_uint32(15, self.DOPNJNCKHCC)?;
+            os.write_uint32(9, self.DOPNJNCKHCC)?;
         }
+        if self.LMOCAMKLKPI != 0 {
+            os.write_uint32(4, self.LMOCAMKLKPI)?;
+        }
+        os.write_repeated_packed_uint32(15, &self.EBFDAANIFLF)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -178,21 +209,25 @@ impl ::protobuf::Message for GetPhoneDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.EBFDAANIFLF.clear();
-        self.retcode = 0;
-        self.KKJNCIPJFCG = 0;
+        self.KKNEEGDKEMD.clear();
         self.MEGJHDHLOJA.clear();
+        self.KKJNCIPJFCG = 0;
+        self.retcode = 0;
         self.DOPNJNCKHCC = 0;
+        self.LMOCAMKLKPI = 0;
+        self.EBFDAANIFLF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetPhoneDataScRsp {
         static instance: GetPhoneDataScRsp = GetPhoneDataScRsp {
-            EBFDAANIFLF: ::std::vec::Vec::new(),
-            retcode: 0,
-            KKJNCIPJFCG: 0,
+            KKNEEGDKEMD: ::std::vec::Vec::new(),
             MEGJHDHLOJA: ::std::vec::Vec::new(),
+            KKJNCIPJFCG: 0,
+            retcode: 0,
             DOPNJNCKHCC: 0,
+            LMOCAMKLKPI: 0,
+            EBFDAANIFLF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -217,12 +252,13 @@ impl ::protobuf::reflect::ProtobufValue for GetPhoneDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17GetPhoneDataScRsp.proto\"\xb5\x01\n\x11GetPhoneDataScRsp\x12\x20\n\
-    \x0bEBFDAANIFLF\x18\t\x20\x03(\rR\x0bEBFDAANIFLF\x12\x18\n\x07retcode\
-    \x18\x03\x20\x01(\rR\x07retcode\x12\x20\n\x0bKKJNCIPJFCG\x18\x07\x20\x01\
-    (\rR\x0bKKJNCIPJFCG\x12\x20\n\x0bMEGJHDHLOJA\x18\x01\x20\x03(\rR\x0bMEGJ\
-    HDHLOJA\x12\x20\n\x0bDOPNJNCKHCC\x18\x0f\x20\x01(\rR\x0bDOPNJNCKHCCb\x06\
-    proto3\
+    \n\x17GetPhoneDataScRsp.proto\"\xf9\x01\n\x11GetPhoneDataScRsp\x12\x20\n\
+    \x0bKKNEEGDKEMD\x18\x08\x20\x03(\rR\x0bKKNEEGDKEMD\x12\x20\n\x0bMEGJHDHL\
+    OJA\x18\x0e\x20\x03(\rR\x0bMEGJHDHLOJA\x12\x20\n\x0bKKJNCIPJFCG\x18\x0c\
+    \x20\x01(\rR\x0bKKJNCIPJFCG\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07\
+    retcode\x12\x20\n\x0bDOPNJNCKHCC\x18\t\x20\x01(\rR\x0bDOPNJNCKHCC\x12\
+    \x20\n\x0bLMOCAMKLKPI\x18\x04\x20\x01(\rR\x0bLMOCAMKLKPI\x12\x20\n\x0bEB\
+    FDAANIFLF\x18\x0f\x20\x03(\rR\x0bEBFDAANIFLFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

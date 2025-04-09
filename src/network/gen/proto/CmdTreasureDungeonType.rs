@@ -29,38 +29,38 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdTreasureDungeonType {
     // @@protoc_insertion_point(enum_value:CmdTreasureDungeonType.CmdTreasureDungeonTypeNone)
     CmdTreasureDungeonTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdTreasureDungeonType.CmdUseTreasureDungeonItemCsReq)
-    CmdUseTreasureDungeonItemCsReq = 4417,
-    // @@protoc_insertion_point(enum_value:CmdTreasureDungeonType.CmdInteractTreasureDungeonGridCsReq)
-    CmdInteractTreasureDungeonGridCsReq = 4423,
-    // @@protoc_insertion_point(enum_value:CmdTreasureDungeonType.CmdGetTreasureDungeonActivityDataCsReq)
-    CmdGetTreasureDungeonActivityDataCsReq = 4405,
-    // @@protoc_insertion_point(enum_value:CmdTreasureDungeonType.CmdOpenTreasureDungeonGridScRsp)
-    CmdOpenTreasureDungeonGridScRsp = 4480,
-    // @@protoc_insertion_point(enum_value:CmdTreasureDungeonType.CmdGetTreasureDungeonActivityDataScRsp)
-    CmdGetTreasureDungeonActivityDataScRsp = 4414,
-    // @@protoc_insertion_point(enum_value:CmdTreasureDungeonType.CmdQuitTreasureDungeonScRsp)
-    CmdQuitTreasureDungeonScRsp = 4495,
-    // @@protoc_insertion_point(enum_value:CmdTreasureDungeonType.CmdTreasureDungeonFinishScNotify)
-    CmdTreasureDungeonFinishScNotify = 4468,
     // @@protoc_insertion_point(enum_value:CmdTreasureDungeonType.CmdEnterTreasureDungeonCsReq)
-    CmdEnterTreasureDungeonCsReq = 4449,
-    // @@protoc_insertion_point(enum_value:CmdTreasureDungeonType.CmdInteractTreasureDungeonGridScRsp)
-    CmdInteractTreasureDungeonGridScRsp = 4412,
-    // @@protoc_insertion_point(enum_value:CmdTreasureDungeonType.CmdQuitTreasureDungeonCsReq)
-    CmdQuitTreasureDungeonCsReq = 4418,
+    CmdEnterTreasureDungeonCsReq = 4436,
     // @@protoc_insertion_point(enum_value:CmdTreasureDungeonType.CmdOpenTreasureDungeonGridCsReq)
-    CmdOpenTreasureDungeonGridCsReq = 4447,
-    // @@protoc_insertion_point(enum_value:CmdTreasureDungeonType.CmdUseTreasureDungeonItemScRsp)
-    CmdUseTreasureDungeonItemScRsp = 4491,
-    // @@protoc_insertion_point(enum_value:CmdTreasureDungeonType.CmdEnterTreasureDungeonScRsp)
-    CmdEnterTreasureDungeonScRsp = 4422,
-    // @@protoc_insertion_point(enum_value:CmdTreasureDungeonType.CmdFightTreasureDungeonMonsterCsReq)
-    CmdFightTreasureDungeonMonsterCsReq = 4439,
-    // @@protoc_insertion_point(enum_value:CmdTreasureDungeonType.CmdFightTreasureDungeonMonsterScRsp)
-    CmdFightTreasureDungeonMonsterScRsp = 4496,
+    CmdOpenTreasureDungeonGridCsReq = 4473,
     // @@protoc_insertion_point(enum_value:CmdTreasureDungeonType.CmdTreasureDungeonDataScNotify)
-    CmdTreasureDungeonDataScNotify = 4401,
+    CmdTreasureDungeonDataScNotify = 4411,
+    // @@protoc_insertion_point(enum_value:CmdTreasureDungeonType.CmdInteractTreasureDungeonGridScRsp)
+    CmdInteractTreasureDungeonGridScRsp = 4425,
+    // @@protoc_insertion_point(enum_value:CmdTreasureDungeonType.CmdInteractTreasureDungeonGridCsReq)
+    CmdInteractTreasureDungeonGridCsReq = 4457,
+    // @@protoc_insertion_point(enum_value:CmdTreasureDungeonType.CmdGetTreasureDungeonActivityDataScRsp)
+    CmdGetTreasureDungeonActivityDataScRsp = 4418,
+    // @@protoc_insertion_point(enum_value:CmdTreasureDungeonType.CmdFightTreasureDungeonMonsterScRsp)
+    CmdFightTreasureDungeonMonsterScRsp = 4493,
+    // @@protoc_insertion_point(enum_value:CmdTreasureDungeonType.CmdQuitTreasureDungeonCsReq)
+    CmdQuitTreasureDungeonCsReq = 4471,
+    // @@protoc_insertion_point(enum_value:CmdTreasureDungeonType.CmdFightTreasureDungeonMonsterCsReq)
+    CmdFightTreasureDungeonMonsterCsReq = 4491,
+    // @@protoc_insertion_point(enum_value:CmdTreasureDungeonType.CmdUseTreasureDungeonItemCsReq)
+    CmdUseTreasureDungeonItemCsReq = 4410,
+    // @@protoc_insertion_point(enum_value:CmdTreasureDungeonType.CmdOpenTreasureDungeonGridScRsp)
+    CmdOpenTreasureDungeonGridScRsp = 4477,
+    // @@protoc_insertion_point(enum_value:CmdTreasureDungeonType.CmdQuitTreasureDungeonScRsp)
+    CmdQuitTreasureDungeonScRsp = 4482,
+    // @@protoc_insertion_point(enum_value:CmdTreasureDungeonType.CmdTreasureDungeonFinishScNotify)
+    CmdTreasureDungeonFinishScNotify = 4413,
+    // @@protoc_insertion_point(enum_value:CmdTreasureDungeonType.CmdGetTreasureDungeonActivityDataCsReq)
+    CmdGetTreasureDungeonActivityDataCsReq = 4495,
+    // @@protoc_insertion_point(enum_value:CmdTreasureDungeonType.CmdUseTreasureDungeonItemScRsp)
+    CmdUseTreasureDungeonItemScRsp = 4407,
+    // @@protoc_insertion_point(enum_value:CmdTreasureDungeonType.CmdEnterTreasureDungeonScRsp)
+    CmdEnterTreasureDungeonScRsp = 4450,
 }
 
 impl ::protobuf::Enum for CmdTreasureDungeonType {
@@ -73,22 +73,22 @@ impl ::protobuf::Enum for CmdTreasureDungeonType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdTreasureDungeonType> {
         match value {
             0 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdTreasureDungeonTypeNone),
-            4417 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdUseTreasureDungeonItemCsReq),
-            4423 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdInteractTreasureDungeonGridCsReq),
-            4405 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdGetTreasureDungeonActivityDataCsReq),
-            4480 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdOpenTreasureDungeonGridScRsp),
-            4414 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdGetTreasureDungeonActivityDataScRsp),
-            4495 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdQuitTreasureDungeonScRsp),
-            4468 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdTreasureDungeonFinishScNotify),
-            4449 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdEnterTreasureDungeonCsReq),
-            4412 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdInteractTreasureDungeonGridScRsp),
-            4418 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdQuitTreasureDungeonCsReq),
-            4447 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdOpenTreasureDungeonGridCsReq),
-            4491 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdUseTreasureDungeonItemScRsp),
-            4422 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdEnterTreasureDungeonScRsp),
-            4439 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdFightTreasureDungeonMonsterCsReq),
-            4496 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdFightTreasureDungeonMonsterScRsp),
-            4401 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdTreasureDungeonDataScNotify),
+            4436 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdEnterTreasureDungeonCsReq),
+            4473 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdOpenTreasureDungeonGridCsReq),
+            4411 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdTreasureDungeonDataScNotify),
+            4425 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdInteractTreasureDungeonGridScRsp),
+            4457 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdInteractTreasureDungeonGridCsReq),
+            4418 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdGetTreasureDungeonActivityDataScRsp),
+            4493 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdFightTreasureDungeonMonsterScRsp),
+            4471 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdQuitTreasureDungeonCsReq),
+            4491 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdFightTreasureDungeonMonsterCsReq),
+            4410 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdUseTreasureDungeonItemCsReq),
+            4477 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdOpenTreasureDungeonGridScRsp),
+            4482 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdQuitTreasureDungeonScRsp),
+            4413 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdTreasureDungeonFinishScNotify),
+            4495 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdGetTreasureDungeonActivityDataCsReq),
+            4407 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdUseTreasureDungeonItemScRsp),
+            4450 => ::std::option::Option::Some(CmdTreasureDungeonType::CmdEnterTreasureDungeonScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -96,44 +96,44 @@ impl ::protobuf::Enum for CmdTreasureDungeonType {
     fn from_str(str: &str) -> ::std::option::Option<CmdTreasureDungeonType> {
         match str {
             "CmdTreasureDungeonTypeNone" => ::std::option::Option::Some(CmdTreasureDungeonType::CmdTreasureDungeonTypeNone),
-            "CmdUseTreasureDungeonItemCsReq" => ::std::option::Option::Some(CmdTreasureDungeonType::CmdUseTreasureDungeonItemCsReq),
+            "CmdEnterTreasureDungeonCsReq" => ::std::option::Option::Some(CmdTreasureDungeonType::CmdEnterTreasureDungeonCsReq),
+            "CmdOpenTreasureDungeonGridCsReq" => ::std::option::Option::Some(CmdTreasureDungeonType::CmdOpenTreasureDungeonGridCsReq),
+            "CmdTreasureDungeonDataScNotify" => ::std::option::Option::Some(CmdTreasureDungeonType::CmdTreasureDungeonDataScNotify),
+            "CmdInteractTreasureDungeonGridScRsp" => ::std::option::Option::Some(CmdTreasureDungeonType::CmdInteractTreasureDungeonGridScRsp),
             "CmdInteractTreasureDungeonGridCsReq" => ::std::option::Option::Some(CmdTreasureDungeonType::CmdInteractTreasureDungeonGridCsReq),
-            "CmdGetTreasureDungeonActivityDataCsReq" => ::std::option::Option::Some(CmdTreasureDungeonType::CmdGetTreasureDungeonActivityDataCsReq),
-            "CmdOpenTreasureDungeonGridScRsp" => ::std::option::Option::Some(CmdTreasureDungeonType::CmdOpenTreasureDungeonGridScRsp),
             "CmdGetTreasureDungeonActivityDataScRsp" => ::std::option::Option::Some(CmdTreasureDungeonType::CmdGetTreasureDungeonActivityDataScRsp),
+            "CmdFightTreasureDungeonMonsterScRsp" => ::std::option::Option::Some(CmdTreasureDungeonType::CmdFightTreasureDungeonMonsterScRsp),
+            "CmdQuitTreasureDungeonCsReq" => ::std::option::Option::Some(CmdTreasureDungeonType::CmdQuitTreasureDungeonCsReq),
+            "CmdFightTreasureDungeonMonsterCsReq" => ::std::option::Option::Some(CmdTreasureDungeonType::CmdFightTreasureDungeonMonsterCsReq),
+            "CmdUseTreasureDungeonItemCsReq" => ::std::option::Option::Some(CmdTreasureDungeonType::CmdUseTreasureDungeonItemCsReq),
+            "CmdOpenTreasureDungeonGridScRsp" => ::std::option::Option::Some(CmdTreasureDungeonType::CmdOpenTreasureDungeonGridScRsp),
             "CmdQuitTreasureDungeonScRsp" => ::std::option::Option::Some(CmdTreasureDungeonType::CmdQuitTreasureDungeonScRsp),
             "CmdTreasureDungeonFinishScNotify" => ::std::option::Option::Some(CmdTreasureDungeonType::CmdTreasureDungeonFinishScNotify),
-            "CmdEnterTreasureDungeonCsReq" => ::std::option::Option::Some(CmdTreasureDungeonType::CmdEnterTreasureDungeonCsReq),
-            "CmdInteractTreasureDungeonGridScRsp" => ::std::option::Option::Some(CmdTreasureDungeonType::CmdInteractTreasureDungeonGridScRsp),
-            "CmdQuitTreasureDungeonCsReq" => ::std::option::Option::Some(CmdTreasureDungeonType::CmdQuitTreasureDungeonCsReq),
-            "CmdOpenTreasureDungeonGridCsReq" => ::std::option::Option::Some(CmdTreasureDungeonType::CmdOpenTreasureDungeonGridCsReq),
+            "CmdGetTreasureDungeonActivityDataCsReq" => ::std::option::Option::Some(CmdTreasureDungeonType::CmdGetTreasureDungeonActivityDataCsReq),
             "CmdUseTreasureDungeonItemScRsp" => ::std::option::Option::Some(CmdTreasureDungeonType::CmdUseTreasureDungeonItemScRsp),
             "CmdEnterTreasureDungeonScRsp" => ::std::option::Option::Some(CmdTreasureDungeonType::CmdEnterTreasureDungeonScRsp),
-            "CmdFightTreasureDungeonMonsterCsReq" => ::std::option::Option::Some(CmdTreasureDungeonType::CmdFightTreasureDungeonMonsterCsReq),
-            "CmdFightTreasureDungeonMonsterScRsp" => ::std::option::Option::Some(CmdTreasureDungeonType::CmdFightTreasureDungeonMonsterScRsp),
-            "CmdTreasureDungeonDataScNotify" => ::std::option::Option::Some(CmdTreasureDungeonType::CmdTreasureDungeonDataScNotify),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdTreasureDungeonType] = &[
         CmdTreasureDungeonType::CmdTreasureDungeonTypeNone,
-        CmdTreasureDungeonType::CmdUseTreasureDungeonItemCsReq,
+        CmdTreasureDungeonType::CmdEnterTreasureDungeonCsReq,
+        CmdTreasureDungeonType::CmdOpenTreasureDungeonGridCsReq,
+        CmdTreasureDungeonType::CmdTreasureDungeonDataScNotify,
+        CmdTreasureDungeonType::CmdInteractTreasureDungeonGridScRsp,
         CmdTreasureDungeonType::CmdInteractTreasureDungeonGridCsReq,
-        CmdTreasureDungeonType::CmdGetTreasureDungeonActivityDataCsReq,
-        CmdTreasureDungeonType::CmdOpenTreasureDungeonGridScRsp,
         CmdTreasureDungeonType::CmdGetTreasureDungeonActivityDataScRsp,
+        CmdTreasureDungeonType::CmdFightTreasureDungeonMonsterScRsp,
+        CmdTreasureDungeonType::CmdQuitTreasureDungeonCsReq,
+        CmdTreasureDungeonType::CmdFightTreasureDungeonMonsterCsReq,
+        CmdTreasureDungeonType::CmdUseTreasureDungeonItemCsReq,
+        CmdTreasureDungeonType::CmdOpenTreasureDungeonGridScRsp,
         CmdTreasureDungeonType::CmdQuitTreasureDungeonScRsp,
         CmdTreasureDungeonType::CmdTreasureDungeonFinishScNotify,
-        CmdTreasureDungeonType::CmdEnterTreasureDungeonCsReq,
-        CmdTreasureDungeonType::CmdInteractTreasureDungeonGridScRsp,
-        CmdTreasureDungeonType::CmdQuitTreasureDungeonCsReq,
-        CmdTreasureDungeonType::CmdOpenTreasureDungeonGridCsReq,
+        CmdTreasureDungeonType::CmdGetTreasureDungeonActivityDataCsReq,
         CmdTreasureDungeonType::CmdUseTreasureDungeonItemScRsp,
         CmdTreasureDungeonType::CmdEnterTreasureDungeonScRsp,
-        CmdTreasureDungeonType::CmdFightTreasureDungeonMonsterCsReq,
-        CmdTreasureDungeonType::CmdFightTreasureDungeonMonsterScRsp,
-        CmdTreasureDungeonType::CmdTreasureDungeonDataScNotify,
     ];
 }
 
@@ -146,22 +146,22 @@ impl ::protobuf::EnumFull for CmdTreasureDungeonType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdTreasureDungeonType::CmdTreasureDungeonTypeNone => 0,
-            CmdTreasureDungeonType::CmdUseTreasureDungeonItemCsReq => 1,
-            CmdTreasureDungeonType::CmdInteractTreasureDungeonGridCsReq => 2,
-            CmdTreasureDungeonType::CmdGetTreasureDungeonActivityDataCsReq => 3,
-            CmdTreasureDungeonType::CmdOpenTreasureDungeonGridScRsp => 4,
-            CmdTreasureDungeonType::CmdGetTreasureDungeonActivityDataScRsp => 5,
-            CmdTreasureDungeonType::CmdQuitTreasureDungeonScRsp => 6,
-            CmdTreasureDungeonType::CmdTreasureDungeonFinishScNotify => 7,
-            CmdTreasureDungeonType::CmdEnterTreasureDungeonCsReq => 8,
-            CmdTreasureDungeonType::CmdInteractTreasureDungeonGridScRsp => 9,
-            CmdTreasureDungeonType::CmdQuitTreasureDungeonCsReq => 10,
-            CmdTreasureDungeonType::CmdOpenTreasureDungeonGridCsReq => 11,
-            CmdTreasureDungeonType::CmdUseTreasureDungeonItemScRsp => 12,
-            CmdTreasureDungeonType::CmdEnterTreasureDungeonScRsp => 13,
-            CmdTreasureDungeonType::CmdFightTreasureDungeonMonsterCsReq => 14,
-            CmdTreasureDungeonType::CmdFightTreasureDungeonMonsterScRsp => 15,
-            CmdTreasureDungeonType::CmdTreasureDungeonDataScNotify => 16,
+            CmdTreasureDungeonType::CmdEnterTreasureDungeonCsReq => 1,
+            CmdTreasureDungeonType::CmdOpenTreasureDungeonGridCsReq => 2,
+            CmdTreasureDungeonType::CmdTreasureDungeonDataScNotify => 3,
+            CmdTreasureDungeonType::CmdInteractTreasureDungeonGridScRsp => 4,
+            CmdTreasureDungeonType::CmdInteractTreasureDungeonGridCsReq => 5,
+            CmdTreasureDungeonType::CmdGetTreasureDungeonActivityDataScRsp => 6,
+            CmdTreasureDungeonType::CmdFightTreasureDungeonMonsterScRsp => 7,
+            CmdTreasureDungeonType::CmdQuitTreasureDungeonCsReq => 8,
+            CmdTreasureDungeonType::CmdFightTreasureDungeonMonsterCsReq => 9,
+            CmdTreasureDungeonType::CmdUseTreasureDungeonItemCsReq => 10,
+            CmdTreasureDungeonType::CmdOpenTreasureDungeonGridScRsp => 11,
+            CmdTreasureDungeonType::CmdQuitTreasureDungeonScRsp => 12,
+            CmdTreasureDungeonType::CmdTreasureDungeonFinishScNotify => 13,
+            CmdTreasureDungeonType::CmdGetTreasureDungeonActivityDataCsReq => 14,
+            CmdTreasureDungeonType::CmdUseTreasureDungeonItemScRsp => 15,
+            CmdTreasureDungeonType::CmdEnterTreasureDungeonScRsp => 16,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -181,19 +181,19 @@ impl CmdTreasureDungeonType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cCmdTreasureDungeonType.proto*\xa6\x05\n\x16CmdTreasureDungeonType\
-    \x12\x1e\n\x1aCmdTreasureDungeonTypeNone\x10\0\x12#\n\x1eCmdUseTreasureD\
-    ungeonItemCsReq\x10\xc1\"\x12(\n#CmdInteractTreasureDungeonGridCsReq\x10\
-    \xc7\"\x12+\n&CmdGetTreasureDungeonActivityDataCsReq\x10\xb5\"\x12$\n\
-    \x1fCmdOpenTreasureDungeonGridScRsp\x10\x80#\x12+\n&CmdGetTreasureDungeo\
-    nActivityDataScRsp\x10\xbe\"\x12\x20\n\x1bCmdQuitTreasureDungeonScRsp\
-    \x10\x8f#\x12%\n\x20CmdTreasureDungeonFinishScNotify\x10\xf4\"\x12!\n\
-    \x1cCmdEnterTreasureDungeonCsReq\x10\xe1\"\x12(\n#CmdInteractTreasureDun\
-    geonGridScRsp\x10\xbc\"\x12\x20\n\x1bCmdQuitTreasureDungeonCsReq\x10\xc2\
-    \"\x12$\n\x1fCmdOpenTreasureDungeonGridCsReq\x10\xdf\"\x12#\n\x1eCmdUseT\
-    reasureDungeonItemScRsp\x10\x8b#\x12!\n\x1cCmdEnterTreasureDungeonScRsp\
-    \x10\xc6\"\x12(\n#CmdFightTreasureDungeonMonsterCsReq\x10\xd7\"\x12(\n#C\
-    mdFightTreasureDungeonMonsterScRsp\x10\x90#\x12#\n\x1eCmdTreasureDungeon\
-    DataScNotify\x10\xb1\"b\x06proto3\
+    \x12\x1e\n\x1aCmdTreasureDungeonTypeNone\x10\0\x12!\n\x1cCmdEnterTreasur\
+    eDungeonCsReq\x10\xd4\"\x12$\n\x1fCmdOpenTreasureDungeonGridCsReq\x10\
+    \xf9\"\x12#\n\x1eCmdTreasureDungeonDataScNotify\x10\xbb\"\x12(\n#CmdInte\
+    ractTreasureDungeonGridScRsp\x10\xc9\"\x12(\n#CmdInteractTreasureDungeon\
+    GridCsReq\x10\xe9\"\x12+\n&CmdGetTreasureDungeonActivityDataScRsp\x10\
+    \xc2\"\x12(\n#CmdFightTreasureDungeonMonsterScRsp\x10\x8d#\x12\x20\n\x1b\
+    CmdQuitTreasureDungeonCsReq\x10\xf7\"\x12(\n#CmdFightTreasureDungeonMons\
+    terCsReq\x10\x8b#\x12#\n\x1eCmdUseTreasureDungeonItemCsReq\x10\xba\"\x12\
+    $\n\x1fCmdOpenTreasureDungeonGridScRsp\x10\xfd\"\x12\x20\n\x1bCmdQuitTre\
+    asureDungeonScRsp\x10\x82#\x12%\n\x20CmdTreasureDungeonFinishScNotify\
+    \x10\xbd\"\x12+\n&CmdGetTreasureDungeonActivityDataCsReq\x10\x8f#\x12#\n\
+    \x1eCmdUseTreasureDungeonItemScRsp\x10\xb7\"\x12!\n\x1cCmdEnterTreasureD\
+    ungeonScRsp\x10\xe2\"b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

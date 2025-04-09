@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ENBNFOLCDIE {
     // message fields
-    // @@protoc_insertion_point(field:ENBNFOLCDIE.LNBPGPGGIMN)
-    pub LNBPGPGGIMN: u32,
     // @@protoc_insertion_point(field:ENBNFOLCDIE.AKAHNMLNEFN)
     pub AKAHNMLNEFN: u32,
+    // @@protoc_insertion_point(field:ENBNFOLCDIE.LNBPGPGGIMN)
+    pub LNBPGPGGIMN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ENBNFOLCDIE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl ENBNFOLCDIE {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LNBPGPGGIMN",
-            |m: &ENBNFOLCDIE| { &m.LNBPGPGGIMN },
-            |m: &mut ENBNFOLCDIE| { &mut m.LNBPGPGGIMN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AKAHNMLNEFN",
             |m: &ENBNFOLCDIE| { &m.AKAHNMLNEFN },
             |m: &mut ENBNFOLCDIE| { &mut m.AKAHNMLNEFN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LNBPGPGGIMN",
+            |m: &ENBNFOLCDIE| { &m.LNBPGPGGIMN },
+            |m: &mut ENBNFOLCDIE| { &mut m.LNBPGPGGIMN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ENBNFOLCDIE>(
             "ENBNFOLCDIE",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ENBNFOLCDIE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.LNBPGPGGIMN = is.read_uint32()?;
-                },
-                104 => {
+                8 => {
                     self.AKAHNMLNEFN = is.read_uint32()?;
+                },
+                16 => {
+                    self.LNBPGPGGIMN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ENBNFOLCDIE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LNBPGPGGIMN != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.LNBPGPGGIMN);
-        }
         if self.AKAHNMLNEFN != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.AKAHNMLNEFN);
+            my_size += ::protobuf::rt::uint32_size(1, self.AKAHNMLNEFN);
+        }
+        if self.LNBPGPGGIMN != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.LNBPGPGGIMN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ENBNFOLCDIE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LNBPGPGGIMN != 0 {
-            os.write_uint32(12, self.LNBPGPGGIMN)?;
-        }
         if self.AKAHNMLNEFN != 0 {
-            os.write_uint32(13, self.AKAHNMLNEFN)?;
+            os.write_uint32(1, self.AKAHNMLNEFN)?;
+        }
+        if self.LNBPGPGGIMN != 0 {
+            os.write_uint32(2, self.LNBPGPGGIMN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for ENBNFOLCDIE {
     }
 
     fn clear(&mut self) {
-        self.LNBPGPGGIMN = 0;
         self.AKAHNMLNEFN = 0;
+        self.LNBPGPGGIMN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ENBNFOLCDIE {
         static instance: ENBNFOLCDIE = ENBNFOLCDIE {
-            LNBPGPGGIMN: 0,
             AKAHNMLNEFN: 0,
+            LNBPGPGGIMN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for ENBNFOLCDIE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ENBNFOLCDIE.proto\"Q\n\x0bENBNFOLCDIE\x12\x20\n\x0bLNBPGPGGIMN\x18\
-    \x0c\x20\x01(\rR\x0bLNBPGPGGIMN\x12\x20\n\x0bAKAHNMLNEFN\x18\r\x20\x01(\
-    \rR\x0bAKAHNMLNEFNb\x06proto3\
+    \n\x11ENBNFOLCDIE.proto\"Q\n\x0bENBNFOLCDIE\x12\x20\n\x0bAKAHNMLNEFN\x18\
+    \x01\x20\x01(\rR\x0bAKAHNMLNEFN\x12\x20\n\x0bLNBPGPGGIMN\x18\x02\x20\x01\
+    (\rR\x0bLNBPGPGGIMNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

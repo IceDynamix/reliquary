@@ -30,10 +30,10 @@ pub struct SyncHandleFriendScNotify {
     // message fields
     // @@protoc_insertion_point(field:SyncHandleFriendScNotify.PJHDEDMBOKO)
     pub PJHDEDMBOKO: ::protobuf::MessageField<super::CCPGFAEOJJH::CCPGFAEOJJH>,
-    // @@protoc_insertion_point(field:SyncHandleFriendScNotify.KMONAGFELPG)
-    pub KMONAGFELPG: u32,
     // @@protoc_insertion_point(field:SyncHandleFriendScNotify.NBDAMKFGKEI)
     pub NBDAMKFGKEI: bool,
+    // @@protoc_insertion_point(field:SyncHandleFriendScNotify.uid)
+    pub uid: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SyncHandleFriendScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl SyncHandleFriendScNotify {
             |m: &mut SyncHandleFriendScNotify| { &mut m.PJHDEDMBOKO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KMONAGFELPG",
-            |m: &SyncHandleFriendScNotify| { &m.KMONAGFELPG },
-            |m: &mut SyncHandleFriendScNotify| { &mut m.KMONAGFELPG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NBDAMKFGKEI",
             |m: &SyncHandleFriendScNotify| { &m.NBDAMKFGKEI },
             |m: &mut SyncHandleFriendScNotify| { &mut m.NBDAMKFGKEI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "uid",
+            |m: &SyncHandleFriendScNotify| { &m.uid },
+            |m: &mut SyncHandleFriendScNotify| { &mut m.uid },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncHandleFriendScNotify>(
             "SyncHandleFriendScNotify",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SyncHandleFriendScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.PJHDEDMBOKO)?;
                 },
-                72 => {
-                    self.KMONAGFELPG = is.read_uint32()?;
+                80 => {
+                    self.NBDAMKFGKEI = is.read_bool()?;
                 },
                 64 => {
-                    self.NBDAMKFGKEI = is.read_bool()?;
+                    self.uid = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,11 +111,11 @@ impl ::protobuf::Message for SyncHandleFriendScNotify {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.KMONAGFELPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.KMONAGFELPG);
-        }
         if self.NBDAMKFGKEI != false {
             my_size += 1 + 1;
+        }
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.uid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for SyncHandleFriendScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.PJHDEDMBOKO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
-        if self.KMONAGFELPG != 0 {
-            os.write_uint32(9, self.KMONAGFELPG)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if self.NBDAMKFGKEI != false {
-            os.write_bool(8, self.NBDAMKFGKEI)?;
+            os.write_bool(10, self.NBDAMKFGKEI)?;
+        }
+        if self.uid != 0 {
+            os.write_uint32(8, self.uid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for SyncHandleFriendScNotify {
 
     fn clear(&mut self) {
         self.PJHDEDMBOKO.clear();
-        self.KMONAGFELPG = 0;
         self.NBDAMKFGKEI = false;
+        self.uid = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncHandleFriendScNotify {
         static instance: SyncHandleFriendScNotify = SyncHandleFriendScNotify {
             PJHDEDMBOKO: ::protobuf::MessageField::none(),
-            KMONAGFELPG: 0,
             NBDAMKFGKEI: false,
+            uid: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,11 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for SyncHandleFriendScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eSyncHandleFriendScNotify.proto\x1a\x11CCPGFAEOJJH.proto\"\x8e\x01\
-    \n\x18SyncHandleFriendScNotify\x12.\n\x0bPJHDEDMBOKO\x18\x06\x20\x01(\
-    \x0b2\x0c.CCPGFAEOJJHR\x0bPJHDEDMBOKO\x12\x20\n\x0bKMONAGFELPG\x18\t\x20\
-    \x01(\rR\x0bKMONAGFELPG\x12\x20\n\x0bNBDAMKFGKEI\x18\x08\x20\x01(\x08R\
-    \x0bNBDAMKFGKEIb\x06proto3\
+    \n\x1eSyncHandleFriendScNotify.proto\x1a\x11CCPGFAEOJJH.proto\"~\n\x18Sy\
+    ncHandleFriendScNotify\x12.\n\x0bPJHDEDMBOKO\x18\x07\x20\x01(\x0b2\x0c.C\
+    CPGFAEOJJHR\x0bPJHDEDMBOKO\x12\x20\n\x0bNBDAMKFGKEI\x18\n\x20\x01(\x08R\
+    \x0bNBDAMKFGKEI\x12\x10\n\x03uid\x18\x08\x20\x01(\rR\x03uidb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

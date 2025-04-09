@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MEKDNIKFDNA {
     // message fields
-    // @@protoc_insertion_point(field:MEKDNIKFDNA.OGNEPBFPILH)
-    pub OGNEPBFPILH: u32,
-    // @@protoc_insertion_point(field:MEKDNIKFDNA.DNPHCJEBIKB)
-    pub DNPHCJEBIKB: u32,
-    // @@protoc_insertion_point(field:MEKDNIKFDNA.rank)
-    pub rank: u32,
-    // @@protoc_insertion_point(field:MEKDNIKFDNA.LDNBEIDJBHI)
-    pub LDNBEIDJBHI: u32,
-    // @@protoc_insertion_point(field:MEKDNIKFDNA.HNJFFFJDGNE)
-    pub HNJFFFJDGNE: bool,
-    // @@protoc_insertion_point(field:MEKDNIKFDNA.NMLFFOGBPOC)
-    pub NMLFFOGBPOC: u32,
-    // @@protoc_insertion_point(field:MEKDNIKFDNA.KJDOLBOBKJF)
-    pub KJDOLBOBKJF: ::protobuf::EnumOrUnknown<super::NPPNFPPENMC::NPPNFPPENMC>,
     // @@protoc_insertion_point(field:MEKDNIKFDNA.FBNHDEFNECI)
     pub FBNHDEFNECI: u32,
+    // @@protoc_insertion_point(field:MEKDNIKFDNA.OGNEPBFPILH)
+    pub OGNEPBFPILH: u32,
+    // @@protoc_insertion_point(field:MEKDNIKFDNA.HNJFFFJDGNE)
+    pub HNJFFFJDGNE: bool,
+    // @@protoc_insertion_point(field:MEKDNIKFDNA.KJDOLBOBKJF)
+    pub KJDOLBOBKJF: ::protobuf::EnumOrUnknown<super::NPPNFPPENMC::NPPNFPPENMC>,
+    // @@protoc_insertion_point(field:MEKDNIKFDNA.DNPHCJEBIKB)
+    pub DNPHCJEBIKB: u32,
+    // @@protoc_insertion_point(field:MEKDNIKFDNA.LDNBEIDJBHI)
+    pub LDNBEIDJBHI: u32,
+    // @@protoc_insertion_point(field:MEKDNIKFDNA.NMLFFOGBPOC)
+    pub NMLFFOGBPOC: u32,
+    // @@protoc_insertion_point(field:MEKDNIKFDNA.rank)
+    pub rank: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MEKDNIKFDNA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,24 +64,14 @@ impl MEKDNIKFDNA {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FBNHDEFNECI",
+            |m: &MEKDNIKFDNA| { &m.FBNHDEFNECI },
+            |m: &mut MEKDNIKFDNA| { &mut m.FBNHDEFNECI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OGNEPBFPILH",
             |m: &MEKDNIKFDNA| { &m.OGNEPBFPILH },
             |m: &mut MEKDNIKFDNA| { &mut m.OGNEPBFPILH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DNPHCJEBIKB",
-            |m: &MEKDNIKFDNA| { &m.DNPHCJEBIKB },
-            |m: &mut MEKDNIKFDNA| { &mut m.DNPHCJEBIKB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "rank",
-            |m: &MEKDNIKFDNA| { &m.rank },
-            |m: &mut MEKDNIKFDNA| { &mut m.rank },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LDNBEIDJBHI",
-            |m: &MEKDNIKFDNA| { &m.LDNBEIDJBHI },
-            |m: &mut MEKDNIKFDNA| { &mut m.LDNBEIDJBHI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HNJFFFJDGNE",
@@ -89,19 +79,29 @@ impl MEKDNIKFDNA {
             |m: &mut MEKDNIKFDNA| { &mut m.HNJFFFJDGNE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NMLFFOGBPOC",
-            |m: &MEKDNIKFDNA| { &m.NMLFFOGBPOC },
-            |m: &mut MEKDNIKFDNA| { &mut m.NMLFFOGBPOC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KJDOLBOBKJF",
             |m: &MEKDNIKFDNA| { &m.KJDOLBOBKJF },
             |m: &mut MEKDNIKFDNA| { &mut m.KJDOLBOBKJF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FBNHDEFNECI",
-            |m: &MEKDNIKFDNA| { &m.FBNHDEFNECI },
-            |m: &mut MEKDNIKFDNA| { &mut m.FBNHDEFNECI },
+            "DNPHCJEBIKB",
+            |m: &MEKDNIKFDNA| { &m.DNPHCJEBIKB },
+            |m: &mut MEKDNIKFDNA| { &mut m.DNPHCJEBIKB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LDNBEIDJBHI",
+            |m: &MEKDNIKFDNA| { &m.LDNBEIDJBHI },
+            |m: &mut MEKDNIKFDNA| { &mut m.LDNBEIDJBHI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NMLFFOGBPOC",
+            |m: &MEKDNIKFDNA| { &m.NMLFFOGBPOC },
+            |m: &mut MEKDNIKFDNA| { &mut m.NMLFFOGBPOC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "rank",
+            |m: &MEKDNIKFDNA| { &m.rank },
+            |m: &mut MEKDNIKFDNA| { &mut m.rank },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MEKDNIKFDNA>(
             "MEKDNIKFDNA",
@@ -121,29 +121,29 @@ impl ::protobuf::Message for MEKDNIKFDNA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                96 => {
+                    self.FBNHDEFNECI = is.read_uint32()?;
+                },
+                16 => {
                     self.OGNEPBFPILH = is.read_uint32()?;
-                },
-                40 => {
-                    self.DNPHCJEBIKB = is.read_uint32()?;
-                },
-                56 => {
-                    self.rank = is.read_uint32()?;
-                },
-                72 => {
-                    self.LDNBEIDJBHI = is.read_uint32()?;
                 },
                 88 => {
                     self.HNJFFFJDGNE = is.read_bool()?;
                 },
-                48 => {
-                    self.NMLFFOGBPOC = is.read_uint32()?;
-                },
-                24 => {
+                40 => {
                     self.KJDOLBOBKJF = is.read_enum_or_unknown()?;
                 },
+                104 => {
+                    self.DNPHCJEBIKB = is.read_uint32()?;
+                },
+                64 => {
+                    self.LDNBEIDJBHI = is.read_uint32()?;
+                },
                 8 => {
-                    self.FBNHDEFNECI = is.read_uint32()?;
+                    self.NMLFFOGBPOC = is.read_uint32()?;
+                },
+                120 => {
+                    self.rank = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -157,29 +157,29 @@ impl ::protobuf::Message for MEKDNIKFDNA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.FBNHDEFNECI != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.FBNHDEFNECI);
+        }
         if self.OGNEPBFPILH != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.OGNEPBFPILH);
-        }
-        if self.DNPHCJEBIKB != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.DNPHCJEBIKB);
-        }
-        if self.rank != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.rank);
-        }
-        if self.LDNBEIDJBHI != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.LDNBEIDJBHI);
+            my_size += ::protobuf::rt::uint32_size(2, self.OGNEPBFPILH);
         }
         if self.HNJFFFJDGNE != false {
             my_size += 1 + 1;
         }
-        if self.NMLFFOGBPOC != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.NMLFFOGBPOC);
-        }
         if self.KJDOLBOBKJF != ::protobuf::EnumOrUnknown::new(super::NPPNFPPENMC::NPPNFPPENMC::MATCH3_PLAYER_STATE_ALIVE) {
-            my_size += ::protobuf::rt::int32_size(3, self.KJDOLBOBKJF.value());
+            my_size += ::protobuf::rt::int32_size(5, self.KJDOLBOBKJF.value());
         }
-        if self.FBNHDEFNECI != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.FBNHDEFNECI);
+        if self.DNPHCJEBIKB != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.DNPHCJEBIKB);
+        }
+        if self.LDNBEIDJBHI != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.LDNBEIDJBHI);
+        }
+        if self.NMLFFOGBPOC != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.NMLFFOGBPOC);
+        }
+        if self.rank != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.rank);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -187,29 +187,29 @@ impl ::protobuf::Message for MEKDNIKFDNA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.FBNHDEFNECI != 0 {
+            os.write_uint32(12, self.FBNHDEFNECI)?;
+        }
         if self.OGNEPBFPILH != 0 {
-            os.write_uint32(10, self.OGNEPBFPILH)?;
-        }
-        if self.DNPHCJEBIKB != 0 {
-            os.write_uint32(5, self.DNPHCJEBIKB)?;
-        }
-        if self.rank != 0 {
-            os.write_uint32(7, self.rank)?;
-        }
-        if self.LDNBEIDJBHI != 0 {
-            os.write_uint32(9, self.LDNBEIDJBHI)?;
+            os.write_uint32(2, self.OGNEPBFPILH)?;
         }
         if self.HNJFFFJDGNE != false {
             os.write_bool(11, self.HNJFFFJDGNE)?;
         }
-        if self.NMLFFOGBPOC != 0 {
-            os.write_uint32(6, self.NMLFFOGBPOC)?;
-        }
         if self.KJDOLBOBKJF != ::protobuf::EnumOrUnknown::new(super::NPPNFPPENMC::NPPNFPPENMC::MATCH3_PLAYER_STATE_ALIVE) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.KJDOLBOBKJF))?;
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.KJDOLBOBKJF))?;
         }
-        if self.FBNHDEFNECI != 0 {
-            os.write_uint32(1, self.FBNHDEFNECI)?;
+        if self.DNPHCJEBIKB != 0 {
+            os.write_uint32(13, self.DNPHCJEBIKB)?;
+        }
+        if self.LDNBEIDJBHI != 0 {
+            os.write_uint32(8, self.LDNBEIDJBHI)?;
+        }
+        if self.NMLFFOGBPOC != 0 {
+            os.write_uint32(1, self.NMLFFOGBPOC)?;
+        }
+        if self.rank != 0 {
+            os.write_uint32(15, self.rank)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -228,27 +228,27 @@ impl ::protobuf::Message for MEKDNIKFDNA {
     }
 
     fn clear(&mut self) {
-        self.OGNEPBFPILH = 0;
-        self.DNPHCJEBIKB = 0;
-        self.rank = 0;
-        self.LDNBEIDJBHI = 0;
-        self.HNJFFFJDGNE = false;
-        self.NMLFFOGBPOC = 0;
-        self.KJDOLBOBKJF = ::protobuf::EnumOrUnknown::new(super::NPPNFPPENMC::NPPNFPPENMC::MATCH3_PLAYER_STATE_ALIVE);
         self.FBNHDEFNECI = 0;
+        self.OGNEPBFPILH = 0;
+        self.HNJFFFJDGNE = false;
+        self.KJDOLBOBKJF = ::protobuf::EnumOrUnknown::new(super::NPPNFPPENMC::NPPNFPPENMC::MATCH3_PLAYER_STATE_ALIVE);
+        self.DNPHCJEBIKB = 0;
+        self.LDNBEIDJBHI = 0;
+        self.NMLFFOGBPOC = 0;
+        self.rank = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MEKDNIKFDNA {
         static instance: MEKDNIKFDNA = MEKDNIKFDNA {
-            OGNEPBFPILH: 0,
-            DNPHCJEBIKB: 0,
-            rank: 0,
-            LDNBEIDJBHI: 0,
-            HNJFFFJDGNE: false,
-            NMLFFOGBPOC: 0,
-            KJDOLBOBKJF: ::protobuf::EnumOrUnknown::from_i32(0),
             FBNHDEFNECI: 0,
+            OGNEPBFPILH: 0,
+            HNJFFFJDGNE: false,
+            KJDOLBOBKJF: ::protobuf::EnumOrUnknown::from_i32(0),
+            DNPHCJEBIKB: 0,
+            LDNBEIDJBHI: 0,
+            NMLFFOGBPOC: 0,
+            rank: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -274,13 +274,13 @@ impl ::protobuf::reflect::ProtobufValue for MEKDNIKFDNA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MEKDNIKFDNA.proto\x1a\x11NPPNFPPENMC.proto\"\x9d\x02\n\x0bMEKDNIKF\
-    DNA\x12\x20\n\x0bOGNEPBFPILH\x18\n\x20\x01(\rR\x0bOGNEPBFPILH\x12\x20\n\
-    \x0bDNPHCJEBIKB\x18\x05\x20\x01(\rR\x0bDNPHCJEBIKB\x12\x12\n\x04rank\x18\
-    \x07\x20\x01(\rR\x04rank\x12\x20\n\x0bLDNBEIDJBHI\x18\t\x20\x01(\rR\x0bL\
-    DNBEIDJBHI\x12\x20\n\x0bHNJFFFJDGNE\x18\x0b\x20\x01(\x08R\x0bHNJFFFJDGNE\
-    \x12\x20\n\x0bNMLFFOGBPOC\x18\x06\x20\x01(\rR\x0bNMLFFOGBPOC\x12.\n\x0bK\
-    JDOLBOBKJF\x18\x03\x20\x01(\x0e2\x0c.NPPNFPPENMCR\x0bKJDOLBOBKJF\x12\x20\
-    \n\x0bFBNHDEFNECI\x18\x01\x20\x01(\rR\x0bFBNHDEFNECIb\x06proto3\
+    DNA\x12\x20\n\x0bFBNHDEFNECI\x18\x0c\x20\x01(\rR\x0bFBNHDEFNECI\x12\x20\
+    \n\x0bOGNEPBFPILH\x18\x02\x20\x01(\rR\x0bOGNEPBFPILH\x12\x20\n\x0bHNJFFF\
+    JDGNE\x18\x0b\x20\x01(\x08R\x0bHNJFFFJDGNE\x12.\n\x0bKJDOLBOBKJF\x18\x05\
+    \x20\x01(\x0e2\x0c.NPPNFPPENMCR\x0bKJDOLBOBKJF\x12\x20\n\x0bDNPHCJEBIKB\
+    \x18\r\x20\x01(\rR\x0bDNPHCJEBIKB\x12\x20\n\x0bLDNBEIDJBHI\x18\x08\x20\
+    \x01(\rR\x0bLDNBEIDJBHI\x12\x20\n\x0bNMLFFOGBPOC\x18\x01\x20\x01(\rR\x0b\
+    NMLFFOGBPOC\x12\x12\n\x04rank\x18\x0f\x20\x01(\rR\x04rankb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

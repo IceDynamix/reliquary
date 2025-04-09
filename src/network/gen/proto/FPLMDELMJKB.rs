@@ -30,12 +30,12 @@ pub struct FPLMDELMJKB {
     // message fields
     // @@protoc_insertion_point(field:FPLMDELMJKB.HCPGEALODME)
     pub HCPGEALODME: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:FPLMDELMJKB.BBLBLAFIGHM)
-    pub BBLBLAFIGHM: u32,
-    // @@protoc_insertion_point(field:FPLMDELMJKB.HPLKCINAPMF)
-    pub HPLKCINAPMF: u32,
     // @@protoc_insertion_point(field:FPLMDELMJKB.unique_id)
     pub unique_id: u32,
+    // @@protoc_insertion_point(field:FPLMDELMJKB.HPLKCINAPMF)
+    pub HPLKCINAPMF: u32,
+    // @@protoc_insertion_point(field:FPLMDELMJKB.BBLBLAFIGHM)
+    pub BBLBLAFIGHM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FPLMDELMJKB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,9 +61,9 @@ impl FPLMDELMJKB {
             |m: &mut FPLMDELMJKB| { &mut m.HCPGEALODME },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BBLBLAFIGHM",
-            |m: &FPLMDELMJKB| { &m.BBLBLAFIGHM },
-            |m: &mut FPLMDELMJKB| { &mut m.BBLBLAFIGHM },
+            "unique_id",
+            |m: &FPLMDELMJKB| { &m.unique_id },
+            |m: &mut FPLMDELMJKB| { &mut m.unique_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HPLKCINAPMF",
@@ -71,9 +71,9 @@ impl FPLMDELMJKB {
             |m: &mut FPLMDELMJKB| { &mut m.HPLKCINAPMF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unique_id",
-            |m: &FPLMDELMJKB| { &m.unique_id },
-            |m: &mut FPLMDELMJKB| { &mut m.unique_id },
+            "BBLBLAFIGHM",
+            |m: &FPLMDELMJKB| { &m.BBLBLAFIGHM },
+            |m: &mut FPLMDELMJKB| { &mut m.BBLBLAFIGHM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FPLMDELMJKB>(
             "FPLMDELMJKB",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for FPLMDELMJKB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.HCPGEALODME)?;
                 },
-                40 => {
+                32 => {
                     self.HCPGEALODME.push(is.read_uint32()?);
                 },
-                24 => {
-                    self.BBLBLAFIGHM = is.read_uint32()?;
-                },
                 72 => {
+                    self.unique_id = is.read_uint32()?;
+                },
+                40 => {
                     self.HPLKCINAPMF = is.read_uint32()?;
                 },
-                104 => {
-                    self.unique_id = is.read_uint32()?;
+                112 => {
+                    self.BBLBLAFIGHM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,15 +120,15 @@ impl ::protobuf::Message for FPLMDELMJKB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.HCPGEALODME);
-        if self.BBLBLAFIGHM != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.BBLBLAFIGHM);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.HCPGEALODME);
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.unique_id);
         }
         if self.HPLKCINAPMF != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.HPLKCINAPMF);
+            my_size += ::protobuf::rt::uint32_size(5, self.HPLKCINAPMF);
         }
-        if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.unique_id);
+        if self.BBLBLAFIGHM != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.BBLBLAFIGHM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,15 +136,15 @@ impl ::protobuf::Message for FPLMDELMJKB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(5, &self.HCPGEALODME)?;
-        if self.BBLBLAFIGHM != 0 {
-            os.write_uint32(3, self.BBLBLAFIGHM)?;
+        os.write_repeated_packed_uint32(4, &self.HCPGEALODME)?;
+        if self.unique_id != 0 {
+            os.write_uint32(9, self.unique_id)?;
         }
         if self.HPLKCINAPMF != 0 {
-            os.write_uint32(9, self.HPLKCINAPMF)?;
+            os.write_uint32(5, self.HPLKCINAPMF)?;
         }
-        if self.unique_id != 0 {
-            os.write_uint32(13, self.unique_id)?;
+        if self.BBLBLAFIGHM != 0 {
+            os.write_uint32(14, self.BBLBLAFIGHM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for FPLMDELMJKB {
 
     fn clear(&mut self) {
         self.HCPGEALODME.clear();
-        self.BBLBLAFIGHM = 0;
-        self.HPLKCINAPMF = 0;
         self.unique_id = 0;
+        self.HPLKCINAPMF = 0;
+        self.BBLBLAFIGHM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FPLMDELMJKB {
         static instance: FPLMDELMJKB = FPLMDELMJKB {
             HCPGEALODME: ::std::vec::Vec::new(),
-            BBLBLAFIGHM: 0,
-            HPLKCINAPMF: 0,
             unique_id: 0,
+            HPLKCINAPMF: 0,
+            BBLBLAFIGHM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for FPLMDELMJKB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FPLMDELMJKB.proto\"\x90\x01\n\x0bFPLMDELMJKB\x12\x20\n\x0bHCPGEALO\
-    DME\x18\x05\x20\x03(\rR\x0bHCPGEALODME\x12\x20\n\x0bBBLBLAFIGHM\x18\x03\
-    \x20\x01(\rR\x0bBBLBLAFIGHM\x12\x20\n\x0bHPLKCINAPMF\x18\t\x20\x01(\rR\
-    \x0bHPLKCINAPMF\x12\x1b\n\tunique_id\x18\r\x20\x01(\rR\x08uniqueIdb\x06p\
-    roto3\
+    DME\x18\x04\x20\x03(\rR\x0bHCPGEALODME\x12\x1b\n\tunique_id\x18\t\x20\
+    \x01(\rR\x08uniqueId\x12\x20\n\x0bHPLKCINAPMF\x18\x05\x20\x01(\rR\x0bHPL\
+    KCINAPMF\x12\x20\n\x0bBBLBLAFIGHM\x18\x0e\x20\x01(\rR\x0bBBLBLAFIGHMb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

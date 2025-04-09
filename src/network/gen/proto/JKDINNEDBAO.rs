@@ -86,13 +86,13 @@ impl ::protobuf::Message for JKDINNEDBAO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                72 => {
                     self.IFJFCEJJBPE = is.read_uint32()?;
                 },
-                8 => {
+                64 => {
                     self.CENIFNKNFNP = is.read_uint32()?;
                 },
-                42 => {
+                26 => {
                     self.LHEILNACNOD.push(is.read_message()?);
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for JKDINNEDBAO {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.IFJFCEJJBPE != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.IFJFCEJJBPE);
+            my_size += ::protobuf::rt::uint32_size(9, self.IFJFCEJJBPE);
         }
         if self.CENIFNKNFNP != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.CENIFNKNFNP);
+            my_size += ::protobuf::rt::uint32_size(8, self.CENIFNKNFNP);
         }
         for value in &self.LHEILNACNOD {
             let len = value.compute_size();
@@ -124,13 +124,13 @@ impl ::protobuf::Message for JKDINNEDBAO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IFJFCEJJBPE != 0 {
-            os.write_uint32(4, self.IFJFCEJJBPE)?;
+            os.write_uint32(9, self.IFJFCEJJBPE)?;
         }
         if self.CENIFNKNFNP != 0 {
-            os.write_uint32(1, self.CENIFNKNFNP)?;
+            os.write_uint32(8, self.CENIFNKNFNP)?;
         }
         for v in &self.LHEILNACNOD {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for JKDINNEDBAO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JKDINNEDBAO.proto\x1a\x11HOCHOIHKKDG.proto\"\x81\x01\n\x0bJKDINNED\
-    BAO\x12\x20\n\x0bIFJFCEJJBPE\x18\x04\x20\x01(\rR\x0bIFJFCEJJBPE\x12\x20\
-    \n\x0bCENIFNKNFNP\x18\x01\x20\x01(\rR\x0bCENIFNKNFNP\x12.\n\x0bLHEILNACN\
-    OD\x18\x05\x20\x03(\x0b2\x0c.HOCHOIHKKDGR\x0bLHEILNACNODb\x06proto3\
+    BAO\x12\x20\n\x0bIFJFCEJJBPE\x18\t\x20\x01(\rR\x0bIFJFCEJJBPE\x12\x20\n\
+    \x0bCENIFNKNFNP\x18\x08\x20\x01(\rR\x0bCENIFNKNFNP\x12.\n\x0bLHEILNACNOD\
+    \x18\x03\x20\x03(\x0b2\x0c.HOCHOIHKKDGR\x0bLHEILNACNODb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

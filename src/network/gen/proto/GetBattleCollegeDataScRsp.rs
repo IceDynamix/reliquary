@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetBattleCollegeDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetBattleCollegeDataScRsp.MAMHOJMFJOF)
-    pub MAMHOJMFJOF: u32,
     // @@protoc_insertion_point(field:GetBattleCollegeDataScRsp.FAPGFPCCKKJ)
     pub FAPGFPCCKKJ: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetBattleCollegeDataScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetBattleCollegeDataScRsp.MAMHOJMFJOF)
+    pub MAMHOJMFJOF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetBattleCollegeDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,11 +53,6 @@ impl GetBattleCollegeDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MAMHOJMFJOF",
-            |m: &GetBattleCollegeDataScRsp| { &m.MAMHOJMFJOF },
-            |m: &mut GetBattleCollegeDataScRsp| { &mut m.MAMHOJMFJOF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "FAPGFPCCKKJ",
             |m: &GetBattleCollegeDataScRsp| { &m.FAPGFPCCKKJ },
@@ -67,6 +62,11 @@ impl GetBattleCollegeDataScRsp {
             "retcode",
             |m: &GetBattleCollegeDataScRsp| { &m.retcode },
             |m: &mut GetBattleCollegeDataScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MAMHOJMFJOF",
+            |m: &GetBattleCollegeDataScRsp| { &m.MAMHOJMFJOF },
+            |m: &mut GetBattleCollegeDataScRsp| { &mut m.MAMHOJMFJOF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetBattleCollegeDataScRsp>(
             "GetBattleCollegeDataScRsp",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for GetBattleCollegeDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.MAMHOJMFJOF = is.read_uint32()?;
-                },
-                10 => {
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.FAPGFPCCKKJ)?;
                 },
-                8 => {
+                104 => {
                     self.FAPGFPCCKKJ.push(is.read_uint32()?);
                 },
-                48 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
+                },
+                48 => {
+                    self.MAMHOJMFJOF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,12 +110,12 @@ impl ::protobuf::Message for GetBattleCollegeDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MAMHOJMFJOF != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.MAMHOJMFJOF);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.FAPGFPCCKKJ);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.FAPGFPCCKKJ);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+        }
+        if self.MAMHOJMFJOF != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.MAMHOJMFJOF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,12 +123,12 @@ impl ::protobuf::Message for GetBattleCollegeDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MAMHOJMFJOF != 0 {
-            os.write_uint32(3, self.MAMHOJMFJOF)?;
-        }
-        os.write_repeated_packed_uint32(1, &self.FAPGFPCCKKJ)?;
+        os.write_repeated_packed_uint32(13, &self.FAPGFPCCKKJ)?;
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
+        }
+        if self.MAMHOJMFJOF != 0 {
+            os.write_uint32(6, self.MAMHOJMFJOF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -147,17 +147,17 @@ impl ::protobuf::Message for GetBattleCollegeDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.MAMHOJMFJOF = 0;
         self.FAPGFPCCKKJ.clear();
         self.retcode = 0;
+        self.MAMHOJMFJOF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetBattleCollegeDataScRsp {
         static instance: GetBattleCollegeDataScRsp = GetBattleCollegeDataScRsp {
-            MAMHOJMFJOF: 0,
             FAPGFPCCKKJ: ::std::vec::Vec::new(),
             retcode: 0,
+            MAMHOJMFJOF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for GetBattleCollegeDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fGetBattleCollegeDataScRsp.proto\"y\n\x19GetBattleCollegeDataScRsp\
-    \x12\x20\n\x0bMAMHOJMFJOF\x18\x03\x20\x01(\rR\x0bMAMHOJMFJOF\x12\x20\n\
-    \x0bFAPGFPCCKKJ\x18\x01\x20\x03(\rR\x0bFAPGFPCCKKJ\x12\x18\n\x07retcode\
-    \x18\x06\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x12\x20\n\x0bFAPGFPCCKKJ\x18\r\x20\x03(\rR\x0bFAPGFPCCKKJ\x12\x18\n\x07\
+    retcode\x18\x02\x20\x01(\rR\x07retcode\x12\x20\n\x0bMAMHOJMFJOF\x18\x06\
+    \x20\x01(\rR\x0bMAMHOJMFJOFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -82,10 +82,10 @@ impl ::protobuf::Message for OMDEFBABNNB {
                 122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GFICFLCIEJJ)?;
                 },
-                50 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.FEIFDEGKEAP)?;
                 },
-                48 => {
+                32 => {
                     self.FEIFDEGKEAP.push(is.read_uint32()?);
                 },
                 tag => {
@@ -104,7 +104,7 @@ impl ::protobuf::Message for OMDEFBABNNB {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.FEIFDEGKEAP);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.FEIFDEGKEAP);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -114,7 +114,7 @@ impl ::protobuf::Message for OMDEFBABNNB {
         if let Some(v) = self.GFICFLCIEJJ.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
-        os.write_repeated_packed_uint32(6, &self.FEIFDEGKEAP)?;
+        os.write_repeated_packed_uint32(4, &self.FEIFDEGKEAP)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for OMDEFBABNNB {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OMDEFBABNNB.proto\x1a\x11KNAPAIOFJIE.proto\"_\n\x0bOMDEFBABNNB\x12\
     .\n\x0bGFICFLCIEJJ\x18\x0f\x20\x01(\x0b2\x0c.KNAPAIOFJIER\x0bGFICFLCIEJJ\
-    \x12\x20\n\x0bFEIFDEGKEAP\x18\x06\x20\x03(\rR\x0bFEIFDEGKEAPb\x06proto3\
+    \x12\x20\n\x0bFEIFDEGKEAP\x18\x04\x20\x03(\rR\x0bFEIFDEGKEAPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

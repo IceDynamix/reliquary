@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DoGachaCsReq {
     // message fields
-    // @@protoc_insertion_point(field:DoGachaCsReq.GIAJEKCIIGD)
-    pub GIAJEKCIIGD: u32,
-    // @@protoc_insertion_point(field:DoGachaCsReq.EHIADPGAPJP)
-    pub EHIADPGAPJP: u32,
     // @@protoc_insertion_point(field:DoGachaCsReq.OPFPDACBOBB)
     pub OPFPDACBOBB: u32,
     // @@protoc_insertion_point(field:DoGachaCsReq.FPFCKNICPPJ)
     pub FPFCKNICPPJ: u32,
+    // @@protoc_insertion_point(field:DoGachaCsReq.GIAJEKCIIGD)
+    pub GIAJEKCIIGD: u32,
+    // @@protoc_insertion_point(field:DoGachaCsReq.EHIADPGAPJP)
+    pub EHIADPGAPJP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DoGachaCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,16 +56,6 @@ impl DoGachaCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GIAJEKCIIGD",
-            |m: &DoGachaCsReq| { &m.GIAJEKCIIGD },
-            |m: &mut DoGachaCsReq| { &mut m.GIAJEKCIIGD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EHIADPGAPJP",
-            |m: &DoGachaCsReq| { &m.EHIADPGAPJP },
-            |m: &mut DoGachaCsReq| { &mut m.EHIADPGAPJP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OPFPDACBOBB",
             |m: &DoGachaCsReq| { &m.OPFPDACBOBB },
             |m: &mut DoGachaCsReq| { &mut m.OPFPDACBOBB },
@@ -74,6 +64,16 @@ impl DoGachaCsReq {
             "FPFCKNICPPJ",
             |m: &DoGachaCsReq| { &m.FPFCKNICPPJ },
             |m: &mut DoGachaCsReq| { &mut m.FPFCKNICPPJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GIAJEKCIIGD",
+            |m: &DoGachaCsReq| { &m.GIAJEKCIIGD },
+            |m: &mut DoGachaCsReq| { &mut m.GIAJEKCIIGD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EHIADPGAPJP",
+            |m: &DoGachaCsReq| { &m.EHIADPGAPJP },
+            |m: &mut DoGachaCsReq| { &mut m.EHIADPGAPJP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DoGachaCsReq>(
             "DoGachaCsReq",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for DoGachaCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.GIAJEKCIIGD = is.read_uint32()?;
-                },
-                24 => {
-                    self.EHIADPGAPJP = is.read_uint32()?;
-                },
-                32 => {
+                120 => {
                     self.OPFPDACBOBB = is.read_uint32()?;
                 },
-                16 => {
+                48 => {
                     self.FPFCKNICPPJ = is.read_uint32()?;
+                },
+                80 => {
+                    self.GIAJEKCIIGD = is.read_uint32()?;
+                },
+                56 => {
+                    self.EHIADPGAPJP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for DoGachaCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GIAJEKCIIGD != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.GIAJEKCIIGD);
-        }
-        if self.EHIADPGAPJP != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.EHIADPGAPJP);
-        }
         if self.OPFPDACBOBB != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.OPFPDACBOBB);
+            my_size += ::protobuf::rt::uint32_size(15, self.OPFPDACBOBB);
         }
         if self.FPFCKNICPPJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.FPFCKNICPPJ);
+            my_size += ::protobuf::rt::uint32_size(6, self.FPFCKNICPPJ);
+        }
+        if self.GIAJEKCIIGD != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.GIAJEKCIIGD);
+        }
+        if self.EHIADPGAPJP != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.EHIADPGAPJP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for DoGachaCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GIAJEKCIIGD != 0 {
-            os.write_uint32(13, self.GIAJEKCIIGD)?;
-        }
-        if self.EHIADPGAPJP != 0 {
-            os.write_uint32(3, self.EHIADPGAPJP)?;
-        }
         if self.OPFPDACBOBB != 0 {
-            os.write_uint32(4, self.OPFPDACBOBB)?;
+            os.write_uint32(15, self.OPFPDACBOBB)?;
         }
         if self.FPFCKNICPPJ != 0 {
-            os.write_uint32(2, self.FPFCKNICPPJ)?;
+            os.write_uint32(6, self.FPFCKNICPPJ)?;
+        }
+        if self.GIAJEKCIIGD != 0 {
+            os.write_uint32(10, self.GIAJEKCIIGD)?;
+        }
+        if self.EHIADPGAPJP != 0 {
+            os.write_uint32(7, self.EHIADPGAPJP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for DoGachaCsReq {
     }
 
     fn clear(&mut self) {
-        self.GIAJEKCIIGD = 0;
-        self.EHIADPGAPJP = 0;
         self.OPFPDACBOBB = 0;
         self.FPFCKNICPPJ = 0;
+        self.GIAJEKCIIGD = 0;
+        self.EHIADPGAPJP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DoGachaCsReq {
         static instance: DoGachaCsReq = DoGachaCsReq {
-            GIAJEKCIIGD: 0,
-            EHIADPGAPJP: 0,
             OPFPDACBOBB: 0,
             FPFCKNICPPJ: 0,
+            GIAJEKCIIGD: 0,
+            EHIADPGAPJP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for DoGachaCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12DoGachaCsReq.proto\"\x96\x01\n\x0cDoGachaCsReq\x12\x20\n\x0bGIAJEK\
-    CIIGD\x18\r\x20\x01(\rR\x0bGIAJEKCIIGD\x12\x20\n\x0bEHIADPGAPJP\x18\x03\
-    \x20\x01(\rR\x0bEHIADPGAPJP\x12\x20\n\x0bOPFPDACBOBB\x18\x04\x20\x01(\rR\
-    \x0bOPFPDACBOBB\x12\x20\n\x0bFPFCKNICPPJ\x18\x02\x20\x01(\rR\x0bFPFCKNIC\
-    PPJb\x06proto3\
+    \n\x12DoGachaCsReq.proto\"\x96\x01\n\x0cDoGachaCsReq\x12\x20\n\x0bOPFPDA\
+    CBOBB\x18\x0f\x20\x01(\rR\x0bOPFPDACBOBB\x12\x20\n\x0bFPFCKNICPPJ\x18\
+    \x06\x20\x01(\rR\x0bFPFCKNICPPJ\x12\x20\n\x0bGIAJEKCIIGD\x18\n\x20\x01(\
+    \rR\x0bGIAJEKCIIGD\x12\x20\n\x0bEHIADPGAPJP\x18\x07\x20\x01(\rR\x0bEHIAD\
+    PGAPJPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

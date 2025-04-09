@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EEKIHHEFAIC {
     // message fields
-    // @@protoc_insertion_point(field:EEKIHHEFAIC.PMJAIPPJFKC)
-    pub PMJAIPPJFKC: u32,
     // @@protoc_insertion_point(field:EEKIHHEFAIC.GNONCMJMCBF)
     pub GNONCMJMCBF: ::std::vec::Vec<super::AKMCIGLBJAD::AKMCIGLBJAD>,
+    // @@protoc_insertion_point(field:EEKIHHEFAIC.PMJAIPPJFKC)
+    pub PMJAIPPJFKC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EEKIHHEFAIC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl EEKIHHEFAIC {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PMJAIPPJFKC",
-            |m: &EEKIHHEFAIC| { &m.PMJAIPPJFKC },
-            |m: &mut EEKIHHEFAIC| { &mut m.PMJAIPPJFKC },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "GNONCMJMCBF",
             |m: &EEKIHHEFAIC| { &m.GNONCMJMCBF },
             |m: &mut EEKIHHEFAIC| { &mut m.GNONCMJMCBF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PMJAIPPJFKC",
+            |m: &EEKIHHEFAIC| { &m.PMJAIPPJFKC },
+            |m: &mut EEKIHHEFAIC| { &mut m.PMJAIPPJFKC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EEKIHHEFAIC>(
             "EEKIHHEFAIC",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for EEKIHHEFAIC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.PMJAIPPJFKC = is.read_uint32()?;
-                },
-                122 => {
+                66 => {
                     self.GNONCMJMCBF.push(is.read_message()?);
+                },
+                72 => {
+                    self.PMJAIPPJFKC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for EEKIHHEFAIC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PMJAIPPJFKC != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.PMJAIPPJFKC);
-        }
         for value in &self.GNONCMJMCBF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.PMJAIPPJFKC != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.PMJAIPPJFKC);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PMJAIPPJFKC != 0 {
-            os.write_uint32(7, self.PMJAIPPJFKC)?;
-        }
         for v in &self.GNONCMJMCBF {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
+        if self.PMJAIPPJFKC != 0 {
+            os.write_uint32(9, self.PMJAIPPJFKC)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for EEKIHHEFAIC {
     }
 
     fn clear(&mut self) {
-        self.PMJAIPPJFKC = 0;
         self.GNONCMJMCBF.clear();
+        self.PMJAIPPJFKC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EEKIHHEFAIC {
         static instance: EEKIHHEFAIC = EEKIHHEFAIC {
-            PMJAIPPJFKC: 0,
             GNONCMJMCBF: ::std::vec::Vec::new(),
+            PMJAIPPJFKC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for EEKIHHEFAIC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EEKIHHEFAIC.proto\x1a\x11AKMCIGLBJAD.proto\"_\n\x0bEEKIHHEFAIC\x12\
-    \x20\n\x0bPMJAIPPJFKC\x18\x07\x20\x01(\rR\x0bPMJAIPPJFKC\x12.\n\x0bGNONC\
-    MJMCBF\x18\x0f\x20\x03(\x0b2\x0c.AKMCIGLBJADR\x0bGNONCMJMCBFb\x06proto3\
+    .\n\x0bGNONCMJMCBF\x18\x08\x20\x03(\x0b2\x0c.AKMCIGLBJADR\x0bGNONCMJMCBF\
+    \x12\x20\n\x0bPMJAIPPJFKC\x18\t\x20\x01(\rR\x0bPMJAIPPJFKCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

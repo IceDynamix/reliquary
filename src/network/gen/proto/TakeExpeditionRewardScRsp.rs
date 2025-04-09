@@ -30,10 +30,10 @@ pub struct TakeExpeditionRewardScRsp {
     // message fields
     // @@protoc_insertion_point(field:TakeExpeditionRewardScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:TakeExpeditionRewardScRsp.BHELBOHKBBM)
-    pub BHELBOHKBBM: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:TakeExpeditionRewardScRsp.NNMLOCKECKA)
     pub NNMLOCKECKA: u32,
+    // @@protoc_insertion_point(field:TakeExpeditionRewardScRsp.BHELBOHKBBM)
+    pub BHELBOHKBBM: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:TakeExpeditionRewardScRsp.PEHCDFAEEFK)
     pub PEHCDFAEEFK: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
@@ -60,15 +60,15 @@ impl TakeExpeditionRewardScRsp {
             |m: &TakeExpeditionRewardScRsp| { &m.retcode },
             |m: &mut TakeExpeditionRewardScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "BHELBOHKBBM",
-            |m: &TakeExpeditionRewardScRsp| { &m.BHELBOHKBBM },
-            |m: &mut TakeExpeditionRewardScRsp| { &mut m.BHELBOHKBBM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NNMLOCKECKA",
             |m: &TakeExpeditionRewardScRsp| { &m.NNMLOCKECKA },
             |m: &mut TakeExpeditionRewardScRsp| { &mut m.NNMLOCKECKA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "BHELBOHKBBM",
+            |m: &TakeExpeditionRewardScRsp| { &m.BHELBOHKBBM },
+            |m: &mut TakeExpeditionRewardScRsp| { &mut m.BHELBOHKBBM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "PEHCDFAEEFK",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for TakeExpeditionRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHELBOHKBBM)?;
-                },
-                80 => {
+                88 => {
                     self.NNMLOCKECKA = is.read_uint32()?;
                 },
-                58 => {
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHELBOHKBBM)?;
+                },
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.PEHCDFAEEFK)?;
                 },
                 tag => {
@@ -118,14 +118,14 @@ impl ::protobuf::Message for TakeExpeditionRewardScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+        }
+        if self.NNMLOCKECKA != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.NNMLOCKECKA);
         }
         if let Some(v) = self.BHELBOHKBBM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.NNMLOCKECKA != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.NNMLOCKECKA);
         }
         if let Some(v) = self.PEHCDFAEEFK.as_ref() {
             let len = v.compute_size();
@@ -138,16 +138,16 @@ impl ::protobuf::Message for TakeExpeditionRewardScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
-        }
-        if let Some(v) = self.BHELBOHKBBM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            os.write_uint32(13, self.retcode)?;
         }
         if self.NNMLOCKECKA != 0 {
-            os.write_uint32(10, self.NNMLOCKECKA)?;
+            os.write_uint32(11, self.NNMLOCKECKA)?;
+        }
+        if let Some(v) = self.BHELBOHKBBM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if let Some(v) = self.PEHCDFAEEFK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::Message for TakeExpeditionRewardScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.BHELBOHKBBM.clear();
         self.NNMLOCKECKA = 0;
+        self.BHELBOHKBBM.clear();
         self.PEHCDFAEEFK.clear();
         self.special_fields.clear();
     }
@@ -176,8 +176,8 @@ impl ::protobuf::Message for TakeExpeditionRewardScRsp {
     fn default_instance() -> &'static TakeExpeditionRewardScRsp {
         static instance: TakeExpeditionRewardScRsp = TakeExpeditionRewardScRsp {
             retcode: 0,
-            BHELBOHKBBM: ::protobuf::MessageField::none(),
             NNMLOCKECKA: 0,
+            BHELBOHKBBM: ::protobuf::MessageField::none(),
             PEHCDFAEEFK: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -204,10 +204,10 @@ impl ::protobuf::reflect::ProtobufValue for TakeExpeditionRewardScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fTakeExpeditionRewardScRsp.proto\x1a\x0eItemList.proto\"\xb1\x01\n\
-    \x19TakeExpeditionRewardScRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\
-    \x07retcode\x12+\n\x0bBHELBOHKBBM\x18\t\x20\x01(\x0b2\t.ItemListR\x0bBHE\
-    LBOHKBBM\x12\x20\n\x0bNNMLOCKECKA\x18\n\x20\x01(\rR\x0bNNMLOCKECKA\x12+\
-    \n\x0bPEHCDFAEEFK\x18\x07\x20\x01(\x0b2\t.ItemListR\x0bPEHCDFAEEFKb\x06p\
+    \x19TakeExpeditionRewardScRsp\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07\
+    retcode\x12\x20\n\x0bNNMLOCKECKA\x18\x0b\x20\x01(\rR\x0bNNMLOCKECKA\x12+\
+    \n\x0bBHELBOHKBBM\x18\x02\x20\x01(\x0b2\t.ItemListR\x0bBHELBOHKBBM\x12+\
+    \n\x0bPEHCDFAEEFK\x18\x08\x20\x01(\x0b2\t.ItemListR\x0bPEHCDFAEEFKb\x06p\
     roto3\
 ";
 

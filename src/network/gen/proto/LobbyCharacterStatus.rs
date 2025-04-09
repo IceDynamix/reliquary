@@ -41,6 +41,8 @@ pub enum LobbyCharacterStatus {
     LobbyCharacterStatus_Watching = 5,
     // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.LobbyCharacterStatus_Matching)
     LobbyCharacterStatus_Matching = 6,
+    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.LobbyCharacterStatus_LobbyStartFight)
+    LobbyCharacterStatus_LobbyStartFight = 7,
 }
 
 impl ::protobuf::Enum for LobbyCharacterStatus {
@@ -59,6 +61,7 @@ impl ::protobuf::Enum for LobbyCharacterStatus {
             4 => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_Fighting),
             5 => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_Watching),
             6 => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_Matching),
+            7 => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_LobbyStartFight),
             _ => ::std::option::Option::None
         }
     }
@@ -72,6 +75,7 @@ impl ::protobuf::Enum for LobbyCharacterStatus {
             "LobbyCharacterStatus_Fighting" => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_Fighting),
             "LobbyCharacterStatus_Watching" => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_Watching),
             "LobbyCharacterStatus_Matching" => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_Matching),
+            "LobbyCharacterStatus_LobbyStartFight" => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_LobbyStartFight),
             _ => ::std::option::Option::None
         }
     }
@@ -84,6 +88,7 @@ impl ::protobuf::Enum for LobbyCharacterStatus {
         LobbyCharacterStatus::LobbyCharacterStatus_Fighting,
         LobbyCharacterStatus::LobbyCharacterStatus_Watching,
         LobbyCharacterStatus::LobbyCharacterStatus_Matching,
+        LobbyCharacterStatus::LobbyCharacterStatus_LobbyStartFight,
     ];
 }
 
@@ -112,12 +117,13 @@ impl LobbyCharacterStatus {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aLobbyCharacterStatus.proto*\x81\x02\n\x14LobbyCharacterStatus\x12\
+    \n\x1aLobbyCharacterStatus.proto*\xab\x02\n\x14LobbyCharacterStatus\x12\
     \x1d\n\x19LobbyCharacterStatus_None\x10\0\x12\x1d\n\x19LobbyCharacterSta\
     tus_Idle\x10\x01\x12\"\n\x1eLobbyCharacterStatus_Operating\x10\x02\x12\
     \x1e\n\x1aLobbyCharacterStatus_Ready\x10\x03\x12!\n\x1dLobbyCharacterSta\
     tus_Fighting\x10\x04\x12!\n\x1dLobbyCharacterStatus_Watching\x10\x05\x12\
-    !\n\x1dLobbyCharacterStatus_Matching\x10\x06b\x06proto3\
+    !\n\x1dLobbyCharacterStatus_Matching\x10\x06\x12(\n$LobbyCharacterStatus\
+    _LobbyStartFight\x10\x07b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

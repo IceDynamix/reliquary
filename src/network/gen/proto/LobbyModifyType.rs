@@ -59,6 +59,10 @@ pub enum LobbyModifyType {
     LobbyModifyType_FightEnd = 14,
     // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_FightRoomDestroyInInit)
     LobbyModifyType_FightRoomDestroyInInit = 15,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_LobbyStartFight)
+    LobbyModifyType_LobbyStartFight = 16,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_LobbyStartFightTimeout)
+    LobbyModifyType_LobbyStartFightTimeout = 17,
 }
 
 impl ::protobuf::Enum for LobbyModifyType {
@@ -86,6 +90,8 @@ impl ::protobuf::Enum for LobbyModifyType {
             13 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_Logout),
             14 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_FightEnd),
             15 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_FightRoomDestroyInInit),
+            16 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_LobbyStartFight),
+            17 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_LobbyStartFightTimeout),
             _ => ::std::option::Option::None
         }
     }
@@ -108,6 +114,8 @@ impl ::protobuf::Enum for LobbyModifyType {
             "LobbyModifyType_Logout" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_Logout),
             "LobbyModifyType_FightEnd" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_FightEnd),
             "LobbyModifyType_FightRoomDestroyInInit" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_FightRoomDestroyInInit),
+            "LobbyModifyType_LobbyStartFight" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_LobbyStartFight),
+            "LobbyModifyType_LobbyStartFightTimeout" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_LobbyStartFightTimeout),
             _ => ::std::option::Option::None
         }
     }
@@ -129,6 +137,8 @@ impl ::protobuf::Enum for LobbyModifyType {
         LobbyModifyType::LobbyModifyType_Logout,
         LobbyModifyType::LobbyModifyType_FightEnd,
         LobbyModifyType::LobbyModifyType_FightRoomDestroyInInit,
+        LobbyModifyType::LobbyModifyType_LobbyStartFight,
+        LobbyModifyType::LobbyModifyType_LobbyStartFightTimeout,
     ];
 }
 
@@ -157,7 +167,7 @@ impl LobbyModifyType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15LobbyModifyType.proto*\xfd\x03\n\x0fLobbyModifyType\x12\x18\n\x14L\
+    \n\x15LobbyModifyType.proto*\xce\x04\n\x0fLobbyModifyType\x12\x18\n\x14L\
     obbyModifyType_None\x10\0\x12\x18\n\x14LobbyModifyType_Idle\x10\x01\x12\
     \x19\n\x15LobbyModifyType_Ready\x10\x02\x12\x1d\n\x19LobbyModifyType_Ope\
     rating\x10\x03\x12\x1f\n\x1bLobbyModifyType_CancelMatch\x10\x04\x12\x19\
@@ -168,7 +178,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     ifyType_MatchTimeOut\x10\x0b\x12\x1e\n\x1aLobbyModifyType_FightStart\x10\
     \x0c\x12\x1a\n\x16LobbyModifyType_Logout\x10\r\x12\x1c\n\x18LobbyModifyT\
     ype_FightEnd\x10\x0e\x12*\n&LobbyModifyType_FightRoomDestroyInInit\x10\
-    \x0fb\x06proto3\
+    \x0f\x12#\n\x1fLobbyModifyType_LobbyStartFight\x10\x10\x12*\n&LobbyModif\
+    yType_LobbyStartFightTimeout\x10\x11b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

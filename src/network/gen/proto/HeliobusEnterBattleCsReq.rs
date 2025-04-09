@@ -86,7 +86,7 @@ impl ::protobuf::Message for HeliobusEnterBattleCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                72 => {
                     self.OOACKEGEMFK = is.read_uint32()?;
                 },
                 82 => {
@@ -95,7 +95,7 @@ impl ::protobuf::Message for HeliobusEnterBattleCsReq {
                 80 => {
                     self.FEIFDEGKEAP.push(is.read_uint32()?);
                 },
-                40 => {
+                88 => {
                     self.FHICMGDFGBC = is.read_uint32()?;
                 },
                 tag => {
@@ -111,11 +111,11 @@ impl ::protobuf::Message for HeliobusEnterBattleCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.OOACKEGEMFK != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.OOACKEGEMFK);
+            my_size += ::protobuf::rt::uint32_size(9, self.OOACKEGEMFK);
         }
         my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.FEIFDEGKEAP);
         if self.FHICMGDFGBC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.FHICMGDFGBC);
+            my_size += ::protobuf::rt::uint32_size(11, self.FHICMGDFGBC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,11 +124,11 @@ impl ::protobuf::Message for HeliobusEnterBattleCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.OOACKEGEMFK != 0 {
-            os.write_uint32(11, self.OOACKEGEMFK)?;
+            os.write_uint32(9, self.OOACKEGEMFK)?;
         }
         os.write_repeated_packed_uint32(10, &self.FEIFDEGKEAP)?;
         if self.FHICMGDFGBC != 0 {
-            os.write_uint32(5, self.FHICMGDFGBC)?;
+            os.write_uint32(11, self.FHICMGDFGBC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for HeliobusEnterBattleCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eHeliobusEnterBattleCsReq.proto\"\x80\x01\n\x18HeliobusEnterBattleC\
-    sReq\x12\x20\n\x0bOOACKEGEMFK\x18\x0b\x20\x01(\rR\x0bOOACKEGEMFK\x12\x20\
-    \n\x0bFEIFDEGKEAP\x18\n\x20\x03(\rR\x0bFEIFDEGKEAP\x12\x20\n\x0bFHICMGDF\
-    GBC\x18\x05\x20\x01(\rR\x0bFHICMGDFGBCb\x06proto3\
+    sReq\x12\x20\n\x0bOOACKEGEMFK\x18\t\x20\x01(\rR\x0bOOACKEGEMFK\x12\x20\n\
+    \x0bFEIFDEGKEAP\x18\n\x20\x03(\rR\x0bFEIFDEGKEAP\x12\x20\n\x0bFHICMGDFGB\
+    C\x18\x0b\x20\x01(\rR\x0bFHICMGDFGBCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

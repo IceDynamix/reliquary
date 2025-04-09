@@ -86,13 +86,13 @@ impl ::protobuf::Message for PLFIIABDDMC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                112 => {
                     self.tid = is.read_uint32()?;
                 },
-                88 => {
+                72 => {
                     self.JHPIDNFBACE = is.read_uint32()?;
                 },
-                72 => {
+                56 => {
                     self.DCKHCKDHHCP = is.read_uint64()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for PLFIIABDDMC {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.tid != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.tid);
+            my_size += ::protobuf::rt::uint32_size(14, self.tid);
         }
         if self.JHPIDNFBACE != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.JHPIDNFBACE);
+            my_size += ::protobuf::rt::uint32_size(9, self.JHPIDNFBACE);
         }
         if self.DCKHCKDHHCP != 0 {
-            my_size += ::protobuf::rt::uint64_size(9, self.DCKHCKDHHCP);
+            my_size += ::protobuf::rt::uint64_size(7, self.DCKHCKDHHCP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for PLFIIABDDMC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.tid != 0 {
-            os.write_uint32(10, self.tid)?;
+            os.write_uint32(14, self.tid)?;
         }
         if self.JHPIDNFBACE != 0 {
-            os.write_uint32(11, self.JHPIDNFBACE)?;
+            os.write_uint32(9, self.JHPIDNFBACE)?;
         }
         if self.DCKHCKDHHCP != 0 {
-            os.write_uint64(9, self.DCKHCKDHHCP)?;
+            os.write_uint64(7, self.DCKHCKDHHCP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for PLFIIABDDMC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PLFIIABDDMC.proto\"c\n\x0bPLFIIABDDMC\x12\x10\n\x03tid\x18\n\x20\
-    \x01(\rR\x03tid\x12\x20\n\x0bJHPIDNFBACE\x18\x0b\x20\x01(\rR\x0bJHPIDNFB\
-    ACE\x12\x20\n\x0bDCKHCKDHHCP\x18\t\x20\x01(\x04R\x0bDCKHCKDHHCPb\x06prot\
+    \n\x11PLFIIABDDMC.proto\"c\n\x0bPLFIIABDDMC\x12\x10\n\x03tid\x18\x0e\x20\
+    \x01(\rR\x03tid\x12\x20\n\x0bJHPIDNFBACE\x18\t\x20\x01(\rR\x0bJHPIDNFBAC\
+    E\x12\x20\n\x0bDCKHCKDHHCP\x18\x07\x20\x01(\x04R\x0bDCKHCKDHHCPb\x06prot\
     o3\
 ";
 

@@ -29,46 +29,46 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdRaidType {
     // @@protoc_insertion_point(enum_value:CmdRaidType.CmdRaidTypeNone)
     CmdRaidTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdSetClientRaidTargetCountCsReq)
-    CmdSetClientRaidTargetCountCsReq = 2249,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdGetChallengeRaidInfoScRsp)
-    CmdGetChallengeRaidInfoScRsp = 2297,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdRaidKickByServerScNotify)
-    CmdRaidKickByServerScNotify = 2212,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdStartRaidScRsp)
-    CmdStartRaidScRsp = 2268,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdChallengeRaidNotify)
-    CmdChallengeRaidNotify = 2211,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdTakeChallengeRaidRewardScRsp)
-    CmdTakeChallengeRaidRewardScRsp = 2228,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdGetSaveRaidScRsp)
-    CmdGetSaveRaidScRsp = 2280,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdGetAllSaveRaidCsReq)
-    CmdGetAllSaveRaidCsReq = 2239,
     // @@protoc_insertion_point(enum_value:CmdRaidType.CmdGetChallengeRaidInfoCsReq)
-    CmdGetChallengeRaidInfoCsReq = 2256,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdTakeChallengeRaidRewardCsReq)
-    CmdTakeChallengeRaidRewardCsReq = 2276,
+    CmdGetChallengeRaidInfoCsReq = 2206,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdRaidKickByServerScNotify)
+    CmdRaidKickByServerScNotify = 2225,
     // @@protoc_insertion_point(enum_value:CmdRaidType.CmdGetSaveRaidCsReq)
-    CmdGetSaveRaidCsReq = 2247,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdLeaveRaidScRsp)
-    CmdLeaveRaidScRsp = 2224,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdLeaveRaidCsReq)
-    CmdLeaveRaidCsReq = 2258,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdDelSaveRaidScNotify)
-    CmdDelSaveRaidScNotify = 2223,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdGetRaidInfoCsReq)
-    CmdGetRaidInfoCsReq = 2205,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdStartRaidCsReq)
-    CmdStartRaidCsReq = 2201,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdGetRaidInfoScRsp)
-    CmdGetRaidInfoScRsp = 2214,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdRaidInfoNotify)
-    CmdRaidInfoNotify = 2230,
+    CmdGetSaveRaidCsReq = 2273,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdTakeChallengeRaidRewardScRsp)
+    CmdTakeChallengeRaidRewardScRsp = 2226,
     // @@protoc_insertion_point(enum_value:CmdRaidType.CmdSetClientRaidTargetCountScRsp)
-    CmdSetClientRaidTargetCountScRsp = 2222,
+    CmdSetClientRaidTargetCountScRsp = 2250,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdLeaveRaidCsReq)
+    CmdLeaveRaidCsReq = 2247,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdGetRaidInfoCsReq)
+    CmdGetRaidInfoCsReq = 2295,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdStartRaidCsReq)
+    CmdStartRaidCsReq = 2211,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdSetClientRaidTargetCountCsReq)
+    CmdSetClientRaidTargetCountCsReq = 2236,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdGetRaidInfoScRsp)
+    CmdGetRaidInfoScRsp = 2218,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdDelSaveRaidScNotify)
+    CmdDelSaveRaidScNotify = 2257,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdStartRaidScRsp)
+    CmdStartRaidScRsp = 2213,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdGetAllSaveRaidCsReq)
+    CmdGetAllSaveRaidCsReq = 2291,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdTakeChallengeRaidRewardCsReq)
+    CmdTakeChallengeRaidRewardCsReq = 2289,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdRaidInfoNotify)
+    CmdRaidInfoNotify = 2235,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdGetSaveRaidScRsp)
+    CmdGetSaveRaidScRsp = 2277,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdLeaveRaidScRsp)
+    CmdLeaveRaidScRsp = 2209,
     // @@protoc_insertion_point(enum_value:CmdRaidType.CmdGetAllSaveRaidScRsp)
-    CmdGetAllSaveRaidScRsp = 2296,
+    CmdGetAllSaveRaidScRsp = 2293,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdGetChallengeRaidInfoScRsp)
+    CmdGetChallengeRaidInfoScRsp = 2270,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdChallengeRaidNotify)
+    CmdChallengeRaidNotify = 2230,
 }
 
 impl ::protobuf::Enum for CmdRaidType {
@@ -81,26 +81,26 @@ impl ::protobuf::Enum for CmdRaidType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdRaidType> {
         match value {
             0 => ::std::option::Option::Some(CmdRaidType::CmdRaidTypeNone),
-            2249 => ::std::option::Option::Some(CmdRaidType::CmdSetClientRaidTargetCountCsReq),
-            2297 => ::std::option::Option::Some(CmdRaidType::CmdGetChallengeRaidInfoScRsp),
-            2212 => ::std::option::Option::Some(CmdRaidType::CmdRaidKickByServerScNotify),
-            2268 => ::std::option::Option::Some(CmdRaidType::CmdStartRaidScRsp),
-            2211 => ::std::option::Option::Some(CmdRaidType::CmdChallengeRaidNotify),
-            2228 => ::std::option::Option::Some(CmdRaidType::CmdTakeChallengeRaidRewardScRsp),
-            2280 => ::std::option::Option::Some(CmdRaidType::CmdGetSaveRaidScRsp),
-            2239 => ::std::option::Option::Some(CmdRaidType::CmdGetAllSaveRaidCsReq),
-            2256 => ::std::option::Option::Some(CmdRaidType::CmdGetChallengeRaidInfoCsReq),
-            2276 => ::std::option::Option::Some(CmdRaidType::CmdTakeChallengeRaidRewardCsReq),
-            2247 => ::std::option::Option::Some(CmdRaidType::CmdGetSaveRaidCsReq),
-            2224 => ::std::option::Option::Some(CmdRaidType::CmdLeaveRaidScRsp),
-            2258 => ::std::option::Option::Some(CmdRaidType::CmdLeaveRaidCsReq),
-            2223 => ::std::option::Option::Some(CmdRaidType::CmdDelSaveRaidScNotify),
-            2205 => ::std::option::Option::Some(CmdRaidType::CmdGetRaidInfoCsReq),
-            2201 => ::std::option::Option::Some(CmdRaidType::CmdStartRaidCsReq),
-            2214 => ::std::option::Option::Some(CmdRaidType::CmdGetRaidInfoScRsp),
-            2230 => ::std::option::Option::Some(CmdRaidType::CmdRaidInfoNotify),
-            2222 => ::std::option::Option::Some(CmdRaidType::CmdSetClientRaidTargetCountScRsp),
-            2296 => ::std::option::Option::Some(CmdRaidType::CmdGetAllSaveRaidScRsp),
+            2206 => ::std::option::Option::Some(CmdRaidType::CmdGetChallengeRaidInfoCsReq),
+            2225 => ::std::option::Option::Some(CmdRaidType::CmdRaidKickByServerScNotify),
+            2273 => ::std::option::Option::Some(CmdRaidType::CmdGetSaveRaidCsReq),
+            2226 => ::std::option::Option::Some(CmdRaidType::CmdTakeChallengeRaidRewardScRsp),
+            2250 => ::std::option::Option::Some(CmdRaidType::CmdSetClientRaidTargetCountScRsp),
+            2247 => ::std::option::Option::Some(CmdRaidType::CmdLeaveRaidCsReq),
+            2295 => ::std::option::Option::Some(CmdRaidType::CmdGetRaidInfoCsReq),
+            2211 => ::std::option::Option::Some(CmdRaidType::CmdStartRaidCsReq),
+            2236 => ::std::option::Option::Some(CmdRaidType::CmdSetClientRaidTargetCountCsReq),
+            2218 => ::std::option::Option::Some(CmdRaidType::CmdGetRaidInfoScRsp),
+            2257 => ::std::option::Option::Some(CmdRaidType::CmdDelSaveRaidScNotify),
+            2213 => ::std::option::Option::Some(CmdRaidType::CmdStartRaidScRsp),
+            2291 => ::std::option::Option::Some(CmdRaidType::CmdGetAllSaveRaidCsReq),
+            2289 => ::std::option::Option::Some(CmdRaidType::CmdTakeChallengeRaidRewardCsReq),
+            2235 => ::std::option::Option::Some(CmdRaidType::CmdRaidInfoNotify),
+            2277 => ::std::option::Option::Some(CmdRaidType::CmdGetSaveRaidScRsp),
+            2209 => ::std::option::Option::Some(CmdRaidType::CmdLeaveRaidScRsp),
+            2293 => ::std::option::Option::Some(CmdRaidType::CmdGetAllSaveRaidScRsp),
+            2270 => ::std::option::Option::Some(CmdRaidType::CmdGetChallengeRaidInfoScRsp),
+            2230 => ::std::option::Option::Some(CmdRaidType::CmdChallengeRaidNotify),
             _ => ::std::option::Option::None
         }
     }
@@ -108,52 +108,52 @@ impl ::protobuf::Enum for CmdRaidType {
     fn from_str(str: &str) -> ::std::option::Option<CmdRaidType> {
         match str {
             "CmdRaidTypeNone" => ::std::option::Option::Some(CmdRaidType::CmdRaidTypeNone),
-            "CmdSetClientRaidTargetCountCsReq" => ::std::option::Option::Some(CmdRaidType::CmdSetClientRaidTargetCountCsReq),
-            "CmdGetChallengeRaidInfoScRsp" => ::std::option::Option::Some(CmdRaidType::CmdGetChallengeRaidInfoScRsp),
-            "CmdRaidKickByServerScNotify" => ::std::option::Option::Some(CmdRaidType::CmdRaidKickByServerScNotify),
-            "CmdStartRaidScRsp" => ::std::option::Option::Some(CmdRaidType::CmdStartRaidScRsp),
-            "CmdChallengeRaidNotify" => ::std::option::Option::Some(CmdRaidType::CmdChallengeRaidNotify),
-            "CmdTakeChallengeRaidRewardScRsp" => ::std::option::Option::Some(CmdRaidType::CmdTakeChallengeRaidRewardScRsp),
-            "CmdGetSaveRaidScRsp" => ::std::option::Option::Some(CmdRaidType::CmdGetSaveRaidScRsp),
-            "CmdGetAllSaveRaidCsReq" => ::std::option::Option::Some(CmdRaidType::CmdGetAllSaveRaidCsReq),
             "CmdGetChallengeRaidInfoCsReq" => ::std::option::Option::Some(CmdRaidType::CmdGetChallengeRaidInfoCsReq),
-            "CmdTakeChallengeRaidRewardCsReq" => ::std::option::Option::Some(CmdRaidType::CmdTakeChallengeRaidRewardCsReq),
+            "CmdRaidKickByServerScNotify" => ::std::option::Option::Some(CmdRaidType::CmdRaidKickByServerScNotify),
             "CmdGetSaveRaidCsReq" => ::std::option::Option::Some(CmdRaidType::CmdGetSaveRaidCsReq),
-            "CmdLeaveRaidScRsp" => ::std::option::Option::Some(CmdRaidType::CmdLeaveRaidScRsp),
+            "CmdTakeChallengeRaidRewardScRsp" => ::std::option::Option::Some(CmdRaidType::CmdTakeChallengeRaidRewardScRsp),
+            "CmdSetClientRaidTargetCountScRsp" => ::std::option::Option::Some(CmdRaidType::CmdSetClientRaidTargetCountScRsp),
             "CmdLeaveRaidCsReq" => ::std::option::Option::Some(CmdRaidType::CmdLeaveRaidCsReq),
-            "CmdDelSaveRaidScNotify" => ::std::option::Option::Some(CmdRaidType::CmdDelSaveRaidScNotify),
             "CmdGetRaidInfoCsReq" => ::std::option::Option::Some(CmdRaidType::CmdGetRaidInfoCsReq),
             "CmdStartRaidCsReq" => ::std::option::Option::Some(CmdRaidType::CmdStartRaidCsReq),
+            "CmdSetClientRaidTargetCountCsReq" => ::std::option::Option::Some(CmdRaidType::CmdSetClientRaidTargetCountCsReq),
             "CmdGetRaidInfoScRsp" => ::std::option::Option::Some(CmdRaidType::CmdGetRaidInfoScRsp),
+            "CmdDelSaveRaidScNotify" => ::std::option::Option::Some(CmdRaidType::CmdDelSaveRaidScNotify),
+            "CmdStartRaidScRsp" => ::std::option::Option::Some(CmdRaidType::CmdStartRaidScRsp),
+            "CmdGetAllSaveRaidCsReq" => ::std::option::Option::Some(CmdRaidType::CmdGetAllSaveRaidCsReq),
+            "CmdTakeChallengeRaidRewardCsReq" => ::std::option::Option::Some(CmdRaidType::CmdTakeChallengeRaidRewardCsReq),
             "CmdRaidInfoNotify" => ::std::option::Option::Some(CmdRaidType::CmdRaidInfoNotify),
-            "CmdSetClientRaidTargetCountScRsp" => ::std::option::Option::Some(CmdRaidType::CmdSetClientRaidTargetCountScRsp),
+            "CmdGetSaveRaidScRsp" => ::std::option::Option::Some(CmdRaidType::CmdGetSaveRaidScRsp),
+            "CmdLeaveRaidScRsp" => ::std::option::Option::Some(CmdRaidType::CmdLeaveRaidScRsp),
             "CmdGetAllSaveRaidScRsp" => ::std::option::Option::Some(CmdRaidType::CmdGetAllSaveRaidScRsp),
+            "CmdGetChallengeRaidInfoScRsp" => ::std::option::Option::Some(CmdRaidType::CmdGetChallengeRaidInfoScRsp),
+            "CmdChallengeRaidNotify" => ::std::option::Option::Some(CmdRaidType::CmdChallengeRaidNotify),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRaidType] = &[
         CmdRaidType::CmdRaidTypeNone,
-        CmdRaidType::CmdSetClientRaidTargetCountCsReq,
-        CmdRaidType::CmdGetChallengeRaidInfoScRsp,
-        CmdRaidType::CmdRaidKickByServerScNotify,
-        CmdRaidType::CmdStartRaidScRsp,
-        CmdRaidType::CmdChallengeRaidNotify,
-        CmdRaidType::CmdTakeChallengeRaidRewardScRsp,
-        CmdRaidType::CmdGetSaveRaidScRsp,
-        CmdRaidType::CmdGetAllSaveRaidCsReq,
         CmdRaidType::CmdGetChallengeRaidInfoCsReq,
-        CmdRaidType::CmdTakeChallengeRaidRewardCsReq,
+        CmdRaidType::CmdRaidKickByServerScNotify,
         CmdRaidType::CmdGetSaveRaidCsReq,
-        CmdRaidType::CmdLeaveRaidScRsp,
+        CmdRaidType::CmdTakeChallengeRaidRewardScRsp,
+        CmdRaidType::CmdSetClientRaidTargetCountScRsp,
         CmdRaidType::CmdLeaveRaidCsReq,
-        CmdRaidType::CmdDelSaveRaidScNotify,
         CmdRaidType::CmdGetRaidInfoCsReq,
         CmdRaidType::CmdStartRaidCsReq,
+        CmdRaidType::CmdSetClientRaidTargetCountCsReq,
         CmdRaidType::CmdGetRaidInfoScRsp,
+        CmdRaidType::CmdDelSaveRaidScNotify,
+        CmdRaidType::CmdStartRaidScRsp,
+        CmdRaidType::CmdGetAllSaveRaidCsReq,
+        CmdRaidType::CmdTakeChallengeRaidRewardCsReq,
         CmdRaidType::CmdRaidInfoNotify,
-        CmdRaidType::CmdSetClientRaidTargetCountScRsp,
+        CmdRaidType::CmdGetSaveRaidScRsp,
+        CmdRaidType::CmdLeaveRaidScRsp,
         CmdRaidType::CmdGetAllSaveRaidScRsp,
+        CmdRaidType::CmdGetChallengeRaidInfoScRsp,
+        CmdRaidType::CmdChallengeRaidNotify,
     ];
 }
 
@@ -166,26 +166,26 @@ impl ::protobuf::EnumFull for CmdRaidType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdRaidType::CmdRaidTypeNone => 0,
-            CmdRaidType::CmdSetClientRaidTargetCountCsReq => 1,
-            CmdRaidType::CmdGetChallengeRaidInfoScRsp => 2,
-            CmdRaidType::CmdRaidKickByServerScNotify => 3,
-            CmdRaidType::CmdStartRaidScRsp => 4,
-            CmdRaidType::CmdChallengeRaidNotify => 5,
-            CmdRaidType::CmdTakeChallengeRaidRewardScRsp => 6,
-            CmdRaidType::CmdGetSaveRaidScRsp => 7,
-            CmdRaidType::CmdGetAllSaveRaidCsReq => 8,
-            CmdRaidType::CmdGetChallengeRaidInfoCsReq => 9,
-            CmdRaidType::CmdTakeChallengeRaidRewardCsReq => 10,
-            CmdRaidType::CmdGetSaveRaidCsReq => 11,
-            CmdRaidType::CmdLeaveRaidScRsp => 12,
-            CmdRaidType::CmdLeaveRaidCsReq => 13,
-            CmdRaidType::CmdDelSaveRaidScNotify => 14,
-            CmdRaidType::CmdGetRaidInfoCsReq => 15,
-            CmdRaidType::CmdStartRaidCsReq => 16,
-            CmdRaidType::CmdGetRaidInfoScRsp => 17,
-            CmdRaidType::CmdRaidInfoNotify => 18,
-            CmdRaidType::CmdSetClientRaidTargetCountScRsp => 19,
-            CmdRaidType::CmdGetAllSaveRaidScRsp => 20,
+            CmdRaidType::CmdGetChallengeRaidInfoCsReq => 1,
+            CmdRaidType::CmdRaidKickByServerScNotify => 2,
+            CmdRaidType::CmdGetSaveRaidCsReq => 3,
+            CmdRaidType::CmdTakeChallengeRaidRewardScRsp => 4,
+            CmdRaidType::CmdSetClientRaidTargetCountScRsp => 5,
+            CmdRaidType::CmdLeaveRaidCsReq => 6,
+            CmdRaidType::CmdGetRaidInfoCsReq => 7,
+            CmdRaidType::CmdStartRaidCsReq => 8,
+            CmdRaidType::CmdSetClientRaidTargetCountCsReq => 9,
+            CmdRaidType::CmdGetRaidInfoScRsp => 10,
+            CmdRaidType::CmdDelSaveRaidScNotify => 11,
+            CmdRaidType::CmdStartRaidScRsp => 12,
+            CmdRaidType::CmdGetAllSaveRaidCsReq => 13,
+            CmdRaidType::CmdTakeChallengeRaidRewardCsReq => 14,
+            CmdRaidType::CmdRaidInfoNotify => 15,
+            CmdRaidType::CmdGetSaveRaidScRsp => 16,
+            CmdRaidType::CmdLeaveRaidScRsp => 17,
+            CmdRaidType::CmdGetAllSaveRaidScRsp => 18,
+            CmdRaidType::CmdGetChallengeRaidInfoScRsp => 19,
+            CmdRaidType::CmdChallengeRaidNotify => 20,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -205,20 +205,20 @@ impl CmdRaidType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CmdRaidType.proto*\xf8\x04\n\x0bCmdRaidType\x12\x13\n\x0fCmdRaidTy\
-    peNone\x10\0\x12%\n\x20CmdSetClientRaidTargetCountCsReq\x10\xc9\x11\x12!\
-    \n\x1cCmdGetChallengeRaidInfoScRsp\x10\xf9\x11\x12\x20\n\x1bCmdRaidKickB\
-    yServerScNotify\x10\xa4\x11\x12\x16\n\x11CmdStartRaidScRsp\x10\xdc\x11\
-    \x12\x1b\n\x16CmdChallengeRaidNotify\x10\xa3\x11\x12$\n\x1fCmdTakeChalle\
-    ngeRaidRewardScRsp\x10\xb4\x11\x12\x18\n\x13CmdGetSaveRaidScRsp\x10\xe8\
-    \x11\x12\x1b\n\x16CmdGetAllSaveRaidCsReq\x10\xbf\x11\x12!\n\x1cCmdGetCha\
-    llengeRaidInfoCsReq\x10\xd0\x11\x12$\n\x1fCmdTakeChallengeRaidRewardCsRe\
-    q\x10\xe4\x11\x12\x18\n\x13CmdGetSaveRaidCsReq\x10\xc7\x11\x12\x16\n\x11\
-    CmdLeaveRaidScRsp\x10\xb0\x11\x12\x16\n\x11CmdLeaveRaidCsReq\x10\xd2\x11\
-    \x12\x1b\n\x16CmdDelSaveRaidScNotify\x10\xaf\x11\x12\x18\n\x13CmdGetRaid\
-    InfoCsReq\x10\x9d\x11\x12\x16\n\x11CmdStartRaidCsReq\x10\x99\x11\x12\x18\
-    \n\x13CmdGetRaidInfoScRsp\x10\xa6\x11\x12\x16\n\x11CmdRaidInfoNotify\x10\
-    \xb6\x11\x12%\n\x20CmdSetClientRaidTargetCountScRsp\x10\xae\x11\x12\x1b\
-    \n\x16CmdGetAllSaveRaidScRsp\x10\xf8\x11b\x06proto3\
+    peNone\x10\0\x12!\n\x1cCmdGetChallengeRaidInfoCsReq\x10\x9e\x11\x12\x20\
+    \n\x1bCmdRaidKickByServerScNotify\x10\xb1\x11\x12\x18\n\x13CmdGetSaveRai\
+    dCsReq\x10\xe1\x11\x12$\n\x1fCmdTakeChallengeRaidRewardScRsp\x10\xb2\x11\
+    \x12%\n\x20CmdSetClientRaidTargetCountScRsp\x10\xca\x11\x12\x16\n\x11Cmd\
+    LeaveRaidCsReq\x10\xc7\x11\x12\x18\n\x13CmdGetRaidInfoCsReq\x10\xf7\x11\
+    \x12\x16\n\x11CmdStartRaidCsReq\x10\xa3\x11\x12%\n\x20CmdSetClientRaidTa\
+    rgetCountCsReq\x10\xbc\x11\x12\x18\n\x13CmdGetRaidInfoScRsp\x10\xaa\x11\
+    \x12\x1b\n\x16CmdDelSaveRaidScNotify\x10\xd1\x11\x12\x16\n\x11CmdStartRa\
+    idScRsp\x10\xa5\x11\x12\x1b\n\x16CmdGetAllSaveRaidCsReq\x10\xf3\x11\x12$\
+    \n\x1fCmdTakeChallengeRaidRewardCsReq\x10\xf1\x11\x12\x16\n\x11CmdRaidIn\
+    foNotify\x10\xbb\x11\x12\x18\n\x13CmdGetSaveRaidScRsp\x10\xe5\x11\x12\
+    \x16\n\x11CmdLeaveRaidScRsp\x10\xa1\x11\x12\x1b\n\x16CmdGetAllSaveRaidSc\
+    Rsp\x10\xf5\x11\x12!\n\x1cCmdGetChallengeRaidInfoScRsp\x10\xde\x11\x12\
+    \x1b\n\x16CmdChallengeRaidNotify\x10\xb6\x11b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

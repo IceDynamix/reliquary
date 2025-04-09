@@ -30,10 +30,10 @@ pub struct GLIJKLOOAPA {
     // message fields
     // @@protoc_insertion_point(field:GLIJKLOOAPA.ANCPCPCLJED)
     pub ANCPCPCLJED: ::protobuf::MessageField<super::HDCKCHPDMMI::HDCKCHPDMMI>,
-    // @@protoc_insertion_point(field:GLIJKLOOAPA.ECFAGNKDAEF)
-    pub ECFAGNKDAEF: u32,
     // @@protoc_insertion_point(field:GLIJKLOOAPA.EHIADPGAPJP)
     pub EHIADPGAPJP: u32,
+    // @@protoc_insertion_point(field:GLIJKLOOAPA.ECFAGNKDAEF)
+    pub ECFAGNKDAEF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GLIJKLOOAPA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl GLIJKLOOAPA {
             |m: &mut GLIJKLOOAPA| { &mut m.ANCPCPCLJED },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ECFAGNKDAEF",
-            |m: &GLIJKLOOAPA| { &m.ECFAGNKDAEF },
-            |m: &mut GLIJKLOOAPA| { &mut m.ECFAGNKDAEF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EHIADPGAPJP",
             |m: &GLIJKLOOAPA| { &m.EHIADPGAPJP },
             |m: &mut GLIJKLOOAPA| { &mut m.EHIADPGAPJP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ECFAGNKDAEF",
+            |m: &GLIJKLOOAPA| { &m.ECFAGNKDAEF },
+            |m: &mut GLIJKLOOAPA| { &mut m.ECFAGNKDAEF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GLIJKLOOAPA>(
             "GLIJKLOOAPA",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GLIJKLOOAPA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.ANCPCPCLJED)?;
                 },
-                64 => {
-                    self.ECFAGNKDAEF = is.read_uint32()?;
-                },
-                56 => {
+                96 => {
                     self.EHIADPGAPJP = is.read_uint32()?;
+                },
+                104 => {
+                    self.ECFAGNKDAEF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,11 +111,11 @@ impl ::protobuf::Message for GLIJKLOOAPA {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.ECFAGNKDAEF != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.ECFAGNKDAEF);
-        }
         if self.EHIADPGAPJP != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.EHIADPGAPJP);
+            my_size += ::protobuf::rt::uint32_size(12, self.EHIADPGAPJP);
+        }
+        if self.ECFAGNKDAEF != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.ECFAGNKDAEF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for GLIJKLOOAPA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.ANCPCPCLJED.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        }
-        if self.ECFAGNKDAEF != 0 {
-            os.write_uint32(8, self.ECFAGNKDAEF)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.EHIADPGAPJP != 0 {
-            os.write_uint32(7, self.EHIADPGAPJP)?;
+            os.write_uint32(12, self.EHIADPGAPJP)?;
+        }
+        if self.ECFAGNKDAEF != 0 {
+            os.write_uint32(13, self.ECFAGNKDAEF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for GLIJKLOOAPA {
 
     fn clear(&mut self) {
         self.ANCPCPCLJED.clear();
-        self.ECFAGNKDAEF = 0;
         self.EHIADPGAPJP = 0;
+        self.ECFAGNKDAEF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GLIJKLOOAPA {
         static instance: GLIJKLOOAPA = GLIJKLOOAPA {
             ANCPCPCLJED: ::protobuf::MessageField::none(),
-            ECFAGNKDAEF: 0,
             EHIADPGAPJP: 0,
+            ECFAGNKDAEF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for GLIJKLOOAPA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GLIJKLOOAPA.proto\x1a\x11HDCKCHPDMMI.proto\"\x81\x01\n\x0bGLIJKLOO\
-    APA\x12.\n\x0bANCPCPCLJED\x18\x0b\x20\x01(\x0b2\x0c.HDCKCHPDMMIR\x0bANCP\
-    CPCLJED\x12\x20\n\x0bECFAGNKDAEF\x18\x08\x20\x01(\rR\x0bECFAGNKDAEF\x12\
-    \x20\n\x0bEHIADPGAPJP\x18\x07\x20\x01(\rR\x0bEHIADPGAPJPb\x06proto3\
+    APA\x12.\n\x0bANCPCPCLJED\x18\t\x20\x01(\x0b2\x0c.HDCKCHPDMMIR\x0bANCPCP\
+    CLJED\x12\x20\n\x0bEHIADPGAPJP\x18\x0c\x20\x01(\rR\x0bEHIADPGAPJP\x12\
+    \x20\n\x0bECFAGNKDAEF\x18\r\x20\x01(\rR\x0bECFAGNKDAEFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

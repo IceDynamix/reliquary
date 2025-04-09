@@ -86,13 +86,13 @@ impl ::protobuf::Message for LADHIKPAJCJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                120 => {
                     self.ICJABPGMACJ = is.read_int32()?;
                 },
-                26 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BOHDMINEJNO)?;
                 },
-                56 => {
+                80 => {
                     self.AMNBMJOFJOO = is.read_uint32()?;
                 },
                 tag => {
@@ -108,14 +108,14 @@ impl ::protobuf::Message for LADHIKPAJCJ {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.ICJABPGMACJ != 0 {
-            my_size += ::protobuf::rt::int32_size(5, self.ICJABPGMACJ);
+            my_size += ::protobuf::rt::int32_size(15, self.ICJABPGMACJ);
         }
         if let Some(v) = self.BOHDMINEJNO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.AMNBMJOFJOO != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.AMNBMJOFJOO);
+            my_size += ::protobuf::rt::uint32_size(10, self.AMNBMJOFJOO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for LADHIKPAJCJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.ICJABPGMACJ != 0 {
-            os.write_int32(5, self.ICJABPGMACJ)?;
+            os.write_int32(15, self.ICJABPGMACJ)?;
         }
         if let Some(v) = self.BOHDMINEJNO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         if self.AMNBMJOFJOO != 0 {
-            os.write_uint32(7, self.AMNBMJOFJOO)?;
+            os.write_uint32(10, self.AMNBMJOFJOO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for LADHIKPAJCJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LADHIKPAJCJ.proto\x1a\x11EENDHPKPFLP.proto\"\x81\x01\n\x0bLADHIKPA\
-    JCJ\x12\x20\n\x0bICJABPGMACJ\x18\x05\x20\x01(\x05R\x0bICJABPGMACJ\x12.\n\
-    \x0bBOHDMINEJNO\x18\x03\x20\x01(\x0b2\x0c.EENDHPKPFLPR\x0bBOHDMINEJNO\
-    \x12\x20\n\x0bAMNBMJOFJOO\x18\x07\x20\x01(\rR\x0bAMNBMJOFJOOb\x06proto3\
+    JCJ\x12\x20\n\x0bICJABPGMACJ\x18\x0f\x20\x01(\x05R\x0bICJABPGMACJ\x12.\n\
+    \x0bBOHDMINEJNO\x18\x08\x20\x01(\x0b2\x0c.EENDHPKPFLPR\x0bBOHDMINEJNO\
+    \x12\x20\n\x0bAMNBMJOFJOO\x18\n\x20\x01(\rR\x0bAMNBMJOFJOOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

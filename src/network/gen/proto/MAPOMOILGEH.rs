@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MAPOMOILGEH {
     // message fields
-    // @@protoc_insertion_point(field:MAPOMOILGEH.BDCFFOBGKOA)
-    pub BDCFFOBGKOA: u32,
-    // @@protoc_insertion_point(field:MAPOMOILGEH.GEDJNIAEFHO)
-    pub GEDJNIAEFHO: u32,
     // @@protoc_insertion_point(field:MAPOMOILGEH.MBKFININNEK)
     pub MBKFININNEK: u32,
+    // @@protoc_insertion_point(field:MAPOMOILGEH.GEDJNIAEFHO)
+    pub GEDJNIAEFHO: u32,
+    // @@protoc_insertion_point(field:MAPOMOILGEH.BDCFFOBGKOA)
+    pub BDCFFOBGKOA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MAPOMOILGEH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl MAPOMOILGEH {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BDCFFOBGKOA",
-            |m: &MAPOMOILGEH| { &m.BDCFFOBGKOA },
-            |m: &mut MAPOMOILGEH| { &mut m.BDCFFOBGKOA },
+            "MBKFININNEK",
+            |m: &MAPOMOILGEH| { &m.MBKFININNEK },
+            |m: &mut MAPOMOILGEH| { &mut m.MBKFININNEK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GEDJNIAEFHO",
@@ -64,9 +64,9 @@ impl MAPOMOILGEH {
             |m: &mut MAPOMOILGEH| { &mut m.GEDJNIAEFHO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MBKFININNEK",
-            |m: &MAPOMOILGEH| { &m.MBKFININNEK },
-            |m: &mut MAPOMOILGEH| { &mut m.MBKFININNEK },
+            "BDCFFOBGKOA",
+            |m: &MAPOMOILGEH| { &m.BDCFFOBGKOA },
+            |m: &mut MAPOMOILGEH| { &mut m.BDCFFOBGKOA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MAPOMOILGEH>(
             "MAPOMOILGEH",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for MAPOMOILGEH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.BDCFFOBGKOA = is.read_uint32()?;
+                112 => {
+                    self.MBKFININNEK = is.read_uint32()?;
                 },
-                72 => {
+                24 => {
                     self.GEDJNIAEFHO = is.read_uint32()?;
                 },
-                88 => {
-                    self.MBKFININNEK = is.read_uint32()?;
+                120 => {
+                    self.BDCFFOBGKOA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for MAPOMOILGEH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BDCFFOBGKOA != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.BDCFFOBGKOA);
+        if self.MBKFININNEK != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.MBKFININNEK);
         }
         if self.GEDJNIAEFHO != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.GEDJNIAEFHO);
+            my_size += ::protobuf::rt::uint32_size(3, self.GEDJNIAEFHO);
         }
-        if self.MBKFININNEK != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.MBKFININNEK);
+        if self.BDCFFOBGKOA != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.BDCFFOBGKOA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for MAPOMOILGEH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BDCFFOBGKOA != 0 {
-            os.write_uint32(15, self.BDCFFOBGKOA)?;
+        if self.MBKFININNEK != 0 {
+            os.write_uint32(14, self.MBKFININNEK)?;
         }
         if self.GEDJNIAEFHO != 0 {
-            os.write_uint32(9, self.GEDJNIAEFHO)?;
+            os.write_uint32(3, self.GEDJNIAEFHO)?;
         }
-        if self.MBKFININNEK != 0 {
-            os.write_uint32(11, self.MBKFININNEK)?;
+        if self.BDCFFOBGKOA != 0 {
+            os.write_uint32(15, self.BDCFFOBGKOA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for MAPOMOILGEH {
     }
 
     fn clear(&mut self) {
-        self.BDCFFOBGKOA = 0;
-        self.GEDJNIAEFHO = 0;
         self.MBKFININNEK = 0;
+        self.GEDJNIAEFHO = 0;
+        self.BDCFFOBGKOA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MAPOMOILGEH {
         static instance: MAPOMOILGEH = MAPOMOILGEH {
-            BDCFFOBGKOA: 0,
-            GEDJNIAEFHO: 0,
             MBKFININNEK: 0,
+            GEDJNIAEFHO: 0,
+            BDCFFOBGKOA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for MAPOMOILGEH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MAPOMOILGEH.proto\"s\n\x0bMAPOMOILGEH\x12\x20\n\x0bBDCFFOBGKOA\x18\
-    \x0f\x20\x01(\rR\x0bBDCFFOBGKOA\x12\x20\n\x0bGEDJNIAEFHO\x18\t\x20\x01(\
-    \rR\x0bGEDJNIAEFHO\x12\x20\n\x0bMBKFININNEK\x18\x0b\x20\x01(\rR\x0bMBKFI\
-    NINNEKb\x06proto3\
+    \n\x11MAPOMOILGEH.proto\"s\n\x0bMAPOMOILGEH\x12\x20\n\x0bMBKFININNEK\x18\
+    \x0e\x20\x01(\rR\x0bMBKFININNEK\x12\x20\n\x0bGEDJNIAEFHO\x18\x03\x20\x01\
+    (\rR\x0bGEDJNIAEFHO\x12\x20\n\x0bBDCFFOBGKOA\x18\x0f\x20\x01(\rR\x0bBDCF\
+    FOBGKOAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ACCBIGFANOA {
     // message fields
-    // @@protoc_insertion_point(field:ACCBIGFANOA.PNEOOLFLNLK)
-    pub PNEOOLFLNLK: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ACCBIGFANOA.HPLKCINAPMF)
-    pub HPLKCINAPMF: u32,
     // @@protoc_insertion_point(field:ACCBIGFANOA.BJKHPADCLHI)
     pub BJKHPADCLHI: u32,
+    // @@protoc_insertion_point(field:ACCBIGFANOA.HPLKCINAPMF)
+    pub HPLKCINAPMF: u32,
+    // @@protoc_insertion_point(field:ACCBIGFANOA.PNEOOLFLNLK)
+    pub PNEOOLFLNLK: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:ACCBIGFANOA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl ACCBIGFANOA {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PNEOOLFLNLK",
-            |m: &ACCBIGFANOA| { &m.PNEOOLFLNLK },
-            |m: &mut ACCBIGFANOA| { &mut m.PNEOOLFLNLK },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BJKHPADCLHI",
+            |m: &ACCBIGFANOA| { &m.BJKHPADCLHI },
+            |m: &mut ACCBIGFANOA| { &mut m.BJKHPADCLHI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HPLKCINAPMF",
             |m: &ACCBIGFANOA| { &m.HPLKCINAPMF },
             |m: &mut ACCBIGFANOA| { &mut m.HPLKCINAPMF },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BJKHPADCLHI",
-            |m: &ACCBIGFANOA| { &m.BJKHPADCLHI },
-            |m: &mut ACCBIGFANOA| { &mut m.BJKHPADCLHI },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PNEOOLFLNLK",
+            |m: &ACCBIGFANOA| { &m.PNEOOLFLNLK },
+            |m: &mut ACCBIGFANOA| { &mut m.PNEOOLFLNLK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ACCBIGFANOA>(
             "ACCBIGFANOA",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for ACCBIGFANOA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.PNEOOLFLNLK)?;
+                64 => {
+                    self.BJKHPADCLHI = is.read_uint32()?;
                 },
-                8 => {
-                    self.PNEOOLFLNLK.push(is.read_uint32()?);
-                },
-                24 => {
+                16 => {
                     self.HPLKCINAPMF = is.read_uint32()?;
                 },
-                32 => {
-                    self.BJKHPADCLHI = is.read_uint32()?;
+                114 => {
+                    is.read_repeated_packed_uint32_into(&mut self.PNEOOLFLNLK)?;
+                },
+                112 => {
+                    self.PNEOOLFLNLK.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,26 +110,26 @@ impl ::protobuf::Message for ACCBIGFANOA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.PNEOOLFLNLK);
-        if self.HPLKCINAPMF != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.HPLKCINAPMF);
-        }
         if self.BJKHPADCLHI != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.BJKHPADCLHI);
+            my_size += ::protobuf::rt::uint32_size(8, self.BJKHPADCLHI);
         }
+        if self.HPLKCINAPMF != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.HPLKCINAPMF);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.PNEOOLFLNLK);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.PNEOOLFLNLK)?;
-        if self.HPLKCINAPMF != 0 {
-            os.write_uint32(3, self.HPLKCINAPMF)?;
-        }
         if self.BJKHPADCLHI != 0 {
-            os.write_uint32(4, self.BJKHPADCLHI)?;
+            os.write_uint32(8, self.BJKHPADCLHI)?;
         }
+        if self.HPLKCINAPMF != 0 {
+            os.write_uint32(2, self.HPLKCINAPMF)?;
+        }
+        os.write_repeated_packed_uint32(14, &self.PNEOOLFLNLK)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,17 +147,17 @@ impl ::protobuf::Message for ACCBIGFANOA {
     }
 
     fn clear(&mut self) {
-        self.PNEOOLFLNLK.clear();
-        self.HPLKCINAPMF = 0;
         self.BJKHPADCLHI = 0;
+        self.HPLKCINAPMF = 0;
+        self.PNEOOLFLNLK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ACCBIGFANOA {
         static instance: ACCBIGFANOA = ACCBIGFANOA {
-            PNEOOLFLNLK: ::std::vec::Vec::new(),
-            HPLKCINAPMF: 0,
             BJKHPADCLHI: 0,
+            HPLKCINAPMF: 0,
+            PNEOOLFLNLK: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -182,10 +182,10 @@ impl ::protobuf::reflect::ProtobufValue for ACCBIGFANOA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ACCBIGFANOA.proto\"s\n\x0bACCBIGFANOA\x12\x20\n\x0bPNEOOLFLNLK\x18\
-    \x01\x20\x03(\rR\x0bPNEOOLFLNLK\x12\x20\n\x0bHPLKCINAPMF\x18\x03\x20\x01\
-    (\rR\x0bHPLKCINAPMF\x12\x20\n\x0bBJKHPADCLHI\x18\x04\x20\x01(\rR\x0bBJKH\
-    PADCLHIb\x06proto3\
+    \n\x11ACCBIGFANOA.proto\"s\n\x0bACCBIGFANOA\x12\x20\n\x0bBJKHPADCLHI\x18\
+    \x08\x20\x01(\rR\x0bBJKHPADCLHI\x12\x20\n\x0bHPLKCINAPMF\x18\x02\x20\x01\
+    (\rR\x0bHPLKCINAPMF\x12\x20\n\x0bPNEOOLFLNLK\x18\x0e\x20\x03(\rR\x0bPNEO\
+    OLFLNLKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

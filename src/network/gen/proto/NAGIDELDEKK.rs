@@ -45,7 +45,7 @@ impl NAGIDELDEKK {
         ::std::default::Default::default()
     }
 
-    // .ACHOPAOFIGL LODDNCNPANO = 14;
+    // .ACHOPAOFIGL LODDNCNPANO = 3;
 
     pub fn LODDNCNPANO(&self) -> &super::ACHOPAOFIGL::ACHOPAOFIGL {
         match self.KFELKJLDKEH {
@@ -94,7 +94,7 @@ impl NAGIDELDEKK {
         }
     }
 
-    // .KKFKKPPLDAI JKJOPMEFCBO = 12;
+    // .KKFKKPPLDAI JKJOPMEFCBO = 11;
 
     pub fn JKJOPMEFCBO(&self) -> &super::KKFKKPPLDAI::KKFKKPPLDAI {
         match self.KFELKJLDKEH {
@@ -143,7 +143,7 @@ impl NAGIDELDEKK {
         }
     }
 
-    // .CLFACBCGIFL PNBJJBJNMGL = 6;
+    // .CLFACBCGIFL PNBJJBJNMGL = 10;
 
     pub fn PNBJJBJNMGL(&self) -> &super::CLFACBCGIFL::CLFACBCGIFL {
         match self.KFELKJLDKEH {
@@ -235,13 +235,13 @@ impl ::protobuf::Message for NAGIDELDEKK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                26 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(nagideldekk::KFELKJLDKEH::LODDNCNPANO(is.read_message()?));
                 },
-                98 => {
+                90 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(nagideldekk::KFELKJLDKEH::JKJOPMEFCBO(is.read_message()?));
                 },
-                50 => {
+                82 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(nagideldekk::KFELKJLDKEH::PNBJJBJNMGL(is.read_message()?));
                 },
                 tag => {
@@ -281,13 +281,13 @@ impl ::protobuf::Message for NAGIDELDEKK {
         if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
             match v {
                 &nagideldekk::KFELKJLDKEH::LODDNCNPANO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
                 },
                 &nagideldekk::KFELKJLDKEH::JKJOPMEFCBO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
                 &nagideldekk::KFELKJLDKEH::PNBJJBJNMGL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
             };
         }
@@ -375,10 +375,10 @@ pub mod nagideldekk {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NAGIDELDEKK.proto\x1a\x11ACHOPAOFIGL.proto\x1a\x11CLFACBCGIFL.prot\
     o\x1a\x11KKFKKPPLDAI.proto\"\xb2\x01\n\x0bNAGIDELDEKK\x120\n\x0bLODDNCNP\
-    ANO\x18\x0e\x20\x01(\x0b2\x0c.ACHOPAOFIGLH\0R\x0bLODDNCNPANO\x120\n\x0bJ\
-    KJOPMEFCBO\x18\x0c\x20\x01(\x0b2\x0c.KKFKKPPLDAIH\0R\x0bJKJOPMEFCBO\x120\
-    \n\x0bPNBJJBJNMGL\x18\x06\x20\x01(\x0b2\x0c.CLFACBCGIFLH\0R\x0bPNBJJBJNM\
-    GLB\r\n\x0bKFELKJLDKEHb\x06proto3\
+    ANO\x18\x03\x20\x01(\x0b2\x0c.ACHOPAOFIGLH\0R\x0bLODDNCNPANO\x120\n\x0bJ\
+    KJOPMEFCBO\x18\x0b\x20\x01(\x0b2\x0c.KKFKKPPLDAIH\0R\x0bJKJOPMEFCBO\x120\
+    \n\x0bPNBJJBJNMGL\x18\n\x20\x01(\x0b2\x0c.CLFACBCGIFLH\0R\x0bPNBJJBJNMGL\
+    B\r\n\x0bKFELKJLDKEHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

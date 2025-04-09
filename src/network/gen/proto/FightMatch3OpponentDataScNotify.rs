@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightMatch3OpponentDataScNotify {
     // message fields
-    // @@protoc_insertion_point(field:FightMatch3OpponentDataScNotify.KJDOLBOBKJF)
-    pub KJDOLBOBKJF: ::protobuf::EnumOrUnknown<super::NPPNFPPENMC::NPPNFPPENMC>,
     // @@protoc_insertion_point(field:FightMatch3OpponentDataScNotify.FBNHDEFNECI)
     pub FBNHDEFNECI: u32,
-    // @@protoc_insertion_point(field:FightMatch3OpponentDataScNotify.DNPHCJEBIKB)
-    pub DNPHCJEBIKB: u32,
-    // @@protoc_insertion_point(field:FightMatch3OpponentDataScNotify.NMLFFOGBPOC)
-    pub NMLFFOGBPOC: u32,
     // @@protoc_insertion_point(field:FightMatch3OpponentDataScNotify.DANCCAOJLJN)
     pub DANCCAOJLJN: u32,
+    // @@protoc_insertion_point(field:FightMatch3OpponentDataScNotify.DNPHCJEBIKB)
+    pub DNPHCJEBIKB: u32,
+    // @@protoc_insertion_point(field:FightMatch3OpponentDataScNotify.KJDOLBOBKJF)
+    pub KJDOLBOBKJF: ::protobuf::EnumOrUnknown<super::NPPNFPPENMC::NPPNFPPENMC>,
+    // @@protoc_insertion_point(field:FightMatch3OpponentDataScNotify.NMLFFOGBPOC)
+    pub NMLFFOGBPOC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FightMatch3OpponentDataScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,14 +58,14 @@ impl FightMatch3OpponentDataScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KJDOLBOBKJF",
-            |m: &FightMatch3OpponentDataScNotify| { &m.KJDOLBOBKJF },
-            |m: &mut FightMatch3OpponentDataScNotify| { &mut m.KJDOLBOBKJF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FBNHDEFNECI",
             |m: &FightMatch3OpponentDataScNotify| { &m.FBNHDEFNECI },
             |m: &mut FightMatch3OpponentDataScNotify| { &mut m.FBNHDEFNECI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DANCCAOJLJN",
+            |m: &FightMatch3OpponentDataScNotify| { &m.DANCCAOJLJN },
+            |m: &mut FightMatch3OpponentDataScNotify| { &mut m.DANCCAOJLJN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DNPHCJEBIKB",
@@ -73,14 +73,14 @@ impl FightMatch3OpponentDataScNotify {
             |m: &mut FightMatch3OpponentDataScNotify| { &mut m.DNPHCJEBIKB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KJDOLBOBKJF",
+            |m: &FightMatch3OpponentDataScNotify| { &m.KJDOLBOBKJF },
+            |m: &mut FightMatch3OpponentDataScNotify| { &mut m.KJDOLBOBKJF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NMLFFOGBPOC",
             |m: &FightMatch3OpponentDataScNotify| { &m.NMLFFOGBPOC },
             |m: &mut FightMatch3OpponentDataScNotify| { &mut m.NMLFFOGBPOC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DANCCAOJLJN",
-            |m: &FightMatch3OpponentDataScNotify| { &m.DANCCAOJLJN },
-            |m: &mut FightMatch3OpponentDataScNotify| { &mut m.DANCCAOJLJN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightMatch3OpponentDataScNotify>(
             "FightMatch3OpponentDataScNotify",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for FightMatch3OpponentDataScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.KJDOLBOBKJF = is.read_enum_or_unknown()?;
-                },
-                48 => {
+                72 => {
                     self.FBNHDEFNECI = is.read_uint32()?;
                 },
                 56 => {
+                    self.DANCCAOJLJN = is.read_uint32()?;
+                },
+                40 => {
                     self.DNPHCJEBIKB = is.read_uint32()?;
                 },
-                80 => {
-                    self.NMLFFOGBPOC = is.read_uint32()?;
-                },
                 24 => {
-                    self.DANCCAOJLJN = is.read_uint32()?;
+                    self.KJDOLBOBKJF = is.read_enum_or_unknown()?;
+                },
+                8 => {
+                    self.NMLFFOGBPOC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for FightMatch3OpponentDataScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KJDOLBOBKJF != ::protobuf::EnumOrUnknown::new(super::NPPNFPPENMC::NPPNFPPENMC::MATCH3_PLAYER_STATE_ALIVE) {
-            my_size += ::protobuf::rt::int32_size(14, self.KJDOLBOBKJF.value());
-        }
         if self.FBNHDEFNECI != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.FBNHDEFNECI);
-        }
-        if self.DNPHCJEBIKB != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.DNPHCJEBIKB);
-        }
-        if self.NMLFFOGBPOC != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.NMLFFOGBPOC);
+            my_size += ::protobuf::rt::uint32_size(9, self.FBNHDEFNECI);
         }
         if self.DANCCAOJLJN != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.DANCCAOJLJN);
+            my_size += ::protobuf::rt::uint32_size(7, self.DANCCAOJLJN);
+        }
+        if self.DNPHCJEBIKB != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.DNPHCJEBIKB);
+        }
+        if self.KJDOLBOBKJF != ::protobuf::EnumOrUnknown::new(super::NPPNFPPENMC::NPPNFPPENMC::MATCH3_PLAYER_STATE_ALIVE) {
+            my_size += ::protobuf::rt::int32_size(3, self.KJDOLBOBKJF.value());
+        }
+        if self.NMLFFOGBPOC != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.NMLFFOGBPOC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for FightMatch3OpponentDataScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KJDOLBOBKJF != ::protobuf::EnumOrUnknown::new(super::NPPNFPPENMC::NPPNFPPENMC::MATCH3_PLAYER_STATE_ALIVE) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.KJDOLBOBKJF))?;
-        }
         if self.FBNHDEFNECI != 0 {
-            os.write_uint32(6, self.FBNHDEFNECI)?;
-        }
-        if self.DNPHCJEBIKB != 0 {
-            os.write_uint32(7, self.DNPHCJEBIKB)?;
-        }
-        if self.NMLFFOGBPOC != 0 {
-            os.write_uint32(10, self.NMLFFOGBPOC)?;
+            os.write_uint32(9, self.FBNHDEFNECI)?;
         }
         if self.DANCCAOJLJN != 0 {
-            os.write_uint32(3, self.DANCCAOJLJN)?;
+            os.write_uint32(7, self.DANCCAOJLJN)?;
+        }
+        if self.DNPHCJEBIKB != 0 {
+            os.write_uint32(5, self.DNPHCJEBIKB)?;
+        }
+        if self.KJDOLBOBKJF != ::protobuf::EnumOrUnknown::new(super::NPPNFPPENMC::NPPNFPPENMC::MATCH3_PLAYER_STATE_ALIVE) {
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.KJDOLBOBKJF))?;
+        }
+        if self.NMLFFOGBPOC != 0 {
+            os.write_uint32(1, self.NMLFFOGBPOC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for FightMatch3OpponentDataScNotify {
     }
 
     fn clear(&mut self) {
-        self.KJDOLBOBKJF = ::protobuf::EnumOrUnknown::new(super::NPPNFPPENMC::NPPNFPPENMC::MATCH3_PLAYER_STATE_ALIVE);
         self.FBNHDEFNECI = 0;
-        self.DNPHCJEBIKB = 0;
-        self.NMLFFOGBPOC = 0;
         self.DANCCAOJLJN = 0;
+        self.DNPHCJEBIKB = 0;
+        self.KJDOLBOBKJF = ::protobuf::EnumOrUnknown::new(super::NPPNFPPENMC::NPPNFPPENMC::MATCH3_PLAYER_STATE_ALIVE);
+        self.NMLFFOGBPOC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightMatch3OpponentDataScNotify {
         static instance: FightMatch3OpponentDataScNotify = FightMatch3OpponentDataScNotify {
-            KJDOLBOBKJF: ::protobuf::EnumOrUnknown::from_i32(0),
             FBNHDEFNECI: 0,
-            DNPHCJEBIKB: 0,
-            NMLFFOGBPOC: 0,
             DANCCAOJLJN: 0,
+            DNPHCJEBIKB: 0,
+            KJDOLBOBKJF: ::protobuf::EnumOrUnknown::from_i32(0),
+            NMLFFOGBPOC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,12 +220,12 @@ impl ::protobuf::reflect::ProtobufValue for FightMatch3OpponentDataScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%FightMatch3OpponentDataScNotify.proto\x1a\x11NPPNFPPENMC.proto\"\xd9\
-    \x01\n\x1fFightMatch3OpponentDataScNotify\x12.\n\x0bKJDOLBOBKJF\x18\x0e\
-    \x20\x01(\x0e2\x0c.NPPNFPPENMCR\x0bKJDOLBOBKJF\x12\x20\n\x0bFBNHDEFNECI\
-    \x18\x06\x20\x01(\rR\x0bFBNHDEFNECI\x12\x20\n\x0bDNPHCJEBIKB\x18\x07\x20\
-    \x01(\rR\x0bDNPHCJEBIKB\x12\x20\n\x0bNMLFFOGBPOC\x18\n\x20\x01(\rR\x0bNM\
-    LFFOGBPOC\x12\x20\n\x0bDANCCAOJLJN\x18\x03\x20\x01(\rR\x0bDANCCAOJLJNb\
-    \x06proto3\
+    \x01\n\x1fFightMatch3OpponentDataScNotify\x12\x20\n\x0bFBNHDEFNECI\x18\t\
+    \x20\x01(\rR\x0bFBNHDEFNECI\x12\x20\n\x0bDANCCAOJLJN\x18\x07\x20\x01(\rR\
+    \x0bDANCCAOJLJN\x12\x20\n\x0bDNPHCJEBIKB\x18\x05\x20\x01(\rR\x0bDNPHCJEB\
+    IKB\x12.\n\x0bKJDOLBOBKJF\x18\x03\x20\x01(\x0e2\x0c.NPPNFPPENMCR\x0bKJDO\
+    LBOBKJF\x12\x20\n\x0bNMLFFOGBPOC\x18\x01\x20\x01(\rR\x0bNMLFFOGBPOCb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyMoveScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyMoveScRsp.HECJNJNIAKK)
-    pub HECJNJNIAKK: ::std::vec::Vec<super::IAACCAFGEPI::IAACCAFGEPI>,
     // @@protoc_insertion_point(field:MonopolyMoveScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:MonopolyMoveScRsp.OCBKFGAOHEH)
     pub OCBKFGAOHEH: ::protobuf::MessageField<super::JAJGKKDPALC::JAJGKKDPALC>,
+    // @@protoc_insertion_point(field:MonopolyMoveScRsp.HECJNJNIAKK)
+    pub HECJNJNIAKK: ::std::vec::Vec<super::IAACCAFGEPI::IAACCAFGEPI>,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyMoveScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,11 +53,6 @@ impl MonopolyMoveScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HECJNJNIAKK",
-            |m: &MonopolyMoveScRsp| { &m.HECJNJNIAKK },
-            |m: &mut MonopolyMoveScRsp| { &mut m.HECJNJNIAKK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &MonopolyMoveScRsp| { &m.retcode },
@@ -67,6 +62,11 @@ impl MonopolyMoveScRsp {
             "OCBKFGAOHEH",
             |m: &MonopolyMoveScRsp| { &m.OCBKFGAOHEH },
             |m: &mut MonopolyMoveScRsp| { &mut m.OCBKFGAOHEH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "HECJNJNIAKK",
+            |m: &MonopolyMoveScRsp| { &m.HECJNJNIAKK },
+            |m: &mut MonopolyMoveScRsp| { &mut m.HECJNJNIAKK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyMoveScRsp>(
             "MonopolyMoveScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for MonopolyMoveScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    self.HECJNJNIAKK.push(is.read_message()?);
-                },
-                24 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
                 },
-                10 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.OCBKFGAOHEH)?;
+                },
+                74 => {
+                    self.HECJNJNIAKK.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,32 +107,32 @@ impl ::protobuf::Message for MonopolyMoveScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.HECJNJNIAKK {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         if let Some(v) = self.OCBKFGAOHEH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        for value in &self.HECJNJNIAKK {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.HECJNJNIAKK {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
         }
         if let Some(v) = self.OCBKFGAOHEH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
+        for v in &self.HECJNJNIAKK {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,17 +150,17 @@ impl ::protobuf::Message for MonopolyMoveScRsp {
     }
 
     fn clear(&mut self) {
-        self.HECJNJNIAKK.clear();
         self.retcode = 0;
         self.OCBKFGAOHEH.clear();
+        self.HECJNJNIAKK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyMoveScRsp {
         static instance: MonopolyMoveScRsp = MonopolyMoveScRsp {
-            HECJNJNIAKK: ::std::vec::Vec::new(),
             retcode: 0,
             OCBKFGAOHEH: ::protobuf::MessageField::none(),
+            HECJNJNIAKK: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyMoveScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17MonopolyMoveScRsp.proto\x1a\x11IAACCAFGEPI.proto\x1a\x11JAJGKKDPAL\
-    C.proto\"\x8d\x01\n\x11MonopolyMoveScRsp\x12.\n\x0bHECJNJNIAKK\x18\x0f\
-    \x20\x03(\x0b2\x0c.IAACCAFGEPIR\x0bHECJNJNIAKK\x12\x18\n\x07retcode\x18\
-    \x03\x20\x01(\rR\x07retcode\x12.\n\x0bOCBKFGAOHEH\x18\x01\x20\x01(\x0b2\
-    \x0c.JAJGKKDPALCR\x0bOCBKFGAOHEHb\x06proto3\
+    C.proto\"\x8d\x01\n\x11MonopolyMoveScRsp\x12\x18\n\x07retcode\x18\x06\
+    \x20\x01(\rR\x07retcode\x12.\n\x0bOCBKFGAOHEH\x18\x0b\x20\x01(\x0b2\x0c.\
+    JAJGKKDPALCR\x0bOCBKFGAOHEH\x12.\n\x0bHECJNJNIAKK\x18\t\x20\x03(\x0b2\
+    \x0c.IAACCAFGEPIR\x0bHECJNJNIAKKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

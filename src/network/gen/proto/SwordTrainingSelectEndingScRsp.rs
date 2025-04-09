@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SwordTrainingSelectEndingScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SwordTrainingSelectEndingScRsp.DECJMBHNNHD)
-    pub DECJMBHNNHD: u32,
     // @@protoc_insertion_point(field:SwordTrainingSelectEndingScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:SwordTrainingSelectEndingScRsp.DECJMBHNNHD)
+    pub DECJMBHNNHD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SwordTrainingSelectEndingScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl SwordTrainingSelectEndingScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DECJMBHNNHD",
-            |m: &SwordTrainingSelectEndingScRsp| { &m.DECJMBHNNHD },
-            |m: &mut SwordTrainingSelectEndingScRsp| { &mut m.DECJMBHNNHD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &SwordTrainingSelectEndingScRsp| { &m.retcode },
             |m: &mut SwordTrainingSelectEndingScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DECJMBHNNHD",
+            |m: &SwordTrainingSelectEndingScRsp| { &m.DECJMBHNNHD },
+            |m: &mut SwordTrainingSelectEndingScRsp| { &mut m.DECJMBHNNHD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SwordTrainingSelectEndingScRsp>(
             "SwordTrainingSelectEndingScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SwordTrainingSelectEndingScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.DECJMBHNNHD = is.read_uint32()?;
-                },
-                40 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
+                },
+                24 => {
+                    self.DECJMBHNNHD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for SwordTrainingSelectEndingScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DECJMBHNNHD != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.DECJMBHNNHD);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        }
+        if self.DECJMBHNNHD != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.DECJMBHNNHD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for SwordTrainingSelectEndingScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DECJMBHNNHD != 0 {
-            os.write_uint32(8, self.DECJMBHNNHD)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
+        }
+        if self.DECJMBHNNHD != 0 {
+            os.write_uint32(3, self.DECJMBHNNHD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for SwordTrainingSelectEndingScRsp {
     }
 
     fn clear(&mut self) {
-        self.DECJMBHNNHD = 0;
         self.retcode = 0;
+        self.DECJMBHNNHD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwordTrainingSelectEndingScRsp {
         static instance: SwordTrainingSelectEndingScRsp = SwordTrainingSelectEndingScRsp {
-            DECJMBHNNHD: 0,
             retcode: 0,
+            DECJMBHNNHD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for SwordTrainingSelectEndingScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$SwordTrainingSelectEndingScRsp.proto\"\\\n\x1eSwordTrainingSelectEndi\
-    ngScRsp\x12\x20\n\x0bDECJMBHNNHD\x18\x08\x20\x01(\rR\x0bDECJMBHNNHD\x12\
-    \x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcodeb\x06proto3\
+    ngScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12\x20\n\
+    \x0bDECJMBHNNHD\x18\x03\x20\x01(\rR\x0bDECJMBHNNHDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

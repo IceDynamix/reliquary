@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FKBFOOEFPAE {
     // message fields
-    // @@protoc_insertion_point(field:FKBFOOEFPAE.INFBHPGDLND)
-    pub INFBHPGDLND: u32,
     // @@protoc_insertion_point(field:FKBFOOEFPAE.PBLFLJNHMIL)
     pub PBLFLJNHMIL: ::protobuf::EnumOrUnknown<super::RogueCollectionStatus::RogueCollectionStatus>,
+    // @@protoc_insertion_point(field:FKBFOOEFPAE.INFBHPGDLND)
+    pub INFBHPGDLND: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FKBFOOEFPAE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl FKBFOOEFPAE {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "INFBHPGDLND",
-            |m: &FKBFOOEFPAE| { &m.INFBHPGDLND },
-            |m: &mut FKBFOOEFPAE| { &mut m.INFBHPGDLND },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PBLFLJNHMIL",
             |m: &FKBFOOEFPAE| { &m.PBLFLJNHMIL },
             |m: &mut FKBFOOEFPAE| { &mut m.PBLFLJNHMIL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "INFBHPGDLND",
+            |m: &FKBFOOEFPAE| { &m.INFBHPGDLND },
+            |m: &mut FKBFOOEFPAE| { &mut m.INFBHPGDLND },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FKBFOOEFPAE>(
             "FKBFOOEFPAE",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FKBFOOEFPAE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.INFBHPGDLND = is.read_uint32()?;
-                },
-                40 => {
+                8 => {
                     self.PBLFLJNHMIL = is.read_enum_or_unknown()?;
+                },
+                120 => {
+                    self.INFBHPGDLND = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for FKBFOOEFPAE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.INFBHPGDLND != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.INFBHPGDLND);
-        }
         if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::RogueCollectionStatus::RogueCollectionStatus::ROGUE_COLLECTION_NONE) {
-            my_size += ::protobuf::rt::int32_size(5, self.PBLFLJNHMIL.value());
+            my_size += ::protobuf::rt::int32_size(1, self.PBLFLJNHMIL.value());
+        }
+        if self.INFBHPGDLND != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.INFBHPGDLND);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for FKBFOOEFPAE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.INFBHPGDLND != 0 {
-            os.write_uint32(8, self.INFBHPGDLND)?;
-        }
         if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::RogueCollectionStatus::RogueCollectionStatus::ROGUE_COLLECTION_NONE) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.PBLFLJNHMIL))?;
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.PBLFLJNHMIL))?;
+        }
+        if self.INFBHPGDLND != 0 {
+            os.write_uint32(15, self.INFBHPGDLND)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for FKBFOOEFPAE {
     }
 
     fn clear(&mut self) {
-        self.INFBHPGDLND = 0;
         self.PBLFLJNHMIL = ::protobuf::EnumOrUnknown::new(super::RogueCollectionStatus::RogueCollectionStatus::ROGUE_COLLECTION_NONE);
+        self.INFBHPGDLND = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FKBFOOEFPAE {
         static instance: FKBFOOEFPAE = FKBFOOEFPAE {
-            INFBHPGDLND: 0,
             PBLFLJNHMIL: ::protobuf::EnumOrUnknown::from_i32(0),
+            INFBHPGDLND: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for FKBFOOEFPAE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FKBFOOEFPAE.proto\x1a\x1bRogueCollectionStatus.proto\"i\n\x0bFKBFO\
-    OEFPAE\x12\x20\n\x0bINFBHPGDLND\x18\x08\x20\x01(\rR\x0bINFBHPGDLND\x128\
-    \n\x0bPBLFLJNHMIL\x18\x05\x20\x01(\x0e2\x16.RogueCollectionStatusR\x0bPB\
-    LFLJNHMILb\x06proto3\
+    OEFPAE\x128\n\x0bPBLFLJNHMIL\x18\x01\x20\x01(\x0e2\x16.RogueCollectionSt\
+    atusR\x0bPBLFLJNHMIL\x12\x20\n\x0bINFBHPGDLND\x18\x0f\x20\x01(\rR\x0bINF\
+    BHPGDLNDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

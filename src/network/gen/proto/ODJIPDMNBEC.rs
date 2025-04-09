@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ODJIPDMNBEC {
     // message fields
-    // @@protoc_insertion_point(field:ODJIPDMNBEC.KMONAGFELPG)
-    pub KMONAGFELPG: u32,
+    // @@protoc_insertion_point(field:ODJIPDMNBEC.uid)
+    pub uid: u32,
     // @@protoc_insertion_point(field:ODJIPDMNBEC.FBJPBDIJPFK)
     pub FBJPBDIJPFK: u32,
     // special fields
@@ -52,9 +52,9 @@ impl ODJIPDMNBEC {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KMONAGFELPG",
-            |m: &ODJIPDMNBEC| { &m.KMONAGFELPG },
-            |m: &mut ODJIPDMNBEC| { &mut m.KMONAGFELPG },
+            "uid",
+            |m: &ODJIPDMNBEC| { &m.uid },
+            |m: &mut ODJIPDMNBEC| { &mut m.uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FBJPBDIJPFK",
@@ -80,7 +80,7 @@ impl ::protobuf::Message for ODJIPDMNBEC {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.KMONAGFELPG = is.read_uint32()?;
+                    self.uid = is.read_uint32()?;
                 },
                 16 => {
                     self.FBJPBDIJPFK = is.read_uint32()?;
@@ -97,8 +97,8 @@ impl ::protobuf::Message for ODJIPDMNBEC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KMONAGFELPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.KMONAGFELPG);
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.uid);
         }
         if self.FBJPBDIJPFK != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.FBJPBDIJPFK);
@@ -109,8 +109,8 @@ impl ::protobuf::Message for ODJIPDMNBEC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KMONAGFELPG != 0 {
-            os.write_uint32(1, self.KMONAGFELPG)?;
+        if self.uid != 0 {
+            os.write_uint32(1, self.uid)?;
         }
         if self.FBJPBDIJPFK != 0 {
             os.write_uint32(2, self.FBJPBDIJPFK)?;
@@ -132,14 +132,14 @@ impl ::protobuf::Message for ODJIPDMNBEC {
     }
 
     fn clear(&mut self) {
-        self.KMONAGFELPG = 0;
+        self.uid = 0;
         self.FBJPBDIJPFK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ODJIPDMNBEC {
         static instance: ODJIPDMNBEC = ODJIPDMNBEC {
-            KMONAGFELPG: 0,
+            uid: 0,
             FBJPBDIJPFK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for ODJIPDMNBEC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ODJIPDMNBEC.proto\"Q\n\x0bODJIPDMNBEC\x12\x20\n\x0bKMONAGFELPG\x18\
-    \x01\x20\x01(\rR\x0bKMONAGFELPG\x12\x20\n\x0bFBJPBDIJPFK\x18\x02\x20\x01\
-    (\rR\x0bFBJPBDIJPFKb\x06proto3\
+    \n\x11ODJIPDMNBEC.proto\"A\n\x0bODJIPDMNBEC\x12\x10\n\x03uid\x18\x01\x20\
+    \x01(\rR\x03uid\x12\x20\n\x0bFBJPBDIJPFK\x18\x02\x20\x01(\rR\x0bFBJPBDIJ\
+    PFKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -82,7 +82,7 @@ impl ::protobuf::Message for TakeFightActivityRewardCsReq {
                 8 => {
                     self.FJNHDHOHBCL = is.read_uint32()?;
                 },
-                120 => {
+                104 => {
                     self.NEDFIBONLKB = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for TakeFightActivityRewardCsReq {
             my_size += ::protobuf::rt::uint32_size(1, self.FJNHDHOHBCL);
         }
         if self.NEDFIBONLKB != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.NEDFIBONLKB);
+            my_size += ::protobuf::rt::uint32_size(13, self.NEDFIBONLKB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for TakeFightActivityRewardCsReq {
             os.write_uint32(1, self.FJNHDHOHBCL)?;
         }
         if self.NEDFIBONLKB != 0 {
-            os.write_uint32(15, self.NEDFIBONLKB)?;
+            os.write_uint32(13, self.NEDFIBONLKB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for TakeFightActivityRewardCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"TakeFightActivityRewardCsReq.proto\"b\n\x1cTakeFightActivityRewardCs\
     Req\x12\x20\n\x0bFJNHDHOHBCL\x18\x01\x20\x01(\rR\x0bFJNHDHOHBCL\x12\x20\
-    \n\x0bNEDFIBONLKB\x18\x0f\x20\x01(\rR\x0bNEDFIBONLKBb\x06proto3\
+    \n\x0bNEDFIBONLKB\x18\r\x20\x01(\rR\x0bNEDFIBONLKBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

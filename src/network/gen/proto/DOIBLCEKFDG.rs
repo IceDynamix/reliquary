@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DOIBLCEKFDG {
     // message fields
-    // @@protoc_insertion_point(field:DOIBLCEKFDG.JJLOGICPOAO)
-    pub JJLOGICPOAO: u32,
     // @@protoc_insertion_point(field:DOIBLCEKFDG.HHCBJGHKCPC)
     pub HHCBJGHKCPC: u32,
+    // @@protoc_insertion_point(field:DOIBLCEKFDG.JJLOGICPOAO)
+    pub JJLOGICPOAO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DOIBLCEKFDG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl DOIBLCEKFDG {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JJLOGICPOAO",
-            |m: &DOIBLCEKFDG| { &m.JJLOGICPOAO },
-            |m: &mut DOIBLCEKFDG| { &mut m.JJLOGICPOAO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HHCBJGHKCPC",
             |m: &DOIBLCEKFDG| { &m.HHCBJGHKCPC },
             |m: &mut DOIBLCEKFDG| { &mut m.HHCBJGHKCPC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JJLOGICPOAO",
+            |m: &DOIBLCEKFDG| { &m.JJLOGICPOAO },
+            |m: &mut DOIBLCEKFDG| { &mut m.JJLOGICPOAO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DOIBLCEKFDG>(
             "DOIBLCEKFDG",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for DOIBLCEKFDG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.JJLOGICPOAO = is.read_uint32()?;
-                },
-                96 => {
+                72 => {
                     self.HHCBJGHKCPC = is.read_uint32()?;
+                },
+                32 => {
+                    self.JJLOGICPOAO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for DOIBLCEKFDG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JJLOGICPOAO != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.JJLOGICPOAO);
-        }
         if self.HHCBJGHKCPC != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.HHCBJGHKCPC);
+            my_size += ::protobuf::rt::uint32_size(9, self.HHCBJGHKCPC);
+        }
+        if self.JJLOGICPOAO != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.JJLOGICPOAO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for DOIBLCEKFDG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JJLOGICPOAO != 0 {
-            os.write_uint32(10, self.JJLOGICPOAO)?;
-        }
         if self.HHCBJGHKCPC != 0 {
-            os.write_uint32(12, self.HHCBJGHKCPC)?;
+            os.write_uint32(9, self.HHCBJGHKCPC)?;
+        }
+        if self.JJLOGICPOAO != 0 {
+            os.write_uint32(4, self.JJLOGICPOAO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for DOIBLCEKFDG {
     }
 
     fn clear(&mut self) {
-        self.JJLOGICPOAO = 0;
         self.HHCBJGHKCPC = 0;
+        self.JJLOGICPOAO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DOIBLCEKFDG {
         static instance: DOIBLCEKFDG = DOIBLCEKFDG {
-            JJLOGICPOAO: 0,
             HHCBJGHKCPC: 0,
+            JJLOGICPOAO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for DOIBLCEKFDG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DOIBLCEKFDG.proto\"Q\n\x0bDOIBLCEKFDG\x12\x20\n\x0bJJLOGICPOAO\x18\
-    \n\x20\x01(\rR\x0bJJLOGICPOAO\x12\x20\n\x0bHHCBJGHKCPC\x18\x0c\x20\x01(\
-    \rR\x0bHHCBJGHKCPCb\x06proto3\
+    \n\x11DOIBLCEKFDG.proto\"Q\n\x0bDOIBLCEKFDG\x12\x20\n\x0bHHCBJGHKCPC\x18\
+    \t\x20\x01(\rR\x0bHHCBJGHKCPC\x12\x20\n\x0bJJLOGICPOAO\x18\x04\x20\x01(\
+    \rR\x0bJJLOGICPOAOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

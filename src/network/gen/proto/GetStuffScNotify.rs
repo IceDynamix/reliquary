@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetStuffScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                8 => {
                     self.AOCELKONHOB = is.read_enum_or_unknown()?;
                 },
-                64 => {
+                48 => {
                     self.BDJCGCDJOEO = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for GetStuffScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.AOCELKONHOB != ::protobuf::EnumOrUnknown::new(super::GetStuffType::GetStuffType::UNKNOW) {
-            my_size += ::protobuf::rt::int32_size(14, self.AOCELKONHOB.value());
+            my_size += ::protobuf::rt::int32_size(1, self.AOCELKONHOB.value());
         }
         if self.BDJCGCDJOEO != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.BDJCGCDJOEO);
+            my_size += ::protobuf::rt::uint32_size(6, self.BDJCGCDJOEO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GetStuffScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.AOCELKONHOB != ::protobuf::EnumOrUnknown::new(super::GetStuffType::GetStuffType::UNKNOW) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.AOCELKONHOB))?;
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.AOCELKONHOB))?;
         }
         if self.BDJCGCDJOEO != 0 {
-            os.write_uint32(8, self.BDJCGCDJOEO)?;
+            os.write_uint32(6, self.BDJCGCDJOEO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for GetStuffScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16GetStuffScNotify.proto\x1a\x12GetStuffType.proto\"e\n\x10GetStuffS\
-    cNotify\x12/\n\x0bAOCELKONHOB\x18\x0e\x20\x01(\x0e2\r.GetStuffTypeR\x0bA\
-    OCELKONHOB\x12\x20\n\x0bBDJCGCDJOEO\x18\x08\x20\x01(\rR\x0bBDJCGCDJOEOb\
+    cNotify\x12/\n\x0bAOCELKONHOB\x18\x01\x20\x01(\x0e2\r.GetStuffTypeR\x0bA\
+    OCELKONHOB\x12\x20\n\x0bBDJCGCDJOEO\x18\x06\x20\x01(\rR\x0bBDJCGCDJOEOb\
     \x06proto3\
 ";
 

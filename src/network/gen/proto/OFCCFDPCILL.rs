@@ -79,7 +79,7 @@ impl ::protobuf::Message for OFCCFDPCILL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                8 => {
                     self.FJNHDHOHBCL = is.read_uint32()?;
                 },
                 96 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for OFCCFDPCILL {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.FJNHDHOHBCL != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.FJNHDHOHBCL);
+            my_size += ::protobuf::rt::uint32_size(1, self.FJNHDHOHBCL);
         }
         if self.GLHAGJGAEHE != 0 {
             my_size += ::protobuf::rt::uint32_size(12, self.GLHAGJGAEHE);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for OFCCFDPCILL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.FJNHDHOHBCL != 0 {
-            os.write_uint32(10, self.FJNHDHOHBCL)?;
+            os.write_uint32(1, self.FJNHDHOHBCL)?;
         }
         if self.GLHAGJGAEHE != 0 {
             os.write_uint32(12, self.GLHAGJGAEHE)?;
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for OFCCFDPCILL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OFCCFDPCILL.proto\"Q\n\x0bOFCCFDPCILL\x12\x20\n\x0bFJNHDHOHBCL\x18\
-    \n\x20\x01(\rR\x0bFJNHDHOHBCL\x12\x20\n\x0bGLHAGJGAEHE\x18\x0c\x20\x01(\
-    \rR\x0bGLHAGJGAEHEb\x06proto3\
+    \x01\x20\x01(\rR\x0bFJNHDHOHBCL\x12\x20\n\x0bGLHAGJGAEHE\x18\x0c\x20\x01\
+    (\rR\x0bGLHAGJGAEHEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

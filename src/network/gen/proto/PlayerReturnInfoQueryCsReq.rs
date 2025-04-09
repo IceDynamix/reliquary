@@ -72,7 +72,7 @@ impl ::protobuf::Message for PlayerReturnInfoQueryCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                48 => {
                     self.CEHFIILMJKM = is.read_uint32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for PlayerReturnInfoQueryCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CEHFIILMJKM != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.CEHFIILMJKM);
+            my_size += ::protobuf::rt::uint32_size(6, self.CEHFIILMJKM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for PlayerReturnInfoQueryCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CEHFIILMJKM != 0 {
-            os.write_uint32(2, self.CEHFIILMJKM)?;
+            os.write_uint32(6, self.CEHFIILMJKM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for PlayerReturnInfoQueryCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20PlayerReturnInfoQueryCsReq.proto\">\n\x1aPlayerReturnInfoQueryCsRe\
-    q\x12\x20\n\x0bCEHFIILMJKM\x18\x02\x20\x01(\rR\x0bCEHFIILMJKMb\x06proto3\
+    q\x12\x20\n\x0bCEHFIILMJKM\x18\x06\x20\x01(\rR\x0bCEHFIILMJKMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

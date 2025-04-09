@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NOIDCLGJBMG {
     // message fields
-    // @@protoc_insertion_point(field:NOIDCLGJBMG.KBHNHBBAHHF)
-    pub KBHNHBBAHHF: u32,
     // @@protoc_insertion_point(field:NOIDCLGJBMG.PKFEOCAGECF)
     pub PKFEOCAGECF: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:NOIDCLGJBMG.KBHNHBBAHHF)
+    pub KBHNHBBAHHF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:NOIDCLGJBMG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl NOIDCLGJBMG {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KBHNHBBAHHF",
-            |m: &NOIDCLGJBMG| { &m.KBHNHBBAHHF },
-            |m: &mut NOIDCLGJBMG| { &mut m.KBHNHBBAHHF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "PKFEOCAGECF",
             |m: &NOIDCLGJBMG| { &m.PKFEOCAGECF },
             |m: &mut NOIDCLGJBMG| { &mut m.PKFEOCAGECF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KBHNHBBAHHF",
+            |m: &NOIDCLGJBMG| { &m.KBHNHBBAHHF },
+            |m: &mut NOIDCLGJBMG| { &mut m.KBHNHBBAHHF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NOIDCLGJBMG>(
             "NOIDCLGJBMG",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for NOIDCLGJBMG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.KBHNHBBAHHF = is.read_uint32()?;
-                },
-                106 => {
+                114 => {
                     is.read_repeated_packed_uint32_into(&mut self.PKFEOCAGECF)?;
                 },
-                104 => {
+                112 => {
                     self.PKFEOCAGECF.push(is.read_uint32()?);
+                },
+                88 => {
+                    self.KBHNHBBAHHF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for NOIDCLGJBMG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.PKFEOCAGECF);
         if self.KBHNHBBAHHF != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.KBHNHBBAHHF);
+            my_size += ::protobuf::rt::uint32_size(11, self.KBHNHBBAHHF);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.PKFEOCAGECF);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(14, &self.PKFEOCAGECF)?;
         if self.KBHNHBBAHHF != 0 {
-            os.write_uint32(6, self.KBHNHBBAHHF)?;
+            os.write_uint32(11, self.KBHNHBBAHHF)?;
         }
-        os.write_repeated_packed_uint32(13, &self.PKFEOCAGECF)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for NOIDCLGJBMG {
     }
 
     fn clear(&mut self) {
-        self.KBHNHBBAHHF = 0;
         self.PKFEOCAGECF.clear();
+        self.KBHNHBBAHHF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NOIDCLGJBMG {
         static instance: NOIDCLGJBMG = NOIDCLGJBMG {
-            KBHNHBBAHHF: 0,
             PKFEOCAGECF: ::std::vec::Vec::new(),
+            KBHNHBBAHHF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -164,9 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for NOIDCLGJBMG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NOIDCLGJBMG.proto\"Q\n\x0bNOIDCLGJBMG\x12\x20\n\x0bKBHNHBBAHHF\x18\
-    \x06\x20\x01(\rR\x0bKBHNHBBAHHF\x12\x20\n\x0bPKFEOCAGECF\x18\r\x20\x03(\
-    \rR\x0bPKFEOCAGECFb\x06proto3\
+    \n\x11NOIDCLGJBMG.proto\"Q\n\x0bNOIDCLGJBMG\x12\x20\n\x0bPKFEOCAGECF\x18\
+    \x0e\x20\x03(\rR\x0bPKFEOCAGECF\x12\x20\n\x0bKBHNHBBAHHF\x18\x0b\x20\x01\
+    (\rR\x0bKBHNHBBAHHFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

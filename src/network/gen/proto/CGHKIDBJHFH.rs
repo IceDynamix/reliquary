@@ -45,7 +45,7 @@ impl CGHKIDBJHFH {
         ::std::default::Default::default()
     }
 
-    // .NLCALKLPGOG PJABKIFDNND = 9;
+    // .NLCALKLPGOG PJABKIFDNND = 15;
 
     pub fn PJABKIFDNND(&self) -> &super::NLCALKLPGOG::NLCALKLPGOG {
         match self.KFELKJLDKEH {
@@ -94,7 +94,7 @@ impl CGHKIDBJHFH {
         }
     }
 
-    // .OJLEHPPJBBC NIHIFEMOKAM = 13;
+    // .OJLEHPPJBBC NIHIFEMOKAM = 1;
 
     pub fn NIHIFEMOKAM(&self) -> &super::OJLEHPPJBBC::OJLEHPPJBBC {
         match self.KFELKJLDKEH {
@@ -143,7 +143,7 @@ impl CGHKIDBJHFH {
         }
     }
 
-    // .OJLEHPPJBBC MLCGALIHAIP = 12;
+    // .OJLEHPPJBBC MLCGALIHAIP = 7;
 
     pub fn MLCGALIHAIP(&self) -> &super::OJLEHPPJBBC::OJLEHPPJBBC {
         match self.KFELKJLDKEH {
@@ -192,7 +192,7 @@ impl CGHKIDBJHFH {
         }
     }
 
-    // .OCJGNPIFOBM BIDDDNIPBLE = 7;
+    // .OCJGNPIFOBM BIDDDNIPBLE = 12;
 
     pub fn BIDDDNIPBLE(&self) -> &super::OCJGNPIFOBM::OCJGNPIFOBM {
         match self.KFELKJLDKEH {
@@ -241,7 +241,7 @@ impl CGHKIDBJHFH {
         }
     }
 
-    // .NMENKIGNBCA DIJHPEHONOK = 8;
+    // .NMENKIGNBCA DIJHPEHONOK = 11;
 
     pub fn DIJHPEHONOK(&self) -> &super::NMENKIGNBCA::NMENKIGNBCA {
         match self.KFELKJLDKEH {
@@ -290,7 +290,7 @@ impl CGHKIDBJHFH {
         }
     }
 
-    // .NIGCOPGHAMJ EDHBKECGOLI = 11;
+    // .NIGCOPGHAMJ EDHBKECGOLI = 4;
 
     pub fn EDHBKECGOLI(&self) -> &super::NIGCOPGHAMJ::NIGCOPGHAMJ {
         match self.KFELKJLDKEH {
@@ -339,7 +339,7 @@ impl CGHKIDBJHFH {
         }
     }
 
-    // .HJKDNGIHMAA MFHBHKIMDCA = 1;
+    // .HJKDNGIHMAA MFHBHKIMDCA = 13;
 
     pub fn MFHBHKIMDCA(&self) -> &super::HJKDNGIHMAA::HJKDNGIHMAA {
         match self.KFELKJLDKEH {
@@ -413,7 +413,7 @@ impl CGHKIDBJHFH {
         self.KFELKJLDKEH = ::std::option::Option::Some(cghkidbjhfh::KFELKJLDKEH::NPFPAJLCLNN(v))
     }
 
-    // uint32 IOMGDIKELIA = 1621;
+    // uint32 IOMGDIKELIA = 1301;
 
     pub fn IOMGDIKELIA(&self) -> u32 {
         match self.KFELKJLDKEH {
@@ -438,7 +438,7 @@ impl CGHKIDBJHFH {
         self.KFELKJLDKEH = ::std::option::Option::Some(cghkidbjhfh::KFELKJLDKEH::IOMGDIKELIA(v))
     }
 
-    // .KHCAKPOMGNK GKAHDHELILD = 2033;
+    // .KHCAKPOMGNK GKAHDHELILD = 905;
 
     pub fn GKAHDHELILD(&self) -> &super::KHCAKPOMGNK::KHCAKPOMGNK {
         match self.KFELKJLDKEH {
@@ -487,7 +487,7 @@ impl CGHKIDBJHFH {
         }
     }
 
-    // .KHPHAIFNJEI GNPEAMELJDJ = 279;
+    // .KHPHAIFNJEI GNPEAMELJDJ = 34;
 
     pub fn GNPEAMELJDJ(&self) -> &super::KHPHAIFNJEI::KHPHAIFNJEI {
         match self.KFELKJLDKEH {
@@ -536,7 +536,7 @@ impl CGHKIDBJHFH {
         }
     }
 
-    // uint32 CBAKIHCDENP = 1686;
+    // uint32 CBAKIHCDENP = 312;
 
     pub fn CBAKIHCDENP(&self) -> u32 {
         match self.KFELKJLDKEH {
@@ -664,40 +664,40 @@ impl ::protobuf::Message for CGHKIDBJHFH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                122 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(cghkidbjhfh::KFELKJLDKEH::PJABKIFDNND(is.read_message()?));
                 },
-                106 => {
+                10 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(cghkidbjhfh::KFELKJLDKEH::NIHIFEMOKAM(is.read_message()?));
                 },
-                98 => {
+                58 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(cghkidbjhfh::KFELKJLDKEH::MLCGALIHAIP(is.read_message()?));
                 },
-                58 => {
+                98 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(cghkidbjhfh::KFELKJLDKEH::BIDDDNIPBLE(is.read_message()?));
                 },
-                66 => {
+                90 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(cghkidbjhfh::KFELKJLDKEH::DIJHPEHONOK(is.read_message()?));
                 },
-                90 => {
+                34 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(cghkidbjhfh::KFELKJLDKEH::EDHBKECGOLI(is.read_message()?));
                 },
-                10 => {
+                106 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(cghkidbjhfh::KFELKJLDKEH::MFHBHKIMDCA(is.read_message()?));
                 },
                 112 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(cghkidbjhfh::KFELKJLDKEH::NPFPAJLCLNN(is.read_uint32()?));
                 },
-                12968 => {
+                10408 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(cghkidbjhfh::KFELKJLDKEH::IOMGDIKELIA(is.read_uint32()?));
                 },
-                16266 => {
+                7242 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(cghkidbjhfh::KFELKJLDKEH::GKAHDHELILD(is.read_message()?));
                 },
-                2234 => {
+                274 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(cghkidbjhfh::KFELKJLDKEH::GNPEAMELJDJ(is.read_message()?));
                 },
-                13488 => {
+                2496 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(cghkidbjhfh::KFELKJLDKEH::CBAKIHCDENP(is.read_uint32()?));
                 },
                 tag => {
@@ -746,7 +746,7 @@ impl ::protobuf::Message for CGHKIDBJHFH {
                     my_size += ::protobuf::rt::uint32_size(14, v);
                 },
                 &cghkidbjhfh::KFELKJLDKEH::IOMGDIKELIA(v) => {
-                    my_size += ::protobuf::rt::uint32_size(1621, v);
+                    my_size += ::protobuf::rt::uint32_size(1301, v);
                 },
                 &cghkidbjhfh::KFELKJLDKEH::GKAHDHELILD(ref v) => {
                     let len = v.compute_size();
@@ -757,7 +757,7 @@ impl ::protobuf::Message for CGHKIDBJHFH {
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &cghkidbjhfh::KFELKJLDKEH::CBAKIHCDENP(v) => {
-                    my_size += ::protobuf::rt::uint32_size(1686, v);
+                    my_size += ::protobuf::rt::uint32_size(312, v);
                 },
             };
         }
@@ -770,40 +770,40 @@ impl ::protobuf::Message for CGHKIDBJHFH {
         if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
             match v {
                 &cghkidbjhfh::KFELKJLDKEH::PJABKIFDNND(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
                 &cghkidbjhfh::KFELKJLDKEH::NIHIFEMOKAM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
                 },
                 &cghkidbjhfh::KFELKJLDKEH::MLCGALIHAIP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-                },
-                &cghkidbjhfh::KFELKJLDKEH::BIDDDNIPBLE(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
-                &cghkidbjhfh::KFELKJLDKEH::DIJHPEHONOK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+                &cghkidbjhfh::KFELKJLDKEH::BIDDDNIPBLE(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
                 },
-                &cghkidbjhfh::KFELKJLDKEH::EDHBKECGOLI(ref v) => {
+                &cghkidbjhfh::KFELKJLDKEH::DIJHPEHONOK(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
+                &cghkidbjhfh::KFELKJLDKEH::EDHBKECGOLI(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+                },
                 &cghkidbjhfh::KFELKJLDKEH::MFHBHKIMDCA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
                 &cghkidbjhfh::KFELKJLDKEH::NPFPAJLCLNN(v) => {
                     os.write_uint32(14, v)?;
                 },
                 &cghkidbjhfh::KFELKJLDKEH::IOMGDIKELIA(v) => {
-                    os.write_uint32(1621, v)?;
+                    os.write_uint32(1301, v)?;
                 },
                 &cghkidbjhfh::KFELKJLDKEH::GKAHDHELILD(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2033, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(905, v, os)?;
                 },
                 &cghkidbjhfh::KFELKJLDKEH::GNPEAMELJDJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(279, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(34, v, os)?;
                 },
                 &cghkidbjhfh::KFELKJLDKEH::CBAKIHCDENP(v) => {
-                    os.write_uint32(1686, v)?;
+                    os.write_uint32(312, v)?;
                 },
             };
         }
@@ -919,20 +919,20 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CGHKIDBJHFH.proto\x1a\x11HJKDNGIHMAA.proto\x1a\x11KHCAKPOMGNK.prot\
     o\x1a\x11KHPHAIFNJEI.proto\x1a\x11NIGCOPGHAMJ.proto\x1a\x11NLCALKLPGOG.p\
     roto\x1a\x11NMENKIGNBCA.proto\x1a\x11OCJGNPIFOBM.proto\x1a\x11OJLEHPPJBB\
-    C.proto\"\xce\x04\n\x0bCGHKIDBJHFH\x120\n\x0bPJABKIFDNND\x18\t\x20\x01(\
-    \x0b2\x0c.NLCALKLPGOGH\0R\x0bPJABKIFDNND\x120\n\x0bNIHIFEMOKAM\x18\r\x20\
-    \x01(\x0b2\x0c.OJLEHPPJBBCH\0R\x0bNIHIFEMOKAM\x120\n\x0bMLCGALIHAIP\x18\
-    \x0c\x20\x01(\x0b2\x0c.OJLEHPPJBBCH\0R\x0bMLCGALIHAIP\x120\n\x0bBIDDDNIP\
-    BLE\x18\x07\x20\x01(\x0b2\x0c.OCJGNPIFOBMH\0R\x0bBIDDDNIPBLE\x120\n\x0bD\
-    IJHPEHONOK\x18\x08\x20\x01(\x0b2\x0c.NMENKIGNBCAH\0R\x0bDIJHPEHONOK\x120\
-    \n\x0bEDHBKECGOLI\x18\x0b\x20\x01(\x0b2\x0c.NIGCOPGHAMJH\0R\x0bEDHBKECGO\
-    LI\x120\n\x0bMFHBHKIMDCA\x18\x01\x20\x01(\x0b2\x0c.HJKDNGIHMAAH\0R\x0bMF\
-    HBHKIMDCA\x12\"\n\x0bNPFPAJLCLNN\x18\x0e\x20\x01(\rH\0R\x0bNPFPAJLCLNN\
-    \x12#\n\x0bIOMGDIKELIA\x18\xd5\x0c\x20\x01(\rH\0R\x0bIOMGDIKELIA\x121\n\
-    \x0bGKAHDHELILD\x18\xf1\x0f\x20\x01(\x0b2\x0c.KHCAKPOMGNKH\0R\x0bGKAHDHE\
-    LILD\x121\n\x0bGNPEAMELJDJ\x18\x97\x02\x20\x01(\x0b2\x0c.KHPHAIFNJEIH\0R\
-    \x0bGNPEAMELJDJ\x12#\n\x0bCBAKIHCDENP\x18\x96\r\x20\x01(\rH\0R\x0bCBAKIH\
-    CDENPB\r\n\x0bKFELKJLDKEHb\x06proto3\
+    C.proto\"\xcd\x04\n\x0bCGHKIDBJHFH\x120\n\x0bPJABKIFDNND\x18\x0f\x20\x01\
+    (\x0b2\x0c.NLCALKLPGOGH\0R\x0bPJABKIFDNND\x120\n\x0bNIHIFEMOKAM\x18\x01\
+    \x20\x01(\x0b2\x0c.OJLEHPPJBBCH\0R\x0bNIHIFEMOKAM\x120\n\x0bMLCGALIHAIP\
+    \x18\x07\x20\x01(\x0b2\x0c.OJLEHPPJBBCH\0R\x0bMLCGALIHAIP\x120\n\x0bBIDD\
+    DNIPBLE\x18\x0c\x20\x01(\x0b2\x0c.OCJGNPIFOBMH\0R\x0bBIDDDNIPBLE\x120\n\
+    \x0bDIJHPEHONOK\x18\x0b\x20\x01(\x0b2\x0c.NMENKIGNBCAH\0R\x0bDIJHPEHONOK\
+    \x120\n\x0bEDHBKECGOLI\x18\x04\x20\x01(\x0b2\x0c.NIGCOPGHAMJH\0R\x0bEDHB\
+    KECGOLI\x120\n\x0bMFHBHKIMDCA\x18\r\x20\x01(\x0b2\x0c.HJKDNGIHMAAH\0R\
+    \x0bMFHBHKIMDCA\x12\"\n\x0bNPFPAJLCLNN\x18\x0e\x20\x01(\rH\0R\x0bNPFPAJL\
+    CLNN\x12#\n\x0bIOMGDIKELIA\x18\x95\n\x20\x01(\rH\0R\x0bIOMGDIKELIA\x121\
+    \n\x0bGKAHDHELILD\x18\x89\x07\x20\x01(\x0b2\x0c.KHCAKPOMGNKH\0R\x0bGKAHD\
+    HELILD\x120\n\x0bGNPEAMELJDJ\x18\"\x20\x01(\x0b2\x0c.KHPHAIFNJEIH\0R\x0b\
+    GNPEAMELJDJ\x12#\n\x0bCBAKIHCDENP\x18\xb8\x02\x20\x01(\rH\0R\x0bCBAKIHCD\
+    ENPB\r\n\x0bKFELKJLDKEHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

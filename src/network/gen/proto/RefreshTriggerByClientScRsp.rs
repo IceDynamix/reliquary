@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RefreshTriggerByClientScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RefreshTriggerByClientScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:RefreshTriggerByClientScRsp.JLMEPOBNAKG)
+    pub JLMEPOBNAKG: bool,
     // @@protoc_insertion_point(field:RefreshTriggerByClientScRsp.KKCEGAIBADO)
     pub KKCEGAIBADO: ::std::string::String,
     // @@protoc_insertion_point(field:RefreshTriggerByClientScRsp.AAKOLAHMAPG)
     pub AAKOLAHMAPG: u32,
-    // @@protoc_insertion_point(field:RefreshTriggerByClientScRsp.JLMEPOBNAKG)
-    pub JLMEPOBNAKG: bool,
+    // @@protoc_insertion_point(field:RefreshTriggerByClientScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RefreshTriggerByClientScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,9 +56,9 @@ impl RefreshTriggerByClientScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &RefreshTriggerByClientScRsp| { &m.retcode },
-            |m: &mut RefreshTriggerByClientScRsp| { &mut m.retcode },
+            "JLMEPOBNAKG",
+            |m: &RefreshTriggerByClientScRsp| { &m.JLMEPOBNAKG },
+            |m: &mut RefreshTriggerByClientScRsp| { &mut m.JLMEPOBNAKG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KKCEGAIBADO",
@@ -71,9 +71,9 @@ impl RefreshTriggerByClientScRsp {
             |m: &mut RefreshTriggerByClientScRsp| { &mut m.AAKOLAHMAPG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JLMEPOBNAKG",
-            |m: &RefreshTriggerByClientScRsp| { &m.JLMEPOBNAKG },
-            |m: &mut RefreshTriggerByClientScRsp| { &mut m.JLMEPOBNAKG },
+            "retcode",
+            |m: &RefreshTriggerByClientScRsp| { &m.retcode },
+            |m: &mut RefreshTriggerByClientScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RefreshTriggerByClientScRsp>(
             "RefreshTriggerByClientScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for RefreshTriggerByClientScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.retcode = is.read_uint32()?;
+                72 => {
+                    self.JLMEPOBNAKG = is.read_bool()?;
                 },
-                90 => {
+                50 => {
                     self.KKCEGAIBADO = is.read_string()?;
                 },
-                72 => {
+                96 => {
                     self.AAKOLAHMAPG = is.read_uint32()?;
                 },
-                96 => {
-                    self.JLMEPOBNAKG = is.read_bool()?;
+                24 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for RefreshTriggerByClientScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
-        }
-        if !self.KKCEGAIBADO.is_empty() {
-            my_size += ::protobuf::rt::string_size(11, &self.KKCEGAIBADO);
-        }
-        if self.AAKOLAHMAPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.AAKOLAHMAPG);
-        }
         if self.JLMEPOBNAKG != false {
             my_size += 1 + 1;
+        }
+        if !self.KKCEGAIBADO.is_empty() {
+            my_size += ::protobuf::rt::string_size(6, &self.KKCEGAIBADO);
+        }
+        if self.AAKOLAHMAPG != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.AAKOLAHMAPG);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for RefreshTriggerByClientScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+        if self.JLMEPOBNAKG != false {
+            os.write_bool(9, self.JLMEPOBNAKG)?;
         }
         if !self.KKCEGAIBADO.is_empty() {
-            os.write_string(11, &self.KKCEGAIBADO)?;
+            os.write_string(6, &self.KKCEGAIBADO)?;
         }
         if self.AAKOLAHMAPG != 0 {
-            os.write_uint32(9, self.AAKOLAHMAPG)?;
+            os.write_uint32(12, self.AAKOLAHMAPG)?;
         }
-        if self.JLMEPOBNAKG != false {
-            os.write_bool(12, self.JLMEPOBNAKG)?;
+        if self.retcode != 0 {
+            os.write_uint32(3, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for RefreshTriggerByClientScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
+        self.JLMEPOBNAKG = false;
         self.KKCEGAIBADO.clear();
         self.AAKOLAHMAPG = 0;
-        self.JLMEPOBNAKG = false;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RefreshTriggerByClientScRsp {
         static instance: RefreshTriggerByClientScRsp = RefreshTriggerByClientScRsp {
-            retcode: 0,
+            JLMEPOBNAKG: false,
             KKCEGAIBADO: ::std::string::String::new(),
             AAKOLAHMAPG: 0,
-            JLMEPOBNAKG: false,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for RefreshTriggerByClientScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!RefreshTriggerByClientScRsp.proto\"\x9d\x01\n\x1bRefreshTriggerByClie\
-    ntScRsp\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcode\x12\x20\n\
-    \x0bKKCEGAIBADO\x18\x0b\x20\x01(\tR\x0bKKCEGAIBADO\x12\x20\n\x0bAAKOLAHM\
-    APG\x18\t\x20\x01(\rR\x0bAAKOLAHMAPG\x12\x20\n\x0bJLMEPOBNAKG\x18\x0c\
-    \x20\x01(\x08R\x0bJLMEPOBNAKGb\x06proto3\
+    ntScRsp\x12\x20\n\x0bJLMEPOBNAKG\x18\t\x20\x01(\x08R\x0bJLMEPOBNAKG\x12\
+    \x20\n\x0bKKCEGAIBADO\x18\x06\x20\x01(\tR\x0bKKCEGAIBADO\x12\x20\n\x0bAA\
+    KOLAHMAPG\x18\x0c\x20\x01(\rR\x0bAAKOLAHMAPG\x12\x18\n\x07retcode\x18\
+    \x03\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

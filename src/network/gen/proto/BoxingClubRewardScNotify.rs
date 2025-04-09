@@ -32,10 +32,10 @@ pub struct BoxingClubRewardScNotify {
     pub BHELBOHKBBM: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:BoxingClubRewardScNotify.CFAAFJJAADP)
     pub CFAAFJJAADP: u32,
-    // @@protoc_insertion_point(field:BoxingClubRewardScNotify.NAALCBMBPGC)
-    pub NAALCBMBPGC: u32,
     // @@protoc_insertion_point(field:BoxingClubRewardScNotify.BPPLLCHMIDD)
     pub BPPLLCHMIDD: bool,
+    // @@protoc_insertion_point(field:BoxingClubRewardScNotify.NAALCBMBPGC)
+    pub NAALCBMBPGC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BoxingClubRewardScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -66,14 +66,14 @@ impl BoxingClubRewardScNotify {
             |m: &mut BoxingClubRewardScNotify| { &mut m.CFAAFJJAADP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NAALCBMBPGC",
-            |m: &BoxingClubRewardScNotify| { &m.NAALCBMBPGC },
-            |m: &mut BoxingClubRewardScNotify| { &mut m.NAALCBMBPGC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BPPLLCHMIDD",
             |m: &BoxingClubRewardScNotify| { &m.BPPLLCHMIDD },
             |m: &mut BoxingClubRewardScNotify| { &mut m.BPPLLCHMIDD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NAALCBMBPGC",
+            |m: &BoxingClubRewardScNotify| { &m.NAALCBMBPGC },
+            |m: &mut BoxingClubRewardScNotify| { &mut m.NAALCBMBPGC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BoxingClubRewardScNotify>(
             "BoxingClubRewardScNotify",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for BoxingClubRewardScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHELBOHKBBM)?;
                 },
-                56 => {
+                48 => {
                     self.CFAAFJJAADP = is.read_uint32()?;
                 },
-                72 => {
-                    self.NAALCBMBPGC = is.read_uint32()?;
-                },
-                32 => {
+                24 => {
                     self.BPPLLCHMIDD = is.read_bool()?;
+                },
+                112 => {
+                    self.NAALCBMBPGC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -122,13 +122,13 @@ impl ::protobuf::Message for BoxingClubRewardScNotify {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.CFAAFJJAADP != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.CFAAFJJAADP);
-        }
-        if self.NAALCBMBPGC != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.NAALCBMBPGC);
+            my_size += ::protobuf::rt::uint32_size(6, self.CFAAFJJAADP);
         }
         if self.BPPLLCHMIDD != false {
             my_size += 1 + 1;
+        }
+        if self.NAALCBMBPGC != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.NAALCBMBPGC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,16 +137,16 @@ impl ::protobuf::Message for BoxingClubRewardScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.BHELBOHKBBM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if self.CFAAFJJAADP != 0 {
-            os.write_uint32(7, self.CFAAFJJAADP)?;
-        }
-        if self.NAALCBMBPGC != 0 {
-            os.write_uint32(9, self.NAALCBMBPGC)?;
+            os.write_uint32(6, self.CFAAFJJAADP)?;
         }
         if self.BPPLLCHMIDD != false {
-            os.write_bool(4, self.BPPLLCHMIDD)?;
+            os.write_bool(3, self.BPPLLCHMIDD)?;
+        }
+        if self.NAALCBMBPGC != 0 {
+            os.write_uint32(14, self.NAALCBMBPGC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::Message for BoxingClubRewardScNotify {
     fn clear(&mut self) {
         self.BHELBOHKBBM.clear();
         self.CFAAFJJAADP = 0;
-        self.NAALCBMBPGC = 0;
         self.BPPLLCHMIDD = false;
+        self.NAALCBMBPGC = 0;
         self.special_fields.clear();
     }
 
@@ -176,8 +176,8 @@ impl ::protobuf::Message for BoxingClubRewardScNotify {
         static instance: BoxingClubRewardScNotify = BoxingClubRewardScNotify {
             BHELBOHKBBM: ::protobuf::MessageField::none(),
             CFAAFJJAADP: 0,
-            NAALCBMBPGC: 0,
             BPPLLCHMIDD: false,
+            NAALCBMBPGC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,11 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for BoxingClubRewardScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eBoxingClubRewardScNotify.proto\x1a\x0eItemList.proto\"\xad\x01\n\
-    \x18BoxingClubRewardScNotify\x12+\n\x0bBHELBOHKBBM\x18\x0e\x20\x01(\x0b2\
-    \t.ItemListR\x0bBHELBOHKBBM\x12\x20\n\x0bCFAAFJJAADP\x18\x07\x20\x01(\rR\
-    \x0bCFAAFJJAADP\x12\x20\n\x0bNAALCBMBPGC\x18\t\x20\x01(\rR\x0bNAALCBMBPG\
-    C\x12\x20\n\x0bBPPLLCHMIDD\x18\x04\x20\x01(\x08R\x0bBPPLLCHMIDDb\x06prot\
-    o3\
+    \x18BoxingClubRewardScNotify\x12+\n\x0bBHELBOHKBBM\x18\x0c\x20\x01(\x0b2\
+    \t.ItemListR\x0bBHELBOHKBBM\x12\x20\n\x0bCFAAFJJAADP\x18\x06\x20\x01(\rR\
+    \x0bCFAAFJJAADP\x12\x20\n\x0bBPPLLCHMIDD\x18\x03\x20\x01(\x08R\x0bBPPLLC\
+    HMIDD\x12\x20\n\x0bNAALCBMBPGC\x18\x0e\x20\x01(\rR\x0bNAALCBMBPGCb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

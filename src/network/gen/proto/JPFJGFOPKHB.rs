@@ -79,13 +79,13 @@ impl ::protobuf::Message for JPFJGFOPKHB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                106 => {
                     self.avatar_list.push(is.read_message()?);
                 },
-                50 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.PKFEOCAGECF)?;
                 },
-                48 => {
+                64 => {
                     self.PKFEOCAGECF.push(is.read_uint32()?);
                 },
                 tag => {
@@ -104,7 +104,7 @@ impl ::protobuf::Message for JPFJGFOPKHB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.PKFEOCAGECF);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.PKFEOCAGECF);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -112,9 +112,9 @@ impl ::protobuf::Message for JPFJGFOPKHB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
-        os.write_repeated_packed_uint32(6, &self.PKFEOCAGECF)?;
+        os.write_repeated_packed_uint32(8, &self.PKFEOCAGECF)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for JPFJGFOPKHB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JPFJGFOPKHB.proto\x1a\x1bStrongChallengeAvatar.proto\"h\n\x0bJPFJG\
-    FOPKHB\x127\n\x0bavatar_list\x18\x04\x20\x03(\x0b2\x16.StrongChallengeAv\
-    atarR\navatarList\x12\x20\n\x0bPKFEOCAGECF\x18\x06\x20\x03(\rR\x0bPKFEOC\
-    AGECFb\x06proto3\
+    FOPKHB\x127\n\x0bavatar_list\x18\r\x20\x03(\x0b2\x16.StrongChallengeAvat\
+    arR\navatarList\x12\x20\n\x0bPKFEOCAGECF\x18\x08\x20\x03(\rR\x0bPKFEOCAG\
+    ECFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

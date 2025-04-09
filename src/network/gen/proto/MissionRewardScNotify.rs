@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MissionRewardScNotify {
     // message fields
-    // @@protoc_insertion_point(field:MissionRewardScNotify.BHELBOHKBBM)
-    pub BHELBOHKBBM: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:MissionRewardScNotify.LPLHIABDBBG)
     pub LPLHIABDBBG: u32,
     // @@protoc_insertion_point(field:MissionRewardScNotify.KALGLKGPPHM)
     pub KALGLKGPPHM: u32,
+    // @@protoc_insertion_point(field:MissionRewardScNotify.BHELBOHKBBM)
+    pub BHELBOHKBBM: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:MissionRewardScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,11 +53,6 @@ impl MissionRewardScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "BHELBOHKBBM",
-            |m: &MissionRewardScNotify| { &m.BHELBOHKBBM },
-            |m: &mut MissionRewardScNotify| { &mut m.BHELBOHKBBM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LPLHIABDBBG",
             |m: &MissionRewardScNotify| { &m.LPLHIABDBBG },
@@ -67,6 +62,11 @@ impl MissionRewardScNotify {
             "KALGLKGPPHM",
             |m: &MissionRewardScNotify| { &m.KALGLKGPPHM },
             |m: &mut MissionRewardScNotify| { &mut m.KALGLKGPPHM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "BHELBOHKBBM",
+            |m: &MissionRewardScNotify| { &m.BHELBOHKBBM },
+            |m: &mut MissionRewardScNotify| { &mut m.BHELBOHKBBM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MissionRewardScNotify>(
             "MissionRewardScNotify",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for MissionRewardScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHELBOHKBBM)?;
-                },
-                80 => {
+                48 => {
                     self.LPLHIABDBBG = is.read_uint32()?;
                 },
-                56 => {
+                8 => {
                     self.KALGLKGPPHM = is.read_uint32()?;
+                },
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHELBOHKBBM)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for MissionRewardScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.LPLHIABDBBG != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.LPLHIABDBBG);
+        }
+        if self.KALGLKGPPHM != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.KALGLKGPPHM);
+        }
         if let Some(v) = self.BHELBOHKBBM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.LPLHIABDBBG != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.LPLHIABDBBG);
-        }
-        if self.KALGLKGPPHM != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.KALGLKGPPHM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for MissionRewardScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.BHELBOHKBBM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        }
         if self.LPLHIABDBBG != 0 {
-            os.write_uint32(10, self.LPLHIABDBBG)?;
+            os.write_uint32(6, self.LPLHIABDBBG)?;
         }
         if self.KALGLKGPPHM != 0 {
-            os.write_uint32(7, self.KALGLKGPPHM)?;
+            os.write_uint32(1, self.KALGLKGPPHM)?;
+        }
+        if let Some(v) = self.BHELBOHKBBM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for MissionRewardScNotify {
     }
 
     fn clear(&mut self) {
-        self.BHELBOHKBBM.clear();
         self.LPLHIABDBBG = 0;
         self.KALGLKGPPHM = 0;
+        self.BHELBOHKBBM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MissionRewardScNotify {
         static instance: MissionRewardScNotify = MissionRewardScNotify {
-            BHELBOHKBBM: ::protobuf::MessageField::none(),
             LPLHIABDBBG: 0,
             KALGLKGPPHM: 0,
+            BHELBOHKBBM: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for MissionRewardScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bMissionRewardScNotify.proto\x1a\x0eItemList.proto\"\x88\x01\n\x15M\
-    issionRewardScNotify\x12+\n\x0bBHELBOHKBBM\x18\x08\x20\x01(\x0b2\t.ItemL\
-    istR\x0bBHELBOHKBBM\x12\x20\n\x0bLPLHIABDBBG\x18\n\x20\x01(\rR\x0bLPLHIA\
-    BDBBG\x12\x20\n\x0bKALGLKGPPHM\x18\x07\x20\x01(\rR\x0bKALGLKGPPHMb\x06pr\
-    oto3\
+    issionRewardScNotify\x12\x20\n\x0bLPLHIABDBBG\x18\x06\x20\x01(\rR\x0bLPL\
+    HIABDBBG\x12\x20\n\x0bKALGLKGPPHM\x18\x01\x20\x01(\rR\x0bKALGLKGPPHM\x12\
+    +\n\x0bBHELBOHKBBM\x18\x08\x20\x01(\x0b2\t.ItemListR\x0bBHELBOHKBBMb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

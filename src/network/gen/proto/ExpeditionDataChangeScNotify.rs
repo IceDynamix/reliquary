@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ExpeditionDataChangeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.DIPKGOMGMOA)
-    pub DIPKGOMGMOA: u32,
-    // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.FNALLOLDGLM)
-    pub FNALLOLDGLM: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.PAGEIEOBHBP)
-    pub PAGEIEOBHBP: ::std::vec::Vec<super::FJIBDHHOHMH::FJIBDHHOHMH>,
     // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.JFJPADLALMD)
     pub JFJPADLALMD: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.HJBKDBMGMBD)
     pub HJBKDBMGMBD: ::std::vec::Vec<super::KIMNFBJCEOL::KIMNFBJCEOL>,
+    // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.PAGEIEOBHBP)
+    pub PAGEIEOBHBP: ::std::vec::Vec<super::FJIBDHHOHMH::FJIBDHHOHMH>,
+    // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.FNALLOLDGLM)
+    pub FNALLOLDGLM: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.DIPKGOMGMOA)
+    pub DIPKGOMGMOA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ExpeditionDataChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,21 +57,6 @@ impl ExpeditionDataChangeScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DIPKGOMGMOA",
-            |m: &ExpeditionDataChangeScNotify| { &m.DIPKGOMGMOA },
-            |m: &mut ExpeditionDataChangeScNotify| { &mut m.DIPKGOMGMOA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FNALLOLDGLM",
-            |m: &ExpeditionDataChangeScNotify| { &m.FNALLOLDGLM },
-            |m: &mut ExpeditionDataChangeScNotify| { &mut m.FNALLOLDGLM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PAGEIEOBHBP",
-            |m: &ExpeditionDataChangeScNotify| { &m.PAGEIEOBHBP },
-            |m: &mut ExpeditionDataChangeScNotify| { &mut m.PAGEIEOBHBP },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "JFJPADLALMD",
             |m: &ExpeditionDataChangeScNotify| { &m.JFJPADLALMD },
@@ -81,6 +66,21 @@ impl ExpeditionDataChangeScNotify {
             "HJBKDBMGMBD",
             |m: &ExpeditionDataChangeScNotify| { &m.HJBKDBMGMBD },
             |m: &mut ExpeditionDataChangeScNotify| { &mut m.HJBKDBMGMBD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PAGEIEOBHBP",
+            |m: &ExpeditionDataChangeScNotify| { &m.PAGEIEOBHBP },
+            |m: &mut ExpeditionDataChangeScNotify| { &mut m.PAGEIEOBHBP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FNALLOLDGLM",
+            |m: &ExpeditionDataChangeScNotify| { &m.FNALLOLDGLM },
+            |m: &mut ExpeditionDataChangeScNotify| { &mut m.FNALLOLDGLM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DIPKGOMGMOA",
+            |m: &ExpeditionDataChangeScNotify| { &m.DIPKGOMGMOA },
+            |m: &mut ExpeditionDataChangeScNotify| { &mut m.DIPKGOMGMOA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ExpeditionDataChangeScNotify>(
             "ExpeditionDataChangeScNotify",
@@ -100,26 +100,26 @@ impl ::protobuf::Message for ExpeditionDataChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.DIPKGOMGMOA = is.read_uint32()?;
-                },
-                98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FNALLOLDGLM)?;
-                },
-                96 => {
-                    self.FNALLOLDGLM.push(is.read_uint32()?);
-                },
-                82 => {
-                    self.PAGEIEOBHBP.push(is.read_message()?);
-                },
-                34 => {
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.JFJPADLALMD)?;
                 },
-                32 => {
+                24 => {
                     self.JFJPADLALMD.push(is.read_uint32()?);
                 },
-                66 => {
+                114 => {
                     self.HJBKDBMGMBD.push(is.read_message()?);
+                },
+                18 => {
+                    self.PAGEIEOBHBP.push(is.read_message()?);
+                },
+                74 => {
+                    is.read_repeated_packed_uint32_into(&mut self.FNALLOLDGLM)?;
+                },
+                72 => {
+                    self.FNALLOLDGLM.push(is.read_uint32()?);
+                },
+                80 => {
+                    self.DIPKGOMGMOA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -133,36 +133,36 @@ impl ::protobuf::Message for ExpeditionDataChangeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DIPKGOMGMOA != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.DIPKGOMGMOA);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.FNALLOLDGLM);
-        for value in &self.PAGEIEOBHBP {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.JFJPADLALMD);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.JFJPADLALMD);
         for value in &self.HJBKDBMGMBD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        for value in &self.PAGEIEOBHBP {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.FNALLOLDGLM);
+        if self.DIPKGOMGMOA != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.DIPKGOMGMOA);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DIPKGOMGMOA != 0 {
-            os.write_uint32(1, self.DIPKGOMGMOA)?;
-        }
-        os.write_repeated_packed_uint32(12, &self.FNALLOLDGLM)?;
-        for v in &self.PAGEIEOBHBP {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        };
-        os.write_repeated_packed_uint32(4, &self.JFJPADLALMD)?;
+        os.write_repeated_packed_uint32(3, &self.JFJPADLALMD)?;
         for v in &self.HJBKDBMGMBD {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
+        for v in &self.PAGEIEOBHBP {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        };
+        os.write_repeated_packed_uint32(9, &self.FNALLOLDGLM)?;
+        if self.DIPKGOMGMOA != 0 {
+            os.write_uint32(10, self.DIPKGOMGMOA)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -180,21 +180,21 @@ impl ::protobuf::Message for ExpeditionDataChangeScNotify {
     }
 
     fn clear(&mut self) {
-        self.DIPKGOMGMOA = 0;
-        self.FNALLOLDGLM.clear();
-        self.PAGEIEOBHBP.clear();
         self.JFJPADLALMD.clear();
         self.HJBKDBMGMBD.clear();
+        self.PAGEIEOBHBP.clear();
+        self.FNALLOLDGLM.clear();
+        self.DIPKGOMGMOA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ExpeditionDataChangeScNotify {
         static instance: ExpeditionDataChangeScNotify = ExpeditionDataChangeScNotify {
-            DIPKGOMGMOA: 0,
-            FNALLOLDGLM: ::std::vec::Vec::new(),
-            PAGEIEOBHBP: ::std::vec::Vec::new(),
             JFJPADLALMD: ::std::vec::Vec::new(),
             HJBKDBMGMBD: ::std::vec::Vec::new(),
+            PAGEIEOBHBP: ::std::vec::Vec::new(),
+            FNALLOLDGLM: ::std::vec::Vec::new(),
+            DIPKGOMGMOA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for ExpeditionDataChangeScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"ExpeditionDataChangeScNotify.proto\x1a\x11FJIBDHHOHMH.proto\x1a\x11K\
     IMNFBJCEOL.proto\"\xe4\x01\n\x1cExpeditionDataChangeScNotify\x12\x20\n\
-    \x0bDIPKGOMGMOA\x18\x01\x20\x01(\rR\x0bDIPKGOMGMOA\x12\x20\n\x0bFNALLOLD\
-    GLM\x18\x0c\x20\x03(\rR\x0bFNALLOLDGLM\x12.\n\x0bPAGEIEOBHBP\x18\n\x20\
-    \x03(\x0b2\x0c.FJIBDHHOHMHR\x0bPAGEIEOBHBP\x12\x20\n\x0bJFJPADLALMD\x18\
-    \x04\x20\x03(\rR\x0bJFJPADLALMD\x12.\n\x0bHJBKDBMGMBD\x18\x08\x20\x03(\
-    \x0b2\x0c.KIMNFBJCEOLR\x0bHJBKDBMGMBDb\x06proto3\
+    \x0bJFJPADLALMD\x18\x03\x20\x03(\rR\x0bJFJPADLALMD\x12.\n\x0bHJBKDBMGMBD\
+    \x18\x0e\x20\x03(\x0b2\x0c.KIMNFBJCEOLR\x0bHJBKDBMGMBD\x12.\n\x0bPAGEIEO\
+    BHBP\x18\x02\x20\x03(\x0b2\x0c.FJIBDHHOHMHR\x0bPAGEIEOBHBP\x12\x20\n\x0b\
+    FNALLOLDGLM\x18\t\x20\x03(\rR\x0bFNALLOLDGLM\x12\x20\n\x0bDIPKGOMGMOA\
+    \x18\n\x20\x01(\rR\x0bDIPKGOMGMOAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -89,7 +89,7 @@ impl ::protobuf::Message for JCDNMBCKPLF {
                 32 => {
                     self.ELGANMDPMID = is.read_uint32()?;
                 },
-                24 => {
+                120 => {
                     self.KCMJKGADPIP = is.read_enum_or_unknown()?;
                 },
                 40 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for JCDNMBCKPLF {
             my_size += ::protobuf::rt::uint32_size(4, self.ELGANMDPMID);
         }
         if self.KCMJKGADPIP != ::protobuf::EnumOrUnknown::new(super::DifficultyAdjustmentType::DifficultyAdjustmentType::DIFFICULTY_AJUSTMENT_TYPE_DEFAULT) {
-            my_size += ::protobuf::rt::int32_size(3, self.KCMJKGADPIP.value());
+            my_size += ::protobuf::rt::int32_size(15, self.KCMJKGADPIP.value());
         }
         if self.HHMABJDIMGM != ::protobuf::EnumOrUnknown::new(super::GIILENMKCAH::GIILENMKCAH::DIFFICULTY_AJUSTMENT_SOURCE_NONE) {
             my_size += ::protobuf::rt::int32_size(5, self.HHMABJDIMGM.value());
@@ -126,7 +126,7 @@ impl ::protobuf::Message for JCDNMBCKPLF {
             os.write_uint32(4, self.ELGANMDPMID)?;
         }
         if self.KCMJKGADPIP != ::protobuf::EnumOrUnknown::new(super::DifficultyAdjustmentType::DifficultyAdjustmentType::DIFFICULTY_AJUSTMENT_TYPE_DEFAULT) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.KCMJKGADPIP))?;
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.KCMJKGADPIP))?;
         }
         if self.HHMABJDIMGM != ::protobuf::EnumOrUnknown::new(super::GIILENMKCAH::GIILENMKCAH::DIFFICULTY_AJUSTMENT_SOURCE_NONE) {
             os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.HHMABJDIMGM))?;
@@ -185,7 +185,7 @@ impl ::protobuf::reflect::ProtobufValue for JCDNMBCKPLF {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JCDNMBCKPLF.proto\x1a\x1eDifficultyAdjustmentType.proto\x1a\x11GII\
     LENMKCAH.proto\"\x9c\x01\n\x0bJCDNMBCKPLF\x12\x20\n\x0bELGANMDPMID\x18\
-    \x04\x20\x01(\rR\x0bELGANMDPMID\x12;\n\x0bKCMJKGADPIP\x18\x03\x20\x01(\
+    \x04\x20\x01(\rR\x0bELGANMDPMID\x12;\n\x0bKCMJKGADPIP\x18\x0f\x20\x01(\
     \x0e2\x19.DifficultyAdjustmentTypeR\x0bKCMJKGADPIP\x12.\n\x0bHHMABJDIMGM\
     \x18\x05\x20\x01(\x0e2\x0c.GIILENMKCAHR\x0bHHMABJDIMGMb\x06proto3\
 ";

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OKGHENAIOGM {
     // message fields
+    // @@protoc_insertion_point(field:OKGHENAIOGM.IIMJCLBOPNC)
+    pub IIMJCLBOPNC: u32,
     // @@protoc_insertion_point(field:OKGHENAIOGM.IFJFCEJJBPE)
     pub IFJFCEJJBPE: u32,
     // @@protoc_insertion_point(field:OKGHENAIOGM.NOPMENIAFJM)
     pub NOPMENIAFJM: bool,
-    // @@protoc_insertion_point(field:OKGHENAIOGM.IIMJCLBOPNC)
-    pub IIMJCLBOPNC: u32,
     // @@protoc_insertion_point(field:OKGHENAIOGM.level)
     pub level: u32,
     // special fields
@@ -56,6 +56,11 @@ impl OKGHENAIOGM {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IIMJCLBOPNC",
+            |m: &OKGHENAIOGM| { &m.IIMJCLBOPNC },
+            |m: &mut OKGHENAIOGM| { &mut m.IIMJCLBOPNC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IFJFCEJJBPE",
             |m: &OKGHENAIOGM| { &m.IFJFCEJJBPE },
             |m: &mut OKGHENAIOGM| { &mut m.IFJFCEJJBPE },
@@ -64,11 +69,6 @@ impl OKGHENAIOGM {
             "NOPMENIAFJM",
             |m: &OKGHENAIOGM| { &m.NOPMENIAFJM },
             |m: &mut OKGHENAIOGM| { &mut m.NOPMENIAFJM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IIMJCLBOPNC",
-            |m: &OKGHENAIOGM| { &m.IIMJCLBOPNC },
-            |m: &mut OKGHENAIOGM| { &mut m.IIMJCLBOPNC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for OKGHENAIOGM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                56 => {
+                    self.IIMJCLBOPNC = is.read_uint32()?;
+                },
+                80 => {
                     self.IFJFCEJJBPE = is.read_uint32()?;
                 },
-                104 => {
+                96 => {
                     self.NOPMENIAFJM = is.read_bool()?;
                 },
                 72 => {
-                    self.IIMJCLBOPNC = is.read_uint32()?;
-                },
-                40 => {
                     self.level = is.read_uint32()?;
                 },
                 tag => {
@@ -117,17 +117,17 @@ impl ::protobuf::Message for OKGHENAIOGM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.IIMJCLBOPNC != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.IIMJCLBOPNC);
+        }
         if self.IFJFCEJJBPE != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.IFJFCEJJBPE);
+            my_size += ::protobuf::rt::uint32_size(10, self.IFJFCEJJBPE);
         }
         if self.NOPMENIAFJM != false {
             my_size += 1 + 1;
         }
-        if self.IIMJCLBOPNC != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.IIMJCLBOPNC);
-        }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.level);
+            my_size += ::protobuf::rt::uint32_size(9, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for OKGHENAIOGM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.IIMJCLBOPNC != 0 {
+            os.write_uint32(7, self.IIMJCLBOPNC)?;
+        }
         if self.IFJFCEJJBPE != 0 {
-            os.write_uint32(8, self.IFJFCEJJBPE)?;
+            os.write_uint32(10, self.IFJFCEJJBPE)?;
         }
         if self.NOPMENIAFJM != false {
-            os.write_bool(13, self.NOPMENIAFJM)?;
-        }
-        if self.IIMJCLBOPNC != 0 {
-            os.write_uint32(9, self.IIMJCLBOPNC)?;
+            os.write_bool(12, self.NOPMENIAFJM)?;
         }
         if self.level != 0 {
-            os.write_uint32(5, self.level)?;
+            os.write_uint32(9, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for OKGHENAIOGM {
     }
 
     fn clear(&mut self) {
+        self.IIMJCLBOPNC = 0;
         self.IFJFCEJJBPE = 0;
         self.NOPMENIAFJM = false;
-        self.IIMJCLBOPNC = 0;
         self.level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OKGHENAIOGM {
         static instance: OKGHENAIOGM = OKGHENAIOGM {
+            IIMJCLBOPNC: 0,
             IFJFCEJJBPE: 0,
             NOPMENIAFJM: false,
-            IIMJCLBOPNC: 0,
             level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -201,11 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for OKGHENAIOGM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OKGHENAIOGM.proto\"\x89\x01\n\x0bOKGHENAIOGM\x12\x20\n\x0bIFJFCEJJ\
-    BPE\x18\x08\x20\x01(\rR\x0bIFJFCEJJBPE\x12\x20\n\x0bNOPMENIAFJM\x18\r\
-    \x20\x01(\x08R\x0bNOPMENIAFJM\x12\x20\n\x0bIIMJCLBOPNC\x18\t\x20\x01(\rR\
-    \x0bIIMJCLBOPNC\x12\x14\n\x05level\x18\x05\x20\x01(\rR\x05levelb\x06prot\
-    o3\
+    \n\x11OKGHENAIOGM.proto\"\x89\x01\n\x0bOKGHENAIOGM\x12\x20\n\x0bIIMJCLBO\
+    PNC\x18\x07\x20\x01(\rR\x0bIIMJCLBOPNC\x12\x20\n\x0bIFJFCEJJBPE\x18\n\
+    \x20\x01(\rR\x0bIFJFCEJJBPE\x12\x20\n\x0bNOPMENIAFJM\x18\x0c\x20\x01(\
+    \x08R\x0bNOPMENIAFJM\x12\x14\n\x05level\x18\t\x20\x01(\rR\x05levelb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

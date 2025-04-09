@@ -79,7 +79,7 @@ impl ::protobuf::Message for ExpUpRelicCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                32 => {
                     self.relic_unique_id = is.read_uint32()?;
                 },
                 90 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for ExpUpRelicCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.relic_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.relic_unique_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.relic_unique_id);
         }
         if let Some(v) = self.KNNDKBHBDLI.as_ref() {
             let len = v.compute_size();
@@ -111,7 +111,7 @@ impl ::protobuf::Message for ExpUpRelicCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.relic_unique_id != 0 {
-            os.write_uint32(13, self.relic_unique_id)?;
+            os.write_uint32(4, self.relic_unique_id)?;
         }
         if let Some(v) = self.KNNDKBHBDLI.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for ExpUpRelicCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15ExpUpRelicCsReq.proto\x1a\x11KNAPAIOFJIE.proto\"i\n\x0fExpUpRelicC\
-    sReq\x12&\n\x0frelic_unique_id\x18\r\x20\x01(\rR\rrelicUniqueId\x12.\n\
+    sReq\x12&\n\x0frelic_unique_id\x18\x04\x20\x01(\rR\rrelicUniqueId\x12.\n\
     \x0bKNNDKBHBDLI\x18\x0b\x20\x01(\x0b2\x0c.KNAPAIOFJIER\x0bKNNDKBHBDLIb\
     \x06proto3\
 ";

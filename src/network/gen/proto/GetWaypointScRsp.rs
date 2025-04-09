@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetWaypointScRsp {
     // message fields
+    // @@protoc_insertion_point(field:GetWaypointScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:GetWaypointScRsp.HOEAHBIFKCI)
     pub HOEAHBIFKCI: u32,
     // @@protoc_insertion_point(field:GetWaypointScRsp.FJJFLKCMIDJ)
     pub FJJFLKCMIDJ: ::protobuf::MessageField<super::LJJOKGHFIDF::LJJOKGHFIDF>,
-    // @@protoc_insertion_point(field:GetWaypointScRsp.retcode)
-    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetWaypointScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl GetWaypointScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GetWaypointScRsp| { &m.retcode },
+            |m: &mut GetWaypointScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HOEAHBIFKCI",
             |m: &GetWaypointScRsp| { &m.HOEAHBIFKCI },
             |m: &mut GetWaypointScRsp| { &mut m.HOEAHBIFKCI },
@@ -62,11 +67,6 @@ impl GetWaypointScRsp {
             "FJJFLKCMIDJ",
             |m: &GetWaypointScRsp| { &m.FJJFLKCMIDJ },
             |m: &mut GetWaypointScRsp| { &mut m.FJJFLKCMIDJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetWaypointScRsp| { &m.retcode },
-            |m: &mut GetWaypointScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetWaypointScRsp>(
             "GetWaypointScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GetWaypointScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.HOEAHBIFKCI = is.read_uint32()?;
-                },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FJJFLKCMIDJ)?;
-                },
                 16 => {
                     self.retcode = is.read_uint32()?;
+                },
+                64 => {
+                    self.HOEAHBIFKCI = is.read_uint32()?;
+                },
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FJJFLKCMIDJ)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for GetWaypointScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+        }
         if self.HOEAHBIFKCI != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.HOEAHBIFKCI);
+            my_size += ::protobuf::rt::uint32_size(8, self.HOEAHBIFKCI);
         }
         if let Some(v) = self.FJJFLKCMIDJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for GetWaypointScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HOEAHBIFKCI != 0 {
-            os.write_uint32(13, self.HOEAHBIFKCI)?;
-        }
-        if let Some(v) = self.FJJFLKCMIDJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
         if self.retcode != 0 {
             os.write_uint32(2, self.retcode)?;
+        }
+        if self.HOEAHBIFKCI != 0 {
+            os.write_uint32(8, self.HOEAHBIFKCI)?;
+        }
+        if let Some(v) = self.FJJFLKCMIDJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for GetWaypointScRsp {
     }
 
     fn clear(&mut self) {
+        self.retcode = 0;
         self.HOEAHBIFKCI = 0;
         self.FJJFLKCMIDJ.clear();
-        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetWaypointScRsp {
         static instance: GetWaypointScRsp = GetWaypointScRsp {
+            retcode: 0,
             HOEAHBIFKCI: 0,
             FJJFLKCMIDJ: ::protobuf::MessageField::none(),
-            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for GetWaypointScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16GetWaypointScRsp.proto\x1a\x11LJJOKGHFIDF.proto\"~\n\x10GetWaypoin\
-    tScRsp\x12\x20\n\x0bHOEAHBIFKCI\x18\r\x20\x01(\rR\x0bHOEAHBIFKCI\x12.\n\
-    \x0bFJJFLKCMIDJ\x18\x06\x20\x01(\x0b2\x0c.LJJOKGHFIDFR\x0bFJJFLKCMIDJ\
-    \x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcodeb\x06proto3\
+    tScRsp\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\x20\n\x0b\
+    HOEAHBIFKCI\x18\x08\x20\x01(\rR\x0bHOEAHBIFKCI\x12.\n\x0bFJJFLKCMIDJ\x18\
+    \x03\x20\x01(\x0b2\x0c.LJJOKGHFIDFR\x0bFJJFLKCMIDJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

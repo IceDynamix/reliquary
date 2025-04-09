@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetNicknameCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetNicknameCsReq.LCEODDKLMGB)
-    pub LCEODDKLMGB: ::std::string::String,
     // @@protoc_insertion_point(field:SetNicknameCsReq.GHOKLDJPICD)
     pub GHOKLDJPICD: bool,
+    // @@protoc_insertion_point(field:SetNicknameCsReq.LCEODDKLMGB)
+    pub LCEODDKLMGB: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:SetNicknameCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl SetNicknameCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LCEODDKLMGB",
-            |m: &SetNicknameCsReq| { &m.LCEODDKLMGB },
-            |m: &mut SetNicknameCsReq| { &mut m.LCEODDKLMGB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GHOKLDJPICD",
             |m: &SetNicknameCsReq| { &m.GHOKLDJPICD },
             |m: &mut SetNicknameCsReq| { &mut m.GHOKLDJPICD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LCEODDKLMGB",
+            |m: &SetNicknameCsReq| { &m.LCEODDKLMGB },
+            |m: &mut SetNicknameCsReq| { &mut m.LCEODDKLMGB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetNicknameCsReq>(
             "SetNicknameCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SetNicknameCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    self.LCEODDKLMGB = is.read_string()?;
-                },
-                32 => {
+                96 => {
                     self.GHOKLDJPICD = is.read_bool()?;
+                },
+                18 => {
+                    self.LCEODDKLMGB = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for SetNicknameCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.LCEODDKLMGB.is_empty() {
-            my_size += ::protobuf::rt::string_size(9, &self.LCEODDKLMGB);
-        }
         if self.GHOKLDJPICD != false {
             my_size += 1 + 1;
+        }
+        if !self.LCEODDKLMGB.is_empty() {
+            my_size += ::protobuf::rt::string_size(2, &self.LCEODDKLMGB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for SetNicknameCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.LCEODDKLMGB.is_empty() {
-            os.write_string(9, &self.LCEODDKLMGB)?;
-        }
         if self.GHOKLDJPICD != false {
-            os.write_bool(4, self.GHOKLDJPICD)?;
+            os.write_bool(12, self.GHOKLDJPICD)?;
+        }
+        if !self.LCEODDKLMGB.is_empty() {
+            os.write_string(2, &self.LCEODDKLMGB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for SetNicknameCsReq {
     }
 
     fn clear(&mut self) {
-        self.LCEODDKLMGB.clear();
         self.GHOKLDJPICD = false;
+        self.LCEODDKLMGB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetNicknameCsReq {
         static instance: SetNicknameCsReq = SetNicknameCsReq {
-            LCEODDKLMGB: ::std::string::String::new(),
             GHOKLDJPICD: false,
+            LCEODDKLMGB: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for SetNicknameCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16SetNicknameCsReq.proto\"V\n\x10SetNicknameCsReq\x12\x20\n\x0bLCEOD\
-    DKLMGB\x18\t\x20\x01(\tR\x0bLCEODDKLMGB\x12\x20\n\x0bGHOKLDJPICD\x18\x04\
-    \x20\x01(\x08R\x0bGHOKLDJPICDb\x06proto3\
+    \n\x16SetNicknameCsReq.proto\"V\n\x10SetNicknameCsReq\x12\x20\n\x0bGHOKL\
+    DJPICD\x18\x0c\x20\x01(\x08R\x0bGHOKLDJPICD\x12\x20\n\x0bLCEODDKLMGB\x18\
+    \x02\x20\x01(\tR\x0bLCEODDKLMGBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

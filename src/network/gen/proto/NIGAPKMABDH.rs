@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NIGAPKMABDH {
     // message fields
-    // @@protoc_insertion_point(field:NIGAPKMABDH.AEDKJJIBAHK)
-    pub AEDKJJIBAHK: bool,
     // @@protoc_insertion_point(field:NIGAPKMABDH.HGAMLLKBGOF)
     pub HGAMLLKBGOF: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:NIGAPKMABDH.PMJIDGLBDMC)
-    pub PMJIDGLBDMC: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:NIGAPKMABDH.KFPFBBNBEEE)
     pub KFPFBBNBEEE: ::protobuf::MessageField<super::Item::Item>,
+    // @@protoc_insertion_point(field:NIGAPKMABDH.AEDKJJIBAHK)
+    pub AEDKJJIBAHK: bool,
+    // @@protoc_insertion_point(field:NIGAPKMABDH.PMJIDGLBDMC)
+    pub PMJIDGLBDMC: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:NIGAPKMABDH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl NIGAPKMABDH {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "HGAMLLKBGOF",
+            |m: &NIGAPKMABDH| { &m.HGAMLLKBGOF },
+            |m: &mut NIGAPKMABDH| { &mut m.HGAMLLKBGOF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::Item::Item>(
+            "KFPFBBNBEEE",
+            |m: &NIGAPKMABDH| { &m.KFPFBBNBEEE },
+            |m: &mut NIGAPKMABDH| { &mut m.KFPFBBNBEEE },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AEDKJJIBAHK",
             |m: &NIGAPKMABDH| { &m.AEDKJJIBAHK },
             |m: &mut NIGAPKMABDH| { &mut m.AEDKJJIBAHK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "HGAMLLKBGOF",
-            |m: &NIGAPKMABDH| { &m.HGAMLLKBGOF },
-            |m: &mut NIGAPKMABDH| { &mut m.HGAMLLKBGOF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "PMJIDGLBDMC",
             |m: &NIGAPKMABDH| { &m.PMJIDGLBDMC },
             |m: &mut NIGAPKMABDH| { &mut m.PMJIDGLBDMC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::Item::Item>(
-            "KFPFBBNBEEE",
-            |m: &NIGAPKMABDH| { &m.KFPFBBNBEEE },
-            |m: &mut NIGAPKMABDH| { &mut m.KFPFBBNBEEE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NIGAPKMABDH>(
             "NIGAPKMABDH",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for NIGAPKMABDH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.AEDKJJIBAHK = is.read_bool()?;
-                },
-                34 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.HGAMLLKBGOF)?;
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PMJIDGLBDMC)?;
-                },
-                58 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.KFPFBBNBEEE)?;
+                },
+                112 => {
+                    self.AEDKJJIBAHK = is.read_bool()?;
+                },
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PMJIDGLBDMC)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for NIGAPKMABDH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AEDKJJIBAHK != false {
-            my_size += 1 + 1;
-        }
         if let Some(v) = self.HGAMLLKBGOF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.PMJIDGLBDMC.as_ref() {
+        if let Some(v) = self.KFPFBBNBEEE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.KFPFBBNBEEE.as_ref() {
+        if self.AEDKJJIBAHK != false {
+            my_size += 1 + 1;
+        }
+        if let Some(v) = self.PMJIDGLBDMC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -138,17 +138,17 @@ impl ::protobuf::Message for NIGAPKMABDH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AEDKJJIBAHK != false {
-            os.write_bool(2, self.AEDKJJIBAHK)?;
-        }
         if let Some(v) = self.HGAMLLKBGOF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
-        if let Some(v) = self.PMJIDGLBDMC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if let Some(v) = self.KFPFBBNBEEE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        }
+        if self.AEDKJJIBAHK != false {
+            os.write_bool(14, self.AEDKJJIBAHK)?;
+        }
+        if let Some(v) = self.PMJIDGLBDMC.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,19 +167,19 @@ impl ::protobuf::Message for NIGAPKMABDH {
     }
 
     fn clear(&mut self) {
-        self.AEDKJJIBAHK = false;
         self.HGAMLLKBGOF.clear();
-        self.PMJIDGLBDMC.clear();
         self.KFPFBBNBEEE.clear();
+        self.AEDKJJIBAHK = false;
+        self.PMJIDGLBDMC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NIGAPKMABDH {
         static instance: NIGAPKMABDH = NIGAPKMABDH {
-            AEDKJJIBAHK: false,
             HGAMLLKBGOF: ::protobuf::MessageField::none(),
-            PMJIDGLBDMC: ::protobuf::MessageField::none(),
             KFPFBBNBEEE: ::protobuf::MessageField::none(),
+            AEDKJJIBAHK: false,
+            PMJIDGLBDMC: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -205,11 +205,11 @@ impl ::protobuf::reflect::ProtobufValue for NIGAPKMABDH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NIGAPKMABDH.proto\x1a\nItem.proto\x1a\x0eItemList.proto\"\xb2\x01\
-    \n\x0bNIGAPKMABDH\x12\x20\n\x0bAEDKJJIBAHK\x18\x02\x20\x01(\x08R\x0bAEDK\
-    JJIBAHK\x12+\n\x0bHGAMLLKBGOF\x18\x04\x20\x01(\x0b2\t.ItemListR\x0bHGAML\
-    LKBGOF\x12+\n\x0bPMJIDGLBDMC\x18\r\x20\x01(\x0b2\t.ItemListR\x0bPMJIDGLB\
-    DMC\x12'\n\x0bKFPFBBNBEEE\x18\x07\x20\x01(\x0b2\x05.ItemR\x0bKFPFBBNBEEE\
-    b\x06proto3\
+    \n\x0bNIGAPKMABDH\x12+\n\x0bHGAMLLKBGOF\x18\x0b\x20\x01(\x0b2\t.ItemList\
+    R\x0bHGAMLLKBGOF\x12'\n\x0bKFPFBBNBEEE\x18\x0f\x20\x01(\x0b2\x05.ItemR\
+    \x0bKFPFBBNBEEE\x12\x20\n\x0bAEDKJJIBAHK\x18\x0e\x20\x01(\x08R\x0bAEDKJJ\
+    IBAHK\x12+\n\x0bPMJIDGLBDMC\x18\x0c\x20\x01(\x0b2\t.ItemListR\x0bPMJIDGL\
+    BDMCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

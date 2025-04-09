@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CurTrialActivityScNotify {
     // message fields
-    // @@protoc_insertion_point(field:CurTrialActivityScNotify.PBLFLJNHMIL)
-    pub PBLFLJNHMIL: ::protobuf::EnumOrUnknown<super::PMIDEHDOBHJ::PMIDEHDOBHJ>,
     // @@protoc_insertion_point(field:CurTrialActivityScNotify.AKBCLHJHODD)
     pub AKBCLHJHODD: u32,
+    // @@protoc_insertion_point(field:CurTrialActivityScNotify.PBLFLJNHMIL)
+    pub PBLFLJNHMIL: ::protobuf::EnumOrUnknown<super::PMIDEHDOBHJ::PMIDEHDOBHJ>,
     // special fields
     // @@protoc_insertion_point(special_field:CurTrialActivityScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl CurTrialActivityScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PBLFLJNHMIL",
-            |m: &CurTrialActivityScNotify| { &m.PBLFLJNHMIL },
-            |m: &mut CurTrialActivityScNotify| { &mut m.PBLFLJNHMIL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AKBCLHJHODD",
             |m: &CurTrialActivityScNotify| { &m.AKBCLHJHODD },
             |m: &mut CurTrialActivityScNotify| { &mut m.AKBCLHJHODD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PBLFLJNHMIL",
+            |m: &CurTrialActivityScNotify| { &m.PBLFLJNHMIL },
+            |m: &mut CurTrialActivityScNotify| { &mut m.PBLFLJNHMIL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CurTrialActivityScNotify>(
             "CurTrialActivityScNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for CurTrialActivityScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.PBLFLJNHMIL = is.read_enum_or_unknown()?;
-                },
-                96 => {
+                48 => {
                     self.AKBCLHJHODD = is.read_uint32()?;
+                },
+                72 => {
+                    self.PBLFLJNHMIL = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for CurTrialActivityScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::PMIDEHDOBHJ::PMIDEHDOBHJ::TRIAL_ACTIVITY_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(10, self.PBLFLJNHMIL.value());
-        }
         if self.AKBCLHJHODD != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.AKBCLHJHODD);
+            my_size += ::protobuf::rt::uint32_size(6, self.AKBCLHJHODD);
+        }
+        if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::PMIDEHDOBHJ::PMIDEHDOBHJ::TRIAL_ACTIVITY_STATUS_NONE) {
+            my_size += ::protobuf::rt::int32_size(9, self.PBLFLJNHMIL.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for CurTrialActivityScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::PMIDEHDOBHJ::PMIDEHDOBHJ::TRIAL_ACTIVITY_STATUS_NONE) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.PBLFLJNHMIL))?;
-        }
         if self.AKBCLHJHODD != 0 {
-            os.write_uint32(12, self.AKBCLHJHODD)?;
+            os.write_uint32(6, self.AKBCLHJHODD)?;
+        }
+        if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::PMIDEHDOBHJ::PMIDEHDOBHJ::TRIAL_ACTIVITY_STATUS_NONE) {
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.PBLFLJNHMIL))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for CurTrialActivityScNotify {
     }
 
     fn clear(&mut self) {
-        self.PBLFLJNHMIL = ::protobuf::EnumOrUnknown::new(super::PMIDEHDOBHJ::PMIDEHDOBHJ::TRIAL_ACTIVITY_STATUS_NONE);
         self.AKBCLHJHODD = 0;
+        self.PBLFLJNHMIL = ::protobuf::EnumOrUnknown::new(super::PMIDEHDOBHJ::PMIDEHDOBHJ::TRIAL_ACTIVITY_STATUS_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CurTrialActivityScNotify {
         static instance: CurTrialActivityScNotify = CurTrialActivityScNotify {
-            PBLFLJNHMIL: ::protobuf::EnumOrUnknown::from_i32(0),
             AKBCLHJHODD: 0,
+            PBLFLJNHMIL: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for CurTrialActivityScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eCurTrialActivityScNotify.proto\x1a\x11PMIDEHDOBHJ.proto\"l\n\x18Cu\
-    rTrialActivityScNotify\x12.\n\x0bPBLFLJNHMIL\x18\n\x20\x01(\x0e2\x0c.PMI\
-    DEHDOBHJR\x0bPBLFLJNHMIL\x12\x20\n\x0bAKBCLHJHODD\x18\x0c\x20\x01(\rR\
-    \x0bAKBCLHJHODDb\x06proto3\
+    rTrialActivityScNotify\x12\x20\n\x0bAKBCLHJHODD\x18\x06\x20\x01(\rR\x0bA\
+    KBCLHJHODD\x12.\n\x0bPBLFLJNHMIL\x18\t\x20\x01(\x0e2\x0c.PMIDEHDOBHJR\
+    \x0bPBLFLJNHMILb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

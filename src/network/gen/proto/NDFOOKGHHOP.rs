@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NDFOOKGHHOP {
     // message fields
-    // @@protoc_insertion_point(field:NDFOOKGHHOP.PIPMGACMJNN)
-    pub PIPMGACMJNN: bool,
     // @@protoc_insertion_point(field:NDFOOKGHHOP.INBJPPAPCAG)
     pub INBJPPAPCAG: u32,
+    // @@protoc_insertion_point(field:NDFOOKGHHOP.PIPMGACMJNN)
+    pub PIPMGACMJNN: bool,
     // @@protoc_insertion_point(field:NDFOOKGHHOP.CEGCKBNDALF)
     pub CEGCKBNDALF: ::std::vec::Vec<u32>,
     // special fields
@@ -54,14 +54,14 @@ impl NDFOOKGHHOP {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PIPMGACMJNN",
-            |m: &NDFOOKGHHOP| { &m.PIPMGACMJNN },
-            |m: &mut NDFOOKGHHOP| { &mut m.PIPMGACMJNN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "INBJPPAPCAG",
             |m: &NDFOOKGHHOP| { &m.INBJPPAPCAG },
             |m: &mut NDFOOKGHHOP| { &mut m.INBJPPAPCAG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PIPMGACMJNN",
+            |m: &NDFOOKGHHOP| { &m.PIPMGACMJNN },
+            |m: &mut NDFOOKGHHOP| { &mut m.PIPMGACMJNN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "CEGCKBNDALF",
@@ -86,16 +86,16 @@ impl ::protobuf::Message for NDFOOKGHHOP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.PIPMGACMJNN = is.read_bool()?;
-                },
-                8 => {
+                72 => {
                     self.INBJPPAPCAG = is.read_uint32()?;
                 },
-                98 => {
+                24 => {
+                    self.PIPMGACMJNN = is.read_bool()?;
+                },
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.CEGCKBNDALF)?;
                 },
-                96 => {
+                104 => {
                     self.CEGCKBNDALF.push(is.read_uint32()?);
                 },
                 tag => {
@@ -110,26 +110,26 @@ impl ::protobuf::Message for NDFOOKGHHOP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.INBJPPAPCAG != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.INBJPPAPCAG);
+        }
         if self.PIPMGACMJNN != false {
             my_size += 1 + 1;
         }
-        if self.INBJPPAPCAG != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.INBJPPAPCAG);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.CEGCKBNDALF);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.CEGCKBNDALF);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PIPMGACMJNN != false {
-            os.write_bool(7, self.PIPMGACMJNN)?;
-        }
         if self.INBJPPAPCAG != 0 {
-            os.write_uint32(1, self.INBJPPAPCAG)?;
+            os.write_uint32(9, self.INBJPPAPCAG)?;
         }
-        os.write_repeated_packed_uint32(12, &self.CEGCKBNDALF)?;
+        if self.PIPMGACMJNN != false {
+            os.write_bool(3, self.PIPMGACMJNN)?;
+        }
+        os.write_repeated_packed_uint32(13, &self.CEGCKBNDALF)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,16 +147,16 @@ impl ::protobuf::Message for NDFOOKGHHOP {
     }
 
     fn clear(&mut self) {
-        self.PIPMGACMJNN = false;
         self.INBJPPAPCAG = 0;
+        self.PIPMGACMJNN = false;
         self.CEGCKBNDALF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NDFOOKGHHOP {
         static instance: NDFOOKGHHOP = NDFOOKGHHOP {
-            PIPMGACMJNN: false,
             INBJPPAPCAG: 0,
+            PIPMGACMJNN: false,
             CEGCKBNDALF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -182,10 +182,10 @@ impl ::protobuf::reflect::ProtobufValue for NDFOOKGHHOP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NDFOOKGHHOP.proto\"s\n\x0bNDFOOKGHHOP\x12\x20\n\x0bPIPMGACMJNN\x18\
-    \x07\x20\x01(\x08R\x0bPIPMGACMJNN\x12\x20\n\x0bINBJPPAPCAG\x18\x01\x20\
-    \x01(\rR\x0bINBJPPAPCAG\x12\x20\n\x0bCEGCKBNDALF\x18\x0c\x20\x03(\rR\x0b\
-    CEGCKBNDALFb\x06proto3\
+    \n\x11NDFOOKGHHOP.proto\"s\n\x0bNDFOOKGHHOP\x12\x20\n\x0bINBJPPAPCAG\x18\
+    \t\x20\x01(\rR\x0bINBJPPAPCAG\x12\x20\n\x0bPIPMGACMJNN\x18\x03\x20\x01(\
+    \x08R\x0bPIPMGACMJNN\x12\x20\n\x0bCEGCKBNDALF\x18\r\x20\x03(\rR\x0bCEGCK\
+    BNDALFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

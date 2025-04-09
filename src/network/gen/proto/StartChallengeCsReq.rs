@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartChallengeCsReq {
     // message fields
-    // @@protoc_insertion_point(field:StartChallengeCsReq.HEHAEIHKGNA)
-    pub HEHAEIHKGNA: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:StartChallengeCsReq.CFAAFJJAADP)
     pub CFAAFJJAADP: u32,
+    // @@protoc_insertion_point(field:StartChallengeCsReq.HEHAEIHKGNA)
+    pub HEHAEIHKGNA: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:StartChallengeCsReq.IPHNKFJCKGP)
     pub IPHNKFJCKGP: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:StartChallengeCsReq.MIFOLPKEOOO)
@@ -55,15 +55,15 @@ impl StartChallengeCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HEHAEIHKGNA",
-            |m: &StartChallengeCsReq| { &m.HEHAEIHKGNA },
-            |m: &mut StartChallengeCsReq| { &mut m.HEHAEIHKGNA },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CFAAFJJAADP",
             |m: &StartChallengeCsReq| { &m.CFAAFJJAADP },
             |m: &mut StartChallengeCsReq| { &mut m.CFAAFJJAADP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "HEHAEIHKGNA",
+            |m: &StartChallengeCsReq| { &m.HEHAEIHKGNA },
+            |m: &mut StartChallengeCsReq| { &mut m.HEHAEIHKGNA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "IPHNKFJCKGP",
@@ -93,22 +93,22 @@ impl ::protobuf::Message for StartChallengeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.HEHAEIHKGNA)?;
-                },
-                72 => {
-                    self.HEHAEIHKGNA.push(is.read_uint32()?);
-                },
-                88 => {
+                24 => {
                     self.CFAAFJJAADP = is.read_uint32()?;
                 },
                 82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.IPHNKFJCKGP)?;
+                    is.read_repeated_packed_uint32_into(&mut self.HEHAEIHKGNA)?;
                 },
                 80 => {
+                    self.HEHAEIHKGNA.push(is.read_uint32()?);
+                },
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.IPHNKFJCKGP)?;
+                },
+                120 => {
                     self.IPHNKFJCKGP.push(is.read_uint32()?);
                 },
-                18 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MIFOLPKEOOO)?;
                 },
                 tag => {
@@ -123,11 +123,11 @@ impl ::protobuf::Message for StartChallengeCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.HEHAEIHKGNA);
         if self.CFAAFJJAADP != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.CFAAFJJAADP);
+            my_size += ::protobuf::rt::uint32_size(3, self.CFAAFJJAADP);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.IPHNKFJCKGP);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.HEHAEIHKGNA);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.IPHNKFJCKGP);
         if let Some(v) = self.MIFOLPKEOOO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -138,13 +138,13 @@ impl ::protobuf::Message for StartChallengeCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(9, &self.HEHAEIHKGNA)?;
         if self.CFAAFJJAADP != 0 {
-            os.write_uint32(11, self.CFAAFJJAADP)?;
+            os.write_uint32(3, self.CFAAFJJAADP)?;
         }
-        os.write_repeated_packed_uint32(10, &self.IPHNKFJCKGP)?;
+        os.write_repeated_packed_uint32(10, &self.HEHAEIHKGNA)?;
+        os.write_repeated_packed_uint32(15, &self.IPHNKFJCKGP)?;
         if let Some(v) = self.MIFOLPKEOOO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -163,8 +163,8 @@ impl ::protobuf::Message for StartChallengeCsReq {
     }
 
     fn clear(&mut self) {
-        self.HEHAEIHKGNA.clear();
         self.CFAAFJJAADP = 0;
+        self.HEHAEIHKGNA.clear();
         self.IPHNKFJCKGP.clear();
         self.MIFOLPKEOOO.clear();
         self.special_fields.clear();
@@ -172,8 +172,8 @@ impl ::protobuf::Message for StartChallengeCsReq {
 
     fn default_instance() -> &'static StartChallengeCsReq {
         static instance: StartChallengeCsReq = StartChallengeCsReq {
-            HEHAEIHKGNA: ::std::vec::Vec::new(),
             CFAAFJJAADP: 0,
+            HEHAEIHKGNA: ::std::vec::Vec::new(),
             IPHNKFJCKGP: ::std::vec::Vec::new(),
             MIFOLPKEOOO: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for StartChallengeCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19StartChallengeCsReq.proto\x1a\x11DAANGNNPKMG.proto\"\xab\x01\n\x13\
-    StartChallengeCsReq\x12\x20\n\x0bHEHAEIHKGNA\x18\t\x20\x03(\rR\x0bHEHAEI\
-    HKGNA\x12\x20\n\x0bCFAAFJJAADP\x18\x0b\x20\x01(\rR\x0bCFAAFJJAADP\x12\
-    \x20\n\x0bIPHNKFJCKGP\x18\n\x20\x03(\rR\x0bIPHNKFJCKGP\x12.\n\x0bMIFOLPK\
-    EOOO\x18\x02\x20\x01(\x0b2\x0c.DAANGNNPKMGR\x0bMIFOLPKEOOOb\x06proto3\
+    StartChallengeCsReq\x12\x20\n\x0bCFAAFJJAADP\x18\x03\x20\x01(\rR\x0bCFAA\
+    FJJAADP\x12\x20\n\x0bHEHAEIHKGNA\x18\n\x20\x03(\rR\x0bHEHAEIHKGNA\x12\
+    \x20\n\x0bIPHNKFJCKGP\x18\x0f\x20\x03(\rR\x0bIPHNKFJCKGP\x12.\n\x0bMIFOL\
+    PKEOOO\x18\x0e\x20\x01(\x0b2\x0c.DAANGNNPKMGR\x0bMIFOLPKEOOOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

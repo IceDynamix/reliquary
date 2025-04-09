@@ -30,16 +30,16 @@ pub struct PABLFGKIOGI {
     // message fields
     // @@protoc_insertion_point(field:PABLFGKIOGI.INHDDNNPBDB)
     pub INHDDNNPBDB: u32,
-    // @@protoc_insertion_point(field:PABLFGKIOGI.DNPHCJEBIKB)
-    pub DNPHCJEBIKB: u32,
-    // @@protoc_insertion_point(field:PABLFGKIOGI.BMKPHJICOKC)
-    pub BMKPHJICOKC: ::std::vec::Vec<super::EIOAFODNCOJ::EIOAFODNCOJ>,
+    // @@protoc_insertion_point(field:PABLFGKIOGI.FOIGOJDODMD)
+    pub FOIGOJDODMD: u32,
     // @@protoc_insertion_point(field:PABLFGKIOGI.CBPJJPONCNG)
     pub CBPJJPONCNG: u32,
     // @@protoc_insertion_point(field:PABLFGKIOGI.level)
     pub level: u32,
-    // @@protoc_insertion_point(field:PABLFGKIOGI.FOIGOJDODMD)
-    pub FOIGOJDODMD: u32,
+    // @@protoc_insertion_point(field:PABLFGKIOGI.BMKPHJICOKC)
+    pub BMKPHJICOKC: ::std::vec::Vec<super::EIOAFODNCOJ::EIOAFODNCOJ>,
+    // @@protoc_insertion_point(field:PABLFGKIOGI.DNPHCJEBIKB)
+    pub DNPHCJEBIKB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PABLFGKIOGI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,14 +65,9 @@ impl PABLFGKIOGI {
             |m: &mut PABLFGKIOGI| { &mut m.INHDDNNPBDB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DNPHCJEBIKB",
-            |m: &PABLFGKIOGI| { &m.DNPHCJEBIKB },
-            |m: &mut PABLFGKIOGI| { &mut m.DNPHCJEBIKB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BMKPHJICOKC",
-            |m: &PABLFGKIOGI| { &m.BMKPHJICOKC },
-            |m: &mut PABLFGKIOGI| { &mut m.BMKPHJICOKC },
+            "FOIGOJDODMD",
+            |m: &PABLFGKIOGI| { &m.FOIGOJDODMD },
+            |m: &mut PABLFGKIOGI| { &mut m.FOIGOJDODMD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CBPJJPONCNG",
@@ -84,10 +79,15 @@ impl PABLFGKIOGI {
             |m: &PABLFGKIOGI| { &m.level },
             |m: &mut PABLFGKIOGI| { &mut m.level },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "BMKPHJICOKC",
+            |m: &PABLFGKIOGI| { &m.BMKPHJICOKC },
+            |m: &mut PABLFGKIOGI| { &mut m.BMKPHJICOKC },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FOIGOJDODMD",
-            |m: &PABLFGKIOGI| { &m.FOIGOJDODMD },
-            |m: &mut PABLFGKIOGI| { &mut m.FOIGOJDODMD },
+            "DNPHCJEBIKB",
+            |m: &PABLFGKIOGI| { &m.DNPHCJEBIKB },
+            |m: &mut PABLFGKIOGI| { &mut m.DNPHCJEBIKB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PABLFGKIOGI>(
             "PABLFGKIOGI",
@@ -110,20 +110,20 @@ impl ::protobuf::Message for PABLFGKIOGI {
                 8 => {
                     self.INHDDNNPBDB = is.read_uint32()?;
                 },
+                72 => {
+                    self.FOIGOJDODMD = is.read_uint32()?;
+                },
                 88 => {
-                    self.DNPHCJEBIKB = is.read_uint32()?;
-                },
-                106 => {
-                    self.BMKPHJICOKC.push(is.read_message()?);
-                },
-                16 => {
                     self.CBPJJPONCNG = is.read_uint32()?;
                 },
-                24 => {
+                40 => {
                     self.level = is.read_uint32()?;
                 },
-                64 => {
-                    self.FOIGOJDODMD = is.read_uint32()?;
+                82 => {
+                    self.BMKPHJICOKC.push(is.read_message()?);
+                },
+                24 => {
+                    self.DNPHCJEBIKB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,21 +140,21 @@ impl ::protobuf::Message for PABLFGKIOGI {
         if self.INHDDNNPBDB != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.INHDDNNPBDB);
         }
-        if self.DNPHCJEBIKB != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.DNPHCJEBIKB);
+        if self.FOIGOJDODMD != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.FOIGOJDODMD);
+        }
+        if self.CBPJJPONCNG != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.CBPJJPONCNG);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.level);
         }
         for value in &self.BMKPHJICOKC {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.CBPJJPONCNG != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.CBPJJPONCNG);
-        }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.level);
-        }
-        if self.FOIGOJDODMD != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.FOIGOJDODMD);
+        if self.DNPHCJEBIKB != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.DNPHCJEBIKB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -165,20 +165,20 @@ impl ::protobuf::Message for PABLFGKIOGI {
         if self.INHDDNNPBDB != 0 {
             os.write_uint32(1, self.INHDDNNPBDB)?;
         }
-        if self.DNPHCJEBIKB != 0 {
-            os.write_uint32(11, self.DNPHCJEBIKB)?;
+        if self.FOIGOJDODMD != 0 {
+            os.write_uint32(9, self.FOIGOJDODMD)?;
         }
-        for v in &self.BMKPHJICOKC {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        };
         if self.CBPJJPONCNG != 0 {
-            os.write_uint32(2, self.CBPJJPONCNG)?;
+            os.write_uint32(11, self.CBPJJPONCNG)?;
         }
         if self.level != 0 {
-            os.write_uint32(3, self.level)?;
+            os.write_uint32(5, self.level)?;
         }
-        if self.FOIGOJDODMD != 0 {
-            os.write_uint32(8, self.FOIGOJDODMD)?;
+        for v in &self.BMKPHJICOKC {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        };
+        if self.DNPHCJEBIKB != 0 {
+            os.write_uint32(3, self.DNPHCJEBIKB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -198,22 +198,22 @@ impl ::protobuf::Message for PABLFGKIOGI {
 
     fn clear(&mut self) {
         self.INHDDNNPBDB = 0;
-        self.DNPHCJEBIKB = 0;
-        self.BMKPHJICOKC.clear();
+        self.FOIGOJDODMD = 0;
         self.CBPJJPONCNG = 0;
         self.level = 0;
-        self.FOIGOJDODMD = 0;
+        self.BMKPHJICOKC.clear();
+        self.DNPHCJEBIKB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PABLFGKIOGI {
         static instance: PABLFGKIOGI = PABLFGKIOGI {
             INHDDNNPBDB: 0,
-            DNPHCJEBIKB: 0,
-            BMKPHJICOKC: ::std::vec::Vec::new(),
+            FOIGOJDODMD: 0,
             CBPJJPONCNG: 0,
             level: 0,
-            FOIGOJDODMD: 0,
+            BMKPHJICOKC: ::std::vec::Vec::new(),
+            DNPHCJEBIKB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -240,11 +240,11 @@ impl ::protobuf::reflect::ProtobufValue for PABLFGKIOGI {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PABLFGKIOGI.proto\x1a\x11EIOAFODNCOJ.proto\"\xdb\x01\n\x0bPABLFGKI\
     OGI\x12\x20\n\x0bINHDDNNPBDB\x18\x01\x20\x01(\rR\x0bINHDDNNPBDB\x12\x20\
-    \n\x0bDNPHCJEBIKB\x18\x0b\x20\x01(\rR\x0bDNPHCJEBIKB\x12.\n\x0bBMKPHJICO\
-    KC\x18\r\x20\x03(\x0b2\x0c.EIOAFODNCOJR\x0bBMKPHJICOKC\x12\x20\n\x0bCBPJ\
-    JPONCNG\x18\x02\x20\x01(\rR\x0bCBPJJPONCNG\x12\x14\n\x05level\x18\x03\
-    \x20\x01(\rR\x05level\x12\x20\n\x0bFOIGOJDODMD\x18\x08\x20\x01(\rR\x0bFO\
-    IGOJDODMDb\x06proto3\
+    \n\x0bFOIGOJDODMD\x18\t\x20\x01(\rR\x0bFOIGOJDODMD\x12\x20\n\x0bCBPJJPON\
+    CNG\x18\x0b\x20\x01(\rR\x0bCBPJJPONCNG\x12\x14\n\x05level\x18\x05\x20\
+    \x01(\rR\x05level\x12.\n\x0bBMKPHJICOKC\x18\n\x20\x03(\x0b2\x0c.EIOAFODN\
+    COJR\x0bBMKPHJICOKC\x12\x20\n\x0bDNPHCJEBIKB\x18\x03\x20\x01(\rR\x0bDNPH\
+    CJEBIKBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

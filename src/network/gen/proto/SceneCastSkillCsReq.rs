@@ -28,28 +28,28 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneCastSkillCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SceneCastSkillCsReq.HCHDHLJCIJE)
-    pub HCHDHLJCIJE: u32,
-    // @@protoc_insertion_point(field:SceneCastSkillCsReq.ILNOKKFMFBE)
-    pub ILNOKKFMFBE: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:SceneCastSkillCsReq.BPMDFENIDBF)
-    pub BPMDFENIDBF: u32,
-    // @@protoc_insertion_point(field:SceneCastSkillCsReq.KIAIPABLKJD)
-    pub KIAIPABLKJD: ::std::vec::Vec<super::CNHNPJJDIGD::CNHNPJJDIGD>,
-    // @@protoc_insertion_point(field:SceneCastSkillCsReq.FOOAJKAKNLN)
-    pub FOOAJKAKNLN: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::PCGMIEAKELG::PCGMIEAKELG>>,
-    // @@protoc_insertion_point(field:SceneCastSkillCsReq.EMNMEOOOJBH)
-    pub EMNMEOOOJBH: u32,
-    // @@protoc_insertion_point(field:SceneCastSkillCsReq.LNJDMBPOGHH)
-    pub LNJDMBPOGHH: u32,
     // @@protoc_insertion_point(field:SceneCastSkillCsReq.FFLCDIDILDG)
     pub FFLCDIDILDG: ::protobuf::MessageField<super::CFKHKILIHHF::CFKHKILIHHF>,
-    // @@protoc_insertion_point(field:SceneCastSkillCsReq.EDIDAHIELAG)
-    pub EDIDAHIELAG: ::std::vec::Vec<super::JNHLELNABBD::JNHLELNABBD>,
     // @@protoc_insertion_point(field:SceneCastSkillCsReq.FILFACPLHBN)
     pub FILFACPLHBN: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SceneCastSkillCsReq.LNJDMBPOGHH)
+    pub LNJDMBPOGHH: u32,
+    // @@protoc_insertion_point(field:SceneCastSkillCsReq.EMNMEOOOJBH)
+    pub EMNMEOOOJBH: u32,
+    // @@protoc_insertion_point(field:SceneCastSkillCsReq.ILNOKKFMFBE)
+    pub ILNOKKFMFBE: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SceneCastSkillCsReq.HCHDHLJCIJE)
+    pub HCHDHLJCIJE: u32,
+    // @@protoc_insertion_point(field:SceneCastSkillCsReq.EDIDAHIELAG)
+    pub EDIDAHIELAG: ::std::vec::Vec<super::JNHLELNABBD::JNHLELNABBD>,
+    // @@protoc_insertion_point(field:SceneCastSkillCsReq.KIAIPABLKJD)
+    pub KIAIPABLKJD: ::std::vec::Vec<super::CNHNPJJDIGD::CNHNPJJDIGD>,
+    // @@protoc_insertion_point(field:SceneCastSkillCsReq.BPMDFENIDBF)
+    pub BPMDFENIDBF: u32,
     // @@protoc_insertion_point(field:SceneCastSkillCsReq.KEGDFIMPNKH)
     pub KEGDFIMPNKH: ::std::string::String,
+    // @@protoc_insertion_point(field:SceneCastSkillCsReq.FOOAJKAKNLN)
+    pub FOOAJKAKNLN: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::PCGMIEAKELG::PCGMIEAKELG>>,
     // special fields
     // @@protoc_insertion_point(special_field:SceneCastSkillCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -69,50 +69,10 @@ impl SceneCastSkillCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(11);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HCHDHLJCIJE",
-            |m: &SceneCastSkillCsReq| { &m.HCHDHLJCIJE },
-            |m: &mut SceneCastSkillCsReq| { &mut m.HCHDHLJCIJE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ILNOKKFMFBE",
-            |m: &SceneCastSkillCsReq| { &m.ILNOKKFMFBE },
-            |m: &mut SceneCastSkillCsReq| { &mut m.ILNOKKFMFBE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BPMDFENIDBF",
-            |m: &SceneCastSkillCsReq| { &m.BPMDFENIDBF },
-            |m: &mut SceneCastSkillCsReq| { &mut m.BPMDFENIDBF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KIAIPABLKJD",
-            |m: &SceneCastSkillCsReq| { &m.KIAIPABLKJD },
-            |m: &mut SceneCastSkillCsReq| { &mut m.KIAIPABLKJD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FOOAJKAKNLN",
-            |m: &SceneCastSkillCsReq| { &m.FOOAJKAKNLN },
-            |m: &mut SceneCastSkillCsReq| { &mut m.FOOAJKAKNLN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EMNMEOOOJBH",
-            |m: &SceneCastSkillCsReq| { &m.EMNMEOOOJBH },
-            |m: &mut SceneCastSkillCsReq| { &mut m.EMNMEOOOJBH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LNJDMBPOGHH",
-            |m: &SceneCastSkillCsReq| { &m.LNJDMBPOGHH },
-            |m: &mut SceneCastSkillCsReq| { &mut m.LNJDMBPOGHH },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CFKHKILIHHF::CFKHKILIHHF>(
             "FFLCDIDILDG",
             |m: &SceneCastSkillCsReq| { &m.FFLCDIDILDG },
             |m: &mut SceneCastSkillCsReq| { &mut m.FFLCDIDILDG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EDIDAHIELAG",
-            |m: &SceneCastSkillCsReq| { &m.EDIDAHIELAG },
-            |m: &mut SceneCastSkillCsReq| { &mut m.EDIDAHIELAG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "FILFACPLHBN",
@@ -120,9 +80,49 @@ impl SceneCastSkillCsReq {
             |m: &mut SceneCastSkillCsReq| { &mut m.FILFACPLHBN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LNJDMBPOGHH",
+            |m: &SceneCastSkillCsReq| { &m.LNJDMBPOGHH },
+            |m: &mut SceneCastSkillCsReq| { &mut m.LNJDMBPOGHH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EMNMEOOOJBH",
+            |m: &SceneCastSkillCsReq| { &m.EMNMEOOOJBH },
+            |m: &mut SceneCastSkillCsReq| { &mut m.EMNMEOOOJBH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "ILNOKKFMFBE",
+            |m: &SceneCastSkillCsReq| { &m.ILNOKKFMFBE },
+            |m: &mut SceneCastSkillCsReq| { &mut m.ILNOKKFMFBE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HCHDHLJCIJE",
+            |m: &SceneCastSkillCsReq| { &m.HCHDHLJCIJE },
+            |m: &mut SceneCastSkillCsReq| { &mut m.HCHDHLJCIJE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "EDIDAHIELAG",
+            |m: &SceneCastSkillCsReq| { &m.EDIDAHIELAG },
+            |m: &mut SceneCastSkillCsReq| { &mut m.EDIDAHIELAG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "KIAIPABLKJD",
+            |m: &SceneCastSkillCsReq| { &m.KIAIPABLKJD },
+            |m: &mut SceneCastSkillCsReq| { &mut m.KIAIPABLKJD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BPMDFENIDBF",
+            |m: &SceneCastSkillCsReq| { &m.BPMDFENIDBF },
+            |m: &mut SceneCastSkillCsReq| { &mut m.BPMDFENIDBF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KEGDFIMPNKH",
             |m: &SceneCastSkillCsReq| { &m.KEGDFIMPNKH },
             |m: &mut SceneCastSkillCsReq| { &mut m.KEGDFIMPNKH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FOOAJKAKNLN",
+            |m: &SceneCastSkillCsReq| { &m.FOOAJKAKNLN },
+            |m: &mut SceneCastSkillCsReq| { &mut m.FOOAJKAKNLN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SceneCastSkillCsReq>(
             "SceneCastSkillCsReq",
@@ -142,47 +142,47 @@ impl ::protobuf::Message for SceneCastSkillCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.HCHDHLJCIJE = is.read_uint32()?;
-                },
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.ILNOKKFMFBE)?;
-                },
-                32 => {
-                    self.ILNOKKFMFBE.push(is.read_uint32()?);
-                },
-                112 => {
-                    self.BPMDFENIDBF = is.read_uint32()?;
-                },
-                82 => {
-                    self.KIAIPABLKJD.push(is.read_message()?);
-                },
-                88 => {
-                    self.FOOAJKAKNLN.push(is.read_enum_or_unknown()?);
-                },
-                90 => {
-                    ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.FOOAJKAKNLN)?
-                },
-                96 => {
-                    self.EMNMEOOOJBH = is.read_uint32()?;
-                },
-                64 => {
-                    self.LNJDMBPOGHH = is.read_uint32()?;
-                },
-                74 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FFLCDIDILDG)?;
                 },
-                26 => {
-                    self.EDIDAHIELAG.push(is.read_message()?);
-                },
-                18 => {
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.FILFACPLHBN)?;
                 },
-                16 => {
+                96 => {
                     self.FILFACPLHBN.push(is.read_uint32()?);
                 },
-                122 => {
+                56 => {
+                    self.LNJDMBPOGHH = is.read_uint32()?;
+                },
+                112 => {
+                    self.EMNMEOOOJBH = is.read_uint32()?;
+                },
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.ILNOKKFMFBE)?;
+                },
+                64 => {
+                    self.ILNOKKFMFBE.push(is.read_uint32()?);
+                },
+                88 => {
+                    self.HCHDHLJCIJE = is.read_uint32()?;
+                },
+                18 => {
+                    self.EDIDAHIELAG.push(is.read_message()?);
+                },
+                34 => {
+                    self.KIAIPABLKJD.push(is.read_message()?);
+                },
+                48 => {
+                    self.BPMDFENIDBF = is.read_uint32()?;
+                },
+                10 => {
                     self.KEGDFIMPNKH = is.read_string()?;
+                },
+                120 => {
+                    self.FOOAJKAKNLN.push(is.read_enum_or_unknown()?);
+                },
+                122 => {
+                    ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.FOOAJKAKNLN)?
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -196,69 +196,69 @@ impl ::protobuf::Message for SceneCastSkillCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HCHDHLJCIJE != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.HCHDHLJCIJE);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.ILNOKKFMFBE);
-        if self.BPMDFENIDBF != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.BPMDFENIDBF);
-        }
-        for value in &self.KIAIPABLKJD {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(11, &self.FOOAJKAKNLN);
-        if self.EMNMEOOOJBH != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.EMNMEOOOJBH);
-        }
-        if self.LNJDMBPOGHH != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.LNJDMBPOGHH);
-        }
         if let Some(v) = self.FFLCDIDILDG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.FILFACPLHBN);
+        if self.LNJDMBPOGHH != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.LNJDMBPOGHH);
+        }
+        if self.EMNMEOOOJBH != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.EMNMEOOOJBH);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.ILNOKKFMFBE);
+        if self.HCHDHLJCIJE != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.HCHDHLJCIJE);
         }
         for value in &self.EDIDAHIELAG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.FILFACPLHBN);
-        if !self.KEGDFIMPNKH.is_empty() {
-            my_size += ::protobuf::rt::string_size(15, &self.KEGDFIMPNKH);
+        for value in &self.KIAIPABLKJD {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.BPMDFENIDBF != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.BPMDFENIDBF);
         }
+        if !self.KEGDFIMPNKH.is_empty() {
+            my_size += ::protobuf::rt::string_size(1, &self.KEGDFIMPNKH);
+        }
+        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(15, &self.FOOAJKAKNLN);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HCHDHLJCIJE != 0 {
-            os.write_uint32(1, self.HCHDHLJCIJE)?;
-        }
-        os.write_repeated_packed_uint32(4, &self.ILNOKKFMFBE)?;
-        if self.BPMDFENIDBF != 0 {
-            os.write_uint32(14, self.BPMDFENIDBF)?;
-        }
-        for v in &self.KIAIPABLKJD {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        };
-        os.write_repeated_packed_enum_or_unknown(11, &self.FOOAJKAKNLN)?;
-        if self.EMNMEOOOJBH != 0 {
-            os.write_uint32(12, self.EMNMEOOOJBH)?;
-        }
-        if self.LNJDMBPOGHH != 0 {
-            os.write_uint32(8, self.LNJDMBPOGHH)?;
-        }
         if let Some(v) = self.FFLCDIDILDG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        }
+        os.write_repeated_packed_uint32(12, &self.FILFACPLHBN)?;
+        if self.LNJDMBPOGHH != 0 {
+            os.write_uint32(7, self.LNJDMBPOGHH)?;
+        }
+        if self.EMNMEOOOJBH != 0 {
+            os.write_uint32(14, self.EMNMEOOOJBH)?;
+        }
+        os.write_repeated_packed_uint32(8, &self.ILNOKKFMFBE)?;
+        if self.HCHDHLJCIJE != 0 {
+            os.write_uint32(11, self.HCHDHLJCIJE)?;
         }
         for v in &self.EDIDAHIELAG {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
-        os.write_repeated_packed_uint32(2, &self.FILFACPLHBN)?;
-        if !self.KEGDFIMPNKH.is_empty() {
-            os.write_string(15, &self.KEGDFIMPNKH)?;
+        for v in &self.KIAIPABLKJD {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        };
+        if self.BPMDFENIDBF != 0 {
+            os.write_uint32(6, self.BPMDFENIDBF)?;
         }
+        if !self.KEGDFIMPNKH.is_empty() {
+            os.write_string(1, &self.KEGDFIMPNKH)?;
+        }
+        os.write_repeated_packed_enum_or_unknown(15, &self.FOOAJKAKNLN)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -276,33 +276,33 @@ impl ::protobuf::Message for SceneCastSkillCsReq {
     }
 
     fn clear(&mut self) {
-        self.HCHDHLJCIJE = 0;
-        self.ILNOKKFMFBE.clear();
-        self.BPMDFENIDBF = 0;
-        self.KIAIPABLKJD.clear();
-        self.FOOAJKAKNLN.clear();
-        self.EMNMEOOOJBH = 0;
-        self.LNJDMBPOGHH = 0;
         self.FFLCDIDILDG.clear();
-        self.EDIDAHIELAG.clear();
         self.FILFACPLHBN.clear();
+        self.LNJDMBPOGHH = 0;
+        self.EMNMEOOOJBH = 0;
+        self.ILNOKKFMFBE.clear();
+        self.HCHDHLJCIJE = 0;
+        self.EDIDAHIELAG.clear();
+        self.KIAIPABLKJD.clear();
+        self.BPMDFENIDBF = 0;
         self.KEGDFIMPNKH.clear();
+        self.FOOAJKAKNLN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneCastSkillCsReq {
         static instance: SceneCastSkillCsReq = SceneCastSkillCsReq {
-            HCHDHLJCIJE: 0,
-            ILNOKKFMFBE: ::std::vec::Vec::new(),
-            BPMDFENIDBF: 0,
-            KIAIPABLKJD: ::std::vec::Vec::new(),
-            FOOAJKAKNLN: ::std::vec::Vec::new(),
-            EMNMEOOOJBH: 0,
-            LNJDMBPOGHH: 0,
             FFLCDIDILDG: ::protobuf::MessageField::none(),
-            EDIDAHIELAG: ::std::vec::Vec::new(),
             FILFACPLHBN: ::std::vec::Vec::new(),
+            LNJDMBPOGHH: 0,
+            EMNMEOOOJBH: 0,
+            ILNOKKFMFBE: ::std::vec::Vec::new(),
+            HCHDHLJCIJE: 0,
+            EDIDAHIELAG: ::std::vec::Vec::new(),
+            KIAIPABLKJD: ::std::vec::Vec::new(),
+            BPMDFENIDBF: 0,
             KEGDFIMPNKH: ::std::string::String::new(),
+            FOOAJKAKNLN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -329,17 +329,17 @@ impl ::protobuf::reflect::ProtobufValue for SceneCastSkillCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19SceneCastSkillCsReq.proto\x1a\x11CFKHKILIHHF.proto\x1a\x11CNHNPJJD\
     IGD.proto\x1a\x11JNHLELNABBD.proto\x1a\x11PCGMIEAKELG.proto\"\xc3\x03\n\
-    \x13SceneCastSkillCsReq\x12\x20\n\x0bHCHDHLJCIJE\x18\x01\x20\x01(\rR\x0b\
-    HCHDHLJCIJE\x12\x20\n\x0bILNOKKFMFBE\x18\x04\x20\x03(\rR\x0bILNOKKFMFBE\
-    \x12\x20\n\x0bBPMDFENIDBF\x18\x0e\x20\x01(\rR\x0bBPMDFENIDBF\x12.\n\x0bK\
-    IAIPABLKJD\x18\n\x20\x03(\x0b2\x0c.CNHNPJJDIGDR\x0bKIAIPABLKJD\x12.\n\
-    \x0bFOOAJKAKNLN\x18\x0b\x20\x03(\x0e2\x0c.PCGMIEAKELGR\x0bFOOAJKAKNLN\
-    \x12\x20\n\x0bEMNMEOOOJBH\x18\x0c\x20\x01(\rR\x0bEMNMEOOOJBH\x12\x20\n\
-    \x0bLNJDMBPOGHH\x18\x08\x20\x01(\rR\x0bLNJDMBPOGHH\x12.\n\x0bFFLCDIDILDG\
-    \x18\t\x20\x01(\x0b2\x0c.CFKHKILIHHFR\x0bFFLCDIDILDG\x12.\n\x0bEDIDAHIEL\
-    AG\x18\x03\x20\x03(\x0b2\x0c.JNHLELNABBDR\x0bEDIDAHIELAG\x12\x20\n\x0bFI\
-    LFACPLHBN\x18\x02\x20\x03(\rR\x0bFILFACPLHBN\x12\x20\n\x0bKEGDFIMPNKH\
-    \x18\x0f\x20\x01(\tR\x0bKEGDFIMPNKHb\x06proto3\
+    \x13SceneCastSkillCsReq\x12.\n\x0bFFLCDIDILDG\x18\r\x20\x01(\x0b2\x0c.CF\
+    KHKILIHHFR\x0bFFLCDIDILDG\x12\x20\n\x0bFILFACPLHBN\x18\x0c\x20\x03(\rR\
+    \x0bFILFACPLHBN\x12\x20\n\x0bLNJDMBPOGHH\x18\x07\x20\x01(\rR\x0bLNJDMBPO\
+    GHH\x12\x20\n\x0bEMNMEOOOJBH\x18\x0e\x20\x01(\rR\x0bEMNMEOOOJBH\x12\x20\
+    \n\x0bILNOKKFMFBE\x18\x08\x20\x03(\rR\x0bILNOKKFMFBE\x12\x20\n\x0bHCHDHL\
+    JCIJE\x18\x0b\x20\x01(\rR\x0bHCHDHLJCIJE\x12.\n\x0bEDIDAHIELAG\x18\x02\
+    \x20\x03(\x0b2\x0c.JNHLELNABBDR\x0bEDIDAHIELAG\x12.\n\x0bKIAIPABLKJD\x18\
+    \x04\x20\x03(\x0b2\x0c.CNHNPJJDIGDR\x0bKIAIPABLKJD\x12\x20\n\x0bBPMDFENI\
+    DBF\x18\x06\x20\x01(\rR\x0bBPMDFENIDBF\x12\x20\n\x0bKEGDFIMPNKH\x18\x01\
+    \x20\x01(\tR\x0bKEGDFIMPNKH\x12.\n\x0bFOOAJKAKNLN\x18\x0f\x20\x03(\x0e2\
+    \x0c.PCGMIEAKELGR\x0bFOOAJKAKNLNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

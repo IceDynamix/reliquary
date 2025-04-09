@@ -79,10 +79,10 @@ impl ::protobuf::Message for TakeRogueAeonLevelRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                64 => {
                     self.level = is.read_uint32()?;
                 },
-                32 => {
+                16 => {
                     self.ELAPPCMELOA = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for TakeRogueAeonLevelRewardCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.level);
+            my_size += ::protobuf::rt::uint32_size(8, self.level);
         }
         if self.ELAPPCMELOA != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.ELAPPCMELOA);
+            my_size += ::protobuf::rt::uint32_size(2, self.ELAPPCMELOA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for TakeRogueAeonLevelRewardCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.level != 0 {
-            os.write_uint32(14, self.level)?;
+            os.write_uint32(8, self.level)?;
         }
         if self.ELAPPCMELOA != 0 {
-            os.write_uint32(4, self.ELAPPCMELOA)?;
+            os.write_uint32(2, self.ELAPPCMELOA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for TakeRogueAeonLevelRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#TakeRogueAeonLevelRewardCsReq.proto\"W\n\x1dTakeRogueAeonLevelRewardC\
-    sReq\x12\x14\n\x05level\x18\x0e\x20\x01(\rR\x05level\x12\x20\n\x0bELAPPC\
-    MELOA\x18\x04\x20\x01(\rR\x0bELAPPCMELOAb\x06proto3\
+    sReq\x12\x14\n\x05level\x18\x08\x20\x01(\rR\x05level\x12\x20\n\x0bELAPPC\
+    MELOA\x18\x02\x20\x01(\rR\x0bELAPPCMELOAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournQueryScRsp {
     // message fields
+    // @@protoc_insertion_point(field:RogueTournQueryScRsp.LAGBGLDLGCB)
+    pub LAGBGLDLGCB: ::protobuf::MessageField<super::CHGGGEGAMDI::CHGGGEGAMDI>,
     // @@protoc_insertion_point(field:RogueTournQueryScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:RogueTournQueryScRsp.BHMHLPCHKLG)
     pub BHMHLPCHKLG: ::protobuf::MessageField<super::CFCDHLPOOGC::CFCDHLPOOGC>,
-    // @@protoc_insertion_point(field:RogueTournQueryScRsp.LAGBGLDLGCB)
-    pub LAGBGLDLGCB: ::protobuf::MessageField<super::CHGGGEGAMDI::CHGGGEGAMDI>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournQueryScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,6 +53,11 @@ impl RogueTournQueryScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CHGGGEGAMDI::CHGGGEGAMDI>(
+            "LAGBGLDLGCB",
+            |m: &RogueTournQueryScRsp| { &m.LAGBGLDLGCB },
+            |m: &mut RogueTournQueryScRsp| { &mut m.LAGBGLDLGCB },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &RogueTournQueryScRsp| { &m.retcode },
@@ -62,11 +67,6 @@ impl RogueTournQueryScRsp {
             "BHMHLPCHKLG",
             |m: &RogueTournQueryScRsp| { &m.BHMHLPCHKLG },
             |m: &mut RogueTournQueryScRsp| { &mut m.BHMHLPCHKLG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CHGGGEGAMDI::CHGGGEGAMDI>(
-            "LAGBGLDLGCB",
-            |m: &RogueTournQueryScRsp| { &m.LAGBGLDLGCB },
-            |m: &mut RogueTournQueryScRsp| { &mut m.LAGBGLDLGCB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournQueryScRsp>(
             "RogueTournQueryScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for RogueTournQueryScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHMHLPCHKLG)?;
-                },
                 82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LAGBGLDLGCB)?;
+                },
+                88 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHMHLPCHKLG)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for RogueTournQueryScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
-        }
-        if let Some(v) = self.BHMHLPCHKLG.as_ref() {
+        if let Some(v) = self.LAGBGLDLGCB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.LAGBGLDLGCB.as_ref() {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        }
+        if let Some(v) = self.BHMHLPCHKLG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -124,14 +124,14 @@ impl ::protobuf::Message for RogueTournQueryScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
-        }
-        if let Some(v) = self.BHMHLPCHKLG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        }
         if let Some(v) = self.LAGBGLDLGCB.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(11, self.retcode)?;
+        }
+        if let Some(v) = self.BHMHLPCHKLG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for RogueTournQueryScRsp {
     }
 
     fn clear(&mut self) {
+        self.LAGBGLDLGCB.clear();
         self.retcode = 0;
         self.BHMHLPCHKLG.clear();
-        self.LAGBGLDLGCB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournQueryScRsp {
         static instance: RogueTournQueryScRsp = RogueTournQueryScRsp {
+            LAGBGLDLGCB: ::protobuf::MessageField::none(),
             retcode: 0,
             BHMHLPCHKLG: ::protobuf::MessageField::none(),
-            LAGBGLDLGCB: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournQueryScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aRogueTournQueryScRsp.proto\x1a\x11CFCDHLPOOGC.proto\x1a\x11CHGGGEG\
-    AMDI.proto\"\x90\x01\n\x14RogueTournQueryScRsp\x12\x18\n\x07retcode\x18\
-    \x0f\x20\x01(\rR\x07retcode\x12.\n\x0bBHMHLPCHKLG\x18\x08\x20\x01(\x0b2\
-    \x0c.CFCDHLPOOGCR\x0bBHMHLPCHKLG\x12.\n\x0bLAGBGLDLGCB\x18\n\x20\x01(\
-    \x0b2\x0c.CHGGGEGAMDIR\x0bLAGBGLDLGCBb\x06proto3\
+    AMDI.proto\"\x90\x01\n\x14RogueTournQueryScRsp\x12.\n\x0bLAGBGLDLGCB\x18\
+    \n\x20\x01(\x0b2\x0c.CHGGGEGAMDIR\x0bLAGBGLDLGCB\x12\x18\n\x07retcode\
+    \x18\x0b\x20\x01(\rR\x07retcode\x12.\n\x0bBHMHLPCHKLG\x18\x01\x20\x01(\
+    \x0b2\x0c.CFCDHLPOOGCR\x0bBHMHLPCHKLGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

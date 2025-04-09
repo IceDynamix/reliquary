@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LogisticsGameCsReq {
     // message fields
-    // @@protoc_insertion_point(field:LogisticsGameCsReq.BOBLNBJMKCA)
-    pub BOBLNBJMKCA: bool,
     // @@protoc_insertion_point(field:LogisticsGameCsReq.APMCPHFMAEG)
     pub APMCPHFMAEG: ::std::vec::Vec<super::NJAOIGGMEAL::NJAOIGGMEAL>,
+    // @@protoc_insertion_point(field:LogisticsGameCsReq.BOBLNBJMKCA)
+    pub BOBLNBJMKCA: bool,
     // special fields
     // @@protoc_insertion_point(special_field:LogisticsGameCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl LogisticsGameCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BOBLNBJMKCA",
-            |m: &LogisticsGameCsReq| { &m.BOBLNBJMKCA },
-            |m: &mut LogisticsGameCsReq| { &mut m.BOBLNBJMKCA },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "APMCPHFMAEG",
             |m: &LogisticsGameCsReq| { &m.APMCPHFMAEG },
             |m: &mut LogisticsGameCsReq| { &mut m.APMCPHFMAEG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BOBLNBJMKCA",
+            |m: &LogisticsGameCsReq| { &m.BOBLNBJMKCA },
+            |m: &mut LogisticsGameCsReq| { &mut m.BOBLNBJMKCA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LogisticsGameCsReq>(
             "LogisticsGameCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for LogisticsGameCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                58 => {
+                    self.APMCPHFMAEG.push(is.read_message()?);
+                },
                 64 => {
                     self.BOBLNBJMKCA = is.read_bool()?;
-                },
-                98 => {
-                    self.APMCPHFMAEG.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for LogisticsGameCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BOBLNBJMKCA != false {
-            my_size += 1 + 1;
-        }
         for value in &self.APMCPHFMAEG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.BOBLNBJMKCA != false {
+            my_size += 1 + 1;
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        for v in &self.APMCPHFMAEG {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        };
         if self.BOBLNBJMKCA != false {
             os.write_bool(8, self.BOBLNBJMKCA)?;
         }
-        for v in &self.APMCPHFMAEG {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for LogisticsGameCsReq {
     }
 
     fn clear(&mut self) {
-        self.BOBLNBJMKCA = false;
         self.APMCPHFMAEG.clear();
+        self.BOBLNBJMKCA = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LogisticsGameCsReq {
         static instance: LogisticsGameCsReq = LogisticsGameCsReq {
-            BOBLNBJMKCA: false,
             APMCPHFMAEG: ::std::vec::Vec::new(),
+            BOBLNBJMKCA: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for LogisticsGameCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18LogisticsGameCsReq.proto\x1a\x11NJAOIGGMEAL.proto\"f\n\x12Logistic\
-    sGameCsReq\x12\x20\n\x0bBOBLNBJMKCA\x18\x08\x20\x01(\x08R\x0bBOBLNBJMKCA\
-    \x12.\n\x0bAPMCPHFMAEG\x18\x0c\x20\x03(\x0b2\x0c.NJAOIGGMEALR\x0bAPMCPHF\
-    MAEGb\x06proto3\
+    sGameCsReq\x12.\n\x0bAPMCPHFMAEG\x18\x07\x20\x03(\x0b2\x0c.NJAOIGGMEALR\
+    \x0bAPMCPHFMAEG\x12\x20\n\x0bBOBLNBJMKCA\x18\x08\x20\x01(\x08R\x0bBOBLNB\
+    JMKCAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

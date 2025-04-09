@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KLBHFHJDBFI {
     // message fields
-    // @@protoc_insertion_point(field:KLBHFHJDBFI.NCNAONIFPFM)
-    pub NCNAONIFPFM: bool,
     // @@protoc_insertion_point(field:KLBHFHJDBFI.BMCJHONBHJH)
     pub BMCJHONBHJH: u32,
     // @@protoc_insertion_point(field:KLBHFHJDBFI.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:KLBHFHJDBFI.NCNAONIFPFM)
+    pub NCNAONIFPFM: bool,
     // @@protoc_insertion_point(field:KLBHFHJDBFI.IFAIKOIOIDD)
     pub IFAIKOIOIDD: u32,
     // special fields
@@ -56,11 +56,6 @@ impl KLBHFHJDBFI {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NCNAONIFPFM",
-            |m: &KLBHFHJDBFI| { &m.NCNAONIFPFM },
-            |m: &mut KLBHFHJDBFI| { &mut m.NCNAONIFPFM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BMCJHONBHJH",
             |m: &KLBHFHJDBFI| { &m.BMCJHONBHJH },
             |m: &mut KLBHFHJDBFI| { &mut m.BMCJHONBHJH },
@@ -69,6 +64,11 @@ impl KLBHFHJDBFI {
             "level",
             |m: &KLBHFHJDBFI| { &m.level },
             |m: &mut KLBHFHJDBFI| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NCNAONIFPFM",
+            |m: &KLBHFHJDBFI| { &m.NCNAONIFPFM },
+            |m: &mut KLBHFHJDBFI| { &mut m.NCNAONIFPFM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IFAIKOIOIDD",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for KLBHFHJDBFI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.NCNAONIFPFM = is.read_bool()?;
-                },
-                8 => {
+                104 => {
                     self.BMCJHONBHJH = is.read_uint32()?;
                 },
-                104 => {
+                48 => {
                     self.level = is.read_uint32()?;
                 },
-                56 => {
+                72 => {
+                    self.NCNAONIFPFM = is.read_bool()?;
+                },
+                64 => {
                     self.IFAIKOIOIDD = is.read_uint32()?;
                 },
                 tag => {
@@ -117,17 +117,17 @@ impl ::protobuf::Message for KLBHFHJDBFI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.BMCJHONBHJH != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.BMCJHONBHJH);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.level);
+        }
         if self.NCNAONIFPFM != false {
             my_size += 1 + 1;
         }
-        if self.BMCJHONBHJH != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.BMCJHONBHJH);
-        }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.level);
-        }
         if self.IFAIKOIOIDD != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.IFAIKOIOIDD);
+            my_size += ::protobuf::rt::uint32_size(8, self.IFAIKOIOIDD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for KLBHFHJDBFI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NCNAONIFPFM != false {
-            os.write_bool(6, self.NCNAONIFPFM)?;
-        }
         if self.BMCJHONBHJH != 0 {
-            os.write_uint32(1, self.BMCJHONBHJH)?;
+            os.write_uint32(13, self.BMCJHONBHJH)?;
         }
         if self.level != 0 {
-            os.write_uint32(13, self.level)?;
+            os.write_uint32(6, self.level)?;
+        }
+        if self.NCNAONIFPFM != false {
+            os.write_bool(9, self.NCNAONIFPFM)?;
         }
         if self.IFAIKOIOIDD != 0 {
-            os.write_uint32(7, self.IFAIKOIOIDD)?;
+            os.write_uint32(8, self.IFAIKOIOIDD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for KLBHFHJDBFI {
     }
 
     fn clear(&mut self) {
-        self.NCNAONIFPFM = false;
         self.BMCJHONBHJH = 0;
         self.level = 0;
+        self.NCNAONIFPFM = false;
         self.IFAIKOIOIDD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KLBHFHJDBFI {
         static instance: KLBHFHJDBFI = KLBHFHJDBFI {
-            NCNAONIFPFM: false,
             BMCJHONBHJH: 0,
             level: 0,
+            NCNAONIFPFM: false,
             IFAIKOIOIDD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -201,11 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for KLBHFHJDBFI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KLBHFHJDBFI.proto\"\x89\x01\n\x0bKLBHFHJDBFI\x12\x20\n\x0bNCNAONIF\
-    PFM\x18\x06\x20\x01(\x08R\x0bNCNAONIFPFM\x12\x20\n\x0bBMCJHONBHJH\x18\
-    \x01\x20\x01(\rR\x0bBMCJHONBHJH\x12\x14\n\x05level\x18\r\x20\x01(\rR\x05\
-    level\x12\x20\n\x0bIFAIKOIOIDD\x18\x07\x20\x01(\rR\x0bIFAIKOIOIDDb\x06pr\
-    oto3\
+    \n\x11KLBHFHJDBFI.proto\"\x89\x01\n\x0bKLBHFHJDBFI\x12\x20\n\x0bBMCJHONB\
+    HJH\x18\r\x20\x01(\rR\x0bBMCJHONBHJH\x12\x14\n\x05level\x18\x06\x20\x01(\
+    \rR\x05level\x12\x20\n\x0bNCNAONIFPFM\x18\t\x20\x01(\x08R\x0bNCNAONIFPFM\
+    \x12\x20\n\x0bIFAIKOIOIDD\x18\x08\x20\x01(\rR\x0bIFAIKOIOIDDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

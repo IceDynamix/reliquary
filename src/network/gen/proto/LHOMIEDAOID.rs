@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LHOMIEDAOID {
     // message fields
-    // @@protoc_insertion_point(field:LHOMIEDAOID.PBLFLJNHMIL)
-    pub PBLFLJNHMIL: ::protobuf::EnumOrUnknown<super::LMIKNFDLFFO::LMIKNFDLFFO>,
     // @@protoc_insertion_point(field:LHOMIEDAOID.AKDLEBLPBMD)
     pub AKDLEBLPBMD: u32,
     // @@protoc_insertion_point(field:LHOMIEDAOID.JJLOGICPOAO)
     pub JJLOGICPOAO: u32,
+    // @@protoc_insertion_point(field:LHOMIEDAOID.PBLFLJNHMIL)
+    pub PBLFLJNHMIL: ::protobuf::EnumOrUnknown<super::LMIKNFDLFFO::LMIKNFDLFFO>,
     // @@protoc_insertion_point(field:LHOMIEDAOID.EIPNNEJNNKJ)
     pub EIPNNEJNNKJ: u32,
     // special fields
@@ -56,11 +56,6 @@ impl LHOMIEDAOID {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PBLFLJNHMIL",
-            |m: &LHOMIEDAOID| { &m.PBLFLJNHMIL },
-            |m: &mut LHOMIEDAOID| { &mut m.PBLFLJNHMIL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AKDLEBLPBMD",
             |m: &LHOMIEDAOID| { &m.AKDLEBLPBMD },
             |m: &mut LHOMIEDAOID| { &mut m.AKDLEBLPBMD },
@@ -69,6 +64,11 @@ impl LHOMIEDAOID {
             "JJLOGICPOAO",
             |m: &LHOMIEDAOID| { &m.JJLOGICPOAO },
             |m: &mut LHOMIEDAOID| { &mut m.JJLOGICPOAO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PBLFLJNHMIL",
+            |m: &LHOMIEDAOID| { &m.PBLFLJNHMIL },
+            |m: &mut LHOMIEDAOID| { &mut m.PBLFLJNHMIL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EIPNNEJNNKJ",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for LHOMIEDAOID {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.PBLFLJNHMIL = is.read_enum_or_unknown()?;
-                },
-                24 => {
+                40 => {
                     self.AKDLEBLPBMD = is.read_uint32()?;
                 },
-                88 => {
+                32 => {
                     self.JJLOGICPOAO = is.read_uint32()?;
                 },
-                56 => {
+                16 => {
+                    self.PBLFLJNHMIL = is.read_enum_or_unknown()?;
+                },
+                64 => {
                     self.EIPNNEJNNKJ = is.read_uint32()?;
                 },
                 tag => {
@@ -117,17 +117,17 @@ impl ::protobuf::Message for LHOMIEDAOID {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::LMIKNFDLFFO::LMIKNFDLFFO::ROGUE_TOURN_ROOM_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(8, self.PBLFLJNHMIL.value());
-        }
         if self.AKDLEBLPBMD != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.AKDLEBLPBMD);
+            my_size += ::protobuf::rt::uint32_size(5, self.AKDLEBLPBMD);
         }
         if self.JJLOGICPOAO != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.JJLOGICPOAO);
+            my_size += ::protobuf::rt::uint32_size(4, self.JJLOGICPOAO);
+        }
+        if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::LMIKNFDLFFO::LMIKNFDLFFO::ROGUE_TOURN_ROOM_STATUS_NONE) {
+            my_size += ::protobuf::rt::int32_size(2, self.PBLFLJNHMIL.value());
         }
         if self.EIPNNEJNNKJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.EIPNNEJNNKJ);
+            my_size += ::protobuf::rt::uint32_size(8, self.EIPNNEJNNKJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for LHOMIEDAOID {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::LMIKNFDLFFO::LMIKNFDLFFO::ROGUE_TOURN_ROOM_STATUS_NONE) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.PBLFLJNHMIL))?;
-        }
         if self.AKDLEBLPBMD != 0 {
-            os.write_uint32(3, self.AKDLEBLPBMD)?;
+            os.write_uint32(5, self.AKDLEBLPBMD)?;
         }
         if self.JJLOGICPOAO != 0 {
-            os.write_uint32(11, self.JJLOGICPOAO)?;
+            os.write_uint32(4, self.JJLOGICPOAO)?;
+        }
+        if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::LMIKNFDLFFO::LMIKNFDLFFO::ROGUE_TOURN_ROOM_STATUS_NONE) {
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.PBLFLJNHMIL))?;
         }
         if self.EIPNNEJNNKJ != 0 {
-            os.write_uint32(7, self.EIPNNEJNNKJ)?;
+            os.write_uint32(8, self.EIPNNEJNNKJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for LHOMIEDAOID {
     }
 
     fn clear(&mut self) {
-        self.PBLFLJNHMIL = ::protobuf::EnumOrUnknown::new(super::LMIKNFDLFFO::LMIKNFDLFFO::ROGUE_TOURN_ROOM_STATUS_NONE);
         self.AKDLEBLPBMD = 0;
         self.JJLOGICPOAO = 0;
+        self.PBLFLJNHMIL = ::protobuf::EnumOrUnknown::new(super::LMIKNFDLFFO::LMIKNFDLFFO::ROGUE_TOURN_ROOM_STATUS_NONE);
         self.EIPNNEJNNKJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LHOMIEDAOID {
         static instance: LHOMIEDAOID = LHOMIEDAOID {
-            PBLFLJNHMIL: ::protobuf::EnumOrUnknown::from_i32(0),
             AKDLEBLPBMD: 0,
             JJLOGICPOAO: 0,
+            PBLFLJNHMIL: ::protobuf::EnumOrUnknown::from_i32(0),
             EIPNNEJNNKJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for LHOMIEDAOID {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LHOMIEDAOID.proto\x1a\x11LMIKNFDLFFO.proto\"\xa3\x01\n\x0bLHOMIEDA\
-    OID\x12.\n\x0bPBLFLJNHMIL\x18\x08\x20\x01(\x0e2\x0c.LMIKNFDLFFOR\x0bPBLF\
-    LJNHMIL\x12\x20\n\x0bAKDLEBLPBMD\x18\x03\x20\x01(\rR\x0bAKDLEBLPBMD\x12\
-    \x20\n\x0bJJLOGICPOAO\x18\x0b\x20\x01(\rR\x0bJJLOGICPOAO\x12\x20\n\x0bEI\
-    PNNEJNNKJ\x18\x07\x20\x01(\rR\x0bEIPNNEJNNKJb\x06proto3\
+    OID\x12\x20\n\x0bAKDLEBLPBMD\x18\x05\x20\x01(\rR\x0bAKDLEBLPBMD\x12\x20\
+    \n\x0bJJLOGICPOAO\x18\x04\x20\x01(\rR\x0bJJLOGICPOAO\x12.\n\x0bPBLFLJNHM\
+    IL\x18\x02\x20\x01(\x0e2\x0c.LMIKNFDLFFOR\x0bPBLFLJNHMIL\x12\x20\n\x0bEI\
+    PNNEJNNKJ\x18\x08\x20\x01(\rR\x0bEIPNNEJNNKJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

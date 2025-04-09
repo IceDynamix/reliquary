@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KOEGFFOMKIP {
     // message fields
-    // @@protoc_insertion_point(field:KOEGFFOMKIP.ELPINNNALBD)
-    pub ELPINNNALBD: u32,
     // @@protoc_insertion_point(field:KOEGFFOMKIP.slot)
     pub slot: u32,
+    // @@protoc_insertion_point(field:KOEGFFOMKIP.ELPINNNALBD)
+    pub ELPINNNALBD: u32,
     // @@protoc_insertion_point(field:KOEGFFOMKIP.CGGDOGDIDNK)
     pub CGGDOGDIDNK: u32,
     // special fields
@@ -54,14 +54,14 @@ impl KOEGFFOMKIP {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ELPINNNALBD",
-            |m: &KOEGFFOMKIP| { &m.ELPINNNALBD },
-            |m: &mut KOEGFFOMKIP| { &mut m.ELPINNNALBD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "slot",
             |m: &KOEGFFOMKIP| { &m.slot },
             |m: &mut KOEGFFOMKIP| { &mut m.slot },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ELPINNNALBD",
+            |m: &KOEGFFOMKIP| { &m.ELPINNNALBD },
+            |m: &mut KOEGFFOMKIP| { &mut m.ELPINNNALBD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CGGDOGDIDNK",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for KOEGFFOMKIP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.ELPINNNALBD = is.read_uint32()?;
-                },
-                8 => {
+                24 => {
                     self.slot = is.read_uint32()?;
                 },
-                104 => {
+                72 => {
+                    self.ELPINNNALBD = is.read_uint32()?;
+                },
+                40 => {
                     self.CGGDOGDIDNK = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for KOEGFFOMKIP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ELPINNNALBD != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.ELPINNNALBD);
-        }
         if self.slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.slot);
+            my_size += ::protobuf::rt::uint32_size(3, self.slot);
+        }
+        if self.ELPINNNALBD != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.ELPINNNALBD);
         }
         if self.CGGDOGDIDNK != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.CGGDOGDIDNK);
+            my_size += ::protobuf::rt::uint32_size(5, self.CGGDOGDIDNK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for KOEGFFOMKIP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ELPINNNALBD != 0 {
-            os.write_uint32(14, self.ELPINNNALBD)?;
-        }
         if self.slot != 0 {
-            os.write_uint32(1, self.slot)?;
+            os.write_uint32(3, self.slot)?;
+        }
+        if self.ELPINNNALBD != 0 {
+            os.write_uint32(9, self.ELPINNNALBD)?;
         }
         if self.CGGDOGDIDNK != 0 {
-            os.write_uint32(13, self.CGGDOGDIDNK)?;
+            os.write_uint32(5, self.CGGDOGDIDNK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for KOEGFFOMKIP {
     }
 
     fn clear(&mut self) {
-        self.ELPINNNALBD = 0;
         self.slot = 0;
+        self.ELPINNNALBD = 0;
         self.CGGDOGDIDNK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KOEGFFOMKIP {
         static instance: KOEGFFOMKIP = KOEGFFOMKIP {
-            ELPINNNALBD: 0,
             slot: 0,
+            ELPINNNALBD: 0,
             CGGDOGDIDNK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for KOEGFFOMKIP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KOEGFFOMKIP.proto\"e\n\x0bKOEGFFOMKIP\x12\x20\n\x0bELPINNNALBD\x18\
-    \x0e\x20\x01(\rR\x0bELPINNNALBD\x12\x12\n\x04slot\x18\x01\x20\x01(\rR\
-    \x04slot\x12\x20\n\x0bCGGDOGDIDNK\x18\r\x20\x01(\rR\x0bCGGDOGDIDNKb\x06p\
+    \n\x11KOEGFFOMKIP.proto\"e\n\x0bKOEGFFOMKIP\x12\x12\n\x04slot\x18\x03\
+    \x20\x01(\rR\x04slot\x12\x20\n\x0bELPINNNALBD\x18\t\x20\x01(\rR\x0bELPIN\
+    NNALBD\x12\x20\n\x0bCGGDOGDIDNK\x18\x05\x20\x01(\rR\x0bCGGDOGDIDNKb\x06p\
     roto3\
 ";
 

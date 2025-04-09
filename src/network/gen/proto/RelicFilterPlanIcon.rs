@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RelicFilterPlanIcon {
     // message fields
-    // @@protoc_insertion_point(field:RelicFilterPlanIcon.is_avatar_icon)
-    pub is_avatar_icon: bool,
     // @@protoc_insertion_point(field:RelicFilterPlanIcon.icon_id)
     pub icon_id: u32,
+    // @@protoc_insertion_point(field:RelicFilterPlanIcon.is_avatar_icon)
+    pub is_avatar_icon: bool,
     // special fields
     // @@protoc_insertion_point(special_field:RelicFilterPlanIcon.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl RelicFilterPlanIcon {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_avatar_icon",
-            |m: &RelicFilterPlanIcon| { &m.is_avatar_icon },
-            |m: &mut RelicFilterPlanIcon| { &mut m.is_avatar_icon },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "icon_id",
             |m: &RelicFilterPlanIcon| { &m.icon_id },
             |m: &mut RelicFilterPlanIcon| { &mut m.icon_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_avatar_icon",
+            |m: &RelicFilterPlanIcon| { &m.is_avatar_icon },
+            |m: &mut RelicFilterPlanIcon| { &mut m.is_avatar_icon },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RelicFilterPlanIcon>(
             "RelicFilterPlanIcon",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RelicFilterPlanIcon {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.is_avatar_icon = is.read_bool()?;
-                },
-                72 => {
+                40 => {
                     self.icon_id = is.read_uint32()?;
+                },
+                88 => {
+                    self.is_avatar_icon = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for RelicFilterPlanIcon {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.icon_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.icon_id);
+        }
         if self.is_avatar_icon != false {
             my_size += 1 + 1;
-        }
-        if self.icon_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.icon_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for RelicFilterPlanIcon {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_avatar_icon != false {
-            os.write_bool(12, self.is_avatar_icon)?;
-        }
         if self.icon_id != 0 {
-            os.write_uint32(9, self.icon_id)?;
+            os.write_uint32(5, self.icon_id)?;
+        }
+        if self.is_avatar_icon != false {
+            os.write_bool(11, self.is_avatar_icon)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for RelicFilterPlanIcon {
     }
 
     fn clear(&mut self) {
-        self.is_avatar_icon = false;
         self.icon_id = 0;
+        self.is_avatar_icon = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RelicFilterPlanIcon {
         static instance: RelicFilterPlanIcon = RelicFilterPlanIcon {
-            is_avatar_icon: false,
             icon_id: 0,
+            is_avatar_icon: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for RelicFilterPlanIcon {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19RelicFilterPlanIcon.proto\"T\n\x13RelicFilterPlanIcon\x12$\n\x0eis\
-    _avatar_icon\x18\x0c\x20\x01(\x08R\x0cisAvatarIcon\x12\x17\n\x07icon_id\
-    \x18\t\x20\x01(\rR\x06iconIdb\x06proto3\
+    \n\x19RelicFilterPlanIcon.proto\"T\n\x13RelicFilterPlanIcon\x12\x17\n\
+    \x07icon_id\x18\x05\x20\x01(\rR\x06iconId\x12$\n\x0eis_avatar_icon\x18\
+    \x0b\x20\x01(\x08R\x0cisAvatarIconb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

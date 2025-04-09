@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ANLMJANBHAC {
     // message fields
-    // @@protoc_insertion_point(field:ANLMJANBHAC.PJBIPPDMCHE)
-    pub PJBIPPDMCHE: i64,
-    // @@protoc_insertion_point(field:ANLMJANBHAC.OGCKDLKCABG)
-    pub OGCKDLKCABG: i64,
     // @@protoc_insertion_point(field:ANLMJANBHAC.GIAJEKCIIGD)
     pub GIAJEKCIIGD: u32,
+    // @@protoc_insertion_point(field:ANLMJANBHAC.begin_time)
+    pub begin_time: i64,
+    // @@protoc_insertion_point(field:ANLMJANBHAC.end_time)
+    pub end_time: i64,
     // special fields
     // @@protoc_insertion_point(special_field:ANLMJANBHAC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl ANLMJANBHAC {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PJBIPPDMCHE",
-            |m: &ANLMJANBHAC| { &m.PJBIPPDMCHE },
-            |m: &mut ANLMJANBHAC| { &mut m.PJBIPPDMCHE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OGCKDLKCABG",
-            |m: &ANLMJANBHAC| { &m.OGCKDLKCABG },
-            |m: &mut ANLMJANBHAC| { &mut m.OGCKDLKCABG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GIAJEKCIIGD",
             |m: &ANLMJANBHAC| { &m.GIAJEKCIIGD },
             |m: &mut ANLMJANBHAC| { &mut m.GIAJEKCIIGD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "begin_time",
+            |m: &ANLMJANBHAC| { &m.begin_time },
+            |m: &mut ANLMJANBHAC| { &mut m.begin_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "end_time",
+            |m: &ANLMJANBHAC| { &m.end_time },
+            |m: &mut ANLMJANBHAC| { &mut m.end_time },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ANLMJANBHAC>(
             "ANLMJANBHAC",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for ANLMJANBHAC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.PJBIPPDMCHE = is.read_int64()?;
-                },
-                120 => {
-                    self.OGCKDLKCABG = is.read_int64()?;
+                56 => {
+                    self.GIAJEKCIIGD = is.read_uint32()?;
                 },
                 24 => {
-                    self.GIAJEKCIIGD = is.read_uint32()?;
+                    self.begin_time = is.read_int64()?;
+                },
+                80 => {
+                    self.end_time = is.read_int64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for ANLMJANBHAC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PJBIPPDMCHE != 0 {
-            my_size += ::protobuf::rt::int64_size(6, self.PJBIPPDMCHE);
-        }
-        if self.OGCKDLKCABG != 0 {
-            my_size += ::protobuf::rt::int64_size(15, self.OGCKDLKCABG);
-        }
         if self.GIAJEKCIIGD != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.GIAJEKCIIGD);
+            my_size += ::protobuf::rt::uint32_size(7, self.GIAJEKCIIGD);
+        }
+        if self.begin_time != 0 {
+            my_size += ::protobuf::rt::int64_size(3, self.begin_time);
+        }
+        if self.end_time != 0 {
+            my_size += ::protobuf::rt::int64_size(10, self.end_time);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for ANLMJANBHAC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PJBIPPDMCHE != 0 {
-            os.write_int64(6, self.PJBIPPDMCHE)?;
-        }
-        if self.OGCKDLKCABG != 0 {
-            os.write_int64(15, self.OGCKDLKCABG)?;
-        }
         if self.GIAJEKCIIGD != 0 {
-            os.write_uint32(3, self.GIAJEKCIIGD)?;
+            os.write_uint32(7, self.GIAJEKCIIGD)?;
+        }
+        if self.begin_time != 0 {
+            os.write_int64(3, self.begin_time)?;
+        }
+        if self.end_time != 0 {
+            os.write_int64(10, self.end_time)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for ANLMJANBHAC {
     }
 
     fn clear(&mut self) {
-        self.PJBIPPDMCHE = 0;
-        self.OGCKDLKCABG = 0;
         self.GIAJEKCIIGD = 0;
+        self.begin_time = 0;
+        self.end_time = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ANLMJANBHAC {
         static instance: ANLMJANBHAC = ANLMJANBHAC {
-            PJBIPPDMCHE: 0,
-            OGCKDLKCABG: 0,
             GIAJEKCIIGD: 0,
+            begin_time: 0,
+            end_time: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for ANLMJANBHAC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ANLMJANBHAC.proto\"s\n\x0bANLMJANBHAC\x12\x20\n\x0bPJBIPPDMCHE\x18\
-    \x06\x20\x01(\x03R\x0bPJBIPPDMCHE\x12\x20\n\x0bOGCKDLKCABG\x18\x0f\x20\
-    \x01(\x03R\x0bOGCKDLKCABG\x12\x20\n\x0bGIAJEKCIIGD\x18\x03\x20\x01(\rR\
-    \x0bGIAJEKCIIGDb\x06proto3\
+    \n\x11ANLMJANBHAC.proto\"i\n\x0bANLMJANBHAC\x12\x20\n\x0bGIAJEKCIIGD\x18\
+    \x07\x20\x01(\rR\x0bGIAJEKCIIGD\x12\x1d\n\nbegin_time\x18\x03\x20\x01(\
+    \x03R\tbeginTime\x12\x19\n\x08end_time\x18\n\x20\x01(\x03R\x07endTimeb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -72,10 +72,10 @@ impl ::protobuf::Message for BatchGetQuestDataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.PPAKDPOOANI)?;
                 },
-                72 => {
+                104 => {
                     self.PPAKDPOOANI.push(is.read_uint32()?);
                 },
                 tag => {
@@ -90,14 +90,14 @@ impl ::protobuf::Message for BatchGetQuestDataCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.PPAKDPOOANI);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.PPAKDPOOANI);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(9, &self.PPAKDPOOANI)?;
+        os.write_repeated_packed_uint32(13, &self.PPAKDPOOANI)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,7 +147,7 @@ impl ::protobuf::reflect::ProtobufValue for BatchGetQuestDataCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cBatchGetQuestDataCsReq.proto\":\n\x16BatchGetQuestDataCsReq\x12\
-    \x20\n\x0bPPAKDPOOANI\x18\t\x20\x03(\rR\x0bPPAKDPOOANIb\x06proto3\
+    \x20\n\x0bPPAKDPOOANI\x18\r\x20\x03(\rR\x0bPPAKDPOOANIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

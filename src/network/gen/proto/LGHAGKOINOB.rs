@@ -30,10 +30,10 @@ pub struct LGHAGKOINOB {
     // message fields
     // @@protoc_insertion_point(field:LGHAGKOINOB.MFNBANEDODD)
     pub MFNBANEDODD: ::protobuf::MessageField<super::CFKHKILIHHF::CFKHKILIHHF>,
-    // @@protoc_insertion_point(field:LGHAGKOINOB.CMKMMAGOOEB)
-    pub CMKMMAGOOEB: u32,
     // @@protoc_insertion_point(field:LGHAGKOINOB.HIODKMAPOAE)
     pub HIODKMAPOAE: u32,
+    // @@protoc_insertion_point(field:LGHAGKOINOB.CMKMMAGOOEB)
+    pub CMKMMAGOOEB: u32,
     // @@protoc_insertion_point(field:LGHAGKOINOB.NFOPIKDKPGG)
     pub NFOPIKDKPGG: bool,
     // special fields
@@ -61,14 +61,14 @@ impl LGHAGKOINOB {
             |m: &mut LGHAGKOINOB| { &mut m.MFNBANEDODD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CMKMMAGOOEB",
-            |m: &LGHAGKOINOB| { &m.CMKMMAGOOEB },
-            |m: &mut LGHAGKOINOB| { &mut m.CMKMMAGOOEB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HIODKMAPOAE",
             |m: &LGHAGKOINOB| { &m.HIODKMAPOAE },
             |m: &mut LGHAGKOINOB| { &mut m.HIODKMAPOAE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CMKMMAGOOEB",
+            |m: &LGHAGKOINOB| { &m.CMKMMAGOOEB },
+            |m: &mut LGHAGKOINOB| { &mut m.CMKMMAGOOEB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NFOPIKDKPGG",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for LGHAGKOINOB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MFNBANEDODD)?;
                 },
-                64 => {
-                    self.CMKMMAGOOEB = is.read_uint32()?;
-                },
-                40 => {
+                104 => {
                     self.HIODKMAPOAE = is.read_uint32()?;
                 },
                 56 => {
+                    self.CMKMMAGOOEB = is.read_uint32()?;
+                },
+                32 => {
                     self.NFOPIKDKPGG = is.read_bool()?;
                 },
                 tag => {
@@ -121,11 +121,11 @@ impl ::protobuf::Message for LGHAGKOINOB {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.CMKMMAGOOEB != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.CMKMMAGOOEB);
-        }
         if self.HIODKMAPOAE != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.HIODKMAPOAE);
+            my_size += ::protobuf::rt::uint32_size(13, self.HIODKMAPOAE);
+        }
+        if self.CMKMMAGOOEB != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.CMKMMAGOOEB);
         }
         if self.NFOPIKDKPGG != false {
             my_size += 1 + 1;
@@ -137,16 +137,16 @@ impl ::protobuf::Message for LGHAGKOINOB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.MFNBANEDODD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        }
-        if self.CMKMMAGOOEB != 0 {
-            os.write_uint32(8, self.CMKMMAGOOEB)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if self.HIODKMAPOAE != 0 {
-            os.write_uint32(5, self.HIODKMAPOAE)?;
+            os.write_uint32(13, self.HIODKMAPOAE)?;
+        }
+        if self.CMKMMAGOOEB != 0 {
+            os.write_uint32(7, self.CMKMMAGOOEB)?;
         }
         if self.NFOPIKDKPGG != false {
-            os.write_bool(7, self.NFOPIKDKPGG)?;
+            os.write_bool(4, self.NFOPIKDKPGG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::Message for LGHAGKOINOB {
 
     fn clear(&mut self) {
         self.MFNBANEDODD.clear();
-        self.CMKMMAGOOEB = 0;
         self.HIODKMAPOAE = 0;
+        self.CMKMMAGOOEB = 0;
         self.NFOPIKDKPGG = false;
         self.special_fields.clear();
     }
@@ -175,8 +175,8 @@ impl ::protobuf::Message for LGHAGKOINOB {
     fn default_instance() -> &'static LGHAGKOINOB {
         static instance: LGHAGKOINOB = LGHAGKOINOB {
             MFNBANEDODD: ::protobuf::MessageField::none(),
-            CMKMMAGOOEB: 0,
             HIODKMAPOAE: 0,
+            CMKMMAGOOEB: 0,
             NFOPIKDKPGG: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for LGHAGKOINOB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LGHAGKOINOB.proto\x1a\x11CFKHKILIHHF.proto\"\xa3\x01\n\x0bLGHAGKOI\
-    NOB\x12.\n\x0bMFNBANEDODD\x18\t\x20\x01(\x0b2\x0c.CFKHKILIHHFR\x0bMFNBAN\
-    EDODD\x12\x20\n\x0bCMKMMAGOOEB\x18\x08\x20\x01(\rR\x0bCMKMMAGOOEB\x12\
-    \x20\n\x0bHIODKMAPOAE\x18\x05\x20\x01(\rR\x0bHIODKMAPOAE\x12\x20\n\x0bNF\
-    OPIKDKPGG\x18\x07\x20\x01(\x08R\x0bNFOPIKDKPGGb\x06proto3\
+    NOB\x12.\n\x0bMFNBANEDODD\x18\x0e\x20\x01(\x0b2\x0c.CFKHKILIHHFR\x0bMFNB\
+    ANEDODD\x12\x20\n\x0bHIODKMAPOAE\x18\r\x20\x01(\rR\x0bHIODKMAPOAE\x12\
+    \x20\n\x0bCMKMMAGOOEB\x18\x07\x20\x01(\rR\x0bCMKMMAGOOEB\x12\x20\n\x0bNF\
+    OPIKDKPGG\x18\x04\x20\x01(\x08R\x0bNFOPIKDKPGGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

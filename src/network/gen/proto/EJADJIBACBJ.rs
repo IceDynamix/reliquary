@@ -32,12 +32,12 @@ pub struct EJADJIBACBJ {
     pub FNOOEMHNIHI: ::std::vec::Vec<super::GFMIINKFIGH::GFMIINKFIGH>,
     // @@protoc_insertion_point(field:EJADJIBACBJ.ABGBMJLIBCC)
     pub ABGBMJLIBCC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:EJADJIBACBJ.DIHBNNAPLEI)
+    pub DIHBNNAPLEI: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:EJADJIBACBJ.relic_list)
     pub relic_list: ::std::vec::Vec<super::JBAAELCGHDF::JBAAELCGHDF>,
     // @@protoc_insertion_point(field:EJADJIBACBJ.HFKNHFLOLGE)
     pub HFKNHFLOLGE: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:EJADJIBACBJ.DIHBNNAPLEI)
-    pub DIHBNNAPLEI: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:EJADJIBACBJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -68,6 +68,11 @@ impl EJADJIBACBJ {
             |m: &mut EJADJIBACBJ| { &mut m.ABGBMJLIBCC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DIHBNNAPLEI",
+            |m: &EJADJIBACBJ| { &m.DIHBNNAPLEI },
+            |m: &mut EJADJIBACBJ| { &mut m.DIHBNNAPLEI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "relic_list",
             |m: &EJADJIBACBJ| { &m.relic_list },
             |m: &mut EJADJIBACBJ| { &mut m.relic_list },
@@ -76,11 +81,6 @@ impl EJADJIBACBJ {
             "HFKNHFLOLGE",
             |m: &EJADJIBACBJ| { &m.HFKNHFLOLGE },
             |m: &mut EJADJIBACBJ| { &mut m.HFKNHFLOLGE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DIHBNNAPLEI",
-            |m: &EJADJIBACBJ| { &m.DIHBNNAPLEI },
-            |m: &mut EJADJIBACBJ| { &mut m.DIHBNNAPLEI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EJADJIBACBJ>(
             "EJADJIBACBJ",
@@ -100,29 +100,29 @@ impl ::protobuf::Message for EJADJIBACBJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                66 => {
                     self.FNOOEMHNIHI.push(is.read_message()?);
                 },
-                98 => {
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.ABGBMJLIBCC)?;
                 },
-                96 => {
+                104 => {
                     self.ABGBMJLIBCC.push(is.read_uint32()?);
                 },
-                34 => {
-                    self.relic_list.push(is.read_message()?);
-                },
-                114 => {
-                    is.read_repeated_packed_uint32_into(&mut self.HFKNHFLOLGE)?;
-                },
-                112 => {
-                    self.HFKNHFLOLGE.push(is.read_uint32()?);
-                },
-                106 => {
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.DIHBNNAPLEI)?;
                 },
-                104 => {
+                8 => {
                     self.DIHBNNAPLEI.push(is.read_uint32()?);
+                },
+                74 => {
+                    self.relic_list.push(is.read_message()?);
+                },
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.HFKNHFLOLGE)?;
+                },
+                80 => {
+                    self.HFKNHFLOLGE.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,13 +140,13 @@ impl ::protobuf::Message for EJADJIBACBJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.ABGBMJLIBCC);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.ABGBMJLIBCC);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.DIHBNNAPLEI);
         for value in &self.relic_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.HFKNHFLOLGE);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.DIHBNNAPLEI);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.HFKNHFLOLGE);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -154,14 +154,14 @@ impl ::protobuf::Message for EJADJIBACBJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.FNOOEMHNIHI {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
-        os.write_repeated_packed_uint32(12, &self.ABGBMJLIBCC)?;
+        os.write_repeated_packed_uint32(13, &self.ABGBMJLIBCC)?;
+        os.write_repeated_packed_uint32(1, &self.DIHBNNAPLEI)?;
         for v in &self.relic_list {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
-        os.write_repeated_packed_uint32(14, &self.HFKNHFLOLGE)?;
-        os.write_repeated_packed_uint32(13, &self.DIHBNNAPLEI)?;
+        os.write_repeated_packed_uint32(10, &self.HFKNHFLOLGE)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -181,9 +181,9 @@ impl ::protobuf::Message for EJADJIBACBJ {
     fn clear(&mut self) {
         self.FNOOEMHNIHI.clear();
         self.ABGBMJLIBCC.clear();
+        self.DIHBNNAPLEI.clear();
         self.relic_list.clear();
         self.HFKNHFLOLGE.clear();
-        self.DIHBNNAPLEI.clear();
         self.special_fields.clear();
     }
 
@@ -191,9 +191,9 @@ impl ::protobuf::Message for EJADJIBACBJ {
         static instance: EJADJIBACBJ = EJADJIBACBJ {
             FNOOEMHNIHI: ::std::vec::Vec::new(),
             ABGBMJLIBCC: ::std::vec::Vec::new(),
+            DIHBNNAPLEI: ::std::vec::Vec::new(),
             relic_list: ::std::vec::Vec::new(),
             HFKNHFLOLGE: ::std::vec::Vec::new(),
-            DIHBNNAPLEI: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,12 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for EJADJIBACBJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EJADJIBACBJ.proto\x1a\x11GFMIINKFIGH.proto\x1a\x11JBAAELCGHDF.prot\
-    o\"\xd0\x01\n\x0bEJADJIBACBJ\x12.\n\x0bFNOOEMHNIHI\x18\x02\x20\x03(\x0b2\
-    \x0c.GFMIINKFIGHR\x0bFNOOEMHNIHI\x12\x20\n\x0bABGBMJLIBCC\x18\x0c\x20\
-    \x03(\rR\x0bABGBMJLIBCC\x12+\n\nrelic_list\x18\x04\x20\x03(\x0b2\x0c.JBA\
-    AELCGHDFR\trelicList\x12\x20\n\x0bHFKNHFLOLGE\x18\x0e\x20\x03(\rR\x0bHFK\
-    NHFLOLGE\x12\x20\n\x0bDIHBNNAPLEI\x18\r\x20\x03(\rR\x0bDIHBNNAPLEIb\x06p\
-    roto3\
+    o\"\xd0\x01\n\x0bEJADJIBACBJ\x12.\n\x0bFNOOEMHNIHI\x18\x08\x20\x03(\x0b2\
+    \x0c.GFMIINKFIGHR\x0bFNOOEMHNIHI\x12\x20\n\x0bABGBMJLIBCC\x18\r\x20\x03(\
+    \rR\x0bABGBMJLIBCC\x12\x20\n\x0bDIHBNNAPLEI\x18\x01\x20\x03(\rR\x0bDIHBN\
+    NAPLEI\x12+\n\nrelic_list\x18\t\x20\x03(\x0b2\x0c.JBAAELCGHDFR\trelicLis\
+    t\x12\x20\n\x0bHFKNHFLOLGE\x18\n\x20\x03(\rR\x0bHFKNHFLOLGEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

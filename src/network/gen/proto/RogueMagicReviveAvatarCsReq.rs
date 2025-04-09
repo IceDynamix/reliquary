@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicReviveAvatarCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicReviveAvatarCsReq.NBCGLEFOKDM)
-    pub NBCGLEFOKDM: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:RogueMagicReviveAvatarCsReq.PDJGMANJMAK)
     pub PDJGMANJMAK: u32,
+    // @@protoc_insertion_point(field:RogueMagicReviveAvatarCsReq.NBCGLEFOKDM)
+    pub NBCGLEFOKDM: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicReviveAvatarCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl RogueMagicReviveAvatarCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NBCGLEFOKDM",
-            |m: &RogueMagicReviveAvatarCsReq| { &m.NBCGLEFOKDM },
-            |m: &mut RogueMagicReviveAvatarCsReq| { &mut m.NBCGLEFOKDM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PDJGMANJMAK",
             |m: &RogueMagicReviveAvatarCsReq| { &m.PDJGMANJMAK },
             |m: &mut RogueMagicReviveAvatarCsReq| { &mut m.PDJGMANJMAK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NBCGLEFOKDM",
+            |m: &RogueMagicReviveAvatarCsReq| { &m.NBCGLEFOKDM },
+            |m: &mut RogueMagicReviveAvatarCsReq| { &mut m.NBCGLEFOKDM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicReviveAvatarCsReq>(
             "RogueMagicReviveAvatarCsReq",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for RogueMagicReviveAvatarCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NBCGLEFOKDM)?;
-                },
-                64 => {
-                    self.NBCGLEFOKDM.push(is.read_uint32()?);
-                },
                 80 => {
                     self.PDJGMANJMAK = is.read_uint32()?;
+                },
+                34 => {
+                    is.read_repeated_packed_uint32_into(&mut self.NBCGLEFOKDM)?;
+                },
+                32 => {
+                    self.NBCGLEFOKDM.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for RogueMagicReviveAvatarCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.NBCGLEFOKDM);
         if self.PDJGMANJMAK != 0 {
             my_size += ::protobuf::rt::uint32_size(10, self.PDJGMANJMAK);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.NBCGLEFOKDM);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(8, &self.NBCGLEFOKDM)?;
         if self.PDJGMANJMAK != 0 {
             os.write_uint32(10, self.PDJGMANJMAK)?;
         }
+        os.write_repeated_packed_uint32(4, &self.NBCGLEFOKDM)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for RogueMagicReviveAvatarCsReq {
     }
 
     fn clear(&mut self) {
-        self.NBCGLEFOKDM.clear();
         self.PDJGMANJMAK = 0;
+        self.NBCGLEFOKDM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicReviveAvatarCsReq {
         static instance: RogueMagicReviveAvatarCsReq = RogueMagicReviveAvatarCsReq {
-            NBCGLEFOKDM: ::std::vec::Vec::new(),
             PDJGMANJMAK: 0,
+            NBCGLEFOKDM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicReviveAvatarCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!RogueMagicReviveAvatarCsReq.proto\"a\n\x1bRogueMagicReviveAvatarCsReq\
-    \x12\x20\n\x0bNBCGLEFOKDM\x18\x08\x20\x03(\rR\x0bNBCGLEFOKDM\x12\x20\n\
-    \x0bPDJGMANJMAK\x18\n\x20\x01(\rR\x0bPDJGMANJMAKb\x06proto3\
+    \x12\x20\n\x0bPDJGMANJMAK\x18\n\x20\x01(\rR\x0bPDJGMANJMAK\x12\x20\n\x0b\
+    NBCGLEFOKDM\x18\x04\x20\x03(\rR\x0bNBCGLEFOKDMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

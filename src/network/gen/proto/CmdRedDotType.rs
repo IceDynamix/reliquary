@@ -29,18 +29,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdRedDotType {
     // @@protoc_insertion_point(enum_value:CmdRedDotType.CmdRedDotTypeNone)
     CmdRedDotTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdRedDotType.CmdGetAllRedDotDataCsReq)
-    CmdGetAllRedDotDataCsReq = 5901,
-    // @@protoc_insertion_point(enum_value:CmdRedDotType.CmdGetSingleRedDotParamGroupScRsp)
-    CmdGetSingleRedDotParamGroupScRsp = 5956,
-    // @@protoc_insertion_point(enum_value:CmdRedDotType.CmdGetSingleRedDotParamGroupCsReq)
-    CmdGetSingleRedDotParamGroupCsReq = 5930,
-    // @@protoc_insertion_point(enum_value:CmdRedDotType.CmdUpdateRedDotDataCsReq)
-    CmdUpdateRedDotDataCsReq = 5958,
     // @@protoc_insertion_point(enum_value:CmdRedDotType.CmdUpdateRedDotDataScRsp)
-    CmdUpdateRedDotDataScRsp = 5924,
+    CmdUpdateRedDotDataScRsp = 5909,
+    // @@protoc_insertion_point(enum_value:CmdRedDotType.CmdGetAllRedDotDataCsReq)
+    CmdGetAllRedDotDataCsReq = 5911,
+    // @@protoc_insertion_point(enum_value:CmdRedDotType.CmdGetSingleRedDotParamGroupScRsp)
+    CmdGetSingleRedDotParamGroupScRsp = 5906,
+    // @@protoc_insertion_point(enum_value:CmdRedDotType.CmdUpdateRedDotDataCsReq)
+    CmdUpdateRedDotDataCsReq = 5947,
+    // @@protoc_insertion_point(enum_value:CmdRedDotType.CmdGetSingleRedDotParamGroupCsReq)
+    CmdGetSingleRedDotParamGroupCsReq = 5935,
     // @@protoc_insertion_point(enum_value:CmdRedDotType.CmdGetAllRedDotDataScRsp)
-    CmdGetAllRedDotDataScRsp = 5968,
+    CmdGetAllRedDotDataScRsp = 5913,
 }
 
 impl ::protobuf::Enum for CmdRedDotType {
@@ -53,12 +53,12 @@ impl ::protobuf::Enum for CmdRedDotType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdRedDotType> {
         match value {
             0 => ::std::option::Option::Some(CmdRedDotType::CmdRedDotTypeNone),
-            5901 => ::std::option::Option::Some(CmdRedDotType::CmdGetAllRedDotDataCsReq),
-            5956 => ::std::option::Option::Some(CmdRedDotType::CmdGetSingleRedDotParamGroupScRsp),
-            5930 => ::std::option::Option::Some(CmdRedDotType::CmdGetSingleRedDotParamGroupCsReq),
-            5958 => ::std::option::Option::Some(CmdRedDotType::CmdUpdateRedDotDataCsReq),
-            5924 => ::std::option::Option::Some(CmdRedDotType::CmdUpdateRedDotDataScRsp),
-            5968 => ::std::option::Option::Some(CmdRedDotType::CmdGetAllRedDotDataScRsp),
+            5909 => ::std::option::Option::Some(CmdRedDotType::CmdUpdateRedDotDataScRsp),
+            5911 => ::std::option::Option::Some(CmdRedDotType::CmdGetAllRedDotDataCsReq),
+            5906 => ::std::option::Option::Some(CmdRedDotType::CmdGetSingleRedDotParamGroupScRsp),
+            5947 => ::std::option::Option::Some(CmdRedDotType::CmdUpdateRedDotDataCsReq),
+            5935 => ::std::option::Option::Some(CmdRedDotType::CmdGetSingleRedDotParamGroupCsReq),
+            5913 => ::std::option::Option::Some(CmdRedDotType::CmdGetAllRedDotDataScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -66,11 +66,11 @@ impl ::protobuf::Enum for CmdRedDotType {
     fn from_str(str: &str) -> ::std::option::Option<CmdRedDotType> {
         match str {
             "CmdRedDotTypeNone" => ::std::option::Option::Some(CmdRedDotType::CmdRedDotTypeNone),
+            "CmdUpdateRedDotDataScRsp" => ::std::option::Option::Some(CmdRedDotType::CmdUpdateRedDotDataScRsp),
             "CmdGetAllRedDotDataCsReq" => ::std::option::Option::Some(CmdRedDotType::CmdGetAllRedDotDataCsReq),
             "CmdGetSingleRedDotParamGroupScRsp" => ::std::option::Option::Some(CmdRedDotType::CmdGetSingleRedDotParamGroupScRsp),
-            "CmdGetSingleRedDotParamGroupCsReq" => ::std::option::Option::Some(CmdRedDotType::CmdGetSingleRedDotParamGroupCsReq),
             "CmdUpdateRedDotDataCsReq" => ::std::option::Option::Some(CmdRedDotType::CmdUpdateRedDotDataCsReq),
-            "CmdUpdateRedDotDataScRsp" => ::std::option::Option::Some(CmdRedDotType::CmdUpdateRedDotDataScRsp),
+            "CmdGetSingleRedDotParamGroupCsReq" => ::std::option::Option::Some(CmdRedDotType::CmdGetSingleRedDotParamGroupCsReq),
             "CmdGetAllRedDotDataScRsp" => ::std::option::Option::Some(CmdRedDotType::CmdGetAllRedDotDataScRsp),
             _ => ::std::option::Option::None
         }
@@ -78,11 +78,11 @@ impl ::protobuf::Enum for CmdRedDotType {
 
     const VALUES: &'static [CmdRedDotType] = &[
         CmdRedDotType::CmdRedDotTypeNone,
+        CmdRedDotType::CmdUpdateRedDotDataScRsp,
         CmdRedDotType::CmdGetAllRedDotDataCsReq,
         CmdRedDotType::CmdGetSingleRedDotParamGroupScRsp,
-        CmdRedDotType::CmdGetSingleRedDotParamGroupCsReq,
         CmdRedDotType::CmdUpdateRedDotDataCsReq,
-        CmdRedDotType::CmdUpdateRedDotDataScRsp,
+        CmdRedDotType::CmdGetSingleRedDotParamGroupCsReq,
         CmdRedDotType::CmdGetAllRedDotDataScRsp,
     ];
 }
@@ -96,11 +96,11 @@ impl ::protobuf::EnumFull for CmdRedDotType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdRedDotType::CmdRedDotTypeNone => 0,
-            CmdRedDotType::CmdGetAllRedDotDataCsReq => 1,
-            CmdRedDotType::CmdGetSingleRedDotParamGroupScRsp => 2,
-            CmdRedDotType::CmdGetSingleRedDotParamGroupCsReq => 3,
+            CmdRedDotType::CmdUpdateRedDotDataScRsp => 1,
+            CmdRedDotType::CmdGetAllRedDotDataCsReq => 2,
+            CmdRedDotType::CmdGetSingleRedDotParamGroupScRsp => 3,
             CmdRedDotType::CmdUpdateRedDotDataCsReq => 4,
-            CmdRedDotType::CmdUpdateRedDotDataScRsp => 5,
+            CmdRedDotType::CmdGetSingleRedDotParamGroupCsReq => 5,
             CmdRedDotType::CmdGetAllRedDotDataScRsp => 6,
         };
         Self::enum_descriptor().value_by_index(index)
@@ -121,11 +121,11 @@ impl CmdRedDotType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13CmdRedDotType.proto*\xf2\x01\n\rCmdRedDotType\x12\x15\n\x11CmdRedD\
-    otTypeNone\x10\0\x12\x1d\n\x18CmdGetAllRedDotDataCsReq\x10\x8d.\x12&\n!C\
-    mdGetSingleRedDotParamGroupScRsp\x10\xc4.\x12&\n!CmdGetSingleRedDotParam\
-    GroupCsReq\x10\xaa.\x12\x1d\n\x18CmdUpdateRedDotDataCsReq\x10\xc6.\x12\
-    \x1d\n\x18CmdUpdateRedDotDataScRsp\x10\xa4.\x12\x1d\n\x18CmdGetAllRedDot\
-    DataScRsp\x10\xd0.b\x06proto3\
+    otTypeNone\x10\0\x12\x1d\n\x18CmdUpdateRedDotDataScRsp\x10\x95.\x12\x1d\
+    \n\x18CmdGetAllRedDotDataCsReq\x10\x97.\x12&\n!CmdGetSingleRedDotParamGr\
+    oupScRsp\x10\x92.\x12\x1d\n\x18CmdUpdateRedDotDataCsReq\x10\xbb.\x12&\n!\
+    CmdGetSingleRedDotParamGroupCsReq\x10\xaf.\x12\x1d\n\x18CmdGetAllRedDotD\
+    ataScRsp\x10\x99.b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

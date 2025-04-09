@@ -30,10 +30,12 @@ pub struct OPGPOJAAHHG {
     // message fields
     // @@protoc_insertion_point(field:OPGPOJAAHHG.DMCCBECKHML)
     pub DMCCBECKHML: ::std::string::String,
-    // @@protoc_insertion_point(field:OPGPOJAAHHG.PAGJKDJIGPI)
-    pub PAGJKDJIGPI: bool,
     // @@protoc_insertion_point(field:OPGPOJAAHHG.IIDEAOAACCF)
     pub IIDEAOAACCF: ::std::vec::Vec<super::KAODKKLGDEN::KAODKKLGDEN>,
+    // @@protoc_insertion_point(field:OPGPOJAAHHG.PAGJKDJIGPI)
+    pub PAGJKDJIGPI: bool,
+    // @@protoc_insertion_point(field:OPGPOJAAHHG.ALMMHKFKHLK)
+    pub ALMMHKFKHLK: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:OPGPOJAAHHG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,12 +53,17 @@ impl OPGPOJAAHHG {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DMCCBECKHML",
             |m: &OPGPOJAAHHG| { &m.DMCCBECKHML },
             |m: &mut OPGPOJAAHHG| { &mut m.DMCCBECKHML },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "IIDEAOAACCF",
+            |m: &OPGPOJAAHHG| { &m.IIDEAOAACCF },
+            |m: &mut OPGPOJAAHHG| { &mut m.IIDEAOAACCF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PAGJKDJIGPI",
@@ -64,9 +71,9 @@ impl OPGPOJAAHHG {
             |m: &mut OPGPOJAAHHG| { &mut m.PAGJKDJIGPI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IIDEAOAACCF",
-            |m: &OPGPOJAAHHG| { &m.IIDEAOAACCF },
-            |m: &mut OPGPOJAAHHG| { &mut m.IIDEAOAACCF },
+            "ALMMHKFKHLK",
+            |m: &OPGPOJAAHHG| { &m.ALMMHKFKHLK },
+            |m: &mut OPGPOJAAHHG| { &mut m.ALMMHKFKHLK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OPGPOJAAHHG>(
             "OPGPOJAAHHG",
@@ -86,14 +93,20 @@ impl ::protobuf::Message for OPGPOJAAHHG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                98 => {
                     self.DMCCBECKHML = is.read_string()?;
                 },
-                72 => {
+                26 => {
+                    self.IIDEAOAACCF.push(is.read_message()?);
+                },
+                112 => {
                     self.PAGJKDJIGPI = is.read_bool()?;
                 },
-                98 => {
-                    self.IIDEAOAACCF.push(is.read_message()?);
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.ALMMHKFKHLK)?;
+                },
+                64 => {
+                    self.ALMMHKFKHLK.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +121,16 @@ impl ::protobuf::Message for OPGPOJAAHHG {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.DMCCBECKHML.is_empty() {
-            my_size += ::protobuf::rt::string_size(4, &self.DMCCBECKHML);
-        }
-        if self.PAGJKDJIGPI != false {
-            my_size += 1 + 1;
+            my_size += ::protobuf::rt::string_size(12, &self.DMCCBECKHML);
         }
         for value in &self.IIDEAOAACCF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.PAGJKDJIGPI != false {
+            my_size += 1 + 1;
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.ALMMHKFKHLK);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -124,14 +138,15 @@ impl ::protobuf::Message for OPGPOJAAHHG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.DMCCBECKHML.is_empty() {
-            os.write_string(4, &self.DMCCBECKHML)?;
-        }
-        if self.PAGJKDJIGPI != false {
-            os.write_bool(9, self.PAGJKDJIGPI)?;
+            os.write_string(12, &self.DMCCBECKHML)?;
         }
         for v in &self.IIDEAOAACCF {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
+        if self.PAGJKDJIGPI != false {
+            os.write_bool(14, self.PAGJKDJIGPI)?;
+        }
+        os.write_repeated_packed_uint32(8, &self.ALMMHKFKHLK)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,16 +165,18 @@ impl ::protobuf::Message for OPGPOJAAHHG {
 
     fn clear(&mut self) {
         self.DMCCBECKHML.clear();
-        self.PAGJKDJIGPI = false;
         self.IIDEAOAACCF.clear();
+        self.PAGJKDJIGPI = false;
+        self.ALMMHKFKHLK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OPGPOJAAHHG {
         static instance: OPGPOJAAHHG = OPGPOJAAHHG {
             DMCCBECKHML: ::std::string::String::new(),
-            PAGJKDJIGPI: false,
             IIDEAOAACCF: ::std::vec::Vec::new(),
+            PAGJKDJIGPI: false,
+            ALMMHKFKHLK: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for OPGPOJAAHHG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OPGPOJAAHHG.proto\x1a\x11KAODKKLGDEN.proto\"\x81\x01\n\x0bOPGPOJAA\
-    HHG\x12\x20\n\x0bDMCCBECKHML\x18\x04\x20\x01(\tR\x0bDMCCBECKHML\x12\x20\
-    \n\x0bPAGJKDJIGPI\x18\t\x20\x01(\x08R\x0bPAGJKDJIGPI\x12.\n\x0bIIDEAOAAC\
-    CF\x18\x0c\x20\x03(\x0b2\x0c.KAODKKLGDENR\x0bIIDEAOAACCFb\x06proto3\
+    \n\x11OPGPOJAAHHG.proto\x1a\x11KAODKKLGDEN.proto\"\xa3\x01\n\x0bOPGPOJAA\
+    HHG\x12\x20\n\x0bDMCCBECKHML\x18\x0c\x20\x01(\tR\x0bDMCCBECKHML\x12.\n\
+    \x0bIIDEAOAACCF\x18\x03\x20\x03(\x0b2\x0c.KAODKKLGDENR\x0bIIDEAOAACCF\
+    \x12\x20\n\x0bPAGJKDJIGPI\x18\x0e\x20\x01(\x08R\x0bPAGJKDJIGPI\x12\x20\n\
+    \x0bALMMHKFKHLK\x18\x08\x20\x03(\rR\x0bALMMHKFKHLKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,16 +30,16 @@ pub struct KNIJHGNJIJM {
     // message fields
     // @@protoc_insertion_point(field:KNIJHGNJIJM.JGMIPMDPPIJ)
     pub JGMIPMDPPIJ: u32,
-    // @@protoc_insertion_point(field:KNIJHGNJIJM.DPMIBDHKDAE)
-    pub DPMIBDHKDAE: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:KNIJHGNJIJM.ELAPPCMELOA)
     pub ELAPPCMELOA: u32,
     // @@protoc_insertion_point(field:KNIJHGNJIJM.level)
     pub level: u32,
-    // @@protoc_insertion_point(field:KNIJHGNJIJM.DDGCFJDBOOH)
-    pub DDGCFJDBOOH: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:KNIJHGNJIJM.exp)
     pub exp: u32,
+    // @@protoc_insertion_point(field:KNIJHGNJIJM.DPMIBDHKDAE)
+    pub DPMIBDHKDAE: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:KNIJHGNJIJM.DDGCFJDBOOH)
+    pub DDGCFJDBOOH: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:KNIJHGNJIJM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,11 +64,6 @@ impl KNIJHGNJIJM {
             |m: &KNIJHGNJIJM| { &m.JGMIPMDPPIJ },
             |m: &mut KNIJHGNJIJM| { &mut m.JGMIPMDPPIJ },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DPMIBDHKDAE",
-            |m: &KNIJHGNJIJM| { &m.DPMIBDHKDAE },
-            |m: &mut KNIJHGNJIJM| { &mut m.DPMIBDHKDAE },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ELAPPCMELOA",
             |m: &KNIJHGNJIJM| { &m.ELAPPCMELOA },
@@ -79,15 +74,20 @@ impl KNIJHGNJIJM {
             |m: &KNIJHGNJIJM| { &m.level },
             |m: &mut KNIJHGNJIJM| { &mut m.level },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DDGCFJDBOOH",
-            |m: &KNIJHGNJIJM| { &m.DDGCFJDBOOH },
-            |m: &mut KNIJHGNJIJM| { &mut m.DDGCFJDBOOH },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "exp",
             |m: &KNIJHGNJIJM| { &m.exp },
             |m: &mut KNIJHGNJIJM| { &mut m.exp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DPMIBDHKDAE",
+            |m: &KNIJHGNJIJM| { &m.DPMIBDHKDAE },
+            |m: &mut KNIJHGNJIJM| { &mut m.DPMIBDHKDAE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DDGCFJDBOOH",
+            |m: &KNIJHGNJIJM| { &m.DDGCFJDBOOH },
+            |m: &mut KNIJHGNJIJM| { &mut m.DDGCFJDBOOH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KNIJHGNJIJM>(
             "KNIJHGNJIJM",
@@ -107,29 +107,29 @@ impl ::protobuf::Message for KNIJHGNJIJM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                88 => {
                     self.JGMIPMDPPIJ = is.read_uint32()?;
                 },
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.DPMIBDHKDAE)?;
-                },
-                16 => {
-                    self.DPMIBDHKDAE.push(is.read_uint32()?);
-                },
-                40 => {
+                64 => {
                     self.ELAPPCMELOA = is.read_uint32()?;
                 },
-                32 => {
+                56 => {
                     self.level = is.read_uint32()?;
                 },
-                58 => {
+                120 => {
+                    self.exp = is.read_uint32()?;
+                },
+                106 => {
+                    is.read_repeated_packed_uint32_into(&mut self.DPMIBDHKDAE)?;
+                },
+                104 => {
+                    self.DPMIBDHKDAE.push(is.read_uint32()?);
+                },
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.DDGCFJDBOOH)?;
                 },
-                56 => {
+                16 => {
                     self.DDGCFJDBOOH.push(is.read_uint32()?);
-                },
-                80 => {
-                    self.exp = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -144,19 +144,19 @@ impl ::protobuf::Message for KNIJHGNJIJM {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.JGMIPMDPPIJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.JGMIPMDPPIJ);
+            my_size += ::protobuf::rt::uint32_size(11, self.JGMIPMDPPIJ);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.DPMIBDHKDAE);
         if self.ELAPPCMELOA != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.ELAPPCMELOA);
+            my_size += ::protobuf::rt::uint32_size(8, self.ELAPPCMELOA);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.level);
+            my_size += ::protobuf::rt::uint32_size(7, self.level);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.DDGCFJDBOOH);
         if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.exp);
+            my_size += ::protobuf::rt::uint32_size(15, self.exp);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.DPMIBDHKDAE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.DDGCFJDBOOH);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -164,19 +164,19 @@ impl ::protobuf::Message for KNIJHGNJIJM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.JGMIPMDPPIJ != 0 {
-            os.write_uint32(13, self.JGMIPMDPPIJ)?;
+            os.write_uint32(11, self.JGMIPMDPPIJ)?;
         }
-        os.write_repeated_packed_uint32(2, &self.DPMIBDHKDAE)?;
         if self.ELAPPCMELOA != 0 {
-            os.write_uint32(5, self.ELAPPCMELOA)?;
+            os.write_uint32(8, self.ELAPPCMELOA)?;
         }
         if self.level != 0 {
-            os.write_uint32(4, self.level)?;
+            os.write_uint32(7, self.level)?;
         }
-        os.write_repeated_packed_uint32(7, &self.DDGCFJDBOOH)?;
         if self.exp != 0 {
-            os.write_uint32(10, self.exp)?;
+            os.write_uint32(15, self.exp)?;
         }
+        os.write_repeated_packed_uint32(13, &self.DPMIBDHKDAE)?;
+        os.write_repeated_packed_uint32(2, &self.DDGCFJDBOOH)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -195,22 +195,22 @@ impl ::protobuf::Message for KNIJHGNJIJM {
 
     fn clear(&mut self) {
         self.JGMIPMDPPIJ = 0;
-        self.DPMIBDHKDAE.clear();
         self.ELAPPCMELOA = 0;
         self.level = 0;
-        self.DDGCFJDBOOH.clear();
         self.exp = 0;
+        self.DPMIBDHKDAE.clear();
+        self.DDGCFJDBOOH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KNIJHGNJIJM {
         static instance: KNIJHGNJIJM = KNIJHGNJIJM {
             JGMIPMDPPIJ: 0,
-            DPMIBDHKDAE: ::std::vec::Vec::new(),
             ELAPPCMELOA: 0,
             level: 0,
-            DDGCFJDBOOH: ::std::vec::Vec::new(),
             exp: 0,
+            DPMIBDHKDAE: ::std::vec::Vec::new(),
+            DDGCFJDBOOH: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -236,11 +236,11 @@ impl ::protobuf::reflect::ProtobufValue for KNIJHGNJIJM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KNIJHGNJIJM.proto\"\xbd\x01\n\x0bKNIJHGNJIJM\x12\x20\n\x0bJGMIPMDP\
-    PIJ\x18\r\x20\x01(\rR\x0bJGMIPMDPPIJ\x12\x20\n\x0bDPMIBDHKDAE\x18\x02\
-    \x20\x03(\rR\x0bDPMIBDHKDAE\x12\x20\n\x0bELAPPCMELOA\x18\x05\x20\x01(\rR\
-    \x0bELAPPCMELOA\x12\x14\n\x05level\x18\x04\x20\x01(\rR\x05level\x12\x20\
-    \n\x0bDDGCFJDBOOH\x18\x07\x20\x03(\rR\x0bDDGCFJDBOOH\x12\x10\n\x03exp\
-    \x18\n\x20\x01(\rR\x03expb\x06proto3\
+    PIJ\x18\x0b\x20\x01(\rR\x0bJGMIPMDPPIJ\x12\x20\n\x0bELAPPCMELOA\x18\x08\
+    \x20\x01(\rR\x0bELAPPCMELOA\x12\x14\n\x05level\x18\x07\x20\x01(\rR\x05le\
+    vel\x12\x10\n\x03exp\x18\x0f\x20\x01(\rR\x03exp\x12\x20\n\x0bDPMIBDHKDAE\
+    \x18\r\x20\x03(\rR\x0bDPMIBDHKDAE\x12\x20\n\x0bDDGCFJDBOOH\x18\x02\x20\
+    \x03(\rR\x0bDDGCFJDBOOHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

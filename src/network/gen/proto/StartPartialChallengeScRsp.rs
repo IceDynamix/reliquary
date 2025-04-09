@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartPartialChallengeScRsp {
     // message fields
-    // @@protoc_insertion_point(field:StartPartialChallengeScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:StartPartialChallengeScRsp.IDOMKBKKKKL)
-    pub IDOMKBKKKKL: ::protobuf::MessageField<super::PPJCDCOAFDK::PPJCDCOAFDK>,
     // @@protoc_insertion_point(field:StartPartialChallengeScRsp.CPBNMACLBEH)
     pub CPBNMACLBEH: ::protobuf::MessageField<super::EIMJEAMDFKJ::EIMJEAMDFKJ>,
+    // @@protoc_insertion_point(field:StartPartialChallengeScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:StartPartialChallengeScRsp.MACBLMFJOOO)
     pub MACBLMFJOOO: ::protobuf::MessageField<super::CIOMOMHALAL::CIOMOMHALAL>,
+    // @@protoc_insertion_point(field:StartPartialChallengeScRsp.IDOMKBKKKKL)
+    pub IDOMKBKKKKL: ::protobuf::MessageField<super::PPJCDCOAFDK::PPJCDCOAFDK>,
     // special fields
     // @@protoc_insertion_point(special_field:StartPartialChallengeScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl StartPartialChallengeScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &StartPartialChallengeScRsp| { &m.retcode },
-            |m: &mut StartPartialChallengeScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PPJCDCOAFDK::PPJCDCOAFDK>(
-            "IDOMKBKKKKL",
-            |m: &StartPartialChallengeScRsp| { &m.IDOMKBKKKKL },
-            |m: &mut StartPartialChallengeScRsp| { &mut m.IDOMKBKKKKL },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EIMJEAMDFKJ::EIMJEAMDFKJ>(
             "CPBNMACLBEH",
             |m: &StartPartialChallengeScRsp| { &m.CPBNMACLBEH },
             |m: &mut StartPartialChallengeScRsp| { &mut m.CPBNMACLBEH },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &StartPartialChallengeScRsp| { &m.retcode },
+            |m: &mut StartPartialChallengeScRsp| { &mut m.retcode },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CIOMOMHALAL::CIOMOMHALAL>(
             "MACBLMFJOOO",
             |m: &StartPartialChallengeScRsp| { &m.MACBLMFJOOO },
             |m: &mut StartPartialChallengeScRsp| { &mut m.MACBLMFJOOO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PPJCDCOAFDK::PPJCDCOAFDK>(
+            "IDOMKBKKKKL",
+            |m: &StartPartialChallengeScRsp| { &m.IDOMKBKKKKL },
+            |m: &mut StartPartialChallengeScRsp| { &mut m.IDOMKBKKKKL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartPartialChallengeScRsp>(
             "StartPartialChallengeScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for StartPartialChallengeScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IDOMKBKKKKL)?;
-                },
-                26 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CPBNMACLBEH)?;
                 },
-                74 => {
+                72 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MACBLMFJOOO)?;
+                },
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IDOMKBKKKKL)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for StartPartialChallengeScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
-        }
-        if let Some(v) = self.IDOMKBKKKKL.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if let Some(v) = self.CPBNMACLBEH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+        }
         if let Some(v) = self.MACBLMFJOOO.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.IDOMKBKKKKL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -138,17 +138,17 @@ impl ::protobuf::Message for StartPartialChallengeScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
-        }
-        if let Some(v) = self.IDOMKBKKKKL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        }
         if let Some(v) = self.CPBNMACLBEH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(9, self.retcode)?;
         }
         if let Some(v) = self.MACBLMFJOOO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        }
+        if let Some(v) = self.IDOMKBKKKKL.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,19 +167,19 @@ impl ::protobuf::Message for StartPartialChallengeScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.IDOMKBKKKKL.clear();
         self.CPBNMACLBEH.clear();
+        self.retcode = 0;
         self.MACBLMFJOOO.clear();
+        self.IDOMKBKKKKL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartPartialChallengeScRsp {
         static instance: StartPartialChallengeScRsp = StartPartialChallengeScRsp {
-            retcode: 0,
-            IDOMKBKKKKL: ::protobuf::MessageField::none(),
             CPBNMACLBEH: ::protobuf::MessageField::none(),
+            retcode: 0,
             MACBLMFJOOO: ::protobuf::MessageField::none(),
+            IDOMKBKKKKL: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -206,11 +206,11 @@ impl ::protobuf::reflect::ProtobufValue for StartPartialChallengeScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20StartPartialChallengeScRsp.proto\x1a\x11CIOMOMHALAL.proto\x1a\x11E\
     IMJEAMDFKJ.proto\x1a\x11PPJCDCOAFDK.proto\"\xc6\x01\n\x1aStartPartialCha\
-    llengeScRsp\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12.\n\
-    \x0bIDOMKBKKKKL\x18\x0e\x20\x01(\x0b2\x0c.PPJCDCOAFDKR\x0bIDOMKBKKKKL\
-    \x12.\n\x0bCPBNMACLBEH\x18\x03\x20\x01(\x0b2\x0c.EIMJEAMDFKJR\x0bCPBNMAC\
-    LBEH\x12.\n\x0bMACBLMFJOOO\x18\t\x20\x01(\x0b2\x0c.CIOMOMHALALR\x0bMACBL\
-    MFJOOOb\x06proto3\
+    llengeScRsp\x12.\n\x0bCPBNMACLBEH\x18\x08\x20\x01(\x0b2\x0c.EIMJEAMDFKJR\
+    \x0bCPBNMACLBEH\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x12.\n\
+    \x0bMACBLMFJOOO\x18\x04\x20\x01(\x0b2\x0c.CIOMOMHALALR\x0bMACBLMFJOOO\
+    \x12.\n\x0bIDOMKBKKKKL\x18\x07\x20\x01(\x0b2\x0c.PPJCDCOAFDKR\x0bIDOMKBK\
+    KKKLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

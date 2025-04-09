@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFriendDevelopmentInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetFriendDevelopmentInfoScRsp.KMONAGFELPG)
-    pub KMONAGFELPG: u32,
     // @@protoc_insertion_point(field:GetFriendDevelopmentInfoScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:GetFriendDevelopmentInfoScRsp.JBHBFBJGBPH)
     pub JBHBFBJGBPH: ::std::vec::Vec<super::DHAHAKMPNAF::DHAHAKMPNAF>,
+    // @@protoc_insertion_point(field:GetFriendDevelopmentInfoScRsp.uid)
+    pub uid: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetFriendDevelopmentInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl GetFriendDevelopmentInfoScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KMONAGFELPG",
-            |m: &GetFriendDevelopmentInfoScRsp| { &m.KMONAGFELPG },
-            |m: &mut GetFriendDevelopmentInfoScRsp| { &mut m.KMONAGFELPG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetFriendDevelopmentInfoScRsp| { &m.retcode },
             |m: &mut GetFriendDevelopmentInfoScRsp| { &mut m.retcode },
@@ -67,6 +62,11 @@ impl GetFriendDevelopmentInfoScRsp {
             "JBHBFBJGBPH",
             |m: &GetFriendDevelopmentInfoScRsp| { &m.JBHBFBJGBPH },
             |m: &mut GetFriendDevelopmentInfoScRsp| { &mut m.JBHBFBJGBPH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "uid",
+            |m: &GetFriendDevelopmentInfoScRsp| { &m.uid },
+            |m: &mut GetFriendDevelopmentInfoScRsp| { &mut m.uid },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetFriendDevelopmentInfoScRsp>(
             "GetFriendDevelopmentInfoScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GetFriendDevelopmentInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.KMONAGFELPG = is.read_uint32()?;
-                },
-                80 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                106 => {
+                34 => {
                     self.JBHBFBJGBPH.push(is.read_message()?);
+                },
+                88 => {
+                    self.uid = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,31 +107,31 @@ impl ::protobuf::Message for GetFriendDevelopmentInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KMONAGFELPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.KMONAGFELPG);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         for value in &self.JBHBFBJGBPH {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.uid);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KMONAGFELPG != 0 {
-            os.write_uint32(12, self.KMONAGFELPG)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
         for v in &self.JBHBFBJGBPH {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
+        if self.uid != 0 {
+            os.write_uint32(11, self.uid)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,17 +149,17 @@ impl ::protobuf::Message for GetFriendDevelopmentInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.KMONAGFELPG = 0;
         self.retcode = 0;
         self.JBHBFBJGBPH.clear();
+        self.uid = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFriendDevelopmentInfoScRsp {
         static instance: GetFriendDevelopmentInfoScRsp = GetFriendDevelopmentInfoScRsp {
-            KMONAGFELPG: 0,
             retcode: 0,
             JBHBFBJGBPH: ::std::vec::Vec::new(),
+            uid: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,11 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for GetFriendDevelopmentInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#GetFriendDevelopmentInfoScRsp.proto\x1a\x11DHAHAKMPNAF.proto\"\x8b\
-    \x01\n\x1dGetFriendDevelopmentInfoScRsp\x12\x20\n\x0bKMONAGFELPG\x18\x0c\
-    \x20\x01(\rR\x0bKMONAGFELPG\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07re\
-    tcode\x12.\n\x0bJBHBFBJGBPH\x18\r\x20\x03(\x0b2\x0c.DHAHAKMPNAFR\x0bJBHB\
-    FBJGBPHb\x06proto3\
+    \n#GetFriendDevelopmentInfoScRsp.proto\x1a\x11DHAHAKMPNAF.proto\"{\n\x1d\
+    GetFriendDevelopmentInfoScRsp\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07\
+    retcode\x12.\n\x0bJBHBFBJGBPH\x18\x04\x20\x03(\x0b2\x0c.DHAHAKMPNAFR\x0b\
+    JBHBFBJGBPH\x12\x10\n\x03uid\x18\x0b\x20\x01(\rR\x03uidb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

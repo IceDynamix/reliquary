@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LPJOLCINFDN {
     // message fields
-    // @@protoc_insertion_point(field:LPJOLCINFDN.PGCDMMNNCJC)
-    pub PGCDMMNNCJC: u32,
-    // @@protoc_insertion_point(field:LPJOLCINFDN.PJCJNKBEIMK)
-    pub PJCJNKBEIMK: u32,
     // @@protoc_insertion_point(field:LPJOLCINFDN.LJPEKEDICML)
     pub LJPEKEDICML: u32,
-    // @@protoc_insertion_point(field:LPJOLCINFDN.BDBMIKDJLKO)
-    pub BDBMIKDJLKO: u32,
+    // @@protoc_insertion_point(field:LPJOLCINFDN.PJCJNKBEIMK)
+    pub PJCJNKBEIMK: u32,
+    // @@protoc_insertion_point(field:LPJOLCINFDN.PGCDMMNNCJC)
+    pub PGCDMMNNCJC: u32,
     // @@protoc_insertion_point(field:LPJOLCINFDN.NLJIFEKDPHN)
     pub NLJIFEKDPHN: u32,
+    // @@protoc_insertion_point(field:LPJOLCINFDN.BDBMIKDJLKO)
+    pub BDBMIKDJLKO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LPJOLCINFDN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,9 +58,9 @@ impl LPJOLCINFDN {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PGCDMMNNCJC",
-            |m: &LPJOLCINFDN| { &m.PGCDMMNNCJC },
-            |m: &mut LPJOLCINFDN| { &mut m.PGCDMMNNCJC },
+            "LJPEKEDICML",
+            |m: &LPJOLCINFDN| { &m.LJPEKEDICML },
+            |m: &mut LPJOLCINFDN| { &mut m.LJPEKEDICML },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PJCJNKBEIMK",
@@ -68,19 +68,19 @@ impl LPJOLCINFDN {
             |m: &mut LPJOLCINFDN| { &mut m.PJCJNKBEIMK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LJPEKEDICML",
-            |m: &LPJOLCINFDN| { &m.LJPEKEDICML },
-            |m: &mut LPJOLCINFDN| { &mut m.LJPEKEDICML },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BDBMIKDJLKO",
-            |m: &LPJOLCINFDN| { &m.BDBMIKDJLKO },
-            |m: &mut LPJOLCINFDN| { &mut m.BDBMIKDJLKO },
+            "PGCDMMNNCJC",
+            |m: &LPJOLCINFDN| { &m.PGCDMMNNCJC },
+            |m: &mut LPJOLCINFDN| { &mut m.PGCDMMNNCJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NLJIFEKDPHN",
             |m: &LPJOLCINFDN| { &m.NLJIFEKDPHN },
             |m: &mut LPJOLCINFDN| { &mut m.NLJIFEKDPHN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BDBMIKDJLKO",
+            |m: &LPJOLCINFDN| { &m.BDBMIKDJLKO },
+            |m: &mut LPJOLCINFDN| { &mut m.BDBMIKDJLKO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LPJOLCINFDN>(
             "LPJOLCINFDN",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for LPJOLCINFDN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.PGCDMMNNCJC = is.read_uint32()?;
-                },
-                64 => {
-                    self.PJCJNKBEIMK = is.read_uint32()?;
-                },
                 8 => {
                     self.LJPEKEDICML = is.read_uint32()?;
                 },
                 120 => {
-                    self.BDBMIKDJLKO = is.read_uint32()?;
+                    self.PJCJNKBEIMK = is.read_uint32()?;
+                },
+                64 => {
+                    self.PGCDMMNNCJC = is.read_uint32()?;
+                },
+                32 => {
+                    self.NLJIFEKDPHN = is.read_uint32()?;
                 },
                 88 => {
-                    self.NLJIFEKDPHN = is.read_uint32()?;
+                    self.BDBMIKDJLKO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for LPJOLCINFDN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PGCDMMNNCJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.PGCDMMNNCJC);
-        }
-        if self.PJCJNKBEIMK != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.PJCJNKBEIMK);
-        }
         if self.LJPEKEDICML != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.LJPEKEDICML);
         }
-        if self.BDBMIKDJLKO != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.BDBMIKDJLKO);
+        if self.PJCJNKBEIMK != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.PJCJNKBEIMK);
+        }
+        if self.PGCDMMNNCJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.PGCDMMNNCJC);
         }
         if self.NLJIFEKDPHN != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.NLJIFEKDPHN);
+            my_size += ::protobuf::rt::uint32_size(4, self.NLJIFEKDPHN);
+        }
+        if self.BDBMIKDJLKO != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.BDBMIKDJLKO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for LPJOLCINFDN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PGCDMMNNCJC != 0 {
-            os.write_uint32(3, self.PGCDMMNNCJC)?;
-        }
-        if self.PJCJNKBEIMK != 0 {
-            os.write_uint32(8, self.PJCJNKBEIMK)?;
-        }
         if self.LJPEKEDICML != 0 {
             os.write_uint32(1, self.LJPEKEDICML)?;
         }
-        if self.BDBMIKDJLKO != 0 {
-            os.write_uint32(15, self.BDBMIKDJLKO)?;
+        if self.PJCJNKBEIMK != 0 {
+            os.write_uint32(15, self.PJCJNKBEIMK)?;
+        }
+        if self.PGCDMMNNCJC != 0 {
+            os.write_uint32(8, self.PGCDMMNNCJC)?;
         }
         if self.NLJIFEKDPHN != 0 {
-            os.write_uint32(11, self.NLJIFEKDPHN)?;
+            os.write_uint32(4, self.NLJIFEKDPHN)?;
+        }
+        if self.BDBMIKDJLKO != 0 {
+            os.write_uint32(11, self.BDBMIKDJLKO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for LPJOLCINFDN {
     }
 
     fn clear(&mut self) {
-        self.PGCDMMNNCJC = 0;
-        self.PJCJNKBEIMK = 0;
         self.LJPEKEDICML = 0;
-        self.BDBMIKDJLKO = 0;
+        self.PJCJNKBEIMK = 0;
+        self.PGCDMMNNCJC = 0;
         self.NLJIFEKDPHN = 0;
+        self.BDBMIKDJLKO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LPJOLCINFDN {
         static instance: LPJOLCINFDN = LPJOLCINFDN {
-            PGCDMMNNCJC: 0,
-            PJCJNKBEIMK: 0,
             LJPEKEDICML: 0,
-            BDBMIKDJLKO: 0,
+            PJCJNKBEIMK: 0,
+            PGCDMMNNCJC: 0,
             NLJIFEKDPHN: 0,
+            BDBMIKDJLKO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for LPJOLCINFDN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LPJOLCINFDN.proto\"\xb7\x01\n\x0bLPJOLCINFDN\x12\x20\n\x0bPGCDMMNN\
-    CJC\x18\x03\x20\x01(\rR\x0bPGCDMMNNCJC\x12\x20\n\x0bPJCJNKBEIMK\x18\x08\
-    \x20\x01(\rR\x0bPJCJNKBEIMK\x12\x20\n\x0bLJPEKEDICML\x18\x01\x20\x01(\rR\
-    \x0bLJPEKEDICML\x12\x20\n\x0bBDBMIKDJLKO\x18\x0f\x20\x01(\rR\x0bBDBMIKDJ\
-    LKO\x12\x20\n\x0bNLJIFEKDPHN\x18\x0b\x20\x01(\rR\x0bNLJIFEKDPHNb\x06prot\
+    \n\x11LPJOLCINFDN.proto\"\xb7\x01\n\x0bLPJOLCINFDN\x12\x20\n\x0bLJPEKEDI\
+    CML\x18\x01\x20\x01(\rR\x0bLJPEKEDICML\x12\x20\n\x0bPJCJNKBEIMK\x18\x0f\
+    \x20\x01(\rR\x0bPJCJNKBEIMK\x12\x20\n\x0bPGCDMMNNCJC\x18\x08\x20\x01(\rR\
+    \x0bPGCDMMNNCJC\x12\x20\n\x0bNLJIFEKDPHN\x18\x04\x20\x01(\rR\x0bNLJIFEKD\
+    PHN\x12\x20\n\x0bBDBMIKDJLKO\x18\x0b\x20\x01(\rR\x0bBDBMIKDJLKOb\x06prot\
     o3\
 ";
 

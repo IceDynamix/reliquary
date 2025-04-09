@@ -45,7 +45,7 @@ impl EDBJJKNJPFM {
         ::std::default::Default::default()
     }
 
-    // .EEHIJPMFIIN LODDNCNPANO = 10;
+    // .EEHIJPMFIIN LODDNCNPANO = 11;
 
     pub fn LODDNCNPANO(&self) -> &super::EEHIJPMFIIN::EEHIJPMFIIN {
         match self.KFELKJLDKEH {
@@ -123,7 +123,7 @@ impl ::protobuf::Message for EDBJJKNJPFM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                90 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(edbjjknjpfm::KFELKJLDKEH::LODDNCNPANO(is.read_message()?));
                 },
                 tag => {
@@ -155,7 +155,7 @@ impl ::protobuf::Message for EDBJJKNJPFM {
         if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
             match v {
                 &edbjjknjpfm::KFELKJLDKEH::LODDNCNPANO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
             };
         }
@@ -236,8 +236,8 @@ pub mod edbjjknjpfm {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EDBJJKNJPFM.proto\x1a\x11EEHIJPMFIIN.proto\"N\n\x0bEDBJJKNJPFM\x12\
-    0\n\x0bLODDNCNPANO\x18\n\x20\x01(\x0b2\x0c.EEHIJPMFIINH\0R\x0bLODDNCNPAN\
-    OB\r\n\x0bKFELKJLDKEHb\x06proto3\
+    0\n\x0bLODDNCNPANO\x18\x0b\x20\x01(\x0b2\x0c.EEHIJPMFIINH\0R\x0bLODDNCNP\
+    ANOB\r\n\x0bKFELKJLDKEHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

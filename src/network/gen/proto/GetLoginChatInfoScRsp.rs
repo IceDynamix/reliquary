@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetLoginChatInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                50 => {
                     is.read_repeated_packed_uint32_into(&mut self.AIBFDNEKJMG)?;
                 },
-                24 => {
+                48 => {
                     self.AIBFDNEKJMG.push(is.read_uint32()?);
                 },
                 112 => {
@@ -100,7 +100,7 @@ impl ::protobuf::Message for GetLoginChatInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.AIBFDNEKJMG);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.AIBFDNEKJMG);
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
@@ -110,7 +110,7 @@ impl ::protobuf::Message for GetLoginChatInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(3, &self.AIBFDNEKJMG)?;
+        os.write_repeated_packed_uint32(6, &self.AIBFDNEKJMG)?;
         if self.retcode != 0 {
             os.write_uint32(14, self.retcode)?;
         }
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for GetLoginChatInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bGetLoginChatInfoScRsp.proto\"S\n\x15GetLoginChatInfoScRsp\x12\x20\
-    \n\x0bAIBFDNEKJMG\x18\x03\x20\x03(\rR\x0bAIBFDNEKJMG\x12\x18\n\x07retcod\
+    \n\x0bAIBFDNEKJMG\x18\x06\x20\x03(\rR\x0bAIBFDNEKJMG\x12\x18\n\x07retcod\
     e\x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 

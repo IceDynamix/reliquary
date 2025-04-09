@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CDGJKFMFKDL {
     // message fields
-    // @@protoc_insertion_point(field:CDGJKFMFKDL.ABLICGMCINN)
-    pub ABLICGMCINN: u32,
-    // @@protoc_insertion_point(field:CDGJKFMFKDL.LNBPGPGGIMN)
-    pub LNBPGPGGIMN: u32,
     // @@protoc_insertion_point(field:CDGJKFMFKDL.MEELGNDNOMN)
     pub MEELGNDNOMN: bool,
+    // @@protoc_insertion_point(field:CDGJKFMFKDL.LNBPGPGGIMN)
+    pub LNBPGPGGIMN: u32,
     // @@protoc_insertion_point(field:CDGJKFMFKDL.BPPLLCHMIDD)
     pub BPPLLCHMIDD: bool,
+    // @@protoc_insertion_point(field:CDGJKFMFKDL.ABLICGMCINN)
+    pub ABLICGMCINN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CDGJKFMFKDL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,9 +56,9 @@ impl CDGJKFMFKDL {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ABLICGMCINN",
-            |m: &CDGJKFMFKDL| { &m.ABLICGMCINN },
-            |m: &mut CDGJKFMFKDL| { &mut m.ABLICGMCINN },
+            "MEELGNDNOMN",
+            |m: &CDGJKFMFKDL| { &m.MEELGNDNOMN },
+            |m: &mut CDGJKFMFKDL| { &mut m.MEELGNDNOMN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LNBPGPGGIMN",
@@ -66,14 +66,14 @@ impl CDGJKFMFKDL {
             |m: &mut CDGJKFMFKDL| { &mut m.LNBPGPGGIMN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MEELGNDNOMN",
-            |m: &CDGJKFMFKDL| { &m.MEELGNDNOMN },
-            |m: &mut CDGJKFMFKDL| { &mut m.MEELGNDNOMN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BPPLLCHMIDD",
             |m: &CDGJKFMFKDL| { &m.BPPLLCHMIDD },
             |m: &mut CDGJKFMFKDL| { &mut m.BPPLLCHMIDD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ABLICGMCINN",
+            |m: &CDGJKFMFKDL| { &m.ABLICGMCINN },
+            |m: &mut CDGJKFMFKDL| { &mut m.ABLICGMCINN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CDGJKFMFKDL>(
             "CDGJKFMFKDL",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for CDGJKFMFKDL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.ABLICGMCINN = is.read_uint32()?;
-                },
-                96 => {
-                    self.LNBPGPGGIMN = is.read_uint32()?;
-                },
-                72 => {
+                64 => {
                     self.MEELGNDNOMN = is.read_bool()?;
                 },
-                32 => {
+                24 => {
+                    self.LNBPGPGGIMN = is.read_uint32()?;
+                },
+                96 => {
                     self.BPPLLCHMIDD = is.read_bool()?;
+                },
+                8 => {
+                    self.ABLICGMCINN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for CDGJKFMFKDL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ABLICGMCINN != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.ABLICGMCINN);
-        }
-        if self.LNBPGPGGIMN != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.LNBPGPGGIMN);
-        }
         if self.MEELGNDNOMN != false {
             my_size += 1 + 1;
         }
+        if self.LNBPGPGGIMN != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.LNBPGPGGIMN);
+        }
         if self.BPPLLCHMIDD != false {
             my_size += 1 + 1;
+        }
+        if self.ABLICGMCINN != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.ABLICGMCINN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for CDGJKFMFKDL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ABLICGMCINN != 0 {
-            os.write_uint32(11, self.ABLICGMCINN)?;
+        if self.MEELGNDNOMN != false {
+            os.write_bool(8, self.MEELGNDNOMN)?;
         }
         if self.LNBPGPGGIMN != 0 {
-            os.write_uint32(12, self.LNBPGPGGIMN)?;
-        }
-        if self.MEELGNDNOMN != false {
-            os.write_bool(9, self.MEELGNDNOMN)?;
+            os.write_uint32(3, self.LNBPGPGGIMN)?;
         }
         if self.BPPLLCHMIDD != false {
-            os.write_bool(4, self.BPPLLCHMIDD)?;
+            os.write_bool(12, self.BPPLLCHMIDD)?;
+        }
+        if self.ABLICGMCINN != 0 {
+            os.write_uint32(1, self.ABLICGMCINN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for CDGJKFMFKDL {
     }
 
     fn clear(&mut self) {
-        self.ABLICGMCINN = 0;
-        self.LNBPGPGGIMN = 0;
         self.MEELGNDNOMN = false;
+        self.LNBPGPGGIMN = 0;
         self.BPPLLCHMIDD = false;
+        self.ABLICGMCINN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CDGJKFMFKDL {
         static instance: CDGJKFMFKDL = CDGJKFMFKDL {
-            ABLICGMCINN: 0,
-            LNBPGPGGIMN: 0,
             MEELGNDNOMN: false,
+            LNBPGPGGIMN: 0,
             BPPLLCHMIDD: false,
+            ABLICGMCINN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for CDGJKFMFKDL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CDGJKFMFKDL.proto\"\x95\x01\n\x0bCDGJKFMFKDL\x12\x20\n\x0bABLICGMC\
-    INN\x18\x0b\x20\x01(\rR\x0bABLICGMCINN\x12\x20\n\x0bLNBPGPGGIMN\x18\x0c\
-    \x20\x01(\rR\x0bLNBPGPGGIMN\x12\x20\n\x0bMEELGNDNOMN\x18\t\x20\x01(\x08R\
-    \x0bMEELGNDNOMN\x12\x20\n\x0bBPPLLCHMIDD\x18\x04\x20\x01(\x08R\x0bBPPLLC\
-    HMIDDb\x06proto3\
+    \n\x11CDGJKFMFKDL.proto\"\x95\x01\n\x0bCDGJKFMFKDL\x12\x20\n\x0bMEELGNDN\
+    OMN\x18\x08\x20\x01(\x08R\x0bMEELGNDNOMN\x12\x20\n\x0bLNBPGPGGIMN\x18\
+    \x03\x20\x01(\rR\x0bLNBPGPGGIMN\x12\x20\n\x0bBPPLLCHMIDD\x18\x0c\x20\x01\
+    (\x08R\x0bBPPLLCHMIDD\x12\x20\n\x0bABLICGMCINN\x18\x01\x20\x01(\rR\x0bAB\
+    LICGMCINNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

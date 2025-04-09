@@ -79,7 +79,7 @@ impl ::protobuf::Message for JHJLEPEFADF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                24 => {
                     self.CGGDOGDIDNK = is.read_uint32()?;
                 },
                 10 => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for JHJLEPEFADF {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CGGDOGDIDNK != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.CGGDOGDIDNK);
+            my_size += ::protobuf::rt::uint32_size(3, self.CGGDOGDIDNK);
         }
         my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.GPHEPENPCCP);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -111,7 +111,7 @@ impl ::protobuf::Message for JHJLEPEFADF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CGGDOGDIDNK != 0 {
-            os.write_uint32(12, self.CGGDOGDIDNK)?;
+            os.write_uint32(3, self.CGGDOGDIDNK)?;
         }
         os.write_repeated_packed_uint32(1, &self.GPHEPENPCCP)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for JHJLEPEFADF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JHJLEPEFADF.proto\"Q\n\x0bJHJLEPEFADF\x12\x20\n\x0bCGGDOGDIDNK\x18\
-    \x0c\x20\x01(\rR\x0bCGGDOGDIDNK\x12\x20\n\x0bGPHEPENPCCP\x18\x01\x20\x03\
+    \x03\x20\x01(\rR\x0bCGGDOGDIDNK\x12\x20\n\x0bGPHEPENPCCP\x18\x01\x20\x03\
     (\rR\x0bGPHEPENPCCPb\x06proto3\
 ";
 

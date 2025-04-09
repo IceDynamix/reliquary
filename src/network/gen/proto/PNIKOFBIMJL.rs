@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PNIKOFBIMJL {
     // message fields
-    // @@protoc_insertion_point(field:PNIKOFBIMJL.EOAEFBKNFFE)
-    pub EOAEFBKNFFE: u32,
-    // @@protoc_insertion_point(field:PNIKOFBIMJL.NEJDMEGNFGK)
-    pub NEJDMEGNFGK: u32,
     // @@protoc_insertion_point(field:PNIKOFBIMJL.JHPIDNFBACE)
     pub JHPIDNFBACE: u32,
+    // @@protoc_insertion_point(field:PNIKOFBIMJL.NEJDMEGNFGK)
+    pub NEJDMEGNFGK: u32,
+    // @@protoc_insertion_point(field:PNIKOFBIMJL.EOAEFBKNFFE)
+    pub EOAEFBKNFFE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PNIKOFBIMJL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl PNIKOFBIMJL {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EOAEFBKNFFE",
-            |m: &PNIKOFBIMJL| { &m.EOAEFBKNFFE },
-            |m: &mut PNIKOFBIMJL| { &mut m.EOAEFBKNFFE },
+            "JHPIDNFBACE",
+            |m: &PNIKOFBIMJL| { &m.JHPIDNFBACE },
+            |m: &mut PNIKOFBIMJL| { &mut m.JHPIDNFBACE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NEJDMEGNFGK",
@@ -64,9 +64,9 @@ impl PNIKOFBIMJL {
             |m: &mut PNIKOFBIMJL| { &mut m.NEJDMEGNFGK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JHPIDNFBACE",
-            |m: &PNIKOFBIMJL| { &m.JHPIDNFBACE },
-            |m: &mut PNIKOFBIMJL| { &mut m.JHPIDNFBACE },
+            "EOAEFBKNFFE",
+            |m: &PNIKOFBIMJL| { &m.EOAEFBKNFFE },
+            |m: &mut PNIKOFBIMJL| { &mut m.EOAEFBKNFFE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PNIKOFBIMJL>(
             "PNIKOFBIMJL",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for PNIKOFBIMJL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.EOAEFBKNFFE = is.read_uint32()?;
+                48 => {
+                    self.JHPIDNFBACE = is.read_uint32()?;
                 },
-                56 => {
+                24 => {
                     self.NEJDMEGNFGK = is.read_uint32()?;
                 },
                 88 => {
-                    self.JHPIDNFBACE = is.read_uint32()?;
+                    self.EOAEFBKNFFE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for PNIKOFBIMJL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EOAEFBKNFFE != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.EOAEFBKNFFE);
+        if self.JHPIDNFBACE != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.JHPIDNFBACE);
         }
         if self.NEJDMEGNFGK != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.NEJDMEGNFGK);
+            my_size += ::protobuf::rt::uint32_size(3, self.NEJDMEGNFGK);
         }
-        if self.JHPIDNFBACE != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.JHPIDNFBACE);
+        if self.EOAEFBKNFFE != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.EOAEFBKNFFE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for PNIKOFBIMJL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EOAEFBKNFFE != 0 {
-            os.write_uint32(1, self.EOAEFBKNFFE)?;
+        if self.JHPIDNFBACE != 0 {
+            os.write_uint32(6, self.JHPIDNFBACE)?;
         }
         if self.NEJDMEGNFGK != 0 {
-            os.write_uint32(7, self.NEJDMEGNFGK)?;
+            os.write_uint32(3, self.NEJDMEGNFGK)?;
         }
-        if self.JHPIDNFBACE != 0 {
-            os.write_uint32(11, self.JHPIDNFBACE)?;
+        if self.EOAEFBKNFFE != 0 {
+            os.write_uint32(11, self.EOAEFBKNFFE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for PNIKOFBIMJL {
     }
 
     fn clear(&mut self) {
-        self.EOAEFBKNFFE = 0;
-        self.NEJDMEGNFGK = 0;
         self.JHPIDNFBACE = 0;
+        self.NEJDMEGNFGK = 0;
+        self.EOAEFBKNFFE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PNIKOFBIMJL {
         static instance: PNIKOFBIMJL = PNIKOFBIMJL {
-            EOAEFBKNFFE: 0,
-            NEJDMEGNFGK: 0,
             JHPIDNFBACE: 0,
+            NEJDMEGNFGK: 0,
+            EOAEFBKNFFE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for PNIKOFBIMJL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PNIKOFBIMJL.proto\"s\n\x0bPNIKOFBIMJL\x12\x20\n\x0bEOAEFBKNFFE\x18\
-    \x01\x20\x01(\rR\x0bEOAEFBKNFFE\x12\x20\n\x0bNEJDMEGNFGK\x18\x07\x20\x01\
-    (\rR\x0bNEJDMEGNFGK\x12\x20\n\x0bJHPIDNFBACE\x18\x0b\x20\x01(\rR\x0bJHPI\
-    DNFBACEb\x06proto3\
+    \n\x11PNIKOFBIMJL.proto\"s\n\x0bPNIKOFBIMJL\x12\x20\n\x0bJHPIDNFBACE\x18\
+    \x06\x20\x01(\rR\x0bJHPIDNFBACE\x12\x20\n\x0bNEJDMEGNFGK\x18\x03\x20\x01\
+    (\rR\x0bNEJDMEGNFGK\x12\x20\n\x0bEOAEFBKNFFE\x18\x0b\x20\x01(\rR\x0bEOAE\
+    FBKNFFEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

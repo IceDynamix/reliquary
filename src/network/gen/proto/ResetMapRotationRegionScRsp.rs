@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ResetMapRotationRegionScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ResetMapRotationRegionScRsp.NMCNCKKMMOD)
-    pub NMCNCKKMMOD: u32,
     // @@protoc_insertion_point(field:ResetMapRotationRegionScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:ResetMapRotationRegionScRsp.NMCNCKKMMOD)
+    pub NMCNCKKMMOD: u32,
     // @@protoc_insertion_point(field:ResetMapRotationRegionScRsp.MFNBANEDODD)
     pub MFNBANEDODD: ::protobuf::MessageField<super::CFKHKILIHHF::CFKHKILIHHF>,
     // special fields
@@ -54,14 +54,14 @@ impl ResetMapRotationRegionScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NMCNCKKMMOD",
-            |m: &ResetMapRotationRegionScRsp| { &m.NMCNCKKMMOD },
-            |m: &mut ResetMapRotationRegionScRsp| { &mut m.NMCNCKKMMOD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &ResetMapRotationRegionScRsp| { &m.retcode },
             |m: &mut ResetMapRotationRegionScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NMCNCKKMMOD",
+            |m: &ResetMapRotationRegionScRsp| { &m.NMCNCKKMMOD },
+            |m: &mut ResetMapRotationRegionScRsp| { &mut m.NMCNCKKMMOD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CFKHKILIHHF::CFKHKILIHHF>(
             "MFNBANEDODD",
@@ -87,12 +87,12 @@ impl ::protobuf::Message for ResetMapRotationRegionScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 16 => {
-                    self.NMCNCKKMMOD = is.read_uint32()?;
-                },
-                72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                106 => {
+                8 => {
+                    self.NMCNCKKMMOD = is.read_uint32()?;
+                },
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MFNBANEDODD)?;
                 },
                 tag => {
@@ -107,11 +107,11 @@ impl ::protobuf::Message for ResetMapRotationRegionScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NMCNCKKMMOD != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.NMCNCKKMMOD);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+        }
+        if self.NMCNCKKMMOD != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.NMCNCKKMMOD);
         }
         if let Some(v) = self.MFNBANEDODD.as_ref() {
             let len = v.compute_size();
@@ -123,14 +123,14 @@ impl ::protobuf::Message for ResetMapRotationRegionScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NMCNCKKMMOD != 0 {
-            os.write_uint32(2, self.NMCNCKKMMOD)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
+        }
+        if self.NMCNCKKMMOD != 0 {
+            os.write_uint32(1, self.NMCNCKKMMOD)?;
         }
         if let Some(v) = self.MFNBANEDODD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for ResetMapRotationRegionScRsp {
     }
 
     fn clear(&mut self) {
-        self.NMCNCKKMMOD = 0;
         self.retcode = 0;
+        self.NMCNCKKMMOD = 0;
         self.MFNBANEDODD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ResetMapRotationRegionScRsp {
         static instance: ResetMapRotationRegionScRsp = ResetMapRotationRegionScRsp {
-            NMCNCKKMMOD: 0,
             retcode: 0,
+            NMCNCKKMMOD: 0,
             MFNBANEDODD: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for ResetMapRotationRegionScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!ResetMapRotationRegionScRsp.proto\x1a\x11CFKHKILIHHF.proto\"\x89\x01\
-    \n\x1bResetMapRotationRegionScRsp\x12\x20\n\x0bNMCNCKKMMOD\x18\x02\x20\
-    \x01(\rR\x0bNMCNCKKMMOD\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcod\
-    e\x12.\n\x0bMFNBANEDODD\x18\r\x20\x01(\x0b2\x0c.CFKHKILIHHFR\x0bMFNBANED\
-    ODDb\x06proto3\
+    \n\x1bResetMapRotationRegionScRsp\x12\x18\n\x07retcode\x18\x02\x20\x01(\
+    \rR\x07retcode\x12\x20\n\x0bNMCNCKKMMOD\x18\x01\x20\x01(\rR\x0bNMCNCKKMM\
+    OD\x12.\n\x0bMFNBANEDODD\x18\x0f\x20\x01(\x0b2\x0c.CFKHKILIHHFR\x0bMFNBA\
+    NEDODDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OKDBOGBABNI {
     // message fields
-    // @@protoc_insertion_point(field:OKDBOGBABNI.HDLJBADEKFI)
-    pub HDLJBADEKFI: ::protobuf::MessageField<super::NHAGPMMCDCF::NHAGPMMCDCF>,
-    // @@protoc_insertion_point(field:OKDBOGBABNI.PLCCEHDNAFL)
-    pub PLCCEHDNAFL: ::protobuf::MessageField<super::GGKBHALPIDK::GGKBHALPIDK>,
     // @@protoc_insertion_point(field:OKDBOGBABNI.APMJFGKIFON)
     pub APMJFGKIFON: ::protobuf::MessageField<super::LFJPDDCNBKC::LFJPDDCNBKC>,
+    // @@protoc_insertion_point(field:OKDBOGBABNI.PLCCEHDNAFL)
+    pub PLCCEHDNAFL: ::protobuf::MessageField<super::GGKBHALPIDK::GGKBHALPIDK>,
+    // @@protoc_insertion_point(field:OKDBOGBABNI.HDLJBADEKFI)
+    pub HDLJBADEKFI: ::protobuf::MessageField<super::NHAGPMMCDCF::NHAGPMMCDCF>,
     // message oneof groups
     pub GNKACKHFHHD: ::std::option::Option<okdbogbabni::GNKACKHFHHD>,
     // special fields
@@ -52,7 +52,7 @@ impl OKDBOGBABNI {
         ::std::default::Default::default()
     }
 
-    // .OGNLDADPJFO EDGFEDJBAHF = 586;
+    // .OGNLDADPJFO EDGFEDJBAHF = 1838;
 
     pub fn EDGFEDJBAHF(&self) -> &super::OGNLDADPJFO::OGNLDADPJFO {
         match self.GNKACKHFHHD {
@@ -101,7 +101,7 @@ impl OKDBOGBABNI {
         }
     }
 
-    // .ANGOAMADOMA OPFPOLCGMED = 166;
+    // .ANGOAMADOMA OPFPOLCGMED = 1290;
 
     pub fn OPFPOLCGMED(&self) -> &super::ANGOAMADOMA::ANGOAMADOMA {
         match self.GNKACKHFHHD {
@@ -153,20 +153,20 @@ impl OKDBOGBABNI {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NHAGPMMCDCF::NHAGPMMCDCF>(
-            "HDLJBADEKFI",
-            |m: &OKDBOGBABNI| { &m.HDLJBADEKFI },
-            |m: &mut OKDBOGBABNI| { &mut m.HDLJBADEKFI },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LFJPDDCNBKC::LFJPDDCNBKC>(
+            "APMJFGKIFON",
+            |m: &OKDBOGBABNI| { &m.APMJFGKIFON },
+            |m: &mut OKDBOGBABNI| { &mut m.APMJFGKIFON },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GGKBHALPIDK::GGKBHALPIDK>(
             "PLCCEHDNAFL",
             |m: &OKDBOGBABNI| { &m.PLCCEHDNAFL },
             |m: &mut OKDBOGBABNI| { &mut m.PLCCEHDNAFL },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LFJPDDCNBKC::LFJPDDCNBKC>(
-            "APMJFGKIFON",
-            |m: &OKDBOGBABNI| { &m.APMJFGKIFON },
-            |m: &mut OKDBOGBABNI| { &mut m.APMJFGKIFON },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NHAGPMMCDCF::NHAGPMMCDCF>(
+            "HDLJBADEKFI",
+            |m: &OKDBOGBABNI| { &m.HDLJBADEKFI },
+            |m: &mut OKDBOGBABNI| { &mut m.HDLJBADEKFI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OGNLDADPJFO::OGNLDADPJFO>(
             "EDGFEDJBAHF",
@@ -201,19 +201,19 @@ impl ::protobuf::Message for OKDBOGBABNI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HDLJBADEKFI)?;
-                },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PLCCEHDNAFL)?;
-                },
-                98 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.APMJFGKIFON)?;
                 },
-                4690 => {
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PLCCEHDNAFL)?;
+                },
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HDLJBADEKFI)?;
+                },
+                14706 => {
                     self.GNKACKHFHHD = ::std::option::Option::Some(okdbogbabni::GNKACKHFHHD::EDGFEDJBAHF(is.read_message()?));
                 },
-                1330 => {
+                10322 => {
                     self.GNKACKHFHHD = ::std::option::Option::Some(okdbogbabni::GNKACKHFHHD::OPFPOLCGMED(is.read_message()?));
                 },
                 tag => {
@@ -228,7 +228,7 @@ impl ::protobuf::Message for OKDBOGBABNI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.HDLJBADEKFI.as_ref() {
+        if let Some(v) = self.APMJFGKIFON.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -236,7 +236,7 @@ impl ::protobuf::Message for OKDBOGBABNI {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.APMJFGKIFON.as_ref() {
+        if let Some(v) = self.HDLJBADEKFI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -258,22 +258,22 @@ impl ::protobuf::Message for OKDBOGBABNI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.HDLJBADEKFI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if let Some(v) = self.APMJFGKIFON.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if let Some(v) = self.PLCCEHDNAFL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
-        if let Some(v) = self.APMJFGKIFON.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if let Some(v) = self.HDLJBADEKFI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         if let ::std::option::Option::Some(ref v) = self.GNKACKHFHHD {
             match v {
                 &okdbogbabni::GNKACKHFHHD::EDGFEDJBAHF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(586, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1838, v, os)?;
                 },
                 &okdbogbabni::GNKACKHFHHD::OPFPOLCGMED(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(166, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1290, v, os)?;
                 },
             };
         }
@@ -294,9 +294,9 @@ impl ::protobuf::Message for OKDBOGBABNI {
     }
 
     fn clear(&mut self) {
-        self.HDLJBADEKFI.clear();
-        self.PLCCEHDNAFL.clear();
         self.APMJFGKIFON.clear();
+        self.PLCCEHDNAFL.clear();
+        self.HDLJBADEKFI.clear();
         self.GNKACKHFHHD = ::std::option::Option::None;
         self.GNKACKHFHHD = ::std::option::Option::None;
         self.special_fields.clear();
@@ -304,9 +304,9 @@ impl ::protobuf::Message for OKDBOGBABNI {
 
     fn default_instance() -> &'static OKDBOGBABNI {
         static instance: OKDBOGBABNI = OKDBOGBABNI {
-            HDLJBADEKFI: ::protobuf::MessageField::none(),
-            PLCCEHDNAFL: ::protobuf::MessageField::none(),
             APMJFGKIFON: ::protobuf::MessageField::none(),
+            PLCCEHDNAFL: ::protobuf::MessageField::none(),
+            HDLJBADEKFI: ::protobuf::MessageField::none(),
             GNKACKHFHHD: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -364,13 +364,13 @@ pub mod okdbogbabni {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OKDBOGBABNI.proto\x1a\x11ANGOAMADOMA.proto\x1a\x11GGKBHALPIDK.prot\
     o\x1a\x11LFJPDDCNBKC.proto\x1a\x11NHAGPMMCDCF.proto\x1a\x11OGNLDADPJFO.p\
-    roto\"\x92\x02\n\x0bOKDBOGBABNI\x12.\n\x0bHDLJBADEKFI\x18\r\x20\x01(\x0b\
-    2\x0c.NHAGPMMCDCFR\x0bHDLJBADEKFI\x12.\n\x0bPLCCEHDNAFL\x18\x05\x20\x01(\
-    \x0b2\x0c.GGKBHALPIDKR\x0bPLCCEHDNAFL\x12.\n\x0bAPMJFGKIFON\x18\x0c\x20\
-    \x01(\x0b2\x0c.LFJPDDCNBKCR\x0bAPMJFGKIFON\x121\n\x0bEDGFEDJBAHF\x18\xca\
-    \x04\x20\x01(\x0b2\x0c.OGNLDADPJFOH\0R\x0bEDGFEDJBAHF\x121\n\x0bOPFPOLCG\
-    MED\x18\xa6\x01\x20\x01(\x0b2\x0c.ANGOAMADOMAH\0R\x0bOPFPOLCGMEDB\r\n\
-    \x0bGNKACKHFHHDb\x06proto3\
+    roto\"\x92\x02\n\x0bOKDBOGBABNI\x12.\n\x0bAPMJFGKIFON\x18\t\x20\x01(\x0b\
+    2\x0c.LFJPDDCNBKCR\x0bAPMJFGKIFON\x12.\n\x0bPLCCEHDNAFL\x18\x0e\x20\x01(\
+    \x0b2\x0c.GGKBHALPIDKR\x0bPLCCEHDNAFL\x12.\n\x0bHDLJBADEKFI\x18\x05\x20\
+    \x01(\x0b2\x0c.NHAGPMMCDCFR\x0bHDLJBADEKFI\x121\n\x0bEDGFEDJBAHF\x18\xae\
+    \x0e\x20\x01(\x0b2\x0c.OGNLDADPJFOH\0R\x0bEDGFEDJBAHF\x121\n\x0bOPFPOLCG\
+    MED\x18\x8a\n\x20\x01(\x0b2\x0c.ANGOAMADOMAH\0R\x0bOPFPOLCGMEDB\r\n\x0bG\
+    NKACKHFHHDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

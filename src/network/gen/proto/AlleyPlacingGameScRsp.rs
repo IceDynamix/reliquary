@@ -32,18 +32,18 @@ pub struct AlleyPlacingGameScRsp {
     pub ILEGFKGCMOM: u32,
     // @@protoc_insertion_point(field:AlleyPlacingGameScRsp.FHICMGDFGBC)
     pub FHICMGDFGBC: u32,
-    // @@protoc_insertion_point(field:AlleyPlacingGameScRsp.ELBBANDDJCI)
-    pub ELBBANDDJCI: u32,
-    // @@protoc_insertion_point(field:AlleyPlacingGameScRsp.KOFICKLLJNI)
-    pub KOFICKLLJNI: u32,
+    // @@protoc_insertion_point(field:AlleyPlacingGameScRsp.PGLGBLKKIDA)
+    pub PGLGBLKKIDA: u32,
     // @@protoc_insertion_point(field:AlleyPlacingGameScRsp.KFBOKLHDJDA)
     pub KFBOKLHDJDA: u32,
     // @@protoc_insertion_point(field:AlleyPlacingGameScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:AlleyPlacingGameScRsp.KHIBBGPHDMB)
     pub KHIBBGPHDMB: u32,
-    // @@protoc_insertion_point(field:AlleyPlacingGameScRsp.PGLGBLKKIDA)
-    pub PGLGBLKKIDA: u32,
+    // @@protoc_insertion_point(field:AlleyPlacingGameScRsp.KOFICKLLJNI)
+    pub KOFICKLLJNI: u32,
+    // @@protoc_insertion_point(field:AlleyPlacingGameScRsp.ELBBANDDJCI)
+    pub ELBBANDDJCI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AlleyPlacingGameScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -74,14 +74,9 @@ impl AlleyPlacingGameScRsp {
             |m: &mut AlleyPlacingGameScRsp| { &mut m.FHICMGDFGBC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ELBBANDDJCI",
-            |m: &AlleyPlacingGameScRsp| { &m.ELBBANDDJCI },
-            |m: &mut AlleyPlacingGameScRsp| { &mut m.ELBBANDDJCI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KOFICKLLJNI",
-            |m: &AlleyPlacingGameScRsp| { &m.KOFICKLLJNI },
-            |m: &mut AlleyPlacingGameScRsp| { &mut m.KOFICKLLJNI },
+            "PGLGBLKKIDA",
+            |m: &AlleyPlacingGameScRsp| { &m.PGLGBLKKIDA },
+            |m: &mut AlleyPlacingGameScRsp| { &mut m.PGLGBLKKIDA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KFBOKLHDJDA",
@@ -99,9 +94,14 @@ impl AlleyPlacingGameScRsp {
             |m: &mut AlleyPlacingGameScRsp| { &mut m.KHIBBGPHDMB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PGLGBLKKIDA",
-            |m: &AlleyPlacingGameScRsp| { &m.PGLGBLKKIDA },
-            |m: &mut AlleyPlacingGameScRsp| { &mut m.PGLGBLKKIDA },
+            "KOFICKLLJNI",
+            |m: &AlleyPlacingGameScRsp| { &m.KOFICKLLJNI },
+            |m: &mut AlleyPlacingGameScRsp| { &mut m.KOFICKLLJNI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ELBBANDDJCI",
+            |m: &AlleyPlacingGameScRsp| { &m.ELBBANDDJCI },
+            |m: &mut AlleyPlacingGameScRsp| { &mut m.ELBBANDDJCI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AlleyPlacingGameScRsp>(
             "AlleyPlacingGameScRsp",
@@ -121,29 +121,29 @@ impl ::protobuf::Message for AlleyPlacingGameScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                24 => {
                     self.ILEGFKGCMOM = is.read_uint32()?;
                 },
-                64 => {
+                104 => {
                     self.FHICMGDFGBC = is.read_uint32()?;
                 },
                 40 => {
-                    self.ELBBANDDJCI = is.read_uint32()?;
+                    self.PGLGBLKKIDA = is.read_uint32()?;
                 },
                 32 => {
-                    self.KOFICKLLJNI = is.read_uint32()?;
-                },
-                8 => {
                     self.KFBOKLHDJDA = is.read_uint32()?;
                 },
-                48 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                112 => {
+                80 => {
                     self.KHIBBGPHDMB = is.read_uint32()?;
                 },
-                16 => {
-                    self.PGLGBLKKIDA = is.read_uint32()?;
+                120 => {
+                    self.KOFICKLLJNI = is.read_uint32()?;
+                },
+                88 => {
+                    self.ELBBANDDJCI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -158,28 +158,28 @@ impl ::protobuf::Message for AlleyPlacingGameScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.ILEGFKGCMOM != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.ILEGFKGCMOM);
+            my_size += ::protobuf::rt::uint32_size(3, self.ILEGFKGCMOM);
         }
         if self.FHICMGDFGBC != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.FHICMGDFGBC);
-        }
-        if self.ELBBANDDJCI != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.ELBBANDDJCI);
-        }
-        if self.KOFICKLLJNI != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.KOFICKLLJNI);
-        }
-        if self.KFBOKLHDJDA != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.KFBOKLHDJDA);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
-        }
-        if self.KHIBBGPHDMB != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.KHIBBGPHDMB);
+            my_size += ::protobuf::rt::uint32_size(13, self.FHICMGDFGBC);
         }
         if self.PGLGBLKKIDA != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.PGLGBLKKIDA);
+            my_size += ::protobuf::rt::uint32_size(5, self.PGLGBLKKIDA);
+        }
+        if self.KFBOKLHDJDA != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.KFBOKLHDJDA);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        }
+        if self.KHIBBGPHDMB != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.KHIBBGPHDMB);
+        }
+        if self.KOFICKLLJNI != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.KOFICKLLJNI);
+        }
+        if self.ELBBANDDJCI != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.ELBBANDDJCI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -188,28 +188,28 @@ impl ::protobuf::Message for AlleyPlacingGameScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.ILEGFKGCMOM != 0 {
-            os.write_uint32(7, self.ILEGFKGCMOM)?;
+            os.write_uint32(3, self.ILEGFKGCMOM)?;
         }
         if self.FHICMGDFGBC != 0 {
-            os.write_uint32(8, self.FHICMGDFGBC)?;
-        }
-        if self.ELBBANDDJCI != 0 {
-            os.write_uint32(5, self.ELBBANDDJCI)?;
-        }
-        if self.KOFICKLLJNI != 0 {
-            os.write_uint32(4, self.KOFICKLLJNI)?;
-        }
-        if self.KFBOKLHDJDA != 0 {
-            os.write_uint32(1, self.KFBOKLHDJDA)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
-        }
-        if self.KHIBBGPHDMB != 0 {
-            os.write_uint32(14, self.KHIBBGPHDMB)?;
+            os.write_uint32(13, self.FHICMGDFGBC)?;
         }
         if self.PGLGBLKKIDA != 0 {
-            os.write_uint32(2, self.PGLGBLKKIDA)?;
+            os.write_uint32(5, self.PGLGBLKKIDA)?;
+        }
+        if self.KFBOKLHDJDA != 0 {
+            os.write_uint32(4, self.KFBOKLHDJDA)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(7, self.retcode)?;
+        }
+        if self.KHIBBGPHDMB != 0 {
+            os.write_uint32(10, self.KHIBBGPHDMB)?;
+        }
+        if self.KOFICKLLJNI != 0 {
+            os.write_uint32(15, self.KOFICKLLJNI)?;
+        }
+        if self.ELBBANDDJCI != 0 {
+            os.write_uint32(11, self.ELBBANDDJCI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -230,12 +230,12 @@ impl ::protobuf::Message for AlleyPlacingGameScRsp {
     fn clear(&mut self) {
         self.ILEGFKGCMOM = 0;
         self.FHICMGDFGBC = 0;
-        self.ELBBANDDJCI = 0;
-        self.KOFICKLLJNI = 0;
+        self.PGLGBLKKIDA = 0;
         self.KFBOKLHDJDA = 0;
         self.retcode = 0;
         self.KHIBBGPHDMB = 0;
-        self.PGLGBLKKIDA = 0;
+        self.KOFICKLLJNI = 0;
+        self.ELBBANDDJCI = 0;
         self.special_fields.clear();
     }
 
@@ -243,12 +243,12 @@ impl ::protobuf::Message for AlleyPlacingGameScRsp {
         static instance: AlleyPlacingGameScRsp = AlleyPlacingGameScRsp {
             ILEGFKGCMOM: 0,
             FHICMGDFGBC: 0,
-            ELBBANDDJCI: 0,
-            KOFICKLLJNI: 0,
+            PGLGBLKKIDA: 0,
             KFBOKLHDJDA: 0,
             retcode: 0,
             KHIBBGPHDMB: 0,
-            PGLGBLKKIDA: 0,
+            KOFICKLLJNI: 0,
+            ELBBANDDJCI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -274,13 +274,13 @@ impl ::protobuf::reflect::ProtobufValue for AlleyPlacingGameScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bAlleyPlacingGameScRsp.proto\"\x9f\x02\n\x15AlleyPlacingGameScRsp\
-    \x12\x20\n\x0bILEGFKGCMOM\x18\x07\x20\x01(\rR\x0bILEGFKGCMOM\x12\x20\n\
-    \x0bFHICMGDFGBC\x18\x08\x20\x01(\rR\x0bFHICMGDFGBC\x12\x20\n\x0bELBBANDD\
-    JCI\x18\x05\x20\x01(\rR\x0bELBBANDDJCI\x12\x20\n\x0bKOFICKLLJNI\x18\x04\
-    \x20\x01(\rR\x0bKOFICKLLJNI\x12\x20\n\x0bKFBOKLHDJDA\x18\x01\x20\x01(\rR\
-    \x0bKFBOKLHDJDA\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\x12\
-    \x20\n\x0bKHIBBGPHDMB\x18\x0e\x20\x01(\rR\x0bKHIBBGPHDMB\x12\x20\n\x0bPG\
-    LGBLKKIDA\x18\x02\x20\x01(\rR\x0bPGLGBLKKIDAb\x06proto3\
+    \x12\x20\n\x0bILEGFKGCMOM\x18\x03\x20\x01(\rR\x0bILEGFKGCMOM\x12\x20\n\
+    \x0bFHICMGDFGBC\x18\r\x20\x01(\rR\x0bFHICMGDFGBC\x12\x20\n\x0bPGLGBLKKID\
+    A\x18\x05\x20\x01(\rR\x0bPGLGBLKKIDA\x12\x20\n\x0bKFBOKLHDJDA\x18\x04\
+    \x20\x01(\rR\x0bKFBOKLHDJDA\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07\
+    retcode\x12\x20\n\x0bKHIBBGPHDMB\x18\n\x20\x01(\rR\x0bKHIBBGPHDMB\x12\
+    \x20\n\x0bKOFICKLLJNI\x18\x0f\x20\x01(\rR\x0bKOFICKLLJNI\x12\x20\n\x0bEL\
+    BBANDDJCI\x18\x0b\x20\x01(\rR\x0bELBBANDDJCIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

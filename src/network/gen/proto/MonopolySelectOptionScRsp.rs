@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolySelectOptionScRsp {
     // message fields
+    // @@protoc_insertion_point(field:MonopolySelectOptionScRsp.ABNOINLOKLN)
+    pub ABNOINLOKLN: ::std::vec::Vec<super::DDCELCOJGNP::DDCELCOJGNP>,
     // @@protoc_insertion_point(field:MonopolySelectOptionScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:MonopolySelectOptionScRsp.FHICMGDFGBC)
-    pub FHICMGDFGBC: u32,
     // @@protoc_insertion_point(field:MonopolySelectOptionScRsp.GPFGDOKNGEL)
     pub GPFGDOKNGEL: ::protobuf::MessageField<super::BLMJNFFPMCN_LBENAAHCPEO::LBENAAHCPEO>,
     // @@protoc_insertion_point(field:MonopolySelectOptionScRsp.KDMLLLGHJON)
     pub KDMLLLGHJON: u32,
-    // @@protoc_insertion_point(field:MonopolySelectOptionScRsp.ABNOINLOKLN)
-    pub ABNOINLOKLN: ::std::vec::Vec<super::DDCELCOJGNP::DDCELCOJGNP>,
+    // @@protoc_insertion_point(field:MonopolySelectOptionScRsp.FHICMGDFGBC)
+    pub FHICMGDFGBC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolySelectOptionScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,15 +57,15 @@ impl MonopolySelectOptionScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "ABNOINLOKLN",
+            |m: &MonopolySelectOptionScRsp| { &m.ABNOINLOKLN },
+            |m: &mut MonopolySelectOptionScRsp| { &mut m.ABNOINLOKLN },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &MonopolySelectOptionScRsp| { &m.retcode },
             |m: &mut MonopolySelectOptionScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FHICMGDFGBC",
-            |m: &MonopolySelectOptionScRsp| { &m.FHICMGDFGBC },
-            |m: &mut MonopolySelectOptionScRsp| { &mut m.FHICMGDFGBC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BLMJNFFPMCN_LBENAAHCPEO::LBENAAHCPEO>(
             "GPFGDOKNGEL",
@@ -77,10 +77,10 @@ impl MonopolySelectOptionScRsp {
             |m: &MonopolySelectOptionScRsp| { &m.KDMLLLGHJON },
             |m: &mut MonopolySelectOptionScRsp| { &mut m.KDMLLLGHJON },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ABNOINLOKLN",
-            |m: &MonopolySelectOptionScRsp| { &m.ABNOINLOKLN },
-            |m: &mut MonopolySelectOptionScRsp| { &mut m.ABNOINLOKLN },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FHICMGDFGBC",
+            |m: &MonopolySelectOptionScRsp| { &m.FHICMGDFGBC },
+            |m: &mut MonopolySelectOptionScRsp| { &mut m.FHICMGDFGBC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolySelectOptionScRsp>(
             "MonopolySelectOptionScRsp",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for MonopolySelectOptionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                58 => {
+                    self.ABNOINLOKLN.push(is.read_message()?);
+                },
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                64 => {
-                    self.FHICMGDFGBC = is.read_uint32()?;
-                },
-                114 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GPFGDOKNGEL)?;
                 },
-                88 => {
+                112 => {
                     self.KDMLLLGHJON = is.read_uint32()?;
                 },
-                10 => {
-                    self.ABNOINLOKLN.push(is.read_message()?);
+                32 => {
+                    self.FHICMGDFGBC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,44 +127,44 @@ impl ::protobuf::Message for MonopolySelectOptionScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        for value in &self.ABNOINLOKLN {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
-        }
-        if self.FHICMGDFGBC != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.FHICMGDFGBC);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         if let Some(v) = self.GPFGDOKNGEL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.KDMLLLGHJON != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.KDMLLLGHJON);
+            my_size += ::protobuf::rt::uint32_size(14, self.KDMLLLGHJON);
         }
-        for value in &self.ABNOINLOKLN {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
+        if self.FHICMGDFGBC != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.FHICMGDFGBC);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        for v in &self.ABNOINLOKLN {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        };
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
-        }
-        if self.FHICMGDFGBC != 0 {
-            os.write_uint32(8, self.FHICMGDFGBC)?;
+            os.write_uint32(1, self.retcode)?;
         }
         if let Some(v) = self.GPFGDOKNGEL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if self.KDMLLLGHJON != 0 {
-            os.write_uint32(11, self.KDMLLLGHJON)?;
+            os.write_uint32(14, self.KDMLLLGHJON)?;
         }
-        for v in &self.ABNOINLOKLN {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
+        if self.FHICMGDFGBC != 0 {
+            os.write_uint32(4, self.FHICMGDFGBC)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -182,21 +182,21 @@ impl ::protobuf::Message for MonopolySelectOptionScRsp {
     }
 
     fn clear(&mut self) {
+        self.ABNOINLOKLN.clear();
         self.retcode = 0;
-        self.FHICMGDFGBC = 0;
         self.GPFGDOKNGEL.clear();
         self.KDMLLLGHJON = 0;
-        self.ABNOINLOKLN.clear();
+        self.FHICMGDFGBC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolySelectOptionScRsp {
         static instance: MonopolySelectOptionScRsp = MonopolySelectOptionScRsp {
+            ABNOINLOKLN: ::std::vec::Vec::new(),
             retcode: 0,
-            FHICMGDFGBC: 0,
             GPFGDOKNGEL: ::protobuf::MessageField::none(),
             KDMLLLGHJON: 0,
-            ABNOINLOKLN: ::std::vec::Vec::new(),
+            FHICMGDFGBC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -223,11 +223,11 @@ impl ::protobuf::reflect::ProtobufValue for MonopolySelectOptionScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fMonopolySelectOptionScRsp.proto\x1a\x11DDCELCOJGNP.proto\x1a\x1dBL\
     MJNFFPMCN_LBENAAHCPEO.proto\"\xd9\x01\n\x19MonopolySelectOptionScRsp\x12\
-    \x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcode\x12\x20\n\x0bFHICMGDFGB\
-    C\x18\x08\x20\x01(\rR\x0bFHICMGDFGBC\x12.\n\x0bGPFGDOKNGEL\x18\x0e\x20\
-    \x01(\x0b2\x0c.LBENAAHCPEOR\x0bGPFGDOKNGEL\x12\x20\n\x0bKDMLLLGHJON\x18\
-    \x0b\x20\x01(\rR\x0bKDMLLLGHJON\x12.\n\x0bABNOINLOKLN\x18\x01\x20\x03(\
-    \x0b2\x0c.DDCELCOJGNPR\x0bABNOINLOKLNb\x06proto3\
+    .\n\x0bABNOINLOKLN\x18\x07\x20\x03(\x0b2\x0c.DDCELCOJGNPR\x0bABNOINLOKLN\
+    \x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12.\n\x0bGPFGDOKNG\
+    EL\x18\x03\x20\x01(\x0b2\x0c.LBENAAHCPEOR\x0bGPFGDOKNGEL\x12\x20\n\x0bKD\
+    MLLLGHJON\x18\x0e\x20\x01(\rR\x0bKDMLLLGHJON\x12\x20\n\x0bFHICMGDFGBC\
+    \x18\x04\x20\x01(\rR\x0bFHICMGDFGBCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

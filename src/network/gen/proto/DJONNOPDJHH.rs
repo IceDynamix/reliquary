@@ -72,7 +72,7 @@ impl ::protobuf::Message for DJONNOPDJHH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.NLNBNGIJAFI)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for DJONNOPDJHH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.NLNBNGIJAFI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for DJONNOPDJHH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DJONNOPDJHH.proto\x1a\x1fRogueCommonBuffSelectInfo.proto\"K\n\x0bD\
-    JONNOPDJHH\x12<\n\x0bNLNBNGIJAFI\x18\x02\x20\x01(\x0b2\x1a.RogueCommonBu\
+    JONNOPDJHH\x12<\n\x0bNLNBNGIJAFI\x18\x08\x20\x01(\x0b2\x1a.RogueCommonBu\
     ffSelectInfoR\x0bNLNBNGIJAFIb\x06proto3\
 ";
 

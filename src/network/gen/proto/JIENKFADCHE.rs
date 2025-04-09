@@ -79,7 +79,7 @@ impl ::protobuf::Message for JIENKFADCHE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                32 => {
                     self.NJOICIOPBNH = is.read_uint32()?;
                 },
                 112 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for JIENKFADCHE {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.NJOICIOPBNH != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.NJOICIOPBNH);
+            my_size += ::protobuf::rt::uint32_size(4, self.NJOICIOPBNH);
         }
         if self.DBAHFEFGLMD != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.DBAHFEFGLMD);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for JIENKFADCHE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.NJOICIOPBNH != 0 {
-            os.write_uint32(11, self.NJOICIOPBNH)?;
+            os.write_uint32(4, self.NJOICIOPBNH)?;
         }
         if self.DBAHFEFGLMD != 0 {
             os.write_uint32(14, self.DBAHFEFGLMD)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for JIENKFADCHE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JIENKFADCHE.proto\"Q\n\x0bJIENKFADCHE\x12\x20\n\x0bNJOICIOPBNH\x18\
-    \x0b\x20\x01(\rR\x0bNJOICIOPBNH\x12\x20\n\x0bDBAHFEFGLMD\x18\x0e\x20\x01\
+    \x04\x20\x01(\rR\x0bNJOICIOPBNH\x12\x20\n\x0bDBAHFEFGLMD\x18\x0e\x20\x01\
     (\rR\x0bDBAHFEFGLMDb\x06proto3\
 ";
 

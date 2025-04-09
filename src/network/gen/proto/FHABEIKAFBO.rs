@@ -48,7 +48,7 @@ impl FHABEIKAFBO {
         ::std::default::Default::default()
     }
 
-    // .GNIEJGNKKGG KFBPCFDHLHL = 48;
+    // .GNIEJGNKKGG KFBPCFDHLHL = 1100;
 
     pub fn KFBPCFDHLHL(&self) -> &super::GNIEJGNKKGG::GNIEJGNKKGG {
         match self.IJCLEPCJBOA {
@@ -131,10 +131,10 @@ impl ::protobuf::Message for FHABEIKAFBO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                8 => {
                     self.ELGANMDPMID = is.read_uint32()?;
                 },
-                386 => {
+                8802 => {
                     self.IJCLEPCJBOA = ::std::option::Option::Some(fhabeikafbo::IJCLEPCJBOA::KFBPCFDHLHL(is.read_message()?));
                 },
                 tag => {
@@ -150,7 +150,7 @@ impl ::protobuf::Message for FHABEIKAFBO {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.ELGANMDPMID != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.ELGANMDPMID);
+            my_size += ::protobuf::rt::uint32_size(1, self.ELGANMDPMID);
         }
         if let ::std::option::Option::Some(ref v) = self.IJCLEPCJBOA {
             match v {
@@ -167,12 +167,12 @@ impl ::protobuf::Message for FHABEIKAFBO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.ELGANMDPMID != 0 {
-            os.write_uint32(9, self.ELGANMDPMID)?;
+            os.write_uint32(1, self.ELGANMDPMID)?;
         }
         if let ::std::option::Option::Some(ref v) = self.IJCLEPCJBOA {
             match v {
                 &fhabeikafbo::IJCLEPCJBOA::KFBPCFDHLHL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(48, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1100, v, os)?;
                 },
             };
         }
@@ -254,10 +254,10 @@ pub mod fhabeikafbo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FHABEIKAFBO.proto\x1a\x11GNIEJGNKKGG.proto\"p\n\x0bFHABEIKAFBO\x12\
-    \x20\n\x0bELGANMDPMID\x18\t\x20\x01(\rR\x0bELGANMDPMID\x120\n\x0bKFBPCFD\
-    HLHL\x180\x20\x01(\x0b2\x0c.GNIEJGNKKGGH\0R\x0bKFBPCFDHLHLB\r\n\x0bIJCLE\
-    PCJBOAb\x06proto3\
+    \n\x11FHABEIKAFBO.proto\x1a\x11GNIEJGNKKGG.proto\"q\n\x0bFHABEIKAFBO\x12\
+    \x20\n\x0bELGANMDPMID\x18\x01\x20\x01(\rR\x0bELGANMDPMID\x121\n\x0bKFBPC\
+    FDHLHL\x18\xcc\x08\x20\x01(\x0b2\x0c.GNIEJGNKKGGH\0R\x0bKFBPCFDHLHLB\r\n\
+    \x0bIJCLEPCJBOAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JMIJJHKIBLB {
     // message fields
+    // @@protoc_insertion_point(field:JMIJJHKIBLB.GJIEAHDBNNI)
+    pub GJIEAHDBNNI: bool,
     // @@protoc_insertion_point(field:JMIJJHKIBLB.FEPKAMAILMK)
     pub FEPKAMAILMK: u32,
     // @@protoc_insertion_point(field:JMIJJHKIBLB.CFAAFJJAADP)
     pub CFAAFJJAADP: u32,
-    // @@protoc_insertion_point(field:JMIJJHKIBLB.GJIEAHDBNNI)
-    pub GJIEAHDBNNI: bool,
     // special fields
     // @@protoc_insertion_point(special_field:JMIJJHKIBLB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl JMIJJHKIBLB {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GJIEAHDBNNI",
+            |m: &JMIJJHKIBLB| { &m.GJIEAHDBNNI },
+            |m: &mut JMIJJHKIBLB| { &mut m.GJIEAHDBNNI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FEPKAMAILMK",
             |m: &JMIJJHKIBLB| { &m.FEPKAMAILMK },
             |m: &mut JMIJJHKIBLB| { &mut m.FEPKAMAILMK },
@@ -62,11 +67,6 @@ impl JMIJJHKIBLB {
             "CFAAFJJAADP",
             |m: &JMIJJHKIBLB| { &m.CFAAFJJAADP },
             |m: &mut JMIJJHKIBLB| { &mut m.CFAAFJJAADP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GJIEAHDBNNI",
-            |m: &JMIJJHKIBLB| { &m.GJIEAHDBNNI },
-            |m: &mut JMIJJHKIBLB| { &mut m.GJIEAHDBNNI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JMIJJHKIBLB>(
             "JMIJJHKIBLB",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for JMIJJHKIBLB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                112 => {
+                    self.GJIEAHDBNNI = is.read_bool()?;
+                },
+                72 => {
                     self.FEPKAMAILMK = is.read_uint32()?;
                 },
-                64 => {
+                104 => {
                     self.CFAAFJJAADP = is.read_uint32()?;
-                },
-                24 => {
-                    self.GJIEAHDBNNI = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for JMIJJHKIBLB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FEPKAMAILMK != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.FEPKAMAILMK);
-        }
-        if self.CFAAFJJAADP != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.CFAAFJJAADP);
-        }
         if self.GJIEAHDBNNI != false {
             my_size += 1 + 1;
+        }
+        if self.FEPKAMAILMK != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.FEPKAMAILMK);
+        }
+        if self.CFAAFJJAADP != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.CFAAFJJAADP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for JMIJJHKIBLB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.GJIEAHDBNNI != false {
+            os.write_bool(14, self.GJIEAHDBNNI)?;
+        }
         if self.FEPKAMAILMK != 0 {
-            os.write_uint32(4, self.FEPKAMAILMK)?;
+            os.write_uint32(9, self.FEPKAMAILMK)?;
         }
         if self.CFAAFJJAADP != 0 {
-            os.write_uint32(8, self.CFAAFJJAADP)?;
-        }
-        if self.GJIEAHDBNNI != false {
-            os.write_bool(3, self.GJIEAHDBNNI)?;
+            os.write_uint32(13, self.CFAAFJJAADP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for JMIJJHKIBLB {
     }
 
     fn clear(&mut self) {
+        self.GJIEAHDBNNI = false;
         self.FEPKAMAILMK = 0;
         self.CFAAFJJAADP = 0;
-        self.GJIEAHDBNNI = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JMIJJHKIBLB {
         static instance: JMIJJHKIBLB = JMIJJHKIBLB {
+            GJIEAHDBNNI: false,
             FEPKAMAILMK: 0,
             CFAAFJJAADP: 0,
-            GJIEAHDBNNI: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for JMIJJHKIBLB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JMIJJHKIBLB.proto\"s\n\x0bJMIJJHKIBLB\x12\x20\n\x0bFEPKAMAILMK\x18\
-    \x04\x20\x01(\rR\x0bFEPKAMAILMK\x12\x20\n\x0bCFAAFJJAADP\x18\x08\x20\x01\
-    (\rR\x0bCFAAFJJAADP\x12\x20\n\x0bGJIEAHDBNNI\x18\x03\x20\x01(\x08R\x0bGJ\
-    IEAHDBNNIb\x06proto3\
+    \n\x11JMIJJHKIBLB.proto\"s\n\x0bJMIJJHKIBLB\x12\x20\n\x0bGJIEAHDBNNI\x18\
+    \x0e\x20\x01(\x08R\x0bGJIEAHDBNNI\x12\x20\n\x0bFEPKAMAILMK\x18\t\x20\x01\
+    (\rR\x0bFEPKAMAILMK\x12\x20\n\x0bCFAAFJJAADP\x18\r\x20\x01(\rR\x0bCFAAFJ\
+    JAADPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

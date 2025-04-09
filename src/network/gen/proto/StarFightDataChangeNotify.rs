@@ -79,10 +79,10 @@ impl ::protobuf::Message for StarFightDataChangeNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                32 => {
                     self.FJNHDHOHBCL = is.read_uint32()?;
                 },
-                18 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FMCDALALFIA)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for StarFightDataChangeNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.FJNHDHOHBCL != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.FJNHDHOHBCL);
+            my_size += ::protobuf::rt::uint32_size(4, self.FJNHDHOHBCL);
         }
         if let Some(v) = self.FMCDALALFIA.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for StarFightDataChangeNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.FJNHDHOHBCL != 0 {
-            os.write_uint32(14, self.FJNHDHOHBCL)?;
+            os.write_uint32(4, self.FJNHDHOHBCL)?;
         }
         if let Some(v) = self.FMCDALALFIA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for StarFightDataChangeNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fStarFightDataChangeNotify.proto\x1a\x11MJCJAIKPLLM.proto\"m\n\x19S\
-    tarFightDataChangeNotify\x12\x20\n\x0bFJNHDHOHBCL\x18\x0e\x20\x01(\rR\
-    \x0bFJNHDHOHBCL\x12.\n\x0bFMCDALALFIA\x18\x02\x20\x01(\x0b2\x0c.MJCJAIKP\
-    LLMR\x0bFMCDALALFIAb\x06proto3\
+    tarFightDataChangeNotify\x12\x20\n\x0bFJNHDHOHBCL\x18\x04\x20\x01(\rR\
+    \x0bFJNHDHOHBCL\x12.\n\x0bFMCDALALFIA\x18\t\x20\x01(\x0b2\x0c.MJCJAIKPLL\
+    MR\x0bFMCDALALFIAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

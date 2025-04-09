@@ -29,36 +29,36 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdSpaceZooType {
     // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooTypeNone)
     CmdSpaceZooTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooExchangeItemCsReq)
-    CmdSpaceZooExchangeItemCsReq = 6714,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooMutateCsReq)
-    CmdSpaceZooMutateCsReq = 6730,
     // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooDataCsReq)
-    CmdSpaceZooDataCsReq = 6701,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooCatUpdateNotify)
-    CmdSpaceZooCatUpdateNotify = 6705,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooOpCatteryScRsp)
-    CmdSpaceZooOpCatteryScRsp = 6776,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooTakeCsReq)
-    CmdSpaceZooTakeCsReq = 6722,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooMutateScRsp)
-    CmdSpaceZooMutateScRsp = 6756,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooDeleteCatCsReq)
-    CmdSpaceZooDeleteCatCsReq = 6728,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooOpCatteryCsReq)
-    CmdSpaceZooOpCatteryCsReq = 6797,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooTakeScRsp)
-    CmdSpaceZooTakeScRsp = 6747,
+    CmdSpaceZooDataCsReq = 6711,
     // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooBornCsReq)
-    CmdSpaceZooBornCsReq = 6758,
+    CmdSpaceZooBornCsReq = 6747,
     // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooBornScRsp)
-    CmdSpaceZooBornScRsp = 6724,
+    CmdSpaceZooBornScRsp = 6709,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooTakeScRsp)
+    CmdSpaceZooTakeScRsp = 6773,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooExchangeItemCsReq)
+    CmdSpaceZooExchangeItemCsReq = 6718,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooOpCatteryCsReq)
+    CmdSpaceZooOpCatteryCsReq = 6770,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooOpCatteryScRsp)
+    CmdSpaceZooOpCatteryScRsp = 6789,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooDeleteCatCsReq)
+    CmdSpaceZooDeleteCatCsReq = 6726,
     // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooExchangeItemScRsp)
-    CmdSpaceZooExchangeItemScRsp = 6749,
+    CmdSpaceZooExchangeItemScRsp = 6736,
     // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooDeleteCatScRsp)
-    CmdSpaceZooDeleteCatScRsp = 6711,
+    CmdSpaceZooDeleteCatScRsp = 6730,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooMutateCsReq)
+    CmdSpaceZooMutateCsReq = 6735,
     // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooDataScRsp)
-    CmdSpaceZooDataScRsp = 6768,
+    CmdSpaceZooDataScRsp = 6713,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooMutateScRsp)
+    CmdSpaceZooMutateScRsp = 6706,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooTakeCsReq)
+    CmdSpaceZooTakeCsReq = 6750,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooCatUpdateNotify)
+    CmdSpaceZooCatUpdateNotify = 6795,
 }
 
 impl ::protobuf::Enum for CmdSpaceZooType {
@@ -71,21 +71,21 @@ impl ::protobuf::Enum for CmdSpaceZooType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdSpaceZooType> {
         match value {
             0 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooTypeNone),
-            6714 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooExchangeItemCsReq),
-            6730 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooMutateCsReq),
-            6701 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooDataCsReq),
-            6705 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooCatUpdateNotify),
-            6776 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooOpCatteryScRsp),
-            6722 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooTakeCsReq),
-            6756 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooMutateScRsp),
-            6728 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooDeleteCatCsReq),
-            6797 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooOpCatteryCsReq),
-            6747 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooTakeScRsp),
-            6758 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooBornCsReq),
-            6724 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooBornScRsp),
-            6749 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooExchangeItemScRsp),
-            6711 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooDeleteCatScRsp),
-            6768 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooDataScRsp),
+            6711 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooDataCsReq),
+            6747 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooBornCsReq),
+            6709 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooBornScRsp),
+            6773 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooTakeScRsp),
+            6718 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooExchangeItemCsReq),
+            6770 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooOpCatteryCsReq),
+            6789 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooOpCatteryScRsp),
+            6726 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooDeleteCatCsReq),
+            6736 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooExchangeItemScRsp),
+            6730 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooDeleteCatScRsp),
+            6735 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooMutateCsReq),
+            6713 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooDataScRsp),
+            6706 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooMutateScRsp),
+            6750 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooTakeCsReq),
+            6795 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooCatUpdateNotify),
             _ => ::std::option::Option::None
         }
     }
@@ -93,42 +93,42 @@ impl ::protobuf::Enum for CmdSpaceZooType {
     fn from_str(str: &str) -> ::std::option::Option<CmdSpaceZooType> {
         match str {
             "CmdSpaceZooTypeNone" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooTypeNone),
-            "CmdSpaceZooExchangeItemCsReq" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooExchangeItemCsReq),
-            "CmdSpaceZooMutateCsReq" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooMutateCsReq),
             "CmdSpaceZooDataCsReq" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooDataCsReq),
-            "CmdSpaceZooCatUpdateNotify" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooCatUpdateNotify),
-            "CmdSpaceZooOpCatteryScRsp" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooOpCatteryScRsp),
-            "CmdSpaceZooTakeCsReq" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooTakeCsReq),
-            "CmdSpaceZooMutateScRsp" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooMutateScRsp),
-            "CmdSpaceZooDeleteCatCsReq" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooDeleteCatCsReq),
-            "CmdSpaceZooOpCatteryCsReq" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooOpCatteryCsReq),
-            "CmdSpaceZooTakeScRsp" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooTakeScRsp),
             "CmdSpaceZooBornCsReq" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooBornCsReq),
             "CmdSpaceZooBornScRsp" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooBornScRsp),
+            "CmdSpaceZooTakeScRsp" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooTakeScRsp),
+            "CmdSpaceZooExchangeItemCsReq" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooExchangeItemCsReq),
+            "CmdSpaceZooOpCatteryCsReq" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooOpCatteryCsReq),
+            "CmdSpaceZooOpCatteryScRsp" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooOpCatteryScRsp),
+            "CmdSpaceZooDeleteCatCsReq" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooDeleteCatCsReq),
             "CmdSpaceZooExchangeItemScRsp" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooExchangeItemScRsp),
             "CmdSpaceZooDeleteCatScRsp" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooDeleteCatScRsp),
+            "CmdSpaceZooMutateCsReq" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooMutateCsReq),
             "CmdSpaceZooDataScRsp" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooDataScRsp),
+            "CmdSpaceZooMutateScRsp" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooMutateScRsp),
+            "CmdSpaceZooTakeCsReq" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooTakeCsReq),
+            "CmdSpaceZooCatUpdateNotify" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooCatUpdateNotify),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdSpaceZooType] = &[
         CmdSpaceZooType::CmdSpaceZooTypeNone,
-        CmdSpaceZooType::CmdSpaceZooExchangeItemCsReq,
-        CmdSpaceZooType::CmdSpaceZooMutateCsReq,
         CmdSpaceZooType::CmdSpaceZooDataCsReq,
-        CmdSpaceZooType::CmdSpaceZooCatUpdateNotify,
-        CmdSpaceZooType::CmdSpaceZooOpCatteryScRsp,
-        CmdSpaceZooType::CmdSpaceZooTakeCsReq,
-        CmdSpaceZooType::CmdSpaceZooMutateScRsp,
-        CmdSpaceZooType::CmdSpaceZooDeleteCatCsReq,
-        CmdSpaceZooType::CmdSpaceZooOpCatteryCsReq,
-        CmdSpaceZooType::CmdSpaceZooTakeScRsp,
         CmdSpaceZooType::CmdSpaceZooBornCsReq,
         CmdSpaceZooType::CmdSpaceZooBornScRsp,
+        CmdSpaceZooType::CmdSpaceZooTakeScRsp,
+        CmdSpaceZooType::CmdSpaceZooExchangeItemCsReq,
+        CmdSpaceZooType::CmdSpaceZooOpCatteryCsReq,
+        CmdSpaceZooType::CmdSpaceZooOpCatteryScRsp,
+        CmdSpaceZooType::CmdSpaceZooDeleteCatCsReq,
         CmdSpaceZooType::CmdSpaceZooExchangeItemScRsp,
         CmdSpaceZooType::CmdSpaceZooDeleteCatScRsp,
+        CmdSpaceZooType::CmdSpaceZooMutateCsReq,
         CmdSpaceZooType::CmdSpaceZooDataScRsp,
+        CmdSpaceZooType::CmdSpaceZooMutateScRsp,
+        CmdSpaceZooType::CmdSpaceZooTakeCsReq,
+        CmdSpaceZooType::CmdSpaceZooCatUpdateNotify,
     ];
 }
 
@@ -141,21 +141,21 @@ impl ::protobuf::EnumFull for CmdSpaceZooType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdSpaceZooType::CmdSpaceZooTypeNone => 0,
-            CmdSpaceZooType::CmdSpaceZooExchangeItemCsReq => 1,
-            CmdSpaceZooType::CmdSpaceZooMutateCsReq => 2,
-            CmdSpaceZooType::CmdSpaceZooDataCsReq => 3,
-            CmdSpaceZooType::CmdSpaceZooCatUpdateNotify => 4,
-            CmdSpaceZooType::CmdSpaceZooOpCatteryScRsp => 5,
-            CmdSpaceZooType::CmdSpaceZooTakeCsReq => 6,
-            CmdSpaceZooType::CmdSpaceZooMutateScRsp => 7,
+            CmdSpaceZooType::CmdSpaceZooDataCsReq => 1,
+            CmdSpaceZooType::CmdSpaceZooBornCsReq => 2,
+            CmdSpaceZooType::CmdSpaceZooBornScRsp => 3,
+            CmdSpaceZooType::CmdSpaceZooTakeScRsp => 4,
+            CmdSpaceZooType::CmdSpaceZooExchangeItemCsReq => 5,
+            CmdSpaceZooType::CmdSpaceZooOpCatteryCsReq => 6,
+            CmdSpaceZooType::CmdSpaceZooOpCatteryScRsp => 7,
             CmdSpaceZooType::CmdSpaceZooDeleteCatCsReq => 8,
-            CmdSpaceZooType::CmdSpaceZooOpCatteryCsReq => 9,
-            CmdSpaceZooType::CmdSpaceZooTakeScRsp => 10,
-            CmdSpaceZooType::CmdSpaceZooBornCsReq => 11,
-            CmdSpaceZooType::CmdSpaceZooBornScRsp => 12,
-            CmdSpaceZooType::CmdSpaceZooExchangeItemScRsp => 13,
-            CmdSpaceZooType::CmdSpaceZooDeleteCatScRsp => 14,
-            CmdSpaceZooType::CmdSpaceZooDataScRsp => 15,
+            CmdSpaceZooType::CmdSpaceZooExchangeItemScRsp => 9,
+            CmdSpaceZooType::CmdSpaceZooDeleteCatScRsp => 10,
+            CmdSpaceZooType::CmdSpaceZooMutateCsReq => 11,
+            CmdSpaceZooType::CmdSpaceZooDataScRsp => 12,
+            CmdSpaceZooType::CmdSpaceZooMutateScRsp => 13,
+            CmdSpaceZooType::CmdSpaceZooTakeCsReq => 14,
+            CmdSpaceZooType::CmdSpaceZooCatUpdateNotify => 15,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -175,17 +175,17 @@ impl CmdSpaceZooType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15CmdSpaceZooType.proto*\xed\x03\n\x0fCmdSpaceZooType\x12\x17\n\x13C\
-    mdSpaceZooTypeNone\x10\0\x12!\n\x1cCmdSpaceZooExchangeItemCsReq\x10\xba4\
-    \x12\x1b\n\x16CmdSpaceZooMutateCsReq\x10\xca4\x12\x19\n\x14CmdSpaceZooDa\
-    taCsReq\x10\xad4\x12\x1f\n\x1aCmdSpaceZooCatUpdateNotify\x10\xb14\x12\
-    \x1e\n\x19CmdSpaceZooOpCatteryScRsp\x10\xf84\x12\x19\n\x14CmdSpaceZooTak\
-    eCsReq\x10\xc24\x12\x1b\n\x16CmdSpaceZooMutateScRsp\x10\xe44\x12\x1e\n\
-    \x19CmdSpaceZooDeleteCatCsReq\x10\xc84\x12\x1e\n\x19CmdSpaceZooOpCattery\
-    CsReq\x10\x8d5\x12\x19\n\x14CmdSpaceZooTakeScRsp\x10\xdb4\x12\x19\n\x14C\
-    mdSpaceZooBornCsReq\x10\xe64\x12\x19\n\x14CmdSpaceZooBornScRsp\x10\xc44\
-    \x12!\n\x1cCmdSpaceZooExchangeItemScRsp\x10\xdd4\x12\x1e\n\x19CmdSpaceZo\
-    oDeleteCatScRsp\x10\xb74\x12\x19\n\x14CmdSpaceZooDataScRsp\x10\xf04b\x06\
-    proto3\
+    mdSpaceZooTypeNone\x10\0\x12\x19\n\x14CmdSpaceZooDataCsReq\x10\xb74\x12\
+    \x19\n\x14CmdSpaceZooBornCsReq\x10\xdb4\x12\x19\n\x14CmdSpaceZooBornScRs\
+    p\x10\xb54\x12\x19\n\x14CmdSpaceZooTakeScRsp\x10\xf54\x12!\n\x1cCmdSpace\
+    ZooExchangeItemCsReq\x10\xbe4\x12\x1e\n\x19CmdSpaceZooOpCatteryCsReq\x10\
+    \xf24\x12\x1e\n\x19CmdSpaceZooOpCatteryScRsp\x10\x855\x12\x1e\n\x19CmdSp\
+    aceZooDeleteCatCsReq\x10\xc64\x12!\n\x1cCmdSpaceZooExchangeItemScRsp\x10\
+    \xd04\x12\x1e\n\x19CmdSpaceZooDeleteCatScRsp\x10\xca4\x12\x1b\n\x16CmdSp\
+    aceZooMutateCsReq\x10\xcf4\x12\x19\n\x14CmdSpaceZooDataScRsp\x10\xb94\
+    \x12\x1b\n\x16CmdSpaceZooMutateScRsp\x10\xb24\x12\x19\n\x14CmdSpaceZooTa\
+    keCsReq\x10\xde4\x12\x1f\n\x1aCmdSpaceZooCatUpdateNotify\x10\x8b5b\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct QuitBattleCsReq {
     // message fields
-    // @@protoc_insertion_point(field:QuitBattleCsReq.DHCLHAEMOON)
-    pub DHCLHAEMOON: ::protobuf::MessageField<super::MJBCEOFGHJH::MJBCEOFGHJH>,
     // @@protoc_insertion_point(field:QuitBattleCsReq.NIKHBKCHHJG)
     pub NIKHBKCHHJG: ::protobuf::EnumOrUnknown<super::LIPEKJFJMNM::LIPEKJFJMNM>,
+    // @@protoc_insertion_point(field:QuitBattleCsReq.DHCLHAEMOON)
+    pub DHCLHAEMOON: ::protobuf::MessageField<super::MJBCEOFGHJH::MJBCEOFGHJH>,
     // special fields
     // @@protoc_insertion_point(special_field:QuitBattleCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl QuitBattleCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MJBCEOFGHJH::MJBCEOFGHJH>(
-            "DHCLHAEMOON",
-            |m: &QuitBattleCsReq| { &m.DHCLHAEMOON },
-            |m: &mut QuitBattleCsReq| { &mut m.DHCLHAEMOON },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NIKHBKCHHJG",
             |m: &QuitBattleCsReq| { &m.NIKHBKCHHJG },
             |m: &mut QuitBattleCsReq| { &mut m.NIKHBKCHHJG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MJBCEOFGHJH::MJBCEOFGHJH>(
+            "DHCLHAEMOON",
+            |m: &QuitBattleCsReq| { &m.DHCLHAEMOON },
+            |m: &mut QuitBattleCsReq| { &mut m.DHCLHAEMOON },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<QuitBattleCsReq>(
             "QuitBattleCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for QuitBattleCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DHCLHAEMOON)?;
-                },
                 64 => {
                     self.NIKHBKCHHJG = is.read_enum_or_unknown()?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DHCLHAEMOON)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for QuitBattleCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.NIKHBKCHHJG != ::protobuf::EnumOrUnknown::new(super::LIPEKJFJMNM::LIPEKJFJMNM::REBATTLE_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(8, self.NIKHBKCHHJG.value());
+        }
         if let Some(v) = self.DHCLHAEMOON.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.NIKHBKCHHJG != ::protobuf::EnumOrUnknown::new(super::LIPEKJFJMNM::LIPEKJFJMNM::REBATTLE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(8, self.NIKHBKCHHJG.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for QuitBattleCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.DHCLHAEMOON.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
         if self.NIKHBKCHHJG != ::protobuf::EnumOrUnknown::new(super::LIPEKJFJMNM::LIPEKJFJMNM::REBATTLE_TYPE_NONE) {
             os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.NIKHBKCHHJG))?;
+        }
+        if let Some(v) = self.DHCLHAEMOON.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for QuitBattleCsReq {
     }
 
     fn clear(&mut self) {
-        self.DHCLHAEMOON.clear();
         self.NIKHBKCHHJG = ::protobuf::EnumOrUnknown::new(super::LIPEKJFJMNM::LIPEKJFJMNM::REBATTLE_TYPE_NONE);
+        self.DHCLHAEMOON.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static QuitBattleCsReq {
         static instance: QuitBattleCsReq = QuitBattleCsReq {
-            DHCLHAEMOON: ::protobuf::MessageField::none(),
             NIKHBKCHHJG: ::protobuf::EnumOrUnknown::from_i32(0),
+            DHCLHAEMOON: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for QuitBattleCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15QuitBattleCsReq.proto\x1a\x11LIPEKJFJMNM.proto\x1a\x11MJBCEOFGHJH.\
-    proto\"q\n\x0fQuitBattleCsReq\x12.\n\x0bDHCLHAEMOON\x18\x07\x20\x01(\x0b\
-    2\x0c.MJBCEOFGHJHR\x0bDHCLHAEMOON\x12.\n\x0bNIKHBKCHHJG\x18\x08\x20\x01(\
-    \x0e2\x0c.LIPEKJFJMNMR\x0bNIKHBKCHHJGb\x06proto3\
+    proto\"q\n\x0fQuitBattleCsReq\x12.\n\x0bNIKHBKCHHJG\x18\x08\x20\x01(\x0e\
+    2\x0c.LIPEKJFJMNMR\x0bNIKHBKCHHJG\x12.\n\x0bDHCLHAEMOON\x18\t\x20\x01(\
+    \x0b2\x0c.MJBCEOFGHJHR\x0bDHCLHAEMOONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

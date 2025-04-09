@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetSceneMapInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetSceneMapInfoScRsp.PPGEBHKKIIN)
-    pub PPGEBHKKIIN: u32,
     // @@protoc_insertion_point(field:GetSceneMapInfoScRsp.IGFIKGHLLNO)
     pub IGFIKGHLLNO: bool,
-    // @@protoc_insertion_point(field:GetSceneMapInfoScRsp.NINBEFLEEMP)
-    pub NINBEFLEEMP: ::std::vec::Vec<super::HCMFFDCMMPK::HCMFFDCMMPK>,
     // @@protoc_insertion_point(field:GetSceneMapInfoScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:GetSceneMapInfoScRsp.LOLCMPAOJBG)
     pub LOLCMPAOJBG: u32,
+    // @@protoc_insertion_point(field:GetSceneMapInfoScRsp.PPGEBHKKIIN)
+    pub PPGEBHKKIIN: u32,
+    // @@protoc_insertion_point(field:GetSceneMapInfoScRsp.NINBEFLEEMP)
+    pub NINBEFLEEMP: ::std::vec::Vec<super::HCMFFDCMMPK::HCMFFDCMMPK>,
     // special fields
     // @@protoc_insertion_point(special_field:GetSceneMapInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,19 +58,9 @@ impl GetSceneMapInfoScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PPGEBHKKIIN",
-            |m: &GetSceneMapInfoScRsp| { &m.PPGEBHKKIIN },
-            |m: &mut GetSceneMapInfoScRsp| { &mut m.PPGEBHKKIIN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IGFIKGHLLNO",
             |m: &GetSceneMapInfoScRsp| { &m.IGFIKGHLLNO },
             |m: &mut GetSceneMapInfoScRsp| { &mut m.IGFIKGHLLNO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NINBEFLEEMP",
-            |m: &GetSceneMapInfoScRsp| { &m.NINBEFLEEMP },
-            |m: &mut GetSceneMapInfoScRsp| { &mut m.NINBEFLEEMP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -81,6 +71,16 @@ impl GetSceneMapInfoScRsp {
             "LOLCMPAOJBG",
             |m: &GetSceneMapInfoScRsp| { &m.LOLCMPAOJBG },
             |m: &mut GetSceneMapInfoScRsp| { &mut m.LOLCMPAOJBG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PPGEBHKKIIN",
+            |m: &GetSceneMapInfoScRsp| { &m.PPGEBHKKIIN },
+            |m: &mut GetSceneMapInfoScRsp| { &mut m.PPGEBHKKIIN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NINBEFLEEMP",
+            |m: &GetSceneMapInfoScRsp| { &m.NINBEFLEEMP },
+            |m: &mut GetSceneMapInfoScRsp| { &mut m.NINBEFLEEMP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetSceneMapInfoScRsp>(
             "GetSceneMapInfoScRsp",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for GetSceneMapInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.PPGEBHKKIIN = is.read_uint32()?;
-                },
-                56 => {
+                8 => {
                     self.IGFIKGHLLNO = is.read_bool()?;
                 },
-                98 => {
-                    self.NINBEFLEEMP.push(is.read_message()?);
-                },
-                104 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
-                112 => {
+                104 => {
                     self.LOLCMPAOJBG = is.read_uint32()?;
+                },
+                64 => {
+                    self.PPGEBHKKIIN = is.read_uint32()?;
+                },
+                82 => {
+                    self.NINBEFLEEMP.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,43 +127,43 @@ impl ::protobuf::Message for GetSceneMapInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PPGEBHKKIIN != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.PPGEBHKKIIN);
-        }
         if self.IGFIKGHLLNO != false {
             my_size += 1 + 1;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+        }
+        if self.LOLCMPAOJBG != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.LOLCMPAOJBG);
+        }
+        if self.PPGEBHKKIIN != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.PPGEBHKKIIN);
         }
         for value in &self.NINBEFLEEMP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
-        }
-        if self.LOLCMPAOJBG != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.LOLCMPAOJBG);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PPGEBHKKIIN != 0 {
-            os.write_uint32(10, self.PPGEBHKKIIN)?;
-        }
         if self.IGFIKGHLLNO != false {
-            os.write_bool(7, self.IGFIKGHLLNO)?;
+            os.write_bool(1, self.IGFIKGHLLNO)?;
         }
-        for v in &self.NINBEFLEEMP {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
         if self.LOLCMPAOJBG != 0 {
-            os.write_uint32(14, self.LOLCMPAOJBG)?;
+            os.write_uint32(13, self.LOLCMPAOJBG)?;
         }
+        if self.PPGEBHKKIIN != 0 {
+            os.write_uint32(8, self.PPGEBHKKIIN)?;
+        }
+        for v in &self.NINBEFLEEMP {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -181,21 +181,21 @@ impl ::protobuf::Message for GetSceneMapInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.PPGEBHKKIIN = 0;
         self.IGFIKGHLLNO = false;
-        self.NINBEFLEEMP.clear();
         self.retcode = 0;
         self.LOLCMPAOJBG = 0;
+        self.PPGEBHKKIIN = 0;
+        self.NINBEFLEEMP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetSceneMapInfoScRsp {
         static instance: GetSceneMapInfoScRsp = GetSceneMapInfoScRsp {
-            PPGEBHKKIIN: 0,
             IGFIKGHLLNO: false,
-            NINBEFLEEMP: ::std::vec::Vec::new(),
             retcode: 0,
             LOLCMPAOJBG: 0,
+            PPGEBHKKIIN: 0,
+            NINBEFLEEMP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for GetSceneMapInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aGetSceneMapInfoScRsp.proto\x1a\x11HCMFFDCMMPK.proto\"\xc6\x01\n\
-    \x14GetSceneMapInfoScRsp\x12\x20\n\x0bPPGEBHKKIIN\x18\n\x20\x01(\rR\x0bP\
-    PGEBHKKIIN\x12\x20\n\x0bIGFIKGHLLNO\x18\x07\x20\x01(\x08R\x0bIGFIKGHLLNO\
-    \x12.\n\x0bNINBEFLEEMP\x18\x0c\x20\x03(\x0b2\x0c.HCMFFDCMMPKR\x0bNINBEFL\
-    EEMP\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x12\x20\n\x0bLOLC\
-    MPAOJBG\x18\x0e\x20\x01(\rR\x0bLOLCMPAOJBGb\x06proto3\
+    \x14GetSceneMapInfoScRsp\x12\x20\n\x0bIGFIKGHLLNO\x18\x01\x20\x01(\x08R\
+    \x0bIGFIKGHLLNO\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12\
+    \x20\n\x0bLOLCMPAOJBG\x18\r\x20\x01(\rR\x0bLOLCMPAOJBG\x12\x20\n\x0bPPGE\
+    BHKKIIN\x18\x08\x20\x01(\rR\x0bPPGEBHKKIIN\x12.\n\x0bNINBEFLEEMP\x18\n\
+    \x20\x03(\x0b2\x0c.HCMFFDCMMPKR\x0bNINBEFLEEMPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

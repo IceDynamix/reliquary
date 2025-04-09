@@ -79,10 +79,10 @@ impl ::protobuf::Message for BBNHEMCKDIN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                104 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                72 => {
+                80 => {
                     self.IHLEAMDIKKN = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for BBNHEMCKDIN {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.avatar_id);
         }
         if self.IHLEAMDIKKN != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(9, self.IHLEAMDIKKN.value());
+            my_size += ::protobuf::rt::int32_size(10, self.IHLEAMDIKKN.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for BBNHEMCKDIN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.avatar_id != 0 {
-            os.write_uint32(10, self.avatar_id)?;
+            os.write_uint32(13, self.avatar_id)?;
         }
         if self.IHLEAMDIKKN != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.IHLEAMDIKKN))?;
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.IHLEAMDIKKN))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for BBNHEMCKDIN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BBNHEMCKDIN.proto\x1a\x10AvatarType.proto\"Y\n\x0bBBNHEMCKDIN\x12\
-    \x1b\n\tavatar_id\x18\n\x20\x01(\rR\x08avatarId\x12-\n\x0bIHLEAMDIKKN\
-    \x18\t\x20\x01(\x0e2\x0b.AvatarTypeR\x0bIHLEAMDIKKNb\x06proto3\
+    \x1b\n\tavatar_id\x18\r\x20\x01(\rR\x08avatarId\x12-\n\x0bIHLEAMDIKKN\
+    \x18\n\x20\x01(\x0e2\x0b.AvatarTypeR\x0bIHLEAMDIKKNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

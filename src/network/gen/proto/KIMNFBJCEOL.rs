@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KIMNFBJCEOL {
     // message fields
-    // @@protoc_insertion_point(field:KIMNFBJCEOL.OJFNLMHMLOF)
-    pub OJFNLMHMLOF: u32,
-    // @@protoc_insertion_point(field:KIMNFBJCEOL.FEIFDEGKEAP)
-    pub FEIFDEGKEAP: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:KIMNFBJCEOL.PONADANOALN)
-    pub PONADANOALN: i64,
-    // @@protoc_insertion_point(field:KIMNFBJCEOL.IPGECLELHGJ)
-    pub IPGECLELHGJ: u32,
-    // @@protoc_insertion_point(field:KIMNFBJCEOL.ELGANMDPMID)
-    pub ELGANMDPMID: u32,
     // @@protoc_insertion_point(field:KIMNFBJCEOL.FNGGNBMOFAA)
     pub FNGGNBMOFAA: u32,
+    // @@protoc_insertion_point(field:KIMNFBJCEOL.OJFNLMHMLOF)
+    pub OJFNLMHMLOF: u32,
+    // @@protoc_insertion_point(field:KIMNFBJCEOL.ELGANMDPMID)
+    pub ELGANMDPMID: u32,
+    // @@protoc_insertion_point(field:KIMNFBJCEOL.PONADANOALN)
+    pub PONADANOALN: i64,
+    // @@protoc_insertion_point(field:KIMNFBJCEOL.FEIFDEGKEAP)
+    pub FEIFDEGKEAP: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:KIMNFBJCEOL.IPGECLELHGJ)
+    pub IPGECLELHGJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KIMNFBJCEOL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,24 +60,14 @@ impl KIMNFBJCEOL {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FNGGNBMOFAA",
+            |m: &KIMNFBJCEOL| { &m.FNGGNBMOFAA },
+            |m: &mut KIMNFBJCEOL| { &mut m.FNGGNBMOFAA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OJFNLMHMLOF",
             |m: &KIMNFBJCEOL| { &m.OJFNLMHMLOF },
             |m: &mut KIMNFBJCEOL| { &mut m.OJFNLMHMLOF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FEIFDEGKEAP",
-            |m: &KIMNFBJCEOL| { &m.FEIFDEGKEAP },
-            |m: &mut KIMNFBJCEOL| { &mut m.FEIFDEGKEAP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PONADANOALN",
-            |m: &KIMNFBJCEOL| { &m.PONADANOALN },
-            |m: &mut KIMNFBJCEOL| { &mut m.PONADANOALN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IPGECLELHGJ",
-            |m: &KIMNFBJCEOL| { &m.IPGECLELHGJ },
-            |m: &mut KIMNFBJCEOL| { &mut m.IPGECLELHGJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ELGANMDPMID",
@@ -85,9 +75,19 @@ impl KIMNFBJCEOL {
             |m: &mut KIMNFBJCEOL| { &mut m.ELGANMDPMID },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FNGGNBMOFAA",
-            |m: &KIMNFBJCEOL| { &m.FNGGNBMOFAA },
-            |m: &mut KIMNFBJCEOL| { &mut m.FNGGNBMOFAA },
+            "PONADANOALN",
+            |m: &KIMNFBJCEOL| { &m.PONADANOALN },
+            |m: &mut KIMNFBJCEOL| { &mut m.PONADANOALN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FEIFDEGKEAP",
+            |m: &KIMNFBJCEOL| { &m.FEIFDEGKEAP },
+            |m: &mut KIMNFBJCEOL| { &mut m.FEIFDEGKEAP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IPGECLELHGJ",
+            |m: &KIMNFBJCEOL| { &m.IPGECLELHGJ },
+            |m: &mut KIMNFBJCEOL| { &mut m.IPGECLELHGJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KIMNFBJCEOL>(
             "KIMNFBJCEOL",
@@ -107,26 +107,26 @@ impl ::protobuf::Message for KIMNFBJCEOL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                88 => {
+                    self.FNGGNBMOFAA = is.read_uint32()?;
+                },
+                8 => {
                     self.OJFNLMHMLOF = is.read_uint32()?;
                 },
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FEIFDEGKEAP)?;
-                },
-                88 => {
-                    self.FEIFDEGKEAP.push(is.read_uint32()?);
-                },
-                96 => {
-                    self.PONADANOALN = is.read_int64()?;
-                },
-                80 => {
-                    self.IPGECLELHGJ = is.read_uint32()?;
-                },
-                48 => {
+                72 => {
                     self.ELGANMDPMID = is.read_uint32()?;
                 },
+                120 => {
+                    self.PONADANOALN = is.read_int64()?;
+                },
+                106 => {
+                    is.read_repeated_packed_uint32_into(&mut self.FEIFDEGKEAP)?;
+                },
+                104 => {
+                    self.FEIFDEGKEAP.push(is.read_uint32()?);
+                },
                 16 => {
-                    self.FNGGNBMOFAA = is.read_uint32()?;
+                    self.IPGECLELHGJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,21 +140,21 @@ impl ::protobuf::Message for KIMNFBJCEOL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.FNGGNBMOFAA != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.FNGGNBMOFAA);
+        }
         if self.OJFNLMHMLOF != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.OJFNLMHMLOF);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.FEIFDEGKEAP);
-        if self.PONADANOALN != 0 {
-            my_size += ::protobuf::rt::int64_size(12, self.PONADANOALN);
-        }
-        if self.IPGECLELHGJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.IPGECLELHGJ);
+            my_size += ::protobuf::rt::uint32_size(1, self.OJFNLMHMLOF);
         }
         if self.ELGANMDPMID != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.ELGANMDPMID);
+            my_size += ::protobuf::rt::uint32_size(9, self.ELGANMDPMID);
         }
-        if self.FNGGNBMOFAA != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.FNGGNBMOFAA);
+        if self.PONADANOALN != 0 {
+            my_size += ::protobuf::rt::int64_size(15, self.PONADANOALN);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.FEIFDEGKEAP);
+        if self.IPGECLELHGJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.IPGECLELHGJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,21 +162,21 @@ impl ::protobuf::Message for KIMNFBJCEOL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.FNGGNBMOFAA != 0 {
+            os.write_uint32(11, self.FNGGNBMOFAA)?;
+        }
         if self.OJFNLMHMLOF != 0 {
-            os.write_uint32(7, self.OJFNLMHMLOF)?;
-        }
-        os.write_repeated_packed_uint32(11, &self.FEIFDEGKEAP)?;
-        if self.PONADANOALN != 0 {
-            os.write_int64(12, self.PONADANOALN)?;
-        }
-        if self.IPGECLELHGJ != 0 {
-            os.write_uint32(10, self.IPGECLELHGJ)?;
+            os.write_uint32(1, self.OJFNLMHMLOF)?;
         }
         if self.ELGANMDPMID != 0 {
-            os.write_uint32(6, self.ELGANMDPMID)?;
+            os.write_uint32(9, self.ELGANMDPMID)?;
         }
-        if self.FNGGNBMOFAA != 0 {
-            os.write_uint32(2, self.FNGGNBMOFAA)?;
+        if self.PONADANOALN != 0 {
+            os.write_int64(15, self.PONADANOALN)?;
+        }
+        os.write_repeated_packed_uint32(13, &self.FEIFDEGKEAP)?;
+        if self.IPGECLELHGJ != 0 {
+            os.write_uint32(2, self.IPGECLELHGJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -195,23 +195,23 @@ impl ::protobuf::Message for KIMNFBJCEOL {
     }
 
     fn clear(&mut self) {
-        self.OJFNLMHMLOF = 0;
-        self.FEIFDEGKEAP.clear();
-        self.PONADANOALN = 0;
-        self.IPGECLELHGJ = 0;
-        self.ELGANMDPMID = 0;
         self.FNGGNBMOFAA = 0;
+        self.OJFNLMHMLOF = 0;
+        self.ELGANMDPMID = 0;
+        self.PONADANOALN = 0;
+        self.FEIFDEGKEAP.clear();
+        self.IPGECLELHGJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KIMNFBJCEOL {
         static instance: KIMNFBJCEOL = KIMNFBJCEOL {
-            OJFNLMHMLOF: 0,
-            FEIFDEGKEAP: ::std::vec::Vec::new(),
-            PONADANOALN: 0,
-            IPGECLELHGJ: 0,
-            ELGANMDPMID: 0,
             FNGGNBMOFAA: 0,
+            OJFNLMHMLOF: 0,
+            ELGANMDPMID: 0,
+            PONADANOALN: 0,
+            FEIFDEGKEAP: ::std::vec::Vec::new(),
+            IPGECLELHGJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -236,12 +236,12 @@ impl ::protobuf::reflect::ProtobufValue for KIMNFBJCEOL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KIMNFBJCEOL.proto\"\xd9\x01\n\x0bKIMNFBJCEOL\x12\x20\n\x0bOJFNLMHM\
-    LOF\x18\x07\x20\x01(\rR\x0bOJFNLMHMLOF\x12\x20\n\x0bFEIFDEGKEAP\x18\x0b\
-    \x20\x03(\rR\x0bFEIFDEGKEAP\x12\x20\n\x0bPONADANOALN\x18\x0c\x20\x01(\
-    \x03R\x0bPONADANOALN\x12\x20\n\x0bIPGECLELHGJ\x18\n\x20\x01(\rR\x0bIPGEC\
-    LELHGJ\x12\x20\n\x0bELGANMDPMID\x18\x06\x20\x01(\rR\x0bELGANMDPMID\x12\
-    \x20\n\x0bFNGGNBMOFAA\x18\x02\x20\x01(\rR\x0bFNGGNBMOFAAb\x06proto3\
+    \n\x11KIMNFBJCEOL.proto\"\xd9\x01\n\x0bKIMNFBJCEOL\x12\x20\n\x0bFNGGNBMO\
+    FAA\x18\x0b\x20\x01(\rR\x0bFNGGNBMOFAA\x12\x20\n\x0bOJFNLMHMLOF\x18\x01\
+    \x20\x01(\rR\x0bOJFNLMHMLOF\x12\x20\n\x0bELGANMDPMID\x18\t\x20\x01(\rR\
+    \x0bELGANMDPMID\x12\x20\n\x0bPONADANOALN\x18\x0f\x20\x01(\x03R\x0bPONADA\
+    NOALN\x12\x20\n\x0bFEIFDEGKEAP\x18\r\x20\x03(\rR\x0bFEIFDEGKEAP\x12\x20\
+    \n\x0bIPGECLELHGJ\x18\x02\x20\x01(\rR\x0bIPGECLELHGJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

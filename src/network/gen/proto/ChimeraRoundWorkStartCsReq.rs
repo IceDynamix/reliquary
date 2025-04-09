@@ -30,12 +30,12 @@ pub struct ChimeraRoundWorkStartCsReq {
     // message fields
     // @@protoc_insertion_point(field:ChimeraRoundWorkStartCsReq.MDFEEKIKBMJ)
     pub MDFEEKIKBMJ: u32,
-    // @@protoc_insertion_point(field:ChimeraRoundWorkStartCsReq.CPBNMACLBEH)
-    pub CPBNMACLBEH: ::protobuf::MessageField<super::MPJDIBCCOHF::MPJDIBCCOHF>,
-    // @@protoc_insertion_point(field:ChimeraRoundWorkStartCsReq.OPAMAEIJCOH)
-    pub OPAMAEIJCOH: ::std::vec::Vec<super::JMAANMPANHM::JMAANMPANHM>,
     // @@protoc_insertion_point(field:ChimeraRoundWorkStartCsReq.FLGJPHEOPAA)
     pub FLGJPHEOPAA: u32,
+    // @@protoc_insertion_point(field:ChimeraRoundWorkStartCsReq.OPAMAEIJCOH)
+    pub OPAMAEIJCOH: ::std::vec::Vec<super::JMAANMPANHM::JMAANMPANHM>,
+    // @@protoc_insertion_point(field:ChimeraRoundWorkStartCsReq.CPBNMACLBEH)
+    pub CPBNMACLBEH: ::protobuf::MessageField<super::MPJDIBCCOHF::MPJDIBCCOHF>,
     // special fields
     // @@protoc_insertion_point(special_field:ChimeraRoundWorkStartCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,20 +60,20 @@ impl ChimeraRoundWorkStartCsReq {
             |m: &ChimeraRoundWorkStartCsReq| { &m.MDFEEKIKBMJ },
             |m: &mut ChimeraRoundWorkStartCsReq| { &mut m.MDFEEKIKBMJ },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MPJDIBCCOHF::MPJDIBCCOHF>(
-            "CPBNMACLBEH",
-            |m: &ChimeraRoundWorkStartCsReq| { &m.CPBNMACLBEH },
-            |m: &mut ChimeraRoundWorkStartCsReq| { &mut m.CPBNMACLBEH },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FLGJPHEOPAA",
+            |m: &ChimeraRoundWorkStartCsReq| { &m.FLGJPHEOPAA },
+            |m: &mut ChimeraRoundWorkStartCsReq| { &mut m.FLGJPHEOPAA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "OPAMAEIJCOH",
             |m: &ChimeraRoundWorkStartCsReq| { &m.OPAMAEIJCOH },
             |m: &mut ChimeraRoundWorkStartCsReq| { &mut m.OPAMAEIJCOH },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FLGJPHEOPAA",
-            |m: &ChimeraRoundWorkStartCsReq| { &m.FLGJPHEOPAA },
-            |m: &mut ChimeraRoundWorkStartCsReq| { &mut m.FLGJPHEOPAA },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MPJDIBCCOHF::MPJDIBCCOHF>(
+            "CPBNMACLBEH",
+            |m: &ChimeraRoundWorkStartCsReq| { &m.CPBNMACLBEH },
+            |m: &mut ChimeraRoundWorkStartCsReq| { &mut m.CPBNMACLBEH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChimeraRoundWorkStartCsReq>(
             "ChimeraRoundWorkStartCsReq",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for ChimeraRoundWorkStartCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                56 => {
                     self.MDFEEKIKBMJ = is.read_uint32()?;
                 },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CPBNMACLBEH)?;
+                48 => {
+                    self.FLGJPHEOPAA = is.read_uint32()?;
                 },
-                90 => {
+                98 => {
                     self.OPAMAEIJCOH.push(is.read_message()?);
                 },
-                40 => {
-                    self.FLGJPHEOPAA = is.read_uint32()?;
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CPBNMACLBEH)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,18 +118,18 @@ impl ::protobuf::Message for ChimeraRoundWorkStartCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.MDFEEKIKBMJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.MDFEEKIKBMJ);
+            my_size += ::protobuf::rt::uint32_size(7, self.MDFEEKIKBMJ);
         }
-        if let Some(v) = self.CPBNMACLBEH.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.FLGJPHEOPAA != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.FLGJPHEOPAA);
         }
         for value in &self.OPAMAEIJCOH {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.FLGJPHEOPAA != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.FLGJPHEOPAA);
+        if let Some(v) = self.CPBNMACLBEH.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,16 +138,16 @@ impl ::protobuf::Message for ChimeraRoundWorkStartCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.MDFEEKIKBMJ != 0 {
-            os.write_uint32(13, self.MDFEEKIKBMJ)?;
+            os.write_uint32(7, self.MDFEEKIKBMJ)?;
         }
-        if let Some(v) = self.CPBNMACLBEH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if self.FLGJPHEOPAA != 0 {
+            os.write_uint32(6, self.FLGJPHEOPAA)?;
         }
         for v in &self.OPAMAEIJCOH {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
-        if self.FLGJPHEOPAA != 0 {
-            os.write_uint32(5, self.FLGJPHEOPAA)?;
+        if let Some(v) = self.CPBNMACLBEH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,18 +167,18 @@ impl ::protobuf::Message for ChimeraRoundWorkStartCsReq {
 
     fn clear(&mut self) {
         self.MDFEEKIKBMJ = 0;
-        self.CPBNMACLBEH.clear();
-        self.OPAMAEIJCOH.clear();
         self.FLGJPHEOPAA = 0;
+        self.OPAMAEIJCOH.clear();
+        self.CPBNMACLBEH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChimeraRoundWorkStartCsReq {
         static instance: ChimeraRoundWorkStartCsReq = ChimeraRoundWorkStartCsReq {
             MDFEEKIKBMJ: 0,
-            CPBNMACLBEH: ::protobuf::MessageField::none(),
-            OPAMAEIJCOH: ::std::vec::Vec::new(),
             FLGJPHEOPAA: 0,
+            OPAMAEIJCOH: ::std::vec::Vec::new(),
+            CPBNMACLBEH: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -205,10 +205,10 @@ impl ::protobuf::reflect::ProtobufValue for ChimeraRoundWorkStartCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20ChimeraRoundWorkStartCsReq.proto\x1a\x11JMAANMPANHM.proto\x1a\x11M\
     PJDIBCCOHF.proto\"\xc0\x01\n\x1aChimeraRoundWorkStartCsReq\x12\x20\n\x0b\
-    MDFEEKIKBMJ\x18\r\x20\x01(\rR\x0bMDFEEKIKBMJ\x12.\n\x0bCPBNMACLBEH\x18\
-    \x0c\x20\x01(\x0b2\x0c.MPJDIBCCOHFR\x0bCPBNMACLBEH\x12.\n\x0bOPAMAEIJCOH\
-    \x18\x0b\x20\x03(\x0b2\x0c.JMAANMPANHMR\x0bOPAMAEIJCOH\x12\x20\n\x0bFLGJ\
-    PHEOPAA\x18\x05\x20\x01(\rR\x0bFLGJPHEOPAAb\x06proto3\
+    MDFEEKIKBMJ\x18\x07\x20\x01(\rR\x0bMDFEEKIKBMJ\x12\x20\n\x0bFLGJPHEOPAA\
+    \x18\x06\x20\x01(\rR\x0bFLGJPHEOPAA\x12.\n\x0bOPAMAEIJCOH\x18\x0c\x20\
+    \x03(\x0b2\x0c.JMAANMPANHMR\x0bOPAMAEIJCOH\x12.\n\x0bCPBNMACLBEH\x18\x03\
+    \x20\x01(\x0b2\x0c.MPJDIBCCOHFR\x0bCPBNMACLBEHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

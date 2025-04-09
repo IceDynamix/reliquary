@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicQueryScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicQueryScRsp.BHMHLPCHKLG)
-    pub BHMHLPCHKLG: ::protobuf::MessageField<super::AAPKBPEGGBH::AAPKBPEGGBH>,
     // @@protoc_insertion_point(field:RogueMagicQueryScRsp.LAGBGLDLGCB)
     pub LAGBGLDLGCB: ::protobuf::MessageField<super::PBBEDPIIPEK::PBBEDPIIPEK>,
+    // @@protoc_insertion_point(field:RogueMagicQueryScRsp.BHMHLPCHKLG)
+    pub BHMHLPCHKLG: ::protobuf::MessageField<super::AAPKBPEGGBH::AAPKBPEGGBH>,
     // @@protoc_insertion_point(field:RogueMagicQueryScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -53,15 +53,15 @@ impl RogueMagicQueryScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AAPKBPEGGBH::AAPKBPEGGBH>(
-            "BHMHLPCHKLG",
-            |m: &RogueMagicQueryScRsp| { &m.BHMHLPCHKLG },
-            |m: &mut RogueMagicQueryScRsp| { &mut m.BHMHLPCHKLG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PBBEDPIIPEK::PBBEDPIIPEK>(
             "LAGBGLDLGCB",
             |m: &RogueMagicQueryScRsp| { &m.LAGBGLDLGCB },
             |m: &mut RogueMagicQueryScRsp| { &mut m.LAGBGLDLGCB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AAPKBPEGGBH::AAPKBPEGGBH>(
+            "BHMHLPCHKLG",
+            |m: &RogueMagicQueryScRsp| { &m.BHMHLPCHKLG },
+            |m: &mut RogueMagicQueryScRsp| { &mut m.BHMHLPCHKLG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for RogueMagicQueryScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHMHLPCHKLG)?;
-                },
-                26 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LAGBGLDLGCB)?;
                 },
-                72 => {
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHMHLPCHKLG)?;
+                },
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -107,16 +107,16 @@ impl ::protobuf::Message for RogueMagicQueryScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.BHMHLPCHKLG.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if let Some(v) = self.LAGBGLDLGCB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if let Some(v) = self.BHMHLPCHKLG.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for RogueMagicQueryScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.BHMHLPCHKLG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
         if let Some(v) = self.LAGBGLDLGCB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        }
+        if let Some(v) = self.BHMHLPCHKLG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for RogueMagicQueryScRsp {
     }
 
     fn clear(&mut self) {
-        self.BHMHLPCHKLG.clear();
         self.LAGBGLDLGCB.clear();
+        self.BHMHLPCHKLG.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicQueryScRsp {
         static instance: RogueMagicQueryScRsp = RogueMagicQueryScRsp {
-            BHMHLPCHKLG: ::protobuf::MessageField::none(),
             LAGBGLDLGCB: ::protobuf::MessageField::none(),
+            BHMHLPCHKLG: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicQueryScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aRogueMagicQueryScRsp.proto\x1a\x11AAPKBPEGGBH.proto\x1a\x11PBBEDPI\
-    IPEK.proto\"\x90\x01\n\x14RogueMagicQueryScRsp\x12.\n\x0bBHMHLPCHKLG\x18\
-    \n\x20\x01(\x0b2\x0c.AAPKBPEGGBHR\x0bBHMHLPCHKLG\x12.\n\x0bLAGBGLDLGCB\
-    \x18\x03\x20\x01(\x0b2\x0c.PBBEDPIIPEKR\x0bLAGBGLDLGCB\x12\x18\n\x07retc\
-    ode\x18\t\x20\x01(\rR\x07retcodeb\x06proto3\
+    IPEK.proto\"\x90\x01\n\x14RogueMagicQueryScRsp\x12.\n\x0bLAGBGLDLGCB\x18\
+    \x0b\x20\x01(\x0b2\x0c.PBBEDPIIPEKR\x0bLAGBGLDLGCB\x12.\n\x0bBHMHLPCHKLG\
+    \x18\r\x20\x01(\x0b2\x0c.AAPKBPEGGBHR\x0bBHMHLPCHKLG\x12\x18\n\x07retcod\
+    e\x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

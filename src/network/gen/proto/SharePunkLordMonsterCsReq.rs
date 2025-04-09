@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SharePunkLordMonsterCsReq {
     // message fields
+    // @@protoc_insertion_point(field:SharePunkLordMonsterCsReq.uid)
+    pub uid: u32,
     // @@protoc_insertion_point(field:SharePunkLordMonsterCsReq.FBJPBDIJPFK)
     pub FBJPBDIJPFK: u32,
-    // @@protoc_insertion_point(field:SharePunkLordMonsterCsReq.KMONAGFELPG)
-    pub KMONAGFELPG: u32,
     // @@protoc_insertion_point(field:SharePunkLordMonsterCsReq.FELGGJMHONO)
     pub FELGGJMHONO: ::protobuf::EnumOrUnknown<super::PunkLordShareType::PunkLordShareType>,
     // special fields
@@ -54,14 +54,14 @@ impl SharePunkLordMonsterCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "uid",
+            |m: &SharePunkLordMonsterCsReq| { &m.uid },
+            |m: &mut SharePunkLordMonsterCsReq| { &mut m.uid },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FBJPBDIJPFK",
             |m: &SharePunkLordMonsterCsReq| { &m.FBJPBDIJPFK },
             |m: &mut SharePunkLordMonsterCsReq| { &mut m.FBJPBDIJPFK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KMONAGFELPG",
-            |m: &SharePunkLordMonsterCsReq| { &m.KMONAGFELPG },
-            |m: &mut SharePunkLordMonsterCsReq| { &mut m.KMONAGFELPG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FELGGJMHONO",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for SharePunkLordMonsterCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                24 => {
+                    self.uid = is.read_uint32()?;
+                },
+                40 => {
                     self.FBJPBDIJPFK = is.read_uint32()?;
                 },
-                24 => {
-                    self.KMONAGFELPG = is.read_uint32()?;
-                },
-                32 => {
+                120 => {
                     self.FELGGJMHONO = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for SharePunkLordMonsterCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FBJPBDIJPFK != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.FBJPBDIJPFK);
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.uid);
         }
-        if self.KMONAGFELPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.KMONAGFELPG);
+        if self.FBJPBDIJPFK != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.FBJPBDIJPFK);
         }
         if self.FELGGJMHONO != ::protobuf::EnumOrUnknown::new(super::PunkLordShareType::PunkLordShareType::PUNK_LORD_SHARE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(4, self.FELGGJMHONO.value());
+            my_size += ::protobuf::rt::int32_size(15, self.FELGGJMHONO.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for SharePunkLordMonsterCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FBJPBDIJPFK != 0 {
-            os.write_uint32(11, self.FBJPBDIJPFK)?;
+        if self.uid != 0 {
+            os.write_uint32(3, self.uid)?;
         }
-        if self.KMONAGFELPG != 0 {
-            os.write_uint32(3, self.KMONAGFELPG)?;
+        if self.FBJPBDIJPFK != 0 {
+            os.write_uint32(5, self.FBJPBDIJPFK)?;
         }
         if self.FELGGJMHONO != ::protobuf::EnumOrUnknown::new(super::PunkLordShareType::PunkLordShareType::PUNK_LORD_SHARE_TYPE_NONE) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.FELGGJMHONO))?;
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.FELGGJMHONO))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for SharePunkLordMonsterCsReq {
     }
 
     fn clear(&mut self) {
+        self.uid = 0;
         self.FBJPBDIJPFK = 0;
-        self.KMONAGFELPG = 0;
         self.FELGGJMHONO = ::protobuf::EnumOrUnknown::new(super::PunkLordShareType::PunkLordShareType::PUNK_LORD_SHARE_TYPE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SharePunkLordMonsterCsReq {
         static instance: SharePunkLordMonsterCsReq = SharePunkLordMonsterCsReq {
+            uid: 0,
             FBJPBDIJPFK: 0,
-            KMONAGFELPG: 0,
             FELGGJMHONO: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for SharePunkLordMonsterCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fSharePunkLordMonsterCsReq.proto\x1a\x17PunkLordShareType.proto\"\
-    \x95\x01\n\x19SharePunkLordMonsterCsReq\x12\x20\n\x0bFBJPBDIJPFK\x18\x0b\
-    \x20\x01(\rR\x0bFBJPBDIJPFK\x12\x20\n\x0bKMONAGFELPG\x18\x03\x20\x01(\rR\
-    \x0bKMONAGFELPG\x124\n\x0bFELGGJMHONO\x18\x04\x20\x01(\x0e2\x12.PunkLord\
-    ShareTypeR\x0bFELGGJMHONOb\x06proto3\
+    \x85\x01\n\x19SharePunkLordMonsterCsReq\x12\x10\n\x03uid\x18\x03\x20\x01\
+    (\rR\x03uid\x12\x20\n\x0bFBJPBDIJPFK\x18\x05\x20\x01(\rR\x0bFBJPBDIJPFK\
+    \x124\n\x0bFELGGJMHONO\x18\x0f\x20\x01(\x0e2\x12.PunkLordShareTypeR\x0bF\
+    ELGGJMHONOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

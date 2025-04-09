@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AINBLBBFDBJ {
     // message fields
-    // @@protoc_insertion_point(field:AINBLBBFDBJ.INBJPPAPCAG)
-    pub INBJPPAPCAG: u32,
     // @@protoc_insertion_point(field:AINBLBBFDBJ.NIJAGOAJPEM)
     pub NIJAGOAJPEM: u32,
+    // @@protoc_insertion_point(field:AINBLBBFDBJ.INBJPPAPCAG)
+    pub INBJPPAPCAG: u32,
     // @@protoc_insertion_point(field:AINBLBBFDBJ.PIPMGACMJNN)
     pub PIPMGACMJNN: bool,
     // @@protoc_insertion_point(field:AINBLBBFDBJ.NHGOJDODGMA)
@@ -56,14 +56,14 @@ impl AINBLBBFDBJ {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "INBJPPAPCAG",
-            |m: &AINBLBBFDBJ| { &m.INBJPPAPCAG },
-            |m: &mut AINBLBBFDBJ| { &mut m.INBJPPAPCAG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NIJAGOAJPEM",
             |m: &AINBLBBFDBJ| { &m.NIJAGOAJPEM },
             |m: &mut AINBLBBFDBJ| { &mut m.NIJAGOAJPEM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "INBJPPAPCAG",
+            |m: &AINBLBBFDBJ| { &m.INBJPPAPCAG },
+            |m: &mut AINBLBBFDBJ| { &mut m.INBJPPAPCAG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PIPMGACMJNN",
@@ -93,19 +93,19 @@ impl ::protobuf::Message for AINBLBBFDBJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.INBJPPAPCAG = is.read_uint32()?;
-                },
-                40 => {
+                64 => {
                     self.NIJAGOAJPEM = is.read_uint32()?;
                 },
-                64 => {
+                56 => {
+                    self.INBJPPAPCAG = is.read_uint32()?;
+                },
+                24 => {
                     self.PIPMGACMJNN = is.read_bool()?;
                 },
-                18 => {
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.NHGOJDODGMA)?;
                 },
-                16 => {
+                104 => {
                     self.NHGOJDODGMA.push(is.read_uint32()?);
                 },
                 tag => {
@@ -120,32 +120,32 @@ impl ::protobuf::Message for AINBLBBFDBJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.INBJPPAPCAG != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.INBJPPAPCAG);
-        }
         if self.NIJAGOAJPEM != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.NIJAGOAJPEM);
+            my_size += ::protobuf::rt::uint32_size(8, self.NIJAGOAJPEM);
+        }
+        if self.INBJPPAPCAG != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.INBJPPAPCAG);
         }
         if self.PIPMGACMJNN != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.NHGOJDODGMA);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.NHGOJDODGMA);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.INBJPPAPCAG != 0 {
-            os.write_uint32(3, self.INBJPPAPCAG)?;
-        }
         if self.NIJAGOAJPEM != 0 {
-            os.write_uint32(5, self.NIJAGOAJPEM)?;
+            os.write_uint32(8, self.NIJAGOAJPEM)?;
+        }
+        if self.INBJPPAPCAG != 0 {
+            os.write_uint32(7, self.INBJPPAPCAG)?;
         }
         if self.PIPMGACMJNN != false {
-            os.write_bool(8, self.PIPMGACMJNN)?;
+            os.write_bool(3, self.PIPMGACMJNN)?;
         }
-        os.write_repeated_packed_uint32(2, &self.NHGOJDODGMA)?;
+        os.write_repeated_packed_uint32(13, &self.NHGOJDODGMA)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -163,8 +163,8 @@ impl ::protobuf::Message for AINBLBBFDBJ {
     }
 
     fn clear(&mut self) {
-        self.INBJPPAPCAG = 0;
         self.NIJAGOAJPEM = 0;
+        self.INBJPPAPCAG = 0;
         self.PIPMGACMJNN = false;
         self.NHGOJDODGMA.clear();
         self.special_fields.clear();
@@ -172,8 +172,8 @@ impl ::protobuf::Message for AINBLBBFDBJ {
 
     fn default_instance() -> &'static AINBLBBFDBJ {
         static instance: AINBLBBFDBJ = AINBLBBFDBJ {
-            INBJPPAPCAG: 0,
             NIJAGOAJPEM: 0,
+            INBJPPAPCAG: 0,
             PIPMGACMJNN: false,
             NHGOJDODGMA: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -200,11 +200,11 @@ impl ::protobuf::reflect::ProtobufValue for AINBLBBFDBJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AINBLBBFDBJ.proto\"\x95\x01\n\x0bAINBLBBFDBJ\x12\x20\n\x0bINBJPPAP\
-    CAG\x18\x03\x20\x01(\rR\x0bINBJPPAPCAG\x12\x20\n\x0bNIJAGOAJPEM\x18\x05\
-    \x20\x01(\rR\x0bNIJAGOAJPEM\x12\x20\n\x0bPIPMGACMJNN\x18\x08\x20\x01(\
-    \x08R\x0bPIPMGACMJNN\x12\x20\n\x0bNHGOJDODGMA\x18\x02\x20\x03(\rR\x0bNHG\
-    OJDODGMAb\x06proto3\
+    \n\x11AINBLBBFDBJ.proto\"\x95\x01\n\x0bAINBLBBFDBJ\x12\x20\n\x0bNIJAGOAJ\
+    PEM\x18\x08\x20\x01(\rR\x0bNIJAGOAJPEM\x12\x20\n\x0bINBJPPAPCAG\x18\x07\
+    \x20\x01(\rR\x0bINBJPPAPCAG\x12\x20\n\x0bPIPMGACMJNN\x18\x03\x20\x01(\
+    \x08R\x0bPIPMGACMJNN\x12\x20\n\x0bNHGOJDODGMA\x18\r\x20\x03(\rR\x0bNHGOJ\
+    DODGMAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

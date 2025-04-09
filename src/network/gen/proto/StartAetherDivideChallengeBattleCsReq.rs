@@ -79,10 +79,10 @@ impl ::protobuf::Message for StartAetherDivideChallengeBattleCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                40 => {
                     self.KNLBEMFIHNP = is.read_uint32()?;
                 },
-                112 => {
+                64 => {
                     self.CFAAFJJAADP = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for StartAetherDivideChallengeBattleCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.KNLBEMFIHNP != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.KNLBEMFIHNP);
+            my_size += ::protobuf::rt::uint32_size(5, self.KNLBEMFIHNP);
         }
         if self.CFAAFJJAADP != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.CFAAFJJAADP);
+            my_size += ::protobuf::rt::uint32_size(8, self.CFAAFJJAADP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for StartAetherDivideChallengeBattleCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KNLBEMFIHNP != 0 {
-            os.write_uint32(11, self.KNLBEMFIHNP)?;
+            os.write_uint32(5, self.KNLBEMFIHNP)?;
         }
         if self.CFAAFJJAADP != 0 {
-            os.write_uint32(14, self.CFAAFJJAADP)?;
+            os.write_uint32(8, self.CFAAFJJAADP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for StartAetherDivideChallengeBattleCsRe
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+StartAetherDivideChallengeBattleCsReq.proto\"k\n%StartAetherDivideCha\
-    llengeBattleCsReq\x12\x20\n\x0bKNLBEMFIHNP\x18\x0b\x20\x01(\rR\x0bKNLBEM\
-    FIHNP\x12\x20\n\x0bCFAAFJJAADP\x18\x0e\x20\x01(\rR\x0bCFAAFJJAADPb\x06pr\
+    llengeBattleCsReq\x12\x20\n\x0bKNLBEMFIHNP\x18\x05\x20\x01(\rR\x0bKNLBEM\
+    FIHNP\x12\x20\n\x0bCFAAFJJAADP\x18\x08\x20\x01(\rR\x0bCFAAFJJAADPb\x06pr\
     oto3\
 ";
 

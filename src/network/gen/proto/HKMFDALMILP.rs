@@ -79,10 +79,10 @@ impl ::protobuf::Message for HKMFDALMILP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHELBOHKBBM)?;
                 },
-                8 => {
+                104 => {
                     self.GJMPNPFJAEL = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for HKMFDALMILP {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.GJMPNPFJAEL != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.GJMPNPFJAEL);
+            my_size += ::protobuf::rt::uint32_size(13, self.GJMPNPFJAEL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for HKMFDALMILP {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.BHELBOHKBBM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if self.GJMPNPFJAEL != 0 {
-            os.write_uint32(1, self.GJMPNPFJAEL)?;
+            os.write_uint32(13, self.GJMPNPFJAEL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for HKMFDALMILP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HKMFDALMILP.proto\x1a\x0eItemList.proto\"\\\n\x0bHKMFDALMILP\x12+\
-    \n\x0bBHELBOHKBBM\x18\x0b\x20\x01(\x0b2\t.ItemListR\x0bBHELBOHKBBM\x12\
-    \x20\n\x0bGJMPNPFJAEL\x18\x01\x20\x01(\rR\x0bGJMPNPFJAELb\x06proto3\
+    \n\x0bBHELBOHKBBM\x18\x0c\x20\x01(\x0b2\t.ItemListR\x0bBHELBOHKBBM\x12\
+    \x20\n\x0bGJMPNPFJAEL\x18\r\x20\x01(\rR\x0bGJMPNPFJAELb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

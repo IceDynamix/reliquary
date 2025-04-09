@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetFriendMarkCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetFriendMarkCsReq.ADJGKCOKOLN)
-    pub ADJGKCOKOLN: bool,
-    // @@protoc_insertion_point(field:SetFriendMarkCsReq.KMONAGFELPG)
-    pub KMONAGFELPG: u32,
+    // @@protoc_insertion_point(field:SetFriendMarkCsReq.uid)
+    pub uid: u32,
     // @@protoc_insertion_point(field:SetFriendMarkCsReq.ALIFPIHNMEK)
     pub ALIFPIHNMEK: u32,
+    // @@protoc_insertion_point(field:SetFriendMarkCsReq.ADJGKCOKOLN)
+    pub ADJGKCOKOLN: bool,
     // special fields
     // @@protoc_insertion_point(special_field:SetFriendMarkCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl SetFriendMarkCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADJGKCOKOLN",
-            |m: &SetFriendMarkCsReq| { &m.ADJGKCOKOLN },
-            |m: &mut SetFriendMarkCsReq| { &mut m.ADJGKCOKOLN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KMONAGFELPG",
-            |m: &SetFriendMarkCsReq| { &m.KMONAGFELPG },
-            |m: &mut SetFriendMarkCsReq| { &mut m.KMONAGFELPG },
+            "uid",
+            |m: &SetFriendMarkCsReq| { &m.uid },
+            |m: &mut SetFriendMarkCsReq| { &mut m.uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ALIFPIHNMEK",
             |m: &SetFriendMarkCsReq| { &m.ALIFPIHNMEK },
             |m: &mut SetFriendMarkCsReq| { &mut m.ALIFPIHNMEK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ADJGKCOKOLN",
+            |m: &SetFriendMarkCsReq| { &m.ADJGKCOKOLN },
+            |m: &mut SetFriendMarkCsReq| { &mut m.ADJGKCOKOLN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetFriendMarkCsReq>(
             "SetFriendMarkCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SetFriendMarkCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.ADJGKCOKOLN = is.read_bool()?;
+                88 => {
+                    self.uid = is.read_uint32()?;
                 },
                 8 => {
-                    self.KMONAGFELPG = is.read_uint32()?;
-                },
-                16 => {
                     self.ALIFPIHNMEK = is.read_uint32()?;
+                },
+                104 => {
+                    self.ADJGKCOKOLN = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for SetFriendMarkCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADJGKCOKOLN != false {
-            my_size += 1 + 1;
-        }
-        if self.KMONAGFELPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.KMONAGFELPG);
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.uid);
         }
         if self.ALIFPIHNMEK != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.ALIFPIHNMEK);
+            my_size += ::protobuf::rt::uint32_size(1, self.ALIFPIHNMEK);
+        }
+        if self.ADJGKCOKOLN != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for SetFriendMarkCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADJGKCOKOLN != false {
-            os.write_bool(6, self.ADJGKCOKOLN)?;
-        }
-        if self.KMONAGFELPG != 0 {
-            os.write_uint32(1, self.KMONAGFELPG)?;
+        if self.uid != 0 {
+            os.write_uint32(11, self.uid)?;
         }
         if self.ALIFPIHNMEK != 0 {
-            os.write_uint32(2, self.ALIFPIHNMEK)?;
+            os.write_uint32(1, self.ALIFPIHNMEK)?;
+        }
+        if self.ADJGKCOKOLN != false {
+            os.write_bool(13, self.ADJGKCOKOLN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for SetFriendMarkCsReq {
     }
 
     fn clear(&mut self) {
-        self.ADJGKCOKOLN = false;
-        self.KMONAGFELPG = 0;
+        self.uid = 0;
         self.ALIFPIHNMEK = 0;
+        self.ADJGKCOKOLN = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetFriendMarkCsReq {
         static instance: SetFriendMarkCsReq = SetFriendMarkCsReq {
-            ADJGKCOKOLN: false,
-            KMONAGFELPG: 0,
+            uid: 0,
             ALIFPIHNMEK: 0,
+            ADJGKCOKOLN: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for SetFriendMarkCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18SetFriendMarkCsReq.proto\"z\n\x12SetFriendMarkCsReq\x12\x20\n\x0bA\
-    DJGKCOKOLN\x18\x06\x20\x01(\x08R\x0bADJGKCOKOLN\x12\x20\n\x0bKMONAGFELPG\
-    \x18\x01\x20\x01(\rR\x0bKMONAGFELPG\x12\x20\n\x0bALIFPIHNMEK\x18\x02\x20\
-    \x01(\rR\x0bALIFPIHNMEKb\x06proto3\
+    \n\x18SetFriendMarkCsReq.proto\"j\n\x12SetFriendMarkCsReq\x12\x10\n\x03u\
+    id\x18\x0b\x20\x01(\rR\x03uid\x12\x20\n\x0bALIFPIHNMEK\x18\x01\x20\x01(\
+    \rR\x0bALIFPIHNMEK\x12\x20\n\x0bADJGKCOKOLN\x18\r\x20\x01(\x08R\x0bADJGK\
+    COKOLNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

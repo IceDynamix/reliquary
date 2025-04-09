@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ICIMAKBAJGB {
     // message fields
-    // @@protoc_insertion_point(field:ICIMAKBAJGB.JLMNBKHJHMN)
-    pub JLMNBKHJHMN: ::protobuf::MessageField<super::ONHNMGOBDNL::ONHNMGOBDNL>,
     // @@protoc_insertion_point(field:ICIMAKBAJGB.OBDCGHJKPFE)
     pub OBDCGHJKPFE: ::protobuf::MessageField<super::GKBICDLGIMN::GKBICDLGIMN>,
+    // @@protoc_insertion_point(field:ICIMAKBAJGB.JLMNBKHJHMN)
+    pub JLMNBKHJHMN: ::protobuf::MessageField<super::ONHNMGOBDNL::ONHNMGOBDNL>,
     // special fields
     // @@protoc_insertion_point(special_field:ICIMAKBAJGB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl ICIMAKBAJGB {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ONHNMGOBDNL::ONHNMGOBDNL>(
-            "JLMNBKHJHMN",
-            |m: &ICIMAKBAJGB| { &m.JLMNBKHJHMN },
-            |m: &mut ICIMAKBAJGB| { &mut m.JLMNBKHJHMN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GKBICDLGIMN::GKBICDLGIMN>(
             "OBDCGHJKPFE",
             |m: &ICIMAKBAJGB| { &m.OBDCGHJKPFE },
             |m: &mut ICIMAKBAJGB| { &mut m.OBDCGHJKPFE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ONHNMGOBDNL::ONHNMGOBDNL>(
+            "JLMNBKHJHMN",
+            |m: &ICIMAKBAJGB| { &m.JLMNBKHJHMN },
+            |m: &mut ICIMAKBAJGB| { &mut m.JLMNBKHJHMN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ICIMAKBAJGB>(
             "ICIMAKBAJGB",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ICIMAKBAJGB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JLMNBKHJHMN)?;
-                },
-                98 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.OBDCGHJKPFE)?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JLMNBKHJHMN)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ICIMAKBAJGB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.JLMNBKHJHMN.as_ref() {
+        if let Some(v) = self.OBDCGHJKPFE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.OBDCGHJKPFE.as_ref() {
+        if let Some(v) = self.JLMNBKHJHMN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for ICIMAKBAJGB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.JLMNBKHJHMN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        }
         if let Some(v) = self.OBDCGHJKPFE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
+        if let Some(v) = self.JLMNBKHJHMN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for ICIMAKBAJGB {
     }
 
     fn clear(&mut self) {
-        self.JLMNBKHJHMN.clear();
         self.OBDCGHJKPFE.clear();
+        self.JLMNBKHJHMN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ICIMAKBAJGB {
         static instance: ICIMAKBAJGB = ICIMAKBAJGB {
-            JLMNBKHJHMN: ::protobuf::MessageField::none(),
             OBDCGHJKPFE: ::protobuf::MessageField::none(),
+            JLMNBKHJHMN: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for ICIMAKBAJGB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ICIMAKBAJGB.proto\x1a\x11GKBICDLGIMN.proto\x1a\x11ONHNMGOBDNL.prot\
-    o\"m\n\x0bICIMAKBAJGB\x12.\n\x0bJLMNBKHJHMN\x18\t\x20\x01(\x0b2\x0c.ONHN\
-    MGOBDNLR\x0bJLMNBKHJHMN\x12.\n\x0bOBDCGHJKPFE\x18\x0c\x20\x01(\x0b2\x0c.\
-    GKBICDLGIMNR\x0bOBDCGHJKPFEb\x06proto3\
+    o\"m\n\x0bICIMAKBAJGB\x12.\n\x0bOBDCGHJKPFE\x18\x07\x20\x01(\x0b2\x0c.GK\
+    BICDLGIMNR\x0bOBDCGHJKPFE\x12.\n\x0bJLMNBKHJHMN\x18\x0b\x20\x01(\x0b2\
+    \x0c.ONHNMGOBDNLR\x0bJLMNBKHJHMNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

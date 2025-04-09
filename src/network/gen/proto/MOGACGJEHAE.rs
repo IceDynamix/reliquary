@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MOGACGJEHAE {
     // message fields
-    // @@protoc_insertion_point(field:MOGACGJEHAE.PBLFLJNHMIL)
-    pub PBLFLJNHMIL: u32,
-    // @@protoc_insertion_point(field:MOGACGJEHAE.COLBGEJELGI)
-    pub COLBGEJELGI: u32,
     // @@protoc_insertion_point(field:MOGACGJEHAE.FGPMJANHEPD)
     pub FGPMJANHEPD: ::protobuf::MessageField<super::OJFAKLFIKCJ::OJFAKLFIKCJ>,
     // @@protoc_insertion_point(field:MOGACGJEHAE.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:MOGACGJEHAE.PBLFLJNHMIL)
+    pub PBLFLJNHMIL: u32,
+    // @@protoc_insertion_point(field:MOGACGJEHAE.COLBGEJELGI)
+    pub COLBGEJELGI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MOGACGJEHAE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,16 +55,6 @@ impl MOGACGJEHAE {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PBLFLJNHMIL",
-            |m: &MOGACGJEHAE| { &m.PBLFLJNHMIL },
-            |m: &mut MOGACGJEHAE| { &mut m.PBLFLJNHMIL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "COLBGEJELGI",
-            |m: &MOGACGJEHAE| { &m.COLBGEJELGI },
-            |m: &mut MOGACGJEHAE| { &mut m.COLBGEJELGI },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OJFAKLFIKCJ::OJFAKLFIKCJ>(
             "FGPMJANHEPD",
             |m: &MOGACGJEHAE| { &m.FGPMJANHEPD },
@@ -74,6 +64,16 @@ impl MOGACGJEHAE {
             "level",
             |m: &MOGACGJEHAE| { &m.level },
             |m: &mut MOGACGJEHAE| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PBLFLJNHMIL",
+            |m: &MOGACGJEHAE| { &m.PBLFLJNHMIL },
+            |m: &mut MOGACGJEHAE| { &mut m.PBLFLJNHMIL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "COLBGEJELGI",
+            |m: &MOGACGJEHAE| { &m.COLBGEJELGI },
+            |m: &mut MOGACGJEHAE| { &mut m.COLBGEJELGI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MOGACGJEHAE>(
             "MOGACGJEHAE",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for MOGACGJEHAE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.PBLFLJNHMIL = is.read_uint32()?;
-                },
-                16 => {
-                    self.COLBGEJELGI = is.read_uint32()?;
-                },
                 114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FGPMJANHEPD)?;
                 },
-                40 => {
+                16 => {
                     self.level = is.read_uint32()?;
+                },
+                104 => {
+                    self.PBLFLJNHMIL = is.read_uint32()?;
+                },
+                24 => {
+                    self.COLBGEJELGI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for MOGACGJEHAE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PBLFLJNHMIL != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.PBLFLJNHMIL);
-        }
-        if self.COLBGEJELGI != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.COLBGEJELGI);
-        }
         if let Some(v) = self.FGPMJANHEPD.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.level);
+            my_size += ::protobuf::rt::uint32_size(2, self.level);
+        }
+        if self.PBLFLJNHMIL != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.PBLFLJNHMIL);
+        }
+        if self.COLBGEJELGI != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.COLBGEJELGI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for MOGACGJEHAE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PBLFLJNHMIL != 0 {
-            os.write_uint32(15, self.PBLFLJNHMIL)?;
-        }
-        if self.COLBGEJELGI != 0 {
-            os.write_uint32(2, self.COLBGEJELGI)?;
-        }
         if let Some(v) = self.FGPMJANHEPD.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if self.level != 0 {
-            os.write_uint32(5, self.level)?;
+            os.write_uint32(2, self.level)?;
+        }
+        if self.PBLFLJNHMIL != 0 {
+            os.write_uint32(13, self.PBLFLJNHMIL)?;
+        }
+        if self.COLBGEJELGI != 0 {
+            os.write_uint32(3, self.COLBGEJELGI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for MOGACGJEHAE {
     }
 
     fn clear(&mut self) {
-        self.PBLFLJNHMIL = 0;
-        self.COLBGEJELGI = 0;
         self.FGPMJANHEPD.clear();
         self.level = 0;
+        self.PBLFLJNHMIL = 0;
+        self.COLBGEJELGI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MOGACGJEHAE {
         static instance: MOGACGJEHAE = MOGACGJEHAE {
-            PBLFLJNHMIL: 0,
-            COLBGEJELGI: 0,
             FGPMJANHEPD: ::protobuf::MessageField::none(),
             level: 0,
+            PBLFLJNHMIL: 0,
+            COLBGEJELGI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for MOGACGJEHAE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MOGACGJEHAE.proto\x1a\x11OJFAKLFIKCJ.proto\"\x97\x01\n\x0bMOGACGJE\
-    HAE\x12\x20\n\x0bPBLFLJNHMIL\x18\x0f\x20\x01(\rR\x0bPBLFLJNHMIL\x12\x20\
-    \n\x0bCOLBGEJELGI\x18\x02\x20\x01(\rR\x0bCOLBGEJELGI\x12.\n\x0bFGPMJANHE\
-    PD\x18\x0e\x20\x01(\x0b2\x0c.OJFAKLFIKCJR\x0bFGPMJANHEPD\x12\x14\n\x05le\
-    vel\x18\x05\x20\x01(\rR\x05levelb\x06proto3\
+    HAE\x12.\n\x0bFGPMJANHEPD\x18\x0e\x20\x01(\x0b2\x0c.OJFAKLFIKCJR\x0bFGPM\
+    JANHEPD\x12\x14\n\x05level\x18\x02\x20\x01(\rR\x05level\x12\x20\n\x0bPBL\
+    FLJNHMIL\x18\r\x20\x01(\rR\x0bPBLFLJNHMIL\x12\x20\n\x0bCOLBGEJELGI\x18\
+    \x03\x20\x01(\rR\x0bCOLBGEJELGIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

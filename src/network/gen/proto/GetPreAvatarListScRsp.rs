@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetPreAvatarListScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetPreAvatarListScRsp.JMJGMDHNPEN)
-    pub JMJGMDHNPEN: ::std::vec::Vec<super::OPPGLJBHKLL::OPPGLJBHKLL>,
     // @@protoc_insertion_point(field:GetPreAvatarListScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetPreAvatarListScRsp.JMJGMDHNPEN)
+    pub JMJGMDHNPEN: ::std::vec::Vec<super::OPPGLJBHKLL::OPPGLJBHKLL>,
     // special fields
     // @@protoc_insertion_point(special_field:GetPreAvatarListScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GetPreAvatarListScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JMJGMDHNPEN",
-            |m: &GetPreAvatarListScRsp| { &m.JMJGMDHNPEN },
-            |m: &mut GetPreAvatarListScRsp| { &mut m.JMJGMDHNPEN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetPreAvatarListScRsp| { &m.retcode },
             |m: &mut GetPreAvatarListScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "JMJGMDHNPEN",
+            |m: &GetPreAvatarListScRsp| { &m.JMJGMDHNPEN },
+            |m: &mut GetPreAvatarListScRsp| { &mut m.JMJGMDHNPEN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetPreAvatarListScRsp>(
             "GetPreAvatarListScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetPreAvatarListScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    self.JMJGMDHNPEN.push(is.read_message()?);
-                },
-                48 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
+                },
+                58 => {
+                    self.JMJGMDHNPEN.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for GetPreAvatarListScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        }
         for value in &self.JMJGMDHNPEN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.JMJGMDHNPEN {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
+        for v in &self.JMJGMDHNPEN {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GetPreAvatarListScRsp {
     }
 
     fn clear(&mut self) {
-        self.JMJGMDHNPEN.clear();
         self.retcode = 0;
+        self.JMJGMDHNPEN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetPreAvatarListScRsp {
         static instance: GetPreAvatarListScRsp = GetPreAvatarListScRsp {
-            JMJGMDHNPEN: ::std::vec::Vec::new(),
             retcode: 0,
+            JMJGMDHNPEN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for GetPreAvatarListScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bGetPreAvatarListScRsp.proto\x1a\x11OPPGLJBHKLL.proto\"a\n\x15GetPr\
-    eAvatarListScRsp\x12.\n\x0bJMJGMDHNPEN\x18\x0b\x20\x03(\x0b2\x0c.OPPGLJB\
-    HKLLR\x0bJMJGMDHNPEN\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\
+    eAvatarListScRsp\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12\
+    .\n\x0bJMJGMDHNPEN\x18\x07\x20\x03(\x0b2\x0c.OPPGLJBHKLLR\x0bJMJGMDHNPEN\
     b\x06proto3\
 ";
 

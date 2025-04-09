@@ -45,7 +45,7 @@ impl MIOFFPLNBEH {
         ::std::default::Default::default()
     }
 
-    // .FBKNDKFBKOL PAMFEHKPBFC = 15;
+    // .FBKNDKFBKOL PAMFEHKPBFC = 14;
 
     pub fn PAMFEHKPBFC(&self) -> &super::FBKNDKFBKOL::FBKNDKFBKOL {
         match self.KFELKJLDKEH {
@@ -94,7 +94,7 @@ impl MIOFFPLNBEH {
         }
     }
 
-    // .NOIDCLGJBMG IMJNOELLHOM = 13;
+    // .NOIDCLGJBMG IMJNOELLHOM = 4;
 
     pub fn IMJNOELLHOM(&self) -> &super::NOIDCLGJBMG::NOIDCLGJBMG {
         match self.KFELKJLDKEH {
@@ -179,10 +179,10 @@ impl ::protobuf::Message for MIOFFPLNBEH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                114 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(mioffplnbeh::KFELKJLDKEH::PAMFEHKPBFC(is.read_message()?));
                 },
-                106 => {
+                34 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(mioffplnbeh::KFELKJLDKEH::IMJNOELLHOM(is.read_message()?));
                 },
                 tag => {
@@ -218,10 +218,10 @@ impl ::protobuf::Message for MIOFFPLNBEH {
         if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
             match v {
                 &mioffplnbeh::KFELKJLDKEH::PAMFEHKPBFC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
                 &mioffplnbeh::KFELKJLDKEH::IMJNOELLHOM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
                 },
             };
         }
@@ -305,9 +305,10 @@ pub mod mioffplnbeh {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MIOFFPLNBEH.proto\x1a\x11FBKNDKFBKOL.proto\x1a\x11NOIDCLGJBMG.prot\
-    o\"\x80\x01\n\x0bMIOFFPLNBEH\x120\n\x0bPAMFEHKPBFC\x18\x0f\x20\x01(\x0b2\
-    \x0c.FBKNDKFBKOLH\0R\x0bPAMFEHKPBFC\x120\n\x0bIMJNOELLHOM\x18\r\x20\x01(\
-    \x0b2\x0c.NOIDCLGJBMGH\0R\x0bIMJNOELLHOMB\r\n\x0bKFELKJLDKEHb\x06proto3\
+    o\"\x80\x01\n\x0bMIOFFPLNBEH\x120\n\x0bPAMFEHKPBFC\x18\x0e\x20\x01(\x0b2\
+    \x0c.FBKNDKFBKOLH\0R\x0bPAMFEHKPBFC\x120\n\x0bIMJNOELLHOM\x18\x04\x20\
+    \x01(\x0b2\x0c.NOIDCLGJBMGH\0R\x0bIMJNOELLHOMB\r\n\x0bKFELKJLDKEHb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -32,10 +32,10 @@ pub struct TakeFightActivityRewardScRsp {
     pub retcode: u32,
     // @@protoc_insertion_point(field:TakeFightActivityRewardScRsp.NEDFIBONLKB)
     pub NEDFIBONLKB: u32,
-    // @@protoc_insertion_point(field:TakeFightActivityRewardScRsp.FJNHDHOHBCL)
-    pub FJNHDHOHBCL: u32,
     // @@protoc_insertion_point(field:TakeFightActivityRewardScRsp.BHELBOHKBBM)
     pub BHELBOHKBBM: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:TakeFightActivityRewardScRsp.FJNHDHOHBCL)
+    pub FJNHDHOHBCL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeFightActivityRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,15 +65,15 @@ impl TakeFightActivityRewardScRsp {
             |m: &TakeFightActivityRewardScRsp| { &m.NEDFIBONLKB },
             |m: &mut TakeFightActivityRewardScRsp| { &mut m.NEDFIBONLKB },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FJNHDHOHBCL",
-            |m: &TakeFightActivityRewardScRsp| { &m.FJNHDHOHBCL },
-            |m: &mut TakeFightActivityRewardScRsp| { &mut m.FJNHDHOHBCL },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "BHELBOHKBBM",
             |m: &TakeFightActivityRewardScRsp| { &m.BHELBOHKBBM },
             |m: &mut TakeFightActivityRewardScRsp| { &mut m.BHELBOHKBBM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FJNHDHOHBCL",
+            |m: &TakeFightActivityRewardScRsp| { &m.FJNHDHOHBCL },
+            |m: &mut TakeFightActivityRewardScRsp| { &mut m.FJNHDHOHBCL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeFightActivityRewardScRsp>(
             "TakeFightActivityRewardScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for TakeFightActivityRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
-                8 => {
+                56 => {
                     self.NEDFIBONLKB = is.read_uint32()?;
-                },
-                72 => {
-                    self.FJNHDHOHBCL = is.read_uint32()?;
                 },
                 122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHELBOHKBBM)?;
+                },
+                104 => {
+                    self.FJNHDHOHBCL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,17 +118,17 @@ impl ::protobuf::Message for TakeFightActivityRewardScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         if self.NEDFIBONLKB != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.NEDFIBONLKB);
-        }
-        if self.FJNHDHOHBCL != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.FJNHDHOHBCL);
+            my_size += ::protobuf::rt::uint32_size(7, self.NEDFIBONLKB);
         }
         if let Some(v) = self.BHELBOHKBBM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.FJNHDHOHBCL != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.FJNHDHOHBCL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,16 +137,16 @@ impl ::protobuf::Message for TakeFightActivityRewardScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
         if self.NEDFIBONLKB != 0 {
-            os.write_uint32(1, self.NEDFIBONLKB)?;
-        }
-        if self.FJNHDHOHBCL != 0 {
-            os.write_uint32(9, self.FJNHDHOHBCL)?;
+            os.write_uint32(7, self.NEDFIBONLKB)?;
         }
         if let Some(v) = self.BHELBOHKBBM.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        }
+        if self.FJNHDHOHBCL != 0 {
+            os.write_uint32(13, self.FJNHDHOHBCL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::Message for TakeFightActivityRewardScRsp {
     fn clear(&mut self) {
         self.retcode = 0;
         self.NEDFIBONLKB = 0;
-        self.FJNHDHOHBCL = 0;
         self.BHELBOHKBBM.clear();
+        self.FJNHDHOHBCL = 0;
         self.special_fields.clear();
     }
 
@@ -176,8 +176,8 @@ impl ::protobuf::Message for TakeFightActivityRewardScRsp {
         static instance: TakeFightActivityRewardScRsp = TakeFightActivityRewardScRsp {
             retcode: 0,
             NEDFIBONLKB: 0,
-            FJNHDHOHBCL: 0,
             BHELBOHKBBM: ::protobuf::MessageField::none(),
+            FJNHDHOHBCL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for TakeFightActivityRewardScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"TakeFightActivityRewardScRsp.proto\x1a\x0eItemList.proto\"\xa9\x01\n\
-    \x1cTakeFightActivityRewardScRsp\x12\x18\n\x07retcode\x18\x02\x20\x01(\r\
-    R\x07retcode\x12\x20\n\x0bNEDFIBONLKB\x18\x01\x20\x01(\rR\x0bNEDFIBONLKB\
-    \x12\x20\n\x0bFJNHDHOHBCL\x18\t\x20\x01(\rR\x0bFJNHDHOHBCL\x12+\n\x0bBHE\
-    LBOHKBBM\x18\x0f\x20\x01(\x0b2\t.ItemListR\x0bBHELBOHKBBMb\x06proto3\
+    \x1cTakeFightActivityRewardScRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\r\
+    R\x07retcode\x12\x20\n\x0bNEDFIBONLKB\x18\x07\x20\x01(\rR\x0bNEDFIBONLKB\
+    \x12+\n\x0bBHELBOHKBBM\x18\x0f\x20\x01(\x0b2\t.ItemListR\x0bBHELBOHKBBM\
+    \x12\x20\n\x0bFJNHDHOHBCL\x18\r\x20\x01(\rR\x0bFJNHDHOHBCLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

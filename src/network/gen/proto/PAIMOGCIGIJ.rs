@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PAIMOGCIGIJ {
     // message fields
-    // @@protoc_insertion_point(field:PAIMOGCIGIJ.EABOCPNFKLM)
-    pub EABOCPNFKLM: u32,
-    // @@protoc_insertion_point(field:PAIMOGCIGIJ.BLFAANHJPAD)
-    pub BLFAANHJPAD: u32,
-    // @@protoc_insertion_point(field:PAIMOGCIGIJ.GMAFEJEJBHO)
-    pub GMAFEJEJBHO: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:PAIMOGCIGIJ.KHNCEDGFPGL)
     pub KHNCEDGFPGL: u32,
+    // @@protoc_insertion_point(field:PAIMOGCIGIJ.GMAFEJEJBHO)
+    pub GMAFEJEJBHO: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:PAIMOGCIGIJ.BLFAANHJPAD)
+    pub BLFAANHJPAD: u32,
+    // @@protoc_insertion_point(field:PAIMOGCIGIJ.EABOCPNFKLM)
+    pub EABOCPNFKLM: u32,
     // @@protoc_insertion_point(field:PAIMOGCIGIJ.DEIDCHAMDBA)
     pub DEIDCHAMDBA: u32,
     // special fields
@@ -58,14 +58,9 @@ impl PAIMOGCIGIJ {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EABOCPNFKLM",
-            |m: &PAIMOGCIGIJ| { &m.EABOCPNFKLM },
-            |m: &mut PAIMOGCIGIJ| { &mut m.EABOCPNFKLM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BLFAANHJPAD",
-            |m: &PAIMOGCIGIJ| { &m.BLFAANHJPAD },
-            |m: &mut PAIMOGCIGIJ| { &mut m.BLFAANHJPAD },
+            "KHNCEDGFPGL",
+            |m: &PAIMOGCIGIJ| { &m.KHNCEDGFPGL },
+            |m: &mut PAIMOGCIGIJ| { &mut m.KHNCEDGFPGL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "GMAFEJEJBHO",
@@ -73,9 +68,14 @@ impl PAIMOGCIGIJ {
             |m: &mut PAIMOGCIGIJ| { &mut m.GMAFEJEJBHO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KHNCEDGFPGL",
-            |m: &PAIMOGCIGIJ| { &m.KHNCEDGFPGL },
-            |m: &mut PAIMOGCIGIJ| { &mut m.KHNCEDGFPGL },
+            "BLFAANHJPAD",
+            |m: &PAIMOGCIGIJ| { &m.BLFAANHJPAD },
+            |m: &mut PAIMOGCIGIJ| { &mut m.BLFAANHJPAD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EABOCPNFKLM",
+            |m: &PAIMOGCIGIJ| { &m.EABOCPNFKLM },
+            |m: &mut PAIMOGCIGIJ| { &mut m.EABOCPNFKLM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DEIDCHAMDBA",
@@ -100,13 +100,10 @@ impl ::protobuf::Message for PAIMOGCIGIJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.EABOCPNFKLM = is.read_uint32()?;
+                48 => {
+                    self.KHNCEDGFPGL = is.read_uint32()?;
                 },
-                8 => {
-                    self.BLFAANHJPAD = is.read_uint32()?;
-                },
-                82 => {
+                90 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -121,10 +118,13 @@ impl ::protobuf::Message for PAIMOGCIGIJ {
                     is.pop_limit(old_limit);
                     self.GMAFEJEJBHO.insert(key, value);
                 },
-                112 => {
-                    self.KHNCEDGFPGL = is.read_uint32()?;
+                56 => {
+                    self.BLFAANHJPAD = is.read_uint32()?;
                 },
-                32 => {
+                16 => {
+                    self.EABOCPNFKLM = is.read_uint32()?;
+                },
+                8 => {
                     self.DEIDCHAMDBA = is.read_uint32()?;
                 },
                 tag => {
@@ -139,11 +139,8 @@ impl ::protobuf::Message for PAIMOGCIGIJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EABOCPNFKLM != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.EABOCPNFKLM);
-        }
-        if self.BLFAANHJPAD != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.BLFAANHJPAD);
+        if self.KHNCEDGFPGL != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.KHNCEDGFPGL);
         }
         for (k, v) in &self.GMAFEJEJBHO {
             let mut entry_size = 0;
@@ -151,11 +148,14 @@ impl ::protobuf::Message for PAIMOGCIGIJ {
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if self.KHNCEDGFPGL != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.KHNCEDGFPGL);
+        if self.BLFAANHJPAD != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.BLFAANHJPAD);
+        }
+        if self.EABOCPNFKLM != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.EABOCPNFKLM);
         }
         if self.DEIDCHAMDBA != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.DEIDCHAMDBA);
+            my_size += ::protobuf::rt::uint32_size(1, self.DEIDCHAMDBA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -163,26 +163,26 @@ impl ::protobuf::Message for PAIMOGCIGIJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EABOCPNFKLM != 0 {
-            os.write_uint32(15, self.EABOCPNFKLM)?;
-        }
-        if self.BLFAANHJPAD != 0 {
-            os.write_uint32(1, self.BLFAANHJPAD)?;
+        if self.KHNCEDGFPGL != 0 {
+            os.write_uint32(6, self.KHNCEDGFPGL)?;
         }
         for (k, v) in &self.GMAFEJEJBHO {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(82)?; // Tag.
+            os.write_raw_varint32(90)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
-        if self.KHNCEDGFPGL != 0 {
-            os.write_uint32(14, self.KHNCEDGFPGL)?;
+        if self.BLFAANHJPAD != 0 {
+            os.write_uint32(7, self.BLFAANHJPAD)?;
+        }
+        if self.EABOCPNFKLM != 0 {
+            os.write_uint32(2, self.EABOCPNFKLM)?;
         }
         if self.DEIDCHAMDBA != 0 {
-            os.write_uint32(4, self.DEIDCHAMDBA)?;
+            os.write_uint32(1, self.DEIDCHAMDBA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -201,10 +201,10 @@ impl ::protobuf::Message for PAIMOGCIGIJ {
     }
 
     fn clear(&mut self) {
-        self.EABOCPNFKLM = 0;
-        self.BLFAANHJPAD = 0;
-        self.GMAFEJEJBHO.clear();
         self.KHNCEDGFPGL = 0;
+        self.GMAFEJEJBHO.clear();
+        self.BLFAANHJPAD = 0;
+        self.EABOCPNFKLM = 0;
         self.DEIDCHAMDBA = 0;
         self.special_fields.clear();
     }
@@ -233,11 +233,11 @@ impl ::protobuf::reflect::ProtobufValue for PAIMOGCIGIJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PAIMOGCIGIJ.proto\"\x96\x02\n\x0bPAIMOGCIGIJ\x12\x20\n\x0bEABOCPNF\
-    KLM\x18\x0f\x20\x01(\rR\x0bEABOCPNFKLM\x12\x20\n\x0bBLFAANHJPAD\x18\x01\
-    \x20\x01(\rR\x0bBLFAANHJPAD\x12?\n\x0bGMAFEJEJBHO\x18\n\x20\x03(\x0b2\
-    \x1d.PAIMOGCIGIJ.GMAFEJEJBHOEntryR\x0bGMAFEJEJBHO\x12\x20\n\x0bKHNCEDGFP\
-    GL\x18\x0e\x20\x01(\rR\x0bKHNCEDGFPGL\x12\x20\n\x0bDEIDCHAMDBA\x18\x04\
+    \n\x11PAIMOGCIGIJ.proto\"\x96\x02\n\x0bPAIMOGCIGIJ\x12\x20\n\x0bKHNCEDGF\
+    PGL\x18\x06\x20\x01(\rR\x0bKHNCEDGFPGL\x12?\n\x0bGMAFEJEJBHO\x18\x0b\x20\
+    \x03(\x0b2\x1d.PAIMOGCIGIJ.GMAFEJEJBHOEntryR\x0bGMAFEJEJBHO\x12\x20\n\
+    \x0bBLFAANHJPAD\x18\x07\x20\x01(\rR\x0bBLFAANHJPAD\x12\x20\n\x0bEABOCPNF\
+    KLM\x18\x02\x20\x01(\rR\x0bEABOCPNFKLM\x12\x20\n\x0bDEIDCHAMDBA\x18\x01\
     \x20\x01(\rR\x0bDEIDCHAMDBA\x1a>\n\x10GMAFEJEJBHOEntry\x12\x10\n\x03key\
     \x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05va\
     lue:\x028\x01b\x06proto3\

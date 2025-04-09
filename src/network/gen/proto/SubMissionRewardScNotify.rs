@@ -79,10 +79,10 @@ impl ::protobuf::Message for SubMissionRewardScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                96 => {
                     self.LPLHIABDBBG = is.read_uint32()?;
                 },
-                98 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHELBOHKBBM)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SubMissionRewardScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.LPLHIABDBBG != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.LPLHIABDBBG);
+            my_size += ::protobuf::rt::uint32_size(12, self.LPLHIABDBBG);
         }
         if let Some(v) = self.BHELBOHKBBM.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for SubMissionRewardScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.LPLHIABDBBG != 0 {
-            os.write_uint32(8, self.LPLHIABDBBG)?;
+            os.write_uint32(12, self.LPLHIABDBBG)?;
         }
         if let Some(v) = self.BHELBOHKBBM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for SubMissionRewardScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eSubMissionRewardScNotify.proto\x1a\x0eItemList.proto\"i\n\x18SubMi\
-    ssionRewardScNotify\x12\x20\n\x0bLPLHIABDBBG\x18\x08\x20\x01(\rR\x0bLPLH\
-    IABDBBG\x12+\n\x0bBHELBOHKBBM\x18\x0c\x20\x01(\x0b2\t.ItemListR\x0bBHELB\
+    ssionRewardScNotify\x12\x20\n\x0bLPLHIABDBBG\x18\x0c\x20\x01(\rR\x0bLPLH\
+    IABDBBG\x12+\n\x0bBHELBOHKBBM\x18\x03\x20\x01(\x0b2\t.ItemListR\x0bBHELB\
     OHKBBMb\x06proto3\
 ";
 

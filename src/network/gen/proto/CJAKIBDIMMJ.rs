@@ -45,7 +45,7 @@ impl CJAKIBDIMMJ {
         ::std::default::Default::default()
     }
 
-    // bool IAHOPFNPFLN = 976;
+    // bool IAHOPFNPFLN = 392;
 
     pub fn IAHOPFNPFLN(&self) -> bool {
         match self.PMFBBCEBACD {
@@ -70,7 +70,7 @@ impl CJAKIBDIMMJ {
         self.PMFBBCEBACD = ::std::option::Option::Some(cjakibdimmj::PMFBBCEBACD::IAHOPFNPFLN(v))
     }
 
-    // .MENPBGGOGMC AMALJFOKCBA = 284;
+    // .MENPBGGOGMC AMALJFOKCBA = 1558;
 
     pub fn AMALJFOKCBA(&self) -> &super::MENPBGGOGMC::MENPBGGOGMC {
         match self.PMFBBCEBACD {
@@ -119,7 +119,7 @@ impl CJAKIBDIMMJ {
         }
     }
 
-    // .MENPBGGOGMC OECBELGDLFP = 1317;
+    // .MENPBGGOGMC OECBELGDLFP = 393;
 
     pub fn OECBELGDLFP(&self) -> &super::MENPBGGOGMC::MENPBGGOGMC {
         match self.PMFBBCEBACD {
@@ -210,13 +210,13 @@ impl ::protobuf::Message for CJAKIBDIMMJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                7808 => {
+                3136 => {
                     self.PMFBBCEBACD = ::std::option::Option::Some(cjakibdimmj::PMFBBCEBACD::IAHOPFNPFLN(is.read_bool()?));
                 },
-                2274 => {
+                12466 => {
                     self.PMFBBCEBACD = ::std::option::Option::Some(cjakibdimmj::PMFBBCEBACD::AMALJFOKCBA(is.read_message()?));
                 },
-                10538 => {
+                3146 => {
                     self.PMFBBCEBACD = ::std::option::Option::Some(cjakibdimmj::PMFBBCEBACD::OECBELGDLFP(is.read_message()?));
                 },
                 tag => {
@@ -255,13 +255,13 @@ impl ::protobuf::Message for CJAKIBDIMMJ {
         if let ::std::option::Option::Some(ref v) = self.PMFBBCEBACD {
             match v {
                 &cjakibdimmj::PMFBBCEBACD::IAHOPFNPFLN(v) => {
-                    os.write_bool(976, v)?;
+                    os.write_bool(392, v)?;
                 },
                 &cjakibdimmj::PMFBBCEBACD::AMALJFOKCBA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(284, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1558, v, os)?;
                 },
                 &cjakibdimmj::PMFBBCEBACD::OECBELGDLFP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1317, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(393, v, os)?;
                 },
             };
         }
@@ -348,10 +348,10 @@ pub mod cjakibdimmj {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CJAKIBDIMMJ.proto\x1a\x11MENPBGGOGMC.proto\"\xa7\x01\n\x0bCJAKIBDI\
-    MMJ\x12#\n\x0bIAHOPFNPFLN\x18\xd0\x07\x20\x01(\x08H\0R\x0bIAHOPFNPFLN\
-    \x121\n\x0bAMALJFOKCBA\x18\x9c\x02\x20\x01(\x0b2\x0c.MENPBGGOGMCH\0R\x0b\
-    AMALJFOKCBA\x121\n\x0bOECBELGDLFP\x18\xa5\n\x20\x01(\x0b2\x0c.MENPBGGOGM\
-    CH\0R\x0bOECBELGDLFPB\r\n\x0bPMFBBCEBACDb\x06proto3\
+    MMJ\x12#\n\x0bIAHOPFNPFLN\x18\x88\x03\x20\x01(\x08H\0R\x0bIAHOPFNPFLN\
+    \x121\n\x0bAMALJFOKCBA\x18\x96\x0c\x20\x01(\x0b2\x0c.MENPBGGOGMCH\0R\x0b\
+    AMALJFOKCBA\x121\n\x0bOECBELGDLFP\x18\x89\x03\x20\x01(\x0b2\x0c.MENPBGGO\
+    GMCH\0R\x0bOECBELGDLFPB\r\n\x0bPMFBBCEBACDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

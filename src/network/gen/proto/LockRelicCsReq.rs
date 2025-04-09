@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LockRelicCsReq {
     // message fields
-    // @@protoc_insertion_point(field:LockRelicCsReq.IEMNPGOMJCO)
-    pub IEMNPGOMJCO: bool,
-    // @@protoc_insertion_point(field:LockRelicCsReq.KGEFHOECMMN)
-    pub KGEFHOECMMN: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:LockRelicCsReq.OAHNBDDIAJL)
     pub OAHNBDDIAJL: bool,
+    // @@protoc_insertion_point(field:LockRelicCsReq.KGEFHOECMMN)
+    pub KGEFHOECMMN: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:LockRelicCsReq.IEMNPGOMJCO)
+    pub IEMNPGOMJCO: bool,
     // special fields
     // @@protoc_insertion_point(special_field:LockRelicCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl LockRelicCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IEMNPGOMJCO",
-            |m: &LockRelicCsReq| { &m.IEMNPGOMJCO },
-            |m: &mut LockRelicCsReq| { &mut m.IEMNPGOMJCO },
+            "OAHNBDDIAJL",
+            |m: &LockRelicCsReq| { &m.OAHNBDDIAJL },
+            |m: &mut LockRelicCsReq| { &mut m.OAHNBDDIAJL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "KGEFHOECMMN",
@@ -64,9 +64,9 @@ impl LockRelicCsReq {
             |m: &mut LockRelicCsReq| { &mut m.KGEFHOECMMN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OAHNBDDIAJL",
-            |m: &LockRelicCsReq| { &m.OAHNBDDIAJL },
-            |m: &mut LockRelicCsReq| { &mut m.OAHNBDDIAJL },
+            "IEMNPGOMJCO",
+            |m: &LockRelicCsReq| { &m.IEMNPGOMJCO },
+            |m: &mut LockRelicCsReq| { &mut m.IEMNPGOMJCO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LockRelicCsReq>(
             "LockRelicCsReq",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for LockRelicCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.IEMNPGOMJCO = is.read_bool()?;
+                8 => {
+                    self.OAHNBDDIAJL = is.read_bool()?;
                 },
-                34 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.KGEFHOECMMN)?;
                 },
-                32 => {
+                80 => {
                     self.KGEFHOECMMN.push(is.read_uint32()?);
                 },
-                64 => {
-                    self.OAHNBDDIAJL = is.read_bool()?;
+                40 => {
+                    self.IEMNPGOMJCO = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,11 +110,11 @@ impl ::protobuf::Message for LockRelicCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IEMNPGOMJCO != false {
+        if self.OAHNBDDIAJL != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.KGEFHOECMMN);
-        if self.OAHNBDDIAJL != false {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.KGEFHOECMMN);
+        if self.IEMNPGOMJCO != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -123,12 +123,12 @@ impl ::protobuf::Message for LockRelicCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IEMNPGOMJCO != false {
-            os.write_bool(14, self.IEMNPGOMJCO)?;
-        }
-        os.write_repeated_packed_uint32(4, &self.KGEFHOECMMN)?;
         if self.OAHNBDDIAJL != false {
-            os.write_bool(8, self.OAHNBDDIAJL)?;
+            os.write_bool(1, self.OAHNBDDIAJL)?;
+        }
+        os.write_repeated_packed_uint32(10, &self.KGEFHOECMMN)?;
+        if self.IEMNPGOMJCO != false {
+            os.write_bool(5, self.IEMNPGOMJCO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -147,17 +147,17 @@ impl ::protobuf::Message for LockRelicCsReq {
     }
 
     fn clear(&mut self) {
-        self.IEMNPGOMJCO = false;
-        self.KGEFHOECMMN.clear();
         self.OAHNBDDIAJL = false;
+        self.KGEFHOECMMN.clear();
+        self.IEMNPGOMJCO = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LockRelicCsReq {
         static instance: LockRelicCsReq = LockRelicCsReq {
-            IEMNPGOMJCO: false,
-            KGEFHOECMMN: ::std::vec::Vec::new(),
             OAHNBDDIAJL: false,
+            KGEFHOECMMN: ::std::vec::Vec::new(),
+            IEMNPGOMJCO: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -182,10 +182,10 @@ impl ::protobuf::reflect::ProtobufValue for LockRelicCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14LockRelicCsReq.proto\"v\n\x0eLockRelicCsReq\x12\x20\n\x0bIEMNPGOMJ\
-    CO\x18\x0e\x20\x01(\x08R\x0bIEMNPGOMJCO\x12\x20\n\x0bKGEFHOECMMN\x18\x04\
-    \x20\x03(\rR\x0bKGEFHOECMMN\x12\x20\n\x0bOAHNBDDIAJL\x18\x08\x20\x01(\
-    \x08R\x0bOAHNBDDIAJLb\x06proto3\
+    \n\x14LockRelicCsReq.proto\"v\n\x0eLockRelicCsReq\x12\x20\n\x0bOAHNBDDIA\
+    JL\x18\x01\x20\x01(\x08R\x0bOAHNBDDIAJL\x12\x20\n\x0bKGEFHOECMMN\x18\n\
+    \x20\x03(\rR\x0bKGEFHOECMMN\x12\x20\n\x0bIEMNPGOMJCO\x18\x05\x20\x01(\
+    \x08R\x0bIEMNPGOMJCOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

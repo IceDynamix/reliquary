@@ -30,10 +30,10 @@ pub struct CGCONJFFFBB {
     // message fields
     // @@protoc_insertion_point(field:CGCONJFFFBB.FODPDMPBAND)
     pub FODPDMPBAND: ::protobuf::MessageField<super::HBCINIKPAFI::HBCINIKPAFI>,
-    // @@protoc_insertion_point(field:CGCONJFFFBB.LKLLMPOKOGH)
-    pub LKLLMPOKOGH: bool,
     // @@protoc_insertion_point(field:CGCONJFFFBB.HAFCKONEHFM)
     pub HAFCKONEHFM: u32,
+    // @@protoc_insertion_point(field:CGCONJFFFBB.LKLLMPOKOGH)
+    pub LKLLMPOKOGH: bool,
     // special fields
     // @@protoc_insertion_point(special_field:CGCONJFFFBB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl CGCONJFFFBB {
             |m: &mut CGCONJFFFBB| { &mut m.FODPDMPBAND },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LKLLMPOKOGH",
-            |m: &CGCONJFFFBB| { &m.LKLLMPOKOGH },
-            |m: &mut CGCONJFFFBB| { &mut m.LKLLMPOKOGH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HAFCKONEHFM",
             |m: &CGCONJFFFBB| { &m.HAFCKONEHFM },
             |m: &mut CGCONJFFFBB| { &mut m.HAFCKONEHFM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LKLLMPOKOGH",
+            |m: &CGCONJFFFBB| { &m.LKLLMPOKOGH },
+            |m: &mut CGCONJFFFBB| { &mut m.LKLLMPOKOGH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CGCONJFFFBB>(
             "CGCONJFFFBB",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for CGCONJFFFBB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FODPDMPBAND)?;
                 },
-                80 => {
-                    self.LKLLMPOKOGH = is.read_bool()?;
-                },
-                72 => {
+                56 => {
                     self.HAFCKONEHFM = is.read_uint32()?;
+                },
+                120 => {
+                    self.LKLLMPOKOGH = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,11 +111,11 @@ impl ::protobuf::Message for CGCONJFFFBB {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.HAFCKONEHFM != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.HAFCKONEHFM);
+        }
         if self.LKLLMPOKOGH != false {
             my_size += 1 + 1;
-        }
-        if self.HAFCKONEHFM != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.HAFCKONEHFM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for CGCONJFFFBB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.FODPDMPBAND.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        }
-        if self.LKLLMPOKOGH != false {
-            os.write_bool(10, self.LKLLMPOKOGH)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         if self.HAFCKONEHFM != 0 {
-            os.write_uint32(9, self.HAFCKONEHFM)?;
+            os.write_uint32(7, self.HAFCKONEHFM)?;
+        }
+        if self.LKLLMPOKOGH != false {
+            os.write_bool(15, self.LKLLMPOKOGH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for CGCONJFFFBB {
 
     fn clear(&mut self) {
         self.FODPDMPBAND.clear();
-        self.LKLLMPOKOGH = false;
         self.HAFCKONEHFM = 0;
+        self.LKLLMPOKOGH = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CGCONJFFFBB {
         static instance: CGCONJFFFBB = CGCONJFFFBB {
             FODPDMPBAND: ::protobuf::MessageField::none(),
-            LKLLMPOKOGH: false,
             HAFCKONEHFM: 0,
+            LKLLMPOKOGH: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for CGCONJFFFBB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CGCONJFFFBB.proto\x1a\x11HBCINIKPAFI.proto\"\x81\x01\n\x0bCGCONJFF\
-    FBB\x12.\n\x0bFODPDMPBAND\x18\x03\x20\x01(\x0b2\x0c.HBCINIKPAFIR\x0bFODP\
-    DMPBAND\x12\x20\n\x0bLKLLMPOKOGH\x18\n\x20\x01(\x08R\x0bLKLLMPOKOGH\x12\
-    \x20\n\x0bHAFCKONEHFM\x18\t\x20\x01(\rR\x0bHAFCKONEHFMb\x06proto3\
+    FBB\x12.\n\x0bFODPDMPBAND\x18\r\x20\x01(\x0b2\x0c.HBCINIKPAFIR\x0bFODPDM\
+    PBAND\x12\x20\n\x0bHAFCKONEHFM\x18\x07\x20\x01(\rR\x0bHAFCKONEHFM\x12\
+    \x20\n\x0bLKLLMPOKOGH\x18\x0f\x20\x01(\x08R\x0bLKLLMPOKOGHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

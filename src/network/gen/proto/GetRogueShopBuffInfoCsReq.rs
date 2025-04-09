@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetRogueShopBuffInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                72 => {
                     self.PDJGMANJMAK = is.read_uint32()?;
                 },
-                24 => {
+                88 => {
                     self.PUNK_LORD_OPERATION_REFRESH = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for GetRogueShopBuffInfoCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PDJGMANJMAK != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.PDJGMANJMAK);
+            my_size += ::protobuf::rt::uint32_size(9, self.PDJGMANJMAK);
         }
         if self.PUNK_LORD_OPERATION_REFRESH != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GetRogueShopBuffInfoCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PDJGMANJMAK != 0 {
-            os.write_uint32(1, self.PDJGMANJMAK)?;
+            os.write_uint32(9, self.PDJGMANJMAK)?;
         }
         if self.PUNK_LORD_OPERATION_REFRESH != false {
-            os.write_bool(3, self.PUNK_LORD_OPERATION_REFRESH)?;
+            os.write_bool(11, self.PUNK_LORD_OPERATION_REFRESH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for GetRogueShopBuffInfoCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fGetRogueShopBuffInfoCsReq.proto\"|\n\x19GetRogueShopBuffInfoCsReq\
-    \x12\x20\n\x0bPDJGMANJMAK\x18\x01\x20\x01(\rR\x0bPDJGMANJMAK\x12=\n\x1bP\
-    UNK_LORD_OPERATION_REFRESH\x18\x03\x20\x01(\x08R\x18PUNKLORDOPERATIONREF\
-    RESHb\x06proto3\
+    \x12\x20\n\x0bPDJGMANJMAK\x18\t\x20\x01(\rR\x0bPDJGMANJMAK\x12=\n\x1bPUN\
+    K_LORD_OPERATION_REFRESH\x18\x0b\x20\x01(\x08R\x18PUNKLORDOPERATIONREFRE\
+    SHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

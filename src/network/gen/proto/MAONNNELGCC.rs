@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MAONNNELGCC {
     // message fields
-    // @@protoc_insertion_point(field:MAONNNELGCC.MIHLFGCGKNO)
-    pub MIHLFGCGKNO: u32,
-    // @@protoc_insertion_point(field:MAONNNELGCC.ALJLKAOELDP)
-    pub ALJLKAOELDP: u32,
     // @@protoc_insertion_point(field:MAONNNELGCC.BOJBPOELFCI)
     pub BOJBPOELFCI: ::protobuf::MessageField<super::FPDFCGKIILE::FPDFCGKIILE>,
+    // @@protoc_insertion_point(field:MAONNNELGCC.ALJLKAOELDP)
+    pub ALJLKAOELDP: u32,
+    // @@protoc_insertion_point(field:MAONNNELGCC.MIHLFGCGKNO)
+    pub MIHLFGCGKNO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MAONNNELGCC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl MAONNNELGCC {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MIHLFGCGKNO",
-            |m: &MAONNNELGCC| { &m.MIHLFGCGKNO },
-            |m: &mut MAONNNELGCC| { &mut m.MIHLFGCGKNO },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FPDFCGKIILE::FPDFCGKIILE>(
+            "BOJBPOELFCI",
+            |m: &MAONNNELGCC| { &m.BOJBPOELFCI },
+            |m: &mut MAONNNELGCC| { &mut m.BOJBPOELFCI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ALJLKAOELDP",
             |m: &MAONNNELGCC| { &m.ALJLKAOELDP },
             |m: &mut MAONNNELGCC| { &mut m.ALJLKAOELDP },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FPDFCGKIILE::FPDFCGKIILE>(
-            "BOJBPOELFCI",
-            |m: &MAONNNELGCC| { &m.BOJBPOELFCI },
-            |m: &mut MAONNNELGCC| { &mut m.BOJBPOELFCI },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MIHLFGCGKNO",
+            |m: &MAONNNELGCC| { &m.MIHLFGCGKNO },
+            |m: &mut MAONNNELGCC| { &mut m.MIHLFGCGKNO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MAONNNELGCC>(
             "MAONNNELGCC",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for MAONNNELGCC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.MIHLFGCGKNO = is.read_uint32()?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BOJBPOELFCI)?;
                 },
-                112 => {
+                88 => {
                     self.ALJLKAOELDP = is.read_uint32()?;
                 },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BOJBPOELFCI)?;
+                24 => {
+                    self.MIHLFGCGKNO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for MAONNNELGCC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MIHLFGCGKNO != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.MIHLFGCGKNO);
-        }
-        if self.ALJLKAOELDP != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.ALJLKAOELDP);
-        }
         if let Some(v) = self.BOJBPOELFCI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.ALJLKAOELDP != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.ALJLKAOELDP);
+        }
+        if self.MIHLFGCGKNO != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.MIHLFGCGKNO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for MAONNNELGCC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MIHLFGCGKNO != 0 {
-            os.write_uint32(1, self.MIHLFGCGKNO)?;
+        if let Some(v) = self.BOJBPOELFCI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         if self.ALJLKAOELDP != 0 {
-            os.write_uint32(14, self.ALJLKAOELDP)?;
+            os.write_uint32(11, self.ALJLKAOELDP)?;
         }
-        if let Some(v) = self.BOJBPOELFCI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if self.MIHLFGCGKNO != 0 {
+            os.write_uint32(3, self.MIHLFGCGKNO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for MAONNNELGCC {
     }
 
     fn clear(&mut self) {
-        self.MIHLFGCGKNO = 0;
-        self.ALJLKAOELDP = 0;
         self.BOJBPOELFCI.clear();
+        self.ALJLKAOELDP = 0;
+        self.MIHLFGCGKNO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MAONNNELGCC {
         static instance: MAONNNELGCC = MAONNNELGCC {
-            MIHLFGCGKNO: 0,
-            ALJLKAOELDP: 0,
             BOJBPOELFCI: ::protobuf::MessageField::none(),
+            ALJLKAOELDP: 0,
+            MIHLFGCGKNO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for MAONNNELGCC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MAONNNELGCC.proto\x1a\x11FPDFCGKIILE.proto\"\x81\x01\n\x0bMAONNNEL\
-    GCC\x12\x20\n\x0bMIHLFGCGKNO\x18\x01\x20\x01(\rR\x0bMIHLFGCGKNO\x12\x20\
-    \n\x0bALJLKAOELDP\x18\x0e\x20\x01(\rR\x0bALJLKAOELDP\x12.\n\x0bBOJBPOELF\
-    CI\x18\x0c\x20\x01(\x0b2\x0c.FPDFCGKIILER\x0bBOJBPOELFCIb\x06proto3\
+    GCC\x12.\n\x0bBOJBPOELFCI\x18\x08\x20\x01(\x0b2\x0c.FPDFCGKIILER\x0bBOJB\
+    POELFCI\x12\x20\n\x0bALJLKAOELDP\x18\x0b\x20\x01(\rR\x0bALJLKAOELDP\x12\
+    \x20\n\x0bMIHLFGCGKNO\x18\x03\x20\x01(\rR\x0bMIHLFGCGKNOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

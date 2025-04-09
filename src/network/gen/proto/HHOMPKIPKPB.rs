@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HHOMPKIPKPB {
     // message fields
-    // @@protoc_insertion_point(field:HHOMPKIPKPB.EDHEPFAMIEC)
-    pub EDHEPFAMIEC: u32,
     // @@protoc_insertion_point(field:HHOMPKIPKPB.EJJCCGGCNMK)
     pub EJJCCGGCNMK: ::std::vec::Vec<u8>,
+    // @@protoc_insertion_point(field:HHOMPKIPKPB.EDHEPFAMIEC)
+    pub EDHEPFAMIEC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HHOMPKIPKPB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl HHOMPKIPKPB {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EDHEPFAMIEC",
-            |m: &HHOMPKIPKPB| { &m.EDHEPFAMIEC },
-            |m: &mut HHOMPKIPKPB| { &mut m.EDHEPFAMIEC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EJJCCGGCNMK",
             |m: &HHOMPKIPKPB| { &m.EJJCCGGCNMK },
             |m: &mut HHOMPKIPKPB| { &mut m.EJJCCGGCNMK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EDHEPFAMIEC",
+            |m: &HHOMPKIPKPB| { &m.EDHEPFAMIEC },
+            |m: &mut HHOMPKIPKPB| { &mut m.EDHEPFAMIEC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HHOMPKIPKPB>(
             "HHOMPKIPKPB",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for HHOMPKIPKPB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.EDHEPFAMIEC = is.read_uint32()?;
-                },
-                114 => {
+                50 => {
                     self.EJJCCGGCNMK = is.read_bytes()?;
+                },
+                72 => {
+                    self.EDHEPFAMIEC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for HHOMPKIPKPB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EDHEPFAMIEC != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.EDHEPFAMIEC);
-        }
         if !self.EJJCCGGCNMK.is_empty() {
-            my_size += ::protobuf::rt::bytes_size(14, &self.EJJCCGGCNMK);
+            my_size += ::protobuf::rt::bytes_size(6, &self.EJJCCGGCNMK);
+        }
+        if self.EDHEPFAMIEC != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.EDHEPFAMIEC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for HHOMPKIPKPB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EDHEPFAMIEC != 0 {
-            os.write_uint32(15, self.EDHEPFAMIEC)?;
-        }
         if !self.EJJCCGGCNMK.is_empty() {
-            os.write_bytes(14, &self.EJJCCGGCNMK)?;
+            os.write_bytes(6, &self.EJJCCGGCNMK)?;
+        }
+        if self.EDHEPFAMIEC != 0 {
+            os.write_uint32(9, self.EDHEPFAMIEC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for HHOMPKIPKPB {
     }
 
     fn clear(&mut self) {
-        self.EDHEPFAMIEC = 0;
         self.EJJCCGGCNMK.clear();
+        self.EDHEPFAMIEC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HHOMPKIPKPB {
         static instance: HHOMPKIPKPB = HHOMPKIPKPB {
-            EDHEPFAMIEC: 0,
             EJJCCGGCNMK: ::std::vec::Vec::new(),
+            EDHEPFAMIEC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for HHOMPKIPKPB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HHOMPKIPKPB.proto\"Q\n\x0bHHOMPKIPKPB\x12\x20\n\x0bEDHEPFAMIEC\x18\
-    \x0f\x20\x01(\rR\x0bEDHEPFAMIEC\x12\x20\n\x0bEJJCCGGCNMK\x18\x0e\x20\x01\
-    (\x0cR\x0bEJJCCGGCNMKb\x06proto3\
+    \n\x11HHOMPKIPKPB.proto\"Q\n\x0bHHOMPKIPKPB\x12\x20\n\x0bEJJCCGGCNMK\x18\
+    \x06\x20\x01(\x0cR\x0bEJJCCGGCNMK\x12\x20\n\x0bEDHEPFAMIEC\x18\t\x20\x01\
+    (\rR\x0bEDHEPFAMIECb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

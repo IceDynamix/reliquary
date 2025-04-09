@@ -29,30 +29,30 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdMusicRhythmType {
     // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.CmdMusicRhythmTypeNone)
     CmdMusicRhythmTypeNone = 0,
+    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.CmdMusicRhythmSaveSongConfigDataCsReq)
+    CmdMusicRhythmSaveSongConfigDataCsReq = 7574,
+    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.CmdMusicRhythmUnlockSongSfxScNotify)
+    CmdMusicRhythmUnlockSongSfxScNotify = 7594,
+    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.CmdMusicRhythmStartLevelCsReq)
+    CmdMusicRhythmStartLevelCsReq = 7586,
     // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.CmdMusicRhythmSaveSongConfigDataScRsp)
-    CmdMusicRhythmSaveSongConfigDataScRsp = 7595,
-    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.CmdMusicRhythmUnlockTrackScNotify)
-    CmdMusicRhythmUnlockTrackScNotify = 7591,
+    CmdMusicRhythmSaveSongConfigDataScRsp = 7589,
+    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.CmdMusicRhythmFinishLevelScRsp)
+    CmdMusicRhythmFinishLevelScRsp = 7600,
     // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.CmdMusicRhythmFinishLevelCsReq)
     CmdMusicRhythmFinishLevelCsReq = 7585,
-    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.CmdMusicRhythmMaxDifficultyLevelsUnlockNotify)
-    CmdMusicRhythmMaxDifficultyLevelsUnlockNotify = 7592,
-    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.CmdMusicRhythmUnlockSongSfxScNotify)
-    CmdMusicRhythmUnlockSongSfxScNotify = 7578,
-    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.CmdMusicRhythmUnlockSongNotify)
-    CmdMusicRhythmUnlockSongNotify = 7596,
-    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.CmdMusicRhythmDataCsReq)
-    CmdMusicRhythmDataCsReq = 7583,
     // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.CmdMusicRhythmDataScRsp)
-    CmdMusicRhythmDataScRsp = 7586,
-    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.CmdMusicRhythmSaveSongConfigDataCsReq)
-    CmdMusicRhythmSaveSongConfigDataCsReq = 7572,
-    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.CmdMusicRhythmStartLevelCsReq)
-    CmdMusicRhythmStartLevelCsReq = 7598,
+    CmdMusicRhythmDataScRsp = 7598,
+    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.CmdMusicRhythmUnlockSongNotify)
+    CmdMusicRhythmUnlockSongNotify = 7592,
+    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.CmdMusicRhythmMaxDifficultyLevelsUnlockNotify)
+    CmdMusicRhythmMaxDifficultyLevelsUnlockNotify = 7575,
     // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.CmdMusicRhythmStartLevelScRsp)
-    CmdMusicRhythmStartLevelScRsp = 7571,
-    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.CmdMusicRhythmFinishLevelScRsp)
-    CmdMusicRhythmFinishLevelScRsp = 7593,
+    CmdMusicRhythmStartLevelScRsp = 7581,
+    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.CmdMusicRhythmDataCsReq)
+    CmdMusicRhythmDataCsReq = 7573,
+    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.CmdMusicRhythmUnlockTrackScNotify)
+    CmdMusicRhythmUnlockTrackScNotify = 7577,
 }
 
 impl ::protobuf::Enum for CmdMusicRhythmType {
@@ -65,18 +65,18 @@ impl ::protobuf::Enum for CmdMusicRhythmType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdMusicRhythmType> {
         match value {
             0 => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmTypeNone),
-            7595 => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmSaveSongConfigDataScRsp),
-            7591 => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmUnlockTrackScNotify),
+            7574 => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmSaveSongConfigDataCsReq),
+            7594 => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmUnlockSongSfxScNotify),
+            7586 => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmStartLevelCsReq),
+            7589 => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmSaveSongConfigDataScRsp),
+            7600 => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmFinishLevelScRsp),
             7585 => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmFinishLevelCsReq),
-            7592 => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmMaxDifficultyLevelsUnlockNotify),
-            7578 => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmUnlockSongSfxScNotify),
-            7596 => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmUnlockSongNotify),
-            7583 => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmDataCsReq),
-            7586 => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmDataScRsp),
-            7572 => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmSaveSongConfigDataCsReq),
-            7598 => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmStartLevelCsReq),
-            7571 => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmStartLevelScRsp),
-            7593 => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmFinishLevelScRsp),
+            7598 => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmDataScRsp),
+            7592 => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmUnlockSongNotify),
+            7575 => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmMaxDifficultyLevelsUnlockNotify),
+            7581 => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmStartLevelScRsp),
+            7573 => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmDataCsReq),
+            7577 => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmUnlockTrackScNotify),
             _ => ::std::option::Option::None
         }
     }
@@ -84,36 +84,36 @@ impl ::protobuf::Enum for CmdMusicRhythmType {
     fn from_str(str: &str) -> ::std::option::Option<CmdMusicRhythmType> {
         match str {
             "CmdMusicRhythmTypeNone" => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmTypeNone),
-            "CmdMusicRhythmSaveSongConfigDataScRsp" => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmSaveSongConfigDataScRsp),
-            "CmdMusicRhythmUnlockTrackScNotify" => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmUnlockTrackScNotify),
-            "CmdMusicRhythmFinishLevelCsReq" => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmFinishLevelCsReq),
-            "CmdMusicRhythmMaxDifficultyLevelsUnlockNotify" => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmMaxDifficultyLevelsUnlockNotify),
-            "CmdMusicRhythmUnlockSongSfxScNotify" => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmUnlockSongSfxScNotify),
-            "CmdMusicRhythmUnlockSongNotify" => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmUnlockSongNotify),
-            "CmdMusicRhythmDataCsReq" => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmDataCsReq),
-            "CmdMusicRhythmDataScRsp" => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmDataScRsp),
             "CmdMusicRhythmSaveSongConfigDataCsReq" => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmSaveSongConfigDataCsReq),
+            "CmdMusicRhythmUnlockSongSfxScNotify" => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmUnlockSongSfxScNotify),
             "CmdMusicRhythmStartLevelCsReq" => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmStartLevelCsReq),
-            "CmdMusicRhythmStartLevelScRsp" => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmStartLevelScRsp),
+            "CmdMusicRhythmSaveSongConfigDataScRsp" => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmSaveSongConfigDataScRsp),
             "CmdMusicRhythmFinishLevelScRsp" => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmFinishLevelScRsp),
+            "CmdMusicRhythmFinishLevelCsReq" => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmFinishLevelCsReq),
+            "CmdMusicRhythmDataScRsp" => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmDataScRsp),
+            "CmdMusicRhythmUnlockSongNotify" => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmUnlockSongNotify),
+            "CmdMusicRhythmMaxDifficultyLevelsUnlockNotify" => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmMaxDifficultyLevelsUnlockNotify),
+            "CmdMusicRhythmStartLevelScRsp" => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmStartLevelScRsp),
+            "CmdMusicRhythmDataCsReq" => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmDataCsReq),
+            "CmdMusicRhythmUnlockTrackScNotify" => ::std::option::Option::Some(CmdMusicRhythmType::CmdMusicRhythmUnlockTrackScNotify),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdMusicRhythmType] = &[
         CmdMusicRhythmType::CmdMusicRhythmTypeNone,
-        CmdMusicRhythmType::CmdMusicRhythmSaveSongConfigDataScRsp,
-        CmdMusicRhythmType::CmdMusicRhythmUnlockTrackScNotify,
-        CmdMusicRhythmType::CmdMusicRhythmFinishLevelCsReq,
-        CmdMusicRhythmType::CmdMusicRhythmMaxDifficultyLevelsUnlockNotify,
-        CmdMusicRhythmType::CmdMusicRhythmUnlockSongSfxScNotify,
-        CmdMusicRhythmType::CmdMusicRhythmUnlockSongNotify,
-        CmdMusicRhythmType::CmdMusicRhythmDataCsReq,
-        CmdMusicRhythmType::CmdMusicRhythmDataScRsp,
         CmdMusicRhythmType::CmdMusicRhythmSaveSongConfigDataCsReq,
+        CmdMusicRhythmType::CmdMusicRhythmUnlockSongSfxScNotify,
         CmdMusicRhythmType::CmdMusicRhythmStartLevelCsReq,
-        CmdMusicRhythmType::CmdMusicRhythmStartLevelScRsp,
+        CmdMusicRhythmType::CmdMusicRhythmSaveSongConfigDataScRsp,
         CmdMusicRhythmType::CmdMusicRhythmFinishLevelScRsp,
+        CmdMusicRhythmType::CmdMusicRhythmFinishLevelCsReq,
+        CmdMusicRhythmType::CmdMusicRhythmDataScRsp,
+        CmdMusicRhythmType::CmdMusicRhythmUnlockSongNotify,
+        CmdMusicRhythmType::CmdMusicRhythmMaxDifficultyLevelsUnlockNotify,
+        CmdMusicRhythmType::CmdMusicRhythmStartLevelScRsp,
+        CmdMusicRhythmType::CmdMusicRhythmDataCsReq,
+        CmdMusicRhythmType::CmdMusicRhythmUnlockTrackScNotify,
     ];
 }
 
@@ -126,18 +126,18 @@ impl ::protobuf::EnumFull for CmdMusicRhythmType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdMusicRhythmType::CmdMusicRhythmTypeNone => 0,
-            CmdMusicRhythmType::CmdMusicRhythmSaveSongConfigDataScRsp => 1,
-            CmdMusicRhythmType::CmdMusicRhythmUnlockTrackScNotify => 2,
-            CmdMusicRhythmType::CmdMusicRhythmFinishLevelCsReq => 3,
-            CmdMusicRhythmType::CmdMusicRhythmMaxDifficultyLevelsUnlockNotify => 4,
-            CmdMusicRhythmType::CmdMusicRhythmUnlockSongSfxScNotify => 5,
-            CmdMusicRhythmType::CmdMusicRhythmUnlockSongNotify => 6,
-            CmdMusicRhythmType::CmdMusicRhythmDataCsReq => 7,
-            CmdMusicRhythmType::CmdMusicRhythmDataScRsp => 8,
-            CmdMusicRhythmType::CmdMusicRhythmSaveSongConfigDataCsReq => 9,
-            CmdMusicRhythmType::CmdMusicRhythmStartLevelCsReq => 10,
-            CmdMusicRhythmType::CmdMusicRhythmStartLevelScRsp => 11,
-            CmdMusicRhythmType::CmdMusicRhythmFinishLevelScRsp => 12,
+            CmdMusicRhythmType::CmdMusicRhythmSaveSongConfigDataCsReq => 1,
+            CmdMusicRhythmType::CmdMusicRhythmUnlockSongSfxScNotify => 2,
+            CmdMusicRhythmType::CmdMusicRhythmStartLevelCsReq => 3,
+            CmdMusicRhythmType::CmdMusicRhythmSaveSongConfigDataScRsp => 4,
+            CmdMusicRhythmType::CmdMusicRhythmFinishLevelScRsp => 5,
+            CmdMusicRhythmType::CmdMusicRhythmFinishLevelCsReq => 6,
+            CmdMusicRhythmType::CmdMusicRhythmDataScRsp => 7,
+            CmdMusicRhythmType::CmdMusicRhythmUnlockSongNotify => 8,
+            CmdMusicRhythmType::CmdMusicRhythmMaxDifficultyLevelsUnlockNotify => 9,
+            CmdMusicRhythmType::CmdMusicRhythmStartLevelScRsp => 10,
+            CmdMusicRhythmType::CmdMusicRhythmDataCsReq => 11,
+            CmdMusicRhythmType::CmdMusicRhythmUnlockTrackScNotify => 12,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -158,15 +158,15 @@ impl CmdMusicRhythmType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18CmdMusicRhythmType.proto*\x81\x04\n\x12CmdMusicRhythmType\x12\x1a\
     \n\x16CmdMusicRhythmTypeNone\x10\0\x12*\n%CmdMusicRhythmSaveSongConfigDa\
-    taScRsp\x10\xab;\x12&\n!CmdMusicRhythmUnlockTrackScNotify\x10\xa7;\x12#\
-    \n\x1eCmdMusicRhythmFinishLevelCsReq\x10\xa1;\x122\n-CmdMusicRhythmMaxDi\
-    fficultyLevelsUnlockNotify\x10\xa8;\x12(\n#CmdMusicRhythmUnlockSongSfxSc\
-    Notify\x10\x9a;\x12#\n\x1eCmdMusicRhythmUnlockSongNotify\x10\xac;\x12\
-    \x1c\n\x17CmdMusicRhythmDataCsReq\x10\x9f;\x12\x1c\n\x17CmdMusicRhythmDa\
-    taScRsp\x10\xa2;\x12*\n%CmdMusicRhythmSaveSongConfigDataCsReq\x10\x94;\
-    \x12\"\n\x1dCmdMusicRhythmStartLevelCsReq\x10\xae;\x12\"\n\x1dCmdMusicRh\
-    ythmStartLevelScRsp\x10\x93;\x12#\n\x1eCmdMusicRhythmFinishLevelScRsp\
-    \x10\xa9;b\x06proto3\
+    taCsReq\x10\x96;\x12(\n#CmdMusicRhythmUnlockSongSfxScNotify\x10\xaa;\x12\
+    \"\n\x1dCmdMusicRhythmStartLevelCsReq\x10\xa2;\x12*\n%CmdMusicRhythmSave\
+    SongConfigDataScRsp\x10\xa5;\x12#\n\x1eCmdMusicRhythmFinishLevelScRsp\
+    \x10\xb0;\x12#\n\x1eCmdMusicRhythmFinishLevelCsReq\x10\xa1;\x12\x1c\n\
+    \x17CmdMusicRhythmDataScRsp\x10\xae;\x12#\n\x1eCmdMusicRhythmUnlockSongN\
+    otify\x10\xa8;\x122\n-CmdMusicRhythmMaxDifficultyLevelsUnlockNotify\x10\
+    \x97;\x12\"\n\x1dCmdMusicRhythmStartLevelScRsp\x10\x9d;\x12\x1c\n\x17Cmd\
+    MusicRhythmDataCsReq\x10\x95;\x12&\n!CmdMusicRhythmUnlockTrackScNotify\
+    \x10\x99;b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

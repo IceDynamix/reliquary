@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyCheatDiceScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyCheatDiceScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:MonopolyCheatDiceScRsp.OCFHHDCBFBH)
     pub OCFHHDCBFBH: u32,
+    // @@protoc_insertion_point(field:MonopolyCheatDiceScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyCheatDiceScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl MonopolyCheatDiceScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &MonopolyCheatDiceScRsp| { &m.retcode },
-            |m: &mut MonopolyCheatDiceScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OCFHHDCBFBH",
             |m: &MonopolyCheatDiceScRsp| { &m.OCFHHDCBFBH },
             |m: &mut MonopolyCheatDiceScRsp| { &mut m.OCFHHDCBFBH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &MonopolyCheatDiceScRsp| { &m.retcode },
+            |m: &mut MonopolyCheatDiceScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyCheatDiceScRsp>(
             "MonopolyCheatDiceScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for MonopolyCheatDiceScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.retcode = is.read_uint32()?;
-                },
                 112 => {
                     self.OCFHHDCBFBH = is.read_uint32()?;
+                },
+                64 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for MonopolyCheatDiceScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
-        }
         if self.OCFHHDCBFBH != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.OCFHHDCBFBH);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for MonopolyCheatDiceScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
-        }
         if self.OCFHHDCBFBH != 0 {
             os.write_uint32(14, self.OCFHHDCBFBH)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(8, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for MonopolyCheatDiceScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.OCFHHDCBFBH = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyCheatDiceScRsp {
         static instance: MonopolyCheatDiceScRsp = MonopolyCheatDiceScRsp {
-            retcode: 0,
             OCFHHDCBFBH: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyCheatDiceScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cMonopolyCheatDiceScRsp.proto\"T\n\x16MonopolyCheatDiceScRsp\x12\
-    \x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcode\x12\x20\n\x0bOCFHHDCBFBH\
-    \x18\x0e\x20\x01(\rR\x0bOCFHHDCBFBHb\x06proto3\
+    \x20\n\x0bOCFHHDCBFBH\x18\x0e\x20\x01(\rR\x0bOCFHHDCBFBH\x12\x18\n\x07re\
+    tcode\x18\x08\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

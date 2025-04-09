@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RaidCollectionDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RaidCollectionDataScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:RaidCollectionDataScRsp.HFMLNLGIGHB)
     pub HFMLNLGIGHB: ::std::vec::Vec<super::ACONLFJEJOK::ACONLFJEJOK>,
+    // @@protoc_insertion_point(field:RaidCollectionDataScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RaidCollectionDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl RaidCollectionDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &RaidCollectionDataScRsp| { &m.retcode },
-            |m: &mut RaidCollectionDataScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "HFMLNLGIGHB",
             |m: &RaidCollectionDataScRsp| { &m.HFMLNLGIGHB },
             |m: &mut RaidCollectionDataScRsp| { &mut m.HFMLNLGIGHB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &RaidCollectionDataScRsp| { &m.retcode },
+            |m: &mut RaidCollectionDataScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RaidCollectionDataScRsp>(
             "RaidCollectionDataScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RaidCollectionDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                10 => {
+                106 => {
                     self.HFMLNLGIGHB.push(is.read_message()?);
+                },
+                56 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for RaidCollectionDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
-        }
         for value in &self.HFMLNLGIGHB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
-        }
         for v in &self.HFMLNLGIGHB {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
+        if self.retcode != 0 {
+            os.write_uint32(7, self.retcode)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for RaidCollectionDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.HFMLNLGIGHB.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RaidCollectionDataScRsp {
         static instance: RaidCollectionDataScRsp = RaidCollectionDataScRsp {
-            retcode: 0,
             HFMLNLGIGHB: ::std::vec::Vec::new(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for RaidCollectionDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dRaidCollectionDataScRsp.proto\x1a\x11ACONLFJEJOK.proto\"c\n\x17Rai\
-    dCollectionDataScRsp\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\
-    \x12.\n\x0bHFMLNLGIGHB\x18\x01\x20\x03(\x0b2\x0c.ACONLFJEJOKR\x0bHFMLNLG\
-    IGHBb\x06proto3\
+    dCollectionDataScRsp\x12.\n\x0bHFMLNLGIGHB\x18\r\x20\x03(\x0b2\x0c.ACONL\
+    FJEJOKR\x0bHFMLNLGIGHB\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retco\
+    deb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

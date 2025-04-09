@@ -30,16 +30,16 @@ pub struct NHBDDINFKOH {
     // message fields
     // @@protoc_insertion_point(field:NHBDDINFKOH.KBCDECDNEFM)
     pub KBCDECDNEFM: u32,
-    // @@protoc_insertion_point(field:NHBDDINFKOH.IEAGBPEMFLG)
-    pub IEAGBPEMFLG: i32,
-    // @@protoc_insertion_point(field:NHBDDINFKOH.LLJAEGOBHMP)
-    pub LLJAEGOBHMP: i32,
-    // @@protoc_insertion_point(field:NHBDDINFKOH.unique_id)
-    pub unique_id: u64,
     // @@protoc_insertion_point(field:NHBDDINFKOH.FILDLBJOMLD)
     pub FILDLBJOMLD: u32,
     // @@protoc_insertion_point(field:NHBDDINFKOH.IIMOPLCFHAH)
     pub IIMOPLCFHAH: u32,
+    // @@protoc_insertion_point(field:NHBDDINFKOH.IEAGBPEMFLG)
+    pub IEAGBPEMFLG: i32,
+    // @@protoc_insertion_point(field:NHBDDINFKOH.unique_id)
+    pub unique_id: u64,
+    // @@protoc_insertion_point(field:NHBDDINFKOH.LLJAEGOBHMP)
+    pub LLJAEGOBHMP: i32,
     // special fields
     // @@protoc_insertion_point(special_field:NHBDDINFKOH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,21 +65,6 @@ impl NHBDDINFKOH {
             |m: &mut NHBDDINFKOH| { &mut m.KBCDECDNEFM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IEAGBPEMFLG",
-            |m: &NHBDDINFKOH| { &m.IEAGBPEMFLG },
-            |m: &mut NHBDDINFKOH| { &mut m.IEAGBPEMFLG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LLJAEGOBHMP",
-            |m: &NHBDDINFKOH| { &m.LLJAEGOBHMP },
-            |m: &mut NHBDDINFKOH| { &mut m.LLJAEGOBHMP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unique_id",
-            |m: &NHBDDINFKOH| { &m.unique_id },
-            |m: &mut NHBDDINFKOH| { &mut m.unique_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FILDLBJOMLD",
             |m: &NHBDDINFKOH| { &m.FILDLBJOMLD },
             |m: &mut NHBDDINFKOH| { &mut m.FILDLBJOMLD },
@@ -88,6 +73,21 @@ impl NHBDDINFKOH {
             "IIMOPLCFHAH",
             |m: &NHBDDINFKOH| { &m.IIMOPLCFHAH },
             |m: &mut NHBDDINFKOH| { &mut m.IIMOPLCFHAH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IEAGBPEMFLG",
+            |m: &NHBDDINFKOH| { &m.IEAGBPEMFLG },
+            |m: &mut NHBDDINFKOH| { &mut m.IEAGBPEMFLG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "unique_id",
+            |m: &NHBDDINFKOH| { &m.unique_id },
+            |m: &mut NHBDDINFKOH| { &mut m.unique_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LLJAEGOBHMP",
+            |m: &NHBDDINFKOH| { &m.LLJAEGOBHMP },
+            |m: &mut NHBDDINFKOH| { &mut m.LLJAEGOBHMP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NHBDDINFKOH>(
             "NHBDDINFKOH",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for NHBDDINFKOH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                16 => {
                     self.KBCDECDNEFM = is.read_uint32()?;
                 },
-                8 => {
-                    self.IEAGBPEMFLG = is.read_int32()?;
-                },
-                104 => {
-                    self.LLJAEGOBHMP = is.read_int32()?;
-                },
-                96 => {
-                    self.unique_id = is.read_uint64()?;
-                },
-                72 => {
+                88 => {
                     self.FILDLBJOMLD = is.read_uint32()?;
                 },
                 48 => {
                     self.IIMOPLCFHAH = is.read_uint32()?;
+                },
+                64 => {
+                    self.IEAGBPEMFLG = is.read_int32()?;
+                },
+                80 => {
+                    self.unique_id = is.read_uint64()?;
+                },
+                96 => {
+                    self.LLJAEGOBHMP = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -138,22 +138,22 @@ impl ::protobuf::Message for NHBDDINFKOH {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.KBCDECDNEFM != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.KBCDECDNEFM);
-        }
-        if self.IEAGBPEMFLG != 0 {
-            my_size += ::protobuf::rt::int32_size(1, self.IEAGBPEMFLG);
-        }
-        if self.LLJAEGOBHMP != 0 {
-            my_size += ::protobuf::rt::int32_size(13, self.LLJAEGOBHMP);
-        }
-        if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint64_size(12, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.KBCDECDNEFM);
         }
         if self.FILDLBJOMLD != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.FILDLBJOMLD);
+            my_size += ::protobuf::rt::uint32_size(11, self.FILDLBJOMLD);
         }
         if self.IIMOPLCFHAH != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.IIMOPLCFHAH);
+        }
+        if self.IEAGBPEMFLG != 0 {
+            my_size += ::protobuf::rt::int32_size(8, self.IEAGBPEMFLG);
+        }
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::uint64_size(10, self.unique_id);
+        }
+        if self.LLJAEGOBHMP != 0 {
+            my_size += ::protobuf::rt::int32_size(12, self.LLJAEGOBHMP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,22 +162,22 @@ impl ::protobuf::Message for NHBDDINFKOH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KBCDECDNEFM != 0 {
-            os.write_uint32(8, self.KBCDECDNEFM)?;
-        }
-        if self.IEAGBPEMFLG != 0 {
-            os.write_int32(1, self.IEAGBPEMFLG)?;
-        }
-        if self.LLJAEGOBHMP != 0 {
-            os.write_int32(13, self.LLJAEGOBHMP)?;
-        }
-        if self.unique_id != 0 {
-            os.write_uint64(12, self.unique_id)?;
+            os.write_uint32(2, self.KBCDECDNEFM)?;
         }
         if self.FILDLBJOMLD != 0 {
-            os.write_uint32(9, self.FILDLBJOMLD)?;
+            os.write_uint32(11, self.FILDLBJOMLD)?;
         }
         if self.IIMOPLCFHAH != 0 {
             os.write_uint32(6, self.IIMOPLCFHAH)?;
+        }
+        if self.IEAGBPEMFLG != 0 {
+            os.write_int32(8, self.IEAGBPEMFLG)?;
+        }
+        if self.unique_id != 0 {
+            os.write_uint64(10, self.unique_id)?;
+        }
+        if self.LLJAEGOBHMP != 0 {
+            os.write_int32(12, self.LLJAEGOBHMP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,22 +197,22 @@ impl ::protobuf::Message for NHBDDINFKOH {
 
     fn clear(&mut self) {
         self.KBCDECDNEFM = 0;
-        self.IEAGBPEMFLG = 0;
-        self.LLJAEGOBHMP = 0;
-        self.unique_id = 0;
         self.FILDLBJOMLD = 0;
         self.IIMOPLCFHAH = 0;
+        self.IEAGBPEMFLG = 0;
+        self.unique_id = 0;
+        self.LLJAEGOBHMP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NHBDDINFKOH {
         static instance: NHBDDINFKOH = NHBDDINFKOH {
             KBCDECDNEFM: 0,
-            IEAGBPEMFLG: 0,
-            LLJAEGOBHMP: 0,
-            unique_id: 0,
             FILDLBJOMLD: 0,
             IIMOPLCFHAH: 0,
+            IEAGBPEMFLG: 0,
+            unique_id: 0,
+            LLJAEGOBHMP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -238,11 +238,11 @@ impl ::protobuf::reflect::ProtobufValue for NHBDDINFKOH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NHBDDINFKOH.proto\"\xd4\x01\n\x0bNHBDDINFKOH\x12\x20\n\x0bKBCDECDN\
-    EFM\x18\x08\x20\x01(\rR\x0bKBCDECDNEFM\x12\x20\n\x0bIEAGBPEMFLG\x18\x01\
-    \x20\x01(\x05R\x0bIEAGBPEMFLG\x12\x20\n\x0bLLJAEGOBHMP\x18\r\x20\x01(\
-    \x05R\x0bLLJAEGOBHMP\x12\x1b\n\tunique_id\x18\x0c\x20\x01(\x04R\x08uniqu\
-    eId\x12\x20\n\x0bFILDLBJOMLD\x18\t\x20\x01(\rR\x0bFILDLBJOMLD\x12\x20\n\
-    \x0bIIMOPLCFHAH\x18\x06\x20\x01(\rR\x0bIIMOPLCFHAHb\x06proto3\
+    EFM\x18\x02\x20\x01(\rR\x0bKBCDECDNEFM\x12\x20\n\x0bFILDLBJOMLD\x18\x0b\
+    \x20\x01(\rR\x0bFILDLBJOMLD\x12\x20\n\x0bIIMOPLCFHAH\x18\x06\x20\x01(\rR\
+    \x0bIIMOPLCFHAH\x12\x20\n\x0bIEAGBPEMFLG\x18\x08\x20\x01(\x05R\x0bIEAGBP\
+    EMFLG\x12\x1b\n\tunique_id\x18\n\x20\x01(\x04R\x08uniqueId\x12\x20\n\x0b\
+    LLJAEGOBHMP\x18\x0c\x20\x01(\x05R\x0bLLJAEGOBHMPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

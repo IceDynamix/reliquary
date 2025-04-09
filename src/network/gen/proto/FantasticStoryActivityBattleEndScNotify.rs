@@ -86,10 +86,10 @@ impl ::protobuf::Message for FantasticStoryActivityBattleEndScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                40 => {
                     self.BEJCALDILNC = is.read_uint32()?;
                 },
-                24 => {
+                80 => {
                     self.BOKLGJNLFFP = is.read_uint32()?;
                 },
                 48 => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for FantasticStoryActivityBattleEndScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.BEJCALDILNC != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.BEJCALDILNC);
+            my_size += ::protobuf::rt::uint32_size(5, self.BEJCALDILNC);
         }
         if self.BOKLGJNLFFP != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.BOKLGJNLFFP);
+            my_size += ::protobuf::rt::uint32_size(10, self.BOKLGJNLFFP);
         }
         if self.PKKLPBBNNCE != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.PKKLPBBNNCE);
@@ -123,10 +123,10 @@ impl ::protobuf::Message for FantasticStoryActivityBattleEndScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BEJCALDILNC != 0 {
-            os.write_uint32(9, self.BEJCALDILNC)?;
+            os.write_uint32(5, self.BEJCALDILNC)?;
         }
         if self.BOKLGJNLFFP != 0 {
-            os.write_uint32(3, self.BOKLGJNLFFP)?;
+            os.write_uint32(10, self.BOKLGJNLFFP)?;
         }
         if self.PKKLPBBNNCE != 0 {
             os.write_uint32(6, self.PKKLPBBNNCE)?;
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for FantasticStoryActivityBattleEndScNot
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n-FantasticStoryActivityBattleEndScNotify.proto\"\x8f\x01\n'FantasticSt\
-    oryActivityBattleEndScNotify\x12\x20\n\x0bBEJCALDILNC\x18\t\x20\x01(\rR\
-    \x0bBEJCALDILNC\x12\x20\n\x0bBOKLGJNLFFP\x18\x03\x20\x01(\rR\x0bBOKLGJNL\
-    FFP\x12\x20\n\x0bPKKLPBBNNCE\x18\x06\x20\x01(\rR\x0bPKKLPBBNNCEb\x06prot\
-    o3\
+    oryActivityBattleEndScNotify\x12\x20\n\x0bBEJCALDILNC\x18\x05\x20\x01(\r\
+    R\x0bBEJCALDILNC\x12\x20\n\x0bBOKLGJNLFFP\x18\n\x20\x01(\rR\x0bBOKLGJNLF\
+    FP\x12\x20\n\x0bPKKLPBBNNCE\x18\x06\x20\x01(\rR\x0bPKKLPBBNNCEb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

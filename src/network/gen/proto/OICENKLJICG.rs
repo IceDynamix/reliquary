@@ -79,10 +79,10 @@ impl ::protobuf::Message for OICENKLJICG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                48 => {
                     self.FBKEKCGELBE = is.read_bool()?;
                 },
-                80 => {
+                56 => {
                     self.DGAKLNOFDPP = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for OICENKLJICG {
             my_size += 1 + 1;
         }
         if self.DGAKLNOFDPP != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.DGAKLNOFDPP);
+            my_size += ::protobuf::rt::uint32_size(7, self.DGAKLNOFDPP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for OICENKLJICG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.FBKEKCGELBE != false {
-            os.write_bool(15, self.FBKEKCGELBE)?;
+            os.write_bool(6, self.FBKEKCGELBE)?;
         }
         if self.DGAKLNOFDPP != 0 {
-            os.write_uint32(10, self.DGAKLNOFDPP)?;
+            os.write_uint32(7, self.DGAKLNOFDPP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for OICENKLJICG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OICENKLJICG.proto\"Q\n\x0bOICENKLJICG\x12\x20\n\x0bFBKEKCGELBE\x18\
-    \x0f\x20\x01(\x08R\x0bFBKEKCGELBE\x12\x20\n\x0bDGAKLNOFDPP\x18\n\x20\x01\
-    (\rR\x0bDGAKLNOFDPPb\x06proto3\
+    \x06\x20\x01(\x08R\x0bFBKEKCGELBE\x12\x20\n\x0bDGAKLNOFDPP\x18\x07\x20\
+    \x01(\rR\x0bDGAKLNOFDPPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

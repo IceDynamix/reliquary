@@ -86,13 +86,13 @@ impl ::protobuf::Message for HFIPPDGGJOL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.IDOMKBKKKKL)?;
                 },
-                106 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CPBNMACLBEH)?;
                 },
-                90 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.KEILFHHNLIH)?;
                 },
                 tag => {
@@ -126,13 +126,13 @@ impl ::protobuf::Message for HFIPPDGGJOL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.IDOMKBKKKKL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if let Some(v) = self.CPBNMACLBEH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if let Some(v) = self.KEILFHHNLIH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -188,9 +188,10 @@ impl ::protobuf::reflect::ProtobufValue for HFIPPDGGJOL {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HFIPPDGGJOL.proto\x1a\x11EIMJEAMDFKJ.proto\x1a\x11JJAFHFGJMOB.prot\
     o\x1a\x11PPJCDCOAFDK.proto\"\x9d\x01\n\x0bHFIPPDGGJOL\x12.\n\x0bIDOMKBKK\
-    KKL\x18\n\x20\x01(\x0b2\x0c.PPJCDCOAFDKR\x0bIDOMKBKKKKL\x12.\n\x0bCPBNMA\
-    CLBEH\x18\r\x20\x01(\x0b2\x0c.EIMJEAMDFKJR\x0bCPBNMACLBEH\x12.\n\x0bKEIL\
-    FHHNLIH\x18\x0b\x20\x01(\x0b2\x0c.JJAFHFGJMOBR\x0bKEILFHHNLIHb\x06proto3\
+    KKL\x18\x07\x20\x01(\x0b2\x0c.PPJCDCOAFDKR\x0bIDOMKBKKKKL\x12.\n\x0bCPBN\
+    MACLBEH\x18\x04\x20\x01(\x0b2\x0c.EIMJEAMDFKJR\x0bCPBNMACLBEH\x12.\n\x0b\
+    KEILFHHNLIH\x18\x05\x20\x01(\x0b2\x0c.JJAFHFGJMOBR\x0bKEILFHHNLIHb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

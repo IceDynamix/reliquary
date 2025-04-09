@@ -79,10 +79,10 @@ impl ::protobuf::Message for CGLIGECGAKN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                64 => {
                     self.CFONLBPOABP = is.read_uint32()?;
                 },
-                96 => {
+                16 => {
                     self.ABLICGMCINN = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for CGLIGECGAKN {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CFONLBPOABP != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.CFONLBPOABP);
+            my_size += ::protobuf::rt::uint32_size(8, self.CFONLBPOABP);
         }
         if self.ABLICGMCINN != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.ABLICGMCINN);
+            my_size += ::protobuf::rt::uint32_size(2, self.ABLICGMCINN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for CGLIGECGAKN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CFONLBPOABP != 0 {
-            os.write_uint32(14, self.CFONLBPOABP)?;
+            os.write_uint32(8, self.CFONLBPOABP)?;
         }
         if self.ABLICGMCINN != 0 {
-            os.write_uint32(12, self.ABLICGMCINN)?;
+            os.write_uint32(2, self.ABLICGMCINN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for CGLIGECGAKN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CGLIGECGAKN.proto\"Q\n\x0bCGLIGECGAKN\x12\x20\n\x0bCFONLBPOABP\x18\
-    \x0e\x20\x01(\rR\x0bCFONLBPOABP\x12\x20\n\x0bABLICGMCINN\x18\x0c\x20\x01\
+    \x08\x20\x01(\rR\x0bCFONLBPOABP\x12\x20\n\x0bABLICGMCINN\x18\x02\x20\x01\
     (\rR\x0bABLICGMCINNb\x06proto3\
 ";
 

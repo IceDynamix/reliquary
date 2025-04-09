@@ -86,19 +86,19 @@ impl ::protobuf::Message for PickRogueAvatarCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                8 => {
                     self.LMPHJMDONMH = is.read_uint32()?;
                 },
-                74 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.NBCGLEFOKDM)?;
                 },
-                72 => {
+                64 => {
                     self.NBCGLEFOKDM.push(is.read_uint32()?);
                 },
-                106 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.LGHCAHBBCAM)?;
                 },
-                104 => {
+                56 => {
                     self.LGHCAHBBCAM.push(is.read_uint32()?);
                 },
                 tag => {
@@ -114,10 +114,10 @@ impl ::protobuf::Message for PickRogueAvatarCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.LMPHJMDONMH != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.LMPHJMDONMH);
+            my_size += ::protobuf::rt::uint32_size(1, self.LMPHJMDONMH);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.NBCGLEFOKDM);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.LGHCAHBBCAM);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.NBCGLEFOKDM);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.LGHCAHBBCAM);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -125,10 +125,10 @@ impl ::protobuf::Message for PickRogueAvatarCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.LMPHJMDONMH != 0 {
-            os.write_uint32(3, self.LMPHJMDONMH)?;
+            os.write_uint32(1, self.LMPHJMDONMH)?;
         }
-        os.write_repeated_packed_uint32(9, &self.NBCGLEFOKDM)?;
-        os.write_repeated_packed_uint32(13, &self.LGHCAHBBCAM)?;
+        os.write_repeated_packed_uint32(8, &self.NBCGLEFOKDM)?;
+        os.write_repeated_packed_uint32(7, &self.LGHCAHBBCAM)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -182,9 +182,9 @@ impl ::protobuf::reflect::ProtobufValue for PickRogueAvatarCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aPickRogueAvatarCsReq.proto\"|\n\x14PickRogueAvatarCsReq\x12\x20\n\
-    \x0bLMPHJMDONMH\x18\x03\x20\x01(\rR\x0bLMPHJMDONMH\x12\x20\n\x0bNBCGLEFO\
-    KDM\x18\t\x20\x03(\rR\x0bNBCGLEFOKDM\x12\x20\n\x0bLGHCAHBBCAM\x18\r\x20\
-    \x03(\rR\x0bLGHCAHBBCAMb\x06proto3\
+    \x0bLMPHJMDONMH\x18\x01\x20\x01(\rR\x0bLMPHJMDONMH\x12\x20\n\x0bNBCGLEFO\
+    KDM\x18\x08\x20\x03(\rR\x0bNBCGLEFOKDM\x12\x20\n\x0bLGHCAHBBCAM\x18\x07\
+    \x20\x03(\rR\x0bLGHCAHBBCAMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

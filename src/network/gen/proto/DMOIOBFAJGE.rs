@@ -79,10 +79,10 @@ impl ::protobuf::Message for DMOIOBFAJGE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                40 => {
                     self.HLNFBGACNPO = is.read_bool()?;
                 },
-                32 => {
+                48 => {
                     self.OMACFNPOAMG = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for DMOIOBFAJGE {
             my_size += 1 + 1;
         }
         if self.OMACFNPOAMG != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.OMACFNPOAMG);
+            my_size += ::protobuf::rt::uint32_size(6, self.OMACFNPOAMG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for DMOIOBFAJGE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HLNFBGACNPO != false {
-            os.write_bool(2, self.HLNFBGACNPO)?;
+            os.write_bool(5, self.HLNFBGACNPO)?;
         }
         if self.OMACFNPOAMG != 0 {
-            os.write_uint32(4, self.OMACFNPOAMG)?;
+            os.write_uint32(6, self.OMACFNPOAMG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for DMOIOBFAJGE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DMOIOBFAJGE.proto\"Q\n\x0bDMOIOBFAJGE\x12\x20\n\x0bHLNFBGACNPO\x18\
-    \x02\x20\x01(\x08R\x0bHLNFBGACNPO\x12\x20\n\x0bOMACFNPOAMG\x18\x04\x20\
+    \x05\x20\x01(\x08R\x0bHLNFBGACNPO\x12\x20\n\x0bOMACFNPOAMG\x18\x06\x20\
     \x01(\rR\x0bOMACFNPOAMGb\x06proto3\
 ";
 

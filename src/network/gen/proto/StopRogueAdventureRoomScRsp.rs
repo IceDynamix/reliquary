@@ -79,10 +79,10 @@ impl ::protobuf::Message for StopRogueAdventureRoomScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                42 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CDLAKDMEJLG)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for StopRogueAdventureRoomScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         if let Some(v) = self.CDLAKDMEJLG.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for StopRogueAdventureRoomScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
         if let Some(v) = self.CDLAKDMEJLG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for StopRogueAdventureRoomScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!StopRogueAdventureRoomScRsp.proto\x1a\x11CNCAJKHCCEC.proto\"g\n\x1bSt\
-    opRogueAdventureRoomScRsp\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07re\
-    tcode\x12.\n\x0bCDLAKDMEJLG\x18\x05\x20\x01(\x0b2\x0c.CNCAJKHCCECR\x0bCD\
-    LAKDMEJLGb\x06proto3\
+    opRogueAdventureRoomScRsp\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retc\
+    ode\x12.\n\x0bCDLAKDMEJLG\x18\x0f\x20\x01(\x0b2\x0c.CNCAJKHCCECR\x0bCDLA\
+    KDMEJLGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

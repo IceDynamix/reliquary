@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RebattleByClientCsNotify {
     // message fields
-    // @@protoc_insertion_point(field:RebattleByClientCsNotify.DHCLHAEMOON)
-    pub DHCLHAEMOON: ::protobuf::MessageField<super::MJBCEOFGHJH::MJBCEOFGHJH>,
     // @@protoc_insertion_point(field:RebattleByClientCsNotify.NIKHBKCHHJG)
     pub NIKHBKCHHJG: ::protobuf::EnumOrUnknown<super::LIPEKJFJMNM::LIPEKJFJMNM>,
+    // @@protoc_insertion_point(field:RebattleByClientCsNotify.DHCLHAEMOON)
+    pub DHCLHAEMOON: ::protobuf::MessageField<super::MJBCEOFGHJH::MJBCEOFGHJH>,
     // special fields
     // @@protoc_insertion_point(special_field:RebattleByClientCsNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl RebattleByClientCsNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MJBCEOFGHJH::MJBCEOFGHJH>(
-            "DHCLHAEMOON",
-            |m: &RebattleByClientCsNotify| { &m.DHCLHAEMOON },
-            |m: &mut RebattleByClientCsNotify| { &mut m.DHCLHAEMOON },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NIKHBKCHHJG",
             |m: &RebattleByClientCsNotify| { &m.NIKHBKCHHJG },
             |m: &mut RebattleByClientCsNotify| { &mut m.NIKHBKCHHJG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MJBCEOFGHJH::MJBCEOFGHJH>(
+            "DHCLHAEMOON",
+            |m: &RebattleByClientCsNotify| { &m.DHCLHAEMOON },
+            |m: &mut RebattleByClientCsNotify| { &mut m.DHCLHAEMOON },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RebattleByClientCsNotify>(
             "RebattleByClientCsNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RebattleByClientCsNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DHCLHAEMOON)?;
-                },
-                48 => {
+                120 => {
                     self.NIKHBKCHHJG = is.read_enum_or_unknown()?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DHCLHAEMOON)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for RebattleByClientCsNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.NIKHBKCHHJG != ::protobuf::EnumOrUnknown::new(super::LIPEKJFJMNM::LIPEKJFJMNM::REBATTLE_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(15, self.NIKHBKCHHJG.value());
+        }
         if let Some(v) = self.DHCLHAEMOON.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.NIKHBKCHHJG != ::protobuf::EnumOrUnknown::new(super::LIPEKJFJMNM::LIPEKJFJMNM::REBATTLE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(6, self.NIKHBKCHHJG.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for RebattleByClientCsNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.DHCLHAEMOON.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        }
         if self.NIKHBKCHHJG != ::protobuf::EnumOrUnknown::new(super::LIPEKJFJMNM::LIPEKJFJMNM::REBATTLE_TYPE_NONE) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.NIKHBKCHHJG))?;
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.NIKHBKCHHJG))?;
+        }
+        if let Some(v) = self.DHCLHAEMOON.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for RebattleByClientCsNotify {
     }
 
     fn clear(&mut self) {
-        self.DHCLHAEMOON.clear();
         self.NIKHBKCHHJG = ::protobuf::EnumOrUnknown::new(super::LIPEKJFJMNM::LIPEKJFJMNM::REBATTLE_TYPE_NONE);
+        self.DHCLHAEMOON.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RebattleByClientCsNotify {
         static instance: RebattleByClientCsNotify = RebattleByClientCsNotify {
-            DHCLHAEMOON: ::protobuf::MessageField::none(),
             NIKHBKCHHJG: ::protobuf::EnumOrUnknown::from_i32(0),
+            DHCLHAEMOON: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for RebattleByClientCsNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eRebattleByClientCsNotify.proto\x1a\x11LIPEKJFJMNM.proto\x1a\x11MJB\
-    CEOFGHJH.proto\"z\n\x18RebattleByClientCsNotify\x12.\n\x0bDHCLHAEMOON\
-    \x18\x0b\x20\x01(\x0b2\x0c.MJBCEOFGHJHR\x0bDHCLHAEMOON\x12.\n\x0bNIKHBKC\
-    HHJG\x18\x06\x20\x01(\x0e2\x0c.LIPEKJFJMNMR\x0bNIKHBKCHHJGb\x06proto3\
+    CEOFGHJH.proto\"z\n\x18RebattleByClientCsNotify\x12.\n\x0bNIKHBKCHHJG\
+    \x18\x0f\x20\x01(\x0e2\x0c.LIPEKJFJMNMR\x0bNIKHBKCHHJG\x12.\n\x0bDHCLHAE\
+    MOON\x18\x0e\x20\x01(\x0b2\x0c.MJBCEOFGHJHR\x0bDHCLHAEMOONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

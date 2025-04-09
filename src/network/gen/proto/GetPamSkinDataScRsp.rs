@@ -30,10 +30,10 @@ pub struct GetPamSkinDataScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetPamSkinDataScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetPamSkinDataScRsp.GDOOBDNHHLM)
-    pub GDOOBDNHHLM: u32,
     // @@protoc_insertion_point(field:GetPamSkinDataScRsp.ILOGHGGPJBM)
     pub ILOGHGGPJBM: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetPamSkinDataScRsp.GDOOBDNHHLM)
+    pub GDOOBDNHHLM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetPamSkinDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl GetPamSkinDataScRsp {
             |m: &GetPamSkinDataScRsp| { &m.retcode },
             |m: &mut GetPamSkinDataScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GDOOBDNHHLM",
-            |m: &GetPamSkinDataScRsp| { &m.GDOOBDNHHLM },
-            |m: &mut GetPamSkinDataScRsp| { &mut m.GDOOBDNHHLM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "ILOGHGGPJBM",
             |m: &GetPamSkinDataScRsp| { &m.ILOGHGGPJBM },
             |m: &mut GetPamSkinDataScRsp| { &mut m.ILOGHGGPJBM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GDOOBDNHHLM",
+            |m: &GetPamSkinDataScRsp| { &m.GDOOBDNHHLM },
+            |m: &mut GetPamSkinDataScRsp| { &mut m.GDOOBDNHHLM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetPamSkinDataScRsp>(
             "GetPamSkinDataScRsp",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for GetPamSkinDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
-                88 => {
-                    self.GDOOBDNHHLM = is.read_uint32()?;
-                },
-                34 => {
+                90 => {
                     is.read_repeated_packed_uint32_into(&mut self.ILOGHGGPJBM)?;
                 },
-                32 => {
+                88 => {
                     self.ILOGHGGPJBM.push(is.read_uint32()?);
+                },
+                112 => {
+                    self.GDOOBDNHHLM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,12 +111,12 @@ impl ::protobuf::Message for GetPamSkinDataScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.ILOGHGGPJBM);
         if self.GDOOBDNHHLM != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.GDOOBDNHHLM);
+            my_size += ::protobuf::rt::uint32_size(14, self.GDOOBDNHHLM);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.ILOGHGGPJBM);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -124,12 +124,12 @@ impl ::protobuf::Message for GetPamSkinDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
+        os.write_repeated_packed_uint32(11, &self.ILOGHGGPJBM)?;
         if self.GDOOBDNHHLM != 0 {
-            os.write_uint32(11, self.GDOOBDNHHLM)?;
+            os.write_uint32(14, self.GDOOBDNHHLM)?;
         }
-        os.write_repeated_packed_uint32(4, &self.ILOGHGGPJBM)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -148,16 +148,16 @@ impl ::protobuf::Message for GetPamSkinDataScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.GDOOBDNHHLM = 0;
         self.ILOGHGGPJBM.clear();
+        self.GDOOBDNHHLM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetPamSkinDataScRsp {
         static instance: GetPamSkinDataScRsp = GetPamSkinDataScRsp {
             retcode: 0,
-            GDOOBDNHHLM: 0,
             ILOGHGGPJBM: ::std::vec::Vec::new(),
+            GDOOBDNHHLM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for GetPamSkinDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19GetPamSkinDataScRsp.proto\"s\n\x13GetPamSkinDataScRsp\x12\x18\n\
-    \x07retcode\x18\r\x20\x01(\rR\x07retcode\x12\x20\n\x0bGDOOBDNHHLM\x18\
-    \x0b\x20\x01(\rR\x0bGDOOBDNHHLM\x12\x20\n\x0bILOGHGGPJBM\x18\x04\x20\x03\
-    (\rR\x0bILOGHGGPJBMb\x06proto3\
+    \x07retcode\x18\n\x20\x01(\rR\x07retcode\x12\x20\n\x0bILOGHGGPJBM\x18\
+    \x0b\x20\x03(\rR\x0bILOGHGGPJBM\x12\x20\n\x0bGDOOBDNHHLM\x18\x0e\x20\x01\
+    (\rR\x0bGDOOBDNHHLMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

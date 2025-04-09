@@ -79,10 +79,10 @@ impl ::protobuf::Message for SellItemCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                48 => {
                     self.OLFKACKGOFK = is.read_bool()?;
                 },
-                58 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.KNNDKBHBDLI)?;
                 },
                 tag => {
@@ -111,10 +111,10 @@ impl ::protobuf::Message for SellItemCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.OLFKACKGOFK != false {
-            os.write_bool(4, self.OLFKACKGOFK)?;
+            os.write_bool(6, self.OLFKACKGOFK)?;
         }
         if let Some(v) = self.KNNDKBHBDLI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for SellItemCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13SellItemCsReq.proto\x1a\x11KNAPAIOFJIE.proto\"a\n\rSellItemCsReq\
-    \x12\x20\n\x0bOLFKACKGOFK\x18\x04\x20\x01(\x08R\x0bOLFKACKGOFK\x12.\n\
-    \x0bKNNDKBHBDLI\x18\x07\x20\x01(\x0b2\x0c.KNAPAIOFJIER\x0bKNNDKBHBDLIb\
-    \x06proto3\
+    \x12\x20\n\x0bOLFKACKGOFK\x18\x06\x20\x01(\x08R\x0bOLFKACKGOFK\x12.\n\
+    \x0bKNNDKBHBDLI\x18\t\x20\x01(\x0b2\x0c.KNAPAIOFJIER\x0bKNNDKBHBDLIb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

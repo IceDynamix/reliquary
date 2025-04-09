@@ -30,12 +30,12 @@ pub struct GetMultiPathAvatarInfoScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetMultiPathAvatarInfoScRsp.current_multi_path_avatar_id)
     pub current_multi_path_avatar_id: ::std::collections::HashMap<u32, ::protobuf::EnumOrUnknown<super::MultiPathAvatarType::MultiPathAvatarType>>,
-    // @@protoc_insertion_point(field:GetMultiPathAvatarInfoScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:GetMultiPathAvatarInfoScRsp.basic_type_id_list)
-    pub basic_type_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetMultiPathAvatarInfoScRsp.multi_path_avatar_type_info_list)
     pub multi_path_avatar_type_info_list: ::std::vec::Vec<super::MultiPathAvatarTypeInfo::MultiPathAvatarTypeInfo>,
+    // @@protoc_insertion_point(field:GetMultiPathAvatarInfoScRsp.basic_type_id_list)
+    pub basic_type_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetMultiPathAvatarInfoScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetMultiPathAvatarInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,20 +60,20 @@ impl GetMultiPathAvatarInfoScRsp {
             |m: &GetMultiPathAvatarInfoScRsp| { &m.current_multi_path_avatar_id },
             |m: &mut GetMultiPathAvatarInfoScRsp| { &mut m.current_multi_path_avatar_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetMultiPathAvatarInfoScRsp| { &m.retcode },
-            |m: &mut GetMultiPathAvatarInfoScRsp| { &mut m.retcode },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "multi_path_avatar_type_info_list",
+            |m: &GetMultiPathAvatarInfoScRsp| { &m.multi_path_avatar_type_info_list },
+            |m: &mut GetMultiPathAvatarInfoScRsp| { &mut m.multi_path_avatar_type_info_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "basic_type_id_list",
             |m: &GetMultiPathAvatarInfoScRsp| { &m.basic_type_id_list },
             |m: &mut GetMultiPathAvatarInfoScRsp| { &mut m.basic_type_id_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "multi_path_avatar_type_info_list",
-            |m: &GetMultiPathAvatarInfoScRsp| { &m.multi_path_avatar_type_info_list },
-            |m: &mut GetMultiPathAvatarInfoScRsp| { &mut m.multi_path_avatar_type_info_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GetMultiPathAvatarInfoScRsp| { &m.retcode },
+            |m: &mut GetMultiPathAvatarInfoScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetMultiPathAvatarInfoScRsp>(
             "GetMultiPathAvatarInfoScRsp",
@@ -93,7 +93,7 @@ impl ::protobuf::Message for GetMultiPathAvatarInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                10 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -108,17 +108,17 @@ impl ::protobuf::Message for GetMultiPathAvatarInfoScRsp {
                     is.pop_limit(old_limit);
                     self.current_multi_path_avatar_id.insert(key, value);
                 },
-                80 => {
-                    self.retcode = is.read_uint32()?;
+                26 => {
+                    self.multi_path_avatar_type_info_list.push(is.read_message()?);
                 },
-                42 => {
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.basic_type_id_list)?;
                 },
-                40 => {
+                72 => {
                     self.basic_type_id_list.push(is.read_uint32()?);
                 },
-                90 => {
-                    self.multi_path_avatar_type_info_list.push(is.read_message()?);
+                48 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -138,14 +138,14 @@ impl ::protobuf::Message for GetMultiPathAvatarInfoScRsp {
             entry_size += ::protobuf::rt::int32_size(2, v.value());
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.basic_type_id_list);
         for value in &self.multi_path_avatar_type_info_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.basic_type_id_list);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -156,18 +156,18 @@ impl ::protobuf::Message for GetMultiPathAvatarInfoScRsp {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::int32_size(2, v.value());
-            os.write_raw_varint32(34)?; // Tag.
+            os.write_raw_varint32(10)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_enum(2, ::protobuf::EnumOrUnknown::value(v))?;
         };
-        if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
-        }
-        os.write_repeated_packed_uint32(5, &self.basic_type_id_list)?;
         for v in &self.multi_path_avatar_type_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
+        os.write_repeated_packed_uint32(9, &self.basic_type_id_list)?;
+        if self.retcode != 0 {
+            os.write_uint32(6, self.retcode)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -186,9 +186,9 @@ impl ::protobuf::Message for GetMultiPathAvatarInfoScRsp {
 
     fn clear(&mut self) {
         self.current_multi_path_avatar_id.clear();
-        self.retcode = 0;
-        self.basic_type_id_list.clear();
         self.multi_path_avatar_type_info_list.clear();
+        self.basic_type_id_list.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
@@ -218,12 +218,12 @@ impl ::protobuf::reflect::ProtobufValue for GetMultiPathAvatarInfoScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!GetMultiPathAvatarInfoScRsp.proto\x1a\x19MultiPathAvatarType.proto\
     \x1a\x1dMultiPathAvatarTypeInfo.proto\"\xa4\x03\n\x1bGetMultiPathAvatarI\
-    nfoScRsp\x12z\n\x1ccurrent_multi_path_avatar_id\x18\x04\x20\x03(\x0b2:.G\
+    nfoScRsp\x12z\n\x1ccurrent_multi_path_avatar_id\x18\x01\x20\x03(\x0b2:.G\
     etMultiPathAvatarInfoScRsp.CurrentMultiPathAvatarIdEntryR\x18currentMult\
-    iPathAvatarId\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcode\x12+\n\
-    \x12basic_type_id_list\x18\x05\x20\x03(\rR\x0fbasicTypeIdList\x12_\n\x20\
-    multi_path_avatar_type_info_list\x18\x0b\x20\x03(\x0b2\x18.MultiPathAvat\
-    arTypeInfoR\x1bmultiPathAvatarTypeInfoList\x1aa\n\x1dCurrentMultiPathAva\
+    iPathAvatarId\x12_\n\x20multi_path_avatar_type_info_list\x18\x03\x20\x03\
+    (\x0b2\x18.MultiPathAvatarTypeInfoR\x1bmultiPathAvatarTypeInfoList\x12+\
+    \n\x12basic_type_id_list\x18\t\x20\x03(\rR\x0fbasicTypeIdList\x12\x18\n\
+    \x07retcode\x18\x06\x20\x01(\rR\x07retcode\x1aa\n\x1dCurrentMultiPathAva\
     tarIdEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12*\n\x05value\
     \x18\x02\x20\x01(\x0e2\x14.MultiPathAvatarTypeR\x05value:\x028\x01b\x06p\
     roto3\

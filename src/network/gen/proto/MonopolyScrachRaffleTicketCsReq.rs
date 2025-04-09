@@ -79,10 +79,10 @@ impl ::protobuf::Message for MonopolyScrachRaffleTicketCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                32 => {
                     self.PMELCDFHGKC = is.read_uint64()?;
                 },
-                72 => {
+                8 => {
                     self.HHJPBLEKAPN = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for MonopolyScrachRaffleTicketCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PMELCDFHGKC != 0 {
-            my_size += ::protobuf::rt::uint64_size(15, self.PMELCDFHGKC);
+            my_size += ::protobuf::rt::uint64_size(4, self.PMELCDFHGKC);
         }
         if self.HHJPBLEKAPN != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.HHJPBLEKAPN);
+            my_size += ::protobuf::rt::uint32_size(1, self.HHJPBLEKAPN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for MonopolyScrachRaffleTicketCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PMELCDFHGKC != 0 {
-            os.write_uint64(15, self.PMELCDFHGKC)?;
+            os.write_uint64(4, self.PMELCDFHGKC)?;
         }
         if self.HHJPBLEKAPN != 0 {
-            os.write_uint32(9, self.HHJPBLEKAPN)?;
+            os.write_uint32(1, self.HHJPBLEKAPN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyScrachRaffleTicketCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%MonopolyScrachRaffleTicketCsReq.proto\"e\n\x1fMonopolyScrachRaffleTic\
-    ketCsReq\x12\x20\n\x0bPMELCDFHGKC\x18\x0f\x20\x01(\x04R\x0bPMELCDFHGKC\
-    \x12\x20\n\x0bHHJPBLEKAPN\x18\t\x20\x01(\rR\x0bHHJPBLEKAPNb\x06proto3\
+    ketCsReq\x12\x20\n\x0bPMELCDFHGKC\x18\x04\x20\x01(\x04R\x0bPMELCDFHGKC\
+    \x12\x20\n\x0bHHJPBLEKAPN\x18\x01\x20\x01(\rR\x0bHHJPBLEKAPNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

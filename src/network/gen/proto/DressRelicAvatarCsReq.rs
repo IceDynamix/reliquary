@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DressRelicAvatarCsReq {
     // message fields
-    // @@protoc_insertion_point(field:DressRelicAvatarCsReq.OIEKCNPMDFC)
-    pub OIEKCNPMDFC: ::std::vec::Vec<super::EAIFAJMIKCE::EAIFAJMIKCE>,
     // @@protoc_insertion_point(field:DressRelicAvatarCsReq.avatar_id)
     pub avatar_id: u32,
+    // @@protoc_insertion_point(field:DressRelicAvatarCsReq.OIEKCNPMDFC)
+    pub OIEKCNPMDFC: ::std::vec::Vec<super::EAIFAJMIKCE::EAIFAJMIKCE>,
     // special fields
     // @@protoc_insertion_point(special_field:DressRelicAvatarCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl DressRelicAvatarCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OIEKCNPMDFC",
-            |m: &DressRelicAvatarCsReq| { &m.OIEKCNPMDFC },
-            |m: &mut DressRelicAvatarCsReq| { &mut m.OIEKCNPMDFC },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
             |m: &DressRelicAvatarCsReq| { &m.avatar_id },
             |m: &mut DressRelicAvatarCsReq| { &mut m.avatar_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OIEKCNPMDFC",
+            |m: &DressRelicAvatarCsReq| { &m.OIEKCNPMDFC },
+            |m: &mut DressRelicAvatarCsReq| { &mut m.OIEKCNPMDFC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DressRelicAvatarCsReq>(
             "DressRelicAvatarCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for DressRelicAvatarCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    self.OIEKCNPMDFC.push(is.read_message()?);
-                },
-                40 => {
+                8 => {
                     self.avatar_id = is.read_uint32()?;
+                },
+                90 => {
+                    self.OIEKCNPMDFC.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for DressRelicAvatarCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.avatar_id);
+        }
         for value in &self.OIEKCNPMDFC {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.avatar_id);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.OIEKCNPMDFC {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        };
         if self.avatar_id != 0 {
-            os.write_uint32(5, self.avatar_id)?;
+            os.write_uint32(1, self.avatar_id)?;
         }
+        for v in &self.OIEKCNPMDFC {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for DressRelicAvatarCsReq {
     }
 
     fn clear(&mut self) {
-        self.OIEKCNPMDFC.clear();
         self.avatar_id = 0;
+        self.OIEKCNPMDFC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DressRelicAvatarCsReq {
         static instance: DressRelicAvatarCsReq = DressRelicAvatarCsReq {
-            OIEKCNPMDFC: ::std::vec::Vec::new(),
             avatar_id: 0,
+            OIEKCNPMDFC: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for DressRelicAvatarCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bDressRelicAvatarCsReq.proto\x1a\x11EAIFAJMIKCE.proto\"d\n\x15Dress\
-    RelicAvatarCsReq\x12.\n\x0bOIEKCNPMDFC\x18\x04\x20\x03(\x0b2\x0c.EAIFAJM\
-    IKCER\x0bOIEKCNPMDFC\x12\x1b\n\tavatar_id\x18\x05\x20\x01(\rR\x08avatarI\
-    db\x06proto3\
+    RelicAvatarCsReq\x12\x1b\n\tavatar_id\x18\x01\x20\x01(\rR\x08avatarId\
+    \x12.\n\x0bOIEKCNPMDFC\x18\x0b\x20\x03(\x0b2\x0c.EAIFAJMIKCER\x0bOIEKCNP\
+    MDFCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

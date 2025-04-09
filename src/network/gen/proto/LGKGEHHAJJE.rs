@@ -45,7 +45,7 @@ impl LGKGEHHAJJE {
         ::std::default::Default::default()
     }
 
-    // .KCACNHCADEC LGOPNBHHHBG = 2;
+    // .KCACNHCADEC LGOPNBHHHBG = 15;
 
     pub fn LGOPNBHHHBG(&self) -> &super::KCACNHCADEC::KCACNHCADEC {
         match self.JPBHEOJAKGE {
@@ -94,7 +94,7 @@ impl LGKGEHHAJJE {
         }
     }
 
-    // .NKIDDDPFLJE EEPPKMPAJOH = 1;
+    // .NKIDDDPFLJE EEPPKMPAJOH = 11;
 
     pub fn EEPPKMPAJOH(&self) -> &super::NKIDDDPFLJE::NKIDDDPFLJE {
         match self.JPBHEOJAKGE {
@@ -143,7 +143,7 @@ impl LGKGEHHAJJE {
         }
     }
 
-    // .FINDAFKPOOF FFFCCEJIFDK = 11;
+    // .FINDAFKPOOF FFFCCEJIFDK = 5;
 
     pub fn FFFCCEJIFDK(&self) -> &super::FINDAFKPOOF::FINDAFKPOOF {
         match self.JPBHEOJAKGE {
@@ -192,7 +192,7 @@ impl LGKGEHHAJJE {
         }
     }
 
-    // .LADHIKPAJCJ CHMHPCNGFAO = 15;
+    // .LADHIKPAJCJ CHMHPCNGFAO = 3;
 
     pub fn CHMHPCNGFAO(&self) -> &super::LADHIKPAJCJ::LADHIKPAJCJ {
         match self.JPBHEOJAKGE {
@@ -241,7 +241,7 @@ impl LGKGEHHAJJE {
         }
     }
 
-    // .OHLCJEDCOFN FIOCABCBNKB = 4;
+    // .OHLCJEDCOFN FIOCABCBNKB = 7;
 
     pub fn FIOCABCBNKB(&self) -> &super::OHLCJEDCOFN::OHLCJEDCOFN {
         match self.JPBHEOJAKGE {
@@ -290,7 +290,7 @@ impl LGKGEHHAJJE {
         }
     }
 
-    // .KAAJBAOAKBO CKAANMDDKCJ = 5;
+    // .KAAJBAOAKBO CKAANMDDKCJ = 10;
 
     pub fn CKAANMDDKCJ(&self) -> &super::KAAJBAOAKBO::KAAJBAOAKBO {
         match self.JPBHEOJAKGE {
@@ -339,7 +339,7 @@ impl LGKGEHHAJJE {
         }
     }
 
-    // .FBNJOFCEMIL NBDACDNBJIK = 9;
+    // .FBNJOFCEMIL NBDACDNBJIK = 1;
 
     pub fn NBDACDNBJIK(&self) -> &super::FBNJOFCEMIL::FBNJOFCEMIL {
         match self.JPBHEOJAKGE {
@@ -388,7 +388,7 @@ impl LGKGEHHAJJE {
         }
     }
 
-    // .OMDEFBABNNB EMBAGMMHIPA = 14;
+    // .OMDEFBABNNB EMBAGMMHIPA = 8;
 
     pub fn EMBAGMMHIPA(&self) -> &super::OMDEFBABNNB::OMDEFBABNNB {
         match self.JPBHEOJAKGE {
@@ -515,28 +515,28 @@ impl ::protobuf::Message for LGKGEHHAJJE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                122 => {
                     self.JPBHEOJAKGE = ::std::option::Option::Some(lgkgehhajje::JPBHEOJAKGE::LGOPNBHHHBG(is.read_message()?));
                 },
-                10 => {
+                90 => {
                     self.JPBHEOJAKGE = ::std::option::Option::Some(lgkgehhajje::JPBHEOJAKGE::EEPPKMPAJOH(is.read_message()?));
                 },
-                90 => {
+                42 => {
                     self.JPBHEOJAKGE = ::std::option::Option::Some(lgkgehhajje::JPBHEOJAKGE::FFFCCEJIFDK(is.read_message()?));
                 },
-                122 => {
+                26 => {
                     self.JPBHEOJAKGE = ::std::option::Option::Some(lgkgehhajje::JPBHEOJAKGE::CHMHPCNGFAO(is.read_message()?));
                 },
-                34 => {
+                58 => {
                     self.JPBHEOJAKGE = ::std::option::Option::Some(lgkgehhajje::JPBHEOJAKGE::FIOCABCBNKB(is.read_message()?));
                 },
-                42 => {
+                82 => {
                     self.JPBHEOJAKGE = ::std::option::Option::Some(lgkgehhajje::JPBHEOJAKGE::CKAANMDDKCJ(is.read_message()?));
                 },
-                74 => {
+                10 => {
                     self.JPBHEOJAKGE = ::std::option::Option::Some(lgkgehhajje::JPBHEOJAKGE::NBDACDNBJIK(is.read_message()?));
                 },
-                114 => {
+                66 => {
                     self.JPBHEOJAKGE = ::std::option::Option::Some(lgkgehhajje::JPBHEOJAKGE::EMBAGMMHIPA(is.read_message()?));
                 },
                 tag => {
@@ -596,28 +596,28 @@ impl ::protobuf::Message for LGKGEHHAJJE {
         if let ::std::option::Option::Some(ref v) = self.JPBHEOJAKGE {
             match v {
                 &lgkgehhajje::JPBHEOJAKGE::LGOPNBHHHBG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-                },
-                &lgkgehhajje::JPBHEOJAKGE::EEPPKMPAJOH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-                },
-                &lgkgehhajje::JPBHEOJAKGE::FFFCCEJIFDK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-                },
-                &lgkgehhajje::JPBHEOJAKGE::CHMHPCNGFAO(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
-                &lgkgehhajje::JPBHEOJAKGE::FIOCABCBNKB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+                &lgkgehhajje::JPBHEOJAKGE::EEPPKMPAJOH(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
-                &lgkgehhajje::JPBHEOJAKGE::CKAANMDDKCJ(ref v) => {
+                &lgkgehhajje::JPBHEOJAKGE::FFFCCEJIFDK(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
+                &lgkgehhajje::JPBHEOJAKGE::CHMHPCNGFAO(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                },
+                &lgkgehhajje::JPBHEOJAKGE::FIOCABCBNKB(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+                },
+                &lgkgehhajje::JPBHEOJAKGE::CKAANMDDKCJ(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                },
                 &lgkgehhajje::JPBHEOJAKGE::NBDACDNBJIK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
                 },
                 &lgkgehhajje::JPBHEOJAKGE::EMBAGMMHIPA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
                 },
             };
         }
@@ -721,15 +721,15 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LGKGEHHAJJE.proto\x1a\x11FBNJOFCEMIL.proto\x1a\x11FINDAFKPOOF.prot\
     o\x1a\x11KAAJBAOAKBO.proto\x1a\x11KCACNHCADEC.proto\x1a\x11LADHIKPAJCJ.p\
     roto\x1a\x11NKIDDDPFLJE.proto\x1a\x11OHLCJEDCOFN.proto\x1a\x11OMDEFBABNN\
-    B.proto\"\xac\x03\n\x0bLGKGEHHAJJE\x120\n\x0bLGOPNBHHHBG\x18\x02\x20\x01\
-    (\x0b2\x0c.KCACNHCADECH\0R\x0bLGOPNBHHHBG\x120\n\x0bEEPPKMPAJOH\x18\x01\
+    B.proto\"\xac\x03\n\x0bLGKGEHHAJJE\x120\n\x0bLGOPNBHHHBG\x18\x0f\x20\x01\
+    (\x0b2\x0c.KCACNHCADECH\0R\x0bLGOPNBHHHBG\x120\n\x0bEEPPKMPAJOH\x18\x0b\
     \x20\x01(\x0b2\x0c.NKIDDDPFLJEH\0R\x0bEEPPKMPAJOH\x120\n\x0bFFFCCEJIFDK\
-    \x18\x0b\x20\x01(\x0b2\x0c.FINDAFKPOOFH\0R\x0bFFFCCEJIFDK\x120\n\x0bCHMH\
-    PCNGFAO\x18\x0f\x20\x01(\x0b2\x0c.LADHIKPAJCJH\0R\x0bCHMHPCNGFAO\x120\n\
-    \x0bFIOCABCBNKB\x18\x04\x20\x01(\x0b2\x0c.OHLCJEDCOFNH\0R\x0bFIOCABCBNKB\
-    \x120\n\x0bCKAANMDDKCJ\x18\x05\x20\x01(\x0b2\x0c.KAAJBAOAKBOH\0R\x0bCKAA\
-    NMDDKCJ\x120\n\x0bNBDACDNBJIK\x18\t\x20\x01(\x0b2\x0c.FBNJOFCEMILH\0R\
-    \x0bNBDACDNBJIK\x120\n\x0bEMBAGMMHIPA\x18\x0e\x20\x01(\x0b2\x0c.OMDEFBAB\
+    \x18\x05\x20\x01(\x0b2\x0c.FINDAFKPOOFH\0R\x0bFFFCCEJIFDK\x120\n\x0bCHMH\
+    PCNGFAO\x18\x03\x20\x01(\x0b2\x0c.LADHIKPAJCJH\0R\x0bCHMHPCNGFAO\x120\n\
+    \x0bFIOCABCBNKB\x18\x07\x20\x01(\x0b2\x0c.OHLCJEDCOFNH\0R\x0bFIOCABCBNKB\
+    \x120\n\x0bCKAANMDDKCJ\x18\n\x20\x01(\x0b2\x0c.KAAJBAOAKBOH\0R\x0bCKAANM\
+    DDKCJ\x120\n\x0bNBDACDNBJIK\x18\x01\x20\x01(\x0b2\x0c.FBNJOFCEMILH\0R\
+    \x0bNBDACDNBJIK\x120\n\x0bEMBAGMMHIPA\x18\x08\x20\x01(\x0b2\x0c.OMDEFBAB\
     NNBH\0R\x0bEMBAGMMHIPAB\r\n\x0bJPBHEOJAKGEb\x06proto3\
 ";
 

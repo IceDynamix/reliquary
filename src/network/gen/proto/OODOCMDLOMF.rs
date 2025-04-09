@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OODOCMDLOMF {
     // message fields
-    // @@protoc_insertion_point(field:OODOCMDLOMF.KMONAGFELPG)
-    pub KMONAGFELPG: u32,
+    // @@protoc_insertion_point(field:OODOCMDLOMF.uid)
+    pub uid: u32,
     // @@protoc_insertion_point(field:OODOCMDLOMF.level)
     pub level: u32,
     // @@protoc_insertion_point(field:OODOCMDLOMF.LCEODDKLMGB)
@@ -64,9 +64,9 @@ impl OODOCMDLOMF {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KMONAGFELPG",
-            |m: &OODOCMDLOMF| { &m.KMONAGFELPG },
-            |m: &mut OODOCMDLOMF| { &mut m.KMONAGFELPG },
+            "uid",
+            |m: &OODOCMDLOMF| { &m.uid },
+            |m: &mut OODOCMDLOMF| { &mut m.uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
@@ -122,7 +122,7 @@ impl ::protobuf::Message for OODOCMDLOMF {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.KMONAGFELPG = is.read_uint32()?;
+                    self.uid = is.read_uint32()?;
                 },
                 16 => {
                     self.level = is.read_uint32()?;
@@ -157,8 +157,8 @@ impl ::protobuf::Message for OODOCMDLOMF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KMONAGFELPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.KMONAGFELPG);
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.uid);
         }
         if self.level != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.level);
@@ -187,8 +187,8 @@ impl ::protobuf::Message for OODOCMDLOMF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KMONAGFELPG != 0 {
-            os.write_uint32(1, self.KMONAGFELPG)?;
+        if self.uid != 0 {
+            os.write_uint32(1, self.uid)?;
         }
         if self.level != 0 {
             os.write_uint32(2, self.level)?;
@@ -228,7 +228,7 @@ impl ::protobuf::Message for OODOCMDLOMF {
     }
 
     fn clear(&mut self) {
-        self.KMONAGFELPG = 0;
+        self.uid = 0;
         self.level = 0;
         self.LCEODDKLMGB.clear();
         self.GFIDNAANAFH = 0;
@@ -241,7 +241,7 @@ impl ::protobuf::Message for OODOCMDLOMF {
 
     fn default_instance() -> &'static OODOCMDLOMF {
         static instance: OODOCMDLOMF = OODOCMDLOMF {
-            KMONAGFELPG: 0,
+            uid: 0,
             level: 0,
             LCEODDKLMGB: ::std::string::String::new(),
             GFIDNAANAFH: 0,
@@ -273,15 +273,14 @@ impl ::protobuf::reflect::ProtobufValue for OODOCMDLOMF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OODOCMDLOMF.proto\x1a\x11JEIDMGKAJJP.proto\"\x9f\x02\n\x0bOODOCMDL\
-    OMF\x12\x20\n\x0bKMONAGFELPG\x18\x01\x20\x01(\rR\x0bKMONAGFELPG\x12\x14\
-    \n\x05level\x18\x02\x20\x01(\rR\x05level\x12\x20\n\x0bLCEODDKLMGB\x18\
-    \x03\x20\x01(\tR\x0bLCEODDKLMGB\x12\x20\n\x0bGFIDNAANAFH\x18\x04\x20\x01\
-    (\rR\x0bGFIDNAANAFH\x12.\n\x0bLBNBDEKPPFN\x18\x05\x20\x01(\x0e2\x0c.JEID\
-    MGKAJJPR\x0bLBNBDEKPPFN\x12\x20\n\x0bAKCEJFCFBAN\x18\x06\x20\x01(\tR\x0b\
-    AKCEJFCFBAN\x12\x20\n\x0bBJELLAPOGJN\x18\x07\x20\x01(\tR\x0bBJELLAPOGJN\
-    \x12\x20\n\x0bFCJDCGNBBGP\x18\x08\x20\x01(\x04R\x0bFCJDCGNBBGPb\x06proto\
-    3\
+    \n\x11OODOCMDLOMF.proto\x1a\x11JEIDMGKAJJP.proto\"\x8f\x02\n\x0bOODOCMDL\
+    OMF\x12\x10\n\x03uid\x18\x01\x20\x01(\rR\x03uid\x12\x14\n\x05level\x18\
+    \x02\x20\x01(\rR\x05level\x12\x20\n\x0bLCEODDKLMGB\x18\x03\x20\x01(\tR\
+    \x0bLCEODDKLMGB\x12\x20\n\x0bGFIDNAANAFH\x18\x04\x20\x01(\rR\x0bGFIDNAAN\
+    AFH\x12.\n\x0bLBNBDEKPPFN\x18\x05\x20\x01(\x0e2\x0c.JEIDMGKAJJPR\x0bLBNB\
+    DEKPPFN\x12\x20\n\x0bAKCEJFCFBAN\x18\x06\x20\x01(\tR\x0bAKCEJFCFBAN\x12\
+    \x20\n\x0bBJELLAPOGJN\x18\x07\x20\x01(\tR\x0bBJELLAPOGJN\x12\x20\n\x0bFC\
+    JDCGNBBGP\x18\x08\x20\x01(\x04R\x0bFCJDCGNBBGPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ONOEPLFNELL {
     // message fields
-    // @@protoc_insertion_point(field:ONOEPLFNELL.IHLEAMDIKKN)
-    pub IHLEAMDIKKN: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
     // @@protoc_insertion_point(field:ONOEPLFNELL.avatar_id)
     pub avatar_id: u32,
+    // @@protoc_insertion_point(field:ONOEPLFNELL.IHLEAMDIKKN)
+    pub IHLEAMDIKKN: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
     // special fields
     // @@protoc_insertion_point(special_field:ONOEPLFNELL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl ONOEPLFNELL {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IHLEAMDIKKN",
-            |m: &ONOEPLFNELL| { &m.IHLEAMDIKKN },
-            |m: &mut ONOEPLFNELL| { &mut m.IHLEAMDIKKN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
             |m: &ONOEPLFNELL| { &m.avatar_id },
             |m: &mut ONOEPLFNELL| { &mut m.avatar_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IHLEAMDIKKN",
+            |m: &ONOEPLFNELL| { &m.IHLEAMDIKKN },
+            |m: &mut ONOEPLFNELL| { &mut m.IHLEAMDIKKN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ONOEPLFNELL>(
             "ONOEPLFNELL",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ONOEPLFNELL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.IHLEAMDIKKN = is.read_enum_or_unknown()?;
-                },
-                48 => {
+                112 => {
                     self.avatar_id = is.read_uint32()?;
+                },
+                24 => {
+                    self.IHLEAMDIKKN = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ONOEPLFNELL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IHLEAMDIKKN != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(10, self.IHLEAMDIKKN.value());
-        }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.avatar_id);
+        }
+        if self.IHLEAMDIKKN != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(3, self.IHLEAMDIKKN.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ONOEPLFNELL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IHLEAMDIKKN != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.IHLEAMDIKKN))?;
-        }
         if self.avatar_id != 0 {
-            os.write_uint32(6, self.avatar_id)?;
+            os.write_uint32(14, self.avatar_id)?;
+        }
+        if self.IHLEAMDIKKN != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.IHLEAMDIKKN))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for ONOEPLFNELL {
     }
 
     fn clear(&mut self) {
-        self.IHLEAMDIKKN = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE);
         self.avatar_id = 0;
+        self.IHLEAMDIKKN = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ONOEPLFNELL {
         static instance: ONOEPLFNELL = ONOEPLFNELL {
-            IHLEAMDIKKN: ::protobuf::EnumOrUnknown::from_i32(0),
             avatar_id: 0,
+            IHLEAMDIKKN: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for ONOEPLFNELL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ONOEPLFNELL.proto\x1a\x10AvatarType.proto\"Y\n\x0bONOEPLFNELL\x12-\
-    \n\x0bIHLEAMDIKKN\x18\n\x20\x01(\x0e2\x0b.AvatarTypeR\x0bIHLEAMDIKKN\x12\
-    \x1b\n\tavatar_id\x18\x06\x20\x01(\rR\x08avatarIdb\x06proto3\
+    \n\x11ONOEPLFNELL.proto\x1a\x10AvatarType.proto\"Y\n\x0bONOEPLFNELL\x12\
+    \x1b\n\tavatar_id\x18\x0e\x20\x01(\rR\x08avatarId\x12-\n\x0bIHLEAMDIKKN\
+    \x18\x03\x20\x01(\x0e2\x0b.AvatarTypeR\x0bIHLEAMDIKKNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

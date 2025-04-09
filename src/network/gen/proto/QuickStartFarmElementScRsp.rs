@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct QuickStartFarmElementScRsp {
     // message fields
-    // @@protoc_insertion_point(field:QuickStartFarmElementScRsp.JDANOKNHNHL)
-    pub JDANOKNHNHL: u32,
-    // @@protoc_insertion_point(field:QuickStartFarmElementScRsp.IFJFCEJJBPE)
-    pub IFJFCEJJBPE: u32,
     // @@protoc_insertion_point(field:QuickStartFarmElementScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:QuickStartFarmElementScRsp.BANFFJDIPIE)
     pub BANFFJDIPIE: ::protobuf::MessageField<super::CMBHDGKGPGP::CMBHDGKGPGP>,
+    // @@protoc_insertion_point(field:QuickStartFarmElementScRsp.IFJFCEJJBPE)
+    pub IFJFCEJJBPE: u32,
+    // @@protoc_insertion_point(field:QuickStartFarmElementScRsp.JDANOKNHNHL)
+    pub JDANOKNHNHL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:QuickStartFarmElementScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,16 +56,6 @@ impl QuickStartFarmElementScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JDANOKNHNHL",
-            |m: &QuickStartFarmElementScRsp| { &m.JDANOKNHNHL },
-            |m: &mut QuickStartFarmElementScRsp| { &mut m.JDANOKNHNHL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IFJFCEJJBPE",
-            |m: &QuickStartFarmElementScRsp| { &m.IFJFCEJJBPE },
-            |m: &mut QuickStartFarmElementScRsp| { &mut m.IFJFCEJJBPE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &QuickStartFarmElementScRsp| { &m.retcode },
             |m: &mut QuickStartFarmElementScRsp| { &mut m.retcode },
@@ -74,6 +64,16 @@ impl QuickStartFarmElementScRsp {
             "BANFFJDIPIE",
             |m: &QuickStartFarmElementScRsp| { &m.BANFFJDIPIE },
             |m: &mut QuickStartFarmElementScRsp| { &mut m.BANFFJDIPIE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IFJFCEJJBPE",
+            |m: &QuickStartFarmElementScRsp| { &m.IFJFCEJJBPE },
+            |m: &mut QuickStartFarmElementScRsp| { &mut m.IFJFCEJJBPE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JDANOKNHNHL",
+            |m: &QuickStartFarmElementScRsp| { &m.JDANOKNHNHL },
+            |m: &mut QuickStartFarmElementScRsp| { &mut m.JDANOKNHNHL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<QuickStartFarmElementScRsp>(
             "QuickStartFarmElementScRsp",
@@ -94,16 +94,16 @@ impl ::protobuf::Message for QuickStartFarmElementScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.JDANOKNHNHL = is.read_uint32()?;
-                },
-                96 => {
-                    self.IFJFCEJJBPE = is.read_uint32()?;
-                },
-                24 => {
                     self.retcode = is.read_uint32()?;
                 },
-                82 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BANFFJDIPIE)?;
+                },
+                48 => {
+                    self.IFJFCEJJBPE = is.read_uint32()?;
+                },
+                112 => {
+                    self.JDANOKNHNHL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for QuickStartFarmElementScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JDANOKNHNHL != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.JDANOKNHNHL);
-        }
-        if self.IFJFCEJJBPE != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.IFJFCEJJBPE);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         if let Some(v) = self.BANFFJDIPIE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.IFJFCEJJBPE != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.IFJFCEJJBPE);
+        }
+        if self.JDANOKNHNHL != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.JDANOKNHNHL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for QuickStartFarmElementScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JDANOKNHNHL != 0 {
-            os.write_uint32(1, self.JDANOKNHNHL)?;
-        }
-        if self.IFJFCEJJBPE != 0 {
-            os.write_uint32(12, self.IFJFCEJJBPE)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         if let Some(v) = self.BANFFJDIPIE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
+        if self.IFJFCEJJBPE != 0 {
+            os.write_uint32(6, self.IFJFCEJJBPE)?;
+        }
+        if self.JDANOKNHNHL != 0 {
+            os.write_uint32(14, self.JDANOKNHNHL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for QuickStartFarmElementScRsp {
     }
 
     fn clear(&mut self) {
-        self.JDANOKNHNHL = 0;
-        self.IFJFCEJJBPE = 0;
         self.retcode = 0;
         self.BANFFJDIPIE.clear();
+        self.IFJFCEJJBPE = 0;
+        self.JDANOKNHNHL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static QuickStartFarmElementScRsp {
         static instance: QuickStartFarmElementScRsp = QuickStartFarmElementScRsp {
-            JDANOKNHNHL: 0,
-            IFJFCEJJBPE: 0,
             retcode: 0,
             BANFFJDIPIE: ::protobuf::MessageField::none(),
+            IFJFCEJJBPE: 0,
+            JDANOKNHNHL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for QuickStartFarmElementScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20QuickStartFarmElementScRsp.proto\x1a\x11CMBHDGKGPGP.proto\"\xaa\
-    \x01\n\x1aQuickStartFarmElementScRsp\x12\x20\n\x0bJDANOKNHNHL\x18\x01\
-    \x20\x01(\rR\x0bJDANOKNHNHL\x12\x20\n\x0bIFJFCEJJBPE\x18\x0c\x20\x01(\rR\
-    \x0bIFJFCEJJBPE\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12.\
-    \n\x0bBANFFJDIPIE\x18\n\x20\x01(\x0b2\x0c.CMBHDGKGPGPR\x0bBANFFJDIPIEb\
+    \x01\n\x1aQuickStartFarmElementScRsp\x12\x18\n\x07retcode\x18\x01\x20\
+    \x01(\rR\x07retcode\x12.\n\x0bBANFFJDIPIE\x18\x05\x20\x01(\x0b2\x0c.CMBH\
+    DGKGPGPR\x0bBANFFJDIPIE\x12\x20\n\x0bIFJFCEJJBPE\x18\x06\x20\x01(\rR\x0b\
+    IFJFCEJJBPE\x12\x20\n\x0bJDANOKNHNHL\x18\x0e\x20\x01(\rR\x0bJDANOKNHNHLb\
     \x06proto3\
 ";
 

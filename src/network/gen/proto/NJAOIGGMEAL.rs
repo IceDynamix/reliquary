@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NJAOIGGMEAL {
     // message fields
-    // @@protoc_insertion_point(field:NJAOIGGMEAL.KGMEHNAOJMC)
-    pub KGMEHNAOJMC: u32,
     // @@protoc_insertion_point(field:NJAOIGGMEAL.BCLNMIDFFOH)
     pub BCLNMIDFFOH: u32,
+    // @@protoc_insertion_point(field:NJAOIGGMEAL.KGMEHNAOJMC)
+    pub KGMEHNAOJMC: u32,
     // @@protoc_insertion_point(field:NJAOIGGMEAL.HOFDBFLCGKB)
     pub HOFDBFLCGKB: ::std::vec::Vec<super::LLLOMACPCGB::LLLOMACPCGB>,
     // special fields
@@ -54,14 +54,14 @@ impl NJAOIGGMEAL {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KGMEHNAOJMC",
-            |m: &NJAOIGGMEAL| { &m.KGMEHNAOJMC },
-            |m: &mut NJAOIGGMEAL| { &mut m.KGMEHNAOJMC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BCLNMIDFFOH",
             |m: &NJAOIGGMEAL| { &m.BCLNMIDFFOH },
             |m: &mut NJAOIGGMEAL| { &mut m.BCLNMIDFFOH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KGMEHNAOJMC",
+            |m: &NJAOIGGMEAL| { &m.KGMEHNAOJMC },
+            |m: &mut NJAOIGGMEAL| { &mut m.KGMEHNAOJMC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "HOFDBFLCGKB",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for NJAOIGGMEAL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.KGMEHNAOJMC = is.read_uint32()?;
-                },
-                32 => {
+                16 => {
                     self.BCLNMIDFFOH = is.read_uint32()?;
                 },
-                106 => {
+                8 => {
+                    self.KGMEHNAOJMC = is.read_uint32()?;
+                },
+                114 => {
                     self.HOFDBFLCGKB.push(is.read_message()?);
                 },
                 tag => {
@@ -107,11 +107,11 @@ impl ::protobuf::Message for NJAOIGGMEAL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KGMEHNAOJMC != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.KGMEHNAOJMC);
-        }
         if self.BCLNMIDFFOH != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.BCLNMIDFFOH);
+            my_size += ::protobuf::rt::uint32_size(2, self.BCLNMIDFFOH);
+        }
+        if self.KGMEHNAOJMC != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.KGMEHNAOJMC);
         }
         for value in &self.HOFDBFLCGKB {
             let len = value.compute_size();
@@ -123,14 +123,14 @@ impl ::protobuf::Message for NJAOIGGMEAL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KGMEHNAOJMC != 0 {
-            os.write_uint32(3, self.KGMEHNAOJMC)?;
-        }
         if self.BCLNMIDFFOH != 0 {
-            os.write_uint32(4, self.BCLNMIDFFOH)?;
+            os.write_uint32(2, self.BCLNMIDFFOH)?;
+        }
+        if self.KGMEHNAOJMC != 0 {
+            os.write_uint32(1, self.KGMEHNAOJMC)?;
         }
         for v in &self.HOFDBFLCGKB {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for NJAOIGGMEAL {
     }
 
     fn clear(&mut self) {
-        self.KGMEHNAOJMC = 0;
         self.BCLNMIDFFOH = 0;
+        self.KGMEHNAOJMC = 0;
         self.HOFDBFLCGKB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NJAOIGGMEAL {
         static instance: NJAOIGGMEAL = NJAOIGGMEAL {
-            KGMEHNAOJMC: 0,
             BCLNMIDFFOH: 0,
+            KGMEHNAOJMC: 0,
             HOFDBFLCGKB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for NJAOIGGMEAL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NJAOIGGMEAL.proto\x1a\x11LLLOMACPCGB.proto\"\x81\x01\n\x0bNJAOIGGM\
-    EAL\x12\x20\n\x0bKGMEHNAOJMC\x18\x03\x20\x01(\rR\x0bKGMEHNAOJMC\x12\x20\
-    \n\x0bBCLNMIDFFOH\x18\x04\x20\x01(\rR\x0bBCLNMIDFFOH\x12.\n\x0bHOFDBFLCG\
-    KB\x18\r\x20\x03(\x0b2\x0c.LLLOMACPCGBR\x0bHOFDBFLCGKBb\x06proto3\
+    EAL\x12\x20\n\x0bBCLNMIDFFOH\x18\x02\x20\x01(\rR\x0bBCLNMIDFFOH\x12\x20\
+    \n\x0bKGMEHNAOJMC\x18\x01\x20\x01(\rR\x0bKGMEHNAOJMC\x12.\n\x0bHOFDBFLCG\
+    KB\x18\x0e\x20\x03(\x0b2\x0c.LLLOMACPCGBR\x0bHOFDBFLCGKBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

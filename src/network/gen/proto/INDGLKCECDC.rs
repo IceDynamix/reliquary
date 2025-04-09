@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct INDGLKCECDC {
     // message fields
-    // @@protoc_insertion_point(field:INDGLKCECDC.DPJKOJGCJLP)
-    pub DPJKOJGCJLP: u32,
-    // @@protoc_insertion_point(field:INDGLKCECDC.KMONAGFELPG)
-    pub KMONAGFELPG: u32,
-    // @@protoc_insertion_point(field:INDGLKCECDC.HDILBDIPGHO)
-    pub HDILBDIPGHO: u32,
     // @@protoc_insertion_point(field:INDGLKCECDC.PILAAGOKAOF)
     pub PILAAGOKAOF: u32,
+    // @@protoc_insertion_point(field:INDGLKCECDC.HDILBDIPGHO)
+    pub HDILBDIPGHO: u32,
+    // @@protoc_insertion_point(field:INDGLKCECDC.uid)
+    pub uid: u32,
+    // @@protoc_insertion_point(field:INDGLKCECDC.DPJKOJGCJLP)
+    pub DPJKOJGCJLP: u32,
     // @@protoc_insertion_point(field:INDGLKCECDC.FNIGPGBGEHN)
     pub FNIGPGBGEHN: u32,
     // special fields
@@ -58,14 +58,9 @@ impl INDGLKCECDC {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DPJKOJGCJLP",
-            |m: &INDGLKCECDC| { &m.DPJKOJGCJLP },
-            |m: &mut INDGLKCECDC| { &mut m.DPJKOJGCJLP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KMONAGFELPG",
-            |m: &INDGLKCECDC| { &m.KMONAGFELPG },
-            |m: &mut INDGLKCECDC| { &mut m.KMONAGFELPG },
+            "PILAAGOKAOF",
+            |m: &INDGLKCECDC| { &m.PILAAGOKAOF },
+            |m: &mut INDGLKCECDC| { &mut m.PILAAGOKAOF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HDILBDIPGHO",
@@ -73,9 +68,14 @@ impl INDGLKCECDC {
             |m: &mut INDGLKCECDC| { &mut m.HDILBDIPGHO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PILAAGOKAOF",
-            |m: &INDGLKCECDC| { &m.PILAAGOKAOF },
-            |m: &mut INDGLKCECDC| { &mut m.PILAAGOKAOF },
+            "uid",
+            |m: &INDGLKCECDC| { &m.uid },
+            |m: &mut INDGLKCECDC| { &mut m.uid },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DPJKOJGCJLP",
+            |m: &INDGLKCECDC| { &m.DPJKOJGCJLP },
+            |m: &mut INDGLKCECDC| { &mut m.DPJKOJGCJLP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FNIGPGBGEHN",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for INDGLKCECDC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.DPJKOJGCJLP = is.read_uint32()?;
-                },
-                88 => {
-                    self.KMONAGFELPG = is.read_uint32()?;
-                },
-                120 => {
-                    self.HDILBDIPGHO = is.read_uint32()?;
-                },
                 112 => {
                     self.PILAAGOKAOF = is.read_uint32()?;
                 },
-                48 => {
+                40 => {
+                    self.HDILBDIPGHO = is.read_uint32()?;
+                },
+                80 => {
+                    self.uid = is.read_uint32()?;
+                },
+                120 => {
+                    self.DPJKOJGCJLP = is.read_uint32()?;
+                },
+                8 => {
                     self.FNIGPGBGEHN = is.read_uint32()?;
                 },
                 tag => {
@@ -127,20 +127,20 @@ impl ::protobuf::Message for INDGLKCECDC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DPJKOJGCJLP != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.DPJKOJGCJLP);
-        }
-        if self.KMONAGFELPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.KMONAGFELPG);
-        }
-        if self.HDILBDIPGHO != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.HDILBDIPGHO);
-        }
         if self.PILAAGOKAOF != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.PILAAGOKAOF);
         }
+        if self.HDILBDIPGHO != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.HDILBDIPGHO);
+        }
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.uid);
+        }
+        if self.DPJKOJGCJLP != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.DPJKOJGCJLP);
+        }
         if self.FNIGPGBGEHN != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.FNIGPGBGEHN);
+            my_size += ::protobuf::rt::uint32_size(1, self.FNIGPGBGEHN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for INDGLKCECDC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DPJKOJGCJLP != 0 {
-            os.write_uint32(3, self.DPJKOJGCJLP)?;
-        }
-        if self.KMONAGFELPG != 0 {
-            os.write_uint32(11, self.KMONAGFELPG)?;
-        }
-        if self.HDILBDIPGHO != 0 {
-            os.write_uint32(15, self.HDILBDIPGHO)?;
-        }
         if self.PILAAGOKAOF != 0 {
             os.write_uint32(14, self.PILAAGOKAOF)?;
         }
+        if self.HDILBDIPGHO != 0 {
+            os.write_uint32(5, self.HDILBDIPGHO)?;
+        }
+        if self.uid != 0 {
+            os.write_uint32(10, self.uid)?;
+        }
+        if self.DPJKOJGCJLP != 0 {
+            os.write_uint32(15, self.DPJKOJGCJLP)?;
+        }
         if self.FNIGPGBGEHN != 0 {
-            os.write_uint32(6, self.FNIGPGBGEHN)?;
+            os.write_uint32(1, self.FNIGPGBGEHN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,20 +180,20 @@ impl ::protobuf::Message for INDGLKCECDC {
     }
 
     fn clear(&mut self) {
-        self.DPJKOJGCJLP = 0;
-        self.KMONAGFELPG = 0;
-        self.HDILBDIPGHO = 0;
         self.PILAAGOKAOF = 0;
+        self.HDILBDIPGHO = 0;
+        self.uid = 0;
+        self.DPJKOJGCJLP = 0;
         self.FNIGPGBGEHN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static INDGLKCECDC {
         static instance: INDGLKCECDC = INDGLKCECDC {
-            DPJKOJGCJLP: 0,
-            KMONAGFELPG: 0,
-            HDILBDIPGHO: 0,
             PILAAGOKAOF: 0,
+            HDILBDIPGHO: 0,
+            uid: 0,
+            DPJKOJGCJLP: 0,
             FNIGPGBGEHN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -219,12 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for INDGLKCECDC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11INDGLKCECDC.proto\"\xb7\x01\n\x0bINDGLKCECDC\x12\x20\n\x0bDPJKOJGC\
-    JLP\x18\x03\x20\x01(\rR\x0bDPJKOJGCJLP\x12\x20\n\x0bKMONAGFELPG\x18\x0b\
-    \x20\x01(\rR\x0bKMONAGFELPG\x12\x20\n\x0bHDILBDIPGHO\x18\x0f\x20\x01(\rR\
-    \x0bHDILBDIPGHO\x12\x20\n\x0bPILAAGOKAOF\x18\x0e\x20\x01(\rR\x0bPILAAGOK\
-    AOF\x12\x20\n\x0bFNIGPGBGEHN\x18\x06\x20\x01(\rR\x0bFNIGPGBGEHNb\x06prot\
-    o3\
+    \n\x11INDGLKCECDC.proto\"\xa7\x01\n\x0bINDGLKCECDC\x12\x20\n\x0bPILAAGOK\
+    AOF\x18\x0e\x20\x01(\rR\x0bPILAAGOKAOF\x12\x20\n\x0bHDILBDIPGHO\x18\x05\
+    \x20\x01(\rR\x0bHDILBDIPGHO\x12\x10\n\x03uid\x18\n\x20\x01(\rR\x03uid\
+    \x12\x20\n\x0bDPJKOJGCJLP\x18\x0f\x20\x01(\rR\x0bDPJKOJGCJLP\x12\x20\n\
+    \x0bFNIGPGBGEHN\x18\x01\x20\x01(\rR\x0bFNIGPGBGEHNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for SyncChessRogueMainStoryFinishScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                40 => {
                     self.KENPCKFONOK = is.read_uint32()?;
                 },
-                96 => {
+                80 => {
                     self.FGOMIPLMEIC = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for SyncChessRogueMainStoryFinishScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.KENPCKFONOK != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.KENPCKFONOK);
+            my_size += ::protobuf::rt::uint32_size(5, self.KENPCKFONOK);
         }
         if self.FGOMIPLMEIC != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.FGOMIPLMEIC);
+            my_size += ::protobuf::rt::uint32_size(10, self.FGOMIPLMEIC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for SyncChessRogueMainStoryFinishScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KENPCKFONOK != 0 {
-            os.write_uint32(10, self.KENPCKFONOK)?;
+            os.write_uint32(5, self.KENPCKFONOK)?;
         }
         if self.FGOMIPLMEIC != 0 {
-            os.write_uint32(12, self.FGOMIPLMEIC)?;
+            os.write_uint32(10, self.FGOMIPLMEIC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for SyncChessRogueMainStoryFinishScNotif
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+SyncChessRogueMainStoryFinishScNotify.proto\"k\n%SyncChessRogueMainSt\
-    oryFinishScNotify\x12\x20\n\x0bKENPCKFONOK\x18\n\x20\x01(\rR\x0bKENPCKFO\
-    NOK\x12\x20\n\x0bFGOMIPLMEIC\x18\x0c\x20\x01(\rR\x0bFGOMIPLMEICb\x06prot\
+    oryFinishScNotify\x12\x20\n\x0bKENPCKFONOK\x18\x05\x20\x01(\rR\x0bKENPCK\
+    FONOK\x12\x20\n\x0bFGOMIPLMEIC\x18\n\x20\x01(\rR\x0bFGOMIPLMEICb\x06prot\
     o3\
 ";
 

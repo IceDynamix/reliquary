@@ -86,13 +86,13 @@ impl ::protobuf::Message for MuseumTakeCollectRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHELBOHKBBM)?;
                 },
-                112 => {
+                16 => {
                     self.FILDLBJOMLD = is.read_uint32()?;
                 },
-                120 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for MuseumTakeCollectRewardScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.FILDLBJOMLD != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.FILDLBJOMLD);
+            my_size += ::protobuf::rt::uint32_size(2, self.FILDLBJOMLD);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for MuseumTakeCollectRewardScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.BHELBOHKBBM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if self.FILDLBJOMLD != 0 {
-            os.write_uint32(14, self.FILDLBJOMLD)?;
+            os.write_uint32(2, self.FILDLBJOMLD)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for MuseumTakeCollectRewardScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"MuseumTakeCollectRewardScRsp.proto\x1a\x0eItemList.proto\"\x87\x01\n\
-    \x1cMuseumTakeCollectRewardScRsp\x12+\n\x0bBHELBOHKBBM\x18\x0c\x20\x01(\
-    \x0b2\t.ItemListR\x0bBHELBOHKBBM\x12\x20\n\x0bFILDLBJOMLD\x18\x0e\x20\
-    \x01(\rR\x0bFILDLBJOMLD\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retc\
+    \x1cMuseumTakeCollectRewardScRsp\x12+\n\x0bBHELBOHKBBM\x18\x0b\x20\x01(\
+    \x0b2\t.ItemListR\x0bBHELBOHKBBM\x12\x20\n\x0bFILDLBJOMLD\x18\x02\x20\
+    \x01(\rR\x0bFILDLBJOMLD\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retc\
     odeb\x06proto3\
 ";
 

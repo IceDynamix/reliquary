@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KPCIMEGKLLL {
     // message fields
-    // @@protoc_insertion_point(field:KPCIMEGKLLL.slot)
-    pub slot: ::protobuf::EnumOrUnknown<super::JPOKODCNPOA::JPOKODCNPOA>,
     // @@protoc_insertion_point(field:KPCIMEGKLLL.IAOGFCMADLC)
     pub IAOGFCMADLC: ::std::string::String,
+    // @@protoc_insertion_point(field:KPCIMEGKLLL.slot)
+    pub slot: ::protobuf::EnumOrUnknown<super::JPOKODCNPOA::JPOKODCNPOA>,
     // special fields
     // @@protoc_insertion_point(special_field:KPCIMEGKLLL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl KPCIMEGKLLL {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "slot",
-            |m: &KPCIMEGKLLL| { &m.slot },
-            |m: &mut KPCIMEGKLLL| { &mut m.slot },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IAOGFCMADLC",
             |m: &KPCIMEGKLLL| { &m.IAOGFCMADLC },
             |m: &mut KPCIMEGKLLL| { &mut m.IAOGFCMADLC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "slot",
+            |m: &KPCIMEGKLLL| { &m.slot },
+            |m: &mut KPCIMEGKLLL| { &mut m.slot },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KPCIMEGKLLL>(
             "KPCIMEGKLLL",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for KPCIMEGKLLL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.slot = is.read_enum_or_unknown()?;
-                },
-                42 => {
+                34 => {
                     self.IAOGFCMADLC = is.read_string()?;
+                },
+                56 => {
+                    self.slot = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for KPCIMEGKLLL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.slot != ::protobuf::EnumOrUnknown::new(super::JPOKODCNPOA::JPOKODCNPOA::SECRET_KEY_NONE) {
-            my_size += ::protobuf::rt::int32_size(14, self.slot.value());
-        }
         if !self.IAOGFCMADLC.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.IAOGFCMADLC);
+            my_size += ::protobuf::rt::string_size(4, &self.IAOGFCMADLC);
+        }
+        if self.slot != ::protobuf::EnumOrUnknown::new(super::JPOKODCNPOA::JPOKODCNPOA::SECRET_KEY_NONE) {
+            my_size += ::protobuf::rt::int32_size(7, self.slot.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for KPCIMEGKLLL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.slot != ::protobuf::EnumOrUnknown::new(super::JPOKODCNPOA::JPOKODCNPOA::SECRET_KEY_NONE) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.slot))?;
-        }
         if !self.IAOGFCMADLC.is_empty() {
-            os.write_string(5, &self.IAOGFCMADLC)?;
+            os.write_string(4, &self.IAOGFCMADLC)?;
+        }
+        if self.slot != ::protobuf::EnumOrUnknown::new(super::JPOKODCNPOA::JPOKODCNPOA::SECRET_KEY_NONE) {
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.slot))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for KPCIMEGKLLL {
     }
 
     fn clear(&mut self) {
-        self.slot = ::protobuf::EnumOrUnknown::new(super::JPOKODCNPOA::JPOKODCNPOA::SECRET_KEY_NONE);
         self.IAOGFCMADLC.clear();
+        self.slot = ::protobuf::EnumOrUnknown::new(super::JPOKODCNPOA::JPOKODCNPOA::SECRET_KEY_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KPCIMEGKLLL {
         static instance: KPCIMEGKLLL = KPCIMEGKLLL {
-            slot: ::protobuf::EnumOrUnknown::from_i32(0),
             IAOGFCMADLC: ::std::string::String::new(),
+            slot: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for KPCIMEGKLLL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KPCIMEGKLLL.proto\x1a\x11JPOKODCNPOA.proto\"Q\n\x0bKPCIMEGKLLL\x12\
-    \x20\n\x04slot\x18\x0e\x20\x01(\x0e2\x0c.JPOKODCNPOAR\x04slot\x12\x20\n\
-    \x0bIAOGFCMADLC\x18\x05\x20\x01(\tR\x0bIAOGFCMADLCb\x06proto3\
+    \x20\n\x0bIAOGFCMADLC\x18\x04\x20\x01(\tR\x0bIAOGFCMADLC\x12\x20\n\x04sl\
+    ot\x18\x07\x20\x01(\x0e2\x0c.JPOKODCNPOAR\x04slotb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

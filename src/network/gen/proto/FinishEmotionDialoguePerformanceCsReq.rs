@@ -30,10 +30,10 @@ pub struct FinishEmotionDialoguePerformanceCsReq {
     // message fields
     // @@protoc_insertion_point(field:FinishEmotionDialoguePerformanceCsReq.CLKEOEHPLNG)
     pub CLKEOEHPLNG: u32,
-    // @@protoc_insertion_point(field:FinishEmotionDialoguePerformanceCsReq.DGAKLNOFDPP)
-    pub DGAKLNOFDPP: u32,
     // @@protoc_insertion_point(field:FinishEmotionDialoguePerformanceCsReq.FIHNCOABELA)
     pub FIHNCOABELA: u32,
+    // @@protoc_insertion_point(field:FinishEmotionDialoguePerformanceCsReq.DGAKLNOFDPP)
+    pub DGAKLNOFDPP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FinishEmotionDialoguePerformanceCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl FinishEmotionDialoguePerformanceCsReq {
             |m: &mut FinishEmotionDialoguePerformanceCsReq| { &mut m.CLKEOEHPLNG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DGAKLNOFDPP",
-            |m: &FinishEmotionDialoguePerformanceCsReq| { &m.DGAKLNOFDPP },
-            |m: &mut FinishEmotionDialoguePerformanceCsReq| { &mut m.DGAKLNOFDPP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FIHNCOABELA",
             |m: &FinishEmotionDialoguePerformanceCsReq| { &m.FIHNCOABELA },
             |m: &mut FinishEmotionDialoguePerformanceCsReq| { &mut m.FIHNCOABELA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DGAKLNOFDPP",
+            |m: &FinishEmotionDialoguePerformanceCsReq| { &m.DGAKLNOFDPP },
+            |m: &mut FinishEmotionDialoguePerformanceCsReq| { &mut m.DGAKLNOFDPP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishEmotionDialoguePerformanceCsReq>(
             "FinishEmotionDialoguePerformanceCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for FinishEmotionDialoguePerformanceCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                56 => {
                     self.CLKEOEHPLNG = is.read_uint32()?;
                 },
-                32 => {
-                    self.DGAKLNOFDPP = is.read_uint32()?;
+                72 => {
+                    self.FIHNCOABELA = is.read_uint32()?;
                 },
                 80 => {
-                    self.FIHNCOABELA = is.read_uint32()?;
+                    self.DGAKLNOFDPP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for FinishEmotionDialoguePerformanceCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CLKEOEHPLNG != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.CLKEOEHPLNG);
-        }
-        if self.DGAKLNOFDPP != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.DGAKLNOFDPP);
+            my_size += ::protobuf::rt::uint32_size(7, self.CLKEOEHPLNG);
         }
         if self.FIHNCOABELA != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.FIHNCOABELA);
+            my_size += ::protobuf::rt::uint32_size(9, self.FIHNCOABELA);
+        }
+        if self.DGAKLNOFDPP != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.DGAKLNOFDPP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for FinishEmotionDialoguePerformanceCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CLKEOEHPLNG != 0 {
-            os.write_uint32(14, self.CLKEOEHPLNG)?;
-        }
-        if self.DGAKLNOFDPP != 0 {
-            os.write_uint32(4, self.DGAKLNOFDPP)?;
+            os.write_uint32(7, self.CLKEOEHPLNG)?;
         }
         if self.FIHNCOABELA != 0 {
-            os.write_uint32(10, self.FIHNCOABELA)?;
+            os.write_uint32(9, self.FIHNCOABELA)?;
+        }
+        if self.DGAKLNOFDPP != 0 {
+            os.write_uint32(10, self.DGAKLNOFDPP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for FinishEmotionDialoguePerformanceCsReq {
 
     fn clear(&mut self) {
         self.CLKEOEHPLNG = 0;
-        self.DGAKLNOFDPP = 0;
         self.FIHNCOABELA = 0;
+        self.DGAKLNOFDPP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishEmotionDialoguePerformanceCsReq {
         static instance: FinishEmotionDialoguePerformanceCsReq = FinishEmotionDialoguePerformanceCsReq {
             CLKEOEHPLNG: 0,
-            DGAKLNOFDPP: 0,
             FIHNCOABELA: 0,
+            DGAKLNOFDPP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for FinishEmotionDialoguePerformanceCsRe
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+FinishEmotionDialoguePerformanceCsReq.proto\"\x8d\x01\n%FinishEmotion\
-    DialoguePerformanceCsReq\x12\x20\n\x0bCLKEOEHPLNG\x18\x0e\x20\x01(\rR\
-    \x0bCLKEOEHPLNG\x12\x20\n\x0bDGAKLNOFDPP\x18\x04\x20\x01(\rR\x0bDGAKLNOF\
-    DPP\x12\x20\n\x0bFIHNCOABELA\x18\n\x20\x01(\rR\x0bFIHNCOABELAb\x06proto3\
+    DialoguePerformanceCsReq\x12\x20\n\x0bCLKEOEHPLNG\x18\x07\x20\x01(\rR\
+    \x0bCLKEOEHPLNG\x12\x20\n\x0bFIHNCOABELA\x18\t\x20\x01(\rR\x0bFIHNCOABEL\
+    A\x12\x20\n\x0bDGAKLNOFDPP\x18\n\x20\x01(\rR\x0bDGAKLNOFDPPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

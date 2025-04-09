@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DDBLJMPNGAI {
     // message fields
-    // @@protoc_insertion_point(field:DDBLJMPNGAI.GGHLAFIIAMA)
-    pub GGHLAFIIAMA: ::std::vec::Vec<super::EIOKJOLKJPB::EIOKJOLKJPB>,
     // @@protoc_insertion_point(field:DDBLJMPNGAI.DKPNKGNMCEH)
     pub DKPNKGNMCEH: u32,
-    // @@protoc_insertion_point(field:DDBLJMPNGAI.HJEGILAGJOJ)
-    pub HJEGILAGJOJ: i64,
-    // @@protoc_insertion_point(field:DDBLJMPNGAI.PBLFLJNHMIL)
-    pub PBLFLJNHMIL: ::protobuf::EnumOrUnknown<super::MessageGroupStatus::MessageGroupStatus>,
     // @@protoc_insertion_point(field:DDBLJMPNGAI.ELGANMDPMID)
     pub ELGANMDPMID: u32,
+    // @@protoc_insertion_point(field:DDBLJMPNGAI.HJEGILAGJOJ)
+    pub HJEGILAGJOJ: i64,
+    // @@protoc_insertion_point(field:DDBLJMPNGAI.GGHLAFIIAMA)
+    pub GGHLAFIIAMA: ::std::vec::Vec<super::EIOKJOLKJPB::EIOKJOLKJPB>,
+    // @@protoc_insertion_point(field:DDBLJMPNGAI.PBLFLJNHMIL)
+    pub PBLFLJNHMIL: ::protobuf::EnumOrUnknown<super::MessageGroupStatus::MessageGroupStatus>,
     // special fields
     // @@protoc_insertion_point(special_field:DDBLJMPNGAI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,30 +57,30 @@ impl DDBLJMPNGAI {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GGHLAFIIAMA",
-            |m: &DDBLJMPNGAI| { &m.GGHLAFIIAMA },
-            |m: &mut DDBLJMPNGAI| { &mut m.GGHLAFIIAMA },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DKPNKGNMCEH",
             |m: &DDBLJMPNGAI| { &m.DKPNKGNMCEH },
             |m: &mut DDBLJMPNGAI| { &mut m.DKPNKGNMCEH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ELGANMDPMID",
+            |m: &DDBLJMPNGAI| { &m.ELGANMDPMID },
+            |m: &mut DDBLJMPNGAI| { &mut m.ELGANMDPMID },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HJEGILAGJOJ",
             |m: &DDBLJMPNGAI| { &m.HJEGILAGJOJ },
             |m: &mut DDBLJMPNGAI| { &mut m.HJEGILAGJOJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "GGHLAFIIAMA",
+            |m: &DDBLJMPNGAI| { &m.GGHLAFIIAMA },
+            |m: &mut DDBLJMPNGAI| { &mut m.GGHLAFIIAMA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PBLFLJNHMIL",
             |m: &DDBLJMPNGAI| { &m.PBLFLJNHMIL },
             |m: &mut DDBLJMPNGAI| { &mut m.PBLFLJNHMIL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ELGANMDPMID",
-            |m: &DDBLJMPNGAI| { &m.ELGANMDPMID },
-            |m: &mut DDBLJMPNGAI| { &mut m.ELGANMDPMID },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DDBLJMPNGAI>(
             "DDBLJMPNGAI",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for DDBLJMPNGAI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    self.GGHLAFIIAMA.push(is.read_message()?);
-                },
-                112 => {
+                80 => {
                     self.DKPNKGNMCEH = is.read_uint32()?;
+                },
+                16 => {
+                    self.ELGANMDPMID = is.read_uint32()?;
                 },
                 24 => {
                     self.HJEGILAGJOJ = is.read_int64()?;
                 },
-                16 => {
-                    self.PBLFLJNHMIL = is.read_enum_or_unknown()?;
+                10 => {
+                    self.GGHLAFIIAMA.push(is.read_message()?);
                 },
-                32 => {
-                    self.ELGANMDPMID = is.read_uint32()?;
+                88 => {
+                    self.PBLFLJNHMIL = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,21 +127,21 @@ impl ::protobuf::Message for DDBLJMPNGAI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.GGHLAFIIAMA {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if self.DKPNKGNMCEH != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.DKPNKGNMCEH);
+            my_size += ::protobuf::rt::uint32_size(10, self.DKPNKGNMCEH);
+        }
+        if self.ELGANMDPMID != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.ELGANMDPMID);
         }
         if self.HJEGILAGJOJ != 0 {
             my_size += ::protobuf::rt::int64_size(3, self.HJEGILAGJOJ);
         }
+        for value in &self.GGHLAFIIAMA {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::MessageGroupStatus::MessageGroupStatus::MESSAGE_GROUP_NONE) {
-            my_size += ::protobuf::rt::int32_size(2, self.PBLFLJNHMIL.value());
-        }
-        if self.ELGANMDPMID != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.ELGANMDPMID);
+            my_size += ::protobuf::rt::int32_size(11, self.PBLFLJNHMIL.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for DDBLJMPNGAI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.GGHLAFIIAMA {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        };
         if self.DKPNKGNMCEH != 0 {
-            os.write_uint32(14, self.DKPNKGNMCEH)?;
+            os.write_uint32(10, self.DKPNKGNMCEH)?;
+        }
+        if self.ELGANMDPMID != 0 {
+            os.write_uint32(2, self.ELGANMDPMID)?;
         }
         if self.HJEGILAGJOJ != 0 {
             os.write_int64(3, self.HJEGILAGJOJ)?;
         }
+        for v in &self.GGHLAFIIAMA {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        };
         if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::MessageGroupStatus::MessageGroupStatus::MESSAGE_GROUP_NONE) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.PBLFLJNHMIL))?;
-        }
-        if self.ELGANMDPMID != 0 {
-            os.write_uint32(4, self.ELGANMDPMID)?;
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.PBLFLJNHMIL))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for DDBLJMPNGAI {
     }
 
     fn clear(&mut self) {
-        self.GGHLAFIIAMA.clear();
         self.DKPNKGNMCEH = 0;
-        self.HJEGILAGJOJ = 0;
-        self.PBLFLJNHMIL = ::protobuf::EnumOrUnknown::new(super::MessageGroupStatus::MessageGroupStatus::MESSAGE_GROUP_NONE);
         self.ELGANMDPMID = 0;
+        self.HJEGILAGJOJ = 0;
+        self.GGHLAFIIAMA.clear();
+        self.PBLFLJNHMIL = ::protobuf::EnumOrUnknown::new(super::MessageGroupStatus::MessageGroupStatus::MESSAGE_GROUP_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DDBLJMPNGAI {
         static instance: DDBLJMPNGAI = DDBLJMPNGAI {
-            GGHLAFIIAMA: ::std::vec::Vec::new(),
             DKPNKGNMCEH: 0,
-            HJEGILAGJOJ: 0,
-            PBLFLJNHMIL: ::protobuf::EnumOrUnknown::from_i32(0),
             ELGANMDPMID: 0,
+            HJEGILAGJOJ: 0,
+            GGHLAFIIAMA: ::std::vec::Vec::new(),
+            PBLFLJNHMIL: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,12 +221,12 @@ impl ::protobuf::reflect::ProtobufValue for DDBLJMPNGAI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DDBLJMPNGAI.proto\x1a\x11EIOKJOLKJPB.proto\x1a\x18MessageGroupStat\
-    us.proto\"\xda\x01\n\x0bDDBLJMPNGAI\x12.\n\x0bGGHLAFIIAMA\x18\x0c\x20\
-    \x03(\x0b2\x0c.EIOKJOLKJPBR\x0bGGHLAFIIAMA\x12\x20\n\x0bDKPNKGNMCEH\x18\
-    \x0e\x20\x01(\rR\x0bDKPNKGNMCEH\x12\x20\n\x0bHJEGILAGJOJ\x18\x03\x20\x01\
-    (\x03R\x0bHJEGILAGJOJ\x125\n\x0bPBLFLJNHMIL\x18\x02\x20\x01(\x0e2\x13.Me\
-    ssageGroupStatusR\x0bPBLFLJNHMIL\x12\x20\n\x0bELGANMDPMID\x18\x04\x20\
-    \x01(\rR\x0bELGANMDPMIDb\x06proto3\
+    us.proto\"\xda\x01\n\x0bDDBLJMPNGAI\x12\x20\n\x0bDKPNKGNMCEH\x18\n\x20\
+    \x01(\rR\x0bDKPNKGNMCEH\x12\x20\n\x0bELGANMDPMID\x18\x02\x20\x01(\rR\x0b\
+    ELGANMDPMID\x12\x20\n\x0bHJEGILAGJOJ\x18\x03\x20\x01(\x03R\x0bHJEGILAGJO\
+    J\x12.\n\x0bGGHLAFIIAMA\x18\x01\x20\x03(\x0b2\x0c.EIOKJOLKJPBR\x0bGGHLAF\
+    IIAMA\x125\n\x0bPBLFLJNHMIL\x18\x0b\x20\x01(\x0e2\x13.MessageGroupStatus\
+    R\x0bPBLFLJNHMILb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

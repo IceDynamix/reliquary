@@ -52,7 +52,7 @@ impl CJKCOAEOHCF {
         ::std::default::Default::default()
     }
 
-    // .GPGGAINLLIN PCJLGHBIJCM = 14;
+    // .GPGGAINLLIN PCJLGHBIJCM = 2;
 
     pub fn PCJLGHBIJCM(&self) -> &super::GPGGAINLLIN::GPGGAINLLIN {
         match self.KFELKJLDKEH {
@@ -101,7 +101,7 @@ impl CJKCOAEOHCF {
         }
     }
 
-    // uint32 HCAHEKMGEAN = 8;
+    // uint32 HCAHEKMGEAN = 5;
 
     pub fn HCAHEKMGEAN(&self) -> u32 {
         match self.KFELKJLDKEH {
@@ -176,19 +176,19 @@ impl ::protobuf::Message for CJKCOAEOHCF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                32 => {
                     self.BPMDFENIDBF = is.read_uint32()?;
                 },
-                120 => {
+                80 => {
                     self.ALIFPIHNMEK = is.read_enum_or_unknown()?;
                 },
-                16 => {
+                64 => {
                     self.HIODKMAPOAE = is.read_uint32()?;
                 },
-                114 => {
+                18 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(cjkcoaeohcf::KFELKJLDKEH::PCJLGHBIJCM(is.read_message()?));
                 },
-                64 => {
+                40 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(cjkcoaeohcf::KFELKJLDKEH::HCAHEKMGEAN(is.read_uint32()?));
                 },
                 tag => {
@@ -204,13 +204,13 @@ impl ::protobuf::Message for CJKCOAEOHCF {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.BPMDFENIDBF != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.BPMDFENIDBF);
+            my_size += ::protobuf::rt::uint32_size(4, self.BPMDFENIDBF);
         }
         if self.ALIFPIHNMEK != ::protobuf::EnumOrUnknown::new(super::CAGLGPAOALO::CAGLGPAOALO::SCENE_ENTITY_BUFF_CHANGE_TYPE_DEFAULT) {
-            my_size += ::protobuf::rt::int32_size(15, self.ALIFPIHNMEK.value());
+            my_size += ::protobuf::rt::int32_size(10, self.ALIFPIHNMEK.value());
         }
         if self.HIODKMAPOAE != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.HIODKMAPOAE);
+            my_size += ::protobuf::rt::uint32_size(8, self.HIODKMAPOAE);
         }
         if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
             match v {
@@ -219,7 +219,7 @@ impl ::protobuf::Message for CJKCOAEOHCF {
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &cjkcoaeohcf::KFELKJLDKEH::HCAHEKMGEAN(v) => {
-                    my_size += ::protobuf::rt::uint32_size(8, v);
+                    my_size += ::protobuf::rt::uint32_size(5, v);
                 },
             };
         }
@@ -230,21 +230,21 @@ impl ::protobuf::Message for CJKCOAEOHCF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BPMDFENIDBF != 0 {
-            os.write_uint32(5, self.BPMDFENIDBF)?;
+            os.write_uint32(4, self.BPMDFENIDBF)?;
         }
         if self.ALIFPIHNMEK != ::protobuf::EnumOrUnknown::new(super::CAGLGPAOALO::CAGLGPAOALO::SCENE_ENTITY_BUFF_CHANGE_TYPE_DEFAULT) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.ALIFPIHNMEK))?;
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.ALIFPIHNMEK))?;
         }
         if self.HIODKMAPOAE != 0 {
-            os.write_uint32(2, self.HIODKMAPOAE)?;
+            os.write_uint32(8, self.HIODKMAPOAE)?;
         }
         if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
             match v {
                 &cjkcoaeohcf::KFELKJLDKEH::PCJLGHBIJCM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
                 &cjkcoaeohcf::KFELKJLDKEH::HCAHEKMGEAN(v) => {
-                    os.write_uint32(8, v)?;
+                    os.write_uint32(5, v)?;
                 },
             };
         }
@@ -334,11 +334,11 @@ pub mod cjkcoaeohcf {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CJKCOAEOHCF.proto\x1a\x11CAGLGPAOALO.proto\x1a\x11GPGGAINLLIN.prot\
-    o\"\xe6\x01\n\x0bCJKCOAEOHCF\x12\x20\n\x0bBPMDFENIDBF\x18\x05\x20\x01(\r\
-    R\x0bBPMDFENIDBF\x12.\n\x0bALIFPIHNMEK\x18\x0f\x20\x01(\x0e2\x0c.CAGLGPA\
-    OALOR\x0bALIFPIHNMEK\x12\x20\n\x0bHIODKMAPOAE\x18\x02\x20\x01(\rR\x0bHIO\
-    DKMAPOAE\x120\n\x0bPCJLGHBIJCM\x18\x0e\x20\x01(\x0b2\x0c.GPGGAINLLINH\0R\
-    \x0bPCJLGHBIJCM\x12\"\n\x0bHCAHEKMGEAN\x18\x08\x20\x01(\rH\0R\x0bHCAHEKM\
+    o\"\xe6\x01\n\x0bCJKCOAEOHCF\x12\x20\n\x0bBPMDFENIDBF\x18\x04\x20\x01(\r\
+    R\x0bBPMDFENIDBF\x12.\n\x0bALIFPIHNMEK\x18\n\x20\x01(\x0e2\x0c.CAGLGPAOA\
+    LOR\x0bALIFPIHNMEK\x12\x20\n\x0bHIODKMAPOAE\x18\x08\x20\x01(\rR\x0bHIODK\
+    MAPOAE\x120\n\x0bPCJLGHBIJCM\x18\x02\x20\x01(\x0b2\x0c.GPGGAINLLINH\0R\
+    \x0bPCJLGHBIJCM\x12\"\n\x0bHCAHEKMGEAN\x18\x05\x20\x01(\rH\0R\x0bHCAHEKM\
     GEANB\r\n\x0bKFELKJLDKEHb\x06proto3\
 ";
 

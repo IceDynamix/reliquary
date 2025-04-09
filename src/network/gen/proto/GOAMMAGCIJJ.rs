@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GOAMMAGCIJJ {
     // message fields
-    // @@protoc_insertion_point(field:GOAMMAGCIJJ.ELIADKDAECO)
-    pub ELIADKDAECO: u32,
     // @@protoc_insertion_point(field:GOAMMAGCIJJ.KMAEMPMOCCC)
     pub KMAEMPMOCCC: u32,
     // @@protoc_insertion_point(field:GOAMMAGCIJJ.JNDKOOEJCFC)
     pub JNDKOOEJCFC: ::std::vec::Vec<GOAMMAGCIJJ>,
+    // @@protoc_insertion_point(field:GOAMMAGCIJJ.ELIADKDAECO)
+    pub ELIADKDAECO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GOAMMAGCIJJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl GOAMMAGCIJJ {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ELIADKDAECO",
-            |m: &GOAMMAGCIJJ| { &m.ELIADKDAECO },
-            |m: &mut GOAMMAGCIJJ| { &mut m.ELIADKDAECO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KMAEMPMOCCC",
             |m: &GOAMMAGCIJJ| { &m.KMAEMPMOCCC },
             |m: &mut GOAMMAGCIJJ| { &mut m.KMAEMPMOCCC },
@@ -67,6 +62,11 @@ impl GOAMMAGCIJJ {
             "JNDKOOEJCFC",
             |m: &GOAMMAGCIJJ| { &m.JNDKOOEJCFC },
             |m: &mut GOAMMAGCIJJ| { &mut m.JNDKOOEJCFC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ELIADKDAECO",
+            |m: &GOAMMAGCIJJ| { &m.ELIADKDAECO },
+            |m: &mut GOAMMAGCIJJ| { &mut m.ELIADKDAECO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GOAMMAGCIJJ>(
             "GOAMMAGCIJJ",
@@ -87,13 +87,13 @@ impl ::protobuf::Message for GOAMMAGCIJJ {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 24 => {
-                    self.ELIADKDAECO = is.read_uint32()?;
-                },
-                80 => {
                     self.KMAEMPMOCCC = is.read_uint32()?;
                 },
-                90 => {
+                66 => {
                     self.JNDKOOEJCFC.push(is.read_message()?);
+                },
+                104 => {
+                    self.ELIADKDAECO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,31 +107,31 @@ impl ::protobuf::Message for GOAMMAGCIJJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ELIADKDAECO != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.ELIADKDAECO);
-        }
         if self.KMAEMPMOCCC != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.KMAEMPMOCCC);
+            my_size += ::protobuf::rt::uint32_size(3, self.KMAEMPMOCCC);
         }
         for value in &self.JNDKOOEJCFC {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.ELIADKDAECO != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.ELIADKDAECO);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ELIADKDAECO != 0 {
-            os.write_uint32(3, self.ELIADKDAECO)?;
-        }
         if self.KMAEMPMOCCC != 0 {
-            os.write_uint32(10, self.KMAEMPMOCCC)?;
+            os.write_uint32(3, self.KMAEMPMOCCC)?;
         }
         for v in &self.JNDKOOEJCFC {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
+        if self.ELIADKDAECO != 0 {
+            os.write_uint32(13, self.ELIADKDAECO)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,17 +149,17 @@ impl ::protobuf::Message for GOAMMAGCIJJ {
     }
 
     fn clear(&mut self) {
-        self.ELIADKDAECO = 0;
         self.KMAEMPMOCCC = 0;
         self.JNDKOOEJCFC.clear();
+        self.ELIADKDAECO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GOAMMAGCIJJ {
         static instance: GOAMMAGCIJJ = GOAMMAGCIJJ {
-            ELIADKDAECO: 0,
             KMAEMPMOCCC: 0,
             JNDKOOEJCFC: ::std::vec::Vec::new(),
+            ELIADKDAECO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for GOAMMAGCIJJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GOAMMAGCIJJ.proto\"\x81\x01\n\x0bGOAMMAGCIJJ\x12\x20\n\x0bELIADKDA\
-    ECO\x18\x03\x20\x01(\rR\x0bELIADKDAECO\x12\x20\n\x0bKMAEMPMOCCC\x18\n\
-    \x20\x01(\rR\x0bKMAEMPMOCCC\x12.\n\x0bJNDKOOEJCFC\x18\x0b\x20\x03(\x0b2\
-    \x0c.GOAMMAGCIJJR\x0bJNDKOOEJCFCb\x06proto3\
+    \n\x11GOAMMAGCIJJ.proto\"\x81\x01\n\x0bGOAMMAGCIJJ\x12\x20\n\x0bKMAEMPMO\
+    CCC\x18\x03\x20\x01(\rR\x0bKMAEMPMOCCC\x12.\n\x0bJNDKOOEJCFC\x18\x08\x20\
+    \x03(\x0b2\x0c.GOAMMAGCIJJR\x0bJNDKOOEJCFC\x12\x20\n\x0bELIADKDAECO\x18\
+    \r\x20\x01(\rR\x0bELIADKDAECOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

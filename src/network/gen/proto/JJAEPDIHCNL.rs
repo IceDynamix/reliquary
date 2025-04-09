@@ -79,10 +79,10 @@ impl ::protobuf::Message for JJAEPDIHCNL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                88 => {
                     self.HECKMDLOLAG = is.read_uint32()?;
                 },
-                48 => {
+                112 => {
                     self.FPBEDNCOCHO = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for JJAEPDIHCNL {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HECKMDLOLAG != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.HECKMDLOLAG);
+            my_size += ::protobuf::rt::uint32_size(11, self.HECKMDLOLAG);
         }
         if self.FPBEDNCOCHO != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.FPBEDNCOCHO);
+            my_size += ::protobuf::rt::uint32_size(14, self.FPBEDNCOCHO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for JJAEPDIHCNL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HECKMDLOLAG != 0 {
-            os.write_uint32(15, self.HECKMDLOLAG)?;
+            os.write_uint32(11, self.HECKMDLOLAG)?;
         }
         if self.FPBEDNCOCHO != 0 {
-            os.write_uint32(6, self.FPBEDNCOCHO)?;
+            os.write_uint32(14, self.FPBEDNCOCHO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for JJAEPDIHCNL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JJAEPDIHCNL.proto\"Q\n\x0bJJAEPDIHCNL\x12\x20\n\x0bHECKMDLOLAG\x18\
-    \x0f\x20\x01(\rR\x0bHECKMDLOLAG\x12\x20\n\x0bFPBEDNCOCHO\x18\x06\x20\x01\
+    \x0b\x20\x01(\rR\x0bHECKMDLOLAG\x12\x20\n\x0bFPBEDNCOCHO\x18\x0e\x20\x01\
     (\rR\x0bFPBEDNCOCHOb\x06proto3\
 ";
 

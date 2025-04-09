@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TravelBrochureRemovePasterCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TravelBrochureRemovePasterCsReq.unique_id)
-    pub unique_id: u64,
-    // @@protoc_insertion_point(field:TravelBrochureRemovePasterCsReq.CPODEJOFPDD)
-    pub CPODEJOFPDD: u32,
     // @@protoc_insertion_point(field:TravelBrochureRemovePasterCsReq.FILDLBJOMLD)
     pub FILDLBJOMLD: u32,
+    // @@protoc_insertion_point(field:TravelBrochureRemovePasterCsReq.CPODEJOFPDD)
+    pub CPODEJOFPDD: u32,
+    // @@protoc_insertion_point(field:TravelBrochureRemovePasterCsReq.unique_id)
+    pub unique_id: u64,
     // special fields
     // @@protoc_insertion_point(special_field:TravelBrochureRemovePasterCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl TravelBrochureRemovePasterCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unique_id",
-            |m: &TravelBrochureRemovePasterCsReq| { &m.unique_id },
-            |m: &mut TravelBrochureRemovePasterCsReq| { &mut m.unique_id },
+            "FILDLBJOMLD",
+            |m: &TravelBrochureRemovePasterCsReq| { &m.FILDLBJOMLD },
+            |m: &mut TravelBrochureRemovePasterCsReq| { &mut m.FILDLBJOMLD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CPODEJOFPDD",
@@ -64,9 +64,9 @@ impl TravelBrochureRemovePasterCsReq {
             |m: &mut TravelBrochureRemovePasterCsReq| { &mut m.CPODEJOFPDD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FILDLBJOMLD",
-            |m: &TravelBrochureRemovePasterCsReq| { &m.FILDLBJOMLD },
-            |m: &mut TravelBrochureRemovePasterCsReq| { &mut m.FILDLBJOMLD },
+            "unique_id",
+            |m: &TravelBrochureRemovePasterCsReq| { &m.unique_id },
+            |m: &mut TravelBrochureRemovePasterCsReq| { &mut m.unique_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TravelBrochureRemovePasterCsReq>(
             "TravelBrochureRemovePasterCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for TravelBrochureRemovePasterCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.unique_id = is.read_uint64()?;
+                96 => {
+                    self.FILDLBJOMLD = is.read_uint32()?;
                 },
-                16 => {
+                24 => {
                     self.CPODEJOFPDD = is.read_uint32()?;
                 },
-                88 => {
-                    self.FILDLBJOMLD = is.read_uint32()?;
+                104 => {
+                    self.unique_id = is.read_uint64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for TravelBrochureRemovePasterCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint64_size(14, self.unique_id);
+        if self.FILDLBJOMLD != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.FILDLBJOMLD);
         }
         if self.CPODEJOFPDD != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.CPODEJOFPDD);
+            my_size += ::protobuf::rt::uint32_size(3, self.CPODEJOFPDD);
         }
-        if self.FILDLBJOMLD != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.FILDLBJOMLD);
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::uint64_size(13, self.unique_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for TravelBrochureRemovePasterCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.unique_id != 0 {
-            os.write_uint64(14, self.unique_id)?;
+        if self.FILDLBJOMLD != 0 {
+            os.write_uint32(12, self.FILDLBJOMLD)?;
         }
         if self.CPODEJOFPDD != 0 {
-            os.write_uint32(2, self.CPODEJOFPDD)?;
+            os.write_uint32(3, self.CPODEJOFPDD)?;
         }
-        if self.FILDLBJOMLD != 0 {
-            os.write_uint32(11, self.FILDLBJOMLD)?;
+        if self.unique_id != 0 {
+            os.write_uint64(13, self.unique_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for TravelBrochureRemovePasterCsReq {
     }
 
     fn clear(&mut self) {
-        self.unique_id = 0;
-        self.CPODEJOFPDD = 0;
         self.FILDLBJOMLD = 0;
+        self.CPODEJOFPDD = 0;
+        self.unique_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TravelBrochureRemovePasterCsReq {
         static instance: TravelBrochureRemovePasterCsReq = TravelBrochureRemovePasterCsReq {
-            unique_id: 0,
-            CPODEJOFPDD: 0,
             FILDLBJOMLD: 0,
+            CPODEJOFPDD: 0,
+            unique_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for TravelBrochureRemovePasterCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%TravelBrochureRemovePasterCsReq.proto\"\x82\x01\n\x1fTravelBrochureRe\
-    movePasterCsReq\x12\x1b\n\tunique_id\x18\x0e\x20\x01(\x04R\x08uniqueId\
-    \x12\x20\n\x0bCPODEJOFPDD\x18\x02\x20\x01(\rR\x0bCPODEJOFPDD\x12\x20\n\
-    \x0bFILDLBJOMLD\x18\x0b\x20\x01(\rR\x0bFILDLBJOMLDb\x06proto3\
+    movePasterCsReq\x12\x20\n\x0bFILDLBJOMLD\x18\x0c\x20\x01(\rR\x0bFILDLBJO\
+    MLD\x12\x20\n\x0bCPODEJOFPDD\x18\x03\x20\x01(\rR\x0bCPODEJOFPDD\x12\x1b\
+    \n\tunique_id\x18\r\x20\x01(\x04R\x08uniqueIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

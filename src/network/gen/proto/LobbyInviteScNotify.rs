@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LobbyInviteScNotify {
     // message fields
-    // @@protoc_insertion_point(field:LobbyInviteScNotify.NBDLPGBIDLC)
-    pub NBDLPGBIDLC: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
     // @@protoc_insertion_point(field:LobbyInviteScNotify.OCKHGCPFPEC)
     pub OCKHGCPFPEC: u32,
+    // @@protoc_insertion_point(field:LobbyInviteScNotify.NBDLPGBIDLC)
+    pub NBDLPGBIDLC: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
     // @@protoc_insertion_point(field:LobbyInviteScNotify.JJLOGICPOAO)
     pub JJLOGICPOAO: u32,
     // special fields
@@ -54,14 +54,14 @@ impl LobbyInviteScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NBDLPGBIDLC",
-            |m: &LobbyInviteScNotify| { &m.NBDLPGBIDLC },
-            |m: &mut LobbyInviteScNotify| { &mut m.NBDLPGBIDLC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OCKHGCPFPEC",
             |m: &LobbyInviteScNotify| { &m.OCKHGCPFPEC },
             |m: &mut LobbyInviteScNotify| { &mut m.OCKHGCPFPEC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NBDLPGBIDLC",
+            |m: &LobbyInviteScNotify| { &m.NBDLPGBIDLC },
+            |m: &mut LobbyInviteScNotify| { &mut m.NBDLPGBIDLC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JJLOGICPOAO",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for LobbyInviteScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.NBDLPGBIDLC = is.read_enum_or_unknown()?;
-                },
-                112 => {
+                96 => {
                     self.OCKHGCPFPEC = is.read_uint32()?;
                 },
-                88 => {
+                120 => {
+                    self.NBDLPGBIDLC = is.read_enum_or_unknown()?;
+                },
+                24 => {
                     self.JJLOGICPOAO = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for LobbyInviteScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NBDLPGBIDLC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
-            my_size += ::protobuf::rt::int32_size(7, self.NBDLPGBIDLC.value());
-        }
         if self.OCKHGCPFPEC != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.OCKHGCPFPEC);
+            my_size += ::protobuf::rt::uint32_size(12, self.OCKHGCPFPEC);
+        }
+        if self.NBDLPGBIDLC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
+            my_size += ::protobuf::rt::int32_size(15, self.NBDLPGBIDLC.value());
         }
         if self.JJLOGICPOAO != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.JJLOGICPOAO);
+            my_size += ::protobuf::rt::uint32_size(3, self.JJLOGICPOAO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for LobbyInviteScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NBDLPGBIDLC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.NBDLPGBIDLC))?;
-        }
         if self.OCKHGCPFPEC != 0 {
-            os.write_uint32(14, self.OCKHGCPFPEC)?;
+            os.write_uint32(12, self.OCKHGCPFPEC)?;
+        }
+        if self.NBDLPGBIDLC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.NBDLPGBIDLC))?;
         }
         if self.JJLOGICPOAO != 0 {
-            os.write_uint32(11, self.JJLOGICPOAO)?;
+            os.write_uint32(3, self.JJLOGICPOAO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for LobbyInviteScNotify {
     }
 
     fn clear(&mut self) {
-        self.NBDLPGBIDLC = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE);
         self.OCKHGCPFPEC = 0;
+        self.NBDLPGBIDLC = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE);
         self.JJLOGICPOAO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LobbyInviteScNotify {
         static instance: LobbyInviteScNotify = LobbyInviteScNotify {
-            NBDLPGBIDLC: ::protobuf::EnumOrUnknown::from_i32(0),
             OCKHGCPFPEC: 0,
+            NBDLPGBIDLC: ::protobuf::EnumOrUnknown::from_i32(0),
             JJLOGICPOAO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for LobbyInviteScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19LobbyInviteScNotify.proto\x1a\x13FightGameMode.proto\"\x8b\x01\n\
-    \x13LobbyInviteScNotify\x120\n\x0bNBDLPGBIDLC\x18\x07\x20\x01(\x0e2\x0e.\
-    FightGameModeR\x0bNBDLPGBIDLC\x12\x20\n\x0bOCKHGCPFPEC\x18\x0e\x20\x01(\
-    \rR\x0bOCKHGCPFPEC\x12\x20\n\x0bJJLOGICPOAO\x18\x0b\x20\x01(\rR\x0bJJLOG\
-    ICPOAOb\x06proto3\
+    \x13LobbyInviteScNotify\x12\x20\n\x0bOCKHGCPFPEC\x18\x0c\x20\x01(\rR\x0b\
+    OCKHGCPFPEC\x120\n\x0bNBDLPGBIDLC\x18\x0f\x20\x01(\x0e2\x0e.FightGameMod\
+    eR\x0bNBDLPGBIDLC\x12\x20\n\x0bJJLOGICPOAO\x18\x03\x20\x01(\rR\x0bJJLOGI\
+    CPOAOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

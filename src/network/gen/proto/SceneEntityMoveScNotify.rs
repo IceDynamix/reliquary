@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneEntityMoveScNotify {
     // message fields
+    // @@protoc_insertion_point(field:SceneEntityMoveScNotify.CCIIHMMJOEM)
+    pub CCIIHMMJOEM: u32,
+    // @@protoc_insertion_point(field:SceneEntityMoveScNotify.NMCNCKKMMOD)
+    pub NMCNCKKMMOD: u32,
     // @@protoc_insertion_point(field:SceneEntityMoveScNotify.MFNBANEDODD)
     pub MFNBANEDODD: ::protobuf::MessageField<super::CFKHKILIHHF::CFKHKILIHHF>,
     // @@protoc_insertion_point(field:SceneEntityMoveScNotify.HIODKMAPOAE)
     pub HIODKMAPOAE: u32,
-    // @@protoc_insertion_point(field:SceneEntityMoveScNotify.NMCNCKKMMOD)
-    pub NMCNCKKMMOD: u32,
-    // @@protoc_insertion_point(field:SceneEntityMoveScNotify.CCIIHMMJOEM)
-    pub CCIIHMMJOEM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SceneEntityMoveScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,6 +55,16 @@ impl SceneEntityMoveScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CCIIHMMJOEM",
+            |m: &SceneEntityMoveScNotify| { &m.CCIIHMMJOEM },
+            |m: &mut SceneEntityMoveScNotify| { &mut m.CCIIHMMJOEM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NMCNCKKMMOD",
+            |m: &SceneEntityMoveScNotify| { &m.NMCNCKKMMOD },
+            |m: &mut SceneEntityMoveScNotify| { &mut m.NMCNCKKMMOD },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CFKHKILIHHF::CFKHKILIHHF>(
             "MFNBANEDODD",
             |m: &SceneEntityMoveScNotify| { &m.MFNBANEDODD },
@@ -64,16 +74,6 @@ impl SceneEntityMoveScNotify {
             "HIODKMAPOAE",
             |m: &SceneEntityMoveScNotify| { &m.HIODKMAPOAE },
             |m: &mut SceneEntityMoveScNotify| { &mut m.HIODKMAPOAE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NMCNCKKMMOD",
-            |m: &SceneEntityMoveScNotify| { &m.NMCNCKKMMOD },
-            |m: &mut SceneEntityMoveScNotify| { &mut m.NMCNCKKMMOD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CCIIHMMJOEM",
-            |m: &SceneEntityMoveScNotify| { &m.CCIIHMMJOEM },
-            |m: &mut SceneEntityMoveScNotify| { &mut m.CCIIHMMJOEM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SceneEntityMoveScNotify>(
             "SceneEntityMoveScNotify",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for SceneEntityMoveScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MFNBANEDODD)?;
+                64 => {
+                    self.CCIIHMMJOEM = is.read_uint32()?;
                 },
-                48 => {
-                    self.HIODKMAPOAE = is.read_uint32()?;
-                },
-                112 => {
+                88 => {
                     self.NMCNCKKMMOD = is.read_uint32()?;
                 },
-                8 => {
-                    self.CCIIHMMJOEM = is.read_uint32()?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MFNBANEDODD)?;
+                },
+                72 => {
+                    self.HIODKMAPOAE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for SceneEntityMoveScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.CCIIHMMJOEM != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.CCIIHMMJOEM);
+        }
+        if self.NMCNCKKMMOD != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.NMCNCKKMMOD);
+        }
         if let Some(v) = self.MFNBANEDODD.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.HIODKMAPOAE != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.HIODKMAPOAE);
-        }
-        if self.NMCNCKKMMOD != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.NMCNCKKMMOD);
-        }
-        if self.CCIIHMMJOEM != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.CCIIHMMJOEM);
+            my_size += ::protobuf::rt::uint32_size(9, self.HIODKMAPOAE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for SceneEntityMoveScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.MFNBANEDODD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        }
-        if self.HIODKMAPOAE != 0 {
-            os.write_uint32(6, self.HIODKMAPOAE)?;
+        if self.CCIIHMMJOEM != 0 {
+            os.write_uint32(8, self.CCIIHMMJOEM)?;
         }
         if self.NMCNCKKMMOD != 0 {
-            os.write_uint32(14, self.NMCNCKKMMOD)?;
+            os.write_uint32(11, self.NMCNCKKMMOD)?;
         }
-        if self.CCIIHMMJOEM != 0 {
-            os.write_uint32(1, self.CCIIHMMJOEM)?;
+        if let Some(v) = self.MFNBANEDODD.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        }
+        if self.HIODKMAPOAE != 0 {
+            os.write_uint32(9, self.HIODKMAPOAE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for SceneEntityMoveScNotify {
     }
 
     fn clear(&mut self) {
+        self.CCIIHMMJOEM = 0;
+        self.NMCNCKKMMOD = 0;
         self.MFNBANEDODD.clear();
         self.HIODKMAPOAE = 0;
-        self.NMCNCKKMMOD = 0;
-        self.CCIIHMMJOEM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneEntityMoveScNotify {
         static instance: SceneEntityMoveScNotify = SceneEntityMoveScNotify {
+            CCIIHMMJOEM: 0,
+            NMCNCKKMMOD: 0,
             MFNBANEDODD: ::protobuf::MessageField::none(),
             HIODKMAPOAE: 0,
-            NMCNCKKMMOD: 0,
-            CCIIHMMJOEM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,11 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for SceneEntityMoveScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dSceneEntityMoveScNotify.proto\x1a\x11CFKHKILIHHF.proto\"\xaf\x01\n\
-    \x17SceneEntityMoveScNotify\x12.\n\x0bMFNBANEDODD\x18\x08\x20\x01(\x0b2\
-    \x0c.CFKHKILIHHFR\x0bMFNBANEDODD\x12\x20\n\x0bHIODKMAPOAE\x18\x06\x20\
-    \x01(\rR\x0bHIODKMAPOAE\x12\x20\n\x0bNMCNCKKMMOD\x18\x0e\x20\x01(\rR\x0b\
-    NMCNCKKMMOD\x12\x20\n\x0bCCIIHMMJOEM\x18\x01\x20\x01(\rR\x0bCCIIHMMJOEMb\
-    \x06proto3\
+    \x17SceneEntityMoveScNotify\x12\x20\n\x0bCCIIHMMJOEM\x18\x08\x20\x01(\rR\
+    \x0bCCIIHMMJOEM\x12\x20\n\x0bNMCNCKKMMOD\x18\x0b\x20\x01(\rR\x0bNMCNCKKM\
+    MOD\x12.\n\x0bMFNBANEDODD\x18\x0e\x20\x01(\x0b2\x0c.CFKHKILIHHFR\x0bMFNB\
+    ANEDODD\x12\x20\n\x0bHIODKMAPOAE\x18\t\x20\x01(\rR\x0bHIODKMAPOAEb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

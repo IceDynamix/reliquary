@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetBigDataRecommendCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                120 => {
                     self.IANNEEIJAKH = is.read_enum_or_unknown()?;
                 },
-                32 => {
+                8 => {
                     self.EIGPMIBCIKG = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for GetBigDataRecommendCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.IANNEEIJAKH != ::protobuf::EnumOrUnknown::new(super::KLDHJGEGGLJ::KLDHJGEGGLJ::BIG_DATA_RECOMMEND_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(10, self.IANNEEIJAKH.value());
+            my_size += ::protobuf::rt::int32_size(15, self.IANNEEIJAKH.value());
         }
         if self.EIGPMIBCIKG != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.EIGPMIBCIKG);
+            my_size += ::protobuf::rt::uint32_size(1, self.EIGPMIBCIKG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GetBigDataRecommendCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IANNEEIJAKH != ::protobuf::EnumOrUnknown::new(super::KLDHJGEGGLJ::KLDHJGEGGLJ::BIG_DATA_RECOMMEND_TYPE_NONE) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.IANNEEIJAKH))?;
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.IANNEEIJAKH))?;
         }
         if self.EIGPMIBCIKG != 0 {
-            os.write_uint32(4, self.EIGPMIBCIKG)?;
+            os.write_uint32(1, self.EIGPMIBCIKG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for GetBigDataRecommendCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eGetBigDataRecommendCsReq.proto\x1a\x11KLDHJGEGGLJ.proto\"l\n\x18Ge\
-    tBigDataRecommendCsReq\x12.\n\x0bIANNEEIJAKH\x18\n\x20\x01(\x0e2\x0c.KLD\
-    HJGEGGLJR\x0bIANNEEIJAKH\x12\x20\n\x0bEIGPMIBCIKG\x18\x04\x20\x01(\rR\
+    tBigDataRecommendCsReq\x12.\n\x0bIANNEEIJAKH\x18\x0f\x20\x01(\x0e2\x0c.K\
+    LDHJGEGGLJR\x0bIANNEEIJAKH\x12\x20\n\x0bEIGPMIBCIKG\x18\x01\x20\x01(\rR\
     \x0bEIGPMIBCIKGb\x06proto3\
 ";
 

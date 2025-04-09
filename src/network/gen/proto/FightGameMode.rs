@@ -31,6 +31,8 @@ pub enum FightGameMode {
     FIGHT_GAME_MODE_NONE = 0,
     // @@protoc_insertion_point(enum_value:FightGameMode.FIGHT_GAME_MODE_MATCH3)
     FIGHT_GAME_MODE_MATCH3 = 1,
+    // @@protoc_insertion_point(enum_value:FightGameMode.FIGHT_GAME_MODE_MARBLE)
+    FIGHT_GAME_MODE_MARBLE = 2,
 }
 
 impl ::protobuf::Enum for FightGameMode {
@@ -44,6 +46,7 @@ impl ::protobuf::Enum for FightGameMode {
         match value {
             0 => ::std::option::Option::Some(FightGameMode::FIGHT_GAME_MODE_NONE),
             1 => ::std::option::Option::Some(FightGameMode::FIGHT_GAME_MODE_MATCH3),
+            2 => ::std::option::Option::Some(FightGameMode::FIGHT_GAME_MODE_MARBLE),
             _ => ::std::option::Option::None
         }
     }
@@ -52,6 +55,7 @@ impl ::protobuf::Enum for FightGameMode {
         match str {
             "FIGHT_GAME_MODE_NONE" => ::std::option::Option::Some(FightGameMode::FIGHT_GAME_MODE_NONE),
             "FIGHT_GAME_MODE_MATCH3" => ::std::option::Option::Some(FightGameMode::FIGHT_GAME_MODE_MATCH3),
+            "FIGHT_GAME_MODE_MARBLE" => ::std::option::Option::Some(FightGameMode::FIGHT_GAME_MODE_MARBLE),
             _ => ::std::option::Option::None
         }
     }
@@ -59,6 +63,7 @@ impl ::protobuf::Enum for FightGameMode {
     const VALUES: &'static [FightGameMode] = &[
         FightGameMode::FIGHT_GAME_MODE_NONE,
         FightGameMode::FIGHT_GAME_MODE_MATCH3,
+        FightGameMode::FIGHT_GAME_MODE_MARBLE,
     ];
 }
 
@@ -87,8 +92,9 @@ impl FightGameMode {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13FightGameMode.proto*E\n\rFightGameMode\x12\x18\n\x14FIGHT_GAME_MOD\
-    E_NONE\x10\0\x12\x1a\n\x16FIGHT_GAME_MODE_MATCH3\x10\x01b\x06proto3\
+    \n\x13FightGameMode.proto*a\n\rFightGameMode\x12\x18\n\x14FIGHT_GAME_MOD\
+    E_NONE\x10\0\x12\x1a\n\x16FIGHT_GAME_MODE_MATCH3\x10\x01\x12\x1a\n\x16FI\
+    GHT_GAME_MODE_MARBLE\x10\x02b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

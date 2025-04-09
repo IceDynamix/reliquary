@@ -29,22 +29,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdTrackPhotoActivityType {
     // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.CmdTrackPhotoActivityTypeNone)
     CmdTrackPhotoActivityTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.CmdSettleTrackPhotoStageCsReq)
-    CmdSettleTrackPhotoStageCsReq = 7551,
     // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.CmdQuitTrackPhotoStageCsReq)
-    CmdQuitTrackPhotoStageCsReq = 7553,
-    // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.CmdStartTrackPhotoStageScRsp)
-    CmdStartTrackPhotoStageScRsp = 7557,
-    // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.CmdQuitTrackPhotoStageScRsp)
-    CmdQuitTrackPhotoStageScRsp = 7552,
-    // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.CmdSettleTrackPhotoStageScRsp)
-    CmdSettleTrackPhotoStageScRsp = 7556,
+    CmdQuitTrackPhotoStageCsReq = 7555,
     // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.CmdGetTrackPhotoActivityDataScRsp)
-    CmdGetTrackPhotoActivityDataScRsp = 7558,
-    // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.CmdGetTrackPhotoActivityDataCsReq)
-    CmdGetTrackPhotoActivityDataCsReq = 7559,
+    CmdGetTrackPhotoActivityDataScRsp = 7556,
+    // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.CmdSettleTrackPhotoStageScRsp)
+    CmdSettleTrackPhotoStageScRsp = 7557,
+    // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.CmdStartTrackPhotoStageScRsp)
+    CmdStartTrackPhotoStageScRsp = 7552,
     // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.CmdStartTrackPhotoStageCsReq)
-    CmdStartTrackPhotoStageCsReq = 7555,
+    CmdStartTrackPhotoStageCsReq = 7558,
+    // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.CmdQuitTrackPhotoStageScRsp)
+    CmdQuitTrackPhotoStageScRsp = 7553,
+    // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.CmdSettleTrackPhotoStageCsReq)
+    CmdSettleTrackPhotoStageCsReq = 7559,
+    // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.CmdGetTrackPhotoActivityDataCsReq)
+    CmdGetTrackPhotoActivityDataCsReq = 7554,
 }
 
 impl ::protobuf::Enum for CmdTrackPhotoActivityType {
@@ -57,14 +57,14 @@ impl ::protobuf::Enum for CmdTrackPhotoActivityType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdTrackPhotoActivityType> {
         match value {
             0 => ::std::option::Option::Some(CmdTrackPhotoActivityType::CmdTrackPhotoActivityTypeNone),
-            7551 => ::std::option::Option::Some(CmdTrackPhotoActivityType::CmdSettleTrackPhotoStageCsReq),
-            7553 => ::std::option::Option::Some(CmdTrackPhotoActivityType::CmdQuitTrackPhotoStageCsReq),
-            7557 => ::std::option::Option::Some(CmdTrackPhotoActivityType::CmdStartTrackPhotoStageScRsp),
-            7552 => ::std::option::Option::Some(CmdTrackPhotoActivityType::CmdQuitTrackPhotoStageScRsp),
-            7556 => ::std::option::Option::Some(CmdTrackPhotoActivityType::CmdSettleTrackPhotoStageScRsp),
-            7558 => ::std::option::Option::Some(CmdTrackPhotoActivityType::CmdGetTrackPhotoActivityDataScRsp),
-            7559 => ::std::option::Option::Some(CmdTrackPhotoActivityType::CmdGetTrackPhotoActivityDataCsReq),
-            7555 => ::std::option::Option::Some(CmdTrackPhotoActivityType::CmdStartTrackPhotoStageCsReq),
+            7555 => ::std::option::Option::Some(CmdTrackPhotoActivityType::CmdQuitTrackPhotoStageCsReq),
+            7556 => ::std::option::Option::Some(CmdTrackPhotoActivityType::CmdGetTrackPhotoActivityDataScRsp),
+            7557 => ::std::option::Option::Some(CmdTrackPhotoActivityType::CmdSettleTrackPhotoStageScRsp),
+            7552 => ::std::option::Option::Some(CmdTrackPhotoActivityType::CmdStartTrackPhotoStageScRsp),
+            7558 => ::std::option::Option::Some(CmdTrackPhotoActivityType::CmdStartTrackPhotoStageCsReq),
+            7553 => ::std::option::Option::Some(CmdTrackPhotoActivityType::CmdQuitTrackPhotoStageScRsp),
+            7559 => ::std::option::Option::Some(CmdTrackPhotoActivityType::CmdSettleTrackPhotoStageCsReq),
+            7554 => ::std::option::Option::Some(CmdTrackPhotoActivityType::CmdGetTrackPhotoActivityDataCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -72,28 +72,28 @@ impl ::protobuf::Enum for CmdTrackPhotoActivityType {
     fn from_str(str: &str) -> ::std::option::Option<CmdTrackPhotoActivityType> {
         match str {
             "CmdTrackPhotoActivityTypeNone" => ::std::option::Option::Some(CmdTrackPhotoActivityType::CmdTrackPhotoActivityTypeNone),
-            "CmdSettleTrackPhotoStageCsReq" => ::std::option::Option::Some(CmdTrackPhotoActivityType::CmdSettleTrackPhotoStageCsReq),
             "CmdQuitTrackPhotoStageCsReq" => ::std::option::Option::Some(CmdTrackPhotoActivityType::CmdQuitTrackPhotoStageCsReq),
-            "CmdStartTrackPhotoStageScRsp" => ::std::option::Option::Some(CmdTrackPhotoActivityType::CmdStartTrackPhotoStageScRsp),
-            "CmdQuitTrackPhotoStageScRsp" => ::std::option::Option::Some(CmdTrackPhotoActivityType::CmdQuitTrackPhotoStageScRsp),
-            "CmdSettleTrackPhotoStageScRsp" => ::std::option::Option::Some(CmdTrackPhotoActivityType::CmdSettleTrackPhotoStageScRsp),
             "CmdGetTrackPhotoActivityDataScRsp" => ::std::option::Option::Some(CmdTrackPhotoActivityType::CmdGetTrackPhotoActivityDataScRsp),
-            "CmdGetTrackPhotoActivityDataCsReq" => ::std::option::Option::Some(CmdTrackPhotoActivityType::CmdGetTrackPhotoActivityDataCsReq),
+            "CmdSettleTrackPhotoStageScRsp" => ::std::option::Option::Some(CmdTrackPhotoActivityType::CmdSettleTrackPhotoStageScRsp),
+            "CmdStartTrackPhotoStageScRsp" => ::std::option::Option::Some(CmdTrackPhotoActivityType::CmdStartTrackPhotoStageScRsp),
             "CmdStartTrackPhotoStageCsReq" => ::std::option::Option::Some(CmdTrackPhotoActivityType::CmdStartTrackPhotoStageCsReq),
+            "CmdQuitTrackPhotoStageScRsp" => ::std::option::Option::Some(CmdTrackPhotoActivityType::CmdQuitTrackPhotoStageScRsp),
+            "CmdSettleTrackPhotoStageCsReq" => ::std::option::Option::Some(CmdTrackPhotoActivityType::CmdSettleTrackPhotoStageCsReq),
+            "CmdGetTrackPhotoActivityDataCsReq" => ::std::option::Option::Some(CmdTrackPhotoActivityType::CmdGetTrackPhotoActivityDataCsReq),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdTrackPhotoActivityType] = &[
         CmdTrackPhotoActivityType::CmdTrackPhotoActivityTypeNone,
-        CmdTrackPhotoActivityType::CmdSettleTrackPhotoStageCsReq,
         CmdTrackPhotoActivityType::CmdQuitTrackPhotoStageCsReq,
-        CmdTrackPhotoActivityType::CmdStartTrackPhotoStageScRsp,
-        CmdTrackPhotoActivityType::CmdQuitTrackPhotoStageScRsp,
-        CmdTrackPhotoActivityType::CmdSettleTrackPhotoStageScRsp,
         CmdTrackPhotoActivityType::CmdGetTrackPhotoActivityDataScRsp,
-        CmdTrackPhotoActivityType::CmdGetTrackPhotoActivityDataCsReq,
+        CmdTrackPhotoActivityType::CmdSettleTrackPhotoStageScRsp,
+        CmdTrackPhotoActivityType::CmdStartTrackPhotoStageScRsp,
         CmdTrackPhotoActivityType::CmdStartTrackPhotoStageCsReq,
+        CmdTrackPhotoActivityType::CmdQuitTrackPhotoStageScRsp,
+        CmdTrackPhotoActivityType::CmdSettleTrackPhotoStageCsReq,
+        CmdTrackPhotoActivityType::CmdGetTrackPhotoActivityDataCsReq,
     ];
 }
 
@@ -106,14 +106,14 @@ impl ::protobuf::EnumFull for CmdTrackPhotoActivityType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdTrackPhotoActivityType::CmdTrackPhotoActivityTypeNone => 0,
-            CmdTrackPhotoActivityType::CmdSettleTrackPhotoStageCsReq => 1,
-            CmdTrackPhotoActivityType::CmdQuitTrackPhotoStageCsReq => 2,
-            CmdTrackPhotoActivityType::CmdStartTrackPhotoStageScRsp => 3,
-            CmdTrackPhotoActivityType::CmdQuitTrackPhotoStageScRsp => 4,
-            CmdTrackPhotoActivityType::CmdSettleTrackPhotoStageScRsp => 5,
-            CmdTrackPhotoActivityType::CmdGetTrackPhotoActivityDataScRsp => 6,
-            CmdTrackPhotoActivityType::CmdGetTrackPhotoActivityDataCsReq => 7,
-            CmdTrackPhotoActivityType::CmdStartTrackPhotoStageCsReq => 8,
+            CmdTrackPhotoActivityType::CmdQuitTrackPhotoStageCsReq => 1,
+            CmdTrackPhotoActivityType::CmdGetTrackPhotoActivityDataScRsp => 2,
+            CmdTrackPhotoActivityType::CmdSettleTrackPhotoStageScRsp => 3,
+            CmdTrackPhotoActivityType::CmdStartTrackPhotoStageScRsp => 4,
+            CmdTrackPhotoActivityType::CmdStartTrackPhotoStageCsReq => 5,
+            CmdTrackPhotoActivityType::CmdQuitTrackPhotoStageScRsp => 6,
+            CmdTrackPhotoActivityType::CmdSettleTrackPhotoStageCsReq => 7,
+            CmdTrackPhotoActivityType::CmdGetTrackPhotoActivityDataCsReq => 8,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -133,13 +133,13 @@ impl CmdTrackPhotoActivityType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fCmdTrackPhotoActivityType.proto*\xe0\x02\n\x19CmdTrackPhotoActivit\
-    yType\x12!\n\x1dCmdTrackPhotoActivityTypeNone\x10\0\x12\"\n\x1dCmdSettle\
-    TrackPhotoStageCsReq\x10\xff:\x12\x20\n\x1bCmdQuitTrackPhotoStageCsReq\
-    \x10\x81;\x12!\n\x1cCmdStartTrackPhotoStageScRsp\x10\x85;\x12\x20\n\x1bC\
-    mdQuitTrackPhotoStageScRsp\x10\x80;\x12\"\n\x1dCmdSettleTrackPhotoStageS\
-    cRsp\x10\x84;\x12&\n!CmdGetTrackPhotoActivityDataScRsp\x10\x86;\x12&\n!C\
-    mdGetTrackPhotoActivityDataCsReq\x10\x87;\x12!\n\x1cCmdStartTrackPhotoSt\
-    ageCsReq\x10\x83;b\x06proto3\
+    yType\x12!\n\x1dCmdTrackPhotoActivityTypeNone\x10\0\x12\x20\n\x1bCmdQuit\
+    TrackPhotoStageCsReq\x10\x83;\x12&\n!CmdGetTrackPhotoActivityDataScRsp\
+    \x10\x84;\x12\"\n\x1dCmdSettleTrackPhotoStageScRsp\x10\x85;\x12!\n\x1cCm\
+    dStartTrackPhotoStageScRsp\x10\x80;\x12!\n\x1cCmdStartTrackPhotoStageCsR\
+    eq\x10\x86;\x12\x20\n\x1bCmdQuitTrackPhotoStageScRsp\x10\x81;\x12\"\n\
+    \x1dCmdSettleTrackPhotoStageCsReq\x10\x87;\x12&\n!CmdGetTrackPhotoActivi\
+    tyDataCsReq\x10\x82;b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

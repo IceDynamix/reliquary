@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GLPEEIJALGF {
     // message fields
+    // @@protoc_insertion_point(field:GLPEEIJALGF.ANLINCFGFAN)
+    pub ANLINCFGFAN: u32,
+    // @@protoc_insertion_point(field:GLPEEIJALGF.JIFKHCKPNFM)
+    pub JIFKHCKPNFM: u32,
     // @@protoc_insertion_point(field:GLPEEIJALGF.DMMAMJGNGNN)
     pub DMMAMJGNGNN: i32,
     // @@protoc_insertion_point(field:GLPEEIJALGF.KNNDKBHBDLI)
     pub KNNDKBHBDLI: ::protobuf::MessageField<super::KNAPAIOFJIE::KNAPAIOFJIE>,
-    // @@protoc_insertion_point(field:GLPEEIJALGF.ANLINCFGFAN)
-    pub ANLINCFGFAN: u32,
     // @@protoc_insertion_point(field:GLPEEIJALGF.FOBAOEAFNAM)
     pub FOBAOEAFNAM: bool,
-    // @@protoc_insertion_point(field:GLPEEIJALGF.JIFKHCKPNFM)
-    pub JIFKHCKPNFM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GLPEEIJALGF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,6 +58,16 @@ impl GLPEEIJALGF {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ANLINCFGFAN",
+            |m: &GLPEEIJALGF| { &m.ANLINCFGFAN },
+            |m: &mut GLPEEIJALGF| { &mut m.ANLINCFGFAN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JIFKHCKPNFM",
+            |m: &GLPEEIJALGF| { &m.JIFKHCKPNFM },
+            |m: &mut GLPEEIJALGF| { &mut m.JIFKHCKPNFM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DMMAMJGNGNN",
             |m: &GLPEEIJALGF| { &m.DMMAMJGNGNN },
             |m: &mut GLPEEIJALGF| { &mut m.DMMAMJGNGNN },
@@ -68,19 +78,9 @@ impl GLPEEIJALGF {
             |m: &mut GLPEEIJALGF| { &mut m.KNNDKBHBDLI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ANLINCFGFAN",
-            |m: &GLPEEIJALGF| { &m.ANLINCFGFAN },
-            |m: &mut GLPEEIJALGF| { &mut m.ANLINCFGFAN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FOBAOEAFNAM",
             |m: &GLPEEIJALGF| { &m.FOBAOEAFNAM },
             |m: &mut GLPEEIJALGF| { &mut m.FOBAOEAFNAM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JIFKHCKPNFM",
-            |m: &GLPEEIJALGF| { &m.JIFKHCKPNFM },
-            |m: &mut GLPEEIJALGF| { &mut m.JIFKHCKPNFM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GLPEEIJALGF>(
             "GLPEEIJALGF",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for GLPEEIJALGF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.DMMAMJGNGNN = is.read_int32()?;
-                },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KNNDKBHBDLI)?;
-                },
-                16 => {
+                40 => {
                     self.ANLINCFGFAN = is.read_uint32()?;
                 },
-                64 => {
-                    self.FOBAOEAFNAM = is.read_bool()?;
+                32 => {
+                    self.JIFKHCKPNFM = is.read_uint32()?;
+                },
+                16 => {
+                    self.DMMAMJGNGNN = is.read_int32()?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KNNDKBHBDLI)?;
                 },
                 88 => {
-                    self.JIFKHCKPNFM = is.read_uint32()?;
+                    self.FOBAOEAFNAM = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,21 +127,21 @@ impl ::protobuf::Message for GLPEEIJALGF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.ANLINCFGFAN != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.ANLINCFGFAN);
+        }
+        if self.JIFKHCKPNFM != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.JIFKHCKPNFM);
+        }
         if self.DMMAMJGNGNN != 0 {
-            my_size += ::protobuf::rt::int32_size(4, self.DMMAMJGNGNN);
+            my_size += ::protobuf::rt::int32_size(2, self.DMMAMJGNGNN);
         }
         if let Some(v) = self.KNNDKBHBDLI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.ANLINCFGFAN != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.ANLINCFGFAN);
-        }
         if self.FOBAOEAFNAM != false {
             my_size += 1 + 1;
-        }
-        if self.JIFKHCKPNFM != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.JIFKHCKPNFM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for GLPEEIJALGF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DMMAMJGNGNN != 0 {
-            os.write_int32(4, self.DMMAMJGNGNN)?;
-        }
-        if let Some(v) = self.KNNDKBHBDLI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
         if self.ANLINCFGFAN != 0 {
-            os.write_uint32(2, self.ANLINCFGFAN)?;
-        }
-        if self.FOBAOEAFNAM != false {
-            os.write_bool(8, self.FOBAOEAFNAM)?;
+            os.write_uint32(5, self.ANLINCFGFAN)?;
         }
         if self.JIFKHCKPNFM != 0 {
-            os.write_uint32(11, self.JIFKHCKPNFM)?;
+            os.write_uint32(4, self.JIFKHCKPNFM)?;
+        }
+        if self.DMMAMJGNGNN != 0 {
+            os.write_int32(2, self.DMMAMJGNGNN)?;
+        }
+        if let Some(v) = self.KNNDKBHBDLI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
+        if self.FOBAOEAFNAM != false {
+            os.write_bool(11, self.FOBAOEAFNAM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for GLPEEIJALGF {
     }
 
     fn clear(&mut self) {
+        self.ANLINCFGFAN = 0;
+        self.JIFKHCKPNFM = 0;
         self.DMMAMJGNGNN = 0;
         self.KNNDKBHBDLI.clear();
-        self.ANLINCFGFAN = 0;
         self.FOBAOEAFNAM = false;
-        self.JIFKHCKPNFM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GLPEEIJALGF {
         static instance: GLPEEIJALGF = GLPEEIJALGF {
+            ANLINCFGFAN: 0,
+            JIFKHCKPNFM: 0,
             DMMAMJGNGNN: 0,
             KNNDKBHBDLI: ::protobuf::MessageField::none(),
-            ANLINCFGFAN: 0,
             FOBAOEAFNAM: false,
-            JIFKHCKPNFM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for GLPEEIJALGF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GLPEEIJALGF.proto\x1a\x11KNAPAIOFJIE.proto\"\xc5\x01\n\x0bGLPEEIJA\
-    LGF\x12\x20\n\x0bDMMAMJGNGNN\x18\x04\x20\x01(\x05R\x0bDMMAMJGNGNN\x12.\n\
-    \x0bKNNDKBHBDLI\x18\r\x20\x01(\x0b2\x0c.KNAPAIOFJIER\x0bKNNDKBHBDLI\x12\
-    \x20\n\x0bANLINCFGFAN\x18\x02\x20\x01(\rR\x0bANLINCFGFAN\x12\x20\n\x0bFO\
-    BAOEAFNAM\x18\x08\x20\x01(\x08R\x0bFOBAOEAFNAM\x12\x20\n\x0bJIFKHCKPNFM\
-    \x18\x0b\x20\x01(\rR\x0bJIFKHCKPNFMb\x06proto3\
+    LGF\x12\x20\n\x0bANLINCFGFAN\x18\x05\x20\x01(\rR\x0bANLINCFGFAN\x12\x20\
+    \n\x0bJIFKHCKPNFM\x18\x04\x20\x01(\rR\x0bJIFKHCKPNFM\x12\x20\n\x0bDMMAMJ\
+    GNGNN\x18\x02\x20\x01(\x05R\x0bDMMAMJGNGNN\x12.\n\x0bKNNDKBHBDLI\x18\t\
+    \x20\x01(\x0b2\x0c.KNAPAIOFJIER\x0bKNNDKBHBDLI\x12\x20\n\x0bFOBAOEAFNAM\
+    \x18\x0b\x20\x01(\x08R\x0bFOBAOEAFNAMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

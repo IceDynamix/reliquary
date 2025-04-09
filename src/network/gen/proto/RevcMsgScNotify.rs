@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RevcMsgScNotify {
     // message fields
-    // @@protoc_insertion_point(field:RevcMsgScNotify.BCHFKOOBPKA)
-    pub BCHFKOOBPKA: ::protobuf::EnumOrUnknown<super::MsgType::MsgType>,
-    // @@protoc_insertion_point(field:RevcMsgScNotify.NOKGFFKPDCB)
-    pub NOKGFFKPDCB: ::std::string::String,
-    // @@protoc_insertion_point(field:RevcMsgScNotify.IIJIKJKOFLB)
-    pub IIJIKJKOFLB: ::protobuf::EnumOrUnknown<super::ChatType::ChatType>,
-    // @@protoc_insertion_point(field:RevcMsgScNotify.CJGNKEILLHC)
-    pub CJGNKEILLHC: u32,
-    // @@protoc_insertion_point(field:RevcMsgScNotify.HNBEPABNBNG)
-    pub HNBEPABNBNG: ::protobuf::MessageField<super::PEDLPHDBNAF::PEDLPHDBNAF>,
-    // @@protoc_insertion_point(field:RevcMsgScNotify.FMHIONKAGNA)
-    pub FMHIONKAGNA: u32,
     // @@protoc_insertion_point(field:RevcMsgScNotify.CMIPPPJEHCI)
     pub CMIPPPJEHCI: u32,
+    // @@protoc_insertion_point(field:RevcMsgScNotify.IIJIKJKOFLB)
+    pub IIJIKJKOFLB: ::protobuf::EnumOrUnknown<super::ChatType::ChatType>,
+    // @@protoc_insertion_point(field:RevcMsgScNotify.NOKGFFKPDCB)
+    pub NOKGFFKPDCB: ::std::string::String,
+    // @@protoc_insertion_point(field:RevcMsgScNotify.BCHFKOOBPKA)
+    pub BCHFKOOBPKA: ::protobuf::EnumOrUnknown<super::MsgType::MsgType>,
+    // @@protoc_insertion_point(field:RevcMsgScNotify.CJGNKEILLHC)
+    pub CJGNKEILLHC: u32,
+    // @@protoc_insertion_point(field:RevcMsgScNotify.FMHIONKAGNA)
+    pub FMHIONKAGNA: u32,
+    // @@protoc_insertion_point(field:RevcMsgScNotify.HNBEPABNBNG)
+    pub HNBEPABNBNG: ::protobuf::MessageField<super::PEDLPHDBNAF::PEDLPHDBNAF>,
     // special fields
     // @@protoc_insertion_point(special_field:RevcMsgScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,14 +62,9 @@ impl RevcMsgScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BCHFKOOBPKA",
-            |m: &RevcMsgScNotify| { &m.BCHFKOOBPKA },
-            |m: &mut RevcMsgScNotify| { &mut m.BCHFKOOBPKA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NOKGFFKPDCB",
-            |m: &RevcMsgScNotify| { &m.NOKGFFKPDCB },
-            |m: &mut RevcMsgScNotify| { &mut m.NOKGFFKPDCB },
+            "CMIPPPJEHCI",
+            |m: &RevcMsgScNotify| { &m.CMIPPPJEHCI },
+            |m: &mut RevcMsgScNotify| { &mut m.CMIPPPJEHCI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IIJIKJKOFLB",
@@ -77,24 +72,29 @@ impl RevcMsgScNotify {
             |m: &mut RevcMsgScNotify| { &mut m.IIJIKJKOFLB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NOKGFFKPDCB",
+            |m: &RevcMsgScNotify| { &m.NOKGFFKPDCB },
+            |m: &mut RevcMsgScNotify| { &mut m.NOKGFFKPDCB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BCHFKOOBPKA",
+            |m: &RevcMsgScNotify| { &m.BCHFKOOBPKA },
+            |m: &mut RevcMsgScNotify| { &mut m.BCHFKOOBPKA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CJGNKEILLHC",
             |m: &RevcMsgScNotify| { &m.CJGNKEILLHC },
             |m: &mut RevcMsgScNotify| { &mut m.CJGNKEILLHC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PEDLPHDBNAF::PEDLPHDBNAF>(
-            "HNBEPABNBNG",
-            |m: &RevcMsgScNotify| { &m.HNBEPABNBNG },
-            |m: &mut RevcMsgScNotify| { &mut m.HNBEPABNBNG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FMHIONKAGNA",
             |m: &RevcMsgScNotify| { &m.FMHIONKAGNA },
             |m: &mut RevcMsgScNotify| { &mut m.FMHIONKAGNA },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CMIPPPJEHCI",
-            |m: &RevcMsgScNotify| { &m.CMIPPPJEHCI },
-            |m: &mut RevcMsgScNotify| { &mut m.CMIPPPJEHCI },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PEDLPHDBNAF::PEDLPHDBNAF>(
+            "HNBEPABNBNG",
+            |m: &RevcMsgScNotify| { &m.HNBEPABNBNG },
+            |m: &mut RevcMsgScNotify| { &mut m.HNBEPABNBNG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RevcMsgScNotify>(
             "RevcMsgScNotify",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for RevcMsgScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.BCHFKOOBPKA = is.read_enum_or_unknown()?;
+                88 => {
+                    self.CMIPPPJEHCI = is.read_uint32()?;
                 },
-                58 => {
-                    self.NOKGFFKPDCB = is.read_string()?;
-                },
-                112 => {
+                96 => {
                     self.IIJIKJKOFLB = is.read_enum_or_unknown()?;
                 },
-                72 => {
+                66 => {
+                    self.NOKGFFKPDCB = is.read_string()?;
+                },
+                56 => {
+                    self.BCHFKOOBPKA = is.read_enum_or_unknown()?;
+                },
+                48 => {
                     self.CJGNKEILLHC = is.read_uint32()?;
                 },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HNBEPABNBNG)?;
-                },
-                120 => {
+                72 => {
                     self.FMHIONKAGNA = is.read_uint32()?;
                 },
-                24 => {
-                    self.CMIPPPJEHCI = is.read_uint32()?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HNBEPABNBNG)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,27 +147,27 @@ impl ::protobuf::Message for RevcMsgScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BCHFKOOBPKA != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(13, self.BCHFKOOBPKA.value());
-        }
-        if !self.NOKGFFKPDCB.is_empty() {
-            my_size += ::protobuf::rt::string_size(7, &self.NOKGFFKPDCB);
+        if self.CMIPPPJEHCI != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.CMIPPPJEHCI);
         }
         if self.IIJIKJKOFLB != ::protobuf::EnumOrUnknown::new(super::ChatType::ChatType::CHAT_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(14, self.IIJIKJKOFLB.value());
+            my_size += ::protobuf::rt::int32_size(12, self.IIJIKJKOFLB.value());
+        }
+        if !self.NOKGFFKPDCB.is_empty() {
+            my_size += ::protobuf::rt::string_size(8, &self.NOKGFFKPDCB);
+        }
+        if self.BCHFKOOBPKA != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(7, self.BCHFKOOBPKA.value());
         }
         if self.CJGNKEILLHC != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.CJGNKEILLHC);
+            my_size += ::protobuf::rt::uint32_size(6, self.CJGNKEILLHC);
+        }
+        if self.FMHIONKAGNA != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.FMHIONKAGNA);
         }
         if let Some(v) = self.HNBEPABNBNG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.FMHIONKAGNA != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.FMHIONKAGNA);
-        }
-        if self.CMIPPPJEHCI != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.CMIPPPJEHCI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -175,26 +175,26 @@ impl ::protobuf::Message for RevcMsgScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BCHFKOOBPKA != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.BCHFKOOBPKA))?;
-        }
-        if !self.NOKGFFKPDCB.is_empty() {
-            os.write_string(7, &self.NOKGFFKPDCB)?;
+        if self.CMIPPPJEHCI != 0 {
+            os.write_uint32(11, self.CMIPPPJEHCI)?;
         }
         if self.IIJIKJKOFLB != ::protobuf::EnumOrUnknown::new(super::ChatType::ChatType::CHAT_TYPE_NONE) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.IIJIKJKOFLB))?;
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.IIJIKJKOFLB))?;
+        }
+        if !self.NOKGFFKPDCB.is_empty() {
+            os.write_string(8, &self.NOKGFFKPDCB)?;
+        }
+        if self.BCHFKOOBPKA != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE) {
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.BCHFKOOBPKA))?;
         }
         if self.CJGNKEILLHC != 0 {
-            os.write_uint32(9, self.CJGNKEILLHC)?;
-        }
-        if let Some(v) = self.HNBEPABNBNG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            os.write_uint32(6, self.CJGNKEILLHC)?;
         }
         if self.FMHIONKAGNA != 0 {
-            os.write_uint32(15, self.FMHIONKAGNA)?;
+            os.write_uint32(9, self.FMHIONKAGNA)?;
         }
-        if self.CMIPPPJEHCI != 0 {
-            os.write_uint32(3, self.CMIPPPJEHCI)?;
+        if let Some(v) = self.HNBEPABNBNG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -213,25 +213,25 @@ impl ::protobuf::Message for RevcMsgScNotify {
     }
 
     fn clear(&mut self) {
-        self.BCHFKOOBPKA = ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE);
-        self.NOKGFFKPDCB.clear();
-        self.IIJIKJKOFLB = ::protobuf::EnumOrUnknown::new(super::ChatType::ChatType::CHAT_TYPE_NONE);
-        self.CJGNKEILLHC = 0;
-        self.HNBEPABNBNG.clear();
-        self.FMHIONKAGNA = 0;
         self.CMIPPPJEHCI = 0;
+        self.IIJIKJKOFLB = ::protobuf::EnumOrUnknown::new(super::ChatType::ChatType::CHAT_TYPE_NONE);
+        self.NOKGFFKPDCB.clear();
+        self.BCHFKOOBPKA = ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE);
+        self.CJGNKEILLHC = 0;
+        self.FMHIONKAGNA = 0;
+        self.HNBEPABNBNG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RevcMsgScNotify {
         static instance: RevcMsgScNotify = RevcMsgScNotify {
-            BCHFKOOBPKA: ::protobuf::EnumOrUnknown::from_i32(0),
-            NOKGFFKPDCB: ::std::string::String::new(),
-            IIJIKJKOFLB: ::protobuf::EnumOrUnknown::from_i32(0),
-            CJGNKEILLHC: 0,
-            HNBEPABNBNG: ::protobuf::MessageField::none(),
-            FMHIONKAGNA: 0,
             CMIPPPJEHCI: 0,
+            IIJIKJKOFLB: ::protobuf::EnumOrUnknown::from_i32(0),
+            NOKGFFKPDCB: ::std::string::String::new(),
+            BCHFKOOBPKA: ::protobuf::EnumOrUnknown::from_i32(0),
+            CJGNKEILLHC: 0,
+            FMHIONKAGNA: 0,
+            HNBEPABNBNG: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -257,14 +257,14 @@ impl ::protobuf::reflect::ProtobufValue for RevcMsgScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15RevcMsgScNotify.proto\x1a\x0eChatType.proto\x1a\rMsgType.proto\x1a\
-    \x11PEDLPHDBNAF.proto\"\xa2\x02\n\x0fRevcMsgScNotify\x12*\n\x0bBCHFKOOBP\
-    KA\x18\r\x20\x01(\x0e2\x08.MsgTypeR\x0bBCHFKOOBPKA\x12\x20\n\x0bNOKGFFKP\
-    DCB\x18\x07\x20\x01(\tR\x0bNOKGFFKPDCB\x12+\n\x0bIIJIKJKOFLB\x18\x0e\x20\
-    \x01(\x0e2\t.ChatTypeR\x0bIIJIKJKOFLB\x12\x20\n\x0bCJGNKEILLHC\x18\t\x20\
-    \x01(\rR\x0bCJGNKEILLHC\x12.\n\x0bHNBEPABNBNG\x18\x04\x20\x01(\x0b2\x0c.\
-    PEDLPHDBNAFR\x0bHNBEPABNBNG\x12\x20\n\x0bFMHIONKAGNA\x18\x0f\x20\x01(\rR\
-    \x0bFMHIONKAGNA\x12\x20\n\x0bCMIPPPJEHCI\x18\x03\x20\x01(\rR\x0bCMIPPPJE\
-    HCIb\x06proto3\
+    \x11PEDLPHDBNAF.proto\"\xa2\x02\n\x0fRevcMsgScNotify\x12\x20\n\x0bCMIPPP\
+    JEHCI\x18\x0b\x20\x01(\rR\x0bCMIPPPJEHCI\x12+\n\x0bIIJIKJKOFLB\x18\x0c\
+    \x20\x01(\x0e2\t.ChatTypeR\x0bIIJIKJKOFLB\x12\x20\n\x0bNOKGFFKPDCB\x18\
+    \x08\x20\x01(\tR\x0bNOKGFFKPDCB\x12*\n\x0bBCHFKOOBPKA\x18\x07\x20\x01(\
+    \x0e2\x08.MsgTypeR\x0bBCHFKOOBPKA\x12\x20\n\x0bCJGNKEILLHC\x18\x06\x20\
+    \x01(\rR\x0bCJGNKEILLHC\x12\x20\n\x0bFMHIONKAGNA\x18\t\x20\x01(\rR\x0bFM\
+    HIONKAGNA\x12.\n\x0bHNBEPABNBNG\x18\x01\x20\x01(\x0b2\x0c.PEDLPHDBNAFR\
+    \x0bHNBEPABNBNGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

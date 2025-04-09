@@ -82,7 +82,7 @@ impl ::protobuf::Message for StartMatchCsReq {
                 98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.EJOFCNAEDHK)?;
                 },
-                88 => {
+                40 => {
                     self.NBDLPGBIDLC = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for StartMatchCsReq {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.NBDLPGBIDLC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
-            my_size += ::protobuf::rt::int32_size(11, self.NBDLPGBIDLC.value());
+            my_size += ::protobuf::rt::int32_size(5, self.NBDLPGBIDLC.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -114,7 +114,7 @@ impl ::protobuf::Message for StartMatchCsReq {
             ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if self.NBDLPGBIDLC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.NBDLPGBIDLC))?;
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.NBDLPGBIDLC))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for StartMatchCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15StartMatchCsReq.proto\x1a\x11EPEGHCGCMHP.proto\x1a\x13FightGameMod\
     e.proto\"s\n\x0fStartMatchCsReq\x12.\n\x0bEJOFCNAEDHK\x18\x0c\x20\x01(\
-    \x0b2\x0c.EPEGHCGCMHPR\x0bEJOFCNAEDHK\x120\n\x0bNBDLPGBIDLC\x18\x0b\x20\
+    \x0b2\x0c.EPEGHCGCMHPR\x0bEJOFCNAEDHK\x120\n\x0bNBDLPGBIDLC\x18\x05\x20\
     \x01(\x0e2\x0e.FightGameModeR\x0bNBDLPGBIDLCb\x06proto3\
 ";
 

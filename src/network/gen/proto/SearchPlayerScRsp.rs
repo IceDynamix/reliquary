@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SearchPlayerScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SearchPlayerScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:SearchPlayerScRsp.PKPNPBIDBJI)
     pub PKPNPBIDBJI: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SearchPlayerScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:SearchPlayerScRsp.ENCGJAKLKDN)
     pub ENCGJAKLKDN: ::std::vec::Vec<super::BKDCJANPNBP::BKDCJANPNBP>,
     // special fields
@@ -53,15 +53,15 @@ impl SearchPlayerScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &SearchPlayerScRsp| { &m.retcode },
-            |m: &mut SearchPlayerScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "PKPNPBIDBJI",
             |m: &SearchPlayerScRsp| { &m.PKPNPBIDBJI },
             |m: &mut SearchPlayerScRsp| { &mut m.PKPNPBIDBJI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &SearchPlayerScRsp| { &m.retcode },
+            |m: &mut SearchPlayerScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "ENCGJAKLKDN",
@@ -86,16 +86,16 @@ impl ::protobuf::Message for SearchPlayerScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                58 => {
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.PKPNPBIDBJI)?;
                 },
-                56 => {
+                104 => {
                     self.PKPNPBIDBJI.push(is.read_uint32()?);
                 },
-                82 => {
+                32 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                74 => {
                     self.ENCGJAKLKDN.push(is.read_message()?);
                 },
                 tag => {
@@ -110,10 +110,10 @@ impl ::protobuf::Message for SearchPlayerScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.PKPNPBIDBJI);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.PKPNPBIDBJI);
         for value in &self.ENCGJAKLKDN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -124,12 +124,12 @@ impl ::protobuf::Message for SearchPlayerScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(13, &self.PKPNPBIDBJI)?;
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
-        os.write_repeated_packed_uint32(7, &self.PKPNPBIDBJI)?;
         for v in &self.ENCGJAKLKDN {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for SearchPlayerScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.PKPNPBIDBJI.clear();
+        self.retcode = 0;
         self.ENCGJAKLKDN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SearchPlayerScRsp {
         static instance: SearchPlayerScRsp = SearchPlayerScRsp {
-            retcode: 0,
             PKPNPBIDBJI: ::std::vec::Vec::new(),
+            retcode: 0,
             ENCGJAKLKDN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for SearchPlayerScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17SearchPlayerScRsp.proto\x1a\x11BKDCJANPNBP.proto\"\x7f\n\x11Search\
-    PlayerScRsp\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\x20\
-    \n\x0bPKPNPBIDBJI\x18\x07\x20\x03(\rR\x0bPKPNPBIDBJI\x12.\n\x0bENCGJAKLK\
-    DN\x18\n\x20\x03(\x0b2\x0c.BKDCJANPNBPR\x0bENCGJAKLKDNb\x06proto3\
+    PlayerScRsp\x12\x20\n\x0bPKPNPBIDBJI\x18\r\x20\x03(\rR\x0bPKPNPBIDBJI\
+    \x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12.\n\x0bENCGJAKLK\
+    DN\x18\t\x20\x03(\x0b2\x0c.BKDCJANPNBPR\x0bENCGJAKLKDNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

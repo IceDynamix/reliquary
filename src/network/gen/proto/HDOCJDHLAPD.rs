@@ -86,13 +86,13 @@ impl ::protobuf::Message for HDOCJDHLAPD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                72 => {
                     self.EIPNNEJNNKJ = is.read_uint32()?;
                 },
-                8 => {
+                120 => {
                     self.NBOCIPLJMHI = is.read_uint32()?;
                 },
-                16 => {
+                88 => {
                     self.PJDNHBHDDHA = is.read_bool()?;
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for HDOCJDHLAPD {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.EIPNNEJNNKJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.EIPNNEJNNKJ);
+            my_size += ::protobuf::rt::uint32_size(9, self.EIPNNEJNNKJ);
         }
         if self.NBOCIPLJMHI != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.NBOCIPLJMHI);
+            my_size += ::protobuf::rt::uint32_size(15, self.NBOCIPLJMHI);
         }
         if self.PJDNHBHDDHA != false {
             my_size += 1 + 1;
@@ -123,13 +123,13 @@ impl ::protobuf::Message for HDOCJDHLAPD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.EIPNNEJNNKJ != 0 {
-            os.write_uint32(13, self.EIPNNEJNNKJ)?;
+            os.write_uint32(9, self.EIPNNEJNNKJ)?;
         }
         if self.NBOCIPLJMHI != 0 {
-            os.write_uint32(1, self.NBOCIPLJMHI)?;
+            os.write_uint32(15, self.NBOCIPLJMHI)?;
         }
         if self.PJDNHBHDDHA != false {
-            os.write_bool(2, self.PJDNHBHDDHA)?;
+            os.write_bool(11, self.PJDNHBHDDHA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for HDOCJDHLAPD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HDOCJDHLAPD.proto\"s\n\x0bHDOCJDHLAPD\x12\x20\n\x0bEIPNNEJNNKJ\x18\
-    \r\x20\x01(\rR\x0bEIPNNEJNNKJ\x12\x20\n\x0bNBOCIPLJMHI\x18\x01\x20\x01(\
-    \rR\x0bNBOCIPLJMHI\x12\x20\n\x0bPJDNHBHDDHA\x18\x02\x20\x01(\x08R\x0bPJD\
+    \t\x20\x01(\rR\x0bEIPNNEJNNKJ\x12\x20\n\x0bNBOCIPLJMHI\x18\x0f\x20\x01(\
+    \rR\x0bNBOCIPLJMHI\x12\x20\n\x0bPJDNHBHDDHA\x18\x0b\x20\x01(\x08R\x0bPJD\
     NHBHDDHAb\x06proto3\
 ";
 

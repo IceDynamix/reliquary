@@ -30,10 +30,10 @@ pub struct EvolveBuildQueryInfoScRsp {
     // message fields
     // @@protoc_insertion_point(field:EvolveBuildQueryInfoScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:EvolveBuildQueryInfoScRsp.LMGKMAOICGC)
-    pub LMGKMAOICGC: ::protobuf::MessageField<super::EvolveBuildLevelInfo::EvolveBuildLevelInfo>,
     // @@protoc_insertion_point(field:EvolveBuildQueryInfoScRsp.OMCBCGCHLGN)
     pub OMCBCGCHLGN: ::protobuf::MessageField<super::PDICNBBKFNP::PDICNBBKFNP>,
+    // @@protoc_insertion_point(field:EvolveBuildQueryInfoScRsp.LMGKMAOICGC)
+    pub LMGKMAOICGC: ::protobuf::MessageField<super::EvolveBuildLevelInfo::EvolveBuildLevelInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:EvolveBuildQueryInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl EvolveBuildQueryInfoScRsp {
             |m: &EvolveBuildQueryInfoScRsp| { &m.retcode },
             |m: &mut EvolveBuildQueryInfoScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EvolveBuildLevelInfo::EvolveBuildLevelInfo>(
-            "LMGKMAOICGC",
-            |m: &EvolveBuildQueryInfoScRsp| { &m.LMGKMAOICGC },
-            |m: &mut EvolveBuildQueryInfoScRsp| { &mut m.LMGKMAOICGC },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PDICNBBKFNP::PDICNBBKFNP>(
             "OMCBCGCHLGN",
             |m: &EvolveBuildQueryInfoScRsp| { &m.OMCBCGCHLGN },
             |m: &mut EvolveBuildQueryInfoScRsp| { &mut m.OMCBCGCHLGN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EvolveBuildLevelInfo::EvolveBuildLevelInfo>(
+            "LMGKMAOICGC",
+            |m: &EvolveBuildQueryInfoScRsp| { &m.LMGKMAOICGC },
+            |m: &mut EvolveBuildQueryInfoScRsp| { &mut m.LMGKMAOICGC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EvolveBuildQueryInfoScRsp>(
             "EvolveBuildQueryInfoScRsp",
@@ -89,11 +89,11 @@ impl ::protobuf::Message for EvolveBuildQueryInfoScRsp {
                 8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LMGKMAOICGC)?;
-                },
-                66 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.OMCBCGCHLGN)?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LMGKMAOICGC)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,11 +110,11 @@ impl ::protobuf::Message for EvolveBuildQueryInfoScRsp {
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
-        if let Some(v) = self.LMGKMAOICGC.as_ref() {
+        if let Some(v) = self.OMCBCGCHLGN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.OMCBCGCHLGN.as_ref() {
+        if let Some(v) = self.LMGKMAOICGC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -127,11 +127,11 @@ impl ::protobuf::Message for EvolveBuildQueryInfoScRsp {
         if self.retcode != 0 {
             os.write_uint32(1, self.retcode)?;
         }
-        if let Some(v) = self.LMGKMAOICGC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
         if let Some(v) = self.OMCBCGCHLGN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        }
+        if let Some(v) = self.LMGKMAOICGC.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,16 +151,16 @@ impl ::protobuf::Message for EvolveBuildQueryInfoScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.LMGKMAOICGC.clear();
         self.OMCBCGCHLGN.clear();
+        self.LMGKMAOICGC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EvolveBuildQueryInfoScRsp {
         static instance: EvolveBuildQueryInfoScRsp = EvolveBuildQueryInfoScRsp {
             retcode: 0,
-            LMGKMAOICGC: ::protobuf::MessageField::none(),
             OMCBCGCHLGN: ::protobuf::MessageField::none(),
+            LMGKMAOICGC: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -187,10 +187,10 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildQueryInfoScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fEvolveBuildQueryInfoScRsp.proto\x1a\x1aEvolveBuildLevelInfo.proto\
     \x1a\x11PDICNBBKFNP.proto\"\x9e\x01\n\x19EvolveBuildQueryInfoScRsp\x12\
-    \x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x127\n\x0bLMGKMAOICGC\
-    \x18\x06\x20\x01(\x0b2\x15.EvolveBuildLevelInfoR\x0bLMGKMAOICGC\x12.\n\
-    \x0bOMCBCGCHLGN\x18\x08\x20\x01(\x0b2\x0c.PDICNBBKFNPR\x0bOMCBCGCHLGNb\
-    \x06proto3\
+    \x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12.\n\x0bOMCBCGCHLGN\
+    \x18\x0b\x20\x01(\x0b2\x0c.PDICNBBKFNPR\x0bOMCBCGCHLGN\x127\n\x0bLMGKMAO\
+    ICGC\x18\x0e\x20\x01(\x0b2\x15.EvolveBuildLevelInfoR\x0bLMGKMAOICGCb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

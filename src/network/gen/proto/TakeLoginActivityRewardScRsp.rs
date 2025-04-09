@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeLoginActivityRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeLoginActivityRewardScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:TakeLoginActivityRewardScRsp.DKKLLMOHGFD)
     pub DKKLLMOHGFD: u32,
+    // @@protoc_insertion_point(field:TakeLoginActivityRewardScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:TakeLoginActivityRewardScRsp.BHELBOHKBBM)
     pub BHELBOHKBBM: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:TakeLoginActivityRewardScRsp.ELGANMDPMID)
@@ -58,14 +58,14 @@ impl TakeLoginActivityRewardScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &TakeLoginActivityRewardScRsp| { &m.retcode },
-            |m: &mut TakeLoginActivityRewardScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DKKLLMOHGFD",
             |m: &TakeLoginActivityRewardScRsp| { &m.DKKLLMOHGFD },
             |m: &mut TakeLoginActivityRewardScRsp| { &mut m.DKKLLMOHGFD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &TakeLoginActivityRewardScRsp| { &m.retcode },
+            |m: &mut TakeLoginActivityRewardScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "BHELBOHKBBM",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for TakeLoginActivityRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                24 => {
+                80 => {
                     self.DKKLLMOHGFD = is.read_uint32()?;
                 },
-                58 => {
+                96 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHELBOHKBBM)?;
                 },
-                96 => {
+                72 => {
                     self.ELGANMDPMID = is.read_uint32()?;
                 },
-                32 => {
+                64 => {
                     self.IAFHEPINJHL = is.read_uint32()?;
                 },
                 tag => {
@@ -127,21 +127,21 @@ impl ::protobuf::Message for TakeLoginActivityRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
-        }
         if self.DKKLLMOHGFD != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.DKKLLMOHGFD);
+            my_size += ::protobuf::rt::uint32_size(10, self.DKKLLMOHGFD);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         if let Some(v) = self.BHELBOHKBBM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.ELGANMDPMID != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.ELGANMDPMID);
+            my_size += ::protobuf::rt::uint32_size(9, self.ELGANMDPMID);
         }
         if self.IAFHEPINJHL != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.IAFHEPINJHL);
+            my_size += ::protobuf::rt::uint32_size(8, self.IAFHEPINJHL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for TakeLoginActivityRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
-        }
         if self.DKKLLMOHGFD != 0 {
-            os.write_uint32(3, self.DKKLLMOHGFD)?;
+            os.write_uint32(10, self.DKKLLMOHGFD)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(12, self.retcode)?;
         }
         if let Some(v) = self.BHELBOHKBBM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if self.ELGANMDPMID != 0 {
-            os.write_uint32(12, self.ELGANMDPMID)?;
+            os.write_uint32(9, self.ELGANMDPMID)?;
         }
         if self.IAFHEPINJHL != 0 {
-            os.write_uint32(4, self.IAFHEPINJHL)?;
+            os.write_uint32(8, self.IAFHEPINJHL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,8 +181,8 @@ impl ::protobuf::Message for TakeLoginActivityRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.DKKLLMOHGFD = 0;
+        self.retcode = 0;
         self.BHELBOHKBBM.clear();
         self.ELGANMDPMID = 0;
         self.IAFHEPINJHL = 0;
@@ -191,8 +191,8 @@ impl ::protobuf::Message for TakeLoginActivityRewardScRsp {
 
     fn default_instance() -> &'static TakeLoginActivityRewardScRsp {
         static instance: TakeLoginActivityRewardScRsp = TakeLoginActivityRewardScRsp {
-            retcode: 0,
             DKKLLMOHGFD: 0,
+            retcode: 0,
             BHELBOHKBBM: ::protobuf::MessageField::none(),
             ELGANMDPMID: 0,
             IAFHEPINJHL: 0,
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for TakeLoginActivityRewardScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"TakeLoginActivityRewardScRsp.proto\x1a\x0eItemList.proto\"\xcb\x01\n\
-    \x1cTakeLoginActivityRewardScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\r\
-    R\x07retcode\x12\x20\n\x0bDKKLLMOHGFD\x18\x03\x20\x01(\rR\x0bDKKLLMOHGFD\
-    \x12+\n\x0bBHELBOHKBBM\x18\x07\x20\x01(\x0b2\t.ItemListR\x0bBHELBOHKBBM\
-    \x12\x20\n\x0bELGANMDPMID\x18\x0c\x20\x01(\rR\x0bELGANMDPMID\x12\x20\n\
-    \x0bIAFHEPINJHL\x18\x04\x20\x01(\rR\x0bIAFHEPINJHLb\x06proto3\
+    \x1cTakeLoginActivityRewardScRsp\x12\x20\n\x0bDKKLLMOHGFD\x18\n\x20\x01(\
+    \rR\x0bDKKLLMOHGFD\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\
+    \x12+\n\x0bBHELBOHKBBM\x18\x0e\x20\x01(\x0b2\t.ItemListR\x0bBHELBOHKBBM\
+    \x12\x20\n\x0bELGANMDPMID\x18\t\x20\x01(\rR\x0bELGANMDPMID\x12\x20\n\x0b\
+    IAFHEPINJHL\x18\x08\x20\x01(\rR\x0bIAFHEPINJHLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

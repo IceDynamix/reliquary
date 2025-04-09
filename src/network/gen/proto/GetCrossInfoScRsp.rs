@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetCrossInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetCrossInfoScRsp.JJLOGICPOAO)
-    pub JJLOGICPOAO: u64,
-    // @@protoc_insertion_point(field:GetCrossInfoScRsp.NOGFEEMNHPC)
-    pub NOGFEEMNHPC: u64,
     // @@protoc_insertion_point(field:GetCrossInfoScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetCrossInfoScRsp.NOGFEEMNHPC)
+    pub NOGFEEMNHPC: u64,
+    // @@protoc_insertion_point(field:GetCrossInfoScRsp.JJLOGICPOAO)
+    pub JJLOGICPOAO: u64,
     // @@protoc_insertion_point(field:GetCrossInfoScRsp.NBDLPGBIDLC)
     pub NBDLPGBIDLC: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
     // special fields
@@ -56,9 +56,9 @@ impl GetCrossInfoScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JJLOGICPOAO",
-            |m: &GetCrossInfoScRsp| { &m.JJLOGICPOAO },
-            |m: &mut GetCrossInfoScRsp| { &mut m.JJLOGICPOAO },
+            "retcode",
+            |m: &GetCrossInfoScRsp| { &m.retcode },
+            |m: &mut GetCrossInfoScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NOGFEEMNHPC",
@@ -66,9 +66,9 @@ impl GetCrossInfoScRsp {
             |m: &mut GetCrossInfoScRsp| { &mut m.NOGFEEMNHPC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetCrossInfoScRsp| { &m.retcode },
-            |m: &mut GetCrossInfoScRsp| { &mut m.retcode },
+            "JJLOGICPOAO",
+            |m: &GetCrossInfoScRsp| { &m.JJLOGICPOAO },
+            |m: &mut GetCrossInfoScRsp| { &mut m.JJLOGICPOAO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NBDLPGBIDLC",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for GetCrossInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                40 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                64 => {
+                    self.NOGFEEMNHPC = is.read_uint64()?;
+                },
+                80 => {
                     self.JJLOGICPOAO = is.read_uint64()?;
                 },
                 8 => {
-                    self.NOGFEEMNHPC = is.read_uint64()?;
-                },
-                48 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                24 => {
                     self.NBDLPGBIDLC = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -117,17 +117,17 @@ impl ::protobuf::Message for GetCrossInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JJLOGICPOAO != 0 {
-            my_size += ::protobuf::rt::uint64_size(7, self.JJLOGICPOAO);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         if self.NOGFEEMNHPC != 0 {
-            my_size += ::protobuf::rt::uint64_size(1, self.NOGFEEMNHPC);
+            my_size += ::protobuf::rt::uint64_size(8, self.NOGFEEMNHPC);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+        if self.JJLOGICPOAO != 0 {
+            my_size += ::protobuf::rt::uint64_size(10, self.JJLOGICPOAO);
         }
         if self.NBDLPGBIDLC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
-            my_size += ::protobuf::rt::int32_size(3, self.NBDLPGBIDLC.value());
+            my_size += ::protobuf::rt::int32_size(1, self.NBDLPGBIDLC.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for GetCrossInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JJLOGICPOAO != 0 {
-            os.write_uint64(7, self.JJLOGICPOAO)?;
+        if self.retcode != 0 {
+            os.write_uint32(5, self.retcode)?;
         }
         if self.NOGFEEMNHPC != 0 {
-            os.write_uint64(1, self.NOGFEEMNHPC)?;
+            os.write_uint64(8, self.NOGFEEMNHPC)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+        if self.JJLOGICPOAO != 0 {
+            os.write_uint64(10, self.JJLOGICPOAO)?;
         }
         if self.NBDLPGBIDLC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.NBDLPGBIDLC))?;
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.NBDLPGBIDLC))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for GetCrossInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.JJLOGICPOAO = 0;
-        self.NOGFEEMNHPC = 0;
         self.retcode = 0;
+        self.NOGFEEMNHPC = 0;
+        self.JJLOGICPOAO = 0;
         self.NBDLPGBIDLC = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetCrossInfoScRsp {
         static instance: GetCrossInfoScRsp = GetCrossInfoScRsp {
-            JJLOGICPOAO: 0,
-            NOGFEEMNHPC: 0,
             retcode: 0,
+            NOGFEEMNHPC: 0,
+            JJLOGICPOAO: 0,
             NBDLPGBIDLC: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for GetCrossInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17GetCrossInfoScRsp.proto\x1a\x13FightGameMode.proto\"\xa3\x01\n\x11\
-    GetCrossInfoScRsp\x12\x20\n\x0bJJLOGICPOAO\x18\x07\x20\x01(\x04R\x0bJJLO\
-    GICPOAO\x12\x20\n\x0bNOGFEEMNHPC\x18\x01\x20\x01(\x04R\x0bNOGFEEMNHPC\
-    \x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\x120\n\x0bNBDLPGBID\
-    LC\x18\x03\x20\x01(\x0e2\x0e.FightGameModeR\x0bNBDLPGBIDLCb\x06proto3\
+    GetCrossInfoScRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\
+    \x12\x20\n\x0bNOGFEEMNHPC\x18\x08\x20\x01(\x04R\x0bNOGFEEMNHPC\x12\x20\n\
+    \x0bJJLOGICPOAO\x18\n\x20\x01(\x04R\x0bJJLOGICPOAO\x120\n\x0bNBDLPGBIDLC\
+    \x18\x01\x20\x01(\x0e2\x0e.FightGameModeR\x0bNBDLPGBIDLCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

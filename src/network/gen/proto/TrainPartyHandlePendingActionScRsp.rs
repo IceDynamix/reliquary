@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartyHandlePendingActionScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartyHandlePendingActionScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:TrainPartyHandlePendingActionScRsp.HBAPCCEGNME)
-    pub HBAPCCEGNME: u32,
-    // @@protoc_insertion_point(field:TrainPartyHandlePendingActionScRsp.DLNCBJFGKAA)
-    pub DLNCBJFGKAA: bool,
     // @@protoc_insertion_point(field:TrainPartyHandlePendingActionScRsp.HILOMEKAFBP)
     pub HILOMEKAFBP: ::protobuf::MessageField<super::FKMBFLMEGEB::FKMBFLMEGEB>,
+    // @@protoc_insertion_point(field:TrainPartyHandlePendingActionScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:TrainPartyHandlePendingActionScRsp.DLNCBJFGKAA)
+    pub DLNCBJFGKAA: bool,
+    // @@protoc_insertion_point(field:TrainPartyHandlePendingActionScRsp.HBAPCCEGNME)
+    pub HBAPCCEGNME: u32,
     // message oneof groups
     pub GNGLHJGMAOK: ::std::option::Option<train_party_handle_pending_action_sc_rsp::GNGLHJGMAOK>,
     // special fields
@@ -54,7 +54,7 @@ impl TrainPartyHandlePendingActionScRsp {
         ::std::default::Default::default()
     }
 
-    // .BFIFANAOCPC LAELPNHHJIK = 1806;
+    // .BFIFANAOCPC LAELPNHHJIK = 852;
 
     pub fn LAELPNHHJIK(&self) -> &super::BFIFANAOCPC::BFIFANAOCPC {
         match self.GNGLHJGMAOK {
@@ -103,7 +103,7 @@ impl TrainPartyHandlePendingActionScRsp {
         }
     }
 
-    // .MBINMAONBCD PMOJBJMKFAN = 1251;
+    // .MBINMAONBCD PMOJBJMKFAN = 54;
 
     pub fn PMOJBJMKFAN(&self) -> &super::MBINMAONBCD::MBINMAONBCD {
         match self.GNGLHJGMAOK {
@@ -152,7 +152,7 @@ impl TrainPartyHandlePendingActionScRsp {
         }
     }
 
-    // .JBOCJHNDAMC AFDNDBADDKP = 529;
+    // .JBOCJHNDAMC AFDNDBADDKP = 318;
 
     pub fn AFDNDBADDKP(&self) -> &super::JBOCJHNDAMC::JBOCJHNDAMC {
         match self.GNGLHJGMAOK {
@@ -201,7 +201,7 @@ impl TrainPartyHandlePendingActionScRsp {
         }
     }
 
-    // .FBGLLDNLGPE LEDFNCDFAMK = 1364;
+    // .FBGLLDNLGPE LEDFNCDFAMK = 1841;
 
     pub fn LEDFNCDFAMK(&self) -> &super::FBGLLDNLGPE::FBGLLDNLGPE {
         match self.GNGLHJGMAOK {
@@ -253,25 +253,25 @@ impl TrainPartyHandlePendingActionScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FKMBFLMEGEB::FKMBFLMEGEB>(
+            "HILOMEKAFBP",
+            |m: &TrainPartyHandlePendingActionScRsp| { &m.HILOMEKAFBP },
+            |m: &mut TrainPartyHandlePendingActionScRsp| { &mut m.HILOMEKAFBP },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &TrainPartyHandlePendingActionScRsp| { &m.retcode },
             |m: &mut TrainPartyHandlePendingActionScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HBAPCCEGNME",
-            |m: &TrainPartyHandlePendingActionScRsp| { &m.HBAPCCEGNME },
-            |m: &mut TrainPartyHandlePendingActionScRsp| { &mut m.HBAPCCEGNME },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DLNCBJFGKAA",
             |m: &TrainPartyHandlePendingActionScRsp| { &m.DLNCBJFGKAA },
             |m: &mut TrainPartyHandlePendingActionScRsp| { &mut m.DLNCBJFGKAA },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FKMBFLMEGEB::FKMBFLMEGEB>(
-            "HILOMEKAFBP",
-            |m: &TrainPartyHandlePendingActionScRsp| { &m.HILOMEKAFBP },
-            |m: &mut TrainPartyHandlePendingActionScRsp| { &mut m.HILOMEKAFBP },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HBAPCCEGNME",
+            |m: &TrainPartyHandlePendingActionScRsp| { &m.HBAPCCEGNME },
+            |m: &mut TrainPartyHandlePendingActionScRsp| { &mut m.HBAPCCEGNME },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BFIFANAOCPC::BFIFANAOCPC>(
             "LAELPNHHJIK",
@@ -320,28 +320,28 @@ impl ::protobuf::Message for TrainPartyHandlePendingActionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                104 => {
-                    self.HBAPCCEGNME = is.read_uint32()?;
-                },
-                48 => {
-                    self.DLNCBJFGKAA = is.read_bool()?;
-                },
-                58 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.HILOMEKAFBP)?;
                 },
-                14450 => {
+                56 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                24 => {
+                    self.DLNCBJFGKAA = is.read_bool()?;
+                },
+                88 => {
+                    self.HBAPCCEGNME = is.read_uint32()?;
+                },
+                6818 => {
                     self.GNGLHJGMAOK = ::std::option::Option::Some(train_party_handle_pending_action_sc_rsp::GNGLHJGMAOK::LAELPNHHJIK(is.read_message()?));
                 },
-                10010 => {
+                434 => {
                     self.GNGLHJGMAOK = ::std::option::Option::Some(train_party_handle_pending_action_sc_rsp::GNGLHJGMAOK::PMOJBJMKFAN(is.read_message()?));
                 },
-                4234 => {
+                2546 => {
                     self.GNGLHJGMAOK = ::std::option::Option::Some(train_party_handle_pending_action_sc_rsp::GNGLHJGMAOK::AFDNDBADDKP(is.read_message()?));
                 },
-                10914 => {
+                14730 => {
                     self.GNGLHJGMAOK = ::std::option::Option::Some(train_party_handle_pending_action_sc_rsp::GNGLHJGMAOK::LEDFNCDFAMK(is.read_message()?));
                 },
                 tag => {
@@ -356,18 +356,18 @@ impl ::protobuf::Message for TrainPartyHandlePendingActionScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+        if let Some(v) = self.HILOMEKAFBP.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.HBAPCCEGNME != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.HBAPCCEGNME);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         if self.DLNCBJFGKAA != false {
             my_size += 1 + 1;
         }
-        if let Some(v) = self.HILOMEKAFBP.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.HBAPCCEGNME != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.HBAPCCEGNME);
         }
         if let ::std::option::Option::Some(ref v) = self.GNGLHJGMAOK {
             match v {
@@ -395,31 +395,31 @@ impl ::protobuf::Message for TrainPartyHandlePendingActionScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+        if let Some(v) = self.HILOMEKAFBP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
-        if self.HBAPCCEGNME != 0 {
-            os.write_uint32(13, self.HBAPCCEGNME)?;
+        if self.retcode != 0 {
+            os.write_uint32(7, self.retcode)?;
         }
         if self.DLNCBJFGKAA != false {
-            os.write_bool(6, self.DLNCBJFGKAA)?;
+            os.write_bool(3, self.DLNCBJFGKAA)?;
         }
-        if let Some(v) = self.HILOMEKAFBP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if self.HBAPCCEGNME != 0 {
+            os.write_uint32(11, self.HBAPCCEGNME)?;
         }
         if let ::std::option::Option::Some(ref v) = self.GNGLHJGMAOK {
             match v {
                 &train_party_handle_pending_action_sc_rsp::GNGLHJGMAOK::LAELPNHHJIK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1806, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(852, v, os)?;
                 },
                 &train_party_handle_pending_action_sc_rsp::GNGLHJGMAOK::PMOJBJMKFAN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1251, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(54, v, os)?;
                 },
                 &train_party_handle_pending_action_sc_rsp::GNGLHJGMAOK::AFDNDBADDKP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(529, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(318, v, os)?;
                 },
                 &train_party_handle_pending_action_sc_rsp::GNGLHJGMAOK::LEDFNCDFAMK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1364, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1841, v, os)?;
                 },
             };
         }
@@ -440,10 +440,10 @@ impl ::protobuf::Message for TrainPartyHandlePendingActionScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.HBAPCCEGNME = 0;
-        self.DLNCBJFGKAA = false;
         self.HILOMEKAFBP.clear();
+        self.retcode = 0;
+        self.DLNCBJFGKAA = false;
+        self.HBAPCCEGNME = 0;
         self.GNGLHJGMAOK = ::std::option::Option::None;
         self.GNGLHJGMAOK = ::std::option::Option::None;
         self.GNGLHJGMAOK = ::std::option::Option::None;
@@ -453,10 +453,10 @@ impl ::protobuf::Message for TrainPartyHandlePendingActionScRsp {
 
     fn default_instance() -> &'static TrainPartyHandlePendingActionScRsp {
         static instance: TrainPartyHandlePendingActionScRsp = TrainPartyHandlePendingActionScRsp {
-            retcode: 0,
-            HBAPCCEGNME: 0,
-            DLNCBJFGKAA: false,
             HILOMEKAFBP: ::protobuf::MessageField::none(),
+            retcode: 0,
+            DLNCBJFGKAA: false,
+            HBAPCCEGNME: 0,
             GNGLHJGMAOK: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -518,15 +518,15 @@ pub mod train_party_handle_pending_action_sc_rsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(TrainPartyHandlePendingActionScRsp.proto\x1a\x11BFIFANAOCPC.proto\x1a\
     \x11FBGLLDNLGPE.proto\x1a\x11FKMBFLMEGEB.proto\x1a\x11JBOCJHNDAMC.proto\
-    \x1a\x11MBINMAONBCD.proto\"\x8d\x03\n\"TrainPartyHandlePendingActionScRs\
-    p\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12\x20\n\x0bHBAPC\
-    CEGNME\x18\r\x20\x01(\rR\x0bHBAPCCEGNME\x12\x20\n\x0bDLNCBJFGKAA\x18\x06\
-    \x20\x01(\x08R\x0bDLNCBJFGKAA\x12.\n\x0bHILOMEKAFBP\x18\x07\x20\x01(\x0b\
-    2\x0c.FKMBFLMEGEBR\x0bHILOMEKAFBP\x121\n\x0bLAELPNHHJIK\x18\x8e\x0e\x20\
-    \x01(\x0b2\x0c.BFIFANAOCPCH\0R\x0bLAELPNHHJIK\x121\n\x0bPMOJBJMKFAN\x18\
-    \xe3\t\x20\x01(\x0b2\x0c.MBINMAONBCDH\0R\x0bPMOJBJMKFAN\x121\n\x0bAFDNDB\
-    ADDKP\x18\x91\x04\x20\x01(\x0b2\x0c.JBOCJHNDAMCH\0R\x0bAFDNDBADDKP\x121\
-    \n\x0bLEDFNCDFAMK\x18\xd4\n\x20\x01(\x0b2\x0c.FBGLLDNLGPEH\0R\x0bLEDFNCD\
+    \x1a\x11MBINMAONBCD.proto\"\x8c\x03\n\"TrainPartyHandlePendingActionScRs\
+    p\x12.\n\x0bHILOMEKAFBP\x18\x0c\x20\x01(\x0b2\x0c.FKMBFLMEGEBR\x0bHILOME\
+    KAFBP\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12\x20\n\x0bD\
+    LNCBJFGKAA\x18\x03\x20\x01(\x08R\x0bDLNCBJFGKAA\x12\x20\n\x0bHBAPCCEGNME\
+    \x18\x0b\x20\x01(\rR\x0bHBAPCCEGNME\x121\n\x0bLAELPNHHJIK\x18\xd4\x06\
+    \x20\x01(\x0b2\x0c.BFIFANAOCPCH\0R\x0bLAELPNHHJIK\x120\n\x0bPMOJBJMKFAN\
+    \x186\x20\x01(\x0b2\x0c.MBINMAONBCDH\0R\x0bPMOJBJMKFAN\x121\n\x0bAFDNDBA\
+    DDKP\x18\xbe\x02\x20\x01(\x0b2\x0c.JBOCJHNDAMCH\0R\x0bAFDNDBADDKP\x121\n\
+    \x0bLEDFNCDFAMK\x18\xb1\x0e\x20\x01(\x0b2\x0c.FBGLLDNLGPEH\0R\x0bLEDFNCD\
     FAMKB\r\n\x0bGNGLHJGMAOKb\x06proto3\
 ";
 

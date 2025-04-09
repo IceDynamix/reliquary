@@ -82,7 +82,7 @@ impl ::protobuf::Message for IDOOPGCGKAL {
                 88 => {
                     self.FJNHDHOHBCL = is.read_uint32()?;
                 },
-                24 => {
+                120 => {
                     self.JKGFKBHIEPA = is.read_uint64()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for IDOOPGCGKAL {
             my_size += ::protobuf::rt::uint32_size(11, self.FJNHDHOHBCL);
         }
         if self.JKGFKBHIEPA != 0 {
-            my_size += ::protobuf::rt::uint64_size(3, self.JKGFKBHIEPA);
+            my_size += ::protobuf::rt::uint64_size(15, self.JKGFKBHIEPA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for IDOOPGCGKAL {
             os.write_uint32(11, self.FJNHDHOHBCL)?;
         }
         if self.JKGFKBHIEPA != 0 {
-            os.write_uint64(3, self.JKGFKBHIEPA)?;
+            os.write_uint64(15, self.JKGFKBHIEPA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for IDOOPGCGKAL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IDOOPGCGKAL.proto\"Q\n\x0bIDOOPGCGKAL\x12\x20\n\x0bFJNHDHOHBCL\x18\
-    \x0b\x20\x01(\rR\x0bFJNHDHOHBCL\x12\x20\n\x0bJKGFKBHIEPA\x18\x03\x20\x01\
+    \x0b\x20\x01(\rR\x0bFJNHDHOHBCL\x12\x20\n\x0bJKGFKBHIEPA\x18\x0f\x20\x01\
     (\x04R\x0bJKGFKBHIEPAb\x06proto3\
 ";
 

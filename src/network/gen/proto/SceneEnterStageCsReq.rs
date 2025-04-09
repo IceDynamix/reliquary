@@ -86,10 +86,10 @@ impl ::protobuf::Message for SceneEnterStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                112 => {
                     self.PMJAHILBLFL = is.read_bool()?;
                 },
-                8 => {
+                48 => {
                     self.FHICMGDFGBC = is.read_uint32()?;
                 },
                 24 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for SceneEnterStageCsReq {
             my_size += 1 + 1;
         }
         if self.FHICMGDFGBC != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.FHICMGDFGBC);
+            my_size += ::protobuf::rt::uint32_size(6, self.FHICMGDFGBC);
         }
         if self.NIKHBKCHHJG != ::protobuf::EnumOrUnknown::new(super::LIPEKJFJMNM::LIPEKJFJMNM::REBATTLE_TYPE_NONE) {
             my_size += ::protobuf::rt::int32_size(3, self.NIKHBKCHHJG.value());
@@ -123,10 +123,10 @@ impl ::protobuf::Message for SceneEnterStageCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PMJAHILBLFL != false {
-            os.write_bool(15, self.PMJAHILBLFL)?;
+            os.write_bool(14, self.PMJAHILBLFL)?;
         }
         if self.FHICMGDFGBC != 0 {
-            os.write_uint32(1, self.FHICMGDFGBC)?;
+            os.write_uint32(6, self.FHICMGDFGBC)?;
         }
         if self.NIKHBKCHHJG != ::protobuf::EnumOrUnknown::new(super::LIPEKJFJMNM::LIPEKJFJMNM::REBATTLE_TYPE_NONE) {
             os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.NIKHBKCHHJG))?;
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for SceneEnterStageCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aSceneEnterStageCsReq.proto\x1a\x11LIPEKJFJMNM.proto\"\x8a\x01\n\
-    \x14SceneEnterStageCsReq\x12\x20\n\x0bPMJAHILBLFL\x18\x0f\x20\x01(\x08R\
-    \x0bPMJAHILBLFL\x12\x20\n\x0bFHICMGDFGBC\x18\x01\x20\x01(\rR\x0bFHICMGDF\
+    \x14SceneEnterStageCsReq\x12\x20\n\x0bPMJAHILBLFL\x18\x0e\x20\x01(\x08R\
+    \x0bPMJAHILBLFL\x12\x20\n\x0bFHICMGDFGBC\x18\x06\x20\x01(\rR\x0bFHICMGDF\
     GBC\x12.\n\x0bNIKHBKCHHJG\x18\x03\x20\x01(\x0e2\x0c.LIPEKJFJMNMR\x0bNIKH\
     BKCHHJGb\x06proto3\
 ";

@@ -79,10 +79,10 @@ impl ::protobuf::Message for BOICEKFMCIC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                64 => {
                     self.BJCEKLKNLCD = is.read_uint32()?;
                 },
-                42 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CKMAHDGIBOH)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for BOICEKFMCIC {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.BJCEKLKNLCD != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.BJCEKLKNLCD);
+            my_size += ::protobuf::rt::uint32_size(8, self.BJCEKLKNLCD);
         }
         if let Some(v) = self.CKMAHDGIBOH.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for BOICEKFMCIC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BJCEKLKNLCD != 0 {
-            os.write_uint32(7, self.BJCEKLKNLCD)?;
+            os.write_uint32(8, self.BJCEKLKNLCD)?;
         }
         if let Some(v) = self.CKMAHDGIBOH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for BOICEKFMCIC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BOICEKFMCIC.proto\x1a\x11IMJMGEENCEH.proto\"_\n\x0bBOICEKFMCIC\x12\
-    \x20\n\x0bBJCEKLKNLCD\x18\x07\x20\x01(\rR\x0bBJCEKLKNLCD\x12.\n\x0bCKMAH\
-    DGIBOH\x18\x05\x20\x01(\x0b2\x0c.IMJMGEENCEHR\x0bCKMAHDGIBOHb\x06proto3\
+    \x20\n\x0bBJCEKLKNLCD\x18\x08\x20\x01(\rR\x0bBJCEKLKNLCD\x12.\n\x0bCKMAH\
+    DGIBOH\x18\x07\x20\x01(\x0b2\x0c.IMJMGEENCEHR\x0bCKMAHDGIBOHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

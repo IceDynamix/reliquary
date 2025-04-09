@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MJCJAIKPLLM {
     // message fields
-    // @@protoc_insertion_point(field:MJCJAIKPLLM.ACELAGJPHMA)
-    pub ACELAGJPHMA: bool,
-    // @@protoc_insertion_point(field:MJCJAIKPLLM.MPAECAPOHEO)
-    pub MPAECAPOHEO: u32,
     // @@protoc_insertion_point(field:MJCJAIKPLLM.FJNHDHOHBCL)
     pub FJNHDHOHBCL: u32,
     // @@protoc_insertion_point(field:MJCJAIKPLLM.CBINDIAAMJG)
     pub CBINDIAAMJG: u32,
+    // @@protoc_insertion_point(field:MJCJAIKPLLM.MPAECAPOHEO)
+    pub MPAECAPOHEO: u32,
+    // @@protoc_insertion_point(field:MJCJAIKPLLM.ACELAGJPHMA)
+    pub ACELAGJPHMA: bool,
     // @@protoc_insertion_point(field:MJCJAIKPLLM.IFANGMHNKBB)
     pub IFANGMHNKBB: u32,
     // special fields
@@ -58,16 +58,6 @@ impl MJCJAIKPLLM {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ACELAGJPHMA",
-            |m: &MJCJAIKPLLM| { &m.ACELAGJPHMA },
-            |m: &mut MJCJAIKPLLM| { &mut m.ACELAGJPHMA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MPAECAPOHEO",
-            |m: &MJCJAIKPLLM| { &m.MPAECAPOHEO },
-            |m: &mut MJCJAIKPLLM| { &mut m.MPAECAPOHEO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FJNHDHOHBCL",
             |m: &MJCJAIKPLLM| { &m.FJNHDHOHBCL },
             |m: &mut MJCJAIKPLLM| { &mut m.FJNHDHOHBCL },
@@ -76,6 +66,16 @@ impl MJCJAIKPLLM {
             "CBINDIAAMJG",
             |m: &MJCJAIKPLLM| { &m.CBINDIAAMJG },
             |m: &mut MJCJAIKPLLM| { &mut m.CBINDIAAMJG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MPAECAPOHEO",
+            |m: &MJCJAIKPLLM| { &m.MPAECAPOHEO },
+            |m: &mut MJCJAIKPLLM| { &mut m.MPAECAPOHEO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ACELAGJPHMA",
+            |m: &MJCJAIKPLLM| { &m.ACELAGJPHMA },
+            |m: &mut MJCJAIKPLLM| { &mut m.ACELAGJPHMA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IFANGMHNKBB",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for MJCJAIKPLLM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.ACELAGJPHMA = is.read_bool()?;
-                },
-                24 => {
-                    self.MPAECAPOHEO = is.read_uint32()?;
-                },
-                48 => {
+                88 => {
                     self.FJNHDHOHBCL = is.read_uint32()?;
                 },
-                104 => {
+                112 => {
                     self.CBINDIAAMJG = is.read_uint32()?;
                 },
-                32 => {
+                40 => {
+                    self.MPAECAPOHEO = is.read_uint32()?;
+                },
+                96 => {
+                    self.ACELAGJPHMA = is.read_bool()?;
+                },
+                64 => {
                     self.IFANGMHNKBB = is.read_uint32()?;
                 },
                 tag => {
@@ -127,20 +127,20 @@ impl ::protobuf::Message for MJCJAIKPLLM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.FJNHDHOHBCL != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.FJNHDHOHBCL);
+        }
+        if self.CBINDIAAMJG != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.CBINDIAAMJG);
+        }
+        if self.MPAECAPOHEO != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.MPAECAPOHEO);
+        }
         if self.ACELAGJPHMA != false {
             my_size += 1 + 1;
         }
-        if self.MPAECAPOHEO != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.MPAECAPOHEO);
-        }
-        if self.FJNHDHOHBCL != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.FJNHDHOHBCL);
-        }
-        if self.CBINDIAAMJG != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.CBINDIAAMJG);
-        }
         if self.IFANGMHNKBB != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.IFANGMHNKBB);
+            my_size += ::protobuf::rt::uint32_size(8, self.IFANGMHNKBB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for MJCJAIKPLLM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ACELAGJPHMA != false {
-            os.write_bool(5, self.ACELAGJPHMA)?;
-        }
-        if self.MPAECAPOHEO != 0 {
-            os.write_uint32(3, self.MPAECAPOHEO)?;
-        }
         if self.FJNHDHOHBCL != 0 {
-            os.write_uint32(6, self.FJNHDHOHBCL)?;
+            os.write_uint32(11, self.FJNHDHOHBCL)?;
         }
         if self.CBINDIAAMJG != 0 {
-            os.write_uint32(13, self.CBINDIAAMJG)?;
+            os.write_uint32(14, self.CBINDIAAMJG)?;
+        }
+        if self.MPAECAPOHEO != 0 {
+            os.write_uint32(5, self.MPAECAPOHEO)?;
+        }
+        if self.ACELAGJPHMA != false {
+            os.write_bool(12, self.ACELAGJPHMA)?;
         }
         if self.IFANGMHNKBB != 0 {
-            os.write_uint32(4, self.IFANGMHNKBB)?;
+            os.write_uint32(8, self.IFANGMHNKBB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,20 +180,20 @@ impl ::protobuf::Message for MJCJAIKPLLM {
     }
 
     fn clear(&mut self) {
-        self.ACELAGJPHMA = false;
-        self.MPAECAPOHEO = 0;
         self.FJNHDHOHBCL = 0;
         self.CBINDIAAMJG = 0;
+        self.MPAECAPOHEO = 0;
+        self.ACELAGJPHMA = false;
         self.IFANGMHNKBB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MJCJAIKPLLM {
         static instance: MJCJAIKPLLM = MJCJAIKPLLM {
-            ACELAGJPHMA: false,
-            MPAECAPOHEO: 0,
             FJNHDHOHBCL: 0,
             CBINDIAAMJG: 0,
+            MPAECAPOHEO: 0,
+            ACELAGJPHMA: false,
             IFANGMHNKBB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for MJCJAIKPLLM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MJCJAIKPLLM.proto\"\xb7\x01\n\x0bMJCJAIKPLLM\x12\x20\n\x0bACELAGJP\
-    HMA\x18\x05\x20\x01(\x08R\x0bACELAGJPHMA\x12\x20\n\x0bMPAECAPOHEO\x18\
-    \x03\x20\x01(\rR\x0bMPAECAPOHEO\x12\x20\n\x0bFJNHDHOHBCL\x18\x06\x20\x01\
-    (\rR\x0bFJNHDHOHBCL\x12\x20\n\x0bCBINDIAAMJG\x18\r\x20\x01(\rR\x0bCBINDI\
-    AAMJG\x12\x20\n\x0bIFANGMHNKBB\x18\x04\x20\x01(\rR\x0bIFANGMHNKBBb\x06pr\
+    \n\x11MJCJAIKPLLM.proto\"\xb7\x01\n\x0bMJCJAIKPLLM\x12\x20\n\x0bFJNHDHOH\
+    BCL\x18\x0b\x20\x01(\rR\x0bFJNHDHOHBCL\x12\x20\n\x0bCBINDIAAMJG\x18\x0e\
+    \x20\x01(\rR\x0bCBINDIAAMJG\x12\x20\n\x0bMPAECAPOHEO\x18\x05\x20\x01(\rR\
+    \x0bMPAECAPOHEO\x12\x20\n\x0bACELAGJPHMA\x18\x0c\x20\x01(\x08R\x0bACELAG\
+    JPHMA\x12\x20\n\x0bIFANGMHNKBB\x18\x08\x20\x01(\rR\x0bIFANGMHNKBBb\x06pr\
     oto3\
 ";
 

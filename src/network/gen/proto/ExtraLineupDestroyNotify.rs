@@ -72,7 +72,7 @@ impl ::protobuf::Message for ExtraLineupDestroyNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                72 => {
                     self.NJDMFPFKKIH = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for ExtraLineupDestroyNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.NJDMFPFKKIH != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            my_size += ::protobuf::rt::int32_size(5, self.NJDMFPFKKIH.value());
+            my_size += ::protobuf::rt::int32_size(9, self.NJDMFPFKKIH.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for ExtraLineupDestroyNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.NJDMFPFKKIH != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.NJDMFPFKKIH))?;
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.NJDMFPFKKIH))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for ExtraLineupDestroyNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eExtraLineupDestroyNotify.proto\x1a\x15ExtraLineupType.proto\"N\n\
-    \x18ExtraLineupDestroyNotify\x122\n\x0bNJDMFPFKKIH\x18\x05\x20\x01(\x0e2\
+    \x18ExtraLineupDestroyNotify\x122\n\x0bNJDMFPFKKIH\x18\t\x20\x01(\x0e2\
     \x10.ExtraLineupTypeR\x0bNJDMFPFKKIHb\x06proto3\
 ";
 

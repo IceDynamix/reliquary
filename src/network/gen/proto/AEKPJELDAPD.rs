@@ -30,10 +30,10 @@ pub struct AEKPJELDAPD {
     // message fields
     // @@protoc_insertion_point(field:AEKPJELDAPD.KNIHPLNGOCL)
     pub KNIHPLNGOCL: ::protobuf::MessageField<super::FPCHMKKCGFA::FPCHMKKCGFA>,
-    // @@protoc_insertion_point(field:AEKPJELDAPD.HHMABJDIMGM)
-    pub HHMABJDIMGM: ::protobuf::EnumOrUnknown<super::RogueModifierSourceType::RogueModifierSourceType>,
     // @@protoc_insertion_point(field:AEKPJELDAPD.PKFCLDINCAL)
     pub PKFCLDINCAL: u64,
+    // @@protoc_insertion_point(field:AEKPJELDAPD.HHMABJDIMGM)
+    pub HHMABJDIMGM: ::protobuf::EnumOrUnknown<super::RogueModifierSourceType::RogueModifierSourceType>,
     // message oneof groups
     pub KFELKJLDKEH: ::std::option::Option<aekpjeldapd::KFELKJLDKEH>,
     // special fields
@@ -52,7 +52,7 @@ impl AEKPJELDAPD {
         ::std::default::Default::default()
     }
 
-    // .NDFOOKGHHOP KBOBEEMCNDD = 1642;
+    // .NDFOOKGHHOP KBOBEEMCNDD = 1274;
 
     pub fn KBOBEEMCNDD(&self) -> &super::NDFOOKGHHOP::NDFOOKGHHOP {
         match self.KFELKJLDKEH {
@@ -110,14 +110,14 @@ impl AEKPJELDAPD {
             |m: &mut AEKPJELDAPD| { &mut m.KNIHPLNGOCL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HHMABJDIMGM",
-            |m: &AEKPJELDAPD| { &m.HHMABJDIMGM },
-            |m: &mut AEKPJELDAPD| { &mut m.HHMABJDIMGM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PKFCLDINCAL",
             |m: &AEKPJELDAPD| { &m.PKFCLDINCAL },
             |m: &mut AEKPJELDAPD| { &mut m.PKFCLDINCAL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HHMABJDIMGM",
+            |m: &AEKPJELDAPD| { &m.HHMABJDIMGM },
+            |m: &mut AEKPJELDAPD| { &mut m.HHMABJDIMGM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NDFOOKGHHOP::NDFOOKGHHOP>(
             "KBOBEEMCNDD",
@@ -145,16 +145,16 @@ impl ::protobuf::Message for AEKPJELDAPD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.KNIHPLNGOCL)?;
                 },
                 32 => {
-                    self.HHMABJDIMGM = is.read_enum_or_unknown()?;
-                },
-                48 => {
                     self.PKFCLDINCAL = is.read_uint64()?;
                 },
-                13138 => {
+                24 => {
+                    self.HHMABJDIMGM = is.read_enum_or_unknown()?;
+                },
+                10194 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(aekpjeldapd::KFELKJLDKEH::KBOBEEMCNDD(is.read_message()?));
                 },
                 tag => {
@@ -173,11 +173,11 @@ impl ::protobuf::Message for AEKPJELDAPD {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.HHMABJDIMGM != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::ROGUE_MODIFIER_SOURCE_NONE) {
-            my_size += ::protobuf::rt::int32_size(4, self.HHMABJDIMGM.value());
-        }
         if self.PKFCLDINCAL != 0 {
-            my_size += ::protobuf::rt::uint64_size(6, self.PKFCLDINCAL);
+            my_size += ::protobuf::rt::uint64_size(4, self.PKFCLDINCAL);
+        }
+        if self.HHMABJDIMGM != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::ROGUE_MODIFIER_SOURCE_NONE) {
+            my_size += ::protobuf::rt::int32_size(3, self.HHMABJDIMGM.value());
         }
         if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
             match v {
@@ -194,18 +194,18 @@ impl ::protobuf::Message for AEKPJELDAPD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.KNIHPLNGOCL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        }
-        if self.HHMABJDIMGM != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::ROGUE_MODIFIER_SOURCE_NONE) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.HHMABJDIMGM))?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         if self.PKFCLDINCAL != 0 {
-            os.write_uint64(6, self.PKFCLDINCAL)?;
+            os.write_uint64(4, self.PKFCLDINCAL)?;
+        }
+        if self.HHMABJDIMGM != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::ROGUE_MODIFIER_SOURCE_NONE) {
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.HHMABJDIMGM))?;
         }
         if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
             match v {
                 &aekpjeldapd::KFELKJLDKEH::KBOBEEMCNDD(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1642, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1274, v, os)?;
                 },
             };
         }
@@ -227,8 +227,8 @@ impl ::protobuf::Message for AEKPJELDAPD {
 
     fn clear(&mut self) {
         self.KNIHPLNGOCL.clear();
-        self.HHMABJDIMGM = ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::ROGUE_MODIFIER_SOURCE_NONE);
         self.PKFCLDINCAL = 0;
+        self.HHMABJDIMGM = ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::ROGUE_MODIFIER_SOURCE_NONE);
         self.KFELKJLDKEH = ::std::option::Option::None;
         self.special_fields.clear();
     }
@@ -236,8 +236,8 @@ impl ::protobuf::Message for AEKPJELDAPD {
     fn default_instance() -> &'static AEKPJELDAPD {
         static instance: AEKPJELDAPD = AEKPJELDAPD {
             KNIHPLNGOCL: ::protobuf::MessageField::none(),
-            HHMABJDIMGM: ::protobuf::EnumOrUnknown::from_i32(0),
             PKFCLDINCAL: 0,
+            HHMABJDIMGM: ::protobuf::EnumOrUnknown::from_i32(0),
             KFELKJLDKEH: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -293,11 +293,11 @@ pub mod aekpjeldapd {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AEKPJELDAPD.proto\x1a\x11FPCHMKKCGFA.proto\x1a\x11NDFOOKGHHOP.prot\
     o\x1a\x1dRogueModifierSourceType.proto\"\xdd\x01\n\x0bAEKPJELDAPD\x12.\n\
-    \x0bKNIHPLNGOCL\x18\x0c\x20\x01(\x0b2\x0c.FPCHMKKCGFAR\x0bKNIHPLNGOCL\
-    \x12:\n\x0bHHMABJDIMGM\x18\x04\x20\x01(\x0e2\x18.RogueModifierSourceType\
-    R\x0bHHMABJDIMGM\x12\x20\n\x0bPKFCLDINCAL\x18\x06\x20\x01(\x04R\x0bPKFCL\
-    DINCAL\x121\n\x0bKBOBEEMCNDD\x18\xea\x0c\x20\x01(\x0b2\x0c.NDFOOKGHHOPH\
-    \0R\x0bKBOBEEMCNDDB\r\n\x0bKFELKJLDKEHb\x06proto3\
+    \x0bKNIHPLNGOCL\x18\r\x20\x01(\x0b2\x0c.FPCHMKKCGFAR\x0bKNIHPLNGOCL\x12\
+    \x20\n\x0bPKFCLDINCAL\x18\x04\x20\x01(\x04R\x0bPKFCLDINCAL\x12:\n\x0bHHM\
+    ABJDIMGM\x18\x03\x20\x01(\x0e2\x18.RogueModifierSourceTypeR\x0bHHMABJDIM\
+    GM\x121\n\x0bKBOBEEMCNDD\x18\xfa\t\x20\x01(\x0b2\x0c.NDFOOKGHHOPH\0R\x0b\
+    KBOBEEMCNDDB\r\n\x0bKFELKJLDKEHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

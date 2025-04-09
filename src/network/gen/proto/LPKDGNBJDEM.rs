@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LPKDGNBJDEM {
     // message fields
-    // @@protoc_insertion_point(field:LPKDGNBJDEM.MDHFANLHNMA)
-    pub MDHFANLHNMA: ::protobuf::MessageField<super::DisplayAvatarDetailInfo::DisplayAvatarDetailInfo>,
     // @@protoc_insertion_point(field:LPKDGNBJDEM.DLNJLMDALAF)
     pub DLNJLMDALAF: ::protobuf::MessageField<super::BKDCJANPNBP::BKDCJANPNBP>,
+    // @@protoc_insertion_point(field:LPKDGNBJDEM.MDHFANLHNMA)
+    pub MDHFANLHNMA: ::protobuf::MessageField<super::DisplayAvatarDetailInfo::DisplayAvatarDetailInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:LPKDGNBJDEM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl LPKDGNBJDEM {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DisplayAvatarDetailInfo::DisplayAvatarDetailInfo>(
-            "MDHFANLHNMA",
-            |m: &LPKDGNBJDEM| { &m.MDHFANLHNMA },
-            |m: &mut LPKDGNBJDEM| { &mut m.MDHFANLHNMA },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BKDCJANPNBP::BKDCJANPNBP>(
             "DLNJLMDALAF",
             |m: &LPKDGNBJDEM| { &m.DLNJLMDALAF },
             |m: &mut LPKDGNBJDEM| { &mut m.DLNJLMDALAF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DisplayAvatarDetailInfo::DisplayAvatarDetailInfo>(
+            "MDHFANLHNMA",
+            |m: &LPKDGNBJDEM| { &m.MDHFANLHNMA },
+            |m: &mut LPKDGNBJDEM| { &mut m.MDHFANLHNMA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LPKDGNBJDEM>(
             "LPKDGNBJDEM",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for LPKDGNBJDEM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MDHFANLHNMA)?;
-                },
-                10 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.DLNJLMDALAF)?;
+                },
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MDHFANLHNMA)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for LPKDGNBJDEM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.MDHFANLHNMA.as_ref() {
+        if let Some(v) = self.DLNJLMDALAF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.DLNJLMDALAF.as_ref() {
+        if let Some(v) = self.MDHFANLHNMA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for LPKDGNBJDEM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.MDHFANLHNMA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
         if let Some(v) = self.DLNJLMDALAF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
+        if let Some(v) = self.MDHFANLHNMA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for LPKDGNBJDEM {
     }
 
     fn clear(&mut self) {
-        self.MDHFANLHNMA.clear();
         self.DLNJLMDALAF.clear();
+        self.MDHFANLHNMA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LPKDGNBJDEM {
         static instance: LPKDGNBJDEM = LPKDGNBJDEM {
-            MDHFANLHNMA: ::protobuf::MessageField::none(),
             DLNJLMDALAF: ::protobuf::MessageField::none(),
+            MDHFANLHNMA: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for LPKDGNBJDEM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LPKDGNBJDEM.proto\x1a\x11BKDCJANPNBP.proto\x1a\x1dDisplayAvatarDet\
-    ailInfo.proto\"y\n\x0bLPKDGNBJDEM\x12:\n\x0bMDHFANLHNMA\x18\x02\x20\x01(\
-    \x0b2\x18.DisplayAvatarDetailInfoR\x0bMDHFANLHNMA\x12.\n\x0bDLNJLMDALAF\
-    \x18\x01\x20\x01(\x0b2\x0c.BKDCJANPNBPR\x0bDLNJLMDALAFb\x06proto3\
+    ailInfo.proto\"y\n\x0bLPKDGNBJDEM\x12.\n\x0bDLNJLMDALAF\x18\x07\x20\x01(\
+    \x0b2\x0c.BKDCJANPNBPR\x0bDLNJLMDALAF\x12:\n\x0bMDHFANLHNMA\x18\r\x20\
+    \x01(\x0b2\x18.DisplayAvatarDetailInfoR\x0bMDHFANLHNMAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

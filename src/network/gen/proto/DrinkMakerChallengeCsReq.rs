@@ -79,7 +79,7 @@ impl ::protobuf::Message for DrinkMakerChallengeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LPMCGNJLBGD)?;
                 },
                 120 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for DrinkMakerChallengeCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.LPMCGNJLBGD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.CFAAFJJAADP != 0 {
             os.write_uint32(15, self.CFAAFJJAADP)?;
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for DrinkMakerChallengeCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eDrinkMakerChallengeCsReq.proto\x1a\x11EEKFECDIHJE.proto\"l\n\x18Dr\
-    inkMakerChallengeCsReq\x12.\n\x0bLPMCGNJLBGD\x18\x08\x20\x01(\x0b2\x0c.E\
-    EKFECDIHJER\x0bLPMCGNJLBGD\x12\x20\n\x0bCFAAFJJAADP\x18\x0f\x20\x01(\rR\
+    inkMakerChallengeCsReq\x12.\n\x0bLPMCGNJLBGD\x18\t\x20\x01(\x0b2\x0c.EEK\
+    FECDIHJER\x0bLPMCGNJLBGD\x12\x20\n\x0bCFAAFJJAADP\x18\x0f\x20\x01(\rR\
     \x0bCFAAFJJAADPb\x06proto3\
 ";
 

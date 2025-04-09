@@ -30,12 +30,12 @@ pub struct ICILDHNFJFG {
     // message fields
     // @@protoc_insertion_point(field:ICILDHNFJFG.FPCHNBLONLC)
     pub FPCHNBLONLC: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ICILDHNFJFG.AOELKJEEGKG)
-    pub AOELKJEEGKG: bool,
     // @@protoc_insertion_point(field:ICILDHNFJFG.HLBFBFDLACA)
     pub HLBFBFDLACA: u32,
     // @@protoc_insertion_point(field:ICILDHNFJFG.ALKILFNBFNM)
     pub ALKILFNBFNM: u32,
+    // @@protoc_insertion_point(field:ICILDHNFJFG.AOELKJEEGKG)
+    pub AOELKJEEGKG: bool,
     // special fields
     // @@protoc_insertion_point(special_field:ICILDHNFJFG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,11 +61,6 @@ impl ICILDHNFJFG {
             |m: &mut ICILDHNFJFG| { &mut m.FPCHNBLONLC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AOELKJEEGKG",
-            |m: &ICILDHNFJFG| { &m.AOELKJEEGKG },
-            |m: &mut ICILDHNFJFG| { &mut m.AOELKJEEGKG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HLBFBFDLACA",
             |m: &ICILDHNFJFG| { &m.HLBFBFDLACA },
             |m: &mut ICILDHNFJFG| { &mut m.HLBFBFDLACA },
@@ -74,6 +69,11 @@ impl ICILDHNFJFG {
             "ALKILFNBFNM",
             |m: &ICILDHNFJFG| { &m.ALKILFNBFNM },
             |m: &mut ICILDHNFJFG| { &mut m.ALKILFNBFNM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AOELKJEEGKG",
+            |m: &ICILDHNFJFG| { &m.AOELKJEEGKG },
+            |m: &mut ICILDHNFJFG| { &mut m.AOELKJEEGKG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ICILDHNFJFG>(
             "ICILDHNFJFG",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for ICILDHNFJFG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.FPCHNBLONLC)?;
                 },
-                80 => {
+                24 => {
                     self.FPCHNBLONLC.push(is.read_uint32()?);
                 },
-                88 => {
-                    self.AOELKJEEGKG = is.read_bool()?;
-                },
-                8 => {
+                16 => {
                     self.HLBFBFDLACA = is.read_uint32()?;
                 },
-                56 => {
+                64 => {
                     self.ALKILFNBFNM = is.read_uint32()?;
+                },
+                80 => {
+                    self.AOELKJEEGKG = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,15 +120,15 @@ impl ::protobuf::Message for ICILDHNFJFG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.FPCHNBLONLC);
-        if self.AOELKJEEGKG != false {
-            my_size += 1 + 1;
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.FPCHNBLONLC);
         if self.HLBFBFDLACA != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.HLBFBFDLACA);
+            my_size += ::protobuf::rt::uint32_size(2, self.HLBFBFDLACA);
         }
         if self.ALKILFNBFNM != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.ALKILFNBFNM);
+            my_size += ::protobuf::rt::uint32_size(8, self.ALKILFNBFNM);
+        }
+        if self.AOELKJEEGKG != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,15 +136,15 @@ impl ::protobuf::Message for ICILDHNFJFG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(10, &self.FPCHNBLONLC)?;
-        if self.AOELKJEEGKG != false {
-            os.write_bool(11, self.AOELKJEEGKG)?;
-        }
+        os.write_repeated_packed_uint32(3, &self.FPCHNBLONLC)?;
         if self.HLBFBFDLACA != 0 {
-            os.write_uint32(1, self.HLBFBFDLACA)?;
+            os.write_uint32(2, self.HLBFBFDLACA)?;
         }
         if self.ALKILFNBFNM != 0 {
-            os.write_uint32(7, self.ALKILFNBFNM)?;
+            os.write_uint32(8, self.ALKILFNBFNM)?;
+        }
+        if self.AOELKJEEGKG != false {
+            os.write_bool(10, self.AOELKJEEGKG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for ICILDHNFJFG {
 
     fn clear(&mut self) {
         self.FPCHNBLONLC.clear();
-        self.AOELKJEEGKG = false;
         self.HLBFBFDLACA = 0;
         self.ALKILFNBFNM = 0;
+        self.AOELKJEEGKG = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ICILDHNFJFG {
         static instance: ICILDHNFJFG = ICILDHNFJFG {
             FPCHNBLONLC: ::std::vec::Vec::new(),
-            AOELKJEEGKG: false,
             HLBFBFDLACA: 0,
             ALKILFNBFNM: 0,
+            AOELKJEEGKG: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for ICILDHNFJFG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ICILDHNFJFG.proto\"\x95\x01\n\x0bICILDHNFJFG\x12\x20\n\x0bFPCHNBLO\
-    NLC\x18\n\x20\x03(\rR\x0bFPCHNBLONLC\x12\x20\n\x0bAOELKJEEGKG\x18\x0b\
-    \x20\x01(\x08R\x0bAOELKJEEGKG\x12\x20\n\x0bHLBFBFDLACA\x18\x01\x20\x01(\
-    \rR\x0bHLBFBFDLACA\x12\x20\n\x0bALKILFNBFNM\x18\x07\x20\x01(\rR\x0bALKIL\
-    FNBFNMb\x06proto3\
+    NLC\x18\x03\x20\x03(\rR\x0bFPCHNBLONLC\x12\x20\n\x0bHLBFBFDLACA\x18\x02\
+    \x20\x01(\rR\x0bHLBFBFDLACA\x12\x20\n\x0bALKILFNBFNM\x18\x08\x20\x01(\rR\
+    \x0bALKILFNBFNM\x12\x20\n\x0bAOELKJEEGKG\x18\n\x20\x01(\x08R\x0bAOELKJEE\
+    GKGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for KKCKGEOJFKE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                32 => {
                     self.BDMLGEPNDFM = is.read_uint32()?;
                 },
-                42 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BOHDMINEJNO)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for KKCKGEOJFKE {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.BDMLGEPNDFM != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.BDMLGEPNDFM);
+            my_size += ::protobuf::rt::uint32_size(4, self.BDMLGEPNDFM);
         }
         if let Some(v) = self.BOHDMINEJNO.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for KKCKGEOJFKE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BDMLGEPNDFM != 0 {
-            os.write_uint32(13, self.BDMLGEPNDFM)?;
+            os.write_uint32(4, self.BDMLGEPNDFM)?;
         }
         if let Some(v) = self.BOHDMINEJNO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for KKCKGEOJFKE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KKCKGEOJFKE.proto\x1a\x11EENDHPKPFLP.proto\"_\n\x0bKKCKGEOJFKE\x12\
-    \x20\n\x0bBDMLGEPNDFM\x18\r\x20\x01(\rR\x0bBDMLGEPNDFM\x12.\n\x0bBOHDMIN\
-    EJNO\x18\x05\x20\x01(\x0b2\x0c.EENDHPKPFLPR\x0bBOHDMINEJNOb\x06proto3\
+    \x20\n\x0bBDMLGEPNDFM\x18\x04\x20\x01(\rR\x0bBDMLGEPNDFM\x12.\n\x0bBOHDM\
+    INEJNO\x18\r\x20\x01(\x0b2\x0c.EENDHPKPFLPR\x0bBOHDMINEJNOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

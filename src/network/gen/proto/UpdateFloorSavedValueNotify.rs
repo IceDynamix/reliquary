@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdateFloorSavedValueNotify {
     // message fields
-    // @@protoc_insertion_point(field:UpdateFloorSavedValueNotify.LJHIJCABHEP)
-    pub LJHIJCABHEP: u32,
     // @@protoc_insertion_point(field:UpdateFloorSavedValueNotify.OAIFMGLIEEP)
     pub OAIFMGLIEEP: ::std::collections::HashMap<::std::string::String, i32>,
-    // @@protoc_insertion_point(field:UpdateFloorSavedValueNotify.GFHGLFFHFBD)
-    pub GFHGLFFHFBD: u32,
     // @@protoc_insertion_point(field:UpdateFloorSavedValueNotify.PDONLOOBBCI)
     pub PDONLOOBBCI: u32,
+    // @@protoc_insertion_point(field:UpdateFloorSavedValueNotify.GFHGLFFHFBD)
+    pub GFHGLFFHFBD: u32,
+    // @@protoc_insertion_point(field:UpdateFloorSavedValueNotify.LJHIJCABHEP)
+    pub LJHIJCABHEP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:UpdateFloorSavedValueNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,15 +55,15 @@ impl UpdateFloorSavedValueNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LJHIJCABHEP",
-            |m: &UpdateFloorSavedValueNotify| { &m.LJHIJCABHEP },
-            |m: &mut UpdateFloorSavedValueNotify| { &mut m.LJHIJCABHEP },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "OAIFMGLIEEP",
             |m: &UpdateFloorSavedValueNotify| { &m.OAIFMGLIEEP },
             |m: &mut UpdateFloorSavedValueNotify| { &mut m.OAIFMGLIEEP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PDONLOOBBCI",
+            |m: &UpdateFloorSavedValueNotify| { &m.PDONLOOBBCI },
+            |m: &mut UpdateFloorSavedValueNotify| { &mut m.PDONLOOBBCI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GFHGLFFHFBD",
@@ -71,9 +71,9 @@ impl UpdateFloorSavedValueNotify {
             |m: &mut UpdateFloorSavedValueNotify| { &mut m.GFHGLFFHFBD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PDONLOOBBCI",
-            |m: &UpdateFloorSavedValueNotify| { &m.PDONLOOBBCI },
-            |m: &mut UpdateFloorSavedValueNotify| { &mut m.PDONLOOBBCI },
+            "LJHIJCABHEP",
+            |m: &UpdateFloorSavedValueNotify| { &m.LJHIJCABHEP },
+            |m: &mut UpdateFloorSavedValueNotify| { &mut m.LJHIJCABHEP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdateFloorSavedValueNotify>(
             "UpdateFloorSavedValueNotify",
@@ -93,10 +93,7 @@ impl ::protobuf::Message for UpdateFloorSavedValueNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.LJHIJCABHEP = is.read_uint32()?;
-                },
-                50 => {
+                66 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -112,10 +109,13 @@ impl ::protobuf::Message for UpdateFloorSavedValueNotify {
                     self.OAIFMGLIEEP.insert(key, value);
                 },
                 104 => {
+                    self.PDONLOOBBCI = is.read_uint32()?;
+                },
+                40 => {
                     self.GFHGLFFHFBD = is.read_uint32()?;
                 },
-                32 => {
-                    self.PDONLOOBBCI = is.read_uint32()?;
+                16 => {
+                    self.LJHIJCABHEP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -129,20 +129,20 @@ impl ::protobuf::Message for UpdateFloorSavedValueNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LJHIJCABHEP != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.LJHIJCABHEP);
-        }
         for (k, v) in &self.OAIFMGLIEEP {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::string_size(1, &k);
             entry_size += ::protobuf::rt::int32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if self.GFHGLFFHFBD != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.GFHGLFFHFBD);
-        }
         if self.PDONLOOBBCI != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.PDONLOOBBCI);
+            my_size += ::protobuf::rt::uint32_size(13, self.PDONLOOBBCI);
+        }
+        if self.GFHGLFFHFBD != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.GFHGLFFHFBD);
+        }
+        if self.LJHIJCABHEP != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.LJHIJCABHEP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,23 +150,23 @@ impl ::protobuf::Message for UpdateFloorSavedValueNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LJHIJCABHEP != 0 {
-            os.write_uint32(3, self.LJHIJCABHEP)?;
-        }
         for (k, v) in &self.OAIFMGLIEEP {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::string_size(1, &k);
             entry_size += ::protobuf::rt::int32_size(2, *v);
-            os.write_raw_varint32(50)?; // Tag.
+            os.write_raw_varint32(66)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_string(1, &k)?;
             os.write_int32(2, *v)?;
         };
-        if self.GFHGLFFHFBD != 0 {
-            os.write_uint32(13, self.GFHGLFFHFBD)?;
-        }
         if self.PDONLOOBBCI != 0 {
-            os.write_uint32(4, self.PDONLOOBBCI)?;
+            os.write_uint32(13, self.PDONLOOBBCI)?;
+        }
+        if self.GFHGLFFHFBD != 0 {
+            os.write_uint32(5, self.GFHGLFFHFBD)?;
+        }
+        if self.LJHIJCABHEP != 0 {
+            os.write_uint32(2, self.LJHIJCABHEP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,10 +185,10 @@ impl ::protobuf::Message for UpdateFloorSavedValueNotify {
     }
 
     fn clear(&mut self) {
-        self.LJHIJCABHEP = 0;
         self.OAIFMGLIEEP.clear();
-        self.GFHGLFFHFBD = 0;
         self.PDONLOOBBCI = 0;
+        self.GFHGLFFHFBD = 0;
+        self.LJHIJCABHEP = 0;
         self.special_fields.clear();
     }
 
@@ -217,11 +217,11 @@ impl ::protobuf::reflect::ProtobufValue for UpdateFloorSavedValueNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!UpdateFloorSavedValueNotify.proto\"\x94\x02\n\x1bUpdateFloorSavedValu\
-    eNotify\x12\x20\n\x0bLJHIJCABHEP\x18\x03\x20\x01(\rR\x0bLJHIJCABHEP\x12O\
-    \n\x0bOAIFMGLIEEP\x18\x06\x20\x03(\x0b2-.UpdateFloorSavedValueNotify.OAI\
-    FMGLIEEPEntryR\x0bOAIFMGLIEEP\x12\x20\n\x0bGFHGLFFHFBD\x18\r\x20\x01(\rR\
-    \x0bGFHGLFFHFBD\x12\x20\n\x0bPDONLOOBBCI\x18\x04\x20\x01(\rR\x0bPDONLOOB\
-    BCI\x1a>\n\x10OAIFMGLIEEPEntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03k\
+    eNotify\x12O\n\x0bOAIFMGLIEEP\x18\x08\x20\x03(\x0b2-.UpdateFloorSavedVal\
+    ueNotify.OAIFMGLIEEPEntryR\x0bOAIFMGLIEEP\x12\x20\n\x0bPDONLOOBBCI\x18\r\
+    \x20\x01(\rR\x0bPDONLOOBBCI\x12\x20\n\x0bGFHGLFFHFBD\x18\x05\x20\x01(\rR\
+    \x0bGFHGLFFHFBD\x12\x20\n\x0bLJHIJCABHEP\x18\x02\x20\x01(\rR\x0bLJHIJCAB\
+    HEP\x1a>\n\x10OAIFMGLIEEPEntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03k\
     ey\x12\x14\n\x05value\x18\x02\x20\x01(\x05R\x05value:\x028\x01b\x06proto\
     3\
 ";

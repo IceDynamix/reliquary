@@ -30,14 +30,14 @@ pub struct NIKKCCAKNNP {
     // message fields
     // @@protoc_insertion_point(field:NIKKCCAKNNP.HLBFBFDLACA)
     pub HLBFBFDLACA: u32,
-    // @@protoc_insertion_point(field:NIKKCCAKNNP.ALKILFNBFNM)
-    pub ALKILFNBFNM: u32,
     // @@protoc_insertion_point(field:NIKKCCAKNNP.FPCHNBLONLC)
     pub FPCHNBLONLC: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:NIKKCCAKNNP.AOELKJEEGKG)
     pub AOELKJEEGKG: bool,
     // @@protoc_insertion_point(field:NIKKCCAKNNP.AMNBMJOFJOO)
     pub AMNBMJOFJOO: u32,
+    // @@protoc_insertion_point(field:NIKKCCAKNNP.ALKILFNBFNM)
+    pub ALKILFNBFNM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:NIKKCCAKNNP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,11 +62,6 @@ impl NIKKCCAKNNP {
             |m: &NIKKCCAKNNP| { &m.HLBFBFDLACA },
             |m: &mut NIKKCCAKNNP| { &mut m.HLBFBFDLACA },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ALKILFNBFNM",
-            |m: &NIKKCCAKNNP| { &m.ALKILFNBFNM },
-            |m: &mut NIKKCCAKNNP| { &mut m.ALKILFNBFNM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "FPCHNBLONLC",
             |m: &NIKKCCAKNNP| { &m.FPCHNBLONLC },
@@ -81,6 +76,11 @@ impl NIKKCCAKNNP {
             "AMNBMJOFJOO",
             |m: &NIKKCCAKNNP| { &m.AMNBMJOFJOO },
             |m: &mut NIKKCCAKNNP| { &mut m.AMNBMJOFJOO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ALKILFNBFNM",
+            |m: &NIKKCCAKNNP| { &m.ALKILFNBFNM },
+            |m: &mut NIKKCCAKNNP| { &mut m.ALKILFNBFNM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NIKKCCAKNNP>(
             "NIKKCCAKNNP",
@@ -100,23 +100,23 @@ impl ::protobuf::Message for NIKKCCAKNNP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                112 => {
                     self.HLBFBFDLACA = is.read_uint32()?;
                 },
-                80 => {
-                    self.ALKILFNBFNM = is.read_uint32()?;
-                },
-                122 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.FPCHNBLONLC)?;
                 },
-                120 => {
+                56 => {
                     self.FPCHNBLONLC.push(is.read_uint32()?);
                 },
-                32 => {
+                16 => {
                     self.AOELKJEEGKG = is.read_bool()?;
                 },
-                64 => {
+                104 => {
                     self.AMNBMJOFJOO = is.read_uint32()?;
+                },
+                32 => {
+                    self.ALKILFNBFNM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -131,17 +131,17 @@ impl ::protobuf::Message for NIKKCCAKNNP {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HLBFBFDLACA != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.HLBFBFDLACA);
+            my_size += ::protobuf::rt::uint32_size(14, self.HLBFBFDLACA);
         }
-        if self.ALKILFNBFNM != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.ALKILFNBFNM);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.FPCHNBLONLC);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.FPCHNBLONLC);
         if self.AOELKJEEGKG != false {
             my_size += 1 + 1;
         }
         if self.AMNBMJOFJOO != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.AMNBMJOFJOO);
+            my_size += ::protobuf::rt::uint32_size(13, self.AMNBMJOFJOO);
+        }
+        if self.ALKILFNBFNM != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.ALKILFNBFNM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,17 +150,17 @@ impl ::protobuf::Message for NIKKCCAKNNP {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HLBFBFDLACA != 0 {
-            os.write_uint32(5, self.HLBFBFDLACA)?;
+            os.write_uint32(14, self.HLBFBFDLACA)?;
         }
-        if self.ALKILFNBFNM != 0 {
-            os.write_uint32(10, self.ALKILFNBFNM)?;
-        }
-        os.write_repeated_packed_uint32(15, &self.FPCHNBLONLC)?;
+        os.write_repeated_packed_uint32(7, &self.FPCHNBLONLC)?;
         if self.AOELKJEEGKG != false {
-            os.write_bool(4, self.AOELKJEEGKG)?;
+            os.write_bool(2, self.AOELKJEEGKG)?;
         }
         if self.AMNBMJOFJOO != 0 {
-            os.write_uint32(8, self.AMNBMJOFJOO)?;
+            os.write_uint32(13, self.AMNBMJOFJOO)?;
+        }
+        if self.ALKILFNBFNM != 0 {
+            os.write_uint32(4, self.ALKILFNBFNM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,20 +180,20 @@ impl ::protobuf::Message for NIKKCCAKNNP {
 
     fn clear(&mut self) {
         self.HLBFBFDLACA = 0;
-        self.ALKILFNBFNM = 0;
         self.FPCHNBLONLC.clear();
         self.AOELKJEEGKG = false;
         self.AMNBMJOFJOO = 0;
+        self.ALKILFNBFNM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NIKKCCAKNNP {
         static instance: NIKKCCAKNNP = NIKKCCAKNNP {
             HLBFBFDLACA: 0,
-            ALKILFNBFNM: 0,
             FPCHNBLONLC: ::std::vec::Vec::new(),
             AOELKJEEGKG: false,
             AMNBMJOFJOO: 0,
+            ALKILFNBFNM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for NIKKCCAKNNP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NIKKCCAKNNP.proto\"\xb7\x01\n\x0bNIKKCCAKNNP\x12\x20\n\x0bHLBFBFDL\
-    ACA\x18\x05\x20\x01(\rR\x0bHLBFBFDLACA\x12\x20\n\x0bALKILFNBFNM\x18\n\
-    \x20\x01(\rR\x0bALKILFNBFNM\x12\x20\n\x0bFPCHNBLONLC\x18\x0f\x20\x03(\rR\
-    \x0bFPCHNBLONLC\x12\x20\n\x0bAOELKJEEGKG\x18\x04\x20\x01(\x08R\x0bAOELKJ\
-    EEGKG\x12\x20\n\x0bAMNBMJOFJOO\x18\x08\x20\x01(\rR\x0bAMNBMJOFJOOb\x06pr\
-    oto3\
+    ACA\x18\x0e\x20\x01(\rR\x0bHLBFBFDLACA\x12\x20\n\x0bFPCHNBLONLC\x18\x07\
+    \x20\x03(\rR\x0bFPCHNBLONLC\x12\x20\n\x0bAOELKJEEGKG\x18\x02\x20\x01(\
+    \x08R\x0bAOELKJEEGKG\x12\x20\n\x0bAMNBMJOFJOO\x18\r\x20\x01(\rR\x0bAMNBM\
+    JOFJOO\x12\x20\n\x0bALKILFNBFNM\x18\x04\x20\x01(\rR\x0bALKILFNBFNMb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

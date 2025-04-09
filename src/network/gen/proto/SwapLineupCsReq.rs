@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SwapLineupCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SwapLineupCsReq.PDONLOOBBCI)
-    pub PDONLOOBBCI: u32,
+    // @@protoc_insertion_point(field:SwapLineupCsReq.EGMAFIOOKJJ)
+    pub EGMAFIOOKJJ: u32,
     // @@protoc_insertion_point(field:SwapLineupCsReq.ELLIDANJNOB)
     pub ELLIDANJNOB: u32,
     // @@protoc_insertion_point(field:SwapLineupCsReq.NJDMFPFKKIH)
     pub NJDMFPFKKIH: ::protobuf::EnumOrUnknown<super::ExtraLineupType::ExtraLineupType>,
     // @@protoc_insertion_point(field:SwapLineupCsReq.NEDIKHNGMBH)
     pub NEDIKHNGMBH: u32,
+    // @@protoc_insertion_point(field:SwapLineupCsReq.PDONLOOBBCI)
+    pub PDONLOOBBCI: u32,
     // @@protoc_insertion_point(field:SwapLineupCsReq.HCDNLLHBBOK)
     pub HCDNLLHBBOK: bool,
-    // @@protoc_insertion_point(field:SwapLineupCsReq.EGMAFIOOKJJ)
-    pub EGMAFIOOKJJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SwapLineupCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,9 +60,9 @@ impl SwapLineupCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PDONLOOBBCI",
-            |m: &SwapLineupCsReq| { &m.PDONLOOBBCI },
-            |m: &mut SwapLineupCsReq| { &mut m.PDONLOOBBCI },
+            "EGMAFIOOKJJ",
+            |m: &SwapLineupCsReq| { &m.EGMAFIOOKJJ },
+            |m: &mut SwapLineupCsReq| { &mut m.EGMAFIOOKJJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ELLIDANJNOB",
@@ -80,14 +80,14 @@ impl SwapLineupCsReq {
             |m: &mut SwapLineupCsReq| { &mut m.NEDIKHNGMBH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PDONLOOBBCI",
+            |m: &SwapLineupCsReq| { &m.PDONLOOBBCI },
+            |m: &mut SwapLineupCsReq| { &mut m.PDONLOOBBCI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HCDNLLHBBOK",
             |m: &SwapLineupCsReq| { &m.HCDNLLHBBOK },
             |m: &mut SwapLineupCsReq| { &mut m.HCDNLLHBBOK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EGMAFIOOKJJ",
-            |m: &SwapLineupCsReq| { &m.EGMAFIOOKJJ },
-            |m: &mut SwapLineupCsReq| { &mut m.EGMAFIOOKJJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SwapLineupCsReq>(
             "SwapLineupCsReq",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for SwapLineupCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.PDONLOOBBCI = is.read_uint32()?;
-                },
                 88 => {
+                    self.EGMAFIOOKJJ = is.read_uint32()?;
+                },
+                48 => {
                     self.ELLIDANJNOB = is.read_uint32()?;
                 },
-                24 => {
+                16 => {
                     self.NJDMFPFKKIH = is.read_enum_or_unknown()?;
                 },
-                120 => {
+                8 => {
                     self.NEDIKHNGMBH = is.read_uint32()?;
                 },
-                80 => {
-                    self.HCDNLLHBBOK = is.read_bool()?;
+                120 => {
+                    self.PDONLOOBBCI = is.read_uint32()?;
                 },
-                32 => {
-                    self.EGMAFIOOKJJ = is.read_uint32()?;
+                96 => {
+                    self.HCDNLLHBBOK = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,23 +137,23 @@ impl ::protobuf::Message for SwapLineupCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PDONLOOBBCI != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.PDONLOOBBCI);
+        if self.EGMAFIOOKJJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.EGMAFIOOKJJ);
         }
         if self.ELLIDANJNOB != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.ELLIDANJNOB);
+            my_size += ::protobuf::rt::uint32_size(6, self.ELLIDANJNOB);
         }
         if self.NJDMFPFKKIH != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            my_size += ::protobuf::rt::int32_size(3, self.NJDMFPFKKIH.value());
+            my_size += ::protobuf::rt::int32_size(2, self.NJDMFPFKKIH.value());
         }
         if self.NEDIKHNGMBH != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.NEDIKHNGMBH);
+            my_size += ::protobuf::rt::uint32_size(1, self.NEDIKHNGMBH);
+        }
+        if self.PDONLOOBBCI != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.PDONLOOBBCI);
         }
         if self.HCDNLLHBBOK != false {
             my_size += 1 + 1;
-        }
-        if self.EGMAFIOOKJJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.EGMAFIOOKJJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -161,23 +161,23 @@ impl ::protobuf::Message for SwapLineupCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PDONLOOBBCI != 0 {
-            os.write_uint32(8, self.PDONLOOBBCI)?;
+        if self.EGMAFIOOKJJ != 0 {
+            os.write_uint32(11, self.EGMAFIOOKJJ)?;
         }
         if self.ELLIDANJNOB != 0 {
-            os.write_uint32(11, self.ELLIDANJNOB)?;
+            os.write_uint32(6, self.ELLIDANJNOB)?;
         }
         if self.NJDMFPFKKIH != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.NJDMFPFKKIH))?;
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.NJDMFPFKKIH))?;
         }
         if self.NEDIKHNGMBH != 0 {
-            os.write_uint32(15, self.NEDIKHNGMBH)?;
+            os.write_uint32(1, self.NEDIKHNGMBH)?;
+        }
+        if self.PDONLOOBBCI != 0 {
+            os.write_uint32(15, self.PDONLOOBBCI)?;
         }
         if self.HCDNLLHBBOK != false {
-            os.write_bool(10, self.HCDNLLHBBOK)?;
-        }
-        if self.EGMAFIOOKJJ != 0 {
-            os.write_uint32(4, self.EGMAFIOOKJJ)?;
+            os.write_bool(12, self.HCDNLLHBBOK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -196,23 +196,23 @@ impl ::protobuf::Message for SwapLineupCsReq {
     }
 
     fn clear(&mut self) {
-        self.PDONLOOBBCI = 0;
+        self.EGMAFIOOKJJ = 0;
         self.ELLIDANJNOB = 0;
         self.NJDMFPFKKIH = ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE);
         self.NEDIKHNGMBH = 0;
+        self.PDONLOOBBCI = 0;
         self.HCDNLLHBBOK = false;
-        self.EGMAFIOOKJJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwapLineupCsReq {
         static instance: SwapLineupCsReq = SwapLineupCsReq {
-            PDONLOOBBCI: 0,
+            EGMAFIOOKJJ: 0,
             ELLIDANJNOB: 0,
             NJDMFPFKKIH: ::protobuf::EnumOrUnknown::from_i32(0),
             NEDIKHNGMBH: 0,
+            PDONLOOBBCI: 0,
             HCDNLLHBBOK: false,
-            EGMAFIOOKJJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -238,12 +238,12 @@ impl ::protobuf::reflect::ProtobufValue for SwapLineupCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15SwapLineupCsReq.proto\x1a\x15ExtraLineupType.proto\"\xef\x01\n\x0f\
-    SwapLineupCsReq\x12\x20\n\x0bPDONLOOBBCI\x18\x08\x20\x01(\rR\x0bPDONLOOB\
-    BCI\x12\x20\n\x0bELLIDANJNOB\x18\x0b\x20\x01(\rR\x0bELLIDANJNOB\x122\n\
-    \x0bNJDMFPFKKIH\x18\x03\x20\x01(\x0e2\x10.ExtraLineupTypeR\x0bNJDMFPFKKI\
-    H\x12\x20\n\x0bNEDIKHNGMBH\x18\x0f\x20\x01(\rR\x0bNEDIKHNGMBH\x12\x20\n\
-    \x0bHCDNLLHBBOK\x18\n\x20\x01(\x08R\x0bHCDNLLHBBOK\x12\x20\n\x0bEGMAFIOO\
-    KJJ\x18\x04\x20\x01(\rR\x0bEGMAFIOOKJJb\x06proto3\
+    SwapLineupCsReq\x12\x20\n\x0bEGMAFIOOKJJ\x18\x0b\x20\x01(\rR\x0bEGMAFIOO\
+    KJJ\x12\x20\n\x0bELLIDANJNOB\x18\x06\x20\x01(\rR\x0bELLIDANJNOB\x122\n\
+    \x0bNJDMFPFKKIH\x18\x02\x20\x01(\x0e2\x10.ExtraLineupTypeR\x0bNJDMFPFKKI\
+    H\x12\x20\n\x0bNEDIKHNGMBH\x18\x01\x20\x01(\rR\x0bNEDIKHNGMBH\x12\x20\n\
+    \x0bPDONLOOBBCI\x18\x0f\x20\x01(\rR\x0bPDONLOOBBCI\x12\x20\n\x0bHCDNLLHB\
+    BOK\x18\x0c\x20\x01(\x08R\x0bHCDNLLHBBOKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

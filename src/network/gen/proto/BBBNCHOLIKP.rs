@@ -34,8 +34,8 @@ pub struct BBBNCHOLIKP {
     pub IDMMJJAJENK: ::protobuf::EnumOrUnknown<super::OJEADLMKHBO::OJEADLMKHBO>,
     // @@protoc_insertion_point(field:BBBNCHOLIKP.CFONLBPOABP)
     pub CFONLBPOABP: u32,
-    // @@protoc_insertion_point(field:BBBNCHOLIKP.KMONAGFELPG)
-    pub KMONAGFELPG: u32,
+    // @@protoc_insertion_point(field:BBBNCHOLIKP.uid)
+    pub uid: u32,
     // @@protoc_insertion_point(field:BBBNCHOLIKP.LCEODDKLMGB)
     pub LCEODDKLMGB: ::std::string::String,
     // @@protoc_insertion_point(field:BBBNCHOLIKP.LIAKONIIOMK)
@@ -83,9 +83,9 @@ impl BBBNCHOLIKP {
             |m: &mut BBBNCHOLIKP| { &mut m.CFONLBPOABP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KMONAGFELPG",
-            |m: &BBBNCHOLIKP| { &m.KMONAGFELPG },
-            |m: &mut BBBNCHOLIKP| { &mut m.KMONAGFELPG },
+            "uid",
+            |m: &BBBNCHOLIKP| { &m.uid },
+            |m: &mut BBBNCHOLIKP| { &mut m.uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LCEODDKLMGB",
@@ -145,7 +145,7 @@ impl ::protobuf::Message for BBBNCHOLIKP {
                     self.CFONLBPOABP = is.read_uint32()?;
                 },
                 32 => {
-                    self.KMONAGFELPG = is.read_uint32()?;
+                    self.uid = is.read_uint32()?;
                 },
                 42 => {
                     self.LCEODDKLMGB = is.read_string()?;
@@ -186,8 +186,8 @@ impl ::protobuf::Message for BBBNCHOLIKP {
         if self.CFONLBPOABP != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.CFONLBPOABP);
         }
-        if self.KMONAGFELPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.KMONAGFELPG);
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.uid);
         }
         if !self.LCEODDKLMGB.is_empty() {
             my_size += ::protobuf::rt::string_size(5, &self.LCEODDKLMGB);
@@ -222,8 +222,8 @@ impl ::protobuf::Message for BBBNCHOLIKP {
         if self.CFONLBPOABP != 0 {
             os.write_uint32(3, self.CFONLBPOABP)?;
         }
-        if self.KMONAGFELPG != 0 {
-            os.write_uint32(4, self.KMONAGFELPG)?;
+        if self.uid != 0 {
+            os.write_uint32(4, self.uid)?;
         }
         if !self.LCEODDKLMGB.is_empty() {
             os.write_string(5, &self.LCEODDKLMGB)?;
@@ -263,7 +263,7 @@ impl ::protobuf::Message for BBBNCHOLIKP {
         self.DKNPKJMAHCM = 0;
         self.IDMMJJAJENK = ::protobuf::EnumOrUnknown::new(super::OJEADLMKHBO::OJEADLMKHBO::REPLAY_TYPE_NONE);
         self.CFONLBPOABP = 0;
-        self.KMONAGFELPG = 0;
+        self.uid = 0;
         self.LCEODDKLMGB.clear();
         self.LIAKONIIOMK = 0;
         self.HCIIBPPIFBG.clear();
@@ -278,7 +278,7 @@ impl ::protobuf::Message for BBBNCHOLIKP {
             DKNPKJMAHCM: 0,
             IDMMJJAJENK: ::protobuf::EnumOrUnknown::from_i32(0),
             CFONLBPOABP: 0,
-            KMONAGFELPG: 0,
+            uid: 0,
             LCEODDKLMGB: ::std::string::String::new(),
             LIAKONIIOMK: 0,
             HCIIBPPIFBG: ::std::string::String::new(),
@@ -309,16 +309,16 @@ impl ::protobuf::reflect::ProtobufValue for BBBNCHOLIKP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BBBNCHOLIKP.proto\x1a\x11OJEADLMKHBO.proto\"\xef\x02\n\x0bBBBNCHOL\
+    \n\x11BBBNCHOLIKP.proto\x1a\x11OJEADLMKHBO.proto\"\xdf\x02\n\x0bBBBNCHOL\
     IKP\x12\x20\n\x0bDKNPKJMAHCM\x18\x01\x20\x01(\x04R\x0bDKNPKJMAHCM\x12.\n\
     \x0bIDMMJJAJENK\x18\x02\x20\x01(\x0e2\x0c.OJEADLMKHBOR\x0bIDMMJJAJENK\
-    \x12\x20\n\x0bCFONLBPOABP\x18\x03\x20\x01(\rR\x0bCFONLBPOABP\x12\x20\n\
-    \x0bKMONAGFELPG\x18\x04\x20\x01(\rR\x0bKMONAGFELPG\x12\x20\n\x0bLCEODDKL\
-    MGB\x18\x05\x20\x01(\tR\x0bLCEODDKLMGB\x12\x20\n\x0bLIAKONIIOMK\x18\x06\
-    \x20\x01(\rR\x0bLIAKONIIOMK\x12\x20\n\x0bHCIIBPPIFBG\x18\x07\x20\x01(\tR\
-    \x0bHCIIBPPIFBG\x12\x20\n\x0bLAHPGLCDIJK\x18\x08\x20\x01(\x04R\x0bLAHPGL\
-    CDIJK\x12\x20\n\x0bAFEHLMFIBMD\x18\t\x20\x01(\rR\x0bAFEHLMFIBMD\x12\x20\
-    \n\x0bCMPBKBBKAOA\x18\n\x20\x01(\rR\x0bCMPBKBBKAOAb\x06proto3\
+    \x12\x20\n\x0bCFONLBPOABP\x18\x03\x20\x01(\rR\x0bCFONLBPOABP\x12\x10\n\
+    \x03uid\x18\x04\x20\x01(\rR\x03uid\x12\x20\n\x0bLCEODDKLMGB\x18\x05\x20\
+    \x01(\tR\x0bLCEODDKLMGB\x12\x20\n\x0bLIAKONIIOMK\x18\x06\x20\x01(\rR\x0b\
+    LIAKONIIOMK\x12\x20\n\x0bHCIIBPPIFBG\x18\x07\x20\x01(\tR\x0bHCIIBPPIFBG\
+    \x12\x20\n\x0bLAHPGLCDIJK\x18\x08\x20\x01(\x04R\x0bLAHPGLCDIJK\x12\x20\n\
+    \x0bAFEHLMFIBMD\x18\t\x20\x01(\rR\x0bAFEHLMFIBMD\x12\x20\n\x0bCMPBKBBKAO\
+    A\x18\n\x20\x01(\rR\x0bCMPBKBBKAOAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

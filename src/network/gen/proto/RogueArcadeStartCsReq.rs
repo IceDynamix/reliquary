@@ -79,13 +79,13 @@ impl ::protobuf::Message for RogueArcadeStartCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.NBCGLEFOKDM)?;
                 },
-                120 => {
+                8 => {
                     self.NBCGLEFOKDM.push(is.read_uint32()?);
                 },
-                104 => {
+                88 => {
                     self.JJLOGICPOAO = is.read_uint32()?;
                 },
                 tag => {
@@ -100,9 +100,9 @@ impl ::protobuf::Message for RogueArcadeStartCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.NBCGLEFOKDM);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.NBCGLEFOKDM);
         if self.JJLOGICPOAO != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.JJLOGICPOAO);
+            my_size += ::protobuf::rt::uint32_size(11, self.JJLOGICPOAO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +110,9 @@ impl ::protobuf::Message for RogueArcadeStartCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(15, &self.NBCGLEFOKDM)?;
+        os.write_repeated_packed_uint32(1, &self.NBCGLEFOKDM)?;
         if self.JJLOGICPOAO != 0 {
-            os.write_uint32(13, self.JJLOGICPOAO)?;
+            os.write_uint32(11, self.JJLOGICPOAO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueArcadeStartCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bRogueArcadeStartCsReq.proto\"[\n\x15RogueArcadeStartCsReq\x12\x20\
-    \n\x0bNBCGLEFOKDM\x18\x0f\x20\x03(\rR\x0bNBCGLEFOKDM\x12\x20\n\x0bJJLOGI\
-    CPOAO\x18\r\x20\x01(\rR\x0bJJLOGICPOAOb\x06proto3\
+    \n\x0bNBCGLEFOKDM\x18\x01\x20\x03(\rR\x0bNBCGLEFOKDM\x12\x20\n\x0bJJLOGI\
+    CPOAO\x18\x0b\x20\x01(\rR\x0bJJLOGICPOAOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

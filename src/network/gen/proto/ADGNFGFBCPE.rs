@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ADGNFGFBCPE {
     // message fields
-    // @@protoc_insertion_point(field:ADGNFGFBCPE.ALJLKAOELDP)
-    pub ALJLKAOELDP: u32,
     // @@protoc_insertion_point(field:ADGNFGFBCPE.BLOEFNLOLLJ)
     pub BLOEFNLOLLJ: u32,
+    // @@protoc_insertion_point(field:ADGNFGFBCPE.ALJLKAOELDP)
+    pub ALJLKAOELDP: u32,
     // @@protoc_insertion_point(field:ADGNFGFBCPE.CINMLCKBHIM)
     pub CINMLCKBHIM: bool,
     // @@protoc_insertion_point(field:ADGNFGFBCPE.PCLMNBILAPH)
@@ -56,14 +56,14 @@ impl ADGNFGFBCPE {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ALJLKAOELDP",
-            |m: &ADGNFGFBCPE| { &m.ALJLKAOELDP },
-            |m: &mut ADGNFGFBCPE| { &mut m.ALJLKAOELDP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BLOEFNLOLLJ",
             |m: &ADGNFGFBCPE| { &m.BLOEFNLOLLJ },
             |m: &mut ADGNFGFBCPE| { &mut m.BLOEFNLOLLJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ALJLKAOELDP",
+            |m: &ADGNFGFBCPE| { &m.ALJLKAOELDP },
+            |m: &mut ADGNFGFBCPE| { &mut m.ALJLKAOELDP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CINMLCKBHIM",
@@ -93,19 +93,19 @@ impl ::protobuf::Message for ADGNFGFBCPE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.ALJLKAOELDP = is.read_uint32()?;
-                },
-                72 => {
+                24 => {
                     self.BLOEFNLOLLJ = is.read_uint32()?;
                 },
-                24 => {
+                104 => {
+                    self.ALJLKAOELDP = is.read_uint32()?;
+                },
+                40 => {
                     self.CINMLCKBHIM = is.read_bool()?;
                 },
-                10 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.PCLMNBILAPH)?;
                 },
-                8 => {
+                16 => {
                     self.PCLMNBILAPH.push(is.read_uint32()?);
                 },
                 tag => {
@@ -120,32 +120,32 @@ impl ::protobuf::Message for ADGNFGFBCPE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ALJLKAOELDP != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.ALJLKAOELDP);
-        }
         if self.BLOEFNLOLLJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.BLOEFNLOLLJ);
+            my_size += ::protobuf::rt::uint32_size(3, self.BLOEFNLOLLJ);
+        }
+        if self.ALJLKAOELDP != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.ALJLKAOELDP);
         }
         if self.CINMLCKBHIM != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.PCLMNBILAPH);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.PCLMNBILAPH);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ALJLKAOELDP != 0 {
-            os.write_uint32(4, self.ALJLKAOELDP)?;
-        }
         if self.BLOEFNLOLLJ != 0 {
-            os.write_uint32(9, self.BLOEFNLOLLJ)?;
+            os.write_uint32(3, self.BLOEFNLOLLJ)?;
+        }
+        if self.ALJLKAOELDP != 0 {
+            os.write_uint32(13, self.ALJLKAOELDP)?;
         }
         if self.CINMLCKBHIM != false {
-            os.write_bool(3, self.CINMLCKBHIM)?;
+            os.write_bool(5, self.CINMLCKBHIM)?;
         }
-        os.write_repeated_packed_uint32(1, &self.PCLMNBILAPH)?;
+        os.write_repeated_packed_uint32(2, &self.PCLMNBILAPH)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -163,8 +163,8 @@ impl ::protobuf::Message for ADGNFGFBCPE {
     }
 
     fn clear(&mut self) {
-        self.ALJLKAOELDP = 0;
         self.BLOEFNLOLLJ = 0;
+        self.ALJLKAOELDP = 0;
         self.CINMLCKBHIM = false;
         self.PCLMNBILAPH.clear();
         self.special_fields.clear();
@@ -172,8 +172,8 @@ impl ::protobuf::Message for ADGNFGFBCPE {
 
     fn default_instance() -> &'static ADGNFGFBCPE {
         static instance: ADGNFGFBCPE = ADGNFGFBCPE {
-            ALJLKAOELDP: 0,
             BLOEFNLOLLJ: 0,
+            ALJLKAOELDP: 0,
             CINMLCKBHIM: false,
             PCLMNBILAPH: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -200,10 +200,10 @@ impl ::protobuf::reflect::ProtobufValue for ADGNFGFBCPE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ADGNFGFBCPE.proto\"\x95\x01\n\x0bADGNFGFBCPE\x12\x20\n\x0bALJLKAOE\
-    LDP\x18\x04\x20\x01(\rR\x0bALJLKAOELDP\x12\x20\n\x0bBLOEFNLOLLJ\x18\t\
-    \x20\x01(\rR\x0bBLOEFNLOLLJ\x12\x20\n\x0bCINMLCKBHIM\x18\x03\x20\x01(\
-    \x08R\x0bCINMLCKBHIM\x12\x20\n\x0bPCLMNBILAPH\x18\x01\x20\x03(\rR\x0bPCL\
+    \n\x11ADGNFGFBCPE.proto\"\x95\x01\n\x0bADGNFGFBCPE\x12\x20\n\x0bBLOEFNLO\
+    LLJ\x18\x03\x20\x01(\rR\x0bBLOEFNLOLLJ\x12\x20\n\x0bALJLKAOELDP\x18\r\
+    \x20\x01(\rR\x0bALJLKAOELDP\x12\x20\n\x0bCINMLCKBHIM\x18\x05\x20\x01(\
+    \x08R\x0bCINMLCKBHIM\x12\x20\n\x0bPCLMNBILAPH\x18\x02\x20\x03(\rR\x0bPCL\
     MNBILAPHb\x06proto3\
 ";
 

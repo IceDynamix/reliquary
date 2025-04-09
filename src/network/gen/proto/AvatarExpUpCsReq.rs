@@ -82,7 +82,7 @@ impl ::protobuf::Message for AvatarExpUpCsReq {
                 96 => {
                     self.base_avatar_id = is.read_uint32()?;
                 },
-                26 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.AEHCDJKHECH)?;
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for AvatarExpUpCsReq {
             os.write_uint32(12, self.base_avatar_id)?;
         }
         if let Some(v) = self.AEHCDJKHECH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for AvatarExpUpCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16AvatarExpUpCsReq.proto\x1a\x11KNAPAIOFJIE.proto\"h\n\x10AvatarExpU\
     pCsReq\x12$\n\x0ebase_avatar_id\x18\x0c\x20\x01(\rR\x0cbaseAvatarId\x12.\
-    \n\x0bAEHCDJKHECH\x18\x03\x20\x01(\x0b2\x0c.KNAPAIOFJIER\x0bAEHCDJKHECHb\
+    \n\x0bAEHCDJKHECH\x18\x0b\x20\x01(\x0b2\x0c.KNAPAIOFJIER\x0bAEHCDJKHECHb\
     \x06proto3\
 ";
 

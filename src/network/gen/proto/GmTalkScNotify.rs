@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GmTalkScNotify {
     // message fields
-    // @@protoc_insertion_point(field:GmTalkScNotify.DNPOBGICFCJ)
-    pub DNPOBGICFCJ: ::std::string::String,
+    // @@protoc_insertion_point(field:GmTalkScNotify.msg)
+    pub msg: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:GmTalkScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl GmTalkScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DNPOBGICFCJ",
-            |m: &GmTalkScNotify| { &m.DNPOBGICFCJ },
-            |m: &mut GmTalkScNotify| { &mut m.DNPOBGICFCJ },
+            "msg",
+            |m: &GmTalkScNotify| { &m.msg },
+            |m: &mut GmTalkScNotify| { &mut m.msg },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GmTalkScNotify>(
             "GmTalkScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for GmTalkScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.DNPOBGICFCJ = is.read_string()?;
+                90 => {
+                    self.msg = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for GmTalkScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.DNPOBGICFCJ.is_empty() {
-            my_size += ::protobuf::rt::string_size(7, &self.DNPOBGICFCJ);
+        if !self.msg.is_empty() {
+            my_size += ::protobuf::rt::string_size(11, &self.msg);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for GmTalkScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.DNPOBGICFCJ.is_empty() {
-            os.write_string(7, &self.DNPOBGICFCJ)?;
+        if !self.msg.is_empty() {
+            os.write_string(11, &self.msg)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for GmTalkScNotify {
     }
 
     fn clear(&mut self) {
-        self.DNPOBGICFCJ.clear();
+        self.msg.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GmTalkScNotify {
         static instance: GmTalkScNotify = GmTalkScNotify {
-            DNPOBGICFCJ: ::std::string::String::new(),
+            msg: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for GmTalkScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14GmTalkScNotify.proto\"2\n\x0eGmTalkScNotify\x12\x20\n\x0bDNPOBGICF\
-    CJ\x18\x07\x20\x01(\tR\x0bDNPOBGICFCJb\x06proto3\
+    \n\x14GmTalkScNotify.proto\"\"\n\x0eGmTalkScNotify\x12\x10\n\x03msg\x18\
+    \x0b\x20\x01(\tR\x03msgb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,10 +30,10 @@ pub struct MMOPBLDHJMF {
     // message fields
     // @@protoc_insertion_point(field:MMOPBLDHJMF.PIPMGACMJNN)
     pub PIPMGACMJNN: bool,
-    // @@protoc_insertion_point(field:MMOPBLDHJMF.ENDIDLCDNNI)
-    pub ENDIDLCDNNI: u32,
     // @@protoc_insertion_point(field:MMOPBLDHJMF.CDODEFKBKPD)
     pub CDODEFKBKPD: ::std::vec::Vec<super::IAAEFEGDNLO::IAAEFEGDNLO>,
+    // @@protoc_insertion_point(field:MMOPBLDHJMF.ENDIDLCDNNI)
+    pub ENDIDLCDNNI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MMOPBLDHJMF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl MMOPBLDHJMF {
             |m: &MMOPBLDHJMF| { &m.PIPMGACMJNN },
             |m: &mut MMOPBLDHJMF| { &mut m.PIPMGACMJNN },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ENDIDLCDNNI",
-            |m: &MMOPBLDHJMF| { &m.ENDIDLCDNNI },
-            |m: &mut MMOPBLDHJMF| { &mut m.ENDIDLCDNNI },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "CDODEFKBKPD",
             |m: &MMOPBLDHJMF| { &m.CDODEFKBKPD },
             |m: &mut MMOPBLDHJMF| { &mut m.CDODEFKBKPD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ENDIDLCDNNI",
+            |m: &MMOPBLDHJMF| { &m.ENDIDLCDNNI },
+            |m: &mut MMOPBLDHJMF| { &mut m.ENDIDLCDNNI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MMOPBLDHJMF>(
             "MMOPBLDHJMF",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for MMOPBLDHJMF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                80 => {
                     self.PIPMGACMJNN = is.read_bool()?;
                 },
-                112 => {
-                    self.ENDIDLCDNNI = is.read_uint32()?;
-                },
-                106 => {
+                50 => {
                     self.CDODEFKBKPD.push(is.read_message()?);
+                },
+                32 => {
+                    self.ENDIDLCDNNI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,13 +110,13 @@ impl ::protobuf::Message for MMOPBLDHJMF {
         if self.PIPMGACMJNN != false {
             my_size += 1 + 1;
         }
-        if self.ENDIDLCDNNI != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.ENDIDLCDNNI);
-        }
         for value in &self.CDODEFKBKPD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.ENDIDLCDNNI != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.ENDIDLCDNNI);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -124,14 +124,14 @@ impl ::protobuf::Message for MMOPBLDHJMF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PIPMGACMJNN != false {
-            os.write_bool(5, self.PIPMGACMJNN)?;
-        }
-        if self.ENDIDLCDNNI != 0 {
-            os.write_uint32(14, self.ENDIDLCDNNI)?;
+            os.write_bool(10, self.PIPMGACMJNN)?;
         }
         for v in &self.CDODEFKBKPD {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
+        if self.ENDIDLCDNNI != 0 {
+            os.write_uint32(4, self.ENDIDLCDNNI)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,16 +150,16 @@ impl ::protobuf::Message for MMOPBLDHJMF {
 
     fn clear(&mut self) {
         self.PIPMGACMJNN = false;
-        self.ENDIDLCDNNI = 0;
         self.CDODEFKBKPD.clear();
+        self.ENDIDLCDNNI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MMOPBLDHJMF {
         static instance: MMOPBLDHJMF = MMOPBLDHJMF {
             PIPMGACMJNN: false,
-            ENDIDLCDNNI: 0,
             CDODEFKBKPD: ::std::vec::Vec::new(),
+            ENDIDLCDNNI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for MMOPBLDHJMF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MMOPBLDHJMF.proto\x1a\x11IAAEFEGDNLO.proto\"\x81\x01\n\x0bMMOPBLDH\
-    JMF\x12\x20\n\x0bPIPMGACMJNN\x18\x05\x20\x01(\x08R\x0bPIPMGACMJNN\x12\
-    \x20\n\x0bENDIDLCDNNI\x18\x0e\x20\x01(\rR\x0bENDIDLCDNNI\x12.\n\x0bCDODE\
-    FKBKPD\x18\r\x20\x03(\x0b2\x0c.IAAEFEGDNLOR\x0bCDODEFKBKPDb\x06proto3\
+    JMF\x12\x20\n\x0bPIPMGACMJNN\x18\n\x20\x01(\x08R\x0bPIPMGACMJNN\x12.\n\
+    \x0bCDODEFKBKPD\x18\x06\x20\x03(\x0b2\x0c.IAAEFEGDNLOR\x0bCDODEFKBKPD\
+    \x12\x20\n\x0bENDIDLCDNNI\x18\x04\x20\x01(\rR\x0bENDIDLCDNNIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

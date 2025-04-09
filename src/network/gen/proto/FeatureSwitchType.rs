@@ -139,6 +139,22 @@ pub enum FeatureSwitchType {
     FEATURE_SWITCH_ROGUE_TOURN_BUILD_REF = 55,
     // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_PRE_AVATAR_SET_GROWTH_TARGET)
     FEATURE_SWITCH_PRE_AVATAR_SET_GROWTH_TARGET = 56,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_IMPORT_RELIC_FILTER_PLAN)
+    FEATURE_SWITCH_IMPORT_RELIC_FILTER_PLAN = 58,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_GACHA_DECIDE_ITEM)
+    FEATURE_SWITCH_GACHA_DECIDE_ITEM = 59,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_ITEM_SYNC)
+    FEATURE_SWITCH_ITEM_SYNC = 60,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_RECHARGE_BENEFIT)
+    FEATURE_SWITCH_RECHARGE_BENEFIT = 61,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_RECHARGE_GIFT)
+    FEATURE_SWITCH_RECHARGE_GIFT = 62,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_GACHA_AVATAR_TOAST)
+    FEATURE_SWITCH_GACHA_AVATAR_TOAST = 64,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_RELIC_SMART_DISCARD)
+    FEATURE_SWITCH_RELIC_SMART_DISCARD = 66,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_PLANETFES_SOCIAL)
+    FEATURE_SWITCH_PLANETFES_SOCIAL = 67,
 }
 
 impl ::protobuf::Enum for FeatureSwitchType {
@@ -206,6 +222,14 @@ impl ::protobuf::Enum for FeatureSwitchType {
             54 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_BENEFIT_INDEX),
             55 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_ROGUE_TOURN_BUILD_REF),
             56 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_PRE_AVATAR_SET_GROWTH_TARGET),
+            58 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_IMPORT_RELIC_FILTER_PLAN),
+            59 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_GACHA_DECIDE_ITEM),
+            60 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_ITEM_SYNC),
+            61 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_RECHARGE_BENEFIT),
+            62 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_RECHARGE_GIFT),
+            64 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_GACHA_AVATAR_TOAST),
+            66 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_RELIC_SMART_DISCARD),
+            67 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_PLANETFES_SOCIAL),
             _ => ::std::option::Option::None
         }
     }
@@ -268,6 +292,14 @@ impl ::protobuf::Enum for FeatureSwitchType {
             "FEATURE_SWITCH_BENEFIT_INDEX" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_BENEFIT_INDEX),
             "FEATURE_SWITCH_ROGUE_TOURN_BUILD_REF" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_ROGUE_TOURN_BUILD_REF),
             "FEATURE_SWITCH_PRE_AVATAR_SET_GROWTH_TARGET" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_PRE_AVATAR_SET_GROWTH_TARGET),
+            "FEATURE_SWITCH_IMPORT_RELIC_FILTER_PLAN" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_IMPORT_RELIC_FILTER_PLAN),
+            "FEATURE_SWITCH_GACHA_DECIDE_ITEM" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_GACHA_DECIDE_ITEM),
+            "FEATURE_SWITCH_ITEM_SYNC" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_ITEM_SYNC),
+            "FEATURE_SWITCH_RECHARGE_BENEFIT" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_RECHARGE_BENEFIT),
+            "FEATURE_SWITCH_RECHARGE_GIFT" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_RECHARGE_GIFT),
+            "FEATURE_SWITCH_GACHA_AVATAR_TOAST" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_GACHA_AVATAR_TOAST),
+            "FEATURE_SWITCH_RELIC_SMART_DISCARD" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_RELIC_SMART_DISCARD),
+            "FEATURE_SWITCH_PLANETFES_SOCIAL" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_PLANETFES_SOCIAL),
             _ => ::std::option::Option::None
         }
     }
@@ -329,6 +361,14 @@ impl ::protobuf::Enum for FeatureSwitchType {
         FeatureSwitchType::FEATURE_SWITCH_BENEFIT_INDEX,
         FeatureSwitchType::FEATURE_SWITCH_ROGUE_TOURN_BUILD_REF,
         FeatureSwitchType::FEATURE_SWITCH_PRE_AVATAR_SET_GROWTH_TARGET,
+        FeatureSwitchType::FEATURE_SWITCH_IMPORT_RELIC_FILTER_PLAN,
+        FeatureSwitchType::FEATURE_SWITCH_GACHA_DECIDE_ITEM,
+        FeatureSwitchType::FEATURE_SWITCH_ITEM_SYNC,
+        FeatureSwitchType::FEATURE_SWITCH_RECHARGE_BENEFIT,
+        FeatureSwitchType::FEATURE_SWITCH_RECHARGE_GIFT,
+        FeatureSwitchType::FEATURE_SWITCH_GACHA_AVATAR_TOAST,
+        FeatureSwitchType::FEATURE_SWITCH_RELIC_SMART_DISCARD,
+        FeatureSwitchType::FEATURE_SWITCH_PLANETFES_SOCIAL,
     ];
 }
 
@@ -396,6 +436,14 @@ impl ::protobuf::EnumFull for FeatureSwitchType {
             FeatureSwitchType::FEATURE_SWITCH_BENEFIT_INDEX => 53,
             FeatureSwitchType::FEATURE_SWITCH_ROGUE_TOURN_BUILD_REF => 54,
             FeatureSwitchType::FEATURE_SWITCH_PRE_AVATAR_SET_GROWTH_TARGET => 55,
+            FeatureSwitchType::FEATURE_SWITCH_IMPORT_RELIC_FILTER_PLAN => 56,
+            FeatureSwitchType::FEATURE_SWITCH_GACHA_DECIDE_ITEM => 57,
+            FeatureSwitchType::FEATURE_SWITCH_ITEM_SYNC => 58,
+            FeatureSwitchType::FEATURE_SWITCH_RECHARGE_BENEFIT => 59,
+            FeatureSwitchType::FEATURE_SWITCH_RECHARGE_GIFT => 60,
+            FeatureSwitchType::FEATURE_SWITCH_GACHA_AVATAR_TOAST => 61,
+            FeatureSwitchType::FEATURE_SWITCH_RELIC_SMART_DISCARD => 62,
+            FeatureSwitchType::FEATURE_SWITCH_PLANETFES_SOCIAL => 63,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -414,7 +462,7 @@ impl FeatureSwitchType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17FeatureSwitchType.proto*\xa2\x0f\n\x11FeatureSwitchType\x12\x17\n\
+    \n\x17FeatureSwitchType.proto*\xce\x11\n\x11FeatureSwitchType\x12\x17\n\
     \x13FEATURE_SWITCH_NONE\x10\0\x12\x17\n\x13FEATURE_SWITCH_SHOP\x10\x01\
     \x12\x1e\n\x1aFEATURE_SWITCH_LINEUP_NAME\x10\x02\x12\x20\n\x1cFEATURE_SW\
     ITCH_RECHARGE_SHOP\x10\x03\x12\x1b\n\x17FEATURE_SWITCH_NICKNAME\x10\x04\
@@ -451,7 +499,13 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     _USE_BUFF_DROP\x103\x12\x1a\n\x16FEATURE_SWITCH_RED_DOT\x104\x12%\n!FEAT\
     URE_SWITCH_GAME_STATE_SERVICE\x105\x12\x20\n\x1cFEATURE_SWITCH_BENEFIT_I\
     NDEX\x106\x12(\n$FEATURE_SWITCH_ROGUE_TOURN_BUILD_REF\x107\x12/\n+FEATUR\
-    E_SWITCH_PRE_AVATAR_SET_GROWTH_TARGET\x108b\x06proto3\
+    E_SWITCH_PRE_AVATAR_SET_GROWTH_TARGET\x108\x12+\n'FEATURE_SWITCH_IMPORT_\
+    RELIC_FILTER_PLAN\x10:\x12$\n\x20FEATURE_SWITCH_GACHA_DECIDE_ITEM\x10;\
+    \x12\x1c\n\x18FEATURE_SWITCH_ITEM_SYNC\x10<\x12#\n\x1fFEATURE_SWITCH_REC\
+    HARGE_BENEFIT\x10=\x12\x20\n\x1cFEATURE_SWITCH_RECHARGE_GIFT\x10>\x12%\n\
+    !FEATURE_SWITCH_GACHA_AVATAR_TOAST\x10@\x12&\n\"FEATURE_SWITCH_RELIC_SMA\
+    RT_DISCARD\x10B\x12#\n\x1fFEATURE_SWITCH_PLANETFES_SOCIAL\x10Cb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ONHNMGOBDNL {
     // message fields
-    // @@protoc_insertion_point(field:ONHNMGOBDNL.PGIFPMKPMNA)
-    pub PGIFPMKPMNA: f32,
+    // @@protoc_insertion_point(field:ONHNMGOBDNL.DNAMIAAOPID)
+    pub DNAMIAAOPID: f32,
     // @@protoc_insertion_point(field:ONHNMGOBDNL.OCDKPEIFGFO)
     pub OCDKPEIFGFO: f32,
     // @@protoc_insertion_point(field:ONHNMGOBDNL.MMAOABEAJHJ)
     pub MMAOABEAJHJ: f32,
-    // @@protoc_insertion_point(field:ONHNMGOBDNL.DNAMIAAOPID)
-    pub DNAMIAAOPID: f32,
+    // @@protoc_insertion_point(field:ONHNMGOBDNL.PGIFPMKPMNA)
+    pub PGIFPMKPMNA: f32,
     // special fields
     // @@protoc_insertion_point(special_field:ONHNMGOBDNL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,9 +56,9 @@ impl ONHNMGOBDNL {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PGIFPMKPMNA",
-            |m: &ONHNMGOBDNL| { &m.PGIFPMKPMNA },
-            |m: &mut ONHNMGOBDNL| { &mut m.PGIFPMKPMNA },
+            "DNAMIAAOPID",
+            |m: &ONHNMGOBDNL| { &m.DNAMIAAOPID },
+            |m: &mut ONHNMGOBDNL| { &mut m.DNAMIAAOPID },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OCDKPEIFGFO",
@@ -71,9 +71,9 @@ impl ONHNMGOBDNL {
             |m: &mut ONHNMGOBDNL| { &mut m.MMAOABEAJHJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DNAMIAAOPID",
-            |m: &ONHNMGOBDNL| { &m.DNAMIAAOPID },
-            |m: &mut ONHNMGOBDNL| { &mut m.DNAMIAAOPID },
+            "PGIFPMKPMNA",
+            |m: &ONHNMGOBDNL| { &m.PGIFPMKPMNA },
+            |m: &mut ONHNMGOBDNL| { &mut m.PGIFPMKPMNA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ONHNMGOBDNL>(
             "ONHNMGOBDNL",
@@ -94,16 +94,16 @@ impl ::protobuf::Message for ONHNMGOBDNL {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 77 => {
-                    self.PGIFPMKPMNA = is.read_float()?;
+                    self.DNAMIAAOPID = is.read_float()?;
                 },
-                109 => {
+                13 => {
                     self.OCDKPEIFGFO = is.read_float()?;
                 },
-                117 => {
+                125 => {
                     self.MMAOABEAJHJ = is.read_float()?;
                 },
                 69 => {
-                    self.DNAMIAAOPID = is.read_float()?;
+                    self.PGIFPMKPMNA = is.read_float()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,7 +117,7 @@ impl ::protobuf::Message for ONHNMGOBDNL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PGIFPMKPMNA != 0. {
+        if self.DNAMIAAOPID != 0. {
             my_size += 1 + 4;
         }
         if self.OCDKPEIFGFO != 0. {
@@ -126,7 +126,7 @@ impl ::protobuf::Message for ONHNMGOBDNL {
         if self.MMAOABEAJHJ != 0. {
             my_size += 1 + 4;
         }
-        if self.DNAMIAAOPID != 0. {
+        if self.PGIFPMKPMNA != 0. {
             my_size += 1 + 4;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -135,17 +135,17 @@ impl ::protobuf::Message for ONHNMGOBDNL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PGIFPMKPMNA != 0. {
-            os.write_float(9, self.PGIFPMKPMNA)?;
+        if self.DNAMIAAOPID != 0. {
+            os.write_float(9, self.DNAMIAAOPID)?;
         }
         if self.OCDKPEIFGFO != 0. {
-            os.write_float(13, self.OCDKPEIFGFO)?;
+            os.write_float(1, self.OCDKPEIFGFO)?;
         }
         if self.MMAOABEAJHJ != 0. {
-            os.write_float(14, self.MMAOABEAJHJ)?;
+            os.write_float(15, self.MMAOABEAJHJ)?;
         }
-        if self.DNAMIAAOPID != 0. {
-            os.write_float(8, self.DNAMIAAOPID)?;
+        if self.PGIFPMKPMNA != 0. {
+            os.write_float(8, self.PGIFPMKPMNA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for ONHNMGOBDNL {
     }
 
     fn clear(&mut self) {
-        self.PGIFPMKPMNA = 0.;
+        self.DNAMIAAOPID = 0.;
         self.OCDKPEIFGFO = 0.;
         self.MMAOABEAJHJ = 0.;
-        self.DNAMIAAOPID = 0.;
+        self.PGIFPMKPMNA = 0.;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ONHNMGOBDNL {
         static instance: ONHNMGOBDNL = ONHNMGOBDNL {
-            PGIFPMKPMNA: 0.,
+            DNAMIAAOPID: 0.,
             OCDKPEIFGFO: 0.,
             MMAOABEAJHJ: 0.,
-            DNAMIAAOPID: 0.,
+            PGIFPMKPMNA: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for ONHNMGOBDNL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ONHNMGOBDNL.proto\"\x95\x01\n\x0bONHNMGOBDNL\x12\x20\n\x0bPGIFPMKP\
-    MNA\x18\t\x20\x01(\x02R\x0bPGIFPMKPMNA\x12\x20\n\x0bOCDKPEIFGFO\x18\r\
-    \x20\x01(\x02R\x0bOCDKPEIFGFO\x12\x20\n\x0bMMAOABEAJHJ\x18\x0e\x20\x01(\
-    \x02R\x0bMMAOABEAJHJ\x12\x20\n\x0bDNAMIAAOPID\x18\x08\x20\x01(\x02R\x0bD\
-    NAMIAAOPIDb\x06proto3\
+    \n\x11ONHNMGOBDNL.proto\"\x95\x01\n\x0bONHNMGOBDNL\x12\x20\n\x0bDNAMIAAO\
+    PID\x18\t\x20\x01(\x02R\x0bDNAMIAAOPID\x12\x20\n\x0bOCDKPEIFGFO\x18\x01\
+    \x20\x01(\x02R\x0bOCDKPEIFGFO\x12\x20\n\x0bMMAOABEAJHJ\x18\x0f\x20\x01(\
+    \x02R\x0bMMAOABEAJHJ\x12\x20\n\x0bPGIFPMKPMNA\x18\x08\x20\x01(\x02R\x0bP\
+    GIFPMKPMNAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

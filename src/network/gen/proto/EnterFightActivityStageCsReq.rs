@@ -100,25 +100,25 @@ impl ::protobuf::Message for EnterFightActivityStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                114 => {
                     is.read_repeated_packed_uint32_into(&mut self.avatar_list)?;
                 },
-                56 => {
+                112 => {
                     self.avatar_list.push(is.read_uint32()?);
                 },
-                48 => {
+                104 => {
                     self.NEDFIBONLKB = is.read_uint32()?;
                 },
                 72 => {
                     self.FJNHDHOHBCL = is.read_uint32()?;
                 },
-                90 => {
+                50 => {
                     self.FOPNLGBGAGH.push(is.read_message()?);
                 },
-                10 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.DCPBFLJFHBB)?;
                 },
-                8 => {
+                56 => {
                     self.DCPBFLJFHBB.push(is.read_uint32()?);
                 },
                 tag => {
@@ -133,9 +133,9 @@ impl ::protobuf::Message for EnterFightActivityStageCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.avatar_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.avatar_list);
         if self.NEDFIBONLKB != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.NEDFIBONLKB);
+            my_size += ::protobuf::rt::uint32_size(13, self.NEDFIBONLKB);
         }
         if self.FJNHDHOHBCL != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.FJNHDHOHBCL);
@@ -144,24 +144,24 @@ impl ::protobuf::Message for EnterFightActivityStageCsReq {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.DCPBFLJFHBB);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.DCPBFLJFHBB);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(7, &self.avatar_list)?;
+        os.write_repeated_packed_uint32(14, &self.avatar_list)?;
         if self.NEDFIBONLKB != 0 {
-            os.write_uint32(6, self.NEDFIBONLKB)?;
+            os.write_uint32(13, self.NEDFIBONLKB)?;
         }
         if self.FJNHDHOHBCL != 0 {
             os.write_uint32(9, self.FJNHDHOHBCL)?;
         }
         for v in &self.FOPNLGBGAGH {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
-        os.write_repeated_packed_uint32(1, &self.DCPBFLJFHBB)?;
+        os.write_repeated_packed_uint32(7, &self.DCPBFLJFHBB)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -219,12 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for EnterFightActivityStageCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"EnterFightActivityStageCsReq.proto\x1a\x11NPEDHHCKLIA.proto\"\xd5\
-    \x01\n\x1cEnterFightActivityStageCsReq\x12\x1f\n\x0bavatar_list\x18\x07\
-    \x20\x03(\rR\navatarList\x12\x20\n\x0bNEDFIBONLKB\x18\x06\x20\x01(\rR\
-    \x0bNEDFIBONLKB\x12\x20\n\x0bFJNHDHOHBCL\x18\t\x20\x01(\rR\x0bFJNHDHOHBC\
-    L\x12.\n\x0bFOPNLGBGAGH\x18\x0b\x20\x03(\x0b2\x0c.NPEDHHCKLIAR\x0bFOPNLG\
-    BGAGH\x12\x20\n\x0bDCPBFLJFHBB\x18\x01\x20\x03(\rR\x0bDCPBFLJFHBBb\x06pr\
-    oto3\
+    \x01\n\x1cEnterFightActivityStageCsReq\x12\x1f\n\x0bavatar_list\x18\x0e\
+    \x20\x03(\rR\navatarList\x12\x20\n\x0bNEDFIBONLKB\x18\r\x20\x01(\rR\x0bN\
+    EDFIBONLKB\x12\x20\n\x0bFJNHDHOHBCL\x18\t\x20\x01(\rR\x0bFJNHDHOHBCL\x12\
+    .\n\x0bFOPNLGBGAGH\x18\x06\x20\x03(\x0b2\x0c.NPEDHHCKLIAR\x0bFOPNLGBGAGH\
+    \x12\x20\n\x0bDCPBFLJFHBB\x18\x07\x20\x03(\rR\x0bDCPBFLJFHBBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,10 +30,10 @@ pub struct PlayerHeartBeatScRsp {
     // message fields
     // @@protoc_insertion_point(field:PlayerHeartBeatScRsp.ELIPEHAGEGE)
     pub ELIPEHAGEGE: u64,
-    // @@protoc_insertion_point(field:PlayerHeartBeatScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:PlayerHeartBeatScRsp.OFEPNEFNKHH)
     pub OFEPNEFNKHH: u64,
+    // @@protoc_insertion_point(field:PlayerHeartBeatScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:PlayerHeartBeatScRsp.BBLDJIBFMBJ)
     pub BBLDJIBFMBJ: ::protobuf::MessageField<super::AFHHHDIHCMD::AFHHHDIHCMD>,
     // special fields
@@ -61,14 +61,14 @@ impl PlayerHeartBeatScRsp {
             |m: &mut PlayerHeartBeatScRsp| { &mut m.ELIPEHAGEGE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &PlayerHeartBeatScRsp| { &m.retcode },
-            |m: &mut PlayerHeartBeatScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OFEPNEFNKHH",
             |m: &PlayerHeartBeatScRsp| { &m.OFEPNEFNKHH },
             |m: &mut PlayerHeartBeatScRsp| { &mut m.OFEPNEFNKHH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &PlayerHeartBeatScRsp| { &m.retcode },
+            |m: &mut PlayerHeartBeatScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AFHHHDIHCMD::AFHHHDIHCMD>(
             "BBLDJIBFMBJ",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for PlayerHeartBeatScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                80 => {
                     self.ELIPEHAGEGE = is.read_uint64()?;
                 },
-                80 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                120 => {
+                96 => {
                     self.OFEPNEFNKHH = is.read_uint64()?;
                 },
-                74 => {
+                16 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BBLDJIBFMBJ)?;
                 },
                 tag => {
@@ -118,13 +118,13 @@ impl ::protobuf::Message for PlayerHeartBeatScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.ELIPEHAGEGE != 0 {
-            my_size += ::protobuf::rt::uint64_size(4, self.ELIPEHAGEGE);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint64_size(10, self.ELIPEHAGEGE);
         }
         if self.OFEPNEFNKHH != 0 {
-            my_size += ::protobuf::rt::uint64_size(15, self.OFEPNEFNKHH);
+            my_size += ::protobuf::rt::uint64_size(12, self.OFEPNEFNKHH);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         if let Some(v) = self.BBLDJIBFMBJ.as_ref() {
             let len = v.compute_size();
@@ -137,16 +137,16 @@ impl ::protobuf::Message for PlayerHeartBeatScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.ELIPEHAGEGE != 0 {
-            os.write_uint64(4, self.ELIPEHAGEGE)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint64(10, self.ELIPEHAGEGE)?;
         }
         if self.OFEPNEFNKHH != 0 {
-            os.write_uint64(15, self.OFEPNEFNKHH)?;
+            os.write_uint64(12, self.OFEPNEFNKHH)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(2, self.retcode)?;
         }
         if let Some(v) = self.BBLDJIBFMBJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::Message for PlayerHeartBeatScRsp {
 
     fn clear(&mut self) {
         self.ELIPEHAGEGE = 0;
-        self.retcode = 0;
         self.OFEPNEFNKHH = 0;
+        self.retcode = 0;
         self.BBLDJIBFMBJ.clear();
         self.special_fields.clear();
     }
@@ -175,8 +175,8 @@ impl ::protobuf::Message for PlayerHeartBeatScRsp {
     fn default_instance() -> &'static PlayerHeartBeatScRsp {
         static instance: PlayerHeartBeatScRsp = PlayerHeartBeatScRsp {
             ELIPEHAGEGE: 0,
-            retcode: 0,
             OFEPNEFNKHH: 0,
+            retcode: 0,
             BBLDJIBFMBJ: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for PlayerHeartBeatScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aPlayerHeartBeatScRsp.proto\x1a\x11AFHHHDIHCMD.proto\"\xa4\x01\n\
-    \x14PlayerHeartBeatScRsp\x12\x20\n\x0bELIPEHAGEGE\x18\x04\x20\x01(\x04R\
-    \x0bELIPEHAGEGE\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcode\x12\
-    \x20\n\x0bOFEPNEFNKHH\x18\x0f\x20\x01(\x04R\x0bOFEPNEFNKHH\x12.\n\x0bBBL\
-    DJIBFMBJ\x18\t\x20\x01(\x0b2\x0c.AFHHHDIHCMDR\x0bBBLDJIBFMBJb\x06proto3\
+    \x14PlayerHeartBeatScRsp\x12\x20\n\x0bELIPEHAGEGE\x18\n\x20\x01(\x04R\
+    \x0bELIPEHAGEGE\x12\x20\n\x0bOFEPNEFNKHH\x18\x0c\x20\x01(\x04R\x0bOFEPNE\
+    FNKHH\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12.\n\x0bBBLD\
+    JIBFMBJ\x18\x08\x20\x01(\x0b2\x0c.AFHHHDIHCMDR\x0bBBLDJIBFMBJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

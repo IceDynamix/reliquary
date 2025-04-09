@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GEKLEELLCBF {
     // message fields
-    // @@protoc_insertion_point(field:GEKLEELLCBF.EJOIJGCLCJO)
-    pub EJOIJGCLCJO: bool,
+    // @@protoc_insertion_point(field:GEKLEELLCBF.LFCDODFMHHN)
+    pub LFCDODFMHHN: u32,
     // @@protoc_insertion_point(field:GEKLEELLCBF.LGBOHDICFPK)
     pub LGBOHDICFPK: bool,
     // @@protoc_insertion_point(field:GEKLEELLCBF.AHOOAFGDEHF)
     pub AHOOAFGDEHF: ::std::vec::Vec<super::BABHBOMOMDF::BABHBOMOMDF>,
+    // @@protoc_insertion_point(field:GEKLEELLCBF.EJOIJGCLCJO)
+    pub EJOIJGCLCJO: bool,
     // @@protoc_insertion_point(field:GEKLEELLCBF.ALIFPIHNMEK)
     pub ALIFPIHNMEK: ::protobuf::EnumOrUnknown<super::AKKHKMECAFL::AKKHKMECAFL>,
-    // @@protoc_insertion_point(field:GEKLEELLCBF.LFCDODFMHHN)
-    pub LFCDODFMHHN: u32,
     // @@protoc_insertion_point(field:GEKLEELLCBF.PBLFLJNHMIL)
     pub PBLFLJNHMIL: ::protobuf::EnumOrUnknown<super::RogueTournLevelStatus::RogueTournLevelStatus>,
     // special fields
@@ -60,9 +60,9 @@ impl GEKLEELLCBF {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EJOIJGCLCJO",
-            |m: &GEKLEELLCBF| { &m.EJOIJGCLCJO },
-            |m: &mut GEKLEELLCBF| { &mut m.EJOIJGCLCJO },
+            "LFCDODFMHHN",
+            |m: &GEKLEELLCBF| { &m.LFCDODFMHHN },
+            |m: &mut GEKLEELLCBF| { &mut m.LFCDODFMHHN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LGBOHDICFPK",
@@ -75,14 +75,14 @@ impl GEKLEELLCBF {
             |m: &mut GEKLEELLCBF| { &mut m.AHOOAFGDEHF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EJOIJGCLCJO",
+            |m: &GEKLEELLCBF| { &m.EJOIJGCLCJO },
+            |m: &mut GEKLEELLCBF| { &mut m.EJOIJGCLCJO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ALIFPIHNMEK",
             |m: &GEKLEELLCBF| { &m.ALIFPIHNMEK },
             |m: &mut GEKLEELLCBF| { &mut m.ALIFPIHNMEK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LFCDODFMHHN",
-            |m: &GEKLEELLCBF| { &m.LFCDODFMHHN },
-            |m: &mut GEKLEELLCBF| { &mut m.LFCDODFMHHN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PBLFLJNHMIL",
@@ -107,22 +107,22 @@ impl ::protobuf::Message for GEKLEELLCBF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.EJOIJGCLCJO = is.read_bool()?;
+                88 => {
+                    self.LFCDODFMHHN = is.read_uint32()?;
                 },
                 96 => {
                     self.LGBOHDICFPK = is.read_bool()?;
                 },
-                10 => {
+                122 => {
                     self.AHOOAFGDEHF.push(is.read_message()?);
                 },
-                56 => {
+                32 => {
+                    self.EJOIJGCLCJO = is.read_bool()?;
+                },
+                104 => {
                     self.ALIFPIHNMEK = is.read_enum_or_unknown()?;
                 },
-                120 => {
-                    self.LFCDODFMHHN = is.read_uint32()?;
-                },
-                24 => {
+                56 => {
                     self.PBLFLJNHMIL = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -137,8 +137,8 @@ impl ::protobuf::Message for GEKLEELLCBF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EJOIJGCLCJO != false {
-            my_size += 1 + 1;
+        if self.LFCDODFMHHN != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.LFCDODFMHHN);
         }
         if self.LGBOHDICFPK != false {
             my_size += 1 + 1;
@@ -147,14 +147,14 @@ impl ::protobuf::Message for GEKLEELLCBF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.ALIFPIHNMEK != ::protobuf::EnumOrUnknown::new(super::AKKHKMECAFL::AKKHKMECAFL::ROGUE_TOURN_SETTLE_REASON_NONE) {
-            my_size += ::protobuf::rt::int32_size(7, self.ALIFPIHNMEK.value());
+        if self.EJOIJGCLCJO != false {
+            my_size += 1 + 1;
         }
-        if self.LFCDODFMHHN != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.LFCDODFMHHN);
+        if self.ALIFPIHNMEK != ::protobuf::EnumOrUnknown::new(super::AKKHKMECAFL::AKKHKMECAFL::ROGUE_TOURN_SETTLE_REASON_NONE) {
+            my_size += ::protobuf::rt::int32_size(13, self.ALIFPIHNMEK.value());
         }
         if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::RogueTournLevelStatus::RogueTournLevelStatus::ROGUE_TOURN_LEVEL_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(3, self.PBLFLJNHMIL.value());
+            my_size += ::protobuf::rt::int32_size(7, self.PBLFLJNHMIL.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,23 +162,23 @@ impl ::protobuf::Message for GEKLEELLCBF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EJOIJGCLCJO != false {
-            os.write_bool(2, self.EJOIJGCLCJO)?;
+        if self.LFCDODFMHHN != 0 {
+            os.write_uint32(11, self.LFCDODFMHHN)?;
         }
         if self.LGBOHDICFPK != false {
             os.write_bool(12, self.LGBOHDICFPK)?;
         }
         for v in &self.AHOOAFGDEHF {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
-        if self.ALIFPIHNMEK != ::protobuf::EnumOrUnknown::new(super::AKKHKMECAFL::AKKHKMECAFL::ROGUE_TOURN_SETTLE_REASON_NONE) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.ALIFPIHNMEK))?;
+        if self.EJOIJGCLCJO != false {
+            os.write_bool(4, self.EJOIJGCLCJO)?;
         }
-        if self.LFCDODFMHHN != 0 {
-            os.write_uint32(15, self.LFCDODFMHHN)?;
+        if self.ALIFPIHNMEK != ::protobuf::EnumOrUnknown::new(super::AKKHKMECAFL::AKKHKMECAFL::ROGUE_TOURN_SETTLE_REASON_NONE) {
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.ALIFPIHNMEK))?;
         }
         if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::RogueTournLevelStatus::RogueTournLevelStatus::ROGUE_TOURN_LEVEL_STATUS_NONE) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.PBLFLJNHMIL))?;
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.PBLFLJNHMIL))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,22 +197,22 @@ impl ::protobuf::Message for GEKLEELLCBF {
     }
 
     fn clear(&mut self) {
-        self.EJOIJGCLCJO = false;
+        self.LFCDODFMHHN = 0;
         self.LGBOHDICFPK = false;
         self.AHOOAFGDEHF.clear();
+        self.EJOIJGCLCJO = false;
         self.ALIFPIHNMEK = ::protobuf::EnumOrUnknown::new(super::AKKHKMECAFL::AKKHKMECAFL::ROGUE_TOURN_SETTLE_REASON_NONE);
-        self.LFCDODFMHHN = 0;
         self.PBLFLJNHMIL = ::protobuf::EnumOrUnknown::new(super::RogueTournLevelStatus::RogueTournLevelStatus::ROGUE_TOURN_LEVEL_STATUS_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GEKLEELLCBF {
         static instance: GEKLEELLCBF = GEKLEELLCBF {
-            EJOIJGCLCJO: false,
+            LFCDODFMHHN: 0,
             LGBOHDICFPK: false,
             AHOOAFGDEHF: ::std::vec::Vec::new(),
+            EJOIJGCLCJO: false,
             ALIFPIHNMEK: ::protobuf::EnumOrUnknown::from_i32(0),
-            LFCDODFMHHN: 0,
             PBLFLJNHMIL: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -240,11 +240,11 @@ impl ::protobuf::reflect::ProtobufValue for GEKLEELLCBF {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GEKLEELLCBF.proto\x1a\x11AKKHKMECAFL.proto\x1a\x11BABHBOMOMDF.prot\
     o\x1a\x1bRogueTournLevelStatus.proto\"\x8d\x02\n\x0bGEKLEELLCBF\x12\x20\
-    \n\x0bEJOIJGCLCJO\x18\x02\x20\x01(\x08R\x0bEJOIJGCLCJO\x12\x20\n\x0bLGBO\
-    HDICFPK\x18\x0c\x20\x01(\x08R\x0bLGBOHDICFPK\x12.\n\x0bAHOOAFGDEHF\x18\
-    \x01\x20\x03(\x0b2\x0c.BABHBOMOMDFR\x0bAHOOAFGDEHF\x12.\n\x0bALIFPIHNMEK\
-    \x18\x07\x20\x01(\x0e2\x0c.AKKHKMECAFLR\x0bALIFPIHNMEK\x12\x20\n\x0bLFCD\
-    ODFMHHN\x18\x0f\x20\x01(\rR\x0bLFCDODFMHHN\x128\n\x0bPBLFLJNHMIL\x18\x03\
+    \n\x0bLFCDODFMHHN\x18\x0b\x20\x01(\rR\x0bLFCDODFMHHN\x12\x20\n\x0bLGBOHD\
+    ICFPK\x18\x0c\x20\x01(\x08R\x0bLGBOHDICFPK\x12.\n\x0bAHOOAFGDEHF\x18\x0f\
+    \x20\x03(\x0b2\x0c.BABHBOMOMDFR\x0bAHOOAFGDEHF\x12\x20\n\x0bEJOIJGCLCJO\
+    \x18\x04\x20\x01(\x08R\x0bEJOIJGCLCJO\x12.\n\x0bALIFPIHNMEK\x18\r\x20\
+    \x01(\x0e2\x0c.AKKHKMECAFLR\x0bALIFPIHNMEK\x128\n\x0bPBLFLJNHMIL\x18\x07\
     \x20\x01(\x0e2\x16.RogueTournLevelStatusR\x0bPBLFLJNHMILb\x06proto3\
 ";
 

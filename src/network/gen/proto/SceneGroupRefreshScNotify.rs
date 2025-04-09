@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneGroupRefreshScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SceneGroupRefreshScNotify.LJHIJCABHEP)
-    pub LJHIJCABHEP: u32,
-    // @@protoc_insertion_point(field:SceneGroupRefreshScNotify.AILNOJPDGEL)
-    pub AILNOJPDGEL: ::std::vec::Vec<super::HINABMPDKKB::HINABMPDKKB>,
     // @@protoc_insertion_point(field:SceneGroupRefreshScNotify.GFHGLFFHFBD)
     pub GFHGLFFHFBD: u32,
+    // @@protoc_insertion_point(field:SceneGroupRefreshScNotify.AILNOJPDGEL)
+    pub AILNOJPDGEL: ::std::vec::Vec<super::HINABMPDKKB::HINABMPDKKB>,
+    // @@protoc_insertion_point(field:SceneGroupRefreshScNotify.LJHIJCABHEP)
+    pub LJHIJCABHEP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SceneGroupRefreshScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl SceneGroupRefreshScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LJHIJCABHEP",
-            |m: &SceneGroupRefreshScNotify| { &m.LJHIJCABHEP },
-            |m: &mut SceneGroupRefreshScNotify| { &mut m.LJHIJCABHEP },
+            "GFHGLFFHFBD",
+            |m: &SceneGroupRefreshScNotify| { &m.GFHGLFFHFBD },
+            |m: &mut SceneGroupRefreshScNotify| { &mut m.GFHGLFFHFBD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "AILNOJPDGEL",
@@ -64,9 +64,9 @@ impl SceneGroupRefreshScNotify {
             |m: &mut SceneGroupRefreshScNotify| { &mut m.AILNOJPDGEL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GFHGLFFHFBD",
-            |m: &SceneGroupRefreshScNotify| { &m.GFHGLFFHFBD },
-            |m: &mut SceneGroupRefreshScNotify| { &mut m.GFHGLFFHFBD },
+            "LJHIJCABHEP",
+            |m: &SceneGroupRefreshScNotify| { &m.LJHIJCABHEP },
+            |m: &mut SceneGroupRefreshScNotify| { &mut m.LJHIJCABHEP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SceneGroupRefreshScNotify>(
             "SceneGroupRefreshScNotify",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SceneGroupRefreshScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.LJHIJCABHEP = is.read_uint32()?;
+                24 => {
+                    self.GFHGLFFHFBD = is.read_uint32()?;
                 },
                 114 => {
                     self.AILNOJPDGEL.push(is.read_message()?);
                 },
-                88 => {
-                    self.GFHGLFFHFBD = is.read_uint32()?;
+                64 => {
+                    self.LJHIJCABHEP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for SceneGroupRefreshScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LJHIJCABHEP != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.LJHIJCABHEP);
+        if self.GFHGLFFHFBD != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.GFHGLFFHFBD);
         }
         for value in &self.AILNOJPDGEL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.GFHGLFFHFBD != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.GFHGLFFHFBD);
+        if self.LJHIJCABHEP != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.LJHIJCABHEP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for SceneGroupRefreshScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LJHIJCABHEP != 0 {
-            os.write_uint32(5, self.LJHIJCABHEP)?;
+        if self.GFHGLFFHFBD != 0 {
+            os.write_uint32(3, self.GFHGLFFHFBD)?;
         }
         for v in &self.AILNOJPDGEL {
             ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
-        if self.GFHGLFFHFBD != 0 {
-            os.write_uint32(11, self.GFHGLFFHFBD)?;
+        if self.LJHIJCABHEP != 0 {
+            os.write_uint32(8, self.LJHIJCABHEP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for SceneGroupRefreshScNotify {
     }
 
     fn clear(&mut self) {
-        self.LJHIJCABHEP = 0;
-        self.AILNOJPDGEL.clear();
         self.GFHGLFFHFBD = 0;
+        self.AILNOJPDGEL.clear();
+        self.LJHIJCABHEP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneGroupRefreshScNotify {
         static instance: SceneGroupRefreshScNotify = SceneGroupRefreshScNotify {
-            LJHIJCABHEP: 0,
-            AILNOJPDGEL: ::std::vec::Vec::new(),
             GFHGLFFHFBD: 0,
+            AILNOJPDGEL: ::std::vec::Vec::new(),
+            LJHIJCABHEP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for SceneGroupRefreshScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fSceneGroupRefreshScNotify.proto\x1a\x11HINABMPDKKB.proto\"\x8f\x01\
-    \n\x19SceneGroupRefreshScNotify\x12\x20\n\x0bLJHIJCABHEP\x18\x05\x20\x01\
-    (\rR\x0bLJHIJCABHEP\x12.\n\x0bAILNOJPDGEL\x18\x0e\x20\x03(\x0b2\x0c.HINA\
-    BMPDKKBR\x0bAILNOJPDGEL\x12\x20\n\x0bGFHGLFFHFBD\x18\x0b\x20\x01(\rR\x0b\
-    GFHGLFFHFBDb\x06proto3\
+    \n\x19SceneGroupRefreshScNotify\x12\x20\n\x0bGFHGLFFHFBD\x18\x03\x20\x01\
+    (\rR\x0bGFHGLFFHFBD\x12.\n\x0bAILNOJPDGEL\x18\x0e\x20\x03(\x0b2\x0c.HINA\
+    BMPDKKBR\x0bAILNOJPDGEL\x12\x20\n\x0bLJHIJCABHEP\x18\x08\x20\x01(\rR\x0b\
+    LJHIJCABHEPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightEnterScRsp {
     // message fields
+    // @@protoc_insertion_point(field:FightEnterScRsp.NMOOODOHHCI)
+    pub NMOOODOHHCI: u64,
     // @@protoc_insertion_point(field:FightEnterScRsp.secret_key_seed)
     pub secret_key_seed: u64,
     // @@protoc_insertion_point(field:FightEnterScRsp.JLPKEOBINCP)
     pub JLPKEOBINCP: bool,
-    // @@protoc_insertion_point(field:FightEnterScRsp.MKINIOFGIAG)
-    pub MKINIOFGIAG: u32,
     // @@protoc_insertion_point(field:FightEnterScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:FightEnterScRsp.NMOOODOHHCI)
-    pub NMOOODOHHCI: u64,
+    // @@protoc_insertion_point(field:FightEnterScRsp.MKINIOFGIAG)
+    pub MKINIOFGIAG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FightEnterScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,6 +58,11 @@ impl FightEnterScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NMOOODOHHCI",
+            |m: &FightEnterScRsp| { &m.NMOOODOHHCI },
+            |m: &mut FightEnterScRsp| { &mut m.NMOOODOHHCI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "secret_key_seed",
             |m: &FightEnterScRsp| { &m.secret_key_seed },
             |m: &mut FightEnterScRsp| { &mut m.secret_key_seed },
@@ -68,19 +73,14 @@ impl FightEnterScRsp {
             |m: &mut FightEnterScRsp| { &mut m.JLPKEOBINCP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MKINIOFGIAG",
-            |m: &FightEnterScRsp| { &m.MKINIOFGIAG },
-            |m: &mut FightEnterScRsp| { &mut m.MKINIOFGIAG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &FightEnterScRsp| { &m.retcode },
             |m: &mut FightEnterScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NMOOODOHHCI",
-            |m: &FightEnterScRsp| { &m.NMOOODOHHCI },
-            |m: &mut FightEnterScRsp| { &mut m.NMOOODOHHCI },
+            "MKINIOFGIAG",
+            |m: &FightEnterScRsp| { &m.MKINIOFGIAG },
+            |m: &mut FightEnterScRsp| { &mut m.MKINIOFGIAG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightEnterScRsp>(
             "FightEnterScRsp",
@@ -101,19 +101,19 @@ impl ::protobuf::Message for FightEnterScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 32 => {
+                    self.NMOOODOHHCI = is.read_uint64()?;
+                },
+                64 => {
                     self.secret_key_seed = is.read_uint64()?;
                 },
-                56 => {
+                8 => {
                     self.JLPKEOBINCP = is.read_bool()?;
                 },
-                72 => {
-                    self.MKINIOFGIAG = is.read_uint32()?;
-                },
-                8 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
-                40 => {
-                    self.NMOOODOHHCI = is.read_uint64()?;
+                56 => {
+                    self.MKINIOFGIAG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for FightEnterScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.NMOOODOHHCI != 0 {
+            my_size += ::protobuf::rt::uint64_size(4, self.NMOOODOHHCI);
+        }
         if self.secret_key_seed != 0 {
-            my_size += ::protobuf::rt::uint64_size(4, self.secret_key_seed);
+            my_size += ::protobuf::rt::uint64_size(8, self.secret_key_seed);
         }
         if self.JLPKEOBINCP != false {
             my_size += 1 + 1;
         }
-        if self.MKINIOFGIAG != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.MKINIOFGIAG);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
-        if self.NMOOODOHHCI != 0 {
-            my_size += ::protobuf::rt::uint64_size(5, self.NMOOODOHHCI);
+        if self.MKINIOFGIAG != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.MKINIOFGIAG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for FightEnterScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.NMOOODOHHCI != 0 {
+            os.write_uint64(4, self.NMOOODOHHCI)?;
+        }
         if self.secret_key_seed != 0 {
-            os.write_uint64(4, self.secret_key_seed)?;
+            os.write_uint64(8, self.secret_key_seed)?;
         }
         if self.JLPKEOBINCP != false {
-            os.write_bool(7, self.JLPKEOBINCP)?;
-        }
-        if self.MKINIOFGIAG != 0 {
-            os.write_uint32(9, self.MKINIOFGIAG)?;
+            os.write_bool(1, self.JLPKEOBINCP)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
-        if self.NMOOODOHHCI != 0 {
-            os.write_uint64(5, self.NMOOODOHHCI)?;
+        if self.MKINIOFGIAG != 0 {
+            os.write_uint32(7, self.MKINIOFGIAG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for FightEnterScRsp {
     }
 
     fn clear(&mut self) {
+        self.NMOOODOHHCI = 0;
         self.secret_key_seed = 0;
         self.JLPKEOBINCP = false;
-        self.MKINIOFGIAG = 0;
         self.retcode = 0;
-        self.NMOOODOHHCI = 0;
+        self.MKINIOFGIAG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightEnterScRsp {
         static instance: FightEnterScRsp = FightEnterScRsp {
+            NMOOODOHHCI: 0,
             secret_key_seed: 0,
             JLPKEOBINCP: false,
-            MKINIOFGIAG: 0,
             retcode: 0,
-            NMOOODOHHCI: 0,
+            MKINIOFGIAG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for FightEnterScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15FightEnterScRsp.proto\"\xb9\x01\n\x0fFightEnterScRsp\x12&\n\x0fsec\
-    ret_key_seed\x18\x04\x20\x01(\x04R\rsecretKeySeed\x12\x20\n\x0bJLPKEOBIN\
-    CP\x18\x07\x20\x01(\x08R\x0bJLPKEOBINCP\x12\x20\n\x0bMKINIOFGIAG\x18\t\
-    \x20\x01(\rR\x0bMKINIOFGIAG\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07\
-    retcode\x12\x20\n\x0bNMOOODOHHCI\x18\x05\x20\x01(\x04R\x0bNMOOODOHHCIb\
+    \n\x15FightEnterScRsp.proto\"\xb9\x01\n\x0fFightEnterScRsp\x12\x20\n\x0b\
+    NMOOODOHHCI\x18\x04\x20\x01(\x04R\x0bNMOOODOHHCI\x12&\n\x0fsecret_key_se\
+    ed\x18\x08\x20\x01(\x04R\rsecretKeySeed\x12\x20\n\x0bJLPKEOBINCP\x18\x01\
+    \x20\x01(\x08R\x0bJLPKEOBINCP\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\
+    \x07retcode\x12\x20\n\x0bMKINIOFGIAG\x18\x07\x20\x01(\rR\x0bMKINIOFGIAGb\
     \x06proto3\
 ";
 

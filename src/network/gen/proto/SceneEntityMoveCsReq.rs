@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneEntityMoveCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SceneEntityMoveCsReq.CCIIHMMJOEM)
-    pub CCIIHMMJOEM: u32,
-    // @@protoc_insertion_point(field:SceneEntityMoveCsReq.PEMLEJJBAJE)
-    pub PEMLEJJBAJE: u64,
     // @@protoc_insertion_point(field:SceneEntityMoveCsReq.FGLHDBKPIBP)
     pub FGLHDBKPIBP: ::std::vec::Vec<super::LGHAGKOINOB::LGHAGKOINOB>,
+    // @@protoc_insertion_point(field:SceneEntityMoveCsReq.PEMLEJJBAJE)
+    pub PEMLEJJBAJE: u64,
+    // @@protoc_insertion_point(field:SceneEntityMoveCsReq.CCIIHMMJOEM)
+    pub CCIIHMMJOEM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SceneEntityMoveCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl SceneEntityMoveCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CCIIHMMJOEM",
-            |m: &SceneEntityMoveCsReq| { &m.CCIIHMMJOEM },
-            |m: &mut SceneEntityMoveCsReq| { &mut m.CCIIHMMJOEM },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FGLHDBKPIBP",
+            |m: &SceneEntityMoveCsReq| { &m.FGLHDBKPIBP },
+            |m: &mut SceneEntityMoveCsReq| { &mut m.FGLHDBKPIBP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PEMLEJJBAJE",
             |m: &SceneEntityMoveCsReq| { &m.PEMLEJJBAJE },
             |m: &mut SceneEntityMoveCsReq| { &mut m.PEMLEJJBAJE },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FGLHDBKPIBP",
-            |m: &SceneEntityMoveCsReq| { &m.FGLHDBKPIBP },
-            |m: &mut SceneEntityMoveCsReq| { &mut m.FGLHDBKPIBP },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CCIIHMMJOEM",
+            |m: &SceneEntityMoveCsReq| { &m.CCIIHMMJOEM },
+            |m: &mut SceneEntityMoveCsReq| { &mut m.CCIIHMMJOEM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SceneEntityMoveCsReq>(
             "SceneEntityMoveCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SceneEntityMoveCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.CCIIHMMJOEM = is.read_uint32()?;
+                90 => {
+                    self.FGLHDBKPIBP.push(is.read_message()?);
                 },
-                104 => {
+                32 => {
                     self.PEMLEJJBAJE = is.read_uint64()?;
                 },
-                34 => {
-                    self.FGLHDBKPIBP.push(is.read_message()?);
+                56 => {
+                    self.CCIIHMMJOEM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,31 +107,31 @@ impl ::protobuf::Message for SceneEntityMoveCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CCIIHMMJOEM != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.CCIIHMMJOEM);
-        }
-        if self.PEMLEJJBAJE != 0 {
-            my_size += ::protobuf::rt::uint64_size(13, self.PEMLEJJBAJE);
-        }
         for value in &self.FGLHDBKPIBP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.PEMLEJJBAJE != 0 {
+            my_size += ::protobuf::rt::uint64_size(4, self.PEMLEJJBAJE);
+        }
+        if self.CCIIHMMJOEM != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.CCIIHMMJOEM);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CCIIHMMJOEM != 0 {
-            os.write_uint32(2, self.CCIIHMMJOEM)?;
-        }
-        if self.PEMLEJJBAJE != 0 {
-            os.write_uint64(13, self.PEMLEJJBAJE)?;
-        }
         for v in &self.FGLHDBKPIBP {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
+        if self.PEMLEJJBAJE != 0 {
+            os.write_uint64(4, self.PEMLEJJBAJE)?;
+        }
+        if self.CCIIHMMJOEM != 0 {
+            os.write_uint32(7, self.CCIIHMMJOEM)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,17 +149,17 @@ impl ::protobuf::Message for SceneEntityMoveCsReq {
     }
 
     fn clear(&mut self) {
-        self.CCIIHMMJOEM = 0;
-        self.PEMLEJJBAJE = 0;
         self.FGLHDBKPIBP.clear();
+        self.PEMLEJJBAJE = 0;
+        self.CCIIHMMJOEM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneEntityMoveCsReq {
         static instance: SceneEntityMoveCsReq = SceneEntityMoveCsReq {
-            CCIIHMMJOEM: 0,
-            PEMLEJJBAJE: 0,
             FGLHDBKPIBP: ::std::vec::Vec::new(),
+            PEMLEJJBAJE: 0,
+            CCIIHMMJOEM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for SceneEntityMoveCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aSceneEntityMoveCsReq.proto\x1a\x11LGHAGKOINOB.proto\"\x8a\x01\n\
-    \x14SceneEntityMoveCsReq\x12\x20\n\x0bCCIIHMMJOEM\x18\x02\x20\x01(\rR\
-    \x0bCCIIHMMJOEM\x12\x20\n\x0bPEMLEJJBAJE\x18\r\x20\x01(\x04R\x0bPEMLEJJB\
-    AJE\x12.\n\x0bFGLHDBKPIBP\x18\x04\x20\x03(\x0b2\x0c.LGHAGKOINOBR\x0bFGLH\
-    DBKPIBPb\x06proto3\
+    \x14SceneEntityMoveCsReq\x12.\n\x0bFGLHDBKPIBP\x18\x0b\x20\x03(\x0b2\x0c\
+    .LGHAGKOINOBR\x0bFGLHDBKPIBP\x12\x20\n\x0bPEMLEJJBAJE\x18\x04\x20\x01(\
+    \x04R\x0bPEMLEJJBAJE\x12\x20\n\x0bCCIIHMMJOEM\x18\x07\x20\x01(\rR\x0bCCI\
+    IHMMJOEMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

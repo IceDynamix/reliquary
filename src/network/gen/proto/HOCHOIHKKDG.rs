@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HOCHOIHKKDG {
     // message fields
-    // @@protoc_insertion_point(field:HOCHOIHKKDG.DLPPDPBJIIM)
-    pub DLPPDPBJIIM: u32,
     // @@protoc_insertion_point(field:HOCHOIHKKDG.MDDOFMCJJHH)
     pub MDDOFMCJJHH: ::protobuf::EnumOrUnknown<super::FOCHDFJANPC::FOCHDFJANPC>,
     // @@protoc_insertion_point(field:HOCHOIHKKDG.HFALJIHKECN)
     pub HFALJIHKECN: u32,
+    // @@protoc_insertion_point(field:HOCHOIHKKDG.DLPPDPBJIIM)
+    pub DLPPDPBJIIM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HOCHOIHKKDG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl HOCHOIHKKDG {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DLPPDPBJIIM",
-            |m: &HOCHOIHKKDG| { &m.DLPPDPBJIIM },
-            |m: &mut HOCHOIHKKDG| { &mut m.DLPPDPBJIIM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MDDOFMCJJHH",
             |m: &HOCHOIHKKDG| { &m.MDDOFMCJJHH },
             |m: &mut HOCHOIHKKDG| { &mut m.MDDOFMCJJHH },
@@ -67,6 +62,11 @@ impl HOCHOIHKKDG {
             "HFALJIHKECN",
             |m: &HOCHOIHKKDG| { &m.HFALJIHKECN },
             |m: &mut HOCHOIHKKDG| { &mut m.HFALJIHKECN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DLPPDPBJIIM",
+            |m: &HOCHOIHKKDG| { &m.DLPPDPBJIIM },
+            |m: &mut HOCHOIHKKDG| { &mut m.DLPPDPBJIIM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HOCHOIHKKDG>(
             "HOCHOIHKKDG",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for HOCHOIHKKDG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.DLPPDPBJIIM = is.read_uint32()?;
-                },
-                32 => {
+                40 => {
                     self.MDDOFMCJJHH = is.read_enum_or_unknown()?;
                 },
-                24 => {
+                8 => {
                     self.HFALJIHKECN = is.read_uint32()?;
+                },
+                48 => {
+                    self.DLPPDPBJIIM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for HOCHOIHKKDG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DLPPDPBJIIM != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.DLPPDPBJIIM);
-        }
         if self.MDDOFMCJJHH != ::protobuf::EnumOrUnknown::new(super::FOCHDFJANPC::FOCHDFJANPC::RAID_TARGET_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(4, self.MDDOFMCJJHH.value());
+            my_size += ::protobuf::rt::int32_size(5, self.MDDOFMCJJHH.value());
         }
         if self.HFALJIHKECN != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.HFALJIHKECN);
+            my_size += ::protobuf::rt::uint32_size(1, self.HFALJIHKECN);
+        }
+        if self.DLPPDPBJIIM != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.DLPPDPBJIIM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for HOCHOIHKKDG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DLPPDPBJIIM != 0 {
-            os.write_uint32(11, self.DLPPDPBJIIM)?;
-        }
         if self.MDDOFMCJJHH != ::protobuf::EnumOrUnknown::new(super::FOCHDFJANPC::FOCHDFJANPC::RAID_TARGET_STATUS_NONE) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.MDDOFMCJJHH))?;
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.MDDOFMCJJHH))?;
         }
         if self.HFALJIHKECN != 0 {
-            os.write_uint32(3, self.HFALJIHKECN)?;
+            os.write_uint32(1, self.HFALJIHKECN)?;
+        }
+        if self.DLPPDPBJIIM != 0 {
+            os.write_uint32(6, self.DLPPDPBJIIM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for HOCHOIHKKDG {
     }
 
     fn clear(&mut self) {
-        self.DLPPDPBJIIM = 0;
         self.MDDOFMCJJHH = ::protobuf::EnumOrUnknown::new(super::FOCHDFJANPC::FOCHDFJANPC::RAID_TARGET_STATUS_NONE);
         self.HFALJIHKECN = 0;
+        self.DLPPDPBJIIM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HOCHOIHKKDG {
         static instance: HOCHOIHKKDG = HOCHOIHKKDG {
-            DLPPDPBJIIM: 0,
             MDDOFMCJJHH: ::protobuf::EnumOrUnknown::from_i32(0),
             HFALJIHKECN: 0,
+            DLPPDPBJIIM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for HOCHOIHKKDG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HOCHOIHKKDG.proto\x1a\x11FOCHDFJANPC.proto\"\x81\x01\n\x0bHOCHOIHK\
-    KDG\x12\x20\n\x0bDLPPDPBJIIM\x18\x0b\x20\x01(\rR\x0bDLPPDPBJIIM\x12.\n\
-    \x0bMDDOFMCJJHH\x18\x04\x20\x01(\x0e2\x0c.FOCHDFJANPCR\x0bMDDOFMCJJHH\
-    \x12\x20\n\x0bHFALJIHKECN\x18\x03\x20\x01(\rR\x0bHFALJIHKECNb\x06proto3\
+    KDG\x12.\n\x0bMDDOFMCJJHH\x18\x05\x20\x01(\x0e2\x0c.FOCHDFJANPCR\x0bMDDO\
+    FMCJJHH\x12\x20\n\x0bHFALJIHKECN\x18\x01\x20\x01(\rR\x0bHFALJIHKECN\x12\
+    \x20\n\x0bDLPPDPBJIIM\x18\x06\x20\x01(\rR\x0bDLPPDPBJIIMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

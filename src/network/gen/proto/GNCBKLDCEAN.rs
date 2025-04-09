@@ -58,6 +58,8 @@ pub struct GNCBKLDCEAN {
     pub KDFJCPIICMA: ::protobuf::MessageField<super::EPNDOHDGFOD::EPNDOHDGFOD>,
     // @@protoc_insertion_point(field:GNCBKLDCEAN.GMOBAOCEFCE)
     pub GMOBAOCEFCE: u32,
+    // @@protoc_insertion_point(field:GNCBKLDCEAN.IMJJKBJOOHJ)
+    pub IMJJKBJOOHJ: ::std::vec::Vec<super::AvatarSkillTree::AvatarSkillTree>,
     // special fields
     // @@protoc_insertion_point(special_field:GNCBKLDCEAN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -75,7 +77,7 @@ impl GNCBKLDCEAN {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(15);
+        let mut fields = ::std::vec::Vec::with_capacity(16);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IHLEAMDIKKN",
@@ -152,6 +154,11 @@ impl GNCBKLDCEAN {
             |m: &GNCBKLDCEAN| { &m.GMOBAOCEFCE },
             |m: &mut GNCBKLDCEAN| { &mut m.GMOBAOCEFCE },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "IMJJKBJOOHJ",
+            |m: &GNCBKLDCEAN| { &m.IMJJKBJOOHJ },
+            |m: &mut GNCBKLDCEAN| { &mut m.IMJJKBJOOHJ },
+        ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GNCBKLDCEAN>(
             "GNCBKLDCEAN",
             fields,
@@ -215,6 +222,9 @@ impl ::protobuf::Message for GNCBKLDCEAN {
                 136 => {
                     self.GMOBAOCEFCE = is.read_uint32()?;
                 },
+                146 => {
+                    self.IMJJKBJOOHJ.push(is.read_message()?);
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -277,6 +287,10 @@ impl ::protobuf::Message for GNCBKLDCEAN {
         if self.GMOBAOCEFCE != 0 {
             my_size += ::protobuf::rt::uint32_size(17, self.GMOBAOCEFCE);
         }
+        for value in &self.IMJJKBJOOHJ {
+            let len = value.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -328,6 +342,9 @@ impl ::protobuf::Message for GNCBKLDCEAN {
         if self.GMOBAOCEFCE != 0 {
             os.write_uint32(17, self.GMOBAOCEFCE)?;
         }
+        for v in &self.IMJJKBJOOHJ {
+            ::protobuf::rt::write_message_field_with_cached_size(18, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -360,6 +377,7 @@ impl ::protobuf::Message for GNCBKLDCEAN {
         self.ECIFJLAKHCL.clear();
         self.KDFJCPIICMA.clear();
         self.GMOBAOCEFCE = 0;
+        self.IMJJKBJOOHJ.clear();
         self.special_fields.clear();
     }
 
@@ -380,6 +398,7 @@ impl ::protobuf::Message for GNCBKLDCEAN {
             ECIFJLAKHCL: ::protobuf::MessageField::none(),
             KDFJCPIICMA: ::protobuf::MessageField::none(),
             GMOBAOCEFCE: 0,
+            IMJJKBJOOHJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -406,7 +425,7 @@ impl ::protobuf::reflect::ProtobufValue for GNCBKLDCEAN {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GNCBKLDCEAN.proto\x1a\x11AIPAKGHNDOK.proto\x1a\x15AvatarSkillTree.\
     proto\x1a\x10AvatarType.proto\x1a\x11BJHEBCCBANA.proto\x1a\x11EPNDOHDGFO\
-    D.proto\x1a\x11HLBHOMAPCGF.proto\"\xd8\x04\n\x0bGNCBKLDCEAN\x12-\n\x0bIH\
+    D.proto\x1a\x11HLBHOMAPCGF.proto\"\x8c\x05\n\x0bGNCBKLDCEAN\x12-\n\x0bIH\
     LEAMDIKKN\x18\x01\x20\x01(\x0e2\x0b.AvatarTypeR\x0bIHLEAMDIKKN\x12\x20\n\
     \x0bELGANMDPMID\x18\x02\x20\x01(\rR\x0bELGANMDPMID\x12\x14\n\x05level\
     \x18\x03\x20\x01(\rR\x05level\x12\x12\n\x04rank\x18\x04\x20\x01(\rR\x04r\
@@ -420,7 +439,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     CEK\x18\r\x20\x01(\rR\x0bCPMNCMGNCEK\x12.\n\x0bECIFJLAKHCL\x18\x0f\x20\
     \x01(\x0b2\x0c.BJHEBCCBANAR\x0bECIFJLAKHCL\x12.\n\x0bKDFJCPIICMA\x18\x10\
     \x20\x01(\x0b2\x0c.EPNDOHDGFODR\x0bKDFJCPIICMA\x12\x20\n\x0bGMOBAOCEFCE\
-    \x18\x11\x20\x01(\rR\x0bGMOBAOCEFCEb\x06proto3\
+    \x18\x11\x20\x01(\rR\x0bGMOBAOCEFCE\x122\n\x0bIMJJKBJOOHJ\x18\x12\x20\
+    \x03(\x0b2\x10.AvatarSkillTreeR\x0bIMJJKBJOOHJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

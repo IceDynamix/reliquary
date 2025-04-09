@@ -30,8 +30,8 @@ pub struct EMNHADMDFGP {
     // message fields
     // @@protoc_insertion_point(field:EMNHADMDFGP.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:EMNHADMDFGP.DNPOBGICFCJ)
-    pub DNPOBGICFCJ: ::std::string::String,
+    // @@protoc_insertion_point(field:EMNHADMDFGP.msg)
+    pub msg: ::std::string::String,
     // @@protoc_insertion_point(field:EMNHADMDFGP.ICBMAPMKPPG)
     pub ICBMAPMKPPG: ::std::string::String,
     // @@protoc_insertion_point(field:EMNHADMDFGP.CJAFOALDKBM)
@@ -63,9 +63,9 @@ impl EMNHADMDFGP {
             |m: &mut EMNHADMDFGP| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DNPOBGICFCJ",
-            |m: &EMNHADMDFGP| { &m.DNPOBGICFCJ },
-            |m: &mut EMNHADMDFGP| { &mut m.DNPOBGICFCJ },
+            "msg",
+            |m: &EMNHADMDFGP| { &m.msg },
+            |m: &mut EMNHADMDFGP| { &mut m.msg },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ICBMAPMKPPG",
@@ -104,7 +104,7 @@ impl ::protobuf::Message for EMNHADMDFGP {
                     self.retcode = is.read_uint32()?;
                 },
                 18 => {
-                    self.DNPOBGICFCJ = is.read_string()?;
+                    self.msg = is.read_string()?;
                 },
                 26 => {
                     self.ICBMAPMKPPG = is.read_string()?;
@@ -130,8 +130,8 @@ impl ::protobuf::Message for EMNHADMDFGP {
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
-        if !self.DNPOBGICFCJ.is_empty() {
-            my_size += ::protobuf::rt::string_size(2, &self.DNPOBGICFCJ);
+        if !self.msg.is_empty() {
+            my_size += ::protobuf::rt::string_size(2, &self.msg);
         }
         if !self.ICBMAPMKPPG.is_empty() {
             my_size += ::protobuf::rt::string_size(3, &self.ICBMAPMKPPG);
@@ -152,8 +152,8 @@ impl ::protobuf::Message for EMNHADMDFGP {
         if self.retcode != 0 {
             os.write_uint32(1, self.retcode)?;
         }
-        if !self.DNPOBGICFCJ.is_empty() {
-            os.write_string(2, &self.DNPOBGICFCJ)?;
+        if !self.msg.is_empty() {
+            os.write_string(2, &self.msg)?;
         }
         if !self.ICBMAPMKPPG.is_empty() {
             os.write_string(3, &self.ICBMAPMKPPG)?;
@@ -182,7 +182,7 @@ impl ::protobuf::Message for EMNHADMDFGP {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.DNPOBGICFCJ.clear();
+        self.msg.clear();
         self.ICBMAPMKPPG.clear();
         self.CJAFOALDKBM.clear();
         self.AEECMAGMGAD.clear();
@@ -192,7 +192,7 @@ impl ::protobuf::Message for EMNHADMDFGP {
     fn default_instance() -> &'static EMNHADMDFGP {
         static instance: EMNHADMDFGP = EMNHADMDFGP {
             retcode: 0,
-            DNPOBGICFCJ: ::std::string::String::new(),
+            msg: ::std::string::String::new(),
             ICBMAPMKPPG: ::std::string::String::new(),
             CJAFOALDKBM: ::std::vec::Vec::new(),
             AEECMAGMGAD: ::std::string::String::new(),
@@ -220,12 +220,12 @@ impl ::protobuf::reflect::ProtobufValue for EMNHADMDFGP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EMNHADMDFGP.proto\x1a\x11PHIMJDOFHBH.proto\"\xbd\x01\n\x0bEMNHADMD\
-    FGP\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12\x20\n\x0bDNP\
-    OBGICFCJ\x18\x02\x20\x01(\tR\x0bDNPOBGICFCJ\x12\x20\n\x0bICBMAPMKPPG\x18\
-    \x03\x20\x01(\tR\x0bICBMAPMKPPG\x12.\n\x0bCJAFOALDKBM\x18\x04\x20\x03(\
-    \x0b2\x0c.PHIMJDOFHBHR\x0bCJAFOALDKBM\x12\x20\n\x0bAEECMAGMGAD\x18\x05\
-    \x20\x01(\tR\x0bAEECMAGMGADb\x06proto3\
+    \n\x11EMNHADMDFGP.proto\x1a\x11PHIMJDOFHBH.proto\"\xad\x01\n\x0bEMNHADMD\
+    FGP\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12\x10\n\x03msg\
+    \x18\x02\x20\x01(\tR\x03msg\x12\x20\n\x0bICBMAPMKPPG\x18\x03\x20\x01(\tR\
+    \x0bICBMAPMKPPG\x12.\n\x0bCJAFOALDKBM\x18\x04\x20\x03(\x0b2\x0c.PHIMJDOF\
+    HBHR\x0bCJAFOALDKBM\x12\x20\n\x0bAEECMAGMGAD\x18\x05\x20\x01(\tR\x0bAEEC\
+    MAGMGADb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

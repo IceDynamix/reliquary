@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishChessRogueSubStoryCsReq {
     // message fields
+    // @@protoc_insertion_point(field:FinishChessRogueSubStoryCsReq.FAHIHDJFOHM)
+    pub FAHIHDJFOHM: u32,
     // @@protoc_insertion_point(field:FinishChessRogueSubStoryCsReq.IKMNAMKJAFA)
     pub IKMNAMKJAFA: u32,
     // @@protoc_insertion_point(field:FinishChessRogueSubStoryCsReq.IFIIJGNGOGP)
     pub IFIIJGNGOGP: u32,
-    // @@protoc_insertion_point(field:FinishChessRogueSubStoryCsReq.FAHIHDJFOHM)
-    pub FAHIHDJFOHM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FinishChessRogueSubStoryCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl FinishChessRogueSubStoryCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FAHIHDJFOHM",
+            |m: &FinishChessRogueSubStoryCsReq| { &m.FAHIHDJFOHM },
+            |m: &mut FinishChessRogueSubStoryCsReq| { &mut m.FAHIHDJFOHM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IKMNAMKJAFA",
             |m: &FinishChessRogueSubStoryCsReq| { &m.IKMNAMKJAFA },
             |m: &mut FinishChessRogueSubStoryCsReq| { &mut m.IKMNAMKJAFA },
@@ -62,11 +67,6 @@ impl FinishChessRogueSubStoryCsReq {
             "IFIIJGNGOGP",
             |m: &FinishChessRogueSubStoryCsReq| { &m.IFIIJGNGOGP },
             |m: &mut FinishChessRogueSubStoryCsReq| { &mut m.IFIIJGNGOGP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FAHIHDJFOHM",
-            |m: &FinishChessRogueSubStoryCsReq| { &m.FAHIHDJFOHM },
-            |m: &mut FinishChessRogueSubStoryCsReq| { &mut m.FAHIHDJFOHM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishChessRogueSubStoryCsReq>(
             "FinishChessRogueSubStoryCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for FinishChessRogueSubStoryCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                64 => {
+                    self.FAHIHDJFOHM = is.read_uint32()?;
+                },
+                16 => {
                     self.IKMNAMKJAFA = is.read_uint32()?;
                 },
-                64 => {
+                104 => {
                     self.IFIIJGNGOGP = is.read_uint32()?;
-                },
-                24 => {
-                    self.FAHIHDJFOHM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for FinishChessRogueSubStoryCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.FAHIHDJFOHM != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.FAHIHDJFOHM);
+        }
         if self.IKMNAMKJAFA != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.IKMNAMKJAFA);
+            my_size += ::protobuf::rt::uint32_size(2, self.IKMNAMKJAFA);
         }
         if self.IFIIJGNGOGP != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.IFIIJGNGOGP);
-        }
-        if self.FAHIHDJFOHM != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.FAHIHDJFOHM);
+            my_size += ::protobuf::rt::uint32_size(13, self.IFIIJGNGOGP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for FinishChessRogueSubStoryCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.FAHIHDJFOHM != 0 {
+            os.write_uint32(8, self.FAHIHDJFOHM)?;
+        }
         if self.IKMNAMKJAFA != 0 {
-            os.write_uint32(12, self.IKMNAMKJAFA)?;
+            os.write_uint32(2, self.IKMNAMKJAFA)?;
         }
         if self.IFIIJGNGOGP != 0 {
-            os.write_uint32(8, self.IFIIJGNGOGP)?;
-        }
-        if self.FAHIHDJFOHM != 0 {
-            os.write_uint32(3, self.FAHIHDJFOHM)?;
+            os.write_uint32(13, self.IFIIJGNGOGP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for FinishChessRogueSubStoryCsReq {
     }
 
     fn clear(&mut self) {
+        self.FAHIHDJFOHM = 0;
         self.IKMNAMKJAFA = 0;
         self.IFIIJGNGOGP = 0;
-        self.FAHIHDJFOHM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishChessRogueSubStoryCsReq {
         static instance: FinishChessRogueSubStoryCsReq = FinishChessRogueSubStoryCsReq {
+            FAHIHDJFOHM: 0,
             IKMNAMKJAFA: 0,
             IFIIJGNGOGP: 0,
-            FAHIHDJFOHM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for FinishChessRogueSubStoryCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#FinishChessRogueSubStoryCsReq.proto\"\x85\x01\n\x1dFinishChessRogueSu\
-    bStoryCsReq\x12\x20\n\x0bIKMNAMKJAFA\x18\x0c\x20\x01(\rR\x0bIKMNAMKJAFA\
-    \x12\x20\n\x0bIFIIJGNGOGP\x18\x08\x20\x01(\rR\x0bIFIIJGNGOGP\x12\x20\n\
-    \x0bFAHIHDJFOHM\x18\x03\x20\x01(\rR\x0bFAHIHDJFOHMb\x06proto3\
+    bStoryCsReq\x12\x20\n\x0bFAHIHDJFOHM\x18\x08\x20\x01(\rR\x0bFAHIHDJFOHM\
+    \x12\x20\n\x0bIKMNAMKJAFA\x18\x02\x20\x01(\rR\x0bIKMNAMKJAFA\x12\x20\n\
+    \x0bIFIIJGNGOGP\x18\r\x20\x01(\rR\x0bIFIIJGNGOGPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

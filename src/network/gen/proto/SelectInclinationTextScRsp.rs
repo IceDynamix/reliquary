@@ -79,10 +79,10 @@ impl ::protobuf::Message for SelectInclinationTextScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
-                80 => {
+                88 => {
                     self.PKDCPMNAGBC = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for SelectInclinationTextScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         if self.PKDCPMNAGBC != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.PKDCPMNAGBC);
+            my_size += ::protobuf::rt::uint32_size(11, self.PKDCPMNAGBC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for SelectInclinationTextScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
         }
         if self.PKDCPMNAGBC != 0 {
-            os.write_uint32(10, self.PKDCPMNAGBC)?;
+            os.write_uint32(11, self.PKDCPMNAGBC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for SelectInclinationTextScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20SelectInclinationTextScRsp.proto\"X\n\x1aSelectInclinationTextScRs\
-    p\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\x12\x20\n\x0bPKDCP\
-    MNAGBC\x18\n\x20\x01(\rR\x0bPKDCPMNAGBCb\x06proto3\
+    p\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\x12\x20\n\x0bPKDCP\
+    MNAGBC\x18\x0b\x20\x01(\rR\x0bPKDCPMNAGBCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

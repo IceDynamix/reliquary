@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct QuickStartCocoonStageCsReq {
     // message fields
-    // @@protoc_insertion_point(field:QuickStartCocoonStageCsReq.IFJFCEJJBPE)
-    pub IFJFCEJJBPE: u32,
     // @@protoc_insertion_point(field:QuickStartCocoonStageCsReq.NLLKJODHPCP)
     pub NLLKJODHPCP: u32,
+    // @@protoc_insertion_point(field:QuickStartCocoonStageCsReq.IFJFCEJJBPE)
+    pub IFJFCEJJBPE: u32,
     // @@protoc_insertion_point(field:QuickStartCocoonStageCsReq.HEAJKBNOGLG)
     pub HEAJKBNOGLG: u32,
     // special fields
@@ -54,14 +54,14 @@ impl QuickStartCocoonStageCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IFJFCEJJBPE",
-            |m: &QuickStartCocoonStageCsReq| { &m.IFJFCEJJBPE },
-            |m: &mut QuickStartCocoonStageCsReq| { &mut m.IFJFCEJJBPE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NLLKJODHPCP",
             |m: &QuickStartCocoonStageCsReq| { &m.NLLKJODHPCP },
             |m: &mut QuickStartCocoonStageCsReq| { &mut m.NLLKJODHPCP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IFJFCEJJBPE",
+            |m: &QuickStartCocoonStageCsReq| { &m.IFJFCEJJBPE },
+            |m: &mut QuickStartCocoonStageCsReq| { &mut m.IFJFCEJJBPE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HEAJKBNOGLG",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for QuickStartCocoonStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.IFJFCEJJBPE = is.read_uint32()?;
-                },
-                104 => {
+                56 => {
                     self.NLLKJODHPCP = is.read_uint32()?;
                 },
-                112 => {
+                120 => {
+                    self.IFJFCEJJBPE = is.read_uint32()?;
+                },
+                80 => {
                     self.HEAJKBNOGLG = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for QuickStartCocoonStageCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IFJFCEJJBPE != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.IFJFCEJJBPE);
-        }
         if self.NLLKJODHPCP != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.NLLKJODHPCP);
+            my_size += ::protobuf::rt::uint32_size(7, self.NLLKJODHPCP);
+        }
+        if self.IFJFCEJJBPE != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.IFJFCEJJBPE);
         }
         if self.HEAJKBNOGLG != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.HEAJKBNOGLG);
+            my_size += ::protobuf::rt::uint32_size(10, self.HEAJKBNOGLG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for QuickStartCocoonStageCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IFJFCEJJBPE != 0 {
-            os.write_uint32(2, self.IFJFCEJJBPE)?;
-        }
         if self.NLLKJODHPCP != 0 {
-            os.write_uint32(13, self.NLLKJODHPCP)?;
+            os.write_uint32(7, self.NLLKJODHPCP)?;
+        }
+        if self.IFJFCEJJBPE != 0 {
+            os.write_uint32(15, self.IFJFCEJJBPE)?;
         }
         if self.HEAJKBNOGLG != 0 {
-            os.write_uint32(14, self.HEAJKBNOGLG)?;
+            os.write_uint32(10, self.HEAJKBNOGLG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for QuickStartCocoonStageCsReq {
     }
 
     fn clear(&mut self) {
-        self.IFJFCEJJBPE = 0;
         self.NLLKJODHPCP = 0;
+        self.IFJFCEJJBPE = 0;
         self.HEAJKBNOGLG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static QuickStartCocoonStageCsReq {
         static instance: QuickStartCocoonStageCsReq = QuickStartCocoonStageCsReq {
-            IFJFCEJJBPE: 0,
             NLLKJODHPCP: 0,
+            IFJFCEJJBPE: 0,
             HEAJKBNOGLG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for QuickStartCocoonStageCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20QuickStartCocoonStageCsReq.proto\"\x82\x01\n\x1aQuickStartCocoonSt\
-    ageCsReq\x12\x20\n\x0bIFJFCEJJBPE\x18\x02\x20\x01(\rR\x0bIFJFCEJJBPE\x12\
-    \x20\n\x0bNLLKJODHPCP\x18\r\x20\x01(\rR\x0bNLLKJODHPCP\x12\x20\n\x0bHEAJ\
-    KBNOGLG\x18\x0e\x20\x01(\rR\x0bHEAJKBNOGLGb\x06proto3\
+    ageCsReq\x12\x20\n\x0bNLLKJODHPCP\x18\x07\x20\x01(\rR\x0bNLLKJODHPCP\x12\
+    \x20\n\x0bIFJFCEJJBPE\x18\x0f\x20\x01(\rR\x0bIFJFCEJJBPE\x12\x20\n\x0bHE\
+    AJKBNOGLG\x18\n\x20\x01(\rR\x0bHEAJKBNOGLGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

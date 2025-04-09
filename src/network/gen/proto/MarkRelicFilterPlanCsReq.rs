@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MarkRelicFilterPlanCsReq {
     // message fields
+    // @@protoc_insertion_point(field:MarkRelicFilterPlanCsReq.is_mark)
+    pub is_mark: bool,
     // @@protoc_insertion_point(field:MarkRelicFilterPlanCsReq.slot_index_list)
     pub slot_index_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:MarkRelicFilterPlanCsReq.is_batch_op)
     pub is_batch_op: bool,
-    // @@protoc_insertion_point(field:MarkRelicFilterPlanCsReq.is_mark)
-    pub is_mark: bool,
     // special fields
     // @@protoc_insertion_point(special_field:MarkRelicFilterPlanCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,6 +53,11 @@ impl MarkRelicFilterPlanCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_mark",
+            |m: &MarkRelicFilterPlanCsReq| { &m.is_mark },
+            |m: &mut MarkRelicFilterPlanCsReq| { &mut m.is_mark },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "slot_index_list",
             |m: &MarkRelicFilterPlanCsReq| { &m.slot_index_list },
@@ -62,11 +67,6 @@ impl MarkRelicFilterPlanCsReq {
             "is_batch_op",
             |m: &MarkRelicFilterPlanCsReq| { &m.is_batch_op },
             |m: &mut MarkRelicFilterPlanCsReq| { &mut m.is_batch_op },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_mark",
-            |m: &MarkRelicFilterPlanCsReq| { &m.is_mark },
-            |m: &mut MarkRelicFilterPlanCsReq| { &mut m.is_mark },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MarkRelicFilterPlanCsReq>(
             "MarkRelicFilterPlanCsReq",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for MarkRelicFilterPlanCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                24 => {
+                    self.is_mark = is.read_bool()?;
+                },
+                90 => {
                     is.read_repeated_packed_uint32_into(&mut self.slot_index_list)?;
                 },
-                104 => {
+                88 => {
                     self.slot_index_list.push(is.read_uint32()?);
                 },
-                24 => {
+                72 => {
                     self.is_batch_op = is.read_bool()?;
-                },
-                88 => {
-                    self.is_mark = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,11 +110,11 @@ impl ::protobuf::Message for MarkRelicFilterPlanCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.slot_index_list);
-        if self.is_batch_op != false {
+        if self.is_mark != false {
             my_size += 1 + 1;
         }
-        if self.is_mark != false {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.slot_index_list);
+        if self.is_batch_op != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -123,12 +123,12 @@ impl ::protobuf::Message for MarkRelicFilterPlanCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(13, &self.slot_index_list)?;
-        if self.is_batch_op != false {
-            os.write_bool(3, self.is_batch_op)?;
-        }
         if self.is_mark != false {
-            os.write_bool(11, self.is_mark)?;
+            os.write_bool(3, self.is_mark)?;
+        }
+        os.write_repeated_packed_uint32(11, &self.slot_index_list)?;
+        if self.is_batch_op != false {
+            os.write_bool(9, self.is_batch_op)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -147,17 +147,17 @@ impl ::protobuf::Message for MarkRelicFilterPlanCsReq {
     }
 
     fn clear(&mut self) {
+        self.is_mark = false;
         self.slot_index_list.clear();
         self.is_batch_op = false;
-        self.is_mark = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MarkRelicFilterPlanCsReq {
         static instance: MarkRelicFilterPlanCsReq = MarkRelicFilterPlanCsReq {
+            is_mark: false,
             slot_index_list: ::std::vec::Vec::new(),
             is_batch_op: false,
-            is_mark: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for MarkRelicFilterPlanCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eMarkRelicFilterPlanCsReq.proto\"{\n\x18MarkRelicFilterPlanCsReq\
-    \x12&\n\x0fslot_index_list\x18\r\x20\x03(\rR\rslotIndexList\x12\x1e\n\
-    \x0bis_batch_op\x18\x03\x20\x01(\x08R\tisBatchOp\x12\x17\n\x07is_mark\
-    \x18\x0b\x20\x01(\x08R\x06isMarkb\x06proto3\
+    \x12\x17\n\x07is_mark\x18\x03\x20\x01(\x08R\x06isMark\x12&\n\x0fslot_ind\
+    ex_list\x18\x0b\x20\x03(\rR\rslotIndexList\x12\x1e\n\x0bis_batch_op\x18\
+    \t\x20\x01(\x08R\tisBatchOpb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

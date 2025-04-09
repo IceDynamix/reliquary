@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetPlayerReturnMultiDropInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetPlayerReturnMultiDropInfoScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:GetPlayerReturnMultiDropInfoScRsp.FCHNNKEKFCL)
     pub FCHNNKEKFCL: ::std::vec::Vec<super::OHDNCHFGFMA::OHDNCHFGFMA>,
+    // @@protoc_insertion_point(field:GetPlayerReturnMultiDropInfoScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:GetPlayerReturnMultiDropInfoScRsp.IKGFOEJPJCF)
     pub IKGFOEJPJCF: ::protobuf::MessageField<super::JBFIPIJJIDL::JBFIPIJJIDL>,
     // special fields
@@ -53,15 +53,15 @@ impl GetPlayerReturnMultiDropInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetPlayerReturnMultiDropInfoScRsp| { &m.retcode },
-            |m: &mut GetPlayerReturnMultiDropInfoScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "FCHNNKEKFCL",
             |m: &GetPlayerReturnMultiDropInfoScRsp| { &m.FCHNNKEKFCL },
             |m: &mut GetPlayerReturnMultiDropInfoScRsp| { &mut m.FCHNNKEKFCL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GetPlayerReturnMultiDropInfoScRsp| { &m.retcode },
+            |m: &mut GetPlayerReturnMultiDropInfoScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JBFIPIJJIDL::JBFIPIJJIDL>(
             "IKGFOEJPJCF",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for GetPlayerReturnMultiDropInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                74 => {
+                90 => {
                     self.FCHNNKEKFCL.push(is.read_message()?);
                 },
-                42 => {
+                48 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.IKGFOEJPJCF)?;
                 },
                 tag => {
@@ -107,13 +107,13 @@ impl ::protobuf::Message for GetPlayerReturnMultiDropInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
-        }
         for value in &self.FCHNNKEKFCL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+        }
         if let Some(v) = self.IKGFOEJPJCF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -124,14 +124,14 @@ impl ::protobuf::Message for GetPlayerReturnMultiDropInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
-        }
         for v in &self.FCHNNKEKFCL {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
+        if self.retcode != 0 {
+            os.write_uint32(6, self.retcode)?;
+        }
         if let Some(v) = self.IKGFOEJPJCF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for GetPlayerReturnMultiDropInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.FCHNNKEKFCL.clear();
+        self.retcode = 0;
         self.IKGFOEJPJCF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetPlayerReturnMultiDropInfoScRsp {
         static instance: GetPlayerReturnMultiDropInfoScRsp = GetPlayerReturnMultiDropInfoScRsp {
-            retcode: 0,
             FCHNNKEKFCL: ::std::vec::Vec::new(),
+            retcode: 0,
             IKGFOEJPJCF: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for GetPlayerReturnMultiDropInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'GetPlayerReturnMultiDropInfoScRsp.proto\x1a\x11JBFIPIJJIDL.proto\x1a\
-    \x11OHDNCHFGFMA.proto\"\x9d\x01\n!GetPlayerReturnMultiDropInfoScRsp\x12\
-    \x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcode\x12.\n\x0bFCHNNKEKFCL\
-    \x18\t\x20\x03(\x0b2\x0c.OHDNCHFGFMAR\x0bFCHNNKEKFCL\x12.\n\x0bIKGFOEJPJ\
-    CF\x18\x05\x20\x01(\x0b2\x0c.JBFIPIJJIDLR\x0bIKGFOEJPJCFb\x06proto3\
+    \x11OHDNCHFGFMA.proto\"\x9d\x01\n!GetPlayerReturnMultiDropInfoScRsp\x12.\
+    \n\x0bFCHNNKEKFCL\x18\x0b\x20\x03(\x0b2\x0c.OHDNCHFGFMAR\x0bFCHNNKEKFCL\
+    \x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\x12.\n\x0bIKGFOEJPJ\
+    CF\x18\x01\x20\x01(\x0b2\x0c.JBFIPIJJIDLR\x0bIKGFOEJPJCFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

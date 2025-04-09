@@ -79,10 +79,10 @@ impl ::protobuf::Message for LNOJKICCCME {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                42 => {
                     self.DDCJBFLOAME = is.read_bytes()?;
                 },
-                120 => {
+                48 => {
                     self.MBANKGMDFMJ = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for LNOJKICCCME {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.DDCJBFLOAME.is_empty() {
-            my_size += ::protobuf::rt::bytes_size(11, &self.DDCJBFLOAME);
+            my_size += ::protobuf::rt::bytes_size(5, &self.DDCJBFLOAME);
         }
         if self.MBANKGMDFMJ != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for LNOJKICCCME {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.DDCJBFLOAME.is_empty() {
-            os.write_bytes(11, &self.DDCJBFLOAME)?;
+            os.write_bytes(5, &self.DDCJBFLOAME)?;
         }
         if self.MBANKGMDFMJ != false {
-            os.write_bool(15, self.MBANKGMDFMJ)?;
+            os.write_bool(6, self.MBANKGMDFMJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for LNOJKICCCME {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LNOJKICCCME.proto\"Q\n\x0bLNOJKICCCME\x12\x20\n\x0bDDCJBFLOAME\x18\
-    \x0b\x20\x01(\x0cR\x0bDDCJBFLOAME\x12\x20\n\x0bMBANKGMDFMJ\x18\x0f\x20\
+    \x05\x20\x01(\x0cR\x0bDDCJBFLOAME\x12\x20\n\x0bMBANKGMDFMJ\x18\x06\x20\
     \x01(\x08R\x0bMBANKGMDFMJb\x06proto3\
 ";
 

@@ -86,10 +86,10 @@ impl ::protobuf::Message for GetQuestDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                96 => {
                     self.HKIKCAABHPB = is.read_uint32()?;
                 },
-                48 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
                 90 => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for GetQuestDataScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HKIKCAABHPB != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.HKIKCAABHPB);
+            my_size += ::protobuf::rt::uint32_size(12, self.HKIKCAABHPB);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         for value in &self.PPAKDPOOANI {
             let len = value.compute_size();
@@ -124,10 +124,10 @@ impl ::protobuf::Message for GetQuestDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HKIKCAABHPB != 0 {
-            os.write_uint32(4, self.HKIKCAABHPB)?;
+            os.write_uint32(12, self.HKIKCAABHPB)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
         for v in &self.PPAKDPOOANI {
             ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
@@ -185,8 +185,8 @@ impl ::protobuf::reflect::ProtobufValue for GetQuestDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17GetQuestDataScRsp.proto\x1a\x11FPPAMPPIHMN.proto\"\x7f\n\x11GetQue\
-    stDataScRsp\x12\x20\n\x0bHKIKCAABHPB\x18\x04\x20\x01(\rR\x0bHKIKCAABHPB\
-    \x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\x12.\n\x0bPPAKDPOOA\
+    stDataScRsp\x12\x20\n\x0bHKIKCAABHPB\x18\x0c\x20\x01(\rR\x0bHKIKCAABHPB\
+    \x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12.\n\x0bPPAKDPOOA\
     NI\x18\x0b\x20\x03(\x0b2\x0c.FPPAMPPIHMNR\x0bPPAKDPOOANIb\x06proto3\
 ";
 

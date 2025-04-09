@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct QuitLineupScRsp {
     // message fields
-    // @@protoc_insertion_point(field:QuitLineupScRsp.base_avatar_id)
-    pub base_avatar_id: u32,
-    // @@protoc_insertion_point(field:QuitLineupScRsp.HCDNLLHBBOK)
-    pub HCDNLLHBBOK: bool,
     // @@protoc_insertion_point(field:QuitLineupScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:QuitLineupScRsp.PDONLOOBBCI)
     pub PDONLOOBBCI: u32,
+    // @@protoc_insertion_point(field:QuitLineupScRsp.HCDNLLHBBOK)
+    pub HCDNLLHBBOK: bool,
+    // @@protoc_insertion_point(field:QuitLineupScRsp.base_avatar_id)
+    pub base_avatar_id: u32,
     // @@protoc_insertion_point(field:QuitLineupScRsp.HIOFPDKDOFD)
     pub HIOFPDKDOFD: bool,
     // special fields
@@ -58,16 +58,6 @@ impl QuitLineupScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "base_avatar_id",
-            |m: &QuitLineupScRsp| { &m.base_avatar_id },
-            |m: &mut QuitLineupScRsp| { &mut m.base_avatar_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HCDNLLHBBOK",
-            |m: &QuitLineupScRsp| { &m.HCDNLLHBBOK },
-            |m: &mut QuitLineupScRsp| { &mut m.HCDNLLHBBOK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &QuitLineupScRsp| { &m.retcode },
             |m: &mut QuitLineupScRsp| { &mut m.retcode },
@@ -76,6 +66,16 @@ impl QuitLineupScRsp {
             "PDONLOOBBCI",
             |m: &QuitLineupScRsp| { &m.PDONLOOBBCI },
             |m: &mut QuitLineupScRsp| { &mut m.PDONLOOBBCI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HCDNLLHBBOK",
+            |m: &QuitLineupScRsp| { &m.HCDNLLHBBOK },
+            |m: &mut QuitLineupScRsp| { &mut m.HCDNLLHBBOK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "base_avatar_id",
+            |m: &QuitLineupScRsp| { &m.base_avatar_id },
+            |m: &mut QuitLineupScRsp| { &mut m.base_avatar_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HIOFPDKDOFD",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for QuitLineupScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                104 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                48 => {
+                    self.PDONLOOBBCI = is.read_uint32()?;
+                },
+                112 => {
+                    self.HCDNLLHBBOK = is.read_bool()?;
+                },
                 40 => {
                     self.base_avatar_id = is.read_uint32()?;
                 },
-                48 => {
-                    self.HCDNLLHBBOK = is.read_bool()?;
-                },
-                96 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                112 => {
-                    self.PDONLOOBBCI = is.read_uint32()?;
-                },
-                72 => {
+                16 => {
                     self.HIOFPDKDOFD = is.read_bool()?;
                 },
                 tag => {
@@ -127,17 +127,17 @@ impl ::protobuf::Message for QuitLineupScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.base_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.base_avatar_id);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+        }
+        if self.PDONLOOBBCI != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.PDONLOOBBCI);
         }
         if self.HCDNLLHBBOK != false {
             my_size += 1 + 1;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
-        }
-        if self.PDONLOOBBCI != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.PDONLOOBBCI);
+        if self.base_avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.base_avatar_id);
         }
         if self.HIOFPDKDOFD != false {
             my_size += 1 + 1;
@@ -148,20 +148,20 @@ impl ::protobuf::Message for QuitLineupScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.retcode != 0 {
+            os.write_uint32(13, self.retcode)?;
+        }
+        if self.PDONLOOBBCI != 0 {
+            os.write_uint32(6, self.PDONLOOBBCI)?;
+        }
+        if self.HCDNLLHBBOK != false {
+            os.write_bool(14, self.HCDNLLHBBOK)?;
+        }
         if self.base_avatar_id != 0 {
             os.write_uint32(5, self.base_avatar_id)?;
         }
-        if self.HCDNLLHBBOK != false {
-            os.write_bool(6, self.HCDNLLHBBOK)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
-        }
-        if self.PDONLOOBBCI != 0 {
-            os.write_uint32(14, self.PDONLOOBBCI)?;
-        }
         if self.HIOFPDKDOFD != false {
-            os.write_bool(9, self.HIOFPDKDOFD)?;
+            os.write_bool(2, self.HIOFPDKDOFD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,20 +180,20 @@ impl ::protobuf::Message for QuitLineupScRsp {
     }
 
     fn clear(&mut self) {
-        self.base_avatar_id = 0;
-        self.HCDNLLHBBOK = false;
         self.retcode = 0;
         self.PDONLOOBBCI = 0;
+        self.HCDNLLHBBOK = false;
+        self.base_avatar_id = 0;
         self.HIOFPDKDOFD = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static QuitLineupScRsp {
         static instance: QuitLineupScRsp = QuitLineupScRsp {
-            base_avatar_id: 0,
-            HCDNLLHBBOK: false,
             retcode: 0,
             PDONLOOBBCI: 0,
+            HCDNLLHBBOK: false,
+            base_avatar_id: 0,
             HIOFPDKDOFD: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -219,12 +219,12 @@ impl ::protobuf::reflect::ProtobufValue for QuitLineupScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15QuitLineupScRsp.proto\"\xb7\x01\n\x0fQuitLineupScRsp\x12$\n\x0ebas\
-    e_avatar_id\x18\x05\x20\x01(\rR\x0cbaseAvatarId\x12\x20\n\x0bHCDNLLHBBOK\
-    \x18\x06\x20\x01(\x08R\x0bHCDNLLHBBOK\x12\x18\n\x07retcode\x18\x0c\x20\
-    \x01(\rR\x07retcode\x12\x20\n\x0bPDONLOOBBCI\x18\x0e\x20\x01(\rR\x0bPDON\
-    LOOBBCI\x12\x20\n\x0bHIOFPDKDOFD\x18\t\x20\x01(\x08R\x0bHIOFPDKDOFDb\x06\
-    proto3\
+    \n\x15QuitLineupScRsp.proto\"\xb7\x01\n\x0fQuitLineupScRsp\x12\x18\n\x07\
+    retcode\x18\r\x20\x01(\rR\x07retcode\x12\x20\n\x0bPDONLOOBBCI\x18\x06\
+    \x20\x01(\rR\x0bPDONLOOBBCI\x12\x20\n\x0bHCDNLLHBBOK\x18\x0e\x20\x01(\
+    \x08R\x0bHCDNLLHBBOK\x12$\n\x0ebase_avatar_id\x18\x05\x20\x01(\rR\x0cbas\
+    eAvatarId\x12\x20\n\x0bHIOFPDKDOFD\x18\x02\x20\x01(\x08R\x0bHIOFPDKDOFDb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,7 +79,7 @@ impl ::protobuf::Message for LMMEBMBGLDN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                64 => {
                     self.HKMIHEJCAEM = is.read_uint32()?;
                 },
                 16 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for LMMEBMBGLDN {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HKMIHEJCAEM != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.HKMIHEJCAEM);
+            my_size += ::protobuf::rt::uint32_size(8, self.HKMIHEJCAEM);
         }
         if self.BLHDOHMACBM != false {
             my_size += 1 + 1;
@@ -110,7 +110,7 @@ impl ::protobuf::Message for LMMEBMBGLDN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HKMIHEJCAEM != 0 {
-            os.write_uint32(6, self.HKMIHEJCAEM)?;
+            os.write_uint32(8, self.HKMIHEJCAEM)?;
         }
         if self.BLHDOHMACBM != false {
             os.write_bool(2, self.BLHDOHMACBM)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for LMMEBMBGLDN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LMMEBMBGLDN.proto\"Q\n\x0bLMMEBMBGLDN\x12\x20\n\x0bHKMIHEJCAEM\x18\
-    \x06\x20\x01(\rR\x0bHKMIHEJCAEM\x12\x20\n\x0bBLHDOHMACBM\x18\x02\x20\x01\
+    \x08\x20\x01(\rR\x0bHKMIHEJCAEM\x12\x20\n\x0bBLHDOHMACBM\x18\x02\x20\x01\
     (\x08R\x0bBLHDOHMACBMb\x06proto3\
 ";
 

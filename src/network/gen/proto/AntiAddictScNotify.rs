@@ -30,10 +30,10 @@ pub struct AntiAddictScNotify {
     // message fields
     // @@protoc_insertion_point(field:AntiAddictScNotify.level)
     pub level: ::std::string::String,
-    // @@protoc_insertion_point(field:AntiAddictScNotify.msg_type)
-    pub msg_type: u32,
     // @@protoc_insertion_point(field:AntiAddictScNotify.msg)
     pub msg: ::std::string::String,
+    // @@protoc_insertion_point(field:AntiAddictScNotify.msg_type)
+    pub msg_type: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AntiAddictScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl AntiAddictScNotify {
             |m: &mut AntiAddictScNotify| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "msg_type",
-            |m: &AntiAddictScNotify| { &m.msg_type },
-            |m: &mut AntiAddictScNotify| { &mut m.msg_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "msg",
             |m: &AntiAddictScNotify| { &m.msg },
             |m: &mut AntiAddictScNotify| { &mut m.msg },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "msg_type",
+            |m: &AntiAddictScNotify| { &m.msg_type },
+            |m: &mut AntiAddictScNotify| { &mut m.msg_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AntiAddictScNotify>(
             "AntiAddictScNotify",
@@ -89,11 +89,11 @@ impl ::protobuf::Message for AntiAddictScNotify {
                 42 => {
                     self.level = is.read_string()?;
                 },
-                112 => {
-                    self.msg_type = is.read_uint32()?;
-                },
-                18 => {
+                74 => {
                     self.msg = is.read_string()?;
+                },
+                120 => {
+                    self.msg_type = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,11 +110,11 @@ impl ::protobuf::Message for AntiAddictScNotify {
         if !self.level.is_empty() {
             my_size += ::protobuf::rt::string_size(5, &self.level);
         }
-        if self.msg_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.msg_type);
-        }
         if !self.msg.is_empty() {
-            my_size += ::protobuf::rt::string_size(2, &self.msg);
+            my_size += ::protobuf::rt::string_size(9, &self.msg);
+        }
+        if self.msg_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.msg_type);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,11 +125,11 @@ impl ::protobuf::Message for AntiAddictScNotify {
         if !self.level.is_empty() {
             os.write_string(5, &self.level)?;
         }
-        if self.msg_type != 0 {
-            os.write_uint32(14, self.msg_type)?;
-        }
         if !self.msg.is_empty() {
-            os.write_string(2, &self.msg)?;
+            os.write_string(9, &self.msg)?;
+        }
+        if self.msg_type != 0 {
+            os.write_uint32(15, self.msg_type)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for AntiAddictScNotify {
 
     fn clear(&mut self) {
         self.level.clear();
-        self.msg_type = 0;
         self.msg.clear();
+        self.msg_type = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AntiAddictScNotify {
         static instance: AntiAddictScNotify = AntiAddictScNotify {
             level: ::std::string::String::new(),
-            msg_type: 0,
             msg: ::std::string::String::new(),
+            msg_type: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for AntiAddictScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18AntiAddictScNotify.proto\"W\n\x12AntiAddictScNotify\x12\x14\n\x05l\
-    evel\x18\x05\x20\x01(\tR\x05level\x12\x19\n\x08msg_type\x18\x0e\x20\x01(\
-    \rR\x07msgType\x12\x10\n\x03msg\x18\x02\x20\x01(\tR\x03msgb\x06proto3\
+    evel\x18\x05\x20\x01(\tR\x05level\x12\x10\n\x03msg\x18\t\x20\x01(\tR\x03\
+    msg\x12\x19\n\x08msg_type\x18\x0f\x20\x01(\rR\x07msgTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

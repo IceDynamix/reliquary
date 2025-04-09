@@ -28,12 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DiscardRelicCsReq {
     // message fields
-    // @@protoc_insertion_point(field:DiscardRelicCsReq.KGEFHOECMMN)
-    pub KGEFHOECMMN: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:DiscardRelicCsReq.IEMNPGOMJCO)
-    pub IEMNPGOMJCO: bool,
     // @@protoc_insertion_point(field:DiscardRelicCsReq.JNKHGFILJPB)
     pub JNKHGFILJPB: bool,
+    // @@protoc_insertion_point(field:DiscardRelicCsReq.NLPCONNJONF)
+    pub NLPCONNJONF: ::protobuf::EnumOrUnknown<super::RelicDiscardType::RelicDiscardType>,
+    // @@protoc_insertion_point(field:DiscardRelicCsReq.HNHFDMDIBIO)
+    pub HNHFDMDIBIO: u64,
+    // @@protoc_insertion_point(field:DiscardRelicCsReq.KGEFHOECMMN)
+    pub KGEFHOECMMN: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:DiscardRelicCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,22 +53,27 @@ impl DiscardRelicCsReq {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KGEFHOECMMN",
-            |m: &DiscardRelicCsReq| { &m.KGEFHOECMMN },
-            |m: &mut DiscardRelicCsReq| { &mut m.KGEFHOECMMN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IEMNPGOMJCO",
-            |m: &DiscardRelicCsReq| { &m.IEMNPGOMJCO },
-            |m: &mut DiscardRelicCsReq| { &mut m.IEMNPGOMJCO },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JNKHGFILJPB",
             |m: &DiscardRelicCsReq| { &m.JNKHGFILJPB },
             |m: &mut DiscardRelicCsReq| { &mut m.JNKHGFILJPB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NLPCONNJONF",
+            |m: &DiscardRelicCsReq| { &m.NLPCONNJONF },
+            |m: &mut DiscardRelicCsReq| { &mut m.NLPCONNJONF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HNHFDMDIBIO",
+            |m: &DiscardRelicCsReq| { &m.HNHFDMDIBIO },
+            |m: &mut DiscardRelicCsReq| { &mut m.HNHFDMDIBIO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "KGEFHOECMMN",
+            |m: &DiscardRelicCsReq| { &m.KGEFHOECMMN },
+            |m: &mut DiscardRelicCsReq| { &mut m.KGEFHOECMMN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DiscardRelicCsReq>(
             "DiscardRelicCsReq",
@@ -86,17 +93,20 @@ impl ::protobuf::Message for DiscardRelicCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.KGEFHOECMMN)?;
-                },
-                48 => {
-                    self.KGEFHOECMMN.push(is.read_uint32()?);
-                },
-                120 => {
-                    self.IEMNPGOMJCO = is.read_bool()?;
+                104 => {
+                    self.JNKHGFILJPB = is.read_bool()?;
                 },
                 96 => {
-                    self.JNKHGFILJPB = is.read_bool()?;
+                    self.NLPCONNJONF = is.read_enum_or_unknown()?;
+                },
+                24 => {
+                    self.HNHFDMDIBIO = is.read_uint64()?;
+                },
+                74 => {
+                    is.read_repeated_packed_uint32_into(&mut self.KGEFHOECMMN)?;
+                },
+                72 => {
+                    self.KGEFHOECMMN.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,26 +120,32 @@ impl ::protobuf::Message for DiscardRelicCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.KGEFHOECMMN);
-        if self.IEMNPGOMJCO != false {
-            my_size += 1 + 1;
-        }
         if self.JNKHGFILJPB != false {
             my_size += 1 + 1;
         }
+        if self.NLPCONNJONF != ::protobuf::EnumOrUnknown::new(super::RelicDiscardType::RelicDiscardType::RELIC_DISCARD_TYPE_SINGLE) {
+            my_size += ::protobuf::rt::int32_size(12, self.NLPCONNJONF.value());
+        }
+        if self.HNHFDMDIBIO != 0 {
+            my_size += ::protobuf::rt::uint64_size(3, self.HNHFDMDIBIO);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.KGEFHOECMMN);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(6, &self.KGEFHOECMMN)?;
-        if self.IEMNPGOMJCO != false {
-            os.write_bool(15, self.IEMNPGOMJCO)?;
-        }
         if self.JNKHGFILJPB != false {
-            os.write_bool(12, self.JNKHGFILJPB)?;
+            os.write_bool(13, self.JNKHGFILJPB)?;
         }
+        if self.NLPCONNJONF != ::protobuf::EnumOrUnknown::new(super::RelicDiscardType::RelicDiscardType::RELIC_DISCARD_TYPE_SINGLE) {
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.NLPCONNJONF))?;
+        }
+        if self.HNHFDMDIBIO != 0 {
+            os.write_uint64(3, self.HNHFDMDIBIO)?;
+        }
+        os.write_repeated_packed_uint32(9, &self.KGEFHOECMMN)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,17 +163,19 @@ impl ::protobuf::Message for DiscardRelicCsReq {
     }
 
     fn clear(&mut self) {
-        self.KGEFHOECMMN.clear();
-        self.IEMNPGOMJCO = false;
         self.JNKHGFILJPB = false;
+        self.NLPCONNJONF = ::protobuf::EnumOrUnknown::new(super::RelicDiscardType::RelicDiscardType::RELIC_DISCARD_TYPE_SINGLE);
+        self.HNHFDMDIBIO = 0;
+        self.KGEFHOECMMN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DiscardRelicCsReq {
         static instance: DiscardRelicCsReq = DiscardRelicCsReq {
-            KGEFHOECMMN: ::std::vec::Vec::new(),
-            IEMNPGOMJCO: false,
             JNKHGFILJPB: false,
+            NLPCONNJONF: ::protobuf::EnumOrUnknown::from_i32(0),
+            HNHFDMDIBIO: 0,
+            KGEFHOECMMN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -182,10 +200,12 @@ impl ::protobuf::reflect::ProtobufValue for DiscardRelicCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17DiscardRelicCsReq.proto\"y\n\x11DiscardRelicCsReq\x12\x20\n\x0bKGE\
-    FHOECMMN\x18\x06\x20\x03(\rR\x0bKGEFHOECMMN\x12\x20\n\x0bIEMNPGOMJCO\x18\
-    \x0f\x20\x01(\x08R\x0bIEMNPGOMJCO\x12\x20\n\x0bJNKHGFILJPB\x18\x0c\x20\
-    \x01(\x08R\x0bJNKHGFILJPBb\x06proto3\
+    \n\x17DiscardRelicCsReq.proto\x1a\x16RelicDiscardType.proto\"\xae\x01\n\
+    \x11DiscardRelicCsReq\x12\x20\n\x0bJNKHGFILJPB\x18\r\x20\x01(\x08R\x0bJN\
+    KHGFILJPB\x123\n\x0bNLPCONNJONF\x18\x0c\x20\x01(\x0e2\x11.RelicDiscardTy\
+    peR\x0bNLPCONNJONF\x12\x20\n\x0bHNHFDMDIBIO\x18\x03\x20\x01(\x04R\x0bHNH\
+    FDMDIBIO\x12\x20\n\x0bKGEFHOECMMN\x18\t\x20\x03(\rR\x0bKGEFHOECMMNb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -202,7 +222,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(0);
+            let mut deps = ::std::vec::Vec::with_capacity(1);
+            deps.push(super::RelicDiscardType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(DiscardRelicCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

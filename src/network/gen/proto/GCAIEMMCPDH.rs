@@ -79,13 +79,13 @@ impl ::protobuf::Message for GCAIEMMCPDH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                82 => {
                     self.avatar_list.push(is.read_message()?);
                 },
-                90 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.PKFEOCAGECF)?;
                 },
-                88 => {
+                64 => {
                     self.PKFEOCAGECF.push(is.read_uint32()?);
                 },
                 tag => {
@@ -104,7 +104,7 @@ impl ::protobuf::Message for GCAIEMMCPDH {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.PKFEOCAGECF);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.PKFEOCAGECF);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -112,9 +112,9 @@ impl ::protobuf::Message for GCAIEMMCPDH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
-        os.write_repeated_packed_uint32(11, &self.PKFEOCAGECF)?;
+        os.write_repeated_packed_uint32(8, &self.PKFEOCAGECF)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for GCAIEMMCPDH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GCAIEMMCPDH.proto\x1a\x11KJMFEOCKCML.proto\"^\n\x0bGCAIEMMCPDH\x12\
-    -\n\x0bavatar_list\x18\x0f\x20\x03(\x0b2\x0c.KJMFEOCKCMLR\navatarList\
-    \x12\x20\n\x0bPKFEOCAGECF\x18\x0b\x20\x03(\rR\x0bPKFEOCAGECFb\x06proto3\
+    -\n\x0bavatar_list\x18\n\x20\x03(\x0b2\x0c.KJMFEOCKCMLR\navatarList\x12\
+    \x20\n\x0bPKFEOCAGECF\x18\x08\x20\x03(\rR\x0bPKFEOCAGECFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

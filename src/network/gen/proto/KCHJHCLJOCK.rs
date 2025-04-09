@@ -100,19 +100,19 @@ impl ::protobuf::Message for KCHJHCLJOCK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                120 => {
                     self.CLFGFABOIOP = is.read_enum_or_unknown()?;
                 },
-                122 => {
+                66 => {
                     self.HJBPKCFKHLI.push(is.read_message()?);
                 },
-                32 => {
+                112 => {
                     self.DIPHGGHFMCP = is.read_uint32()?;
                 },
-                112 => {
+                56 => {
                     self.CPODEJOFPDD = is.read_uint32()?;
                 },
-                96 => {
+                104 => {
                     self.EMBKICMEFCO = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -128,20 +128,20 @@ impl ::protobuf::Message for KCHJHCLJOCK {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CLFGFABOIOP != ::protobuf::EnumOrUnknown::new(super::HGKKPPLJBOI::HGKKPPLJBOI::PAGE_NONE) {
-            my_size += ::protobuf::rt::int32_size(2, self.CLFGFABOIOP.value());
+            my_size += ::protobuf::rt::int32_size(15, self.CLFGFABOIOP.value());
         }
         for value in &self.HJBPKCFKHLI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.DIPHGGHFMCP != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.DIPHGGHFMCP);
+            my_size += ::protobuf::rt::uint32_size(14, self.DIPHGGHFMCP);
         }
         if self.CPODEJOFPDD != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.CPODEJOFPDD);
+            my_size += ::protobuf::rt::uint32_size(7, self.CPODEJOFPDD);
         }
         if self.EMBKICMEFCO != ::protobuf::EnumOrUnknown::new(super::DCJAOPDINOI::DCJAOPDINOI::PAGE_DESC_NONE) {
-            my_size += ::protobuf::rt::int32_size(12, self.EMBKICMEFCO.value());
+            my_size += ::protobuf::rt::int32_size(13, self.EMBKICMEFCO.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,19 +150,19 @@ impl ::protobuf::Message for KCHJHCLJOCK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CLFGFABOIOP != ::protobuf::EnumOrUnknown::new(super::HGKKPPLJBOI::HGKKPPLJBOI::PAGE_NONE) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.CLFGFABOIOP))?;
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.CLFGFABOIOP))?;
         }
         for v in &self.HJBPKCFKHLI {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         if self.DIPHGGHFMCP != 0 {
-            os.write_uint32(4, self.DIPHGGHFMCP)?;
+            os.write_uint32(14, self.DIPHGGHFMCP)?;
         }
         if self.CPODEJOFPDD != 0 {
-            os.write_uint32(14, self.CPODEJOFPDD)?;
+            os.write_uint32(7, self.CPODEJOFPDD)?;
         }
         if self.EMBKICMEFCO != ::protobuf::EnumOrUnknown::new(super::DCJAOPDINOI::DCJAOPDINOI::PAGE_DESC_NONE) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.EMBKICMEFCO))?;
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.EMBKICMEFCO))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -222,10 +222,10 @@ impl ::protobuf::reflect::ProtobufValue for KCHJHCLJOCK {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KCHJHCLJOCK.proto\x1a\x11DCJAOPDINOI.proto\x1a\x11HGKKPPLJBOI.prot\
     o\x1a\x11NHBDDINFKOH.proto\"\xe1\x01\n\x0bKCHJHCLJOCK\x12.\n\x0bCLFGFABO\
-    IOP\x18\x02\x20\x01(\x0e2\x0c.HGKKPPLJBOIR\x0bCLFGFABOIOP\x12.\n\x0bHJBP\
-    KCFKHLI\x18\x0f\x20\x03(\x0b2\x0c.NHBDDINFKOHR\x0bHJBPKCFKHLI\x12\x20\n\
-    \x0bDIPHGGHFMCP\x18\x04\x20\x01(\rR\x0bDIPHGGHFMCP\x12\x20\n\x0bCPODEJOF\
-    PDD\x18\x0e\x20\x01(\rR\x0bCPODEJOFPDD\x12.\n\x0bEMBKICMEFCO\x18\x0c\x20\
+    IOP\x18\x0f\x20\x01(\x0e2\x0c.HGKKPPLJBOIR\x0bCLFGFABOIOP\x12.\n\x0bHJBP\
+    KCFKHLI\x18\x08\x20\x03(\x0b2\x0c.NHBDDINFKOHR\x0bHJBPKCFKHLI\x12\x20\n\
+    \x0bDIPHGGHFMCP\x18\x0e\x20\x01(\rR\x0bDIPHGGHFMCP\x12\x20\n\x0bCPODEJOF\
+    PDD\x18\x07\x20\x01(\rR\x0bCPODEJOFPDD\x12.\n\x0bEMBKICMEFCO\x18\r\x20\
     \x01(\x0e2\x0c.DCJAOPDINOIR\x0bEMBKICMEFCOb\x06proto3\
 ";
 

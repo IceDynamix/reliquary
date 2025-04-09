@@ -72,7 +72,7 @@ impl ::protobuf::Message for ChallengeLineupNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                32 => {
                     self.NJDMFPFKKIH = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for ChallengeLineupNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.NJDMFPFKKIH != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            my_size += ::protobuf::rt::int32_size(11, self.NJDMFPFKKIH.value());
+            my_size += ::protobuf::rt::int32_size(4, self.NJDMFPFKKIH.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for ChallengeLineupNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.NJDMFPFKKIH != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.NJDMFPFKKIH))?;
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.NJDMFPFKKIH))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeLineupNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bChallengeLineupNotify.proto\x1a\x15ExtraLineupType.proto\"K\n\x15C\
-    hallengeLineupNotify\x122\n\x0bNJDMFPFKKIH\x18\x0b\x20\x01(\x0e2\x10.Ext\
+    hallengeLineupNotify\x122\n\x0bNJDMFPFKKIH\x18\x04\x20\x01(\x0e2\x10.Ext\
     raLineupTypeR\x0bNJDMFPFKKIHb\x06proto3\
 ";
 

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AJMIBFECFLJ {
     // message fields
-    // @@protoc_insertion_point(field:AJMIBFECFLJ.HAKLFFPFOKE)
-    pub HAKLFFPFOKE: u32,
     // @@protoc_insertion_point(field:AJMIBFECFLJ.CBOGMIHHMOP)
     pub CBOGMIHHMOP: u32,
     // @@protoc_insertion_point(field:AJMIBFECFLJ.HCPACBHCMHN)
     pub HCPACBHCMHN: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:AJMIBFECFLJ.HAKLFFPFOKE)
+    pub HAKLFFPFOKE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AJMIBFECFLJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl AJMIBFECFLJ {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HAKLFFPFOKE",
-            |m: &AJMIBFECFLJ| { &m.HAKLFFPFOKE },
-            |m: &mut AJMIBFECFLJ| { &mut m.HAKLFFPFOKE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CBOGMIHHMOP",
             |m: &AJMIBFECFLJ| { &m.CBOGMIHHMOP },
             |m: &mut AJMIBFECFLJ| { &mut m.CBOGMIHHMOP },
@@ -67,6 +62,11 @@ impl AJMIBFECFLJ {
             "HCPACBHCMHN",
             |m: &AJMIBFECFLJ| { &m.HCPACBHCMHN },
             |m: &mut AJMIBFECFLJ| { &mut m.HCPACBHCMHN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HAKLFFPFOKE",
+            |m: &AJMIBFECFLJ| { &m.HAKLFFPFOKE },
+            |m: &mut AJMIBFECFLJ| { &mut m.HAKLFFPFOKE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AJMIBFECFLJ>(
             "AJMIBFECFLJ",
@@ -86,13 +86,10 @@ impl ::protobuf::Message for AJMIBFECFLJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.HAKLFFPFOKE = is.read_uint32()?;
-                },
-                40 => {
+                8 => {
                     self.CBOGMIHHMOP = is.read_uint32()?;
                 },
-                106 => {
+                122 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -107,6 +104,9 @@ impl ::protobuf::Message for AJMIBFECFLJ {
                     is.pop_limit(old_limit);
                     self.HCPACBHCMHN.insert(key, value);
                 },
+                48 => {
+                    self.HAKLFFPFOKE = is.read_uint32()?;
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -119,11 +119,8 @@ impl ::protobuf::Message for AJMIBFECFLJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HAKLFFPFOKE != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.HAKLFFPFOKE);
-        }
         if self.CBOGMIHHMOP != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.CBOGMIHHMOP);
+            my_size += ::protobuf::rt::uint32_size(1, self.CBOGMIHHMOP);
         }
         for (k, v) in &self.HCPACBHCMHN {
             let mut entry_size = 0;
@@ -131,27 +128,30 @@ impl ::protobuf::Message for AJMIBFECFLJ {
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
+        if self.HAKLFFPFOKE != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.HAKLFFPFOKE);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HAKLFFPFOKE != 0 {
-            os.write_uint32(15, self.HAKLFFPFOKE)?;
-        }
         if self.CBOGMIHHMOP != 0 {
-            os.write_uint32(5, self.CBOGMIHHMOP)?;
+            os.write_uint32(1, self.CBOGMIHHMOP)?;
         }
         for (k, v) in &self.HCPACBHCMHN {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(106)?; // Tag.
+            os.write_raw_varint32(122)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
+        if self.HAKLFFPFOKE != 0 {
+            os.write_uint32(6, self.HAKLFFPFOKE)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -169,9 +169,9 @@ impl ::protobuf::Message for AJMIBFECFLJ {
     }
 
     fn clear(&mut self) {
-        self.HAKLFFPFOKE = 0;
         self.CBOGMIHHMOP = 0;
         self.HCPACBHCMHN.clear();
+        self.HAKLFFPFOKE = 0;
         self.special_fields.clear();
     }
 
@@ -199,11 +199,11 @@ impl ::protobuf::reflect::ProtobufValue for AJMIBFECFLJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AJMIBFECFLJ.proto\"\xd2\x01\n\x0bAJMIBFECFLJ\x12\x20\n\x0bHAKLFFPF\
-    OKE\x18\x0f\x20\x01(\rR\x0bHAKLFFPFOKE\x12\x20\n\x0bCBOGMIHHMOP\x18\x05\
-    \x20\x01(\rR\x0bCBOGMIHHMOP\x12?\n\x0bHCPACBHCMHN\x18\r\x20\x03(\x0b2\
-    \x1d.AJMIBFECFLJ.HCPACBHCMHNEntryR\x0bHCPACBHCMHN\x1a>\n\x10HCPACBHCMHNE\
-    ntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\
+    \n\x11AJMIBFECFLJ.proto\"\xd2\x01\n\x0bAJMIBFECFLJ\x12\x20\n\x0bCBOGMIHH\
+    MOP\x18\x01\x20\x01(\rR\x0bCBOGMIHHMOP\x12?\n\x0bHCPACBHCMHN\x18\x0f\x20\
+    \x03(\x0b2\x1d.AJMIBFECFLJ.HCPACBHCMHNEntryR\x0bHCPACBHCMHN\x12\x20\n\
+    \x0bHAKLFFPFOKE\x18\x06\x20\x01(\rR\x0bHAKLFFPFOKE\x1a>\n\x10HCPACBHCMHN\
+    Entry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\
     \x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
 ";
 

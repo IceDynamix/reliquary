@@ -30,20 +30,20 @@ pub struct ICALLNOLJOI {
     // message fields
     // @@protoc_insertion_point(field:ICALLNOLJOI.FEPKAMAILMK)
     pub FEPKAMAILMK: u32,
+    // @@protoc_insertion_point(field:ICALLNOLJOI.CFAAFJJAADP)
+    pub CFAAFJJAADP: u32,
+    // @@protoc_insertion_point(field:ICALLNOLJOI.CHKAPOABFLN)
+    pub CHKAPOABFLN: u32,
+    // @@protoc_insertion_point(field:ICALLNOLJOI.KFDAICILNMB)
+    pub KFDAICILNMB: bool,
+    // @@protoc_insertion_point(field:ICALLNOLJOI.MIFOLPKEOOO)
+    pub MIFOLPKEOOO: ::protobuf::MessageField<super::PGKDOAEPBEC::PGKDOAEPBEC>,
     // @@protoc_insertion_point(field:ICALLNOLJOI.BLOEFNLOLLJ)
     pub BLOEFNLOLLJ: u32,
     // @@protoc_insertion_point(field:ICALLNOLJOI.PIMBLBKEECJ)
     pub PIMBLBKEECJ: u32,
-    // @@protoc_insertion_point(field:ICALLNOLJOI.KFDAICILNMB)
-    pub KFDAICILNMB: bool,
     // @@protoc_insertion_point(field:ICALLNOLJOI.DNPHCJEBIKB)
     pub DNPHCJEBIKB: u32,
-    // @@protoc_insertion_point(field:ICALLNOLJOI.CHKAPOABFLN)
-    pub CHKAPOABFLN: u32,
-    // @@protoc_insertion_point(field:ICALLNOLJOI.CFAAFJJAADP)
-    pub CFAAFJJAADP: u32,
-    // @@protoc_insertion_point(field:ICALLNOLJOI.MIFOLPKEOOO)
-    pub MIFOLPKEOOO: ::protobuf::MessageField<super::PGKDOAEPBEC::PGKDOAEPBEC>,
     // special fields
     // @@protoc_insertion_point(special_field:ICALLNOLJOI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -69,6 +69,26 @@ impl ICALLNOLJOI {
             |m: &mut ICALLNOLJOI| { &mut m.FEPKAMAILMK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CFAAFJJAADP",
+            |m: &ICALLNOLJOI| { &m.CFAAFJJAADP },
+            |m: &mut ICALLNOLJOI| { &mut m.CFAAFJJAADP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CHKAPOABFLN",
+            |m: &ICALLNOLJOI| { &m.CHKAPOABFLN },
+            |m: &mut ICALLNOLJOI| { &mut m.CHKAPOABFLN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KFDAICILNMB",
+            |m: &ICALLNOLJOI| { &m.KFDAICILNMB },
+            |m: &mut ICALLNOLJOI| { &mut m.KFDAICILNMB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PGKDOAEPBEC::PGKDOAEPBEC>(
+            "MIFOLPKEOOO",
+            |m: &ICALLNOLJOI| { &m.MIFOLPKEOOO },
+            |m: &mut ICALLNOLJOI| { &mut m.MIFOLPKEOOO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BLOEFNLOLLJ",
             |m: &ICALLNOLJOI| { &m.BLOEFNLOLLJ },
             |m: &mut ICALLNOLJOI| { &mut m.BLOEFNLOLLJ },
@@ -79,29 +99,9 @@ impl ICALLNOLJOI {
             |m: &mut ICALLNOLJOI| { &mut m.PIMBLBKEECJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KFDAICILNMB",
-            |m: &ICALLNOLJOI| { &m.KFDAICILNMB },
-            |m: &mut ICALLNOLJOI| { &mut m.KFDAICILNMB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DNPHCJEBIKB",
             |m: &ICALLNOLJOI| { &m.DNPHCJEBIKB },
             |m: &mut ICALLNOLJOI| { &mut m.DNPHCJEBIKB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CHKAPOABFLN",
-            |m: &ICALLNOLJOI| { &m.CHKAPOABFLN },
-            |m: &mut ICALLNOLJOI| { &mut m.CHKAPOABFLN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CFAAFJJAADP",
-            |m: &ICALLNOLJOI| { &m.CFAAFJJAADP },
-            |m: &mut ICALLNOLJOI| { &mut m.CFAAFJJAADP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PGKDOAEPBEC::PGKDOAEPBEC>(
-            "MIFOLPKEOOO",
-            |m: &ICALLNOLJOI| { &m.MIFOLPKEOOO },
-            |m: &mut ICALLNOLJOI| { &mut m.MIFOLPKEOOO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ICALLNOLJOI>(
             "ICALLNOLJOI",
@@ -124,26 +124,26 @@ impl ::protobuf::Message for ICALLNOLJOI {
                 104 => {
                     self.FEPKAMAILMK = is.read_uint32()?;
                 },
-                80 => {
-                    self.BLOEFNLOLLJ = is.read_uint32()?;
-                },
-                8 => {
-                    self.PIMBLBKEECJ = is.read_uint32()?;
-                },
-                40 => {
-                    self.KFDAICILNMB = is.read_bool()?;
-                },
-                112 => {
-                    self.DNPHCJEBIKB = is.read_uint32()?;
-                },
-                24 => {
-                    self.CHKAPOABFLN = is.read_uint32()?;
-                },
                 64 => {
                     self.CFAAFJJAADP = is.read_uint32()?;
                 },
-                122 => {
+                56 => {
+                    self.CHKAPOABFLN = is.read_uint32()?;
+                },
+                8 => {
+                    self.KFDAICILNMB = is.read_bool()?;
+                },
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MIFOLPKEOOO)?;
+                },
+                88 => {
+                    self.BLOEFNLOLLJ = is.read_uint32()?;
+                },
+                16 => {
+                    self.PIMBLBKEECJ = is.read_uint32()?;
+                },
+                48 => {
+                    self.DNPHCJEBIKB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -160,27 +160,27 @@ impl ::protobuf::Message for ICALLNOLJOI {
         if self.FEPKAMAILMK != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.FEPKAMAILMK);
         }
-        if self.BLOEFNLOLLJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.BLOEFNLOLLJ);
+        if self.CFAAFJJAADP != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.CFAAFJJAADP);
         }
-        if self.PIMBLBKEECJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.PIMBLBKEECJ);
+        if self.CHKAPOABFLN != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.CHKAPOABFLN);
         }
         if self.KFDAICILNMB != false {
             my_size += 1 + 1;
         }
-        if self.DNPHCJEBIKB != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.DNPHCJEBIKB);
-        }
-        if self.CHKAPOABFLN != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.CHKAPOABFLN);
-        }
-        if self.CFAAFJJAADP != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.CFAAFJJAADP);
-        }
         if let Some(v) = self.MIFOLPKEOOO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.BLOEFNLOLLJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.BLOEFNLOLLJ);
+        }
+        if self.PIMBLBKEECJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.PIMBLBKEECJ);
+        }
+        if self.DNPHCJEBIKB != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.DNPHCJEBIKB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -191,26 +191,26 @@ impl ::protobuf::Message for ICALLNOLJOI {
         if self.FEPKAMAILMK != 0 {
             os.write_uint32(13, self.FEPKAMAILMK)?;
         }
-        if self.BLOEFNLOLLJ != 0 {
-            os.write_uint32(10, self.BLOEFNLOLLJ)?;
-        }
-        if self.PIMBLBKEECJ != 0 {
-            os.write_uint32(1, self.PIMBLBKEECJ)?;
-        }
-        if self.KFDAICILNMB != false {
-            os.write_bool(5, self.KFDAICILNMB)?;
-        }
-        if self.DNPHCJEBIKB != 0 {
-            os.write_uint32(14, self.DNPHCJEBIKB)?;
-        }
-        if self.CHKAPOABFLN != 0 {
-            os.write_uint32(3, self.CHKAPOABFLN)?;
-        }
         if self.CFAAFJJAADP != 0 {
             os.write_uint32(8, self.CFAAFJJAADP)?;
         }
+        if self.CHKAPOABFLN != 0 {
+            os.write_uint32(7, self.CHKAPOABFLN)?;
+        }
+        if self.KFDAICILNMB != false {
+            os.write_bool(1, self.KFDAICILNMB)?;
+        }
         if let Some(v) = self.MIFOLPKEOOO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        }
+        if self.BLOEFNLOLLJ != 0 {
+            os.write_uint32(11, self.BLOEFNLOLLJ)?;
+        }
+        if self.PIMBLBKEECJ != 0 {
+            os.write_uint32(2, self.PIMBLBKEECJ)?;
+        }
+        if self.DNPHCJEBIKB != 0 {
+            os.write_uint32(6, self.DNPHCJEBIKB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -230,26 +230,26 @@ impl ::protobuf::Message for ICALLNOLJOI {
 
     fn clear(&mut self) {
         self.FEPKAMAILMK = 0;
+        self.CFAAFJJAADP = 0;
+        self.CHKAPOABFLN = 0;
+        self.KFDAICILNMB = false;
+        self.MIFOLPKEOOO.clear();
         self.BLOEFNLOLLJ = 0;
         self.PIMBLBKEECJ = 0;
-        self.KFDAICILNMB = false;
         self.DNPHCJEBIKB = 0;
-        self.CHKAPOABFLN = 0;
-        self.CFAAFJJAADP = 0;
-        self.MIFOLPKEOOO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ICALLNOLJOI {
         static instance: ICALLNOLJOI = ICALLNOLJOI {
             FEPKAMAILMK: 0,
+            CFAAFJJAADP: 0,
+            CHKAPOABFLN: 0,
+            KFDAICILNMB: false,
+            MIFOLPKEOOO: ::protobuf::MessageField::none(),
             BLOEFNLOLLJ: 0,
             PIMBLBKEECJ: 0,
-            KFDAICILNMB: false,
             DNPHCJEBIKB: 0,
-            CHKAPOABFLN: 0,
-            CFAAFJJAADP: 0,
-            MIFOLPKEOOO: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -276,12 +276,12 @@ impl ::protobuf::reflect::ProtobufValue for ICALLNOLJOI {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ICALLNOLJOI.proto\x1a\x11PGKDOAEPBEC.proto\"\xab\x02\n\x0bICALLNOL\
     JOI\x12\x20\n\x0bFEPKAMAILMK\x18\r\x20\x01(\rR\x0bFEPKAMAILMK\x12\x20\n\
-    \x0bBLOEFNLOLLJ\x18\n\x20\x01(\rR\x0bBLOEFNLOLLJ\x12\x20\n\x0bPIMBLBKEEC\
-    J\x18\x01\x20\x01(\rR\x0bPIMBLBKEECJ\x12\x20\n\x0bKFDAICILNMB\x18\x05\
-    \x20\x01(\x08R\x0bKFDAICILNMB\x12\x20\n\x0bDNPHCJEBIKB\x18\x0e\x20\x01(\
-    \rR\x0bDNPHCJEBIKB\x12\x20\n\x0bCHKAPOABFLN\x18\x03\x20\x01(\rR\x0bCHKAP\
-    OABFLN\x12\x20\n\x0bCFAAFJJAADP\x18\x08\x20\x01(\rR\x0bCFAAFJJAADP\x12.\
-    \n\x0bMIFOLPKEOOO\x18\x0f\x20\x01(\x0b2\x0c.PGKDOAEPBECR\x0bMIFOLPKEOOOb\
+    \x0bCFAAFJJAADP\x18\x08\x20\x01(\rR\x0bCFAAFJJAADP\x12\x20\n\x0bCHKAPOAB\
+    FLN\x18\x07\x20\x01(\rR\x0bCHKAPOABFLN\x12\x20\n\x0bKFDAICILNMB\x18\x01\
+    \x20\x01(\x08R\x0bKFDAICILNMB\x12.\n\x0bMIFOLPKEOOO\x18\n\x20\x01(\x0b2\
+    \x0c.PGKDOAEPBECR\x0bMIFOLPKEOOO\x12\x20\n\x0bBLOEFNLOLLJ\x18\x0b\x20\
+    \x01(\rR\x0bBLOEFNLOLLJ\x12\x20\n\x0bPIMBLBKEECJ\x18\x02\x20\x01(\rR\x0b\
+    PIMBLBKEECJ\x12\x20\n\x0bDNPHCJEBIKB\x18\x06\x20\x01(\rR\x0bDNPHCJEBIKBb\
     \x06proto3\
 ";
 

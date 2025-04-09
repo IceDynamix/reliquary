@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ILHLPPHLDCG {
     // message fields
-    // @@protoc_insertion_point(field:ILHLPPHLDCG.LHMIDPAMBPD)
-    pub LHMIDPAMBPD: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ILHLPPHLDCG.GCNKIFMGMCE)
     pub GCNKIFMGMCE: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ILHLPPHLDCG.LHMIDPAMBPD)
+    pub LHMIDPAMBPD: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:ILHLPPHLDCG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl ILHLPPHLDCG {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LHMIDPAMBPD",
-            |m: &ILHLPPHLDCG| { &m.LHMIDPAMBPD },
-            |m: &mut ILHLPPHLDCG| { &mut m.LHMIDPAMBPD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "GCNKIFMGMCE",
             |m: &ILHLPPHLDCG| { &m.GCNKIFMGMCE },
             |m: &mut ILHLPPHLDCG| { &mut m.GCNKIFMGMCE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LHMIDPAMBPD",
+            |m: &ILHLPPHLDCG| { &m.LHMIDPAMBPD },
+            |m: &mut ILHLPPHLDCG| { &mut m.LHMIDPAMBPD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ILHLPPHLDCG>(
             "ILHLPPHLDCG",
@@ -79,17 +79,17 @@ impl ::protobuf::Message for ILHLPPHLDCG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.LHMIDPAMBPD)?;
-                },
-                32 => {
-                    self.LHMIDPAMBPD.push(is.read_uint32()?);
-                },
-                26 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.GCNKIFMGMCE)?;
                 },
-                24 => {
+                56 => {
                     self.GCNKIFMGMCE.push(is.read_uint32()?);
+                },
+                106 => {
+                    is.read_repeated_packed_uint32_into(&mut self.LHMIDPAMBPD)?;
+                },
+                104 => {
+                    self.LHMIDPAMBPD.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -103,16 +103,16 @@ impl ::protobuf::Message for ILHLPPHLDCG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.LHMIDPAMBPD);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.GCNKIFMGMCE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.GCNKIFMGMCE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.LHMIDPAMBPD);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(4, &self.LHMIDPAMBPD)?;
-        os.write_repeated_packed_uint32(3, &self.GCNKIFMGMCE)?;
+        os.write_repeated_packed_uint32(7, &self.GCNKIFMGMCE)?;
+        os.write_repeated_packed_uint32(13, &self.LHMIDPAMBPD)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -130,15 +130,15 @@ impl ::protobuf::Message for ILHLPPHLDCG {
     }
 
     fn clear(&mut self) {
-        self.LHMIDPAMBPD.clear();
         self.GCNKIFMGMCE.clear();
+        self.LHMIDPAMBPD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ILHLPPHLDCG {
         static instance: ILHLPPHLDCG = ILHLPPHLDCG {
-            LHMIDPAMBPD: ::std::vec::Vec::new(),
             GCNKIFMGMCE: ::std::vec::Vec::new(),
+            LHMIDPAMBPD: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -163,9 +163,9 @@ impl ::protobuf::reflect::ProtobufValue for ILHLPPHLDCG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ILHLPPHLDCG.proto\"Q\n\x0bILHLPPHLDCG\x12\x20\n\x0bLHMIDPAMBPD\x18\
-    \x04\x20\x03(\rR\x0bLHMIDPAMBPD\x12\x20\n\x0bGCNKIFMGMCE\x18\x03\x20\x03\
-    (\rR\x0bGCNKIFMGMCEb\x06proto3\
+    \n\x11ILHLPPHLDCG.proto\"Q\n\x0bILHLPPHLDCG\x12\x20\n\x0bGCNKIFMGMCE\x18\
+    \x07\x20\x03(\rR\x0bGCNKIFMGMCE\x12\x20\n\x0bLHMIDPAMBPD\x18\r\x20\x03(\
+    \rR\x0bLHMIDPAMBPDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

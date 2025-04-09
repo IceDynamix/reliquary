@@ -79,10 +79,10 @@ impl ::protobuf::Message for MMOIBACBPKA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                16 => {
                     self.PJGBFKNJPNO = is.read_enum_or_unknown()?;
                 },
-                80 => {
+                96 => {
                     self.MBMDOCJIMEJ = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for MMOIBACBPKA {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PJGBFKNJPNO != ::protobuf::EnumOrUnknown::new(super::HDIJJMDPILE::HDIJJMDPILE::SWORD_TRAINING_STATUS_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(14, self.PJGBFKNJPNO.value());
+            my_size += ::protobuf::rt::int32_size(2, self.PJGBFKNJPNO.value());
         }
         if self.MBMDOCJIMEJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.MBMDOCJIMEJ);
+            my_size += ::protobuf::rt::uint32_size(12, self.MBMDOCJIMEJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for MMOIBACBPKA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PJGBFKNJPNO != ::protobuf::EnumOrUnknown::new(super::HDIJJMDPILE::HDIJJMDPILE::SWORD_TRAINING_STATUS_TYPE_NONE) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.PJGBFKNJPNO))?;
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.PJGBFKNJPNO))?;
         }
         if self.MBMDOCJIMEJ != 0 {
-            os.write_uint32(10, self.MBMDOCJIMEJ)?;
+            os.write_uint32(12, self.MBMDOCJIMEJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for MMOIBACBPKA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MMOIBACBPKA.proto\x1a\x11HDIJJMDPILE.proto\"_\n\x0bMMOIBACBPKA\x12\
-    .\n\x0bPJGBFKNJPNO\x18\x0e\x20\x01(\x0e2\x0c.HDIJJMDPILER\x0bPJGBFKNJPNO\
-    \x12\x20\n\x0bMBMDOCJIMEJ\x18\n\x20\x01(\rR\x0bMBMDOCJIMEJb\x06proto3\
+    .\n\x0bPJGBFKNJPNO\x18\x02\x20\x01(\x0e2\x0c.HDIJJMDPILER\x0bPJGBFKNJPNO\
+    \x12\x20\n\x0bMBMDOCJIMEJ\x18\x0c\x20\x01(\rR\x0bMBMDOCJIMEJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

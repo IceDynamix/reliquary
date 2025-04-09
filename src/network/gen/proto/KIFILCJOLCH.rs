@@ -79,7 +79,7 @@ impl ::protobuf::Message for KIFILCJOLCH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.KNNDKBHBDLI)?;
                 },
                 48 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for KIFILCJOLCH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.KNNDKBHBDLI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if self.GJKJFGEEHCB != 0 {
             os.write_uint32(6, self.GJKJFGEEHCB)?;
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for KIFILCJOLCH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KIFILCJOLCH.proto\x1a\x11KNAPAIOFJIE.proto\"_\n\x0bKIFILCJOLCH\x12\
-    .\n\x0bKNNDKBHBDLI\x18\t\x20\x01(\x0b2\x0c.KNAPAIOFJIER\x0bKNNDKBHBDLI\
+    .\n\x0bKNNDKBHBDLI\x18\x07\x20\x01(\x0b2\x0c.KNAPAIOFJIER\x0bKNNDKBHBDLI\
     \x12\x20\n\x0bGJKJFGEEHCB\x18\x06\x20\x01(\rR\x0bGJKJFGEEHCBb\x06proto3\
 ";
 

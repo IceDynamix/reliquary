@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncRogueCommonDialogueOptionFinishScNotify {
     // message fields
+    // @@protoc_insertion_point(field:SyncRogueCommonDialogueOptionFinishScNotify.OIDIADDNACM)
+    pub OIDIADDNACM: ::protobuf::MessageField<super::HGEKNLIFFED::HGEKNLIFFED>,
     // @@protoc_insertion_point(field:SyncRogueCommonDialogueOptionFinishScNotify.DGNCFMDPPBF)
     pub DGNCFMDPPBF: ::protobuf::MessageField<super::GBABEKPBLHN::GBABEKPBLHN>,
     // @@protoc_insertion_point(field:SyncRogueCommonDialogueOptionFinishScNotify.KDMLLLGHJON)
     pub KDMLLLGHJON: u32,
     // @@protoc_insertion_point(field:SyncRogueCommonDialogueOptionFinishScNotify.BNCLFOABAIP)
     pub BNCLFOABAIP: u32,
-    // @@protoc_insertion_point(field:SyncRogueCommonDialogueOptionFinishScNotify.OIDIADDNACM)
-    pub OIDIADDNACM: ::protobuf::MessageField<super::HGEKNLIFFED::HGEKNLIFFED>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncRogueCommonDialogueOptionFinishScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,6 +55,11 @@ impl SyncRogueCommonDialogueOptionFinishScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HGEKNLIFFED::HGEKNLIFFED>(
+            "OIDIADDNACM",
+            |m: &SyncRogueCommonDialogueOptionFinishScNotify| { &m.OIDIADDNACM },
+            |m: &mut SyncRogueCommonDialogueOptionFinishScNotify| { &mut m.OIDIADDNACM },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GBABEKPBLHN::GBABEKPBLHN>(
             "DGNCFMDPPBF",
             |m: &SyncRogueCommonDialogueOptionFinishScNotify| { &m.DGNCFMDPPBF },
@@ -69,11 +74,6 @@ impl SyncRogueCommonDialogueOptionFinishScNotify {
             "BNCLFOABAIP",
             |m: &SyncRogueCommonDialogueOptionFinishScNotify| { &m.BNCLFOABAIP },
             |m: &mut SyncRogueCommonDialogueOptionFinishScNotify| { &mut m.BNCLFOABAIP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HGEKNLIFFED::HGEKNLIFFED>(
-            "OIDIADDNACM",
-            |m: &SyncRogueCommonDialogueOptionFinishScNotify| { &m.OIDIADDNACM },
-            |m: &mut SyncRogueCommonDialogueOptionFinishScNotify| { &mut m.OIDIADDNACM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncRogueCommonDialogueOptionFinishScNotify>(
             "SyncRogueCommonDialogueOptionFinishScNotify",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for SyncRogueCommonDialogueOptionFinishScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OIDIADDNACM)?;
+                },
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.DGNCFMDPPBF)?;
                 },
-                80 => {
+                8 => {
                     self.KDMLLLGHJON = is.read_uint32()?;
                 },
-                120 => {
+                32 => {
                     self.BNCLFOABAIP = is.read_uint32()?;
-                },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OIDIADDNACM)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,19 +117,19 @@ impl ::protobuf::Message for SyncRogueCommonDialogueOptionFinishScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if let Some(v) = self.OIDIADDNACM.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if let Some(v) = self.DGNCFMDPPBF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.KDMLLLGHJON != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.KDMLLLGHJON);
+            my_size += ::protobuf::rt::uint32_size(1, self.KDMLLLGHJON);
         }
         if self.BNCLFOABAIP != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.BNCLFOABAIP);
-        }
-        if let Some(v) = self.OIDIADDNACM.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+            my_size += ::protobuf::rt::uint32_size(4, self.BNCLFOABAIP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for SyncRogueCommonDialogueOptionFinishScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if let Some(v) = self.OIDIADDNACM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
         if let Some(v) = self.DGNCFMDPPBF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if self.KDMLLLGHJON != 0 {
-            os.write_uint32(10, self.KDMLLLGHJON)?;
+            os.write_uint32(1, self.KDMLLLGHJON)?;
         }
         if self.BNCLFOABAIP != 0 {
-            os.write_uint32(15, self.BNCLFOABAIP)?;
-        }
-        if let Some(v) = self.OIDIADDNACM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            os.write_uint32(4, self.BNCLFOABAIP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for SyncRogueCommonDialogueOptionFinishScNotify {
     }
 
     fn clear(&mut self) {
+        self.OIDIADDNACM.clear();
         self.DGNCFMDPPBF.clear();
         self.KDMLLLGHJON = 0;
         self.BNCLFOABAIP = 0;
-        self.OIDIADDNACM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncRogueCommonDialogueOptionFinishScNotify {
         static instance: SyncRogueCommonDialogueOptionFinishScNotify = SyncRogueCommonDialogueOptionFinishScNotify {
+            OIDIADDNACM: ::protobuf::MessageField::none(),
             DGNCFMDPPBF: ::protobuf::MessageField::none(),
             KDMLLLGHJON: 0,
             BNCLFOABAIP: 0,
-            OIDIADDNACM: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -205,10 +205,10 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueCommonDialogueOptionFinishS
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n1SyncRogueCommonDialogueOptionFinishScNotify.proto\x1a\x11GBABEKPBLHN.\
     proto\x1a\x11HGEKNLIFFED.proto\"\xd1\x01\n+SyncRogueCommonDialogueOption\
-    FinishScNotify\x12.\n\x0bDGNCFMDPPBF\x18\x0e\x20\x01(\x0b2\x0c.GBABEKPBL\
-    HNR\x0bDGNCFMDPPBF\x12\x20\n\x0bKDMLLLGHJON\x18\n\x20\x01(\rR\x0bKDMLLLG\
-    HJON\x12\x20\n\x0bBNCLFOABAIP\x18\x0f\x20\x01(\rR\x0bBNCLFOABAIP\x12.\n\
-    \x0bOIDIADDNACM\x18\x08\x20\x01(\x0b2\x0c.HGEKNLIFFEDR\x0bOIDIADDNACMb\
+    FinishScNotify\x12.\n\x0bOIDIADDNACM\x18\x05\x20\x01(\x0b2\x0c.HGEKNLIFF\
+    EDR\x0bOIDIADDNACM\x12.\n\x0bDGNCFMDPPBF\x18\x07\x20\x01(\x0b2\x0c.GBABE\
+    KPBLHNR\x0bDGNCFMDPPBF\x12\x20\n\x0bKDMLLLGHJON\x18\x01\x20\x01(\rR\x0bK\
+    DMLLLGHJON\x12\x20\n\x0bBNCLFOABAIP\x18\x04\x20\x01(\rR\x0bBNCLFOABAIPb\
     \x06proto3\
 ";
 

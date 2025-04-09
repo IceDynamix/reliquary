@@ -72,7 +72,7 @@ impl ::protobuf::Message for TrainRefreshTimeNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                72 => {
                     self.AKALBJECJIK = is.read_uint64()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for TrainRefreshTimeNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.AKALBJECJIK != 0 {
-            my_size += ::protobuf::rt::uint64_size(12, self.AKALBJECJIK);
+            my_size += ::protobuf::rt::uint64_size(9, self.AKALBJECJIK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for TrainRefreshTimeNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.AKALBJECJIK != 0 {
-            os.write_uint64(12, self.AKALBJECJIK)?;
+            os.write_uint64(9, self.AKALBJECJIK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for TrainRefreshTimeNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cTrainRefreshTimeNotify.proto\":\n\x16TrainRefreshTimeNotify\x12\
-    \x20\n\x0bAKALBJECJIK\x18\x0c\x20\x01(\x04R\x0bAKALBJECJIKb\x06proto3\
+    \x20\n\x0bAKALBJECJIK\x18\t\x20\x01(\x04R\x0bAKALBJECJIKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

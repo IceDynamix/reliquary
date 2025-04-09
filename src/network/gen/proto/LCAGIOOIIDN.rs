@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LCAGIOOIIDN {
     // message fields
-    // @@protoc_insertion_point(field:LCAGIOOIIDN.BILBOHBDBPN)
-    pub BILBOHBDBPN: u32,
     // @@protoc_insertion_point(field:LCAGIOOIIDN.JLHFOJODOKG)
     pub JLHFOJODOKG: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:LCAGIOOIIDN.BILBOHBDBPN)
+    pub BILBOHBDBPN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LCAGIOOIIDN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl LCAGIOOIIDN {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BILBOHBDBPN",
-            |m: &LCAGIOOIIDN| { &m.BILBOHBDBPN },
-            |m: &mut LCAGIOOIIDN| { &mut m.BILBOHBDBPN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "JLHFOJODOKG",
             |m: &LCAGIOOIIDN| { &m.JLHFOJODOKG },
             |m: &mut LCAGIOOIIDN| { &mut m.JLHFOJODOKG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BILBOHBDBPN",
+            |m: &LCAGIOOIIDN| { &m.BILBOHBDBPN },
+            |m: &mut LCAGIOOIIDN| { &mut m.BILBOHBDBPN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LCAGIOOIIDN>(
             "LCAGIOOIIDN",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for LCAGIOOIIDN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.BILBOHBDBPN = is.read_uint32()?;
-                },
-                34 => {
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.JLHFOJODOKG)?;
                 },
-                32 => {
+                72 => {
                     self.JLHFOJODOKG.push(is.read_uint32()?);
+                },
+                96 => {
+                    self.BILBOHBDBPN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for LCAGIOOIIDN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.JLHFOJODOKG);
         if self.BILBOHBDBPN != 0 {
             my_size += ::protobuf::rt::uint32_size(12, self.BILBOHBDBPN);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.JLHFOJODOKG);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(9, &self.JLHFOJODOKG)?;
         if self.BILBOHBDBPN != 0 {
             os.write_uint32(12, self.BILBOHBDBPN)?;
         }
-        os.write_repeated_packed_uint32(4, &self.JLHFOJODOKG)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for LCAGIOOIIDN {
     }
 
     fn clear(&mut self) {
-        self.BILBOHBDBPN = 0;
         self.JLHFOJODOKG.clear();
+        self.BILBOHBDBPN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LCAGIOOIIDN {
         static instance: LCAGIOOIIDN = LCAGIOOIIDN {
-            BILBOHBDBPN: 0,
             JLHFOJODOKG: ::std::vec::Vec::new(),
+            BILBOHBDBPN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -164,9 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for LCAGIOOIIDN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LCAGIOOIIDN.proto\"Q\n\x0bLCAGIOOIIDN\x12\x20\n\x0bBILBOHBDBPN\x18\
-    \x0c\x20\x01(\rR\x0bBILBOHBDBPN\x12\x20\n\x0bJLHFOJODOKG\x18\x04\x20\x03\
-    (\rR\x0bJLHFOJODOKGb\x06proto3\
+    \n\x11LCAGIOOIIDN.proto\"Q\n\x0bLCAGIOOIIDN\x12\x20\n\x0bJLHFOJODOKG\x18\
+    \t\x20\x03(\rR\x0bJLHFOJODOKG\x12\x20\n\x0bBILBOHBDBPN\x18\x0c\x20\x01(\
+    \rR\x0bBILBOHBDBPNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

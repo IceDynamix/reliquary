@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KGLOJONKMKP {
     // message fields
-    // @@protoc_insertion_point(field:KGLOJONKMKP.KNNDKBHBDLI)
-    pub KNNDKBHBDLI: ::protobuf::MessageField<super::KNAPAIOFJIE::KNAPAIOFJIE>,
     // @@protoc_insertion_point(field:KGLOJONKMKP.LNBPGPGGIMN)
     pub LNBPGPGGIMN: u32,
+    // @@protoc_insertion_point(field:KGLOJONKMKP.KNNDKBHBDLI)
+    pub KNNDKBHBDLI: ::protobuf::MessageField<super::KNAPAIOFJIE::KNAPAIOFJIE>,
     // special fields
     // @@protoc_insertion_point(special_field:KGLOJONKMKP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl KGLOJONKMKP {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KNAPAIOFJIE::KNAPAIOFJIE>(
-            "KNNDKBHBDLI",
-            |m: &KGLOJONKMKP| { &m.KNNDKBHBDLI },
-            |m: &mut KGLOJONKMKP| { &mut m.KNNDKBHBDLI },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LNBPGPGGIMN",
             |m: &KGLOJONKMKP| { &m.LNBPGPGGIMN },
             |m: &mut KGLOJONKMKP| { &mut m.LNBPGPGGIMN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KNAPAIOFJIE::KNAPAIOFJIE>(
+            "KNNDKBHBDLI",
+            |m: &KGLOJONKMKP| { &m.KNNDKBHBDLI },
+            |m: &mut KGLOJONKMKP| { &mut m.KNNDKBHBDLI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KGLOJONKMKP>(
             "KGLOJONKMKP",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for KGLOJONKMKP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KNNDKBHBDLI)?;
-                },
-                48 => {
+                104 => {
                     self.LNBPGPGGIMN = is.read_uint32()?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KNNDKBHBDLI)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for KGLOJONKMKP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.LNBPGPGGIMN != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.LNBPGPGGIMN);
+        }
         if let Some(v) = self.KNNDKBHBDLI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.LNBPGPGGIMN != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.LNBPGPGGIMN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for KGLOJONKMKP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.KNNDKBHBDLI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        }
         if self.LNBPGPGGIMN != 0 {
-            os.write_uint32(6, self.LNBPGPGGIMN)?;
+            os.write_uint32(13, self.LNBPGPGGIMN)?;
+        }
+        if let Some(v) = self.KNNDKBHBDLI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for KGLOJONKMKP {
     }
 
     fn clear(&mut self) {
-        self.KNNDKBHBDLI.clear();
         self.LNBPGPGGIMN = 0;
+        self.KNNDKBHBDLI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KGLOJONKMKP {
         static instance: KGLOJONKMKP = KGLOJONKMKP {
-            KNNDKBHBDLI: ::protobuf::MessageField::none(),
             LNBPGPGGIMN: 0,
+            KNNDKBHBDLI: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for KGLOJONKMKP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KGLOJONKMKP.proto\x1a\x11KNAPAIOFJIE.proto\"_\n\x0bKGLOJONKMKP\x12\
-    .\n\x0bKNNDKBHBDLI\x18\x03\x20\x01(\x0b2\x0c.KNAPAIOFJIER\x0bKNNDKBHBDLI\
-    \x12\x20\n\x0bLNBPGPGGIMN\x18\x06\x20\x01(\rR\x0bLNBPGPGGIMNb\x06proto3\
+    \x20\n\x0bLNBPGPGGIMN\x18\r\x20\x01(\rR\x0bLNBPGPGGIMN\x12.\n\x0bKNNDKBH\
+    BDLI\x18\x0f\x20\x01(\x0b2\x0c.KNAPAIOFJIER\x0bKNNDKBHBDLIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for ILNFEFOBNEG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10938 => {
+                13858 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.OMCBCGCHLGN)?;
                 },
-                10090 => {
+                6474 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LAGBGLDLGCB)?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for ILNFEFOBNEG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.OMCBCGCHLGN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1367, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1732, v, os)?;
         }
         if let Some(v) = self.LAGBGLDLGCB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1261, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(809, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for ILNFEFOBNEG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ILNFEFOBNEG.proto\x1a\x11DKNMKFBOBJF.proto\x1a\x11LIIKCGNCBBF.prot\
-    o\"o\n\x0bILNFEFOBNEG\x12/\n\x0bOMCBCGCHLGN\x18\xd7\n\x20\x01(\x0b2\x0c.\
-    DKNMKFBOBJFR\x0bOMCBCGCHLGN\x12/\n\x0bLAGBGLDLGCB\x18\xed\t\x20\x01(\x0b\
-    2\x0c.LIIKCGNCBBFR\x0bLAGBGLDLGCBb\x06proto3\
+    o\"o\n\x0bILNFEFOBNEG\x12/\n\x0bOMCBCGCHLGN\x18\xc4\r\x20\x01(\x0b2\x0c.\
+    DKNMKFBOBJFR\x0bOMCBCGCHLGN\x12/\n\x0bLAGBGLDLGCB\x18\xa9\x06\x20\x01(\
+    \x0b2\x0c.LIIKCGNCBBFR\x0bLAGBGLDLGCBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

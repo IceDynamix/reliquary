@@ -28,48 +28,48 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetPreAvatarGrowthInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.IHOKHLFHOCC)
-    pub IHOKHLFHOCC: u32,
-    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.PHIBNKMIOGP)
-    pub PHIBNKMIOGP: u32,
-    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.LIJCNGOHKHF)
-    pub LIJCNGOHKHF: u32,
-    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.AEKFJKENPHN)
-    pub AEKFJKENPHN: u32,
-    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.DLAPKBDDBBC)
-    pub DLAPKBDDBBC: u32,
-    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.FOJCCKACDHH)
-    pub FOJCCKACDHH: u32,
-    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.HDNIKCBLKIL)
-    pub HDNIKCBLKIL: u32,
-    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.MKHLDLFONKN)
-    pub MKHLDLFONKN: ::std::string::String,
-    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.EGDDNPEONKC)
-    pub EGDDNPEONKC: u32,
-    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.LKKAMLLAFAE)
-    pub LKKAMLLAFAE: u32,
-    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.FLAAGNAPDHP)
-    pub FLAAGNAPDHP: u32,
-    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.KJAEOJBJOJD)
-    pub KJAEOJBJOJD: u32,
-    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.DBIJFKOBKKH)
-    pub DBIJFKOBKKH: u32,
-    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.KPJHBEILAIP)
-    pub KPJHBEILAIP: ::std::string::String,
     // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.KIEJACMOGAN)
     pub KIEJACMOGAN: u32,
-    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.JJMKEADCIAG)
-    pub JJMKEADCIAG: u32,
-    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.DGGNNBCJOCC)
-    pub DGGNNBCJOCC: u32,
+    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.LKKAMLLAFAE)
+    pub LKKAMLLAFAE: u32,
+    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.DBIJFKOBKKH)
+    pub DBIJFKOBKKH: u32,
+    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.FOJCCKACDHH)
+    pub FOJCCKACDHH: u32,
+    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.DLAPKBDDBBC)
+    pub DLAPKBDDBBC: u32,
     // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.EBPPBPMHDHI)
     pub EBPPBPMHDHI: ::std::string::String,
-    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.OANPNFJJFHG)
-    pub OANPNFJJFHG: ::std::string::String,
+    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.KJAEOJBJOJD)
+    pub KJAEOJBJOJD: u32,
+    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.LIJCNGOHKHF)
+    pub LIJCNGOHKHF: u32,
+    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.EGDDNPEONKC)
+    pub EGDDNPEONKC: u32,
+    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.MKHLDLFONKN)
+    pub MKHLDLFONKN: ::std::string::String,
+    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.IHOKHLFHOCC)
+    pub IHOKHLFHOCC: u32,
     // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.PMMCFGMPLBA)
     pub PMMCFGMPLBA: u32,
+    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.HDNIKCBLKIL)
+    pub HDNIKCBLKIL: u32,
+    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.OANPNFJJFHG)
+    pub OANPNFJJFHG: ::std::string::String,
+    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.JJMKEADCIAG)
+    pub JJMKEADCIAG: u32,
+    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.FLAAGNAPDHP)
+    pub FLAAGNAPDHP: u32,
+    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.KPJHBEILAIP)
+    pub KPJHBEILAIP: ::std::string::String,
+    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.AEKFJKENPHN)
+    pub AEKFJKENPHN: u32,
+    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.PHIBNKMIOGP)
+    pub PHIBNKMIOGP: u32,
+    // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.DGGNNBCJOCC)
+    pub DGGNNBCJOCC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetPreAvatarGrowthInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -90,49 +90,9 @@ impl GetPreAvatarGrowthInfoScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(21);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IHOKHLFHOCC",
-            |m: &GetPreAvatarGrowthInfoScRsp| { &m.IHOKHLFHOCC },
-            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.IHOKHLFHOCC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PHIBNKMIOGP",
-            |m: &GetPreAvatarGrowthInfoScRsp| { &m.PHIBNKMIOGP },
-            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.PHIBNKMIOGP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LIJCNGOHKHF",
-            |m: &GetPreAvatarGrowthInfoScRsp| { &m.LIJCNGOHKHF },
-            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.LIJCNGOHKHF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AEKFJKENPHN",
-            |m: &GetPreAvatarGrowthInfoScRsp| { &m.AEKFJKENPHN },
-            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.AEKFJKENPHN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DLAPKBDDBBC",
-            |m: &GetPreAvatarGrowthInfoScRsp| { &m.DLAPKBDDBBC },
-            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.DLAPKBDDBBC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FOJCCKACDHH",
-            |m: &GetPreAvatarGrowthInfoScRsp| { &m.FOJCCKACDHH },
-            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.FOJCCKACDHH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HDNIKCBLKIL",
-            |m: &GetPreAvatarGrowthInfoScRsp| { &m.HDNIKCBLKIL },
-            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.HDNIKCBLKIL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MKHLDLFONKN",
-            |m: &GetPreAvatarGrowthInfoScRsp| { &m.MKHLDLFONKN },
-            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.MKHLDLFONKN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EGDDNPEONKC",
-            |m: &GetPreAvatarGrowthInfoScRsp| { &m.EGDDNPEONKC },
-            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.EGDDNPEONKC },
+            "KIEJACMOGAN",
+            |m: &GetPreAvatarGrowthInfoScRsp| { &m.KIEJACMOGAN },
+            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.KIEJACMOGAN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LKKAMLLAFAE",
@@ -140,44 +100,19 @@ impl GetPreAvatarGrowthInfoScRsp {
             |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.LKKAMLLAFAE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetPreAvatarGrowthInfoScRsp| { &m.retcode },
-            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FLAAGNAPDHP",
-            |m: &GetPreAvatarGrowthInfoScRsp| { &m.FLAAGNAPDHP },
-            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.FLAAGNAPDHP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KJAEOJBJOJD",
-            |m: &GetPreAvatarGrowthInfoScRsp| { &m.KJAEOJBJOJD },
-            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.KJAEOJBJOJD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DBIJFKOBKKH",
             |m: &GetPreAvatarGrowthInfoScRsp| { &m.DBIJFKOBKKH },
             |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.DBIJFKOBKKH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KPJHBEILAIP",
-            |m: &GetPreAvatarGrowthInfoScRsp| { &m.KPJHBEILAIP },
-            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.KPJHBEILAIP },
+            "FOJCCKACDHH",
+            |m: &GetPreAvatarGrowthInfoScRsp| { &m.FOJCCKACDHH },
+            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.FOJCCKACDHH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KIEJACMOGAN",
-            |m: &GetPreAvatarGrowthInfoScRsp| { &m.KIEJACMOGAN },
-            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.KIEJACMOGAN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JJMKEADCIAG",
-            |m: &GetPreAvatarGrowthInfoScRsp| { &m.JJMKEADCIAG },
-            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.JJMKEADCIAG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DGGNNBCJOCC",
-            |m: &GetPreAvatarGrowthInfoScRsp| { &m.DGGNNBCJOCC },
-            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.DGGNNBCJOCC },
+            "DLAPKBDDBBC",
+            |m: &GetPreAvatarGrowthInfoScRsp| { &m.DLAPKBDDBBC },
+            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.DLAPKBDDBBC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EBPPBPMHDHI",
@@ -185,14 +120,79 @@ impl GetPreAvatarGrowthInfoScRsp {
             |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.EBPPBPMHDHI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OANPNFJJFHG",
-            |m: &GetPreAvatarGrowthInfoScRsp| { &m.OANPNFJJFHG },
-            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.OANPNFJJFHG },
+            "KJAEOJBJOJD",
+            |m: &GetPreAvatarGrowthInfoScRsp| { &m.KJAEOJBJOJD },
+            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.KJAEOJBJOJD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LIJCNGOHKHF",
+            |m: &GetPreAvatarGrowthInfoScRsp| { &m.LIJCNGOHKHF },
+            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.LIJCNGOHKHF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EGDDNPEONKC",
+            |m: &GetPreAvatarGrowthInfoScRsp| { &m.EGDDNPEONKC },
+            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.EGDDNPEONKC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GetPreAvatarGrowthInfoScRsp| { &m.retcode },
+            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MKHLDLFONKN",
+            |m: &GetPreAvatarGrowthInfoScRsp| { &m.MKHLDLFONKN },
+            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.MKHLDLFONKN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IHOKHLFHOCC",
+            |m: &GetPreAvatarGrowthInfoScRsp| { &m.IHOKHLFHOCC },
+            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.IHOKHLFHOCC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PMMCFGMPLBA",
             |m: &GetPreAvatarGrowthInfoScRsp| { &m.PMMCFGMPLBA },
             |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.PMMCFGMPLBA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HDNIKCBLKIL",
+            |m: &GetPreAvatarGrowthInfoScRsp| { &m.HDNIKCBLKIL },
+            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.HDNIKCBLKIL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OANPNFJJFHG",
+            |m: &GetPreAvatarGrowthInfoScRsp| { &m.OANPNFJJFHG },
+            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.OANPNFJJFHG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JJMKEADCIAG",
+            |m: &GetPreAvatarGrowthInfoScRsp| { &m.JJMKEADCIAG },
+            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.JJMKEADCIAG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FLAAGNAPDHP",
+            |m: &GetPreAvatarGrowthInfoScRsp| { &m.FLAAGNAPDHP },
+            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.FLAAGNAPDHP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KPJHBEILAIP",
+            |m: &GetPreAvatarGrowthInfoScRsp| { &m.KPJHBEILAIP },
+            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.KPJHBEILAIP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AEKFJKENPHN",
+            |m: &GetPreAvatarGrowthInfoScRsp| { &m.AEKFJKENPHN },
+            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.AEKFJKENPHN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PHIBNKMIOGP",
+            |m: &GetPreAvatarGrowthInfoScRsp| { &m.PHIBNKMIOGP },
+            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.PHIBNKMIOGP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DGGNNBCJOCC",
+            |m: &GetPreAvatarGrowthInfoScRsp| { &m.DGGNNBCJOCC },
+            |m: &mut GetPreAvatarGrowthInfoScRsp| { &mut m.DGGNNBCJOCC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetPreAvatarGrowthInfoScRsp>(
             "GetPreAvatarGrowthInfoScRsp",
@@ -212,68 +212,68 @@ impl ::protobuf::Message for GetPreAvatarGrowthInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.IHOKHLFHOCC = is.read_uint32()?;
-                },
-                48 => {
-                    self.PHIBNKMIOGP = is.read_uint32()?;
-                },
-                72 => {
-                    self.LIJCNGOHKHF = is.read_uint32()?;
-                },
-                96 => {
-                    self.AEKFJKENPHN = is.read_uint32()?;
-                },
-                40 => {
-                    self.DLAPKBDDBBC = is.read_uint32()?;
-                },
-                56 => {
-                    self.FOJCCKACDHH = is.read_uint32()?;
-                },
-                16 => {
-                    self.HDNIKCBLKIL = is.read_uint32()?;
-                },
-                7330 => {
-                    self.MKHLDLFONKN = is.read_string()?;
-                },
-                120 => {
-                    self.EGDDNPEONKC = is.read_uint32()?;
+                4840 => {
+                    self.KIEJACMOGAN = is.read_uint32()?;
                 },
                 32 => {
                     self.LKKAMLLAFAE = is.read_uint32()?;
                 },
-                112 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                104 => {
-                    self.FLAAGNAPDHP = is.read_uint32()?;
-                },
-                88 => {
-                    self.KJAEOJBJOJD = is.read_uint32()?;
-                },
-                24 => {
+                8 => {
                     self.DBIJFKOBKKH = is.read_uint32()?;
                 },
-                13738 => {
-                    self.KPJHBEILAIP = is.read_string()?;
+                56 => {
+                    self.FOJCCKACDHH = is.read_uint32()?;
                 },
-                12880 => {
-                    self.KIEJACMOGAN = is.read_uint32()?;
+                40 => {
+                    self.DLAPKBDDBBC = is.read_uint32()?;
+                },
+                498 => {
+                    self.EBPPBPMHDHI = is.read_string()?;
+                },
+                72 => {
+                    self.KJAEOJBJOJD = is.read_uint32()?;
+                },
+                104 => {
+                    self.LIJCNGOHKHF = is.read_uint32()?;
+                },
+                88 => {
+                    self.EGDDNPEONKC = is.read_uint32()?;
+                },
+                24 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                6426 => {
+                    self.MKHLDLFONKN = is.read_string()?;
+                },
+                48 => {
+                    self.IHOKHLFHOCC = is.read_uint32()?;
+                },
+                96 => {
+                    self.PMMCFGMPLBA = is.read_uint32()?;
+                },
+                16 => {
+                    self.HDNIKCBLKIL = is.read_uint32()?;
+                },
+                12290 => {
+                    self.OANPNFJJFHG = is.read_string()?;
                 },
                 64 => {
                     self.JJMKEADCIAG = is.read_uint32()?;
                 },
-                13104 => {
-                    self.DGGNNBCJOCC = is.read_uint32()?;
-                },
-                12234 => {
-                    self.EBPPBPMHDHI = is.read_string()?;
-                },
-                6050 => {
-                    self.OANPNFJJFHG = is.read_string()?;
-                },
                 80 => {
-                    self.PMMCFGMPLBA = is.read_uint32()?;
+                    self.FLAAGNAPDHP = is.read_uint32()?;
+                },
+                7162 => {
+                    self.KPJHBEILAIP = is.read_string()?;
+                },
+                120 => {
+                    self.AEKFJKENPHN = is.read_uint32()?;
+                },
+                112 => {
+                    self.PHIBNKMIOGP = is.read_uint32()?;
+                },
+                1456 => {
+                    self.DGGNNBCJOCC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -287,68 +287,68 @@ impl ::protobuf::Message for GetPreAvatarGrowthInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IHOKHLFHOCC != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.IHOKHLFHOCC);
-        }
-        if self.PHIBNKMIOGP != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.PHIBNKMIOGP);
-        }
-        if self.LIJCNGOHKHF != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.LIJCNGOHKHF);
-        }
-        if self.AEKFJKENPHN != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.AEKFJKENPHN);
-        }
-        if self.DLAPKBDDBBC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.DLAPKBDDBBC);
-        }
-        if self.FOJCCKACDHH != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.FOJCCKACDHH);
-        }
-        if self.HDNIKCBLKIL != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.HDNIKCBLKIL);
-        }
-        if !self.MKHLDLFONKN.is_empty() {
-            my_size += ::protobuf::rt::string_size(916, &self.MKHLDLFONKN);
-        }
-        if self.EGDDNPEONKC != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.EGDDNPEONKC);
+        if self.KIEJACMOGAN != 0 {
+            my_size += ::protobuf::rt::uint32_size(605, self.KIEJACMOGAN);
         }
         if self.LKKAMLLAFAE != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.LKKAMLLAFAE);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+        if self.DBIJFKOBKKH != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.DBIJFKOBKKH);
         }
-        if self.FLAAGNAPDHP != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.FLAAGNAPDHP);
+        if self.FOJCCKACDHH != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.FOJCCKACDHH);
+        }
+        if self.DLAPKBDDBBC != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.DLAPKBDDBBC);
+        }
+        if !self.EBPPBPMHDHI.is_empty() {
+            my_size += ::protobuf::rt::string_size(62, &self.EBPPBPMHDHI);
         }
         if self.KJAEOJBJOJD != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.KJAEOJBJOJD);
+            my_size += ::protobuf::rt::uint32_size(9, self.KJAEOJBJOJD);
         }
-        if self.DBIJFKOBKKH != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.DBIJFKOBKKH);
+        if self.LIJCNGOHKHF != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.LIJCNGOHKHF);
         }
-        if !self.KPJHBEILAIP.is_empty() {
-            my_size += ::protobuf::rt::string_size(1717, &self.KPJHBEILAIP);
+        if self.EGDDNPEONKC != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.EGDDNPEONKC);
         }
-        if self.KIEJACMOGAN != 0 {
-            my_size += ::protobuf::rt::uint32_size(1610, self.KIEJACMOGAN);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+        }
+        if !self.MKHLDLFONKN.is_empty() {
+            my_size += ::protobuf::rt::string_size(803, &self.MKHLDLFONKN);
+        }
+        if self.IHOKHLFHOCC != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.IHOKHLFHOCC);
+        }
+        if self.PMMCFGMPLBA != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.PMMCFGMPLBA);
+        }
+        if self.HDNIKCBLKIL != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.HDNIKCBLKIL);
+        }
+        if !self.OANPNFJJFHG.is_empty() {
+            my_size += ::protobuf::rt::string_size(1536, &self.OANPNFJJFHG);
         }
         if self.JJMKEADCIAG != 0 {
             my_size += ::protobuf::rt::uint32_size(8, self.JJMKEADCIAG);
         }
+        if self.FLAAGNAPDHP != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.FLAAGNAPDHP);
+        }
+        if !self.KPJHBEILAIP.is_empty() {
+            my_size += ::protobuf::rt::string_size(895, &self.KPJHBEILAIP);
+        }
+        if self.AEKFJKENPHN != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.AEKFJKENPHN);
+        }
+        if self.PHIBNKMIOGP != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.PHIBNKMIOGP);
+        }
         if self.DGGNNBCJOCC != 0 {
-            my_size += ::protobuf::rt::uint32_size(1638, self.DGGNNBCJOCC);
-        }
-        if !self.EBPPBPMHDHI.is_empty() {
-            my_size += ::protobuf::rt::string_size(1529, &self.EBPPBPMHDHI);
-        }
-        if !self.OANPNFJJFHG.is_empty() {
-            my_size += ::protobuf::rt::string_size(756, &self.OANPNFJJFHG);
-        }
-        if self.PMMCFGMPLBA != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.PMMCFGMPLBA);
+            my_size += ::protobuf::rt::uint32_size(182, self.DGGNNBCJOCC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -356,68 +356,68 @@ impl ::protobuf::Message for GetPreAvatarGrowthInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IHOKHLFHOCC != 0 {
-            os.write_uint32(1, self.IHOKHLFHOCC)?;
-        }
-        if self.PHIBNKMIOGP != 0 {
-            os.write_uint32(6, self.PHIBNKMIOGP)?;
-        }
-        if self.LIJCNGOHKHF != 0 {
-            os.write_uint32(9, self.LIJCNGOHKHF)?;
-        }
-        if self.AEKFJKENPHN != 0 {
-            os.write_uint32(12, self.AEKFJKENPHN)?;
-        }
-        if self.DLAPKBDDBBC != 0 {
-            os.write_uint32(5, self.DLAPKBDDBBC)?;
-        }
-        if self.FOJCCKACDHH != 0 {
-            os.write_uint32(7, self.FOJCCKACDHH)?;
-        }
-        if self.HDNIKCBLKIL != 0 {
-            os.write_uint32(2, self.HDNIKCBLKIL)?;
-        }
-        if !self.MKHLDLFONKN.is_empty() {
-            os.write_string(916, &self.MKHLDLFONKN)?;
-        }
-        if self.EGDDNPEONKC != 0 {
-            os.write_uint32(15, self.EGDDNPEONKC)?;
+        if self.KIEJACMOGAN != 0 {
+            os.write_uint32(605, self.KIEJACMOGAN)?;
         }
         if self.LKKAMLLAFAE != 0 {
             os.write_uint32(4, self.LKKAMLLAFAE)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+        if self.DBIJFKOBKKH != 0 {
+            os.write_uint32(1, self.DBIJFKOBKKH)?;
         }
-        if self.FLAAGNAPDHP != 0 {
-            os.write_uint32(13, self.FLAAGNAPDHP)?;
+        if self.FOJCCKACDHH != 0 {
+            os.write_uint32(7, self.FOJCCKACDHH)?;
+        }
+        if self.DLAPKBDDBBC != 0 {
+            os.write_uint32(5, self.DLAPKBDDBBC)?;
+        }
+        if !self.EBPPBPMHDHI.is_empty() {
+            os.write_string(62, &self.EBPPBPMHDHI)?;
         }
         if self.KJAEOJBJOJD != 0 {
-            os.write_uint32(11, self.KJAEOJBJOJD)?;
+            os.write_uint32(9, self.KJAEOJBJOJD)?;
         }
-        if self.DBIJFKOBKKH != 0 {
-            os.write_uint32(3, self.DBIJFKOBKKH)?;
+        if self.LIJCNGOHKHF != 0 {
+            os.write_uint32(13, self.LIJCNGOHKHF)?;
         }
-        if !self.KPJHBEILAIP.is_empty() {
-            os.write_string(1717, &self.KPJHBEILAIP)?;
+        if self.EGDDNPEONKC != 0 {
+            os.write_uint32(11, self.EGDDNPEONKC)?;
         }
-        if self.KIEJACMOGAN != 0 {
-            os.write_uint32(1610, self.KIEJACMOGAN)?;
+        if self.retcode != 0 {
+            os.write_uint32(3, self.retcode)?;
+        }
+        if !self.MKHLDLFONKN.is_empty() {
+            os.write_string(803, &self.MKHLDLFONKN)?;
+        }
+        if self.IHOKHLFHOCC != 0 {
+            os.write_uint32(6, self.IHOKHLFHOCC)?;
+        }
+        if self.PMMCFGMPLBA != 0 {
+            os.write_uint32(12, self.PMMCFGMPLBA)?;
+        }
+        if self.HDNIKCBLKIL != 0 {
+            os.write_uint32(2, self.HDNIKCBLKIL)?;
+        }
+        if !self.OANPNFJJFHG.is_empty() {
+            os.write_string(1536, &self.OANPNFJJFHG)?;
         }
         if self.JJMKEADCIAG != 0 {
             os.write_uint32(8, self.JJMKEADCIAG)?;
         }
+        if self.FLAAGNAPDHP != 0 {
+            os.write_uint32(10, self.FLAAGNAPDHP)?;
+        }
+        if !self.KPJHBEILAIP.is_empty() {
+            os.write_string(895, &self.KPJHBEILAIP)?;
+        }
+        if self.AEKFJKENPHN != 0 {
+            os.write_uint32(15, self.AEKFJKENPHN)?;
+        }
+        if self.PHIBNKMIOGP != 0 {
+            os.write_uint32(14, self.PHIBNKMIOGP)?;
+        }
         if self.DGGNNBCJOCC != 0 {
-            os.write_uint32(1638, self.DGGNNBCJOCC)?;
-        }
-        if !self.EBPPBPMHDHI.is_empty() {
-            os.write_string(1529, &self.EBPPBPMHDHI)?;
-        }
-        if !self.OANPNFJJFHG.is_empty() {
-            os.write_string(756, &self.OANPNFJJFHG)?;
-        }
-        if self.PMMCFGMPLBA != 0 {
-            os.write_uint32(10, self.PMMCFGMPLBA)?;
+            os.write_uint32(182, self.DGGNNBCJOCC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -436,53 +436,53 @@ impl ::protobuf::Message for GetPreAvatarGrowthInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.IHOKHLFHOCC = 0;
-        self.PHIBNKMIOGP = 0;
-        self.LIJCNGOHKHF = 0;
-        self.AEKFJKENPHN = 0;
-        self.DLAPKBDDBBC = 0;
-        self.FOJCCKACDHH = 0;
-        self.HDNIKCBLKIL = 0;
-        self.MKHLDLFONKN.clear();
-        self.EGDDNPEONKC = 0;
-        self.LKKAMLLAFAE = 0;
-        self.retcode = 0;
-        self.FLAAGNAPDHP = 0;
-        self.KJAEOJBJOJD = 0;
-        self.DBIJFKOBKKH = 0;
-        self.KPJHBEILAIP.clear();
         self.KIEJACMOGAN = 0;
-        self.JJMKEADCIAG = 0;
-        self.DGGNNBCJOCC = 0;
+        self.LKKAMLLAFAE = 0;
+        self.DBIJFKOBKKH = 0;
+        self.FOJCCKACDHH = 0;
+        self.DLAPKBDDBBC = 0;
         self.EBPPBPMHDHI.clear();
-        self.OANPNFJJFHG.clear();
+        self.KJAEOJBJOJD = 0;
+        self.LIJCNGOHKHF = 0;
+        self.EGDDNPEONKC = 0;
+        self.retcode = 0;
+        self.MKHLDLFONKN.clear();
+        self.IHOKHLFHOCC = 0;
         self.PMMCFGMPLBA = 0;
+        self.HDNIKCBLKIL = 0;
+        self.OANPNFJJFHG.clear();
+        self.JJMKEADCIAG = 0;
+        self.FLAAGNAPDHP = 0;
+        self.KPJHBEILAIP.clear();
+        self.AEKFJKENPHN = 0;
+        self.PHIBNKMIOGP = 0;
+        self.DGGNNBCJOCC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetPreAvatarGrowthInfoScRsp {
         static instance: GetPreAvatarGrowthInfoScRsp = GetPreAvatarGrowthInfoScRsp {
-            IHOKHLFHOCC: 0,
-            PHIBNKMIOGP: 0,
-            LIJCNGOHKHF: 0,
-            AEKFJKENPHN: 0,
-            DLAPKBDDBBC: 0,
-            FOJCCKACDHH: 0,
-            HDNIKCBLKIL: 0,
-            MKHLDLFONKN: ::std::string::String::new(),
-            EGDDNPEONKC: 0,
-            LKKAMLLAFAE: 0,
-            retcode: 0,
-            FLAAGNAPDHP: 0,
-            KJAEOJBJOJD: 0,
-            DBIJFKOBKKH: 0,
-            KPJHBEILAIP: ::std::string::String::new(),
             KIEJACMOGAN: 0,
-            JJMKEADCIAG: 0,
-            DGGNNBCJOCC: 0,
+            LKKAMLLAFAE: 0,
+            DBIJFKOBKKH: 0,
+            FOJCCKACDHH: 0,
+            DLAPKBDDBBC: 0,
             EBPPBPMHDHI: ::std::string::String::new(),
-            OANPNFJJFHG: ::std::string::String::new(),
+            KJAEOJBJOJD: 0,
+            LIJCNGOHKHF: 0,
+            EGDDNPEONKC: 0,
+            retcode: 0,
+            MKHLDLFONKN: ::std::string::String::new(),
+            IHOKHLFHOCC: 0,
             PMMCFGMPLBA: 0,
+            HDNIKCBLKIL: 0,
+            OANPNFJJFHG: ::std::string::String::new(),
+            JJMKEADCIAG: 0,
+            FLAAGNAPDHP: 0,
+            KPJHBEILAIP: ::std::string::String::new(),
+            AEKFJKENPHN: 0,
+            PHIBNKMIOGP: 0,
+            DGGNNBCJOCC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -507,25 +507,25 @@ impl ::protobuf::reflect::ProtobufValue for GetPreAvatarGrowthInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!GetPreAvatarGrowthInfoScRsp.proto\"\xe5\x05\n\x1bGetPreAvatarGrowthIn\
-    foScRsp\x12\x20\n\x0bIHOKHLFHOCC\x18\x01\x20\x01(\rR\x0bIHOKHLFHOCC\x12\
-    \x20\n\x0bPHIBNKMIOGP\x18\x06\x20\x01(\rR\x0bPHIBNKMIOGP\x12\x20\n\x0bLI\
-    JCNGOHKHF\x18\t\x20\x01(\rR\x0bLIJCNGOHKHF\x12\x20\n\x0bAEKFJKENPHN\x18\
-    \x0c\x20\x01(\rR\x0bAEKFJKENPHN\x12\x20\n\x0bDLAPKBDDBBC\x18\x05\x20\x01\
-    (\rR\x0bDLAPKBDDBBC\x12\x20\n\x0bFOJCCKACDHH\x18\x07\x20\x01(\rR\x0bFOJC\
-    CKACDHH\x12\x20\n\x0bHDNIKCBLKIL\x18\x02\x20\x01(\rR\x0bHDNIKCBLKIL\x12!\
-    \n\x0bMKHLDLFONKN\x18\x94\x07\x20\x01(\tR\x0bMKHLDLFONKN\x12\x20\n\x0bEG\
-    DDNPEONKC\x18\x0f\x20\x01(\rR\x0bEGDDNPEONKC\x12\x20\n\x0bLKKAMLLAFAE\
-    \x18\x04\x20\x01(\rR\x0bLKKAMLLAFAE\x12\x18\n\x07retcode\x18\x0e\x20\x01\
-    (\rR\x07retcode\x12\x20\n\x0bFLAAGNAPDHP\x18\r\x20\x01(\rR\x0bFLAAGNAPDH\
-    P\x12\x20\n\x0bKJAEOJBJOJD\x18\x0b\x20\x01(\rR\x0bKJAEOJBJOJD\x12\x20\n\
-    \x0bDBIJFKOBKKH\x18\x03\x20\x01(\rR\x0bDBIJFKOBKKH\x12!\n\x0bKPJHBEILAIP\
-    \x18\xb5\r\x20\x01(\tR\x0bKPJHBEILAIP\x12!\n\x0bKIEJACMOGAN\x18\xca\x0c\
-    \x20\x01(\rR\x0bKIEJACMOGAN\x12\x20\n\x0bJJMKEADCIAG\x18\x08\x20\x01(\rR\
-    \x0bJJMKEADCIAG\x12!\n\x0bDGGNNBCJOCC\x18\xe6\x0c\x20\x01(\rR\x0bDGGNNBC\
-    JOCC\x12!\n\x0bEBPPBPMHDHI\x18\xf9\x0b\x20\x01(\tR\x0bEBPPBPMHDHI\x12!\n\
-    \x0bOANPNFJJFHG\x18\xf4\x05\x20\x01(\tR\x0bOANPNFJJFHG\x12\x20\n\x0bPMMC\
-    FGMPLBA\x18\n\x20\x01(\rR\x0bPMMCFGMPLBAb\x06proto3\
+    \n!GetPreAvatarGrowthInfoScRsp.proto\"\xe4\x05\n\x1bGetPreAvatarGrowthIn\
+    foScRsp\x12!\n\x0bKIEJACMOGAN\x18\xdd\x04\x20\x01(\rR\x0bKIEJACMOGAN\x12\
+    \x20\n\x0bLKKAMLLAFAE\x18\x04\x20\x01(\rR\x0bLKKAMLLAFAE\x12\x20\n\x0bDB\
+    IJFKOBKKH\x18\x01\x20\x01(\rR\x0bDBIJFKOBKKH\x12\x20\n\x0bFOJCCKACDHH\
+    \x18\x07\x20\x01(\rR\x0bFOJCCKACDHH\x12\x20\n\x0bDLAPKBDDBBC\x18\x05\x20\
+    \x01(\rR\x0bDLAPKBDDBBC\x12\x20\n\x0bEBPPBPMHDHI\x18>\x20\x01(\tR\x0bEBP\
+    PBPMHDHI\x12\x20\n\x0bKJAEOJBJOJD\x18\t\x20\x01(\rR\x0bKJAEOJBJOJD\x12\
+    \x20\n\x0bLIJCNGOHKHF\x18\r\x20\x01(\rR\x0bLIJCNGOHKHF\x12\x20\n\x0bEGDD\
+    NPEONKC\x18\x0b\x20\x01(\rR\x0bEGDDNPEONKC\x12\x18\n\x07retcode\x18\x03\
+    \x20\x01(\rR\x07retcode\x12!\n\x0bMKHLDLFONKN\x18\xa3\x06\x20\x01(\tR\
+    \x0bMKHLDLFONKN\x12\x20\n\x0bIHOKHLFHOCC\x18\x06\x20\x01(\rR\x0bIHOKHLFH\
+    OCC\x12\x20\n\x0bPMMCFGMPLBA\x18\x0c\x20\x01(\rR\x0bPMMCFGMPLBA\x12\x20\
+    \n\x0bHDNIKCBLKIL\x18\x02\x20\x01(\rR\x0bHDNIKCBLKIL\x12!\n\x0bOANPNFJJF\
+    HG\x18\x80\x0c\x20\x01(\tR\x0bOANPNFJJFHG\x12\x20\n\x0bJJMKEADCIAG\x18\
+    \x08\x20\x01(\rR\x0bJJMKEADCIAG\x12\x20\n\x0bFLAAGNAPDHP\x18\n\x20\x01(\
+    \rR\x0bFLAAGNAPDHP\x12!\n\x0bKPJHBEILAIP\x18\xff\x06\x20\x01(\tR\x0bKPJH\
+    BEILAIP\x12\x20\n\x0bAEKFJKENPHN\x18\x0f\x20\x01(\rR\x0bAEKFJKENPHN\x12\
+    \x20\n\x0bPHIBNKMIOGP\x18\x0e\x20\x01(\rR\x0bPHIBNKMIOGP\x12!\n\x0bDGGNN\
+    BCJOCC\x18\xb6\x01\x20\x01(\rR\x0bDGGNNBCJOCCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

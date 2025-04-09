@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CIGJABKNKEO {
     // message fields
-    // @@protoc_insertion_point(field:CIGJABKNKEO.JHPIDNFBACE)
-    pub JHPIDNFBACE: u32,
     // @@protoc_insertion_point(field:CIGJABKNKEO.DCKHCKDHHCP)
     pub DCKHCKDHHCP: u64,
+    // @@protoc_insertion_point(field:CIGJABKNKEO.JHPIDNFBACE)
+    pub JHPIDNFBACE: u32,
     // @@protoc_insertion_point(field:CIGJABKNKEO.tid)
     pub tid: u32,
     // special fields
@@ -54,14 +54,14 @@ impl CIGJABKNKEO {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JHPIDNFBACE",
-            |m: &CIGJABKNKEO| { &m.JHPIDNFBACE },
-            |m: &mut CIGJABKNKEO| { &mut m.JHPIDNFBACE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DCKHCKDHHCP",
             |m: &CIGJABKNKEO| { &m.DCKHCKDHHCP },
             |m: &mut CIGJABKNKEO| { &mut m.DCKHCKDHHCP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JHPIDNFBACE",
+            |m: &CIGJABKNKEO| { &m.JHPIDNFBACE },
+            |m: &mut CIGJABKNKEO| { &mut m.JHPIDNFBACE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "tid",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for CIGJABKNKEO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.JHPIDNFBACE = is.read_uint32()?;
-                },
-                112 => {
+                120 => {
                     self.DCKHCKDHHCP = is.read_uint64()?;
                 },
                 64 => {
+                    self.JHPIDNFBACE = is.read_uint32()?;
+                },
+                96 => {
                     self.tid = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for CIGJABKNKEO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JHPIDNFBACE != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.JHPIDNFBACE);
-        }
         if self.DCKHCKDHHCP != 0 {
-            my_size += ::protobuf::rt::uint64_size(14, self.DCKHCKDHHCP);
+            my_size += ::protobuf::rt::uint64_size(15, self.DCKHCKDHHCP);
+        }
+        if self.JHPIDNFBACE != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.JHPIDNFBACE);
         }
         if self.tid != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.tid);
+            my_size += ::protobuf::rt::uint32_size(12, self.tid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for CIGJABKNKEO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JHPIDNFBACE != 0 {
-            os.write_uint32(10, self.JHPIDNFBACE)?;
-        }
         if self.DCKHCKDHHCP != 0 {
-            os.write_uint64(14, self.DCKHCKDHHCP)?;
+            os.write_uint64(15, self.DCKHCKDHHCP)?;
+        }
+        if self.JHPIDNFBACE != 0 {
+            os.write_uint32(8, self.JHPIDNFBACE)?;
         }
         if self.tid != 0 {
-            os.write_uint32(8, self.tid)?;
+            os.write_uint32(12, self.tid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for CIGJABKNKEO {
     }
 
     fn clear(&mut self) {
-        self.JHPIDNFBACE = 0;
         self.DCKHCKDHHCP = 0;
+        self.JHPIDNFBACE = 0;
         self.tid = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CIGJABKNKEO {
         static instance: CIGJABKNKEO = CIGJABKNKEO {
-            JHPIDNFBACE: 0,
             DCKHCKDHHCP: 0,
+            JHPIDNFBACE: 0,
             tid: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for CIGJABKNKEO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CIGJABKNKEO.proto\"c\n\x0bCIGJABKNKEO\x12\x20\n\x0bJHPIDNFBACE\x18\
-    \n\x20\x01(\rR\x0bJHPIDNFBACE\x12\x20\n\x0bDCKHCKDHHCP\x18\x0e\x20\x01(\
-    \x04R\x0bDCKHCKDHHCP\x12\x10\n\x03tid\x18\x08\x20\x01(\rR\x03tidb\x06pro\
-    to3\
+    \n\x11CIGJABKNKEO.proto\"c\n\x0bCIGJABKNKEO\x12\x20\n\x0bDCKHCKDHHCP\x18\
+    \x0f\x20\x01(\x04R\x0bDCKHCKDHHCP\x12\x20\n\x0bJHPIDNFBACE\x18\x08\x20\
+    \x01(\rR\x0bJHPIDNFBACE\x12\x10\n\x03tid\x18\x0c\x20\x01(\rR\x03tidb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

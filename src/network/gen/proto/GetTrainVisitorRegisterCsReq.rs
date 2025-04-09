@@ -72,7 +72,7 @@ impl ::protobuf::Message for GetTrainVisitorRegisterCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                48 => {
                     self.slot = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for GetTrainVisitorRegisterCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.slot != ::protobuf::EnumOrUnknown::new(super::JFJJFGAEOAB::JFJJFGAEOAB::TRAIN_VISITOR_REGISTER_GET_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(1, self.slot.value());
+            my_size += ::protobuf::rt::int32_size(6, self.slot.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for GetTrainVisitorRegisterCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.slot != ::protobuf::EnumOrUnknown::new(super::JFJJFGAEOAB::JFJJFGAEOAB::TRAIN_VISITOR_REGISTER_GET_TYPE_NONE) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.slot))?;
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.slot))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for GetTrainVisitorRegisterCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"GetTrainVisitorRegisterCsReq.proto\x1a\x11JFJJFGAEOAB.proto\"@\n\x1c\
-    GetTrainVisitorRegisterCsReq\x12\x20\n\x04slot\x18\x01\x20\x01(\x0e2\x0c\
+    GetTrainVisitorRegisterCsReq\x12\x20\n\x04slot\x18\x06\x20\x01(\x0e2\x0c\
     .JFJJFGAEOABR\x04slotb\x06proto3\
 ";
 

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HEHAOMIAMGL {
     // message fields
+    // @@protoc_insertion_point(field:HEHAOMIAMGL.KJDOLBOBKJF)
+    pub KJDOLBOBKJF: ::protobuf::EnumOrUnknown<super::AlleyEventState::AlleyEventState>,
     // @@protoc_insertion_point(field:HEHAOMIAMGL.FHICMGDFGBC)
     pub FHICMGDFGBC: u32,
     // @@protoc_insertion_point(field:HEHAOMIAMGL.NINGBNBMKOP)
     pub NINGBNBMKOP: u32,
-    // @@protoc_insertion_point(field:HEHAOMIAMGL.KJDOLBOBKJF)
-    pub KJDOLBOBKJF: ::protobuf::EnumOrUnknown<super::AlleyEventState::AlleyEventState>,
     // special fields
     // @@protoc_insertion_point(special_field:HEHAOMIAMGL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl HEHAOMIAMGL {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KJDOLBOBKJF",
+            |m: &HEHAOMIAMGL| { &m.KJDOLBOBKJF },
+            |m: &mut HEHAOMIAMGL| { &mut m.KJDOLBOBKJF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FHICMGDFGBC",
             |m: &HEHAOMIAMGL| { &m.FHICMGDFGBC },
             |m: &mut HEHAOMIAMGL| { &mut m.FHICMGDFGBC },
@@ -62,11 +67,6 @@ impl HEHAOMIAMGL {
             "NINGBNBMKOP",
             |m: &HEHAOMIAMGL| { &m.NINGBNBMKOP },
             |m: &mut HEHAOMIAMGL| { &mut m.NINGBNBMKOP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KJDOLBOBKJF",
-            |m: &HEHAOMIAMGL| { &m.KJDOLBOBKJF },
-            |m: &mut HEHAOMIAMGL| { &mut m.KJDOLBOBKJF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HEHAOMIAMGL>(
             "HEHAOMIAMGL",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for HEHAOMIAMGL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                8 => {
+                    self.KJDOLBOBKJF = is.read_enum_or_unknown()?;
+                },
+                32 => {
                     self.FHICMGDFGBC = is.read_uint32()?;
                 },
-                88 => {
+                80 => {
                     self.NINGBNBMKOP = is.read_uint32()?;
-                },
-                48 => {
-                    self.KJDOLBOBKJF = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for HEHAOMIAMGL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.KJDOLBOBKJF != ::protobuf::EnumOrUnknown::new(super::AlleyEventState::AlleyEventState::ALLEY_STATE_NONE) {
+            my_size += ::protobuf::rt::int32_size(1, self.KJDOLBOBKJF.value());
+        }
         if self.FHICMGDFGBC != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.FHICMGDFGBC);
+            my_size += ::protobuf::rt::uint32_size(4, self.FHICMGDFGBC);
         }
         if self.NINGBNBMKOP != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.NINGBNBMKOP);
-        }
-        if self.KJDOLBOBKJF != ::protobuf::EnumOrUnknown::new(super::AlleyEventState::AlleyEventState::ALLEY_STATE_NONE) {
-            my_size += ::protobuf::rt::int32_size(6, self.KJDOLBOBKJF.value());
+            my_size += ::protobuf::rt::uint32_size(10, self.NINGBNBMKOP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for HEHAOMIAMGL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.KJDOLBOBKJF != ::protobuf::EnumOrUnknown::new(super::AlleyEventState::AlleyEventState::ALLEY_STATE_NONE) {
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.KJDOLBOBKJF))?;
+        }
         if self.FHICMGDFGBC != 0 {
-            os.write_uint32(8, self.FHICMGDFGBC)?;
+            os.write_uint32(4, self.FHICMGDFGBC)?;
         }
         if self.NINGBNBMKOP != 0 {
-            os.write_uint32(11, self.NINGBNBMKOP)?;
-        }
-        if self.KJDOLBOBKJF != ::protobuf::EnumOrUnknown::new(super::AlleyEventState::AlleyEventState::ALLEY_STATE_NONE) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.KJDOLBOBKJF))?;
+            os.write_uint32(10, self.NINGBNBMKOP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for HEHAOMIAMGL {
     }
 
     fn clear(&mut self) {
+        self.KJDOLBOBKJF = ::protobuf::EnumOrUnknown::new(super::AlleyEventState::AlleyEventState::ALLEY_STATE_NONE);
         self.FHICMGDFGBC = 0;
         self.NINGBNBMKOP = 0;
-        self.KJDOLBOBKJF = ::protobuf::EnumOrUnknown::new(super::AlleyEventState::AlleyEventState::ALLEY_STATE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HEHAOMIAMGL {
         static instance: HEHAOMIAMGL = HEHAOMIAMGL {
+            KJDOLBOBKJF: ::protobuf::EnumOrUnknown::from_i32(0),
             FHICMGDFGBC: 0,
             NINGBNBMKOP: 0,
-            KJDOLBOBKJF: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for HEHAOMIAMGL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HEHAOMIAMGL.proto\x1a\x15AlleyEventState.proto\"\x85\x01\n\x0bHEHA\
-    OMIAMGL\x12\x20\n\x0bFHICMGDFGBC\x18\x08\x20\x01(\rR\x0bFHICMGDFGBC\x12\
-    \x20\n\x0bNINGBNBMKOP\x18\x0b\x20\x01(\rR\x0bNINGBNBMKOP\x122\n\x0bKJDOL\
-    BOBKJF\x18\x06\x20\x01(\x0e2\x10.AlleyEventStateR\x0bKJDOLBOBKJFb\x06pro\
-    to3\
+    OMIAMGL\x122\n\x0bKJDOLBOBKJF\x18\x01\x20\x01(\x0e2\x10.AlleyEventStateR\
+    \x0bKJDOLBOBKJF\x12\x20\n\x0bFHICMGDFGBC\x18\x04\x20\x01(\rR\x0bFHICMGDF\
+    GBC\x12\x20\n\x0bNINGBNBMKOP\x18\n\x20\x01(\rR\x0bNINGBNBMKOPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

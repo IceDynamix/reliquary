@@ -94,6 +94,8 @@ pub struct MJBCEOFGHJH {
     pub HMPGMILJAPB: ::protobuf::MessageField<super::BDMGOEJBFGL::BDMGOEJBFGL>,
     // @@protoc_insertion_point(field:MJBCEOFGHJH.NOCIGFLLIFG)
     pub NOCIGFLLIFG: ::protobuf::MessageField<super::NMCMOHAHOPL::NMCMOHAHOPL>,
+    // @@protoc_insertion_point(field:MJBCEOFGHJH.OKGCIPAHMEI)
+    pub OKGCIPAHMEI: ::std::vec::Vec<super::PEDJNPJKOCK::PEDJNPJKOCK>,
     // special fields
     // @@protoc_insertion_point(special_field:MJBCEOFGHJH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -111,7 +113,7 @@ impl MJBCEOFGHJH {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(33);
+        let mut fields = ::std::vec::Vec::with_capacity(34);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ANGPLNALEDP",
@@ -278,6 +280,11 @@ impl MJBCEOFGHJH {
             |m: &MJBCEOFGHJH| { &m.NOCIGFLLIFG },
             |m: &mut MJBCEOFGHJH| { &mut m.NOCIGFLLIFG },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OKGCIPAHMEI",
+            |m: &MJBCEOFGHJH| { &m.OKGCIPAHMEI },
+            |m: &mut MJBCEOFGHJH| { &mut m.OKGCIPAHMEI },
+        ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MJBCEOFGHJH>(
             "MJBCEOFGHJH",
             fields,
@@ -425,6 +432,9 @@ impl ::protobuf::Message for MJBCEOFGHJH {
                 314 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.NOCIGFLLIFG)?;
                 },
+                338 => {
+                    self.OKGCIPAHMEI.push(is.read_message()?);
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -555,6 +565,10 @@ impl ::protobuf::Message for MJBCEOFGHJH {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        for value in &self.OKGCIPAHMEI {
+            let len = value.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -669,6 +683,9 @@ impl ::protobuf::Message for MJBCEOFGHJH {
         if let Some(v) = self.NOCIGFLLIFG.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(39, v, os)?;
         }
+        for v in &self.OKGCIPAHMEI {
+            ::protobuf::rt::write_message_field_with_cached_size(42, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -719,6 +736,7 @@ impl ::protobuf::Message for MJBCEOFGHJH {
         self.BILLJJBFIOL.clear();
         self.HMPGMILJAPB.clear();
         self.NOCIGFLLIFG.clear();
+        self.OKGCIPAHMEI.clear();
         self.special_fields.clear();
     }
 
@@ -752,44 +770,46 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     dBattleInfo.proto\x1a\x11GMKEPCOMHPN.proto\x1a\x11IBFFAJOHKMO.proto\x1a\
     \x11IIIPHJIMNID.proto\x1a\x11JCKFFMPCGGB.proto\x1a\x11JFFNDOBBNFB.proto\
     \x1a\x11LAFIENGMEMJ.proto\x1a\x11MCFPDCGENOK.proto\x1a\x11MMNDJAMEBML.pr\
-    oto\x1a\x11MOFBIGPOALM.proto\x1a\x11NMCMOHAHOPL.proto\"\xdd\x0c\n\x0bMJB\
-    CEOFGHJH\x12\x20\n\x0bANGPLNALEDP\x18\x01\x20\x01(\rR\x0bANGPLNALEDP\x12\
-    \x20\n\x0bKHKFKDNBHPE\x18\x02\x20\x01(\rR\x0bKHKFKDNBHPE\x12\x20\n\x0bFE\
-    IFDEGKEAP\x18\x03\x20\x03(\rR\x0bFEIFDEGKEAP\x12\x20\n\x0bBFDOBFLLJBE\
-    \x18\x04\x20\x01(\rR\x0bBFDOBFLLJBE\x12\x20\n\x0bNNMDMPKCCKE\x18\x05\x20\
-    \x01(\x01R\x0bNNMDMPKCCKE\x12\x20\n\x0bBCLNMIDFFOH\x18\x06\x20\x01(\x01R\
-    \x0bBCLNMIDFFOH\x12.\n\x0bAKFKCPFABMK\x18\x07\x20\x03(\x0b2\x0c.MOFBIGPO\
-    ALMR\x0bAKFKCPFABMK\x12.\n\x0bJOJFMJFOEHB\x18\x08\x20\x03(\x0b2\x0c.LAFI\
-    ENGMEMJR\x0bJOJFMJFOEHB\x12\x20\n\x0bLMKMFCDMFBI\x18\t\x20\x01(\rR\x0bLM\
-    KMFCDMFBI\x12\x20\n\x0bDNJIDNNNMNA\x18\n\x20\x01(\rR\x0bDNJIDNNNMNA\x12\
-    \x20\n\x0bHHHAPGMLBJC\x18\x0b\x20\x01(\rR\x0bHHHAPGMLBJC\x12\x20\n\x0bKJ\
-    MFJIFDGPJ\x18\x0c\x20\x01(\rR\x0bKJMFJIFDGPJ\x12?\n\x0bNBDEKMAKPKJ\x18\r\
-    \x20\x03(\x0b2\x1d.MJBCEOFGHJH.NBDEKMAKPKJEntryR\x0bNBDEKMAKPKJ\x12J\n\"\
-    BATTLE_TARGET_TYPE_CHALLENGE_SCORE\x18\x0e\x20\x01(\rR\x1eBATTLETARGETTY\
-    PECHALLENGESCORE\x12.\n\x0bIJOLOFBJINB\x18\x10\x20\x03(\x0b2\x0c.JCKFFMP\
-    CGGBR\x0bIJOLOFBJINB\x12.\n\x0bHBGCLMCGNFM\x18\x13\x20\x01(\x0e2\x0c.DIC\
-    MJHINCEGR\x0bHBGCLMCGNFM\x12.\n\x0bGLOJPNLNHJH\x18\x15\x20\x03(\x0b2\x0c\
-    .IBFFAJOHKMOR\x0bGLOJPNLNHJH\x12\x20\n\x0bIICCEFCGPAK\x18\x16\x20\x03(\
-    \x05R\x0bIICCEFCGPAK\x12.\n\x0bLDGAANONMBK\x18\x17\x20\x03(\x0b2\x0c.III\
-    PHJIMNIDR\x0bLDGAANONMBK\x12.\n\x0bADBHGKPNIKP\x18\x1a\x20\x03(\x0b2\x0c\
-    .MMNDJAMEBMLR\x0bADBHGKPNIKP\x12.\n\x0bECEFBCNOFKB\x18\x1b\x20\x03(\x0b2\
-    \x0c.GMKEPCOMHPNR\x0bECEFBCNOFKB\x12?\n\x0bEDBBOPKOOFK\x18\x1c\x20\x03(\
-    \x0b2\x1d.MJBCEOFGHJH.EDBBOPKOOFKEntryR\x0bEDBBOPKOOFK\x12.\n\x0bNAJLKHF\
-    LLPG\x18\x1d\x20\x03(\x0b2\x0c.EAGOCAHFGAFR\x0bNAJLKHFLLPG\x128\n\x0bJPG\
-    IFCHJDLK\x18\x1e\x20\x01(\x0b2\x16.EvolveBuildBattleInfoR\x0bJPGIFCHJDLK\
-    \x12.\n\x0bMNPHNJKGPKL\x18\x1f\x20\x01(\x0b2\x0c.CHDONIGOKNMR\x0bMNPHNJK\
-    GPKL\x12\x20\n\x0bLEDDODAMMNO\x18\x20\x20\x01(\x08R\x0bLEDDODAMMNO\x12.\
-    \n\x0bENBJCPKGCOL\x18!\x20\x03(\x0b2\x0c.JFFNDOBBNFBR\x0bENBJCPKGCOL\x12\
-    .\n\x0bNGOKNFDMHMF\x18\"\x20\x03(\x0b2\x0c.EKBAGMOMECLR\x0bNGOKNFDMHMF\
-    \x12\x20\n\x0bDKOEADNAMCJ\x18#\x20\x01(\rR\x0bDKOEADNAMCJ\x12.\n\x0bIDCG\
-    PAKJFMD\x18$\x20\x01(\x0b2\x0c.AIGKNHFANGAR\x0bIDCGPAKJFMD\x12.\n\x0bBIL\
-    LJJBFIOL\x18%\x20\x01(\x0b2\x0c.BAAGNOHEHMAR\x0bBILLJJBFIOL\x12.\n\x0bHM\
-    PGMILJAPB\x18&\x20\x01(\x0b2\x0c.BDMGOEJBFGLR\x0bHMPGMILJAPB\x12.\n\x0bN\
-    OCIGFLLIFG\x18'\x20\x01(\x0b2\x0c.NMCMOHAHOPLR\x0bNOCIGFLLIFG\x1a>\n\x10\
-    NBDEKMAKPKJEntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03key\x12\x14\n\
-    \x05value\x18\x02\x20\x01(\x02R\x05value:\x028\x01\x1aL\n\x10EDBBOPKOOFK\
-    Entry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\"\n\x05value\x18\
-    \x02\x20\x01(\x0b2\x0c.MCFPDCGENOKR\x05value:\x028\x01b\x06proto3\
+    oto\x1a\x11MOFBIGPOALM.proto\x1a\x11NMCMOHAHOPL.proto\x1a\x11PEDJNPJKOCK\
+    .proto\"\x8d\r\n\x0bMJBCEOFGHJH\x12\x20\n\x0bANGPLNALEDP\x18\x01\x20\x01\
+    (\rR\x0bANGPLNALEDP\x12\x20\n\x0bKHKFKDNBHPE\x18\x02\x20\x01(\rR\x0bKHKF\
+    KDNBHPE\x12\x20\n\x0bFEIFDEGKEAP\x18\x03\x20\x03(\rR\x0bFEIFDEGKEAP\x12\
+    \x20\n\x0bBFDOBFLLJBE\x18\x04\x20\x01(\rR\x0bBFDOBFLLJBE\x12\x20\n\x0bNN\
+    MDMPKCCKE\x18\x05\x20\x01(\x01R\x0bNNMDMPKCCKE\x12\x20\n\x0bBCLNMIDFFOH\
+    \x18\x06\x20\x01(\x01R\x0bBCLNMIDFFOH\x12.\n\x0bAKFKCPFABMK\x18\x07\x20\
+    \x03(\x0b2\x0c.MOFBIGPOALMR\x0bAKFKCPFABMK\x12.\n\x0bJOJFMJFOEHB\x18\x08\
+    \x20\x03(\x0b2\x0c.LAFIENGMEMJR\x0bJOJFMJFOEHB\x12\x20\n\x0bLMKMFCDMFBI\
+    \x18\t\x20\x01(\rR\x0bLMKMFCDMFBI\x12\x20\n\x0bDNJIDNNNMNA\x18\n\x20\x01\
+    (\rR\x0bDNJIDNNNMNA\x12\x20\n\x0bHHHAPGMLBJC\x18\x0b\x20\x01(\rR\x0bHHHA\
+    PGMLBJC\x12\x20\n\x0bKJMFJIFDGPJ\x18\x0c\x20\x01(\rR\x0bKJMFJIFDGPJ\x12?\
+    \n\x0bNBDEKMAKPKJ\x18\r\x20\x03(\x0b2\x1d.MJBCEOFGHJH.NBDEKMAKPKJEntryR\
+    \x0bNBDEKMAKPKJ\x12J\n\"BATTLE_TARGET_TYPE_CHALLENGE_SCORE\x18\x0e\x20\
+    \x01(\rR\x1eBATTLETARGETTYPECHALLENGESCORE\x12.\n\x0bIJOLOFBJINB\x18\x10\
+    \x20\x03(\x0b2\x0c.JCKFFMPCGGBR\x0bIJOLOFBJINB\x12.\n\x0bHBGCLMCGNFM\x18\
+    \x13\x20\x01(\x0e2\x0c.DICMJHINCEGR\x0bHBGCLMCGNFM\x12.\n\x0bGLOJPNLNHJH\
+    \x18\x15\x20\x03(\x0b2\x0c.IBFFAJOHKMOR\x0bGLOJPNLNHJH\x12\x20\n\x0bIICC\
+    EFCGPAK\x18\x16\x20\x03(\x05R\x0bIICCEFCGPAK\x12.\n\x0bLDGAANONMBK\x18\
+    \x17\x20\x03(\x0b2\x0c.IIIPHJIMNIDR\x0bLDGAANONMBK\x12.\n\x0bADBHGKPNIKP\
+    \x18\x1a\x20\x03(\x0b2\x0c.MMNDJAMEBMLR\x0bADBHGKPNIKP\x12.\n\x0bECEFBCN\
+    OFKB\x18\x1b\x20\x03(\x0b2\x0c.GMKEPCOMHPNR\x0bECEFBCNOFKB\x12?\n\x0bEDB\
+    BOPKOOFK\x18\x1c\x20\x03(\x0b2\x1d.MJBCEOFGHJH.EDBBOPKOOFKEntryR\x0bEDBB\
+    OPKOOFK\x12.\n\x0bNAJLKHFLLPG\x18\x1d\x20\x03(\x0b2\x0c.EAGOCAHFGAFR\x0b\
+    NAJLKHFLLPG\x128\n\x0bJPGIFCHJDLK\x18\x1e\x20\x01(\x0b2\x16.EvolveBuildB\
+    attleInfoR\x0bJPGIFCHJDLK\x12.\n\x0bMNPHNJKGPKL\x18\x1f\x20\x01(\x0b2\
+    \x0c.CHDONIGOKNMR\x0bMNPHNJKGPKL\x12\x20\n\x0bLEDDODAMMNO\x18\x20\x20\
+    \x01(\x08R\x0bLEDDODAMMNO\x12.\n\x0bENBJCPKGCOL\x18!\x20\x03(\x0b2\x0c.J\
+    FFNDOBBNFBR\x0bENBJCPKGCOL\x12.\n\x0bNGOKNFDMHMF\x18\"\x20\x03(\x0b2\x0c\
+    .EKBAGMOMECLR\x0bNGOKNFDMHMF\x12\x20\n\x0bDKOEADNAMCJ\x18#\x20\x01(\rR\
+    \x0bDKOEADNAMCJ\x12.\n\x0bIDCGPAKJFMD\x18$\x20\x01(\x0b2\x0c.AIGKNHFANGA\
+    R\x0bIDCGPAKJFMD\x12.\n\x0bBILLJJBFIOL\x18%\x20\x01(\x0b2\x0c.BAAGNOHEHM\
+    AR\x0bBILLJJBFIOL\x12.\n\x0bHMPGMILJAPB\x18&\x20\x01(\x0b2\x0c.BDMGOEJBF\
+    GLR\x0bHMPGMILJAPB\x12.\n\x0bNOCIGFLLIFG\x18'\x20\x01(\x0b2\x0c.NMCMOHAH\
+    OPLR\x0bNOCIGFLLIFG\x12.\n\x0bOKGCIPAHMEI\x18*\x20\x03(\x0b2\x0c.PEDJNPJ\
+    KOCKR\x0bOKGCIPAHMEI\x1a>\n\x10NBDEKMAKPKJEntry\x12\x10\n\x03key\x18\x01\
+    \x20\x01(\tR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\x02R\x05value:\
+    \x028\x01\x1aL\n\x10EDBBOPKOOFKEntry\x12\x10\n\x03key\x18\x01\x20\x01(\r\
+    R\x03key\x12\"\n\x05value\x18\x02\x20\x01(\x0b2\x0c.MCFPDCGENOKR\x05valu\
+    e:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -806,7 +826,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(18);
+            let mut deps = ::std::vec::Vec::with_capacity(19);
             deps.push(super::AIGKNHFANGA::file_descriptor().clone());
             deps.push(super::BAAGNOHEHMA::file_descriptor().clone());
             deps.push(super::BDMGOEJBFGL::file_descriptor().clone());
@@ -825,6 +845,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             deps.push(super::MMNDJAMEBML::file_descriptor().clone());
             deps.push(super::MOFBIGPOALM::file_descriptor().clone());
             deps.push(super::NMCMOHAHOPL::file_descriptor().clone());
+            deps.push(super::PEDJNPJKOCK::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MJBCEOFGHJH::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GIGPOFFBIEO {
     // message fields
-    // @@protoc_insertion_point(field:GIGPOFFBIEO.CKMAHDGIBOH)
-    pub CKMAHDGIBOH: ::protobuf::MessageField<super::IMJMGEENCEH::IMJMGEENCEH>,
     // @@protoc_insertion_point(field:GIGPOFFBIEO.CMOGHIANDFL)
     pub CMOGHIANDFL: u32,
+    // @@protoc_insertion_point(field:GIGPOFFBIEO.CKMAHDGIBOH)
+    pub CKMAHDGIBOH: ::protobuf::MessageField<super::IMJMGEENCEH::IMJMGEENCEH>,
     // special fields
     // @@protoc_insertion_point(special_field:GIGPOFFBIEO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GIGPOFFBIEO {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IMJMGEENCEH::IMJMGEENCEH>(
-            "CKMAHDGIBOH",
-            |m: &GIGPOFFBIEO| { &m.CKMAHDGIBOH },
-            |m: &mut GIGPOFFBIEO| { &mut m.CKMAHDGIBOH },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CMOGHIANDFL",
             |m: &GIGPOFFBIEO| { &m.CMOGHIANDFL },
             |m: &mut GIGPOFFBIEO| { &mut m.CMOGHIANDFL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IMJMGEENCEH::IMJMGEENCEH>(
+            "CKMAHDGIBOH",
+            |m: &GIGPOFFBIEO| { &m.CKMAHDGIBOH },
+            |m: &mut GIGPOFFBIEO| { &mut m.CKMAHDGIBOH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GIGPOFFBIEO>(
             "GIGPOFFBIEO",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GIGPOFFBIEO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CKMAHDGIBOH)?;
-                },
-                72 => {
+                48 => {
                     self.CMOGHIANDFL = is.read_uint32()?;
+                },
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CKMAHDGIBOH)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for GIGPOFFBIEO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.CMOGHIANDFL != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.CMOGHIANDFL);
+        }
         if let Some(v) = self.CKMAHDGIBOH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.CMOGHIANDFL != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.CMOGHIANDFL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for GIGPOFFBIEO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.CKMAHDGIBOH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        }
         if self.CMOGHIANDFL != 0 {
-            os.write_uint32(9, self.CMOGHIANDFL)?;
+            os.write_uint32(6, self.CMOGHIANDFL)?;
+        }
+        if let Some(v) = self.CKMAHDGIBOH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GIGPOFFBIEO {
     }
 
     fn clear(&mut self) {
-        self.CKMAHDGIBOH.clear();
         self.CMOGHIANDFL = 0;
+        self.CKMAHDGIBOH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GIGPOFFBIEO {
         static instance: GIGPOFFBIEO = GIGPOFFBIEO {
-            CKMAHDGIBOH: ::protobuf::MessageField::none(),
             CMOGHIANDFL: 0,
+            CKMAHDGIBOH: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for GIGPOFFBIEO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GIGPOFFBIEO.proto\x1a\x11IMJMGEENCEH.proto\"_\n\x0bGIGPOFFBIEO\x12\
-    .\n\x0bCKMAHDGIBOH\x18\x08\x20\x01(\x0b2\x0c.IMJMGEENCEHR\x0bCKMAHDGIBOH\
-    \x12\x20\n\x0bCMOGHIANDFL\x18\t\x20\x01(\rR\x0bCMOGHIANDFLb\x06proto3\
+    \x20\n\x0bCMOGHIANDFL\x18\x06\x20\x01(\rR\x0bCMOGHIANDFL\x12.\n\x0bCKMAH\
+    DGIBOH\x18\x01\x20\x01(\x0b2\x0c.IMJMGEENCEHR\x0bCKMAHDGIBOHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

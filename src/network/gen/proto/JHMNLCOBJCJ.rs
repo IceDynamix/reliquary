@@ -72,7 +72,7 @@ impl ::protobuf::Message for JHMNLCOBJCJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.ABBNHMGGPIL)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for JHMNLCOBJCJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.ABBNHMGGPIL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for JHMNLCOBJCJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JHMNLCOBJCJ.proto\x1a\x11ADGNFGFBCPE.proto\"=\n\x0bJHMNLCOBJCJ\x12\
-    .\n\x0bABBNHMGGPIL\x18\x01\x20\x01(\x0b2\x0c.ADGNFGFBCPER\x0bABBNHMGGPIL\
+    .\n\x0bABBNHMGGPIL\x18\x07\x20\x01(\x0b2\x0c.ADGNFGFBCPER\x0bABBNHMGGPIL\
     b\x06proto3\
 ";
 

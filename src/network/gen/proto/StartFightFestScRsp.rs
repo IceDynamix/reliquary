@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartFightFestScRsp {
     // message fields
-    // @@protoc_insertion_point(field:StartFightFestScRsp.ELGANMDPMID)
-    pub ELGANMDPMID: u32,
+    // @@protoc_insertion_point(field:StartFightFestScRsp.slot)
+    pub slot: ::protobuf::EnumOrUnknown<super::FightFestType::FightFestType>,
     // @@protoc_insertion_point(field:StartFightFestScRsp.FHICMGDFGBC)
     pub FHICMGDFGBC: u32,
+    // @@protoc_insertion_point(field:StartFightFestScRsp.ELGANMDPMID)
+    pub ELGANMDPMID: u32,
     // @@protoc_insertion_point(field:StartFightFestScRsp.BANFFJDIPIE)
     pub BANFFJDIPIE: ::protobuf::MessageField<super::CMBHDGKGPGP::CMBHDGKGPGP>,
     // @@protoc_insertion_point(field:StartFightFestScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:StartFightFestScRsp.slot)
-    pub slot: ::protobuf::EnumOrUnknown<super::FightFestType::FightFestType>,
     // special fields
     // @@protoc_insertion_point(special_field:StartFightFestScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,14 +58,19 @@ impl StartFightFestScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ELGANMDPMID",
-            |m: &StartFightFestScRsp| { &m.ELGANMDPMID },
-            |m: &mut StartFightFestScRsp| { &mut m.ELGANMDPMID },
+            "slot",
+            |m: &StartFightFestScRsp| { &m.slot },
+            |m: &mut StartFightFestScRsp| { &mut m.slot },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FHICMGDFGBC",
             |m: &StartFightFestScRsp| { &m.FHICMGDFGBC },
             |m: &mut StartFightFestScRsp| { &mut m.FHICMGDFGBC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ELGANMDPMID",
+            |m: &StartFightFestScRsp| { &m.ELGANMDPMID },
+            |m: &mut StartFightFestScRsp| { &mut m.ELGANMDPMID },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CMBHDGKGPGP::CMBHDGKGPGP>(
             "BANFFJDIPIE",
@@ -76,11 +81,6 @@ impl StartFightFestScRsp {
             "retcode",
             |m: &StartFightFestScRsp| { &m.retcode },
             |m: &mut StartFightFestScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "slot",
-            |m: &StartFightFestScRsp| { &m.slot },
-            |m: &mut StartFightFestScRsp| { &mut m.slot },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartFightFestScRsp>(
             "StartFightFestScRsp",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for StartFightFestScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                64 => {
+                    self.slot = is.read_enum_or_unknown()?;
+                },
+                80 => {
+                    self.FHICMGDFGBC = is.read_uint32()?;
+                },
                 88 => {
                     self.ELGANMDPMID = is.read_uint32()?;
                 },
-                24 => {
-                    self.FHICMGDFGBC = is.read_uint32()?;
-                },
-                50 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BANFFJDIPIE)?;
                 },
-                32 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
-                },
-                8 => {
-                    self.slot = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,21 +127,21 @@ impl ::protobuf::Message for StartFightFestScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ELGANMDPMID != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.ELGANMDPMID);
+        if self.slot != ::protobuf::EnumOrUnknown::new(super::FightFestType::FightFestType::FIGHT_FEST_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(8, self.slot.value());
         }
         if self.FHICMGDFGBC != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.FHICMGDFGBC);
+            my_size += ::protobuf::rt::uint32_size(10, self.FHICMGDFGBC);
+        }
+        if self.ELGANMDPMID != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.ELGANMDPMID);
         }
         if let Some(v) = self.BANFFJDIPIE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
-        }
-        if self.slot != ::protobuf::EnumOrUnknown::new(super::FightFestType::FightFestType::FIGHT_FEST_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(1, self.slot.value());
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for StartFightFestScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.slot != ::protobuf::EnumOrUnknown::new(super::FightFestType::FightFestType::FIGHT_FEST_TYPE_NONE) {
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.slot))?;
+        }
+        if self.FHICMGDFGBC != 0 {
+            os.write_uint32(10, self.FHICMGDFGBC)?;
+        }
         if self.ELGANMDPMID != 0 {
             os.write_uint32(11, self.ELGANMDPMID)?;
         }
-        if self.FHICMGDFGBC != 0 {
-            os.write_uint32(3, self.FHICMGDFGBC)?;
-        }
         if let Some(v) = self.BANFFJDIPIE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
-        }
-        if self.slot != ::protobuf::EnumOrUnknown::new(super::FightFestType::FightFestType::FIGHT_FEST_TYPE_NONE) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.slot))?;
+            os.write_uint32(5, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for StartFightFestScRsp {
     }
 
     fn clear(&mut self) {
-        self.ELGANMDPMID = 0;
+        self.slot = ::protobuf::EnumOrUnknown::new(super::FightFestType::FightFestType::FIGHT_FEST_TYPE_NONE);
         self.FHICMGDFGBC = 0;
+        self.ELGANMDPMID = 0;
         self.BANFFJDIPIE.clear();
         self.retcode = 0;
-        self.slot = ::protobuf::EnumOrUnknown::new(super::FightFestType::FightFestType::FIGHT_FEST_TYPE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartFightFestScRsp {
         static instance: StartFightFestScRsp = StartFightFestScRsp {
-            ELGANMDPMID: 0,
+            slot: ::protobuf::EnumOrUnknown::from_i32(0),
             FHICMGDFGBC: 0,
+            ELGANMDPMID: 0,
             BANFFJDIPIE: ::protobuf::MessageField::none(),
             retcode: 0,
-            slot: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,12 +221,12 @@ impl ::protobuf::reflect::ProtobufValue for StartFightFestScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19StartFightFestScRsp.proto\x1a\x11CMBHDGKGPGP.proto\x1a\x13FightFes\
-    tType.proto\"\xc7\x01\n\x13StartFightFestScRsp\x12\x20\n\x0bELGANMDPMID\
-    \x18\x0b\x20\x01(\rR\x0bELGANMDPMID\x12\x20\n\x0bFHICMGDFGBC\x18\x03\x20\
-    \x01(\rR\x0bFHICMGDFGBC\x12.\n\x0bBANFFJDIPIE\x18\x06\x20\x01(\x0b2\x0c.\
-    CMBHDGKGPGPR\x0bBANFFJDIPIE\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07\
-    retcode\x12\"\n\x04slot\x18\x01\x20\x01(\x0e2\x0e.FightFestTypeR\x04slot\
-    b\x06proto3\
+    tType.proto\"\xc7\x01\n\x13StartFightFestScRsp\x12\"\n\x04slot\x18\x08\
+    \x20\x01(\x0e2\x0e.FightFestTypeR\x04slot\x12\x20\n\x0bFHICMGDFGBC\x18\n\
+    \x20\x01(\rR\x0bFHICMGDFGBC\x12\x20\n\x0bELGANMDPMID\x18\x0b\x20\x01(\rR\
+    \x0bELGANMDPMID\x12.\n\x0bBANFFJDIPIE\x18\x0c\x20\x01(\x0b2\x0c.CMBHDGKG\
+    PGPR\x0bBANFFJDIPIE\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcodeb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

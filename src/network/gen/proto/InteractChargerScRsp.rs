@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct InteractChargerScRsp {
     // message fields
-    // @@protoc_insertion_point(field:InteractChargerScRsp.DLPGEDGEHLC)
-    pub DLPGEDGEHLC: ::protobuf::MessageField<super::OFCCFDPCILL::OFCCFDPCILL>,
-    // @@protoc_insertion_point(field:InteractChargerScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:InteractChargerScRsp.FGNHLHEDLPN)
     pub FGNHLHEDLPN: ::protobuf::MessageField<super::PBNBNCJCPEI::PBNBNCJCPEI>,
+    // @@protoc_insertion_point(field:InteractChargerScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:InteractChargerScRsp.DLPGEDGEHLC)
+    pub DLPGEDGEHLC: ::protobuf::MessageField<super::OFCCFDPCILL::OFCCFDPCILL>,
     // special fields
     // @@protoc_insertion_point(special_field:InteractChargerScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl InteractChargerScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OFCCFDPCILL::OFCCFDPCILL>(
-            "DLPGEDGEHLC",
-            |m: &InteractChargerScRsp| { &m.DLPGEDGEHLC },
-            |m: &mut InteractChargerScRsp| { &mut m.DLPGEDGEHLC },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PBNBNCJCPEI::PBNBNCJCPEI>(
+            "FGNHLHEDLPN",
+            |m: &InteractChargerScRsp| { &m.FGNHLHEDLPN },
+            |m: &mut InteractChargerScRsp| { &mut m.FGNHLHEDLPN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &InteractChargerScRsp| { &m.retcode },
             |m: &mut InteractChargerScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PBNBNCJCPEI::PBNBNCJCPEI>(
-            "FGNHLHEDLPN",
-            |m: &InteractChargerScRsp| { &m.FGNHLHEDLPN },
-            |m: &mut InteractChargerScRsp| { &mut m.FGNHLHEDLPN },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OFCCFDPCILL::OFCCFDPCILL>(
+            "DLPGEDGEHLC",
+            |m: &InteractChargerScRsp| { &m.DLPGEDGEHLC },
+            |m: &mut InteractChargerScRsp| { &mut m.DLPGEDGEHLC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<InteractChargerScRsp>(
             "InteractChargerScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for InteractChargerScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DLPGEDGEHLC)?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FGNHLHEDLPN)?;
                 },
-                80 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FGNHLHEDLPN)?;
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DLPGEDGEHLC)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for InteractChargerScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.DLPGEDGEHLC.as_ref() {
+        if let Some(v) = self.FGNHLHEDLPN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
-        if let Some(v) = self.FGNHLHEDLPN.as_ref() {
+        if let Some(v) = self.DLPGEDGEHLC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -124,14 +124,14 @@ impl ::protobuf::Message for InteractChargerScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.DLPGEDGEHLC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if let Some(v) = self.FGNHLHEDLPN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
-        if let Some(v) = self.FGNHLHEDLPN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if let Some(v) = self.DLPGEDGEHLC.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for InteractChargerScRsp {
     }
 
     fn clear(&mut self) {
-        self.DLPGEDGEHLC.clear();
-        self.retcode = 0;
         self.FGNHLHEDLPN.clear();
+        self.retcode = 0;
+        self.DLPGEDGEHLC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static InteractChargerScRsp {
         static instance: InteractChargerScRsp = InteractChargerScRsp {
-            DLPGEDGEHLC: ::protobuf::MessageField::none(),
-            retcode: 0,
             FGNHLHEDLPN: ::protobuf::MessageField::none(),
+            retcode: 0,
+            DLPGEDGEHLC: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for InteractChargerScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aInteractChargerScRsp.proto\x1a\x11OFCCFDPCILL.proto\x1a\x11PBNBNCJ\
-    CPEI.proto\"\x90\x01\n\x14InteractChargerScRsp\x12.\n\x0bDLPGEDGEHLC\x18\
-    \x0b\x20\x01(\x0b2\x0c.OFCCFDPCILLR\x0bDLPGEDGEHLC\x12\x18\n\x07retcode\
-    \x18\n\x20\x01(\rR\x07retcode\x12.\n\x0bFGNHLHEDLPN\x18\x0e\x20\x01(\x0b\
-    2\x0c.PBNBNCJCPEIR\x0bFGNHLHEDLPNb\x06proto3\
+    CPEI.proto\"\x90\x01\n\x14InteractChargerScRsp\x12.\n\x0bFGNHLHEDLPN\x18\
+    \x02\x20\x01(\x0b2\x0c.PBNBNCJCPEIR\x0bFGNHLHEDLPN\x12\x18\n\x07retcode\
+    \x18\x05\x20\x01(\rR\x07retcode\x12.\n\x0bDLPGEDGEHLC\x18\x06\x20\x01(\
+    \x0b2\x0c.OFCCFDPCILLR\x0bDLPGEDGEHLCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetSceneMapInfoCsReq {
     // message fields
+    // @@protoc_insertion_point(field:GetSceneMapInfoCsReq.IGFIKGHLLNO)
+    pub IGFIKGHLLNO: bool,
+    // @@protoc_insertion_point(field:GetSceneMapInfoCsReq.LOLCMPAOJBG)
+    pub LOLCMPAOJBG: u32,
     // @@protoc_insertion_point(field:GetSceneMapInfoCsReq.PPGEBHKKIIN)
     pub PPGEBHKKIIN: u32,
     // @@protoc_insertion_point(field:GetSceneMapInfoCsReq.MGGLDEJMDHL)
     pub MGGLDEJMDHL: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetSceneMapInfoCsReq.IGFIKGHLLNO)
-    pub IGFIKGHLLNO: bool,
     // @@protoc_insertion_point(field:GetSceneMapInfoCsReq.PICBDIMILIE)
     pub PICBDIMILIE: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetSceneMapInfoCsReq.LOLCMPAOJBG)
-    pub LOLCMPAOJBG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetSceneMapInfoCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,6 +58,16 @@ impl GetSceneMapInfoCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IGFIKGHLLNO",
+            |m: &GetSceneMapInfoCsReq| { &m.IGFIKGHLLNO },
+            |m: &mut GetSceneMapInfoCsReq| { &mut m.IGFIKGHLLNO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LOLCMPAOJBG",
+            |m: &GetSceneMapInfoCsReq| { &m.LOLCMPAOJBG },
+            |m: &mut GetSceneMapInfoCsReq| { &mut m.LOLCMPAOJBG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PPGEBHKKIIN",
             |m: &GetSceneMapInfoCsReq| { &m.PPGEBHKKIIN },
             |m: &mut GetSceneMapInfoCsReq| { &mut m.PPGEBHKKIIN },
@@ -67,20 +77,10 @@ impl GetSceneMapInfoCsReq {
             |m: &GetSceneMapInfoCsReq| { &m.MGGLDEJMDHL },
             |m: &mut GetSceneMapInfoCsReq| { &mut m.MGGLDEJMDHL },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IGFIKGHLLNO",
-            |m: &GetSceneMapInfoCsReq| { &m.IGFIKGHLLNO },
-            |m: &mut GetSceneMapInfoCsReq| { &mut m.IGFIKGHLLNO },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "PICBDIMILIE",
             |m: &GetSceneMapInfoCsReq| { &m.PICBDIMILIE },
             |m: &mut GetSceneMapInfoCsReq| { &mut m.PICBDIMILIE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LOLCMPAOJBG",
-            |m: &GetSceneMapInfoCsReq| { &m.LOLCMPAOJBG },
-            |m: &mut GetSceneMapInfoCsReq| { &mut m.LOLCMPAOJBG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetSceneMapInfoCsReq>(
             "GetSceneMapInfoCsReq",
@@ -100,26 +100,26 @@ impl ::protobuf::Message for GetSceneMapInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.PPGEBHKKIIN = is.read_uint32()?;
-                },
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.MGGLDEJMDHL)?;
-                },
-                8 => {
-                    self.MGGLDEJMDHL.push(is.read_uint32()?);
-                },
-                48 => {
+                24 => {
                     self.IGFIKGHLLNO = is.read_bool()?;
                 },
-                42 => {
+                16 => {
+                    self.LOLCMPAOJBG = is.read_uint32()?;
+                },
+                80 => {
+                    self.PPGEBHKKIIN = is.read_uint32()?;
+                },
+                34 => {
+                    is.read_repeated_packed_uint32_into(&mut self.MGGLDEJMDHL)?;
+                },
+                32 => {
+                    self.MGGLDEJMDHL.push(is.read_uint32()?);
+                },
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.PICBDIMILIE)?;
                 },
-                40 => {
+                8 => {
                     self.PICBDIMILIE.push(is.read_uint32()?);
-                },
-                88 => {
-                    self.LOLCMPAOJBG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -133,34 +133,34 @@ impl ::protobuf::Message for GetSceneMapInfoCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PPGEBHKKIIN != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.PPGEBHKKIIN);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.MGGLDEJMDHL);
         if self.IGFIKGHLLNO != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.PICBDIMILIE);
         if self.LOLCMPAOJBG != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.LOLCMPAOJBG);
+            my_size += ::protobuf::rt::uint32_size(2, self.LOLCMPAOJBG);
         }
+        if self.PPGEBHKKIIN != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.PPGEBHKKIIN);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.MGGLDEJMDHL);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.PICBDIMILIE);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PPGEBHKKIIN != 0 {
-            os.write_uint32(8, self.PPGEBHKKIIN)?;
-        }
-        os.write_repeated_packed_uint32(1, &self.MGGLDEJMDHL)?;
         if self.IGFIKGHLLNO != false {
-            os.write_bool(6, self.IGFIKGHLLNO)?;
+            os.write_bool(3, self.IGFIKGHLLNO)?;
         }
-        os.write_repeated_packed_uint32(5, &self.PICBDIMILIE)?;
         if self.LOLCMPAOJBG != 0 {
-            os.write_uint32(11, self.LOLCMPAOJBG)?;
+            os.write_uint32(2, self.LOLCMPAOJBG)?;
         }
+        if self.PPGEBHKKIIN != 0 {
+            os.write_uint32(10, self.PPGEBHKKIIN)?;
+        }
+        os.write_repeated_packed_uint32(4, &self.MGGLDEJMDHL)?;
+        os.write_repeated_packed_uint32(1, &self.PICBDIMILIE)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -178,21 +178,21 @@ impl ::protobuf::Message for GetSceneMapInfoCsReq {
     }
 
     fn clear(&mut self) {
+        self.IGFIKGHLLNO = false;
+        self.LOLCMPAOJBG = 0;
         self.PPGEBHKKIIN = 0;
         self.MGGLDEJMDHL.clear();
-        self.IGFIKGHLLNO = false;
         self.PICBDIMILIE.clear();
-        self.LOLCMPAOJBG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetSceneMapInfoCsReq {
         static instance: GetSceneMapInfoCsReq = GetSceneMapInfoCsReq {
+            IGFIKGHLLNO: false,
+            LOLCMPAOJBG: 0,
             PPGEBHKKIIN: 0,
             MGGLDEJMDHL: ::std::vec::Vec::new(),
-            IGFIKGHLLNO: false,
             PICBDIMILIE: ::std::vec::Vec::new(),
-            LOLCMPAOJBG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -218,11 +218,11 @@ impl ::protobuf::reflect::ProtobufValue for GetSceneMapInfoCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aGetSceneMapInfoCsReq.proto\"\xc0\x01\n\x14GetSceneMapInfoCsReq\x12\
-    \x20\n\x0bPPGEBHKKIIN\x18\x08\x20\x01(\rR\x0bPPGEBHKKIIN\x12\x20\n\x0bMG\
-    GLDEJMDHL\x18\x01\x20\x03(\rR\x0bMGGLDEJMDHL\x12\x20\n\x0bIGFIKGHLLNO\
-    \x18\x06\x20\x01(\x08R\x0bIGFIKGHLLNO\x12\x20\n\x0bPICBDIMILIE\x18\x05\
-    \x20\x03(\rR\x0bPICBDIMILIE\x12\x20\n\x0bLOLCMPAOJBG\x18\x0b\x20\x01(\rR\
-    \x0bLOLCMPAOJBGb\x06proto3\
+    \x20\n\x0bIGFIKGHLLNO\x18\x03\x20\x01(\x08R\x0bIGFIKGHLLNO\x12\x20\n\x0b\
+    LOLCMPAOJBG\x18\x02\x20\x01(\rR\x0bLOLCMPAOJBG\x12\x20\n\x0bPPGEBHKKIIN\
+    \x18\n\x20\x01(\rR\x0bPPGEBHKKIIN\x12\x20\n\x0bMGGLDEJMDHL\x18\x04\x20\
+    \x03(\rR\x0bMGGLDEJMDHL\x12\x20\n\x0bPICBDIMILIE\x18\x01\x20\x03(\rR\x0b\
+    PICBDIMILIEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

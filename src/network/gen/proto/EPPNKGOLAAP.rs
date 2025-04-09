@@ -72,7 +72,7 @@ impl ::protobuf::Message for EPPNKGOLAAP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                32 => {
                     self.BGDOIJPHFDB = is.read_bool()?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for EPPNKGOLAAP {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BGDOIJPHFDB != false {
-            os.write_bool(11, self.BGDOIJPHFDB)?;
+            os.write_bool(4, self.BGDOIJPHFDB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for EPPNKGOLAAP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EPPNKGOLAAP.proto\"/\n\x0bEPPNKGOLAAP\x12\x20\n\x0bBGDOIJPHFDB\x18\
-    \x0b\x20\x01(\x08R\x0bBGDOIJPHFDBb\x06proto3\
+    \x04\x20\x01(\x08R\x0bBGDOIJPHFDBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

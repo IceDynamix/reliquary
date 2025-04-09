@@ -79,10 +79,10 @@ impl ::protobuf::Message for EntityBindPropCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                80 => {
                     self.MJJMPIFLMKF = is.read_bool()?;
                 },
-                106 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MFNBANEDODD)?;
                 },
                 tag => {
@@ -111,10 +111,10 @@ impl ::protobuf::Message for EntityBindPropCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.MJJMPIFLMKF != false {
-            os.write_bool(7, self.MJJMPIFLMKF)?;
+            os.write_bool(10, self.MJJMPIFLMKF)?;
         }
         if let Some(v) = self.MFNBANEDODD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for EntityBindPropCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19EntityBindPropCsReq.proto\x1a\x11CFKHKILIHHF.proto\"g\n\x13EntityB\
-    indPropCsReq\x12\x20\n\x0bMJJMPIFLMKF\x18\x07\x20\x01(\x08R\x0bMJJMPIFLM\
-    KF\x12.\n\x0bMFNBANEDODD\x18\r\x20\x01(\x0b2\x0c.CFKHKILIHHFR\x0bMFNBANE\
+    indPropCsReq\x12\x20\n\x0bMJJMPIFLMKF\x18\n\x20\x01(\x08R\x0bMJJMPIFLMKF\
+    \x12.\n\x0bMFNBANEDODD\x18\x0f\x20\x01(\x0b2\x0c.CFKHKILIHHFR\x0bMFNBANE\
     DODDb\x06proto3\
 ";
 

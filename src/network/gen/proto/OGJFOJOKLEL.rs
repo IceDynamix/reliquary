@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OGJFOJOKLEL {
     // message fields
-    // @@protoc_insertion_point(field:OGJFOJOKLEL.level)
-    pub level: u32,
     // @@protoc_insertion_point(field:OGJFOJOKLEL.GGDIIBCDOBB)
     pub GGDIIBCDOBB: u32,
+    // @@protoc_insertion_point(field:OGJFOJOKLEL.level)
+    pub level: u32,
+    // @@protoc_insertion_point(field:OGJFOJOKLEL.ELGANMDPMID)
+    pub ELGANMDPMID: u32,
     // @@protoc_insertion_point(field:OGJFOJOKLEL.IHLEAMDIKKN)
     pub IHLEAMDIKKN: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
     // @@protoc_insertion_point(field:OGJFOJOKLEL.EGMAFIOOKJJ)
     pub EGMAFIOOKJJ: u32,
-    // @@protoc_insertion_point(field:OGJFOJOKLEL.ELGANMDPMID)
-    pub ELGANMDPMID: u32,
     // special fields
     // @@protoc_insertion_point(special_field:OGJFOJOKLEL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,14 +58,19 @@ impl OGJFOJOKLEL {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GGDIIBCDOBB",
+            |m: &OGJFOJOKLEL| { &m.GGDIIBCDOBB },
+            |m: &mut OGJFOJOKLEL| { &mut m.GGDIIBCDOBB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &OGJFOJOKLEL| { &m.level },
             |m: &mut OGJFOJOKLEL| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GGDIIBCDOBB",
-            |m: &OGJFOJOKLEL| { &m.GGDIIBCDOBB },
-            |m: &mut OGJFOJOKLEL| { &mut m.GGDIIBCDOBB },
+            "ELGANMDPMID",
+            |m: &OGJFOJOKLEL| { &m.ELGANMDPMID },
+            |m: &mut OGJFOJOKLEL| { &mut m.ELGANMDPMID },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IHLEAMDIKKN",
@@ -76,11 +81,6 @@ impl OGJFOJOKLEL {
             "EGMAFIOOKJJ",
             |m: &OGJFOJOKLEL| { &m.EGMAFIOOKJJ },
             |m: &mut OGJFOJOKLEL| { &mut m.EGMAFIOOKJJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ELGANMDPMID",
-            |m: &OGJFOJOKLEL| { &m.ELGANMDPMID },
-            |m: &mut OGJFOJOKLEL| { &mut m.ELGANMDPMID },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OGJFOJOKLEL>(
             "OGJFOJOKLEL",
@@ -101,19 +101,19 @@ impl ::protobuf::Message for OGJFOJOKLEL {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 120 => {
-                    self.level = is.read_uint32()?;
-                },
-                16 => {
                     self.GGDIIBCDOBB = is.read_uint32()?;
                 },
+                72 => {
+                    self.level = is.read_uint32()?;
+                },
                 96 => {
+                    self.ELGANMDPMID = is.read_uint32()?;
+                },
+                32 => {
                     self.IHLEAMDIKKN = is.read_enum_or_unknown()?;
                 },
-                112 => {
+                64 => {
                     self.EGMAFIOOKJJ = is.read_uint32()?;
-                },
-                40 => {
-                    self.ELGANMDPMID = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for OGJFOJOKLEL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.level);
-        }
         if self.GGDIIBCDOBB != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.GGDIIBCDOBB);
+            my_size += ::protobuf::rt::uint32_size(15, self.GGDIIBCDOBB);
         }
-        if self.IHLEAMDIKKN != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(12, self.IHLEAMDIKKN.value());
-        }
-        if self.EGMAFIOOKJJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.EGMAFIOOKJJ);
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.level);
         }
         if self.ELGANMDPMID != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.ELGANMDPMID);
+            my_size += ::protobuf::rt::uint32_size(12, self.ELGANMDPMID);
+        }
+        if self.IHLEAMDIKKN != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(4, self.IHLEAMDIKKN.value());
+        }
+        if self.EGMAFIOOKJJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.EGMAFIOOKJJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for OGJFOJOKLEL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.level != 0 {
-            os.write_uint32(15, self.level)?;
-        }
         if self.GGDIIBCDOBB != 0 {
-            os.write_uint32(2, self.GGDIIBCDOBB)?;
+            os.write_uint32(15, self.GGDIIBCDOBB)?;
         }
-        if self.IHLEAMDIKKN != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.IHLEAMDIKKN))?;
-        }
-        if self.EGMAFIOOKJJ != 0 {
-            os.write_uint32(14, self.EGMAFIOOKJJ)?;
+        if self.level != 0 {
+            os.write_uint32(9, self.level)?;
         }
         if self.ELGANMDPMID != 0 {
-            os.write_uint32(5, self.ELGANMDPMID)?;
+            os.write_uint32(12, self.ELGANMDPMID)?;
+        }
+        if self.IHLEAMDIKKN != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.IHLEAMDIKKN))?;
+        }
+        if self.EGMAFIOOKJJ != 0 {
+            os.write_uint32(8, self.EGMAFIOOKJJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for OGJFOJOKLEL {
     }
 
     fn clear(&mut self) {
-        self.level = 0;
         self.GGDIIBCDOBB = 0;
+        self.level = 0;
+        self.ELGANMDPMID = 0;
         self.IHLEAMDIKKN = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE);
         self.EGMAFIOOKJJ = 0;
-        self.ELGANMDPMID = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OGJFOJOKLEL {
         static instance: OGJFOJOKLEL = OGJFOJOKLEL {
-            level: 0,
             GGDIIBCDOBB: 0,
+            level: 0,
+            ELGANMDPMID: 0,
             IHLEAMDIKKN: ::protobuf::EnumOrUnknown::from_i32(0),
             EGMAFIOOKJJ: 0,
-            ELGANMDPMID: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,11 +220,11 @@ impl ::protobuf::reflect::ProtobufValue for OGJFOJOKLEL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OGJFOJOKLEL.proto\x1a\x10AvatarType.proto\"\xb8\x01\n\x0bOGJFOJOKL\
-    EL\x12\x14\n\x05level\x18\x0f\x20\x01(\rR\x05level\x12\x20\n\x0bGGDIIBCD\
-    OBB\x18\x02\x20\x01(\rR\x0bGGDIIBCDOBB\x12-\n\x0bIHLEAMDIKKN\x18\x0c\x20\
-    \x01(\x0e2\x0b.AvatarTypeR\x0bIHLEAMDIKKN\x12\x20\n\x0bEGMAFIOOKJJ\x18\
-    \x0e\x20\x01(\rR\x0bEGMAFIOOKJJ\x12\x20\n\x0bELGANMDPMID\x18\x05\x20\x01\
-    (\rR\x0bELGANMDPMIDb\x06proto3\
+    EL\x12\x20\n\x0bGGDIIBCDOBB\x18\x0f\x20\x01(\rR\x0bGGDIIBCDOBB\x12\x14\n\
+    \x05level\x18\t\x20\x01(\rR\x05level\x12\x20\n\x0bELGANMDPMID\x18\x0c\
+    \x20\x01(\rR\x0bELGANMDPMID\x12-\n\x0bIHLEAMDIKKN\x18\x04\x20\x01(\x0e2\
+    \x0b.AvatarTypeR\x0bIHLEAMDIKKN\x12\x20\n\x0bEGMAFIOOKJJ\x18\x08\x20\x01\
+    (\rR\x0bEGMAFIOOKJJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

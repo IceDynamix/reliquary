@@ -79,10 +79,10 @@ impl ::protobuf::Message for MarkChatEmojiCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                8 => {
                     self.NCKNKEBNGOH = is.read_bool()?;
                 },
-                96 => {
+                64 => {
                     self.CJGNKEILLHC = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for MarkChatEmojiCsReq {
             my_size += 1 + 1;
         }
         if self.CJGNKEILLHC != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.CJGNKEILLHC);
+            my_size += ::protobuf::rt::uint32_size(8, self.CJGNKEILLHC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for MarkChatEmojiCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.NCKNKEBNGOH != false {
-            os.write_bool(5, self.NCKNKEBNGOH)?;
+            os.write_bool(1, self.NCKNKEBNGOH)?;
         }
         if self.CJGNKEILLHC != 0 {
-            os.write_uint32(12, self.CJGNKEILLHC)?;
+            os.write_uint32(8, self.CJGNKEILLHC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for MarkChatEmojiCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18MarkChatEmojiCsReq.proto\"X\n\x12MarkChatEmojiCsReq\x12\x20\n\x0bN\
-    CKNKEBNGOH\x18\x05\x20\x01(\x08R\x0bNCKNKEBNGOH\x12\x20\n\x0bCJGNKEILLHC\
-    \x18\x0c\x20\x01(\rR\x0bCJGNKEILLHCb\x06proto3\
+    CKNKEBNGOH\x18\x01\x20\x01(\x08R\x0bNCKNKEBNGOH\x12\x20\n\x0bCJGNKEILLHC\
+    \x18\x08\x20\x01(\rR\x0bCJGNKEILLHCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

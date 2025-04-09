@@ -29,20 +29,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdMatchThreeModuleType {
     // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeModuleTypeNone)
     CmdMatchThreeModuleTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeSyncDataScNotify)
-    CmdMatchThreeSyncDataScNotify = 7406,
-    // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeLevelEndCsReq)
-    CmdMatchThreeLevelEndCsReq = 7441,
     // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeGetDataScRsp)
-    CmdMatchThreeGetDataScRsp = 7437,
+    CmdMatchThreeGetDataScRsp = 7418,
+    // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeLevelEndCsReq)
+    CmdMatchThreeLevelEndCsReq = 7414,
     // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeLevelEndScRsp)
-    CmdMatchThreeLevelEndScRsp = 7443,
+    CmdMatchThreeLevelEndScRsp = 7406,
     // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeSetBirdPosCsReq)
-    CmdMatchThreeSetBirdPosCsReq = 7433,
+    CmdMatchThreeSetBirdPosCsReq = 7409,
     // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeSetBirdPosScRsp)
-    CmdMatchThreeSetBirdPosScRsp = 7407,
+    CmdMatchThreeSetBirdPosScRsp = 7429,
+    // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeSyncDataScNotify)
+    CmdMatchThreeSyncDataScNotify = 7441,
     // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeGetDataCsReq)
-    CmdMatchThreeGetDataCsReq = 7426,
+    CmdMatchThreeGetDataCsReq = 7442,
 }
 
 impl ::protobuf::Enum for CmdMatchThreeModuleType {
@@ -55,13 +55,13 @@ impl ::protobuf::Enum for CmdMatchThreeModuleType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdMatchThreeModuleType> {
         match value {
             0 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeModuleTypeNone),
-            7406 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeSyncDataScNotify),
-            7441 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeLevelEndCsReq),
-            7437 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeGetDataScRsp),
-            7443 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeLevelEndScRsp),
-            7433 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeSetBirdPosCsReq),
-            7407 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeSetBirdPosScRsp),
-            7426 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeGetDataCsReq),
+            7418 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeGetDataScRsp),
+            7414 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeLevelEndCsReq),
+            7406 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeLevelEndScRsp),
+            7409 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeSetBirdPosCsReq),
+            7429 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeSetBirdPosScRsp),
+            7441 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeSyncDataScNotify),
+            7442 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeGetDataCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -69,12 +69,12 @@ impl ::protobuf::Enum for CmdMatchThreeModuleType {
     fn from_str(str: &str) -> ::std::option::Option<CmdMatchThreeModuleType> {
         match str {
             "CmdMatchThreeModuleTypeNone" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeModuleTypeNone),
-            "CmdMatchThreeSyncDataScNotify" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeSyncDataScNotify),
-            "CmdMatchThreeLevelEndCsReq" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeLevelEndCsReq),
             "CmdMatchThreeGetDataScRsp" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeGetDataScRsp),
+            "CmdMatchThreeLevelEndCsReq" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeLevelEndCsReq),
             "CmdMatchThreeLevelEndScRsp" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeLevelEndScRsp),
             "CmdMatchThreeSetBirdPosCsReq" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeSetBirdPosCsReq),
             "CmdMatchThreeSetBirdPosScRsp" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeSetBirdPosScRsp),
+            "CmdMatchThreeSyncDataScNotify" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeSyncDataScNotify),
             "CmdMatchThreeGetDataCsReq" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeGetDataCsReq),
             _ => ::std::option::Option::None
         }
@@ -82,12 +82,12 @@ impl ::protobuf::Enum for CmdMatchThreeModuleType {
 
     const VALUES: &'static [CmdMatchThreeModuleType] = &[
         CmdMatchThreeModuleType::CmdMatchThreeModuleTypeNone,
-        CmdMatchThreeModuleType::CmdMatchThreeSyncDataScNotify,
-        CmdMatchThreeModuleType::CmdMatchThreeLevelEndCsReq,
         CmdMatchThreeModuleType::CmdMatchThreeGetDataScRsp,
+        CmdMatchThreeModuleType::CmdMatchThreeLevelEndCsReq,
         CmdMatchThreeModuleType::CmdMatchThreeLevelEndScRsp,
         CmdMatchThreeModuleType::CmdMatchThreeSetBirdPosCsReq,
         CmdMatchThreeModuleType::CmdMatchThreeSetBirdPosScRsp,
+        CmdMatchThreeModuleType::CmdMatchThreeSyncDataScNotify,
         CmdMatchThreeModuleType::CmdMatchThreeGetDataCsReq,
     ];
 }
@@ -101,12 +101,12 @@ impl ::protobuf::EnumFull for CmdMatchThreeModuleType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdMatchThreeModuleType::CmdMatchThreeModuleTypeNone => 0,
-            CmdMatchThreeModuleType::CmdMatchThreeSyncDataScNotify => 1,
+            CmdMatchThreeModuleType::CmdMatchThreeGetDataScRsp => 1,
             CmdMatchThreeModuleType::CmdMatchThreeLevelEndCsReq => 2,
-            CmdMatchThreeModuleType::CmdMatchThreeGetDataScRsp => 3,
-            CmdMatchThreeModuleType::CmdMatchThreeLevelEndScRsp => 4,
-            CmdMatchThreeModuleType::CmdMatchThreeSetBirdPosCsReq => 5,
-            CmdMatchThreeModuleType::CmdMatchThreeSetBirdPosScRsp => 6,
+            CmdMatchThreeModuleType::CmdMatchThreeLevelEndScRsp => 3,
+            CmdMatchThreeModuleType::CmdMatchThreeSetBirdPosCsReq => 4,
+            CmdMatchThreeModuleType::CmdMatchThreeSetBirdPosScRsp => 5,
+            CmdMatchThreeModuleType::CmdMatchThreeSyncDataScNotify => 6,
             CmdMatchThreeModuleType::CmdMatchThreeGetDataCsReq => 7,
         };
         Self::enum_descriptor().value_by_index(index)
@@ -127,12 +127,12 @@ impl CmdMatchThreeModuleType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dCmdMatchThreeModuleType.proto*\xa6\x02\n\x17CmdMatchThreeModuleTyp\
-    e\x12\x1f\n\x1bCmdMatchThreeModuleTypeNone\x10\0\x12\"\n\x1dCmdMatchThre\
-    eSyncDataScNotify\x10\xee9\x12\x1f\n\x1aCmdMatchThreeLevelEndCsReq\x10\
-    \x91:\x12\x1e\n\x19CmdMatchThreeGetDataScRsp\x10\x8d:\x12\x1f\n\x1aCmdMa\
-    tchThreeLevelEndScRsp\x10\x93:\x12!\n\x1cCmdMatchThreeSetBirdPosCsReq\
-    \x10\x89:\x12!\n\x1cCmdMatchThreeSetBirdPosScRsp\x10\xef9\x12\x1e\n\x19C\
-    mdMatchThreeGetDataCsReq\x10\x82:b\x06proto3\
+    e\x12\x1f\n\x1bCmdMatchThreeModuleTypeNone\x10\0\x12\x1e\n\x19CmdMatchTh\
+    reeGetDataScRsp\x10\xfa9\x12\x1f\n\x1aCmdMatchThreeLevelEndCsReq\x10\xf6\
+    9\x12\x1f\n\x1aCmdMatchThreeLevelEndScRsp\x10\xee9\x12!\n\x1cCmdMatchThr\
+    eeSetBirdPosCsReq\x10\xf19\x12!\n\x1cCmdMatchThreeSetBirdPosScRsp\x10\
+    \x85:\x12\"\n\x1dCmdMatchThreeSyncDataScNotify\x10\x91:\x12\x1e\n\x19Cmd\
+    MatchThreeGetDataCsReq\x10\x92:b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

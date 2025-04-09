@@ -89,10 +89,10 @@ impl ::protobuf::Message for MonopolyClickCellScRsp {
                 104 => {
                     self.retcode = is.read_uint32()?;
                 },
-                112 => {
+                56 => {
                     self.HHCBJGHKCPC = is.read_uint32()?;
                 },
-                16 => {
+                112 => {
                     self.KGMEHNAOJMC = is.read_uint32()?;
                 },
                 tag => {
@@ -111,10 +111,10 @@ impl ::protobuf::Message for MonopolyClickCellScRsp {
             my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         if self.HHCBJGHKCPC != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.HHCBJGHKCPC);
+            my_size += ::protobuf::rt::uint32_size(7, self.HHCBJGHKCPC);
         }
         if self.KGMEHNAOJMC != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.KGMEHNAOJMC);
+            my_size += ::protobuf::rt::uint32_size(14, self.KGMEHNAOJMC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -126,10 +126,10 @@ impl ::protobuf::Message for MonopolyClickCellScRsp {
             os.write_uint32(13, self.retcode)?;
         }
         if self.HHCBJGHKCPC != 0 {
-            os.write_uint32(14, self.HHCBJGHKCPC)?;
+            os.write_uint32(7, self.HHCBJGHKCPC)?;
         }
         if self.KGMEHNAOJMC != 0 {
-            os.write_uint32(2, self.KGMEHNAOJMC)?;
+            os.write_uint32(14, self.KGMEHNAOJMC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,7 +185,7 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyClickCellScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cMonopolyClickCellScRsp.proto\"v\n\x16MonopolyClickCellScRsp\x12\
     \x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x12\x20\n\x0bHHCBJGHKCPC\
-    \x18\x0e\x20\x01(\rR\x0bHHCBJGHKCPC\x12\x20\n\x0bKGMEHNAOJMC\x18\x02\x20\
+    \x18\x07\x20\x01(\rR\x0bHHCBJGHKCPC\x12\x20\n\x0bKGMEHNAOJMC\x18\x0e\x20\
     \x01(\rR\x0bKGMEHNAOJMCb\x06proto3\
 ";
 

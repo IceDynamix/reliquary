@@ -79,10 +79,10 @@ impl ::protobuf::Message for AvatarPathChangedNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                120 => {
                     self.POALPJAKFAP = is.read_enum_or_unknown()?;
                 },
-                56 => {
+                112 => {
                     self.base_avatar_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for AvatarPathChangedNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.POALPJAKFAP != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
-            my_size += ::protobuf::rt::int32_size(14, self.POALPJAKFAP.value());
+            my_size += ::protobuf::rt::int32_size(15, self.POALPJAKFAP.value());
         }
         if self.base_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.base_avatar_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.base_avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for AvatarPathChangedNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.POALPJAKFAP != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.POALPJAKFAP))?;
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.POALPJAKFAP))?;
         }
         if self.base_avatar_id != 0 {
-            os.write_uint32(7, self.base_avatar_id)?;
+            os.write_uint32(14, self.base_avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for AvatarPathChangedNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dAvatarPathChangedNotify.proto\x1a\x19MultiPathAvatarType.proto\"w\
-    \n\x17AvatarPathChangedNotify\x126\n\x0bPOALPJAKFAP\x18\x0e\x20\x01(\x0e\
+    \n\x17AvatarPathChangedNotify\x126\n\x0bPOALPJAKFAP\x18\x0f\x20\x01(\x0e\
     2\x14.MultiPathAvatarTypeR\x0bPOALPJAKFAP\x12$\n\x0ebase_avatar_id\x18\
-    \x07\x20\x01(\rR\x0cbaseAvatarIdb\x06proto3\
+    \x0e\x20\x01(\rR\x0cbaseAvatarIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

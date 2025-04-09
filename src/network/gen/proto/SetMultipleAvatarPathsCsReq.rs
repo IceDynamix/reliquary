@@ -72,10 +72,10 @@ impl ::protobuf::Message for SetMultipleAvatarPathsCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                88 => {
                     self.FEIFDEGKEAP.push(is.read_enum_or_unknown()?);
                 },
-                26 => {
+                90 => {
                     ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.FEIFDEGKEAP)?
                 },
                 tag => {
@@ -90,14 +90,14 @@ impl ::protobuf::Message for SetMultipleAvatarPathsCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(3, &self.FEIFDEGKEAP);
+        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(11, &self.FEIFDEGKEAP);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_enum_or_unknown(3, &self.FEIFDEGKEAP)?;
+        os.write_repeated_packed_enum_or_unknown(11, &self.FEIFDEGKEAP)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,7 +147,7 @@ impl ::protobuf::reflect::ProtobufValue for SetMultipleAvatarPathsCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!SetMultipleAvatarPathsCsReq.proto\x1a\x19MultiPathAvatarType.proto\"U\
-    \n\x1bSetMultipleAvatarPathsCsReq\x126\n\x0bFEIFDEGKEAP\x18\x03\x20\x03(\
+    \n\x1bSetMultipleAvatarPathsCsReq\x126\n\x0bFEIFDEGKEAP\x18\x0b\x20\x03(\
     \x0e2\x14.MultiPathAvatarTypeR\x0bFEIFDEGKEAPb\x06proto3\
 ";
 

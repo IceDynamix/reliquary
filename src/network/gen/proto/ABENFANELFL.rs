@@ -79,10 +79,10 @@ impl ::protobuf::Message for ABENFANELFL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                72 => {
                     self.GGPLCPCHADN = is.read_int32()?;
                 },
-                109 => {
+                21 => {
                     self.LMBIODPOHGE = is.read_float()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for ABENFANELFL {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.GGPLCPCHADN != 0 {
-            my_size += ::protobuf::rt::int32_size(11, self.GGPLCPCHADN);
+            my_size += ::protobuf::rt::int32_size(9, self.GGPLCPCHADN);
         }
         if self.LMBIODPOHGE != 0. {
             my_size += 1 + 4;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for ABENFANELFL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.GGPLCPCHADN != 0 {
-            os.write_int32(11, self.GGPLCPCHADN)?;
+            os.write_int32(9, self.GGPLCPCHADN)?;
         }
         if self.LMBIODPOHGE != 0. {
-            os.write_float(13, self.LMBIODPOHGE)?;
+            os.write_float(2, self.LMBIODPOHGE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for ABENFANELFL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ABENFANELFL.proto\"Q\n\x0bABENFANELFL\x12\x20\n\x0bGGPLCPCHADN\x18\
-    \x0b\x20\x01(\x05R\x0bGGPLCPCHADN\x12\x20\n\x0bLMBIODPOHGE\x18\r\x20\x01\
+    \t\x20\x01(\x05R\x0bGGPLCPCHADN\x12\x20\n\x0bLMBIODPOHGE\x18\x02\x20\x01\
     (\x02R\x0bLMBIODPOHGEb\x06proto3\
 ";
 

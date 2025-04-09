@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterSceneCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EnterSceneCsReq.DLBEDAONNKH)
-    pub DLBEDAONNKH: bool,
-    // @@protoc_insertion_point(field:EnterSceneCsReq.EMDHEKKOCMD)
-    pub EMDHEKKOCMD: u32,
-    // @@protoc_insertion_point(field:EnterSceneCsReq.CCIIHMMJOEM)
-    pub CCIIHMMJOEM: u32,
-    // @@protoc_insertion_point(field:EnterSceneCsReq.LOLCMPAOJBG)
-    pub LOLCMPAOJBG: u32,
     // @@protoc_insertion_point(field:EnterSceneCsReq.PHMJMACHGGP)
     pub PHMJMACHGGP: u32,
+    // @@protoc_insertion_point(field:EnterSceneCsReq.EMDHEKKOCMD)
+    pub EMDHEKKOCMD: u32,
+    // @@protoc_insertion_point(field:EnterSceneCsReq.LOLCMPAOJBG)
+    pub LOLCMPAOJBG: u32,
+    // @@protoc_insertion_point(field:EnterSceneCsReq.CCIIHMMJOEM)
+    pub CCIIHMMJOEM: u32,
+    // @@protoc_insertion_point(field:EnterSceneCsReq.DLBEDAONNKH)
+    pub DLBEDAONNKH: bool,
     // special fields
     // @@protoc_insertion_point(special_field:EnterSceneCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,9 +58,9 @@ impl EnterSceneCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DLBEDAONNKH",
-            |m: &EnterSceneCsReq| { &m.DLBEDAONNKH },
-            |m: &mut EnterSceneCsReq| { &mut m.DLBEDAONNKH },
+            "PHMJMACHGGP",
+            |m: &EnterSceneCsReq| { &m.PHMJMACHGGP },
+            |m: &mut EnterSceneCsReq| { &mut m.PHMJMACHGGP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EMDHEKKOCMD",
@@ -68,19 +68,19 @@ impl EnterSceneCsReq {
             |m: &mut EnterSceneCsReq| { &mut m.EMDHEKKOCMD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CCIIHMMJOEM",
-            |m: &EnterSceneCsReq| { &m.CCIIHMMJOEM },
-            |m: &mut EnterSceneCsReq| { &mut m.CCIIHMMJOEM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LOLCMPAOJBG",
             |m: &EnterSceneCsReq| { &m.LOLCMPAOJBG },
             |m: &mut EnterSceneCsReq| { &mut m.LOLCMPAOJBG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PHMJMACHGGP",
-            |m: &EnterSceneCsReq| { &m.PHMJMACHGGP },
-            |m: &mut EnterSceneCsReq| { &mut m.PHMJMACHGGP },
+            "CCIIHMMJOEM",
+            |m: &EnterSceneCsReq| { &m.CCIIHMMJOEM },
+            |m: &mut EnterSceneCsReq| { &mut m.CCIIHMMJOEM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DLBEDAONNKH",
+            |m: &EnterSceneCsReq| { &m.DLBEDAONNKH },
+            |m: &mut EnterSceneCsReq| { &mut m.DLBEDAONNKH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterSceneCsReq>(
             "EnterSceneCsReq",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for EnterSceneCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.DLBEDAONNKH = is.read_bool()?;
+                16 => {
+                    self.PHMJMACHGGP = is.read_uint32()?;
                 },
-                8 => {
+                96 => {
                     self.EMDHEKKOCMD = is.read_uint32()?;
                 },
                 48 => {
-                    self.CCIIHMMJOEM = is.read_uint32()?;
-                },
-                32 => {
                     self.LOLCMPAOJBG = is.read_uint32()?;
                 },
-                96 => {
-                    self.PHMJMACHGGP = is.read_uint32()?;
+                8 => {
+                    self.CCIIHMMJOEM = is.read_uint32()?;
+                },
+                112 => {
+                    self.DLBEDAONNKH = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for EnterSceneCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DLBEDAONNKH != false {
-            my_size += 1 + 1;
+        if self.PHMJMACHGGP != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.PHMJMACHGGP);
         }
         if self.EMDHEKKOCMD != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.EMDHEKKOCMD);
-        }
-        if self.CCIIHMMJOEM != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.CCIIHMMJOEM);
+            my_size += ::protobuf::rt::uint32_size(12, self.EMDHEKKOCMD);
         }
         if self.LOLCMPAOJBG != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.LOLCMPAOJBG);
+            my_size += ::protobuf::rt::uint32_size(6, self.LOLCMPAOJBG);
         }
-        if self.PHMJMACHGGP != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.PHMJMACHGGP);
+        if self.CCIIHMMJOEM != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.CCIIHMMJOEM);
+        }
+        if self.DLBEDAONNKH != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for EnterSceneCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DLBEDAONNKH != false {
-            os.write_bool(7, self.DLBEDAONNKH)?;
+        if self.PHMJMACHGGP != 0 {
+            os.write_uint32(2, self.PHMJMACHGGP)?;
         }
         if self.EMDHEKKOCMD != 0 {
-            os.write_uint32(1, self.EMDHEKKOCMD)?;
-        }
-        if self.CCIIHMMJOEM != 0 {
-            os.write_uint32(6, self.CCIIHMMJOEM)?;
+            os.write_uint32(12, self.EMDHEKKOCMD)?;
         }
         if self.LOLCMPAOJBG != 0 {
-            os.write_uint32(4, self.LOLCMPAOJBG)?;
+            os.write_uint32(6, self.LOLCMPAOJBG)?;
         }
-        if self.PHMJMACHGGP != 0 {
-            os.write_uint32(12, self.PHMJMACHGGP)?;
+        if self.CCIIHMMJOEM != 0 {
+            os.write_uint32(1, self.CCIIHMMJOEM)?;
+        }
+        if self.DLBEDAONNKH != false {
+            os.write_bool(14, self.DLBEDAONNKH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for EnterSceneCsReq {
     }
 
     fn clear(&mut self) {
-        self.DLBEDAONNKH = false;
-        self.EMDHEKKOCMD = 0;
-        self.CCIIHMMJOEM = 0;
-        self.LOLCMPAOJBG = 0;
         self.PHMJMACHGGP = 0;
+        self.EMDHEKKOCMD = 0;
+        self.LOLCMPAOJBG = 0;
+        self.CCIIHMMJOEM = 0;
+        self.DLBEDAONNKH = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterSceneCsReq {
         static instance: EnterSceneCsReq = EnterSceneCsReq {
-            DLBEDAONNKH: false,
-            EMDHEKKOCMD: 0,
-            CCIIHMMJOEM: 0,
-            LOLCMPAOJBG: 0,
             PHMJMACHGGP: 0,
+            EMDHEKKOCMD: 0,
+            LOLCMPAOJBG: 0,
+            CCIIHMMJOEM: 0,
+            DLBEDAONNKH: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,11 +220,11 @@ impl ::protobuf::reflect::ProtobufValue for EnterSceneCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15EnterSceneCsReq.proto\"\xbb\x01\n\x0fEnterSceneCsReq\x12\x20\n\x0b\
-    DLBEDAONNKH\x18\x07\x20\x01(\x08R\x0bDLBEDAONNKH\x12\x20\n\x0bEMDHEKKOCM\
-    D\x18\x01\x20\x01(\rR\x0bEMDHEKKOCMD\x12\x20\n\x0bCCIIHMMJOEM\x18\x06\
-    \x20\x01(\rR\x0bCCIIHMMJOEM\x12\x20\n\x0bLOLCMPAOJBG\x18\x04\x20\x01(\rR\
-    \x0bLOLCMPAOJBG\x12\x20\n\x0bPHMJMACHGGP\x18\x0c\x20\x01(\rR\x0bPHMJMACH\
-    GGPb\x06proto3\
+    PHMJMACHGGP\x18\x02\x20\x01(\rR\x0bPHMJMACHGGP\x12\x20\n\x0bEMDHEKKOCMD\
+    \x18\x0c\x20\x01(\rR\x0bEMDHEKKOCMD\x12\x20\n\x0bLOLCMPAOJBG\x18\x06\x20\
+    \x01(\rR\x0bLOLCMPAOJBG\x12\x20\n\x0bCCIIHMMJOEM\x18\x01\x20\x01(\rR\x0b\
+    CCIIHMMJOEM\x12\x20\n\x0bDLBEDAONNKH\x18\x0e\x20\x01(\x08R\x0bDLBEDAONNK\
+    Hb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

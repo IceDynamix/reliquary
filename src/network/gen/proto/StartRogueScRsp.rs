@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartRogueScRsp {
     // message fields
-    // @@protoc_insertion_point(field:StartRogueScRsp.LODDNCNPANO)
-    pub LODDNCNPANO: ::protobuf::MessageField<super::ILNFEFOBNEG::ILNFEFOBNEG>,
-    // @@protoc_insertion_point(field:StartRogueScRsp.IDOMKBKKKKL)
-    pub IDOMKBKKKKL: ::protobuf::MessageField<super::PPJCDCOAFDK::PPJCDCOAFDK>,
-    // @@protoc_insertion_point(field:StartRogueScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:StartRogueScRsp.CPBNMACLBEH)
-    pub CPBNMACLBEH: ::protobuf::MessageField<super::EIMJEAMDFKJ::EIMJEAMDFKJ>,
     // @@protoc_insertion_point(field:StartRogueScRsp.KEILFHHNLIH)
     pub KEILFHHNLIH: ::protobuf::MessageField<super::JJAFHFGJMOB::JJAFHFGJMOB>,
+    // @@protoc_insertion_point(field:StartRogueScRsp.IDOMKBKKKKL)
+    pub IDOMKBKKKKL: ::protobuf::MessageField<super::PPJCDCOAFDK::PPJCDCOAFDK>,
+    // @@protoc_insertion_point(field:StartRogueScRsp.LODDNCNPANO)
+    pub LODDNCNPANO: ::protobuf::MessageField<super::ILNFEFOBNEG::ILNFEFOBNEG>,
+    // @@protoc_insertion_point(field:StartRogueScRsp.CPBNMACLBEH)
+    pub CPBNMACLBEH: ::protobuf::MessageField<super::EIMJEAMDFKJ::EIMJEAMDFKJ>,
+    // @@protoc_insertion_point(field:StartRogueScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:StartRogueScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,30 +57,30 @@ impl StartRogueScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ILNFEFOBNEG::ILNFEFOBNEG>(
-            "LODDNCNPANO",
-            |m: &StartRogueScRsp| { &m.LODDNCNPANO },
-            |m: &mut StartRogueScRsp| { &mut m.LODDNCNPANO },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JJAFHFGJMOB::JJAFHFGJMOB>(
+            "KEILFHHNLIH",
+            |m: &StartRogueScRsp| { &m.KEILFHHNLIH },
+            |m: &mut StartRogueScRsp| { &mut m.KEILFHHNLIH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PPJCDCOAFDK::PPJCDCOAFDK>(
             "IDOMKBKKKKL",
             |m: &StartRogueScRsp| { &m.IDOMKBKKKKL },
             |m: &mut StartRogueScRsp| { &mut m.IDOMKBKKKKL },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &StartRogueScRsp| { &m.retcode },
-            |m: &mut StartRogueScRsp| { &mut m.retcode },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ILNFEFOBNEG::ILNFEFOBNEG>(
+            "LODDNCNPANO",
+            |m: &StartRogueScRsp| { &m.LODDNCNPANO },
+            |m: &mut StartRogueScRsp| { &mut m.LODDNCNPANO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EIMJEAMDFKJ::EIMJEAMDFKJ>(
             "CPBNMACLBEH",
             |m: &StartRogueScRsp| { &m.CPBNMACLBEH },
             |m: &mut StartRogueScRsp| { &mut m.CPBNMACLBEH },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JJAFHFGJMOB::JJAFHFGJMOB>(
-            "KEILFHHNLIH",
-            |m: &StartRogueScRsp| { &m.KEILFHHNLIH },
-            |m: &mut StartRogueScRsp| { &mut m.KEILFHHNLIH },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &StartRogueScRsp| { &m.retcode },
+            |m: &mut StartRogueScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartRogueScRsp>(
             "StartRogueScRsp",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for StartRogueScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KEILFHHNLIH)?;
+                },
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IDOMKBKKKKL)?;
+                },
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LODDNCNPANO)?;
                 },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IDOMKBKKKKL)?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CPBNMACLBEH)?;
                 },
                 8 => {
                     self.retcode = is.read_uint32()?;
-                },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CPBNMACLBEH)?;
-                },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KEILFHHNLIH)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,7 +127,7 @@ impl ::protobuf::Message for StartRogueScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.LODDNCNPANO.as_ref() {
+        if let Some(v) = self.KEILFHHNLIH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -135,16 +135,16 @@ impl ::protobuf::Message for StartRogueScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        if let Some(v) = self.LODDNCNPANO.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if let Some(v) = self.CPBNMACLBEH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.KEILFHHNLIH.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -152,20 +152,20 @@ impl ::protobuf::Message for StartRogueScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.LODDNCNPANO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if let Some(v) = self.KEILFHHNLIH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if let Some(v) = self.IDOMKBKKKKL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        }
+        if let Some(v) = self.LODDNCNPANO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        }
+        if let Some(v) = self.CPBNMACLBEH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.retcode != 0 {
             os.write_uint32(1, self.retcode)?;
-        }
-        if let Some(v) = self.CPBNMACLBEH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
-        if let Some(v) = self.KEILFHHNLIH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,21 +184,21 @@ impl ::protobuf::Message for StartRogueScRsp {
     }
 
     fn clear(&mut self) {
-        self.LODDNCNPANO.clear();
-        self.IDOMKBKKKKL.clear();
-        self.retcode = 0;
-        self.CPBNMACLBEH.clear();
         self.KEILFHHNLIH.clear();
+        self.IDOMKBKKKKL.clear();
+        self.LODDNCNPANO.clear();
+        self.CPBNMACLBEH.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartRogueScRsp {
         static instance: StartRogueScRsp = StartRogueScRsp {
-            LODDNCNPANO: ::protobuf::MessageField::none(),
-            IDOMKBKKKKL: ::protobuf::MessageField::none(),
-            retcode: 0,
-            CPBNMACLBEH: ::protobuf::MessageField::none(),
             KEILFHHNLIH: ::protobuf::MessageField::none(),
+            IDOMKBKKKKL: ::protobuf::MessageField::none(),
+            LODDNCNPANO: ::protobuf::MessageField::none(),
+            CPBNMACLBEH: ::protobuf::MessageField::none(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -225,12 +225,12 @@ impl ::protobuf::reflect::ProtobufValue for StartRogueScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15StartRogueScRsp.proto\x1a\x11EIMJEAMDFKJ.proto\x1a\x11ILNFEFOBNEG.\
     proto\x1a\x11JJAFHFGJMOB.proto\x1a\x11PPJCDCOAFDK.proto\"\xeb\x01\n\x0fS\
-    tartRogueScRsp\x12.\n\x0bLODDNCNPANO\x18\x0c\x20\x01(\x0b2\x0c.ILNFEFOBN\
-    EGR\x0bLODDNCNPANO\x12.\n\x0bIDOMKBKKKKL\x18\x08\x20\x01(\x0b2\x0c.PPJCD\
-    COAFDKR\x0bIDOMKBKKKKL\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retco\
-    de\x12.\n\x0bCPBNMACLBEH\x18\x06\x20\x01(\x0b2\x0c.EIMJEAMDFKJR\x0bCPBNM\
-    ACLBEH\x12.\n\x0bKEILFHHNLIH\x18\x07\x20\x01(\x0b2\x0c.JJAFHFGJMOBR\x0bK\
-    EILFHHNLIHb\x06proto3\
+    tartRogueScRsp\x12.\n\x0bKEILFHHNLIH\x18\x04\x20\x01(\x0b2\x0c.JJAFHFGJM\
+    OBR\x0bKEILFHHNLIH\x12.\n\x0bIDOMKBKKKKL\x18\x03\x20\x01(\x0b2\x0c.PPJCD\
+    COAFDKR\x0bIDOMKBKKKKL\x12.\n\x0bLODDNCNPANO\x18\r\x20\x01(\x0b2\x0c.ILN\
+    FEFOBNEGR\x0bLODDNCNPANO\x12.\n\x0bCPBNMACLBEH\x18\x02\x20\x01(\x0b2\x0c\
+    .EIMJEAMDFKJR\x0bCPBNMACLBEH\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\
+    \x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

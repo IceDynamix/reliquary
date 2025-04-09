@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetRedPointStatusScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SetRedPointStatusScNotify.JDAKKOFDGEP)
-    pub JDAKKOFDGEP: u32,
-    // @@protoc_insertion_point(field:SetRedPointStatusScNotify.LOLCMPAOJBG)
-    pub LOLCMPAOJBG: u32,
-    // @@protoc_insertion_point(field:SetRedPointStatusScNotify.IIPDEFCEDMC)
-    pub IIPDEFCEDMC: u32,
-    // @@protoc_insertion_point(field:SetRedPointStatusScNotify.KMONAGFELPG)
-    pub KMONAGFELPG: u32,
     // @@protoc_insertion_point(field:SetRedPointStatusScNotify.NJEHHFFDGHK)
     pub NJEHHFFDGHK: ::std::vec::Vec<super::NHJGHOKBDPK::NHJGHOKBDPK>,
+    // @@protoc_insertion_point(field:SetRedPointStatusScNotify.IIPDEFCEDMC)
+    pub IIPDEFCEDMC: u32,
+    // @@protoc_insertion_point(field:SetRedPointStatusScNotify.LOLCMPAOJBG)
+    pub LOLCMPAOJBG: u32,
+    // @@protoc_insertion_point(field:SetRedPointStatusScNotify.uid)
+    pub uid: u32,
+    // @@protoc_insertion_point(field:SetRedPointStatusScNotify.JDAKKOFDGEP)
+    pub JDAKKOFDGEP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SetRedPointStatusScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,15 +57,10 @@ impl SetRedPointStatusScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JDAKKOFDGEP",
-            |m: &SetRedPointStatusScNotify| { &m.JDAKKOFDGEP },
-            |m: &mut SetRedPointStatusScNotify| { &mut m.JDAKKOFDGEP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LOLCMPAOJBG",
-            |m: &SetRedPointStatusScNotify| { &m.LOLCMPAOJBG },
-            |m: &mut SetRedPointStatusScNotify| { &mut m.LOLCMPAOJBG },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NJEHHFFDGHK",
+            |m: &SetRedPointStatusScNotify| { &m.NJEHHFFDGHK },
+            |m: &mut SetRedPointStatusScNotify| { &mut m.NJEHHFFDGHK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IIPDEFCEDMC",
@@ -73,14 +68,19 @@ impl SetRedPointStatusScNotify {
             |m: &mut SetRedPointStatusScNotify| { &mut m.IIPDEFCEDMC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KMONAGFELPG",
-            |m: &SetRedPointStatusScNotify| { &m.KMONAGFELPG },
-            |m: &mut SetRedPointStatusScNotify| { &mut m.KMONAGFELPG },
+            "LOLCMPAOJBG",
+            |m: &SetRedPointStatusScNotify| { &m.LOLCMPAOJBG },
+            |m: &mut SetRedPointStatusScNotify| { &mut m.LOLCMPAOJBG },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NJEHHFFDGHK",
-            |m: &SetRedPointStatusScNotify| { &m.NJEHHFFDGHK },
-            |m: &mut SetRedPointStatusScNotify| { &mut m.NJEHHFFDGHK },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "uid",
+            |m: &SetRedPointStatusScNotify| { &m.uid },
+            |m: &mut SetRedPointStatusScNotify| { &mut m.uid },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JDAKKOFDGEP",
+            |m: &SetRedPointStatusScNotify| { &m.JDAKKOFDGEP },
+            |m: &mut SetRedPointStatusScNotify| { &mut m.JDAKKOFDGEP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetRedPointStatusScNotify>(
             "SetRedPointStatusScNotify",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for SetRedPointStatusScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.JDAKKOFDGEP = is.read_uint32()?;
-                },
-                80 => {
-                    self.LOLCMPAOJBG = is.read_uint32()?;
-                },
-                32 => {
-                    self.IIPDEFCEDMC = is.read_uint32()?;
-                },
-                24 => {
-                    self.KMONAGFELPG = is.read_uint32()?;
-                },
                 18 => {
                     self.NJEHHFFDGHK.push(is.read_message()?);
+                },
+                88 => {
+                    self.IIPDEFCEDMC = is.read_uint32()?;
+                },
+                104 => {
+                    self.LOLCMPAOJBG = is.read_uint32()?;
+                },
+                48 => {
+                    self.uid = is.read_uint32()?;
+                },
+                80 => {
+                    self.JDAKKOFDGEP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,43 +127,43 @@ impl ::protobuf::Message for SetRedPointStatusScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JDAKKOFDGEP != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.JDAKKOFDGEP);
-        }
-        if self.LOLCMPAOJBG != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.LOLCMPAOJBG);
-        }
-        if self.IIPDEFCEDMC != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.IIPDEFCEDMC);
-        }
-        if self.KMONAGFELPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.KMONAGFELPG);
-        }
         for value in &self.NJEHHFFDGHK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.IIPDEFCEDMC != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.IIPDEFCEDMC);
+        }
+        if self.LOLCMPAOJBG != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.LOLCMPAOJBG);
+        }
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.uid);
+        }
+        if self.JDAKKOFDGEP != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.JDAKKOFDGEP);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JDAKKOFDGEP != 0 {
-            os.write_uint32(15, self.JDAKKOFDGEP)?;
-        }
-        if self.LOLCMPAOJBG != 0 {
-            os.write_uint32(10, self.LOLCMPAOJBG)?;
-        }
-        if self.IIPDEFCEDMC != 0 {
-            os.write_uint32(4, self.IIPDEFCEDMC)?;
-        }
-        if self.KMONAGFELPG != 0 {
-            os.write_uint32(3, self.KMONAGFELPG)?;
-        }
         for v in &self.NJEHHFFDGHK {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
+        if self.IIPDEFCEDMC != 0 {
+            os.write_uint32(11, self.IIPDEFCEDMC)?;
+        }
+        if self.LOLCMPAOJBG != 0 {
+            os.write_uint32(13, self.LOLCMPAOJBG)?;
+        }
+        if self.uid != 0 {
+            os.write_uint32(6, self.uid)?;
+        }
+        if self.JDAKKOFDGEP != 0 {
+            os.write_uint32(10, self.JDAKKOFDGEP)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -181,21 +181,21 @@ impl ::protobuf::Message for SetRedPointStatusScNotify {
     }
 
     fn clear(&mut self) {
-        self.JDAKKOFDGEP = 0;
-        self.LOLCMPAOJBG = 0;
-        self.IIPDEFCEDMC = 0;
-        self.KMONAGFELPG = 0;
         self.NJEHHFFDGHK.clear();
+        self.IIPDEFCEDMC = 0;
+        self.LOLCMPAOJBG = 0;
+        self.uid = 0;
+        self.JDAKKOFDGEP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetRedPointStatusScNotify {
         static instance: SetRedPointStatusScNotify = SetRedPointStatusScNotify {
-            JDAKKOFDGEP: 0,
-            LOLCMPAOJBG: 0,
-            IIPDEFCEDMC: 0,
-            KMONAGFELPG: 0,
             NJEHHFFDGHK: ::std::vec::Vec::new(),
+            IIPDEFCEDMC: 0,
+            LOLCMPAOJBG: 0,
+            uid: 0,
+            JDAKKOFDGEP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,12 +220,12 @@ impl ::protobuf::reflect::ProtobufValue for SetRedPointStatusScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fSetRedPointStatusScNotify.proto\x1a\x11NHJGHOKBDPK.proto\"\xd3\x01\
-    \n\x19SetRedPointStatusScNotify\x12\x20\n\x0bJDAKKOFDGEP\x18\x0f\x20\x01\
-    (\rR\x0bJDAKKOFDGEP\x12\x20\n\x0bLOLCMPAOJBG\x18\n\x20\x01(\rR\x0bLOLCMP\
-    AOJBG\x12\x20\n\x0bIIPDEFCEDMC\x18\x04\x20\x01(\rR\x0bIIPDEFCEDMC\x12\
-    \x20\n\x0bKMONAGFELPG\x18\x03\x20\x01(\rR\x0bKMONAGFELPG\x12.\n\x0bNJEHH\
-    FFDGHK\x18\x02\x20\x03(\x0b2\x0c.NHJGHOKBDPKR\x0bNJEHHFFDGHKb\x06proto3\
+    \n\x1fSetRedPointStatusScNotify.proto\x1a\x11NHJGHOKBDPK.proto\"\xc3\x01\
+    \n\x19SetRedPointStatusScNotify\x12.\n\x0bNJEHHFFDGHK\x18\x02\x20\x03(\
+    \x0b2\x0c.NHJGHOKBDPKR\x0bNJEHHFFDGHK\x12\x20\n\x0bIIPDEFCEDMC\x18\x0b\
+    \x20\x01(\rR\x0bIIPDEFCEDMC\x12\x20\n\x0bLOLCMPAOJBG\x18\r\x20\x01(\rR\
+    \x0bLOLCMPAOJBG\x12\x10\n\x03uid\x18\x06\x20\x01(\rR\x03uid\x12\x20\n\
+    \x0bJDAKKOFDGEP\x18\n\x20\x01(\rR\x0bJDAKKOFDGEPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

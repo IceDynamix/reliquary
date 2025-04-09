@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PEJEKIOKLEJ {
     // message fields
-    // @@protoc_insertion_point(field:PEJEKIOKLEJ.DLNJLMDALAF)
-    pub DLNJLMDALAF: ::protobuf::MessageField<super::BKDCJANPNBP::BKDCJANPNBP>,
     // @@protoc_insertion_point(field:PEJEKIOKLEJ.LFFCMNAHBDP)
     pub LFFCMNAHBDP: i64,
+    // @@protoc_insertion_point(field:PEJEKIOKLEJ.DLNJLMDALAF)
+    pub DLNJLMDALAF: ::protobuf::MessageField<super::BKDCJANPNBP::BKDCJANPNBP>,
     // special fields
     // @@protoc_insertion_point(special_field:PEJEKIOKLEJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl PEJEKIOKLEJ {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BKDCJANPNBP::BKDCJANPNBP>(
-            "DLNJLMDALAF",
-            |m: &PEJEKIOKLEJ| { &m.DLNJLMDALAF },
-            |m: &mut PEJEKIOKLEJ| { &mut m.DLNJLMDALAF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LFFCMNAHBDP",
             |m: &PEJEKIOKLEJ| { &m.LFFCMNAHBDP },
             |m: &mut PEJEKIOKLEJ| { &mut m.LFFCMNAHBDP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BKDCJANPNBP::BKDCJANPNBP>(
+            "DLNJLMDALAF",
+            |m: &PEJEKIOKLEJ| { &m.DLNJLMDALAF },
+            |m: &mut PEJEKIOKLEJ| { &mut m.DLNJLMDALAF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PEJEKIOKLEJ>(
             "PEJEKIOKLEJ",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PEJEKIOKLEJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DLNJLMDALAF)?;
-                },
                 80 => {
                     self.LFFCMNAHBDP = is.read_int64()?;
+                },
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DLNJLMDALAF)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for PEJEKIOKLEJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.LFFCMNAHBDP != 0 {
+            my_size += ::protobuf::rt::int64_size(10, self.LFFCMNAHBDP);
+        }
         if let Some(v) = self.DLNJLMDALAF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.LFFCMNAHBDP != 0 {
-            my_size += ::protobuf::rt::int64_size(10, self.LFFCMNAHBDP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for PEJEKIOKLEJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.DLNJLMDALAF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        }
         if self.LFFCMNAHBDP != 0 {
             os.write_int64(10, self.LFFCMNAHBDP)?;
+        }
+        if let Some(v) = self.DLNJLMDALAF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for PEJEKIOKLEJ {
     }
 
     fn clear(&mut self) {
-        self.DLNJLMDALAF.clear();
         self.LFFCMNAHBDP = 0;
+        self.DLNJLMDALAF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PEJEKIOKLEJ {
         static instance: PEJEKIOKLEJ = PEJEKIOKLEJ {
-            DLNJLMDALAF: ::protobuf::MessageField::none(),
             LFFCMNAHBDP: 0,
+            DLNJLMDALAF: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for PEJEKIOKLEJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PEJEKIOKLEJ.proto\x1a\x11BKDCJANPNBP.proto\"_\n\x0bPEJEKIOKLEJ\x12\
-    .\n\x0bDLNJLMDALAF\x18\x08\x20\x01(\x0b2\x0c.BKDCJANPNBPR\x0bDLNJLMDALAF\
-    \x12\x20\n\x0bLFFCMNAHBDP\x18\n\x20\x01(\x03R\x0bLFFCMNAHBDPb\x06proto3\
+    \x20\n\x0bLFFCMNAHBDP\x18\n\x20\x01(\x03R\x0bLFFCMNAHBDP\x12.\n\x0bDLNJL\
+    MDALAF\x18\x08\x20\x01(\x0b2\x0c.BKDCJANPNBPR\x0bDLNJLMDALAFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

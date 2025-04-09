@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SearchPlayerCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SearchPlayerCsReq.AHOILNFIIEG)
-    pub AHOILNFIIEG: bool,
     // @@protoc_insertion_point(field:SearchPlayerCsReq.CAEMJPOENOD)
     pub CAEMJPOENOD: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SearchPlayerCsReq.AHOILNFIIEG)
+    pub AHOILNFIIEG: bool,
     // special fields
     // @@protoc_insertion_point(special_field:SearchPlayerCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl SearchPlayerCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AHOILNFIIEG",
-            |m: &SearchPlayerCsReq| { &m.AHOILNFIIEG },
-            |m: &mut SearchPlayerCsReq| { &mut m.AHOILNFIIEG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "CAEMJPOENOD",
             |m: &SearchPlayerCsReq| { &m.CAEMJPOENOD },
             |m: &mut SearchPlayerCsReq| { &mut m.CAEMJPOENOD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AHOILNFIIEG",
+            |m: &SearchPlayerCsReq| { &m.AHOILNFIIEG },
+            |m: &mut SearchPlayerCsReq| { &mut m.AHOILNFIIEG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SearchPlayerCsReq>(
             "SearchPlayerCsReq",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for SearchPlayerCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.AHOILNFIIEG = is.read_bool()?;
-                },
-                82 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.CAEMJPOENOD)?;
                 },
-                80 => {
+                16 => {
                     self.CAEMJPOENOD.push(is.read_uint32()?);
+                },
+                56 => {
+                    self.AHOILNFIIEG = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for SearchPlayerCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.CAEMJPOENOD);
         if self.AHOILNFIIEG != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.CAEMJPOENOD);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(2, &self.CAEMJPOENOD)?;
         if self.AHOILNFIIEG != false {
-            os.write_bool(15, self.AHOILNFIIEG)?;
+            os.write_bool(7, self.AHOILNFIIEG)?;
         }
-        os.write_repeated_packed_uint32(10, &self.CAEMJPOENOD)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for SearchPlayerCsReq {
     }
 
     fn clear(&mut self) {
-        self.AHOILNFIIEG = false;
         self.CAEMJPOENOD.clear();
+        self.AHOILNFIIEG = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SearchPlayerCsReq {
         static instance: SearchPlayerCsReq = SearchPlayerCsReq {
-            AHOILNFIIEG: false,
             CAEMJPOENOD: ::std::vec::Vec::new(),
+            AHOILNFIIEG: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -164,9 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for SearchPlayerCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17SearchPlayerCsReq.proto\"W\n\x11SearchPlayerCsReq\x12\x20\n\x0bAHO\
-    ILNFIIEG\x18\x0f\x20\x01(\x08R\x0bAHOILNFIIEG\x12\x20\n\x0bCAEMJPOENOD\
-    \x18\n\x20\x03(\rR\x0bCAEMJPOENODb\x06proto3\
+    \n\x17SearchPlayerCsReq.proto\"W\n\x11SearchPlayerCsReq\x12\x20\n\x0bCAE\
+    MJPOENOD\x18\x02\x20\x03(\rR\x0bCAEMJPOENOD\x12\x20\n\x0bAHOILNFIIEG\x18\
+    \x07\x20\x01(\x08R\x0bAHOILNFIIEGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

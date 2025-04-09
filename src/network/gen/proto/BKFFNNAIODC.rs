@@ -30,10 +30,10 @@ pub struct BKFFNNAIODC {
     // message fields
     // @@protoc_insertion_point(field:BKFFNNAIODC.CKGFONMAEKO)
     pub CKGFONMAEKO: ::std::vec::Vec<super::GJOIBMFANHL::GJOIBMFANHL>,
-    // @@protoc_insertion_point(field:BKFFNNAIODC.PKFEOCAGECF)
-    pub PKFEOCAGECF: ::std::vec::Vec<super::FFAMNKOAIHF::FFAMNKOAIHF>,
     // @@protoc_insertion_point(field:BKFFNNAIODC.CPIOGJKFECH)
     pub CPIOGJKFECH: u32,
+    // @@protoc_insertion_point(field:BKFFNNAIODC.PKFEOCAGECF)
+    pub PKFEOCAGECF: ::std::vec::Vec<super::FFAMNKOAIHF::FFAMNKOAIHF>,
     // special fields
     // @@protoc_insertion_point(special_field:BKFFNNAIODC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl BKFFNNAIODC {
             |m: &BKFFNNAIODC| { &m.CKGFONMAEKO },
             |m: &mut BKFFNNAIODC| { &mut m.CKGFONMAEKO },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PKFEOCAGECF",
-            |m: &BKFFNNAIODC| { &m.PKFEOCAGECF },
-            |m: &mut BKFFNNAIODC| { &mut m.PKFEOCAGECF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CPIOGJKFECH",
             |m: &BKFFNNAIODC| { &m.CPIOGJKFECH },
             |m: &mut BKFFNNAIODC| { &mut m.CPIOGJKFECH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PKFEOCAGECF",
+            |m: &BKFFNNAIODC| { &m.PKFEOCAGECF },
+            |m: &mut BKFFNNAIODC| { &mut m.PKFEOCAGECF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BKFFNNAIODC>(
             "BKFFNNAIODC",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for BKFFNNAIODC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                58 => {
                     self.CKGFONMAEKO.push(is.read_message()?);
                 },
-                122 => {
-                    self.PKFEOCAGECF.push(is.read_message()?);
-                },
-                112 => {
+                48 => {
                     self.CPIOGJKFECH = is.read_uint32()?;
+                },
+                66 => {
+                    self.PKFEOCAGECF.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,13 +111,13 @@ impl ::protobuf::Message for BKFFNNAIODC {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.CPIOGJKFECH != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.CPIOGJKFECH);
+        }
         for value in &self.PKFEOCAGECF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.CPIOGJKFECH != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.CPIOGJKFECH);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -125,14 +125,14 @@ impl ::protobuf::Message for BKFFNNAIODC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.CKGFONMAEKO {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
-        for v in &self.PKFEOCAGECF {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         if self.CPIOGJKFECH != 0 {
-            os.write_uint32(14, self.CPIOGJKFECH)?;
+            os.write_uint32(6, self.CPIOGJKFECH)?;
         }
+        for v in &self.PKFEOCAGECF {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -151,16 +151,16 @@ impl ::protobuf::Message for BKFFNNAIODC {
 
     fn clear(&mut self) {
         self.CKGFONMAEKO.clear();
-        self.PKFEOCAGECF.clear();
         self.CPIOGJKFECH = 0;
+        self.PKFEOCAGECF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BKFFNNAIODC {
         static instance: BKFFNNAIODC = BKFFNNAIODC {
             CKGFONMAEKO: ::std::vec::Vec::new(),
-            PKFEOCAGECF: ::std::vec::Vec::new(),
             CPIOGJKFECH: 0,
+            PKFEOCAGECF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for BKFFNNAIODC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BKFFNNAIODC.proto\x1a\x11FFAMNKOAIHF.proto\x1a\x11GJOIBMFANHL.prot\
-    o\"\x8f\x01\n\x0bBKFFNNAIODC\x12.\n\x0bCKGFONMAEKO\x18\x08\x20\x03(\x0b2\
-    \x0c.GJOIBMFANHLR\x0bCKGFONMAEKO\x12.\n\x0bPKFEOCAGECF\x18\x0f\x20\x03(\
-    \x0b2\x0c.FFAMNKOAIHFR\x0bPKFEOCAGECF\x12\x20\n\x0bCPIOGJKFECH\x18\x0e\
-    \x20\x01(\rR\x0bCPIOGJKFECHb\x06proto3\
+    o\"\x8f\x01\n\x0bBKFFNNAIODC\x12.\n\x0bCKGFONMAEKO\x18\x07\x20\x03(\x0b2\
+    \x0c.GJOIBMFANHLR\x0bCKGFONMAEKO\x12\x20\n\x0bCPIOGJKFECH\x18\x06\x20\
+    \x01(\rR\x0bCPIOGJKFECH\x12.\n\x0bPKFEOCAGECF\x18\x08\x20\x03(\x0b2\x0c.\
+    FFAMNKOAIHFR\x0bPKFEOCAGECFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

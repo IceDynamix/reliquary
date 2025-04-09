@@ -93,19 +93,19 @@ impl ::protobuf::Message for GetRaidInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                42 => {
                     self.challenge_raid_list.push(is.read_message()?);
                 },
-                122 => {
+                50 => {
                     is.read_repeated_packed_uint32_into(&mut self.challenge_taken_reward_id_list)?;
                 },
-                120 => {
+                48 => {
                     self.challenge_taken_reward_id_list.push(is.read_uint32()?);
                 },
-                16 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
-                74 => {
+                34 => {
                     self.finished_raid_info_list.push(is.read_message()?);
                 },
                 tag => {
@@ -124,9 +124,9 @@ impl ::protobuf::Message for GetRaidInfoScRsp {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.challenge_taken_reward_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.challenge_taken_reward_id_list);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         for value in &self.finished_raid_info_list {
             let len = value.compute_size();
@@ -139,14 +139,14 @@ impl ::protobuf::Message for GetRaidInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.challenge_raid_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
-        os.write_repeated_packed_uint32(15, &self.challenge_taken_reward_id_list)?;
+        os.write_repeated_packed_uint32(6, &self.challenge_taken_reward_id_list)?;
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
         }
         for v in &self.finished_raid_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for GetRaidInfoScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16GetRaidInfoScRsp.proto\x1a\x11AKDAJAFPDEE.proto\x1a\x11AMDKBOHCFIA\
     .proto\"\xf3\x01\n\x10GetRaidInfoScRsp\x12<\n\x13challenge_raid_list\x18\
-    \x08\x20\x03(\x0b2\x0c.AMDKBOHCFIAR\x11challengeRaidList\x12B\n\x1echall\
-    enge_taken_reward_id_list\x18\x0f\x20\x03(\rR\x1achallengeTakenRewardIdL\
-    ist\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12C\n\x17finish\
-    ed_raid_info_list\x18\t\x20\x03(\x0b2\x0c.AKDAJAFPDEER\x14finishedRaidIn\
-    foListb\x06proto3\
+    \x05\x20\x03(\x0b2\x0c.AMDKBOHCFIAR\x11challengeRaidList\x12B\n\x1echall\
+    enge_taken_reward_id_list\x18\x06\x20\x03(\rR\x1achallengeTakenRewardIdL\
+    ist\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\x12C\n\x17finish\
+    ed_raid_info_list\x18\x04\x20\x03(\x0b2\x0c.AKDAJAFPDEER\x14finishedRaid\
+    InfoListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

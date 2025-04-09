@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HCJGPMDGBJO {
     // message fields
-    // @@protoc_insertion_point(field:HCJGPMDGBJO.KLMGAEBEAGK)
-    pub KLMGAEBEAGK: ::std::vec::Vec<super::INPINNPIHOB::INPINNPIHOB>,
+    // @@protoc_insertion_point(field:HCJGPMDGBJO.MNKCJFELCNG)
+    pub MNKCJFELCNG: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:HCJGPMDGBJO.EPCKCOOKCLJ)
     pub EPCKCOOKCLJ: ::std::vec::Vec<super::OBIPOOLIDAL::OBIPOOLIDAL>,
     // @@protoc_insertion_point(field:HCJGPMDGBJO.BLBFDCGCEDA)
     pub BLBFDCGCEDA: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:HCJGPMDGBJO.MNKCJFELCNG)
-    pub MNKCJFELCNG: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:HCJGPMDGBJO.KLMGAEBEAGK)
+    pub KLMGAEBEAGK: ::std::vec::Vec<super::INPINNPIHOB::INPINNPIHOB>,
     // special fields
     // @@protoc_insertion_point(special_field:HCJGPMDGBJO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,9 +56,9 @@ impl HCJGPMDGBJO {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KLMGAEBEAGK",
-            |m: &HCJGPMDGBJO| { &m.KLMGAEBEAGK },
-            |m: &mut HCJGPMDGBJO| { &mut m.KLMGAEBEAGK },
+            "MNKCJFELCNG",
+            |m: &HCJGPMDGBJO| { &m.MNKCJFELCNG },
+            |m: &mut HCJGPMDGBJO| { &mut m.MNKCJFELCNG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "EPCKCOOKCLJ",
@@ -71,9 +71,9 @@ impl HCJGPMDGBJO {
             |m: &mut HCJGPMDGBJO| { &mut m.BLBFDCGCEDA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MNKCJFELCNG",
-            |m: &HCJGPMDGBJO| { &m.MNKCJFELCNG },
-            |m: &mut HCJGPMDGBJO| { &mut m.MNKCJFELCNG },
+            "KLMGAEBEAGK",
+            |m: &HCJGPMDGBJO| { &m.KLMGAEBEAGK },
+            |m: &mut HCJGPMDGBJO| { &mut m.KLMGAEBEAGK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HCJGPMDGBJO>(
             "HCJGPMDGBJO",
@@ -93,23 +93,23 @@ impl ::protobuf::Message for HCJGPMDGBJO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    self.KLMGAEBEAGK.push(is.read_message()?);
-                },
-                34 => {
-                    self.EPCKCOOKCLJ.push(is.read_message()?);
-                },
-                66 => {
-                    is.read_repeated_packed_uint32_into(&mut self.BLBFDCGCEDA)?;
-                },
-                64 => {
-                    self.BLBFDCGCEDA.push(is.read_uint32()?);
-                },
-                82 => {
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.MNKCJFELCNG)?;
                 },
-                80 => {
+                24 => {
                     self.MNKCJFELCNG.push(is.read_uint32()?);
+                },
+                122 => {
+                    self.EPCKCOOKCLJ.push(is.read_message()?);
+                },
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.BLBFDCGCEDA)?;
+                },
+                40 => {
+                    self.BLBFDCGCEDA.push(is.read_uint32()?);
+                },
+                90 => {
+                    self.KLMGAEBEAGK.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -123,30 +123,30 @@ impl ::protobuf::Message for HCJGPMDGBJO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.KLMGAEBEAGK {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.MNKCJFELCNG);
         for value in &self.EPCKCOOKCLJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.BLBFDCGCEDA);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.MNKCJFELCNG);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.BLBFDCGCEDA);
+        for value in &self.KLMGAEBEAGK {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.KLMGAEBEAGK {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
+        os.write_repeated_packed_uint32(3, &self.MNKCJFELCNG)?;
         for v in &self.EPCKCOOKCLJ {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
-        os.write_repeated_packed_uint32(8, &self.BLBFDCGCEDA)?;
-        os.write_repeated_packed_uint32(10, &self.MNKCJFELCNG)?;
+        os.write_repeated_packed_uint32(5, &self.BLBFDCGCEDA)?;
+        for v in &self.KLMGAEBEAGK {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -164,19 +164,19 @@ impl ::protobuf::Message for HCJGPMDGBJO {
     }
 
     fn clear(&mut self) {
-        self.KLMGAEBEAGK.clear();
+        self.MNKCJFELCNG.clear();
         self.EPCKCOOKCLJ.clear();
         self.BLBFDCGCEDA.clear();
-        self.MNKCJFELCNG.clear();
+        self.KLMGAEBEAGK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HCJGPMDGBJO {
         static instance: HCJGPMDGBJO = HCJGPMDGBJO {
-            KLMGAEBEAGK: ::std::vec::Vec::new(),
+            MNKCJFELCNG: ::std::vec::Vec::new(),
             EPCKCOOKCLJ: ::std::vec::Vec::new(),
             BLBFDCGCEDA: ::std::vec::Vec::new(),
-            MNKCJFELCNG: ::std::vec::Vec::new(),
+            KLMGAEBEAGK: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for HCJGPMDGBJO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HCJGPMDGBJO.proto\x1a\x11INPINNPIHOB.proto\x1a\x11OBIPOOLIDAL.prot\
-    o\"\xb1\x01\n\x0bHCJGPMDGBJO\x12.\n\x0bKLMGAEBEAGK\x18\t\x20\x03(\x0b2\
-    \x0c.INPINNPIHOBR\x0bKLMGAEBEAGK\x12.\n\x0bEPCKCOOKCLJ\x18\x04\x20\x03(\
-    \x0b2\x0c.OBIPOOLIDALR\x0bEPCKCOOKCLJ\x12\x20\n\x0bBLBFDCGCEDA\x18\x08\
-    \x20\x03(\rR\x0bBLBFDCGCEDA\x12\x20\n\x0bMNKCJFELCNG\x18\n\x20\x03(\rR\
-    \x0bMNKCJFELCNGb\x06proto3\
+    o\"\xb1\x01\n\x0bHCJGPMDGBJO\x12\x20\n\x0bMNKCJFELCNG\x18\x03\x20\x03(\r\
+    R\x0bMNKCJFELCNG\x12.\n\x0bEPCKCOOKCLJ\x18\x0f\x20\x03(\x0b2\x0c.OBIPOOL\
+    IDALR\x0bEPCKCOOKCLJ\x12\x20\n\x0bBLBFDCGCEDA\x18\x05\x20\x03(\rR\x0bBLB\
+    FDCGCEDA\x12.\n\x0bKLMGAEBEAGK\x18\x0b\x20\x03(\x0b2\x0c.INPINNPIHOBR\
+    \x0bKLMGAEBEAGKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

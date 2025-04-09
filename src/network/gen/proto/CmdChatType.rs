@@ -29,38 +29,38 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdChatType {
     // @@protoc_insertion_point(enum_value:CmdChatType.CmdChatTypeNone)
     CmdChatTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdChatType.CmdRevcMsgScNotify)
-    CmdRevcMsgScNotify = 3958,
-    // @@protoc_insertion_point(enum_value:CmdChatType.CmdBatchMarkChatEmojiScRsp)
-    CmdBatchMarkChatEmojiScRsp = 3922,
-    // @@protoc_insertion_point(enum_value:CmdChatType.CmdGetLoginChatInfoScRsp)
-    CmdGetLoginChatInfoScRsp = 3980,
-    // @@protoc_insertion_point(enum_value:CmdChatType.CmdGetLoginChatInfoCsReq)
-    CmdGetLoginChatInfoCsReq = 3947,
-    // @@protoc_insertion_point(enum_value:CmdChatType.CmdGetPrivateChatHistoryScRsp)
-    CmdGetPrivateChatHistoryScRsp = 3956,
-    // @@protoc_insertion_point(enum_value:CmdChatType.CmdPrivateMsgOfflineUsersScNotify)
-    CmdPrivateMsgOfflineUsersScNotify = 3924,
     // @@protoc_insertion_point(enum_value:CmdChatType.CmdGetChatEmojiListScRsp)
-    CmdGetChatEmojiListScRsp = 3911,
-    // @@protoc_insertion_point(enum_value:CmdChatType.CmdSendMsgCsReq)
-    CmdSendMsgCsReq = 3901,
-    // @@protoc_insertion_point(enum_value:CmdChatType.CmdGetPrivateChatHistoryCsReq)
-    CmdGetPrivateChatHistoryCsReq = 3930,
-    // @@protoc_insertion_point(enum_value:CmdChatType.CmdBatchMarkChatEmojiCsReq)
-    CmdBatchMarkChatEmojiCsReq = 3949,
-    // @@protoc_insertion_point(enum_value:CmdChatType.CmdSendMsgScRsp)
-    CmdSendMsgScRsp = 3968,
+    CmdGetChatEmojiListScRsp = 3930,
     // @@protoc_insertion_point(enum_value:CmdChatType.CmdMarkChatEmojiCsReq)
-    CmdMarkChatEmojiCsReq = 3905,
-    // @@protoc_insertion_point(enum_value:CmdChatType.CmdGetChatFriendHistoryCsReq)
-    CmdGetChatFriendHistoryCsReq = 3997,
+    CmdMarkChatEmojiCsReq = 3995,
+    // @@protoc_insertion_point(enum_value:CmdChatType.CmdSendMsgCsReq)
+    CmdSendMsgCsReq = 3911,
+    // @@protoc_insertion_point(enum_value:CmdChatType.CmdGetPrivateChatHistoryScRsp)
+    CmdGetPrivateChatHistoryScRsp = 3906,
+    // @@protoc_insertion_point(enum_value:CmdChatType.CmdSendMsgScRsp)
+    CmdSendMsgScRsp = 3913,
     // @@protoc_insertion_point(enum_value:CmdChatType.CmdMarkChatEmojiScRsp)
-    CmdMarkChatEmojiScRsp = 3914,
-    // @@protoc_insertion_point(enum_value:CmdChatType.CmdGetChatEmojiListCsReq)
-    CmdGetChatEmojiListCsReq = 3928,
+    CmdMarkChatEmojiScRsp = 3918,
     // @@protoc_insertion_point(enum_value:CmdChatType.CmdGetChatFriendHistoryScRsp)
-    CmdGetChatFriendHistoryScRsp = 3976,
+    CmdGetChatFriendHistoryScRsp = 3989,
+    // @@protoc_insertion_point(enum_value:CmdChatType.CmdPrivateMsgOfflineUsersScNotify)
+    CmdPrivateMsgOfflineUsersScNotify = 3909,
+    // @@protoc_insertion_point(enum_value:CmdChatType.CmdBatchMarkChatEmojiScRsp)
+    CmdBatchMarkChatEmojiScRsp = 3950,
+    // @@protoc_insertion_point(enum_value:CmdChatType.CmdGetPrivateChatHistoryCsReq)
+    CmdGetPrivateChatHistoryCsReq = 3935,
+    // @@protoc_insertion_point(enum_value:CmdChatType.CmdRevcMsgScNotify)
+    CmdRevcMsgScNotify = 3947,
+    // @@protoc_insertion_point(enum_value:CmdChatType.CmdBatchMarkChatEmojiCsReq)
+    CmdBatchMarkChatEmojiCsReq = 3936,
+    // @@protoc_insertion_point(enum_value:CmdChatType.CmdGetLoginChatInfoCsReq)
+    CmdGetLoginChatInfoCsReq = 3973,
+    // @@protoc_insertion_point(enum_value:CmdChatType.CmdGetLoginChatInfoScRsp)
+    CmdGetLoginChatInfoScRsp = 3977,
+    // @@protoc_insertion_point(enum_value:CmdChatType.CmdGetChatFriendHistoryCsReq)
+    CmdGetChatFriendHistoryCsReq = 3970,
+    // @@protoc_insertion_point(enum_value:CmdChatType.CmdGetChatEmojiListCsReq)
+    CmdGetChatEmojiListCsReq = 3926,
 }
 
 impl ::protobuf::Enum for CmdChatType {
@@ -73,22 +73,22 @@ impl ::protobuf::Enum for CmdChatType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdChatType> {
         match value {
             0 => ::std::option::Option::Some(CmdChatType::CmdChatTypeNone),
-            3958 => ::std::option::Option::Some(CmdChatType::CmdRevcMsgScNotify),
-            3922 => ::std::option::Option::Some(CmdChatType::CmdBatchMarkChatEmojiScRsp),
-            3980 => ::std::option::Option::Some(CmdChatType::CmdGetLoginChatInfoScRsp),
-            3947 => ::std::option::Option::Some(CmdChatType::CmdGetLoginChatInfoCsReq),
-            3956 => ::std::option::Option::Some(CmdChatType::CmdGetPrivateChatHistoryScRsp),
-            3924 => ::std::option::Option::Some(CmdChatType::CmdPrivateMsgOfflineUsersScNotify),
-            3911 => ::std::option::Option::Some(CmdChatType::CmdGetChatEmojiListScRsp),
-            3901 => ::std::option::Option::Some(CmdChatType::CmdSendMsgCsReq),
-            3930 => ::std::option::Option::Some(CmdChatType::CmdGetPrivateChatHistoryCsReq),
-            3949 => ::std::option::Option::Some(CmdChatType::CmdBatchMarkChatEmojiCsReq),
-            3968 => ::std::option::Option::Some(CmdChatType::CmdSendMsgScRsp),
-            3905 => ::std::option::Option::Some(CmdChatType::CmdMarkChatEmojiCsReq),
-            3997 => ::std::option::Option::Some(CmdChatType::CmdGetChatFriendHistoryCsReq),
-            3914 => ::std::option::Option::Some(CmdChatType::CmdMarkChatEmojiScRsp),
-            3928 => ::std::option::Option::Some(CmdChatType::CmdGetChatEmojiListCsReq),
-            3976 => ::std::option::Option::Some(CmdChatType::CmdGetChatFriendHistoryScRsp),
+            3930 => ::std::option::Option::Some(CmdChatType::CmdGetChatEmojiListScRsp),
+            3995 => ::std::option::Option::Some(CmdChatType::CmdMarkChatEmojiCsReq),
+            3911 => ::std::option::Option::Some(CmdChatType::CmdSendMsgCsReq),
+            3906 => ::std::option::Option::Some(CmdChatType::CmdGetPrivateChatHistoryScRsp),
+            3913 => ::std::option::Option::Some(CmdChatType::CmdSendMsgScRsp),
+            3918 => ::std::option::Option::Some(CmdChatType::CmdMarkChatEmojiScRsp),
+            3989 => ::std::option::Option::Some(CmdChatType::CmdGetChatFriendHistoryScRsp),
+            3909 => ::std::option::Option::Some(CmdChatType::CmdPrivateMsgOfflineUsersScNotify),
+            3950 => ::std::option::Option::Some(CmdChatType::CmdBatchMarkChatEmojiScRsp),
+            3935 => ::std::option::Option::Some(CmdChatType::CmdGetPrivateChatHistoryCsReq),
+            3947 => ::std::option::Option::Some(CmdChatType::CmdRevcMsgScNotify),
+            3936 => ::std::option::Option::Some(CmdChatType::CmdBatchMarkChatEmojiCsReq),
+            3973 => ::std::option::Option::Some(CmdChatType::CmdGetLoginChatInfoCsReq),
+            3977 => ::std::option::Option::Some(CmdChatType::CmdGetLoginChatInfoScRsp),
+            3970 => ::std::option::Option::Some(CmdChatType::CmdGetChatFriendHistoryCsReq),
+            3926 => ::std::option::Option::Some(CmdChatType::CmdGetChatEmojiListCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -96,44 +96,44 @@ impl ::protobuf::Enum for CmdChatType {
     fn from_str(str: &str) -> ::std::option::Option<CmdChatType> {
         match str {
             "CmdChatTypeNone" => ::std::option::Option::Some(CmdChatType::CmdChatTypeNone),
-            "CmdRevcMsgScNotify" => ::std::option::Option::Some(CmdChatType::CmdRevcMsgScNotify),
-            "CmdBatchMarkChatEmojiScRsp" => ::std::option::Option::Some(CmdChatType::CmdBatchMarkChatEmojiScRsp),
-            "CmdGetLoginChatInfoScRsp" => ::std::option::Option::Some(CmdChatType::CmdGetLoginChatInfoScRsp),
-            "CmdGetLoginChatInfoCsReq" => ::std::option::Option::Some(CmdChatType::CmdGetLoginChatInfoCsReq),
-            "CmdGetPrivateChatHistoryScRsp" => ::std::option::Option::Some(CmdChatType::CmdGetPrivateChatHistoryScRsp),
-            "CmdPrivateMsgOfflineUsersScNotify" => ::std::option::Option::Some(CmdChatType::CmdPrivateMsgOfflineUsersScNotify),
             "CmdGetChatEmojiListScRsp" => ::std::option::Option::Some(CmdChatType::CmdGetChatEmojiListScRsp),
-            "CmdSendMsgCsReq" => ::std::option::Option::Some(CmdChatType::CmdSendMsgCsReq),
-            "CmdGetPrivateChatHistoryCsReq" => ::std::option::Option::Some(CmdChatType::CmdGetPrivateChatHistoryCsReq),
-            "CmdBatchMarkChatEmojiCsReq" => ::std::option::Option::Some(CmdChatType::CmdBatchMarkChatEmojiCsReq),
-            "CmdSendMsgScRsp" => ::std::option::Option::Some(CmdChatType::CmdSendMsgScRsp),
             "CmdMarkChatEmojiCsReq" => ::std::option::Option::Some(CmdChatType::CmdMarkChatEmojiCsReq),
-            "CmdGetChatFriendHistoryCsReq" => ::std::option::Option::Some(CmdChatType::CmdGetChatFriendHistoryCsReq),
+            "CmdSendMsgCsReq" => ::std::option::Option::Some(CmdChatType::CmdSendMsgCsReq),
+            "CmdGetPrivateChatHistoryScRsp" => ::std::option::Option::Some(CmdChatType::CmdGetPrivateChatHistoryScRsp),
+            "CmdSendMsgScRsp" => ::std::option::Option::Some(CmdChatType::CmdSendMsgScRsp),
             "CmdMarkChatEmojiScRsp" => ::std::option::Option::Some(CmdChatType::CmdMarkChatEmojiScRsp),
-            "CmdGetChatEmojiListCsReq" => ::std::option::Option::Some(CmdChatType::CmdGetChatEmojiListCsReq),
             "CmdGetChatFriendHistoryScRsp" => ::std::option::Option::Some(CmdChatType::CmdGetChatFriendHistoryScRsp),
+            "CmdPrivateMsgOfflineUsersScNotify" => ::std::option::Option::Some(CmdChatType::CmdPrivateMsgOfflineUsersScNotify),
+            "CmdBatchMarkChatEmojiScRsp" => ::std::option::Option::Some(CmdChatType::CmdBatchMarkChatEmojiScRsp),
+            "CmdGetPrivateChatHistoryCsReq" => ::std::option::Option::Some(CmdChatType::CmdGetPrivateChatHistoryCsReq),
+            "CmdRevcMsgScNotify" => ::std::option::Option::Some(CmdChatType::CmdRevcMsgScNotify),
+            "CmdBatchMarkChatEmojiCsReq" => ::std::option::Option::Some(CmdChatType::CmdBatchMarkChatEmojiCsReq),
+            "CmdGetLoginChatInfoCsReq" => ::std::option::Option::Some(CmdChatType::CmdGetLoginChatInfoCsReq),
+            "CmdGetLoginChatInfoScRsp" => ::std::option::Option::Some(CmdChatType::CmdGetLoginChatInfoScRsp),
+            "CmdGetChatFriendHistoryCsReq" => ::std::option::Option::Some(CmdChatType::CmdGetChatFriendHistoryCsReq),
+            "CmdGetChatEmojiListCsReq" => ::std::option::Option::Some(CmdChatType::CmdGetChatEmojiListCsReq),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdChatType] = &[
         CmdChatType::CmdChatTypeNone,
-        CmdChatType::CmdRevcMsgScNotify,
-        CmdChatType::CmdBatchMarkChatEmojiScRsp,
-        CmdChatType::CmdGetLoginChatInfoScRsp,
-        CmdChatType::CmdGetLoginChatInfoCsReq,
-        CmdChatType::CmdGetPrivateChatHistoryScRsp,
-        CmdChatType::CmdPrivateMsgOfflineUsersScNotify,
         CmdChatType::CmdGetChatEmojiListScRsp,
-        CmdChatType::CmdSendMsgCsReq,
-        CmdChatType::CmdGetPrivateChatHistoryCsReq,
-        CmdChatType::CmdBatchMarkChatEmojiCsReq,
-        CmdChatType::CmdSendMsgScRsp,
         CmdChatType::CmdMarkChatEmojiCsReq,
-        CmdChatType::CmdGetChatFriendHistoryCsReq,
+        CmdChatType::CmdSendMsgCsReq,
+        CmdChatType::CmdGetPrivateChatHistoryScRsp,
+        CmdChatType::CmdSendMsgScRsp,
         CmdChatType::CmdMarkChatEmojiScRsp,
-        CmdChatType::CmdGetChatEmojiListCsReq,
         CmdChatType::CmdGetChatFriendHistoryScRsp,
+        CmdChatType::CmdPrivateMsgOfflineUsersScNotify,
+        CmdChatType::CmdBatchMarkChatEmojiScRsp,
+        CmdChatType::CmdGetPrivateChatHistoryCsReq,
+        CmdChatType::CmdRevcMsgScNotify,
+        CmdChatType::CmdBatchMarkChatEmojiCsReq,
+        CmdChatType::CmdGetLoginChatInfoCsReq,
+        CmdChatType::CmdGetLoginChatInfoScRsp,
+        CmdChatType::CmdGetChatFriendHistoryCsReq,
+        CmdChatType::CmdGetChatEmojiListCsReq,
     ];
 }
 
@@ -146,22 +146,22 @@ impl ::protobuf::EnumFull for CmdChatType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdChatType::CmdChatTypeNone => 0,
-            CmdChatType::CmdRevcMsgScNotify => 1,
-            CmdChatType::CmdBatchMarkChatEmojiScRsp => 2,
-            CmdChatType::CmdGetLoginChatInfoScRsp => 3,
-            CmdChatType::CmdGetLoginChatInfoCsReq => 4,
-            CmdChatType::CmdGetPrivateChatHistoryScRsp => 5,
-            CmdChatType::CmdPrivateMsgOfflineUsersScNotify => 6,
-            CmdChatType::CmdGetChatEmojiListScRsp => 7,
-            CmdChatType::CmdSendMsgCsReq => 8,
-            CmdChatType::CmdGetPrivateChatHistoryCsReq => 9,
-            CmdChatType::CmdBatchMarkChatEmojiCsReq => 10,
-            CmdChatType::CmdSendMsgScRsp => 11,
-            CmdChatType::CmdMarkChatEmojiCsReq => 12,
-            CmdChatType::CmdGetChatFriendHistoryCsReq => 13,
-            CmdChatType::CmdMarkChatEmojiScRsp => 14,
-            CmdChatType::CmdGetChatEmojiListCsReq => 15,
-            CmdChatType::CmdGetChatFriendHistoryScRsp => 16,
+            CmdChatType::CmdGetChatEmojiListScRsp => 1,
+            CmdChatType::CmdMarkChatEmojiCsReq => 2,
+            CmdChatType::CmdSendMsgCsReq => 3,
+            CmdChatType::CmdGetPrivateChatHistoryScRsp => 4,
+            CmdChatType::CmdSendMsgScRsp => 5,
+            CmdChatType::CmdMarkChatEmojiScRsp => 6,
+            CmdChatType::CmdGetChatFriendHistoryScRsp => 7,
+            CmdChatType::CmdPrivateMsgOfflineUsersScNotify => 8,
+            CmdChatType::CmdBatchMarkChatEmojiScRsp => 9,
+            CmdChatType::CmdGetPrivateChatHistoryCsReq => 10,
+            CmdChatType::CmdRevcMsgScNotify => 11,
+            CmdChatType::CmdBatchMarkChatEmojiCsReq => 12,
+            CmdChatType::CmdGetLoginChatInfoCsReq => 13,
+            CmdChatType::CmdGetLoginChatInfoScRsp => 14,
+            CmdChatType::CmdGetChatFriendHistoryCsReq => 15,
+            CmdChatType::CmdGetChatEmojiListCsReq => 16,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -181,18 +181,18 @@ impl CmdChatType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CmdChatType.proto*\x93\x04\n\x0bCmdChatType\x12\x13\n\x0fCmdChatTy\
-    peNone\x10\0\x12\x17\n\x12CmdRevcMsgScNotify\x10\xf6\x1e\x12\x1f\n\x1aCm\
-    dBatchMarkChatEmojiScRsp\x10\xd2\x1e\x12\x1d\n\x18CmdGetLoginChatInfoScR\
-    sp\x10\x8c\x1f\x12\x1d\n\x18CmdGetLoginChatInfoCsReq\x10\xeb\x1e\x12\"\n\
-    \x1dCmdGetPrivateChatHistoryScRsp\x10\xf4\x1e\x12&\n!CmdPrivateMsgOfflin\
-    eUsersScNotify\x10\xd4\x1e\x12\x1d\n\x18CmdGetChatEmojiListScRsp\x10\xc7\
-    \x1e\x12\x14\n\x0fCmdSendMsgCsReq\x10\xbd\x1e\x12\"\n\x1dCmdGetPrivateCh\
-    atHistoryCsReq\x10\xda\x1e\x12\x1f\n\x1aCmdBatchMarkChatEmojiCsReq\x10\
-    \xed\x1e\x12\x14\n\x0fCmdSendMsgScRsp\x10\x80\x1f\x12\x1a\n\x15CmdMarkCh\
-    atEmojiCsReq\x10\xc1\x1e\x12!\n\x1cCmdGetChatFriendHistoryCsReq\x10\x9d\
-    \x1f\x12\x1a\n\x15CmdMarkChatEmojiScRsp\x10\xca\x1e\x12\x1d\n\x18CmdGetC\
-    hatEmojiListCsReq\x10\xd8\x1e\x12!\n\x1cCmdGetChatFriendHistoryScRsp\x10\
-    \x88\x1fb\x06proto3\
+    peNone\x10\0\x12\x1d\n\x18CmdGetChatEmojiListScRsp\x10\xda\x1e\x12\x1a\n\
+    \x15CmdMarkChatEmojiCsReq\x10\x9b\x1f\x12\x14\n\x0fCmdSendMsgCsReq\x10\
+    \xc7\x1e\x12\"\n\x1dCmdGetPrivateChatHistoryScRsp\x10\xc2\x1e\x12\x14\n\
+    \x0fCmdSendMsgScRsp\x10\xc9\x1e\x12\x1a\n\x15CmdMarkChatEmojiScRsp\x10\
+    \xce\x1e\x12!\n\x1cCmdGetChatFriendHistoryScRsp\x10\x95\x1f\x12&\n!CmdPr\
+    ivateMsgOfflineUsersScNotify\x10\xc5\x1e\x12\x1f\n\x1aCmdBatchMarkChatEm\
+    ojiScRsp\x10\xee\x1e\x12\"\n\x1dCmdGetPrivateChatHistoryCsReq\x10\xdf\
+    \x1e\x12\x17\n\x12CmdRevcMsgScNotify\x10\xeb\x1e\x12\x1f\n\x1aCmdBatchMa\
+    rkChatEmojiCsReq\x10\xe0\x1e\x12\x1d\n\x18CmdGetLoginChatInfoCsReq\x10\
+    \x85\x1f\x12\x1d\n\x18CmdGetLoginChatInfoScRsp\x10\x89\x1f\x12!\n\x1cCmd\
+    GetChatFriendHistoryCsReq\x10\x82\x1f\x12\x1d\n\x18CmdGetChatEmojiListCs\
+    Req\x10\xd6\x1eb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MatchBoxingClubOpponentCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MatchBoxingClubOpponentCsReq.avatar_list)
-    pub avatar_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:MatchBoxingClubOpponentCsReq.MDLACHDKMPH)
     pub MDLACHDKMPH: ::std::vec::Vec<super::GNEIBBPOAAB::GNEIBBPOAAB>,
     // @@protoc_insertion_point(field:MatchBoxingClubOpponentCsReq.CFAAFJJAADP)
     pub CFAAFJJAADP: u32,
+    // @@protoc_insertion_point(field:MatchBoxingClubOpponentCsReq.avatar_list)
+    pub avatar_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:MatchBoxingClubOpponentCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl MatchBoxingClubOpponentCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_list",
-            |m: &MatchBoxingClubOpponentCsReq| { &m.avatar_list },
-            |m: &mut MatchBoxingClubOpponentCsReq| { &mut m.avatar_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "MDLACHDKMPH",
             |m: &MatchBoxingClubOpponentCsReq| { &m.MDLACHDKMPH },
             |m: &mut MatchBoxingClubOpponentCsReq| { &mut m.MDLACHDKMPH },
@@ -67,6 +62,11 @@ impl MatchBoxingClubOpponentCsReq {
             "CFAAFJJAADP",
             |m: &MatchBoxingClubOpponentCsReq| { &m.CFAAFJJAADP },
             |m: &mut MatchBoxingClubOpponentCsReq| { &mut m.CFAAFJJAADP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "avatar_list",
+            |m: &MatchBoxingClubOpponentCsReq| { &m.avatar_list },
+            |m: &mut MatchBoxingClubOpponentCsReq| { &mut m.avatar_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MatchBoxingClubOpponentCsReq>(
             "MatchBoxingClubOpponentCsReq",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for MatchBoxingClubOpponentCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    is.read_repeated_packed_uint32_into(&mut self.avatar_list)?;
-                },
-                64 => {
-                    self.avatar_list.push(is.read_uint32()?);
-                },
-                34 => {
+                74 => {
                     self.MDLACHDKMPH.push(is.read_message()?);
                 },
                 80 => {
                     self.CFAAFJJAADP = is.read_uint32()?;
+                },
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.avatar_list)?;
+                },
+                24 => {
+                    self.avatar_list.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,7 +110,6 @@ impl ::protobuf::Message for MatchBoxingClubOpponentCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.avatar_list);
         for value in &self.MDLACHDKMPH {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -118,19 +117,20 @@ impl ::protobuf::Message for MatchBoxingClubOpponentCsReq {
         if self.CFAAFJJAADP != 0 {
             my_size += ::protobuf::rt::uint32_size(10, self.CFAAFJJAADP);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.avatar_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(8, &self.avatar_list)?;
         for v in &self.MDLACHDKMPH {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         if self.CFAAFJJAADP != 0 {
             os.write_uint32(10, self.CFAAFJJAADP)?;
         }
+        os.write_repeated_packed_uint32(3, &self.avatar_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -148,17 +148,17 @@ impl ::protobuf::Message for MatchBoxingClubOpponentCsReq {
     }
 
     fn clear(&mut self) {
-        self.avatar_list.clear();
         self.MDLACHDKMPH.clear();
         self.CFAAFJJAADP = 0;
+        self.avatar_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MatchBoxingClubOpponentCsReq {
         static instance: MatchBoxingClubOpponentCsReq = MatchBoxingClubOpponentCsReq {
-            avatar_list: ::std::vec::Vec::new(),
             MDLACHDKMPH: ::std::vec::Vec::new(),
             CFAAFJJAADP: 0,
+            avatar_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for MatchBoxingClubOpponentCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"MatchBoxingClubOpponentCsReq.proto\x1a\x11GNEIBBPOAAB.proto\"\x91\
-    \x01\n\x1cMatchBoxingClubOpponentCsReq\x12\x1f\n\x0bavatar_list\x18\x08\
-    \x20\x03(\rR\navatarList\x12.\n\x0bMDLACHDKMPH\x18\x04\x20\x03(\x0b2\x0c\
-    .GNEIBBPOAABR\x0bMDLACHDKMPH\x12\x20\n\x0bCFAAFJJAADP\x18\n\x20\x01(\rR\
-    \x0bCFAAFJJAADPb\x06proto3\
+    \x01\n\x1cMatchBoxingClubOpponentCsReq\x12.\n\x0bMDLACHDKMPH\x18\t\x20\
+    \x03(\x0b2\x0c.GNEIBBPOAABR\x0bMDLACHDKMPH\x12\x20\n\x0bCFAAFJJAADP\x18\
+    \n\x20\x01(\rR\x0bCFAAFJJAADP\x12\x1f\n\x0bavatar_list\x18\x03\x20\x03(\
+    \rR\navatarListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

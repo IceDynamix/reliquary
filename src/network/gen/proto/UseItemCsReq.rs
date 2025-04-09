@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UseItemCsReq {
     // message fields
-    // @@protoc_insertion_point(field:UseItemCsReq.JGGJCLBIPEN)
-    pub JGGJCLBIPEN: u32,
-    // @@protoc_insertion_point(field:UseItemCsReq.base_avatar_id)
-    pub base_avatar_id: u32,
-    // @@protoc_insertion_point(field:UseItemCsReq.MGNNKFNACNI)
-    pub MGNNKFNACNI: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
-    // @@protoc_insertion_point(field:UseItemCsReq.BAKEHPKMCIP)
-    pub BAKEHPKMCIP: u32,
     // @@protoc_insertion_point(field:UseItemCsReq.FELCIEMKCGF)
     pub FELCIEMKCGF: bool,
+    // @@protoc_insertion_point(field:UseItemCsReq.JGGJCLBIPEN)
+    pub JGGJCLBIPEN: u32,
+    // @@protoc_insertion_point(field:UseItemCsReq.MGNNKFNACNI)
+    pub MGNNKFNACNI: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
     // @@protoc_insertion_point(field:UseItemCsReq.ACMOKKGCFKH)
     pub ACMOKKGCFKH: u32,
+    // @@protoc_insertion_point(field:UseItemCsReq.base_avatar_id)
+    pub base_avatar_id: u32,
+    // @@protoc_insertion_point(field:UseItemCsReq.BAKEHPKMCIP)
+    pub BAKEHPKMCIP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:UseItemCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,14 +60,14 @@ impl UseItemCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FELCIEMKCGF",
+            |m: &UseItemCsReq| { &m.FELCIEMKCGF },
+            |m: &mut UseItemCsReq| { &mut m.FELCIEMKCGF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JGGJCLBIPEN",
             |m: &UseItemCsReq| { &m.JGGJCLBIPEN },
             |m: &mut UseItemCsReq| { &mut m.JGGJCLBIPEN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "base_avatar_id",
-            |m: &UseItemCsReq| { &m.base_avatar_id },
-            |m: &mut UseItemCsReq| { &mut m.base_avatar_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MGNNKFNACNI",
@@ -75,19 +75,19 @@ impl UseItemCsReq {
             |m: &mut UseItemCsReq| { &mut m.MGNNKFNACNI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BAKEHPKMCIP",
-            |m: &UseItemCsReq| { &m.BAKEHPKMCIP },
-            |m: &mut UseItemCsReq| { &mut m.BAKEHPKMCIP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FELCIEMKCGF",
-            |m: &UseItemCsReq| { &m.FELCIEMKCGF },
-            |m: &mut UseItemCsReq| { &mut m.FELCIEMKCGF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ACMOKKGCFKH",
             |m: &UseItemCsReq| { &m.ACMOKKGCFKH },
             |m: &mut UseItemCsReq| { &mut m.ACMOKKGCFKH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "base_avatar_id",
+            |m: &UseItemCsReq| { &m.base_avatar_id },
+            |m: &mut UseItemCsReq| { &mut m.base_avatar_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BAKEHPKMCIP",
+            |m: &UseItemCsReq| { &m.BAKEHPKMCIP },
+            |m: &mut UseItemCsReq| { &mut m.BAKEHPKMCIP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UseItemCsReq>(
             "UseItemCsReq",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for UseItemCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.JGGJCLBIPEN = is.read_uint32()?;
-                },
-                80 => {
-                    self.base_avatar_id = is.read_uint32()?;
-                },
-                120 => {
-                    self.MGNNKFNACNI = is.read_enum_or_unknown()?;
-                },
-                24 => {
-                    self.BAKEHPKMCIP = is.read_uint32()?;
-                },
-                104 => {
+                112 => {
                     self.FELCIEMKCGF = is.read_bool()?;
                 },
-                96 => {
+                48 => {
+                    self.JGGJCLBIPEN = is.read_uint32()?;
+                },
+                24 => {
+                    self.MGNNKFNACNI = is.read_enum_or_unknown()?;
+                },
+                88 => {
                     self.ACMOKKGCFKH = is.read_uint32()?;
+                },
+                56 => {
+                    self.base_avatar_id = is.read_uint32()?;
+                },
+                32 => {
+                    self.BAKEHPKMCIP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,23 +137,23 @@ impl ::protobuf::Message for UseItemCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JGGJCLBIPEN != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.JGGJCLBIPEN);
-        }
-        if self.base_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.base_avatar_id);
-        }
-        if self.MGNNKFNACNI != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(15, self.MGNNKFNACNI.value());
-        }
-        if self.BAKEHPKMCIP != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.BAKEHPKMCIP);
-        }
         if self.FELCIEMKCGF != false {
             my_size += 1 + 1;
         }
+        if self.JGGJCLBIPEN != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.JGGJCLBIPEN);
+        }
+        if self.MGNNKFNACNI != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(3, self.MGNNKFNACNI.value());
+        }
         if self.ACMOKKGCFKH != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.ACMOKKGCFKH);
+            my_size += ::protobuf::rt::uint32_size(11, self.ACMOKKGCFKH);
+        }
+        if self.base_avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.base_avatar_id);
+        }
+        if self.BAKEHPKMCIP != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.BAKEHPKMCIP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -161,23 +161,23 @@ impl ::protobuf::Message for UseItemCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JGGJCLBIPEN != 0 {
-            os.write_uint32(11, self.JGGJCLBIPEN)?;
+        if self.FELCIEMKCGF != false {
+            os.write_bool(14, self.FELCIEMKCGF)?;
         }
-        if self.base_avatar_id != 0 {
-            os.write_uint32(10, self.base_avatar_id)?;
+        if self.JGGJCLBIPEN != 0 {
+            os.write_uint32(6, self.JGGJCLBIPEN)?;
         }
         if self.MGNNKFNACNI != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.MGNNKFNACNI))?;
-        }
-        if self.BAKEHPKMCIP != 0 {
-            os.write_uint32(3, self.BAKEHPKMCIP)?;
-        }
-        if self.FELCIEMKCGF != false {
-            os.write_bool(13, self.FELCIEMKCGF)?;
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.MGNNKFNACNI))?;
         }
         if self.ACMOKKGCFKH != 0 {
-            os.write_uint32(12, self.ACMOKKGCFKH)?;
+            os.write_uint32(11, self.ACMOKKGCFKH)?;
+        }
+        if self.base_avatar_id != 0 {
+            os.write_uint32(7, self.base_avatar_id)?;
+        }
+        if self.BAKEHPKMCIP != 0 {
+            os.write_uint32(4, self.BAKEHPKMCIP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -196,23 +196,23 @@ impl ::protobuf::Message for UseItemCsReq {
     }
 
     fn clear(&mut self) {
-        self.JGGJCLBIPEN = 0;
-        self.base_avatar_id = 0;
-        self.MGNNKFNACNI = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE);
-        self.BAKEHPKMCIP = 0;
         self.FELCIEMKCGF = false;
+        self.JGGJCLBIPEN = 0;
+        self.MGNNKFNACNI = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE);
         self.ACMOKKGCFKH = 0;
+        self.base_avatar_id = 0;
+        self.BAKEHPKMCIP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UseItemCsReq {
         static instance: UseItemCsReq = UseItemCsReq {
-            JGGJCLBIPEN: 0,
-            base_avatar_id: 0,
-            MGNNKFNACNI: ::protobuf::EnumOrUnknown::from_i32(0),
-            BAKEHPKMCIP: 0,
             FELCIEMKCGF: false,
+            JGGJCLBIPEN: 0,
+            MGNNKFNACNI: ::protobuf::EnumOrUnknown::from_i32(0),
             ACMOKKGCFKH: 0,
+            base_avatar_id: 0,
+            BAKEHPKMCIP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -238,12 +238,12 @@ impl ::protobuf::reflect::ProtobufValue for UseItemCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12UseItemCsReq.proto\x1a\x10AvatarType.proto\"\xeb\x01\n\x0cUseItemC\
-    sReq\x12\x20\n\x0bJGGJCLBIPEN\x18\x0b\x20\x01(\rR\x0bJGGJCLBIPEN\x12$\n\
-    \x0ebase_avatar_id\x18\n\x20\x01(\rR\x0cbaseAvatarId\x12-\n\x0bMGNNKFNAC\
-    NI\x18\x0f\x20\x01(\x0e2\x0b.AvatarTypeR\x0bMGNNKFNACNI\x12\x20\n\x0bBAK\
-    EHPKMCIP\x18\x03\x20\x01(\rR\x0bBAKEHPKMCIP\x12\x20\n\x0bFELCIEMKCGF\x18\
-    \r\x20\x01(\x08R\x0bFELCIEMKCGF\x12\x20\n\x0bACMOKKGCFKH\x18\x0c\x20\x01\
-    (\rR\x0bACMOKKGCFKHb\x06proto3\
+    sReq\x12\x20\n\x0bFELCIEMKCGF\x18\x0e\x20\x01(\x08R\x0bFELCIEMKCGF\x12\
+    \x20\n\x0bJGGJCLBIPEN\x18\x06\x20\x01(\rR\x0bJGGJCLBIPEN\x12-\n\x0bMGNNK\
+    FNACNI\x18\x03\x20\x01(\x0e2\x0b.AvatarTypeR\x0bMGNNKFNACNI\x12\x20\n\
+    \x0bACMOKKGCFKH\x18\x0b\x20\x01(\rR\x0bACMOKKGCFKH\x12$\n\x0ebase_avatar\
+    _id\x18\x07\x20\x01(\rR\x0cbaseAvatarId\x12\x20\n\x0bBAKEHPKMCIP\x18\x04\
+    \x20\x01(\rR\x0bBAKEHPKMCIPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

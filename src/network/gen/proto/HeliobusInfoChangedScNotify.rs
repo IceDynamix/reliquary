@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HeliobusInfoChangedScNotify {
     // message fields
-    // @@protoc_insertion_point(field:HeliobusInfoChangedScNotify.HALGPJMCMFP)
-    pub HALGPJMCMFP: u32,
-    // @@protoc_insertion_point(field:HeliobusInfoChangedScNotify.IPHKDELMOIH)
-    pub IPHKDELMOIH: u32,
     // @@protoc_insertion_point(field:HeliobusInfoChangedScNotify.EENJBPMNDOL)
     pub EENJBPMNDOL: u32,
+    // @@protoc_insertion_point(field:HeliobusInfoChangedScNotify.IPHKDELMOIH)
+    pub IPHKDELMOIH: u32,
     // @@protoc_insertion_point(field:HeliobusInfoChangedScNotify.GKFHMGMBIKA)
     pub GKFHMGMBIKA: ::std::vec::Vec<super::GBJKKFHPFFN::GBJKKFHPFFN>,
+    // @@protoc_insertion_point(field:HeliobusInfoChangedScNotify.HALGPJMCMFP)
+    pub HALGPJMCMFP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HeliobusInfoChangedScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl HeliobusInfoChangedScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HALGPJMCMFP",
-            |m: &HeliobusInfoChangedScNotify| { &m.HALGPJMCMFP },
-            |m: &mut HeliobusInfoChangedScNotify| { &mut m.HALGPJMCMFP },
+            "EENJBPMNDOL",
+            |m: &HeliobusInfoChangedScNotify| { &m.EENJBPMNDOL },
+            |m: &mut HeliobusInfoChangedScNotify| { &mut m.EENJBPMNDOL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IPHKDELMOIH",
             |m: &HeliobusInfoChangedScNotify| { &m.IPHKDELMOIH },
             |m: &mut HeliobusInfoChangedScNotify| { &mut m.IPHKDELMOIH },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EENJBPMNDOL",
-            |m: &HeliobusInfoChangedScNotify| { &m.EENJBPMNDOL },
-            |m: &mut HeliobusInfoChangedScNotify| { &mut m.EENJBPMNDOL },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "GKFHMGMBIKA",
             |m: &HeliobusInfoChangedScNotify| { &m.GKFHMGMBIKA },
             |m: &mut HeliobusInfoChangedScNotify| { &mut m.GKFHMGMBIKA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HALGPJMCMFP",
+            |m: &HeliobusInfoChangedScNotify| { &m.HALGPJMCMFP },
+            |m: &mut HeliobusInfoChangedScNotify| { &mut m.HALGPJMCMFP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HeliobusInfoChangedScNotify>(
             "HeliobusInfoChangedScNotify",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for HeliobusInfoChangedScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.HALGPJMCMFP = is.read_uint32()?;
-                },
-                56 => {
-                    self.IPHKDELMOIH = is.read_uint32()?;
-                },
-                72 => {
+                8 => {
                     self.EENJBPMNDOL = is.read_uint32()?;
                 },
-                90 => {
+                80 => {
+                    self.IPHKDELMOIH = is.read_uint32()?;
+                },
+                66 => {
                     self.GKFHMGMBIKA.push(is.read_message()?);
+                },
+                72 => {
+                    self.HALGPJMCMFP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,37 +117,37 @@ impl ::protobuf::Message for HeliobusInfoChangedScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HALGPJMCMFP != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.HALGPJMCMFP);
+        if self.EENJBPMNDOL != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.EENJBPMNDOL);
         }
         if self.IPHKDELMOIH != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.IPHKDELMOIH);
-        }
-        if self.EENJBPMNDOL != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.EENJBPMNDOL);
+            my_size += ::protobuf::rt::uint32_size(10, self.IPHKDELMOIH);
         }
         for value in &self.GKFHMGMBIKA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.HALGPJMCMFP != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.HALGPJMCMFP);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HALGPJMCMFP != 0 {
-            os.write_uint32(8, self.HALGPJMCMFP)?;
+        if self.EENJBPMNDOL != 0 {
+            os.write_uint32(1, self.EENJBPMNDOL)?;
         }
         if self.IPHKDELMOIH != 0 {
-            os.write_uint32(7, self.IPHKDELMOIH)?;
-        }
-        if self.EENJBPMNDOL != 0 {
-            os.write_uint32(9, self.EENJBPMNDOL)?;
+            os.write_uint32(10, self.IPHKDELMOIH)?;
         }
         for v in &self.GKFHMGMBIKA {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
+        if self.HALGPJMCMFP != 0 {
+            os.write_uint32(9, self.HALGPJMCMFP)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,19 +165,19 @@ impl ::protobuf::Message for HeliobusInfoChangedScNotify {
     }
 
     fn clear(&mut self) {
-        self.HALGPJMCMFP = 0;
-        self.IPHKDELMOIH = 0;
         self.EENJBPMNDOL = 0;
+        self.IPHKDELMOIH = 0;
         self.GKFHMGMBIKA.clear();
+        self.HALGPJMCMFP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HeliobusInfoChangedScNotify {
         static instance: HeliobusInfoChangedScNotify = HeliobusInfoChangedScNotify {
-            HALGPJMCMFP: 0,
-            IPHKDELMOIH: 0,
             EENJBPMNDOL: 0,
+            IPHKDELMOIH: 0,
             GKFHMGMBIKA: ::std::vec::Vec::new(),
+            HALGPJMCMFP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,11 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for HeliobusInfoChangedScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!HeliobusInfoChangedScNotify.proto\x1a\x11GBJKKFHPFFN.proto\"\xb3\x01\
-    \n\x1bHeliobusInfoChangedScNotify\x12\x20\n\x0bHALGPJMCMFP\x18\x08\x20\
-    \x01(\rR\x0bHALGPJMCMFP\x12\x20\n\x0bIPHKDELMOIH\x18\x07\x20\x01(\rR\x0b\
-    IPHKDELMOIH\x12\x20\n\x0bEENJBPMNDOL\x18\t\x20\x01(\rR\x0bEENJBPMNDOL\
-    \x12.\n\x0bGKFHMGMBIKA\x18\x0b\x20\x03(\x0b2\x0c.GBJKKFHPFFNR\x0bGKFHMGM\
-    BIKAb\x06proto3\
+    \n\x1bHeliobusInfoChangedScNotify\x12\x20\n\x0bEENJBPMNDOL\x18\x01\x20\
+    \x01(\rR\x0bEENJBPMNDOL\x12\x20\n\x0bIPHKDELMOIH\x18\n\x20\x01(\rR\x0bIP\
+    HKDELMOIH\x12.\n\x0bGKFHMGMBIKA\x18\x08\x20\x03(\x0b2\x0c.GBJKKFHPFFNR\
+    \x0bGKFHMGMBIKA\x12\x20\n\x0bHALGPJMCMFP\x18\t\x20\x01(\rR\x0bHALGPJMCMF\
+    Pb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

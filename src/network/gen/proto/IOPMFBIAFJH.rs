@@ -30,10 +30,10 @@ pub struct IOPMFBIAFJH {
     // message fields
     // @@protoc_insertion_point(field:IOPMFBIAFJH.NNDEOKKKKPE)
     pub NNDEOKKKKPE: u32,
-    // @@protoc_insertion_point(field:IOPMFBIAFJH.ELGANMDPMID)
-    pub ELGANMDPMID: u32,
     // @@protoc_insertion_point(field:IOPMFBIAFJH.PBLFLJNHMIL)
     pub PBLFLJNHMIL: ::protobuf::EnumOrUnknown<super::MissionStatus::MissionStatus>,
+    // @@protoc_insertion_point(field:IOPMFBIAFJH.ELGANMDPMID)
+    pub ELGANMDPMID: u32,
     // special fields
     // @@protoc_insertion_point(special_field:IOPMFBIAFJH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl IOPMFBIAFJH {
             |m: &mut IOPMFBIAFJH| { &mut m.NNDEOKKKKPE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ELGANMDPMID",
-            |m: &IOPMFBIAFJH| { &m.ELGANMDPMID },
-            |m: &mut IOPMFBIAFJH| { &mut m.ELGANMDPMID },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PBLFLJNHMIL",
             |m: &IOPMFBIAFJH| { &m.PBLFLJNHMIL },
             |m: &mut IOPMFBIAFJH| { &mut m.PBLFLJNHMIL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ELGANMDPMID",
+            |m: &IOPMFBIAFJH| { &m.ELGANMDPMID },
+            |m: &mut IOPMFBIAFJH| { &mut m.ELGANMDPMID },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IOPMFBIAFJH>(
             "IOPMFBIAFJH",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for IOPMFBIAFJH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                16 => {
                     self.NNDEOKKKKPE = is.read_uint32()?;
                 },
-                48 => {
-                    self.ELGANMDPMID = is.read_uint32()?;
-                },
-                8 => {
+                88 => {
                     self.PBLFLJNHMIL = is.read_enum_or_unknown()?;
+                },
+                56 => {
+                    self.ELGANMDPMID = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for IOPMFBIAFJH {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.NNDEOKKKKPE != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.NNDEOKKKKPE);
-        }
-        if self.ELGANMDPMID != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.ELGANMDPMID);
+            my_size += ::protobuf::rt::uint32_size(2, self.NNDEOKKKKPE);
         }
         if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::MissionStatus::MissionStatus::MISSION_NONE) {
-            my_size += ::protobuf::rt::int32_size(1, self.PBLFLJNHMIL.value());
+            my_size += ::protobuf::rt::int32_size(11, self.PBLFLJNHMIL.value());
+        }
+        if self.ELGANMDPMID != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.ELGANMDPMID);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for IOPMFBIAFJH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.NNDEOKKKKPE != 0 {
-            os.write_uint32(14, self.NNDEOKKKKPE)?;
-        }
-        if self.ELGANMDPMID != 0 {
-            os.write_uint32(6, self.ELGANMDPMID)?;
+            os.write_uint32(2, self.NNDEOKKKKPE)?;
         }
         if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::MissionStatus::MissionStatus::MISSION_NONE) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.PBLFLJNHMIL))?;
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.PBLFLJNHMIL))?;
+        }
+        if self.ELGANMDPMID != 0 {
+            os.write_uint32(7, self.ELGANMDPMID)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for IOPMFBIAFJH {
 
     fn clear(&mut self) {
         self.NNDEOKKKKPE = 0;
-        self.ELGANMDPMID = 0;
         self.PBLFLJNHMIL = ::protobuf::EnumOrUnknown::new(super::MissionStatus::MissionStatus::MISSION_NONE);
+        self.ELGANMDPMID = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IOPMFBIAFJH {
         static instance: IOPMFBIAFJH = IOPMFBIAFJH {
             NNDEOKKKKPE: 0,
-            ELGANMDPMID: 0,
             PBLFLJNHMIL: ::protobuf::EnumOrUnknown::from_i32(0),
+            ELGANMDPMID: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for IOPMFBIAFJH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IOPMFBIAFJH.proto\x1a\x13MissionStatus.proto\"\x83\x01\n\x0bIOPMFB\
-    IAFJH\x12\x20\n\x0bNNDEOKKKKPE\x18\x0e\x20\x01(\rR\x0bNNDEOKKKKPE\x12\
-    \x20\n\x0bELGANMDPMID\x18\x06\x20\x01(\rR\x0bELGANMDPMID\x120\n\x0bPBLFL\
-    JNHMIL\x18\x01\x20\x01(\x0e2\x0e.MissionStatusR\x0bPBLFLJNHMILb\x06proto\
-    3\
+    IAFJH\x12\x20\n\x0bNNDEOKKKKPE\x18\x02\x20\x01(\rR\x0bNNDEOKKKKPE\x120\n\
+    \x0bPBLFLJNHMIL\x18\x0b\x20\x01(\x0e2\x0e.MissionStatusR\x0bPBLFLJNHMIL\
+    \x12\x20\n\x0bELGANMDPMID\x18\x07\x20\x01(\rR\x0bELGANMDPMIDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

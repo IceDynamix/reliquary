@@ -86,13 +86,13 @@ impl ::protobuf::Message for UpgradeAreaStatCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                64 => {
                     self.level = is.read_uint32()?;
                 },
-                40 => {
+                80 => {
                     self.BOJBPOELFCI = is.read_enum_or_unknown()?;
                 },
-                104 => {
+                96 => {
                     self.DBAHFEFGLMD = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for UpgradeAreaStatCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.level);
+            my_size += ::protobuf::rt::uint32_size(8, self.level);
         }
         if self.BOJBPOELFCI != ::protobuf::EnumOrUnknown::new(super::StatType::StatType::STAT_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(5, self.BOJBPOELFCI.value());
+            my_size += ::protobuf::rt::int32_size(10, self.BOJBPOELFCI.value());
         }
         if self.DBAHFEFGLMD != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.DBAHFEFGLMD);
+            my_size += ::protobuf::rt::uint32_size(12, self.DBAHFEFGLMD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for UpgradeAreaStatCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.level != 0 {
-            os.write_uint32(9, self.level)?;
+            os.write_uint32(8, self.level)?;
         }
         if self.BOJBPOELFCI != ::protobuf::EnumOrUnknown::new(super::StatType::StatType::STAT_TYPE_NONE) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.BOJBPOELFCI))?;
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.BOJBPOELFCI))?;
         }
         if self.DBAHFEFGLMD != 0 {
-            os.write_uint32(13, self.DBAHFEFGLMD)?;
+            os.write_uint32(12, self.DBAHFEFGLMD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for UpgradeAreaStatCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aUpgradeAreaStatCsReq.proto\x1a\x0eStatType.proto\"{\n\x14UpgradeAr\
-    eaStatCsReq\x12\x14\n\x05level\x18\t\x20\x01(\rR\x05level\x12+\n\x0bBOJB\
-    POELFCI\x18\x05\x20\x01(\x0e2\t.StatTypeR\x0bBOJBPOELFCI\x12\x20\n\x0bDB\
-    AHFEFGLMD\x18\r\x20\x01(\rR\x0bDBAHFEFGLMDb\x06proto3\
+    eaStatCsReq\x12\x14\n\x05level\x18\x08\x20\x01(\rR\x05level\x12+\n\x0bBO\
+    JBPOELFCI\x18\n\x20\x01(\x0e2\t.StatTypeR\x0bBOJBPOELFCI\x12\x20\n\x0bDB\
+    AHFEFGLMD\x18\x0c\x20\x01(\rR\x0bDBAHFEFGLMDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EraFlipperDataChangeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:EraFlipperDataChangeScNotify.EJJCCGGCNMK)
-    pub EJJCCGGCNMK: ::protobuf::MessageField<super::KKEAENNDMKB::KKEAENNDMKB>,
     // @@protoc_insertion_point(field:EraFlipperDataChangeScNotify.LJHIJCABHEP)
     pub LJHIJCABHEP: u32,
+    // @@protoc_insertion_point(field:EraFlipperDataChangeScNotify.EJJCCGGCNMK)
+    pub EJJCCGGCNMK: ::protobuf::MessageField<super::KKEAENNDMKB::KKEAENNDMKB>,
     // special fields
     // @@protoc_insertion_point(special_field:EraFlipperDataChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl EraFlipperDataChangeScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KKEAENNDMKB::KKEAENNDMKB>(
-            "EJJCCGGCNMK",
-            |m: &EraFlipperDataChangeScNotify| { &m.EJJCCGGCNMK },
-            |m: &mut EraFlipperDataChangeScNotify| { &mut m.EJJCCGGCNMK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LJHIJCABHEP",
             |m: &EraFlipperDataChangeScNotify| { &m.LJHIJCABHEP },
             |m: &mut EraFlipperDataChangeScNotify| { &mut m.LJHIJCABHEP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KKEAENNDMKB::KKEAENNDMKB>(
+            "EJJCCGGCNMK",
+            |m: &EraFlipperDataChangeScNotify| { &m.EJJCCGGCNMK },
+            |m: &mut EraFlipperDataChangeScNotify| { &mut m.EJJCCGGCNMK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EraFlipperDataChangeScNotify>(
             "EraFlipperDataChangeScNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for EraFlipperDataChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EJJCCGGCNMK)?;
-                },
-                8 => {
+                120 => {
                     self.LJHIJCABHEP = is.read_uint32()?;
+                },
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EJJCCGGCNMK)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for EraFlipperDataChangeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.LJHIJCABHEP != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.LJHIJCABHEP);
+        }
         if let Some(v) = self.EJJCCGGCNMK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.LJHIJCABHEP != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.LJHIJCABHEP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for EraFlipperDataChangeScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.EJJCCGGCNMK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        }
         if self.LJHIJCABHEP != 0 {
-            os.write_uint32(1, self.LJHIJCABHEP)?;
+            os.write_uint32(15, self.LJHIJCABHEP)?;
+        }
+        if let Some(v) = self.EJJCCGGCNMK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for EraFlipperDataChangeScNotify {
     }
 
     fn clear(&mut self) {
-        self.EJJCCGGCNMK.clear();
         self.LJHIJCABHEP = 0;
+        self.EJJCCGGCNMK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EraFlipperDataChangeScNotify {
         static instance: EraFlipperDataChangeScNotify = EraFlipperDataChangeScNotify {
-            EJJCCGGCNMK: ::protobuf::MessageField::none(),
             LJHIJCABHEP: 0,
+            EJJCCGGCNMK: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for EraFlipperDataChangeScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"EraFlipperDataChangeScNotify.proto\x1a\x11KKEAENNDMKB.proto\"p\n\x1c\
-    EraFlipperDataChangeScNotify\x12.\n\x0bEJJCCGGCNMK\x18\x0c\x20\x01(\x0b2\
-    \x0c.KKEAENNDMKBR\x0bEJJCCGGCNMK\x12\x20\n\x0bLJHIJCABHEP\x18\x01\x20\
-    \x01(\rR\x0bLJHIJCABHEPb\x06proto3\
+    EraFlipperDataChangeScNotify\x12\x20\n\x0bLJHIJCABHEP\x18\x0f\x20\x01(\r\
+    R\x0bLJHIJCABHEP\x12.\n\x0bEJJCCGGCNMK\x18\n\x20\x01(\x0b2\x0c.KKEAENNDM\
+    KBR\x0bEJJCCGGCNMKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

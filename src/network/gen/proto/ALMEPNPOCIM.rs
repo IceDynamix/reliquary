@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ALMEPNPOCIM {
     // message fields
-    // @@protoc_insertion_point(field:ALMEPNPOCIM.NOBKEONAKLE)
-    pub NOBKEONAKLE: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ALMEPNPOCIM.FJNHDHOHBCL)
-    pub FJNHDHOHBCL: u32,
     // @@protoc_insertion_point(field:ALMEPNPOCIM.ILBEAAOOJJP)
     pub ILBEAAOOJJP: bool,
     // @@protoc_insertion_point(field:ALMEPNPOCIM.INLDCCLIOAN)
     pub INLDCCLIOAN: i64,
+    // @@protoc_insertion_point(field:ALMEPNPOCIM.FJNHDHOHBCL)
+    pub FJNHDHOHBCL: u32,
+    // @@protoc_insertion_point(field:ALMEPNPOCIM.NOBKEONAKLE)
+    pub NOBKEONAKLE: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:ALMEPNPOCIM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,16 +55,6 @@ impl ALMEPNPOCIM {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NOBKEONAKLE",
-            |m: &ALMEPNPOCIM| { &m.NOBKEONAKLE },
-            |m: &mut ALMEPNPOCIM| { &mut m.NOBKEONAKLE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FJNHDHOHBCL",
-            |m: &ALMEPNPOCIM| { &m.FJNHDHOHBCL },
-            |m: &mut ALMEPNPOCIM| { &mut m.FJNHDHOHBCL },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ILBEAAOOJJP",
             |m: &ALMEPNPOCIM| { &m.ILBEAAOOJJP },
@@ -74,6 +64,16 @@ impl ALMEPNPOCIM {
             "INLDCCLIOAN",
             |m: &ALMEPNPOCIM| { &m.INLDCCLIOAN },
             |m: &mut ALMEPNPOCIM| { &mut m.INLDCCLIOAN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FJNHDHOHBCL",
+            |m: &ALMEPNPOCIM| { &m.FJNHDHOHBCL },
+            |m: &mut ALMEPNPOCIM| { &mut m.FJNHDHOHBCL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NOBKEONAKLE",
+            |m: &ALMEPNPOCIM| { &m.NOBKEONAKLE },
+            |m: &mut ALMEPNPOCIM| { &mut m.NOBKEONAKLE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ALMEPNPOCIM>(
             "ALMEPNPOCIM",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for ALMEPNPOCIM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NOBKEONAKLE)?;
-                },
-                80 => {
-                    self.NOBKEONAKLE.push(is.read_uint32()?);
-                },
-                40 => {
-                    self.FJNHDHOHBCL = is.read_uint32()?;
-                },
-                88 => {
+                8 => {
                     self.ILBEAAOOJJP = is.read_bool()?;
                 },
-                32 => {
+                112 => {
                     self.INLDCCLIOAN = is.read_int64()?;
+                },
+                32 => {
+                    self.FJNHDHOHBCL = is.read_uint32()?;
+                },
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.NOBKEONAKLE)?;
+                },
+                56 => {
+                    self.NOBKEONAKLE.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,32 +120,32 @@ impl ::protobuf::Message for ALMEPNPOCIM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.NOBKEONAKLE);
-        if self.FJNHDHOHBCL != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.FJNHDHOHBCL);
-        }
         if self.ILBEAAOOJJP != false {
             my_size += 1 + 1;
         }
         if self.INLDCCLIOAN != 0 {
-            my_size += ::protobuf::rt::int64_size(4, self.INLDCCLIOAN);
+            my_size += ::protobuf::rt::int64_size(14, self.INLDCCLIOAN);
         }
+        if self.FJNHDHOHBCL != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.FJNHDHOHBCL);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.NOBKEONAKLE);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(10, &self.NOBKEONAKLE)?;
-        if self.FJNHDHOHBCL != 0 {
-            os.write_uint32(5, self.FJNHDHOHBCL)?;
-        }
         if self.ILBEAAOOJJP != false {
-            os.write_bool(11, self.ILBEAAOOJJP)?;
+            os.write_bool(1, self.ILBEAAOOJJP)?;
         }
         if self.INLDCCLIOAN != 0 {
-            os.write_int64(4, self.INLDCCLIOAN)?;
+            os.write_int64(14, self.INLDCCLIOAN)?;
         }
+        if self.FJNHDHOHBCL != 0 {
+            os.write_uint32(4, self.FJNHDHOHBCL)?;
+        }
+        os.write_repeated_packed_uint32(7, &self.NOBKEONAKLE)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -163,19 +163,19 @@ impl ::protobuf::Message for ALMEPNPOCIM {
     }
 
     fn clear(&mut self) {
-        self.NOBKEONAKLE.clear();
-        self.FJNHDHOHBCL = 0;
         self.ILBEAAOOJJP = false;
         self.INLDCCLIOAN = 0;
+        self.FJNHDHOHBCL = 0;
+        self.NOBKEONAKLE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ALMEPNPOCIM {
         static instance: ALMEPNPOCIM = ALMEPNPOCIM {
-            NOBKEONAKLE: ::std::vec::Vec::new(),
-            FJNHDHOHBCL: 0,
             ILBEAAOOJJP: false,
             INLDCCLIOAN: 0,
+            FJNHDHOHBCL: 0,
+            NOBKEONAKLE: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -200,11 +200,11 @@ impl ::protobuf::reflect::ProtobufValue for ALMEPNPOCIM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ALMEPNPOCIM.proto\"\x95\x01\n\x0bALMEPNPOCIM\x12\x20\n\x0bNOBKEONA\
-    KLE\x18\n\x20\x03(\rR\x0bNOBKEONAKLE\x12\x20\n\x0bFJNHDHOHBCL\x18\x05\
-    \x20\x01(\rR\x0bFJNHDHOHBCL\x12\x20\n\x0bILBEAAOOJJP\x18\x0b\x20\x01(\
-    \x08R\x0bILBEAAOOJJP\x12\x20\n\x0bINLDCCLIOAN\x18\x04\x20\x01(\x03R\x0bI\
-    NLDCCLIOANb\x06proto3\
+    \n\x11ALMEPNPOCIM.proto\"\x95\x01\n\x0bALMEPNPOCIM\x12\x20\n\x0bILBEAAOO\
+    JJP\x18\x01\x20\x01(\x08R\x0bILBEAAOOJJP\x12\x20\n\x0bINLDCCLIOAN\x18\
+    \x0e\x20\x01(\x03R\x0bINLDCCLIOAN\x12\x20\n\x0bFJNHDHOHBCL\x18\x04\x20\
+    \x01(\rR\x0bFJNHDHOHBCL\x12\x20\n\x0bNOBKEONAKLE\x18\x07\x20\x03(\rR\x0b\
+    NOBKEONAKLEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

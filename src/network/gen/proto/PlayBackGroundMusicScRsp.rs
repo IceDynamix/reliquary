@@ -30,10 +30,10 @@ pub struct PlayBackGroundMusicScRsp {
     // message fields
     // @@protoc_insertion_point(field:PlayBackGroundMusicScRsp.IIEDAEIKBHO)
     pub IIEDAEIKBHO: u32,
-    // @@protoc_insertion_point(field:PlayBackGroundMusicScRsp.EDJBLNMOFOE)
-    pub EDJBLNMOFOE: u32,
     // @@protoc_insertion_point(field:PlayBackGroundMusicScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:PlayBackGroundMusicScRsp.EDJBLNMOFOE)
+    pub EDJBLNMOFOE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlayBackGroundMusicScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl PlayBackGroundMusicScRsp {
             |m: &mut PlayBackGroundMusicScRsp| { &mut m.IIEDAEIKBHO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EDJBLNMOFOE",
-            |m: &PlayBackGroundMusicScRsp| { &m.EDJBLNMOFOE },
-            |m: &mut PlayBackGroundMusicScRsp| { &mut m.EDJBLNMOFOE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &PlayBackGroundMusicScRsp| { &m.retcode },
             |m: &mut PlayBackGroundMusicScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EDJBLNMOFOE",
+            |m: &PlayBackGroundMusicScRsp| { &m.EDJBLNMOFOE },
+            |m: &mut PlayBackGroundMusicScRsp| { &mut m.EDJBLNMOFOE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayBackGroundMusicScRsp>(
             "PlayBackGroundMusicScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for PlayBackGroundMusicScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                8 => {
                     self.IIEDAEIKBHO = is.read_uint32()?;
                 },
-                104 => {
-                    self.EDJBLNMOFOE = is.read_uint32()?;
-                },
-                96 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
+                },
+                72 => {
+                    self.EDJBLNMOFOE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for PlayBackGroundMusicScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.IIEDAEIKBHO != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.IIEDAEIKBHO);
-        }
-        if self.EDJBLNMOFOE != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.EDJBLNMOFOE);
+            my_size += ::protobuf::rt::uint32_size(1, self.IIEDAEIKBHO);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+        }
+        if self.EDJBLNMOFOE != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.EDJBLNMOFOE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for PlayBackGroundMusicScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IIEDAEIKBHO != 0 {
-            os.write_uint32(4, self.IIEDAEIKBHO)?;
-        }
-        if self.EDJBLNMOFOE != 0 {
-            os.write_uint32(13, self.EDJBLNMOFOE)?;
+            os.write_uint32(1, self.IIEDAEIKBHO)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
+        }
+        if self.EDJBLNMOFOE != 0 {
+            os.write_uint32(9, self.EDJBLNMOFOE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for PlayBackGroundMusicScRsp {
 
     fn clear(&mut self) {
         self.IIEDAEIKBHO = 0;
-        self.EDJBLNMOFOE = 0;
         self.retcode = 0;
+        self.EDJBLNMOFOE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayBackGroundMusicScRsp {
         static instance: PlayBackGroundMusicScRsp = PlayBackGroundMusicScRsp {
             IIEDAEIKBHO: 0,
-            EDJBLNMOFOE: 0,
             retcode: 0,
+            EDJBLNMOFOE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for PlayBackGroundMusicScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1ePlayBackGroundMusicScRsp.proto\"x\n\x18PlayBackGroundMusicScRsp\
-    \x12\x20\n\x0bIIEDAEIKBHO\x18\x04\x20\x01(\rR\x0bIIEDAEIKBHO\x12\x20\n\
-    \x0bEDJBLNMOFOE\x18\r\x20\x01(\rR\x0bEDJBLNMOFOE\x12\x18\n\x07retcode\
-    \x18\x0c\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x12\x20\n\x0bIIEDAEIKBHO\x18\x01\x20\x01(\rR\x0bIIEDAEIKBHO\x12\x18\n\
+    \x07retcode\x18\x06\x20\x01(\rR\x07retcode\x12\x20\n\x0bEDJBLNMOFOE\x18\
+    \t\x20\x01(\rR\x0bEDJBLNMOFOEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

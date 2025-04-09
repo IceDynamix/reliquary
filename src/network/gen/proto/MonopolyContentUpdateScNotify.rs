@@ -72,7 +72,7 @@ impl ::protobuf::Message for MonopolyContentUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FHNPAGIHINF)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for MonopolyContentUpdateScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.FHNPAGIHINF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyContentUpdateScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#MonopolyContentUpdateScNotify.proto\x1a\x1dBLMJNFFPMCN_LBENAAHCPEO.pr\
-    oto\"O\n\x1dMonopolyContentUpdateScNotify\x12.\n\x0bFHNPAGIHINF\x18\x01\
+    oto\"O\n\x1dMonopolyContentUpdateScNotify\x12.\n\x0bFHNPAGIHINF\x18\x04\
     \x20\x01(\x0b2\x0c.LBENAAHCPEOR\x0bFHNPAGIHINFb\x06proto3\
 ";
 

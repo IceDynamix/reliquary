@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OLKFPHPBPDL {
     // message fields
+    // @@protoc_insertion_point(field:OLKFPHPBPDL.KGJHJMDCAOC)
+    pub KGJHJMDCAOC: bool,
+    // @@protoc_insertion_point(field:OLKFPHPBPDL.GMOPLJJGBPO)
+    pub GMOPLJJGBPO: bool,
+    // @@protoc_insertion_point(field:OLKFPHPBPDL.DBAHFEFGLMD)
+    pub DBAHFEFGLMD: u32,
+    // @@protoc_insertion_point(field:OLKFPHPBPDL.BIIFELFEGNK)
+    pub BIIFELFEGNK: bool,
     // @@protoc_insertion_point(field:OLKFPHPBPDL.HDMDAODJACB)
     pub HDMDAODJACB: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:OLKFPHPBPDL.KNBDPFEIDNM)
     pub KNBDPFEIDNM: bool,
-    // @@protoc_insertion_point(field:OLKFPHPBPDL.DBAHFEFGLMD)
-    pub DBAHFEFGLMD: u32,
-    // @@protoc_insertion_point(field:OLKFPHPBPDL.GMOPLJJGBPO)
-    pub GMOPLJJGBPO: bool,
-    // @@protoc_insertion_point(field:OLKFPHPBPDL.BIIFELFEGNK)
-    pub BIIFELFEGNK: bool,
-    // @@protoc_insertion_point(field:OLKFPHPBPDL.KGJHJMDCAOC)
-    pub KGJHJMDCAOC: bool,
     // special fields
     // @@protoc_insertion_point(special_field:OLKFPHPBPDL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,6 +59,26 @@ impl OLKFPHPBPDL {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KGJHJMDCAOC",
+            |m: &OLKFPHPBPDL| { &m.KGJHJMDCAOC },
+            |m: &mut OLKFPHPBPDL| { &mut m.KGJHJMDCAOC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GMOPLJJGBPO",
+            |m: &OLKFPHPBPDL| { &m.GMOPLJJGBPO },
+            |m: &mut OLKFPHPBPDL| { &mut m.GMOPLJJGBPO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DBAHFEFGLMD",
+            |m: &OLKFPHPBPDL| { &m.DBAHFEFGLMD },
+            |m: &mut OLKFPHPBPDL| { &mut m.DBAHFEFGLMD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BIIFELFEGNK",
+            |m: &OLKFPHPBPDL| { &m.BIIFELFEGNK },
+            |m: &mut OLKFPHPBPDL| { &mut m.BIIFELFEGNK },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "HDMDAODJACB",
             |m: &OLKFPHPBPDL| { &m.HDMDAODJACB },
@@ -68,26 +88,6 @@ impl OLKFPHPBPDL {
             "KNBDPFEIDNM",
             |m: &OLKFPHPBPDL| { &m.KNBDPFEIDNM },
             |m: &mut OLKFPHPBPDL| { &mut m.KNBDPFEIDNM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DBAHFEFGLMD",
-            |m: &OLKFPHPBPDL| { &m.DBAHFEFGLMD },
-            |m: &mut OLKFPHPBPDL| { &mut m.DBAHFEFGLMD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GMOPLJJGBPO",
-            |m: &OLKFPHPBPDL| { &m.GMOPLJJGBPO },
-            |m: &mut OLKFPHPBPDL| { &mut m.GMOPLJJGBPO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BIIFELFEGNK",
-            |m: &OLKFPHPBPDL| { &m.BIIFELFEGNK },
-            |m: &mut OLKFPHPBPDL| { &mut m.BIIFELFEGNK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KGJHJMDCAOC",
-            |m: &OLKFPHPBPDL| { &m.KGJHJMDCAOC },
-            |m: &mut OLKFPHPBPDL| { &mut m.KGJHJMDCAOC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OLKFPHPBPDL>(
             "OLKFPHPBPDL",
@@ -107,26 +107,26 @@ impl ::protobuf::Message for OLKFPHPBPDL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.HDMDAODJACB)?;
-                },
-                8 => {
-                    self.HDMDAODJACB.push(is.read_uint32()?);
-                },
-                64 => {
-                    self.KNBDPFEIDNM = is.read_bool()?;
-                },
-                56 => {
-                    self.DBAHFEFGLMD = is.read_uint32()?;
-                },
-                16 => {
-                    self.GMOPLJJGBPO = is.read_bool()?;
+                40 => {
+                    self.KGJHJMDCAOC = is.read_bool()?;
                 },
                 112 => {
+                    self.GMOPLJJGBPO = is.read_bool()?;
+                },
+                16 => {
+                    self.DBAHFEFGLMD = is.read_uint32()?;
+                },
+                56 => {
                     self.BIIFELFEGNK = is.read_bool()?;
                 },
-                104 => {
-                    self.KGJHJMDCAOC = is.read_bool()?;
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.HDMDAODJACB)?;
+                },
+                48 => {
+                    self.HDMDAODJACB.push(is.read_uint32()?);
+                },
+                24 => {
+                    self.KNBDPFEIDNM = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,20 +140,20 @@ impl ::protobuf::Message for OLKFPHPBPDL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.HDMDAODJACB);
-        if self.KNBDPFEIDNM != false {
+        if self.KGJHJMDCAOC != false {
             my_size += 1 + 1;
-        }
-        if self.DBAHFEFGLMD != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.DBAHFEFGLMD);
         }
         if self.GMOPLJJGBPO != false {
             my_size += 1 + 1;
         }
+        if self.DBAHFEFGLMD != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.DBAHFEFGLMD);
+        }
         if self.BIIFELFEGNK != false {
             my_size += 1 + 1;
         }
-        if self.KGJHJMDCAOC != false {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.HDMDAODJACB);
+        if self.KNBDPFEIDNM != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -162,21 +162,21 @@ impl ::protobuf::Message for OLKFPHPBPDL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.HDMDAODJACB)?;
-        if self.KNBDPFEIDNM != false {
-            os.write_bool(8, self.KNBDPFEIDNM)?;
-        }
-        if self.DBAHFEFGLMD != 0 {
-            os.write_uint32(7, self.DBAHFEFGLMD)?;
+        if self.KGJHJMDCAOC != false {
+            os.write_bool(5, self.KGJHJMDCAOC)?;
         }
         if self.GMOPLJJGBPO != false {
-            os.write_bool(2, self.GMOPLJJGBPO)?;
+            os.write_bool(14, self.GMOPLJJGBPO)?;
+        }
+        if self.DBAHFEFGLMD != 0 {
+            os.write_uint32(2, self.DBAHFEFGLMD)?;
         }
         if self.BIIFELFEGNK != false {
-            os.write_bool(14, self.BIIFELFEGNK)?;
+            os.write_bool(7, self.BIIFELFEGNK)?;
         }
-        if self.KGJHJMDCAOC != false {
-            os.write_bool(13, self.KGJHJMDCAOC)?;
+        os.write_repeated_packed_uint32(6, &self.HDMDAODJACB)?;
+        if self.KNBDPFEIDNM != false {
+            os.write_bool(3, self.KNBDPFEIDNM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -195,23 +195,23 @@ impl ::protobuf::Message for OLKFPHPBPDL {
     }
 
     fn clear(&mut self) {
+        self.KGJHJMDCAOC = false;
+        self.GMOPLJJGBPO = false;
+        self.DBAHFEFGLMD = 0;
+        self.BIIFELFEGNK = false;
         self.HDMDAODJACB.clear();
         self.KNBDPFEIDNM = false;
-        self.DBAHFEFGLMD = 0;
-        self.GMOPLJJGBPO = false;
-        self.BIIFELFEGNK = false;
-        self.KGJHJMDCAOC = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OLKFPHPBPDL {
         static instance: OLKFPHPBPDL = OLKFPHPBPDL {
+            KGJHJMDCAOC: false,
+            GMOPLJJGBPO: false,
+            DBAHFEFGLMD: 0,
+            BIIFELFEGNK: false,
             HDMDAODJACB: ::std::vec::Vec::new(),
             KNBDPFEIDNM: false,
-            DBAHFEFGLMD: 0,
-            GMOPLJJGBPO: false,
-            BIIFELFEGNK: false,
-            KGJHJMDCAOC: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -236,12 +236,13 @@ impl ::protobuf::reflect::ProtobufValue for OLKFPHPBPDL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OLKFPHPBPDL.proto\"\xd9\x01\n\x0bOLKFPHPBPDL\x12\x20\n\x0bHDMDAODJ\
-    ACB\x18\x01\x20\x03(\rR\x0bHDMDAODJACB\x12\x20\n\x0bKNBDPFEIDNM\x18\x08\
-    \x20\x01(\x08R\x0bKNBDPFEIDNM\x12\x20\n\x0bDBAHFEFGLMD\x18\x07\x20\x01(\
-    \rR\x0bDBAHFEFGLMD\x12\x20\n\x0bGMOPLJJGBPO\x18\x02\x20\x01(\x08R\x0bGMO\
-    PLJJGBPO\x12\x20\n\x0bBIIFELFEGNK\x18\x0e\x20\x01(\x08R\x0bBIIFELFEGNK\
-    \x12\x20\n\x0bKGJHJMDCAOC\x18\r\x20\x01(\x08R\x0bKGJHJMDCAOCb\x06proto3\
+    \n\x11OLKFPHPBPDL.proto\"\xd9\x01\n\x0bOLKFPHPBPDL\x12\x20\n\x0bKGJHJMDC\
+    AOC\x18\x05\x20\x01(\x08R\x0bKGJHJMDCAOC\x12\x20\n\x0bGMOPLJJGBPO\x18\
+    \x0e\x20\x01(\x08R\x0bGMOPLJJGBPO\x12\x20\n\x0bDBAHFEFGLMD\x18\x02\x20\
+    \x01(\rR\x0bDBAHFEFGLMD\x12\x20\n\x0bBIIFELFEGNK\x18\x07\x20\x01(\x08R\
+    \x0bBIIFELFEGNK\x12\x20\n\x0bHDMDAODJACB\x18\x06\x20\x03(\rR\x0bHDMDAODJ\
+    ACB\x12\x20\n\x0bKNBDPFEIDNM\x18\x03\x20\x01(\x08R\x0bKNBDPFEIDNMb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -89,10 +89,10 @@ impl ::protobuf::Message for MonopolyBuyGoodsScRsp {
                 48 => {
                     self.retcode = is.read_uint32()?;
                 },
-                104 => {
+                72 => {
                     self.KNANGDKHIEJ = is.read_uint32()?;
                 },
-                32 => {
+                80 => {
                     self.NEBOAFHPJFF = is.read_uint32()?;
                 },
                 tag => {
@@ -111,10 +111,10 @@ impl ::protobuf::Message for MonopolyBuyGoodsScRsp {
             my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         if self.KNANGDKHIEJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.KNANGDKHIEJ);
+            my_size += ::protobuf::rt::uint32_size(9, self.KNANGDKHIEJ);
         }
         if self.NEBOAFHPJFF != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.NEBOAFHPJFF);
+            my_size += ::protobuf::rt::uint32_size(10, self.NEBOAFHPJFF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -126,10 +126,10 @@ impl ::protobuf::Message for MonopolyBuyGoodsScRsp {
             os.write_uint32(6, self.retcode)?;
         }
         if self.KNANGDKHIEJ != 0 {
-            os.write_uint32(13, self.KNANGDKHIEJ)?;
+            os.write_uint32(9, self.KNANGDKHIEJ)?;
         }
         if self.NEBOAFHPJFF != 0 {
-            os.write_uint32(4, self.NEBOAFHPJFF)?;
+            os.write_uint32(10, self.NEBOAFHPJFF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,8 +185,8 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyBuyGoodsScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bMonopolyBuyGoodsScRsp.proto\"u\n\x15MonopolyBuyGoodsScRsp\x12\x18\
     \n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\x12\x20\n\x0bKNANGDKHIEJ\
-    \x18\r\x20\x01(\rR\x0bKNANGDKHIEJ\x12\x20\n\x0bNEBOAFHPJFF\x18\x04\x20\
-    \x01(\rR\x0bNEBOAFHPJFFb\x06proto3\
+    \x18\t\x20\x01(\rR\x0bKNANGDKHIEJ\x12\x20\n\x0bNEBOAFHPJFF\x18\n\x20\x01\
+    (\rR\x0bNEBOAFHPJFFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

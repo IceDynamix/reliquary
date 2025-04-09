@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EIOKJOLKJPB {
     // message fields
-    // @@protoc_insertion_point(field:EIOKJOLKJPB.ONLEIMHGFCO)
-    pub ONLEIMHGFCO: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:EIOKJOLKJPB.DCPBFLJFHBB)
     pub DCPBFLJFHBB: ::std::vec::Vec<super::NNMLCFAIBDE::NNMLCFAIBDE>,
     // @@protoc_insertion_point(field:EIOKJOLKJPB.PBLFLJNHMIL)
     pub PBLFLJNHMIL: ::protobuf::EnumOrUnknown<super::MessageSectionStatus::MessageSectionStatus>,
     // @@protoc_insertion_point(field:EIOKJOLKJPB.DCHLCMGKIPK)
     pub DCHLCMGKIPK: u32,
+    // @@protoc_insertion_point(field:EIOKJOLKJPB.ONLEIMHGFCO)
+    pub ONLEIMHGFCO: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:EIOKJOLKJPB.ELGANMDPMID)
     pub ELGANMDPMID: u32,
     // special fields
@@ -58,11 +58,6 @@ impl EIOKJOLKJPB {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ONLEIMHGFCO",
-            |m: &EIOKJOLKJPB| { &m.ONLEIMHGFCO },
-            |m: &mut EIOKJOLKJPB| { &mut m.ONLEIMHGFCO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "DCPBFLJFHBB",
             |m: &EIOKJOLKJPB| { &m.DCPBFLJFHBB },
             |m: &mut EIOKJOLKJPB| { &mut m.DCPBFLJFHBB },
@@ -76,6 +71,11 @@ impl EIOKJOLKJPB {
             "DCHLCMGKIPK",
             |m: &EIOKJOLKJPB| { &m.DCHLCMGKIPK },
             |m: &mut EIOKJOLKJPB| { &mut m.DCHLCMGKIPK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "ONLEIMHGFCO",
+            |m: &EIOKJOLKJPB| { &m.ONLEIMHGFCO },
+            |m: &mut EIOKJOLKJPB| { &mut m.ONLEIMHGFCO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ELGANMDPMID",
@@ -100,22 +100,22 @@ impl ::protobuf::Message for EIOKJOLKJPB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.ONLEIMHGFCO)?;
-                },
-                80 => {
-                    self.ONLEIMHGFCO.push(is.read_uint32()?);
-                },
-                42 => {
+                90 => {
                     self.DCPBFLJFHBB.push(is.read_message()?);
                 },
-                88 => {
+                96 => {
                     self.PBLFLJNHMIL = is.read_enum_or_unknown()?;
                 },
-                120 => {
+                32 => {
                     self.DCHLCMGKIPK = is.read_uint32()?;
                 },
-                24 => {
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.ONLEIMHGFCO)?;
+                },
+                120 => {
+                    self.ONLEIMHGFCO.push(is.read_uint32()?);
+                },
+                112 => {
                     self.ELGANMDPMID = is.read_uint32()?;
                 },
                 tag => {
@@ -130,19 +130,19 @@ impl ::protobuf::Message for EIOKJOLKJPB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.ONLEIMHGFCO);
         for value in &self.DCPBFLJFHBB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::MessageSectionStatus::MessageSectionStatus::MESSAGE_SECTION_NONE) {
-            my_size += ::protobuf::rt::int32_size(11, self.PBLFLJNHMIL.value());
+            my_size += ::protobuf::rt::int32_size(12, self.PBLFLJNHMIL.value());
         }
         if self.DCHLCMGKIPK != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.DCHLCMGKIPK);
+            my_size += ::protobuf::rt::uint32_size(4, self.DCHLCMGKIPK);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.ONLEIMHGFCO);
         if self.ELGANMDPMID != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.ELGANMDPMID);
+            my_size += ::protobuf::rt::uint32_size(14, self.ELGANMDPMID);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,18 +150,18 @@ impl ::protobuf::Message for EIOKJOLKJPB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(10, &self.ONLEIMHGFCO)?;
         for v in &self.DCPBFLJFHBB {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::MessageSectionStatus::MessageSectionStatus::MESSAGE_SECTION_NONE) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.PBLFLJNHMIL))?;
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.PBLFLJNHMIL))?;
         }
         if self.DCHLCMGKIPK != 0 {
-            os.write_uint32(15, self.DCHLCMGKIPK)?;
+            os.write_uint32(4, self.DCHLCMGKIPK)?;
         }
+        os.write_repeated_packed_uint32(15, &self.ONLEIMHGFCO)?;
         if self.ELGANMDPMID != 0 {
-            os.write_uint32(3, self.ELGANMDPMID)?;
+            os.write_uint32(14, self.ELGANMDPMID)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,20 +180,20 @@ impl ::protobuf::Message for EIOKJOLKJPB {
     }
 
     fn clear(&mut self) {
-        self.ONLEIMHGFCO.clear();
         self.DCPBFLJFHBB.clear();
         self.PBLFLJNHMIL = ::protobuf::EnumOrUnknown::new(super::MessageSectionStatus::MessageSectionStatus::MESSAGE_SECTION_NONE);
         self.DCHLCMGKIPK = 0;
+        self.ONLEIMHGFCO.clear();
         self.ELGANMDPMID = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EIOKJOLKJPB {
         static instance: EIOKJOLKJPB = EIOKJOLKJPB {
-            ONLEIMHGFCO: ::std::vec::Vec::new(),
             DCPBFLJFHBB: ::std::vec::Vec::new(),
             PBLFLJNHMIL: ::protobuf::EnumOrUnknown::from_i32(0),
             DCHLCMGKIPK: 0,
+            ONLEIMHGFCO: ::std::vec::Vec::new(),
             ELGANMDPMID: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -220,11 +220,11 @@ impl ::protobuf::reflect::ProtobufValue for EIOKJOLKJPB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EIOKJOLKJPB.proto\x1a\x1aMessageSectionStatus.proto\x1a\x11NNMLCFA\
-    IBDE.proto\"\xdc\x01\n\x0bEIOKJOLKJPB\x12\x20\n\x0bONLEIMHGFCO\x18\n\x20\
-    \x03(\rR\x0bONLEIMHGFCO\x12.\n\x0bDCPBFLJFHBB\x18\x05\x20\x03(\x0b2\x0c.\
-    NNMLCFAIBDER\x0bDCPBFLJFHBB\x127\n\x0bPBLFLJNHMIL\x18\x0b\x20\x01(\x0e2\
-    \x15.MessageSectionStatusR\x0bPBLFLJNHMIL\x12\x20\n\x0bDCHLCMGKIPK\x18\
-    \x0f\x20\x01(\rR\x0bDCHLCMGKIPK\x12\x20\n\x0bELGANMDPMID\x18\x03\x20\x01\
+    IBDE.proto\"\xdc\x01\n\x0bEIOKJOLKJPB\x12.\n\x0bDCPBFLJFHBB\x18\x0b\x20\
+    \x03(\x0b2\x0c.NNMLCFAIBDER\x0bDCPBFLJFHBB\x127\n\x0bPBLFLJNHMIL\x18\x0c\
+    \x20\x01(\x0e2\x15.MessageSectionStatusR\x0bPBLFLJNHMIL\x12\x20\n\x0bDCH\
+    LCMGKIPK\x18\x04\x20\x01(\rR\x0bDCHLCMGKIPK\x12\x20\n\x0bONLEIMHGFCO\x18\
+    \x0f\x20\x03(\rR\x0bONLEIMHGFCO\x12\x20\n\x0bELGANMDPMID\x18\x0e\x20\x01\
     (\rR\x0bELGANMDPMIDb\x06proto3\
 ";
 

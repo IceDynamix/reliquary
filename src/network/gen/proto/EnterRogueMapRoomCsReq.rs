@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterRogueMapRoomCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EnterRogueMapRoomCsReq.JJLOGICPOAO)
-    pub JJLOGICPOAO: u32,
     // @@protoc_insertion_point(field:EnterRogueMapRoomCsReq.MDBEDJLDPGM)
     pub MDBEDJLDPGM: u32,
+    // @@protoc_insertion_point(field:EnterRogueMapRoomCsReq.JJLOGICPOAO)
+    pub JJLOGICPOAO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EnterRogueMapRoomCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl EnterRogueMapRoomCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JJLOGICPOAO",
-            |m: &EnterRogueMapRoomCsReq| { &m.JJLOGICPOAO },
-            |m: &mut EnterRogueMapRoomCsReq| { &mut m.JJLOGICPOAO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MDBEDJLDPGM",
             |m: &EnterRogueMapRoomCsReq| { &m.MDBEDJLDPGM },
             |m: &mut EnterRogueMapRoomCsReq| { &mut m.MDBEDJLDPGM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JJLOGICPOAO",
+            |m: &EnterRogueMapRoomCsReq| { &m.JJLOGICPOAO },
+            |m: &mut EnterRogueMapRoomCsReq| { &mut m.JJLOGICPOAO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterRogueMapRoomCsReq>(
             "EnterRogueMapRoomCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for EnterRogueMapRoomCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.JJLOGICPOAO = is.read_uint32()?;
-                },
                 120 => {
                     self.MDBEDJLDPGM = is.read_uint32()?;
+                },
+                16 => {
+                    self.JJLOGICPOAO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for EnterRogueMapRoomCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JJLOGICPOAO != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.JJLOGICPOAO);
-        }
         if self.MDBEDJLDPGM != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.MDBEDJLDPGM);
+        }
+        if self.JJLOGICPOAO != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.JJLOGICPOAO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for EnterRogueMapRoomCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JJLOGICPOAO != 0 {
-            os.write_uint32(7, self.JJLOGICPOAO)?;
-        }
         if self.MDBEDJLDPGM != 0 {
             os.write_uint32(15, self.MDBEDJLDPGM)?;
+        }
+        if self.JJLOGICPOAO != 0 {
+            os.write_uint32(2, self.JJLOGICPOAO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for EnterRogueMapRoomCsReq {
     }
 
     fn clear(&mut self) {
-        self.JJLOGICPOAO = 0;
         self.MDBEDJLDPGM = 0;
+        self.JJLOGICPOAO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterRogueMapRoomCsReq {
         static instance: EnterRogueMapRoomCsReq = EnterRogueMapRoomCsReq {
-            JJLOGICPOAO: 0,
             MDBEDJLDPGM: 0,
+            JJLOGICPOAO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for EnterRogueMapRoomCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cEnterRogueMapRoomCsReq.proto\"\\\n\x16EnterRogueMapRoomCsReq\x12\
-    \x20\n\x0bJJLOGICPOAO\x18\x07\x20\x01(\rR\x0bJJLOGICPOAO\x12\x20\n\x0bMD\
-    BEDJLDPGM\x18\x0f\x20\x01(\rR\x0bMDBEDJLDPGMb\x06proto3\
+    \x20\n\x0bMDBEDJLDPGM\x18\x0f\x20\x01(\rR\x0bMDBEDJLDPGM\x12\x20\n\x0bJJ\
+    LOGICPOAO\x18\x02\x20\x01(\rR\x0bJJLOGICPOAOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

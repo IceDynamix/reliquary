@@ -96,13 +96,13 @@ impl ::protobuf::Message for JKKFALNEDEP {
                 58 => {
                     self.BMKPHJICOKC.push(is.read_message()?);
                 },
-                80 => {
+                16 => {
                     self.INHDDNNPBDB = is.read_uint32()?;
                 },
-                48 => {
+                112 => {
                     self.DPJPNNCPNPJ = is.read_uint32()?;
                 },
-                104 => {
+                80 => {
                     self.level = is.read_uint32()?;
                 },
                 tag => {
@@ -122,13 +122,13 @@ impl ::protobuf::Message for JKKFALNEDEP {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.INHDDNNPBDB != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.INHDDNNPBDB);
+            my_size += ::protobuf::rt::uint32_size(2, self.INHDDNNPBDB);
         }
         if self.DPJPNNCPNPJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.DPJPNNCPNPJ);
+            my_size += ::protobuf::rt::uint32_size(14, self.DPJPNNCPNPJ);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.level);
+            my_size += ::protobuf::rt::uint32_size(10, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -140,13 +140,13 @@ impl ::protobuf::Message for JKKFALNEDEP {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         if self.INHDDNNPBDB != 0 {
-            os.write_uint32(10, self.INHDDNNPBDB)?;
+            os.write_uint32(2, self.INHDDNNPBDB)?;
         }
         if self.DPJPNNCPNPJ != 0 {
-            os.write_uint32(6, self.DPJPNNCPNPJ)?;
+            os.write_uint32(14, self.DPJPNNCPNPJ)?;
         }
         if self.level != 0 {
-            os.write_uint32(13, self.level)?;
+            os.write_uint32(10, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -204,9 +204,9 @@ impl ::protobuf::reflect::ProtobufValue for JKKFALNEDEP {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JKKFALNEDEP.proto\x1a\x11EIOAFODNCOJ.proto\"\x97\x01\n\x0bJKKFALNE\
     DEP\x12.\n\x0bBMKPHJICOKC\x18\x07\x20\x03(\x0b2\x0c.EIOAFODNCOJR\x0bBMKP\
-    HJICOKC\x12\x20\n\x0bINHDDNNPBDB\x18\n\x20\x01(\rR\x0bINHDDNNPBDB\x12\
-    \x20\n\x0bDPJPNNCPNPJ\x18\x06\x20\x01(\rR\x0bDPJPNNCPNPJ\x12\x14\n\x05le\
-    vel\x18\r\x20\x01(\rR\x05levelb\x06proto3\
+    HJICOKC\x12\x20\n\x0bINHDDNNPBDB\x18\x02\x20\x01(\rR\x0bINHDDNNPBDB\x12\
+    \x20\n\x0bDPJPNNCPNPJ\x18\x0e\x20\x01(\rR\x0bDPJPNNCPNPJ\x12\x14\n\x05le\
+    vel\x18\n\x20\x01(\rR\x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

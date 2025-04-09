@@ -79,7 +79,7 @@ impl ::protobuf::Message for MCNCKBNOEJG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                16 => {
                     self.CIGAJENPMKH = is.read_uint32()?;
                 },
                 24 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for MCNCKBNOEJG {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CIGAJENPMKH != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.CIGAJENPMKH);
+            my_size += ::protobuf::rt::uint32_size(2, self.CIGAJENPMKH);
         }
         if self.FPNODEEPFKI != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.FPNODEEPFKI);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for MCNCKBNOEJG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CIGAJENPMKH != 0 {
-            os.write_uint32(14, self.CIGAJENPMKH)?;
+            os.write_uint32(2, self.CIGAJENPMKH)?;
         }
         if self.FPNODEEPFKI != 0 {
             os.write_uint32(3, self.FPNODEEPFKI)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for MCNCKBNOEJG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MCNCKBNOEJG.proto\"Q\n\x0bMCNCKBNOEJG\x12\x20\n\x0bCIGAJENPMKH\x18\
-    \x0e\x20\x01(\rR\x0bCIGAJENPMKH\x12\x20\n\x0bFPNODEEPFKI\x18\x03\x20\x01\
+    \x02\x20\x01(\rR\x0bCIGAJENPMKH\x12\x20\n\x0bFPNODEEPFKI\x18\x03\x20\x01\
     (\rR\x0bFPNODEEPFKIb\x06proto3\
 ";
 

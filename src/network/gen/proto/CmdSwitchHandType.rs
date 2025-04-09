@@ -29,34 +29,34 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdSwitchHandType {
     // @@protoc_insertion_point(enum_value:CmdSwitchHandType.CmdSwitchHandTypeNone)
     CmdSwitchHandTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.CmdSwitchHandResetHandPosCsReq)
-    CmdSwitchHandResetHandPosCsReq = 8118,
-    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.CmdSwitchHandDataScRsp)
-    CmdSwitchHandDataScRsp = 8108,
-    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.CmdSwitchHandCoinUpdateScRsp)
-    CmdSwitchHandCoinUpdateScRsp = 8106,
-    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.CmdSwitchHandStartScRsp)
-    CmdSwitchHandStartScRsp = 8102,
-    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.CmdSwitchHandUpdateCsReq)
-    CmdSwitchHandUpdateCsReq = 8119,
-    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.CmdSwitchHandFinishCsReq)
-    CmdSwitchHandFinishCsReq = 8104,
-    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.CmdSwitchHandResetHandPosScRsp)
-    CmdSwitchHandResetHandPosScRsp = 8105,
-    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.CmdSwitchHandUpdateScRsp)
-    CmdSwitchHandUpdateScRsp = 8114,
-    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.CmdSwitchHandFinishScRsp)
-    CmdSwitchHandFinishScRsp = 8101,
-    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.CmdSwitchHandStartCsReq)
-    CmdSwitchHandStartCsReq = 8112,
-    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.CmdSwitchHandResetGameScRsp)
-    CmdSwitchHandResetGameScRsp = 8110,
     // @@protoc_insertion_point(enum_value:CmdSwitchHandType.CmdSwitchHandDataCsReq)
     CmdSwitchHandDataCsReq = 8117,
+    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.CmdSwitchHandDataScRsp)
+    CmdSwitchHandDataScRsp = 8116,
+    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.CmdSwitchHandResetGameScRsp)
+    CmdSwitchHandResetGameScRsp = 8103,
+    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.CmdSwitchHandResetHandPosScRsp)
+    CmdSwitchHandResetHandPosScRsp = 8115,
+    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.CmdSwitchHandUpdateScRsp)
+    CmdSwitchHandUpdateScRsp = 8111,
+    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.CmdSwitchHandUpdateCsReq)
+    CmdSwitchHandUpdateCsReq = 8119,
+    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.CmdSwitchHandCoinUpdateScRsp)
+    CmdSwitchHandCoinUpdateScRsp = 8118,
+    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.CmdSwitchHandFinishCsReq)
+    CmdSwitchHandFinishCsReq = 8114,
     // @@protoc_insertion_point(enum_value:CmdSwitchHandType.CmdSwitchHandCoinUpdateCsReq)
-    CmdSwitchHandCoinUpdateCsReq = 8115,
+    CmdSwitchHandCoinUpdateCsReq = 8110,
+    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.CmdSwitchHandStartScRsp)
+    CmdSwitchHandStartScRsp = 8104,
+    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.CmdSwitchHandResetHandPosCsReq)
+    CmdSwitchHandResetHandPosCsReq = 8107,
+    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.CmdSwitchHandFinishScRsp)
+    CmdSwitchHandFinishScRsp = 8109,
+    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.CmdSwitchHandStartCsReq)
+    CmdSwitchHandStartCsReq = 8120,
     // @@protoc_insertion_point(enum_value:CmdSwitchHandType.CmdSwitchHandResetGameCsReq)
-    CmdSwitchHandResetGameCsReq = 8116,
+    CmdSwitchHandResetGameCsReq = 8113,
 }
 
 impl ::protobuf::Enum for CmdSwitchHandType {
@@ -69,20 +69,20 @@ impl ::protobuf::Enum for CmdSwitchHandType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdSwitchHandType> {
         match value {
             0 => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandTypeNone),
-            8118 => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandResetHandPosCsReq),
-            8108 => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandDataScRsp),
-            8106 => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandCoinUpdateScRsp),
-            8102 => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandStartScRsp),
-            8119 => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandUpdateCsReq),
-            8104 => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandFinishCsReq),
-            8105 => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandResetHandPosScRsp),
-            8114 => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandUpdateScRsp),
-            8101 => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandFinishScRsp),
-            8112 => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandStartCsReq),
-            8110 => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandResetGameScRsp),
             8117 => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandDataCsReq),
-            8115 => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandCoinUpdateCsReq),
-            8116 => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandResetGameCsReq),
+            8116 => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandDataScRsp),
+            8103 => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandResetGameScRsp),
+            8115 => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandResetHandPosScRsp),
+            8111 => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandUpdateScRsp),
+            8119 => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandUpdateCsReq),
+            8118 => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandCoinUpdateScRsp),
+            8114 => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandFinishCsReq),
+            8110 => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandCoinUpdateCsReq),
+            8104 => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandStartScRsp),
+            8107 => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandResetHandPosCsReq),
+            8109 => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandFinishScRsp),
+            8120 => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandStartCsReq),
+            8113 => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandResetGameCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -90,19 +90,19 @@ impl ::protobuf::Enum for CmdSwitchHandType {
     fn from_str(str: &str) -> ::std::option::Option<CmdSwitchHandType> {
         match str {
             "CmdSwitchHandTypeNone" => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandTypeNone),
-            "CmdSwitchHandResetHandPosCsReq" => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandResetHandPosCsReq),
+            "CmdSwitchHandDataCsReq" => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandDataCsReq),
             "CmdSwitchHandDataScRsp" => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandDataScRsp),
-            "CmdSwitchHandCoinUpdateScRsp" => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandCoinUpdateScRsp),
-            "CmdSwitchHandStartScRsp" => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandStartScRsp),
-            "CmdSwitchHandUpdateCsReq" => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandUpdateCsReq),
-            "CmdSwitchHandFinishCsReq" => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandFinishCsReq),
+            "CmdSwitchHandResetGameScRsp" => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandResetGameScRsp),
             "CmdSwitchHandResetHandPosScRsp" => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandResetHandPosScRsp),
             "CmdSwitchHandUpdateScRsp" => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandUpdateScRsp),
+            "CmdSwitchHandUpdateCsReq" => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandUpdateCsReq),
+            "CmdSwitchHandCoinUpdateScRsp" => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandCoinUpdateScRsp),
+            "CmdSwitchHandFinishCsReq" => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandFinishCsReq),
+            "CmdSwitchHandCoinUpdateCsReq" => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandCoinUpdateCsReq),
+            "CmdSwitchHandStartScRsp" => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandStartScRsp),
+            "CmdSwitchHandResetHandPosCsReq" => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandResetHandPosCsReq),
             "CmdSwitchHandFinishScRsp" => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandFinishScRsp),
             "CmdSwitchHandStartCsReq" => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandStartCsReq),
-            "CmdSwitchHandResetGameScRsp" => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandResetGameScRsp),
-            "CmdSwitchHandDataCsReq" => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandDataCsReq),
-            "CmdSwitchHandCoinUpdateCsReq" => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandCoinUpdateCsReq),
             "CmdSwitchHandResetGameCsReq" => ::std::option::Option::Some(CmdSwitchHandType::CmdSwitchHandResetGameCsReq),
             _ => ::std::option::Option::None
         }
@@ -110,19 +110,19 @@ impl ::protobuf::Enum for CmdSwitchHandType {
 
     const VALUES: &'static [CmdSwitchHandType] = &[
         CmdSwitchHandType::CmdSwitchHandTypeNone,
-        CmdSwitchHandType::CmdSwitchHandResetHandPosCsReq,
+        CmdSwitchHandType::CmdSwitchHandDataCsReq,
         CmdSwitchHandType::CmdSwitchHandDataScRsp,
-        CmdSwitchHandType::CmdSwitchHandCoinUpdateScRsp,
-        CmdSwitchHandType::CmdSwitchHandStartScRsp,
-        CmdSwitchHandType::CmdSwitchHandUpdateCsReq,
-        CmdSwitchHandType::CmdSwitchHandFinishCsReq,
+        CmdSwitchHandType::CmdSwitchHandResetGameScRsp,
         CmdSwitchHandType::CmdSwitchHandResetHandPosScRsp,
         CmdSwitchHandType::CmdSwitchHandUpdateScRsp,
+        CmdSwitchHandType::CmdSwitchHandUpdateCsReq,
+        CmdSwitchHandType::CmdSwitchHandCoinUpdateScRsp,
+        CmdSwitchHandType::CmdSwitchHandFinishCsReq,
+        CmdSwitchHandType::CmdSwitchHandCoinUpdateCsReq,
+        CmdSwitchHandType::CmdSwitchHandStartScRsp,
+        CmdSwitchHandType::CmdSwitchHandResetHandPosCsReq,
         CmdSwitchHandType::CmdSwitchHandFinishScRsp,
         CmdSwitchHandType::CmdSwitchHandStartCsReq,
-        CmdSwitchHandType::CmdSwitchHandResetGameScRsp,
-        CmdSwitchHandType::CmdSwitchHandDataCsReq,
-        CmdSwitchHandType::CmdSwitchHandCoinUpdateCsReq,
         CmdSwitchHandType::CmdSwitchHandResetGameCsReq,
     ];
 }
@@ -136,19 +136,19 @@ impl ::protobuf::EnumFull for CmdSwitchHandType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdSwitchHandType::CmdSwitchHandTypeNone => 0,
-            CmdSwitchHandType::CmdSwitchHandResetHandPosCsReq => 1,
+            CmdSwitchHandType::CmdSwitchHandDataCsReq => 1,
             CmdSwitchHandType::CmdSwitchHandDataScRsp => 2,
-            CmdSwitchHandType::CmdSwitchHandCoinUpdateScRsp => 3,
-            CmdSwitchHandType::CmdSwitchHandStartScRsp => 4,
-            CmdSwitchHandType::CmdSwitchHandUpdateCsReq => 5,
-            CmdSwitchHandType::CmdSwitchHandFinishCsReq => 6,
-            CmdSwitchHandType::CmdSwitchHandResetHandPosScRsp => 7,
-            CmdSwitchHandType::CmdSwitchHandUpdateScRsp => 8,
-            CmdSwitchHandType::CmdSwitchHandFinishScRsp => 9,
-            CmdSwitchHandType::CmdSwitchHandStartCsReq => 10,
-            CmdSwitchHandType::CmdSwitchHandResetGameScRsp => 11,
-            CmdSwitchHandType::CmdSwitchHandDataCsReq => 12,
-            CmdSwitchHandType::CmdSwitchHandCoinUpdateCsReq => 13,
+            CmdSwitchHandType::CmdSwitchHandResetGameScRsp => 3,
+            CmdSwitchHandType::CmdSwitchHandResetHandPosScRsp => 4,
+            CmdSwitchHandType::CmdSwitchHandUpdateScRsp => 5,
+            CmdSwitchHandType::CmdSwitchHandUpdateCsReq => 6,
+            CmdSwitchHandType::CmdSwitchHandCoinUpdateScRsp => 7,
+            CmdSwitchHandType::CmdSwitchHandFinishCsReq => 8,
+            CmdSwitchHandType::CmdSwitchHandCoinUpdateCsReq => 9,
+            CmdSwitchHandType::CmdSwitchHandStartScRsp => 10,
+            CmdSwitchHandType::CmdSwitchHandResetHandPosCsReq => 11,
+            CmdSwitchHandType::CmdSwitchHandFinishScRsp => 12,
+            CmdSwitchHandType::CmdSwitchHandStartCsReq => 13,
             CmdSwitchHandType::CmdSwitchHandResetGameCsReq => 14,
         };
         Self::enum_descriptor().value_by_index(index)
@@ -169,16 +169,16 @@ impl CmdSwitchHandType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17CmdSwitchHandType.proto*\xf4\x03\n\x11CmdSwitchHandType\x12\x19\n\
-    \x15CmdSwitchHandTypeNone\x10\0\x12#\n\x1eCmdSwitchHandResetHandPosCsReq\
-    \x10\xb6?\x12\x1b\n\x16CmdSwitchHandDataScRsp\x10\xac?\x12!\n\x1cCmdSwit\
-    chHandCoinUpdateScRsp\x10\xaa?\x12\x1c\n\x17CmdSwitchHandStartScRsp\x10\
-    \xa6?\x12\x1d\n\x18CmdSwitchHandUpdateCsReq\x10\xb7?\x12\x1d\n\x18CmdSwi\
-    tchHandFinishCsReq\x10\xa8?\x12#\n\x1eCmdSwitchHandResetHandPosScRsp\x10\
-    \xa9?\x12\x1d\n\x18CmdSwitchHandUpdateScRsp\x10\xb2?\x12\x1d\n\x18CmdSwi\
-    tchHandFinishScRsp\x10\xa5?\x12\x1c\n\x17CmdSwitchHandStartCsReq\x10\xb0\
-    ?\x12\x20\n\x1bCmdSwitchHandResetGameScRsp\x10\xae?\x12\x1b\n\x16CmdSwit\
-    chHandDataCsReq\x10\xb5?\x12!\n\x1cCmdSwitchHandCoinUpdateCsReq\x10\xb3?\
-    \x12\x20\n\x1bCmdSwitchHandResetGameCsReq\x10\xb4?b\x06proto3\
+    \x15CmdSwitchHandTypeNone\x10\0\x12\x1b\n\x16CmdSwitchHandDataCsReq\x10\
+    \xb5?\x12\x1b\n\x16CmdSwitchHandDataScRsp\x10\xb4?\x12\x20\n\x1bCmdSwitc\
+    hHandResetGameScRsp\x10\xa7?\x12#\n\x1eCmdSwitchHandResetHandPosScRsp\
+    \x10\xb3?\x12\x1d\n\x18CmdSwitchHandUpdateScRsp\x10\xaf?\x12\x1d\n\x18Cm\
+    dSwitchHandUpdateCsReq\x10\xb7?\x12!\n\x1cCmdSwitchHandCoinUpdateScRsp\
+    \x10\xb6?\x12\x1d\n\x18CmdSwitchHandFinishCsReq\x10\xb2?\x12!\n\x1cCmdSw\
+    itchHandCoinUpdateCsReq\x10\xae?\x12\x1c\n\x17CmdSwitchHandStartScRsp\
+    \x10\xa8?\x12#\n\x1eCmdSwitchHandResetHandPosCsReq\x10\xab?\x12\x1d\n\
+    \x18CmdSwitchHandFinishScRsp\x10\xad?\x12\x1c\n\x17CmdSwitchHandStartCsR\
+    eq\x10\xb8?\x12\x20\n\x1bCmdSwitchHandResetGameCsReq\x10\xb1?b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

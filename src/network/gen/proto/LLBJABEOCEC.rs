@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LLBJABEOCEC {
     // message fields
-    // @@protoc_insertion_point(field:LLBJABEOCEC.MAMHOJMFJOF)
-    pub MAMHOJMFJOF: u32,
     // @@protoc_insertion_point(field:LLBJABEOCEC.ELAPPCMELOA)
     pub ELAPPCMELOA: u32,
+    // @@protoc_insertion_point(field:LLBJABEOCEC.MAMHOJMFJOF)
+    pub MAMHOJMFJOF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LLBJABEOCEC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl LLBJABEOCEC {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MAMHOJMFJOF",
-            |m: &LLBJABEOCEC| { &m.MAMHOJMFJOF },
-            |m: &mut LLBJABEOCEC| { &mut m.MAMHOJMFJOF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ELAPPCMELOA",
             |m: &LLBJABEOCEC| { &m.ELAPPCMELOA },
             |m: &mut LLBJABEOCEC| { &mut m.ELAPPCMELOA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MAMHOJMFJOF",
+            |m: &LLBJABEOCEC| { &m.MAMHOJMFJOF },
+            |m: &mut LLBJABEOCEC| { &mut m.MAMHOJMFJOF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LLBJABEOCEC>(
             "LLBJABEOCEC",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for LLBJABEOCEC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.MAMHOJMFJOF = is.read_uint32()?;
-                },
-                64 => {
+                120 => {
                     self.ELAPPCMELOA = is.read_uint32()?;
+                },
+                16 => {
+                    self.MAMHOJMFJOF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for LLBJABEOCEC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MAMHOJMFJOF != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.MAMHOJMFJOF);
-        }
         if self.ELAPPCMELOA != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.ELAPPCMELOA);
+            my_size += ::protobuf::rt::uint32_size(15, self.ELAPPCMELOA);
+        }
+        if self.MAMHOJMFJOF != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.MAMHOJMFJOF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for LLBJABEOCEC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MAMHOJMFJOF != 0 {
-            os.write_uint32(10, self.MAMHOJMFJOF)?;
-        }
         if self.ELAPPCMELOA != 0 {
-            os.write_uint32(8, self.ELAPPCMELOA)?;
+            os.write_uint32(15, self.ELAPPCMELOA)?;
+        }
+        if self.MAMHOJMFJOF != 0 {
+            os.write_uint32(2, self.MAMHOJMFJOF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for LLBJABEOCEC {
     }
 
     fn clear(&mut self) {
-        self.MAMHOJMFJOF = 0;
         self.ELAPPCMELOA = 0;
+        self.MAMHOJMFJOF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LLBJABEOCEC {
         static instance: LLBJABEOCEC = LLBJABEOCEC {
-            MAMHOJMFJOF: 0,
             ELAPPCMELOA: 0,
+            MAMHOJMFJOF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for LLBJABEOCEC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LLBJABEOCEC.proto\"Q\n\x0bLLBJABEOCEC\x12\x20\n\x0bMAMHOJMFJOF\x18\
-    \n\x20\x01(\rR\x0bMAMHOJMFJOF\x12\x20\n\x0bELAPPCMELOA\x18\x08\x20\x01(\
-    \rR\x0bELAPPCMELOAb\x06proto3\
+    \n\x11LLBJABEOCEC.proto\"Q\n\x0bLLBJABEOCEC\x12\x20\n\x0bELAPPCMELOA\x18\
+    \x0f\x20\x01(\rR\x0bELAPPCMELOA\x12\x20\n\x0bMAMHOJMFJOF\x18\x02\x20\x01\
+    (\rR\x0bMAMHOJMFJOFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

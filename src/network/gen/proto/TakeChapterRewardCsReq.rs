@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeChapterRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeChapterRewardCsReq.KIEKJEFFPHK)
-    pub KIEKJEFFPHK: u32,
     // @@protoc_insertion_point(field:TakeChapterRewardCsReq.AKDGHHNKLEJ)
     pub AKDGHHNKLEJ: u32,
+    // @@protoc_insertion_point(field:TakeChapterRewardCsReq.KIEKJEFFPHK)
+    pub KIEKJEFFPHK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeChapterRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl TakeChapterRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KIEKJEFFPHK",
-            |m: &TakeChapterRewardCsReq| { &m.KIEKJEFFPHK },
-            |m: &mut TakeChapterRewardCsReq| { &mut m.KIEKJEFFPHK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AKDGHHNKLEJ",
             |m: &TakeChapterRewardCsReq| { &m.AKDGHHNKLEJ },
             |m: &mut TakeChapterRewardCsReq| { &mut m.AKDGHHNKLEJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KIEKJEFFPHK",
+            |m: &TakeChapterRewardCsReq| { &m.KIEKJEFFPHK },
+            |m: &mut TakeChapterRewardCsReq| { &mut m.KIEKJEFFPHK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeChapterRewardCsReq>(
             "TakeChapterRewardCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for TakeChapterRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.KIEKJEFFPHK = is.read_uint32()?;
-                },
-                40 => {
+                56 => {
                     self.AKDGHHNKLEJ = is.read_uint32()?;
+                },
+                16 => {
+                    self.KIEKJEFFPHK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for TakeChapterRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KIEKJEFFPHK != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.KIEKJEFFPHK);
-        }
         if self.AKDGHHNKLEJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.AKDGHHNKLEJ);
+            my_size += ::protobuf::rt::uint32_size(7, self.AKDGHHNKLEJ);
+        }
+        if self.KIEKJEFFPHK != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.KIEKJEFFPHK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for TakeChapterRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KIEKJEFFPHK != 0 {
-            os.write_uint32(8, self.KIEKJEFFPHK)?;
-        }
         if self.AKDGHHNKLEJ != 0 {
-            os.write_uint32(5, self.AKDGHHNKLEJ)?;
+            os.write_uint32(7, self.AKDGHHNKLEJ)?;
+        }
+        if self.KIEKJEFFPHK != 0 {
+            os.write_uint32(2, self.KIEKJEFFPHK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for TakeChapterRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.KIEKJEFFPHK = 0;
         self.AKDGHHNKLEJ = 0;
+        self.KIEKJEFFPHK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeChapterRewardCsReq {
         static instance: TakeChapterRewardCsReq = TakeChapterRewardCsReq {
-            KIEKJEFFPHK: 0,
             AKDGHHNKLEJ: 0,
+            KIEKJEFFPHK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for TakeChapterRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cTakeChapterRewardCsReq.proto\"\\\n\x16TakeChapterRewardCsReq\x12\
-    \x20\n\x0bKIEKJEFFPHK\x18\x08\x20\x01(\rR\x0bKIEKJEFFPHK\x12\x20\n\x0bAK\
-    DGHHNKLEJ\x18\x05\x20\x01(\rR\x0bAKDGHHNKLEJb\x06proto3\
+    \x20\n\x0bAKDGHHNKLEJ\x18\x07\x20\x01(\rR\x0bAKDGHHNKLEJ\x12\x20\n\x0bKI\
+    EKJEFFPHK\x18\x02\x20\x01(\rR\x0bKIEKJEFFPHKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

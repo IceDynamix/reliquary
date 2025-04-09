@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GGKBHALPIDK {
     // message fields
-    // @@protoc_insertion_point(field:GGKBHALPIDK.DBAHFEFGLMD)
-    pub DBAHFEFGLMD: u32,
     // @@protoc_insertion_point(field:GGKBHALPIDK.LHBDONJIICC)
     pub LHBDONJIICC: u32,
+    // @@protoc_insertion_point(field:GGKBHALPIDK.DBAHFEFGLMD)
+    pub DBAHFEFGLMD: u32,
     // @@protoc_insertion_point(field:GGKBHALPIDK.IMLHFGEPCAN)
     pub IMLHFGEPCAN: u32,
     // special fields
@@ -54,14 +54,14 @@ impl GGKBHALPIDK {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DBAHFEFGLMD",
-            |m: &GGKBHALPIDK| { &m.DBAHFEFGLMD },
-            |m: &mut GGKBHALPIDK| { &mut m.DBAHFEFGLMD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LHBDONJIICC",
             |m: &GGKBHALPIDK| { &m.LHBDONJIICC },
             |m: &mut GGKBHALPIDK| { &mut m.LHBDONJIICC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DBAHFEFGLMD",
+            |m: &GGKBHALPIDK| { &m.DBAHFEFGLMD },
+            |m: &mut GGKBHALPIDK| { &mut m.DBAHFEFGLMD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IMLHFGEPCAN",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for GGKBHALPIDK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                32 => {
+                    self.LHBDONJIICC = is.read_uint32()?;
+                },
                 56 => {
                     self.DBAHFEFGLMD = is.read_uint32()?;
                 },
-                120 => {
-                    self.LHBDONJIICC = is.read_uint32()?;
-                },
-                72 => {
+                104 => {
                     self.IMLHFGEPCAN = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for GGKBHALPIDK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.LHBDONJIICC != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.LHBDONJIICC);
+        }
         if self.DBAHFEFGLMD != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.DBAHFEFGLMD);
         }
-        if self.LHBDONJIICC != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.LHBDONJIICC);
-        }
         if self.IMLHFGEPCAN != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.IMLHFGEPCAN);
+            my_size += ::protobuf::rt::uint32_size(13, self.IMLHFGEPCAN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for GGKBHALPIDK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.LHBDONJIICC != 0 {
+            os.write_uint32(4, self.LHBDONJIICC)?;
+        }
         if self.DBAHFEFGLMD != 0 {
             os.write_uint32(7, self.DBAHFEFGLMD)?;
         }
-        if self.LHBDONJIICC != 0 {
-            os.write_uint32(15, self.LHBDONJIICC)?;
-        }
         if self.IMLHFGEPCAN != 0 {
-            os.write_uint32(9, self.IMLHFGEPCAN)?;
+            os.write_uint32(13, self.IMLHFGEPCAN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for GGKBHALPIDK {
     }
 
     fn clear(&mut self) {
-        self.DBAHFEFGLMD = 0;
         self.LHBDONJIICC = 0;
+        self.DBAHFEFGLMD = 0;
         self.IMLHFGEPCAN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GGKBHALPIDK {
         static instance: GGKBHALPIDK = GGKBHALPIDK {
-            DBAHFEFGLMD: 0,
             LHBDONJIICC: 0,
+            DBAHFEFGLMD: 0,
             IMLHFGEPCAN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for GGKBHALPIDK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GGKBHALPIDK.proto\"s\n\x0bGGKBHALPIDK\x12\x20\n\x0bDBAHFEFGLMD\x18\
-    \x07\x20\x01(\rR\x0bDBAHFEFGLMD\x12\x20\n\x0bLHBDONJIICC\x18\x0f\x20\x01\
-    (\rR\x0bLHBDONJIICC\x12\x20\n\x0bIMLHFGEPCAN\x18\t\x20\x01(\rR\x0bIMLHFG\
+    \n\x11GGKBHALPIDK.proto\"s\n\x0bGGKBHALPIDK\x12\x20\n\x0bLHBDONJIICC\x18\
+    \x04\x20\x01(\rR\x0bLHBDONJIICC\x12\x20\n\x0bDBAHFEFGLMD\x18\x07\x20\x01\
+    (\rR\x0bDBAHFEFGLMD\x12\x20\n\x0bIMLHFGEPCAN\x18\r\x20\x01(\rR\x0bIMLHFG\
     EPCANb\x06proto3\
 ";
 

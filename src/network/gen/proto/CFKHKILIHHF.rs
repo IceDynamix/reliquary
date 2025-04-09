@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CFKHKILIHHF {
     // message fields
-    // @@protoc_insertion_point(field:CFKHKILIHHF.EKGDAHEOBOG)
-    pub EKGDAHEOBOG: ::protobuf::MessageField<super::GKBICDLGIMN::GKBICDLGIMN>,
     // @@protoc_insertion_point(field:CFKHKILIHHF.PMPKNBJKBNN)
     pub PMPKNBJKBNN: ::protobuf::MessageField<super::GKBICDLGIMN::GKBICDLGIMN>,
+    // @@protoc_insertion_point(field:CFKHKILIHHF.EKGDAHEOBOG)
+    pub EKGDAHEOBOG: ::protobuf::MessageField<super::GKBICDLGIMN::GKBICDLGIMN>,
     // special fields
     // @@protoc_insertion_point(special_field:CFKHKILIHHF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl CFKHKILIHHF {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GKBICDLGIMN::GKBICDLGIMN>(
-            "EKGDAHEOBOG",
-            |m: &CFKHKILIHHF| { &m.EKGDAHEOBOG },
-            |m: &mut CFKHKILIHHF| { &mut m.EKGDAHEOBOG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GKBICDLGIMN::GKBICDLGIMN>(
             "PMPKNBJKBNN",
             |m: &CFKHKILIHHF| { &m.PMPKNBJKBNN },
             |m: &mut CFKHKILIHHF| { &mut m.PMPKNBJKBNN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GKBICDLGIMN::GKBICDLGIMN>(
+            "EKGDAHEOBOG",
+            |m: &CFKHKILIHHF| { &m.EKGDAHEOBOG },
+            |m: &mut CFKHKILIHHF| { &mut m.EKGDAHEOBOG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CFKHKILIHHF>(
             "CFKHKILIHHF",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for CFKHKILIHHF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PMPKNBJKBNN)?;
+                },
                 18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.EKGDAHEOBOG)?;
-                },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PMPKNBJKBNN)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for CFKHKILIHHF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.EKGDAHEOBOG.as_ref() {
+        if let Some(v) = self.PMPKNBJKBNN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.PMPKNBJKBNN.as_ref() {
+        if let Some(v) = self.EKGDAHEOBOG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for CFKHKILIHHF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if let Some(v) = self.PMPKNBJKBNN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        }
         if let Some(v) = self.EKGDAHEOBOG.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
-        if let Some(v) = self.PMPKNBJKBNN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for CFKHKILIHHF {
     }
 
     fn clear(&mut self) {
-        self.EKGDAHEOBOG.clear();
         self.PMPKNBJKBNN.clear();
+        self.EKGDAHEOBOG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CFKHKILIHHF {
         static instance: CFKHKILIHHF = CFKHKILIHHF {
-            EKGDAHEOBOG: ::protobuf::MessageField::none(),
             PMPKNBJKBNN: ::protobuf::MessageField::none(),
+            EKGDAHEOBOG: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for CFKHKILIHHF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CFKHKILIHHF.proto\x1a\x11GKBICDLGIMN.proto\"m\n\x0bCFKHKILIHHF\x12\
-    .\n\x0bEKGDAHEOBOG\x18\x02\x20\x01(\x0b2\x0c.GKBICDLGIMNR\x0bEKGDAHEOBOG\
-    \x12.\n\x0bPMPKNBJKBNN\x18\x0c\x20\x01(\x0b2\x0c.GKBICDLGIMNR\x0bPMPKNBJ\
-    KBNNb\x06proto3\
+    .\n\x0bPMPKNBJKBNN\x18\x08\x20\x01(\x0b2\x0c.GKBICDLGIMNR\x0bPMPKNBJKBNN\
+    \x12.\n\x0bEKGDAHEOBOG\x18\x02\x20\x01(\x0b2\x0c.GKBICDLGIMNR\x0bEKGDAHE\
+    OBOGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

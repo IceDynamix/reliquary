@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CEOONFLONDJ {
     // message fields
-    // @@protoc_insertion_point(field:CEOONFLONDJ.OMDDFKMAAPE)
-    pub OMDDFKMAAPE: u32,
     // @@protoc_insertion_point(field:CEOONFLONDJ.BPPLLCHMIDD)
     pub BPPLLCHMIDD: bool,
+    // @@protoc_insertion_point(field:CEOONFLONDJ.OMDDFKMAAPE)
+    pub OMDDFKMAAPE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CEOONFLONDJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl CEOONFLONDJ {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OMDDFKMAAPE",
-            |m: &CEOONFLONDJ| { &m.OMDDFKMAAPE },
-            |m: &mut CEOONFLONDJ| { &mut m.OMDDFKMAAPE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BPPLLCHMIDD",
             |m: &CEOONFLONDJ| { &m.BPPLLCHMIDD },
             |m: &mut CEOONFLONDJ| { &mut m.BPPLLCHMIDD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OMDDFKMAAPE",
+            |m: &CEOONFLONDJ| { &m.OMDDFKMAAPE },
+            |m: &mut CEOONFLONDJ| { &mut m.OMDDFKMAAPE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CEOONFLONDJ>(
             "CEOONFLONDJ",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for CEOONFLONDJ {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 104 => {
-                    self.OMDDFKMAAPE = is.read_uint32()?;
-                },
-                16 => {
                     self.BPPLLCHMIDD = is.read_bool()?;
+                },
+                96 => {
+                    self.OMDDFKMAAPE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for CEOONFLONDJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OMDDFKMAAPE != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.OMDDFKMAAPE);
-        }
         if self.BPPLLCHMIDD != false {
             my_size += 1 + 1;
+        }
+        if self.OMDDFKMAAPE != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.OMDDFKMAAPE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for CEOONFLONDJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OMDDFKMAAPE != 0 {
-            os.write_uint32(13, self.OMDDFKMAAPE)?;
-        }
         if self.BPPLLCHMIDD != false {
-            os.write_bool(2, self.BPPLLCHMIDD)?;
+            os.write_bool(13, self.BPPLLCHMIDD)?;
+        }
+        if self.OMDDFKMAAPE != 0 {
+            os.write_uint32(12, self.OMDDFKMAAPE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for CEOONFLONDJ {
     }
 
     fn clear(&mut self) {
-        self.OMDDFKMAAPE = 0;
         self.BPPLLCHMIDD = false;
+        self.OMDDFKMAAPE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CEOONFLONDJ {
         static instance: CEOONFLONDJ = CEOONFLONDJ {
-            OMDDFKMAAPE: 0,
             BPPLLCHMIDD: false,
+            OMDDFKMAAPE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for CEOONFLONDJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CEOONFLONDJ.proto\"Q\n\x0bCEOONFLONDJ\x12\x20\n\x0bOMDDFKMAAPE\x18\
-    \r\x20\x01(\rR\x0bOMDDFKMAAPE\x12\x20\n\x0bBPPLLCHMIDD\x18\x02\x20\x01(\
-    \x08R\x0bBPPLLCHMIDDb\x06proto3\
+    \n\x11CEOONFLONDJ.proto\"Q\n\x0bCEOONFLONDJ\x12\x20\n\x0bBPPLLCHMIDD\x18\
+    \r\x20\x01(\x08R\x0bBPPLLCHMIDD\x12\x20\n\x0bOMDDFKMAAPE\x18\x0c\x20\x01\
+    (\rR\x0bOMDDFKMAAPEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

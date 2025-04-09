@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EJDGKNKHKHH {
     // message fields
-    // @@protoc_insertion_point(field:EJDGKNKHKHH.ELGANMDPMID)
-    pub ELGANMDPMID: u32,
     // @@protoc_insertion_point(field:EJDGKNKHKHH.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:EJDGKNKHKHH.ELGANMDPMID)
+    pub ELGANMDPMID: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EJDGKNKHKHH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl EJDGKNKHKHH {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ELGANMDPMID",
-            |m: &EJDGKNKHKHH| { &m.ELGANMDPMID },
-            |m: &mut EJDGKNKHKHH| { &mut m.ELGANMDPMID },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &EJDGKNKHKHH| { &m.level },
             |m: &mut EJDGKNKHKHH| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ELGANMDPMID",
+            |m: &EJDGKNKHKHH| { &m.ELGANMDPMID },
+            |m: &mut EJDGKNKHKHH| { &mut m.ELGANMDPMID },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EJDGKNKHKHH>(
             "EJDGKNKHKHH",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for EJDGKNKHKHH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.ELGANMDPMID = is.read_uint32()?;
-                },
-                48 => {
+                104 => {
                     self.level = is.read_uint32()?;
+                },
+                112 => {
+                    self.ELGANMDPMID = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for EJDGKNKHKHH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ELGANMDPMID != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.ELGANMDPMID);
-        }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.level);
+            my_size += ::protobuf::rt::uint32_size(13, self.level);
+        }
+        if self.ELGANMDPMID != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.ELGANMDPMID);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for EJDGKNKHKHH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ELGANMDPMID != 0 {
-            os.write_uint32(9, self.ELGANMDPMID)?;
-        }
         if self.level != 0 {
-            os.write_uint32(6, self.level)?;
+            os.write_uint32(13, self.level)?;
+        }
+        if self.ELGANMDPMID != 0 {
+            os.write_uint32(14, self.ELGANMDPMID)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for EJDGKNKHKHH {
     }
 
     fn clear(&mut self) {
-        self.ELGANMDPMID = 0;
         self.level = 0;
+        self.ELGANMDPMID = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EJDGKNKHKHH {
         static instance: EJDGKNKHKHH = EJDGKNKHKHH {
-            ELGANMDPMID: 0,
             level: 0,
+            ELGANMDPMID: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for EJDGKNKHKHH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EJDGKNKHKHH.proto\"E\n\x0bEJDGKNKHKHH\x12\x20\n\x0bELGANMDPMID\x18\
-    \t\x20\x01(\rR\x0bELGANMDPMID\x12\x14\n\x05level\x18\x06\x20\x01(\rR\x05\
-    levelb\x06proto3\
+    \n\x11EJDGKNKHKHH.proto\"E\n\x0bEJDGKNKHKHH\x12\x14\n\x05level\x18\r\x20\
+    \x01(\rR\x05level\x12\x20\n\x0bELGANMDPMID\x18\x0e\x20\x01(\rR\x0bELGANM\
+    DPMIDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

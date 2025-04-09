@@ -30,12 +30,12 @@ pub struct PEODOCNCLNP {
     // message fields
     // @@protoc_insertion_point(field:PEODOCNCLNP.BOPAANGKOGH)
     pub BOPAANGKOGH: ::protobuf::MessageField<super::OENDAFIAECG::OENDAFIAECG>,
-    // @@protoc_insertion_point(field:PEODOCNCLNP.AELOIPGFODB)
-    pub AELOIPGFODB: ::protobuf::MessageField<super::JNFELCKIOCM::JNFELCKIOCM>,
     // @@protoc_insertion_point(field:PEODOCNCLNP.DBAHFEFGLMD)
     pub DBAHFEFGLMD: u32,
     // @@protoc_insertion_point(field:PEODOCNCLNP.DKKLLMOHGFD)
     pub DKKLLMOHGFD: u32,
+    // @@protoc_insertion_point(field:PEODOCNCLNP.AELOIPGFODB)
+    pub AELOIPGFODB: ::protobuf::MessageField<super::JNFELCKIOCM::JNFELCKIOCM>,
     // special fields
     // @@protoc_insertion_point(special_field:PEODOCNCLNP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,11 +60,6 @@ impl PEODOCNCLNP {
             |m: &PEODOCNCLNP| { &m.BOPAANGKOGH },
             |m: &mut PEODOCNCLNP| { &mut m.BOPAANGKOGH },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JNFELCKIOCM::JNFELCKIOCM>(
-            "AELOIPGFODB",
-            |m: &PEODOCNCLNP| { &m.AELOIPGFODB },
-            |m: &mut PEODOCNCLNP| { &mut m.AELOIPGFODB },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DBAHFEFGLMD",
             |m: &PEODOCNCLNP| { &m.DBAHFEFGLMD },
@@ -74,6 +69,11 @@ impl PEODOCNCLNP {
             "DKKLLMOHGFD",
             |m: &PEODOCNCLNP| { &m.DKKLLMOHGFD },
             |m: &mut PEODOCNCLNP| { &mut m.DKKLLMOHGFD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JNFELCKIOCM::JNFELCKIOCM>(
+            "AELOIPGFODB",
+            |m: &PEODOCNCLNP| { &m.AELOIPGFODB },
+            |m: &mut PEODOCNCLNP| { &mut m.AELOIPGFODB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PEODOCNCLNP>(
             "PEODOCNCLNP",
@@ -96,14 +96,14 @@ impl ::protobuf::Message for PEODOCNCLNP {
                 18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BOPAANGKOGH)?;
                 },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AELOIPGFODB)?;
-                },
-                24 => {
+                56 => {
                     self.DBAHFEFGLMD = is.read_uint32()?;
                 },
-                56 => {
+                64 => {
                     self.DKKLLMOHGFD = is.read_uint32()?;
+                },
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AELOIPGFODB)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,15 +121,15 @@ impl ::protobuf::Message for PEODOCNCLNP {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.DBAHFEFGLMD != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.DBAHFEFGLMD);
+        }
+        if self.DKKLLMOHGFD != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.DKKLLMOHGFD);
+        }
         if let Some(v) = self.AELOIPGFODB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.DBAHFEFGLMD != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.DBAHFEFGLMD);
-        }
-        if self.DKKLLMOHGFD != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.DKKLLMOHGFD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -140,14 +140,14 @@ impl ::protobuf::Message for PEODOCNCLNP {
         if let Some(v) = self.BOPAANGKOGH.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        if let Some(v) = self.AELOIPGFODB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
         if self.DBAHFEFGLMD != 0 {
-            os.write_uint32(3, self.DBAHFEFGLMD)?;
+            os.write_uint32(7, self.DBAHFEFGLMD)?;
         }
         if self.DKKLLMOHGFD != 0 {
-            os.write_uint32(7, self.DKKLLMOHGFD)?;
+            os.write_uint32(8, self.DKKLLMOHGFD)?;
+        }
+        if let Some(v) = self.AELOIPGFODB.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,18 +167,18 @@ impl ::protobuf::Message for PEODOCNCLNP {
 
     fn clear(&mut self) {
         self.BOPAANGKOGH.clear();
-        self.AELOIPGFODB.clear();
         self.DBAHFEFGLMD = 0;
         self.DKKLLMOHGFD = 0;
+        self.AELOIPGFODB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PEODOCNCLNP {
         static instance: PEODOCNCLNP = PEODOCNCLNP {
             BOPAANGKOGH: ::protobuf::MessageField::none(),
-            AELOIPGFODB: ::protobuf::MessageField::none(),
             DBAHFEFGLMD: 0,
             DKKLLMOHGFD: 0,
+            AELOIPGFODB: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -205,10 +205,10 @@ impl ::protobuf::reflect::ProtobufValue for PEODOCNCLNP {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PEODOCNCLNP.proto\x1a\x11JNFELCKIOCM.proto\x1a\x11OENDAFIAECG.prot\
     o\"\xb1\x01\n\x0bPEODOCNCLNP\x12.\n\x0bBOPAANGKOGH\x18\x02\x20\x01(\x0b2\
-    \x0c.OENDAFIAECGR\x0bBOPAANGKOGH\x12.\n\x0bAELOIPGFODB\x18\x06\x20\x01(\
-    \x0b2\x0c.JNFELCKIOCMR\x0bAELOIPGFODB\x12\x20\n\x0bDBAHFEFGLMD\x18\x03\
-    \x20\x01(\rR\x0bDBAHFEFGLMD\x12\x20\n\x0bDKKLLMOHGFD\x18\x07\x20\x01(\rR\
-    \x0bDKKLLMOHGFDb\x06proto3\
+    \x0c.OENDAFIAECGR\x0bBOPAANGKOGH\x12\x20\n\x0bDBAHFEFGLMD\x18\x07\x20\
+    \x01(\rR\x0bDBAHFEFGLMD\x12\x20\n\x0bDKKLLMOHGFD\x18\x08\x20\x01(\rR\x0b\
+    DKKLLMOHGFD\x12.\n\x0bAELOIPGFODB\x18\r\x20\x01(\x0b2\x0c.JNFELCKIOCMR\
+    \x0bAELOIPGFODBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

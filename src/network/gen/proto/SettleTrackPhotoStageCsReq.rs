@@ -30,10 +30,10 @@ pub struct SettleTrackPhotoStageCsReq {
     // message fields
     // @@protoc_insertion_point(field:SettleTrackPhotoStageCsReq.CFONLBPOABP)
     pub CFONLBPOABP: u32,
-    // @@protoc_insertion_point(field:SettleTrackPhotoStageCsReq.BCLNMIDFFOH)
-    pub BCLNMIDFFOH: u32,
     // @@protoc_insertion_point(field:SettleTrackPhotoStageCsReq.LPIHANIOJFI)
     pub LPIHANIOJFI: ::std::vec::Vec<super::GEOAEOFJOGC::GEOAEOFJOGC>,
+    // @@protoc_insertion_point(field:SettleTrackPhotoStageCsReq.BCLNMIDFFOH)
+    pub BCLNMIDFFOH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SettleTrackPhotoStageCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl SettleTrackPhotoStageCsReq {
             |m: &SettleTrackPhotoStageCsReq| { &m.CFONLBPOABP },
             |m: &mut SettleTrackPhotoStageCsReq| { &mut m.CFONLBPOABP },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BCLNMIDFFOH",
-            |m: &SettleTrackPhotoStageCsReq| { &m.BCLNMIDFFOH },
-            |m: &mut SettleTrackPhotoStageCsReq| { &mut m.BCLNMIDFFOH },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "LPIHANIOJFI",
             |m: &SettleTrackPhotoStageCsReq| { &m.LPIHANIOJFI },
             |m: &mut SettleTrackPhotoStageCsReq| { &mut m.LPIHANIOJFI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BCLNMIDFFOH",
+            |m: &SettleTrackPhotoStageCsReq| { &m.BCLNMIDFFOH },
+            |m: &mut SettleTrackPhotoStageCsReq| { &mut m.BCLNMIDFFOH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SettleTrackPhotoStageCsReq>(
             "SettleTrackPhotoStageCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SettleTrackPhotoStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                88 => {
                     self.CFONLBPOABP = is.read_uint32()?;
                 },
-                104 => {
-                    self.BCLNMIDFFOH = is.read_uint32()?;
-                },
-                82 => {
+                66 => {
                     self.LPIHANIOJFI.push(is.read_message()?);
+                },
+                48 => {
+                    self.BCLNMIDFFOH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +108,15 @@ impl ::protobuf::Message for SettleTrackPhotoStageCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CFONLBPOABP != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.CFONLBPOABP);
-        }
-        if self.BCLNMIDFFOH != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.BCLNMIDFFOH);
+            my_size += ::protobuf::rt::uint32_size(11, self.CFONLBPOABP);
         }
         for value in &self.LPIHANIOJFI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.BCLNMIDFFOH != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.BCLNMIDFFOH);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -124,14 +124,14 @@ impl ::protobuf::Message for SettleTrackPhotoStageCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CFONLBPOABP != 0 {
-            os.write_uint32(15, self.CFONLBPOABP)?;
-        }
-        if self.BCLNMIDFFOH != 0 {
-            os.write_uint32(13, self.BCLNMIDFFOH)?;
+            os.write_uint32(11, self.CFONLBPOABP)?;
         }
         for v in &self.LPIHANIOJFI {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
+        if self.BCLNMIDFFOH != 0 {
+            os.write_uint32(6, self.BCLNMIDFFOH)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,16 +150,16 @@ impl ::protobuf::Message for SettleTrackPhotoStageCsReq {
 
     fn clear(&mut self) {
         self.CFONLBPOABP = 0;
-        self.BCLNMIDFFOH = 0;
         self.LPIHANIOJFI.clear();
+        self.BCLNMIDFFOH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SettleTrackPhotoStageCsReq {
         static instance: SettleTrackPhotoStageCsReq = SettleTrackPhotoStageCsReq {
             CFONLBPOABP: 0,
-            BCLNMIDFFOH: 0,
             LPIHANIOJFI: ::std::vec::Vec::new(),
+            BCLNMIDFFOH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for SettleTrackPhotoStageCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20SettleTrackPhotoStageCsReq.proto\x1a\x11GEOAEOFJOGC.proto\"\x90\
-    \x01\n\x1aSettleTrackPhotoStageCsReq\x12\x20\n\x0bCFONLBPOABP\x18\x0f\
-    \x20\x01(\rR\x0bCFONLBPOABP\x12\x20\n\x0bBCLNMIDFFOH\x18\r\x20\x01(\rR\
-    \x0bBCLNMIDFFOH\x12.\n\x0bLPIHANIOJFI\x18\n\x20\x03(\x0b2\x0c.GEOAEOFJOG\
-    CR\x0bLPIHANIOJFIb\x06proto3\
+    \x01\n\x1aSettleTrackPhotoStageCsReq\x12\x20\n\x0bCFONLBPOABP\x18\x0b\
+    \x20\x01(\rR\x0bCFONLBPOABP\x12.\n\x0bLPIHANIOJFI\x18\x08\x20\x03(\x0b2\
+    \x0c.GEOAEOFJOGCR\x0bLPIHANIOJFI\x12\x20\n\x0bBCLNMIDFFOH\x18\x06\x20\
+    \x01(\rR\x0bBCLNMIDFFOHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

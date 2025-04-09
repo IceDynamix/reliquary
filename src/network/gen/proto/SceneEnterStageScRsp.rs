@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneEnterStageScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SceneEnterStageScRsp.BANFFJDIPIE)
-    pub BANFFJDIPIE: ::protobuf::MessageField<super::CMBHDGKGPGP::CMBHDGKGPGP>,
     // @@protoc_insertion_point(field:SceneEnterStageScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:SceneEnterStageScRsp.BANFFJDIPIE)
+    pub BANFFJDIPIE: ::protobuf::MessageField<super::CMBHDGKGPGP::CMBHDGKGPGP>,
     // special fields
     // @@protoc_insertion_point(special_field:SceneEnterStageScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl SceneEnterStageScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CMBHDGKGPGP::CMBHDGKGPGP>(
-            "BANFFJDIPIE",
-            |m: &SceneEnterStageScRsp| { &m.BANFFJDIPIE },
-            |m: &mut SceneEnterStageScRsp| { &mut m.BANFFJDIPIE },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &SceneEnterStageScRsp| { &m.retcode },
             |m: &mut SceneEnterStageScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CMBHDGKGPGP::CMBHDGKGPGP>(
+            "BANFFJDIPIE",
+            |m: &SceneEnterStageScRsp| { &m.BANFFJDIPIE },
+            |m: &mut SceneEnterStageScRsp| { &mut m.BANFFJDIPIE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SceneEnterStageScRsp>(
             "SceneEnterStageScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SceneEnterStageScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BANFFJDIPIE)?;
-                },
-                48 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
+                },
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BANFFJDIPIE)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for SceneEnterStageScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+        }
         if let Some(v) = self.BANFFJDIPIE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for SceneEnterStageScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.BANFFJDIPIE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
+        }
+        if let Some(v) = self.BANFFJDIPIE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for SceneEnterStageScRsp {
     }
 
     fn clear(&mut self) {
-        self.BANFFJDIPIE.clear();
         self.retcode = 0;
+        self.BANFFJDIPIE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneEnterStageScRsp {
         static instance: SceneEnterStageScRsp = SceneEnterStageScRsp {
-            BANFFJDIPIE: ::protobuf::MessageField::none(),
             retcode: 0,
+            BANFFJDIPIE: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for SceneEnterStageScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aSceneEnterStageScRsp.proto\x1a\x11CMBHDGKGPGP.proto\"`\n\x14SceneE\
-    nterStageScRsp\x12.\n\x0bBANFFJDIPIE\x18\x08\x20\x01(\x0b2\x0c.CMBHDGKGP\
-    GPR\x0bBANFFJDIPIE\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcodeb\
+    nterStageScRsp\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcode\x12.\
+    \n\x0bBANFFJDIPIE\x18\n\x20\x01(\x0b2\x0c.CMBHDGKGPGPR\x0bBANFFJDIPIEb\
     \x06proto3\
 ";
 
