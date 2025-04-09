@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueSyncContextBoardEvent {
     // message fields
-    // @@protoc_insertion_point(field:RogueSyncContextBoardEvent.modifier_effect_type)
-    pub modifier_effect_type: u32,
     // @@protoc_insertion_point(field:RogueSyncContextBoardEvent.board_event_id)
     pub board_event_id: u32,
+    // @@protoc_insertion_point(field:RogueSyncContextBoardEvent.modifier_effect_type)
+    pub modifier_effect_type: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueSyncContextBoardEvent.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl RogueSyncContextBoardEvent {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "modifier_effect_type",
-            |m: &RogueSyncContextBoardEvent| { &m.modifier_effect_type },
-            |m: &mut RogueSyncContextBoardEvent| { &mut m.modifier_effect_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "board_event_id",
             |m: &RogueSyncContextBoardEvent| { &m.board_event_id },
             |m: &mut RogueSyncContextBoardEvent| { &mut m.board_event_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "modifier_effect_type",
+            |m: &RogueSyncContextBoardEvent| { &m.modifier_effect_type },
+            |m: &mut RogueSyncContextBoardEvent| { &mut m.modifier_effect_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueSyncContextBoardEvent>(
             "RogueSyncContextBoardEvent",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RogueSyncContextBoardEvent {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.modifier_effect_type = is.read_uint32()?;
-                },
-                8 => {
+                96 => {
                     self.board_event_id = is.read_uint32()?;
+                },
+                48 => {
+                    self.modifier_effect_type = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for RogueSyncContextBoardEvent {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.modifier_effect_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.modifier_effect_type);
-        }
         if self.board_event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.board_event_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.board_event_id);
+        }
+        if self.modifier_effect_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.modifier_effect_type);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for RogueSyncContextBoardEvent {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.modifier_effect_type != 0 {
-            os.write_uint32(8, self.modifier_effect_type)?;
-        }
         if self.board_event_id != 0 {
-            os.write_uint32(1, self.board_event_id)?;
+            os.write_uint32(12, self.board_event_id)?;
+        }
+        if self.modifier_effect_type != 0 {
+            os.write_uint32(6, self.modifier_effect_type)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for RogueSyncContextBoardEvent {
     }
 
     fn clear(&mut self) {
-        self.modifier_effect_type = 0;
         self.board_event_id = 0;
+        self.modifier_effect_type = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueSyncContextBoardEvent {
         static instance: RogueSyncContextBoardEvent = RogueSyncContextBoardEvent {
-            modifier_effect_type: 0,
             board_event_id: 0,
+            modifier_effect_type: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueSyncContextBoardEvent {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20RogueSyncContextBoardEvent.proto\"t\n\x1aRogueSyncContextBoardEven\
-    t\x120\n\x14modifier_effect_type\x18\x08\x20\x01(\rR\x12modifierEffectTy\
-    pe\x12$\n\x0eboard_event_id\x18\x01\x20\x01(\rR\x0cboardEventIdb\x06prot\
-    o3\
+    t\x12$\n\x0eboard_event_id\x18\x0c\x20\x01(\rR\x0cboardEventId\x120\n\
+    \x14modifier_effect_type\x18\x06\x20\x01(\rR\x12modifierEffectTypeb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

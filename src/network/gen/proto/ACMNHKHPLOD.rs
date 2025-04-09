@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ACMNHKHPLOD {
     // message fields
-    // @@protoc_insertion_point(field:ACMNHKHPLOD.ELGANMDPMID)
-    pub ELGANMDPMID: u32,
-    // @@protoc_insertion_point(field:ACMNHKHPLOD.IHLEAMDIKKN)
-    pub IHLEAMDIKKN: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
     // @@protoc_insertion_point(field:ACMNHKHPLOD.FBNHDEFNECI)
     pub FBNHDEFNECI: u32,
+    // @@protoc_insertion_point(field:ACMNHKHPLOD.IHLEAMDIKKN)
+    pub IHLEAMDIKKN: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
+    // @@protoc_insertion_point(field:ACMNHKHPLOD.ELGANMDPMID)
+    pub ELGANMDPMID: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ACMNHKHPLOD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl ACMNHKHPLOD {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ELGANMDPMID",
-            |m: &ACMNHKHPLOD| { &m.ELGANMDPMID },
-            |m: &mut ACMNHKHPLOD| { &mut m.ELGANMDPMID },
+            "FBNHDEFNECI",
+            |m: &ACMNHKHPLOD| { &m.FBNHDEFNECI },
+            |m: &mut ACMNHKHPLOD| { &mut m.FBNHDEFNECI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IHLEAMDIKKN",
@@ -64,9 +64,9 @@ impl ACMNHKHPLOD {
             |m: &mut ACMNHKHPLOD| { &mut m.IHLEAMDIKKN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FBNHDEFNECI",
-            |m: &ACMNHKHPLOD| { &m.FBNHDEFNECI },
-            |m: &mut ACMNHKHPLOD| { &mut m.FBNHDEFNECI },
+            "ELGANMDPMID",
+            |m: &ACMNHKHPLOD| { &m.ELGANMDPMID },
+            |m: &mut ACMNHKHPLOD| { &mut m.ELGANMDPMID },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ACMNHKHPLOD>(
             "ACMNHKHPLOD",
@@ -87,13 +87,13 @@ impl ::protobuf::Message for ACMNHKHPLOD {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 24 => {
-                    self.ELGANMDPMID = is.read_uint32()?;
+                    self.FBNHDEFNECI = is.read_uint32()?;
                 },
-                104 => {
+                16 => {
                     self.IHLEAMDIKKN = is.read_enum_or_unknown()?;
                 },
-                96 => {
-                    self.FBNHDEFNECI = is.read_uint32()?;
+                72 => {
+                    self.ELGANMDPMID = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for ACMNHKHPLOD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ELGANMDPMID != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.ELGANMDPMID);
+        if self.FBNHDEFNECI != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.FBNHDEFNECI);
         }
         if self.IHLEAMDIKKN != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(13, self.IHLEAMDIKKN.value());
+            my_size += ::protobuf::rt::int32_size(2, self.IHLEAMDIKKN.value());
         }
-        if self.FBNHDEFNECI != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.FBNHDEFNECI);
+        if self.ELGANMDPMID != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.ELGANMDPMID);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for ACMNHKHPLOD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ELGANMDPMID != 0 {
-            os.write_uint32(3, self.ELGANMDPMID)?;
+        if self.FBNHDEFNECI != 0 {
+            os.write_uint32(3, self.FBNHDEFNECI)?;
         }
         if self.IHLEAMDIKKN != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.IHLEAMDIKKN))?;
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.IHLEAMDIKKN))?;
         }
-        if self.FBNHDEFNECI != 0 {
-            os.write_uint32(12, self.FBNHDEFNECI)?;
+        if self.ELGANMDPMID != 0 {
+            os.write_uint32(9, self.ELGANMDPMID)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for ACMNHKHPLOD {
     }
 
     fn clear(&mut self) {
-        self.ELGANMDPMID = 0;
-        self.IHLEAMDIKKN = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE);
         self.FBNHDEFNECI = 0;
+        self.IHLEAMDIKKN = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE);
+        self.ELGANMDPMID = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ACMNHKHPLOD {
         static instance: ACMNHKHPLOD = ACMNHKHPLOD {
-            ELGANMDPMID: 0,
-            IHLEAMDIKKN: ::protobuf::EnumOrUnknown::from_i32(0),
             FBNHDEFNECI: 0,
+            IHLEAMDIKKN: ::protobuf::EnumOrUnknown::from_i32(0),
+            ELGANMDPMID: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for ACMNHKHPLOD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ACMNHKHPLOD.proto\x1a\x10AvatarType.proto\"\x80\x01\n\x0bACMNHKHPL\
-    OD\x12\x20\n\x0bELGANMDPMID\x18\x03\x20\x01(\rR\x0bELGANMDPMID\x12-\n\
-    \x0bIHLEAMDIKKN\x18\r\x20\x01(\x0e2\x0b.AvatarTypeR\x0bIHLEAMDIKKN\x12\
-    \x20\n\x0bFBNHDEFNECI\x18\x0c\x20\x01(\rR\x0bFBNHDEFNECIb\x06proto3\
+    OD\x12\x20\n\x0bFBNHDEFNECI\x18\x03\x20\x01(\rR\x0bFBNHDEFNECI\x12-\n\
+    \x0bIHLEAMDIKKN\x18\x02\x20\x01(\x0e2\x0b.AvatarTypeR\x0bIHLEAMDIKKN\x12\
+    \x20\n\x0bELGANMDPMID\x18\t\x20\x01(\rR\x0bELGANMDPMIDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

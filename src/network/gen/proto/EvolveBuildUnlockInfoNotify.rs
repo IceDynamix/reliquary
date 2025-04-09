@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EvolveBuildUnlockInfoNotify {
     // message fields
-    // @@protoc_insertion_point(field:EvolveBuildUnlockInfoNotify.DEHGHEDINIH)
-    pub DEHGHEDINIH: bool,
     // @@protoc_insertion_point(field:EvolveBuildUnlockInfoNotify.OOFHJAHFIDH)
     pub OOFHJAHFIDH: bool,
+    // @@protoc_insertion_point(field:EvolveBuildUnlockInfoNotify.DEHGHEDINIH)
+    pub DEHGHEDINIH: bool,
     // special fields
     // @@protoc_insertion_point(special_field:EvolveBuildUnlockInfoNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl EvolveBuildUnlockInfoNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DEHGHEDINIH",
-            |m: &EvolveBuildUnlockInfoNotify| { &m.DEHGHEDINIH },
-            |m: &mut EvolveBuildUnlockInfoNotify| { &mut m.DEHGHEDINIH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OOFHJAHFIDH",
             |m: &EvolveBuildUnlockInfoNotify| { &m.OOFHJAHFIDH },
             |m: &mut EvolveBuildUnlockInfoNotify| { &mut m.OOFHJAHFIDH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DEHGHEDINIH",
+            |m: &EvolveBuildUnlockInfoNotify| { &m.DEHGHEDINIH },
+            |m: &mut EvolveBuildUnlockInfoNotify| { &mut m.DEHGHEDINIH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EvolveBuildUnlockInfoNotify>(
             "EvolveBuildUnlockInfoNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for EvolveBuildUnlockInfoNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.DEHGHEDINIH = is.read_bool()?;
-                },
-                32 => {
+                64 => {
                     self.OOFHJAHFIDH = is.read_bool()?;
+                },
+                40 => {
+                    self.DEHGHEDINIH = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,10 +97,10 @@ impl ::protobuf::Message for EvolveBuildUnlockInfoNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DEHGHEDINIH != false {
+        if self.OOFHJAHFIDH != false {
             my_size += 1 + 1;
         }
-        if self.OOFHJAHFIDH != false {
+        if self.DEHGHEDINIH != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -109,11 +109,11 @@ impl ::protobuf::Message for EvolveBuildUnlockInfoNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DEHGHEDINIH != false {
-            os.write_bool(11, self.DEHGHEDINIH)?;
-        }
         if self.OOFHJAHFIDH != false {
-            os.write_bool(4, self.OOFHJAHFIDH)?;
+            os.write_bool(8, self.OOFHJAHFIDH)?;
+        }
+        if self.DEHGHEDINIH != false {
+            os.write_bool(5, self.DEHGHEDINIH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for EvolveBuildUnlockInfoNotify {
     }
 
     fn clear(&mut self) {
-        self.DEHGHEDINIH = false;
         self.OOFHJAHFIDH = false;
+        self.DEHGHEDINIH = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EvolveBuildUnlockInfoNotify {
         static instance: EvolveBuildUnlockInfoNotify = EvolveBuildUnlockInfoNotify {
-            DEHGHEDINIH: false,
             OOFHJAHFIDH: false,
+            DEHGHEDINIH: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildUnlockInfoNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!EvolveBuildUnlockInfoNotify.proto\"a\n\x1bEvolveBuildUnlockInfoNotify\
-    \x12\x20\n\x0bDEHGHEDINIH\x18\x0b\x20\x01(\x08R\x0bDEHGHEDINIH\x12\x20\n\
-    \x0bOOFHJAHFIDH\x18\x04\x20\x01(\x08R\x0bOOFHJAHFIDHb\x06proto3\
+    \x12\x20\n\x0bOOFHJAHFIDH\x18\x08\x20\x01(\x08R\x0bOOFHJAHFIDH\x12\x20\n\
+    \x0bDEHGHEDINIH\x18\x05\x20\x01(\x08R\x0bDEHGHEDINIHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,24 +29,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdMultiplayerType {
     // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerTypeNone)
     CmdMultiplayerTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerFightGiveUpCsReq)
-    CmdMultiplayerFightGiveUpCsReq = 1030,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerFightGiveUpScRsp)
-    CmdMultiplayerFightGiveUpScRsp = 1056,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerFightGameStartScNotify)
-    CmdMultiplayerFightGameStartScNotify = 1097,
     // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerFightGameFinishScNotify)
-    CmdMultiplayerFightGameFinishScNotify = 1076,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerGetFightGateCsReq)
-    CmdMultiplayerGetFightGateCsReq = 1058,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerGetFightGateScRsp)
-    CmdMultiplayerGetFightGateScRsp = 1024,
+    CmdMultiplayerFightGameFinishScNotify = 1089,
     // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerFightGameStateScRsp)
-    CmdMultiplayerFightGameStateScRsp = 1068,
+    CmdMultiplayerFightGameStateScRsp = 1013,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerFightGiveUpCsReq)
+    CmdMultiplayerFightGiveUpCsReq = 1035,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerGetFightGateCsReq)
+    CmdMultiplayerGetFightGateCsReq = 1047,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerFightGameStartScNotify)
+    CmdMultiplayerFightGameStartScNotify = 1070,
     // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerFightGameStateCsReq)
-    CmdMultiplayerFightGameStateCsReq = 1001,
+    CmdMultiplayerFightGameStateCsReq = 1011,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerGetFightGateScRsp)
+    CmdMultiplayerGetFightGateScRsp = 1009,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerFightGiveUpScRsp)
+    CmdMultiplayerFightGiveUpScRsp = 1006,
     // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerMatch3FinishScNotify)
-    CmdMultiplayerMatch3FinishScNotify = 1028,
+    CmdMultiplayerMatch3FinishScNotify = 1026,
 }
 
 impl ::protobuf::Enum for CmdMultiplayerType {
@@ -59,15 +59,15 @@ impl ::protobuf::Enum for CmdMultiplayerType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdMultiplayerType> {
         match value {
             0 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerTypeNone),
-            1030 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGiveUpCsReq),
-            1056 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGiveUpScRsp),
-            1097 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGameStartScNotify),
-            1076 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGameFinishScNotify),
-            1058 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerGetFightGateCsReq),
-            1024 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerGetFightGateScRsp),
-            1068 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGameStateScRsp),
-            1001 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGameStateCsReq),
-            1028 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerMatch3FinishScNotify),
+            1089 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGameFinishScNotify),
+            1013 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGameStateScRsp),
+            1035 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGiveUpCsReq),
+            1047 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerGetFightGateCsReq),
+            1070 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGameStartScNotify),
+            1011 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGameStateCsReq),
+            1009 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerGetFightGateScRsp),
+            1006 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGiveUpScRsp),
+            1026 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerMatch3FinishScNotify),
             _ => ::std::option::Option::None
         }
     }
@@ -75,14 +75,14 @@ impl ::protobuf::Enum for CmdMultiplayerType {
     fn from_str(str: &str) -> ::std::option::Option<CmdMultiplayerType> {
         match str {
             "CmdMultiplayerTypeNone" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerTypeNone),
-            "CmdMultiplayerFightGiveUpCsReq" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGiveUpCsReq),
-            "CmdMultiplayerFightGiveUpScRsp" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGiveUpScRsp),
-            "CmdMultiplayerFightGameStartScNotify" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGameStartScNotify),
             "CmdMultiplayerFightGameFinishScNotify" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGameFinishScNotify),
-            "CmdMultiplayerGetFightGateCsReq" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerGetFightGateCsReq),
-            "CmdMultiplayerGetFightGateScRsp" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerGetFightGateScRsp),
             "CmdMultiplayerFightGameStateScRsp" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGameStateScRsp),
+            "CmdMultiplayerFightGiveUpCsReq" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGiveUpCsReq),
+            "CmdMultiplayerGetFightGateCsReq" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerGetFightGateCsReq),
+            "CmdMultiplayerFightGameStartScNotify" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGameStartScNotify),
             "CmdMultiplayerFightGameStateCsReq" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGameStateCsReq),
+            "CmdMultiplayerGetFightGateScRsp" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerGetFightGateScRsp),
+            "CmdMultiplayerFightGiveUpScRsp" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGiveUpScRsp),
             "CmdMultiplayerMatch3FinishScNotify" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerMatch3FinishScNotify),
             _ => ::std::option::Option::None
         }
@@ -90,14 +90,14 @@ impl ::protobuf::Enum for CmdMultiplayerType {
 
     const VALUES: &'static [CmdMultiplayerType] = &[
         CmdMultiplayerType::CmdMultiplayerTypeNone,
-        CmdMultiplayerType::CmdMultiplayerFightGiveUpCsReq,
-        CmdMultiplayerType::CmdMultiplayerFightGiveUpScRsp,
-        CmdMultiplayerType::CmdMultiplayerFightGameStartScNotify,
         CmdMultiplayerType::CmdMultiplayerFightGameFinishScNotify,
-        CmdMultiplayerType::CmdMultiplayerGetFightGateCsReq,
-        CmdMultiplayerType::CmdMultiplayerGetFightGateScRsp,
         CmdMultiplayerType::CmdMultiplayerFightGameStateScRsp,
+        CmdMultiplayerType::CmdMultiplayerFightGiveUpCsReq,
+        CmdMultiplayerType::CmdMultiplayerGetFightGateCsReq,
+        CmdMultiplayerType::CmdMultiplayerFightGameStartScNotify,
         CmdMultiplayerType::CmdMultiplayerFightGameStateCsReq,
+        CmdMultiplayerType::CmdMultiplayerGetFightGateScRsp,
+        CmdMultiplayerType::CmdMultiplayerFightGiveUpScRsp,
         CmdMultiplayerType::CmdMultiplayerMatch3FinishScNotify,
     ];
 }
@@ -111,14 +111,14 @@ impl ::protobuf::EnumFull for CmdMultiplayerType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdMultiplayerType::CmdMultiplayerTypeNone => 0,
-            CmdMultiplayerType::CmdMultiplayerFightGiveUpCsReq => 1,
-            CmdMultiplayerType::CmdMultiplayerFightGiveUpScRsp => 2,
-            CmdMultiplayerType::CmdMultiplayerFightGameStartScNotify => 3,
-            CmdMultiplayerType::CmdMultiplayerFightGameFinishScNotify => 4,
-            CmdMultiplayerType::CmdMultiplayerGetFightGateCsReq => 5,
-            CmdMultiplayerType::CmdMultiplayerGetFightGateScRsp => 6,
-            CmdMultiplayerType::CmdMultiplayerFightGameStateScRsp => 7,
-            CmdMultiplayerType::CmdMultiplayerFightGameStateCsReq => 8,
+            CmdMultiplayerType::CmdMultiplayerFightGameFinishScNotify => 1,
+            CmdMultiplayerType::CmdMultiplayerFightGameStateScRsp => 2,
+            CmdMultiplayerType::CmdMultiplayerFightGiveUpCsReq => 3,
+            CmdMultiplayerType::CmdMultiplayerGetFightGateCsReq => 4,
+            CmdMultiplayerType::CmdMultiplayerFightGameStartScNotify => 5,
+            CmdMultiplayerType::CmdMultiplayerFightGameStateCsReq => 6,
+            CmdMultiplayerType::CmdMultiplayerGetFightGateScRsp => 7,
+            CmdMultiplayerType::CmdMultiplayerFightGiveUpScRsp => 8,
             CmdMultiplayerType::CmdMultiplayerMatch3FinishScNotify => 9,
         };
         Self::enum_descriptor().value_by_index(index)
@@ -139,14 +139,14 @@ impl CmdMultiplayerType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18CmdMultiplayerType.proto*\x96\x03\n\x12CmdMultiplayerType\x12\x1a\
-    \n\x16CmdMultiplayerTypeNone\x10\0\x12#\n\x1eCmdMultiplayerFightGiveUpCs\
-    Req\x10\x86\x08\x12#\n\x1eCmdMultiplayerFightGiveUpScRsp\x10\xa0\x08\x12\
-    )\n$CmdMultiplayerFightGameStartScNotify\x10\xc9\x08\x12*\n%CmdMultiplay\
-    erFightGameFinishScNotify\x10\xb4\x08\x12$\n\x1fCmdMultiplayerGetFightGa\
-    teCsReq\x10\xa2\x08\x12$\n\x1fCmdMultiplayerGetFightGateScRsp\x10\x80\
-    \x08\x12&\n!CmdMultiplayerFightGameStateScRsp\x10\xac\x08\x12&\n!CmdMult\
-    iplayerFightGameStateCsReq\x10\xe9\x07\x12'\n\"CmdMultiplayerMatch3Finis\
-    hScNotify\x10\x84\x08b\x06proto3\
+    \n\x16CmdMultiplayerTypeNone\x10\0\x12*\n%CmdMultiplayerFightGameFinishS\
+    cNotify\x10\xc1\x08\x12&\n!CmdMultiplayerFightGameStateScRsp\x10\xf5\x07\
+    \x12#\n\x1eCmdMultiplayerFightGiveUpCsReq\x10\x8b\x08\x12$\n\x1fCmdMulti\
+    playerGetFightGateCsReq\x10\x97\x08\x12)\n$CmdMultiplayerFightGameStartS\
+    cNotify\x10\xae\x08\x12&\n!CmdMultiplayerFightGameStateCsReq\x10\xf3\x07\
+    \x12$\n\x1fCmdMultiplayerGetFightGateScRsp\x10\xf1\x07\x12#\n\x1eCmdMult\
+    iplayerFightGiveUpScRsp\x10\xee\x07\x12'\n\"CmdMultiplayerMatch3FinishSc\
+    Notify\x10\x82\x08b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

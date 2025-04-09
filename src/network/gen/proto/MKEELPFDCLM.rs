@@ -79,10 +79,10 @@ impl ::protobuf::Message for MKEELPFDCLM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                112 => {
                     self.level = is.read_uint32()?;
                 },
-                96 => {
+                88 => {
                     self.LNBPGPGGIMN = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for MKEELPFDCLM {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.level);
+            my_size += ::protobuf::rt::uint32_size(14, self.level);
         }
         if self.LNBPGPGGIMN != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.LNBPGPGGIMN);
+            my_size += ::protobuf::rt::uint32_size(11, self.LNBPGPGGIMN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for MKEELPFDCLM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.level != 0 {
-            os.write_uint32(1, self.level)?;
+            os.write_uint32(14, self.level)?;
         }
         if self.LNBPGPGGIMN != 0 {
-            os.write_uint32(12, self.LNBPGPGGIMN)?;
+            os.write_uint32(11, self.LNBPGPGGIMN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for MKEELPFDCLM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MKEELPFDCLM.proto\"E\n\x0bMKEELPFDCLM\x12\x14\n\x05level\x18\x01\
-    \x20\x01(\rR\x05level\x12\x20\n\x0bLNBPGPGGIMN\x18\x0c\x20\x01(\rR\x0bLN\
+    \n\x11MKEELPFDCLM.proto\"E\n\x0bMKEELPFDCLM\x12\x14\n\x05level\x18\x0e\
+    \x20\x01(\rR\x05level\x12\x20\n\x0bLNBPGPGGIMN\x18\x0b\x20\x01(\rR\x0bLN\
     BPGPGGIMNb\x06proto3\
 ";
 

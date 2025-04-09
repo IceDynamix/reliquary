@@ -79,10 +79,10 @@ impl ::protobuf::Message for CancelExpeditionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                64 => {
+                40 => {
                     self.NNMLOCKECKA = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for CancelExpeditionScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         if self.NNMLOCKECKA != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.NNMLOCKECKA);
+            my_size += ::protobuf::rt::uint32_size(5, self.NNMLOCKECKA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for CancelExpeditionScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
         if self.NNMLOCKECKA != 0 {
-            os.write_uint32(8, self.NNMLOCKECKA)?;
+            os.write_uint32(5, self.NNMLOCKECKA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for CancelExpeditionScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bCancelExpeditionScRsp.proto\"S\n\x15CancelExpeditionScRsp\x12\x18\
-    \n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12\x20\n\x0bNNMLOCKECKA\
-    \x18\x08\x20\x01(\rR\x0bNNMLOCKECKAb\x06proto3\
+    \n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x12\x20\n\x0bNNMLOCKECKA\x18\
+    \x05\x20\x01(\rR\x0bNNMLOCKECKAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

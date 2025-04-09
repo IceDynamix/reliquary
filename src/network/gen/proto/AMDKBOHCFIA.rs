@@ -79,10 +79,10 @@ impl ::protobuf::Message for AMDKBOHCFIA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                16 => {
                     self.ABLICGMCINN = is.read_uint32()?;
                 },
-                64 => {
+                32 => {
                     self.CENIFNKNFNP = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for AMDKBOHCFIA {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.ABLICGMCINN != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.ABLICGMCINN);
+            my_size += ::protobuf::rt::uint32_size(2, self.ABLICGMCINN);
         }
         if self.CENIFNKNFNP != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.CENIFNKNFNP);
+            my_size += ::protobuf::rt::uint32_size(4, self.CENIFNKNFNP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for AMDKBOHCFIA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.ABLICGMCINN != 0 {
-            os.write_uint32(1, self.ABLICGMCINN)?;
+            os.write_uint32(2, self.ABLICGMCINN)?;
         }
         if self.CENIFNKNFNP != 0 {
-            os.write_uint32(8, self.CENIFNKNFNP)?;
+            os.write_uint32(4, self.CENIFNKNFNP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for AMDKBOHCFIA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AMDKBOHCFIA.proto\"Q\n\x0bAMDKBOHCFIA\x12\x20\n\x0bABLICGMCINN\x18\
-    \x01\x20\x01(\rR\x0bABLICGMCINN\x12\x20\n\x0bCENIFNKNFNP\x18\x08\x20\x01\
+    \x02\x20\x01(\rR\x0bABLICGMCINN\x12\x20\n\x0bCENIFNKNFNP\x18\x04\x20\x01\
     (\rR\x0bCENIFNKNFNPb\x06proto3\
 ";
 

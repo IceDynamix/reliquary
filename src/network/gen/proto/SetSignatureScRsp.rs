@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetSignatureScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SetSignatureScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:SetSignatureScRsp.DMCCBECKHML)
     pub DMCCBECKHML: ::std::string::String,
+    // @@protoc_insertion_point(field:SetSignatureScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SetSignatureScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl SetSignatureScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &SetSignatureScRsp| { &m.retcode },
-            |m: &mut SetSignatureScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DMCCBECKHML",
             |m: &SetSignatureScRsp| { &m.DMCCBECKHML },
             |m: &mut SetSignatureScRsp| { &mut m.DMCCBECKHML },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &SetSignatureScRsp| { &m.retcode },
+            |m: &mut SetSignatureScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetSignatureScRsp>(
             "SetSignatureScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SetSignatureScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                74 => {
+                98 => {
                     self.DMCCBECKHML = is.read_string()?;
+                },
+                8 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for SetSignatureScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
-        }
         if !self.DMCCBECKHML.is_empty() {
-            my_size += ::protobuf::rt::string_size(9, &self.DMCCBECKHML);
+            my_size += ::protobuf::rt::string_size(12, &self.DMCCBECKHML);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for SetSignatureScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
-        }
         if !self.DMCCBECKHML.is_empty() {
-            os.write_string(9, &self.DMCCBECKHML)?;
+            os.write_string(12, &self.DMCCBECKHML)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(1, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for SetSignatureScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.DMCCBECKHML.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetSignatureScRsp {
         static instance: SetSignatureScRsp = SetSignatureScRsp {
-            retcode: 0,
             DMCCBECKHML: ::std::string::String::new(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for SetSignatureScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17SetSignatureScRsp.proto\"O\n\x11SetSignatureScRsp\x12\x18\n\x07ret\
-    code\x18\x07\x20\x01(\rR\x07retcode\x12\x20\n\x0bDMCCBECKHML\x18\t\x20\
-    \x01(\tR\x0bDMCCBECKHMLb\x06proto3\
+    \n\x17SetSignatureScRsp.proto\"O\n\x11SetSignatureScRsp\x12\x20\n\x0bDMC\
+    CBECKHML\x18\x0c\x20\x01(\tR\x0bDMCCBECKHML\x12\x18\n\x07retcode\x18\x01\
+    \x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

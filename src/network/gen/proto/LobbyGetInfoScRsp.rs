@@ -28,16 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LobbyGetInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:LobbyGetInfoScRsp.NOGFEEMNHPC)
-    pub NOGFEEMNHPC: u64,
+    // @@protoc_insertion_point(field:LobbyGetInfoScRsp.NEPODDOJJFE)
+    pub NEPODDOJJFE: u32,
+    // @@protoc_insertion_point(field:LobbyGetInfoScRsp.LIPJDJPMOKB)
+    pub LIPJDJPMOKB: ::std::vec::Vec<super::CBBDIOMIFHD::CBBDIOMIFHD>,
+    // @@protoc_insertion_point(field:LobbyGetInfoScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:LobbyGetInfoScRsp.NBDLPGBIDLC)
     pub NBDLPGBIDLC: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
     // @@protoc_insertion_point(field:LobbyGetInfoScRsp.JJLOGICPOAO)
     pub JJLOGICPOAO: u64,
-    // @@protoc_insertion_point(field:LobbyGetInfoScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:LobbyGetInfoScRsp.LIPJDJPMOKB)
-    pub LIPJDJPMOKB: ::std::vec::Vec<super::CBBDIOMIFHD::CBBDIOMIFHD>,
+    // @@protoc_insertion_point(field:LobbyGetInfoScRsp.NOGFEEMNHPC)
+    pub NOGFEEMNHPC: u64,
     // special fields
     // @@protoc_insertion_point(special_field:LobbyGetInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,12 +57,22 @@ impl LobbyGetInfoScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(5);
+        let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NOGFEEMNHPC",
-            |m: &LobbyGetInfoScRsp| { &m.NOGFEEMNHPC },
-            |m: &mut LobbyGetInfoScRsp| { &mut m.NOGFEEMNHPC },
+            "NEPODDOJJFE",
+            |m: &LobbyGetInfoScRsp| { &m.NEPODDOJJFE },
+            |m: &mut LobbyGetInfoScRsp| { &mut m.NEPODDOJJFE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LIPJDJPMOKB",
+            |m: &LobbyGetInfoScRsp| { &m.LIPJDJPMOKB },
+            |m: &mut LobbyGetInfoScRsp| { &mut m.LIPJDJPMOKB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &LobbyGetInfoScRsp| { &m.retcode },
+            |m: &mut LobbyGetInfoScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NBDLPGBIDLC",
@@ -73,14 +85,9 @@ impl LobbyGetInfoScRsp {
             |m: &mut LobbyGetInfoScRsp| { &mut m.JJLOGICPOAO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &LobbyGetInfoScRsp| { &m.retcode },
-            |m: &mut LobbyGetInfoScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LIPJDJPMOKB",
-            |m: &LobbyGetInfoScRsp| { &m.LIPJDJPMOKB },
-            |m: &mut LobbyGetInfoScRsp| { &mut m.LIPJDJPMOKB },
+            "NOGFEEMNHPC",
+            |m: &LobbyGetInfoScRsp| { &m.NOGFEEMNHPC },
+            |m: &mut LobbyGetInfoScRsp| { &mut m.NOGFEEMNHPC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LobbyGetInfoScRsp>(
             "LobbyGetInfoScRsp",
@@ -100,20 +107,23 @@ impl ::protobuf::Message for LobbyGetInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.NOGFEEMNHPC = is.read_uint64()?;
+                48 => {
+                    self.NEPODDOJJFE = is.read_uint32()?;
+                },
+                42 => {
+                    self.LIPJDJPMOKB.push(is.read_message()?);
                 },
                 72 => {
-                    self.NBDLPGBIDLC = is.read_enum_or_unknown()?;
-                },
-                48 => {
-                    self.JJLOGICPOAO = is.read_uint64()?;
-                },
-                120 => {
                     self.retcode = is.read_uint32()?;
                 },
-                10 => {
-                    self.LIPJDJPMOKB.push(is.read_message()?);
+                56 => {
+                    self.NBDLPGBIDLC = is.read_enum_or_unknown()?;
+                },
+                96 => {
+                    self.JJLOGICPOAO = is.read_uint64()?;
+                },
+                88 => {
+                    self.NOGFEEMNHPC = is.read_uint64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,43 +137,49 @@ impl ::protobuf::Message for LobbyGetInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NOGFEEMNHPC != 0 {
-            my_size += ::protobuf::rt::uint64_size(13, self.NOGFEEMNHPC);
-        }
-        if self.NBDLPGBIDLC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
-            my_size += ::protobuf::rt::int32_size(9, self.NBDLPGBIDLC.value());
-        }
-        if self.JJLOGICPOAO != 0 {
-            my_size += ::protobuf::rt::uint64_size(6, self.JJLOGICPOAO);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+        if self.NEPODDOJJFE != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.NEPODDOJJFE);
         }
         for value in &self.LIPJDJPMOKB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+        }
+        if self.NBDLPGBIDLC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
+            my_size += ::protobuf::rt::int32_size(7, self.NBDLPGBIDLC.value());
+        }
+        if self.JJLOGICPOAO != 0 {
+            my_size += ::protobuf::rt::uint64_size(12, self.JJLOGICPOAO);
+        }
+        if self.NOGFEEMNHPC != 0 {
+            my_size += ::protobuf::rt::uint64_size(11, self.NOGFEEMNHPC);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NOGFEEMNHPC != 0 {
-            os.write_uint64(13, self.NOGFEEMNHPC)?;
-        }
-        if self.NBDLPGBIDLC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.NBDLPGBIDLC))?;
-        }
-        if self.JJLOGICPOAO != 0 {
-            os.write_uint64(6, self.JJLOGICPOAO)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+        if self.NEPODDOJJFE != 0 {
+            os.write_uint32(6, self.NEPODDOJJFE)?;
         }
         for v in &self.LIPJDJPMOKB {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
+        if self.retcode != 0 {
+            os.write_uint32(9, self.retcode)?;
+        }
+        if self.NBDLPGBIDLC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.NBDLPGBIDLC))?;
+        }
+        if self.JJLOGICPOAO != 0 {
+            os.write_uint64(12, self.JJLOGICPOAO)?;
+        }
+        if self.NOGFEEMNHPC != 0 {
+            os.write_uint64(11, self.NOGFEEMNHPC)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -181,21 +197,23 @@ impl ::protobuf::Message for LobbyGetInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.NOGFEEMNHPC = 0;
+        self.NEPODDOJJFE = 0;
+        self.LIPJDJPMOKB.clear();
+        self.retcode = 0;
         self.NBDLPGBIDLC = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE);
         self.JJLOGICPOAO = 0;
-        self.retcode = 0;
-        self.LIPJDJPMOKB.clear();
+        self.NOGFEEMNHPC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LobbyGetInfoScRsp {
         static instance: LobbyGetInfoScRsp = LobbyGetInfoScRsp {
-            NOGFEEMNHPC: 0,
+            NEPODDOJJFE: 0,
+            LIPJDJPMOKB: ::std::vec::Vec::new(),
+            retcode: 0,
             NBDLPGBIDLC: ::protobuf::EnumOrUnknown::from_i32(0),
             JJLOGICPOAO: 0,
-            retcode: 0,
-            LIPJDJPMOKB: ::std::vec::Vec::new(),
+            NOGFEEMNHPC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,12 +239,13 @@ impl ::protobuf::reflect::ProtobufValue for LobbyGetInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17LobbyGetInfoScRsp.proto\x1a\x11CBBDIOMIFHD.proto\x1a\x13FightGameM\
-    ode.proto\"\xd3\x01\n\x11LobbyGetInfoScRsp\x12\x20\n\x0bNOGFEEMNHPC\x18\
-    \r\x20\x01(\x04R\x0bNOGFEEMNHPC\x120\n\x0bNBDLPGBIDLC\x18\t\x20\x01(\x0e\
-    2\x0e.FightGameModeR\x0bNBDLPGBIDLC\x12\x20\n\x0bJJLOGICPOAO\x18\x06\x20\
-    \x01(\x04R\x0bJJLOGICPOAO\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07re\
-    tcode\x12.\n\x0bLIPJDJPMOKB\x18\x01\x20\x03(\x0b2\x0c.CBBDIOMIFHDR\x0bLI\
-    PJDJPMOKBb\x06proto3\
+    ode.proto\"\xf5\x01\n\x11LobbyGetInfoScRsp\x12\x20\n\x0bNEPODDOJJFE\x18\
+    \x06\x20\x01(\rR\x0bNEPODDOJJFE\x12.\n\x0bLIPJDJPMOKB\x18\x05\x20\x03(\
+    \x0b2\x0c.CBBDIOMIFHDR\x0bLIPJDJPMOKB\x12\x18\n\x07retcode\x18\t\x20\x01\
+    (\rR\x07retcode\x120\n\x0bNBDLPGBIDLC\x18\x07\x20\x01(\x0e2\x0e.FightGam\
+    eModeR\x0bNBDLPGBIDLC\x12\x20\n\x0bJJLOGICPOAO\x18\x0c\x20\x01(\x04R\x0b\
+    JJLOGICPOAO\x12\x20\n\x0bNOGFEEMNHPC\x18\x0b\x20\x01(\x04R\x0bNOGFEEMNHP\
+    Cb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct COAHGFLONAN {
     // message fields
-    // @@protoc_insertion_point(field:COAHGFLONAN.JLFDDMEKLJK)
-    pub JLFDDMEKLJK: ::protobuf::MessageField<super::INPINNPIHOB::INPINNPIHOB>,
-    // @@protoc_insertion_point(field:COAHGFLONAN.HBPBLGLLIEN)
-    pub HBPBLGLLIEN: ::protobuf::MessageField<super::KNAPAIOFJIE::KNAPAIOFJIE>,
     // @@protoc_insertion_point(field:COAHGFLONAN.KNNDKBHBDLI)
     pub KNNDKBHBDLI: ::protobuf::MessageField<super::KNAPAIOFJIE::KNAPAIOFJIE>,
+    // @@protoc_insertion_point(field:COAHGFLONAN.JLFDDMEKLJK)
+    pub JLFDDMEKLJK: ::protobuf::MessageField<super::INPINNPIHOB::INPINNPIHOB>,
     // @@protoc_insertion_point(field:COAHGFLONAN.NGKJPCEHMBA)
     pub NGKJPCEHMBA: bool,
+    // @@protoc_insertion_point(field:COAHGFLONAN.HBPBLGLLIEN)
+    pub HBPBLGLLIEN: ::protobuf::MessageField<super::KNAPAIOFJIE::KNAPAIOFJIE>,
     // special fields
     // @@protoc_insertion_point(special_field:COAHGFLONAN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl COAHGFLONAN {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::INPINNPIHOB::INPINNPIHOB>(
-            "JLFDDMEKLJK",
-            |m: &COAHGFLONAN| { &m.JLFDDMEKLJK },
-            |m: &mut COAHGFLONAN| { &mut m.JLFDDMEKLJK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KNAPAIOFJIE::KNAPAIOFJIE>(
-            "HBPBLGLLIEN",
-            |m: &COAHGFLONAN| { &m.HBPBLGLLIEN },
-            |m: &mut COAHGFLONAN| { &mut m.HBPBLGLLIEN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KNAPAIOFJIE::KNAPAIOFJIE>(
             "KNNDKBHBDLI",
             |m: &COAHGFLONAN| { &m.KNNDKBHBDLI },
             |m: &mut COAHGFLONAN| { &mut m.KNNDKBHBDLI },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::INPINNPIHOB::INPINNPIHOB>(
+            "JLFDDMEKLJK",
+            |m: &COAHGFLONAN| { &m.JLFDDMEKLJK },
+            |m: &mut COAHGFLONAN| { &mut m.JLFDDMEKLJK },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NGKJPCEHMBA",
             |m: &COAHGFLONAN| { &m.NGKJPCEHMBA },
             |m: &mut COAHGFLONAN| { &mut m.NGKJPCEHMBA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KNAPAIOFJIE::KNAPAIOFJIE>(
+            "HBPBLGLLIEN",
+            |m: &COAHGFLONAN| { &m.HBPBLGLLIEN },
+            |m: &mut COAHGFLONAN| { &mut m.HBPBLGLLIEN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<COAHGFLONAN>(
             "COAHGFLONAN",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for COAHGFLONAN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JLFDDMEKLJK)?;
-                },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HBPBLGLLIEN)?;
-                },
                 18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.KNNDKBHBDLI)?;
                 },
-                112 => {
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JLFDDMEKLJK)?;
+                },
+                40 => {
                     self.NGKJPCEHMBA = is.read_bool()?;
+                },
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HBPBLGLLIEN)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,20 +117,20 @@ impl ::protobuf::Message for COAHGFLONAN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.JLFDDMEKLJK.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.HBPBLGLLIEN.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if let Some(v) = self.KNNDKBHBDLI.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.JLFDDMEKLJK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.NGKJPCEHMBA != false {
             my_size += 1 + 1;
+        }
+        if let Some(v) = self.HBPBLGLLIEN.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,17 +138,17 @@ impl ::protobuf::Message for COAHGFLONAN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.JLFDDMEKLJK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        }
-        if let Some(v) = self.HBPBLGLLIEN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
         if let Some(v) = self.KNNDKBHBDLI.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
+        if let Some(v) = self.JLFDDMEKLJK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        }
         if self.NGKJPCEHMBA != false {
-            os.write_bool(14, self.NGKJPCEHMBA)?;
+            os.write_bool(5, self.NGKJPCEHMBA)?;
+        }
+        if let Some(v) = self.HBPBLGLLIEN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,19 +167,19 @@ impl ::protobuf::Message for COAHGFLONAN {
     }
 
     fn clear(&mut self) {
-        self.JLFDDMEKLJK.clear();
-        self.HBPBLGLLIEN.clear();
         self.KNNDKBHBDLI.clear();
+        self.JLFDDMEKLJK.clear();
         self.NGKJPCEHMBA = false;
+        self.HBPBLGLLIEN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static COAHGFLONAN {
         static instance: COAHGFLONAN = COAHGFLONAN {
-            JLFDDMEKLJK: ::protobuf::MessageField::none(),
-            HBPBLGLLIEN: ::protobuf::MessageField::none(),
             KNNDKBHBDLI: ::protobuf::MessageField::none(),
+            JLFDDMEKLJK: ::protobuf::MessageField::none(),
             NGKJPCEHMBA: false,
+            HBPBLGLLIEN: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -205,11 +205,11 @@ impl ::protobuf::reflect::ProtobufValue for COAHGFLONAN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11COAHGFLONAN.proto\x1a\x11INPINNPIHOB.proto\x1a\x11KNAPAIOFJIE.prot\
-    o\"\xbf\x01\n\x0bCOAHGFLONAN\x12.\n\x0bJLFDDMEKLJK\x18\x0f\x20\x01(\x0b2\
-    \x0c.INPINNPIHOBR\x0bJLFDDMEKLJK\x12.\n\x0bHBPBLGLLIEN\x18\n\x20\x01(\
-    \x0b2\x0c.KNAPAIOFJIER\x0bHBPBLGLLIEN\x12.\n\x0bKNNDKBHBDLI\x18\x02\x20\
-    \x01(\x0b2\x0c.KNAPAIOFJIER\x0bKNNDKBHBDLI\x12\x20\n\x0bNGKJPCEHMBA\x18\
-    \x0e\x20\x01(\x08R\x0bNGKJPCEHMBAb\x06proto3\
+    o\"\xbf\x01\n\x0bCOAHGFLONAN\x12.\n\x0bKNNDKBHBDLI\x18\x02\x20\x01(\x0b2\
+    \x0c.KNAPAIOFJIER\x0bKNNDKBHBDLI\x12.\n\x0bJLFDDMEKLJK\x18\x06\x20\x01(\
+    \x0b2\x0c.INPINNPIHOBR\x0bJLFDDMEKLJK\x12\x20\n\x0bNGKJPCEHMBA\x18\x05\
+    \x20\x01(\x08R\x0bNGKJPCEHMBA\x12.\n\x0bHBPBLGLLIEN\x18\x04\x20\x01(\x0b\
+    2\x0c.KNAPAIOFJIER\x0bHBPBLGLLIENb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

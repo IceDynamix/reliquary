@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SwordTrainingGameSettleScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SwordTrainingGameSettleScNotify.CCDCHKKMGJF)
-    pub CCDCHKKMGJF: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:SwordTrainingGameSettleScNotify.BHELBOHKBBM)
-    pub BHELBOHKBBM: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:SwordTrainingGameSettleScNotify.EMDHEKKOCMD)
-    pub EMDHEKKOCMD: u32,
     // @@protoc_insertion_point(field:SwordTrainingGameSettleScNotify.PIGEEBCKCOO)
     pub PIGEEBCKCOO: u32,
     // @@protoc_insertion_point(field:SwordTrainingGameSettleScNotify.IFNMBNGIFPH)
     pub IFNMBNGIFPH: u32,
+    // @@protoc_insertion_point(field:SwordTrainingGameSettleScNotify.EMDHEKKOCMD)
+    pub EMDHEKKOCMD: u32,
+    // @@protoc_insertion_point(field:SwordTrainingGameSettleScNotify.FPBNIPMHANH)
+    pub FPBNIPMHANH: u32,
+    // @@protoc_insertion_point(field:SwordTrainingGameSettleScNotify.CCDCHKKMGJF)
+    pub CCDCHKKMGJF: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:SwordTrainingGameSettleScNotify.ALIFPIHNMEK)
     pub ALIFPIHNMEK: ::protobuf::EnumOrUnknown<super::HDMKPHALALG::HDMKPHALALG>,
     // @@protoc_insertion_point(field:SwordTrainingGameSettleScNotify.PPIMFPOOOKB)
     pub PPIMFPOOOKB: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:SwordTrainingGameSettleScNotify.FPBNIPMHANH)
-    pub FPBNIPMHANH: u32,
+    // @@protoc_insertion_point(field:SwordTrainingGameSettleScNotify.BHELBOHKBBM)
+    pub BHELBOHKBBM: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:SwordTrainingGameSettleScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,21 +63,6 @@ impl SwordTrainingGameSettleScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CCDCHKKMGJF",
-            |m: &SwordTrainingGameSettleScNotify| { &m.CCDCHKKMGJF },
-            |m: &mut SwordTrainingGameSettleScNotify| { &mut m.CCDCHKKMGJF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "BHELBOHKBBM",
-            |m: &SwordTrainingGameSettleScNotify| { &m.BHELBOHKBBM },
-            |m: &mut SwordTrainingGameSettleScNotify| { &mut m.BHELBOHKBBM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EMDHEKKOCMD",
-            |m: &SwordTrainingGameSettleScNotify| { &m.EMDHEKKOCMD },
-            |m: &mut SwordTrainingGameSettleScNotify| { &mut m.EMDHEKKOCMD },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PIGEEBCKCOO",
             |m: &SwordTrainingGameSettleScNotify| { &m.PIGEEBCKCOO },
@@ -89,6 +74,21 @@ impl SwordTrainingGameSettleScNotify {
             |m: &mut SwordTrainingGameSettleScNotify| { &mut m.IFNMBNGIFPH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EMDHEKKOCMD",
+            |m: &SwordTrainingGameSettleScNotify| { &m.EMDHEKKOCMD },
+            |m: &mut SwordTrainingGameSettleScNotify| { &mut m.EMDHEKKOCMD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FPBNIPMHANH",
+            |m: &SwordTrainingGameSettleScNotify| { &m.FPBNIPMHANH },
+            |m: &mut SwordTrainingGameSettleScNotify| { &mut m.FPBNIPMHANH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CCDCHKKMGJF",
+            |m: &SwordTrainingGameSettleScNotify| { &m.CCDCHKKMGJF },
+            |m: &mut SwordTrainingGameSettleScNotify| { &mut m.CCDCHKKMGJF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ALIFPIHNMEK",
             |m: &SwordTrainingGameSettleScNotify| { &m.ALIFPIHNMEK },
             |m: &mut SwordTrainingGameSettleScNotify| { &mut m.ALIFPIHNMEK },
@@ -98,10 +98,10 @@ impl SwordTrainingGameSettleScNotify {
             |m: &SwordTrainingGameSettleScNotify| { &m.PPIMFPOOOKB },
             |m: &mut SwordTrainingGameSettleScNotify| { &mut m.PPIMFPOOOKB },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FPBNIPMHANH",
-            |m: &SwordTrainingGameSettleScNotify| { &m.FPBNIPMHANH },
-            |m: &mut SwordTrainingGameSettleScNotify| { &mut m.FPBNIPMHANH },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "BHELBOHKBBM",
+            |m: &SwordTrainingGameSettleScNotify| { &m.BHELBOHKBBM },
+            |m: &mut SwordTrainingGameSettleScNotify| { &mut m.BHELBOHKBBM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SwordTrainingGameSettleScNotify>(
             "SwordTrainingGameSettleScNotify",
@@ -121,35 +121,35 @@ impl ::protobuf::Message for SwordTrainingGameSettleScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                120 => {
+                    self.PIGEEBCKCOO = is.read_uint32()?;
+                },
+                104 => {
+                    self.IFNMBNGIFPH = is.read_uint32()?;
+                },
+                48 => {
+                    self.EMDHEKKOCMD = is.read_uint32()?;
+                },
+                112 => {
+                    self.FPBNIPMHANH = is.read_uint32()?;
+                },
                 10 => {
                     is.read_repeated_packed_uint32_into(&mut self.CCDCHKKMGJF)?;
                 },
                 8 => {
                     self.CCDCHKKMGJF.push(is.read_uint32()?);
                 },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHELBOHKBBM)?;
-                },
-                88 => {
-                    self.EMDHEKKOCMD = is.read_uint32()?;
-                },
-                112 => {
-                    self.PIGEEBCKCOO = is.read_uint32()?;
-                },
-                120 => {
-                    self.IFNMBNGIFPH = is.read_uint32()?;
-                },
-                104 => {
+                40 => {
                     self.ALIFPIHNMEK = is.read_enum_or_unknown()?;
                 },
-                74 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.PPIMFPOOOKB)?;
                 },
-                72 => {
+                64 => {
                     self.PPIMFPOOOKB.push(is.read_uint32()?);
                 },
-                40 => {
-                    self.FPBNIPMHANH = is.read_uint32()?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHELBOHKBBM)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -163,26 +163,26 @@ impl ::protobuf::Message for SwordTrainingGameSettleScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.PIGEEBCKCOO != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.PIGEEBCKCOO);
+        }
+        if self.IFNMBNGIFPH != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.IFNMBNGIFPH);
+        }
+        if self.EMDHEKKOCMD != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.EMDHEKKOCMD);
+        }
+        if self.FPBNIPMHANH != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.FPBNIPMHANH);
+        }
         my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.CCDCHKKMGJF);
+        if self.ALIFPIHNMEK != ::protobuf::EnumOrUnknown::new(super::HDMKPHALALG::HDMKPHALALG::SWORD_TRAINING_GAME_SETTLE_NONE) {
+            my_size += ::protobuf::rt::int32_size(5, self.ALIFPIHNMEK.value());
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.PPIMFPOOOKB);
         if let Some(v) = self.BHELBOHKBBM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.EMDHEKKOCMD != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.EMDHEKKOCMD);
-        }
-        if self.PIGEEBCKCOO != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.PIGEEBCKCOO);
-        }
-        if self.IFNMBNGIFPH != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.IFNMBNGIFPH);
-        }
-        if self.ALIFPIHNMEK != ::protobuf::EnumOrUnknown::new(super::HDMKPHALALG::HDMKPHALALG::SWORD_TRAINING_GAME_SETTLE_NONE) {
-            my_size += ::protobuf::rt::int32_size(13, self.ALIFPIHNMEK.value());
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.PPIMFPOOOKB);
-        if self.FPBNIPMHANH != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.FPBNIPMHANH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -190,25 +190,25 @@ impl ::protobuf::Message for SwordTrainingGameSettleScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.CCDCHKKMGJF)?;
-        if let Some(v) = self.BHELBOHKBBM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        }
-        if self.EMDHEKKOCMD != 0 {
-            os.write_uint32(11, self.EMDHEKKOCMD)?;
-        }
         if self.PIGEEBCKCOO != 0 {
-            os.write_uint32(14, self.PIGEEBCKCOO)?;
+            os.write_uint32(15, self.PIGEEBCKCOO)?;
         }
         if self.IFNMBNGIFPH != 0 {
-            os.write_uint32(15, self.IFNMBNGIFPH)?;
+            os.write_uint32(13, self.IFNMBNGIFPH)?;
         }
-        if self.ALIFPIHNMEK != ::protobuf::EnumOrUnknown::new(super::HDMKPHALALG::HDMKPHALALG::SWORD_TRAINING_GAME_SETTLE_NONE) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.ALIFPIHNMEK))?;
+        if self.EMDHEKKOCMD != 0 {
+            os.write_uint32(6, self.EMDHEKKOCMD)?;
         }
-        os.write_repeated_packed_uint32(9, &self.PPIMFPOOOKB)?;
         if self.FPBNIPMHANH != 0 {
-            os.write_uint32(5, self.FPBNIPMHANH)?;
+            os.write_uint32(14, self.FPBNIPMHANH)?;
+        }
+        os.write_repeated_packed_uint32(1, &self.CCDCHKKMGJF)?;
+        if self.ALIFPIHNMEK != ::protobuf::EnumOrUnknown::new(super::HDMKPHALALG::HDMKPHALALG::SWORD_TRAINING_GAME_SETTLE_NONE) {
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.ALIFPIHNMEK))?;
+        }
+        os.write_repeated_packed_uint32(8, &self.PPIMFPOOOKB)?;
+        if let Some(v) = self.BHELBOHKBBM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -227,27 +227,27 @@ impl ::protobuf::Message for SwordTrainingGameSettleScNotify {
     }
 
     fn clear(&mut self) {
-        self.CCDCHKKMGJF.clear();
-        self.BHELBOHKBBM.clear();
-        self.EMDHEKKOCMD = 0;
         self.PIGEEBCKCOO = 0;
         self.IFNMBNGIFPH = 0;
+        self.EMDHEKKOCMD = 0;
+        self.FPBNIPMHANH = 0;
+        self.CCDCHKKMGJF.clear();
         self.ALIFPIHNMEK = ::protobuf::EnumOrUnknown::new(super::HDMKPHALALG::HDMKPHALALG::SWORD_TRAINING_GAME_SETTLE_NONE);
         self.PPIMFPOOOKB.clear();
-        self.FPBNIPMHANH = 0;
+        self.BHELBOHKBBM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwordTrainingGameSettleScNotify {
         static instance: SwordTrainingGameSettleScNotify = SwordTrainingGameSettleScNotify {
-            CCDCHKKMGJF: ::std::vec::Vec::new(),
-            BHELBOHKBBM: ::protobuf::MessageField::none(),
-            EMDHEKKOCMD: 0,
             PIGEEBCKCOO: 0,
             IFNMBNGIFPH: 0,
+            EMDHEKKOCMD: 0,
+            FPBNIPMHANH: 0,
+            CCDCHKKMGJF: ::std::vec::Vec::new(),
             ALIFPIHNMEK: ::protobuf::EnumOrUnknown::from_i32(0),
             PPIMFPOOOKB: ::std::vec::Vec::new(),
-            FPBNIPMHANH: 0,
+            BHELBOHKBBM: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -274,14 +274,14 @@ impl ::protobuf::reflect::ProtobufValue for SwordTrainingGameSettleScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%SwordTrainingGameSettleScNotify.proto\x1a\x11HDMKPHALALG.proto\x1a\
     \x0eItemList.proto\"\xca\x02\n\x1fSwordTrainingGameSettleScNotify\x12\
-    \x20\n\x0bCCDCHKKMGJF\x18\x01\x20\x03(\rR\x0bCCDCHKKMGJF\x12+\n\x0bBHELB\
-    OHKBBM\x18\x0c\x20\x01(\x0b2\t.ItemListR\x0bBHELBOHKBBM\x12\x20\n\x0bEMD\
-    HEKKOCMD\x18\x0b\x20\x01(\rR\x0bEMDHEKKOCMD\x12\x20\n\x0bPIGEEBCKCOO\x18\
-    \x0e\x20\x01(\rR\x0bPIGEEBCKCOO\x12\x20\n\x0bIFNMBNGIFPH\x18\x0f\x20\x01\
-    (\rR\x0bIFNMBNGIFPH\x12.\n\x0bALIFPIHNMEK\x18\r\x20\x01(\x0e2\x0c.HDMKPH\
-    ALALGR\x0bALIFPIHNMEK\x12\x20\n\x0bPPIMFPOOOKB\x18\t\x20\x03(\rR\x0bPPIM\
-    FPOOOKB\x12\x20\n\x0bFPBNIPMHANH\x18\x05\x20\x01(\rR\x0bFPBNIPMHANHb\x06\
-    proto3\
+    \x20\n\x0bPIGEEBCKCOO\x18\x0f\x20\x01(\rR\x0bPIGEEBCKCOO\x12\x20\n\x0bIF\
+    NMBNGIFPH\x18\r\x20\x01(\rR\x0bIFNMBNGIFPH\x12\x20\n\x0bEMDHEKKOCMD\x18\
+    \x06\x20\x01(\rR\x0bEMDHEKKOCMD\x12\x20\n\x0bFPBNIPMHANH\x18\x0e\x20\x01\
+    (\rR\x0bFPBNIPMHANH\x12\x20\n\x0bCCDCHKKMGJF\x18\x01\x20\x03(\rR\x0bCCDC\
+    HKKMGJF\x12.\n\x0bALIFPIHNMEK\x18\x05\x20\x01(\x0e2\x0c.HDMKPHALALGR\x0b\
+    ALIFPIHNMEK\x12\x20\n\x0bPPIMFPOOOKB\x18\x08\x20\x03(\rR\x0bPPIMFPOOOKB\
+    \x12+\n\x0bBHELBOHKBBM\x18\x02\x20\x01(\x0b2\t.ItemListR\x0bBHELBOHKBBMb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

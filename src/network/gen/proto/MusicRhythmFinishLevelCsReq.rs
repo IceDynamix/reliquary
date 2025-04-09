@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MusicRhythmFinishLevelCsReq {
     // message fields
+    // @@protoc_insertion_point(field:MusicRhythmFinishLevelCsReq.DNPHCJEBIKB)
+    pub DNPHCJEBIKB: u32,
     // @@protoc_insertion_point(field:MusicRhythmFinishLevelCsReq.MAIL_TYPE_STAR)
     pub MAIL_TYPE_STAR: u32,
     // @@protoc_insertion_point(field:MusicRhythmFinishLevelCsReq.GKJGCBPOJCM)
     pub GKJGCBPOJCM: bool,
-    // @@protoc_insertion_point(field:MusicRhythmFinishLevelCsReq.DNPHCJEBIKB)
-    pub DNPHCJEBIKB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MusicRhythmFinishLevelCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl MusicRhythmFinishLevelCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DNPHCJEBIKB",
+            |m: &MusicRhythmFinishLevelCsReq| { &m.DNPHCJEBIKB },
+            |m: &mut MusicRhythmFinishLevelCsReq| { &mut m.DNPHCJEBIKB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MAIL_TYPE_STAR",
             |m: &MusicRhythmFinishLevelCsReq| { &m.MAIL_TYPE_STAR },
             |m: &mut MusicRhythmFinishLevelCsReq| { &mut m.MAIL_TYPE_STAR },
@@ -62,11 +67,6 @@ impl MusicRhythmFinishLevelCsReq {
             "GKJGCBPOJCM",
             |m: &MusicRhythmFinishLevelCsReq| { &m.GKJGCBPOJCM },
             |m: &mut MusicRhythmFinishLevelCsReq| { &mut m.GKJGCBPOJCM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DNPHCJEBIKB",
-            |m: &MusicRhythmFinishLevelCsReq| { &m.DNPHCJEBIKB },
-            |m: &mut MusicRhythmFinishLevelCsReq| { &mut m.DNPHCJEBIKB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MusicRhythmFinishLevelCsReq>(
             "MusicRhythmFinishLevelCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for MusicRhythmFinishLevelCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                24 => {
+                    self.DNPHCJEBIKB = is.read_uint32()?;
+                },
+                96 => {
                     self.MAIL_TYPE_STAR = is.read_uint32()?;
                 },
-                64 => {
+                104 => {
                     self.GKJGCBPOJCM = is.read_bool()?;
-                },
-                80 => {
-                    self.DNPHCJEBIKB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for MusicRhythmFinishLevelCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.DNPHCJEBIKB != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.DNPHCJEBIKB);
+        }
         if self.MAIL_TYPE_STAR != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.MAIL_TYPE_STAR);
+            my_size += ::protobuf::rt::uint32_size(12, self.MAIL_TYPE_STAR);
         }
         if self.GKJGCBPOJCM != false {
             my_size += 1 + 1;
-        }
-        if self.DNPHCJEBIKB != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.DNPHCJEBIKB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for MusicRhythmFinishLevelCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.DNPHCJEBIKB != 0 {
+            os.write_uint32(3, self.DNPHCJEBIKB)?;
+        }
         if self.MAIL_TYPE_STAR != 0 {
-            os.write_uint32(4, self.MAIL_TYPE_STAR)?;
+            os.write_uint32(12, self.MAIL_TYPE_STAR)?;
         }
         if self.GKJGCBPOJCM != false {
-            os.write_bool(8, self.GKJGCBPOJCM)?;
-        }
-        if self.DNPHCJEBIKB != 0 {
-            os.write_uint32(10, self.DNPHCJEBIKB)?;
+            os.write_bool(13, self.GKJGCBPOJCM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for MusicRhythmFinishLevelCsReq {
     }
 
     fn clear(&mut self) {
+        self.DNPHCJEBIKB = 0;
         self.MAIL_TYPE_STAR = 0;
         self.GKJGCBPOJCM = false;
-        self.DNPHCJEBIKB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MusicRhythmFinishLevelCsReq {
         static instance: MusicRhythmFinishLevelCsReq = MusicRhythmFinishLevelCsReq {
+            DNPHCJEBIKB: 0,
             MAIL_TYPE_STAR: 0,
             GKJGCBPOJCM: false,
-            DNPHCJEBIKB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for MusicRhythmFinishLevelCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!MusicRhythmFinishLevelCsReq.proto\"\x87\x01\n\x1bMusicRhythmFinishLev\
-    elCsReq\x12$\n\x0eMAIL_TYPE_STAR\x18\x04\x20\x01(\rR\x0cMAILTYPESTAR\x12\
-    \x20\n\x0bGKJGCBPOJCM\x18\x08\x20\x01(\x08R\x0bGKJGCBPOJCM\x12\x20\n\x0b\
-    DNPHCJEBIKB\x18\n\x20\x01(\rR\x0bDNPHCJEBIKBb\x06proto3\
+    elCsReq\x12\x20\n\x0bDNPHCJEBIKB\x18\x03\x20\x01(\rR\x0bDNPHCJEBIKB\x12$\
+    \n\x0eMAIL_TYPE_STAR\x18\x0c\x20\x01(\rR\x0cMAILTYPESTAR\x12\x20\n\x0bGK\
+    JGCBPOJCM\x18\r\x20\x01(\x08R\x0bGKJGCBPOJCMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AJNAJINFJIC {
     // message fields
-    // @@protoc_insertion_point(field:AJNAJINFJIC.NGNAPJAJBAL)
-    pub NGNAPJAJBAL: u32,
     // @@protoc_insertion_point(field:AJNAJINFJIC.BPPLLCHMIDD)
     pub BPPLLCHMIDD: bool,
+    // @@protoc_insertion_point(field:AJNAJINFJIC.NGNAPJAJBAL)
+    pub NGNAPJAJBAL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AJNAJINFJIC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl AJNAJINFJIC {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NGNAPJAJBAL",
-            |m: &AJNAJINFJIC| { &m.NGNAPJAJBAL },
-            |m: &mut AJNAJINFJIC| { &mut m.NGNAPJAJBAL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BPPLLCHMIDD",
             |m: &AJNAJINFJIC| { &m.BPPLLCHMIDD },
             |m: &mut AJNAJINFJIC| { &mut m.BPPLLCHMIDD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NGNAPJAJBAL",
+            |m: &AJNAJINFJIC| { &m.NGNAPJAJBAL },
+            |m: &mut AJNAJINFJIC| { &mut m.NGNAPJAJBAL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AJNAJINFJIC>(
             "AJNAJINFJIC",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for AJNAJINFJIC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.NGNAPJAJBAL = is.read_uint32()?;
-                },
                 40 => {
                     self.BPPLLCHMIDD = is.read_bool()?;
+                },
+                96 => {
+                    self.NGNAPJAJBAL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for AJNAJINFJIC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NGNAPJAJBAL != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.NGNAPJAJBAL);
-        }
         if self.BPPLLCHMIDD != false {
             my_size += 1 + 1;
+        }
+        if self.NGNAPJAJBAL != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.NGNAPJAJBAL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for AJNAJINFJIC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NGNAPJAJBAL != 0 {
-            os.write_uint32(15, self.NGNAPJAJBAL)?;
-        }
         if self.BPPLLCHMIDD != false {
             os.write_bool(5, self.BPPLLCHMIDD)?;
+        }
+        if self.NGNAPJAJBAL != 0 {
+            os.write_uint32(12, self.NGNAPJAJBAL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for AJNAJINFJIC {
     }
 
     fn clear(&mut self) {
-        self.NGNAPJAJBAL = 0;
         self.BPPLLCHMIDD = false;
+        self.NGNAPJAJBAL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AJNAJINFJIC {
         static instance: AJNAJINFJIC = AJNAJINFJIC {
-            NGNAPJAJBAL: 0,
             BPPLLCHMIDD: false,
+            NGNAPJAJBAL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for AJNAJINFJIC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AJNAJINFJIC.proto\"Q\n\x0bAJNAJINFJIC\x12\x20\n\x0bNGNAPJAJBAL\x18\
-    \x0f\x20\x01(\rR\x0bNGNAPJAJBAL\x12\x20\n\x0bBPPLLCHMIDD\x18\x05\x20\x01\
-    (\x08R\x0bBPPLLCHMIDDb\x06proto3\
+    \n\x11AJNAJINFJIC.proto\"Q\n\x0bAJNAJINFJIC\x12\x20\n\x0bBPPLLCHMIDD\x18\
+    \x05\x20\x01(\x08R\x0bBPPLLCHMIDD\x12\x20\n\x0bNGNAPJAJBAL\x18\x0c\x20\
+    \x01(\rR\x0bNGNAPJAJBALb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

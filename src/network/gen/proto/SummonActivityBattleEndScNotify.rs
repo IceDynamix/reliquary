@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SummonActivityBattleEndScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SummonActivityBattleEndScNotify.FJNHDHOHBCL)
-    pub FJNHDHOHBCL: u32,
+    // @@protoc_insertion_point(field:SummonActivityBattleEndScNotify.HMFFHGBKOGL)
+    pub HMFFHGBKOGL: u32,
     // @@protoc_insertion_point(field:SummonActivityBattleEndScNotify.NEDFIBONLKB)
     pub NEDFIBONLKB: u32,
     // @@protoc_insertion_point(field:SummonActivityBattleEndScNotify.FEPKAMAILMK)
     pub FEPKAMAILMK: u32,
-    // @@protoc_insertion_point(field:SummonActivityBattleEndScNotify.HMFFHGBKOGL)
-    pub HMFFHGBKOGL: u32,
+    // @@protoc_insertion_point(field:SummonActivityBattleEndScNotify.FJNHDHOHBCL)
+    pub FJNHDHOHBCL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SummonActivityBattleEndScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,9 +56,9 @@ impl SummonActivityBattleEndScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FJNHDHOHBCL",
-            |m: &SummonActivityBattleEndScNotify| { &m.FJNHDHOHBCL },
-            |m: &mut SummonActivityBattleEndScNotify| { &mut m.FJNHDHOHBCL },
+            "HMFFHGBKOGL",
+            |m: &SummonActivityBattleEndScNotify| { &m.HMFFHGBKOGL },
+            |m: &mut SummonActivityBattleEndScNotify| { &mut m.HMFFHGBKOGL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NEDFIBONLKB",
@@ -71,9 +71,9 @@ impl SummonActivityBattleEndScNotify {
             |m: &mut SummonActivityBattleEndScNotify| { &mut m.FEPKAMAILMK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HMFFHGBKOGL",
-            |m: &SummonActivityBattleEndScNotify| { &m.HMFFHGBKOGL },
-            |m: &mut SummonActivityBattleEndScNotify| { &mut m.HMFFHGBKOGL },
+            "FJNHDHOHBCL",
+            |m: &SummonActivityBattleEndScNotify| { &m.FJNHDHOHBCL },
+            |m: &mut SummonActivityBattleEndScNotify| { &mut m.FJNHDHOHBCL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SummonActivityBattleEndScNotify>(
             "SummonActivityBattleEndScNotify",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for SummonActivityBattleEndScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.FJNHDHOHBCL = is.read_uint32()?;
+                64 => {
+                    self.HMFFHGBKOGL = is.read_uint32()?;
                 },
                 8 => {
                     self.NEDFIBONLKB = is.read_uint32()?;
                 },
-                24 => {
+                80 => {
                     self.FEPKAMAILMK = is.read_uint32()?;
                 },
-                64 => {
-                    self.HMFFHGBKOGL = is.read_uint32()?;
+                40 => {
+                    self.FJNHDHOHBCL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for SummonActivityBattleEndScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FJNHDHOHBCL != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.FJNHDHOHBCL);
+        if self.HMFFHGBKOGL != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.HMFFHGBKOGL);
         }
         if self.NEDFIBONLKB != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.NEDFIBONLKB);
         }
         if self.FEPKAMAILMK != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.FEPKAMAILMK);
+            my_size += ::protobuf::rt::uint32_size(10, self.FEPKAMAILMK);
         }
-        if self.HMFFHGBKOGL != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.HMFFHGBKOGL);
+        if self.FJNHDHOHBCL != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.FJNHDHOHBCL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for SummonActivityBattleEndScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FJNHDHOHBCL != 0 {
-            os.write_uint32(6, self.FJNHDHOHBCL)?;
+        if self.HMFFHGBKOGL != 0 {
+            os.write_uint32(8, self.HMFFHGBKOGL)?;
         }
         if self.NEDFIBONLKB != 0 {
             os.write_uint32(1, self.NEDFIBONLKB)?;
         }
         if self.FEPKAMAILMK != 0 {
-            os.write_uint32(3, self.FEPKAMAILMK)?;
+            os.write_uint32(10, self.FEPKAMAILMK)?;
         }
-        if self.HMFFHGBKOGL != 0 {
-            os.write_uint32(8, self.HMFFHGBKOGL)?;
+        if self.FJNHDHOHBCL != 0 {
+            os.write_uint32(5, self.FJNHDHOHBCL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for SummonActivityBattleEndScNotify {
     }
 
     fn clear(&mut self) {
-        self.FJNHDHOHBCL = 0;
+        self.HMFFHGBKOGL = 0;
         self.NEDFIBONLKB = 0;
         self.FEPKAMAILMK = 0;
-        self.HMFFHGBKOGL = 0;
+        self.FJNHDHOHBCL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SummonActivityBattleEndScNotify {
         static instance: SummonActivityBattleEndScNotify = SummonActivityBattleEndScNotify {
-            FJNHDHOHBCL: 0,
+            HMFFHGBKOGL: 0,
             NEDFIBONLKB: 0,
             FEPKAMAILMK: 0,
-            HMFFHGBKOGL: 0,
+            FJNHDHOHBCL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for SummonActivityBattleEndScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%SummonActivityBattleEndScNotify.proto\"\xa9\x01\n\x1fSummonActivityBa\
-    ttleEndScNotify\x12\x20\n\x0bFJNHDHOHBCL\x18\x06\x20\x01(\rR\x0bFJNHDHOH\
-    BCL\x12\x20\n\x0bNEDFIBONLKB\x18\x01\x20\x01(\rR\x0bNEDFIBONLKB\x12\x20\
-    \n\x0bFEPKAMAILMK\x18\x03\x20\x01(\rR\x0bFEPKAMAILMK\x12\x20\n\x0bHMFFHG\
-    BKOGL\x18\x08\x20\x01(\rR\x0bHMFFHGBKOGLb\x06proto3\
+    ttleEndScNotify\x12\x20\n\x0bHMFFHGBKOGL\x18\x08\x20\x01(\rR\x0bHMFFHGBK\
+    OGL\x12\x20\n\x0bNEDFIBONLKB\x18\x01\x20\x01(\rR\x0bNEDFIBONLKB\x12\x20\
+    \n\x0bFEPKAMAILMK\x18\n\x20\x01(\rR\x0bFEPKAMAILMK\x12\x20\n\x0bFJNHDHOH\
+    BCL\x18\x05\x20\x01(\rR\x0bFJNHDHOHBCLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

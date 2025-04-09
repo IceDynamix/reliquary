@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartRogueCsReq {
     // message fields
-    // @@protoc_insertion_point(field:StartRogueCsReq.PDJGMANJMAK)
-    pub PDJGMANJMAK: u32,
-    // @@protoc_insertion_point(field:StartRogueCsReq.HJGNDHLMMIB)
-    pub HJGNDHLMMIB: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:StartRogueCsReq.ELAPPCMELOA)
-    pub ELAPPCMELOA: u32,
-    // @@protoc_insertion_point(field:StartRogueCsReq.DBAHFEFGLMD)
-    pub DBAHFEFGLMD: u32,
-    // @@protoc_insertion_point(field:StartRogueCsReq.NBCGLEFOKDM)
-    pub NBCGLEFOKDM: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:StartRogueCsReq.LGHCAHBBCAM)
     pub LGHCAHBBCAM: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:StartRogueCsReq.NBCGLEFOKDM)
+    pub NBCGLEFOKDM: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:StartRogueCsReq.ELAPPCMELOA)
+    pub ELAPPCMELOA: u32,
+    // @@protoc_insertion_point(field:StartRogueCsReq.HJGNDHLMMIB)
+    pub HJGNDHLMMIB: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:StartRogueCsReq.PDJGMANJMAK)
+    pub PDJGMANJMAK: u32,
+    // @@protoc_insertion_point(field:StartRogueCsReq.DBAHFEFGLMD)
+    pub DBAHFEFGLMD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:StartRogueCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,10 +59,20 @@ impl StartRogueCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LGHCAHBBCAM",
+            |m: &StartRogueCsReq| { &m.LGHCAHBBCAM },
+            |m: &mut StartRogueCsReq| { &mut m.LGHCAHBBCAM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NBCGLEFOKDM",
+            |m: &StartRogueCsReq| { &m.NBCGLEFOKDM },
+            |m: &mut StartRogueCsReq| { &mut m.NBCGLEFOKDM },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PDJGMANJMAK",
-            |m: &StartRogueCsReq| { &m.PDJGMANJMAK },
-            |m: &mut StartRogueCsReq| { &mut m.PDJGMANJMAK },
+            "ELAPPCMELOA",
+            |m: &StartRogueCsReq| { &m.ELAPPCMELOA },
+            |m: &mut StartRogueCsReq| { &mut m.ELAPPCMELOA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "HJGNDHLMMIB",
@@ -70,24 +80,14 @@ impl StartRogueCsReq {
             |m: &mut StartRogueCsReq| { &mut m.HJGNDHLMMIB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ELAPPCMELOA",
-            |m: &StartRogueCsReq| { &m.ELAPPCMELOA },
-            |m: &mut StartRogueCsReq| { &mut m.ELAPPCMELOA },
+            "PDJGMANJMAK",
+            |m: &StartRogueCsReq| { &m.PDJGMANJMAK },
+            |m: &mut StartRogueCsReq| { &mut m.PDJGMANJMAK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DBAHFEFGLMD",
             |m: &StartRogueCsReq| { &m.DBAHFEFGLMD },
             |m: &mut StartRogueCsReq| { &mut m.DBAHFEFGLMD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NBCGLEFOKDM",
-            |m: &StartRogueCsReq| { &m.NBCGLEFOKDM },
-            |m: &mut StartRogueCsReq| { &mut m.NBCGLEFOKDM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LGHCAHBBCAM",
-            |m: &StartRogueCsReq| { &m.LGHCAHBBCAM },
-            |m: &mut StartRogueCsReq| { &mut m.LGHCAHBBCAM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartRogueCsReq>(
             "StartRogueCsReq",
@@ -107,32 +107,32 @@ impl ::protobuf::Message for StartRogueCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.PDJGMANJMAK = is.read_uint32()?;
-                },
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.HJGNDHLMMIB)?;
-                },
-                32 => {
-                    self.HJGNDHLMMIB.push(is.read_uint32()?);
-                },
-                24 => {
-                    self.ELAPPCMELOA = is.read_uint32()?;
-                },
-                16 => {
-                    self.DBAHFEFGLMD = is.read_uint32()?;
-                },
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NBCGLEFOKDM)?;
-                },
-                88 => {
-                    self.NBCGLEFOKDM.push(is.read_uint32()?);
-                },
-                98 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.LGHCAHBBCAM)?;
                 },
-                96 => {
+                56 => {
                     self.LGHCAHBBCAM.push(is.read_uint32()?);
+                },
+                74 => {
+                    is.read_repeated_packed_uint32_into(&mut self.NBCGLEFOKDM)?;
+                },
+                72 => {
+                    self.NBCGLEFOKDM.push(is.read_uint32()?);
+                },
+                96 => {
+                    self.ELAPPCMELOA = is.read_uint32()?;
+                },
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.HJGNDHLMMIB)?;
+                },
+                88 => {
+                    self.HJGNDHLMMIB.push(is.read_uint32()?);
+                },
+                120 => {
+                    self.PDJGMANJMAK = is.read_uint32()?;
+                },
+                80 => {
+                    self.DBAHFEFGLMD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -146,36 +146,36 @@ impl ::protobuf::Message for StartRogueCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PDJGMANJMAK != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.PDJGMANJMAK);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.HJGNDHLMMIB);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.LGHCAHBBCAM);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.NBCGLEFOKDM);
         if self.ELAPPCMELOA != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.ELAPPCMELOA);
+            my_size += ::protobuf::rt::uint32_size(12, self.ELAPPCMELOA);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.HJGNDHLMMIB);
+        if self.PDJGMANJMAK != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.PDJGMANJMAK);
         }
         if self.DBAHFEFGLMD != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.DBAHFEFGLMD);
+            my_size += ::protobuf::rt::uint32_size(10, self.DBAHFEFGLMD);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.NBCGLEFOKDM);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.LGHCAHBBCAM);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PDJGMANJMAK != 0 {
-            os.write_uint32(7, self.PDJGMANJMAK)?;
-        }
-        os.write_repeated_packed_uint32(4, &self.HJGNDHLMMIB)?;
+        os.write_repeated_packed_uint32(7, &self.LGHCAHBBCAM)?;
+        os.write_repeated_packed_uint32(9, &self.NBCGLEFOKDM)?;
         if self.ELAPPCMELOA != 0 {
-            os.write_uint32(3, self.ELAPPCMELOA)?;
+            os.write_uint32(12, self.ELAPPCMELOA)?;
+        }
+        os.write_repeated_packed_uint32(11, &self.HJGNDHLMMIB)?;
+        if self.PDJGMANJMAK != 0 {
+            os.write_uint32(15, self.PDJGMANJMAK)?;
         }
         if self.DBAHFEFGLMD != 0 {
-            os.write_uint32(2, self.DBAHFEFGLMD)?;
+            os.write_uint32(10, self.DBAHFEFGLMD)?;
         }
-        os.write_repeated_packed_uint32(11, &self.NBCGLEFOKDM)?;
-        os.write_repeated_packed_uint32(12, &self.LGHCAHBBCAM)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -193,23 +193,23 @@ impl ::protobuf::Message for StartRogueCsReq {
     }
 
     fn clear(&mut self) {
-        self.PDJGMANJMAK = 0;
-        self.HJGNDHLMMIB.clear();
-        self.ELAPPCMELOA = 0;
-        self.DBAHFEFGLMD = 0;
-        self.NBCGLEFOKDM.clear();
         self.LGHCAHBBCAM.clear();
+        self.NBCGLEFOKDM.clear();
+        self.ELAPPCMELOA = 0;
+        self.HJGNDHLMMIB.clear();
+        self.PDJGMANJMAK = 0;
+        self.DBAHFEFGLMD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartRogueCsReq {
         static instance: StartRogueCsReq = StartRogueCsReq {
-            PDJGMANJMAK: 0,
-            HJGNDHLMMIB: ::std::vec::Vec::new(),
-            ELAPPCMELOA: 0,
-            DBAHFEFGLMD: 0,
-            NBCGLEFOKDM: ::std::vec::Vec::new(),
             LGHCAHBBCAM: ::std::vec::Vec::new(),
+            NBCGLEFOKDM: ::std::vec::Vec::new(),
+            ELAPPCMELOA: 0,
+            HJGNDHLMMIB: ::std::vec::Vec::new(),
+            PDJGMANJMAK: 0,
+            DBAHFEFGLMD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -235,11 +235,11 @@ impl ::protobuf::reflect::ProtobufValue for StartRogueCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15StartRogueCsReq.proto\"\xdd\x01\n\x0fStartRogueCsReq\x12\x20\n\x0b\
-    PDJGMANJMAK\x18\x07\x20\x01(\rR\x0bPDJGMANJMAK\x12\x20\n\x0bHJGNDHLMMIB\
-    \x18\x04\x20\x03(\rR\x0bHJGNDHLMMIB\x12\x20\n\x0bELAPPCMELOA\x18\x03\x20\
-    \x01(\rR\x0bELAPPCMELOA\x12\x20\n\x0bDBAHFEFGLMD\x18\x02\x20\x01(\rR\x0b\
-    DBAHFEFGLMD\x12\x20\n\x0bNBCGLEFOKDM\x18\x0b\x20\x03(\rR\x0bNBCGLEFOKDM\
-    \x12\x20\n\x0bLGHCAHBBCAM\x18\x0c\x20\x03(\rR\x0bLGHCAHBBCAMb\x06proto3\
+    LGHCAHBBCAM\x18\x07\x20\x03(\rR\x0bLGHCAHBBCAM\x12\x20\n\x0bNBCGLEFOKDM\
+    \x18\t\x20\x03(\rR\x0bNBCGLEFOKDM\x12\x20\n\x0bELAPPCMELOA\x18\x0c\x20\
+    \x01(\rR\x0bELAPPCMELOA\x12\x20\n\x0bHJGNDHLMMIB\x18\x0b\x20\x03(\rR\x0b\
+    HJGNDHLMMIB\x12\x20\n\x0bPDJGMANJMAK\x18\x0f\x20\x01(\rR\x0bPDJGMANJMAK\
+    \x12\x20\n\x0bDBAHFEFGLMD\x18\n\x20\x01(\rR\x0bDBAHFEFGLMDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

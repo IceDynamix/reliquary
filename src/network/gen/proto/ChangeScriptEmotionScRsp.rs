@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChangeScriptEmotionScRsp {
     // message fields
+    // @@protoc_insertion_point(field:ChangeScriptEmotionScRsp.KEFKOGKLEFC)
+    pub KEFKOGKLEFC: ::protobuf::EnumOrUnknown<super::BFDFLHEKFGK::BFDFLHEKFGK>,
     // @@protoc_insertion_point(field:ChangeScriptEmotionScRsp.CLKEOEHPLNG)
     pub CLKEOEHPLNG: u32,
     // @@protoc_insertion_point(field:ChangeScriptEmotionScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:ChangeScriptEmotionScRsp.KEFKOGKLEFC)
-    pub KEFKOGKLEFC: ::protobuf::EnumOrUnknown<super::BFDFLHEKFGK::BFDFLHEKFGK>,
     // special fields
     // @@protoc_insertion_point(special_field:ChangeScriptEmotionScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl ChangeScriptEmotionScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KEFKOGKLEFC",
+            |m: &ChangeScriptEmotionScRsp| { &m.KEFKOGKLEFC },
+            |m: &mut ChangeScriptEmotionScRsp| { &mut m.KEFKOGKLEFC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CLKEOEHPLNG",
             |m: &ChangeScriptEmotionScRsp| { &m.CLKEOEHPLNG },
             |m: &mut ChangeScriptEmotionScRsp| { &mut m.CLKEOEHPLNG },
@@ -62,11 +67,6 @@ impl ChangeScriptEmotionScRsp {
             "retcode",
             |m: &ChangeScriptEmotionScRsp| { &m.retcode },
             |m: &mut ChangeScriptEmotionScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KEFKOGKLEFC",
-            |m: &ChangeScriptEmotionScRsp| { &m.KEFKOGKLEFC },
-            |m: &mut ChangeScriptEmotionScRsp| { &mut m.KEFKOGKLEFC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChangeScriptEmotionScRsp>(
             "ChangeScriptEmotionScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for ChangeScriptEmotionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                16 => {
+                    self.KEFKOGKLEFC = is.read_enum_or_unknown()?;
+                },
+                112 => {
                     self.CLKEOEHPLNG = is.read_uint32()?;
                 },
-                32 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
-                },
-                104 => {
-                    self.KEFKOGKLEFC = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for ChangeScriptEmotionScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.KEFKOGKLEFC != ::protobuf::EnumOrUnknown::new(super::BFDFLHEKFGK::BFDFLHEKFGK::HEART_DIAL_EMOTION_TYPE_PEACE) {
+            my_size += ::protobuf::rt::int32_size(2, self.KEFKOGKLEFC.value());
+        }
         if self.CLKEOEHPLNG != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.CLKEOEHPLNG);
+            my_size += ::protobuf::rt::uint32_size(14, self.CLKEOEHPLNG);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
-        }
-        if self.KEFKOGKLEFC != ::protobuf::EnumOrUnknown::new(super::BFDFLHEKFGK::BFDFLHEKFGK::HEART_DIAL_EMOTION_TYPE_PEACE) {
-            my_size += ::protobuf::rt::int32_size(13, self.KEFKOGKLEFC.value());
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for ChangeScriptEmotionScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.KEFKOGKLEFC != ::protobuf::EnumOrUnknown::new(super::BFDFLHEKFGK::BFDFLHEKFGK::HEART_DIAL_EMOTION_TYPE_PEACE) {
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.KEFKOGKLEFC))?;
+        }
         if self.CLKEOEHPLNG != 0 {
-            os.write_uint32(11, self.CLKEOEHPLNG)?;
+            os.write_uint32(14, self.CLKEOEHPLNG)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
-        }
-        if self.KEFKOGKLEFC != ::protobuf::EnumOrUnknown::new(super::BFDFLHEKFGK::BFDFLHEKFGK::HEART_DIAL_EMOTION_TYPE_PEACE) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.KEFKOGKLEFC))?;
+            os.write_uint32(7, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for ChangeScriptEmotionScRsp {
     }
 
     fn clear(&mut self) {
+        self.KEFKOGKLEFC = ::protobuf::EnumOrUnknown::new(super::BFDFLHEKFGK::BFDFLHEKFGK::HEART_DIAL_EMOTION_TYPE_PEACE);
         self.CLKEOEHPLNG = 0;
         self.retcode = 0;
-        self.KEFKOGKLEFC = ::protobuf::EnumOrUnknown::new(super::BFDFLHEKFGK::BFDFLHEKFGK::HEART_DIAL_EMOTION_TYPE_PEACE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChangeScriptEmotionScRsp {
         static instance: ChangeScriptEmotionScRsp = ChangeScriptEmotionScRsp {
+            KEFKOGKLEFC: ::protobuf::EnumOrUnknown::from_i32(0),
             CLKEOEHPLNG: 0,
             retcode: 0,
-            KEFKOGKLEFC: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for ChangeScriptEmotionScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eChangeScriptEmotionScRsp.proto\x1a\x11BFDFLHEKFGK.proto\"\x86\x01\
-    \n\x18ChangeScriptEmotionScRsp\x12\x20\n\x0bCLKEOEHPLNG\x18\x0b\x20\x01(\
-    \rR\x0bCLKEOEHPLNG\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\
-    \x12.\n\x0bKEFKOGKLEFC\x18\r\x20\x01(\x0e2\x0c.BFDFLHEKFGKR\x0bKEFKOGKLE\
-    FCb\x06proto3\
+    \n\x18ChangeScriptEmotionScRsp\x12.\n\x0bKEFKOGKLEFC\x18\x02\x20\x01(\
+    \x0e2\x0c.BFDFLHEKFGKR\x0bKEFKOGKLEFC\x12\x20\n\x0bCLKEOEHPLNG\x18\x0e\
+    \x20\x01(\rR\x0bCLKEOEHPLNG\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07\
+    retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

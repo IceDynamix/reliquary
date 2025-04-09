@@ -29,30 +29,30 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdFightMatch3Type {
     // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMathc3TypeNone)
     CmdFightMathc3TypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3ChatCsReq)
-    CmdFightMatch3ChatCsReq = 30128,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3ChatScNotify)
-    CmdFightMatch3ChatScNotify = 30105,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3SwapCsReq)
-    CmdFightMatch3SwapCsReq = 30156,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3TurnStartScNotify)
-    CmdFightMatch3TurnStartScNotify = 30124,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3DataCsReq)
-    CmdFightMatch3DataCsReq = 30101,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3TurnEndScNotify)
-    CmdFightMatch3TurnEndScNotify = 30130,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3StartCountDownScNotify)
-    CmdFightMatch3StartCountDownScNotify = 30158,
     // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3SwapScRsp)
-    CmdFightMatch3SwapScRsp = 30197,
+    CmdFightMatch3SwapScRsp = 30170,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3TurnStartScNotify)
+    CmdFightMatch3TurnStartScNotify = 30109,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3DataCsReq)
+    CmdFightMatch3DataCsReq = 30111,
     // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3ForceUpdateNotify)
-    CmdFightMatch3ForceUpdateNotify = 30114,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3DataScRsp)
-    CmdFightMatch3DataScRsp = 30168,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3OpponentDataScNotify)
-    CmdFightMatch3OpponentDataScNotify = 30176,
+    CmdFightMatch3ForceUpdateNotify = 30118,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3SwapCsReq)
+    CmdFightMatch3SwapCsReq = 30106,
     // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3ChatScRsp)
-    CmdFightMatch3ChatScRsp = 30111,
+    CmdFightMatch3ChatScRsp = 30130,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3TurnEndScNotify)
+    CmdFightMatch3TurnEndScNotify = 30135,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3DataScRsp)
+    CmdFightMatch3DataScRsp = 30113,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3StartCountDownScNotify)
+    CmdFightMatch3StartCountDownScNotify = 30147,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3ChatCsReq)
+    CmdFightMatch3ChatCsReq = 30126,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3OpponentDataScNotify)
+    CmdFightMatch3OpponentDataScNotify = 30189,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3ChatScNotify)
+    CmdFightMatch3ChatScNotify = 30195,
 }
 
 impl ::protobuf::Enum for CmdFightMatch3Type {
@@ -65,18 +65,18 @@ impl ::protobuf::Enum for CmdFightMatch3Type {
     fn from_i32(value: i32) -> ::std::option::Option<CmdFightMatch3Type> {
         match value {
             0 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMathc3TypeNone),
-            30128 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3ChatCsReq),
-            30105 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3ChatScNotify),
-            30156 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3SwapCsReq),
-            30124 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3TurnStartScNotify),
-            30101 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3DataCsReq),
-            30130 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3TurnEndScNotify),
-            30158 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3StartCountDownScNotify),
-            30197 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3SwapScRsp),
-            30114 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3ForceUpdateNotify),
-            30168 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3DataScRsp),
-            30176 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3OpponentDataScNotify),
-            30111 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3ChatScRsp),
+            30170 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3SwapScRsp),
+            30109 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3TurnStartScNotify),
+            30111 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3DataCsReq),
+            30118 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3ForceUpdateNotify),
+            30106 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3SwapCsReq),
+            30130 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3ChatScRsp),
+            30135 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3TurnEndScNotify),
+            30113 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3DataScRsp),
+            30147 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3StartCountDownScNotify),
+            30126 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3ChatCsReq),
+            30189 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3OpponentDataScNotify),
+            30195 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3ChatScNotify),
             _ => ::std::option::Option::None
         }
     }
@@ -84,36 +84,36 @@ impl ::protobuf::Enum for CmdFightMatch3Type {
     fn from_str(str: &str) -> ::std::option::Option<CmdFightMatch3Type> {
         match str {
             "CmdFightMathc3TypeNone" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMathc3TypeNone),
-            "CmdFightMatch3ChatCsReq" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3ChatCsReq),
-            "CmdFightMatch3ChatScNotify" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3ChatScNotify),
-            "CmdFightMatch3SwapCsReq" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3SwapCsReq),
+            "CmdFightMatch3SwapScRsp" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3SwapScRsp),
             "CmdFightMatch3TurnStartScNotify" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3TurnStartScNotify),
             "CmdFightMatch3DataCsReq" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3DataCsReq),
-            "CmdFightMatch3TurnEndScNotify" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3TurnEndScNotify),
-            "CmdFightMatch3StartCountDownScNotify" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3StartCountDownScNotify),
-            "CmdFightMatch3SwapScRsp" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3SwapScRsp),
             "CmdFightMatch3ForceUpdateNotify" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3ForceUpdateNotify),
-            "CmdFightMatch3DataScRsp" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3DataScRsp),
-            "CmdFightMatch3OpponentDataScNotify" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3OpponentDataScNotify),
+            "CmdFightMatch3SwapCsReq" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3SwapCsReq),
             "CmdFightMatch3ChatScRsp" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3ChatScRsp),
+            "CmdFightMatch3TurnEndScNotify" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3TurnEndScNotify),
+            "CmdFightMatch3DataScRsp" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3DataScRsp),
+            "CmdFightMatch3StartCountDownScNotify" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3StartCountDownScNotify),
+            "CmdFightMatch3ChatCsReq" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3ChatCsReq),
+            "CmdFightMatch3OpponentDataScNotify" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3OpponentDataScNotify),
+            "CmdFightMatch3ChatScNotify" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3ChatScNotify),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdFightMatch3Type] = &[
         CmdFightMatch3Type::CmdFightMathc3TypeNone,
-        CmdFightMatch3Type::CmdFightMatch3ChatCsReq,
-        CmdFightMatch3Type::CmdFightMatch3ChatScNotify,
-        CmdFightMatch3Type::CmdFightMatch3SwapCsReq,
+        CmdFightMatch3Type::CmdFightMatch3SwapScRsp,
         CmdFightMatch3Type::CmdFightMatch3TurnStartScNotify,
         CmdFightMatch3Type::CmdFightMatch3DataCsReq,
-        CmdFightMatch3Type::CmdFightMatch3TurnEndScNotify,
-        CmdFightMatch3Type::CmdFightMatch3StartCountDownScNotify,
-        CmdFightMatch3Type::CmdFightMatch3SwapScRsp,
         CmdFightMatch3Type::CmdFightMatch3ForceUpdateNotify,
-        CmdFightMatch3Type::CmdFightMatch3DataScRsp,
-        CmdFightMatch3Type::CmdFightMatch3OpponentDataScNotify,
+        CmdFightMatch3Type::CmdFightMatch3SwapCsReq,
         CmdFightMatch3Type::CmdFightMatch3ChatScRsp,
+        CmdFightMatch3Type::CmdFightMatch3TurnEndScNotify,
+        CmdFightMatch3Type::CmdFightMatch3DataScRsp,
+        CmdFightMatch3Type::CmdFightMatch3StartCountDownScNotify,
+        CmdFightMatch3Type::CmdFightMatch3ChatCsReq,
+        CmdFightMatch3Type::CmdFightMatch3OpponentDataScNotify,
+        CmdFightMatch3Type::CmdFightMatch3ChatScNotify,
     ];
 }
 
@@ -126,18 +126,18 @@ impl ::protobuf::EnumFull for CmdFightMatch3Type {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdFightMatch3Type::CmdFightMathc3TypeNone => 0,
-            CmdFightMatch3Type::CmdFightMatch3ChatCsReq => 1,
-            CmdFightMatch3Type::CmdFightMatch3ChatScNotify => 2,
-            CmdFightMatch3Type::CmdFightMatch3SwapCsReq => 3,
-            CmdFightMatch3Type::CmdFightMatch3TurnStartScNotify => 4,
-            CmdFightMatch3Type::CmdFightMatch3DataCsReq => 5,
-            CmdFightMatch3Type::CmdFightMatch3TurnEndScNotify => 6,
-            CmdFightMatch3Type::CmdFightMatch3StartCountDownScNotify => 7,
-            CmdFightMatch3Type::CmdFightMatch3SwapScRsp => 8,
-            CmdFightMatch3Type::CmdFightMatch3ForceUpdateNotify => 9,
-            CmdFightMatch3Type::CmdFightMatch3DataScRsp => 10,
+            CmdFightMatch3Type::CmdFightMatch3SwapScRsp => 1,
+            CmdFightMatch3Type::CmdFightMatch3TurnStartScNotify => 2,
+            CmdFightMatch3Type::CmdFightMatch3DataCsReq => 3,
+            CmdFightMatch3Type::CmdFightMatch3ForceUpdateNotify => 4,
+            CmdFightMatch3Type::CmdFightMatch3SwapCsReq => 5,
+            CmdFightMatch3Type::CmdFightMatch3ChatScRsp => 6,
+            CmdFightMatch3Type::CmdFightMatch3TurnEndScNotify => 7,
+            CmdFightMatch3Type::CmdFightMatch3DataScRsp => 8,
+            CmdFightMatch3Type::CmdFightMatch3StartCountDownScNotify => 9,
+            CmdFightMatch3Type::CmdFightMatch3ChatCsReq => 10,
             CmdFightMatch3Type::CmdFightMatch3OpponentDataScNotify => 11,
-            CmdFightMatch3Type::CmdFightMatch3ChatScRsp => 12,
+            CmdFightMatch3Type::CmdFightMatch3ChatScNotify => 12,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -157,16 +157,16 @@ impl CmdFightMatch3Type {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18CmdFightMatch3Type.proto*\xd5\x03\n\x12CmdFightMatch3Type\x12\x1a\
-    \n\x16CmdFightMathc3TypeNone\x10\0\x12\x1d\n\x17CmdFightMatch3ChatCsReq\
-    \x10\xb0\xeb\x01\x12\x20\n\x1aCmdFightMatch3ChatScNotify\x10\x99\xeb\x01\
-    \x12\x1d\n\x17CmdFightMatch3SwapCsReq\x10\xcc\xeb\x01\x12%\n\x1fCmdFight\
-    Match3TurnStartScNotify\x10\xac\xeb\x01\x12\x1d\n\x17CmdFightMatch3DataC\
-    sReq\x10\x95\xeb\x01\x12#\n\x1dCmdFightMatch3TurnEndScNotify\x10\xb2\xeb\
-    \x01\x12*\n$CmdFightMatch3StartCountDownScNotify\x10\xce\xeb\x01\x12\x1d\
-    \n\x17CmdFightMatch3SwapScRsp\x10\xf5\xeb\x01\x12%\n\x1fCmdFightMatch3Fo\
-    rceUpdateNotify\x10\xa2\xeb\x01\x12\x1d\n\x17CmdFightMatch3DataScRsp\x10\
-    \xd8\xeb\x01\x12(\n\"CmdFightMatch3OpponentDataScNotify\x10\xe0\xeb\x01\
-    \x12\x1d\n\x17CmdFightMatch3ChatScRsp\x10\x9f\xeb\x01b\x06proto3\
+    \n\x16CmdFightMathc3TypeNone\x10\0\x12\x1d\n\x17CmdFightMatch3SwapScRsp\
+    \x10\xda\xeb\x01\x12%\n\x1fCmdFightMatch3TurnStartScNotify\x10\x9d\xeb\
+    \x01\x12\x1d\n\x17CmdFightMatch3DataCsReq\x10\x9f\xeb\x01\x12%\n\x1fCmdF\
+    ightMatch3ForceUpdateNotify\x10\xa6\xeb\x01\x12\x1d\n\x17CmdFightMatch3S\
+    wapCsReq\x10\x9a\xeb\x01\x12\x1d\n\x17CmdFightMatch3ChatScRsp\x10\xb2\
+    \xeb\x01\x12#\n\x1dCmdFightMatch3TurnEndScNotify\x10\xb7\xeb\x01\x12\x1d\
+    \n\x17CmdFightMatch3DataScRsp\x10\xa1\xeb\x01\x12*\n$CmdFightMatch3Start\
+    CountDownScNotify\x10\xc3\xeb\x01\x12\x1d\n\x17CmdFightMatch3ChatCsReq\
+    \x10\xae\xeb\x01\x12(\n\"CmdFightMatch3OpponentDataScNotify\x10\xed\xeb\
+    \x01\x12\x20\n\x1aCmdFightMatch3ChatScNotify\x10\xf3\xeb\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdateGunPlayDataCsReq {
     // message fields
-    // @@protoc_insertion_point(field:UpdateGunPlayDataCsReq.MIILNLHDDJM)
-    pub MIILNLHDDJM: u64,
-    // @@protoc_insertion_point(field:UpdateGunPlayDataCsReq.ODFHNCHIEJN)
-    pub ODFHNCHIEJN: ::protobuf::MessageField<super::KLBHFHJDBFI::KLBHFHJDBFI>,
-    // @@protoc_insertion_point(field:UpdateGunPlayDataCsReq.PNEIFBEGMDH)
-    pub PNEIFBEGMDH: u32,
     // @@protoc_insertion_point(field:UpdateGunPlayDataCsReq.FJNHDHOHBCL)
     pub FJNHDHOHBCL: u32,
+    // @@protoc_insertion_point(field:UpdateGunPlayDataCsReq.MIILNLHDDJM)
+    pub MIILNLHDDJM: u64,
+    // @@protoc_insertion_point(field:UpdateGunPlayDataCsReq.PNEIFBEGMDH)
+    pub PNEIFBEGMDH: u32,
+    // @@protoc_insertion_point(field:UpdateGunPlayDataCsReq.ODFHNCHIEJN)
+    pub ODFHNCHIEJN: ::protobuf::MessageField<super::KLBHFHJDBFI::KLBHFHJDBFI>,
     // special fields
     // @@protoc_insertion_point(special_field:UpdateGunPlayDataCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl UpdateGunPlayDataCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FJNHDHOHBCL",
+            |m: &UpdateGunPlayDataCsReq| { &m.FJNHDHOHBCL },
+            |m: &mut UpdateGunPlayDataCsReq| { &mut m.FJNHDHOHBCL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MIILNLHDDJM",
             |m: &UpdateGunPlayDataCsReq| { &m.MIILNLHDDJM },
             |m: &mut UpdateGunPlayDataCsReq| { &mut m.MIILNLHDDJM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KLBHFHJDBFI::KLBHFHJDBFI>(
-            "ODFHNCHIEJN",
-            |m: &UpdateGunPlayDataCsReq| { &m.ODFHNCHIEJN },
-            |m: &mut UpdateGunPlayDataCsReq| { &mut m.ODFHNCHIEJN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PNEIFBEGMDH",
             |m: &UpdateGunPlayDataCsReq| { &m.PNEIFBEGMDH },
             |m: &mut UpdateGunPlayDataCsReq| { &mut m.PNEIFBEGMDH },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FJNHDHOHBCL",
-            |m: &UpdateGunPlayDataCsReq| { &m.FJNHDHOHBCL },
-            |m: &mut UpdateGunPlayDataCsReq| { &mut m.FJNHDHOHBCL },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KLBHFHJDBFI::KLBHFHJDBFI>(
+            "ODFHNCHIEJN",
+            |m: &UpdateGunPlayDataCsReq| { &m.ODFHNCHIEJN },
+            |m: &mut UpdateGunPlayDataCsReq| { &mut m.ODFHNCHIEJN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdateGunPlayDataCsReq>(
             "UpdateGunPlayDataCsReq",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for UpdateGunPlayDataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                8 => {
+                    self.FJNHDHOHBCL = is.read_uint32()?;
+                },
+                72 => {
                     self.MIILNLHDDJM = is.read_uint64()?;
                 },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ODFHNCHIEJN)?;
-                },
-                96 => {
+                56 => {
                     self.PNEIFBEGMDH = is.read_uint32()?;
                 },
-                104 => {
-                    self.FJNHDHOHBCL = is.read_uint32()?;
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ODFHNCHIEJN)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for UpdateGunPlayDataCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.FJNHDHOHBCL != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.FJNHDHOHBCL);
+        }
         if self.MIILNLHDDJM != 0 {
-            my_size += ::protobuf::rt::uint64_size(11, self.MIILNLHDDJM);
+            my_size += ::protobuf::rt::uint64_size(9, self.MIILNLHDDJM);
+        }
+        if self.PNEIFBEGMDH != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.PNEIFBEGMDH);
         }
         if let Some(v) = self.ODFHNCHIEJN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.PNEIFBEGMDH != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.PNEIFBEGMDH);
-        }
-        if self.FJNHDHOHBCL != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.FJNHDHOHBCL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for UpdateGunPlayDataCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MIILNLHDDJM != 0 {
-            os.write_uint64(11, self.MIILNLHDDJM)?;
+        if self.FJNHDHOHBCL != 0 {
+            os.write_uint32(1, self.FJNHDHOHBCL)?;
         }
-        if let Some(v) = self.ODFHNCHIEJN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        if self.MIILNLHDDJM != 0 {
+            os.write_uint64(9, self.MIILNLHDDJM)?;
         }
         if self.PNEIFBEGMDH != 0 {
-            os.write_uint32(12, self.PNEIFBEGMDH)?;
+            os.write_uint32(7, self.PNEIFBEGMDH)?;
         }
-        if self.FJNHDHOHBCL != 0 {
-            os.write_uint32(13, self.FJNHDHOHBCL)?;
+        if let Some(v) = self.ODFHNCHIEJN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for UpdateGunPlayDataCsReq {
     }
 
     fn clear(&mut self) {
-        self.MIILNLHDDJM = 0;
-        self.ODFHNCHIEJN.clear();
-        self.PNEIFBEGMDH = 0;
         self.FJNHDHOHBCL = 0;
+        self.MIILNLHDDJM = 0;
+        self.PNEIFBEGMDH = 0;
+        self.ODFHNCHIEJN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateGunPlayDataCsReq {
         static instance: UpdateGunPlayDataCsReq = UpdateGunPlayDataCsReq {
-            MIILNLHDDJM: 0,
-            ODFHNCHIEJN: ::protobuf::MessageField::none(),
-            PNEIFBEGMDH: 0,
             FJNHDHOHBCL: 0,
+            MIILNLHDDJM: 0,
+            PNEIFBEGMDH: 0,
+            ODFHNCHIEJN: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,11 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for UpdateGunPlayDataCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cUpdateGunPlayDataCsReq.proto\x1a\x11KLBHFHJDBFI.proto\"\xae\x01\n\
-    \x16UpdateGunPlayDataCsReq\x12\x20\n\x0bMIILNLHDDJM\x18\x0b\x20\x01(\x04\
-    R\x0bMIILNLHDDJM\x12.\n\x0bODFHNCHIEJN\x18\x04\x20\x01(\x0b2\x0c.KLBHFHJ\
-    DBFIR\x0bODFHNCHIEJN\x12\x20\n\x0bPNEIFBEGMDH\x18\x0c\x20\x01(\rR\x0bPNE\
-    IFBEGMDH\x12\x20\n\x0bFJNHDHOHBCL\x18\r\x20\x01(\rR\x0bFJNHDHOHBCLb\x06p\
-    roto3\
+    \x16UpdateGunPlayDataCsReq\x12\x20\n\x0bFJNHDHOHBCL\x18\x01\x20\x01(\rR\
+    \x0bFJNHDHOHBCL\x12\x20\n\x0bMIILNLHDDJM\x18\t\x20\x01(\x04R\x0bMIILNLHD\
+    DJM\x12\x20\n\x0bPNEIFBEGMDH\x18\x07\x20\x01(\rR\x0bPNEIFBEGMDH\x12.\n\
+    \x0bODFHNCHIEJN\x18\x0c\x20\x01(\x0b2\x0c.KLBHFHJDBFIR\x0bODFHNCHIEJNb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

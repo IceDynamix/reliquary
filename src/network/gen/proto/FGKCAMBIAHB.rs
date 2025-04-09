@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FGKCAMBIAHB {
     // message fields
-    // @@protoc_insertion_point(field:FGKCAMBIAHB.CGGDOGDIDNK)
-    pub CGGDOGDIDNK: u32,
+    // @@protoc_insertion_point(field:FGKCAMBIAHB.level)
+    pub level: u32,
     // @@protoc_insertion_point(field:FGKCAMBIAHB.ELGANMDPMID)
     pub ELGANMDPMID: u32,
     // @@protoc_insertion_point(field:FGKCAMBIAHB.IHLEAMDIKKN)
     pub IHLEAMDIKKN: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
-    // @@protoc_insertion_point(field:FGKCAMBIAHB.level)
-    pub level: u32,
+    // @@protoc_insertion_point(field:FGKCAMBIAHB.CGGDOGDIDNK)
+    pub CGGDOGDIDNK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FGKCAMBIAHB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,9 +56,9 @@ impl FGKCAMBIAHB {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CGGDOGDIDNK",
-            |m: &FGKCAMBIAHB| { &m.CGGDOGDIDNK },
-            |m: &mut FGKCAMBIAHB| { &mut m.CGGDOGDIDNK },
+            "level",
+            |m: &FGKCAMBIAHB| { &m.level },
+            |m: &mut FGKCAMBIAHB| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ELGANMDPMID",
@@ -71,9 +71,9 @@ impl FGKCAMBIAHB {
             |m: &mut FGKCAMBIAHB| { &mut m.IHLEAMDIKKN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &FGKCAMBIAHB| { &m.level },
-            |m: &mut FGKCAMBIAHB| { &mut m.level },
+            "CGGDOGDIDNK",
+            |m: &FGKCAMBIAHB| { &m.CGGDOGDIDNK },
+            |m: &mut FGKCAMBIAHB| { &mut m.CGGDOGDIDNK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FGKCAMBIAHB>(
             "FGKCAMBIAHB",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for FGKCAMBIAHB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.CGGDOGDIDNK = is.read_uint32()?;
+                24 => {
+                    self.level = is.read_uint32()?;
                 },
-                72 => {
+                112 => {
                     self.ELGANMDPMID = is.read_uint32()?;
                 },
-                24 => {
+                32 => {
                     self.IHLEAMDIKKN = is.read_enum_or_unknown()?;
                 },
-                64 => {
-                    self.level = is.read_uint32()?;
+                120 => {
+                    self.CGGDOGDIDNK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for FGKCAMBIAHB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CGGDOGDIDNK != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.CGGDOGDIDNK);
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.level);
         }
         if self.ELGANMDPMID != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.ELGANMDPMID);
+            my_size += ::protobuf::rt::uint32_size(14, self.ELGANMDPMID);
         }
         if self.IHLEAMDIKKN != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(3, self.IHLEAMDIKKN.value());
+            my_size += ::protobuf::rt::int32_size(4, self.IHLEAMDIKKN.value());
         }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.level);
+        if self.CGGDOGDIDNK != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.CGGDOGDIDNK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for FGKCAMBIAHB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CGGDOGDIDNK != 0 {
-            os.write_uint32(1, self.CGGDOGDIDNK)?;
+        if self.level != 0 {
+            os.write_uint32(3, self.level)?;
         }
         if self.ELGANMDPMID != 0 {
-            os.write_uint32(9, self.ELGANMDPMID)?;
+            os.write_uint32(14, self.ELGANMDPMID)?;
         }
         if self.IHLEAMDIKKN != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.IHLEAMDIKKN))?;
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.IHLEAMDIKKN))?;
         }
-        if self.level != 0 {
-            os.write_uint32(8, self.level)?;
+        if self.CGGDOGDIDNK != 0 {
+            os.write_uint32(15, self.CGGDOGDIDNK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for FGKCAMBIAHB {
     }
 
     fn clear(&mut self) {
-        self.CGGDOGDIDNK = 0;
+        self.level = 0;
         self.ELGANMDPMID = 0;
         self.IHLEAMDIKKN = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE);
-        self.level = 0;
+        self.CGGDOGDIDNK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FGKCAMBIAHB {
         static instance: FGKCAMBIAHB = FGKCAMBIAHB {
-            CGGDOGDIDNK: 0,
+            level: 0,
             ELGANMDPMID: 0,
             IHLEAMDIKKN: ::protobuf::EnumOrUnknown::from_i32(0),
-            level: 0,
+            CGGDOGDIDNK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for FGKCAMBIAHB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FGKCAMBIAHB.proto\x1a\x10AvatarType.proto\"\x96\x01\n\x0bFGKCAMBIA\
-    HB\x12\x20\n\x0bCGGDOGDIDNK\x18\x01\x20\x01(\rR\x0bCGGDOGDIDNK\x12\x20\n\
-    \x0bELGANMDPMID\x18\t\x20\x01(\rR\x0bELGANMDPMID\x12-\n\x0bIHLEAMDIKKN\
-    \x18\x03\x20\x01(\x0e2\x0b.AvatarTypeR\x0bIHLEAMDIKKN\x12\x14\n\x05level\
-    \x18\x08\x20\x01(\rR\x05levelb\x06proto3\
+    HB\x12\x14\n\x05level\x18\x03\x20\x01(\rR\x05level\x12\x20\n\x0bELGANMDP\
+    MID\x18\x0e\x20\x01(\rR\x0bELGANMDPMID\x12-\n\x0bIHLEAMDIKKN\x18\x04\x20\
+    \x01(\x0e2\x0b.AvatarTypeR\x0bIHLEAMDIKKN\x12\x20\n\x0bCGGDOGDIDNK\x18\
+    \x0f\x20\x01(\rR\x0bCGGDOGDIDNKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,14 +30,14 @@ pub struct ADBAIJKMHNM {
     // message fields
     // @@protoc_insertion_point(field:ADBAIJKMHNM.tid)
     pub tid: u32,
-    // @@protoc_insertion_point(field:ADBAIJKMHNM.rank)
-    pub rank: u32,
-    // @@protoc_insertion_point(field:ADBAIJKMHNM.exp)
-    pub exp: u32,
-    // @@protoc_insertion_point(field:ADBAIJKMHNM.promotion)
-    pub promotion: u32,
     // @@protoc_insertion_point(field:ADBAIJKMHNM.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:ADBAIJKMHNM.exp)
+    pub exp: u32,
+    // @@protoc_insertion_point(field:ADBAIJKMHNM.rank)
+    pub rank: u32,
+    // @@protoc_insertion_point(field:ADBAIJKMHNM.promotion)
+    pub promotion: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ADBAIJKMHNM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,9 +63,9 @@ impl ADBAIJKMHNM {
             |m: &mut ADBAIJKMHNM| { &mut m.tid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "rank",
-            |m: &ADBAIJKMHNM| { &m.rank },
-            |m: &mut ADBAIJKMHNM| { &mut m.rank },
+            "level",
+            |m: &ADBAIJKMHNM| { &m.level },
+            |m: &mut ADBAIJKMHNM| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "exp",
@@ -73,14 +73,14 @@ impl ADBAIJKMHNM {
             |m: &mut ADBAIJKMHNM| { &mut m.exp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "rank",
+            |m: &ADBAIJKMHNM| { &m.rank },
+            |m: &mut ADBAIJKMHNM| { &mut m.rank },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "promotion",
             |m: &ADBAIJKMHNM| { &m.promotion },
             |m: &mut ADBAIJKMHNM| { &mut m.promotion },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &ADBAIJKMHNM| { &m.level },
-            |m: &mut ADBAIJKMHNM| { &mut m.level },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ADBAIJKMHNM>(
             "ADBAIJKMHNM",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for ADBAIJKMHNM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                16 => {
                     self.tid = is.read_uint32()?;
                 },
                 104 => {
-                    self.rank = is.read_uint32()?;
+                    self.level = is.read_uint32()?;
                 },
-                40 => {
+                72 => {
                     self.exp = is.read_uint32()?;
                 },
-                8 => {
-                    self.promotion = is.read_uint32()?;
+                32 => {
+                    self.rank = is.read_uint32()?;
                 },
-                96 => {
-                    self.level = is.read_uint32()?;
+                48 => {
+                    self.promotion = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,19 +128,19 @@ impl ::protobuf::Message for ADBAIJKMHNM {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.tid != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.tid);
-        }
-        if self.rank != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.rank);
-        }
-        if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.exp);
-        }
-        if self.promotion != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.promotion);
+            my_size += ::protobuf::rt::uint32_size(2, self.tid);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.level);
+            my_size += ::protobuf::rt::uint32_size(13, self.level);
+        }
+        if self.exp != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.exp);
+        }
+        if self.rank != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.rank);
+        }
+        if self.promotion != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.promotion);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,19 +149,19 @@ impl ::protobuf::Message for ADBAIJKMHNM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.tid != 0 {
-            os.write_uint32(8, self.tid)?;
-        }
-        if self.rank != 0 {
-            os.write_uint32(13, self.rank)?;
-        }
-        if self.exp != 0 {
-            os.write_uint32(5, self.exp)?;
-        }
-        if self.promotion != 0 {
-            os.write_uint32(1, self.promotion)?;
+            os.write_uint32(2, self.tid)?;
         }
         if self.level != 0 {
-            os.write_uint32(12, self.level)?;
+            os.write_uint32(13, self.level)?;
+        }
+        if self.exp != 0 {
+            os.write_uint32(9, self.exp)?;
+        }
+        if self.rank != 0 {
+            os.write_uint32(4, self.rank)?;
+        }
+        if self.promotion != 0 {
+            os.write_uint32(6, self.promotion)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,20 +181,20 @@ impl ::protobuf::Message for ADBAIJKMHNM {
 
     fn clear(&mut self) {
         self.tid = 0;
-        self.rank = 0;
-        self.exp = 0;
-        self.promotion = 0;
         self.level = 0;
+        self.exp = 0;
+        self.rank = 0;
+        self.promotion = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ADBAIJKMHNM {
         static instance: ADBAIJKMHNM = ADBAIJKMHNM {
             tid: 0,
-            rank: 0,
-            exp: 0,
-            promotion: 0,
             level: 0,
+            exp: 0,
+            rank: 0,
+            promotion: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,11 +219,10 @@ impl ::protobuf::reflect::ProtobufValue for ADBAIJKMHNM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ADBAIJKMHNM.proto\"y\n\x0bADBAIJKMHNM\x12\x10\n\x03tid\x18\x08\x20\
-    \x01(\rR\x03tid\x12\x12\n\x04rank\x18\r\x20\x01(\rR\x04rank\x12\x10\n\
-    \x03exp\x18\x05\x20\x01(\rR\x03exp\x12\x1c\n\tpromotion\x18\x01\x20\x01(\
-    \rR\tpromotion\x12\x14\n\x05level\x18\x0c\x20\x01(\rR\x05levelb\x06proto\
-    3\
+    \n\x11ADBAIJKMHNM.proto\"y\n\x0bADBAIJKMHNM\x12\x10\n\x03tid\x18\x02\x20\
+    \x01(\rR\x03tid\x12\x14\n\x05level\x18\r\x20\x01(\rR\x05level\x12\x10\n\
+    \x03exp\x18\t\x20\x01(\rR\x03exp\x12\x12\n\x04rank\x18\x04\x20\x01(\rR\
+    \x04rank\x12\x1c\n\tpromotion\x18\x06\x20\x01(\rR\tpromotionb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

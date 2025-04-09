@@ -79,10 +79,10 @@ impl ::protobuf::Message for ChessRogueQuestFinishNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                72 => {
                     self.JLFABHHNHCM = is.read_uint32()?;
                 },
-                64 => {
+                48 => {
                     self.NNJCCFEINDO = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for ChessRogueQuestFinishNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.JLFABHHNHCM != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.JLFABHHNHCM);
+            my_size += ::protobuf::rt::uint32_size(9, self.JLFABHHNHCM);
         }
         if self.NNJCCFEINDO != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.NNJCCFEINDO);
+            my_size += ::protobuf::rt::uint32_size(6, self.NNJCCFEINDO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for ChessRogueQuestFinishNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.JLFABHHNHCM != 0 {
-            os.write_uint32(4, self.JLFABHHNHCM)?;
+            os.write_uint32(9, self.JLFABHHNHCM)?;
         }
         if self.NNJCCFEINDO != 0 {
-            os.write_uint32(8, self.NNJCCFEINDO)?;
+            os.write_uint32(6, self.NNJCCFEINDO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueQuestFinishNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!ChessRogueQuestFinishNotify.proto\"a\n\x1bChessRogueQuestFinishNotify\
-    \x12\x20\n\x0bJLFABHHNHCM\x18\x04\x20\x01(\rR\x0bJLFABHHNHCM\x12\x20\n\
-    \x0bNNJCCFEINDO\x18\x08\x20\x01(\rR\x0bNNJCCFEINDOb\x06proto3\
+    \x12\x20\n\x0bJLFABHHNHCM\x18\t\x20\x01(\rR\x0bJLFABHHNHCM\x12\x20\n\x0b\
+    NNJCCFEINDO\x18\x06\x20\x01(\rR\x0bNNJCCFEINDOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

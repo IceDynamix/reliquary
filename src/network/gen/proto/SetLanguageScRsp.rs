@@ -79,10 +79,10 @@ impl ::protobuf::Message for SetLanguageScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                120 => {
                     self.FADPDIBKNBI = is.read_enum_or_unknown()?;
                 },
-                64 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for SetLanguageScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.FADPDIBKNBI != ::protobuf::EnumOrUnknown::new(super::HMPKDADOODB::HMPKDADOODB::LANGUAGE_NONE) {
-            my_size += ::protobuf::rt::int32_size(12, self.FADPDIBKNBI.value());
+            my_size += ::protobuf::rt::int32_size(15, self.FADPDIBKNBI.value());
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for SetLanguageScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.FADPDIBKNBI != ::protobuf::EnumOrUnknown::new(super::HMPKDADOODB::HMPKDADOODB::LANGUAGE_NONE) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.FADPDIBKNBI))?;
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.FADPDIBKNBI))?;
         }
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for SetLanguageScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16SetLanguageScRsp.proto\x1a\x11HMPKDADOODB.proto\"\\\n\x10SetLangua\
-    geScRsp\x12.\n\x0bFADPDIBKNBI\x18\x0c\x20\x01(\x0e2\x0c.HMPKDADOODBR\x0b\
-    FADPDIBKNBI\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcodeb\x06prot\
+    geScRsp\x12.\n\x0bFADPDIBKNBI\x18\x0f\x20\x01(\x0e2\x0c.HMPKDADOODBR\x0b\
+    FADPDIBKNBI\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcodeb\x06prot\
     o3\
 ";
 

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OKCNDIEKLPM {
     // message fields
+    // @@protoc_insertion_point(field:OKCNDIEKLPM.PLIKADKKLGD)
+    pub PLIKADKKLGD: ::protobuf::EnumOrUnknown<super::FeverTimeBattleRank::FeverTimeBattleRank>,
     // @@protoc_insertion_point(field:OKCNDIEKLPM.NLPKLPCCJPL)
     pub NLPKLPCCJPL: u32,
     // @@protoc_insertion_point(field:OKCNDIEKLPM.JBOLAAFDKAN)
     pub JBOLAAFDKAN: u32,
-    // @@protoc_insertion_point(field:OKCNDIEKLPM.PLIKADKKLGD)
-    pub PLIKADKKLGD: ::protobuf::EnumOrUnknown<super::FeverTimeBattleRank::FeverTimeBattleRank>,
     // special fields
     // @@protoc_insertion_point(special_field:OKCNDIEKLPM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl OKCNDIEKLPM {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PLIKADKKLGD",
+            |m: &OKCNDIEKLPM| { &m.PLIKADKKLGD },
+            |m: &mut OKCNDIEKLPM| { &mut m.PLIKADKKLGD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NLPKLPCCJPL",
             |m: &OKCNDIEKLPM| { &m.NLPKLPCCJPL },
             |m: &mut OKCNDIEKLPM| { &mut m.NLPKLPCCJPL },
@@ -62,11 +67,6 @@ impl OKCNDIEKLPM {
             "JBOLAAFDKAN",
             |m: &OKCNDIEKLPM| { &m.JBOLAAFDKAN },
             |m: &mut OKCNDIEKLPM| { &mut m.JBOLAAFDKAN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PLIKADKKLGD",
-            |m: &OKCNDIEKLPM| { &m.PLIKADKKLGD },
-            |m: &mut OKCNDIEKLPM| { &mut m.PLIKADKKLGD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OKCNDIEKLPM>(
             "OKCNDIEKLPM",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for OKCNDIEKLPM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                40 => {
+                    self.PLIKADKKLGD = is.read_enum_or_unknown()?;
+                },
+                24 => {
                     self.NLPKLPCCJPL = is.read_uint32()?;
                 },
-                80 => {
-                    self.JBOLAAFDKAN = is.read_uint32()?;
-                },
                 88 => {
-                    self.PLIKADKKLGD = is.read_enum_or_unknown()?;
+                    self.JBOLAAFDKAN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for OKCNDIEKLPM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.PLIKADKKLGD != ::protobuf::EnumOrUnknown::new(super::FeverTimeBattleRank::FeverTimeBattleRank::FEVER_TIME_BATTLE_RANK_C) {
+            my_size += ::protobuf::rt::int32_size(5, self.PLIKADKKLGD.value());
+        }
         if self.NLPKLPCCJPL != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.NLPKLPCCJPL);
+            my_size += ::protobuf::rt::uint32_size(3, self.NLPKLPCCJPL);
         }
         if self.JBOLAAFDKAN != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.JBOLAAFDKAN);
-        }
-        if self.PLIKADKKLGD != ::protobuf::EnumOrUnknown::new(super::FeverTimeBattleRank::FeverTimeBattleRank::FEVER_TIME_BATTLE_RANK_C) {
-            my_size += ::protobuf::rt::int32_size(11, self.PLIKADKKLGD.value());
+            my_size += ::protobuf::rt::uint32_size(11, self.JBOLAAFDKAN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for OKCNDIEKLPM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.PLIKADKKLGD != ::protobuf::EnumOrUnknown::new(super::FeverTimeBattleRank::FeverTimeBattleRank::FEVER_TIME_BATTLE_RANK_C) {
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.PLIKADKKLGD))?;
+        }
         if self.NLPKLPCCJPL != 0 {
-            os.write_uint32(15, self.NLPKLPCCJPL)?;
+            os.write_uint32(3, self.NLPKLPCCJPL)?;
         }
         if self.JBOLAAFDKAN != 0 {
-            os.write_uint32(10, self.JBOLAAFDKAN)?;
-        }
-        if self.PLIKADKKLGD != ::protobuf::EnumOrUnknown::new(super::FeverTimeBattleRank::FeverTimeBattleRank::FEVER_TIME_BATTLE_RANK_C) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.PLIKADKKLGD))?;
+            os.write_uint32(11, self.JBOLAAFDKAN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for OKCNDIEKLPM {
     }
 
     fn clear(&mut self) {
+        self.PLIKADKKLGD = ::protobuf::EnumOrUnknown::new(super::FeverTimeBattleRank::FeverTimeBattleRank::FEVER_TIME_BATTLE_RANK_C);
         self.NLPKLPCCJPL = 0;
         self.JBOLAAFDKAN = 0;
-        self.PLIKADKKLGD = ::protobuf::EnumOrUnknown::new(super::FeverTimeBattleRank::FeverTimeBattleRank::FEVER_TIME_BATTLE_RANK_C);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OKCNDIEKLPM {
         static instance: OKCNDIEKLPM = OKCNDIEKLPM {
+            PLIKADKKLGD: ::protobuf::EnumOrUnknown::from_i32(0),
             NLPKLPCCJPL: 0,
             JBOLAAFDKAN: 0,
-            PLIKADKKLGD: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for OKCNDIEKLPM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OKCNDIEKLPM.proto\x1a\x19FeverTimeBattleRank.proto\"\x89\x01\n\x0b\
-    OKCNDIEKLPM\x12\x20\n\x0bNLPKLPCCJPL\x18\x0f\x20\x01(\rR\x0bNLPKLPCCJPL\
-    \x12\x20\n\x0bJBOLAAFDKAN\x18\n\x20\x01(\rR\x0bJBOLAAFDKAN\x126\n\x0bPLI\
-    KADKKLGD\x18\x0b\x20\x01(\x0e2\x14.FeverTimeBattleRankR\x0bPLIKADKKLGDb\
+    OKCNDIEKLPM\x126\n\x0bPLIKADKKLGD\x18\x05\x20\x01(\x0e2\x14.FeverTimeBat\
+    tleRankR\x0bPLIKADKKLGD\x12\x20\n\x0bNLPKLPCCJPL\x18\x03\x20\x01(\rR\x0b\
+    NLPKLPCCJPL\x12\x20\n\x0bJBOLAAFDKAN\x18\x0b\x20\x01(\rR\x0bJBOLAAFDKANb\
     \x06proto3\
 ";
 

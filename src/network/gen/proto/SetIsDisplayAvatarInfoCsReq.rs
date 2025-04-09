@@ -72,7 +72,7 @@ impl ::protobuf::Message for SetIsDisplayAvatarInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                96 => {
                     self.GMLFDDKDGPO = is.read_bool()?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for SetIsDisplayAvatarInfoCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.GMLFDDKDGPO != false {
-            os.write_bool(6, self.GMLFDDKDGPO)?;
+            os.write_bool(12, self.GMLFDDKDGPO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for SetIsDisplayAvatarInfoCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!SetIsDisplayAvatarInfoCsReq.proto\"?\n\x1bSetIsDisplayAvatarInfoCsReq\
-    \x12\x20\n\x0bGMLFDDKDGPO\x18\x06\x20\x01(\x08R\x0bGMLFDDKDGPOb\x06proto\
+    \x12\x20\n\x0bGMLFDDKDGPO\x18\x0c\x20\x01(\x08R\x0bGMLFDDKDGPOb\x06proto\
     3\
 ";
 

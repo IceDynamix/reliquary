@@ -30,10 +30,10 @@ pub struct StartRaidCsReq {
     // message fields
     // @@protoc_insertion_point(field:StartRaidCsReq.IFJFCEJJBPE)
     pub IFJFCEJJBPE: u32,
-    // @@protoc_insertion_point(field:StartRaidCsReq.avatar_list)
-    pub avatar_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:StartRaidCsReq.LMPHJMDONMH)
     pub LMPHJMDONMH: u32,
+    // @@protoc_insertion_point(field:StartRaidCsReq.avatar_list)
+    pub avatar_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:StartRaidCsReq.CENIFNKNFNP)
     pub CENIFNKNFNP: u32,
     // @@protoc_insertion_point(field:StartRaidCsReq.JGEAEGMHDOC)
@@ -62,15 +62,15 @@ impl StartRaidCsReq {
             |m: &StartRaidCsReq| { &m.IFJFCEJJBPE },
             |m: &mut StartRaidCsReq| { &mut m.IFJFCEJJBPE },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_list",
-            |m: &StartRaidCsReq| { &m.avatar_list },
-            |m: &mut StartRaidCsReq| { &mut m.avatar_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LMPHJMDONMH",
             |m: &StartRaidCsReq| { &m.LMPHJMDONMH },
             |m: &mut StartRaidCsReq| { &mut m.LMPHJMDONMH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "avatar_list",
+            |m: &StartRaidCsReq| { &m.avatar_list },
+            |m: &mut StartRaidCsReq| { &mut m.avatar_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CENIFNKNFNP",
@@ -100,22 +100,22 @@ impl ::protobuf::Message for StartRaidCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                8 => {
                     self.IFJFCEJJBPE = is.read_uint32()?;
                 },
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.avatar_list)?;
-                },
-                32 => {
-                    self.avatar_list.push(is.read_uint32()?);
-                },
-                112 => {
+                16 => {
                     self.LMPHJMDONMH = is.read_uint32()?;
                 },
-                56 => {
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.avatar_list)?;
+                },
+                64 => {
+                    self.avatar_list.push(is.read_uint32()?);
+                },
+                40 => {
                     self.CENIFNKNFNP = is.read_uint32()?;
                 },
-                8 => {
+                112 => {
                     self.JGEAEGMHDOC = is.read_uint32()?;
                 },
                 tag => {
@@ -131,17 +131,17 @@ impl ::protobuf::Message for StartRaidCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.IFJFCEJJBPE != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.IFJFCEJJBPE);
+            my_size += ::protobuf::rt::uint32_size(1, self.IFJFCEJJBPE);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.avatar_list);
         if self.LMPHJMDONMH != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.LMPHJMDONMH);
+            my_size += ::protobuf::rt::uint32_size(2, self.LMPHJMDONMH);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.avatar_list);
         if self.CENIFNKNFNP != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.CENIFNKNFNP);
+            my_size += ::protobuf::rt::uint32_size(5, self.CENIFNKNFNP);
         }
         if self.JGEAEGMHDOC != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.JGEAEGMHDOC);
+            my_size += ::protobuf::rt::uint32_size(14, self.JGEAEGMHDOC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,17 +150,17 @@ impl ::protobuf::Message for StartRaidCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IFJFCEJJBPE != 0 {
-            os.write_uint32(13, self.IFJFCEJJBPE)?;
+            os.write_uint32(1, self.IFJFCEJJBPE)?;
         }
-        os.write_repeated_packed_uint32(4, &self.avatar_list)?;
         if self.LMPHJMDONMH != 0 {
-            os.write_uint32(14, self.LMPHJMDONMH)?;
+            os.write_uint32(2, self.LMPHJMDONMH)?;
         }
+        os.write_repeated_packed_uint32(8, &self.avatar_list)?;
         if self.CENIFNKNFNP != 0 {
-            os.write_uint32(7, self.CENIFNKNFNP)?;
+            os.write_uint32(5, self.CENIFNKNFNP)?;
         }
         if self.JGEAEGMHDOC != 0 {
-            os.write_uint32(1, self.JGEAEGMHDOC)?;
+            os.write_uint32(14, self.JGEAEGMHDOC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,8 +180,8 @@ impl ::protobuf::Message for StartRaidCsReq {
 
     fn clear(&mut self) {
         self.IFJFCEJJBPE = 0;
-        self.avatar_list.clear();
         self.LMPHJMDONMH = 0;
+        self.avatar_list.clear();
         self.CENIFNKNFNP = 0;
         self.JGEAEGMHDOC = 0;
         self.special_fields.clear();
@@ -190,8 +190,8 @@ impl ::protobuf::Message for StartRaidCsReq {
     fn default_instance() -> &'static StartRaidCsReq {
         static instance: StartRaidCsReq = StartRaidCsReq {
             IFJFCEJJBPE: 0,
-            avatar_list: ::std::vec::Vec::new(),
             LMPHJMDONMH: 0,
+            avatar_list: ::std::vec::Vec::new(),
             CENIFNKNFNP: 0,
             JGEAEGMHDOC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for StartRaidCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14StartRaidCsReq.proto\"\xb9\x01\n\x0eStartRaidCsReq\x12\x20\n\x0bIF\
-    JFCEJJBPE\x18\r\x20\x01(\rR\x0bIFJFCEJJBPE\x12\x1f\n\x0bavatar_list\x18\
-    \x04\x20\x03(\rR\navatarList\x12\x20\n\x0bLMPHJMDONMH\x18\x0e\x20\x01(\r\
-    R\x0bLMPHJMDONMH\x12\x20\n\x0bCENIFNKNFNP\x18\x07\x20\x01(\rR\x0bCENIFNK\
-    NFNP\x12\x20\n\x0bJGEAEGMHDOC\x18\x01\x20\x01(\rR\x0bJGEAEGMHDOCb\x06pro\
-    to3\
+    JFCEJJBPE\x18\x01\x20\x01(\rR\x0bIFJFCEJJBPE\x12\x20\n\x0bLMPHJMDONMH\
+    \x18\x02\x20\x01(\rR\x0bLMPHJMDONMH\x12\x1f\n\x0bavatar_list\x18\x08\x20\
+    \x03(\rR\navatarList\x12\x20\n\x0bCENIFNKNFNP\x18\x05\x20\x01(\rR\x0bCEN\
+    IFNKNFNP\x12\x20\n\x0bJGEAEGMHDOC\x18\x0e\x20\x01(\rR\x0bJGEAEGMHDOCb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

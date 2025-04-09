@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetStoryLineInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetStoryLineInfoScRsp.FMIHHBHFHOA)
-    pub FMIHHBHFHOA: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetStoryLineInfoScRsp.LGHCAHBBCAM)
-    pub LGHCAHBBCAM: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetStoryLineInfoScRsp.GLHFLIEIMJK)
-    pub GLHFLIEIMJK: u32,
     // @@protoc_insertion_point(field:GetStoryLineInfoScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetStoryLineInfoScRsp.LGHCAHBBCAM)
+    pub LGHCAHBBCAM: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetStoryLineInfoScRsp.FMIHHBHFHOA)
+    pub FMIHHBHFHOA: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetStoryLineInfoScRsp.GLHFLIEIMJK)
+    pub GLHFLIEIMJK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetStoryLineInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl GetStoryLineInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FMIHHBHFHOA",
-            |m: &GetStoryLineInfoScRsp| { &m.FMIHHBHFHOA },
-            |m: &mut GetStoryLineInfoScRsp| { &mut m.FMIHHBHFHOA },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GetStoryLineInfoScRsp| { &m.retcode },
+            |m: &mut GetStoryLineInfoScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "LGHCAHBBCAM",
             |m: &GetStoryLineInfoScRsp| { &m.LGHCAHBBCAM },
             |m: &mut GetStoryLineInfoScRsp| { &mut m.LGHCAHBBCAM },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FMIHHBHFHOA",
+            |m: &GetStoryLineInfoScRsp| { &m.FMIHHBHFHOA },
+            |m: &mut GetStoryLineInfoScRsp| { &mut m.FMIHHBHFHOA },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GLHFLIEIMJK",
             |m: &GetStoryLineInfoScRsp| { &m.GLHFLIEIMJK },
             |m: &mut GetStoryLineInfoScRsp| { &mut m.GLHFLIEIMJK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetStoryLineInfoScRsp| { &m.retcode },
-            |m: &mut GetStoryLineInfoScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetStoryLineInfoScRsp>(
             "GetStoryLineInfoScRsp",
@@ -93,23 +93,23 @@ impl ::protobuf::Message for GetStoryLineInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FMIHHBHFHOA)?;
+                104 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                64 => {
-                    self.FMIHHBHFHOA.push(is.read_uint32()?);
-                },
-                98 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.LGHCAHBBCAM)?;
                 },
-                96 => {
+                16 => {
                     self.LGHCAHBBCAM.push(is.read_uint32()?);
                 },
-                104 => {
-                    self.GLHFLIEIMJK = is.read_uint32()?;
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.FMIHHBHFHOA)?;
                 },
-                72 => {
-                    self.retcode = is.read_uint32()?;
+                88 => {
+                    self.FMIHHBHFHOA.push(is.read_uint32()?);
+                },
+                8 => {
+                    self.GLHFLIEIMJK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -123,13 +123,13 @@ impl ::protobuf::Message for GetStoryLineInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.FMIHHBHFHOA);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.LGHCAHBBCAM);
-        if self.GLHFLIEIMJK != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.GLHFLIEIMJK);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.LGHCAHBBCAM);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.FMIHHBHFHOA);
+        if self.GLHFLIEIMJK != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.GLHFLIEIMJK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,13 +137,13 @@ impl ::protobuf::Message for GetStoryLineInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(8, &self.FMIHHBHFHOA)?;
-        os.write_repeated_packed_uint32(12, &self.LGHCAHBBCAM)?;
-        if self.GLHFLIEIMJK != 0 {
-            os.write_uint32(13, self.GLHFLIEIMJK)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
+        }
+        os.write_repeated_packed_uint32(2, &self.LGHCAHBBCAM)?;
+        os.write_repeated_packed_uint32(11, &self.FMIHHBHFHOA)?;
+        if self.GLHFLIEIMJK != 0 {
+            os.write_uint32(1, self.GLHFLIEIMJK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -162,19 +162,19 @@ impl ::protobuf::Message for GetStoryLineInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.FMIHHBHFHOA.clear();
-        self.LGHCAHBBCAM.clear();
-        self.GLHFLIEIMJK = 0;
         self.retcode = 0;
+        self.LGHCAHBBCAM.clear();
+        self.FMIHHBHFHOA.clear();
+        self.GLHFLIEIMJK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetStoryLineInfoScRsp {
         static instance: GetStoryLineInfoScRsp = GetStoryLineInfoScRsp {
-            FMIHHBHFHOA: ::std::vec::Vec::new(),
-            LGHCAHBBCAM: ::std::vec::Vec::new(),
-            GLHFLIEIMJK: 0,
             retcode: 0,
+            LGHCAHBBCAM: ::std::vec::Vec::new(),
+            FMIHHBHFHOA: ::std::vec::Vec::new(),
+            GLHFLIEIMJK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -200,10 +200,10 @@ impl ::protobuf::reflect::ProtobufValue for GetStoryLineInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bGetStoryLineInfoScRsp.proto\"\x97\x01\n\x15GetStoryLineInfoScRsp\
-    \x12\x20\n\x0bFMIHHBHFHOA\x18\x08\x20\x03(\rR\x0bFMIHHBHFHOA\x12\x20\n\
-    \x0bLGHCAHBBCAM\x18\x0c\x20\x03(\rR\x0bLGHCAHBBCAM\x12\x20\n\x0bGLHFLIEI\
-    MJK\x18\r\x20\x01(\rR\x0bGLHFLIEIMJK\x12\x18\n\x07retcode\x18\t\x20\x01(\
-    \rR\x07retcodeb\x06proto3\
+    \x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x12\x20\n\x0bLGHCAHBB\
+    CAM\x18\x02\x20\x03(\rR\x0bLGHCAHBBCAM\x12\x20\n\x0bFMIHHBHFHOA\x18\x0b\
+    \x20\x03(\rR\x0bFMIHHBHFHOA\x12\x20\n\x0bGLHFLIEIMJK\x18\x01\x20\x01(\rR\
+    \x0bGLHFLIEIMJKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

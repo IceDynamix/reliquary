@@ -79,10 +79,10 @@ impl ::protobuf::Message for HeliobusSnsReadScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                8 => {
                     self.IHKEJEBCEIB = is.read_uint32()?;
                 },
-                32 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for HeliobusSnsReadScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.IHKEJEBCEIB != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.IHKEJEBCEIB);
+            my_size += ::protobuf::rt::uint32_size(1, self.IHKEJEBCEIB);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for HeliobusSnsReadScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IHKEJEBCEIB != 0 {
-            os.write_uint32(12, self.IHKEJEBCEIB)?;
+            os.write_uint32(1, self.IHKEJEBCEIB)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for HeliobusSnsReadScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aHeliobusSnsReadScRsp.proto\"R\n\x14HeliobusSnsReadScRsp\x12\x20\n\
-    \x0bIHKEJEBCEIB\x18\x0c\x20\x01(\rR\x0bIHKEJEBCEIB\x12\x18\n\x07retcode\
-    \x18\x04\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x0bIHKEJEBCEIB\x18\x01\x20\x01(\rR\x0bIHKEJEBCEIB\x12\x18\n\x07retcode\
+    \x18\x03\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

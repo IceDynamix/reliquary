@@ -30,14 +30,14 @@ pub struct IOMOPENEMBF {
     // message fields
     // @@protoc_insertion_point(field:IOMOPENEMBF.FANOKEMBMPB)
     pub FANOKEMBMPB: u32,
-    // @@protoc_insertion_point(field:IOMOPENEMBF.NKIOIIOIAOG)
-    pub NKIOIIOIAOG: ::std::string::String,
-    // @@protoc_insertion_point(field:IOMOPENEMBF.NLFNJPMACPM)
-    pub NLFNJPMACPM: u32,
     // @@protoc_insertion_point(field:IOMOPENEMBF.HBJKEEBDJML)
     pub HBJKEEBDJML: ::std::string::String,
     // @@protoc_insertion_point(field:IOMOPENEMBF.ADINNBPINAK)
     pub ADINNBPINAK: u32,
+    // @@protoc_insertion_point(field:IOMOPENEMBF.NKIOIIOIAOG)
+    pub NKIOIIOIAOG: ::std::string::String,
+    // @@protoc_insertion_point(field:IOMOPENEMBF.NLFNJPMACPM)
+    pub NLFNJPMACPM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:IOMOPENEMBF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,16 +63,6 @@ impl IOMOPENEMBF {
             |m: &mut IOMOPENEMBF| { &mut m.FANOKEMBMPB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NKIOIIOIAOG",
-            |m: &IOMOPENEMBF| { &m.NKIOIIOIAOG },
-            |m: &mut IOMOPENEMBF| { &mut m.NKIOIIOIAOG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NLFNJPMACPM",
-            |m: &IOMOPENEMBF| { &m.NLFNJPMACPM },
-            |m: &mut IOMOPENEMBF| { &mut m.NLFNJPMACPM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HBJKEEBDJML",
             |m: &IOMOPENEMBF| { &m.HBJKEEBDJML },
             |m: &mut IOMOPENEMBF| { &mut m.HBJKEEBDJML },
@@ -81,6 +71,16 @@ impl IOMOPENEMBF {
             "ADINNBPINAK",
             |m: &IOMOPENEMBF| { &m.ADINNBPINAK },
             |m: &mut IOMOPENEMBF| { &mut m.ADINNBPINAK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NKIOIIOIAOG",
+            |m: &IOMOPENEMBF| { &m.NKIOIIOIAOG },
+            |m: &mut IOMOPENEMBF| { &mut m.NKIOIIOIAOG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NLFNJPMACPM",
+            |m: &IOMOPENEMBF| { &m.NLFNJPMACPM },
+            |m: &mut IOMOPENEMBF| { &mut m.NLFNJPMACPM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IOMOPENEMBF>(
             "IOMOPENEMBF",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for IOMOPENEMBF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                48 => {
                     self.FANOKEMBMPB = is.read_uint32()?;
-                },
-                66 => {
-                    self.NKIOIIOIAOG = is.read_string()?;
-                },
-                104 => {
-                    self.NLFNJPMACPM = is.read_uint32()?;
                 },
                 42 => {
                     self.HBJKEEBDJML = is.read_string()?;
                 },
-                48 => {
+                16 => {
                     self.ADINNBPINAK = is.read_uint32()?;
+                },
+                82 => {
+                    self.NKIOIIOIAOG = is.read_string()?;
+                },
+                96 => {
+                    self.NLFNJPMACPM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,19 +128,19 @@ impl ::protobuf::Message for IOMOPENEMBF {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.FANOKEMBMPB != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.FANOKEMBMPB);
-        }
-        if !self.NKIOIIOIAOG.is_empty() {
-            my_size += ::protobuf::rt::string_size(8, &self.NKIOIIOIAOG);
-        }
-        if self.NLFNJPMACPM != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.NLFNJPMACPM);
+            my_size += ::protobuf::rt::uint32_size(6, self.FANOKEMBMPB);
         }
         if !self.HBJKEEBDJML.is_empty() {
             my_size += ::protobuf::rt::string_size(5, &self.HBJKEEBDJML);
         }
         if self.ADINNBPINAK != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.ADINNBPINAK);
+            my_size += ::protobuf::rt::uint32_size(2, self.ADINNBPINAK);
+        }
+        if !self.NKIOIIOIAOG.is_empty() {
+            my_size += ::protobuf::rt::string_size(10, &self.NKIOIIOIAOG);
+        }
+        if self.NLFNJPMACPM != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.NLFNJPMACPM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,19 +149,19 @@ impl ::protobuf::Message for IOMOPENEMBF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.FANOKEMBMPB != 0 {
-            os.write_uint32(10, self.FANOKEMBMPB)?;
-        }
-        if !self.NKIOIIOIAOG.is_empty() {
-            os.write_string(8, &self.NKIOIIOIAOG)?;
-        }
-        if self.NLFNJPMACPM != 0 {
-            os.write_uint32(13, self.NLFNJPMACPM)?;
+            os.write_uint32(6, self.FANOKEMBMPB)?;
         }
         if !self.HBJKEEBDJML.is_empty() {
             os.write_string(5, &self.HBJKEEBDJML)?;
         }
         if self.ADINNBPINAK != 0 {
-            os.write_uint32(6, self.ADINNBPINAK)?;
+            os.write_uint32(2, self.ADINNBPINAK)?;
+        }
+        if !self.NKIOIIOIAOG.is_empty() {
+            os.write_string(10, &self.NKIOIIOIAOG)?;
+        }
+        if self.NLFNJPMACPM != 0 {
+            os.write_uint32(12, self.NLFNJPMACPM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,20 +181,20 @@ impl ::protobuf::Message for IOMOPENEMBF {
 
     fn clear(&mut self) {
         self.FANOKEMBMPB = 0;
-        self.NKIOIIOIAOG.clear();
-        self.NLFNJPMACPM = 0;
         self.HBJKEEBDJML.clear();
         self.ADINNBPINAK = 0;
+        self.NKIOIIOIAOG.clear();
+        self.NLFNJPMACPM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IOMOPENEMBF {
         static instance: IOMOPENEMBF = IOMOPENEMBF {
             FANOKEMBMPB: 0,
-            NKIOIIOIAOG: ::std::string::String::new(),
-            NLFNJPMACPM: 0,
             HBJKEEBDJML: ::std::string::String::new(),
             ADINNBPINAK: 0,
+            NKIOIIOIAOG: ::std::string::String::new(),
+            NLFNJPMACPM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,11 +220,10 @@ impl ::protobuf::reflect::ProtobufValue for IOMOPENEMBF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IOMOPENEMBF.proto\"\xb7\x01\n\x0bIOMOPENEMBF\x12\x20\n\x0bFANOKEMB\
-    MPB\x18\n\x20\x01(\rR\x0bFANOKEMBMPB\x12\x20\n\x0bNKIOIIOIAOG\x18\x08\
-    \x20\x01(\tR\x0bNKIOIIOIAOG\x12\x20\n\x0bNLFNJPMACPM\x18\r\x20\x01(\rR\
-    \x0bNLFNJPMACPM\x12\x20\n\x0bHBJKEEBDJML\x18\x05\x20\x01(\tR\x0bHBJKEEBD\
-    JML\x12\x20\n\x0bADINNBPINAK\x18\x06\x20\x01(\rR\x0bADINNBPINAKb\x06prot\
-    o3\
+    MPB\x18\x06\x20\x01(\rR\x0bFANOKEMBMPB\x12\x20\n\x0bHBJKEEBDJML\x18\x05\
+    \x20\x01(\tR\x0bHBJKEEBDJML\x12\x20\n\x0bADINNBPINAK\x18\x02\x20\x01(\rR\
+    \x0bADINNBPINAK\x12\x20\n\x0bNKIOIIOIAOG\x18\n\x20\x01(\tR\x0bNKIOIIOIAO\
+    G\x12\x20\n\x0bNLFNJPMACPM\x18\x0c\x20\x01(\rR\x0bNLFNJPMACPMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

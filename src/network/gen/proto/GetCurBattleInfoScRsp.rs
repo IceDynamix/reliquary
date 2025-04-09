@@ -32,10 +32,10 @@ pub struct GetCurBattleInfoScRsp {
     pub PBPHJBAFGBB: ::protobuf::MessageField<super::BBDIKGEJBMP::BBDIKGEJBMP>,
     // @@protoc_insertion_point(field:GetCurBattleInfoScRsp.HDDNDOCNEFO)
     pub HDDNDOCNEFO: ::protobuf::EnumOrUnknown<super::MPEBBEINPDA::MPEBBEINPDA>,
-    // @@protoc_insertion_point(field:GetCurBattleInfoScRsp.IBPJKFFFLNG)
-    pub IBPJKFFFLNG: u32,
     // @@protoc_insertion_point(field:GetCurBattleInfoScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetCurBattleInfoScRsp.IBPJKFFFLNG)
+    pub IBPJKFFFLNG: u32,
     // @@protoc_insertion_point(field:GetCurBattleInfoScRsp.BANFFJDIPIE)
     pub BANFFJDIPIE: ::protobuf::MessageField<super::CMBHDGKGPGP::CMBHDGKGPGP>,
     // special fields
@@ -68,14 +68,14 @@ impl GetCurBattleInfoScRsp {
             |m: &mut GetCurBattleInfoScRsp| { &mut m.HDDNDOCNEFO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IBPJKFFFLNG",
-            |m: &GetCurBattleInfoScRsp| { &m.IBPJKFFFLNG },
-            |m: &mut GetCurBattleInfoScRsp| { &mut m.IBPJKFFFLNG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetCurBattleInfoScRsp| { &m.retcode },
             |m: &mut GetCurBattleInfoScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IBPJKFFFLNG",
+            |m: &GetCurBattleInfoScRsp| { &m.IBPJKFFFLNG },
+            |m: &mut GetCurBattleInfoScRsp| { &mut m.IBPJKFFFLNG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CMBHDGKGPGP::CMBHDGKGPGP>(
             "BANFFJDIPIE",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for GetCurBattleInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.PBPHJBAFGBB)?;
                 },
-                88 => {
+                64 => {
                     self.HDDNDOCNEFO = is.read_enum_or_unknown()?;
                 },
-                40 => {
-                    self.IBPJKFFFLNG = is.read_uint32()?;
-                },
-                24 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
-                58 => {
+                32 => {
+                    self.IBPJKFFFLNG = is.read_uint32()?;
+                },
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BANFFJDIPIE)?;
                 },
                 tag => {
@@ -132,13 +132,13 @@ impl ::protobuf::Message for GetCurBattleInfoScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.HDDNDOCNEFO != ::protobuf::EnumOrUnknown::new(super::MPEBBEINPDA::MPEBBEINPDA::BATTLE_END_NONE) {
-            my_size += ::protobuf::rt::int32_size(11, self.HDDNDOCNEFO.value());
-        }
-        if self.IBPJKFFFLNG != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.IBPJKFFFLNG);
+            my_size += ::protobuf::rt::int32_size(8, self.HDDNDOCNEFO.value());
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+        }
+        if self.IBPJKFFFLNG != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.IBPJKFFFLNG);
         }
         if let Some(v) = self.BANFFJDIPIE.as_ref() {
             let len = v.compute_size();
@@ -151,19 +151,19 @@ impl ::protobuf::Message for GetCurBattleInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.PBPHJBAFGBB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if self.HDDNDOCNEFO != ::protobuf::EnumOrUnknown::new(super::MPEBBEINPDA::MPEBBEINPDA::BATTLE_END_NONE) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.HDDNDOCNEFO))?;
-        }
-        if self.IBPJKFFFLNG != 0 {
-            os.write_uint32(5, self.IBPJKFFFLNG)?;
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.HDDNDOCNEFO))?;
         }
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
+        }
+        if self.IBPJKFFFLNG != 0 {
+            os.write_uint32(4, self.IBPJKFFFLNG)?;
         }
         if let Some(v) = self.BANFFJDIPIE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::Message for GetCurBattleInfoScRsp {
     fn clear(&mut self) {
         self.PBPHJBAFGBB.clear();
         self.HDDNDOCNEFO = ::protobuf::EnumOrUnknown::new(super::MPEBBEINPDA::MPEBBEINPDA::BATTLE_END_NONE);
-        self.IBPJKFFFLNG = 0;
         self.retcode = 0;
+        self.IBPJKFFFLNG = 0;
         self.BANFFJDIPIE.clear();
         self.special_fields.clear();
     }
@@ -194,8 +194,8 @@ impl ::protobuf::Message for GetCurBattleInfoScRsp {
         static instance: GetCurBattleInfoScRsp = GetCurBattleInfoScRsp {
             PBPHJBAFGBB: ::protobuf::MessageField::none(),
             HDDNDOCNEFO: ::protobuf::EnumOrUnknown::from_i32(0),
-            IBPJKFFFLNG: 0,
             retcode: 0,
+            IBPJKFFFLNG: 0,
             BANFFJDIPIE: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -223,11 +223,11 @@ impl ::protobuf::reflect::ProtobufValue for GetCurBattleInfoScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bGetCurBattleInfoScRsp.proto\x1a\x11BBDIKGEJBMP.proto\x1a\x11CMBHDG\
     KGPGP.proto\x1a\x11MPEBBEINPDA.proto\"\xe3\x01\n\x15GetCurBattleInfoScRs\
-    p\x12.\n\x0bPBPHJBAFGBB\x18\n\x20\x01(\x0b2\x0c.BBDIKGEJBMPR\x0bPBPHJBAF\
-    GBB\x12.\n\x0bHDDNDOCNEFO\x18\x0b\x20\x01(\x0e2\x0c.MPEBBEINPDAR\x0bHDDN\
-    DOCNEFO\x12\x20\n\x0bIBPJKFFFLNG\x18\x05\x20\x01(\rR\x0bIBPJKFFFLNG\x12\
-    \x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12.\n\x0bBANFFJDIPIE\
-    \x18\x07\x20\x01(\x0b2\x0c.CMBHDGKGPGPR\x0bBANFFJDIPIEb\x06proto3\
+    p\x12.\n\x0bPBPHJBAFGBB\x18\x06\x20\x01(\x0b2\x0c.BBDIKGEJBMPR\x0bPBPHJB\
+    AFGBB\x12.\n\x0bHDDNDOCNEFO\x18\x08\x20\x01(\x0e2\x0c.MPEBBEINPDAR\x0bHD\
+    DNDOCNEFO\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\x12\x20\n\
+    \x0bIBPJKFFFLNG\x18\x04\x20\x01(\rR\x0bIBPJKFFFLNG\x12.\n\x0bBANFFJDIPIE\
+    \x18\x02\x20\x01(\x0b2\x0c.CMBHDGKGPGPR\x0bBANFFJDIPIEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

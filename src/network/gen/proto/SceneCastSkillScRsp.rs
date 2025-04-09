@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneCastSkillScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SceneCastSkillScRsp.BPMDFENIDBF)
-    pub BPMDFENIDBF: u32,
-    // @@protoc_insertion_point(field:SceneCastSkillScRsp.KGNGLGMIEBG)
-    pub KGNGLGMIEBG: ::std::vec::Vec<super::DKIJLOAKKBO::DKIJLOAKKBO>,
     // @@protoc_insertion_point(field:SceneCastSkillScRsp.BANFFJDIPIE)
     pub BANFFJDIPIE: ::protobuf::MessageField<super::CMBHDGKGPGP::CMBHDGKGPGP>,
+    // @@protoc_insertion_point(field:SceneCastSkillScRsp.BPMDFENIDBF)
+    pub BPMDFENIDBF: u32,
     // @@protoc_insertion_point(field:SceneCastSkillScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:SceneCastSkillScRsp.KGNGLGMIEBG)
+    pub KGNGLGMIEBG: ::std::vec::Vec<super::DKIJLOAKKBO::DKIJLOAKKBO>,
     // special fields
     // @@protoc_insertion_point(special_field:SceneCastSkillScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl SceneCastSkillScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BPMDFENIDBF",
-            |m: &SceneCastSkillScRsp| { &m.BPMDFENIDBF },
-            |m: &mut SceneCastSkillScRsp| { &mut m.BPMDFENIDBF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KGNGLGMIEBG",
-            |m: &SceneCastSkillScRsp| { &m.KGNGLGMIEBG },
-            |m: &mut SceneCastSkillScRsp| { &mut m.KGNGLGMIEBG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CMBHDGKGPGP::CMBHDGKGPGP>(
             "BANFFJDIPIE",
             |m: &SceneCastSkillScRsp| { &m.BANFFJDIPIE },
             |m: &mut SceneCastSkillScRsp| { &mut m.BANFFJDIPIE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BPMDFENIDBF",
+            |m: &SceneCastSkillScRsp| { &m.BPMDFENIDBF },
+            |m: &mut SceneCastSkillScRsp| { &mut m.BPMDFENIDBF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &SceneCastSkillScRsp| { &m.retcode },
             |m: &mut SceneCastSkillScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "KGNGLGMIEBG",
+            |m: &SceneCastSkillScRsp| { &m.KGNGLGMIEBG },
+            |m: &mut SceneCastSkillScRsp| { &mut m.KGNGLGMIEBG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SceneCastSkillScRsp>(
             "SceneCastSkillScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for SceneCastSkillScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.BPMDFENIDBF = is.read_uint32()?;
-                },
-                106 => {
-                    self.KGNGLGMIEBG.push(is.read_message()?);
-                },
                 74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BANFFJDIPIE)?;
                 },
-                112 => {
+                8 => {
+                    self.BPMDFENIDBF = is.read_uint32()?;
+                },
+                16 => {
                     self.retcode = is.read_uint32()?;
+                },
+                122 => {
+                    self.KGNGLGMIEBG.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,38 +117,38 @@ impl ::protobuf::Message for SceneCastSkillScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if let Some(v) = self.BANFFJDIPIE.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if self.BPMDFENIDBF != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.BPMDFENIDBF);
+            my_size += ::protobuf::rt::uint32_size(1, self.BPMDFENIDBF);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         for value in &self.KGNGLGMIEBG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.BANFFJDIPIE.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BPMDFENIDBF != 0 {
-            os.write_uint32(15, self.BPMDFENIDBF)?;
-        }
-        for v in &self.KGNGLGMIEBG {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        };
         if let Some(v) = self.BANFFJDIPIE.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+        if self.BPMDFENIDBF != 0 {
+            os.write_uint32(1, self.BPMDFENIDBF)?;
         }
+        if self.retcode != 0 {
+            os.write_uint32(2, self.retcode)?;
+        }
+        for v in &self.KGNGLGMIEBG {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -166,19 +166,19 @@ impl ::protobuf::Message for SceneCastSkillScRsp {
     }
 
     fn clear(&mut self) {
-        self.BPMDFENIDBF = 0;
-        self.KGNGLGMIEBG.clear();
         self.BANFFJDIPIE.clear();
+        self.BPMDFENIDBF = 0;
         self.retcode = 0;
+        self.KGNGLGMIEBG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneCastSkillScRsp {
         static instance: SceneCastSkillScRsp = SceneCastSkillScRsp {
-            BPMDFENIDBF: 0,
-            KGNGLGMIEBG: ::std::vec::Vec::new(),
             BANFFJDIPIE: ::protobuf::MessageField::none(),
+            BPMDFENIDBF: 0,
             retcode: 0,
+            KGNGLGMIEBG: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for SceneCastSkillScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19SceneCastSkillScRsp.proto\x1a\x11CMBHDGKGPGP.proto\x1a\x11DKIJLOAK\
-    KBO.proto\"\xb1\x01\n\x13SceneCastSkillScRsp\x12\x20\n\x0bBPMDFENIDBF\
-    \x18\x0f\x20\x01(\rR\x0bBPMDFENIDBF\x12.\n\x0bKGNGLGMIEBG\x18\r\x20\x03(\
-    \x0b2\x0c.DKIJLOAKKBOR\x0bKGNGLGMIEBG\x12.\n\x0bBANFFJDIPIE\x18\t\x20\
-    \x01(\x0b2\x0c.CMBHDGKGPGPR\x0bBANFFJDIPIE\x12\x18\n\x07retcode\x18\x0e\
-    \x20\x01(\rR\x07retcodeb\x06proto3\
+    KBO.proto\"\xb1\x01\n\x13SceneCastSkillScRsp\x12.\n\x0bBANFFJDIPIE\x18\t\
+    \x20\x01(\x0b2\x0c.CMBHDGKGPGPR\x0bBANFFJDIPIE\x12\x20\n\x0bBPMDFENIDBF\
+    \x18\x01\x20\x01(\rR\x0bBPMDFENIDBF\x12\x18\n\x07retcode\x18\x02\x20\x01\
+    (\rR\x07retcode\x12.\n\x0bKGNGLGMIEBG\x18\x0f\x20\x03(\x0b2\x0c.DKIJLOAK\
+    KBOR\x0bKGNGLGMIEBGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

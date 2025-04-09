@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CKJCFDJKDFG {
     // message fields
-    // @@protoc_insertion_point(field:CKJCFDJKDFG.AJAICBAHIPN)
-    pub AJAICBAHIPN: ::std::vec::Vec<super::RogueAdventureRoomGameplayWolfGunTarget::RogueAdventureRoomGameplayWolfGunTarget>,
     // @@protoc_insertion_point(field:CKJCFDJKDFG.DHPABBNJOLI)
     pub DHPABBNJOLI: u32,
+    // @@protoc_insertion_point(field:CKJCFDJKDFG.AJAICBAHIPN)
+    pub AJAICBAHIPN: ::std::vec::Vec<super::RogueAdventureRoomGameplayWolfGunTarget::RogueAdventureRoomGameplayWolfGunTarget>,
     // special fields
     // @@protoc_insertion_point(special_field:CKJCFDJKDFG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl CKJCFDJKDFG {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "AJAICBAHIPN",
-            |m: &CKJCFDJKDFG| { &m.AJAICBAHIPN },
-            |m: &mut CKJCFDJKDFG| { &mut m.AJAICBAHIPN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DHPABBNJOLI",
             |m: &CKJCFDJKDFG| { &m.DHPABBNJOLI },
             |m: &mut CKJCFDJKDFG| { &mut m.DHPABBNJOLI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "AJAICBAHIPN",
+            |m: &CKJCFDJKDFG| { &m.AJAICBAHIPN },
+            |m: &mut CKJCFDJKDFG| { &mut m.AJAICBAHIPN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CKJCFDJKDFG>(
             "CKJCFDJKDFG",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for CKJCFDJKDFG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.AJAICBAHIPN.push(is.read_message()?);
-                },
                 64 => {
                     self.DHPABBNJOLI = is.read_uint32()?;
+                },
+                114 => {
+                    self.AJAICBAHIPN.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for CKJCFDJKDFG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.DHPABBNJOLI != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.DHPABBNJOLI);
+        }
         for value in &self.AJAICBAHIPN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.DHPABBNJOLI != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.DHPABBNJOLI);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.AJAICBAHIPN {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
         if self.DHPABBNJOLI != 0 {
             os.write_uint32(8, self.DHPABBNJOLI)?;
         }
+        for v in &self.AJAICBAHIPN {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for CKJCFDJKDFG {
     }
 
     fn clear(&mut self) {
-        self.AJAICBAHIPN.clear();
         self.DHPABBNJOLI = 0;
+        self.AJAICBAHIPN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CKJCFDJKDFG {
         static instance: CKJCFDJKDFG = CKJCFDJKDFG {
-            AJAICBAHIPN: ::std::vec::Vec::new(),
             DHPABBNJOLI: 0,
+            AJAICBAHIPN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for CKJCFDJKDFG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CKJCFDJKDFG.proto\x1a-RogueAdventureRoomGameplayWolfGunTarget.prot\
-    o\"{\n\x0bCKJCFDJKDFG\x12J\n\x0bAJAICBAHIPN\x18\x05\x20\x03(\x0b2(.Rogue\
-    AdventureRoomGameplayWolfGunTargetR\x0bAJAICBAHIPN\x12\x20\n\x0bDHPABBNJ\
-    OLI\x18\x08\x20\x01(\rR\x0bDHPABBNJOLIb\x06proto3\
+    o\"{\n\x0bCKJCFDJKDFG\x12\x20\n\x0bDHPABBNJOLI\x18\x08\x20\x01(\rR\x0bDH\
+    PABBNJOLI\x12J\n\x0bAJAICBAHIPN\x18\x0e\x20\x03(\x0b2(.RogueAdventureRoo\
+    mGameplayWolfGunTargetR\x0bAJAICBAHIPNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

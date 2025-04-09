@@ -82,7 +82,7 @@ impl ::protobuf::Message for ExchangeGachaCeilingCsReq {
                 48 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                56 => {
+                96 => {
                     self.IDDDLEKCICN = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for ExchangeGachaCeilingCsReq {
             my_size += ::protobuf::rt::uint32_size(6, self.avatar_id);
         }
         if self.IDDDLEKCICN != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.IDDDLEKCICN);
+            my_size += ::protobuf::rt::uint32_size(12, self.IDDDLEKCICN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for ExchangeGachaCeilingCsReq {
             os.write_uint32(6, self.avatar_id)?;
         }
         if self.IDDDLEKCICN != 0 {
-            os.write_uint32(7, self.IDDDLEKCICN)?;
+            os.write_uint32(12, self.IDDDLEKCICN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for ExchangeGachaCeilingCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fExchangeGachaCeilingCsReq.proto\"Z\n\x19ExchangeGachaCeilingCsReq\
     \x12\x1b\n\tavatar_id\x18\x06\x20\x01(\rR\x08avatarId\x12\x20\n\x0bIDDDL\
-    EKCICN\x18\x07\x20\x01(\rR\x0bIDDDLEKCICNb\x06proto3\
+    EKCICN\x18\x0c\x20\x01(\rR\x0bIDDDLEKCICNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

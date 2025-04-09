@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MusicRhythmSaveSongConfigDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MusicRhythmSaveSongConfigDataScRsp.CDIGALBEIMA)
-    pub CDIGALBEIMA: u32,
     // @@protoc_insertion_point(field:MusicRhythmSaveSongConfigDataScRsp.MBLDFHLDCPI)
     pub MBLDFHLDCPI: u32,
     // @@protoc_insertion_point(field:MusicRhythmSaveSongConfigDataScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:MusicRhythmSaveSongConfigDataScRsp.CDIGALBEIMA)
+    pub CDIGALBEIMA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MusicRhythmSaveSongConfigDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl MusicRhythmSaveSongConfigDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CDIGALBEIMA",
-            |m: &MusicRhythmSaveSongConfigDataScRsp| { &m.CDIGALBEIMA },
-            |m: &mut MusicRhythmSaveSongConfigDataScRsp| { &mut m.CDIGALBEIMA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MBLDFHLDCPI",
             |m: &MusicRhythmSaveSongConfigDataScRsp| { &m.MBLDFHLDCPI },
             |m: &mut MusicRhythmSaveSongConfigDataScRsp| { &mut m.MBLDFHLDCPI },
@@ -67,6 +62,11 @@ impl MusicRhythmSaveSongConfigDataScRsp {
             "retcode",
             |m: &MusicRhythmSaveSongConfigDataScRsp| { &m.retcode },
             |m: &mut MusicRhythmSaveSongConfigDataScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CDIGALBEIMA",
+            |m: &MusicRhythmSaveSongConfigDataScRsp| { &m.CDIGALBEIMA },
+            |m: &mut MusicRhythmSaveSongConfigDataScRsp| { &mut m.CDIGALBEIMA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MusicRhythmSaveSongConfigDataScRsp>(
             "MusicRhythmSaveSongConfigDataScRsp",
@@ -87,13 +87,13 @@ impl ::protobuf::Message for MusicRhythmSaveSongConfigDataScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.CDIGALBEIMA = is.read_uint32()?;
-                },
-                32 => {
                     self.MBLDFHLDCPI = is.read_uint32()?;
                 },
-                88 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
+                },
+                24 => {
+                    self.CDIGALBEIMA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for MusicRhythmSaveSongConfigDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CDIGALBEIMA != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.CDIGALBEIMA);
-        }
         if self.MBLDFHLDCPI != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.MBLDFHLDCPI);
+            my_size += ::protobuf::rt::uint32_size(1, self.MBLDFHLDCPI);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+        }
+        if self.CDIGALBEIMA != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.CDIGALBEIMA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for MusicRhythmSaveSongConfigDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CDIGALBEIMA != 0 {
-            os.write_uint32(1, self.CDIGALBEIMA)?;
-        }
         if self.MBLDFHLDCPI != 0 {
-            os.write_uint32(4, self.MBLDFHLDCPI)?;
+            os.write_uint32(1, self.MBLDFHLDCPI)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
+        }
+        if self.CDIGALBEIMA != 0 {
+            os.write_uint32(3, self.CDIGALBEIMA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for MusicRhythmSaveSongConfigDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.CDIGALBEIMA = 0;
         self.MBLDFHLDCPI = 0;
         self.retcode = 0;
+        self.CDIGALBEIMA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MusicRhythmSaveSongConfigDataScRsp {
         static instance: MusicRhythmSaveSongConfigDataScRsp = MusicRhythmSaveSongConfigDataScRsp {
-            CDIGALBEIMA: 0,
             MBLDFHLDCPI: 0,
             retcode: 0,
+            CDIGALBEIMA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for MusicRhythmSaveSongConfigDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(MusicRhythmSaveSongConfigDataScRsp.proto\"\x82\x01\n\"MusicRhythmSave\
-    SongConfigDataScRsp\x12\x20\n\x0bCDIGALBEIMA\x18\x01\x20\x01(\rR\x0bCDIG\
-    ALBEIMA\x12\x20\n\x0bMBLDFHLDCPI\x18\x04\x20\x01(\rR\x0bMBLDFHLDCPI\x12\
-    \x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcodeb\x06proto3\
+    SongConfigDataScRsp\x12\x20\n\x0bMBLDFHLDCPI\x18\x01\x20\x01(\rR\x0bMBLD\
+    FHLDCPI\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x12\x20\n\x0bC\
+    DIGALBEIMA\x18\x03\x20\x01(\rR\x0bCDIGALBEIMAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

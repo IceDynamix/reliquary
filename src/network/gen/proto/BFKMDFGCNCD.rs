@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BFKMDFGCNCD {
     // message fields
-    // @@protoc_insertion_point(field:BFKMDFGCNCD.OGCKDLKCABG)
-    pub OGCKDLKCABG: i64,
+    // @@protoc_insertion_point(field:BFKMDFGCNCD.begin_time)
+    pub begin_time: i64,
+    // @@protoc_insertion_point(field:BFKMDFGCNCD.end_time)
+    pub end_time: i64,
     // @@protoc_insertion_point(field:BFKMDFGCNCD.AHANJLEHCGA)
     pub AHANJLEHCGA: u32,
-    // @@protoc_insertion_point(field:BFKMDFGCNCD.PJBIPPDMCHE)
-    pub PJBIPPDMCHE: i64,
     // special fields
     // @@protoc_insertion_point(special_field:BFKMDFGCNCD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl BFKMDFGCNCD {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OGCKDLKCABG",
-            |m: &BFKMDFGCNCD| { &m.OGCKDLKCABG },
-            |m: &mut BFKMDFGCNCD| { &mut m.OGCKDLKCABG },
+            "begin_time",
+            |m: &BFKMDFGCNCD| { &m.begin_time },
+            |m: &mut BFKMDFGCNCD| { &mut m.begin_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "end_time",
+            |m: &BFKMDFGCNCD| { &m.end_time },
+            |m: &mut BFKMDFGCNCD| { &mut m.end_time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AHANJLEHCGA",
             |m: &BFKMDFGCNCD| { &m.AHANJLEHCGA },
             |m: &mut BFKMDFGCNCD| { &mut m.AHANJLEHCGA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PJBIPPDMCHE",
-            |m: &BFKMDFGCNCD| { &m.PJBIPPDMCHE },
-            |m: &mut BFKMDFGCNCD| { &mut m.PJBIPPDMCHE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BFKMDFGCNCD>(
             "BFKMDFGCNCD",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for BFKMDFGCNCD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.OGCKDLKCABG = is.read_int64()?;
+                64 => {
+                    self.begin_time = is.read_int64()?;
                 },
-                80 => {
+                8 => {
+                    self.end_time = is.read_int64()?;
+                },
+                32 => {
                     self.AHANJLEHCGA = is.read_uint32()?;
-                },
-                120 => {
-                    self.PJBIPPDMCHE = is.read_int64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for BFKMDFGCNCD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OGCKDLKCABG != 0 {
-            my_size += ::protobuf::rt::int64_size(9, self.OGCKDLKCABG);
+        if self.begin_time != 0 {
+            my_size += ::protobuf::rt::int64_size(8, self.begin_time);
+        }
+        if self.end_time != 0 {
+            my_size += ::protobuf::rt::int64_size(1, self.end_time);
         }
         if self.AHANJLEHCGA != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.AHANJLEHCGA);
-        }
-        if self.PJBIPPDMCHE != 0 {
-            my_size += ::protobuf::rt::int64_size(15, self.PJBIPPDMCHE);
+            my_size += ::protobuf::rt::uint32_size(4, self.AHANJLEHCGA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for BFKMDFGCNCD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OGCKDLKCABG != 0 {
-            os.write_int64(9, self.OGCKDLKCABG)?;
+        if self.begin_time != 0 {
+            os.write_int64(8, self.begin_time)?;
+        }
+        if self.end_time != 0 {
+            os.write_int64(1, self.end_time)?;
         }
         if self.AHANJLEHCGA != 0 {
-            os.write_uint32(10, self.AHANJLEHCGA)?;
-        }
-        if self.PJBIPPDMCHE != 0 {
-            os.write_int64(15, self.PJBIPPDMCHE)?;
+            os.write_uint32(4, self.AHANJLEHCGA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for BFKMDFGCNCD {
     }
 
     fn clear(&mut self) {
-        self.OGCKDLKCABG = 0;
+        self.begin_time = 0;
+        self.end_time = 0;
         self.AHANJLEHCGA = 0;
-        self.PJBIPPDMCHE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BFKMDFGCNCD {
         static instance: BFKMDFGCNCD = BFKMDFGCNCD {
-            OGCKDLKCABG: 0,
+            begin_time: 0,
+            end_time: 0,
             AHANJLEHCGA: 0,
-            PJBIPPDMCHE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for BFKMDFGCNCD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BFKMDFGCNCD.proto\"s\n\x0bBFKMDFGCNCD\x12\x20\n\x0bOGCKDLKCABG\x18\
-    \t\x20\x01(\x03R\x0bOGCKDLKCABG\x12\x20\n\x0bAHANJLEHCGA\x18\n\x20\x01(\
-    \rR\x0bAHANJLEHCGA\x12\x20\n\x0bPJBIPPDMCHE\x18\x0f\x20\x01(\x03R\x0bPJB\
-    IPPDMCHEb\x06proto3\
+    \n\x11BFKMDFGCNCD.proto\"i\n\x0bBFKMDFGCNCD\x12\x1d\n\nbegin_time\x18\
+    \x08\x20\x01(\x03R\tbeginTime\x12\x19\n\x08end_time\x18\x01\x20\x01(\x03\
+    R\x07endTime\x12\x20\n\x0bAHANJLEHCGA\x18\x04\x20\x01(\rR\x0bAHANJLEHCGA\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

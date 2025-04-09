@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MIKFNBBOPIP {
     // message fields
-    // @@protoc_insertion_point(field:MIKFNBBOPIP.AGEBAMBKKBC)
-    pub AGEBAMBKKBC: u32,
     // @@protoc_insertion_point(field:MIKFNBBOPIP.MDLNDGIJNML)
     pub MDLNDGIJNML: ::std::string::String,
-    // @@protoc_insertion_point(field:MIKFNBBOPIP.ILLODGAEFAE)
-    pub ILLODGAEFAE: u32,
-    // @@protoc_insertion_point(field:MIKFNBBOPIP.BNGFAIGNPHE)
-    pub BNGFAIGNPHE: u32,
-    // @@protoc_insertion_point(field:MIKFNBBOPIP.KNDMEILHKEJ)
-    pub KNDMEILHKEJ: ::protobuf::MessageField<super::KFPMAIAADMO::KFPMAIAADMO>,
     // @@protoc_insertion_point(field:MIKFNBBOPIP.EGMEBANHHNF)
     pub EGMEBANHHNF: u32,
+    // @@protoc_insertion_point(field:MIKFNBBOPIP.KNDMEILHKEJ)
+    pub KNDMEILHKEJ: ::protobuf::MessageField<super::KFPMAIAADMO::KFPMAIAADMO>,
+    // @@protoc_insertion_point(field:MIKFNBBOPIP.ILLODGAEFAE)
+    pub ILLODGAEFAE: u32,
+    // @@protoc_insertion_point(field:MIKFNBBOPIP.AGEBAMBKKBC)
+    pub AGEBAMBKKBC: u32,
+    // @@protoc_insertion_point(field:MIKFNBBOPIP.BNGFAIGNPHE)
+    pub BNGFAIGNPHE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MIKFNBBOPIP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,24 +60,14 @@ impl MIKFNBBOPIP {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AGEBAMBKKBC",
-            |m: &MIKFNBBOPIP| { &m.AGEBAMBKKBC },
-            |m: &mut MIKFNBBOPIP| { &mut m.AGEBAMBKKBC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MDLNDGIJNML",
             |m: &MIKFNBBOPIP| { &m.MDLNDGIJNML },
             |m: &mut MIKFNBBOPIP| { &mut m.MDLNDGIJNML },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ILLODGAEFAE",
-            |m: &MIKFNBBOPIP| { &m.ILLODGAEFAE },
-            |m: &mut MIKFNBBOPIP| { &mut m.ILLODGAEFAE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BNGFAIGNPHE",
-            |m: &MIKFNBBOPIP| { &m.BNGFAIGNPHE },
-            |m: &mut MIKFNBBOPIP| { &mut m.BNGFAIGNPHE },
+            "EGMEBANHHNF",
+            |m: &MIKFNBBOPIP| { &m.EGMEBANHHNF },
+            |m: &mut MIKFNBBOPIP| { &mut m.EGMEBANHHNF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KFPMAIAADMO::KFPMAIAADMO>(
             "KNDMEILHKEJ",
@@ -85,9 +75,19 @@ impl MIKFNBBOPIP {
             |m: &mut MIKFNBBOPIP| { &mut m.KNDMEILHKEJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EGMEBANHHNF",
-            |m: &MIKFNBBOPIP| { &m.EGMEBANHHNF },
-            |m: &mut MIKFNBBOPIP| { &mut m.EGMEBANHHNF },
+            "ILLODGAEFAE",
+            |m: &MIKFNBBOPIP| { &m.ILLODGAEFAE },
+            |m: &mut MIKFNBBOPIP| { &mut m.ILLODGAEFAE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AGEBAMBKKBC",
+            |m: &MIKFNBBOPIP| { &m.AGEBAMBKKBC },
+            |m: &mut MIKFNBBOPIP| { &mut m.AGEBAMBKKBC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BNGFAIGNPHE",
+            |m: &MIKFNBBOPIP| { &m.BNGFAIGNPHE },
+            |m: &mut MIKFNBBOPIP| { &mut m.BNGFAIGNPHE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MIKFNBBOPIP>(
             "MIKFNBBOPIP",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for MIKFNBBOPIP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.AGEBAMBKKBC = is.read_uint32()?;
-                },
-                34 => {
+                74 => {
                     self.MDLNDGIJNML = is.read_string()?;
                 },
-                80 => {
-                    self.ILLODGAEFAE = is.read_uint32()?;
+                24 => {
+                    self.EGMEBANHHNF = is.read_uint32()?;
                 },
-                72 => {
-                    self.BNGFAIGNPHE = is.read_uint32()?;
-                },
-                122 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.KNDMEILHKEJ)?;
                 },
-                8 => {
-                    self.EGMEBANHHNF = is.read_uint32()?;
+                48 => {
+                    self.ILLODGAEFAE = is.read_uint32()?;
+                },
+                64 => {
+                    self.AGEBAMBKKBC = is.read_uint32()?;
+                },
+                96 => {
+                    self.BNGFAIGNPHE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,24 +137,24 @@ impl ::protobuf::Message for MIKFNBBOPIP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AGEBAMBKKBC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.AGEBAMBKKBC);
-        }
         if !self.MDLNDGIJNML.is_empty() {
-            my_size += ::protobuf::rt::string_size(4, &self.MDLNDGIJNML);
+            my_size += ::protobuf::rt::string_size(9, &self.MDLNDGIJNML);
         }
-        if self.ILLODGAEFAE != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.ILLODGAEFAE);
-        }
-        if self.BNGFAIGNPHE != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.BNGFAIGNPHE);
+        if self.EGMEBANHHNF != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.EGMEBANHHNF);
         }
         if let Some(v) = self.KNDMEILHKEJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.EGMEBANHHNF != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.EGMEBANHHNF);
+        if self.ILLODGAEFAE != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.ILLODGAEFAE);
+        }
+        if self.AGEBAMBKKBC != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.AGEBAMBKKBC);
+        }
+        if self.BNGFAIGNPHE != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.BNGFAIGNPHE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,23 +162,23 @@ impl ::protobuf::Message for MIKFNBBOPIP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AGEBAMBKKBC != 0 {
-            os.write_uint32(5, self.AGEBAMBKKBC)?;
-        }
         if !self.MDLNDGIJNML.is_empty() {
-            os.write_string(4, &self.MDLNDGIJNML)?;
-        }
-        if self.ILLODGAEFAE != 0 {
-            os.write_uint32(10, self.ILLODGAEFAE)?;
-        }
-        if self.BNGFAIGNPHE != 0 {
-            os.write_uint32(9, self.BNGFAIGNPHE)?;
-        }
-        if let Some(v) = self.KNDMEILHKEJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            os.write_string(9, &self.MDLNDGIJNML)?;
         }
         if self.EGMEBANHHNF != 0 {
-            os.write_uint32(1, self.EGMEBANHHNF)?;
+            os.write_uint32(3, self.EGMEBANHHNF)?;
+        }
+        if let Some(v) = self.KNDMEILHKEJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
+        if self.ILLODGAEFAE != 0 {
+            os.write_uint32(6, self.ILLODGAEFAE)?;
+        }
+        if self.AGEBAMBKKBC != 0 {
+            os.write_uint32(8, self.AGEBAMBKKBC)?;
+        }
+        if self.BNGFAIGNPHE != 0 {
+            os.write_uint32(12, self.BNGFAIGNPHE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,23 +197,23 @@ impl ::protobuf::Message for MIKFNBBOPIP {
     }
 
     fn clear(&mut self) {
-        self.AGEBAMBKKBC = 0;
         self.MDLNDGIJNML.clear();
-        self.ILLODGAEFAE = 0;
-        self.BNGFAIGNPHE = 0;
-        self.KNDMEILHKEJ.clear();
         self.EGMEBANHHNF = 0;
+        self.KNDMEILHKEJ.clear();
+        self.ILLODGAEFAE = 0;
+        self.AGEBAMBKKBC = 0;
+        self.BNGFAIGNPHE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MIKFNBBOPIP {
         static instance: MIKFNBBOPIP = MIKFNBBOPIP {
-            AGEBAMBKKBC: 0,
             MDLNDGIJNML: ::std::string::String::new(),
-            ILLODGAEFAE: 0,
-            BNGFAIGNPHE: 0,
-            KNDMEILHKEJ: ::protobuf::MessageField::none(),
             EGMEBANHHNF: 0,
+            KNDMEILHKEJ: ::protobuf::MessageField::none(),
+            ILLODGAEFAE: 0,
+            AGEBAMBKKBC: 0,
+            BNGFAIGNPHE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,12 +239,12 @@ impl ::protobuf::reflect::ProtobufValue for MIKFNBBOPIP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MIKFNBBOPIP.proto\x1a\x11KFPMAIAADMO.proto\"\xe7\x01\n\x0bMIKFNBBO\
-    PIP\x12\x20\n\x0bAGEBAMBKKBC\x18\x05\x20\x01(\rR\x0bAGEBAMBKKBC\x12\x20\
-    \n\x0bMDLNDGIJNML\x18\x04\x20\x01(\tR\x0bMDLNDGIJNML\x12\x20\n\x0bILLODG\
-    AEFAE\x18\n\x20\x01(\rR\x0bILLODGAEFAE\x12\x20\n\x0bBNGFAIGNPHE\x18\t\
-    \x20\x01(\rR\x0bBNGFAIGNPHE\x12.\n\x0bKNDMEILHKEJ\x18\x0f\x20\x01(\x0b2\
-    \x0c.KFPMAIAADMOR\x0bKNDMEILHKEJ\x12\x20\n\x0bEGMEBANHHNF\x18\x01\x20\
-    \x01(\rR\x0bEGMEBANHHNFb\x06proto3\
+    PIP\x12\x20\n\x0bMDLNDGIJNML\x18\t\x20\x01(\tR\x0bMDLNDGIJNML\x12\x20\n\
+    \x0bEGMEBANHHNF\x18\x03\x20\x01(\rR\x0bEGMEBANHHNF\x12.\n\x0bKNDMEILHKEJ\
+    \x18\x05\x20\x01(\x0b2\x0c.KFPMAIAADMOR\x0bKNDMEILHKEJ\x12\x20\n\x0bILLO\
+    DGAEFAE\x18\x06\x20\x01(\rR\x0bILLODGAEFAE\x12\x20\n\x0bAGEBAMBKKBC\x18\
+    \x08\x20\x01(\rR\x0bAGEBAMBKKBC\x12\x20\n\x0bBNGFAIGNPHE\x18\x0c\x20\x01\
+    (\rR\x0bBNGFAIGNPHEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

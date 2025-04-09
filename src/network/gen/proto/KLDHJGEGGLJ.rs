@@ -33,6 +33,10 @@ pub enum KLDHJGEGGLJ {
     BIG_DATA_RECOMMEND_TYPE_EQUIPMENT = 1,
     // @@protoc_insertion_point(enum_value:KLDHJGEGGLJ.BIG_DATA_RECOMMEND_TYPE_RELIC_SUIT)
     BIG_DATA_RECOMMEND_TYPE_RELIC_SUIT = 2,
+    // @@protoc_insertion_point(enum_value:KLDHJGEGGLJ.BIG_DATA_RECOMMEND_TYPE_RELIC_AVATAR)
+    BIG_DATA_RECOMMEND_TYPE_RELIC_AVATAR = 3,
+    // @@protoc_insertion_point(enum_value:KLDHJGEGGLJ.BIG_DATA_RECOMMEND_TYPE_AVATAR_RELIC)
+    BIG_DATA_RECOMMEND_TYPE_AVATAR_RELIC = 4,
 }
 
 impl ::protobuf::Enum for KLDHJGEGGLJ {
@@ -47,6 +51,8 @@ impl ::protobuf::Enum for KLDHJGEGGLJ {
             0 => ::std::option::Option::Some(KLDHJGEGGLJ::BIG_DATA_RECOMMEND_TYPE_NONE),
             1 => ::std::option::Option::Some(KLDHJGEGGLJ::BIG_DATA_RECOMMEND_TYPE_EQUIPMENT),
             2 => ::std::option::Option::Some(KLDHJGEGGLJ::BIG_DATA_RECOMMEND_TYPE_RELIC_SUIT),
+            3 => ::std::option::Option::Some(KLDHJGEGGLJ::BIG_DATA_RECOMMEND_TYPE_RELIC_AVATAR),
+            4 => ::std::option::Option::Some(KLDHJGEGGLJ::BIG_DATA_RECOMMEND_TYPE_AVATAR_RELIC),
             _ => ::std::option::Option::None
         }
     }
@@ -56,6 +62,8 @@ impl ::protobuf::Enum for KLDHJGEGGLJ {
             "BIG_DATA_RECOMMEND_TYPE_NONE" => ::std::option::Option::Some(KLDHJGEGGLJ::BIG_DATA_RECOMMEND_TYPE_NONE),
             "BIG_DATA_RECOMMEND_TYPE_EQUIPMENT" => ::std::option::Option::Some(KLDHJGEGGLJ::BIG_DATA_RECOMMEND_TYPE_EQUIPMENT),
             "BIG_DATA_RECOMMEND_TYPE_RELIC_SUIT" => ::std::option::Option::Some(KLDHJGEGGLJ::BIG_DATA_RECOMMEND_TYPE_RELIC_SUIT),
+            "BIG_DATA_RECOMMEND_TYPE_RELIC_AVATAR" => ::std::option::Option::Some(KLDHJGEGGLJ::BIG_DATA_RECOMMEND_TYPE_RELIC_AVATAR),
+            "BIG_DATA_RECOMMEND_TYPE_AVATAR_RELIC" => ::std::option::Option::Some(KLDHJGEGGLJ::BIG_DATA_RECOMMEND_TYPE_AVATAR_RELIC),
             _ => ::std::option::Option::None
         }
     }
@@ -64,6 +72,8 @@ impl ::protobuf::Enum for KLDHJGEGGLJ {
         KLDHJGEGGLJ::BIG_DATA_RECOMMEND_TYPE_NONE,
         KLDHJGEGGLJ::BIG_DATA_RECOMMEND_TYPE_EQUIPMENT,
         KLDHJGEGGLJ::BIG_DATA_RECOMMEND_TYPE_RELIC_SUIT,
+        KLDHJGEGGLJ::BIG_DATA_RECOMMEND_TYPE_RELIC_AVATAR,
+        KLDHJGEGGLJ::BIG_DATA_RECOMMEND_TYPE_AVATAR_RELIC,
     ];
 }
 
@@ -92,9 +102,11 @@ impl KLDHJGEGGLJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KLDHJGEGGLJ.proto*~\n\x0bKLDHJGEGGLJ\x12\x20\n\x1cBIG_DATA_RECOMME\
-    ND_TYPE_NONE\x10\0\x12%\n!BIG_DATA_RECOMMEND_TYPE_EQUIPMENT\x10\x01\x12&\
-    \n\"BIG_DATA_RECOMMEND_TYPE_RELIC_SUIT\x10\x02b\x06proto3\
+    \n\x11KLDHJGEGGLJ.proto*\xd2\x01\n\x0bKLDHJGEGGLJ\x12\x20\n\x1cBIG_DATA_\
+    RECOMMEND_TYPE_NONE\x10\0\x12%\n!BIG_DATA_RECOMMEND_TYPE_EQUIPMENT\x10\
+    \x01\x12&\n\"BIG_DATA_RECOMMEND_TYPE_RELIC_SUIT\x10\x02\x12(\n$BIG_DATA_\
+    RECOMMEND_TYPE_RELIC_AVATAR\x10\x03\x12(\n$BIG_DATA_RECOMMEND_TYPE_AVATA\
+    R_RELIC\x10\x04b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

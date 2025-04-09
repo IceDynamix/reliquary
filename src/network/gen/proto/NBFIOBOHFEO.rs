@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NBFIOBOHFEO {
     // message fields
-    // @@protoc_insertion_point(field:NBFIOBOHFEO.GPBKEMCKCBL)
-    pub GPBKEMCKCBL: ::protobuf::EnumOrUnknown<super::NLCPBOOPCAF::NLCPBOOPCAF>,
-    // @@protoc_insertion_point(field:NBFIOBOHFEO.IGOCLJODFCD)
-    pub IGOCLJODFCD: u32,
     // @@protoc_insertion_point(field:NBFIOBOHFEO.PLPLGFBFFCL)
     pub PLPLGFBFFCL: u32,
+    // @@protoc_insertion_point(field:NBFIOBOHFEO.IGOCLJODFCD)
+    pub IGOCLJODFCD: u32,
+    // @@protoc_insertion_point(field:NBFIOBOHFEO.GPBKEMCKCBL)
+    pub GPBKEMCKCBL: ::protobuf::EnumOrUnknown<super::NLCPBOOPCAF::NLCPBOOPCAF>,
     // special fields
     // @@protoc_insertion_point(special_field:NBFIOBOHFEO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl NBFIOBOHFEO {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GPBKEMCKCBL",
-            |m: &NBFIOBOHFEO| { &m.GPBKEMCKCBL },
-            |m: &mut NBFIOBOHFEO| { &mut m.GPBKEMCKCBL },
+            "PLPLGFBFFCL",
+            |m: &NBFIOBOHFEO| { &m.PLPLGFBFFCL },
+            |m: &mut NBFIOBOHFEO| { &mut m.PLPLGFBFFCL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IGOCLJODFCD",
@@ -64,9 +64,9 @@ impl NBFIOBOHFEO {
             |m: &mut NBFIOBOHFEO| { &mut m.IGOCLJODFCD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PLPLGFBFFCL",
-            |m: &NBFIOBOHFEO| { &m.PLPLGFBFFCL },
-            |m: &mut NBFIOBOHFEO| { &mut m.PLPLGFBFFCL },
+            "GPBKEMCKCBL",
+            |m: &NBFIOBOHFEO| { &m.GPBKEMCKCBL },
+            |m: &mut NBFIOBOHFEO| { &mut m.GPBKEMCKCBL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NBFIOBOHFEO>(
             "NBFIOBOHFEO",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for NBFIOBOHFEO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.GPBKEMCKCBL = is.read_enum_or_unknown()?;
+                80 => {
+                    self.PLPLGFBFFCL = is.read_uint32()?;
                 },
-                88 => {
+                96 => {
                     self.IGOCLJODFCD = is.read_uint32()?;
                 },
-                8 => {
-                    self.PLPLGFBFFCL = is.read_uint32()?;
+                120 => {
+                    self.GPBKEMCKCBL = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for NBFIOBOHFEO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GPBKEMCKCBL != ::protobuf::EnumOrUnknown::new(super::NLCPBOOPCAF::NLCPBOOPCAF::MAP_INFO_CHEST_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(6, self.GPBKEMCKCBL.value());
+        if self.PLPLGFBFFCL != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.PLPLGFBFFCL);
         }
         if self.IGOCLJODFCD != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.IGOCLJODFCD);
+            my_size += ::protobuf::rt::uint32_size(12, self.IGOCLJODFCD);
         }
-        if self.PLPLGFBFFCL != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.PLPLGFBFFCL);
+        if self.GPBKEMCKCBL != ::protobuf::EnumOrUnknown::new(super::NLCPBOOPCAF::NLCPBOOPCAF::MAP_INFO_CHEST_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(15, self.GPBKEMCKCBL.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for NBFIOBOHFEO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GPBKEMCKCBL != ::protobuf::EnumOrUnknown::new(super::NLCPBOOPCAF::NLCPBOOPCAF::MAP_INFO_CHEST_TYPE_NONE) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.GPBKEMCKCBL))?;
+        if self.PLPLGFBFFCL != 0 {
+            os.write_uint32(10, self.PLPLGFBFFCL)?;
         }
         if self.IGOCLJODFCD != 0 {
-            os.write_uint32(11, self.IGOCLJODFCD)?;
+            os.write_uint32(12, self.IGOCLJODFCD)?;
         }
-        if self.PLPLGFBFFCL != 0 {
-            os.write_uint32(1, self.PLPLGFBFFCL)?;
+        if self.GPBKEMCKCBL != ::protobuf::EnumOrUnknown::new(super::NLCPBOOPCAF::NLCPBOOPCAF::MAP_INFO_CHEST_TYPE_NONE) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.GPBKEMCKCBL))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for NBFIOBOHFEO {
     }
 
     fn clear(&mut self) {
-        self.GPBKEMCKCBL = ::protobuf::EnumOrUnknown::new(super::NLCPBOOPCAF::NLCPBOOPCAF::MAP_INFO_CHEST_TYPE_NONE);
-        self.IGOCLJODFCD = 0;
         self.PLPLGFBFFCL = 0;
+        self.IGOCLJODFCD = 0;
+        self.GPBKEMCKCBL = ::protobuf::EnumOrUnknown::new(super::NLCPBOOPCAF::NLCPBOOPCAF::MAP_INFO_CHEST_TYPE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NBFIOBOHFEO {
         static instance: NBFIOBOHFEO = NBFIOBOHFEO {
-            GPBKEMCKCBL: ::protobuf::EnumOrUnknown::from_i32(0),
-            IGOCLJODFCD: 0,
             PLPLGFBFFCL: 0,
+            IGOCLJODFCD: 0,
+            GPBKEMCKCBL: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for NBFIOBOHFEO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NBFIOBOHFEO.proto\x1a\x11NLCPBOOPCAF.proto\"\x81\x01\n\x0bNBFIOBOH\
-    FEO\x12.\n\x0bGPBKEMCKCBL\x18\x06\x20\x01(\x0e2\x0c.NLCPBOOPCAFR\x0bGPBK\
-    EMCKCBL\x12\x20\n\x0bIGOCLJODFCD\x18\x0b\x20\x01(\rR\x0bIGOCLJODFCD\x12\
-    \x20\n\x0bPLPLGFBFFCL\x18\x01\x20\x01(\rR\x0bPLPLGFBFFCLb\x06proto3\
+    FEO\x12\x20\n\x0bPLPLGFBFFCL\x18\n\x20\x01(\rR\x0bPLPLGFBFFCL\x12\x20\n\
+    \x0bIGOCLJODFCD\x18\x0c\x20\x01(\rR\x0bIGOCLJODFCD\x12.\n\x0bGPBKEMCKCBL\
+    \x18\x0f\x20\x01(\x0e2\x0c.NLCPBOOPCAFR\x0bGPBKEMCKCBLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

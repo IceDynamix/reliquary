@@ -72,7 +72,7 @@ impl ::protobuf::Message for HBCINIKPAFI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                74 => {
                     self.FODPDMPBAND.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for HBCINIKPAFI {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.FODPDMPBAND {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for HBCINIKPAFI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HBCINIKPAFI.proto\x1a\x11FPLMDELMJKB.proto\"=\n\x0bHBCINIKPAFI\x12\
-    .\n\x0bFODPDMPBAND\x18\x0f\x20\x03(\x0b2\x0c.FPLMDELMJKBR\x0bFODPDMPBAND\
-    b\x06proto3\
+    .\n\x0bFODPDMPBAND\x18\t\x20\x03(\x0b2\x0c.FPLMDELMJKBR\x0bFODPDMPBANDb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

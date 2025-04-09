@@ -79,7 +79,7 @@ impl ::protobuf::Message for LFLOGADLEMA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                48 => {
                     self.COLBGEJELGI = is.read_uint32()?;
                 },
                 32 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for LFLOGADLEMA {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.COLBGEJELGI != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.COLBGEJELGI);
+            my_size += ::protobuf::rt::uint32_size(6, self.COLBGEJELGI);
         }
         if self.EINFBGKENDH != false {
             my_size += 1 + 1;
@@ -110,7 +110,7 @@ impl ::protobuf::Message for LFLOGADLEMA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.COLBGEJELGI != 0 {
-            os.write_uint32(14, self.COLBGEJELGI)?;
+            os.write_uint32(6, self.COLBGEJELGI)?;
         }
         if self.EINFBGKENDH != false {
             os.write_bool(4, self.EINFBGKENDH)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for LFLOGADLEMA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LFLOGADLEMA.proto\"Q\n\x0bLFLOGADLEMA\x12\x20\n\x0bCOLBGEJELGI\x18\
-    \x0e\x20\x01(\rR\x0bCOLBGEJELGI\x12\x20\n\x0bEINFBGKENDH\x18\x04\x20\x01\
+    \x06\x20\x01(\rR\x0bCOLBGEJELGI\x12\x20\n\x0bEINFBGKENDH\x18\x04\x20\x01\
     (\x08R\x0bEINFBGKENDHb\x06proto3\
 ";
 

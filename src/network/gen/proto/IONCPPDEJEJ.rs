@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IONCPPDEJEJ {
     // message fields
-    // @@protoc_insertion_point(field:IONCPPDEJEJ.FEONEHHCJJM)
-    pub FEONEHHCJJM: u32,
     // @@protoc_insertion_point(field:IONCPPDEJEJ.LNBPGPGGIMN)
     pub LNBPGPGGIMN: u32,
+    // @@protoc_insertion_point(field:IONCPPDEJEJ.FEONEHHCJJM)
+    pub FEONEHHCJJM: u32,
     // @@protoc_insertion_point(field:IONCPPDEJEJ.unique_id)
     pub unique_id: u64,
     // special fields
@@ -54,14 +54,14 @@ impl IONCPPDEJEJ {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FEONEHHCJJM",
-            |m: &IONCPPDEJEJ| { &m.FEONEHHCJJM },
-            |m: &mut IONCPPDEJEJ| { &mut m.FEONEHHCJJM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LNBPGPGGIMN",
             |m: &IONCPPDEJEJ| { &m.LNBPGPGGIMN },
             |m: &mut IONCPPDEJEJ| { &mut m.LNBPGPGGIMN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FEONEHHCJJM",
+            |m: &IONCPPDEJEJ| { &m.FEONEHHCJJM },
+            |m: &mut IONCPPDEJEJ| { &mut m.FEONEHHCJJM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "unique_id",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for IONCPPDEJEJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.FEONEHHCJJM = is.read_uint32()?;
-                },
-                72 => {
+                24 => {
                     self.LNBPGPGGIMN = is.read_uint32()?;
                 },
-                80 => {
+                120 => {
+                    self.FEONEHHCJJM = is.read_uint32()?;
+                },
+                16 => {
                     self.unique_id = is.read_uint64()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for IONCPPDEJEJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FEONEHHCJJM != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.FEONEHHCJJM);
-        }
         if self.LNBPGPGGIMN != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.LNBPGPGGIMN);
+            my_size += ::protobuf::rt::uint32_size(3, self.LNBPGPGGIMN);
+        }
+        if self.FEONEHHCJJM != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.FEONEHHCJJM);
         }
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint64_size(10, self.unique_id);
+            my_size += ::protobuf::rt::uint64_size(2, self.unique_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for IONCPPDEJEJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FEONEHHCJJM != 0 {
-            os.write_uint32(6, self.FEONEHHCJJM)?;
-        }
         if self.LNBPGPGGIMN != 0 {
-            os.write_uint32(9, self.LNBPGPGGIMN)?;
+            os.write_uint32(3, self.LNBPGPGGIMN)?;
+        }
+        if self.FEONEHHCJJM != 0 {
+            os.write_uint32(15, self.FEONEHHCJJM)?;
         }
         if self.unique_id != 0 {
-            os.write_uint64(10, self.unique_id)?;
+            os.write_uint64(2, self.unique_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for IONCPPDEJEJ {
     }
 
     fn clear(&mut self) {
-        self.FEONEHHCJJM = 0;
         self.LNBPGPGGIMN = 0;
+        self.FEONEHHCJJM = 0;
         self.unique_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IONCPPDEJEJ {
         static instance: IONCPPDEJEJ = IONCPPDEJEJ {
-            FEONEHHCJJM: 0,
             LNBPGPGGIMN: 0,
+            FEONEHHCJJM: 0,
             unique_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for IONCPPDEJEJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IONCPPDEJEJ.proto\"n\n\x0bIONCPPDEJEJ\x12\x20\n\x0bFEONEHHCJJM\x18\
-    \x06\x20\x01(\rR\x0bFEONEHHCJJM\x12\x20\n\x0bLNBPGPGGIMN\x18\t\x20\x01(\
-    \rR\x0bLNBPGPGGIMN\x12\x1b\n\tunique_id\x18\n\x20\x01(\x04R\x08uniqueIdb\
-    \x06proto3\
+    \n\x11IONCPPDEJEJ.proto\"n\n\x0bIONCPPDEJEJ\x12\x20\n\x0bLNBPGPGGIMN\x18\
+    \x03\x20\x01(\rR\x0bLNBPGPGGIMN\x12\x20\n\x0bFEONEHHCJJM\x18\x0f\x20\x01\
+    (\rR\x0bFEONEHHCJJM\x12\x1b\n\tunique_id\x18\x02\x20\x01(\x04R\x08unique\
+    Idb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

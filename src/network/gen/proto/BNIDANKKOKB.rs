@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BNIDANKKOKB {
     // message fields
-    // @@protoc_insertion_point(field:BNIDANKKOKB.KDFJCPIICMA)
-    pub KDFJCPIICMA: ::protobuf::MessageField<super::EPNDOHDGFOD::EPNDOHDGFOD>,
-    // @@protoc_insertion_point(field:BNIDANKKOKB.CGGDOGDIDNK)
-    pub CGGDOGDIDNK: u32,
-    // @@protoc_insertion_point(field:BNIDANKKOKB.ELGANMDPMID)
-    pub ELGANMDPMID: u32,
     // @@protoc_insertion_point(field:BNIDANKKOKB.IHLEAMDIKKN)
     pub IHLEAMDIKKN: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
-    // @@protoc_insertion_point(field:BNIDANKKOKB.FBNHDEFNECI)
-    pub FBNHDEFNECI: u32,
+    // @@protoc_insertion_point(field:BNIDANKKOKB.CGGDOGDIDNK)
+    pub CGGDOGDIDNK: u32,
     // @@protoc_insertion_point(field:BNIDANKKOKB.JFDMNPJAFHL)
     pub JFDMNPJAFHL: u32,
+    // @@protoc_insertion_point(field:BNIDANKKOKB.ELGANMDPMID)
+    pub ELGANMDPMID: u32,
+    // @@protoc_insertion_point(field:BNIDANKKOKB.FBNHDEFNECI)
+    pub FBNHDEFNECI: u32,
+    // @@protoc_insertion_point(field:BNIDANKKOKB.KDFJCPIICMA)
+    pub KDFJCPIICMA: ::protobuf::MessageField<super::EPNDOHDGFOD::EPNDOHDGFOD>,
     // special fields
     // @@protoc_insertion_point(special_field:BNIDANKKOKB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,10 +59,10 @@ impl BNIDANKKOKB {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EPNDOHDGFOD::EPNDOHDGFOD>(
-            "KDFJCPIICMA",
-            |m: &BNIDANKKOKB| { &m.KDFJCPIICMA },
-            |m: &mut BNIDANKKOKB| { &mut m.KDFJCPIICMA },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IHLEAMDIKKN",
+            |m: &BNIDANKKOKB| { &m.IHLEAMDIKKN },
+            |m: &mut BNIDANKKOKB| { &mut m.IHLEAMDIKKN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CGGDOGDIDNK",
@@ -70,24 +70,24 @@ impl BNIDANKKOKB {
             |m: &mut BNIDANKKOKB| { &mut m.CGGDOGDIDNK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JFDMNPJAFHL",
+            |m: &BNIDANKKOKB| { &m.JFDMNPJAFHL },
+            |m: &mut BNIDANKKOKB| { &mut m.JFDMNPJAFHL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ELGANMDPMID",
             |m: &BNIDANKKOKB| { &m.ELGANMDPMID },
             |m: &mut BNIDANKKOKB| { &mut m.ELGANMDPMID },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IHLEAMDIKKN",
-            |m: &BNIDANKKOKB| { &m.IHLEAMDIKKN },
-            |m: &mut BNIDANKKOKB| { &mut m.IHLEAMDIKKN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FBNHDEFNECI",
             |m: &BNIDANKKOKB| { &m.FBNHDEFNECI },
             |m: &mut BNIDANKKOKB| { &mut m.FBNHDEFNECI },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JFDMNPJAFHL",
-            |m: &BNIDANKKOKB| { &m.JFDMNPJAFHL },
-            |m: &mut BNIDANKKOKB| { &mut m.JFDMNPJAFHL },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EPNDOHDGFOD::EPNDOHDGFOD>(
+            "KDFJCPIICMA",
+            |m: &BNIDANKKOKB| { &m.KDFJCPIICMA },
+            |m: &mut BNIDANKKOKB| { &mut m.KDFJCPIICMA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BNIDANKKOKB>(
             "BNIDANKKOKB",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for BNIDANKKOKB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KDFJCPIICMA)?;
-                },
-                64 => {
-                    self.CGGDOGDIDNK = is.read_uint32()?;
-                },
-                120 => {
-                    self.ELGANMDPMID = is.read_uint32()?;
-                },
-                88 => {
+                48 => {
                     self.IHLEAMDIKKN = is.read_enum_or_unknown()?;
                 },
-                56 => {
+                32 => {
+                    self.CGGDOGDIDNK = is.read_uint32()?;
+                },
+                8 => {
+                    self.JFDMNPJAFHL = is.read_uint32()?;
+                },
+                80 => {
+                    self.ELGANMDPMID = is.read_uint32()?;
+                },
+                112 => {
                     self.FBNHDEFNECI = is.read_uint32()?;
                 },
-                24 => {
-                    self.JFDMNPJAFHL = is.read_uint32()?;
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KDFJCPIICMA)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,24 +137,24 @@ impl ::protobuf::Message for BNIDANKKOKB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.IHLEAMDIKKN != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(6, self.IHLEAMDIKKN.value());
+        }
+        if self.CGGDOGDIDNK != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.CGGDOGDIDNK);
+        }
+        if self.JFDMNPJAFHL != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.JFDMNPJAFHL);
+        }
+        if self.ELGANMDPMID != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.ELGANMDPMID);
+        }
+        if self.FBNHDEFNECI != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.FBNHDEFNECI);
+        }
         if let Some(v) = self.KDFJCPIICMA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.CGGDOGDIDNK != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.CGGDOGDIDNK);
-        }
-        if self.ELGANMDPMID != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.ELGANMDPMID);
-        }
-        if self.IHLEAMDIKKN != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(11, self.IHLEAMDIKKN.value());
-        }
-        if self.FBNHDEFNECI != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.FBNHDEFNECI);
-        }
-        if self.JFDMNPJAFHL != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.JFDMNPJAFHL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,23 +162,23 @@ impl ::protobuf::Message for BNIDANKKOKB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.KDFJCPIICMA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if self.IHLEAMDIKKN != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.IHLEAMDIKKN))?;
         }
         if self.CGGDOGDIDNK != 0 {
-            os.write_uint32(8, self.CGGDOGDIDNK)?;
-        }
-        if self.ELGANMDPMID != 0 {
-            os.write_uint32(15, self.ELGANMDPMID)?;
-        }
-        if self.IHLEAMDIKKN != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.IHLEAMDIKKN))?;
-        }
-        if self.FBNHDEFNECI != 0 {
-            os.write_uint32(7, self.FBNHDEFNECI)?;
+            os.write_uint32(4, self.CGGDOGDIDNK)?;
         }
         if self.JFDMNPJAFHL != 0 {
-            os.write_uint32(3, self.JFDMNPJAFHL)?;
+            os.write_uint32(1, self.JFDMNPJAFHL)?;
+        }
+        if self.ELGANMDPMID != 0 {
+            os.write_uint32(10, self.ELGANMDPMID)?;
+        }
+        if self.FBNHDEFNECI != 0 {
+            os.write_uint32(14, self.FBNHDEFNECI)?;
+        }
+        if let Some(v) = self.KDFJCPIICMA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,23 +197,23 @@ impl ::protobuf::Message for BNIDANKKOKB {
     }
 
     fn clear(&mut self) {
-        self.KDFJCPIICMA.clear();
-        self.CGGDOGDIDNK = 0;
-        self.ELGANMDPMID = 0;
         self.IHLEAMDIKKN = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE);
-        self.FBNHDEFNECI = 0;
+        self.CGGDOGDIDNK = 0;
         self.JFDMNPJAFHL = 0;
+        self.ELGANMDPMID = 0;
+        self.FBNHDEFNECI = 0;
+        self.KDFJCPIICMA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BNIDANKKOKB {
         static instance: BNIDANKKOKB = BNIDANKKOKB {
-            KDFJCPIICMA: ::protobuf::MessageField::none(),
-            CGGDOGDIDNK: 0,
-            ELGANMDPMID: 0,
             IHLEAMDIKKN: ::protobuf::EnumOrUnknown::from_i32(0),
-            FBNHDEFNECI: 0,
+            CGGDOGDIDNK: 0,
             JFDMNPJAFHL: 0,
+            ELGANMDPMID: 0,
+            FBNHDEFNECI: 0,
+            KDFJCPIICMA: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,13 +239,12 @@ impl ::protobuf::reflect::ProtobufValue for BNIDANKKOKB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BNIDANKKOKB.proto\x1a\x10AvatarType.proto\x1a\x11EPNDOHDGFOD.proto\
-    \"\xf4\x01\n\x0bBNIDANKKOKB\x12.\n\x0bKDFJCPIICMA\x18\x01\x20\x01(\x0b2\
-    \x0c.EPNDOHDGFODR\x0bKDFJCPIICMA\x12\x20\n\x0bCGGDOGDIDNK\x18\x08\x20\
-    \x01(\rR\x0bCGGDOGDIDNK\x12\x20\n\x0bELGANMDPMID\x18\x0f\x20\x01(\rR\x0b\
-    ELGANMDPMID\x12-\n\x0bIHLEAMDIKKN\x18\x0b\x20\x01(\x0e2\x0b.AvatarTypeR\
-    \x0bIHLEAMDIKKN\x12\x20\n\x0bFBNHDEFNECI\x18\x07\x20\x01(\rR\x0bFBNHDEFN\
-    ECI\x12\x20\n\x0bJFDMNPJAFHL\x18\x03\x20\x01(\rR\x0bJFDMNPJAFHLb\x06prot\
-    o3\
+    \"\xf4\x01\n\x0bBNIDANKKOKB\x12-\n\x0bIHLEAMDIKKN\x18\x06\x20\x01(\x0e2\
+    \x0b.AvatarTypeR\x0bIHLEAMDIKKN\x12\x20\n\x0bCGGDOGDIDNK\x18\x04\x20\x01\
+    (\rR\x0bCGGDOGDIDNK\x12\x20\n\x0bJFDMNPJAFHL\x18\x01\x20\x01(\rR\x0bJFDM\
+    NPJAFHL\x12\x20\n\x0bELGANMDPMID\x18\n\x20\x01(\rR\x0bELGANMDPMID\x12\
+    \x20\n\x0bFBNHDEFNECI\x18\x0e\x20\x01(\rR\x0bFBNHDEFNECI\x12.\n\x0bKDFJC\
+    PIICMA\x18\t\x20\x01(\x0b2\x0c.EPNDOHDGFODR\x0bKDFJCPIICMAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for RegionStopScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                56 => {
                     self.FLHEPPGBEIJ = is.read_int64()?;
                 },
-                48 => {
+                64 => {
                     self.CNOJAJABMNF = is.read_int64()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for RegionStopScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.FLHEPPGBEIJ != 0 {
-            my_size += ::protobuf::rt::int64_size(3, self.FLHEPPGBEIJ);
+            my_size += ::protobuf::rt::int64_size(7, self.FLHEPPGBEIJ);
         }
         if self.CNOJAJABMNF != 0 {
-            my_size += ::protobuf::rt::int64_size(6, self.CNOJAJABMNF);
+            my_size += ::protobuf::rt::int64_size(8, self.CNOJAJABMNF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for RegionStopScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.FLHEPPGBEIJ != 0 {
-            os.write_int64(3, self.FLHEPPGBEIJ)?;
+            os.write_int64(7, self.FLHEPPGBEIJ)?;
         }
         if self.CNOJAJABMNF != 0 {
-            os.write_int64(6, self.CNOJAJABMNF)?;
+            os.write_int64(8, self.CNOJAJABMNF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for RegionStopScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18RegionStopScNotify.proto\"X\n\x12RegionStopScNotify\x12\x20\n\x0bF\
-    LHEPPGBEIJ\x18\x03\x20\x01(\x03R\x0bFLHEPPGBEIJ\x12\x20\n\x0bCNOJAJABMNF\
-    \x18\x06\x20\x01(\x03R\x0bCNOJAJABMNFb\x06proto3\
+    LHEPPGBEIJ\x18\x07\x20\x01(\x03R\x0bFLHEPPGBEIJ\x12\x20\n\x0bCNOJAJABMNF\
+    \x18\x08\x20\x01(\x03R\x0bCNOJAJABMNFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

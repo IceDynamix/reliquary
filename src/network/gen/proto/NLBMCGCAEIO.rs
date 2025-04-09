@@ -92,10 +92,10 @@ impl ::protobuf::Message for NLBMCGCAEIO {
                 24 => {
                     self.PILDEFKPKLE.push(is.read_uint32()?);
                 },
-                48 => {
+                80 => {
                     self.AFLEAJIHNEB = is.read_uint32()?;
                 },
-                120 => {
+                40 => {
                     self.slot = is.read_uint32()?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for NLBMCGCAEIO {
         let mut my_size = 0;
         my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.PILDEFKPKLE);
         if self.AFLEAJIHNEB != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.AFLEAJIHNEB);
+            my_size += ::protobuf::rt::uint32_size(10, self.AFLEAJIHNEB);
         }
         if self.slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.slot);
+            my_size += ::protobuf::rt::uint32_size(5, self.slot);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,10 +125,10 @@ impl ::protobuf::Message for NLBMCGCAEIO {
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         os.write_repeated_packed_uint32(3, &self.PILDEFKPKLE)?;
         if self.AFLEAJIHNEB != 0 {
-            os.write_uint32(6, self.AFLEAJIHNEB)?;
+            os.write_uint32(10, self.AFLEAJIHNEB)?;
         }
         if self.slot != 0 {
-            os.write_uint32(15, self.slot)?;
+            os.write_uint32(5, self.slot)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for NLBMCGCAEIO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NLBMCGCAEIO.proto\"e\n\x0bNLBMCGCAEIO\x12\x20\n\x0bPILDEFKPKLE\x18\
-    \x03\x20\x03(\rR\x0bPILDEFKPKLE\x12\x20\n\x0bAFLEAJIHNEB\x18\x06\x20\x01\
-    (\rR\x0bAFLEAJIHNEB\x12\x12\n\x04slot\x18\x0f\x20\x01(\rR\x04slotb\x06pr\
-    oto3\
+    \x03\x20\x03(\rR\x0bPILDEFKPKLE\x12\x20\n\x0bAFLEAJIHNEB\x18\n\x20\x01(\
+    \rR\x0bAFLEAJIHNEB\x12\x12\n\x04slot\x18\x05\x20\x01(\rR\x04slotb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

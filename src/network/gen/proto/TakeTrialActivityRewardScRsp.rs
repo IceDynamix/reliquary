@@ -30,10 +30,10 @@ pub struct TakeTrialActivityRewardScRsp {
     // message fields
     // @@protoc_insertion_point(field:TakeTrialActivityRewardScRsp.CFONLBPOABP)
     pub CFONLBPOABP: u32,
-    // @@protoc_insertion_point(field:TakeTrialActivityRewardScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:TakeTrialActivityRewardScRsp.BHELBOHKBBM)
     pub BHELBOHKBBM: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:TakeTrialActivityRewardScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeTrialActivityRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl TakeTrialActivityRewardScRsp {
             |m: &TakeTrialActivityRewardScRsp| { &m.CFONLBPOABP },
             |m: &mut TakeTrialActivityRewardScRsp| { &mut m.CFONLBPOABP },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &TakeTrialActivityRewardScRsp| { &m.retcode },
-            |m: &mut TakeTrialActivityRewardScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "BHELBOHKBBM",
             |m: &TakeTrialActivityRewardScRsp| { &m.BHELBOHKBBM },
             |m: &mut TakeTrialActivityRewardScRsp| { &mut m.BHELBOHKBBM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &TakeTrialActivityRewardScRsp| { &m.retcode },
+            |m: &mut TakeTrialActivityRewardScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeTrialActivityRewardScRsp>(
             "TakeTrialActivityRewardScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for TakeTrialActivityRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                16 => {
                     self.CFONLBPOABP = is.read_uint32()?;
                 },
-                32 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                10 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHELBOHKBBM)?;
+                },
+                8 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for TakeTrialActivityRewardScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CFONLBPOABP != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.CFONLBPOABP);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.CFONLBPOABP);
         }
         if let Some(v) = self.BHELBOHKBBM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for TakeTrialActivityRewardScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CFONLBPOABP != 0 {
-            os.write_uint32(15, self.CFONLBPOABP)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(2, self.CFONLBPOABP)?;
         }
         if let Some(v) = self.BHELBOHKBBM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(1, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for TakeTrialActivityRewardScRsp {
 
     fn clear(&mut self) {
         self.CFONLBPOABP = 0;
-        self.retcode = 0;
         self.BHELBOHKBBM.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeTrialActivityRewardScRsp {
         static instance: TakeTrialActivityRewardScRsp = TakeTrialActivityRewardScRsp {
             CFONLBPOABP: 0,
-            retcode: 0,
             BHELBOHKBBM: ::protobuf::MessageField::none(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for TakeTrialActivityRewardScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"TakeTrialActivityRewardScRsp.proto\x1a\x0eItemList.proto\"\x87\x01\n\
-    \x1cTakeTrialActivityRewardScRsp\x12\x20\n\x0bCFONLBPOABP\x18\x0f\x20\
-    \x01(\rR\x0bCFONLBPOABP\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retc\
-    ode\x12+\n\x0bBHELBOHKBBM\x18\x01\x20\x01(\x0b2\t.ItemListR\x0bBHELBOHKB\
-    BMb\x06proto3\
+    \x1cTakeTrialActivityRewardScRsp\x12\x20\n\x0bCFONLBPOABP\x18\x02\x20\
+    \x01(\rR\x0bCFONLBPOABP\x12+\n\x0bBHELBOHKBBM\x18\x0b\x20\x01(\x0b2\t.It\
+    emListR\x0bBHELBOHKBBM\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retco\
+    deb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

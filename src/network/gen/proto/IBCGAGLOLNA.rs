@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IBCGAGLOLNA {
     // message fields
-    // @@protoc_insertion_point(field:IBCGAGLOLNA.BCEMAKCMADN)
-    pub BCEMAKCMADN: ::std::vec::Vec<super::MJFCEMBPICH::MJFCEMBPICH>,
     // @@protoc_insertion_point(field:IBCGAGLOLNA.JJCIPIMCBBJ)
     pub JJCIPIMCBBJ: i64,
     // @@protoc_insertion_point(field:IBCGAGLOLNA.HOBJMINNBOP)
     pub HOBJMINNBOP: u32,
+    // @@protoc_insertion_point(field:IBCGAGLOLNA.BCEMAKCMADN)
+    pub BCEMAKCMADN: ::std::vec::Vec<super::MJFCEMBPICH::MJFCEMBPICH>,
     // special fields
     // @@protoc_insertion_point(special_field:IBCGAGLOLNA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,11 +53,6 @@ impl IBCGAGLOLNA {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BCEMAKCMADN",
-            |m: &IBCGAGLOLNA| { &m.BCEMAKCMADN },
-            |m: &mut IBCGAGLOLNA| { &mut m.BCEMAKCMADN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JJCIPIMCBBJ",
             |m: &IBCGAGLOLNA| { &m.JJCIPIMCBBJ },
@@ -67,6 +62,11 @@ impl IBCGAGLOLNA {
             "HOBJMINNBOP",
             |m: &IBCGAGLOLNA| { &m.HOBJMINNBOP },
             |m: &mut IBCGAGLOLNA| { &mut m.HOBJMINNBOP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "BCEMAKCMADN",
+            |m: &IBCGAGLOLNA| { &m.BCEMAKCMADN },
+            |m: &mut IBCGAGLOLNA| { &mut m.BCEMAKCMADN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IBCGAGLOLNA>(
             "IBCGAGLOLNA",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for IBCGAGLOLNA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    self.BCEMAKCMADN.push(is.read_message()?);
-                },
-                40 => {
+                64 => {
                     self.JJCIPIMCBBJ = is.read_int64()?;
                 },
                 88 => {
                     self.HOBJMINNBOP = is.read_uint32()?;
+                },
+                26 => {
+                    self.BCEMAKCMADN.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,31 +107,31 @@ impl ::protobuf::Message for IBCGAGLOLNA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.BCEMAKCMADN {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if self.JJCIPIMCBBJ != 0 {
-            my_size += ::protobuf::rt::int64_size(5, self.JJCIPIMCBBJ);
+            my_size += ::protobuf::rt::int64_size(8, self.JJCIPIMCBBJ);
         }
         if self.HOBJMINNBOP != 0 {
             my_size += ::protobuf::rt::uint32_size(11, self.HOBJMINNBOP);
         }
+        for value in &self.BCEMAKCMADN {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.BCEMAKCMADN {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
         if self.JJCIPIMCBBJ != 0 {
-            os.write_int64(5, self.JJCIPIMCBBJ)?;
+            os.write_int64(8, self.JJCIPIMCBBJ)?;
         }
         if self.HOBJMINNBOP != 0 {
             os.write_uint32(11, self.HOBJMINNBOP)?;
         }
+        for v in &self.BCEMAKCMADN {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,17 +149,17 @@ impl ::protobuf::Message for IBCGAGLOLNA {
     }
 
     fn clear(&mut self) {
-        self.BCEMAKCMADN.clear();
         self.JJCIPIMCBBJ = 0;
         self.HOBJMINNBOP = 0;
+        self.BCEMAKCMADN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IBCGAGLOLNA {
         static instance: IBCGAGLOLNA = IBCGAGLOLNA {
-            BCEMAKCMADN: ::std::vec::Vec::new(),
             JJCIPIMCBBJ: 0,
             HOBJMINNBOP: 0,
+            BCEMAKCMADN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for IBCGAGLOLNA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IBCGAGLOLNA.proto\x1a\x11MJFCEMBPICH.proto\"\x81\x01\n\x0bIBCGAGLO\
-    LNA\x12.\n\x0bBCEMAKCMADN\x18\t\x20\x03(\x0b2\x0c.MJFCEMBPICHR\x0bBCEMAK\
-    CMADN\x12\x20\n\x0bJJCIPIMCBBJ\x18\x05\x20\x01(\x03R\x0bJJCIPIMCBBJ\x12\
-    \x20\n\x0bHOBJMINNBOP\x18\x0b\x20\x01(\rR\x0bHOBJMINNBOPb\x06proto3\
+    LNA\x12\x20\n\x0bJJCIPIMCBBJ\x18\x08\x20\x01(\x03R\x0bJJCIPIMCBBJ\x12\
+    \x20\n\x0bHOBJMINNBOP\x18\x0b\x20\x01(\rR\x0bHOBJMINNBOP\x12.\n\x0bBCEMA\
+    KCMADN\x18\x03\x20\x03(\x0b2\x0c.MJFCEMBPICHR\x0bBCEMAKCMADNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

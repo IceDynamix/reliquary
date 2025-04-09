@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetAuthkeyCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetAuthkeyCsReq.GOIJEMCCCGL)
-    pub GOIJEMCCCGL: u32,
-    // @@protoc_insertion_point(field:GetAuthkeyCsReq.ACDJGNHJDAI)
-    pub ACDJGNHJDAI: ::std::string::String,
     // @@protoc_insertion_point(field:GetAuthkeyCsReq.MPGPGFKBMHG)
     pub MPGPGFKBMHG: u32,
+    // @@protoc_insertion_point(field:GetAuthkeyCsReq.ACDJGNHJDAI)
+    pub ACDJGNHJDAI: ::std::string::String,
+    // @@protoc_insertion_point(field:GetAuthkeyCsReq.GOIJEMCCCGL)
+    pub GOIJEMCCCGL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetAuthkeyCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl GetAuthkeyCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GOIJEMCCCGL",
-            |m: &GetAuthkeyCsReq| { &m.GOIJEMCCCGL },
-            |m: &mut GetAuthkeyCsReq| { &mut m.GOIJEMCCCGL },
+            "MPGPGFKBMHG",
+            |m: &GetAuthkeyCsReq| { &m.MPGPGFKBMHG },
+            |m: &mut GetAuthkeyCsReq| { &mut m.MPGPGFKBMHG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ACDJGNHJDAI",
@@ -64,9 +64,9 @@ impl GetAuthkeyCsReq {
             |m: &mut GetAuthkeyCsReq| { &mut m.ACDJGNHJDAI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MPGPGFKBMHG",
-            |m: &GetAuthkeyCsReq| { &m.MPGPGFKBMHG },
-            |m: &mut GetAuthkeyCsReq| { &mut m.MPGPGFKBMHG },
+            "GOIJEMCCCGL",
+            |m: &GetAuthkeyCsReq| { &m.GOIJEMCCCGL },
+            |m: &mut GetAuthkeyCsReq| { &mut m.GOIJEMCCCGL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetAuthkeyCsReq>(
             "GetAuthkeyCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GetAuthkeyCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.GOIJEMCCCGL = is.read_uint32()?;
+                120 => {
+                    self.MPGPGFKBMHG = is.read_uint32()?;
                 },
-                122 => {
+                90 => {
                     self.ACDJGNHJDAI = is.read_string()?;
                 },
-                16 => {
-                    self.MPGPGFKBMHG = is.read_uint32()?;
+                56 => {
+                    self.GOIJEMCCCGL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for GetAuthkeyCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GOIJEMCCCGL != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.GOIJEMCCCGL);
+        if self.MPGPGFKBMHG != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.MPGPGFKBMHG);
         }
         if !self.ACDJGNHJDAI.is_empty() {
-            my_size += ::protobuf::rt::string_size(15, &self.ACDJGNHJDAI);
+            my_size += ::protobuf::rt::string_size(11, &self.ACDJGNHJDAI);
         }
-        if self.MPGPGFKBMHG != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.MPGPGFKBMHG);
+        if self.GOIJEMCCCGL != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.GOIJEMCCCGL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for GetAuthkeyCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GOIJEMCCCGL != 0 {
-            os.write_uint32(1, self.GOIJEMCCCGL)?;
+        if self.MPGPGFKBMHG != 0 {
+            os.write_uint32(15, self.MPGPGFKBMHG)?;
         }
         if !self.ACDJGNHJDAI.is_empty() {
-            os.write_string(15, &self.ACDJGNHJDAI)?;
+            os.write_string(11, &self.ACDJGNHJDAI)?;
         }
-        if self.MPGPGFKBMHG != 0 {
-            os.write_uint32(2, self.MPGPGFKBMHG)?;
+        if self.GOIJEMCCCGL != 0 {
+            os.write_uint32(7, self.GOIJEMCCCGL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for GetAuthkeyCsReq {
     }
 
     fn clear(&mut self) {
-        self.GOIJEMCCCGL = 0;
-        self.ACDJGNHJDAI.clear();
         self.MPGPGFKBMHG = 0;
+        self.ACDJGNHJDAI.clear();
+        self.GOIJEMCCCGL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetAuthkeyCsReq {
         static instance: GetAuthkeyCsReq = GetAuthkeyCsReq {
-            GOIJEMCCCGL: 0,
-            ACDJGNHJDAI: ::std::string::String::new(),
             MPGPGFKBMHG: 0,
+            ACDJGNHJDAI: ::std::string::String::new(),
+            GOIJEMCCCGL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for GetAuthkeyCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15GetAuthkeyCsReq.proto\"w\n\x0fGetAuthkeyCsReq\x12\x20\n\x0bGOIJEMC\
-    CCGL\x18\x01\x20\x01(\rR\x0bGOIJEMCCCGL\x12\x20\n\x0bACDJGNHJDAI\x18\x0f\
-    \x20\x01(\tR\x0bACDJGNHJDAI\x12\x20\n\x0bMPGPGFKBMHG\x18\x02\x20\x01(\rR\
-    \x0bMPGPGFKBMHGb\x06proto3\
+    \n\x15GetAuthkeyCsReq.proto\"w\n\x0fGetAuthkeyCsReq\x12\x20\n\x0bMPGPGFK\
+    BMHG\x18\x0f\x20\x01(\rR\x0bMPGPGFKBMHG\x12\x20\n\x0bACDJGNHJDAI\x18\x0b\
+    \x20\x01(\tR\x0bACDJGNHJDAI\x12\x20\n\x0bGOIJEMCCCGL\x18\x07\x20\x01(\rR\
+    \x0bGOIJEMCCCGLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

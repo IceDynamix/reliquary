@@ -34,8 +34,8 @@ pub struct AIPAKGHNDOK {
     pub level: u32,
     // @@protoc_insertion_point(field:AIPAKGHNDOK.main_affix_id)
     pub main_affix_id: u32,
-    // @@protoc_insertion_point(field:AIPAKGHNDOK.PDPKAJPLGBB)
-    pub PDPKAJPLGBB: ::std::vec::Vec<super::RelicAffix::RelicAffix>,
+    // @@protoc_insertion_point(field:AIPAKGHNDOK.sub_affix_list)
+    pub sub_affix_list: ::std::vec::Vec<super::RelicAffix::RelicAffix>,
     // @@protoc_insertion_point(field:AIPAKGHNDOK.unique_id)
     pub unique_id: u32,
     // @@protoc_insertion_point(field:AIPAKGHNDOK.PMAGEEFFIHD)
@@ -79,9 +79,9 @@ impl AIPAKGHNDOK {
             |m: &mut AIPAKGHNDOK| { &mut m.main_affix_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PDPKAJPLGBB",
-            |m: &AIPAKGHNDOK| { &m.PDPKAJPLGBB },
-            |m: &mut AIPAKGHNDOK| { &mut m.PDPKAJPLGBB },
+            "sub_affix_list",
+            |m: &AIPAKGHNDOK| { &m.sub_affix_list },
+            |m: &mut AIPAKGHNDOK| { &mut m.sub_affix_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "unique_id",
@@ -131,7 +131,7 @@ impl ::protobuf::Message for AIPAKGHNDOK {
                     self.main_affix_id = is.read_uint32()?;
                 },
                 34 => {
-                    self.PDPKAJPLGBB.push(is.read_message()?);
+                    self.sub_affix_list.push(is.read_message()?);
                 },
                 40 => {
                     self.unique_id = is.read_uint32()?;
@@ -166,7 +166,7 @@ impl ::protobuf::Message for AIPAKGHNDOK {
         if self.main_affix_id != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.main_affix_id);
         }
-        for value in &self.PDPKAJPLGBB {
+        for value in &self.sub_affix_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -197,7 +197,7 @@ impl ::protobuf::Message for AIPAKGHNDOK {
         if self.main_affix_id != 0 {
             os.write_uint32(3, self.main_affix_id)?;
         }
-        for v in &self.PDPKAJPLGBB {
+        for v in &self.sub_affix_list {
             ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
         if self.unique_id != 0 {
@@ -232,7 +232,7 @@ impl ::protobuf::Message for AIPAKGHNDOK {
         self.ELGANMDPMID = 0;
         self.level = 0;
         self.main_affix_id = 0;
-        self.PDPKAJPLGBB.clear();
+        self.sub_affix_list.clear();
         self.unique_id = 0;
         self.PMAGEEFFIHD = 0;
         self.slot = 0;
@@ -245,7 +245,7 @@ impl ::protobuf::Message for AIPAKGHNDOK {
             ELGANMDPMID: 0,
             level: 0,
             main_affix_id: 0,
-            PDPKAJPLGBB: ::std::vec::Vec::new(),
+            sub_affix_list: ::std::vec::Vec::new(),
             unique_id: 0,
             PMAGEEFFIHD: 0,
             slot: 0,
@@ -274,14 +274,14 @@ impl ::protobuf::reflect::ProtobufValue for AIPAKGHNDOK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AIPAKGHNDOK.proto\x1a\x10RelicAffix.proto\"\x8d\x02\n\x0bAIPAKGHND\
+    \n\x11AIPAKGHNDOK.proto\x1a\x10RelicAffix.proto\"\x91\x02\n\x0bAIPAKGHND\
     OK\x12\x20\n\x0bELGANMDPMID\x18\x01\x20\x01(\rR\x0bELGANMDPMID\x12\x14\n\
     \x05level\x18\x02\x20\x01(\rR\x05level\x12\"\n\rmain_affix_id\x18\x03\
-    \x20\x01(\rR\x0bmainAffixId\x12-\n\x0bPDPKAJPLGBB\x18\x04\x20\x03(\x0b2\
-    \x0b.RelicAffixR\x0bPDPKAJPLGBB\x12\x1b\n\tunique_id\x18\x05\x20\x01(\rR\
-    \x08uniqueId\x12\x20\n\x0bPMAGEEFFIHD\x18\x06\x20\x01(\rR\x0bPMAGEEFFIHD\
-    \x12\x12\n\x04slot\x18\x07\x20\x01(\rR\x04slot\x12\x20\n\x0bJLKMNCOIDLG\
-    \x18\x08\x20\x01(\rR\x0bJLKMNCOIDLGb\x06proto3\
+    \x20\x01(\rR\x0bmainAffixId\x121\n\x0esub_affix_list\x18\x04\x20\x03(\
+    \x0b2\x0b.RelicAffixR\x0csubAffixList\x12\x1b\n\tunique_id\x18\x05\x20\
+    \x01(\rR\x08uniqueId\x12\x20\n\x0bPMAGEEFFIHD\x18\x06\x20\x01(\rR\x0bPMA\
+    GEEFFIHD\x12\x12\n\x04slot\x18\x07\x20\x01(\rR\x04slot\x12\x20\n\x0bJLKM\
+    NCOIDLG\x18\x08\x20\x01(\rR\x0bJLKMNCOIDLGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

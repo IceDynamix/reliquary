@@ -79,10 +79,10 @@ impl ::protobuf::Message for HOFHGHLDJGG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                64 => {
                     self.DDJPKFLBIGF = is.read_uint32()?;
                 },
-                112 => {
+                88 => {
                     self.GDDCGEKOJOI = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for HOFHGHLDJGG {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.DDJPKFLBIGF != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.DDJPKFLBIGF);
+            my_size += ::protobuf::rt::uint32_size(8, self.DDJPKFLBIGF);
         }
         if self.GDDCGEKOJOI != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.GDDCGEKOJOI);
+            my_size += ::protobuf::rt::uint32_size(11, self.GDDCGEKOJOI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for HOFHGHLDJGG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.DDJPKFLBIGF != 0 {
-            os.write_uint32(11, self.DDJPKFLBIGF)?;
+            os.write_uint32(8, self.DDJPKFLBIGF)?;
         }
         if self.GDDCGEKOJOI != 0 {
-            os.write_uint32(14, self.GDDCGEKOJOI)?;
+            os.write_uint32(11, self.GDDCGEKOJOI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for HOFHGHLDJGG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HOFHGHLDJGG.proto\"Q\n\x0bHOFHGHLDJGG\x12\x20\n\x0bDDJPKFLBIGF\x18\
-    \x0b\x20\x01(\rR\x0bDDJPKFLBIGF\x12\x20\n\x0bGDDCGEKOJOI\x18\x0e\x20\x01\
+    \x08\x20\x01(\rR\x0bDDJPKFLBIGF\x12\x20\n\x0bGDDCGEKOJOI\x18\x0b\x20\x01\
     (\rR\x0bGDDCGEKOJOIb\x06proto3\
 ";
 

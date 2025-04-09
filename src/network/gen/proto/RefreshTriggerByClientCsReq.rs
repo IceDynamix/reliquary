@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RefreshTriggerByClientCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RefreshTriggerByClientCsReq.LNDEOBPIHDP)
-    pub LNDEOBPIHDP: ::protobuf::MessageField<super::CFKHKILIHHF::CFKHKILIHHF>,
     // @@protoc_insertion_point(field:RefreshTriggerByClientCsReq.OLPGLIGLHGC)
     pub OLPGLIGLHGC: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:RefreshTriggerByClientCsReq.KKCEGAIBADO)
     pub KKCEGAIBADO: ::std::string::String,
     // @@protoc_insertion_point(field:RefreshTriggerByClientCsReq.AAKOLAHMAPG)
     pub AAKOLAHMAPG: u32,
+    // @@protoc_insertion_point(field:RefreshTriggerByClientCsReq.LNDEOBPIHDP)
+    pub LNDEOBPIHDP: ::protobuf::MessageField<super::CFKHKILIHHF::CFKHKILIHHF>,
     // special fields
     // @@protoc_insertion_point(special_field:RefreshTriggerByClientCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,11 +55,6 @@ impl RefreshTriggerByClientCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CFKHKILIHHF::CFKHKILIHHF>(
-            "LNDEOBPIHDP",
-            |m: &RefreshTriggerByClientCsReq| { &m.LNDEOBPIHDP },
-            |m: &mut RefreshTriggerByClientCsReq| { &mut m.LNDEOBPIHDP },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "OLPGLIGLHGC",
             |m: &RefreshTriggerByClientCsReq| { &m.OLPGLIGLHGC },
@@ -74,6 +69,11 @@ impl RefreshTriggerByClientCsReq {
             "AAKOLAHMAPG",
             |m: &RefreshTriggerByClientCsReq| { &m.AAKOLAHMAPG },
             |m: &mut RefreshTriggerByClientCsReq| { &mut m.AAKOLAHMAPG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CFKHKILIHHF::CFKHKILIHHF>(
+            "LNDEOBPIHDP",
+            |m: &RefreshTriggerByClientCsReq| { &m.LNDEOBPIHDP },
+            |m: &mut RefreshTriggerByClientCsReq| { &mut m.LNDEOBPIHDP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RefreshTriggerByClientCsReq>(
             "RefreshTriggerByClientCsReq",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for RefreshTriggerByClientCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LNDEOBPIHDP)?;
-                },
-                106 => {
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.OLPGLIGLHGC)?;
                 },
-                104 => {
+                72 => {
                     self.OLPGLIGLHGC.push(is.read_uint32()?);
                 },
-                26 => {
+                18 => {
                     self.KKCEGAIBADO = is.read_string()?;
                 },
-                16 => {
+                24 => {
                     self.AAKOLAHMAPG = is.read_uint32()?;
+                },
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LNDEOBPIHDP)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,16 +120,16 @@ impl ::protobuf::Message for RefreshTriggerByClientCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.OLPGLIGLHGC);
+        if !self.KKCEGAIBADO.is_empty() {
+            my_size += ::protobuf::rt::string_size(2, &self.KKCEGAIBADO);
+        }
+        if self.AAKOLAHMAPG != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.AAKOLAHMAPG);
+        }
         if let Some(v) = self.LNDEOBPIHDP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.OLPGLIGLHGC);
-        if !self.KKCEGAIBADO.is_empty() {
-            my_size += ::protobuf::rt::string_size(3, &self.KKCEGAIBADO);
-        }
-        if self.AAKOLAHMAPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.AAKOLAHMAPG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,15 +137,15 @@ impl ::protobuf::Message for RefreshTriggerByClientCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.LNDEOBPIHDP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        }
-        os.write_repeated_packed_uint32(13, &self.OLPGLIGLHGC)?;
+        os.write_repeated_packed_uint32(9, &self.OLPGLIGLHGC)?;
         if !self.KKCEGAIBADO.is_empty() {
-            os.write_string(3, &self.KKCEGAIBADO)?;
+            os.write_string(2, &self.KKCEGAIBADO)?;
         }
         if self.AAKOLAHMAPG != 0 {
-            os.write_uint32(2, self.AAKOLAHMAPG)?;
+            os.write_uint32(3, self.AAKOLAHMAPG)?;
+        }
+        if let Some(v) = self.LNDEOBPIHDP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for RefreshTriggerByClientCsReq {
     }
 
     fn clear(&mut self) {
-        self.LNDEOBPIHDP.clear();
         self.OLPGLIGLHGC.clear();
         self.KKCEGAIBADO.clear();
         self.AAKOLAHMAPG = 0;
+        self.LNDEOBPIHDP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RefreshTriggerByClientCsReq {
         static instance: RefreshTriggerByClientCsReq = RefreshTriggerByClientCsReq {
-            LNDEOBPIHDP: ::protobuf::MessageField::none(),
             OLPGLIGLHGC: ::std::vec::Vec::new(),
             KKCEGAIBADO: ::std::string::String::new(),
             AAKOLAHMAPG: 0,
+            LNDEOBPIHDP: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for RefreshTriggerByClientCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!RefreshTriggerByClientCsReq.proto\x1a\x11CFKHKILIHHF.proto\"\xb3\x01\
-    \n\x1bRefreshTriggerByClientCsReq\x12.\n\x0bLNDEOBPIHDP\x18\x08\x20\x01(\
-    \x0b2\x0c.CFKHKILIHHFR\x0bLNDEOBPIHDP\x12\x20\n\x0bOLPGLIGLHGC\x18\r\x20\
-    \x03(\rR\x0bOLPGLIGLHGC\x12\x20\n\x0bKKCEGAIBADO\x18\x03\x20\x01(\tR\x0b\
-    KKCEGAIBADO\x12\x20\n\x0bAAKOLAHMAPG\x18\x02\x20\x01(\rR\x0bAAKOLAHMAPGb\
+    \n\x1bRefreshTriggerByClientCsReq\x12\x20\n\x0bOLPGLIGLHGC\x18\t\x20\x03\
+    (\rR\x0bOLPGLIGLHGC\x12\x20\n\x0bKKCEGAIBADO\x18\x02\x20\x01(\tR\x0bKKCE\
+    GAIBADO\x12\x20\n\x0bAAKOLAHMAPG\x18\x03\x20\x01(\rR\x0bAAKOLAHMAPG\x12.\
+    \n\x0bLNDEOBPIHDP\x18\x06\x20\x01(\x0b2\x0c.CFKHKILIHHFR\x0bLNDEOBPIHDPb\
     \x06proto3\
 ";
 

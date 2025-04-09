@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdWorldUnlockType {
     // @@protoc_insertion_point(enum_value:CmdWorldUnlockType.CmdWorldUnlockTypeNone)
     CmdWorldUnlockTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdWorldUnlockType.CmdWorldUnlockCsReq)
-    CmdWorldUnlockCsReq = 7627,
     // @@protoc_insertion_point(enum_value:CmdWorldUnlockType.CmdWorldUnlockScRsp)
     CmdWorldUnlockScRsp = 7626,
+    // @@protoc_insertion_point(enum_value:CmdWorldUnlockType.CmdWorldUnlockCsReq)
+    CmdWorldUnlockCsReq = 7627,
 }
 
 impl ::protobuf::Enum for CmdWorldUnlockType {
@@ -45,8 +45,8 @@ impl ::protobuf::Enum for CmdWorldUnlockType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdWorldUnlockType> {
         match value {
             0 => ::std::option::Option::Some(CmdWorldUnlockType::CmdWorldUnlockTypeNone),
-            7627 => ::std::option::Option::Some(CmdWorldUnlockType::CmdWorldUnlockCsReq),
             7626 => ::std::option::Option::Some(CmdWorldUnlockType::CmdWorldUnlockScRsp),
+            7627 => ::std::option::Option::Some(CmdWorldUnlockType::CmdWorldUnlockCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -54,16 +54,16 @@ impl ::protobuf::Enum for CmdWorldUnlockType {
     fn from_str(str: &str) -> ::std::option::Option<CmdWorldUnlockType> {
         match str {
             "CmdWorldUnlockTypeNone" => ::std::option::Option::Some(CmdWorldUnlockType::CmdWorldUnlockTypeNone),
-            "CmdWorldUnlockCsReq" => ::std::option::Option::Some(CmdWorldUnlockType::CmdWorldUnlockCsReq),
             "CmdWorldUnlockScRsp" => ::std::option::Option::Some(CmdWorldUnlockType::CmdWorldUnlockScRsp),
+            "CmdWorldUnlockCsReq" => ::std::option::Option::Some(CmdWorldUnlockType::CmdWorldUnlockCsReq),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdWorldUnlockType] = &[
         CmdWorldUnlockType::CmdWorldUnlockTypeNone,
-        CmdWorldUnlockType::CmdWorldUnlockCsReq,
         CmdWorldUnlockType::CmdWorldUnlockScRsp,
+        CmdWorldUnlockType::CmdWorldUnlockCsReq,
     ];
 }
 
@@ -76,8 +76,8 @@ impl ::protobuf::EnumFull for CmdWorldUnlockType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdWorldUnlockType::CmdWorldUnlockTypeNone => 0,
-            CmdWorldUnlockType::CmdWorldUnlockCsReq => 1,
-            CmdWorldUnlockType::CmdWorldUnlockScRsp => 2,
+            CmdWorldUnlockType::CmdWorldUnlockScRsp => 1,
+            CmdWorldUnlockType::CmdWorldUnlockCsReq => 2,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -97,8 +97,8 @@ impl CmdWorldUnlockType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18CmdWorldUnlockType.proto*d\n\x12CmdWorldUnlockType\x12\x1a\n\x16Cm\
-    dWorldUnlockTypeNone\x10\0\x12\x18\n\x13CmdWorldUnlockCsReq\x10\xcb;\x12\
-    \x18\n\x13CmdWorldUnlockScRsp\x10\xca;b\x06proto3\
+    dWorldUnlockTypeNone\x10\0\x12\x18\n\x13CmdWorldUnlockScRsp\x10\xca;\x12\
+    \x18\n\x13CmdWorldUnlockCsReq\x10\xcb;b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

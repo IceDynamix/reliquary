@@ -79,10 +79,10 @@ impl ::protobuf::Message for EHANAPNJFJD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.IDOMKBKKKKL)?;
                 },
-                122 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CPBNMACLBEH)?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for EHANAPNJFJD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.IDOMKBKKKKL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         if let Some(v) = self.CPBNMACLBEH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for EHANAPNJFJD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EHANAPNJFJD.proto\x1a\x11EIMJEAMDFKJ.proto\x1a\x11PPJCDCOAFDK.prot\
-    o\"m\n\x0bEHANAPNJFJD\x12.\n\x0bIDOMKBKKKKL\x18\x0c\x20\x01(\x0b2\x0c.PP\
-    JCDCOAFDKR\x0bIDOMKBKKKKL\x12.\n\x0bCPBNMACLBEH\x18\x0f\x20\x01(\x0b2\
-    \x0c.EIMJEAMDFKJR\x0bCPBNMACLBEHb\x06proto3\
+    o\"m\n\x0bEHANAPNJFJD\x12.\n\x0bIDOMKBKKKKL\x18\r\x20\x01(\x0b2\x0c.PPJC\
+    DCOAFDKR\x0bIDOMKBKKKKL\x12.\n\x0bCPBNMACLBEH\x18\x06\x20\x01(\x0b2\x0c.\
+    EIMJEAMDFKJR\x0bCPBNMACLBEHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

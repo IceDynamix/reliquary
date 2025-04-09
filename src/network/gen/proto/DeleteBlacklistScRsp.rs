@@ -30,8 +30,8 @@ pub struct DeleteBlacklistScRsp {
     // message fields
     // @@protoc_insertion_point(field:DeleteBlacklistScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:DeleteBlacklistScRsp.KMONAGFELPG)
-    pub KMONAGFELPG: u32,
+    // @@protoc_insertion_point(field:DeleteBlacklistScRsp.uid)
+    pub uid: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DeleteBlacklistScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl DeleteBlacklistScRsp {
             |m: &mut DeleteBlacklistScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KMONAGFELPG",
-            |m: &DeleteBlacklistScRsp| { &m.KMONAGFELPG },
-            |m: &mut DeleteBlacklistScRsp| { &mut m.KMONAGFELPG },
+            "uid",
+            |m: &DeleteBlacklistScRsp| { &m.uid },
+            |m: &mut DeleteBlacklistScRsp| { &mut m.uid },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DeleteBlacklistScRsp>(
             "DeleteBlacklistScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for DeleteBlacklistScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
-                72 => {
-                    self.KMONAGFELPG = is.read_uint32()?;
+                8 => {
+                    self.uid = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for DeleteBlacklistScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
-        if self.KMONAGFELPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.KMONAGFELPG);
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.uid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for DeleteBlacklistScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
-        if self.KMONAGFELPG != 0 {
-            os.write_uint32(9, self.KMONAGFELPG)?;
+        if self.uid != 0 {
+            os.write_uint32(1, self.uid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for DeleteBlacklistScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.KMONAGFELPG = 0;
+        self.uid = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DeleteBlacklistScRsp {
         static instance: DeleteBlacklistScRsp = DeleteBlacklistScRsp {
             retcode: 0,
-            KMONAGFELPG: 0,
+            uid: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for DeleteBlacklistScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aDeleteBlacklistScRsp.proto\"R\n\x14DeleteBlacklistScRsp\x12\x18\n\
-    \x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12\x20\n\x0bKMONAGFELPG\x18\
-    \t\x20\x01(\rR\x0bKMONAGFELPGb\x06proto3\
+    \n\x1aDeleteBlacklistScRsp.proto\"B\n\x14DeleteBlacklistScRsp\x12\x18\n\
+    \x07retcode\x18\x0e\x20\x01(\rR\x07retcode\x12\x10\n\x03uid\x18\x01\x20\
+    \x01(\rR\x03uidb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

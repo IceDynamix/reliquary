@@ -28,26 +28,26 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DJBLLOKKAND {
     // message fields
-    // @@protoc_insertion_point(field:DJBLLOKKAND.KJNCCKHJFHE)
-    pub KJNCCKHJFHE: bool,
-    // @@protoc_insertion_point(field:DJBLLOKKAND.NJFMILJOFOK)
-    pub NJFMILJOFOK: bool,
-    // @@protoc_insertion_point(field:DJBLLOKKAND.NDJIFCKKJKO)
-    pub NDJIFCKKJKO: bool,
-    // @@protoc_insertion_point(field:DJBLLOKKAND.APONEIDMPHL)
-    pub APONEIDMPHL: bool,
-    // @@protoc_insertion_point(field:DJBLLOKKAND.PBKBGLHHKPE)
-    pub PBKBGLHHKPE: bool,
-    // @@protoc_insertion_point(field:DJBLLOKKAND.AICNFAOBCPI)
-    pub AICNFAOBCPI: bool,
-    // @@protoc_insertion_point(field:DJBLLOKKAND.NKEKIBNJMPA)
-    pub NKEKIBNJMPA: bool,
-    // @@protoc_insertion_point(field:DJBLLOKKAND.GMJANOJMKCE)
-    pub GMJANOJMKCE: bool,
-    // @@protoc_insertion_point(field:DJBLLOKKAND.MMMNJCHEMFN)
-    pub MMMNJCHEMFN: bool,
+    // @@protoc_insertion_point(field:DJBLLOKKAND.GHKCMDNKOPN)
+    pub GHKCMDNKOPN: ::protobuf::MessageField<super::OGFIODPILEL::OGFIODPILEL>,
     // @@protoc_insertion_point(field:DJBLLOKKAND.KAPDIMGJLNF)
     pub KAPDIMGJLNF: bool,
+    // @@protoc_insertion_point(field:DJBLLOKKAND.NJFMILJOFOK)
+    pub NJFMILJOFOK: bool,
+    // @@protoc_insertion_point(field:DJBLLOKKAND.APONEIDMPHL)
+    pub APONEIDMPHL: bool,
+    // @@protoc_insertion_point(field:DJBLLOKKAND.GMJANOJMKCE)
+    pub GMJANOJMKCE: bool,
+    // @@protoc_insertion_point(field:DJBLLOKKAND.KJNCCKHJFHE)
+    pub KJNCCKHJFHE: bool,
+    // @@protoc_insertion_point(field:DJBLLOKKAND.AICNFAOBCPI)
+    pub AICNFAOBCPI: bool,
+    // @@protoc_insertion_point(field:DJBLLOKKAND.MMMNJCHEMFN)
+    pub MMMNJCHEMFN: bool,
+    // @@protoc_insertion_point(field:DJBLLOKKAND.NKEKIBNJMPA)
+    pub NKEKIBNJMPA: bool,
+    // @@protoc_insertion_point(field:DJBLLOKKAND.PBKBGLHHKPE)
+    pub PBKBGLHHKPE: bool,
     // special fields
     // @@protoc_insertion_point(special_field:DJBLLOKKAND.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -67,10 +67,15 @@ impl DJBLLOKKAND {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OGFIODPILEL::OGFIODPILEL>(
+            "GHKCMDNKOPN",
+            |m: &DJBLLOKKAND| { &m.GHKCMDNKOPN },
+            |m: &mut DJBLLOKKAND| { &mut m.GHKCMDNKOPN },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KJNCCKHJFHE",
-            |m: &DJBLLOKKAND| { &m.KJNCCKHJFHE },
-            |m: &mut DJBLLOKKAND| { &mut m.KJNCCKHJFHE },
+            "KAPDIMGJLNF",
+            |m: &DJBLLOKKAND| { &m.KAPDIMGJLNF },
+            |m: &mut DJBLLOKKAND| { &mut m.KAPDIMGJLNF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NJFMILJOFOK",
@@ -78,29 +83,9 @@ impl DJBLLOKKAND {
             |m: &mut DJBLLOKKAND| { &mut m.NJFMILJOFOK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NDJIFCKKJKO",
-            |m: &DJBLLOKKAND| { &m.NDJIFCKKJKO },
-            |m: &mut DJBLLOKKAND| { &mut m.NDJIFCKKJKO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "APONEIDMPHL",
             |m: &DJBLLOKKAND| { &m.APONEIDMPHL },
             |m: &mut DJBLLOKKAND| { &mut m.APONEIDMPHL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PBKBGLHHKPE",
-            |m: &DJBLLOKKAND| { &m.PBKBGLHHKPE },
-            |m: &mut DJBLLOKKAND| { &mut m.PBKBGLHHKPE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AICNFAOBCPI",
-            |m: &DJBLLOKKAND| { &m.AICNFAOBCPI },
-            |m: &mut DJBLLOKKAND| { &mut m.AICNFAOBCPI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NKEKIBNJMPA",
-            |m: &DJBLLOKKAND| { &m.NKEKIBNJMPA },
-            |m: &mut DJBLLOKKAND| { &mut m.NKEKIBNJMPA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GMJANOJMKCE",
@@ -108,14 +93,29 @@ impl DJBLLOKKAND {
             |m: &mut DJBLLOKKAND| { &mut m.GMJANOJMKCE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KJNCCKHJFHE",
+            |m: &DJBLLOKKAND| { &m.KJNCCKHJFHE },
+            |m: &mut DJBLLOKKAND| { &mut m.KJNCCKHJFHE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AICNFAOBCPI",
+            |m: &DJBLLOKKAND| { &m.AICNFAOBCPI },
+            |m: &mut DJBLLOKKAND| { &mut m.AICNFAOBCPI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MMMNJCHEMFN",
             |m: &DJBLLOKKAND| { &m.MMMNJCHEMFN },
             |m: &mut DJBLLOKKAND| { &mut m.MMMNJCHEMFN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KAPDIMGJLNF",
-            |m: &DJBLLOKKAND| { &m.KAPDIMGJLNF },
-            |m: &mut DJBLLOKKAND| { &mut m.KAPDIMGJLNF },
+            "NKEKIBNJMPA",
+            |m: &DJBLLOKKAND| { &m.NKEKIBNJMPA },
+            |m: &mut DJBLLOKKAND| { &mut m.NKEKIBNJMPA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PBKBGLHHKPE",
+            |m: &DJBLLOKKAND| { &m.PBKBGLHHKPE },
+            |m: &mut DJBLLOKKAND| { &mut m.PBKBGLHHKPE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DJBLLOKKAND>(
             "DJBLLOKKAND",
@@ -135,35 +135,35 @@ impl ::protobuf::Message for DJBLLOKKAND {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.KJNCCKHJFHE = is.read_bool()?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GHKCMDNKOPN)?;
                 },
-                8 => {
+                80 => {
+                    self.KAPDIMGJLNF = is.read_bool()?;
+                },
+                112 => {
                     self.NJFMILJOFOK = is.read_bool()?;
                 },
-                64 => {
-                    self.NDJIFCKKJKO = is.read_bool()?;
-                },
-                24 => {
+                8 => {
                     self.APONEIDMPHL = is.read_bool()?;
                 },
-                96 => {
-                    self.PBKBGLHHKPE = is.read_bool()?;
+                64 => {
+                    self.GMJANOJMKCE = is.read_bool()?;
+                },
+                40 => {
+                    self.KJNCCKHJFHE = is.read_bool()?;
                 },
                 72 => {
                     self.AICNFAOBCPI = is.read_bool()?;
                 },
-                80 => {
+                48 => {
+                    self.MMMNJCHEMFN = is.read_bool()?;
+                },
+                32 => {
                     self.NKEKIBNJMPA = is.read_bool()?;
                 },
                 88 => {
-                    self.GMJANOJMKCE = is.read_bool()?;
-                },
-                16 => {
-                    self.MMMNJCHEMFN = is.read_bool()?;
-                },
-                40 => {
-                    self.KAPDIMGJLNF = is.read_bool()?;
+                    self.PBKBGLHHKPE = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -177,34 +177,35 @@ impl ::protobuf::Message for DJBLLOKKAND {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KJNCCKHJFHE != false {
+        if let Some(v) = self.GHKCMDNKOPN.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.KAPDIMGJLNF != false {
             my_size += 1 + 1;
         }
         if self.NJFMILJOFOK != false {
             my_size += 1 + 1;
         }
-        if self.NDJIFCKKJKO != false {
-            my_size += 1 + 1;
-        }
         if self.APONEIDMPHL != false {
-            my_size += 1 + 1;
-        }
-        if self.PBKBGLHHKPE != false {
-            my_size += 1 + 1;
-        }
-        if self.AICNFAOBCPI != false {
-            my_size += 1 + 1;
-        }
-        if self.NKEKIBNJMPA != false {
             my_size += 1 + 1;
         }
         if self.GMJANOJMKCE != false {
             my_size += 1 + 1;
         }
+        if self.KJNCCKHJFHE != false {
+            my_size += 1 + 1;
+        }
+        if self.AICNFAOBCPI != false {
+            my_size += 1 + 1;
+        }
         if self.MMMNJCHEMFN != false {
             my_size += 1 + 1;
         }
-        if self.KAPDIMGJLNF != false {
+        if self.NKEKIBNJMPA != false {
+            my_size += 1 + 1;
+        }
+        if self.PBKBGLHHKPE != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -213,35 +214,35 @@ impl ::protobuf::Message for DJBLLOKKAND {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KJNCCKHJFHE != false {
-            os.write_bool(7, self.KJNCCKHJFHE)?;
+        if let Some(v) = self.GHKCMDNKOPN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
+        if self.KAPDIMGJLNF != false {
+            os.write_bool(10, self.KAPDIMGJLNF)?;
         }
         if self.NJFMILJOFOK != false {
-            os.write_bool(1, self.NJFMILJOFOK)?;
-        }
-        if self.NDJIFCKKJKO != false {
-            os.write_bool(8, self.NDJIFCKKJKO)?;
+            os.write_bool(14, self.NJFMILJOFOK)?;
         }
         if self.APONEIDMPHL != false {
-            os.write_bool(3, self.APONEIDMPHL)?;
+            os.write_bool(1, self.APONEIDMPHL)?;
         }
-        if self.PBKBGLHHKPE != false {
-            os.write_bool(12, self.PBKBGLHHKPE)?;
+        if self.GMJANOJMKCE != false {
+            os.write_bool(8, self.GMJANOJMKCE)?;
+        }
+        if self.KJNCCKHJFHE != false {
+            os.write_bool(5, self.KJNCCKHJFHE)?;
         }
         if self.AICNFAOBCPI != false {
             os.write_bool(9, self.AICNFAOBCPI)?;
         }
-        if self.NKEKIBNJMPA != false {
-            os.write_bool(10, self.NKEKIBNJMPA)?;
-        }
-        if self.GMJANOJMKCE != false {
-            os.write_bool(11, self.GMJANOJMKCE)?;
-        }
         if self.MMMNJCHEMFN != false {
-            os.write_bool(2, self.MMMNJCHEMFN)?;
+            os.write_bool(6, self.MMMNJCHEMFN)?;
         }
-        if self.KAPDIMGJLNF != false {
-            os.write_bool(5, self.KAPDIMGJLNF)?;
+        if self.NKEKIBNJMPA != false {
+            os.write_bool(4, self.NKEKIBNJMPA)?;
+        }
+        if self.PBKBGLHHKPE != false {
+            os.write_bool(11, self.PBKBGLHHKPE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -260,31 +261,31 @@ impl ::protobuf::Message for DJBLLOKKAND {
     }
 
     fn clear(&mut self) {
-        self.KJNCCKHJFHE = false;
-        self.NJFMILJOFOK = false;
-        self.NDJIFCKKJKO = false;
-        self.APONEIDMPHL = false;
-        self.PBKBGLHHKPE = false;
-        self.AICNFAOBCPI = false;
-        self.NKEKIBNJMPA = false;
-        self.GMJANOJMKCE = false;
-        self.MMMNJCHEMFN = false;
+        self.GHKCMDNKOPN.clear();
         self.KAPDIMGJLNF = false;
+        self.NJFMILJOFOK = false;
+        self.APONEIDMPHL = false;
+        self.GMJANOJMKCE = false;
+        self.KJNCCKHJFHE = false;
+        self.AICNFAOBCPI = false;
+        self.MMMNJCHEMFN = false;
+        self.NKEKIBNJMPA = false;
+        self.PBKBGLHHKPE = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DJBLLOKKAND {
         static instance: DJBLLOKKAND = DJBLLOKKAND {
-            KJNCCKHJFHE: false,
-            NJFMILJOFOK: false,
-            NDJIFCKKJKO: false,
-            APONEIDMPHL: false,
-            PBKBGLHHKPE: false,
-            AICNFAOBCPI: false,
-            NKEKIBNJMPA: false,
-            GMJANOJMKCE: false,
-            MMMNJCHEMFN: false,
+            GHKCMDNKOPN: ::protobuf::MessageField::none(),
             KAPDIMGJLNF: false,
+            NJFMILJOFOK: false,
+            APONEIDMPHL: false,
+            GMJANOJMKCE: false,
+            KJNCCKHJFHE: false,
+            AICNFAOBCPI: false,
+            MMMNJCHEMFN: false,
+            NKEKIBNJMPA: false,
+            PBKBGLHHKPE: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -309,16 +310,17 @@ impl ::protobuf::reflect::ProtobufValue for DJBLLOKKAND {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DJBLLOKKAND.proto\"\xe1\x02\n\x0bDJBLLOKKAND\x12\x20\n\x0bKJNCCKHJ\
-    FHE\x18\x07\x20\x01(\x08R\x0bKJNCCKHJFHE\x12\x20\n\x0bNJFMILJOFOK\x18\
-    \x01\x20\x01(\x08R\x0bNJFMILJOFOK\x12\x20\n\x0bNDJIFCKKJKO\x18\x08\x20\
-    \x01(\x08R\x0bNDJIFCKKJKO\x12\x20\n\x0bAPONEIDMPHL\x18\x03\x20\x01(\x08R\
-    \x0bAPONEIDMPHL\x12\x20\n\x0bPBKBGLHHKPE\x18\x0c\x20\x01(\x08R\x0bPBKBGL\
-    HHKPE\x12\x20\n\x0bAICNFAOBCPI\x18\t\x20\x01(\x08R\x0bAICNFAOBCPI\x12\
-    \x20\n\x0bNKEKIBNJMPA\x18\n\x20\x01(\x08R\x0bNKEKIBNJMPA\x12\x20\n\x0bGM\
-    JANOJMKCE\x18\x0b\x20\x01(\x08R\x0bGMJANOJMKCE\x12\x20\n\x0bMMMNJCHEMFN\
-    \x18\x02\x20\x01(\x08R\x0bMMMNJCHEMFN\x12\x20\n\x0bKAPDIMGJLNF\x18\x05\
-    \x20\x01(\x08R\x0bKAPDIMGJLNFb\x06proto3\
+    \n\x11DJBLLOKKAND.proto\x1a\x11OGFIODPILEL.proto\"\xef\x02\n\x0bDJBLLOKK\
+    AND\x12.\n\x0bGHKCMDNKOPN\x18\x07\x20\x01(\x0b2\x0c.OGFIODPILELR\x0bGHKC\
+    MDNKOPN\x12\x20\n\x0bKAPDIMGJLNF\x18\n\x20\x01(\x08R\x0bKAPDIMGJLNF\x12\
+    \x20\n\x0bNJFMILJOFOK\x18\x0e\x20\x01(\x08R\x0bNJFMILJOFOK\x12\x20\n\x0b\
+    APONEIDMPHL\x18\x01\x20\x01(\x08R\x0bAPONEIDMPHL\x12\x20\n\x0bGMJANOJMKC\
+    E\x18\x08\x20\x01(\x08R\x0bGMJANOJMKCE\x12\x20\n\x0bKJNCCKHJFHE\x18\x05\
+    \x20\x01(\x08R\x0bKJNCCKHJFHE\x12\x20\n\x0bAICNFAOBCPI\x18\t\x20\x01(\
+    \x08R\x0bAICNFAOBCPI\x12\x20\n\x0bMMMNJCHEMFN\x18\x06\x20\x01(\x08R\x0bM\
+    MMNJCHEMFN\x12\x20\n\x0bNKEKIBNJMPA\x18\x04\x20\x01(\x08R\x0bNKEKIBNJMPA\
+    \x12\x20\n\x0bPBKBGLHHKPE\x18\x0b\x20\x01(\x08R\x0bPBKBGLHHKPEb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -335,7 +337,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(0);
+            let mut deps = ::std::vec::Vec::with_capacity(1);
+            deps.push(super::OGFIODPILEL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(DJBLLOKKAND::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

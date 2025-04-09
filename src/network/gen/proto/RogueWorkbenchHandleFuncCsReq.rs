@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueWorkbenchHandleFuncCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RogueWorkbenchHandleFuncCsReq.LMPHJMDONMH)
-    pub LMPHJMDONMH: u32,
     // @@protoc_insertion_point(field:RogueWorkbenchHandleFuncCsReq.HOBJMINNBOP)
     pub HOBJMINNBOP: u32,
+    // @@protoc_insertion_point(field:RogueWorkbenchHandleFuncCsReq.LMPHJMDONMH)
+    pub LMPHJMDONMH: u32,
     // @@protoc_insertion_point(field:RogueWorkbenchHandleFuncCsReq.LBOBPBHELGJ)
     pub LBOBPBHELGJ: ::protobuf::MessageField<super::AKMBEHGCBHE::AKMBEHGCBHE>,
     // special fields
@@ -54,14 +54,14 @@ impl RogueWorkbenchHandleFuncCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LMPHJMDONMH",
-            |m: &RogueWorkbenchHandleFuncCsReq| { &m.LMPHJMDONMH },
-            |m: &mut RogueWorkbenchHandleFuncCsReq| { &mut m.LMPHJMDONMH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HOBJMINNBOP",
             |m: &RogueWorkbenchHandleFuncCsReq| { &m.HOBJMINNBOP },
             |m: &mut RogueWorkbenchHandleFuncCsReq| { &mut m.HOBJMINNBOP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LMPHJMDONMH",
+            |m: &RogueWorkbenchHandleFuncCsReq| { &m.LMPHJMDONMH },
+            |m: &mut RogueWorkbenchHandleFuncCsReq| { &mut m.LMPHJMDONMH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AKMBEHGCBHE::AKMBEHGCBHE>(
             "LBOBPBHELGJ",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for RogueWorkbenchHandleFuncCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.LMPHJMDONMH = is.read_uint32()?;
-                },
                 56 => {
                     self.HOBJMINNBOP = is.read_uint32()?;
                 },
-                122 => {
+                24 => {
+                    self.LMPHJMDONMH = is.read_uint32()?;
+                },
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LBOBPBHELGJ)?;
                 },
                 tag => {
@@ -107,11 +107,11 @@ impl ::protobuf::Message for RogueWorkbenchHandleFuncCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LMPHJMDONMH != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.LMPHJMDONMH);
-        }
         if self.HOBJMINNBOP != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.HOBJMINNBOP);
+        }
+        if self.LMPHJMDONMH != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.LMPHJMDONMH);
         }
         if let Some(v) = self.LBOBPBHELGJ.as_ref() {
             let len = v.compute_size();
@@ -123,14 +123,14 @@ impl ::protobuf::Message for RogueWorkbenchHandleFuncCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LMPHJMDONMH != 0 {
-            os.write_uint32(3, self.LMPHJMDONMH)?;
-        }
         if self.HOBJMINNBOP != 0 {
             os.write_uint32(7, self.HOBJMINNBOP)?;
         }
+        if self.LMPHJMDONMH != 0 {
+            os.write_uint32(3, self.LMPHJMDONMH)?;
+        }
         if let Some(v) = self.LBOBPBHELGJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for RogueWorkbenchHandleFuncCsReq {
     }
 
     fn clear(&mut self) {
-        self.LMPHJMDONMH = 0;
         self.HOBJMINNBOP = 0;
+        self.LMPHJMDONMH = 0;
         self.LBOBPBHELGJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueWorkbenchHandleFuncCsReq {
         static instance: RogueWorkbenchHandleFuncCsReq = RogueWorkbenchHandleFuncCsReq {
-            LMPHJMDONMH: 0,
             HOBJMINNBOP: 0,
+            LMPHJMDONMH: 0,
             LBOBPBHELGJ: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueWorkbenchHandleFuncCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#RogueWorkbenchHandleFuncCsReq.proto\x1a\x11AKMBEHGCBHE.proto\"\x93\
-    \x01\n\x1dRogueWorkbenchHandleFuncCsReq\x12\x20\n\x0bLMPHJMDONMH\x18\x03\
-    \x20\x01(\rR\x0bLMPHJMDONMH\x12\x20\n\x0bHOBJMINNBOP\x18\x07\x20\x01(\rR\
-    \x0bHOBJMINNBOP\x12.\n\x0bLBOBPBHELGJ\x18\x0f\x20\x01(\x0b2\x0c.AKMBEHGC\
-    BHER\x0bLBOBPBHELGJb\x06proto3\
+    \x01\n\x1dRogueWorkbenchHandleFuncCsReq\x12\x20\n\x0bHOBJMINNBOP\x18\x07\
+    \x20\x01(\rR\x0bHOBJMINNBOP\x12\x20\n\x0bLMPHJMDONMH\x18\x03\x20\x01(\rR\
+    \x0bLMPHJMDONMH\x12.\n\x0bLBOBPBHELGJ\x18\n\x20\x01(\x0b2\x0c.AKMBEHGCBH\
+    ER\x0bLBOBPBHELGJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

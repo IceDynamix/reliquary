@@ -45,7 +45,7 @@ impl PIHKDOKDIKF {
         ::std::default::Default::default()
     }
 
-    // .MMOPBLDHJMF HGIMNJFLKLB = 13;
+    // .MMOPBLDHJMF HGIMNJFLKLB = 2;
 
     pub fn HGIMNJFLKLB(&self) -> &super::MMOPBLDHJMF::MMOPBLDHJMF {
         match self.INBKIJDHPLP {
@@ -94,7 +94,7 @@ impl PIHKDOKDIKF {
         }
     }
 
-    // .ILHLPPHLDCG CJIAKCAPHJG = 7;
+    // .ILHLPPHLDCG CJIAKCAPHJG = 3;
 
     pub fn CJIAKCAPHJG(&self) -> &super::ILHLPPHLDCG::ILHLPPHLDCG {
         match self.INBKIJDHPLP {
@@ -143,7 +143,7 @@ impl PIHKDOKDIKF {
         }
     }
 
-    // .IKHPEEPOGLE IAGEBJBPLFM = 12;
+    // .IKHPEEPOGLE IAGEBJBPLFM = 9;
 
     pub fn IAGEBJBPLFM(&self) -> &super::IKHPEEPOGLE::IKHPEEPOGLE {
         match self.INBKIJDHPLP {
@@ -235,13 +235,13 @@ impl ::protobuf::Message for PIHKDOKDIKF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                18 => {
                     self.INBKIJDHPLP = ::std::option::Option::Some(pihkdokdikf::INBKIJDHPLP::HGIMNJFLKLB(is.read_message()?));
                 },
-                58 => {
+                26 => {
                     self.INBKIJDHPLP = ::std::option::Option::Some(pihkdokdikf::INBKIJDHPLP::CJIAKCAPHJG(is.read_message()?));
                 },
-                98 => {
+                74 => {
                     self.INBKIJDHPLP = ::std::option::Option::Some(pihkdokdikf::INBKIJDHPLP::IAGEBJBPLFM(is.read_message()?));
                 },
                 tag => {
@@ -281,13 +281,13 @@ impl ::protobuf::Message for PIHKDOKDIKF {
         if let ::std::option::Option::Some(ref v) = self.INBKIJDHPLP {
             match v {
                 &pihkdokdikf::INBKIJDHPLP::HGIMNJFLKLB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
                 &pihkdokdikf::INBKIJDHPLP::CJIAKCAPHJG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
                 },
                 &pihkdokdikf::INBKIJDHPLP::IAGEBJBPLFM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
                 },
             };
         }
@@ -375,9 +375,9 @@ pub mod pihkdokdikf {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PIHKDOKDIKF.proto\x1a\x11IKHPEEPOGLE.proto\x1a\x11ILHLPPHLDCG.prot\
     o\x1a\x11MMOPBLDHJMF.proto\"\xb2\x01\n\x0bPIHKDOKDIKF\x120\n\x0bHGIMNJFL\
-    KLB\x18\r\x20\x01(\x0b2\x0c.MMOPBLDHJMFH\0R\x0bHGIMNJFLKLB\x120\n\x0bCJI\
-    AKCAPHJG\x18\x07\x20\x01(\x0b2\x0c.ILHLPPHLDCGH\0R\x0bCJIAKCAPHJG\x120\n\
-    \x0bIAGEBJBPLFM\x18\x0c\x20\x01(\x0b2\x0c.IKHPEEPOGLEH\0R\x0bIAGEBJBPLFM\
+    KLB\x18\x02\x20\x01(\x0b2\x0c.MMOPBLDHJMFH\0R\x0bHGIMNJFLKLB\x120\n\x0bC\
+    JIAKCAPHJG\x18\x03\x20\x01(\x0b2\x0c.ILHLPPHLDCGH\0R\x0bCJIAKCAPHJG\x120\
+    \n\x0bIAGEBJBPLFM\x18\t\x20\x01(\x0b2\x0c.IKHPEEPOGLEH\0R\x0bIAGEBJBPLFM\
     B\r\n\x0bINBKIJDHPLPb\x06proto3\
 ";
 

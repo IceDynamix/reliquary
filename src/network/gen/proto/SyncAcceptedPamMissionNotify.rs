@@ -79,10 +79,10 @@ impl ::protobuf::Message for SyncAcceptedPamMissionNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                80 => {
                     self.PAMBJBFNGPO = is.read_uint64()?;
                 },
-                72 => {
+                104 => {
                     self.KALGLKGPPHM = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for SyncAcceptedPamMissionNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PAMBJBFNGPO != 0 {
-            my_size += ::protobuf::rt::uint64_size(4, self.PAMBJBFNGPO);
+            my_size += ::protobuf::rt::uint64_size(10, self.PAMBJBFNGPO);
         }
         if self.KALGLKGPPHM != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.KALGLKGPPHM);
+            my_size += ::protobuf::rt::uint32_size(13, self.KALGLKGPPHM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for SyncAcceptedPamMissionNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PAMBJBFNGPO != 0 {
-            os.write_uint64(4, self.PAMBJBFNGPO)?;
+            os.write_uint64(10, self.PAMBJBFNGPO)?;
         }
         if self.KALGLKGPPHM != 0 {
-            os.write_uint32(9, self.KALGLKGPPHM)?;
+            os.write_uint32(13, self.KALGLKGPPHM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for SyncAcceptedPamMissionNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"SyncAcceptedPamMissionNotify.proto\"b\n\x1cSyncAcceptedPamMissionNot\
-    ify\x12\x20\n\x0bPAMBJBFNGPO\x18\x04\x20\x01(\x04R\x0bPAMBJBFNGPO\x12\
-    \x20\n\x0bKALGLKGPPHM\x18\t\x20\x01(\rR\x0bKALGLKGPPHMb\x06proto3\
+    ify\x12\x20\n\x0bPAMBJBFNGPO\x18\n\x20\x01(\x04R\x0bPAMBJBFNGPO\x12\x20\
+    \n\x0bKALGLKGPPHM\x18\r\x20\x01(\rR\x0bKALGLKGPPHMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -86,13 +86,13 @@ impl ::protobuf::Message for DoGachaInRollShopCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                88 => {
                     self.EHIADPGAPJP = is.read_uint32()?;
                 },
-                88 => {
+                16 => {
                     self.KICGLCKBINC = is.read_uint32()?;
                 },
-                56 => {
+                8 => {
                     self.IFNGNHHCNGL = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for DoGachaInRollShopCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.EHIADPGAPJP != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.EHIADPGAPJP);
+            my_size += ::protobuf::rt::uint32_size(11, self.EHIADPGAPJP);
         }
         if self.KICGLCKBINC != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.KICGLCKBINC);
+            my_size += ::protobuf::rt::uint32_size(2, self.KICGLCKBINC);
         }
         if self.IFNGNHHCNGL != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.IFNGNHHCNGL);
+            my_size += ::protobuf::rt::uint32_size(1, self.IFNGNHHCNGL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for DoGachaInRollShopCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.EHIADPGAPJP != 0 {
-            os.write_uint32(9, self.EHIADPGAPJP)?;
+            os.write_uint32(11, self.EHIADPGAPJP)?;
         }
         if self.KICGLCKBINC != 0 {
-            os.write_uint32(11, self.KICGLCKBINC)?;
+            os.write_uint32(2, self.KICGLCKBINC)?;
         }
         if self.IFNGNHHCNGL != 0 {
-            os.write_uint32(7, self.IFNGNHHCNGL)?;
+            os.write_uint32(1, self.IFNGNHHCNGL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for DoGachaInRollShopCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cDoGachaInRollShopCsReq.proto\"~\n\x16DoGachaInRollShopCsReq\x12\
-    \x20\n\x0bEHIADPGAPJP\x18\t\x20\x01(\rR\x0bEHIADPGAPJP\x12\x20\n\x0bKICG\
-    LCKBINC\x18\x0b\x20\x01(\rR\x0bKICGLCKBINC\x12\x20\n\x0bIFNGNHHCNGL\x18\
-    \x07\x20\x01(\rR\x0bIFNGNHHCNGLb\x06proto3\
+    \x20\n\x0bEHIADPGAPJP\x18\x0b\x20\x01(\rR\x0bEHIADPGAPJP\x12\x20\n\x0bKI\
+    CGLCKBINC\x18\x02\x20\x01(\rR\x0bKICGLCKBINC\x12\x20\n\x0bIFNGNHHCNGL\
+    \x18\x01\x20\x01(\rR\x0bIFNGNHHCNGLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

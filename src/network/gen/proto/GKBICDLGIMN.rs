@@ -30,10 +30,10 @@ pub struct GKBICDLGIMN {
     // message fields
     // @@protoc_insertion_point(field:GKBICDLGIMN.MMAOABEAJHJ)
     pub MMAOABEAJHJ: i32,
-    // @@protoc_insertion_point(field:GKBICDLGIMN.OCDKPEIFGFO)
-    pub OCDKPEIFGFO: i32,
     // @@protoc_insertion_point(field:GKBICDLGIMN.PGIFPMKPMNA)
     pub PGIFPMKPMNA: i32,
+    // @@protoc_insertion_point(field:GKBICDLGIMN.OCDKPEIFGFO)
+    pub OCDKPEIFGFO: i32,
     // special fields
     // @@protoc_insertion_point(special_field:GKBICDLGIMN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl GKBICDLGIMN {
             |m: &mut GKBICDLGIMN| { &mut m.MMAOABEAJHJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OCDKPEIFGFO",
-            |m: &GKBICDLGIMN| { &m.OCDKPEIFGFO },
-            |m: &mut GKBICDLGIMN| { &mut m.OCDKPEIFGFO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PGIFPMKPMNA",
             |m: &GKBICDLGIMN| { &m.PGIFPMKPMNA },
             |m: &mut GKBICDLGIMN| { &mut m.PGIFPMKPMNA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OCDKPEIFGFO",
+            |m: &GKBICDLGIMN| { &m.OCDKPEIFGFO },
+            |m: &mut GKBICDLGIMN| { &mut m.OCDKPEIFGFO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GKBICDLGIMN>(
             "GKBICDLGIMN",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GKBICDLGIMN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                56 => {
                     self.MMAOABEAJHJ = is.read_int32()?;
                 },
-                88 => {
-                    self.OCDKPEIFGFO = is.read_int32()?;
-                },
-                120 => {
+                40 => {
                     self.PGIFPMKPMNA = is.read_int32()?;
+                },
+                104 => {
+                    self.OCDKPEIFGFO = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for GKBICDLGIMN {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.MMAOABEAJHJ != 0 {
-            my_size += ::protobuf::rt::int32_size(1, self.MMAOABEAJHJ);
-        }
-        if self.OCDKPEIFGFO != 0 {
-            my_size += ::protobuf::rt::int32_size(11, self.OCDKPEIFGFO);
+            my_size += ::protobuf::rt::int32_size(7, self.MMAOABEAJHJ);
         }
         if self.PGIFPMKPMNA != 0 {
-            my_size += ::protobuf::rt::int32_size(15, self.PGIFPMKPMNA);
+            my_size += ::protobuf::rt::int32_size(5, self.PGIFPMKPMNA);
+        }
+        if self.OCDKPEIFGFO != 0 {
+            my_size += ::protobuf::rt::int32_size(13, self.OCDKPEIFGFO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for GKBICDLGIMN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.MMAOABEAJHJ != 0 {
-            os.write_int32(1, self.MMAOABEAJHJ)?;
-        }
-        if self.OCDKPEIFGFO != 0 {
-            os.write_int32(11, self.OCDKPEIFGFO)?;
+            os.write_int32(7, self.MMAOABEAJHJ)?;
         }
         if self.PGIFPMKPMNA != 0 {
-            os.write_int32(15, self.PGIFPMKPMNA)?;
+            os.write_int32(5, self.PGIFPMKPMNA)?;
+        }
+        if self.OCDKPEIFGFO != 0 {
+            os.write_int32(13, self.OCDKPEIFGFO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for GKBICDLGIMN {
 
     fn clear(&mut self) {
         self.MMAOABEAJHJ = 0;
-        self.OCDKPEIFGFO = 0;
         self.PGIFPMKPMNA = 0;
+        self.OCDKPEIFGFO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GKBICDLGIMN {
         static instance: GKBICDLGIMN = GKBICDLGIMN {
             MMAOABEAJHJ: 0,
-            OCDKPEIFGFO: 0,
             PGIFPMKPMNA: 0,
+            OCDKPEIFGFO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for GKBICDLGIMN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GKBICDLGIMN.proto\"s\n\x0bGKBICDLGIMN\x12\x20\n\x0bMMAOABEAJHJ\x18\
-    \x01\x20\x01(\x05R\x0bMMAOABEAJHJ\x12\x20\n\x0bOCDKPEIFGFO\x18\x0b\x20\
-    \x01(\x05R\x0bOCDKPEIFGFO\x12\x20\n\x0bPGIFPMKPMNA\x18\x0f\x20\x01(\x05R\
-    \x0bPGIFPMKPMNAb\x06proto3\
+    \x07\x20\x01(\x05R\x0bMMAOABEAJHJ\x12\x20\n\x0bPGIFPMKPMNA\x18\x05\x20\
+    \x01(\x05R\x0bPGIFPMKPMNA\x12\x20\n\x0bOCDKPEIFGFO\x18\r\x20\x01(\x05R\
+    \x0bOCDKPEIFGFOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

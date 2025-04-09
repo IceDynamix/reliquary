@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncClientResVersionScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SyncClientResVersionScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:SyncClientResVersionScRsp.DGFCKINCCFD)
     pub DGFCKINCCFD: u32,
+    // @@protoc_insertion_point(field:SyncClientResVersionScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SyncClientResVersionScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl SyncClientResVersionScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &SyncClientResVersionScRsp| { &m.retcode },
-            |m: &mut SyncClientResVersionScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DGFCKINCCFD",
             |m: &SyncClientResVersionScRsp| { &m.DGFCKINCCFD },
             |m: &mut SyncClientResVersionScRsp| { &mut m.DGFCKINCCFD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &SyncClientResVersionScRsp| { &m.retcode },
+            |m: &mut SyncClientResVersionScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncClientResVersionScRsp>(
             "SyncClientResVersionScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SyncClientResVersionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                88 => {
+                56 => {
                     self.DGFCKINCCFD = is.read_uint32()?;
+                },
+                48 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for SyncClientResVersionScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
-        }
         if self.DGFCKINCCFD != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.DGFCKINCCFD);
+            my_size += ::protobuf::rt::uint32_size(7, self.DGFCKINCCFD);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for SyncClientResVersionScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
-        }
         if self.DGFCKINCCFD != 0 {
-            os.write_uint32(11, self.DGFCKINCCFD)?;
+            os.write_uint32(7, self.DGFCKINCCFD)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(6, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for SyncClientResVersionScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.DGFCKINCCFD = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncClientResVersionScRsp {
         static instance: SyncClientResVersionScRsp = SyncClientResVersionScRsp {
-            retcode: 0,
             DGFCKINCCFD: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for SyncClientResVersionScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fSyncClientResVersionScRsp.proto\"W\n\x19SyncClientResVersionScRsp\
-    \x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12\x20\n\x0bDGFCKI\
-    NCCFD\x18\x0b\x20\x01(\rR\x0bDGFCKINCCFDb\x06proto3\
+    \x12\x20\n\x0bDGFCKINCCFD\x18\x07\x20\x01(\rR\x0bDGFCKINCCFD\x12\x18\n\
+    \x07retcode\x18\x06\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

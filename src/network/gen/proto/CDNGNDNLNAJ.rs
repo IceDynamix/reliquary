@@ -32,10 +32,10 @@ pub struct CDNGNDNLNAJ {
     pub AAKHCNEDBCD: ::protobuf::MessageField<super::LHLEEHCBMOL::LHLEEHCBMOL>,
     // @@protoc_insertion_point(field:CDNGNDNLNAJ.HBHEAJIJEGF)
     pub HBHEAJIJEGF: ::protobuf::MessageField<super::CGCONJFFFBB::CGCONJFFFBB>,
-    // @@protoc_insertion_point(field:CDNGNDNLNAJ.EEIHDCPOLEF)
-    pub EEIHDCPOLEF: ::protobuf::MessageField<super::EDFABKMNBLI::EDFABKMNBLI>,
     // @@protoc_insertion_point(field:CDNGNDNLNAJ.GONEAKBDGEK)
     pub GONEAKBDGEK: u32,
+    // @@protoc_insertion_point(field:CDNGNDNLNAJ.EEIHDCPOLEF)
+    pub EEIHDCPOLEF: ::protobuf::MessageField<super::EDFABKMNBLI::EDFABKMNBLI>,
     // @@protoc_insertion_point(field:CDNGNDNLNAJ.GBFCLMLIMHC)
     pub GBFCLMLIMHC: ::protobuf::MessageField<super::GCFEHMENONM::GCFEHMENONM>,
     // special fields
@@ -67,15 +67,15 @@ impl CDNGNDNLNAJ {
             |m: &CDNGNDNLNAJ| { &m.HBHEAJIJEGF },
             |m: &mut CDNGNDNLNAJ| { &mut m.HBHEAJIJEGF },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EDFABKMNBLI::EDFABKMNBLI>(
-            "EEIHDCPOLEF",
-            |m: &CDNGNDNLNAJ| { &m.EEIHDCPOLEF },
-            |m: &mut CDNGNDNLNAJ| { &mut m.EEIHDCPOLEF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GONEAKBDGEK",
             |m: &CDNGNDNLNAJ| { &m.GONEAKBDGEK },
             |m: &mut CDNGNDNLNAJ| { &mut m.GONEAKBDGEK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EDFABKMNBLI::EDFABKMNBLI>(
+            "EEIHDCPOLEF",
+            |m: &CDNGNDNLNAJ| { &m.EEIHDCPOLEF },
+            |m: &mut CDNGNDNLNAJ| { &mut m.EEIHDCPOLEF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GCFEHMENONM::GCFEHMENONM>(
             "GBFCLMLIMHC",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for CDNGNDNLNAJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.AAKHCNEDBCD)?;
                 },
-                34 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.HBHEAJIJEGF)?;
                 },
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EEIHDCPOLEF)?;
-                },
-                112 => {
+                48 => {
                     self.GONEAKBDGEK = is.read_uint32()?;
                 },
-                18 => {
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EEIHDCPOLEF)?;
+                },
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GBFCLMLIMHC)?;
                 },
                 tag => {
@@ -135,12 +135,12 @@ impl ::protobuf::Message for CDNGNDNLNAJ {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.GONEAKBDGEK != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.GONEAKBDGEK);
+        }
         if let Some(v) = self.EEIHDCPOLEF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.GONEAKBDGEK != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.GONEAKBDGEK);
         }
         if let Some(v) = self.GBFCLMLIMHC.as_ref() {
             let len = v.compute_size();
@@ -153,19 +153,19 @@ impl ::protobuf::Message for CDNGNDNLNAJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.AAKHCNEDBCD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if let Some(v) = self.HBHEAJIJEGF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
-        if let Some(v) = self.EEIHDCPOLEF.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if self.GONEAKBDGEK != 0 {
-            os.write_uint32(14, self.GONEAKBDGEK)?;
+            os.write_uint32(6, self.GONEAKBDGEK)?;
+        }
+        if let Some(v) = self.EEIHDCPOLEF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if let Some(v) = self.GBFCLMLIMHC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,8 +186,8 @@ impl ::protobuf::Message for CDNGNDNLNAJ {
     fn clear(&mut self) {
         self.AAKHCNEDBCD.clear();
         self.HBHEAJIJEGF.clear();
-        self.EEIHDCPOLEF.clear();
         self.GONEAKBDGEK = 0;
+        self.EEIHDCPOLEF.clear();
         self.GBFCLMLIMHC.clear();
         self.special_fields.clear();
     }
@@ -196,8 +196,8 @@ impl ::protobuf::Message for CDNGNDNLNAJ {
         static instance: CDNGNDNLNAJ = CDNGNDNLNAJ {
             AAKHCNEDBCD: ::protobuf::MessageField::none(),
             HBHEAJIJEGF: ::protobuf::MessageField::none(),
-            EEIHDCPOLEF: ::protobuf::MessageField::none(),
             GONEAKBDGEK: 0,
+            EEIHDCPOLEF: ::protobuf::MessageField::none(),
             GBFCLMLIMHC: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -225,12 +225,12 @@ impl ::protobuf::reflect::ProtobufValue for CDNGNDNLNAJ {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CDNGNDNLNAJ.proto\x1a\x11CGCONJFFFBB.proto\x1a\x11EDFABKMNBLI.prot\
     o\x1a\x11GCFEHMENONM.proto\x1a\x11LHLEEHCBMOL.proto\"\xef\x01\n\x0bCDNGN\
-    DNLNAJ\x12.\n\x0bAAKHCNEDBCD\x18\x08\x20\x01(\x0b2\x0c.LHLEEHCBMOLR\x0bA\
-    AKHCNEDBCD\x12.\n\x0bHBHEAJIJEGF\x18\x04\x20\x01(\x0b2\x0c.CGCONJFFFBBR\
-    \x0bHBHEAJIJEGF\x12.\n\x0bEEIHDCPOLEF\x18\x03\x20\x01(\x0b2\x0c.EDFABKMN\
-    BLIR\x0bEEIHDCPOLEF\x12\x20\n\x0bGONEAKBDGEK\x18\x0e\x20\x01(\rR\x0bGONE\
-    AKBDGEK\x12.\n\x0bGBFCLMLIMHC\x18\x02\x20\x01(\x0b2\x0c.GCFEHMENONMR\x0b\
-    GBFCLMLIMHCb\x06proto3\
+    DNLNAJ\x12.\n\x0bAAKHCNEDBCD\x18\x02\x20\x01(\x0b2\x0c.LHLEEHCBMOLR\x0bA\
+    AKHCNEDBCD\x12.\n\x0bHBHEAJIJEGF\x18\x03\x20\x01(\x0b2\x0c.CGCONJFFFBBR\
+    \x0bHBHEAJIJEGF\x12\x20\n\x0bGONEAKBDGEK\x18\x06\x20\x01(\rR\x0bGONEAKBD\
+    GEK\x12.\n\x0bEEIHDCPOLEF\x18\x0e\x20\x01(\x0b2\x0c.EDFABKMNBLIR\x0bEEIH\
+    DCPOLEF\x12.\n\x0bGBFCLMLIMHC\x18\n\x20\x01(\x0b2\x0c.GCFEHMENONMR\x0bGB\
+    FCLMLIMHCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

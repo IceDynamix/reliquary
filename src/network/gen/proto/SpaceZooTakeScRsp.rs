@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SpaceZooTakeScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SpaceZooTakeScRsp.HLNMAJIDIFD)
-    pub HLNMAJIDIFD: u32,
-    // @@protoc_insertion_point(field:SpaceZooTakeScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:SpaceZooTakeScRsp.BHELBOHKBBM)
     pub BHELBOHKBBM: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:SpaceZooTakeScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:SpaceZooTakeScRsp.HLNMAJIDIFD)
+    pub HLNMAJIDIFD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SpaceZooTakeScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl SpaceZooTakeScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HLNMAJIDIFD",
-            |m: &SpaceZooTakeScRsp| { &m.HLNMAJIDIFD },
-            |m: &mut SpaceZooTakeScRsp| { &mut m.HLNMAJIDIFD },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "BHELBOHKBBM",
+            |m: &SpaceZooTakeScRsp| { &m.BHELBOHKBBM },
+            |m: &mut SpaceZooTakeScRsp| { &mut m.BHELBOHKBBM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &SpaceZooTakeScRsp| { &m.retcode },
             |m: &mut SpaceZooTakeScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "BHELBOHKBBM",
-            |m: &SpaceZooTakeScRsp| { &m.BHELBOHKBBM },
-            |m: &mut SpaceZooTakeScRsp| { &mut m.BHELBOHKBBM },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HLNMAJIDIFD",
+            |m: &SpaceZooTakeScRsp| { &m.HLNMAJIDIFD },
+            |m: &mut SpaceZooTakeScRsp| { &mut m.HLNMAJIDIFD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SpaceZooTakeScRsp>(
             "SpaceZooTakeScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SpaceZooTakeScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.HLNMAJIDIFD = is.read_uint32()?;
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHELBOHKBBM)?;
                 },
-                104 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHELBOHKBBM)?;
+                32 => {
+                    self.HLNMAJIDIFD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for SpaceZooTakeScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HLNMAJIDIFD != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.HLNMAJIDIFD);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
-        }
         if let Some(v) = self.BHELBOHKBBM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+        }
+        if self.HLNMAJIDIFD != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.HLNMAJIDIFD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for SpaceZooTakeScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HLNMAJIDIFD != 0 {
-            os.write_uint32(5, self.HLNMAJIDIFD)?;
+        if let Some(v) = self.BHELBOHKBBM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
-        if let Some(v) = self.BHELBOHKBBM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if self.HLNMAJIDIFD != 0 {
+            os.write_uint32(4, self.HLNMAJIDIFD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for SpaceZooTakeScRsp {
     }
 
     fn clear(&mut self) {
-        self.HLNMAJIDIFD = 0;
-        self.retcode = 0;
         self.BHELBOHKBBM.clear();
+        self.retcode = 0;
+        self.HLNMAJIDIFD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SpaceZooTakeScRsp {
         static instance: SpaceZooTakeScRsp = SpaceZooTakeScRsp {
-            HLNMAJIDIFD: 0,
-            retcode: 0,
             BHELBOHKBBM: ::protobuf::MessageField::none(),
+            retcode: 0,
+            HLNMAJIDIFD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for SpaceZooTakeScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17SpaceZooTakeScRsp.proto\x1a\x0eItemList.proto\"|\n\x11SpaceZooTake\
-    ScRsp\x12\x20\n\x0bHLNMAJIDIFD\x18\x05\x20\x01(\rR\x0bHLNMAJIDIFD\x12\
-    \x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x12+\n\x0bBHELBOHKBBM\x18\
-    \x0e\x20\x01(\x0b2\t.ItemListR\x0bBHELBOHKBBMb\x06proto3\
+    ScRsp\x12+\n\x0bBHELBOHKBBM\x18\x0c\x20\x01(\x0b2\t.ItemListR\x0bBHELBOH\
+    KBBM\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12\x20\n\x0bHL\
+    NMAJIDIFD\x18\x04\x20\x01(\rR\x0bHLNMAJIDIFDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeLoginActivityRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeLoginActivityRewardCsReq.IAFHEPINJHL)
-    pub IAFHEPINJHL: u32,
     // @@protoc_insertion_point(field:TakeLoginActivityRewardCsReq.ELGANMDPMID)
     pub ELGANMDPMID: u32,
+    // @@protoc_insertion_point(field:TakeLoginActivityRewardCsReq.IAFHEPINJHL)
+    pub IAFHEPINJHL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeLoginActivityRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl TakeLoginActivityRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IAFHEPINJHL",
-            |m: &TakeLoginActivityRewardCsReq| { &m.IAFHEPINJHL },
-            |m: &mut TakeLoginActivityRewardCsReq| { &mut m.IAFHEPINJHL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ELGANMDPMID",
             |m: &TakeLoginActivityRewardCsReq| { &m.ELGANMDPMID },
             |m: &mut TakeLoginActivityRewardCsReq| { &mut m.ELGANMDPMID },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IAFHEPINJHL",
+            |m: &TakeLoginActivityRewardCsReq| { &m.IAFHEPINJHL },
+            |m: &mut TakeLoginActivityRewardCsReq| { &mut m.IAFHEPINJHL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeLoginActivityRewardCsReq>(
             "TakeLoginActivityRewardCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for TakeLoginActivityRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                24 => {
+                    self.ELGANMDPMID = is.read_uint32()?;
+                },
                 104 => {
                     self.IAFHEPINJHL = is.read_uint32()?;
-                },
-                80 => {
-                    self.ELGANMDPMID = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for TakeLoginActivityRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.ELGANMDPMID != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.ELGANMDPMID);
+        }
         if self.IAFHEPINJHL != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.IAFHEPINJHL);
-        }
-        if self.ELGANMDPMID != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.ELGANMDPMID);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for TakeLoginActivityRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.ELGANMDPMID != 0 {
+            os.write_uint32(3, self.ELGANMDPMID)?;
+        }
         if self.IAFHEPINJHL != 0 {
             os.write_uint32(13, self.IAFHEPINJHL)?;
-        }
-        if self.ELGANMDPMID != 0 {
-            os.write_uint32(10, self.ELGANMDPMID)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for TakeLoginActivityRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.IAFHEPINJHL = 0;
         self.ELGANMDPMID = 0;
+        self.IAFHEPINJHL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeLoginActivityRewardCsReq {
         static instance: TakeLoginActivityRewardCsReq = TakeLoginActivityRewardCsReq {
-            IAFHEPINJHL: 0,
             ELGANMDPMID: 0,
+            IAFHEPINJHL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for TakeLoginActivityRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"TakeLoginActivityRewardCsReq.proto\"b\n\x1cTakeLoginActivityRewardCs\
-    Req\x12\x20\n\x0bIAFHEPINJHL\x18\r\x20\x01(\rR\x0bIAFHEPINJHL\x12\x20\n\
-    \x0bELGANMDPMID\x18\n\x20\x01(\rR\x0bELGANMDPMIDb\x06proto3\
+    Req\x12\x20\n\x0bELGANMDPMID\x18\x03\x20\x01(\rR\x0bELGANMDPMID\x12\x20\
+    \n\x0bIAFHEPINJHL\x18\r\x20\x01(\rR\x0bIAFHEPINJHLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

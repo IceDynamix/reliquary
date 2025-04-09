@@ -55,6 +55,12 @@ pub enum ProductGiftType {
     PRODUCT_GIFT_PS_POINT_CARD_050 = 12,
     // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_PS_POINT_CARD_100)
     PRODUCT_GIFT_PS_POINT_CARD_100 = 13,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_PSN_PLUS)
+    PRODUCT_GIFT_PSN_PLUS = 14,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_SINGLE_6)
+    PRODUCT_GIFT_SINGLE_6 = 15,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_DAILY_LOGIN_30)
+    PRODUCT_GIFT_DAILY_LOGIN_30 = 16,
 }
 
 impl ::protobuf::Enum for ProductGiftType {
@@ -80,6 +86,9 @@ impl ::protobuf::Enum for ProductGiftType {
             11 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_PS_POINT_CARD_030),
             12 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_PS_POINT_CARD_050),
             13 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_PS_POINT_CARD_100),
+            14 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_PSN_PLUS),
+            15 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_SINGLE_6),
+            16 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_DAILY_LOGIN_30),
             _ => ::std::option::Option::None
         }
     }
@@ -100,6 +109,9 @@ impl ::protobuf::Enum for ProductGiftType {
             "PRODUCT_GIFT_PS_POINT_CARD_030" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_PS_POINT_CARD_030),
             "PRODUCT_GIFT_PS_POINT_CARD_050" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_PS_POINT_CARD_050),
             "PRODUCT_GIFT_PS_POINT_CARD_100" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_PS_POINT_CARD_100),
+            "PRODUCT_GIFT_PSN_PLUS" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_PSN_PLUS),
+            "PRODUCT_GIFT_SINGLE_6" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_SINGLE_6),
+            "PRODUCT_GIFT_DAILY_LOGIN_30" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_DAILY_LOGIN_30),
             _ => ::std::option::Option::None
         }
     }
@@ -119,6 +131,9 @@ impl ::protobuf::Enum for ProductGiftType {
         ProductGiftType::PRODUCT_GIFT_PS_POINT_CARD_030,
         ProductGiftType::PRODUCT_GIFT_PS_POINT_CARD_050,
         ProductGiftType::PRODUCT_GIFT_PS_POINT_CARD_100,
+        ProductGiftType::PRODUCT_GIFT_PSN_PLUS,
+        ProductGiftType::PRODUCT_GIFT_SINGLE_6,
+        ProductGiftType::PRODUCT_GIFT_DAILY_LOGIN_30,
     ];
 }
 
@@ -147,7 +162,7 @@ impl ProductGiftType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15ProductGiftType.proto*\xc3\x03\n\x0fProductGiftType\x12\x15\n\x11P\
+    \n\x15ProductGiftType.proto*\x9a\x04\n\x0fProductGiftType\x12\x15\n\x11P\
     RODUCT_GIFT_NONE\x10\0\x12\x15\n\x11PRODUCT_GIFT_COIN\x10\x01\x12\x1b\n\
     \x17PRODUCT_GIFT_MONTH_CARD\x10\x02\x12\x16\n\x12PRODUCT_GIFT_BP_68\x10\
     \x03\x12\x17\n\x13PRODUCT_GIFT_BP_128\x10\x04\x12!\n\x1dPRODUCT_GIFT_BP6\
@@ -156,7 +171,9 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     PS_PRE_ORDER_2\x10\x08\x12\"\n\x1ePRODUCT_GIFT_GOOGLE_POINTS_100\x10\t\
     \x12\"\n\x1ePRODUCT_GIFT_GOOGLE_POINTS_150\x10\n\x12\"\n\x1ePRODUCT_GIFT\
     _PS_POINT_CARD_030\x10\x0b\x12\"\n\x1ePRODUCT_GIFT_PS_POINT_CARD_050\x10\
-    \x0c\x12\"\n\x1ePRODUCT_GIFT_PS_POINT_CARD_100\x10\rb\x06proto3\
+    \x0c\x12\"\n\x1ePRODUCT_GIFT_PS_POINT_CARD_100\x10\r\x12\x19\n\x15PRODUC\
+    T_GIFT_PSN_PLUS\x10\x0e\x12\x19\n\x15PRODUCT_GIFT_SINGLE_6\x10\x0f\x12\
+    \x1f\n\x1bPRODUCT_GIFT_DAILY_LOGIN_30\x10\x10b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

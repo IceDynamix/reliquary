@@ -86,13 +86,13 @@ impl ::protobuf::Message for EnterFeverTimeActivityStageScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BANFFJDIPIE)?;
                 },
                 96 => {
                     self.ELGANMDPMID = is.read_uint32()?;
                 },
-                104 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -115,7 +115,7 @@ impl ::protobuf::Message for EnterFeverTimeActivityStageScRsp {
             my_size += ::protobuf::rt::uint32_size(12, self.ELGANMDPMID);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for EnterFeverTimeActivityStageScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.BANFFJDIPIE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         if self.ELGANMDPMID != 0 {
             os.write_uint32(12, self.ELGANMDPMID)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for EnterFeverTimeActivityStageScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&EnterFeverTimeActivityStageScRsp.proto\x1a\x11CMBHDGKGPGP.proto\"\x8e\
-    \x01\n\x20EnterFeverTimeActivityStageScRsp\x12.\n\x0bBANFFJDIPIE\x18\x08\
+    \x01\n\x20EnterFeverTimeActivityStageScRsp\x12.\n\x0bBANFFJDIPIE\x18\n\
     \x20\x01(\x0b2\x0c.CMBHDGKGPGPR\x0bBANFFJDIPIE\x12\x20\n\x0bELGANMDPMID\
-    \x18\x0c\x20\x01(\rR\x0bELGANMDPMID\x12\x18\n\x07retcode\x18\r\x20\x01(\
-    \rR\x07retcodeb\x06proto3\
+    \x18\x0c\x20\x01(\rR\x0bELGANMDPMID\x12\x18\n\x07retcode\x18\x07\x20\x01\
+    (\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

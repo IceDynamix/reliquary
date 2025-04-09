@@ -72,10 +72,10 @@ impl ::protobuf::Message for GetTrainVisitorBehaviorCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.OIFNLNBKDMA)?;
                 },
-                120 => {
+                40 => {
                     self.OIFNLNBKDMA.push(is.read_uint32()?);
                 },
                 tag => {
@@ -90,14 +90,14 @@ impl ::protobuf::Message for GetTrainVisitorBehaviorCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.OIFNLNBKDMA);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.OIFNLNBKDMA);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(15, &self.OIFNLNBKDMA)?;
+        os.write_repeated_packed_uint32(5, &self.OIFNLNBKDMA)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,7 +147,7 @@ impl ::protobuf::reflect::ProtobufValue for GetTrainVisitorBehaviorCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"GetTrainVisitorBehaviorCsReq.proto\"@\n\x1cGetTrainVisitorBehaviorCs\
-    Req\x12\x20\n\x0bOIFNLNBKDMA\x18\x0f\x20\x03(\rR\x0bOIFNLNBKDMAb\x06prot\
+    Req\x12\x20\n\x0bOIFNLNBKDMA\x18\x05\x20\x03(\rR\x0bOIFNLNBKDMAb\x06prot\
     o3\
 ";
 

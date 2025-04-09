@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KKNLMCJIGAF {
     // message fields
+    // @@protoc_insertion_point(field:KKNLMCJIGAF.GHFAIHLCELN)
+    pub GHFAIHLCELN: u32,
     // @@protoc_insertion_point(field:KKNLMCJIGAF.CAOAPDCCPCA)
     pub CAOAPDCCPCA: u32,
     // @@protoc_insertion_point(field:KKNLMCJIGAF.unique_id)
     pub unique_id: u32,
     // @@protoc_insertion_point(field:KKNLMCJIGAF.HFNHLCFNHKD)
     pub HFNHLCFNHKD: u32,
-    // @@protoc_insertion_point(field:KKNLMCJIGAF.GHFAIHLCELN)
-    pub GHFAIHLCELN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KKNLMCJIGAF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,6 +56,11 @@ impl KKNLMCJIGAF {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GHFAIHLCELN",
+            |m: &KKNLMCJIGAF| { &m.GHFAIHLCELN },
+            |m: &mut KKNLMCJIGAF| { &mut m.GHFAIHLCELN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CAOAPDCCPCA",
             |m: &KKNLMCJIGAF| { &m.CAOAPDCCPCA },
             |m: &mut KKNLMCJIGAF| { &mut m.CAOAPDCCPCA },
@@ -69,11 +74,6 @@ impl KKNLMCJIGAF {
             "HFNHLCFNHKD",
             |m: &KKNLMCJIGAF| { &m.HFNHLCFNHKD },
             |m: &mut KKNLMCJIGAF| { &mut m.HFNHLCFNHKD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GHFAIHLCELN",
-            |m: &KKNLMCJIGAF| { &m.GHFAIHLCELN },
-            |m: &mut KKNLMCJIGAF| { &mut m.GHFAIHLCELN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KKNLMCJIGAF>(
             "KKNLMCJIGAF",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for KKNLMCJIGAF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                24 => {
+                    self.GHFAIHLCELN = is.read_uint32()?;
+                },
+                88 => {
                     self.CAOAPDCCPCA = is.read_uint32()?;
                 },
-                48 => {
+                32 => {
                     self.unique_id = is.read_uint32()?;
                 },
-                104 => {
+                48 => {
                     self.HFNHLCFNHKD = is.read_uint32()?;
-                },
-                32 => {
-                    self.GHFAIHLCELN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for KKNLMCJIGAF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.GHFAIHLCELN != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.GHFAIHLCELN);
+        }
         if self.CAOAPDCCPCA != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.CAOAPDCCPCA);
+            my_size += ::protobuf::rt::uint32_size(11, self.CAOAPDCCPCA);
         }
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.unique_id);
         }
         if self.HFNHLCFNHKD != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.HFNHLCFNHKD);
-        }
-        if self.GHFAIHLCELN != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.GHFAIHLCELN);
+            my_size += ::protobuf::rt::uint32_size(6, self.HFNHLCFNHKD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for KKNLMCJIGAF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.GHFAIHLCELN != 0 {
+            os.write_uint32(3, self.GHFAIHLCELN)?;
+        }
         if self.CAOAPDCCPCA != 0 {
-            os.write_uint32(8, self.CAOAPDCCPCA)?;
+            os.write_uint32(11, self.CAOAPDCCPCA)?;
         }
         if self.unique_id != 0 {
-            os.write_uint32(6, self.unique_id)?;
+            os.write_uint32(4, self.unique_id)?;
         }
         if self.HFNHLCFNHKD != 0 {
-            os.write_uint32(13, self.HFNHLCFNHKD)?;
-        }
-        if self.GHFAIHLCELN != 0 {
-            os.write_uint32(4, self.GHFAIHLCELN)?;
+            os.write_uint32(6, self.HFNHLCFNHKD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for KKNLMCJIGAF {
     }
 
     fn clear(&mut self) {
+        self.GHFAIHLCELN = 0;
         self.CAOAPDCCPCA = 0;
         self.unique_id = 0;
         self.HFNHLCFNHKD = 0;
-        self.GHFAIHLCELN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KKNLMCJIGAF {
         static instance: KKNLMCJIGAF = KKNLMCJIGAF {
+            GHFAIHLCELN: 0,
             CAOAPDCCPCA: 0,
             unique_id: 0,
             HFNHLCFNHKD: 0,
-            GHFAIHLCELN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for KKNLMCJIGAF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KKNLMCJIGAF.proto\"\x90\x01\n\x0bKKNLMCJIGAF\x12\x20\n\x0bCAOAPDCC\
-    PCA\x18\x08\x20\x01(\rR\x0bCAOAPDCCPCA\x12\x1b\n\tunique_id\x18\x06\x20\
-    \x01(\rR\x08uniqueId\x12\x20\n\x0bHFNHLCFNHKD\x18\r\x20\x01(\rR\x0bHFNHL\
-    CFNHKD\x12\x20\n\x0bGHFAIHLCELN\x18\x04\x20\x01(\rR\x0bGHFAIHLCELNb\x06p\
-    roto3\
+    \n\x11KKNLMCJIGAF.proto\"\x90\x01\n\x0bKKNLMCJIGAF\x12\x20\n\x0bGHFAIHLC\
+    ELN\x18\x03\x20\x01(\rR\x0bGHFAIHLCELN\x12\x20\n\x0bCAOAPDCCPCA\x18\x0b\
+    \x20\x01(\rR\x0bCAOAPDCCPCA\x12\x1b\n\tunique_id\x18\x04\x20\x01(\rR\x08\
+    uniqueId\x12\x20\n\x0bHFNHLCFNHKD\x18\x06\x20\x01(\rR\x0bHFNHLCFNHKDb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

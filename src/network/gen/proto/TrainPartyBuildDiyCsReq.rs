@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartyBuildDiyCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartyBuildDiyCsReq.DBAHFEFGLMD)
-    pub DBAHFEFGLMD: u32,
-    // @@protoc_insertion_point(field:TrainPartyBuildDiyCsReq.CIGAJENPMKH)
-    pub CIGAJENPMKH: u32,
     // @@protoc_insertion_point(field:TrainPartyBuildDiyCsReq.FPNODEEPFKI)
     pub FPNODEEPFKI: u32,
     // @@protoc_insertion_point(field:TrainPartyBuildDiyCsReq.GANHKLNPAPI)
     pub GANHKLNPAPI: bool,
+    // @@protoc_insertion_point(field:TrainPartyBuildDiyCsReq.CIGAJENPMKH)
+    pub CIGAJENPMKH: u32,
+    // @@protoc_insertion_point(field:TrainPartyBuildDiyCsReq.DBAHFEFGLMD)
+    pub DBAHFEFGLMD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyBuildDiyCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,16 +56,6 @@ impl TrainPartyBuildDiyCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DBAHFEFGLMD",
-            |m: &TrainPartyBuildDiyCsReq| { &m.DBAHFEFGLMD },
-            |m: &mut TrainPartyBuildDiyCsReq| { &mut m.DBAHFEFGLMD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CIGAJENPMKH",
-            |m: &TrainPartyBuildDiyCsReq| { &m.CIGAJENPMKH },
-            |m: &mut TrainPartyBuildDiyCsReq| { &mut m.CIGAJENPMKH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FPNODEEPFKI",
             |m: &TrainPartyBuildDiyCsReq| { &m.FPNODEEPFKI },
             |m: &mut TrainPartyBuildDiyCsReq| { &mut m.FPNODEEPFKI },
@@ -74,6 +64,16 @@ impl TrainPartyBuildDiyCsReq {
             "GANHKLNPAPI",
             |m: &TrainPartyBuildDiyCsReq| { &m.GANHKLNPAPI },
             |m: &mut TrainPartyBuildDiyCsReq| { &mut m.GANHKLNPAPI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CIGAJENPMKH",
+            |m: &TrainPartyBuildDiyCsReq| { &m.CIGAJENPMKH },
+            |m: &mut TrainPartyBuildDiyCsReq| { &mut m.CIGAJENPMKH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DBAHFEFGLMD",
+            |m: &TrainPartyBuildDiyCsReq| { &m.DBAHFEFGLMD },
+            |m: &mut TrainPartyBuildDiyCsReq| { &mut m.DBAHFEFGLMD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyBuildDiyCsReq>(
             "TrainPartyBuildDiyCsReq",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for TrainPartyBuildDiyCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.DBAHFEFGLMD = is.read_uint32()?;
-                },
-                8 => {
-                    self.CIGAJENPMKH = is.read_uint32()?;
-                },
-                80 => {
+                56 => {
                     self.FPNODEEPFKI = is.read_uint32()?;
                 },
-                40 => {
+                64 => {
                     self.GANHKLNPAPI = is.read_bool()?;
+                },
+                96 => {
+                    self.CIGAJENPMKH = is.read_uint32()?;
+                },
+                16 => {
+                    self.DBAHFEFGLMD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for TrainPartyBuildDiyCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DBAHFEFGLMD != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.DBAHFEFGLMD);
-        }
-        if self.CIGAJENPMKH != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.CIGAJENPMKH);
-        }
         if self.FPNODEEPFKI != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.FPNODEEPFKI);
+            my_size += ::protobuf::rt::uint32_size(7, self.FPNODEEPFKI);
         }
         if self.GANHKLNPAPI != false {
             my_size += 1 + 1;
+        }
+        if self.CIGAJENPMKH != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.CIGAJENPMKH);
+        }
+        if self.DBAHFEFGLMD != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.DBAHFEFGLMD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for TrainPartyBuildDiyCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DBAHFEFGLMD != 0 {
-            os.write_uint32(8, self.DBAHFEFGLMD)?;
-        }
-        if self.CIGAJENPMKH != 0 {
-            os.write_uint32(1, self.CIGAJENPMKH)?;
-        }
         if self.FPNODEEPFKI != 0 {
-            os.write_uint32(10, self.FPNODEEPFKI)?;
+            os.write_uint32(7, self.FPNODEEPFKI)?;
         }
         if self.GANHKLNPAPI != false {
-            os.write_bool(5, self.GANHKLNPAPI)?;
+            os.write_bool(8, self.GANHKLNPAPI)?;
+        }
+        if self.CIGAJENPMKH != 0 {
+            os.write_uint32(12, self.CIGAJENPMKH)?;
+        }
+        if self.DBAHFEFGLMD != 0 {
+            os.write_uint32(2, self.DBAHFEFGLMD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for TrainPartyBuildDiyCsReq {
     }
 
     fn clear(&mut self) {
-        self.DBAHFEFGLMD = 0;
-        self.CIGAJENPMKH = 0;
         self.FPNODEEPFKI = 0;
         self.GANHKLNPAPI = false;
+        self.CIGAJENPMKH = 0;
+        self.DBAHFEFGLMD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyBuildDiyCsReq {
         static instance: TrainPartyBuildDiyCsReq = TrainPartyBuildDiyCsReq {
-            DBAHFEFGLMD: 0,
-            CIGAJENPMKH: 0,
             FPNODEEPFKI: 0,
             GANHKLNPAPI: false,
+            CIGAJENPMKH: 0,
+            DBAHFEFGLMD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyBuildDiyCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dTrainPartyBuildDiyCsReq.proto\"\xa1\x01\n\x17TrainPartyBuildDiyCsR\
-    eq\x12\x20\n\x0bDBAHFEFGLMD\x18\x08\x20\x01(\rR\x0bDBAHFEFGLMD\x12\x20\n\
-    \x0bCIGAJENPMKH\x18\x01\x20\x01(\rR\x0bCIGAJENPMKH\x12\x20\n\x0bFPNODEEP\
-    FKI\x18\n\x20\x01(\rR\x0bFPNODEEPFKI\x12\x20\n\x0bGANHKLNPAPI\x18\x05\
-    \x20\x01(\x08R\x0bGANHKLNPAPIb\x06proto3\
+    eq\x12\x20\n\x0bFPNODEEPFKI\x18\x07\x20\x01(\rR\x0bFPNODEEPFKI\x12\x20\n\
+    \x0bGANHKLNPAPI\x18\x08\x20\x01(\x08R\x0bGANHKLNPAPI\x12\x20\n\x0bCIGAJE\
+    NPMKH\x18\x0c\x20\x01(\rR\x0bCIGAJENPMKH\x12\x20\n\x0bDBAHFEFGLMD\x18\
+    \x02\x20\x01(\rR\x0bDBAHFEFGLMDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

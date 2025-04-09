@@ -79,10 +79,10 @@ impl ::protobuf::Message for QuitTreasureDungeonCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                88 => {
                     self.PCPDFJHDJCC = is.read_bool()?;
                 },
-                80 => {
+                112 => {
                     self.NLMDEMOHBOO = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for QuitTreasureDungeonCsReq {
             my_size += 1 + 1;
         }
         if self.NLMDEMOHBOO != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.NLMDEMOHBOO);
+            my_size += ::protobuf::rt::uint32_size(14, self.NLMDEMOHBOO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for QuitTreasureDungeonCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PCPDFJHDJCC != false {
-            os.write_bool(13, self.PCPDFJHDJCC)?;
+            os.write_bool(11, self.PCPDFJHDJCC)?;
         }
         if self.NLMDEMOHBOO != 0 {
-            os.write_uint32(10, self.NLMDEMOHBOO)?;
+            os.write_uint32(14, self.NLMDEMOHBOO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for QuitTreasureDungeonCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eQuitTreasureDungeonCsReq.proto\"^\n\x18QuitTreasureDungeonCsReq\
-    \x12\x20\n\x0bPCPDFJHDJCC\x18\r\x20\x01(\x08R\x0bPCPDFJHDJCC\x12\x20\n\
-    \x0bNLMDEMOHBOO\x18\n\x20\x01(\rR\x0bNLMDEMOHBOOb\x06proto3\
+    \x12\x20\n\x0bPCPDFJHDJCC\x18\x0b\x20\x01(\x08R\x0bPCPDFJHDJCC\x12\x20\n\
+    \x0bNLMDEMOHBOO\x18\x0e\x20\x01(\rR\x0bNLMDEMOHBOOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishTutorialGuideScRsp {
     // message fields
-    // @@protoc_insertion_point(field:FinishTutorialGuideScRsp.tutorial_guide)
-    pub tutorial_guide: ::protobuf::MessageField<super::TutorialGuide::TutorialGuide>,
     // @@protoc_insertion_point(field:FinishTutorialGuideScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:FinishTutorialGuideScRsp.tutorial_guide)
+    pub tutorial_guide: ::protobuf::MessageField<super::TutorialGuide::TutorialGuide>,
     // @@protoc_insertion_point(field:FinishTutorialGuideScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
@@ -53,15 +53,15 @@ impl FinishTutorialGuideScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::TutorialGuide::TutorialGuide>(
-            "tutorial_guide",
-            |m: &FinishTutorialGuideScRsp| { &m.tutorial_guide },
-            |m: &mut FinishTutorialGuideScRsp| { &mut m.tutorial_guide },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &FinishTutorialGuideScRsp| { &m.retcode },
             |m: &mut FinishTutorialGuideScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::TutorialGuide::TutorialGuide>(
+            "tutorial_guide",
+            |m: &FinishTutorialGuideScRsp| { &m.tutorial_guide },
+            |m: &mut FinishTutorialGuideScRsp| { &mut m.tutorial_guide },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "reward",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for FinishTutorialGuideScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                48 => {
+                    self.retcode = is.read_uint32()?;
+                },
                 34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.tutorial_guide)?;
                 },
-                96 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                42 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
                 tag => {
@@ -107,12 +107,12 @@ impl ::protobuf::Message for FinishTutorialGuideScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+        }
         if let Some(v) = self.tutorial_guide.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
@@ -124,14 +124,14 @@ impl ::protobuf::Message for FinishTutorialGuideScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.retcode != 0 {
+            os.write_uint32(6, self.retcode)?;
+        }
         if let Some(v) = self.tutorial_guide.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
-        }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for FinishTutorialGuideScRsp {
     }
 
     fn clear(&mut self) {
-        self.tutorial_guide.clear();
         self.retcode = 0;
+        self.tutorial_guide.clear();
         self.reward.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishTutorialGuideScRsp {
         static instance: FinishTutorialGuideScRsp = FinishTutorialGuideScRsp {
-            tutorial_guide: ::protobuf::MessageField::none(),
             retcode: 0,
+            tutorial_guide: ::protobuf::MessageField::none(),
             reward: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for FinishTutorialGuideScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eFinishTutorialGuideScRsp.proto\x1a\x0eItemList.proto\x1a\x13Tutori\
-    alGuide.proto\"\x8e\x01\n\x18FinishTutorialGuideScRsp\x125\n\x0etutorial\
-    _guide\x18\x04\x20\x01(\x0b2\x0e.TutorialGuideR\rtutorialGuide\x12\x18\n\
-    \x07retcode\x18\x0c\x20\x01(\rR\x07retcode\x12!\n\x06reward\x18\x05\x20\
-    \x01(\x0b2\t.ItemListR\x06rewardb\x06proto3\
+    alGuide.proto\"\x8e\x01\n\x18FinishTutorialGuideScRsp\x12\x18\n\x07retco\
+    de\x18\x06\x20\x01(\rR\x07retcode\x125\n\x0etutorial_guide\x18\x04\x20\
+    \x01(\x0b2\x0e.TutorialGuideR\rtutorialGuide\x12!\n\x06reward\x18\x0e\
+    \x20\x01(\x0b2\t.ItemListR\x06rewardb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,10 +30,10 @@ pub struct BattleCollegeDataChangeScNotify {
     // message fields
     // @@protoc_insertion_point(field:BattleCollegeDataChangeScNotify.BHELBOHKBBM)
     pub BHELBOHKBBM: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:BattleCollegeDataChangeScNotify.FAPGFPCCKKJ)
-    pub FAPGFPCCKKJ: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:BattleCollegeDataChangeScNotify.MAMHOJMFJOF)
     pub MAMHOJMFJOF: u32,
+    // @@protoc_insertion_point(field:BattleCollegeDataChangeScNotify.FAPGFPCCKKJ)
+    pub FAPGFPCCKKJ: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:BattleCollegeDataChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl BattleCollegeDataChangeScNotify {
             |m: &BattleCollegeDataChangeScNotify| { &m.BHELBOHKBBM },
             |m: &mut BattleCollegeDataChangeScNotify| { &mut m.BHELBOHKBBM },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FAPGFPCCKKJ",
-            |m: &BattleCollegeDataChangeScNotify| { &m.FAPGFPCCKKJ },
-            |m: &mut BattleCollegeDataChangeScNotify| { &mut m.FAPGFPCCKKJ },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MAMHOJMFJOF",
             |m: &BattleCollegeDataChangeScNotify| { &m.MAMHOJMFJOF },
             |m: &mut BattleCollegeDataChangeScNotify| { &mut m.MAMHOJMFJOF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FAPGFPCCKKJ",
+            |m: &BattleCollegeDataChangeScNotify| { &m.FAPGFPCCKKJ },
+            |m: &mut BattleCollegeDataChangeScNotify| { &mut m.FAPGFPCCKKJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BattleCollegeDataChangeScNotify>(
             "BattleCollegeDataChangeScNotify",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for BattleCollegeDataChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHELBOHKBBM)?;
                 },
-                34 => {
+                112 => {
+                    self.MAMHOJMFJOF = is.read_uint32()?;
+                },
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.FAPGFPCCKKJ)?;
                 },
-                32 => {
+                96 => {
                     self.FAPGFPCCKKJ.push(is.read_uint32()?);
-                },
-                88 => {
-                    self.MAMHOJMFJOF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -114,10 +114,10 @@ impl ::protobuf::Message for BattleCollegeDataChangeScNotify {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.FAPGFPCCKKJ);
         if self.MAMHOJMFJOF != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.MAMHOJMFJOF);
+            my_size += ::protobuf::rt::uint32_size(14, self.MAMHOJMFJOF);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.FAPGFPCCKKJ);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -125,12 +125,12 @@ impl ::protobuf::Message for BattleCollegeDataChangeScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.BHELBOHKBBM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        os.write_repeated_packed_uint32(4, &self.FAPGFPCCKKJ)?;
         if self.MAMHOJMFJOF != 0 {
-            os.write_uint32(11, self.MAMHOJMFJOF)?;
+            os.write_uint32(14, self.MAMHOJMFJOF)?;
         }
+        os.write_repeated_packed_uint32(12, &self.FAPGFPCCKKJ)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,16 +149,16 @@ impl ::protobuf::Message for BattleCollegeDataChangeScNotify {
 
     fn clear(&mut self) {
         self.BHELBOHKBBM.clear();
-        self.FAPGFPCCKKJ.clear();
         self.MAMHOJMFJOF = 0;
+        self.FAPGFPCCKKJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BattleCollegeDataChangeScNotify {
         static instance: BattleCollegeDataChangeScNotify = BattleCollegeDataChangeScNotify {
             BHELBOHKBBM: ::protobuf::MessageField::none(),
-            FAPGFPCCKKJ: ::std::vec::Vec::new(),
             MAMHOJMFJOF: 0,
+            FAPGFPCCKKJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for BattleCollegeDataChangeScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%BattleCollegeDataChangeScNotify.proto\x1a\x0eItemList.proto\"\x92\x01\
-    \n\x1fBattleCollegeDataChangeScNotify\x12+\n\x0bBHELBOHKBBM\x18\x0c\x20\
-    \x01(\x0b2\t.ItemListR\x0bBHELBOHKBBM\x12\x20\n\x0bFAPGFPCCKKJ\x18\x04\
-    \x20\x03(\rR\x0bFAPGFPCCKKJ\x12\x20\n\x0bMAMHOJMFJOF\x18\x0b\x20\x01(\rR\
-    \x0bMAMHOJMFJOFb\x06proto3\
+    \n\x1fBattleCollegeDataChangeScNotify\x12+\n\x0bBHELBOHKBBM\x18\x02\x20\
+    \x01(\x0b2\t.ItemListR\x0bBHELBOHKBBM\x12\x20\n\x0bMAMHOJMFJOF\x18\x0e\
+    \x20\x01(\rR\x0bMAMHOJMFJOF\x12\x20\n\x0bFAPGFPCCKKJ\x18\x0c\x20\x03(\rR\
+    \x0bFAPGFPCCKKJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -72,7 +72,7 @@ impl ::protobuf::Message for SetDisplayAvatarCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                106 => {
                     self.HFBBMLINKFL.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SetDisplayAvatarCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.HFBBMLINKFL {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for SetDisplayAvatarCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bSetDisplayAvatarCsReq.proto\x1a\x11MOKOCBEFMBD.proto\"G\n\x15SetDi\
-    splayAvatarCsReq\x12.\n\x0bHFBBMLINKFL\x18\x0c\x20\x03(\x0b2\x0c.MOKOCBE\
-    FMBDR\x0bHFBBMLINKFLb\x06proto3\
+    splayAvatarCsReq\x12.\n\x0bHFBBMLINKFL\x18\r\x20\x03(\x0b2\x0c.MOKOCBEFM\
+    BDR\x0bHFBBMLINKFLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -45,7 +45,7 @@ impl NDHOPEDOFOC {
         ::std::default::Default::default()
     }
 
-    // .IEKHJDECAPE OEKHNGFFGKB = 6;
+    // .IEKHJDECAPE OEKHNGFFGKB = 7;
 
     pub fn OEKHNGFFGKB(&self) -> &super::IEKHJDECAPE::IEKHJDECAPE {
         match self.BPBOPJFHLOO {
@@ -94,7 +94,7 @@ impl NDHOPEDOFOC {
         }
     }
 
-    // .AKCPALGEMOL ADEOIGEBMDF = 13;
+    // .AKCPALGEMOL ADEOIGEBMDF = 8;
 
     pub fn ADEOIGEBMDF(&self) -> &super::AKCPALGEMOL::AKCPALGEMOL {
         match self.BPBOPJFHLOO {
@@ -143,7 +143,7 @@ impl NDHOPEDOFOC {
         }
     }
 
-    // .NHDBOFCFCJM FUNC_UNLOCK_ID_RELIC = 14;
+    // .NHDBOFCFCJM FUNC_UNLOCK_ID_RELIC = 9;
 
     pub fn FUNC_UNLOCK_ID_RELIC(&self) -> &super::NHDBOFCFCJM::NHDBOFCFCJM {
         match self.BPBOPJFHLOO {
@@ -235,13 +235,13 @@ impl ::protobuf::Message for NDHOPEDOFOC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                58 => {
                     self.BPBOPJFHLOO = ::std::option::Option::Some(ndhopedofoc::BPBOPJFHLOO::OEKHNGFFGKB(is.read_message()?));
                 },
-                106 => {
+                66 => {
                     self.BPBOPJFHLOO = ::std::option::Option::Some(ndhopedofoc::BPBOPJFHLOO::ADEOIGEBMDF(is.read_message()?));
                 },
-                114 => {
+                74 => {
                     self.BPBOPJFHLOO = ::std::option::Option::Some(ndhopedofoc::BPBOPJFHLOO::FUNCUNLOCKIDRELIC(is.read_message()?));
                 },
                 tag => {
@@ -281,13 +281,13 @@ impl ::protobuf::Message for NDHOPEDOFOC {
         if let ::std::option::Option::Some(ref v) = self.BPBOPJFHLOO {
             match v {
                 &ndhopedofoc::BPBOPJFHLOO::OEKHNGFFGKB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
                 &ndhopedofoc::BPBOPJFHLOO::ADEOIGEBMDF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
                 },
                 &ndhopedofoc::BPBOPJFHLOO::FUNCUNLOCKIDRELIC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
                 },
             };
         }
@@ -375,9 +375,9 @@ pub mod ndhopedofoc {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NDHOPEDOFOC.proto\x1a\x11AKCPALGEMOL.proto\x1a\x11IEKHJDECAPE.prot\
     o\x1a\x11NHDBOFCFCJM.proto\"\xc1\x01\n\x0bNDHOPEDOFOC\x120\n\x0bOEKHNGFF\
-    GKB\x18\x06\x20\x01(\x0b2\x0c.IEKHJDECAPEH\0R\x0bOEKHNGFFGKB\x120\n\x0bA\
-    DEOIGEBMDF\x18\r\x20\x01(\x0b2\x0c.AKCPALGEMOLH\0R\x0bADEOIGEBMDF\x12?\n\
-    \x14FUNC_UNLOCK_ID_RELIC\x18\x0e\x20\x01(\x0b2\x0c.NHDBOFCFCJMH\0R\x11FU\
+    GKB\x18\x07\x20\x01(\x0b2\x0c.IEKHJDECAPEH\0R\x0bOEKHNGFFGKB\x120\n\x0bA\
+    DEOIGEBMDF\x18\x08\x20\x01(\x0b2\x0c.AKCPALGEMOLH\0R\x0bADEOIGEBMDF\x12?\
+    \n\x14FUNC_UNLOCK_ID_RELIC\x18\t\x20\x01(\x0b2\x0c.NHDBOFCFCJMH\0R\x11FU\
     NCUNLOCKIDRELICB\r\n\x0bBPBOPJFHLOOb\x06proto3\
 ";
 

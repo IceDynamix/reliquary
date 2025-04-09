@@ -30,12 +30,12 @@ pub struct StartWolfBroGameCsReq {
     // message fields
     // @@protoc_insertion_point(field:StartWolfBroGameCsReq.ELGANMDPMID)
     pub ELGANMDPMID: u32,
+    // @@protoc_insertion_point(field:StartWolfBroGameCsReq.IOEHGAGDFJJ)
+    pub IOEHGAGDFJJ: ::protobuf::MessageField<super::LDNMEANAMLM::LDNMEANAMLM>,
     // @@protoc_insertion_point(field:StartWolfBroGameCsReq.MFNBANEDODD)
     pub MFNBANEDODD: ::protobuf::MessageField<super::CFKHKILIHHF::CFKHKILIHHF>,
     // @@protoc_insertion_point(field:StartWolfBroGameCsReq.DJFCMLIPDAB)
     pub DJFCMLIPDAB: bool,
-    // @@protoc_insertion_point(field:StartWolfBroGameCsReq.IOEHGAGDFJJ)
-    pub IOEHGAGDFJJ: ::protobuf::MessageField<super::LDNMEANAMLM::LDNMEANAMLM>,
     // special fields
     // @@protoc_insertion_point(special_field:StartWolfBroGameCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,6 +60,11 @@ impl StartWolfBroGameCsReq {
             |m: &StartWolfBroGameCsReq| { &m.ELGANMDPMID },
             |m: &mut StartWolfBroGameCsReq| { &mut m.ELGANMDPMID },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LDNMEANAMLM::LDNMEANAMLM>(
+            "IOEHGAGDFJJ",
+            |m: &StartWolfBroGameCsReq| { &m.IOEHGAGDFJJ },
+            |m: &mut StartWolfBroGameCsReq| { &mut m.IOEHGAGDFJJ },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CFKHKILIHHF::CFKHKILIHHF>(
             "MFNBANEDODD",
             |m: &StartWolfBroGameCsReq| { &m.MFNBANEDODD },
@@ -69,11 +74,6 @@ impl StartWolfBroGameCsReq {
             "DJFCMLIPDAB",
             |m: &StartWolfBroGameCsReq| { &m.DJFCMLIPDAB },
             |m: &mut StartWolfBroGameCsReq| { &mut m.DJFCMLIPDAB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LDNMEANAMLM::LDNMEANAMLM>(
-            "IOEHGAGDFJJ",
-            |m: &StartWolfBroGameCsReq| { &m.IOEHGAGDFJJ },
-            |m: &mut StartWolfBroGameCsReq| { &mut m.IOEHGAGDFJJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartWolfBroGameCsReq>(
             "StartWolfBroGameCsReq",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for StartWolfBroGameCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                16 => {
                     self.ELGANMDPMID = is.read_uint32()?;
                 },
-                122 => {
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IOEHGAGDFJJ)?;
+                },
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MFNBANEDODD)?;
                 },
-                96 => {
+                48 => {
                     self.DJFCMLIPDAB = is.read_bool()?;
-                },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IOEHGAGDFJJ)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,7 +118,11 @@ impl ::protobuf::Message for StartWolfBroGameCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.ELGANMDPMID != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.ELGANMDPMID);
+            my_size += ::protobuf::rt::uint32_size(2, self.ELGANMDPMID);
+        }
+        if let Some(v) = self.IOEHGAGDFJJ.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if let Some(v) = self.MFNBANEDODD.as_ref() {
             let len = v.compute_size();
@@ -127,10 +131,6 @@ impl ::protobuf::Message for StartWolfBroGameCsReq {
         if self.DJFCMLIPDAB != false {
             my_size += 1 + 1;
         }
-        if let Some(v) = self.IOEHGAGDFJJ.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -138,16 +138,16 @@ impl ::protobuf::Message for StartWolfBroGameCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.ELGANMDPMID != 0 {
-            os.write_uint32(8, self.ELGANMDPMID)?;
-        }
-        if let Some(v) = self.MFNBANEDODD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        }
-        if self.DJFCMLIPDAB != false {
-            os.write_bool(12, self.DJFCMLIPDAB)?;
+            os.write_uint32(2, self.ELGANMDPMID)?;
         }
         if let Some(v) = self.IOEHGAGDFJJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        }
+        if let Some(v) = self.MFNBANEDODD.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
+        if self.DJFCMLIPDAB != false {
+            os.write_bool(6, self.DJFCMLIPDAB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,18 +167,18 @@ impl ::protobuf::Message for StartWolfBroGameCsReq {
 
     fn clear(&mut self) {
         self.ELGANMDPMID = 0;
+        self.IOEHGAGDFJJ.clear();
         self.MFNBANEDODD.clear();
         self.DJFCMLIPDAB = false;
-        self.IOEHGAGDFJJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartWolfBroGameCsReq {
         static instance: StartWolfBroGameCsReq = StartWolfBroGameCsReq {
             ELGANMDPMID: 0,
+            IOEHGAGDFJJ: ::protobuf::MessageField::none(),
             MFNBANEDODD: ::protobuf::MessageField::none(),
             DJFCMLIPDAB: false,
-            IOEHGAGDFJJ: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -205,10 +205,10 @@ impl ::protobuf::reflect::ProtobufValue for StartWolfBroGameCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bStartWolfBroGameCsReq.proto\x1a\x11CFKHKILIHHF.proto\x1a\x11LDNMEA\
     NAMLM.proto\"\xbb\x01\n\x15StartWolfBroGameCsReq\x12\x20\n\x0bELGANMDPMI\
-    D\x18\x08\x20\x01(\rR\x0bELGANMDPMID\x12.\n\x0bMFNBANEDODD\x18\x0f\x20\
-    \x01(\x0b2\x0c.CFKHKILIHHFR\x0bMFNBANEDODD\x12\x20\n\x0bDJFCMLIPDAB\x18\
-    \x0c\x20\x01(\x08R\x0bDJFCMLIPDAB\x12.\n\x0bIOEHGAGDFJJ\x18\r\x20\x01(\
-    \x0b2\x0c.LDNMEANAMLMR\x0bIOEHGAGDFJJb\x06proto3\
+    D\x18\x02\x20\x01(\rR\x0bELGANMDPMID\x12.\n\x0bIOEHGAGDFJJ\x18\x03\x20\
+    \x01(\x0b2\x0c.LDNMEANAMLMR\x0bIOEHGAGDFJJ\x12.\n\x0bMFNBANEDODD\x18\t\
+    \x20\x01(\x0b2\x0c.CFKHKILIHHFR\x0bMFNBANEDODD\x12\x20\n\x0bDJFCMLIPDAB\
+    \x18\x06\x20\x01(\x08R\x0bDJFCMLIPDABb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

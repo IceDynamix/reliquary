@@ -79,10 +79,10 @@ impl ::protobuf::Message for GBPFLAGFAIJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                40 => {
                     self.PBLFLJNHMIL = is.read_enum_or_unknown()?;
                 },
-                112 => {
+                96 => {
                     self.KBDFBGINNBJ = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for GBPFLAGFAIJ {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::RogueExhibitionStatus::RogueExhibitionStatus::ROGUE_EXHIBITION_NONE) {
-            my_size += ::protobuf::rt::int32_size(6, self.PBLFLJNHMIL.value());
+            my_size += ::protobuf::rt::int32_size(5, self.PBLFLJNHMIL.value());
         }
         if self.KBDFBGINNBJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.KBDFBGINNBJ);
+            my_size += ::protobuf::rt::uint32_size(12, self.KBDFBGINNBJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GBPFLAGFAIJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::RogueExhibitionStatus::RogueExhibitionStatus::ROGUE_EXHIBITION_NONE) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.PBLFLJNHMIL))?;
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.PBLFLJNHMIL))?;
         }
         if self.KBDFBGINNBJ != 0 {
-            os.write_uint32(14, self.KBDFBGINNBJ)?;
+            os.write_uint32(12, self.KBDFBGINNBJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for GBPFLAGFAIJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GBPFLAGFAIJ.proto\x1a\x1bRogueExhibitionStatus.proto\"i\n\x0bGBPFL\
-    AGFAIJ\x128\n\x0bPBLFLJNHMIL\x18\x06\x20\x01(\x0e2\x16.RogueExhibitionSt\
-    atusR\x0bPBLFLJNHMIL\x12\x20\n\x0bKBDFBGINNBJ\x18\x0e\x20\x01(\rR\x0bKBD\
+    AGFAIJ\x128\n\x0bPBLFLJNHMIL\x18\x05\x20\x01(\x0e2\x16.RogueExhibitionSt\
+    atusR\x0bPBLFLJNHMIL\x12\x20\n\x0bKBDFBGINNBJ\x18\x0c\x20\x01(\rR\x0bKBD\
     FBGINNBJb\x06proto3\
 ";
 

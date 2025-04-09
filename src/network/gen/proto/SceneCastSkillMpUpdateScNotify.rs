@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneCastSkillMpUpdateScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SceneCastSkillMpUpdateScNotify.LIDIPBDCMFG)
-    pub LIDIPBDCMFG: u32,
     // @@protoc_insertion_point(field:SceneCastSkillMpUpdateScNotify.BPMDFENIDBF)
     pub BPMDFENIDBF: u32,
+    // @@protoc_insertion_point(field:SceneCastSkillMpUpdateScNotify.LIDIPBDCMFG)
+    pub LIDIPBDCMFG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SceneCastSkillMpUpdateScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl SceneCastSkillMpUpdateScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LIDIPBDCMFG",
-            |m: &SceneCastSkillMpUpdateScNotify| { &m.LIDIPBDCMFG },
-            |m: &mut SceneCastSkillMpUpdateScNotify| { &mut m.LIDIPBDCMFG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BPMDFENIDBF",
             |m: &SceneCastSkillMpUpdateScNotify| { &m.BPMDFENIDBF },
             |m: &mut SceneCastSkillMpUpdateScNotify| { &mut m.BPMDFENIDBF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LIDIPBDCMFG",
+            |m: &SceneCastSkillMpUpdateScNotify| { &m.LIDIPBDCMFG },
+            |m: &mut SceneCastSkillMpUpdateScNotify| { &mut m.LIDIPBDCMFG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SceneCastSkillMpUpdateScNotify>(
             "SceneCastSkillMpUpdateScNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SceneCastSkillMpUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.LIDIPBDCMFG = is.read_uint32()?;
-                },
-                24 => {
+                40 => {
                     self.BPMDFENIDBF = is.read_uint32()?;
+                },
+                80 => {
+                    self.LIDIPBDCMFG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for SceneCastSkillMpUpdateScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LIDIPBDCMFG != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.LIDIPBDCMFG);
-        }
         if self.BPMDFENIDBF != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.BPMDFENIDBF);
+            my_size += ::protobuf::rt::uint32_size(5, self.BPMDFENIDBF);
+        }
+        if self.LIDIPBDCMFG != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.LIDIPBDCMFG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for SceneCastSkillMpUpdateScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LIDIPBDCMFG != 0 {
-            os.write_uint32(13, self.LIDIPBDCMFG)?;
-        }
         if self.BPMDFENIDBF != 0 {
-            os.write_uint32(3, self.BPMDFENIDBF)?;
+            os.write_uint32(5, self.BPMDFENIDBF)?;
+        }
+        if self.LIDIPBDCMFG != 0 {
+            os.write_uint32(10, self.LIDIPBDCMFG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for SceneCastSkillMpUpdateScNotify {
     }
 
     fn clear(&mut self) {
-        self.LIDIPBDCMFG = 0;
         self.BPMDFENIDBF = 0;
+        self.LIDIPBDCMFG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneCastSkillMpUpdateScNotify {
         static instance: SceneCastSkillMpUpdateScNotify = SceneCastSkillMpUpdateScNotify {
-            LIDIPBDCMFG: 0,
             BPMDFENIDBF: 0,
+            LIDIPBDCMFG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for SceneCastSkillMpUpdateScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$SceneCastSkillMpUpdateScNotify.proto\"d\n\x1eSceneCastSkillMpUpdateSc\
-    Notify\x12\x20\n\x0bLIDIPBDCMFG\x18\r\x20\x01(\rR\x0bLIDIPBDCMFG\x12\x20\
-    \n\x0bBPMDFENIDBF\x18\x03\x20\x01(\rR\x0bBPMDFENIDBFb\x06proto3\
+    Notify\x12\x20\n\x0bBPMDFENIDBF\x18\x05\x20\x01(\rR\x0bBPMDFENIDBF\x12\
+    \x20\n\x0bLIDIPBDCMFG\x18\n\x20\x01(\rR\x0bLIDIPBDCMFGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

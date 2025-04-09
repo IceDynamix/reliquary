@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BABHBOMOMDF {
     // message fields
-    // @@protoc_insertion_point(field:BABHBOMOMDF.OGLDNEFKNDO)
-    pub OGLDNEFKNDO: u32,
-    // @@protoc_insertion_point(field:BABHBOMOMDF.PBLFLJNHMIL)
-    pub PBLFLJNHMIL: ::protobuf::EnumOrUnknown<super::ODBNIGDLNCF::ODBNIGDLNCF>,
-    // @@protoc_insertion_point(field:BABHBOMOMDF.BHPGJCICMJM)
-    pub BHPGJCICMJM: u32,
     // @@protoc_insertion_point(field:BABHBOMOMDF.PPJBGNBMKPM)
     pub PPJBGNBMKPM: u32,
+    // @@protoc_insertion_point(field:BABHBOMOMDF.BHPGJCICMJM)
+    pub BHPGJCICMJM: u32,
+    // @@protoc_insertion_point(field:BABHBOMOMDF.PBLFLJNHMIL)
+    pub PBLFLJNHMIL: ::protobuf::EnumOrUnknown<super::ODBNIGDLNCF::ODBNIGDLNCF>,
     // @@protoc_insertion_point(field:BABHBOMOMDF.MNFJEIININL)
     pub MNFJEIININL: ::std::vec::Vec<super::LHOMIEDAOID::LHOMIEDAOID>,
+    // @@protoc_insertion_point(field:BABHBOMOMDF.OGLDNEFKNDO)
+    pub OGLDNEFKNDO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BABHBOMOMDF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,14 +58,9 @@ impl BABHBOMOMDF {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OGLDNEFKNDO",
-            |m: &BABHBOMOMDF| { &m.OGLDNEFKNDO },
-            |m: &mut BABHBOMOMDF| { &mut m.OGLDNEFKNDO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PBLFLJNHMIL",
-            |m: &BABHBOMOMDF| { &m.PBLFLJNHMIL },
-            |m: &mut BABHBOMOMDF| { &mut m.PBLFLJNHMIL },
+            "PPJBGNBMKPM",
+            |m: &BABHBOMOMDF| { &m.PPJBGNBMKPM },
+            |m: &mut BABHBOMOMDF| { &mut m.PPJBGNBMKPM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BHPGJCICMJM",
@@ -73,14 +68,19 @@ impl BABHBOMOMDF {
             |m: &mut BABHBOMOMDF| { &mut m.BHPGJCICMJM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PPJBGNBMKPM",
-            |m: &BABHBOMOMDF| { &m.PPJBGNBMKPM },
-            |m: &mut BABHBOMOMDF| { &mut m.PPJBGNBMKPM },
+            "PBLFLJNHMIL",
+            |m: &BABHBOMOMDF| { &m.PBLFLJNHMIL },
+            |m: &mut BABHBOMOMDF| { &mut m.PBLFLJNHMIL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "MNFJEIININL",
             |m: &BABHBOMOMDF| { &m.MNFJEIININL },
             |m: &mut BABHBOMOMDF| { &mut m.MNFJEIININL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OGLDNEFKNDO",
+            |m: &BABHBOMOMDF| { &m.OGLDNEFKNDO },
+            |m: &mut BABHBOMOMDF| { &mut m.OGLDNEFKNDO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BABHBOMOMDF>(
             "BABHBOMOMDF",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for BABHBOMOMDF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.OGLDNEFKNDO = is.read_uint32()?;
+                112 => {
+                    self.PPJBGNBMKPM = is.read_uint32()?;
+                },
+                64 => {
+                    self.BHPGJCICMJM = is.read_uint32()?;
                 },
                 88 => {
                     self.PBLFLJNHMIL = is.read_enum_or_unknown()?;
                 },
-                120 => {
-                    self.BHPGJCICMJM = is.read_uint32()?;
-                },
-                56 => {
-                    self.PPJBGNBMKPM = is.read_uint32()?;
-                },
-                50 => {
+                18 => {
                     self.MNFJEIININL.push(is.read_message()?);
+                },
+                24 => {
+                    self.OGLDNEFKNDO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,43 +127,43 @@ impl ::protobuf::Message for BABHBOMOMDF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OGLDNEFKNDO != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.OGLDNEFKNDO);
+        if self.PPJBGNBMKPM != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.PPJBGNBMKPM);
+        }
+        if self.BHPGJCICMJM != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.BHPGJCICMJM);
         }
         if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::ODBNIGDLNCF::ODBNIGDLNCF::ROGUE_TOURN_LAYER_STATUS_NONE) {
             my_size += ::protobuf::rt::int32_size(11, self.PBLFLJNHMIL.value());
-        }
-        if self.BHPGJCICMJM != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.BHPGJCICMJM);
-        }
-        if self.PPJBGNBMKPM != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.PPJBGNBMKPM);
         }
         for value in &self.MNFJEIININL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.OGLDNEFKNDO != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.OGLDNEFKNDO);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OGLDNEFKNDO != 0 {
-            os.write_uint32(2, self.OGLDNEFKNDO)?;
+        if self.PPJBGNBMKPM != 0 {
+            os.write_uint32(14, self.PPJBGNBMKPM)?;
+        }
+        if self.BHPGJCICMJM != 0 {
+            os.write_uint32(8, self.BHPGJCICMJM)?;
         }
         if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::ODBNIGDLNCF::ODBNIGDLNCF::ROGUE_TOURN_LAYER_STATUS_NONE) {
             os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.PBLFLJNHMIL))?;
         }
-        if self.BHPGJCICMJM != 0 {
-            os.write_uint32(15, self.BHPGJCICMJM)?;
-        }
-        if self.PPJBGNBMKPM != 0 {
-            os.write_uint32(7, self.PPJBGNBMKPM)?;
-        }
         for v in &self.MNFJEIININL {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
+        if self.OGLDNEFKNDO != 0 {
+            os.write_uint32(3, self.OGLDNEFKNDO)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -181,21 +181,21 @@ impl ::protobuf::Message for BABHBOMOMDF {
     }
 
     fn clear(&mut self) {
-        self.OGLDNEFKNDO = 0;
-        self.PBLFLJNHMIL = ::protobuf::EnumOrUnknown::new(super::ODBNIGDLNCF::ODBNIGDLNCF::ROGUE_TOURN_LAYER_STATUS_NONE);
-        self.BHPGJCICMJM = 0;
         self.PPJBGNBMKPM = 0;
+        self.BHPGJCICMJM = 0;
+        self.PBLFLJNHMIL = ::protobuf::EnumOrUnknown::new(super::ODBNIGDLNCF::ODBNIGDLNCF::ROGUE_TOURN_LAYER_STATUS_NONE);
         self.MNFJEIININL.clear();
+        self.OGLDNEFKNDO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BABHBOMOMDF {
         static instance: BABHBOMOMDF = BABHBOMOMDF {
-            OGLDNEFKNDO: 0,
-            PBLFLJNHMIL: ::protobuf::EnumOrUnknown::from_i32(0),
-            BHPGJCICMJM: 0,
             PPJBGNBMKPM: 0,
+            BHPGJCICMJM: 0,
+            PBLFLJNHMIL: ::protobuf::EnumOrUnknown::from_i32(0),
             MNFJEIININL: ::std::vec::Vec::new(),
+            OGLDNEFKNDO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,12 +221,12 @@ impl ::protobuf::reflect::ProtobufValue for BABHBOMOMDF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BABHBOMOMDF.proto\x1a\x11LHOMIEDAOID.proto\x1a\x11ODBNIGDLNCF.prot\
-    o\"\xd3\x01\n\x0bBABHBOMOMDF\x12\x20\n\x0bOGLDNEFKNDO\x18\x02\x20\x01(\r\
-    R\x0bOGLDNEFKNDO\x12.\n\x0bPBLFLJNHMIL\x18\x0b\x20\x01(\x0e2\x0c.ODBNIGD\
-    LNCFR\x0bPBLFLJNHMIL\x12\x20\n\x0bBHPGJCICMJM\x18\x0f\x20\x01(\rR\x0bBHP\
-    GJCICMJM\x12\x20\n\x0bPPJBGNBMKPM\x18\x07\x20\x01(\rR\x0bPPJBGNBMKPM\x12\
-    .\n\x0bMNFJEIININL\x18\x06\x20\x03(\x0b2\x0c.LHOMIEDAOIDR\x0bMNFJEIININL\
-    b\x06proto3\
+    o\"\xd3\x01\n\x0bBABHBOMOMDF\x12\x20\n\x0bPPJBGNBMKPM\x18\x0e\x20\x01(\r\
+    R\x0bPPJBGNBMKPM\x12\x20\n\x0bBHPGJCICMJM\x18\x08\x20\x01(\rR\x0bBHPGJCI\
+    CMJM\x12.\n\x0bPBLFLJNHMIL\x18\x0b\x20\x01(\x0e2\x0c.ODBNIGDLNCFR\x0bPBL\
+    FLJNHMIL\x12.\n\x0bMNFJEIININL\x18\x02\x20\x03(\x0b2\x0c.LHOMIEDAOIDR\
+    \x0bMNFJEIININL\x12\x20\n\x0bOGLDNEFKNDO\x18\x03\x20\x01(\rR\x0bOGLDNEFK\
+    NDOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

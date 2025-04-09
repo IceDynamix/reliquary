@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicLevelInfoUpdateScNotify {
     // message fields
+    // @@protoc_insertion_point(field:RogueMagicLevelInfoUpdateScNotify.AHOOAFGDEHF)
+    pub AHOOAFGDEHF: ::std::vec::Vec<super::BPAIFNGEDGH::BPAIFNGEDGH>,
     // @@protoc_insertion_point(field:RogueMagicLevelInfoUpdateScNotify.ACGBELAIGBO)
     pub ACGBELAIGBO: u32,
     // @@protoc_insertion_point(field:RogueMagicLevelInfoUpdateScNotify.ALIFPIHNMEK)
     pub ALIFPIHNMEK: ::protobuf::EnumOrUnknown<super::JMPPHGIGFFI::JMPPHGIGFFI>,
-    // @@protoc_insertion_point(field:RogueMagicLevelInfoUpdateScNotify.LFCDODFMHHN)
-    pub LFCDODFMHHN: u32,
     // @@protoc_insertion_point(field:RogueMagicLevelInfoUpdateScNotify.PBLFLJNHMIL)
     pub PBLFLJNHMIL: ::protobuf::EnumOrUnknown<super::BEHFNMKDOMK::BEHFNMKDOMK>,
-    // @@protoc_insertion_point(field:RogueMagicLevelInfoUpdateScNotify.AHOOAFGDEHF)
-    pub AHOOAFGDEHF: ::std::vec::Vec<super::BPAIFNGEDGH::BPAIFNGEDGH>,
+    // @@protoc_insertion_point(field:RogueMagicLevelInfoUpdateScNotify.LFCDODFMHHN)
+    pub LFCDODFMHHN: u32,
     // @@protoc_insertion_point(field:RogueMagicLevelInfoUpdateScNotify.BGOKHEIBNKL)
     pub BGOKHEIBNKL: u32,
     // special fields
@@ -59,6 +59,11 @@ impl RogueMagicLevelInfoUpdateScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "AHOOAFGDEHF",
+            |m: &RogueMagicLevelInfoUpdateScNotify| { &m.AHOOAFGDEHF },
+            |m: &mut RogueMagicLevelInfoUpdateScNotify| { &mut m.AHOOAFGDEHF },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ACGBELAIGBO",
             |m: &RogueMagicLevelInfoUpdateScNotify| { &m.ACGBELAIGBO },
@@ -70,19 +75,14 @@ impl RogueMagicLevelInfoUpdateScNotify {
             |m: &mut RogueMagicLevelInfoUpdateScNotify| { &mut m.ALIFPIHNMEK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LFCDODFMHHN",
-            |m: &RogueMagicLevelInfoUpdateScNotify| { &m.LFCDODFMHHN },
-            |m: &mut RogueMagicLevelInfoUpdateScNotify| { &mut m.LFCDODFMHHN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PBLFLJNHMIL",
             |m: &RogueMagicLevelInfoUpdateScNotify| { &m.PBLFLJNHMIL },
             |m: &mut RogueMagicLevelInfoUpdateScNotify| { &mut m.PBLFLJNHMIL },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "AHOOAFGDEHF",
-            |m: &RogueMagicLevelInfoUpdateScNotify| { &m.AHOOAFGDEHF },
-            |m: &mut RogueMagicLevelInfoUpdateScNotify| { &mut m.AHOOAFGDEHF },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LFCDODFMHHN",
+            |m: &RogueMagicLevelInfoUpdateScNotify| { &m.LFCDODFMHHN },
+            |m: &mut RogueMagicLevelInfoUpdateScNotify| { &mut m.LFCDODFMHHN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BGOKHEIBNKL",
@@ -107,22 +107,22 @@ impl ::protobuf::Message for RogueMagicLevelInfoUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.ACGBELAIGBO = is.read_uint32()?;
-                },
-                96 => {
-                    self.ALIFPIHNMEK = is.read_enum_or_unknown()?;
-                },
-                120 => {
-                    self.LFCDODFMHHN = is.read_uint32()?;
-                },
-                16 => {
-                    self.PBLFLJNHMIL = is.read_enum_or_unknown()?;
-                },
-                34 => {
+                74 => {
                     self.AHOOAFGDEHF.push(is.read_message()?);
                 },
-                8 => {
+                56 => {
+                    self.ACGBELAIGBO = is.read_uint32()?;
+                },
+                80 => {
+                    self.ALIFPIHNMEK = is.read_enum_or_unknown()?;
+                },
+                96 => {
+                    self.PBLFLJNHMIL = is.read_enum_or_unknown()?;
+                },
+                48 => {
+                    self.LFCDODFMHHN = is.read_uint32()?;
+                },
+                24 => {
                     self.BGOKHEIBNKL = is.read_uint32()?;
                 },
                 tag => {
@@ -137,24 +137,24 @@ impl ::protobuf::Message for RogueMagicLevelInfoUpdateScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ACGBELAIGBO != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.ACGBELAIGBO);
-        }
-        if self.ALIFPIHNMEK != ::protobuf::EnumOrUnknown::new(super::JMPPHGIGFFI::JMPPHGIGFFI::ROGUE_MAGIC_SETTLE_REASON_NONE) {
-            my_size += ::protobuf::rt::int32_size(12, self.ALIFPIHNMEK.value());
-        }
-        if self.LFCDODFMHHN != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.LFCDODFMHHN);
-        }
-        if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::BEHFNMKDOMK::BEHFNMKDOMK::ROGUE_MAGIC_LEVEL_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(2, self.PBLFLJNHMIL.value());
-        }
         for value in &self.AHOOAFGDEHF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.ACGBELAIGBO != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.ACGBELAIGBO);
+        }
+        if self.ALIFPIHNMEK != ::protobuf::EnumOrUnknown::new(super::JMPPHGIGFFI::JMPPHGIGFFI::ROGUE_MAGIC_SETTLE_REASON_NONE) {
+            my_size += ::protobuf::rt::int32_size(10, self.ALIFPIHNMEK.value());
+        }
+        if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::BEHFNMKDOMK::BEHFNMKDOMK::ROGUE_MAGIC_LEVEL_STATUS_NONE) {
+            my_size += ::protobuf::rt::int32_size(12, self.PBLFLJNHMIL.value());
+        }
+        if self.LFCDODFMHHN != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.LFCDODFMHHN);
+        }
         if self.BGOKHEIBNKL != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.BGOKHEIBNKL);
+            my_size += ::protobuf::rt::uint32_size(3, self.BGOKHEIBNKL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,23 +162,23 @@ impl ::protobuf::Message for RogueMagicLevelInfoUpdateScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        for v in &self.AHOOAFGDEHF {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
         if self.ACGBELAIGBO != 0 {
-            os.write_uint32(8, self.ACGBELAIGBO)?;
+            os.write_uint32(7, self.ACGBELAIGBO)?;
         }
         if self.ALIFPIHNMEK != ::protobuf::EnumOrUnknown::new(super::JMPPHGIGFFI::JMPPHGIGFFI::ROGUE_MAGIC_SETTLE_REASON_NONE) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.ALIFPIHNMEK))?;
-        }
-        if self.LFCDODFMHHN != 0 {
-            os.write_uint32(15, self.LFCDODFMHHN)?;
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.ALIFPIHNMEK))?;
         }
         if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::BEHFNMKDOMK::BEHFNMKDOMK::ROGUE_MAGIC_LEVEL_STATUS_NONE) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.PBLFLJNHMIL))?;
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.PBLFLJNHMIL))?;
         }
-        for v in &self.AHOOAFGDEHF {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        };
+        if self.LFCDODFMHHN != 0 {
+            os.write_uint32(6, self.LFCDODFMHHN)?;
+        }
         if self.BGOKHEIBNKL != 0 {
-            os.write_uint32(1, self.BGOKHEIBNKL)?;
+            os.write_uint32(3, self.BGOKHEIBNKL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,22 +197,22 @@ impl ::protobuf::Message for RogueMagicLevelInfoUpdateScNotify {
     }
 
     fn clear(&mut self) {
+        self.AHOOAFGDEHF.clear();
         self.ACGBELAIGBO = 0;
         self.ALIFPIHNMEK = ::protobuf::EnumOrUnknown::new(super::JMPPHGIGFFI::JMPPHGIGFFI::ROGUE_MAGIC_SETTLE_REASON_NONE);
-        self.LFCDODFMHHN = 0;
         self.PBLFLJNHMIL = ::protobuf::EnumOrUnknown::new(super::BEHFNMKDOMK::BEHFNMKDOMK::ROGUE_MAGIC_LEVEL_STATUS_NONE);
-        self.AHOOAFGDEHF.clear();
+        self.LFCDODFMHHN = 0;
         self.BGOKHEIBNKL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicLevelInfoUpdateScNotify {
         static instance: RogueMagicLevelInfoUpdateScNotify = RogueMagicLevelInfoUpdateScNotify {
+            AHOOAFGDEHF: ::std::vec::Vec::new(),
             ACGBELAIGBO: 0,
             ALIFPIHNMEK: ::protobuf::EnumOrUnknown::from_i32(0),
-            LFCDODFMHHN: 0,
             PBLFLJNHMIL: ::protobuf::EnumOrUnknown::from_i32(0),
-            AHOOAFGDEHF: ::std::vec::Vec::new(),
+            LFCDODFMHHN: 0,
             BGOKHEIBNKL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -240,13 +240,13 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicLevelInfoUpdateScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'RogueMagicLevelInfoUpdateScNotify.proto\x1a\x11BEHFNMKDOMK.proto\x1a\
     \x11BPAIFNGEDGH.proto\x1a\x11JMPPHGIGFFI.proto\"\x99\x02\n!RogueMagicLev\
-    elInfoUpdateScNotify\x12\x20\n\x0bACGBELAIGBO\x18\x08\x20\x01(\rR\x0bACG\
-    BELAIGBO\x12.\n\x0bALIFPIHNMEK\x18\x0c\x20\x01(\x0e2\x0c.JMPPHGIGFFIR\
-    \x0bALIFPIHNMEK\x12\x20\n\x0bLFCDODFMHHN\x18\x0f\x20\x01(\rR\x0bLFCDODFM\
-    HHN\x12.\n\x0bPBLFLJNHMIL\x18\x02\x20\x01(\x0e2\x0c.BEHFNMKDOMKR\x0bPBLF\
-    LJNHMIL\x12.\n\x0bAHOOAFGDEHF\x18\x04\x20\x03(\x0b2\x0c.BPAIFNGEDGHR\x0b\
-    AHOOAFGDEHF\x12\x20\n\x0bBGOKHEIBNKL\x18\x01\x20\x01(\rR\x0bBGOKHEIBNKLb\
-    \x06proto3\
+    elInfoUpdateScNotify\x12.\n\x0bAHOOAFGDEHF\x18\t\x20\x03(\x0b2\x0c.BPAIF\
+    NGEDGHR\x0bAHOOAFGDEHF\x12\x20\n\x0bACGBELAIGBO\x18\x07\x20\x01(\rR\x0bA\
+    CGBELAIGBO\x12.\n\x0bALIFPIHNMEK\x18\n\x20\x01(\x0e2\x0c.JMPPHGIGFFIR\
+    \x0bALIFPIHNMEK\x12.\n\x0bPBLFLJNHMIL\x18\x0c\x20\x01(\x0e2\x0c.BEHFNMKD\
+    OMKR\x0bPBLFLJNHMIL\x12\x20\n\x0bLFCDODFMHHN\x18\x06\x20\x01(\rR\x0bLFCD\
+    ODFMHHN\x12\x20\n\x0bBGOKHEIBNKL\x18\x03\x20\x01(\rR\x0bBGOKHEIBNKLb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

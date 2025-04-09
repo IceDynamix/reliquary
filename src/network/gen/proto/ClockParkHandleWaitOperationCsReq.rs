@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ClockParkHandleWaitOperationCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ClockParkHandleWaitOperationCsReq.AHIDJBJGGPP)
-    pub AHIDJBJGGPP: u32,
     // @@protoc_insertion_point(field:ClockParkHandleWaitOperationCsReq.CLKEOEHPLNG)
     pub CLKEOEHPLNG: u32,
+    // @@protoc_insertion_point(field:ClockParkHandleWaitOperationCsReq.AHIDJBJGGPP)
+    pub AHIDJBJGGPP: u32,
     // message oneof groups
     pub DEJMPMFHIOC: ::std::option::Option<clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC>,
     // special fields
@@ -50,7 +50,7 @@ impl ClockParkHandleWaitOperationCsReq {
         ::std::default::Default::default()
     }
 
-    // .OBNONMHMECK JFBCKCLPAKO = 9;
+    // .OBNONMHMECK JFBCKCLPAKO = 5;
 
     pub fn JFBCKCLPAKO(&self) -> &super::OBNONMHMECK::OBNONMHMECK {
         match self.DEJMPMFHIOC {
@@ -99,7 +99,7 @@ impl ClockParkHandleWaitOperationCsReq {
         }
     }
 
-    // .FFOMIBNCFKI IPIKFLCEFLA = 8;
+    // .FFOMIBNCFKI IPIKFLCEFLA = 9;
 
     pub fn IPIKFLCEFLA(&self) -> &super::FFOMIBNCFKI::FFOMIBNCFKI {
         match self.DEJMPMFHIOC {
@@ -148,7 +148,7 @@ impl ClockParkHandleWaitOperationCsReq {
         }
     }
 
-    // .AJEHAMDABNA MEGNBBFILNL = 3;
+    // .AJEHAMDABNA MEGNBBFILNL = 7;
 
     pub fn MEGNBBFILNL(&self) -> &super::AJEHAMDABNA::AJEHAMDABNA {
         match self.DEJMPMFHIOC {
@@ -246,7 +246,7 @@ impl ClockParkHandleWaitOperationCsReq {
         }
     }
 
-    // .INNNICFOLII LIHJMEINGIK = 13;
+    // .INNNICFOLII LIHJMEINGIK = 6;
 
     pub fn LIHJMEINGIK(&self) -> &super::INNNICFOLII::INNNICFOLII {
         match self.DEJMPMFHIOC {
@@ -295,7 +295,7 @@ impl ClockParkHandleWaitOperationCsReq {
         }
     }
 
-    // .CEOONFLONDJ LMGGLCNCDHF = 2;
+    // .CEOONFLONDJ LMGGLCNCDHF = 12;
 
     pub fn LMGGLCNCDHF(&self) -> &super::CEOONFLONDJ::CEOONFLONDJ {
         match self.DEJMPMFHIOC {
@@ -344,7 +344,7 @@ impl ClockParkHandleWaitOperationCsReq {
         }
     }
 
-    // .HELNOIHMDHA FNGFOAEPFJN = 5;
+    // .HELNOIHMDHA FNGFOAEPFJN = 2;
 
     pub fn FNGFOAEPFJN(&self) -> &super::HELNOIHMDHA::HELNOIHMDHA {
         match self.DEJMPMFHIOC {
@@ -393,7 +393,7 @@ impl ClockParkHandleWaitOperationCsReq {
         }
     }
 
-    // uint32 OBPFBLNBFKI = 11;
+    // uint32 OBPFBLNBFKI = 14;
 
     pub fn OBPFBLNBFKI(&self) -> u32 {
         match self.DEJMPMFHIOC {
@@ -422,14 +422,14 @@ impl ClockParkHandleWaitOperationCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AHIDJBJGGPP",
-            |m: &ClockParkHandleWaitOperationCsReq| { &m.AHIDJBJGGPP },
-            |m: &mut ClockParkHandleWaitOperationCsReq| { &mut m.AHIDJBJGGPP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CLKEOEHPLNG",
             |m: &ClockParkHandleWaitOperationCsReq| { &m.CLKEOEHPLNG },
             |m: &mut ClockParkHandleWaitOperationCsReq| { &mut m.CLKEOEHPLNG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AHIDJBJGGPP",
+            |m: &ClockParkHandleWaitOperationCsReq| { &m.AHIDJBJGGPP },
+            |m: &mut ClockParkHandleWaitOperationCsReq| { &mut m.AHIDJBJGGPP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OBNONMHMECK::OBNONMHMECK>(
             "JFBCKCLPAKO",
@@ -505,34 +505,34 @@ impl ::protobuf::Message for ClockParkHandleWaitOperationCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.AHIDJBJGGPP = is.read_uint32()?;
-                },
-                80 => {
+                32 => {
                     self.CLKEOEHPLNG = is.read_uint32()?;
                 },
-                74 => {
+                88 => {
+                    self.AHIDJBJGGPP = is.read_uint32()?;
+                },
+                42 => {
                     self.DEJMPMFHIOC = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::JFBCKCLPAKO(is.read_message()?));
                 },
-                66 => {
+                74 => {
                     self.DEJMPMFHIOC = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::IPIKFLCEFLA(is.read_message()?));
                 },
-                26 => {
+                58 => {
                     self.DEJMPMFHIOC = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::MEGNBBFILNL(is.read_message()?));
                 },
                 10 => {
                     self.DEJMPMFHIOC = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::ABKKDHAPCHN(is.read_message()?));
                 },
-                106 => {
+                50 => {
                     self.DEJMPMFHIOC = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::LIHJMEINGIK(is.read_message()?));
                 },
-                18 => {
+                98 => {
                     self.DEJMPMFHIOC = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::LMGGLCNCDHF(is.read_message()?));
                 },
-                42 => {
+                18 => {
                     self.DEJMPMFHIOC = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::FNGFOAEPFJN(is.read_message()?));
                 },
-                88 => {
+                112 => {
                     self.DEJMPMFHIOC = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::OBPFBLNBFKI(is.read_uint32()?));
                 },
                 tag => {
@@ -547,11 +547,11 @@ impl ::protobuf::Message for ClockParkHandleWaitOperationCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AHIDJBJGGPP != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.AHIDJBJGGPP);
-        }
         if self.CLKEOEHPLNG != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.CLKEOEHPLNG);
+            my_size += ::protobuf::rt::uint32_size(4, self.CLKEOEHPLNG);
+        }
+        if self.AHIDJBJGGPP != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.AHIDJBJGGPP);
         }
         if let ::std::option::Option::Some(ref v) = self.DEJMPMFHIOC {
             match v {
@@ -584,7 +584,7 @@ impl ::protobuf::Message for ClockParkHandleWaitOperationCsReq {
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::OBPFBLNBFKI(v) => {
-                    my_size += ::protobuf::rt::uint32_size(11, v);
+                    my_size += ::protobuf::rt::uint32_size(14, v);
                 },
             };
         }
@@ -594,37 +594,37 @@ impl ::protobuf::Message for ClockParkHandleWaitOperationCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AHIDJBJGGPP != 0 {
-            os.write_uint32(7, self.AHIDJBJGGPP)?;
-        }
         if self.CLKEOEHPLNG != 0 {
-            os.write_uint32(10, self.CLKEOEHPLNG)?;
+            os.write_uint32(4, self.CLKEOEHPLNG)?;
+        }
+        if self.AHIDJBJGGPP != 0 {
+            os.write_uint32(11, self.AHIDJBJGGPP)?;
         }
         if let ::std::option::Option::Some(ref v) = self.DEJMPMFHIOC {
             match v {
                 &clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::JFBCKCLPAKO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
                 &clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::IPIKFLCEFLA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
                 },
                 &clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::MEGNBBFILNL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
                 &clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::ABKKDHAPCHN(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
                 },
                 &clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::LIHJMEINGIK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
                 &clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::LMGGLCNCDHF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
                 },
                 &clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::FNGFOAEPFJN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
                 &clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::OBPFBLNBFKI(v) => {
-                    os.write_uint32(11, v)?;
+                    os.write_uint32(14, v)?;
                 },
             };
         }
@@ -645,8 +645,8 @@ impl ::protobuf::Message for ClockParkHandleWaitOperationCsReq {
     }
 
     fn clear(&mut self) {
-        self.AHIDJBJGGPP = 0;
         self.CLKEOEHPLNG = 0;
+        self.AHIDJBJGGPP = 0;
         self.DEJMPMFHIOC = ::std::option::Option::None;
         self.DEJMPMFHIOC = ::std::option::Option::None;
         self.DEJMPMFHIOC = ::std::option::Option::None;
@@ -660,8 +660,8 @@ impl ::protobuf::Message for ClockParkHandleWaitOperationCsReq {
 
     fn default_instance() -> &'static ClockParkHandleWaitOperationCsReq {
         static instance: ClockParkHandleWaitOperationCsReq = ClockParkHandleWaitOperationCsReq {
-            AHIDJBJGGPP: 0,
             CLKEOEHPLNG: 0,
+            AHIDJBJGGPP: 0,
             DEJMPMFHIOC: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -732,18 +732,18 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n'ClockParkHandleWaitOperationCsReq.proto\x1a\x11AJEHAMDABNA.proto\x1a\
     \x11AMGHDCABJMJ.proto\x1a\x11CEOONFLONDJ.proto\x1a\x11FFOMIBNCFKI.proto\
     \x1a\x11HELNOIHMDHA.proto\x1a\x11INNNICFOLII.proto\x1a\x11OBNONMHMECK.pr\
-    oto\"\xf8\x03\n!ClockParkHandleWaitOperationCsReq\x12\x20\n\x0bAHIDJBJGG\
-    PP\x18\x07\x20\x01(\rR\x0bAHIDJBJGGPP\x12\x20\n\x0bCLKEOEHPLNG\x18\n\x20\
-    \x01(\rR\x0bCLKEOEHPLNG\x120\n\x0bJFBCKCLPAKO\x18\t\x20\x01(\x0b2\x0c.OB\
-    NONMHMECKH\0R\x0bJFBCKCLPAKO\x120\n\x0bIPIKFLCEFLA\x18\x08\x20\x01(\x0b2\
-    \x0c.FFOMIBNCFKIH\0R\x0bIPIKFLCEFLA\x120\n\x0bMEGNBBFILNL\x18\x03\x20\
-    \x01(\x0b2\x0c.AJEHAMDABNAH\0R\x0bMEGNBBFILNL\x120\n\x0bABKKDHAPCHN\x18\
-    \x01\x20\x01(\x0b2\x0c.AMGHDCABJMJH\0R\x0bABKKDHAPCHN\x120\n\x0bLIHJMEIN\
-    GIK\x18\r\x20\x01(\x0b2\x0c.INNNICFOLIIH\0R\x0bLIHJMEINGIK\x120\n\x0bLMG\
-    GLCNCDHF\x18\x02\x20\x01(\x0b2\x0c.CEOONFLONDJH\0R\x0bLMGGLCNCDHF\x120\n\
-    \x0bFNGFOAEPFJN\x18\x05\x20\x01(\x0b2\x0c.HELNOIHMDHAH\0R\x0bFNGFOAEPFJN\
-    \x12\"\n\x0bOBPFBLNBFKI\x18\x0b\x20\x01(\rH\0R\x0bOBPFBLNBFKIB\r\n\x0bDE\
-    JMPMFHIOCb\x06proto3\
+    oto\"\xf8\x03\n!ClockParkHandleWaitOperationCsReq\x12\x20\n\x0bCLKEOEHPL\
+    NG\x18\x04\x20\x01(\rR\x0bCLKEOEHPLNG\x12\x20\n\x0bAHIDJBJGGPP\x18\x0b\
+    \x20\x01(\rR\x0bAHIDJBJGGPP\x120\n\x0bJFBCKCLPAKO\x18\x05\x20\x01(\x0b2\
+    \x0c.OBNONMHMECKH\0R\x0bJFBCKCLPAKO\x120\n\x0bIPIKFLCEFLA\x18\t\x20\x01(\
+    \x0b2\x0c.FFOMIBNCFKIH\0R\x0bIPIKFLCEFLA\x120\n\x0bMEGNBBFILNL\x18\x07\
+    \x20\x01(\x0b2\x0c.AJEHAMDABNAH\0R\x0bMEGNBBFILNL\x120\n\x0bABKKDHAPCHN\
+    \x18\x01\x20\x01(\x0b2\x0c.AMGHDCABJMJH\0R\x0bABKKDHAPCHN\x120\n\x0bLIHJ\
+    MEINGIK\x18\x06\x20\x01(\x0b2\x0c.INNNICFOLIIH\0R\x0bLIHJMEINGIK\x120\n\
+    \x0bLMGGLCNCDHF\x18\x0c\x20\x01(\x0b2\x0c.CEOONFLONDJH\0R\x0bLMGGLCNCDHF\
+    \x120\n\x0bFNGFOAEPFJN\x18\x02\x20\x01(\x0b2\x0c.HELNOIHMDHAH\0R\x0bFNGF\
+    OAEPFJN\x12\"\n\x0bOBPFBLNBFKI\x18\x0e\x20\x01(\rH\0R\x0bOBPFBLNBFKIB\r\
+    \n\x0bDEJMPMFHIOCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

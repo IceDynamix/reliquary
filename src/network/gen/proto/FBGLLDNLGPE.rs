@@ -30,10 +30,10 @@ pub struct FBGLLDNLGPE {
     // message fields
     // @@protoc_insertion_point(field:FBGLLDNLGPE.KMLPPMNMPKE)
     pub KMLPPMNMPKE: u32,
-    // @@protoc_insertion_point(field:FBGLLDNLGPE.NICGNEMCHED)
-    pub NICGNEMCHED: ::std::vec::Vec<super::PlaySkillBrief::PlaySkillBrief>,
     // @@protoc_insertion_point(field:FBGLLDNLGPE.CCGBHHFBAFJ)
     pub CCGBHHFBAFJ: ::std::vec::Vec<super::HEOJLDBKKGE::HEOJLDBKKGE>,
+    // @@protoc_insertion_point(field:FBGLLDNLGPE.NICGNEMCHED)
+    pub NICGNEMCHED: ::std::vec::Vec<super::PlaySkillBrief::PlaySkillBrief>,
     // @@protoc_insertion_point(field:FBGLLDNLGPE.MMEIPHBNKED)
     pub MMEIPHBNKED: ::std::vec::Vec<super::PJJDMMBKKCN::PJJDMMBKKCN>,
     // special fields
@@ -61,14 +61,14 @@ impl FBGLLDNLGPE {
             |m: &mut FBGLLDNLGPE| { &mut m.KMLPPMNMPKE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NICGNEMCHED",
-            |m: &FBGLLDNLGPE| { &m.NICGNEMCHED },
-            |m: &mut FBGLLDNLGPE| { &mut m.NICGNEMCHED },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "CCGBHHFBAFJ",
             |m: &FBGLLDNLGPE| { &m.CCGBHHFBAFJ },
             |m: &mut FBGLLDNLGPE| { &mut m.CCGBHHFBAFJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NICGNEMCHED",
+            |m: &FBGLLDNLGPE| { &m.NICGNEMCHED },
+            |m: &mut FBGLLDNLGPE| { &mut m.NICGNEMCHED },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "MMEIPHBNKED",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for FBGLLDNLGPE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                32 => {
                     self.KMLPPMNMPKE = is.read_uint32()?;
                 },
-                18 => {
-                    self.NICGNEMCHED.push(is.read_message()?);
-                },
-                66 => {
+                106 => {
                     self.CCGBHHFBAFJ.push(is.read_message()?);
                 },
-                74 => {
+                82 => {
+                    self.NICGNEMCHED.push(is.read_message()?);
+                },
+                58 => {
                     self.MMEIPHBNKED.push(is.read_message()?);
                 },
                 tag => {
@@ -118,13 +118,13 @@ impl ::protobuf::Message for FBGLLDNLGPE {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.KMLPPMNMPKE != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.KMLPPMNMPKE);
+            my_size += ::protobuf::rt::uint32_size(4, self.KMLPPMNMPKE);
         }
-        for value in &self.NICGNEMCHED {
+        for value in &self.CCGBHHFBAFJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.CCGBHHFBAFJ {
+        for value in &self.NICGNEMCHED {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -139,16 +139,16 @@ impl ::protobuf::Message for FBGLLDNLGPE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KMLPPMNMPKE != 0 {
-            os.write_uint32(6, self.KMLPPMNMPKE)?;
+            os.write_uint32(4, self.KMLPPMNMPKE)?;
         }
-        for v in &self.NICGNEMCHED {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
         for v in &self.CCGBHHFBAFJ {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        };
+        for v in &self.NICGNEMCHED {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         for v in &self.MMEIPHBNKED {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::Message for FBGLLDNLGPE {
 
     fn clear(&mut self) {
         self.KMLPPMNMPKE = 0;
-        self.NICGNEMCHED.clear();
         self.CCGBHHFBAFJ.clear();
+        self.NICGNEMCHED.clear();
         self.MMEIPHBNKED.clear();
         self.special_fields.clear();
     }
@@ -177,8 +177,8 @@ impl ::protobuf::Message for FBGLLDNLGPE {
     fn default_instance() -> &'static FBGLLDNLGPE {
         static instance: FBGLLDNLGPE = FBGLLDNLGPE {
             KMLPPMNMPKE: 0,
-            NICGNEMCHED: ::std::vec::Vec::new(),
             CCGBHHFBAFJ: ::std::vec::Vec::new(),
+            NICGNEMCHED: ::std::vec::Vec::new(),
             MMEIPHBNKED: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -206,10 +206,10 @@ impl ::protobuf::reflect::ProtobufValue for FBGLLDNLGPE {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FBGLLDNLGPE.proto\x1a\x11HEOJLDBKKGE.proto\x1a\x11PJJDMMBKKCN.prot\
     o\x1a\x14PlaySkillBrief.proto\"\xc2\x01\n\x0bFBGLLDNLGPE\x12\x20\n\x0bKM\
-    LPPMNMPKE\x18\x06\x20\x01(\rR\x0bKMLPPMNMPKE\x121\n\x0bNICGNEMCHED\x18\
-    \x02\x20\x03(\x0b2\x0f.PlaySkillBriefR\x0bNICGNEMCHED\x12.\n\x0bCCGBHHFB\
-    AFJ\x18\x08\x20\x03(\x0b2\x0c.HEOJLDBKKGER\x0bCCGBHHFBAFJ\x12.\n\x0bMMEI\
-    PHBNKED\x18\t\x20\x03(\x0b2\x0c.PJJDMMBKKCNR\x0bMMEIPHBNKEDb\x06proto3\
+    LPPMNMPKE\x18\x04\x20\x01(\rR\x0bKMLPPMNMPKE\x12.\n\x0bCCGBHHFBAFJ\x18\r\
+    \x20\x03(\x0b2\x0c.HEOJLDBKKGER\x0bCCGBHHFBAFJ\x121\n\x0bNICGNEMCHED\x18\
+    \n\x20\x03(\x0b2\x0f.PlaySkillBriefR\x0bNICGNEMCHED\x12.\n\x0bMMEIPHBNKE\
+    D\x18\x07\x20\x03(\x0b2\x0c.PJJDMMBKKCNR\x0bMMEIPHBNKEDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

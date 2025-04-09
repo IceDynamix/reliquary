@@ -79,10 +79,10 @@ impl ::protobuf::Message for SubmitEmotionItemScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                24 => {
                     self.CLKEOEHPLNG = is.read_uint32()?;
                 },
-                24 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for SubmitEmotionItemScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CLKEOEHPLNG != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.CLKEOEHPLNG);
+            my_size += ::protobuf::rt::uint32_size(3, self.CLKEOEHPLNG);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for SubmitEmotionItemScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CLKEOEHPLNG != 0 {
-            os.write_uint32(11, self.CLKEOEHPLNG)?;
+            os.write_uint32(3, self.CLKEOEHPLNG)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for SubmitEmotionItemScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cSubmitEmotionItemScRsp.proto\"T\n\x16SubmitEmotionItemScRsp\x12\
-    \x20\n\x0bCLKEOEHPLNG\x18\x0b\x20\x01(\rR\x0bCLKEOEHPLNG\x12\x18\n\x07re\
-    tcode\x18\x03\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x20\n\x0bCLKEOEHPLNG\x18\x03\x20\x01(\rR\x0bCLKEOEHPLNG\x12\x18\n\x07re\
+    tcode\x18\r\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ApplyFriendScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ApplyFriendScRsp.KMONAGFELPG)
-    pub KMONAGFELPG: u32,
+    // @@protoc_insertion_point(field:ApplyFriendScRsp.uid)
+    pub uid: u32,
     // @@protoc_insertion_point(field:ApplyFriendScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl ApplyFriendScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KMONAGFELPG",
-            |m: &ApplyFriendScRsp| { &m.KMONAGFELPG },
-            |m: &mut ApplyFriendScRsp| { &mut m.KMONAGFELPG },
+            "uid",
+            |m: &ApplyFriendScRsp| { &m.uid },
+            |m: &mut ApplyFriendScRsp| { &mut m.uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for ApplyFriendScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.KMONAGFELPG = is.read_uint32()?;
+                104 => {
+                    self.uid = is.read_uint32()?;
                 },
-                72 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ApplyFriendScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KMONAGFELPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.KMONAGFELPG);
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.uid);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ApplyFriendScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KMONAGFELPG != 0 {
-            os.write_uint32(4, self.KMONAGFELPG)?;
+        if self.uid != 0 {
+            os.write_uint32(13, self.uid)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for ApplyFriendScRsp {
     }
 
     fn clear(&mut self) {
-        self.KMONAGFELPG = 0;
+        self.uid = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ApplyFriendScRsp {
         static instance: ApplyFriendScRsp = ApplyFriendScRsp {
-            KMONAGFELPG: 0,
+            uid: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for ApplyFriendScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16ApplyFriendScRsp.proto\"N\n\x10ApplyFriendScRsp\x12\x20\n\x0bKMONA\
-    GFELPG\x18\x04\x20\x01(\rR\x0bKMONAGFELPG\x12\x18\n\x07retcode\x18\t\x20\
-    \x01(\rR\x07retcodeb\x06proto3\
+    \n\x16ApplyFriendScRsp.proto\">\n\x10ApplyFriendScRsp\x12\x10\n\x03uid\
+    \x18\r\x20\x01(\rR\x03uid\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07re\
+    tcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

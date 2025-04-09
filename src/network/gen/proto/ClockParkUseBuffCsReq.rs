@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ClockParkUseBuffCsReq {
     // message fields
+    // @@protoc_insertion_point(field:ClockParkUseBuffCsReq.unique_id)
+    pub unique_id: u64,
     // @@protoc_insertion_point(field:ClockParkUseBuffCsReq.CLKEOEHPLNG)
     pub CLKEOEHPLNG: u32,
     // @@protoc_insertion_point(field:ClockParkUseBuffCsReq.AHIDJBJGGPP)
     pub AHIDJBJGGPP: u32,
-    // @@protoc_insertion_point(field:ClockParkUseBuffCsReq.unique_id)
-    pub unique_id: u64,
     // special fields
     // @@protoc_insertion_point(special_field:ClockParkUseBuffCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl ClockParkUseBuffCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "unique_id",
+            |m: &ClockParkUseBuffCsReq| { &m.unique_id },
+            |m: &mut ClockParkUseBuffCsReq| { &mut m.unique_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CLKEOEHPLNG",
             |m: &ClockParkUseBuffCsReq| { &m.CLKEOEHPLNG },
             |m: &mut ClockParkUseBuffCsReq| { &mut m.CLKEOEHPLNG },
@@ -62,11 +67,6 @@ impl ClockParkUseBuffCsReq {
             "AHIDJBJGGPP",
             |m: &ClockParkUseBuffCsReq| { &m.AHIDJBJGGPP },
             |m: &mut ClockParkUseBuffCsReq| { &mut m.AHIDJBJGGPP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unique_id",
-            |m: &ClockParkUseBuffCsReq| { &m.unique_id },
-            |m: &mut ClockParkUseBuffCsReq| { &mut m.unique_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ClockParkUseBuffCsReq>(
             "ClockParkUseBuffCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for ClockParkUseBuffCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                104 => {
+                    self.unique_id = is.read_uint64()?;
+                },
+                24 => {
                     self.CLKEOEHPLNG = is.read_uint32()?;
                 },
-                40 => {
+                72 => {
                     self.AHIDJBJGGPP = is.read_uint32()?;
-                },
-                120 => {
-                    self.unique_id = is.read_uint64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for ClockParkUseBuffCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::uint64_size(13, self.unique_id);
+        }
         if self.CLKEOEHPLNG != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.CLKEOEHPLNG);
+            my_size += ::protobuf::rt::uint32_size(3, self.CLKEOEHPLNG);
         }
         if self.AHIDJBJGGPP != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.AHIDJBJGGPP);
-        }
-        if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint64_size(15, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.AHIDJBJGGPP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for ClockParkUseBuffCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.unique_id != 0 {
+            os.write_uint64(13, self.unique_id)?;
+        }
         if self.CLKEOEHPLNG != 0 {
-            os.write_uint32(9, self.CLKEOEHPLNG)?;
+            os.write_uint32(3, self.CLKEOEHPLNG)?;
         }
         if self.AHIDJBJGGPP != 0 {
-            os.write_uint32(5, self.AHIDJBJGGPP)?;
-        }
-        if self.unique_id != 0 {
-            os.write_uint64(15, self.unique_id)?;
+            os.write_uint32(9, self.AHIDJBJGGPP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for ClockParkUseBuffCsReq {
     }
 
     fn clear(&mut self) {
+        self.unique_id = 0;
         self.CLKEOEHPLNG = 0;
         self.AHIDJBJGGPP = 0;
-        self.unique_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ClockParkUseBuffCsReq {
         static instance: ClockParkUseBuffCsReq = ClockParkUseBuffCsReq {
+            unique_id: 0,
             CLKEOEHPLNG: 0,
             AHIDJBJGGPP: 0,
-            unique_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for ClockParkUseBuffCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bClockParkUseBuffCsReq.proto\"x\n\x15ClockParkUseBuffCsReq\x12\x20\
-    \n\x0bCLKEOEHPLNG\x18\t\x20\x01(\rR\x0bCLKEOEHPLNG\x12\x20\n\x0bAHIDJBJG\
-    GPP\x18\x05\x20\x01(\rR\x0bAHIDJBJGGPP\x12\x1b\n\tunique_id\x18\x0f\x20\
-    \x01(\x04R\x08uniqueIdb\x06proto3\
+    \n\x1bClockParkUseBuffCsReq.proto\"x\n\x15ClockParkUseBuffCsReq\x12\x1b\
+    \n\tunique_id\x18\r\x20\x01(\x04R\x08uniqueId\x12\x20\n\x0bCLKEOEHPLNG\
+    \x18\x03\x20\x01(\rR\x0bCLKEOEHPLNG\x12\x20\n\x0bAHIDJBJGGPP\x18\t\x20\
+    \x01(\rR\x0bAHIDJBJGGPPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,10 +30,10 @@ pub struct ANGOAMADOMA {
     // message fields
     // @@protoc_insertion_point(field:ANGOAMADOMA.JBLOKLCPAFN)
     pub JBLOKLCPAFN: u32,
-    // @@protoc_insertion_point(field:ANGOAMADOMA.OFGBJCCCIKE)
-    pub OFGBJCCCIKE: u32,
     // @@protoc_insertion_point(field:ANGOAMADOMA.IJHLOJEFCPM)
     pub IJHLOJEFCPM: u32,
+    // @@protoc_insertion_point(field:ANGOAMADOMA.OFGBJCCCIKE)
+    pub OFGBJCCCIKE: u32,
     // @@protoc_insertion_point(field:ANGOAMADOMA.NJNJEBODMNL)
     pub NJNJEBODMNL: ::protobuf::MessageField<super::JHLLLJAJKEP::JHLLLJAJKEP>,
     // special fields
@@ -61,14 +61,14 @@ impl ANGOAMADOMA {
             |m: &mut ANGOAMADOMA| { &mut m.JBLOKLCPAFN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OFGBJCCCIKE",
-            |m: &ANGOAMADOMA| { &m.OFGBJCCCIKE },
-            |m: &mut ANGOAMADOMA| { &mut m.OFGBJCCCIKE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IJHLOJEFCPM",
             |m: &ANGOAMADOMA| { &m.IJHLOJEFCPM },
             |m: &mut ANGOAMADOMA| { &mut m.IJHLOJEFCPM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OFGBJCCCIKE",
+            |m: &ANGOAMADOMA| { &m.OFGBJCCCIKE },
+            |m: &mut ANGOAMADOMA| { &mut m.OFGBJCCCIKE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JHLLLJAJKEP::JHLLLJAJKEP>(
             "NJNJEBODMNL",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for ANGOAMADOMA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                80 => {
                     self.JBLOKLCPAFN = is.read_uint32()?;
                 },
-                40 => {
-                    self.OFGBJCCCIKE = is.read_uint32()?;
-                },
-                64 => {
+                104 => {
                     self.IJHLOJEFCPM = is.read_uint32()?;
                 },
-                18 => {
+                72 => {
+                    self.OFGBJCCCIKE = is.read_uint32()?;
+                },
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.NJNJEBODMNL)?;
                 },
                 tag => {
@@ -118,13 +118,13 @@ impl ::protobuf::Message for ANGOAMADOMA {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.JBLOKLCPAFN != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.JBLOKLCPAFN);
-        }
-        if self.OFGBJCCCIKE != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.OFGBJCCCIKE);
+            my_size += ::protobuf::rt::uint32_size(10, self.JBLOKLCPAFN);
         }
         if self.IJHLOJEFCPM != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.IJHLOJEFCPM);
+            my_size += ::protobuf::rt::uint32_size(13, self.IJHLOJEFCPM);
+        }
+        if self.OFGBJCCCIKE != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.OFGBJCCCIKE);
         }
         if let Some(v) = self.NJNJEBODMNL.as_ref() {
             let len = v.compute_size();
@@ -137,16 +137,16 @@ impl ::protobuf::Message for ANGOAMADOMA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.JBLOKLCPAFN != 0 {
-            os.write_uint32(7, self.JBLOKLCPAFN)?;
-        }
-        if self.OFGBJCCCIKE != 0 {
-            os.write_uint32(5, self.OFGBJCCCIKE)?;
+            os.write_uint32(10, self.JBLOKLCPAFN)?;
         }
         if self.IJHLOJEFCPM != 0 {
-            os.write_uint32(8, self.IJHLOJEFCPM)?;
+            os.write_uint32(13, self.IJHLOJEFCPM)?;
+        }
+        if self.OFGBJCCCIKE != 0 {
+            os.write_uint32(9, self.OFGBJCCCIKE)?;
         }
         if let Some(v) = self.NJNJEBODMNL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::Message for ANGOAMADOMA {
 
     fn clear(&mut self) {
         self.JBLOKLCPAFN = 0;
-        self.OFGBJCCCIKE = 0;
         self.IJHLOJEFCPM = 0;
+        self.OFGBJCCCIKE = 0;
         self.NJNJEBODMNL.clear();
         self.special_fields.clear();
     }
@@ -175,8 +175,8 @@ impl ::protobuf::Message for ANGOAMADOMA {
     fn default_instance() -> &'static ANGOAMADOMA {
         static instance: ANGOAMADOMA = ANGOAMADOMA {
             JBLOKLCPAFN: 0,
-            OFGBJCCCIKE: 0,
             IJHLOJEFCPM: 0,
+            OFGBJCCCIKE: 0,
             NJNJEBODMNL: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for ANGOAMADOMA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ANGOAMADOMA.proto\x1a\x11JHLLLJAJKEP.proto\"\xa3\x01\n\x0bANGOAMAD\
-    OMA\x12\x20\n\x0bJBLOKLCPAFN\x18\x07\x20\x01(\rR\x0bJBLOKLCPAFN\x12\x20\
-    \n\x0bOFGBJCCCIKE\x18\x05\x20\x01(\rR\x0bOFGBJCCCIKE\x12\x20\n\x0bIJHLOJ\
-    EFCPM\x18\x08\x20\x01(\rR\x0bIJHLOJEFCPM\x12.\n\x0bNJNJEBODMNL\x18\x02\
-    \x20\x01(\x0b2\x0c.JHLLLJAJKEPR\x0bNJNJEBODMNLb\x06proto3\
+    OMA\x12\x20\n\x0bJBLOKLCPAFN\x18\n\x20\x01(\rR\x0bJBLOKLCPAFN\x12\x20\n\
+    \x0bIJHLOJEFCPM\x18\r\x20\x01(\rR\x0bIJHLOJEFCPM\x12\x20\n\x0bOFGBJCCCIK\
+    E\x18\t\x20\x01(\rR\x0bOFGBJCCCIKE\x12.\n\x0bNJNJEBODMNL\x18\x04\x20\x01\
+    (\x0b2\x0c.JHLLLJAJKEPR\x0bNJNJEBODMNLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

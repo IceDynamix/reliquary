@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EBHGHGIIGOM {
     // message fields
-    // @@protoc_insertion_point(field:EBHGHGIIGOM.JACIGHHGCGB)
-    pub JACIGHHGCGB: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:EBHGHGIIGOM.BILBOHBDBPN)
     pub BILBOHBDBPN: u32,
+    // @@protoc_insertion_point(field:EBHGHGIIGOM.JACIGHHGCGB)
+    pub JACIGHHGCGB: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:EBHGHGIIGOM.KOMJMFIKBAM)
     pub KOMJMFIKBAM: ::std::vec::Vec<u32>,
     // special fields
@@ -53,15 +53,15 @@ impl EBHGHGIIGOM {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JACIGHHGCGB",
-            |m: &EBHGHGIIGOM| { &m.JACIGHHGCGB },
-            |m: &mut EBHGHGIIGOM| { &mut m.JACIGHHGCGB },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BILBOHBDBPN",
             |m: &EBHGHGIIGOM| { &m.BILBOHBDBPN },
             |m: &mut EBHGHGIIGOM| { &mut m.BILBOHBDBPN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "JACIGHHGCGB",
+            |m: &EBHGHGIIGOM| { &m.JACIGHHGCGB },
+            |m: &mut EBHGHGIIGOM| { &mut m.JACIGHHGCGB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "KOMJMFIKBAM",
@@ -86,19 +86,19 @@ impl ::protobuf::Message for EBHGHGIIGOM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.JACIGHHGCGB)?;
-                },
-                88 => {
-                    self.JACIGHHGCGB.push(is.read_uint32()?);
-                },
-                32 => {
+                120 => {
                     self.BILBOHBDBPN = is.read_uint32()?;
                 },
-                58 => {
+                34 => {
+                    is.read_repeated_packed_uint32_into(&mut self.JACIGHHGCGB)?;
+                },
+                32 => {
+                    self.JACIGHHGCGB.push(is.read_uint32()?);
+                },
+                90 => {
                     is.read_repeated_packed_uint32_into(&mut self.KOMJMFIKBAM)?;
                 },
-                56 => {
+                88 => {
                     self.KOMJMFIKBAM.push(is.read_uint32()?);
                 },
                 tag => {
@@ -113,22 +113,22 @@ impl ::protobuf::Message for EBHGHGIIGOM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.JACIGHHGCGB);
         if self.BILBOHBDBPN != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.BILBOHBDBPN);
+            my_size += ::protobuf::rt::uint32_size(15, self.BILBOHBDBPN);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.KOMJMFIKBAM);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.JACIGHHGCGB);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.KOMJMFIKBAM);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(11, &self.JACIGHHGCGB)?;
         if self.BILBOHBDBPN != 0 {
-            os.write_uint32(4, self.BILBOHBDBPN)?;
+            os.write_uint32(15, self.BILBOHBDBPN)?;
         }
-        os.write_repeated_packed_uint32(7, &self.KOMJMFIKBAM)?;
+        os.write_repeated_packed_uint32(4, &self.JACIGHHGCGB)?;
+        os.write_repeated_packed_uint32(11, &self.KOMJMFIKBAM)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -146,16 +146,16 @@ impl ::protobuf::Message for EBHGHGIIGOM {
     }
 
     fn clear(&mut self) {
-        self.JACIGHHGCGB.clear();
         self.BILBOHBDBPN = 0;
+        self.JACIGHHGCGB.clear();
         self.KOMJMFIKBAM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EBHGHGIIGOM {
         static instance: EBHGHGIIGOM = EBHGHGIIGOM {
-            JACIGHHGCGB: ::std::vec::Vec::new(),
             BILBOHBDBPN: 0,
+            JACIGHHGCGB: ::std::vec::Vec::new(),
             KOMJMFIKBAM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -181,9 +181,9 @@ impl ::protobuf::reflect::ProtobufValue for EBHGHGIIGOM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EBHGHGIIGOM.proto\"s\n\x0bEBHGHGIIGOM\x12\x20\n\x0bJACIGHHGCGB\x18\
-    \x0b\x20\x03(\rR\x0bJACIGHHGCGB\x12\x20\n\x0bBILBOHBDBPN\x18\x04\x20\x01\
-    (\rR\x0bBILBOHBDBPN\x12\x20\n\x0bKOMJMFIKBAM\x18\x07\x20\x03(\rR\x0bKOMJ\
+    \n\x11EBHGHGIIGOM.proto\"s\n\x0bEBHGHGIIGOM\x12\x20\n\x0bBILBOHBDBPN\x18\
+    \x0f\x20\x01(\rR\x0bBILBOHBDBPN\x12\x20\n\x0bJACIGHHGCGB\x18\x04\x20\x03\
+    (\rR\x0bJACIGHHGCGB\x12\x20\n\x0bKOMJMFIKBAM\x18\x0b\x20\x03(\rR\x0bKOMJ\
     MFIKBAMb\x06proto3\
 ";
 

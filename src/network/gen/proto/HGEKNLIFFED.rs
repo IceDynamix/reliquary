@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HGEKNLIFFED {
     // message fields
+    // @@protoc_insertion_point(field:HGEKNLIFFED.BNCLFOABAIP)
+    pub BNCLFOABAIP: u32,
     // @@protoc_insertion_point(field:HGEKNLIFFED.LEKPKOCNJAL)
     pub LEKPKOCNJAL: ::std::vec::Vec<super::GBABEKPBLHN::GBABEKPBLHN>,
     // @@protoc_insertion_point(field:HGEKNLIFFED.BDOEMGMHALJ)
     pub BDOEMGMHALJ: ::protobuf::MessageField<super::JBMECLKGGDK::JBMECLKGGDK>,
-    // @@protoc_insertion_point(field:HGEKNLIFFED.BNCLFOABAIP)
-    pub BNCLFOABAIP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HGEKNLIFFED.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,6 +53,11 @@ impl HGEKNLIFFED {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BNCLFOABAIP",
+            |m: &HGEKNLIFFED| { &m.BNCLFOABAIP },
+            |m: &mut HGEKNLIFFED| { &mut m.BNCLFOABAIP },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "LEKPKOCNJAL",
             |m: &HGEKNLIFFED| { &m.LEKPKOCNJAL },
@@ -62,11 +67,6 @@ impl HGEKNLIFFED {
             "BDOEMGMHALJ",
             |m: &HGEKNLIFFED| { &m.BDOEMGMHALJ },
             |m: &mut HGEKNLIFFED| { &mut m.BDOEMGMHALJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BNCLFOABAIP",
-            |m: &HGEKNLIFFED| { &m.BNCLFOABAIP },
-            |m: &mut HGEKNLIFFED| { &mut m.BNCLFOABAIP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HGEKNLIFFED>(
             "HGEKNLIFFED",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for HGEKNLIFFED {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                104 => {
+                    self.BNCLFOABAIP = is.read_uint32()?;
+                },
+                10 => {
                     self.LEKPKOCNJAL.push(is.read_message()?);
                 },
-                50 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BDOEMGMHALJ)?;
-                },
-                80 => {
-                    self.BNCLFOABAIP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,6 +107,9 @@ impl ::protobuf::Message for HGEKNLIFFED {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.BNCLFOABAIP != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.BNCLFOABAIP);
+        }
         for value in &self.LEKPKOCNJAL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -115,23 +118,20 @@ impl ::protobuf::Message for HGEKNLIFFED {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.BNCLFOABAIP != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.BNCLFOABAIP);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.BNCLFOABAIP != 0 {
+            os.write_uint32(13, self.BNCLFOABAIP)?;
+        }
         for v in &self.LEKPKOCNJAL {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         if let Some(v) = self.BDOEMGMHALJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
-        if self.BNCLFOABAIP != 0 {
-            os.write_uint32(10, self.BNCLFOABAIP)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for HGEKNLIFFED {
     }
 
     fn clear(&mut self) {
+        self.BNCLFOABAIP = 0;
         self.LEKPKOCNJAL.clear();
         self.BDOEMGMHALJ.clear();
-        self.BNCLFOABAIP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HGEKNLIFFED {
         static instance: HGEKNLIFFED = HGEKNLIFFED {
+            BNCLFOABAIP: 0,
             LEKPKOCNJAL: ::std::vec::Vec::new(),
             BDOEMGMHALJ: ::protobuf::MessageField::none(),
-            BNCLFOABAIP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for HGEKNLIFFED {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HGEKNLIFFED.proto\x1a\x11GBABEKPBLHN.proto\x1a\x11JBMECLKGGDK.prot\
-    o\"\x8f\x01\n\x0bHGEKNLIFFED\x12.\n\x0bLEKPKOCNJAL\x18\x02\x20\x03(\x0b2\
-    \x0c.GBABEKPBLHNR\x0bLEKPKOCNJAL\x12.\n\x0bBDOEMGMHALJ\x18\x06\x20\x01(\
-    \x0b2\x0c.JBMECLKGGDKR\x0bBDOEMGMHALJ\x12\x20\n\x0bBNCLFOABAIP\x18\n\x20\
-    \x01(\rR\x0bBNCLFOABAIPb\x06proto3\
+    o\"\x8f\x01\n\x0bHGEKNLIFFED\x12\x20\n\x0bBNCLFOABAIP\x18\r\x20\x01(\rR\
+    \x0bBNCLFOABAIP\x12.\n\x0bLEKPKOCNJAL\x18\x01\x20\x03(\x0b2\x0c.GBABEKPB\
+    LHNR\x0bLEKPKOCNJAL\x12.\n\x0bBDOEMGMHALJ\x18\t\x20\x01(\x0b2\x0c.JBMECL\
+    KGGDKR\x0bBDOEMGMHALJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

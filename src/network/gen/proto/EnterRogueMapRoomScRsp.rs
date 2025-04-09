@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterRogueMapRoomScRsp {
     // message fields
-    // @@protoc_insertion_point(field:EnterRogueMapRoomScRsp.OLOKKNLGGME)
-    pub OLOKKNLGGME: u32,
-    // @@protoc_insertion_point(field:EnterRogueMapRoomScRsp.IDOMKBKKKKL)
-    pub IDOMKBKKKKL: ::protobuf::MessageField<super::PPJCDCOAFDK::PPJCDCOAFDK>,
-    // @@protoc_insertion_point(field:EnterRogueMapRoomScRsp.CPBNMACLBEH)
-    pub CPBNMACLBEH: ::protobuf::MessageField<super::EIMJEAMDFKJ::EIMJEAMDFKJ>,
-    // @@protoc_insertion_point(field:EnterRogueMapRoomScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:EnterRogueMapRoomScRsp.KEILFHHNLIH)
     pub KEILFHHNLIH: ::protobuf::MessageField<super::JJAFHFGJMOB::JJAFHFGJMOB>,
+    // @@protoc_insertion_point(field:EnterRogueMapRoomScRsp.OLOKKNLGGME)
+    pub OLOKKNLGGME: u32,
+    // @@protoc_insertion_point(field:EnterRogueMapRoomScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:EnterRogueMapRoomScRsp.CPBNMACLBEH)
+    pub CPBNMACLBEH: ::protobuf::MessageField<super::EIMJEAMDFKJ::EIMJEAMDFKJ>,
+    // @@protoc_insertion_point(field:EnterRogueMapRoomScRsp.IDOMKBKKKKL)
+    pub IDOMKBKKKKL: ::protobuf::MessageField<super::PPJCDCOAFDK::PPJCDCOAFDK>,
     // special fields
     // @@protoc_insertion_point(special_field:EnterRogueMapRoomScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,30 +57,30 @@ impl EnterRogueMapRoomScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JJAFHFGJMOB::JJAFHFGJMOB>(
+            "KEILFHHNLIH",
+            |m: &EnterRogueMapRoomScRsp| { &m.KEILFHHNLIH },
+            |m: &mut EnterRogueMapRoomScRsp| { &mut m.KEILFHHNLIH },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OLOKKNLGGME",
             |m: &EnterRogueMapRoomScRsp| { &m.OLOKKNLGGME },
             |m: &mut EnterRogueMapRoomScRsp| { &mut m.OLOKKNLGGME },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PPJCDCOAFDK::PPJCDCOAFDK>(
-            "IDOMKBKKKKL",
-            |m: &EnterRogueMapRoomScRsp| { &m.IDOMKBKKKKL },
-            |m: &mut EnterRogueMapRoomScRsp| { &mut m.IDOMKBKKKKL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EIMJEAMDFKJ::EIMJEAMDFKJ>(
-            "CPBNMACLBEH",
-            |m: &EnterRogueMapRoomScRsp| { &m.CPBNMACLBEH },
-            |m: &mut EnterRogueMapRoomScRsp| { &mut m.CPBNMACLBEH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &EnterRogueMapRoomScRsp| { &m.retcode },
             |m: &mut EnterRogueMapRoomScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JJAFHFGJMOB::JJAFHFGJMOB>(
-            "KEILFHHNLIH",
-            |m: &EnterRogueMapRoomScRsp| { &m.KEILFHHNLIH },
-            |m: &mut EnterRogueMapRoomScRsp| { &mut m.KEILFHHNLIH },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EIMJEAMDFKJ::EIMJEAMDFKJ>(
+            "CPBNMACLBEH",
+            |m: &EnterRogueMapRoomScRsp| { &m.CPBNMACLBEH },
+            |m: &mut EnterRogueMapRoomScRsp| { &mut m.CPBNMACLBEH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PPJCDCOAFDK::PPJCDCOAFDK>(
+            "IDOMKBKKKKL",
+            |m: &EnterRogueMapRoomScRsp| { &m.IDOMKBKKKKL },
+            |m: &mut EnterRogueMapRoomScRsp| { &mut m.IDOMKBKKKKL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterRogueMapRoomScRsp>(
             "EnterRogueMapRoomScRsp",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for EnterRogueMapRoomScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KEILFHHNLIH)?;
+                },
+                96 => {
                     self.OLOKKNLGGME = is.read_uint32()?;
                 },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IDOMKBKKKKL)?;
-                },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CPBNMACLBEH)?;
-                },
-                64 => {
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CPBNMACLBEH)?;
+                },
                 42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KEILFHHNLIH)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IDOMKBKKKKL)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,21 +127,21 @@ impl ::protobuf::Message for EnterRogueMapRoomScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OLOKKNLGGME != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.OLOKKNLGGME);
-        }
-        if let Some(v) = self.IDOMKBKKKKL.as_ref() {
+        if let Some(v) = self.KEILFHHNLIH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.OLOKKNLGGME != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.OLOKKNLGGME);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         if let Some(v) = self.CPBNMACLBEH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
-        }
-        if let Some(v) = self.KEILFHHNLIH.as_ref() {
+        if let Some(v) = self.IDOMKBKKKKL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -151,19 +151,19 @@ impl ::protobuf::Message for EnterRogueMapRoomScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if let Some(v) = self.KEILFHHNLIH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        }
         if self.OLOKKNLGGME != 0 {
-            os.write_uint32(7, self.OLOKKNLGGME)?;
-        }
-        if let Some(v) = self.IDOMKBKKKKL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        }
-        if let Some(v) = self.CPBNMACLBEH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            os.write_uint32(12, self.OLOKKNLGGME)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
-        if let Some(v) = self.KEILFHHNLIH.as_ref() {
+        if let Some(v) = self.CPBNMACLBEH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        }
+        if let Some(v) = self.IDOMKBKKKKL.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -183,21 +183,21 @@ impl ::protobuf::Message for EnterRogueMapRoomScRsp {
     }
 
     fn clear(&mut self) {
-        self.OLOKKNLGGME = 0;
-        self.IDOMKBKKKKL.clear();
-        self.CPBNMACLBEH.clear();
-        self.retcode = 0;
         self.KEILFHHNLIH.clear();
+        self.OLOKKNLGGME = 0;
+        self.retcode = 0;
+        self.CPBNMACLBEH.clear();
+        self.IDOMKBKKKKL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterRogueMapRoomScRsp {
         static instance: EnterRogueMapRoomScRsp = EnterRogueMapRoomScRsp {
-            OLOKKNLGGME: 0,
-            IDOMKBKKKKL: ::protobuf::MessageField::none(),
-            CPBNMACLBEH: ::protobuf::MessageField::none(),
-            retcode: 0,
             KEILFHHNLIH: ::protobuf::MessageField::none(),
+            OLOKKNLGGME: 0,
+            retcode: 0,
+            CPBNMACLBEH: ::protobuf::MessageField::none(),
+            IDOMKBKKKKL: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -224,11 +224,11 @@ impl ::protobuf::reflect::ProtobufValue for EnterRogueMapRoomScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cEnterRogueMapRoomScRsp.proto\x1a\x11EIMJEAMDFKJ.proto\x1a\x11JJAFH\
     FGJMOB.proto\x1a\x11PPJCDCOAFDK.proto\"\xe4\x01\n\x16EnterRogueMapRoomSc\
-    Rsp\x12\x20\n\x0bOLOKKNLGGME\x18\x07\x20\x01(\rR\x0bOLOKKNLGGME\x12.\n\
-    \x0bIDOMKBKKKKL\x18\x0b\x20\x01(\x0b2\x0c.PPJCDCOAFDKR\x0bIDOMKBKKKKL\
-    \x12.\n\x0bCPBNMACLBEH\x18\x04\x20\x01(\x0b2\x0c.EIMJEAMDFKJR\x0bCPBNMAC\
-    LBEH\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12.\n\x0bKEILF\
-    HHNLIH\x18\x05\x20\x01(\x0b2\x0c.JJAFHFGJMOBR\x0bKEILFHHNLIHb\x06proto3\
+    Rsp\x12.\n\x0bKEILFHHNLIH\x18\x0f\x20\x01(\x0b2\x0c.JJAFHFGJMOBR\x0bKEIL\
+    FHHNLIH\x12\x20\n\x0bOLOKKNLGGME\x18\x0c\x20\x01(\rR\x0bOLOKKNLGGME\x12\
+    \x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcode\x12.\n\x0bCPBNMACLBEH\
+    \x18\x0b\x20\x01(\x0b2\x0c.EIMJEAMDFKJR\x0bCPBNMACLBEH\x12.\n\x0bIDOMKBK\
+    KKKL\x18\x05\x20\x01(\x0b2\x0c.PPJCDCOAFDKR\x0bIDOMKBKKKKLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

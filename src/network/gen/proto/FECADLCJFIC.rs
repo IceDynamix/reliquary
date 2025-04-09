@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FECADLCJFIC {
     // message fields
-    // @@protoc_insertion_point(field:FECADLCJFIC.DCPBFLJFHBB)
-    pub DCPBFLJFHBB: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:FECADLCJFIC.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:FECADLCJFIC.DCPBFLJFHBB)
+    pub DCPBFLJFHBB: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:FECADLCJFIC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl FECADLCJFIC {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "DCPBFLJFHBB",
-            |m: &FECADLCJFIC| { &m.DCPBFLJFHBB },
-            |m: &mut FECADLCJFIC| { &mut m.DCPBFLJFHBB },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &FECADLCJFIC| { &m.level },
             |m: &mut FECADLCJFIC| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "DCPBFLJFHBB",
+            |m: &FECADLCJFIC| { &m.DCPBFLJFHBB },
+            |m: &mut FECADLCJFIC| { &mut m.DCPBFLJFHBB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FECADLCJFIC>(
             "FECADLCJFIC",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FECADLCJFIC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DCPBFLJFHBB)?;
-                },
-                80 => {
+                56 => {
                     self.level = is.read_uint32()?;
+                },
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DCPBFLJFHBB)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for FECADLCJFIC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.level);
+        }
         if let Some(v) = self.DCPBFLJFHBB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for FECADLCJFIC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.DCPBFLJFHBB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
         if self.level != 0 {
-            os.write_uint32(10, self.level)?;
+            os.write_uint32(7, self.level)?;
+        }
+        if let Some(v) = self.DCPBFLJFHBB.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for FECADLCJFIC {
     }
 
     fn clear(&mut self) {
-        self.DCPBFLJFHBB.clear();
         self.level = 0;
+        self.DCPBFLJFHBB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FECADLCJFIC {
         static instance: FECADLCJFIC = FECADLCJFIC {
-            DCPBFLJFHBB: ::protobuf::MessageField::none(),
             level: 0,
+            DCPBFLJFHBB: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for FECADLCJFIC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FECADLCJFIC.proto\x1a\x0eItemList.proto\"P\n\x0bFECADLCJFIC\x12+\n\
-    \x0bDCPBFLJFHBB\x18\x02\x20\x01(\x0b2\t.ItemListR\x0bDCPBFLJFHBB\x12\x14\
-    \n\x05level\x18\n\x20\x01(\rR\x05levelb\x06proto3\
+    \n\x11FECADLCJFIC.proto\x1a\x0eItemList.proto\"P\n\x0bFECADLCJFIC\x12\
+    \x14\n\x05level\x18\x07\x20\x01(\rR\x05level\x12+\n\x0bDCPBFLJFHBB\x18\
+    \x01\x20\x01(\x0b2\t.ItemListR\x0bDCPBFLJFHBBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

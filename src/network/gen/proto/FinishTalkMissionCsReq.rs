@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishTalkMissionCsReq {
     // message fields
+    // @@protoc_insertion_point(field:FinishTalkMissionCsReq.HNFBHIOLPJA)
+    pub HNFBHIOLPJA: ::std::string::String,
     // @@protoc_insertion_point(field:FinishTalkMissionCsReq.KFBPCFDHLHL)
     pub KFBPCFDHLHL: ::std::vec::Vec<super::HPNIICAAAJK::HPNIICAAAJK>,
     // @@protoc_insertion_point(field:FinishTalkMissionCsReq.LPLHIABDBBG)
     pub LPLHIABDBBG: u32,
-    // @@protoc_insertion_point(field:FinishTalkMissionCsReq.HNFBHIOLPJA)
-    pub HNFBHIOLPJA: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:FinishTalkMissionCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,6 +53,11 @@ impl FinishTalkMissionCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HNFBHIOLPJA",
+            |m: &FinishTalkMissionCsReq| { &m.HNFBHIOLPJA },
+            |m: &mut FinishTalkMissionCsReq| { &mut m.HNFBHIOLPJA },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "KFBPCFDHLHL",
             |m: &FinishTalkMissionCsReq| { &m.KFBPCFDHLHL },
@@ -62,11 +67,6 @@ impl FinishTalkMissionCsReq {
             "LPLHIABDBBG",
             |m: &FinishTalkMissionCsReq| { &m.LPLHIABDBBG },
             |m: &mut FinishTalkMissionCsReq| { &mut m.LPLHIABDBBG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HNFBHIOLPJA",
-            |m: &FinishTalkMissionCsReq| { &m.HNFBHIOLPJA },
-            |m: &mut FinishTalkMissionCsReq| { &mut m.HNFBHIOLPJA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishTalkMissionCsReq>(
             "FinishTalkMissionCsReq",
@@ -87,13 +87,13 @@ impl ::protobuf::Message for FinishTalkMissionCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 18 => {
+                    self.HNFBHIOLPJA = is.read_string()?;
+                },
+                26 => {
                     self.KFBPCFDHLHL.push(is.read_message()?);
                 },
                 104 => {
                     self.LPLHIABDBBG = is.read_uint32()?;
-                },
-                42 => {
-                    self.HNFBHIOLPJA = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,6 +107,9 @@ impl ::protobuf::Message for FinishTalkMissionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if !self.HNFBHIOLPJA.is_empty() {
+            my_size += ::protobuf::rt::string_size(2, &self.HNFBHIOLPJA);
+        }
         for value in &self.KFBPCFDHLHL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -114,23 +117,20 @@ impl ::protobuf::Message for FinishTalkMissionCsReq {
         if self.LPLHIABDBBG != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.LPLHIABDBBG);
         }
-        if !self.HNFBHIOLPJA.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.HNFBHIOLPJA);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if !self.HNFBHIOLPJA.is_empty() {
+            os.write_string(2, &self.HNFBHIOLPJA)?;
+        }
         for v in &self.KFBPCFDHLHL {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         if self.LPLHIABDBBG != 0 {
             os.write_uint32(13, self.LPLHIABDBBG)?;
-        }
-        if !self.HNFBHIOLPJA.is_empty() {
-            os.write_string(5, &self.HNFBHIOLPJA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for FinishTalkMissionCsReq {
     }
 
     fn clear(&mut self) {
+        self.HNFBHIOLPJA.clear();
         self.KFBPCFDHLHL.clear();
         self.LPLHIABDBBG = 0;
-        self.HNFBHIOLPJA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishTalkMissionCsReq {
         static instance: FinishTalkMissionCsReq = FinishTalkMissionCsReq {
+            HNFBHIOLPJA: ::std::string::String::new(),
             KFBPCFDHLHL: ::std::vec::Vec::new(),
             LPLHIABDBBG: 0,
-            HNFBHIOLPJA: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for FinishTalkMissionCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cFinishTalkMissionCsReq.proto\x1a\x11HPNIICAAAJK.proto\"\x8c\x01\n\
-    \x16FinishTalkMissionCsReq\x12.\n\x0bKFBPCFDHLHL\x18\x02\x20\x03(\x0b2\
-    \x0c.HPNIICAAAJKR\x0bKFBPCFDHLHL\x12\x20\n\x0bLPLHIABDBBG\x18\r\x20\x01(\
-    \rR\x0bLPLHIABDBBG\x12\x20\n\x0bHNFBHIOLPJA\x18\x05\x20\x01(\tR\x0bHNFBH\
-    IOLPJAb\x06proto3\
+    \x16FinishTalkMissionCsReq\x12\x20\n\x0bHNFBHIOLPJA\x18\x02\x20\x01(\tR\
+    \x0bHNFBHIOLPJA\x12.\n\x0bKFBPCFDHLHL\x18\x03\x20\x03(\x0b2\x0c.HPNIICAA\
+    AJKR\x0bKFBPCFDHLHL\x12\x20\n\x0bLPLHIABDBBG\x18\r\x20\x01(\rR\x0bLPLHIA\
+    BDBBGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

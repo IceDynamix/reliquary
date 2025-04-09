@@ -82,7 +82,7 @@ impl ::protobuf::Message for EquipRelic {
                 24 => {
                     self.slot = is.read_uint32()?;
                 },
-                120 => {
+                104 => {
                     self.relic_unique_id = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for EquipRelic {
             my_size += ::protobuf::rt::uint32_size(3, self.slot);
         }
         if self.relic_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.relic_unique_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.relic_unique_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for EquipRelic {
             os.write_uint32(3, self.slot)?;
         }
         if self.relic_unique_id != 0 {
-            os.write_uint32(15, self.relic_unique_id)?;
+            os.write_uint32(13, self.relic_unique_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for EquipRelic {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x10EquipRelic.proto\"H\n\nEquipRelic\x12\x12\n\x04slot\x18\x03\x20\
-    \x01(\rR\x04slot\x12&\n\x0frelic_unique_id\x18\x0f\x20\x01(\rR\rrelicUni\
-    queIdb\x06proto3\
+    \x01(\rR\x04slot\x12&\n\x0frelic_unique_id\x18\r\x20\x01(\rR\rrelicUniqu\
+    eIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

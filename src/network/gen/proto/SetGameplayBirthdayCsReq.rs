@@ -72,7 +72,7 @@ impl ::protobuf::Message for SetGameplayBirthdayCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                32 => {
                     self.FOMBBCDPMPJ = is.read_uint32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for SetGameplayBirthdayCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.FOMBBCDPMPJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.FOMBBCDPMPJ);
+            my_size += ::protobuf::rt::uint32_size(4, self.FOMBBCDPMPJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for SetGameplayBirthdayCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.FOMBBCDPMPJ != 0 {
-            os.write_uint32(9, self.FOMBBCDPMPJ)?;
+            os.write_uint32(4, self.FOMBBCDPMPJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for SetGameplayBirthdayCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eSetGameplayBirthdayCsReq.proto\"<\n\x18SetGameplayBirthdayCsReq\
-    \x12\x20\n\x0bFOMBBCDPMPJ\x18\t\x20\x01(\rR\x0bFOMBBCDPMPJb\x06proto3\
+    \x12\x20\n\x0bFOMBBCDPMPJ\x18\x04\x20\x01(\rR\x0bFOMBBCDPMPJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

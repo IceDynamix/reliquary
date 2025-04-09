@@ -79,10 +79,10 @@ impl ::protobuf::Message for SceneEntityTeleportCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                112 => {
                     self.CCIIHMMJOEM = is.read_uint32()?;
                 },
-                74 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.DLBABHBNFCF)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SceneEntityTeleportCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CCIIHMMJOEM != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.CCIIHMMJOEM);
+            my_size += ::protobuf::rt::uint32_size(14, self.CCIIHMMJOEM);
         }
         if let Some(v) = self.DLBABHBNFCF.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for SceneEntityTeleportCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CCIIHMMJOEM != 0 {
-            os.write_uint32(5, self.CCIIHMMJOEM)?;
+            os.write_uint32(14, self.CCIIHMMJOEM)?;
         }
         if let Some(v) = self.DLBABHBNFCF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for SceneEntityTeleportCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eSceneEntityTeleportCsReq.proto\x1a\x11LGHAGKOINOB.proto\"l\n\x18Sc\
-    eneEntityTeleportCsReq\x12\x20\n\x0bCCIIHMMJOEM\x18\x05\x20\x01(\rR\x0bC\
-    CIIHMMJOEM\x12.\n\x0bDLBABHBNFCF\x18\t\x20\x01(\x0b2\x0c.LGHAGKOINOBR\
+    eneEntityTeleportCsReq\x12\x20\n\x0bCCIIHMMJOEM\x18\x0e\x20\x01(\rR\x0bC\
+    CIIHMMJOEM\x12.\n\x0bDLBABHBNFCF\x18\x06\x20\x01(\x0b2\x0c.LGHAGKOINOBR\
     \x0bDLBABHBNFCFb\x06proto3\
 ";
 

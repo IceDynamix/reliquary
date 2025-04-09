@@ -30,10 +30,10 @@ pub struct BPPMEIGAHGI {
     // message fields
     // @@protoc_insertion_point(field:BPPMEIGAHGI.MIGFMPJBELG)
     pub MIGFMPJBELG: ::std::vec::Vec<super::MMOIBACBPKA::MMOIBACBPKA>,
-    // @@protoc_insertion_point(field:BPPMEIGAHGI.PDMDKAPCOJM)
-    pub PDMDKAPCOJM: u32,
     // @@protoc_insertion_point(field:BPPMEIGAHGI.IOMGDIKELIA)
     pub IOMGDIKELIA: u32,
+    // @@protoc_insertion_point(field:BPPMEIGAHGI.PDMDKAPCOJM)
+    pub PDMDKAPCOJM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BPPMEIGAHGI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl BPPMEIGAHGI {
             |m: &mut BPPMEIGAHGI| { &mut m.MIGFMPJBELG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PDMDKAPCOJM",
-            |m: &BPPMEIGAHGI| { &m.PDMDKAPCOJM },
-            |m: &mut BPPMEIGAHGI| { &mut m.PDMDKAPCOJM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IOMGDIKELIA",
             |m: &BPPMEIGAHGI| { &m.IOMGDIKELIA },
             |m: &mut BPPMEIGAHGI| { &mut m.IOMGDIKELIA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PDMDKAPCOJM",
+            |m: &BPPMEIGAHGI| { &m.PDMDKAPCOJM },
+            |m: &mut BPPMEIGAHGI| { &mut m.PDMDKAPCOJM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BPPMEIGAHGI>(
             "BPPMEIGAHGI",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for BPPMEIGAHGI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                74 => {
                     self.MIGFMPJBELG.push(is.read_message()?);
                 },
-                48 => {
-                    self.PDMDKAPCOJM = is.read_uint32()?;
-                },
-                24 => {
+                40 => {
                     self.IOMGDIKELIA = is.read_uint32()?;
+                },
+                88 => {
+                    self.PDMDKAPCOJM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,11 +111,11 @@ impl ::protobuf::Message for BPPMEIGAHGI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.PDMDKAPCOJM != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.PDMDKAPCOJM);
-        }
         if self.IOMGDIKELIA != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.IOMGDIKELIA);
+            my_size += ::protobuf::rt::uint32_size(5, self.IOMGDIKELIA);
+        }
+        if self.PDMDKAPCOJM != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.PDMDKAPCOJM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for BPPMEIGAHGI {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.MIGFMPJBELG {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
-        if self.PDMDKAPCOJM != 0 {
-            os.write_uint32(6, self.PDMDKAPCOJM)?;
-        }
         if self.IOMGDIKELIA != 0 {
-            os.write_uint32(3, self.IOMGDIKELIA)?;
+            os.write_uint32(5, self.IOMGDIKELIA)?;
+        }
+        if self.PDMDKAPCOJM != 0 {
+            os.write_uint32(11, self.PDMDKAPCOJM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for BPPMEIGAHGI {
 
     fn clear(&mut self) {
         self.MIGFMPJBELG.clear();
-        self.PDMDKAPCOJM = 0;
         self.IOMGDIKELIA = 0;
+        self.PDMDKAPCOJM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BPPMEIGAHGI {
         static instance: BPPMEIGAHGI = BPPMEIGAHGI {
             MIGFMPJBELG: ::std::vec::Vec::new(),
-            PDMDKAPCOJM: 0,
             IOMGDIKELIA: 0,
+            PDMDKAPCOJM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for BPPMEIGAHGI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BPPMEIGAHGI.proto\x1a\x11MMOIBACBPKA.proto\"\x81\x01\n\x0bBPPMEIGA\
-    HGI\x12.\n\x0bMIGFMPJBELG\x18\x07\x20\x03(\x0b2\x0c.MMOIBACBPKAR\x0bMIGF\
-    MPJBELG\x12\x20\n\x0bPDMDKAPCOJM\x18\x06\x20\x01(\rR\x0bPDMDKAPCOJM\x12\
-    \x20\n\x0bIOMGDIKELIA\x18\x03\x20\x01(\rR\x0bIOMGDIKELIAb\x06proto3\
+    HGI\x12.\n\x0bMIGFMPJBELG\x18\t\x20\x03(\x0b2\x0c.MMOIBACBPKAR\x0bMIGFMP\
+    JBELG\x12\x20\n\x0bIOMGDIKELIA\x18\x05\x20\x01(\rR\x0bIOMGDIKELIA\x12\
+    \x20\n\x0bPDMDKAPCOJM\x18\x0b\x20\x01(\rR\x0bPDMDKAPCOJMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

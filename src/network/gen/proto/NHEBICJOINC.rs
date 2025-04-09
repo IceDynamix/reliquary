@@ -34,10 +34,10 @@ pub struct NHEBICJOINC {
     pub FBNKDFJNJMP: u32,
     // @@protoc_insertion_point(field:NHEBICJOINC.AGBHAJDNHEH)
     pub AGBHAJDNHEH: ::protobuf::MessageField<super::PropExtraInfo::PropExtraInfo>,
-    // @@protoc_insertion_point(field:NHEBICJOINC.GNIAAJKINNA)
-    pub GNIAAJKINNA: u32,
     // @@protoc_insertion_point(field:NHEBICJOINC.NCGBNFKGAOP)
     pub NCGBNFKGAOP: u32,
+    // @@protoc_insertion_point(field:NHEBICJOINC.GNIAAJKINNA)
+    pub GNIAAJKINNA: u32,
     // @@protoc_insertion_point(field:NHEBICJOINC.FLHHCFCJALA)
     pub FLHHCFCJALA: ::std::vec::Vec<::std::string::String>,
     // special fields
@@ -75,14 +75,14 @@ impl NHEBICJOINC {
             |m: &mut NHEBICJOINC| { &mut m.AGBHAJDNHEH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GNIAAJKINNA",
-            |m: &NHEBICJOINC| { &m.GNIAAJKINNA },
-            |m: &mut NHEBICJOINC| { &mut m.GNIAAJKINNA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NCGBNFKGAOP",
             |m: &NHEBICJOINC| { &m.NCGBNFKGAOP },
             |m: &mut NHEBICJOINC| { &mut m.NCGBNFKGAOP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GNIAAJKINNA",
+            |m: &NHEBICJOINC| { &m.GNIAAJKINNA },
+            |m: &mut NHEBICJOINC| { &mut m.GNIAAJKINNA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "FLHHCFCJALA",
@@ -107,22 +107,22 @@ impl ::protobuf::Message for NHEBICJOINC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                48 => {
                     self.KPGHBPPBINL = is.read_uint64()?;
                 },
-                56 => {
+                120 => {
                     self.FBNKDFJNJMP = is.read_uint32()?;
                 },
-                10 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.AGBHAJDNHEH)?;
                 },
                 16 => {
-                    self.GNIAAJKINNA = is.read_uint32()?;
-                },
-                72 => {
                     self.NCGBNFKGAOP = is.read_uint32()?;
                 },
-                122 => {
+                88 => {
+                    self.GNIAAJKINNA = is.read_uint32()?;
+                },
+                114 => {
                     self.FLHHCFCJALA.push(is.read_string()?);
                 },
                 tag => {
@@ -138,23 +138,23 @@ impl ::protobuf::Message for NHEBICJOINC {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.KPGHBPPBINL != 0 {
-            my_size += ::protobuf::rt::uint64_size(14, self.KPGHBPPBINL);
+            my_size += ::protobuf::rt::uint64_size(6, self.KPGHBPPBINL);
         }
         if self.FBNKDFJNJMP != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.FBNKDFJNJMP);
+            my_size += ::protobuf::rt::uint32_size(15, self.FBNKDFJNJMP);
         }
         if let Some(v) = self.AGBHAJDNHEH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.GNIAAJKINNA != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.GNIAAJKINNA);
-        }
         if self.NCGBNFKGAOP != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.NCGBNFKGAOP);
+            my_size += ::protobuf::rt::uint32_size(2, self.NCGBNFKGAOP);
+        }
+        if self.GNIAAJKINNA != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.GNIAAJKINNA);
         }
         for value in &self.FLHHCFCJALA {
-            my_size += ::protobuf::rt::string_size(15, &value);
+            my_size += ::protobuf::rt::string_size(14, &value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -163,22 +163,22 @@ impl ::protobuf::Message for NHEBICJOINC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KPGHBPPBINL != 0 {
-            os.write_uint64(14, self.KPGHBPPBINL)?;
+            os.write_uint64(6, self.KPGHBPPBINL)?;
         }
         if self.FBNKDFJNJMP != 0 {
-            os.write_uint32(7, self.FBNKDFJNJMP)?;
+            os.write_uint32(15, self.FBNKDFJNJMP)?;
         }
         if let Some(v) = self.AGBHAJDNHEH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
-        if self.GNIAAJKINNA != 0 {
-            os.write_uint32(2, self.GNIAAJKINNA)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         if self.NCGBNFKGAOP != 0 {
-            os.write_uint32(9, self.NCGBNFKGAOP)?;
+            os.write_uint32(2, self.NCGBNFKGAOP)?;
+        }
+        if self.GNIAAJKINNA != 0 {
+            os.write_uint32(11, self.GNIAAJKINNA)?;
         }
         for v in &self.FLHHCFCJALA {
-            os.write_string(15, &v)?;
+            os.write_string(14, &v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -200,8 +200,8 @@ impl ::protobuf::Message for NHEBICJOINC {
         self.KPGHBPPBINL = 0;
         self.FBNKDFJNJMP = 0;
         self.AGBHAJDNHEH.clear();
-        self.GNIAAJKINNA = 0;
         self.NCGBNFKGAOP = 0;
+        self.GNIAAJKINNA = 0;
         self.FLHHCFCJALA.clear();
         self.special_fields.clear();
     }
@@ -211,8 +211,8 @@ impl ::protobuf::Message for NHEBICJOINC {
             KPGHBPPBINL: 0,
             FBNKDFJNJMP: 0,
             AGBHAJDNHEH: ::protobuf::MessageField::none(),
-            GNIAAJKINNA: 0,
             NCGBNFKGAOP: 0,
+            GNIAAJKINNA: 0,
             FLHHCFCJALA: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -239,11 +239,11 @@ impl ::protobuf::reflect::ProtobufValue for NHEBICJOINC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NHEBICJOINC.proto\x1a\x13PropExtraInfo.proto\"\xe9\x01\n\x0bNHEBIC\
-    JOINC\x12\x20\n\x0bKPGHBPPBINL\x18\x0e\x20\x01(\x04R\x0bKPGHBPPBINL\x12\
-    \x20\n\x0bFBNKDFJNJMP\x18\x07\x20\x01(\rR\x0bFBNKDFJNJMP\x120\n\x0bAGBHA\
-    JDNHEH\x18\x01\x20\x01(\x0b2\x0e.PropExtraInfoR\x0bAGBHAJDNHEH\x12\x20\n\
-    \x0bGNIAAJKINNA\x18\x02\x20\x01(\rR\x0bGNIAAJKINNA\x12\x20\n\x0bNCGBNFKG\
-    AOP\x18\t\x20\x01(\rR\x0bNCGBNFKGAOP\x12\x20\n\x0bFLHHCFCJALA\x18\x0f\
+    JOINC\x12\x20\n\x0bKPGHBPPBINL\x18\x06\x20\x01(\x04R\x0bKPGHBPPBINL\x12\
+    \x20\n\x0bFBNKDFJNJMP\x18\x0f\x20\x01(\rR\x0bFBNKDFJNJMP\x120\n\x0bAGBHA\
+    JDNHEH\x18\x08\x20\x01(\x0b2\x0e.PropExtraInfoR\x0bAGBHAJDNHEH\x12\x20\n\
+    \x0bNCGBNFKGAOP\x18\x02\x20\x01(\rR\x0bNCGBNFKGAOP\x12\x20\n\x0bGNIAAJKI\
+    NNA\x18\x0b\x20\x01(\rR\x0bGNIAAJKINNA\x12\x20\n\x0bFLHHCFCJALA\x18\x0e\
     \x20\x03(\tR\x0bFLHHCFCJALAb\x06proto3\
 ";
 

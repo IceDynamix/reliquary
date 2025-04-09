@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HJMGNJBJDLI {
     // message fields
-    // @@protoc_insertion_point(field:HJMGNJBJDLI.main_affix_id)
-    pub main_affix_id: u32,
     // @@protoc_insertion_point(field:HJMGNJBJDLI.tid)
     pub tid: u32,
-    // @@protoc_insertion_point(field:HJMGNJBJDLI.PDPKAJPLGBB)
-    pub PDPKAJPLGBB: ::std::vec::Vec<super::RelicAffix::RelicAffix>,
+    // @@protoc_insertion_point(field:HJMGNJBJDLI.main_affix_id)
+    pub main_affix_id: u32,
     // @@protoc_insertion_point(field:HJMGNJBJDLI.unique_id)
     pub unique_id: u32,
+    // @@protoc_insertion_point(field:HJMGNJBJDLI.sub_affix_list)
+    pub sub_affix_list: ::std::vec::Vec<super::RelicAffix::RelicAffix>,
     // @@protoc_insertion_point(field:HJMGNJBJDLI.level)
     pub level: u32,
     // special fields
@@ -58,24 +58,24 @@ impl HJMGNJBJDLI {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "tid",
+            |m: &HJMGNJBJDLI| { &m.tid },
+            |m: &mut HJMGNJBJDLI| { &mut m.tid },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "main_affix_id",
             |m: &HJMGNJBJDLI| { &m.main_affix_id },
             |m: &mut HJMGNJBJDLI| { &mut m.main_affix_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "tid",
-            |m: &HJMGNJBJDLI| { &m.tid },
-            |m: &mut HJMGNJBJDLI| { &mut m.tid },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PDPKAJPLGBB",
-            |m: &HJMGNJBJDLI| { &m.PDPKAJPLGBB },
-            |m: &mut HJMGNJBJDLI| { &mut m.PDPKAJPLGBB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "unique_id",
             |m: &HJMGNJBJDLI| { &m.unique_id },
             |m: &mut HJMGNJBJDLI| { &mut m.unique_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "sub_affix_list",
+            |m: &HJMGNJBJDLI| { &m.sub_affix_list },
+            |m: &mut HJMGNJBJDLI| { &mut m.sub_affix_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for HJMGNJBJDLI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.main_affix_id = is.read_uint32()?;
-                },
-                104 => {
+                96 => {
                     self.tid = is.read_uint32()?;
                 },
-                90 => {
-                    self.PDPKAJPLGBB.push(is.read_message()?);
+                48 => {
+                    self.main_affix_id = is.read_uint32()?;
                 },
-                64 => {
+                112 => {
                     self.unique_id = is.read_uint32()?;
                 },
-                40 => {
+                18 => {
+                    self.sub_affix_list.push(is.read_message()?);
+                },
+                56 => {
                     self.level = is.read_uint32()?;
                 },
                 tag => {
@@ -127,21 +127,21 @@ impl ::protobuf::Message for HJMGNJBJDLI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.main_affix_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.main_affix_id);
-        }
         if self.tid != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.tid);
+            my_size += ::protobuf::rt::uint32_size(12, self.tid);
         }
-        for value in &self.PDPKAJPLGBB {
+        if self.main_affix_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.main_affix_id);
+        }
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.unique_id);
+        }
+        for value in &self.sub_affix_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.unique_id);
-        }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.level);
+            my_size += ::protobuf::rt::uint32_size(7, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for HJMGNJBJDLI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.main_affix_id != 0 {
-            os.write_uint32(4, self.main_affix_id)?;
-        }
         if self.tid != 0 {
-            os.write_uint32(13, self.tid)?;
+            os.write_uint32(12, self.tid)?;
         }
-        for v in &self.PDPKAJPLGBB {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        };
+        if self.main_affix_id != 0 {
+            os.write_uint32(6, self.main_affix_id)?;
+        }
         if self.unique_id != 0 {
-            os.write_uint32(8, self.unique_id)?;
+            os.write_uint32(14, self.unique_id)?;
         }
+        for v in &self.sub_affix_list {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        };
         if self.level != 0 {
-            os.write_uint32(5, self.level)?;
+            os.write_uint32(7, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,20 +181,20 @@ impl ::protobuf::Message for HJMGNJBJDLI {
     }
 
     fn clear(&mut self) {
-        self.main_affix_id = 0;
         self.tid = 0;
-        self.PDPKAJPLGBB.clear();
+        self.main_affix_id = 0;
         self.unique_id = 0;
+        self.sub_affix_list.clear();
         self.level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HJMGNJBJDLI {
         static instance: HJMGNJBJDLI = HJMGNJBJDLI {
-            main_affix_id: 0,
             tid: 0,
-            PDPKAJPLGBB: ::std::vec::Vec::new(),
+            main_affix_id: 0,
             unique_id: 0,
+            sub_affix_list: ::std::vec::Vec::new(),
             level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -220,11 +220,11 @@ impl ::protobuf::reflect::ProtobufValue for HJMGNJBJDLI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HJMGNJBJDLI.proto\x1a\x10RelicAffix.proto\"\xa5\x01\n\x0bHJMGNJBJD\
-    LI\x12\"\n\rmain_affix_id\x18\x04\x20\x01(\rR\x0bmainAffixId\x12\x10\n\
-    \x03tid\x18\r\x20\x01(\rR\x03tid\x12-\n\x0bPDPKAJPLGBB\x18\x0b\x20\x03(\
-    \x0b2\x0b.RelicAffixR\x0bPDPKAJPLGBB\x12\x1b\n\tunique_id\x18\x08\x20\
-    \x01(\rR\x08uniqueId\x12\x14\n\x05level\x18\x05\x20\x01(\rR\x05levelb\
+    \n\x11HJMGNJBJDLI.proto\x1a\x10RelicAffix.proto\"\xa9\x01\n\x0bHJMGNJBJD\
+    LI\x12\x10\n\x03tid\x18\x0c\x20\x01(\rR\x03tid\x12\"\n\rmain_affix_id\
+    \x18\x06\x20\x01(\rR\x0bmainAffixId\x12\x1b\n\tunique_id\x18\x0e\x20\x01\
+    (\rR\x08uniqueId\x121\n\x0esub_affix_list\x18\x02\x20\x03(\x0b2\x0b.Reli\
+    cAffixR\x0csubAffixList\x12\x14\n\x05level\x18\x07\x20\x01(\rR\x05levelb\
     \x06proto3\
 ";
 

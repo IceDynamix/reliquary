@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartPunkLordRaidCsReq {
     // message fields
-    // @@protoc_insertion_point(field:StartPunkLordRaidCsReq.KMONAGFELPG)
-    pub KMONAGFELPG: u32,
-    // @@protoc_insertion_point(field:StartPunkLordRaidCsReq.CLOMMFKJPMM)
-    pub CLOMMFKJPMM: bool,
     // @@protoc_insertion_point(field:StartPunkLordRaidCsReq.FBJPBDIJPFK)
     pub FBJPBDIJPFK: u32,
+    // @@protoc_insertion_point(field:StartPunkLordRaidCsReq.CLOMMFKJPMM)
+    pub CLOMMFKJPMM: bool,
+    // @@protoc_insertion_point(field:StartPunkLordRaidCsReq.uid)
+    pub uid: u32,
     // special fields
     // @@protoc_insertion_point(special_field:StartPunkLordRaidCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl StartPunkLordRaidCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KMONAGFELPG",
-            |m: &StartPunkLordRaidCsReq| { &m.KMONAGFELPG },
-            |m: &mut StartPunkLordRaidCsReq| { &mut m.KMONAGFELPG },
+            "FBJPBDIJPFK",
+            |m: &StartPunkLordRaidCsReq| { &m.FBJPBDIJPFK },
+            |m: &mut StartPunkLordRaidCsReq| { &mut m.FBJPBDIJPFK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CLOMMFKJPMM",
@@ -64,9 +64,9 @@ impl StartPunkLordRaidCsReq {
             |m: &mut StartPunkLordRaidCsReq| { &mut m.CLOMMFKJPMM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FBJPBDIJPFK",
-            |m: &StartPunkLordRaidCsReq| { &m.FBJPBDIJPFK },
-            |m: &mut StartPunkLordRaidCsReq| { &mut m.FBJPBDIJPFK },
+            "uid",
+            |m: &StartPunkLordRaidCsReq| { &m.uid },
+            |m: &mut StartPunkLordRaidCsReq| { &mut m.uid },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartPunkLordRaidCsReq>(
             "StartPunkLordRaidCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for StartPunkLordRaidCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.KMONAGFELPG = is.read_uint32()?;
+                96 => {
+                    self.FBJPBDIJPFK = is.read_uint32()?;
                 },
-                24 => {
+                32 => {
                     self.CLOMMFKJPMM = is.read_bool()?;
                 },
                 48 => {
-                    self.FBJPBDIJPFK = is.read_uint32()?;
+                    self.uid = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for StartPunkLordRaidCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KMONAGFELPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.KMONAGFELPG);
+        if self.FBJPBDIJPFK != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.FBJPBDIJPFK);
         }
         if self.CLOMMFKJPMM != false {
             my_size += 1 + 1;
         }
-        if self.FBJPBDIJPFK != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.FBJPBDIJPFK);
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.uid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for StartPunkLordRaidCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KMONAGFELPG != 0 {
-            os.write_uint32(8, self.KMONAGFELPG)?;
+        if self.FBJPBDIJPFK != 0 {
+            os.write_uint32(12, self.FBJPBDIJPFK)?;
         }
         if self.CLOMMFKJPMM != false {
-            os.write_bool(3, self.CLOMMFKJPMM)?;
+            os.write_bool(4, self.CLOMMFKJPMM)?;
         }
-        if self.FBJPBDIJPFK != 0 {
-            os.write_uint32(6, self.FBJPBDIJPFK)?;
+        if self.uid != 0 {
+            os.write_uint32(6, self.uid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for StartPunkLordRaidCsReq {
     }
 
     fn clear(&mut self) {
-        self.KMONAGFELPG = 0;
-        self.CLOMMFKJPMM = false;
         self.FBJPBDIJPFK = 0;
+        self.CLOMMFKJPMM = false;
+        self.uid = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartPunkLordRaidCsReq {
         static instance: StartPunkLordRaidCsReq = StartPunkLordRaidCsReq {
-            KMONAGFELPG: 0,
-            CLOMMFKJPMM: false,
             FBJPBDIJPFK: 0,
+            CLOMMFKJPMM: false,
+            uid: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for StartPunkLordRaidCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cStartPunkLordRaidCsReq.proto\"~\n\x16StartPunkLordRaidCsReq\x12\
-    \x20\n\x0bKMONAGFELPG\x18\x08\x20\x01(\rR\x0bKMONAGFELPG\x12\x20\n\x0bCL\
-    OMMFKJPMM\x18\x03\x20\x01(\x08R\x0bCLOMMFKJPMM\x12\x20\n\x0bFBJPBDIJPFK\
-    \x18\x06\x20\x01(\rR\x0bFBJPBDIJPFKb\x06proto3\
+    \n\x1cStartPunkLordRaidCsReq.proto\"n\n\x16StartPunkLordRaidCsReq\x12\
+    \x20\n\x0bFBJPBDIJPFK\x18\x0c\x20\x01(\rR\x0bFBJPBDIJPFK\x12\x20\n\x0bCL\
+    OMMFKJPMM\x18\x04\x20\x01(\x08R\x0bCLOMMFKJPMM\x12\x10\n\x03uid\x18\x06\
+    \x20\x01(\rR\x03uidb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

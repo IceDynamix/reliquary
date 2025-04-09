@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GEMJDHNLKLC {
     // message fields
+    // @@protoc_insertion_point(field:GEMJDHNLKLC.EBFAJEANGEA)
+    pub EBFAJEANGEA: ::protobuf::EnumOrUnknown<super::MessageGroupStatus::MessageGroupStatus>,
     // @@protoc_insertion_point(field:GEMJDHNLKLC.HJEGILAGJOJ)
     pub HJEGILAGJOJ: i64,
     // @@protoc_insertion_point(field:GEMJDHNLKLC.FJNHDHOHBCL)
     pub FJNHDHOHBCL: u32,
-    // @@protoc_insertion_point(field:GEMJDHNLKLC.EBFAJEANGEA)
-    pub EBFAJEANGEA: ::protobuf::EnumOrUnknown<super::MessageGroupStatus::MessageGroupStatus>,
     // special fields
     // @@protoc_insertion_point(special_field:GEMJDHNLKLC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl GEMJDHNLKLC {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EBFAJEANGEA",
+            |m: &GEMJDHNLKLC| { &m.EBFAJEANGEA },
+            |m: &mut GEMJDHNLKLC| { &mut m.EBFAJEANGEA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HJEGILAGJOJ",
             |m: &GEMJDHNLKLC| { &m.HJEGILAGJOJ },
             |m: &mut GEMJDHNLKLC| { &mut m.HJEGILAGJOJ },
@@ -62,11 +67,6 @@ impl GEMJDHNLKLC {
             "FJNHDHOHBCL",
             |m: &GEMJDHNLKLC| { &m.FJNHDHOHBCL },
             |m: &mut GEMJDHNLKLC| { &mut m.FJNHDHOHBCL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EBFAJEANGEA",
-            |m: &GEMJDHNLKLC| { &m.EBFAJEANGEA },
-            |m: &mut GEMJDHNLKLC| { &mut m.EBFAJEANGEA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GEMJDHNLKLC>(
             "GEMJDHNLKLC",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GEMJDHNLKLC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                72 => {
+                    self.EBFAJEANGEA = is.read_enum_or_unknown()?;
+                },
+                24 => {
                     self.HJEGILAGJOJ = is.read_int64()?;
                 },
-                48 => {
-                    self.FJNHDHOHBCL = is.read_uint32()?;
-                },
                 120 => {
-                    self.EBFAJEANGEA = is.read_enum_or_unknown()?;
+                    self.FJNHDHOHBCL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for GEMJDHNLKLC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.EBFAJEANGEA != ::protobuf::EnumOrUnknown::new(super::MessageGroupStatus::MessageGroupStatus::MESSAGE_GROUP_NONE) {
+            my_size += ::protobuf::rt::int32_size(9, self.EBFAJEANGEA.value());
+        }
         if self.HJEGILAGJOJ != 0 {
-            my_size += ::protobuf::rt::int64_size(11, self.HJEGILAGJOJ);
+            my_size += ::protobuf::rt::int64_size(3, self.HJEGILAGJOJ);
         }
         if self.FJNHDHOHBCL != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.FJNHDHOHBCL);
-        }
-        if self.EBFAJEANGEA != ::protobuf::EnumOrUnknown::new(super::MessageGroupStatus::MessageGroupStatus::MESSAGE_GROUP_NONE) {
-            my_size += ::protobuf::rt::int32_size(15, self.EBFAJEANGEA.value());
+            my_size += ::protobuf::rt::uint32_size(15, self.FJNHDHOHBCL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for GEMJDHNLKLC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.EBFAJEANGEA != ::protobuf::EnumOrUnknown::new(super::MessageGroupStatus::MessageGroupStatus::MESSAGE_GROUP_NONE) {
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.EBFAJEANGEA))?;
+        }
         if self.HJEGILAGJOJ != 0 {
-            os.write_int64(11, self.HJEGILAGJOJ)?;
+            os.write_int64(3, self.HJEGILAGJOJ)?;
         }
         if self.FJNHDHOHBCL != 0 {
-            os.write_uint32(6, self.FJNHDHOHBCL)?;
-        }
-        if self.EBFAJEANGEA != ::protobuf::EnumOrUnknown::new(super::MessageGroupStatus::MessageGroupStatus::MESSAGE_GROUP_NONE) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.EBFAJEANGEA))?;
+            os.write_uint32(15, self.FJNHDHOHBCL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for GEMJDHNLKLC {
     }
 
     fn clear(&mut self) {
+        self.EBFAJEANGEA = ::protobuf::EnumOrUnknown::new(super::MessageGroupStatus::MessageGroupStatus::MESSAGE_GROUP_NONE);
         self.HJEGILAGJOJ = 0;
         self.FJNHDHOHBCL = 0;
-        self.EBFAJEANGEA = ::protobuf::EnumOrUnknown::new(super::MessageGroupStatus::MessageGroupStatus::MESSAGE_GROUP_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GEMJDHNLKLC {
         static instance: GEMJDHNLKLC = GEMJDHNLKLC {
+            EBFAJEANGEA: ::protobuf::EnumOrUnknown::from_i32(0),
             HJEGILAGJOJ: 0,
             FJNHDHOHBCL: 0,
-            EBFAJEANGEA: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for GEMJDHNLKLC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GEMJDHNLKLC.proto\x1a\x18MessageGroupStatus.proto\"\x88\x01\n\x0bG\
-    EMJDHNLKLC\x12\x20\n\x0bHJEGILAGJOJ\x18\x0b\x20\x01(\x03R\x0bHJEGILAGJOJ\
-    \x12\x20\n\x0bFJNHDHOHBCL\x18\x06\x20\x01(\rR\x0bFJNHDHOHBCL\x125\n\x0bE\
-    BFAJEANGEA\x18\x0f\x20\x01(\x0e2\x13.MessageGroupStatusR\x0bEBFAJEANGEAb\
+    EMJDHNLKLC\x125\n\x0bEBFAJEANGEA\x18\t\x20\x01(\x0e2\x13.MessageGroupSta\
+    tusR\x0bEBFAJEANGEA\x12\x20\n\x0bHJEGILAGJOJ\x18\x03\x20\x01(\x03R\x0bHJ\
+    EGILAGJOJ\x12\x20\n\x0bFJNHDHOHBCL\x18\x0f\x20\x01(\rR\x0bFJNHDHOHBCLb\
     \x06proto3\
 ";
 

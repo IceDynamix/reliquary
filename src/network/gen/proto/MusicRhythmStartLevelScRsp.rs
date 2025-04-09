@@ -30,10 +30,10 @@ pub struct MusicRhythmStartLevelScRsp {
     // message fields
     // @@protoc_insertion_point(field:MusicRhythmStartLevelScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:MusicRhythmStartLevelScRsp.MDLNDGIJNML)
-    pub MDLNDGIJNML: ::std::string::String,
     // @@protoc_insertion_point(field:MusicRhythmStartLevelScRsp.ACJCPHIFMLN)
     pub ACJCPHIFMLN: u32,
+    // @@protoc_insertion_point(field:MusicRhythmStartLevelScRsp.MDLNDGIJNML)
+    pub MDLNDGIJNML: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:MusicRhythmStartLevelScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl MusicRhythmStartLevelScRsp {
             |m: &mut MusicRhythmStartLevelScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MDLNDGIJNML",
-            |m: &MusicRhythmStartLevelScRsp| { &m.MDLNDGIJNML },
-            |m: &mut MusicRhythmStartLevelScRsp| { &mut m.MDLNDGIJNML },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ACJCPHIFMLN",
             |m: &MusicRhythmStartLevelScRsp| { &m.ACJCPHIFMLN },
             |m: &mut MusicRhythmStartLevelScRsp| { &mut m.ACJCPHIFMLN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MDLNDGIJNML",
+            |m: &MusicRhythmStartLevelScRsp| { &m.MDLNDGIJNML },
+            |m: &mut MusicRhythmStartLevelScRsp| { &mut m.MDLNDGIJNML },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MusicRhythmStartLevelScRsp>(
             "MusicRhythmStartLevelScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for MusicRhythmStartLevelScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
-                66 => {
-                    self.MDLNDGIJNML = is.read_string()?;
-                },
-                40 => {
+                56 => {
                     self.ACJCPHIFMLN = is.read_uint32()?;
+                },
+                50 => {
+                    self.MDLNDGIJNML = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for MusicRhythmStartLevelScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
-        }
-        if !self.MDLNDGIJNML.is_empty() {
-            my_size += ::protobuf::rt::string_size(8, &self.MDLNDGIJNML);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         if self.ACJCPHIFMLN != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.ACJCPHIFMLN);
+            my_size += ::protobuf::rt::uint32_size(7, self.ACJCPHIFMLN);
+        }
+        if !self.MDLNDGIJNML.is_empty() {
+            my_size += ::protobuf::rt::string_size(6, &self.MDLNDGIJNML);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for MusicRhythmStartLevelScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
-        }
-        if !self.MDLNDGIJNML.is_empty() {
-            os.write_string(8, &self.MDLNDGIJNML)?;
+            os.write_uint32(10, self.retcode)?;
         }
         if self.ACJCPHIFMLN != 0 {
-            os.write_uint32(5, self.ACJCPHIFMLN)?;
+            os.write_uint32(7, self.ACJCPHIFMLN)?;
+        }
+        if !self.MDLNDGIJNML.is_empty() {
+            os.write_string(6, &self.MDLNDGIJNML)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for MusicRhythmStartLevelScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.MDLNDGIJNML.clear();
         self.ACJCPHIFMLN = 0;
+        self.MDLNDGIJNML.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MusicRhythmStartLevelScRsp {
         static instance: MusicRhythmStartLevelScRsp = MusicRhythmStartLevelScRsp {
             retcode: 0,
-            MDLNDGIJNML: ::std::string::String::new(),
             ACJCPHIFMLN: 0,
+            MDLNDGIJNML: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for MusicRhythmStartLevelScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20MusicRhythmStartLevelScRsp.proto\"z\n\x1aMusicRhythmStartLevelScRs\
-    p\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12\x20\n\x0bMDLND\
-    GIJNML\x18\x08\x20\x01(\tR\x0bMDLNDGIJNML\x12\x20\n\x0bACJCPHIFMLN\x18\
-    \x05\x20\x01(\rR\x0bACJCPHIFMLNb\x06proto3\
+    p\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcode\x12\x20\n\x0bACJCPHI\
+    FMLN\x18\x07\x20\x01(\rR\x0bACJCPHIFMLN\x12\x20\n\x0bMDLNDGIJNML\x18\x06\
+    \x20\x01(\tR\x0bMDLNDGIJNMLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

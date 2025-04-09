@@ -79,13 +79,13 @@ impl ::protobuf::Message for MLKICCAELKE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                8 => {
                     self.BILBOHBDBPN = is.read_uint32()?;
                 },
-                98 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.ANBPNIHMKAH)?;
                 },
-                96 => {
+                64 => {
                     self.ANBPNIHMKAH.push(is.read_uint32()?);
                 },
                 tag => {
@@ -101,9 +101,9 @@ impl ::protobuf::Message for MLKICCAELKE {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.BILBOHBDBPN != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.BILBOHBDBPN);
+            my_size += ::protobuf::rt::uint32_size(1, self.BILBOHBDBPN);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.ANBPNIHMKAH);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.ANBPNIHMKAH);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -111,9 +111,9 @@ impl ::protobuf::Message for MLKICCAELKE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BILBOHBDBPN != 0 {
-            os.write_uint32(5, self.BILBOHBDBPN)?;
+            os.write_uint32(1, self.BILBOHBDBPN)?;
         }
-        os.write_repeated_packed_uint32(12, &self.ANBPNIHMKAH)?;
+        os.write_repeated_packed_uint32(8, &self.ANBPNIHMKAH)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for MLKICCAELKE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MLKICCAELKE.proto\"Q\n\x0bMLKICCAELKE\x12\x20\n\x0bBILBOHBDBPN\x18\
-    \x05\x20\x01(\rR\x0bBILBOHBDBPN\x12\x20\n\x0bANBPNIHMKAH\x18\x0c\x20\x03\
+    \x01\x20\x01(\rR\x0bBILBOHBDBPN\x12\x20\n\x0bANBPNIHMKAH\x18\x08\x20\x03\
     (\rR\x0bANBPNIHMKAHb\x06proto3\
 ";
 

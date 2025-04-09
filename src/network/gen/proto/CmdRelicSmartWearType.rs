@@ -29,32 +29,32 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdRelicSmartWearType {
     // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearTypeNone)
     CmdRelicSmartWearTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearAddPlanScRsp)
-    CmdRelicSmartWearAddPlanScRsp = 8252,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearDeletePlanCsReq)
-    CmdRelicSmartWearDeletePlanCsReq = 8269,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearPinRelicCsReq)
-    CmdRelicSmartWearPinRelicCsReq = 8265,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearUpdatePlanScRsp)
-    CmdRelicSmartWearUpdatePlanScRsp = 8251,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearGetPinRelicScRsp)
-    CmdRelicSmartWearGetPinRelicScRsp = 8255,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearUpdatePlanCsReq)
-    CmdRelicSmartWearUpdatePlanCsReq = 8254,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearGetPlanScRsp)
+    CmdRelicSmartWearGetPlanScRsp = 8266,
     // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearAddPlanCsReq)
-    CmdRelicSmartWearAddPlanCsReq = 8262,
+    CmdRelicSmartWearAddPlanCsReq = 8270,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearDeletePlanScRsp)
+    CmdRelicSmartWearDeletePlanScRsp = 8261,
     // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearGetPlanCsReq)
     CmdRelicSmartWearGetPlanCsReq = 8267,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearGetPlanScRsp)
-    CmdRelicSmartWearGetPlanScRsp = 8258,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearDeletePlanCsReq)
+    CmdRelicSmartWearDeletePlanCsReq = 8269,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearAddPlanScRsp)
+    CmdRelicSmartWearAddPlanScRsp = 8254,
     // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearUpdatePinRelicScNotify)
-    CmdRelicSmartWearUpdatePinRelicScNotify = 8266,
+    CmdRelicSmartWearUpdatePinRelicScNotify = 8263,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearGetPinRelicScRsp)
+    CmdRelicSmartWearGetPinRelicScRsp = 8265,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearUpdatePlanScRsp)
+    CmdRelicSmartWearUpdatePlanScRsp = 8259,
     // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearGetPinRelicCsReq)
-    CmdRelicSmartWearGetPinRelicCsReq = 8268,
+    CmdRelicSmartWearGetPinRelicCsReq = 8257,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearUpdatePlanCsReq)
+    CmdRelicSmartWearUpdatePlanCsReq = 8264,
     // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearPinRelicScRsp)
-    CmdRelicSmartWearPinRelicScRsp = 8256,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearDeletePlanScRsp)
-    CmdRelicSmartWearDeletePlanScRsp = 8264,
+    CmdRelicSmartWearPinRelicScRsp = 8268,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearPinRelicCsReq)
+    CmdRelicSmartWearPinRelicCsReq = 8260,
 }
 
 impl ::protobuf::Enum for CmdRelicSmartWearType {
@@ -67,19 +67,19 @@ impl ::protobuf::Enum for CmdRelicSmartWearType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdRelicSmartWearType> {
         match value {
             0 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearTypeNone),
-            8252 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearAddPlanScRsp),
-            8269 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearDeletePlanCsReq),
-            8265 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearPinRelicCsReq),
-            8251 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearUpdatePlanScRsp),
-            8255 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearGetPinRelicScRsp),
-            8254 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearUpdatePlanCsReq),
-            8262 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearAddPlanCsReq),
+            8266 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearGetPlanScRsp),
+            8270 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearAddPlanCsReq),
+            8261 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearDeletePlanScRsp),
             8267 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearGetPlanCsReq),
-            8258 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearGetPlanScRsp),
-            8266 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearUpdatePinRelicScNotify),
-            8268 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearGetPinRelicCsReq),
-            8256 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearPinRelicScRsp),
-            8264 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearDeletePlanScRsp),
+            8269 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearDeletePlanCsReq),
+            8254 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearAddPlanScRsp),
+            8263 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearUpdatePinRelicScNotify),
+            8265 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearGetPinRelicScRsp),
+            8259 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearUpdatePlanScRsp),
+            8257 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearGetPinRelicCsReq),
+            8264 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearUpdatePlanCsReq),
+            8268 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearPinRelicScRsp),
+            8260 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearPinRelicCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -87,38 +87,38 @@ impl ::protobuf::Enum for CmdRelicSmartWearType {
     fn from_str(str: &str) -> ::std::option::Option<CmdRelicSmartWearType> {
         match str {
             "CmdRelicSmartWearTypeNone" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearTypeNone),
-            "CmdRelicSmartWearAddPlanScRsp" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearAddPlanScRsp),
-            "CmdRelicSmartWearDeletePlanCsReq" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearDeletePlanCsReq),
-            "CmdRelicSmartWearPinRelicCsReq" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearPinRelicCsReq),
-            "CmdRelicSmartWearUpdatePlanScRsp" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearUpdatePlanScRsp),
-            "CmdRelicSmartWearGetPinRelicScRsp" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearGetPinRelicScRsp),
-            "CmdRelicSmartWearUpdatePlanCsReq" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearUpdatePlanCsReq),
-            "CmdRelicSmartWearAddPlanCsReq" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearAddPlanCsReq),
-            "CmdRelicSmartWearGetPlanCsReq" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearGetPlanCsReq),
             "CmdRelicSmartWearGetPlanScRsp" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearGetPlanScRsp),
-            "CmdRelicSmartWearUpdatePinRelicScNotify" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearUpdatePinRelicScNotify),
-            "CmdRelicSmartWearGetPinRelicCsReq" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearGetPinRelicCsReq),
-            "CmdRelicSmartWearPinRelicScRsp" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearPinRelicScRsp),
+            "CmdRelicSmartWearAddPlanCsReq" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearAddPlanCsReq),
             "CmdRelicSmartWearDeletePlanScRsp" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearDeletePlanScRsp),
+            "CmdRelicSmartWearGetPlanCsReq" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearGetPlanCsReq),
+            "CmdRelicSmartWearDeletePlanCsReq" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearDeletePlanCsReq),
+            "CmdRelicSmartWearAddPlanScRsp" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearAddPlanScRsp),
+            "CmdRelicSmartWearUpdatePinRelicScNotify" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearUpdatePinRelicScNotify),
+            "CmdRelicSmartWearGetPinRelicScRsp" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearGetPinRelicScRsp),
+            "CmdRelicSmartWearUpdatePlanScRsp" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearUpdatePlanScRsp),
+            "CmdRelicSmartWearGetPinRelicCsReq" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearGetPinRelicCsReq),
+            "CmdRelicSmartWearUpdatePlanCsReq" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearUpdatePlanCsReq),
+            "CmdRelicSmartWearPinRelicScRsp" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearPinRelicScRsp),
+            "CmdRelicSmartWearPinRelicCsReq" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearPinRelicCsReq),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRelicSmartWearType] = &[
         CmdRelicSmartWearType::CmdRelicSmartWearTypeNone,
-        CmdRelicSmartWearType::CmdRelicSmartWearAddPlanScRsp,
-        CmdRelicSmartWearType::CmdRelicSmartWearDeletePlanCsReq,
-        CmdRelicSmartWearType::CmdRelicSmartWearPinRelicCsReq,
-        CmdRelicSmartWearType::CmdRelicSmartWearUpdatePlanScRsp,
-        CmdRelicSmartWearType::CmdRelicSmartWearGetPinRelicScRsp,
-        CmdRelicSmartWearType::CmdRelicSmartWearUpdatePlanCsReq,
-        CmdRelicSmartWearType::CmdRelicSmartWearAddPlanCsReq,
-        CmdRelicSmartWearType::CmdRelicSmartWearGetPlanCsReq,
         CmdRelicSmartWearType::CmdRelicSmartWearGetPlanScRsp,
-        CmdRelicSmartWearType::CmdRelicSmartWearUpdatePinRelicScNotify,
-        CmdRelicSmartWearType::CmdRelicSmartWearGetPinRelicCsReq,
-        CmdRelicSmartWearType::CmdRelicSmartWearPinRelicScRsp,
+        CmdRelicSmartWearType::CmdRelicSmartWearAddPlanCsReq,
         CmdRelicSmartWearType::CmdRelicSmartWearDeletePlanScRsp,
+        CmdRelicSmartWearType::CmdRelicSmartWearGetPlanCsReq,
+        CmdRelicSmartWearType::CmdRelicSmartWearDeletePlanCsReq,
+        CmdRelicSmartWearType::CmdRelicSmartWearAddPlanScRsp,
+        CmdRelicSmartWearType::CmdRelicSmartWearUpdatePinRelicScNotify,
+        CmdRelicSmartWearType::CmdRelicSmartWearGetPinRelicScRsp,
+        CmdRelicSmartWearType::CmdRelicSmartWearUpdatePlanScRsp,
+        CmdRelicSmartWearType::CmdRelicSmartWearGetPinRelicCsReq,
+        CmdRelicSmartWearType::CmdRelicSmartWearUpdatePlanCsReq,
+        CmdRelicSmartWearType::CmdRelicSmartWearPinRelicScRsp,
+        CmdRelicSmartWearType::CmdRelicSmartWearPinRelicCsReq,
     ];
 }
 
@@ -131,19 +131,19 @@ impl ::protobuf::EnumFull for CmdRelicSmartWearType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdRelicSmartWearType::CmdRelicSmartWearTypeNone => 0,
-            CmdRelicSmartWearType::CmdRelicSmartWearAddPlanScRsp => 1,
-            CmdRelicSmartWearType::CmdRelicSmartWearDeletePlanCsReq => 2,
-            CmdRelicSmartWearType::CmdRelicSmartWearPinRelicCsReq => 3,
-            CmdRelicSmartWearType::CmdRelicSmartWearUpdatePlanScRsp => 4,
-            CmdRelicSmartWearType::CmdRelicSmartWearGetPinRelicScRsp => 5,
-            CmdRelicSmartWearType::CmdRelicSmartWearUpdatePlanCsReq => 6,
-            CmdRelicSmartWearType::CmdRelicSmartWearAddPlanCsReq => 7,
-            CmdRelicSmartWearType::CmdRelicSmartWearGetPlanCsReq => 8,
-            CmdRelicSmartWearType::CmdRelicSmartWearGetPlanScRsp => 9,
-            CmdRelicSmartWearType::CmdRelicSmartWearUpdatePinRelicScNotify => 10,
-            CmdRelicSmartWearType::CmdRelicSmartWearGetPinRelicCsReq => 11,
+            CmdRelicSmartWearType::CmdRelicSmartWearGetPlanScRsp => 1,
+            CmdRelicSmartWearType::CmdRelicSmartWearAddPlanCsReq => 2,
+            CmdRelicSmartWearType::CmdRelicSmartWearDeletePlanScRsp => 3,
+            CmdRelicSmartWearType::CmdRelicSmartWearGetPlanCsReq => 4,
+            CmdRelicSmartWearType::CmdRelicSmartWearDeletePlanCsReq => 5,
+            CmdRelicSmartWearType::CmdRelicSmartWearAddPlanScRsp => 6,
+            CmdRelicSmartWearType::CmdRelicSmartWearUpdatePinRelicScNotify => 7,
+            CmdRelicSmartWearType::CmdRelicSmartWearGetPinRelicScRsp => 8,
+            CmdRelicSmartWearType::CmdRelicSmartWearUpdatePlanScRsp => 9,
+            CmdRelicSmartWearType::CmdRelicSmartWearGetPinRelicCsReq => 10,
+            CmdRelicSmartWearType::CmdRelicSmartWearUpdatePlanCsReq => 11,
             CmdRelicSmartWearType::CmdRelicSmartWearPinRelicScRsp => 12,
-            CmdRelicSmartWearType::CmdRelicSmartWearDeletePlanScRsp => 13,
+            CmdRelicSmartWearType::CmdRelicSmartWearPinRelicCsReq => 13,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -164,16 +164,16 @@ impl CmdRelicSmartWearType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bCmdRelicSmartWearType.proto*\xaa\x04\n\x15CmdRelicSmartWearType\
     \x12\x1d\n\x19CmdRelicSmartWearTypeNone\x10\0\x12\"\n\x1dCmdRelicSmartWe\
-    arAddPlanScRsp\x10\xbc@\x12%\n\x20CmdRelicSmartWearDeletePlanCsReq\x10\
-    \xcd@\x12#\n\x1eCmdRelicSmartWearPinRelicCsReq\x10\xc9@\x12%\n\x20CmdRel\
-    icSmartWearUpdatePlanScRsp\x10\xbb@\x12&\n!CmdRelicSmartWearGetPinRelicS\
-    cRsp\x10\xbf@\x12%\n\x20CmdRelicSmartWearUpdatePlanCsReq\x10\xbe@\x12\"\
-    \n\x1dCmdRelicSmartWearAddPlanCsReq\x10\xc6@\x12\"\n\x1dCmdRelicSmartWea\
-    rGetPlanCsReq\x10\xcb@\x12\"\n\x1dCmdRelicSmartWearGetPlanScRsp\x10\xc2@\
-    \x12,\n'CmdRelicSmartWearUpdatePinRelicScNotify\x10\xca@\x12&\n!CmdRelic\
-    SmartWearGetPinRelicCsReq\x10\xcc@\x12#\n\x1eCmdRelicSmartWearPinRelicSc\
-    Rsp\x10\xc0@\x12%\n\x20CmdRelicSmartWearDeletePlanScRsp\x10\xc8@b\x06pro\
-    to3\
+    arGetPlanScRsp\x10\xca@\x12\"\n\x1dCmdRelicSmartWearAddPlanCsReq\x10\xce\
+    @\x12%\n\x20CmdRelicSmartWearDeletePlanScRsp\x10\xc5@\x12\"\n\x1dCmdReli\
+    cSmartWearGetPlanCsReq\x10\xcb@\x12%\n\x20CmdRelicSmartWearDeletePlanCsR\
+    eq\x10\xcd@\x12\"\n\x1dCmdRelicSmartWearAddPlanScRsp\x10\xbe@\x12,\n'Cmd\
+    RelicSmartWearUpdatePinRelicScNotify\x10\xc7@\x12&\n!CmdRelicSmartWearGe\
+    tPinRelicScRsp\x10\xc9@\x12%\n\x20CmdRelicSmartWearUpdatePlanScRsp\x10\
+    \xc3@\x12&\n!CmdRelicSmartWearGetPinRelicCsReq\x10\xc1@\x12%\n\x20CmdRel\
+    icSmartWearUpdatePlanCsReq\x10\xc8@\x12#\n\x1eCmdRelicSmartWearPinRelicS\
+    cRsp\x10\xcc@\x12#\n\x1eCmdRelicSmartWearPinRelicCsReq\x10\xc4@b\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

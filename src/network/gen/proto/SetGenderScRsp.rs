@@ -30,10 +30,10 @@ pub struct SetGenderScRsp {
     // message fields
     // @@protoc_insertion_point(field:SetGenderScRsp.AEJFCAEMCBI)
     pub AEJFCAEMCBI: ::protobuf::EnumOrUnknown<super::MultiPathAvatarType::MultiPathAvatarType>,
-    // @@protoc_insertion_point(field:SetGenderScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:SetGenderScRsp.GLJKNMKGCJK)
     pub GLJKNMKGCJK: ::std::vec::Vec<super::MultiPathAvatarTypeInfo::MultiPathAvatarTypeInfo>,
+    // @@protoc_insertion_point(field:SetGenderScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SetGenderScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl SetGenderScRsp {
             |m: &SetGenderScRsp| { &m.AEJFCAEMCBI },
             |m: &mut SetGenderScRsp| { &mut m.AEJFCAEMCBI },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &SetGenderScRsp| { &m.retcode },
-            |m: &mut SetGenderScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "GLJKNMKGCJK",
             |m: &SetGenderScRsp| { &m.GLJKNMKGCJK },
             |m: &mut SetGenderScRsp| { &mut m.GLJKNMKGCJK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &SetGenderScRsp| { &m.retcode },
+            |m: &mut SetGenderScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetGenderScRsp>(
             "SetGenderScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SetGenderScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                48 => {
                     self.AEJFCAEMCBI = is.read_enum_or_unknown()?;
+                },
+                74 => {
+                    self.GLJKNMKGCJK.push(is.read_message()?);
                 },
                 24 => {
                     self.retcode = is.read_uint32()?;
-                },
-                10 => {
-                    self.GLJKNMKGCJK.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +108,15 @@ impl ::protobuf::Message for SetGenderScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.AEJFCAEMCBI != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
-            my_size += ::protobuf::rt::int32_size(13, self.AEJFCAEMCBI.value());
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::int32_size(6, self.AEJFCAEMCBI.value());
         }
         for value in &self.GLJKNMKGCJK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -124,14 +124,14 @@ impl ::protobuf::Message for SetGenderScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.AEJFCAEMCBI != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.AEJFCAEMCBI))?;
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.AEJFCAEMCBI))?;
         }
+        for v in &self.GLJKNMKGCJK {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
         if self.retcode != 0 {
             os.write_uint32(3, self.retcode)?;
         }
-        for v in &self.GLJKNMKGCJK {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,16 +150,16 @@ impl ::protobuf::Message for SetGenderScRsp {
 
     fn clear(&mut self) {
         self.AEJFCAEMCBI = ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone);
-        self.retcode = 0;
         self.GLJKNMKGCJK.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetGenderScRsp {
         static instance: SetGenderScRsp = SetGenderScRsp {
             AEJFCAEMCBI: ::protobuf::EnumOrUnknown::from_i32(0),
-            retcode: 0,
             GLJKNMKGCJK: ::std::vec::Vec::new(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,10 +186,9 @@ impl ::protobuf::reflect::ProtobufValue for SetGenderScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14SetGenderScRsp.proto\x1a\x19MultiPathAvatarType.proto\x1a\x1dMulti\
     PathAvatarTypeInfo.proto\"\x9e\x01\n\x0eSetGenderScRsp\x126\n\x0bAEJFCAE\
-    MCBI\x18\r\x20\x01(\x0e2\x14.MultiPathAvatarTypeR\x0bAEJFCAEMCBI\x12\x18\
-    \n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12:\n\x0bGLJKNMKGCJK\x18\
-    \x01\x20\x03(\x0b2\x18.MultiPathAvatarTypeInfoR\x0bGLJKNMKGCJKb\x06proto\
-    3\
+    MCBI\x18\x06\x20\x01(\x0e2\x14.MultiPathAvatarTypeR\x0bAEJFCAEMCBI\x12:\
+    \n\x0bGLJKNMKGCJK\x18\t\x20\x03(\x0b2\x18.MultiPathAvatarTypeInfoR\x0bGL\
+    JKNMKGCJK\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

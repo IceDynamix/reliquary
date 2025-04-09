@@ -45,7 +45,7 @@ impl CommonRogueUpdateScNotify {
         ::std::default::Default::default()
     }
 
-    // .MAPOMOILGEH ONGPJOGKKJN = 14;
+    // .MAPOMOILGEH ONGPJOGKKJN = 9;
 
     pub fn ONGPJOGKKJN(&self) -> &super::MAPOMOILGEH::MAPOMOILGEH {
         match self.DGIKIFJODBM {
@@ -235,7 +235,7 @@ impl ::protobuf::Message for CommonRogueUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                74 => {
                     self.DGIKIFJODBM = ::std::option::Option::Some(common_rogue_update_sc_notify::DGIKIFJODBM::ONGPJOGKKJN(is.read_message()?));
                 },
                 18 => {
@@ -281,7 +281,7 @@ impl ::protobuf::Message for CommonRogueUpdateScNotify {
         if let ::std::option::Option::Some(ref v) = self.DGIKIFJODBM {
             match v {
                 &common_rogue_update_sc_notify::DGIKIFJODBM::ONGPJOGKKJN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
                 },
                 &common_rogue_update_sc_notify::DGIKIFJODBM::KJKBKEGIGHK(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
@@ -375,10 +375,10 @@ pub mod common_rogue_update_sc_notify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fCommonRogueUpdateScNotify.proto\x1a\x11ILAEKJCNEMF.proto\x1a\x11MA\
     POMOILGEH.proto\x1a\x11PLGDCFIPEAA.proto\"\xc0\x01\n\x19CommonRogueUpdat\
-    eScNotify\x120\n\x0bONGPJOGKKJN\x18\x0e\x20\x01(\x0b2\x0c.MAPOMOILGEHH\0\
-    R\x0bONGPJOGKKJN\x120\n\x0bKJKBKEGIGHK\x18\x02\x20\x01(\x0b2\x0c.PLGDCFI\
-    PEAAH\0R\x0bKJKBKEGIGHK\x120\n\x0bNOLHGNHAEMA\x18\r\x20\x01(\x0b2\x0c.IL\
-    AEKJCNEMFH\0R\x0bNOLHGNHAEMAB\r\n\x0bDGIKIFJODBMb\x06proto3\
+    eScNotify\x120\n\x0bONGPJOGKKJN\x18\t\x20\x01(\x0b2\x0c.MAPOMOILGEHH\0R\
+    \x0bONGPJOGKKJN\x120\n\x0bKJKBKEGIGHK\x18\x02\x20\x01(\x0b2\x0c.PLGDCFIP\
+    EAAH\0R\x0bKJKBKEGIGHK\x120\n\x0bNOLHGNHAEMA\x18\r\x20\x01(\x0b2\x0c.ILA\
+    EKJCNEMFH\0R\x0bNOLHGNHAEMAB\r\n\x0bDGIKIFJODBMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

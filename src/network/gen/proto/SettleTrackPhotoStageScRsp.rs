@@ -30,10 +30,10 @@ pub struct SettleTrackPhotoStageScRsp {
     // message fields
     // @@protoc_insertion_point(field:SettleTrackPhotoStageScRsp.CFONLBPOABP)
     pub CFONLBPOABP: u32,
-    // @@protoc_insertion_point(field:SettleTrackPhotoStageScRsp.LPIHANIOJFI)
-    pub LPIHANIOJFI: ::std::vec::Vec<super::GEOAEOFJOGC::GEOAEOFJOGC>,
     // @@protoc_insertion_point(field:SettleTrackPhotoStageScRsp.DNPHCJEBIKB)
     pub DNPHCJEBIKB: u32,
+    // @@protoc_insertion_point(field:SettleTrackPhotoStageScRsp.LPIHANIOJFI)
+    pub LPIHANIOJFI: ::std::vec::Vec<super::GEOAEOFJOGC::GEOAEOFJOGC>,
     // @@protoc_insertion_point(field:SettleTrackPhotoStageScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -60,15 +60,15 @@ impl SettleTrackPhotoStageScRsp {
             |m: &SettleTrackPhotoStageScRsp| { &m.CFONLBPOABP },
             |m: &mut SettleTrackPhotoStageScRsp| { &mut m.CFONLBPOABP },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LPIHANIOJFI",
-            |m: &SettleTrackPhotoStageScRsp| { &m.LPIHANIOJFI },
-            |m: &mut SettleTrackPhotoStageScRsp| { &mut m.LPIHANIOJFI },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DNPHCJEBIKB",
             |m: &SettleTrackPhotoStageScRsp| { &m.DNPHCJEBIKB },
             |m: &mut SettleTrackPhotoStageScRsp| { &mut m.DNPHCJEBIKB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LPIHANIOJFI",
+            |m: &SettleTrackPhotoStageScRsp| { &m.LPIHANIOJFI },
+            |m: &mut SettleTrackPhotoStageScRsp| { &mut m.LPIHANIOJFI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for SettleTrackPhotoStageScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                16 => {
                     self.CFONLBPOABP = is.read_uint32()?;
                 },
-                122 => {
-                    self.LPIHANIOJFI.push(is.read_message()?);
-                },
-                72 => {
+                56 => {
                     self.DNPHCJEBIKB = is.read_uint32()?;
                 },
-                80 => {
+                50 => {
+                    self.LPIHANIOJFI.push(is.read_message()?);
+                },
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -118,17 +118,17 @@ impl ::protobuf::Message for SettleTrackPhotoStageScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CFONLBPOABP != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.CFONLBPOABP);
+            my_size += ::protobuf::rt::uint32_size(2, self.CFONLBPOABP);
+        }
+        if self.DNPHCJEBIKB != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.DNPHCJEBIKB);
         }
         for value in &self.LPIHANIOJFI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.DNPHCJEBIKB != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.DNPHCJEBIKB);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,16 +137,16 @@ impl ::protobuf::Message for SettleTrackPhotoStageScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CFONLBPOABP != 0 {
-            os.write_uint32(7, self.CFONLBPOABP)?;
+            os.write_uint32(2, self.CFONLBPOABP)?;
+        }
+        if self.DNPHCJEBIKB != 0 {
+            os.write_uint32(7, self.DNPHCJEBIKB)?;
         }
         for v in &self.LPIHANIOJFI {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
-        if self.DNPHCJEBIKB != 0 {
-            os.write_uint32(9, self.DNPHCJEBIKB)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::Message for SettleTrackPhotoStageScRsp {
 
     fn clear(&mut self) {
         self.CFONLBPOABP = 0;
-        self.LPIHANIOJFI.clear();
         self.DNPHCJEBIKB = 0;
+        self.LPIHANIOJFI.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
@@ -175,8 +175,8 @@ impl ::protobuf::Message for SettleTrackPhotoStageScRsp {
     fn default_instance() -> &'static SettleTrackPhotoStageScRsp {
         static instance: SettleTrackPhotoStageScRsp = SettleTrackPhotoStageScRsp {
             CFONLBPOABP: 0,
-            LPIHANIOJFI: ::std::vec::Vec::new(),
             DNPHCJEBIKB: 0,
+            LPIHANIOJFI: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for SettleTrackPhotoStageScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20SettleTrackPhotoStageScRsp.proto\x1a\x11GEOAEOFJOGC.proto\"\xaa\
-    \x01\n\x1aSettleTrackPhotoStageScRsp\x12\x20\n\x0bCFONLBPOABP\x18\x07\
-    \x20\x01(\rR\x0bCFONLBPOABP\x12.\n\x0bLPIHANIOJFI\x18\x0f\x20\x03(\x0b2\
-    \x0c.GEOAEOFJOGCR\x0bLPIHANIOJFI\x12\x20\n\x0bDNPHCJEBIKB\x18\t\x20\x01(\
-    \rR\x0bDNPHCJEBIKB\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcodeb\
+    \x01\n\x1aSettleTrackPhotoStageScRsp\x12\x20\n\x0bCFONLBPOABP\x18\x02\
+    \x20\x01(\rR\x0bCFONLBPOABP\x12\x20\n\x0bDNPHCJEBIKB\x18\x07\x20\x01(\rR\
+    \x0bDNPHCJEBIKB\x12.\n\x0bLPIHANIOJFI\x18\x06\x20\x03(\x0b2\x0c.GEOAEOFJ\
+    OGCR\x0bLPIHANIOJFI\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcodeb\
     \x06proto3\
 ";
 

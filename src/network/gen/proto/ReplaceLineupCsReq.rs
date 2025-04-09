@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ReplaceLineupCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ReplaceLineupCsReq.BGBICMHKOMF)
-    pub BGBICMHKOMF: ::std::vec::Vec<super::GAKCPBNCMPE::GAKCPBNCMPE>,
-    // @@protoc_insertion_point(field:ReplaceLineupCsReq.EMDHEKKOCMD)
-    pub EMDHEKKOCMD: u32,
-    // @@protoc_insertion_point(field:ReplaceLineupCsReq.PDONLOOBBCI)
-    pub PDONLOOBBCI: u32,
-    // @@protoc_insertion_point(field:ReplaceLineupCsReq.HCDNLLHBBOK)
-    pub HCDNLLHBBOK: bool,
-    // @@protoc_insertion_point(field:ReplaceLineupCsReq.EGMAFIOOKJJ)
-    pub EGMAFIOOKJJ: u32,
     // @@protoc_insertion_point(field:ReplaceLineupCsReq.NJDMFPFKKIH)
     pub NJDMFPFKKIH: ::protobuf::EnumOrUnknown<super::ExtraLineupType::ExtraLineupType>,
     // @@protoc_insertion_point(field:ReplaceLineupCsReq.OCAFJKKEPOF)
     pub OCAFJKKEPOF: u32,
+    // @@protoc_insertion_point(field:ReplaceLineupCsReq.EGMAFIOOKJJ)
+    pub EGMAFIOOKJJ: u32,
+    // @@protoc_insertion_point(field:ReplaceLineupCsReq.BGBICMHKOMF)
+    pub BGBICMHKOMF: ::std::vec::Vec<super::GAKCPBNCMPE::GAKCPBNCMPE>,
+    // @@protoc_insertion_point(field:ReplaceLineupCsReq.PDONLOOBBCI)
+    pub PDONLOOBBCI: u32,
+    // @@protoc_insertion_point(field:ReplaceLineupCsReq.HCDNLLHBBOK)
+    pub HCDNLLHBBOK: bool,
+    // @@protoc_insertion_point(field:ReplaceLineupCsReq.EMDHEKKOCMD)
+    pub EMDHEKKOCMD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ReplaceLineupCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,15 +61,25 @@ impl ReplaceLineupCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NJDMFPFKKIH",
+            |m: &ReplaceLineupCsReq| { &m.NJDMFPFKKIH },
+            |m: &mut ReplaceLineupCsReq| { &mut m.NJDMFPFKKIH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OCAFJKKEPOF",
+            |m: &ReplaceLineupCsReq| { &m.OCAFJKKEPOF },
+            |m: &mut ReplaceLineupCsReq| { &mut m.OCAFJKKEPOF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EGMAFIOOKJJ",
+            |m: &ReplaceLineupCsReq| { &m.EGMAFIOOKJJ },
+            |m: &mut ReplaceLineupCsReq| { &mut m.EGMAFIOOKJJ },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "BGBICMHKOMF",
             |m: &ReplaceLineupCsReq| { &m.BGBICMHKOMF },
             |m: &mut ReplaceLineupCsReq| { &mut m.BGBICMHKOMF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EMDHEKKOCMD",
-            |m: &ReplaceLineupCsReq| { &m.EMDHEKKOCMD },
-            |m: &mut ReplaceLineupCsReq| { &mut m.EMDHEKKOCMD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PDONLOOBBCI",
@@ -82,19 +92,9 @@ impl ReplaceLineupCsReq {
             |m: &mut ReplaceLineupCsReq| { &mut m.HCDNLLHBBOK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EGMAFIOOKJJ",
-            |m: &ReplaceLineupCsReq| { &m.EGMAFIOOKJJ },
-            |m: &mut ReplaceLineupCsReq| { &mut m.EGMAFIOOKJJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NJDMFPFKKIH",
-            |m: &ReplaceLineupCsReq| { &m.NJDMFPFKKIH },
-            |m: &mut ReplaceLineupCsReq| { &mut m.NJDMFPFKKIH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OCAFJKKEPOF",
-            |m: &ReplaceLineupCsReq| { &m.OCAFJKKEPOF },
-            |m: &mut ReplaceLineupCsReq| { &mut m.OCAFJKKEPOF },
+            "EMDHEKKOCMD",
+            |m: &ReplaceLineupCsReq| { &m.EMDHEKKOCMD },
+            |m: &mut ReplaceLineupCsReq| { &mut m.EMDHEKKOCMD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ReplaceLineupCsReq>(
             "ReplaceLineupCsReq",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for ReplaceLineupCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                24 => {
+                    self.NJDMFPFKKIH = is.read_enum_or_unknown()?;
+                },
+                64 => {
+                    self.OCAFJKKEPOF = is.read_uint32()?;
+                },
+                32 => {
+                    self.EGMAFIOOKJJ = is.read_uint32()?;
+                },
                 98 => {
                     self.BGBICMHKOMF.push(is.read_message()?);
                 },
-                40 => {
-                    self.EMDHEKKOCMD = is.read_uint32()?;
-                },
-                72 => {
+                88 => {
                     self.PDONLOOBBCI = is.read_uint32()?;
                 },
-                88 => {
+                72 => {
                     self.HCDNLLHBBOK = is.read_bool()?;
                 },
-                64 => {
-                    self.EGMAFIOOKJJ = is.read_uint32()?;
-                },
-                8 => {
-                    self.NJDMFPFKKIH = is.read_enum_or_unknown()?;
-                },
-                16 => {
-                    self.OCAFJKKEPOF = is.read_uint32()?;
+                40 => {
+                    self.EMDHEKKOCMD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,27 +147,27 @@ impl ::protobuf::Message for ReplaceLineupCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.NJDMFPFKKIH != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
+            my_size += ::protobuf::rt::int32_size(3, self.NJDMFPFKKIH.value());
+        }
+        if self.OCAFJKKEPOF != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.OCAFJKKEPOF);
+        }
+        if self.EGMAFIOOKJJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.EGMAFIOOKJJ);
+        }
         for value in &self.BGBICMHKOMF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.EMDHEKKOCMD != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.EMDHEKKOCMD);
-        }
         if self.PDONLOOBBCI != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.PDONLOOBBCI);
+            my_size += ::protobuf::rt::uint32_size(11, self.PDONLOOBBCI);
         }
         if self.HCDNLLHBBOK != false {
             my_size += 1 + 1;
         }
-        if self.EGMAFIOOKJJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.EGMAFIOOKJJ);
-        }
-        if self.NJDMFPFKKIH != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            my_size += ::protobuf::rt::int32_size(1, self.NJDMFPFKKIH.value());
-        }
-        if self.OCAFJKKEPOF != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.OCAFJKKEPOF);
+        if self.EMDHEKKOCMD != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.EMDHEKKOCMD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -175,26 +175,26 @@ impl ::protobuf::Message for ReplaceLineupCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.NJDMFPFKKIH != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.NJDMFPFKKIH))?;
+        }
+        if self.OCAFJKKEPOF != 0 {
+            os.write_uint32(8, self.OCAFJKKEPOF)?;
+        }
+        if self.EGMAFIOOKJJ != 0 {
+            os.write_uint32(4, self.EGMAFIOOKJJ)?;
+        }
         for v in &self.BGBICMHKOMF {
             ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
-        if self.EMDHEKKOCMD != 0 {
-            os.write_uint32(5, self.EMDHEKKOCMD)?;
-        }
         if self.PDONLOOBBCI != 0 {
-            os.write_uint32(9, self.PDONLOOBBCI)?;
+            os.write_uint32(11, self.PDONLOOBBCI)?;
         }
         if self.HCDNLLHBBOK != false {
-            os.write_bool(11, self.HCDNLLHBBOK)?;
+            os.write_bool(9, self.HCDNLLHBBOK)?;
         }
-        if self.EGMAFIOOKJJ != 0 {
-            os.write_uint32(8, self.EGMAFIOOKJJ)?;
-        }
-        if self.NJDMFPFKKIH != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.NJDMFPFKKIH))?;
-        }
-        if self.OCAFJKKEPOF != 0 {
-            os.write_uint32(2, self.OCAFJKKEPOF)?;
+        if self.EMDHEKKOCMD != 0 {
+            os.write_uint32(5, self.EMDHEKKOCMD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -213,25 +213,25 @@ impl ::protobuf::Message for ReplaceLineupCsReq {
     }
 
     fn clear(&mut self) {
-        self.BGBICMHKOMF.clear();
-        self.EMDHEKKOCMD = 0;
-        self.PDONLOOBBCI = 0;
-        self.HCDNLLHBBOK = false;
-        self.EGMAFIOOKJJ = 0;
         self.NJDMFPFKKIH = ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE);
         self.OCAFJKKEPOF = 0;
+        self.EGMAFIOOKJJ = 0;
+        self.BGBICMHKOMF.clear();
+        self.PDONLOOBBCI = 0;
+        self.HCDNLLHBBOK = false;
+        self.EMDHEKKOCMD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ReplaceLineupCsReq {
         static instance: ReplaceLineupCsReq = ReplaceLineupCsReq {
-            BGBICMHKOMF: ::std::vec::Vec::new(),
-            EMDHEKKOCMD: 0,
-            PDONLOOBBCI: 0,
-            HCDNLLHBBOK: false,
-            EGMAFIOOKJJ: 0,
             NJDMFPFKKIH: ::protobuf::EnumOrUnknown::from_i32(0),
             OCAFJKKEPOF: 0,
+            EGMAFIOOKJJ: 0,
+            BGBICMHKOMF: ::std::vec::Vec::new(),
+            PDONLOOBBCI: 0,
+            HCDNLLHBBOK: false,
+            EMDHEKKOCMD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -257,14 +257,14 @@ impl ::protobuf::reflect::ProtobufValue for ReplaceLineupCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18ReplaceLineupCsReq.proto\x1a\x15ExtraLineupType.proto\x1a\x11GAKCP\
-    BNCMPE.proto\"\xa2\x02\n\x12ReplaceLineupCsReq\x12.\n\x0bBGBICMHKOMF\x18\
-    \x0c\x20\x03(\x0b2\x0c.GAKCPBNCMPER\x0bBGBICMHKOMF\x12\x20\n\x0bEMDHEKKO\
-    CMD\x18\x05\x20\x01(\rR\x0bEMDHEKKOCMD\x12\x20\n\x0bPDONLOOBBCI\x18\t\
-    \x20\x01(\rR\x0bPDONLOOBBCI\x12\x20\n\x0bHCDNLLHBBOK\x18\x0b\x20\x01(\
-    \x08R\x0bHCDNLLHBBOK\x12\x20\n\x0bEGMAFIOOKJJ\x18\x08\x20\x01(\rR\x0bEGM\
-    AFIOOKJJ\x122\n\x0bNJDMFPFKKIH\x18\x01\x20\x01(\x0e2\x10.ExtraLineupType\
-    R\x0bNJDMFPFKKIH\x12\x20\n\x0bOCAFJKKEPOF\x18\x02\x20\x01(\rR\x0bOCAFJKK\
-    EPOFb\x06proto3\
+    BNCMPE.proto\"\xa2\x02\n\x12ReplaceLineupCsReq\x122\n\x0bNJDMFPFKKIH\x18\
+    \x03\x20\x01(\x0e2\x10.ExtraLineupTypeR\x0bNJDMFPFKKIH\x12\x20\n\x0bOCAF\
+    JKKEPOF\x18\x08\x20\x01(\rR\x0bOCAFJKKEPOF\x12\x20\n\x0bEGMAFIOOKJJ\x18\
+    \x04\x20\x01(\rR\x0bEGMAFIOOKJJ\x12.\n\x0bBGBICMHKOMF\x18\x0c\x20\x03(\
+    \x0b2\x0c.GAKCPBNCMPER\x0bBGBICMHKOMF\x12\x20\n\x0bPDONLOOBBCI\x18\x0b\
+    \x20\x01(\rR\x0bPDONLOOBBCI\x12\x20\n\x0bHCDNLLHBBOK\x18\t\x20\x01(\x08R\
+    \x0bHCDNLLHBBOK\x12\x20\n\x0bEMDHEKKOCMD\x18\x05\x20\x01(\rR\x0bEMDHEKKO\
+    CMDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetAssistListCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                24 => {
                     self.AHOILNFIIEG = is.read_bool()?;
                 },
-                88 => {
+                16 => {
                     self.KIBOAGMOJCP = is.read_bool()?;
                 },
                 tag => {
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GetAssistListCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.AHOILNFIIEG != false {
-            os.write_bool(10, self.AHOILNFIIEG)?;
+            os.write_bool(3, self.AHOILNFIIEG)?;
         }
         if self.KIBOAGMOJCP != false {
-            os.write_bool(11, self.KIBOAGMOJCP)?;
+            os.write_bool(2, self.KIBOAGMOJCP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for GetAssistListCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18GetAssistListCsReq.proto\"X\n\x12GetAssistListCsReq\x12\x20\n\x0bA\
-    HOILNFIIEG\x18\n\x20\x01(\x08R\x0bAHOILNFIIEG\x12\x20\n\x0bKIBOAGMOJCP\
-    \x18\x0b\x20\x01(\x08R\x0bKIBOAGMOJCPb\x06proto3\
+    HOILNFIIEG\x18\x03\x20\x01(\x08R\x0bAHOILNFIIEG\x12\x20\n\x0bKIBOAGMOJCP\
+    \x18\x02\x20\x01(\x08R\x0bKIBOAGMOJCPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

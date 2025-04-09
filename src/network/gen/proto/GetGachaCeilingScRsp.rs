@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetGachaCeilingScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetGachaCeilingScRsp.IDDDLEKCICN)
-    pub IDDDLEKCICN: u32,
-    // @@protoc_insertion_point(field:GetGachaCeilingScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:GetGachaCeilingScRsp.MENLIBPOAJA)
     pub MENLIBPOAJA: ::protobuf::MessageField<super::INJNDJJFAKJ::INJNDJJFAKJ>,
+    // @@protoc_insertion_point(field:GetGachaCeilingScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetGachaCeilingScRsp.IDDDLEKCICN)
+    pub IDDDLEKCICN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetGachaCeilingScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl GetGachaCeilingScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IDDDLEKCICN",
-            |m: &GetGachaCeilingScRsp| { &m.IDDDLEKCICN },
-            |m: &mut GetGachaCeilingScRsp| { &mut m.IDDDLEKCICN },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::INJNDJJFAKJ::INJNDJJFAKJ>(
+            "MENLIBPOAJA",
+            |m: &GetGachaCeilingScRsp| { &m.MENLIBPOAJA },
+            |m: &mut GetGachaCeilingScRsp| { &mut m.MENLIBPOAJA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetGachaCeilingScRsp| { &m.retcode },
             |m: &mut GetGachaCeilingScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::INJNDJJFAKJ::INJNDJJFAKJ>(
-            "MENLIBPOAJA",
-            |m: &GetGachaCeilingScRsp| { &m.MENLIBPOAJA },
-            |m: &mut GetGachaCeilingScRsp| { &mut m.MENLIBPOAJA },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IDDDLEKCICN",
+            |m: &GetGachaCeilingScRsp| { &m.IDDDLEKCICN },
+            |m: &mut GetGachaCeilingScRsp| { &mut m.IDDDLEKCICN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetGachaCeilingScRsp>(
             "GetGachaCeilingScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GetGachaCeilingScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.IDDDLEKCICN = is.read_uint32()?;
-                },
-                80 => {
-                    self.retcode = is.read_uint32()?;
-                },
                 10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MENLIBPOAJA)?;
+                },
+                56 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                104 => {
+                    self.IDDDLEKCICN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for GetGachaCeilingScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IDDDLEKCICN != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.IDDDLEKCICN);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
-        }
         if let Some(v) = self.MENLIBPOAJA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        }
+        if self.IDDDLEKCICN != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.IDDDLEKCICN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for GetGachaCeilingScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IDDDLEKCICN != 0 {
-            os.write_uint32(9, self.IDDDLEKCICN)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
-        }
         if let Some(v) = self.MENLIBPOAJA.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(7, self.retcode)?;
+        }
+        if self.IDDDLEKCICN != 0 {
+            os.write_uint32(13, self.IDDDLEKCICN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for GetGachaCeilingScRsp {
     }
 
     fn clear(&mut self) {
-        self.IDDDLEKCICN = 0;
-        self.retcode = 0;
         self.MENLIBPOAJA.clear();
+        self.retcode = 0;
+        self.IDDDLEKCICN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetGachaCeilingScRsp {
         static instance: GetGachaCeilingScRsp = GetGachaCeilingScRsp {
-            IDDDLEKCICN: 0,
-            retcode: 0,
             MENLIBPOAJA: ::protobuf::MessageField::none(),
+            retcode: 0,
+            IDDDLEKCICN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for GetGachaCeilingScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aGetGachaCeilingScRsp.proto\x1a\x11INJNDJJFAKJ.proto\"\x82\x01\n\
-    \x14GetGachaCeilingScRsp\x12\x20\n\x0bIDDDLEKCICN\x18\t\x20\x01(\rR\x0bI\
-    DDDLEKCICN\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcode\x12.\n\x0bM\
-    ENLIBPOAJA\x18\x01\x20\x01(\x0b2\x0c.INJNDJJFAKJR\x0bMENLIBPOAJAb\x06pro\
-    to3\
+    \x14GetGachaCeilingScRsp\x12.\n\x0bMENLIBPOAJA\x18\x01\x20\x01(\x0b2\x0c\
+    .INJNDJJFAKJR\x0bMENLIBPOAJA\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\
+    \x07retcode\x12\x20\n\x0bIDDDLEKCICN\x18\r\x20\x01(\rR\x0bIDDDLEKCICNb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

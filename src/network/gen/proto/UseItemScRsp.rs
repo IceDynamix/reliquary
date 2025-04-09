@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UseItemScRsp {
     // message fields
-    // @@protoc_insertion_point(field:UseItemScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:UseItemScRsp.JGGJCLBIPEN)
-    pub JGGJCLBIPEN: u32,
-    // @@protoc_insertion_point(field:UseItemScRsp.NLBCBNCFAKI)
-    pub NLBCBNCFAKI: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:UseItemScRsp.EPCFJNOHJCL)
-    pub EPCFJNOHJCL: u64,
     // @@protoc_insertion_point(field:UseItemScRsp.ACMOKKGCFKH)
     pub ACMOKKGCFKH: u32,
+    // @@protoc_insertion_point(field:UseItemScRsp.NLBCBNCFAKI)
+    pub NLBCBNCFAKI: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:UseItemScRsp.JGGJCLBIPEN)
+    pub JGGJCLBIPEN: u32,
+    // @@protoc_insertion_point(field:UseItemScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:UseItemScRsp.EPCFJNOHJCL)
+    pub EPCFJNOHJCL: u64,
     // @@protoc_insertion_point(field:UseItemScRsp.GCJOBEOKMCP)
     pub GCJOBEOKMCP: u32,
     // special fields
@@ -60,14 +60,9 @@ impl UseItemScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &UseItemScRsp| { &m.retcode },
-            |m: &mut UseItemScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JGGJCLBIPEN",
-            |m: &UseItemScRsp| { &m.JGGJCLBIPEN },
-            |m: &mut UseItemScRsp| { &mut m.JGGJCLBIPEN },
+            "ACMOKKGCFKH",
+            |m: &UseItemScRsp| { &m.ACMOKKGCFKH },
+            |m: &mut UseItemScRsp| { &mut m.ACMOKKGCFKH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "NLBCBNCFAKI",
@@ -75,14 +70,19 @@ impl UseItemScRsp {
             |m: &mut UseItemScRsp| { &mut m.NLBCBNCFAKI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JGGJCLBIPEN",
+            |m: &UseItemScRsp| { &m.JGGJCLBIPEN },
+            |m: &mut UseItemScRsp| { &mut m.JGGJCLBIPEN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &UseItemScRsp| { &m.retcode },
+            |m: &mut UseItemScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EPCFJNOHJCL",
             |m: &UseItemScRsp| { &m.EPCFJNOHJCL },
             |m: &mut UseItemScRsp| { &mut m.EPCFJNOHJCL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ACMOKKGCFKH",
-            |m: &UseItemScRsp| { &m.ACMOKKGCFKH },
-            |m: &mut UseItemScRsp| { &mut m.ACMOKKGCFKH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GCJOBEOKMCP",
@@ -107,22 +107,22 @@ impl ::protobuf::Message for UseItemScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                120 => {
-                    self.JGGJCLBIPEN = is.read_uint32()?;
-                },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NLBCBNCFAKI)?;
-                },
-                48 => {
-                    self.EPCFJNOHJCL = is.read_uint64()?;
-                },
-                56 => {
+                80 => {
                     self.ACMOKKGCFKH = is.read_uint32()?;
                 },
-                96 => {
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NLBCBNCFAKI)?;
+                },
+                88 => {
+                    self.JGGJCLBIPEN = is.read_uint32()?;
+                },
+                32 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                64 => {
+                    self.EPCFJNOHJCL = is.read_uint64()?;
+                },
+                104 => {
                     self.GCJOBEOKMCP = is.read_uint32()?;
                 },
                 tag => {
@@ -137,24 +137,24 @@ impl ::protobuf::Message for UseItemScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
-        }
-        if self.JGGJCLBIPEN != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.JGGJCLBIPEN);
+        if self.ACMOKKGCFKH != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.ACMOKKGCFKH);
         }
         if let Some(v) = self.NLBCBNCFAKI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.EPCFJNOHJCL != 0 {
-            my_size += ::protobuf::rt::uint64_size(6, self.EPCFJNOHJCL);
+        if self.JGGJCLBIPEN != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.JGGJCLBIPEN);
         }
-        if self.ACMOKKGCFKH != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.ACMOKKGCFKH);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+        }
+        if self.EPCFJNOHJCL != 0 {
+            my_size += ::protobuf::rt::uint64_size(8, self.EPCFJNOHJCL);
         }
         if self.GCJOBEOKMCP != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.GCJOBEOKMCP);
+            my_size += ::protobuf::rt::uint32_size(13, self.GCJOBEOKMCP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,23 +162,23 @@ impl ::protobuf::Message for UseItemScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
-        }
-        if self.JGGJCLBIPEN != 0 {
-            os.write_uint32(15, self.JGGJCLBIPEN)?;
+        if self.ACMOKKGCFKH != 0 {
+            os.write_uint32(10, self.ACMOKKGCFKH)?;
         }
         if let Some(v) = self.NLBCBNCFAKI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        }
+        if self.JGGJCLBIPEN != 0 {
+            os.write_uint32(11, self.JGGJCLBIPEN)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(4, self.retcode)?;
         }
         if self.EPCFJNOHJCL != 0 {
-            os.write_uint64(6, self.EPCFJNOHJCL)?;
-        }
-        if self.ACMOKKGCFKH != 0 {
-            os.write_uint32(7, self.ACMOKKGCFKH)?;
+            os.write_uint64(8, self.EPCFJNOHJCL)?;
         }
         if self.GCJOBEOKMCP != 0 {
-            os.write_uint32(12, self.GCJOBEOKMCP)?;
+            os.write_uint32(13, self.GCJOBEOKMCP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,22 +197,22 @@ impl ::protobuf::Message for UseItemScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.JGGJCLBIPEN = 0;
-        self.NLBCBNCFAKI.clear();
-        self.EPCFJNOHJCL = 0;
         self.ACMOKKGCFKH = 0;
+        self.NLBCBNCFAKI.clear();
+        self.JGGJCLBIPEN = 0;
+        self.retcode = 0;
+        self.EPCFJNOHJCL = 0;
         self.GCJOBEOKMCP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UseItemScRsp {
         static instance: UseItemScRsp = UseItemScRsp {
-            retcode: 0,
-            JGGJCLBIPEN: 0,
-            NLBCBNCFAKI: ::protobuf::MessageField::none(),
-            EPCFJNOHJCL: 0,
             ACMOKKGCFKH: 0,
+            NLBCBNCFAKI: ::protobuf::MessageField::none(),
+            JGGJCLBIPEN: 0,
+            retcode: 0,
+            EPCFJNOHJCL: 0,
             GCJOBEOKMCP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -239,12 +239,12 @@ impl ::protobuf::reflect::ProtobufValue for UseItemScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12UseItemScRsp.proto\x1a\x0eItemList.proto\"\xdd\x01\n\x0cUseItemScR\
-    sp\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12\x20\n\x0bJGGJ\
-    CLBIPEN\x18\x0f\x20\x01(\rR\x0bJGGJCLBIPEN\x12+\n\x0bNLBCBNCFAKI\x18\n\
-    \x20\x01(\x0b2\t.ItemListR\x0bNLBCBNCFAKI\x12\x20\n\x0bEPCFJNOHJCL\x18\
-    \x06\x20\x01(\x04R\x0bEPCFJNOHJCL\x12\x20\n\x0bACMOKKGCFKH\x18\x07\x20\
-    \x01(\rR\x0bACMOKKGCFKH\x12\x20\n\x0bGCJOBEOKMCP\x18\x0c\x20\x01(\rR\x0b\
-    GCJOBEOKMCPb\x06proto3\
+    sp\x12\x20\n\x0bACMOKKGCFKH\x18\n\x20\x01(\rR\x0bACMOKKGCFKH\x12+\n\x0bN\
+    LBCBNCFAKI\x18\x06\x20\x01(\x0b2\t.ItemListR\x0bNLBCBNCFAKI\x12\x20\n\
+    \x0bJGGJCLBIPEN\x18\x0b\x20\x01(\rR\x0bJGGJCLBIPEN\x12\x18\n\x07retcode\
+    \x18\x04\x20\x01(\rR\x07retcode\x12\x20\n\x0bEPCFJNOHJCL\x18\x08\x20\x01\
+    (\x04R\x0bEPCFJNOHJCL\x12\x20\n\x0bGCJOBEOKMCP\x18\r\x20\x01(\rR\x0bGCJO\
+    BEOKMCPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

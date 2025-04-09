@@ -30,10 +30,10 @@ pub struct ChessRogueNousEnableRogueTalentScRsp {
     // message fields
     // @@protoc_insertion_point(field:ChessRogueNousEnableRogueTalentScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:ChessRogueNousEnableRogueTalentScRsp.CKMAHDGIBOH)
-    pub CKMAHDGIBOH: ::protobuf::MessageField<super::IMJMGEENCEH::IMJMGEENCEH>,
     // @@protoc_insertion_point(field:ChessRogueNousEnableRogueTalentScRsp.POFMJBLMBJI)
     pub POFMJBLMBJI: u32,
+    // @@protoc_insertion_point(field:ChessRogueNousEnableRogueTalentScRsp.CKMAHDGIBOH)
+    pub CKMAHDGIBOH: ::protobuf::MessageField<super::IMJMGEENCEH::IMJMGEENCEH>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueNousEnableRogueTalentScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl ChessRogueNousEnableRogueTalentScRsp {
             |m: &ChessRogueNousEnableRogueTalentScRsp| { &m.retcode },
             |m: &mut ChessRogueNousEnableRogueTalentScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IMJMGEENCEH::IMJMGEENCEH>(
-            "CKMAHDGIBOH",
-            |m: &ChessRogueNousEnableRogueTalentScRsp| { &m.CKMAHDGIBOH },
-            |m: &mut ChessRogueNousEnableRogueTalentScRsp| { &mut m.CKMAHDGIBOH },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "POFMJBLMBJI",
             |m: &ChessRogueNousEnableRogueTalentScRsp| { &m.POFMJBLMBJI },
             |m: &mut ChessRogueNousEnableRogueTalentScRsp| { &mut m.POFMJBLMBJI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IMJMGEENCEH::IMJMGEENCEH>(
+            "CKMAHDGIBOH",
+            |m: &ChessRogueNousEnableRogueTalentScRsp| { &m.CKMAHDGIBOH },
+            |m: &mut ChessRogueNousEnableRogueTalentScRsp| { &mut m.CKMAHDGIBOH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueNousEnableRogueTalentScRsp>(
             "ChessRogueNousEnableRogueTalentScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for ChessRogueNousEnableRogueTalentScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CKMAHDGIBOH)?;
-                },
-                8 => {
+                112 => {
                     self.POFMJBLMBJI = is.read_uint32()?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CKMAHDGIBOH)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for ChessRogueNousEnableRogueTalentScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+        }
+        if self.POFMJBLMBJI != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.POFMJBLMBJI);
         }
         if let Some(v) = self.CKMAHDGIBOH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.POFMJBLMBJI != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.POFMJBLMBJI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for ChessRogueNousEnableRogueTalentScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
-        }
-        if let Some(v) = self.CKMAHDGIBOH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            os.write_uint32(2, self.retcode)?;
         }
         if self.POFMJBLMBJI != 0 {
-            os.write_uint32(1, self.POFMJBLMBJI)?;
+            os.write_uint32(14, self.POFMJBLMBJI)?;
+        }
+        if let Some(v) = self.CKMAHDGIBOH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for ChessRogueNousEnableRogueTalentScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.CKMAHDGIBOH.clear();
         self.POFMJBLMBJI = 0;
+        self.CKMAHDGIBOH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueNousEnableRogueTalentScRsp {
         static instance: ChessRogueNousEnableRogueTalentScRsp = ChessRogueNousEnableRogueTalentScRsp {
             retcode: 0,
-            CKMAHDGIBOH: ::protobuf::MessageField::none(),
             POFMJBLMBJI: 0,
+            CKMAHDGIBOH: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,9 +186,9 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueNousEnableRogueTalentScRsp
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n*ChessRogueNousEnableRogueTalentScRsp.proto\x1a\x11IMJMGEENCEH.proto\"\
     \x92\x01\n$ChessRogueNousEnableRogueTalentScRsp\x12\x18\n\x07retcode\x18\
-    \r\x20\x01(\rR\x07retcode\x12.\n\x0bCKMAHDGIBOH\x18\x0c\x20\x01(\x0b2\
-    \x0c.IMJMGEENCEHR\x0bCKMAHDGIBOH\x12\x20\n\x0bPOFMJBLMBJI\x18\x01\x20\
-    \x01(\rR\x0bPOFMJBLMBJIb\x06proto3\
+    \x02\x20\x01(\rR\x07retcode\x12\x20\n\x0bPOFMJBLMBJI\x18\x0e\x20\x01(\rR\
+    \x0bPOFMJBLMBJI\x12.\n\x0bCKMAHDGIBOH\x18\x0f\x20\x01(\x0b2\x0c.IMJMGEEN\
+    CEHR\x0bCKMAHDGIBOHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

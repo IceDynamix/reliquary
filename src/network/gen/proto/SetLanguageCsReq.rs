@@ -72,7 +72,7 @@ impl ::protobuf::Message for SetLanguageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                8 => {
                     self.FADPDIBKNBI = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for SetLanguageCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.FADPDIBKNBI != ::protobuf::EnumOrUnknown::new(super::HMPKDADOODB::HMPKDADOODB::LANGUAGE_NONE) {
-            my_size += ::protobuf::rt::int32_size(3, self.FADPDIBKNBI.value());
+            my_size += ::protobuf::rt::int32_size(1, self.FADPDIBKNBI.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for SetLanguageCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.FADPDIBKNBI != ::protobuf::EnumOrUnknown::new(super::HMPKDADOODB::HMPKDADOODB::LANGUAGE_NONE) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.FADPDIBKNBI))?;
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.FADPDIBKNBI))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for SetLanguageCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16SetLanguageCsReq.proto\x1a\x11HMPKDADOODB.proto\"B\n\x10SetLanguag\
-    eCsReq\x12.\n\x0bFADPDIBKNBI\x18\x03\x20\x01(\x0e2\x0c.HMPKDADOODBR\x0bF\
+    eCsReq\x12.\n\x0bFADPDIBKNBI\x18\x01\x20\x01(\x0e2\x0c.HMPKDADOODBR\x0bF\
     ADPDIBKNBIb\x06proto3\
 ";
 

@@ -28,18 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AAPNHPAMDCK {
     // message fields
-    // @@protoc_insertion_point(field:AAPNHPAMDCK.MPAMHBFIKFB)
-    pub MPAMHBFIKFB: ::std::string::String,
+    // @@protoc_insertion_point(field:AAPNHPAMDCK.DNAJFMPCMLL)
+    pub DNAJFMPCMLL: ::protobuf::EnumOrUnknown<super::ProductGiftType::ProductGiftType>,
+    // @@protoc_insertion_point(field:AAPNHPAMDCK.FKFOKHABEJN)
+    pub FKFOKHABEJN: bool,
+    // @@protoc_insertion_point(field:AAPNHPAMDCK.end_time)
+    pub end_time: i64,
+    // @@protoc_insertion_point(field:AAPNHPAMDCK.GCBOBAMCALK)
+    pub GCBOBAMCALK: u32,
+    // @@protoc_insertion_point(field:AAPNHPAMDCK.begin_time)
+    pub begin_time: i64,
     // @@protoc_insertion_point(field:AAPNHPAMDCK.DBELLIHMAJG)
     pub DBELLIHMAJG: ::std::string::String,
     // @@protoc_insertion_point(field:AAPNHPAMDCK.IOGLPEBJMDB)
     pub IOGLPEBJMDB: u32,
-    // @@protoc_insertion_point(field:AAPNHPAMDCK.FKFOKHABEJN)
-    pub FKFOKHABEJN: bool,
-    // @@protoc_insertion_point(field:AAPNHPAMDCK.GCBOBAMCALK)
-    pub GCBOBAMCALK: u32,
-    // @@protoc_insertion_point(field:AAPNHPAMDCK.DNAJFMPCMLL)
-    pub DNAJFMPCMLL: ::protobuf::EnumOrUnknown<super::ProductGiftType::ProductGiftType>,
+    // @@protoc_insertion_point(field:AAPNHPAMDCK.MPAMHBFIKFB)
+    pub MPAMHBFIKFB: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:AAPNHPAMDCK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,12 +61,32 @@ impl AAPNHPAMDCK {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(6);
+        let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MPAMHBFIKFB",
-            |m: &AAPNHPAMDCK| { &m.MPAMHBFIKFB },
-            |m: &mut AAPNHPAMDCK| { &mut m.MPAMHBFIKFB },
+            "DNAJFMPCMLL",
+            |m: &AAPNHPAMDCK| { &m.DNAJFMPCMLL },
+            |m: &mut AAPNHPAMDCK| { &mut m.DNAJFMPCMLL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FKFOKHABEJN",
+            |m: &AAPNHPAMDCK| { &m.FKFOKHABEJN },
+            |m: &mut AAPNHPAMDCK| { &mut m.FKFOKHABEJN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "end_time",
+            |m: &AAPNHPAMDCK| { &m.end_time },
+            |m: &mut AAPNHPAMDCK| { &mut m.end_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GCBOBAMCALK",
+            |m: &AAPNHPAMDCK| { &m.GCBOBAMCALK },
+            |m: &mut AAPNHPAMDCK| { &mut m.GCBOBAMCALK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "begin_time",
+            |m: &AAPNHPAMDCK| { &m.begin_time },
+            |m: &mut AAPNHPAMDCK| { &mut m.begin_time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DBELLIHMAJG",
@@ -75,19 +99,9 @@ impl AAPNHPAMDCK {
             |m: &mut AAPNHPAMDCK| { &mut m.IOGLPEBJMDB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FKFOKHABEJN",
-            |m: &AAPNHPAMDCK| { &m.FKFOKHABEJN },
-            |m: &mut AAPNHPAMDCK| { &mut m.FKFOKHABEJN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GCBOBAMCALK",
-            |m: &AAPNHPAMDCK| { &m.GCBOBAMCALK },
-            |m: &mut AAPNHPAMDCK| { &mut m.GCBOBAMCALK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DNAJFMPCMLL",
-            |m: &AAPNHPAMDCK| { &m.DNAJFMPCMLL },
-            |m: &mut AAPNHPAMDCK| { &mut m.DNAJFMPCMLL },
+            "MPAMHBFIKFB",
+            |m: &AAPNHPAMDCK| { &m.MPAMHBFIKFB },
+            |m: &mut AAPNHPAMDCK| { &mut m.MPAMHBFIKFB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AAPNHPAMDCK>(
             "AAPNHPAMDCK",
@@ -107,23 +121,29 @@ impl ::protobuf::Message for AAPNHPAMDCK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    self.MPAMHBFIKFB = is.read_string()?;
+                32 => {
+                    self.DNAJFMPCMLL = is.read_enum_or_unknown()?;
                 },
-                74 => {
-                    self.DBELLIHMAJG = is.read_string()?;
-                },
-                16 => {
-                    self.IOGLPEBJMDB = is.read_uint32()?;
-                },
-                40 => {
+                80 => {
                     self.FKFOKHABEJN = is.read_bool()?;
                 },
-                88 => {
+                56 => {
+                    self.end_time = is.read_int64()?;
+                },
+                40 => {
                     self.GCBOBAMCALK = is.read_uint32()?;
                 },
-                64 => {
-                    self.DNAJFMPCMLL = is.read_enum_or_unknown()?;
+                120 => {
+                    self.begin_time = is.read_int64()?;
+                },
+                90 => {
+                    self.DBELLIHMAJG = is.read_string()?;
+                },
+                8 => {
+                    self.IOGLPEBJMDB = is.read_uint32()?;
+                },
+                98 => {
+                    self.MPAMHBFIKFB = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,23 +157,29 @@ impl ::protobuf::Message for AAPNHPAMDCK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.MPAMHBFIKFB.is_empty() {
-            my_size += ::protobuf::rt::string_size(15, &self.MPAMHBFIKFB);
-        }
-        if !self.DBELLIHMAJG.is_empty() {
-            my_size += ::protobuf::rt::string_size(9, &self.DBELLIHMAJG);
-        }
-        if self.IOGLPEBJMDB != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.IOGLPEBJMDB);
+        if self.DNAJFMPCMLL != ::protobuf::EnumOrUnknown::new(super::ProductGiftType::ProductGiftType::PRODUCT_GIFT_NONE) {
+            my_size += ::protobuf::rt::int32_size(4, self.DNAJFMPCMLL.value());
         }
         if self.FKFOKHABEJN != false {
             my_size += 1 + 1;
         }
-        if self.GCBOBAMCALK != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.GCBOBAMCALK);
+        if self.end_time != 0 {
+            my_size += ::protobuf::rt::int64_size(7, self.end_time);
         }
-        if self.DNAJFMPCMLL != ::protobuf::EnumOrUnknown::new(super::ProductGiftType::ProductGiftType::PRODUCT_GIFT_NONE) {
-            my_size += ::protobuf::rt::int32_size(8, self.DNAJFMPCMLL.value());
+        if self.GCBOBAMCALK != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.GCBOBAMCALK);
+        }
+        if self.begin_time != 0 {
+            my_size += ::protobuf::rt::int64_size(15, self.begin_time);
+        }
+        if !self.DBELLIHMAJG.is_empty() {
+            my_size += ::protobuf::rt::string_size(11, &self.DBELLIHMAJG);
+        }
+        if self.IOGLPEBJMDB != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.IOGLPEBJMDB);
+        }
+        if !self.MPAMHBFIKFB.is_empty() {
+            my_size += ::protobuf::rt::string_size(12, &self.MPAMHBFIKFB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -161,23 +187,29 @@ impl ::protobuf::Message for AAPNHPAMDCK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.MPAMHBFIKFB.is_empty() {
-            os.write_string(15, &self.MPAMHBFIKFB)?;
-        }
-        if !self.DBELLIHMAJG.is_empty() {
-            os.write_string(9, &self.DBELLIHMAJG)?;
-        }
-        if self.IOGLPEBJMDB != 0 {
-            os.write_uint32(2, self.IOGLPEBJMDB)?;
+        if self.DNAJFMPCMLL != ::protobuf::EnumOrUnknown::new(super::ProductGiftType::ProductGiftType::PRODUCT_GIFT_NONE) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.DNAJFMPCMLL))?;
         }
         if self.FKFOKHABEJN != false {
-            os.write_bool(5, self.FKFOKHABEJN)?;
+            os.write_bool(10, self.FKFOKHABEJN)?;
+        }
+        if self.end_time != 0 {
+            os.write_int64(7, self.end_time)?;
         }
         if self.GCBOBAMCALK != 0 {
-            os.write_uint32(11, self.GCBOBAMCALK)?;
+            os.write_uint32(5, self.GCBOBAMCALK)?;
         }
-        if self.DNAJFMPCMLL != ::protobuf::EnumOrUnknown::new(super::ProductGiftType::ProductGiftType::PRODUCT_GIFT_NONE) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.DNAJFMPCMLL))?;
+        if self.begin_time != 0 {
+            os.write_int64(15, self.begin_time)?;
+        }
+        if !self.DBELLIHMAJG.is_empty() {
+            os.write_string(11, &self.DBELLIHMAJG)?;
+        }
+        if self.IOGLPEBJMDB != 0 {
+            os.write_uint32(1, self.IOGLPEBJMDB)?;
+        }
+        if !self.MPAMHBFIKFB.is_empty() {
+            os.write_string(12, &self.MPAMHBFIKFB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -196,23 +228,27 @@ impl ::protobuf::Message for AAPNHPAMDCK {
     }
 
     fn clear(&mut self) {
-        self.MPAMHBFIKFB.clear();
+        self.DNAJFMPCMLL = ::protobuf::EnumOrUnknown::new(super::ProductGiftType::ProductGiftType::PRODUCT_GIFT_NONE);
+        self.FKFOKHABEJN = false;
+        self.end_time = 0;
+        self.GCBOBAMCALK = 0;
+        self.begin_time = 0;
         self.DBELLIHMAJG.clear();
         self.IOGLPEBJMDB = 0;
-        self.FKFOKHABEJN = false;
-        self.GCBOBAMCALK = 0;
-        self.DNAJFMPCMLL = ::protobuf::EnumOrUnknown::new(super::ProductGiftType::ProductGiftType::PRODUCT_GIFT_NONE);
+        self.MPAMHBFIKFB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AAPNHPAMDCK {
         static instance: AAPNHPAMDCK = AAPNHPAMDCK {
-            MPAMHBFIKFB: ::std::string::String::new(),
+            DNAJFMPCMLL: ::protobuf::EnumOrUnknown::from_i32(0),
+            FKFOKHABEJN: false,
+            end_time: 0,
+            GCBOBAMCALK: 0,
+            begin_time: 0,
             DBELLIHMAJG: ::std::string::String::new(),
             IOGLPEBJMDB: 0,
-            FKFOKHABEJN: false,
-            GCBOBAMCALK: 0,
-            DNAJFMPCMLL: ::protobuf::EnumOrUnknown::from_i32(0),
+            MPAMHBFIKFB: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -237,13 +273,15 @@ impl ::protobuf::reflect::ProtobufValue for AAPNHPAMDCK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AAPNHPAMDCK.proto\x1a\x15ProductGiftType.proto\"\xeb\x01\n\x0bAAPN\
-    HPAMDCK\x12\x20\n\x0bMPAMHBFIKFB\x18\x0f\x20\x01(\tR\x0bMPAMHBFIKFB\x12\
-    \x20\n\x0bDBELLIHMAJG\x18\t\x20\x01(\tR\x0bDBELLIHMAJG\x12\x20\n\x0bIOGL\
-    PEBJMDB\x18\x02\x20\x01(\rR\x0bIOGLPEBJMDB\x12\x20\n\x0bFKFOKHABEJN\x18\
-    \x05\x20\x01(\x08R\x0bFKFOKHABEJN\x12\x20\n\x0bGCBOBAMCALK\x18\x0b\x20\
-    \x01(\rR\x0bGCBOBAMCALK\x122\n\x0bDNAJFMPCMLL\x18\x08\x20\x01(\x0e2\x10.\
-    ProductGiftTypeR\x0bDNAJFMPCMLLb\x06proto3\
+    \n\x11AAPNHPAMDCK.proto\x1a\x15ProductGiftType.proto\"\xa5\x02\n\x0bAAPN\
+    HPAMDCK\x122\n\x0bDNAJFMPCMLL\x18\x04\x20\x01(\x0e2\x10.ProductGiftTypeR\
+    \x0bDNAJFMPCMLL\x12\x20\n\x0bFKFOKHABEJN\x18\n\x20\x01(\x08R\x0bFKFOKHAB\
+    EJN\x12\x19\n\x08end_time\x18\x07\x20\x01(\x03R\x07endTime\x12\x20\n\x0b\
+    GCBOBAMCALK\x18\x05\x20\x01(\rR\x0bGCBOBAMCALK\x12\x1d\n\nbegin_time\x18\
+    \x0f\x20\x01(\x03R\tbeginTime\x12\x20\n\x0bDBELLIHMAJG\x18\x0b\x20\x01(\
+    \tR\x0bDBELLIHMAJG\x12\x20\n\x0bIOGLPEBJMDB\x18\x01\x20\x01(\rR\x0bIOGLP\
+    EBJMDB\x12\x20\n\x0bMPAMHBFIKFB\x18\x0c\x20\x01(\tR\x0bMPAMHBFIKFBb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

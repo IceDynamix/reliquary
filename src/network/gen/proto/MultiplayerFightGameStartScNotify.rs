@@ -79,10 +79,10 @@ impl ::protobuf::Message for MultiplayerFightGameStartScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                18 => {
                     self.LIPJDJPMOKB.push(is.read_message()?);
                 },
-                34 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.PFFFJNGNPOM)?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for MultiplayerFightGameStartScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.LIPJDJPMOKB {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         if let Some(v) = self.PFFFJNGNPOM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,9 +169,9 @@ impl ::protobuf::reflect::ProtobufValue for MultiplayerFightGameStartScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'MultiplayerFightGameStartScNotify.proto\x1a\x11CBBDIOMIFHD.proto\x1a\
     \x11PPGGKMDAOEA.proto\"\x83\x01\n!MultiplayerFightGameStartScNotify\x12.\
-    \n\x0bLIPJDJPMOKB\x18\x01\x20\x03(\x0b2\x0c.CBBDIOMIFHDR\x0bLIPJDJPMOKB\
-    \x12.\n\x0bPFFFJNGNPOM\x18\x04\x20\x01(\x0b2\x0c.PPGGKMDAOEAR\x0bPFFFJNG\
-    NPOMb\x06proto3\
+    \n\x0bLIPJDJPMOKB\x18\x02\x20\x03(\x0b2\x0c.CBBDIOMIFHDR\x0bLIPJDJPMOKB\
+    \x12.\n\x0bPFFFJNGNPOM\x18\t\x20\x01(\x0b2\x0c.PPGGKMDAOEAR\x0bPFFFJNGNP\
+    OMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

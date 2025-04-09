@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BuyRogueShopMiracleScRsp {
     // message fields
-    // @@protoc_insertion_point(field:BuyRogueShopMiracleScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:BuyRogueShopMiracleScRsp.EEPPKMPAJOH)
     pub EEPPKMPAJOH: ::protobuf::MessageField<super::NNJOLKJLPJG::NNJOLKJLPJG>,
+    // @@protoc_insertion_point(field:BuyRogueShopMiracleScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BuyRogueShopMiracleScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl BuyRogueShopMiracleScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &BuyRogueShopMiracleScRsp| { &m.retcode },
-            |m: &mut BuyRogueShopMiracleScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NNJOLKJLPJG::NNJOLKJLPJG>(
             "EEPPKMPAJOH",
             |m: &BuyRogueShopMiracleScRsp| { &m.EEPPKMPAJOH },
             |m: &mut BuyRogueShopMiracleScRsp| { &mut m.EEPPKMPAJOH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &BuyRogueShopMiracleScRsp| { &m.retcode },
+            |m: &mut BuyRogueShopMiracleScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BuyRogueShopMiracleScRsp>(
             "BuyRogueShopMiracleScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for BuyRogueShopMiracleScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                26 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.EEPPKMPAJOH)?;
+                },
+                112 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for BuyRogueShopMiracleScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
-        }
         if let Some(v) = self.EEPPKMPAJOH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for BuyRogueShopMiracleScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
-        }
         if let Some(v) = self.EEPPKMPAJOH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for BuyRogueShopMiracleScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.EEPPKMPAJOH.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BuyRogueShopMiracleScRsp {
         static instance: BuyRogueShopMiracleScRsp = BuyRogueShopMiracleScRsp {
-            retcode: 0,
             EEPPKMPAJOH: ::protobuf::MessageField::none(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for BuyRogueShopMiracleScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eBuyRogueShopMiracleScRsp.proto\x1a\x11NNJOLKJLPJG.proto\"d\n\x18Bu\
-    yRogueShopMiracleScRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retco\
-    de\x12.\n\x0bEEPPKMPAJOH\x18\x03\x20\x01(\x0b2\x0c.NNJOLKJLPJGR\x0bEEPPK\
-    MPAJOHb\x06proto3\
+    yRogueShopMiracleScRsp\x12.\n\x0bEEPPKMPAJOH\x18\x0f\x20\x01(\x0b2\x0c.N\
+    NJOLKJLPJGR\x0bEEPPKMPAJOH\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07r\
+    etcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournGetPermanentTalentInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournGetPermanentTalentInfoScRsp.EHOBBJMEDEE)
-    pub EHOBBJMEDEE: ::protobuf::MessageField<super::BOICEKFMCIC::BOICEKFMCIC>,
     // @@protoc_insertion_point(field:RogueTournGetPermanentTalentInfoScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:RogueTournGetPermanentTalentInfoScRsp.EHOBBJMEDEE)
+    pub EHOBBJMEDEE: ::protobuf::MessageField<super::BOICEKFMCIC::BOICEKFMCIC>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournGetPermanentTalentInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl RogueTournGetPermanentTalentInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BOICEKFMCIC::BOICEKFMCIC>(
-            "EHOBBJMEDEE",
-            |m: &RogueTournGetPermanentTalentInfoScRsp| { &m.EHOBBJMEDEE },
-            |m: &mut RogueTournGetPermanentTalentInfoScRsp| { &mut m.EHOBBJMEDEE },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &RogueTournGetPermanentTalentInfoScRsp| { &m.retcode },
             |m: &mut RogueTournGetPermanentTalentInfoScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BOICEKFMCIC::BOICEKFMCIC>(
+            "EHOBBJMEDEE",
+            |m: &RogueTournGetPermanentTalentInfoScRsp| { &m.EHOBBJMEDEE },
+            |m: &mut RogueTournGetPermanentTalentInfoScRsp| { &mut m.EHOBBJMEDEE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournGetPermanentTalentInfoScRsp>(
             "RogueTournGetPermanentTalentInfoScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RogueTournGetPermanentTalentInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EHOBBJMEDEE)?;
-                },
-                56 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EHOBBJMEDEE)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for RogueTournGetPermanentTalentInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+        }
         if let Some(v) = self.EHOBBJMEDEE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for RogueTournGetPermanentTalentInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.EHOBBJMEDEE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
+        }
+        if let Some(v) = self.EHOBBJMEDEE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for RogueTournGetPermanentTalentInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.EHOBBJMEDEE.clear();
         self.retcode = 0;
+        self.EHOBBJMEDEE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournGetPermanentTalentInfoScRsp {
         static instance: RogueTournGetPermanentTalentInfoScRsp = RogueTournGetPermanentTalentInfoScRsp {
-            EHOBBJMEDEE: ::protobuf::MessageField::none(),
             retcode: 0,
+            EHOBBJMEDEE: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournGetPermanentTalentInfoScRs
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+RogueTournGetPermanentTalentInfoScRsp.proto\x1a\x11BOICEKFMCIC.proto\
-    \"q\n%RogueTournGetPermanentTalentInfoScRsp\x12.\n\x0bEHOBBJMEDEE\x18\n\
-    \x20\x01(\x0b2\x0c.BOICEKFMCICR\x0bEHOBBJMEDEE\x12\x18\n\x07retcode\x18\
-    \x07\x20\x01(\rR\x07retcodeb\x06proto3\
+    \"q\n%RogueTournGetPermanentTalentInfoScRsp\x12\x18\n\x07retcode\x18\r\
+    \x20\x01(\rR\x07retcode\x12.\n\x0bEHOBBJMEDEE\x18\x0e\x20\x01(\x0b2\x0c.\
+    BOICEKFMCICR\x0bEHOBBJMEDEEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

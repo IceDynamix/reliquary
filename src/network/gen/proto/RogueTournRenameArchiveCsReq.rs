@@ -79,10 +79,10 @@ impl ::protobuf::Message for RogueTournRenameArchiveCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                120 => {
                     self.KHNCEDGFPGL = is.read_uint32()?;
                 },
-                106 => {
+                98 => {
                     self.MJJBNDAKOIF = is.read_string()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for RogueTournRenameArchiveCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.KHNCEDGFPGL != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.KHNCEDGFPGL);
+            my_size += ::protobuf::rt::uint32_size(15, self.KHNCEDGFPGL);
         }
         if !self.MJJBNDAKOIF.is_empty() {
-            my_size += ::protobuf::rt::string_size(13, &self.MJJBNDAKOIF);
+            my_size += ::protobuf::rt::string_size(12, &self.MJJBNDAKOIF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for RogueTournRenameArchiveCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KHNCEDGFPGL != 0 {
-            os.write_uint32(14, self.KHNCEDGFPGL)?;
+            os.write_uint32(15, self.KHNCEDGFPGL)?;
         }
         if !self.MJJBNDAKOIF.is_empty() {
-            os.write_string(13, &self.MJJBNDAKOIF)?;
+            os.write_string(12, &self.MJJBNDAKOIF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournRenameArchiveCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"RogueTournRenameArchiveCsReq.proto\"b\n\x1cRogueTournRenameArchiveCs\
-    Req\x12\x20\n\x0bKHNCEDGFPGL\x18\x0e\x20\x01(\rR\x0bKHNCEDGFPGL\x12\x20\
-    \n\x0bMJJBNDAKOIF\x18\r\x20\x01(\tR\x0bMJJBNDAKOIFb\x06proto3\
+    Req\x12\x20\n\x0bKHNCEDGFPGL\x18\x0f\x20\x01(\rR\x0bKHNCEDGFPGL\x12\x20\
+    \n\x0bMJJBNDAKOIF\x18\x0c\x20\x01(\tR\x0bMJJBNDAKOIFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishPerformSectionIdScRsp {
     // message fields
-    // @@protoc_insertion_point(field:FinishPerformSectionIdScRsp.DCPBFLJFHBB)
-    pub DCPBFLJFHBB: ::std::vec::Vec<super::NNMLCFAIBDE::NNMLCFAIBDE>,
-    // @@protoc_insertion_point(field:FinishPerformSectionIdScRsp.LBMNCAGOKIF)
-    pub LBMNCAGOKIF: u32,
     // @@protoc_insertion_point(field:FinishPerformSectionIdScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:FinishPerformSectionIdScRsp.BHELBOHKBBM)
     pub BHELBOHKBBM: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:FinishPerformSectionIdScRsp.LBMNCAGOKIF)
+    pub LBMNCAGOKIF: u32,
+    // @@protoc_insertion_point(field:FinishPerformSectionIdScRsp.DCPBFLJFHBB)
+    pub DCPBFLJFHBB: ::std::vec::Vec<super::NNMLCFAIBDE::NNMLCFAIBDE>,
     // special fields
     // @@protoc_insertion_point(special_field:FinishPerformSectionIdScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,16 +55,6 @@ impl FinishPerformSectionIdScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DCPBFLJFHBB",
-            |m: &FinishPerformSectionIdScRsp| { &m.DCPBFLJFHBB },
-            |m: &mut FinishPerformSectionIdScRsp| { &mut m.DCPBFLJFHBB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LBMNCAGOKIF",
-            |m: &FinishPerformSectionIdScRsp| { &m.LBMNCAGOKIF },
-            |m: &mut FinishPerformSectionIdScRsp| { &mut m.LBMNCAGOKIF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &FinishPerformSectionIdScRsp| { &m.retcode },
@@ -74,6 +64,16 @@ impl FinishPerformSectionIdScRsp {
             "BHELBOHKBBM",
             |m: &FinishPerformSectionIdScRsp| { &m.BHELBOHKBBM },
             |m: &mut FinishPerformSectionIdScRsp| { &mut m.BHELBOHKBBM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LBMNCAGOKIF",
+            |m: &FinishPerformSectionIdScRsp| { &m.LBMNCAGOKIF },
+            |m: &mut FinishPerformSectionIdScRsp| { &mut m.LBMNCAGOKIF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DCPBFLJFHBB",
+            |m: &FinishPerformSectionIdScRsp| { &m.DCPBFLJFHBB },
+            |m: &mut FinishPerformSectionIdScRsp| { &mut m.DCPBFLJFHBB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishPerformSectionIdScRsp>(
             "FinishPerformSectionIdScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for FinishPerformSectionIdScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    self.DCPBFLJFHBB.push(is.read_message()?);
-                },
-                48 => {
-                    self.LBMNCAGOKIF = is.read_uint32()?;
-                },
-                112 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                10 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHELBOHKBBM)?;
+                },
+                88 => {
+                    self.LBMNCAGOKIF = is.read_uint32()?;
+                },
+                58 => {
+                    self.DCPBFLJFHBB.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,38 +117,38 @@ impl ::protobuf::Message for FinishPerformSectionIdScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.DCPBFLJFHBB {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.LBMNCAGOKIF != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.LBMNCAGOKIF);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         if let Some(v) = self.BHELBOHKBBM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.LBMNCAGOKIF != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.LBMNCAGOKIF);
+        }
+        for value in &self.DCPBFLJFHBB {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.DCPBFLJFHBB {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        };
-        if self.LBMNCAGOKIF != 0 {
-            os.write_uint32(6, self.LBMNCAGOKIF)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         if let Some(v) = self.BHELBOHKBBM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
+        if self.LBMNCAGOKIF != 0 {
+            os.write_uint32(11, self.LBMNCAGOKIF)?;
+        }
+        for v in &self.DCPBFLJFHBB {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -166,19 +166,19 @@ impl ::protobuf::Message for FinishPerformSectionIdScRsp {
     }
 
     fn clear(&mut self) {
-        self.DCPBFLJFHBB.clear();
-        self.LBMNCAGOKIF = 0;
         self.retcode = 0;
         self.BHELBOHKBBM.clear();
+        self.LBMNCAGOKIF = 0;
+        self.DCPBFLJFHBB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishPerformSectionIdScRsp {
         static instance: FinishPerformSectionIdScRsp = FinishPerformSectionIdScRsp {
-            DCPBFLJFHBB: ::std::vec::Vec::new(),
-            LBMNCAGOKIF: 0,
             retcode: 0,
             BHELBOHKBBM: ::protobuf::MessageField::none(),
+            LBMNCAGOKIF: 0,
+            DCPBFLJFHBB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for FinishPerformSectionIdScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!FinishPerformSectionIdScRsp.proto\x1a\x0eItemList.proto\x1a\x11NNMLCF\
-    AIBDE.proto\"\xb6\x01\n\x1bFinishPerformSectionIdScRsp\x12.\n\x0bDCPBFLJ\
-    FHBB\x18\x03\x20\x03(\x0b2\x0c.NNMLCFAIBDER\x0bDCPBFLJFHBB\x12\x20\n\x0b\
-    LBMNCAGOKIF\x18\x06\x20\x01(\rR\x0bLBMNCAGOKIF\x12\x18\n\x07retcode\x18\
-    \x0e\x20\x01(\rR\x07retcode\x12+\n\x0bBHELBOHKBBM\x18\x01\x20\x01(\x0b2\
-    \t.ItemListR\x0bBHELBOHKBBMb\x06proto3\
+    AIBDE.proto\"\xb6\x01\n\x1bFinishPerformSectionIdScRsp\x12\x18\n\x07retc\
+    ode\x18\x01\x20\x01(\rR\x07retcode\x12+\n\x0bBHELBOHKBBM\x18\x05\x20\x01\
+    (\x0b2\t.ItemListR\x0bBHELBOHKBBM\x12\x20\n\x0bLBMNCAGOKIF\x18\x0b\x20\
+    \x01(\rR\x0bLBMNCAGOKIF\x12.\n\x0bDCPBFLJFHBB\x18\x07\x20\x03(\x0b2\x0c.\
+    NNMLCFAIBDER\x0bDCPBFLJFHBBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

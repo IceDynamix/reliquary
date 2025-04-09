@@ -30,8 +30,8 @@ pub struct ChessRogueQueryBpScRsp {
     // message fields
     // @@protoc_insertion_point(field:ChessRogueQueryBpScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:ChessRogueQueryBpScRsp.ROGUE_DEBUG_MESSAGE_TYPE_INFO)
-    pub ROGUE_DEBUG_MESSAGE_TYPE_INFO: ::protobuf::MessageField<super::MFFKJDNDKIO::MFFKJDNDKIO>,
+    // @@protoc_insertion_point(field:ChessRogueQueryBpScRsp.HNDLHICDNPC)
+    pub HNDLHICDNPC: ::protobuf::MessageField<super::MFFKJDNDKIO::MFFKJDNDKIO>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueQueryBpScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl ChessRogueQueryBpScRsp {
             |m: &mut ChessRogueQueryBpScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MFFKJDNDKIO::MFFKJDNDKIO>(
-            "ROGUE_DEBUG_MESSAGE_TYPE_INFO",
-            |m: &ChessRogueQueryBpScRsp| { &m.ROGUE_DEBUG_MESSAGE_TYPE_INFO },
-            |m: &mut ChessRogueQueryBpScRsp| { &mut m.ROGUE_DEBUG_MESSAGE_TYPE_INFO },
+            "HNDLHICDNPC",
+            |m: &ChessRogueQueryBpScRsp| { &m.HNDLHICDNPC },
+            |m: &mut ChessRogueQueryBpScRsp| { &mut m.HNDLHICDNPC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueQueryBpScRsp>(
             "ChessRogueQueryBpScRsp",
@@ -82,8 +82,8 @@ impl ::protobuf::Message for ChessRogueQueryBpScRsp {
                 8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ROGUE_DEBUG_MESSAGE_TYPE_INFO)?;
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HNDLHICDNPC)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,7 +100,7 @@ impl ::protobuf::Message for ChessRogueQueryBpScRsp {
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
-        if let Some(v) = self.ROGUE_DEBUG_MESSAGE_TYPE_INFO.as_ref() {
+        if let Some(v) = self.HNDLHICDNPC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -113,8 +113,8 @@ impl ::protobuf::Message for ChessRogueQueryBpScRsp {
         if self.retcode != 0 {
             os.write_uint32(1, self.retcode)?;
         }
-        if let Some(v) = self.ROGUE_DEBUG_MESSAGE_TYPE_INFO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if let Some(v) = self.HNDLHICDNPC.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for ChessRogueQueryBpScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.ROGUE_DEBUG_MESSAGE_TYPE_INFO.clear();
+        self.HNDLHICDNPC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueQueryBpScRsp {
         static instance: ChessRogueQueryBpScRsp = ChessRogueQueryBpScRsp {
             retcode: 0,
-            ROGUE_DEBUG_MESSAGE_TYPE_INFO: ::protobuf::MessageField::none(),
+            HNDLHICDNPC: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueQueryBpScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cChessRogueQueryBpScRsp.proto\x1a\x11MFFKJDNDKIO.proto\"\x82\x01\n\
-    \x16ChessRogueQueryBpScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07r\
-    etcode\x12N\n\x1dROGUE_DEBUG_MESSAGE_TYPE_INFO\x18\x0b\x20\x01(\x0b2\x0c\
-    .MFFKJDNDKIOR\x19ROGUEDEBUGMESSAGETYPEINFOb\x06proto3\
+    \n\x1cChessRogueQueryBpScRsp.proto\x1a\x11MFFKJDNDKIO.proto\"b\n\x16Ches\
+    sRogueQueryBpScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\
+    \x12.\n\x0bHNDLHICDNPC\x18\r\x20\x01(\x0b2\x0c.MFFKJDNDKIOR\x0bHNDLHICDN\
+    PCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

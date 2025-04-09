@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetMailCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetMailCsReq.DAPCDNELCMA)
-    pub DAPCDNELCMA: u32,
     // @@protoc_insertion_point(field:GetMailCsReq.MUSEUM_RANDOM_EVENT_STATE_START)
     pub MUSEUM_RANDOM_EVENT_STATE_START: u32,
+    // @@protoc_insertion_point(field:GetMailCsReq.DAPCDNELCMA)
+    pub DAPCDNELCMA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetMailCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl GetMailCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DAPCDNELCMA",
-            |m: &GetMailCsReq| { &m.DAPCDNELCMA },
-            |m: &mut GetMailCsReq| { &mut m.DAPCDNELCMA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MUSEUM_RANDOM_EVENT_STATE_START",
             |m: &GetMailCsReq| { &m.MUSEUM_RANDOM_EVENT_STATE_START },
             |m: &mut GetMailCsReq| { &mut m.MUSEUM_RANDOM_EVENT_STATE_START },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DAPCDNELCMA",
+            |m: &GetMailCsReq| { &m.DAPCDNELCMA },
+            |m: &mut GetMailCsReq| { &mut m.DAPCDNELCMA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetMailCsReq>(
             "GetMailCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetMailCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.DAPCDNELCMA = is.read_uint32()?;
-                },
-                96 => {
+                72 => {
                     self.MUSEUM_RANDOM_EVENT_STATE_START = is.read_uint32()?;
+                },
+                120 => {
+                    self.DAPCDNELCMA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for GetMailCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DAPCDNELCMA != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.DAPCDNELCMA);
-        }
         if self.MUSEUM_RANDOM_EVENT_STATE_START != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.MUSEUM_RANDOM_EVENT_STATE_START);
+            my_size += ::protobuf::rt::uint32_size(9, self.MUSEUM_RANDOM_EVENT_STATE_START);
+        }
+        if self.DAPCDNELCMA != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.DAPCDNELCMA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for GetMailCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DAPCDNELCMA != 0 {
-            os.write_uint32(7, self.DAPCDNELCMA)?;
-        }
         if self.MUSEUM_RANDOM_EVENT_STATE_START != 0 {
-            os.write_uint32(12, self.MUSEUM_RANDOM_EVENT_STATE_START)?;
+            os.write_uint32(9, self.MUSEUM_RANDOM_EVENT_STATE_START)?;
+        }
+        if self.DAPCDNELCMA != 0 {
+            os.write_uint32(15, self.DAPCDNELCMA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for GetMailCsReq {
     }
 
     fn clear(&mut self) {
-        self.DAPCDNELCMA = 0;
         self.MUSEUM_RANDOM_EVENT_STATE_START = 0;
+        self.DAPCDNELCMA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetMailCsReq {
         static instance: GetMailCsReq = GetMailCsReq {
-            DAPCDNELCMA: 0,
             MUSEUM_RANDOM_EVENT_STATE_START: 0,
+            DAPCDNELCMA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for GetMailCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12GetMailCsReq.proto\"v\n\x0cGetMailCsReq\x12\x20\n\x0bDAPCDNELCMA\
-    \x18\x07\x20\x01(\rR\x0bDAPCDNELCMA\x12D\n\x1fMUSEUM_RANDOM_EVENT_STATE_\
-    START\x18\x0c\x20\x01(\rR\x1bMUSEUMRANDOMEVENTSTATESTARTb\x06proto3\
+    \n\x12GetMailCsReq.proto\"v\n\x0cGetMailCsReq\x12D\n\x1fMUSEUM_RANDOM_EV\
+    ENT_STATE_START\x18\t\x20\x01(\rR\x1bMUSEUMRANDOMEVENTSTATESTART\x12\x20\
+    \n\x0bDAPCDNELCMA\x18\x0f\x20\x01(\rR\x0bDAPCDNELCMAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

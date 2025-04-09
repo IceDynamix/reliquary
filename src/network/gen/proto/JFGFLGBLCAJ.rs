@@ -82,7 +82,7 @@ impl ::protobuf::Message for JFGFLGBLCAJ {
                 50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LCBECPOOGCL)?;
                 },
-                8 => {
+                88 => {
                     self.unique_id = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for JFGFLGBLCAJ {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.unique_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -114,7 +114,7 @@ impl ::protobuf::Message for JFGFLGBLCAJ {
             ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if self.unique_id != 0 {
-            os.write_uint32(1, self.unique_id)?;
+            os.write_uint32(11, self.unique_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for JFGFLGBLCAJ {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JFGFLGBLCAJ.proto\x1a\x11OBIPOOLIDAL.proto\"Z\n\x0bJFGFLGBLCAJ\x12\
     .\n\x0bLCBECPOOGCL\x18\x06\x20\x01(\x0b2\x0c.OBIPOOLIDALR\x0bLCBECPOOGCL\
-    \x12\x1b\n\tunique_id\x18\x01\x20\x01(\rR\x08uniqueIdb\x06proto3\
+    \x12\x1b\n\tunique_id\x18\x0b\x20\x01(\rR\x08uniqueIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StaminaInfoScNotify {
     // message fields
-    // @@protoc_insertion_point(field:StaminaInfoScNotify.FBOLLBPICNJ)
-    pub FBOLLBPICNJ: u32,
     // @@protoc_insertion_point(field:StaminaInfoScNotify.DPIMHEMJKOE)
     pub DPIMHEMJKOE: i64,
-    // @@protoc_insertion_point(field:StaminaInfoScNotify.OCHIMADHONO)
-    pub OCHIMADHONO: i64,
+    // @@protoc_insertion_point(field:StaminaInfoScNotify.FBOLLBPICNJ)
+    pub FBOLLBPICNJ: u32,
     // @@protoc_insertion_point(field:StaminaInfoScNotify.JOAMEJFEOAM)
     pub JOAMEJFEOAM: u32,
+    // @@protoc_insertion_point(field:StaminaInfoScNotify.OCHIMADHONO)
+    pub OCHIMADHONO: i64,
     // special fields
     // @@protoc_insertion_point(special_field:StaminaInfoScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl StaminaInfoScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FBOLLBPICNJ",
-            |m: &StaminaInfoScNotify| { &m.FBOLLBPICNJ },
-            |m: &mut StaminaInfoScNotify| { &mut m.FBOLLBPICNJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DPIMHEMJKOE",
             |m: &StaminaInfoScNotify| { &m.DPIMHEMJKOE },
             |m: &mut StaminaInfoScNotify| { &mut m.DPIMHEMJKOE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OCHIMADHONO",
-            |m: &StaminaInfoScNotify| { &m.OCHIMADHONO },
-            |m: &mut StaminaInfoScNotify| { &mut m.OCHIMADHONO },
+            "FBOLLBPICNJ",
+            |m: &StaminaInfoScNotify| { &m.FBOLLBPICNJ },
+            |m: &mut StaminaInfoScNotify| { &mut m.FBOLLBPICNJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JOAMEJFEOAM",
             |m: &StaminaInfoScNotify| { &m.JOAMEJFEOAM },
             |m: &mut StaminaInfoScNotify| { &mut m.JOAMEJFEOAM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OCHIMADHONO",
+            |m: &StaminaInfoScNotify| { &m.OCHIMADHONO },
+            |m: &mut StaminaInfoScNotify| { &mut m.OCHIMADHONO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StaminaInfoScNotify>(
             "StaminaInfoScNotify",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for StaminaInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                88 => {
+                    self.DPIMHEMJKOE = is.read_int64()?;
+                },
                 16 => {
                     self.FBOLLBPICNJ = is.read_uint32()?;
                 },
-                48 => {
-                    self.DPIMHEMJKOE = is.read_int64()?;
-                },
-                112 => {
-                    self.OCHIMADHONO = is.read_int64()?;
-                },
-                8 => {
+                24 => {
                     self.JOAMEJFEOAM = is.read_uint32()?;
+                },
+                104 => {
+                    self.OCHIMADHONO = is.read_int64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for StaminaInfoScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.DPIMHEMJKOE != 0 {
+            my_size += ::protobuf::rt::int64_size(11, self.DPIMHEMJKOE);
+        }
         if self.FBOLLBPICNJ != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.FBOLLBPICNJ);
         }
-        if self.DPIMHEMJKOE != 0 {
-            my_size += ::protobuf::rt::int64_size(6, self.DPIMHEMJKOE);
+        if self.JOAMEJFEOAM != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.JOAMEJFEOAM);
         }
         if self.OCHIMADHONO != 0 {
-            my_size += ::protobuf::rt::int64_size(14, self.OCHIMADHONO);
-        }
-        if self.JOAMEJFEOAM != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.JOAMEJFEOAM);
+            my_size += ::protobuf::rt::int64_size(13, self.OCHIMADHONO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for StaminaInfoScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.DPIMHEMJKOE != 0 {
+            os.write_int64(11, self.DPIMHEMJKOE)?;
+        }
         if self.FBOLLBPICNJ != 0 {
             os.write_uint32(2, self.FBOLLBPICNJ)?;
         }
-        if self.DPIMHEMJKOE != 0 {
-            os.write_int64(6, self.DPIMHEMJKOE)?;
+        if self.JOAMEJFEOAM != 0 {
+            os.write_uint32(3, self.JOAMEJFEOAM)?;
         }
         if self.OCHIMADHONO != 0 {
-            os.write_int64(14, self.OCHIMADHONO)?;
-        }
-        if self.JOAMEJFEOAM != 0 {
-            os.write_uint32(1, self.JOAMEJFEOAM)?;
+            os.write_int64(13, self.OCHIMADHONO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for StaminaInfoScNotify {
     }
 
     fn clear(&mut self) {
-        self.FBOLLBPICNJ = 0;
         self.DPIMHEMJKOE = 0;
-        self.OCHIMADHONO = 0;
+        self.FBOLLBPICNJ = 0;
         self.JOAMEJFEOAM = 0;
+        self.OCHIMADHONO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StaminaInfoScNotify {
         static instance: StaminaInfoScNotify = StaminaInfoScNotify {
-            FBOLLBPICNJ: 0,
             DPIMHEMJKOE: 0,
-            OCHIMADHONO: 0,
+            FBOLLBPICNJ: 0,
             JOAMEJFEOAM: 0,
+            OCHIMADHONO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for StaminaInfoScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19StaminaInfoScNotify.proto\"\x9d\x01\n\x13StaminaInfoScNotify\x12\
-    \x20\n\x0bFBOLLBPICNJ\x18\x02\x20\x01(\rR\x0bFBOLLBPICNJ\x12\x20\n\x0bDP\
-    IMHEMJKOE\x18\x06\x20\x01(\x03R\x0bDPIMHEMJKOE\x12\x20\n\x0bOCHIMADHONO\
-    \x18\x0e\x20\x01(\x03R\x0bOCHIMADHONO\x12\x20\n\x0bJOAMEJFEOAM\x18\x01\
-    \x20\x01(\rR\x0bJOAMEJFEOAMb\x06proto3\
+    \x20\n\x0bDPIMHEMJKOE\x18\x0b\x20\x01(\x03R\x0bDPIMHEMJKOE\x12\x20\n\x0b\
+    FBOLLBPICNJ\x18\x02\x20\x01(\rR\x0bFBOLLBPICNJ\x12\x20\n\x0bJOAMEJFEOAM\
+    \x18\x03\x20\x01(\rR\x0bJOAMEJFEOAM\x12\x20\n\x0bOCHIMADHONO\x18\r\x20\
+    \x01(\x03R\x0bOCHIMADHONOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JBIHOCIOANH {
     // message fields
-    // @@protoc_insertion_point(field:JBIHOCIOANH.PLMKMOPCDLM)
-    pub PLMKMOPCDLM: ::std::vec::Vec<super::OBIPOOLIDAL::OBIPOOLIDAL>,
     // @@protoc_insertion_point(field:JBIHOCIOANH.EEPOJGNFLPA)
     pub EEPOJGNFLPA: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:JBIHOCIOANH.KNIHPLNGOCL)
     pub KNIHPLNGOCL: ::protobuf::MessageField<super::INPINNPIHOB::INPINNPIHOB>,
+    // @@protoc_insertion_point(field:JBIHOCIOANH.PLMKMOPCDLM)
+    pub PLMKMOPCDLM: ::std::vec::Vec<super::OBIPOOLIDAL::OBIPOOLIDAL>,
     // @@protoc_insertion_point(field:JBIHOCIOANH.FPGEFHENCCF)
     pub FPGEFHENCCF: ::std::vec::Vec<super::KOEGFFOMKIP::KOEGFFOMKIP>,
     // special fields
@@ -55,11 +55,6 @@ impl JBIHOCIOANH {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PLMKMOPCDLM",
-            |m: &JBIHOCIOANH| { &m.PLMKMOPCDLM },
-            |m: &mut JBIHOCIOANH| { &mut m.PLMKMOPCDLM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "EEPOJGNFLPA",
             |m: &JBIHOCIOANH| { &m.EEPOJGNFLPA },
@@ -69,6 +64,11 @@ impl JBIHOCIOANH {
             "KNIHPLNGOCL",
             |m: &JBIHOCIOANH| { &m.KNIHPLNGOCL },
             |m: &mut JBIHOCIOANH| { &mut m.KNIHPLNGOCL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PLMKMOPCDLM",
+            |m: &JBIHOCIOANH| { &m.PLMKMOPCDLM },
+            |m: &mut JBIHOCIOANH| { &mut m.PLMKMOPCDLM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "FPGEFHENCCF",
@@ -93,10 +93,7 @@ impl ::protobuf::Message for JBIHOCIOANH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    self.PLMKMOPCDLM.push(is.read_message()?);
-                },
-                42 => {
+                58 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -111,10 +108,13 @@ impl ::protobuf::Message for JBIHOCIOANH {
                     is.pop_limit(old_limit);
                     self.EEPOJGNFLPA.insert(key, value);
                 },
-                26 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.KNIHPLNGOCL)?;
                 },
-                34 => {
+                26 => {
+                    self.PLMKMOPCDLM.push(is.read_message()?);
+                },
+                98 => {
                     self.FPGEFHENCCF.push(is.read_message()?);
                 },
                 tag => {
@@ -129,10 +129,6 @@ impl ::protobuf::Message for JBIHOCIOANH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.PLMKMOPCDLM {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         for (k, v) in &self.EEPOJGNFLPA {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
@@ -143,6 +139,10 @@ impl ::protobuf::Message for JBIHOCIOANH {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        for value in &self.PLMKMOPCDLM {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         for value in &self.FPGEFHENCCF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -153,23 +153,23 @@ impl ::protobuf::Message for JBIHOCIOANH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.PLMKMOPCDLM {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        };
         for (k, v) in &self.EEPOJGNFLPA {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(42)?; // Tag.
+            os.write_raw_varint32(58)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
         if let Some(v) = self.KNIHPLNGOCL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
+        for v in &self.PLMKMOPCDLM {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        };
         for v in &self.FPGEFHENCCF {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -188,9 +188,9 @@ impl ::protobuf::Message for JBIHOCIOANH {
     }
 
     fn clear(&mut self) {
-        self.PLMKMOPCDLM.clear();
         self.EEPOJGNFLPA.clear();
         self.KNIHPLNGOCL.clear();
+        self.PLMKMOPCDLM.clear();
         self.FPGEFHENCCF.clear();
         self.special_fields.clear();
     }
@@ -220,11 +220,11 @@ impl ::protobuf::reflect::ProtobufValue for JBIHOCIOANH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JBIHOCIOANH.proto\x1a\x11INPINNPIHOB.proto\x1a\x11KOEGFFOMKIP.prot\
-    o\x1a\x11OBIPOOLIDAL.proto\"\x9e\x02\n\x0bJBIHOCIOANH\x12.\n\x0bPLMKMOPC\
-    DLM\x18\x0e\x20\x03(\x0b2\x0c.OBIPOOLIDALR\x0bPLMKMOPCDLM\x12?\n\x0bEEPO\
-    JGNFLPA\x18\x05\x20\x03(\x0b2\x1d.JBIHOCIOANH.EEPOJGNFLPAEntryR\x0bEEPOJ\
-    GNFLPA\x12.\n\x0bKNIHPLNGOCL\x18\x03\x20\x01(\x0b2\x0c.INPINNPIHOBR\x0bK\
-    NIHPLNGOCL\x12.\n\x0bFPGEFHENCCF\x18\x04\x20\x03(\x0b2\x0c.KOEGFFOMKIPR\
+    o\x1a\x11OBIPOOLIDAL.proto\"\x9e\x02\n\x0bJBIHOCIOANH\x12?\n\x0bEEPOJGNF\
+    LPA\x18\x07\x20\x03(\x0b2\x1d.JBIHOCIOANH.EEPOJGNFLPAEntryR\x0bEEPOJGNFL\
+    PA\x12.\n\x0bKNIHPLNGOCL\x18\n\x20\x01(\x0b2\x0c.INPINNPIHOBR\x0bKNIHPLN\
+    GOCL\x12.\n\x0bPLMKMOPCDLM\x18\x03\x20\x03(\x0b2\x0c.OBIPOOLIDALR\x0bPLM\
+    KMOPCDLM\x12.\n\x0bFPGEFHENCCF\x18\x0c\x20\x03(\x0b2\x0c.KOEGFFOMKIPR\
     \x0bFPGEFHENCCF\x1a>\n\x10EEPOJGNFLPAEntry\x12\x10\n\x03key\x18\x01\x20\
     \x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\
     \x01b\x06proto3\

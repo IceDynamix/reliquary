@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MusicRhythmDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MusicRhythmDataScRsp.OCEPHGBCMIB)
-    pub OCEPHGBCMIB: bool,
-    // @@protoc_insertion_point(field:MusicRhythmDataScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:MusicRhythmDataScRsp.FKLIOFDPJBE)
+    pub FKLIOFDPJBE: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:MusicRhythmDataScRsp.BMKMENHFFOK)
     pub BMKMENHFFOK: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MusicRhythmDataScRsp.OCEPHGBCMIB)
+    pub OCEPHGBCMIB: bool,
+    // @@protoc_insertion_point(field:MusicRhythmDataScRsp.AMDCJJJABCC)
+    pub AMDCJJJABCC: ::std::vec::Vec<super::PAKPCCILOLN::PAKPCCILOLN>,
+    // @@protoc_insertion_point(field:MusicRhythmDataScRsp.BNANPJBDGHB)
+    pub BNANPJBDGHB: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:MusicRhythmDataScRsp.CDIGALBEIMA)
     pub CDIGALBEIMA: u32,
     // @@protoc_insertion_point(field:MusicRhythmDataScRsp.LKMJINNIADI)
     pub LKMJINNIADI: ::std::vec::Vec<super::LLEOGOOHJIM::LLEOGOOHJIM>,
-    // @@protoc_insertion_point(field:MusicRhythmDataScRsp.FKLIOFDPJBE)
-    pub FKLIOFDPJBE: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:MusicRhythmDataScRsp.BNANPJBDGHB)
-    pub BNANPJBDGHB: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:MusicRhythmDataScRsp.AMDCJJJABCC)
-    pub AMDCJJJABCC: ::std::vec::Vec<super::PAKPCCILOLN::PAKPCCILOLN>,
+    // @@protoc_insertion_point(field:MusicRhythmDataScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:MusicRhythmDataScRsp.LJEKPPNPBPP)
     pub LJEKPPNPBPP: u32,
     // special fields
@@ -65,20 +65,30 @@ impl MusicRhythmDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OCEPHGBCMIB",
-            |m: &MusicRhythmDataScRsp| { &m.OCEPHGBCMIB },
-            |m: &mut MusicRhythmDataScRsp| { &mut m.OCEPHGBCMIB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &MusicRhythmDataScRsp| { &m.retcode },
-            |m: &mut MusicRhythmDataScRsp| { &mut m.retcode },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FKLIOFDPJBE",
+            |m: &MusicRhythmDataScRsp| { &m.FKLIOFDPJBE },
+            |m: &mut MusicRhythmDataScRsp| { &mut m.FKLIOFDPJBE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "BMKMENHFFOK",
             |m: &MusicRhythmDataScRsp| { &m.BMKMENHFFOK },
             |m: &mut MusicRhythmDataScRsp| { &mut m.BMKMENHFFOK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OCEPHGBCMIB",
+            |m: &MusicRhythmDataScRsp| { &m.OCEPHGBCMIB },
+            |m: &mut MusicRhythmDataScRsp| { &mut m.OCEPHGBCMIB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "AMDCJJJABCC",
+            |m: &MusicRhythmDataScRsp| { &m.AMDCJJJABCC },
+            |m: &mut MusicRhythmDataScRsp| { &mut m.AMDCJJJABCC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "BNANPJBDGHB",
+            |m: &MusicRhythmDataScRsp| { &m.BNANPJBDGHB },
+            |m: &mut MusicRhythmDataScRsp| { &mut m.BNANPJBDGHB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CDIGALBEIMA",
@@ -90,20 +100,10 @@ impl MusicRhythmDataScRsp {
             |m: &MusicRhythmDataScRsp| { &m.LKMJINNIADI },
             |m: &mut MusicRhythmDataScRsp| { &mut m.LKMJINNIADI },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FKLIOFDPJBE",
-            |m: &MusicRhythmDataScRsp| { &m.FKLIOFDPJBE },
-            |m: &mut MusicRhythmDataScRsp| { &mut m.FKLIOFDPJBE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BNANPJBDGHB",
-            |m: &MusicRhythmDataScRsp| { &m.BNANPJBDGHB },
-            |m: &mut MusicRhythmDataScRsp| { &mut m.BNANPJBDGHB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "AMDCJJJABCC",
-            |m: &MusicRhythmDataScRsp| { &m.AMDCJJJABCC },
-            |m: &mut MusicRhythmDataScRsp| { &mut m.AMDCJJJABCC },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &MusicRhythmDataScRsp| { &m.retcode },
+            |m: &mut MusicRhythmDataScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LJEKPPNPBPP",
@@ -128,40 +128,40 @@ impl ::protobuf::Message for MusicRhythmDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.OCEPHGBCMIB = is.read_bool()?;
-                },
-                8 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                114 => {
-                    is.read_repeated_packed_uint32_into(&mut self.BMKMENHFFOK)?;
-                },
-                112 => {
-                    self.BMKMENHFFOK.push(is.read_uint32()?);
-                },
-                120 => {
-                    self.CDIGALBEIMA = is.read_uint32()?;
-                },
-                26 => {
-                    self.LKMJINNIADI.push(is.read_message()?);
-                },
-                50 => {
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.FKLIOFDPJBE)?;
                 },
-                48 => {
+                96 => {
                     self.FKLIOFDPJBE.push(is.read_uint32()?);
                 },
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.BNANPJBDGHB)?;
-                },
-                88 => {
-                    self.BNANPJBDGHB.push(is.read_uint32()?);
-                },
-                34 => {
-                    self.AMDCJJJABCC.push(is.read_message()?);
+                74 => {
+                    is.read_repeated_packed_uint32_into(&mut self.BMKMENHFFOK)?;
                 },
                 72 => {
+                    self.BMKMENHFFOK.push(is.read_uint32()?);
+                },
+                104 => {
+                    self.OCEPHGBCMIB = is.read_bool()?;
+                },
+                82 => {
+                    self.AMDCJJJABCC.push(is.read_message()?);
+                },
+                114 => {
+                    is.read_repeated_packed_uint32_into(&mut self.BNANPJBDGHB)?;
+                },
+                112 => {
+                    self.BNANPJBDGHB.push(is.read_uint32()?);
+                },
+                16 => {
+                    self.CDIGALBEIMA = is.read_uint32()?;
+                },
+                122 => {
+                    self.LKMJINNIADI.push(is.read_message()?);
+                },
+                88 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                24 => {
                     self.LJEKPPNPBPP = is.read_uint32()?;
                 },
                 tag => {
@@ -176,28 +176,28 @@ impl ::protobuf::Message for MusicRhythmDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.FKLIOFDPJBE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.BMKMENHFFOK);
         if self.OCEPHGBCMIB != false {
             my_size += 1 + 1;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.BMKMENHFFOK);
+        for value in &self.AMDCJJJABCC {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.BNANPJBDGHB);
         if self.CDIGALBEIMA != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.CDIGALBEIMA);
+            my_size += ::protobuf::rt::uint32_size(2, self.CDIGALBEIMA);
         }
         for value in &self.LKMJINNIADI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.FKLIOFDPJBE);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.BNANPJBDGHB);
-        for value in &self.AMDCJJJABCC {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        }
         if self.LJEKPPNPBPP != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.LJEKPPNPBPP);
+            my_size += ::protobuf::rt::uint32_size(3, self.LJEKPPNPBPP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -205,26 +205,26 @@ impl ::protobuf::Message for MusicRhythmDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(12, &self.FKLIOFDPJBE)?;
+        os.write_repeated_packed_uint32(9, &self.BMKMENHFFOK)?;
         if self.OCEPHGBCMIB != false {
-            os.write_bool(10, self.OCEPHGBCMIB)?;
+            os.write_bool(13, self.OCEPHGBCMIB)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
-        }
-        os.write_repeated_packed_uint32(14, &self.BMKMENHFFOK)?;
+        for v in &self.AMDCJJJABCC {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        };
+        os.write_repeated_packed_uint32(14, &self.BNANPJBDGHB)?;
         if self.CDIGALBEIMA != 0 {
-            os.write_uint32(15, self.CDIGALBEIMA)?;
+            os.write_uint32(2, self.CDIGALBEIMA)?;
         }
         for v in &self.LKMJINNIADI {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
-        os.write_repeated_packed_uint32(6, &self.FKLIOFDPJBE)?;
-        os.write_repeated_packed_uint32(11, &self.BNANPJBDGHB)?;
-        for v in &self.AMDCJJJABCC {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        };
+        if self.retcode != 0 {
+            os.write_uint32(11, self.retcode)?;
+        }
         if self.LJEKPPNPBPP != 0 {
-            os.write_uint32(9, self.LJEKPPNPBPP)?;
+            os.write_uint32(3, self.LJEKPPNPBPP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -243,28 +243,28 @@ impl ::protobuf::Message for MusicRhythmDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.OCEPHGBCMIB = false;
-        self.retcode = 0;
+        self.FKLIOFDPJBE.clear();
         self.BMKMENHFFOK.clear();
+        self.OCEPHGBCMIB = false;
+        self.AMDCJJJABCC.clear();
+        self.BNANPJBDGHB.clear();
         self.CDIGALBEIMA = 0;
         self.LKMJINNIADI.clear();
-        self.FKLIOFDPJBE.clear();
-        self.BNANPJBDGHB.clear();
-        self.AMDCJJJABCC.clear();
+        self.retcode = 0;
         self.LJEKPPNPBPP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MusicRhythmDataScRsp {
         static instance: MusicRhythmDataScRsp = MusicRhythmDataScRsp {
-            OCEPHGBCMIB: false,
-            retcode: 0,
+            FKLIOFDPJBE: ::std::vec::Vec::new(),
             BMKMENHFFOK: ::std::vec::Vec::new(),
+            OCEPHGBCMIB: false,
+            AMDCJJJABCC: ::std::vec::Vec::new(),
+            BNANPJBDGHB: ::std::vec::Vec::new(),
             CDIGALBEIMA: 0,
             LKMJINNIADI: ::std::vec::Vec::new(),
-            FKLIOFDPJBE: ::std::vec::Vec::new(),
-            BNANPJBDGHB: ::std::vec::Vec::new(),
-            AMDCJJJABCC: ::std::vec::Vec::new(),
+            retcode: 0,
             LJEKPPNPBPP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -291,15 +291,15 @@ impl ::protobuf::reflect::ProtobufValue for MusicRhythmDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aMusicRhythmDataScRsp.proto\x1a\x11LLEOGOOHJIM.proto\x1a\x11PAKPCCI\
-    LOLN.proto\"\xdc\x02\n\x14MusicRhythmDataScRsp\x12\x20\n\x0bOCEPHGBCMIB\
-    \x18\n\x20\x01(\x08R\x0bOCEPHGBCMIB\x12\x18\n\x07retcode\x18\x01\x20\x01\
-    (\rR\x07retcode\x12\x20\n\x0bBMKMENHFFOK\x18\x0e\x20\x03(\rR\x0bBMKMENHF\
-    FOK\x12\x20\n\x0bCDIGALBEIMA\x18\x0f\x20\x01(\rR\x0bCDIGALBEIMA\x12.\n\
-    \x0bLKMJINNIADI\x18\x03\x20\x03(\x0b2\x0c.LLEOGOOHJIMR\x0bLKMJINNIADI\
-    \x12\x20\n\x0bFKLIOFDPJBE\x18\x06\x20\x03(\rR\x0bFKLIOFDPJBE\x12\x20\n\
-    \x0bBNANPJBDGHB\x18\x0b\x20\x03(\rR\x0bBNANPJBDGHB\x12.\n\x0bAMDCJJJABCC\
-    \x18\x04\x20\x03(\x0b2\x0c.PAKPCCILOLNR\x0bAMDCJJJABCC\x12\x20\n\x0bLJEK\
-    PPNPBPP\x18\t\x20\x01(\rR\x0bLJEKPPNPBPPb\x06proto3\
+    LOLN.proto\"\xdc\x02\n\x14MusicRhythmDataScRsp\x12\x20\n\x0bFKLIOFDPJBE\
+    \x18\x0c\x20\x03(\rR\x0bFKLIOFDPJBE\x12\x20\n\x0bBMKMENHFFOK\x18\t\x20\
+    \x03(\rR\x0bBMKMENHFFOK\x12\x20\n\x0bOCEPHGBCMIB\x18\r\x20\x01(\x08R\x0b\
+    OCEPHGBCMIB\x12.\n\x0bAMDCJJJABCC\x18\n\x20\x03(\x0b2\x0c.PAKPCCILOLNR\
+    \x0bAMDCJJJABCC\x12\x20\n\x0bBNANPJBDGHB\x18\x0e\x20\x03(\rR\x0bBNANPJBD\
+    GHB\x12\x20\n\x0bCDIGALBEIMA\x18\x02\x20\x01(\rR\x0bCDIGALBEIMA\x12.\n\
+    \x0bLKMJINNIADI\x18\x0f\x20\x03(\x0b2\x0c.LLEOGOOHJIMR\x0bLKMJINNIADI\
+    \x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12\x20\n\x0bLJEKPP\
+    NPBPP\x18\x03\x20\x01(\rR\x0bLJEKPPNPBPPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

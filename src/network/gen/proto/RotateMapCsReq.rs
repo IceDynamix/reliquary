@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RotateMapCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RotateMapCsReq.GLHAGJGAEHE)
-    pub GLHAGJGAEHE: u32,
     // @@protoc_insertion_point(field:RotateMapCsReq.MFNBANEDODD)
     pub MFNBANEDODD: ::protobuf::MessageField<super::CFKHKILIHHF::CFKHKILIHHF>,
-    // @@protoc_insertion_point(field:RotateMapCsReq.OCBKFGAOHEH)
-    pub OCBKFGAOHEH: ::protobuf::MessageField<super::ICIMAKBAJGB::ICIMAKBAJGB>,
     // @@protoc_insertion_point(field:RotateMapCsReq.FJNHDHOHBCL)
     pub FJNHDHOHBCL: u32,
+    // @@protoc_insertion_point(field:RotateMapCsReq.OCBKFGAOHEH)
+    pub OCBKFGAOHEH: ::protobuf::MessageField<super::ICIMAKBAJGB::ICIMAKBAJGB>,
+    // @@protoc_insertion_point(field:RotateMapCsReq.GLHAGJGAEHE)
+    pub GLHAGJGAEHE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RotateMapCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,15 +55,15 @@ impl RotateMapCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GLHAGJGAEHE",
-            |m: &RotateMapCsReq| { &m.GLHAGJGAEHE },
-            |m: &mut RotateMapCsReq| { &mut m.GLHAGJGAEHE },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CFKHKILIHHF::CFKHKILIHHF>(
             "MFNBANEDODD",
             |m: &RotateMapCsReq| { &m.MFNBANEDODD },
             |m: &mut RotateMapCsReq| { &mut m.MFNBANEDODD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FJNHDHOHBCL",
+            |m: &RotateMapCsReq| { &m.FJNHDHOHBCL },
+            |m: &mut RotateMapCsReq| { &mut m.FJNHDHOHBCL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ICIMAKBAJGB::ICIMAKBAJGB>(
             "OCBKFGAOHEH",
@@ -71,9 +71,9 @@ impl RotateMapCsReq {
             |m: &mut RotateMapCsReq| { &mut m.OCBKFGAOHEH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FJNHDHOHBCL",
-            |m: &RotateMapCsReq| { &m.FJNHDHOHBCL },
-            |m: &mut RotateMapCsReq| { &mut m.FJNHDHOHBCL },
+            "GLHAGJGAEHE",
+            |m: &RotateMapCsReq| { &m.GLHAGJGAEHE },
+            |m: &mut RotateMapCsReq| { &mut m.GLHAGJGAEHE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RotateMapCsReq>(
             "RotateMapCsReq",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for RotateMapCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.GLHAGJGAEHE = is.read_uint32()?;
-                },
-                26 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MFNBANEDODD)?;
                 },
-                106 => {
+                40 => {
+                    self.FJNHDHOHBCL = is.read_uint32()?;
+                },
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.OCBKFGAOHEH)?;
                 },
-                48 => {
-                    self.FJNHDHOHBCL = is.read_uint32()?;
+                96 => {
+                    self.GLHAGJGAEHE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,19 +117,19 @@ impl ::protobuf::Message for RotateMapCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GLHAGJGAEHE != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.GLHAGJGAEHE);
-        }
         if let Some(v) = self.MFNBANEDODD.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.FJNHDHOHBCL != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.FJNHDHOHBCL);
         }
         if let Some(v) = self.OCBKFGAOHEH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.FJNHDHOHBCL != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.FJNHDHOHBCL);
+        if self.GLHAGJGAEHE != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.GLHAGJGAEHE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for RotateMapCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GLHAGJGAEHE != 0 {
-            os.write_uint32(10, self.GLHAGJGAEHE)?;
-        }
         if let Some(v) = self.MFNBANEDODD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        }
-        if let Some(v) = self.OCBKFGAOHEH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.FJNHDHOHBCL != 0 {
-            os.write_uint32(6, self.FJNHDHOHBCL)?;
+            os.write_uint32(5, self.FJNHDHOHBCL)?;
+        }
+        if let Some(v) = self.OCBKFGAOHEH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        }
+        if self.GLHAGJGAEHE != 0 {
+            os.write_uint32(12, self.GLHAGJGAEHE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for RotateMapCsReq {
     }
 
     fn clear(&mut self) {
-        self.GLHAGJGAEHE = 0;
         self.MFNBANEDODD.clear();
-        self.OCBKFGAOHEH.clear();
         self.FJNHDHOHBCL = 0;
+        self.OCBKFGAOHEH.clear();
+        self.GLHAGJGAEHE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RotateMapCsReq {
         static instance: RotateMapCsReq = RotateMapCsReq {
-            GLHAGJGAEHE: 0,
             MFNBANEDODD: ::protobuf::MessageField::none(),
-            OCBKFGAOHEH: ::protobuf::MessageField::none(),
             FJNHDHOHBCL: 0,
+            OCBKFGAOHEH: ::protobuf::MessageField::none(),
+            GLHAGJGAEHE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for RotateMapCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14RotateMapCsReq.proto\x1a\x11CFKHKILIHHF.proto\x1a\x11ICIMAKBAJGB.p\
-    roto\"\xb4\x01\n\x0eRotateMapCsReq\x12\x20\n\x0bGLHAGJGAEHE\x18\n\x20\
-    \x01(\rR\x0bGLHAGJGAEHE\x12.\n\x0bMFNBANEDODD\x18\x03\x20\x01(\x0b2\x0c.\
-    CFKHKILIHHFR\x0bMFNBANEDODD\x12.\n\x0bOCBKFGAOHEH\x18\r\x20\x01(\x0b2\
-    \x0c.ICIMAKBAJGBR\x0bOCBKFGAOHEH\x12\x20\n\x0bFJNHDHOHBCL\x18\x06\x20\
-    \x01(\rR\x0bFJNHDHOHBCLb\x06proto3\
+    roto\"\xb4\x01\n\x0eRotateMapCsReq\x12.\n\x0bMFNBANEDODD\x18\x02\x20\x01\
+    (\x0b2\x0c.CFKHKILIHHFR\x0bMFNBANEDODD\x12\x20\n\x0bFJNHDHOHBCL\x18\x05\
+    \x20\x01(\rR\x0bFJNHDHOHBCL\x12.\n\x0bOCBKFGAOHEH\x18\x04\x20\x01(\x0b2\
+    \x0c.ICIMAKBAJGBR\x0bOCBKFGAOHEH\x12\x20\n\x0bGLHAGJGAEHE\x18\x0c\x20\
+    \x01(\rR\x0bGLHAGJGAEHEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

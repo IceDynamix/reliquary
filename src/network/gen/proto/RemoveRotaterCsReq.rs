@@ -72,7 +72,7 @@ impl ::protobuf::Message for RemoveRotaterCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CCPDOABLKLP)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for RemoveRotaterCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.CCPDOABLKLP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for RemoveRotaterCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18RemoveRotaterCsReq.proto\x1a\x11CIDBBHAMNKI.proto\"D\n\x12RemoveRo\
-    taterCsReq\x12.\n\x0bCCPDOABLKLP\x18\n\x20\x01(\x0b2\x0c.CIDBBHAMNKIR\
+    taterCsReq\x12.\n\x0bCCPDOABLKLP\x18\x02\x20\x01(\x0b2\x0c.CIDBBHAMNKIR\
     \x0bCCPDOABLKLPb\x06proto3\
 ";
 

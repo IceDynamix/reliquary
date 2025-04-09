@@ -30,8 +30,8 @@ pub struct HandleFriendCsReq {
     // message fields
     // @@protoc_insertion_point(field:HandleFriendCsReq.NBDAMKFGKEI)
     pub NBDAMKFGKEI: bool,
-    // @@protoc_insertion_point(field:HandleFriendCsReq.KMONAGFELPG)
-    pub KMONAGFELPG: u32,
+    // @@protoc_insertion_point(field:HandleFriendCsReq.uid)
+    pub uid: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HandleFriendCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl HandleFriendCsReq {
             |m: &mut HandleFriendCsReq| { &mut m.NBDAMKFGKEI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KMONAGFELPG",
-            |m: &HandleFriendCsReq| { &m.KMONAGFELPG },
-            |m: &mut HandleFriendCsReq| { &mut m.KMONAGFELPG },
+            "uid",
+            |m: &HandleFriendCsReq| { &m.uid },
+            |m: &mut HandleFriendCsReq| { &mut m.uid },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HandleFriendCsReq>(
             "HandleFriendCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for HandleFriendCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                64 => {
                     self.NBDAMKFGKEI = is.read_bool()?;
                 },
-                96 => {
-                    self.KMONAGFELPG = is.read_uint32()?;
+                24 => {
+                    self.uid = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,8 +100,8 @@ impl ::protobuf::Message for HandleFriendCsReq {
         if self.NBDAMKFGKEI != false {
             my_size += 1 + 1;
         }
-        if self.KMONAGFELPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.KMONAGFELPG);
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.uid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for HandleFriendCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.NBDAMKFGKEI != false {
-            os.write_bool(14, self.NBDAMKFGKEI)?;
+            os.write_bool(8, self.NBDAMKFGKEI)?;
         }
-        if self.KMONAGFELPG != 0 {
-            os.write_uint32(12, self.KMONAGFELPG)?;
+        if self.uid != 0 {
+            os.write_uint32(3, self.uid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for HandleFriendCsReq {
 
     fn clear(&mut self) {
         self.NBDAMKFGKEI = false;
-        self.KMONAGFELPG = 0;
+        self.uid = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HandleFriendCsReq {
         static instance: HandleFriendCsReq = HandleFriendCsReq {
             NBDAMKFGKEI: false,
-            KMONAGFELPG: 0,
+            uid: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for HandleFriendCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17HandleFriendCsReq.proto\"W\n\x11HandleFriendCsReq\x12\x20\n\x0bNBD\
-    AMKFGKEI\x18\x0e\x20\x01(\x08R\x0bNBDAMKFGKEI\x12\x20\n\x0bKMONAGFELPG\
-    \x18\x0c\x20\x01(\rR\x0bKMONAGFELPGb\x06proto3\
+    \n\x17HandleFriendCsReq.proto\"G\n\x11HandleFriendCsReq\x12\x20\n\x0bNBD\
+    AMKFGKEI\x18\x08\x20\x01(\x08R\x0bNBDAMKFGKEI\x12\x10\n\x03uid\x18\x03\
+    \x20\x01(\rR\x03uidb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

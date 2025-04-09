@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BLFAOCILJGC {
     // message fields
+    // @@protoc_insertion_point(field:BLFAOCILJGC.ELGANMDPMID)
+    pub ELGANMDPMID: u32,
     // @@protoc_insertion_point(field:BLFAOCILJGC.FJNHDHOHBCL)
     pub FJNHDHOHBCL: u32,
     // @@protoc_insertion_point(field:BLFAOCILJGC.ICFBDPPJOAD)
     pub ICFBDPPJOAD: bool,
-    // @@protoc_insertion_point(field:BLFAOCILJGC.ELGANMDPMID)
-    pub ELGANMDPMID: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BLFAOCILJGC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl BLFAOCILJGC {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ELGANMDPMID",
+            |m: &BLFAOCILJGC| { &m.ELGANMDPMID },
+            |m: &mut BLFAOCILJGC| { &mut m.ELGANMDPMID },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FJNHDHOHBCL",
             |m: &BLFAOCILJGC| { &m.FJNHDHOHBCL },
             |m: &mut BLFAOCILJGC| { &mut m.FJNHDHOHBCL },
@@ -62,11 +67,6 @@ impl BLFAOCILJGC {
             "ICFBDPPJOAD",
             |m: &BLFAOCILJGC| { &m.ICFBDPPJOAD },
             |m: &mut BLFAOCILJGC| { &mut m.ICFBDPPJOAD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ELGANMDPMID",
-            |m: &BLFAOCILJGC| { &m.ELGANMDPMID },
-            |m: &mut BLFAOCILJGC| { &mut m.ELGANMDPMID },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BLFAOCILJGC>(
             "BLFAOCILJGC",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for BLFAOCILJGC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                16 => {
+                    self.ELGANMDPMID = is.read_uint32()?;
+                },
                 80 => {
                     self.FJNHDHOHBCL = is.read_uint32()?;
                 },
-                40 => {
+                64 => {
                     self.ICFBDPPJOAD = is.read_bool()?;
-                },
-                32 => {
-                    self.ELGANMDPMID = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for BLFAOCILJGC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.ELGANMDPMID != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.ELGANMDPMID);
+        }
         if self.FJNHDHOHBCL != 0 {
             my_size += ::protobuf::rt::uint32_size(10, self.FJNHDHOHBCL);
         }
         if self.ICFBDPPJOAD != false {
             my_size += 1 + 1;
-        }
-        if self.ELGANMDPMID != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.ELGANMDPMID);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for BLFAOCILJGC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.ELGANMDPMID != 0 {
+            os.write_uint32(2, self.ELGANMDPMID)?;
+        }
         if self.FJNHDHOHBCL != 0 {
             os.write_uint32(10, self.FJNHDHOHBCL)?;
         }
         if self.ICFBDPPJOAD != false {
-            os.write_bool(5, self.ICFBDPPJOAD)?;
-        }
-        if self.ELGANMDPMID != 0 {
-            os.write_uint32(4, self.ELGANMDPMID)?;
+            os.write_bool(8, self.ICFBDPPJOAD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for BLFAOCILJGC {
     }
 
     fn clear(&mut self) {
+        self.ELGANMDPMID = 0;
         self.FJNHDHOHBCL = 0;
         self.ICFBDPPJOAD = false;
-        self.ELGANMDPMID = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BLFAOCILJGC {
         static instance: BLFAOCILJGC = BLFAOCILJGC {
+            ELGANMDPMID: 0,
             FJNHDHOHBCL: 0,
             ICFBDPPJOAD: false,
-            ELGANMDPMID: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for BLFAOCILJGC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BLFAOCILJGC.proto\"s\n\x0bBLFAOCILJGC\x12\x20\n\x0bFJNHDHOHBCL\x18\
-    \n\x20\x01(\rR\x0bFJNHDHOHBCL\x12\x20\n\x0bICFBDPPJOAD\x18\x05\x20\x01(\
-    \x08R\x0bICFBDPPJOAD\x12\x20\n\x0bELGANMDPMID\x18\x04\x20\x01(\rR\x0bELG\
-    ANMDPMIDb\x06proto3\
+    \n\x11BLFAOCILJGC.proto\"s\n\x0bBLFAOCILJGC\x12\x20\n\x0bELGANMDPMID\x18\
+    \x02\x20\x01(\rR\x0bELGANMDPMID\x12\x20\n\x0bFJNHDHOHBCL\x18\n\x20\x01(\
+    \rR\x0bFJNHDHOHBCL\x12\x20\n\x0bICFBDPPJOAD\x18\x08\x20\x01(\x08R\x0bICF\
+    BDPPJOADb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

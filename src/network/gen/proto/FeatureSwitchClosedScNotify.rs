@@ -72,7 +72,7 @@ impl ::protobuf::Message for FeatureSwitchClosedScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                112 => {
                     self.KIMNKFPFBDG = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for FeatureSwitchClosedScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.KIMNKFPFBDG != ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::FEATURE_SWITCH_NONE) {
-            my_size += ::protobuf::rt::int32_size(9, self.KIMNKFPFBDG.value());
+            my_size += ::protobuf::rt::int32_size(14, self.KIMNKFPFBDG.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for FeatureSwitchClosedScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KIMNKFPFBDG != ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::FEATURE_SWITCH_NONE) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.KIMNKFPFBDG))?;
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.KIMNKFPFBDG))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for FeatureSwitchClosedScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!FeatureSwitchClosedScNotify.proto\x1a\x17FeatureSwitchType.proto\"S\n\
-    \x1bFeatureSwitchClosedScNotify\x124\n\x0bKIMNKFPFBDG\x18\t\x20\x01(\x0e\
-    2\x12.FeatureSwitchTypeR\x0bKIMNKFPFBDGb\x06proto3\
+    \x1bFeatureSwitchClosedScNotify\x124\n\x0bKIMNKFPFBDG\x18\x0e\x20\x01(\
+    \x0e2\x12.FeatureSwitchTypeR\x0bKIMNKFPFBDGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

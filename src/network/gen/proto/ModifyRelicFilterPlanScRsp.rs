@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ModifyRelicFilterPlanScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ModifyRelicFilterPlanScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:ModifyRelicFilterPlanScRsp.update_timestamp)
     pub update_timestamp: i64,
     // @@protoc_insertion_point(field:ModifyRelicFilterPlanScRsp.slot_index)
     pub slot_index: u32,
+    // @@protoc_insertion_point(field:ModifyRelicFilterPlanScRsp.retcode)
+    pub retcode: u32,
     // message oneof groups
     pub info_case: ::std::option::Option<modify_relic_filter_plan_sc_rsp::Info_case>,
     // special fields
@@ -52,7 +52,7 @@ impl ModifyRelicFilterPlanScRsp {
         ::std::default::Default::default()
     }
 
-    // string name = 10;
+    // string name = 15;
 
     pub fn name(&self) -> &str {
         match self.info_case {
@@ -150,7 +150,7 @@ impl ModifyRelicFilterPlanScRsp {
         }
     }
 
-    // .RelicFilterPlanSettings settings = 12;
+    // .RelicFilterPlanSettings settings = 14;
 
     pub fn settings(&self) -> &super::RelicFilterPlanSettings::RelicFilterPlanSettings {
         match self.info_case {
@@ -203,11 +203,6 @@ impl ModifyRelicFilterPlanScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &ModifyRelicFilterPlanScRsp| { &m.retcode },
-            |m: &mut ModifyRelicFilterPlanScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "update_timestamp",
             |m: &ModifyRelicFilterPlanScRsp| { &m.update_timestamp },
             |m: &mut ModifyRelicFilterPlanScRsp| { &mut m.update_timestamp },
@@ -216,6 +211,11 @@ impl ModifyRelicFilterPlanScRsp {
             "slot_index",
             |m: &ModifyRelicFilterPlanScRsp| { &m.slot_index },
             |m: &mut ModifyRelicFilterPlanScRsp| { &mut m.slot_index },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &ModifyRelicFilterPlanScRsp| { &m.retcode },
+            |m: &mut ModifyRelicFilterPlanScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_deref_has_get_set_simpler_accessor::<_, _>(
             "name",
@@ -256,22 +256,22 @@ impl ::protobuf::Message for ModifyRelicFilterPlanScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                32 => {
+                80 => {
                     self.update_timestamp = is.read_int64()?;
                 },
                 56 => {
                     self.slot_index = is.read_uint32()?;
                 },
-                82 => {
+                88 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                122 => {
                     self.info_case = ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::Info_case::Name(is.read_string()?));
                 },
                 18 => {
                     self.info_case = ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::Info_case::Icon(is.read_message()?));
                 },
-                98 => {
+                114 => {
                     self.info_case = ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::Info_case::Settings(is.read_message()?));
                 },
                 tag => {
@@ -286,19 +286,19 @@ impl ::protobuf::Message for ModifyRelicFilterPlanScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
-        }
         if self.update_timestamp != 0 {
-            my_size += ::protobuf::rt::int64_size(4, self.update_timestamp);
+            my_size += ::protobuf::rt::int64_size(10, self.update_timestamp);
         }
         if self.slot_index != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.slot_index);
         }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        }
         if let ::std::option::Option::Some(ref v) = self.info_case {
             match v {
                 &modify_relic_filter_plan_sc_rsp::Info_case::Name(ref v) => {
-                    my_size += ::protobuf::rt::string_size(10, &v);
+                    my_size += ::protobuf::rt::string_size(15, &v);
                 },
                 &modify_relic_filter_plan_sc_rsp::Info_case::Icon(ref v) => {
                     let len = v.compute_size();
@@ -316,25 +316,25 @@ impl ::protobuf::Message for ModifyRelicFilterPlanScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
-        }
         if self.update_timestamp != 0 {
-            os.write_int64(4, self.update_timestamp)?;
+            os.write_int64(10, self.update_timestamp)?;
         }
         if self.slot_index != 0 {
             os.write_uint32(7, self.slot_index)?;
         }
+        if self.retcode != 0 {
+            os.write_uint32(11, self.retcode)?;
+        }
         if let ::std::option::Option::Some(ref v) = self.info_case {
             match v {
                 &modify_relic_filter_plan_sc_rsp::Info_case::Name(ref v) => {
-                    os.write_string(10, v)?;
+                    os.write_string(15, v)?;
                 },
                 &modify_relic_filter_plan_sc_rsp::Info_case::Icon(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
                 &modify_relic_filter_plan_sc_rsp::Info_case::Settings(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
             };
         }
@@ -355,9 +355,9 @@ impl ::protobuf::Message for ModifyRelicFilterPlanScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.update_timestamp = 0;
         self.slot_index = 0;
+        self.retcode = 0;
         self.info_case = ::std::option::Option::None;
         self.info_case = ::std::option::Option::None;
         self.info_case = ::std::option::Option::None;
@@ -366,9 +366,9 @@ impl ::protobuf::Message for ModifyRelicFilterPlanScRsp {
 
     fn default_instance() -> &'static ModifyRelicFilterPlanScRsp {
         static instance: ModifyRelicFilterPlanScRsp = ModifyRelicFilterPlanScRsp {
-            retcode: 0,
             update_timestamp: 0,
             slot_index: 0,
+            retcode: 0,
             info_case: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -428,11 +428,11 @@ pub mod modify_relic_filter_plan_sc_rsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20ModifyRelicFilterPlanScRsp.proto\x1a\x19RelicFilterPlanIcon.proto\
     \x1a\x1dRelicFilterPlanSettings.proto\"\x87\x02\n\x1aModifyRelicFilterPl\
-    anScRsp\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12)\n\x10up\
-    date_timestamp\x18\x04\x20\x01(\x03R\x0fupdateTimestamp\x12\x1d\n\nslot_\
-    index\x18\x07\x20\x01(\rR\tslotIndex\x12\x14\n\x04name\x18\n\x20\x01(\tH\
+    anScRsp\x12)\n\x10update_timestamp\x18\n\x20\x01(\x03R\x0fupdateTimestam\
+    p\x12\x1d\n\nslot_index\x18\x07\x20\x01(\rR\tslotIndex\x12\x18\n\x07retc\
+    ode\x18\x0b\x20\x01(\rR\x07retcode\x12\x14\n\x04name\x18\x0f\x20\x01(\tH\
     \0R\x04name\x12*\n\x04icon\x18\x02\x20\x01(\x0b2\x14.RelicFilterPlanIcon\
-    H\0R\x04icon\x126\n\x08settings\x18\x0c\x20\x01(\x0b2\x18.RelicFilterPla\
+    H\0R\x04icon\x126\n\x08settings\x18\x0e\x20\x01(\x0b2\x18.RelicFilterPla\
     nSettingsH\0R\x08settingsB\x0b\n\tinfo_caseb\x06proto3\
 ";
 

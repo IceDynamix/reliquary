@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdBattleCollegeType {
     // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.CmdBattleCollegeTypeNone)
     CmdBattleCollegeTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.CmdGetBattleCollegeDataScRsp)
-    CmdGetBattleCollegeDataScRsp = 5768,
-    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.CmdStartBattleCollegeScRsp)
-    CmdStartBattleCollegeScRsp = 5730,
-    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.CmdBattleCollegeDataChangeScNotify)
-    CmdBattleCollegeDataChangeScNotify = 5758,
     // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.CmdGetBattleCollegeDataCsReq)
-    CmdGetBattleCollegeDataCsReq = 5701,
+    CmdGetBattleCollegeDataCsReq = 5711,
     // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.CmdStartBattleCollegeCsReq)
-    CmdStartBattleCollegeCsReq = 5724,
+    CmdStartBattleCollegeCsReq = 5709,
+    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.CmdBattleCollegeDataChangeScNotify)
+    CmdBattleCollegeDataChangeScNotify = 5747,
+    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.CmdGetBattleCollegeDataScRsp)
+    CmdGetBattleCollegeDataScRsp = 5713,
+    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.CmdStartBattleCollegeScRsp)
+    CmdStartBattleCollegeScRsp = 5735,
 }
 
 impl ::protobuf::Enum for CmdBattleCollegeType {
@@ -51,11 +51,11 @@ impl ::protobuf::Enum for CmdBattleCollegeType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdBattleCollegeType> {
         match value {
             0 => ::std::option::Option::Some(CmdBattleCollegeType::CmdBattleCollegeTypeNone),
-            5768 => ::std::option::Option::Some(CmdBattleCollegeType::CmdGetBattleCollegeDataScRsp),
-            5730 => ::std::option::Option::Some(CmdBattleCollegeType::CmdStartBattleCollegeScRsp),
-            5758 => ::std::option::Option::Some(CmdBattleCollegeType::CmdBattleCollegeDataChangeScNotify),
-            5701 => ::std::option::Option::Some(CmdBattleCollegeType::CmdGetBattleCollegeDataCsReq),
-            5724 => ::std::option::Option::Some(CmdBattleCollegeType::CmdStartBattleCollegeCsReq),
+            5711 => ::std::option::Option::Some(CmdBattleCollegeType::CmdGetBattleCollegeDataCsReq),
+            5709 => ::std::option::Option::Some(CmdBattleCollegeType::CmdStartBattleCollegeCsReq),
+            5747 => ::std::option::Option::Some(CmdBattleCollegeType::CmdBattleCollegeDataChangeScNotify),
+            5713 => ::std::option::Option::Some(CmdBattleCollegeType::CmdGetBattleCollegeDataScRsp),
+            5735 => ::std::option::Option::Some(CmdBattleCollegeType::CmdStartBattleCollegeScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -63,22 +63,22 @@ impl ::protobuf::Enum for CmdBattleCollegeType {
     fn from_str(str: &str) -> ::std::option::Option<CmdBattleCollegeType> {
         match str {
             "CmdBattleCollegeTypeNone" => ::std::option::Option::Some(CmdBattleCollegeType::CmdBattleCollegeTypeNone),
-            "CmdGetBattleCollegeDataScRsp" => ::std::option::Option::Some(CmdBattleCollegeType::CmdGetBattleCollegeDataScRsp),
-            "CmdStartBattleCollegeScRsp" => ::std::option::Option::Some(CmdBattleCollegeType::CmdStartBattleCollegeScRsp),
-            "CmdBattleCollegeDataChangeScNotify" => ::std::option::Option::Some(CmdBattleCollegeType::CmdBattleCollegeDataChangeScNotify),
             "CmdGetBattleCollegeDataCsReq" => ::std::option::Option::Some(CmdBattleCollegeType::CmdGetBattleCollegeDataCsReq),
             "CmdStartBattleCollegeCsReq" => ::std::option::Option::Some(CmdBattleCollegeType::CmdStartBattleCollegeCsReq),
+            "CmdBattleCollegeDataChangeScNotify" => ::std::option::Option::Some(CmdBattleCollegeType::CmdBattleCollegeDataChangeScNotify),
+            "CmdGetBattleCollegeDataScRsp" => ::std::option::Option::Some(CmdBattleCollegeType::CmdGetBattleCollegeDataScRsp),
+            "CmdStartBattleCollegeScRsp" => ::std::option::Option::Some(CmdBattleCollegeType::CmdStartBattleCollegeScRsp),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdBattleCollegeType] = &[
         CmdBattleCollegeType::CmdBattleCollegeTypeNone,
-        CmdBattleCollegeType::CmdGetBattleCollegeDataScRsp,
-        CmdBattleCollegeType::CmdStartBattleCollegeScRsp,
-        CmdBattleCollegeType::CmdBattleCollegeDataChangeScNotify,
         CmdBattleCollegeType::CmdGetBattleCollegeDataCsReq,
         CmdBattleCollegeType::CmdStartBattleCollegeCsReq,
+        CmdBattleCollegeType::CmdBattleCollegeDataChangeScNotify,
+        CmdBattleCollegeType::CmdGetBattleCollegeDataScRsp,
+        CmdBattleCollegeType::CmdStartBattleCollegeScRsp,
     ];
 }
 
@@ -91,11 +91,11 @@ impl ::protobuf::EnumFull for CmdBattleCollegeType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdBattleCollegeType::CmdBattleCollegeTypeNone => 0,
-            CmdBattleCollegeType::CmdGetBattleCollegeDataScRsp => 1,
-            CmdBattleCollegeType::CmdStartBattleCollegeScRsp => 2,
+            CmdBattleCollegeType::CmdGetBattleCollegeDataCsReq => 1,
+            CmdBattleCollegeType::CmdStartBattleCollegeCsReq => 2,
             CmdBattleCollegeType::CmdBattleCollegeDataChangeScNotify => 3,
-            CmdBattleCollegeType::CmdGetBattleCollegeDataCsReq => 4,
-            CmdBattleCollegeType::CmdStartBattleCollegeCsReq => 5,
+            CmdBattleCollegeType::CmdGetBattleCollegeDataScRsp => 4,
+            CmdBattleCollegeType::CmdStartBattleCollegeScRsp => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -116,9 +116,9 @@ impl CmdBattleCollegeType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aCmdBattleCollegeType.proto*\xe5\x01\n\x14CmdBattleCollegeType\x12\
     \x1c\n\x18CmdBattleCollegeTypeNone\x10\0\x12!\n\x1cCmdGetBattleCollegeDa\
-    taScRsp\x10\x88-\x12\x1f\n\x1aCmdStartBattleCollegeScRsp\x10\xe2,\x12'\n\
-    \"CmdBattleCollegeDataChangeScNotify\x10\xfe,\x12!\n\x1cCmdGetBattleColl\
-    egeDataCsReq\x10\xc5,\x12\x1f\n\x1aCmdStartBattleCollegeCsReq\x10\xdc,b\
+    taCsReq\x10\xcf,\x12\x1f\n\x1aCmdStartBattleCollegeCsReq\x10\xcd,\x12'\n\
+    \"CmdBattleCollegeDataChangeScNotify\x10\xf3,\x12!\n\x1cCmdGetBattleColl\
+    egeDataScRsp\x10\xd1,\x12\x1f\n\x1aCmdStartBattleCollegeScRsp\x10\xe7,b\
     \x06proto3\
 ";
 

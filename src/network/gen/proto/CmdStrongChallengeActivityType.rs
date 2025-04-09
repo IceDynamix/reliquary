@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdStrongChallengeActivityType {
     // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.CmdStrongChallengeActivityTypeNone)
     CmdStrongChallengeActivityTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.CmdEnterStrongChallengeActivityStageCsReq)
-    CmdEnterStrongChallengeActivityStageCsReq = 6658,
-    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.CmdEnterStrongChallengeActivityStageScRsp)
-    CmdEnterStrongChallengeActivityStageScRsp = 6624,
     // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.CmdGetStrongChallengeActivityDataCsReq)
-    CmdGetStrongChallengeActivityDataCsReq = 6601,
-    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.CmdGetStrongChallengeActivityDataScRsp)
-    CmdGetStrongChallengeActivityDataScRsp = 6668,
+    CmdGetStrongChallengeActivityDataCsReq = 6611,
+    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.CmdEnterStrongChallengeActivityStageScRsp)
+    CmdEnterStrongChallengeActivityStageScRsp = 6609,
+    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.CmdEnterStrongChallengeActivityStageCsReq)
+    CmdEnterStrongChallengeActivityStageCsReq = 6647,
     // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.CmdStrongChallengeActivityBattleEndScNotify)
-    CmdStrongChallengeActivityBattleEndScNotify = 6630,
+    CmdStrongChallengeActivityBattleEndScNotify = 6635,
+    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.CmdGetStrongChallengeActivityDataScRsp)
+    CmdGetStrongChallengeActivityDataScRsp = 6613,
 }
 
 impl ::protobuf::Enum for CmdStrongChallengeActivityType {
@@ -51,11 +51,11 @@ impl ::protobuf::Enum for CmdStrongChallengeActivityType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdStrongChallengeActivityType> {
         match value {
             0 => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdStrongChallengeActivityTypeNone),
-            6658 => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdEnterStrongChallengeActivityStageCsReq),
-            6624 => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdEnterStrongChallengeActivityStageScRsp),
-            6601 => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdGetStrongChallengeActivityDataCsReq),
-            6668 => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdGetStrongChallengeActivityDataScRsp),
-            6630 => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdStrongChallengeActivityBattleEndScNotify),
+            6611 => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdGetStrongChallengeActivityDataCsReq),
+            6609 => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdEnterStrongChallengeActivityStageScRsp),
+            6647 => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdEnterStrongChallengeActivityStageCsReq),
+            6635 => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdStrongChallengeActivityBattleEndScNotify),
+            6613 => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdGetStrongChallengeActivityDataScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -63,22 +63,22 @@ impl ::protobuf::Enum for CmdStrongChallengeActivityType {
     fn from_str(str: &str) -> ::std::option::Option<CmdStrongChallengeActivityType> {
         match str {
             "CmdStrongChallengeActivityTypeNone" => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdStrongChallengeActivityTypeNone),
-            "CmdEnterStrongChallengeActivityStageCsReq" => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdEnterStrongChallengeActivityStageCsReq),
-            "CmdEnterStrongChallengeActivityStageScRsp" => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdEnterStrongChallengeActivityStageScRsp),
             "CmdGetStrongChallengeActivityDataCsReq" => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdGetStrongChallengeActivityDataCsReq),
-            "CmdGetStrongChallengeActivityDataScRsp" => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdGetStrongChallengeActivityDataScRsp),
+            "CmdEnterStrongChallengeActivityStageScRsp" => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdEnterStrongChallengeActivityStageScRsp),
+            "CmdEnterStrongChallengeActivityStageCsReq" => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdEnterStrongChallengeActivityStageCsReq),
             "CmdStrongChallengeActivityBattleEndScNotify" => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdStrongChallengeActivityBattleEndScNotify),
+            "CmdGetStrongChallengeActivityDataScRsp" => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdGetStrongChallengeActivityDataScRsp),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdStrongChallengeActivityType] = &[
         CmdStrongChallengeActivityType::CmdStrongChallengeActivityTypeNone,
-        CmdStrongChallengeActivityType::CmdEnterStrongChallengeActivityStageCsReq,
-        CmdStrongChallengeActivityType::CmdEnterStrongChallengeActivityStageScRsp,
         CmdStrongChallengeActivityType::CmdGetStrongChallengeActivityDataCsReq,
-        CmdStrongChallengeActivityType::CmdGetStrongChallengeActivityDataScRsp,
+        CmdStrongChallengeActivityType::CmdEnterStrongChallengeActivityStageScRsp,
+        CmdStrongChallengeActivityType::CmdEnterStrongChallengeActivityStageCsReq,
         CmdStrongChallengeActivityType::CmdStrongChallengeActivityBattleEndScNotify,
+        CmdStrongChallengeActivityType::CmdGetStrongChallengeActivityDataScRsp,
     ];
 }
 
@@ -91,11 +91,11 @@ impl ::protobuf::EnumFull for CmdStrongChallengeActivityType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdStrongChallengeActivityType::CmdStrongChallengeActivityTypeNone => 0,
-            CmdStrongChallengeActivityType::CmdEnterStrongChallengeActivityStageCsReq => 1,
+            CmdStrongChallengeActivityType::CmdGetStrongChallengeActivityDataCsReq => 1,
             CmdStrongChallengeActivityType::CmdEnterStrongChallengeActivityStageScRsp => 2,
-            CmdStrongChallengeActivityType::CmdGetStrongChallengeActivityDataCsReq => 3,
-            CmdStrongChallengeActivityType::CmdGetStrongChallengeActivityDataScRsp => 4,
-            CmdStrongChallengeActivityType::CmdStrongChallengeActivityBattleEndScNotify => 5,
+            CmdStrongChallengeActivityType::CmdEnterStrongChallengeActivityStageCsReq => 3,
+            CmdStrongChallengeActivityType::CmdStrongChallengeActivityBattleEndScNotify => 4,
+            CmdStrongChallengeActivityType::CmdGetStrongChallengeActivityDataScRsp => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -115,11 +115,11 @@ impl CmdStrongChallengeActivityType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$CmdStrongChallengeActivityType.proto*\xb4\x02\n\x1eCmdStrongChallenge\
-    ActivityType\x12&\n\"CmdStrongChallengeActivityTypeNone\x10\0\x12.\n)Cmd\
-    EnterStrongChallengeActivityStageCsReq\x10\x824\x12.\n)CmdEnterStrongCha\
-    llengeActivityStageScRsp\x10\xe03\x12+\n&CmdGetStrongChallengeActivityDa\
-    taCsReq\x10\xc93\x12+\n&CmdGetStrongChallengeActivityDataScRsp\x10\x8c4\
-    \x120\n+CmdStrongChallengeActivityBattleEndScNotify\x10\xe63b\x06proto3\
+    ActivityType\x12&\n\"CmdStrongChallengeActivityTypeNone\x10\0\x12+\n&Cmd\
+    GetStrongChallengeActivityDataCsReq\x10\xd33\x12.\n)CmdEnterStrongChalle\
+    ngeActivityStageScRsp\x10\xd13\x12.\n)CmdEnterStrongChallengeActivitySta\
+    geCsReq\x10\xf73\x120\n+CmdStrongChallengeActivityBattleEndScNotify\x10\
+    \xeb3\x12+\n&CmdGetStrongChallengeActivityDataScRsp\x10\xd53b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

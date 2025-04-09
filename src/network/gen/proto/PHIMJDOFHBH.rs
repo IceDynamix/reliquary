@@ -38,8 +38,8 @@ pub struct PHIMJDOFHBH {
     pub CIMJOKGJPAP: ::std::string::String,
     // @@protoc_insertion_point(field:PHIMJDOFHBH.IMAIOIEBINH)
     pub IMAIOIEBINH: ::std::string::String,
-    // @@protoc_insertion_point(field:PHIMJDOFHBH.DNPOBGICFCJ)
-    pub DNPOBGICFCJ: ::std::string::String,
+    // @@protoc_insertion_point(field:PHIMJDOFHBH.msg)
+    pub msg: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:PHIMJDOFHBH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -85,9 +85,9 @@ impl PHIMJDOFHBH {
             |m: &mut PHIMJDOFHBH| { &mut m.IMAIOIEBINH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DNPOBGICFCJ",
-            |m: &PHIMJDOFHBH| { &m.DNPOBGICFCJ },
-            |m: &mut PHIMJDOFHBH| { &mut m.DNPOBGICFCJ },
+            "msg",
+            |m: &PHIMJDOFHBH| { &m.msg },
+            |m: &mut PHIMJDOFHBH| { &mut m.msg },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PHIMJDOFHBH>(
             "PHIMJDOFHBH",
@@ -123,7 +123,7 @@ impl ::protobuf::Message for PHIMJDOFHBH {
                     self.IMAIOIEBINH = is.read_string()?;
                 },
                 50 => {
-                    self.DNPOBGICFCJ = is.read_string()?;
+                    self.msg = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -152,8 +152,8 @@ impl ::protobuf::Message for PHIMJDOFHBH {
         if !self.IMAIOIEBINH.is_empty() {
             my_size += ::protobuf::rt::string_size(5, &self.IMAIOIEBINH);
         }
-        if !self.DNPOBGICFCJ.is_empty() {
-            my_size += ::protobuf::rt::string_size(6, &self.DNPOBGICFCJ);
+        if !self.msg.is_empty() {
+            my_size += ::protobuf::rt::string_size(6, &self.msg);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -176,8 +176,8 @@ impl ::protobuf::Message for PHIMJDOFHBH {
         if !self.IMAIOIEBINH.is_empty() {
             os.write_string(5, &self.IMAIOIEBINH)?;
         }
-        if !self.DNPOBGICFCJ.is_empty() {
-            os.write_string(6, &self.DNPOBGICFCJ)?;
+        if !self.msg.is_empty() {
+            os.write_string(6, &self.msg)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -201,7 +201,7 @@ impl ::protobuf::Message for PHIMJDOFHBH {
         self.MJMIEAKAHCD.clear();
         self.CIMJOKGJPAP.clear();
         self.IMAIOIEBINH.clear();
-        self.DNPOBGICFCJ.clear();
+        self.msg.clear();
         self.special_fields.clear();
     }
 
@@ -212,7 +212,7 @@ impl ::protobuf::Message for PHIMJDOFHBH {
             MJMIEAKAHCD: ::std::string::String::new(),
             CIMJOKGJPAP: ::std::string::String::new(),
             IMAIOIEBINH: ::std::string::String::new(),
-            DNPOBGICFCJ: ::std::string::String::new(),
+            msg: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -237,12 +237,12 @@ impl ::protobuf::reflect::ProtobufValue for PHIMJDOFHBH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PHIMJDOFHBH.proto\"\xd9\x01\n\x0bPHIMJDOFHBH\x12\x20\n\x0bMJJBNDAK\
+    \n\x11PHIMJDOFHBH.proto\"\xc9\x01\n\x0bPHIMJDOFHBH\x12\x20\n\x0bMJJBNDAK\
     OIF\x18\x01\x20\x01(\tR\x0bMJJBNDAKOIF\x12\x20\n\x0bOAEMEDMENHH\x18\x02\
     \x20\x01(\tR\x0bOAEMEDMENHH\x12\x20\n\x0bMJMIEAKAHCD\x18\x03\x20\x01(\tR\
     \x0bMJMIEAKAHCD\x12\x20\n\x0bCIMJOKGJPAP\x18\x04\x20\x01(\tR\x0bCIMJOKGJ\
-    PAP\x12\x20\n\x0bIMAIOIEBINH\x18\x05\x20\x01(\tR\x0bIMAIOIEBINH\x12\x20\
-    \n\x0bDNPOBGICFCJ\x18\x06\x20\x01(\tR\x0bDNPOBGICFCJb\x06proto3\
+    PAP\x12\x20\n\x0bIMAIOIEBINH\x18\x05\x20\x01(\tR\x0bIMAIOIEBINH\x12\x10\
+    \n\x03msg\x18\x06\x20\x01(\tR\x03msgb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

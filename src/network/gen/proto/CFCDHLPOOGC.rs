@@ -48,7 +48,7 @@ impl CFCDHLPOOGC {
         ::std::default::Default::default()
     }
 
-    // .LHADMKCGCKO ICFFJLICIMB = 298;
+    // .LHADMKCGCKO ICFFJLICIMB = 377;
 
     pub fn ICFFJLICIMB(&self) -> &super::LHADMKCGCKO::LHADMKCGCKO {
         match self.KFELKJLDKEH {
@@ -131,10 +131,10 @@ impl ::protobuf::Message for CFCDHLPOOGC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.IKOBKINKHCF)?;
                 },
-                2386 => {
+                3018 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(cfcdhlpoogc::KFELKJLDKEH::ICFFJLICIMB(is.read_message()?));
                 },
                 tag => {
@@ -168,12 +168,12 @@ impl ::protobuf::Message for CFCDHLPOOGC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.IKOBKINKHCF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
             match v {
                 &cfcdhlpoogc::KFELKJLDKEH::ICFFJLICIMB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(298, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(377, v, os)?;
                 },
             };
         }
@@ -256,8 +256,8 @@ pub mod cfcdhlpoogc {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CFCDHLPOOGC.proto\x1a\x11LHADMKCGCKO.proto\x1a\x11MIKFNBBOPIP.prot\
-    o\"\x7f\n\x0bCFCDHLPOOGC\x12.\n\x0bIKOBKINKHCF\x18\x0c\x20\x01(\x0b2\x0c\
-    .MIKFNBBOPIPR\x0bIKOBKINKHCF\x121\n\x0bICFFJLICIMB\x18\xaa\x02\x20\x01(\
+    o\"\x7f\n\x0bCFCDHLPOOGC\x12.\n\x0bIKOBKINKHCF\x18\x0f\x20\x01(\x0b2\x0c\
+    .MIKFNBBOPIPR\x0bIKOBKINKHCF\x121\n\x0bICFFJLICIMB\x18\xf9\x02\x20\x01(\
     \x0b2\x0c.LHADMKCGCKOH\0R\x0bICFFJLICIMBB\r\n\x0bKFELKJLDKEHb\x06proto3\
 ";
 

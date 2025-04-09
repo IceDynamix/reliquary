@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GameplayCounterUpdateScNotify {
     // message fields
-    // @@protoc_insertion_point(field:GameplayCounterUpdateScNotify.ALIFPIHNMEK)
-    pub ALIFPIHNMEK: ::protobuf::EnumOrUnknown<super::CNPPAAMMFFD::CNPPAAMMFFD>,
     // @@protoc_insertion_point(field:GameplayCounterUpdateScNotify.BLOGJDCKAHM)
     pub BLOGJDCKAHM: u32,
+    // @@protoc_insertion_point(field:GameplayCounterUpdateScNotify.ALIFPIHNMEK)
+    pub ALIFPIHNMEK: ::protobuf::EnumOrUnknown<super::CNPPAAMMFFD::CNPPAAMMFFD>,
     // @@protoc_insertion_point(field:GameplayCounterUpdateScNotify.NMGLNHPANAH)
     pub NMGLNHPANAH: u32,
     // special fields
@@ -54,14 +54,14 @@ impl GameplayCounterUpdateScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ALIFPIHNMEK",
-            |m: &GameplayCounterUpdateScNotify| { &m.ALIFPIHNMEK },
-            |m: &mut GameplayCounterUpdateScNotify| { &mut m.ALIFPIHNMEK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BLOGJDCKAHM",
             |m: &GameplayCounterUpdateScNotify| { &m.BLOGJDCKAHM },
             |m: &mut GameplayCounterUpdateScNotify| { &mut m.BLOGJDCKAHM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ALIFPIHNMEK",
+            |m: &GameplayCounterUpdateScNotify| { &m.ALIFPIHNMEK },
+            |m: &mut GameplayCounterUpdateScNotify| { &mut m.ALIFPIHNMEK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NMGLNHPANAH",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for GameplayCounterUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.ALIFPIHNMEK = is.read_enum_or_unknown()?;
-                },
-                32 => {
+                16 => {
                     self.BLOGJDCKAHM = is.read_uint32()?;
                 },
                 64 => {
+                    self.ALIFPIHNMEK = is.read_enum_or_unknown()?;
+                },
+                72 => {
                     self.NMGLNHPANAH = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for GameplayCounterUpdateScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ALIFPIHNMEK != ::protobuf::EnumOrUnknown::new(super::CNPPAAMMFFD::CNPPAAMMFFD::GAMEPLAY_COUNTER_UPDATE_REASON_NONE) {
-            my_size += ::protobuf::rt::int32_size(11, self.ALIFPIHNMEK.value());
-        }
         if self.BLOGJDCKAHM != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.BLOGJDCKAHM);
+            my_size += ::protobuf::rt::uint32_size(2, self.BLOGJDCKAHM);
+        }
+        if self.ALIFPIHNMEK != ::protobuf::EnumOrUnknown::new(super::CNPPAAMMFFD::CNPPAAMMFFD::GAMEPLAY_COUNTER_UPDATE_REASON_NONE) {
+            my_size += ::protobuf::rt::int32_size(8, self.ALIFPIHNMEK.value());
         }
         if self.NMGLNHPANAH != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.NMGLNHPANAH);
+            my_size += ::protobuf::rt::uint32_size(9, self.NMGLNHPANAH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for GameplayCounterUpdateScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ALIFPIHNMEK != ::protobuf::EnumOrUnknown::new(super::CNPPAAMMFFD::CNPPAAMMFFD::GAMEPLAY_COUNTER_UPDATE_REASON_NONE) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.ALIFPIHNMEK))?;
-        }
         if self.BLOGJDCKAHM != 0 {
-            os.write_uint32(4, self.BLOGJDCKAHM)?;
+            os.write_uint32(2, self.BLOGJDCKAHM)?;
+        }
+        if self.ALIFPIHNMEK != ::protobuf::EnumOrUnknown::new(super::CNPPAAMMFFD::CNPPAAMMFFD::GAMEPLAY_COUNTER_UPDATE_REASON_NONE) {
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.ALIFPIHNMEK))?;
         }
         if self.NMGLNHPANAH != 0 {
-            os.write_uint32(8, self.NMGLNHPANAH)?;
+            os.write_uint32(9, self.NMGLNHPANAH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for GameplayCounterUpdateScNotify {
     }
 
     fn clear(&mut self) {
-        self.ALIFPIHNMEK = ::protobuf::EnumOrUnknown::new(super::CNPPAAMMFFD::CNPPAAMMFFD::GAMEPLAY_COUNTER_UPDATE_REASON_NONE);
         self.BLOGJDCKAHM = 0;
+        self.ALIFPIHNMEK = ::protobuf::EnumOrUnknown::new(super::CNPPAAMMFFD::CNPPAAMMFFD::GAMEPLAY_COUNTER_UPDATE_REASON_NONE);
         self.NMGLNHPANAH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GameplayCounterUpdateScNotify {
         static instance: GameplayCounterUpdateScNotify = GameplayCounterUpdateScNotify {
-            ALIFPIHNMEK: ::protobuf::EnumOrUnknown::from_i32(0),
             BLOGJDCKAHM: 0,
+            ALIFPIHNMEK: ::protobuf::EnumOrUnknown::from_i32(0),
             NMGLNHPANAH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for GameplayCounterUpdateScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#GameplayCounterUpdateScNotify.proto\x1a\x11CNPPAAMMFFD.proto\"\x93\
-    \x01\n\x1dGameplayCounterUpdateScNotify\x12.\n\x0bALIFPIHNMEK\x18\x0b\
-    \x20\x01(\x0e2\x0c.CNPPAAMMFFDR\x0bALIFPIHNMEK\x12\x20\n\x0bBLOGJDCKAHM\
-    \x18\x04\x20\x01(\rR\x0bBLOGJDCKAHM\x12\x20\n\x0bNMGLNHPANAH\x18\x08\x20\
-    \x01(\rR\x0bNMGLNHPANAHb\x06proto3\
+    \x01\n\x1dGameplayCounterUpdateScNotify\x12\x20\n\x0bBLOGJDCKAHM\x18\x02\
+    \x20\x01(\rR\x0bBLOGJDCKAHM\x12.\n\x0bALIFPIHNMEK\x18\x08\x20\x01(\x0e2\
+    \x0c.CNPPAAMMFFDR\x0bALIFPIHNMEK\x12\x20\n\x0bNMGLNHPANAH\x18\t\x20\x01(\
+    \rR\x0bNMGLNHPANAHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

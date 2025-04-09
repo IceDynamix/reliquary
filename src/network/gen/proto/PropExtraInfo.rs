@@ -48,7 +48,7 @@ impl PropExtraInfo {
         ::std::default::Default::default()
     }
 
-    // .ANIKPLFEKMG rogue_info = 4;
+    // .ANIKPLFEKMG rogue_info = 11;
 
     pub fn rogue_info(&self) -> &super::ANIKPLFEKMG::ANIKPLFEKMG {
         match self.info_case {
@@ -146,7 +146,7 @@ impl PropExtraInfo {
         }
     }
 
-    // .AOIHEKLNDID chess_rogue_info = 8;
+    // .AOIHEKLNDID chess_rogue_info = 3;
 
     pub fn chess_rogue_info(&self) -> &super::AOIHEKLNDID::AOIHEKLNDID {
         match self.info_case {
@@ -195,7 +195,7 @@ impl PropExtraInfo {
         }
     }
 
-    // .HDOCJDHLAPD rogue_tourn_door_info = 2;
+    // .HDOCJDHLAPD rogue_tourn_door_info = 7;
 
     pub fn rogue_tourn_door_info(&self) -> &super::HDOCJDHLAPD::HDOCJDHLAPD {
         match self.info_case {
@@ -244,7 +244,7 @@ impl PropExtraInfo {
         }
     }
 
-    // .EEKIHHEFAIC rogue_tourn_workbench_info = 3;
+    // .EEKIHHEFAIC rogue_tourn_workbench_info = 10;
 
     pub fn rogue_tourn_workbench_info(&self) -> &super::EEKIHHEFAIC::EEKIHHEFAIC {
         match self.info_case {
@@ -293,7 +293,7 @@ impl PropExtraInfo {
         }
     }
 
-    // .EIGOIECDMNA rogue_gamble_machine_info = 14;
+    // .EIGOIECDMNA rogue_gamble_machine_info = 15;
 
     pub fn rogue_gamble_machine_info(&self) -> &super::EIGOIECDMNA::EIGOIECDMNA {
         match self.info_case {
@@ -342,7 +342,7 @@ impl PropExtraInfo {
         }
     }
 
-    // .OJCKHBBBFEF rogue_curse_chest_info = 12;
+    // .OJCKHBBBFEF rogue_curse_chest_info = 14;
 
     pub fn rogue_curse_chest_info(&self) -> &super::OJCKHBBBFEF::OJCKHBBBFEF {
         match self.info_case {
@@ -391,7 +391,7 @@ impl PropExtraInfo {
         }
     }
 
-    // .JEGHKICDAOO rogue_magic_door_info = 10;
+    // .JEGHKICDAOO rogue_magic_door_info = 1;
 
     pub fn rogue_magic_door_info(&self) -> &super::JEGHKICDAOO::JEGHKICDAOO {
         match self.info_case {
@@ -523,31 +523,31 @@ impl ::protobuf::Message for PropExtraInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.timeline_info)?;
                 },
-                34 => {
+                90 => {
                     self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::RogueInfo(is.read_message()?));
                 },
                 106 => {
                     self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::AeonInfo(is.read_message()?));
                 },
-                66 => {
+                26 => {
                     self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::ChessRogueInfo(is.read_message()?));
                 },
-                18 => {
+                58 => {
                     self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::RogueTournDoorInfo(is.read_message()?));
                 },
-                26 => {
+                82 => {
                     self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::RogueTournWorkbenchInfo(is.read_message()?));
                 },
-                114 => {
+                122 => {
                     self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::RogueGambleMachineInfo(is.read_message()?));
                 },
-                98 => {
+                114 => {
                     self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::RogueCurseChestInfo(is.read_message()?));
                 },
-                82 => {
+                10 => {
                     self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::RogueMagicDoorInfo(is.read_message()?));
                 },
                 tag => {
@@ -609,33 +609,33 @@ impl ::protobuf::Message for PropExtraInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.timeline_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         if let ::std::option::Option::Some(ref v) = self.info_case {
             match v {
                 &prop_extra_info::Info_case::RogueInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
                 &prop_extra_info::Info_case::AeonInfo(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
                 &prop_extra_info::Info_case::ChessRogueInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-                },
-                &prop_extra_info::Info_case::RogueTournDoorInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-                },
-                &prop_extra_info::Info_case::RogueTournWorkbenchInfo(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
                 },
+                &prop_extra_info::Info_case::RogueTournDoorInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+                },
+                &prop_extra_info::Info_case::RogueTournWorkbenchInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                },
                 &prop_extra_info::Info_case::RogueGambleMachineInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
                 &prop_extra_info::Info_case::RogueCurseChestInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
                 &prop_extra_info::Info_case::RogueMagicDoorInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
                 },
             };
         }
@@ -742,18 +742,18 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     oto\x1a\x11EEKIHHEFAIC.proto\x1a\x11EIGOIECDMNA.proto\x1a\x11HDOCJDHLAPD\
     .proto\x1a\x11JEGHKICDAOO.proto\x1a\x11LNOJKICCCME.proto\x1a\x11OJCKHBBB\
     FEF.proto\x1a\x12PropAeonInfo.proto\"\xc9\x04\n\rPropExtraInfo\x121\n\rt\
-    imeline_info\x18\x01\x20\x01(\x0b2\x0c.LNOJKICCCMER\x0ctimelineInfo\x12-\
-    \n\nrogue_info\x18\x04\x20\x01(\x0b2\x0c.ANIKPLFEKMGH\0R\trogueInfo\x12,\
+    imeline_info\x18\x05\x20\x01(\x0b2\x0c.LNOJKICCCMER\x0ctimelineInfo\x12-\
+    \n\nrogue_info\x18\x0b\x20\x01(\x0b2\x0c.ANIKPLFEKMGH\0R\trogueInfo\x12,\
     \n\taeon_info\x18\r\x20\x01(\x0b2\r.PropAeonInfoH\0R\x08aeonInfo\x128\n\
-    \x10chess_rogue_info\x18\x08\x20\x01(\x0b2\x0c.AOIHEKLNDIDH\0R\x0echessR\
-    ogueInfo\x12A\n\x15rogue_tourn_door_info\x18\x02\x20\x01(\x0b2\x0c.HDOCJ\
+    \x10chess_rogue_info\x18\x03\x20\x01(\x0b2\x0c.AOIHEKLNDIDH\0R\x0echessR\
+    ogueInfo\x12A\n\x15rogue_tourn_door_info\x18\x07\x20\x01(\x0b2\x0c.HDOCJ\
     DHLAPDH\0R\x12rogueTournDoorInfo\x12K\n\x1arogue_tourn_workbench_info\
-    \x18\x03\x20\x01(\x0b2\x0c.EEKIHHEFAICH\0R\x17rogueTournWorkbenchInfo\
-    \x12I\n\x19rogue_gamble_machine_info\x18\x0e\x20\x01(\x0b2\x0c.EIGOIECDM\
-    NAH\0R\x16rogueGambleMachineInfo\x12C\n\x16rogue_curse_chest_info\x18\
-    \x0c\x20\x01(\x0b2\x0c.OJCKHBBBFEFH\0R\x13rogueCurseChestInfo\x12A\n\x15\
-    rogue_magic_door_info\x18\n\x20\x01(\x0b2\x0c.JEGHKICDAOOH\0R\x12rogueMa\
-    gicDoorInfoB\x0b\n\tinfo_caseb\x06proto3\
+    \x18\n\x20\x01(\x0b2\x0c.EEKIHHEFAICH\0R\x17rogueTournWorkbenchInfo\x12I\
+    \n\x19rogue_gamble_machine_info\x18\x0f\x20\x01(\x0b2\x0c.EIGOIECDMNAH\0\
+    R\x16rogueGambleMachineInfo\x12C\n\x16rogue_curse_chest_info\x18\x0e\x20\
+    \x01(\x0b2\x0c.OJCKHBBBFEFH\0R\x13rogueCurseChestInfo\x12A\n\x15rogue_ma\
+    gic_door_info\x18\x01\x20\x01(\x0b2\x0c.JEGHKICDAOOH\0R\x12rogueMagicDoo\
+    rInfoB\x0b\n\tinfo_caseb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

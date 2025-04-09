@@ -72,7 +72,7 @@ impl ::protobuf::Message for HeliobusChallengeUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.DDDIKPNNBLE)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for HeliobusChallengeUpdateScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.DDDIKPNNBLE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for HeliobusChallengeUpdateScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%HeliobusChallengeUpdateScNotify.proto\x1a\x11JMIJJHKIBLB.proto\"Q\n\
-    \x1fHeliobusChallengeUpdateScNotify\x12.\n\x0bDDDIKPNNBLE\x18\x0c\x20\
-    \x01(\x0b2\x0c.JMIJJHKIBLBR\x0bDDDIKPNNBLEb\x06proto3\
+    \x1fHeliobusChallengeUpdateScNotify\x12.\n\x0bDDDIKPNNBLE\x18\t\x20\x01(\
+    \x0b2\x0c.JMIJJHKIBLBR\x0bDDDIKPNNBLEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

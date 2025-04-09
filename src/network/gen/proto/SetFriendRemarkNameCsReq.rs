@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetFriendRemarkNameCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetFriendRemarkNameCsReq.KMONAGFELPG)
-    pub KMONAGFELPG: u32,
+    // @@protoc_insertion_point(field:SetFriendRemarkNameCsReq.uid)
+    pub uid: u32,
     // @@protoc_insertion_point(field:SetFriendRemarkNameCsReq.ALIFPIHNMEK)
     pub ALIFPIHNMEK: u32,
     // @@protoc_insertion_point(field:SetFriendRemarkNameCsReq.IODLGIKKHJI)
@@ -54,9 +54,9 @@ impl SetFriendRemarkNameCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KMONAGFELPG",
-            |m: &SetFriendRemarkNameCsReq| { &m.KMONAGFELPG },
-            |m: &mut SetFriendRemarkNameCsReq| { &mut m.KMONAGFELPG },
+            "uid",
+            |m: &SetFriendRemarkNameCsReq| { &m.uid },
+            |m: &mut SetFriendRemarkNameCsReq| { &mut m.uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ALIFPIHNMEK",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for SetFriendRemarkNameCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.KMONAGFELPG = is.read_uint32()?;
+                72 => {
+                    self.uid = is.read_uint32()?;
                 },
-                96 => {
+                112 => {
                     self.ALIFPIHNMEK = is.read_uint32()?;
                 },
-                42 => {
+                26 => {
                     self.IODLGIKKHJI = is.read_string()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for SetFriendRemarkNameCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KMONAGFELPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.KMONAGFELPG);
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.uid);
         }
         if self.ALIFPIHNMEK != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.ALIFPIHNMEK);
+            my_size += ::protobuf::rt::uint32_size(14, self.ALIFPIHNMEK);
         }
         if !self.IODLGIKKHJI.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.IODLGIKKHJI);
+            my_size += ::protobuf::rt::string_size(3, &self.IODLGIKKHJI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for SetFriendRemarkNameCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KMONAGFELPG != 0 {
-            os.write_uint32(8, self.KMONAGFELPG)?;
+        if self.uid != 0 {
+            os.write_uint32(9, self.uid)?;
         }
         if self.ALIFPIHNMEK != 0 {
-            os.write_uint32(12, self.ALIFPIHNMEK)?;
+            os.write_uint32(14, self.ALIFPIHNMEK)?;
         }
         if !self.IODLGIKKHJI.is_empty() {
-            os.write_string(5, &self.IODLGIKKHJI)?;
+            os.write_string(3, &self.IODLGIKKHJI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::Message for SetFriendRemarkNameCsReq {
     }
 
     fn clear(&mut self) {
-        self.KMONAGFELPG = 0;
+        self.uid = 0;
         self.ALIFPIHNMEK = 0;
         self.IODLGIKKHJI.clear();
         self.special_fields.clear();
@@ -156,7 +156,7 @@ impl ::protobuf::Message for SetFriendRemarkNameCsReq {
 
     fn default_instance() -> &'static SetFriendRemarkNameCsReq {
         static instance: SetFriendRemarkNameCsReq = SetFriendRemarkNameCsReq {
-            KMONAGFELPG: 0,
+            uid: 0,
             ALIFPIHNMEK: 0,
             IODLGIKKHJI: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for SetFriendRemarkNameCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eSetFriendRemarkNameCsReq.proto\"\x80\x01\n\x18SetFriendRemarkNameC\
-    sReq\x12\x20\n\x0bKMONAGFELPG\x18\x08\x20\x01(\rR\x0bKMONAGFELPG\x12\x20\
-    \n\x0bALIFPIHNMEK\x18\x0c\x20\x01(\rR\x0bALIFPIHNMEK\x12\x20\n\x0bIODLGI\
-    KKHJI\x18\x05\x20\x01(\tR\x0bIODLGIKKHJIb\x06proto3\
+    \n\x1eSetFriendRemarkNameCsReq.proto\"p\n\x18SetFriendRemarkNameCsReq\
+    \x12\x10\n\x03uid\x18\t\x20\x01(\rR\x03uid\x12\x20\n\x0bALIFPIHNMEK\x18\
+    \x0e\x20\x01(\rR\x0bALIFPIHNMEK\x12\x20\n\x0bIODLGIKKHJI\x18\x03\x20\x01\
+    (\tR\x0bIODLGIKKHJIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

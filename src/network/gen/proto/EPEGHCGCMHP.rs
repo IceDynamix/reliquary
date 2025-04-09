@@ -99,8 +99,57 @@ impl EPEGHCGCMHP {
         }
     }
 
+    // .LCMIFOBKNEN EMBBHNCJDPK = 1002;
+
+    pub fn EMBBHNCJDPK(&self) -> &super::LCMIFOBKNEN::LCMIFOBKNEN {
+        match self.GEGMAJGEJFL {
+            ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::EMBBHNCJDPK(ref v)) => v,
+            _ => <super::LCMIFOBKNEN::LCMIFOBKNEN as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_EMBBHNCJDPK(&mut self) {
+        self.GEGMAJGEJFL = ::std::option::Option::None;
+    }
+
+    pub fn has_EMBBHNCJDPK(&self) -> bool {
+        match self.GEGMAJGEJFL {
+            ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::EMBBHNCJDPK(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_EMBBHNCJDPK(&mut self, v: super::LCMIFOBKNEN::LCMIFOBKNEN) {
+        self.GEGMAJGEJFL = ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::EMBBHNCJDPK(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_EMBBHNCJDPK(&mut self) -> &mut super::LCMIFOBKNEN::LCMIFOBKNEN {
+        if let ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::EMBBHNCJDPK(_)) = self.GEGMAJGEJFL {
+        } else {
+            self.GEGMAJGEJFL = ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::EMBBHNCJDPK(super::LCMIFOBKNEN::LCMIFOBKNEN::new()));
+        }
+        match self.GEGMAJGEJFL {
+            ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::EMBBHNCJDPK(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_EMBBHNCJDPK(&mut self) -> super::LCMIFOBKNEN::LCMIFOBKNEN {
+        if self.has_EMBBHNCJDPK() {
+            match self.GEGMAJGEJFL.take() {
+                ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::EMBBHNCJDPK(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::LCMIFOBKNEN::LCMIFOBKNEN::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "BHGGHFJMMBM",
@@ -118,6 +167,13 @@ impl EPEGHCGCMHP {
             EPEGHCGCMHP::DCHDJALLNEC,
             EPEGHCGCMHP::mut_DCHDJALLNEC,
             EPEGHCGCMHP::set_DCHDJALLNEC,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LCMIFOBKNEN::LCMIFOBKNEN>(
+            "EMBBHNCJDPK",
+            EPEGHCGCMHP::has_EMBBHNCJDPK,
+            EPEGHCGCMHP::EMBBHNCJDPK,
+            EPEGHCGCMHP::mut_EMBBHNCJDPK,
+            EPEGHCGCMHP::set_EMBBHNCJDPK,
         ));
         oneofs.push(epeghcgcmhp::GEGMAJGEJFL::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EPEGHCGCMHP>(
@@ -147,6 +203,9 @@ impl ::protobuf::Message for EPEGHCGCMHP {
                 8010 => {
                     self.GEGMAJGEJFL = ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::DCHDJALLNEC(is.read_message()?));
                 },
+                8018 => {
+                    self.GEGMAJGEJFL = ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::EMBBHNCJDPK(is.read_message()?));
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -171,6 +230,10 @@ impl ::protobuf::Message for EPEGHCGCMHP {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
+                &epeghcgcmhp::GEGMAJGEJFL::EMBBHNCJDPK(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
             };
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -189,6 +252,9 @@ impl ::protobuf::Message for EPEGHCGCMHP {
             match v {
                 &epeghcgcmhp::GEGMAJGEJFL::DCHDJALLNEC(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(1001, v, os)?;
+                },
+                &epeghcgcmhp::GEGMAJGEJFL::EMBBHNCJDPK(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1002, v, os)?;
                 },
             };
         }
@@ -211,6 +277,7 @@ impl ::protobuf::Message for EPEGHCGCMHP {
     fn clear(&mut self) {
         self.BHGGHFJMMBM.clear();
         self.FMOPBFKNLNI = false;
+        self.GEGMAJGEJFL = ::std::option::Option::None;
         self.GEGMAJGEJFL = ::std::option::Option::None;
         self.special_fields.clear();
     }
@@ -252,6 +319,8 @@ pub mod epeghcgcmhp {
     pub enum GEGMAJGEJFL {
         // @@protoc_insertion_point(oneof_field:EPEGHCGCMHP.DCHDJALLNEC)
         DCHDJALLNEC(super::super::NJFGJPCANDI::NJFGJPCANDI),
+        // @@protoc_insertion_point(oneof_field:EPEGHCGCMHP.EMBBHNCJDPK)
+        EMBBHNCJDPK(super::super::LCMIFOBKNEN::LCMIFOBKNEN),
     }
 
     impl ::protobuf::Oneof for GEGMAJGEJFL {
@@ -272,11 +341,12 @@ pub mod epeghcgcmhp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EPEGHCGCMHP.proto\x1a\x11NJFGJPCANDI.proto\"\x93\x01\n\x0bEPEGHCGC\
-    MHP\x12\x20\n\x0bBHGGHFJMMBM\x18\x01\x20\x03(\tR\x0bBHGGHFJMMBM\x12\x20\
-    \n\x0bFMOPBFKNLNI\x18\x02\x20\x01(\x08R\x0bFMOPBFKNLNI\x121\n\x0bDCHDJAL\
-    LNEC\x18\xe9\x07\x20\x01(\x0b2\x0c.NJFGJPCANDIH\0R\x0bDCHDJALLNECB\r\n\
-    \x0bGEGMAJGEJFLb\x06proto3\
+    \n\x11EPEGHCGCMHP.proto\x1a\x11LCMIFOBKNEN.proto\x1a\x11NJFGJPCANDI.prot\
+    o\"\xc6\x01\n\x0bEPEGHCGCMHP\x12\x20\n\x0bBHGGHFJMMBM\x18\x01\x20\x03(\t\
+    R\x0bBHGGHFJMMBM\x12\x20\n\x0bFMOPBFKNLNI\x18\x02\x20\x01(\x08R\x0bFMOPB\
+    FKNLNI\x121\n\x0bDCHDJALLNEC\x18\xe9\x07\x20\x01(\x0b2\x0c.NJFGJPCANDIH\
+    \0R\x0bDCHDJALLNEC\x121\n\x0bEMBBHNCJDPK\x18\xea\x07\x20\x01(\x0b2\x0c.L\
+    CMIFOBKNENH\0R\x0bEMBBHNCJDPKB\r\n\x0bGEGMAJGEJFLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -293,7 +363,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(1);
+            let mut deps = ::std::vec::Vec::with_capacity(2);
+            deps.push(super::LCMIFOBKNEN::file_descriptor().clone());
             deps.push(super::NJFGJPCANDI::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EPEGHCGCMHP::generated_message_descriptor_data());

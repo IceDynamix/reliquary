@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeKilledPunkLordMonsterScoreScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeKilledPunkLordMonsterScoreScRsp.JEAHDCGKBBB)
-    pub JEAHDCGKBBB: ::std::vec::Vec<super::ODJIPDMNBEC::ODJIPDMNBEC>,
-    // @@protoc_insertion_point(field:TakeKilledPunkLordMonsterScoreScRsp.DNPHCJEBIKB)
-    pub DNPHCJEBIKB: u32,
     // @@protoc_insertion_point(field:TakeKilledPunkLordMonsterScoreScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:TakeKilledPunkLordMonsterScoreScRsp.KFEJGFNONIP)
     pub KFEJGFNONIP: bool,
+    // @@protoc_insertion_point(field:TakeKilledPunkLordMonsterScoreScRsp.DNPHCJEBIKB)
+    pub DNPHCJEBIKB: u32,
+    // @@protoc_insertion_point(field:TakeKilledPunkLordMonsterScoreScRsp.JEAHDCGKBBB)
+    pub JEAHDCGKBBB: ::std::vec::Vec<super::ODJIPDMNBEC::ODJIPDMNBEC>,
     // special fields
     // @@protoc_insertion_point(special_field:TakeKilledPunkLordMonsterScoreScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,16 +55,6 @@ impl TakeKilledPunkLordMonsterScoreScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JEAHDCGKBBB",
-            |m: &TakeKilledPunkLordMonsterScoreScRsp| { &m.JEAHDCGKBBB },
-            |m: &mut TakeKilledPunkLordMonsterScoreScRsp| { &mut m.JEAHDCGKBBB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DNPHCJEBIKB",
-            |m: &TakeKilledPunkLordMonsterScoreScRsp| { &m.DNPHCJEBIKB },
-            |m: &mut TakeKilledPunkLordMonsterScoreScRsp| { &mut m.DNPHCJEBIKB },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &TakeKilledPunkLordMonsterScoreScRsp| { &m.retcode },
@@ -74,6 +64,16 @@ impl TakeKilledPunkLordMonsterScoreScRsp {
             "KFEJGFNONIP",
             |m: &TakeKilledPunkLordMonsterScoreScRsp| { &m.KFEJGFNONIP },
             |m: &mut TakeKilledPunkLordMonsterScoreScRsp| { &mut m.KFEJGFNONIP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DNPHCJEBIKB",
+            |m: &TakeKilledPunkLordMonsterScoreScRsp| { &m.DNPHCJEBIKB },
+            |m: &mut TakeKilledPunkLordMonsterScoreScRsp| { &mut m.DNPHCJEBIKB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "JEAHDCGKBBB",
+            |m: &TakeKilledPunkLordMonsterScoreScRsp| { &m.JEAHDCGKBBB },
+            |m: &mut TakeKilledPunkLordMonsterScoreScRsp| { &mut m.JEAHDCGKBBB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeKilledPunkLordMonsterScoreScRsp>(
             "TakeKilledPunkLordMonsterScoreScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for TakeKilledPunkLordMonsterScoreScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    self.JEAHDCGKBBB.push(is.read_message()?);
-                },
-                88 => {
-                    self.DNPHCJEBIKB = is.read_uint32()?;
-                },
-                40 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                56 => {
+                88 => {
                     self.KFEJGFNONIP = is.read_bool()?;
+                },
+                16 => {
+                    self.DNPHCJEBIKB = is.read_uint32()?;
+                },
+                98 => {
+                    self.JEAHDCGKBBB.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,37 +117,37 @@ impl ::protobuf::Message for TakeKilledPunkLordMonsterScoreScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.JEAHDCGKBBB {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.DNPHCJEBIKB != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.DNPHCJEBIKB);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         if self.KFEJGFNONIP != false {
             my_size += 1 + 1;
         }
+        if self.DNPHCJEBIKB != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.DNPHCJEBIKB);
+        }
+        for value in &self.JEAHDCGKBBB {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.JEAHDCGKBBB {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        };
-        if self.DNPHCJEBIKB != 0 {
-            os.write_uint32(11, self.DNPHCJEBIKB)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         if self.KFEJGFNONIP != false {
-            os.write_bool(7, self.KFEJGFNONIP)?;
+            os.write_bool(11, self.KFEJGFNONIP)?;
         }
+        if self.DNPHCJEBIKB != 0 {
+            os.write_uint32(2, self.DNPHCJEBIKB)?;
+        }
+        for v in &self.JEAHDCGKBBB {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,19 +165,19 @@ impl ::protobuf::Message for TakeKilledPunkLordMonsterScoreScRsp {
     }
 
     fn clear(&mut self) {
-        self.JEAHDCGKBBB.clear();
-        self.DNPHCJEBIKB = 0;
         self.retcode = 0;
         self.KFEJGFNONIP = false;
+        self.DNPHCJEBIKB = 0;
+        self.JEAHDCGKBBB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeKilledPunkLordMonsterScoreScRsp {
         static instance: TakeKilledPunkLordMonsterScoreScRsp = TakeKilledPunkLordMonsterScoreScRsp {
-            JEAHDCGKBBB: ::std::vec::Vec::new(),
-            DNPHCJEBIKB: 0,
             retcode: 0,
             KFEJGFNONIP: false,
+            DNPHCJEBIKB: 0,
+            JEAHDCGKBBB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,11 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for TakeKilledPunkLordMonsterScoreScRsp 
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)TakeKilledPunkLordMonsterScoreScRsp.proto\x1a\x11ODJIPDMNBEC.proto\"\
-    \xb3\x01\n#TakeKilledPunkLordMonsterScoreScRsp\x12.\n\x0bJEAHDCGKBBB\x18\
-    \x0e\x20\x03(\x0b2\x0c.ODJIPDMNBECR\x0bJEAHDCGKBBB\x12\x20\n\x0bDNPHCJEB\
-    IKB\x18\x0b\x20\x01(\rR\x0bDNPHCJEBIKB\x12\x18\n\x07retcode\x18\x05\x20\
-    \x01(\rR\x07retcode\x12\x20\n\x0bKFEJGFNONIP\x18\x07\x20\x01(\x08R\x0bKF\
-    EJGFNONIPb\x06proto3\
+    \xb3\x01\n#TakeKilledPunkLordMonsterScoreScRsp\x12\x18\n\x07retcode\x18\
+    \x01\x20\x01(\rR\x07retcode\x12\x20\n\x0bKFEJGFNONIP\x18\x0b\x20\x01(\
+    \x08R\x0bKFEJGFNONIP\x12\x20\n\x0bDNPHCJEBIKB\x18\x02\x20\x01(\rR\x0bDNP\
+    HCJEBIKB\x12.\n\x0bJEAHDCGKBBB\x18\x0c\x20\x03(\x0b2\x0c.ODJIPDMNBECR\
+    \x0bJEAHDCGKBBBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

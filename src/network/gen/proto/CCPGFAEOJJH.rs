@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CCPGFAEOJJH {
     // message fields
-    // @@protoc_insertion_point(field:CCPGFAEOJJH.DLNJLMDALAF)
-    pub DLNJLMDALAF: ::protobuf::MessageField<super::BKDCJANPNBP::BKDCJANPNBP>,
-    // @@protoc_insertion_point(field:CCPGFAEOJJH.ILCHAJCFFBF)
-    pub ILCHAJCFFBF: ::protobuf::MessageField<super::HIEJJBDNCNH::HIEJJBDNCNH>,
-    // @@protoc_insertion_point(field:CCPGFAEOJJH.is_marked)
-    pub is_marked: bool,
-    // @@protoc_insertion_point(field:CCPGFAEOJJH.LAHPGLCDIJK)
-    pub LAHPGLCDIJK: i64,
     // @@protoc_insertion_point(field:CCPGFAEOJJH.HGEOJADGNFC)
     pub HGEOJADGNFC: ::protobuf::EnumOrUnknown<super::PlayingState::PlayingState>,
     // @@protoc_insertion_point(field:CCPGFAEOJJH.IODLGIKKHJI)
     pub IODLGIKKHJI: ::std::string::String,
+    // @@protoc_insertion_point(field:CCPGFAEOJJH.ILCHAJCFFBF)
+    pub ILCHAJCFFBF: ::protobuf::MessageField<super::HIEJJBDNCNH::HIEJJBDNCNH>,
+    // @@protoc_insertion_point(field:CCPGFAEOJJH.DLNJLMDALAF)
+    pub DLNJLMDALAF: ::protobuf::MessageField<super::BKDCJANPNBP::BKDCJANPNBP>,
+    // @@protoc_insertion_point(field:CCPGFAEOJJH.is_marked)
+    pub is_marked: bool,
+    // @@protoc_insertion_point(field:CCPGFAEOJJH.LAHPGLCDIJK)
+    pub LAHPGLCDIJK: i64,
     // special fields
     // @@protoc_insertion_point(special_field:CCPGFAEOJJH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,15 +59,25 @@ impl CCPGFAEOJJH {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BKDCJANPNBP::BKDCJANPNBP>(
-            "DLNJLMDALAF",
-            |m: &CCPGFAEOJJH| { &m.DLNJLMDALAF },
-            |m: &mut CCPGFAEOJJH| { &mut m.DLNJLMDALAF },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HGEOJADGNFC",
+            |m: &CCPGFAEOJJH| { &m.HGEOJADGNFC },
+            |m: &mut CCPGFAEOJJH| { &mut m.HGEOJADGNFC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IODLGIKKHJI",
+            |m: &CCPGFAEOJJH| { &m.IODLGIKKHJI },
+            |m: &mut CCPGFAEOJJH| { &mut m.IODLGIKKHJI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HIEJJBDNCNH::HIEJJBDNCNH>(
             "ILCHAJCFFBF",
             |m: &CCPGFAEOJJH| { &m.ILCHAJCFFBF },
             |m: &mut CCPGFAEOJJH| { &mut m.ILCHAJCFFBF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BKDCJANPNBP::BKDCJANPNBP>(
+            "DLNJLMDALAF",
+            |m: &CCPGFAEOJJH| { &m.DLNJLMDALAF },
+            |m: &mut CCPGFAEOJJH| { &mut m.DLNJLMDALAF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_marked",
@@ -78,16 +88,6 @@ impl CCPGFAEOJJH {
             "LAHPGLCDIJK",
             |m: &CCPGFAEOJJH| { &m.LAHPGLCDIJK },
             |m: &mut CCPGFAEOJJH| { &mut m.LAHPGLCDIJK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HGEOJADGNFC",
-            |m: &CCPGFAEOJJH| { &m.HGEOJADGNFC },
-            |m: &mut CCPGFAEOJJH| { &mut m.HGEOJADGNFC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IODLGIKKHJI",
-            |m: &CCPGFAEOJJH| { &m.IODLGIKKHJI },
-            |m: &mut CCPGFAEOJJH| { &mut m.IODLGIKKHJI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CCPGFAEOJJH>(
             "CCPGFAEOJJH",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for CCPGFAEOJJH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DLNJLMDALAF)?;
-                },
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ILCHAJCFFBF)?;
-                },
-                56 => {
-                    self.is_marked = is.read_bool()?;
-                },
-                32 => {
-                    self.LAHPGLCDIJK = is.read_int64()?;
-                },
-                104 => {
+                40 => {
                     self.HGEOJADGNFC = is.read_enum_or_unknown()?;
                 },
-                50 => {
+                90 => {
                     self.IODLGIKKHJI = is.read_string()?;
+                },
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ILCHAJCFFBF)?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DLNJLMDALAF)?;
+                },
+                64 => {
+                    self.is_marked = is.read_bool()?;
+                },
+                16 => {
+                    self.LAHPGLCDIJK = is.read_int64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,11 +137,17 @@ impl ::protobuf::Message for CCPGFAEOJJH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.DLNJLMDALAF.as_ref() {
+        if self.HGEOJADGNFC != ::protobuf::EnumOrUnknown::new(super::PlayingState::PlayingState::PLAYING_STATE_NONE) {
+            my_size += ::protobuf::rt::int32_size(5, self.HGEOJADGNFC.value());
+        }
+        if !self.IODLGIKKHJI.is_empty() {
+            my_size += ::protobuf::rt::string_size(11, &self.IODLGIKKHJI);
+        }
+        if let Some(v) = self.ILCHAJCFFBF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.ILCHAJCFFBF.as_ref() {
+        if let Some(v) = self.DLNJLMDALAF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -149,13 +155,7 @@ impl ::protobuf::Message for CCPGFAEOJJH {
             my_size += 1 + 1;
         }
         if self.LAHPGLCDIJK != 0 {
-            my_size += ::protobuf::rt::int64_size(4, self.LAHPGLCDIJK);
-        }
-        if self.HGEOJADGNFC != ::protobuf::EnumOrUnknown::new(super::PlayingState::PlayingState::PLAYING_STATE_NONE) {
-            my_size += ::protobuf::rt::int32_size(13, self.HGEOJADGNFC.value());
-        }
-        if !self.IODLGIKKHJI.is_empty() {
-            my_size += ::protobuf::rt::string_size(6, &self.IODLGIKKHJI);
+            my_size += ::protobuf::rt::int64_size(2, self.LAHPGLCDIJK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -163,23 +163,23 @@ impl ::protobuf::Message for CCPGFAEOJJH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.DLNJLMDALAF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
-        if let Some(v) = self.ILCHAJCFFBF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        }
-        if self.is_marked != false {
-            os.write_bool(7, self.is_marked)?;
-        }
-        if self.LAHPGLCDIJK != 0 {
-            os.write_int64(4, self.LAHPGLCDIJK)?;
-        }
         if self.HGEOJADGNFC != ::protobuf::EnumOrUnknown::new(super::PlayingState::PlayingState::PLAYING_STATE_NONE) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.HGEOJADGNFC))?;
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.HGEOJADGNFC))?;
         }
         if !self.IODLGIKKHJI.is_empty() {
-            os.write_string(6, &self.IODLGIKKHJI)?;
+            os.write_string(11, &self.IODLGIKKHJI)?;
+        }
+        if let Some(v) = self.ILCHAJCFFBF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        }
+        if let Some(v) = self.DLNJLMDALAF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
+        if self.is_marked != false {
+            os.write_bool(8, self.is_marked)?;
+        }
+        if self.LAHPGLCDIJK != 0 {
+            os.write_int64(2, self.LAHPGLCDIJK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -198,23 +198,23 @@ impl ::protobuf::Message for CCPGFAEOJJH {
     }
 
     fn clear(&mut self) {
-        self.DLNJLMDALAF.clear();
-        self.ILCHAJCFFBF.clear();
-        self.is_marked = false;
-        self.LAHPGLCDIJK = 0;
         self.HGEOJADGNFC = ::protobuf::EnumOrUnknown::new(super::PlayingState::PlayingState::PLAYING_STATE_NONE);
         self.IODLGIKKHJI.clear();
+        self.ILCHAJCFFBF.clear();
+        self.DLNJLMDALAF.clear();
+        self.is_marked = false;
+        self.LAHPGLCDIJK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CCPGFAEOJJH {
         static instance: CCPGFAEOJJH = CCPGFAEOJJH {
-            DLNJLMDALAF: ::protobuf::MessageField::none(),
-            ILCHAJCFFBF: ::protobuf::MessageField::none(),
-            is_marked: false,
-            LAHPGLCDIJK: 0,
             HGEOJADGNFC: ::protobuf::EnumOrUnknown::from_i32(0),
             IODLGIKKHJI: ::std::string::String::new(),
+            ILCHAJCFFBF: ::protobuf::MessageField::none(),
+            DLNJLMDALAF: ::protobuf::MessageField::none(),
+            is_marked: false,
+            LAHPGLCDIJK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -240,13 +240,13 @@ impl ::protobuf::reflect::ProtobufValue for CCPGFAEOJJH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CCPGFAEOJJH.proto\x1a\x11BKDCJANPNBP.proto\x1a\x11HIEJJBDNCNH.prot\
-    o\x1a\x12PlayingState.proto\"\xff\x01\n\x0bCCPGFAEOJJH\x12.\n\x0bDLNJLMD\
-    ALAF\x18\n\x20\x01(\x0b2\x0c.BKDCJANPNBPR\x0bDLNJLMDALAF\x12.\n\x0bILCHA\
-    JCFFBF\x18\x03\x20\x01(\x0b2\x0c.HIEJJBDNCNHR\x0bILCHAJCFFBF\x12\x1b\n\t\
-    is_marked\x18\x07\x20\x01(\x08R\x08isMarked\x12\x20\n\x0bLAHPGLCDIJK\x18\
-    \x04\x20\x01(\x03R\x0bLAHPGLCDIJK\x12/\n\x0bHGEOJADGNFC\x18\r\x20\x01(\
-    \x0e2\r.PlayingStateR\x0bHGEOJADGNFC\x12\x20\n\x0bIODLGIKKHJI\x18\x06\
-    \x20\x01(\tR\x0bIODLGIKKHJIb\x06proto3\
+    o\x1a\x12PlayingState.proto\"\xff\x01\n\x0bCCPGFAEOJJH\x12/\n\x0bHGEOJAD\
+    GNFC\x18\x05\x20\x01(\x0e2\r.PlayingStateR\x0bHGEOJADGNFC\x12\x20\n\x0bI\
+    ODLGIKKHJI\x18\x0b\x20\x01(\tR\x0bIODLGIKKHJI\x12.\n\x0bILCHAJCFFBF\x18\
+    \n\x20\x01(\x0b2\x0c.HIEJJBDNCNHR\x0bILCHAJCFFBF\x12.\n\x0bDLNJLMDALAF\
+    \x18\t\x20\x01(\x0b2\x0c.BKDCJANPNBPR\x0bDLNJLMDALAF\x12\x1b\n\tis_marke\
+    d\x18\x08\x20\x01(\x08R\x08isMarked\x12\x20\n\x0bLAHPGLCDIJK\x18\x02\x20\
+    \x01(\x03R\x0bLAHPGLCDIJKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetFriendRemarkNameScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SetFriendRemarkNameScRsp.IODLGIKKHJI)
-    pub IODLGIKKHJI: ::std::string::String,
-    // @@protoc_insertion_point(field:SetFriendRemarkNameScRsp.KMONAGFELPG)
-    pub KMONAGFELPG: u32,
+    // @@protoc_insertion_point(field:SetFriendRemarkNameScRsp.uid)
+    pub uid: u32,
     // @@protoc_insertion_point(field:SetFriendRemarkNameScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:SetFriendRemarkNameScRsp.IODLGIKKHJI)
+    pub IODLGIKKHJI: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:SetFriendRemarkNameScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl SetFriendRemarkNameScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IODLGIKKHJI",
-            |m: &SetFriendRemarkNameScRsp| { &m.IODLGIKKHJI },
-            |m: &mut SetFriendRemarkNameScRsp| { &mut m.IODLGIKKHJI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KMONAGFELPG",
-            |m: &SetFriendRemarkNameScRsp| { &m.KMONAGFELPG },
-            |m: &mut SetFriendRemarkNameScRsp| { &mut m.KMONAGFELPG },
+            "uid",
+            |m: &SetFriendRemarkNameScRsp| { &m.uid },
+            |m: &mut SetFriendRemarkNameScRsp| { &mut m.uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &SetFriendRemarkNameScRsp| { &m.retcode },
             |m: &mut SetFriendRemarkNameScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IODLGIKKHJI",
+            |m: &SetFriendRemarkNameScRsp| { &m.IODLGIKKHJI },
+            |m: &mut SetFriendRemarkNameScRsp| { &mut m.IODLGIKKHJI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetFriendRemarkNameScRsp>(
             "SetFriendRemarkNameScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SetFriendRemarkNameScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    self.IODLGIKKHJI = is.read_string()?;
+                96 => {
+                    self.uid = is.read_uint32()?;
                 },
-                120 => {
-                    self.KMONAGFELPG = is.read_uint32()?;
-                },
-                72 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
+                },
+                90 => {
+                    self.IODLGIKKHJI = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for SetFriendRemarkNameScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.IODLGIKKHJI.is_empty() {
-            my_size += ::protobuf::rt::string_size(13, &self.IODLGIKKHJI);
-        }
-        if self.KMONAGFELPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.KMONAGFELPG);
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.uid);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+        }
+        if !self.IODLGIKKHJI.is_empty() {
+            my_size += ::protobuf::rt::string_size(11, &self.IODLGIKKHJI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for SetFriendRemarkNameScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.IODLGIKKHJI.is_empty() {
-            os.write_string(13, &self.IODLGIKKHJI)?;
-        }
-        if self.KMONAGFELPG != 0 {
-            os.write_uint32(15, self.KMONAGFELPG)?;
+        if self.uid != 0 {
+            os.write_uint32(12, self.uid)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
+        }
+        if !self.IODLGIKKHJI.is_empty() {
+            os.write_string(11, &self.IODLGIKKHJI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for SetFriendRemarkNameScRsp {
     }
 
     fn clear(&mut self) {
-        self.IODLGIKKHJI.clear();
-        self.KMONAGFELPG = 0;
+        self.uid = 0;
         self.retcode = 0;
+        self.IODLGIKKHJI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetFriendRemarkNameScRsp {
         static instance: SetFriendRemarkNameScRsp = SetFriendRemarkNameScRsp {
-            IODLGIKKHJI: ::std::string::String::new(),
-            KMONAGFELPG: 0,
+            uid: 0,
             retcode: 0,
+            IODLGIKKHJI: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for SetFriendRemarkNameScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eSetFriendRemarkNameScRsp.proto\"x\n\x18SetFriendRemarkNameScRsp\
-    \x12\x20\n\x0bIODLGIKKHJI\x18\r\x20\x01(\tR\x0bIODLGIKKHJI\x12\x20\n\x0b\
-    KMONAGFELPG\x18\x0f\x20\x01(\rR\x0bKMONAGFELPG\x12\x18\n\x07retcode\x18\
-    \t\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x1eSetFriendRemarkNameScRsp.proto\"h\n\x18SetFriendRemarkNameScRsp\
+    \x12\x10\n\x03uid\x18\x0c\x20\x01(\rR\x03uid\x12\x18\n\x07retcode\x18\
+    \x05\x20\x01(\rR\x07retcode\x12\x20\n\x0bIODLGIKKHJI\x18\x0b\x20\x01(\tR\
+    \x0bIODLGIKKHJIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

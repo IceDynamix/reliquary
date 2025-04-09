@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetGrowthTargetAvatarScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SetGrowthTargetAvatarScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:SetGrowthTargetAvatarScRsp.NCBKPDNGOHJ)
     pub NCBKPDNGOHJ: u32,
-    // @@protoc_insertion_point(field:SetGrowthTargetAvatarScRsp.JPNLPOPMKEJ)
-    pub JPNLPOPMKEJ: u32,
     // @@protoc_insertion_point(field:SetGrowthTargetAvatarScRsp.EJBJBOCOINB)
     pub EJBJBOCOINB: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::GrowthTargetFunctionType::GrowthTargetFunctionType>>,
+    // @@protoc_insertion_point(field:SetGrowthTargetAvatarScRsp.JPNLPOPMKEJ)
+    pub JPNLPOPMKEJ: u32,
+    // @@protoc_insertion_point(field:SetGrowthTargetAvatarScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SetGrowthTargetAvatarScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl SetGrowthTargetAvatarScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &SetGrowthTargetAvatarScRsp| { &m.retcode },
-            |m: &mut SetGrowthTargetAvatarScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NCBKPDNGOHJ",
             |m: &SetGrowthTargetAvatarScRsp| { &m.NCBKPDNGOHJ },
             |m: &mut SetGrowthTargetAvatarScRsp| { &mut m.NCBKPDNGOHJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "EJBJBOCOINB",
+            |m: &SetGrowthTargetAvatarScRsp| { &m.EJBJBOCOINB },
+            |m: &mut SetGrowthTargetAvatarScRsp| { &mut m.EJBJBOCOINB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JPNLPOPMKEJ",
             |m: &SetGrowthTargetAvatarScRsp| { &m.JPNLPOPMKEJ },
             |m: &mut SetGrowthTargetAvatarScRsp| { &mut m.JPNLPOPMKEJ },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EJBJBOCOINB",
-            |m: &SetGrowthTargetAvatarScRsp| { &m.EJBJBOCOINB },
-            |m: &mut SetGrowthTargetAvatarScRsp| { &mut m.EJBJBOCOINB },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &SetGrowthTargetAvatarScRsp| { &m.retcode },
+            |m: &mut SetGrowthTargetAvatarScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetGrowthTargetAvatarScRsp>(
             "SetGrowthTargetAvatarScRsp",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for SetGrowthTargetAvatarScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                112 => {
+                32 => {
                     self.NCBKPDNGOHJ = is.read_uint32()?;
                 },
-                120 => {
-                    self.JPNLPOPMKEJ = is.read_uint32()?;
-                },
-                80 => {
+                88 => {
                     self.EJBJBOCOINB.push(is.read_enum_or_unknown()?);
                 },
-                82 => {
+                90 => {
                     ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.EJBJBOCOINB)?
+                },
+                40 => {
+                    self.JPNLPOPMKEJ = is.read_uint32()?;
+                },
+                104 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,32 +120,32 @@ impl ::protobuf::Message for SetGrowthTargetAvatarScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
-        }
         if self.NCBKPDNGOHJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.NCBKPDNGOHJ);
+            my_size += ::protobuf::rt::uint32_size(4, self.NCBKPDNGOHJ);
         }
+        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(11, &self.EJBJBOCOINB);
         if self.JPNLPOPMKEJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.JPNLPOPMKEJ);
+            my_size += ::protobuf::rt::uint32_size(5, self.JPNLPOPMKEJ);
         }
-        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(10, &self.EJBJBOCOINB);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
-        }
         if self.NCBKPDNGOHJ != 0 {
-            os.write_uint32(14, self.NCBKPDNGOHJ)?;
+            os.write_uint32(4, self.NCBKPDNGOHJ)?;
         }
+        os.write_repeated_packed_enum_or_unknown(11, &self.EJBJBOCOINB)?;
         if self.JPNLPOPMKEJ != 0 {
-            os.write_uint32(15, self.JPNLPOPMKEJ)?;
+            os.write_uint32(5, self.JPNLPOPMKEJ)?;
         }
-        os.write_repeated_packed_enum_or_unknown(10, &self.EJBJBOCOINB)?;
+        if self.retcode != 0 {
+            os.write_uint32(13, self.retcode)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -163,19 +163,19 @@ impl ::protobuf::Message for SetGrowthTargetAvatarScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.NCBKPDNGOHJ = 0;
-        self.JPNLPOPMKEJ = 0;
         self.EJBJBOCOINB.clear();
+        self.JPNLPOPMKEJ = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetGrowthTargetAvatarScRsp {
         static instance: SetGrowthTargetAvatarScRsp = SetGrowthTargetAvatarScRsp {
-            retcode: 0,
             NCBKPDNGOHJ: 0,
-            JPNLPOPMKEJ: 0,
             EJBJBOCOINB: ::std::vec::Vec::new(),
+            JPNLPOPMKEJ: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for SetGrowthTargetAvatarScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20SetGrowthTargetAvatarScRsp.proto\x1a\x1eGrowthTargetFunctionType.p\
-    roto\"\xb7\x01\n\x1aSetGrowthTargetAvatarScRsp\x12\x18\n\x07retcode\x18\
-    \t\x20\x01(\rR\x07retcode\x12\x20\n\x0bNCBKPDNGOHJ\x18\x0e\x20\x01(\rR\
-    \x0bNCBKPDNGOHJ\x12\x20\n\x0bJPNLPOPMKEJ\x18\x0f\x20\x01(\rR\x0bJPNLPOPM\
-    KEJ\x12;\n\x0bEJBJBOCOINB\x18\n\x20\x03(\x0e2\x19.GrowthTargetFunctionTy\
-    peR\x0bEJBJBOCOINBb\x06proto3\
+    roto\"\xb7\x01\n\x1aSetGrowthTargetAvatarScRsp\x12\x20\n\x0bNCBKPDNGOHJ\
+    \x18\x04\x20\x01(\rR\x0bNCBKPDNGOHJ\x12;\n\x0bEJBJBOCOINB\x18\x0b\x20\
+    \x03(\x0e2\x19.GrowthTargetFunctionTypeR\x0bEJBJBOCOINB\x12\x20\n\x0bJPN\
+    LPOPMKEJ\x18\x05\x20\x01(\rR\x0bJPNLPOPMKEJ\x12\x18\n\x07retcode\x18\r\
+    \x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

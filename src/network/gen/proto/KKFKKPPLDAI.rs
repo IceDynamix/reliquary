@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KKFKKPPLDAI {
     // message fields
-    // @@protoc_insertion_point(field:KKFKKPPLDAI.BLEDOKNMJDF)
-    pub BLEDOKNMJDF: u32,
     // @@protoc_insertion_point(field:KKFKKPPLDAI.AMLKPOHDELN)
     pub AMLKPOHDELN: u32,
     // @@protoc_insertion_point(field:KKFKKPPLDAI.IAGODFDJAIK)
     pub IAGODFDJAIK: bool,
+    // @@protoc_insertion_point(field:KKFKKPPLDAI.BLEDOKNMJDF)
+    pub BLEDOKNMJDF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KKFKKPPLDAI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl KKFKKPPLDAI {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BLEDOKNMJDF",
-            |m: &KKFKKPPLDAI| { &m.BLEDOKNMJDF },
-            |m: &mut KKFKKPPLDAI| { &mut m.BLEDOKNMJDF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AMLKPOHDELN",
             |m: &KKFKKPPLDAI| { &m.AMLKPOHDELN },
             |m: &mut KKFKKPPLDAI| { &mut m.AMLKPOHDELN },
@@ -67,6 +62,11 @@ impl KKFKKPPLDAI {
             "IAGODFDJAIK",
             |m: &KKFKKPPLDAI| { &m.IAGODFDJAIK },
             |m: &mut KKFKKPPLDAI| { &mut m.IAGODFDJAIK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BLEDOKNMJDF",
+            |m: &KKFKKPPLDAI| { &m.BLEDOKNMJDF },
+            |m: &mut KKFKKPPLDAI| { &mut m.BLEDOKNMJDF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KKFKKPPLDAI>(
             "KKFKKPPLDAI",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for KKFKKPPLDAI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.BLEDOKNMJDF = is.read_uint32()?;
-                },
-                72 => {
+                88 => {
                     self.AMLKPOHDELN = is.read_uint32()?;
                 },
-                120 => {
+                56 => {
                     self.IAGODFDJAIK = is.read_bool()?;
+                },
+                16 => {
+                    self.BLEDOKNMJDF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for KKFKKPPLDAI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BLEDOKNMJDF != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.BLEDOKNMJDF);
-        }
         if self.AMLKPOHDELN != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.AMLKPOHDELN);
+            my_size += ::protobuf::rt::uint32_size(11, self.AMLKPOHDELN);
         }
         if self.IAGODFDJAIK != false {
             my_size += 1 + 1;
+        }
+        if self.BLEDOKNMJDF != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.BLEDOKNMJDF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for KKFKKPPLDAI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BLEDOKNMJDF != 0 {
-            os.write_uint32(5, self.BLEDOKNMJDF)?;
-        }
         if self.AMLKPOHDELN != 0 {
-            os.write_uint32(9, self.AMLKPOHDELN)?;
+            os.write_uint32(11, self.AMLKPOHDELN)?;
         }
         if self.IAGODFDJAIK != false {
-            os.write_bool(15, self.IAGODFDJAIK)?;
+            os.write_bool(7, self.IAGODFDJAIK)?;
+        }
+        if self.BLEDOKNMJDF != 0 {
+            os.write_uint32(2, self.BLEDOKNMJDF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for KKFKKPPLDAI {
     }
 
     fn clear(&mut self) {
-        self.BLEDOKNMJDF = 0;
         self.AMLKPOHDELN = 0;
         self.IAGODFDJAIK = false;
+        self.BLEDOKNMJDF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KKFKKPPLDAI {
         static instance: KKFKKPPLDAI = KKFKKPPLDAI {
-            BLEDOKNMJDF: 0,
             AMLKPOHDELN: 0,
             IAGODFDJAIK: false,
+            BLEDOKNMJDF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for KKFKKPPLDAI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KKFKKPPLDAI.proto\"s\n\x0bKKFKKPPLDAI\x12\x20\n\x0bBLEDOKNMJDF\x18\
-    \x05\x20\x01(\rR\x0bBLEDOKNMJDF\x12\x20\n\x0bAMLKPOHDELN\x18\t\x20\x01(\
-    \rR\x0bAMLKPOHDELN\x12\x20\n\x0bIAGODFDJAIK\x18\x0f\x20\x01(\x08R\x0bIAG\
-    ODFDJAIKb\x06proto3\
+    \n\x11KKFKKPPLDAI.proto\"s\n\x0bKKFKKPPLDAI\x12\x20\n\x0bAMLKPOHDELN\x18\
+    \x0b\x20\x01(\rR\x0bAMLKPOHDELN\x12\x20\n\x0bIAGODFDJAIK\x18\x07\x20\x01\
+    (\x08R\x0bIAGODFDJAIK\x12\x20\n\x0bBLEDOKNMJDF\x18\x02\x20\x01(\rR\x0bBL\
+    EDOKNMJDFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

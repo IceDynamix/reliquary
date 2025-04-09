@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SubmitEmotionItemCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SubmitEmotionItemCsReq.FIHNCOABELA)
-    pub FIHNCOABELA: u32,
     // @@protoc_insertion_point(field:SubmitEmotionItemCsReq.DCPBFLJFHBB)
     pub DCPBFLJFHBB: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:SubmitEmotionItemCsReq.FIHNCOABELA)
+    pub FIHNCOABELA: u32,
     // @@protoc_insertion_point(field:SubmitEmotionItemCsReq.CLKEOEHPLNG)
     pub CLKEOEHPLNG: u32,
     // special fields
@@ -53,15 +53,15 @@ impl SubmitEmotionItemCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FIHNCOABELA",
-            |m: &SubmitEmotionItemCsReq| { &m.FIHNCOABELA },
-            |m: &mut SubmitEmotionItemCsReq| { &mut m.FIHNCOABELA },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "DCPBFLJFHBB",
             |m: &SubmitEmotionItemCsReq| { &m.DCPBFLJFHBB },
             |m: &mut SubmitEmotionItemCsReq| { &mut m.DCPBFLJFHBB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FIHNCOABELA",
+            |m: &SubmitEmotionItemCsReq| { &m.FIHNCOABELA },
+            |m: &mut SubmitEmotionItemCsReq| { &mut m.FIHNCOABELA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CLKEOEHPLNG",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for SubmitEmotionItemCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.FIHNCOABELA = is.read_uint32()?;
-                },
-                98 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.DCPBFLJFHBB)?;
                 },
-                80 => {
+                88 => {
+                    self.FIHNCOABELA = is.read_uint32()?;
+                },
+                96 => {
                     self.CLKEOEHPLNG = is.read_uint32()?;
                 },
                 tag => {
@@ -107,15 +107,15 @@ impl ::protobuf::Message for SubmitEmotionItemCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FIHNCOABELA != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.FIHNCOABELA);
-        }
         if let Some(v) = self.DCPBFLJFHBB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.FIHNCOABELA != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.FIHNCOABELA);
+        }
         if self.CLKEOEHPLNG != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.CLKEOEHPLNG);
+            my_size += ::protobuf::rt::uint32_size(12, self.CLKEOEHPLNG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for SubmitEmotionItemCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FIHNCOABELA != 0 {
-            os.write_uint32(8, self.FIHNCOABELA)?;
-        }
         if let Some(v) = self.DCPBFLJFHBB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        }
+        if self.FIHNCOABELA != 0 {
+            os.write_uint32(11, self.FIHNCOABELA)?;
         }
         if self.CLKEOEHPLNG != 0 {
-            os.write_uint32(10, self.CLKEOEHPLNG)?;
+            os.write_uint32(12, self.CLKEOEHPLNG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for SubmitEmotionItemCsReq {
     }
 
     fn clear(&mut self) {
-        self.FIHNCOABELA = 0;
         self.DCPBFLJFHBB.clear();
+        self.FIHNCOABELA = 0;
         self.CLKEOEHPLNG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SubmitEmotionItemCsReq {
         static instance: SubmitEmotionItemCsReq = SubmitEmotionItemCsReq {
-            FIHNCOABELA: 0,
             DCPBFLJFHBB: ::protobuf::MessageField::none(),
+            FIHNCOABELA: 0,
             CLKEOEHPLNG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for SubmitEmotionItemCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cSubmitEmotionItemCsReq.proto\x1a\x0eItemList.proto\"\x89\x01\n\x16\
-    SubmitEmotionItemCsReq\x12\x20\n\x0bFIHNCOABELA\x18\x08\x20\x01(\rR\x0bF\
-    IHNCOABELA\x12+\n\x0bDCPBFLJFHBB\x18\x0c\x20\x01(\x0b2\t.ItemListR\x0bDC\
-    PBFLJFHBB\x12\x20\n\x0bCLKEOEHPLNG\x18\n\x20\x01(\rR\x0bCLKEOEHPLNGb\x06\
-    proto3\
+    SubmitEmotionItemCsReq\x12+\n\x0bDCPBFLJFHBB\x18\x03\x20\x01(\x0b2\t.Ite\
+    mListR\x0bDCPBFLJFHBB\x12\x20\n\x0bFIHNCOABELA\x18\x0b\x20\x01(\rR\x0bFI\
+    HNCOABELA\x12\x20\n\x0bCLKEOEHPLNG\x18\x0c\x20\x01(\rR\x0bCLKEOEHPLNGb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

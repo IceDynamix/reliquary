@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GJNAAGHKOOK {
     // message fields
-    // @@protoc_insertion_point(field:GJNAAGHKOOK.KMONAGFELPG)
-    pub KMONAGFELPG: u32,
+    // @@protoc_insertion_point(field:GJNAAGHKOOK.uid)
+    pub uid: u32,
     // @@protoc_insertion_point(field:GJNAAGHKOOK.FBJPBDIJPFK)
     pub FBJPBDIJPFK: u32,
     // @@protoc_insertion_point(field:GJNAAGHKOOK.MNCIHJHGNMJ)
@@ -66,9 +66,9 @@ impl GJNAAGHKOOK {
         let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KMONAGFELPG",
-            |m: &GJNAAGHKOOK| { &m.KMONAGFELPG },
-            |m: &mut GJNAAGHKOOK| { &mut m.KMONAGFELPG },
+            "uid",
+            |m: &GJNAAGHKOOK| { &m.uid },
+            |m: &mut GJNAAGHKOOK| { &mut m.uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FBJPBDIJPFK",
@@ -129,7 +129,7 @@ impl ::protobuf::Message for GJNAAGHKOOK {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.KMONAGFELPG = is.read_uint32()?;
+                    self.uid = is.read_uint32()?;
                 },
                 16 => {
                     self.FBJPBDIJPFK = is.read_uint32()?;
@@ -167,8 +167,8 @@ impl ::protobuf::Message for GJNAAGHKOOK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KMONAGFELPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.KMONAGFELPG);
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.uid);
         }
         if self.FBJPBDIJPFK != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.FBJPBDIJPFK);
@@ -200,8 +200,8 @@ impl ::protobuf::Message for GJNAAGHKOOK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KMONAGFELPG != 0 {
-            os.write_uint32(1, self.KMONAGFELPG)?;
+        if self.uid != 0 {
+            os.write_uint32(1, self.uid)?;
         }
         if self.FBJPBDIJPFK != 0 {
             os.write_uint32(2, self.FBJPBDIJPFK)?;
@@ -244,7 +244,7 @@ impl ::protobuf::Message for GJNAAGHKOOK {
     }
 
     fn clear(&mut self) {
-        self.KMONAGFELPG = 0;
+        self.uid = 0;
         self.FBJPBDIJPFK = 0;
         self.MNCIHJHGNMJ = 0;
         self.IFJFCEJJBPE = 0;
@@ -258,7 +258,7 @@ impl ::protobuf::Message for GJNAAGHKOOK {
 
     fn default_instance() -> &'static GJNAAGHKOOK {
         static instance: GJNAAGHKOOK = GJNAAGHKOOK {
-            KMONAGFELPG: 0,
+            uid: 0,
             FBJPBDIJPFK: 0,
             MNCIHJHGNMJ: 0,
             IFJFCEJJBPE: 0,
@@ -291,16 +291,15 @@ impl ::protobuf::reflect::ProtobufValue for GJNAAGHKOOK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GJNAAGHKOOK.proto\x1a\x17PunkLordShareType.proto\"\xd3\x02\n\x0bGJ\
-    NAAGHKOOK\x12\x20\n\x0bKMONAGFELPG\x18\x01\x20\x01(\rR\x0bKMONAGFELPG\
-    \x12\x20\n\x0bFBJPBDIJPFK\x18\x02\x20\x01(\rR\x0bFBJPBDIJPFK\x12\x20\n\
-    \x0bMNCIHJHGNMJ\x18\x03\x20\x01(\rR\x0bMNCIHJHGNMJ\x12\x20\n\x0bIFJFCEJJ\
-    BPE\x18\x04\x20\x01(\rR\x0bIFJFCEJJBPE\x12\x20\n\x0bLAHPGLCDIJK\x18\x05\
-    \x20\x01(\x03R\x0bLAHPGLCDIJK\x12\x20\n\x0bIACOCNEGAJO\x18\x06\x20\x01(\
-    \rR\x0bIACOCNEGAJO\x12\x20\n\x0bPJDCNAHGAHC\x18\x07\x20\x01(\rR\x0bPJDCN\
-    AHGAHC\x124\n\x0bFELGGJMHONO\x18\x08\x20\x01(\x0e2\x12.PunkLordShareType\
-    R\x0bFELGGJMHONO\x12\x20\n\x0bPPBOCECKCAH\x18\t\x20\x01(\x08R\x0bPPBOCEC\
-    KCAHb\x06proto3\
+    \n\x11GJNAAGHKOOK.proto\x1a\x17PunkLordShareType.proto\"\xc3\x02\n\x0bGJ\
+    NAAGHKOOK\x12\x10\n\x03uid\x18\x01\x20\x01(\rR\x03uid\x12\x20\n\x0bFBJPB\
+    DIJPFK\x18\x02\x20\x01(\rR\x0bFBJPBDIJPFK\x12\x20\n\x0bMNCIHJHGNMJ\x18\
+    \x03\x20\x01(\rR\x0bMNCIHJHGNMJ\x12\x20\n\x0bIFJFCEJJBPE\x18\x04\x20\x01\
+    (\rR\x0bIFJFCEJJBPE\x12\x20\n\x0bLAHPGLCDIJK\x18\x05\x20\x01(\x03R\x0bLA\
+    HPGLCDIJK\x12\x20\n\x0bIACOCNEGAJO\x18\x06\x20\x01(\rR\x0bIACOCNEGAJO\
+    \x12\x20\n\x0bPJDCNAHGAHC\x18\x07\x20\x01(\rR\x0bPJDCNAHGAHC\x124\n\x0bF\
+    ELGGJMHONO\x18\x08\x20\x01(\x0e2\x12.PunkLordShareTypeR\x0bFELGGJMHONO\
+    \x12\x20\n\x0bPPBOCECKCAH\x18\t\x20\x01(\x08R\x0bPPBOCECKCAHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

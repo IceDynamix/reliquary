@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LPILGJEPAGJ {
     // message fields
-    // @@protoc_insertion_point(field:LPILGJEPAGJ.DMMAMJGNGNN)
-    pub DMMAMJGNGNN: i32,
-    // @@protoc_insertion_point(field:LPILGJEPAGJ.NFNICIPMJII)
-    pub NFNICIPMJII: ::std::collections::HashMap<u32, bool>,
     // @@protoc_insertion_point(field:LPILGJEPAGJ.JIFKHCKPNFM)
     pub JIFKHCKPNFM: u32,
     // @@protoc_insertion_point(field:LPILGJEPAGJ.KNNDKBHBDLI)
     pub KNNDKBHBDLI: ::protobuf::MessageField<super::KNAPAIOFJIE::KNAPAIOFJIE>,
+    // @@protoc_insertion_point(field:LPILGJEPAGJ.DMMAMJGNGNN)
+    pub DMMAMJGNGNN: i32,
+    // @@protoc_insertion_point(field:LPILGJEPAGJ.NFNICIPMJII)
+    pub NFNICIPMJII: ::std::collections::HashMap<u32, bool>,
     // special fields
     // @@protoc_insertion_point(special_field:LPILGJEPAGJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,16 +56,6 @@ impl LPILGJEPAGJ {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DMMAMJGNGNN",
-            |m: &LPILGJEPAGJ| { &m.DMMAMJGNGNN },
-            |m: &mut LPILGJEPAGJ| { &mut m.DMMAMJGNGNN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "NFNICIPMJII",
-            |m: &LPILGJEPAGJ| { &m.NFNICIPMJII },
-            |m: &mut LPILGJEPAGJ| { &mut m.NFNICIPMJII },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JIFKHCKPNFM",
             |m: &LPILGJEPAGJ| { &m.JIFKHCKPNFM },
             |m: &mut LPILGJEPAGJ| { &mut m.JIFKHCKPNFM },
@@ -74,6 +64,16 @@ impl LPILGJEPAGJ {
             "KNNDKBHBDLI",
             |m: &LPILGJEPAGJ| { &m.KNNDKBHBDLI },
             |m: &mut LPILGJEPAGJ| { &mut m.KNNDKBHBDLI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DMMAMJGNGNN",
+            |m: &LPILGJEPAGJ| { &m.DMMAMJGNGNN },
+            |m: &mut LPILGJEPAGJ| { &mut m.DMMAMJGNGNN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "NFNICIPMJII",
+            |m: &LPILGJEPAGJ| { &m.NFNICIPMJII },
+            |m: &mut LPILGJEPAGJ| { &mut m.NFNICIPMJII },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LPILGJEPAGJ>(
             "LPILGJEPAGJ",
@@ -93,10 +93,16 @@ impl ::protobuf::Message for LPILGJEPAGJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.DMMAMJGNGNN = is.read_int32()?;
+                120 => {
+                    self.JIFKHCKPNFM = is.read_uint32()?;
                 },
                 90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KNNDKBHBDLI)?;
+                },
+                8 => {
+                    self.DMMAMJGNGNN = is.read_int32()?;
+                },
+                26 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -111,12 +117,6 @@ impl ::protobuf::Message for LPILGJEPAGJ {
                     is.pop_limit(old_limit);
                     self.NFNICIPMJII.insert(key, value);
                 },
-                48 => {
-                    self.JIFKHCKPNFM = is.read_uint32()?;
-                },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KNNDKBHBDLI)?;
-                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -129,8 +129,15 @@ impl ::protobuf::Message for LPILGJEPAGJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.JIFKHCKPNFM != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.JIFKHCKPNFM);
+        }
+        if let Some(v) = self.KNNDKBHBDLI.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if self.DMMAMJGNGNN != 0 {
-            my_size += ::protobuf::rt::int32_size(13, self.DMMAMJGNGNN);
+            my_size += ::protobuf::rt::int32_size(1, self.DMMAMJGNGNN);
         }
         for (k, v) in &self.NFNICIPMJII {
             let mut entry_size = 0;
@@ -138,37 +145,30 @@ impl ::protobuf::Message for LPILGJEPAGJ {
             entry_size += 1 + 1;
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if self.JIFKHCKPNFM != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.JIFKHCKPNFM);
-        }
-        if let Some(v) = self.KNNDKBHBDLI.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.JIFKHCKPNFM != 0 {
+            os.write_uint32(15, self.JIFKHCKPNFM)?;
+        }
+        if let Some(v) = self.KNNDKBHBDLI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        }
         if self.DMMAMJGNGNN != 0 {
-            os.write_int32(13, self.DMMAMJGNGNN)?;
+            os.write_int32(1, self.DMMAMJGNGNN)?;
         }
         for (k, v) in &self.NFNICIPMJII {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += 1 + 1;
-            os.write_raw_varint32(90)?; // Tag.
+            os.write_raw_varint32(26)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_bool(2, *v)?;
         };
-        if self.JIFKHCKPNFM != 0 {
-            os.write_uint32(6, self.JIFKHCKPNFM)?;
-        }
-        if let Some(v) = self.KNNDKBHBDLI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -186,10 +186,10 @@ impl ::protobuf::Message for LPILGJEPAGJ {
     }
 
     fn clear(&mut self) {
-        self.DMMAMJGNGNN = 0;
-        self.NFNICIPMJII.clear();
         self.JIFKHCKPNFM = 0;
         self.KNNDKBHBDLI.clear();
+        self.DMMAMJGNGNN = 0;
+        self.NFNICIPMJII.clear();
         self.special_fields.clear();
     }
 
@@ -218,13 +218,13 @@ impl ::protobuf::reflect::ProtobufValue for LPILGJEPAGJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LPILGJEPAGJ.proto\x1a\x11KNAPAIOFJIE.proto\"\x82\x02\n\x0bLPILGJEP\
-    AGJ\x12\x20\n\x0bDMMAMJGNGNN\x18\r\x20\x01(\x05R\x0bDMMAMJGNGNN\x12?\n\
-    \x0bNFNICIPMJII\x18\x0b\x20\x03(\x0b2\x1d.LPILGJEPAGJ.NFNICIPMJIIEntryR\
-    \x0bNFNICIPMJII\x12\x20\n\x0bJIFKHCKPNFM\x18\x06\x20\x01(\rR\x0bJIFKHCKP\
-    NFM\x12.\n\x0bKNNDKBHBDLI\x18\x08\x20\x01(\x0b2\x0c.KNAPAIOFJIER\x0bKNND\
-    KBHBDLI\x1a>\n\x10NFNICIPMJIIEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\
-    \x03key\x12\x14\n\x05value\x18\x02\x20\x01(\x08R\x05value:\x028\x01b\x06\
-    proto3\
+    AGJ\x12\x20\n\x0bJIFKHCKPNFM\x18\x0f\x20\x01(\rR\x0bJIFKHCKPNFM\x12.\n\
+    \x0bKNNDKBHBDLI\x18\x0b\x20\x01(\x0b2\x0c.KNAPAIOFJIER\x0bKNNDKBHBDLI\
+    \x12\x20\n\x0bDMMAMJGNGNN\x18\x01\x20\x01(\x05R\x0bDMMAMJGNGNN\x12?\n\
+    \x0bNFNICIPMJII\x18\x03\x20\x03(\x0b2\x1d.LPILGJEPAGJ.NFNICIPMJIIEntryR\
+    \x0bNFNICIPMJII\x1a>\n\x10NFNICIPMJIIEntry\x12\x10\n\x03key\x18\x01\x20\
+    \x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\x08R\x05value:\x028\
+    \x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

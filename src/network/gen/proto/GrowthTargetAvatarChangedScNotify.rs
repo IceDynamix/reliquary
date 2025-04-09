@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GrowthTargetAvatarChangedScNotify {
     // message fields
-    // @@protoc_insertion_point(field:GrowthTargetAvatarChangedScNotify.JPNLPOPMKEJ)
-    pub JPNLPOPMKEJ: u32,
     // @@protoc_insertion_point(field:GrowthTargetAvatarChangedScNotify.EJBJBOCOINB)
     pub EJBJBOCOINB: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::GrowthTargetFunctionType::GrowthTargetFunctionType>>,
+    // @@protoc_insertion_point(field:GrowthTargetAvatarChangedScNotify.JPNLPOPMKEJ)
+    pub JPNLPOPMKEJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GrowthTargetAvatarChangedScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GrowthTargetAvatarChangedScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JPNLPOPMKEJ",
-            |m: &GrowthTargetAvatarChangedScNotify| { &m.JPNLPOPMKEJ },
-            |m: &mut GrowthTargetAvatarChangedScNotify| { &mut m.JPNLPOPMKEJ },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "EJBJBOCOINB",
             |m: &GrowthTargetAvatarChangedScNotify| { &m.EJBJBOCOINB },
             |m: &mut GrowthTargetAvatarChangedScNotify| { &mut m.EJBJBOCOINB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JPNLPOPMKEJ",
+            |m: &GrowthTargetAvatarChangedScNotify| { &m.JPNLPOPMKEJ },
+            |m: &mut GrowthTargetAvatarChangedScNotify| { &mut m.JPNLPOPMKEJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GrowthTargetAvatarChangedScNotify>(
             "GrowthTargetAvatarChangedScNotify",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for GrowthTargetAvatarChangedScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.JPNLPOPMKEJ = is.read_uint32()?;
-                },
-                112 => {
+                64 => {
                     self.EJBJBOCOINB.push(is.read_enum_or_unknown()?);
                 },
-                114 => {
+                66 => {
                     ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.EJBJBOCOINB)?
+                },
+                56 => {
+                    self.JPNLPOPMKEJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for GrowthTargetAvatarChangedScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(8, &self.EJBJBOCOINB);
         if self.JPNLPOPMKEJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.JPNLPOPMKEJ);
+            my_size += ::protobuf::rt::uint32_size(7, self.JPNLPOPMKEJ);
         }
-        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(14, &self.EJBJBOCOINB);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_enum_or_unknown(8, &self.EJBJBOCOINB)?;
         if self.JPNLPOPMKEJ != 0 {
-            os.write_uint32(3, self.JPNLPOPMKEJ)?;
+            os.write_uint32(7, self.JPNLPOPMKEJ)?;
         }
-        os.write_repeated_packed_enum_or_unknown(14, &self.EJBJBOCOINB)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for GrowthTargetAvatarChangedScNotify {
     }
 
     fn clear(&mut self) {
-        self.JPNLPOPMKEJ = 0;
         self.EJBJBOCOINB.clear();
+        self.JPNLPOPMKEJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GrowthTargetAvatarChangedScNotify {
         static instance: GrowthTargetAvatarChangedScNotify = GrowthTargetAvatarChangedScNotify {
-            JPNLPOPMKEJ: 0,
             EJBJBOCOINB: ::std::vec::Vec::new(),
+            JPNLPOPMKEJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for GrowthTargetAvatarChangedScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'GrowthTargetAvatarChangedScNotify.proto\x1a\x1eGrowthTargetFunctionTy\
-    pe.proto\"\x82\x01\n!GrowthTargetAvatarChangedScNotify\x12\x20\n\x0bJPNL\
-    POPMKEJ\x18\x03\x20\x01(\rR\x0bJPNLPOPMKEJ\x12;\n\x0bEJBJBOCOINB\x18\x0e\
-    \x20\x03(\x0e2\x19.GrowthTargetFunctionTypeR\x0bEJBJBOCOINBb\x06proto3\
+    pe.proto\"\x82\x01\n!GrowthTargetAvatarChangedScNotify\x12;\n\x0bEJBJBOC\
+    OINB\x18\x08\x20\x03(\x0e2\x19.GrowthTargetFunctionTypeR\x0bEJBJBOCOINB\
+    \x12\x20\n\x0bJPNLPOPMKEJ\x18\x07\x20\x01(\rR\x0bJPNLPOPMKEJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

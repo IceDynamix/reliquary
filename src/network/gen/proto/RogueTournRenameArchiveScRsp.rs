@@ -86,13 +86,13 @@ impl ::protobuf::Message for RogueTournRenameArchiveScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                32 => {
                     self.KHNCEDGFPGL = is.read_uint32()?;
                 },
                 88 => {
                     self.retcode = is.read_uint32()?;
                 },
-                58 => {
+                114 => {
                     self.MJJBNDAKOIF = is.read_string()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for RogueTournRenameArchiveScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.KHNCEDGFPGL != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.KHNCEDGFPGL);
+            my_size += ::protobuf::rt::uint32_size(4, self.KHNCEDGFPGL);
         }
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         if !self.MJJBNDAKOIF.is_empty() {
-            my_size += ::protobuf::rt::string_size(7, &self.MJJBNDAKOIF);
+            my_size += ::protobuf::rt::string_size(14, &self.MJJBNDAKOIF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for RogueTournRenameArchiveScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KHNCEDGFPGL != 0 {
-            os.write_uint32(12, self.KHNCEDGFPGL)?;
+            os.write_uint32(4, self.KHNCEDGFPGL)?;
         }
         if self.retcode != 0 {
             os.write_uint32(11, self.retcode)?;
         }
         if !self.MJJBNDAKOIF.is_empty() {
-            os.write_string(7, &self.MJJBNDAKOIF)?;
+            os.write_string(14, &self.MJJBNDAKOIF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournRenameArchiveScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"RogueTournRenameArchiveScRsp.proto\"|\n\x1cRogueTournRenameArchiveSc\
-    Rsp\x12\x20\n\x0bKHNCEDGFPGL\x18\x0c\x20\x01(\rR\x0bKHNCEDGFPGL\x12\x18\
+    Rsp\x12\x20\n\x0bKHNCEDGFPGL\x18\x04\x20\x01(\rR\x0bKHNCEDGFPGL\x12\x18\
     \n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12\x20\n\x0bMJJBNDAKOIF\
-    \x18\x07\x20\x01(\tR\x0bMJJBNDAKOIFb\x06proto3\
+    \x18\x0e\x20\x01(\tR\x0bMJJBNDAKOIFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

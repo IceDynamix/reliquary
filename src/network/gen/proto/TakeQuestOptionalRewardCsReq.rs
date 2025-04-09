@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeQuestOptionalRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeQuestOptionalRewardCsReq.BAKEHPKMCIP)
-    pub BAKEHPKMCIP: u32,
     // @@protoc_insertion_point(field:TakeQuestOptionalRewardCsReq.JLFABHHNHCM)
     pub JLFABHHNHCM: u32,
+    // @@protoc_insertion_point(field:TakeQuestOptionalRewardCsReq.BAKEHPKMCIP)
+    pub BAKEHPKMCIP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeQuestOptionalRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl TakeQuestOptionalRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BAKEHPKMCIP",
-            |m: &TakeQuestOptionalRewardCsReq| { &m.BAKEHPKMCIP },
-            |m: &mut TakeQuestOptionalRewardCsReq| { &mut m.BAKEHPKMCIP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JLFABHHNHCM",
             |m: &TakeQuestOptionalRewardCsReq| { &m.JLFABHHNHCM },
             |m: &mut TakeQuestOptionalRewardCsReq| { &mut m.JLFABHHNHCM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BAKEHPKMCIP",
+            |m: &TakeQuestOptionalRewardCsReq| { &m.BAKEHPKMCIP },
+            |m: &mut TakeQuestOptionalRewardCsReq| { &mut m.BAKEHPKMCIP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeQuestOptionalRewardCsReq>(
             "TakeQuestOptionalRewardCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for TakeQuestOptionalRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.BAKEHPKMCIP = is.read_uint32()?;
-                },
-                96 => {
+                24 => {
                     self.JLFABHHNHCM = is.read_uint32()?;
+                },
+                80 => {
+                    self.BAKEHPKMCIP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for TakeQuestOptionalRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BAKEHPKMCIP != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.BAKEHPKMCIP);
-        }
         if self.JLFABHHNHCM != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.JLFABHHNHCM);
+            my_size += ::protobuf::rt::uint32_size(3, self.JLFABHHNHCM);
+        }
+        if self.BAKEHPKMCIP != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.BAKEHPKMCIP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for TakeQuestOptionalRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BAKEHPKMCIP != 0 {
-            os.write_uint32(11, self.BAKEHPKMCIP)?;
-        }
         if self.JLFABHHNHCM != 0 {
-            os.write_uint32(12, self.JLFABHHNHCM)?;
+            os.write_uint32(3, self.JLFABHHNHCM)?;
+        }
+        if self.BAKEHPKMCIP != 0 {
+            os.write_uint32(10, self.BAKEHPKMCIP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for TakeQuestOptionalRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.BAKEHPKMCIP = 0;
         self.JLFABHHNHCM = 0;
+        self.BAKEHPKMCIP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeQuestOptionalRewardCsReq {
         static instance: TakeQuestOptionalRewardCsReq = TakeQuestOptionalRewardCsReq {
-            BAKEHPKMCIP: 0,
             JLFABHHNHCM: 0,
+            BAKEHPKMCIP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for TakeQuestOptionalRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"TakeQuestOptionalRewardCsReq.proto\"b\n\x1cTakeQuestOptionalRewardCs\
-    Req\x12\x20\n\x0bBAKEHPKMCIP\x18\x0b\x20\x01(\rR\x0bBAKEHPKMCIP\x12\x20\
-    \n\x0bJLFABHHNHCM\x18\x0c\x20\x01(\rR\x0bJLFABHHNHCMb\x06proto3\
+    Req\x12\x20\n\x0bJLFABHHNHCM\x18\x03\x20\x01(\rR\x0bJLFABHHNHCM\x12\x20\
+    \n\x0bBAKEHPKMCIP\x18\n\x20\x01(\rR\x0bBAKEHPKMCIPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

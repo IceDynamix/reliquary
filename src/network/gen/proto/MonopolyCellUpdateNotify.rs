@@ -72,7 +72,7 @@ impl ::protobuf::Message for MonopolyCellUpdateNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.HGBIGBFGBOM)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for MonopolyCellUpdateNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.HGBIGBFGBOM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyCellUpdateNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eMonopolyCellUpdateNotify.proto\x1a\x11IAACCAFGEPI.proto\"J\n\x18Mo\
-    nopolyCellUpdateNotify\x12.\n\x0bHGBIGBFGBOM\x18\r\x20\x01(\x0b2\x0c.IAA\
-    CCAFGEPIR\x0bHGBIGBFGBOMb\x06proto3\
+    nopolyCellUpdateNotify\x12.\n\x0bHGBIGBFGBOM\x18\x03\x20\x01(\x0b2\x0c.I\
+    AACCAFGEPIR\x0bHGBIGBFGBOMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

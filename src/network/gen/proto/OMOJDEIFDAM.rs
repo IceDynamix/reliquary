@@ -79,10 +79,10 @@ impl ::protobuf::Message for OMOJDEIFDAM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                8 => {
                     self.HGECACCBEPA = is.read_enum_or_unknown()?;
                 },
-                74 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.PBHMGCHKJGO)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for OMOJDEIFDAM {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HGECACCBEPA != ::protobuf::EnumOrUnknown::new(super::PKHJBPMIBBA::PKHJBPMIBBA::SWORD_TRAIN_GAME_SOURCE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(8, self.HGECACCBEPA.value());
+            my_size += ::protobuf::rt::int32_size(1, self.HGECACCBEPA.value());
         }
         if let Some(v) = self.PBHMGCHKJGO.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for OMOJDEIFDAM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HGECACCBEPA != ::protobuf::EnumOrUnknown::new(super::PKHJBPMIBBA::PKHJBPMIBBA::SWORD_TRAIN_GAME_SOURCE_TYPE_NONE) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.HGECACCBEPA))?;
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.HGECACCBEPA))?;
         }
         if let Some(v) = self.PBHMGCHKJGO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for OMOJDEIFDAM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OMOJDEIFDAM.proto\x1a\x11CGHKIDBJHFH.proto\x1a\x11PKHJBPMIBBA.prot\
-    o\"m\n\x0bOMOJDEIFDAM\x12.\n\x0bHGECACCBEPA\x18\x08\x20\x01(\x0e2\x0c.PK\
-    HJBPMIBBAR\x0bHGECACCBEPA\x12.\n\x0bPBHMGCHKJGO\x18\t\x20\x01(\x0b2\x0c.\
-    CGHKIDBJHFHR\x0bPBHMGCHKJGOb\x06proto3\
+    o\"m\n\x0bOMOJDEIFDAM\x12.\n\x0bHGECACCBEPA\x18\x01\x20\x01(\x0e2\x0c.PK\
+    HJBPMIBBAR\x0bHGECACCBEPA\x12.\n\x0bPBHMGCHKJGO\x18\x0e\x20\x01(\x0b2\
+    \x0c.CGHKIDBJHFHR\x0bPBHMGCHKJGOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

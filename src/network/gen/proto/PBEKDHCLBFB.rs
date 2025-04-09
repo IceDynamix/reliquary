@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PBEKDHCLBFB {
     // message fields
-    // @@protoc_insertion_point(field:PBEKDHCLBFB.GFDBGCOLKCP)
-    pub GFDBGCOLKCP: u32,
-    // @@protoc_insertion_point(field:PBEKDHCLBFB.HGBLOMELBLE)
-    pub HGBLOMELBLE: u32,
     // @@protoc_insertion_point(field:PBEKDHCLBFB.JKJMCFAGOCF)
     pub JKJMCFAGOCF: u32,
+    // @@protoc_insertion_point(field:PBEKDHCLBFB.HGBLOMELBLE)
+    pub HGBLOMELBLE: u32,
+    // @@protoc_insertion_point(field:PBEKDHCLBFB.GFDBGCOLKCP)
+    pub GFDBGCOLKCP: u32,
     // @@protoc_insertion_point(field:PBEKDHCLBFB.IPODNBLJPOL)
     pub IPODNBLJPOL: u32,
     // special fields
@@ -56,9 +56,9 @@ impl PBEKDHCLBFB {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GFDBGCOLKCP",
-            |m: &PBEKDHCLBFB| { &m.GFDBGCOLKCP },
-            |m: &mut PBEKDHCLBFB| { &mut m.GFDBGCOLKCP },
+            "JKJMCFAGOCF",
+            |m: &PBEKDHCLBFB| { &m.JKJMCFAGOCF },
+            |m: &mut PBEKDHCLBFB| { &mut m.JKJMCFAGOCF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HGBLOMELBLE",
@@ -66,9 +66,9 @@ impl PBEKDHCLBFB {
             |m: &mut PBEKDHCLBFB| { &mut m.HGBLOMELBLE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JKJMCFAGOCF",
-            |m: &PBEKDHCLBFB| { &m.JKJMCFAGOCF },
-            |m: &mut PBEKDHCLBFB| { &mut m.JKJMCFAGOCF },
+            "GFDBGCOLKCP",
+            |m: &PBEKDHCLBFB| { &m.GFDBGCOLKCP },
+            |m: &mut PBEKDHCLBFB| { &mut m.GFDBGCOLKCP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IPODNBLJPOL",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for PBEKDHCLBFB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                88 => {
+                    self.JKJMCFAGOCF = is.read_uint32()?;
+                },
+                56 => {
+                    self.HGBLOMELBLE = is.read_uint32()?;
+                },
+                40 => {
                     self.GFDBGCOLKCP = is.read_uint32()?;
                 },
                 72 => {
-                    self.HGBLOMELBLE = is.read_uint32()?;
-                },
-                104 => {
-                    self.JKJMCFAGOCF = is.read_uint32()?;
-                },
-                40 => {
                     self.IPODNBLJPOL = is.read_uint32()?;
                 },
                 tag => {
@@ -117,17 +117,17 @@ impl ::protobuf::Message for PBEKDHCLBFB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GFDBGCOLKCP != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.GFDBGCOLKCP);
+        if self.JKJMCFAGOCF != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.JKJMCFAGOCF);
         }
         if self.HGBLOMELBLE != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.HGBLOMELBLE);
+            my_size += ::protobuf::rt::uint32_size(7, self.HGBLOMELBLE);
         }
-        if self.JKJMCFAGOCF != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.JKJMCFAGOCF);
+        if self.GFDBGCOLKCP != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.GFDBGCOLKCP);
         }
         if self.IPODNBLJPOL != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.IPODNBLJPOL);
+            my_size += ::protobuf::rt::uint32_size(9, self.IPODNBLJPOL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for PBEKDHCLBFB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GFDBGCOLKCP != 0 {
-            os.write_uint32(6, self.GFDBGCOLKCP)?;
+        if self.JKJMCFAGOCF != 0 {
+            os.write_uint32(11, self.JKJMCFAGOCF)?;
         }
         if self.HGBLOMELBLE != 0 {
-            os.write_uint32(9, self.HGBLOMELBLE)?;
+            os.write_uint32(7, self.HGBLOMELBLE)?;
         }
-        if self.JKJMCFAGOCF != 0 {
-            os.write_uint32(13, self.JKJMCFAGOCF)?;
+        if self.GFDBGCOLKCP != 0 {
+            os.write_uint32(5, self.GFDBGCOLKCP)?;
         }
         if self.IPODNBLJPOL != 0 {
-            os.write_uint32(5, self.IPODNBLJPOL)?;
+            os.write_uint32(9, self.IPODNBLJPOL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for PBEKDHCLBFB {
     }
 
     fn clear(&mut self) {
-        self.GFDBGCOLKCP = 0;
-        self.HGBLOMELBLE = 0;
         self.JKJMCFAGOCF = 0;
+        self.HGBLOMELBLE = 0;
+        self.GFDBGCOLKCP = 0;
         self.IPODNBLJPOL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PBEKDHCLBFB {
         static instance: PBEKDHCLBFB = PBEKDHCLBFB {
-            GFDBGCOLKCP: 0,
-            HGBLOMELBLE: 0,
             JKJMCFAGOCF: 0,
+            HGBLOMELBLE: 0,
+            GFDBGCOLKCP: 0,
             IPODNBLJPOL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -201,11 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for PBEKDHCLBFB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PBEKDHCLBFB.proto\"\x95\x01\n\x0bPBEKDHCLBFB\x12\x20\n\x0bGFDBGCOL\
-    KCP\x18\x06\x20\x01(\rR\x0bGFDBGCOLKCP\x12\x20\n\x0bHGBLOMELBLE\x18\t\
-    \x20\x01(\rR\x0bHGBLOMELBLE\x12\x20\n\x0bJKJMCFAGOCF\x18\r\x20\x01(\rR\
-    \x0bJKJMCFAGOCF\x12\x20\n\x0bIPODNBLJPOL\x18\x05\x20\x01(\rR\x0bIPODNBLJ\
-    POLb\x06proto3\
+    \n\x11PBEKDHCLBFB.proto\"\x95\x01\n\x0bPBEKDHCLBFB\x12\x20\n\x0bJKJMCFAG\
+    OCF\x18\x0b\x20\x01(\rR\x0bJKJMCFAGOCF\x12\x20\n\x0bHGBLOMELBLE\x18\x07\
+    \x20\x01(\rR\x0bHGBLOMELBLE\x12\x20\n\x0bGFDBGCOLKCP\x18\x05\x20\x01(\rR\
+    \x0bGFDBGCOLKCP\x12\x20\n\x0bIPODNBLJPOL\x18\t\x20\x01(\rR\x0bIPODNBLJPO\
+    Lb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

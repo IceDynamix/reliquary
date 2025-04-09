@@ -79,10 +79,10 @@ impl ::protobuf::Message for TakeTalkRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                88 => {
                     self.IEMOEOIMHMA = is.read_uint32()?;
                 },
-                26 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.OLCONCNJMMP)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for TakeTalkRewardCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.IEMOEOIMHMA != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.IEMOEOIMHMA);
+            my_size += ::protobuf::rt::uint32_size(11, self.IEMOEOIMHMA);
         }
         if let Some(v) = self.OLCONCNJMMP.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for TakeTalkRewardCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IEMOEOIMHMA != 0 {
-            os.write_uint32(14, self.IEMOEOIMHMA)?;
+            os.write_uint32(11, self.IEMOEOIMHMA)?;
         }
         if let Some(v) = self.OLCONCNJMMP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for TakeTalkRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19TakeTalkRewardCsReq.proto\x1a\x11GKBICDLGIMN.proto\"g\n\x13TakeTal\
-    kRewardCsReq\x12\x20\n\x0bIEMOEOIMHMA\x18\x0e\x20\x01(\rR\x0bIEMOEOIMHMA\
-    \x12.\n\x0bOLCONCNJMMP\x18\x03\x20\x01(\x0b2\x0c.GKBICDLGIMNR\x0bOLCONCN\
+    kRewardCsReq\x12\x20\n\x0bIEMOEOIMHMA\x18\x0b\x20\x01(\rR\x0bIEMOEOIMHMA\
+    \x12.\n\x0bOLCONCNJMMP\x18\x01\x20\x01(\x0b2\x0c.GKBICDLGIMNR\x0bOLCONCN\
     JMMPb\x06proto3\
 ";
 

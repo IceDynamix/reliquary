@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetPrivateChatHistoryScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetPrivateChatHistoryScRsp.DLJGIBOBMHD)
-    pub DLJGIBOBMHD: ::std::vec::Vec<super::BCJPOLPNHIN::BCJPOLPNHIN>,
     // @@protoc_insertion_point(field:GetPrivateChatHistoryScRsp.CBLCFDJCCGF)
     pub CBLCFDJCCGF: u32,
     // @@protoc_insertion_point(field:GetPrivateChatHistoryScRsp.PPEHINCDHCI)
     pub PPEHINCDHCI: u32,
     // @@protoc_insertion_point(field:GetPrivateChatHistoryScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetPrivateChatHistoryScRsp.DLJGIBOBMHD)
+    pub DLJGIBOBMHD: ::std::vec::Vec<super::BCJPOLPNHIN::BCJPOLPNHIN>,
     // special fields
     // @@protoc_insertion_point(special_field:GetPrivateChatHistoryScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,11 +55,6 @@ impl GetPrivateChatHistoryScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DLJGIBOBMHD",
-            |m: &GetPrivateChatHistoryScRsp| { &m.DLJGIBOBMHD },
-            |m: &mut GetPrivateChatHistoryScRsp| { &mut m.DLJGIBOBMHD },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CBLCFDJCCGF",
             |m: &GetPrivateChatHistoryScRsp| { &m.CBLCFDJCCGF },
@@ -74,6 +69,11 @@ impl GetPrivateChatHistoryScRsp {
             "retcode",
             |m: &GetPrivateChatHistoryScRsp| { &m.retcode },
             |m: &mut GetPrivateChatHistoryScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DLJGIBOBMHD",
+            |m: &GetPrivateChatHistoryScRsp| { &m.DLJGIBOBMHD },
+            |m: &mut GetPrivateChatHistoryScRsp| { &mut m.DLJGIBOBMHD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetPrivateChatHistoryScRsp>(
             "GetPrivateChatHistoryScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for GetPrivateChatHistoryScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    self.DLJGIBOBMHD.push(is.read_message()?);
-                },
-                96 => {
+                16 => {
                     self.CBLCFDJCCGF = is.read_uint32()?;
                 },
                 104 => {
                     self.PPEHINCDHCI = is.read_uint32()?;
                 },
-                32 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
+                },
+                66 => {
+                    self.DLJGIBOBMHD.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,37 +117,37 @@ impl ::protobuf::Message for GetPrivateChatHistoryScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.DLJGIBOBMHD {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if self.CBLCFDJCCGF != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.CBLCFDJCCGF);
+            my_size += ::protobuf::rt::uint32_size(2, self.CBLCFDJCCGF);
         }
         if self.PPEHINCDHCI != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.PPEHINCDHCI);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
+        for value in &self.DLJGIBOBMHD {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.DLJGIBOBMHD {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        };
         if self.CBLCFDJCCGF != 0 {
-            os.write_uint32(12, self.CBLCFDJCCGF)?;
+            os.write_uint32(2, self.CBLCFDJCCGF)?;
         }
         if self.PPEHINCDHCI != 0 {
             os.write_uint32(13, self.PPEHINCDHCI)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
+        for v in &self.DLJGIBOBMHD {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,19 +165,19 @@ impl ::protobuf::Message for GetPrivateChatHistoryScRsp {
     }
 
     fn clear(&mut self) {
-        self.DLJGIBOBMHD.clear();
         self.CBLCFDJCCGF = 0;
         self.PPEHINCDHCI = 0;
         self.retcode = 0;
+        self.DLJGIBOBMHD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetPrivateChatHistoryScRsp {
         static instance: GetPrivateChatHistoryScRsp = GetPrivateChatHistoryScRsp {
-            DLJGIBOBMHD: ::std::vec::Vec::new(),
             CBLCFDJCCGF: 0,
             PPEHINCDHCI: 0,
             retcode: 0,
+            DLJGIBOBMHD: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,11 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for GetPrivateChatHistoryScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20GetPrivateChatHistoryScRsp.proto\x1a\x11BCJPOLPNHIN.proto\"\xaa\
-    \x01\n\x1aGetPrivateChatHistoryScRsp\x12.\n\x0bDLJGIBOBMHD\x18\n\x20\x03\
-    (\x0b2\x0c.BCJPOLPNHINR\x0bDLJGIBOBMHD\x12\x20\n\x0bCBLCFDJCCGF\x18\x0c\
+    \x01\n\x1aGetPrivateChatHistoryScRsp\x12\x20\n\x0bCBLCFDJCCGF\x18\x02\
     \x20\x01(\rR\x0bCBLCFDJCCGF\x12\x20\n\x0bPPEHINCDHCI\x18\r\x20\x01(\rR\
-    \x0bPPEHINCDHCI\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcodeb\x06\
-    proto3\
+    \x0bPPEHINCDHCI\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12.\
+    \n\x0bDLJGIBOBMHD\x18\x08\x20\x03(\x0b2\x0c.BCJPOLPNHINR\x0bDLJGIBOBMHDb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

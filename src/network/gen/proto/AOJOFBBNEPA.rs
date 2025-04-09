@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AOJOFBBNEPA {
     // message fields
-    // @@protoc_insertion_point(field:AOJOFBBNEPA.DPFBDJMNCEO)
-    pub DPFBDJMNCEO: f32,
     // @@protoc_insertion_point(field:AOJOFBBNEPA.DCMHGOKCINF)
     pub DCMHGOKCINF: ::std::vec::Vec<super::MNCDPEPCFGC::MNCDPEPCFGC>,
+    // @@protoc_insertion_point(field:AOJOFBBNEPA.DPFBDJMNCEO)
+    pub DPFBDJMNCEO: f32,
     // @@protoc_insertion_point(field:AOJOFBBNEPA.NPJEECEDPOK)
     pub NPJEECEDPOK: u32,
     // special fields
@@ -53,15 +53,15 @@ impl AOJOFBBNEPA {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DPFBDJMNCEO",
-            |m: &AOJOFBBNEPA| { &m.DPFBDJMNCEO },
-            |m: &mut AOJOFBBNEPA| { &mut m.DPFBDJMNCEO },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "DCMHGOKCINF",
             |m: &AOJOFBBNEPA| { &m.DCMHGOKCINF },
             |m: &mut AOJOFBBNEPA| { &mut m.DCMHGOKCINF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DPFBDJMNCEO",
+            |m: &AOJOFBBNEPA| { &m.DPFBDJMNCEO },
+            |m: &mut AOJOFBBNEPA| { &mut m.DPFBDJMNCEO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NPJEECEDPOK",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for AOJOFBBNEPA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                61 => {
-                    self.DPFBDJMNCEO = is.read_float()?;
-                },
-                26 => {
+                66 => {
                     self.DCMHGOKCINF.push(is.read_message()?);
                 },
-                80 => {
+                85 => {
+                    self.DPFBDJMNCEO = is.read_float()?;
+                },
+                96 => {
                     self.NPJEECEDPOK = is.read_uint32()?;
                 },
                 tag => {
@@ -107,15 +107,15 @@ impl ::protobuf::Message for AOJOFBBNEPA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DPFBDJMNCEO != 0. {
-            my_size += 1 + 4;
-        }
         for value in &self.DCMHGOKCINF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.DPFBDJMNCEO != 0. {
+            my_size += 1 + 4;
+        }
         if self.NPJEECEDPOK != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.NPJEECEDPOK);
+            my_size += ::protobuf::rt::uint32_size(12, self.NPJEECEDPOK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for AOJOFBBNEPA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DPFBDJMNCEO != 0. {
-            os.write_float(7, self.DPFBDJMNCEO)?;
-        }
         for v in &self.DCMHGOKCINF {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
+        if self.DPFBDJMNCEO != 0. {
+            os.write_float(10, self.DPFBDJMNCEO)?;
+        }
         if self.NPJEECEDPOK != 0 {
-            os.write_uint32(10, self.NPJEECEDPOK)?;
+            os.write_uint32(12, self.NPJEECEDPOK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for AOJOFBBNEPA {
     }
 
     fn clear(&mut self) {
-        self.DPFBDJMNCEO = 0.;
         self.DCMHGOKCINF.clear();
+        self.DPFBDJMNCEO = 0.;
         self.NPJEECEDPOK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AOJOFBBNEPA {
         static instance: AOJOFBBNEPA = AOJOFBBNEPA {
-            DPFBDJMNCEO: 0.,
             DCMHGOKCINF: ::std::vec::Vec::new(),
+            DPFBDJMNCEO: 0.,
             NPJEECEDPOK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for AOJOFBBNEPA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AOJOFBBNEPA.proto\x1a\x11MNCDPEPCFGC.proto\"\x81\x01\n\x0bAOJOFBBN\
-    EPA\x12\x20\n\x0bDPFBDJMNCEO\x18\x07\x20\x01(\x02R\x0bDPFBDJMNCEO\x12.\n\
-    \x0bDCMHGOKCINF\x18\x03\x20\x03(\x0b2\x0c.MNCDPEPCFGCR\x0bDCMHGOKCINF\
-    \x12\x20\n\x0bNPJEECEDPOK\x18\n\x20\x01(\rR\x0bNPJEECEDPOKb\x06proto3\
+    EPA\x12.\n\x0bDCMHGOKCINF\x18\x08\x20\x03(\x0b2\x0c.MNCDPEPCFGCR\x0bDCMH\
+    GOKCINF\x12\x20\n\x0bDPFBDJMNCEO\x18\n\x20\x01(\x02R\x0bDPFBDJMNCEO\x12\
+    \x20\n\x0bNPJEECEDPOK\x18\x0c\x20\x01(\rR\x0bNPJEECEDPOKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

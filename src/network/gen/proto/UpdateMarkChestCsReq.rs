@@ -86,13 +86,13 @@ impl ::protobuf::Message for UpdateMarkChestCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                112 => {
                     self.HOBJMINNBOP = is.read_uint32()?;
                 },
-                24 => {
+                56 => {
                     self.DBFPAAFODKG = is.read_uint32()?;
                 },
-                90 => {
+                50 => {
                     self.BCEMAKCMADN.push(is.read_message()?);
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for UpdateMarkChestCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HOBJMINNBOP != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.HOBJMINNBOP);
+            my_size += ::protobuf::rt::uint32_size(14, self.HOBJMINNBOP);
         }
         if self.DBFPAAFODKG != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.DBFPAAFODKG);
+            my_size += ::protobuf::rt::uint32_size(7, self.DBFPAAFODKG);
         }
         for value in &self.BCEMAKCMADN {
             let len = value.compute_size();
@@ -124,13 +124,13 @@ impl ::protobuf::Message for UpdateMarkChestCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HOBJMINNBOP != 0 {
-            os.write_uint32(5, self.HOBJMINNBOP)?;
+            os.write_uint32(14, self.HOBJMINNBOP)?;
         }
         if self.DBFPAAFODKG != 0 {
-            os.write_uint32(3, self.DBFPAAFODKG)?;
+            os.write_uint32(7, self.DBFPAAFODKG)?;
         }
         for v in &self.BCEMAKCMADN {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for UpdateMarkChestCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aUpdateMarkChestCsReq.proto\x1a\x11MJFCEMBPICH.proto\"\x8a\x01\n\
-    \x14UpdateMarkChestCsReq\x12\x20\n\x0bHOBJMINNBOP\x18\x05\x20\x01(\rR\
-    \x0bHOBJMINNBOP\x12\x20\n\x0bDBFPAAFODKG\x18\x03\x20\x01(\rR\x0bDBFPAAFO\
-    DKG\x12.\n\x0bBCEMAKCMADN\x18\x0b\x20\x03(\x0b2\x0c.MJFCEMBPICHR\x0bBCEM\
+    \x14UpdateMarkChestCsReq\x12\x20\n\x0bHOBJMINNBOP\x18\x0e\x20\x01(\rR\
+    \x0bHOBJMINNBOP\x12\x20\n\x0bDBFPAAFODKG\x18\x07\x20\x01(\rR\x0bDBFPAAFO\
+    DKG\x12.\n\x0bBCEMAKCMADN\x18\x06\x20\x03(\x0b2\x0c.MJFCEMBPICHR\x0bBCEM\
     AKCMADNb\x06proto3\
 ";
 

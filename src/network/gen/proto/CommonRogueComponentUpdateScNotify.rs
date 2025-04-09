@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CommonRogueComponentUpdateScNotify {
     // message fields
-    // @@protoc_insertion_point(field:CommonRogueComponentUpdateScNotify.AGEBAMBKKBC)
-    pub AGEBAMBKKBC: u32,
-    // @@protoc_insertion_point(field:CommonRogueComponentUpdateScNotify.BNGFAIGNPHE)
-    pub BNGFAIGNPHE: u32,
     // @@protoc_insertion_point(field:CommonRogueComponentUpdateScNotify.DLKCOJGHHMI)
     pub DLKCOJGHHMI: ::protobuf::MessageField<super::LGKGEHHAJJE::LGKGEHHAJJE>,
     // @@protoc_insertion_point(field:CommonRogueComponentUpdateScNotify.EGMEBANHHNF)
     pub EGMEBANHHNF: u32,
+    // @@protoc_insertion_point(field:CommonRogueComponentUpdateScNotify.BNGFAIGNPHE)
+    pub BNGFAIGNPHE: u32,
+    // @@protoc_insertion_point(field:CommonRogueComponentUpdateScNotify.AGEBAMBKKBC)
+    pub AGEBAMBKKBC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CommonRogueComponentUpdateScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,16 +55,6 @@ impl CommonRogueComponentUpdateScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AGEBAMBKKBC",
-            |m: &CommonRogueComponentUpdateScNotify| { &m.AGEBAMBKKBC },
-            |m: &mut CommonRogueComponentUpdateScNotify| { &mut m.AGEBAMBKKBC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BNGFAIGNPHE",
-            |m: &CommonRogueComponentUpdateScNotify| { &m.BNGFAIGNPHE },
-            |m: &mut CommonRogueComponentUpdateScNotify| { &mut m.BNGFAIGNPHE },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LGKGEHHAJJE::LGKGEHHAJJE>(
             "DLKCOJGHHMI",
             |m: &CommonRogueComponentUpdateScNotify| { &m.DLKCOJGHHMI },
@@ -74,6 +64,16 @@ impl CommonRogueComponentUpdateScNotify {
             "EGMEBANHHNF",
             |m: &CommonRogueComponentUpdateScNotify| { &m.EGMEBANHHNF },
             |m: &mut CommonRogueComponentUpdateScNotify| { &mut m.EGMEBANHHNF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BNGFAIGNPHE",
+            |m: &CommonRogueComponentUpdateScNotify| { &m.BNGFAIGNPHE },
+            |m: &mut CommonRogueComponentUpdateScNotify| { &mut m.BNGFAIGNPHE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AGEBAMBKKBC",
+            |m: &CommonRogueComponentUpdateScNotify| { &m.AGEBAMBKKBC },
+            |m: &mut CommonRogueComponentUpdateScNotify| { &mut m.AGEBAMBKKBC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CommonRogueComponentUpdateScNotify>(
             "CommonRogueComponentUpdateScNotify",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for CommonRogueComponentUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.AGEBAMBKKBC = is.read_uint32()?;
-                },
-                88 => {
-                    self.BNGFAIGNPHE = is.read_uint32()?;
-                },
-                74 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.DLKCOJGHHMI)?;
                 },
-                56 => {
+                104 => {
                     self.EGMEBANHHNF = is.read_uint32()?;
+                },
+                72 => {
+                    self.BNGFAIGNPHE = is.read_uint32()?;
+                },
+                32 => {
+                    self.AGEBAMBKKBC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for CommonRogueComponentUpdateScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AGEBAMBKKBC != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.AGEBAMBKKBC);
-        }
-        if self.BNGFAIGNPHE != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.BNGFAIGNPHE);
-        }
         if let Some(v) = self.DLKCOJGHHMI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.EGMEBANHHNF != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.EGMEBANHHNF);
+            my_size += ::protobuf::rt::uint32_size(13, self.EGMEBANHHNF);
+        }
+        if self.BNGFAIGNPHE != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.BNGFAIGNPHE);
+        }
+        if self.AGEBAMBKKBC != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.AGEBAMBKKBC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for CommonRogueComponentUpdateScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AGEBAMBKKBC != 0 {
-            os.write_uint32(14, self.AGEBAMBKKBC)?;
-        }
-        if self.BNGFAIGNPHE != 0 {
-            os.write_uint32(11, self.BNGFAIGNPHE)?;
-        }
         if let Some(v) = self.DLKCOJGHHMI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if self.EGMEBANHHNF != 0 {
-            os.write_uint32(7, self.EGMEBANHHNF)?;
+            os.write_uint32(13, self.EGMEBANHHNF)?;
+        }
+        if self.BNGFAIGNPHE != 0 {
+            os.write_uint32(9, self.BNGFAIGNPHE)?;
+        }
+        if self.AGEBAMBKKBC != 0 {
+            os.write_uint32(4, self.AGEBAMBKKBC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for CommonRogueComponentUpdateScNotify {
     }
 
     fn clear(&mut self) {
-        self.AGEBAMBKKBC = 0;
-        self.BNGFAIGNPHE = 0;
         self.DLKCOJGHHMI.clear();
         self.EGMEBANHHNF = 0;
+        self.BNGFAIGNPHE = 0;
+        self.AGEBAMBKKBC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CommonRogueComponentUpdateScNotify {
         static instance: CommonRogueComponentUpdateScNotify = CommonRogueComponentUpdateScNotify {
-            AGEBAMBKKBC: 0,
-            BNGFAIGNPHE: 0,
             DLKCOJGHHMI: ::protobuf::MessageField::none(),
             EGMEBANHHNF: 0,
+            BNGFAIGNPHE: 0,
+            AGEBAMBKKBC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,11 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for CommonRogueComponentUpdateScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(CommonRogueComponentUpdateScNotify.proto\x1a\x11LGKGEHHAJJE.proto\"\
-    \xba\x01\n\"CommonRogueComponentUpdateScNotify\x12\x20\n\x0bAGEBAMBKKBC\
-    \x18\x0e\x20\x01(\rR\x0bAGEBAMBKKBC\x12\x20\n\x0bBNGFAIGNPHE\x18\x0b\x20\
-    \x01(\rR\x0bBNGFAIGNPHE\x12.\n\x0bDLKCOJGHHMI\x18\t\x20\x01(\x0b2\x0c.LG\
-    KGEHHAJJER\x0bDLKCOJGHHMI\x12\x20\n\x0bEGMEBANHHNF\x18\x07\x20\x01(\rR\
-    \x0bEGMEBANHHNFb\x06proto3\
+    \xba\x01\n\"CommonRogueComponentUpdateScNotify\x12.\n\x0bDLKCOJGHHMI\x18\
+    \x07\x20\x01(\x0b2\x0c.LGKGEHHAJJER\x0bDLKCOJGHHMI\x12\x20\n\x0bEGMEBANH\
+    HNF\x18\r\x20\x01(\rR\x0bEGMEBANHHNF\x12\x20\n\x0bBNGFAIGNPHE\x18\t\x20\
+    \x01(\rR\x0bBNGFAIGNPHE\x12\x20\n\x0bAGEBAMBKKBC\x18\x04\x20\x01(\rR\x0b\
+    AGEBAMBKKBCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

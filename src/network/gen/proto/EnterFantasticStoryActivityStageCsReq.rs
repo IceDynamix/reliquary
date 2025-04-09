@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterFantasticStoryActivityStageCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageCsReq.BEJCALDILNC)
-    pub BEJCALDILNC: u32,
     // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageCsReq.avatar_list)
     pub avatar_list: ::std::vec::Vec<super::KJMFEOCKCML::KJMFEOCKCML>,
-    // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageCsReq.BOKLGJNLFFP)
-    pub BOKLGJNLFFP: u32,
     // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageCsReq.PKFEOCAGECF)
     pub PKFEOCAGECF: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageCsReq.BOKLGJNLFFP)
+    pub BOKLGJNLFFP: u32,
+    // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageCsReq.BEJCALDILNC)
+    pub BEJCALDILNC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EnterFantasticStoryActivityStageCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl EnterFantasticStoryActivityStageCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BEJCALDILNC",
-            |m: &EnterFantasticStoryActivityStageCsReq| { &m.BEJCALDILNC },
-            |m: &mut EnterFantasticStoryActivityStageCsReq| { &mut m.BEJCALDILNC },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "avatar_list",
             |m: &EnterFantasticStoryActivityStageCsReq| { &m.avatar_list },
             |m: &mut EnterFantasticStoryActivityStageCsReq| { &mut m.avatar_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PKFEOCAGECF",
+            |m: &EnterFantasticStoryActivityStageCsReq| { &m.PKFEOCAGECF },
+            |m: &mut EnterFantasticStoryActivityStageCsReq| { &mut m.PKFEOCAGECF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BOKLGJNLFFP",
             |m: &EnterFantasticStoryActivityStageCsReq| { &m.BOKLGJNLFFP },
             |m: &mut EnterFantasticStoryActivityStageCsReq| { &mut m.BOKLGJNLFFP },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PKFEOCAGECF",
-            |m: &EnterFantasticStoryActivityStageCsReq| { &m.PKFEOCAGECF },
-            |m: &mut EnterFantasticStoryActivityStageCsReq| { &mut m.PKFEOCAGECF },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BEJCALDILNC",
+            |m: &EnterFantasticStoryActivityStageCsReq| { &m.BEJCALDILNC },
+            |m: &mut EnterFantasticStoryActivityStageCsReq| { &mut m.BEJCALDILNC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterFantasticStoryActivityStageCsReq>(
             "EnterFantasticStoryActivityStageCsReq",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for EnterFantasticStoryActivityStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.BEJCALDILNC = is.read_uint32()?;
-                },
-                10 => {
+                26 => {
                     self.avatar_list.push(is.read_message()?);
                 },
-                56 => {
-                    self.BOKLGJNLFFP = is.read_uint32()?;
-                },
-                66 => {
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.PKFEOCAGECF)?;
                 },
-                64 => {
+                40 => {
                     self.PKFEOCAGECF.push(is.read_uint32()?);
+                },
+                16 => {
+                    self.BOKLGJNLFFP = is.read_uint32()?;
+                },
+                8 => {
+                    self.BEJCALDILNC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,33 +120,33 @@ impl ::protobuf::Message for EnterFantasticStoryActivityStageCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BEJCALDILNC != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.BEJCALDILNC);
-        }
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.PKFEOCAGECF);
         if self.BOKLGJNLFFP != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.BOKLGJNLFFP);
+            my_size += ::protobuf::rt::uint32_size(2, self.BOKLGJNLFFP);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.PKFEOCAGECF);
+        if self.BEJCALDILNC != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.BEJCALDILNC);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BEJCALDILNC != 0 {
-            os.write_uint32(6, self.BEJCALDILNC)?;
-        }
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
+        os.write_repeated_packed_uint32(5, &self.PKFEOCAGECF)?;
         if self.BOKLGJNLFFP != 0 {
-            os.write_uint32(7, self.BOKLGJNLFFP)?;
+            os.write_uint32(2, self.BOKLGJNLFFP)?;
         }
-        os.write_repeated_packed_uint32(8, &self.PKFEOCAGECF)?;
+        if self.BEJCALDILNC != 0 {
+            os.write_uint32(1, self.BEJCALDILNC)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -164,19 +164,19 @@ impl ::protobuf::Message for EnterFantasticStoryActivityStageCsReq {
     }
 
     fn clear(&mut self) {
-        self.BEJCALDILNC = 0;
         self.avatar_list.clear();
-        self.BOKLGJNLFFP = 0;
         self.PKFEOCAGECF.clear();
+        self.BOKLGJNLFFP = 0;
+        self.BEJCALDILNC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterFantasticStoryActivityStageCsReq {
         static instance: EnterFantasticStoryActivityStageCsReq = EnterFantasticStoryActivityStageCsReq {
-            BEJCALDILNC: 0,
             avatar_list: ::std::vec::Vec::new(),
-            BOKLGJNLFFP: 0,
             PKFEOCAGECF: ::std::vec::Vec::new(),
+            BOKLGJNLFFP: 0,
+            BEJCALDILNC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for EnterFantasticStoryActivityStageCsRe
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+EnterFantasticStoryActivityStageCsReq.proto\x1a\x11KJMFEOCKCML.proto\
-    \"\xbc\x01\n%EnterFantasticStoryActivityStageCsReq\x12\x20\n\x0bBEJCALDI\
-    LNC\x18\x06\x20\x01(\rR\x0bBEJCALDILNC\x12-\n\x0bavatar_list\x18\x01\x20\
-    \x03(\x0b2\x0c.KJMFEOCKCMLR\navatarList\x12\x20\n\x0bBOKLGJNLFFP\x18\x07\
-    \x20\x01(\rR\x0bBOKLGJNLFFP\x12\x20\n\x0bPKFEOCAGECF\x18\x08\x20\x03(\rR\
-    \x0bPKFEOCAGECFb\x06proto3\
+    \"\xbc\x01\n%EnterFantasticStoryActivityStageCsReq\x12-\n\x0bavatar_list\
+    \x18\x03\x20\x03(\x0b2\x0c.KJMFEOCKCMLR\navatarList\x12\x20\n\x0bPKFEOCA\
+    GECF\x18\x05\x20\x03(\rR\x0bPKFEOCAGECF\x12\x20\n\x0bBOKLGJNLFFP\x18\x02\
+    \x20\x01(\rR\x0bBOKLGJNLFFP\x12\x20\n\x0bBEJCALDILNC\x18\x01\x20\x01(\rR\
+    \x0bBEJCALDILNCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

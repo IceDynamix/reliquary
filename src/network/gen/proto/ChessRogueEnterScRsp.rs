@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueEnterScRsp {
     // message fields
+    // @@protoc_insertion_point(field:ChessRogueEnterScRsp.HNDLHICDNPC)
+    pub HNDLHICDNPC: ::protobuf::MessageField<super::FFLAPKOLHCM::FFLAPKOLHCM>,
     // @@protoc_insertion_point(field:ChessRogueEnterScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:ChessRogueEnterScRsp.OMCBCGCHLGN)
-    pub OMCBCGCHLGN: ::protobuf::MessageField<super::BIPDDEJAADC::BIPDDEJAADC>,
-    // @@protoc_insertion_point(field:ChessRogueEnterScRsp.ROGUE_DEBUG_MESSAGE_TYPE_INFO)
-    pub ROGUE_DEBUG_MESSAGE_TYPE_INFO: ::protobuf::MessageField<super::FFLAPKOLHCM::FFLAPKOLHCM>,
     // @@protoc_insertion_point(field:ChessRogueEnterScRsp.MIFOLPKEOOO)
     pub MIFOLPKEOOO: ::protobuf::MessageField<super::EHANAPNJFJD::EHANAPNJFJD>,
     // @@protoc_insertion_point(field:ChessRogueEnterScRsp.ELGANMDPMID)
     pub ELGANMDPMID: u32,
+    // @@protoc_insertion_point(field:ChessRogueEnterScRsp.OMCBCGCHLGN)
+    pub OMCBCGCHLGN: ::protobuf::MessageField<super::BIPDDEJAADC::BIPDDEJAADC>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueEnterScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,20 +57,15 @@ impl ChessRogueEnterScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FFLAPKOLHCM::FFLAPKOLHCM>(
+            "HNDLHICDNPC",
+            |m: &ChessRogueEnterScRsp| { &m.HNDLHICDNPC },
+            |m: &mut ChessRogueEnterScRsp| { &mut m.HNDLHICDNPC },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &ChessRogueEnterScRsp| { &m.retcode },
             |m: &mut ChessRogueEnterScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BIPDDEJAADC::BIPDDEJAADC>(
-            "OMCBCGCHLGN",
-            |m: &ChessRogueEnterScRsp| { &m.OMCBCGCHLGN },
-            |m: &mut ChessRogueEnterScRsp| { &mut m.OMCBCGCHLGN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FFLAPKOLHCM::FFLAPKOLHCM>(
-            "ROGUE_DEBUG_MESSAGE_TYPE_INFO",
-            |m: &ChessRogueEnterScRsp| { &m.ROGUE_DEBUG_MESSAGE_TYPE_INFO },
-            |m: &mut ChessRogueEnterScRsp| { &mut m.ROGUE_DEBUG_MESSAGE_TYPE_INFO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EHANAPNJFJD::EHANAPNJFJD>(
             "MIFOLPKEOOO",
@@ -81,6 +76,11 @@ impl ChessRogueEnterScRsp {
             "ELGANMDPMID",
             |m: &ChessRogueEnterScRsp| { &m.ELGANMDPMID },
             |m: &mut ChessRogueEnterScRsp| { &mut m.ELGANMDPMID },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BIPDDEJAADC::BIPDDEJAADC>(
+            "OMCBCGCHLGN",
+            |m: &ChessRogueEnterScRsp| { &m.OMCBCGCHLGN },
+            |m: &mut ChessRogueEnterScRsp| { &mut m.OMCBCGCHLGN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueEnterScRsp>(
             "ChessRogueEnterScRsp",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for ChessRogueEnterScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HNDLHICDNPC)?;
+                },
+                48 => {
                     self.retcode = is.read_uint32()?;
                 },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OMCBCGCHLGN)?;
-                },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ROGUE_DEBUG_MESSAGE_TYPE_INFO)?;
-                },
-                82 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MIFOLPKEOOO)?;
                 },
-                8 => {
+                64 => {
                     self.ELGANMDPMID = is.read_uint32()?;
+                },
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OMCBCGCHLGN)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,23 +127,23 @@ impl ::protobuf::Message for ChessRogueEnterScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if let Some(v) = self.HNDLHICDNPC.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
-        }
-        if let Some(v) = self.OMCBCGCHLGN.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.ROGUE_DEBUG_MESSAGE_TYPE_INFO.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         if let Some(v) = self.MIFOLPKEOOO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.ELGANMDPMID != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.ELGANMDPMID);
+            my_size += ::protobuf::rt::uint32_size(8, self.ELGANMDPMID);
+        }
+        if let Some(v) = self.OMCBCGCHLGN.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -151,20 +151,20 @@ impl ::protobuf::Message for ChessRogueEnterScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if let Some(v) = self.HNDLHICDNPC.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        }
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
-        }
-        if let Some(v) = self.OMCBCGCHLGN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        }
-        if let Some(v) = self.ROGUE_DEBUG_MESSAGE_TYPE_INFO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            os.write_uint32(6, self.retcode)?;
         }
         if let Some(v) = self.MIFOLPKEOOO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if self.ELGANMDPMID != 0 {
-            os.write_uint32(1, self.ELGANMDPMID)?;
+            os.write_uint32(8, self.ELGANMDPMID)?;
+        }
+        if let Some(v) = self.OMCBCGCHLGN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,21 +183,21 @@ impl ::protobuf::Message for ChessRogueEnterScRsp {
     }
 
     fn clear(&mut self) {
+        self.HNDLHICDNPC.clear();
         self.retcode = 0;
-        self.OMCBCGCHLGN.clear();
-        self.ROGUE_DEBUG_MESSAGE_TYPE_INFO.clear();
         self.MIFOLPKEOOO.clear();
         self.ELGANMDPMID = 0;
+        self.OMCBCGCHLGN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueEnterScRsp {
         static instance: ChessRogueEnterScRsp = ChessRogueEnterScRsp {
+            HNDLHICDNPC: ::protobuf::MessageField::none(),
             retcode: 0,
-            OMCBCGCHLGN: ::protobuf::MessageField::none(),
-            ROGUE_DEBUG_MESSAGE_TYPE_INFO: ::protobuf::MessageField::none(),
             MIFOLPKEOOO: ::protobuf::MessageField::none(),
             ELGANMDPMID: 0,
+            OMCBCGCHLGN: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -223,13 +223,12 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueEnterScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aChessRogueEnterScRsp.proto\x1a\x11BIPDDEJAADC.proto\x1a\x11EHANAPN\
-    JFJD.proto\x1a\x11FFLAPKOLHCM.proto\"\x82\x02\n\x14ChessRogueEnterScRsp\
-    \x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12.\n\x0bOMCBCGCHL\
-    GN\x18\x0f\x20\x01(\x0b2\x0c.BIPDDEJAADCR\x0bOMCBCGCHLGN\x12N\n\x1dROGUE\
-    _DEBUG_MESSAGE_TYPE_INFO\x18\x05\x20\x01(\x0b2\x0c.FFLAPKOLHCMR\x19ROGUE\
-    DEBUGMESSAGETYPEINFO\x12.\n\x0bMIFOLPKEOOO\x18\n\x20\x01(\x0b2\x0c.EHANA\
-    PNJFJDR\x0bMIFOLPKEOOO\x12\x20\n\x0bELGANMDPMID\x18\x01\x20\x01(\rR\x0bE\
-    LGANMDPMIDb\x06proto3\
+    JFJD.proto\x1a\x11FFLAPKOLHCM.proto\"\xe2\x01\n\x14ChessRogueEnterScRsp\
+    \x12.\n\x0bHNDLHICDNPC\x18\x03\x20\x01(\x0b2\x0c.FFLAPKOLHCMR\x0bHNDLHIC\
+    DNPC\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\x12.\n\x0bMIFOL\
+    PKEOOO\x18\x0e\x20\x01(\x0b2\x0c.EHANAPNJFJDR\x0bMIFOLPKEOOO\x12\x20\n\
+    \x0bELGANMDPMID\x18\x08\x20\x01(\rR\x0bELGANMDPMID\x12.\n\x0bOMCBCGCHLGN\
+    \x18\x0c\x20\x01(\x0b2\x0c.BIPDDEJAADCR\x0bOMCBCGCHLGNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

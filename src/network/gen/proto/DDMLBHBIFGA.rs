@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DDMLBHBIFGA {
     // message fields
-    // @@protoc_insertion_point(field:DDMLBHBIFGA.PBLFLJNHMIL)
-    pub PBLFLJNHMIL: ::protobuf::EnumOrUnknown<super::CEHKDHMGIPF::CEHKDHMGIPF>,
     // @@protoc_insertion_point(field:DDMLBHBIFGA.LOLCMPAOJBG)
     pub LOLCMPAOJBG: u32,
+    // @@protoc_insertion_point(field:DDMLBHBIFGA.PBLFLJNHMIL)
+    pub PBLFLJNHMIL: ::protobuf::EnumOrUnknown<super::CEHKDHMGIPF::CEHKDHMGIPF>,
     // special fields
     // @@protoc_insertion_point(special_field:DDMLBHBIFGA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl DDMLBHBIFGA {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PBLFLJNHMIL",
-            |m: &DDMLBHBIFGA| { &m.PBLFLJNHMIL },
-            |m: &mut DDMLBHBIFGA| { &mut m.PBLFLJNHMIL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LOLCMPAOJBG",
             |m: &DDMLBHBIFGA| { &m.LOLCMPAOJBG },
             |m: &mut DDMLBHBIFGA| { &mut m.LOLCMPAOJBG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PBLFLJNHMIL",
+            |m: &DDMLBHBIFGA| { &m.PBLFLJNHMIL },
+            |m: &mut DDMLBHBIFGA| { &mut m.PBLFLJNHMIL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DDMLBHBIFGA>(
             "DDMLBHBIFGA",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for DDMLBHBIFGA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                64 => {
+                    self.LOLCMPAOJBG = is.read_uint32()?;
+                },
                 48 => {
                     self.PBLFLJNHMIL = is.read_enum_or_unknown()?;
-                },
-                88 => {
-                    self.LOLCMPAOJBG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for DDMLBHBIFGA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.LOLCMPAOJBG != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.LOLCMPAOJBG);
+        }
         if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::CEHKDHMGIPF::CEHKDHMGIPF::ContentPackageStatus_None) {
             my_size += ::protobuf::rt::int32_size(6, self.PBLFLJNHMIL.value());
-        }
-        if self.LOLCMPAOJBG != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.LOLCMPAOJBG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for DDMLBHBIFGA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.LOLCMPAOJBG != 0 {
+            os.write_uint32(8, self.LOLCMPAOJBG)?;
+        }
         if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::CEHKDHMGIPF::CEHKDHMGIPF::ContentPackageStatus_None) {
             os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.PBLFLJNHMIL))?;
-        }
-        if self.LOLCMPAOJBG != 0 {
-            os.write_uint32(11, self.LOLCMPAOJBG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for DDMLBHBIFGA {
     }
 
     fn clear(&mut self) {
-        self.PBLFLJNHMIL = ::protobuf::EnumOrUnknown::new(super::CEHKDHMGIPF::CEHKDHMGIPF::ContentPackageStatus_None);
         self.LOLCMPAOJBG = 0;
+        self.PBLFLJNHMIL = ::protobuf::EnumOrUnknown::new(super::CEHKDHMGIPF::CEHKDHMGIPF::ContentPackageStatus_None);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DDMLBHBIFGA {
         static instance: DDMLBHBIFGA = DDMLBHBIFGA {
-            PBLFLJNHMIL: ::protobuf::EnumOrUnknown::from_i32(0),
             LOLCMPAOJBG: 0,
+            PBLFLJNHMIL: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for DDMLBHBIFGA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DDMLBHBIFGA.proto\x1a\x11CEHKDHMGIPF.proto\"_\n\x0bDDMLBHBIFGA\x12\
-    .\n\x0bPBLFLJNHMIL\x18\x06\x20\x01(\x0e2\x0c.CEHKDHMGIPFR\x0bPBLFLJNHMIL\
-    \x12\x20\n\x0bLOLCMPAOJBG\x18\x0b\x20\x01(\rR\x0bLOLCMPAOJBGb\x06proto3\
+    \x20\n\x0bLOLCMPAOJBG\x18\x08\x20\x01(\rR\x0bLOLCMPAOJBG\x12.\n\x0bPBLFL\
+    JNHMIL\x18\x06\x20\x01(\x0e2\x0c.CEHKDHMGIPFR\x0bPBLFLJNHMILb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

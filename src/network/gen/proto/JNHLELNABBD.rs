@@ -79,10 +79,10 @@ impl ::protobuf::Message for JNHLELNABBD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                61 => {
+                93 => {
                     self.MBMDOCJIMEJ = is.read_float()?;
                 },
-                26 => {
+                34 => {
                     self.HEIKKHLKMOA = is.read_string()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for JNHLELNABBD {
             my_size += 1 + 4;
         }
         if !self.HEIKKHLKMOA.is_empty() {
-            my_size += ::protobuf::rt::string_size(3, &self.HEIKKHLKMOA);
+            my_size += ::protobuf::rt::string_size(4, &self.HEIKKHLKMOA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for JNHLELNABBD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.MBMDOCJIMEJ != 0. {
-            os.write_float(7, self.MBMDOCJIMEJ)?;
+            os.write_float(11, self.MBMDOCJIMEJ)?;
         }
         if !self.HEIKKHLKMOA.is_empty() {
-            os.write_string(3, &self.HEIKKHLKMOA)?;
+            os.write_string(4, &self.HEIKKHLKMOA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for JNHLELNABBD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JNHLELNABBD.proto\"Q\n\x0bJNHLELNABBD\x12\x20\n\x0bMBMDOCJIMEJ\x18\
-    \x07\x20\x01(\x02R\x0bMBMDOCJIMEJ\x12\x20\n\x0bHEIKKHLKMOA\x18\x03\x20\
+    \x0b\x20\x01(\x02R\x0bMBMDOCJIMEJ\x12\x20\n\x0bHEIKKHLKMOA\x18\x04\x20\
     \x01(\tR\x0bHEIKKHLKMOAb\x06proto3\
 ";
 

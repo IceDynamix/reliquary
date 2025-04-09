@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AOIHEKLNDID {
     // message fields
-    // @@protoc_insertion_point(field:AOIHEKLNDID.ALGAFOMNIIA)
-    pub ALGAFOMNIIA: bool,
     // @@protoc_insertion_point(field:AOIHEKLNDID.AKCGHBFGBCC)
     pub AKCGHBFGBCC: bool,
+    // @@protoc_insertion_point(field:AOIHEKLNDID.ALGAFOMNIIA)
+    pub ALGAFOMNIIA: bool,
     // special fields
     // @@protoc_insertion_point(special_field:AOIHEKLNDID.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl AOIHEKLNDID {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ALGAFOMNIIA",
-            |m: &AOIHEKLNDID| { &m.ALGAFOMNIIA },
-            |m: &mut AOIHEKLNDID| { &mut m.ALGAFOMNIIA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AKCGHBFGBCC",
             |m: &AOIHEKLNDID| { &m.AKCGHBFGBCC },
             |m: &mut AOIHEKLNDID| { &mut m.AKCGHBFGBCC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ALGAFOMNIIA",
+            |m: &AOIHEKLNDID| { &m.ALGAFOMNIIA },
+            |m: &mut AOIHEKLNDID| { &mut m.ALGAFOMNIIA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AOIHEKLNDID>(
             "AOIHEKLNDID",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for AOIHEKLNDID {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.ALGAFOMNIIA = is.read_bool()?;
-                },
-                104 => {
+                56 => {
                     self.AKCGHBFGBCC = is.read_bool()?;
+                },
+                32 => {
+                    self.ALGAFOMNIIA = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,10 +97,10 @@ impl ::protobuf::Message for AOIHEKLNDID {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ALGAFOMNIIA != false {
+        if self.AKCGHBFGBCC != false {
             my_size += 1 + 1;
         }
-        if self.AKCGHBFGBCC != false {
+        if self.ALGAFOMNIIA != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -109,11 +109,11 @@ impl ::protobuf::Message for AOIHEKLNDID {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ALGAFOMNIIA != false {
-            os.write_bool(3, self.ALGAFOMNIIA)?;
-        }
         if self.AKCGHBFGBCC != false {
-            os.write_bool(13, self.AKCGHBFGBCC)?;
+            os.write_bool(7, self.AKCGHBFGBCC)?;
+        }
+        if self.ALGAFOMNIIA != false {
+            os.write_bool(4, self.ALGAFOMNIIA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for AOIHEKLNDID {
     }
 
     fn clear(&mut self) {
-        self.ALGAFOMNIIA = false;
         self.AKCGHBFGBCC = false;
+        self.ALGAFOMNIIA = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AOIHEKLNDID {
         static instance: AOIHEKLNDID = AOIHEKLNDID {
-            ALGAFOMNIIA: false,
             AKCGHBFGBCC: false,
+            ALGAFOMNIIA: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for AOIHEKLNDID {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AOIHEKLNDID.proto\"Q\n\x0bAOIHEKLNDID\x12\x20\n\x0bALGAFOMNIIA\x18\
-    \x03\x20\x01(\x08R\x0bALGAFOMNIIA\x12\x20\n\x0bAKCGHBFGBCC\x18\r\x20\x01\
-    (\x08R\x0bAKCGHBFGBCCb\x06proto3\
+    \n\x11AOIHEKLNDID.proto\"Q\n\x0bAOIHEKLNDID\x12\x20\n\x0bAKCGHBFGBCC\x18\
+    \x07\x20\x01(\x08R\x0bAKCGHBFGBCC\x12\x20\n\x0bALGAFOMNIIA\x18\x04\x20\
+    \x01(\x08R\x0bALGAFOMNIIAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

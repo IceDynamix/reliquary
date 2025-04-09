@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CHKIICNAPHA {
     // message fields
-    // @@protoc_insertion_point(field:CHKIICNAPHA.KHCNAJOKJHJ)
-    pub KHCNAJOKJHJ: u32,
     // @@protoc_insertion_point(field:CHKIICNAPHA.FJNHDHOHBCL)
     pub FJNHDHOHBCL: u32,
+    // @@protoc_insertion_point(field:CHKIICNAPHA.KHCNAJOKJHJ)
+    pub KHCNAJOKJHJ: u32,
     // message oneof groups
     pub JDICGGKKOOI: ::std::option::Option<chkiicnapha::JDICGGKKOOI>,
     // special fields
@@ -50,7 +50,7 @@ impl CHKIICNAPHA {
         ::std::default::Default::default()
     }
 
-    // .LDCHNCDFICP MJBENBDBHAJ = 1882;
+    // .LDCHNCDFICP MJBENBDBHAJ = 1613;
 
     pub fn MJBENBDBHAJ(&self) -> &super::LDCHNCDFICP::LDCHNCDFICP {
         match self.JDICGGKKOOI {
@@ -99,7 +99,7 @@ impl CHKIICNAPHA {
         }
     }
 
-    // .LAAIGBDPLJC AJGCMALNLEN = 1695;
+    // .LAAIGBDPLJC AJGCMALNLEN = 1182;
 
     pub fn AJGCMALNLEN(&self) -> &super::LAAIGBDPLJC::LAAIGBDPLJC {
         match self.JDICGGKKOOI {
@@ -148,7 +148,7 @@ impl CHKIICNAPHA {
         }
     }
 
-    // .LGNMPMCPOPF BMCKMGINCIA = 1756;
+    // .LGNMPMCPOPF BMCKMGINCIA = 688;
 
     pub fn BMCKMGINCIA(&self) -> &super::LGNMPMCPOPF::LGNMPMCPOPF {
         match self.JDICGGKKOOI {
@@ -201,14 +201,14 @@ impl CHKIICNAPHA {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KHCNAJOKJHJ",
-            |m: &CHKIICNAPHA| { &m.KHCNAJOKJHJ },
-            |m: &mut CHKIICNAPHA| { &mut m.KHCNAJOKJHJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FJNHDHOHBCL",
             |m: &CHKIICNAPHA| { &m.FJNHDHOHBCL },
             |m: &mut CHKIICNAPHA| { &mut m.FJNHDHOHBCL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KHCNAJOKJHJ",
+            |m: &CHKIICNAPHA| { &m.KHCNAJOKJHJ },
+            |m: &mut CHKIICNAPHA| { &mut m.KHCNAJOKJHJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LDCHNCDFICP::LDCHNCDFICP>(
             "MJBENBDBHAJ",
@@ -250,19 +250,19 @@ impl ::protobuf::Message for CHKIICNAPHA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.KHCNAJOKJHJ = is.read_uint32()?;
-                },
-                16 => {
+                112 => {
                     self.FJNHDHOHBCL = is.read_uint32()?;
                 },
-                15058 => {
+                32 => {
+                    self.KHCNAJOKJHJ = is.read_uint32()?;
+                },
+                12906 => {
                     self.JDICGGKKOOI = ::std::option::Option::Some(chkiicnapha::JDICGGKKOOI::MJBENBDBHAJ(is.read_message()?));
                 },
-                13562 => {
+                9458 => {
                     self.JDICGGKKOOI = ::std::option::Option::Some(chkiicnapha::JDICGGKKOOI::AJGCMALNLEN(is.read_message()?));
                 },
-                14050 => {
+                5506 => {
                     self.JDICGGKKOOI = ::std::option::Option::Some(chkiicnapha::JDICGGKKOOI::BMCKMGINCIA(is.read_message()?));
                 },
                 tag => {
@@ -277,11 +277,11 @@ impl ::protobuf::Message for CHKIICNAPHA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KHCNAJOKJHJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.KHCNAJOKJHJ);
-        }
         if self.FJNHDHOHBCL != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.FJNHDHOHBCL);
+            my_size += ::protobuf::rt::uint32_size(14, self.FJNHDHOHBCL);
+        }
+        if self.KHCNAJOKJHJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.KHCNAJOKJHJ);
         }
         if let ::std::option::Option::Some(ref v) = self.JDICGGKKOOI {
             match v {
@@ -305,22 +305,22 @@ impl ::protobuf::Message for CHKIICNAPHA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KHCNAJOKJHJ != 0 {
-            os.write_uint32(9, self.KHCNAJOKJHJ)?;
-        }
         if self.FJNHDHOHBCL != 0 {
-            os.write_uint32(2, self.FJNHDHOHBCL)?;
+            os.write_uint32(14, self.FJNHDHOHBCL)?;
+        }
+        if self.KHCNAJOKJHJ != 0 {
+            os.write_uint32(4, self.KHCNAJOKJHJ)?;
         }
         if let ::std::option::Option::Some(ref v) = self.JDICGGKKOOI {
             match v {
                 &chkiicnapha::JDICGGKKOOI::MJBENBDBHAJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1882, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1613, v, os)?;
                 },
                 &chkiicnapha::JDICGGKKOOI::AJGCMALNLEN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1695, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1182, v, os)?;
                 },
                 &chkiicnapha::JDICGGKKOOI::BMCKMGINCIA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1756, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(688, v, os)?;
                 },
             };
         }
@@ -341,8 +341,8 @@ impl ::protobuf::Message for CHKIICNAPHA {
     }
 
     fn clear(&mut self) {
-        self.KHCNAJOKJHJ = 0;
         self.FJNHDHOHBCL = 0;
+        self.KHCNAJOKJHJ = 0;
         self.JDICGGKKOOI = ::std::option::Option::None;
         self.JDICGGKKOOI = ::std::option::Option::None;
         self.JDICGGKKOOI = ::std::option::Option::None;
@@ -351,8 +351,8 @@ impl ::protobuf::Message for CHKIICNAPHA {
 
     fn default_instance() -> &'static CHKIICNAPHA {
         static instance: CHKIICNAPHA = CHKIICNAPHA {
-            KHCNAJOKJHJ: 0,
             FJNHDHOHBCL: 0,
+            KHCNAJOKJHJ: 0,
             JDICGGKKOOI: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -411,13 +411,13 @@ pub mod chkiicnapha {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CHKIICNAPHA.proto\x1a\x11LAAIGBDPLJC.proto\x1a\x11LDCHNCDFICP.prot\
-    o\x1a\x11LGNMPMCPOPF.proto\"\xf9\x01\n\x0bCHKIICNAPHA\x12\x20\n\x0bKHCNA\
-    JOKJHJ\x18\t\x20\x01(\rR\x0bKHCNAJOKJHJ\x12\x20\n\x0bFJNHDHOHBCL\x18\x02\
-    \x20\x01(\rR\x0bFJNHDHOHBCL\x121\n\x0bMJBENBDBHAJ\x18\xda\x0e\x20\x01(\
-    \x0b2\x0c.LDCHNCDFICPH\0R\x0bMJBENBDBHAJ\x121\n\x0bAJGCMALNLEN\x18\x9f\r\
-    \x20\x01(\x0b2\x0c.LAAIGBDPLJCH\0R\x0bAJGCMALNLEN\x121\n\x0bBMCKMGINCIA\
-    \x18\xdc\r\x20\x01(\x0b2\x0c.LGNMPMCPOPFH\0R\x0bBMCKMGINCIAB\r\n\x0bJDIC\
-    GGKKOOIb\x06proto3\
+    o\x1a\x11LGNMPMCPOPF.proto\"\xf9\x01\n\x0bCHKIICNAPHA\x12\x20\n\x0bFJNHD\
+    HOHBCL\x18\x0e\x20\x01(\rR\x0bFJNHDHOHBCL\x12\x20\n\x0bKHCNAJOKJHJ\x18\
+    \x04\x20\x01(\rR\x0bKHCNAJOKJHJ\x121\n\x0bMJBENBDBHAJ\x18\xcd\x0c\x20\
+    \x01(\x0b2\x0c.LDCHNCDFICPH\0R\x0bMJBENBDBHAJ\x121\n\x0bAJGCMALNLEN\x18\
+    \x9e\t\x20\x01(\x0b2\x0c.LAAIGBDPLJCH\0R\x0bAJGCMALNLEN\x121\n\x0bBMCKMG\
+    INCIA\x18\xb0\x05\x20\x01(\x0b2\x0c.LGNMPMCPOPFH\0R\x0bBMCKMGINCIAB\r\n\
+    \x0bJDICGGKKOOIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

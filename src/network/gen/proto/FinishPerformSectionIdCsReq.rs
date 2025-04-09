@@ -79,10 +79,10 @@ impl ::protobuf::Message for FinishPerformSectionIdCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                120 => {
                     self.LBMNCAGOKIF = is.read_uint32()?;
                 },
-                74 => {
+                98 => {
                     self.DCPBFLJFHBB.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for FinishPerformSectionIdCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.LBMNCAGOKIF != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.LBMNCAGOKIF);
+            my_size += ::protobuf::rt::uint32_size(15, self.LBMNCAGOKIF);
         }
         for value in &self.DCPBFLJFHBB {
             let len = value.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for FinishPerformSectionIdCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.LBMNCAGOKIF != 0 {
-            os.write_uint32(2, self.LBMNCAGOKIF)?;
+            os.write_uint32(15, self.LBMNCAGOKIF)?;
         }
         for v in &self.DCPBFLJFHBB {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for FinishPerformSectionIdCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!FinishPerformSectionIdCsReq.proto\x1a\x11NNMLCFAIBDE.proto\"o\n\x1bFi\
-    nishPerformSectionIdCsReq\x12\x20\n\x0bLBMNCAGOKIF\x18\x02\x20\x01(\rR\
-    \x0bLBMNCAGOKIF\x12.\n\x0bDCPBFLJFHBB\x18\t\x20\x03(\x0b2\x0c.NNMLCFAIBD\
-    ER\x0bDCPBFLJFHBBb\x06proto3\
+    nishPerformSectionIdCsReq\x12\x20\n\x0bLBMNCAGOKIF\x18\x0f\x20\x01(\rR\
+    \x0bLBMNCAGOKIF\x12.\n\x0bDCPBFLJFHBB\x18\x0c\x20\x03(\x0b2\x0c.NNMLCFAI\
+    BDER\x0bDCPBFLJFHBBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

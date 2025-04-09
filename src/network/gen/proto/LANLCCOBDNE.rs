@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LANLCCOBDNE {
     // message fields
-    // @@protoc_insertion_point(field:LANLCCOBDNE.ONLHFCOGLAL)
-    pub ONLHFCOGLAL: u32,
-    // @@protoc_insertion_point(field:LANLCCOBDNE.EOHEEIGOBKD)
-    pub EOHEEIGOBKD: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:LANLCCOBDNE.HPEOADAJIEE)
-    pub HPEOADAJIEE: ::std::vec::Vec<super::RogueDialogueEventParam::RogueDialogueEventParam>,
     // @@protoc_insertion_point(field:LANLCCOBDNE.BNCLFOABAIP)
     pub BNCLFOABAIP: u32,
+    // @@protoc_insertion_point(field:LANLCCOBDNE.HPEOADAJIEE)
+    pub HPEOADAJIEE: ::std::vec::Vec<super::RogueDialogueEventParam::RogueDialogueEventParam>,
     // @@protoc_insertion_point(field:LANLCCOBDNE.BDOKMBIBFJB)
     pub BDOKMBIBFJB: u32,
     // @@protoc_insertion_point(field:LANLCCOBDNE.CDJECOKFIOF)
     pub CDJECOKFIOF: u32,
+    // @@protoc_insertion_point(field:LANLCCOBDNE.ONLHFCOGLAL)
+    pub ONLHFCOGLAL: u32,
+    // @@protoc_insertion_point(field:LANLCCOBDNE.EOHEEIGOBKD)
+    pub EOHEEIGOBKD: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:LANLCCOBDNE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,24 +60,14 @@ impl LANLCCOBDNE {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ONLHFCOGLAL",
-            |m: &LANLCCOBDNE| { &m.ONLHFCOGLAL },
-            |m: &mut LANLCCOBDNE| { &mut m.ONLHFCOGLAL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EOHEEIGOBKD",
-            |m: &LANLCCOBDNE| { &m.EOHEEIGOBKD },
-            |m: &mut LANLCCOBDNE| { &mut m.EOHEEIGOBKD },
+            "BNCLFOABAIP",
+            |m: &LANLCCOBDNE| { &m.BNCLFOABAIP },
+            |m: &mut LANLCCOBDNE| { &mut m.BNCLFOABAIP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "HPEOADAJIEE",
             |m: &LANLCCOBDNE| { &m.HPEOADAJIEE },
             |m: &mut LANLCCOBDNE| { &mut m.HPEOADAJIEE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BNCLFOABAIP",
-            |m: &LANLCCOBDNE| { &m.BNCLFOABAIP },
-            |m: &mut LANLCCOBDNE| { &mut m.BNCLFOABAIP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BDOKMBIBFJB",
@@ -88,6 +78,16 @@ impl LANLCCOBDNE {
             "CDJECOKFIOF",
             |m: &LANLCCOBDNE| { &m.CDJECOKFIOF },
             |m: &mut LANLCCOBDNE| { &mut m.CDJECOKFIOF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ONLHFCOGLAL",
+            |m: &LANLCCOBDNE| { &m.ONLHFCOGLAL },
+            |m: &mut LANLCCOBDNE| { &mut m.ONLHFCOGLAL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "EOHEEIGOBKD",
+            |m: &LANLCCOBDNE| { &m.EOHEEIGOBKD },
+            |m: &mut LANLCCOBDNE| { &mut m.EOHEEIGOBKD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LANLCCOBDNE>(
             "LANLCCOBDNE",
@@ -107,26 +107,26 @@ impl ::protobuf::Message for LANLCCOBDNE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.ONLHFCOGLAL = is.read_uint32()?;
-                },
-                66 => {
-                    is.read_repeated_packed_uint32_into(&mut self.EOHEEIGOBKD)?;
-                },
-                64 => {
-                    self.EOHEEIGOBKD.push(is.read_uint32()?);
-                },
-                74 => {
-                    self.HPEOADAJIEE.push(is.read_message()?);
-                },
-                48 => {
+                96 => {
                     self.BNCLFOABAIP = is.read_uint32()?;
                 },
-                96 => {
+                114 => {
+                    self.HPEOADAJIEE.push(is.read_message()?);
+                },
+                104 => {
                     self.BDOKMBIBFJB = is.read_uint32()?;
                 },
-                88 => {
+                64 => {
                     self.CDJECOKFIOF = is.read_uint32()?;
+                },
+                80 => {
+                    self.ONLHFCOGLAL = is.read_uint32()?;
+                },
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.EOHEEIGOBKD)?;
+                },
+                40 => {
+                    self.EOHEEIGOBKD.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,45 +140,45 @@ impl ::protobuf::Message for LANLCCOBDNE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ONLHFCOGLAL != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.ONLHFCOGLAL);
+        if self.BNCLFOABAIP != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.BNCLFOABAIP);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.EOHEEIGOBKD);
         for value in &self.HPEOADAJIEE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.BNCLFOABAIP != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.BNCLFOABAIP);
-        }
         if self.BDOKMBIBFJB != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.BDOKMBIBFJB);
+            my_size += ::protobuf::rt::uint32_size(13, self.BDOKMBIBFJB);
         }
         if self.CDJECOKFIOF != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.CDJECOKFIOF);
+            my_size += ::protobuf::rt::uint32_size(8, self.CDJECOKFIOF);
         }
+        if self.ONLHFCOGLAL != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.ONLHFCOGLAL);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.EOHEEIGOBKD);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ONLHFCOGLAL != 0 {
-            os.write_uint32(13, self.ONLHFCOGLAL)?;
-        }
-        os.write_repeated_packed_uint32(8, &self.EOHEEIGOBKD)?;
-        for v in &self.HPEOADAJIEE {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
         if self.BNCLFOABAIP != 0 {
-            os.write_uint32(6, self.BNCLFOABAIP)?;
+            os.write_uint32(12, self.BNCLFOABAIP)?;
         }
+        for v in &self.HPEOADAJIEE {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        };
         if self.BDOKMBIBFJB != 0 {
-            os.write_uint32(12, self.BDOKMBIBFJB)?;
+            os.write_uint32(13, self.BDOKMBIBFJB)?;
         }
         if self.CDJECOKFIOF != 0 {
-            os.write_uint32(11, self.CDJECOKFIOF)?;
+            os.write_uint32(8, self.CDJECOKFIOF)?;
         }
+        if self.ONLHFCOGLAL != 0 {
+            os.write_uint32(10, self.ONLHFCOGLAL)?;
+        }
+        os.write_repeated_packed_uint32(5, &self.EOHEEIGOBKD)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -196,23 +196,23 @@ impl ::protobuf::Message for LANLCCOBDNE {
     }
 
     fn clear(&mut self) {
-        self.ONLHFCOGLAL = 0;
-        self.EOHEEIGOBKD.clear();
-        self.HPEOADAJIEE.clear();
         self.BNCLFOABAIP = 0;
+        self.HPEOADAJIEE.clear();
         self.BDOKMBIBFJB = 0;
         self.CDJECOKFIOF = 0;
+        self.ONLHFCOGLAL = 0;
+        self.EOHEEIGOBKD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LANLCCOBDNE {
         static instance: LANLCCOBDNE = LANLCCOBDNE {
-            ONLHFCOGLAL: 0,
-            EOHEEIGOBKD: ::std::vec::Vec::new(),
-            HPEOADAJIEE: ::std::vec::Vec::new(),
             BNCLFOABAIP: 0,
+            HPEOADAJIEE: ::std::vec::Vec::new(),
             BDOKMBIBFJB: 0,
             CDJECOKFIOF: 0,
+            ONLHFCOGLAL: 0,
+            EOHEEIGOBKD: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -238,12 +238,12 @@ impl ::protobuf::reflect::ProtobufValue for LANLCCOBDNE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LANLCCOBDNE.proto\x1a\x1dRogueDialogueEventParam.proto\"\xf3\x01\n\
-    \x0bLANLCCOBDNE\x12\x20\n\x0bONLHFCOGLAL\x18\r\x20\x01(\rR\x0bONLHFCOGLA\
-    L\x12\x20\n\x0bEOHEEIGOBKD\x18\x08\x20\x03(\rR\x0bEOHEEIGOBKD\x12:\n\x0b\
-    HPEOADAJIEE\x18\t\x20\x03(\x0b2\x18.RogueDialogueEventParamR\x0bHPEOADAJ\
-    IEE\x12\x20\n\x0bBNCLFOABAIP\x18\x06\x20\x01(\rR\x0bBNCLFOABAIP\x12\x20\
-    \n\x0bBDOKMBIBFJB\x18\x0c\x20\x01(\rR\x0bBDOKMBIBFJB\x12\x20\n\x0bCDJECO\
-    KFIOF\x18\x0b\x20\x01(\rR\x0bCDJECOKFIOFb\x06proto3\
+    \x0bLANLCCOBDNE\x12\x20\n\x0bBNCLFOABAIP\x18\x0c\x20\x01(\rR\x0bBNCLFOAB\
+    AIP\x12:\n\x0bHPEOADAJIEE\x18\x0e\x20\x03(\x0b2\x18.RogueDialogueEventPa\
+    ramR\x0bHPEOADAJIEE\x12\x20\n\x0bBDOKMBIBFJB\x18\r\x20\x01(\rR\x0bBDOKMB\
+    IBFJB\x12\x20\n\x0bCDJECOKFIOF\x18\x08\x20\x01(\rR\x0bCDJECOKFIOF\x12\
+    \x20\n\x0bONLHFCOGLAL\x18\n\x20\x01(\rR\x0bONLHFCOGLAL\x12\x20\n\x0bEOHE\
+    EIGOBKD\x18\x05\x20\x03(\rR\x0bEOHEEIGOBKDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

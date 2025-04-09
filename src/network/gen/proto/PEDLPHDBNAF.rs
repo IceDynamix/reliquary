@@ -94,8 +94,57 @@ impl PEDLPHDBNAF {
         }
     }
 
+    // .LKAPFHAHNEM CELMKOLBJNN = 102;
+
+    pub fn CELMKOLBJNN(&self) -> &super::LKAPFHAHNEM::LKAPFHAHNEM {
+        match self.GJMELAKIJIF {
+            ::std::option::Option::Some(pedlphdbnaf::GJMELAKIJIF::CELMKOLBJNN(ref v)) => v,
+            _ => <super::LKAPFHAHNEM::LKAPFHAHNEM as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_CELMKOLBJNN(&mut self) {
+        self.GJMELAKIJIF = ::std::option::Option::None;
+    }
+
+    pub fn has_CELMKOLBJNN(&self) -> bool {
+        match self.GJMELAKIJIF {
+            ::std::option::Option::Some(pedlphdbnaf::GJMELAKIJIF::CELMKOLBJNN(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_CELMKOLBJNN(&mut self, v: super::LKAPFHAHNEM::LKAPFHAHNEM) {
+        self.GJMELAKIJIF = ::std::option::Option::Some(pedlphdbnaf::GJMELAKIJIF::CELMKOLBJNN(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_CELMKOLBJNN(&mut self) -> &mut super::LKAPFHAHNEM::LKAPFHAHNEM {
+        if let ::std::option::Option::Some(pedlphdbnaf::GJMELAKIJIF::CELMKOLBJNN(_)) = self.GJMELAKIJIF {
+        } else {
+            self.GJMELAKIJIF = ::std::option::Option::Some(pedlphdbnaf::GJMELAKIJIF::CELMKOLBJNN(super::LKAPFHAHNEM::LKAPFHAHNEM::new()));
+        }
+        match self.GJMELAKIJIF {
+            ::std::option::Option::Some(pedlphdbnaf::GJMELAKIJIF::CELMKOLBJNN(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_CELMKOLBJNN(&mut self) -> super::LKAPFHAHNEM::LKAPFHAHNEM {
+        if self.has_CELMKOLBJNN() {
+            match self.GJMELAKIJIF.take() {
+                ::std::option::Option::Some(pedlphdbnaf::GJMELAKIJIF::CELMKOLBJNN(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::LKAPFHAHNEM::LKAPFHAHNEM::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ILDHFMHBKNC::ILDHFMHBKNC>(
             "LFCPHAJCEKF",
@@ -103,6 +152,13 @@ impl PEDLPHDBNAF {
             PEDLPHDBNAF::LFCPHAJCEKF,
             PEDLPHDBNAF::mut_LFCPHAJCEKF,
             PEDLPHDBNAF::set_LFCPHAJCEKF,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LKAPFHAHNEM::LKAPFHAHNEM>(
+            "CELMKOLBJNN",
+            PEDLPHDBNAF::has_CELMKOLBJNN,
+            PEDLPHDBNAF::CELMKOLBJNN,
+            PEDLPHDBNAF::mut_CELMKOLBJNN,
+            PEDLPHDBNAF::set_CELMKOLBJNN,
         ));
         oneofs.push(pedlphdbnaf::GJMELAKIJIF::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PEDLPHDBNAF>(
@@ -126,6 +182,9 @@ impl ::protobuf::Message for PEDLPHDBNAF {
                 810 => {
                     self.GJMELAKIJIF = ::std::option::Option::Some(pedlphdbnaf::GJMELAKIJIF::LFCPHAJCEKF(is.read_message()?));
                 },
+                818 => {
+                    self.GJMELAKIJIF = ::std::option::Option::Some(pedlphdbnaf::GJMELAKIJIF::CELMKOLBJNN(is.read_message()?));
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -144,6 +203,10 @@ impl ::protobuf::Message for PEDLPHDBNAF {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
+                &pedlphdbnaf::GJMELAKIJIF::CELMKOLBJNN(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
             };
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -156,6 +219,9 @@ impl ::protobuf::Message for PEDLPHDBNAF {
             match v {
                 &pedlphdbnaf::GJMELAKIJIF::LFCPHAJCEKF(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(101, v, os)?;
+                },
+                &pedlphdbnaf::GJMELAKIJIF::CELMKOLBJNN(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(102, v, os)?;
                 },
             };
         }
@@ -176,6 +242,7 @@ impl ::protobuf::Message for PEDLPHDBNAF {
     }
 
     fn clear(&mut self) {
+        self.GJMELAKIJIF = ::std::option::Option::None;
         self.GJMELAKIJIF = ::std::option::Option::None;
         self.special_fields.clear();
     }
@@ -215,6 +282,8 @@ pub mod pedlphdbnaf {
     pub enum GJMELAKIJIF {
         // @@protoc_insertion_point(oneof_field:PEDLPHDBNAF.LFCPHAJCEKF)
         LFCPHAJCEKF(super::super::ILDHFMHBKNC::ILDHFMHBKNC),
+        // @@protoc_insertion_point(oneof_field:PEDLPHDBNAF.CELMKOLBJNN)
+        CELMKOLBJNN(super::super::LKAPFHAHNEM::LKAPFHAHNEM),
     }
 
     impl ::protobuf::Oneof for GJMELAKIJIF {
@@ -235,9 +304,10 @@ pub mod pedlphdbnaf {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PEDLPHDBNAF.proto\x1a\x11ILDHFMHBKNC.proto\"N\n\x0bPEDLPHDBNAF\x12\
-    0\n\x0bLFCPHAJCEKF\x18e\x20\x01(\x0b2\x0c.ILDHFMHBKNCH\0R\x0bLFCPHAJCEKF\
-    B\r\n\x0bGJMELAKIJIFb\x06proto3\
+    \n\x11PEDLPHDBNAF.proto\x1a\x11ILDHFMHBKNC.proto\x1a\x11LKAPFHAHNEM.prot\
+    o\"\x80\x01\n\x0bPEDLPHDBNAF\x120\n\x0bLFCPHAJCEKF\x18e\x20\x01(\x0b2\
+    \x0c.ILDHFMHBKNCH\0R\x0bLFCPHAJCEKF\x120\n\x0bCELMKOLBJNN\x18f\x20\x01(\
+    \x0b2\x0c.LKAPFHAHNEMH\0R\x0bCELMKOLBJNNB\r\n\x0bGJMELAKIJIFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -254,8 +324,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(1);
+            let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::ILDHFMHBKNC::file_descriptor().clone());
+            deps.push(super::LKAPFHAHNEM::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PEDLPHDBNAF::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

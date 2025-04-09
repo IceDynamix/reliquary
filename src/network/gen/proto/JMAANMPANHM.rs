@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JMAANMPANHM {
     // message fields
+    // @@protoc_insertion_point(field:JMAANMPANHM.NKOFFBMHAPI)
+    pub NKOFFBMHAPI: u32,
     // @@protoc_insertion_point(field:JMAANMPANHM.FPAIBLDAKLI)
     pub FPAIBLDAKLI: u32,
     // @@protoc_insertion_point(field:JMAANMPANHM.EGMAFIOOKJJ)
     pub EGMAFIOOKJJ: u32,
-    // @@protoc_insertion_point(field:JMAANMPANHM.TURN_FOOD_SWITCH_ATTACK)
-    pub TURN_FOOD_SWITCH_ATTACK: i32,
     // @@protoc_insertion_point(field:JMAANMPANHM.NHJALPDBOGN)
     pub NHJALPDBOGN: u32,
-    // @@protoc_insertion_point(field:JMAANMPANHM.CLPMIBDFPJC)
-    pub CLPMIBDFPJC: u32,
     // @@protoc_insertion_point(field:JMAANMPANHM.NOEIMMHCKPM)
     pub NOEIMMHCKPM: u32,
     // @@protoc_insertion_point(field:JMAANMPANHM.FBNHDEFNECI)
     pub FBNHDEFNECI: i32,
-    // @@protoc_insertion_point(field:JMAANMPANHM.NKOFFBMHAPI)
-    pub NKOFFBMHAPI: u32,
+    // @@protoc_insertion_point(field:JMAANMPANHM.CLPMIBDFPJC)
+    pub CLPMIBDFPJC: u32,
+    // @@protoc_insertion_point(field:JMAANMPANHM.TURN_FOOD_SWITCH_ATTACK)
+    pub TURN_FOOD_SWITCH_ATTACK: i32,
     // special fields
     // @@protoc_insertion_point(special_field:JMAANMPANHM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,6 +64,11 @@ impl JMAANMPANHM {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NKOFFBMHAPI",
+            |m: &JMAANMPANHM| { &m.NKOFFBMHAPI },
+            |m: &mut JMAANMPANHM| { &mut m.NKOFFBMHAPI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FPAIBLDAKLI",
             |m: &JMAANMPANHM| { &m.FPAIBLDAKLI },
             |m: &mut JMAANMPANHM| { &mut m.FPAIBLDAKLI },
@@ -74,19 +79,9 @@ impl JMAANMPANHM {
             |m: &mut JMAANMPANHM| { &mut m.EGMAFIOOKJJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "TURN_FOOD_SWITCH_ATTACK",
-            |m: &JMAANMPANHM| { &m.TURN_FOOD_SWITCH_ATTACK },
-            |m: &mut JMAANMPANHM| { &mut m.TURN_FOOD_SWITCH_ATTACK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NHJALPDBOGN",
             |m: &JMAANMPANHM| { &m.NHJALPDBOGN },
             |m: &mut JMAANMPANHM| { &mut m.NHJALPDBOGN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CLPMIBDFPJC",
-            |m: &JMAANMPANHM| { &m.CLPMIBDFPJC },
-            |m: &mut JMAANMPANHM| { &mut m.CLPMIBDFPJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NOEIMMHCKPM",
@@ -99,9 +94,14 @@ impl JMAANMPANHM {
             |m: &mut JMAANMPANHM| { &mut m.FBNHDEFNECI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NKOFFBMHAPI",
-            |m: &JMAANMPANHM| { &m.NKOFFBMHAPI },
-            |m: &mut JMAANMPANHM| { &mut m.NKOFFBMHAPI },
+            "CLPMIBDFPJC",
+            |m: &JMAANMPANHM| { &m.CLPMIBDFPJC },
+            |m: &mut JMAANMPANHM| { &mut m.CLPMIBDFPJC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "TURN_FOOD_SWITCH_ATTACK",
+            |m: &JMAANMPANHM| { &m.TURN_FOOD_SWITCH_ATTACK },
+            |m: &mut JMAANMPANHM| { &mut m.TURN_FOOD_SWITCH_ATTACK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JMAANMPANHM>(
             "JMAANMPANHM",
@@ -121,29 +121,29 @@ impl ::protobuf::Message for JMAANMPANHM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.FPAIBLDAKLI = is.read_uint32()?;
-                },
-                96 => {
-                    self.EGMAFIOOKJJ = is.read_uint32()?;
+                24 => {
+                    self.NKOFFBMHAPI = is.read_uint32()?;
                 },
                 112 => {
-                    self.TURN_FOOD_SWITCH_ATTACK = is.read_int32()?;
+                    self.FPAIBLDAKLI = is.read_uint32()?;
                 },
-                16 => {
+                104 => {
+                    self.EGMAFIOOKJJ = is.read_uint32()?;
+                },
+                8 => {
                     self.NHJALPDBOGN = is.read_uint32()?;
-                },
-                88 => {
-                    self.CLPMIBDFPJC = is.read_uint32()?;
                 },
                 80 => {
                     self.NOEIMMHCKPM = is.read_uint32()?;
                 },
-                104 => {
+                40 => {
                     self.FBNHDEFNECI = is.read_int32()?;
                 },
-                48 => {
-                    self.NKOFFBMHAPI = is.read_uint32()?;
+                72 => {
+                    self.CLPMIBDFPJC = is.read_uint32()?;
+                },
+                88 => {
+                    self.TURN_FOOD_SWITCH_ATTACK = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -157,29 +157,29 @@ impl ::protobuf::Message for JMAANMPANHM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.NKOFFBMHAPI != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.NKOFFBMHAPI);
+        }
         if self.FPAIBLDAKLI != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.FPAIBLDAKLI);
+            my_size += ::protobuf::rt::uint32_size(14, self.FPAIBLDAKLI);
         }
         if self.EGMAFIOOKJJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.EGMAFIOOKJJ);
-        }
-        if self.TURN_FOOD_SWITCH_ATTACK != 0 {
-            my_size += ::protobuf::rt::int32_size(14, self.TURN_FOOD_SWITCH_ATTACK);
+            my_size += ::protobuf::rt::uint32_size(13, self.EGMAFIOOKJJ);
         }
         if self.NHJALPDBOGN != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.NHJALPDBOGN);
-        }
-        if self.CLPMIBDFPJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.CLPMIBDFPJC);
+            my_size += ::protobuf::rt::uint32_size(1, self.NHJALPDBOGN);
         }
         if self.NOEIMMHCKPM != 0 {
             my_size += ::protobuf::rt::uint32_size(10, self.NOEIMMHCKPM);
         }
         if self.FBNHDEFNECI != 0 {
-            my_size += ::protobuf::rt::int32_size(13, self.FBNHDEFNECI);
+            my_size += ::protobuf::rt::int32_size(5, self.FBNHDEFNECI);
         }
-        if self.NKOFFBMHAPI != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.NKOFFBMHAPI);
+        if self.CLPMIBDFPJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.CLPMIBDFPJC);
+        }
+        if self.TURN_FOOD_SWITCH_ATTACK != 0 {
+            my_size += ::protobuf::rt::int32_size(11, self.TURN_FOOD_SWITCH_ATTACK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -187,29 +187,29 @@ impl ::protobuf::Message for JMAANMPANHM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.NKOFFBMHAPI != 0 {
+            os.write_uint32(3, self.NKOFFBMHAPI)?;
+        }
         if self.FPAIBLDAKLI != 0 {
-            os.write_uint32(7, self.FPAIBLDAKLI)?;
+            os.write_uint32(14, self.FPAIBLDAKLI)?;
         }
         if self.EGMAFIOOKJJ != 0 {
-            os.write_uint32(12, self.EGMAFIOOKJJ)?;
-        }
-        if self.TURN_FOOD_SWITCH_ATTACK != 0 {
-            os.write_int32(14, self.TURN_FOOD_SWITCH_ATTACK)?;
+            os.write_uint32(13, self.EGMAFIOOKJJ)?;
         }
         if self.NHJALPDBOGN != 0 {
-            os.write_uint32(2, self.NHJALPDBOGN)?;
-        }
-        if self.CLPMIBDFPJC != 0 {
-            os.write_uint32(11, self.CLPMIBDFPJC)?;
+            os.write_uint32(1, self.NHJALPDBOGN)?;
         }
         if self.NOEIMMHCKPM != 0 {
             os.write_uint32(10, self.NOEIMMHCKPM)?;
         }
         if self.FBNHDEFNECI != 0 {
-            os.write_int32(13, self.FBNHDEFNECI)?;
+            os.write_int32(5, self.FBNHDEFNECI)?;
         }
-        if self.NKOFFBMHAPI != 0 {
-            os.write_uint32(6, self.NKOFFBMHAPI)?;
+        if self.CLPMIBDFPJC != 0 {
+            os.write_uint32(9, self.CLPMIBDFPJC)?;
+        }
+        if self.TURN_FOOD_SWITCH_ATTACK != 0 {
+            os.write_int32(11, self.TURN_FOOD_SWITCH_ATTACK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -228,27 +228,27 @@ impl ::protobuf::Message for JMAANMPANHM {
     }
 
     fn clear(&mut self) {
+        self.NKOFFBMHAPI = 0;
         self.FPAIBLDAKLI = 0;
         self.EGMAFIOOKJJ = 0;
-        self.TURN_FOOD_SWITCH_ATTACK = 0;
         self.NHJALPDBOGN = 0;
-        self.CLPMIBDFPJC = 0;
         self.NOEIMMHCKPM = 0;
         self.FBNHDEFNECI = 0;
-        self.NKOFFBMHAPI = 0;
+        self.CLPMIBDFPJC = 0;
+        self.TURN_FOOD_SWITCH_ATTACK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JMAANMPANHM {
         static instance: JMAANMPANHM = JMAANMPANHM {
+            NKOFFBMHAPI: 0,
             FPAIBLDAKLI: 0,
             EGMAFIOOKJJ: 0,
-            TURN_FOOD_SWITCH_ATTACK: 0,
             NHJALPDBOGN: 0,
-            CLPMIBDFPJC: 0,
             NOEIMMHCKPM: 0,
             FBNHDEFNECI: 0,
-            NKOFFBMHAPI: 0,
+            CLPMIBDFPJC: 0,
+            TURN_FOOD_SWITCH_ATTACK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -273,14 +273,14 @@ impl ::protobuf::reflect::ProtobufValue for JMAANMPANHM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JMAANMPANHM.proto\"\xb2\x02\n\x0bJMAANMPANHM\x12\x20\n\x0bFPAIBLDA\
-    KLI\x18\x07\x20\x01(\rR\x0bFPAIBLDAKLI\x12\x20\n\x0bEGMAFIOOKJJ\x18\x0c\
-    \x20\x01(\rR\x0bEGMAFIOOKJJ\x125\n\x17TURN_FOOD_SWITCH_ATTACK\x18\x0e\
-    \x20\x01(\x05R\x14TURNFOODSWITCHATTACK\x12\x20\n\x0bNHJALPDBOGN\x18\x02\
-    \x20\x01(\rR\x0bNHJALPDBOGN\x12\x20\n\x0bCLPMIBDFPJC\x18\x0b\x20\x01(\rR\
-    \x0bCLPMIBDFPJC\x12\x20\n\x0bNOEIMMHCKPM\x18\n\x20\x01(\rR\x0bNOEIMMHCKP\
-    M\x12\x20\n\x0bFBNHDEFNECI\x18\r\x20\x01(\x05R\x0bFBNHDEFNECI\x12\x20\n\
-    \x0bNKOFFBMHAPI\x18\x06\x20\x01(\rR\x0bNKOFFBMHAPIb\x06proto3\
+    \n\x11JMAANMPANHM.proto\"\xb2\x02\n\x0bJMAANMPANHM\x12\x20\n\x0bNKOFFBMH\
+    API\x18\x03\x20\x01(\rR\x0bNKOFFBMHAPI\x12\x20\n\x0bFPAIBLDAKLI\x18\x0e\
+    \x20\x01(\rR\x0bFPAIBLDAKLI\x12\x20\n\x0bEGMAFIOOKJJ\x18\r\x20\x01(\rR\
+    \x0bEGMAFIOOKJJ\x12\x20\n\x0bNHJALPDBOGN\x18\x01\x20\x01(\rR\x0bNHJALPDB\
+    OGN\x12\x20\n\x0bNOEIMMHCKPM\x18\n\x20\x01(\rR\x0bNOEIMMHCKPM\x12\x20\n\
+    \x0bFBNHDEFNECI\x18\x05\x20\x01(\x05R\x0bFBNHDEFNECI\x12\x20\n\x0bCLPMIB\
+    DFPJC\x18\t\x20\x01(\rR\x0bCLPMIBDFPJC\x125\n\x17TURN_FOOD_SWITCH_ATTACK\
+    \x18\x0b\x20\x01(\x05R\x14TURNFOODSWITCHATTACKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

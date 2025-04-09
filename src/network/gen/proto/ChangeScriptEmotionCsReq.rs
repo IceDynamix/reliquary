@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChangeScriptEmotionCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ChangeScriptEmotionCsReq.FIHNCOABELA)
-    pub FIHNCOABELA: u32,
     // @@protoc_insertion_point(field:ChangeScriptEmotionCsReq.EBNOFHDNGDH)
     pub EBNOFHDNGDH: ::protobuf::EnumOrUnknown<super::BFDFLHEKFGK::BFDFLHEKFGK>,
+    // @@protoc_insertion_point(field:ChangeScriptEmotionCsReq.FIHNCOABELA)
+    pub FIHNCOABELA: u32,
     // @@protoc_insertion_point(field:ChangeScriptEmotionCsReq.CLKEOEHPLNG)
     pub CLKEOEHPLNG: u32,
     // special fields
@@ -54,14 +54,14 @@ impl ChangeScriptEmotionCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FIHNCOABELA",
-            |m: &ChangeScriptEmotionCsReq| { &m.FIHNCOABELA },
-            |m: &mut ChangeScriptEmotionCsReq| { &mut m.FIHNCOABELA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EBNOFHDNGDH",
             |m: &ChangeScriptEmotionCsReq| { &m.EBNOFHDNGDH },
             |m: &mut ChangeScriptEmotionCsReq| { &mut m.EBNOFHDNGDH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FIHNCOABELA",
+            |m: &ChangeScriptEmotionCsReq| { &m.FIHNCOABELA },
+            |m: &mut ChangeScriptEmotionCsReq| { &mut m.FIHNCOABELA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CLKEOEHPLNG",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for ChangeScriptEmotionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.FIHNCOABELA = is.read_uint32()?;
-                },
-                72 => {
+                8 => {
                     self.EBNOFHDNGDH = is.read_enum_or_unknown()?;
                 },
-                8 => {
+                16 => {
+                    self.FIHNCOABELA = is.read_uint32()?;
+                },
+                56 => {
                     self.CLKEOEHPLNG = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for ChangeScriptEmotionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FIHNCOABELA != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.FIHNCOABELA);
-        }
         if self.EBNOFHDNGDH != ::protobuf::EnumOrUnknown::new(super::BFDFLHEKFGK::BFDFLHEKFGK::HEART_DIAL_EMOTION_TYPE_PEACE) {
-            my_size += ::protobuf::rt::int32_size(9, self.EBNOFHDNGDH.value());
+            my_size += ::protobuf::rt::int32_size(1, self.EBNOFHDNGDH.value());
+        }
+        if self.FIHNCOABELA != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.FIHNCOABELA);
         }
         if self.CLKEOEHPLNG != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.CLKEOEHPLNG);
+            my_size += ::protobuf::rt::uint32_size(7, self.CLKEOEHPLNG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for ChangeScriptEmotionCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FIHNCOABELA != 0 {
-            os.write_uint32(3, self.FIHNCOABELA)?;
-        }
         if self.EBNOFHDNGDH != ::protobuf::EnumOrUnknown::new(super::BFDFLHEKFGK::BFDFLHEKFGK::HEART_DIAL_EMOTION_TYPE_PEACE) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.EBNOFHDNGDH))?;
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.EBNOFHDNGDH))?;
+        }
+        if self.FIHNCOABELA != 0 {
+            os.write_uint32(2, self.FIHNCOABELA)?;
         }
         if self.CLKEOEHPLNG != 0 {
-            os.write_uint32(1, self.CLKEOEHPLNG)?;
+            os.write_uint32(7, self.CLKEOEHPLNG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for ChangeScriptEmotionCsReq {
     }
 
     fn clear(&mut self) {
-        self.FIHNCOABELA = 0;
         self.EBNOFHDNGDH = ::protobuf::EnumOrUnknown::new(super::BFDFLHEKFGK::BFDFLHEKFGK::HEART_DIAL_EMOTION_TYPE_PEACE);
+        self.FIHNCOABELA = 0;
         self.CLKEOEHPLNG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChangeScriptEmotionCsReq {
         static instance: ChangeScriptEmotionCsReq = ChangeScriptEmotionCsReq {
-            FIHNCOABELA: 0,
             EBNOFHDNGDH: ::protobuf::EnumOrUnknown::from_i32(0),
+            FIHNCOABELA: 0,
             CLKEOEHPLNG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for ChangeScriptEmotionCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eChangeScriptEmotionCsReq.proto\x1a\x11BFDFLHEKFGK.proto\"\x8e\x01\
-    \n\x18ChangeScriptEmotionCsReq\x12\x20\n\x0bFIHNCOABELA\x18\x03\x20\x01(\
-    \rR\x0bFIHNCOABELA\x12.\n\x0bEBNOFHDNGDH\x18\t\x20\x01(\x0e2\x0c.BFDFLHE\
-    KFGKR\x0bEBNOFHDNGDH\x12\x20\n\x0bCLKEOEHPLNG\x18\x01\x20\x01(\rR\x0bCLK\
-    EOEHPLNGb\x06proto3\
+    \n\x18ChangeScriptEmotionCsReq\x12.\n\x0bEBNOFHDNGDH\x18\x01\x20\x01(\
+    \x0e2\x0c.BFDFLHEKFGKR\x0bEBNOFHDNGDH\x12\x20\n\x0bFIHNCOABELA\x18\x02\
+    \x20\x01(\rR\x0bFIHNCOABELA\x12\x20\n\x0bCLKEOEHPLNG\x18\x07\x20\x01(\rR\
+    \x0bCLKEOEHPLNGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

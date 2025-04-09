@@ -86,13 +86,13 @@ impl ::protobuf::Message for SetLineupNameScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                106 => {
                     self.MJJBNDAKOIF = is.read_string()?;
                 },
-                104 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
-                48 => {
+                88 => {
                     self.EGMAFIOOKJJ = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for SetLineupNameScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.MJJBNDAKOIF.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.MJJBNDAKOIF);
+            my_size += ::protobuf::rt::string_size(13, &self.MJJBNDAKOIF);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         if self.EGMAFIOOKJJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.EGMAFIOOKJJ);
+            my_size += ::protobuf::rt::uint32_size(11, self.EGMAFIOOKJJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for SetLineupNameScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.MJJBNDAKOIF.is_empty() {
-            os.write_string(5, &self.MJJBNDAKOIF)?;
+            os.write_string(13, &self.MJJBNDAKOIF)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
         }
         if self.EGMAFIOOKJJ != 0 {
-            os.write_uint32(6, self.EGMAFIOOKJJ)?;
+            os.write_uint32(11, self.EGMAFIOOKJJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for SetLineupNameScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18SetLineupNameScRsp.proto\"r\n\x12SetLineupNameScRsp\x12\x20\n\x0bM\
-    JJBNDAKOIF\x18\x05\x20\x01(\tR\x0bMJJBNDAKOIF\x12\x18\n\x07retcode\x18\r\
-    \x20\x01(\rR\x07retcode\x12\x20\n\x0bEGMAFIOOKJJ\x18\x06\x20\x01(\rR\x0b\
+    JJBNDAKOIF\x18\r\x20\x01(\tR\x0bMJJBNDAKOIF\x12\x18\n\x07retcode\x18\x0c\
+    \x20\x01(\rR\x07retcode\x12\x20\n\x0bEGMAFIOOKJJ\x18\x0b\x20\x01(\rR\x0b\
     EGMAFIOOKJJb\x06proto3\
 ";
 

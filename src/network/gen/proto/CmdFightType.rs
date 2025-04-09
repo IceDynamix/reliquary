@@ -29,20 +29,26 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdFightType {
     // @@protoc_insertion_point(enum_value:CmdFightType.CmdFightTypeNone)
     CmdFightTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdFightType.CmdFightHeartBeatCsReq)
-    CmdFightHeartBeatCsReq = 30030,
-    // @@protoc_insertion_point(enum_value:CmdFightType.CmdFightEnterCsReq)
-    CmdFightEnterCsReq = 30001,
-    // @@protoc_insertion_point(enum_value:CmdFightType.CmdFightSessionStopScNotify)
-    CmdFightSessionStopScNotify = 30097,
-    // @@protoc_insertion_point(enum_value:CmdFightType.CmdFightKickOutScNotify)
-    CmdFightKickOutScNotify = 30024,
-    // @@protoc_insertion_point(enum_value:CmdFightType.CmdFightHeartBeatScRsp)
-    CmdFightHeartBeatScRsp = 30056,
     // @@protoc_insertion_point(enum_value:CmdFightType.CmdFightLeaveScNotify)
-    CmdFightLeaveScNotify = 30058,
+    CmdFightLeaveScNotify = 30047,
+    // @@protoc_insertion_point(enum_value:CmdFightType.CmdFightHeartBeatScRsp)
+    CmdFightHeartBeatScRsp = 30006,
     // @@protoc_insertion_point(enum_value:CmdFightType.CmdFightEnterScRsp)
-    CmdFightEnterScRsp = 30068,
+    CmdFightEnterScRsp = 30013,
+    // @@protoc_insertion_point(enum_value:CmdFightType.CmdFightGeneralScRsp)
+    CmdFightGeneralScRsp = 30026,
+    // @@protoc_insertion_point(enum_value:CmdFightType.CmdFightHeartBeatCsReq)
+    CmdFightHeartBeatCsReq = 30035,
+    // @@protoc_insertion_point(enum_value:CmdFightType.CmdFightGeneralCsReq)
+    CmdFightGeneralCsReq = 30089,
+    // @@protoc_insertion_point(enum_value:CmdFightType.CmdFightGeneralScNotify)
+    CmdFightGeneralScNotify = 30030,
+    // @@protoc_insertion_point(enum_value:CmdFightType.CmdFightEnterCsReq)
+    CmdFightEnterCsReq = 30011,
+    // @@protoc_insertion_point(enum_value:CmdFightType.CmdFightKickOutScNotify)
+    CmdFightKickOutScNotify = 30009,
+    // @@protoc_insertion_point(enum_value:CmdFightType.CmdFightSessionStopScNotify)
+    CmdFightSessionStopScNotify = 30070,
 }
 
 impl ::protobuf::Enum for CmdFightType {
@@ -55,13 +61,16 @@ impl ::protobuf::Enum for CmdFightType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdFightType> {
         match value {
             0 => ::std::option::Option::Some(CmdFightType::CmdFightTypeNone),
-            30030 => ::std::option::Option::Some(CmdFightType::CmdFightHeartBeatCsReq),
-            30001 => ::std::option::Option::Some(CmdFightType::CmdFightEnterCsReq),
-            30097 => ::std::option::Option::Some(CmdFightType::CmdFightSessionStopScNotify),
-            30024 => ::std::option::Option::Some(CmdFightType::CmdFightKickOutScNotify),
-            30056 => ::std::option::Option::Some(CmdFightType::CmdFightHeartBeatScRsp),
-            30058 => ::std::option::Option::Some(CmdFightType::CmdFightLeaveScNotify),
-            30068 => ::std::option::Option::Some(CmdFightType::CmdFightEnterScRsp),
+            30047 => ::std::option::Option::Some(CmdFightType::CmdFightLeaveScNotify),
+            30006 => ::std::option::Option::Some(CmdFightType::CmdFightHeartBeatScRsp),
+            30013 => ::std::option::Option::Some(CmdFightType::CmdFightEnterScRsp),
+            30026 => ::std::option::Option::Some(CmdFightType::CmdFightGeneralScRsp),
+            30035 => ::std::option::Option::Some(CmdFightType::CmdFightHeartBeatCsReq),
+            30089 => ::std::option::Option::Some(CmdFightType::CmdFightGeneralCsReq),
+            30030 => ::std::option::Option::Some(CmdFightType::CmdFightGeneralScNotify),
+            30011 => ::std::option::Option::Some(CmdFightType::CmdFightEnterCsReq),
+            30009 => ::std::option::Option::Some(CmdFightType::CmdFightKickOutScNotify),
+            30070 => ::std::option::Option::Some(CmdFightType::CmdFightSessionStopScNotify),
             _ => ::std::option::Option::None
         }
     }
@@ -69,26 +78,32 @@ impl ::protobuf::Enum for CmdFightType {
     fn from_str(str: &str) -> ::std::option::Option<CmdFightType> {
         match str {
             "CmdFightTypeNone" => ::std::option::Option::Some(CmdFightType::CmdFightTypeNone),
-            "CmdFightHeartBeatCsReq" => ::std::option::Option::Some(CmdFightType::CmdFightHeartBeatCsReq),
-            "CmdFightEnterCsReq" => ::std::option::Option::Some(CmdFightType::CmdFightEnterCsReq),
-            "CmdFightSessionStopScNotify" => ::std::option::Option::Some(CmdFightType::CmdFightSessionStopScNotify),
-            "CmdFightKickOutScNotify" => ::std::option::Option::Some(CmdFightType::CmdFightKickOutScNotify),
-            "CmdFightHeartBeatScRsp" => ::std::option::Option::Some(CmdFightType::CmdFightHeartBeatScRsp),
             "CmdFightLeaveScNotify" => ::std::option::Option::Some(CmdFightType::CmdFightLeaveScNotify),
+            "CmdFightHeartBeatScRsp" => ::std::option::Option::Some(CmdFightType::CmdFightHeartBeatScRsp),
             "CmdFightEnterScRsp" => ::std::option::Option::Some(CmdFightType::CmdFightEnterScRsp),
+            "CmdFightGeneralScRsp" => ::std::option::Option::Some(CmdFightType::CmdFightGeneralScRsp),
+            "CmdFightHeartBeatCsReq" => ::std::option::Option::Some(CmdFightType::CmdFightHeartBeatCsReq),
+            "CmdFightGeneralCsReq" => ::std::option::Option::Some(CmdFightType::CmdFightGeneralCsReq),
+            "CmdFightGeneralScNotify" => ::std::option::Option::Some(CmdFightType::CmdFightGeneralScNotify),
+            "CmdFightEnterCsReq" => ::std::option::Option::Some(CmdFightType::CmdFightEnterCsReq),
+            "CmdFightKickOutScNotify" => ::std::option::Option::Some(CmdFightType::CmdFightKickOutScNotify),
+            "CmdFightSessionStopScNotify" => ::std::option::Option::Some(CmdFightType::CmdFightSessionStopScNotify),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdFightType] = &[
         CmdFightType::CmdFightTypeNone,
-        CmdFightType::CmdFightHeartBeatCsReq,
-        CmdFightType::CmdFightEnterCsReq,
-        CmdFightType::CmdFightSessionStopScNotify,
-        CmdFightType::CmdFightKickOutScNotify,
-        CmdFightType::CmdFightHeartBeatScRsp,
         CmdFightType::CmdFightLeaveScNotify,
+        CmdFightType::CmdFightHeartBeatScRsp,
         CmdFightType::CmdFightEnterScRsp,
+        CmdFightType::CmdFightGeneralScRsp,
+        CmdFightType::CmdFightHeartBeatCsReq,
+        CmdFightType::CmdFightGeneralCsReq,
+        CmdFightType::CmdFightGeneralScNotify,
+        CmdFightType::CmdFightEnterCsReq,
+        CmdFightType::CmdFightKickOutScNotify,
+        CmdFightType::CmdFightSessionStopScNotify,
     ];
 }
 
@@ -101,13 +116,16 @@ impl ::protobuf::EnumFull for CmdFightType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdFightType::CmdFightTypeNone => 0,
-            CmdFightType::CmdFightHeartBeatCsReq => 1,
-            CmdFightType::CmdFightEnterCsReq => 2,
-            CmdFightType::CmdFightSessionStopScNotify => 3,
-            CmdFightType::CmdFightKickOutScNotify => 4,
-            CmdFightType::CmdFightHeartBeatScRsp => 5,
-            CmdFightType::CmdFightLeaveScNotify => 6,
-            CmdFightType::CmdFightEnterScRsp => 7,
+            CmdFightType::CmdFightLeaveScNotify => 1,
+            CmdFightType::CmdFightHeartBeatScRsp => 2,
+            CmdFightType::CmdFightEnterScRsp => 3,
+            CmdFightType::CmdFightGeneralScRsp => 4,
+            CmdFightType::CmdFightHeartBeatCsReq => 5,
+            CmdFightType::CmdFightGeneralCsReq => 6,
+            CmdFightType::CmdFightGeneralScNotify => 7,
+            CmdFightType::CmdFightEnterCsReq => 8,
+            CmdFightType::CmdFightKickOutScNotify => 9,
+            CmdFightType::CmdFightSessionStopScNotify => 10,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -126,13 +144,15 @@ impl CmdFightType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12CmdFightType.proto*\xf3\x01\n\x0cCmdFightType\x12\x14\n\x10CmdFigh\
-    tTypeNone\x10\0\x12\x1c\n\x16CmdFightHeartBeatCsReq\x10\xce\xea\x01\x12\
-    \x18\n\x12CmdFightEnterCsReq\x10\xb1\xea\x01\x12!\n\x1bCmdFightSessionSt\
-    opScNotify\x10\x91\xeb\x01\x12\x1d\n\x17CmdFightKickOutScNotify\x10\xc8\
-    \xea\x01\x12\x1c\n\x16CmdFightHeartBeatScRsp\x10\xe8\xea\x01\x12\x1b\n\
-    \x15CmdFightLeaveScNotify\x10\xea\xea\x01\x12\x18\n\x12CmdFightEnterScRs\
-    p\x10\xf4\xea\x01b\x06proto3\
+    \n\x12CmdFightType.proto*\xca\x02\n\x0cCmdFightType\x12\x14\n\x10CmdFigh\
+    tTypeNone\x10\0\x12\x1b\n\x15CmdFightLeaveScNotify\x10\xdf\xea\x01\x12\
+    \x1c\n\x16CmdFightHeartBeatScRsp\x10\xb6\xea\x01\x12\x18\n\x12CmdFightEn\
+    terScRsp\x10\xbd\xea\x01\x12\x1a\n\x14CmdFightGeneralScRsp\x10\xca\xea\
+    \x01\x12\x1c\n\x16CmdFightHeartBeatCsReq\x10\xd3\xea\x01\x12\x1a\n\x14Cm\
+    dFightGeneralCsReq\x10\x89\xeb\x01\x12\x1d\n\x17CmdFightGeneralScNotify\
+    \x10\xce\xea\x01\x12\x18\n\x12CmdFightEnterCsReq\x10\xbb\xea\x01\x12\x1d\
+    \n\x17CmdFightKickOutScNotify\x10\xb9\xea\x01\x12!\n\x1bCmdFightSessionS\
+    topScNotify\x10\xf6\xea\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

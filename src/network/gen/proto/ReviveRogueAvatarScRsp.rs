@@ -28,8 +28,6 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ReviveRogueAvatarScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ReviveRogueAvatarScRsp.CINHFFLFCIK)
-    pub CINHFFLFCIK: u32,
     // @@protoc_insertion_point(field:ReviveRogueAvatarScRsp.LGHCAHBBCAM)
     pub LGHCAHBBCAM: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ReviveRogueAvatarScRsp.retcode)
@@ -38,6 +36,8 @@ pub struct ReviveRogueAvatarScRsp {
     pub NBCGLEFOKDM: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ReviveRogueAvatarScRsp.FPJCKPNLNFM)
     pub FPJCKPNLNFM: ::protobuf::MessageField<super::EJJGLGPEDEE::EJJGLGPEDEE>,
+    // @@protoc_insertion_point(field:ReviveRogueAvatarScRsp.CINHFFLFCIK)
+    pub CINHFFLFCIK: u32,
     // @@protoc_insertion_point(field:ReviveRogueAvatarScRsp.base_avatar_id)
     pub base_avatar_id: u32,
     // special fields
@@ -59,11 +59,6 @@ impl ReviveRogueAvatarScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CINHFFLFCIK",
-            |m: &ReviveRogueAvatarScRsp| { &m.CINHFFLFCIK },
-            |m: &mut ReviveRogueAvatarScRsp| { &mut m.CINHFFLFCIK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "LGHCAHBBCAM",
             |m: &ReviveRogueAvatarScRsp| { &m.LGHCAHBBCAM },
@@ -83,6 +78,11 @@ impl ReviveRogueAvatarScRsp {
             "FPJCKPNLNFM",
             |m: &ReviveRogueAvatarScRsp| { &m.FPJCKPNLNFM },
             |m: &mut ReviveRogueAvatarScRsp| { &mut m.FPJCKPNLNFM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CINHFFLFCIK",
+            |m: &ReviveRogueAvatarScRsp| { &m.CINHFFLFCIK },
+            |m: &mut ReviveRogueAvatarScRsp| { &mut m.CINHFFLFCIK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "base_avatar_id",
@@ -107,26 +107,26 @@ impl ::protobuf::Message for ReviveRogueAvatarScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.CINHFFLFCIK = is.read_uint32()?;
-                },
-                50 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.LGHCAHBBCAM)?;
                 },
-                48 => {
+                32 => {
                     self.LGHCAHBBCAM.push(is.read_uint32()?);
                 },
-                32 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                18 => {
+                122 => {
                     is.read_repeated_packed_uint32_into(&mut self.NBCGLEFOKDM)?;
                 },
-                16 => {
+                120 => {
                     self.NBCGLEFOKDM.push(is.read_uint32()?);
                 },
-                82 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FPJCKPNLNFM)?;
+                },
+                72 => {
+                    self.CINHFFLFCIK = is.read_uint32()?;
                 },
                 88 => {
                     self.base_avatar_id = is.read_uint32()?;
@@ -143,17 +143,17 @@ impl ::protobuf::Message for ReviveRogueAvatarScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CINHFFLFCIK != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.CINHFFLFCIK);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.LGHCAHBBCAM);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.LGHCAHBBCAM);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.NBCGLEFOKDM);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.NBCGLEFOKDM);
         if let Some(v) = self.FPJCKPNLNFM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.CINHFFLFCIK != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.CINHFFLFCIK);
         }
         if self.base_avatar_id != 0 {
             my_size += ::protobuf::rt::uint32_size(11, self.base_avatar_id);
@@ -164,16 +164,16 @@ impl ::protobuf::Message for ReviveRogueAvatarScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CINHFFLFCIK != 0 {
-            os.write_uint32(14, self.CINHFFLFCIK)?;
-        }
-        os.write_repeated_packed_uint32(6, &self.LGHCAHBBCAM)?;
+        os.write_repeated_packed_uint32(4, &self.LGHCAHBBCAM)?;
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
-        os.write_repeated_packed_uint32(2, &self.NBCGLEFOKDM)?;
+        os.write_repeated_packed_uint32(15, &self.NBCGLEFOKDM)?;
         if let Some(v) = self.FPJCKPNLNFM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
+        if self.CINHFFLFCIK != 0 {
+            os.write_uint32(9, self.CINHFFLFCIK)?;
         }
         if self.base_avatar_id != 0 {
             os.write_uint32(11, self.base_avatar_id)?;
@@ -195,22 +195,22 @@ impl ::protobuf::Message for ReviveRogueAvatarScRsp {
     }
 
     fn clear(&mut self) {
-        self.CINHFFLFCIK = 0;
         self.LGHCAHBBCAM.clear();
         self.retcode = 0;
         self.NBCGLEFOKDM.clear();
         self.FPJCKPNLNFM.clear();
+        self.CINHFFLFCIK = 0;
         self.base_avatar_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ReviveRogueAvatarScRsp {
         static instance: ReviveRogueAvatarScRsp = ReviveRogueAvatarScRsp {
-            CINHFFLFCIK: 0,
             LGHCAHBBCAM: ::std::vec::Vec::new(),
             retcode: 0,
             NBCGLEFOKDM: ::std::vec::Vec::new(),
             FPJCKPNLNFM: ::protobuf::MessageField::none(),
+            CINHFFLFCIK: 0,
             base_avatar_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -237,12 +237,12 @@ impl ::protobuf::reflect::ProtobufValue for ReviveRogueAvatarScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cReviveRogueAvatarScRsp.proto\x1a\x11EJJGLGPEDEE.proto\"\xee\x01\n\
-    \x16ReviveRogueAvatarScRsp\x12\x20\n\x0bCINHFFLFCIK\x18\x0e\x20\x01(\rR\
-    \x0bCINHFFLFCIK\x12\x20\n\x0bLGHCAHBBCAM\x18\x06\x20\x03(\rR\x0bLGHCAHBB\
-    CAM\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12\x20\n\x0bNBC\
-    GLEFOKDM\x18\x02\x20\x03(\rR\x0bNBCGLEFOKDM\x12.\n\x0bFPJCKPNLNFM\x18\n\
-    \x20\x01(\x0b2\x0c.EJJGLGPEDEER\x0bFPJCKPNLNFM\x12$\n\x0ebase_avatar_id\
-    \x18\x0b\x20\x01(\rR\x0cbaseAvatarIdb\x06proto3\
+    \x16ReviveRogueAvatarScRsp\x12\x20\n\x0bLGHCAHBBCAM\x18\x04\x20\x03(\rR\
+    \x0bLGHCAHBBCAM\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12\
+    \x20\n\x0bNBCGLEFOKDM\x18\x0f\x20\x03(\rR\x0bNBCGLEFOKDM\x12.\n\x0bFPJCK\
+    PNLNFM\x18\x02\x20\x01(\x0b2\x0c.EJJGLGPEDEER\x0bFPJCKPNLNFM\x12\x20\n\
+    \x0bCINHFFLFCIK\x18\t\x20\x01(\rR\x0bCINHFFLFCIK\x12$\n\x0ebase_avatar_i\
+    d\x18\x0b\x20\x01(\rR\x0cbaseAvatarIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

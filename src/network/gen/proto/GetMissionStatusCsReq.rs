@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetMissionStatusCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetMissionStatusCsReq.EPFGFLELBGB)
-    pub EPFGFLELBGB: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetMissionStatusCsReq.BLHILGPDNGO)
     pub BLHILGPDNGO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetMissionStatusCsReq.EPFGFLELBGB)
+    pub EPFGFLELBGB: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GetMissionStatusCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl GetMissionStatusCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EPFGFLELBGB",
-            |m: &GetMissionStatusCsReq| { &m.EPFGFLELBGB },
-            |m: &mut GetMissionStatusCsReq| { &mut m.EPFGFLELBGB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "BLHILGPDNGO",
             |m: &GetMissionStatusCsReq| { &m.BLHILGPDNGO },
             |m: &mut GetMissionStatusCsReq| { &mut m.BLHILGPDNGO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "EPFGFLELBGB",
+            |m: &GetMissionStatusCsReq| { &m.EPFGFLELBGB },
+            |m: &mut GetMissionStatusCsReq| { &mut m.EPFGFLELBGB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetMissionStatusCsReq>(
             "GetMissionStatusCsReq",
@@ -79,17 +79,17 @@ impl ::protobuf::Message for GetMissionStatusCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.EPFGFLELBGB)?;
-                },
-                56 => {
-                    self.EPFGFLELBGB.push(is.read_uint32()?);
-                },
-                82 => {
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.BLHILGPDNGO)?;
                 },
-                80 => {
+                72 => {
                     self.BLHILGPDNGO.push(is.read_uint32()?);
+                },
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.EPFGFLELBGB)?;
+                },
+                64 => {
+                    self.EPFGFLELBGB.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -103,16 +103,16 @@ impl ::protobuf::Message for GetMissionStatusCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.EPFGFLELBGB);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.BLHILGPDNGO);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.BLHILGPDNGO);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.EPFGFLELBGB);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(7, &self.EPFGFLELBGB)?;
-        os.write_repeated_packed_uint32(10, &self.BLHILGPDNGO)?;
+        os.write_repeated_packed_uint32(9, &self.BLHILGPDNGO)?;
+        os.write_repeated_packed_uint32(8, &self.EPFGFLELBGB)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -130,15 +130,15 @@ impl ::protobuf::Message for GetMissionStatusCsReq {
     }
 
     fn clear(&mut self) {
-        self.EPFGFLELBGB.clear();
         self.BLHILGPDNGO.clear();
+        self.EPFGFLELBGB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetMissionStatusCsReq {
         static instance: GetMissionStatusCsReq = GetMissionStatusCsReq {
-            EPFGFLELBGB: ::std::vec::Vec::new(),
             BLHILGPDNGO: ::std::vec::Vec::new(),
+            EPFGFLELBGB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -164,8 +164,8 @@ impl ::protobuf::reflect::ProtobufValue for GetMissionStatusCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bGetMissionStatusCsReq.proto\"[\n\x15GetMissionStatusCsReq\x12\x20\
-    \n\x0bEPFGFLELBGB\x18\x07\x20\x03(\rR\x0bEPFGFLELBGB\x12\x20\n\x0bBLHILG\
-    PDNGO\x18\n\x20\x03(\rR\x0bBLHILGPDNGOb\x06proto3\
+    \n\x0bBLHILGPDNGO\x18\t\x20\x03(\rR\x0bBLHILGPDNGO\x12\x20\n\x0bEPFGFLEL\
+    BGB\x18\x08\x20\x03(\rR\x0bEPFGFLELBGBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

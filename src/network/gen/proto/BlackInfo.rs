@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BlackInfo {
     // message fields
-    // @@protoc_insertion_point(field:BlackInfo.PJBIPPDMCHE)
-    pub PJBIPPDMCHE: i64,
-    // @@protoc_insertion_point(field:BlackInfo.OGCKDLKCABG)
-    pub OGCKDLKCABG: i64,
+    // @@protoc_insertion_point(field:BlackInfo.begin_time)
+    pub begin_time: i64,
+    // @@protoc_insertion_point(field:BlackInfo.end_time)
+    pub end_time: i64,
     // @@protoc_insertion_point(field:BlackInfo.JFCIIBECNCM)
     pub JFCIIBECNCM: u32,
     // @@protoc_insertion_point(field:BlackInfo.CCABDCPLMPJ)
@@ -56,14 +56,14 @@ impl BlackInfo {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PJBIPPDMCHE",
-            |m: &BlackInfo| { &m.PJBIPPDMCHE },
-            |m: &mut BlackInfo| { &mut m.PJBIPPDMCHE },
+            "begin_time",
+            |m: &BlackInfo| { &m.begin_time },
+            |m: &mut BlackInfo| { &mut m.begin_time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OGCKDLKCABG",
-            |m: &BlackInfo| { &m.OGCKDLKCABG },
-            |m: &mut BlackInfo| { &mut m.OGCKDLKCABG },
+            "end_time",
+            |m: &BlackInfo| { &m.end_time },
+            |m: &mut BlackInfo| { &mut m.end_time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JFCIIBECNCM",
@@ -94,10 +94,10 @@ impl ::protobuf::Message for BlackInfo {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.PJBIPPDMCHE = is.read_int64()?;
+                    self.begin_time = is.read_int64()?;
                 },
                 16 => {
-                    self.OGCKDLKCABG = is.read_int64()?;
+                    self.end_time = is.read_int64()?;
                 },
                 24 => {
                     self.JFCIIBECNCM = is.read_uint32()?;
@@ -117,11 +117,11 @@ impl ::protobuf::Message for BlackInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PJBIPPDMCHE != 0 {
-            my_size += ::protobuf::rt::int64_size(1, self.PJBIPPDMCHE);
+        if self.begin_time != 0 {
+            my_size += ::protobuf::rt::int64_size(1, self.begin_time);
         }
-        if self.OGCKDLKCABG != 0 {
-            my_size += ::protobuf::rt::int64_size(2, self.OGCKDLKCABG);
+        if self.end_time != 0 {
+            my_size += ::protobuf::rt::int64_size(2, self.end_time);
         }
         if self.JFCIIBECNCM != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.JFCIIBECNCM);
@@ -135,11 +135,11 @@ impl ::protobuf::Message for BlackInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PJBIPPDMCHE != 0 {
-            os.write_int64(1, self.PJBIPPDMCHE)?;
+        if self.begin_time != 0 {
+            os.write_int64(1, self.begin_time)?;
         }
-        if self.OGCKDLKCABG != 0 {
-            os.write_int64(2, self.OGCKDLKCABG)?;
+        if self.end_time != 0 {
+            os.write_int64(2, self.end_time)?;
         }
         if self.JFCIIBECNCM != 0 {
             os.write_uint32(3, self.JFCIIBECNCM)?;
@@ -164,8 +164,8 @@ impl ::protobuf::Message for BlackInfo {
     }
 
     fn clear(&mut self) {
-        self.PJBIPPDMCHE = 0;
-        self.OGCKDLKCABG = 0;
+        self.begin_time = 0;
+        self.end_time = 0;
         self.JFCIIBECNCM = 0;
         self.CCABDCPLMPJ = 0;
         self.special_fields.clear();
@@ -173,8 +173,8 @@ impl ::protobuf::Message for BlackInfo {
 
     fn default_instance() -> &'static BlackInfo {
         static instance: BlackInfo = BlackInfo {
-            PJBIPPDMCHE: 0,
-            OGCKDLKCABG: 0,
+            begin_time: 0,
+            end_time: 0,
             JFCIIBECNCM: 0,
             CCABDCPLMPJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -201,11 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for BlackInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0fBlackInfo.proto\"\x93\x01\n\tBlackInfo\x12\x20\n\x0bPJBIPPDMCHE\
-    \x18\x01\x20\x01(\x03R\x0bPJBIPPDMCHE\x12\x20\n\x0bOGCKDLKCABG\x18\x02\
-    \x20\x01(\x03R\x0bOGCKDLKCABG\x12\x20\n\x0bJFCIIBECNCM\x18\x03\x20\x01(\
-    \rR\x0bJFCIIBECNCM\x12\x20\n\x0bCCABDCPLMPJ\x18\x04\x20\x01(\rR\x0bCCABD\
-    CPLMPJb\x06proto3\
+    \n\x0fBlackInfo.proto\"\x89\x01\n\tBlackInfo\x12\x1d\n\nbegin_time\x18\
+    \x01\x20\x01(\x03R\tbeginTime\x12\x19\n\x08end_time\x18\x02\x20\x01(\x03\
+    R\x07endTime\x12\x20\n\x0bJFCIIBECNCM\x18\x03\x20\x01(\rR\x0bJFCIIBECNCM\
+    \x12\x20\n\x0bCCABDCPLMPJ\x18\x04\x20\x01(\rR\x0bCCABDCPLMPJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

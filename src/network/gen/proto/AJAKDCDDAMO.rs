@@ -30,10 +30,10 @@ pub struct AJAKDCDDAMO {
     // message fields
     // @@protoc_insertion_point(field:AJAKDCDDAMO.INFBHPGDLND)
     pub INFBHPGDLND: u32,
-    // @@protoc_insertion_point(field:AJAKDCDDAMO.EONLMDCBNME)
-    pub EONLMDCBNME: u32,
     // @@protoc_insertion_point(field:AJAKDCDDAMO.PBLFLJNHMIL)
     pub PBLFLJNHMIL: ::protobuf::EnumOrUnknown<super::HHICLPLJNCO::HHICLPLJNCO>,
+    // @@protoc_insertion_point(field:AJAKDCDDAMO.EONLMDCBNME)
+    pub EONLMDCBNME: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AJAKDCDDAMO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl AJAKDCDDAMO {
             |m: &mut AJAKDCDDAMO| { &mut m.INFBHPGDLND },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EONLMDCBNME",
-            |m: &AJAKDCDDAMO| { &m.EONLMDCBNME },
-            |m: &mut AJAKDCDDAMO| { &mut m.EONLMDCBNME },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PBLFLJNHMIL",
             |m: &AJAKDCDDAMO| { &m.PBLFLJNHMIL },
             |m: &mut AJAKDCDDAMO| { &mut m.PBLFLJNHMIL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EONLMDCBNME",
+            |m: &AJAKDCDDAMO| { &m.EONLMDCBNME },
+            |m: &mut AJAKDCDDAMO| { &mut m.EONLMDCBNME },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AJAKDCDDAMO>(
             "AJAKDCDDAMO",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for AJAKDCDDAMO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                120 => {
                     self.INFBHPGDLND = is.read_uint32()?;
                 },
-                64 => {
-                    self.EONLMDCBNME = is.read_uint32()?;
-                },
-                80 => {
+                88 => {
                     self.PBLFLJNHMIL = is.read_enum_or_unknown()?;
+                },
+                112 => {
+                    self.EONLMDCBNME = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for AJAKDCDDAMO {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.INFBHPGDLND != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.INFBHPGDLND);
-        }
-        if self.EONLMDCBNME != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.EONLMDCBNME);
+            my_size += ::protobuf::rt::uint32_size(15, self.INFBHPGDLND);
         }
         if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::HHICLPLJNCO::HHICLPLJNCO::ROGUE_BOOTH_NONE) {
-            my_size += ::protobuf::rt::int32_size(10, self.PBLFLJNHMIL.value());
+            my_size += ::protobuf::rt::int32_size(11, self.PBLFLJNHMIL.value());
+        }
+        if self.EONLMDCBNME != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.EONLMDCBNME);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for AJAKDCDDAMO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.INFBHPGDLND != 0 {
-            os.write_uint32(12, self.INFBHPGDLND)?;
-        }
-        if self.EONLMDCBNME != 0 {
-            os.write_uint32(8, self.EONLMDCBNME)?;
+            os.write_uint32(15, self.INFBHPGDLND)?;
         }
         if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::HHICLPLJNCO::HHICLPLJNCO::ROGUE_BOOTH_NONE) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.PBLFLJNHMIL))?;
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.PBLFLJNHMIL))?;
+        }
+        if self.EONLMDCBNME != 0 {
+            os.write_uint32(14, self.EONLMDCBNME)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for AJAKDCDDAMO {
 
     fn clear(&mut self) {
         self.INFBHPGDLND = 0;
-        self.EONLMDCBNME = 0;
         self.PBLFLJNHMIL = ::protobuf::EnumOrUnknown::new(super::HHICLPLJNCO::HHICLPLJNCO::ROGUE_BOOTH_NONE);
+        self.EONLMDCBNME = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AJAKDCDDAMO {
         static instance: AJAKDCDDAMO = AJAKDCDDAMO {
             INFBHPGDLND: 0,
-            EONLMDCBNME: 0,
             PBLFLJNHMIL: ::protobuf::EnumOrUnknown::from_i32(0),
+            EONLMDCBNME: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for AJAKDCDDAMO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AJAKDCDDAMO.proto\x1a\x11HHICLPLJNCO.proto\"\x81\x01\n\x0bAJAKDCDD\
-    AMO\x12\x20\n\x0bINFBHPGDLND\x18\x0c\x20\x01(\rR\x0bINFBHPGDLND\x12\x20\
-    \n\x0bEONLMDCBNME\x18\x08\x20\x01(\rR\x0bEONLMDCBNME\x12.\n\x0bPBLFLJNHM\
-    IL\x18\n\x20\x01(\x0e2\x0c.HHICLPLJNCOR\x0bPBLFLJNHMILb\x06proto3\
+    AMO\x12\x20\n\x0bINFBHPGDLND\x18\x0f\x20\x01(\rR\x0bINFBHPGDLND\x12.\n\
+    \x0bPBLFLJNHMIL\x18\x0b\x20\x01(\x0e2\x0c.HHICLPLJNCOR\x0bPBLFLJNHMIL\
+    \x12\x20\n\x0bEONLMDCBNME\x18\x0e\x20\x01(\rR\x0bEONLMDCBNMEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

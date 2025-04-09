@@ -79,10 +79,10 @@ impl ::protobuf::Message for AENOCKPNFCI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                40 => {
                     self.HEIKKHLKMOA = is.read_uint32()?;
                 },
-                24 => {
+                96 => {
                     self.JPCLLFAIEEC = is.read_int32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for AENOCKPNFCI {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HEIKKHLKMOA != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.HEIKKHLKMOA);
+            my_size += ::protobuf::rt::uint32_size(5, self.HEIKKHLKMOA);
         }
         if self.JPCLLFAIEEC != 0 {
-            my_size += ::protobuf::rt::int32_size(3, self.JPCLLFAIEEC);
+            my_size += ::protobuf::rt::int32_size(12, self.JPCLLFAIEEC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for AENOCKPNFCI {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HEIKKHLKMOA != 0 {
-            os.write_uint32(4, self.HEIKKHLKMOA)?;
+            os.write_uint32(5, self.HEIKKHLKMOA)?;
         }
         if self.JPCLLFAIEEC != 0 {
-            os.write_int32(3, self.JPCLLFAIEEC)?;
+            os.write_int32(12, self.JPCLLFAIEEC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for AENOCKPNFCI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AENOCKPNFCI.proto\"Q\n\x0bAENOCKPNFCI\x12\x20\n\x0bHEIKKHLKMOA\x18\
-    \x04\x20\x01(\rR\x0bHEIKKHLKMOA\x12\x20\n\x0bJPCLLFAIEEC\x18\x03\x20\x01\
+    \x05\x20\x01(\rR\x0bHEIKKHLKMOA\x12\x20\n\x0bJPCLLFAIEEC\x18\x0c\x20\x01\
     (\x05R\x0bJPCLLFAIEECb\x06proto3\
 ";
 

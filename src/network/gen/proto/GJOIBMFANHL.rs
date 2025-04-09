@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GJOIBMFANHL {
     // message fields
+    // @@protoc_insertion_point(field:GJOIBMFANHL.GMAFEJEJBHO)
+    pub GMAFEJEJBHO: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:GJOIBMFANHL.BLFAANHJPAD)
     pub BLFAANHJPAD: u32,
     // @@protoc_insertion_point(field:GJOIBMFANHL.EABOCPNFKLM)
     pub EABOCPNFKLM: u32,
-    // @@protoc_insertion_point(field:GJOIBMFANHL.GMAFEJEJBHO)
-    pub GMAFEJEJBHO: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:GJOIBMFANHL.DEIDCHAMDBA)
     pub DEIDCHAMDBA: u32,
     // special fields
@@ -55,6 +55,11 @@ impl GJOIBMFANHL {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "GMAFEJEJBHO",
+            |m: &GJOIBMFANHL| { &m.GMAFEJEJBHO },
+            |m: &mut GJOIBMFANHL| { &mut m.GMAFEJEJBHO },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BLFAANHJPAD",
             |m: &GJOIBMFANHL| { &m.BLFAANHJPAD },
@@ -64,11 +69,6 @@ impl GJOIBMFANHL {
             "EABOCPNFKLM",
             |m: &GJOIBMFANHL| { &m.EABOCPNFKLM },
             |m: &mut GJOIBMFANHL| { &mut m.EABOCPNFKLM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "GMAFEJEJBHO",
-            |m: &GJOIBMFANHL| { &m.GMAFEJEJBHO },
-            |m: &mut GJOIBMFANHL| { &mut m.GMAFEJEJBHO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DEIDCHAMDBA",
@@ -93,13 +93,7 @@ impl ::protobuf::Message for GJOIBMFANHL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.BLFAANHJPAD = is.read_uint32()?;
-                },
-                32 => {
-                    self.EABOCPNFKLM = is.read_uint32()?;
-                },
-                58 => {
+                90 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -114,7 +108,13 @@ impl ::protobuf::Message for GJOIBMFANHL {
                     is.pop_limit(old_limit);
                     self.GMAFEJEJBHO.insert(key, value);
                 },
-                120 => {
+                96 => {
+                    self.BLFAANHJPAD = is.read_uint32()?;
+                },
+                80 => {
+                    self.EABOCPNFKLM = is.read_uint32()?;
+                },
+                104 => {
                     self.DEIDCHAMDBA = is.read_uint32()?;
                 },
                 tag => {
@@ -129,20 +129,20 @@ impl ::protobuf::Message for GJOIBMFANHL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BLFAANHJPAD != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.BLFAANHJPAD);
-        }
-        if self.EABOCPNFKLM != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.EABOCPNFKLM);
-        }
         for (k, v) in &self.GMAFEJEJBHO {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
+        if self.BLFAANHJPAD != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.BLFAANHJPAD);
+        }
+        if self.EABOCPNFKLM != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.EABOCPNFKLM);
+        }
         if self.DEIDCHAMDBA != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.DEIDCHAMDBA);
+            my_size += ::protobuf::rt::uint32_size(13, self.DEIDCHAMDBA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,23 +150,23 @@ impl ::protobuf::Message for GJOIBMFANHL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BLFAANHJPAD != 0 {
-            os.write_uint32(6, self.BLFAANHJPAD)?;
-        }
-        if self.EABOCPNFKLM != 0 {
-            os.write_uint32(4, self.EABOCPNFKLM)?;
-        }
         for (k, v) in &self.GMAFEJEJBHO {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(58)?; // Tag.
+            os.write_raw_varint32(90)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
+        if self.BLFAANHJPAD != 0 {
+            os.write_uint32(12, self.BLFAANHJPAD)?;
+        }
+        if self.EABOCPNFKLM != 0 {
+            os.write_uint32(10, self.EABOCPNFKLM)?;
+        }
         if self.DEIDCHAMDBA != 0 {
-            os.write_uint32(15, self.DEIDCHAMDBA)?;
+            os.write_uint32(13, self.DEIDCHAMDBA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::Message for GJOIBMFANHL {
     }
 
     fn clear(&mut self) {
+        self.GMAFEJEJBHO.clear();
         self.BLFAANHJPAD = 0;
         self.EABOCPNFKLM = 0;
-        self.GMAFEJEJBHO.clear();
         self.DEIDCHAMDBA = 0;
         self.special_fields.clear();
     }
@@ -216,13 +216,13 @@ impl ::protobuf::reflect::ProtobufValue for GJOIBMFANHL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GJOIBMFANHL.proto\"\xf4\x01\n\x0bGJOIBMFANHL\x12\x20\n\x0bBLFAANHJ\
-    PAD\x18\x06\x20\x01(\rR\x0bBLFAANHJPAD\x12\x20\n\x0bEABOCPNFKLM\x18\x04\
-    \x20\x01(\rR\x0bEABOCPNFKLM\x12?\n\x0bGMAFEJEJBHO\x18\x07\x20\x03(\x0b2\
-    \x1d.GJOIBMFANHL.GMAFEJEJBHOEntryR\x0bGMAFEJEJBHO\x12\x20\n\x0bDEIDCHAMD\
-    BA\x18\x0f\x20\x01(\rR\x0bDEIDCHAMDBA\x1a>\n\x10GMAFEJEJBHOEntry\x12\x10\
-    \n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\
-    \rR\x05value:\x028\x01b\x06proto3\
+    \n\x11GJOIBMFANHL.proto\"\xf4\x01\n\x0bGJOIBMFANHL\x12?\n\x0bGMAFEJEJBHO\
+    \x18\x0b\x20\x03(\x0b2\x1d.GJOIBMFANHL.GMAFEJEJBHOEntryR\x0bGMAFEJEJBHO\
+    \x12\x20\n\x0bBLFAANHJPAD\x18\x0c\x20\x01(\rR\x0bBLFAANHJPAD\x12\x20\n\
+    \x0bEABOCPNFKLM\x18\n\x20\x01(\rR\x0bEABOCPNFKLM\x12\x20\n\x0bDEIDCHAMDB\
+    A\x18\r\x20\x01(\rR\x0bDEIDCHAMDBA\x1a>\n\x10GMAFEJEJBHOEntry\x12\x10\n\
+    \x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\r\
+    R\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

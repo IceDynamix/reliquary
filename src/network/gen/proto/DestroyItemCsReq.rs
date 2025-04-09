@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DestroyItemCsReq {
     // message fields
+    // @@protoc_insertion_point(field:DestroyItemCsReq.MBEJBLFHCBH)
+    pub MBEJBLFHCBH: u32,
     // @@protoc_insertion_point(field:DestroyItemCsReq.CFCOKELDOGJ)
     pub CFCOKELDOGJ: u32,
     // @@protoc_insertion_point(field:DestroyItemCsReq.FILDLBJOMLD)
     pub FILDLBJOMLD: u32,
-    // @@protoc_insertion_point(field:DestroyItemCsReq.MBEJBLFHCBH)
-    pub MBEJBLFHCBH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DestroyItemCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl DestroyItemCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MBEJBLFHCBH",
+            |m: &DestroyItemCsReq| { &m.MBEJBLFHCBH },
+            |m: &mut DestroyItemCsReq| { &mut m.MBEJBLFHCBH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CFCOKELDOGJ",
             |m: &DestroyItemCsReq| { &m.CFCOKELDOGJ },
             |m: &mut DestroyItemCsReq| { &mut m.CFCOKELDOGJ },
@@ -62,11 +67,6 @@ impl DestroyItemCsReq {
             "FILDLBJOMLD",
             |m: &DestroyItemCsReq| { &m.FILDLBJOMLD },
             |m: &mut DestroyItemCsReq| { &mut m.FILDLBJOMLD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MBEJBLFHCBH",
-            |m: &DestroyItemCsReq| { &m.MBEJBLFHCBH },
-            |m: &mut DestroyItemCsReq| { &mut m.MBEJBLFHCBH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DestroyItemCsReq>(
             "DestroyItemCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for DestroyItemCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                56 => {
+                    self.MBEJBLFHCBH = is.read_uint32()?;
+                },
+                88 => {
                     self.CFCOKELDOGJ = is.read_uint32()?;
                 },
-                80 => {
+                8 => {
                     self.FILDLBJOMLD = is.read_uint32()?;
-                },
-                120 => {
-                    self.MBEJBLFHCBH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for DestroyItemCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.MBEJBLFHCBH != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.MBEJBLFHCBH);
+        }
         if self.CFCOKELDOGJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.CFCOKELDOGJ);
+            my_size += ::protobuf::rt::uint32_size(11, self.CFCOKELDOGJ);
         }
         if self.FILDLBJOMLD != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.FILDLBJOMLD);
-        }
-        if self.MBEJBLFHCBH != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.MBEJBLFHCBH);
+            my_size += ::protobuf::rt::uint32_size(1, self.FILDLBJOMLD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for DestroyItemCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.MBEJBLFHCBH != 0 {
+            os.write_uint32(7, self.MBEJBLFHCBH)?;
+        }
         if self.CFCOKELDOGJ != 0 {
-            os.write_uint32(1, self.CFCOKELDOGJ)?;
+            os.write_uint32(11, self.CFCOKELDOGJ)?;
         }
         if self.FILDLBJOMLD != 0 {
-            os.write_uint32(10, self.FILDLBJOMLD)?;
-        }
-        if self.MBEJBLFHCBH != 0 {
-            os.write_uint32(15, self.MBEJBLFHCBH)?;
+            os.write_uint32(1, self.FILDLBJOMLD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for DestroyItemCsReq {
     }
 
     fn clear(&mut self) {
+        self.MBEJBLFHCBH = 0;
         self.CFCOKELDOGJ = 0;
         self.FILDLBJOMLD = 0;
-        self.MBEJBLFHCBH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DestroyItemCsReq {
         static instance: DestroyItemCsReq = DestroyItemCsReq {
+            MBEJBLFHCBH: 0,
             CFCOKELDOGJ: 0,
             FILDLBJOMLD: 0,
-            MBEJBLFHCBH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for DestroyItemCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16DestroyItemCsReq.proto\"x\n\x10DestroyItemCsReq\x12\x20\n\x0bCFCOK\
-    ELDOGJ\x18\x01\x20\x01(\rR\x0bCFCOKELDOGJ\x12\x20\n\x0bFILDLBJOMLD\x18\n\
-    \x20\x01(\rR\x0bFILDLBJOMLD\x12\x20\n\x0bMBEJBLFHCBH\x18\x0f\x20\x01(\rR\
-    \x0bMBEJBLFHCBHb\x06proto3\
+    \n\x16DestroyItemCsReq.proto\"x\n\x10DestroyItemCsReq\x12\x20\n\x0bMBEJB\
+    LFHCBH\x18\x07\x20\x01(\rR\x0bMBEJBLFHCBH\x12\x20\n\x0bCFCOKELDOGJ\x18\
+    \x0b\x20\x01(\rR\x0bCFCOKELDOGJ\x12\x20\n\x0bFILDLBJOMLD\x18\x01\x20\x01\
+    (\rR\x0bFILDLBJOMLDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

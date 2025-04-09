@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IGJENCIKLOF {
     // message fields
-    // @@protoc_insertion_point(field:IGJENCIKLOF.BILBOHBDBPN)
-    pub BILBOHBDBPN: u32,
     // @@protoc_insertion_point(field:IGJENCIKLOF.CLPLEFHHAFB)
     pub CLPLEFHHAFB: ::std::vec::Vec<super::MKEELPFDCLM::MKEELPFDCLM>,
+    // @@protoc_insertion_point(field:IGJENCIKLOF.BILBOHBDBPN)
+    pub BILBOHBDBPN: u32,
     // @@protoc_insertion_point(field:IGJENCIKLOF.IHGMPJNNMKI)
     pub IHGMPJNNMKI: ::std::vec::Vec<super::MKEELPFDCLM::MKEELPFDCLM>,
     // special fields
@@ -53,15 +53,15 @@ impl IGJENCIKLOF {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BILBOHBDBPN",
-            |m: &IGJENCIKLOF| { &m.BILBOHBDBPN },
-            |m: &mut IGJENCIKLOF| { &mut m.BILBOHBDBPN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "CLPLEFHHAFB",
             |m: &IGJENCIKLOF| { &m.CLPLEFHHAFB },
             |m: &mut IGJENCIKLOF| { &mut m.CLPLEFHHAFB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BILBOHBDBPN",
+            |m: &IGJENCIKLOF| { &m.BILBOHBDBPN },
+            |m: &mut IGJENCIKLOF| { &mut m.BILBOHBDBPN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "IHGMPJNNMKI",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for IGJENCIKLOF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.BILBOHBDBPN = is.read_uint32()?;
-                },
-                82 => {
+                18 => {
                     self.CLPLEFHHAFB.push(is.read_message()?);
                 },
-                122 => {
+                120 => {
+                    self.BILBOHBDBPN = is.read_uint32()?;
+                },
+                114 => {
                     self.IHGMPJNNMKI.push(is.read_message()?);
                 },
                 tag => {
@@ -107,13 +107,13 @@ impl ::protobuf::Message for IGJENCIKLOF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BILBOHBDBPN != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.BILBOHBDBPN);
-        }
         for value in &self.CLPLEFHHAFB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.BILBOHBDBPN != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.BILBOHBDBPN);
+        }
         for value in &self.IHGMPJNNMKI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -124,14 +124,14 @@ impl ::protobuf::Message for IGJENCIKLOF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BILBOHBDBPN != 0 {
-            os.write_uint32(12, self.BILBOHBDBPN)?;
-        }
         for v in &self.CLPLEFHHAFB {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
+        if self.BILBOHBDBPN != 0 {
+            os.write_uint32(15, self.BILBOHBDBPN)?;
+        }
         for v in &self.IHGMPJNNMKI {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for IGJENCIKLOF {
     }
 
     fn clear(&mut self) {
-        self.BILBOHBDBPN = 0;
         self.CLPLEFHHAFB.clear();
+        self.BILBOHBDBPN = 0;
         self.IHGMPJNNMKI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IGJENCIKLOF {
         static instance: IGJENCIKLOF = IGJENCIKLOF {
-            BILBOHBDBPN: 0,
             CLPLEFHHAFB: ::std::vec::Vec::new(),
+            BILBOHBDBPN: 0,
             IHGMPJNNMKI: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -186,9 +186,9 @@ impl ::protobuf::reflect::ProtobufValue for IGJENCIKLOF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IGJENCIKLOF.proto\x1a\x11MKEELPFDCLM.proto\"\x8f\x01\n\x0bIGJENCIK\
-    LOF\x12\x20\n\x0bBILBOHBDBPN\x18\x0c\x20\x01(\rR\x0bBILBOHBDBPN\x12.\n\
-    \x0bCLPLEFHHAFB\x18\n\x20\x03(\x0b2\x0c.MKEELPFDCLMR\x0bCLPLEFHHAFB\x12.\
-    \n\x0bIHGMPJNNMKI\x18\x0f\x20\x03(\x0b2\x0c.MKEELPFDCLMR\x0bIHGMPJNNMKIb\
+    LOF\x12.\n\x0bCLPLEFHHAFB\x18\x02\x20\x03(\x0b2\x0c.MKEELPFDCLMR\x0bCLPL\
+    EFHHAFB\x12\x20\n\x0bBILBOHBDBPN\x18\x0f\x20\x01(\rR\x0bBILBOHBDBPN\x12.\
+    \n\x0bIHGMPJNNMKI\x18\x0e\x20\x03(\x0b2\x0c.MKEELPFDCLMR\x0bIHGMPJNNMKIb\
     \x06proto3\
 ";
 

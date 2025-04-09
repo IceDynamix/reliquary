@@ -79,10 +79,10 @@ impl ::protobuf::Message for ChessRogueUpdateAeonModifierValueScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                56 => {
                     self.ELAPPCMELOA = is.read_uint32()?;
                 },
-                16 => {
+                40 => {
                     self.ICJABPGMACJ = is.read_int32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for ChessRogueUpdateAeonModifierValueScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.ELAPPCMELOA != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.ELAPPCMELOA);
+            my_size += ::protobuf::rt::uint32_size(7, self.ELAPPCMELOA);
         }
         if self.ICJABPGMACJ != 0 {
-            my_size += ::protobuf::rt::int32_size(2, self.ICJABPGMACJ);
+            my_size += ::protobuf::rt::int32_size(5, self.ICJABPGMACJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for ChessRogueUpdateAeonModifierValueScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.ELAPPCMELOA != 0 {
-            os.write_uint32(3, self.ELAPPCMELOA)?;
+            os.write_uint32(7, self.ELAPPCMELOA)?;
         }
         if self.ICJABPGMACJ != 0 {
-            os.write_int32(2, self.ICJABPGMACJ)?;
+            os.write_int32(5, self.ICJABPGMACJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueUpdateAeonModifierValueScN
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n/ChessRogueUpdateAeonModifierValueScNotify.proto\"o\n)ChessRogueUpdate\
-    AeonModifierValueScNotify\x12\x20\n\x0bELAPPCMELOA\x18\x03\x20\x01(\rR\
-    \x0bELAPPCMELOA\x12\x20\n\x0bICJABPGMACJ\x18\x02\x20\x01(\x05R\x0bICJABP\
+    AeonModifierValueScNotify\x12\x20\n\x0bELAPPCMELOA\x18\x07\x20\x01(\rR\
+    \x0bELAPPCMELOA\x12\x20\n\x0bICJABPGMACJ\x18\x05\x20\x01(\x05R\x0bICJABP\
     GMACJb\x06proto3\
 ";
 

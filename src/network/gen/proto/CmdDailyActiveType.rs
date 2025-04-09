@@ -29,20 +29,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdDailyActiveType {
     // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdDailyActiveTypeNone)
     CmdDailyActiveTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdTakeAllApRewardCsReq)
-    CmdTakeAllApRewardCsReq = 3356,
-    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdGetDailyActiveInfoScRsp)
-    CmdGetDailyActiveInfoScRsp = 3324,
-    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdGetDailyActiveInfoCsReq)
-    CmdGetDailyActiveInfoCsReq = 3358,
-    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdDailyActiveInfoNotify)
-    CmdDailyActiveInfoNotify = 3330,
     // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdTakeAllApRewardScRsp)
-    CmdTakeAllApRewardScRsp = 3397,
+    CmdTakeAllApRewardScRsp = 3370,
+    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdTakeAllApRewardCsReq)
+    CmdTakeAllApRewardCsReq = 3306,
+    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdGetDailyActiveInfoScRsp)
+    CmdGetDailyActiveInfoScRsp = 3309,
     // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdTakeApRewardScRsp)
-    CmdTakeApRewardScRsp = 3368,
+    CmdTakeApRewardScRsp = 3313,
+    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdDailyActiveInfoNotify)
+    CmdDailyActiveInfoNotify = 3335,
     // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdTakeApRewardCsReq)
-    CmdTakeApRewardCsReq = 3301,
+    CmdTakeApRewardCsReq = 3311,
+    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdGetDailyActiveInfoCsReq)
+    CmdGetDailyActiveInfoCsReq = 3347,
 }
 
 impl ::protobuf::Enum for CmdDailyActiveType {
@@ -55,13 +55,13 @@ impl ::protobuf::Enum for CmdDailyActiveType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdDailyActiveType> {
         match value {
             0 => ::std::option::Option::Some(CmdDailyActiveType::CmdDailyActiveTypeNone),
-            3356 => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeAllApRewardCsReq),
-            3324 => ::std::option::Option::Some(CmdDailyActiveType::CmdGetDailyActiveInfoScRsp),
-            3358 => ::std::option::Option::Some(CmdDailyActiveType::CmdGetDailyActiveInfoCsReq),
-            3330 => ::std::option::Option::Some(CmdDailyActiveType::CmdDailyActiveInfoNotify),
-            3397 => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeAllApRewardScRsp),
-            3368 => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeApRewardScRsp),
-            3301 => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeApRewardCsReq),
+            3370 => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeAllApRewardScRsp),
+            3306 => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeAllApRewardCsReq),
+            3309 => ::std::option::Option::Some(CmdDailyActiveType::CmdGetDailyActiveInfoScRsp),
+            3313 => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeApRewardScRsp),
+            3335 => ::std::option::Option::Some(CmdDailyActiveType::CmdDailyActiveInfoNotify),
+            3311 => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeApRewardCsReq),
+            3347 => ::std::option::Option::Some(CmdDailyActiveType::CmdGetDailyActiveInfoCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -69,26 +69,26 @@ impl ::protobuf::Enum for CmdDailyActiveType {
     fn from_str(str: &str) -> ::std::option::Option<CmdDailyActiveType> {
         match str {
             "CmdDailyActiveTypeNone" => ::std::option::Option::Some(CmdDailyActiveType::CmdDailyActiveTypeNone),
+            "CmdTakeAllApRewardScRsp" => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeAllApRewardScRsp),
             "CmdTakeAllApRewardCsReq" => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeAllApRewardCsReq),
             "CmdGetDailyActiveInfoScRsp" => ::std::option::Option::Some(CmdDailyActiveType::CmdGetDailyActiveInfoScRsp),
-            "CmdGetDailyActiveInfoCsReq" => ::std::option::Option::Some(CmdDailyActiveType::CmdGetDailyActiveInfoCsReq),
-            "CmdDailyActiveInfoNotify" => ::std::option::Option::Some(CmdDailyActiveType::CmdDailyActiveInfoNotify),
-            "CmdTakeAllApRewardScRsp" => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeAllApRewardScRsp),
             "CmdTakeApRewardScRsp" => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeApRewardScRsp),
+            "CmdDailyActiveInfoNotify" => ::std::option::Option::Some(CmdDailyActiveType::CmdDailyActiveInfoNotify),
             "CmdTakeApRewardCsReq" => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeApRewardCsReq),
+            "CmdGetDailyActiveInfoCsReq" => ::std::option::Option::Some(CmdDailyActiveType::CmdGetDailyActiveInfoCsReq),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdDailyActiveType] = &[
         CmdDailyActiveType::CmdDailyActiveTypeNone,
+        CmdDailyActiveType::CmdTakeAllApRewardScRsp,
         CmdDailyActiveType::CmdTakeAllApRewardCsReq,
         CmdDailyActiveType::CmdGetDailyActiveInfoScRsp,
-        CmdDailyActiveType::CmdGetDailyActiveInfoCsReq,
-        CmdDailyActiveType::CmdDailyActiveInfoNotify,
-        CmdDailyActiveType::CmdTakeAllApRewardScRsp,
         CmdDailyActiveType::CmdTakeApRewardScRsp,
+        CmdDailyActiveType::CmdDailyActiveInfoNotify,
         CmdDailyActiveType::CmdTakeApRewardCsReq,
+        CmdDailyActiveType::CmdGetDailyActiveInfoCsReq,
     ];
 }
 
@@ -101,13 +101,13 @@ impl ::protobuf::EnumFull for CmdDailyActiveType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdDailyActiveType::CmdDailyActiveTypeNone => 0,
-            CmdDailyActiveType::CmdTakeAllApRewardCsReq => 1,
-            CmdDailyActiveType::CmdGetDailyActiveInfoScRsp => 2,
-            CmdDailyActiveType::CmdGetDailyActiveInfoCsReq => 3,
-            CmdDailyActiveType::CmdDailyActiveInfoNotify => 4,
-            CmdDailyActiveType::CmdTakeAllApRewardScRsp => 5,
-            CmdDailyActiveType::CmdTakeApRewardScRsp => 6,
-            CmdDailyActiveType::CmdTakeApRewardCsReq => 7,
+            CmdDailyActiveType::CmdTakeAllApRewardScRsp => 1,
+            CmdDailyActiveType::CmdTakeAllApRewardCsReq => 2,
+            CmdDailyActiveType::CmdGetDailyActiveInfoScRsp => 3,
+            CmdDailyActiveType::CmdTakeApRewardScRsp => 4,
+            CmdDailyActiveType::CmdDailyActiveInfoNotify => 5,
+            CmdDailyActiveType::CmdTakeApRewardCsReq => 6,
+            CmdDailyActiveType::CmdGetDailyActiveInfoCsReq => 7,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -127,12 +127,12 @@ impl CmdDailyActiveType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18CmdDailyActiveType.proto*\x83\x02\n\x12CmdDailyActiveType\x12\x1a\
-    \n\x16CmdDailyActiveTypeNone\x10\0\x12\x1c\n\x17CmdTakeAllApRewardCsReq\
-    \x10\x9c\x1a\x12\x1f\n\x1aCmdGetDailyActiveInfoScRsp\x10\xfc\x19\x12\x1f\
-    \n\x1aCmdGetDailyActiveInfoCsReq\x10\x9e\x1a\x12\x1d\n\x18CmdDailyActive\
-    InfoNotify\x10\x82\x1a\x12\x1c\n\x17CmdTakeAllApRewardScRsp\x10\xc5\x1a\
-    \x12\x19\n\x14CmdTakeApRewardScRsp\x10\xa8\x1a\x12\x19\n\x14CmdTakeApRew\
-    ardCsReq\x10\xe5\x19b\x06proto3\
+    \n\x16CmdDailyActiveTypeNone\x10\0\x12\x1c\n\x17CmdTakeAllApRewardScRsp\
+    \x10\xaa\x1a\x12\x1c\n\x17CmdTakeAllApRewardCsReq\x10\xea\x19\x12\x1f\n\
+    \x1aCmdGetDailyActiveInfoScRsp\x10\xed\x19\x12\x19\n\x14CmdTakeApRewardS\
+    cRsp\x10\xf1\x19\x12\x1d\n\x18CmdDailyActiveInfoNotify\x10\x87\x1a\x12\
+    \x19\n\x14CmdTakeApRewardCsReq\x10\xef\x19\x12\x1f\n\x1aCmdGetDailyActiv\
+    eInfoCsReq\x10\x93\x1ab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

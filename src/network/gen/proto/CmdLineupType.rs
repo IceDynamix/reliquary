@@ -29,58 +29,58 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdLineupType {
     // @@protoc_insertion_point(enum_value:CmdLineupType.CmdLineupTypeNone)
     CmdLineupTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdQuitLineupScRsp)
-    CmdQuitLineupScRsp = 776,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdSwapLineupCsReq)
-    CmdSwapLineupCsReq = 728,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdExtraLineupDestroyNotify)
-    CmdExtraLineupDestroyNotify = 750,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdSetLineupNameCsReq)
-    CmdSetLineupNameCsReq = 796,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdReplaceLineupScRsp)
-    CmdReplaceLineupScRsp = 795,
     // @@protoc_insertion_point(enum_value:CmdLineupType.CmdReplaceLineupCsReq)
-    CmdReplaceLineupCsReq = 718,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdGetStageLineupScRsp)
-    CmdGetStageLineupScRsp = 768,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdSwapLineupScRsp)
-    CmdSwapLineupScRsp = 711,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdSyncLineupNotify)
-    CmdSyncLineupNotify = 705,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdGetCurLineupDataScRsp)
-    CmdGetCurLineupDataScRsp = 724,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdGetStageLineupCsReq)
-    CmdGetStageLineupCsReq = 701,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdSetLineupNameScRsp)
-    CmdSetLineupNameScRsp = 723,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdGetLineupAvatarDataCsReq)
-    CmdGetLineupAvatarDataCsReq = 714,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdGetAllLineupDataCsReq)
-    CmdGetAllLineupDataCsReq = 712,
+    CmdReplaceLineupCsReq = 771,
     // @@protoc_insertion_point(enum_value:CmdLineupType.CmdJoinLineupScRsp)
-    CmdJoinLineupScRsp = 756,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdChangeLineupLeaderScRsp)
-    CmdChangeLineupLeaderScRsp = 747,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdGetAllLineupDataScRsp)
-    CmdGetAllLineupDataScRsp = 717,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdChangeLineupLeaderCsReq)
-    CmdChangeLineupLeaderCsReq = 722,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdJoinLineupCsReq)
-    CmdJoinLineupCsReq = 730,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdVirtualLineupTrialAvatarChangeScNotify)
-    CmdVirtualLineupTrialAvatarChangeScNotify = 748,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdQuitLineupCsReq)
-    CmdQuitLineupCsReq = 797,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdGetCurLineupDataCsReq)
-    CmdGetCurLineupDataCsReq = 758,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdSwitchLineupIndexScRsp)
-    CmdSwitchLineupIndexScRsp = 739,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdVirtualLineupDestroyNotify)
-    CmdVirtualLineupDestroyNotify = 791,
+    CmdJoinLineupScRsp = 706,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdSyncLineupNotify)
+    CmdSyncLineupNotify = 795,
     // @@protoc_insertion_point(enum_value:CmdLineupType.CmdGetLineupAvatarDataScRsp)
-    CmdGetLineupAvatarDataScRsp = 749,
+    CmdGetLineupAvatarDataScRsp = 736,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdGetStageLineupScRsp)
+    CmdGetStageLineupScRsp = 713,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdSwapLineupCsReq)
+    CmdSwapLineupCsReq = 726,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdGetCurLineupDataScRsp)
+    CmdGetCurLineupDataScRsp = 709,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdSwitchLineupIndexScRsp)
+    CmdSwitchLineupIndexScRsp = 791,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdQuitLineupCsReq)
+    CmdQuitLineupCsReq = 770,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdChangeLineupLeaderCsReq)
+    CmdChangeLineupLeaderCsReq = 750,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdGetLineupAvatarDataCsReq)
+    CmdGetLineupAvatarDataCsReq = 718,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdJoinLineupCsReq)
+    CmdJoinLineupCsReq = 735,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdVirtualLineupTrialAvatarChangeScNotify)
+    CmdVirtualLineupTrialAvatarChangeScNotify = 737,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdChangeLineupLeaderScRsp)
+    CmdChangeLineupLeaderScRsp = 773,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdGetAllLineupDataScRsp)
+    CmdGetAllLineupDataScRsp = 710,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdGetCurLineupDataCsReq)
+    CmdGetCurLineupDataCsReq = 747,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdGetStageLineupCsReq)
+    CmdGetStageLineupCsReq = 711,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdQuitLineupScRsp)
+    CmdQuitLineupScRsp = 789,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdReplaceLineupScRsp)
+    CmdReplaceLineupScRsp = 782,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdGetAllLineupDataCsReq)
+    CmdGetAllLineupDataCsReq = 725,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdVirtualLineupDestroyNotify)
+    CmdVirtualLineupDestroyNotify = 707,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdSetLineupNameCsReq)
+    CmdSetLineupNameCsReq = 793,
     // @@protoc_insertion_point(enum_value:CmdLineupType.CmdSwitchLineupIndexCsReq)
-    CmdSwitchLineupIndexCsReq = 780,
+    CmdSwitchLineupIndexCsReq = 777,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdSetLineupNameScRsp)
+    CmdSetLineupNameScRsp = 757,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdExtraLineupDestroyNotify)
+    CmdExtraLineupDestroyNotify = 751,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdSwapLineupScRsp)
+    CmdSwapLineupScRsp = 730,
 }
 
 impl ::protobuf::Enum for CmdLineupType {
@@ -93,32 +93,32 @@ impl ::protobuf::Enum for CmdLineupType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdLineupType> {
         match value {
             0 => ::std::option::Option::Some(CmdLineupType::CmdLineupTypeNone),
-            776 => ::std::option::Option::Some(CmdLineupType::CmdQuitLineupScRsp),
-            728 => ::std::option::Option::Some(CmdLineupType::CmdSwapLineupCsReq),
-            750 => ::std::option::Option::Some(CmdLineupType::CmdExtraLineupDestroyNotify),
-            796 => ::std::option::Option::Some(CmdLineupType::CmdSetLineupNameCsReq),
-            795 => ::std::option::Option::Some(CmdLineupType::CmdReplaceLineupScRsp),
-            718 => ::std::option::Option::Some(CmdLineupType::CmdReplaceLineupCsReq),
-            768 => ::std::option::Option::Some(CmdLineupType::CmdGetStageLineupScRsp),
-            711 => ::std::option::Option::Some(CmdLineupType::CmdSwapLineupScRsp),
-            705 => ::std::option::Option::Some(CmdLineupType::CmdSyncLineupNotify),
-            724 => ::std::option::Option::Some(CmdLineupType::CmdGetCurLineupDataScRsp),
-            701 => ::std::option::Option::Some(CmdLineupType::CmdGetStageLineupCsReq),
-            723 => ::std::option::Option::Some(CmdLineupType::CmdSetLineupNameScRsp),
-            714 => ::std::option::Option::Some(CmdLineupType::CmdGetLineupAvatarDataCsReq),
-            712 => ::std::option::Option::Some(CmdLineupType::CmdGetAllLineupDataCsReq),
-            756 => ::std::option::Option::Some(CmdLineupType::CmdJoinLineupScRsp),
-            747 => ::std::option::Option::Some(CmdLineupType::CmdChangeLineupLeaderScRsp),
-            717 => ::std::option::Option::Some(CmdLineupType::CmdGetAllLineupDataScRsp),
-            722 => ::std::option::Option::Some(CmdLineupType::CmdChangeLineupLeaderCsReq),
-            730 => ::std::option::Option::Some(CmdLineupType::CmdJoinLineupCsReq),
-            748 => ::std::option::Option::Some(CmdLineupType::CmdVirtualLineupTrialAvatarChangeScNotify),
-            797 => ::std::option::Option::Some(CmdLineupType::CmdQuitLineupCsReq),
-            758 => ::std::option::Option::Some(CmdLineupType::CmdGetCurLineupDataCsReq),
-            739 => ::std::option::Option::Some(CmdLineupType::CmdSwitchLineupIndexScRsp),
-            791 => ::std::option::Option::Some(CmdLineupType::CmdVirtualLineupDestroyNotify),
-            749 => ::std::option::Option::Some(CmdLineupType::CmdGetLineupAvatarDataScRsp),
-            780 => ::std::option::Option::Some(CmdLineupType::CmdSwitchLineupIndexCsReq),
+            771 => ::std::option::Option::Some(CmdLineupType::CmdReplaceLineupCsReq),
+            706 => ::std::option::Option::Some(CmdLineupType::CmdJoinLineupScRsp),
+            795 => ::std::option::Option::Some(CmdLineupType::CmdSyncLineupNotify),
+            736 => ::std::option::Option::Some(CmdLineupType::CmdGetLineupAvatarDataScRsp),
+            713 => ::std::option::Option::Some(CmdLineupType::CmdGetStageLineupScRsp),
+            726 => ::std::option::Option::Some(CmdLineupType::CmdSwapLineupCsReq),
+            709 => ::std::option::Option::Some(CmdLineupType::CmdGetCurLineupDataScRsp),
+            791 => ::std::option::Option::Some(CmdLineupType::CmdSwitchLineupIndexScRsp),
+            770 => ::std::option::Option::Some(CmdLineupType::CmdQuitLineupCsReq),
+            750 => ::std::option::Option::Some(CmdLineupType::CmdChangeLineupLeaderCsReq),
+            718 => ::std::option::Option::Some(CmdLineupType::CmdGetLineupAvatarDataCsReq),
+            735 => ::std::option::Option::Some(CmdLineupType::CmdJoinLineupCsReq),
+            737 => ::std::option::Option::Some(CmdLineupType::CmdVirtualLineupTrialAvatarChangeScNotify),
+            773 => ::std::option::Option::Some(CmdLineupType::CmdChangeLineupLeaderScRsp),
+            710 => ::std::option::Option::Some(CmdLineupType::CmdGetAllLineupDataScRsp),
+            747 => ::std::option::Option::Some(CmdLineupType::CmdGetCurLineupDataCsReq),
+            711 => ::std::option::Option::Some(CmdLineupType::CmdGetStageLineupCsReq),
+            789 => ::std::option::Option::Some(CmdLineupType::CmdQuitLineupScRsp),
+            782 => ::std::option::Option::Some(CmdLineupType::CmdReplaceLineupScRsp),
+            725 => ::std::option::Option::Some(CmdLineupType::CmdGetAllLineupDataCsReq),
+            707 => ::std::option::Option::Some(CmdLineupType::CmdVirtualLineupDestroyNotify),
+            793 => ::std::option::Option::Some(CmdLineupType::CmdSetLineupNameCsReq),
+            777 => ::std::option::Option::Some(CmdLineupType::CmdSwitchLineupIndexCsReq),
+            757 => ::std::option::Option::Some(CmdLineupType::CmdSetLineupNameScRsp),
+            751 => ::std::option::Option::Some(CmdLineupType::CmdExtraLineupDestroyNotify),
+            730 => ::std::option::Option::Some(CmdLineupType::CmdSwapLineupScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -126,64 +126,64 @@ impl ::protobuf::Enum for CmdLineupType {
     fn from_str(str: &str) -> ::std::option::Option<CmdLineupType> {
         match str {
             "CmdLineupTypeNone" => ::std::option::Option::Some(CmdLineupType::CmdLineupTypeNone),
-            "CmdQuitLineupScRsp" => ::std::option::Option::Some(CmdLineupType::CmdQuitLineupScRsp),
-            "CmdSwapLineupCsReq" => ::std::option::Option::Some(CmdLineupType::CmdSwapLineupCsReq),
-            "CmdExtraLineupDestroyNotify" => ::std::option::Option::Some(CmdLineupType::CmdExtraLineupDestroyNotify),
-            "CmdSetLineupNameCsReq" => ::std::option::Option::Some(CmdLineupType::CmdSetLineupNameCsReq),
-            "CmdReplaceLineupScRsp" => ::std::option::Option::Some(CmdLineupType::CmdReplaceLineupScRsp),
             "CmdReplaceLineupCsReq" => ::std::option::Option::Some(CmdLineupType::CmdReplaceLineupCsReq),
-            "CmdGetStageLineupScRsp" => ::std::option::Option::Some(CmdLineupType::CmdGetStageLineupScRsp),
-            "CmdSwapLineupScRsp" => ::std::option::Option::Some(CmdLineupType::CmdSwapLineupScRsp),
-            "CmdSyncLineupNotify" => ::std::option::Option::Some(CmdLineupType::CmdSyncLineupNotify),
-            "CmdGetCurLineupDataScRsp" => ::std::option::Option::Some(CmdLineupType::CmdGetCurLineupDataScRsp),
-            "CmdGetStageLineupCsReq" => ::std::option::Option::Some(CmdLineupType::CmdGetStageLineupCsReq),
-            "CmdSetLineupNameScRsp" => ::std::option::Option::Some(CmdLineupType::CmdSetLineupNameScRsp),
-            "CmdGetLineupAvatarDataCsReq" => ::std::option::Option::Some(CmdLineupType::CmdGetLineupAvatarDataCsReq),
-            "CmdGetAllLineupDataCsReq" => ::std::option::Option::Some(CmdLineupType::CmdGetAllLineupDataCsReq),
             "CmdJoinLineupScRsp" => ::std::option::Option::Some(CmdLineupType::CmdJoinLineupScRsp),
-            "CmdChangeLineupLeaderScRsp" => ::std::option::Option::Some(CmdLineupType::CmdChangeLineupLeaderScRsp),
-            "CmdGetAllLineupDataScRsp" => ::std::option::Option::Some(CmdLineupType::CmdGetAllLineupDataScRsp),
+            "CmdSyncLineupNotify" => ::std::option::Option::Some(CmdLineupType::CmdSyncLineupNotify),
+            "CmdGetLineupAvatarDataScRsp" => ::std::option::Option::Some(CmdLineupType::CmdGetLineupAvatarDataScRsp),
+            "CmdGetStageLineupScRsp" => ::std::option::Option::Some(CmdLineupType::CmdGetStageLineupScRsp),
+            "CmdSwapLineupCsReq" => ::std::option::Option::Some(CmdLineupType::CmdSwapLineupCsReq),
+            "CmdGetCurLineupDataScRsp" => ::std::option::Option::Some(CmdLineupType::CmdGetCurLineupDataScRsp),
+            "CmdSwitchLineupIndexScRsp" => ::std::option::Option::Some(CmdLineupType::CmdSwitchLineupIndexScRsp),
+            "CmdQuitLineupCsReq" => ::std::option::Option::Some(CmdLineupType::CmdQuitLineupCsReq),
             "CmdChangeLineupLeaderCsReq" => ::std::option::Option::Some(CmdLineupType::CmdChangeLineupLeaderCsReq),
+            "CmdGetLineupAvatarDataCsReq" => ::std::option::Option::Some(CmdLineupType::CmdGetLineupAvatarDataCsReq),
             "CmdJoinLineupCsReq" => ::std::option::Option::Some(CmdLineupType::CmdJoinLineupCsReq),
             "CmdVirtualLineupTrialAvatarChangeScNotify" => ::std::option::Option::Some(CmdLineupType::CmdVirtualLineupTrialAvatarChangeScNotify),
-            "CmdQuitLineupCsReq" => ::std::option::Option::Some(CmdLineupType::CmdQuitLineupCsReq),
+            "CmdChangeLineupLeaderScRsp" => ::std::option::Option::Some(CmdLineupType::CmdChangeLineupLeaderScRsp),
+            "CmdGetAllLineupDataScRsp" => ::std::option::Option::Some(CmdLineupType::CmdGetAllLineupDataScRsp),
             "CmdGetCurLineupDataCsReq" => ::std::option::Option::Some(CmdLineupType::CmdGetCurLineupDataCsReq),
-            "CmdSwitchLineupIndexScRsp" => ::std::option::Option::Some(CmdLineupType::CmdSwitchLineupIndexScRsp),
+            "CmdGetStageLineupCsReq" => ::std::option::Option::Some(CmdLineupType::CmdGetStageLineupCsReq),
+            "CmdQuitLineupScRsp" => ::std::option::Option::Some(CmdLineupType::CmdQuitLineupScRsp),
+            "CmdReplaceLineupScRsp" => ::std::option::Option::Some(CmdLineupType::CmdReplaceLineupScRsp),
+            "CmdGetAllLineupDataCsReq" => ::std::option::Option::Some(CmdLineupType::CmdGetAllLineupDataCsReq),
             "CmdVirtualLineupDestroyNotify" => ::std::option::Option::Some(CmdLineupType::CmdVirtualLineupDestroyNotify),
-            "CmdGetLineupAvatarDataScRsp" => ::std::option::Option::Some(CmdLineupType::CmdGetLineupAvatarDataScRsp),
+            "CmdSetLineupNameCsReq" => ::std::option::Option::Some(CmdLineupType::CmdSetLineupNameCsReq),
             "CmdSwitchLineupIndexCsReq" => ::std::option::Option::Some(CmdLineupType::CmdSwitchLineupIndexCsReq),
+            "CmdSetLineupNameScRsp" => ::std::option::Option::Some(CmdLineupType::CmdSetLineupNameScRsp),
+            "CmdExtraLineupDestroyNotify" => ::std::option::Option::Some(CmdLineupType::CmdExtraLineupDestroyNotify),
+            "CmdSwapLineupScRsp" => ::std::option::Option::Some(CmdLineupType::CmdSwapLineupScRsp),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdLineupType] = &[
         CmdLineupType::CmdLineupTypeNone,
-        CmdLineupType::CmdQuitLineupScRsp,
-        CmdLineupType::CmdSwapLineupCsReq,
-        CmdLineupType::CmdExtraLineupDestroyNotify,
-        CmdLineupType::CmdSetLineupNameCsReq,
-        CmdLineupType::CmdReplaceLineupScRsp,
         CmdLineupType::CmdReplaceLineupCsReq,
-        CmdLineupType::CmdGetStageLineupScRsp,
-        CmdLineupType::CmdSwapLineupScRsp,
-        CmdLineupType::CmdSyncLineupNotify,
-        CmdLineupType::CmdGetCurLineupDataScRsp,
-        CmdLineupType::CmdGetStageLineupCsReq,
-        CmdLineupType::CmdSetLineupNameScRsp,
-        CmdLineupType::CmdGetLineupAvatarDataCsReq,
-        CmdLineupType::CmdGetAllLineupDataCsReq,
         CmdLineupType::CmdJoinLineupScRsp,
-        CmdLineupType::CmdChangeLineupLeaderScRsp,
-        CmdLineupType::CmdGetAllLineupDataScRsp,
+        CmdLineupType::CmdSyncLineupNotify,
+        CmdLineupType::CmdGetLineupAvatarDataScRsp,
+        CmdLineupType::CmdGetStageLineupScRsp,
+        CmdLineupType::CmdSwapLineupCsReq,
+        CmdLineupType::CmdGetCurLineupDataScRsp,
+        CmdLineupType::CmdSwitchLineupIndexScRsp,
+        CmdLineupType::CmdQuitLineupCsReq,
         CmdLineupType::CmdChangeLineupLeaderCsReq,
+        CmdLineupType::CmdGetLineupAvatarDataCsReq,
         CmdLineupType::CmdJoinLineupCsReq,
         CmdLineupType::CmdVirtualLineupTrialAvatarChangeScNotify,
-        CmdLineupType::CmdQuitLineupCsReq,
+        CmdLineupType::CmdChangeLineupLeaderScRsp,
+        CmdLineupType::CmdGetAllLineupDataScRsp,
         CmdLineupType::CmdGetCurLineupDataCsReq,
-        CmdLineupType::CmdSwitchLineupIndexScRsp,
+        CmdLineupType::CmdGetStageLineupCsReq,
+        CmdLineupType::CmdQuitLineupScRsp,
+        CmdLineupType::CmdReplaceLineupScRsp,
+        CmdLineupType::CmdGetAllLineupDataCsReq,
         CmdLineupType::CmdVirtualLineupDestroyNotify,
-        CmdLineupType::CmdGetLineupAvatarDataScRsp,
+        CmdLineupType::CmdSetLineupNameCsReq,
         CmdLineupType::CmdSwitchLineupIndexCsReq,
+        CmdLineupType::CmdSetLineupNameScRsp,
+        CmdLineupType::CmdExtraLineupDestroyNotify,
+        CmdLineupType::CmdSwapLineupScRsp,
     ];
 }
 
@@ -196,32 +196,32 @@ impl ::protobuf::EnumFull for CmdLineupType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdLineupType::CmdLineupTypeNone => 0,
-            CmdLineupType::CmdQuitLineupScRsp => 1,
-            CmdLineupType::CmdSwapLineupCsReq => 2,
-            CmdLineupType::CmdExtraLineupDestroyNotify => 3,
-            CmdLineupType::CmdSetLineupNameCsReq => 4,
-            CmdLineupType::CmdReplaceLineupScRsp => 5,
-            CmdLineupType::CmdReplaceLineupCsReq => 6,
-            CmdLineupType::CmdGetStageLineupScRsp => 7,
-            CmdLineupType::CmdSwapLineupScRsp => 8,
-            CmdLineupType::CmdSyncLineupNotify => 9,
-            CmdLineupType::CmdGetCurLineupDataScRsp => 10,
-            CmdLineupType::CmdGetStageLineupCsReq => 11,
-            CmdLineupType::CmdSetLineupNameScRsp => 12,
-            CmdLineupType::CmdGetLineupAvatarDataCsReq => 13,
-            CmdLineupType::CmdGetAllLineupDataCsReq => 14,
-            CmdLineupType::CmdJoinLineupScRsp => 15,
-            CmdLineupType::CmdChangeLineupLeaderScRsp => 16,
-            CmdLineupType::CmdGetAllLineupDataScRsp => 17,
-            CmdLineupType::CmdChangeLineupLeaderCsReq => 18,
-            CmdLineupType::CmdJoinLineupCsReq => 19,
-            CmdLineupType::CmdVirtualLineupTrialAvatarChangeScNotify => 20,
-            CmdLineupType::CmdQuitLineupCsReq => 21,
-            CmdLineupType::CmdGetCurLineupDataCsReq => 22,
-            CmdLineupType::CmdSwitchLineupIndexScRsp => 23,
-            CmdLineupType::CmdVirtualLineupDestroyNotify => 24,
-            CmdLineupType::CmdGetLineupAvatarDataScRsp => 25,
-            CmdLineupType::CmdSwitchLineupIndexCsReq => 26,
+            CmdLineupType::CmdReplaceLineupCsReq => 1,
+            CmdLineupType::CmdJoinLineupScRsp => 2,
+            CmdLineupType::CmdSyncLineupNotify => 3,
+            CmdLineupType::CmdGetLineupAvatarDataScRsp => 4,
+            CmdLineupType::CmdGetStageLineupScRsp => 5,
+            CmdLineupType::CmdSwapLineupCsReq => 6,
+            CmdLineupType::CmdGetCurLineupDataScRsp => 7,
+            CmdLineupType::CmdSwitchLineupIndexScRsp => 8,
+            CmdLineupType::CmdQuitLineupCsReq => 9,
+            CmdLineupType::CmdChangeLineupLeaderCsReq => 10,
+            CmdLineupType::CmdGetLineupAvatarDataCsReq => 11,
+            CmdLineupType::CmdJoinLineupCsReq => 12,
+            CmdLineupType::CmdVirtualLineupTrialAvatarChangeScNotify => 13,
+            CmdLineupType::CmdChangeLineupLeaderScRsp => 14,
+            CmdLineupType::CmdGetAllLineupDataScRsp => 15,
+            CmdLineupType::CmdGetCurLineupDataCsReq => 16,
+            CmdLineupType::CmdGetStageLineupCsReq => 17,
+            CmdLineupType::CmdQuitLineupScRsp => 18,
+            CmdLineupType::CmdReplaceLineupScRsp => 19,
+            CmdLineupType::CmdGetAllLineupDataCsReq => 20,
+            CmdLineupType::CmdVirtualLineupDestroyNotify => 21,
+            CmdLineupType::CmdSetLineupNameCsReq => 22,
+            CmdLineupType::CmdSwitchLineupIndexCsReq => 23,
+            CmdLineupType::CmdSetLineupNameScRsp => 24,
+            CmdLineupType::CmdExtraLineupDestroyNotify => 25,
+            CmdLineupType::CmdSwapLineupScRsp => 26,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -241,25 +241,25 @@ impl CmdLineupType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13CmdLineupType.proto*\xb8\x06\n\rCmdLineupType\x12\x15\n\x11CmdLine\
-    upTypeNone\x10\0\x12\x17\n\x12CmdQuitLineupScRsp\x10\x88\x06\x12\x17\n\
-    \x12CmdSwapLineupCsReq\x10\xd8\x05\x12\x20\n\x1bCmdExtraLineupDestroyNot\
-    ify\x10\xee\x05\x12\x1a\n\x15CmdSetLineupNameCsReq\x10\x9c\x06\x12\x1a\n\
-    \x15CmdReplaceLineupScRsp\x10\x9b\x06\x12\x1a\n\x15CmdReplaceLineupCsReq\
-    \x10\xce\x05\x12\x1b\n\x16CmdGetStageLineupScRsp\x10\x80\x06\x12\x17\n\
-    \x12CmdSwapLineupScRsp\x10\xc7\x05\x12\x18\n\x13CmdSyncLineupNotify\x10\
-    \xc1\x05\x12\x1d\n\x18CmdGetCurLineupDataScRsp\x10\xd4\x05\x12\x1b\n\x16\
-    CmdGetStageLineupCsReq\x10\xbd\x05\x12\x1a\n\x15CmdSetLineupNameScRsp\
-    \x10\xd3\x05\x12\x20\n\x1bCmdGetLineupAvatarDataCsReq\x10\xca\x05\x12\
-    \x1d\n\x18CmdGetAllLineupDataCsReq\x10\xc8\x05\x12\x17\n\x12CmdJoinLineu\
-    pScRsp\x10\xf4\x05\x12\x1f\n\x1aCmdChangeLineupLeaderScRsp\x10\xeb\x05\
-    \x12\x1d\n\x18CmdGetAllLineupDataScRsp\x10\xcd\x05\x12\x1f\n\x1aCmdChang\
-    eLineupLeaderCsReq\x10\xd2\x05\x12\x17\n\x12CmdJoinLineupCsReq\x10\xda\
-    \x05\x12.\n)CmdVirtualLineupTrialAvatarChangeScNotify\x10\xec\x05\x12\
-    \x17\n\x12CmdQuitLineupCsReq\x10\x9d\x06\x12\x1d\n\x18CmdGetCurLineupDat\
-    aCsReq\x10\xf6\x05\x12\x1e\n\x19CmdSwitchLineupIndexScRsp\x10\xe3\x05\
-    \x12\"\n\x1dCmdVirtualLineupDestroyNotify\x10\x97\x06\x12\x20\n\x1bCmdGe\
-    tLineupAvatarDataScRsp\x10\xed\x05\x12\x1e\n\x19CmdSwitchLineupIndexCsRe\
-    q\x10\x8c\x06b\x06proto3\
+    upTypeNone\x10\0\x12\x1a\n\x15CmdReplaceLineupCsReq\x10\x83\x06\x12\x17\
+    \n\x12CmdJoinLineupScRsp\x10\xc2\x05\x12\x18\n\x13CmdSyncLineupNotify\
+    \x10\x9b\x06\x12\x20\n\x1bCmdGetLineupAvatarDataScRsp\x10\xe0\x05\x12\
+    \x1b\n\x16CmdGetStageLineupScRsp\x10\xc9\x05\x12\x17\n\x12CmdSwapLineupC\
+    sReq\x10\xd6\x05\x12\x1d\n\x18CmdGetCurLineupDataScRsp\x10\xc5\x05\x12\
+    \x1e\n\x19CmdSwitchLineupIndexScRsp\x10\x97\x06\x12\x17\n\x12CmdQuitLine\
+    upCsReq\x10\x82\x06\x12\x1f\n\x1aCmdChangeLineupLeaderCsReq\x10\xee\x05\
+    \x12\x20\n\x1bCmdGetLineupAvatarDataCsReq\x10\xce\x05\x12\x17\n\x12CmdJo\
+    inLineupCsReq\x10\xdf\x05\x12.\n)CmdVirtualLineupTrialAvatarChangeScNoti\
+    fy\x10\xe1\x05\x12\x1f\n\x1aCmdChangeLineupLeaderScRsp\x10\x85\x06\x12\
+    \x1d\n\x18CmdGetAllLineupDataScRsp\x10\xc6\x05\x12\x1d\n\x18CmdGetCurLin\
+    eupDataCsReq\x10\xeb\x05\x12\x1b\n\x16CmdGetStageLineupCsReq\x10\xc7\x05\
+    \x12\x17\n\x12CmdQuitLineupScRsp\x10\x95\x06\x12\x1a\n\x15CmdReplaceLine\
+    upScRsp\x10\x8e\x06\x12\x1d\n\x18CmdGetAllLineupDataCsReq\x10\xd5\x05\
+    \x12\"\n\x1dCmdVirtualLineupDestroyNotify\x10\xc3\x05\x12\x1a\n\x15CmdSe\
+    tLineupNameCsReq\x10\x99\x06\x12\x1e\n\x19CmdSwitchLineupIndexCsReq\x10\
+    \x89\x06\x12\x1a\n\x15CmdSetLineupNameScRsp\x10\xf5\x05\x12\x20\n\x1bCmd\
+    ExtraLineupDestroyNotify\x10\xef\x05\x12\x17\n\x12CmdSwapLineupScRsp\x10\
+    \xda\x05b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

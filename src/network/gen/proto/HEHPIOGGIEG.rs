@@ -28,8 +28,6 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HEHPIOGGIEG {
     // message fields
-    // @@protoc_insertion_point(field:HEHPIOGGIEG.BDNFLICNFHN)
-    pub BDNFLICNFHN: bool,
     // @@protoc_insertion_point(field:HEHPIOGGIEG.LKJMLIDAODM)
     pub LKJMLIDAODM: u32,
     // @@protoc_insertion_point(field:HEHPIOGGIEG.ELGANMDPMID)
@@ -40,6 +38,8 @@ pub struct HEHPIOGGIEG {
     pub MIILNLHDDJM: ::std::string::String,
     // @@protoc_insertion_point(field:HEHPIOGGIEG.HEFJEJHOJEA)
     pub HEFJEJHOJEA: ::protobuf::MessageField<super::HFPFFJIMCKM::HFPFFJIMCKM>,
+    // @@protoc_insertion_point(field:HEHPIOGGIEG.BDNFLICNFHN)
+    pub BDNFLICNFHN: bool,
     // special fields
     // @@protoc_insertion_point(special_field:HEHPIOGGIEG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,11 +59,6 @@ impl HEHPIOGGIEG {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BDNFLICNFHN",
-            |m: &HEHPIOGGIEG| { &m.BDNFLICNFHN },
-            |m: &mut HEHPIOGGIEG| { &mut m.BDNFLICNFHN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LKJMLIDAODM",
             |m: &HEHPIOGGIEG| { &m.LKJMLIDAODM },
@@ -89,6 +84,11 @@ impl HEHPIOGGIEG {
             |m: &HEHPIOGGIEG| { &m.HEFJEJHOJEA },
             |m: &mut HEHPIOGGIEG| { &mut m.HEFJEJHOJEA },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BDNFLICNFHN",
+            |m: &HEHPIOGGIEG| { &m.BDNFLICNFHN },
+            |m: &mut HEHPIOGGIEG| { &mut m.BDNFLICNFHN },
+        ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HEHPIOGGIEG>(
             "HEHPIOGGIEG",
             fields,
@@ -107,23 +107,23 @@ impl ::protobuf::Message for HEHPIOGGIEG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.BDNFLICNFHN = is.read_bool()?;
-                },
-                112 => {
+                96 => {
                     self.LKJMLIDAODM = is.read_uint32()?;
                 },
                 32 => {
                     self.ELGANMDPMID = is.read_uint32()?;
                 },
-                50 => {
+                90 => {
                     self.OPCLDNLLNFH.push(is.read_message()?);
                 },
-                82 => {
+                58 => {
                     self.MIILNLHDDJM = is.read_string()?;
                 },
-                98 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.HEFJEJHOJEA)?;
+                },
+                64 => {
+                    self.BDNFLICNFHN = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,11 +137,8 @@ impl ::protobuf::Message for HEHPIOGGIEG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BDNFLICNFHN != false {
-            my_size += 1 + 1;
-        }
         if self.LKJMLIDAODM != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.LKJMLIDAODM);
+            my_size += ::protobuf::rt::uint32_size(12, self.LKJMLIDAODM);
         }
         if self.ELGANMDPMID != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.ELGANMDPMID);
@@ -151,11 +148,14 @@ impl ::protobuf::Message for HEHPIOGGIEG {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if !self.MIILNLHDDJM.is_empty() {
-            my_size += ::protobuf::rt::string_size(10, &self.MIILNLHDDJM);
+            my_size += ::protobuf::rt::string_size(7, &self.MIILNLHDDJM);
         }
         if let Some(v) = self.HEFJEJHOJEA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.BDNFLICNFHN != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -163,23 +163,23 @@ impl ::protobuf::Message for HEHPIOGGIEG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BDNFLICNFHN != false {
-            os.write_bool(11, self.BDNFLICNFHN)?;
-        }
         if self.LKJMLIDAODM != 0 {
-            os.write_uint32(14, self.LKJMLIDAODM)?;
+            os.write_uint32(12, self.LKJMLIDAODM)?;
         }
         if self.ELGANMDPMID != 0 {
             os.write_uint32(4, self.ELGANMDPMID)?;
         }
         for v in &self.OPCLDNLLNFH {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         if !self.MIILNLHDDJM.is_empty() {
-            os.write_string(10, &self.MIILNLHDDJM)?;
+            os.write_string(7, &self.MIILNLHDDJM)?;
         }
         if let Some(v) = self.HEFJEJHOJEA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
+        if self.BDNFLICNFHN != false {
+            os.write_bool(8, self.BDNFLICNFHN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -198,23 +198,23 @@ impl ::protobuf::Message for HEHPIOGGIEG {
     }
 
     fn clear(&mut self) {
-        self.BDNFLICNFHN = false;
         self.LKJMLIDAODM = 0;
         self.ELGANMDPMID = 0;
         self.OPCLDNLLNFH.clear();
         self.MIILNLHDDJM.clear();
         self.HEFJEJHOJEA.clear();
+        self.BDNFLICNFHN = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HEHPIOGGIEG {
         static instance: HEHPIOGGIEG = HEHPIOGGIEG {
-            BDNFLICNFHN: false,
             LKJMLIDAODM: 0,
             ELGANMDPMID: 0,
             OPCLDNLLNFH: ::std::vec::Vec::new(),
             MIILNLHDDJM: ::std::string::String::new(),
             HEFJEJHOJEA: ::protobuf::MessageField::none(),
+            BDNFLICNFHN: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -240,12 +240,12 @@ impl ::protobuf::reflect::ProtobufValue for HEHPIOGGIEG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HEHPIOGGIEG.proto\x1a\x11GKBICDLGIMN.proto\x1a\x11HFPFFJIMCKM.prot\
-    o\"\xf5\x01\n\x0bHEHPIOGGIEG\x12\x20\n\x0bBDNFLICNFHN\x18\x0b\x20\x01(\
-    \x08R\x0bBDNFLICNFHN\x12\x20\n\x0bLKJMLIDAODM\x18\x0e\x20\x01(\rR\x0bLKJ\
-    MLIDAODM\x12\x20\n\x0bELGANMDPMID\x18\x04\x20\x01(\rR\x0bELGANMDPMID\x12\
-    .\n\x0bOPCLDNLLNFH\x18\x06\x20\x03(\x0b2\x0c.GKBICDLGIMNR\x0bOPCLDNLLNFH\
-    \x12\x20\n\x0bMIILNLHDDJM\x18\n\x20\x01(\tR\x0bMIILNLHDDJM\x12.\n\x0bHEF\
-    JEJHOJEA\x18\x0c\x20\x01(\x0b2\x0c.HFPFFJIMCKMR\x0bHEFJEJHOJEAb\x06proto\
+    o\"\xf5\x01\n\x0bHEHPIOGGIEG\x12\x20\n\x0bLKJMLIDAODM\x18\x0c\x20\x01(\r\
+    R\x0bLKJMLIDAODM\x12\x20\n\x0bELGANMDPMID\x18\x04\x20\x01(\rR\x0bELGANMD\
+    PMID\x12.\n\x0bOPCLDNLLNFH\x18\x0b\x20\x03(\x0b2\x0c.GKBICDLGIMNR\x0bOPC\
+    LDNLLNFH\x12\x20\n\x0bMIILNLHDDJM\x18\x07\x20\x01(\tR\x0bMIILNLHDDJM\x12\
+    .\n\x0bHEFJEJHOJEA\x18\x05\x20\x01(\x0b2\x0c.HFPFFJIMCKMR\x0bHEFJEJHOJEA\
+    \x12\x20\n\x0bBDNFLICNFHN\x18\x08\x20\x01(\x08R\x0bBDNFLICNFHNb\x06proto\
     3\
 ";
 

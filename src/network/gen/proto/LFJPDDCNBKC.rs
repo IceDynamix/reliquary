@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LFJPDDCNBKC {
     // message fields
-    // @@protoc_insertion_point(field:LFJPDDCNBKC.FJHIGBBMJDM)
-    pub FJHIGBBMJDM: u32,
     // @@protoc_insertion_point(field:LFJPDDCNBKC.FNMGAOHMLIM)
     pub FNMGAOHMLIM: u32,
+    // @@protoc_insertion_point(field:LFJPDDCNBKC.FJHIGBBMJDM)
+    pub FJHIGBBMJDM: u32,
     // @@protoc_insertion_point(field:LFJPDDCNBKC.DBAHFEFGLMD)
     pub DBAHFEFGLMD: u32,
     // @@protoc_insertion_point(field:LFJPDDCNBKC.EPLJMCAPMPC)
@@ -56,14 +56,14 @@ impl LFJPDDCNBKC {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FJHIGBBMJDM",
-            |m: &LFJPDDCNBKC| { &m.FJHIGBBMJDM },
-            |m: &mut LFJPDDCNBKC| { &mut m.FJHIGBBMJDM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FNMGAOHMLIM",
             |m: &LFJPDDCNBKC| { &m.FNMGAOHMLIM },
             |m: &mut LFJPDDCNBKC| { &mut m.FNMGAOHMLIM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FJHIGBBMJDM",
+            |m: &LFJPDDCNBKC| { &m.FJHIGBBMJDM },
+            |m: &mut LFJPDDCNBKC| { &mut m.FJHIGBBMJDM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DBAHFEFGLMD",
@@ -93,13 +93,13 @@ impl ::protobuf::Message for LFJPDDCNBKC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.FJHIGBBMJDM = is.read_uint32()?;
-                },
-                24 => {
+                40 => {
                     self.FNMGAOHMLIM = is.read_uint32()?;
                 },
-                72 => {
+                16 => {
+                    self.FJHIGBBMJDM = is.read_uint32()?;
+                },
+                80 => {
                     self.DBAHFEFGLMD = is.read_uint32()?;
                 },
                 48 => {
@@ -117,14 +117,14 @@ impl ::protobuf::Message for LFJPDDCNBKC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FJHIGBBMJDM != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.FJHIGBBMJDM);
-        }
         if self.FNMGAOHMLIM != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.FNMGAOHMLIM);
+            my_size += ::protobuf::rt::uint32_size(5, self.FNMGAOHMLIM);
+        }
+        if self.FJHIGBBMJDM != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.FJHIGBBMJDM);
         }
         if self.DBAHFEFGLMD != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.DBAHFEFGLMD);
+            my_size += ::protobuf::rt::uint32_size(10, self.DBAHFEFGLMD);
         }
         if self.EPLJMCAPMPC != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.EPLJMCAPMPC);
@@ -135,14 +135,14 @@ impl ::protobuf::Message for LFJPDDCNBKC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FJHIGBBMJDM != 0 {
-            os.write_uint32(14, self.FJHIGBBMJDM)?;
-        }
         if self.FNMGAOHMLIM != 0 {
-            os.write_uint32(3, self.FNMGAOHMLIM)?;
+            os.write_uint32(5, self.FNMGAOHMLIM)?;
+        }
+        if self.FJHIGBBMJDM != 0 {
+            os.write_uint32(2, self.FJHIGBBMJDM)?;
         }
         if self.DBAHFEFGLMD != 0 {
-            os.write_uint32(9, self.DBAHFEFGLMD)?;
+            os.write_uint32(10, self.DBAHFEFGLMD)?;
         }
         if self.EPLJMCAPMPC != 0 {
             os.write_uint32(6, self.EPLJMCAPMPC)?;
@@ -164,8 +164,8 @@ impl ::protobuf::Message for LFJPDDCNBKC {
     }
 
     fn clear(&mut self) {
-        self.FJHIGBBMJDM = 0;
         self.FNMGAOHMLIM = 0;
+        self.FJHIGBBMJDM = 0;
         self.DBAHFEFGLMD = 0;
         self.EPLJMCAPMPC = 0;
         self.special_fields.clear();
@@ -173,8 +173,8 @@ impl ::protobuf::Message for LFJPDDCNBKC {
 
     fn default_instance() -> &'static LFJPDDCNBKC {
         static instance: LFJPDDCNBKC = LFJPDDCNBKC {
-            FJHIGBBMJDM: 0,
             FNMGAOHMLIM: 0,
+            FJHIGBBMJDM: 0,
             DBAHFEFGLMD: 0,
             EPLJMCAPMPC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -201,9 +201,9 @@ impl ::protobuf::reflect::ProtobufValue for LFJPDDCNBKC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LFJPDDCNBKC.proto\"\x95\x01\n\x0bLFJPDDCNBKC\x12\x20\n\x0bFJHIGBBM\
-    JDM\x18\x0e\x20\x01(\rR\x0bFJHIGBBMJDM\x12\x20\n\x0bFNMGAOHMLIM\x18\x03\
-    \x20\x01(\rR\x0bFNMGAOHMLIM\x12\x20\n\x0bDBAHFEFGLMD\x18\t\x20\x01(\rR\
+    \n\x11LFJPDDCNBKC.proto\"\x95\x01\n\x0bLFJPDDCNBKC\x12\x20\n\x0bFNMGAOHM\
+    LIM\x18\x05\x20\x01(\rR\x0bFNMGAOHMLIM\x12\x20\n\x0bFJHIGBBMJDM\x18\x02\
+    \x20\x01(\rR\x0bFJHIGBBMJDM\x12\x20\n\x0bDBAHFEFGLMD\x18\n\x20\x01(\rR\
     \x0bDBAHFEFGLMD\x12\x20\n\x0bEPLJMCAPMPC\x18\x06\x20\x01(\rR\x0bEPLJMCAP\
     MPCb\x06proto3\
 ";

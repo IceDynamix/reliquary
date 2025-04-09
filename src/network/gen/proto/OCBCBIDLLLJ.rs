@@ -72,7 +72,7 @@ impl ::protobuf::Message for OCBCBIDLLLJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                80 => {
                     self.ODJPOENPPOB = is.read_int32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for OCBCBIDLLLJ {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.ODJPOENPPOB != 0 {
-            my_size += ::protobuf::rt::int32_size(7, self.ODJPOENPPOB);
+            my_size += ::protobuf::rt::int32_size(10, self.ODJPOENPPOB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for OCBCBIDLLLJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.ODJPOENPPOB != 0 {
-            os.write_int32(7, self.ODJPOENPPOB)?;
+            os.write_int32(10, self.ODJPOENPPOB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for OCBCBIDLLLJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OCBCBIDLLLJ.proto\"/\n\x0bOCBCBIDLLLJ\x12\x20\n\x0bODJPOENPPOB\x18\
-    \x07\x20\x01(\x05R\x0bODJPOENPPOBb\x06proto3\
+    \n\x20\x01(\x05R\x0bODJPOENPPOBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueStartCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueStartCsReq.DHNDAMPBHPP)
-    pub DHNDAMPBHPP: u32,
     // @@protoc_insertion_point(field:ChessRogueStartCsReq.LGHCAHBBCAM)
     pub LGHCAHBBCAM: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ChessRogueStartCsReq.ELGANMDPMID)
-    pub ELGANMDPMID: u32,
-    // @@protoc_insertion_point(field:ChessRogueStartCsReq.ELAPPCMELOA)
-    pub ELAPPCMELOA: u32,
     // @@protoc_insertion_point(field:ChessRogueStartCsReq.NBCGLEFOKDM)
     pub NBCGLEFOKDM: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ChessRogueStartCsReq.HJGNDHLMMIB)
     pub HJGNDHLMMIB: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ChessRogueStartCsReq.ELAPPCMELOA)
+    pub ELAPPCMELOA: u32,
     // @@protoc_insertion_point(field:ChessRogueStartCsReq.AHIIBHKDFJB)
     pub AHIIBHKDFJB: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ChessRogueStartCsReq.DHNDAMPBHPP)
+    pub DHNDAMPBHPP: u32,
+    // @@protoc_insertion_point(field:ChessRogueStartCsReq.ELGANMDPMID)
+    pub ELGANMDPMID: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueStartCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,25 +61,10 @@ impl ChessRogueStartCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DHNDAMPBHPP",
-            |m: &ChessRogueStartCsReq| { &m.DHNDAMPBHPP },
-            |m: &mut ChessRogueStartCsReq| { &mut m.DHNDAMPBHPP },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "LGHCAHBBCAM",
             |m: &ChessRogueStartCsReq| { &m.LGHCAHBBCAM },
             |m: &mut ChessRogueStartCsReq| { &mut m.LGHCAHBBCAM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ELGANMDPMID",
-            |m: &ChessRogueStartCsReq| { &m.ELGANMDPMID },
-            |m: &mut ChessRogueStartCsReq| { &mut m.ELGANMDPMID },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ELAPPCMELOA",
-            |m: &ChessRogueStartCsReq| { &m.ELAPPCMELOA },
-            |m: &mut ChessRogueStartCsReq| { &mut m.ELAPPCMELOA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "NBCGLEFOKDM",
@@ -91,10 +76,25 @@ impl ChessRogueStartCsReq {
             |m: &ChessRogueStartCsReq| { &m.HJGNDHLMMIB },
             |m: &mut ChessRogueStartCsReq| { &mut m.HJGNDHLMMIB },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ELAPPCMELOA",
+            |m: &ChessRogueStartCsReq| { &m.ELAPPCMELOA },
+            |m: &mut ChessRogueStartCsReq| { &mut m.ELAPPCMELOA },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "AHIIBHKDFJB",
             |m: &ChessRogueStartCsReq| { &m.AHIIBHKDFJB },
             |m: &mut ChessRogueStartCsReq| { &mut m.AHIIBHKDFJB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DHNDAMPBHPP",
+            |m: &ChessRogueStartCsReq| { &m.DHNDAMPBHPP },
+            |m: &mut ChessRogueStartCsReq| { &mut m.DHNDAMPBHPP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ELGANMDPMID",
+            |m: &ChessRogueStartCsReq| { &m.ELGANMDPMID },
+            |m: &mut ChessRogueStartCsReq| { &mut m.ELGANMDPMID },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueStartCsReq>(
             "ChessRogueStartCsReq",
@@ -114,38 +114,38 @@ impl ::protobuf::Message for ChessRogueStartCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.DHNDAMPBHPP = is.read_uint32()?;
-                },
-                26 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.LGHCAHBBCAM)?;
                 },
-                24 => {
+                16 => {
                     self.LGHCAHBBCAM.push(is.read_uint32()?);
                 },
-                120 => {
-                    self.ELGANMDPMID = is.read_uint32()?;
-                },
-                64 => {
-                    self.ELAPPCMELOA = is.read_uint32()?;
-                },
-                10 => {
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.NBCGLEFOKDM)?;
                 },
-                8 => {
+                72 => {
                     self.NBCGLEFOKDM.push(is.read_uint32()?);
                 },
-                58 => {
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.HJGNDHLMMIB)?;
                 },
-                56 => {
+                96 => {
                     self.HJGNDHLMMIB.push(is.read_uint32()?);
                 },
-                18 => {
+                104 => {
+                    self.ELAPPCMELOA = is.read_uint32()?;
+                },
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.AHIIBHKDFJB)?;
                 },
-                16 => {
+                24 => {
                     self.AHIIBHKDFJB.push(is.read_uint32()?);
+                },
+                112 => {
+                    self.DHNDAMPBHPP = is.read_uint32()?;
+                },
+                88 => {
+                    self.ELGANMDPMID = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -159,38 +159,38 @@ impl ::protobuf::Message for ChessRogueStartCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DHNDAMPBHPP != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.DHNDAMPBHPP);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.LGHCAHBBCAM);
-        if self.ELGANMDPMID != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.ELGANMDPMID);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.LGHCAHBBCAM);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.NBCGLEFOKDM);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.HJGNDHLMMIB);
         if self.ELAPPCMELOA != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.ELAPPCMELOA);
+            my_size += ::protobuf::rt::uint32_size(13, self.ELAPPCMELOA);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.NBCGLEFOKDM);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.HJGNDHLMMIB);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.AHIIBHKDFJB);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.AHIIBHKDFJB);
+        if self.DHNDAMPBHPP != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.DHNDAMPBHPP);
+        }
+        if self.ELGANMDPMID != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.ELGANMDPMID);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DHNDAMPBHPP != 0 {
-            os.write_uint32(11, self.DHNDAMPBHPP)?;
-        }
-        os.write_repeated_packed_uint32(3, &self.LGHCAHBBCAM)?;
-        if self.ELGANMDPMID != 0 {
-            os.write_uint32(15, self.ELGANMDPMID)?;
-        }
+        os.write_repeated_packed_uint32(2, &self.LGHCAHBBCAM)?;
+        os.write_repeated_packed_uint32(9, &self.NBCGLEFOKDM)?;
+        os.write_repeated_packed_uint32(12, &self.HJGNDHLMMIB)?;
         if self.ELAPPCMELOA != 0 {
-            os.write_uint32(8, self.ELAPPCMELOA)?;
+            os.write_uint32(13, self.ELAPPCMELOA)?;
         }
-        os.write_repeated_packed_uint32(1, &self.NBCGLEFOKDM)?;
-        os.write_repeated_packed_uint32(7, &self.HJGNDHLMMIB)?;
-        os.write_repeated_packed_uint32(2, &self.AHIIBHKDFJB)?;
+        os.write_repeated_packed_uint32(3, &self.AHIIBHKDFJB)?;
+        if self.DHNDAMPBHPP != 0 {
+            os.write_uint32(14, self.DHNDAMPBHPP)?;
+        }
+        if self.ELGANMDPMID != 0 {
+            os.write_uint32(11, self.ELGANMDPMID)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -208,25 +208,25 @@ impl ::protobuf::Message for ChessRogueStartCsReq {
     }
 
     fn clear(&mut self) {
-        self.DHNDAMPBHPP = 0;
         self.LGHCAHBBCAM.clear();
-        self.ELGANMDPMID = 0;
-        self.ELAPPCMELOA = 0;
         self.NBCGLEFOKDM.clear();
         self.HJGNDHLMMIB.clear();
+        self.ELAPPCMELOA = 0;
         self.AHIIBHKDFJB.clear();
+        self.DHNDAMPBHPP = 0;
+        self.ELGANMDPMID = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueStartCsReq {
         static instance: ChessRogueStartCsReq = ChessRogueStartCsReq {
-            DHNDAMPBHPP: 0,
             LGHCAHBBCAM: ::std::vec::Vec::new(),
-            ELGANMDPMID: 0,
-            ELAPPCMELOA: 0,
             NBCGLEFOKDM: ::std::vec::Vec::new(),
             HJGNDHLMMIB: ::std::vec::Vec::new(),
+            ELAPPCMELOA: 0,
             AHIIBHKDFJB: ::std::vec::Vec::new(),
+            DHNDAMPBHPP: 0,
+            ELGANMDPMID: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -252,12 +252,12 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueStartCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aChessRogueStartCsReq.proto\"\x84\x02\n\x14ChessRogueStartCsReq\x12\
-    \x20\n\x0bDHNDAMPBHPP\x18\x0b\x20\x01(\rR\x0bDHNDAMPBHPP\x12\x20\n\x0bLG\
-    HCAHBBCAM\x18\x03\x20\x03(\rR\x0bLGHCAHBBCAM\x12\x20\n\x0bELGANMDPMID\
-    \x18\x0f\x20\x01(\rR\x0bELGANMDPMID\x12\x20\n\x0bELAPPCMELOA\x18\x08\x20\
-    \x01(\rR\x0bELAPPCMELOA\x12\x20\n\x0bNBCGLEFOKDM\x18\x01\x20\x03(\rR\x0b\
-    NBCGLEFOKDM\x12\x20\n\x0bHJGNDHLMMIB\x18\x07\x20\x03(\rR\x0bHJGNDHLMMIB\
-    \x12\x20\n\x0bAHIIBHKDFJB\x18\x02\x20\x03(\rR\x0bAHIIBHKDFJBb\x06proto3\
+    \x20\n\x0bLGHCAHBBCAM\x18\x02\x20\x03(\rR\x0bLGHCAHBBCAM\x12\x20\n\x0bNB\
+    CGLEFOKDM\x18\t\x20\x03(\rR\x0bNBCGLEFOKDM\x12\x20\n\x0bHJGNDHLMMIB\x18\
+    \x0c\x20\x03(\rR\x0bHJGNDHLMMIB\x12\x20\n\x0bELAPPCMELOA\x18\r\x20\x01(\
+    \rR\x0bELAPPCMELOA\x12\x20\n\x0bAHIIBHKDFJB\x18\x03\x20\x03(\rR\x0bAHIIB\
+    HKDFJB\x12\x20\n\x0bDHNDAMPBHPP\x18\x0e\x20\x01(\rR\x0bDHNDAMPBHPP\x12\
+    \x20\n\x0bELGANMDPMID\x18\x0b\x20\x01(\rR\x0bELGANMDPMIDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for UnlockTeleportNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                64 => {
                     self.CCIIHMMJOEM = is.read_uint32()?;
                 },
-                48 => {
+                16 => {
                     self.PHMJMACHGGP = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for UnlockTeleportNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CCIIHMMJOEM != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.CCIIHMMJOEM);
+            my_size += ::protobuf::rt::uint32_size(8, self.CCIIHMMJOEM);
         }
         if self.PHMJMACHGGP != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.PHMJMACHGGP);
+            my_size += ::protobuf::rt::uint32_size(2, self.PHMJMACHGGP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for UnlockTeleportNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CCIIHMMJOEM != 0 {
-            os.write_uint32(4, self.CCIIHMMJOEM)?;
+            os.write_uint32(8, self.CCIIHMMJOEM)?;
         }
         if self.PHMJMACHGGP != 0 {
-            os.write_uint32(6, self.PHMJMACHGGP)?;
+            os.write_uint32(2, self.PHMJMACHGGP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for UnlockTeleportNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aUnlockTeleportNotify.proto\"Z\n\x14UnlockTeleportNotify\x12\x20\n\
-    \x0bCCIIHMMJOEM\x18\x04\x20\x01(\rR\x0bCCIIHMMJOEM\x12\x20\n\x0bPHMJMACH\
-    GGP\x18\x06\x20\x01(\rR\x0bPHMJMACHGGPb\x06proto3\
+    \x0bCCIIHMMJOEM\x18\x08\x20\x01(\rR\x0bCCIIHMMJOEM\x12\x20\n\x0bPHMJMACH\
+    GGP\x18\x02\x20\x01(\rR\x0bPHMJMACHGGPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

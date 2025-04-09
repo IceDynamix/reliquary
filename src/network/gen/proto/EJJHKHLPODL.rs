@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EJJHKHLPODL {
     // message fields
-    // @@protoc_insertion_point(field:EJJHKHLPODL.EGFLALHOJKF)
-    pub EGFLALHOJKF: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:EJJHKHLPODL.unique_id)
-    pub unique_id: u32,
     // @@protoc_insertion_point(field:EJJHKHLPODL.avatar_id)
     pub avatar_id: u32,
+    // @@protoc_insertion_point(field:EJJHKHLPODL.EGFLALHOJKF)
+    pub EGFLALHOJKF: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:EJJHKHLPODL.FAHCACDFEIH)
     pub FAHCACDFEIH: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:EJJHKHLPODL.unique_id)
+    pub unique_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EJJHKHLPODL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl EJJHKHLPODL {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EGFLALHOJKF",
-            |m: &EJJHKHLPODL| { &m.EGFLALHOJKF },
-            |m: &mut EJJHKHLPODL| { &mut m.EGFLALHOJKF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unique_id",
-            |m: &EJJHKHLPODL| { &m.unique_id },
-            |m: &mut EJJHKHLPODL| { &mut m.unique_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
             |m: &EJJHKHLPODL| { &m.avatar_id },
             |m: &mut EJJHKHLPODL| { &mut m.avatar_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "EGFLALHOJKF",
+            |m: &EJJHKHLPODL| { &m.EGFLALHOJKF },
+            |m: &mut EJJHKHLPODL| { &mut m.EGFLALHOJKF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "FAHCACDFEIH",
             |m: &EJJHKHLPODL| { &m.FAHCACDFEIH },
             |m: &mut EJJHKHLPODL| { &mut m.FAHCACDFEIH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "unique_id",
+            |m: &EJJHKHLPODL| { &m.unique_id },
+            |m: &mut EJJHKHLPODL| { &mut m.unique_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EJJHKHLPODL>(
             "EJJHKHLPODL",
@@ -93,23 +93,23 @@ impl ::protobuf::Message for EJJHKHLPODL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    is.read_repeated_packed_uint32_into(&mut self.EGFLALHOJKF)?;
-                },
-                64 => {
-                    self.EGFLALHOJKF.push(is.read_uint32()?);
-                },
-                72 => {
-                    self.unique_id = is.read_uint32()?;
-                },
-                40 => {
+                120 => {
                     self.avatar_id = is.read_uint32()?;
                 },
                 106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FAHCACDFEIH)?;
+                    is.read_repeated_packed_uint32_into(&mut self.EGFLALHOJKF)?;
                 },
                 104 => {
+                    self.EGFLALHOJKF.push(is.read_uint32()?);
+                },
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.FAHCACDFEIH)?;
+                },
+                48 => {
                     self.FAHCACDFEIH.push(is.read_uint32()?);
+                },
+                16 => {
+                    self.unique_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -123,28 +123,28 @@ impl ::protobuf::Message for EJJHKHLPODL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.EGFLALHOJKF);
-        if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.unique_id);
-        }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.avatar_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.FAHCACDFEIH);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.EGFLALHOJKF);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.FAHCACDFEIH);
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.unique_id);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(8, &self.EGFLALHOJKF)?;
-        if self.unique_id != 0 {
-            os.write_uint32(9, self.unique_id)?;
-        }
         if self.avatar_id != 0 {
-            os.write_uint32(5, self.avatar_id)?;
+            os.write_uint32(15, self.avatar_id)?;
         }
-        os.write_repeated_packed_uint32(13, &self.FAHCACDFEIH)?;
+        os.write_repeated_packed_uint32(13, &self.EGFLALHOJKF)?;
+        os.write_repeated_packed_uint32(6, &self.FAHCACDFEIH)?;
+        if self.unique_id != 0 {
+            os.write_uint32(2, self.unique_id)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -162,19 +162,19 @@ impl ::protobuf::Message for EJJHKHLPODL {
     }
 
     fn clear(&mut self) {
-        self.EGFLALHOJKF.clear();
-        self.unique_id = 0;
         self.avatar_id = 0;
+        self.EGFLALHOJKF.clear();
         self.FAHCACDFEIH.clear();
+        self.unique_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EJJHKHLPODL {
         static instance: EJJHKHLPODL = EJJHKHLPODL {
-            EGFLALHOJKF: ::std::vec::Vec::new(),
-            unique_id: 0,
             avatar_id: 0,
+            EGFLALHOJKF: ::std::vec::Vec::new(),
             FAHCACDFEIH: ::std::vec::Vec::new(),
+            unique_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -199,10 +199,10 @@ impl ::protobuf::reflect::ProtobufValue for EJJHKHLPODL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EJJHKHLPODL.proto\"\x8b\x01\n\x0bEJJHKHLPODL\x12\x20\n\x0bEGFLALHO\
-    JKF\x18\x08\x20\x03(\rR\x0bEGFLALHOJKF\x12\x1b\n\tunique_id\x18\t\x20\
-    \x01(\rR\x08uniqueId\x12\x1b\n\tavatar_id\x18\x05\x20\x01(\rR\x08avatarI\
-    d\x12\x20\n\x0bFAHCACDFEIH\x18\r\x20\x03(\rR\x0bFAHCACDFEIHb\x06proto3\
+    \n\x11EJJHKHLPODL.proto\"\x8b\x01\n\x0bEJJHKHLPODL\x12\x1b\n\tavatar_id\
+    \x18\x0f\x20\x01(\rR\x08avatarId\x12\x20\n\x0bEGFLALHOJKF\x18\r\x20\x03(\
+    \rR\x0bEGFLALHOJKF\x12\x20\n\x0bFAHCACDFEIH\x18\x06\x20\x03(\rR\x0bFAHCA\
+    CDFEIH\x12\x1b\n\tunique_id\x18\x02\x20\x01(\rR\x08uniqueIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

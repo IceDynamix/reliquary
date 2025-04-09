@@ -82,7 +82,7 @@ impl ::protobuf::Message for StartTrackPhotoStageCsReq {
                 32 => {
                     self.CFONLBPOABP = is.read_uint32()?;
                 },
-                112 => {
+                48 => {
                     self.DJFCMLIPDAB = is.read_bool()?;
                 },
                 tag => {
@@ -113,7 +113,7 @@ impl ::protobuf::Message for StartTrackPhotoStageCsReq {
             os.write_uint32(4, self.CFONLBPOABP)?;
         }
         if self.DJFCMLIPDAB != false {
-            os.write_bool(14, self.DJFCMLIPDAB)?;
+            os.write_bool(6, self.DJFCMLIPDAB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for StartTrackPhotoStageCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fStartTrackPhotoStageCsReq.proto\"_\n\x19StartTrackPhotoStageCsReq\
     \x12\x20\n\x0bCFONLBPOABP\x18\x04\x20\x01(\rR\x0bCFONLBPOABP\x12\x20\n\
-    \x0bDJFCMLIPDAB\x18\x0e\x20\x01(\x08R\x0bDJFCMLIPDABb\x06proto3\
+    \x0bDJFCMLIPDAB\x18\x06\x20\x01(\x08R\x0bDJFCMLIPDABb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

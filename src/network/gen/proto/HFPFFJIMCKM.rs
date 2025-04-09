@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HFPFFJIMCKM {
     // message fields
-    // @@protoc_insertion_point(field:HFPFFJIMCKM.LKJMLIDAODM)
-    pub LKJMLIDAODM: u32,
     // @@protoc_insertion_point(field:HFPFFJIMCKM.BDNFLICNFHN)
     pub BDNFLICNFHN: bool,
-    // @@protoc_insertion_point(field:HFPFFJIMCKM.MFNBANEDODD)
-    pub MFNBANEDODD: ::protobuf::MessageField<super::CFKHKILIHHF::CFKHKILIHHF>,
     // @@protoc_insertion_point(field:HFPFFJIMCKM.OPCLDNLLNFH)
     pub OPCLDNLLNFH: ::std::vec::Vec<super::GKBICDLGIMN::GKBICDLGIMN>,
+    // @@protoc_insertion_point(field:HFPFFJIMCKM.MFNBANEDODD)
+    pub MFNBANEDODD: ::protobuf::MessageField<super::CFKHKILIHHF::CFKHKILIHHF>,
+    // @@protoc_insertion_point(field:HFPFFJIMCKM.LKJMLIDAODM)
+    pub LKJMLIDAODM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HFPFFJIMCKM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl HFPFFJIMCKM {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LKJMLIDAODM",
-            |m: &HFPFFJIMCKM| { &m.LKJMLIDAODM },
-            |m: &mut HFPFFJIMCKM| { &mut m.LKJMLIDAODM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BDNFLICNFHN",
             |m: &HFPFFJIMCKM| { &m.BDNFLICNFHN },
             |m: &mut HFPFFJIMCKM| { &mut m.BDNFLICNFHN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OPCLDNLLNFH",
+            |m: &HFPFFJIMCKM| { &m.OPCLDNLLNFH },
+            |m: &mut HFPFFJIMCKM| { &mut m.OPCLDNLLNFH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CFKHKILIHHF::CFKHKILIHHF>(
             "MFNBANEDODD",
             |m: &HFPFFJIMCKM| { &m.MFNBANEDODD },
             |m: &mut HFPFFJIMCKM| { &mut m.MFNBANEDODD },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OPCLDNLLNFH",
-            |m: &HFPFFJIMCKM| { &m.OPCLDNLLNFH },
-            |m: &mut HFPFFJIMCKM| { &mut m.OPCLDNLLNFH },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LKJMLIDAODM",
+            |m: &HFPFFJIMCKM| { &m.LKJMLIDAODM },
+            |m: &mut HFPFFJIMCKM| { &mut m.LKJMLIDAODM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HFPFFJIMCKM>(
             "HFPFFJIMCKM",
@@ -94,16 +94,16 @@ impl ::protobuf::Message for HFPFFJIMCKM {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 40 => {
-                    self.LKJMLIDAODM = is.read_uint32()?;
-                },
-                96 => {
                     self.BDNFLICNFHN = is.read_bool()?;
                 },
-                34 => {
+                98 => {
+                    self.OPCLDNLLNFH.push(is.read_message()?);
+                },
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MFNBANEDODD)?;
                 },
-                50 => {
-                    self.OPCLDNLLNFH.push(is.read_message()?);
+                104 => {
+                    self.LKJMLIDAODM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,38 +117,38 @@ impl ::protobuf::Message for HFPFFJIMCKM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LKJMLIDAODM != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.LKJMLIDAODM);
-        }
         if self.BDNFLICNFHN != false {
             my_size += 1 + 1;
-        }
-        if let Some(v) = self.MFNBANEDODD.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         for value in &self.OPCLDNLLNFH {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if let Some(v) = self.MFNBANEDODD.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.LKJMLIDAODM != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.LKJMLIDAODM);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LKJMLIDAODM != 0 {
-            os.write_uint32(5, self.LKJMLIDAODM)?;
-        }
         if self.BDNFLICNFHN != false {
-            os.write_bool(12, self.BDNFLICNFHN)?;
-        }
-        if let Some(v) = self.MFNBANEDODD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            os.write_bool(5, self.BDNFLICNFHN)?;
         }
         for v in &self.OPCLDNLLNFH {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
+        if let Some(v) = self.MFNBANEDODD.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
+        if self.LKJMLIDAODM != 0 {
+            os.write_uint32(13, self.LKJMLIDAODM)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -166,19 +166,19 @@ impl ::protobuf::Message for HFPFFJIMCKM {
     }
 
     fn clear(&mut self) {
-        self.LKJMLIDAODM = 0;
         self.BDNFLICNFHN = false;
-        self.MFNBANEDODD.clear();
         self.OPCLDNLLNFH.clear();
+        self.MFNBANEDODD.clear();
+        self.LKJMLIDAODM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HFPFFJIMCKM {
         static instance: HFPFFJIMCKM = HFPFFJIMCKM {
-            LKJMLIDAODM: 0,
             BDNFLICNFHN: false,
-            MFNBANEDODD: ::protobuf::MessageField::none(),
             OPCLDNLLNFH: ::std::vec::Vec::new(),
+            MFNBANEDODD: ::protobuf::MessageField::none(),
+            LKJMLIDAODM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for HFPFFJIMCKM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HFPFFJIMCKM.proto\x1a\x11CFKHKILIHHF.proto\x1a\x11GKBICDLGIMN.prot\
-    o\"\xb1\x01\n\x0bHFPFFJIMCKM\x12\x20\n\x0bLKJMLIDAODM\x18\x05\x20\x01(\r\
-    R\x0bLKJMLIDAODM\x12\x20\n\x0bBDNFLICNFHN\x18\x0c\x20\x01(\x08R\x0bBDNFL\
-    ICNFHN\x12.\n\x0bMFNBANEDODD\x18\x04\x20\x01(\x0b2\x0c.CFKHKILIHHFR\x0bM\
-    FNBANEDODD\x12.\n\x0bOPCLDNLLNFH\x18\x06\x20\x03(\x0b2\x0c.GKBICDLGIMNR\
-    \x0bOPCLDNLLNFHb\x06proto3\
+    o\"\xb1\x01\n\x0bHFPFFJIMCKM\x12\x20\n\x0bBDNFLICNFHN\x18\x05\x20\x01(\
+    \x08R\x0bBDNFLICNFHN\x12.\n\x0bOPCLDNLLNFH\x18\x0c\x20\x03(\x0b2\x0c.GKB\
+    ICDLGIMNR\x0bOPCLDNLLNFH\x12.\n\x0bMFNBANEDODD\x18\x07\x20\x01(\x0b2\x0c\
+    .CFKHKILIHHFR\x0bMFNBANEDODD\x12\x20\n\x0bLKJMLIDAODM\x18\r\x20\x01(\rR\
+    \x0bLKJMLIDAODMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -45,7 +45,7 @@ impl NIBJAMFMEFD {
         ::std::default::Default::default()
     }
 
-    // .LMKAAEFPFFO MECLLCDABNO = 3;
+    // .LMKAAEFPFFO MECLLCDABNO = 4;
 
     pub fn MECLLCDABNO(&self) -> &super::LMKAAEFPFFO::LMKAAEFPFFO {
         match self.FBKHKLGJMFH {
@@ -94,7 +94,7 @@ impl NIBJAMFMEFD {
         }
     }
 
-    // .LMKAAEFPFFO FFIPKMHCKHJ = 9;
+    // .LMKAAEFPFFO FFIPKMHCKHJ = 6;
 
     pub fn FFIPKMHCKHJ(&self) -> &super::LMKAAEFPFFO::LMKAAEFPFFO {
         match self.FBKHKLGJMFH {
@@ -143,7 +143,7 @@ impl NIBJAMFMEFD {
         }
     }
 
-    // .AIDFBBIAPEP MONOPOLY_ACTION_RESULT_SOURCE_TYPE_ASSET_UPGRADE = 2;
+    // .AIDFBBIAPEP MONOPOLY_ACTION_RESULT_SOURCE_TYPE_ASSET_UPGRADE = 7;
 
     pub fn MONOPOLY_ACTION_RESULT_SOURCE_TYPE_ASSET_UPGRADE(&self) -> &super::AIDFBBIAPEP::AIDFBBIAPEP {
         match self.FBKHKLGJMFH {
@@ -192,7 +192,7 @@ impl NIBJAMFMEFD {
         }
     }
 
-    // .AIDFBBIAPEP DACHANHPPBG = 10;
+    // .AIDFBBIAPEP DACHANHPPBG = 3;
 
     pub fn DACHANHPPBG(&self) -> &super::AIDFBBIAPEP::AIDFBBIAPEP {
         match self.FBKHKLGJMFH {
@@ -241,7 +241,7 @@ impl NIBJAMFMEFD {
         }
     }
 
-    // .BMPLFJKEOLF NOENHHILNAH = 1;
+    // .BMPLFJKEOLF NOENHHILNAH = 8;
 
     pub fn NOENHHILNAH(&self) -> &super::BMPLFJKEOLF::BMPLFJKEOLF {
         match self.FBKHKLGJMFH {
@@ -290,7 +290,7 @@ impl NIBJAMFMEFD {
         }
     }
 
-    // .BMPLFJKEOLF KPBJIPGEJPL = 4;
+    // .BMPLFJKEOLF KPBJIPGEJPL = 14;
 
     pub fn KPBJIPGEJPL(&self) -> &super::BMPLFJKEOLF::BMPLFJKEOLF {
         match self.FBKHKLGJMFH {
@@ -339,7 +339,7 @@ impl NIBJAMFMEFD {
         }
     }
 
-    // .LNKMKNBPIJH DMDPCOOAFJK = 11;
+    // .LNKMKNBPIJH DMDPCOOAFJK = 9;
 
     pub fn DMDPCOOAFJK(&self) -> &super::LNKMKNBPIJH::LNKMKNBPIJH {
         match self.FBKHKLGJMFH {
@@ -388,7 +388,7 @@ impl NIBJAMFMEFD {
         }
     }
 
-    // .LNKMKNBPIJH HHIBFNAGKFF = 6;
+    // .LNKMKNBPIJH HHIBFNAGKFF = 2;
 
     pub fn HHIBFNAGKFF(&self) -> &super::LNKMKNBPIJH::LNKMKNBPIJH {
         match self.FBKHKLGJMFH {
@@ -437,7 +437,7 @@ impl NIBJAMFMEFD {
         }
     }
 
-    // .LMMEBMBGLDN NKCMGBCPJGG = 13;
+    // .LMMEBMBGLDN NKCMGBCPJGG = 10;
 
     pub fn NKCMGBCPJGG(&self) -> &super::LMMEBMBGLDN::LMMEBMBGLDN {
         match self.FBKHKLGJMFH {
@@ -486,7 +486,7 @@ impl NIBJAMFMEFD {
         }
     }
 
-    // .LPBAMOKKJCM HANOGACJPKB = 8;
+    // .LPBAMOKKJCM HANOGACJPKB = 13;
 
     pub fn HANOGACJPKB(&self) -> &super::LPBAMOKKJCM::LPBAMOKKJCM {
         match self.FBKHKLGJMFH {
@@ -535,7 +535,7 @@ impl NIBJAMFMEFD {
         }
     }
 
-    // .BMPLFJKEOLF OMFECIMLADC = 7;
+    // .BMPLFJKEOLF OMFECIMLADC = 1;
 
     pub fn OMFECIMLADC(&self) -> &super::BMPLFJKEOLF::BMPLFJKEOLF {
         match self.FBKHKLGJMFH {
@@ -584,7 +584,7 @@ impl NIBJAMFMEFD {
         }
     }
 
-    // .LNKMKNBPIJH NGONCCBLAOL = 5;
+    // .LNKMKNBPIJH NGONCCBLAOL = 15;
 
     pub fn NGONCCBLAOL(&self) -> &super::LNKMKNBPIJH::LNKMKNBPIJH {
         match self.FBKHKLGJMFH {
@@ -633,7 +633,7 @@ impl NIBJAMFMEFD {
         }
     }
 
-    // .NMGHFOLKFAJ FJGHNLNJLPH = 14;
+    // .NMGHFOLKFAJ FJGHNLNJLPH = 12;
 
     pub fn FJGHNLNJLPH(&self) -> &super::NMGHFOLKFAJ::NMGHFOLKFAJ {
         match self.FBKHKLGJMFH {
@@ -795,43 +795,43 @@ impl ::protobuf::Message for NIBJAMFMEFD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                34 => {
                     self.FBKHKLGJMFH = ::std::option::Option::Some(nibjamfmefd::FBKHKLGJMFH::MECLLCDABNO(is.read_message()?));
                 },
-                74 => {
+                50 => {
                     self.FBKHKLGJMFH = ::std::option::Option::Some(nibjamfmefd::FBKHKLGJMFH::FFIPKMHCKHJ(is.read_message()?));
                 },
-                18 => {
+                58 => {
                     self.FBKHKLGJMFH = ::std::option::Option::Some(nibjamfmefd::FBKHKLGJMFH::MONOPOLYACTIONRESULTSOURCETYPEASSETUPGRADE(is.read_message()?));
                 },
-                82 => {
+                26 => {
                     self.FBKHKLGJMFH = ::std::option::Option::Some(nibjamfmefd::FBKHKLGJMFH::DACHANHPPBG(is.read_message()?));
                 },
-                10 => {
+                66 => {
                     self.FBKHKLGJMFH = ::std::option::Option::Some(nibjamfmefd::FBKHKLGJMFH::NOENHHILNAH(is.read_message()?));
                 },
-                34 => {
+                114 => {
                     self.FBKHKLGJMFH = ::std::option::Option::Some(nibjamfmefd::FBKHKLGJMFH::KPBJIPGEJPL(is.read_message()?));
                 },
-                90 => {
+                74 => {
                     self.FBKHKLGJMFH = ::std::option::Option::Some(nibjamfmefd::FBKHKLGJMFH::DMDPCOOAFJK(is.read_message()?));
                 },
-                50 => {
+                18 => {
                     self.FBKHKLGJMFH = ::std::option::Option::Some(nibjamfmefd::FBKHKLGJMFH::HHIBFNAGKFF(is.read_message()?));
                 },
-                106 => {
+                82 => {
                     self.FBKHKLGJMFH = ::std::option::Option::Some(nibjamfmefd::FBKHKLGJMFH::NKCMGBCPJGG(is.read_message()?));
                 },
-                66 => {
+                106 => {
                     self.FBKHKLGJMFH = ::std::option::Option::Some(nibjamfmefd::FBKHKLGJMFH::HANOGACJPKB(is.read_message()?));
                 },
-                58 => {
+                10 => {
                     self.FBKHKLGJMFH = ::std::option::Option::Some(nibjamfmefd::FBKHKLGJMFH::OMFECIMLADC(is.read_message()?));
                 },
-                42 => {
+                122 => {
                     self.FBKHKLGJMFH = ::std::option::Option::Some(nibjamfmefd::FBKHKLGJMFH::NGONCCBLAOL(is.read_message()?));
                 },
-                114 => {
+                98 => {
                     self.FBKHKLGJMFH = ::std::option::Option::Some(nibjamfmefd::FBKHKLGJMFH::FJGHNLNJLPH(is.read_message()?));
                 },
                 tag => {
@@ -911,43 +911,43 @@ impl ::protobuf::Message for NIBJAMFMEFD {
         if let ::std::option::Option::Some(ref v) = self.FBKHKLGJMFH {
             match v {
                 &nibjamfmefd::FBKHKLGJMFH::MECLLCDABNO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-                },
-                &nibjamfmefd::FBKHKLGJMFH::FFIPKMHCKHJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-                },
-                &nibjamfmefd::FBKHKLGJMFH::MONOPOLYACTIONRESULTSOURCETYPEASSETUPGRADE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-                },
-                &nibjamfmefd::FBKHKLGJMFH::DACHANHPPBG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-                },
-                &nibjamfmefd::FBKHKLGJMFH::NOENHHILNAH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-                },
-                &nibjamfmefd::FBKHKLGJMFH::KPBJIPGEJPL(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
                 },
-                &nibjamfmefd::FBKHKLGJMFH::DMDPCOOAFJK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-                },
-                &nibjamfmefd::FBKHKLGJMFH::HHIBFNAGKFF(ref v) => {
+                &nibjamfmefd::FBKHKLGJMFH::FFIPKMHCKHJ(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
-                &nibjamfmefd::FBKHKLGJMFH::NKCMGBCPJGG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-                },
-                &nibjamfmefd::FBKHKLGJMFH::HANOGACJPKB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-                },
-                &nibjamfmefd::FBKHKLGJMFH::OMFECIMLADC(ref v) => {
+                &nibjamfmefd::FBKHKLGJMFH::MONOPOLYACTIONRESULTSOURCETYPEASSETUPGRADE(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
+                &nibjamfmefd::FBKHKLGJMFH::DACHANHPPBG(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                },
+                &nibjamfmefd::FBKHKLGJMFH::NOENHHILNAH(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+                },
+                &nibjamfmefd::FBKHKLGJMFH::KPBJIPGEJPL(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                },
+                &nibjamfmefd::FBKHKLGJMFH::DMDPCOOAFJK(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+                },
+                &nibjamfmefd::FBKHKLGJMFH::HHIBFNAGKFF(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+                },
+                &nibjamfmefd::FBKHKLGJMFH::NKCMGBCPJGG(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                },
+                &nibjamfmefd::FBKHKLGJMFH::HANOGACJPKB(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                },
+                &nibjamfmefd::FBKHKLGJMFH::OMFECIMLADC(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                },
                 &nibjamfmefd::FBKHKLGJMFH::NGONCCBLAOL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
                 &nibjamfmefd::FBKHKLGJMFH::FJGHNLNJLPH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
                 },
             };
         }
@@ -1066,21 +1066,21 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NIBJAMFMEFD.proto\x1a\x11AIDFBBIAPEP.proto\x1a\x11BMPLFJKEOLF.prot\
     o\x1a\x11LMKAAEFPFFO.proto\x1a\x11LMMEBMBGLDN.proto\x1a\x11LNKMKNBPIJH.p\
     roto\x1a\x11LPBAMOKKJCM.proto\x1a\x11NMGHFOLKFAJ.proto\"\xea\x05\n\x0bNI\
-    BJAMFMEFD\x120\n\x0bMECLLCDABNO\x18\x03\x20\x01(\x0b2\x0c.LMKAAEFPFFOH\0\
-    R\x0bMECLLCDABNO\x120\n\x0bFFIPKMHCKHJ\x18\t\x20\x01(\x0b2\x0c.LMKAAEFPF\
-    FOH\0R\x0bFFIPKMHCKHJ\x12t\n0MONOPOLY_ACTION_RESULT_SOURCE_TYPE_ASSET_UP\
-    GRADE\x18\x02\x20\x01(\x0b2\x0c.AIDFBBIAPEPH\0R*MONOPOLYACTIONRESULTSOUR\
-    CETYPEASSETUPGRADE\x120\n\x0bDACHANHPPBG\x18\n\x20\x01(\x0b2\x0c.AIDFBBI\
-    APEPH\0R\x0bDACHANHPPBG\x120\n\x0bNOENHHILNAH\x18\x01\x20\x01(\x0b2\x0c.\
-    BMPLFJKEOLFH\0R\x0bNOENHHILNAH\x120\n\x0bKPBJIPGEJPL\x18\x04\x20\x01(\
-    \x0b2\x0c.BMPLFJKEOLFH\0R\x0bKPBJIPGEJPL\x120\n\x0bDMDPCOOAFJK\x18\x0b\
-    \x20\x01(\x0b2\x0c.LNKMKNBPIJHH\0R\x0bDMDPCOOAFJK\x120\n\x0bHHIBFNAGKFF\
-    \x18\x06\x20\x01(\x0b2\x0c.LNKMKNBPIJHH\0R\x0bHHIBFNAGKFF\x120\n\x0bNKCM\
-    GBCPJGG\x18\r\x20\x01(\x0b2\x0c.LMMEBMBGLDNH\0R\x0bNKCMGBCPJGG\x120\n\
-    \x0bHANOGACJPKB\x18\x08\x20\x01(\x0b2\x0c.LPBAMOKKJCMH\0R\x0bHANOGACJPKB\
-    \x120\n\x0bOMFECIMLADC\x18\x07\x20\x01(\x0b2\x0c.BMPLFJKEOLFH\0R\x0bOMFE\
-    CIMLADC\x120\n\x0bNGONCCBLAOL\x18\x05\x20\x01(\x0b2\x0c.LNKMKNBPIJHH\0R\
-    \x0bNGONCCBLAOL\x120\n\x0bFJGHNLNJLPH\x18\x0e\x20\x01(\x0b2\x0c.NMGHFOLK\
+    BJAMFMEFD\x120\n\x0bMECLLCDABNO\x18\x04\x20\x01(\x0b2\x0c.LMKAAEFPFFOH\0\
+    R\x0bMECLLCDABNO\x120\n\x0bFFIPKMHCKHJ\x18\x06\x20\x01(\x0b2\x0c.LMKAAEF\
+    PFFOH\0R\x0bFFIPKMHCKHJ\x12t\n0MONOPOLY_ACTION_RESULT_SOURCE_TYPE_ASSET_\
+    UPGRADE\x18\x07\x20\x01(\x0b2\x0c.AIDFBBIAPEPH\0R*MONOPOLYACTIONRESULTSO\
+    URCETYPEASSETUPGRADE\x120\n\x0bDACHANHPPBG\x18\x03\x20\x01(\x0b2\x0c.AID\
+    FBBIAPEPH\0R\x0bDACHANHPPBG\x120\n\x0bNOENHHILNAH\x18\x08\x20\x01(\x0b2\
+    \x0c.BMPLFJKEOLFH\0R\x0bNOENHHILNAH\x120\n\x0bKPBJIPGEJPL\x18\x0e\x20\
+    \x01(\x0b2\x0c.BMPLFJKEOLFH\0R\x0bKPBJIPGEJPL\x120\n\x0bDMDPCOOAFJK\x18\
+    \t\x20\x01(\x0b2\x0c.LNKMKNBPIJHH\0R\x0bDMDPCOOAFJK\x120\n\x0bHHIBFNAGKF\
+    F\x18\x02\x20\x01(\x0b2\x0c.LNKMKNBPIJHH\0R\x0bHHIBFNAGKFF\x120\n\x0bNKC\
+    MGBCPJGG\x18\n\x20\x01(\x0b2\x0c.LMMEBMBGLDNH\0R\x0bNKCMGBCPJGG\x120\n\
+    \x0bHANOGACJPKB\x18\r\x20\x01(\x0b2\x0c.LPBAMOKKJCMH\0R\x0bHANOGACJPKB\
+    \x120\n\x0bOMFECIMLADC\x18\x01\x20\x01(\x0b2\x0c.BMPLFJKEOLFH\0R\x0bOMFE\
+    CIMLADC\x120\n\x0bNGONCCBLAOL\x18\x0f\x20\x01(\x0b2\x0c.LNKMKNBPIJHH\0R\
+    \x0bNGONCCBLAOL\x120\n\x0bFJGHNLNJLPH\x18\x0c\x20\x01(\x0b2\x0c.NMGHFOLK\
     FAJH\0R\x0bFJGHNLNJLPHB\r\n\x0bFBKHKLGJMFHb\x06proto3\
 ";
 

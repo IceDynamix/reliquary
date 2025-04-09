@@ -96,13 +96,13 @@ impl ::protobuf::Message for MJFCEMBPICH {
                 40 => {
                     self.LJHIJCABHEP = is.read_uint32()?;
                 },
-                32 => {
+                96 => {
                     self.PDONLOOBBCI = is.read_uint32()?;
                 },
-                112 => {
+                104 => {
                     self.MNCIHJHGNMJ = is.read_uint32()?;
                 },
-                24 => {
+                8 => {
                     self.FJNHDHOHBCL = is.read_uint32()?;
                 },
                 tag => {
@@ -121,13 +121,13 @@ impl ::protobuf::Message for MJFCEMBPICH {
             my_size += ::protobuf::rt::uint32_size(5, self.LJHIJCABHEP);
         }
         if self.PDONLOOBBCI != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.PDONLOOBBCI);
+            my_size += ::protobuf::rt::uint32_size(12, self.PDONLOOBBCI);
         }
         if self.MNCIHJHGNMJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.MNCIHJHGNMJ);
+            my_size += ::protobuf::rt::uint32_size(13, self.MNCIHJHGNMJ);
         }
         if self.FJNHDHOHBCL != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.FJNHDHOHBCL);
+            my_size += ::protobuf::rt::uint32_size(1, self.FJNHDHOHBCL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -139,13 +139,13 @@ impl ::protobuf::Message for MJFCEMBPICH {
             os.write_uint32(5, self.LJHIJCABHEP)?;
         }
         if self.PDONLOOBBCI != 0 {
-            os.write_uint32(4, self.PDONLOOBBCI)?;
+            os.write_uint32(12, self.PDONLOOBBCI)?;
         }
         if self.MNCIHJHGNMJ != 0 {
-            os.write_uint32(14, self.MNCIHJHGNMJ)?;
+            os.write_uint32(13, self.MNCIHJHGNMJ)?;
         }
         if self.FJNHDHOHBCL != 0 {
-            os.write_uint32(3, self.FJNHDHOHBCL)?;
+            os.write_uint32(1, self.FJNHDHOHBCL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -202,9 +202,9 @@ impl ::protobuf::reflect::ProtobufValue for MJFCEMBPICH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MJFCEMBPICH.proto\"\x95\x01\n\x0bMJFCEMBPICH\x12\x20\n\x0bLJHIJCAB\
-    HEP\x18\x05\x20\x01(\rR\x0bLJHIJCABHEP\x12\x20\n\x0bPDONLOOBBCI\x18\x04\
-    \x20\x01(\rR\x0bPDONLOOBBCI\x12\x20\n\x0bMNCIHJHGNMJ\x18\x0e\x20\x01(\rR\
-    \x0bMNCIHJHGNMJ\x12\x20\n\x0bFJNHDHOHBCL\x18\x03\x20\x01(\rR\x0bFJNHDHOH\
+    HEP\x18\x05\x20\x01(\rR\x0bLJHIJCABHEP\x12\x20\n\x0bPDONLOOBBCI\x18\x0c\
+    \x20\x01(\rR\x0bPDONLOOBBCI\x12\x20\n\x0bMNCIHJHGNMJ\x18\r\x20\x01(\rR\
+    \x0bMNCIHJHGNMJ\x12\x20\n\x0bFJNHDHOHBCL\x18\x01\x20\x01(\rR\x0bFJNHDHOH\
     BCLb\x06proto3\
 ";
 

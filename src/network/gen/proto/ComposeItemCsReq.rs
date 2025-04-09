@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ComposeItemCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ComposeItemCsReq.LOMDAGHOLKC)
-    pub LOMDAGHOLKC: u32,
     // @@protoc_insertion_point(field:ComposeItemCsReq.ABPNLMODOGB)
     pub ABPNLMODOGB: ::protobuf::MessageField<super::KNAPAIOFJIE::KNAPAIOFJIE>,
     // @@protoc_insertion_point(field:ComposeItemCsReq.PJCHNOKEDBE)
     pub PJCHNOKEDBE: ::protobuf::MessageField<super::KNAPAIOFJIE::KNAPAIOFJIE>,
     // @@protoc_insertion_point(field:ComposeItemCsReq.LEBFMHHIDNC)
     pub LEBFMHHIDNC: u32,
+    // @@protoc_insertion_point(field:ComposeItemCsReq.LOMDAGHOLKC)
+    pub LOMDAGHOLKC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ComposeItemCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,11 +55,6 @@ impl ComposeItemCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LOMDAGHOLKC",
-            |m: &ComposeItemCsReq| { &m.LOMDAGHOLKC },
-            |m: &mut ComposeItemCsReq| { &mut m.LOMDAGHOLKC },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KNAPAIOFJIE::KNAPAIOFJIE>(
             "ABPNLMODOGB",
             |m: &ComposeItemCsReq| { &m.ABPNLMODOGB },
@@ -74,6 +69,11 @@ impl ComposeItemCsReq {
             "LEBFMHHIDNC",
             |m: &ComposeItemCsReq| { &m.LEBFMHHIDNC },
             |m: &mut ComposeItemCsReq| { &mut m.LEBFMHHIDNC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LOMDAGHOLKC",
+            |m: &ComposeItemCsReq| { &m.LOMDAGHOLKC },
+            |m: &mut ComposeItemCsReq| { &mut m.LOMDAGHOLKC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ComposeItemCsReq>(
             "ComposeItemCsReq",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for ComposeItemCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.LOMDAGHOLKC = is.read_uint32()?;
-                },
-                10 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.ABPNLMODOGB)?;
                 },
-                50 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.PJCHNOKEDBE)?;
                 },
-                72 => {
+                24 => {
                     self.LEBFMHHIDNC = is.read_uint32()?;
+                },
+                16 => {
+                    self.LOMDAGHOLKC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,9 +117,6 @@ impl ::protobuf::Message for ComposeItemCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LOMDAGHOLKC != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.LOMDAGHOLKC);
-        }
         if let Some(v) = self.ABPNLMODOGB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -129,7 +126,10 @@ impl ::protobuf::Message for ComposeItemCsReq {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.LEBFMHHIDNC != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.LEBFMHHIDNC);
+            my_size += ::protobuf::rt::uint32_size(3, self.LEBFMHHIDNC);
+        }
+        if self.LOMDAGHOLKC != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.LOMDAGHOLKC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for ComposeItemCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LOMDAGHOLKC != 0 {
-            os.write_uint32(15, self.LOMDAGHOLKC)?;
-        }
         if let Some(v) = self.ABPNLMODOGB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         if let Some(v) = self.PJCHNOKEDBE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if self.LEBFMHHIDNC != 0 {
-            os.write_uint32(9, self.LEBFMHHIDNC)?;
+            os.write_uint32(3, self.LEBFMHHIDNC)?;
+        }
+        if self.LOMDAGHOLKC != 0 {
+            os.write_uint32(2, self.LOMDAGHOLKC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for ComposeItemCsReq {
     }
 
     fn clear(&mut self) {
-        self.LOMDAGHOLKC = 0;
         self.ABPNLMODOGB.clear();
         self.PJCHNOKEDBE.clear();
         self.LEBFMHHIDNC = 0;
+        self.LOMDAGHOLKC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ComposeItemCsReq {
         static instance: ComposeItemCsReq = ComposeItemCsReq {
-            LOMDAGHOLKC: 0,
             ABPNLMODOGB: ::protobuf::MessageField::none(),
             PJCHNOKEDBE: ::protobuf::MessageField::none(),
             LEBFMHHIDNC: 0,
+            LOMDAGHOLKC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for ComposeItemCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16ComposeItemCsReq.proto\x1a\x11KNAPAIOFJIE.proto\"\xb6\x01\n\x10Com\
-    poseItemCsReq\x12\x20\n\x0bLOMDAGHOLKC\x18\x0f\x20\x01(\rR\x0bLOMDAGHOLK\
-    C\x12.\n\x0bABPNLMODOGB\x18\x01\x20\x01(\x0b2\x0c.KNAPAIOFJIER\x0bABPNLM\
-    ODOGB\x12.\n\x0bPJCHNOKEDBE\x18\x06\x20\x01(\x0b2\x0c.KNAPAIOFJIER\x0bPJ\
-    CHNOKEDBE\x12\x20\n\x0bLEBFMHHIDNC\x18\t\x20\x01(\rR\x0bLEBFMHHIDNCb\x06\
-    proto3\
+    poseItemCsReq\x12.\n\x0bABPNLMODOGB\x18\x08\x20\x01(\x0b2\x0c.KNAPAIOFJI\
+    ER\x0bABPNLMODOGB\x12.\n\x0bPJCHNOKEDBE\x18\x0e\x20\x01(\x0b2\x0c.KNAPAI\
+    OFJIER\x0bPJCHNOKEDBE\x12\x20\n\x0bLEBFMHHIDNC\x18\x03\x20\x01(\rR\x0bLE\
+    BFMHHIDNC\x12\x20\n\x0bLOMDAGHOLKC\x18\x02\x20\x01(\rR\x0bLOMDAGHOLKCb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AKCPALGEMOL {
     // message fields
-    // @@protoc_insertion_point(field:AKCPALGEMOL.promotion)
-    pub promotion: u32,
-    // @@protoc_insertion_point(field:AKCPALGEMOL.tid)
-    pub tid: u32,
     // @@protoc_insertion_point(field:AKCPALGEMOL.exp)
     pub exp: u32,
-    // @@protoc_insertion_point(field:AKCPALGEMOL.level)
-    pub level: u32,
+    // @@protoc_insertion_point(field:AKCPALGEMOL.tid)
+    pub tid: u32,
+    // @@protoc_insertion_point(field:AKCPALGEMOL.promotion)
+    pub promotion: u32,
     // @@protoc_insertion_point(field:AKCPALGEMOL.rank)
     pub rank: u32,
+    // @@protoc_insertion_point(field:AKCPALGEMOL.level)
+    pub level: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AKCPALGEMOL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,9 +58,9 @@ impl AKCPALGEMOL {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "promotion",
-            |m: &AKCPALGEMOL| { &m.promotion },
-            |m: &mut AKCPALGEMOL| { &mut m.promotion },
+            "exp",
+            |m: &AKCPALGEMOL| { &m.exp },
+            |m: &mut AKCPALGEMOL| { &mut m.exp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "tid",
@@ -68,19 +68,19 @@ impl AKCPALGEMOL {
             |m: &mut AKCPALGEMOL| { &mut m.tid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "exp",
-            |m: &AKCPALGEMOL| { &m.exp },
-            |m: &mut AKCPALGEMOL| { &mut m.exp },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &AKCPALGEMOL| { &m.level },
-            |m: &mut AKCPALGEMOL| { &mut m.level },
+            "promotion",
+            |m: &AKCPALGEMOL| { &m.promotion },
+            |m: &mut AKCPALGEMOL| { &mut m.promotion },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "rank",
             |m: &AKCPALGEMOL| { &m.rank },
             |m: &mut AKCPALGEMOL| { &mut m.rank },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &AKCPALGEMOL| { &m.level },
+            |m: &mut AKCPALGEMOL| { &mut m.level },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AKCPALGEMOL>(
             "AKCPALGEMOL",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for AKCPALGEMOL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.promotion = is.read_uint32()?;
-                },
-                96 => {
-                    self.tid = is.read_uint32()?;
-                },
                 16 => {
                     self.exp = is.read_uint32()?;
                 },
-                104 => {
-                    self.level = is.read_uint32()?;
+                64 => {
+                    self.tid = is.read_uint32()?;
                 },
                 112 => {
+                    self.promotion = is.read_uint32()?;
+                },
+                80 => {
                     self.rank = is.read_uint32()?;
+                },
+                120 => {
+                    self.level = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for AKCPALGEMOL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.promotion != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.promotion);
-        }
-        if self.tid != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.tid);
-        }
         if self.exp != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.exp);
         }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.level);
+        if self.tid != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.tid);
+        }
+        if self.promotion != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.promotion);
         }
         if self.rank != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.rank);
+            my_size += ::protobuf::rt::uint32_size(10, self.rank);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for AKCPALGEMOL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.promotion != 0 {
-            os.write_uint32(3, self.promotion)?;
-        }
-        if self.tid != 0 {
-            os.write_uint32(12, self.tid)?;
-        }
         if self.exp != 0 {
             os.write_uint32(2, self.exp)?;
         }
-        if self.level != 0 {
-            os.write_uint32(13, self.level)?;
+        if self.tid != 0 {
+            os.write_uint32(8, self.tid)?;
+        }
+        if self.promotion != 0 {
+            os.write_uint32(14, self.promotion)?;
         }
         if self.rank != 0 {
-            os.write_uint32(14, self.rank)?;
+            os.write_uint32(10, self.rank)?;
+        }
+        if self.level != 0 {
+            os.write_uint32(15, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for AKCPALGEMOL {
     }
 
     fn clear(&mut self) {
-        self.promotion = 0;
-        self.tid = 0;
         self.exp = 0;
-        self.level = 0;
+        self.tid = 0;
+        self.promotion = 0;
         self.rank = 0;
+        self.level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AKCPALGEMOL {
         static instance: AKCPALGEMOL = AKCPALGEMOL {
-            promotion: 0,
-            tid: 0,
             exp: 0,
-            level: 0,
+            tid: 0,
+            promotion: 0,
             rank: 0,
+            level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,11 +219,10 @@ impl ::protobuf::reflect::ProtobufValue for AKCPALGEMOL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AKCPALGEMOL.proto\"y\n\x0bAKCPALGEMOL\x12\x1c\n\tpromotion\x18\x03\
-    \x20\x01(\rR\tpromotion\x12\x10\n\x03tid\x18\x0c\x20\x01(\rR\x03tid\x12\
-    \x10\n\x03exp\x18\x02\x20\x01(\rR\x03exp\x12\x14\n\x05level\x18\r\x20\
-    \x01(\rR\x05level\x12\x12\n\x04rank\x18\x0e\x20\x01(\rR\x04rankb\x06prot\
-    o3\
+    \n\x11AKCPALGEMOL.proto\"y\n\x0bAKCPALGEMOL\x12\x10\n\x03exp\x18\x02\x20\
+    \x01(\rR\x03exp\x12\x10\n\x03tid\x18\x08\x20\x01(\rR\x03tid\x12\x1c\n\tp\
+    romotion\x18\x0e\x20\x01(\rR\tpromotion\x12\x12\n\x04rank\x18\n\x20\x01(\
+    \rR\x04rank\x12\x14\n\x05level\x18\x0f\x20\x01(\rR\x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

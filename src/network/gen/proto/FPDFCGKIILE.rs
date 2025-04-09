@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FPDFCGKIILE {
     // message fields
-    // @@protoc_insertion_point(field:FPDFCGKIILE.KHHLNGGECPB)
-    pub KHHLNGGECPB: u32,
     // @@protoc_insertion_point(field:FPDFCGKIILE.KPAKAPNHNND)
     pub KPAKAPNHNND: u32,
+    // @@protoc_insertion_point(field:FPDFCGKIILE.KHHLNGGECPB)
+    pub KHHLNGGECPB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FPDFCGKIILE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl FPDFCGKIILE {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KHHLNGGECPB",
-            |m: &FPDFCGKIILE| { &m.KHHLNGGECPB },
-            |m: &mut FPDFCGKIILE| { &mut m.KHHLNGGECPB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KPAKAPNHNND",
             |m: &FPDFCGKIILE| { &m.KPAKAPNHNND },
             |m: &mut FPDFCGKIILE| { &mut m.KPAKAPNHNND },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KHHLNGGECPB",
+            |m: &FPDFCGKIILE| { &m.KHHLNGGECPB },
+            |m: &mut FPDFCGKIILE| { &mut m.KHHLNGGECPB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FPDFCGKIILE>(
             "FPDFCGKIILE",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FPDFCGKIILE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.KHHLNGGECPB = is.read_uint32()?;
-                },
-                16 => {
+                88 => {
                     self.KPAKAPNHNND = is.read_uint32()?;
+                },
+                80 => {
+                    self.KHHLNGGECPB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for FPDFCGKIILE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KHHLNGGECPB != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.KHHLNGGECPB);
-        }
         if self.KPAKAPNHNND != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.KPAKAPNHNND);
+            my_size += ::protobuf::rt::uint32_size(11, self.KPAKAPNHNND);
+        }
+        if self.KHHLNGGECPB != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.KHHLNGGECPB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for FPDFCGKIILE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KHHLNGGECPB != 0 {
-            os.write_uint32(15, self.KHHLNGGECPB)?;
-        }
         if self.KPAKAPNHNND != 0 {
-            os.write_uint32(2, self.KPAKAPNHNND)?;
+            os.write_uint32(11, self.KPAKAPNHNND)?;
+        }
+        if self.KHHLNGGECPB != 0 {
+            os.write_uint32(10, self.KHHLNGGECPB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for FPDFCGKIILE {
     }
 
     fn clear(&mut self) {
-        self.KHHLNGGECPB = 0;
         self.KPAKAPNHNND = 0;
+        self.KHHLNGGECPB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FPDFCGKIILE {
         static instance: FPDFCGKIILE = FPDFCGKIILE {
-            KHHLNGGECPB: 0,
             KPAKAPNHNND: 0,
+            KHHLNGGECPB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for FPDFCGKIILE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FPDFCGKIILE.proto\"Q\n\x0bFPDFCGKIILE\x12\x20\n\x0bKHHLNGGECPB\x18\
-    \x0f\x20\x01(\rR\x0bKHHLNGGECPB\x12\x20\n\x0bKPAKAPNHNND\x18\x02\x20\x01\
-    (\rR\x0bKPAKAPNHNNDb\x06proto3\
+    \n\x11FPDFCGKIILE.proto\"Q\n\x0bFPDFCGKIILE\x12\x20\n\x0bKPAKAPNHNND\x18\
+    \x0b\x20\x01(\rR\x0bKPAKAPNHNND\x12\x20\n\x0bKHHLNGGECPB\x18\n\x20\x01(\
+    \rR\x0bKHHLNGGECPBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

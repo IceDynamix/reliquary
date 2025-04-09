@@ -45,7 +45,7 @@ impl ItemCost {
         ::std::default::Default::default()
     }
 
-    // .PileItem pile_item = 6;
+    // .PileItem pile_item = 10;
 
     pub fn pile_item(&self) -> &super::PileItem::PileItem {
         match self.item_case {
@@ -94,7 +94,7 @@ impl ItemCost {
         }
     }
 
-    // uint32 equipment_unique_id = 13;
+    // uint32 equipment_unique_id = 8;
 
     pub fn equipment_unique_id(&self) -> u32 {
         match self.item_case {
@@ -119,7 +119,7 @@ impl ItemCost {
         self.item_case = ::std::option::Option::Some(item_cost::Item_case::EquipmentUniqueId(v))
     }
 
-    // uint32 relic_unique_id = 9;
+    // uint32 relic_unique_id = 6;
 
     pub fn relic_unique_id(&self) -> u32 {
         match self.item_case {
@@ -185,13 +185,13 @@ impl ::protobuf::Message for ItemCost {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                82 => {
                     self.item_case = ::std::option::Option::Some(item_cost::Item_case::PileItem(is.read_message()?));
                 },
-                104 => {
+                64 => {
                     self.item_case = ::std::option::Option::Some(item_cost::Item_case::EquipmentUniqueId(is.read_uint32()?));
                 },
-                72 => {
+                48 => {
                     self.item_case = ::std::option::Option::Some(item_cost::Item_case::RelicUniqueId(is.read_uint32()?));
                 },
                 tag => {
@@ -213,10 +213,10 @@ impl ::protobuf::Message for ItemCost {
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &item_cost::Item_case::EquipmentUniqueId(v) => {
-                    my_size += ::protobuf::rt::uint32_size(13, v);
+                    my_size += ::protobuf::rt::uint32_size(8, v);
                 },
                 &item_cost::Item_case::RelicUniqueId(v) => {
-                    my_size += ::protobuf::rt::uint32_size(9, v);
+                    my_size += ::protobuf::rt::uint32_size(6, v);
                 },
             };
         }
@@ -229,13 +229,13 @@ impl ::protobuf::Message for ItemCost {
         if let ::std::option::Option::Some(ref v) = self.item_case {
             match v {
                 &item_cost::Item_case::PileItem(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
                 &item_cost::Item_case::EquipmentUniqueId(v) => {
-                    os.write_uint32(13, v)?;
+                    os.write_uint32(8, v)?;
                 },
                 &item_cost::Item_case::RelicUniqueId(v) => {
-                    os.write_uint32(9, v)?;
+                    os.write_uint32(6, v)?;
                 },
             };
         }
@@ -322,10 +322,10 @@ pub mod item_cost {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0eItemCost.proto\x1a\x0ePileItem.proto\"\x9d\x01\n\x08ItemCost\x12(\
-    \n\tpile_item\x18\x06\x20\x01(\x0b2\t.PileItemH\0R\x08pileItem\x120\n\
-    \x13equipment_unique_id\x18\r\x20\x01(\rH\0R\x11equipmentUniqueId\x12(\n\
-    \x0frelic_unique_id\x18\t\x20\x01(\rH\0R\rrelicUniqueIdB\x0b\n\titem_cas\
-    eb\x06proto3\
+    \n\tpile_item\x18\n\x20\x01(\x0b2\t.PileItemH\0R\x08pileItem\x120\n\x13e\
+    quipment_unique_id\x18\x08\x20\x01(\rH\0R\x11equipmentUniqueId\x12(\n\
+    \x0frelic_unique_id\x18\x06\x20\x01(\rH\0R\rrelicUniqueIdB\x0b\n\titem_c\
+    aseb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

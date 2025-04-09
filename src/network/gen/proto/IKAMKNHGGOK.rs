@@ -79,10 +79,10 @@ impl ::protobuf::Message for IKAMKNHGGOK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                24 => {
                     self.CDJECOKFIOF = is.read_uint32()?;
                 },
-                40 => {
+                112 => {
                     self.ONLHFCOGLAL = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for IKAMKNHGGOK {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CDJECOKFIOF != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.CDJECOKFIOF);
+            my_size += ::protobuf::rt::uint32_size(3, self.CDJECOKFIOF);
         }
         if self.ONLHFCOGLAL != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.ONLHFCOGLAL);
+            my_size += ::protobuf::rt::uint32_size(14, self.ONLHFCOGLAL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for IKAMKNHGGOK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CDJECOKFIOF != 0 {
-            os.write_uint32(15, self.CDJECOKFIOF)?;
+            os.write_uint32(3, self.CDJECOKFIOF)?;
         }
         if self.ONLHFCOGLAL != 0 {
-            os.write_uint32(5, self.ONLHFCOGLAL)?;
+            os.write_uint32(14, self.ONLHFCOGLAL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for IKAMKNHGGOK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IKAMKNHGGOK.proto\"Q\n\x0bIKAMKNHGGOK\x12\x20\n\x0bCDJECOKFIOF\x18\
-    \x0f\x20\x01(\rR\x0bCDJECOKFIOF\x12\x20\n\x0bONLHFCOGLAL\x18\x05\x20\x01\
+    \x03\x20\x01(\rR\x0bCDJECOKFIOF\x12\x20\n\x0bONLHFCOGLAL\x18\x0e\x20\x01\
     (\rR\x0bONLHFCOGLALb\x06proto3\
 ";
 

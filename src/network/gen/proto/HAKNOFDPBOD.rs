@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HAKNOFDPBOD {
     // message fields
-    // @@protoc_insertion_point(field:HAKNOFDPBOD.ACDOPCBMPNL)
-    pub ACDOPCBMPNL: u32,
     // @@protoc_insertion_point(field:HAKNOFDPBOD.FPOGIALMCIP)
     pub FPOGIALMCIP: u32,
+    // @@protoc_insertion_point(field:HAKNOFDPBOD.ACDOPCBMPNL)
+    pub ACDOPCBMPNL: u32,
     // @@protoc_insertion_point(field:HAKNOFDPBOD.MNCIHJHGNMJ)
     pub MNCIHJHGNMJ: u32,
     // message oneof groups
@@ -52,7 +52,7 @@ impl HAKNOFDPBOD {
         ::std::default::Default::default()
     }
 
-    // .GJKIAPIPGAN EJCOLGNJGDC = 15;
+    // .GJKIAPIPGAN EJCOLGNJGDC = 9;
 
     pub fn EJCOLGNJGDC(&self) -> &super::GJKIAPIPGAN::GJKIAPIPGAN {
         match self.NGIKDJMNGBG {
@@ -101,7 +101,7 @@ impl HAKNOFDPBOD {
         }
     }
 
-    // .EIMOBGLLEFO LKANIPLNKGC = 9;
+    // .EIMOBGLLEFO LKANIPLNKGC = 5;
 
     pub fn LKANIPLNKGC(&self) -> &super::EIMOBGLLEFO::EIMOBGLLEFO {
         match self.NGIKDJMNGBG {
@@ -150,7 +150,7 @@ impl HAKNOFDPBOD {
         }
     }
 
-    // .EOPFMPAOOJE BDEMPAKHGMJ = 10;
+    // .EOPFMPAOOJE BDEMPAKHGMJ = 12;
 
     pub fn BDEMPAKHGMJ(&self) -> &super::EOPFMPAOOJE::EOPFMPAOOJE {
         match self.NGIKDJMNGBG {
@@ -203,14 +203,14 @@ impl HAKNOFDPBOD {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ACDOPCBMPNL",
-            |m: &HAKNOFDPBOD| { &m.ACDOPCBMPNL },
-            |m: &mut HAKNOFDPBOD| { &mut m.ACDOPCBMPNL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FPOGIALMCIP",
             |m: &HAKNOFDPBOD| { &m.FPOGIALMCIP },
             |m: &mut HAKNOFDPBOD| { &mut m.FPOGIALMCIP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ACDOPCBMPNL",
+            |m: &HAKNOFDPBOD| { &m.ACDOPCBMPNL },
+            |m: &mut HAKNOFDPBOD| { &mut m.ACDOPCBMPNL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MNCIHJHGNMJ",
@@ -257,22 +257,22 @@ impl ::protobuf::Message for HAKNOFDPBOD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.ACDOPCBMPNL = is.read_uint32()?;
-                },
-                96 => {
+                32 => {
                     self.FPOGIALMCIP = is.read_uint32()?;
                 },
-                8 => {
+                80 => {
+                    self.ACDOPCBMPNL = is.read_uint32()?;
+                },
+                64 => {
                     self.MNCIHJHGNMJ = is.read_uint32()?;
                 },
-                122 => {
+                74 => {
                     self.NGIKDJMNGBG = ::std::option::Option::Some(haknofdpbod::NGIKDJMNGBG::EJCOLGNJGDC(is.read_message()?));
                 },
-                74 => {
+                42 => {
                     self.NGIKDJMNGBG = ::std::option::Option::Some(haknofdpbod::NGIKDJMNGBG::LKANIPLNKGC(is.read_message()?));
                 },
-                82 => {
+                98 => {
                     self.NGIKDJMNGBG = ::std::option::Option::Some(haknofdpbod::NGIKDJMNGBG::BDEMPAKHGMJ(is.read_message()?));
                 },
                 tag => {
@@ -287,14 +287,14 @@ impl ::protobuf::Message for HAKNOFDPBOD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ACDOPCBMPNL != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.ACDOPCBMPNL);
-        }
         if self.FPOGIALMCIP != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.FPOGIALMCIP);
+            my_size += ::protobuf::rt::uint32_size(4, self.FPOGIALMCIP);
+        }
+        if self.ACDOPCBMPNL != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.ACDOPCBMPNL);
         }
         if self.MNCIHJHGNMJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.MNCIHJHGNMJ);
+            my_size += ::protobuf::rt::uint32_size(8, self.MNCIHJHGNMJ);
         }
         if let ::std::option::Option::Some(ref v) = self.NGIKDJMNGBG {
             match v {
@@ -318,25 +318,25 @@ impl ::protobuf::Message for HAKNOFDPBOD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ACDOPCBMPNL != 0 {
-            os.write_uint32(6, self.ACDOPCBMPNL)?;
-        }
         if self.FPOGIALMCIP != 0 {
-            os.write_uint32(12, self.FPOGIALMCIP)?;
+            os.write_uint32(4, self.FPOGIALMCIP)?;
+        }
+        if self.ACDOPCBMPNL != 0 {
+            os.write_uint32(10, self.ACDOPCBMPNL)?;
         }
         if self.MNCIHJHGNMJ != 0 {
-            os.write_uint32(1, self.MNCIHJHGNMJ)?;
+            os.write_uint32(8, self.MNCIHJHGNMJ)?;
         }
         if let ::std::option::Option::Some(ref v) = self.NGIKDJMNGBG {
             match v {
                 &haknofdpbod::NGIKDJMNGBG::EJCOLGNJGDC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-                },
-                &haknofdpbod::NGIKDJMNGBG::LKANIPLNKGC(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
                 },
+                &haknofdpbod::NGIKDJMNGBG::LKANIPLNKGC(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                },
                 &haknofdpbod::NGIKDJMNGBG::BDEMPAKHGMJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
                 },
             };
         }
@@ -357,8 +357,8 @@ impl ::protobuf::Message for HAKNOFDPBOD {
     }
 
     fn clear(&mut self) {
-        self.ACDOPCBMPNL = 0;
         self.FPOGIALMCIP = 0;
+        self.ACDOPCBMPNL = 0;
         self.MNCIHJHGNMJ = 0;
         self.NGIKDJMNGBG = ::std::option::Option::None;
         self.NGIKDJMNGBG = ::std::option::Option::None;
@@ -368,8 +368,8 @@ impl ::protobuf::Message for HAKNOFDPBOD {
 
     fn default_instance() -> &'static HAKNOFDPBOD {
         static instance: HAKNOFDPBOD = HAKNOFDPBOD {
-            ACDOPCBMPNL: 0,
             FPOGIALMCIP: 0,
+            ACDOPCBMPNL: 0,
             MNCIHJHGNMJ: 0,
             NGIKDJMNGBG: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -429,13 +429,13 @@ pub mod haknofdpbod {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HAKNOFDPBOD.proto\x1a\x11EIMOBGLLEFO.proto\x1a\x11EOPFMPAOOJE.prot\
-    o\x1a\x11GJKIAPIPGAN.proto\"\x98\x02\n\x0bHAKNOFDPBOD\x12\x20\n\x0bACDOP\
-    CBMPNL\x18\x06\x20\x01(\rR\x0bACDOPCBMPNL\x12\x20\n\x0bFPOGIALMCIP\x18\
-    \x0c\x20\x01(\rR\x0bFPOGIALMCIP\x12\x20\n\x0bMNCIHJHGNMJ\x18\x01\x20\x01\
-    (\rR\x0bMNCIHJHGNMJ\x120\n\x0bEJCOLGNJGDC\x18\x0f\x20\x01(\x0b2\x0c.GJKI\
-    APIPGANH\0R\x0bEJCOLGNJGDC\x120\n\x0bLKANIPLNKGC\x18\t\x20\x01(\x0b2\x0c\
-    .EIMOBGLLEFOH\0R\x0bLKANIPLNKGC\x120\n\x0bBDEMPAKHGMJ\x18\n\x20\x01(\x0b\
-    2\x0c.EOPFMPAOOJEH\0R\x0bBDEMPAKHGMJB\r\n\x0bNGIKDJMNGBGb\x06proto3\
+    o\x1a\x11GJKIAPIPGAN.proto\"\x98\x02\n\x0bHAKNOFDPBOD\x12\x20\n\x0bFPOGI\
+    ALMCIP\x18\x04\x20\x01(\rR\x0bFPOGIALMCIP\x12\x20\n\x0bACDOPCBMPNL\x18\n\
+    \x20\x01(\rR\x0bACDOPCBMPNL\x12\x20\n\x0bMNCIHJHGNMJ\x18\x08\x20\x01(\rR\
+    \x0bMNCIHJHGNMJ\x120\n\x0bEJCOLGNJGDC\x18\t\x20\x01(\x0b2\x0c.GJKIAPIPGA\
+    NH\0R\x0bEJCOLGNJGDC\x120\n\x0bLKANIPLNKGC\x18\x05\x20\x01(\x0b2\x0c.EIM\
+    OBGLLEFOH\0R\x0bLKANIPLNKGC\x120\n\x0bBDEMPAKHGMJ\x18\x0c\x20\x01(\x0b2\
+    \x0c.EOPFMPAOOJEH\0R\x0bBDEMPAKHGMJB\r\n\x0bNGIKDJMNGBGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

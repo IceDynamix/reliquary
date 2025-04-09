@@ -30,10 +30,10 @@ pub struct EFJDMHOAKOO {
     // message fields
     // @@protoc_insertion_point(field:EFJDMHOAKOO.FPJCKPNLNFM)
     pub FPJCKPNLNFM: ::protobuf::MessageField<super::EJJGLGPEDEE::EJJGLGPEDEE>,
-    // @@protoc_insertion_point(field:EFJDMHOAKOO.MANKKFPBFCB)
-    pub MANKKFPBFCB: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:EFJDMHOAKOO.NBCGLEFOKDM)
     pub NBCGLEFOKDM: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:EFJDMHOAKOO.MANKKFPBFCB)
+    pub MANKKFPBFCB: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:EFJDMHOAKOO.LGHCAHBBCAM)
     pub LGHCAHBBCAM: ::std::vec::Vec<u32>,
     // special fields
@@ -61,14 +61,14 @@ impl EFJDMHOAKOO {
             |m: &mut EFJDMHOAKOO| { &mut m.FPJCKPNLNFM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MANKKFPBFCB",
-            |m: &EFJDMHOAKOO| { &m.MANKKFPBFCB },
-            |m: &mut EFJDMHOAKOO| { &mut m.MANKKFPBFCB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "NBCGLEFOKDM",
             |m: &EFJDMHOAKOO| { &m.NBCGLEFOKDM },
             |m: &mut EFJDMHOAKOO| { &mut m.NBCGLEFOKDM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "MANKKFPBFCB",
+            |m: &EFJDMHOAKOO| { &m.MANKKFPBFCB },
+            |m: &mut EFJDMHOAKOO| { &mut m.MANKKFPBFCB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "LGHCAHBBCAM",
@@ -93,25 +93,25 @@ impl ::protobuf::Message for EFJDMHOAKOO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FPJCKPNLNFM)?;
                 },
-                66 => {
-                    is.read_repeated_packed_uint32_into(&mut self.MANKKFPBFCB)?;
-                },
-                64 => {
-                    self.MANKKFPBFCB.push(is.read_uint32()?);
-                },
-                26 => {
+                114 => {
                     is.read_repeated_packed_uint32_into(&mut self.NBCGLEFOKDM)?;
                 },
-                24 => {
+                112 => {
                     self.NBCGLEFOKDM.push(is.read_uint32()?);
                 },
-                10 => {
+                18 => {
+                    is.read_repeated_packed_uint32_into(&mut self.MANKKFPBFCB)?;
+                },
+                16 => {
+                    self.MANKKFPBFCB.push(is.read_uint32()?);
+                },
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.LGHCAHBBCAM)?;
                 },
-                8 => {
+                104 => {
                     self.LGHCAHBBCAM.push(is.read_uint32()?);
                 },
                 tag => {
@@ -130,9 +130,9 @@ impl ::protobuf::Message for EFJDMHOAKOO {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.MANKKFPBFCB);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.NBCGLEFOKDM);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.LGHCAHBBCAM);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.NBCGLEFOKDM);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.MANKKFPBFCB);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.LGHCAHBBCAM);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -140,11 +140,11 @@ impl ::protobuf::Message for EFJDMHOAKOO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.FPJCKPNLNFM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
-        os.write_repeated_packed_uint32(8, &self.MANKKFPBFCB)?;
-        os.write_repeated_packed_uint32(3, &self.NBCGLEFOKDM)?;
-        os.write_repeated_packed_uint32(1, &self.LGHCAHBBCAM)?;
+        os.write_repeated_packed_uint32(14, &self.NBCGLEFOKDM)?;
+        os.write_repeated_packed_uint32(2, &self.MANKKFPBFCB)?;
+        os.write_repeated_packed_uint32(13, &self.LGHCAHBBCAM)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -163,8 +163,8 @@ impl ::protobuf::Message for EFJDMHOAKOO {
 
     fn clear(&mut self) {
         self.FPJCKPNLNFM.clear();
-        self.MANKKFPBFCB.clear();
         self.NBCGLEFOKDM.clear();
+        self.MANKKFPBFCB.clear();
         self.LGHCAHBBCAM.clear();
         self.special_fields.clear();
     }
@@ -172,8 +172,8 @@ impl ::protobuf::Message for EFJDMHOAKOO {
     fn default_instance() -> &'static EFJDMHOAKOO {
         static instance: EFJDMHOAKOO = EFJDMHOAKOO {
             FPJCKPNLNFM: ::protobuf::MessageField::none(),
-            MANKKFPBFCB: ::std::vec::Vec::new(),
             NBCGLEFOKDM: ::std::vec::Vec::new(),
+            MANKKFPBFCB: ::std::vec::Vec::new(),
             LGHCAHBBCAM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -200,10 +200,10 @@ impl ::protobuf::reflect::ProtobufValue for EFJDMHOAKOO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EFJDMHOAKOO.proto\x1a\x11EJJGLGPEDEE.proto\"\xa3\x01\n\x0bEFJDMHOA\
-    KOO\x12.\n\x0bFPJCKPNLNFM\x18\n\x20\x01(\x0b2\x0c.EJJGLGPEDEER\x0bFPJCKP\
-    NLNFM\x12\x20\n\x0bMANKKFPBFCB\x18\x08\x20\x03(\rR\x0bMANKKFPBFCB\x12\
-    \x20\n\x0bNBCGLEFOKDM\x18\x03\x20\x03(\rR\x0bNBCGLEFOKDM\x12\x20\n\x0bLG\
-    HCAHBBCAM\x18\x01\x20\x03(\rR\x0bLGHCAHBBCAMb\x06proto3\
+    KOO\x12.\n\x0bFPJCKPNLNFM\x18\x06\x20\x01(\x0b2\x0c.EJJGLGPEDEER\x0bFPJC\
+    KPNLNFM\x12\x20\n\x0bNBCGLEFOKDM\x18\x0e\x20\x03(\rR\x0bNBCGLEFOKDM\x12\
+    \x20\n\x0bMANKKFPBFCB\x18\x02\x20\x03(\rR\x0bMANKKFPBFCB\x12\x20\n\x0bLG\
+    HCAHBBCAM\x18\r\x20\x03(\rR\x0bLGHCAHBBCAMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SummonPetScRsp {
     // message fields
+    // @@protoc_insertion_point(field:SummonPetScRsp.NDMGMMFPNOH)
+    pub NDMGMMFPNOH: u32,
     // @@protoc_insertion_point(field:SummonPetScRsp.ANEBGKPKPPL)
     pub ANEBGKPKPPL: u32,
     // @@protoc_insertion_point(field:SummonPetScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:SummonPetScRsp.NDMGMMFPNOH)
-    pub NDMGMMFPNOH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SummonPetScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl SummonPetScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NDMGMMFPNOH",
+            |m: &SummonPetScRsp| { &m.NDMGMMFPNOH },
+            |m: &mut SummonPetScRsp| { &mut m.NDMGMMFPNOH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ANEBGKPKPPL",
             |m: &SummonPetScRsp| { &m.ANEBGKPKPPL },
             |m: &mut SummonPetScRsp| { &mut m.ANEBGKPKPPL },
@@ -62,11 +67,6 @@ impl SummonPetScRsp {
             "retcode",
             |m: &SummonPetScRsp| { &m.retcode },
             |m: &mut SummonPetScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NDMGMMFPNOH",
-            |m: &SummonPetScRsp| { &m.NDMGMMFPNOH },
-            |m: &mut SummonPetScRsp| { &mut m.NDMGMMFPNOH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SummonPetScRsp>(
             "SummonPetScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SummonPetScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                56 => {
+                    self.NDMGMMFPNOH = is.read_uint32()?;
+                },
+                88 => {
                     self.ANEBGKPKPPL = is.read_uint32()?;
                 },
-                104 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
-                },
-                8 => {
-                    self.NDMGMMFPNOH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for SummonPetScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.NDMGMMFPNOH != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.NDMGMMFPNOH);
+        }
         if self.ANEBGKPKPPL != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.ANEBGKPKPPL);
+            my_size += ::protobuf::rt::uint32_size(11, self.ANEBGKPKPPL);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
-        }
-        if self.NDMGMMFPNOH != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.NDMGMMFPNOH);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for SummonPetScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.NDMGMMFPNOH != 0 {
+            os.write_uint32(7, self.NDMGMMFPNOH)?;
+        }
         if self.ANEBGKPKPPL != 0 {
-            os.write_uint32(8, self.ANEBGKPKPPL)?;
+            os.write_uint32(11, self.ANEBGKPKPPL)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
-        }
-        if self.NDMGMMFPNOH != 0 {
-            os.write_uint32(1, self.NDMGMMFPNOH)?;
+            os.write_uint32(3, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for SummonPetScRsp {
     }
 
     fn clear(&mut self) {
+        self.NDMGMMFPNOH = 0;
         self.ANEBGKPKPPL = 0;
         self.retcode = 0;
-        self.NDMGMMFPNOH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SummonPetScRsp {
         static instance: SummonPetScRsp = SummonPetScRsp {
+            NDMGMMFPNOH: 0,
             ANEBGKPKPPL: 0,
             retcode: 0,
-            NDMGMMFPNOH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for SummonPetScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14SummonPetScRsp.proto\"n\n\x0eSummonPetScRsp\x12\x20\n\x0bANEBGKPKP\
-    PL\x18\x08\x20\x01(\rR\x0bANEBGKPKPPL\x12\x18\n\x07retcode\x18\r\x20\x01\
-    (\rR\x07retcode\x12\x20\n\x0bNDMGMMFPNOH\x18\x01\x20\x01(\rR\x0bNDMGMMFP\
-    NOHb\x06proto3\
+    \n\x14SummonPetScRsp.proto\"n\n\x0eSummonPetScRsp\x12\x20\n\x0bNDMGMMFPN\
+    OH\x18\x07\x20\x01(\rR\x0bNDMGMMFPNOH\x12\x20\n\x0bANEBGKPKPPL\x18\x0b\
+    \x20\x01(\rR\x0bANEBGKPKPPL\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07\
+    retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,10 +30,10 @@ pub struct EOPFMPAOOJE {
     // message fields
     // @@protoc_insertion_point(field:EOPFMPAOOJE.PPCLBDBJLMO)
     pub PPCLBDBJLMO: u32,
-    // @@protoc_insertion_point(field:EOPFMPAOOJE.LOPDBAEGFKP)
-    pub LOPDBAEGFKP: bool,
     // @@protoc_insertion_point(field:EOPFMPAOOJE.HMHJDBIFGDI)
     pub HMHJDBIFGDI: u32,
+    // @@protoc_insertion_point(field:EOPFMPAOOJE.LOPDBAEGFKP)
+    pub LOPDBAEGFKP: bool,
     // special fields
     // @@protoc_insertion_point(special_field:EOPFMPAOOJE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl EOPFMPAOOJE {
             |m: &mut EOPFMPAOOJE| { &mut m.PPCLBDBJLMO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LOPDBAEGFKP",
-            |m: &EOPFMPAOOJE| { &m.LOPDBAEGFKP },
-            |m: &mut EOPFMPAOOJE| { &mut m.LOPDBAEGFKP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HMHJDBIFGDI",
             |m: &EOPFMPAOOJE| { &m.HMHJDBIFGDI },
             |m: &mut EOPFMPAOOJE| { &mut m.HMHJDBIFGDI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LOPDBAEGFKP",
+            |m: &EOPFMPAOOJE| { &m.LOPDBAEGFKP },
+            |m: &mut EOPFMPAOOJE| { &mut m.LOPDBAEGFKP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EOPFMPAOOJE>(
             "EOPFMPAOOJE",
@@ -89,11 +89,11 @@ impl ::protobuf::Message for EOPFMPAOOJE {
                 48 => {
                     self.PPCLBDBJLMO = is.read_uint32()?;
                 },
-                64 => {
-                    self.LOPDBAEGFKP = is.read_bool()?;
-                },
-                88 => {
+                40 => {
                     self.HMHJDBIFGDI = is.read_uint32()?;
+                },
+                32 => {
+                    self.LOPDBAEGFKP = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,11 +110,11 @@ impl ::protobuf::Message for EOPFMPAOOJE {
         if self.PPCLBDBJLMO != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.PPCLBDBJLMO);
         }
+        if self.HMHJDBIFGDI != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.HMHJDBIFGDI);
+        }
         if self.LOPDBAEGFKP != false {
             my_size += 1 + 1;
-        }
-        if self.HMHJDBIFGDI != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.HMHJDBIFGDI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,11 +125,11 @@ impl ::protobuf::Message for EOPFMPAOOJE {
         if self.PPCLBDBJLMO != 0 {
             os.write_uint32(6, self.PPCLBDBJLMO)?;
         }
-        if self.LOPDBAEGFKP != false {
-            os.write_bool(8, self.LOPDBAEGFKP)?;
-        }
         if self.HMHJDBIFGDI != 0 {
-            os.write_uint32(11, self.HMHJDBIFGDI)?;
+            os.write_uint32(5, self.HMHJDBIFGDI)?;
+        }
+        if self.LOPDBAEGFKP != false {
+            os.write_bool(4, self.LOPDBAEGFKP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for EOPFMPAOOJE {
 
     fn clear(&mut self) {
         self.PPCLBDBJLMO = 0;
-        self.LOPDBAEGFKP = false;
         self.HMHJDBIFGDI = 0;
+        self.LOPDBAEGFKP = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EOPFMPAOOJE {
         static instance: EOPFMPAOOJE = EOPFMPAOOJE {
             PPCLBDBJLMO: 0,
-            LOPDBAEGFKP: false,
             HMHJDBIFGDI: 0,
+            LOPDBAEGFKP: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for EOPFMPAOOJE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EOPFMPAOOJE.proto\"s\n\x0bEOPFMPAOOJE\x12\x20\n\x0bPPCLBDBJLMO\x18\
-    \x06\x20\x01(\rR\x0bPPCLBDBJLMO\x12\x20\n\x0bLOPDBAEGFKP\x18\x08\x20\x01\
-    (\x08R\x0bLOPDBAEGFKP\x12\x20\n\x0bHMHJDBIFGDI\x18\x0b\x20\x01(\rR\x0bHM\
-    HJDBIFGDIb\x06proto3\
+    \x06\x20\x01(\rR\x0bPPCLBDBJLMO\x12\x20\n\x0bHMHJDBIFGDI\x18\x05\x20\x01\
+    (\rR\x0bHMHJDBIFGDI\x12\x20\n\x0bLOPDBAEGFKP\x18\x04\x20\x01(\x08R\x0bLO\
+    PDBAEGFKPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

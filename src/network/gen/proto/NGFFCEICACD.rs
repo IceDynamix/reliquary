@@ -48,7 +48,7 @@ impl NGFFCEICACD {
         ::std::default::Default::default()
     }
 
-    // .ItemList JDIJKEGCIBP = 5;
+    // .ItemList JDIJKEGCIBP = 13;
 
     pub fn JDIJKEGCIBP(&self) -> &super::ItemList::ItemList {
         match self.MICMCKAHMPL {
@@ -97,7 +97,7 @@ impl NGFFCEICACD {
         }
     }
 
-    // .OOBCEJFEHMK CNDGJJLJDOF = 12;
+    // .OOBCEJFEHMK CNDGJJLJDOF = 11;
 
     pub fn CNDGJJLJDOF(&self) -> &super::OOBCEJFEHMK::OOBCEJFEHMK {
         match self.MICMCKAHMPL {
@@ -190,10 +190,10 @@ impl ::protobuf::Message for NGFFCEICACD {
                 80 => {
                     self.EBNPOCIDPKE = is.read_uint32()?;
                 },
-                42 => {
+                106 => {
                     self.MICMCKAHMPL = ::std::option::Option::Some(ngffceicacd::MICMCKAHMPL::JDIJKEGCIBP(is.read_message()?));
                 },
-                98 => {
+                90 => {
                     self.MICMCKAHMPL = ::std::option::Option::Some(ngffceicacd::MICMCKAHMPL::CNDGJJLJDOF(is.read_message()?));
                 },
                 tag => {
@@ -235,10 +235,10 @@ impl ::protobuf::Message for NGFFCEICACD {
         if let ::std::option::Option::Some(ref v) = self.MICMCKAHMPL {
             match v {
                 &ngffceicacd::MICMCKAHMPL::JDIJKEGCIBP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
                 &ngffceicacd::MICMCKAHMPL::CNDGJJLJDOF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
             };
         }
@@ -325,9 +325,9 @@ pub mod ngffceicacd {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NGFFCEICACD.proto\x1a\x0eItemList.proto\x1a\x11OOBCEJFEHMK.proto\"\
     \x9f\x01\n\x0bNGFFCEICACD\x12\x20\n\x0bEBNPOCIDPKE\x18\n\x20\x01(\rR\x0b\
-    EBNPOCIDPKE\x12-\n\x0bJDIJKEGCIBP\x18\x05\x20\x01(\x0b2\t.ItemListH\0R\
-    \x0bJDIJKEGCIBP\x120\n\x0bCNDGJJLJDOF\x18\x0c\x20\x01(\x0b2\x0c.OOBCEJFE\
-    HMKH\0R\x0bCNDGJJLJDOFB\r\n\x0bMICMCKAHMPLb\x06proto3\
+    EBNPOCIDPKE\x12-\n\x0bJDIJKEGCIBP\x18\r\x20\x01(\x0b2\t.ItemListH\0R\x0b\
+    JDIJKEGCIBP\x120\n\x0bCNDGJJLJDOF\x18\x0b\x20\x01(\x0b2\x0c.OOBCEJFEHMKH\
+    \0R\x0bCNDGJJLJDOFB\r\n\x0bMICMCKAHMPLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

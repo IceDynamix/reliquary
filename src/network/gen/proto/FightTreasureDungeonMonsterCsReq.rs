@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightTreasureDungeonMonsterCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FightTreasureDungeonMonsterCsReq.NLMDEMOHBOO)
-    pub NLMDEMOHBOO: u32,
     // @@protoc_insertion_point(field:FightTreasureDungeonMonsterCsReq.avatar_list)
     pub avatar_list: ::std::vec::Vec<super::JACKEJLKJNA::JACKEJLKJNA>,
+    // @@protoc_insertion_point(field:FightTreasureDungeonMonsterCsReq.NLMDEMOHBOO)
+    pub NLMDEMOHBOO: u32,
     // @@protoc_insertion_point(field:FightTreasureDungeonMonsterCsReq.HFNHLCFNHKD)
     pub HFNHLCFNHKD: u32,
     // special fields
@@ -53,15 +53,15 @@ impl FightTreasureDungeonMonsterCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NLMDEMOHBOO",
-            |m: &FightTreasureDungeonMonsterCsReq| { &m.NLMDEMOHBOO },
-            |m: &mut FightTreasureDungeonMonsterCsReq| { &mut m.NLMDEMOHBOO },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "avatar_list",
             |m: &FightTreasureDungeonMonsterCsReq| { &m.avatar_list },
             |m: &mut FightTreasureDungeonMonsterCsReq| { &mut m.avatar_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NLMDEMOHBOO",
+            |m: &FightTreasureDungeonMonsterCsReq| { &m.NLMDEMOHBOO },
+            |m: &mut FightTreasureDungeonMonsterCsReq| { &mut m.NLMDEMOHBOO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HFNHLCFNHKD",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for FightTreasureDungeonMonsterCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.NLMDEMOHBOO = is.read_uint32()?;
-                },
-                50 => {
+                106 => {
                     self.avatar_list.push(is.read_message()?);
                 },
-                8 => {
+                72 => {
+                    self.NLMDEMOHBOO = is.read_uint32()?;
+                },
+                48 => {
                     self.HFNHLCFNHKD = is.read_uint32()?;
                 },
                 tag => {
@@ -107,15 +107,15 @@ impl ::protobuf::Message for FightTreasureDungeonMonsterCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NLMDEMOHBOO != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.NLMDEMOHBOO);
-        }
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.NLMDEMOHBOO != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.NLMDEMOHBOO);
+        }
         if self.HFNHLCFNHKD != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.HFNHLCFNHKD);
+            my_size += ::protobuf::rt::uint32_size(6, self.HFNHLCFNHKD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for FightTreasureDungeonMonsterCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NLMDEMOHBOO != 0 {
-            os.write_uint32(14, self.NLMDEMOHBOO)?;
-        }
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
+        if self.NLMDEMOHBOO != 0 {
+            os.write_uint32(9, self.NLMDEMOHBOO)?;
+        }
         if self.HFNHLCFNHKD != 0 {
-            os.write_uint32(1, self.HFNHLCFNHKD)?;
+            os.write_uint32(6, self.HFNHLCFNHKD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for FightTreasureDungeonMonsterCsReq {
     }
 
     fn clear(&mut self) {
-        self.NLMDEMOHBOO = 0;
         self.avatar_list.clear();
+        self.NLMDEMOHBOO = 0;
         self.HFNHLCFNHKD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightTreasureDungeonMonsterCsReq {
         static instance: FightTreasureDungeonMonsterCsReq = FightTreasureDungeonMonsterCsReq {
-            NLMDEMOHBOO: 0,
             avatar_list: ::std::vec::Vec::new(),
+            NLMDEMOHBOO: 0,
             HFNHLCFNHKD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for FightTreasureDungeonMonsterCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&FightTreasureDungeonMonsterCsReq.proto\x1a\x11JACKEJLKJNA.proto\"\x95\
-    \x01\n\x20FightTreasureDungeonMonsterCsReq\x12\x20\n\x0bNLMDEMOHBOO\x18\
-    \x0e\x20\x01(\rR\x0bNLMDEMOHBOO\x12-\n\x0bavatar_list\x18\x06\x20\x03(\
-    \x0b2\x0c.JACKEJLKJNAR\navatarList\x12\x20\n\x0bHFNHLCFNHKD\x18\x01\x20\
-    \x01(\rR\x0bHFNHLCFNHKDb\x06proto3\
+    \x01\n\x20FightTreasureDungeonMonsterCsReq\x12-\n\x0bavatar_list\x18\r\
+    \x20\x03(\x0b2\x0c.JACKEJLKJNAR\navatarList\x12\x20\n\x0bNLMDEMOHBOO\x18\
+    \t\x20\x01(\rR\x0bNLMDEMOHBOO\x12\x20\n\x0bHFNHLCFNHKD\x18\x06\x20\x01(\
+    \rR\x0bHFNHLCFNHKDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

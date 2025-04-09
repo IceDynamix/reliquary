@@ -29,18 +29,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdTelevisionActivityType {
     // @@protoc_insertion_point(enum_value:CmdTelevisionActivityType.CmdTelevisionActivityTypeNone)
     CmdTelevisionActivityTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdTelevisionActivityType.CmdEnterTelevisionActivityStageScRsp)
-    CmdEnterTelevisionActivityStageScRsp = 6964,
     // @@protoc_insertion_point(enum_value:CmdTelevisionActivityType.CmdGetTelevisionActivityDataCsReq)
     CmdGetTelevisionActivityDataCsReq = 6977,
-    // @@protoc_insertion_point(enum_value:CmdTelevisionActivityType.CmdEnterTelevisionActivityStageCsReq)
-    CmdEnterTelevisionActivityStageCsReq = 6962,
     // @@protoc_insertion_point(enum_value:CmdTelevisionActivityType.CmdTelevisionActivityBattleEndScNotify)
-    CmdTelevisionActivityBattleEndScNotify = 6961,
-    // @@protoc_insertion_point(enum_value:CmdTelevisionActivityType.CmdGetTelevisionActivityDataScRsp)
-    CmdGetTelevisionActivityDataScRsp = 6968,
+    CmdTelevisionActivityBattleEndScNotify = 6969,
+    // @@protoc_insertion_point(enum_value:CmdTelevisionActivityType.CmdEnterTelevisionActivityStageCsReq)
+    CmdEnterTelevisionActivityStageCsReq = 6964,
+    // @@protoc_insertion_point(enum_value:CmdTelevisionActivityType.CmdEnterTelevisionActivityStageScRsp)
+    CmdEnterTelevisionActivityStageScRsp = 6974,
     // @@protoc_insertion_point(enum_value:CmdTelevisionActivityType.CmdTelevisionActivityDataChangeScNotify)
-    CmdTelevisionActivityDataChangeScNotify = 6972,
+    CmdTelevisionActivityDataChangeScNotify = 6980,
+    // @@protoc_insertion_point(enum_value:CmdTelevisionActivityType.CmdGetTelevisionActivityDataScRsp)
+    CmdGetTelevisionActivityDataScRsp = 6976,
 }
 
 impl ::protobuf::Enum for CmdTelevisionActivityType {
@@ -53,12 +53,12 @@ impl ::protobuf::Enum for CmdTelevisionActivityType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdTelevisionActivityType> {
         match value {
             0 => ::std::option::Option::Some(CmdTelevisionActivityType::CmdTelevisionActivityTypeNone),
-            6964 => ::std::option::Option::Some(CmdTelevisionActivityType::CmdEnterTelevisionActivityStageScRsp),
             6977 => ::std::option::Option::Some(CmdTelevisionActivityType::CmdGetTelevisionActivityDataCsReq),
-            6962 => ::std::option::Option::Some(CmdTelevisionActivityType::CmdEnterTelevisionActivityStageCsReq),
-            6961 => ::std::option::Option::Some(CmdTelevisionActivityType::CmdTelevisionActivityBattleEndScNotify),
-            6968 => ::std::option::Option::Some(CmdTelevisionActivityType::CmdGetTelevisionActivityDataScRsp),
-            6972 => ::std::option::Option::Some(CmdTelevisionActivityType::CmdTelevisionActivityDataChangeScNotify),
+            6969 => ::std::option::Option::Some(CmdTelevisionActivityType::CmdTelevisionActivityBattleEndScNotify),
+            6964 => ::std::option::Option::Some(CmdTelevisionActivityType::CmdEnterTelevisionActivityStageCsReq),
+            6974 => ::std::option::Option::Some(CmdTelevisionActivityType::CmdEnterTelevisionActivityStageScRsp),
+            6980 => ::std::option::Option::Some(CmdTelevisionActivityType::CmdTelevisionActivityDataChangeScNotify),
+            6976 => ::std::option::Option::Some(CmdTelevisionActivityType::CmdGetTelevisionActivityDataScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -66,24 +66,24 @@ impl ::protobuf::Enum for CmdTelevisionActivityType {
     fn from_str(str: &str) -> ::std::option::Option<CmdTelevisionActivityType> {
         match str {
             "CmdTelevisionActivityTypeNone" => ::std::option::Option::Some(CmdTelevisionActivityType::CmdTelevisionActivityTypeNone),
-            "CmdEnterTelevisionActivityStageScRsp" => ::std::option::Option::Some(CmdTelevisionActivityType::CmdEnterTelevisionActivityStageScRsp),
             "CmdGetTelevisionActivityDataCsReq" => ::std::option::Option::Some(CmdTelevisionActivityType::CmdGetTelevisionActivityDataCsReq),
-            "CmdEnterTelevisionActivityStageCsReq" => ::std::option::Option::Some(CmdTelevisionActivityType::CmdEnterTelevisionActivityStageCsReq),
             "CmdTelevisionActivityBattleEndScNotify" => ::std::option::Option::Some(CmdTelevisionActivityType::CmdTelevisionActivityBattleEndScNotify),
-            "CmdGetTelevisionActivityDataScRsp" => ::std::option::Option::Some(CmdTelevisionActivityType::CmdGetTelevisionActivityDataScRsp),
+            "CmdEnterTelevisionActivityStageCsReq" => ::std::option::Option::Some(CmdTelevisionActivityType::CmdEnterTelevisionActivityStageCsReq),
+            "CmdEnterTelevisionActivityStageScRsp" => ::std::option::Option::Some(CmdTelevisionActivityType::CmdEnterTelevisionActivityStageScRsp),
             "CmdTelevisionActivityDataChangeScNotify" => ::std::option::Option::Some(CmdTelevisionActivityType::CmdTelevisionActivityDataChangeScNotify),
+            "CmdGetTelevisionActivityDataScRsp" => ::std::option::Option::Some(CmdTelevisionActivityType::CmdGetTelevisionActivityDataScRsp),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdTelevisionActivityType] = &[
         CmdTelevisionActivityType::CmdTelevisionActivityTypeNone,
-        CmdTelevisionActivityType::CmdEnterTelevisionActivityStageScRsp,
         CmdTelevisionActivityType::CmdGetTelevisionActivityDataCsReq,
-        CmdTelevisionActivityType::CmdEnterTelevisionActivityStageCsReq,
         CmdTelevisionActivityType::CmdTelevisionActivityBattleEndScNotify,
-        CmdTelevisionActivityType::CmdGetTelevisionActivityDataScRsp,
+        CmdTelevisionActivityType::CmdEnterTelevisionActivityStageCsReq,
+        CmdTelevisionActivityType::CmdEnterTelevisionActivityStageScRsp,
         CmdTelevisionActivityType::CmdTelevisionActivityDataChangeScNotify,
+        CmdTelevisionActivityType::CmdGetTelevisionActivityDataScRsp,
     ];
 }
 
@@ -96,12 +96,12 @@ impl ::protobuf::EnumFull for CmdTelevisionActivityType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdTelevisionActivityType::CmdTelevisionActivityTypeNone => 0,
-            CmdTelevisionActivityType::CmdEnterTelevisionActivityStageScRsp => 1,
-            CmdTelevisionActivityType::CmdGetTelevisionActivityDataCsReq => 2,
+            CmdTelevisionActivityType::CmdGetTelevisionActivityDataCsReq => 1,
+            CmdTelevisionActivityType::CmdTelevisionActivityBattleEndScNotify => 2,
             CmdTelevisionActivityType::CmdEnterTelevisionActivityStageCsReq => 3,
-            CmdTelevisionActivityType::CmdTelevisionActivityBattleEndScNotify => 4,
-            CmdTelevisionActivityType::CmdGetTelevisionActivityDataScRsp => 5,
-            CmdTelevisionActivityType::CmdTelevisionActivityDataChangeScNotify => 6,
+            CmdTelevisionActivityType::CmdEnterTelevisionActivityStageScRsp => 4,
+            CmdTelevisionActivityType::CmdTelevisionActivityDataChangeScNotify => 5,
+            CmdTelevisionActivityType::CmdGetTelevisionActivityDataScRsp => 6,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -121,12 +121,12 @@ impl CmdTelevisionActivityType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fCmdTelevisionActivityType.proto*\xbf\x02\n\x19CmdTelevisionActivit\
-    yType\x12!\n\x1dCmdTelevisionActivityTypeNone\x10\0\x12)\n$CmdEnterTelev\
-    isionActivityStageScRsp\x10\xb46\x12&\n!CmdGetTelevisionActivityDataCsRe\
-    q\x10\xc16\x12)\n$CmdEnterTelevisionActivityStageCsReq\x10\xb26\x12+\n&C\
-    mdTelevisionActivityBattleEndScNotify\x10\xb16\x12&\n!CmdGetTelevisionAc\
-    tivityDataScRsp\x10\xb86\x12,\n'CmdTelevisionActivityDataChangeScNotify\
-    \x10\xbc6b\x06proto3\
+    yType\x12!\n\x1dCmdTelevisionActivityTypeNone\x10\0\x12&\n!CmdGetTelevis\
+    ionActivityDataCsReq\x10\xc16\x12+\n&CmdTelevisionActivityBattleEndScNot\
+    ify\x10\xb96\x12)\n$CmdEnterTelevisionActivityStageCsReq\x10\xb46\x12)\n\
+    $CmdEnterTelevisionActivityStageScRsp\x10\xbe6\x12,\n'CmdTelevisionActiv\
+    ityDataChangeScNotify\x10\xc46\x12&\n!CmdGetTelevisionActivityDataScRsp\
+    \x10\xc06b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

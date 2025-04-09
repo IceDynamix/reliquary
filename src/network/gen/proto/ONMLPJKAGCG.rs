@@ -45,7 +45,7 @@ impl ONMLPJKAGCG {
         ::std::default::Default::default()
     }
 
-    // bool KAPDIMGJLNF = 15;
+    // bool KAPDIMGJLNF = 2;
 
     pub fn KAPDIMGJLNF(&self) -> bool {
         match self.GCMPPOICPOD {
@@ -70,7 +70,7 @@ impl ONMLPJKAGCG {
         self.GCMPPOICPOD = ::std::option::Option::Some(onmlpjkagcg::GCMPPOICPOD::KAPDIMGJLNF(v))
     }
 
-    // bool MMMNJCHEMFN = 9;
+    // bool MMMNJCHEMFN = 5;
 
     pub fn MMMNJCHEMFN(&self) -> bool {
         match self.GCMPPOICPOD {
@@ -95,7 +95,7 @@ impl ONMLPJKAGCG {
         self.GCMPPOICPOD = ::std::option::Option::Some(onmlpjkagcg::GCMPPOICPOD::MMMNJCHEMFN(v))
     }
 
-    // bool NKEKIBNJMPA = 10;
+    // bool NKEKIBNJMPA = 7;
 
     pub fn NKEKIBNJMPA(&self) -> bool {
         match self.GCMPPOICPOD {
@@ -120,7 +120,7 @@ impl ONMLPJKAGCG {
         self.GCMPPOICPOD = ::std::option::Option::Some(onmlpjkagcg::GCMPPOICPOD::NKEKIBNJMPA(v))
     }
 
-    // bool PBKBGLHHKPE = 4;
+    // bool PBKBGLHHKPE = 9;
 
     pub fn PBKBGLHHKPE(&self) -> bool {
         match self.GCMPPOICPOD {
@@ -145,7 +145,7 @@ impl ONMLPJKAGCG {
         self.GCMPPOICPOD = ::std::option::Option::Some(onmlpjkagcg::GCMPPOICPOD::PBKBGLHHKPE(v))
     }
 
-    // bool NJFMILJOFOK = 13;
+    // bool NJFMILJOFOK = 1;
 
     pub fn NJFMILJOFOK(&self) -> bool {
         match self.GCMPPOICPOD {
@@ -170,7 +170,7 @@ impl ONMLPJKAGCG {
         self.GCMPPOICPOD = ::std::option::Option::Some(onmlpjkagcg::GCMPPOICPOD::NJFMILJOFOK(v))
     }
 
-    // bool AICNFAOBCPI = 7;
+    // bool AICNFAOBCPI = 4;
 
     pub fn AICNFAOBCPI(&self) -> bool {
         match self.GCMPPOICPOD {
@@ -195,7 +195,7 @@ impl ONMLPJKAGCG {
         self.GCMPPOICPOD = ::std::option::Option::Some(onmlpjkagcg::GCMPPOICPOD::AICNFAOBCPI(v))
     }
 
-    // bool KJNCCKHJFHE = 6;
+    // bool KJNCCKHJFHE = 13;
 
     pub fn KJNCCKHJFHE(&self) -> bool {
         match self.GCMPPOICPOD {
@@ -220,7 +220,7 @@ impl ONMLPJKAGCG {
         self.GCMPPOICPOD = ::std::option::Option::Some(onmlpjkagcg::GCMPPOICPOD::KJNCCKHJFHE(v))
     }
 
-    // bool APONEIDMPHL = 1;
+    // bool APONEIDMPHL = 11;
 
     pub fn APONEIDMPHL(&self) -> bool {
         match self.GCMPPOICPOD {
@@ -245,7 +245,7 @@ impl ONMLPJKAGCG {
         self.GCMPPOICPOD = ::std::option::Option::Some(onmlpjkagcg::GCMPPOICPOD::APONEIDMPHL(v))
     }
 
-    // bool GMJANOJMKCE = 11;
+    // bool GMJANOJMKCE = 8;
 
     pub fn GMJANOJMKCE(&self) -> bool {
         match self.GCMPPOICPOD {
@@ -270,29 +270,53 @@ impl ONMLPJKAGCG {
         self.GCMPPOICPOD = ::std::option::Option::Some(onmlpjkagcg::GCMPPOICPOD::GMJANOJMKCE(v))
     }
 
-    // bool NDJIFCKKJKO = 2;
+    // .OGFIODPILEL GHKCMDNKOPN = 14;
 
-    pub fn NDJIFCKKJKO(&self) -> bool {
+    pub fn GHKCMDNKOPN(&self) -> &super::OGFIODPILEL::OGFIODPILEL {
         match self.GCMPPOICPOD {
-            ::std::option::Option::Some(onmlpjkagcg::GCMPPOICPOD::NDJIFCKKJKO(v)) => v,
-            _ => false,
+            ::std::option::Option::Some(onmlpjkagcg::GCMPPOICPOD::GHKCMDNKOPN(ref v)) => v,
+            _ => <super::OGFIODPILEL::OGFIODPILEL as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_NDJIFCKKJKO(&mut self) {
+    pub fn clear_GHKCMDNKOPN(&mut self) {
         self.GCMPPOICPOD = ::std::option::Option::None;
     }
 
-    pub fn has_NDJIFCKKJKO(&self) -> bool {
+    pub fn has_GHKCMDNKOPN(&self) -> bool {
         match self.GCMPPOICPOD {
-            ::std::option::Option::Some(onmlpjkagcg::GCMPPOICPOD::NDJIFCKKJKO(..)) => true,
+            ::std::option::Option::Some(onmlpjkagcg::GCMPPOICPOD::GHKCMDNKOPN(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_NDJIFCKKJKO(&mut self, v: bool) {
-        self.GCMPPOICPOD = ::std::option::Option::Some(onmlpjkagcg::GCMPPOICPOD::NDJIFCKKJKO(v))
+    pub fn set_GHKCMDNKOPN(&mut self, v: super::OGFIODPILEL::OGFIODPILEL) {
+        self.GCMPPOICPOD = ::std::option::Option::Some(onmlpjkagcg::GCMPPOICPOD::GHKCMDNKOPN(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_GHKCMDNKOPN(&mut self) -> &mut super::OGFIODPILEL::OGFIODPILEL {
+        if let ::std::option::Option::Some(onmlpjkagcg::GCMPPOICPOD::GHKCMDNKOPN(_)) = self.GCMPPOICPOD {
+        } else {
+            self.GCMPPOICPOD = ::std::option::Option::Some(onmlpjkagcg::GCMPPOICPOD::GHKCMDNKOPN(super::OGFIODPILEL::OGFIODPILEL::new()));
+        }
+        match self.GCMPPOICPOD {
+            ::std::option::Option::Some(onmlpjkagcg::GCMPPOICPOD::GHKCMDNKOPN(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_GHKCMDNKOPN(&mut self) -> super::OGFIODPILEL::OGFIODPILEL {
+        if self.has_GHKCMDNKOPN() {
+            match self.GCMPPOICPOD.take() {
+                ::std::option::Option::Some(onmlpjkagcg::GCMPPOICPOD::GHKCMDNKOPN(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::OGFIODPILEL::OGFIODPILEL::new()
+        }
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
@@ -352,11 +376,12 @@ impl ONMLPJKAGCG {
             ONMLPJKAGCG::GMJANOJMKCE,
             ONMLPJKAGCG::set_GMJANOJMKCE,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "NDJIFCKKJKO",
-            ONMLPJKAGCG::has_NDJIFCKKJKO,
-            ONMLPJKAGCG::NDJIFCKKJKO,
-            ONMLPJKAGCG::set_NDJIFCKKJKO,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OGFIODPILEL::OGFIODPILEL>(
+            "GHKCMDNKOPN",
+            ONMLPJKAGCG::has_GHKCMDNKOPN,
+            ONMLPJKAGCG::GHKCMDNKOPN,
+            ONMLPJKAGCG::mut_GHKCMDNKOPN,
+            ONMLPJKAGCG::set_GHKCMDNKOPN,
         ));
         oneofs.push(onmlpjkagcg::GCMPPOICPOD::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ONMLPJKAGCG>(
@@ -377,35 +402,35 @@ impl ::protobuf::Message for ONMLPJKAGCG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                16 => {
                     self.GCMPPOICPOD = ::std::option::Option::Some(onmlpjkagcg::GCMPPOICPOD::KAPDIMGJLNF(is.read_bool()?));
                 },
-                72 => {
+                40 => {
                     self.GCMPPOICPOD = ::std::option::Option::Some(onmlpjkagcg::GCMPPOICPOD::MMMNJCHEMFN(is.read_bool()?));
                 },
-                80 => {
+                56 => {
                     self.GCMPPOICPOD = ::std::option::Option::Some(onmlpjkagcg::GCMPPOICPOD::NKEKIBNJMPA(is.read_bool()?));
                 },
-                32 => {
+                72 => {
                     self.GCMPPOICPOD = ::std::option::Option::Some(onmlpjkagcg::GCMPPOICPOD::PBKBGLHHKPE(is.read_bool()?));
                 },
-                104 => {
+                8 => {
                     self.GCMPPOICPOD = ::std::option::Option::Some(onmlpjkagcg::GCMPPOICPOD::NJFMILJOFOK(is.read_bool()?));
                 },
-                56 => {
+                32 => {
                     self.GCMPPOICPOD = ::std::option::Option::Some(onmlpjkagcg::GCMPPOICPOD::AICNFAOBCPI(is.read_bool()?));
                 },
-                48 => {
+                104 => {
                     self.GCMPPOICPOD = ::std::option::Option::Some(onmlpjkagcg::GCMPPOICPOD::KJNCCKHJFHE(is.read_bool()?));
                 },
-                8 => {
+                88 => {
                     self.GCMPPOICPOD = ::std::option::Option::Some(onmlpjkagcg::GCMPPOICPOD::APONEIDMPHL(is.read_bool()?));
                 },
-                88 => {
+                64 => {
                     self.GCMPPOICPOD = ::std::option::Option::Some(onmlpjkagcg::GCMPPOICPOD::GMJANOJMKCE(is.read_bool()?));
                 },
-                16 => {
-                    self.GCMPPOICPOD = ::std::option::Option::Some(onmlpjkagcg::GCMPPOICPOD::NDJIFCKKJKO(is.read_bool()?));
+                114 => {
+                    self.GCMPPOICPOD = ::std::option::Option::Some(onmlpjkagcg::GCMPPOICPOD::GHKCMDNKOPN(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -448,8 +473,9 @@ impl ::protobuf::Message for ONMLPJKAGCG {
                 &onmlpjkagcg::GCMPPOICPOD::GMJANOJMKCE(v) => {
                     my_size += 1 + 1;
                 },
-                &onmlpjkagcg::GCMPPOICPOD::NDJIFCKKJKO(v) => {
-                    my_size += 1 + 1;
+                &onmlpjkagcg::GCMPPOICPOD::GHKCMDNKOPN(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
             };
         }
@@ -462,34 +488,34 @@ impl ::protobuf::Message for ONMLPJKAGCG {
         if let ::std::option::Option::Some(ref v) = self.GCMPPOICPOD {
             match v {
                 &onmlpjkagcg::GCMPPOICPOD::KAPDIMGJLNF(v) => {
-                    os.write_bool(15, v)?;
+                    os.write_bool(2, v)?;
                 },
                 &onmlpjkagcg::GCMPPOICPOD::MMMNJCHEMFN(v) => {
-                    os.write_bool(9, v)?;
+                    os.write_bool(5, v)?;
                 },
                 &onmlpjkagcg::GCMPPOICPOD::NKEKIBNJMPA(v) => {
-                    os.write_bool(10, v)?;
-                },
-                &onmlpjkagcg::GCMPPOICPOD::PBKBGLHHKPE(v) => {
-                    os.write_bool(4, v)?;
-                },
-                &onmlpjkagcg::GCMPPOICPOD::NJFMILJOFOK(v) => {
-                    os.write_bool(13, v)?;
-                },
-                &onmlpjkagcg::GCMPPOICPOD::AICNFAOBCPI(v) => {
                     os.write_bool(7, v)?;
                 },
-                &onmlpjkagcg::GCMPPOICPOD::KJNCCKHJFHE(v) => {
-                    os.write_bool(6, v)?;
+                &onmlpjkagcg::GCMPPOICPOD::PBKBGLHHKPE(v) => {
+                    os.write_bool(9, v)?;
                 },
-                &onmlpjkagcg::GCMPPOICPOD::APONEIDMPHL(v) => {
+                &onmlpjkagcg::GCMPPOICPOD::NJFMILJOFOK(v) => {
                     os.write_bool(1, v)?;
                 },
-                &onmlpjkagcg::GCMPPOICPOD::GMJANOJMKCE(v) => {
+                &onmlpjkagcg::GCMPPOICPOD::AICNFAOBCPI(v) => {
+                    os.write_bool(4, v)?;
+                },
+                &onmlpjkagcg::GCMPPOICPOD::KJNCCKHJFHE(v) => {
+                    os.write_bool(13, v)?;
+                },
+                &onmlpjkagcg::GCMPPOICPOD::APONEIDMPHL(v) => {
                     os.write_bool(11, v)?;
                 },
-                &onmlpjkagcg::GCMPPOICPOD::NDJIFCKKJKO(v) => {
-                    os.write_bool(2, v)?;
+                &onmlpjkagcg::GCMPPOICPOD::GMJANOJMKCE(v) => {
+                    os.write_bool(8, v)?;
+                },
+                &onmlpjkagcg::GCMPPOICPOD::GHKCMDNKOPN(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
             };
         }
@@ -574,8 +600,8 @@ pub mod onmlpjkagcg {
         APONEIDMPHL(bool),
         // @@protoc_insertion_point(oneof_field:ONMLPJKAGCG.GMJANOJMKCE)
         GMJANOJMKCE(bool),
-        // @@protoc_insertion_point(oneof_field:ONMLPJKAGCG.NDJIFCKKJKO)
-        NDJIFCKKJKO(bool),
+        // @@protoc_insertion_point(oneof_field:ONMLPJKAGCG.GHKCMDNKOPN)
+        GHKCMDNKOPN(super::super::OGFIODPILEL::OGFIODPILEL),
     }
 
     impl ::protobuf::Oneof for GCMPPOICPOD {
@@ -596,16 +622,17 @@ pub mod onmlpjkagcg {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ONMLPJKAGCG.proto\"\x84\x03\n\x0bONMLPJKAGCG\x12\"\n\x0bKAPDIMGJLN\
-    F\x18\x0f\x20\x01(\x08H\0R\x0bKAPDIMGJLNF\x12\"\n\x0bMMMNJCHEMFN\x18\t\
-    \x20\x01(\x08H\0R\x0bMMMNJCHEMFN\x12\"\n\x0bNKEKIBNJMPA\x18\n\x20\x01(\
-    \x08H\0R\x0bNKEKIBNJMPA\x12\"\n\x0bPBKBGLHHKPE\x18\x04\x20\x01(\x08H\0R\
-    \x0bPBKBGLHHKPE\x12\"\n\x0bNJFMILJOFOK\x18\r\x20\x01(\x08H\0R\x0bNJFMILJ\
-    OFOK\x12\"\n\x0bAICNFAOBCPI\x18\x07\x20\x01(\x08H\0R\x0bAICNFAOBCPI\x12\
-    \"\n\x0bKJNCCKHJFHE\x18\x06\x20\x01(\x08H\0R\x0bKJNCCKHJFHE\x12\"\n\x0bA\
-    PONEIDMPHL\x18\x01\x20\x01(\x08H\0R\x0bAPONEIDMPHL\x12\"\n\x0bGMJANOJMKC\
-    E\x18\x0b\x20\x01(\x08H\0R\x0bGMJANOJMKCE\x12\"\n\x0bNDJIFCKKJKO\x18\x02\
-    \x20\x01(\x08H\0R\x0bNDJIFCKKJKOB\r\n\x0bGCMPPOICPODb\x06proto3\
+    \n\x11ONMLPJKAGCG.proto\x1a\x11OGFIODPILEL.proto\"\x92\x03\n\x0bONMLPJKA\
+    GCG\x12\"\n\x0bKAPDIMGJLNF\x18\x02\x20\x01(\x08H\0R\x0bKAPDIMGJLNF\x12\"\
+    \n\x0bMMMNJCHEMFN\x18\x05\x20\x01(\x08H\0R\x0bMMMNJCHEMFN\x12\"\n\x0bNKE\
+    KIBNJMPA\x18\x07\x20\x01(\x08H\0R\x0bNKEKIBNJMPA\x12\"\n\x0bPBKBGLHHKPE\
+    \x18\t\x20\x01(\x08H\0R\x0bPBKBGLHHKPE\x12\"\n\x0bNJFMILJOFOK\x18\x01\
+    \x20\x01(\x08H\0R\x0bNJFMILJOFOK\x12\"\n\x0bAICNFAOBCPI\x18\x04\x20\x01(\
+    \x08H\0R\x0bAICNFAOBCPI\x12\"\n\x0bKJNCCKHJFHE\x18\r\x20\x01(\x08H\0R\
+    \x0bKJNCCKHJFHE\x12\"\n\x0bAPONEIDMPHL\x18\x0b\x20\x01(\x08H\0R\x0bAPONE\
+    IDMPHL\x12\"\n\x0bGMJANOJMKCE\x18\x08\x20\x01(\x08H\0R\x0bGMJANOJMKCE\
+    \x120\n\x0bGHKCMDNKOPN\x18\x0e\x20\x01(\x0b2\x0c.OGFIODPILELH\0R\x0bGHKC\
+    MDNKOPNB\r\n\x0bGCMPPOICPODb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -622,7 +649,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(0);
+            let mut deps = ::std::vec::Vec::with_capacity(1);
+            deps.push(super::OGFIODPILEL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ONMLPJKAGCG::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

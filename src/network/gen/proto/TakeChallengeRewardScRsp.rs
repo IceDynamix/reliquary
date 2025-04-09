@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeChallengeRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeChallengeRewardScRsp.FJNHDHOHBCL)
-    pub FJNHDHOHBCL: u32,
     // @@protoc_insertion_point(field:TakeChallengeRewardScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:TakeChallengeRewardScRsp.FJNHDHOHBCL)
+    pub FJNHDHOHBCL: u32,
     // @@protoc_insertion_point(field:TakeChallengeRewardScRsp.AOONFFKKAOH)
     pub AOONFFKKAOH: ::std::vec::Vec<super::HKMFDALMILP::HKMFDALMILP>,
     // special fields
@@ -54,14 +54,14 @@ impl TakeChallengeRewardScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FJNHDHOHBCL",
-            |m: &TakeChallengeRewardScRsp| { &m.FJNHDHOHBCL },
-            |m: &mut TakeChallengeRewardScRsp| { &mut m.FJNHDHOHBCL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &TakeChallengeRewardScRsp| { &m.retcode },
             |m: &mut TakeChallengeRewardScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FJNHDHOHBCL",
+            |m: &TakeChallengeRewardScRsp| { &m.FJNHDHOHBCL },
+            |m: &mut TakeChallengeRewardScRsp| { &mut m.FJNHDHOHBCL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "AOONFFKKAOH",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for TakeChallengeRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.FJNHDHOHBCL = is.read_uint32()?;
-                },
-                48 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                10 => {
+                72 => {
+                    self.FJNHDHOHBCL = is.read_uint32()?;
+                },
+                50 => {
                     self.AOONFFKKAOH.push(is.read_message()?);
                 },
                 tag => {
@@ -107,11 +107,11 @@ impl ::protobuf::Message for TakeChallengeRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FJNHDHOHBCL != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.FJNHDHOHBCL);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        }
+        if self.FJNHDHOHBCL != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.FJNHDHOHBCL);
         }
         for value in &self.AOONFFKKAOH {
             let len = value.compute_size();
@@ -123,14 +123,14 @@ impl ::protobuf::Message for TakeChallengeRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FJNHDHOHBCL != 0 {
-            os.write_uint32(13, self.FJNHDHOHBCL)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
+        }
+        if self.FJNHDHOHBCL != 0 {
+            os.write_uint32(9, self.FJNHDHOHBCL)?;
         }
         for v in &self.AOONFFKKAOH {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for TakeChallengeRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.FJNHDHOHBCL = 0;
         self.retcode = 0;
+        self.FJNHDHOHBCL = 0;
         self.AOONFFKKAOH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeChallengeRewardScRsp {
         static instance: TakeChallengeRewardScRsp = TakeChallengeRewardScRsp {
-            FJNHDHOHBCL: 0,
             retcode: 0,
+            FJNHDHOHBCL: 0,
             AOONFFKKAOH: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for TakeChallengeRewardScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eTakeChallengeRewardScRsp.proto\x1a\x11HKMFDALMILP.proto\"\x86\x01\
-    \n\x18TakeChallengeRewardScRsp\x12\x20\n\x0bFJNHDHOHBCL\x18\r\x20\x01(\r\
-    R\x0bFJNHDHOHBCL\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\x12\
-    .\n\x0bAOONFFKKAOH\x18\x01\x20\x03(\x0b2\x0c.HKMFDALMILPR\x0bAOONFFKKAOH\
-    b\x06proto3\
+    \n\x18TakeChallengeRewardScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\
+    \x07retcode\x12\x20\n\x0bFJNHDHOHBCL\x18\t\x20\x01(\rR\x0bFJNHDHOHBCL\
+    \x12.\n\x0bAOONFFKKAOH\x18\x06\x20\x03(\x0b2\x0c.HKMFDALMILPR\x0bAOONFFK\
+    KAOHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

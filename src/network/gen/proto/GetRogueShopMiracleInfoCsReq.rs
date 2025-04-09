@@ -82,7 +82,7 @@ impl ::protobuf::Message for GetRogueShopMiracleInfoCsReq {
                 112 => {
                     self.PDJGMANJMAK = is.read_uint32()?;
                 },
-                24 => {
+                56 => {
                     self.PUNK_LORD_OPERATION_REFRESH = is.read_bool()?;
                 },
                 tag => {
@@ -113,7 +113,7 @@ impl ::protobuf::Message for GetRogueShopMiracleInfoCsReq {
             os.write_uint32(14, self.PDJGMANJMAK)?;
         }
         if self.PUNK_LORD_OPERATION_REFRESH != false {
-            os.write_bool(3, self.PUNK_LORD_OPERATION_REFRESH)?;
+            os.write_bool(7, self.PUNK_LORD_OPERATION_REFRESH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for GetRogueShopMiracleInfoCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"GetRogueShopMiracleInfoCsReq.proto\"\x7f\n\x1cGetRogueShopMiracleInf\
     oCsReq\x12\x20\n\x0bPDJGMANJMAK\x18\x0e\x20\x01(\rR\x0bPDJGMANJMAK\x12=\
-    \n\x1bPUNK_LORD_OPERATION_REFRESH\x18\x03\x20\x01(\x08R\x18PUNKLORDOPERA\
+    \n\x1bPUNK_LORD_OPERATION_REFRESH\x18\x07\x20\x01(\x08R\x18PUNKLORDOPERA\
     TIONREFRESHb\x06proto3\
 ";
 

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AetherDivideSpiritExpUpScRsp {
     // message fields
-    // @@protoc_insertion_point(field:AetherDivideSpiritExpUpScRsp.JDHLMHJBOJM)
-    pub JDHLMHJBOJM: u32,
     // @@protoc_insertion_point(field:AetherDivideSpiritExpUpScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:AetherDivideSpiritExpUpScRsp.JDHLMHJBOJM)
+    pub JDHLMHJBOJM: u32,
     // @@protoc_insertion_point(field:AetherDivideSpiritExpUpScRsp.BJMEBEPPLEI)
     pub BJMEBEPPLEI: ::protobuf::MessageField<super::GJILPEBEOOL::GJILPEBEOOL>,
     // special fields
@@ -54,14 +54,14 @@ impl AetherDivideSpiritExpUpScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JDHLMHJBOJM",
-            |m: &AetherDivideSpiritExpUpScRsp| { &m.JDHLMHJBOJM },
-            |m: &mut AetherDivideSpiritExpUpScRsp| { &mut m.JDHLMHJBOJM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &AetherDivideSpiritExpUpScRsp| { &m.retcode },
             |m: &mut AetherDivideSpiritExpUpScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JDHLMHJBOJM",
+            |m: &AetherDivideSpiritExpUpScRsp| { &m.JDHLMHJBOJM },
+            |m: &mut AetherDivideSpiritExpUpScRsp| { &mut m.JDHLMHJBOJM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GJILPEBEOOL::GJILPEBEOOL>(
             "BJMEBEPPLEI",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for AetherDivideSpiritExpUpScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.JDHLMHJBOJM = is.read_uint32()?;
-                },
-                96 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                58 => {
+                64 => {
+                    self.JDHLMHJBOJM = is.read_uint32()?;
+                },
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BJMEBEPPLEI)?;
                 },
                 tag => {
@@ -107,11 +107,11 @@ impl ::protobuf::Message for AetherDivideSpiritExpUpScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JDHLMHJBOJM != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.JDHLMHJBOJM);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        }
+        if self.JDHLMHJBOJM != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.JDHLMHJBOJM);
         }
         if let Some(v) = self.BJMEBEPPLEI.as_ref() {
             let len = v.compute_size();
@@ -123,14 +123,14 @@ impl ::protobuf::Message for AetherDivideSpiritExpUpScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JDHLMHJBOJM != 0 {
-            os.write_uint32(3, self.JDHLMHJBOJM)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
+        }
+        if self.JDHLMHJBOJM != 0 {
+            os.write_uint32(8, self.JDHLMHJBOJM)?;
         }
         if let Some(v) = self.BJMEBEPPLEI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for AetherDivideSpiritExpUpScRsp {
     }
 
     fn clear(&mut self) {
-        self.JDHLMHJBOJM = 0;
         self.retcode = 0;
+        self.JDHLMHJBOJM = 0;
         self.BJMEBEPPLEI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AetherDivideSpiritExpUpScRsp {
         static instance: AetherDivideSpiritExpUpScRsp = AetherDivideSpiritExpUpScRsp {
-            JDHLMHJBOJM: 0,
             retcode: 0,
+            JDHLMHJBOJM: 0,
             BJMEBEPPLEI: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for AetherDivideSpiritExpUpScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"AetherDivideSpiritExpUpScRsp.proto\x1a\x11GJILPEBEOOL.proto\"\x8a\
-    \x01\n\x1cAetherDivideSpiritExpUpScRsp\x12\x20\n\x0bJDHLMHJBOJM\x18\x03\
-    \x20\x01(\rR\x0bJDHLMHJBOJM\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07\
-    retcode\x12.\n\x0bBJMEBEPPLEI\x18\x07\x20\x01(\x0b2\x0c.GJILPEBEOOLR\x0b\
-    BJMEBEPPLEIb\x06proto3\
+    \x01\n\x1cAetherDivideSpiritExpUpScRsp\x12\x18\n\x07retcode\x18\x07\x20\
+    \x01(\rR\x07retcode\x12\x20\n\x0bJDHLMHJBOJM\x18\x08\x20\x01(\rR\x0bJDHL\
+    MHJBOJM\x12.\n\x0bBJMEBEPPLEI\x18\t\x20\x01(\x0b2\x0c.GJILPEBEOOLR\x0bBJ\
+    MEBEPPLEIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

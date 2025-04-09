@@ -30,12 +30,12 @@ pub struct DFFJCMLAICL {
     // message fields
     // @@protoc_insertion_point(field:DFFJCMLAICL.HDMPBPOFFDK)
     pub HDMPBPOFFDK: ::protobuf::EnumOrUnknown<super::ChessRogueNousDicePhase::ChessRogueNousDicePhase>,
-    // @@protoc_insertion_point(field:DFFJCMLAICL.NBCMAKNLPHG)
-    pub NBCMAKNLPHG: ::std::collections::HashMap<u32, bool>,
-    // @@protoc_insertion_point(field:DFFJCMLAICL.ALEHDAAOHOE)
-    pub ALEHDAAOHOE: ::std::vec::Vec<super::KJEHFKBJPHD::KJEHFKBJPHD>,
     // @@protoc_insertion_point(field:DFFJCMLAICL.JKMIMLBAJBL)
     pub JKMIMLBAJBL: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:DFFJCMLAICL.ALEHDAAOHOE)
+    pub ALEHDAAOHOE: ::std::vec::Vec<super::KJEHFKBJPHD::KJEHFKBJPHD>,
+    // @@protoc_insertion_point(field:DFFJCMLAICL.NBCMAKNLPHG)
+    pub NBCMAKNLPHG: ::std::collections::HashMap<u32, bool>,
     // special fields
     // @@protoc_insertion_point(special_field:DFFJCMLAICL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,20 +60,20 @@ impl DFFJCMLAICL {
             |m: &DFFJCMLAICL| { &m.HDMPBPOFFDK },
             |m: &mut DFFJCMLAICL| { &mut m.HDMPBPOFFDK },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "NBCMAKNLPHG",
-            |m: &DFFJCMLAICL| { &m.NBCMAKNLPHG },
-            |m: &mut DFFJCMLAICL| { &mut m.NBCMAKNLPHG },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "JKMIMLBAJBL",
+            |m: &DFFJCMLAICL| { &m.JKMIMLBAJBL },
+            |m: &mut DFFJCMLAICL| { &mut m.JKMIMLBAJBL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "ALEHDAAOHOE",
             |m: &DFFJCMLAICL| { &m.ALEHDAAOHOE },
             |m: &mut DFFJCMLAICL| { &mut m.ALEHDAAOHOE },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JKMIMLBAJBL",
-            |m: &DFFJCMLAICL| { &m.JKMIMLBAJBL },
-            |m: &mut DFFJCMLAICL| { &mut m.JKMIMLBAJBL },
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "NBCMAKNLPHG",
+            |m: &DFFJCMLAICL| { &m.NBCMAKNLPHG },
+            |m: &mut DFFJCMLAICL| { &mut m.NBCMAKNLPHG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DFFJCMLAICL>(
             "DFFJCMLAICL",
@@ -93,10 +93,19 @@ impl ::protobuf::Message for DFFJCMLAICL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                32 => {
                     self.HDMPBPOFFDK = is.read_enum_or_unknown()?;
                 },
-                58 => {
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.JKMIMLBAJBL)?;
+                },
+                48 => {
+                    self.JKMIMLBAJBL.push(is.read_uint32()?);
+                },
+                90 => {
+                    self.ALEHDAAOHOE.push(is.read_message()?);
+                },
+                42 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -111,15 +120,6 @@ impl ::protobuf::Message for DFFJCMLAICL {
                     is.pop_limit(old_limit);
                     self.NBCMAKNLPHG.insert(key, value);
                 },
-                106 => {
-                    self.ALEHDAAOHOE.push(is.read_message()?);
-                },
-                66 => {
-                    is.read_repeated_packed_uint32_into(&mut self.JKMIMLBAJBL)?;
-                },
-                64 => {
-                    self.JKMIMLBAJBL.push(is.read_uint32()?);
-                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -133,19 +133,19 @@ impl ::protobuf::Message for DFFJCMLAICL {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HDMPBPOFFDK != ::protobuf::EnumOrUnknown::new(super::ChessRogueNousDicePhase::ChessRogueNousDicePhase::NONE) {
-            my_size += ::protobuf::rt::int32_size(15, self.HDMPBPOFFDK.value());
+            my_size += ::protobuf::rt::int32_size(4, self.HDMPBPOFFDK.value());
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.JKMIMLBAJBL);
+        for value in &self.ALEHDAAOHOE {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         for (k, v) in &self.NBCMAKNLPHG {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += 1 + 1;
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        for value in &self.ALEHDAAOHOE {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.JKMIMLBAJBL);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -153,21 +153,21 @@ impl ::protobuf::Message for DFFJCMLAICL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HDMPBPOFFDK != ::protobuf::EnumOrUnknown::new(super::ChessRogueNousDicePhase::ChessRogueNousDicePhase::NONE) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.HDMPBPOFFDK))?;
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.HDMPBPOFFDK))?;
         }
+        os.write_repeated_packed_uint32(6, &self.JKMIMLBAJBL)?;
+        for v in &self.ALEHDAAOHOE {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
         for (k, v) in &self.NBCMAKNLPHG {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += 1 + 1;
-            os.write_raw_varint32(58)?; // Tag.
+            os.write_raw_varint32(42)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_bool(2, *v)?;
         };
-        for v in &self.ALEHDAAOHOE {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        };
-        os.write_repeated_packed_uint32(8, &self.JKMIMLBAJBL)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -186,9 +186,9 @@ impl ::protobuf::Message for DFFJCMLAICL {
 
     fn clear(&mut self) {
         self.HDMPBPOFFDK = ::protobuf::EnumOrUnknown::new(super::ChessRogueNousDicePhase::ChessRogueNousDicePhase::NONE);
-        self.NBCMAKNLPHG.clear();
-        self.ALEHDAAOHOE.clear();
         self.JKMIMLBAJBL.clear();
+        self.ALEHDAAOHOE.clear();
+        self.NBCMAKNLPHG.clear();
         self.special_fields.clear();
     }
 
@@ -217,11 +217,11 @@ impl ::protobuf::reflect::ProtobufValue for DFFJCMLAICL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DFFJCMLAICL.proto\x1a\x1dChessRogueNousDicePhase.proto\x1a\x11KJEH\
-    FKBJPHD.proto\"\x9c\x02\n\x0bDFFJCMLAICL\x12:\n\x0bHDMPBPOFFDK\x18\x0f\
-    \x20\x01(\x0e2\x18.ChessRogueNousDicePhaseR\x0bHDMPBPOFFDK\x12?\n\x0bNBC\
-    MAKNLPHG\x18\x07\x20\x03(\x0b2\x1d.DFFJCMLAICL.NBCMAKNLPHGEntryR\x0bNBCM\
-    AKNLPHG\x12.\n\x0bALEHDAAOHOE\x18\r\x20\x03(\x0b2\x0c.KJEHFKBJPHDR\x0bAL\
-    EHDAAOHOE\x12\x20\n\x0bJKMIMLBAJBL\x18\x08\x20\x03(\rR\x0bJKMIMLBAJBL\
+    FKBJPHD.proto\"\x9c\x02\n\x0bDFFJCMLAICL\x12:\n\x0bHDMPBPOFFDK\x18\x04\
+    \x20\x01(\x0e2\x18.ChessRogueNousDicePhaseR\x0bHDMPBPOFFDK\x12\x20\n\x0b\
+    JKMIMLBAJBL\x18\x06\x20\x03(\rR\x0bJKMIMLBAJBL\x12.\n\x0bALEHDAAOHOE\x18\
+    \x0b\x20\x03(\x0b2\x0c.KJEHFKBJPHDR\x0bALEHDAAOHOE\x12?\n\x0bNBCMAKNLPHG\
+    \x18\x05\x20\x03(\x0b2\x1d.DFFJCMLAICL.NBCMAKNLPHGEntryR\x0bNBCMAKNLPHG\
     \x1a>\n\x10NBCMAKNLPHGEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\
     \x12\x14\n\x05value\x18\x02\x20\x01(\x08R\x05value:\x028\x01b\x06proto3\
 ";

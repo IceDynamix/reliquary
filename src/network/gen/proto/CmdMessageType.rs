@@ -29,30 +29,30 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdMessageType {
     // @@protoc_insertion_point(enum_value:CmdMessageType.CmdMessageTypeNone)
     CmdMessageTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdGetNpcStatusCsReq)
-    CmdGetNpcStatusCsReq = 2758,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdGetNpcStatusScRsp)
-    CmdGetNpcStatusScRsp = 2724,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdGetMissionMessageInfoCsReq)
-    CmdGetMissionMessageInfoCsReq = 2705,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdFinishSectionIdCsReq)
-    CmdFinishSectionIdCsReq = 2797,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdGetNpcMessageGroupScRsp)
-    CmdGetNpcMessageGroupScRsp = 2768,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdFinishItemIdCsReq)
-    CmdFinishItemIdCsReq = 2730,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdGetMissionMessageInfoScRsp)
-    CmdGetMissionMessageInfoScRsp = 2714,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdFinishItemIdScRsp)
-    CmdFinishItemIdScRsp = 2756,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdFinishPerformSectionIdScRsp)
-    CmdFinishPerformSectionIdScRsp = 2711,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdFinishSectionIdScRsp)
-    CmdFinishSectionIdScRsp = 2776,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdGetNpcMessageGroupCsReq)
-    CmdGetNpcMessageGroupCsReq = 2701,
     // @@protoc_insertion_point(enum_value:CmdMessageType.CmdFinishPerformSectionIdCsReq)
-    CmdFinishPerformSectionIdCsReq = 2728,
+    CmdFinishPerformSectionIdCsReq = 2726,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdFinishItemIdScRsp)
+    CmdFinishItemIdScRsp = 2706,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdFinishSectionIdScRsp)
+    CmdFinishSectionIdScRsp = 2789,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdFinishSectionIdCsReq)
+    CmdFinishSectionIdCsReq = 2770,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdFinishItemIdCsReq)
+    CmdFinishItemIdCsReq = 2735,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdGetNpcMessageGroupScRsp)
+    CmdGetNpcMessageGroupScRsp = 2713,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdGetNpcMessageGroupCsReq)
+    CmdGetNpcMessageGroupCsReq = 2711,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdGetMissionMessageInfoScRsp)
+    CmdGetMissionMessageInfoScRsp = 2718,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdGetMissionMessageInfoCsReq)
+    CmdGetMissionMessageInfoCsReq = 2795,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdGetNpcStatusCsReq)
+    CmdGetNpcStatusCsReq = 2747,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdGetNpcStatusScRsp)
+    CmdGetNpcStatusScRsp = 2709,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdFinishPerformSectionIdScRsp)
+    CmdFinishPerformSectionIdScRsp = 2730,
 }
 
 impl ::protobuf::Enum for CmdMessageType {
@@ -65,18 +65,18 @@ impl ::protobuf::Enum for CmdMessageType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdMessageType> {
         match value {
             0 => ::std::option::Option::Some(CmdMessageType::CmdMessageTypeNone),
-            2758 => ::std::option::Option::Some(CmdMessageType::CmdGetNpcStatusCsReq),
-            2724 => ::std::option::Option::Some(CmdMessageType::CmdGetNpcStatusScRsp),
-            2705 => ::std::option::Option::Some(CmdMessageType::CmdGetMissionMessageInfoCsReq),
-            2797 => ::std::option::Option::Some(CmdMessageType::CmdFinishSectionIdCsReq),
-            2768 => ::std::option::Option::Some(CmdMessageType::CmdGetNpcMessageGroupScRsp),
-            2730 => ::std::option::Option::Some(CmdMessageType::CmdFinishItemIdCsReq),
-            2714 => ::std::option::Option::Some(CmdMessageType::CmdGetMissionMessageInfoScRsp),
-            2756 => ::std::option::Option::Some(CmdMessageType::CmdFinishItemIdScRsp),
-            2711 => ::std::option::Option::Some(CmdMessageType::CmdFinishPerformSectionIdScRsp),
-            2776 => ::std::option::Option::Some(CmdMessageType::CmdFinishSectionIdScRsp),
-            2701 => ::std::option::Option::Some(CmdMessageType::CmdGetNpcMessageGroupCsReq),
-            2728 => ::std::option::Option::Some(CmdMessageType::CmdFinishPerformSectionIdCsReq),
+            2726 => ::std::option::Option::Some(CmdMessageType::CmdFinishPerformSectionIdCsReq),
+            2706 => ::std::option::Option::Some(CmdMessageType::CmdFinishItemIdScRsp),
+            2789 => ::std::option::Option::Some(CmdMessageType::CmdFinishSectionIdScRsp),
+            2770 => ::std::option::Option::Some(CmdMessageType::CmdFinishSectionIdCsReq),
+            2735 => ::std::option::Option::Some(CmdMessageType::CmdFinishItemIdCsReq),
+            2713 => ::std::option::Option::Some(CmdMessageType::CmdGetNpcMessageGroupScRsp),
+            2711 => ::std::option::Option::Some(CmdMessageType::CmdGetNpcMessageGroupCsReq),
+            2718 => ::std::option::Option::Some(CmdMessageType::CmdGetMissionMessageInfoScRsp),
+            2795 => ::std::option::Option::Some(CmdMessageType::CmdGetMissionMessageInfoCsReq),
+            2747 => ::std::option::Option::Some(CmdMessageType::CmdGetNpcStatusCsReq),
+            2709 => ::std::option::Option::Some(CmdMessageType::CmdGetNpcStatusScRsp),
+            2730 => ::std::option::Option::Some(CmdMessageType::CmdFinishPerformSectionIdScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -84,36 +84,36 @@ impl ::protobuf::Enum for CmdMessageType {
     fn from_str(str: &str) -> ::std::option::Option<CmdMessageType> {
         match str {
             "CmdMessageTypeNone" => ::std::option::Option::Some(CmdMessageType::CmdMessageTypeNone),
+            "CmdFinishPerformSectionIdCsReq" => ::std::option::Option::Some(CmdMessageType::CmdFinishPerformSectionIdCsReq),
+            "CmdFinishItemIdScRsp" => ::std::option::Option::Some(CmdMessageType::CmdFinishItemIdScRsp),
+            "CmdFinishSectionIdScRsp" => ::std::option::Option::Some(CmdMessageType::CmdFinishSectionIdScRsp),
+            "CmdFinishSectionIdCsReq" => ::std::option::Option::Some(CmdMessageType::CmdFinishSectionIdCsReq),
+            "CmdFinishItemIdCsReq" => ::std::option::Option::Some(CmdMessageType::CmdFinishItemIdCsReq),
+            "CmdGetNpcMessageGroupScRsp" => ::std::option::Option::Some(CmdMessageType::CmdGetNpcMessageGroupScRsp),
+            "CmdGetNpcMessageGroupCsReq" => ::std::option::Option::Some(CmdMessageType::CmdGetNpcMessageGroupCsReq),
+            "CmdGetMissionMessageInfoScRsp" => ::std::option::Option::Some(CmdMessageType::CmdGetMissionMessageInfoScRsp),
+            "CmdGetMissionMessageInfoCsReq" => ::std::option::Option::Some(CmdMessageType::CmdGetMissionMessageInfoCsReq),
             "CmdGetNpcStatusCsReq" => ::std::option::Option::Some(CmdMessageType::CmdGetNpcStatusCsReq),
             "CmdGetNpcStatusScRsp" => ::std::option::Option::Some(CmdMessageType::CmdGetNpcStatusScRsp),
-            "CmdGetMissionMessageInfoCsReq" => ::std::option::Option::Some(CmdMessageType::CmdGetMissionMessageInfoCsReq),
-            "CmdFinishSectionIdCsReq" => ::std::option::Option::Some(CmdMessageType::CmdFinishSectionIdCsReq),
-            "CmdGetNpcMessageGroupScRsp" => ::std::option::Option::Some(CmdMessageType::CmdGetNpcMessageGroupScRsp),
-            "CmdFinishItemIdCsReq" => ::std::option::Option::Some(CmdMessageType::CmdFinishItemIdCsReq),
-            "CmdGetMissionMessageInfoScRsp" => ::std::option::Option::Some(CmdMessageType::CmdGetMissionMessageInfoScRsp),
-            "CmdFinishItemIdScRsp" => ::std::option::Option::Some(CmdMessageType::CmdFinishItemIdScRsp),
             "CmdFinishPerformSectionIdScRsp" => ::std::option::Option::Some(CmdMessageType::CmdFinishPerformSectionIdScRsp),
-            "CmdFinishSectionIdScRsp" => ::std::option::Option::Some(CmdMessageType::CmdFinishSectionIdScRsp),
-            "CmdGetNpcMessageGroupCsReq" => ::std::option::Option::Some(CmdMessageType::CmdGetNpcMessageGroupCsReq),
-            "CmdFinishPerformSectionIdCsReq" => ::std::option::Option::Some(CmdMessageType::CmdFinishPerformSectionIdCsReq),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdMessageType] = &[
         CmdMessageType::CmdMessageTypeNone,
+        CmdMessageType::CmdFinishPerformSectionIdCsReq,
+        CmdMessageType::CmdFinishItemIdScRsp,
+        CmdMessageType::CmdFinishSectionIdScRsp,
+        CmdMessageType::CmdFinishSectionIdCsReq,
+        CmdMessageType::CmdFinishItemIdCsReq,
+        CmdMessageType::CmdGetNpcMessageGroupScRsp,
+        CmdMessageType::CmdGetNpcMessageGroupCsReq,
+        CmdMessageType::CmdGetMissionMessageInfoScRsp,
+        CmdMessageType::CmdGetMissionMessageInfoCsReq,
         CmdMessageType::CmdGetNpcStatusCsReq,
         CmdMessageType::CmdGetNpcStatusScRsp,
-        CmdMessageType::CmdGetMissionMessageInfoCsReq,
-        CmdMessageType::CmdFinishSectionIdCsReq,
-        CmdMessageType::CmdGetNpcMessageGroupScRsp,
-        CmdMessageType::CmdFinishItemIdCsReq,
-        CmdMessageType::CmdGetMissionMessageInfoScRsp,
-        CmdMessageType::CmdFinishItemIdScRsp,
         CmdMessageType::CmdFinishPerformSectionIdScRsp,
-        CmdMessageType::CmdFinishSectionIdScRsp,
-        CmdMessageType::CmdGetNpcMessageGroupCsReq,
-        CmdMessageType::CmdFinishPerformSectionIdCsReq,
     ];
 }
 
@@ -126,18 +126,18 @@ impl ::protobuf::EnumFull for CmdMessageType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdMessageType::CmdMessageTypeNone => 0,
-            CmdMessageType::CmdGetNpcStatusCsReq => 1,
-            CmdMessageType::CmdGetNpcStatusScRsp => 2,
-            CmdMessageType::CmdGetMissionMessageInfoCsReq => 3,
+            CmdMessageType::CmdFinishPerformSectionIdCsReq => 1,
+            CmdMessageType::CmdFinishItemIdScRsp => 2,
+            CmdMessageType::CmdFinishSectionIdScRsp => 3,
             CmdMessageType::CmdFinishSectionIdCsReq => 4,
-            CmdMessageType::CmdGetNpcMessageGroupScRsp => 5,
-            CmdMessageType::CmdFinishItemIdCsReq => 6,
-            CmdMessageType::CmdGetMissionMessageInfoScRsp => 7,
-            CmdMessageType::CmdFinishItemIdScRsp => 8,
-            CmdMessageType::CmdFinishPerformSectionIdScRsp => 9,
-            CmdMessageType::CmdFinishSectionIdScRsp => 10,
-            CmdMessageType::CmdGetNpcMessageGroupCsReq => 11,
-            CmdMessageType::CmdFinishPerformSectionIdCsReq => 12,
+            CmdMessageType::CmdFinishItemIdCsReq => 5,
+            CmdMessageType::CmdGetNpcMessageGroupScRsp => 6,
+            CmdMessageType::CmdGetNpcMessageGroupCsReq => 7,
+            CmdMessageType::CmdGetMissionMessageInfoScRsp => 8,
+            CmdMessageType::CmdGetMissionMessageInfoCsReq => 9,
+            CmdMessageType::CmdGetNpcStatusCsReq => 10,
+            CmdMessageType::CmdGetNpcStatusScRsp => 11,
+            CmdMessageType::CmdFinishPerformSectionIdScRsp => 12,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -157,15 +157,15 @@ impl CmdMessageType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14CmdMessageType.proto*\xa4\x03\n\x0eCmdMessageType\x12\x16\n\x12Cmd\
-    MessageTypeNone\x10\0\x12\x19\n\x14CmdGetNpcStatusCsReq\x10\xc6\x15\x12\
-    \x19\n\x14CmdGetNpcStatusScRsp\x10\xa4\x15\x12\"\n\x1dCmdGetMissionMessa\
-    geInfoCsReq\x10\x91\x15\x12\x1c\n\x17CmdFinishSectionIdCsReq\x10\xed\x15\
-    \x12\x1f\n\x1aCmdGetNpcMessageGroupScRsp\x10\xd0\x15\x12\x19\n\x14CmdFin\
-    ishItemIdCsReq\x10\xaa\x15\x12\"\n\x1dCmdGetMissionMessageInfoScRsp\x10\
-    \x9a\x15\x12\x19\n\x14CmdFinishItemIdScRsp\x10\xc4\x15\x12#\n\x1eCmdFini\
-    shPerformSectionIdScRsp\x10\x97\x15\x12\x1c\n\x17CmdFinishSectionIdScRsp\
-    \x10\xd8\x15\x12\x1f\n\x1aCmdGetNpcMessageGroupCsReq\x10\x8d\x15\x12#\n\
-    \x1eCmdFinishPerformSectionIdCsReq\x10\xa8\x15b\x06proto3\
+    MessageTypeNone\x10\0\x12#\n\x1eCmdFinishPerformSectionIdCsReq\x10\xa6\
+    \x15\x12\x19\n\x14CmdFinishItemIdScRsp\x10\x92\x15\x12\x1c\n\x17CmdFinis\
+    hSectionIdScRsp\x10\xe5\x15\x12\x1c\n\x17CmdFinishSectionIdCsReq\x10\xd2\
+    \x15\x12\x19\n\x14CmdFinishItemIdCsReq\x10\xaf\x15\x12\x1f\n\x1aCmdGetNp\
+    cMessageGroupScRsp\x10\x99\x15\x12\x1f\n\x1aCmdGetNpcMessageGroupCsReq\
+    \x10\x97\x15\x12\"\n\x1dCmdGetMissionMessageInfoScRsp\x10\x9e\x15\x12\"\
+    \n\x1dCmdGetMissionMessageInfoCsReq\x10\xeb\x15\x12\x19\n\x14CmdGetNpcSt\
+    atusCsReq\x10\xbb\x15\x12\x19\n\x14CmdGetNpcStatusScRsp\x10\x95\x15\x12#\
+    \n\x1eCmdFinishPerformSectionIdScRsp\x10\xaa\x15b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

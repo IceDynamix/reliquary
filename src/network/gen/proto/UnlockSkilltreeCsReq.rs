@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UnlockSkilltreeCsReq {
     // message fields
-    // @@protoc_insertion_point(field:UnlockSkilltreeCsReq.level)
-    pub level: u32,
     // @@protoc_insertion_point(field:UnlockSkilltreeCsReq.point_id)
     pub point_id: u32,
+    // @@protoc_insertion_point(field:UnlockSkilltreeCsReq.level)
+    pub level: u32,
     // @@protoc_insertion_point(field:UnlockSkilltreeCsReq.DCPBFLJFHBB)
     pub DCPBFLJFHBB: ::std::vec::Vec<super::ItemCost::ItemCost>,
     // special fields
@@ -54,14 +54,14 @@ impl UnlockSkilltreeCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &UnlockSkilltreeCsReq| { &m.level },
-            |m: &mut UnlockSkilltreeCsReq| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "point_id",
             |m: &UnlockSkilltreeCsReq| { &m.point_id },
             |m: &mut UnlockSkilltreeCsReq| { &mut m.point_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &UnlockSkilltreeCsReq| { &m.level },
+            |m: &mut UnlockSkilltreeCsReq| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "DCPBFLJFHBB",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for UnlockSkilltreeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.level = is.read_uint32()?;
-                },
-                64 => {
+                24 => {
                     self.point_id = is.read_uint32()?;
                 },
-                50 => {
+                72 => {
+                    self.level = is.read_uint32()?;
+                },
+                66 => {
                     self.DCPBFLJFHBB.push(is.read_message()?);
                 },
                 tag => {
@@ -107,11 +107,11 @@ impl ::protobuf::Message for UnlockSkilltreeCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.level);
-        }
         if self.point_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.point_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.point_id);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.level);
         }
         for value in &self.DCPBFLJFHBB {
             let len = value.compute_size();
@@ -123,14 +123,14 @@ impl ::protobuf::Message for UnlockSkilltreeCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.level != 0 {
-            os.write_uint32(4, self.level)?;
-        }
         if self.point_id != 0 {
-            os.write_uint32(8, self.point_id)?;
+            os.write_uint32(3, self.point_id)?;
+        }
+        if self.level != 0 {
+            os.write_uint32(9, self.level)?;
         }
         for v in &self.DCPBFLJFHBB {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for UnlockSkilltreeCsReq {
     }
 
     fn clear(&mut self) {
-        self.level = 0;
         self.point_id = 0;
+        self.level = 0;
         self.DCPBFLJFHBB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UnlockSkilltreeCsReq {
         static instance: UnlockSkilltreeCsReq = UnlockSkilltreeCsReq {
-            level: 0,
             point_id: 0,
+            level: 0,
             DCPBFLJFHBB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for UnlockSkilltreeCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aUnlockSkilltreeCsReq.proto\x1a\x0eItemCost.proto\"t\n\x14UnlockSki\
-    lltreeCsReq\x12\x14\n\x05level\x18\x04\x20\x01(\rR\x05level\x12\x19\n\
-    \x08point_id\x18\x08\x20\x01(\rR\x07pointId\x12+\n\x0bDCPBFLJFHBB\x18\
-    \x06\x20\x03(\x0b2\t.ItemCostR\x0bDCPBFLJFHBBb\x06proto3\
+    lltreeCsReq\x12\x19\n\x08point_id\x18\x03\x20\x01(\rR\x07pointId\x12\x14\
+    \n\x05level\x18\t\x20\x01(\rR\x05level\x12+\n\x0bDCPBFLJFHBB\x18\x08\x20\
+    \x03(\x0b2\t.ItemCostR\x0bDCPBFLJFHBBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

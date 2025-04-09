@@ -50,7 +50,7 @@ impl DHAHAKMPNAF {
         ::std::default::Default::default()
     }
 
-    // .IOJHJAHIMHM LIIBBGGEHFP = 506;
+    // .IOJHJAHIMHM LIIBBGGEHFP = 261;
 
     pub fn LIIBBGGEHFP(&self) -> &super::IOJHJAHIMHM::IOJHJAHIMHM {
         match self.EBBMJDKKFIB {
@@ -99,7 +99,7 @@ impl DHAHAKMPNAF {
         }
     }
 
-    // .MEEHCBGDBEA IKFFOBAMGHJ = 1204;
+    // .MEEHCBGDBEA IKFFOBAMGHJ = 1266;
 
     pub fn IKFFOBAMGHJ(&self) -> &super::MEEHCBGDBEA::MEEHCBGDBEA {
         match self.EBBMJDKKFIB {
@@ -148,7 +148,7 @@ impl DHAHAKMPNAF {
         }
     }
 
-    // uint32 avatar_id = 1023;
+    // uint32 avatar_id = 1078;
 
     pub fn avatar_id(&self) -> u32 {
         match self.EBBMJDKKFIB {
@@ -173,7 +173,7 @@ impl DHAHAKMPNAF {
         self.EBBMJDKKFIB = ::std::option::Option::Some(dhahakmpnaf::EBBMJDKKFIB::AvatarId(v))
     }
 
-    // uint32 MDMGKHLHIIN = 1385;
+    // uint32 MDMGKHLHIIN = 246;
 
     pub fn MDMGKHLHIIN(&self) -> u32 {
         match self.EBBMJDKKFIB {
@@ -198,7 +198,7 @@ impl DHAHAKMPNAF {
         self.EBBMJDKKFIB = ::std::option::Option::Some(dhahakmpnaf::EBBMJDKKFIB::MDMGKHLHIIN(v))
     }
 
-    // uint32 CKKNNHMDCOG = 398;
+    // uint32 CKKNNHMDCOG = 140;
 
     pub fn CKKNNHMDCOG(&self) -> u32 {
         match self.EBBMJDKKFIB {
@@ -223,7 +223,7 @@ impl DHAHAKMPNAF {
         self.EBBMJDKKFIB = ::std::option::Option::Some(dhahakmpnaf::EBBMJDKKFIB::CKKNNHMDCOG(v))
     }
 
-    // .JIENKFADCHE IELHLBFFAGK = 209;
+    // .JIENKFADCHE IELHLBFFAGK = 157;
 
     pub fn IELHLBFFAGK(&self) -> &super::JIENKFADCHE::JIENKFADCHE {
         match self.EBBMJDKKFIB {
@@ -272,7 +272,7 @@ impl DHAHAKMPNAF {
         }
     }
 
-    // uint32 DKKLLMOHGFD = 151;
+    // uint32 DKKLLMOHGFD = 563;
 
     pub fn DKKLLMOHGFD(&self) -> u32 {
         match self.EBBMJDKKFIB {
@@ -374,31 +374,31 @@ impl ::protobuf::Message for DHAHAKMPNAF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                56 => {
                     self.EJHMNKHEPFA = is.read_enum_or_unknown()?;
                 },
                 32 => {
                     self.HJEJFNFAMPN = is.read_int64()?;
                 },
-                4050 => {
+                2090 => {
                     self.EBBMJDKKFIB = ::std::option::Option::Some(dhahakmpnaf::EBBMJDKKFIB::LIIBBGGEHFP(is.read_message()?));
                 },
-                9634 => {
+                10130 => {
                     self.EBBMJDKKFIB = ::std::option::Option::Some(dhahakmpnaf::EBBMJDKKFIB::IKFFOBAMGHJ(is.read_message()?));
                 },
-                8184 => {
+                8624 => {
                     self.EBBMJDKKFIB = ::std::option::Option::Some(dhahakmpnaf::EBBMJDKKFIB::AvatarId(is.read_uint32()?));
                 },
-                11080 => {
+                1968 => {
                     self.EBBMJDKKFIB = ::std::option::Option::Some(dhahakmpnaf::EBBMJDKKFIB::MDMGKHLHIIN(is.read_uint32()?));
                 },
-                3184 => {
+                1120 => {
                     self.EBBMJDKKFIB = ::std::option::Option::Some(dhahakmpnaf::EBBMJDKKFIB::CKKNNHMDCOG(is.read_uint32()?));
                 },
-                1674 => {
+                1258 => {
                     self.EBBMJDKKFIB = ::std::option::Option::Some(dhahakmpnaf::EBBMJDKKFIB::IELHLBFFAGK(is.read_message()?));
                 },
-                1208 => {
+                4504 => {
                     self.EBBMJDKKFIB = ::std::option::Option::Some(dhahakmpnaf::EBBMJDKKFIB::DKKLLMOHGFD(is.read_uint32()?));
                 },
                 tag => {
@@ -414,7 +414,7 @@ impl ::protobuf::Message for DHAHAKMPNAF {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.EJHMNKHEPFA != ::protobuf::EnumOrUnknown::new(super::DevelopmentType::DevelopmentType::DEVELOPMENT_NONE) {
-            my_size += ::protobuf::rt::int32_size(13, self.EJHMNKHEPFA.value());
+            my_size += ::protobuf::rt::int32_size(7, self.EJHMNKHEPFA.value());
         }
         if self.HJEJFNFAMPN != 0 {
             my_size += ::protobuf::rt::int64_size(4, self.HJEJFNFAMPN);
@@ -430,20 +430,20 @@ impl ::protobuf::Message for DHAHAKMPNAF {
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &dhahakmpnaf::EBBMJDKKFIB::AvatarId(v) => {
-                    my_size += ::protobuf::rt::uint32_size(1023, v);
+                    my_size += ::protobuf::rt::uint32_size(1078, v);
                 },
                 &dhahakmpnaf::EBBMJDKKFIB::MDMGKHLHIIN(v) => {
-                    my_size += ::protobuf::rt::uint32_size(1385, v);
+                    my_size += ::protobuf::rt::uint32_size(246, v);
                 },
                 &dhahakmpnaf::EBBMJDKKFIB::CKKNNHMDCOG(v) => {
-                    my_size += ::protobuf::rt::uint32_size(398, v);
+                    my_size += ::protobuf::rt::uint32_size(140, v);
                 },
                 &dhahakmpnaf::EBBMJDKKFIB::IELHLBFFAGK(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &dhahakmpnaf::EBBMJDKKFIB::DKKLLMOHGFD(v) => {
-                    my_size += ::protobuf::rt::uint32_size(151, v);
+                    my_size += ::protobuf::rt::uint32_size(563, v);
                 },
             };
         }
@@ -454,7 +454,7 @@ impl ::protobuf::Message for DHAHAKMPNAF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.EJHMNKHEPFA != ::protobuf::EnumOrUnknown::new(super::DevelopmentType::DevelopmentType::DEVELOPMENT_NONE) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.EJHMNKHEPFA))?;
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.EJHMNKHEPFA))?;
         }
         if self.HJEJFNFAMPN != 0 {
             os.write_int64(4, self.HJEJFNFAMPN)?;
@@ -462,25 +462,25 @@ impl ::protobuf::Message for DHAHAKMPNAF {
         if let ::std::option::Option::Some(ref v) = self.EBBMJDKKFIB {
             match v {
                 &dhahakmpnaf::EBBMJDKKFIB::LIIBBGGEHFP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(506, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(261, v, os)?;
                 },
                 &dhahakmpnaf::EBBMJDKKFIB::IKFFOBAMGHJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1204, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1266, v, os)?;
                 },
                 &dhahakmpnaf::EBBMJDKKFIB::AvatarId(v) => {
-                    os.write_uint32(1023, v)?;
+                    os.write_uint32(1078, v)?;
                 },
                 &dhahakmpnaf::EBBMJDKKFIB::MDMGKHLHIIN(v) => {
-                    os.write_uint32(1385, v)?;
+                    os.write_uint32(246, v)?;
                 },
                 &dhahakmpnaf::EBBMJDKKFIB::CKKNNHMDCOG(v) => {
-                    os.write_uint32(398, v)?;
+                    os.write_uint32(140, v)?;
                 },
                 &dhahakmpnaf::EBBMJDKKFIB::IELHLBFFAGK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(209, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(157, v, os)?;
                 },
                 &dhahakmpnaf::EBBMJDKKFIB::DKKLLMOHGFD(v) => {
-                    os.write_uint32(151, v)?;
+                    os.write_uint32(563, v)?;
                 },
             };
         }
@@ -584,15 +584,15 @@ pub mod dhahakmpnaf {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DHAHAKMPNAF.proto\x1a\x15DevelopmentType.proto\x1a\x11IOJHJAHIMHM.\
     proto\x1a\x11JIENKFADCHE.proto\x1a\x11MEEHCBGDBEA.proto\"\x9a\x03\n\x0bD\
-    HAHAKMPNAF\x122\n\x0bEJHMNKHEPFA\x18\r\x20\x01(\x0e2\x10.DevelopmentType\
-    R\x0bEJHMNKHEPFA\x12\x20\n\x0bHJEJFNFAMPN\x18\x04\x20\x01(\x03R\x0bHJEJF\
-    NFAMPN\x121\n\x0bLIIBBGGEHFP\x18\xfa\x03\x20\x01(\x0b2\x0c.IOJHJAHIMHMH\
-    \0R\x0bLIIBBGGEHFP\x121\n\x0bIKFFOBAMGHJ\x18\xb4\t\x20\x01(\x0b2\x0c.MEE\
-    HCBGDBEAH\0R\x0bIKFFOBAMGHJ\x12\x1e\n\tavatar_id\x18\xff\x07\x20\x01(\rH\
-    \0R\x08avatarId\x12#\n\x0bMDMGKHLHIIN\x18\xe9\n\x20\x01(\rH\0R\x0bMDMGKH\
-    LHIIN\x12#\n\x0bCKKNNHMDCOG\x18\x8e\x03\x20\x01(\rH\0R\x0bCKKNNHMDCOG\
-    \x121\n\x0bIELHLBFFAGK\x18\xd1\x01\x20\x01(\x0b2\x0c.JIENKFADCHEH\0R\x0b\
-    IELHLBFFAGK\x12#\n\x0bDKKLLMOHGFD\x18\x97\x01\x20\x01(\rH\0R\x0bDKKLLMOH\
+    HAHAKMPNAF\x122\n\x0bEJHMNKHEPFA\x18\x07\x20\x01(\x0e2\x10.DevelopmentTy\
+    peR\x0bEJHMNKHEPFA\x12\x20\n\x0bHJEJFNFAMPN\x18\x04\x20\x01(\x03R\x0bHJE\
+    JFNFAMPN\x121\n\x0bLIIBBGGEHFP\x18\x85\x02\x20\x01(\x0b2\x0c.IOJHJAHIMHM\
+    H\0R\x0bLIIBBGGEHFP\x121\n\x0bIKFFOBAMGHJ\x18\xf2\t\x20\x01(\x0b2\x0c.ME\
+    EHCBGDBEAH\0R\x0bIKFFOBAMGHJ\x12\x1e\n\tavatar_id\x18\xb6\x08\x20\x01(\r\
+    H\0R\x08avatarId\x12#\n\x0bMDMGKHLHIIN\x18\xf6\x01\x20\x01(\rH\0R\x0bMDM\
+    GKHLHIIN\x12#\n\x0bCKKNNHMDCOG\x18\x8c\x01\x20\x01(\rH\0R\x0bCKKNNHMDCOG\
+    \x121\n\x0bIELHLBFFAGK\x18\x9d\x01\x20\x01(\x0b2\x0c.JIENKFADCHEH\0R\x0b\
+    IELHLBFFAGK\x12#\n\x0bDKKLLMOHGFD\x18\xb3\x04\x20\x01(\rH\0R\x0bDKKLLMOH\
     GFDB\r\n\x0bEBBMJDKKFIBb\x06proto3\
 ";
 

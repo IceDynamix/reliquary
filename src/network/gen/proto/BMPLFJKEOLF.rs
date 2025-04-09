@@ -30,10 +30,10 @@ pub struct BMPLFJKEOLF {
     // message fields
     // @@protoc_insertion_point(field:BMPLFJKEOLF.COFFEBNIBHK)
     pub COFFEBNIBHK: u32,
-    // @@protoc_insertion_point(field:BMPLFJKEOLF.OKDLMEJPCHE)
-    pub OKDLMEJPCHE: u32,
     // @@protoc_insertion_point(field:BMPLFJKEOLF.LNBPGPGGIMN)
     pub LNBPGPGGIMN: u32,
+    // @@protoc_insertion_point(field:BMPLFJKEOLF.OKDLMEJPCHE)
+    pub OKDLMEJPCHE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BMPLFJKEOLF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl BMPLFJKEOLF {
             |m: &mut BMPLFJKEOLF| { &mut m.COFFEBNIBHK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OKDLMEJPCHE",
-            |m: &BMPLFJKEOLF| { &m.OKDLMEJPCHE },
-            |m: &mut BMPLFJKEOLF| { &mut m.OKDLMEJPCHE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LNBPGPGGIMN",
             |m: &BMPLFJKEOLF| { &m.LNBPGPGGIMN },
             |m: &mut BMPLFJKEOLF| { &mut m.LNBPGPGGIMN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OKDLMEJPCHE",
+            |m: &BMPLFJKEOLF| { &m.OKDLMEJPCHE },
+            |m: &mut BMPLFJKEOLF| { &mut m.OKDLMEJPCHE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BMPLFJKEOLF>(
             "BMPLFJKEOLF",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for BMPLFJKEOLF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                32 => {
                     self.COFFEBNIBHK = is.read_uint32()?;
                 },
-                8 => {
-                    self.OKDLMEJPCHE = is.read_uint32()?;
-                },
-                88 => {
+                64 => {
                     self.LNBPGPGGIMN = is.read_uint32()?;
+                },
+                48 => {
+                    self.OKDLMEJPCHE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for BMPLFJKEOLF {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.COFFEBNIBHK != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.COFFEBNIBHK);
-        }
-        if self.OKDLMEJPCHE != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.OKDLMEJPCHE);
+            my_size += ::protobuf::rt::uint32_size(4, self.COFFEBNIBHK);
         }
         if self.LNBPGPGGIMN != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.LNBPGPGGIMN);
+            my_size += ::protobuf::rt::uint32_size(8, self.LNBPGPGGIMN);
+        }
+        if self.OKDLMEJPCHE != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.OKDLMEJPCHE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for BMPLFJKEOLF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.COFFEBNIBHK != 0 {
-            os.write_uint32(2, self.COFFEBNIBHK)?;
-        }
-        if self.OKDLMEJPCHE != 0 {
-            os.write_uint32(1, self.OKDLMEJPCHE)?;
+            os.write_uint32(4, self.COFFEBNIBHK)?;
         }
         if self.LNBPGPGGIMN != 0 {
-            os.write_uint32(11, self.LNBPGPGGIMN)?;
+            os.write_uint32(8, self.LNBPGPGGIMN)?;
+        }
+        if self.OKDLMEJPCHE != 0 {
+            os.write_uint32(6, self.OKDLMEJPCHE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for BMPLFJKEOLF {
 
     fn clear(&mut self) {
         self.COFFEBNIBHK = 0;
-        self.OKDLMEJPCHE = 0;
         self.LNBPGPGGIMN = 0;
+        self.OKDLMEJPCHE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BMPLFJKEOLF {
         static instance: BMPLFJKEOLF = BMPLFJKEOLF {
             COFFEBNIBHK: 0,
-            OKDLMEJPCHE: 0,
             LNBPGPGGIMN: 0,
+            OKDLMEJPCHE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for BMPLFJKEOLF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BMPLFJKEOLF.proto\"s\n\x0bBMPLFJKEOLF\x12\x20\n\x0bCOFFEBNIBHK\x18\
-    \x02\x20\x01(\rR\x0bCOFFEBNIBHK\x12\x20\n\x0bOKDLMEJPCHE\x18\x01\x20\x01\
-    (\rR\x0bOKDLMEJPCHE\x12\x20\n\x0bLNBPGPGGIMN\x18\x0b\x20\x01(\rR\x0bLNBP\
-    GPGGIMNb\x06proto3\
+    \x04\x20\x01(\rR\x0bCOFFEBNIBHK\x12\x20\n\x0bLNBPGPGGIMN\x18\x08\x20\x01\
+    (\rR\x0bLNBPGPGGIMN\x12\x20\n\x0bOKDLMEJPCHE\x18\x06\x20\x01(\rR\x0bOKDL\
+    MEJPCHEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

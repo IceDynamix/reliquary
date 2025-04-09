@@ -32,10 +32,10 @@ pub struct RogueTournStartCsReq {
     pub EJOIJGCLCJO: bool,
     // @@protoc_insertion_point(field:RogueTournStartCsReq.NBCGLEFOKDM)
     pub NBCGLEFOKDM: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:RogueTournStartCsReq.DBAHFEFGLMD)
-    pub DBAHFEFGLMD: u32,
     // @@protoc_insertion_point(field:RogueTournStartCsReq.LGBOHDICFPK)
     pub LGBOHDICFPK: bool,
+    // @@protoc_insertion_point(field:RogueTournStartCsReq.DBAHFEFGLMD)
+    pub DBAHFEFGLMD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournStartCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -66,14 +66,14 @@ impl RogueTournStartCsReq {
             |m: &mut RogueTournStartCsReq| { &mut m.NBCGLEFOKDM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DBAHFEFGLMD",
-            |m: &RogueTournStartCsReq| { &m.DBAHFEFGLMD },
-            |m: &mut RogueTournStartCsReq| { &mut m.DBAHFEFGLMD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LGBOHDICFPK",
             |m: &RogueTournStartCsReq| { &m.LGBOHDICFPK },
             |m: &mut RogueTournStartCsReq| { &mut m.LGBOHDICFPK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DBAHFEFGLMD",
+            |m: &RogueTournStartCsReq| { &m.DBAHFEFGLMD },
+            |m: &mut RogueTournStartCsReq| { &mut m.DBAHFEFGLMD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournStartCsReq>(
             "RogueTournStartCsReq",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for RogueTournStartCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                88 => {
                     self.EJOIJGCLCJO = is.read_bool()?;
                 },
-                10 => {
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.NBCGLEFOKDM)?;
                 },
-                8 => {
+                24 => {
                     self.NBCGLEFOKDM.push(is.read_uint32()?);
                 },
-                40 => {
-                    self.DBAHFEFGLMD = is.read_uint32()?;
+                80 => {
+                    self.LGBOHDICFPK = is.read_bool()?;
                 },
                 72 => {
-                    self.LGBOHDICFPK = is.read_bool()?;
+                    self.DBAHFEFGLMD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -123,12 +123,12 @@ impl ::protobuf::Message for RogueTournStartCsReq {
         if self.EJOIJGCLCJO != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.NBCGLEFOKDM);
-        if self.DBAHFEFGLMD != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.DBAHFEFGLMD);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.NBCGLEFOKDM);
         if self.LGBOHDICFPK != false {
             my_size += 1 + 1;
+        }
+        if self.DBAHFEFGLMD != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.DBAHFEFGLMD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,14 +137,14 @@ impl ::protobuf::Message for RogueTournStartCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.EJOIJGCLCJO != false {
-            os.write_bool(13, self.EJOIJGCLCJO)?;
+            os.write_bool(11, self.EJOIJGCLCJO)?;
         }
-        os.write_repeated_packed_uint32(1, &self.NBCGLEFOKDM)?;
-        if self.DBAHFEFGLMD != 0 {
-            os.write_uint32(5, self.DBAHFEFGLMD)?;
-        }
+        os.write_repeated_packed_uint32(3, &self.NBCGLEFOKDM)?;
         if self.LGBOHDICFPK != false {
-            os.write_bool(9, self.LGBOHDICFPK)?;
+            os.write_bool(10, self.LGBOHDICFPK)?;
+        }
+        if self.DBAHFEFGLMD != 0 {
+            os.write_uint32(9, self.DBAHFEFGLMD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::Message for RogueTournStartCsReq {
     fn clear(&mut self) {
         self.EJOIJGCLCJO = false;
         self.NBCGLEFOKDM.clear();
-        self.DBAHFEFGLMD = 0;
         self.LGBOHDICFPK = false;
+        self.DBAHFEFGLMD = 0;
         self.special_fields.clear();
     }
 
@@ -174,8 +174,8 @@ impl ::protobuf::Message for RogueTournStartCsReq {
         static instance: RogueTournStartCsReq = RogueTournStartCsReq {
             EJOIJGCLCJO: false,
             NBCGLEFOKDM: ::std::vec::Vec::new(),
-            DBAHFEFGLMD: 0,
             LGBOHDICFPK: false,
+            DBAHFEFGLMD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournStartCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aRogueTournStartCsReq.proto\"\x9e\x01\n\x14RogueTournStartCsReq\x12\
-    \x20\n\x0bEJOIJGCLCJO\x18\r\x20\x01(\x08R\x0bEJOIJGCLCJO\x12\x20\n\x0bNB\
-    CGLEFOKDM\x18\x01\x20\x03(\rR\x0bNBCGLEFOKDM\x12\x20\n\x0bDBAHFEFGLMD\
-    \x18\x05\x20\x01(\rR\x0bDBAHFEFGLMD\x12\x20\n\x0bLGBOHDICFPK\x18\t\x20\
-    \x01(\x08R\x0bLGBOHDICFPKb\x06proto3\
+    \x20\n\x0bEJOIJGCLCJO\x18\x0b\x20\x01(\x08R\x0bEJOIJGCLCJO\x12\x20\n\x0b\
+    NBCGLEFOKDM\x18\x03\x20\x03(\rR\x0bNBCGLEFOKDM\x12\x20\n\x0bLGBOHDICFPK\
+    \x18\n\x20\x01(\x08R\x0bLGBOHDICFPK\x12\x20\n\x0bDBAHFEFGLMD\x18\t\x20\
+    \x01(\rR\x0bDBAHFEFGLMDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

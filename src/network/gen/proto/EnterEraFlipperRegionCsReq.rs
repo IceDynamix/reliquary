@@ -79,10 +79,10 @@ impl ::protobuf::Message for EnterEraFlipperRegionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                80 => {
                     self.KJDOLBOBKJF = is.read_uint32()?;
                 },
-                104 => {
+                120 => {
                     self.ACNPBBNLMIE = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for EnterEraFlipperRegionCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.KJDOLBOBKJF != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.KJDOLBOBKJF);
+            my_size += ::protobuf::rt::uint32_size(10, self.KJDOLBOBKJF);
         }
         if self.ACNPBBNLMIE != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.ACNPBBNLMIE);
+            my_size += ::protobuf::rt::uint32_size(15, self.ACNPBBNLMIE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for EnterEraFlipperRegionCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KJDOLBOBKJF != 0 {
-            os.write_uint32(9, self.KJDOLBOBKJF)?;
+            os.write_uint32(10, self.KJDOLBOBKJF)?;
         }
         if self.ACNPBBNLMIE != 0 {
-            os.write_uint32(13, self.ACNPBBNLMIE)?;
+            os.write_uint32(15, self.ACNPBBNLMIE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for EnterEraFlipperRegionCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20EnterEraFlipperRegionCsReq.proto\"`\n\x1aEnterEraFlipperRegionCsRe\
-    q\x12\x20\n\x0bKJDOLBOBKJF\x18\t\x20\x01(\rR\x0bKJDOLBOBKJF\x12\x20\n\
-    \x0bACNPBBNLMIE\x18\r\x20\x01(\rR\x0bACNPBBNLMIEb\x06proto3\
+    q\x12\x20\n\x0bKJDOLBOBKJF\x18\n\x20\x01(\rR\x0bKJDOLBOBKJF\x12\x20\n\
+    \x0bACNPBBNLMIE\x18\x0f\x20\x01(\rR\x0bACNPBBNLMIEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,12 +30,12 @@ pub struct FJIBDHHOHMH {
     // message fields
     // @@protoc_insertion_point(field:FJIBDHHOHMH.FEIFDEGKEAP)
     pub FEIFDEGKEAP: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:FJIBDHHOHMH.PONADANOALN)
-    pub PONADANOALN: i64,
     // @@protoc_insertion_point(field:FJIBDHHOHMH.ELGANMDPMID)
     pub ELGANMDPMID: u32,
     // @@protoc_insertion_point(field:FJIBDHHOHMH.AOEDGHMHGJJ)
     pub AOEDGHMHGJJ: u32,
+    // @@protoc_insertion_point(field:FJIBDHHOHMH.PONADANOALN)
+    pub PONADANOALN: i64,
     // special fields
     // @@protoc_insertion_point(special_field:FJIBDHHOHMH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,11 +61,6 @@ impl FJIBDHHOHMH {
             |m: &mut FJIBDHHOHMH| { &mut m.FEIFDEGKEAP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PONADANOALN",
-            |m: &FJIBDHHOHMH| { &m.PONADANOALN },
-            |m: &mut FJIBDHHOHMH| { &mut m.PONADANOALN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ELGANMDPMID",
             |m: &FJIBDHHOHMH| { &m.ELGANMDPMID },
             |m: &mut FJIBDHHOHMH| { &mut m.ELGANMDPMID },
@@ -74,6 +69,11 @@ impl FJIBDHHOHMH {
             "AOEDGHMHGJJ",
             |m: &FJIBDHHOHMH| { &m.AOEDGHMHGJJ },
             |m: &mut FJIBDHHOHMH| { &mut m.AOEDGHMHGJJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PONADANOALN",
+            |m: &FJIBDHHOHMH| { &m.PONADANOALN },
+            |m: &mut FJIBDHHOHMH| { &mut m.PONADANOALN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FJIBDHHOHMH>(
             "FJIBDHHOHMH",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for FJIBDHHOHMH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.FEIFDEGKEAP)?;
                 },
-                120 => {
+                80 => {
                     self.FEIFDEGKEAP.push(is.read_uint32()?);
                 },
-                32 => {
-                    self.PONADANOALN = is.read_int64()?;
-                },
-                112 => {
+                40 => {
                     self.ELGANMDPMID = is.read_uint32()?;
                 },
                 88 => {
                     self.AOEDGHMHGJJ = is.read_uint32()?;
+                },
+                112 => {
+                    self.PONADANOALN = is.read_int64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,15 +120,15 @@ impl ::protobuf::Message for FJIBDHHOHMH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.FEIFDEGKEAP);
-        if self.PONADANOALN != 0 {
-            my_size += ::protobuf::rt::int64_size(4, self.PONADANOALN);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.FEIFDEGKEAP);
         if self.ELGANMDPMID != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.ELGANMDPMID);
+            my_size += ::protobuf::rt::uint32_size(5, self.ELGANMDPMID);
         }
         if self.AOEDGHMHGJJ != 0 {
             my_size += ::protobuf::rt::uint32_size(11, self.AOEDGHMHGJJ);
+        }
+        if self.PONADANOALN != 0 {
+            my_size += ::protobuf::rt::int64_size(14, self.PONADANOALN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,15 +136,15 @@ impl ::protobuf::Message for FJIBDHHOHMH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(15, &self.FEIFDEGKEAP)?;
-        if self.PONADANOALN != 0 {
-            os.write_int64(4, self.PONADANOALN)?;
-        }
+        os.write_repeated_packed_uint32(10, &self.FEIFDEGKEAP)?;
         if self.ELGANMDPMID != 0 {
-            os.write_uint32(14, self.ELGANMDPMID)?;
+            os.write_uint32(5, self.ELGANMDPMID)?;
         }
         if self.AOEDGHMHGJJ != 0 {
             os.write_uint32(11, self.AOEDGHMHGJJ)?;
+        }
+        if self.PONADANOALN != 0 {
+            os.write_int64(14, self.PONADANOALN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for FJIBDHHOHMH {
 
     fn clear(&mut self) {
         self.FEIFDEGKEAP.clear();
-        self.PONADANOALN = 0;
         self.ELGANMDPMID = 0;
         self.AOEDGHMHGJJ = 0;
+        self.PONADANOALN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FJIBDHHOHMH {
         static instance: FJIBDHHOHMH = FJIBDHHOHMH {
             FEIFDEGKEAP: ::std::vec::Vec::new(),
-            PONADANOALN: 0,
             ELGANMDPMID: 0,
             AOEDGHMHGJJ: 0,
+            PONADANOALN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for FJIBDHHOHMH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FJIBDHHOHMH.proto\"\x95\x01\n\x0bFJIBDHHOHMH\x12\x20\n\x0bFEIFDEGK\
-    EAP\x18\x0f\x20\x03(\rR\x0bFEIFDEGKEAP\x12\x20\n\x0bPONADANOALN\x18\x04\
-    \x20\x01(\x03R\x0bPONADANOALN\x12\x20\n\x0bELGANMDPMID\x18\x0e\x20\x01(\
-    \rR\x0bELGANMDPMID\x12\x20\n\x0bAOEDGHMHGJJ\x18\x0b\x20\x01(\rR\x0bAOEDG\
-    HMHGJJb\x06proto3\
+    EAP\x18\n\x20\x03(\rR\x0bFEIFDEGKEAP\x12\x20\n\x0bELGANMDPMID\x18\x05\
+    \x20\x01(\rR\x0bELGANMDPMID\x12\x20\n\x0bAOEDGHMHGJJ\x18\x0b\x20\x01(\rR\
+    \x0bAOEDGHMHGJJ\x12\x20\n\x0bPONADANOALN\x18\x0e\x20\x01(\x03R\x0bPONADA\
+    NOALNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayerGetTokenCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlayerGetTokenCsReq.LBNBDEKPPFN)
-    pub LBNBDEKPPFN: u32,
-    // @@protoc_insertion_point(field:PlayerGetTokenCsReq.FGOJLPAEJEC)
-    pub FGOJLPAEJEC: u32,
     // @@protoc_insertion_point(field:PlayerGetTokenCsReq.CDGPKOMEPOK)
     pub CDGPKOMEPOK: ::std::string::String,
-    // @@protoc_insertion_point(field:PlayerGetTokenCsReq.MEMPBKCJJFJ)
-    pub MEMPBKCJJFJ: ::std::string::String,
-    // @@protoc_insertion_point(field:PlayerGetTokenCsReq.ICMFPNPIJJF)
-    pub ICMFPNPIJJF: u32,
+    // @@protoc_insertion_point(field:PlayerGetTokenCsReq.uid)
+    pub uid: u32,
     // @@protoc_insertion_point(field:PlayerGetTokenCsReq.BEILKPLGKMN)
     pub BEILKPLGKMN: ::std::string::String,
+    // @@protoc_insertion_point(field:PlayerGetTokenCsReq.LBNBDEKPPFN)
+    pub LBNBDEKPPFN: u32,
+    // @@protoc_insertion_point(field:PlayerGetTokenCsReq.ICMFPNPIJJF)
+    pub ICMFPNPIJJF: u32,
     // @@protoc_insertion_point(field:PlayerGetTokenCsReq.HAEHHCPOAPP)
     pub HAEHHCPOAPP: u32,
-    // @@protoc_insertion_point(field:PlayerGetTokenCsReq.KMONAGFELPG)
-    pub KMONAGFELPG: u32,
+    // @@protoc_insertion_point(field:PlayerGetTokenCsReq.FGOJLPAEJEC)
+    pub FGOJLPAEJEC: u32,
+    // @@protoc_insertion_point(field:PlayerGetTokenCsReq.MEMPBKCJJFJ)
+    pub MEMPBKCJJFJ: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:PlayerGetTokenCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,29 +64,14 @@ impl PlayerGetTokenCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LBNBDEKPPFN",
-            |m: &PlayerGetTokenCsReq| { &m.LBNBDEKPPFN },
-            |m: &mut PlayerGetTokenCsReq| { &mut m.LBNBDEKPPFN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FGOJLPAEJEC",
-            |m: &PlayerGetTokenCsReq| { &m.FGOJLPAEJEC },
-            |m: &mut PlayerGetTokenCsReq| { &mut m.FGOJLPAEJEC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CDGPKOMEPOK",
             |m: &PlayerGetTokenCsReq| { &m.CDGPKOMEPOK },
             |m: &mut PlayerGetTokenCsReq| { &mut m.CDGPKOMEPOK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MEMPBKCJJFJ",
-            |m: &PlayerGetTokenCsReq| { &m.MEMPBKCJJFJ },
-            |m: &mut PlayerGetTokenCsReq| { &mut m.MEMPBKCJJFJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ICMFPNPIJJF",
-            |m: &PlayerGetTokenCsReq| { &m.ICMFPNPIJJF },
-            |m: &mut PlayerGetTokenCsReq| { &mut m.ICMFPNPIJJF },
+            "uid",
+            |m: &PlayerGetTokenCsReq| { &m.uid },
+            |m: &mut PlayerGetTokenCsReq| { &mut m.uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BEILKPLGKMN",
@@ -94,14 +79,29 @@ impl PlayerGetTokenCsReq {
             |m: &mut PlayerGetTokenCsReq| { &mut m.BEILKPLGKMN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LBNBDEKPPFN",
+            |m: &PlayerGetTokenCsReq| { &m.LBNBDEKPPFN },
+            |m: &mut PlayerGetTokenCsReq| { &mut m.LBNBDEKPPFN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ICMFPNPIJJF",
+            |m: &PlayerGetTokenCsReq| { &m.ICMFPNPIJJF },
+            |m: &mut PlayerGetTokenCsReq| { &mut m.ICMFPNPIJJF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HAEHHCPOAPP",
             |m: &PlayerGetTokenCsReq| { &m.HAEHHCPOAPP },
             |m: &mut PlayerGetTokenCsReq| { &mut m.HAEHHCPOAPP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KMONAGFELPG",
-            |m: &PlayerGetTokenCsReq| { &m.KMONAGFELPG },
-            |m: &mut PlayerGetTokenCsReq| { &mut m.KMONAGFELPG },
+            "FGOJLPAEJEC",
+            |m: &PlayerGetTokenCsReq| { &m.FGOJLPAEJEC },
+            |m: &mut PlayerGetTokenCsReq| { &mut m.FGOJLPAEJEC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MEMPBKCJJFJ",
+            |m: &PlayerGetTokenCsReq| { &m.MEMPBKCJJFJ },
+            |m: &mut PlayerGetTokenCsReq| { &mut m.MEMPBKCJJFJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayerGetTokenCsReq>(
             "PlayerGetTokenCsReq",
@@ -121,29 +121,29 @@ impl ::protobuf::Message for PlayerGetTokenCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                42 => {
+                    self.CDGPKOMEPOK = is.read_string()?;
+                },
+                88 => {
+                    self.uid = is.read_uint32()?;
+                },
+                106 => {
+                    self.BEILKPLGKMN = is.read_string()?;
+                },
+                120 => {
                     self.LBNBDEKPPFN = is.read_uint32()?;
                 },
                 48 => {
-                    self.FGOJLPAEJEC = is.read_uint32()?;
-                },
-                74 => {
-                    self.CDGPKOMEPOK = is.read_string()?;
-                },
-                18 => {
-                    self.MEMPBKCJJFJ = is.read_string()?;
-                },
-                64 => {
                     self.ICMFPNPIJJF = is.read_uint32()?;
                 },
-                26 => {
-                    self.BEILKPLGKMN = is.read_string()?;
-                },
-                88 => {
+                56 => {
                     self.HAEHHCPOAPP = is.read_uint32()?;
                 },
-                32 => {
-                    self.KMONAGFELPG = is.read_uint32()?;
+                24 => {
+                    self.FGOJLPAEJEC = is.read_uint32()?;
+                },
+                10 => {
+                    self.MEMPBKCJJFJ = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -157,29 +157,29 @@ impl ::protobuf::Message for PlayerGetTokenCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LBNBDEKPPFN != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.LBNBDEKPPFN);
-        }
-        if self.FGOJLPAEJEC != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.FGOJLPAEJEC);
-        }
         if !self.CDGPKOMEPOK.is_empty() {
-            my_size += ::protobuf::rt::string_size(9, &self.CDGPKOMEPOK);
+            my_size += ::protobuf::rt::string_size(5, &self.CDGPKOMEPOK);
         }
-        if !self.MEMPBKCJJFJ.is_empty() {
-            my_size += ::protobuf::rt::string_size(2, &self.MEMPBKCJJFJ);
-        }
-        if self.ICMFPNPIJJF != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.ICMFPNPIJJF);
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.uid);
         }
         if !self.BEILKPLGKMN.is_empty() {
-            my_size += ::protobuf::rt::string_size(3, &self.BEILKPLGKMN);
+            my_size += ::protobuf::rt::string_size(13, &self.BEILKPLGKMN);
+        }
+        if self.LBNBDEKPPFN != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.LBNBDEKPPFN);
+        }
+        if self.ICMFPNPIJJF != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.ICMFPNPIJJF);
         }
         if self.HAEHHCPOAPP != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.HAEHHCPOAPP);
+            my_size += ::protobuf::rt::uint32_size(7, self.HAEHHCPOAPP);
         }
-        if self.KMONAGFELPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.KMONAGFELPG);
+        if self.FGOJLPAEJEC != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.FGOJLPAEJEC);
+        }
+        if !self.MEMPBKCJJFJ.is_empty() {
+            my_size += ::protobuf::rt::string_size(1, &self.MEMPBKCJJFJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -187,29 +187,29 @@ impl ::protobuf::Message for PlayerGetTokenCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LBNBDEKPPFN != 0 {
-            os.write_uint32(7, self.LBNBDEKPPFN)?;
-        }
-        if self.FGOJLPAEJEC != 0 {
-            os.write_uint32(6, self.FGOJLPAEJEC)?;
-        }
         if !self.CDGPKOMEPOK.is_empty() {
-            os.write_string(9, &self.CDGPKOMEPOK)?;
+            os.write_string(5, &self.CDGPKOMEPOK)?;
         }
-        if !self.MEMPBKCJJFJ.is_empty() {
-            os.write_string(2, &self.MEMPBKCJJFJ)?;
-        }
-        if self.ICMFPNPIJJF != 0 {
-            os.write_uint32(8, self.ICMFPNPIJJF)?;
+        if self.uid != 0 {
+            os.write_uint32(11, self.uid)?;
         }
         if !self.BEILKPLGKMN.is_empty() {
-            os.write_string(3, &self.BEILKPLGKMN)?;
+            os.write_string(13, &self.BEILKPLGKMN)?;
+        }
+        if self.LBNBDEKPPFN != 0 {
+            os.write_uint32(15, self.LBNBDEKPPFN)?;
+        }
+        if self.ICMFPNPIJJF != 0 {
+            os.write_uint32(6, self.ICMFPNPIJJF)?;
         }
         if self.HAEHHCPOAPP != 0 {
-            os.write_uint32(11, self.HAEHHCPOAPP)?;
+            os.write_uint32(7, self.HAEHHCPOAPP)?;
         }
-        if self.KMONAGFELPG != 0 {
-            os.write_uint32(4, self.KMONAGFELPG)?;
+        if self.FGOJLPAEJEC != 0 {
+            os.write_uint32(3, self.FGOJLPAEJEC)?;
+        }
+        if !self.MEMPBKCJJFJ.is_empty() {
+            os.write_string(1, &self.MEMPBKCJJFJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -228,27 +228,27 @@ impl ::protobuf::Message for PlayerGetTokenCsReq {
     }
 
     fn clear(&mut self) {
-        self.LBNBDEKPPFN = 0;
-        self.FGOJLPAEJEC = 0;
         self.CDGPKOMEPOK.clear();
-        self.MEMPBKCJJFJ.clear();
-        self.ICMFPNPIJJF = 0;
+        self.uid = 0;
         self.BEILKPLGKMN.clear();
+        self.LBNBDEKPPFN = 0;
+        self.ICMFPNPIJJF = 0;
         self.HAEHHCPOAPP = 0;
-        self.KMONAGFELPG = 0;
+        self.FGOJLPAEJEC = 0;
+        self.MEMPBKCJJFJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayerGetTokenCsReq {
         static instance: PlayerGetTokenCsReq = PlayerGetTokenCsReq {
-            LBNBDEKPPFN: 0,
-            FGOJLPAEJEC: 0,
             CDGPKOMEPOK: ::std::string::String::new(),
-            MEMPBKCJJFJ: ::std::string::String::new(),
-            ICMFPNPIJJF: 0,
+            uid: 0,
             BEILKPLGKMN: ::std::string::String::new(),
+            LBNBDEKPPFN: 0,
+            ICMFPNPIJJF: 0,
             HAEHHCPOAPP: 0,
-            KMONAGFELPG: 0,
+            FGOJLPAEJEC: 0,
+            MEMPBKCJJFJ: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -273,14 +273,14 @@ impl ::protobuf::reflect::ProtobufValue for PlayerGetTokenCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19PlayerGetTokenCsReq.proto\"\xa5\x02\n\x13PlayerGetTokenCsReq\x12\
-    \x20\n\x0bLBNBDEKPPFN\x18\x07\x20\x01(\rR\x0bLBNBDEKPPFN\x12\x20\n\x0bFG\
-    OJLPAEJEC\x18\x06\x20\x01(\rR\x0bFGOJLPAEJEC\x12\x20\n\x0bCDGPKOMEPOK\
-    \x18\t\x20\x01(\tR\x0bCDGPKOMEPOK\x12\x20\n\x0bMEMPBKCJJFJ\x18\x02\x20\
-    \x01(\tR\x0bMEMPBKCJJFJ\x12\x20\n\x0bICMFPNPIJJF\x18\x08\x20\x01(\rR\x0b\
-    ICMFPNPIJJF\x12\x20\n\x0bBEILKPLGKMN\x18\x03\x20\x01(\tR\x0bBEILKPLGKMN\
-    \x12\x20\n\x0bHAEHHCPOAPP\x18\x0b\x20\x01(\rR\x0bHAEHHCPOAPP\x12\x20\n\
-    \x0bKMONAGFELPG\x18\x04\x20\x01(\rR\x0bKMONAGFELPGb\x06proto3\
+    \n\x19PlayerGetTokenCsReq.proto\"\x95\x02\n\x13PlayerGetTokenCsReq\x12\
+    \x20\n\x0bCDGPKOMEPOK\x18\x05\x20\x01(\tR\x0bCDGPKOMEPOK\x12\x10\n\x03ui\
+    d\x18\x0b\x20\x01(\rR\x03uid\x12\x20\n\x0bBEILKPLGKMN\x18\r\x20\x01(\tR\
+    \x0bBEILKPLGKMN\x12\x20\n\x0bLBNBDEKPPFN\x18\x0f\x20\x01(\rR\x0bLBNBDEKP\
+    PFN\x12\x20\n\x0bICMFPNPIJJF\x18\x06\x20\x01(\rR\x0bICMFPNPIJJF\x12\x20\
+    \n\x0bHAEHHCPOAPP\x18\x07\x20\x01(\rR\x0bHAEHHCPOAPP\x12\x20\n\x0bFGOJLP\
+    AEJEC\x18\x03\x20\x01(\rR\x0bFGOJLPAEJEC\x12\x20\n\x0bMEMPBKCJJFJ\x18\
+    \x01\x20\x01(\tR\x0bMEMPBKCJJFJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,10 +30,10 @@ pub struct TakeTalkRewardScRsp {
     // message fields
     // @@protoc_insertion_point(field:TakeTalkRewardScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:TakeTalkRewardScRsp.BHELBOHKBBM)
-    pub BHELBOHKBBM: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:TakeTalkRewardScRsp.IEMOEOIMHMA)
     pub IEMOEOIMHMA: u32,
+    // @@protoc_insertion_point(field:TakeTalkRewardScRsp.BHELBOHKBBM)
+    pub BHELBOHKBBM: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:TakeTalkRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl TakeTalkRewardScRsp {
             |m: &TakeTalkRewardScRsp| { &m.retcode },
             |m: &mut TakeTalkRewardScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "BHELBOHKBBM",
-            |m: &TakeTalkRewardScRsp| { &m.BHELBOHKBBM },
-            |m: &mut TakeTalkRewardScRsp| { &mut m.BHELBOHKBBM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IEMOEOIMHMA",
             |m: &TakeTalkRewardScRsp| { &m.IEMOEOIMHMA },
             |m: &mut TakeTalkRewardScRsp| { &mut m.IEMOEOIMHMA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "BHELBOHKBBM",
+            |m: &TakeTalkRewardScRsp| { &m.BHELBOHKBBM },
+            |m: &mut TakeTalkRewardScRsp| { &mut m.BHELBOHKBBM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeTalkRewardScRsp>(
             "TakeTalkRewardScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for TakeTalkRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
-                },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHELBOHKBBM)?;
                 },
                 80 => {
                     self.IEMOEOIMHMA = is.read_uint32()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHELBOHKBBM)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for TakeTalkRewardScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+        }
+        if self.IEMOEOIMHMA != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.IEMOEOIMHMA);
         }
         if let Some(v) = self.BHELBOHKBBM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.IEMOEOIMHMA != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.IEMOEOIMHMA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for TakeTalkRewardScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
-        }
-        if let Some(v) = self.BHELBOHKBBM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            os.write_uint32(5, self.retcode)?;
         }
         if self.IEMOEOIMHMA != 0 {
             os.write_uint32(10, self.IEMOEOIMHMA)?;
+        }
+        if let Some(v) = self.BHELBOHKBBM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for TakeTalkRewardScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.BHELBOHKBBM.clear();
         self.IEMOEOIMHMA = 0;
+        self.BHELBOHKBBM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeTalkRewardScRsp {
         static instance: TakeTalkRewardScRsp = TakeTalkRewardScRsp {
             retcode: 0,
-            BHELBOHKBBM: ::protobuf::MessageField::none(),
             IEMOEOIMHMA: 0,
+            BHELBOHKBBM: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for TakeTalkRewardScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19TakeTalkRewardScRsp.proto\x1a\x0eItemList.proto\"~\n\x13TakeTalkRe\
-    wardScRsp\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12+\n\x0b\
-    BHELBOHKBBM\x18\r\x20\x01(\x0b2\t.ItemListR\x0bBHELBOHKBBM\x12\x20\n\x0b\
-    IEMOEOIMHMA\x18\n\x20\x01(\rR\x0bIEMOEOIMHMAb\x06proto3\
+    wardScRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12\x20\n\
+    \x0bIEMOEOIMHMA\x18\n\x20\x01(\rR\x0bIEMOEOIMHMA\x12+\n\x0bBHELBOHKBBM\
+    \x18\x0b\x20\x01(\x0b2\t.ItemListR\x0bBHELBOHKBBMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

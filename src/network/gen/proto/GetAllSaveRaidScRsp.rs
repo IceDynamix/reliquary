@@ -82,7 +82,7 @@ impl ::protobuf::Message for GetAllSaveRaidScRsp {
                 34 => {
                     self.NPJHICINONA.push(is.read_message()?);
                 },
-                96 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for GetAllSaveRaidScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -114,7 +114,7 @@ impl ::protobuf::Message for GetAllSaveRaidScRsp {
             ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for GetAllSaveRaidScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19GetAllSaveRaidScRsp.proto\x1a\x11JKDINNEDBAO.proto\"_\n\x13GetAllS\
     aveRaidScRsp\x12.\n\x0bNPJHICINONA\x18\x04\x20\x03(\x0b2\x0c.JKDINNEDBAO\
-    R\x0bNPJHICINONA\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcodeb\
+    R\x0bNPJHICINONA\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcodeb\
     \x06proto3\
 ";
 

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HDFKPEEBGEN {
     // message fields
-    // @@protoc_insertion_point(field:HDFKPEEBGEN.ELGANMDPMID)
-    pub ELGANMDPMID: u32,
     // @@protoc_insertion_point(field:HDFKPEEBGEN.NNDEOKKKKPE)
     pub NNDEOKKKKPE: u32,
+    // @@protoc_insertion_point(field:HDFKPEEBGEN.ELGANMDPMID)
+    pub ELGANMDPMID: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HDFKPEEBGEN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl HDFKPEEBGEN {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ELGANMDPMID",
-            |m: &HDFKPEEBGEN| { &m.ELGANMDPMID },
-            |m: &mut HDFKPEEBGEN| { &mut m.ELGANMDPMID },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NNDEOKKKKPE",
             |m: &HDFKPEEBGEN| { &m.NNDEOKKKKPE },
             |m: &mut HDFKPEEBGEN| { &mut m.NNDEOKKKKPE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ELGANMDPMID",
+            |m: &HDFKPEEBGEN| { &m.ELGANMDPMID },
+            |m: &mut HDFKPEEBGEN| { &mut m.ELGANMDPMID },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HDFKPEEBGEN>(
             "HDFKPEEBGEN",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for HDFKPEEBGEN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.ELGANMDPMID = is.read_uint32()?;
-                },
                 64 => {
                     self.NNDEOKKKKPE = is.read_uint32()?;
+                },
+                32 => {
+                    self.ELGANMDPMID = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for HDFKPEEBGEN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ELGANMDPMID != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.ELGANMDPMID);
-        }
         if self.NNDEOKKKKPE != 0 {
             my_size += ::protobuf::rt::uint32_size(8, self.NNDEOKKKKPE);
+        }
+        if self.ELGANMDPMID != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.ELGANMDPMID);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for HDFKPEEBGEN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ELGANMDPMID != 0 {
-            os.write_uint32(1, self.ELGANMDPMID)?;
-        }
         if self.NNDEOKKKKPE != 0 {
             os.write_uint32(8, self.NNDEOKKKKPE)?;
+        }
+        if self.ELGANMDPMID != 0 {
+            os.write_uint32(4, self.ELGANMDPMID)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for HDFKPEEBGEN {
     }
 
     fn clear(&mut self) {
-        self.ELGANMDPMID = 0;
         self.NNDEOKKKKPE = 0;
+        self.ELGANMDPMID = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HDFKPEEBGEN {
         static instance: HDFKPEEBGEN = HDFKPEEBGEN {
-            ELGANMDPMID: 0,
             NNDEOKKKKPE: 0,
+            ELGANMDPMID: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for HDFKPEEBGEN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HDFKPEEBGEN.proto\"Q\n\x0bHDFKPEEBGEN\x12\x20\n\x0bELGANMDPMID\x18\
-    \x01\x20\x01(\rR\x0bELGANMDPMID\x12\x20\n\x0bNNDEOKKKKPE\x18\x08\x20\x01\
-    (\rR\x0bNNDEOKKKKPEb\x06proto3\
+    \n\x11HDFKPEEBGEN.proto\"Q\n\x0bHDFKPEEBGEN\x12\x20\n\x0bNNDEOKKKKPE\x18\
+    \x08\x20\x01(\rR\x0bNNDEOKKKKPE\x12\x20\n\x0bELGANMDPMID\x18\x04\x20\x01\
+    (\rR\x0bELGANMDPMIDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

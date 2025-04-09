@@ -79,10 +79,10 @@ impl ::protobuf::Message for SetTurnFoodSwitchCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                8 => {
                     self.JCAKHHKFDFN = is.read_enum_or_unknown()?;
                 },
-                80 => {
+                104 => {
                     self.BNDLHJHALMB = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SetTurnFoodSwitchCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.JCAKHHKFDFN != ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::TURN_FOOD_SWITCH_NONE) {
-            my_size += ::protobuf::rt::int32_size(7, self.JCAKHHKFDFN.value());
+            my_size += ::protobuf::rt::int32_size(1, self.JCAKHHKFDFN.value());
         }
         if self.BNDLHJHALMB != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for SetTurnFoodSwitchCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.JCAKHHKFDFN != ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::TURN_FOOD_SWITCH_NONE) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.JCAKHHKFDFN))?;
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.JCAKHHKFDFN))?;
         }
         if self.BNDLHJHALMB != false {
-            os.write_bool(10, self.BNDLHJHALMB)?;
+            os.write_bool(13, self.BNDLHJHALMB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for SetTurnFoodSwitchCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cSetTurnFoodSwitchCsReq.proto\x1a\x14TurnFoodSwitch.proto\"m\n\x16S\
-    etTurnFoodSwitchCsReq\x121\n\x0bJCAKHHKFDFN\x18\x07\x20\x01(\x0e2\x0f.Tu\
-    rnFoodSwitchR\x0bJCAKHHKFDFN\x12\x20\n\x0bBNDLHJHALMB\x18\n\x20\x01(\x08\
+    etTurnFoodSwitchCsReq\x121\n\x0bJCAKHHKFDFN\x18\x01\x20\x01(\x0e2\x0f.Tu\
+    rnFoodSwitchR\x0bJCAKHHKFDFN\x12\x20\n\x0bBNDLHJHALMB\x18\r\x20\x01(\x08\
     R\x0bBNDLHJHALMBb\x06proto3\
 ";
 

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TextJoinSaveCsReq {
     // message fields
+    // @@protoc_insertion_point(field:TextJoinSaveCsReq.HBJKEEBDJML)
+    pub HBJKEEBDJML: ::std::string::String,
     // @@protoc_insertion_point(field:TextJoinSaveCsReq.ADINNBPINAK)
     pub ADINNBPINAK: u32,
     // @@protoc_insertion_point(field:TextJoinSaveCsReq.FANOKEMBMPB)
     pub FANOKEMBMPB: u32,
-    // @@protoc_insertion_point(field:TextJoinSaveCsReq.HBJKEEBDJML)
-    pub HBJKEEBDJML: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:TextJoinSaveCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl TextJoinSaveCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HBJKEEBDJML",
+            |m: &TextJoinSaveCsReq| { &m.HBJKEEBDJML },
+            |m: &mut TextJoinSaveCsReq| { &mut m.HBJKEEBDJML },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ADINNBPINAK",
             |m: &TextJoinSaveCsReq| { &m.ADINNBPINAK },
             |m: &mut TextJoinSaveCsReq| { &mut m.ADINNBPINAK },
@@ -62,11 +67,6 @@ impl TextJoinSaveCsReq {
             "FANOKEMBMPB",
             |m: &TextJoinSaveCsReq| { &m.FANOKEMBMPB },
             |m: &mut TextJoinSaveCsReq| { &mut m.FANOKEMBMPB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HBJKEEBDJML",
-            |m: &TextJoinSaveCsReq| { &m.HBJKEEBDJML },
-            |m: &mut TextJoinSaveCsReq| { &mut m.HBJKEEBDJML },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TextJoinSaveCsReq>(
             "TextJoinSaveCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for TextJoinSaveCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                66 => {
+                    self.HBJKEEBDJML = is.read_string()?;
+                },
+                120 => {
                     self.ADINNBPINAK = is.read_uint32()?;
                 },
-                16 => {
+                112 => {
                     self.FANOKEMBMPB = is.read_uint32()?;
-                },
-                82 => {
-                    self.HBJKEEBDJML = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for TextJoinSaveCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if !self.HBJKEEBDJML.is_empty() {
+            my_size += ::protobuf::rt::string_size(8, &self.HBJKEEBDJML);
+        }
         if self.ADINNBPINAK != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.ADINNBPINAK);
+            my_size += ::protobuf::rt::uint32_size(15, self.ADINNBPINAK);
         }
         if self.FANOKEMBMPB != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.FANOKEMBMPB);
-        }
-        if !self.HBJKEEBDJML.is_empty() {
-            my_size += ::protobuf::rt::string_size(10, &self.HBJKEEBDJML);
+            my_size += ::protobuf::rt::uint32_size(14, self.FANOKEMBMPB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for TextJoinSaveCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if !self.HBJKEEBDJML.is_empty() {
+            os.write_string(8, &self.HBJKEEBDJML)?;
+        }
         if self.ADINNBPINAK != 0 {
-            os.write_uint32(14, self.ADINNBPINAK)?;
+            os.write_uint32(15, self.ADINNBPINAK)?;
         }
         if self.FANOKEMBMPB != 0 {
-            os.write_uint32(2, self.FANOKEMBMPB)?;
-        }
-        if !self.HBJKEEBDJML.is_empty() {
-            os.write_string(10, &self.HBJKEEBDJML)?;
+            os.write_uint32(14, self.FANOKEMBMPB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for TextJoinSaveCsReq {
     }
 
     fn clear(&mut self) {
+        self.HBJKEEBDJML.clear();
         self.ADINNBPINAK = 0;
         self.FANOKEMBMPB = 0;
-        self.HBJKEEBDJML.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TextJoinSaveCsReq {
         static instance: TextJoinSaveCsReq = TextJoinSaveCsReq {
+            HBJKEEBDJML: ::std::string::String::new(),
             ADINNBPINAK: 0,
             FANOKEMBMPB: 0,
-            HBJKEEBDJML: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for TextJoinSaveCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17TextJoinSaveCsReq.proto\"y\n\x11TextJoinSaveCsReq\x12\x20\n\x0bADI\
-    NNBPINAK\x18\x0e\x20\x01(\rR\x0bADINNBPINAK\x12\x20\n\x0bFANOKEMBMPB\x18\
-    \x02\x20\x01(\rR\x0bFANOKEMBMPB\x12\x20\n\x0bHBJKEEBDJML\x18\n\x20\x01(\
-    \tR\x0bHBJKEEBDJMLb\x06proto3\
+    \n\x17TextJoinSaveCsReq.proto\"y\n\x11TextJoinSaveCsReq\x12\x20\n\x0bHBJ\
+    KEEBDJML\x18\x08\x20\x01(\tR\x0bHBJKEEBDJML\x12\x20\n\x0bADINNBPINAK\x18\
+    \x0f\x20\x01(\rR\x0bADINNBPINAK\x12\x20\n\x0bFANOKEMBMPB\x18\x0e\x20\x01\
+    (\rR\x0bFANOKEMBMPBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

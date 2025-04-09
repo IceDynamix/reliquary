@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AFIFEGDEGHJ {
     // message fields
-    // @@protoc_insertion_point(field:AFIFEGDEGHJ.PKFEOCAGECF)
-    pub PKFEOCAGECF: ::std::vec::Vec<super::GPGGAINLLIN::GPGGAINLLIN>,
     // @@protoc_insertion_point(field:AFIFEGDEGHJ.HIODKMAPOAE)
     pub HIODKMAPOAE: u32,
+    // @@protoc_insertion_point(field:AFIFEGDEGHJ.PKFEOCAGECF)
+    pub PKFEOCAGECF: ::std::vec::Vec<super::GPGGAINLLIN::GPGGAINLLIN>,
     // special fields
     // @@protoc_insertion_point(special_field:AFIFEGDEGHJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl AFIFEGDEGHJ {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PKFEOCAGECF",
-            |m: &AFIFEGDEGHJ| { &m.PKFEOCAGECF },
-            |m: &mut AFIFEGDEGHJ| { &mut m.PKFEOCAGECF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HIODKMAPOAE",
             |m: &AFIFEGDEGHJ| { &m.HIODKMAPOAE },
             |m: &mut AFIFEGDEGHJ| { &mut m.HIODKMAPOAE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PKFEOCAGECF",
+            |m: &AFIFEGDEGHJ| { &m.PKFEOCAGECF },
+            |m: &mut AFIFEGDEGHJ| { &mut m.PKFEOCAGECF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AFIFEGDEGHJ>(
             "AFIFEGDEGHJ",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for AFIFEGDEGHJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    self.PKFEOCAGECF.push(is.read_message()?);
-                },
-                40 => {
+                56 => {
                     self.HIODKMAPOAE = is.read_uint32()?;
+                },
+                74 => {
+                    self.PKFEOCAGECF.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for AFIFEGDEGHJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.HIODKMAPOAE != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.HIODKMAPOAE);
+        }
         for value in &self.PKFEOCAGECF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.HIODKMAPOAE != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.HIODKMAPOAE);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.PKFEOCAGECF {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        };
         if self.HIODKMAPOAE != 0 {
-            os.write_uint32(5, self.HIODKMAPOAE)?;
+            os.write_uint32(7, self.HIODKMAPOAE)?;
         }
+        for v in &self.PKFEOCAGECF {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for AFIFEGDEGHJ {
     }
 
     fn clear(&mut self) {
-        self.PKFEOCAGECF.clear();
         self.HIODKMAPOAE = 0;
+        self.PKFEOCAGECF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AFIFEGDEGHJ {
         static instance: AFIFEGDEGHJ = AFIFEGDEGHJ {
-            PKFEOCAGECF: ::std::vec::Vec::new(),
             HIODKMAPOAE: 0,
+            PKFEOCAGECF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for AFIFEGDEGHJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AFIFEGDEGHJ.proto\x1a\x11GPGGAINLLIN.proto\"_\n\x0bAFIFEGDEGHJ\x12\
-    .\n\x0bPKFEOCAGECF\x18\x06\x20\x03(\x0b2\x0c.GPGGAINLLINR\x0bPKFEOCAGECF\
-    \x12\x20\n\x0bHIODKMAPOAE\x18\x05\x20\x01(\rR\x0bHIODKMAPOAEb\x06proto3\
+    \x20\n\x0bHIODKMAPOAE\x18\x07\x20\x01(\rR\x0bHIODKMAPOAE\x12.\n\x0bPKFEO\
+    CAGECF\x18\t\x20\x03(\x0b2\x0c.GPGGAINLLINR\x0bPKFEOCAGECFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

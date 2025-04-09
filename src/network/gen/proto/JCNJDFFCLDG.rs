@@ -30,16 +30,16 @@ pub struct JCNJDFFCLDG {
     // message fields
     // @@protoc_insertion_point(field:JCNJDFFCLDG.FBNHDEFNECI)
     pub FBNHDEFNECI: i32,
-    // @@protoc_insertion_point(field:JCNJDFFCLDG.JNBOONPDOCE)
-    pub JNBOONPDOCE: bool,
-    // @@protoc_insertion_point(field:JCNJDFFCLDG.OOPKIKMBBHH)
-    pub OOPKIKMBBHH: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:JCNJDFFCLDG.KEEDPLPACLP)
-    pub KEEDPLPACLP: ::protobuf::MessageField<super::ODNNKBIMEFH::ODNNKBIMEFH>,
-    // @@protoc_insertion_point(field:JCNJDFFCLDG.ELGANMDPMID)
-    pub ELGANMDPMID: u32,
     // @@protoc_insertion_point(field:JCNJDFFCLDG.LKEBLPIJMGB)
     pub LKEBLPIJMGB: i32,
+    // @@protoc_insertion_point(field:JCNJDFFCLDG.OOPKIKMBBHH)
+    pub OOPKIKMBBHH: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:JCNJDFFCLDG.ELGANMDPMID)
+    pub ELGANMDPMID: u32,
+    // @@protoc_insertion_point(field:JCNJDFFCLDG.KEEDPLPACLP)
+    pub KEEDPLPACLP: ::protobuf::MessageField<super::ODNNKBIMEFH::ODNNKBIMEFH>,
+    // @@protoc_insertion_point(field:JCNJDFFCLDG.JNBOONPDOCE)
+    pub JNBOONPDOCE: bool,
     // special fields
     // @@protoc_insertion_point(special_field:JCNJDFFCLDG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,14 +65,19 @@ impl JCNJDFFCLDG {
             |m: &mut JCNJDFFCLDG| { &mut m.FBNHDEFNECI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JNBOONPDOCE",
-            |m: &JCNJDFFCLDG| { &m.JNBOONPDOCE },
-            |m: &mut JCNJDFFCLDG| { &mut m.JNBOONPDOCE },
+            "LKEBLPIJMGB",
+            |m: &JCNJDFFCLDG| { &m.LKEBLPIJMGB },
+            |m: &mut JCNJDFFCLDG| { &mut m.LKEBLPIJMGB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "OOPKIKMBBHH",
             |m: &JCNJDFFCLDG| { &m.OOPKIKMBBHH },
             |m: &mut JCNJDFFCLDG| { &mut m.OOPKIKMBBHH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ELGANMDPMID",
+            |m: &JCNJDFFCLDG| { &m.ELGANMDPMID },
+            |m: &mut JCNJDFFCLDG| { &mut m.ELGANMDPMID },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ODNNKBIMEFH::ODNNKBIMEFH>(
             "KEEDPLPACLP",
@@ -80,14 +85,9 @@ impl JCNJDFFCLDG {
             |m: &mut JCNJDFFCLDG| { &mut m.KEEDPLPACLP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ELGANMDPMID",
-            |m: &JCNJDFFCLDG| { &m.ELGANMDPMID },
-            |m: &mut JCNJDFFCLDG| { &mut m.ELGANMDPMID },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LKEBLPIJMGB",
-            |m: &JCNJDFFCLDG| { &m.LKEBLPIJMGB },
-            |m: &mut JCNJDFFCLDG| { &mut m.LKEBLPIJMGB },
+            "JNBOONPDOCE",
+            |m: &JCNJDFFCLDG| { &m.JNBOONPDOCE },
+            |m: &mut JCNJDFFCLDG| { &mut m.JNBOONPDOCE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JCNJDFFCLDG>(
             "JCNJDFFCLDG",
@@ -110,23 +110,23 @@ impl ::protobuf::Message for JCNJDFFCLDG {
                 88 => {
                     self.FBNHDEFNECI = is.read_int32()?;
                 },
-                64 => {
-                    self.JNBOONPDOCE = is.read_bool()?;
+                8 => {
+                    self.LKEBLPIJMGB = is.read_int32()?;
                 },
-                82 => {
+                50 => {
                     is.read_repeated_packed_uint32_into(&mut self.OOPKIKMBBHH)?;
                 },
-                80 => {
+                48 => {
                     self.OOPKIKMBBHH.push(is.read_uint32()?);
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KEEDPLPACLP)?;
-                },
-                120 => {
+                72 => {
                     self.ELGANMDPMID = is.read_uint32()?;
                 },
-                96 => {
-                    self.LKEBLPIJMGB = is.read_int32()?;
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KEEDPLPACLP)?;
+                },
+                80 => {
+                    self.JNBOONPDOCE = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -143,19 +143,19 @@ impl ::protobuf::Message for JCNJDFFCLDG {
         if self.FBNHDEFNECI != 0 {
             my_size += ::protobuf::rt::int32_size(11, self.FBNHDEFNECI);
         }
-        if self.JNBOONPDOCE != false {
-            my_size += 1 + 1;
+        if self.LKEBLPIJMGB != 0 {
+            my_size += ::protobuf::rt::int32_size(1, self.LKEBLPIJMGB);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.OOPKIKMBBHH);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.OOPKIKMBBHH);
+        if self.ELGANMDPMID != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.ELGANMDPMID);
+        }
         if let Some(v) = self.KEEDPLPACLP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.ELGANMDPMID != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.ELGANMDPMID);
-        }
-        if self.LKEBLPIJMGB != 0 {
-            my_size += ::protobuf::rt::int32_size(12, self.LKEBLPIJMGB);
+        if self.JNBOONPDOCE != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -166,18 +166,18 @@ impl ::protobuf::Message for JCNJDFFCLDG {
         if self.FBNHDEFNECI != 0 {
             os.write_int32(11, self.FBNHDEFNECI)?;
         }
-        if self.JNBOONPDOCE != false {
-            os.write_bool(8, self.JNBOONPDOCE)?;
-        }
-        os.write_repeated_packed_uint32(10, &self.OOPKIKMBBHH)?;
-        if let Some(v) = self.KEEDPLPACLP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
-        if self.ELGANMDPMID != 0 {
-            os.write_uint32(15, self.ELGANMDPMID)?;
-        }
         if self.LKEBLPIJMGB != 0 {
-            os.write_int32(12, self.LKEBLPIJMGB)?;
+            os.write_int32(1, self.LKEBLPIJMGB)?;
+        }
+        os.write_repeated_packed_uint32(6, &self.OOPKIKMBBHH)?;
+        if self.ELGANMDPMID != 0 {
+            os.write_uint32(9, self.ELGANMDPMID)?;
+        }
+        if let Some(v) = self.KEEDPLPACLP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        }
+        if self.JNBOONPDOCE != false {
+            os.write_bool(10, self.JNBOONPDOCE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,22 +197,22 @@ impl ::protobuf::Message for JCNJDFFCLDG {
 
     fn clear(&mut self) {
         self.FBNHDEFNECI = 0;
-        self.JNBOONPDOCE = false;
-        self.OOPKIKMBBHH.clear();
-        self.KEEDPLPACLP.clear();
-        self.ELGANMDPMID = 0;
         self.LKEBLPIJMGB = 0;
+        self.OOPKIKMBBHH.clear();
+        self.ELGANMDPMID = 0;
+        self.KEEDPLPACLP.clear();
+        self.JNBOONPDOCE = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JCNJDFFCLDG {
         static instance: JCNJDFFCLDG = JCNJDFFCLDG {
             FBNHDEFNECI: 0,
-            JNBOONPDOCE: false,
-            OOPKIKMBBHH: ::std::vec::Vec::new(),
-            KEEDPLPACLP: ::protobuf::MessageField::none(),
-            ELGANMDPMID: 0,
             LKEBLPIJMGB: 0,
+            OOPKIKMBBHH: ::std::vec::Vec::new(),
+            ELGANMDPMID: 0,
+            KEEDPLPACLP: ::protobuf::MessageField::none(),
+            JNBOONPDOCE: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,11 +239,11 @@ impl ::protobuf::reflect::ProtobufValue for JCNJDFFCLDG {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JCNJDFFCLDG.proto\x1a\x11ODNNKBIMEFH.proto\"\xe7\x01\n\x0bJCNJDFFC\
     LDG\x12\x20\n\x0bFBNHDEFNECI\x18\x0b\x20\x01(\x05R\x0bFBNHDEFNECI\x12\
-    \x20\n\x0bJNBOONPDOCE\x18\x08\x20\x01(\x08R\x0bJNBOONPDOCE\x12\x20\n\x0b\
-    OOPKIKMBBHH\x18\n\x20\x03(\rR\x0bOOPKIKMBBHH\x12.\n\x0bKEEDPLPACLP\x18\r\
-    \x20\x01(\x0b2\x0c.ODNNKBIMEFHR\x0bKEEDPLPACLP\x12\x20\n\x0bELGANMDPMID\
-    \x18\x0f\x20\x01(\rR\x0bELGANMDPMID\x12\x20\n\x0bLKEBLPIJMGB\x18\x0c\x20\
-    \x01(\x05R\x0bLKEBLPIJMGBb\x06proto3\
+    \x20\n\x0bLKEBLPIJMGB\x18\x01\x20\x01(\x05R\x0bLKEBLPIJMGB\x12\x20\n\x0b\
+    OOPKIKMBBHH\x18\x06\x20\x03(\rR\x0bOOPKIKMBBHH\x12\x20\n\x0bELGANMDPMID\
+    \x18\t\x20\x01(\rR\x0bELGANMDPMID\x12.\n\x0bKEEDPLPACLP\x18\x0c\x20\x01(\
+    \x0b2\x0c.ODNNKBIMEFHR\x0bKEEDPLPACLP\x12\x20\n\x0bJNBOONPDOCE\x18\n\x20\
+    \x01(\x08R\x0bJNBOONPDOCEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

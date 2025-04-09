@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdateMechanismBarScNotify {
     // message fields
-    // @@protoc_insertion_point(field:UpdateMechanismBarScNotify.GIGKDAPGNME)
-    pub GIGKDAPGNME: ::protobuf::MessageField<super::NOMFJHMOEAH::NOMFJHMOEAH>,
     // @@protoc_insertion_point(field:UpdateMechanismBarScNotify.LJHIJCABHEP)
     pub LJHIJCABHEP: u32,
+    // @@protoc_insertion_point(field:UpdateMechanismBarScNotify.GIGKDAPGNME)
+    pub GIGKDAPGNME: ::protobuf::MessageField<super::NOMFJHMOEAH::NOMFJHMOEAH>,
     // @@protoc_insertion_point(field:UpdateMechanismBarScNotify.PDONLOOBBCI)
     pub PDONLOOBBCI: u32,
     // special fields
@@ -53,15 +53,15 @@ impl UpdateMechanismBarScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NOMFJHMOEAH::NOMFJHMOEAH>(
-            "GIGKDAPGNME",
-            |m: &UpdateMechanismBarScNotify| { &m.GIGKDAPGNME },
-            |m: &mut UpdateMechanismBarScNotify| { &mut m.GIGKDAPGNME },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LJHIJCABHEP",
             |m: &UpdateMechanismBarScNotify| { &m.LJHIJCABHEP },
             |m: &mut UpdateMechanismBarScNotify| { &mut m.LJHIJCABHEP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NOMFJHMOEAH::NOMFJHMOEAH>(
+            "GIGKDAPGNME",
+            |m: &UpdateMechanismBarScNotify| { &m.GIGKDAPGNME },
+            |m: &mut UpdateMechanismBarScNotify| { &mut m.GIGKDAPGNME },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PDONLOOBBCI",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for UpdateMechanismBarScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GIGKDAPGNME)?;
-                },
                 88 => {
                     self.LJHIJCABHEP = is.read_uint32()?;
                 },
-                72 => {
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GIGKDAPGNME)?;
+                },
+                32 => {
                     self.PDONLOOBBCI = is.read_uint32()?;
                 },
                 tag => {
@@ -107,15 +107,15 @@ impl ::protobuf::Message for UpdateMechanismBarScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.LJHIJCABHEP != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.LJHIJCABHEP);
+        }
         if let Some(v) = self.GIGKDAPGNME.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.LJHIJCABHEP != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.LJHIJCABHEP);
-        }
         if self.PDONLOOBBCI != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.PDONLOOBBCI);
+            my_size += ::protobuf::rt::uint32_size(4, self.PDONLOOBBCI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for UpdateMechanismBarScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.GIGKDAPGNME.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
         if self.LJHIJCABHEP != 0 {
             os.write_uint32(11, self.LJHIJCABHEP)?;
         }
+        if let Some(v) = self.GIGKDAPGNME.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        }
         if self.PDONLOOBBCI != 0 {
-            os.write_uint32(9, self.PDONLOOBBCI)?;
+            os.write_uint32(4, self.PDONLOOBBCI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for UpdateMechanismBarScNotify {
     }
 
     fn clear(&mut self) {
-        self.GIGKDAPGNME.clear();
         self.LJHIJCABHEP = 0;
+        self.GIGKDAPGNME.clear();
         self.PDONLOOBBCI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateMechanismBarScNotify {
         static instance: UpdateMechanismBarScNotify = UpdateMechanismBarScNotify {
-            GIGKDAPGNME: ::protobuf::MessageField::none(),
             LJHIJCABHEP: 0,
+            GIGKDAPGNME: ::protobuf::MessageField::none(),
             PDONLOOBBCI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for UpdateMechanismBarScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20UpdateMechanismBarScNotify.proto\x1a\x11NOMFJHMOEAH.proto\"\x90\
-    \x01\n\x1aUpdateMechanismBarScNotify\x12.\n\x0bGIGKDAPGNME\x18\x01\x20\
-    \x01(\x0b2\x0c.NOMFJHMOEAHR\x0bGIGKDAPGNME\x12\x20\n\x0bLJHIJCABHEP\x18\
-    \x0b\x20\x01(\rR\x0bLJHIJCABHEP\x12\x20\n\x0bPDONLOOBBCI\x18\t\x20\x01(\
-    \rR\x0bPDONLOOBBCIb\x06proto3\
+    \x01\n\x1aUpdateMechanismBarScNotify\x12\x20\n\x0bLJHIJCABHEP\x18\x0b\
+    \x20\x01(\rR\x0bLJHIJCABHEP\x12.\n\x0bGIGKDAPGNME\x18\n\x20\x01(\x0b2\
+    \x0c.NOMFJHMOEAHR\x0bGIGKDAPGNME\x12\x20\n\x0bPDONLOOBBCI\x18\x04\x20\
+    \x01(\rR\x0bPDONLOOBBCIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

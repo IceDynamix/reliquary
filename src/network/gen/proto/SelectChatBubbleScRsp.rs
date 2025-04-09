@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SelectChatBubbleScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SelectChatBubbleScRsp.DOPNJNCKHCC)
-    pub DOPNJNCKHCC: u32,
     // @@protoc_insertion_point(field:SelectChatBubbleScRsp.PMDCBFOPCHB)
     pub PMDCBFOPCHB: u32,
+    // @@protoc_insertion_point(field:SelectChatBubbleScRsp.DOPNJNCKHCC)
+    pub DOPNJNCKHCC: u32,
     // @@protoc_insertion_point(field:SelectChatBubbleScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -54,14 +54,14 @@ impl SelectChatBubbleScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DOPNJNCKHCC",
-            |m: &SelectChatBubbleScRsp| { &m.DOPNJNCKHCC },
-            |m: &mut SelectChatBubbleScRsp| { &mut m.DOPNJNCKHCC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PMDCBFOPCHB",
             |m: &SelectChatBubbleScRsp| { &m.PMDCBFOPCHB },
             |m: &mut SelectChatBubbleScRsp| { &mut m.PMDCBFOPCHB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DOPNJNCKHCC",
+            |m: &SelectChatBubbleScRsp| { &m.DOPNJNCKHCC },
+            |m: &mut SelectChatBubbleScRsp| { &mut m.DOPNJNCKHCC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -87,10 +87,10 @@ impl ::protobuf::Message for SelectChatBubbleScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.DOPNJNCKHCC = is.read_uint32()?;
-                },
-                32 => {
                     self.PMDCBFOPCHB = is.read_uint32()?;
+                },
+                48 => {
+                    self.DOPNJNCKHCC = is.read_uint32()?;
                 },
                 120 => {
                     self.retcode = is.read_uint32()?;
@@ -107,11 +107,11 @@ impl ::protobuf::Message for SelectChatBubbleScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DOPNJNCKHCC != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.DOPNJNCKHCC);
-        }
         if self.PMDCBFOPCHB != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.PMDCBFOPCHB);
+            my_size += ::protobuf::rt::uint32_size(1, self.PMDCBFOPCHB);
+        }
+        if self.DOPNJNCKHCC != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.DOPNJNCKHCC);
         }
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.retcode);
@@ -122,11 +122,11 @@ impl ::protobuf::Message for SelectChatBubbleScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DOPNJNCKHCC != 0 {
-            os.write_uint32(1, self.DOPNJNCKHCC)?;
-        }
         if self.PMDCBFOPCHB != 0 {
-            os.write_uint32(4, self.PMDCBFOPCHB)?;
+            os.write_uint32(1, self.PMDCBFOPCHB)?;
+        }
+        if self.DOPNJNCKHCC != 0 {
+            os.write_uint32(6, self.DOPNJNCKHCC)?;
         }
         if self.retcode != 0 {
             os.write_uint32(15, self.retcode)?;
@@ -148,16 +148,16 @@ impl ::protobuf::Message for SelectChatBubbleScRsp {
     }
 
     fn clear(&mut self) {
-        self.DOPNJNCKHCC = 0;
         self.PMDCBFOPCHB = 0;
+        self.DOPNJNCKHCC = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SelectChatBubbleScRsp {
         static instance: SelectChatBubbleScRsp = SelectChatBubbleScRsp {
-            DOPNJNCKHCC: 0,
             PMDCBFOPCHB: 0,
+            DOPNJNCKHCC: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for SelectChatBubbleScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bSelectChatBubbleScRsp.proto\"u\n\x15SelectChatBubbleScRsp\x12\x20\
-    \n\x0bDOPNJNCKHCC\x18\x01\x20\x01(\rR\x0bDOPNJNCKHCC\x12\x20\n\x0bPMDCBF\
-    OPCHB\x18\x04\x20\x01(\rR\x0bPMDCBFOPCHB\x12\x18\n\x07retcode\x18\x0f\
+    \n\x0bPMDCBFOPCHB\x18\x01\x20\x01(\rR\x0bPMDCBFOPCHB\x12\x20\n\x0bDOPNJN\
+    CKHCC\x18\x06\x20\x01(\rR\x0bDOPNJNCKHCC\x12\x18\n\x07retcode\x18\x0f\
     \x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 

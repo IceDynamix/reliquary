@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartTrackPhotoStageScRsp {
     // message fields
-    // @@protoc_insertion_point(field:StartTrackPhotoStageScRsp.MDLNDGIJNML)
-    pub MDLNDGIJNML: u32,
     // @@protoc_insertion_point(field:StartTrackPhotoStageScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:StartTrackPhotoStageScRsp.MDLNDGIJNML)
+    pub MDLNDGIJNML: u32,
     // special fields
     // @@protoc_insertion_point(special_field:StartTrackPhotoStageScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl StartTrackPhotoStageScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MDLNDGIJNML",
-            |m: &StartTrackPhotoStageScRsp| { &m.MDLNDGIJNML },
-            |m: &mut StartTrackPhotoStageScRsp| { &mut m.MDLNDGIJNML },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &StartTrackPhotoStageScRsp| { &m.retcode },
             |m: &mut StartTrackPhotoStageScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MDLNDGIJNML",
+            |m: &StartTrackPhotoStageScRsp| { &m.MDLNDGIJNML },
+            |m: &mut StartTrackPhotoStageScRsp| { &mut m.MDLNDGIJNML },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartTrackPhotoStageScRsp>(
             "StartTrackPhotoStageScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for StartTrackPhotoStageScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.MDLNDGIJNML = is.read_uint32()?;
-                },
-                80 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
+                },
+                112 => {
+                    self.MDLNDGIJNML = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for StartTrackPhotoStageScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MDLNDGIJNML != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.MDLNDGIJNML);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+        }
+        if self.MDLNDGIJNML != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.MDLNDGIJNML);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for StartTrackPhotoStageScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MDLNDGIJNML != 0 {
-            os.write_uint32(3, self.MDLNDGIJNML)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
+        }
+        if self.MDLNDGIJNML != 0 {
+            os.write_uint32(14, self.MDLNDGIJNML)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for StartTrackPhotoStageScRsp {
     }
 
     fn clear(&mut self) {
-        self.MDLNDGIJNML = 0;
         self.retcode = 0;
+        self.MDLNDGIJNML = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartTrackPhotoStageScRsp {
         static instance: StartTrackPhotoStageScRsp = StartTrackPhotoStageScRsp {
-            MDLNDGIJNML: 0,
             retcode: 0,
+            MDLNDGIJNML: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for StartTrackPhotoStageScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fStartTrackPhotoStageScRsp.proto\"W\n\x19StartTrackPhotoStageScRsp\
-    \x12\x20\n\x0bMDLNDGIJNML\x18\x03\x20\x01(\rR\x0bMDLNDGIJNML\x12\x18\n\
-    \x07retcode\x18\n\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x12\x20\n\x0bMDLNDGIJ\
+    NML\x18\x0e\x20\x01(\rR\x0bMDLNDGIJNMLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

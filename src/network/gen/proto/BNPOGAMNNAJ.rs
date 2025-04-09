@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BNPOGAMNNAJ {
     // message fields
-    // @@protoc_insertion_point(field:BNPOGAMNNAJ.ELGANMDPMID)
-    pub ELGANMDPMID: u32,
-    // @@protoc_insertion_point(field:BNPOGAMNNAJ.PBLFLJNHMIL)
-    pub PBLFLJNHMIL: ::protobuf::EnumOrUnknown<super::MissionStatus::MissionStatus>,
     // @@protoc_insertion_point(field:BNPOGAMNNAJ.KFBPCFDHLHL)
     pub KFBPCFDHLHL: ::std::vec::Vec<super::HPNIICAAAJK::HPNIICAAAJK>,
+    // @@protoc_insertion_point(field:BNPOGAMNNAJ.PBLFLJNHMIL)
+    pub PBLFLJNHMIL: ::protobuf::EnumOrUnknown<super::MissionStatus::MissionStatus>,
+    // @@protoc_insertion_point(field:BNPOGAMNNAJ.ELGANMDPMID)
+    pub ELGANMDPMID: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BNPOGAMNNAJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl BNPOGAMNNAJ {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ELGANMDPMID",
-            |m: &BNPOGAMNNAJ| { &m.ELGANMDPMID },
-            |m: &mut BNPOGAMNNAJ| { &mut m.ELGANMDPMID },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "KFBPCFDHLHL",
+            |m: &BNPOGAMNNAJ| { &m.KFBPCFDHLHL },
+            |m: &mut BNPOGAMNNAJ| { &mut m.KFBPCFDHLHL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PBLFLJNHMIL",
             |m: &BNPOGAMNNAJ| { &m.PBLFLJNHMIL },
             |m: &mut BNPOGAMNNAJ| { &mut m.PBLFLJNHMIL },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KFBPCFDHLHL",
-            |m: &BNPOGAMNNAJ| { &m.KFBPCFDHLHL },
-            |m: &mut BNPOGAMNNAJ| { &mut m.KFBPCFDHLHL },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ELGANMDPMID",
+            |m: &BNPOGAMNNAJ| { &m.ELGANMDPMID },
+            |m: &mut BNPOGAMNNAJ| { &mut m.ELGANMDPMID },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BNPOGAMNNAJ>(
             "BNPOGAMNNAJ",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for BNPOGAMNNAJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.ELGANMDPMID = is.read_uint32()?;
+                18 => {
+                    self.KFBPCFDHLHL.push(is.read_message()?);
                 },
-                40 => {
+                64 => {
                     self.PBLFLJNHMIL = is.read_enum_or_unknown()?;
                 },
-                106 => {
-                    self.KFBPCFDHLHL.push(is.read_message()?);
+                72 => {
+                    self.ELGANMDPMID = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,31 +107,31 @@ impl ::protobuf::Message for BNPOGAMNNAJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ELGANMDPMID != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.ELGANMDPMID);
-        }
-        if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::MissionStatus::MissionStatus::MISSION_NONE) {
-            my_size += ::protobuf::rt::int32_size(5, self.PBLFLJNHMIL.value());
-        }
         for value in &self.KFBPCFDHLHL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::MissionStatus::MissionStatus::MISSION_NONE) {
+            my_size += ::protobuf::rt::int32_size(8, self.PBLFLJNHMIL.value());
+        }
+        if self.ELGANMDPMID != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.ELGANMDPMID);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ELGANMDPMID != 0 {
-            os.write_uint32(8, self.ELGANMDPMID)?;
-        }
-        if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::MissionStatus::MissionStatus::MISSION_NONE) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.PBLFLJNHMIL))?;
-        }
         for v in &self.KFBPCFDHLHL {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
+        if self.PBLFLJNHMIL != ::protobuf::EnumOrUnknown::new(super::MissionStatus::MissionStatus::MISSION_NONE) {
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.PBLFLJNHMIL))?;
+        }
+        if self.ELGANMDPMID != 0 {
+            os.write_uint32(9, self.ELGANMDPMID)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,17 +149,17 @@ impl ::protobuf::Message for BNPOGAMNNAJ {
     }
 
     fn clear(&mut self) {
-        self.ELGANMDPMID = 0;
-        self.PBLFLJNHMIL = ::protobuf::EnumOrUnknown::new(super::MissionStatus::MissionStatus::MISSION_NONE);
         self.KFBPCFDHLHL.clear();
+        self.PBLFLJNHMIL = ::protobuf::EnumOrUnknown::new(super::MissionStatus::MissionStatus::MISSION_NONE);
+        self.ELGANMDPMID = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BNPOGAMNNAJ {
         static instance: BNPOGAMNNAJ = BNPOGAMNNAJ {
-            ELGANMDPMID: 0,
-            PBLFLJNHMIL: ::protobuf::EnumOrUnknown::from_i32(0),
             KFBPCFDHLHL: ::std::vec::Vec::new(),
+            PBLFLJNHMIL: ::protobuf::EnumOrUnknown::from_i32(0),
+            ELGANMDPMID: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for BNPOGAMNNAJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BNPOGAMNNAJ.proto\x1a\x11HPNIICAAAJK.proto\x1a\x13MissionStatus.pr\
-    oto\"\x91\x01\n\x0bBNPOGAMNNAJ\x12\x20\n\x0bELGANMDPMID\x18\x08\x20\x01(\
-    \rR\x0bELGANMDPMID\x120\n\x0bPBLFLJNHMIL\x18\x05\x20\x01(\x0e2\x0e.Missi\
-    onStatusR\x0bPBLFLJNHMIL\x12.\n\x0bKFBPCFDHLHL\x18\r\x20\x03(\x0b2\x0c.H\
-    PNIICAAAJKR\x0bKFBPCFDHLHLb\x06proto3\
+    oto\"\x91\x01\n\x0bBNPOGAMNNAJ\x12.\n\x0bKFBPCFDHLHL\x18\x02\x20\x03(\
+    \x0b2\x0c.HPNIICAAAJKR\x0bKFBPCFDHLHL\x120\n\x0bPBLFLJNHMIL\x18\x08\x20\
+    \x01(\x0e2\x0e.MissionStatusR\x0bPBLFLJNHMIL\x12\x20\n\x0bELGANMDPMID\
+    \x18\t\x20\x01(\rR\x0bELGANMDPMIDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
