@@ -33,23 +33,47 @@ pub mod proto {
 pub mod proto {
     pub mod Avatar;
     pub mod AvatarSkillTree;
+    pub mod AvatarSync;
     pub mod BlackInfo;
-    pub mod CLLPNMOCFKB;
-    pub mod EquipRelic;
+    pub mod BLPMHFGIOAC;
+    pub mod BoardDataSync;
+    pub mod DJOLEKKPBGB;
+    pub mod DMBMPAHKHLA;
     pub mod Equipment;
+    pub mod EquipRelic;
+    pub mod FHABEIKAFBO;
+    pub mod GEMJDHNLKLC;
     pub mod GetAvatarDataScRsp;
     pub mod GetBagScRsp;
     pub mod GetMultiPathAvatarInfoScRsp;
+    pub mod GKDIHIFFHFD;
+    pub mod GNIEJGNKKGG;
     pub mod GrowthTargetFunctionType;
+    pub mod HeadIcon;
+    pub mod HPNIICAAAJK;
+    pub mod IKAMMKLBOCO;
+    pub mod ItemList;
+    pub mod LOPCJEOJHCB;
+    pub mod LPFMHAJHDMM;
     pub mod Material;
+    pub mod MessageGroupStatus;
+    pub mod MessageSectionStatus;
+    pub mod Mission;
+    pub mod MissionStatus;
+    pub mod MissionSync;
+    pub mod MissionSyncType;
     pub mod MultiPathAvatarType;
     pub mod MultiPathAvatarTypeInfo;
-    pub mod PLFIIABDDMC;
     pub mod PileItem;
     pub mod PlayerGetTokenScRsp;
+    pub mod PlayerSyncScNotify;
+    pub mod Quest;
+    pub mod QuestStatus;
+    pub mod RecycleMaterial;
     pub mod Relic;
     pub mod RelicAffix;
     pub mod TurnFoodSwitch;
+    pub mod WaitDelResource;
 }
 
 /// Game command header.
