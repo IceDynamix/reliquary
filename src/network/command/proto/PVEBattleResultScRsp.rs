@@ -53,7 +53,7 @@ pub struct PVEBattleResultScRsp {
     // @@protoc_insertion_point(field:PVEBattleResultScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:PVEBattleResultScRsp.KJCHGEHDLNO)
-    pub KJCHGEHDLNO: ::protobuf::MessageField<super::ItemList::ItemList>,
+    pub KJCHGEHDLNO: ::protobuf::MessageField<super::ReturnItemList::ReturnItemList>,
     // @@protoc_insertion_point(field:PVEBattleResultScRsp.check_identical)
     pub check_identical: bool,
     // @@protoc_insertion_point(field:PVEBattleResultScRsp.battle_id)
@@ -141,7 +141,7 @@ impl PVEBattleResultScRsp {
             |m: &PVEBattleResultScRsp| { &m.retcode },
             |m: &mut PVEBattleResultScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ReturnItemList::ReturnItemList>(
             "KJCHGEHDLNO",
             |m: &PVEBattleResultScRsp| { &m.KJCHGEHDLNO },
             |m: &mut PVEBattleResultScRsp| { &mut m.KJCHGEHDLNO },
@@ -442,23 +442,23 @@ impl ::protobuf::reflect::ProtobufValue for PVEBattleResultScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aPVEBattleResultScRsp.proto\x1a\x12BattleAvatar.proto\x1a\x15Battle\
-    EndStatus.proto\x1a\x0eItemList.proto\"\xa7\x05\n\x14PVEBattleResultScRs\
-    p\x12\x20\n\x0bNDCMDOKKPHH\x18\x06\x20\x01(\rR\x0bNDCMDOKKPHH\x12\x20\n\
-    \x0bKLODELECMCI\x18\r\x20\x01(\rR\x0bKLODELECMCI\x12\x19\n\x08stage_id\
-    \x18\x04\x20\x01(\rR\x07stageId\x12+\n\x0bNHANAKJFEAB\x18\x0b\x20\x01(\
-    \x0b2\t.ItemListR\x0bNHANAKJFEAB\x12+\n\x0bJHMMOOJPKHA\x18\x01\x20\x01(\
-    \x0b2\t.ItemListR\x0bJHMMOOJPKHA\x12\x20\n\x0bHKPGCAPIMAO\x18\x0e\x20\
-    \x01(\tR\x0bHKPGCAPIMAO\x12\x19\n\x08event_id\x18\x05\x20\x01(\rR\x07eve\
-    ntId\x12\x20\n\x0bAPJKCAOHAFP\x18\x0c\x20\x01(\tR\x0bAPJKCAOHAFP\x12+\n\
-    \x0bEIGNJEEGDEP\x18\n\x20\x01(\x0b2\t.ItemListR\x0bEIGNJEEGDEP\x12,\n\
-    \x0bNBHLIFPBLMF\x18\xe0\t\x20\x01(\x0b2\t.ItemListR\x0bNBHLIFPBLMF\x12;\
-    \n\x12battle_avatar_list\x18\x0f\x20\x03(\x0b2\r.BattleAvatarR\x10battle\
-    AvatarList\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x12,\n\x0bK\
-    JCHGEHDLNO\x18\x8f\x0b\x20\x01(\x0b2\t.ItemListR\x0bKJCHGEHDLNO\x12'\n\
-    \x0fcheck_identical\x18\x08\x20\x01(\x08R\x0echeckIdentical\x12\x1b\n\tb\
-    attle_id\x18\x03\x20\x01(\rR\x08battleId\x12\x20\n\x0bGGMPFNKOFKD\x18\
-    \x07\x20\x01(\rR\x0bGGMPFNKOFKD\x12/\n\nend_status\x18\x02\x20\x01(\x0e2\
-    \x10.BattleEndStatusR\tendStatusb\x06proto3\
+    EndStatus.proto\x1a\x0eItemList.proto\x1a\x14ReturnItemList.proto\"\xad\
+    \x05\n\x14PVEBattleResultScRsp\x12\x20\n\x0bNDCMDOKKPHH\x18\x06\x20\x01(\
+    \rR\x0bNDCMDOKKPHH\x12\x20\n\x0bKLODELECMCI\x18\r\x20\x01(\rR\x0bKLODELE\
+    CMCI\x12\x19\n\x08stage_id\x18\x04\x20\x01(\rR\x07stageId\x12+\n\x0bNHAN\
+    AKJFEAB\x18\x0b\x20\x01(\x0b2\t.ItemListR\x0bNHANAKJFEAB\x12+\n\x0bJHMMO\
+    OJPKHA\x18\x01\x20\x01(\x0b2\t.ItemListR\x0bJHMMOOJPKHA\x12\x20\n\x0bHKP\
+    GCAPIMAO\x18\x0e\x20\x01(\tR\x0bHKPGCAPIMAO\x12\x19\n\x08event_id\x18\
+    \x05\x20\x01(\rR\x07eventId\x12\x20\n\x0bAPJKCAOHAFP\x18\x0c\x20\x01(\tR\
+    \x0bAPJKCAOHAFP\x12+\n\x0bEIGNJEEGDEP\x18\n\x20\x01(\x0b2\t.ItemListR\
+    \x0bEIGNJEEGDEP\x12,\n\x0bNBHLIFPBLMF\x18\xe0\t\x20\x01(\x0b2\t.ItemList\
+    R\x0bNBHLIFPBLMF\x12;\n\x12battle_avatar_list\x18\x0f\x20\x03(\x0b2\r.Ba\
+    ttleAvatarR\x10battleAvatarList\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\
+    \x07retcode\x122\n\x0bKJCHGEHDLNO\x18\x8f\x0b\x20\x01(\x0b2\x0f.ReturnIt\
+    emListR\x0bKJCHGEHDLNO\x12'\n\x0fcheck_identical\x18\x08\x20\x01(\x08R\
+    \x0echeckIdentical\x12\x1b\n\tbattle_id\x18\x03\x20\x01(\rR\x08battleId\
+    \x12\x20\n\x0bGGMPFNKOFKD\x18\x07\x20\x01(\rR\x0bGGMPFNKOFKD\x12/\n\nend\
+    _status\x18\x02\x20\x01(\x0e2\x10.BattleEndStatusR\tendStatusb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -475,10 +475,11 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(3);
+            let mut deps = ::std::vec::Vec::with_capacity(4);
             deps.push(super::BattleAvatar::file_descriptor().clone());
             deps.push(super::BattleEndStatus::file_descriptor().clone());
             deps.push(super::ItemList::file_descriptor().clone());
+            deps.push(super::ReturnItemList::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PVEBattleResultScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

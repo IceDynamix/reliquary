@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DoGachaCsReq {
     // message fields
-    // @@protoc_insertion_point(field:DoGachaCsReq.OPFPDACBOBB)
-    pub OPFPDACBOBB: u32,
+    // @@protoc_insertion_point(field:DoGachaCsReq.num_pulls)
+    pub num_pulls: u32,
     // @@protoc_insertion_point(field:DoGachaCsReq.FPFCKNICPPJ)
     pub FPFCKNICPPJ: u32,
     // @@protoc_insertion_point(field:DoGachaCsReq.gacha_id)
@@ -56,9 +56,9 @@ impl DoGachaCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OPFPDACBOBB",
-            |m: &DoGachaCsReq| { &m.OPFPDACBOBB },
-            |m: &mut DoGachaCsReq| { &mut m.OPFPDACBOBB },
+            "num_pulls",
+            |m: &DoGachaCsReq| { &m.num_pulls },
+            |m: &mut DoGachaCsReq| { &mut m.num_pulls },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FPFCKNICPPJ",
@@ -94,7 +94,7 @@ impl ::protobuf::Message for DoGachaCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 120 => {
-                    self.OPFPDACBOBB = is.read_uint32()?;
+                    self.num_pulls = is.read_uint32()?;
                 },
                 48 => {
                     self.FPFCKNICPPJ = is.read_uint32()?;
@@ -117,8 +117,8 @@ impl ::protobuf::Message for DoGachaCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OPFPDACBOBB != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.OPFPDACBOBB);
+        if self.num_pulls != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.num_pulls);
         }
         if self.FPFCKNICPPJ != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.FPFCKNICPPJ);
@@ -135,8 +135,8 @@ impl ::protobuf::Message for DoGachaCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OPFPDACBOBB != 0 {
-            os.write_uint32(15, self.OPFPDACBOBB)?;
+        if self.num_pulls != 0 {
+            os.write_uint32(15, self.num_pulls)?;
         }
         if self.FPFCKNICPPJ != 0 {
             os.write_uint32(6, self.FPFCKNICPPJ)?;
@@ -164,7 +164,7 @@ impl ::protobuf::Message for DoGachaCsReq {
     }
 
     fn clear(&mut self) {
-        self.OPFPDACBOBB = 0;
+        self.num_pulls = 0;
         self.FPFCKNICPPJ = 0;
         self.gacha_id = 0;
         self.gacha_random = 0;
@@ -173,7 +173,7 @@ impl ::protobuf::Message for DoGachaCsReq {
 
     fn default_instance() -> &'static DoGachaCsReq {
         static instance: DoGachaCsReq = DoGachaCsReq {
-            OPFPDACBOBB: 0,
+            num_pulls: 0,
             FPFCKNICPPJ: 0,
             gacha_id: 0,
             gacha_random: 0,
@@ -201,11 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for DoGachaCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12DoGachaCsReq.proto\"\x90\x01\n\x0cDoGachaCsReq\x12\x20\n\x0bOPFPDA\
-    CBOBB\x18\x0f\x20\x01(\rR\x0bOPFPDACBOBB\x12\x20\n\x0bFPFCKNICPPJ\x18\
-    \x06\x20\x01(\rR\x0bFPFCKNICPPJ\x12\x19\n\x08gacha_id\x18\n\x20\x01(\rR\
-    \x07gachaId\x12!\n\x0cgacha_random\x18\x07\x20\x01(\rR\x0bgachaRandomb\
-    \x06proto3\
+    \n\x12DoGachaCsReq.proto\"\x8b\x01\n\x0cDoGachaCsReq\x12\x1b\n\tnum_pull\
+    s\x18\x0f\x20\x01(\rR\x08numPulls\x12\x20\n\x0bFPFCKNICPPJ\x18\x06\x20\
+    \x01(\rR\x0bFPFCKNICPPJ\x12\x19\n\x08gacha_id\x18\n\x20\x01(\rR\x07gacha\
+    Id\x12!\n\x0cgacha_random\x18\x07\x20\x01(\rR\x0bgachaRandomb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

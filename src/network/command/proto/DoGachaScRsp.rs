@@ -34,10 +34,10 @@ pub struct DoGachaScRsp {
     pub gacha_id: u32,
     // @@protoc_insertion_point(field:DoGachaScRsp.GDIFAAHIFBH)
     pub GDIFAAHIFBH: u32,
-    // @@protoc_insertion_point(field:DoGachaScRsp.PENILHGLHHM)
-    pub PENILHGLHHM: u32,
-    // @@protoc_insertion_point(field:DoGachaScRsp.OPFPDACBOBB)
-    pub OPFPDACBOBB: u32,
+    // @@protoc_insertion_point(field:DoGachaScRsp.next_gacha_random)
+    pub next_gacha_random: u32,
+    // @@protoc_insertion_point(field:DoGachaScRsp.num_pulls)
+    pub num_pulls: u32,
     // @@protoc_insertion_point(field:DoGachaScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:DoGachaScRsp.ceiling_num)
@@ -81,14 +81,14 @@ impl DoGachaScRsp {
             |m: &mut DoGachaScRsp| { &mut m.GDIFAAHIFBH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PENILHGLHHM",
-            |m: &DoGachaScRsp| { &m.PENILHGLHHM },
-            |m: &mut DoGachaScRsp| { &mut m.PENILHGLHHM },
+            "next_gacha_random",
+            |m: &DoGachaScRsp| { &m.next_gacha_random },
+            |m: &mut DoGachaScRsp| { &mut m.next_gacha_random },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OPFPDACBOBB",
-            |m: &DoGachaScRsp| { &m.OPFPDACBOBB },
-            |m: &mut DoGachaScRsp| { &mut m.OPFPDACBOBB },
+            "num_pulls",
+            |m: &DoGachaScRsp| { &m.num_pulls },
+            |m: &mut DoGachaScRsp| { &mut m.num_pulls },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -138,10 +138,10 @@ impl ::protobuf::Message for DoGachaScRsp {
                     self.GDIFAAHIFBH = is.read_uint32()?;
                 },
                 24 => {
-                    self.PENILHGLHHM = is.read_uint32()?;
+                    self.next_gacha_random = is.read_uint32()?;
                 },
                 104 => {
-                    self.OPFPDACBOBB = is.read_uint32()?;
+                    self.num_pulls = is.read_uint32()?;
                 },
                 40 => {
                     self.retcode = is.read_uint32()?;
@@ -176,11 +176,11 @@ impl ::protobuf::Message for DoGachaScRsp {
         if self.GDIFAAHIFBH != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.GDIFAAHIFBH);
         }
-        if self.PENILHGLHHM != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.PENILHGLHHM);
+        if self.next_gacha_random != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.next_gacha_random);
         }
-        if self.OPFPDACBOBB != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.OPFPDACBOBB);
+        if self.num_pulls != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.num_pulls);
         }
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(5, self.retcode);
@@ -210,11 +210,11 @@ impl ::protobuf::Message for DoGachaScRsp {
         if self.GDIFAAHIFBH != 0 {
             os.write_uint32(7, self.GDIFAAHIFBH)?;
         }
-        if self.PENILHGLHHM != 0 {
-            os.write_uint32(3, self.PENILHGLHHM)?;
+        if self.next_gacha_random != 0 {
+            os.write_uint32(3, self.next_gacha_random)?;
         }
-        if self.OPFPDACBOBB != 0 {
-            os.write_uint32(13, self.OPFPDACBOBB)?;
+        if self.num_pulls != 0 {
+            os.write_uint32(13, self.num_pulls)?;
         }
         if self.retcode != 0 {
             os.write_uint32(5, self.retcode)?;
@@ -248,8 +248,8 @@ impl ::protobuf::Message for DoGachaScRsp {
         self.KMNJNMJFGBG = 0;
         self.gacha_id = 0;
         self.GDIFAAHIFBH = 0;
-        self.PENILHGLHHM = 0;
-        self.OPFPDACBOBB = 0;
+        self.next_gacha_random = 0;
+        self.num_pulls = 0;
         self.retcode = 0;
         self.ceiling_num = 0;
         self.gacha_item_list.clear();
@@ -262,8 +262,8 @@ impl ::protobuf::Message for DoGachaScRsp {
             KMNJNMJFGBG: 0,
             gacha_id: 0,
             GDIFAAHIFBH: 0,
-            PENILHGLHHM: 0,
-            OPFPDACBOBB: 0,
+            next_gacha_random: 0,
+            num_pulls: 0,
             retcode: 0,
             ceiling_num: 0,
             gacha_item_list: ::std::vec::Vec::new(),
@@ -292,15 +292,15 @@ impl ::protobuf::reflect::ProtobufValue for DoGachaScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12DoGachaScRsp.proto\x1a\x0fGachaItem.proto\"\xc2\x02\n\x0cDoGachaSc\
+    \n\x12DoGachaScRsp.proto\x1a\x0fGachaItem.proto\"\xc7\x02\n\x0cDoGachaSc\
     Rsp\x12\x20\n\x0bKMNJNMJFGBG\x18\x02\x20\x01(\rR\x0bKMNJNMJFGBG\x12\x19\
     \n\x08gacha_id\x18\x0e\x20\x01(\rR\x07gachaId\x12\x20\n\x0bGDIFAAHIFBH\
-    \x18\x07\x20\x01(\rR\x0bGDIFAAHIFBH\x12\x20\n\x0bPENILHGLHHM\x18\x03\x20\
-    \x01(\rR\x0bPENILHGLHHM\x12\x20\n\x0bOPFPDACBOBB\x18\r\x20\x01(\rR\x0bOP\
-    FPDACBOBB\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12\x1f\n\
-    \x0bceiling_num\x18\t\x20\x01(\rR\nceilingNum\x122\n\x0fgacha_item_list\
-    \x18\x08\x20\x03(\x0b2\n.GachaItemR\rgachaItemList\x12\x20\n\x0bNOPBEBKH\
-    IKA\x18\x06\x20\x01(\rR\x0bNOPBEBKHIKAb\x06proto3\
+    \x18\x07\x20\x01(\rR\x0bGDIFAAHIFBH\x12*\n\x11next_gacha_random\x18\x03\
+    \x20\x01(\rR\x0fnextGachaRandom\x12\x1b\n\tnum_pulls\x18\r\x20\x01(\rR\
+    \x08numPulls\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12\x1f\
+    \n\x0bceiling_num\x18\t\x20\x01(\rR\nceilingNum\x122\n\x0fgacha_item_lis\
+    t\x18\x08\x20\x03(\x0b2\n.GachaItemR\rgachaItemList\x12\x20\n\x0bNOPBEBK\
+    HIKA\x18\x06\x20\x01(\rR\x0bNOPBEBKHIKAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

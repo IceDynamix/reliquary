@@ -42,8 +42,8 @@ pub struct Relic {
     pub unique_id: u32,
     // @@protoc_insertion_point(field:Relic.exp)
     pub exp: u32,
-    // @@protoc_insertion_point(field:Relic.DPABGHGABDK)
-    pub DPABGHGABDK: ::std::vec::Vec<super::RelicAffix::RelicAffix>,
+    // @@protoc_insertion_point(field:Relic.reroll_sub_affix_list)
+    pub reroll_sub_affix_list: ::std::vec::Vec<super::RelicAffix::RelicAffix>,
     // @@protoc_insertion_point(field:Relic.level)
     pub level: u32,
     // @@protoc_insertion_point(field:Relic.main_affix_id)
@@ -103,9 +103,9 @@ impl Relic {
             |m: &mut Relic| { &mut m.exp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DPABGHGABDK",
-            |m: &Relic| { &m.DPABGHGABDK },
-            |m: &mut Relic| { &mut m.DPABGHGABDK },
+            "reroll_sub_affix_list",
+            |m: &Relic| { &m.reroll_sub_affix_list },
+            |m: &mut Relic| { &mut m.reroll_sub_affix_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
@@ -157,7 +157,7 @@ impl ::protobuf::Message for Relic {
                     self.exp = is.read_uint32()?;
                 },
                 50 => {
-                    self.DPABGHGABDK.push(is.read_message()?);
+                    self.reroll_sub_affix_list.push(is.read_message()?);
                 },
                 56 => {
                     self.level = is.read_uint32()?;
@@ -199,7 +199,7 @@ impl ::protobuf::Message for Relic {
         if self.exp != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.exp);
         }
-        for value in &self.DPABGHGABDK {
+        for value in &self.reroll_sub_affix_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -236,7 +236,7 @@ impl ::protobuf::Message for Relic {
         if self.exp != 0 {
             os.write_uint32(2, self.exp)?;
         }
-        for v in &self.DPABGHGABDK {
+        for v in &self.reroll_sub_affix_list {
             ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
         if self.level != 0 {
@@ -269,7 +269,7 @@ impl ::protobuf::Message for Relic {
         self.is_discarded = false;
         self.unique_id = 0;
         self.exp = 0;
-        self.DPABGHGABDK.clear();
+        self.reroll_sub_affix_list.clear();
         self.level = 0;
         self.main_affix_id = 0;
         self.special_fields.clear();
@@ -284,7 +284,7 @@ impl ::protobuf::Message for Relic {
             is_discarded: false,
             unique_id: 0,
             exp: 0,
-            DPABGHGABDK: ::std::vec::Vec::new(),
+            reroll_sub_affix_list: ::std::vec::Vec::new(),
             level: 0,
             main_affix_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -311,16 +311,16 @@ impl ::protobuf::reflect::ProtobufValue for Relic {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0bRelic.proto\x1a\x10RelicAffix.proto\"\xd2\x02\n\x05Relic\x12!\n\
+    \n\x0bRelic.proto\x1a\x10RelicAffix.proto\"\xe3\x02\n\x05Relic\x12!\n\
     \x0cis_protected\x18\x03\x20\x01(\x08R\x0bisProtected\x12\x10\n\x03tid\
     \x18\x0e\x20\x01(\rR\x03tid\x12&\n\x0fequip_avatar_id\x18\x05\x20\x01(\r\
     R\requipAvatarId\x121\n\x0esub_affix_list\x18\x01\x20\x03(\x0b2\x0b.Reli\
     cAffixR\x0csubAffixList\x12!\n\x0cis_discarded\x18\x08\x20\x01(\x08R\x0b\
     isDiscarded\x12\x1b\n\tunique_id\x18\x0f\x20\x01(\rR\x08uniqueId\x12\x10\
-    \n\x03exp\x18\x02\x20\x01(\rR\x03exp\x12-\n\x0bDPABGHGABDK\x18\x06\x20\
-    \x03(\x0b2\x0b.RelicAffixR\x0bDPABGHGABDK\x12\x14\n\x05level\x18\x07\x20\
-    \x01(\rR\x05level\x12\"\n\rmain_affix_id\x18\x04\x20\x01(\rR\x0bmainAffi\
-    xIdb\x06proto3\
+    \n\x03exp\x18\x02\x20\x01(\rR\x03exp\x12>\n\x15reroll_sub_affix_list\x18\
+    \x06\x20\x03(\x0b2\x0b.RelicAffixR\x12rerollSubAffixList\x12\x14\n\x05le\
+    vel\x18\x07\x20\x01(\rR\x05level\x12\"\n\rmain_affix_id\x18\x04\x20\x01(\
+    \rR\x0bmainAffixIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

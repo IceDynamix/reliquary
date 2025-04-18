@@ -18,45 +18,45 @@
 #![allow(unused_results)]
 #![allow(unused_mut)]
 
-//! Generated file from `DJOLEKKPBGB.proto`
+//! Generated file from `BasicInfo.proto`
 
 /// Generated files are compatible only with the same version
 /// of protobuf runtime.
 const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 
-// @@protoc_insertion_point(message:DJOLEKKPBGB)
+// @@protoc_insertion_point(message:BasicInfo)
 #[derive(PartialEq,Clone,Default,Debug)]
-pub struct DJOLEKKPBGB {
+pub struct BasicInfo {
     // message fields
-    // @@protoc_insertion_point(field:DJOLEKKPBGB.nickname)
+    // @@protoc_insertion_point(field:BasicInfo.nickname)
     pub nickname: ::std::string::String,
-    // @@protoc_insertion_point(field:DJOLEKKPBGB.level)
+    // @@protoc_insertion_point(field:BasicInfo.level)
     pub level: u32,
-    // @@protoc_insertion_point(field:DJOLEKKPBGB.exp)
+    // @@protoc_insertion_point(field:BasicInfo.exp)
     pub exp: u32,
-    // @@protoc_insertion_point(field:DJOLEKKPBGB.stamina)
+    // @@protoc_insertion_point(field:BasicInfo.stamina)
     pub stamina: u32,
-    // @@protoc_insertion_point(field:DJOLEKKPBGB.IJAMNHNPODJ)
-    pub IJAMNHNPODJ: u32,
-    // @@protoc_insertion_point(field:DJOLEKKPBGB.DAIPICFMMGD)
-    pub DAIPICFMMGD: u32,
-    // @@protoc_insertion_point(field:DJOLEKKPBGB.GJDOGBNKMAD)
-    pub GJDOGBNKMAD: u32,
-    // @@protoc_insertion_point(field:DJOLEKKPBGB.world_level)
+    // @@protoc_insertion_point(field:BasicInfo.oneric_shard_count)
+    pub oneric_shard_count: u32,
+    // @@protoc_insertion_point(field:BasicInfo.stellar_jade_count)
+    pub stellar_jade_count: u32,
+    // @@protoc_insertion_point(field:BasicInfo.credit_count)
+    pub credit_count: u32,
+    // @@protoc_insertion_point(field:BasicInfo.world_level)
     pub world_level: u32,
     // special fields
-    // @@protoc_insertion_point(special_field:DJOLEKKPBGB.special_fields)
+    // @@protoc_insertion_point(special_field:BasicInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
 }
 
-impl<'a> ::std::default::Default for &'a DJOLEKKPBGB {
-    fn default() -> &'a DJOLEKKPBGB {
-        <DJOLEKKPBGB as ::protobuf::Message>::default_instance()
+impl<'a> ::std::default::Default for &'a BasicInfo {
+    fn default() -> &'a BasicInfo {
+        <BasicInfo as ::protobuf::Message>::default_instance()
     }
 }
 
-impl DJOLEKKPBGB {
-    pub fn new() -> DJOLEKKPBGB {
+impl BasicInfo {
+    pub fn new() -> BasicInfo {
         ::std::default::Default::default()
     }
 
@@ -65,54 +65,54 @@ impl DJOLEKKPBGB {
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "nickname",
-            |m: &DJOLEKKPBGB| { &m.nickname },
-            |m: &mut DJOLEKKPBGB| { &mut m.nickname },
+            |m: &BasicInfo| { &m.nickname },
+            |m: &mut BasicInfo| { &mut m.nickname },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
-            |m: &DJOLEKKPBGB| { &m.level },
-            |m: &mut DJOLEKKPBGB| { &mut m.level },
+            |m: &BasicInfo| { &m.level },
+            |m: &mut BasicInfo| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "exp",
-            |m: &DJOLEKKPBGB| { &m.exp },
-            |m: &mut DJOLEKKPBGB| { &mut m.exp },
+            |m: &BasicInfo| { &m.exp },
+            |m: &mut BasicInfo| { &mut m.exp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "stamina",
-            |m: &DJOLEKKPBGB| { &m.stamina },
-            |m: &mut DJOLEKKPBGB| { &mut m.stamina },
+            |m: &BasicInfo| { &m.stamina },
+            |m: &mut BasicInfo| { &mut m.stamina },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IJAMNHNPODJ",
-            |m: &DJOLEKKPBGB| { &m.IJAMNHNPODJ },
-            |m: &mut DJOLEKKPBGB| { &mut m.IJAMNHNPODJ },
+            "oneric_shard_count",
+            |m: &BasicInfo| { &m.oneric_shard_count },
+            |m: &mut BasicInfo| { &mut m.oneric_shard_count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DAIPICFMMGD",
-            |m: &DJOLEKKPBGB| { &m.DAIPICFMMGD },
-            |m: &mut DJOLEKKPBGB| { &mut m.DAIPICFMMGD },
+            "stellar_jade_count",
+            |m: &BasicInfo| { &m.stellar_jade_count },
+            |m: &mut BasicInfo| { &mut m.stellar_jade_count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GJDOGBNKMAD",
-            |m: &DJOLEKKPBGB| { &m.GJDOGBNKMAD },
-            |m: &mut DJOLEKKPBGB| { &mut m.GJDOGBNKMAD },
+            "credit_count",
+            |m: &BasicInfo| { &m.credit_count },
+            |m: &mut BasicInfo| { &mut m.credit_count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "world_level",
-            |m: &DJOLEKKPBGB| { &m.world_level },
-            |m: &mut DJOLEKKPBGB| { &mut m.world_level },
+            |m: &BasicInfo| { &m.world_level },
+            |m: &mut BasicInfo| { &mut m.world_level },
         ));
-        ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DJOLEKKPBGB>(
-            "DJOLEKKPBGB",
+        ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BasicInfo>(
+            "BasicInfo",
             fields,
             oneofs,
         )
     }
 }
 
-impl ::protobuf::Message for DJOLEKKPBGB {
-    const NAME: &'static str = "DJOLEKKPBGB";
+impl ::protobuf::Message for BasicInfo {
+    const NAME: &'static str = "BasicInfo";
 
     fn is_initialized(&self) -> bool {
         true
@@ -134,13 +134,13 @@ impl ::protobuf::Message for DJOLEKKPBGB {
                     self.stamina = is.read_uint32()?;
                 },
                 40 => {
-                    self.IJAMNHNPODJ = is.read_uint32()?;
+                    self.oneric_shard_count = is.read_uint32()?;
                 },
                 48 => {
-                    self.DAIPICFMMGD = is.read_uint32()?;
+                    self.stellar_jade_count = is.read_uint32()?;
                 },
                 56 => {
-                    self.GJDOGBNKMAD = is.read_uint32()?;
+                    self.credit_count = is.read_uint32()?;
                 },
                 64 => {
                     self.world_level = is.read_uint32()?;
@@ -169,14 +169,14 @@ impl ::protobuf::Message for DJOLEKKPBGB {
         if self.stamina != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.stamina);
         }
-        if self.IJAMNHNPODJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.IJAMNHNPODJ);
+        if self.oneric_shard_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.oneric_shard_count);
         }
-        if self.DAIPICFMMGD != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.DAIPICFMMGD);
+        if self.stellar_jade_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.stellar_jade_count);
         }
-        if self.GJDOGBNKMAD != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.GJDOGBNKMAD);
+        if self.credit_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.credit_count);
         }
         if self.world_level != 0 {
             my_size += ::protobuf::rt::uint32_size(8, self.world_level);
@@ -199,14 +199,14 @@ impl ::protobuf::Message for DJOLEKKPBGB {
         if self.stamina != 0 {
             os.write_uint32(4, self.stamina)?;
         }
-        if self.IJAMNHNPODJ != 0 {
-            os.write_uint32(5, self.IJAMNHNPODJ)?;
+        if self.oneric_shard_count != 0 {
+            os.write_uint32(5, self.oneric_shard_count)?;
         }
-        if self.DAIPICFMMGD != 0 {
-            os.write_uint32(6, self.DAIPICFMMGD)?;
+        if self.stellar_jade_count != 0 {
+            os.write_uint32(6, self.stellar_jade_count)?;
         }
-        if self.GJDOGBNKMAD != 0 {
-            os.write_uint32(7, self.GJDOGBNKMAD)?;
+        if self.credit_count != 0 {
+            os.write_uint32(7, self.credit_count)?;
         }
         if self.world_level != 0 {
             os.write_uint32(8, self.world_level)?;
@@ -223,8 +223,8 @@ impl ::protobuf::Message for DJOLEKKPBGB {
         &mut self.special_fields
     }
 
-    fn new() -> DJOLEKKPBGB {
-        DJOLEKKPBGB::new()
+    fn new() -> BasicInfo {
+        BasicInfo::new()
     }
 
     fn clear(&mut self) {
@@ -232,22 +232,22 @@ impl ::protobuf::Message for DJOLEKKPBGB {
         self.level = 0;
         self.exp = 0;
         self.stamina = 0;
-        self.IJAMNHNPODJ = 0;
-        self.DAIPICFMMGD = 0;
-        self.GJDOGBNKMAD = 0;
+        self.oneric_shard_count = 0;
+        self.stellar_jade_count = 0;
+        self.credit_count = 0;
         self.world_level = 0;
         self.special_fields.clear();
     }
 
-    fn default_instance() -> &'static DJOLEKKPBGB {
-        static instance: DJOLEKKPBGB = DJOLEKKPBGB {
+    fn default_instance() -> &'static BasicInfo {
+        static instance: BasicInfo = BasicInfo {
             nickname: ::std::string::String::new(),
             level: 0,
             exp: 0,
             stamina: 0,
-            IJAMNHNPODJ: 0,
-            DAIPICFMMGD: 0,
-            GJDOGBNKMAD: 0,
+            oneric_shard_count: 0,
+            stellar_jade_count: 0,
+            credit_count: 0,
             world_level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -255,31 +255,32 @@ impl ::protobuf::Message for DJOLEKKPBGB {
     }
 }
 
-impl ::protobuf::MessageFull for DJOLEKKPBGB {
+impl ::protobuf::MessageFull for BasicInfo {
     fn descriptor() -> ::protobuf::reflect::MessageDescriptor {
         static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::MessageDescriptor> = ::protobuf::rt::Lazy::new();
-        descriptor.get(|| file_descriptor().message_by_package_relative_name("DJOLEKKPBGB").unwrap()).clone()
+        descriptor.get(|| file_descriptor().message_by_package_relative_name("BasicInfo").unwrap()).clone()
     }
 }
 
-impl ::std::fmt::Display for DJOLEKKPBGB {
+impl ::std::fmt::Display for BasicInfo {
     fn fmt(&self, f: &mut ::std::fmt::Formatter<'_>) -> ::std::fmt::Result {
         ::protobuf::text_format::fmt(self, f)
     }
 }
 
-impl ::protobuf::reflect::ProtobufValue for DJOLEKKPBGB {
+impl ::protobuf::reflect::ProtobufValue for BasicInfo {
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DJOLEKKPBGB.proto\"\xf2\x01\n\x0bDJOLEKKPBGB\x12\x1a\n\x08nickname\
-    \x18\x01\x20\x01(\tR\x08nickname\x12\x14\n\x05level\x18\x02\x20\x01(\rR\
-    \x05level\x12\x10\n\x03exp\x18\x03\x20\x01(\rR\x03exp\x12\x18\n\x07stami\
-    na\x18\x04\x20\x01(\rR\x07stamina\x12\x20\n\x0bIJAMNHNPODJ\x18\x05\x20\
-    \x01(\rR\x0bIJAMNHNPODJ\x12\x20\n\x0bDAIPICFMMGD\x18\x06\x20\x01(\rR\x0b\
-    DAIPICFMMGD\x12\x20\n\x0bGJDOGBNKMAD\x18\x07\x20\x01(\rR\x0bGJDOGBNKMAD\
-    \x12\x1f\n\x0bworld_level\x18\x08\x20\x01(\rR\nworldLevelb\x06proto3\
+    \n\x0fBasicInfo.proto\"\x89\x02\n\tBasicInfo\x12\x1a\n\x08nickname\x18\
+    \x01\x20\x01(\tR\x08nickname\x12\x14\n\x05level\x18\x02\x20\x01(\rR\x05l\
+    evel\x12\x10\n\x03exp\x18\x03\x20\x01(\rR\x03exp\x12\x18\n\x07stamina\
+    \x18\x04\x20\x01(\rR\x07stamina\x12,\n\x12oneric_shard_count\x18\x05\x20\
+    \x01(\rR\x10onericShardCount\x12,\n\x12stellar_jade_count\x18\x06\x20\
+    \x01(\rR\x10stellarJadeCount\x12!\n\x0ccredit_count\x18\x07\x20\x01(\rR\
+    \x0bcreditCount\x12\x1f\n\x0bworld_level\x18\x08\x20\x01(\rR\nworldLevel\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -298,7 +299,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(0);
             let mut messages = ::std::vec::Vec::with_capacity(1);
-            messages.push(DJOLEKKPBGB::generated_message_descriptor_data());
+            messages.push(BasicInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);
             ::protobuf::reflect::GeneratedFileDescriptor::new_generated(
                 file_descriptor_proto(),

@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct PlayerLoginScRsp {
     // message fields
     // @@protoc_insertion_point(field:PlayerLoginScRsp.basic_info)
-    pub basic_info: ::protobuf::MessageField<super::DJOLEKKPBGB::DJOLEKKPBGB>,
+    pub basic_info: ::protobuf::MessageField<super::BasicInfo::BasicInfo>,
     // @@protoc_insertion_point(field:PlayerLoginScRsp.stamina)
     pub stamina: u32,
     // @@protoc_insertion_point(field:PlayerLoginScRsp.retcode)
@@ -67,7 +67,7 @@ impl PlayerLoginScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DJOLEKKPBGB::DJOLEKKPBGB>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BasicInfo::BasicInfo>(
             "basic_info",
             |m: &PlayerLoginScRsp| { &m.basic_info },
             |m: &mut PlayerLoginScRsp| { &mut m.basic_info },
@@ -310,16 +310,16 @@ impl ::protobuf::reflect::ProtobufValue for PlayerLoginScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16PlayerLoginScRsp.proto\x1a\x11DJOLEKKPBGB.proto\"\xf1\x02\n\x10Pla\
-    yerLoginScRsp\x12+\n\nbasic_info\x18\r\x20\x01(\x0b2\x0c.DJOLEKKPBGBR\tb\
-    asicInfo\x12\x18\n\x07stamina\x18\x05\x20\x01(\rR\x07stamina\x12\x18\n\
-    \x07retcode\x18\x0f\x20\x01(\rR\x07retcode\x12\x20\n\x0bNHMHABJKHOG\x18\
-    \t\x20\x01(\tR\x0bNHMHABJKHOG\x12!\n\x0clogin_random\x18\x0b\x20\x01(\
-    \x04R\x0bloginRandom\x12\x20\n\x0bIGKBEAMLNBJ\x18\x06\x20\x01(\x08R\x0bI\
-    GKBEAMLNBJ\x12\x20\n\x0bPDIKPEIFANN\x18\x07\x20\x01(\tR\x0bPDIKPEIFANN\
-    \x12!\n\x0ccur_timezone\x18\x03\x20\x01(\x05R\x0bcurTimezone\x12.\n\x13s\
-    erver_timestamp_ms\x18\x04\x20\x01(\x04R\x11serverTimestampMs\x12\x20\n\
-    \x0bJLPKEOBINCP\x18\x0c\x20\x01(\x08R\x0bJLPKEOBINCPb\x06proto3\
+    \n\x16PlayerLoginScRsp.proto\x1a\x0fBasicInfo.proto\"\xef\x02\n\x10Playe\
+    rLoginScRsp\x12)\n\nbasic_info\x18\r\x20\x01(\x0b2\n.BasicInfoR\tbasicIn\
+    fo\x12\x18\n\x07stamina\x18\x05\x20\x01(\rR\x07stamina\x12\x18\n\x07retc\
+    ode\x18\x0f\x20\x01(\rR\x07retcode\x12\x20\n\x0bNHMHABJKHOG\x18\t\x20\
+    \x01(\tR\x0bNHMHABJKHOG\x12!\n\x0clogin_random\x18\x0b\x20\x01(\x04R\x0b\
+    loginRandom\x12\x20\n\x0bIGKBEAMLNBJ\x18\x06\x20\x01(\x08R\x0bIGKBEAMLNB\
+    J\x12\x20\n\x0bPDIKPEIFANN\x18\x07\x20\x01(\tR\x0bPDIKPEIFANN\x12!\n\x0c\
+    cur_timezone\x18\x03\x20\x01(\x05R\x0bcurTimezone\x12.\n\x13server_times\
+    tamp_ms\x18\x04\x20\x01(\x04R\x11serverTimestampMs\x12\x20\n\x0bJLPKEOBI\
+    NCP\x18\x0c\x20\x01(\x08R\x0bJLPKEOBINCPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -337,7 +337,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::DJOLEKKPBGB::file_descriptor().clone());
+            deps.push(super::BasicInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PlayerLoginScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

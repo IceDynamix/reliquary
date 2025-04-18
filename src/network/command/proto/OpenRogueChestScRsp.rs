@@ -33,7 +33,7 @@ pub struct OpenRogueChestScRsp {
     // @@protoc_insertion_point(field:OpenRogueChestScRsp.NHANAKJFEAB)
     pub NHANAKJFEAB: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:OpenRogueChestScRsp.KJCHGEHDLNO)
-    pub KJCHGEHDLNO: ::protobuf::MessageField<super::ItemList::ItemList>,
+    pub KJCHGEHDLNO: ::protobuf::MessageField<super::ReturnItemList::ReturnItemList>,
     // @@protoc_insertion_point(field:OpenRogueChestScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
@@ -65,7 +65,7 @@ impl OpenRogueChestScRsp {
             |m: &OpenRogueChestScRsp| { &m.NHANAKJFEAB },
             |m: &mut OpenRogueChestScRsp| { &mut m.NHANAKJFEAB },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ReturnItemList::ReturnItemList>(
             "KJCHGEHDLNO",
             |m: &OpenRogueChestScRsp| { &m.KJCHGEHDLNO },
             |m: &mut OpenRogueChestScRsp| { &mut m.KJCHGEHDLNO },
@@ -204,11 +204,12 @@ impl ::protobuf::reflect::ProtobufValue for OpenRogueChestScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19OpenRogueChestScRsp.proto\x1a\x0eItemList.proto\"\xac\x01\n\x13Ope\
-    nRogueChestScRsp\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\x12\
-    +\n\x0bNHANAKJFEAB\x18\x05\x20\x01(\x0b2\t.ItemListR\x0bNHANAKJFEAB\x12+\
-    \n\x0bKJCHGEHDLNO\x18\x07\x20\x01(\x0b2\t.ItemListR\x0bKJCHGEHDLNO\x12!\
-    \n\x06reward\x18\x08\x20\x01(\x0b2\t.ItemListR\x06rewardb\x06proto3\
+    \n\x19OpenRogueChestScRsp.proto\x1a\x0eItemList.proto\x1a\x14ReturnItemL\
+    ist.proto\"\xb2\x01\n\x13OpenRogueChestScRsp\x12\x18\n\x07retcode\x18\
+    \x0c\x20\x01(\rR\x07retcode\x12+\n\x0bNHANAKJFEAB\x18\x05\x20\x01(\x0b2\
+    \t.ItemListR\x0bNHANAKJFEAB\x121\n\x0bKJCHGEHDLNO\x18\x07\x20\x01(\x0b2\
+    \x0f.ReturnItemListR\x0bKJCHGEHDLNO\x12!\n\x06reward\x18\x08\x20\x01(\
+    \x0b2\t.ItemListR\x06rewardb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -225,8 +226,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(1);
+            let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::ItemList::file_descriptor().clone());
+            deps.push(super::ReturnItemList::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(OpenRogueChestScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

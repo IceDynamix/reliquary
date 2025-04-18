@@ -18,52 +18,66 @@
 #![allow(unused_results)]
 #![allow(unused_mut)]
 
-//! Generated file from `ItemList.proto`
+//! Generated file from `ReturnItemList.proto`
 
 /// Generated files are compatible only with the same version
 /// of protobuf runtime.
 const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 
-// @@protoc_insertion_point(message:ItemList)
+// @@protoc_insertion_point(message:ReturnItemList)
 #[derive(PartialEq,Clone,Default,Debug)]
-pub struct ItemList {
+pub struct ReturnItemList {
     // message fields
-    // @@protoc_insertion_point(field:ItemList.item_list)
-    pub item_list: ::std::vec::Vec<super::Item::Item>,
+    // @@protoc_insertion_point(field:ReturnItemList.EBNKEIEHNHA)
+    pub EBNKEIEHNHA: bool,
+    // @@protoc_insertion_point(field:ReturnItemList.return_item_list)
+    pub return_item_list: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:ReturnItemList.KGEFHOECMMN)
+    pub KGEFHOECMMN: ::std::vec::Vec<u32>,
     // special fields
-    // @@protoc_insertion_point(special_field:ItemList.special_fields)
+    // @@protoc_insertion_point(special_field:ReturnItemList.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
 }
 
-impl<'a> ::std::default::Default for &'a ItemList {
-    fn default() -> &'a ItemList {
-        <ItemList as ::protobuf::Message>::default_instance()
+impl<'a> ::std::default::Default for &'a ReturnItemList {
+    fn default() -> &'a ReturnItemList {
+        <ReturnItemList as ::protobuf::Message>::default_instance()
     }
 }
 
-impl ItemList {
-    pub fn new() -> ItemList {
+impl ReturnItemList {
+    pub fn new() -> ReturnItemList {
         ::std::default::Default::default()
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "item_list",
-            |m: &ItemList| { &m.item_list },
-            |m: &mut ItemList| { &mut m.item_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EBNKEIEHNHA",
+            |m: &ReturnItemList| { &m.EBNKEIEHNHA },
+            |m: &mut ReturnItemList| { &mut m.EBNKEIEHNHA },
         ));
-        ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ItemList>(
-            "ItemList",
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "return_item_list",
+            |m: &ReturnItemList| { &m.return_item_list },
+            |m: &mut ReturnItemList| { &mut m.return_item_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "KGEFHOECMMN",
+            |m: &ReturnItemList| { &m.KGEFHOECMMN },
+            |m: &mut ReturnItemList| { &mut m.KGEFHOECMMN },
+        ));
+        ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ReturnItemList>(
+            "ReturnItemList",
             fields,
             oneofs,
         )
     }
 }
 
-impl ::protobuf::Message for ItemList {
-    const NAME: &'static str = "ItemList";
+impl ::protobuf::Message for ReturnItemList {
+    const NAME: &'static str = "ReturnItemList";
 
     fn is_initialized(&self) -> bool {
         true
@@ -72,8 +86,17 @@ impl ::protobuf::Message for ItemList {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.item_list.push(is.read_message()?);
+                72 => {
+                    self.EBNKEIEHNHA = is.read_bool()?;
+                },
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.return_item_list)?;
+                },
+                114 => {
+                    is.read_repeated_packed_uint32_into(&mut self.KGEFHOECMMN)?;
+                },
+                112 => {
+                    self.KGEFHOECMMN.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,19 +110,27 @@ impl ::protobuf::Message for ItemList {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.item_list {
-            let len = value.compute_size();
+        if self.EBNKEIEHNHA != false {
+            my_size += 1 + 1;
+        }
+        if let Some(v) = self.return_item_list.as_ref() {
+            let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.KGEFHOECMMN);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.item_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        };
+        if self.EBNKEIEHNHA != false {
+            os.write_bool(9, self.EBNKEIEHNHA)?;
+        }
+        if let Some(v) = self.return_item_list.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        }
+        os.write_repeated_packed_uint32(14, &self.KGEFHOECMMN)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -112,44 +143,51 @@ impl ::protobuf::Message for ItemList {
         &mut self.special_fields
     }
 
-    fn new() -> ItemList {
-        ItemList::new()
+    fn new() -> ReturnItemList {
+        ReturnItemList::new()
     }
 
     fn clear(&mut self) {
-        self.item_list.clear();
+        self.EBNKEIEHNHA = false;
+        self.return_item_list.clear();
+        self.KGEFHOECMMN.clear();
         self.special_fields.clear();
     }
 
-    fn default_instance() -> &'static ItemList {
-        static instance: ItemList = ItemList {
-            item_list: ::std::vec::Vec::new(),
+    fn default_instance() -> &'static ReturnItemList {
+        static instance: ReturnItemList = ReturnItemList {
+            EBNKEIEHNHA: false,
+            return_item_list: ::protobuf::MessageField::none(),
+            KGEFHOECMMN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
     }
 }
 
-impl ::protobuf::MessageFull for ItemList {
+impl ::protobuf::MessageFull for ReturnItemList {
     fn descriptor() -> ::protobuf::reflect::MessageDescriptor {
         static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::MessageDescriptor> = ::protobuf::rt::Lazy::new();
-        descriptor.get(|| file_descriptor().message_by_package_relative_name("ItemList").unwrap()).clone()
+        descriptor.get(|| file_descriptor().message_by_package_relative_name("ReturnItemList").unwrap()).clone()
     }
 }
 
-impl ::std::fmt::Display for ItemList {
+impl ::std::fmt::Display for ReturnItemList {
     fn fmt(&self, f: &mut ::std::fmt::Formatter<'_>) -> ::std::fmt::Result {
         ::protobuf::text_format::fmt(self, f)
     }
 }
 
-impl ::protobuf::reflect::ProtobufValue for ItemList {
+impl ::protobuf::reflect::ProtobufValue for ReturnItemList {
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0eItemList.proto\x1a\nItem.proto\".\n\x08ItemList\x12\"\n\titem_list\
-    \x18\x07\x20\x03(\x0b2\x05.ItemR\x08itemListb\x06proto3\
+    \n\x14ReturnItemList.proto\x1a\x0eItemList.proto\"\x89\x01\n\x0eReturnIt\
+    emList\x12\x20\n\x0bEBNKEIEHNHA\x18\t\x20\x01(\x08R\x0bEBNKEIEHNHA\x123\
+    \n\x10return_item_list\x18\x03\x20\x01(\x0b2\t.ItemListR\x0ereturnItemLi\
+    st\x12\x20\n\x0bKGEFHOECMMN\x18\x0e\x20\x03(\rR\x0bKGEFHOECMMNb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -167,9 +205,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::Item::file_descriptor().clone());
+            deps.push(super::ItemList::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
-            messages.push(ItemList::generated_message_descriptor_data());
+            messages.push(ReturnItemList::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);
             ::protobuf::reflect::GeneratedFileDescriptor::new_generated(
                 file_descriptor_proto(),

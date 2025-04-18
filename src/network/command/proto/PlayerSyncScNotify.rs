@@ -45,7 +45,7 @@ pub struct PlayerSyncScNotify {
     // @@protoc_insertion_point(field:PlayerSyncScNotify.material_list)
     pub material_list: ::std::vec::Vec<super::Material::Material>,
     // @@protoc_insertion_point(field:PlayerSyncScNotify.basic_info)
-    pub basic_info: ::protobuf::MessageField<super::DJOLEKKPBGB::DJOLEKKPBGB>,
+    pub basic_info: ::protobuf::MessageField<super::BasicInfo::BasicInfo>,
     // @@protoc_insertion_point(field:PlayerSyncScNotify.board_data_sync)
     pub board_data_sync: ::protobuf::MessageField<super::BoardDataSync::BoardDataSync>,
     // @@protoc_insertion_point(field:PlayerSyncScNotify.quest_list)
@@ -127,7 +127,7 @@ impl PlayerSyncScNotify {
             |m: &PlayerSyncScNotify| { &m.material_list },
             |m: &mut PlayerSyncScNotify| { &mut m.material_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DJOLEKKPBGB::DJOLEKKPBGB>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BasicInfo::BasicInfo>(
             "basic_info",
             |m: &PlayerSyncScNotify| { &m.basic_info },
             |m: &mut PlayerSyncScNotify| { &mut m.basic_info },
@@ -503,23 +503,23 @@ impl ::protobuf::reflect::ProtobufValue for PlayerSyncScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18PlayerSyncScNotify.proto\x1a\x10AvatarSync.proto\x1a\x11BLPMHFGIOA\
-    C.proto\x1a\x13BoardDataSync.proto\x1a\x11DJOLEKKPBGB.proto\x1a\x11DMBMP\
-    AHKHLA.proto\x1a\x0fEquipment.proto\x1a\x11GKDIHIFFHFD.proto\x1a\x0eItem\
-    List.proto\x1a\x11LPFMHAJHDMM.proto\x1a\x0eMaterial.proto\x1a\x11Mission\
-    Sync.proto\x1a\x1dMultiPathAvatarTypeInfo.proto\x1a\x0bQuest.proto\x1a\
-    \x0bRelic.proto\x1a\x15WaitDelResource.proto\"\xeb\x07\n\x12PlayerSyncSc\
-    Notify\x123\n\x15total_achievement_exp\x18\xfa\x08\x20\x01(\rR\x13totalA\
-    chievementExp\x12!\n\x0bOLFLKCBBJOH\x18\x81\x0f\x20\x03(\rR\x0bOLFLKCBBJ\
-    OH\x12`\n\x20multi_path_avatar_type_info_list\x18\xaa\x0b\x20\x03(\x0b2\
+    C.proto\x1a\x0fBasicInfo.proto\x1a\x13BoardDataSync.proto\x1a\x11DMBMPAH\
+    KHLA.proto\x1a\x0fEquipment.proto\x1a\x11GKDIHIFFHFD.proto\x1a\x0eItemLi\
+    st.proto\x1a\x11LPFMHAJHDMM.proto\x1a\x0eMaterial.proto\x1a\x11MissionSy\
+    nc.proto\x1a\x1dMultiPathAvatarTypeInfo.proto\x1a\x0bQuest.proto\x1a\x0b\
+    Relic.proto\x1a\x15WaitDelResource.proto\"\xe9\x07\n\x12PlayerSyncScNoti\
+    fy\x123\n\x15total_achievement_exp\x18\xfa\x08\x20\x01(\rR\x13totalAchie\
+    vementExp\x12!\n\x0bOLFLKCBBJOH\x18\x81\x0f\x20\x03(\rR\x0bOLFLKCBBJOH\
+    \x12`\n\x20multi_path_avatar_type_info_list\x18\xaa\x0b\x20\x03(\x0b2\
     \x18.MultiPathAvatarTypeInfoR\x1bmultiPathAvatarTypeInfoList\x12/\n\x0bO\
     MJOPKGJPLG\x18\xe8\x0f\x20\x01(\x0b2\x0c.DMBMPAHKHLAR\x0bOMJOPKGJPLG\x12\
     %\n\nrelic_list\x18\n\x20\x03(\x0b2\x06.RelicR\trelicList\x121\n\x0eequi\
     pment_list\x18\t\x20\x03(\x0b2\n.EquipmentR\requipmentList\x12.\n\x0bIGG\
     OGFJFPDJ\x18\x0b\x20\x01(\x0b2\x0c.BLPMHFGIOACR\x0bIGGOGFJFPDJ\x12.\n\rm\
-    aterial_list\x18\x0f\x20\x03(\x0b2\t.MaterialR\x0cmaterialList\x12+\n\nb\
-    asic_info\x18\x0c\x20\x01(\x0b2\x0c.DJOLEKKPBGBR\tbasicInfo\x127\n\x0fbo\
-    ard_data_sync\x18\xe2\x0f\x20\x01(\x0b2\x0e.BoardDataSyncR\rboardDataSyn\
-    c\x12%\n\nquest_list\x18\x03\x20\x03(\x0b2\x06.QuestR\tquestList\x12,\n\
+    aterial_list\x18\x0f\x20\x03(\x0b2\t.MaterialR\x0cmaterialList\x12)\n\nb\
+    asic_info\x18\x0c\x20\x01(\x0b2\n.BasicInfoR\tbasicInfo\x127\n\x0fboard_\
+    data_sync\x18\xe2\x0f\x20\x01(\x0b2\x0e.BoardDataSyncR\rboardDataSync\
+    \x12%\n\nquest_list\x18\x03\x20\x03(\x0b2\x06.QuestR\tquestList\x12,\n\
     \x0bFCOKFFEAPMI\x18\xf5\x0b\x20\x03(\x0b2\t.MaterialR\x0bFCOKFFEAPMI\x12\
     ,\n\x0bavatar_sync\x18\x05\x20\x01(\x0b2\x0b.AvatarSyncR\navatarSync\x12\
     2\n\x0bHLINMKBDKNC\x18\x06\x20\x03(\x0b2\x10.WaitDelResourceR\x0bHLINMKB\
@@ -549,8 +549,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             let mut deps = ::std::vec::Vec::with_capacity(15);
             deps.push(super::AvatarSync::file_descriptor().clone());
             deps.push(super::BLPMHFGIOAC::file_descriptor().clone());
+            deps.push(super::BasicInfo::file_descriptor().clone());
             deps.push(super::BoardDataSync::file_descriptor().clone());
-            deps.push(super::DJOLEKKPBGB::file_descriptor().clone());
             deps.push(super::DMBMPAHKHLA::file_descriptor().clone());
             deps.push(super::Equipment::file_descriptor().clone());
             deps.push(super::GKDIHIFFHFD::file_descriptor().clone());

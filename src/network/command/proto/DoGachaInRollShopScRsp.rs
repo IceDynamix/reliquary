@@ -30,8 +30,8 @@ pub struct DoGachaInRollShopScRsp {
     // message fields
     // @@protoc_insertion_point(field:DoGachaInRollShopScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:DoGachaInRollShopScRsp.PENILHGLHHM)
-    pub PENILHGLHHM: u32,
+    // @@protoc_insertion_point(field:DoGachaInRollShopScRsp.next_gacha_random)
+    pub next_gacha_random: u32,
     // @@protoc_insertion_point(field:DoGachaInRollShopScRsp.ordering_index)
     pub ordering_index: u32,
     // @@protoc_insertion_point(field:DoGachaInRollShopScRsp.reward)
@@ -63,9 +63,9 @@ impl DoGachaInRollShopScRsp {
             |m: &mut DoGachaInRollShopScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PENILHGLHHM",
-            |m: &DoGachaInRollShopScRsp| { &m.PENILHGLHHM },
-            |m: &mut DoGachaInRollShopScRsp| { &mut m.PENILHGLHHM },
+            "next_gacha_random",
+            |m: &DoGachaInRollShopScRsp| { &m.next_gacha_random },
+            |m: &mut DoGachaInRollShopScRsp| { &mut m.next_gacha_random },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ordering_index",
@@ -104,7 +104,7 @@ impl ::protobuf::Message for DoGachaInRollShopScRsp {
                     self.retcode = is.read_uint32()?;
                 },
                 120 => {
-                    self.PENILHGLHHM = is.read_uint32()?;
+                    self.next_gacha_random = is.read_uint32()?;
                 },
                 40 => {
                     self.ordering_index = is.read_uint32()?;
@@ -130,8 +130,8 @@ impl ::protobuf::Message for DoGachaInRollShopScRsp {
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
-        if self.PENILHGLHHM != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.PENILHGLHHM);
+        if self.next_gacha_random != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.next_gacha_random);
         }
         if self.ordering_index != 0 {
             my_size += ::protobuf::rt::uint32_size(5, self.ordering_index);
@@ -152,8 +152,8 @@ impl ::protobuf::Message for DoGachaInRollShopScRsp {
         if self.retcode != 0 {
             os.write_uint32(9, self.retcode)?;
         }
-        if self.PENILHGLHHM != 0 {
-            os.write_uint32(15, self.PENILHGLHHM)?;
+        if self.next_gacha_random != 0 {
+            os.write_uint32(15, self.next_gacha_random)?;
         }
         if self.ordering_index != 0 {
             os.write_uint32(5, self.ordering_index)?;
@@ -182,7 +182,7 @@ impl ::protobuf::Message for DoGachaInRollShopScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.PENILHGLHHM = 0;
+        self.next_gacha_random = 0;
         self.ordering_index = 0;
         self.reward.clear();
         self.roll_shop_id = 0;
@@ -192,7 +192,7 @@ impl ::protobuf::Message for DoGachaInRollShopScRsp {
     fn default_instance() -> &'static DoGachaInRollShopScRsp {
         static instance: DoGachaInRollShopScRsp = DoGachaInRollShopScRsp {
             retcode: 0,
-            PENILHGLHHM: 0,
+            next_gacha_random: 0,
             ordering_index: 0,
             reward: ::protobuf::MessageField::none(),
             roll_shop_id: 0,
@@ -220,12 +220,12 @@ impl ::protobuf::reflect::ProtobufValue for DoGachaInRollShopScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cDoGachaInRollShopScRsp.proto\x1a\x0eItemList.proto\"\xc0\x01\n\x16\
+    \n\x1cDoGachaInRollShopScRsp.proto\x1a\x0eItemList.proto\"\xca\x01\n\x16\
     DoGachaInRollShopScRsp\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\
-    \x12\x20\n\x0bPENILHGLHHM\x18\x0f\x20\x01(\rR\x0bPENILHGLHHM\x12%\n\x0eo\
-    rdering_index\x18\x05\x20\x01(\rR\rorderingIndex\x12!\n\x06reward\x18\
-    \x01\x20\x01(\x0b2\t.ItemListR\x06reward\x12\x20\n\x0croll_shop_id\x18\
-    \x0b\x20\x01(\rR\nrollShopIdb\x06proto3\
+    \x12*\n\x11next_gacha_random\x18\x0f\x20\x01(\rR\x0fnextGachaRandom\x12%\
+    \n\x0eordering_index\x18\x05\x20\x01(\rR\rorderingIndex\x12!\n\x06reward\
+    \x18\x01\x20\x01(\x0b2\t.ItemListR\x06reward\x12\x20\n\x0croll_shop_id\
+    \x18\x0b\x20\x01(\rR\nrollShopIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
