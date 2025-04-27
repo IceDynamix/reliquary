@@ -69,6 +69,7 @@ pub mod proto {
     pub mod MultiPathAvatarTypeInfo;
     pub mod PileItem;
     pub mod PlayerGetTokenScRsp;
+    pub mod PlayerLoginScRsp;
     pub mod PlayerSyncScNotify;
     pub mod Quest;
     pub mod QuestStatus;

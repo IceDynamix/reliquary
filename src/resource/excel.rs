@@ -116,6 +116,31 @@ pub struct EquipmentConfig {
 }
 
 #[derive(Resource, Deserialize, Serialize, Debug)]
+pub struct ItemConfig {
+    #[resource_key]
+    pub ID: u32,
+    pub ItemMainType: String,
+    pub ItemSubType: String,
+    pub InventoryDisplayTag: u32,
+    pub Rarity: String,
+    pub PurposeType: Option<u32>,
+    pub isVisible: Option<bool>,
+    pub ItemName: Option<TextMapEntry>,
+    pub ItemDesc: Option<TextMapEntry>,
+    pub ItemBGDesc: Option<TextMapEntry>,
+    pub ItemIconPath: String,
+    pub ItemFigureIconPath: String,
+    pub ItemCurrencyIconPath: String,
+    pub ItemAvatarIconPath: String,
+    pub PileLimit: u32,
+    pub UseMethod: Option<String>,
+    pub CustomDataList: Vec<u32>,
+    pub ReturnItemIDList: Vec<u32>,
+    pub ItemGroup: Option<u32>,
+    pub SellType: Option<String>,
+}
+
+#[derive(Resource, Deserialize, Serialize, Debug)]
 pub struct RelicMainAffixConfig {
     #[resource_key]
     pub GroupID: u32,
