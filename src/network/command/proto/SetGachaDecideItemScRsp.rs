@@ -30,8 +30,8 @@ pub struct SetGachaDecideItemScRsp {
     // message fields
     // @@protoc_insertion_point(field:SetGachaDecideItemScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:SetGachaDecideItemScRsp.GDPOEEJNMHN)
-    pub GDPOEEJNMHN: ::protobuf::MessageField<super::LOPDJAHFPHN::LOPDJAHFPHN>,
+    // @@protoc_insertion_point(field:SetGachaDecideItemScRsp.loss_info)
+    pub loss_info: ::protobuf::MessageField<super::LossInfo::LossInfo>,
     // @@protoc_insertion_point(field:SetGachaDecideItemScRsp.farm_stage_gacha_id_list)
     pub farm_stage_gacha_id_list: ::std::vec::Vec<u32>,
     // special fields
@@ -58,10 +58,10 @@ impl SetGachaDecideItemScRsp {
             |m: &SetGachaDecideItemScRsp| { &m.retcode },
             |m: &mut SetGachaDecideItemScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LOPDJAHFPHN::LOPDJAHFPHN>(
-            "GDPOEEJNMHN",
-            |m: &SetGachaDecideItemScRsp| { &m.GDPOEEJNMHN },
-            |m: &mut SetGachaDecideItemScRsp| { &mut m.GDPOEEJNMHN },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LossInfo::LossInfo>(
+            "loss_info",
+            |m: &SetGachaDecideItemScRsp| { &m.loss_info },
+            |m: &mut SetGachaDecideItemScRsp| { &mut m.loss_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "farm_stage_gacha_id_list",
@@ -90,7 +90,7 @@ impl ::protobuf::Message for SetGachaDecideItemScRsp {
                     self.retcode = is.read_uint32()?;
                 },
                 18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GDPOEEJNMHN)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.loss_info)?;
                 },
                 74 => {
                     is.read_repeated_packed_uint32_into(&mut self.farm_stage_gacha_id_list)?;
@@ -113,7 +113,7 @@ impl ::protobuf::Message for SetGachaDecideItemScRsp {
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
-        if let Some(v) = self.GDPOEEJNMHN.as_ref() {
+        if let Some(v) = self.loss_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -127,7 +127,7 @@ impl ::protobuf::Message for SetGachaDecideItemScRsp {
         if self.retcode != 0 {
             os.write_uint32(14, self.retcode)?;
         }
-        if let Some(v) = self.GDPOEEJNMHN.as_ref() {
+        if let Some(v) = self.loss_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_repeated_packed_uint32(9, &self.farm_stage_gacha_id_list)?;
@@ -149,7 +149,7 @@ impl ::protobuf::Message for SetGachaDecideItemScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.GDPOEEJNMHN.clear();
+        self.loss_info.clear();
         self.farm_stage_gacha_id_list.clear();
         self.special_fields.clear();
     }
@@ -157,7 +157,7 @@ impl ::protobuf::Message for SetGachaDecideItemScRsp {
     fn default_instance() -> &'static SetGachaDecideItemScRsp {
         static instance: SetGachaDecideItemScRsp = SetGachaDecideItemScRsp {
             retcode: 0,
-            GDPOEEJNMHN: ::protobuf::MessageField::none(),
+            loss_info: ::protobuf::MessageField::none(),
             farm_stage_gacha_id_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,11 +183,11 @@ impl ::protobuf::reflect::ProtobufValue for SetGachaDecideItemScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dSetGachaDecideItemScRsp.proto\x1a\x11LOPDJAHFPHN.proto\"\x9b\x01\n\
+    \n\x1dSetGachaDecideItemScRsp.proto\x1a\x0eLossInfo.proto\"\x93\x01\n\
     \x17SetGachaDecideItemScRsp\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07\
-    retcode\x12.\n\x0bGDPOEEJNMHN\x18\x02\x20\x01(\x0b2\x0c.LOPDJAHFPHNR\x0b\
-    GDPOEEJNMHN\x126\n\x18farm_stage_gacha_id_list\x18\t\x20\x03(\rR\x14farm\
-    StageGachaIdListb\x06proto3\
+    retcode\x12&\n\tloss_info\x18\x02\x20\x01(\x0b2\t.LossInfoR\x08lossInfo\
+    \x126\n\x18farm_stage_gacha_id_list\x18\t\x20\x03(\rR\x14farmStageGachaI\
+    dListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -205,7 +205,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::LOPDJAHFPHN::file_descriptor().clone());
+            deps.push(super::LossInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SetGachaDecideItemScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

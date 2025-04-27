@@ -32,8 +32,8 @@ pub struct SetGachaDecideItemCsReq {
     pub CHDOIBFEHLP: u32,
     // @@protoc_insertion_point(field:SetGachaDecideItemCsReq.gacha_id)
     pub gacha_id: u32,
-    // @@protoc_insertion_point(field:SetGachaDecideItemCsReq.DLABDNPIHFF)
-    pub DLABDNPIHFF: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SetGachaDecideItemCsReq.loss_decision_list)
+    pub loss_decision_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:SetGachaDecideItemCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,9 +64,9 @@ impl SetGachaDecideItemCsReq {
             |m: &mut SetGachaDecideItemCsReq| { &mut m.gacha_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DLABDNPIHFF",
-            |m: &SetGachaDecideItemCsReq| { &m.DLABDNPIHFF },
-            |m: &mut SetGachaDecideItemCsReq| { &mut m.DLABDNPIHFF },
+            "loss_decision_list",
+            |m: &SetGachaDecideItemCsReq| { &m.loss_decision_list },
+            |m: &mut SetGachaDecideItemCsReq| { &mut m.loss_decision_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetGachaDecideItemCsReq>(
             "SetGachaDecideItemCsReq",
@@ -93,10 +93,10 @@ impl ::protobuf::Message for SetGachaDecideItemCsReq {
                     self.gacha_id = is.read_uint32()?;
                 },
                 34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.DLABDNPIHFF)?;
+                    is.read_repeated_packed_uint32_into(&mut self.loss_decision_list)?;
                 },
                 32 => {
-                    self.DLABDNPIHFF.push(is.read_uint32()?);
+                    self.loss_decision_list.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -116,7 +116,7 @@ impl ::protobuf::Message for SetGachaDecideItemCsReq {
         if self.gacha_id != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.gacha_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.DLABDNPIHFF);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.loss_decision_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -129,7 +129,7 @@ impl ::protobuf::Message for SetGachaDecideItemCsReq {
         if self.gacha_id != 0 {
             os.write_uint32(13, self.gacha_id)?;
         }
-        os.write_repeated_packed_uint32(4, &self.DLABDNPIHFF)?;
+        os.write_repeated_packed_uint32(4, &self.loss_decision_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,7 +149,7 @@ impl ::protobuf::Message for SetGachaDecideItemCsReq {
     fn clear(&mut self) {
         self.CHDOIBFEHLP = 0;
         self.gacha_id = 0;
-        self.DLABDNPIHFF.clear();
+        self.loss_decision_list.clear();
         self.special_fields.clear();
     }
 
@@ -157,7 +157,7 @@ impl ::protobuf::Message for SetGachaDecideItemCsReq {
         static instance: SetGachaDecideItemCsReq = SetGachaDecideItemCsReq {
             CHDOIBFEHLP: 0,
             gacha_id: 0,
-            DLABDNPIHFF: ::std::vec::Vec::new(),
+            loss_decision_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -182,10 +182,10 @@ impl ::protobuf::reflect::ProtobufValue for SetGachaDecideItemCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dSetGachaDecideItemCsReq.proto\"x\n\x17SetGachaDecideItemCsReq\x12\
-    \x20\n\x0bCHDOIBFEHLP\x18\x08\x20\x01(\rR\x0bCHDOIBFEHLP\x12\x19\n\x08ga\
-    cha_id\x18\r\x20\x01(\rR\x07gachaId\x12\x20\n\x0bDLABDNPIHFF\x18\x04\x20\
-    \x03(\rR\x0bDLABDNPIHFFb\x06proto3\
+    \n\x1dSetGachaDecideItemCsReq.proto\"\x84\x01\n\x17SetGachaDecideItemCsR\
+    eq\x12\x20\n\x0bCHDOIBFEHLP\x18\x08\x20\x01(\rR\x0bCHDOIBFEHLP\x12\x19\n\
+    \x08gacha_id\x18\r\x20\x01(\rR\x07gachaId\x12,\n\x12loss_decision_list\
+    \x18\x04\x20\x03(\rR\x10lossDecisionListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

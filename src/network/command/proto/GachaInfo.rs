@@ -34,18 +34,18 @@ pub struct GachaInfo {
     pub end_time: i64,
     // @@protoc_insertion_point(field:GachaInfo.begin_time)
     pub begin_time: i64,
-    // @@protoc_insertion_point(field:GachaInfo.BOEFFBDOABD)
-    pub BOEFFBDOABD: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GachaInfo.prize_item_list)
+    pub prize_item_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GachaInfo.gacha_ceiling)
     pub gacha_ceiling: ::protobuf::MessageField<super::GachaCeiling::GachaCeiling>,
     // @@protoc_insertion_point(field:GachaInfo.PMNFAINFPAL)
     pub PMNFAINFPAL: ::std::string::String,
     // @@protoc_insertion_point(field:GachaInfo.gacha_id)
     pub gacha_id: u32,
-    // @@protoc_insertion_point(field:GachaInfo.AAKCKHANBHI)
-    pub AAKCKHANBHI: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GachaInfo.GDPOEEJNMHN)
-    pub GDPOEEJNMHN: ::protobuf::MessageField<super::LOPDJAHFPHN::LOPDJAHFPHN>,
+    // @@protoc_insertion_point(field:GachaInfo.item_detail_list)
+    pub item_detail_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GachaInfo.loss_info)
+    pub loss_info: ::protobuf::MessageField<super::LossInfo::LossInfo>,
     // @@protoc_insertion_point(field:GachaInfo.KMNJNMJFGBG)
     pub KMNJNMJFGBG: u32,
     // @@protoc_insertion_point(field:GachaInfo.GDIFAAHIFBH)
@@ -85,9 +85,9 @@ impl GachaInfo {
             |m: &mut GachaInfo| { &mut m.begin_time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BOEFFBDOABD",
-            |m: &GachaInfo| { &m.BOEFFBDOABD },
-            |m: &mut GachaInfo| { &mut m.BOEFFBDOABD },
+            "prize_item_list",
+            |m: &GachaInfo| { &m.prize_item_list },
+            |m: &mut GachaInfo| { &mut m.prize_item_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GachaCeiling::GachaCeiling>(
             "gacha_ceiling",
@@ -105,14 +105,14 @@ impl GachaInfo {
             |m: &mut GachaInfo| { &mut m.gacha_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "AAKCKHANBHI",
-            |m: &GachaInfo| { &m.AAKCKHANBHI },
-            |m: &mut GachaInfo| { &mut m.AAKCKHANBHI },
+            "item_detail_list",
+            |m: &GachaInfo| { &m.item_detail_list },
+            |m: &mut GachaInfo| { &mut m.item_detail_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LOPDJAHFPHN::LOPDJAHFPHN>(
-            "GDPOEEJNMHN",
-            |m: &GachaInfo| { &m.GDPOEEJNMHN },
-            |m: &mut GachaInfo| { &mut m.GDPOEEJNMHN },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LossInfo::LossInfo>(
+            "loss_info",
+            |m: &GachaInfo| { &m.loss_info },
+            |m: &mut GachaInfo| { &mut m.loss_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KMNJNMJFGBG",
@@ -152,10 +152,10 @@ impl ::protobuf::Message for GachaInfo {
                     self.begin_time = is.read_int64()?;
                 },
                 34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.BOEFFBDOABD)?;
+                    is.read_repeated_packed_uint32_into(&mut self.prize_item_list)?;
                 },
                 32 => {
-                    self.BOEFFBDOABD.push(is.read_uint32()?);
+                    self.prize_item_list.push(is.read_uint32()?);
                 },
                 58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.gacha_ceiling)?;
@@ -167,13 +167,13 @@ impl ::protobuf::Message for GachaInfo {
                     self.gacha_id = is.read_uint32()?;
                 },
                 122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.AAKCKHANBHI)?;
+                    is.read_repeated_packed_uint32_into(&mut self.item_detail_list)?;
                 },
                 120 => {
-                    self.AAKCKHANBHI.push(is.read_uint32()?);
+                    self.item_detail_list.push(is.read_uint32()?);
                 },
                 10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GDPOEEJNMHN)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.loss_info)?;
                 },
                 104 => {
                     self.KMNJNMJFGBG = is.read_uint32()?;
@@ -202,7 +202,7 @@ impl ::protobuf::Message for GachaInfo {
         if self.begin_time != 0 {
             my_size += ::protobuf::rt::int64_size(12, self.begin_time);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.BOEFFBDOABD);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.prize_item_list);
         if let Some(v) = self.gacha_ceiling.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -213,8 +213,8 @@ impl ::protobuf::Message for GachaInfo {
         if self.gacha_id != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.gacha_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.AAKCKHANBHI);
-        if let Some(v) = self.GDPOEEJNMHN.as_ref() {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.item_detail_list);
+        if let Some(v) = self.loss_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -239,7 +239,7 @@ impl ::protobuf::Message for GachaInfo {
         if self.begin_time != 0 {
             os.write_int64(12, self.begin_time)?;
         }
-        os.write_repeated_packed_uint32(4, &self.BOEFFBDOABD)?;
+        os.write_repeated_packed_uint32(4, &self.prize_item_list)?;
         if let Some(v) = self.gacha_ceiling.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
@@ -249,8 +249,8 @@ impl ::protobuf::Message for GachaInfo {
         if self.gacha_id != 0 {
             os.write_uint32(14, self.gacha_id)?;
         }
-        os.write_repeated_packed_uint32(15, &self.AAKCKHANBHI)?;
-        if let Some(v) = self.GDPOEEJNMHN.as_ref() {
+        os.write_repeated_packed_uint32(15, &self.item_detail_list)?;
+        if let Some(v) = self.loss_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.KMNJNMJFGBG != 0 {
@@ -279,12 +279,12 @@ impl ::protobuf::Message for GachaInfo {
         self.MLGILEHMPGB.clear();
         self.end_time = 0;
         self.begin_time = 0;
-        self.BOEFFBDOABD.clear();
+        self.prize_item_list.clear();
         self.gacha_ceiling.clear();
         self.PMNFAINFPAL.clear();
         self.gacha_id = 0;
-        self.AAKCKHANBHI.clear();
-        self.GDPOEEJNMHN.clear();
+        self.item_detail_list.clear();
+        self.loss_info.clear();
         self.KMNJNMJFGBG = 0;
         self.GDIFAAHIFBH = 0;
         self.special_fields.clear();
@@ -295,12 +295,12 @@ impl ::protobuf::Message for GachaInfo {
             MLGILEHMPGB: ::std::string::String::new(),
             end_time: 0,
             begin_time: 0,
-            BOEFFBDOABD: ::std::vec::Vec::new(),
+            prize_item_list: ::std::vec::Vec::new(),
             gacha_ceiling: ::protobuf::MessageField::none(),
             PMNFAINFPAL: ::std::string::String::new(),
             gacha_id: 0,
-            AAKCKHANBHI: ::std::vec::Vec::new(),
-            GDPOEEJNMHN: ::protobuf::MessageField::none(),
+            item_detail_list: ::std::vec::Vec::new(),
+            loss_info: ::protobuf::MessageField::none(),
             KMNJNMJFGBG: 0,
             GDIFAAHIFBH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -327,17 +327,17 @@ impl ::protobuf::reflect::ProtobufValue for GachaInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0fGachaInfo.proto\x1a\x12GachaCeiling.proto\x1a\x11LOPDJAHFPHN.proto\
-    \"\x90\x03\n\tGachaInfo\x12\x20\n\x0bMLGILEHMPGB\x18\x03\x20\x01(\tR\x0b\
-    MLGILEHMPGB\x12\x19\n\x08end_time\x18\x02\x20\x01(\x03R\x07endTime\x12\
-    \x1d\n\nbegin_time\x18\x0c\x20\x01(\x03R\tbeginTime\x12\x20\n\x0bBOEFFBD\
-    OABD\x18\x04\x20\x03(\rR\x0bBOEFFBDOABD\x122\n\rgacha_ceiling\x18\x07\
-    \x20\x01(\x0b2\r.GachaCeilingR\x0cgachaCeiling\x12\x20\n\x0bPMNFAINFPAL\
-    \x18\t\x20\x01(\tR\x0bPMNFAINFPAL\x12\x19\n\x08gacha_id\x18\x0e\x20\x01(\
-    \rR\x07gachaId\x12\x20\n\x0bAAKCKHANBHI\x18\x0f\x20\x03(\rR\x0bAAKCKHANB\
-    HI\x12.\n\x0bGDPOEEJNMHN\x18\x01\x20\x01(\x0b2\x0c.LOPDJAHFPHNR\x0bGDPOE\
-    EJNMHN\x12\x20\n\x0bKMNJNMJFGBG\x18\r\x20\x01(\rR\x0bKMNJNMJFGBG\x12\x20\
-    \n\x0bGDIFAAHIFBH\x18\x0b\x20\x01(\rR\x0bGDIFAAHIFBHb\x06proto3\
+    \n\x0fGachaInfo.proto\x1a\x12GachaCeiling.proto\x1a\x0eLossInfo.proto\"\
+    \x96\x03\n\tGachaInfo\x12\x20\n\x0bMLGILEHMPGB\x18\x03\x20\x01(\tR\x0bML\
+    GILEHMPGB\x12\x19\n\x08end_time\x18\x02\x20\x01(\x03R\x07endTime\x12\x1d\
+    \n\nbegin_time\x18\x0c\x20\x01(\x03R\tbeginTime\x12&\n\x0fprize_item_lis\
+    t\x18\x04\x20\x03(\rR\rprizeItemList\x122\n\rgacha_ceiling\x18\x07\x20\
+    \x01(\x0b2\r.GachaCeilingR\x0cgachaCeiling\x12\x20\n\x0bPMNFAINFPAL\x18\
+    \t\x20\x01(\tR\x0bPMNFAINFPAL\x12\x19\n\x08gacha_id\x18\x0e\x20\x01(\rR\
+    \x07gachaId\x12(\n\x10item_detail_list\x18\x0f\x20\x03(\rR\x0eitemDetail\
+    List\x12&\n\tloss_info\x18\x01\x20\x01(\x0b2\t.LossInfoR\x08lossInfo\x12\
+    \x20\n\x0bKMNJNMJFGBG\x18\r\x20\x01(\rR\x0bKMNJNMJFGBG\x12\x20\n\x0bGDIF\
+    AAHIFBH\x18\x0b\x20\x01(\rR\x0bGDIFAAHIFBHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -356,7 +356,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::GachaCeiling::file_descriptor().clone());
-            deps.push(super::LOPDJAHFPHN::file_descriptor().clone());
+            deps.push(super::LossInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GachaInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

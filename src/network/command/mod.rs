@@ -46,9 +46,13 @@ pub mod proto {
     pub mod GEMJDHNLKLC;
     pub mod GKDIHIFFHFD;
     pub mod GNIEJGNKKGG;
+    pub mod GachaCeiling;
+    pub mod GachaCeilingAvatar;
+    pub mod GachaInfo;
     pub mod GachaItem;
     pub mod GetAvatarDataScRsp;
     pub mod GetBagScRsp;
+    pub mod GetGachaInfoScRsp;
     pub mod GetMultiPathAvatarInfoScRsp;
     pub mod GrowthTargetFunctionType;
     pub mod HPNIICAAAJK;
@@ -58,6 +62,7 @@ pub mod proto {
     pub mod ItemList;
     pub mod LOPCJEOJHCB;
     pub mod LPFMHAJHDMM;
+    pub mod LossInfo;
     pub mod Material;
     pub mod MessageGroupStatus;
     pub mod MessageSectionStatus;
